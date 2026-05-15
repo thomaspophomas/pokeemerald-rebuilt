@@ -1,0 +1,48 @@
+#ifndef GUARD_CONFIG_FEATURES_H
+#define GUARD_CONFIG_FEATURES_H
+
+// Build-time feature gates for systems that are too invasive to toggle
+// safely while a save file is running. Runtime-capable rules should expose
+// their own save-backed settings through module state instead.
+
+#ifndef FEATURE_MODULE_REGISTRY
+#define FEATURE_MODULE_REGISTRY 1
+#endif
+
+#ifndef FEATURE_MULTIPLAYER
+#define FEATURE_MULTIPLAYER 0
+#endif
+
+#ifndef FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT
+#define FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT FEATURE_MULTIPLAYER
+#endif
+
+#ifndef FEATURE_MULTIPLAYER_AUTOCONNECT
+#define FEATURE_MULTIPLAYER_AUTOCONNECT 0
+#endif
+
+#ifndef FEATURE_ENGINE_GEN1
+#define FEATURE_ENGINE_GEN1 0
+#endif
+
+#ifndef FEATURE_ENGINE_GEN2
+#define FEATURE_ENGINE_GEN2 0
+#endif
+
+#ifndef FEATURE_ENGINE_GEN3
+#define FEATURE_ENGINE_GEN3 1
+#endif
+
+#ifndef FEATURE_WEATHER_LAYERS
+#define FEATURE_WEATHER_LAYERS 0
+#endif
+
+#ifndef FEATURE_FOLLOWERS
+#define FEATURE_FOLLOWERS 0
+#endif
+
+#ifndef FEATURE_STORY_PROGRESS_API
+#define FEATURE_STORY_PROGRESS_API 0
+#endif
+
+#endif // GUARD_CONFIG_FEATURES_H

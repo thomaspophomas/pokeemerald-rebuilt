@@ -19,6 +19,7 @@
 #include "sound.h"
 #include "battle.h"
 #include "battle_controllers.h"
+#include "engine/module_registry.h"
 #include "text.h"
 #include "intro.h"
 #include "main.h"
@@ -112,6 +113,7 @@ void AgbMain(void)
     ResetBgs();
     SetDefaultFontsPointer();
     InitHeap(gHeap, HEAP_SIZE);
+    EngineModules_Init();
 
     gSoftResetDisabled = FALSE;
 
@@ -189,6 +191,8 @@ static void CallCallbacks(void)
 {
     if (gMain.callback1)
         gMain.callback1();
+
+    EngineModules_RunFrame();
 
     if (gMain.callback2)
         gMain.callback2();

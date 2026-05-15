@@ -18,6 +18,7 @@
 #include "decompress.h"
 #include "dma3.h"
 #include "event_data.h"
+#include "engine/module_registry.h"
 #include "evolution_scene.h"
 #include "graphics.h"
 #include "gpu_regs.h"
@@ -592,6 +593,7 @@ void CB2_InitBattle(void)
     AllocateBattleSpritesData();
     AllocateMonSpritesGfx();
     RecordedBattle_ClearFrontierPassFlag();
+    EngineModules_OnBattleStart(gBattleTypeFlags);
 
     if (gBattleTypeFlags & BATTLE_TYPE_MULTI)
     {
@@ -2179,6 +2181,7 @@ void CB2_InitEndLinkBattle(void)
     s32 i;
     u8 taskId;
 
+    EngineModules_OnBattleEnd(gBattleOutcome);
     SetHBlankCallback(NULL);
     SetVBlankCallback(NULL);
     gBattleTypeFlags &= ~BATTLE_TYPE_LINK_IN_BATTLE;
@@ -5245,6 +5248,7 @@ static void ReturnFromBattleToOverworld(void)
     }
 
     m4aSongNumStop(SE_LOW_HEALTH);
+    EngineModules_OnBattleEnd(gBattleOutcome);
     SetMainCallback2(gMain.savedCallback);
 }
 
