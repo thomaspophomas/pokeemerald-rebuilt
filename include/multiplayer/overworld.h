@@ -5,6 +5,8 @@
 #include "multiplayer/types.h"
 
 void MultiplayerOverworld_Init(void);
+bool8 MultiplayerOverworld_CanTick(void);
+void MultiplayerOverworld_Reset(void);
 void MultiplayerOverworld_OnMapLoad(void);
 void MultiplayerOverworld_OnPlayerStep(u8 direction, u16 newKeys, u16 heldKeys);
 void MultiplayerOverworld_BuildLocalSnapshot(struct NetPlayerSnapshot *snapshot, u8 playerId, u32 tick);

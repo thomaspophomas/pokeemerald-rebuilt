@@ -14,8 +14,9 @@ BUILD_DIR := build
 MODERN      ?= 0
 # Compares the ROM to a checksum of the original - only makes sense using when non-modern
 COMPARE     ?= 0
+FEATURE_MODS ?= 1
 FEATURE_MULTIPLAYER ?= 0
-FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT ?= $(FEATURE_MULTIPLAYER)
+FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT ?= 0
 FEATURE_MULTIPLAYER_AUTOCONNECT ?= 0
 
 ifeq (modern,$(MAKECMDGOALS))
@@ -116,6 +117,7 @@ INCLUDE_SCANINC_ARGS := $(INCLUDE_DIRS:%=-I %)
 
 O_LEVEL ?= 2
 CPPFLAGS := $(INCLUDE_CPP_ARGS) -Wno-trigraphs -DMODERN=$(MODERN)
+CPPFLAGS += -DFEATURE_MODS=$(FEATURE_MODS)
 CPPFLAGS += -DFEATURE_MULTIPLAYER=$(FEATURE_MULTIPLAYER)
 CPPFLAGS += -DFEATURE_MULTIPLAYER_EMULATOR_TRANSPORT=$(FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT)
 CPPFLAGS += -DFEATURE_MULTIPLAYER_AUTOCONNECT=$(FEATURE_MULTIPLAYER_AUTOCONNECT)
@@ -141,6 +143,9 @@ endif
 
 # Variable filled out in other make files
 AUTO_GEN_TARGETS :=
+MODGEN_TARGETS := include/generated/mod_registry.h src/generated/mod_registry.c build/generated/mod_sources.mk
+MODGEN_INPUTS := scripts/modgen.py $(shell find mods -type f 2>/dev/null)
+AUTO_GEN_TARGETS += $(MODGEN_TARGETS)
 include make_tools.mk
 # Tool executables
 GFX       := $(TOOLS_DIR)/gbagfx/gbagfx$(EXE)
@@ -154,6 +159,7 @@ MAPJSON   := $(TOOLS_DIR)/mapjson/mapjson$(EXE)
 JSONPROC  := $(TOOLS_DIR)/jsonproc/jsonproc$(EXE)
 
 PERL := perl
+PYTHON ?= python3
 SHA1 := $(shell { command -v sha1sum || command -v shasum; } 2>/dev/null) -c
 
 MAKEFLAGS += --no-print-directory
@@ -199,10 +205,14 @@ ifeq ($(SETUP_PREREQS),1)
   endif
 endif
 
+-include build/generated/mod_sources.mk
+MOD_C_SRCS ?=
+
 # Collect sources
 C_SRCS_IN := $(wildcard $(C_SUBDIR)/*.c $(C_SUBDIR)/*/*.c $(C_SUBDIR)/*/*/*.c)
 C_SRCS := $(foreach src,$(C_SRCS_IN),$(if $(findstring .inc.c,$(src)),,$(src)))
 C_OBJS := $(patsubst $(C_SUBDIR)/%.c,$(C_BUILDDIR)/%.o,$(C_SRCS))
+MOD_C_OBJS := $(patsubst mods/%.c,$(OBJ_DIR)/mods/%.o,$(MOD_C_SRCS))
 
 C_ASM_SRCS := $(wildcard $(C_SUBDIR)/*.s $(C_SUBDIR)/*/*.s $(C_SUBDIR)/*/*/*.s)
 C_ASM_OBJS := $(patsubst $(C_SUBDIR)/%.s,$(C_BUILDDIR)/%.o,$(C_ASM_SRCS))
@@ -216,7 +226,7 @@ DATA_ASM_OBJS := $(patsubst $(DATA_ASM_SUBDIR)/%.s,$(DATA_ASM_BUILDDIR)/%.o,$(DA
 MID_SRCS := $(wildcard $(MID_SUBDIR)/*.mid)
 MID_OBJS := $(patsubst $(MID_SUBDIR)/%.mid,$(MID_BUILDDIR)/%.o,$(MID_SRCS))
 
-OBJS     := $(C_OBJS) $(C_ASM_OBJS) $(ASM_OBJS) $(DATA_ASM_OBJS) $(MID_OBJS)
+OBJS     := $(C_OBJS) $(MOD_C_OBJS) $(C_ASM_OBJS) $(ASM_OBJS) $(DATA_ASM_OBJS) $(MID_OBJS)
 OBJS_REL := $(patsubst $(OBJ_DIR)/%,%,$(OBJS))
 
 SUBDIRS  := $(sort $(dir $(OBJS)))
@@ -266,6 +276,9 @@ include audio_rules.mk
 # so you can't really call this rule directly
 generated: $(AUTO_GEN_TARGETS)
 	@: # Silence the "Nothing to be done for `generated'" message, which some people were confusing for an error.
+
+$(MODGEN_TARGETS) &: $(MODGEN_INPUTS)
+	$(PYTHON) scripts/modgen.py --root . --out-header include/generated/mod_registry.h --out-source src/generated/mod_registry.c --out-make build/generated/mod_sources.mk
 
 
 %.s:   ;
@@ -321,8 +334,23 @@ endif
 $(C_BUILDDIR)/%.d: $(C_SUBDIR)/%.c
 	$(SCANINC) -M $@ -g $(ASSETS_DIR_NAME) $(INCLUDE_SCANINC_ARGS) -I tools/agbcc/include $<
 
+$(OBJ_DIR)/mods/%.o: mods/%.c
+ifneq ($(KEEP_TEMPS),1)
+	@echo "$(CC1) <flags> -o $@ $<"
+	@$(CPP) $(CPPFLAGS) $< | $(PREPROC) -i -g $(ASSETS_DIR_NAME) $< charmap.txt | $(CC1) $(CFLAGS) -o - - | cat - <(echo -e ".text\n\t.align\t2, 0") | $(AS) $(ASFLAGS) -o $@ -
+else
+	@$(CPP) $(CPPFLAGS) $< -o $(OBJ_DIR)/mods/$*.i
+	@$(PREPROC) -g $(ASSETS_DIR_NAME) $(OBJ_DIR)/mods/$*.i charmap.txt | $(CC1) $(CFLAGS) -o $(OBJ_DIR)/mods/$*.s
+	@echo -e ".text\n\t.align\t2, 0\n" >> $(OBJ_DIR)/mods/$*.s
+	$(AS) $(ASFLAGS) -o $@ $(OBJ_DIR)/mods/$*.s
+endif
+
+$(OBJ_DIR)/mods/%.d: mods/%.c
+	$(SCANINC) -M $@ -g $(ASSETS_DIR_NAME) $(INCLUDE_SCANINC_ARGS) -I tools/agbcc/include $<
+
 ifneq ($(NODEP),1)
 -include $(addprefix $(OBJ_DIR)/,$(C_SRCS:.c=.d))
+-include $(patsubst mods/%.c,$(OBJ_DIR)/mods/%.d,$(MOD_C_SRCS))
 endif
 
 $(ASM_BUILDDIR)/%.o: $(ASM_SUBDIR)/%.s

@@ -29,5 +29,11 @@ const struct EngineRuntimeState *EngineRuntimeState_Get(void);
 bool8 EngineRuntimeState_HasFlag(u32 flag);
 void EngineRuntimeState_SetFlag(u32 flag);
 void EngineRuntimeState_ClearFlag(u32 flag);
+u8 EngineRuntimeState_NormalizeMultiplayerMode(u8 mode);
+void EngineRuntimeState_LoadFromSave(void);
+void EngineRuntimeState_SaveToSave(void);
+u8 EngineRuntimeState_GetMultiplayerMode(void);
+void EngineRuntimeState_SetMultiplayerMode(u8 mode);
+bool8 EngineRuntimeState_IsMultiplayerOnlineEnabled(void);
 
 #endif // GUARD_ENGINE_RUNTIME_STATE_H

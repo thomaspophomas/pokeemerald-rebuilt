@@ -5,7 +5,11 @@
 #include "save.h"
 #include "task.h"
 #include "decompress.h"
+#include "engine/runtime_state.h"
 #include "load_save.h"
+#include "mod/event.h"
+#include "mod/flags.h"
+#include "mod/state.h"
 #include "overworld.h"
 #include "pokemon_storage_system.h"
 #include "trainer_hill.h"
@@ -75,6 +79,7 @@ struct
 // These will produce an error if a save struct is larger than the space
 // alloted for it in the flash.
 STATIC_ASSERT(sizeof(struct SaveBlock2) <= SECTOR_DATA_SIZE, SaveBlock2FreeSpace);
+STATIC_ASSERT(sizeof(struct SaveBlock2) == 0xF2C, SaveBlock2SizeChanged);
 STATIC_ASSERT(sizeof(struct SaveBlock1) <= SECTOR_DATA_SIZE * (SECTOR_ID_SAVEBLOCK1_END - SECTOR_ID_SAVEBLOCK1_START + 1), SaveBlock1FreeSpace);
 STATIC_ASSERT(sizeof(struct PokemonStorage) <= SECTOR_DATA_SIZE * (SECTOR_ID_PKMN_STORAGE_END - SECTOR_ID_PKMN_STORAGE_START + 1), PokemonStorageFreeSpace);
 
@@ -885,6 +890,13 @@ u8 LoadGameSave(u8 saveType)
     default:
         status = TryLoadSaveSlot(FULL_SAVE_SLOT, gRamSaveSectorLocations);
         CopyPartyAndObjectsFromSave();
+        if (status == SAVE_STATUS_OK)
+        {
+            EngineRuntimeState_LoadFromSave();
+            ModState_LoadFromSave();
+            ModFlag_Init();
+            ModEvent_Emit(MOD_EVENT_SAVE_LOADED, NULL, 0);
+        }
         gSaveFileStatus = status;
         gGameContinueCallback = NULL;
         break;

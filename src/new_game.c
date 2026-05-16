@@ -21,6 +21,9 @@
 #include "trainer_hill.h"
 #include "tv.h"
 #include "coins.h"
+#include "engine/runtime_state.h"
+#include "mod/flags.h"
+#include "mod/state.h"
 #include "text.h"
 #include "overworld.h"
 #include "mail.h"
@@ -96,6 +99,8 @@ static void SetDefaultOptions(void)
     gSaveBlock2Ptr->optionsBattleStyle = OPTIONS_BATTLE_STYLE_SHIFT;
     gSaveBlock2Ptr->optionsBattleSceneOff = FALSE;
     gSaveBlock2Ptr->regionMapZoom = FALSE;
+    gSaveBlock2Ptr->optionsMultiplayerMode = OPTIONS_MULTIPLAYER_MODE_SOLO;
+    gSaveBlock2Ptr->optionsMultiplayerReserved = 0;
 }
 
 static void ClearPokedexFlags(void)
@@ -134,6 +139,9 @@ void Sav2_ClearSetDefault(void)
 {
     ClearSav2();
     SetDefaultOptions();
+    EngineRuntimeState_LoadFromSave();
+    ModState_LoadFromSave();
+    ModFlag_Init();
 }
 
 void ResetMenuAndMonGlobals(void)

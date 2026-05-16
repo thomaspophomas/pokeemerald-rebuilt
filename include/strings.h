@@ -254,6 +254,7 @@ extern const u8 gText_MenuPlayer[];
 extern const u8 gText_MenuSave[];
 extern const u8 gText_MenuOption[];
 extern const u8 gText_MenuExit[];
+extern const u8 gText_MenuMultiplayer[];
 extern const u8 gText_MenuRetire[];
 extern const u8 gText_MenuRest[];
 extern const u8 gText_Floor1[];
@@ -316,6 +317,9 @@ extern const u8 gText_Sound[];
 extern const u8 gText_Frame[];
 extern const u8 gText_OptionMenuCancel[];
 extern const u8 gText_ButtonMode[];
+extern const u8 gText_MultiplayerMode[];
+extern const u8 gText_MultiplayerSolo[];
+extern const u8 gText_MultiplayerOnline[];
 
 extern const u8 gText_MaleSymbol[];
 extern const u8 gText_FemaleSymbol[];

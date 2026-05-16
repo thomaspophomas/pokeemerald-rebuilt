@@ -19,8 +19,13 @@ struct NetTransportSessionView
     u8 localPlayerId;
     u8 hostPlayerId;
     u8 playerCount;
+    u8 transportMode;
     u32 sessionId;
+    u32 sessionEpoch;
+    u32 playerToken;
+    u32 joinNonce;
     u32 bridgeTick;
+    u32 serverClockSeconds;
     struct NetPlayerSnapshot players[MAX_NET_PLAYERS];
     struct MultiplayerSubsession subsessions[MAX_NET_SUBSESSIONS];
 };
@@ -30,6 +35,7 @@ void NetTransport_Tick(void);
 bool8 NetTransport_IsConnected(void);
 bool8 NetTransport_ReadSessionView(struct NetTransportSessionView *view);
 bool8 NetTransport_WriteLocalSnapshot(const struct NetPlayerSnapshot *snapshot);
+bool8 NetTransport_SendUnreliablePacket(u8 packetType, const void *payload, u16 payloadSize);
 bool8 NetTransport_SendPacket(u8 packetType, const void *payload, u16 payloadSize);
 bool8 NetTransport_ReceivePacket(struct NetPacketEnvelope *envelope, void *payload, u16 capacity, u16 *payloadSize);
 

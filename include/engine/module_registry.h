@@ -5,6 +5,7 @@
 
 #define ENGINE_MODULE_FLAG_RUNTIME_SETTINGS (1 << 0)
 #define ENGINE_MODULE_FLAG_MULTIPLAYER      (1 << 1)
+#define ENGINE_MODULE_FLAG_MOD_API          (1 << 2)
 
 typedef void (*EngineModuleInitFunc)(void);
 typedef void (*EngineModuleFrameFunc)(void);

@@ -2,12 +2,28 @@
 #include "engine/module_registry.h"
 #include "engine/runtime_state.h"
 
+#if FEATURE_MODS
+#include "mod/core.h"
+#endif
+
 #if FEATURE_MULTIPLAYER
 #include "multiplayer/session.h"
 #endif
 
 static const struct EngineModule sEngineModules[] =
 {
+#if FEATURE_MODS
+    {
+        "mods",
+        ENGINE_MODULE_FLAG_RUNTIME_SETTINGS | ENGINE_MODULE_FLAG_MOD_API,
+        ModApi_Init,
+        ModApi_RunFrame,
+        ModApi_OnMapLoad,
+        ModApi_OnPlayerStep,
+        ModApi_OnBattleStart,
+        ModApi_OnBattleEnd,
+    },
+#endif
 #if FEATURE_MULTIPLAYER
     {
         "multiplayer",

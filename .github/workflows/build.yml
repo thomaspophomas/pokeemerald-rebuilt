@@ -26,6 +26,18 @@ jobs:
       - name: Architecture guard
         run: sh scripts/ci/architecture_guard.sh
 
+      - name: Multiplayer fuzz checks
+        run: python3 scripts/ci/multiplayer_fuzz.py
+
+      - name: Multiplayer host simulator
+        run: python3 scripts/ci/multiplayer_host_sim.py
+
+      - name: Multiplayer net manifest
+        run: python3 scripts/ci/check_net_manifest.py
+
+      - name: Mod generator smoke
+        run: python3 scripts/ci/modgen_smoke.py
+
       - name: Whitespace check
         run: git diff-tree --check -r --no-commit-id HEAD
 
@@ -95,7 +107,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        feature_multiplayer: [0, 1]
+        include:
+          - feature_multiplayer: 0
+            emulator_transport: 0
+          - feature_multiplayer: 1
+            emulator_transport: 0
+          - feature_multiplayer: 1
+            emulator_transport: 1
     env:
       GAME_VERSION: EMERALD
       GAME_REVISION: 0
@@ -112,7 +130,7 @@ jobs:
           sudo apt-get install -y build-essential gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev
 
       - name: Modern build
-        run: make -j${nproc} all FEATURE_MULTIPLAYER=${{ matrix.feature_multiplayer }}
+        run: make -j${nproc} all FEATURE_MULTIPLAYER=${{ matrix.feature_multiplayer }} FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT=${{ matrix.emulator_transport }}
 
   build-feature-agbcc:
     runs-on: ubuntu-latest
@@ -124,6 +142,7 @@ jobs:
       MODERN: 0
       COMPARE: 0
       FEATURE_MULTIPLAYER: 1
+      FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT: 1
     steps:
       - name: Checkout
         uses: actions/checkout@v4
