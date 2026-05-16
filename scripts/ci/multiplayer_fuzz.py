@@ -19,8 +19,8 @@ NET_PLAYER_STALE_FRAMES = 60 * 2
 NET_PLAYER_DISCONNECT_FRAMES = 60 * 10
 NET_PLAYER_COORD_MIN = -512
 NET_PLAYER_COORD_MAX = 8191
-NET_PROTOCOL_VERSION = 6
-NET_EMULATOR_BRIDGE_VERSION = 6
+NET_PROTOCOL_VERSION = 7
+NET_EMULATOR_BRIDGE_VERSION = 7
 NET_TRANSPORT_MODE_SERVER_BRIDGE = 1
 NET_SERVER_PROFILE_COUNT = 3
 NET_DEFAULT_SERVER_PORT = 7777
@@ -30,6 +30,8 @@ NET_PENDING_TX_COUNT = 16
 OPTIONS_MULTIPLAYER_MODE_SOLO = 0
 OPTIONS_MULTIPLAYER_MODE_ONLINE = 1
 OPTIONS_MULTIPLAYER_MODE_COUNT = 2
+MULTIPLAYER_ACTION_EXCLUSIVE_SCRIPT = 1
+MULTIPLAYER_ACTION_WARP = 2
 
 NET_PLAYER_FLAG_BUSY = 1 << 0
 NET_PLAYER_FLAG_IN_SUBSESSION = 1 << 1
@@ -128,6 +130,61 @@ class ServerConfig:
         ServerProfile(),
         ServerProfile(active=False, ipv4=(0, 0, 0, 0)),
         ServerProfile(active=False, ipv4=(0, 0, 0, 0)),
+    )
+
+
+@dataclass(frozen=True)
+class PendingBarrier:
+    session_epoch: int = 11
+    player_id: int = 0
+    action_sequence: int = 1
+    barrier_id: int = 1
+    action_type: int = MULTIPLAYER_ACTION_EXCLUSIVE_SCRIPT
+    resource_checksum: int = 0x1234
+    target_kind: int = 1
+    target_local_id: int = 7
+    map_group: int = 1
+    map_num: int = 1
+    elevation: int = ELEVATION_DEFAULT
+    x: int = 10
+    y: int = 10
+    script_hash: int = 0x22
+
+
+@dataclass(frozen=True)
+class BarrierResult:
+    session_epoch: int = 11
+    player_id: int = 0
+    action_sequence: int = 1
+    barrier_id: int = 1
+    action_type: int = MULTIPLAYER_ACTION_EXCLUSIVE_SCRIPT
+    resource_checksum: int = 0x1234
+    target_kind: int = 1
+    target_local_id: int = 7
+    map_group: int = 1
+    map_num: int = 1
+    elevation: int = ELEVATION_DEFAULT
+    x: int = 10
+    y: int = 10
+    script_hash: int = 0x22
+
+
+def barrier_result_matches_pending(pending: PendingBarrier, result: BarrierResult) -> bool:
+    return (
+        pending.session_epoch == result.session_epoch
+        and pending.player_id == result.player_id
+        and pending.action_sequence == result.action_sequence
+        and pending.barrier_id == result.barrier_id
+        and pending.action_type == result.action_type
+        and pending.resource_checksum == result.resource_checksum
+        and pending.target_kind == result.target_kind
+        and pending.target_local_id == result.target_local_id
+        and pending.map_group == result.map_group
+        and pending.map_num == result.map_num
+        and pending.elevation == result.elevation
+        and pending.x == result.x
+        and pending.y == result.y
+        and pending.script_hash == result.script_hash
     )
 
 
@@ -429,6 +486,16 @@ def test_server_config_edges() -> None:
     assert not server_config_is_valid(ServerConfig(profiles=(ServerProfile(ipv4=(100, 64, 0, 256)), ServerProfile(active=False), ServerProfile(active=False))))
 
 
+def test_generic_barrier_result_edges() -> None:
+    pending = PendingBarrier()
+    assert barrier_result_matches_pending(pending, BarrierResult())
+    assert not barrier_result_matches_pending(pending, BarrierResult(barrier_id=2))
+    assert not barrier_result_matches_pending(pending, BarrierResult(action_type=MULTIPLAYER_ACTION_WARP))
+    assert not barrier_result_matches_pending(pending, BarrierResult(resource_checksum=0x4321))
+    assert not barrier_result_matches_pending(pending, BarrierResult(script_hash=0x23))
+    assert not barrier_result_matches_pending(pending, BarrierResult(x=11))
+
+
 def fuzz_snapshots() -> None:
     rng = random.Random(0)
     for _ in range(5000):
@@ -468,6 +535,7 @@ def main() -> None:
     test_range_edges()
     test_runtime_mode_edges()
     test_server_config_edges()
+    test_generic_barrier_result_edges()
     fuzz_snapshots()
     print("Multiplayer fuzz checks OK")
 

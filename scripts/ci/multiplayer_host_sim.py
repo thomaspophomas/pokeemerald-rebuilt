@@ -42,6 +42,10 @@ NPC_POLICY_DISABLED_ONLINE = "disabled_online"
 LOCK_GRANTED = "granted"
 LOCK_BUSY = "busy"
 LOCK_DENIED = "denied"
+ACTION_READONLY_SCRIPT = "readonly_script"
+ACTION_EXCLUSIVE_SCRIPT = "exclusive_script"
+ACTION_WARP = "warp"
+ACTION_DISABLED_ONLINE = "disabled_online"
 
 FAIL_CLOSED_TYPES = {
     COMMIT_TRADE,
@@ -87,12 +91,43 @@ class InteractionTarget:
 
 
 @dataclass(frozen=True)
+class ResourceKey:
+    kind: str
+    map_group: int
+    map_num: int
+    local_id: int = 0
+    x: int = 0
+    y: int = 0
+    elevation: int = 0
+    resource_id: int = 0
+
+
+@dataclass(frozen=True)
 class InteractionRequest:
     server_tick: int
     player_id: int
     action_sequence: int
     target: InteractionTarget
     policy: str = NPC_POLICY_EXCLUSIVE
+    action_type: str = ACTION_EXCLUSIVE_SCRIPT
+    barrier_id: int = 1
+    resources: tuple[ResourceKey, ...] = ()
+
+
+@dataclass(frozen=True)
+class PendingAction:
+    target: InteractionTarget
+    facing: int
+    current_map: tuple[int, int]
+
+    def grant_is_still_valid(self, player_position: tuple[int, int], player_facing: int, current_map: tuple[int, int], target_exists: bool = True) -> bool:
+        if current_map != self.current_map:
+            return False
+        if player_facing != self.facing:
+            return False
+        if not target_exists:
+            return False
+        return abs(player_position[0] - self.target.x) + abs(player_position[1] - self.target.y) <= 2
 
 
 @dataclass(frozen=True)
@@ -196,21 +231,28 @@ class NpcLockManager:
         return sorted(requests, key=lambda request: (request.server_tick, request.action_sequence, request.player_id))[0]
 
     @staticmethod
-    def lock_key(target: InteractionTarget) -> tuple:
+    def lock_key(target: InteractionTarget) -> ResourceKey:
         if target.target_kind == "npc":
-            return (target.target_kind, target.map_group, target.map_num, target.local_id)
-        return (target.target_kind, target.map_group, target.map_num, target.local_id, target.x, target.y, target.elevation)
+            return ResourceKey("npc", target.map_group, target.map_num, local_id=target.local_id)
+        return ResourceKey(target.target_kind, target.map_group, target.map_num, local_id=target.local_id, x=target.x, y=target.y, elevation=target.elevation)
+
+    def request_resources(self, request: InteractionRequest) -> tuple[ResourceKey, ...]:
+        if request.resources:
+            return request.resources
+        return (self.lock_key(request.target),)
 
     def request(self, request: InteractionRequest) -> str:
-        lock_key = self.lock_key(request.target)
+        resource_keys = self.request_resources(request)
 
-        if request.policy == NPC_POLICY_SHARED_READONLY:
+        if request.policy == NPC_POLICY_SHARED_READONLY or request.action_type == ACTION_READONLY_SCRIPT:
             return LOCK_GRANTED
-        if request.policy == NPC_POLICY_DISABLED_ONLINE:
+        if request.policy == NPC_POLICY_DISABLED_ONLINE or request.action_type == ACTION_DISABLED_ONLINE:
             return LOCK_DENIED
-        if lock_key in self.locks and self.locks[lock_key].player_id != request.player_id:
-            return LOCK_BUSY
-        self.locks[lock_key] = request
+        for resource_key in resource_keys:
+            if resource_key in self.locks and self.locks[resource_key].player_id != request.player_id:
+                return LOCK_BUSY
+        for resource_key in resource_keys:
+            self.locks[resource_key] = request
         return LOCK_GRANTED
 
     def release_for_player(self, player_id: int) -> None:
@@ -428,6 +470,39 @@ def test_npc_lock_uses_stable_identity_when_npc_moves() -> None:
     assert locks.request(InteractionRequest(21, 2, 1, moved_view, NPC_POLICY_EXCLUSIVE)) == LOCK_BUSY
 
 
+def test_resource_locks_prevent_cross_npc_reward_dupes() -> None:
+    locks = NpcLockManager()
+    flag_reward = ResourceKey("flag", 1, 2, resource_id=3001)
+    item_reward = ResourceKey("item_reward", 1, 2, resource_id=42)
+    npc_a = ResourceKey("npc", 1, 2, local_id=9)
+    npc_b = ResourceKey("npc", 1, 2, local_id=10)
+    target_a = InteractionTarget(1, 2, 9, 10, 11, 3)
+    target_b = InteractionTarget(1, 2, 10, 12, 11, 3)
+
+    assert locks.request(InteractionRequest(20, 1, 1, target_a, resources=(npc_a, flag_reward, item_reward))) == LOCK_GRANTED
+    assert locks.request(InteractionRequest(20, 2, 1, target_b, resources=(npc_b, flag_reward, item_reward))) == LOCK_BUSY
+
+
+def test_disabled_and_readonly_barrier_policies() -> None:
+    locks = NpcLockManager()
+    target = InteractionTarget(1, 2, 11, 10, 11, 3)
+    readonly = InteractionRequest(20, 1, 1, target, NPC_POLICY_SHARED_READONLY, ACTION_READONLY_SCRIPT)
+    disabled = InteractionRequest(20, 1, 2, target, NPC_POLICY_DISABLED_ONLINE, ACTION_DISABLED_ONLINE)
+
+    assert locks.request(readonly) == LOCK_GRANTED
+    assert not locks.locks
+    assert locks.request(disabled) == LOCK_DENIED
+
+
+def test_stale_grant_is_revalidated_client_side() -> None:
+    pending = PendingAction(InteractionTarget(1, 2, 7, 10, 11, 3), facing=2, current_map=(1, 2))
+    assert pending.grant_is_still_valid((10, 11), 2, (1, 2))
+    assert not pending.grant_is_still_valid((14, 11), 2, (1, 2))
+    assert not pending.grant_is_still_valid((10, 11), 3, (1, 2))
+    assert not pending.grant_is_still_valid((10, 11), 2, (1, 3))
+    assert not pending.grant_is_still_valid((10, 11), 2, (1, 2), target_exists=False)
+
+
 def test_client_hello_requires_ack() -> None:
     hello = HelloHandshake()
     hello.send_hello(delivered=True, accepted=True, profile_ready=False, control_ready=True)
@@ -477,6 +552,9 @@ def main() -> None:
     test_npc_lock_same_tick_deterministic()
     test_npc_shared_and_disconnect_cleanup()
     test_npc_lock_uses_stable_identity_when_npc_moves()
+    test_resource_locks_prevent_cross_npc_reward_dupes()
+    test_disabled_and_readonly_barrier_policies()
+    test_stale_grant_is_revalidated_client_side()
     test_client_hello_requires_ack()
     test_avatar_singleton()
     test_solo_online_toggle_cleanup()

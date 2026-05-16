@@ -7,6 +7,7 @@
 #include "mod/npc.h"
 #include "multiplayer/session.h"
 #include "multiplayer/commit.h"
+#include "multiplayer/overworld_interaction.h"
 #include "multiplayer/transport.h"
 #include "multiplayer/overworld.h"
 #include "multiplayer/battle.h"
@@ -26,17 +27,10 @@ static EWRAM_DATA u16 sTransportLossFrames = 0;
 static EWRAM_DATA bool8 sPlayerControlReady = FALSE;
 static EWRAM_DATA bool8 sPlayerProfileInitialized = FALSE;
 static EWRAM_DATA bool8 sAutoconnectPending = FALSE;
-static EWRAM_DATA struct
-{
-    bool8 active;
-    u8 objectEventId;
-    u8 facing;
-    const u8 *script;
-    struct MultiplayerInteractionTarget target;
-    struct MultiplayerTransactionKey key;
-} sPendingInteraction = {0};
+static EWRAM_DATA struct MultiplayerPendingOverworldAction sPendingOverworldAction = {0};
+static EWRAM_DATA u16 sNextBarrierId = 1;
 
-static void ClearPendingInteraction(bool8 rollback);
+static void ClearPendingOverworldAction(bool8 rollback);
 static void ClearPendingTransactionForKey(const struct MultiplayerTransactionKey *key);
 
 static bool8 RuntimeAllowsOnline(void)
@@ -116,7 +110,8 @@ static void ResetSession(void)
 {
     memset(&sSession, 0, sizeof(sSession));
     memset(sPendingTransactions, 0, sizeof(sPendingTransactions));
-    memset(&sPendingInteraction, 0, sizeof(sPendingInteraction));
+    memset(&sPendingOverworldAction, 0, sizeof(sPendingOverworldAction));
+    sNextBarrierId = 1;
     sSession.state = MULTIPLAYER_SESSION_OFFLINE;
     sSession.localPlayerId = NET_PLAYER_NONE;
     sSession.hostPlayerId = NET_PLAYER_NONE;
@@ -509,7 +504,7 @@ static bool8 SubsessionMatchesBarrier(const struct MultiplayerSubsession *subses
 
 static void ResetInteractionBarrier(void)
 {
-    ClearPendingInteraction(TRUE);
+    ClearPendingOverworldAction(TRUE);
     memset(&sSession.interactionBarrier, 0, sizeof(sSession.interactionBarrier));
 }
 
@@ -538,7 +533,9 @@ static void ExpireInteractionBarrier(void)
 {
     if (!sSession.interactionBarrier.active)
         return;
-    if (sSession.interactionBarrier.type == MULTIPLAYER_BARRIER_SCRIPT && !sPendingInteraction.active)
+    if ((sSession.interactionBarrier.type == MULTIPLAYER_BARRIER_SCRIPT
+      || sSession.interactionBarrier.type == MULTIPLAYER_BARRIER_WARP)
+     && !sPendingOverworldAction.active)
     {
         if (ArePlayerFieldControlsLocked())
         {
@@ -692,23 +689,23 @@ static void ClearPendingTransactionForKey(const struct MultiplayerTransactionKey
     }
 }
 
-static void ClearPendingInteraction(bool8 rollback)
+static void ClearPendingOverworldAction(bool8 rollback)
 {
-    if (!sPendingInteraction.active)
+    if (!sPendingOverworldAction.active)
         return;
 
-    ClearPendingTransactionForKey(&sPendingInteraction.key);
+    ClearPendingTransactionForKey(&sPendingOverworldAction.key);
     if (rollback)
     {
         MultiplayerCommit_Rollback(
-            &sPendingInteraction.key,
+            &sPendingOverworldAction.key,
             MULTIPLAYER_COMMIT_NONE,
-            &sPendingInteraction.target,
-            sizeof(sPendingInteraction.target),
+            &sPendingOverworldAction.target,
+            sizeof(sPendingOverworldAction.target),
             NULL);
         UnlockPlayerFieldControls();
     }
-    memset(&sPendingInteraction, 0, sizeof(sPendingInteraction));
+    memset(&sPendingOverworldAction, 0, sizeof(sPendingOverworldAction));
 }
 
 static struct MultiplayerPendingTransaction *GetOrAllocPendingTransaction(const struct MultiplayerTransactionKey *key)
@@ -1052,16 +1049,22 @@ static void PublishMoveIntent(u8 direction, u16 newKeys, u16 heldKeys)
     NetTransport_SendUnreliablePacket(NET_PACKET_MOVE_INTENT, &intent, sizeof(intent));
 }
 
-static bool8 SendInteractIntent(u8 type, u8 targetPlayerId, const struct MultiplayerInteractionTarget *target, const struct MultiplayerTransactionKey *key)
+static bool8 SendInteractIntent(u8 type, u8 targetPlayerId, const struct MultiplayerPendingOverworldAction *action)
 {
     struct NetInteractIntent intent;
     const struct NetPlayerSnapshot *snapshot;
+    const struct MultiplayerInteractionTarget *target;
+    const struct MultiplayerTransactionKey *key;
 
     if (!MultiplayerSession_IsOnline())
         return FALSE;
     if (sSession.localPlayerId >= MAX_NET_PLAYERS)
         return FALSE;
-    if (target == NULL || key == NULL)
+    if (action == NULL)
+        return FALSE;
+    target = &action->target;
+    key = &action->key;
+    if (!action->active || target == NULL || key == NULL)
         return FALSE;
     snapshot = &sSession.players[sSession.localPlayerId];
     if (!snapshot->active)
@@ -1083,6 +1086,10 @@ static bool8 SendInteractIntent(u8 type, u8 targetPlayerId, const struct Multipl
     intent.x = target->x;
     intent.y = target->y;
     intent.scriptHash = target->scriptHash;
+    intent.barrierId = action->barrierId;
+    intent.actionType = action->actionType;
+    intent.resourceCount = action->resourceCount;
+    intent.resourceChecksum = OverworldInteraction_CalcResourceChecksum(action);
     return MultiplayerSession_SendReliableAction(NET_PACKET_INTERACT_INTENT, MULTIPLAYER_COMMIT_NONE, key, &intent, sizeof(intent));
 }
 
@@ -1090,6 +1097,7 @@ static void PublishInteractIntent(u8 type, u8 targetPlayerId, u8 mapGroup, u8 ma
 {
     struct MultiplayerInteractionTarget target;
     struct MultiplayerTransactionKey key;
+    struct MultiplayerPendingOverworldAction action;
     const struct NetPlayerSnapshot *snapshot;
     u32 actionSequence;
 
@@ -1110,65 +1118,61 @@ static void PublishInteractIntent(u8 type, u8 targetPlayerId, u8 mapGroup, u8 ma
     actionSequence = NextActionSequence();
     if (!MultiplayerSession_BuildTransactionKey(&key, NET_PACKET_INTERACT_INTENT, NET_SUBSESSION_NONE, actionSequence))
         return;
-    SendInteractIntent(type, targetPlayerId, &target, &key);
+    memset(&action, 0, sizeof(action));
+    action.active = TRUE;
+    action.actionType = type == MULTIPLAYER_BARRIER_WARP ? MULTIPLAYER_OW_ACTION_WARP : MULTIPLAYER_OW_ACTION_EXCLUSIVE_SCRIPT;
+    action.barrierType = type;
+    action.barrierId = sNextBarrierId++;
+    if (sNextBarrierId == 0)
+        sNextBarrierId++;
+    action.target = target;
+    action.key = key;
+    OverworldInteraction_AddResource(&action, MULTIPLAYER_RESOURCE_STORY_EVENT, mapGroup, mapNum, 0, target.elevation, target.x, target.y, type);
+    SendInteractIntent(type, targetPlayerId, &action);
 }
 
 static bool8 InteractionLockResultMatchesPending(const struct NetInteractionLockResult *result)
 {
-    if (!sPendingInteraction.active || result == NULL)
+    if (!sPendingOverworldAction.active || result == NULL)
         return FALSE;
-    if (result->sessionEpoch != sPendingInteraction.key.sessionEpoch)
+    if (result->sessionEpoch != sPendingOverworldAction.key.sessionEpoch)
         return FALSE;
-    if (result->actionSequence != sPendingInteraction.key.actionSequence)
+    if (result->actionSequence != sPendingOverworldAction.key.actionSequence)
         return FALSE;
-    if (result->playerId != sPendingInteraction.key.playerId)
+    if (result->playerId != sPendingOverworldAction.key.playerId)
         return FALSE;
-    if (result->targetKind != sPendingInteraction.target.targetKind)
+    if (result->barrierId != sPendingOverworldAction.barrierId)
         return FALSE;
-    if (result->targetLocalId != sPendingInteraction.target.localId)
+    if (result->actionType != sPendingOverworldAction.actionType)
         return FALSE;
-    if (result->mapGroup != sPendingInteraction.target.mapGroup || result->mapNum != sPendingInteraction.target.mapNum)
+    if (result->resourceChecksum != OverworldInteraction_CalcResourceChecksum(&sPendingOverworldAction))
         return FALSE;
-    if (result->targetElevation != sPendingInteraction.target.elevation)
+    if (result->targetKind != sPendingOverworldAction.target.targetKind)
         return FALSE;
-    if (result->x != sPendingInteraction.target.x || result->y != sPendingInteraction.target.y)
+    if (result->targetLocalId != sPendingOverworldAction.target.localId)
         return FALSE;
-    if (result->scriptHash != sPendingInteraction.target.scriptHash)
+    if (result->mapGroup != sPendingOverworldAction.target.mapGroup || result->mapNum != sPendingOverworldAction.target.mapNum)
+        return FALSE;
+    if (result->targetElevation != sPendingOverworldAction.target.elevation)
+        return FALSE;
+    if (result->x != sPendingOverworldAction.target.x || result->y != sPendingOverworldAction.target.y)
+        return FALSE;
+    if (result->scriptHash != sPendingOverworldAction.target.scriptHash)
         return FALSE;
 
     return TRUE;
 }
 
-static bool8 StartGrantedInteractionScript(void)
+static bool8 ResumeGrantedOverworldAction(void)
 {
-    u8 objectEventId = sPendingInteraction.objectEventId;
+    struct MultiplayerPendingOverworldAction action = sPendingOverworldAction;
 
-    if (!sPendingInteraction.active || sPendingInteraction.script == NULL)
+    if (!sPendingOverworldAction.active)
         return FALSE;
 
-    if (sPendingInteraction.target.targetKind == MULTIPLAYER_INTERACTION_TARGET_NPC)
-    {
-        if (objectEventId >= OBJECT_EVENTS_COUNT
-         || !gObjectEvents[objectEventId].active
-         || gObjectEvents[objectEventId].localId != sPendingInteraction.target.localId)
-        {
-            if (!TryGetObjectEventIdByLocalIdAndMap(
-                    sPendingInteraction.target.localId,
-                    sPendingInteraction.target.mapNum,
-                    sPendingInteraction.target.mapGroup,
-                    &objectEventId))
-                return FALSE;
-        }
-
-        gSelectedObjectEvent = objectEventId;
-        gSpecialVar_LastTalked = sPendingInteraction.target.localId;
-        gSpecialVar_Facing = sPendingInteraction.facing;
-    }
-
-    ClearPendingTransactionForKey(&sPendingInteraction.key);
-    ScriptContext_SetupScript(sPendingInteraction.script);
-    memset(&sPendingInteraction, 0, sizeof(sPendingInteraction));
-    return TRUE;
+    ClearPendingTransactionForKey(&sPendingOverworldAction.key);
+    memset(&sPendingOverworldAction, 0, sizeof(sPendingOverworldAction));
+    return OverworldInteraction_Resume(&action);
 }
 
 static void HandleInteractionLockResult(const struct NetInteractionLockResult *result)
@@ -1178,7 +1182,7 @@ static void HandleInteractionLockResult(const struct NetInteractionLockResult *r
 
     if (!InteractionLockResultMatchesPending(result))
         return;
-    target = sPendingInteraction.target;
+    target = sPendingOverworldAction.target;
 
     MultiplayerCommit_BuildKey(
         &key,
@@ -1190,24 +1194,24 @@ static void HandleInteractionLockResult(const struct NetInteractionLockResult *r
 
     if (result->result == MULTIPLAYER_INTERACTION_LOCK_GRANTED)
     {
-        if (StartGrantedInteractionScript())
+        if (ResumeGrantedOverworldAction())
             MultiplayerCommit_Commit(&key, MULTIPLAYER_COMMIT_NONE, &target, sizeof(target), NULL);
         else
         {
             MultiplayerCommit_Rollback(&key, MULTIPLAYER_COMMIT_NONE, &target, sizeof(target), NULL);
-            ClearPendingInteraction(FALSE);
+            ClearPendingOverworldAction(FALSE);
             memset(&sSession.interactionBarrier, 0, sizeof(sSession.interactionBarrier));
             UnlockPlayerFieldControls();
-            ScriptContext_SetupScript(EventScript_MultiplayerNpcBusy);
+            OverworldInteraction_ShowDeniedMessage();
         }
         return;
     }
 
     MultiplayerCommit_Rollback(&key, MULTIPLAYER_COMMIT_NONE, &target, sizeof(target), NULL);
-    ClearPendingInteraction(FALSE);
+    ClearPendingOverworldAction(FALSE);
     memset(&sSession.interactionBarrier, 0, sizeof(sSession.interactionBarrier));
     UnlockPlayerFieldControls();
-    ScriptContext_SetupScript(EventScript_MultiplayerNpcBusy);
+    OverworldInteraction_ShowDeniedMessage();
 }
 
 static void ProcessInboundPackets(void)
@@ -1386,6 +1390,7 @@ void MultiplayerSession_Tick(void)
 void MultiplayerSession_OnMapLoad(void)
 {
 #if FEATURE_MULTIPLAYER
+    MultiplayerSession_OnMapWarpCompleted();
     if (MultiplayerSession_CanRunOnlineLifecycle())
         MultiplayerOverworld_OnMapLoad();
 #endif
@@ -1668,58 +1673,27 @@ bool8 MultiplayerSession_SendReliableAction(u8 packetType, u8 commitType, const 
 u8 MultiplayerSession_PreflightInteraction(const struct MultiplayerInteractionTarget *target, const u8 *script, u8 objectEventId, u8 facing)
 {
 #if FEATURE_MULTIPLAYER
-    struct MultiplayerTransactionKey key;
-    u32 actionSequence;
+    struct MultiplayerPendingOverworldAction action;
 
-    if (!RuntimeAllowsOnline() || !MultiplayerSession_IsOnline())
-        return MULTIPLAYER_INTERACTION_PREFLIGHT_START;
-    if (script == NULL || !InteractionTargetIsValid(target))
-        return MULTIPLAYER_INTERACTION_PREFLIGHT_DENIED;
-    if (target->interactionPolicy == MOD_NPC_INTERACTION_SHARED_READONLY)
-        return MULTIPLAYER_INTERACTION_PREFLIGHT_START;
-    if (target->interactionPolicy == MOD_NPC_INTERACTION_DISABLED_ONLINE)
-        return MULTIPLAYER_INTERACTION_PREFLIGHT_DENIED;
-    if (sSession.localPlayerId >= MAX_NET_PLAYERS || sSession.healthState != MULTIPLAYER_HEALTH_HEALTHY)
-        return MULTIPLAYER_INTERACTION_PREFLIGHT_BUSY;
-    if (sSession.interactionBarrier.active)
+    memset(&action, 0, sizeof(action));
+    action.active = TRUE;
+    action.actionType = MULTIPLAYER_OW_ACTION_EXCLUSIVE_SCRIPT;
+    action.resumeKind = MULTIPLAYER_OW_RESUME_SCRIPT;
+    action.barrierType = MULTIPLAYER_BARRIER_SCRIPT;
+    action.objectEventId = objectEventId;
+    action.facing = facing;
+    action.script = script;
+    if (target != NULL)
     {
-        if (sPendingInteraction.active && InteractionTargetsEqual(&sPendingInteraction.target, target))
-            return MULTIPLAYER_INTERACTION_PREFLIGHT_WAIT;
-        return MULTIPLAYER_INTERACTION_PREFLIGHT_BUSY;
+        action.target = *target;
+        if (target->targetKind == MULTIPLAYER_INTERACTION_TARGET_NPC)
+            OverworldInteraction_AddResource(&action, MULTIPLAYER_RESOURCE_NPC, target->mapGroup, target->mapNum, target->localId, target->elevation, target->x, target->y, target->scriptHash);
+        else if (target->targetKind == MULTIPLAYER_INTERACTION_TARGET_BG_EVENT)
+            OverworldInteraction_AddResource(&action, MULTIPLAYER_RESOURCE_BG_EVENT, target->mapGroup, target->mapNum, target->localId, target->elevation, target->x, target->y, target->scriptHash);
+        else
+            OverworldInteraction_AddResource(&action, MULTIPLAYER_RESOURCE_MAP_TILE, target->mapGroup, target->mapNum, target->localId, target->elevation, target->x, target->y, target->scriptHash);
     }
-    if (MultiplayerSession_IsPlayerInteractionBlocked(sSession.localPlayerId))
-        return MULTIPLAYER_INTERACTION_PREFLIGHT_BUSY;
-
-    actionSequence = NextActionSequence();
-    if (!MultiplayerSession_BuildTransactionKey(&key, NET_PACKET_INTERACT_INTENT, NET_SUBSESSION_NONE, actionSequence))
-        return MULTIPLAYER_INTERACTION_PREFLIGHT_DENIED;
-
-    memset(&sSession.interactionBarrier, 0, sizeof(sSession.interactionBarrier));
-    sSession.interactionBarrier.active = TRUE;
-    sSession.interactionBarrier.type = MULTIPLAYER_BARRIER_SCRIPT;
-    sSession.interactionBarrier.ownerPlayerId = sSession.localPlayerId;
-    sSession.interactionBarrier.playerCount = 1;
-    sSession.interactionBarrier.players[0] = sSession.localPlayerId;
-    sSession.interactionBarrier.mapGroup = target->mapGroup;
-    sSession.interactionBarrier.mapNum = target->mapNum;
-    sSession.interactionBarrier.timeoutFrames = NET_INTERACTION_BARRIER_TIMEOUT_FRAMES;
-
-    memset(&sPendingInteraction, 0, sizeof(sPendingInteraction));
-    sPendingInteraction.active = TRUE;
-    sPendingInteraction.objectEventId = objectEventId;
-    sPendingInteraction.facing = facing;
-    sPendingInteraction.script = script;
-    sPendingInteraction.target = *target;
-    sPendingInteraction.key = key;
-    LockPlayerFieldControls();
-
-    if (!SendInteractIntent(MULTIPLAYER_BARRIER_SCRIPT, NET_PLAYER_NONE, target, &key))
-    {
-        ResetInteractionBarrier();
-        return MULTIPLAYER_INTERACTION_PREFLIGHT_BUSY;
-    }
-
-    return MULTIPLAYER_INTERACTION_PREFLIGHT_WAIT;
+    return MultiplayerSession_PreflightOverworldAction(&action);
 #else
     (void)target;
     (void)script;
@@ -1729,61 +1703,140 @@ u8 MultiplayerSession_PreflightInteraction(const struct MultiplayerInteractionTa
 #endif
 }
 
+u8 MultiplayerSession_PreflightOverworldAction(const struct MultiplayerPendingOverworldAction *action)
+{
+#if FEATURE_MULTIPLAYER
+    struct MultiplayerPendingOverworldAction pending;
+    u32 actionSequence;
+
+    if (!RuntimeAllowsOnline())
+        return MULTIPLAYER_INTERACTION_PREFLIGHT_START;
+    if (!MultiplayerSession_IsOnline())
+        return MULTIPLAYER_INTERACTION_PREFLIGHT_BUSY;
+    if (action == NULL || !action->active || !InteractionTargetIsValid(&action->target))
+        return MULTIPLAYER_INTERACTION_PREFLIGHT_DENIED;
+    if (action->actionType == MULTIPLAYER_OW_ACTION_DISABLED_ONLINE
+     || action->target.interactionPolicy == MOD_NPC_INTERACTION_DISABLED_ONLINE)
+        return MULTIPLAYER_INTERACTION_PREFLIGHT_DENIED;
+    if (action->actionType == MULTIPLAYER_OW_ACTION_READONLY_SCRIPT
+     || action->target.interactionPolicy == MOD_NPC_INTERACTION_SHARED_READONLY)
+    {
+        if (OverworldInteraction_IsReadonlyScriptAllowed(action->script))
+            return MULTIPLAYER_INTERACTION_PREFLIGHT_START;
+        return MULTIPLAYER_INTERACTION_PREFLIGHT_DENIED;
+    }
+    if (sSession.localPlayerId >= MAX_NET_PLAYERS || sSession.healthState != MULTIPLAYER_HEALTH_HEALTHY)
+        return MULTIPLAYER_INTERACTION_PREFLIGHT_BUSY;
+    if (sSession.interactionBarrier.active)
+    {
+        if (sPendingOverworldAction.active && InteractionTargetsEqual(&sPendingOverworldAction.target, &action->target))
+            return MULTIPLAYER_INTERACTION_PREFLIGHT_WAIT;
+        return MULTIPLAYER_INTERACTION_PREFLIGHT_BUSY;
+    }
+    if (MultiplayerSession_IsPlayerInteractionBlocked(sSession.localPlayerId))
+        return MULTIPLAYER_INTERACTION_PREFLIGHT_BUSY;
+
+    actionSequence = NextActionSequence();
+    pending = *action;
+    pending.key.actionSequence = 0;
+    if (!MultiplayerSession_BuildTransactionKey(&pending.key, NET_PACKET_INTERACT_INTENT, NET_SUBSESSION_NONE, actionSequence))
+        return MULTIPLAYER_INTERACTION_PREFLIGHT_DENIED;
+    pending.barrierId = sNextBarrierId++;
+    if (sNextBarrierId == 0)
+        sNextBarrierId++;
+    if (pending.barrierType == MULTIPLAYER_BARRIER_NONE)
+        pending.barrierType = pending.actionType == MULTIPLAYER_OW_ACTION_WARP ? MULTIPLAYER_BARRIER_WARP : MULTIPLAYER_BARRIER_SCRIPT;
+    if (pending.resourceCount == 0)
+        OverworldInteraction_AddResource(&pending, MULTIPLAYER_RESOURCE_STORY_EVENT, pending.target.mapGroup, pending.target.mapNum, pending.target.localId, pending.target.elevation, pending.target.x, pending.target.y, pending.target.scriptHash);
+
+    memset(&sSession.interactionBarrier, 0, sizeof(sSession.interactionBarrier));
+    sSession.interactionBarrier.active = TRUE;
+    sSession.interactionBarrier.type = pending.barrierType;
+    sSession.interactionBarrier.ownerPlayerId = sSession.localPlayerId;
+    sSession.interactionBarrier.playerCount = 1;
+    sSession.interactionBarrier.players[0] = sSession.localPlayerId;
+    sSession.interactionBarrier.mapGroup = pending.target.mapGroup;
+    sSession.interactionBarrier.mapNum = pending.target.mapNum;
+    sSession.interactionBarrier.timeoutFrames = NET_INTERACTION_BARRIER_TIMEOUT_FRAMES;
+
+    sPendingOverworldAction = pending;
+    LockPlayerFieldControls();
+
+    if (!SendInteractIntent(pending.barrierType, NET_PLAYER_NONE, &pending))
+    {
+        ResetInteractionBarrier();
+        return MULTIPLAYER_INTERACTION_PREFLIGHT_BUSY;
+    }
+
+    return MULTIPLAYER_INTERACTION_PREFLIGHT_WAIT;
+#else
+    (void)action;
+    return MULTIPLAYER_INTERACTION_PREFLIGHT_START;
+#endif
+}
+
 bool8 MultiplayerSession_TryStartWarpBarrier(u8 mapGroup, u8 mapNum, u8 warpId, s16 x, s16 y)
 {
 #if FEATURE_MULTIPLAYER
-    struct MultiplayerInteractionTarget target;
-    struct MultiplayerTransactionKey key;
+    struct MultiplayerPendingOverworldAction action;
     const struct NetPlayerSnapshot *snapshot;
-    u32 actionSequence;
 
     if (!RuntimeAllowsOnline())
         return TRUE;
     if (!MultiplayerSession_IsOnline())
-        return FALSE;
-    if (sSession.localPlayerId >= MAX_NET_PLAYERS || sSession.healthState != MULTIPLAYER_HEALTH_HEALTHY)
-        return FALSE;
-    if (sSession.interactionBarrier.active || MultiplayerSession_IsPlayerInteractionBlocked(sSession.localPlayerId))
-        return FALSE;
-
-    snapshot = &sSession.players[sSession.localPlayerId];
-    if (!snapshot->active)
-        return FALSE;
-
-    memset(&target, 0, sizeof(target));
-    target.targetKind = MULTIPLAYER_INTERACTION_TARGET_METATILE;
-    target.interactionPolicy = MOD_NPC_INTERACTION_EXCLUSIVE;
-    target.mapGroup = snapshot->mapGroup;
-    target.mapNum = snapshot->mapNum;
-    target.localId = warpId;
-    target.elevation = snapshot->elevation;
-    target.x = snapshot->x;
-    target.y = snapshot->y;
-    target.scriptHash = ((u16)mapGroup << 8) ^ mapNum ^ ((u16)warpId << 4) ^ (u16)x ^ (u16)y;
-
-    if (!InteractionTargetIsValid(&target))
-        return FALSE;
-
-    actionSequence = NextActionSequence();
-    if (!MultiplayerSession_BuildTransactionKey(&key, NET_PACKET_INTERACT_INTENT, NET_SUBSESSION_NONE, actionSequence))
-        return FALSE;
-
-    memset(&sSession.interactionBarrier, 0, sizeof(sSession.interactionBarrier));
-    sSession.interactionBarrier.active = TRUE;
-    sSession.interactionBarrier.type = MULTIPLAYER_BARRIER_WARP;
-    sSession.interactionBarrier.ownerPlayerId = sSession.localPlayerId;
-    sSession.interactionBarrier.playerCount = 1;
-    sSession.interactionBarrier.players[0] = sSession.localPlayerId;
-    sSession.interactionBarrier.mapGroup = target.mapGroup;
-    sSession.interactionBarrier.mapNum = target.mapNum;
-    sSession.interactionBarrier.timeoutFrames = NET_INTERACTION_BARRIER_TIMEOUT_FRAMES;
-
-    if (!SendInteractIntent(MULTIPLAYER_BARRIER_WARP, NET_PLAYER_NONE, &target, &key))
     {
-        ResetInteractionBarrier();
+        OverworldInteraction_ShowDeniedMessage();
+        return FALSE;
+    }
+    if (sSession.localPlayerId >= MAX_NET_PLAYERS || sSession.healthState != MULTIPLAYER_HEALTH_HEALTHY)
+    {
+        OverworldInteraction_ShowDeniedMessage();
+        return FALSE;
+    }
+    if (sSession.interactionBarrier.active || MultiplayerSession_IsPlayerInteractionBlocked(sSession.localPlayerId))
+    {
+        OverworldInteraction_ShowDeniedMessage();
         return FALSE;
     }
 
+    snapshot = &sSession.players[sSession.localPlayerId];
+    if (!snapshot->active)
+    {
+        OverworldInteraction_ShowDeniedMessage();
+        return FALSE;
+    }
+
+    memset(&action, 0, sizeof(action));
+    action.active = TRUE;
+    action.actionType = MULTIPLAYER_OW_ACTION_WARP;
+    action.resumeKind = MULTIPLAYER_OW_RESUME_WARP;
+    action.barrierType = MULTIPLAYER_BARRIER_WARP;
+    action.target.targetKind = MULTIPLAYER_INTERACTION_TARGET_METATILE;
+    action.target.interactionPolicy = MOD_NPC_INTERACTION_EXCLUSIVE;
+    action.target.mapGroup = snapshot->mapGroup;
+    action.target.mapNum = snapshot->mapNum;
+    action.target.localId = warpId;
+    action.target.elevation = snapshot->elevation;
+    action.target.x = snapshot->x;
+    action.target.y = snapshot->y;
+    action.target.scriptHash = ((u16)mapGroup << 8) ^ mapNum ^ ((u16)warpId << 4) ^ (u16)x ^ (u16)y;
+    action.destMapGroup = mapGroup;
+    action.destMapNum = mapNum;
+    action.destWarpId = warpId;
+    action.destX = x;
+    action.destY = y;
+    OverworldInteraction_AddResource(&action, MULTIPLAYER_RESOURCE_WARP, snapshot->mapGroup, snapshot->mapNum, warpId, snapshot->elevation, snapshot->x, snapshot->y, action.target.scriptHash);
+    switch (MultiplayerSession_PreflightOverworldAction(&action))
+    {
+    case MULTIPLAYER_INTERACTION_PREFLIGHT_START:
+        return TRUE;
+    case MULTIPLAYER_INTERACTION_PREFLIGHT_BUSY:
+    case MULTIPLAYER_INTERACTION_PREFLIGHT_DENIED:
+        OverworldInteraction_ShowDeniedMessage();
+        break;
+    default:
+        break;
+    }
     return FALSE;
 #else
     (void)mapGroup;
@@ -1977,6 +2030,34 @@ void MultiplayerSession_ClearInteractionBarrier(u8 type)
         return;
 
     ResetInteractionBarrier();
+    UnlockPlayerFieldControls();
+#endif
+}
+
+void MultiplayerSession_OnScriptReleased(void)
+{
+#if FEATURE_MULTIPLAYER
+    if (!sSession.interactionBarrier.active)
+        return;
+    if (sSession.interactionBarrier.type != MULTIPLAYER_BARRIER_SCRIPT)
+        return;
+
+    ResetInteractionBarrier();
+    UnlockPlayerFieldControls();
+#endif
+}
+
+void MultiplayerSession_OnMapWarpCompleted(void)
+{
+#if FEATURE_MULTIPLAYER
+    if (!sSession.interactionBarrier.active)
+        return;
+    if (sSession.interactionBarrier.type != MULTIPLAYER_BARRIER_WARP)
+        return;
+
+    ClearPendingOverworldAction(FALSE);
+    memset(&sSession.interactionBarrier, 0, sizeof(sSession.interactionBarrier));
+    UnlockPlayerFieldControls();
 #endif
 }
 

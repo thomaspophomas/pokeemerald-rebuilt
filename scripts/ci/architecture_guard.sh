@@ -46,13 +46,13 @@ if grep -R -n "sBridge->players\\|sBridge->subsessions" src/multiplayer 2>/dev/n
     exit 1
 fi
 
-if ! grep -n '#define NET_PROTOCOL_VERSION 6' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
-    echo "Multiplayer protocol must retain ack-gated identity version 6 semantics." >&2
+if ! grep -n '#define NET_PROTOCOL_VERSION 7' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer protocol must retain ack-gated generic barrier version 7 semantics." >&2
     exit 1
 fi
 
-if ! grep -n '#define NET_EMULATOR_BRIDGE_VERSION 6' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
-    echo "Multiplayer bridge must retain server-config/ack version 6 semantics." >&2
+if ! grep -n '#define NET_EMULATOR_BRIDGE_VERSION 7' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer bridge must retain server-config/ack/generic-barrier version 7 semantics." >&2
     exit 1
 fi
 
@@ -98,6 +98,16 @@ fi
 
 if ! grep -R -n "actionSequence\\|sessionEpoch\\|subsessionId" include/multiplayer/protocol.h src/multiplayer/commit.c >/tmp/architecture_guard_matches.txt 2>/dev/null; then
     echo "CommitResult must carry enough full-key fields for idempotent reconnects." >&2
+    exit 1
+fi
+
+if ! grep -R -n "OverworldInteraction_Preflight" include/multiplayer src/multiplayer src/field_control_avatar.c >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Online overworld actions must flow through the central interaction preflight." >&2
+    exit 1
+fi
+
+if ! grep -R -n "MULTIPLAYER_RESOURCE_.*FLAG\\|MULTIPLAYER_RESOURCE_.*ITEM_REWARD\\|MULTIPLAYER_RESOURCE_.*MAP_TILE\\|MULTIPLAYER_RESOURCE_.*MENU" include/multiplayer src/multiplayer src/field_control_avatar.c >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Overworld interaction locks must retain typed resource keys beyond NPC locks." >&2
     exit 1
 fi
 

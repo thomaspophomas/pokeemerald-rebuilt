@@ -76,6 +76,44 @@ enum MultiplayerInteractionLockResult
     MULTIPLAYER_INTERACTION_LOCK_TIMEOUT,
 };
 
+enum MultiplayerOverworldActionType
+{
+    MULTIPLAYER_OW_ACTION_READONLY_SCRIPT,
+    MULTIPLAYER_OW_ACTION_EXCLUSIVE_SCRIPT,
+    MULTIPLAYER_OW_ACTION_WARP,
+    MULTIPLAYER_OW_ACTION_COORD_EVENT,
+    MULTIPLAYER_OW_ACTION_STEP_EVENT,
+    MULTIPLAYER_OW_ACTION_MENU,
+    MULTIPLAYER_OW_ACTION_BATTLE,
+    MULTIPLAYER_OW_ACTION_REWARD,
+    MULTIPLAYER_OW_ACTION_DISABLED_ONLINE,
+};
+
+enum MultiplayerOverworldResumeKind
+{
+    MULTIPLAYER_OW_RESUME_NONE,
+    MULTIPLAYER_OW_RESUME_SCRIPT,
+    MULTIPLAYER_OW_RESUME_WARP,
+    MULTIPLAYER_OW_RESUME_DOOR_WARP,
+    MULTIPLAYER_OW_RESUME_DIVE_WARP,
+    MULTIPLAYER_OW_RESUME_DIVE_DOWN_SCRIPT,
+    MULTIPLAYER_OW_RESUME_DIVE_EMERGE_SCRIPT,
+};
+
+enum MultiplayerResourceLockKind
+{
+    MULTIPLAYER_RESOURCE_NPC,
+    MULTIPLAYER_RESOURCE_BG_EVENT,
+    MULTIPLAYER_RESOURCE_WARP,
+    MULTIPLAYER_RESOURCE_FLAG,
+    MULTIPLAYER_RESOURCE_ITEM_REWARD,
+    MULTIPLAYER_RESOURCE_MONEY,
+    MULTIPLAYER_RESOURCE_PARTY,
+    MULTIPLAYER_RESOURCE_MAP_TILE,
+    MULTIPLAYER_RESOURCE_STORY_EVENT,
+    MULTIPLAYER_RESOURCE_MENU,
+};
+
 enum MultiplayerSessionHealth
 {
     MULTIPLAYER_HEALTH_DISCONNECTED,
@@ -159,6 +197,40 @@ struct MultiplayerInteractionTarget
     s16 x;
     s16 y;
     u16 scriptHash;
+};
+
+struct MultiplayerResourceLockKey
+{
+    u8 kind;
+    u8 mapGroup;
+    u8 mapNum;
+    u8 localId;
+    u8 elevation;
+    s16 x;
+    s16 y;
+    u16 id;
+};
+
+struct MultiplayerPendingOverworldAction
+{
+    bool8 active;
+    u8 actionType;
+    u8 resumeKind;
+    u8 objectEventId;
+    u8 facing;
+    u8 barrierType;
+    const u8 *script;
+    struct MultiplayerInteractionTarget target;
+    struct MultiplayerTransactionKey key;
+    u16 barrierId;
+    u8 resourceCount;
+    struct MultiplayerResourceLockKey resources[NET_INTERACTION_RESOURCE_LOCK_MAX];
+    u8 destMapGroup;
+    u8 destMapNum;
+    u8 destWarpId;
+    u8 reserved;
+    s16 destX;
+    s16 destY;
 };
 
 struct NetPlayerSnapshot

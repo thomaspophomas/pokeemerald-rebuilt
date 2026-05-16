@@ -35,9 +35,12 @@ bool8 MultiplayerSession_IsPlayerInteractionBlocked(u8 playerId);
 bool8 MultiplayerSession_ArePlayersOnSameMap(u8 playerCount, const u8 *players);
 bool8 MultiplayerSession_ArePlayersWithinRange(u8 playerCount, const u8 *players, u16 maxDistance);
 u8 MultiplayerSession_PreflightInteraction(const struct MultiplayerInteractionTarget *target, const u8 *script, u8 objectEventId, u8 facing);
+u8 MultiplayerSession_PreflightOverworldAction(const struct MultiplayerPendingOverworldAction *action);
 bool8 MultiplayerSession_TryStartWarpBarrier(u8 mapGroup, u8 mapNum, u8 warpId, s16 x, s16 y);
 bool8 MultiplayerSession_StartInteractionBarrier(u8 type, u8 playerCount, const u8 *players);
 void MultiplayerSession_ClearInteractionBarrier(u8 type);
+void MultiplayerSession_OnScriptReleased(void);
+void MultiplayerSession_OnMapWarpCompleted(void);
 bool8 MultiplayerSession_StartSubsession(u8 type, u8 playerCount, const u8 *players);
 void MultiplayerSession_EndSubsession(u8 subsessionId, u8 state);
 

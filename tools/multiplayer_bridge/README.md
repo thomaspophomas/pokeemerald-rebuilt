@@ -1,6 +1,6 @@
 # Multiplayer Bridge Reference
 
-This is a small reference bridge for the v1 multiplayer contract.
+This is a small reference bridge for the v7 multiplayer contract.
 
 The ROM does not open sockets. It writes local state and server preferences into
 an emulator-exposed bridge buffer. The bridge owns the TCP connection to the

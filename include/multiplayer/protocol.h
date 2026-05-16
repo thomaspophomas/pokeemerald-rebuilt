@@ -129,7 +129,10 @@ struct NetInteractIntent
     s16 x;
     s16 y;
     u16 scriptHash;
-    u16 reserved;
+    u16 barrierId;
+    u8 actionType;
+    u8 resourceCount;
+    u16 resourceChecksum;
 } __attribute__((packed));
 
 struct NetInteractionLockResult
@@ -149,6 +152,10 @@ struct NetInteractionLockResult
     s16 x;
     s16 y;
     u16 scriptHash;
+    u16 barrierId;
+    u8 actionType;
+    u8 resourceCount;
+    u16 resourceChecksum;
     u16 detail;
 } __attribute__((packed));
 

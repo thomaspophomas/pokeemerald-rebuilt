@@ -18,7 +18,7 @@ from pathlib import Path
 
 
 BRIDGE_MAGIC = 0x3844454E
-BRIDGE_VERSION = 6
+BRIDGE_VERSION = 7
 TRANSPORT_MODE_SERVER_BRIDGE = 1
 DEFAULT_SIZE = 64 * 1024
 DEFAULT_PORT = 7777
@@ -337,7 +337,7 @@ def run_bridge(memory: BridgeMemory, default_endpoint: Endpoint | None, reconnec
                 with socket.create_connection((endpoint.host, endpoint.port), timeout=5.0) as sock:
                     sock.settimeout(0.1)
                     memory.init_header()
-                    send_frame(sock, FRAME_CLIENT_HELLO, b"bridge-v6")
+                    send_frame(sock, FRAME_CLIENT_HELLO, b"bridge-v7")
                     while True:
                         if poll_rom(memory, sock, state, force_endpoint):
                             memory.write_header(connected=0, connection_status=NET_CONNECTION_STATUS_CONNECTING)

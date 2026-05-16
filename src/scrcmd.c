@@ -135,6 +135,7 @@ bool8 ScrCmd_nop1(struct ScriptContext *ctx)
 
 bool8 ScrCmd_end(struct ScriptContext *ctx)
 {
+    MultiplayerSession_OnScriptReleased();
     StopScript(ctx);
     return FALSE;
 }
@@ -151,6 +152,8 @@ bool8 ScrCmd_special(struct ScriptContext *ctx)
 {
     u16 index = ScriptReadHalfword(ctx);
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
     gSpecials[index]();
     return FALSE;
 }
@@ -158,8 +161,11 @@ bool8 ScrCmd_special(struct ScriptContext *ctx)
 bool8 ScrCmd_specialvar(struct ScriptContext *ctx)
 {
     u16 *var = GetVarPointer(ScriptReadHalfword(ctx));
+    u16 index = ScriptReadHalfword(ctx);
 
-    *var = gSpecials[ScriptReadHalfword(ctx)]();
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
+    *var = gSpecials[index]();
     return FALSE;
 }
 
@@ -167,6 +173,8 @@ bool8 ScrCmd_callnative(struct ScriptContext *ctx)
 {
     NativeFunc func = (NativeFunc)ScriptReadWord(ctx);
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
     func();
     return FALSE;
 }
@@ -320,6 +328,7 @@ bool8 ScrCmd_returnram(struct ScriptContext *ctx)
 
 bool8 ScrCmd_endram(struct ScriptContext *ctx)
 {
+    MultiplayerSession_OnScriptReleased();
     ClearRamScript();
     StopScript(ctx);
     return TRUE;
@@ -392,21 +401,33 @@ bool8 ScrCmd_copybyte(struct ScriptContext *ctx)
 bool8 ScrCmd_setvar(struct ScriptContext *ctx)
 {
     u16 *ptr = GetVarPointer(ScriptReadHalfword(ctx));
-    *ptr = ScriptReadHalfword(ctx);
+    u16 value = ScriptReadHalfword(ctx);
+
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
+    *ptr = value;
     return FALSE;
 }
 
 bool8 ScrCmd_copyvar(struct ScriptContext *ctx)
 {
     u16 *ptr = GetVarPointer(ScriptReadHalfword(ctx));
-    *ptr = *GetVarPointer(ScriptReadHalfword(ctx));
+    u16 value = *GetVarPointer(ScriptReadHalfword(ctx));
+
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
+    *ptr = value;
     return FALSE;
 }
 
 bool8 ScrCmd_setorcopyvar(struct ScriptContext *ctx)
 {
     u16 *ptr = GetVarPointer(ScriptReadHalfword(ctx));
-    *ptr = VarGet(ScriptReadHalfword(ctx));
+    u16 value = VarGet(ScriptReadHalfword(ctx));
+
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
+    *ptr = value;
     return FALSE;
 }
 
@@ -497,14 +518,22 @@ bool8 ScrCmd_compare_var_to_var(struct ScriptContext *ctx)
 bool8 ScrCmd_addvar(struct ScriptContext *ctx)
 {
     u16 *ptr = GetVarPointer(ScriptReadHalfword(ctx));
-    *ptr += ScriptReadHalfword(ctx);
+    u16 value = ScriptReadHalfword(ctx);
+
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
+    *ptr += value;
     return FALSE;
 }
 
 bool8 ScrCmd_subvar(struct ScriptContext *ctx)
 {
     u16 *ptr = GetVarPointer(ScriptReadHalfword(ctx));
-    *ptr -= VarGet(ScriptReadHalfword(ctx));
+    u16 value = VarGet(ScriptReadHalfword(ctx));
+
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
+    *ptr -= value;
     return FALSE;
 }
 
@@ -1321,6 +1350,7 @@ bool8 ScrCmd_releaseall(struct ScriptContext *ctx)
     ObjectEventClearHeldMovementIfFinished(&gObjectEvents[playerObjectId]);
     ScriptMovement_UnfreezeObjectEvents();
     UnfreezeObjectEvents();
+    MultiplayerSession_OnScriptReleased();
     return FALSE;
 }
 
@@ -1335,6 +1365,7 @@ bool8 ScrCmd_release(struct ScriptContext *ctx)
     ObjectEventClearHeldMovementIfFinished(&gObjectEvents[playerObjectId]);
     ScriptMovement_UnfreezeObjectEvents();
     UnfreezeObjectEvents();
+    MultiplayerSession_OnScriptReleased();
     return FALSE;
 }
 

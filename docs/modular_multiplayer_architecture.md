@@ -216,8 +216,17 @@ RTC, and run mismatched ROM/core builds. The hardening rules are:
 - Subsessions treat `INVITING`, `READY`, and `ACTIVE` as blocking states with
   timeouts; `ENDING` and `ERROR` are terminal cleanup states that do not keep
   players busy forever.
+- Overworld actions flow through `OverworldInteraction_Preflight` before an
+  online script, warp, coord/step event, menu, battle, or reward can start.
+  Unknown or unmigrated actions are blocked online and remain vanilla offline.
 - Interaction barriers reserve a short owner/participant/map scoped window for
-  script, warp, battle-invite, and trade-invite flows.
+  script, warp, battle-invite, and trade-invite flows. Script and warp barriers
+  are resumable: the client stores the intended action, waits for a server
+  grant, then revalidates map, position, facing, and target existence before
+  running exactly that action.
+- Online interaction locks use typed resources such as NPC, BG event, warp,
+  flag, reward, money, party, map tile, story event, and menu. This prevents
+  two different triggers from claiming the same online reward or flag.
 - Remote players are non-colliding virtual objects. Their virtual object IDs
   use the reserved high range `NET_REMOTE_PLAYER_VIRTUAL_ID_BASE` through
   `NET_REMOTE_PLAYER_VIRTUAL_ID_END`, above the known scripted audience IDs
@@ -232,8 +241,8 @@ RTC, and run mismatched ROM/core builds. The hardening rules are:
   and extreme coordinates.
 - `scripts/ci/multiplayer_host_sim.py` models idempotent server commits,
   packet loss, duplicate delivery, retry, full-key commit results, trade
-  rollback, NPC lock winner/busy behavior, ringbuffer backpressure, hello
-  retry, and remote-avatar singleton ownership.
+  rollback, NPC/resource lock winner/busy behavior, stale grant revalidation,
+  ringbuffer backpressure, hello retry, and remote-avatar singleton ownership.
 - `scripts/ci/check_net_manifest.py` prevents protocol/build/bridge constants
   from drifting away from the manifest consumed by the future server allowlist.
 - `scripts/ci/multiplayer_bridge_smoke.py` checks the reference bridge header,
@@ -260,6 +269,8 @@ This pass adds:
 - Epoch/token/nonce handshake fields
 - Acked client hello and heartbeat packets
 - Move/interaction/NPC-lock/battle/trade/server-clock packet taxonomy
+- Generic interaction barrier result fields for action type, barrier ID, and
+  resource checksum
 - Server-clock port for future online daily events and weather cycles
 - Multiplayer net manifest CI check
 - Idempotent `MultiplayerCommit_*` API with stable transaction keys and
