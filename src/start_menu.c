@@ -7,6 +7,7 @@
 #include "event_object_movement.h"
 #include "event_object_lock.h"
 #include "event_scripts.h"
+#include "engine/runtime_state.h"
 #include "fieldmap.h"
 #include "field_effect.h"
 #include "field_player_avatar.h"
@@ -46,6 +47,9 @@
 #include "constants/battle_frontier.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#if FEATURE_MULTIPLAYER
+#include "multiplayer/session.h"
+#endif
 
 // Menu actions
 enum
@@ -58,6 +62,9 @@ enum
     MENU_ACTION_SAVE,
     MENU_ACTION_OPTION,
     MENU_ACTION_EXIT,
+#if FEATURE_MULTIPLAYER
+    MENU_ACTION_MULTIPLAYER,
+#endif
     MENU_ACTION_RETIRE_SAFARI,
     MENU_ACTION_PLAYER_LINK,
     MENU_ACTION_REST_FRONTIER,
@@ -99,6 +106,9 @@ static bool8 StartMenuPlayerNameCallback(void);
 static bool8 StartMenuSaveCallback(void);
 static bool8 StartMenuOptionCallback(void);
 static bool8 StartMenuExitCallback(void);
+#if FEATURE_MULTIPLAYER
+static bool8 StartMenuMultiplayerCallback(void);
+#endif
 static bool8 StartMenuSafariZoneRetireCallback(void);
 static bool8 StartMenuLinkModePlayerNameCallback(void);
 static bool8 StartMenuBattlePyramidRetireCallback(void);
@@ -189,6 +199,9 @@ static const struct MenuAction sStartMenuItems[] =
     [MENU_ACTION_SAVE]            = {gText_MenuSave,    {.u8_void = StartMenuSaveCallback}},
     [MENU_ACTION_OPTION]          = {gText_MenuOption,  {.u8_void = StartMenuOptionCallback}},
     [MENU_ACTION_EXIT]            = {gText_MenuExit,    {.u8_void = StartMenuExitCallback}},
+#if FEATURE_MULTIPLAYER
+    [MENU_ACTION_MULTIPLAYER]     = {gText_MenuMultiplayer, {.u8_void = StartMenuMultiplayerCallback}},
+#endif
     [MENU_ACTION_RETIRE_SAFARI]   = {gText_MenuRetire,  {.u8_void = StartMenuSafariZoneRetireCallback}},
     [MENU_ACTION_PLAYER_LINK]     = {gText_MenuPlayer,  {.u8_void = StartMenuLinkModePlayerNameCallback}},
     [MENU_ACTION_REST_FRONTIER]   = {gText_MenuRest,    {.u8_void = StartMenuSaveCallback}},
@@ -309,7 +322,8 @@ static void BuildStartMenuActions(void)
 
 static void AddStartMenuAction(u8 action)
 {
-    AppendToList(sCurrentStartMenuActions, &sNumStartMenuActions, action);
+    if (sNumStartMenuActions < ARRAY_COUNT(sCurrentStartMenuActions))
+        AppendToList(sCurrentStartMenuActions, &sNumStartMenuActions, action);
 }
 
 static void BuildNormalStartMenu(void)
@@ -332,6 +346,9 @@ static void BuildNormalStartMenu(void)
 
     AddStartMenuAction(MENU_ACTION_PLAYER);
     AddStartMenuAction(MENU_ACTION_SAVE);
+#if FEATURE_MULTIPLAYER
+    AddStartMenuAction(MENU_ACTION_MULTIPLAYER);
+#endif
     AddStartMenuAction(MENU_ACTION_OPTION);
     AddStartMenuAction(MENU_ACTION_EXIT);
 }
@@ -618,7 +635,11 @@ static bool8 HandleStartMenuInput(void)
         if (gMenuCallback != StartMenuSaveCallback
             && gMenuCallback != StartMenuExitCallback
             && gMenuCallback != StartMenuSafariZoneRetireCallback
-            && gMenuCallback != StartMenuBattlePyramidRetireCallback)
+            && gMenuCallback != StartMenuBattlePyramidRetireCallback
+#if FEATURE_MULTIPLAYER
+            && gMenuCallback != StartMenuMultiplayerCallback
+#endif
+            )
         {
            FadeScreen(FADE_TO_BLACK, 0);
         }
@@ -751,6 +772,22 @@ static bool8 StartMenuExitCallback(void)
 
     return TRUE;
 }
+
+#if FEATURE_MULTIPLAYER
+static bool8 StartMenuMultiplayerCallback(void)
+{
+    if (EngineRuntimeState_GetMultiplayerMode() == OPTIONS_MULTIPLAYER_MODE_ONLINE)
+        EngineRuntimeState_SetMultiplayerMode(OPTIONS_MULTIPLAYER_MODE_SOLO);
+    else
+        EngineRuntimeState_SetMultiplayerMode(OPTIONS_MULTIPLAYER_MODE_ONLINE);
+
+    MultiplayerSession_RefreshRuntimeMode();
+    RemoveExtraStartMenuWindows();
+    HideStartMenu();
+
+    return TRUE;
+}
+#endif
 
 static bool8 StartMenuSafariZoneRetireCallback(void)
 {

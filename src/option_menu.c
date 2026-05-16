@@ -15,6 +15,10 @@
 #include "window.h"
 #include "gba/m4a_internal.h"
 #include "constants/rgb.h"
+#include "engine/runtime_state.h"
+#if FEATURE_MULTIPLAYER
+#include "multiplayer/session.h"
+#endif
 
 #define tMenuSelection data[0]
 #define tTextSpeed data[1]
@@ -23,6 +27,15 @@
 #define tSound data[4]
 #define tButtonMode data[5]
 #define tWindowFrameType data[6]
+#if FEATURE_MULTIPLAYER
+#define tMultiplayerMode data[7]
+#endif
+
+#if FEATURE_MULTIPLAYER
+#define OPTION_MENU_ROW_HEIGHT 14
+#else
+#define OPTION_MENU_ROW_HEIGHT 16
+#endif
 
 enum
 {
@@ -32,6 +45,9 @@ enum
     MENUITEM_SOUND,
     MENUITEM_BUTTONMODE,
     MENUITEM_FRAMETYPE,
+#if FEATURE_MULTIPLAYER
+    MENUITEM_MULTIPLAYER,
+#endif
     MENUITEM_CANCEL,
     MENUITEM_COUNT,
 };
@@ -42,12 +58,15 @@ enum
     WIN_OPTIONS
 };
 
-#define YPOS_TEXTSPEED    (MENUITEM_TEXTSPEED * 16)
-#define YPOS_BATTLESCENE  (MENUITEM_BATTLESCENE * 16)
-#define YPOS_BATTLESTYLE  (MENUITEM_BATTLESTYLE * 16)
-#define YPOS_SOUND        (MENUITEM_SOUND * 16)
-#define YPOS_BUTTONMODE   (MENUITEM_BUTTONMODE * 16)
-#define YPOS_FRAMETYPE    (MENUITEM_FRAMETYPE * 16)
+#define YPOS_TEXTSPEED    (MENUITEM_TEXTSPEED * OPTION_MENU_ROW_HEIGHT)
+#define YPOS_BATTLESCENE  (MENUITEM_BATTLESCENE * OPTION_MENU_ROW_HEIGHT)
+#define YPOS_BATTLESTYLE  (MENUITEM_BATTLESTYLE * OPTION_MENU_ROW_HEIGHT)
+#define YPOS_SOUND        (MENUITEM_SOUND * OPTION_MENU_ROW_HEIGHT)
+#define YPOS_BUTTONMODE   (MENUITEM_BUTTONMODE * OPTION_MENU_ROW_HEIGHT)
+#define YPOS_FRAMETYPE    (MENUITEM_FRAMETYPE * OPTION_MENU_ROW_HEIGHT)
+#if FEATURE_MULTIPLAYER
+#define YPOS_MULTIPLAYER  (MENUITEM_MULTIPLAYER * OPTION_MENU_ROW_HEIGHT)
+#endif
 
 static void Task_OptionMenuFadeIn(u8 taskId);
 static void Task_OptionMenuProcessInput(u8 taskId);
@@ -66,6 +85,10 @@ static u8 FrameType_ProcessInput(u8 selection);
 static void FrameType_DrawChoices(u8 selection);
 static u8 ButtonMode_ProcessInput(u8 selection);
 static void ButtonMode_DrawChoices(u8 selection);
+#if FEATURE_MULTIPLAYER
+static u8 MultiplayerMode_ProcessInput(u8 selection);
+static void MultiplayerMode_DrawChoices(u8 selection);
+#endif
 static void DrawHeaderText(void);
 static void DrawOptionMenuTexts(void);
 static void DrawBgWindowFrames(void);
@@ -84,6 +107,9 @@ static const u8 *const sOptionMenuItemsNames[MENUITEM_COUNT] =
     [MENUITEM_SOUND]       = gText_Sound,
     [MENUITEM_BUTTONMODE]  = gText_ButtonMode,
     [MENUITEM_FRAMETYPE]   = gText_Frame,
+#if FEATURE_MULTIPLAYER
+    [MENUITEM_MULTIPLAYER] = gText_MultiplayerMode,
+#endif
     [MENUITEM_CANCEL]      = gText_OptionMenuCancel,
 };
 
@@ -234,6 +260,10 @@ void CB2_InitOptionMenu(void)
         gTasks[taskId].tSound = gSaveBlock2Ptr->optionsSound;
         gTasks[taskId].tButtonMode = gSaveBlock2Ptr->optionsButtonMode;
         gTasks[taskId].tWindowFrameType = gSaveBlock2Ptr->optionsWindowFrameType;
+#if FEATURE_MULTIPLAYER
+        EngineRuntimeState_LoadFromSave();
+        gTasks[taskId].tMultiplayerMode = EngineRuntimeState_GetMultiplayerMode();
+#endif
 
         TextSpeed_DrawChoices(gTasks[taskId].tTextSpeed);
         BattleScene_DrawChoices(gTasks[taskId].tBattleSceneOff);
@@ -241,6 +271,9 @@ void CB2_InitOptionMenu(void)
         Sound_DrawChoices(gTasks[taskId].tSound);
         ButtonMode_DrawChoices(gTasks[taskId].tButtonMode);
         FrameType_DrawChoices(gTasks[taskId].tWindowFrameType);
+#if FEATURE_MULTIPLAYER
+        MultiplayerMode_DrawChoices(gTasks[taskId].tMultiplayerMode);
+#endif
         HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
 
         CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
@@ -336,6 +369,15 @@ static void Task_OptionMenuProcessInput(u8 taskId)
             if (previousOption != gTasks[taskId].tWindowFrameType)
                 FrameType_DrawChoices(gTasks[taskId].tWindowFrameType);
             break;
+#if FEATURE_MULTIPLAYER
+        case MENUITEM_MULTIPLAYER:
+            previousOption = gTasks[taskId].tMultiplayerMode;
+            gTasks[taskId].tMultiplayerMode = MultiplayerMode_ProcessInput(gTasks[taskId].tMultiplayerMode);
+
+            if (previousOption != gTasks[taskId].tMultiplayerMode)
+                MultiplayerMode_DrawChoices(gTasks[taskId].tMultiplayerMode);
+            break;
+#endif
         default:
             return;
         }
@@ -356,6 +398,13 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsSound = gTasks[taskId].tSound;
     gSaveBlock2Ptr->optionsButtonMode = gTasks[taskId].tButtonMode;
     gSaveBlock2Ptr->optionsWindowFrameType = gTasks[taskId].tWindowFrameType;
+#if FEATURE_MULTIPLAYER
+    EngineRuntimeState_SetMultiplayerMode(gTasks[taskId].tMultiplayerMode);
+    MultiplayerSession_RefreshRuntimeMode();
+#else
+    gSaveBlock2Ptr->optionsMultiplayerMode = OPTIONS_MULTIPLAYER_MODE_SOLO;
+    gSaveBlock2Ptr->optionsMultiplayerReserved = 0;
+#endif
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
     gTasks[taskId].func = Task_OptionMenuFadeOut;
@@ -374,7 +423,7 @@ static void Task_OptionMenuFadeOut(u8 taskId)
 static void HighlightOptionMenuItem(u8 index)
 {
     SetGpuReg(REG_OFFSET_WIN0H, WIN_RANGE(16, DISPLAY_WIDTH - 16));
-    SetGpuReg(REG_OFFSET_WIN0V, WIN_RANGE(index * 16 + 40, index * 16 + 56));
+    SetGpuReg(REG_OFFSET_WIN0V, WIN_RANGE(index * OPTION_MENU_ROW_HEIGHT + 40, (index + 1) * OPTION_MENU_ROW_HEIGHT + 40));
 }
 
 static void DrawOptionMenuChoice(const u8 *text, u8 x, u8 y, u8 style)
@@ -615,6 +664,32 @@ static void ButtonMode_DrawChoices(u8 selection)
     DrawOptionMenuChoice(gText_ButtonTypeLEqualsA, GetStringRightAlignXOffset(FONT_NORMAL, gText_ButtonTypeLEqualsA, 198), YPOS_BUTTONMODE, styles[2]);
 }
 
+#if FEATURE_MULTIPLAYER
+static u8 MultiplayerMode_ProcessInput(u8 selection)
+{
+    if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
+    {
+        selection ^= 1;
+        sArrowPressed = TRUE;
+    }
+
+    return EngineRuntimeState_NormalizeMultiplayerMode(selection);
+}
+
+static void MultiplayerMode_DrawChoices(u8 selection)
+{
+    u8 styles[2];
+
+    selection = EngineRuntimeState_NormalizeMultiplayerMode(selection);
+    styles[0] = 0;
+    styles[1] = 0;
+    styles[selection] = 1;
+
+    DrawOptionMenuChoice(gText_MultiplayerSolo, 104, YPOS_MULTIPLAYER, styles[0]);
+    DrawOptionMenuChoice(gText_MultiplayerOnline, GetStringRightAlignXOffset(FONT_NORMAL, gText_MultiplayerOnline, 198), YPOS_MULTIPLAYER, styles[1]);
+}
+#endif
+
 static void DrawHeaderText(void)
 {
     FillWindowPixelBuffer(WIN_HEADER, PIXEL_FILL(1));
@@ -628,7 +703,7 @@ static void DrawOptionMenuTexts(void)
 
     FillWindowPixelBuffer(WIN_OPTIONS, PIXEL_FILL(1));
     for (i = 0; i < MENUITEM_COUNT; i++)
-        AddTextPrinterParameterized(WIN_OPTIONS, FONT_NORMAL, sOptionMenuItemsNames[i], 8, (i * 16) + 1, TEXT_SKIP_DRAW, NULL);
+        AddTextPrinterParameterized(WIN_OPTIONS, FONT_NORMAL, sOptionMenuItemsNames[i], 8, (i * OPTION_MENU_ROW_HEIGHT) + 1, TEXT_SKIP_DRAW, NULL);
     CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
 }
 

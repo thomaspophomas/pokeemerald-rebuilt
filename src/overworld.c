@@ -9,6 +9,7 @@
 #include "event_data.h"
 #include "event_object_movement.h"
 #include "event_scripts.h"
+#include "engine/module_registry.h"
 #include "field_camera.h"
 #include "field_control_avatar.h"
 #include "field_effect.h"
@@ -1452,6 +1453,7 @@ static void DoCB1_Overworld(u16 newKeys, u16 heldKeys)
         else
         {
             PlayerStep(inputStruct.dpadDirection, newKeys, heldKeys);
+            EngineModules_OnPlayerStep(inputStruct.dpadDirection, newKeys, heldKeys);
         }
     }
 }
@@ -1542,6 +1544,7 @@ void CB2_NewGame(void)
     gFieldCallback = ExecuteTruckSequence;
     gFieldCallback2 = NULL;
     DoMapLoadLoop(&gMain.state);
+    EngineModules_OnMapLoad();
     SetFieldVBlankCallback();
     SetMainCallback1(CB1_Overworld);
     SetMainCallback2(CB2_Overworld);
@@ -1563,6 +1566,7 @@ void CB2_WhiteOut(void)
         gFieldCallback = FieldCB_WarpExitFadeFromBlack;
         state = 0;
         DoMapLoadLoop(&state);
+        EngineModules_OnMapLoad();
         SetFieldVBlankCallback();
         SetMainCallback1(CB1_Overworld);
         SetMainCallback2(CB2_Overworld);
@@ -1582,6 +1586,7 @@ void CB2_LoadMap(void)
 static void CB2_LoadMap2(void)
 {
     DoMapLoadLoop(&gMain.state);
+    EngineModules_OnMapLoad();
     SetFieldVBlankCallback();
     SetMainCallback1(CB1_Overworld);
     SetMainCallback2(CB2_Overworld);
@@ -1598,6 +1603,7 @@ void CB2_ReturnToFieldContestHall(void)
     }
     if (LoadMapInStepsLocal(&gMain.state, TRUE))
     {
+        EngineModules_OnMapLoad();
         SetFieldVBlankCallback();
         SetMainCallback1(CB1_Overworld);
         SetMainCallback2(CB2_Overworld);
@@ -1615,6 +1621,7 @@ static void CB2_LoadMapOnReturnToFieldCableClub(void)
 {
     if (LoadMapInStepsLink(&gMain.state))
     {
+        EngineModules_OnMapLoad();
         SetFieldVBlankCallback();
         SetMainCallback1(CB1_OverworldLink);
         ResetAllMultiplayerState();
@@ -1639,6 +1646,7 @@ static void CB2_ReturnToFieldLocal(void)
 {
     if (ReturnToFieldLocal(&gMain.state))
     {
+        EngineModules_OnMapLoad();
         SetFieldVBlankCallback();
         SetMainCallback2(CB2_Overworld);
     }
@@ -1647,7 +1655,10 @@ static void CB2_ReturnToFieldLocal(void)
 static void CB2_ReturnToFieldLink(void)
 {
     if (!Overworld_IsRecvQueueAtMax() && ReturnToFieldLink(&gMain.state))
+    {
+        EngineModules_OnMapLoad();
         SetMainCallback2(CB2_Overworld);
+    }
 }
 
 void CB2_ReturnToFieldFromMultiplayer(void)
@@ -1749,6 +1760,7 @@ void CB2_ContinueSavedGame(void)
         TryPutTodaysRivalTrainerOnAir();
         gFieldCallback = FieldCB_FadeTryShowMapPopup;
         SetMainCallback1(CB1_Overworld);
+        EngineModules_OnMapLoad();
         CB2_ReturnToField();
     }
 }

@@ -30,6 +30,8 @@ tools/compresSmol/
 *.sa*
 Thumbs.db
 build/
+include/generated/
+src/generated/
 .DS_Store
 *.ddump
 .idea/

@@ -24,6 +24,7 @@
 #include "event_data.h"
 #include "link.h"
 #include "field_weather.h"
+#include "mod/pokeball.h"
 #include "constants/abilities.h"
 #include "constants/battle_anim.h"
 #include "constants/battle_move_effects.h"
@@ -317,9 +318,9 @@ void HandleAction_UseItem(void)
     ClearFuryCutterDestinyBondGrudge(gBattlerAttacker);
     gLastUsedItem = gBattleBufferB[gBattlerAttacker][1] | (gBattleBufferB[gBattlerAttacker][2] << 8);
 
-    if (gLastUsedItem <= LAST_BALL) // is ball
+    if (PokeBallApi_IsBall(gLastUsedItem))
     {
-        gBattlescriptCurrInstr = gBattlescriptsForBallThrow[gLastUsedItem];
+        gBattlescriptCurrInstr = PokeBallApi_GetBattleScript(gLastUsedItem);
     }
     else if (gLastUsedItem == ITEM_POKE_DOLL || gLastUsedItem == ITEM_FLUFFY_TAIL)
     {
@@ -554,7 +555,7 @@ void HandleAction_SafariZoneBallThrow(void)
     gBattle_BG0_Y = 0;
     gNumSafariBalls--;
     gLastUsedItem = ITEM_SAFARI_BALL;
-    gBattlescriptCurrInstr = gBattlescriptsForBallThrow[ITEM_SAFARI_BALL];
+    gBattlescriptCurrInstr = PokeBallApi_GetBattleScript(ITEM_SAFARI_BALL);
     gCurrentActionFuncId = B_ACTION_EXEC_SCRIPT;
 }
 

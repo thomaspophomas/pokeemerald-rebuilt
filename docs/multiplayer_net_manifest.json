@@ -1,0 +1,13 @@
+{
+  "name": "pokeemerald-rebuilt multiplayer net manifest",
+  "protocolVersion": 2,
+  "emulatorBridgeVersion": 5,
+  "buildId": "0x00010000",
+  "rulesetHash": "0x00000003",
+  "transportMode": "server_bridge",
+  "transportModeValue": 1,
+  "maxNetPlayers": 8,
+  "reliableQueueSize": 16,
+  "commitLogSize": 32,
+  "authoritativeServer": true
+}

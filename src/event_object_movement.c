@@ -165,6 +165,7 @@ static void SetSpriteDataForNormalStep(struct Sprite *, u8, u8);
 static void InitSpriteForFigure8Anim(struct Sprite *);
 static bool8 AnimateSpriteInFigure8(struct Sprite *);
 static void SpriteCB_VirtualObject(struct Sprite *);
+static int GetVirtualObjectSpriteId(u8);
 static void DoShadowFieldEffect(struct ObjectEvent *);
 static void SetJumpSpriteData(struct Sprite *, u8, u8, u8);
 static void SetWalkSlowSpriteData(struct Sprite *, u8);
@@ -1589,8 +1590,10 @@ u8 CreateObjectGraphicsSprite(u16 graphicsId, void (*callback)(struct Sprite *),
     return spriteId;
 }
 
-#define sVirtualObjId   data[0]
-#define sVirtualObjElev data[1]
+#define sVirtualObjId               data[0]
+#define sVirtualObjElev             data[1]
+#define sVirtualObjGraphicsId       data[2]
+#define sVirtualObjGraphicsRevision data[3]
 
 // "Virtual Objects" are a class of sprites used instead of a full object event.
 // Used when more objects are needed than the object event limit (for Contest / Battle Dome audiences and group members in Union Room).
@@ -1625,6 +1628,8 @@ u8 CreateVirtualObject(u8 graphicsId, u8 virtualObjId, s16 x, s16 y, u8 elevatio
         sprite->coordOffsetEnabled = TRUE;
         sprite->sVirtualObjId = virtualObjId;
         sprite->sVirtualObjElev = elevation;
+        sprite->sVirtualObjGraphicsId = graphicsId;
+        sprite->sVirtualObjGraphicsRevision = 0;
         if (graphicsInfo->paletteSlot == PALSLOT_NPC_SPECIAL)
             LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag, graphicsInfo->paletteSlot);
         else if (graphicsInfo->paletteSlot >= 16)
@@ -1639,6 +1644,30 @@ u8 CreateVirtualObject(u8 graphicsId, u8 virtualObjId, s16 x, s16 y, u8 elevatio
         SetObjectSubpriorityByElevation(elevation, sprite, 1);
         StartSpriteAnim(sprite, GetFaceDirectionAnimNum(direction));
     }
+    return spriteId;
+}
+
+u8 CreateOrUpdateVirtualObject(u8 graphicsId, u8 virtualObjId, s16 x, s16 y, u8 elevation, u8 direction, u16 graphicsRevision)
+{
+    u8 spriteId = GetVirtualObjectSpriteId(virtualObjId);
+
+    if (spriteId == MAX_SPRITES)
+    {
+        spriteId = CreateVirtualObject(graphicsId, virtualObjId, x, y, elevation, direction);
+        if (spriteId != MAX_SPRITES)
+            gSprites[spriteId].sVirtualObjGraphicsRevision = graphicsRevision;
+        return spriteId;
+    }
+
+    if (gSprites[spriteId].sVirtualObjGraphicsId != graphicsId
+     || gSprites[spriteId].sVirtualObjGraphicsRevision != graphicsRevision)
+    {
+        SetVirtualObjectGraphics(virtualObjId, graphicsId);
+        gSprites[spriteId].sVirtualObjGraphicsRevision = graphicsRevision;
+    }
+
+    SetVirtualObjectMapCoords(virtualObjId, x, y, elevation);
+    TurnVirtualObject(virtualObjId, direction);
     return spriteId;
 }
 
@@ -8622,6 +8651,33 @@ static int GetVirtualObjectSpriteId(u8 virtualObjId)
     return MAX_SPRITES;
 }
 
+void DestroyVirtualObject(u8 virtualObjId)
+{
+    u8 spriteId = GetVirtualObjectSpriteId(virtualObjId);
+
+    if (spriteId != MAX_SPRITES)
+        DestroySprite(&gSprites[spriteId]);
+}
+
+void SetVirtualObjectMapCoords(u8 virtualObjId, s16 x, s16 y, u8 elevation)
+{
+    u8 spriteId = GetVirtualObjectSpriteId(virtualObjId);
+    struct Sprite *sprite;
+
+    if (spriteId == MAX_SPRITES)
+        return;
+
+    sprite = &gSprites[spriteId];
+    x += MAP_OFFSET;
+    y += MAP_OFFSET;
+    SetSpritePosToOffsetMapCoords(&x, &y, 8, 16);
+    sprite->x = x;
+    sprite->y = y + sprite->centerToCornerVecY;
+    sprite->sVirtualObjElev = elevation;
+    InitObjectPriorityByElevation(sprite, elevation);
+    SetObjectSubpriorityByElevation(elevation, sprite, 1);
+}
+
 void TurnVirtualObject(u8 virtualObjId, u8 direction)
 {
     u8 spriteId = GetVirtualObjectSpriteId(virtualObjId);
@@ -8643,7 +8699,16 @@ void SetVirtualObjectGraphics(u8 virtualObjId, u8 graphicsId)
         sprite->oam = *graphicsInfo->oam;
         sprite->oam.tileNum = tileNum;
         sprite->oam.paletteNum = graphicsInfo->paletteSlot;
+        if (sprite->oam.paletteNum >= 16)
+            sprite->oam.paletteNum -= 16;
         sprite->images = graphicsInfo->images;
+        sprite->sVirtualObjGraphicsId = graphicsId;
+        sprite->centerToCornerVecX = -(graphicsInfo->width >> 1);
+        sprite->centerToCornerVecY = -(graphicsInfo->height >> 1);
+        if (graphicsInfo->paletteSlot == PALSLOT_NPC_SPECIAL)
+            LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag, graphicsInfo->paletteSlot);
+        else if (graphicsInfo->paletteSlot >= 16)
+            _PatchObjectPalette(graphicsInfo->paletteTag, graphicsInfo->paletteSlot | 0xf0);
 
         if (graphicsInfo->subspriteTables == NULL)
         {
