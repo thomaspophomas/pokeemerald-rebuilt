@@ -2,6 +2,7 @@
 #define GUARD_ENGINE_RUNTIME_STATE_H
 
 #include "global.h"
+#include "multiplayer/server_config.h"
 
 #define ENGINE_RUNTIME_STATE_MAGIC 0x4D4F4453 // "MODS"
 #define ENGINE_RUNTIME_STATE_VERSION 1
@@ -35,5 +36,11 @@ void EngineRuntimeState_SaveToSave(void);
 u8 EngineRuntimeState_GetMultiplayerMode(void);
 void EngineRuntimeState_SetMultiplayerMode(u8 mode);
 bool8 EngineRuntimeState_IsMultiplayerOnlineEnabled(void);
+const struct NetServerConfig *EngineRuntimeState_GetServerConfig(void);
+const struct NetServerProfile *EngineRuntimeState_GetSelectedServerProfile(void);
+void EngineRuntimeState_SetSelectedServerProfile(u8 slot);
+void EngineRuntimeState_SetServerProfile(u8 slot, const struct NetServerProfile *profile);
+u8 EngineRuntimeState_GetConnectionStatus(void);
+void EngineRuntimeState_SetConnectionStatus(u8 status);
 
 #endif // GUARD_ENGINE_RUNTIME_STATE_H

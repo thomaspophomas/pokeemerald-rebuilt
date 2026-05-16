@@ -26,6 +26,12 @@ struct EmulatorBridgeBuffer
     u32 reliableInboundHead;
     u32 reliableInboundTail;
     u32 latestUnreliableSequence;
+    u32 reliableOutboundAck;
+    u32 serverConfigSequence;
+    u32 serverConfigAckSequence;
+    u8 connectionStatus;
+    u8 reserved2[3];
+    struct NetServerConfig serverConfig;
     struct NetPlayerSnapshot serverPlayers[MAX_NET_PLAYERS];
     struct MultiplayerSubsession serverSubsessions[MAX_NET_SUBSESSIONS];
     struct NetPlayerSnapshot localSnapshot;
@@ -39,8 +45,22 @@ static EWRAM_DATA u32 sOutboundSequence = 0;
 static EWRAM_DATA u32 sLastInboundSequence = 0;
 static EWRAM_DATA u32 sCurrentSessionId = 0;
 static EWRAM_DATA u32 sCurrentSessionEpoch = 0;
+static EWRAM_DATA u16 sLastServerConfigRevision = 0;
+static EWRAM_DATA u8 sLastServerConfigSlot = 0xFF;
 
 #define NET_TRANSPORT_STABLE_READ_TRIES 3
+
+static bool8 BridgeLayoutIsPresent(void)
+{
+    if (sBridge->magic != NET_EMULATOR_BRIDGE_MAGIC)
+        return FALSE;
+    if (sBridge->version != NET_EMULATOR_BRIDGE_VERSION)
+        return FALSE;
+    if (sBridge->transportMode != NET_TRANSPORT_MODE_SERVER_BRIDGE)
+        return FALSE;
+
+    return TRUE;
+}
 
 static u32 NextQueueIndex(u32 index)
 {
@@ -49,9 +69,7 @@ static u32 NextQueueIndex(u32 index)
 
 static bool8 BridgeHeaderIsValid(void)
 {
-    if (sBridge->magic != NET_EMULATOR_BRIDGE_MAGIC)
-        return FALSE;
-    if (sBridge->version != NET_EMULATOR_BRIDGE_VERSION)
+    if (!BridgeLayoutIsPresent())
         return FALSE;
     if (sBridge->localPlayerId >= MAX_NET_PLAYERS)
         return FALSE;
@@ -104,6 +122,28 @@ static void SyncTransportSessionIdentity(u32 sessionId, u32 sessionEpoch)
     sLastInboundSequence = 0;
 }
 
+static void AckOutboundReliableThrough(u32 sequence)
+{
+    u32 head;
+    u32 tail;
+
+    if (sequence == 0)
+        return;
+
+    head = sBridge->reliableOutboundHead % NET_RELIABLE_QUEUE_SIZE;
+    tail = sBridge->reliableOutboundTail % NET_RELIABLE_QUEUE_SIZE;
+    while (tail != head)
+    {
+        struct NetPacketEnvelope envelope;
+
+        memcpy(&envelope, (const void *)&sBridge->reliableOutbound[tail].envelope, sizeof(envelope));
+        if (envelope.sequence == 0 || envelope.sequence > sequence)
+            break;
+        tail = NextQueueIndex(tail);
+        sBridge->reliableOutboundTail = tail;
+    }
+}
+
 #endif
 
 void NetTransport_Init(void)
@@ -113,11 +153,17 @@ void NetTransport_Init(void)
     sLastInboundSequence = 0;
     sCurrentSessionId = 0;
     sCurrentSessionEpoch = 0;
+    sLastServerConfigRevision = 0;
+    sLastServerConfigSlot = 0xFF;
 #endif
 }
 
 void NetTransport_Tick(void)
 {
+#if FEATURE_MULTIPLAYER && FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT
+    if (BridgeLayoutIsPresent())
+        AckOutboundReliableThrough(sBridge->reliableOutboundAck);
+#endif
 }
 
 bool8 NetTransport_IsConnected(void)
@@ -227,6 +273,7 @@ bool8 NetTransport_SendPacket(u8 packetType, const void *payload, u16 payloadSiz
             sOutboundSequence++;
         NetProtocol_InitEnvelopeWithEpoch(&envelope, packetType, sBridge->localPlayerId, sBridge->sessionId, sBridge->sessionEpoch, sBridge->bridgeTick, payloadSize);
         envelope.sequence = sOutboundSequence;
+        envelope.ack = sLastInboundSequence;
         envelope.checksum = NetProtocol_CalcChecksum(payload, payloadSize);
 
         if (payloadSize != 0)
@@ -261,6 +308,7 @@ bool8 NetTransport_SendUnreliablePacket(u8 packetType, const void *payload, u16 
         sOutboundSequence++;
     NetProtocol_InitEnvelopeWithEpoch(&envelope, packetType, sBridge->localPlayerId, sBridge->sessionId, sBridge->sessionEpoch, sBridge->bridgeTick, payloadSize);
     envelope.sequence = sOutboundSequence;
+    envelope.ack = sLastInboundSequence;
     envelope.checksum = NetProtocol_CalcChecksum(payload, payloadSize);
 
     if (payloadSize != 0)
@@ -271,6 +319,71 @@ bool8 NetTransport_SendUnreliablePacket(u8 packetType, const void *payload, u16 
     return TRUE;
 #else
     return FALSE;
+#endif
+}
+
+void NetTransport_AckReliable(u32 sequence)
+{
+#if FEATURE_MULTIPLAYER && FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT
+    if (BridgeLayoutIsPresent())
+        AckOutboundReliableThrough(sequence);
+#else
+    (void)sequence;
+#endif
+}
+
+void NetTransport_ReplayPending(void)
+{
+}
+
+bool8 NetTransport_SetServerConfig(const struct NetServerConfig *config)
+{
+#if FEATURE_MULTIPLAYER && FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT
+    const struct NetServerProfile *profile;
+
+    if (!BridgeLayoutIsPresent())
+        return FALSE;
+    if (config == NULL || !NetServerConfig_IsValid(config))
+    {
+        sBridge->connectionStatus = NET_CONNECTION_STATUS_BAD_SERVER_CONFIG;
+        return FALSE;
+    }
+
+    profile = NetServerConfig_GetSelectedProfile(config);
+    if (profile == NULL)
+    {
+        sBridge->connectionStatus = NET_CONNECTION_STATUS_BAD_SERVER_CONFIG;
+        return FALSE;
+    }
+
+    if (sBridge->serverConfigSequence != 0
+     && sLastServerConfigRevision == config->revision
+     && sLastServerConfigSlot == config->selectedSlot
+     && sBridge->serverConfig.magic == config->magic
+     && sBridge->serverConfig.revision == config->revision
+     && sBridge->serverConfig.selectedSlot == config->selectedSlot)
+        return TRUE;
+
+    sBridge->serverConfigSequence++;
+    memcpy((void *)&sBridge->serverConfig, config, sizeof(*config));
+    sBridge->serverConfigSequence++;
+    sLastServerConfigRevision = config->revision;
+    sLastServerConfigSlot = config->selectedSlot;
+    return TRUE;
+#else
+    (void)config;
+    return FALSE;
+#endif
+}
+
+u8 NetTransport_GetConnectionStatus(void)
+{
+#if FEATURE_MULTIPLAYER && FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT
+    if (!BridgeLayoutIsPresent())
+        return NET_CONNECTION_STATUS_BRIDGE_MISSING;
+    return sBridge->connectionStatus;
+#else
+    return NET_CONNECTION_STATUS_BRIDGE_MISSING;
 #endif
 }
 

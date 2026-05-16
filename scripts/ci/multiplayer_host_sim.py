@@ -11,8 +11,9 @@ NET_RELIABLE_QUEUE_SIZE = 16
 MODE_SOLO = "solo"
 MODE_ONLINE = "online"
 
-PACKET_TRADE_ACTION = 7
-PACKET_BATTLE_ACTION = 6
+PACKET_INTERACT_INTENT = 6
+PACKET_BATTLE_ACTION = 7
+PACKET_TRADE_ACTION = 8
 
 COMMIT_NONE = 0
 COMMIT_TRADE = 1
@@ -21,6 +22,8 @@ COMMIT_BATTLE = 3
 COMMIT_STORY_FLAG = 4
 COMMIT_OUTFIT = 5
 COMMIT_WEATHER_REWARD = 6
+COMMIT_MONEY = 7
+COMMIT_POKEMON = 8
 
 STATE_PREPARED = "prepared"
 STATE_COMMITTED = "committed"
@@ -30,6 +33,15 @@ RESULT_PENDING = "pending"
 RESULT_OK = "ok"
 RESULT_REJECTED = "rejected"
 RESULT_ROLLED_BACK = "rolled_back"
+STATUS_CONNECTING = "connecting"
+STATUS_CONNECTED = "connected"
+STATUS_BACKPRESSURE = "backpressure"
+NPC_POLICY_EXCLUSIVE = "exclusive"
+NPC_POLICY_SHARED_READONLY = "shared_readonly"
+NPC_POLICY_DISABLED_ONLINE = "disabled_online"
+LOCK_GRANTED = "granted"
+LOCK_BUSY = "busy"
+LOCK_DENIED = "denied"
 
 FAIL_CLOSED_TYPES = {
     COMMIT_TRADE,
@@ -38,6 +50,8 @@ FAIL_CLOSED_TYPES = {
     COMMIT_STORY_FLAG,
     COMMIT_OUTFIT,
     COMMIT_WEATHER_REWARD,
+    COMMIT_MONEY,
+    COMMIT_POKEMON,
 }
 
 
@@ -58,6 +72,35 @@ class CommitEntry:
     state: str = STATE_PREPARED
     result: str = RESULT_PENDING
     server_revision: int = 0
+
+
+@dataclass(frozen=True)
+class InteractionTarget:
+    map_group: int
+    map_num: int
+    local_id: int
+    x: int
+    y: int
+    elevation: int
+    target_kind: str = "npc"
+    script_hash: int = 1
+
+
+@dataclass(frozen=True)
+class InteractionRequest:
+    server_tick: int
+    player_id: int
+    action_sequence: int
+    target: InteractionTarget
+    policy: str = NPC_POLICY_EXCLUSIVE
+
+
+@dataclass(frozen=True)
+class CommitResult:
+    key: TransactionKey
+    result: str
+    server_revision: int
+    checksum: int
 
 
 class CommitLog:
@@ -98,6 +141,104 @@ class CommitLog:
             entry.state = STATE_ROLLED_BACK
             entry.result = RESULT_ROLLED_BACK
         return entry
+
+    def result_for(self, key: TransactionKey) -> CommitResult:
+        entry = self.entries[key]
+        return CommitResult(key=entry.key, result=entry.result, server_revision=entry.server_revision, checksum=entry.checksum)
+
+    def apply_result(self, result: CommitResult) -> CommitEntry | None:
+        entry = self.entries.get(result.key)
+        if entry is None:
+            return None
+        if result.server_revision == 0:
+            return entry
+        if result.checksum != entry.checksum:
+            return entry
+        if entry.server_revision and result.server_revision < entry.server_revision:
+            return entry
+        if entry.state in {STATE_COMMITTED, STATE_ROLLED_BACK} and entry.server_revision:
+            return entry
+        entry.result = result.result
+        entry.server_revision = result.server_revision
+        return entry
+
+
+class PendingQueue:
+    def __init__(self, capacity: int) -> None:
+        self.capacity = capacity
+        self.pending: dict[TransactionKey, tuple[int, bytes, int]] = {}
+
+    def add(self, key: TransactionKey, packet_type: int, payload: bytes) -> bool:
+        if key in self.pending:
+            return True
+        if len(self.pending) >= self.capacity:
+            return False
+        self.pending[key] = (packet_type, payload, 0)
+        return True
+
+    def ack_commit_result(self, result: CommitResult) -> None:
+        self.pending.pop(result.key, None)
+
+    def retry_due(self) -> list[TransactionKey]:
+        due = []
+        for key, (packet_type, payload, retries) in list(self.pending.items()):
+            self.pending[key] = (packet_type, payload, retries + 1)
+            due.append(key)
+        return due
+
+
+class NpcLockManager:
+    def __init__(self) -> None:
+        self.locks: dict[tuple, InteractionRequest] = {}
+
+    @staticmethod
+    def winner(requests: list[InteractionRequest]) -> InteractionRequest:
+        return sorted(requests, key=lambda request: (request.server_tick, request.action_sequence, request.player_id))[0]
+
+    @staticmethod
+    def lock_key(target: InteractionTarget) -> tuple:
+        if target.target_kind == "npc":
+            return (target.target_kind, target.map_group, target.map_num, target.local_id)
+        return (target.target_kind, target.map_group, target.map_num, target.local_id, target.x, target.y, target.elevation)
+
+    def request(self, request: InteractionRequest) -> str:
+        lock_key = self.lock_key(request.target)
+
+        if request.policy == NPC_POLICY_SHARED_READONLY:
+            return LOCK_GRANTED
+        if request.policy == NPC_POLICY_DISABLED_ONLINE:
+            return LOCK_DENIED
+        if lock_key in self.locks and self.locks[lock_key].player_id != request.player_id:
+            return LOCK_BUSY
+        self.locks[lock_key] = request
+        return LOCK_GRANTED
+
+    def release_for_player(self, player_id: int) -> None:
+        for target, request in list(self.locks.items()):
+            if request.player_id == player_id:
+                del self.locks[target]
+
+
+class HelloHandshake:
+    def __init__(self) -> None:
+        self.acked = False
+        self.retries = 0
+        self.status = STATUS_CONNECTING
+
+    def send_hello(self, delivered: bool, accepted: bool = True, profile_ready: bool = True, control_ready: bool = True) -> None:
+        if self.acked:
+            return
+        self.retries += 1
+        if not profile_ready or not control_ready:
+            self.status = "not_ready"
+            return
+        if delivered and accepted:
+            self.acked = True
+            self.status = STATUS_CONNECTED
+        elif not delivered:
+            self.status = STATUS_CONNECTING
+        else:
+            self.status = "refused"
 
 
 class RingBuffer:
@@ -217,6 +358,91 @@ def test_ringbuffer_backpressure() -> None:
     assert queue.push(b"after-pop")
 
 
+def test_full_key_commit_result_clears_only_matching_pending() -> None:
+    log = CommitLog()
+    pending = PendingQueue(16)
+    key_a = TransactionKey(3, 1, PACKET_BATTLE_ACTION, 9, 2)
+    key_b = TransactionKey(4, 1, PACKET_BATTLE_ACTION, 9, 2)
+    payload = b"same-transaction-id-risk"
+    assert pending.add(key_a, PACKET_BATTLE_ACTION, payload)
+    assert pending.add(key_b, PACKET_BATTLE_ACTION, payload)
+    log.commit(key_a, COMMIT_NONE, payload)
+    result = log.result_for(key_a)
+    pending.ack_commit_result(result)
+    assert key_a not in pending.pending
+    assert key_b in pending.pending
+
+
+def test_commit_result_revision_replay_is_noop() -> None:
+    log = CommitLog()
+    key = TransactionKey(3, 1, PACKET_BATTLE_ACTION, 9, 2)
+    payload = b"revision-test"
+    entry = log.commit(key, COMMIT_NONE, payload)
+    assert entry.result == RESULT_OK
+    stale = CommitResult(key=key, result=RESULT_REJECTED, server_revision=entry.server_revision - 1, checksum=checksum(payload))
+    log.apply_result(stale)
+    assert log.entries[key].result == RESULT_OK
+
+
+def test_pending_retry_survives_backpressure() -> None:
+    pending = PendingQueue(2)
+    key_a = TransactionKey(3, 1, PACKET_BATTLE_ACTION, 9, 2)
+    key_b = TransactionKey(3, 1, PACKET_BATTLE_ACTION, 10, 2)
+    key_c = TransactionKey(3, 1, PACKET_BATTLE_ACTION, 11, 2)
+    assert pending.add(key_a, PACKET_BATTLE_ACTION, b"a")
+    assert pending.add(key_b, PACKET_BATTLE_ACTION, b"b")
+    assert not pending.add(key_c, PACKET_BATTLE_ACTION, b"c")
+    assert pending.retry_due() == [key_a, key_b]
+
+
+def test_npc_lock_same_tick_deterministic() -> None:
+    locks = NpcLockManager()
+    target = InteractionTarget(1, 2, 7, 10, 11, 3)
+    requests = [
+        InteractionRequest(server_tick=20, player_id=2, action_sequence=5, target=target),
+        InteractionRequest(server_tick=20, player_id=1, action_sequence=4, target=target),
+    ]
+    winner = locks.winner(requests)
+    assert winner.player_id == 1
+    assert locks.request(winner) == LOCK_GRANTED
+    assert locks.request(requests[0]) == LOCK_BUSY
+
+
+def test_npc_shared_and_disconnect_cleanup() -> None:
+    locks = NpcLockManager()
+    target = InteractionTarget(1, 2, 8, 10, 11, 3)
+    assert locks.request(InteractionRequest(20, 1, 1, target, NPC_POLICY_SHARED_READONLY)) == LOCK_GRANTED
+    assert locks.request(InteractionRequest(20, 2, 1, target, NPC_POLICY_SHARED_READONLY)) == LOCK_GRANTED
+    assert not locks.locks
+
+    assert locks.request(InteractionRequest(20, 1, 2, target, NPC_POLICY_EXCLUSIVE)) == LOCK_GRANTED
+    locks.release_for_player(1)
+    assert not locks.locks
+
+
+def test_npc_lock_uses_stable_identity_when_npc_moves() -> None:
+    locks = NpcLockManager()
+    first_view = InteractionTarget(1, 2, 9, 10, 11, 3)
+    moved_view = InteractionTarget(1, 2, 9, 12, 11, 3)
+    assert locks.request(InteractionRequest(20, 1, 1, first_view, NPC_POLICY_EXCLUSIVE)) == LOCK_GRANTED
+    assert locks.request(InteractionRequest(21, 2, 1, moved_view, NPC_POLICY_EXCLUSIVE)) == LOCK_BUSY
+
+
+def test_client_hello_requires_ack() -> None:
+    hello = HelloHandshake()
+    hello.send_hello(delivered=True, accepted=True, profile_ready=False, control_ready=True)
+    hello.send_hello(delivered=True, accepted=True, profile_ready=True, control_ready=False)
+    assert not hello.acked
+    assert hello.status == "not_ready"
+    for _ in range(10):
+        hello.send_hello(delivered=False)
+    assert not hello.acked
+    assert hello.status == STATUS_CONNECTING
+    hello.send_hello(delivered=True, accepted=True)
+    assert hello.acked
+    assert hello.status == STATUS_CONNECTED
+
+
 def test_avatar_singleton() -> None:
     registry = AvatarRegistry()
     for revision in range(20):
@@ -245,6 +471,13 @@ def main() -> None:
     test_fail_closed_trade()
     test_loss_reorder_and_retry()
     test_ringbuffer_backpressure()
+    test_full_key_commit_result_clears_only_matching_pending()
+    test_commit_result_revision_replay_is_noop()
+    test_pending_retry_survives_backpressure()
+    test_npc_lock_same_tick_deterministic()
+    test_npc_shared_and_disconnect_cleanup()
+    test_npc_lock_uses_stable_identity_when_npc_moves()
+    test_client_hello_requires_ack()
     test_avatar_singleton()
     test_solo_online_toggle_cleanup()
     print("Multiplayer host simulator checks OK")

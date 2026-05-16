@@ -666,6 +666,10 @@ Common_EventScript_ShowPokemonCenterSign::
 	msgbox gText_PokemonCenterSign, MSGBOX_SIGN
 	end
 
+EventScript_MultiplayerNpcBusy::
+	msgbox gText_MultiplayerNpcBusy, MSGBOX_DEFAULT
+	end
+
 Common_ShowEasyChatScreen::
 	fadescreen FADE_TO_BLACK
 	special ShowEasyChatScreen
@@ -874,6 +878,10 @@ gText_PlayerHouseBootPC::
 
 gText_PokeblockLinkCanceled::
 	.string "The link was canceled.$"
+
+gText_MultiplayerNpcBusy::
+	.string "This NPC is speaking with\n"
+	.string "someone else right now.$"
 
 gText_UnusedNicknameReceivedPokemon::
 	.string "Want to give a nickname to\n"

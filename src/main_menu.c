@@ -16,6 +16,7 @@
 #include "menu.h"
 #include "list_menu.h"
 #include "mystery_event_menu.h"
+#include "multiplayer/session.h"
 #include "naming_screen.h"
 #include "option_menu.h"
 #include "overworld.h"
@@ -1264,6 +1265,7 @@ static void HighlightSelectedMainMenuItem(u8 menuType, u8 selectedMenuItem, s16 
 
 static void Task_NewGameBirchSpeech_Init(u8 taskId)
 {
+    MultiplayerSession_SuspendForNewGame();
     SetGpuReg(REG_OFFSET_DISPCNT, 0);
     SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_OBJ_ON | DISPCNT_OBJ_1D_MAP);
     InitBgFromTemplate(&sBirchBgTemplate);

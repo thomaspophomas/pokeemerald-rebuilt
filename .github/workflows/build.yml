@@ -2,7 +2,7 @@ name: CI/CD
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, "codex/**" ]
     tags: [ "v*" ]
   pull_request:
   workflow_dispatch:
@@ -37,6 +37,12 @@ jobs:
 
       - name: Mod generator smoke
         run: python3 scripts/ci/modgen_smoke.py
+
+      - name: Bridge syntax check
+        run: python3 -m py_compile tools/multiplayer_bridge/bridge.py
+
+      - name: Bridge smoke
+        run: python3 scripts/ci/multiplayer_bridge_smoke.py
 
       - name: Whitespace check
         run: git diff-tree --check -r --no-commit-id HEAD

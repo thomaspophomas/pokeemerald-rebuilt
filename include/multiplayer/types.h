@@ -51,6 +51,31 @@ enum MultiplayerInteractionBarrierType
     MULTIPLAYER_BARRIER_TRADE_INVITE,
 };
 
+enum MultiplayerInteractionTargetKind
+{
+    MULTIPLAYER_INTERACTION_TARGET_NONE,
+    MULTIPLAYER_INTERACTION_TARGET_NPC,
+    MULTIPLAYER_INTERACTION_TARGET_BG_EVENT,
+    MULTIPLAYER_INTERACTION_TARGET_METATILE,
+    MULTIPLAYER_INTERACTION_TARGET_WATER,
+};
+
+enum MultiplayerInteractionPreflightResult
+{
+    MULTIPLAYER_INTERACTION_PREFLIGHT_START,
+    MULTIPLAYER_INTERACTION_PREFLIGHT_WAIT,
+    MULTIPLAYER_INTERACTION_PREFLIGHT_BUSY,
+    MULTIPLAYER_INTERACTION_PREFLIGHT_DENIED,
+};
+
+enum MultiplayerInteractionLockResult
+{
+    MULTIPLAYER_INTERACTION_LOCK_GRANTED,
+    MULTIPLAYER_INTERACTION_LOCK_BUSY,
+    MULTIPLAYER_INTERACTION_LOCK_DENIED,
+    MULTIPLAYER_INTERACTION_LOCK_TIMEOUT,
+};
+
 enum MultiplayerSessionHealth
 {
     MULTIPLAYER_HEALTH_DISCONNECTED,
@@ -77,6 +102,8 @@ enum MultiplayerCommitType
     MULTIPLAYER_COMMIT_STORY_FLAG,
     MULTIPLAYER_COMMIT_OUTFIT,
     MULTIPLAYER_COMMIT_WEATHER_REWARD,
+    MULTIPLAYER_COMMIT_MONEY,
+    MULTIPLAYER_COMMIT_POKEMON,
 };
 
 enum MultiplayerCommitResult
@@ -107,6 +134,31 @@ struct MultiplayerCommitLogEntry
     u32 serverRevision;
     u16 payloadChecksum;
     u16 detail;
+};
+
+struct MultiplayerPendingTransaction
+{
+    bool8 active;
+    u8 packetType;
+    u8 commitType;
+    u8 retryCount;
+    u16 retryTimer;
+    u16 payloadSize;
+    struct MultiplayerTransactionKey key;
+    u8 payload[NET_TRANSPORT_PACKET_PAYLOAD_SIZE];
+};
+
+struct MultiplayerInteractionTarget
+{
+    u8 targetKind;
+    u8 interactionPolicy;
+    u8 mapGroup;
+    u8 mapNum;
+    u8 localId;
+    u8 elevation;
+    s16 x;
+    s16 y;
+    u16 scriptHash;
 };
 
 struct NetPlayerSnapshot

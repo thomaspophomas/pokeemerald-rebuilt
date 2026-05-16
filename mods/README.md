@@ -36,3 +36,8 @@ Supported folders:
 Run `python3 scripts/modgen.py --root .` or let `make generated` run it during
 the normal build. Generated files live under `include/generated`,
 `src/generated`, and `build/generated`; do not edit those outputs by hand.
+
+NPC entries may include `interactionPolicy`: `EXCLUSIVE` (default),
+`SHARED_READONLY`, or `DISABLED_ONLINE`. Only use `SHARED_READONLY` for dialog
+that cannot mutate flags, inventory, money, party, warps, battles, shops, or
+online-relevant state.

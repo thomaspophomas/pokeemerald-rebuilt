@@ -108,6 +108,8 @@ The multiplayer model is intentionally separate from Emerald's original
 The first transport target is an explicit emulator bridge. The ROM talks to a
 small `NetTransport_*` interface. The emulator bridge owns player-slot
 assignment, host authority, session IDs, and packet fan-out.
+`tools/multiplayer_bridge/bridge.py` is the reference TCP/file-backed bridge
+for the v1 contract; emulator-specific adapters should keep the same framing.
 
 `FEATURE_MULTIPLAYER=1` must not read bridge memory by itself. Bridge memory is
 used only when `FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT=1` is set.
@@ -123,17 +125,41 @@ ringbuffer. Packet sequence `0`, stale sequences, unknown packet types,
 oversized payloads, mismatched session IDs, and mismatched session epochs are
 dropped before they reach session state.
 
+The player selects one of three save-backed IPv4/port server profiles in-game.
+The ROM writes the selected `NetServerConfig` to the bridge output lane; the
+local emulator bridge owns Tailscale/TCP connection management and reconnect.
+The default first profile is `100.64.0.1:7777`. The Options menu exposes the
+selected slot, an `IP1`/`IP2`/`IP3`/`IP4`/`PORT` field selector, and an editable
+value row so the ROM can stay socket-free while still letting players choose a
+server.
+
 Every online bridge session must expose `transportMode=server_bridge`,
 `sessionEpoch`, `playerToken`, `joinNonce`, `serverClockSeconds`,
-`protocolVersion`, `bridgeVersion`, `buildId`, `rulesetHash`, and
-`featureFlags`. The tracked manifest in `docs/multiplayer_net_manifest.json`
-is the build artifact contract that the future server should allowlist.
+`protocolVersion`, `bridgeVersion`, `buildId`, `romHash`, `rulesetHash`, and
+`featureFlags`. `ClientHello` also carries a stable trainer identity summary
+(`trainerId`, gender, name hash, display name) after the profile/control-ready
+gate. The tracked manifest in `docs/multiplayer_net_manifest.json` is the build
+artifact contract that the future server should allowlist.
 
 Client data is always a request, never authority. The ROM sends
 `ClientHello`, `Heartbeat`, `LocalSnapshot`, `MoveIntent`, `InteractIntent`,
-`BattleAction`, `TradeAction`, and `ResyncAck` messages. The server/bridge
-composes `ServerSessionView`, `ServerClock`, `ResyncRequest`, `BarrierUpdate`,
-`SubsessionUpdate`, `CommitResult`, and `DisconnectReason` messages.
+`BattleAction`, `TradeAction`, and `ResyncAck` messages. `ClientHello` is
+retried until a validated `ServerHelloAck`; a queued hello is not treated as an accepted
+handshake. `ClientHello` is only valid after the ROM reports both
+`profileReady` and `controlReady`, so Birch intro, naming, and the opening truck
+cutscene cannot create a half-formed online player. The server/bridge composes
+`ServerSessionView`, `ServerClock`, `ResyncRequest`, `BarrierUpdate`,
+`InteractionLockResult`, `SubsessionUpdate`, full-key `CommitResult`, and
+`DisconnectReason` messages.
+
+Online NPC/script interactions are policy based. Unknown targets default to
+exclusive and wait for a server lock grant before `ScriptContext_SetupScript`;
+mod NPCs can opt into `SHARED_READONLY` for harmless parallel dialog or
+`DISABLED_ONLINE` for content that is not migration-safe yet. The target key is
+map/local-id/coordinate/elevation based, never the transient `objectEventId`.
+For conflict detection, the server normalizes NPC locks by map plus local ID so
+moving NPCs or slightly stale client coordinates cannot create two exclusive
+locks for the same actor; coordinates remain validation data.
 
 Online time must use `MultiplayerClock_*`. Offline systems may continue to use
 Emerald RTC behavior, but online rewards, daily limits, weather cycles, and
@@ -156,13 +182,16 @@ RTC, and run mismatched ROM/core builds. The hardening rules are:
 - The emulator transport exposes only one latest snapshot lane, while gameplay
   actions use `NET_RELIABLE_QUEUE_SIZE` ringbuffer slots instead of overwriting
   a prior action packet.
+- Reliable gameplay actions are also kept in `NET_PENDING_TX_COUNT` pending
+  slots and replayed during backpressure/reconnect until terminal
+  CommitResult, rollback, timeout, or epoch change.
 - Snapshots carry `clientFrame`, `serverTickSeen`, `sequence`, and
   `sessionEpoch`; future frames, frame regressions, and stale sequences cause
   drop/resync paths.
 - Heartbeat cadence is 500 ms. Players become stale after 2 seconds and
   disconnected after 10 seconds; stale players are hidden/non-interactive.
 - Save-state and rewind recovery is epoch based. Old epochs, old sequences, and
-  duplicate transaction IDs must trigger resync or idempotent commit results.
+  duplicate transaction keys must trigger resync or idempotent commit results.
 - Battle, trade, and story commits need a server commit log. Trade uses
   prepare/lock-escrow/commit with rollback on timeout or disconnect.
 - Trade, item, party, story-flag, outfit, reward, and battle-result commits are
@@ -202,10 +231,13 @@ RTC, and run mismatched ROM/core builds. The hardening rules are:
   validation, packet envelopes, stale/future ticks, epochs, handshake mismatch,
   and extreme coordinates.
 - `scripts/ci/multiplayer_host_sim.py` models idempotent server commits,
-  packet loss, duplicate delivery, retry, trade rollback, ringbuffer
-  backpressure, and remote-avatar singleton ownership.
+  packet loss, duplicate delivery, retry, full-key commit results, trade
+  rollback, NPC lock winner/busy behavior, ringbuffer backpressure, hello
+  retry, and remote-avatar singleton ownership.
 - `scripts/ci/check_net_manifest.py` prevents protocol/build/bridge constants
   from drifting away from the manifest consumed by the future server allowlist.
+- `scripts/ci/multiplayer_bridge_smoke.py` checks the reference bridge header,
+  session assignment, inbound reliable queue, and server-view write contract.
 
 ## Current Foundation
 
@@ -215,6 +247,7 @@ This pass adds:
 - Module registry hooks
 - Versioned runtime-state API for future save-backed toggles
 - A versioned packet envelope
+- Save-backed IPv4/port server profile selection
 - An 8-player session model
 - Emulator transport adapter skeleton
 - Overworld snapshot publication
@@ -225,13 +258,14 @@ This pass adds:
 - Emulator-bridge server-view/local-output separation
 - Host-side multiplayer fuzz checks
 - Epoch/token/nonce handshake fields
-- Client hello and heartbeat packets
-- Move/interaction/battle/trade/server-clock packet taxonomy
+- Acked client hello and heartbeat packets
+- Move/interaction/NPC-lock/battle/trade/server-clock packet taxonomy
 - Server-clock port for future online daily events and weather cycles
 - Multiplayer net manifest CI check
 - Idempotent `MultiplayerCommit_*` API with stable transaction keys and
   fail-closed online side effects
 - Reliable bridge ringbuffer for gameplay actions
+- Pending reliable-action replay for lossy setup/reconnect paths
 - Remote-avatar create/update singleton behavior for graphics changes
 - Build-time mod generator and generated mod registry contract
 - Mod-facing APIs for flags, events, weather, time, engine rulesets, NPCs, and
@@ -239,8 +273,8 @@ This pass adds:
 - Mod-facing APIs for shared sprite assets, overworld sprites, battle sprites,
   language text, and Pokeball rules
 
-The next implementation pass should replace the bridge skeleton with an actual
-emulator-side bridge, move battle-controller synchronization behind
+The next implementation pass should connect the reference bridge to a concrete
+emulator memory adapter, move battle-controller synchronization behind
 `BattleSession`, and progressively migrate legacy story/weather/NPC/map code to
 the new mod ports. Fully new item IDs, shops, quests, dialogs, encounters, and
 audio should get their own ports before being exposed to mods.

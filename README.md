@@ -26,6 +26,10 @@ It does not distribute a built ROM in releases or CI artifacts.
   `FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT=1`.
 - Multiplayer defaults to Solo and can be switched to Online in-game through
   Options or the Start menu when `FEATURE_MULTIPLAYER=1`.
+- Online server profiles are save-backed mod state. The ROM publishes the
+  selected IPv4/port profile to the local emulator bridge; the bridge owns the
+  actual TCP/Tailscale connection to the authoritative server. Options exposes
+  three slots plus an IP-octet/port editor.
 - Runtime-safe feature state starts in `engine/runtime_state`; the
   Solo/Online choice is persisted in existing SaveBlock2 option padding and
   guarded by a fixed-size assertion.
@@ -109,8 +113,8 @@ python3 scripts/modgen.py --root .
 
 ## CI/CD
 
-The GitHub Actions pipeline runs on pull requests, pushes to `master`, manual
-dispatch, and version tags.
+The GitHub Actions pipeline runs on pull requests, pushes to `master` and
+`codex/**`, manual dispatch, and version tags.
 
 Jobs:
 
@@ -120,6 +124,7 @@ Jobs:
 - Host-side multiplayer simulator checks for duplicate/retry/rollback safety.
 - Multiplayer net-manifest check for protocol/build/bridge allowlist drift.
 - Mod generator smoke test for generated registries and mod source discovery.
+- Reference multiplayer bridge syntax and memory-layout smoke checks.
 - Vanilla compare build plus `.sym` generation.
 - Modern builds with `FEATURE_MULTIPLAYER=0`, `FEATURE_MULTIPLAYER=1`, and
   an explicit emulator-transport variant.
@@ -172,6 +177,13 @@ CI intentionally does not upload built ROM artifacts.
   and currently fail closed until a server mirror owns those domains.
 - Reliable action packets use a bounded bridge ring buffer; snapshots remain
   latest-wins.
+- Reliable gameplay actions are retained in a bounded pending-transaction table
+  and retried until ack/CommitResult, timeout, rollback, or resync.
+- `ClientHello` requires `ServerHelloAck`; the ROM retries the hello instead of
+  treating a queued packet as a completed handshake.
+- NPC/script interactions are policy-gated online. Unknown targets are
+  exclusive and wait for a server lock grant; mod NPCs may opt into
+  `SHARED_READONLY` for harmless parallel dialog.
 - Online time-sensitive systems must use `MultiplayerClock_*` and
   server-provided time; local RTC stays an offline compatibility fallback.
 - Multiplayer overworld ticks are gated to real overworld callbacks so menus,

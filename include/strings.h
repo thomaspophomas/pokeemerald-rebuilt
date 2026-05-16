@@ -318,8 +318,14 @@ extern const u8 gText_Frame[];
 extern const u8 gText_OptionMenuCancel[];
 extern const u8 gText_ButtonMode[];
 extern const u8 gText_MultiplayerMode[];
+extern const u8 gText_MultiplayerServer[];
+extern const u8 gText_MultiplayerServerField[];
+extern const u8 gText_MultiplayerServerValue[];
+extern const u8 gText_MultiplayerServerSlot[];
+extern const u8 gText_MultiplayerServerEmpty[];
 extern const u8 gText_MultiplayerSolo[];
 extern const u8 gText_MultiplayerOnline[];
+extern const u8 gText_Dot[];
 
 extern const u8 gText_MaleSymbol[];
 extern const u8 gText_FemaleSymbol[];

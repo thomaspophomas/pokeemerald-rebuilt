@@ -1,5 +1,6 @@
 #include "global.h"
 #include "engine/runtime_state.h"
+#include "mod/state.h"
 
 static EWRAM_DATA struct EngineRuntimeState sEngineRuntimeState = {0};
 
@@ -85,4 +86,63 @@ bool8 EngineRuntimeState_IsMultiplayerOnlineEnabled(void)
 {
     return EngineRuntimeState_GetMultiplayerMode() == OPTIONS_MULTIPLAYER_MODE_ONLINE
         && EngineRuntimeState_HasFlag(ENGINE_RUNTIME_FLAG_MULTIPLAYER_ENABLED);
+}
+
+const struct NetServerConfig *EngineRuntimeState_GetServerConfig(void)
+{
+    struct ModSaveState *state = ModState_Get();
+
+    if (!NetServerConfig_IsValid(&state->multiplayerServerConfig))
+    {
+        NetServerConfig_InitDefaults(&state->multiplayerServerConfig);
+        ModState_SaveToSave();
+    }
+
+    return &state->multiplayerServerConfig;
+}
+
+const struct NetServerProfile *EngineRuntimeState_GetSelectedServerProfile(void)
+{
+    return NetServerConfig_GetSelectedProfile(EngineRuntimeState_GetServerConfig());
+}
+
+void EngineRuntimeState_SetSelectedServerProfile(u8 slot)
+{
+    struct ModSaveState *state = ModState_Get();
+
+    if (slot >= NET_SERVER_PROFILE_COUNT)
+        return;
+    if (!NetServerConfig_IsValid(&state->multiplayerServerConfig))
+        NetServerConfig_InitDefaults(&state->multiplayerServerConfig);
+    state->multiplayerServerConfig.selectedSlot = slot;
+    state->multiplayerServerConfig.revision++;
+    ModState_SaveToSave();
+}
+
+void EngineRuntimeState_SetServerProfile(u8 slot, const struct NetServerProfile *profile)
+{
+    struct ModSaveState *state = ModState_Get();
+
+    if (slot >= NET_SERVER_PROFILE_COUNT || profile == NULL)
+        return;
+    if (!NetServerConfig_IsValid(&state->multiplayerServerConfig))
+        NetServerConfig_InitDefaults(&state->multiplayerServerConfig);
+    state->multiplayerServerConfig.profiles[slot] = *profile;
+    state->multiplayerServerConfig.revision++;
+    ModState_SaveToSave();
+}
+
+u8 EngineRuntimeState_GetConnectionStatus(void)
+{
+    return EngineRuntimeState_GetServerConfig()->lastConnectionStatus;
+}
+
+void EngineRuntimeState_SetConnectionStatus(u8 status)
+{
+    struct ModSaveState *state = ModState_Get();
+
+    if (!NetServerConfig_IsValid(&state->multiplayerServerConfig))
+        NetServerConfig_InitDefaults(&state->multiplayerServerConfig);
+    state->multiplayerServerConfig.lastConnectionStatus = status;
+    ModState_SaveToSave();
 }

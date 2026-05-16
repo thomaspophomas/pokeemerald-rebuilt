@@ -28,6 +28,9 @@
 #include "menu.h"
 #include "money.h"
 #include "mystery_event_script.h"
+#include "engine/runtime_state.h"
+#include "multiplayer/commit.h"
+#include "multiplayer/session.h"
 #include "palette.h"
 #include "party_menu.h"
 #include "pokemon_storage_system.h"
@@ -58,6 +61,35 @@ static EWRAM_DATA u32 sAddressOffset = 0; // For relative addressing in vgoto et
 static EWRAM_DATA u16 sPauseCounter = 0;
 static EWRAM_DATA u16 sMovingNpcId = 0;
 static EWRAM_DATA u16 sMovingNpcMapGroup = 0;
+
+static bool8 OnlineScriptSideEffectBlocked(u8 commitType)
+{
+#if FEATURE_MULTIPLAYER
+    if (EngineRuntimeState_IsMultiplayerOnlineEnabled() && MultiplayerCommit_IsFailClosedType(commitType))
+    {
+        gSpecialVar_Result = FALSE;
+        return TRUE;
+    }
+#else
+    (void)commitType;
+#endif
+    return FALSE;
+}
+
+static bool8 OnlineWarpCommandBlocked(u8 mapGroup, u8 mapNum, u8 warpId, s16 x, s16 y)
+{
+#if FEATURE_MULTIPLAYER
+    if (EngineRuntimeState_IsMultiplayerOnlineEnabled())
+        return !MultiplayerSession_TryStartWarpBarrier(mapGroup, mapNum, warpId, x, y);
+#else
+    (void)mapGroup;
+    (void)mapNum;
+    (void)warpId;
+    (void)x;
+    (void)y;
+#endif
+    return FALSE;
+}
 static EWRAM_DATA u16 sMovingNpcMapNum = 0;
 static EWRAM_DATA u16 sFieldEffectScriptId = 0;
 
@@ -489,6 +521,8 @@ bool8 ScrCmd_additem(struct ScriptContext *ctx)
     u16 itemId = VarGet(ScriptReadHalfword(ctx));
     u32 quantity = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_ITEM))
+        return FALSE;
     gSpecialVar_Result = AddBagItem(itemId, (u8)quantity);
     return FALSE;
 }
@@ -498,6 +532,8 @@ bool8 ScrCmd_removeitem(struct ScriptContext *ctx)
     u16 itemId = VarGet(ScriptReadHalfword(ctx));
     u32 quantity = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_ITEM))
+        return FALSE;
     gSpecialVar_Result = RemoveBagItem(itemId, (u8)quantity);
     return FALSE;
 }
@@ -533,6 +569,8 @@ bool8 ScrCmd_addpcitem(struct ScriptContext *ctx)
     u16 itemId = VarGet(ScriptReadHalfword(ctx));
     u16 quantity = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_ITEM))
+        return FALSE;
     gSpecialVar_Result = AddPCItem(itemId, quantity);
     return FALSE;
 }
@@ -550,6 +588,8 @@ bool8 ScrCmd_adddecoration(struct ScriptContext *ctx)
 {
     u32 decorId = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_ITEM))
+        return FALSE;
     gSpecialVar_Result = DecorationAdd(decorId);
     return FALSE;
 }
@@ -558,6 +598,8 @@ bool8 ScrCmd_removedecoration(struct ScriptContext *ctx)
 {
     u32 decorId = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_ITEM))
+        return FALSE;
     gSpecialVar_Result = DecorationRemove(decorId);
     return FALSE;
 }
@@ -580,13 +622,21 @@ bool8 ScrCmd_checkdecor(struct ScriptContext *ctx)
 
 bool8 ScrCmd_setflag(struct ScriptContext *ctx)
 {
-    FlagSet(ScriptReadHalfword(ctx));
+    u16 flag = ScriptReadHalfword(ctx);
+
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
+    FlagSet(flag);
     return FALSE;
 }
 
 bool8 ScrCmd_clearflag(struct ScriptContext *ctx)
 {
-    FlagClear(ScriptReadHalfword(ctx));
+    u16 flag = ScriptReadHalfword(ctx);
+
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
+    FlagClear(flag);
     return FALSE;
 }
 
@@ -706,12 +756,16 @@ bool8 ScrCmd_setweather(struct ScriptContext *ctx)
 {
     u16 weather = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_WEATHER_REWARD))
+        return FALSE;
     SetSavedWeather(weather);
     return FALSE;
 }
 
 bool8 ScrCmd_resetweather(struct ScriptContext *ctx)
 {
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_WEATHER_REWARD))
+        return FALSE;
     SetSavedWeatherFromCurrMapHeader();
     return FALSE;
 }
@@ -744,6 +798,8 @@ bool8 ScrCmd_warp(struct ScriptContext *ctx)
     u16 x = VarGet(ScriptReadHalfword(ctx));
     u16 y = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineWarpCommandBlocked(mapGroup, mapNum, warpId, x, y))
+        return FALSE;
     SetWarpDestination(mapGroup, mapNum, warpId, x, y);
     DoWarp();
     ResetInitialPlayerAvatarState();
@@ -758,6 +814,8 @@ bool8 ScrCmd_warpsilent(struct ScriptContext *ctx)
     u16 x = VarGet(ScriptReadHalfword(ctx));
     u16 y = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineWarpCommandBlocked(mapGroup, mapNum, warpId, x, y))
+        return FALSE;
     SetWarpDestination(mapGroup, mapNum, warpId, x, y);
     DoDiveWarp();
     ResetInitialPlayerAvatarState();
@@ -772,6 +830,8 @@ bool8 ScrCmd_warpdoor(struct ScriptContext *ctx)
     u16 x = VarGet(ScriptReadHalfword(ctx));
     u16 y = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineWarpCommandBlocked(mapGroup, mapNum, warpId, x, y))
+        return FALSE;
     SetWarpDestination(mapGroup, mapNum, warpId, x, y);
     DoDoorWarp();
     ResetInitialPlayerAvatarState();
@@ -786,6 +846,8 @@ bool8 ScrCmd_warphole(struct ScriptContext *ctx)
     u16 y;
 
     PlayerGetDestCoords(&x, &y);
+    if (OnlineWarpCommandBlocked(mapGroup, mapNum, WARP_ID_NONE, x - MAP_OFFSET, y - MAP_OFFSET))
+        return FALSE;
     if (mapGroup == MAP_GROUP(MAP_UNDEFINED) && mapNum == MAP_NUM(MAP_UNDEFINED))
         SetWarpDestinationToFixedHoleWarp(x - MAP_OFFSET, y - MAP_OFFSET);
     else
@@ -804,6 +866,8 @@ bool8 ScrCmd_warpteleport(struct ScriptContext *ctx)
     u16 x = VarGet(ScriptReadHalfword(ctx));
     u16 y = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineWarpCommandBlocked(mapGroup, mapNum, warpId, x, y))
+        return FALSE;
     SetWarpDestination(mapGroup, mapNum, warpId, x, y);
     DoTeleportTileWarp();
     ResetInitialPlayerAvatarState();
@@ -818,6 +882,8 @@ bool8 ScrCmd_warpmossdeepgym(struct ScriptContext *ctx)
     u16 x = VarGet(ScriptReadHalfword(ctx));
     u16 y = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineWarpCommandBlocked(mapGroup, mapNum, warpId, x, y))
+        return FALSE;
     SetWarpDestination(mapGroup, mapNum, warpId, x, y);
     DoMossdeepGymWarp();
     ResetInitialPlayerAvatarState();
@@ -832,6 +898,8 @@ bool8 ScrCmd_setwarp(struct ScriptContext *ctx)
     u16 x = VarGet(ScriptReadHalfword(ctx));
     u16 y = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
     SetWarpDestination(mapGroup, mapNum, warpId, x, y);
     return FALSE;
 }
@@ -844,6 +912,8 @@ bool8 ScrCmd_setdynamicwarp(struct ScriptContext *ctx)
     u16 x = VarGet(ScriptReadHalfword(ctx));
     u16 y = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
     SetDynamicWarpWithCoords(0, mapGroup, mapNum, warpId, x, y);
     return FALSE;
 }
@@ -856,6 +926,8 @@ bool8 ScrCmd_setdivewarp(struct ScriptContext *ctx)
     u16 x = VarGet(ScriptReadHalfword(ctx));
     u16 y = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
     SetFixedDiveWarp(mapGroup, mapNum, warpId, x, y);
     return FALSE;
 }
@@ -868,6 +940,8 @@ bool8 ScrCmd_setholewarp(struct ScriptContext *ctx)
     u16 x = VarGet(ScriptReadHalfword(ctx));
     u16 y = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
     SetFixedHoleWarp(mapGroup, mapNum, warpId, x, y);
     return FALSE;
 }
@@ -880,6 +954,8 @@ bool8 ScrCmd_setescapewarp(struct ScriptContext *ctx)
     u16 x = VarGet(ScriptReadHalfword(ctx));
     u16 y = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
     SetEscapeWarp(mapGroup, mapNum, warpId, x, y);
     return FALSE;
 }
@@ -1687,6 +1763,8 @@ bool8 ScrCmd_givemon(struct ScriptContext *ctx)
     u32 unkParam2 = ScriptReadWord(ctx);
     u8 unkParam3 = ScriptReadByte(ctx);
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_POKEMON))
+        return FALSE;
     gSpecialVar_Result = ScriptGiveMon(species, level, item, unkParam1, unkParam2, unkParam3);
     return FALSE;
 }
@@ -1695,6 +1773,8 @@ bool8 ScrCmd_giveegg(struct ScriptContext *ctx)
 {
     u16 species = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_POKEMON))
+        return FALSE;
     gSpecialVar_Result = ScriptGiveEgg(species);
     return FALSE;
 }
@@ -1705,6 +1785,8 @@ bool8 ScrCmd_setmonmove(struct ScriptContext *ctx)
     u8 slot = ScriptReadByte(ctx);
     u16 move = ScriptReadHalfword(ctx);
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_POKEMON))
+        return FALSE;
     ScriptSetMonMoveSlot(partyIndex, move, slot);
     return FALSE;
 }
@@ -1735,6 +1817,8 @@ bool8 ScrCmd_addmoney(struct ScriptContext *ctx)
     u32 amount = ScriptReadWord(ctx);
     u8 ignore = ScriptReadByte(ctx);
 
+    if (!ignore && OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_MONEY))
+        return FALSE;
     if (!ignore)
         AddMoney(&gSaveBlock1Ptr->money, amount);
     return FALSE;
@@ -1745,6 +1829,8 @@ bool8 ScrCmd_removemoney(struct ScriptContext *ctx)
     u32 amount = ScriptReadWord(ctx);
     u8 ignore = ScriptReadByte(ctx);
 
+    if (!ignore && OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_MONEY))
+        return FALSE;
     if (!ignore)
         RemoveMoney(&gSaveBlock1Ptr->money, amount);
     return FALSE;
@@ -1826,6 +1912,8 @@ bool8 ScrCmd_trainerbattle(struct ScriptContext *ctx)
 
 bool8 ScrCmd_dotrainerbattle(struct ScriptContext *ctx)
 {
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_BATTLE))
+        return FALSE;
     BattleSetup_StartTrainerBattle();
     return TRUE;
 }
@@ -1854,6 +1942,8 @@ bool8 ScrCmd_settrainerflag(struct ScriptContext *ctx)
 {
     u16 index = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
     SetTrainerFlag(index);
     return FALSE;
 }
@@ -1862,6 +1952,8 @@ bool8 ScrCmd_cleartrainerflag(struct ScriptContext *ctx)
 {
     u16 index = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
     ClearTrainerFlag(index);
     return FALSE;
 }
@@ -1872,12 +1964,16 @@ bool8 ScrCmd_setwildbattle(struct ScriptContext *ctx)
     u8 level = ScriptReadByte(ctx);
     u16 item = ScriptReadHalfword(ctx);
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_BATTLE))
+        return FALSE;
     CreateScriptedWildMon(species, level, item);
     return FALSE;
 }
 
 bool8 ScrCmd_dowildbattle(struct ScriptContext *ctx)
 {
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_BATTLE))
+        return FALSE;
     BattleSetup_StartScriptedWildBattle();
     ScriptContext_Stop();
     return TRUE;
@@ -1887,6 +1983,8 @@ bool8 ScrCmd_pokemart(struct ScriptContext *ctx)
 {
     const void *ptr = (void *)ScriptReadWord(ctx);
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_ITEM))
+        return FALSE;
     CreatePokemartMenu(ptr);
     ScriptContext_Stop();
     return TRUE;
@@ -1896,6 +1994,8 @@ bool8 ScrCmd_pokemartdecoration(struct ScriptContext *ctx)
 {
     const void *ptr = (void *)ScriptReadWord(ctx);
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_ITEM))
+        return FALSE;
     CreateDecorationShop1Menu(ptr);
     ScriptContext_Stop();
     return TRUE;
@@ -1906,6 +2006,8 @@ bool8 ScrCmd_pokemartdecoration2(struct ScriptContext *ctx)
 {
     const void *ptr = (void *)ScriptReadWord(ctx);
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_ITEM))
+        return FALSE;
     CreateDecorationShop2Menu(ptr);
     ScriptContext_Stop();
     return TRUE;
@@ -2006,6 +2108,8 @@ bool8 ScrCmd_setrespawn(struct ScriptContext *ctx)
 {
     u16 healLocationId = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
     SetLastHealLocationWarp(healLocationId);
     return FALSE;
 }
@@ -2038,6 +2142,8 @@ bool8 ScrCmd_setmetatile(struct ScriptContext *ctx)
     u16 metatileId = VarGet(ScriptReadHalfword(ctx));
     bool16 isImpassable = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
     x += MAP_OFFSET;
     y += MAP_OFFSET;
     if (!isImpassable)
@@ -2052,6 +2158,8 @@ bool8 ScrCmd_opendoor(struct ScriptContext *ctx)
     u16 x = VarGet(ScriptReadHalfword(ctx));
     u16 y = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
     x += MAP_OFFSET;
     y += MAP_OFFSET;
     PlaySE(GetDoorSoundEffect(x, y));
@@ -2064,6 +2172,8 @@ bool8 ScrCmd_closedoor(struct ScriptContext *ctx)
     u16 x = VarGet(ScriptReadHalfword(ctx));
     u16 y = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
     x += MAP_OFFSET;
     y += MAP_OFFSET;
     FieldAnimateDoorClose(x, y);
@@ -2089,6 +2199,8 @@ bool8 ScrCmd_setdooropen(struct ScriptContext *ctx)
     u16 x = VarGet(ScriptReadHalfword(ctx));
     u16 y = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
     x += MAP_OFFSET;
     y += MAP_OFFSET;
     FieldSetDoorOpened(x, y);
@@ -2100,6 +2212,8 @@ bool8 ScrCmd_setdoorclosed(struct ScriptContext *ctx)
     u16 x = VarGet(ScriptReadHalfword(ctx));
     u16 y = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_STORY_FLAG))
+        return FALSE;
     x += MAP_OFFSET;
     y += MAP_OFFSET;
     FieldSetDoorClosed(x, y);
@@ -2137,6 +2251,8 @@ bool8 ScrCmd_addcoins(struct ScriptContext *ctx)
 {
     u16 coins = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_MONEY))
+        return FALSE;
     if (AddCoins(coins) == TRUE)
         gSpecialVar_Result = FALSE;
     else
@@ -2148,6 +2264,8 @@ bool8 ScrCmd_removecoins(struct ScriptContext *ctx)
 {
     u16 coins = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_MONEY))
+        return FALSE;
     if (RemoveCoins(coins) == TRUE)
         gSpecialVar_Result = FALSE;
     else
@@ -2212,6 +2330,8 @@ bool8 ScrCmd_setmodernfatefulencounter(struct ScriptContext *ctx)
     bool8 isModernFatefulEncounter = TRUE;
     u16 partyIndex = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_POKEMON))
+        return FALSE;
     SetMonData(&gPlayerParty[partyIndex], MON_DATA_MODERN_FATEFUL_ENCOUNTER, &isModernFatefulEncounter);
     return FALSE;
 }
@@ -2246,6 +2366,8 @@ bool8 ScrCmd_warpspinenter(struct ScriptContext *ctx)
     u16 x = VarGet(ScriptReadHalfword(ctx));
     u16 y = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineWarpCommandBlocked(mapGroup, mapNum, warpId, x, y))
+        return FALSE;
     SetWarpDestination(mapGroup, mapNum, warpId, x, y);
     SetSpinStartFacingDir(GetPlayerFacingDirection());
     DoSpinEnterWarp();
@@ -2258,6 +2380,8 @@ bool8 ScrCmd_setmonmetlocation(struct ScriptContext *ctx)
     u16 partyIndex = VarGet(ScriptReadHalfword(ctx));
     u8 location = ScriptReadByte(ctx);
 
+    if (OnlineScriptSideEffectBlocked(MULTIPLAYER_COMMIT_POKEMON))
+        return FALSE;
     if (partyIndex < PARTY_SIZE)
         SetMonData(&gPlayerParty[partyIndex], MON_DATA_MET_LOCATION, &location);
     return FALSE;
@@ -2300,6 +2424,8 @@ bool8 ScrCmd_warpwhitefade(struct ScriptContext *ctx)
     u16 x = VarGet(ScriptReadHalfword(ctx));
     u16 y = VarGet(ScriptReadHalfword(ctx));
 
+    if (OnlineWarpCommandBlocked(mapGroup, mapNum, warpId, x, y))
+        return FALSE;
     SetWarpDestination(mapGroup, mapNum, warpId, x, y);
     DoWhiteFadeWarp();
     ResetInitialPlayerAvatarState();

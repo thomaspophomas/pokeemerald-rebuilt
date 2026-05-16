@@ -27,10 +27,7 @@ bool8 MultiplayerTrade_CanStart(const struct MultiplayerTradeRequest *request)
 
     return TRUE;
 #else
-    (void)subsessionId;
-    (void)action;
-    (void)partySlot;
-    (void)tradeChecksum;
+    (void)request;
     return FALSE;
 #endif
 }
@@ -80,12 +77,8 @@ bool8 MultiplayerTrade_SendAction(u8 subsessionId, u8 action, u16 partySlot, u32
     packet.action = action;
     packet.partySlot = partySlot;
     packet.tradeChecksum = tradeChecksum;
-    MultiplayerCommit_Prepare(&key, MULTIPLAYER_COMMIT_TRADE, &packet, sizeof(packet), NULL);
-    if (!NetTransport_SendPacket(NET_PACKET_TRADE_ACTION, &packet, sizeof(packet)))
-    {
-        MultiplayerCommit_Rollback(&key, MULTIPLAYER_COMMIT_TRADE, &packet, sizeof(packet), NULL);
+    if (!MultiplayerSession_SendReliableAction(NET_PACKET_TRADE_ACTION, MULTIPLAYER_COMMIT_TRADE, &key, &packet, sizeof(packet)))
         return FALSE;
-    }
 
     return TRUE;
 #else

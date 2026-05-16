@@ -11,6 +11,7 @@ static void InitState(struct ModSaveState *state)
     state->magic = MOD_SAVE_STATE_MAGIC;
     state->version = MOD_SAVE_STATE_VERSION;
     state->size = sizeof(*state);
+    NetServerConfig_InitDefaults(&state->multiplayerServerConfig);
 }
 
 void ModState_Init(void)
@@ -48,6 +49,8 @@ void ModState_LoadFromSave(void)
     }
 
     memcpy(&sModState, saveState, sizeof(sModState));
+    if (!NetServerConfig_IsValid(&sModState.multiplayerServerConfig))
+        NetServerConfig_InitDefaults(&sModState.multiplayerServerConfig);
 }
 
 void ModState_SaveToSave(void)

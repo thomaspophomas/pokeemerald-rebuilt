@@ -101,6 +101,7 @@ def main() -> int:
                         "movementType": "MOVEMENT_TYPE_FACE_DOWN",
                         "localId": 208,
                         "elevation": 3,
+                        "interactionPolicy": "SHARED_READONLY",
                     }
                 ]
             },
@@ -143,6 +144,7 @@ def main() -> int:
             "demo:story_ball",
             "Demo_BallModifier",
             "demo:guide",
+            "MOD_NPC_INTERACTION_SHARED_READONLY",
             "demo:demo_town",
             "demo:demo_engine",
         ]

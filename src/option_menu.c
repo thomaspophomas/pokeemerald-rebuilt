@@ -9,6 +9,7 @@
 #include "scanline_effect.h"
 #include "sprite.h"
 #include "strings.h"
+#include "string_util.h"
 #include "task.h"
 #include "text.h"
 #include "text_window.h"
@@ -29,10 +30,12 @@
 #define tWindowFrameType data[6]
 #if FEATURE_MULTIPLAYER
 #define tMultiplayerMode data[7]
+#define tMultiplayerServerProfile data[8]
+#define tMultiplayerServerField data[9]
 #endif
 
 #if FEATURE_MULTIPLAYER
-#define OPTION_MENU_ROW_HEIGHT 14
+#define OPTION_MENU_ROW_HEIGHT 10
 #else
 #define OPTION_MENU_ROW_HEIGHT 16
 #endif
@@ -47,6 +50,9 @@ enum
     MENUITEM_FRAMETYPE,
 #if FEATURE_MULTIPLAYER
     MENUITEM_MULTIPLAYER,
+    MENUITEM_MULTIPLAYER_SERVER,
+    MENUITEM_MULTIPLAYER_SERVER_FIELD,
+    MENUITEM_MULTIPLAYER_SERVER_VALUE,
 #endif
     MENUITEM_CANCEL,
     MENUITEM_COUNT,
@@ -66,6 +72,9 @@ enum
 #define YPOS_FRAMETYPE    (MENUITEM_FRAMETYPE * OPTION_MENU_ROW_HEIGHT)
 #if FEATURE_MULTIPLAYER
 #define YPOS_MULTIPLAYER  (MENUITEM_MULTIPLAYER * OPTION_MENU_ROW_HEIGHT)
+#define YPOS_MULTIPLAYER_SERVER  (MENUITEM_MULTIPLAYER_SERVER * OPTION_MENU_ROW_HEIGHT)
+#define YPOS_MULTIPLAYER_SERVER_FIELD  (MENUITEM_MULTIPLAYER_SERVER_FIELD * OPTION_MENU_ROW_HEIGHT)
+#define YPOS_MULTIPLAYER_SERVER_VALUE  (MENUITEM_MULTIPLAYER_SERVER_VALUE * OPTION_MENU_ROW_HEIGHT)
 #endif
 
 static void Task_OptionMenuFadeIn(u8 taskId);
@@ -88,12 +97,44 @@ static void ButtonMode_DrawChoices(u8 selection);
 #if FEATURE_MULTIPLAYER
 static u8 MultiplayerMode_ProcessInput(u8 selection);
 static void MultiplayerMode_DrawChoices(u8 selection);
+static u8 MultiplayerServer_ProcessInput(u8 selection);
+static void MultiplayerServer_DrawChoices(u8 selection);
+static u8 MultiplayerServerField_ProcessInput(u8 selection);
+static void MultiplayerServerField_DrawChoices(u8 selection);
+static bool8 MultiplayerServerValue_ProcessInput(u8 profileSlot, u8 field);
+static void MultiplayerServerValue_DrawChoices(u8 profileSlot, u8 field);
 #endif
 static void DrawHeaderText(void);
 static void DrawOptionMenuTexts(void);
 static void DrawBgWindowFrames(void);
 
 EWRAM_DATA static bool8 sArrowPressed = FALSE;
+
+static const u8 sText_StatusNone[] = _("--");
+static const u8 sText_StatusBridge[] = _("BRDG");
+static const u8 sText_StatusConnecting[] = _("CONN");
+static const u8 sText_StatusConnected[] = _("OK");
+static const u8 sText_StatusRefused[] = _("NO");
+static const u8 sText_StatusBuild[] = _("BUILD");
+static const u8 sText_StatusStale[] = _("STALE");
+static const u8 sText_StatusResync[] = _("SYNC");
+static const u8 sText_StatusBackpressure[] = _("QUEUE");
+static const u8 sText_StatusBadConfig[] = _("CFG");
+static const u8 sText_ServerFieldIp1[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}IP1");
+static const u8 sText_ServerFieldIp2[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}IP2");
+static const u8 sText_ServerFieldIp3[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}IP3");
+static const u8 sText_ServerFieldIp4[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}IP4");
+static const u8 sText_ServerFieldPort[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}PORT");
+static const u8 sText_ChoicePrefix[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}");
+
+static const u8 *const sServerFieldTexts[] =
+{
+    sText_ServerFieldIp1,
+    sText_ServerFieldIp2,
+    sText_ServerFieldIp3,
+    sText_ServerFieldIp4,
+    sText_ServerFieldPort,
+};
 
 static const u16 sOptionMenuText_Pal[] = INCGFX_U16("graphics/interface/option_menu_text.pal", ".gbapal");
 // note: this is only used in the Japanese release
@@ -109,6 +150,9 @@ static const u8 *const sOptionMenuItemsNames[MENUITEM_COUNT] =
     [MENUITEM_FRAMETYPE]   = gText_Frame,
 #if FEATURE_MULTIPLAYER
     [MENUITEM_MULTIPLAYER] = gText_MultiplayerMode,
+    [MENUITEM_MULTIPLAYER_SERVER] = gText_MultiplayerServer,
+    [MENUITEM_MULTIPLAYER_SERVER_FIELD] = gText_MultiplayerServerField,
+    [MENUITEM_MULTIPLAYER_SERVER_VALUE] = gText_MultiplayerServerValue,
 #endif
     [MENUITEM_CANCEL]      = gText_OptionMenuCancel,
 };
@@ -263,6 +307,8 @@ void CB2_InitOptionMenu(void)
 #if FEATURE_MULTIPLAYER
         EngineRuntimeState_LoadFromSave();
         gTasks[taskId].tMultiplayerMode = EngineRuntimeState_GetMultiplayerMode();
+        gTasks[taskId].tMultiplayerServerProfile = EngineRuntimeState_GetServerConfig()->selectedSlot;
+        gTasks[taskId].tMultiplayerServerField = 0;
 #endif
 
         TextSpeed_DrawChoices(gTasks[taskId].tTextSpeed);
@@ -273,6 +319,9 @@ void CB2_InitOptionMenu(void)
         FrameType_DrawChoices(gTasks[taskId].tWindowFrameType);
 #if FEATURE_MULTIPLAYER
         MultiplayerMode_DrawChoices(gTasks[taskId].tMultiplayerMode);
+        MultiplayerServer_DrawChoices(gTasks[taskId].tMultiplayerServerProfile);
+        MultiplayerServerField_DrawChoices(gTasks[taskId].tMultiplayerServerField);
+        MultiplayerServerValue_DrawChoices(gTasks[taskId].tMultiplayerServerProfile, gTasks[taskId].tMultiplayerServerField);
 #endif
         HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
 
@@ -377,6 +426,33 @@ static void Task_OptionMenuProcessInput(u8 taskId)
             if (previousOption != gTasks[taskId].tMultiplayerMode)
                 MultiplayerMode_DrawChoices(gTasks[taskId].tMultiplayerMode);
             break;
+        case MENUITEM_MULTIPLAYER_SERVER:
+            previousOption = gTasks[taskId].tMultiplayerServerProfile;
+            gTasks[taskId].tMultiplayerServerProfile = MultiplayerServer_ProcessInput(gTasks[taskId].tMultiplayerServerProfile);
+
+            if (previousOption != gTasks[taskId].tMultiplayerServerProfile)
+            {
+                MultiplayerServer_DrawChoices(gTasks[taskId].tMultiplayerServerProfile);
+                MultiplayerServerValue_DrawChoices(gTasks[taskId].tMultiplayerServerProfile, gTasks[taskId].tMultiplayerServerField);
+            }
+            break;
+        case MENUITEM_MULTIPLAYER_SERVER_FIELD:
+            previousOption = gTasks[taskId].tMultiplayerServerField;
+            gTasks[taskId].tMultiplayerServerField = MultiplayerServerField_ProcessInput(gTasks[taskId].tMultiplayerServerField);
+
+            if (previousOption != gTasks[taskId].tMultiplayerServerField)
+            {
+                MultiplayerServerField_DrawChoices(gTasks[taskId].tMultiplayerServerField);
+                MultiplayerServerValue_DrawChoices(gTasks[taskId].tMultiplayerServerProfile, gTasks[taskId].tMultiplayerServerField);
+            }
+            break;
+        case MENUITEM_MULTIPLAYER_SERVER_VALUE:
+            if (MultiplayerServerValue_ProcessInput(gTasks[taskId].tMultiplayerServerProfile, gTasks[taskId].tMultiplayerServerField))
+            {
+                MultiplayerServer_DrawChoices(gTasks[taskId].tMultiplayerServerProfile);
+                MultiplayerServerValue_DrawChoices(gTasks[taskId].tMultiplayerServerProfile, gTasks[taskId].tMultiplayerServerField);
+            }
+            break;
 #endif
         default:
             return;
@@ -399,6 +475,7 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsButtonMode = gTasks[taskId].tButtonMode;
     gSaveBlock2Ptr->optionsWindowFrameType = gTasks[taskId].tWindowFrameType;
 #if FEATURE_MULTIPLAYER
+    EngineRuntimeState_SetSelectedServerProfile(gTasks[taskId].tMultiplayerServerProfile);
     EngineRuntimeState_SetMultiplayerMode(gTasks[taskId].tMultiplayerMode);
     MultiplayerSession_RefreshRuntimeMode();
 #else
@@ -443,6 +520,31 @@ static void DrawOptionMenuChoice(const u8 *text, u8 x, u8 y, u8 style)
     dst[i] = EOS;
     AddTextPrinterParameterized(WIN_OPTIONS, FONT_NORMAL, dst, x, y + 1, TEXT_SKIP_DRAW, NULL);
 }
+
+#if FEATURE_MULTIPLAYER
+static void ClearOptionMenuChoiceArea(u8 y)
+{
+    FillWindowPixelRect(WIN_OPTIONS, PIXEL_FILL(1), 96, y, 112, OPTION_MENU_ROW_HEIGHT);
+}
+
+static void DrawOptionMenuChoiceLong(const u8 *text, u8 x, u8 y, u8 style)
+{
+    u8 dst[48];
+    u16 i;
+
+    for (i = 0; *text != EOS && i < ARRAY_COUNT(dst) - 1; i++)
+        dst[i] = *(text++);
+
+    if (style != 0)
+    {
+        dst[2] = TEXT_COLOR_RED;
+        dst[5] = TEXT_COLOR_LIGHT_RED;
+    }
+
+    dst[i] = EOS;
+    AddTextPrinterParameterized(WIN_OPTIONS, FONT_NORMAL, dst, x, y + 1, TEXT_SKIP_DRAW, NULL);
+}
+#endif
 
 static u8 TextSpeed_ProcessInput(u8 selection)
 {
@@ -687,6 +789,201 @@ static void MultiplayerMode_DrawChoices(u8 selection)
 
     DrawOptionMenuChoice(gText_MultiplayerSolo, 104, YPOS_MULTIPLAYER, styles[0]);
     DrawOptionMenuChoice(gText_MultiplayerOnline, GetStringRightAlignXOffset(FONT_NORMAL, gText_MultiplayerOnline, 198), YPOS_MULTIPLAYER, styles[1]);
+}
+
+static u8 MultiplayerServer_ProcessInput(u8 selection)
+{
+    if (JOY_NEW(DPAD_LEFT))
+    {
+        selection = (selection == 0) ? NET_SERVER_PROFILE_COUNT - 1 : selection - 1;
+        sArrowPressed = TRUE;
+    }
+    else if (JOY_NEW(DPAD_RIGHT))
+    {
+        selection++;
+        if (selection >= NET_SERVER_PROFILE_COUNT)
+            selection = 0;
+        sArrowPressed = TRUE;
+    }
+
+    return selection;
+}
+
+static u8 MultiplayerServerField_ProcessInput(u8 selection)
+{
+    if (JOY_NEW(DPAD_LEFT))
+    {
+        selection = (selection == 0) ? ARRAY_COUNT(sServerFieldTexts) - 1 : selection - 1;
+        sArrowPressed = TRUE;
+    }
+    else if (JOY_NEW(DPAD_RIGHT))
+    {
+        selection++;
+        if (selection >= ARRAY_COUNT(sServerFieldTexts))
+            selection = 0;
+        sArrowPressed = TRUE;
+    }
+
+    return selection;
+}
+
+static void AppendIpOctet(u8 *dest, u8 value)
+{
+    ConvertIntToDecimalStringN(gStringVar1, value, STR_CONV_MODE_LEFT_ALIGN, 3);
+    StringAppend(dest, gStringVar1);
+}
+
+static void AppendServerAddress(u8 *dest, const struct NetServerProfile *profile)
+{
+    AppendIpOctet(dest, profile->ipv4[0]);
+    StringAppend(dest, gText_Dot);
+    AppendIpOctet(dest, profile->ipv4[1]);
+    StringAppend(dest, gText_Dot);
+    AppendIpOctet(dest, profile->ipv4[2]);
+    StringAppend(dest, gText_Dot);
+    AppendIpOctet(dest, profile->ipv4[3]);
+}
+
+static void MultiplayerServer_DrawChoices(u8 selection)
+{
+    const struct NetServerConfig *config = EngineRuntimeState_GetServerConfig();
+    const struct NetServerProfile *profile;
+
+    if (selection >= NET_SERVER_PROFILE_COUNT)
+        selection = 0;
+    profile = &config->profiles[selection];
+
+    ConvertIntToDecimalStringN(gStringVar1, selection + 1, STR_CONV_MODE_LEFT_ALIGN, 1);
+    StringExpandPlaceholders(gStringVar4, gText_MultiplayerServerSlot);
+    StringAppend(gStringVar4, gText_Space);
+    switch (config->lastConnectionStatus)
+    {
+    case NET_CONNECTION_STATUS_BRIDGE_MISSING:
+        StringAppend(gStringVar4, sText_StatusBridge);
+        break;
+    case NET_CONNECTION_STATUS_CONNECTING:
+        StringAppend(gStringVar4, sText_StatusConnecting);
+        break;
+    case NET_CONNECTION_STATUS_CONNECTED:
+        StringAppend(gStringVar4, sText_StatusConnected);
+        break;
+    case NET_CONNECTION_STATUS_SERVER_REFUSED:
+        StringAppend(gStringVar4, sText_StatusRefused);
+        break;
+    case NET_CONNECTION_STATUS_BUILD_MISMATCH:
+        StringAppend(gStringVar4, sText_StatusBuild);
+        break;
+    case NET_CONNECTION_STATUS_STALE:
+        StringAppend(gStringVar4, sText_StatusStale);
+        break;
+    case NET_CONNECTION_STATUS_RESYNCING:
+        StringAppend(gStringVar4, sText_StatusResync);
+        break;
+    case NET_CONNECTION_STATUS_BACKPRESSURE:
+        StringAppend(gStringVar4, sText_StatusBackpressure);
+        break;
+    case NET_CONNECTION_STATUS_BAD_SERVER_CONFIG:
+        StringAppend(gStringVar4, sText_StatusBadConfig);
+        break;
+    default:
+        StringAppend(gStringVar4, sText_StatusNone);
+        break;
+    }
+    StringAppend(gStringVar4, gText_Space);
+    if (profile->active)
+    {
+        ConvertIntToDecimalStringN(gStringVar1, profile->port, STR_CONV_MODE_LEFT_ALIGN, 5);
+        StringAppend(gStringVar4, gStringVar1);
+    }
+    else
+    {
+        StringAppend(gStringVar4, gText_MultiplayerServerEmpty);
+    }
+
+    ClearOptionMenuChoiceArea(YPOS_MULTIPLAYER_SERVER);
+    DrawOptionMenuChoiceLong(gStringVar4, 104, YPOS_MULTIPLAYER_SERVER, 1);
+}
+
+static void MultiplayerServerField_DrawChoices(u8 selection)
+{
+    if (selection >= ARRAY_COUNT(sServerFieldTexts))
+        selection = 0;
+
+    ClearOptionMenuChoiceArea(YPOS_MULTIPLAYER_SERVER_FIELD);
+    DrawOptionMenuChoiceLong(sServerFieldTexts[selection], 104, YPOS_MULTIPLAYER_SERVER_FIELD, 1);
+}
+
+static bool8 MultiplayerServerValue_ProcessInput(u8 profileSlot, u8 field)
+{
+    const struct NetServerConfig *config = EngineRuntimeState_GetServerConfig();
+    struct NetServerProfile profile;
+    s32 delta = 0;
+
+    if (profileSlot >= NET_SERVER_PROFILE_COUNT)
+        return FALSE;
+
+    if (JOY_NEW(DPAD_LEFT))
+        delta = -1;
+    else if (JOY_NEW(DPAD_RIGHT))
+        delta = 1;
+    else if (JOY_NEW(L_BUTTON))
+        delta = -10;
+    else if (JOY_NEW(R_BUTTON))
+        delta = 10;
+    else
+        return FALSE;
+
+    profile = config->profiles[profileSlot];
+    profile.active = TRUE;
+
+    if (field < 4)
+    {
+        s32 value = profile.ipv4[field] + delta;
+
+        while (value < 0)
+            value += 256;
+        while (value > 255)
+            value -= 256;
+        profile.ipv4[field] = value;
+    }
+    else
+    {
+        s32 value = profile.port + (delta * 10);
+
+        if (value < 1)
+            value = 1;
+        if (value > 65535)
+            value = 65535;
+        profile.port = value;
+    }
+
+    EngineRuntimeState_SetServerProfile(profileSlot, &profile);
+    sArrowPressed = TRUE;
+    return TRUE;
+}
+
+static void MultiplayerServerValue_DrawChoices(u8 profileSlot, u8 field)
+{
+    const struct NetServerConfig *config = EngineRuntimeState_GetServerConfig();
+    const struct NetServerProfile *profile;
+
+    if (profileSlot >= NET_SERVER_PROFILE_COUNT)
+        profileSlot = 0;
+    profile = &config->profiles[profileSlot];
+
+    StringCopy(gStringVar4, sText_ChoicePrefix);
+    if (field < 4)
+    {
+        AppendServerAddress(gStringVar4, profile);
+    }
+    else
+    {
+        ConvertIntToDecimalStringN(gStringVar1, profile->port, STR_CONV_MODE_LEFT_ALIGN, 5);
+        StringAppend(gStringVar4, gStringVar1);
+    }
+
+    ClearOptionMenuChoiceArea(YPOS_MULTIPLAYER_SERVER_VALUE);
+    DrawOptionMenuChoiceLong(gStringVar4, 104, YPOS_MULTIPLAYER_SERVER_VALUE, 1);
 }
 #endif
 

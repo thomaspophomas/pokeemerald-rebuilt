@@ -3,9 +3,8 @@
 
 #include "global.h"
 #include "multiplayer/protocol.h"
+#include "multiplayer/server_config.h"
 #include "multiplayer/types.h"
-
-#define NET_TRANSPORT_PACKET_PAYLOAD_SIZE 256
 
 struct NetTransportPacketSlot
 {
@@ -38,5 +37,9 @@ bool8 NetTransport_WriteLocalSnapshot(const struct NetPlayerSnapshot *snapshot);
 bool8 NetTransport_SendUnreliablePacket(u8 packetType, const void *payload, u16 payloadSize);
 bool8 NetTransport_SendPacket(u8 packetType, const void *payload, u16 payloadSize);
 bool8 NetTransport_ReceivePacket(struct NetPacketEnvelope *envelope, void *payload, u16 capacity, u16 *payloadSize);
+void NetTransport_AckReliable(u32 sequence);
+void NetTransport_ReplayPending(void);
+bool8 NetTransport_SetServerConfig(const struct NetServerConfig *config);
+u8 NetTransport_GetConnectionStatus(void);
 
 #endif // GUARD_MULTIPLAYER_TRANSPORT_H

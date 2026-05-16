@@ -36,10 +36,13 @@ def main() -> None:
     expect("protocolVersion", manifest["protocolVersion"], parse_int(read_define("NET_PROTOCOL_VERSION")))
     expect("emulatorBridgeVersion", manifest["emulatorBridgeVersion"], parse_int(read_define("NET_EMULATOR_BRIDGE_VERSION")))
     expect("buildId", manifest["buildId"], f"0x{parse_int(read_define('NET_PROTOCOL_BUILD_ID')):08X}")
+    expect("romHash", manifest["romHash"], f"0x{parse_int(read_define('NET_PROTOCOL_ROM_HASH')):08X}")
     expect("rulesetHash", manifest["rulesetHash"], f"0x{parse_int(read_define('NET_RULESET_HASH')):08X}")
     expect("transportModeValue", manifest["transportModeValue"], parse_int(read_define("NET_TRANSPORT_MODE_SERVER_BRIDGE")))
     expect("maxNetPlayers", manifest["maxNetPlayers"], parse_int(read_define("MAX_NET_PLAYERS")))
+    expect("serverProfileCount", manifest["serverProfileCount"], parse_int(read_define("NET_SERVER_PROFILE_COUNT")))
     expect("reliableQueueSize", manifest["reliableQueueSize"], parse_int(read_define("NET_RELIABLE_QUEUE_SIZE")))
+    expect("pendingTransactionCount", manifest["pendingTransactionCount"], parse_int(read_define("NET_PENDING_TX_COUNT")))
     expect("commitLogSize", manifest["commitLogSize"], parse_int(read_define("NET_COMMIT_LOG_SIZE")))
     if manifest.get("transportMode") != "server_bridge":
         raise SystemExit("transportMode must be server_bridge")

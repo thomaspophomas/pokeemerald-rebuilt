@@ -46,13 +46,13 @@ if grep -R -n "sBridge->players\\|sBridge->subsessions" src/multiplayer 2>/dev/n
     exit 1
 fi
 
-if ! grep -n '#define NET_PROTOCOL_VERSION 2' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
-    echo "Multiplayer protocol must retain epoch-aware version 2 semantics." >&2
+if ! grep -n '#define NET_PROTOCOL_VERSION 6' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer protocol must retain ack-gated identity version 6 semantics." >&2
     exit 1
 fi
 
-if ! grep -n '#define NET_EMULATOR_BRIDGE_VERSION 5' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
-    echo "Multiplayer bridge must retain reliable-queue version 5 semantics." >&2
+if ! grep -n '#define NET_EMULATOR_BRIDGE_VERSION 6' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer bridge must retain server-config/ack version 6 semantics." >&2
     exit 1
 fi
 
@@ -76,8 +76,28 @@ if ! grep -R -n "sessionEpoch" include/multiplayer src/multiplayer >/tmp/archite
     exit 1
 fi
 
-if ! grep -R -n "NET_PACKET_CLIENT_HELLO\\|NET_PACKET_HEARTBEAT\\|NET_PACKET_SERVER_CLOCK" include/multiplayer/protocol.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
-    echo "Multiplayer protocol must expose handshake, heartbeat, and server-clock packet types." >&2
+if ! grep -R -n "NET_PACKET_CLIENT_HELLO\\|NET_PACKET_SERVER_HELLO_ACK\\|NET_PACKET_HEARTBEAT\\|NET_PACKET_SERVER_CLOCK\\|NET_PACKET_INTERACTION_LOCK_RESULT" include/multiplayer/protocol.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer protocol must expose acked handshake, heartbeat, server-clock, and NPC lock packet types." >&2
+    exit 1
+fi
+
+if ! grep -R -n "MOD_NPC_INTERACTION_SHARED_READONLY\\|MOD_NPC_INTERACTION_EXCLUSIVE\\|MOD_NPC_INTERACTION_DISABLED_ONLINE" include/mod src/mod scripts/modgen.py >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "NPC interaction policy must remain explicit for multiplayer locking." >&2
+    exit 1
+fi
+
+if ! grep -R -n "struct NetServerConfig" include/multiplayer include/mod src/multiplayer >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer server profiles must remain represented by NetServerConfig." >&2
+    exit 1
+fi
+
+if ! grep -R -n "NetTransport_SetServerConfig" include/multiplayer src/multiplayer >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "ROM must publish the selected server profile to the emulator bridge." >&2
+    exit 1
+fi
+
+if ! grep -R -n "actionSequence\\|sessionEpoch\\|subsessionId" include/multiplayer/protocol.h src/multiplayer/commit.c >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "CommitResult must carry enough full-key fields for idempotent reconnects." >&2
     exit 1
 fi
 

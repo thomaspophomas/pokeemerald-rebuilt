@@ -18,6 +18,8 @@
 #include "link.h"
 #include "match_call.h"
 #include "metatile_behavior.h"
+#include "mod/npc.h"
+#include "multiplayer/session.h"
 #include "overworld.h"
 #include "pokemon.h"
 #include "safari_zone.h"
@@ -31,12 +33,15 @@
 #include "constants/event_bg.h"
 #include "constants/event_objects.h"
 #include "constants/field_poison.h"
+#include "constants/maps.h"
 #include "constants/map_types.h"
 #include "constants/songs.h"
 #include "constants/trainer_hill.h"
 
 static EWRAM_DATA u8 sWildEncounterImmunitySteps = 0;
 static EWRAM_DATA u16 sPrevMetatileBehavior = 0;
+static EWRAM_DATA struct MultiplayerInteractionTarget sLastInteractionTarget = {0};
+static EWRAM_DATA u8 sLastInteractionObjectEventId = OBJECT_EVENTS_COUNT;
 
 COMMON_DATA u8 gSelectedObjectEvent = 0;
 
@@ -45,6 +50,10 @@ static void GetInFrontOfPlayerPosition(struct MapPosition *);
 static u16 GetPlayerCurMetatileBehavior(int);
 static bool8 TryStartInteractionScript(struct MapPosition *, u16, u8);
 static const u8 *GetInteractionScript(struct MapPosition *, u8, u8);
+static void ResetInteractionTarget(void);
+static void SetInteractionTarget(u8, u8, s16, s16, u8, u8);
+static u16 GetInteractionScriptHash(const u8 *);
+static bool8 TryMultiplayerInteractionPreflight(const u8 *, u8);
 static const u8 *GetInteractedObjectEventScript(struct MapPosition *, u8, u8);
 static const u8 *GetInteractedBackgroundEventScript(struct MapPosition *, u8, u8);
 static const u8 *GetInteractedMetatileScript(struct MapPosition *, u8, u8);
@@ -57,6 +66,7 @@ static bool8 TryArrowWarp(struct MapPosition *, u16, u8);
 static bool8 IsWarpMetatileBehavior(u16);
 static bool8 IsArrowWarpMetatileBehavior(u16, u8);
 static s8 GetWarpEventAtMapPosition(struct MapHeader *, struct MapPosition *);
+static bool8 TryMultiplayerWarpPreflight(s8, struct MapPosition *);
 static void SetupWarp(struct MapHeader *, s8, struct MapPosition *);
 static bool8 TryDoorWarp(struct MapPosition *, u16, u8);
 static s8 GetWarpEventAtPosition(struct MapHeader *, u16, u16, u8);
@@ -217,11 +227,71 @@ static u16 GetPlayerCurMetatileBehavior(int runningState)
     return MapGridGetMetatileBehaviorAt(x, y);
 }
 
+static void ResetInteractionTarget(void)
+{
+    memset(&sLastInteractionTarget, 0, sizeof(sLastInteractionTarget));
+    sLastInteractionTarget.interactionPolicy = MOD_NPC_INTERACTION_EXCLUSIVE;
+    sLastInteractionObjectEventId = OBJECT_EVENTS_COUNT;
+}
+
+static u16 GetInteractionScriptHash(const u8 *script)
+{
+    u32 value = (u32)script;
+    u16 hash;
+
+    value ^= value >> 16;
+    value ^= value >> 8;
+    hash = value;
+    return hash == 0 ? 1 : hash;
+}
+
+static void SetInteractionTarget(u8 targetKind, u8 localId, s16 x, s16 y, u8 elevation, u8 policy)
+{
+    sLastInteractionTarget.targetKind = targetKind;
+    sLastInteractionTarget.interactionPolicy = policy;
+    sLastInteractionTarget.localId = localId;
+    sLastInteractionTarget.elevation = elevation;
+    sLastInteractionTarget.x = x;
+    sLastInteractionTarget.y = y;
+    if (gSaveBlock1Ptr != NULL)
+    {
+        sLastInteractionTarget.mapGroup = gSaveBlock1Ptr->location.mapGroup;
+        sLastInteractionTarget.mapNum = gSaveBlock1Ptr->location.mapNum;
+    }
+}
+
+static bool8 TryMultiplayerInteractionPreflight(const u8 *script, u8 direction)
+{
+    u8 result;
+
+    if (sLastInteractionTarget.targetKind == MULTIPLAYER_INTERACTION_TARGET_NONE)
+        return TRUE;
+
+    sLastInteractionTarget.scriptHash = GetInteractionScriptHash(script);
+    result = MultiplayerSession_PreflightInteraction(&sLastInteractionTarget, script, sLastInteractionObjectEventId, direction);
+    if (result == MULTIPLAYER_INTERACTION_PREFLIGHT_START)
+        return TRUE;
+    if (result == MULTIPLAYER_INTERACTION_PREFLIGHT_BUSY || result == MULTIPLAYER_INTERACTION_PREFLIGHT_DENIED)
+    {
+        PlaySE(SE_BOO);
+        ScriptContext_SetupScript(EventScript_MultiplayerNpcBusy);
+    }
+
+    return FALSE;
+}
+
 static bool8 TryStartInteractionScript(struct MapPosition *position, u16 metatileBehavior, u8 direction)
 {
-    const u8 *script = GetInteractionScript(position, metatileBehavior, direction);
+    const u8 *script;
+
+    ResetInteractionTarget();
+    script = GetInteractionScript(position, metatileBehavior, direction);
     if (script == NULL)
         return FALSE;
+    if (sLastInteractionTarget.targetKind == MULTIPLAYER_INTERACTION_TARGET_NONE)
+        SetInteractionTarget(MULTIPLAYER_INTERACTION_TARGET_METATILE, 0, position->x, position->y, position->elevation, MOD_NPC_INTERACTION_EXCLUSIVE);
+    if (!TryMultiplayerInteractionPreflight(script, direction))
+        return TRUE;
 
     // Don't play interaction sound for certain scripts.
     if (script != LittlerootTown_BrendansHouse_2F_EventScript_PC
@@ -280,6 +350,7 @@ const u8 *GetInteractedLinkPlayerScript(struct MapPosition *position, u8 metatil
     gSelectedObjectEvent = objectEventId;
     gSpecialVar_LastTalked = gObjectEvents[objectEventId].localId;
     gSpecialVar_Facing = direction;
+    sLastInteractionObjectEventId = objectEventId;
     return GetObjectEventScriptPointerByObjectEventId(objectEventId);
 }
 
@@ -310,23 +381,40 @@ static const u8 *GetInteractedObjectEventScript(struct MapPosition *position, u8
         script = GetObjectEventScriptPointerByObjectEventId(objectEventId);
 
     script = GetRamScript(gSpecialVar_LastTalked, script);
+    sLastInteractionObjectEventId = objectEventId;
+    SetInteractionTarget(
+        MULTIPLAYER_INTERACTION_TARGET_NPC,
+        gObjectEvents[objectEventId].localId,
+        gObjectEvents[objectEventId].currentCoords.x,
+        gObjectEvents[objectEventId].currentCoords.y,
+        gObjectEvents[objectEventId].currentElevation,
+        NpcApi_GetInteractionPolicy(
+            gObjectEvents[objectEventId].mapGroup,
+            gObjectEvents[objectEventId].mapNum,
+            gObjectEvents[objectEventId].localId,
+            script));
     return script;
 }
 
 static const u8 *GetInteractedBackgroundEventScript(struct MapPosition *position, u8 metatileBehavior, u8 direction)
 {
     const struct BgEvent *bgEvent = GetBackgroundEventAtPosition(&gMapHeader, position->x - MAP_OFFSET, position->y - MAP_OFFSET, position->elevation);
+    const u8 *script;
 
     if (bgEvent == NULL)
         return NULL;
+    script = bgEvent->bgUnion.script;
     if (bgEvent->bgUnion.script == NULL)
+    {
+        SetInteractionTarget(MULTIPLAYER_INTERACTION_TARGET_BG_EVENT, 0, position->x, position->y, position->elevation, MOD_NPC_INTERACTION_EXCLUSIVE);
         return EventScript_TestSignpostMsg;
+    }
 
     switch (bgEvent->kind)
     {
     case BG_EVENT_PLAYER_FACING_ANY:
     default:
-        return bgEvent->bgUnion.script;
+        break;
     case BG_EVENT_PLAYER_FACING_NORTH:
         if (direction != DIR_NORTH)
             return NULL;
@@ -350,18 +438,23 @@ static const u8 *GetInteractedBackgroundEventScript(struct MapPosition *position
         gSpecialVar_0x8005 = (u32)bgEvent->bgUnion.script;
         if (FlagGet(gSpecialVar_0x8004) == TRUE)
             return NULL;
+        SetInteractionTarget(MULTIPLAYER_INTERACTION_TARGET_BG_EVENT, 0, position->x, position->y, position->elevation, MOD_NPC_INTERACTION_EXCLUSIVE);
         return EventScript_HiddenItemScript;
     case BG_EVENT_SECRET_BASE:
         if (direction == DIR_NORTH)
         {
             gSpecialVar_0x8004 = bgEvent->bgUnion.secretBaseId;
             if (TrySetCurSecretBase())
+            {
+                SetInteractionTarget(MULTIPLAYER_INTERACTION_TARGET_BG_EVENT, 0, position->x, position->y, position->elevation, MOD_NPC_INTERACTION_EXCLUSIVE);
                 return SecretBase_EventScript_CheckEntrance;
+            }
         }
         return NULL;
     }
 
-    return bgEvent->bgUnion.script;
+    SetInteractionTarget(MULTIPLAYER_INTERACTION_TARGET_BG_EVENT, 0, position->x, position->y, position->elevation, MOD_NPC_INTERACTION_EXCLUSIVE);
+    return script;
 }
 
 static const u8 *GetInteractedMetatileScript(struct MapPosition *position, u8 metatileBehavior, u8 direction)
@@ -445,13 +538,17 @@ static const u8 *GetInteractedMetatileScript(struct MapPosition *position, u8 me
     return NULL;
 }
 
-static const u8 *GetInteractedWaterScript(struct MapPosition *unused1, u8 metatileBehavior, u8 direction)
+static const u8 *GetInteractedWaterScript(struct MapPosition *position, u8 metatileBehavior, u8 direction)
 {
     if (FlagGet(FLAG_BADGE05_GET) == TRUE && PartyHasMonWithSurf() == TRUE && IsPlayerFacingSurfableFishableWater() == TRUE)
+    {
+        SetInteractionTarget(MULTIPLAYER_INTERACTION_TARGET_WATER, 0, position->x, position->y, position->elevation, MOD_NPC_INTERACTION_EXCLUSIVE);
         return EventScript_UseSurf;
+    }
 
     if (MetatileBehavior_IsWaterfall(metatileBehavior) == TRUE)
     {
+        SetInteractionTarget(MULTIPLAYER_INTERACTION_TARGET_WATER, 0, position->x, position->y, position->elevation, MOD_NPC_INTERACTION_EXCLUSIVE);
         if (FlagGet(FLAG_BADGE08_GET) == TRUE && IsPlayerSurfingNorth() == TRUE)
             return EventScript_UseWaterfall;
         else
@@ -691,6 +788,8 @@ static bool8 TryArrowWarp(struct MapPosition *position, u16 metatileBehavior, u8
 
     if (IsArrowWarpMetatileBehavior(metatileBehavior, direction) == TRUE && warpEventId != WARP_ID_NONE)
     {
+        if (!TryMultiplayerWarpPreflight(warpEventId, position))
+            return FALSE;
         StoreInitialPlayerAvatarState();
         SetupWarp(&gMapHeader, warpEventId, position);
         DoWarp();
@@ -705,6 +804,8 @@ static bool8 TryStartWarpEventScript(struct MapPosition *position, u16 metatileB
 
     if (warpEventId != WARP_ID_NONE && IsWarpMetatileBehavior(metatileBehavior) == TRUE)
     {
+        if (!TryMultiplayerWarpPreflight(warpEventId, position))
+            return FALSE;
         StoreInitialPlayerAvatarState();
         SetupWarp(&gMapHeader, warpEventId, position);
         if (MetatileBehavior_IsEscalator(metatileBehavior) == TRUE)
@@ -785,6 +886,27 @@ static s8 GetWarpEventAtMapPosition(struct MapHeader *mapHeader, struct MapPosit
     return GetWarpEventAtPosition(mapHeader, position->x - MAP_OFFSET, position->y - MAP_OFFSET, position->elevation);
 }
 
+static bool8 TryMultiplayerWarpPreflight(s8 warpEventId, struct MapPosition *position)
+{
+#if FEATURE_MULTIPLAYER
+    const struct WarpEvent *warpEvent;
+
+    if (warpEventId == WARP_ID_NONE)
+        return FALSE;
+    warpEvent = &gMapHeader.events->warps[warpEventId];
+    return MultiplayerSession_TryStartWarpBarrier(
+        warpEvent->mapGroup,
+        warpEvent->mapNum,
+        warpEvent->warpId,
+        position->x - MAP_OFFSET,
+        position->y - MAP_OFFSET);
+#else
+    (void)warpEventId;
+    (void)position;
+    return TRUE;
+#endif
+}
+
 static void SetupWarp(struct MapHeader *unused, s8 warpEventId, struct MapPosition *position)
 {
     const struct WarpEvent *warpEvent;
@@ -838,6 +960,8 @@ static bool8 TryDoorWarp(struct MapPosition *position, u16 metatileBehavior, u8 
     {
         if (MetatileBehavior_IsOpenSecretBaseDoor(metatileBehavior) == TRUE)
         {
+            if (!MultiplayerSession_TryStartWarpBarrier(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum, WARP_ID_SECRET_BASE, position->x - MAP_OFFSET, position->y - MAP_OFFSET))
+                return FALSE;
             WarpIntoSecretBase(position, gMapHeader.events);
             return TRUE;
         }
@@ -847,6 +971,8 @@ static bool8 TryDoorWarp(struct MapPosition *position, u16 metatileBehavior, u8 
             warpEventId = GetWarpEventAtMapPosition(&gMapHeader, position);
             if (warpEventId != WARP_ID_NONE && IsWarpMetatileBehavior(metatileBehavior) == TRUE)
             {
+                if (!TryMultiplayerWarpPreflight(warpEventId, position))
+                    return FALSE;
                 StoreInitialPlayerAvatarState();
                 SetupWarp(&gMapHeader, warpEventId, position);
                 DoDoorWarp();
@@ -999,6 +1125,7 @@ int SetCableClubWarp(void)
     GetPlayerMovementDirection();  //unnecessary
     GetPlayerPosition(&position);
     MapGridGetMetatileBehaviorAt(position.x, position.y);  //unnecessary
-    SetupWarp(&gMapHeader, GetWarpEventAtMapPosition(&gMapHeader, &position), &position);
+    if (TryMultiplayerWarpPreflight(GetWarpEventAtMapPosition(&gMapHeader, &position), &position))
+        SetupWarp(&gMapHeader, GetWarpEventAtMapPosition(&gMapHeader, &position), &position);
     return 0;
 }

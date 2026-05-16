@@ -59,11 +59,7 @@ bool8 MultiplayerBattle_CanStart(const struct MultiplayerBattleRequest *request)
         return FALSE;
     }
 #else
-    (void)subsessionId;
-    (void)battlerSlot;
-    (void)action;
-    (void)target;
-    (void)parameter;
+    (void)request;
     return FALSE;
 #endif
 }
@@ -110,12 +106,8 @@ bool8 MultiplayerBattle_SendAction(u8 subsessionId, u8 battlerSlot, u8 action, u
     packet.action = action;
     packet.target = target;
     packet.parameter = parameter;
-    MultiplayerCommit_Prepare(&key, MULTIPLAYER_COMMIT_BATTLE, &packet, sizeof(packet), NULL);
-    if (!NetTransport_SendPacket(NET_PACKET_BATTLE_ACTION, &packet, sizeof(packet)))
-    {
-        MultiplayerCommit_Rollback(&key, MULTIPLAYER_COMMIT_BATTLE, &packet, sizeof(packet), NULL);
+    if (!MultiplayerSession_SendReliableAction(NET_PACKET_BATTLE_ACTION, MULTIPLAYER_COMMIT_BATTLE, &key, &packet, sizeof(packet)))
         return FALSE;
-    }
 
     return TRUE;
 #else

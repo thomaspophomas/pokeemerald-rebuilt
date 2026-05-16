@@ -37,6 +37,12 @@ TIME_SEGMENTS = {
     "NIGHT": "MOD_TIME_NIGHT",
 }
 
+NPC_INTERACTION_POLICIES = {
+    "EXCLUSIVE": "MOD_NPC_INTERACTION_EXCLUSIVE",
+    "SHARED_READONLY": "MOD_NPC_INTERACTION_SHARED_READONLY",
+    "DISABLED_ONLINE": "MOD_NPC_INTERACTION_DISABLED_ONLINE",
+}
+
 
 class ModgenError(Exception):
     pass
@@ -142,6 +148,22 @@ def normalize_time_segment(value: Any) -> str:
     if upper in TIME_SEGMENTS:
         return TIME_SEGMENTS[upper]
     raise ModgenError(f"Unknown time segment {value!r}")
+
+
+def normalize_npc_interaction_policy(value: Any) -> str:
+    if value is None:
+        return "MOD_NPC_INTERACTION_EXCLUSIVE"
+    if isinstance(value, int):
+        return str(value)
+    if not isinstance(value, str):
+        raise ModgenError(f"NPC interaction policy {value!r} is invalid")
+    value = value.strip()
+    if value.startswith("MOD_NPC_INTERACTION_"):
+        return value
+    upper = value.upper().replace("-", "_")
+    if upper in NPC_INTERACTION_POLICIES:
+        return NPC_INTERACTION_POLICIES[upper]
+    raise ModgenError(f"Unknown NPC interaction policy {value!r}")
 
 
 def require_mod_id(value: Any, path: Path) -> str:
@@ -492,6 +514,7 @@ def collect_npcs(mods: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
                         "movement": c_int_or_token(item.get("movementType", item.get("movement_type")), "MOVEMENT_TYPE_FACE_DOWN"),
                         "local": c_int_or_token(item.get("localId", item.get("local_id")), "0"),
                         "elevation": c_int_or_token(item.get("elevation"), "3"),
+                        "policy": normalize_npc_interaction_policy(item.get("interactionPolicy", item.get("interaction_policy"))),
                         "flag": c_int_or_token(item.get("flagId", item.get("flag")), "0"),
                         "script": c_func(item.get("scriptSymbol", item.get("script"))),
                     }
@@ -790,9 +813,9 @@ def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, A
     lines.append("{")
     if npcs:
         for npc in npcs:
-            lines.append(f"    {{ {c_string(npc['key'])}, {npc['id']}, {npc['graphics']}, {npc['movement']}, {npc['local']}, {npc['elevation']}, {npc['flag']}, {npc['script']} }},")
+            lines.append(f"    {{ {c_string(npc['key'])}, {npc['id']}, {npc['graphics']}, {npc['movement']}, {npc['local']}, {npc['elevation']}, {npc['policy']}, 0, {npc['flag']}, {npc['script']} }},")
     else:
-        lines.append("    { NULL, 0, 0, 0, 0, 0, 0, NULL },")
+        lines.append("    { NULL, 0, 0, 0, 0, 0, MOD_NPC_INTERACTION_EXCLUSIVE, 0, 0, NULL },")
     lines.append("};")
     lines.append(f"const u16 gModNpcDefinitionCount = {len(npcs)};")
     lines.append("")

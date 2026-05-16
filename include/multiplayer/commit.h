@@ -11,7 +11,7 @@ u32 MultiplayerCommit_GetTransactionId(const struct MultiplayerTransactionKey *k
 u8 MultiplayerCommit_Prepare(const struct MultiplayerTransactionKey *key, u8 commitType, const void *payload, u16 payloadSize, struct NetCommitResult *result);
 u8 MultiplayerCommit_Commit(const struct MultiplayerTransactionKey *key, u8 commitType, const void *payload, u16 payloadSize, struct NetCommitResult *result);
 u8 MultiplayerCommit_Rollback(const struct MultiplayerTransactionKey *key, u8 commitType, const void *payload, u16 payloadSize, struct NetCommitResult *result);
-void MultiplayerCommit_ApplyServerResult(const struct NetCommitResult *result);
+bool8 MultiplayerCommit_ApplyServerResult(const struct NetCommitResult *result);
 bool8 MultiplayerCommit_IsFailClosedType(u8 commitType);
 
 #endif // GUARD_MULTIPLAYER_COMMIT_H

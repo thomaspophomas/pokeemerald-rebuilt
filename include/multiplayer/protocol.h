@@ -9,6 +9,7 @@ enum NetPacketType
     NET_PACKET_NONE,
     NET_PACKET_PLAYER_SNAPSHOT,
     NET_PACKET_CLIENT_HELLO,
+    NET_PACKET_SERVER_HELLO_ACK,
     NET_PACKET_HEARTBEAT,
     NET_PACKET_MOVE_INTENT,
     NET_PACKET_INTERACT_INTENT,
@@ -19,6 +20,7 @@ enum NetPacketType
     NET_PACKET_SERVER_CLOCK,
     NET_PACKET_RESYNC_REQUEST,
     NET_PACKET_BARRIER_UPDATE,
+    NET_PACKET_INTERACTION_LOCK_RESULT,
     NET_PACKET_SUBSESSION_UPDATE,
     NET_PACKET_COMMIT_RESULT,
     NET_PACKET_DISCONNECT_REASON,
@@ -58,8 +60,29 @@ struct NetClientHello
     u32 romHash;
     u32 rulesetHash;
     u32 featureFlags;
+    u32 trainerId;
+    u16 nameHash;
+    u8 gender;
+    u8 displayNameLength;
     u8 transportMode;
-    u8 reserved[3];
+    bool8 profileReady;
+    bool8 controlReady;
+    u8 reserved;
+    u8 displayName[PLAYER_NAME_LENGTH + 1];
+} __attribute__((packed));
+
+struct NetServerHelloAck
+{
+    bool8 accepted;
+    u8 reason;
+    u8 assignedPlayerId;
+    u8 hostPlayerId;
+    u32 sessionId;
+    u32 sessionEpoch;
+    u32 playerToken;
+    u32 joinNonce;
+    u32 serverTick;
+    u32 serverClockSeconds;
 } __attribute__((packed));
 
 struct NetHeartbeat
@@ -99,8 +122,34 @@ struct NetInteractIntent
     u8 interactionType;
     u8 mapGroup;
     u8 mapNum;
+    u8 targetKind;
+    u8 targetLocalId;
+    u8 targetElevation;
+    u8 interactionPolicy;
     s16 x;
     s16 y;
+    u16 scriptHash;
+    u16 reserved;
+} __attribute__((packed));
+
+struct NetInteractionLockResult
+{
+    u32 transactionId;
+    u32 sessionEpoch;
+    u32 actionSequence;
+    u32 serverRevision;
+    u8 playerId;
+    u8 result;
+    u8 targetKind;
+    u8 targetLocalId;
+    u8 mapGroup;
+    u8 mapNum;
+    u8 targetElevation;
+    u8 interactionType;
+    s16 x;
+    s16 y;
+    u16 scriptHash;
+    u16 detail;
 } __attribute__((packed));
 
 struct NetBattleAction
@@ -134,8 +183,14 @@ struct NetServerClock
 struct NetCommitResult
 {
     u32 transactionId;
+    u32 sessionEpoch;
+    u32 actionSequence;
     u32 serverRevision;
     u16 payloadChecksum;
+    u8 playerId;
+    u8 packetType;
+    u8 subsessionId;
+    u8 reserved;
     u8 commitType;
     u8 result;
     u16 detail;

@@ -37,6 +37,7 @@
 #include "metatile_behavior.h"
 #include "mirage_tower.h"
 #include "money.h"
+#include "multiplayer/session.h"
 #include "new_game.h"
 #include "palette.h"
 #include "play_time.h"
@@ -1445,6 +1446,7 @@ static void DoCB1_Overworld(u16 newKeys, u16 heldKeys)
     FieldGetPlayerInput(&inputStruct, newKeys, heldKeys);
     if (!ArePlayerFieldControlsLocked())
     {
+        MultiplayerSession_MarkPlayerControlReady();
         if (ProcessPlayerFieldInput(&inputStruct) == 1)
         {
             LockPlayerFieldControls();
@@ -1536,6 +1538,7 @@ void CB2_NewGame(void)
     FieldClearVBlankHBlankCallbacks();
     StopMapMusic();
     ResetSafariZoneFlag_();
+    MultiplayerSession_SuspendForNewGame();
     NewGameInitData();
     ResetInitialPlayerAvatarState();
     PlayTimeCounter_Start();

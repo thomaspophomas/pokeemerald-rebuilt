@@ -29,6 +29,8 @@ Mod-first Pokemon Emerald decomp repo. The current architecture work is an
   `scripts/modgen.py`.
 - Multiplayer starts in Solo and switches to Online in-game through
   runtime/session ports.
+- Online server selection uses save-backed `NetServerConfig` profiles; the ROM
+  publishes IPv4/port config to the local bridge and never opens sockets.
 - Engine rule sets: compile-time feature gates.
 
 ## Architecture
@@ -66,18 +68,21 @@ legacy-global access through feature code.
 - Emulator bridge reads consume the authoritative server view; local client
   writes go only to local snapshot/packet output lanes.
 - Online session identity must include `sessionEpoch`, `playerToken`,
-  `joinNonce`, protocol/build/ruleset metadata, heartbeat, and server-bridge
-  transport mode.
+  `joinNonce`, protocol/build/ruleset metadata, ROM hash, heartbeat,
+  `ServerHelloAck`, and server-bridge transport mode.
 - Client data is untrusted online. Treat movement, interactions, battle input,
   trade input, party/inventory/state values, local RTC, and local flags as
   requests that require server validation.
 - Online gameplay side effects must use `MultiplayerCommit_*` and stable
   transaction keys. Duplicate, replayed, retried, rolled-back, or late packets
   must return the cached result instead of applying twice.
+- Online NPC/script interactions must pass through the multiplayer interaction
+  preflight. Unknown targets are exclusive; only explicit `SHARED_READONLY`
+  mod NPCs may start dialog locally without a server lock grant.
 - Trade, item, party, story-flag, outfit, reward, and battle-result commits are
   fail-closed until a server mirror exists for the affected state.
-- Reliable gameplay actions belong on the bridge ringbuffer; overworld
-  snapshots stay latest-wins.
+- Reliable gameplay actions belong on the bridge ringbuffer and pending
+  transaction table; overworld snapshots stay latest-wins.
 - Remote avatars must use idempotent virtual-object create/update APIs so one
   remote player cannot spawn duplicate sprites across retries or resyncs.
 - Time-based online systems must use `MultiplayerClock_*` and server time;
@@ -92,6 +97,8 @@ legacy-global access through feature code.
   `MultiplayerSession_*`; it must not call `NetTransport_*` directly.
 - The Solo/Online setting uses existing SaveBlock2 option padding and must keep
   `sizeof(struct SaveBlock2) == 0xF2C`.
+- Additional multiplayer server profile state belongs in `ModSaveState`, not
+  in a widened `SaveBlock2`.
 - Save layout changes require a migration plan before implementation; reusing
   padding still requires an exact size assertion.
 - Do not upload built ROM artifacts from CI/CD.

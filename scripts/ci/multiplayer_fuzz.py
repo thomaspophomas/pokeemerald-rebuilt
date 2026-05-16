@@ -12,16 +12,18 @@ MAX_NET_BATTLE_PLAYERS = 4
 MAX_NET_SUBSESSIONS = 4
 NET_SUBSESSION_NONE = 0
 NET_PACKET_NONE = 0
-NET_PACKET_COUNT = 23
+NET_PACKET_COUNT = 25
 NET_PLAYER_SNAPSHOT_TTL_FRAMES = 60 * 5
 NET_PLAYER_SNAPSHOT_FUTURE_SKEW_FRAMES = 30
 NET_PLAYER_STALE_FRAMES = 60 * 2
 NET_PLAYER_DISCONNECT_FRAMES = 60 * 10
 NET_PLAYER_COORD_MIN = -512
 NET_PLAYER_COORD_MAX = 8191
-NET_PROTOCOL_VERSION = 2
-NET_EMULATOR_BRIDGE_VERSION = 5
+NET_PROTOCOL_VERSION = 6
+NET_EMULATOR_BRIDGE_VERSION = 6
 NET_TRANSPORT_MODE_SERVER_BRIDGE = 1
+NET_SERVER_PROFILE_COUNT = 3
+NET_DEFAULT_SERVER_PORT = 7777
 NET_COMMIT_LOG_SIZE = 32
 NET_RELIABLE_QUEUE_SIZE = 16
 NET_PENDING_TX_COUNT = 16
@@ -104,7 +106,29 @@ class ClientHello:
     bridge_version: int = NET_EMULATOR_BRIDGE_VERSION
     build_id: int = 0x00010000
     ruleset_hash: int = 0x00000003
+    trainer_id: int = 0
+    name_hash: int = 1
+    gender: int = 0
     transport_mode: int = NET_TRANSPORT_MODE_SERVER_BRIDGE
+    profile_ready: bool = True
+    control_ready: bool = True
+
+
+@dataclass(frozen=True)
+class ServerProfile:
+    active: bool = True
+    ipv4: tuple[int, int, int, int] = (100, 64, 0, 1)
+    port: int = NET_DEFAULT_SERVER_PORT
+
+
+@dataclass(frozen=True)
+class ServerConfig:
+    selected_slot: int = 0
+    profiles: tuple[ServerProfile, ...] = (
+        ServerProfile(),
+        ServerProfile(active=False, ipv4=(0, 0, 0, 0)),
+        ServerProfile(active=False, ipv4=(0, 0, 0, 0)),
+    )
 
 
 def is_subsession_state(state: int) -> bool:
@@ -225,8 +249,23 @@ def client_hello_is_compatible(hello: ClientHello) -> bool:
         and hello.bridge_version == NET_EMULATOR_BRIDGE_VERSION
         and hello.build_id == 0x00010000
         and hello.ruleset_hash == 0x00000003
+        and hello.name_hash != 0
+        and hello.gender in {0, 1}
         and hello.transport_mode == NET_TRANSPORT_MODE_SERVER_BRIDGE
+        and hello.profile_ready
+        and hello.control_ready
     )
+
+
+def server_config_is_valid(config: ServerConfig) -> bool:
+    if config.selected_slot >= NET_SERVER_PROFILE_COUNT:
+        return False
+    profile = config.profiles[config.selected_slot]
+    if not profile.active:
+        return False
+    if profile.port <= 0 or profile.port > 65535:
+        return False
+    return all(0 <= octet <= 255 for octet in profile.ipv4)
 
 
 def make_transaction_id(session_epoch: int, player_id: int, packet_type: int, subsession_id: int, action_sequence: int) -> int:
@@ -265,6 +304,32 @@ def normalize_multiplayer_mode(mode: int) -> int:
 
 def runtime_allows_online(mode: int, feature_enabled: bool = True) -> bool:
     return feature_enabled and normalize_multiplayer_mode(mode) == OPTIONS_MULTIPLAYER_MODE_ONLINE
+
+
+def runtime_can_run_online_lifecycle(
+    mode: int,
+    player_name: str,
+    gender: int,
+    profile_initialized: bool,
+    control_ready: bool,
+    feature_enabled: bool = True,
+) -> bool:
+    return (
+        runtime_allows_online(mode, feature_enabled)
+        and bool(player_name)
+        and gender in {0, 1}
+        and profile_initialized
+        and control_ready
+    )
+
+
+def runtime_is_online(mode: int, hello_acked: bool, state: str, health: str, player_name: str = "MAY") -> bool:
+    return (
+        runtime_can_run_online_lifecycle(mode, player_name, 1, True, True)
+        and hello_acked
+        and health not in {"disconnected", "resyncing"}
+        and state in {"lobby", "overworld_sync", "subsession"}
+    )
 
 
 def test_snapshot_edges() -> None:
@@ -314,7 +379,11 @@ def test_handshake_edges() -> None:
     assert not client_hello_is_compatible(ClientHello(bridge_version=3))
     assert not client_hello_is_compatible(ClientHello(build_id=0xDEADBEEF))
     assert not client_hello_is_compatible(ClientHello(ruleset_hash=0))
+    assert not client_hello_is_compatible(ClientHello(name_hash=0))
+    assert not client_hello_is_compatible(ClientHello(gender=3))
     assert not client_hello_is_compatible(ClientHello(transport_mode=0))
+    assert not client_hello_is_compatible(ClientHello(profile_ready=False))
+    assert not client_hello_is_compatible(ClientHello(control_ready=False))
 
 
 def test_transport_rate_limit() -> None:
@@ -342,6 +411,22 @@ def test_runtime_mode_edges() -> None:
     assert not runtime_allows_online(OPTIONS_MULTIPLAYER_MODE_SOLO)
     assert runtime_allows_online(OPTIONS_MULTIPLAYER_MODE_ONLINE)
     assert not runtime_allows_online(OPTIONS_MULTIPLAYER_MODE_ONLINE, feature_enabled=False)
+    assert runtime_can_run_online_lifecycle(OPTIONS_MULTIPLAYER_MODE_ONLINE, "MAY", 1, True, True)
+    assert runtime_can_run_online_lifecycle(OPTIONS_MULTIPLAYER_MODE_ONLINE, "MAY", 1, True, True)
+    assert not runtime_can_run_online_lifecycle(OPTIONS_MULTIPLAYER_MODE_ONLINE, "", 1, True, True)
+    assert not runtime_can_run_online_lifecycle(OPTIONS_MULTIPLAYER_MODE_ONLINE, "MAY", 2, True, True)
+    assert not runtime_can_run_online_lifecycle(OPTIONS_MULTIPLAYER_MODE_ONLINE, "MAY", 1, False, True)
+    assert not runtime_can_run_online_lifecycle(OPTIONS_MULTIPLAYER_MODE_ONLINE, "MAY", 1, True, False)
+    assert runtime_is_online(OPTIONS_MULTIPLAYER_MODE_ONLINE, True, "overworld_sync", "healthy")
+    assert not runtime_is_online(OPTIONS_MULTIPLAYER_MODE_ONLINE, False, "overworld_sync", "healthy")
+
+
+def test_server_config_edges() -> None:
+    assert server_config_is_valid(ServerConfig())
+    assert not server_config_is_valid(ServerConfig(selected_slot=NET_SERVER_PROFILE_COUNT))
+    assert not server_config_is_valid(ServerConfig(selected_slot=1))
+    assert not server_config_is_valid(ServerConfig(profiles=(ServerProfile(port=0), ServerProfile(active=False), ServerProfile(active=False))))
+    assert not server_config_is_valid(ServerConfig(profiles=(ServerProfile(ipv4=(100, 64, 0, 256)), ServerProfile(active=False), ServerProfile(active=False))))
 
 
 def fuzz_snapshots() -> None:
@@ -382,6 +467,7 @@ def main() -> None:
     test_transaction_edges()
     test_range_edges()
     test_runtime_mode_edges()
+    test_server_config_edges()
     fuzz_snapshots()
     print("Multiplayer fuzz checks OK")
 

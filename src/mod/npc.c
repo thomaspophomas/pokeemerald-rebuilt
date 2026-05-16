@@ -17,6 +17,14 @@ static const struct ModNpcDefinition *FindDefinitionById(u16 id)
     return NULL;
 }
 
+static u8 GetDefinitionLocalId(const struct ModNpcDefinition *definition)
+{
+    if (definition->localId != 0)
+        return definition->localId;
+
+    return MOD_NPC_DYNAMIC_LOCAL_ID_BASE + (definition->id % (MOD_NPC_DYNAMIC_LOCAL_ID_END - MOD_NPC_DYNAMIC_LOCAL_ID_BASE + 1));
+}
+
 u8 NpcApi_Spawn(u16 defId, u8 mapGroup, u8 mapNum, s16 x, s16 y)
 {
     const struct ModNpcDefinition *definition;
@@ -31,9 +39,7 @@ u8 NpcApi_Spawn(u16 defId, u8 mapGroup, u8 mapNum, s16 x, s16 y)
      || gSaveBlock1Ptr->location.mapNum != mapNum)
         return MOD_NPC_INSTANCE_NONE;
 
-    localId = definition->localId;
-    if (localId == 0)
-        localId = MOD_NPC_DYNAMIC_LOCAL_ID_BASE + (defId % (MOD_NPC_DYNAMIC_LOCAL_ID_END - MOD_NPC_DYNAMIC_LOCAL_ID_BASE + 1));
+    localId = GetDefinitionLocalId(definition);
 
     if (TryGetObjectEventIdByLocalIdAndMap(localId, mapNum, mapGroup, &objectEventId))
         return objectEventId;
@@ -84,6 +90,25 @@ bool8 NpcApi_FindByLocalId(u8 mapGroup, u8 mapNum, u8 localId, u8 *instanceId)
         return FALSE;
 
     return TryGetObjectEventIdByLocalIdAndMap(localId, mapNum, mapGroup, instanceId);
+}
+
+u8 NpcApi_GetInteractionPolicy(u8 mapGroup, u8 mapNum, u8 localId, const u8 *script)
+{
+    u16 i;
+
+    (void)mapGroup;
+    (void)mapNum;
+
+    for (i = 0; i < gModNpcDefinitionCount; i++)
+    {
+        if (GetDefinitionLocalId(&gModNpcDefinitions[i]) != localId)
+            continue;
+        if (gModNpcDefinitions[i].script != NULL && script != NULL && gModNpcDefinitions[i].script != script)
+            continue;
+        return gModNpcDefinitions[i].interactionPolicy;
+    }
+
+    return MOD_NPC_INTERACTION_EXCLUSIVE;
 }
 
 const struct ModNpcDefinition *NpcApi_FindDefinition(const char *key)

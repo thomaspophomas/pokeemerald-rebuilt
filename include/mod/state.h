@@ -2,11 +2,12 @@
 #define GUARD_MOD_STATE_H
 
 #include "global.h"
+#include "multiplayer/server_config.h"
 
 #define MOD_SAVE_STATE_MAGIC 0x4D535456 // "MSTV"
-#define MOD_SAVE_STATE_VERSION 1
+#define MOD_SAVE_STATE_VERSION 2
 #define MOD_SAVE_FLAG_BYTES 128
-#define MOD_SAVE_RESERVED_BYTES 224
+#define MOD_SAVE_RESERVED_BYTES 144
 
 struct ModSaveState
 {
@@ -15,6 +16,7 @@ struct ModSaveState
     u16 size;
     u32 revision;
     u8 flags[MOD_SAVE_FLAG_BYTES];
+    struct NetServerConfig multiplayerServerConfig;
     u8 reserved[MOD_SAVE_RESERVED_BYTES];
 };
 

@@ -28,6 +28,8 @@ is a multiplayer-first modular refactor:
   `scripts/modgen.py`.
 - Multiplayer starts in Solo and is switched to Online in-game through
   runtime/session ports.
+- Online server selection uses save-backed `NetServerConfig` profiles; the ROM
+  publishes IPv4/port config to the local bridge and never opens sockets.
 - Engine-generation rule sets remain compile-time.
 
 ## Architecture
@@ -71,18 +73,21 @@ ports and hooks rather than patching broad legacy globals directly.
 - Emulator bridge reads must use the authoritative server view; local client
   output must go through the write-only local snapshot/packet lanes.
 - Online session identity must include `sessionEpoch`, `playerToken`,
-  `joinNonce`, protocol/build/ruleset metadata, heartbeat, and server-bridge
-  transport mode.
+  `joinNonce`, protocol/build/ruleset metadata, ROM hash, heartbeat,
+  `ServerHelloAck`, and server-bridge transport mode.
 - Client data is untrusted online. Treat movement, interactions, battle input,
   trade input, party/inventory/state values, local RTC, and local flags as
   requests that require server validation.
 - Online gameplay side effects must use `MultiplayerCommit_*` and stable
   transaction keys. Duplicate, replayed, retried, rolled-back, or late packets
   must return the cached result instead of applying twice.
+- Online NPC/script interactions must pass through the multiplayer interaction
+  preflight. Unknown targets are exclusive; only explicit `SHARED_READONLY`
+  mod NPCs may start dialog locally without a server lock grant.
 - Trade, item, party, story-flag, outfit, reward, and battle-result commits are
   fail-closed until a server mirror exists for the affected state.
-- Reliable gameplay actions belong on the bridge ringbuffer; overworld
-  snapshots stay latest-wins.
+- Reliable gameplay actions belong on the bridge ringbuffer and pending
+  transaction table; overworld snapshots stay latest-wins.
 - Remote avatars must use idempotent virtual-object create/update APIs so one
   remote player cannot spawn duplicate sprites across retries or resyncs.
 - Time-based online systems must use `MultiplayerClock_*` and server time;
@@ -95,6 +100,8 @@ ports and hooks rather than patching broad legacy globals directly.
   `MultiplayerSession_*`; it must not call `NetTransport_*` directly.
 - The Solo/Online setting uses existing SaveBlock2 option padding and must keep
   `sizeof(struct SaveBlock2) == 0xF2C`.
+- Additional multiplayer server profile state belongs in `ModSaveState`, not
+  in a widened `SaveBlock2`.
 - Overworld-specific access to `gObjectEvents` belongs in the overworld port.
 - Remote overworld players must be non-colliding virtual objects unless a
   dedicated collision policy is added. Their virtual object IDs are reserved
@@ -122,6 +129,8 @@ python3 scripts/ci/multiplayer_fuzz.py
 python3 scripts/ci/multiplayer_host_sim.py
 python3 scripts/ci/check_net_manifest.py
 python3 scripts/ci/modgen_smoke.py
+python3 -m py_compile tools/multiplayer_bridge/bridge.py
+python3 scripts/ci/multiplayer_bridge_smoke.py
 ```
 
 If local Windows does not have `make`, rely on GitHub Actions or install the
