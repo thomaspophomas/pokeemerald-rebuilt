@@ -1,0 +1,28 @@
+{
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "fileCount": 3,
+  "jsonFileCount": 1,
+  "bytes": 1152216,
+  "sha1": "b356e61e8d1aafdd25e5d286248f0f81e4fc0929",
+  "files": [
+    {
+      "path": "mods/vanilla/trainers/legacy/opponents.h",
+      "sha1": "7853601df4505865475ccfd05f28b813956be8f9",
+      "bytes": 41621
+    },
+    {
+      "path": "mods/vanilla/trainers/legacy/trainers.h",
+      "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706",
+      "bytes": 355854
+    },
+    {
+      "path": "mods/vanilla/trainers/trainers.json",
+      "sha1": "8350f626bfe35e170ac8df7c5d7c53672bb36617",
+      "bytes": 754741
+    }
+  ],
+  "counts": {
+    "trainers": 855
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "domain": "weather",
+  "schemaVersion": 1,
+  "fileCount": 1,
+  "jsonFileCount": 1,
+  "bytes": 67499,
+  "sha1": "5c48dc011a586029019849677d2e989eb4835c05",
+  "files": [
+    {
+      "path": "mods/vanilla/weather/map_weather.json",
+      "sha1": "257b6f6ef1dde2590098d4d1dc83afcbb38e3a09",
+      "bytes": 67499
+    }
+  ],
+  "counts": {
+    "mapsWithWeather": 518,
+    "weatherKinds": 6
+  }
+}

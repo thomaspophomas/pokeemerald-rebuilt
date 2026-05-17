@@ -1,0 +1,14 @@
+{
+  "domain": "engine_rulesets",
+  "schemaVersion": 1,
+  "engineRulesets": [
+    {
+      "id": "engine:gen3",
+      "name": "Generation III",
+      "version": 1,
+      "saveCompatible": true,
+      "captureHook": null,
+      "battleWeatherHook": null
+    }
+  ]
+}

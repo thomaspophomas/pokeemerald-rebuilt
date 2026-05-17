@@ -1,6 +1,8 @@
 # Mods Directory
 
 Place build-time mods in subdirectories named `mods/<modId>`.
+`mods/vanilla` is reserved for the extracted vanilla source-of-truth mod; do not
+hand-edit its generated JSON without rerunning the vanilla extraction checks.
 
 Minimum manifest:
 
@@ -32,6 +34,12 @@ Supported folders:
 - `maps/<MapName>/map.json`
 - `maps/<MapName>/scripts.inc`
 - `src/*.c`
+
+Vanilla extraction domains also reserve these top-level folders under
+`mods/vanilla`: `maps`, `npcs`, `trainers`, `trainer_parties`, `weather`,
+`time`, `flags`, `events`, `language`, `sprite_assets`, `overworld_sprites`,
+`battle_sprites`, `followers`, `outfits`, `pokeballs`, `engine_rulesets`,
+`state`, `quests`, `wild_encounters`, `items`, `pokemon`, `moves`, and `shops`.
 
 Run `python3 scripts/modgen.py --root .` or let `make generated` run it during
 the normal build. Generated files live under `include/generated`,

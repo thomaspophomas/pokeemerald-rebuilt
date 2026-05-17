@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pokeemerald.local/mod_api_schemas/state.schema.json",
+  "title": "Vanilla State API",
+  "description": "Deterministic JSON representation for the vanilla state mod API domain. Domain-specific files may be either typed records or lossless source manifests until the legacy pipeline for that domain is fully replaced.",
+  "oneOf": [
+    {
+      "type": "object"
+    },
+    {
+      "type": "array"
+    }
+  ]
+}

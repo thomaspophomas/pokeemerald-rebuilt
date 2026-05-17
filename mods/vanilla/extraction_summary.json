@@ -1,0 +1,101 @@
+{
+  "mod": "vanilla",
+  "schemaVersion": 1,
+  "domains": [
+    "maps",
+    "npcs",
+    "trainers",
+    "trainer_parties",
+    "weather",
+    "time",
+    "flags",
+    "events",
+    "language",
+    "sprite_assets",
+    "overworld_sprites",
+    "battle_sprites",
+    "followers",
+    "outfits",
+    "pokeballs",
+    "engine_rulesets",
+    "state",
+    "quests",
+    "wild_encounters",
+    "items",
+    "pokemon",
+    "moves",
+    "shops"
+  ],
+  "counts": {
+    "maps": {
+      "maps": 518
+    },
+    "npcs": {
+      "npcs": 2776
+    },
+    "trainers": {
+      "trainers": 855
+    },
+    "trainer_parties": {
+      "trainerParties": 854
+    },
+    "weather": {
+      "mapsWithWeather": 518,
+      "weatherKinds": 6
+    },
+    "time": {
+      "segments": 4
+    },
+    "flags": {
+      "sourceFiles": 4
+    },
+    "events": {
+      "sourceFiles": 1050
+    },
+    "language": {
+      "sourceFiles": 48
+    },
+    "sprite_assets": {
+      "sourceFiles": 3732
+    },
+    "overworld_sprites": {
+      "sourceFiles": 300
+    },
+    "battle_sprites": {
+      "sourceFiles": 2974
+    },
+    "followers": {
+      "sourceFiles": 299
+    },
+    "outfits": {
+      "sourceFiles": 136
+    },
+    "pokeballs": {
+      "sourceFiles": 474
+    },
+    "engine_rulesets": {
+      "rulesets": 1
+    },
+    "state": {
+      "sourceFiles": 5
+    },
+    "quests": {
+      "questHooks": 2408
+    },
+    "wild_encounters": {
+      "files": 1
+    },
+    "items": {
+      "sourceFiles": 475
+    },
+    "pokemon": {
+      "sourceFiles": 2882
+    },
+    "moves": {
+      "sourceFiles": 6
+    },
+    "shops": {
+      "sourceFiles": 991
+    }
+  }
+}

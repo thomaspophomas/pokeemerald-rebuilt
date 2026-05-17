@@ -1,0 +1,23 @@
+{
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "fileCount": 2,
+  "jsonFileCount": 1,
+  "bytes": 652893,
+  "sha1": "275703925f2e9bdaff41442ab3b763fb24abb7c5",
+  "files": [
+    {
+      "path": "mods/vanilla/trainer_parties/legacy/trainer_parties.h",
+      "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7",
+      "bytes": 240614
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/parties.json",
+      "sha1": "6014a829e29511c0890c0747198c5194c159a5af",
+      "bytes": 412279
+    }
+  ],
+  "counts": {
+    "trainerParties": 854
+  }
+}

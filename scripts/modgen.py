@@ -43,6 +43,32 @@ NPC_INTERACTION_POLICIES = {
     "DISABLED_ONLINE": "MOD_NPC_INTERACTION_DISABLED_ONLINE",
 }
 
+JSON_DOMAIN_DIRS = [
+    "maps",
+    "npcs",
+    "trainers",
+    "trainer_parties",
+    "weather",
+    "time",
+    "flags",
+    "events",
+    "language",
+    "sprite_assets",
+    "overworld_sprites",
+    "battle_sprites",
+    "followers",
+    "outfits",
+    "pokeballs",
+    "engine_rulesets",
+    "state",
+    "quests",
+    "wild_encounters",
+    "items",
+    "pokemon",
+    "moves",
+    "shops",
+]
+
 
 class ModgenError(Exception):
     pass
@@ -531,23 +557,57 @@ def collect_maps(mods: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         maps_root = mod["root"] / "maps"
         if not maps_root.exists():
             continue
+        group_lookup: Dict[str, Dict[str, int]] = {}
+        map_groups_path = maps_root / "map_groups.json"
+        if map_groups_path.exists():
+            map_groups = read_json(map_groups_path)
+            if isinstance(map_groups, dict):
+                for group_index, group_name in enumerate(map_groups.get("group_order", [])):
+                    for map_index, map_name in enumerate(map_groups.get(group_name, [])):
+                        group_lookup[str(map_name)] = {"group": group_index, "num": map_index}
         for path in sorted(maps_root.glob("*/map.json")):
             data = read_json(path)
             key = key_for(mod["id"], data, path.parent.name)
             if key in seen:
                 raise ModgenError(f"Duplicate map key {key!r}")
             seen.add(key)
+            group_info = group_lookup.get(path.parent.name, {})
             maps.append(
                 {
                     "key": key,
                     "id": next_id,
-                    "group": c_int_or_token(data.get("map_group"), "0"),
-                    "num": c_int_or_token(data.get("map_num"), "0"),
+                    "group": c_int_or_token(data.get("map_group", group_info.get("group")), "0"),
+                    "num": c_int_or_token(data.get("map_num", group_info.get("num")), "0"),
                     "path": path.relative_to(mod["repo_root"]).as_posix(),
                 }
             )
             next_id += 1
     return maps
+
+
+def collect_domain_files(mods: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    files = []
+    seen = set()
+    for mod in mods:
+        for domain in JSON_DOMAIN_DIRS:
+            domain_root = mod["root"] / domain
+            if not domain_root.exists():
+                continue
+            for path in iter_json_files(domain_root):
+                relative_key = path.relative_to(domain_root).with_suffix("").as_posix().replace("/", ".")
+                key = f"{mod['id']}:{domain}:{relative_key}"
+                if key in seen:
+                    raise ModgenError(f"Duplicate domain JSON key {key!r}")
+                seen.add(key)
+                files.append(
+                    {
+                        "domain": domain,
+                        "key": key,
+                        "path": path.relative_to(mod["repo_root"]).as_posix(),
+                    }
+                )
+    files.sort(key=lambda item: (item["domain"], item["key"]))
+    return files
 
 
 def collect_mod_sources(mods: List[Dict[str, Any]]) -> List[str]:
@@ -576,6 +636,7 @@ def write_header(path: Path) -> None:
 
 #include "global.h"
 #include "mod/battle_sprite.h"
+#include "mod/domain.h"
 #include "mod/engine.h"
 #include "mod/event.h"
 #include "mod/flags.h"
@@ -591,6 +652,8 @@ def write_header(path: Path) -> None:
 
 extern const struct ModManifest gModManifests[];
 extern const u16 gModManifestCount;
+extern const struct ModDomainFileDefinition gModDomainFiles[];
+extern const u16 gModDomainFileCount;
 extern const struct ModFlagDefinition gModFlagDefinitions[];
 extern const u16 gModFlagDefinitionCount;
 extern const struct ModEventSubscription gModEventSubscriptions[];
@@ -624,7 +687,7 @@ extern const u16 gModMapDefinitionCount;
     )
 
 
-def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, Any]], events: List[Dict[str, Any]], weather: List[Dict[str, Any]], time_segments: List[Dict[str, Any]], sprite_assets: List[Dict[str, Any]], overworld_sprites: List[Dict[str, Any]], battle_sprites: List[Dict[str, Any]], followers: List[Dict[str, Any]], language_texts: List[Dict[str, Any]], pokeballs: List[Dict[str, Any]], engines: List[Dict[str, Any]], npcs: List[Dict[str, Any]], maps: List[Dict[str, Any]]) -> None:
+def write_source(path: Path, mods: List[Dict[str, Any]], domain_files: List[Dict[str, Any]], flags: List[Dict[str, Any]], events: List[Dict[str, Any]], weather: List[Dict[str, Any]], time_segments: List[Dict[str, Any]], sprite_assets: List[Dict[str, Any]], overworld_sprites: List[Dict[str, Any]], battle_sprites: List[Dict[str, Any]], followers: List[Dict[str, Any]], language_texts: List[Dict[str, Any]], pokeballs: List[Dict[str, Any]], engines: List[Dict[str, Any]], npcs: List[Dict[str, Any]], maps: List[Dict[str, Any]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     event_handlers = sorted({event["handler"] for event in events if event["handler"] != "NULL"})
     weather_handlers = sorted({provider["handler"] for provider in weather if provider["handler"] != "NULL"})
@@ -689,6 +752,17 @@ def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, A
         lines.append("    { NULL, NULL, NULL, 0, 0 },")
     lines.append("};")
     lines.append(f"const u16 gModManifestCount = {len(mods)};")
+    lines.append("")
+
+    lines.append("const struct ModDomainFileDefinition gModDomainFiles[] =")
+    lines.append("{")
+    if domain_files:
+        for domain_file in domain_files:
+            lines.append(f"    {{ {c_string(domain_file['domain'])}, {c_string(domain_file['key'])}, {c_string(domain_file['path'])} }},")
+    else:
+        lines.append("    { NULL, NULL, NULL },")
+    lines.append("};")
+    lines.append(f"const u16 gModDomainFileCount = {len(domain_files)};")
     lines.append("")
 
     lines.append("const struct ModFlagDefinition gModFlagDefinitions[] =")
@@ -852,6 +926,7 @@ def main() -> int:
 
     root = Path(args.root).resolve()
     mods = load_mods(root)
+    domain_files = collect_domain_files(mods)
     flags = collect_flags(mods)
     events = collect_events(mods)
     weather = collect_weather(mods)
@@ -871,6 +946,7 @@ def main() -> int:
     write_source(
         root / args.out_source,
         mods,
+        domain_files,
         flags,
         events,
         weather,

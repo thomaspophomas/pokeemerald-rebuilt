@@ -155,6 +155,33 @@ if ! grep -n "scripts/modgen.py" Makefile >/tmp/architecture_guard_matches.txt 2
     exit 1
 fi
 
+if ! grep -n "scripts/vanilla/vanilla_migration.py" Makefile >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Vanilla mod extraction must run before mod registry generation." >&2
+    exit 1
+fi
+
+if find . -path './.git' -prune -o \( -name '*.yml' -o -name '*.yaml' \) -type f ! -path './.github/workflows/*' -print \
+    | grep . >/tmp/architecture_guard_matches.txt; then
+    echo "Gameplay and mod data must be JSON; only GitHub workflow YAML is allowed." >&2
+    cat /tmp/architecture_guard_matches.txt >&2
+    exit 1
+fi
+
+for domain in maps npcs trainers trainer_parties weather time flags events language sprite_assets overworld_sprites battle_sprites followers outfits pokeballs engine_rulesets state quests wild_encounters items pokemon moves shops; do
+    if [ ! -d "mods/vanilla/$domain" ]; then
+        echo "Missing vanilla mod API domain folder: mods/vanilla/$domain" >&2
+        exit 1
+    fi
+    if [ ! -f "docs/mod_api_schemas/$domain.schema.json" ]; then
+        echo "Missing vanilla mod API schema: docs/mod_api_schemas/$domain.schema.json" >&2
+        exit 1
+    fi
+    if [ ! -f "mods/vanilla/expectations/$domain/baseline.expected.json" ]; then
+        echo "Missing vanilla mod expectation: mods/vanilla/expectations/$domain/baseline.expected.json" >&2
+        exit 1
+    fi
+done
+
 if ! grep -R -n "ModApi_Init" src/engine include/engine >/tmp/architecture_guard_matches.txt 2>/dev/null; then
     echo "The mod API must attach through engine/module_registry." >&2
     exit 1

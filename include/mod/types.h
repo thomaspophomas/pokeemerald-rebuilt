@@ -21,4 +21,11 @@ struct ModNamedResource
     u16 id;
 };
 
+struct ModDomainFileDefinition
+{
+    const char *domain;
+    const char *key;
+    const char *jsonPath;
+};
+
 #endif // GUARD_MOD_TYPES_H

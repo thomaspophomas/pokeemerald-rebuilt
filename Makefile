@@ -143,9 +143,12 @@ endif
 
 # Variable filled out in other make files
 AUTO_GEN_TARGETS :=
+VANILLA_MOD_TARGET := vanilla-mod-extraction
+VANILLA_MOD_STAMP := mods/vanilla/.vanilla_extracted.stamp
+VANILLA_MOD_INPUTS := scripts/vanilla/vanilla_migration.py
 MODGEN_TARGETS := include/generated/mod_registry.h src/generated/mod_registry.c build/generated/mod_sources.mk
 MODGEN_INPUTS := scripts/modgen.py $(shell find mods -type f 2>/dev/null)
-AUTO_GEN_TARGETS += $(MODGEN_TARGETS)
+AUTO_GEN_TARGETS += $(VANILLA_MOD_TARGET) $(MODGEN_TARGETS)
 include make_tools.mk
 # Tool executables
 GFX       := $(TOOLS_DIR)/gbagfx/gbagfx$(EXE)
@@ -172,7 +175,7 @@ MAKEFLAGS += --no-print-directory
 .DELETE_ON_ERROR:
 
 RULES_NO_SCAN += libagbsyscall clean clean-assets tidy tidymodern tidynonmodern generated clean-generated
-.PHONY: all rom modern compare
+.PHONY: all rom modern compare $(VANILLA_MOD_TARGET)
 .PHONY: $(RULES_NO_SCAN)
 
 infoshell = $(foreach line, $(shell $1 | sed "s/ /__SPACE__/g"), $(info $(subst __SPACE__, ,$(line))))
@@ -277,7 +280,11 @@ include audio_rules.mk
 generated: $(AUTO_GEN_TARGETS)
 	@: # Silence the "Nothing to be done for `generated'" message, which some people were confusing for an error.
 
-$(MODGEN_TARGETS) &: $(MODGEN_INPUTS)
+$(VANILLA_MOD_TARGET): $(VANILLA_MOD_INPUTS)
+	$(PYTHON) scripts/vanilla/vanilla_migration.py extract --root .
+	@touch $(VANILLA_MOD_STAMP)
+
+$(MODGEN_TARGETS) &: $(VANILLA_MOD_TARGET) $(MODGEN_INPUTS)
 	$(PYTHON) scripts/modgen.py --root . --out-header include/generated/mod_registry.h --out-source src/generated/mod_registry.c --out-make build/generated/mod_sources.mk
 
 
@@ -295,7 +302,7 @@ $(MODGEN_TARGETS) &: $(MODGEN_INPUTS)
 %.rl:     %      ; $(GFX) $< $@
 
 clean-generated:
-	@rm -f $(AUTO_GEN_TARGETS)
+	@rm -f $(AUTO_GEN_TARGETS) $(VANILLA_MOD_STAMP)
 	@echo "rm -f <AUTO_GEN_TARGETS>"
 
 ifeq ($(MODERN),0)
@@ -335,6 +342,7 @@ $(C_BUILDDIR)/%.d: $(C_SUBDIR)/%.c
 	$(SCANINC) -M $@ -g $(ASSETS_DIR_NAME) $(INCLUDE_SCANINC_ARGS) -I tools/agbcc/include $<
 
 $(OBJ_DIR)/mods/%.o: mods/%.c
+	@mkdir -p $(@D)
 ifneq ($(KEEP_TEMPS),1)
 	@echo "$(CC1) <flags> -o $@ $<"
 	@$(CPP) $(CPPFLAGS) $< | $(PREPROC) -i -g $(ASSETS_DIR_NAME) $< charmap.txt | $(CC1) $(CFLAGS) -o - - | cat - <(echo -e ".text\n\t.align\t2, 0") | $(AS) $(ASFLAGS) -o $@ -
@@ -346,6 +354,7 @@ else
 endif
 
 $(OBJ_DIR)/mods/%.d: mods/%.c
+	@mkdir -p $(@D)
 	$(SCANINC) -M $@ -g $(ASSETS_DIR_NAME) $(INCLUDE_SCANINC_ARGS) -I tools/agbcc/include $<
 
 ifneq ($(NODEP),1)

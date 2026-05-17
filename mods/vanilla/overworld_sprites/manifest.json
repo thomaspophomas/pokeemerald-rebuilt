@@ -1,0 +1,1508 @@
+{
+  "domain": "overworld_sprites",
+  "schemaVersion": 1,
+  "migrationMode": "source_file_manifest",
+  "sourceAuthority": "vanilla",
+  "sourceFiles": [
+    {
+      "path": "graphics/object_events/palettes/birth_island_stone.pal",
+      "sha1": "2dd9fb449a7f991bbf8b17d6ca90c0efc7c51616",
+      "bytes": 198
+    },
+    {
+      "path": "graphics/object_events/palettes/brendan.pal",
+      "sha1": "f293cc497b73a84e057e244c578dd7ea2d4806b5",
+      "bytes": 203
+    },
+    {
+      "path": "graphics/object_events/palettes/brendan_reflection.pal",
+      "sha1": "91e486a5577f78e193770d256408f149fa74403a",
+      "bytes": 228
+    },
+    {
+      "path": "graphics/object_events/palettes/bridge_reflection.pal",
+      "sha1": "709075c7677a6451ea65b6377c70dfe42c650d34",
+      "bytes": 212
+    },
+    {
+      "path": "graphics/object_events/palettes/cable_car.pal",
+      "sha1": "3ec2ab73b359d7a54c48624cda0b4bc30949bfb4",
+      "bytes": 206
+    },
+    {
+      "path": "graphics/object_events/palettes/deoxys.pal",
+      "sha1": "727b7d2b8582aacdbb3ed09253890419239dfd27",
+      "bytes": 189
+    },
+    {
+      "path": "graphics/object_events/palettes/enemy_zigzagoon.pal",
+      "sha1": "b40bb6d04733c16bebd4418c92882457a99cce93",
+      "bytes": 208
+    },
+    {
+      "path": "graphics/object_events/palettes/groudon.pal",
+      "sha1": "2b361dc6d4d11b20b67395c4f1e8f87edcc1db86",
+      "bytes": 204
+    },
+    {
+      "path": "graphics/object_events/palettes/groudon_reflection.pal",
+      "sha1": "5cfef3a0857b26e13bdbff445e9e27755b79d438",
+      "bytes": 208
+    },
+    {
+      "path": "graphics/object_events/palettes/ho_oh.pal",
+      "sha1": "1b99d65aeb7c9caee531441e3ec7dc1dd6fd157f",
+      "bytes": 205
+    },
+    {
+      "path": "graphics/object_events/palettes/kyogre.pal",
+      "sha1": "f543e1ce20c989723d8540a179680eb8f6af1ab5",
+      "bytes": 207
+    },
+    {
+      "path": "graphics/object_events/palettes/kyogre_reflection.pal",
+      "sha1": "6d01964540f39829c87fe602c330dd66d0148366",
+      "bytes": 210
+    },
+    {
+      "path": "graphics/object_events/palettes/lugia.pal",
+      "sha1": "fc3b30ee7b23742171a9586a640a83f4a1b73aef",
+      "bytes": 211
+    },
+    {
+      "path": "graphics/object_events/palettes/may.pal",
+      "sha1": "65fa494524ebfd2ad1ff044f5af5eb57de419cda",
+      "bytes": 204
+    },
+    {
+      "path": "graphics/object_events/palettes/may_reflection.pal",
+      "sha1": "9131f9969aa4d313ef70761137607b08563ae12d",
+      "bytes": 225
+    },
+    {
+      "path": "graphics/object_events/palettes/moving_box.pal",
+      "sha1": "c22fd881d26ea5c3ce1c7d8c46e6bac5051f50bf",
+      "bytes": 208
+    },
+    {
+      "path": "graphics/object_events/palettes/npc_1.pal",
+      "sha1": "352d84ffa7da04c156a96ff7d4a161556a8904fa",
+      "bytes": 209
+    },
+    {
+      "path": "graphics/object_events/palettes/npc_1_reflection.pal",
+      "sha1": "dd588a1813bcb85b323a610b0a62c1894a3e459b",
+      "bytes": 227
+    },
+    {
+      "path": "graphics/object_events/palettes/npc_2.pal",
+      "sha1": "275b22b0a71821427a1d7890a5fa5cb2f200002f",
+      "bytes": 198
+    },
+    {
+      "path": "graphics/object_events/palettes/npc_2_reflection.pal",
+      "sha1": "798f7a110ccd62ff09c6ea2f2829152c89a3848a",
+      "bytes": 220
+    },
+    {
+      "path": "graphics/object_events/palettes/npc_3.pal",
+      "sha1": "195030b4f22c8adbdb767a2f80dd5617b1ebd0ba",
+      "bytes": 201
+    },
+    {
+      "path": "graphics/object_events/palettes/npc_3_reflection.pal",
+      "sha1": "2bf78c0f9addf012050da0ac584fba7b743e948c",
+      "bytes": 223
+    },
+    {
+      "path": "graphics/object_events/palettes/npc_4.pal",
+      "sha1": "5cc412b2e97889a392bed8f810a6f8afc3441f82",
+      "bytes": 206
+    },
+    {
+      "path": "graphics/object_events/palettes/npc_4_reflection.pal",
+      "sha1": "a9c9bfa0e1f6487da720461f7fec3118104b3f7e",
+      "bytes": 227
+    },
+    {
+      "path": "graphics/object_events/palettes/player_underwater.pal",
+      "sha1": "50fca799f56b452c97988fe7727194410d7e3009",
+      "bytes": 206
+    },
+    {
+      "path": "graphics/object_events/palettes/poochyena.pal",
+      "sha1": "74416344e8cbf8b498b93cdb31b4e56ca0ca2c61",
+      "bytes": 208
+    },
+    {
+      "path": "graphics/object_events/palettes/quinty_plump.pal",
+      "sha1": "4b2e53ec00950070df9faac3a218708efb78cb8f",
+      "bytes": 197
+    },
+    {
+      "path": "graphics/object_events/palettes/quinty_plump_reflection.pal",
+      "sha1": "6944f7c0aec47460b22f5088e43d68c3d72faab1",
+      "bytes": 222
+    },
+    {
+      "path": "graphics/object_events/palettes/red_leaf.pal",
+      "sha1": "45d12a518b682e7c583465f372fa67cd8fb84ef8",
+      "bytes": 212
+    },
+    {
+      "path": "graphics/object_events/palettes/ruby_sapphire_brendan.pal",
+      "sha1": "1c09da654490931fbbbbd5441cbca046325d15d2",
+      "bytes": 203
+    },
+    {
+      "path": "graphics/object_events/palettes/ruby_sapphire_may.pal",
+      "sha1": "6cf70f2fc1dfffaeab46543cdc6f31c1214054b7",
+      "bytes": 205
+    },
+    {
+      "path": "graphics/object_events/palettes/ss_tidal.pal",
+      "sha1": "695c4e7317f4cad850bf5328c5fc34b678d3e48f",
+      "bytes": 197
+    },
+    {
+      "path": "graphics/object_events/palettes/submarine_shadow.pal",
+      "sha1": "83bf0f8826f1ed0e583a725217f36e70b5770d9d",
+      "bytes": 188
+    },
+    {
+      "path": "graphics/object_events/palettes/truck.pal",
+      "sha1": "69b051c09f5d7343897c5e3e7b9b4448fe900073",
+      "bytes": 206
+    },
+    {
+      "path": "graphics/object_events/palettes/unused_palette.pal",
+      "sha1": "05259337b73a84718bbe0cd93e78ab848d36102d",
+      "bytes": 221
+    },
+    {
+      "path": "graphics/object_events/palettes/vigoroth.pal",
+      "sha1": "518cbeb99fbc890d06b9e12b083547ea3d55ff11",
+      "bytes": 213
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/aguav.png",
+      "sha1": "40a8037cf4c2916add77070f61e01930987e5c8b",
+      "bytes": 522
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/aspear.png",
+      "sha1": "030aa9dd0453378c5541d4264ec9da4a95497b62",
+      "bytes": 596
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/cheri.png",
+      "sha1": "cdee614a35f703afc46bd261c3fa6fc7d8d8c71b",
+      "bytes": 667
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/chesto.png",
+      "sha1": "3532c034beb905d573885db7959d6185b0f64a4d",
+      "bytes": 700
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/cornn.png",
+      "sha1": "74f96757caa81bdaef74d86d66cb3f702b5a30db",
+      "bytes": 593
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/dirt_pile.png",
+      "sha1": "db21e7dd8e5158703b89e9e7fea78e42c935f1d7",
+      "bytes": 176
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/durin.png",
+      "sha1": "0891b2a00ce098720e7068ff2c166bb50752886b",
+      "bytes": 564
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/figy.png",
+      "sha1": "78072862c30bc14b7505c1b6883be78b1d6ea33e",
+      "bytes": 592
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/grepa.png",
+      "sha1": "a9c24351b1965646159f9ccf2b1ff50ce83ff90f",
+      "bytes": 495
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/hondew.png",
+      "sha1": "c50753db9bd06c23ca63f6a61e7b442a9ba397b3",
+      "bytes": 504
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/iapapa.png",
+      "sha1": "ea4fac13103fe4dad94eddcc034bba246801e1da",
+      "bytes": 450
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/kelpsy.png",
+      "sha1": "5d519cdf973fc140bed183bb2b045a6a8d6322fd",
+      "bytes": 464
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/lansat.png",
+      "sha1": "aea08288ade65516a7d83112c4a83746f46964da",
+      "bytes": 510
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/leppa.png",
+      "sha1": "64e405e84a7437ce454b94e621996f93758bd2b3",
+      "bytes": 575
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/liechi.png",
+      "sha1": "2c9e04bef62b30bb8d026317140b4a81593b0aef",
+      "bytes": 565
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/lum.png",
+      "sha1": "6897292669c1b57f408b8a6cf02b9cd65ee798fd",
+      "bytes": 608
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/mago.png",
+      "sha1": "ac88136601ec56424beb71fcde61340c3ae0c1ed",
+      "bytes": 601
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/nomel.png",
+      "sha1": "7a908027f64ac2c8576fda9166875bbedc8e2fb3",
+      "bytes": 489
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/oran.png",
+      "sha1": "e9f8f4f39cc4a5915916a9ec90e6dfebdf6702c1",
+      "bytes": 639
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/pamtre.png",
+      "sha1": "d7389822ac02437fff64a5048d7ebf2cbfc8c7a7",
+      "bytes": 520
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/pecha.png",
+      "sha1": "835148a83ef9ec3e1f487cd63b3ed0f33b3cefec",
+      "bytes": 564
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/persim.png",
+      "sha1": "f2c9144149a9c8e16f54a1dc06226f82929981ba",
+      "bytes": 538
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/pomeg.png",
+      "sha1": "1b2f29c192db34950ea40e280ccda09c3cb1b233",
+      "bytes": 472
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/rabuta.png",
+      "sha1": "34a320bfb45910f0a606fc9b0349ed404acef10e",
+      "bytes": 541
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/rawst.png",
+      "sha1": "dbee060fe8d7225ad18edf9f1823c7887a951248",
+      "bytes": 467
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/razz.png",
+      "sha1": "3d857a4a19e6bc60e0089cc15bd886e50d88efa6",
+      "bytes": 650
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/sitrus.png",
+      "sha1": "1115548d1601cc765d72d7708e1dc310e4e60c4b",
+      "bytes": 593
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/spelon.png",
+      "sha1": "2379dec0228ba14bb7ebe826003747f22ed00fa3",
+      "bytes": 465
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/sprout.png",
+      "sha1": "0f0d900e0cb0bdd95f6c59fea0614ca94b51fe8c",
+      "bytes": 221
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/tamato.png",
+      "sha1": "55b78b33464d10acfeb00b6d07815436399ae2e6",
+      "bytes": 529
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/wepear.png",
+      "sha1": "b07e0113744fd5ecd0da4b7d96ea36ce0af557dd",
+      "bytes": 573
+    },
+    {
+      "path": "graphics/object_events/pics/berry_trees/wiki.png",
+      "sha1": "e07a113973361fce585e8cf544955fabef9c9977",
+      "bytes": 524
+    },
+    {
+      "path": "graphics/object_events/pics/cushions/ball_cushion.png",
+      "sha1": "0047984cc36224fe454129e9a4cbb6dca5a02784",
+      "bytes": 202
+    },
+    {
+      "path": "graphics/object_events/pics/cushions/diamond_cushion.png",
+      "sha1": "ba881fb115ee501d5bd13c960e650d80a62ecf3d",
+      "bytes": 203
+    },
+    {
+      "path": "graphics/object_events/pics/cushions/fire_cushion.png",
+      "sha1": "67648e6e6f0edb5385a53b9439136870766cc2fd",
+      "bytes": 196
+    },
+    {
+      "path": "graphics/object_events/pics/cushions/grass_cushion.png",
+      "sha1": "bf71826ed1dc500bfef5b5a687161ed158dee104",
+      "bytes": 195
+    },
+    {
+      "path": "graphics/object_events/pics/cushions/kiss_cushion.png",
+      "sha1": "9eea0d44513846f2865e45840388a5cdba270e22",
+      "bytes": 200
+    },
+    {
+      "path": "graphics/object_events/pics/cushions/pika_cushion.png",
+      "sha1": "f5a7e84e875374f551f33ec862f7d9e8ca94218c",
+      "bytes": 186
+    },
+    {
+      "path": "graphics/object_events/pics/cushions/round_cushion.png",
+      "sha1": "85a5090ddcbf81865923fb1be16610767f5ccbbd",
+      "bytes": 201
+    },
+    {
+      "path": "graphics/object_events/pics/cushions/spin_cushion.png",
+      "sha1": "07c031a00443e24f7cdcea3da81d5932c80a9d82",
+      "bytes": 211
+    },
+    {
+      "path": "graphics/object_events/pics/cushions/water_cushion.png",
+      "sha1": "6d469f0e9e2b619382bd5c41649194c0bd70930c",
+      "bytes": 192
+    },
+    {
+      "path": "graphics/object_events/pics/cushions/zigzag_cushion.png",
+      "sha1": "5ff909b24678f45c45e794d5d4eacabfd43c5dc6",
+      "bytes": 213
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/azurill_doll.png",
+      "sha1": "8f4dff7bf283a7a283f4e60e249317055b1141d9",
+      "bytes": 202
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/baltoy_doll.png",
+      "sha1": "7dd7a212e948492af303f8bdb7e3a0a0b424d434",
+      "bytes": 203
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/big_blastoise_doll.png",
+      "sha1": "dea5a82234c284d78535a24ca946635e43b5784b",
+      "bytes": 412
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/big_charizard_doll.png",
+      "sha1": "0a1c27a4fd8e7d0edc84201c1dad0ba38175a06c",
+      "bytes": 385
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/big_lapras_doll.png",
+      "sha1": "507e5ebb34f27fefa8ebdb7f3586a5b74aa3ee03",
+      "bytes": 367
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/big_regice_doll.png",
+      "sha1": "129ad80385acef8ae7bfbfd17885e46f5139a844",
+      "bytes": 367
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/big_regirock_doll.png",
+      "sha1": "bc73ca5abfc229365abe23d26ef38d5632bc4088",
+      "bytes": 377
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/big_registeel_doll.png",
+      "sha1": "237e124f30e3aadb4e285ef4e7220566f6590c38",
+      "bytes": 376
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/big_rhydon_doll.png",
+      "sha1": "236ffbadeb28d77e44b0565e5878a90e24904f54",
+      "bytes": 380
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/big_snorlax_doll.png",
+      "sha1": "006effec0fb4115aef4515aad327f2f4aa285309",
+      "bytes": 366
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/big_venusaur_doll.png",
+      "sha1": "91df92e1ab7eade2812916694cbf96c3eb7834ff",
+      "bytes": 450
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/big_wailmer_doll.png",
+      "sha1": "88d86dc5ff8f1b2b135d4ab14fb8ec9370d4d7f3",
+      "bytes": 344
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/chikorita_doll.png",
+      "sha1": "63b6a6939e1055bf61da27e4f02f3ee1f25d6784",
+      "bytes": 200
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/clefairy_doll.png",
+      "sha1": "8af420308f45e173338e30d6e0bc9c059c0c3df1",
+      "bytes": 214
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/cyndaquil_doll.png",
+      "sha1": "4456f62c2e4386261d5e4a278f3c78ee4dea7f81",
+      "bytes": 219
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/ditto_doll.png",
+      "sha1": "bf29276ca7355b746b6205523b2321b7df492e86",
+      "bytes": 192
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/duskull_doll.png",
+      "sha1": "5436236d9abecaea24037bebc669f2ef990ac382",
+      "bytes": 215
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/gulpin_doll.png",
+      "sha1": "09c3f6534e2f59efabf67c9c707c7c91fcc5c56a",
+      "bytes": 202
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/jigglypuff_doll.png",
+      "sha1": "db544c2c5e0856b14946c6b8c2c2c3df67bea850",
+      "bytes": 216
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/kecleon_doll.png",
+      "sha1": "7a4fdf7671a42187ce6821cb33c735adde4f6d3f",
+      "bytes": 223
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/lotad_doll.png",
+      "sha1": "f72db5c9b588bb2b3a34c7a92e313061ea5299ab",
+      "bytes": 223
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/marill_doll.png",
+      "sha1": "80a1664935b99fea073f22d7d909c75ff55d837b",
+      "bytes": 212
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/meowth_doll.png",
+      "sha1": "0a4c84e9edead013e19a6e4249258afd07638ea0",
+      "bytes": 235
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/mudkip_doll.png",
+      "sha1": "c27b0429dc27eed28681dee7ab51b087a3952c91",
+      "bytes": 212
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/pichu_doll.png",
+      "sha1": "0591bb0d80267ab7533bd0a2d3217696b9ab5f2e",
+      "bytes": 217
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/pikachu_doll.png",
+      "sha1": "91ef81bddb1184879625a9eaed900e6728b27e81",
+      "bytes": 207
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/seedot_doll.png",
+      "sha1": "7396b47cb877fec5f1a20625b9647249b1d890a3",
+      "bytes": 245
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/skitty_doll.png",
+      "sha1": "8072f480722b03998696dd75200885ecd220eab7",
+      "bytes": 209
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/smoochum_doll.png",
+      "sha1": "01b9c0c9f6dbe2bfc5a551788cd81fd95a238060",
+      "bytes": 223
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/swablu_doll.png",
+      "sha1": "6fbc2d52b35c4db70d0fc8e6aec1d21e8aa30b9c",
+      "bytes": 210
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/togepi_doll.png",
+      "sha1": "2e1ef541c9e465c26b432a6e58e66442c17f442e",
+      "bytes": 211
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/torchic_doll.png",
+      "sha1": "de91ba00355b9b05b07db6a8ddb30cab9e659cd3",
+      "bytes": 226
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/totodile_doll.png",
+      "sha1": "9470253d3a5f39729bc22072fb3ef9435c60eb4a",
+      "bytes": 217
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/treecko_doll.png",
+      "sha1": "4bc1a41fb0950e1d68c1b97dd97339d6e3da2cec",
+      "bytes": 220
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/unused_magnemite_doll.png",
+      "sha1": "82c86b99ba12bad75d1e1b4d930cbff047004c32",
+      "bytes": 210
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/unused_natu_doll.png",
+      "sha1": "17047a3584d191dd29c38d031536a2dfa99e5007",
+      "bytes": 203
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/unused_pikachu_doll.png",
+      "sha1": "13cf49adc831fab43ecce37bcef9fc95d63b6173",
+      "bytes": 218
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/unused_porygon2_doll.png",
+      "sha1": "9c2d5fa6073b93242a94b600a9cc3b19c376390a",
+      "bytes": 239
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/unused_squirtle_doll.png",
+      "sha1": "1add4705d732f57e6de210bfd3f087c1f8a989a3",
+      "bytes": 232
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/unused_wooper_doll.png",
+      "sha1": "15c482fe28759fcf0677d59e5a9fdce5ac5f181a",
+      "bytes": 218
+    },
+    {
+      "path": "graphics/object_events/pics/dolls/wynaut_doll.png",
+      "sha1": "cfeb8108805a050db9ed79cf219d48ee1625b1d8",
+      "bytes": 201
+    },
+    {
+      "path": "graphics/object_events/pics/misc/birchs_bag.png",
+      "sha1": "04edd104c612324c16cd57633621f9070fe0fd92",
+      "bytes": 221
+    },
+    {
+      "path": "graphics/object_events/pics/misc/birth_island_stone.png",
+      "sha1": "801e09c4530dbc8fe11658f8905d47baba36bec3",
+      "bytes": 211
+    },
+    {
+      "path": "graphics/object_events/pics/misc/breakable_rock.png",
+      "sha1": "44608f6cc0d22a73e0d959c164668f5788224e67",
+      "bytes": 381
+    },
+    {
+      "path": "graphics/object_events/pics/misc/cable_car.png",
+      "sha1": "9a7a0853d2ec039c84405713dd5763bc5791690a",
+      "bytes": 556
+    },
+    {
+      "path": "graphics/object_events/pics/misc/cuttable_tree.png",
+      "sha1": "e54d1ce03edb38c5e23d104cb8776cbee9a092b4",
+      "bytes": 344
+    },
+    {
+      "path": "graphics/object_events/pics/misc/fossil.png",
+      "sha1": "748a0f125dee4900085412d09a9d2c8a66c96bdf",
+      "bytes": 248
+    },
+    {
+      "path": "graphics/object_events/pics/misc/item_ball.png",
+      "sha1": "e474f3d47bc08f737a79440fe00d7b5e9ed33c02",
+      "bytes": 192
+    },
+    {
+      "path": "graphics/object_events/pics/misc/moving_box.png",
+      "sha1": "24bf72c9321fa23124dfa4c2f9a8bf0b0d7bfbfa",
+      "bytes": 193
+    },
+    {
+      "path": "graphics/object_events/pics/misc/mr_brineys_boat.png",
+      "sha1": "bdd809205de2679fc95e7f39a88e7d5372f306eb",
+      "bytes": 620
+    },
+    {
+      "path": "graphics/object_events/pics/misc/pushable_boulder.png",
+      "sha1": "7e150d6d13deb8c0db6cdd7acd0256bde82710d8",
+      "bytes": 211
+    },
+    {
+      "path": "graphics/object_events/pics/misc/ss_tidal.png",
+      "sha1": "65f026dc957b7f9fc53b66a34298c9379dba98ed",
+      "bytes": 693
+    },
+    {
+      "path": "graphics/object_events/pics/misc/statue.png",
+      "sha1": "8a0c8819f401e03044c0e7561a311cc53585f77c",
+      "bytes": 244
+    },
+    {
+      "path": "graphics/object_events/pics/misc/submarine_shadow.png",
+      "sha1": "1c750599b7b1aea7d36575236abbe1f50aa4c758",
+      "bytes": 243
+    },
+    {
+      "path": "graphics/object_events/pics/misc/truck.png",
+      "sha1": "690cd8d33bcae657edbfc664a20badb11e4ca9ad",
+      "bytes": 423
+    },
+    {
+      "path": "graphics/object_events/pics/people/artist.png",
+      "sha1": "872bb5b9c048fc08b333587620a55f445b26a53d",
+      "bytes": 674
+    },
+    {
+      "path": "graphics/object_events/pics/people/beauty.png",
+      "sha1": "9b745a75d80c4f5a1bb32a09ffb8d308308666e8",
+      "bytes": 712
+    },
+    {
+      "path": "graphics/object_events/pics/people/black_belt.png",
+      "sha1": "14b994748f153521db2f196866cdb98e6a7e3b08",
+      "bytes": 757
+    },
+    {
+      "path": "graphics/object_events/pics/people/boy_1.png",
+      "sha1": "18330e050bce5f7975b1bf39cc2b2fc3f79d880b",
+      "bytes": 674
+    },
+    {
+      "path": "graphics/object_events/pics/people/boy_2.png",
+      "sha1": "0b5d2007e22653dfe97ff57749fe4928fdb0464b",
+      "bytes": 734
+    },
+    {
+      "path": "graphics/object_events/pics/people/boy_3.png",
+      "sha1": "cff71893afc5db370a526b8c76d5607999132370",
+      "bytes": 691
+    },
+    {
+      "path": "graphics/object_events/pics/people/brendan/acro_bike.png",
+      "sha1": "7cc32289b8afa04933acaf96a6f33e2ea0f1fd9b",
+      "bytes": 2465
+    },
+    {
+      "path": "graphics/object_events/pics/people/brendan/decorating.png",
+      "sha1": "26d73c06494a2f3f1331d386e68b1dd42708d39c",
+      "bytes": 270
+    },
+    {
+      "path": "graphics/object_events/pics/people/brendan/field_move.png",
+      "sha1": "b1eb65cf9ae16beac9102a77e2e2aff17242fed0",
+      "bytes": 634
+    },
+    {
+      "path": "graphics/object_events/pics/people/brendan/fishing.png",
+      "sha1": "df392df26578a63f84f51b16b7703a0b74980b36",
+      "bytes": 1470
+    },
+    {
+      "path": "graphics/object_events/pics/people/brendan/mach_bike.png",
+      "sha1": "aa56701d113dbbb20cce0722935d8530a1b7c4b9",
+      "bytes": 1049
+    },
+    {
+      "path": "graphics/object_events/pics/people/brendan/running.png",
+      "sha1": "63e33b3754bafea350141f9fdc1cb7a7b86e5df7",
+      "bytes": 793
+    },
+    {
+      "path": "graphics/object_events/pics/people/brendan/surfing.png",
+      "sha1": "4a54c88ac606f3f4beb78f8a6c22298f19e46a1b",
+      "bytes": 768
+    },
+    {
+      "path": "graphics/object_events/pics/people/brendan/underwater.png",
+      "sha1": "961fb8ed468647c31038fa37b9cbe34be1adcbf0",
+      "bytes": 534
+    },
+    {
+      "path": "graphics/object_events/pics/people/brendan/walking.png",
+      "sha1": "2a7b8b4cda3070a2ada5e8119c506ad852df0e4e",
+      "bytes": 796
+    },
+    {
+      "path": "graphics/object_events/pics/people/brendan/watering.png",
+      "sha1": "5c4bbfa25f076aab41a321d79b1b8abc94cdf5e2",
+      "bytes": 641
+    },
+    {
+      "path": "graphics/object_events/pics/people/bug_catcher.png",
+      "sha1": "9cd5882319ad7cd013cd65bf88584f0b05549c33",
+      "bytes": 690
+    },
+    {
+      "path": "graphics/object_events/pics/people/cameraman.png",
+      "sha1": "18eaeaa89167c82f0be03361a306efbfd6e16ff8",
+      "bytes": 671
+    },
+    {
+      "path": "graphics/object_events/pics/people/camper.png",
+      "sha1": "fa4e9726407c4be697b83aa7e61c79b994d74b72",
+      "bytes": 693
+    },
+    {
+      "path": "graphics/object_events/pics/people/contest_judge.png",
+      "sha1": "4a2f40fb3bdf41236b56451f2ae9b904ea131ea5",
+      "bytes": 756
+    },
+    {
+      "path": "graphics/object_events/pics/people/cook.png",
+      "sha1": "7c904499f158c7e771ab73634f89763581e2bcaf",
+      "bytes": 466
+    },
+    {
+      "path": "graphics/object_events/pics/people/cycling_triathlete_f.png",
+      "sha1": "d5de36f9f25885b5c4cae0c5fd58fed2f5e4a5bb",
+      "bytes": 1060
+    },
+    {
+      "path": "graphics/object_events/pics/people/cycling_triathlete_m.png",
+      "sha1": "5c302926631e3990e47d3b2f06f8a2a93060d061",
+      "bytes": 1057
+    },
+    {
+      "path": "graphics/object_events/pics/people/devon_employee.png",
+      "sha1": "22029cee3b628d881cd7d5c2aa7e0e309af48361",
+      "bytes": 716
+    },
+    {
+      "path": "graphics/object_events/pics/people/elite_four/drake.png",
+      "sha1": "5d6b8f99518bd97254269b4c66c23c794b45b9c7",
+      "bytes": 458
+    },
+    {
+      "path": "graphics/object_events/pics/people/elite_four/glacia.png",
+      "sha1": "4c1bb0aba390c1ecfb0e806ccf6c7d5cc2097472",
+      "bytes": 456
+    },
+    {
+      "path": "graphics/object_events/pics/people/elite_four/phoebe.png",
+      "sha1": "a661d63e273e7abbc998a596d52a1ea1c46e05b8",
+      "bytes": 460
+    },
+    {
+      "path": "graphics/object_events/pics/people/elite_four/sidney.png",
+      "sha1": "f6fac20d0f99983af69d65498c12e6bc5fadce97",
+      "bytes": 442
+    },
+    {
+      "path": "graphics/object_events/pics/people/expert_f.png",
+      "sha1": "b36856a45732c2d74ac13e4079ecbb1d74751ab2",
+      "bytes": 602
+    },
+    {
+      "path": "graphics/object_events/pics/people/expert_m.png",
+      "sha1": "37a15487055cff70afdc3a1558f5fa501359723d",
+      "bytes": 657
+    },
+    {
+      "path": "graphics/object_events/pics/people/fat_man.png",
+      "sha1": "45aec3334c38a657e4a1e0eaeb2e8adc609a01a5",
+      "bytes": 668
+    },
+    {
+      "path": "graphics/object_events/pics/people/fisherman.png",
+      "sha1": "89fe3a44a1e71e31b11414998f0cf6fed718fa30",
+      "bytes": 771
+    },
+    {
+      "path": "graphics/object_events/pics/people/frontier_brains/anabel.png",
+      "sha1": "d6257a371613c313796d237f000021d0ae23face",
+      "bytes": 709
+    },
+    {
+      "path": "graphics/object_events/pics/people/frontier_brains/brandon.png",
+      "sha1": "8afebcc3c3aa728886e2bc03f255d4a48b4ea3bc",
+      "bytes": 717
+    },
+    {
+      "path": "graphics/object_events/pics/people/frontier_brains/greta.png",
+      "sha1": "68eb4887bddaa6368ae37e90b7586fb82ee184cf",
+      "bytes": 737
+    },
+    {
+      "path": "graphics/object_events/pics/people/frontier_brains/lucy.png",
+      "sha1": "bf5a09c577c8c85004b6ceab0d0800c7c7e78863",
+      "bytes": 680
+    },
+    {
+      "path": "graphics/object_events/pics/people/frontier_brains/noland.png",
+      "sha1": "2db40101307153c69983577af7361021e279dfaa",
+      "bytes": 702
+    },
+    {
+      "path": "graphics/object_events/pics/people/frontier_brains/spenser.png",
+      "sha1": "a184b5b6078baeba64d9daecdd181a0931bfcc5b",
+      "bytes": 663
+    },
+    {
+      "path": "graphics/object_events/pics/people/frontier_brains/tucker.png",
+      "sha1": "caf2845332a8aa11607787425c2f9e0911b9e7d5",
+      "bytes": 785
+    },
+    {
+      "path": "graphics/object_events/pics/people/gameboy_kid.png",
+      "sha1": "4f47e71bef140797a4ff1dd3345d19a2018044e4",
+      "bytes": 401
+    },
+    {
+      "path": "graphics/object_events/pics/people/gentleman.png",
+      "sha1": "9be658f63f9195f0b0c2fcf5b4bd79c7dcd0c81c",
+      "bytes": 745
+    },
+    {
+      "path": "graphics/object_events/pics/people/girl_1.png",
+      "sha1": "444ce88a0e12b8851e00d4780b88aa0d327ba6db",
+      "bytes": 709
+    },
+    {
+      "path": "graphics/object_events/pics/people/girl_2.png",
+      "sha1": "44fa7f121164da81ff164054663e651e3e2c0724",
+      "bytes": 710
+    },
+    {
+      "path": "graphics/object_events/pics/people/girl_3.png",
+      "sha1": "5ced4472b93cb101be13ed979c8d4501dd54668a",
+      "bytes": 780
+    },
+    {
+      "path": "graphics/object_events/pics/people/gym_leaders/brawly.png",
+      "sha1": "71fe55dd812f0d288c6c7c69523047ab127b6bf6",
+      "bytes": 450
+    },
+    {
+      "path": "graphics/object_events/pics/people/gym_leaders/flannery.png",
+      "sha1": "b635919c96683b5389cef15cbce6c7b1859493dc",
+      "bytes": 489
+    },
+    {
+      "path": "graphics/object_events/pics/people/gym_leaders/juan.png",
+      "sha1": "c696aa7aab3a432f35d3f536bff0130ede43a7bb",
+      "bytes": 676
+    },
+    {
+      "path": "graphics/object_events/pics/people/gym_leaders/liza.png",
+      "sha1": "5c4ccbe9bf7e0b6f36e687c58c7933bc24cd2c26",
+      "bytes": 426
+    },
+    {
+      "path": "graphics/object_events/pics/people/gym_leaders/norman.png",
+      "sha1": "28d40d7b9f2d6361074daf908a45617d71c7e9a0",
+      "bytes": 710
+    },
+    {
+      "path": "graphics/object_events/pics/people/gym_leaders/roxanne.png",
+      "sha1": "7ee492914d4520df6b002b9a3e19aa38624060b5",
+      "bytes": 472
+    },
+    {
+      "path": "graphics/object_events/pics/people/gym_leaders/tate.png",
+      "sha1": "6bffbd705ce19d40296d91a87d833235dba25676",
+      "bytes": 424
+    },
+    {
+      "path": "graphics/object_events/pics/people/gym_leaders/wattson.png",
+      "sha1": "3aa6076b5acbd9d6c574ed69e149671a9c7c6509",
+      "bytes": 483
+    },
+    {
+      "path": "graphics/object_events/pics/people/gym_leaders/winona.png",
+      "sha1": "44c821331406ee94cd541b3f8f917ea46c76818c",
+      "bytes": 461
+    },
+    {
+      "path": "graphics/object_events/pics/people/hex_maniac.png",
+      "sha1": "ebec900e48830328c5f847cc73e780cbead2bf00",
+      "bytes": 674
+    },
+    {
+      "path": "graphics/object_events/pics/people/hiker.png",
+      "sha1": "bf95d1399031f64d036813dadf6d3e2e7b012b62",
+      "bytes": 705
+    },
+    {
+      "path": "graphics/object_events/pics/people/hot_springs_old_woman.png",
+      "sha1": "82a2449b339ac85323a639423b21c985dd309747",
+      "bytes": 393
+    },
+    {
+      "path": "graphics/object_events/pics/people/lass.png",
+      "sha1": "fa52999db2792df7945925d110e6729262878428",
+      "bytes": 716
+    },
+    {
+      "path": "graphics/object_events/pics/people/leaf.png",
+      "sha1": "4846a55fbb75c6ce80fc1ccee989ebba576f88fa",
+      "bytes": 777
+    },
+    {
+      "path": "graphics/object_events/pics/people/link_receptionist.png",
+      "sha1": "d3bccaf636d108ed0fef9ff4a1acd871632997c6",
+      "bytes": 709
+    },
+    {
+      "path": "graphics/object_events/pics/people/little_boy.png",
+      "sha1": "ef8898afe1c211831879377629de4c8716d76b07",
+      "bytes": 442
+    },
+    {
+      "path": "graphics/object_events/pics/people/little_girl.png",
+      "sha1": "cac9e59f4388609047332ba9e587287351ccae9d",
+      "bytes": 478
+    },
+    {
+      "path": "graphics/object_events/pics/people/man_1.png",
+      "sha1": "fb0461d2410c934d7c18f847581e9138cfc0d7bb",
+      "bytes": 727
+    },
+    {
+      "path": "graphics/object_events/pics/people/man_2.png",
+      "sha1": "fdd414dd4752af10d0ef71553b4142b1ad35b61a",
+      "bytes": 716
+    },
+    {
+      "path": "graphics/object_events/pics/people/man_3.png",
+      "sha1": "934f9c8c633dca73f88369f3992fac34e53833ea",
+      "bytes": 742
+    },
+    {
+      "path": "graphics/object_events/pics/people/man_4.png",
+      "sha1": "0be9eca2556b3ac2e316ca5b9bea11ad587c3687",
+      "bytes": 704
+    },
+    {
+      "path": "graphics/object_events/pics/people/man_5.png",
+      "sha1": "2f962ea4ffe8dce5a2a3b771271f1ef5cd1fc0b5",
+      "bytes": 741
+    },
+    {
+      "path": "graphics/object_events/pics/people/maniac.png",
+      "sha1": "d4ff19a6efe9b58942f29a706479448eda87106a",
+      "bytes": 664
+    },
+    {
+      "path": "graphics/object_events/pics/people/mart_employee.png",
+      "sha1": "d566ea89199aebedcac03e5306d52f246bc826f8",
+      "bytes": 775
+    },
+    {
+      "path": "graphics/object_events/pics/people/mauville_old_man_1.png",
+      "sha1": "42fef839b6d311ad8433bf98c0613d64255aae69",
+      "bytes": 720
+    },
+    {
+      "path": "graphics/object_events/pics/people/mauville_old_man_2.png",
+      "sha1": "93796002e817eafa47965dca70250ab38776d1b1",
+      "bytes": 723
+    },
+    {
+      "path": "graphics/object_events/pics/people/may/acro_bike.png",
+      "sha1": "d4780bc4ded2cf9ef2d17d7775e646cca753af72",
+      "bytes": 2513
+    },
+    {
+      "path": "graphics/object_events/pics/people/may/decorating.png",
+      "sha1": "a196e209d1f777832292155280e72131de47a181",
+      "bytes": 266
+    },
+    {
+      "path": "graphics/object_events/pics/people/may/field_move.png",
+      "sha1": "f234f1f67e69282a32608bef536f0c69f4d5e6e2",
+      "bytes": 702
+    },
+    {
+      "path": "graphics/object_events/pics/people/may/fishing.png",
+      "sha1": "3fde1b8d0abf6c595c512919b934f41099140edb",
+      "bytes": 1524
+    },
+    {
+      "path": "graphics/object_events/pics/people/may/mach_bike.png",
+      "sha1": "7c58c5ed68a6a10d099fb69c9613d5c11ff5710f",
+      "bytes": 1106
+    },
+    {
+      "path": "graphics/object_events/pics/people/may/running.png",
+      "sha1": "fa3d481ac264f3144ee226c4f79399bde22403af",
+      "bytes": 848
+    },
+    {
+      "path": "graphics/object_events/pics/people/may/surfing.png",
+      "sha1": "96432a707137ff2f95e420c3cbbd21f2afdc7929",
+      "bytes": 758
+    },
+    {
+      "path": "graphics/object_events/pics/people/may/underwater.png",
+      "sha1": "b1eaec8091e8fb9aec8b160a22fbbaaafb2b5c72",
+      "bytes": 572
+    },
+    {
+      "path": "graphics/object_events/pics/people/may/walking.png",
+      "sha1": "68387dc9d75cd4c12e2e55a7a13e830207c6e73c",
+      "bytes": 771
+    },
+    {
+      "path": "graphics/object_events/pics/people/may/watering.png",
+      "sha1": "caa4f28217c94c66e3959599fb55270df10040b2",
+      "bytes": 659
+    },
+    {
+      "path": "graphics/object_events/pics/people/mom.png",
+      "sha1": "57cf4a1318df5d5b452ee0a010f000f02d10d668",
+      "bytes": 691
+    },
+    {
+      "path": "graphics/object_events/pics/people/mystery_event_deliveryman.png",
+      "sha1": "8eaa2ea8ef92f04085d2fa4e090e59f81741d8c0",
+      "bytes": 414
+    },
+    {
+      "path": "graphics/object_events/pics/people/ninja_boy.png",
+      "sha1": "13e7d54815ad614d43a167bc4b8d92175d07e302",
+      "bytes": 446
+    },
+    {
+      "path": "graphics/object_events/pics/people/nurse.png",
+      "sha1": "3aae2b54c360d131670edd818a8d03867823b427",
+      "bytes": 595
+    },
+    {
+      "path": "graphics/object_events/pics/people/old_man.png",
+      "sha1": "458d53bdaa92e1c0513d1f7afcafa8ba92e9ddfa",
+      "bytes": 469
+    },
+    {
+      "path": "graphics/object_events/pics/people/old_woman.png",
+      "sha1": "0b6f466c3eb7a805575f84589e683e87cef9fc55",
+      "bytes": 638
+    },
+    {
+      "path": "graphics/object_events/pics/people/picnicker.png",
+      "sha1": "b4b1541327ee7eaf99e828c09580a95e49c42535",
+      "bytes": 758
+    },
+    {
+      "path": "graphics/object_events/pics/people/pokefan_f.png",
+      "sha1": "f7bbb527ee07968f3310f0375983ca4674510c69",
+      "bytes": 756
+    },
+    {
+      "path": "graphics/object_events/pics/people/pokefan_m.png",
+      "sha1": "dcd805d4ea71e689d4f8d484341305719f7da0b5",
+      "bytes": 784
+    },
+    {
+      "path": "graphics/object_events/pics/people/prof_birch.png",
+      "sha1": "669acd77e6c08248794d620c5edc891a00c21614",
+      "bytes": 770
+    },
+    {
+      "path": "graphics/object_events/pics/people/psychic_m.png",
+      "sha1": "92d91220e3bb7759ac427ee1a7c68d2457ecd4b5",
+      "bytes": 734
+    },
+    {
+      "path": "graphics/object_events/pics/people/quinty_plump.png",
+      "sha1": "fe72ee8798c0f7047b5f8f2ac020aa519cb3d4b0",
+      "bytes": 1314
+    },
+    {
+      "path": "graphics/object_events/pics/people/red.png",
+      "sha1": "929c907ce1598814ed9368276a331993495a1c75",
+      "bytes": 731
+    },
+    {
+      "path": "graphics/object_events/pics/people/reporter_f.png",
+      "sha1": "caaddbe1a894a0ab9a9a2b8dc86a86607aaf0a12",
+      "bytes": 664
+    },
+    {
+      "path": "graphics/object_events/pics/people/reporter_m.png",
+      "sha1": "2fa9bdb5f6f91e061ddc5dbba5961fc15d9e4700",
+      "bytes": 724
+    },
+    {
+      "path": "graphics/object_events/pics/people/rich_boy.png",
+      "sha1": "ea9d2c3aee2b91a43844017a98bf0117e9885cad",
+      "bytes": 759
+    },
+    {
+      "path": "graphics/object_events/pics/people/rooftop_sale_woman.png",
+      "sha1": "0fa15fc32b2fe2bb76e477013c7aa8104de4d2b8",
+      "bytes": 750
+    },
+    {
+      "path": "graphics/object_events/pics/people/rs_little_boy.png",
+      "sha1": "260b369262851a732107e82dbe1053083d45b3b2",
+      "bytes": 449
+    },
+    {
+      "path": "graphics/object_events/pics/people/ruby_sapphire_brendan/running.png",
+      "sha1": "3fe5c67820217acb35ec6cf91092541cd1f48419",
+      "bytes": 783
+    },
+    {
+      "path": "graphics/object_events/pics/people/ruby_sapphire_brendan/walking.png",
+      "sha1": "a7e231b916738753d19c89f70e8d98ab616555ba",
+      "bytes": 783
+    },
+    {
+      "path": "graphics/object_events/pics/people/ruby_sapphire_may/running.png",
+      "sha1": "086ea00a8f69fa46269ab181fa871391610b6c52",
+      "bytes": 846
+    },
+    {
+      "path": "graphics/object_events/pics/people/ruby_sapphire_may/walking.png",
+      "sha1": "80b51694875555d87840c217d86ff160aa9fa1f4",
+      "bytes": 745
+    },
+    {
+      "path": "graphics/object_events/pics/people/running_triathlete_f.png",
+      "sha1": "680ddb56a1fb0e11f29c0ddab4ee2845803ed0e2",
+      "bytes": 738
+    },
+    {
+      "path": "graphics/object_events/pics/people/running_triathlete_m.png",
+      "sha1": "2d93f651b0708a2841ac5286f4f76d84d48a885d",
+      "bytes": 761
+    },
+    {
+      "path": "graphics/object_events/pics/people/sailor.png",
+      "sha1": "1074d47b06e0ff216ba7d2631a624c7408d42523",
+      "bytes": 664
+    },
+    {
+      "path": "graphics/object_events/pics/people/school_kid_m.png",
+      "sha1": "50d583e3e01db734aba58f273b57265079660f9d",
+      "bytes": 710
+    },
+    {
+      "path": "graphics/object_events/pics/people/scientist_1.png",
+      "sha1": "727e6b2a9a88eb091b3bca7f3eb4d519b11c1e68",
+      "bytes": 683
+    },
+    {
+      "path": "graphics/object_events/pics/people/scientist_2.png",
+      "sha1": "d30164a0e34e0a24bf2d9356e8ab49524a0b4464",
+      "bytes": 688
+    },
+    {
+      "path": "graphics/object_events/pics/people/scott.png",
+      "sha1": "525fb276f0bf726de32a7821325c6675d74dc183",
+      "bytes": 776
+    },
+    {
+      "path": "graphics/object_events/pics/people/steven.png",
+      "sha1": "3fc77cc7f7414f25da0ec89158174bfcba06c053",
+      "bytes": 704
+    },
+    {
+      "path": "graphics/object_events/pics/people/swimmer_f.png",
+      "sha1": "dc278fc0e93f76eff5f4c630bfb73cd3c8128227",
+      "bytes": 540
+    },
+    {
+      "path": "graphics/object_events/pics/people/swimmer_m.png",
+      "sha1": "2c8d00ea34d0d61fb6dd876cf4a47cf1dbdb9bed",
+      "bytes": 533
+    },
+    {
+      "path": "graphics/object_events/pics/people/teala.png",
+      "sha1": "54041de0688901d272269054c2c4c3b454639879",
+      "bytes": 641
+    },
+    {
+      "path": "graphics/object_events/pics/people/team_aqua/aqua_member_f.png",
+      "sha1": "1e204ec77c3031832fbd8eb2da58baf7030cf359",
+      "bytes": 698
+    },
+    {
+      "path": "graphics/object_events/pics/people/team_aqua/aqua_member_m.png",
+      "sha1": "7c899fba9461dcb07c901e41c8881b69aa43881c",
+      "bytes": 735
+    },
+    {
+      "path": "graphics/object_events/pics/people/team_aqua/archie.png",
+      "sha1": "4a4234899e6169a64f59f3c49eae7dcf4d44b29c",
+      "bytes": 576
+    },
+    {
+      "path": "graphics/object_events/pics/people/team_magma/magma_member_f.png",
+      "sha1": "301729ad0aa5f678a7957e4ef88bacf504e7f7df",
+      "bytes": 687
+    },
+    {
+      "path": "graphics/object_events/pics/people/team_magma/magma_member_m.png",
+      "sha1": "47e5eb6cab13b58a63a0a2f6b9f38c0423b2ca6a",
+      "bytes": 703
+    },
+    {
+      "path": "graphics/object_events/pics/people/team_magma/maxie.png",
+      "sha1": "900446be5f33d0030c0079674ee0d2644642762d",
+      "bytes": 632
+    },
+    {
+      "path": "graphics/object_events/pics/people/tuber_f.png",
+      "sha1": "608c0b94c5a5bcea91ba9ad4ba307a8ea7044c8c",
+      "bytes": 486
+    },
+    {
+      "path": "graphics/object_events/pics/people/tuber_m.png",
+      "sha1": "466f4780eee681a7e2de6b2f04483cc6344de1d6",
+      "bytes": 410
+    },
+    {
+      "path": "graphics/object_events/pics/people/tuber_m_swimming.png",
+      "sha1": "2dc65bfcdcd8e07b1325193837bc19015c467a58",
+      "bytes": 414
+    },
+    {
+      "path": "graphics/object_events/pics/people/twin.png",
+      "sha1": "8335fbfea59cf262d37273c50731797360c0edae",
+      "bytes": 496
+    },
+    {
+      "path": "graphics/object_events/pics/people/union_room_attendant.png",
+      "sha1": "5074d0186cf7146b3ea5a11ab5d34a955a7c75e1",
+      "bytes": 450
+    },
+    {
+      "path": "graphics/object_events/pics/people/unused_woman.png",
+      "sha1": "a7b6c75309c5ff837aaa082274e2822e31c9ce83",
+      "bytes": 710
+    },
+    {
+      "path": "graphics/object_events/pics/people/wallace.png",
+      "sha1": "deb06efce0660fcef9bb8d47de72ddb9a943070e",
+      "bytes": 795
+    },
+    {
+      "path": "graphics/object_events/pics/people/wally.png",
+      "sha1": "e7d75242c85c8f10009a334dffee5cf01ca99e31",
+      "bytes": 700
+    },
+    {
+      "path": "graphics/object_events/pics/people/woman_1.png",
+      "sha1": "5b2cd0fc1699f23e1a0b51da0cdaf4777056ee85",
+      "bytes": 767
+    },
+    {
+      "path": "graphics/object_events/pics/people/woman_2.png",
+      "sha1": "656be2c385f761e635dddf42fcc445da8249e62f",
+      "bytes": 774
+    },
+    {
+      "path": "graphics/object_events/pics/people/woman_3.png",
+      "sha1": "f18eadba7890a8b1ca8d2113a8c909a0dca2b4e5",
+      "bytes": 701
+    },
+    {
+      "path": "graphics/object_events/pics/people/woman_4.png",
+      "sha1": "c69d61f1d00b9fb5e3e30e2fea25cd70422b9e62",
+      "bytes": 736
+    },
+    {
+      "path": "graphics/object_events/pics/people/woman_5.png",
+      "sha1": "01dedce44d120ef097c9d7b5b26b395f78706c8c",
+      "bytes": 830
+    },
+    {
+      "path": "graphics/object_events/pics/people/youngster.png",
+      "sha1": "cbf8ef200fde51216b454e5a0f22298f0ac101b8",
+      "bytes": 674
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/azumarill.png",
+      "sha1": "e92e261551aaf5e65cff0835a745f2d795b2a155",
+      "bytes": 325
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/azurill.png",
+      "sha1": "859720fd5c907b5de3ee7d9c9179707306552aa5",
+      "bytes": 308
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/deoxys.png",
+      "sha1": "7ce0638505fff1ca367e4ce8d09400b378faecc2",
+      "bytes": 547
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/dusclops.png",
+      "sha1": "d02ad3adc57e7248ea8568b5984357f8eaa7ccb3",
+      "bytes": 640
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/enemy_zigzagoon.png",
+      "sha1": "b972e9a4cb24e6f96632256256b419cc661c044f",
+      "bytes": 726
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/groudon.png",
+      "sha1": "b64644c1ab1b1393fbc0292959896b339df4b1d7",
+      "bytes": 1052
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/ho_oh.png",
+      "sha1": "9ae8ce26af0b27b3387d473bfee01f401830233c",
+      "bytes": 529
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/kecleon.png",
+      "sha1": "f333ed0674f4a1192b6d77d51be43e1ebe2a0fb8",
+      "bytes": 345
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/kirlia.png",
+      "sha1": "53c0cf668e977a71ff065f262014678ea3dd99bc",
+      "bytes": 469
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/kyogre.png",
+      "sha1": "041ac33060af5a852f3fc34ec2254ec67cfdcadd",
+      "bytes": 1037
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/latias_latios.png",
+      "sha1": "68d5bbb950b26fcddb71306b140160eb06bab9cc",
+      "bytes": 573
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/lugia.png",
+      "sha1": "27bd326f48dba7fced97986e50b4880b0df6f8f3",
+      "bytes": 410
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/mew.png",
+      "sha1": "1e3ff152ab123e19a1dee59a67040f176ee82d81",
+      "bytes": 801
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/pikachu.png",
+      "sha1": "b56f2c851e62df84f25bf324b31035b12a68c2d7",
+      "bytes": 335
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/poochyena.png",
+      "sha1": "8659428ce8b43c1c9f51cd96b8d166bf6adcf1a1",
+      "bytes": 674
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/rayquaza.png",
+      "sha1": "a3bf84f467f48b960f4000491b2071dfef7678ec",
+      "bytes": 1391
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/rayquaza_still.png",
+      "sha1": "26ebb2ece722f872067c4bb4d67a57f17967dc21",
+      "bytes": 525
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/regi.png",
+      "sha1": "5c5174680da6e09534ed113b6d87f42a0bf44be3",
+      "bytes": 373
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/skitty.png",
+      "sha1": "5b27498a43cbb5ba8f9e48282034c9ea9dc4921c",
+      "bytes": 332
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/sudowoodo.png",
+      "sha1": "d1dbb869c584b75ba5a49c537c14570caf8b96a6",
+      "bytes": 335
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/vigoroth.png",
+      "sha1": "8591febeb439af92563ee295723b2dd9e07fba72",
+      "bytes": 980
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/wingull.png",
+      "sha1": "7f333d6be5b621bb540a33b40885f5a6bf1cc58f",
+      "bytes": 354
+    },
+    {
+      "path": "graphics/object_events/pics/pokemon/zigzagoon.png",
+      "sha1": "a1de74496e1442bcbd99c7fc544d5e682e51061d",
+      "bytes": 299
+    },
+    {
+      "path": "include/constants/event_objects.h",
+      "sha1": "836d859b71b778311e9dfd7bd3f7f81a0ddccb80",
+      "bytes": 16128
+    },
+    {
+      "path": "src/data/object_events/base_oam.h",
+      "sha1": "75f785187fad60edc877d5048604cc4f6b770aa9",
+      "bytes": 1099
+    },
+    {
+      "path": "src/data/object_events/berry_tree_graphics_tables.h",
+      "sha1": "917395d40ee1d4ecfed401d55d90d4bf167a494d",
+      "bytes": 32119
+    },
+    {
+      "path": "src/data/object_events/movement_action_func_tables.h",
+      "sha1": "213a5b45d42eac8d8854da79894ec22ebd5881dc",
+      "bytes": 82889
+    },
+    {
+      "path": "src/data/object_events/movement_type_func_tables.h",
+      "sha1": "064a7ef99c4af615a618c6bee064211375c97cfa",
+      "bytes": 16979
+    },
+    {
+      "path": "src/data/object_events/object_event_anims.h",
+      "sha1": "e971ec69be2577e87e0fd71ca66baba89a47d012",
+      "bytes": 32804
+    },
+    {
+      "path": "src/data/object_events/object_event_graphics.h",
+      "sha1": "09defa0ff3081cdfe0dc931b1fa3f12fff23ade5",
+      "bytes": 45294
+    },
+    {
+      "path": "src/data/object_events/object_event_graphics_info.h",
+      "sha1": "6e39355ad5f42a055e0a4aba39fadac078dcb7cf",
+      "bytes": 150763
+    },
+    {
+      "path": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "sha1": "77fa348a5d882f94e478f2c7b9ed44de4de80ba1",
+      "bytes": 41033
+    },
+    {
+      "path": "src/data/object_events/object_event_pic_tables.h",
+      "sha1": "4026ece106fdf470b54ebf7d7728ba8377f2d7da",
+      "bytes": 100612
+    },
+    {
+      "path": "src/data/object_events/object_event_subsprites.h",
+      "sha1": "444298c58c6d2f40df3ffdf809dd4161e243aa0e",
+      "bytes": 33503
+    }
+  ]
+}

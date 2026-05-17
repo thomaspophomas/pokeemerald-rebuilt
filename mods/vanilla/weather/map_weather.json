@@ -1,0 +1,2604 @@
+{
+  "domain": "weather",
+  "schemaVersion": 1,
+  "mapWeather": [
+    {
+      "map": "AbandonedShip_CaptainsOffice",
+      "mapId": "MAP_ABANDONED_SHIP_CAPTAINS_OFFICE",
+      "weather": "WEATHER_SHADE"
+    },
+    {
+      "map": "AbandonedShip_Corridors_1F",
+      "mapId": "MAP_ABANDONED_SHIP_CORRIDORS_1F",
+      "weather": "WEATHER_SHADE"
+    },
+    {
+      "map": "AbandonedShip_Corridors_B1F",
+      "mapId": "MAP_ABANDONED_SHIP_CORRIDORS_B1F",
+      "weather": "WEATHER_SHADE"
+    },
+    {
+      "map": "AbandonedShip_Deck",
+      "mapId": "MAP_ABANDONED_SHIP_DECK",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "AbandonedShip_HiddenFloorCorridors",
+      "mapId": "MAP_ABANDONED_SHIP_HIDDEN_FLOOR_CORRIDORS",
+      "weather": "WEATHER_SHADE"
+    },
+    {
+      "map": "AbandonedShip_HiddenFloorRooms",
+      "mapId": "MAP_ABANDONED_SHIP_HIDDEN_FLOOR_ROOMS",
+      "weather": "WEATHER_SHADE"
+    },
+    {
+      "map": "AbandonedShip_Room_B1F",
+      "mapId": "MAP_ABANDONED_SHIP_ROOM_B1F",
+      "weather": "WEATHER_SHADE"
+    },
+    {
+      "map": "AbandonedShip_Rooms2_1F",
+      "mapId": "MAP_ABANDONED_SHIP_ROOMS2_1F",
+      "weather": "WEATHER_SHADE"
+    },
+    {
+      "map": "AbandonedShip_Rooms2_B1F",
+      "mapId": "MAP_ABANDONED_SHIP_ROOMS2_B1F",
+      "weather": "WEATHER_SHADE"
+    },
+    {
+      "map": "AbandonedShip_Rooms_1F",
+      "mapId": "MAP_ABANDONED_SHIP_ROOMS_1F",
+      "weather": "WEATHER_SHADE"
+    },
+    {
+      "map": "AbandonedShip_Rooms_B1F",
+      "mapId": "MAP_ABANDONED_SHIP_ROOMS_B1F",
+      "weather": "WEATHER_SHADE"
+    },
+    {
+      "map": "AbandonedShip_Underwater1",
+      "mapId": "MAP_ABANDONED_SHIP_UNDERWATER1",
+      "weather": "WEATHER_UNDERWATER_BUBBLES"
+    },
+    {
+      "map": "AbandonedShip_Underwater2",
+      "mapId": "MAP_ABANDONED_SHIP_UNDERWATER2",
+      "weather": "WEATHER_UNDERWATER_BUBBLES"
+    },
+    {
+      "map": "AlteringCave",
+      "mapId": "MAP_ALTERING_CAVE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "AncientTomb",
+      "mapId": "MAP_ANCIENT_TOMB",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "AquaHideout_1F",
+      "mapId": "MAP_AQUA_HIDEOUT_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "AquaHideout_B1F",
+      "mapId": "MAP_AQUA_HIDEOUT_B1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "AquaHideout_B2F",
+      "mapId": "MAP_AQUA_HIDEOUT_B2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "AquaHideout_UnusedRubyMap1",
+      "mapId": "MAP_AQUA_HIDEOUT_UNUSED_RUBY_MAP1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "AquaHideout_UnusedRubyMap2",
+      "mapId": "MAP_AQUA_HIDEOUT_UNUSED_RUBY_MAP2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "AquaHideout_UnusedRubyMap3",
+      "mapId": "MAP_AQUA_HIDEOUT_UNUSED_RUBY_MAP3",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "ArtisanCave_1F",
+      "mapId": "MAP_ARTISAN_CAVE_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "ArtisanCave_B1F",
+      "mapId": "MAP_ARTISAN_CAVE_B1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleColosseum_2P",
+      "mapId": "MAP_BATTLE_COLOSSEUM_2P",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleColosseum_4P",
+      "mapId": "MAP_BATTLE_COLOSSEUM_4P",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattleArenaBattleRoom",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_ARENA_BATTLE_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattleArenaCorridor",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_ARENA_CORRIDOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattleArenaLobby",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_ARENA_LOBBY",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattleDomeBattleRoom",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_DOME_BATTLE_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattleDomeCorridor",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_DOME_CORRIDOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattleDomeLobby",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_DOME_LOBBY",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattleDomePreBattleRoom",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_DOME_PRE_BATTLE_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattleFactoryBattleRoom",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_FACTORY_BATTLE_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattleFactoryLobby",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_FACTORY_LOBBY",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattleFactoryPreBattleRoom",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_FACTORY_PRE_BATTLE_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattlePalaceBattleRoom",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PALACE_BATTLE_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattlePalaceCorridor",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PALACE_CORRIDOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattlePalaceLobby",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PALACE_LOBBY",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattlePikeCorridor",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PIKE_CORRIDOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattlePikeLobby",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PIKE_LOBBY",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattlePikeRoomFinal",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_FINAL",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattlePikeRoomNormal",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_NORMAL",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattlePikeRoomWildMons",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_WILD_MONS",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattlePikeThreePathRoom",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PIKE_THREE_PATH_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattlePyramidFloor",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_FLOOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattlePyramidLobby",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_LOBBY",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattlePyramidTop",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_TOP",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattleTowerBattleRoom",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_BATTLE_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattleTowerCorridor",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_CORRIDOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattleTowerElevator",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_ELEVATOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattleTowerLobby",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_LOBBY",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattleTowerMultiBattleRoom",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_BATTLE_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattleTowerMultiCorridor",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_CORRIDOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_BattleTowerMultiPartnerRoom",
+      "mapId": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_PARTNER_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_ExchangeServiceCorner",
+      "mapId": "MAP_BATTLE_FRONTIER_EXCHANGE_SERVICE_CORNER",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_Lounge1",
+      "mapId": "MAP_BATTLE_FRONTIER_LOUNGE1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_Lounge2",
+      "mapId": "MAP_BATTLE_FRONTIER_LOUNGE2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_Lounge3",
+      "mapId": "MAP_BATTLE_FRONTIER_LOUNGE3",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_Lounge4",
+      "mapId": "MAP_BATTLE_FRONTIER_LOUNGE4",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_Lounge5",
+      "mapId": "MAP_BATTLE_FRONTIER_LOUNGE5",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_Lounge6",
+      "mapId": "MAP_BATTLE_FRONTIER_LOUNGE6",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_Lounge7",
+      "mapId": "MAP_BATTLE_FRONTIER_LOUNGE7",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_Lounge8",
+      "mapId": "MAP_BATTLE_FRONTIER_LOUNGE8",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_Lounge9",
+      "mapId": "MAP_BATTLE_FRONTIER_LOUNGE9",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_Mart",
+      "mapId": "MAP_BATTLE_FRONTIER_MART",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_OutsideEast",
+      "mapId": "MAP_BATTLE_FRONTIER_OUTSIDE_EAST",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_OutsideWest",
+      "mapId": "MAP_BATTLE_FRONTIER_OUTSIDE_WEST",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_PokemonCenter_1F",
+      "mapId": "MAP_BATTLE_FRONTIER_POKEMON_CENTER_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_PokemonCenter_2F",
+      "mapId": "MAP_BATTLE_FRONTIER_POKEMON_CENTER_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_RankingHall",
+      "mapId": "MAP_BATTLE_FRONTIER_RANKING_HALL",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_ReceptionGate",
+      "mapId": "MAP_BATTLE_FRONTIER_RECEPTION_GATE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattleFrontier_ScottsHouse",
+      "mapId": "MAP_BATTLE_FRONTIER_SCOTTS_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattlePyramidSquare01",
+      "mapId": "MAP_BATTLE_PYRAMID_SQUARE01",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattlePyramidSquare02",
+      "mapId": "MAP_BATTLE_PYRAMID_SQUARE02",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattlePyramidSquare03",
+      "mapId": "MAP_BATTLE_PYRAMID_SQUARE03",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattlePyramidSquare04",
+      "mapId": "MAP_BATTLE_PYRAMID_SQUARE04",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattlePyramidSquare05",
+      "mapId": "MAP_BATTLE_PYRAMID_SQUARE05",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattlePyramidSquare06",
+      "mapId": "MAP_BATTLE_PYRAMID_SQUARE06",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattlePyramidSquare07",
+      "mapId": "MAP_BATTLE_PYRAMID_SQUARE07",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattlePyramidSquare08",
+      "mapId": "MAP_BATTLE_PYRAMID_SQUARE08",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattlePyramidSquare09",
+      "mapId": "MAP_BATTLE_PYRAMID_SQUARE09",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattlePyramidSquare10",
+      "mapId": "MAP_BATTLE_PYRAMID_SQUARE10",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattlePyramidSquare11",
+      "mapId": "MAP_BATTLE_PYRAMID_SQUARE11",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattlePyramidSquare12",
+      "mapId": "MAP_BATTLE_PYRAMID_SQUARE12",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattlePyramidSquare13",
+      "mapId": "MAP_BATTLE_PYRAMID_SQUARE13",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattlePyramidSquare14",
+      "mapId": "MAP_BATTLE_PYRAMID_SQUARE14",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattlePyramidSquare15",
+      "mapId": "MAP_BATTLE_PYRAMID_SQUARE15",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BattlePyramidSquare16",
+      "mapId": "MAP_BATTLE_PYRAMID_SQUARE16",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BirthIsland_Exterior",
+      "mapId": "MAP_BIRTH_ISLAND_EXTERIOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "BirthIsland_Harbor",
+      "mapId": "MAP_BIRTH_ISLAND_HARBOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "CaveOfOrigin_1F",
+      "mapId": "MAP_CAVE_OF_ORIGIN_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "CaveOfOrigin_B1F",
+      "mapId": "MAP_CAVE_OF_ORIGIN_B1F",
+      "weather": "WEATHER_FOG_HORIZONTAL"
+    },
+    {
+      "map": "CaveOfOrigin_Entrance",
+      "mapId": "MAP_CAVE_OF_ORIGIN_ENTRANCE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "CaveOfOrigin_UnusedRubySapphireMap1",
+      "mapId": "MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "CaveOfOrigin_UnusedRubySapphireMap2",
+      "mapId": "MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP2",
+      "weather": "WEATHER_FOG_HORIZONTAL"
+    },
+    {
+      "map": "CaveOfOrigin_UnusedRubySapphireMap3",
+      "mapId": "MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP3",
+      "weather": "WEATHER_FOG_HORIZONTAL"
+    },
+    {
+      "map": "ContestHall",
+      "mapId": "MAP_CONTEST_HALL",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "ContestHallBeauty",
+      "mapId": "MAP_CONTEST_HALL_BEAUTY",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "ContestHallCool",
+      "mapId": "MAP_CONTEST_HALL_COOL",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "ContestHallCute",
+      "mapId": "MAP_CONTEST_HALL_CUTE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "ContestHallSmart",
+      "mapId": "MAP_CONTEST_HALL_SMART",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "ContestHallTough",
+      "mapId": "MAP_CONTEST_HALL_TOUGH",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "DesertRuins",
+      "mapId": "MAP_DESERT_RUINS",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "DesertUnderpass",
+      "mapId": "MAP_DESERT_UNDERPASS",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "DewfordTown",
+      "mapId": "MAP_DEWFORD_TOWN",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "DewfordTown_Gym",
+      "mapId": "MAP_DEWFORD_TOWN_GYM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "DewfordTown_Hall",
+      "mapId": "MAP_DEWFORD_TOWN_HALL",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "DewfordTown_House1",
+      "mapId": "MAP_DEWFORD_TOWN_HOUSE1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "DewfordTown_House2",
+      "mapId": "MAP_DEWFORD_TOWN_HOUSE2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "DewfordTown_PokemonCenter_1F",
+      "mapId": "MAP_DEWFORD_TOWN_POKEMON_CENTER_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "DewfordTown_PokemonCenter_2F",
+      "mapId": "MAP_DEWFORD_TOWN_POKEMON_CENTER_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "EverGrandeCity",
+      "mapId": "MAP_EVER_GRANDE_CITY",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "EverGrandeCity_ChampionsRoom",
+      "mapId": "MAP_EVER_GRANDE_CITY_CHAMPIONS_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "EverGrandeCity_DrakesRoom",
+      "mapId": "MAP_EVER_GRANDE_CITY_DRAKES_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "EverGrandeCity_GlaciasRoom",
+      "mapId": "MAP_EVER_GRANDE_CITY_GLACIAS_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "EverGrandeCity_Hall1",
+      "mapId": "MAP_EVER_GRANDE_CITY_HALL1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "EverGrandeCity_Hall2",
+      "mapId": "MAP_EVER_GRANDE_CITY_HALL2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "EverGrandeCity_Hall3",
+      "mapId": "MAP_EVER_GRANDE_CITY_HALL3",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "EverGrandeCity_Hall4",
+      "mapId": "MAP_EVER_GRANDE_CITY_HALL4",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "EverGrandeCity_Hall5",
+      "mapId": "MAP_EVER_GRANDE_CITY_HALL5",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "EverGrandeCity_HallOfFame",
+      "mapId": "MAP_EVER_GRANDE_CITY_HALL_OF_FAME",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "EverGrandeCity_PhoebesRoom",
+      "mapId": "MAP_EVER_GRANDE_CITY_PHOEBES_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "EverGrandeCity_PokemonCenter_1F",
+      "mapId": "MAP_EVER_GRANDE_CITY_POKEMON_CENTER_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "EverGrandeCity_PokemonCenter_2F",
+      "mapId": "MAP_EVER_GRANDE_CITY_POKEMON_CENTER_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "EverGrandeCity_PokemonLeague_1F",
+      "mapId": "MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "EverGrandeCity_PokemonLeague_2F",
+      "mapId": "MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "EverGrandeCity_SidneysRoom",
+      "mapId": "MAP_EVER_GRANDE_CITY_SIDNEYS_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "FallarborTown",
+      "mapId": "MAP_FALLARBOR_TOWN",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "FallarborTown_BattleTentBattleRoom",
+      "mapId": "MAP_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "FallarborTown_BattleTentCorridor",
+      "mapId": "MAP_FALLARBOR_TOWN_BATTLE_TENT_CORRIDOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "FallarborTown_BattleTentLobby",
+      "mapId": "MAP_FALLARBOR_TOWN_BATTLE_TENT_LOBBY",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "FallarborTown_CozmosHouse",
+      "mapId": "MAP_FALLARBOR_TOWN_COZMOS_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "FallarborTown_Mart",
+      "mapId": "MAP_FALLARBOR_TOWN_MART",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "FallarborTown_MoveRelearnersHouse",
+      "mapId": "MAP_FALLARBOR_TOWN_MOVE_RELEARNERS_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "FallarborTown_PokemonCenter_1F",
+      "mapId": "MAP_FALLARBOR_TOWN_POKEMON_CENTER_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "FallarborTown_PokemonCenter_2F",
+      "mapId": "MAP_FALLARBOR_TOWN_POKEMON_CENTER_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "FarawayIsland_Entrance",
+      "mapId": "MAP_FARAWAY_ISLAND_ENTRANCE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "FarawayIsland_Interior",
+      "mapId": "MAP_FARAWAY_ISLAND_INTERIOR",
+      "weather": "WEATHER_SHADE"
+    },
+    {
+      "map": "FieryPath",
+      "mapId": "MAP_FIERY_PATH",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "FortreeCity",
+      "mapId": "MAP_FORTREE_CITY",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "FortreeCity_DecorationShop",
+      "mapId": "MAP_FORTREE_CITY_DECORATION_SHOP",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "FortreeCity_Gym",
+      "mapId": "MAP_FORTREE_CITY_GYM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "FortreeCity_House1",
+      "mapId": "MAP_FORTREE_CITY_HOUSE1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "FortreeCity_House2",
+      "mapId": "MAP_FORTREE_CITY_HOUSE2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "FortreeCity_House3",
+      "mapId": "MAP_FORTREE_CITY_HOUSE3",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "FortreeCity_House4",
+      "mapId": "MAP_FORTREE_CITY_HOUSE4",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "FortreeCity_House5",
+      "mapId": "MAP_FORTREE_CITY_HOUSE5",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "FortreeCity_Mart",
+      "mapId": "MAP_FORTREE_CITY_MART",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "FortreeCity_PokemonCenter_1F",
+      "mapId": "MAP_FORTREE_CITY_POKEMON_CENTER_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "FortreeCity_PokemonCenter_2F",
+      "mapId": "MAP_FORTREE_CITY_POKEMON_CENTER_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "GraniteCave_1F",
+      "mapId": "MAP_GRANITE_CAVE_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "GraniteCave_B1F",
+      "mapId": "MAP_GRANITE_CAVE_B1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "GraniteCave_B2F",
+      "mapId": "MAP_GRANITE_CAVE_B2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "GraniteCave_StevensRoom",
+      "mapId": "MAP_GRANITE_CAVE_STEVENS_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "InsideOfTruck",
+      "mapId": "MAP_INSIDE_OF_TRUCK",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "IslandCave",
+      "mapId": "MAP_ISLAND_CAVE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "JaggedPass",
+      "mapId": "MAP_JAGGED_PASS",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LavaridgeTown",
+      "mapId": "MAP_LAVARIDGE_TOWN",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "LavaridgeTown_Gym_1F",
+      "mapId": "MAP_LAVARIDGE_TOWN_GYM_1F",
+      "weather": "WEATHER_FOG_HORIZONTAL"
+    },
+    {
+      "map": "LavaridgeTown_Gym_B1F",
+      "mapId": "MAP_LAVARIDGE_TOWN_GYM_B1F",
+      "weather": "WEATHER_FOG_HORIZONTAL"
+    },
+    {
+      "map": "LavaridgeTown_HerbShop",
+      "mapId": "MAP_LAVARIDGE_TOWN_HERB_SHOP",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LavaridgeTown_House",
+      "mapId": "MAP_LAVARIDGE_TOWN_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LavaridgeTown_Mart",
+      "mapId": "MAP_LAVARIDGE_TOWN_MART",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LavaridgeTown_PokemonCenter_1F",
+      "mapId": "MAP_LAVARIDGE_TOWN_POKEMON_CENTER_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LavaridgeTown_PokemonCenter_2F",
+      "mapId": "MAP_LAVARIDGE_TOWN_POKEMON_CENTER_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity",
+      "mapId": "MAP_LILYCOVE_CITY",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "LilycoveCity_ContestHall",
+      "mapId": "MAP_LILYCOVE_CITY_CONTEST_HALL",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_ContestLobby",
+      "mapId": "MAP_LILYCOVE_CITY_CONTEST_LOBBY",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_CoveLilyMotel_1F",
+      "mapId": "MAP_LILYCOVE_CITY_COVE_LILY_MOTEL_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_CoveLilyMotel_2F",
+      "mapId": "MAP_LILYCOVE_CITY_COVE_LILY_MOTEL_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_DepartmentStore_1F",
+      "mapId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_DepartmentStore_2F",
+      "mapId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_DepartmentStore_3F",
+      "mapId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_3F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_DepartmentStore_4F",
+      "mapId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_4F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_DepartmentStore_5F",
+      "mapId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_5F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_DepartmentStoreElevator",
+      "mapId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ELEVATOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_DepartmentStoreRooftop",
+      "mapId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_Harbor",
+      "mapId": "MAP_LILYCOVE_CITY_HARBOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_House1",
+      "mapId": "MAP_LILYCOVE_CITY_HOUSE1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_House2",
+      "mapId": "MAP_LILYCOVE_CITY_HOUSE2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_House3",
+      "mapId": "MAP_LILYCOVE_CITY_HOUSE3",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_House4",
+      "mapId": "MAP_LILYCOVE_CITY_HOUSE4",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_LilycoveMuseum_1F",
+      "mapId": "MAP_LILYCOVE_CITY_LILYCOVE_MUSEUM_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_LilycoveMuseum_2F",
+      "mapId": "MAP_LILYCOVE_CITY_LILYCOVE_MUSEUM_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_MoveDeletersHouse",
+      "mapId": "MAP_LILYCOVE_CITY_MOVE_DELETERS_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_PokemonCenter_1F",
+      "mapId": "MAP_LILYCOVE_CITY_POKEMON_CENTER_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_PokemonCenter_2F",
+      "mapId": "MAP_LILYCOVE_CITY_POKEMON_CENTER_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_PokemonTrainerFanClub",
+      "mapId": "MAP_LILYCOVE_CITY_POKEMON_TRAINER_FAN_CLUB",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LilycoveCity_UnusedMart",
+      "mapId": "MAP_LILYCOVE_CITY_UNUSED_MART",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LittlerootTown",
+      "mapId": "MAP_LITTLEROOT_TOWN",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "LittlerootTown_BrendansHouse_1F",
+      "mapId": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LittlerootTown_BrendansHouse_2F",
+      "mapId": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LittlerootTown_MaysHouse_1F",
+      "mapId": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LittlerootTown_MaysHouse_2F",
+      "mapId": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "LittlerootTown_ProfessorBirchsLab",
+      "mapId": "MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MagmaHideout_1F",
+      "mapId": "MAP_MAGMA_HIDEOUT_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MagmaHideout_2F_1R",
+      "mapId": "MAP_MAGMA_HIDEOUT_2F_1R",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MagmaHideout_2F_2R",
+      "mapId": "MAP_MAGMA_HIDEOUT_2F_2R",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MagmaHideout_2F_3R",
+      "mapId": "MAP_MAGMA_HIDEOUT_2F_3R",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MagmaHideout_3F_1R",
+      "mapId": "MAP_MAGMA_HIDEOUT_3F_1R",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MagmaHideout_3F_2R",
+      "mapId": "MAP_MAGMA_HIDEOUT_3F_2R",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MagmaHideout_3F_3R",
+      "mapId": "MAP_MAGMA_HIDEOUT_3F_3R",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MagmaHideout_4F",
+      "mapId": "MAP_MAGMA_HIDEOUT_4F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MarineCave_End",
+      "mapId": "MAP_MARINE_CAVE_END",
+      "weather": "WEATHER_FOG_HORIZONTAL"
+    },
+    {
+      "map": "MarineCave_Entrance",
+      "mapId": "MAP_MARINE_CAVE_ENTRANCE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MauvilleCity",
+      "mapId": "MAP_MAUVILLE_CITY",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "MauvilleCity_BikeShop",
+      "mapId": "MAP_MAUVILLE_CITY_BIKE_SHOP",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MauvilleCity_GameCorner",
+      "mapId": "MAP_MAUVILLE_CITY_GAME_CORNER",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MauvilleCity_Gym",
+      "mapId": "MAP_MAUVILLE_CITY_GYM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MauvilleCity_House1",
+      "mapId": "MAP_MAUVILLE_CITY_HOUSE1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MauvilleCity_House2",
+      "mapId": "MAP_MAUVILLE_CITY_HOUSE2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MauvilleCity_Mart",
+      "mapId": "MAP_MAUVILLE_CITY_MART",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MauvilleCity_PokemonCenter_1F",
+      "mapId": "MAP_MAUVILLE_CITY_POKEMON_CENTER_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MauvilleCity_PokemonCenter_2F",
+      "mapId": "MAP_MAUVILLE_CITY_POKEMON_CENTER_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MeteorFalls_1F_1R",
+      "mapId": "MAP_METEOR_FALLS_1F_1R",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MeteorFalls_1F_2R",
+      "mapId": "MAP_METEOR_FALLS_1F_2R",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MeteorFalls_B1F_1R",
+      "mapId": "MAP_METEOR_FALLS_B1F_1R",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MeteorFalls_B1F_2R",
+      "mapId": "MAP_METEOR_FALLS_B1F_2R",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MeteorFalls_StevensCave",
+      "mapId": "MAP_METEOR_FALLS_STEVENS_CAVE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MirageTower_1F",
+      "mapId": "MAP_MIRAGE_TOWER_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MirageTower_2F",
+      "mapId": "MAP_MIRAGE_TOWER_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MirageTower_3F",
+      "mapId": "MAP_MIRAGE_TOWER_3F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MirageTower_4F",
+      "mapId": "MAP_MIRAGE_TOWER_4F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MossdeepCity",
+      "mapId": "MAP_MOSSDEEP_CITY",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "MossdeepCity_GameCorner_1F",
+      "mapId": "MAP_MOSSDEEP_CITY_GAME_CORNER_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MossdeepCity_GameCorner_B1F",
+      "mapId": "MAP_MOSSDEEP_CITY_GAME_CORNER_B1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MossdeepCity_Gym",
+      "mapId": "MAP_MOSSDEEP_CITY_GYM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MossdeepCity_House1",
+      "mapId": "MAP_MOSSDEEP_CITY_HOUSE1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MossdeepCity_House2",
+      "mapId": "MAP_MOSSDEEP_CITY_HOUSE2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MossdeepCity_House3",
+      "mapId": "MAP_MOSSDEEP_CITY_HOUSE3",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MossdeepCity_House4",
+      "mapId": "MAP_MOSSDEEP_CITY_HOUSE4",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MossdeepCity_Mart",
+      "mapId": "MAP_MOSSDEEP_CITY_MART",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MossdeepCity_PokemonCenter_1F",
+      "mapId": "MAP_MOSSDEEP_CITY_POKEMON_CENTER_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MossdeepCity_PokemonCenter_2F",
+      "mapId": "MAP_MOSSDEEP_CITY_POKEMON_CENTER_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MossdeepCity_SpaceCenter_1F",
+      "mapId": "MAP_MOSSDEEP_CITY_SPACE_CENTER_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MossdeepCity_SpaceCenter_2F",
+      "mapId": "MAP_MOSSDEEP_CITY_SPACE_CENTER_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MossdeepCity_StevensHouse",
+      "mapId": "MAP_MOSSDEEP_CITY_STEVENS_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MtChimney",
+      "mapId": "MAP_MT_CHIMNEY",
+      "weather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "map": "MtChimney_CableCarStation",
+      "mapId": "MAP_MT_CHIMNEY_CABLE_CAR_STATION",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MtPyre_1F",
+      "mapId": "MAP_MT_PYRE_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MtPyre_2F",
+      "mapId": "MAP_MT_PYRE_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MtPyre_3F",
+      "mapId": "MAP_MT_PYRE_3F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MtPyre_4F",
+      "mapId": "MAP_MT_PYRE_4F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MtPyre_5F",
+      "mapId": "MAP_MT_PYRE_5F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MtPyre_6F",
+      "mapId": "MAP_MT_PYRE_6F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MtPyre_Exterior",
+      "mapId": "MAP_MT_PYRE_EXTERIOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "MtPyre_Summit",
+      "mapId": "MAP_MT_PYRE_SUMMIT",
+      "weather": "WEATHER_FOG_HORIZONTAL"
+    },
+    {
+      "map": "NavelRock_B1F",
+      "mapId": "MAP_NAVEL_ROCK_B1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NavelRock_Bottom",
+      "mapId": "MAP_NAVEL_ROCK_BOTTOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NavelRock_Down01",
+      "mapId": "MAP_NAVEL_ROCK_DOWN01",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NavelRock_Down02",
+      "mapId": "MAP_NAVEL_ROCK_DOWN02",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NavelRock_Down03",
+      "mapId": "MAP_NAVEL_ROCK_DOWN03",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NavelRock_Down04",
+      "mapId": "MAP_NAVEL_ROCK_DOWN04",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NavelRock_Down05",
+      "mapId": "MAP_NAVEL_ROCK_DOWN05",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NavelRock_Down06",
+      "mapId": "MAP_NAVEL_ROCK_DOWN06",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NavelRock_Down07",
+      "mapId": "MAP_NAVEL_ROCK_DOWN07",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NavelRock_Down08",
+      "mapId": "MAP_NAVEL_ROCK_DOWN08",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NavelRock_Down09",
+      "mapId": "MAP_NAVEL_ROCK_DOWN09",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NavelRock_Down10",
+      "mapId": "MAP_NAVEL_ROCK_DOWN10",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NavelRock_Down11",
+      "mapId": "MAP_NAVEL_ROCK_DOWN11",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NavelRock_Entrance",
+      "mapId": "MAP_NAVEL_ROCK_ENTRANCE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NavelRock_Exterior",
+      "mapId": "MAP_NAVEL_ROCK_EXTERIOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NavelRock_Fork",
+      "mapId": "MAP_NAVEL_ROCK_FORK",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NavelRock_Harbor",
+      "mapId": "MAP_NAVEL_ROCK_HARBOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NavelRock_Top",
+      "mapId": "MAP_NAVEL_ROCK_TOP",
+      "weather": "WEATHER_SHADE"
+    },
+    {
+      "map": "NavelRock_Up1",
+      "mapId": "MAP_NAVEL_ROCK_UP1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NavelRock_Up2",
+      "mapId": "MAP_NAVEL_ROCK_UP2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NavelRock_Up3",
+      "mapId": "MAP_NAVEL_ROCK_UP3",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NavelRock_Up4",
+      "mapId": "MAP_NAVEL_ROCK_UP4",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NewMauville_Entrance",
+      "mapId": "MAP_NEW_MAUVILLE_ENTRANCE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "NewMauville_Inside",
+      "mapId": "MAP_NEW_MAUVILLE_INSIDE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "OldaleTown",
+      "mapId": "MAP_OLDALE_TOWN",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "OldaleTown_House1",
+      "mapId": "MAP_OLDALE_TOWN_HOUSE1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "OldaleTown_House2",
+      "mapId": "MAP_OLDALE_TOWN_HOUSE2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "OldaleTown_Mart",
+      "mapId": "MAP_OLDALE_TOWN_MART",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "OldaleTown_PokemonCenter_1F",
+      "mapId": "MAP_OLDALE_TOWN_POKEMON_CENTER_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "OldaleTown_PokemonCenter_2F",
+      "mapId": "MAP_OLDALE_TOWN_POKEMON_CENTER_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "PacifidlogTown",
+      "mapId": "MAP_PACIFIDLOG_TOWN",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "PacifidlogTown_House1",
+      "mapId": "MAP_PACIFIDLOG_TOWN_HOUSE1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "PacifidlogTown_House2",
+      "mapId": "MAP_PACIFIDLOG_TOWN_HOUSE2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "PacifidlogTown_House3",
+      "mapId": "MAP_PACIFIDLOG_TOWN_HOUSE3",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "PacifidlogTown_House4",
+      "mapId": "MAP_PACIFIDLOG_TOWN_HOUSE4",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "PacifidlogTown_House5",
+      "mapId": "MAP_PACIFIDLOG_TOWN_HOUSE5",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "PacifidlogTown_PokemonCenter_1F",
+      "mapId": "MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "PacifidlogTown_PokemonCenter_2F",
+      "mapId": "MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "PetalburgCity",
+      "mapId": "MAP_PETALBURG_CITY",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "PetalburgCity_Gym",
+      "mapId": "MAP_PETALBURG_CITY_GYM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "PetalburgCity_House1",
+      "mapId": "MAP_PETALBURG_CITY_HOUSE1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "PetalburgCity_House2",
+      "mapId": "MAP_PETALBURG_CITY_HOUSE2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "PetalburgCity_Mart",
+      "mapId": "MAP_PETALBURG_CITY_MART",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "PetalburgCity_PokemonCenter_1F",
+      "mapId": "MAP_PETALBURG_CITY_POKEMON_CENTER_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "PetalburgCity_PokemonCenter_2F",
+      "mapId": "MAP_PETALBURG_CITY_POKEMON_CENTER_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "PetalburgCity_WallysHouse",
+      "mapId": "MAP_PETALBURG_CITY_WALLYS_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "PetalburgWoods",
+      "mapId": "MAP_PETALBURG_WOODS",
+      "weather": "WEATHER_SHADE"
+    },
+    {
+      "map": "RecordCorner",
+      "mapId": "MAP_RECORD_CORNER",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route101",
+      "mapId": "MAP_ROUTE101",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route102",
+      "mapId": "MAP_ROUTE102",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route103",
+      "mapId": "MAP_ROUTE103",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route104",
+      "mapId": "MAP_ROUTE104",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route104_MrBrineysHouse",
+      "mapId": "MAP_ROUTE104_MR_BRINEYS_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route104_PrettyPetalFlowerShop",
+      "mapId": "MAP_ROUTE104_PRETTY_PETAL_FLOWER_SHOP",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route104_Prototype",
+      "mapId": "MAP_ROUTE104_PROTOTYPE",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route104_PrototypePrettyPetalFlowerShop",
+      "mapId": "MAP_ROUTE104_PROTOTYPE_PRETTY_PETAL_FLOWER_SHOP",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route105",
+      "mapId": "MAP_ROUTE105",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route106",
+      "mapId": "MAP_ROUTE106",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route107",
+      "mapId": "MAP_ROUTE107",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route108",
+      "mapId": "MAP_ROUTE108",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route109",
+      "mapId": "MAP_ROUTE109",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route109_SeashoreHouse",
+      "mapId": "MAP_ROUTE109_SEASHORE_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route110",
+      "mapId": "MAP_ROUTE110",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route110_SeasideCyclingRoadNorthEntrance",
+      "mapId": "MAP_ROUTE110_SEASIDE_CYCLING_ROAD_NORTH_ENTRANCE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route110_SeasideCyclingRoadSouthEntrance",
+      "mapId": "MAP_ROUTE110_SEASIDE_CYCLING_ROAD_SOUTH_ENTRANCE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route110_TrickHouseCorridor",
+      "mapId": "MAP_ROUTE110_TRICK_HOUSE_CORRIDOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route110_TrickHouseEnd",
+      "mapId": "MAP_ROUTE110_TRICK_HOUSE_END",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route110_TrickHouseEntrance",
+      "mapId": "MAP_ROUTE110_TRICK_HOUSE_ENTRANCE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route110_TrickHousePuzzle1",
+      "mapId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route110_TrickHousePuzzle2",
+      "mapId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route110_TrickHousePuzzle3",
+      "mapId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE3",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route110_TrickHousePuzzle4",
+      "mapId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE4",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route110_TrickHousePuzzle5",
+      "mapId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE5",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route110_TrickHousePuzzle6",
+      "mapId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE6",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route110_TrickHousePuzzle7",
+      "mapId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE7",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route110_TrickHousePuzzle8",
+      "mapId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE8",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route111",
+      "mapId": "MAP_ROUTE111",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route111_OldLadysRestStop",
+      "mapId": "MAP_ROUTE111_OLD_LADYS_REST_STOP",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route111_WinstrateFamilysHouse",
+      "mapId": "MAP_ROUTE111_WINSTRATE_FAMILYS_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route112",
+      "mapId": "MAP_ROUTE112",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route112_CableCarStation",
+      "mapId": "MAP_ROUTE112_CABLE_CAR_STATION",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route113",
+      "mapId": "MAP_ROUTE113",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route113_GlassWorkshop",
+      "mapId": "MAP_ROUTE113_GLASS_WORKSHOP",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route114",
+      "mapId": "MAP_ROUTE114",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route114_FossilManiacsHouse",
+      "mapId": "MAP_ROUTE114_FOSSIL_MANIACS_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route114_FossilManiacsTunnel",
+      "mapId": "MAP_ROUTE114_FOSSIL_MANIACS_TUNNEL",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route114_LanettesHouse",
+      "mapId": "MAP_ROUTE114_LANETTES_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route115",
+      "mapId": "MAP_ROUTE115",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route116",
+      "mapId": "MAP_ROUTE116",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route116_TunnelersRestHouse",
+      "mapId": "MAP_ROUTE116_TUNNELERS_REST_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route117",
+      "mapId": "MAP_ROUTE117",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route117_PokemonDayCare",
+      "mapId": "MAP_ROUTE117_POKEMON_DAY_CARE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route118",
+      "mapId": "MAP_ROUTE118",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route119",
+      "mapId": "MAP_ROUTE119",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route119_House",
+      "mapId": "MAP_ROUTE119_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route119_WeatherInstitute_1F",
+      "mapId": "MAP_ROUTE119_WEATHER_INSTITUTE_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route119_WeatherInstitute_2F",
+      "mapId": "MAP_ROUTE119_WEATHER_INSTITUTE_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route120",
+      "mapId": "MAP_ROUTE120",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route121",
+      "mapId": "MAP_ROUTE121",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route121_SafariZoneEntrance",
+      "mapId": "MAP_ROUTE121_SAFARI_ZONE_ENTRANCE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route122",
+      "mapId": "MAP_ROUTE122",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route123",
+      "mapId": "MAP_ROUTE123",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route123_BerryMastersHouse",
+      "mapId": "MAP_ROUTE123_BERRY_MASTERS_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route124",
+      "mapId": "MAP_ROUTE124",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route124_DivingTreasureHuntersHouse",
+      "mapId": "MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Route125",
+      "mapId": "MAP_ROUTE125",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route126",
+      "mapId": "MAP_ROUTE126",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route127",
+      "mapId": "MAP_ROUTE127",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route128",
+      "mapId": "MAP_ROUTE128",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route129",
+      "mapId": "MAP_ROUTE129",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route130",
+      "mapId": "MAP_ROUTE130",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route131",
+      "mapId": "MAP_ROUTE131",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route132",
+      "mapId": "MAP_ROUTE132",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route133",
+      "mapId": "MAP_ROUTE133",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "Route134",
+      "mapId": "MAP_ROUTE134",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "RustboroCity",
+      "mapId": "MAP_RUSTBORO_CITY",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "RustboroCity_CuttersHouse",
+      "mapId": "MAP_RUSTBORO_CITY_CUTTERS_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "RustboroCity_DevonCorp_1F",
+      "mapId": "MAP_RUSTBORO_CITY_DEVON_CORP_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "RustboroCity_DevonCorp_2F",
+      "mapId": "MAP_RUSTBORO_CITY_DEVON_CORP_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "RustboroCity_DevonCorp_3F",
+      "mapId": "MAP_RUSTBORO_CITY_DEVON_CORP_3F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "RustboroCity_Flat1_1F",
+      "mapId": "MAP_RUSTBORO_CITY_FLAT1_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "RustboroCity_Flat1_2F",
+      "mapId": "MAP_RUSTBORO_CITY_FLAT1_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "RustboroCity_Flat2_1F",
+      "mapId": "MAP_RUSTBORO_CITY_FLAT2_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "RustboroCity_Flat2_2F",
+      "mapId": "MAP_RUSTBORO_CITY_FLAT2_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "RustboroCity_Flat2_3F",
+      "mapId": "MAP_RUSTBORO_CITY_FLAT2_3F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "RustboroCity_Gym",
+      "mapId": "MAP_RUSTBORO_CITY_GYM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "RustboroCity_House1",
+      "mapId": "MAP_RUSTBORO_CITY_HOUSE1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "RustboroCity_House2",
+      "mapId": "MAP_RUSTBORO_CITY_HOUSE2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "RustboroCity_House3",
+      "mapId": "MAP_RUSTBORO_CITY_HOUSE3",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "RustboroCity_Mart",
+      "mapId": "MAP_RUSTBORO_CITY_MART",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "RustboroCity_PokemonCenter_1F",
+      "mapId": "MAP_RUSTBORO_CITY_POKEMON_CENTER_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "RustboroCity_PokemonCenter_2F",
+      "mapId": "MAP_RUSTBORO_CITY_POKEMON_CENTER_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "RustboroCity_PokemonSchool",
+      "mapId": "MAP_RUSTBORO_CITY_POKEMON_SCHOOL",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "RusturfTunnel",
+      "mapId": "MAP_RUSTURF_TUNNEL",
+      "weather": "WEATHER_FOG_HORIZONTAL"
+    },
+    {
+      "map": "SafariZone_North",
+      "mapId": "MAP_SAFARI_ZONE_NORTH",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SafariZone_Northeast",
+      "mapId": "MAP_SAFARI_ZONE_NORTHEAST",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SafariZone_Northwest",
+      "mapId": "MAP_SAFARI_ZONE_NORTHWEST",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SafariZone_RestHouse",
+      "mapId": "MAP_SAFARI_ZONE_REST_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SafariZone_South",
+      "mapId": "MAP_SAFARI_ZONE_SOUTH",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SafariZone_Southeast",
+      "mapId": "MAP_SAFARI_ZONE_SOUTHEAST",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SafariZone_Southwest",
+      "mapId": "MAP_SAFARI_ZONE_SOUTHWEST",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "ScorchedSlab",
+      "mapId": "MAP_SCORCHED_SLAB",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SeafloorCavern_Entrance",
+      "mapId": "MAP_SEAFLOOR_CAVERN_ENTRANCE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SeafloorCavern_Room1",
+      "mapId": "MAP_SEAFLOOR_CAVERN_ROOM1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SeafloorCavern_Room2",
+      "mapId": "MAP_SEAFLOOR_CAVERN_ROOM2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SeafloorCavern_Room3",
+      "mapId": "MAP_SEAFLOOR_CAVERN_ROOM3",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SeafloorCavern_Room4",
+      "mapId": "MAP_SEAFLOOR_CAVERN_ROOM4",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SeafloorCavern_Room5",
+      "mapId": "MAP_SEAFLOOR_CAVERN_ROOM5",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SeafloorCavern_Room6",
+      "mapId": "MAP_SEAFLOOR_CAVERN_ROOM6",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SeafloorCavern_Room7",
+      "mapId": "MAP_SEAFLOOR_CAVERN_ROOM7",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SeafloorCavern_Room8",
+      "mapId": "MAP_SEAFLOOR_CAVERN_ROOM8",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SeafloorCavern_Room9",
+      "mapId": "MAP_SEAFLOOR_CAVERN_ROOM9",
+      "weather": "WEATHER_FOG_HORIZONTAL"
+    },
+    {
+      "map": "SealedChamber_InnerRoom",
+      "mapId": "MAP_SEALED_CHAMBER_INNER_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SealedChamber_OuterRoom",
+      "mapId": "MAP_SEALED_CHAMBER_OUTER_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_BlueCave1",
+      "mapId": "MAP_SECRET_BASE_BLUE_CAVE1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_BlueCave2",
+      "mapId": "MAP_SECRET_BASE_BLUE_CAVE2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_BlueCave3",
+      "mapId": "MAP_SECRET_BASE_BLUE_CAVE3",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_BlueCave4",
+      "mapId": "MAP_SECRET_BASE_BLUE_CAVE4",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_BrownCave1",
+      "mapId": "MAP_SECRET_BASE_BROWN_CAVE1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_BrownCave2",
+      "mapId": "MAP_SECRET_BASE_BROWN_CAVE2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_BrownCave3",
+      "mapId": "MAP_SECRET_BASE_BROWN_CAVE3",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_BrownCave4",
+      "mapId": "MAP_SECRET_BASE_BROWN_CAVE4",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_RedCave1",
+      "mapId": "MAP_SECRET_BASE_RED_CAVE1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_RedCave2",
+      "mapId": "MAP_SECRET_BASE_RED_CAVE2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_RedCave3",
+      "mapId": "MAP_SECRET_BASE_RED_CAVE3",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_RedCave4",
+      "mapId": "MAP_SECRET_BASE_RED_CAVE4",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_Shrub1",
+      "mapId": "MAP_SECRET_BASE_SHRUB1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_Shrub2",
+      "mapId": "MAP_SECRET_BASE_SHRUB2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_Shrub3",
+      "mapId": "MAP_SECRET_BASE_SHRUB3",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_Shrub4",
+      "mapId": "MAP_SECRET_BASE_SHRUB4",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_Tree1",
+      "mapId": "MAP_SECRET_BASE_TREE1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_Tree2",
+      "mapId": "MAP_SECRET_BASE_TREE2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_Tree3",
+      "mapId": "MAP_SECRET_BASE_TREE3",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_Tree4",
+      "mapId": "MAP_SECRET_BASE_TREE4",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_YellowCave1",
+      "mapId": "MAP_SECRET_BASE_YELLOW_CAVE1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_YellowCave2",
+      "mapId": "MAP_SECRET_BASE_YELLOW_CAVE2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_YellowCave3",
+      "mapId": "MAP_SECRET_BASE_YELLOW_CAVE3",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SecretBase_YellowCave4",
+      "mapId": "MAP_SECRET_BASE_YELLOW_CAVE4",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "ShoalCave_HighTideEntranceRoom",
+      "mapId": "MAP_SHOAL_CAVE_HIGH_TIDE_ENTRANCE_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "ShoalCave_HighTideInnerRoom",
+      "mapId": "MAP_SHOAL_CAVE_HIGH_TIDE_INNER_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "ShoalCave_LowTideEntranceRoom",
+      "mapId": "MAP_SHOAL_CAVE_LOW_TIDE_ENTRANCE_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "ShoalCave_LowTideIceRoom",
+      "mapId": "MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "ShoalCave_LowTideInnerRoom",
+      "mapId": "MAP_SHOAL_CAVE_LOW_TIDE_INNER_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "ShoalCave_LowTideLowerRoom",
+      "mapId": "MAP_SHOAL_CAVE_LOW_TIDE_LOWER_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "ShoalCave_LowTideStairsRoom",
+      "mapId": "MAP_SHOAL_CAVE_LOW_TIDE_STAIRS_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SkyPillar_1F",
+      "mapId": "MAP_SKY_PILLAR_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SkyPillar_2F",
+      "mapId": "MAP_SKY_PILLAR_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SkyPillar_3F",
+      "mapId": "MAP_SKY_PILLAR_3F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SkyPillar_4F",
+      "mapId": "MAP_SKY_PILLAR_4F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SkyPillar_5F",
+      "mapId": "MAP_SKY_PILLAR_5F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SkyPillar_Entrance",
+      "mapId": "MAP_SKY_PILLAR_ENTRANCE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SkyPillar_Outside",
+      "mapId": "MAP_SKY_PILLAR_OUTSIDE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SkyPillar_Top",
+      "mapId": "MAP_SKY_PILLAR_TOP",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SlateportCity",
+      "mapId": "MAP_SLATEPORT_CITY",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "SlateportCity_BattleTentBattleRoom",
+      "mapId": "MAP_SLATEPORT_CITY_BATTLE_TENT_BATTLE_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SlateportCity_BattleTentCorridor",
+      "mapId": "MAP_SLATEPORT_CITY_BATTLE_TENT_CORRIDOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SlateportCity_BattleTentLobby",
+      "mapId": "MAP_SLATEPORT_CITY_BATTLE_TENT_LOBBY",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SlateportCity_Harbor",
+      "mapId": "MAP_SLATEPORT_CITY_HARBOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SlateportCity_House",
+      "mapId": "MAP_SLATEPORT_CITY_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SlateportCity_Mart",
+      "mapId": "MAP_SLATEPORT_CITY_MART",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SlateportCity_NameRatersHouse",
+      "mapId": "MAP_SLATEPORT_CITY_NAME_RATERS_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SlateportCity_OceanicMuseum_1F",
+      "mapId": "MAP_SLATEPORT_CITY_OCEANIC_MUSEUM_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SlateportCity_OceanicMuseum_2F",
+      "mapId": "MAP_SLATEPORT_CITY_OCEANIC_MUSEUM_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SlateportCity_PokemonCenter_1F",
+      "mapId": "MAP_SLATEPORT_CITY_POKEMON_CENTER_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SlateportCity_PokemonCenter_2F",
+      "mapId": "MAP_SLATEPORT_CITY_POKEMON_CENTER_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SlateportCity_PokemonFanClub",
+      "mapId": "MAP_SLATEPORT_CITY_POKEMON_FAN_CLUB",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SlateportCity_SternsShipyard_1F",
+      "mapId": "MAP_SLATEPORT_CITY_STERNS_SHIPYARD_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SlateportCity_SternsShipyard_2F",
+      "mapId": "MAP_SLATEPORT_CITY_STERNS_SHIPYARD_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SootopolisCity",
+      "mapId": "MAP_SOOTOPOLIS_CITY",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "SootopolisCity_Gym_1F",
+      "mapId": "MAP_SOOTOPOLIS_CITY_GYM_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SootopolisCity_Gym_B1F",
+      "mapId": "MAP_SOOTOPOLIS_CITY_GYM_B1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SootopolisCity_House1",
+      "mapId": "MAP_SOOTOPOLIS_CITY_HOUSE1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SootopolisCity_House2",
+      "mapId": "MAP_SOOTOPOLIS_CITY_HOUSE2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SootopolisCity_House3",
+      "mapId": "MAP_SOOTOPOLIS_CITY_HOUSE3",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SootopolisCity_House4",
+      "mapId": "MAP_SOOTOPOLIS_CITY_HOUSE4",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SootopolisCity_House5",
+      "mapId": "MAP_SOOTOPOLIS_CITY_HOUSE5",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SootopolisCity_House6",
+      "mapId": "MAP_SOOTOPOLIS_CITY_HOUSE6",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SootopolisCity_House7",
+      "mapId": "MAP_SOOTOPOLIS_CITY_HOUSE7",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SootopolisCity_LotadAndSeedotHouse",
+      "mapId": "MAP_SOOTOPOLIS_CITY_LOTAD_AND_SEEDOT_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SootopolisCity_Mart",
+      "mapId": "MAP_SOOTOPOLIS_CITY_MART",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SootopolisCity_MysteryEventsHouse_1F",
+      "mapId": "MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SootopolisCity_MysteryEventsHouse_B1F",
+      "mapId": "MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_B1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SootopolisCity_PokemonCenter_1F",
+      "mapId": "MAP_SOOTOPOLIS_CITY_POKEMON_CENTER_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SootopolisCity_PokemonCenter_2F",
+      "mapId": "MAP_SOOTOPOLIS_CITY_POKEMON_CENTER_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SouthernIsland_Exterior",
+      "mapId": "MAP_SOUTHERN_ISLAND_EXTERIOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SouthernIsland_Interior",
+      "mapId": "MAP_SOUTHERN_ISLAND_INTERIOR",
+      "weather": "WEATHER_SHADE"
+    },
+    {
+      "map": "SSTidalCorridor",
+      "mapId": "MAP_SS_TIDAL_CORRIDOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SSTidalLowerDeck",
+      "mapId": "MAP_SS_TIDAL_LOWER_DECK",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "SSTidalRooms",
+      "mapId": "MAP_SS_TIDAL_ROOMS",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "TerraCave_End",
+      "mapId": "MAP_TERRA_CAVE_END",
+      "weather": "WEATHER_FOG_HORIZONTAL"
+    },
+    {
+      "map": "TerraCave_Entrance",
+      "mapId": "MAP_TERRA_CAVE_ENTRANCE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "TradeCenter",
+      "mapId": "MAP_TRADE_CENTER",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "TrainerHill_1F",
+      "mapId": "MAP_TRAINER_HILL_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "TrainerHill_2F",
+      "mapId": "MAP_TRAINER_HILL_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "TrainerHill_3F",
+      "mapId": "MAP_TRAINER_HILL_3F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "TrainerHill_4F",
+      "mapId": "MAP_TRAINER_HILL_4F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "TrainerHill_Elevator",
+      "mapId": "MAP_TRAINER_HILL_ELEVATOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "TrainerHill_Entrance",
+      "mapId": "MAP_TRAINER_HILL_ENTRANCE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "TrainerHill_Roof",
+      "mapId": "MAP_TRAINER_HILL_ROOF",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "Underwater_MarineCave",
+      "mapId": "MAP_UNDERWATER_MARINE_CAVE",
+      "weather": "WEATHER_UNDERWATER_BUBBLES"
+    },
+    {
+      "map": "Underwater_Route105",
+      "mapId": "MAP_UNDERWATER_ROUTE105",
+      "weather": "WEATHER_UNDERWATER_BUBBLES"
+    },
+    {
+      "map": "Underwater_Route124",
+      "mapId": "MAP_UNDERWATER_ROUTE124",
+      "weather": "WEATHER_UNDERWATER_BUBBLES"
+    },
+    {
+      "map": "Underwater_Route125",
+      "mapId": "MAP_UNDERWATER_ROUTE125",
+      "weather": "WEATHER_UNDERWATER_BUBBLES"
+    },
+    {
+      "map": "Underwater_Route126",
+      "mapId": "MAP_UNDERWATER_ROUTE126",
+      "weather": "WEATHER_UNDERWATER_BUBBLES"
+    },
+    {
+      "map": "Underwater_Route127",
+      "mapId": "MAP_UNDERWATER_ROUTE127",
+      "weather": "WEATHER_UNDERWATER_BUBBLES"
+    },
+    {
+      "map": "Underwater_Route128",
+      "mapId": "MAP_UNDERWATER_ROUTE128",
+      "weather": "WEATHER_UNDERWATER_BUBBLES"
+    },
+    {
+      "map": "Underwater_Route129",
+      "mapId": "MAP_UNDERWATER_ROUTE129",
+      "weather": "WEATHER_UNDERWATER_BUBBLES"
+    },
+    {
+      "map": "Underwater_Route134",
+      "mapId": "MAP_UNDERWATER_ROUTE134",
+      "weather": "WEATHER_UNDERWATER_BUBBLES"
+    },
+    {
+      "map": "Underwater_SeafloorCavern",
+      "mapId": "MAP_UNDERWATER_SEAFLOOR_CAVERN",
+      "weather": "WEATHER_UNDERWATER_BUBBLES"
+    },
+    {
+      "map": "Underwater_SealedChamber",
+      "mapId": "MAP_UNDERWATER_SEALED_CHAMBER",
+      "weather": "WEATHER_UNDERWATER_BUBBLES"
+    },
+    {
+      "map": "Underwater_SootopolisCity",
+      "mapId": "MAP_UNDERWATER_SOOTOPOLIS_CITY",
+      "weather": "WEATHER_UNDERWATER_BUBBLES"
+    },
+    {
+      "map": "UnionRoom",
+      "mapId": "MAP_UNION_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "UnusedContestHall1",
+      "mapId": "MAP_UNUSED_CONTEST_HALL1",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "UnusedContestHall2",
+      "mapId": "MAP_UNUSED_CONTEST_HALL2",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "UnusedContestHall3",
+      "mapId": "MAP_UNUSED_CONTEST_HALL3",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "UnusedContestHall4",
+      "mapId": "MAP_UNUSED_CONTEST_HALL4",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "UnusedContestHall5",
+      "mapId": "MAP_UNUSED_CONTEST_HALL5",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "UnusedContestHall6",
+      "mapId": "MAP_UNUSED_CONTEST_HALL6",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "VerdanturfTown",
+      "mapId": "MAP_VERDANTURF_TOWN",
+      "weather": "WEATHER_SUNNY"
+    },
+    {
+      "map": "VerdanturfTown_BattleTentBattleRoom",
+      "mapId": "MAP_VERDANTURF_TOWN_BATTLE_TENT_BATTLE_ROOM",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "VerdanturfTown_BattleTentCorridor",
+      "mapId": "MAP_VERDANTURF_TOWN_BATTLE_TENT_CORRIDOR",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "VerdanturfTown_BattleTentLobby",
+      "mapId": "MAP_VERDANTURF_TOWN_BATTLE_TENT_LOBBY",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "VerdanturfTown_FriendshipRatersHouse",
+      "mapId": "MAP_VERDANTURF_TOWN_FRIENDSHIP_RATERS_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "VerdanturfTown_House",
+      "mapId": "MAP_VERDANTURF_TOWN_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "VerdanturfTown_Mart",
+      "mapId": "MAP_VERDANTURF_TOWN_MART",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "VerdanturfTown_PokemonCenter_1F",
+      "mapId": "MAP_VERDANTURF_TOWN_POKEMON_CENTER_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "VerdanturfTown_PokemonCenter_2F",
+      "mapId": "MAP_VERDANTURF_TOWN_POKEMON_CENTER_2F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "VerdanturfTown_WandasHouse",
+      "mapId": "MAP_VERDANTURF_TOWN_WANDAS_HOUSE",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "VictoryRoad_1F",
+      "mapId": "MAP_VICTORY_ROAD_1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "VictoryRoad_B1F",
+      "mapId": "MAP_VICTORY_ROAD_B1F",
+      "weather": "WEATHER_NONE"
+    },
+    {
+      "map": "VictoryRoad_B2F",
+      "mapId": "MAP_VICTORY_ROAD_B2F",
+      "weather": "WEATHER_NONE"
+    }
+  ],
+  "weatherCounts": {
+    "WEATHER_SHADE": 14,
+    "WEATHER_NONE": 428,
+    "WEATHER_UNDERWATER_BUBBLES": 14,
+    "WEATHER_FOG_HORIZONTAL": 10,
+    "WEATHER_SUNNY": 51,
+    "WEATHER_VOLCANIC_ASH": 1
+  }
+}

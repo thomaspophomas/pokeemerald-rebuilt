@@ -18,6 +18,31 @@ def write_json(path: Path, data) -> None:
 def main() -> int:
     repo = Path(__file__).resolve().parents[2]
     modgen = repo / "scripts" / "modgen.py"
+    api_domains = [
+        "maps",
+        "npcs",
+        "trainers",
+        "trainer_parties",
+        "weather",
+        "time",
+        "flags",
+        "events",
+        "language",
+        "sprite_assets",
+        "overworld_sprites",
+        "battle_sprites",
+        "followers",
+        "outfits",
+        "pokeballs",
+        "engine_rulesets",
+        "state",
+        "quests",
+        "wild_encounters",
+        "items",
+        "pokemon",
+        "moves",
+        "shops",
+    ]
 
     with tempfile.TemporaryDirectory() as temp_dir:
         root = Path(temp_dir)
@@ -108,8 +133,25 @@ def main() -> int:
         )
         write_json(
             mod_root / "maps" / "DemoTown" / "map.json",
-            {"id": "demo_town", "name": "DemoTown", "map_group": 0, "map_num": 0},
+            {"id": "demo_town", "name": "DemoTown"},
         )
+        write_json(
+            mod_root / "maps" / "map_groups.json",
+            {"group_order": ["gMapGroup_Demo"], "gMapGroup_Demo": ["DemoTown"]},
+        )
+        for domain in api_domains:
+            domain_root = mod_root / domain
+            if domain_root.exists():
+                continue
+            write_json(
+                domain_root / "manifest.json",
+                {
+                    "domain": domain,
+                    "schemaVersion": 1,
+                    "migrationMode": "source_file_manifest",
+                    "sourceFiles": [],
+                },
+            )
         (mod_root / "src").mkdir(parents=True, exist_ok=True)
         (mod_root / "src" / "demo.c").write_text("/* demo */\n", encoding="utf-8")
 
@@ -147,6 +189,8 @@ def main() -> int:
             "MOD_NPC_INTERACTION_SHARED_READONLY",
             "demo:demo_town",
             "demo:demo_engine",
+            "demo:trainers:manifest",
+            "gModDomainFileCount",
         ]
         for needle in required:
             if needle not in source:
