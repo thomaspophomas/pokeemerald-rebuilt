@@ -1,20 +1,4290 @@
 {
   "domain": "trainer_parties",
   "schemaVersion": 1,
-  "fileCount": 2,
-  "jsonFileCount": 1,
-  "bytes": 652893,
-  "sha1": "275703925f2e9bdaff41442ab3b763fb24abb7c5",
+  "fileCount": 856,
+  "jsonFileCount": 856,
+  "bytes": 795226,
+  "sha1": "1f71e1fa3e8bf4cd6d6c8ea1b2be212dc90c7b57",
   "files": [
     {
-      "path": "mods/vanilla/trainer_parties/legacy/trainer_parties.h",
-      "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7",
-      "bytes": 240614
+      "path": "mods/vanilla/trainer_parties/_source_manifest.json",
+      "sha1": "0968531d2a38f60a46ba6a335254194109ed217e",
+      "bytes": 334
     },
     {
-      "path": "mods/vanilla/trainer_parties/parties.json",
-      "sha1": "6014a829e29511c0890c0747198c5194c159a5af",
-      "bytes": 412279
+      "path": "mods/vanilla/trainer_parties/index.json",
+      "sha1": "9b9f802bd0bff7c247f1c9af109a262c56bf23f9",
+      "bytes": 184779
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Aaron.json",
+      "sha1": "bcb79c2831465517871299a70f969dae6965def0",
+      "bytes": 644
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Abigail1.json",
+      "sha1": "d8ee825eee81242a7c9653d9503b52f065ee3b43",
+      "bytes": 576
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Abigail2.json",
+      "sha1": "b9f75c87c0e3fc911c53338db7b28b3fb96afaf9",
+      "bytes": 577
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Abigail3.json",
+      "sha1": "ce2f99ad60d8713631ae72e1d5050b990f47fafa",
+      "bytes": 577
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Abigail4.json",
+      "sha1": "a403a6b2ca739e87dd48bdbb0465c9451b2ae07e",
+      "bytes": 576
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Abigail5.json",
+      "sha1": "0b156cfb6469141bf65c4258a0cdab1af0bf1f15",
+      "bytes": 576
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Aidan.json",
+      "sha1": "96d7a119cef3bb57f4feaf87969c14ad50ed5544",
+      "bytes": 644
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Aisha.json",
+      "sha1": "2bb9ee47678213e019d3a53fe0042346fb4b8b2e",
+      "bytes": 566
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Alan.json",
+      "sha1": "0b897bc3ad53ecbff48968273c62cbeea418ec2b",
+      "bytes": 720
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Albert.json",
+      "sha1": "9009422ba86389d0a565c335c4e08f42df70022a",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Alberto.json",
+      "sha1": "bbe9da328b48c358cf1fb349b3ad30700fc195c3",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Alex.json",
+      "sha1": "55e08afd77dbae351cd07079ca45f1921680bd39",
+      "bytes": 641
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Alexa.json",
+      "sha1": "8783c99fc94024dd8294057b7201e6812a110ffb",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Alexia.json",
+      "sha1": "29cb491c5ffee8d80c0a2c3a9eb1087545f31e58",
+      "bytes": 676
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Alexis.json",
+      "sha1": "4179dbc1b3360a888c8a4d502aa3cf492e3b72f1",
+      "bytes": 642
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Alice.json",
+      "sha1": "c5b1da061824ea7df215fdf827648793ac4aeeba",
+      "bytes": 721
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Alix.json",
+      "sha1": "b401baacadd26faf65155767655b783943e84216",
+      "bytes": 639
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Allen.json",
+      "sha1": "dced264934d422ed3b1f8694bb30801fa4ca330c",
+      "bytes": 643
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Allison.json",
+      "sha1": "0060984898d74aff7e2cc39a2e54e276261028a0",
+      "bytes": 650
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Alvaro.json",
+      "sha1": "293aa68e118e3ee81e2ad64d0db8a56a42cb08f6",
+      "bytes": 646
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Alyssa.json",
+      "sha1": "6811508ecc076fab7605293ce2b34b1000c40e32",
+      "bytes": 570
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_AmyAndLiv1.json",
+      "sha1": "47e5a396488663d40206876a5660fd169656e55c",
+      "bytes": 655
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_AmyAndLiv2.json",
+      "sha1": "ce1e8ee2bf61f42a46b826d6fa26d761f46d4ec5",
+      "bytes": 657
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_AmyAndLiv3.json",
+      "sha1": "b426b6894bacfa82df30f599a2d1d39828bf100f",
+      "bytes": 653
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_AmyAndLiv4.json",
+      "sha1": "85abcfcd7538f28ea945b7dcfef200bff2c39c3f",
+      "bytes": 657
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_AmyAndLiv5.json",
+      "sha1": "c5c52fda51f82ad04bf4158ee05fa6e77296c3fc",
+      "bytes": 802
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_AmyAndLiv6.json",
+      "sha1": "aaa18e2f1578a04db20a2cbf0594da8e2c42fcb0",
+      "bytes": 806
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Anabel.json",
+      "sha1": "182ecce1899309fc7c5266d7d1d71e67f2d95b5b",
+      "bytes": 566
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Andrea.json",
+      "sha1": "325e750d9f647e6116a54fe556ce7fabc7924c0e",
+      "bytes": 570
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Andres1.json",
+      "sha1": "071412236e7a2c8f8bb585f1d2f5c7a08df030bf",
+      "bytes": 655
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Andres2.json",
+      "sha1": "11ca48e73979d5b9fc5ecd869d103dc84b4348c0",
+      "bytes": 655
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Andres3.json",
+      "sha1": "81936cfeb8dfec850cdf6a1bfe39859487439ab8",
+      "bytes": 735
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Andres4.json",
+      "sha1": "d9a3d10cd2d58424141ce890f0e263f8cb56f587",
+      "bytes": 735
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Andres5.json",
+      "sha1": "b5d1e18aed92b303bd51a4e8859eb3d7cdaa36ec",
+      "bytes": 735
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Andrew.json",
+      "sha1": "779b7baf2b5d9b228de4b4d7a1aa651bff31a4e2",
+      "bytes": 727
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Angelica.json",
+      "sha1": "1e870c0ba971d02c60ae1be68c1ff5f62ac60cd1",
+      "bytes": 657
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Angelina.json",
+      "sha1": "dec37934c0a958371db676f84c3cc150f557a58d",
+      "bytes": 650
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Angelo.json",
+      "sha1": "bd388c89ec06fa20ecba938cd9ed2820d4dad71c",
+      "bytes": 855
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_AnnaAndMeg1.json",
+      "sha1": "f579575e2ed83ec5dbc923164d855402f855d49d",
+      "bytes": 813
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_AnnaAndMeg2.json",
+      "sha1": "7a528eb38983ad63991324447205d3154a91b73f",
+      "bytes": 815
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_AnnaAndMeg3.json",
+      "sha1": "66c199f828e9cd005729abc1310a1d486ce233f3",
+      "bytes": 815
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_AnnaAndMeg4.json",
+      "sha1": "c36ef66ff57205c2a88a95fa256c08bd77db3ba2",
+      "bytes": 813
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_AnnaAndMeg5.json",
+      "sha1": "3c91e89f03220955e2d1b74ceac025ff666d1850",
+      "bytes": 813
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Annika.json",
+      "sha1": "3dae92d41b29323f866337c3557c11b4ebf0b456",
+      "bytes": 854
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Anthony.json",
+      "sha1": "32ef74bed3a1a11f488ac12a7971b8e80b5009be",
+      "bytes": 653
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Archie.json",
+      "sha1": "3be7b6bd4e50f6012eb1a3f6783dfec419926c27",
+      "bytes": 732
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ashley.json",
+      "sha1": "fb329b926f2b2240a218199dbb66c270144d2c25",
+      "bytes": 727
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Athena.json",
+      "sha1": "9c943e2758f7ee9421bb1d6657a179a173f01be7",
+      "bytes": 840
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Atsushi.json",
+      "sha1": "39f61235cc5a4efe2c596c06e011dcdb97959523",
+      "bytes": 574
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Auron.json",
+      "sha1": "53096ea52adc98146b3549f03bdba25f530d6d2b",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Austina.json",
+      "sha1": "087dde47a9153527a752f27fcb870051488a6ba8",
+      "bytes": 570
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Autumn.json",
+      "sha1": "9b917970c6ee80c122297f16c8c3dd75c13def63",
+      "bytes": 570
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Axle.json",
+      "sha1": "eed161f662f65f3cbfa9d8ef17726e29bf0a0121",
+      "bytes": 562
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Barny.json",
+      "sha1": "81e1d75f50e3be7afcd032d507af357cc86b8829",
+      "bytes": 646
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Barry.json",
+      "sha1": "995bd41f3419103a50cb345f5a5b15b1fc3f7487",
+      "bytes": 566
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Beau.json",
+      "sha1": "0b8619e45b32ae9015af03457764610fa33e46ae",
+      "bytes": 946
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Beck.json",
+      "sha1": "1338fdb54b304c2a3d8083d7d245db8458b99b44",
+      "bytes": 562
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Becky.json",
+      "sha1": "012d0ed474d16920db41241213f02896d30b9574",
+      "bytes": 798
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ben.json",
+      "sha1": "0468012cce58768d85f66e857c864c4e601bbe14",
+      "bytes": 783
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Benjamin1.json",
+      "sha1": "123207035daa28b54963106d56ac8d2b81261857",
+      "bytes": 579
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Benjamin2.json",
+      "sha1": "391971d3b1f729f81318b2d35ec3d2fb0c962fb2",
+      "bytes": 580
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Benjamin3.json",
+      "sha1": "f093ef6fae6432e6b9b93ec83f95e2aac4db0542",
+      "bytes": 580
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Benjamin4.json",
+      "sha1": "2172017913828a28135fcd04c27cc3825966cecd",
+      "bytes": 579
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Benjamin5.json",
+      "sha1": "c6ddc8b1c3558e8859ebcc9ecd85948c78db5958",
+      "bytes": 579
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Benny.json",
+      "sha1": "ddcf2ddf7f71e9167172d80e8f5ad066750d3bb5",
+      "bytes": 719
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Berke.json",
+      "sha1": "d5cfee34335b217ac56c7f3eda04d1df1fd3e31c",
+      "bytes": 658
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Bernie1.json",
+      "sha1": "d6cdbebd6bf5c221e88da15cd7e1a29277485800",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Bernie2.json",
+      "sha1": "1fbf7aa700b0caa96a9b709fd0ef1cb3bb676195",
+      "bytes": 650
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Bernie3.json",
+      "sha1": "fa52855ec5de2d59740e124d449d16b16379e3a2",
+      "bytes": 651
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Bernie4.json",
+      "sha1": "781a8c968be24cddbc717c0a7be0ae020686612f",
+      "bytes": 651
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Bernie5.json",
+      "sha1": "0e252f4453cc64f95ff7bd0654569c83bf0abf9d",
+      "bytes": 653
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Beth.json",
+      "sha1": "4eeb80b1e4ebe09df3bb4c482c6de8dce4db67df",
+      "bytes": 562
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Bethany.json",
+      "sha1": "7c6636541b2e0b5e8d351f7fa5562209c72d5eb7",
+      "bytes": 829
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Beverly.json",
+      "sha1": "7432700c84b31457df6f1b62f18983c1686f52b0",
+      "bytes": 649
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Bianca.json",
+      "sha1": "c78630a6f1283f095d60099f065366593681aa7a",
+      "bytes": 570
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Billy.json",
+      "sha1": "1b72c31f3c7988402a66594e63ad4253c2a9d41d",
+      "bytes": 642
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Blake.json",
+      "sha1": "0ec2b3597e7b282c1ad5ea8a59f9a507107acf92",
+      "bytes": 569
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Branden.json",
+      "sha1": "ff00db7bf0e71fd9470aed97bf70a2c7bfb624f5",
+      "bytes": 649
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Brandi.json",
+      "sha1": "19e71c9641d494ba41bb94defa32942489217b8d",
+      "bytes": 566
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Brandon.json",
+      "sha1": "1f6e0c0a2faa7b423b061eaeec1ac58d49ac46f7",
+      "bytes": 569
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Brawly1.json",
+      "sha1": "06ffcd3bf228d769831e983a03b65c7942e8573b",
+      "bytes": 1060
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Brawly2.json",
+      "sha1": "f8032ccdc8c98456a5d0336e7141556828be1f19",
+      "bytes": 1258
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Brawly3.json",
+      "sha1": "3359284207ae10ca33b42a2f3c7d3b4858af4b6e",
+      "bytes": 1258
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Brawly4.json",
+      "sha1": "b5722dd06fba979611222e925f7673fc87993d07",
+      "bytes": 1450
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Brawly5.json",
+      "sha1": "33eaf9264781ebc68cb1052aeb1eda019d4aec9b",
+      "bytes": 1639
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Braxton.json",
+      "sha1": "063c6ddd3e2d2bc646b6509d753b171aa7de45b8",
+      "bytes": 1297
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Brenda.json",
+      "sha1": "865300b1989a63fc471771d3fb3569224ce9035d",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_BrendanLilycoveMudkip.json",
+      "sha1": "ccbbcb0b6b153b2930fa22142e7c7d89e1d544a6",
+      "bytes": 855
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_BrendanLilycoveTorchic.json",
+      "sha1": "0ce54c35a81742ba556900cff75b5e0a317bba7f",
+      "bytes": 860
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_BrendanLilycoveTreecko.json",
+      "sha1": "0d20c04fd6d2b115e3f90f2905e2a819e4394990",
+      "bytes": 862
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_BrendanLinkPlaceholder.json",
+      "sha1": "db126b43b1e2d9c9a241a96536d77cd8cb2310d1",
+      "bytes": 615
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_BrendanRoute103Mudkip.json",
+      "sha1": "2dba74fe22fe9e5d5f03520443a12a1ee0954dad",
+      "bytes": 612
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_BrendanRoute103Torchic.json",
+      "sha1": "5eea68fa3bde378cc207ec10d6d7051c909d4688",
+      "bytes": 614
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_BrendanRoute103Treecko.json",
+      "sha1": "3f15aeae953155d7ec1a2595b9fecac67cc2db77",
+      "bytes": 615
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_BrendanRoute110Mudkip.json",
+      "sha1": "fb420717e196ff7fb638a8c466a3e6c65fb2b360",
+      "bytes": 772
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_BrendanRoute110Torchic.json",
+      "sha1": "175fb5a165f7ce54f671a770f78320ab977d2b57",
+      "bytes": 776
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_BrendanRoute110Treecko.json",
+      "sha1": "4dfddaf96e850f060b164fd19f00efdf65de27e9",
+      "bytes": 777
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_BrendanRoute119Mudkip.json",
+      "sha1": "2f22d6168503b9458387c036fe21edd61a44bd7b",
+      "bytes": 775
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_BrendanRoute119Torchic.json",
+      "sha1": "c15eab434afc193f44b34bfd5b151861af0916f3",
+      "bytes": 778
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_BrendanRoute119Treecko.json",
+      "sha1": "018125d3d655eee7a4f42f1558cd25f63afc518b",
+      "bytes": 780
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_BrendanRustboroMudkip.json",
+      "sha1": "03e5f8d299c63ca326b4edafbb4fe3ac3f3a1e40",
+      "bytes": 693
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_BrendanRustboroTorchic.json",
+      "sha1": "e80fd212914f349d492c449c5ec923d1d1d1701d",
+      "bytes": 694
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_BrendanRustboroTreecko.json",
+      "sha1": "413b8055d713ced068234b21ac48cd26007a0165",
+      "bytes": 694
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Brenden.json",
+      "sha1": "c6ab22769dea48f7e17ffe882b4aaeca7cc6b012",
+      "bytes": 572
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Brent.json",
+      "sha1": "2a60cedc3d103a824cbda590813d1b77ea317bb0",
+      "bytes": 567
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Brianna.json",
+      "sha1": "cb90013096bb965aeafb985d12cfc7f2ecea63b9",
+      "bytes": 598
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Brice.json",
+      "sha1": "1471065a2a9fbc841b35ebf5f76f01f76a313aea",
+      "bytes": 640
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Bridget.json",
+      "sha1": "af7f346f942e0522308fecf86362b09320bce595",
+      "bytes": 575
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Brooke1.json",
+      "sha1": "24e0c8667715382a7e1ee2f8c6f2b43185fc5592",
+      "bytes": 731
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Brooke2.json",
+      "sha1": "13366f335240a1c4fd3150db8dadb777dacc43ac",
+      "bytes": 731
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Brooke3.json",
+      "sha1": "0565f10a1e972b364a8ed6ec714476ae4a5f3b59",
+      "bytes": 732
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Brooke4.json",
+      "sha1": "676780b4d46b0c04e9dc8baa3ee1e0fbbbf2a541",
+      "bytes": 732
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Brooke5.json",
+      "sha1": "b0d3c99dc80bc9eeaa769e103768a7f64c3ceba1",
+      "bytes": 735
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Bryan.json",
+      "sha1": "5db3e3850e9b337dce71affec53d9c6eca631013",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Bryant.json",
+      "sha1": "b32dc153ba842f223f417100720383dcdf0445ac",
+      "bytes": 643
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cale.json",
+      "sha1": "9fce9ce504351c8ca633bf104a55860452721a21",
+      "bytes": 641
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Callie.json",
+      "sha1": "0bf929a3c199cadcd1996234296796ee9c3df628",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Calvin1.json",
+      "sha1": "183867b2a3a697d8cade1b553c9a6188645d31b7",
+      "bytes": 572
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Calvin2.json",
+      "sha1": "353f7ae4d025f8ee9b34850d967a118e016f911b",
+      "bytes": 574
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Calvin3.json",
+      "sha1": "5bb51fe23cce4bb36b5c822950f36f5e6849bc7e",
+      "bytes": 653
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Calvin4.json",
+      "sha1": "175cb8bcbcb983103277c1a9ce2f2c8625ff9d3d",
+      "bytes": 732
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Calvin5.json",
+      "sha1": "072709dc643c93f5cc8108f963de0bcb394ec657",
+      "bytes": 732
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Camden.json",
+      "sha1": "cf2749976e811d83334f286294dc1f5e1488b6a3",
+      "bytes": 644
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cameron1.json",
+      "sha1": "214a0ad610cb62f13b7985dd18eb799b51b83a49",
+      "bytes": 574
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cameron2.json",
+      "sha1": "319d7567380aa99bba5af9484998c6ca9ca7a89e",
+      "bytes": 654
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cameron3.json",
+      "sha1": "6dd4da778e6e168c7c43c345caaf7e8139ae451f",
+      "bytes": 654
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cameron4.json",
+      "sha1": "ca19f3c5832ff3abedc8c8f7d95c3c18d13b65b4",
+      "bytes": 654
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cameron5.json",
+      "sha1": "edcdf6beaa1ae871d759aa610b0716899eee4e62",
+      "bytes": 655
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Camron.json",
+      "sha1": "51ec46f324566c35aaeb48f0d11fbaddfe50267c",
+      "bytes": 567
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Carlee.json",
+      "sha1": "2c7dd46e6f040510d110ef95824c5c10ba5ae18f",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Carol.json",
+      "sha1": "37255a90920da4d0b84ce4778f6601aa1a16fcad",
+      "bytes": 642
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Carolina.json",
+      "sha1": "3c1a1c10b871f623bddbda1df5289932c09c8189",
+      "bytes": 737
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Caroline.json",
+      "sha1": "45a205b4ca57b0972d4d45dbed17ee7c564b3ede",
+      "bytes": 657
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Carter.json",
+      "sha1": "cc2c34b1ea3d1a16a3a7910089daaaa061338b07",
+      "bytes": 651
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Catherine1.json",
+      "sha1": "d5be90a603bc4d06ddbc1db72fd7ac1b7a0fc9c5",
+      "bytes": 658
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Catherine2.json",
+      "sha1": "dc0c2b412a249d8865d9b3a2cbaa39fef04c5ac4",
+      "bytes": 658
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Catherine3.json",
+      "sha1": "6fabc3bea05ca8b5d07e691da73dbe3e6d0ee9df",
+      "bytes": 658
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Catherine4.json",
+      "sha1": "c33fed44e0de6e4878d42dcb6ac4819a5ea0aa3a",
+      "bytes": 658
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Catherine5.json",
+      "sha1": "adf59f6ef9fa43370080a273eaad7d6f7d6611ab",
+      "bytes": 662
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cedric.json",
+      "sha1": "8daaeb738a1aa6b0c3a5de36c6226f8b0bc1e0ae",
+      "bytes": 650
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Celia.json",
+      "sha1": "08b24b97f423be447061e8d33ad749daa9613996",
+      "bytes": 641
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Celina.json",
+      "sha1": "87c6d69e22344566c73332aa1b33ed19b5974e69",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Chad.json",
+      "sha1": "7e735f5dffc047c74eeb0912674897460d0b9420",
+      "bytes": 642
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Chandler.json",
+      "sha1": "ff98eedf8584a27d01a0a70e71a08d1ef71ccee6",
+      "bytes": 656
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Charlie.json",
+      "sha1": "0771e7a724dd70b3abd5bf851233e7611de6cc7d",
+      "bytes": 570
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Charlotte.json",
+      "sha1": "3f1766d0f937f36f319de7e24d54b24b9e5b1171",
+      "bytes": 577
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Chase.json",
+      "sha1": "fc6216ceddcdfe5ebd5c580d616500782128c392",
+      "bytes": 643
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Chester.json",
+      "sha1": "aeb14edd93f8407a24a4ecb57db0ded0ead2f73c",
+      "bytes": 649
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Chip.json",
+      "sha1": "bdfb89097634c161601fc8170357647e30ab5ad9",
+      "bytes": 955
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Chris.json",
+      "sha1": "22baf97ed8b48f1a66ccc7eab19cfcef532f07b6",
+      "bytes": 802
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cindy1.json",
+      "sha1": "5c1190c91ed0099c2e0bc3289bdd845fa3ff8ce3",
+      "bytes": 594
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cindy2.json",
+      "sha1": "600386d39c1a5c6fd3e4ffd7308f23fb3d664b96",
+      "bytes": 660
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cindy3.json",
+      "sha1": "eac6849f8efc718ca85663704e65b39baff2e415",
+      "bytes": 594
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cindy4.json",
+      "sha1": "a356154308026c97d88b4e6204db42fe27e828f3",
+      "bytes": 594
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cindy5.json",
+      "sha1": "095f36acc8535998f6756a65e94b109a5c0cef8f",
+      "bytes": 594
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cindy6.json",
+      "sha1": "1112dee13cdc91728952307bf00088f1158b5f5b",
+      "bytes": 678
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Clarence.json",
+      "sha1": "c4cfeaf3c3f3a54dfe44f2058d53ab16f19b618f",
+      "bytes": 575
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Clarissa.json",
+      "sha1": "8635db6b420cc803f10d85b7d77547b725b2021c",
+      "bytes": 652
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Clark.json",
+      "sha1": "0b2789ed2a83207656fcb5c9f068810e2b8b6686",
+      "bytes": 564
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Claude.json",
+      "sha1": "f94a22c453587d1bc16c6f4393357059f3b1b026",
+      "bytes": 726
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Clifford.json",
+      "sha1": "f8f9aad1025bde1919f263bff6e59df861aad370",
+      "bytes": 576
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Coby.json",
+      "sha1": "636efbc2599d6bb6f82dd9a66a447f296905e4d2",
+      "bytes": 641
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cole.json",
+      "sha1": "6b1f097be9eb9aeab8f6c1a1bdc8acc88ea98ffe",
+      "bytes": 562
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Colin.json",
+      "sha1": "979513478a2eb6f686d75db4cf6e11ddcb791782",
+      "bytes": 640
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Colton.json",
+      "sha1": "73d05aeaa34f3bff22c93eadd19eddf9bbec235f",
+      "bytes": 1602
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Connie.json",
+      "sha1": "7aa367be317390df14b97243715b9648a9c4f99c",
+      "bytes": 570
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Conor.json",
+      "sha1": "3a735bff21e80f61f47a4d3820aff7fc4044297a",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cora.json",
+      "sha1": "3c91607915bed82792c0c966d69f750417621fdf",
+      "bytes": 565
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cory1.json",
+      "sha1": "5075c015231613862b9fa2dbd0f3bca9a535918d",
+      "bytes": 722
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cory2.json",
+      "sha1": "8cde4df62f922a18c31af0e32777281970472420",
+      "bytes": 725
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cory3.json",
+      "sha1": "199923e591546161c45be37594052bad6ea21a4c",
+      "bytes": 726
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cory4.json",
+      "sha1": "40879082de8f5809d15cbf7d625f6f2c9db2368a",
+      "bytes": 727
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cory5.json",
+      "sha1": "18fb796c164ae0d52446ab0f6393ccc1ec7fd40c",
+      "bytes": 728
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Crissy.json",
+      "sha1": "9c735b21f44cd536b10ef023b46eaaa684cad770",
+      "bytes": 650
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cristian.json",
+      "sha1": "6500db7d620b51bf3c9736ae79a3e237309230f7",
+      "bytes": 577
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cristin1.json",
+      "sha1": "e73ce1bc67da0fae34c3f4968cca3c9b81073a93",
+      "bytes": 657
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cristin2.json",
+      "sha1": "affe7f005196d116e0608ab2cdc7dea812da082e",
+      "bytes": 657
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cristin3.json",
+      "sha1": "8d4ca347ae1bb8b7b380698673bbb726cbf15d2a",
+      "bytes": 736
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cristin4.json",
+      "sha1": "0a713da7342bf7ae14171c2dab2350c6ad4f7d02",
+      "bytes": 736
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cristin5.json",
+      "sha1": "adf572f83e16fab1723125f95c166950e94872ef",
+      "bytes": 735
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cyndy1.json",
+      "sha1": "82ad87404dc896805652392a1fce365a8e975273",
+      "bytes": 652
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cyndy2.json",
+      "sha1": "908b860686c979b6618773f155aa02295778f55f",
+      "bytes": 652
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cyndy3.json",
+      "sha1": "7591679f25ee0a6d4cfb2ff7af020f1f5a9d3730",
+      "bytes": 652
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cyndy4.json",
+      "sha1": "849775b8d4cf02b3edb31f1b36f262bc0862fd21",
+      "bytes": 652
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Cyndy5.json",
+      "sha1": "de55ae8ef8ced3f8cafff8a6d7276246ce110ebc",
+      "bytes": 652
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Daisuke.json",
+      "sha1": "0cb73475c91b0e67bfd306fb2850ada8a7ecb147",
+      "bytes": 572
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Daisy.json",
+      "sha1": "c915d897c9d2f2e8830b543e50c2d9ad52c4ca19",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dale.json",
+      "sha1": "4c72919c95dab0077b1343a0ffb78cf655bdd084",
+      "bytes": 800
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dalton1.json",
+      "sha1": "ed5e5dd5e6503231252f5c6b4f6fd16ff8647c3b",
+      "bytes": 651
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dalton2.json",
+      "sha1": "66743bebaae74d81b29cd83926f6f506b9f40413",
+      "bytes": 734
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dalton3.json",
+      "sha1": "ec1775f8caf96625074aafbd2711331fd703c004",
+      "bytes": 734
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dalton4.json",
+      "sha1": "81f07e4913afb81ce0213219a62fbc18e80f7bad",
+      "bytes": 732
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dalton5.json",
+      "sha1": "0dce7b88979cda5c5638d93b8404940645341292",
+      "bytes": 732
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dana.json",
+      "sha1": "9090d795fc811a29694e6cf67099c56e9b381c30",
+      "bytes": 564
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Danielle.json",
+      "sha1": "161b1d96320f27c7c237013294ea31c5d50d9fbd",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Daphne.json",
+      "sha1": "beada4ac786f15b55c2712fff522ba2d5af68493",
+      "bytes": 859
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Darcy.json",
+      "sha1": "4392075415007bbe29c36a21f4c7f6348a326635",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Darian.json",
+      "sha1": "bde36abaa13b7a8a694cca2709b65997bf0b13b6",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Darius.json",
+      "sha1": "b22d5c809e56dc5d821be02a2e821fddd4234d10",
+      "bytes": 570
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Darrin.json",
+      "sha1": "0fe5d5df476121bd2db9a2aaaf7af19fd39b19b2",
+      "bytes": 731
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_David.json",
+      "sha1": "0a6667b105c91087134ee6b4b8a37fe724d0cbdc",
+      "bytes": 646
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Davis.json",
+      "sha1": "4d4a7996d5ddbe39649a5d2f5dc2c533f6edd5fa",
+      "bytes": 564
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dawson.json",
+      "sha1": "e63288231e175e1f87cc270d505dce1ba408b703",
+      "bytes": 700
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dayton.json",
+      "sha1": "d7554178fc13dd0ec5fc25af5ac787d4a0b17c9a",
+      "bytes": 643
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dean.json",
+      "sha1": "e9f78178659dd34cb6abfc348a5833f2571cb2e4",
+      "bytes": 720
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Deandre.json",
+      "sha1": "167cb925d75ef4d1e0fbf9f7e78ad57ea9006f7d",
+      "bytes": 728
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Debra.json",
+      "sha1": "4d1fff2f071547c5e3b1c0092164599b792b4cf7",
+      "bytes": 565
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Declan.json",
+      "sha1": "d63f0f4776994e9b2452efddb56e12165e01ef57",
+      "bytes": 569
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Demetrius.json",
+      "sha1": "ea4c8b3f2809f77bc4de5b4a12334bcbfe60a0fd",
+      "bytes": 659
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Denise.json",
+      "sha1": "5341d6b00394c76b7612a0d84a430734e4e76858",
+      "bytes": 646
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Derek.json",
+      "sha1": "4b990951d8738388ac705fbaaf486744d31c390b",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Devan.json",
+      "sha1": "8b24b25d49fdefcfa915db0c030df872c8311224",
+      "bytes": 641
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_DezAndLuke.json",
+      "sha1": "442c67ea070454d874bc53a6a48996485cba9238",
+      "bytes": 661
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Diana1.json",
+      "sha1": "7c21bccefe219a27ed43e5796e5d69e1b0b6ce77",
+      "bytes": 724
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Diana2.json",
+      "sha1": "9d59a8d259d0b98733b14910086eea824fa96825",
+      "bytes": 726
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Diana3.json",
+      "sha1": "7c1087b9901a53802cd1e127ed33153f720f4332",
+      "bytes": 724
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Diana4.json",
+      "sha1": "8b5f12d6060966b5a0c7e68a3fb54f60002b1e79",
+      "bytes": 724
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Diana5.json",
+      "sha1": "7d507d485e5eaa811d421496b64576d0551d8f29",
+      "bytes": 729
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dianne.json",
+      "sha1": "49f5aa4cb40c94502b5d9a8b9f09e22098341940",
+      "bytes": 839
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dillon.json",
+      "sha1": "cbd43796dd1eb373f10778c528a5dcc60e8153be",
+      "bytes": 565
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dominik.json",
+      "sha1": "c43c85964eb07cde82f7c3f3680e08ce52c46950",
+      "bytes": 573
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Donald.json",
+      "sha1": "1ee006b41b67f57294a72f898fecef3e3efff137",
+      "bytes": 732
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Donny.json",
+      "sha1": "8735944ca5e95bc7e87e6dd767c5b85ec2453b2b",
+      "bytes": 644
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Doug.json",
+      "sha1": "f8fe4bc9533269d5c0b91940f2f5149626aa7fae",
+      "bytes": 640
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Douglas.json",
+      "sha1": "ce4b1da4e5f33c40c706a4b9414a984b6cc60017",
+      "bytes": 655
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Drake.json",
+      "sha1": "9eeeee4f3da28520581f02b87a6fc95dc8b3f360",
+      "bytes": 1445
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Drew.json",
+      "sha1": "6b6042ff26f2de974244a1c1d2b9d760b55d996a",
+      "bytes": 636
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dudley.json",
+      "sha1": "1d6b207efd1454b14a87f340f75a224932d00fda",
+      "bytes": 729
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Duncan.json",
+      "sha1": "4d284925fdea911b1ed88c2642085237fe847ba3",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dusty1.json",
+      "sha1": "74d00ec370fdc1b3a2c91e23fb323ad2c8d40e9e",
+      "bytes": 643
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dusty2.json",
+      "sha1": "717884e28674d7b49afc210b3cccc4ce21456465",
+      "bytes": 643
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dusty3.json",
+      "sha1": "4341f2d61d14e8d0e416230d25f83953c56c679c",
+      "bytes": 643
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dusty4.json",
+      "sha1": "645fd5b70e25818c4b774b8a1ba468eb3f05c6c8",
+      "bytes": 643
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dusty5.json",
+      "sha1": "8df692356a80886e204db551d5a98d8eff000649",
+      "bytes": 643
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dwayne.json",
+      "sha1": "0ece9737e1e04fd7493cedfff2f4bf757127b4c3",
+      "bytes": 725
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dylan1.json",
+      "sha1": "48f446268a5f55de986c19259452cb348d9a2f47",
+      "bytes": 566
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dylan2.json",
+      "sha1": "3ca9e67b5827027cc62a4f0f5a5f4a98b08af5d0",
+      "bytes": 567
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dylan3.json",
+      "sha1": "9ce92ab4cc0b1933e06749f3dd11e02d2d0e509c",
+      "bytes": 567
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dylan4.json",
+      "sha1": "5e0f4665ebca5ce9254c9cddd6254dcd953ef3d6",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Dylan5.json",
+      "sha1": "e6cf4714c03762acbe2dded5f1837e74098e43ce",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ed.json",
+      "sha1": "21847585b39bb52adbf96a36f199bf444f658c5a",
+      "bytes": 635
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Eddie.json",
+      "sha1": "141dcfa6a5516466fcb020fd8ecf97810c725bed",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Edgar.json",
+      "sha1": "e242c59c5cb5b58af50d3032d7705d5738ba9738",
+      "bytes": 649
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Edmond.json",
+      "sha1": "3b3239d540005a4ee401181fae346a843d1adc2e",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Edward.json",
+      "sha1": "4431760b80622f8279ac6d79fd5c34f998312d8e",
+      "bytes": 630
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Edwardo.json",
+      "sha1": "3e6203d891c269dc0f158da726cdbe3fca21eb90",
+      "bytes": 652
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Edwin1.json",
+      "sha1": "4a23b26f12e98c8e7607b0223fb786ede6c46e8f",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Edwin2.json",
+      "sha1": "79def541c03b579555b7e2d17dee829f389c254a",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Edwin3.json",
+      "sha1": "9f0946ed36554696a606e4e1a812f7d28c48f0f0",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Edwin4.json",
+      "sha1": "96c8c388417b8d9271e21af2fabefabd4372abdc",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Edwin5.json",
+      "sha1": "cdcd9c1e9b50a052a89624a3cf798585db134532",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Eli.json",
+      "sha1": "a856e7a5760aa927cb46d9e1dca155e5db20bfe1",
+      "bytes": 559
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Elijah.json",
+      "sha1": "dc7298289f169e9450d06f61e5a85fcf57a77453",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Elliot1.json",
+      "sha1": "f5f7fd7668040ca01dd672206c9397f1825164be",
+      "bytes": 730
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Elliot2.json",
+      "sha1": "226be1cc7f9920a434a4544fb151853527d56d22",
+      "bytes": 734
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Elliot3.json",
+      "sha1": "9fa34d0cda3375ac4af854869eedc98db76ab0db",
+      "bytes": 814
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Elliot4.json",
+      "sha1": "ef656a7acd98c2817a391b66742c70ddd6f91852",
+      "bytes": 815
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Elliot5.json",
+      "sha1": "712425d93566a1886bb4ab1b44b01f0be5aa637a",
+      "bytes": 815
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Eric.json",
+      "sha1": "e5d5723d07fa07e3876d2d749088a064f6fdc2a2",
+      "bytes": 639
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ernest1.json",
+      "sha1": "7f2500f51b1f6da1e764fb209473f2a9441fbb00",
+      "bytes": 649
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ernest2.json",
+      "sha1": "190c1b99f05c50b5752c70d5d99beb17c640bce0",
+      "bytes": 732
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ernest3.json",
+      "sha1": "d8297b279a5afafec70a2121f17d4395024ce6e7",
+      "bytes": 733
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ernest4.json",
+      "sha1": "9ee5ad15e9ec1efcaf8960c29833490ba646b5fe",
+      "bytes": 733
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ernest5.json",
+      "sha1": "cc29a510759a2abe70dd009d75959e9b4a4cea46",
+      "bytes": 734
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ethan1.json",
+      "sha1": "18aee9f62471eb12496f8477a0f87de8a9aad0a2",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ethan2.json",
+      "sha1": "e6af897163fa7b78d838f3d717743562b245a0c2",
+      "bytes": 650
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ethan3.json",
+      "sha1": "d615fd96c52f1f711b1722397c68435e32ccfcf6",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ethan4.json",
+      "sha1": "4bc34a7c5a98ce4fcdce3ee7c8967200e421484b",
+      "bytes": 729
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ethan5.json",
+      "sha1": "a0f13d8f7918888b37193f87d1500c7a3b499188",
+      "bytes": 729
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Everett.json",
+      "sha1": "4048fcf328f523b049d3d1456c7b13c51ed8a2fa",
+      "bytes": 573
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Fabian.json",
+      "sha1": "972d3f7fb5ff138b99d62cae51a756bb2b63e704",
+      "bytes": 570
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Felix.json",
+      "sha1": "6bead4b300e6a76443e7c0f686b6261ff435a7ea",
+      "bytes": 775
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Fernando1.json",
+      "sha1": "617bebb01def576546f9b3f3b8002d0d26083c15",
+      "bytes": 657
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Fernando2.json",
+      "sha1": "63718921d2b8b7c36318bbd203e0c1f522c374d3",
+      "bytes": 740
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Fernando3.json",
+      "sha1": "addc1680f45bfd0850e12390afc9ab2ed663c831",
+      "bytes": 740
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Fernando4.json",
+      "sha1": "49d90a68b9d61c7b237c41c747f1ef08e58dab69",
+      "bytes": 740
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Fernando5.json",
+      "sha1": "d0b63d6badda5bee37f9c88f3087b9b04da10c7b",
+      "bytes": 740
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Flannery1.json",
+      "sha1": "568bedd35d3aeb4bd2ba00014da46ce749c41c7f",
+      "bytes": 1232
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Flannery2.json",
+      "sha1": "5e541c9acd9a3415d6e6e474f30120c743cd7c97",
+      "bytes": 1255
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Flannery3.json",
+      "sha1": "3367dc04a4df58c1f1806b254c4ce94a2793ea76",
+      "bytes": 1445
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Flannery4.json",
+      "sha1": "748bc81fb2e1bb8fd689c93eb0a8a65aa457bc55",
+      "bytes": 1627
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Flannery5.json",
+      "sha1": "b42ff557adf04f7f3c69cbcdeddeeac572ee1e8f",
+      "bytes": 1626
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Flint.json",
+      "sha1": "ad3f2b84162b7c8d8bd0f773a75c665547e9f246",
+      "bytes": 644
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Foster.json",
+      "sha1": "4ca9698d3559b70278c08a381e009840bf8306fa",
+      "bytes": 800
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Franklin.json",
+      "sha1": "f62980db5323d9b3f44694bd12f9a6a94332752a",
+      "bytes": 573
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Fredrick.json",
+      "sha1": "cab77d100fa5b8b74dd4c4fd2abb0e47dbcabe09",
+      "bytes": 657
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GabbyAndTy1.json",
+      "sha1": "a8b87dbdcc0705417067307bfdcabb4d3b5a7a26",
+      "bytes": 665
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GabbyAndTy2.json",
+      "sha1": "dd17984a1571785cde69fb42043be13074100c47",
+      "bytes": 667
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GabbyAndTy3.json",
+      "sha1": "e438a598b4e67c1e9078d848d1c91a7906b9b65d",
+      "bytes": 666
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GabbyAndTy4.json",
+      "sha1": "6e652b0af812c5bfe075fdcdf03328d4c1497bb8",
+      "bytes": 666
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GabbyAndTy5.json",
+      "sha1": "cb49b94e06806a4a4f34dc76c899c650d538b4c7",
+      "bytes": 666
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GabbyAndTy6.json",
+      "sha1": "25530fdaf7402a00405ac886587ba2d7d423cea3",
+      "bytes": 828
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Gabrielle1.json",
+      "sha1": "854290d311e00e2630709002ac09a8957dd845a3",
+      "bytes": 970
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Gabrielle2.json",
+      "sha1": "fd13b282b8a75643cb26bcc0866e319df5590b88",
+      "bytes": 976
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Gabrielle3.json",
+      "sha1": "ed6a6227200404c644b51032055b58f5e3ed1cff",
+      "bytes": 976
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Gabrielle4.json",
+      "sha1": "270156b3aac907f00f574db56f4e636a0c49b6f3",
+      "bytes": 978
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Gabrielle5.json",
+      "sha1": "9b515615763a794904c77dc87bcc30505d242e13",
+      "bytes": 980
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Garret.json",
+      "sha1": "d117cb8119f95f92f13ccc0cfc8c7a5c64a1aaad",
+      "bytes": 595
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Garrison.json",
+      "sha1": "3eb3c6f3d74ab20741eafe7ec8b35d16ac4c55ac",
+      "bytes": 576
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_George.json",
+      "sha1": "0bf5939a2c0840c0587f55be14e2cc0ee124a3d6",
+      "bytes": 674
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Georgia.json",
+      "sha1": "8e83bd54e0e17f74954bd7fc4a183c78849d24e0",
+      "bytes": 655
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Gerald.json",
+      "sha1": "2fdb519a72f88eec73e230bc65602434d012c6d4",
+      "bytes": 650
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Gilbert.json",
+      "sha1": "7cd5694c10fcfac368616167b27ff6f808176bb0",
+      "bytes": 572
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GinaAndMia1.json",
+      "sha1": "10f32999ef066ede9232829806ab81231dffb8d5",
+      "bytes": 656
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GinaAndMia2.json",
+      "sha1": "99cd463622c94f06eb8c7ad8d819ec999d2c9877",
+      "bytes": 797
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Glacia.json",
+      "sha1": "3d2485c864a0031bdb1225d4c86af6ac4350820b",
+      "bytes": 1397
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Grace.json",
+      "sha1": "19a69ef53c5b4a24e8dcdcf904d44544fb596572",
+      "bytes": 564
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Greg.json",
+      "sha1": "3b86d41b98767b289b208917c204204790dd21ab",
+      "bytes": 641
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Greta.json",
+      "sha1": "7bd7b9d5f7c4901881fcdf5fedea1b1a457d7564",
+      "bytes": 563
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntAquaHideout1.json",
+      "sha1": "6a00063e025c0ad33a3db1be0663ada12eed3c4d",
+      "bytes": 603
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntAquaHideout2.json",
+      "sha1": "fc4fa273e1bdc9e7e9badfa28d46fee4c42aa0b1",
+      "bytes": 678
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntAquaHideout3.json",
+      "sha1": "8b969ffc72f34f1818b23f9573a2f6548f6f2882",
+      "bytes": 599
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntAquaHideout4.json",
+      "sha1": "815a26b65cec56d06a549596aa49d8af92042d97",
+      "bytes": 602
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntAquaHideout5.json",
+      "sha1": "55544329a06d5116f0fba49c97a128bba0a9c030",
+      "bytes": 602
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntAquaHideout6.json",
+      "sha1": "b63056c07726bb0346d9ce1c521eeee84a7cd15f",
+      "bytes": 599
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntAquaHideout7.json",
+      "sha1": "8f20fb2d47a5b65154cb1ab2a4a5ba34d53ea051",
+      "bytes": 679
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntAquaHideout8.json",
+      "sha1": "97cab0a53f43ae242fa073f4aa286ba55621dd19",
+      "bytes": 602
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntJaggedPass.json",
+      "sha1": "5c673d47dc6e241309bb8d8557b2cf47a53d287a",
+      "bytes": 675
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMagmaHideout1.json",
+      "sha1": "3ef33e0a8e05e125abeb1c41fda0ae6afbe2d735",
+      "bytes": 602
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMagmaHideout10.json",
+      "sha1": "061ece5f759db65344b13f71aa30cf180945ec8b",
+      "bytes": 609
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMagmaHideout11.json",
+      "sha1": "925db79e6b836067729c531554e7ecd903e4b643",
+      "bytes": 606
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMagmaHideout12.json",
+      "sha1": "f651ef25e2b7c146dcadcc847a8ef1d07702c225",
+      "bytes": 605
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMagmaHideout13.json",
+      "sha1": "cb2d122f0b6c7fad9b9a329c1ecbae465dd230b4",
+      "bytes": 605
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMagmaHideout14.json",
+      "sha1": "4108e76ec3e5416fb32f5c49c8bd0da8cd93f12d",
+      "bytes": 609
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMagmaHideout15.json",
+      "sha1": "c3c0f0635a810478eee6c3da8d8c19d2d1e87841",
+      "bytes": 605
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMagmaHideout16.json",
+      "sha1": "0b8cdf64c2512fe84dd7fe826f30e6b9573c9d25",
+      "bytes": 606
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMagmaHideout2.json",
+      "sha1": "f1d0a3d74a438402f080c636f52c803d7ea148a7",
+      "bytes": 606
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMagmaHideout3.json",
+      "sha1": "bf9cb05620600e0c79e449446666bcdb3c3af713",
+      "bytes": 602
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMagmaHideout4.json",
+      "sha1": "776da8e87a2e2bcb1958c983aa0147f34bdfe139",
+      "bytes": 679
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMagmaHideout5.json",
+      "sha1": "1a7e8b3f00055a92c304a052d657331e748b2445",
+      "bytes": 679
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMagmaHideout6.json",
+      "sha1": "6b7298bc5aac1a3657e68a5ba794748d51e08f77",
+      "bytes": 606
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMagmaHideout7.json",
+      "sha1": "b0b38085fe1e5393503af177b8d3fa81229617b3",
+      "bytes": 602
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMagmaHideout8.json",
+      "sha1": "009501f563ae8cd0ba70f33d29e67131329e0c79",
+      "bytes": 606
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMagmaHideout9.json",
+      "sha1": "1cb3f5f6209e790c9d88e620dc227e295eecf358",
+      "bytes": 602
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMtChimney1.json",
+      "sha1": "d5300ede2b46f83da2f0bcb9d08798f1fac7657b",
+      "bytes": 593
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMtChimney2.json",
+      "sha1": "9c2a51427793d478c8ec0f2350d502f37a325f6f",
+      "bytes": 593
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMtPyre1.json",
+      "sha1": "520583af3dfe7963879f90d2f8ea508cca72c553",
+      "bytes": 584
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMtPyre2.json",
+      "sha1": "99a4c2cb96f733f6d1140546c498e0d7f5d63891",
+      "bytes": 587
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMtPyre3.json",
+      "sha1": "85a69c6de687c71448817b7fbeef1f5806a7c581",
+      "bytes": 667
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMtPyre4.json",
+      "sha1": "d62209f4f9a3d47076822d2e256b66641ebb4b5f",
+      "bytes": 662
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMuseum1.json",
+      "sha1": "b84078c2b669fe480c075e44697e9fcc77033869",
+      "bytes": 587
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntMuseum2.json",
+      "sha1": "9211908c1ba8e11dea58840994b701666595b70e",
+      "bytes": 663
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntPetalburgWoods.json",
+      "sha1": "f5e9bac81f1792c45aeef314273d21795bdd50c9",
+      "bytes": 608
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntRusturfTunnel.json",
+      "sha1": "1fab2de0cb8d698c9194a2f7b148586218cef3f1",
+      "bytes": 606
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntSeafloorCavern1.json",
+      "sha1": "b7f796452ddfa864e4f0efe910fe00bb02cbe896",
+      "bytes": 612
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntSeafloorCavern2.json",
+      "sha1": "73be81dc31dd7069cda24dd875abaeef71b044c4",
+      "bytes": 611
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntSeafloorCavern3.json",
+      "sha1": "e83010e6108d54ee94f3d6c2362af36bc21de144",
+      "bytes": 608
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntSeafloorCavern4.json",
+      "sha1": "5b9b3f860dc6ebde9227059a2a62137ea7a47acf",
+      "bytes": 611
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntSeafloorCavern5.json",
+      "sha1": "6299ebdad2a2bc944391519abe5d2cac7c3eb468",
+      "bytes": 691
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntSpaceCenter1.json",
+      "sha1": "8888f56890c08974c83471ead8bb3fe650a28537",
+      "bytes": 599
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntSpaceCenter2.json",
+      "sha1": "b19a0e6f2bda6a577124f32dac564466071fd82e",
+      "bytes": 759
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntSpaceCenter3.json",
+      "sha1": "b6a0ee59d4e2b4d2eb56d93d796afbdfd12a283c",
+      "bytes": 679
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntSpaceCenter4.json",
+      "sha1": "d07bae355ac11aaab695797d4ec59ca7ac549719",
+      "bytes": 600
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntSpaceCenter5.json",
+      "sha1": "1833eec816aed5dad567eb2c8f6afb13468e2920",
+      "bytes": 599
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntSpaceCenter6.json",
+      "sha1": "80a708129c51b6e6f92cc4da0a269e61f0698812",
+      "bytes": 603
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntSpaceCenter7.json",
+      "sha1": "d5a2bef0b1350ea07d09e80de9635e2d3a93b560",
+      "bytes": 600
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntUnused.json",
+      "sha1": "77d1d55b6393c443fe2b9fef14ce26bb6d13a17c",
+      "bytes": 659
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntWeatherInst1.json",
+      "sha1": "0bd75ec2369703a4d38a3b8f4ceefaea7e8f6503",
+      "bytes": 679
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntWeatherInst2.json",
+      "sha1": "9a6fce548641be0c408ca70e009a9bf1dfa4a076",
+      "bytes": 682
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntWeatherInst3.json",
+      "sha1": "474742b404c6ffca5c362d1ab14d680f960a6253",
+      "bytes": 758
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntWeatherInst4.json",
+      "sha1": "83d9e8ff7e6e5db75257f95793c467ecbb82abd4",
+      "bytes": 602
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_GruntWeatherInst5.json",
+      "sha1": "1e8451ebec4916353ce6b20f73597a2e491e46d6",
+      "bytes": 679
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Gwen.json",
+      "sha1": "9e718279e1aca610c33795fd49af69657ad7596c",
+      "bytes": 561
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Hailey.json",
+      "sha1": "f32405d1f778f4f2421efa7db86137dedbfa69d4",
+      "bytes": 567
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Haley1.json",
+      "sha1": "fb2c3f47cab80da5038688c916a89b5aa897b758",
+      "bytes": 644
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Haley2.json",
+      "sha1": "0a0f767663adc533b63008ea29cc94cf901cb869",
+      "bytes": 649
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Haley3.json",
+      "sha1": "548827454c18fedd4c91eb094e9e9d5056a2f90b",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Haley4.json",
+      "sha1": "6ab6ee61cf65a9517f9c5aef39c9ce47c6a44689",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Haley5.json",
+      "sha1": "d5fd75cf2f97af292b28eb834a13df8bb05f9ef0",
+      "bytes": 726
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Halle.json",
+      "sha1": "30857a4a65285d1fc2da2d27f3c663b9dd9cb444",
+      "bytes": 641
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Hannah.json",
+      "sha1": "9ea48941237583ff2da7a4767e5687935da07e76",
+      "bytes": 569
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Harrison.json",
+      "sha1": "5ef814119a24c6cf23aeb8234ac857b2ae789857",
+      "bytes": 577
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Hayden.json",
+      "sha1": "ae7fca5d7729957ca56c9970aa49cb3f0ba0ed8e",
+      "bytes": 566
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Hector.json",
+      "sha1": "1db85608811f6e3d4be0a8774372e2191c449bec",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Heidi.json",
+      "sha1": "aa18384844ae3f292ae4fa1b41537d1eec22b139",
+      "bytes": 793
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Helene.json",
+      "sha1": "f852053483a53987de75e642da78732429aa347a",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Henry.json",
+      "sha1": "9a32caae0147222a49c47fd7f684efa2f652c89e",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Herman.json",
+      "sha1": "d7f1a6c7d3260c63bc42a58e7c7c5780f8ab92c5",
+      "bytes": 649
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Hideo.json",
+      "sha1": "ce24e68272ad2c450fa91a51108c95b816e18680",
+      "bytes": 796
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Hitoshi.json",
+      "sha1": "3c82cb6a70b1dd86436e53294b9f9861dda9ed5d",
+      "bytes": 651
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Hope.json",
+      "sha1": "9d2f92f3385b1eeb5167d1a753fb789b1f452fc2",
+      "bytes": 564
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Hudson.json",
+      "sha1": "a6c68f5e5e52e28a2636b5c3e61760b566de999d",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Huey.json",
+      "sha1": "f552dc26c66f1925c235167fe8653ad5f0682043",
+      "bytes": 641
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Hugh.json",
+      "sha1": "bdf7a68c76c86c6f9b312b6fc6725fd13fa2591b",
+      "bytes": 640
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Humberto.json",
+      "sha1": "228cc6d2b0ad567555fd2cce2e409a2296f267f3",
+      "bytes": 577
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Imani.json",
+      "sha1": "41a76afadea75988451995959a1a8d9307cb7f05",
+      "bytes": 564
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Irene.json",
+      "sha1": "6ad81b48805a0b45c861c41f7141462b3418f66b",
+      "bytes": 644
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Isaac1.json",
+      "sha1": "6b27b9445c5f14c090365d8769ec43b4363434af",
+      "bytes": 960
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Isaac2.json",
+      "sha1": "04710ba15b941b7637879f37350ee59b23b43010",
+      "bytes": 964
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Isaac3.json",
+      "sha1": "2d9a1c6396f444bc7f90f7e65499dde156913b07",
+      "bytes": 964
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Isaac4.json",
+      "sha1": "16de157c45d5a42820f81e8dab5715977a606a45",
+      "bytes": 964
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Isaac5.json",
+      "sha1": "638e3793ef9bbbd1f93cf26bfa5d428bb51a712e",
+      "bytes": 966
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Isabel1.json",
+      "sha1": "50b6ffa33e1e5e909eff68b07639228b7020b45e",
+      "bytes": 708
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Isabel2.json",
+      "sha1": "207e19665a9f9c5e5d254ab60d7acf71b913e5ed",
+      "bytes": 710
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Isabel3.json",
+      "sha1": "7c9ec60a8501b133adc9cf2513218fbb6315401d",
+      "bytes": 710
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Isabel4.json",
+      "sha1": "bf8dca7e8d35284a3f7f3e277849aed9da7ebe76",
+      "bytes": 710
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Isabel5.json",
+      "sha1": "9caf0bb1759df73ff7fe1d844a4c0273897c2d77",
+      "bytes": 714
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Isabella.json",
+      "sha1": "0781f1566143c369fd01feccbd7c2021bffe4cd2",
+      "bytes": 573
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Isabelle.json",
+      "sha1": "eeb766a6e02a639e1cb458b4d3db226e1a258862",
+      "bytes": 573
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Isaiah1.json",
+      "sha1": "418604b1be6340b9f6c7c2d5d17e4a911825eaec",
+      "bytes": 570
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Isaiah2.json",
+      "sha1": "5ec4c4267230a9d448ba9abf3604f2bbc63e6a6e",
+      "bytes": 571
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Isaiah3.json",
+      "sha1": "8cc5d4749c9dfef40dd9af2f25bdfa1489236420",
+      "bytes": 571
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Isaiah4.json",
+      "sha1": "9a311ad3ccf81abb70830cf8d5f35b2d00255aa2",
+      "bytes": 572
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Isaiah5.json",
+      "sha1": "42d4fadc906213e9a37d8dbb6e53d61092062065",
+      "bytes": 572
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Isobel.json",
+      "sha1": "940e052833702cf583fd8ecfdc45742b2d1beea5",
+      "bytes": 567
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ivan.json",
+      "sha1": "71c6b19dd277c68b6af3315bd94d833da5013eab",
+      "bytes": 718
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jace.json",
+      "sha1": "35cb794ef1def4c24202b81c986a0582f24fdc63",
+      "bytes": 563
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jack.json",
+      "sha1": "9a06001090534af5df8f3eacdc0d6747f94d97e4",
+      "bytes": 563
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jacki1.json",
+      "sha1": "8012d13bb2d72f938a4e28cb31801ab133239e6e",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jacki2.json",
+      "sha1": "5335415cc85932d553c1ee6be4f0e2dfbdefe628",
+      "bytes": 649
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jacki3.json",
+      "sha1": "1d7d7cb710a712d412d99256a9c1b21725f57179",
+      "bytes": 649
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jacki4.json",
+      "sha1": "fb28f134ccfa9fd38f8d4c396eed72b644900020",
+      "bytes": 649
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jacki5.json",
+      "sha1": "09cc1e5bff93d3052426e66215513f1ed805331e",
+      "bytes": 650
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jackson1.json",
+      "sha1": "ddc0a3778032d488a934d9feeb4f1a28f0716739",
+      "bytes": 575
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jackson2.json",
+      "sha1": "62d4e6a4793ee242445d5b27764e7d4eb5787af6",
+      "bytes": 575
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jackson3.json",
+      "sha1": "e4dd0065c22089c7032c83a2468c8be51941623d",
+      "bytes": 575
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jackson4.json",
+      "sha1": "7e0845ae3b087c4dbdf647d6577d5ccda9461a4c",
+      "bytes": 575
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jackson5.json",
+      "sha1": "ceca2445a873a1a57061eb7ff033e2115bd6c641",
+      "bytes": 654
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jaclyn.json",
+      "sha1": "5089745fdd92e0b5a8c9199fb98e4bf1c38f2323",
+      "bytes": 630
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jacob.json",
+      "sha1": "9cd0d0b23d5686e65c4f54dda9c91afdfd2ecf8c",
+      "bytes": 725
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jaiden.json",
+      "sha1": "3be6706c61797ebd3d738ec31ca6779634746bcf",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_James1.json",
+      "sha1": "1238da3128743186ae81644af705bc06c51afb31",
+      "bytes": 644
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_James2.json",
+      "sha1": "84e8d93b3f457c3c682b88997e9cedaadb698c1f",
+      "bytes": 569
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_James3.json",
+      "sha1": "822bd78f21ef2cb69d908fd27f7e20386b241302",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_James4.json",
+      "sha1": "f6d77696e5b65894bcb0ac0a533564d431a46cec",
+      "bytes": 726
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_James5.json",
+      "sha1": "ecb0d8d59bcdce7b24334173f7364ead09956c22",
+      "bytes": 805
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jani.json",
+      "sha1": "318ae64cdcb12a40ad38a4ddfeccf7845ab99a41",
+      "bytes": 561
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Janice.json",
+      "sha1": "f95cd1a3bf8fab6e34046a38459475bcd3c2284a",
+      "bytes": 566
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jared.json",
+      "sha1": "2e0fbd93529e7a4c0592d3ea21412a1ed0a0cf50",
+      "bytes": 726
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jasmine.json",
+      "sha1": "b456ac1cc739faebb9fe45bf5fc5c2ae17cdabef",
+      "bytes": 732
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jaylen.json",
+      "sha1": "44854c928e3761d6c7b6fb7962605b9a6ee3ffbc",
+      "bytes": 569
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jazmyn.json",
+      "sha1": "383ad7027647be53efe7d5a93c6f1cc9368a4d1d",
+      "bytes": 566
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jeff.json",
+      "sha1": "f36ab6f0a6578a723a9a3e99617e425cd1b8beac",
+      "bytes": 642
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jeffrey1.json",
+      "sha1": "e47518823ba28d765aa5922c817078f19327a399",
+      "bytes": 730
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jeffrey2.json",
+      "sha1": "1308ed7d704bdfe4f580c1d9bf7176ba829378f7",
+      "bytes": 733
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jeffrey3.json",
+      "sha1": "1c286abc647eaae33330fe9aa4f5be83b41ffe5e",
+      "bytes": 736
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jeffrey4.json",
+      "sha1": "4e36aaaa56bc2e37637bd9cbbd9db21120f47527",
+      "bytes": 815
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jeffrey5.json",
+      "sha1": "b25980bbfd6560e53b0feb7967946c5417daa619",
+      "bytes": 1035
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jenna.json",
+      "sha1": "6287ad3d3c12bac9181ed8c205bacb803807f8b2",
+      "bytes": 721
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jennifer.json",
+      "sha1": "db18ccd8193b66f86a831e0e07056212228df34b",
+      "bytes": 576
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jenny1.json",
+      "sha1": "2f5d3e59c700846cb99b10354d8c40eceeaaa671",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jenny2.json",
+      "sha1": "c9468c764b73dedaf24c324e0dabc3d92515b6ab",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jenny3.json",
+      "sha1": "b83beec6939c96d967337de71b82a031a61f5246",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jenny4.json",
+      "sha1": "db81139badd1d7f841ca303ac0031858b869e436",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jenny5.json",
+      "sha1": "eb80d55b19d8ec702c2fec2a5bb1127dfb635f83",
+      "bytes": 724
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jerome.json",
+      "sha1": "dcb0de67f6f1e278f43c0e71be8dc9c3b76bd41a",
+      "bytes": 571
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jerry1.json",
+      "sha1": "682b872610422fd56f4189c4bad7196f55942366",
+      "bytes": 566
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jerry2.json",
+      "sha1": "a9a543c1b4cd70b8ef769f9ee856e5c0970c71d0",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jerry3.json",
+      "sha1": "4efa84898993366fef7ab235e36a29b2c8ab3c9a",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jerry4.json",
+      "sha1": "e10e46481331c442902be91b966372b25008f009",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jerry5.json",
+      "sha1": "ae6f803dfda3eadce1ceb68ef08eab20e8d37659",
+      "bytes": 727
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jessica1.json",
+      "sha1": "a4c24f66e4a8f2ab173c59962ba0cecd26f485ad",
+      "bytes": 796
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jessica2.json",
+      "sha1": "78c10a9df7a9075e44cb886258893584e6765f04",
+      "bytes": 798
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jessica3.json",
+      "sha1": "9c9c82461a2682ade35c4d5f739dbe5fcb834f0a",
+      "bytes": 798
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jessica4.json",
+      "sha1": "f70d96db0fded61118d087ab27586e21b48e7e48",
+      "bytes": 798
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jessica5.json",
+      "sha1": "1cd52027563048b3f210219ca453a67d4a7dd636",
+      "bytes": 798
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jocelyn.json",
+      "sha1": "9299ba0d4e10fc6339061ef5e08b8f02002dc671",
+      "bytes": 574
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jody.json",
+      "sha1": "680274802007de5beedcaefa5bd1f56b5991db13",
+      "bytes": 655
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Joey.json",
+      "sha1": "e5e1711d360abf9a64027396da1717a4fbcd58f8",
+      "bytes": 560
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Johanna.json",
+      "sha1": "ccc0d5bbadaac4418339bc49fb2c99cdbf18e3df",
+      "bytes": 571
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_JohnAndJay1.json",
+      "sha1": "2641439b97e4b0b799e755533ffc3b4bc2ab486c",
+      "bytes": 817
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_JohnAndJay2.json",
+      "sha1": "bd80cdc676d6a69d913bcfd0d9aad2fd9c9ff683",
+      "bytes": 817
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_JohnAndJay3.json",
+      "sha1": "d13434b783d025bba49e6eac9a7a7b4b4899f50d",
+      "bytes": 817
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_JohnAndJay4.json",
+      "sha1": "1769059f87e6c2e8c07e70db19bebedf5d590a10",
+      "bytes": 817
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_JohnAndJay5.json",
+      "sha1": "795181bd046df99a12c163d3ed258e4b59861d32",
+      "bytes": 817
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Johnson.json",
+      "sha1": "91202c30c33cf21cf7bc332e11db7919608f2d92",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jonah.json",
+      "sha1": "ef7120c5c4db15cc81c2fdcd69fe7f54dc81c2e6",
+      "bytes": 724
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jonas.json",
+      "sha1": "637bbf833cb1ac684ab1bdda031a4957bf2abb53",
+      "bytes": 642
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jonathan.json",
+      "sha1": "070a170d1cc0d56c3715ce916cee7e4bc49b15ba",
+      "bytes": 652
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Jose.json",
+      "sha1": "270ff93dd34576c1368e77fbcfe12e2687a099ef",
+      "bytes": 640
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Joseph.json",
+      "sha1": "f776060cd6077e599662b33c0b8124da7c1c381d",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Josh.json",
+      "sha1": "f28410dcee86102dcd1a567a95e02009745505a3",
+      "bytes": 623
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Joshua.json",
+      "sha1": "d0a69e95f542d0086b47a6e2cbf2b4e08544dcc8",
+      "bytes": 646
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Josue.json",
+      "sha1": "bd076df0c17ba2b694709f1972e761ac7ab2b351",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Juan1.json",
+      "sha1": "8913945213d3e0b5ba78090f44dfc188e21b615a",
+      "bytes": 1418
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Juan2.json",
+      "sha1": "a66e918aba676a572dc2e0d06a1e8146740421fa",
+      "bytes": 1428
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Juan3.json",
+      "sha1": "a5b8367d6d331602894d3cca8f42456ac47a1f8c",
+      "bytes": 1430
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Juan4.json",
+      "sha1": "bd7859da6334e5f8851b1a7c62e990a957183477",
+      "bytes": 1620
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Juan5.json",
+      "sha1": "4bdb413ba0df51e0a0bb4ddb5a7834156fc2ae12",
+      "bytes": 1625
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Julie.json",
+      "sha1": "2c92ba1ed46bb29f2316012b648a21e91f93f217",
+      "bytes": 731
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Julio.json",
+      "sha1": "110a7128f351f1b4e48273b0dcbc2e5a8e9ffa09",
+      "bytes": 567
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Justin.json",
+      "sha1": "fce4f66d743f6f47f23ad66e23dc902ae5075786",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Kai.json",
+      "sha1": "8c96d620c1a43dc2dd5e17b6480aa4a35dd9610b",
+      "bytes": 560
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Kaleb.json",
+      "sha1": "1eb4889fa2e98cd515a3e25df50ad60dde2b8e0f",
+      "bytes": 702
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Kara.json",
+      "sha1": "8bbd3ec67e9a03e8cef76f376bf38f67f43a286b",
+      "bytes": 562
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Karen1.json",
+      "sha1": "d62e291940a98f44965a8f1d77600330b2b8522f",
+      "bytes": 570
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Karen2.json",
+      "sha1": "af4bfc6564847217d7ba1aaef3d432aee82188c8",
+      "bytes": 650
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Karen3.json",
+      "sha1": "e1e473becee3880cdcc09786fbc29df242d16c61",
+      "bytes": 650
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Karen4.json",
+      "sha1": "6fb171300a1cf869fec3962e106c8e88eba980e6",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Karen5.json",
+      "sha1": "d80e541f6a62d7c911d71fa3348c923437da6baf",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_KateAndJoy.json",
+      "sha1": "27cbe9294aa9371dd16456740dea459365bd7057",
+      "bytes": 815
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Katelyn1.json",
+      "sha1": "5422fda918441d61d17e7462257070f64f8afc2a",
+      "bytes": 573
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Katelyn2.json",
+      "sha1": "48a0646de48f6b1d7c76c3e30e97041132dab303",
+      "bytes": 574
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Katelyn3.json",
+      "sha1": "06656417ee2960c5a3970b482793fa02191abcd3",
+      "bytes": 574
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Katelyn4.json",
+      "sha1": "6d6f4d01c649130895d4f423f895b77a6c28a06e",
+      "bytes": 575
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Katelyn5.json",
+      "sha1": "e220f640a2eee2945ff8069b62aa2e741969bc60",
+      "bytes": 575
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Katelynn.json",
+      "sha1": "03a64ebf4ec5fb760b7edb2db609f277974f6da6",
+      "bytes": 821
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Kathleen.json",
+      "sha1": "4788befed134ee7f58eea5a6ad84ed055ec31d4d",
+      "bytes": 576
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Katie.json",
+      "sha1": "0eda92472f93397ac5ae773eb8f402546fcbae86",
+      "bytes": 642
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Kayla.json",
+      "sha1": "34f1645e8ecd082d8810109793ed3ead15169753",
+      "bytes": 720
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Kaylee.json",
+      "sha1": "699d24f164c89560e4cb98b1278fdd28dd70559f",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Kayley.json",
+      "sha1": "1c8d768fbdf8f84f076d203625d443291478514b",
+      "bytes": 653
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Keegan.json",
+      "sha1": "74f60953a379fc4f5bb156b3e2a009ec87d484d5",
+      "bytes": 569
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Keigo.json",
+      "sha1": "bc980a97a54e58130ba862bdd65be1afab13dc7b",
+      "bytes": 812
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Keira.json",
+      "sha1": "c8fcbe780307e5ca0b1eb58c6803ba15ab340b24",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Kelvin.json",
+      "sha1": "a94f954a781500ccea056a8ff37dade47f1aa4e8",
+      "bytes": 649
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Kent.json",
+      "sha1": "29e1b423ab0feb3a9d652b4e094ee470a2815917",
+      "bytes": 562
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Kevin.json",
+      "sha1": "6bcfc45cc7288b83489ff32ba8351f9a22e60be5",
+      "bytes": 564
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_KimAndIris.json",
+      "sha1": "f2513f18cb843145583700b85485f6cecaa46705",
+      "bytes": 808
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Kindra.json",
+      "sha1": "afbc227f0bbf22fe07c4bc8ff8e3184e74ac424c",
+      "bytes": 646
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_KiraAndDan1.json",
+      "sha1": "672f54383c5adfd1bd99bbcb8c6a31dc7a9941c2",
+      "bytes": 662
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_KiraAndDan2.json",
+      "sha1": "745ced1595f1e09e93f44bd372cd007ab31e2218",
+      "bytes": 664
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_KiraAndDan3.json",
+      "sha1": "833e2d0bc7b6aec4a0b64b24fd88f711ff74cd65",
+      "bytes": 664
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_KiraAndDan4.json",
+      "sha1": "c6e0710aa4605e5a273a5b751c1aed38285fccaa",
+      "bytes": 664
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_KiraAndDan5.json",
+      "sha1": "126e80545436e30225925a4bf1163a338cecf758",
+      "bytes": 664
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Kirk.json",
+      "sha1": "ea373feab45aaadf2b0f0938a31171be9a29bf0c",
+      "bytes": 790
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Kiyo.json",
+      "sha1": "e278bcd7baa2ddb6082c95a53f51f8536870031a",
+      "bytes": 565
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Koichi.json",
+      "sha1": "6c6504ecd1cf6b115cfdb8171ee5263f0a562ecc",
+      "bytes": 649
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Koji1.json",
+      "sha1": "1a796bc73e901b8fb1e42e3291cd8a16a15ed81f",
+      "bytes": 565
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Koji2.json",
+      "sha1": "f4bf4d1eff758cb726430a61d946f91e20f997f2",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Koji3.json",
+      "sha1": "b4a09e1d8e4242189c4c69616161d2559df92c56",
+      "bytes": 725
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Koji4.json",
+      "sha1": "1c3b4f6c150db535796fe29dc412013e0c47d709",
+      "bytes": 725
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Koji5.json",
+      "sha1": "e49dcb55b8ac765e06ddd8b742bd957089a2a389",
+      "bytes": 725
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Kyla.json",
+      "sha1": "78f6d2aeb41c1f2e94facf55c1dbdc1f58c03231",
+      "bytes": 562
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Kyra.json",
+      "sha1": "7cbcd7c5c16a5b6c6066ae57cd20b23e2a830ac3",
+      "bytes": 637
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lao1.json",
+      "sha1": "548c19fa2ea5f140686dca74d3b933e0eb309a79",
+      "bytes": 946
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lao2.json",
+      "sha1": "16dfefc57827271f673f9938ba6ff7d8dd3be04d",
+      "bytes": 1082
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lao3.json",
+      "sha1": "5a0062608e8940fe0320331f63b840377fc3cbe7",
+      "bytes": 1086
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lao4.json",
+      "sha1": "a0415e03a40ceedc5b15d701cc7492f26df95c48",
+      "bytes": 1068
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lao5.json",
+      "sha1": "be0a9a420e23b9661d950023e5c96369182d7e52",
+      "bytes": 1200
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Larry.json",
+      "sha1": "7691e65db83c69a00734f2b902a7ef22123de1c8",
+      "bytes": 565
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Laura.json",
+      "sha1": "e9c8f543e76be3d02c04fc2f2d67013a0b3d5412",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Laurel.json",
+      "sha1": "bb622963bcfc7fbd6f74a93149f9b3527a5c3824",
+      "bytes": 646
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lawrence.json",
+      "sha1": "036595b6dc7ba2d76d2a7cb2cb063c98ba53d21b",
+      "bytes": 653
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_LeaAndJed.json",
+      "sha1": "4c50271067e69badea74fd8e796211300543019f",
+      "bytes": 655
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Leaf.json",
+      "sha1": "d58b8e9ff918cdf771ad4c5ae3bb639393601180",
+      "bytes": 563
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Leah.json",
+      "sha1": "cebd6687319c4f9a7d186a835600c3f9c95b8fde",
+      "bytes": 561
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lenny.json",
+      "sha1": "0f6110604aa3c88d45561e339cef85fe1c7e927b",
+      "bytes": 642
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Leonard.json",
+      "sha1": "126e2bc8d05f85598c26b5dbc64a6222913d19d0",
+      "bytes": 727
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Leonardo.json",
+      "sha1": "21523fd6a752f3b95941df03597faacd328232f8",
+      "bytes": 575
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Leonel.json",
+      "sha1": "100de3271ff4b97d201a93c226322289c8cb7818",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Leroy.json",
+      "sha1": "1767031803a3bb2a1414045ec699f8b5f573af2b",
+      "bytes": 646
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_LilaAndRoy1.json",
+      "sha1": "5197bd41870d5080a7b61d100eb4ccecfdfecc92",
+      "bytes": 663
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_LilaAndRoy2.json",
+      "sha1": "39f5b051b32384440997146afe7f6a7b0404b8dd",
+      "bytes": 663
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_LilaAndRoy3.json",
+      "sha1": "61ac467f1b79884cf66ddd09a4457683981d16ab",
+      "bytes": 662
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_LilaAndRoy4.json",
+      "sha1": "9f22c7ddbeaff655740f3fa30acc5197cdeacc51",
+      "bytes": 662
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_LilaAndRoy5.json",
+      "sha1": "edf2483fad516446f7c6411966096a3266760dba",
+      "bytes": 662
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lilith.json",
+      "sha1": "88047b50c2ed8c1f01ce7c971edbf1a9abcfd189",
+      "bytes": 571
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Linda.json",
+      "sha1": "ecb08686606c7cd94c654b935e50c021457b3c43",
+      "bytes": 641
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_LisaAndRay.json",
+      "sha1": "690e98acaaec3edeade01cdf769e5ba872791d1c",
+      "bytes": 660
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lola1.json",
+      "sha1": "64dc446fa90896f89d5d0a3abdf20c9b0f477d8b",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lola2.json",
+      "sha1": "eb82d3a4f333007244c9da994beadcc95b5c47dc",
+      "bytes": 643
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lola3.json",
+      "sha1": "7aa88501a7e0f5caa7b232aefd45819389e4bb6a",
+      "bytes": 643
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lola4.json",
+      "sha1": "fbdf68b2cc73b62a81e448a370d784bfb942aa27",
+      "bytes": 643
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lola5.json",
+      "sha1": "dc15d8a83a39fdb4044f6a1f99f1b5a556cefdd5",
+      "bytes": 649
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lorenzo.json",
+      "sha1": "e91a1d31a3babc9bed65053ba1b442f33a6c032b",
+      "bytes": 728
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lucas1.json",
+      "sha1": "49bc429eda646311a134139010c6286ce3a4625c",
+      "bytes": 644
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lucas2.json",
+      "sha1": "31687f1e39480107a7f2b693c13fbac5cdb66d2e",
+      "bytes": 631
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lucy.json",
+      "sha1": "bbd65d5b1bbd328bd497bcf68d0a093dc7ed6af9",
+      "bytes": 560
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Luis.json",
+      "sha1": "22ab40283b7be9fd016dfbffdbdad842be1d0e12",
+      "bytes": 563
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lung.json",
+      "sha1": "e42ce94c378dc5b453a0062f4b9024a3ea508892",
+      "bytes": 640
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lydia1.json",
+      "sha1": "6e8d0154855517d00014b6ddbf161b78122d9762",
+      "bytes": 958
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lydia2.json",
+      "sha1": "6251eda94797c147a6558a6b28418d90f7495dcb",
+      "bytes": 964
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lydia3.json",
+      "sha1": "a0b03a42a5f90e621afe06f5812facf14a1d0fc1",
+      "bytes": 965
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lydia4.json",
+      "sha1": "1da6bb70385a2d8816d5ea95118726198f2673f0",
+      "bytes": 965
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lydia5.json",
+      "sha1": "c13a14cd79bcd430bf7c8e8a6d53d6c70eba9468",
+      "bytes": 968
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Lyle.json",
+      "sha1": "ee9838d8a4d7e0f8c52db1c0134a2117ba9ccc8a",
+      "bytes": 792
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Macey.json",
+      "sha1": "eac642345f2db95ba6e1730bb8ba3d37b50c8475",
+      "bytes": 562
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Madeline1.json",
+      "sha1": "a3d037a0b948d065784618c32c3fa1d6aa08c5e8",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Madeline2.json",
+      "sha1": "1f3f6486e75a01259df7d183d150892773e55759",
+      "bytes": 646
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Madeline3.json",
+      "sha1": "79f0afae4686a43a76de9d4e110d581ac1093423",
+      "bytes": 649
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Madeline4.json",
+      "sha1": "405c4eaa59560699594548722372e3cd0c98f4f1",
+      "bytes": 820
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Madeline5.json",
+      "sha1": "d2a54077ba1ee49fed684b660daddea6ec9b5bbc",
+      "bytes": 821
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Makayla.json",
+      "sha1": "bac5f729cd9101a2d93582e143157adc2685829a",
+      "bytes": 650
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Marc.json",
+      "sha1": "6e48d51b3f307f6db848fc7b95a0c470187822c5",
+      "bytes": 642
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Marcel.json",
+      "sha1": "299e9db0e1814ebef2634224a844d410489b2050",
+      "bytes": 652
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Marcos.json",
+      "sha1": "87a0462e2d4924ac7527c8cbdf800b575fd5f686",
+      "bytes": 570
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Maria1.json",
+      "sha1": "fb8a2faee8fdb1284755d643bbda3f2ec2905462",
+      "bytes": 566
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Maria2.json",
+      "sha1": "313abdfeae3dec2e1633e6bfbf1fa12c77342b9d",
+      "bytes": 567
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Maria3.json",
+      "sha1": "a4ba6461548703cae5c38868e4bb3bcef2bbd574",
+      "bytes": 567
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Maria4.json",
+      "sha1": "3136f1d5aaa405815da1fc19df105d51abf2553b",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Maria5.json",
+      "sha1": "a2c927a8fe937a10fc21d0468468e13edd6275e7",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Mariela.json",
+      "sha1": "1960961405590b147eace54090427c162720444e",
+      "bytes": 572
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Mark.json",
+      "sha1": "e15313e8d355483e1377dfea9b2e04cd9991854b",
+      "bytes": 562
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Marlene.json",
+      "sha1": "fe8d57f23c36d2b92d9d85e3f9c674b1fb257bd6",
+      "bytes": 649
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Marley.json",
+      "sha1": "803be4e3e063450dcaf3a9b3613ce1c7f04f05ef",
+      "bytes": 668
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Martha.json",
+      "sha1": "99f9b763449a8ef9c5c1ea43c26d60a2b5ff90f5",
+      "bytes": 644
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Mary.json",
+      "sha1": "50975f159789119a9e35f803d7766bcd8f00164b",
+      "bytes": 660
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Matt.json",
+      "sha1": "2f744d5c02c87e239c20eee26f08060430567f76",
+      "bytes": 643
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Matthew.json",
+      "sha1": "ffc7b16e096f366171beeabe05411a232188a4d7",
+      "bytes": 572
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Maura.json",
+      "sha1": "3c3167491606dcdc86d5b80156fa40ad678d31c2",
+      "bytes": 567
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MaxieMagmaHideout.json",
+      "sha1": "46ca58a2aa49c08148d05155883927253e904ebd",
+      "bytes": 765
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MaxieMossdeep.json",
+      "sha1": "5e7e5f4d543a04634aaf2d07952a5a3c7b71ecfb",
+      "bytes": 753
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MaxieMtChimney.json",
+      "sha1": "67a5062b6a3cf3c6c242ab87054f3f3cfff7f018",
+      "bytes": 755
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MayLilycoveMudkip.json",
+      "sha1": "35f731705436ba8dac6407f78212c4d0ed4011f7",
+      "bytes": 843
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MayLilycoveTorchic.json",
+      "sha1": "076e7ab1fc0192b996ecf172b684d6c17545beee",
+      "bytes": 848
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MayLilycoveTreecko.json",
+      "sha1": "731fa83b9bd71bb83b3485d0d926127a29675cbd",
+      "bytes": 850
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MayLinkPlaceholder.json",
+      "sha1": "9c47674565c939a5a69ab14de3d9443b97fa0ecb",
+      "bytes": 602
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MayRoute103Mudkip.json",
+      "sha1": "a40f4fac57a0b0a818405108c7a96944b70b3636",
+      "bytes": 600
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MayRoute103Torchic.json",
+      "sha1": "9c9052d5c1685dfc955fd06f222120e7b414793e",
+      "bytes": 602
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MayRoute103Treecko.json",
+      "sha1": "31e7163dbf558ece5298083f4dc4088077ed893c",
+      "bytes": 603
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MayRoute110Mudkip.json",
+      "sha1": "57ff08841b76731aed4a2bc8b39d4533c5f5e3aa",
+      "bytes": 760
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MayRoute110Torchic.json",
+      "sha1": "ffdcc045a05cefdbb0f5a7db61cd949b13e048eb",
+      "bytes": 764
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MayRoute110Treecko.json",
+      "sha1": "ccfff9cd9c50ea760f1c0631947869a5a4703847",
+      "bytes": 765
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MayRoute119Mudkip.json",
+      "sha1": "59579b3ce46aca3767de0e74d4af0c41c650f1f5",
+      "bytes": 761
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MayRoute119Torchic.json",
+      "sha1": "b805440f9d8939ff6c4e46c55cdd5d3727756d30",
+      "bytes": 766
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MayRoute119Treecko.json",
+      "sha1": "74e0d2369fb79adbdfd1cead0622868f006b69d4",
+      "bytes": 768
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MayRustboroMudkip.json",
+      "sha1": "e9eabe38c019ab83e30bbb9435fc27216e545e39",
+      "bytes": 681
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MayRustboroTorchic.json",
+      "sha1": "ea7f0c50f091514fed0e312e0f94cec4937bae08",
+      "bytes": 683
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MayRustboroTreecko.json",
+      "sha1": "03254777645223cad821919f81b941bec9577cca",
+      "bytes": 682
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MelAndPaul.json",
+      "sha1": "9251fb949b026034d5b38ae40378958398dd5076",
+      "bytes": 797
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Melina.json",
+      "sha1": "425725215514d2ca186553a73c55547cfd4e0a55",
+      "bytes": 566
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Melissa.json",
+      "sha1": "8feb8fe81ee5472e4aff42795d1d86b69ffb46a4",
+      "bytes": 570
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Micah.json",
+      "sha1": "6b6ec98121be0b2d11af8e516f03df25913aaef5",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Michelle.json",
+      "sha1": "cf950f38a26daabafe22a876a0ea53fb9618aa6e",
+      "bytes": 738
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Miguel1.json",
+      "sha1": "9ff3ada44629c4b8b047c6578cef621db8555d59",
+      "bytes": 599
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Miguel2.json",
+      "sha1": "23045a29a80e73031b22d4327695047a4ffc7f3b",
+      "bytes": 599
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Miguel3.json",
+      "sha1": "feae3281db697dde16ace06b60cc7542baee4710",
+      "bytes": 599
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Miguel4.json",
+      "sha1": "d945bef8c3d4aad09932d27436b8dc19ab77e15e",
+      "bytes": 601
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Miguel5.json",
+      "sha1": "89647b7ff794251f1bcd726d8e5cdfeb72bc37fe",
+      "bytes": 603
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Mike1.json",
+      "sha1": "8160a909a80e2445ad3b5f21343feb527f2e5e5f",
+      "bytes": 769
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Mike2.json",
+      "sha1": "78969f9056e476cc3e60417e6add75dc617f98c9",
+      "bytes": 720
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Missy.json",
+      "sha1": "59677f3989247534d0347368da9caa42fee92c26",
+      "bytes": 565
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Mitchell.json",
+      "sha1": "42cd7c55d84572b82eabaad8243dda52b7529fc6",
+      "bytes": 811
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_MiuAndYuki.json",
+      "sha1": "64bd187338ccd00187d504a85d6dc8a7298e59f3",
+      "bytes": 659
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Mollie.json",
+      "sha1": "b55e5ee765f3ce505c2b30d235b88e7cb08f5032",
+      "bytes": 650
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Myles.json",
+      "sha1": "dee08d7776a9140fce4e637e184d07b07270b95b",
+      "bytes": 964
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Nancy.json",
+      "sha1": "3e73cc67efbce26fb1335785a05d4fcbf1261ac5",
+      "bytes": 641
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Naomi.json",
+      "sha1": "b2c73bb7b0dbe40a7e4f422e3d4f06cfe9b4d547",
+      "bytes": 592
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Nate.json",
+      "sha1": "1dc8f752b0a8491ed08411e5b9f10c0840d2bce1",
+      "bytes": 563
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ned.json",
+      "sha1": "0c713d7c071f40e739205fdc28e0440e79d429ac",
+      "bytes": 562
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Nicholas.json",
+      "sha1": "567d3d2b24b4855cdf27cad86b361320938747bf",
+      "bytes": 576
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Nicolas1.json",
+      "sha1": "b67855201956ce7ac1acf195d4bd3115ee943c82",
+      "bytes": 656
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Nicolas2.json",
+      "sha1": "206c2b607b6ec2e51e2f1da012f557b462a48eb2",
+      "bytes": 656
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Nicolas3.json",
+      "sha1": "f2d3f02d3fa41bb761a83777b64e3760ca9337b5",
+      "bytes": 656
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Nicolas4.json",
+      "sha1": "4fd1d6bde643e2da5e4ede53b703b2cc39945cf9",
+      "bytes": 734
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Nicolas5.json",
+      "sha1": "5dce3cd9a43fbb7bf52c21f21f40df40b22b2929",
+      "bytes": 820
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Nikki.json",
+      "sha1": "f37be6833b3417e202c4a182ed560e9a0eb2b6b0",
+      "bytes": 641
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Nob1.json",
+      "sha1": "8e63fcd462e4699ae0dd180f1b51573b31b92a55",
+      "bytes": 563
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Nob2.json",
+      "sha1": "632015f18d4223190150ade6f4a77638efdd11d0",
+      "bytes": 564
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Nob3.json",
+      "sha1": "76f4fe2ef01c688f9e087f2ba284c257567d88cc",
+      "bytes": 643
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Nob4.json",
+      "sha1": "d07f0b4fc7a9a847453626f134d53e5d41367eb4",
+      "bytes": 723
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Nob5.json",
+      "sha1": "6de4804c1baa2c9675b301b9b852f29ab9abd480",
+      "bytes": 913
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Nolan.json",
+      "sha1": "2eb845fc939061cb5cdd13a70f37bb214d954ac1",
+      "bytes": 566
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Noland.json",
+      "sha1": "ac461aa5993fa520ccc95263e5dd80fef2775811",
+      "bytes": 566
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Nolen.json",
+      "sha1": "3aac0c63037f377828404e90d6e54281c2fbe03c",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Norman1.json",
+      "sha1": "6475e55d820bf7ecf8466658a25d7f4c6b37871e",
+      "bytes": 1217
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Norman2.json",
+      "sha1": "38f32d73239090a4fd5129fb6151193c563c7a1b",
+      "bytes": 1263
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Norman3.json",
+      "sha1": "b0e0dccc30692ba25c9430627ef16b7c07bb9481",
+      "bytes": 1450
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Norman4.json",
+      "sha1": "e03798216b0169d38646cbd096d1d88c0b2433e8",
+      "bytes": 1450
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Norman5.json",
+      "sha1": "eb099c86a3838439eef2eb475784bc9f2a7ef8af",
+      "bytes": 1631
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Olivia.json",
+      "sha1": "1a9085e554b4e812f7ed5e61084caa665b417e31",
+      "bytes": 966
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Owen.json",
+      "sha1": "459d98117d7b854ca26e49f3dae0690ac6aa6acb",
+      "bytes": 725
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Pablo1.json",
+      "sha1": "70d5cb5e51f83820bcbd3ce2b1598bc5c4c757ed",
+      "bytes": 644
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Pablo2.json",
+      "sha1": "ae58c34041898426fb7feee04add407b1ce37f73",
+      "bytes": 646
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Pablo3.json",
+      "sha1": "395fe8d369711dd97867a5344332986dd3513794",
+      "bytes": 725
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Pablo4.json",
+      "sha1": "cb439b8d0591971ad9bc5650e533a4a941905502",
+      "bytes": 726
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Pablo5.json",
+      "sha1": "0009872fa29e386c59f29d293c757d2cefbec6ea",
+      "bytes": 728
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Parker.json",
+      "sha1": "afdf30a2ee04ae520b84aba03a98490b46a2fbf0",
+      "bytes": 672
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Pat.json",
+      "sha1": "e92256335781b62021c2851d7cfc4fa03ca4b985",
+      "bytes": 961
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Patricia.json",
+      "sha1": "03a7bdd40e2c30d5e15ffc212150a0a3285b19c0",
+      "bytes": 653
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Paul.json",
+      "sha1": "0b5b1d2cfb678ee29337fb676e5395dc9079c64b",
+      "bytes": 718
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Paula.json",
+      "sha1": "da585c85076d4d2d3a20c5eeb4f17b11da21b5f8",
+      "bytes": 567
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Paxton.json",
+      "sha1": "deb2d95c9813ed3ed14ea8ac06a7a9192b340984",
+      "bytes": 646
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Perry.json",
+      "sha1": "3c8ba64fe8c59c3c16e44d4e4e0f7ffa0b53770a",
+      "bytes": 565
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Pete.json",
+      "sha1": "439d1d7539433f5e42b5d8d11d1227aecbb08742",
+      "bytes": 564
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Phil.json",
+      "sha1": "c9938f01d66ec354f283cf90ab08b602e61e75cd",
+      "bytes": 562
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Phillip.json",
+      "sha1": "98d172b39138475e6601033a4020d06e7ca95cd6",
+      "bytes": 652
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Phoebe.json",
+      "sha1": "8733246e728b1a375c760b637a25b1128ed2f58e",
+      "bytes": 1443
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Presley.json",
+      "sha1": "a54b8c6ea6072b48c21236a5bd01fafc660dcbe0",
+      "bytes": 646
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Preston.json",
+      "sha1": "83593f8d854350327b37a1d48b7c4aafe25d5e9b",
+      "bytes": 572
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Quincy.json",
+      "sha1": "e1016c37134e0d36ad74a78426062bdb38f655d6",
+      "bytes": 806
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Rachel.json",
+      "sha1": "583bf725d175a0c7208683d7fc40c1e5f4218eb1",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Randall.json",
+      "sha1": "a17cd3048ad5c797e9954aa1ef7ab62a15f0bad7",
+      "bytes": 672
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Red.json",
+      "sha1": "aff1a1f21d9c333e1f552fe358a9b6bd75073e87",
+      "bytes": 561
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Reed.json",
+      "sha1": "06a2883aaf4cdbb6d62ce2b3b57820465c082854",
+      "bytes": 640
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_ReliAndIan.json",
+      "sha1": "015c8f9546eb86f5e4a7c6065e397108b3601e2c",
+      "bytes": 660
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Reyna.json",
+      "sha1": "507b2c5d014e8a71aed9903e3a554ebaef8a91c0",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Rhett.json",
+      "sha1": "c00d23ae4f0da82b5d6ee99e2774f73fc4300ee9",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Richard.json",
+      "sha1": "7beef63ed9e9ea92ce5743f8259cb1a3dcc5026b",
+      "bytes": 572
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Rick.json",
+      "sha1": "bf5b73a22e178f5eb6e8876d4d969d8b3d237a65",
+      "bytes": 638
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ricky1.json",
+      "sha1": "08395439c1978eb94ffb4cb48aeba65df662dd4d",
+      "bytes": 644
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ricky2.json",
+      "sha1": "8fdda86689ada4330d79b0bf4a878bf6ea46fe32",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ricky3.json",
+      "sha1": "b2032ed9a3a2b43d050024a697ac92ca16a8a4bd",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ricky4.json",
+      "sha1": "5f2b38bf68d2e3742e1f977896f85b8ed912e498",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ricky5.json",
+      "sha1": "03a31d17417422af6991cc89f0ec69acf3dc790a",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Riley.json",
+      "sha1": "9d0d5b2f520ad54ac1d942f732f9afedca49a0a8",
+      "bytes": 798
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Robert1.json",
+      "sha1": "0cd7119b3aa982e5141a81e77869ca198835cf3e",
+      "bytes": 570
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Robert2.json",
+      "sha1": "86155b12bca7acfe5e9e777e80b69f59fa06b384",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Robert3.json",
+      "sha1": "49b3cd073bb3d7a08b0d2d9b512678bdfdd58bde",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Robert4.json",
+      "sha1": "43830c214f8ef2def476c4cf07b2fb8e4dcf1158",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Robert5.json",
+      "sha1": "2403dc61509c5688a374bca0434e221957d8c2fd",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Robin.json",
+      "sha1": "1142a717802d10542b24f9551c03cbfe8960b8bb",
+      "bytes": 721
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Rodney.json",
+      "sha1": "77e793ae803d03f1ee20d3d21c3d19f2cdf58031",
+      "bytes": 569
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Roger.json",
+      "sha1": "15f9116d44a9e962b1a666b02b9a61cfa09e375e",
+      "bytes": 724
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Roland.json",
+      "sha1": "9dc001bef7049047a292d0498505f51a801612d5",
+      "bytes": 569
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ronald.json",
+      "sha1": "9432d19cab45fa9fade498e2cac2064b773ea557",
+      "bytes": 964
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Rose1.json",
+      "sha1": "62db34f83aa43a70e21530e0727ccd48efc35667",
+      "bytes": 723
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Rose2.json",
+      "sha1": "235f7ad20788dca735a01ec4ec853309e107a176",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Rose3.json",
+      "sha1": "1d0a7408718d94ebf1c992442729aefa32cd152d",
+      "bytes": 724
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Rose4.json",
+      "sha1": "4786857f5afc7086e399c6d599110a88b8bbc894",
+      "bytes": 724
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Rose5.json",
+      "sha1": "b9c587aef653791bb3ffebc01903f5065147987c",
+      "bytes": 722
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Roxanne1.json",
+      "sha1": "1e2d7584818dc1eeb2e84d23612cd05e478aac67",
+      "bytes": 1050
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Roxanne2.json",
+      "sha1": "fdd8414f936e9bf8380d740876802e0cc21bbc2f",
+      "bytes": 1240
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Roxanne3.json",
+      "sha1": "12fabc8e6b7b5aeea84693b9c3ca930f5dc2ba3d",
+      "bytes": 1422
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Roxanne4.json",
+      "sha1": "25726fa5fa08c4ce373cca791690e3b4836077ed",
+      "bytes": 1423
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Roxanne5.json",
+      "sha1": "b61bcb77a30a32b494a14c30525cce9448305539",
+      "bytes": 1621
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ruben.json",
+      "sha1": "e44bf2108880b27cb919cf744c124edebae63b20",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Sally.json",
+      "sha1": "60c6bb7e6a226cb009d016296f30d87fb925947c",
+      "bytes": 564
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Samantha.json",
+      "sha1": "5df9c7b1b45d626525d2333d993a5051acf2bdc4",
+      "bytes": 573
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Samuel.json",
+      "sha1": "5d4cb73d612ca3e5779ddac9e94d0c71f1b1feff",
+      "bytes": 729
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Santiago.json",
+      "sha1": "7e3fa3f4a28e2d7d8e84c92676363cee8a21f7f9",
+      "bytes": 655
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Sarah.json",
+      "sha1": "b929195a4b4937a954c8bf1b9bcc16ab62e7e7da",
+      "bytes": 693
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Sawyer1.json",
+      "sha1": "9bb5664f46cf3e9fa40a6805d628e64c92ffafa4",
+      "bytes": 571
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Sawyer2.json",
+      "sha1": "d95807a8bcb01258eb531c56bc49d0af81090a4a",
+      "bytes": 649
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Sawyer3.json",
+      "sha1": "75cd3530bcd957b80c8ae00335b739b8350e1943",
+      "bytes": 728
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Sawyer4.json",
+      "sha1": "c19451d7e9c2abcedffa674b356656c216278f04",
+      "bytes": 728
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Sawyer5.json",
+      "sha1": "e577857477547118339d8d4d0a9c7ed66badd486",
+      "bytes": 729
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Sebastian.json",
+      "sha1": "d61af7fec827eec37a41242dcfa0a467b1bd7d99",
+      "bytes": 579
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Shane.json",
+      "sha1": "b1050516decfeec96bed180bb67725d9d6fa5c1f",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Shannon.json",
+      "sha1": "aad7a617302c8b5faefe95f9b63b91d99ddb17d5",
+      "bytes": 573
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Sharon.json",
+      "sha1": "bd1097372ec70bfdecbfca0f66d3327dea8a77c1",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Shawn.json",
+      "sha1": "b3241e4c8b2e2b611f2f21817460599f82adb590",
+      "bytes": 649
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Shayla.json",
+      "sha1": "3412f8a5e0af7df7ea962cb46b84594593414278",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Sheila.json",
+      "sha1": "81860768b5cb6b6e5e9c79d66615eb44760a340a",
+      "bytes": 570
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Shelby1.json",
+      "sha1": "ceaa09bdf3003dc56c7158641ed243ec0c21262d",
+      "bytes": 655
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Shelby2.json",
+      "sha1": "1feb119c479a05986ca562531b285d5190299551",
+      "bytes": 655
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Shelby3.json",
+      "sha1": "10174c78ed86a3ce4bfc485b05a5b0b7032d6dd6",
+      "bytes": 655
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Shelby4.json",
+      "sha1": "7f7a1db0aadb8130fa341c50a7e9c810a1c3af35",
+      "bytes": 655
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Shelby5.json",
+      "sha1": "cdf743fbd856db89f580ac79482699d8cf980571",
+      "bytes": 655
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_ShellySeafloorCavern.json",
+      "sha1": "329186c16aff208250e9f45f8c2f94b1035a44a0",
+      "bytes": 695
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_ShellyWeatherInstitute.json",
+      "sha1": "5dcb25bc892590f4a4dbd8cac6de17f1a72c86b5",
+      "bytes": 699
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Shirley.json",
+      "sha1": "83d157f5f16722b5be637eace4d384eda28305d5",
+      "bytes": 569
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Sidney.json",
+      "sha1": "976d602b9102a81a0dfbfe46ca92a312a0177f40",
+      "bytes": 1430
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Sienna.json",
+      "sha1": "9e6166447e074c8691a6a440b6b5b7314e947b24",
+      "bytes": 646
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Simon.json",
+      "sha1": "7e3ddb24c1c8b27ab800a03305118a6284568857",
+      "bytes": 642
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Sophia.json",
+      "sha1": "a68d27e296c91840956be7d4f7a600d81c328c6c",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Sophie.json",
+      "sha1": "009dd5cec7c3899feec7ff22ae3ee9d4ebe3cfb9",
+      "bytes": 644
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Spencer.json",
+      "sha1": "793d8ae7867d6a4d50344e2f254338ee93645055",
+      "bytes": 651
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Spenser.json",
+      "sha1": "84ffd6c2b303d549fc3820aeda50035e00a4d335",
+      "bytes": 569
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Stan.json",
+      "sha1": "239d1b7043ed895bc1d47a5f12028c203ed63ded",
+      "bytes": 561
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Steve1.json",
+      "sha1": "8658640ada88d31578ce276c8fc75e738c7a3b7e",
+      "bytes": 565
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Steve2.json",
+      "sha1": "ae9fc96c5dcf22e1b5545c22cccb962e41bb38ea",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Steve3.json",
+      "sha1": "fd4de4a410545e39929ce5349996ca12bc2dbcfd",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Steve4.json",
+      "sha1": "84bf0d47395a232a83ddbc63f8a4060888bd69f9",
+      "bytes": 647
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Steve5.json",
+      "sha1": "48b16097ff5feacbd79483205ad4d445b23f4fdd",
+      "bytes": 646
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Steven.json",
+      "sha1": "2cf9887d32c0b54f569b5827170f4fc40b15ee60",
+      "bytes": 1630
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Susie.json",
+      "sha1": "73af126afe39b9ebe193da35b8037cd21b26fee3",
+      "bytes": 565
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Sylvia.json",
+      "sha1": "86a6c1de0cf5bee1d5ddde28cd81eb112a7f0420",
+      "bytes": 571
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_TabithaMagmaHideout.json",
+      "sha1": "ad6d51ec3f967994aee9abf1575271cdab860038",
+      "bytes": 844
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_TabithaMossdeep.json",
+      "sha1": "8843fa1dcf3887fc6538a5916122256dd40ad23f",
+      "bytes": 759
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_TabithaMtChimney.json",
+      "sha1": "4897fbfa6a9697e09ed16bf59ba7370d8bb096d2",
+      "bytes": 832
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Takao.json",
+      "sha1": "05e9f3df116eb72b791541e24ee5cde3b9dfa0da",
+      "bytes": 566
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Takashi.json",
+      "sha1": "10061a52679a19f47270f4fbea150753b949bd74",
+      "bytes": 649
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Talia.json",
+      "sha1": "f163bf6c48c4b6b6eb2608da2e239392b6fda734",
+      "bytes": 564
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Tammy.json",
+      "sha1": "2bbe3b924706da9452d1e5e096a8bc9396ff8daf",
+      "bytes": 643
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Tanya.json",
+      "sha1": "bd910987e129ffc10bf328906f0aa832bff672ca",
+      "bytes": 565
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Tara.json",
+      "sha1": "c1932c362f96a228d7a0523ab9480fc74a54fe92",
+      "bytes": 638
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Tasha.json",
+      "sha1": "c66f9ffcd86215fed586653ac2f798d8dea2bcc2",
+      "bytes": 566
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_TateAndLiza1.json",
+      "sha1": "8ba17fbc5090d37558db145e7bfe018115effcfd",
+      "bytes": 1272
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_TateAndLiza2.json",
+      "sha1": "7214721319449ecdb576df5baa089fa37e49755a",
+      "bytes": 1448
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_TateAndLiza3.json",
+      "sha1": "d059548aefbf0a9b167f5ac11687d0824f4d55ec",
+      "bytes": 1629
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_TateAndLiza4.json",
+      "sha1": "23faa86bec562cef1c14f421bdf07af22c0212b7",
+      "bytes": 1627
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_TateAndLiza5.json",
+      "sha1": "38587482e24a5e0544d066f11d18af76594dfb0a",
+      "bytes": 1627
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Taylor.json",
+      "sha1": "ce3df2fa09f56d7db637a11a06567ac9c93cb828",
+      "bytes": 729
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Ted.json",
+      "sha1": "099fdf348088d971ba5939002ba0f8ad9487803b",
+      "bytes": 558
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Terry.json",
+      "sha1": "92bc1d43d26c68bbc0ce6e7a3a8c88bd5a4e33ca",
+      "bytes": 567
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Thalia1.json",
+      "sha1": "5ae9db309712f8142e30de35216fc3203d62f036",
+      "bytes": 648
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Thalia2.json",
+      "sha1": "4ae80b73309e2e069e064aab0367e242e12bde47",
+      "bytes": 650
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Thalia3.json",
+      "sha1": "ae296e18cb3b23d0d7e58ae09875be933a4070ea",
+      "bytes": 729
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Thalia4.json",
+      "sha1": "4d7fd509c45d1095bd143fc4eaf6552a29677728",
+      "bytes": 729
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Thalia5.json",
+      "sha1": "5a4a1146718a63ff44e1946d161cd78cb3964b28",
+      "bytes": 730
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Thomas.json",
+      "sha1": "e4e0edf4f4f530c3025cbddb48a6d04b044f5c7e",
+      "bytes": 569
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Tiana.json",
+      "sha1": "bff837931cebd42f846b505a9d62376556f71259",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Tiffany.json",
+      "sha1": "d8e90da769f8f168ddf5aa9de009ca86de75aa4d",
+      "bytes": 655
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Timmy.json",
+      "sha1": "64032fc9a5076ea40abc335226c3081d73de3cc4",
+      "bytes": 642
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Timothy1.json",
+      "sha1": "465a750906e4a09d54ca8b234b70e63404027a62",
+      "bytes": 577
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Timothy2.json",
+      "sha1": "83ea9fb1d99ec8934c6ff59bc2f9e4497304b6a0",
+      "bytes": 651
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Timothy3.json",
+      "sha1": "b8877908962ff088aeed3e95a5880618902815de",
+      "bytes": 651
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Timothy4.json",
+      "sha1": "9ea3fca23c206ba64b7ff3c4d29f2a957e0e25e8",
+      "bytes": 652
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Timothy5.json",
+      "sha1": "b490e0abd1074457ec082f3e6ce8ec023843ee45",
+      "bytes": 652
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Tisha.json",
+      "sha1": "58823b9830877ff6e16c90ab5d43ea29a69e5fbe",
+      "bytes": 566
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Tommy.json",
+      "sha1": "01f6ab576c2fb8b4791845b5e5fce8e893651ca9",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Tony1.json",
+      "sha1": "3361655fe592f33379a8de501cdf66e6f1fe649c",
+      "bytes": 566
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Tony2.json",
+      "sha1": "ae6f2a31ebd3164551d18f513e2e4ea23f32ab6b",
+      "bytes": 567
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Tony3.json",
+      "sha1": "c82b147d9a6e3292da6f35a5a5a74c1f8d55ec77",
+      "bytes": 567
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Tony4.json",
+      "sha1": "cc911bb9f89e69e05a4f39fe79a79a013bfb2776",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Tony5.json",
+      "sha1": "2d8bf2be26cd04c4d9c37068a176931efadee991",
+      "bytes": 646
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_ToriAndTia.json",
+      "sha1": "c40b23be2426afb9ad58cfa039e527edda8af939",
+      "bytes": 656
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Travis.json",
+      "sha1": "d3a39370354a542ed0e39c83a35c5855ee684b11",
+      "bytes": 570
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Trent1.json",
+      "sha1": "e2f29b4ee5e4644de41d2f763f2ea4fce64c26de",
+      "bytes": 724
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Trent2.json",
+      "sha1": "3815ef63c16f27115b6302414d549dc24599abb0",
+      "bytes": 807
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Trent3.json",
+      "sha1": "aa5a25f4c964837c85743e63febddf09c1e0754d",
+      "bytes": 808
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Trent4.json",
+      "sha1": "2c1c4449203d87f80adabe768d821f372fbad7f4",
+      "bytes": 809
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Trent5.json",
+      "sha1": "79ffbd49bcddadf7614bd1332408a84f9376b535",
+      "bytes": 807
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Tucker.json",
+      "sha1": "3fe1f57e9dc6879e406128bfb88b8f7b85b42447",
+      "bytes": 566
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_TyraAndIvy.json",
+      "sha1": "bd08d825baa752183cab30bd029537bbbd2cea18",
+      "bytes": 817
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Tyron.json",
+      "sha1": "9c71db390e158c6d2f9205c7d551242d8548b5e5",
+      "bytes": 567
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Valerie1.json",
+      "sha1": "beeacb2426fb193da298f199b4c31b7414db2d7a",
+      "bytes": 574
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Valerie2.json",
+      "sha1": "bfb556b1e99eef471d5b444625c1611528c3a10f",
+      "bytes": 653
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Valerie3.json",
+      "sha1": "8ac18840e2f1b0bc54923bdf187abe89c1f8bc36",
+      "bytes": 653
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Valerie4.json",
+      "sha1": "3362cbf60dbb168f361e8eb425d708aa0cf085a8",
+      "bytes": 653
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Valerie5.json",
+      "sha1": "a6847fdcf71fedf1bd6b068c535f82a71de346bc",
+      "bytes": 733
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Vanessa.json",
+      "sha1": "ba35bf22563c910accfce4687c26536a431434b6",
+      "bytes": 600
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Vicky.json",
+      "sha1": "ab8dbdb43f8f32d5bc5e886d532c6acce83909a5",
+      "bytes": 644
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Victor.json",
+      "sha1": "78467e766edea125fbcbde0e320ac78dbc2c577c",
+      "bytes": 712
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Victoria.json",
+      "sha1": "dabd6b9f7e89b3fab48b841c836eb60f3f2c6eaa",
+      "bytes": 604
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Vincent.json",
+      "sha1": "841747e0f795a8c556b45568a57b1b70c7102876",
+      "bytes": 735
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Violet.json",
+      "sha1": "f63b5a13f3d0dc60481b25da5411da218cb05f12",
+      "bytes": 644
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Virgil.json",
+      "sha1": "ffe5cb85734ca42846ab95deb77dad08d96dbba9",
+      "bytes": 568
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Vito.json",
+      "sha1": "f58f96941fbf69dfd421270aa8b72338b6299de6",
+      "bytes": 805
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Vivi.json",
+      "sha1": "f8592d058d0938c415b1af1e57853d36a8af64f4",
+      "bytes": 723
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Vivian.json",
+      "sha1": "4ae3fafd6b16687fc5ad8ae60799360675a6fc3d",
+      "bytes": 804
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Wade.json",
+      "sha1": "5a8386385aaa1e83b8e3ae81b717c74d66ded30b",
+      "bytes": 564
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Wallace.json",
+      "sha1": "6d00e3ebeadcf53a2572af126ab3664cd35dd0f8",
+      "bytes": 1607
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_WallyMauville.json",
+      "sha1": "bf9d89d0984bea3908f6b614f52c5d58c8ec4895",
+      "bytes": 588
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_WallyVR1.json",
+      "sha1": "22536eee3b986b00825334fe62f31858e14fb161",
+      "bytes": 1298
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_WallyVR2.json",
+      "sha1": "d5581a1fa0a8be5ea8ad281803aae5a6c888a6bd",
+      "bytes": 1298
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_WallyVR3.json",
+      "sha1": "c16d08b80504681bdf3964ea2428fa65831187c8",
+      "bytes": 1298
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_WallyVR4.json",
+      "sha1": "41eaf96aad8a0522760450d114c9a958d61f4f9f",
+      "bytes": 1298
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_WallyVR5.json",
+      "sha1": "44be409da7c18badd18c133eaa1dacd954716aeb",
+      "bytes": 1298
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Walter1.json",
+      "sha1": "9c5a22a19b84300071a0745f74f1d9f0eb8e578b",
+      "bytes": 573
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Walter2.json",
+      "sha1": "ccd6d5dee41fe2f6a348a02e36b7fac969d7ad8d",
+      "bytes": 574
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Walter3.json",
+      "sha1": "bdb1d197e9e31be49235ff682fcb58a5859d705a",
+      "bytes": 810
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Walter4.json",
+      "sha1": "10b1366dcc067ad5a84c0b8b6957863f41449e3e",
+      "bytes": 810
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Walter5.json",
+      "sha1": "bb874cc484880c954fc892e730da4f87f8452c15",
+      "bytes": 967
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Warren.json",
+      "sha1": "6fda5b5053f92dbecfaec549a8aaa1eb814e4991",
+      "bytes": 652
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Wattson1.json",
+      "sha1": "5e7e5f7a5cd1505461fb895211ff91ea952400ea",
+      "bytes": 1252
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Wattson2.json",
+      "sha1": "c0f5d4016e1b61c8b8bb053dbf40068a1dc056d0",
+      "bytes": 1249
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Wattson3.json",
+      "sha1": "fd94dc51700c73902f75cb6e295fbf1896cb4108",
+      "bytes": 1432
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Wattson4.json",
+      "sha1": "f1998289d7d078bbfe3c10a6e15a0b75ebd642f5",
+      "bytes": 1429
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Wattson5.json",
+      "sha1": "62583e474ce7b99b268502f08d12866283e7cc20",
+      "bytes": 1624
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Wayne.json",
+      "sha1": "f919fc5749b9532c7b891aae074ce44aa1dbbd8a",
+      "bytes": 725
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Wendy.json",
+      "sha1": "60dc79023ec9fb0bcbf863a7a30dffaf0f471ac3",
+      "bytes": 958
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_William.json",
+      "sha1": "e229455eba0977dc9940e463e0c74db59f32c11d",
+      "bytes": 722
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Wilton1.json",
+      "sha1": "2b6b4c30847563cdb2c26745a83a6fdd3ca017db",
+      "bytes": 736
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Wilton2.json",
+      "sha1": "f89761c7266a03302813e585a48090de6bad513b",
+      "bytes": 736
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Wilton3.json",
+      "sha1": "fe98f16d6c0bb1335f4a5c0ec4ccd74d24fdeb8e",
+      "bytes": 736
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Wilton4.json",
+      "sha1": "bb6d8eea3b78f05be65adbfe84f2b5fb659ed012",
+      "bytes": 736
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Wilton5.json",
+      "sha1": "d3d6be123bf65e4d7b183fda11e05f70b2a22612",
+      "bytes": 736
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Winona1.json",
+      "sha1": "95d28136e728b176b4720b39227108735094ee9e",
+      "bytes": 1451
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Winona2.json",
+      "sha1": "bd32cae6856ea123e06a3c4ced0400936b8f66c5",
+      "bytes": 1439
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Winona3.json",
+      "sha1": "8a32fc2b8ebf67b86cf8c9d0a35ce68658dfa2e4",
+      "bytes": 1626
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Winona4.json",
+      "sha1": "cb1e92e2bb64bbb1f0466c5933e6a38cf544c1f0",
+      "bytes": 1625
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Winona5.json",
+      "sha1": "36439761a8014481b90919151ffe58e00dfa7255",
+      "bytes": 1626
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Winston1.json",
+      "sha1": "33d5864aabae42f78f1839319a2f57ea41ad3d1b",
+      "bytes": 600
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Winston2.json",
+      "sha1": "c495c5df6fce4a51ef5736f9ba184864e29ddea4",
+      "bytes": 599
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Winston3.json",
+      "sha1": "0cea4d9a0fc9d18e57f70f62e092dd4e4f79a216",
+      "bytes": 599
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Winston4.json",
+      "sha1": "c6add87d9eec99dfd44660c864379a2fd4a21298",
+      "bytes": 599
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Winston5.json",
+      "sha1": "85c311f72676260a1a983ff87e2444df9c3c0d2f",
+      "bytes": 683
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Wyatt.json",
+      "sha1": "c23b9414cbc51c79ce399b4dbced7c93f21c9a60",
+      "bytes": 637
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Yasu.json",
+      "sha1": "31e9ead1a11642412ed3f2cd47d1a770e40af362",
+      "bytes": 562
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Yuji.json",
+      "sha1": "92aa07de8ce14a219e38920e0524e6530c048b29",
+      "bytes": 645
+    },
+    {
+      "path": "mods/vanilla/trainer_parties/sParty_Zander.json",
+      "sha1": "15844bbe4e7243b3f643281186829d165c386258",
+      "bytes": 569
     }
   ],
   "counts": {

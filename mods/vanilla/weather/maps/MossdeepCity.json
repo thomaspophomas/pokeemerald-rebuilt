@@ -1,0 +1,16 @@
+{
+  "id": "MossdeepCity:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/map.json",
+    "sha1": "e5f3ed3515745877143da05bc99302333d940624"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/MossdeepCity/map.json"
+  },
+  "map": "MossdeepCity",
+  "mapId": "MAP_MOSSDEEP_CITY",
+  "weather": "WEATHER_SUNNY"
+}

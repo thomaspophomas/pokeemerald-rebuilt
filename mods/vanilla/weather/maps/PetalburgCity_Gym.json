@@ -1,0 +1,16 @@
+{
+  "id": "PetalburgCity_Gym:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/map.json",
+    "sha1": "34ba789ea4c8292423a7dd5e264f33dade8777d7"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/PetalburgCity_Gym/map.json"
+  },
+  "map": "PetalburgCity_Gym",
+  "mapId": "MAP_PETALBURG_CITY_GYM",
+  "weather": "WEATHER_NONE"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "Route119:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119/map.json",
+    "sha1": "1c29f1dc3bee58d2813df5307a7b986c95776bd3"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route119/map.json",
+    "raw": {
+      "x": 6,
+      "y": 32,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE119_WEATHER_INSTITUTE_1F",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Route119",
+  "mapId": "MAP_ROUTE119",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,46 @@
+{
+  "id": "FallarborTown_PokemonCenter_1F:LOCALID_FALLARBOR_LANETTE",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_PokemonCenter_1F/map.json",
+    "sha1": "351d952038e4596255ccc8bca53055b081e79823"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/FallarborTown_PokemonCenter_1F/map.json",
+    "raw": {
+      "local_id": "LOCALID_FALLARBOR_LANETTE",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "x": 10,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FallarborTown_PokemonCenter_1F_EventScript_Lanette",
+      "flag": "FLAG_HIDE_FALLARBOR_POKEMON_CENTER_LANETTE"
+    }
+  },
+  "map": "FallarborTown_PokemonCenter_1F",
+  "mapId": "MAP_FALLARBOR_TOWN_POKEMON_CENTER_1F",
+  "localId": "LOCALID_FALLARBOR_LANETTE",
+  "graphicsId": "OBJ_EVENT_GFX_WOMAN_2",
+  "x": 10,
+  "y": 2,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "FallarborTown_PokemonCenter_1F_EventScript_Lanette",
+  "flag": "FLAG_HIDE_FALLARBOR_POKEMON_CENTER_LANETTE",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

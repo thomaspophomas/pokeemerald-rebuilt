@@ -1,0 +1,43 @@
+{
+  "id": "MeteorFalls_1F_1R:LOCALID_METEOR_FALLS_AQUA_GRUNT_2",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_1R/map.json",
+    "sha1": "ae7aaedc6042747aecd640e7cc03f55a046210aa"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MeteorFalls_1F_1R/map.json",
+    "raw": {
+      "local_id": "LOCALID_METEOR_FALLS_AQUA_GRUNT_2",
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 6,
+      "y": 21,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_METEOR_FALLS_TEAM_AQUA"
+    }
+  },
+  "map": "MeteorFalls_1F_1R",
+  "mapId": "MAP_METEOR_FALLS_1F_1R",
+  "localId": "LOCALID_METEOR_FALLS_AQUA_GRUNT_2",
+  "graphicsId": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+  "x": 6,
+  "y": 21,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_HIDE_METEOR_FALLS_TEAM_AQUA",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

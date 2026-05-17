@@ -1,0 +1,16 @@
+{
+  "id": "RusturfTunnel:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/map.json",
+    "sha1": "5da4b6f65aac47a3b5c84f9bc6aa687cf273cc0e"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/RusturfTunnel/map.json"
+  },
+  "map": "RusturfTunnel",
+  "mapId": "MAP_RUSTURF_TUNNEL",
+  "weather": "WEATHER_FOG_HORIZONTAL"
+}

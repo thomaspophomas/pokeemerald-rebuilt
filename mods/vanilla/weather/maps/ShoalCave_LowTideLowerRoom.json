@@ -1,0 +1,16 @@
+{
+  "id": "ShoalCave_LowTideLowerRoom:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ShoalCave_LowTideLowerRoom/map.json",
+    "sha1": "edca4605bca59c6a29fc1cab1413cc2df7ade6fd"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/ShoalCave_LowTideLowerRoom/map.json"
+  },
+  "map": "ShoalCave_LowTideLowerRoom",
+  "mapId": "MAP_SHOAL_CAVE_LOW_TIDE_LOWER_ROOM",
+  "weather": "WEATHER_NONE"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "CaveOfOrigin_B1F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/CaveOfOrigin_B1F/map.json",
+    "sha1": "72a67ed3a836d5fbfff6587a7a62410c70e94a67"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/CaveOfOrigin_B1F/map.json"
+  },
+  "map": "CaveOfOrigin_B1F",
+  "mapId": "MAP_CAVE_OF_ORIGIN_B1F",
+  "weather": "WEATHER_FOG_HORIZONTAL"
+}

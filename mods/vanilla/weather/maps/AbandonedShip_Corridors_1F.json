@@ -1,0 +1,16 @@
+{
+  "id": "AbandonedShip_Corridors_1F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Corridors_1F/map.json",
+    "sha1": "dce7a9977cd9f4fcb456b1254479c42201d276b6"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/AbandonedShip_Corridors_1F/map.json"
+  },
+  "map": "AbandonedShip_Corridors_1F",
+  "mapId": "MAP_ABANDONED_SHIP_CORRIDORS_1F",
+  "weather": "WEATHER_SHADE"
+}

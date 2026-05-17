@@ -1,0 +1,28 @@
+{
+  "id": "Route118:bg_events:7",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route118/map.json",
+    "sha1": "e722f5845bad96db2f079abf577a8918ccdf2db5"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route118/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 31,
+      "y": 13,
+      "elevation": 3,
+      "item": "ITEM_IRON",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_118_IRON"
+    }
+  },
+  "map": "Route118",
+  "mapId": "MAP_ROUTE118",
+  "eventType": "bg_events",
+  "index": 7,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

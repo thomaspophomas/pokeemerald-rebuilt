@@ -1,0 +1,16 @@
+{
+  "id": "LilycoveCity_ContestHall:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestHall/map.json",
+    "sha1": "b19060630b6a0d5386b95012b8c7c60337fe2d2a"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/LilycoveCity_ContestHall/map.json"
+  },
+  "map": "LilycoveCity_ContestHall",
+  "mapId": "MAP_LILYCOVE_CITY_CONTEST_HALL",
+  "weather": "WEATHER_NONE"
+}

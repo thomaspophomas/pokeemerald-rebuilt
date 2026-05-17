@@ -478,5 +478,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "LilycoveCity_ContestLobby_EventScript_LinkContestResults"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/map.json",
+    "sha1": "967323657501eb08c1fa55180db9456a6b4962b3"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/map.json",
+    "mapName": "LilycoveCity_ContestLobby",
+    "scriptsSourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc"
+  },
+  "mapGroup": 13,
+  "mapNum": 4,
+  "mapGroupSymbol": "gMapGroup_IndoorLilycove",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

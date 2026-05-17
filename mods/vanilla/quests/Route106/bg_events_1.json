@@ -1,0 +1,28 @@
+{
+  "id": "Route106:bg_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route106/map.json",
+    "sha1": "abf7343ff3b946d694c71cf3c2f2409b1e153c5f"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route106/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 53,
+      "y": 12,
+      "elevation": 0,
+      "item": "ITEM_STARDUST",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_106_STARDUST"
+    }
+  },
+  "map": "Route106",
+  "mapId": "MAP_ROUTE106",
+  "eventType": "bg_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

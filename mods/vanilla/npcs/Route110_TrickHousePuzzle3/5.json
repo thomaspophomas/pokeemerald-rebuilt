@@ -1,0 +1,45 @@
+{
+  "id": "Route110_TrickHousePuzzle3:5",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle3/map.json",
+    "sha1": "abbedc7cb32adc7c0cc02a952eeec9d58ade0fa3"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle3/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 4,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route110_TrickHousePuzzle3_EventScript_ItemShadowMail",
+      "flag": "FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_SHADOW_MAIL"
+    }
+  },
+  "map": "Route110_TrickHousePuzzle3",
+  "mapId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE3",
+  "localId": 5,
+  "graphicsId": "OBJ_EVENT_GFX_ITEM_BALL",
+  "x": 4,
+  "y": 2,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Route110_TrickHousePuzzle3_EventScript_ItemShadowMail",
+  "flag": "FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_SHADOW_MAIL",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

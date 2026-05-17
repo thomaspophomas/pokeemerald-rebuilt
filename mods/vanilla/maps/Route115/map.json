@@ -451,5 +451,26 @@
       "item": "ITEM_HEART_SCALE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_115_HEART_SCALE"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route115/map.json",
+    "sha1": "b6c6b6d8e02d782dfc66ddae4e4cf9145461193d"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route115/map.json",
+    "mapName": "Route115",
+    "scriptsSourcePath": "data/maps/Route115/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 30,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

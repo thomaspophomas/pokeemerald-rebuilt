@@ -1,0 +1,45 @@
+{
+  "id": "Route107:7",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route107/map.json",
+    "sha1": "b7e9ab54167c1386aedfbb06805624227a3eafde"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route107/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
+      "x": 50,
+      "y": 5,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "Route107_EventScript_Camron",
+      "flag": "0"
+    }
+  },
+  "map": "Route107",
+  "mapId": "MAP_ROUTE107",
+  "localId": 7,
+  "graphicsId": "OBJ_EVENT_GFX_SWIMMER_M",
+  "x": 50,
+  "y": 5,
+  "elevation": 1,
+  "movementType": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "5",
+  "script": "Route107_EventScript_Camron",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

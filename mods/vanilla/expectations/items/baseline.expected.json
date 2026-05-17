@@ -1,18 +1,1948 @@
 {
   "domain": "items",
   "schemaVersion": 1,
-  "fileCount": 1,
-  "jsonFileCount": 1,
-  "bytes": 70110,
-  "sha1": "bbd03b7cf3bcd634588dfb642f787ee26bebe1c6",
+  "fileCount": 387,
+  "jsonFileCount": 387,
+  "bytes": 280563,
+  "sha1": "869220c3f0a40d2398d19125433a4adca2778614",
   "files": [
     {
-      "path": "mods/vanilla/items/manifest.json",
-      "sha1": "7bc1e3e9b8ba9518ee6c48b53bae9571ecaccc4e",
-      "bytes": 70110
+      "path": "mods/vanilla/items/_source_manifest.json",
+      "sha1": "51f9e61a58041ff64269d118d1b17a50e89a47e1",
+      "bytes": 70143
+    },
+    {
+      "path": "mods/vanilla/items/index.json",
+      "sha1": "38f07e845bc398fdfb7c84a1027de26d331dfe13",
+      "bytes": 86192
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_034.json",
+      "sha1": "e73f559780bde9f069c2eba843189c536fe58f7e",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_035.json",
+      "sha1": "24065374d45817873d9862d808b56afe2aa7d89d",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_036.json",
+      "sha1": "5b95277b02b4c7e941ef8b3119ef21b692c5206f",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_037.json",
+      "sha1": "9e2203a607054cc27ce5eedb353205b391c407d6",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_038.json",
+      "sha1": "9cdf0e5686da17af44a165028b5274255600635b",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_039.json",
+      "sha1": "9986229182d064b120a84cad70fa56675bc38da5",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_03A.json",
+      "sha1": "3689d3cc6d330071771df31b6e4204f0d46c8067",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_03B.json",
+      "sha1": "9dc0bff21ec19055b558eb984c5cca4693b43172",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_03C.json",
+      "sha1": "a03f7bcd8847d3786c6220018277bf46ef6233aa",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_03D.json",
+      "sha1": "282504b153d6fba5a2b73a1d34f46acea589d133",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_03E.json",
+      "sha1": "ee320dcb2b38f771a38eec561136b0c150cda268",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_048.json",
+      "sha1": "140a358e8e6817eefd433dafb38af139c1cd7c25",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_052.json",
+      "sha1": "e307e4111d7fba3028bf109e16a425ea2014f0e9",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_057.json",
+      "sha1": "43061fb8a15c448a70a19fcf399e2367bd40d9bd",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_058.json",
+      "sha1": "3f3a17b4f2794ecb626dcb11e77aee09a0e7803a",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_059.json",
+      "sha1": "b1846063df17aa7c76a39614bf35d28551f2ed0a",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_05A.json",
+      "sha1": "2eb0deb49c0303a2d7fd3e11f3db890c75845098",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_05B.json",
+      "sha1": "e1508571b0139a376be44107ac603db5ec009dbc",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_05C.json",
+      "sha1": "f983827387987d052d1b73965dccbdcd5e915218",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_063.json",
+      "sha1": "6b13c065fefc397b2e8a6d80f7f560756a79435d",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_064.json",
+      "sha1": "b3d356701658ba1736fac0dc77854b5492989364",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_065.json",
+      "sha1": "983f12aa536d3b15ecdef6705f88bcf47ca2a18e",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_066.json",
+      "sha1": "c5917ec76a025df9bce6974fa8f24a2276dedc33",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_069.json",
+      "sha1": "42161621c59bfdf0508fe2447443adbb78c61216",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_070.json",
+      "sha1": "4db216004d911c0bd161ba0a686351a64f1fe03f",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_071.json",
+      "sha1": "88d335560b5c2e6faf318b1e13c3ff90da2d9747",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_072.json",
+      "sha1": "43a5151414e14289cb368e66f85dd4e9672242db",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_073.json",
+      "sha1": "a3aae8f6f932d27f50d7a6fa4aac436ba47c4308",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_074.json",
+      "sha1": "cd6f666d32c5b2c49e32233779a91e61f98e3556",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_075.json",
+      "sha1": "102c5ed6ded3c5ff1bb291aa4be5beee9afeb12f",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_076.json",
+      "sha1": "2e4d36104c177f279d836178f9bd12fba266576f",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_077.json",
+      "sha1": "4e29eeb6d69fa82809eb1f7a7093ae350b907dda",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_078.json",
+      "sha1": "0bf9ec07266ec2e4ac45329d868150cf4f308e12",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0E2.json",
+      "sha1": "986a626d34d2b9ee108ec44a530343de4e5f0ef4",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0E3.json",
+      "sha1": "fc166dbbf14f0b8c28ef084333428332014441fe",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0E4.json",
+      "sha1": "3babef434af613d8511f8bdee29e3baef6f219b9",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0E5.json",
+      "sha1": "6f963befd2172c2ae8a1ba86329bc78dbffeb545",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0E6.json",
+      "sha1": "5b44d9df8c4a5e728c1d638c50feef686373de53",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0E7.json",
+      "sha1": "cecb61961d9eb873198ccbdda6128684281727cc",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0E8.json",
+      "sha1": "53572c3c8eb9930366132d5e8e9bd490e8caebbc",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0E9.json",
+      "sha1": "506b9ac33f17986d1ff13b8bd9f9f58463737b1e",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0EA.json",
+      "sha1": "0a67213ae9575bca81c2102a66caad762d9b7c32",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0EB.json",
+      "sha1": "305dcb80d4444e821bcc47bb1c35fe9b173bcb65",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0EC.json",
+      "sha1": "7d15b58d9f57564440e93c484a9c9198e229687a",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0ED.json",
+      "sha1": "69f0bea9d4e8f2a2056dc41d47748f5be796ed91",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0EE.json",
+      "sha1": "0c0157ce54ea825492b956b7a1d5841db47859cd",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0EF.json",
+      "sha1": "e8675ccbd068ec963837b3704d02f6627cfafd4a",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0F0.json",
+      "sha1": "b241e5e8e5c443962e46bb1d6f044bc7849496d5",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0F1.json",
+      "sha1": "97de5e8a16a5dddc40d3b2aabad4282be714637f",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0F2.json",
+      "sha1": "c2723d9c3a8c2cf4d9386dfc6d39dbc65a73e9d3",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0F3.json",
+      "sha1": "b340569e37a44cc841cee42f4d7e60f02ad4dbe3",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0F4.json",
+      "sha1": "5c19d40353e7748eb8070b24f112ed0e6a8ace3d",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0F5.json",
+      "sha1": "e57be43327c228b475e1388e28fa52467c5d52e7",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0F6.json",
+      "sha1": "9261a5bada31b86fc76f75a2f45da6cf3eedd2c8",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0F7.json",
+      "sha1": "28164121fc3ce9ac17d29edc3f62e513fcbab3d2",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0F8.json",
+      "sha1": "c7148a9aa4df54cab896774e85581fb507dfefb7",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0F9.json",
+      "sha1": "1f4132575da6be0262f1cf0e850e748399ada612",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0FA.json",
+      "sha1": "d8877529901be7e9817fc93d16340cbd86d6a617",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0FB.json",
+      "sha1": "f7cebecc1c0f06a9712ff4ee209e64b518ae32c5",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0FC.json",
+      "sha1": "43aa3f2f4c20e4ff3df5d9ac3bebbb3653f93e78",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_0FD.json",
+      "sha1": "62376cc0548319df4c5a579a1efc18bc2bc25fad",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_10B.json",
+      "sha1": "cf5427fb83d97b2e776f67ea9a94736ed1d09d4b",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_15B.json",
+      "sha1": "67b046fab6a02ebb9f6d4a3afcfa4ca5e1a95b17",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_15C.json",
+      "sha1": "30ab7824771b89188d6480836dd443e30c63cb85",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_ACRO_BIKE.json",
+      "sha1": "d7b6accbb440f0b21d948fc1580ce8e4ffa525d4",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_AGUAV_BERRY.json",
+      "sha1": "35da1b783846bf3a709946bb91507c9bbaec50d2",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_AMULET_COIN.json",
+      "sha1": "202f35926c0a82b218eae129a102027b521f4ecd",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_ANTIDOTE.json",
+      "sha1": "2c4986c9127035c524ecfba3b5d564a77a978edf",
+      "bytes": 322
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_APICOT_BERRY.json",
+      "sha1": "206d1a3a56cfc37c522a01d8e7bbf7620a18e623",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_ASPEAR_BERRY.json",
+      "sha1": "7d5d300314f9ecbec87ab4a2cca67c30277081ae",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_AURORA_TICKET.json",
+      "sha1": "4a31f9dcdd541f9eeb87cb80d2f7a0118067d24a",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_AWAKENING.json",
+      "sha1": "bc786d1afd8942c6ace851112c1c060534b3c3ff",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_BASEMENT_KEY.json",
+      "sha1": "c9c197b1cfcba59e0af9364ae333084b0897c741",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_BEAD_MAIL.json",
+      "sha1": "47a2800bf52909fcdbb910391ae16c8600a78dfc",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_BELUE_BERRY.json",
+      "sha1": "6d5b360b194434d624e8a313ba5643f8a1b28ad3",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_BERRY_JUICE.json",
+      "sha1": "8ed1c15d130e1eff6cbdafcbda24cc962de134de",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_BERRY_POUCH.json",
+      "sha1": "52ec7d25805d3e78c3f63ad9338326380f87417e",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_BICYCLE.json",
+      "sha1": "cd54ae00134a422c15f86f2720f969bf7f2d12ed",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_BIG_MUSHROOM.json",
+      "sha1": "cf4b704449a65944f1fba9eeecb0b81b36ff306c",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_BIG_PEARL.json",
+      "sha1": "d1623abb0a5cfe0b4d903a634d693aecf040a58b",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_BIKE_VOUCHER.json",
+      "sha1": "3887386bf4a00596c66e12daddd02b4ef4a4d40d",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_BLACK_BELT.json",
+      "sha1": "450fd188fafaf60cfae41325c4125ba414f78259",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_BLACK_FLUTE.json",
+      "sha1": "8d8595c7977d93a64437d3ea07660454964aea35",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_BLACK_GLASSES.json",
+      "sha1": "70c27c28e5ba333087282f64810551058e8e9589",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_BLUE_FLUTE.json",
+      "sha1": "72429fde4731378d87e974a9df11cba0553f2d67",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_BLUE_ORB.json",
+      "sha1": "44d42e64159a7e945bde833216db1a92e9add768",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_BLUE_SCARF.json",
+      "sha1": "4da2a52b452ab37d1a632a0b2d3fd65ebea1d980",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_BLUE_SHARD.json",
+      "sha1": "31e2452c3265f25275516bdd5c4f1788c52ea30c",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_BLUK_BERRY.json",
+      "sha1": "63ee743214b5f94c541dd965aa510ea7dd97225c",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_BRIGHT_POWDER.json",
+      "sha1": "b406d11f3888f5142e100bd89b69e24d252a32fe",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_BURN_HEAL.json",
+      "sha1": "9e68c180cdd5b9ca0646a10cfdc45b2b7f01db78",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_B_USE_MEDICINE.json",
+      "sha1": "d13759bd28c375871e128c4fd686fc4b4382edd5",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_B_USE_OTHER.json",
+      "sha1": "d506411573857f9272b39646314fb0a06eb0f626",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_CALCIUM.json",
+      "sha1": "8a6ee3cae9fc5c102e8626a838e53ac9241e6222",
+      "bytes": 320
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_CARBOS.json",
+      "sha1": "de1ff2fcce3449abd50c669bdf367ef72f375628",
+      "bytes": 318
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_CARD_KEY.json",
+      "sha1": "00b6efa3ea4abae383eca32b4d3fab96e8c968a6",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_CHARCOAL.json",
+      "sha1": "5c72c4474f01118d6c2d0daaadb4d6331d2892cb",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_CHERI_BERRY.json",
+      "sha1": "526da4358319bb449f553b31c1698a79ae1b4dd2",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_CHESTO_BERRY.json",
+      "sha1": "a170dff70fcf23a62b849092cce89566bea144ef",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_CHOICE_BAND.json",
+      "sha1": "fa12e7b3cc6eaffffbe3077b0532f2e824077d7f",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_CLAW_FOSSIL.json",
+      "sha1": "a06047acb590c04bd0b6192fa480b384a700cae2",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_CLEANSE_TAG.json",
+      "sha1": "71e37b1de74948bdadb04376e9692606b9f83a1a",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_COIN_CASE.json",
+      "sha1": "b47c3a55f41c20fb94b02e72f4a80c90bdc8ea8c",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_CONTEST_PASS.json",
+      "sha1": "5165b2f5aed43026677c70adeefab2137dc1476d",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_CORNN_BERRY.json",
+      "sha1": "8f965e4b0d96e7a3e78fdb8a5c84546e3620c500",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_DEEP_SEA_SCALE.json",
+      "sha1": "4844ead8648fbec66fc7fcb2e87d4a0b54f29316",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_DEEP_SEA_TOOTH.json",
+      "sha1": "fc4a3759e23d0cb00db904f60ea052acb32badea",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_DEVON_GOODS.json",
+      "sha1": "4c7da61ff9b008253884a56e7ae025108cc8bd7a",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_DEVON_SCOPE.json",
+      "sha1": "ded410f76dd1e3b0c5a228b92fac0d7a02afa7eb",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_DIRE_HIT.json",
+      "sha1": "5a854e1e39026ae17597df6fe11b27545f79ba2e",
+      "bytes": 322
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_DIVE_BALL.json",
+      "sha1": "c341b3830b144a3f8527c641e2ae5c802f7ff859",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_DOME_FOSSIL.json",
+      "sha1": "8219e347ecb5afdc166be48d805ba59bca1769e8",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_DRAGON_FANG.json",
+      "sha1": "145042ab292b0ae3b846a61e8f4f5fb7aee276fc",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_DRAGON_SCALE.json",
+      "sha1": "4b13c8ed8a9ab331db3f9620931fa758ab52d2b2",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_DREAM_MAIL.json",
+      "sha1": "2ec8c8d7d96449de6ce84a5d861b397b93b82c7c",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_DURIN_BERRY.json",
+      "sha1": "2949cb258b1d4dbbd459050c8c1ac0a56dc28976",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_ELIXIR.json",
+      "sha1": "fe96e500bc16e368ae079faa4a0ed28755546d60",
+      "bytes": 318
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_ENERGY_POWDER.json",
+      "sha1": "d25fe80b7acded5840f84c8e1246edced02d546b",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_ENERGY_ROOT.json",
+      "sha1": "cde7dba885054f42b56b8ab064fb71b9a0042cd1",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_ENIGMA_BERRY.json",
+      "sha1": "13a071d6f7d381a4c323b9eeefc442fa85d9bc1b",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_EON_TICKET.json",
+      "sha1": "cb5834f94f76f43bdaba2f2ae6ae3b9c21ab6a53",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_ESCAPE_ROPE.json",
+      "sha1": "dbdf5f074ba89a17b93c4715ce9c1378d6d20308",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_ETHER.json",
+      "sha1": "2c0cc72887039b7e617ddce30489a69c24e3e9d1",
+      "bytes": 316
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_EVERSTONE.json",
+      "sha1": "4b71d98572b54676436f06fb29596617ddb253f3",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_EXP_SHARE.json",
+      "sha1": "f6bf0547000e103efc5fb03797f15961f6767d7a",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_FAB_MAIL.json",
+      "sha1": "b0675390e225e7b31c6e12b26edb7f90e1cc93e0",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_FAME_CHECKER.json",
+      "sha1": "49a824020e88f1281332edad79149600490dfd17",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_FIGY_BERRY.json",
+      "sha1": "3b93dfb6d4b00d036a8807f670285094d8259f6a",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_FIRE_STONE.json",
+      "sha1": "3a807f2aec95dfd497eb80bd515e66df66ebe704",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_FLUFFY_TAIL.json",
+      "sha1": "54058a7029d3fff474e4397cb8c143e0ae677a3e",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_FOCUS_BAND.json",
+      "sha1": "ef9a775707645d0de66eb7e0ba1cbbc92b3058be",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_FRESH_WATER.json",
+      "sha1": "cabec29ffe9849ed1d5fd4f666b00ad9478ffece",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_FULL_HEAL.json",
+      "sha1": "1deabec18184400af1d5089f44e28ffb45df881a",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_FULL_RESTORE.json",
+      "sha1": "29498d1d1773a84af1ba920271768b5c21ee42e7",
+      "bytes": 330
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_GANLON_BERRY.json",
+      "sha1": "a70bdff541962568f31de62485eedbed11d51ef8",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_GLITTER_MAIL.json",
+      "sha1": "b2089205a79e24b28da74a57c1debe774d4076a7",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_GOLD_TEETH.json",
+      "sha1": "05d82aaad5e6d2b4d0af9d2d6ff33e6be4984e16",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_GOOD_ROD.json",
+      "sha1": "7a7796f3c0c9e52b290c312804b7a7e8d0b61bae",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_GO_GOGGLES.json",
+      "sha1": "ff66d9a5dc1a2373cfce8de96d8f3892578f239b",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_GREAT_BALL.json",
+      "sha1": "a13c8ea523de4cd6bec76304e84be675d448fd55",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_GREEN_SCARF.json",
+      "sha1": "8beab67c1458c17b4e9a97f83e3622d03d897699",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_GREEN_SHARD.json",
+      "sha1": "8e01cb0318ab9697065003ae2274d876f3b17ed0",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_GREPA_BERRY.json",
+      "sha1": "091d807cd6ca541454632e5273329eb950f5c9cc",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_GUARD_SPEC.json",
+      "sha1": "d309f666ddbfd1c0b96997bc418dcc59ba809ad5",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_HARBOR_MAIL.json",
+      "sha1": "5ee9526e43cdaf6af580c79254a557877529e0d4",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_HARD_STONE.json",
+      "sha1": "83db3e5bf22e90b8cdb3a6c3dfd623c577a82720",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_HEAL_POWDER.json",
+      "sha1": "6a3a44122e1bdc3ac8d531f53bf7c42924bb8e66",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_HEART_SCALE.json",
+      "sha1": "4851063b23d8704ff2badbf3277f551409d0f114",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_HELIX_FOSSIL.json",
+      "sha1": "1a1ea2924c762dcaae57088e3b345c946187dd41",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_HM01.json",
+      "sha1": "ee9bc991943952157be89e929516319a71e28079",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_HM02.json",
+      "sha1": "f9b3f8ba9ab5abf4d0f1fed4a186e05f75856b5f",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_HM03.json",
+      "sha1": "f5ab0718d80d3b4c157ed3659e65520734f1be83",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_HM04.json",
+      "sha1": "217cfb18480f0b9213db56da591e7abc5cde9d47",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_HM05.json",
+      "sha1": "c2e43407a5061b0eba30981970aecd5e2c26432b",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_HM06.json",
+      "sha1": "50c5ec91b8665fa6e37c7508f8cd808ddfe26a19",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_HM07.json",
+      "sha1": "180a155b5dd21ba85a1b43e645ad356770806154",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_HM08.json",
+      "sha1": "55b5a33deed8d14eb81f6493f0528b6d3062a091",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_HONDEW_BERRY.json",
+      "sha1": "2ea62c4e5ac4e8a4c7241a92147f7353ce042ea5",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_HP_UP.json",
+      "sha1": "39338eda73a65b927bb2fc10c87754e1efb8e312",
+      "bytes": 316
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_HYPER_POTION.json",
+      "sha1": "0f3edf0dc7ac0ef578d6cb1ec3f39d4bb373cdc9",
+      "bytes": 330
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_IAPAPA_BERRY.json",
+      "sha1": "b831500f4316cf154084a52d1dcbf57bea956b32",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_ICE_HEAL.json",
+      "sha1": "41cb26411b0cdcb55c68254633d5fd21733e6454",
+      "bytes": 322
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_IRON.json",
+      "sha1": "e6fc4f0cc7985ae4998cd73474728a4ee1144741",
+      "bytes": 314
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_ITEMFINDER.json",
+      "sha1": "ba49919c6d45f5ce3ed2c30bc9ee4f8e85ce8181",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_KELPSY_BERRY.json",
+      "sha1": "5933614f64d1459a03f82e1a7d87a557cd7af02f",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_KINGS_ROCK.json",
+      "sha1": "e81741974bbb8287aaa64569de8902c9cbfa8e06",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_LANSAT_BERRY.json",
+      "sha1": "361915d17c39111be3b9280335a8f6b8f269750c",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_LAVA_COOKIE.json",
+      "sha1": "ad344235a9dfe7148150e79516241d5830a98613",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_LAX_INCENSE.json",
+      "sha1": "ef5f8a9a634da93716351eab608c372bdff8a777",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_LEAF_STONE.json",
+      "sha1": "cd6c474ace5f77570f6551dde09a55de39356321",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_LEFTOVERS.json",
+      "sha1": "51fe0f243d390dc25cc9d6fd7fe42024db1f15f8",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_LEMONADE.json",
+      "sha1": "5035138275100f6147f3f9ed6003e8289f01cd5c",
+      "bytes": 322
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_LEPPA_BERRY.json",
+      "sha1": "f9052f208aa11a8ee4d1dd9fbe4c92cde4f0a5b1",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_LETTER.json",
+      "sha1": "7ae98b19b9b91861dd45639339757431cc75ca4e",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_LIECHI_BERRY.json",
+      "sha1": "567e43c47d5c7d4bab4609c87c85055810e28978",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_LIFT_KEY.json",
+      "sha1": "0f0aa0d1365660cb7ac9bac604729f6d00198b17",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_LIGHT_BALL.json",
+      "sha1": "b66e78d01a980acb96bb8084d821d99d37577e17",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_LIST_END.json",
+      "sha1": "50688fd6394513fa0c9bdd096241fc2f00c35b4e",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_LUCKY_EGG.json",
+      "sha1": "16ec29b8590911bda82f2bd1d3a872d32691fd47",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_LUCKY_PUNCH.json",
+      "sha1": "27e51b9dcc37c31882e50e02cf26698b0772a4ff",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_LUM_BERRY.json",
+      "sha1": "9fe1691e35bf43a9eb0ca333c99bd1188a5ebfce",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_LUXURY_BALL.json",
+      "sha1": "be0da657d166692bf0822903a172717b4ce2e4c5",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_MACHO_BRACE.json",
+      "sha1": "1f5a0acb2c87dc4468dfa699603d9b7e004f9efe",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_MACH_BIKE.json",
+      "sha1": "5227c53691d09f86f6dd029ff0296ebfe3a7afd7",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_MAGMA_EMBLEM.json",
+      "sha1": "d9f9400483812dad82e5967c29723cf18d04218a",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_MAGNET.json",
+      "sha1": "9bcb3a58624f427bace63a86aa9908ddba5bf6a5",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_MAGOST_BERRY.json",
+      "sha1": "7a18426c4f34e810ee495642315ed23734634ab5",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_MAGO_BERRY.json",
+      "sha1": "38c9e1af7ed674ee30a06c419372371f6b1790ea",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_MASTER_BALL.json",
+      "sha1": "3525e9bdb18ae8ce4ff733bfcd6c8d308d353b46",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_MAX_ELIXIR.json",
+      "sha1": "e79d124c99fbf323ab34330104a84ec288bd419d",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_MAX_ETHER.json",
+      "sha1": "cbfc94bb24d46cbde789053e2cbebe481a9806a5",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_MAX_POTION.json",
+      "sha1": "86ec798cb04d9383d1e714acd488d99ebd26e505",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_MAX_REPEL.json",
+      "sha1": "9eb4cb07418b7066692c1bca2d58c861a8bc3a34",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_MAX_REVIVE.json",
+      "sha1": "1427f950acbc0bf4d196c246c1877663e71d7089",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_MECH_MAIL.json",
+      "sha1": "bf5adac1a01fe29311f98d158febfddd159fe1f4",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_MENTAL_HERB.json",
+      "sha1": "e17134af909e34dccfeb7d95cdd0a0424fdfc931",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_METAL_COAT.json",
+      "sha1": "4c456afd24ec80aee38da28f0e67ff29cf8ee9d8",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_METAL_POWDER.json",
+      "sha1": "3162cac250fb7682276f87480d1ddc72d7b14337",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_METEORITE.json",
+      "sha1": "0deca7b6ea35676ada051cb162edc9ff4929b801",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_MIRACLE_SEED.json",
+      "sha1": "d4d70f1177942b016cd09ecfdd85991cd49bdc89",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_MOOMOO_MILK.json",
+      "sha1": "8dd19ad1fb74b702848e5be2f20fa29e33457351",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_MOON_STONE.json",
+      "sha1": "b0d75b3bf67954c103ca73fcfe0bf1d94c060524",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_MYSTIC_TICKET.json",
+      "sha1": "5c27e4b28e53ace03afe2f793b0a3aa2e3006ff3",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_MYSTIC_WATER.json",
+      "sha1": "e18eb4632aeef2a402b555429a39d40df5b81a55",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_NANAB_BERRY.json",
+      "sha1": "3f7365d19682031472ba2225c2a7f2c63a4eca5f",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_NEST_BALL.json",
+      "sha1": "9236cde6d367ecd6addc1c3b7665506ae6ef1aef",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_NET_BALL.json",
+      "sha1": "0e9e5a9678df37be95f15e8f085c3b6f263b35b8",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_NEVER_MELT_ICE.json",
+      "sha1": "d6103bf8bb36f64a012d446049c8dcd97a6f1452",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_NOMEL_BERRY.json",
+      "sha1": "d90ea69d0315f7da2cbef7d1d06b5bbf98ba072e",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_NONE.json",
+      "sha1": "09ac324e17fb0a9aae05ce5656819ff2ed6e37fd",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_NUGGET.json",
+      "sha1": "eaa04c6a9874001079c6d12ff5fad04421bcaa44",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_OAKS_PARCEL.json",
+      "sha1": "d0e2dcdf52961758102d608317907cd54b8bcf80",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_OLD_AMBER.json",
+      "sha1": "40aca1614d7464bb4708f3e8dc903a8816c9cf0d",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_OLD_ROD.json",
+      "sha1": "891ad911754ad7177cabc694233e65837274fae6",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_OLD_SEA_MAP.json",
+      "sha1": "1aad37454df8cd87a58867e98d7f0e7998fae258",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_ORANGE_MAIL.json",
+      "sha1": "87d03155552a305c47a34c85f34b0ff420aa4ac8",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_ORAN_BERRY.json",
+      "sha1": "f70d53fb252ecb0890901d429c2f62e5cb942aa8",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_PAMTRE_BERRY.json",
+      "sha1": "a8536eface9f2c31fddd62599b6256072426b4de",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_PARALYZE_HEAL.json",
+      "sha1": "fc364be54ffb1be13524ab2f1d72c6202f16d90c",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_PEARL.json",
+      "sha1": "1367818573f68baf8891295e48f889dff3dba546",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_PECHA_BERRY.json",
+      "sha1": "265bc7d5780706b6cc5639c780dba48e80cc780d",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_PERSIM_BERRY.json",
+      "sha1": "1949cbe8369bf2ee57cdf4b4daecebef54a87f62",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_PETAYA_BERRY.json",
+      "sha1": "d46364d6eb1a030dbc53a6098c4d99531b219ea7",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_PINAP_BERRY.json",
+      "sha1": "e2565efe945b067f8bfab465eea4ab00853d177c",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_PINK_SCARF.json",
+      "sha1": "4ec0040ef8e4b73098f6c1f26352a2eddd8cff3a",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_POISON_BARB.json",
+      "sha1": "191f37f20f33d04307a047e017c7bb04d223ff49",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_POKEBLOCK_CASE.json",
+      "sha1": "d4db8de75cf0b88cd8c4b99d5ea3e133e386612c",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_POKE_BALL.json",
+      "sha1": "b6e25eebd97425e817f797c757295517eddd11e1",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_POKE_DOLL.json",
+      "sha1": "f828cab54299786b90fc777030d6644c215a8ed3",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_POKE_FLUTE.json",
+      "sha1": "71ae9082cd41153739911a8927d09ce7a7774e45",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_POMEG_BERRY.json",
+      "sha1": "bcd7cb577225d1a031faa61cf6413ae492cc717d",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_POTION.json",
+      "sha1": "e411e8f6065c0dc98e92bb17179bd6f0b9bc9367",
+      "bytes": 318
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_POWDER_JAR.json",
+      "sha1": "3b87f77fba116019341e70a0dbd4cfa19d9e2fc0",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_PP_MAX.json",
+      "sha1": "abb7cbcf8c363459050f8965284eb917ec48e408",
+      "bytes": 318
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_PP_UP.json",
+      "sha1": "5f3b47bf06ec6c3ea3e7be2ddca8a524057df86c",
+      "bytes": 316
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_PREMIER_BALL.json",
+      "sha1": "bf66c4dbe24f629d5f3c984a1ecb2d4733ca7659",
+      "bytes": 330
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_PROTEIN.json",
+      "sha1": "7308a26182f796a9dcca791a4615a502ea9692b2",
+      "bytes": 320
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_QUALOT_BERRY.json",
+      "sha1": "881296d63c3b2056c41535ebee75ebbb0fc5068e",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_QUICK_CLAW.json",
+      "sha1": "33b07304182eb3d99d4ab34d651b504c8068887a",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_RABUTA_BERRY.json",
+      "sha1": "1d8073f7b0e9ac8a7cdabddf0e73726ad64ad433",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_RAINBOW_PASS.json",
+      "sha1": "63119b00a48d45dffd0ca71102258274894d0e86",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_RARE_CANDY.json",
+      "sha1": "c4d7099c8d88f20adba14b75fb4fa55cb9193b96",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_RAWST_BERRY.json",
+      "sha1": "0215c55bc5cdaf2ef5cda906868d0afb5b2bd6ba",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_RAZZ_BERRY.json",
+      "sha1": "af73e8532d0909d41a1adc6e268d5d8fef445d94",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_RED_FLUTE.json",
+      "sha1": "42b336b9ddf13d1bbf3e54ab2f739981428045a3",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_RED_ORB.json",
+      "sha1": "3ff40311762173ed9ce173aedf0e9e82104631ae",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_RED_SCARF.json",
+      "sha1": "1fccf9461417636fca581494e0b1059d677556ff",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_RED_SHARD.json",
+      "sha1": "5eb819158a3e397efc87e9d85a1199959b9732f9",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_REPEAT_BALL.json",
+      "sha1": "6511410943a1d6438a1c159020836d38cab34c18",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_REPEL.json",
+      "sha1": "f105b81a12cd65274ab102e4818344e9e854234f",
+      "bytes": 316
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_RETRO_MAIL.json",
+      "sha1": "eb5ca37695b26fae153ada10031507cce7b88f8d",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_REVIVAL_HERB.json",
+      "sha1": "822efb23de7ec72ada40a5b47754d46c00241f68",
+      "bytes": 330
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_REVIVE.json",
+      "sha1": "ea3cd0039584b96f174f56625cefd5fc3041c6b0",
+      "bytes": 318
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_ROOM_1_KEY.json",
+      "sha1": "b9c7b9147291865e36a68ad9e72d36b5fc6af7cc",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_ROOM_2_KEY.json",
+      "sha1": "85de9c7b90a866154a7002ef9a3f5b681cc7f722",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_ROOM_4_KEY.json",
+      "sha1": "3ff6a57a73335f7ca76272d61ff50e1304169104",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_ROOM_6_KEY.json",
+      "sha1": "b68533de7f732aaf46cf3e91a2297b2ab15a9b7c",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_ROOT_FOSSIL.json",
+      "sha1": "c798613f8665d9a16e3d2ff3d7f795905c16c0af",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_RUBY.json",
+      "sha1": "315b35e6e1757b3100287261ff5c4ce9bd843e69",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SACRED_ASH.json",
+      "sha1": "4a00372c14384358d9cbf6b4c0cabe8c914afa60",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SAFARI_BALL.json",
+      "sha1": "caa86e0e5efcd32cadb5b939be5583bce189fb1f",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SALAC_BERRY.json",
+      "sha1": "7318cfdd893b04affe4d87670037adefef3aab58",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SAPPHIRE.json",
+      "sha1": "c33ef410edcc081c92ecb75c9405222d9be845d2",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SCANNER.json",
+      "sha1": "2798544c0ddb9c1adc02850e186e6f25631a67a9",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SCOPE_LENS.json",
+      "sha1": "603d303bfdc185ee12d6fb008ad195f9d4a1918b",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SEA_INCENSE.json",
+      "sha1": "62bd0a08c21e2e0a080f7450098742551b6bb2dd",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SECRET_KEY.json",
+      "sha1": "2c2cf5314885a3f4d35a761ad601e5f86ea56d03",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SHADOW_MAIL.json",
+      "sha1": "e1cf9cd6c5aa04de5c0c6273e4a4157a5701ad7a",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SHARP_BEAK.json",
+      "sha1": "b93345d73ae590551cafefe8d642b7692545cef9",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SHELL_BELL.json",
+      "sha1": "0b28ef5c6a68338eaed43757326e6ec0626c33d1",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SHOAL_SALT.json",
+      "sha1": "88f7710de650f2c273df354b85476bda190a535e",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SHOAL_SHELL.json",
+      "sha1": "2587c1a4254e9eab56c6702fc88fad2b9ebc73e7",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SILK_SCARF.json",
+      "sha1": "7caba59067770c11b99bb6c6f53ab514611331bf",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SILPH_SCOPE.json",
+      "sha1": "1886584b0c93a0227797cb2a02165b0563dd9e9d",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SILVER_POWDER.json",
+      "sha1": "2184006d706519ef5d8e32cbcfce31c503e27baf",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SITRUS_BERRY.json",
+      "sha1": "100f0ee25eda7754f50e2f1c086cf98edfc91ba1",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SMOKE_BALL.json",
+      "sha1": "d50c8013bc586b2d47eb8b6f2cf5d4227eaca818",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SODA_POP.json",
+      "sha1": "3b71ed7c1f77192d4b2d76d401779e7c5b8c6fec",
+      "bytes": 322
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SOFT_SAND.json",
+      "sha1": "3e41df1781fe133e346ecbddb94f2e8629ac2c58",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SOOTHE_BELL.json",
+      "sha1": "7211d57cc9207b23518a0bf6cad55b15635dc758",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SOOT_SACK.json",
+      "sha1": "ffc29b4361f270a7493ebe30f7a8f21a3cb087ac",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SOUL_DEW.json",
+      "sha1": "9a2bccd0bde8f64304d4ba152351186da5f543b5",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SPELL_TAG.json",
+      "sha1": "0376c7e919b31f1c0757b19b05db36839625e2be",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SPELON_BERRY.json",
+      "sha1": "2f5d3119d1601e17aed4baa22a787409d8fe7513",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SS_TICKET.json",
+      "sha1": "9780d26db2820ff752db835c618523f6b7676735",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_STARDUST.json",
+      "sha1": "38e286dd34ae6f0d972a4ad9553bb3198b652a5d",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_STARF_BERRY.json",
+      "sha1": "533d163ceb8a0d1fc1917f780e20184bca104599",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_STAR_PIECE.json",
+      "sha1": "22dd7de3f8ea61895cb8df4cda398c6c8a1c80a2",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_STICK.json",
+      "sha1": "820d16d52b60ab79ab3e90e39a14ee870d0bd597",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_STORAGE_KEY.json",
+      "sha1": "05071fc54fa95daa7f4beed652885f06f258596f",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SUN_STONE.json",
+      "sha1": "213b5a44d733abc3069cc9f0031d3940bcc9f7e5",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SUPER_POTION.json",
+      "sha1": "f7b54658ab309c8f891d3329c9990cb48a475db4",
+      "bytes": 330
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SUPER_REPEL.json",
+      "sha1": "6e967a6c6a9e3769cd86b6ed61170444cbcc7aef",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_SUPER_ROD.json",
+      "sha1": "d2adf20526313f6c5af110cb69e6ccfb643e6522",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TAMATO_BERRY.json",
+      "sha1": "f62e80bb52af16e38f1916322d098f73d83f5e26",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TEA.json",
+      "sha1": "587d50c4b0094a977a75a256ca6b250ff55ae907",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TEACHY_TV.json",
+      "sha1": "1ca7268fc4bb8329185eb56a1d82618229cd4bbc",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_THICK_CLUB.json",
+      "sha1": "a51b5983a18e8ac5dbfe9e71445741fdd044b2d2",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_THUNDER_STONE.json",
+      "sha1": "a3ecb6be3fca7c9eb8a15434ba91c8192d9305d5",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TIMER_BALL.json",
+      "sha1": "82f37294d81d03d0221f1d760b8b103b7ade1ceb",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TINY_MUSHROOM.json",
+      "sha1": "4879bb6862d51a1416d5a865be2da2ed4ee3228e",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM01.json",
+      "sha1": "a3264a931b7a6222be5a5708f6747dee6562c2d8",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM02.json",
+      "sha1": "4a400ae9bda56ec962a1e1f4409dd9dfb7fc4ad6",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM03.json",
+      "sha1": "e14b543ae9fcf4c366769e4be9bfe95fae8ee642",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM04.json",
+      "sha1": "210007f762c2bf3c25b3948ef097fc029f5d9a66",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM05.json",
+      "sha1": "4408c32304f8f9fd462ba17ff6a6b6d22a46c37d",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM06.json",
+      "sha1": "3ee8a8e2d0b0900ba0be29f93ca4f5f2ebca29e1",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM07.json",
+      "sha1": "dc6c62bd0caedc0c5564677f02fdca6583b35a1b",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM08.json",
+      "sha1": "1f51d5c051e52573c8a0f69efc1202dfb432218e",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM09.json",
+      "sha1": "0b0e3984499e9eae6a16f1e494bf051a03fd3d01",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM10.json",
+      "sha1": "c280d847a2531d2358ac352fe8a9579d3d25d269",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM11.json",
+      "sha1": "6ecbc45538369ff160be9ab1962f9a483a061d6a",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM12.json",
+      "sha1": "eac8f8a2ef01339a79c568d73c77a2eba6252bef",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM13.json",
+      "sha1": "a410210c6a1ca7efc57282b20f1a404ef3765f5c",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM14.json",
+      "sha1": "f1cbb9f2e2cc81283dc1d19fc59b737e23d45d00",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM15.json",
+      "sha1": "a230813eaa184e3f710f35797e1d79865260702d",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM16.json",
+      "sha1": "cfb3e5ca18a27c864f6f24b868eb8f4c099c7acd",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM17.json",
+      "sha1": "982c0ca53a126810cb269a25d1811a073bf460a1",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM18.json",
+      "sha1": "c45112a406919a29c49c03e491aa759e9df03ed9",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM19.json",
+      "sha1": "747c7289f970ab5800553eb704077a9b2562bef7",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM20.json",
+      "sha1": "02b59ee7524652cedd3a3b473acc2f3ebe4b204d",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM21.json",
+      "sha1": "879f74756512c2fe8a403ab75b8390175b087aa9",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM22.json",
+      "sha1": "a97398ada86dde9c6a03bd3aa5d48da33ae44f5c",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM23.json",
+      "sha1": "920c380ae0b62a9c17625839494277fd5474446f",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM24.json",
+      "sha1": "9f1c19b8a18099409b4d2eb2be7f613ab5e0bd3d",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM25.json",
+      "sha1": "4424d0f959d438eef4c39a4c93124492fc5b7291",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM26.json",
+      "sha1": "7635f6279e29b32e0353c271ead7676c113aa34e",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM27.json",
+      "sha1": "450c2b7e4dd4486b78f83c3ddb2ecb2afa66ecfb",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM28.json",
+      "sha1": "3fa2a1ed1b54d80c3fde7aceaabe498556c911f4",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM29.json",
+      "sha1": "f008a9be23542be8996bd6517c1cf1c61c8af9ee",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM30.json",
+      "sha1": "3af035869b3ed9c0af8ec1471b5e3b4f7e5e572f",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM31.json",
+      "sha1": "61f3cdb11dafa4441db7c3dcb04d4832f3987f8c",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM32.json",
+      "sha1": "8766ca4bdaac912a77c656dea2ecc6a7773c298d",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM33.json",
+      "sha1": "065586c605b17b2a17f6fbfc11026104a7f072e9",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM34.json",
+      "sha1": "7d189d2f358d27eb3e8756bc0e0471a672b3b573",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM35.json",
+      "sha1": "45750218cc50c21910281e985df5af0a1ecd5673",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM36.json",
+      "sha1": "dfff3a49862f83d18d5788501ae832fd085784cd",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM37.json",
+      "sha1": "bb8049a14e3428f6b7f4f92f9244df2b017b61b3",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM38.json",
+      "sha1": "0f81a919cc165ed9242d9fabe68965119aa58fb9",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM39.json",
+      "sha1": "f41209b854a5c031aaecba65d6beaf9a1cbb1a8e",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM40.json",
+      "sha1": "b79ab0e6ac923f1e4c84ee5b551d60991e72e8c3",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM41.json",
+      "sha1": "8d88526527b250805ec0615e8c507fabdd3468f0",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM42.json",
+      "sha1": "bd03192b08469304043342bee052c8023123cbf3",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM43.json",
+      "sha1": "16db179ee88253db13c48ed8042177cedcf09378",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM44.json",
+      "sha1": "fc375eb0aa9b6b93414e36e3781b73dabf3dd74f",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM45.json",
+      "sha1": "8451cc9da8d9359016f580ff0a76337bb0d3afcc",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM46.json",
+      "sha1": "9c86cafd118f922c8c1fe7e1d1b616ee570f54e4",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM47.json",
+      "sha1": "4d40b1eccd927142835c37294d922214f79b564d",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM48.json",
+      "sha1": "41a23a1880a921d4e188ea4159f291171d667c3e",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM49.json",
+      "sha1": "e04fc3c665bcc552c3ad52d2b899975ece02841e",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM50.json",
+      "sha1": "f2e9d7dc07c0f10edccf0e1ba11badc3709fe94d",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TM_CASE.json",
+      "sha1": "74ea6319176fe6ff97b0be19027ff940982cf099",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TOWN_MAP.json",
+      "sha1": "be5bb7a5aff7cb496138edba22010bfdab16f641",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TRI_PASS.json",
+      "sha1": "6cdc99c87f591e69501d15c36a25e10f16cb87c4",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TROPIC_MAIL.json",
+      "sha1": "c1b06bcd4639d620e6b2b0933bb63c6f26472a10",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_TWISTED_SPOON.json",
+      "sha1": "de4ec99233a5e1c04142ac811ac9cb56fe4b6f9f",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_ULTRA_BALL.json",
+      "sha1": "2d1f13b4f8d3e489ecaa6107326ada806d28bf30",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_UNUSED_BERRY_1.json",
+      "sha1": "3cb4782720046b46fd2edf701267e23ba405e694",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_UNUSED_BERRY_2.json",
+      "sha1": "abeef20a4369574f9073f387756c140c6b15f578",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_UNUSED_BERRY_3.json",
+      "sha1": "39f83d64df70b43ae685e902470594fce1abe195",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_UP_GRADE.json",
+      "sha1": "8b8069f8b866faab43d3c11003d126b847e53d83",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_USE_BAG_MENU.json",
+      "sha1": "58631cadceafa307739b2f8b06c8096ce4a06bd9",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_USE_FIELD.json",
+      "sha1": "971be20dc72a52e687311de6f72868028b187b83",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_USE_MAIL.json",
+      "sha1": "1b55f6678026afbb7c72fdbc42abdabd6015f2dc",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_USE_PARTY_MENU.json",
+      "sha1": "23e73f125777ff486ea52f3d4cd408cc54d55b44",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_USE_PBLOCK_CASE.json",
+      "sha1": "ddb659fd03726205cdacd935811b358290a33135",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_VS_SEEKER.json",
+      "sha1": "7421869ae263216240374ffa79ff4206f4400a38",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_WAILMER_PAIL.json",
+      "sha1": "ab828195b0f054d53e216c194c28aeabd39514f3",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_WATER_STONE.json",
+      "sha1": "a405afc09ea2f2342d1d74d5922b7bd0e62b04eb",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_WATMEL_BERRY.json",
+      "sha1": "77cb5f0fb4c79508e8938986aeaac74cb309b880",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_WAVE_MAIL.json",
+      "sha1": "f0b9815e758462c006904ece153b1ad38abda3af",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_WEPEAR_BERRY.json",
+      "sha1": "61d54559443832c5d48f4137f3ebdf16fe375bee",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_WHITE_FLUTE.json",
+      "sha1": "f6c6ac1fdd838e54ae4ccc2bc08fe5ded3ea1e5a",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_WHITE_HERB.json",
+      "sha1": "6d17e938e429b583c964711709e0b32ce8690c0a",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_WIKI_BERRY.json",
+      "sha1": "3056a97f5fcb3667b4e35bc4a5b1ddf62d114a32",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_WOOD_MAIL.json",
+      "sha1": "05c147a3ef6a82d47d1bd8bbbd2e9b84b81396e6",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_X_ACCURACY.json",
+      "sha1": "c665934cd1b4b1fcb82d0944b848ec9428a91ec5",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_X_ATTACK.json",
+      "sha1": "15aea87ecc70c924f69eb0f04e4ba8cabb0b663c",
+      "bytes": 322
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_X_DEFEND.json",
+      "sha1": "8c64014ceb63af4d2a1a2eaf9ef549cc64296245",
+      "bytes": 322
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_X_SPECIAL.json",
+      "sha1": "f5096ede331dc8ce3549de973099538248cda1ee",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_X_SPEED.json",
+      "sha1": "88c16fc1940997a33820fb45639a6276cbbb4abb",
+      "bytes": 320
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_YELLOW_FLUTE.json",
+      "sha1": "a86bf29d68a09cfabb8d64beb6a1664bab6f1a38",
+      "bytes": 330
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_YELLOW_SCARF.json",
+      "sha1": "313e8aae54a95fc4f84ed8366cecb19d5cce6e24",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_YELLOW_SHARD.json",
+      "sha1": "bdadaa877df5eb2fab23ccda76709e96624c1a82",
+      "bytes": 330
+    },
+    {
+      "path": "mods/vanilla/items/items/ITEM_ZINC.json",
+      "sha1": "55b7c7f38d266e8e544086375f508240d20554ab",
+      "bytes": 314
     }
   ],
   "counts": {
-    "sourceFiles": 475
+    "entries": 385
   }
 }

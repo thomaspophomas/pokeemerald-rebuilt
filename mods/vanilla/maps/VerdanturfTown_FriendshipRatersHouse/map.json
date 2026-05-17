@@ -58,5 +58,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_FriendshipRatersHouse/map.json",
+    "sha1": "1ca5eddfb3b112ba9eb98f155661b870f1bdaaa1"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/VerdanturfTown_FriendshipRatersHouse/map.json",
+    "mapName": "VerdanturfTown_FriendshipRatersHouse",
+    "scriptsSourcePath": "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.inc"
+  },
+  "mapGroup": 6,
+  "mapNum": 7,
+  "mapGroupSymbol": "gMapGroup_IndoorVerdanturf",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

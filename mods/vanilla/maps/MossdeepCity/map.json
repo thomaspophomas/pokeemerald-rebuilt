@@ -487,5 +487,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "MossdeepCity_EventScript_WhiteRock"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/map.json",
+    "sha1": "e5f3ed3515745877143da05bc99302333d940624"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/MossdeepCity/map.json",
+    "mapName": "MossdeepCity",
+    "scriptsSourcePath": "data/maps/MossdeepCity/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 6,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

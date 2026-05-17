@@ -1,0 +1,27 @@
+{
+  "id": "BattleFrontier_Lounge7:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge7/map.json",
+    "sha1": "9eca2f39af0a820e34c909fb72571bf240ba9708"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BattleFrontier_Lounge7/map.json",
+    "raw": {
+      "x": 4,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_FRONTIER_OUTSIDE_WEST",
+      "dest_warp_id": "7"
+    }
+  },
+  "map": "BattleFrontier_Lounge7",
+  "mapId": "MAP_BATTLE_FRONTIER_LOUNGE7",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

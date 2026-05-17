@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Gerald",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_Gerald[] = {\n    {\n    .iv = 100,\n    .lvl = 23,\n    .species = SPECIES_KECLEON,\n    .moves = {MOVE_FLAMETHROWER, MOVE_FURY_SWIPES, MOVE_FAINT_ATTACK, MOVE_BIND}\n    }\n};"
+  },
+  "symbol": "sParty_Gerald",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 1
+}

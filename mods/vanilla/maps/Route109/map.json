@@ -415,5 +415,26 @@
       "item": "ITEM_HEART_SCALE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_109_HEART_SCALE_3"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route109/map.json",
+    "sha1": "117eb045095e0edf5185c707142024988e3284ce"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route109/map.json",
+    "mapName": "Route109",
+    "scriptsSourcePath": "data/maps/Route109/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 24,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

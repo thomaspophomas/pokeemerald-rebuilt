@@ -1,18 +1,2223 @@
 {
   "domain": "pokemon",
   "schemaVersion": 1,
-  "fileCount": 1,
-  "jsonFileCount": 1,
-  "bytes": 413989,
-  "sha1": "0cebe64b89c419370d7ef73e8b47b0c7c089ccdf",
+  "fileCount": 442,
+  "jsonFileCount": 442,
+  "bytes": 667543,
+  "sha1": "774c45970d602f78b6b124df807d05b5ab109ed3",
   "files": [
     {
-      "path": "mods/vanilla/pokemon/manifest.json",
-      "sha1": "0f1e203290d970245590058a3014cc2abdc981e9",
-      "bytes": 413989
+      "path": "mods/vanilla/pokemon/_source_manifest.json",
+      "sha1": "8340d84fb0ab09b726293a41a7977d749ef74cb5",
+      "bytes": 414161
+    },
+    {
+      "path": "mods/vanilla/pokemon/index.json",
+      "sha1": "a8ca181e65e3a81e4708e36bcfdce85e3d4938e1",
+      "bytes": 104865
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ABRA.json",
+      "sha1": "7a1f84f67dd2cee5de2f99371847d06786d1fbe7",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ABSOL.json",
+      "sha1": "c384f027704ac45a4b4e16a07362f70e9a4c6fa6",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_AERODACTYL.json",
+      "sha1": "43d94884a80fb4fa409090fa5a47804bf0fd11db",
+      "bytes": 342
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_AGGRON.json",
+      "sha1": "ee9eab4e8855234c2984c7fe580f4ef57a7d9423",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_AIPOM.json",
+      "sha1": "63091e2d1d4ee0ccb8fba6666919e60efe0d15ee",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ALAKAZAM.json",
+      "sha1": "05fdbf3a9309f4cb1d06235783eb2a33743a37b3",
+      "bytes": 337
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ALTARIA.json",
+      "sha1": "bb06511bae1de50a3a37345514c70befae1b2334",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_AMPHAROS.json",
+      "sha1": "0007cfc1b5621fe2df4a20758bb3420e253d90c8",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ANORITH.json",
+      "sha1": "eafed8eb2366265b25363dd60e4181422a2ac6a6",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ARBOK.json",
+      "sha1": "32c90bad19c2d16784b00955404d4d49bb28eab8",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ARCANINE.json",
+      "sha1": "df82968da0200e775763ee61c7b97ec4645c4762",
+      "bytes": 337
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ARIADOS.json",
+      "sha1": "6d522d4e9b5017a6baf3e9588d8424e9b5602a02",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ARMALDO.json",
+      "sha1": "6a4376d4e258ee7fb0a9677b9fb7d0a7ea671f44",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ARON.json",
+      "sha1": "501be61b754faf72519a6126ee3dd66df842086d",
+      "bytes": 330
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ARTICUNO.json",
+      "sha1": "271d809e2b10903e21f89610dee272a225429866",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_AZUMARILL.json",
+      "sha1": "7ae3325048b541cc04953e93f013bc056926f350",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_AZURILL.json",
+      "sha1": "1dcf63e5f8aa23d425b70651e336d6c331f58fa4",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_BAGON.json",
+      "sha1": "b0f7c20ab7f178bb2d590e86722217050bc76042",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_BALTOY.json",
+      "sha1": "51c5930ef899175ab27ec6bae455abe46e9757ed",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_BANETTE.json",
+      "sha1": "a0f7c943a3ef31bac4c2955fb582dc6cd5cacc2e",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_BARBOACH.json",
+      "sha1": "6bce89f5d666f47ba655a6ba2d6b0fbeffb680d6",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_BAYLEEF.json",
+      "sha1": "660d35967bb77bd8d0218fa0c8e9fd7f843faad1",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_BEAUTIFLY.json",
+      "sha1": "0d1833833d60399ccf124fa66ab126b81374b9b6",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_BEEDRILL.json",
+      "sha1": "c35cf8a698dd652703e64db8215cdff1f486f69d",
+      "bytes": 337
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_BELDUM.json",
+      "sha1": "f766323b5c97939ab882786ee0c8b04d5e01731b",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_BELLOSSOM.json",
+      "sha1": "a61e0598bcc24dc3f27cf6f5a768ac3b2768cf47",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_BELLSPROUT.json",
+      "sha1": "625e773743c264c2df10a26c2f7fc1fd5ad11966",
+      "bytes": 341
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_BLASTOISE.json",
+      "sha1": "d991fadd644d8bdb943e767e823a90f6178aa3c5",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_BLAZIKEN.json",
+      "sha1": "13135a573177016723b1ad7086f5eb785abb7efc",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_BLISSEY.json",
+      "sha1": "186be5434b9c5c3d9aef5954a3521e828100c384",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_BRELOOM.json",
+      "sha1": "e0b31477b27dea5bc92d2958eabd37048afc7bab",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_BULBASAUR.json",
+      "sha1": "96e7c4c273863770a9e0366e58bae5b9371d2696",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_BUTTERFREE.json",
+      "sha1": "640fe2714b7c066495206feff55cc3abee12a7f8",
+      "bytes": 341
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CACNEA.json",
+      "sha1": "91dd11f842b49655edf078adcdd89906729c3bb4",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CACTURNE.json",
+      "sha1": "15d5e6299c7b944582fa7b57f40dee69d6a79328",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CAMERUPT.json",
+      "sha1": "3943ca75b5890fd87be13fd456b623effb1d9cc5",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CARVANHA.json",
+      "sha1": "609461cd45644de04666d2bab6977d40c912ccd4",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CASCOON.json",
+      "sha1": "8b17586ac76208c4720e2cdd572069a1df6febd5",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CASTFORM.json",
+      "sha1": "ad08cedd4b88f6944b0b7bbaf6a6790a445f8971",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CATERPIE.json",
+      "sha1": "893631a0652e090945432a6c3f1731b87276dbf8",
+      "bytes": 337
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CELEBI.json",
+      "sha1": "59308e780b62c99f060428302724ced068567823",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CHANSEY.json",
+      "sha1": "71b744bfcc720d82ccd9e0f591c67babaa688606",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CHARIZARD.json",
+      "sha1": "dfabeca45b4cf54b5714e3ead002e6264ad107fa",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CHARMANDER.json",
+      "sha1": "b1d6e5a7d60dbba712b47a5cf821c53d4ecd0f3d",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CHARMELEON.json",
+      "sha1": "89c97abf3aa1cf8a76880d06dbe3621f37506307",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CHIKORITA.json",
+      "sha1": "64e8e8d957199cac49b564602bd27c4040e62a88",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CHIMECHO.json",
+      "sha1": "ef6ccd9de8ec8909875279447022da18ca79b3c5",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CHINCHOU.json",
+      "sha1": "a6b9e4bc87c96ba4389711b49e78118dcc7428fb",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CLAMPERL.json",
+      "sha1": "cddd1c8a8fa6ae439b54aa7a5eeae8591c7f40ab",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CLAYDOL.json",
+      "sha1": "67284a2d5a67d9625f82dac5fb3b3d9592275b06",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CLEFABLE.json",
+      "sha1": "8b97cabca82905be47dc25236776c0fc9cf089f7",
+      "bytes": 337
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CLEFAIRY.json",
+      "sha1": "a99cff85252e9211d72e32ea7f313ca69384b4b4",
+      "bytes": 337
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CLEFFA.json",
+      "sha1": "1ad551e017f53ec10c95e220ec6ef75f793acec9",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CLOYSTER.json",
+      "sha1": "5f8debcea4987680b1e6707d5d3589c89053a93a",
+      "bytes": 337
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_COMBUSKEN.json",
+      "sha1": "820346d2f242f99d0f531665c0c6265394808d70",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CORPHISH.json",
+      "sha1": "7cbc7f1e61ad7583548bdea8ec0a3da26fb19cdb",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CORSOLA.json",
+      "sha1": "251d5902afb374dcd1ffef7e50fbd335e38ba7b8",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CRADILY.json",
+      "sha1": "e8e52721c372c068d9fbf0844492261deee00c56",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CRAWDAUNT.json",
+      "sha1": "2eee8a9c7bc146bf42a38f0170af021a16e40440",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CROBAT.json",
+      "sha1": "1413053d8cc85e0343603b3076928c241981ea96",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CROCONAW.json",
+      "sha1": "41ca86d1c41178c72136c7d6d8a414663e881f92",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CUBONE.json",
+      "sha1": "6dca39e424e736cefa8a871144583ae2d9ad0ee4",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_CYNDAQUIL.json",
+      "sha1": "da29793e8e2e3d41b17c318206c31950a6c42f63",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_DELCATTY.json",
+      "sha1": "4671e4279e687dfbeb3324afc5e7433e304214b4",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_DELIBIRD.json",
+      "sha1": "96ceba842828d35f8ad19db8aef6132757d20a75",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_DEOXYS.json",
+      "sha1": "16f900be38bc40dd2a876cd6931b5124f6afc5ba",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_DEWGONG.json",
+      "sha1": "914dbae47c7fb25639132bad29488846ecc0b199",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_DIGLETT.json",
+      "sha1": "f13a6537cbf4e2b944ba1fe739ae70747233812c",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_DITTO.json",
+      "sha1": "f8458d26b14d1814a107515b76a225bafa9a8f7b",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_DODRIO.json",
+      "sha1": "5f9c6473247a857d7bf49d03b7c1f3fce3bd9406",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_DODUO.json",
+      "sha1": "0291991380691d15b8bd11147c937e0b1bd181ba",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_DONPHAN.json",
+      "sha1": "b33884ec5701b1d3d6322478e9b628d177b3dc1a",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_DRAGONAIR.json",
+      "sha1": "a30bcd4988ecc6fbf9324742d8af854776d31bb2",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_DRAGONITE.json",
+      "sha1": "36b1db1b40f467e7744598423f0fa34bb6622e96",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_DRATINI.json",
+      "sha1": "70ff68047c09e6396ac5e81ca35b5a6cb1403671",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_DROWZEE.json",
+      "sha1": "981009bdfb2185792c3a84a8b43bbb66203ed408",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_DUGTRIO.json",
+      "sha1": "0613f73c2e97b77bd641df3cba14ef68f91dfb90",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_DUNSPARCE.json",
+      "sha1": "d8de1c230f023705e72d805af6b872d428fc50f1",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_DUSCLOPS.json",
+      "sha1": "2d2f19c9ab753d4e8b8324b9c23b3d8daafdf0a4",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_DUSKULL.json",
+      "sha1": "7f6ab823842cae105681b942d4ee821588e12ef2",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_DUSTOX.json",
+      "sha1": "3c17984a88355813697778654b06095ba0d61787",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_EEVEE.json",
+      "sha1": "ed944aa8b016da223f057469f14bdcf211affa08",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_EGG.json",
+      "sha1": "e638d39f045be481157f58cdba3815533bda7568",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_EKANS.json",
+      "sha1": "aea858c871c3d95e9e3679de342136f13b5ad4c1",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ELECTABUZZ.json",
+      "sha1": "a048124f1967d6d6d841b43017f9e54a1bd46ed4",
+      "bytes": 342
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ELECTRIKE.json",
+      "sha1": "5b60b381a8e4128431ad8d4a573b3a0bd095fca3",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ELECTRODE.json",
+      "sha1": "514481869d646e590d35def81497bff636c95e0d",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ELEKID.json",
+      "sha1": "4620b644ae7b342eb43ea637976486156eff8acb",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ENTEI.json",
+      "sha1": "552c699613d0b51340b1d36a0dfa9c4f2738e106",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ESPEON.json",
+      "sha1": "186d282cf818ac91d32f0800e170470b3064998f",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_EXEGGCUTE.json",
+      "sha1": "90e8f6a34e25584f83a5b3fb2be071e0302dc07e",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_EXEGGUTOR.json",
+      "sha1": "cb06fb3bb38a37e21507aa786477ce95f03be6af",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_EXPLOUD.json",
+      "sha1": "1d92963903795cc315c4ebbcb7d635c614c665ab",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_FARFETCHD.json",
+      "sha1": "787c6463feae4fe5c6ca9c486efa2887e55f7a4e",
+      "bytes": 339
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_FEAROW.json",
+      "sha1": "87c60f81b67e4a7a92a162c7c1fed66e44a97115",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_FEEBAS.json",
+      "sha1": "ae0780c0c596602164607475c6099bbb0d07d6ae",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_FERALIGATR.json",
+      "sha1": "587c4ad7a5732cf2a3002ef33ee04c672d704ca9",
+      "bytes": 342
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_FLAAFFY.json",
+      "sha1": "04431f97acd9d5e117170711e835750b315f8524",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_FLAREON.json",
+      "sha1": "1101016154992962ef55d41d84f04648b05670db",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_FLYGON.json",
+      "sha1": "1aec2602a4691184af257d8d1435580870c49deb",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_FORRETRESS.json",
+      "sha1": "d82b59e64efb9c46f2e89a182dbc39ad8591786f",
+      "bytes": 342
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_FURRET.json",
+      "sha1": "db38d56ffdc70c0909a9dfcc6f6eba04b4b67f26",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GARDEVOIR.json",
+      "sha1": "59ab937b9bb661112cce14f0ad198d4eb097588e",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GASTLY.json",
+      "sha1": "b685d6a23b75ee587b5c70e0c36a7c25b32f0e59",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GENGAR.json",
+      "sha1": "3e564195152ad455ea958f822f28b9b380169441",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GEODUDE.json",
+      "sha1": "83b70c983f7742066dfe44e72e43246a96e3ab15",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GIRAFARIG.json",
+      "sha1": "870f47f3cbc4be476fab1ec4274aaa241598cacb",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GLALIE.json",
+      "sha1": "40c55c2a43944fff3d19e5ad8bdd0905130f6327",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GLIGAR.json",
+      "sha1": "c056e4584b7db9fb333fa0ebad48e6157b60ce05",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GLOOM.json",
+      "sha1": "42c37e56e14a62add7c662195df4d420e81f894e",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GOLBAT.json",
+      "sha1": "ae114cef46ea0dd8d05064c5e8bfabb39ba8d855",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GOLDEEN.json",
+      "sha1": "c726221c279b4deb2dc3e39612dc0831ef5770cd",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GOLDUCK.json",
+      "sha1": "1e227f67075146945e3cd454de90e7857911082d",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GOLEM.json",
+      "sha1": "6c072cbe7091afda891e79cdfc17ba57bf1253d0",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GOREBYSS.json",
+      "sha1": "cc5951198da6340f697181db2798d90f4b4b3cac",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GRANBULL.json",
+      "sha1": "6ccfc022d0b955b873fd26424cdc1ba6631fd044",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GRAVELER.json",
+      "sha1": "215c486ce9ea1e2b85570db29b70912e3d98d0e4",
+      "bytes": 337
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GRIMER.json",
+      "sha1": "06e439bbe3557a8b64acc1574cefffb0763e236e",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GROUDON.json",
+      "sha1": "5ddf784420949d921a9d7257177b54cb9df1d8df",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GROVYLE.json",
+      "sha1": "0185f5b986282b49719c5ffcc3150e1b565bb5ec",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GROWLITHE.json",
+      "sha1": "ecdef3dbfda34137e1c7dbfc40f3bc109404ebc6",
+      "bytes": 339
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GRUMPIG.json",
+      "sha1": "3729be8d9b85ff3cb5fc8f97e4595abb99b170b9",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GULPIN.json",
+      "sha1": "7c8e0bc5040a73045435d404f09916a4159203e8",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_GYARADOS.json",
+      "sha1": "ca068cd0fd2da24b5694e671db78ef8b0c0b86c0",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_HARIYAMA.json",
+      "sha1": "46243eefcb7e0976885673e989f5059a2843d3c1",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_HAUNTER.json",
+      "sha1": "2e0b4e645a88e259eb5a092d9f7e9f779178e631",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_HERACROSS.json",
+      "sha1": "036c8d9f27f31b7e7f544972dacc22798ff36828",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_HITMONCHAN.json",
+      "sha1": "80fd8ef6f0fdaeb7bd9e6952e3a308025fd34b9f",
+      "bytes": 342
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_HITMONLEE.json",
+      "sha1": "6053c94b19374bcc6b54fa3bd70a4fbf2dddfaae",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_HITMONTOP.json",
+      "sha1": "9186543d65d1f4c57a945497f35a6049b2e4c741",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_HOOTHOOT.json",
+      "sha1": "4418307a7ed3239d7571e9609239ce5fd41613ac",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_HOPPIP.json",
+      "sha1": "0455a99f684d277d0dc49eb75b72ad537b088f11",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_HORSEA.json",
+      "sha1": "383582a8c77c6785cc897335e63633437246ffdc",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_HOUNDOOM.json",
+      "sha1": "5316027a3eccf6ab3194b3920ed892f273503039",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_HOUNDOUR.json",
+      "sha1": "4dd304d7c6c6c6bb0d7739c53d26257d37ab5adf",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_HO_OH.json",
+      "sha1": "676f67c0efc05b3a288546b94287c6de8791e557",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_HUNTAIL.json",
+      "sha1": "7ce8c2c27dd2d0d3520726469459b2c786e87135",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_HYPNO.json",
+      "sha1": "ab7469d23e98b1fc4a4918edda5abb6480fca414",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_IGGLYBUFF.json",
+      "sha1": "511772234a7c76b65c96d77cfe20b35c594b8af0",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ILLUMISE.json",
+      "sha1": "4623ad0b26b0ae0097d4a6652e1e171cf307925e",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_IVYSAUR.json",
+      "sha1": "c4e16675c51b5dd4799ab077ac12b53e0cc05f87",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_JIGGLYPUFF.json",
+      "sha1": "2fe5365eaeef089a30d5dcd0cba8924378477bda",
+      "bytes": 341
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_JIRACHI.json",
+      "sha1": "7a7bc355d4ae7122a3aa0eb7433caa09ee15e967",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_JOLTEON.json",
+      "sha1": "e9d6f4041105a943dfaabef9fc968901b2975961",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_JUMPLUFF.json",
+      "sha1": "a7e5274115fcafbbb2084f9504329c2cf2826d79",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_JYNX.json",
+      "sha1": "8f62b964b0c224ebbe47dd4e81213a4fae556d88",
+      "bytes": 330
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_KABUTO.json",
+      "sha1": "37d6e72447516489bd8f05354d486e1ecbd3f9c0",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_KABUTOPS.json",
+      "sha1": "1acacad9d71ec47875535b2ba792d377bd94aa17",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_KADABRA.json",
+      "sha1": "f5da4aa059723155a954d0eb982a3cbae361f1a0",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_KAKUNA.json",
+      "sha1": "86bd02f20371d2e859bddd3614a807b64edf5311",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_KANGASKHAN.json",
+      "sha1": "04a5156ede3dc1fa351a278634d379e34e211346",
+      "bytes": 342
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_KECLEON.json",
+      "sha1": "019d4d9c14fc4b7aaab1eff8202c78927fd16271",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_KINGDRA.json",
+      "sha1": "e444f4eccf575de735690dee75738c999d050a42",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_KINGLER.json",
+      "sha1": "a7c83da5b82a614969737f662a776cca31927e29",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_KIRLIA.json",
+      "sha1": "6caabd89d4880c7677bbfdf877cd2686a186f85c",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_KOFFING.json",
+      "sha1": "ffe6899dd521b2d9dba79884e235f96f501c8f5b",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_KRABBY.json",
+      "sha1": "a218c028ecef1284f2efd3f381c0d84f1d3bda1f",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_KYOGRE.json",
+      "sha1": "402c226418e8bb225e684ac926784c57301f6b1f",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_LAIRON.json",
+      "sha1": "1e7f1e88f41f51574c31548fb75dbaa8d38da11f",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_LANTURN.json",
+      "sha1": "408fec11016eec0e00588dabf938fa080dc1c910",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_LAPRAS.json",
+      "sha1": "be811342474b6fa1044e2a619072875037b91ff4",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_LARVITAR.json",
+      "sha1": "2f5868bb5cb60e83458e7f4cef90db4aeddc3b9e",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_LATIAS.json",
+      "sha1": "b8853e16e5d66ea169ad75695173e023367813f0",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_LATIOS.json",
+      "sha1": "8846f7127b74617be585d0e3570fcdaec5baac17",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_LEDIAN.json",
+      "sha1": "b1aa7d3a553a87b5d50de53baca035cad22f5b85",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_LEDYBA.json",
+      "sha1": "a458f7f83fe2888fb41cb9060dca414364b9a00f",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_LICKITUNG.json",
+      "sha1": "b6faa78f2be1346b451b6c4e2d0a4f9bcebb8e35",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_LILEEP.json",
+      "sha1": "5d4add69eb6c78a74d51c601a60ca9055003af6a",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_LINOONE.json",
+      "sha1": "25031d821731806005ad8ed474646412970fca6e",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_LOMBRE.json",
+      "sha1": "0478911b19fd309641b60505767735e56f9b8b23",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_LOTAD.json",
+      "sha1": "ce50bf6eefeb01302f1709e900e3e8adf865a366",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_LOUDRED.json",
+      "sha1": "ef6cf954d0c8c00be23e35b4dacb3085b5251f00",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_LUDICOLO.json",
+      "sha1": "65a6a70727ff869544fa6b3293725bc12f3ff83b",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_LUGIA.json",
+      "sha1": "19bdb039a4fdfae0984675bf83052d9b4add30ea",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_LUNATONE.json",
+      "sha1": "483ca1f93e3cff6c46aa8195103be50eaa4fb46a",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_LUVDISC.json",
+      "sha1": "34df39b0d4e4b560b237cf87848b70bb9b1aca89",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MACHAMP.json",
+      "sha1": "9af31b51a05f8698d5dff3fe535b24f8a065d836",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MACHOKE.json",
+      "sha1": "f77252bcdd0c53d0f467499739b529282fd5987f",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MACHOP.json",
+      "sha1": "55de6e82bed2f10ff37f194da44b0ec91a55363d",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MAGBY.json",
+      "sha1": "8df54525be0a3f250736209147cfc0e19bcfe208",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MAGCARGO.json",
+      "sha1": "3a39fdabc24d1f76c5550f33b38fb7323fc5c9e8",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MAGIKARP.json",
+      "sha1": "dcf31e48116b238c46744f9154c6d4c3d5fe6305",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MAGMAR.json",
+      "sha1": "2059b258ccb99009e779d814829d459ef48ac4ff",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MAGNEMITE.json",
+      "sha1": "784572c3ad9d31203539d993c407a908d05f06d9",
+      "bytes": 339
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MAGNETON.json",
+      "sha1": "86823007b89f7e21bd5db600714caaae8c529b6f",
+      "bytes": 337
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MAKUHITA.json",
+      "sha1": "6fa914e7d19517e6b920553bc0c0406f59ca8858",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MANECTRIC.json",
+      "sha1": "1f10052df81de7b05633ab4779cbf3b9b581dfb8",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MANKEY.json",
+      "sha1": "07ba2219ff4a78dab0a3f2c12d6eea32272d2ac4",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MANTINE.json",
+      "sha1": "4f7b890bf3220d007750e8c33df12f5eb22b94c0",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MAREEP.json",
+      "sha1": "0ceae948a8bbad6238a618876df99d5dce154f6c",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MARILL.json",
+      "sha1": "daa379b0ca8ca2a0d2c01a3e667f1fb7c9f76334",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MAROWAK.json",
+      "sha1": "e7f53ce40e5de4e4be4cd85f91906f293f78062e",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MARSHTOMP.json",
+      "sha1": "e238596d43764582cac57e51823f4add9848778e",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MASQUERAIN.json",
+      "sha1": "0a185f8bb820f98f35772f8ebef0c6f31264017b",
+      "bytes": 342
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MAWILE.json",
+      "sha1": "9c95d5e8bb67cb2da2ee7be7afbac0c98a8b6c6b",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MEDICHAM.json",
+      "sha1": "7e733a99fc5efb50adc46917d89d7c6ece533e57",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MEDITITE.json",
+      "sha1": "c30be847ba7844bdbb9c296057c4e5cf2dfc9e61",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MEGANIUM.json",
+      "sha1": "f3455cf7475d866db6eecb14026fb608c7a92fb6",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MEOWTH.json",
+      "sha1": "ddccde8370a1a80dda284fabd1ee7ae502cf09bf",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_METAGROSS.json",
+      "sha1": "12a5d9c3ca156c754b9f3b5c214725ab7dce7889",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_METANG.json",
+      "sha1": "bb12aae7dc9a2fa80116668e4954b950047a2265",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_METAPOD.json",
+      "sha1": "183ffabddbcf746c1f5ab65c6dd1ea7fd085f235",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MEW.json",
+      "sha1": "1ada03915e7742ed25a88f05dd6f2e24047e79f4",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MEWTWO.json",
+      "sha1": "edac0419fd7b789cd5f310538a47039a5bc9ab8d",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MIGHTYENA.json",
+      "sha1": "3280eb739af275625f2848a797e12ee76c0b5566",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MILOTIC.json",
+      "sha1": "22db63e851e4d00a8109a28b1f79e5ef9f4069d3",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MILTANK.json",
+      "sha1": "698cf404ebd9add3f026e96951221fe5a871c427",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MINUN.json",
+      "sha1": "75b6e76c97bf37fd0fd8ab59785ee754c65e9e21",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MISDREAVUS.json",
+      "sha1": "657c9e775747b8a6752b2a69d7a14ffa2b447e18",
+      "bytes": 342
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MOLTRES.json",
+      "sha1": "ec407ab0ba3220641f39968e3a0f5e7bfe7e2e28",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MR_MIME.json",
+      "sha1": "013b6acd3fce03660a0a72d233665e3ba4e4eedc",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MUDKIP.json",
+      "sha1": "b72c198377e87087ecbae20459990a2614876ea9",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MUK.json",
+      "sha1": "ec9a44ce68f498ca466e76a469a41d89ae62fe03",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_MURKROW.json",
+      "sha1": "04eed04b3766813ae38daea60533758ca4e75f59",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_NATU.json",
+      "sha1": "9af5009f9ad01004528ae4146b8e8a67bf0280fd",
+      "bytes": 330
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_NIDOKING.json",
+      "sha1": "70747cc9e9010828d580c53ff35dbeb2a5b95752",
+      "bytes": 337
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_NIDOQUEEN.json",
+      "sha1": "042fe93d1816f51d7989098f2d6a90b6679a582d",
+      "bytes": 339
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_NIDORAN_F.json",
+      "sha1": "e425ba3f992758b33c6ff8d0c0975ab4b8bb2c93",
+      "bytes": 339
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_NIDORAN_M.json",
+      "sha1": "bf0f224f98ff15495e5474a67b5add34437bd261",
+      "bytes": 339
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_NIDORINA.json",
+      "sha1": "74e066f8050cab93fbb24d36d0feb59507488758",
+      "bytes": 337
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_NIDORINO.json",
+      "sha1": "9382c67260561cae22c0e32a3decc5a3f86cedf9",
+      "bytes": 337
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_NINCADA.json",
+      "sha1": "49dac66094d59eef4c5330ae06c0a6b5370ee5b8",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_NINETALES.json",
+      "sha1": "cdd0698782ddcfa216a4d9d3be5f220863bd496a",
+      "bytes": 339
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_NINJASK.json",
+      "sha1": "c5fe4f610f8897ee4c3760cfc8bc4714ea247b6e",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_NOCTOWL.json",
+      "sha1": "d4b9d03bbe6412e76c1c6f981e15d8fceb275877",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_NONE.json",
+      "sha1": "36bc2e967bb1efe03e4686634f4b849cdc511a4a",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_NOSEPASS.json",
+      "sha1": "a50783504e59aa35e1e140b4fe4669437f624f88",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_NUMEL.json",
+      "sha1": "a4b87629d050ca79bcab559a7b06e3899ba47cdc",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_NUZLEAF.json",
+      "sha1": "75917d15260514da456c75c11abd22cb6a4baac1",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OCTILLERY.json",
+      "sha1": "df40f43f6bf63b9c3aa9acec4f03c87471d09877",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ODDISH.json",
+      "sha1": "d691886fded4321f2af042b310cf81eabb692ce0",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_B.json",
+      "sha1": "d9cdf5459bcc3d61e13efeeba15a0d9ad5903fa9",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_C.json",
+      "sha1": "60671037e6278e4f4439634d73dde33d9a84a5b5",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_D.json",
+      "sha1": "d9a6a9f30cae0fee0d0f5b439b9187a5feda8d6b",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_E.json",
+      "sha1": "1cd47794fa847dade94de94937879f15fff5aa6c",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_F.json",
+      "sha1": "497156943d13f5e9aed2e0a138cfe0a973e15b39",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_G.json",
+      "sha1": "829dba1c9795f8a49db013a09f595e90ea21d5b6",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_H.json",
+      "sha1": "f8c26b207c3fca6407f7f96831d1c1db07918ce2",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_I.json",
+      "sha1": "52543586728ab3dd4a3a88587e83290052edf8a0",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_J.json",
+      "sha1": "3c5d7d6df95406e2329b484d93f1c5c747cd6b18",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_K.json",
+      "sha1": "c3a8b450d4623a68560d2d56ebb0f1341fec0463",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_L.json",
+      "sha1": "3cede41ac2606c3b53ed0eeab61cb6b1992ec73a",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_M.json",
+      "sha1": "4b052d3d9dee80ae16ddc75f1646731c783594b7",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_N.json",
+      "sha1": "e782edfc2368a7e71964ffa339e6de59dcc092c9",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_O.json",
+      "sha1": "3d8beff91007ac5178341189b5e5d24f56d6bcae",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_P.json",
+      "sha1": "b957588587dd905d29a326edcfbb471903da5c9a",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_Q.json",
+      "sha1": "7c4e3e509cbc557d559ec5493ee27f88059b9c0e",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_R.json",
+      "sha1": "ca59d08982eb1589d807da09aa934bcfb2b130b6",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_S.json",
+      "sha1": "a958eea8a4aa61575e0706ba954082779f34904a",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_T.json",
+      "sha1": "4da8461229c96aeb818759dcda8f4e63584aa778",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_U.json",
+      "sha1": "939ffca8f0359ceadbdd2a10991a496550d3a8e9",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_V.json",
+      "sha1": "231d30ee588b99bbc16f57e18830d2e454674ebe",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_W.json",
+      "sha1": "8cfdc78fa91bade415f6b6d2076fba903f4b3e2b",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_X.json",
+      "sha1": "3f3f3e5a5b6df2fef1a1df2746154382e87d05c6",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_Y.json",
+      "sha1": "56e5687ce612aaff79401a5c967c3c5fe650b91f",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OLD_UNOWN_Z.json",
+      "sha1": "d580380f90f20fd277ab07f6b274cfa87cf7dd8c",
+      "bytes": 344
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OMANYTE.json",
+      "sha1": "0fe72fbb7b2b95ddf58ad2628676e5d3765326f0",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_OMASTAR.json",
+      "sha1": "f797ac7c0411ebdf997d54e38b7f7a96708af053",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ONIX.json",
+      "sha1": "21837a3981983690df052a39f1a6fe6a07408afa",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_PARAS.json",
+      "sha1": "dfa1239d042a4644ccb1b158d4d449cc06e618e8",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_PARASECT.json",
+      "sha1": "90e88932147eccf0cf59ea09ff7cfd123e8aaa79",
+      "bytes": 337
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_PELIPPER.json",
+      "sha1": "2b44f6ee9b7bedf7810dbad1693e47283b088d25",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_PERSIAN.json",
+      "sha1": "6183020519f094529866d052e3df76f9b7e3c82a",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_PHANPY.json",
+      "sha1": "65f14470464bd6e06f1c54cdd70d45cbbc0cbd0d",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_PICHU.json",
+      "sha1": "14c0415ecce0cdfd90b7cd690624463da1fd0270",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_PIDGEOT.json",
+      "sha1": "caac1b9b07716c4053d922fbef21c2b61370f993",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_PIDGEOTTO.json",
+      "sha1": "d1c4d376569f44b6aecd542e8796d822b9eeb753",
+      "bytes": 339
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_PIDGEY.json",
+      "sha1": "2ca2934c8e62106d5a57ab9984bf73382f5bd1cb",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_PIKACHU.json",
+      "sha1": "2b83768a725058a38ecb20e7dde8f6376fc8ee99",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_PILOSWINE.json",
+      "sha1": "390f4c17ef063700edca7662a8bb8d7dfb246a3d",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_PINECO.json",
+      "sha1": "1468ed054d5c2c009128f23c4931d5cd5520745c",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_PINSIR.json",
+      "sha1": "fa175ba860e419aa8f2e3151a0e1a5b5d87edc3a",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_PLUSLE.json",
+      "sha1": "3b6c7ac649a7503bffa39d0bb9fb2620cbe7619b",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_POLITOED.json",
+      "sha1": "dc75c6717a746b3b89ea92b721b0d676707a8760",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_POLIWAG.json",
+      "sha1": "33238a1ba2f86f3497324cf31f32ba6d26afe608",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_POLIWHIRL.json",
+      "sha1": "4539fa33144497ca616e0618c2f5b375cd639343",
+      "bytes": 339
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_POLIWRATH.json",
+      "sha1": "d953aac00391e0c49819b91acb6436229eadd55b",
+      "bytes": 339
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_PONYTA.json",
+      "sha1": "8b16f78d7bcc84cbfe005c3c037c809a12d3d35a",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_POOCHYENA.json",
+      "sha1": "83b2190717e9814d0ef8750e64983015af8e29b1",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_PORYGON.json",
+      "sha1": "146047c23a78adcc94c45659be3b044fd54c7477",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_PORYGON2.json",
+      "sha1": "046be812b2eccf90044e053fa1cf42aa9cb62eb2",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_PRIMEAPE.json",
+      "sha1": "b099edf8a9ff0f27f3be0420a883ff149c18c5fd",
+      "bytes": 337
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_PSYDUCK.json",
+      "sha1": "3bb4aa7c4e52ccf77a91d4cfb9ed55bc7045552f",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_PUPITAR.json",
+      "sha1": "08e802482acb00fbb9014d118305787193a08834",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_QUAGSIRE.json",
+      "sha1": "44efc615a04311df06d866aae7f170f6a3c5d70d",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_QUILAVA.json",
+      "sha1": "f6dff3c758be45079844c26a28f3fcb0d8278aa9",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_QWILFISH.json",
+      "sha1": "c8fac8e2bf1182f51f143040979515a7b9261a70",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_RAICHU.json",
+      "sha1": "7c2c2206ec0118e72e6d9c3f029e71dd4d9e6fe1",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_RAIKOU.json",
+      "sha1": "ac69fdda231ef815512bb12ab76b06bfb6cba520",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_RALTS.json",
+      "sha1": "a20fb0d05ee1b4f86e08946afcd7ddea3e5fb614",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_RAPIDASH.json",
+      "sha1": "7cb881fddead58359c5b114930db73ea1ed95cf6",
+      "bytes": 337
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_RATICATE.json",
+      "sha1": "a27d125e11106e44c0117a645b6cc580fef23849",
+      "bytes": 337
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_RATTATA.json",
+      "sha1": "1e36418129dd5ec58557c432bd200e3c4c92cb74",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_RAYQUAZA.json",
+      "sha1": "2a1ef8f8558d7a7576bd2d94072de48042e759b5",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_REGICE.json",
+      "sha1": "cfb46d0d9b13a4d4c3144cf616d9133b6d76bf2a",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_REGIROCK.json",
+      "sha1": "b05b6e5c671838b9fce871c3384c58effee100bf",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_REGISTEEL.json",
+      "sha1": "1c10974f1f85aee994285e87fb821725908af2ea",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_RELICANTH.json",
+      "sha1": "b2f63868dace5a8ec28c55d6326ece485bfe7ed4",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_REMORAID.json",
+      "sha1": "ba335064f5888c61b2e77f3dafdf1b1e565e7296",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_RHYDON.json",
+      "sha1": "8682d2d119ea3607549eaa40910063bb764530b6",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_RHYHORN.json",
+      "sha1": "a1fcf5fba4010ecb7c31a8e70ccf9ec9e6e0c214",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ROSELIA.json",
+      "sha1": "3fe95ce27a7a0166665005d9f2997d71fc6481ff",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SABLEYE.json",
+      "sha1": "0ab197fc8ba46963dfe0a956aa7ed8ab7d2a078c",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SALAMENCE.json",
+      "sha1": "65ff41b3b63f0a86be9fa6776002afade2802f51",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SANDSHREW.json",
+      "sha1": "a0785d8ce9e635498d94ac90fa99b8c886dd3b7b",
+      "bytes": 339
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SANDSLASH.json",
+      "sha1": "6a9b51e29a39111cf1b59c8a372142095abecd1d",
+      "bytes": 339
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SCEPTILE.json",
+      "sha1": "e7337b36594b42d243075c6a3e16609fafe5fbdc",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SCIZOR.json",
+      "sha1": "88a7881f51a22e2e4a3916770fd5537d8cdaa17f",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SCYTHER.json",
+      "sha1": "b059e9598326fde5fcf42317ac62e9832b233f1e",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SEADRA.json",
+      "sha1": "0bb768c23217132308016350a350d45c7212e8ff",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SEAKING.json",
+      "sha1": "65b4e6e9333a437fccd8737382f4489cbf7d5848",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SEALEO.json",
+      "sha1": "309d99e5c67b8f86a38d5f0cdc273c39c7b041fa",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SEEDOT.json",
+      "sha1": "ec1cfeec00616b39ad9f1755acb761b22bee8b73",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SEEL.json",
+      "sha1": "b59e3a6894be8d3d369133f7a6131c4a02eabcba",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SENTRET.json",
+      "sha1": "e2ddc70d25f7a138141a18d511ada99f35d5b87f",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SEVIPER.json",
+      "sha1": "dc66b4aff63b1b924adcff79abce6083378a334d",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SHARPEDO.json",
+      "sha1": "6e45282524f12c73fedf552ddb3a041fab096622",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SHEDINJA.json",
+      "sha1": "27182be6eb0d0fdc60ef38a9d762992f93b3de1e",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SHELGON.json",
+      "sha1": "ced10d9909e5c0fce46eef7ed5542bb3ee281747",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SHELLDER.json",
+      "sha1": "27e461e30d7d2cf85e640c35debb198c788f5798",
+      "bytes": 337
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SHIFTRY.json",
+      "sha1": "9f685dbbf0913173c6bc50799ae95698fb5f17df",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SHROOMISH.json",
+      "sha1": "6bfb537c6e7e61d572591145399c58ecfe2ef627",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SHUCKLE.json",
+      "sha1": "f7e037d51012618b4254babd87a39991ad078fa4",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SHUPPET.json",
+      "sha1": "4fa1541b146b331faafc2daf789298aeb7b6ba48",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SILCOON.json",
+      "sha1": "9ad74af206ca4252fe5f01dfb3e16831ea68c5db",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SKARMORY.json",
+      "sha1": "1fd22922144d2daa23bee1af18c33917a8a414eb",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SKIPLOOM.json",
+      "sha1": "51b9b55bd8cefc0f425c98f6130b5fe5b9fc3759",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SKITTY.json",
+      "sha1": "f761bdbe9d5a7e917548355c4fa900d1496828f0",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SLAKING.json",
+      "sha1": "e84ba771b5324928b79251e97df851ea7c313cb1",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SLAKOTH.json",
+      "sha1": "5753e46c3f326d7547aac9ec035915a34a906a33",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SLOWBRO.json",
+      "sha1": "b7ce4316c71db7a415a920b8916be01bd35a2891",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SLOWKING.json",
+      "sha1": "8803a33e516ad44bdde3dedabf0b8df7899414c3",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SLOWPOKE.json",
+      "sha1": "5c0bfda375083c57181ee1730a811a2d692f0684",
+      "bytes": 337
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SLUGMA.json",
+      "sha1": "f3deedfd3501d1c8274215210445d88ade673234",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SMEARGLE.json",
+      "sha1": "3771e78204089012fdc99eca2633186b089879af",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SMOOCHUM.json",
+      "sha1": "16c7f9d710dd5f3cb803da211b6c61b4208e801c",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SNEASEL.json",
+      "sha1": "bf238a2c719bcdee53c28c36dc36582a12d673e4",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SNORLAX.json",
+      "sha1": "346808269094591bcf95a212bbe9b0222860499b",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SNORUNT.json",
+      "sha1": "ea9519fc8b46f157ea19c240e67cecc5854d3225",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SNUBBULL.json",
+      "sha1": "65852bec6ab3dfb868a17325d2e9eaf580927081",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SOLROCK.json",
+      "sha1": "0864673f6da10cff793628ad12b052081e6ee6e4",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SPEAROW.json",
+      "sha1": "26f01bdef801cb6ee21a23000f75d73c25434824",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SPHEAL.json",
+      "sha1": "239c0b911df4f6b76db3f92de2f1d0013d05470c",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SPINARAK.json",
+      "sha1": "4bf0a49996f66dd01d342bb5c8fafaa32e11863f",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SPINDA.json",
+      "sha1": "8b173de4e039e68cd0668403b6f014670662ed71",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SPOINK.json",
+      "sha1": "3e7d1abe5779adf44aed9001c9ef595e9fe936d2",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SQUIRTLE.json",
+      "sha1": "d38142879d8a0eb10716adb4f90173fe2d322c0d",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_STANTLER.json",
+      "sha1": "09c86f838912b8778a09915dd30ee71070f0211b",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_STARMIE.json",
+      "sha1": "bac5b83c1f8944579d1ba90e09961823023441da",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_STARYU.json",
+      "sha1": "addb1b2012104b1aed655349097c99a141368789",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_STEELIX.json",
+      "sha1": "54d66c43c3d95bad4244e55860354b7a850372cf",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SUDOWOODO.json",
+      "sha1": "1ca2f92e60000995b3173c6375cacc2825d998a8",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SUICUNE.json",
+      "sha1": "51df93a08b3862090aab1070829a032d63396104",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SUNFLORA.json",
+      "sha1": "3e0d3b838000d87042f5d8211d2c87cf1eaa3475",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SUNKERN.json",
+      "sha1": "b4a39b5f2bb10ba990abf5a123ecedfa2d27c107",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SURSKIT.json",
+      "sha1": "1ba837c0158d4d09ae3270052921296b1dbd43f2",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SWABLU.json",
+      "sha1": "accd925f86d2e5b85b5e5b552098cb3aab374f1d",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SWALOT.json",
+      "sha1": "7c7f54da6fee96baf8b7dcc4dfe0ccccddd9e96e",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SWAMPERT.json",
+      "sha1": "5f5f5f58b65fe2072a05556aa06c99cffdfe3e60",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SWELLOW.json",
+      "sha1": "eee1fc60e2c175411fee6a125ba853ea1ce1df56",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_SWINUB.json",
+      "sha1": "ae7a012434f5759c11e0805d582baa8cc4a6f414",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_TAILLOW.json",
+      "sha1": "a425c8b7beebde0439cec72ee3c63f4abd8cb961",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_TANGELA.json",
+      "sha1": "58d3b432dea6ca077f90c11febebf712b7246ac0",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_TAUROS.json",
+      "sha1": "11d5832755d9141f500f89d87c0df433d19f2a12",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_TEDDIURSA.json",
+      "sha1": "dd8097ac2278862d1b0588f104898612557c0372",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_TENTACOOL.json",
+      "sha1": "b54387f9d5db2d34053295b8d2e07a5507e618bf",
+      "bytes": 339
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_TENTACRUEL.json",
+      "sha1": "f899b0ce3b0a661f552c7a33db31be67d01e020c",
+      "bytes": 341
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_TOGEPI.json",
+      "sha1": "d452ea8eb31e201f1cc17cac74e8acf6d64d9431",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_TOGETIC.json",
+      "sha1": "46ed6ba8b62ba9976bbdcee75e2671caa940219a",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_TORCHIC.json",
+      "sha1": "a7b2c47578a25aeb7f04b64e2bee07ca1932ba53",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_TORKOAL.json",
+      "sha1": "454c8886b68a6772b0687693dad7494f8e458264",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_TOTODILE.json",
+      "sha1": "cc0575b6b2d05f9d1af3a1acc80895d73c8700f9",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_TRAPINCH.json",
+      "sha1": "9e768ceeca11afae388eb1132907d7eb99debd3c",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_TREECKO.json",
+      "sha1": "b6f4eea04ad03389bda35eb082ad2ae26c82c153",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_TROPIUS.json",
+      "sha1": "7db1a7a825b0a5b669c7dd2cff367eaa78270e50",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_TYPHLOSION.json",
+      "sha1": "08f889bb24c2e8fd7634ef231b335b18e8ec0a49",
+      "bytes": 342
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_TYRANITAR.json",
+      "sha1": "005d79ebe32012abdf5255a991769079d84c108e",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_TYROGUE.json",
+      "sha1": "32bc60634287928ceb4afff1773c0c1261c24c0c",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UMBREON.json",
+      "sha1": "b4b95ea8cecaaa81f0d4b028657649c7140f824d",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN.json",
+      "sha1": "ccdaafc80c5bfbe8316ac854cbdf06a9782cfb82",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_B.json",
+      "sha1": "d7bf14d7ee5a44e1e3c8ab8726db30eb6f980957",
+      "bytes": 347
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_C.json",
+      "sha1": "85745cc2129319c37a9a2f1d3ab6f3466f19f011",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_D.json",
+      "sha1": "737764a5e3112986579e618a7b1b27267cd8573a",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_E.json",
+      "sha1": "545421221d81ca486998c2d61aa2b1ae1352421f",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_EMARK.json",
+      "sha1": "61db6a53bcda290b08c350df0c02d93a40f09a95",
+      "bytes": 359
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_F.json",
+      "sha1": "831bab90a3685ce53d975842e6d68ba4d3d8df39",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_G.json",
+      "sha1": "52bae0628a04e1e37e4f486a67d2114127b50d08",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_H.json",
+      "sha1": "8a52b2ba0d9ef39911d828a75795422cfb7f3b21",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_I.json",
+      "sha1": "1ffcef48608aa883806a2bfe9668cab0b9b9dca5",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_J.json",
+      "sha1": "40d1482d558410997dc0b9b27745c158b54fb8c7",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_K.json",
+      "sha1": "ba171df55d0d5c03dbd56db0d95edf8c3a6ba631",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_L.json",
+      "sha1": "b293914dcbc83fc1cce2eee404dac82d10350792",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_M.json",
+      "sha1": "33c659c42caf4e778530155fc84e5cc62310561a",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_N.json",
+      "sha1": "197094f188ff95374686daed75515823765fa323",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_O.json",
+      "sha1": "a3bacf220d7610cd9ed796686f0014db7972a5fb",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_P.json",
+      "sha1": "d3eda26e0984d01cd6196d7f0fb00403da310202",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_Q.json",
+      "sha1": "4c407e5a072a430d327a4d9a3c99e50ba085e887",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_QMARK.json",
+      "sha1": "3209a2b47a8540b79d923d517416e4015eae62a4",
+      "bytes": 359
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_R.json",
+      "sha1": "fd6e32bf9c6f2658de99b1fa383c5c40e758b781",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_S.json",
+      "sha1": "4006133ab004fda06ca536f416f83766a5db6120",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_T.json",
+      "sha1": "1f7ba2391fa629c12a20738db2f1b334c6164a16",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_U.json",
+      "sha1": "5730bff48da3228cb81fbcfd4a752ad42a5161c0",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_V.json",
+      "sha1": "eff1744301ea784cc654502e1f166964cb54f374",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_W.json",
+      "sha1": "a8c74c6646986a6c970db10f07d712e063175c8d",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_X.json",
+      "sha1": "6e514e4424e14bbaf4c9683e058d7e8d36af77ca",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_Y.json",
+      "sha1": "b1a9c0920803d239a2ebef40d3fa47f477b5443d",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_UNOWN_Z.json",
+      "sha1": "bfc890d49b58b232615be4a5dbd431bc44d52f63",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_URSARING.json",
+      "sha1": "30aaa95d77ee9b02854ced54a2e915830de21483",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_VAPOREON.json",
+      "sha1": "cf6ce5eb4235bc2d91d6df5e76f36966746cb49e",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_VENOMOTH.json",
+      "sha1": "626df0296895720d80abc4a7527042d88b1a3812",
+      "bytes": 337
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_VENONAT.json",
+      "sha1": "7343d5728ed00d2fcc4545dcec96066d893541b8",
+      "bytes": 335
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_VENUSAUR.json",
+      "sha1": "a1662ecb1b955a8a1b77b5004aa7c0fd04872f4d",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_VIBRAVA.json",
+      "sha1": "cb3957500e007b819426f62fe61e4801d64d419e",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_VICTREEBEL.json",
+      "sha1": "950cdf2ef44b42b5085d85b55bdfd71e9b845742",
+      "bytes": 341
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_VIGOROTH.json",
+      "sha1": "688093eae2fd4d1deb3c81b502d1592627914047",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_VILEPLUME.json",
+      "sha1": "1b70483fab169e178def9fb6b4226bcc26f3c526",
+      "bytes": 339
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_VOLBEAT.json",
+      "sha1": "fa96b924e5a776e39d488d7e42c2d4f23b7378dd",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_VOLTORB.json",
+      "sha1": "4d00f589979831f904f020c7280d78897e8fccfa",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_VULPIX.json",
+      "sha1": "97925b1fd5dd21f735c704ac78c44033e2a23f36",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_WAILMER.json",
+      "sha1": "e4c5b1b9d83ec3dae5c0b9dfca809a2848e2dff0",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_WAILORD.json",
+      "sha1": "8e060d9ea720ec3b4b43ba4f216f95160403dafa",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_WALREIN.json",
+      "sha1": "0962fdc6a914dc9ab348fc72c0d69b6e99fd8fed",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_WARTORTLE.json",
+      "sha1": "daaa18fdb73d36aabb6595f308b1b3c9dea720d6",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_WEEDLE.json",
+      "sha1": "5310cadd6c063d179092d37b69130122a4e0f68a",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_WEEPINBELL.json",
+      "sha1": "9d28029e56821515f2e9071ec4064f521e659abf",
+      "bytes": 341
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_WEEZING.json",
+      "sha1": "07d54f386416e774a397b42246d517b02d94ca1d",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_WHISCASH.json",
+      "sha1": "d6e1222c52f9d77c73376aa63022ce6db5678ab9",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_WHISMUR.json",
+      "sha1": "ffba084d1b9d5123f4e6caf36fc0d33c1888c79b",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_WIGGLYTUFF.json",
+      "sha1": "c070525f42ecede74da56511d86980ce31ba3aec",
+      "bytes": 341
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_WINGULL.json",
+      "sha1": "3b7c920ad733727da0e5fcbcd5c091879b74a6a8",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_WOBBUFFET.json",
+      "sha1": "83dcf1401b99d6c5d20c90759f359ab76c1422e4",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_WOOPER.json",
+      "sha1": "0db4efdb2281130ee4621b3b565f85a914f0b6ae",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_WURMPLE.json",
+      "sha1": "e859957a88e9d7c428fc9631f17422d870e26370",
+      "bytes": 336
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_WYNAUT.json",
+      "sha1": "183cd6c9282babecf9919a51d17ea4761774c03c",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_XATU.json",
+      "sha1": "d79ed95da3a9f4314a25adf271b9d005e1a46e02",
+      "bytes": 330
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_YANMA.json",
+      "sha1": "91c62edcec33146280e39731304dc742149d2eb1",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ZANGOOSE.json",
+      "sha1": "08283de8010397bcdd7a5ad635b515718dd58efb",
+      "bytes": 338
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ZAPDOS.json",
+      "sha1": "10cdb534583a3cb5fc232d6288c1783031463a65",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ZIGZAGOON.json",
+      "sha1": "35cf6f53d7b62e4af2224065b4d4ad93f9915bea",
+      "bytes": 340
+    },
+    {
+      "path": "mods/vanilla/pokemon/species/SPECIES_ZUBAT.json",
+      "sha1": "702fd6003e80641d9e9fd78857a113c40f8f08e8",
+      "bytes": 331
     }
   ],
   "counts": {
-    "sourceFiles": 2882
+    "entries": 440
   }
 }

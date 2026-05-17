@@ -1,0 +1,16 @@
+{
+  "id": "AncientTomb:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AncientTomb/map.json",
+    "sha1": "115981ccd581f3de9b23e46635de7032143af8b7"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/AncientTomb/map.json"
+  },
+  "map": "AncientTomb",
+  "mapId": "MAP_ANCIENT_TOMB",
+  "weather": "WEATHER_NONE"
+}

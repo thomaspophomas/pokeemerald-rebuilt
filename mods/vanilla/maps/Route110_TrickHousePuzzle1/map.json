@@ -243,5 +243,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route110_TrickHousePuzzle1_EventScript_Scroll"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle1/map.json",
+    "sha1": "1412bf3bf19f4ea965e946427d5db18ac2248a92"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle1/map.json",
+    "mapName": "Route110_TrickHousePuzzle1",
+    "scriptsSourcePath": "data/maps/Route110_TrickHousePuzzle1/scripts.inc"
+  },
+  "mapGroup": 29,
+  "mapNum": 3,
+  "mapGroupSymbol": "gMapGroup_IndoorRoute110",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

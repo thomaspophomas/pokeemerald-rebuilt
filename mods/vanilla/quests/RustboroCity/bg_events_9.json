@@ -1,0 +1,30 @@
+{
+  "id": "RustboroCity:bg_events:9",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/map.json",
+    "sha1": "89776bb64fdef8d9171b677d4f7ebeadd02a5674"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/RustboroCity/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 12,
+      "y": 38,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RustboroCity_EventScript_CuttersHouseSign"
+    }
+  },
+  "map": "RustboroCity",
+  "mapId": "MAP_RUSTBORO_CITY",
+  "eventType": "bg_events",
+  "index": 9,
+  "script": "RustboroCity_EventScript_CuttersHouseSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

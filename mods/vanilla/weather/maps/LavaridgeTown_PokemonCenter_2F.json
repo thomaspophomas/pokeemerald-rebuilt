@@ -1,0 +1,16 @@
+{
+  "id": "LavaridgeTown_PokemonCenter_2F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_PokemonCenter_2F/map.json",
+    "sha1": "66d3f8b98847f9dfee16ce1fe1cbf92f73c1d3ab"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/LavaridgeTown_PokemonCenter_2F/map.json"
+  },
+  "map": "LavaridgeTown_PokemonCenter_2F",
+  "mapId": "MAP_LAVARIDGE_TOWN_POKEMON_CENTER_2F",
+  "weather": "WEATHER_NONE"
+}

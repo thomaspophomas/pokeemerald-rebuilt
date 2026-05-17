@@ -1,0 +1,27 @@
+{
+  "id": "LavaridgeTown_PokemonCenter_2F:warp_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_PokemonCenter_2F/map.json",
+    "sha1": "66d3f8b98847f9dfee16ce1fe1cbf92f73c1d3ab"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LavaridgeTown_PokemonCenter_2F/map.json",
+    "raw": {
+      "x": 9,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_TRADE_CENTER",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "LavaridgeTown_PokemonCenter_2F",
+  "mapId": "MAP_LAVARIDGE_TOWN_POKEMON_CENTER_2F",
+  "eventType": "warp_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "Route110_SeasideCyclingRoadSouthEntrance:warp_events:3",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/map.json",
+    "sha1": "16577218e1c31086f8de85e1ec5a356ac231ac39"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/map.json",
+    "raw": {
+      "x": 13,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE110",
+      "dest_warp_id": "5"
+    }
+  },
+  "map": "Route110_SeasideCyclingRoadSouthEntrance",
+  "mapId": "MAP_ROUTE110_SEASIDE_CYCLING_ROAD_SOUTH_ENTRANCE",
+  "eventType": "warp_events",
+  "index": 3,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

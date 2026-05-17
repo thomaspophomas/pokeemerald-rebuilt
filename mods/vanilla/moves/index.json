@@ -1,0 +1,2855 @@
+{
+  "domain": "moves",
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "MOVE_ABSORB",
+      "path": "moves/MOVE_ABSORB.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ABSORB",
+      "numericId": 71
+    },
+    {
+      "id": "MOVE_ACID",
+      "path": "moves/MOVE_ACID.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ACID",
+      "numericId": 51
+    },
+    {
+      "id": "MOVE_ACID_ARMOR",
+      "path": "moves/MOVE_ACID_ARMOR.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ACID_ARMOR",
+      "numericId": 151
+    },
+    {
+      "id": "MOVE_AERIAL_ACE",
+      "path": "moves/MOVE_AERIAL_ACE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_AERIAL_ACE",
+      "numericId": 332
+    },
+    {
+      "id": "MOVE_AEROBLAST",
+      "path": "moves/MOVE_AEROBLAST.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_AEROBLAST",
+      "numericId": 177
+    },
+    {
+      "id": "MOVE_AGILITY",
+      "path": "moves/MOVE_AGILITY.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_AGILITY",
+      "numericId": 97
+    },
+    {
+      "id": "MOVE_AIR_CUTTER",
+      "path": "moves/MOVE_AIR_CUTTER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_AIR_CUTTER",
+      "numericId": 314
+    },
+    {
+      "id": "MOVE_AMNESIA",
+      "path": "moves/MOVE_AMNESIA.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_AMNESIA",
+      "numericId": 133
+    },
+    {
+      "id": "MOVE_ANCIENT_POWER",
+      "path": "moves/MOVE_ANCIENT_POWER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ANCIENT_POWER",
+      "numericId": 246
+    },
+    {
+      "id": "MOVE_ARM_THRUST",
+      "path": "moves/MOVE_ARM_THRUST.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ARM_THRUST",
+      "numericId": 292
+    },
+    {
+      "id": "MOVE_AROMATHERAPY",
+      "path": "moves/MOVE_AROMATHERAPY.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_AROMATHERAPY",
+      "numericId": 312
+    },
+    {
+      "id": "MOVE_ASSIST",
+      "path": "moves/MOVE_ASSIST.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ASSIST",
+      "numericId": 274
+    },
+    {
+      "id": "MOVE_ASTONISH",
+      "path": "moves/MOVE_ASTONISH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ASTONISH",
+      "numericId": 310
+    },
+    {
+      "id": "MOVE_ATTRACT",
+      "path": "moves/MOVE_ATTRACT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ATTRACT",
+      "numericId": 213
+    },
+    {
+      "id": "MOVE_AURORA_BEAM",
+      "path": "moves/MOVE_AURORA_BEAM.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_AURORA_BEAM",
+      "numericId": 62
+    },
+    {
+      "id": "MOVE_BARRAGE",
+      "path": "moves/MOVE_BARRAGE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BARRAGE",
+      "numericId": 140
+    },
+    {
+      "id": "MOVE_BARRIER",
+      "path": "moves/MOVE_BARRIER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BARRIER",
+      "numericId": 112
+    },
+    {
+      "id": "MOVE_BATON_PASS",
+      "path": "moves/MOVE_BATON_PASS.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BATON_PASS",
+      "numericId": 226
+    },
+    {
+      "id": "MOVE_BEAT_UP",
+      "path": "moves/MOVE_BEAT_UP.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BEAT_UP",
+      "numericId": 251
+    },
+    {
+      "id": "MOVE_BELLY_DRUM",
+      "path": "moves/MOVE_BELLY_DRUM.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BELLY_DRUM",
+      "numericId": 187
+    },
+    {
+      "id": "MOVE_BIDE",
+      "path": "moves/MOVE_BIDE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BIDE",
+      "numericId": 117
+    },
+    {
+      "id": "MOVE_BIND",
+      "path": "moves/MOVE_BIND.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BIND",
+      "numericId": 20
+    },
+    {
+      "id": "MOVE_BITE",
+      "path": "moves/MOVE_BITE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BITE",
+      "numericId": 44
+    },
+    {
+      "id": "MOVE_BLAST_BURN",
+      "path": "moves/MOVE_BLAST_BURN.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BLAST_BURN",
+      "numericId": 307
+    },
+    {
+      "id": "MOVE_BLAZE_KICK",
+      "path": "moves/MOVE_BLAZE_KICK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BLAZE_KICK",
+      "numericId": 299
+    },
+    {
+      "id": "MOVE_BLIZZARD",
+      "path": "moves/MOVE_BLIZZARD.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BLIZZARD",
+      "numericId": 59
+    },
+    {
+      "id": "MOVE_BLOCK",
+      "path": "moves/MOVE_BLOCK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BLOCK",
+      "numericId": 335
+    },
+    {
+      "id": "MOVE_BODY_SLAM",
+      "path": "moves/MOVE_BODY_SLAM.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BODY_SLAM",
+      "numericId": 34
+    },
+    {
+      "id": "MOVE_BONEMERANG",
+      "path": "moves/MOVE_BONEMERANG.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BONEMERANG",
+      "numericId": 155
+    },
+    {
+      "id": "MOVE_BONE_CLUB",
+      "path": "moves/MOVE_BONE_CLUB.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BONE_CLUB",
+      "numericId": 125
+    },
+    {
+      "id": "MOVE_BONE_RUSH",
+      "path": "moves/MOVE_BONE_RUSH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BONE_RUSH",
+      "numericId": 198
+    },
+    {
+      "id": "MOVE_BOUNCE",
+      "path": "moves/MOVE_BOUNCE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BOUNCE",
+      "numericId": 340
+    },
+    {
+      "id": "MOVE_BRICK_BREAK",
+      "path": "moves/MOVE_BRICK_BREAK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BRICK_BREAK",
+      "numericId": 280
+    },
+    {
+      "id": "MOVE_BUBBLE",
+      "path": "moves/MOVE_BUBBLE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BUBBLE",
+      "numericId": 145
+    },
+    {
+      "id": "MOVE_BUBBLE_BEAM",
+      "path": "moves/MOVE_BUBBLE_BEAM.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BUBBLE_BEAM",
+      "numericId": 61
+    },
+    {
+      "id": "MOVE_BULK_UP",
+      "path": "moves/MOVE_BULK_UP.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BULK_UP",
+      "numericId": 339
+    },
+    {
+      "id": "MOVE_BULLET_SEED",
+      "path": "moves/MOVE_BULLET_SEED.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_BULLET_SEED",
+      "numericId": 331
+    },
+    {
+      "id": "MOVE_CALM_MIND",
+      "path": "moves/MOVE_CALM_MIND.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_CALM_MIND",
+      "numericId": 347
+    },
+    {
+      "id": "MOVE_CAMOUFLAGE",
+      "path": "moves/MOVE_CAMOUFLAGE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_CAMOUFLAGE",
+      "numericId": 293
+    },
+    {
+      "id": "MOVE_CHARGE",
+      "path": "moves/MOVE_CHARGE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_CHARGE",
+      "numericId": 268
+    },
+    {
+      "id": "MOVE_CHARM",
+      "path": "moves/MOVE_CHARM.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_CHARM",
+      "numericId": 204
+    },
+    {
+      "id": "MOVE_CLAMP",
+      "path": "moves/MOVE_CLAMP.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_CLAMP",
+      "numericId": 128
+    },
+    {
+      "id": "MOVE_COMET_PUNCH",
+      "path": "moves/MOVE_COMET_PUNCH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_COMET_PUNCH",
+      "numericId": 4
+    },
+    {
+      "id": "MOVE_CONFUSE_RAY",
+      "path": "moves/MOVE_CONFUSE_RAY.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_CONFUSE_RAY",
+      "numericId": 109
+    },
+    {
+      "id": "MOVE_CONFUSION",
+      "path": "moves/MOVE_CONFUSION.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_CONFUSION",
+      "numericId": 93
+    },
+    {
+      "id": "MOVE_CONSTRICT",
+      "path": "moves/MOVE_CONSTRICT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_CONSTRICT",
+      "numericId": 132
+    },
+    {
+      "id": "MOVE_CONVERSION",
+      "path": "moves/MOVE_CONVERSION.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_CONVERSION",
+      "numericId": 160
+    },
+    {
+      "id": "MOVE_CONVERSION_2",
+      "path": "moves/MOVE_CONVERSION_2.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_CONVERSION_2",
+      "numericId": 176
+    },
+    {
+      "id": "MOVE_COSMIC_POWER",
+      "path": "moves/MOVE_COSMIC_POWER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_COSMIC_POWER",
+      "numericId": 322
+    },
+    {
+      "id": "MOVE_COTTON_SPORE",
+      "path": "moves/MOVE_COTTON_SPORE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_COTTON_SPORE",
+      "numericId": 178
+    },
+    {
+      "id": "MOVE_COUNTER",
+      "path": "moves/MOVE_COUNTER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_COUNTER",
+      "numericId": 68
+    },
+    {
+      "id": "MOVE_COVET",
+      "path": "moves/MOVE_COVET.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_COVET",
+      "numericId": 343
+    },
+    {
+      "id": "MOVE_CRABHAMMER",
+      "path": "moves/MOVE_CRABHAMMER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_CRABHAMMER",
+      "numericId": 152
+    },
+    {
+      "id": "MOVE_CROSS_CHOP",
+      "path": "moves/MOVE_CROSS_CHOP.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_CROSS_CHOP",
+      "numericId": 238
+    },
+    {
+      "id": "MOVE_CRUNCH",
+      "path": "moves/MOVE_CRUNCH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_CRUNCH",
+      "numericId": 242
+    },
+    {
+      "id": "MOVE_CRUSH_CLAW",
+      "path": "moves/MOVE_CRUSH_CLAW.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_CRUSH_CLAW",
+      "numericId": 306
+    },
+    {
+      "id": "MOVE_CURSE",
+      "path": "moves/MOVE_CURSE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_CURSE",
+      "numericId": 174
+    },
+    {
+      "id": "MOVE_CUT",
+      "path": "moves/MOVE_CUT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_CUT",
+      "numericId": 15
+    },
+    {
+      "id": "MOVE_DEFENSE_CURL",
+      "path": "moves/MOVE_DEFENSE_CURL.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_DEFENSE_CURL",
+      "numericId": 111
+    },
+    {
+      "id": "MOVE_DESTINY_BOND",
+      "path": "moves/MOVE_DESTINY_BOND.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_DESTINY_BOND",
+      "numericId": 194
+    },
+    {
+      "id": "MOVE_DETECT",
+      "path": "moves/MOVE_DETECT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_DETECT",
+      "numericId": 197
+    },
+    {
+      "id": "MOVE_DIG",
+      "path": "moves/MOVE_DIG.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_DIG",
+      "numericId": 91
+    },
+    {
+      "id": "MOVE_DISABLE",
+      "path": "moves/MOVE_DISABLE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_DISABLE",
+      "numericId": 50
+    },
+    {
+      "id": "MOVE_DIVE",
+      "path": "moves/MOVE_DIVE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_DIVE",
+      "numericId": 291
+    },
+    {
+      "id": "MOVE_DIZZY_PUNCH",
+      "path": "moves/MOVE_DIZZY_PUNCH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_DIZZY_PUNCH",
+      "numericId": 146
+    },
+    {
+      "id": "MOVE_DOOM_DESIRE",
+      "path": "moves/MOVE_DOOM_DESIRE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_DOOM_DESIRE",
+      "numericId": 353
+    },
+    {
+      "id": "MOVE_DOUBLE_EDGE",
+      "path": "moves/MOVE_DOUBLE_EDGE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_DOUBLE_EDGE",
+      "numericId": 38
+    },
+    {
+      "id": "MOVE_DOUBLE_KICK",
+      "path": "moves/MOVE_DOUBLE_KICK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_DOUBLE_KICK",
+      "numericId": 24
+    },
+    {
+      "id": "MOVE_DOUBLE_SLAP",
+      "path": "moves/MOVE_DOUBLE_SLAP.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_DOUBLE_SLAP",
+      "numericId": 3
+    },
+    {
+      "id": "MOVE_DOUBLE_TEAM",
+      "path": "moves/MOVE_DOUBLE_TEAM.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_DOUBLE_TEAM",
+      "numericId": 104
+    },
+    {
+      "id": "MOVE_DRAGON_BREATH",
+      "path": "moves/MOVE_DRAGON_BREATH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_DRAGON_BREATH",
+      "numericId": 225
+    },
+    {
+      "id": "MOVE_DRAGON_CLAW",
+      "path": "moves/MOVE_DRAGON_CLAW.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_DRAGON_CLAW",
+      "numericId": 337
+    },
+    {
+      "id": "MOVE_DRAGON_DANCE",
+      "path": "moves/MOVE_DRAGON_DANCE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_DRAGON_DANCE",
+      "numericId": 349
+    },
+    {
+      "id": "MOVE_DRAGON_RAGE",
+      "path": "moves/MOVE_DRAGON_RAGE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_DRAGON_RAGE",
+      "numericId": 82
+    },
+    {
+      "id": "MOVE_DREAM_EATER",
+      "path": "moves/MOVE_DREAM_EATER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_DREAM_EATER",
+      "numericId": 138
+    },
+    {
+      "id": "MOVE_DRILL_PECK",
+      "path": "moves/MOVE_DRILL_PECK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_DRILL_PECK",
+      "numericId": 65
+    },
+    {
+      "id": "MOVE_DYNAMIC_PUNCH",
+      "path": "moves/MOVE_DYNAMIC_PUNCH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_DYNAMIC_PUNCH",
+      "numericId": 223
+    },
+    {
+      "id": "MOVE_EARTHQUAKE",
+      "path": "moves/MOVE_EARTHQUAKE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_EARTHQUAKE",
+      "numericId": 89
+    },
+    {
+      "id": "MOVE_EGG_BOMB",
+      "path": "moves/MOVE_EGG_BOMB.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_EGG_BOMB",
+      "numericId": 121
+    },
+    {
+      "id": "MOVE_EMBER",
+      "path": "moves/MOVE_EMBER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_EMBER",
+      "numericId": 52
+    },
+    {
+      "id": "MOVE_ENCORE",
+      "path": "moves/MOVE_ENCORE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ENCORE",
+      "numericId": 227
+    },
+    {
+      "id": "MOVE_ENDEAVOR",
+      "path": "moves/MOVE_ENDEAVOR.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ENDEAVOR",
+      "numericId": 283
+    },
+    {
+      "id": "MOVE_ENDURE",
+      "path": "moves/MOVE_ENDURE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ENDURE",
+      "numericId": 203
+    },
+    {
+      "id": "MOVE_ERUPTION",
+      "path": "moves/MOVE_ERUPTION.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ERUPTION",
+      "numericId": 284
+    },
+    {
+      "id": "MOVE_EXPLOSION",
+      "path": "moves/MOVE_EXPLOSION.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_EXPLOSION",
+      "numericId": 153
+    },
+    {
+      "id": "MOVE_EXTRASENSORY",
+      "path": "moves/MOVE_EXTRASENSORY.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_EXTRASENSORY",
+      "numericId": 326
+    },
+    {
+      "id": "MOVE_EXTREME_SPEED",
+      "path": "moves/MOVE_EXTREME_SPEED.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_EXTREME_SPEED",
+      "numericId": 245
+    },
+    {
+      "id": "MOVE_FACADE",
+      "path": "moves/MOVE_FACADE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FACADE",
+      "numericId": 263
+    },
+    {
+      "id": "MOVE_FAINT_ATTACK",
+      "path": "moves/MOVE_FAINT_ATTACK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FAINT_ATTACK",
+      "numericId": 185
+    },
+    {
+      "id": "MOVE_FAKE_OUT",
+      "path": "moves/MOVE_FAKE_OUT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FAKE_OUT",
+      "numericId": 252
+    },
+    {
+      "id": "MOVE_FAKE_TEARS",
+      "path": "moves/MOVE_FAKE_TEARS.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FAKE_TEARS",
+      "numericId": 313
+    },
+    {
+      "id": "MOVE_FALSE_SWIPE",
+      "path": "moves/MOVE_FALSE_SWIPE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FALSE_SWIPE",
+      "numericId": 206
+    },
+    {
+      "id": "MOVE_FEATHER_DANCE",
+      "path": "moves/MOVE_FEATHER_DANCE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FEATHER_DANCE",
+      "numericId": 297
+    },
+    {
+      "id": "MOVE_FIRE_BLAST",
+      "path": "moves/MOVE_FIRE_BLAST.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FIRE_BLAST",
+      "numericId": 126
+    },
+    {
+      "id": "MOVE_FIRE_PUNCH",
+      "path": "moves/MOVE_FIRE_PUNCH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FIRE_PUNCH",
+      "numericId": 7
+    },
+    {
+      "id": "MOVE_FIRE_SPIN",
+      "path": "moves/MOVE_FIRE_SPIN.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FIRE_SPIN",
+      "numericId": 83
+    },
+    {
+      "id": "MOVE_FISSURE",
+      "path": "moves/MOVE_FISSURE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FISSURE",
+      "numericId": 90
+    },
+    {
+      "id": "MOVE_FLAIL",
+      "path": "moves/MOVE_FLAIL.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FLAIL",
+      "numericId": 175
+    },
+    {
+      "id": "MOVE_FLAMETHROWER",
+      "path": "moves/MOVE_FLAMETHROWER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FLAMETHROWER",
+      "numericId": 53
+    },
+    {
+      "id": "MOVE_FLAME_WHEEL",
+      "path": "moves/MOVE_FLAME_WHEEL.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FLAME_WHEEL",
+      "numericId": 172
+    },
+    {
+      "id": "MOVE_FLASH",
+      "path": "moves/MOVE_FLASH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FLASH",
+      "numericId": 148
+    },
+    {
+      "id": "MOVE_FLATTER",
+      "path": "moves/MOVE_FLATTER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FLATTER",
+      "numericId": 260
+    },
+    {
+      "id": "MOVE_FLY",
+      "path": "moves/MOVE_FLY.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FLY",
+      "numericId": 19
+    },
+    {
+      "id": "MOVE_FOCUS_ENERGY",
+      "path": "moves/MOVE_FOCUS_ENERGY.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FOCUS_ENERGY",
+      "numericId": 116
+    },
+    {
+      "id": "MOVE_FOCUS_PUNCH",
+      "path": "moves/MOVE_FOCUS_PUNCH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FOCUS_PUNCH",
+      "numericId": 264
+    },
+    {
+      "id": "MOVE_FOLLOW_ME",
+      "path": "moves/MOVE_FOLLOW_ME.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FOLLOW_ME",
+      "numericId": 266
+    },
+    {
+      "id": "MOVE_FORESIGHT",
+      "path": "moves/MOVE_FORESIGHT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FORESIGHT",
+      "numericId": 193
+    },
+    {
+      "id": "MOVE_FRENZY_PLANT",
+      "path": "moves/MOVE_FRENZY_PLANT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FRENZY_PLANT",
+      "numericId": 338
+    },
+    {
+      "id": "MOVE_FRUSTRATION",
+      "path": "moves/MOVE_FRUSTRATION.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FRUSTRATION",
+      "numericId": 218
+    },
+    {
+      "id": "MOVE_FURY_ATTACK",
+      "path": "moves/MOVE_FURY_ATTACK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FURY_ATTACK",
+      "numericId": 31
+    },
+    {
+      "id": "MOVE_FURY_CUTTER",
+      "path": "moves/MOVE_FURY_CUTTER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FURY_CUTTER",
+      "numericId": 210
+    },
+    {
+      "id": "MOVE_FURY_SWIPES",
+      "path": "moves/MOVE_FURY_SWIPES.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FURY_SWIPES",
+      "numericId": 154
+    },
+    {
+      "id": "MOVE_FUTURE_SIGHT",
+      "path": "moves/MOVE_FUTURE_SIGHT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_FUTURE_SIGHT",
+      "numericId": 248
+    },
+    {
+      "id": "MOVE_GIGA_DRAIN",
+      "path": "moves/MOVE_GIGA_DRAIN.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_GIGA_DRAIN",
+      "numericId": 202
+    },
+    {
+      "id": "MOVE_GLARE",
+      "path": "moves/MOVE_GLARE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_GLARE",
+      "numericId": 137
+    },
+    {
+      "id": "MOVE_GRASS_WHISTLE",
+      "path": "moves/MOVE_GRASS_WHISTLE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_GRASS_WHISTLE",
+      "numericId": 320
+    },
+    {
+      "id": "MOVE_GROWL",
+      "path": "moves/MOVE_GROWL.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_GROWL",
+      "numericId": 45
+    },
+    {
+      "id": "MOVE_GROWTH",
+      "path": "moves/MOVE_GROWTH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_GROWTH",
+      "numericId": 74
+    },
+    {
+      "id": "MOVE_GRUDGE",
+      "path": "moves/MOVE_GRUDGE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_GRUDGE",
+      "numericId": 288
+    },
+    {
+      "id": "MOVE_GUILLOTINE",
+      "path": "moves/MOVE_GUILLOTINE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_GUILLOTINE",
+      "numericId": 12
+    },
+    {
+      "id": "MOVE_GUST",
+      "path": "moves/MOVE_GUST.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_GUST",
+      "numericId": 16
+    },
+    {
+      "id": "MOVE_HAIL",
+      "path": "moves/MOVE_HAIL.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_HAIL",
+      "numericId": 258
+    },
+    {
+      "id": "MOVE_HARDEN",
+      "path": "moves/MOVE_HARDEN.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_HARDEN",
+      "numericId": 106
+    },
+    {
+      "id": "MOVE_HAZE",
+      "path": "moves/MOVE_HAZE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_HAZE",
+      "numericId": 114
+    },
+    {
+      "id": "MOVE_HEADBUTT",
+      "path": "moves/MOVE_HEADBUTT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_HEADBUTT",
+      "numericId": 29
+    },
+    {
+      "id": "MOVE_HEAL_BELL",
+      "path": "moves/MOVE_HEAL_BELL.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_HEAL_BELL",
+      "numericId": 215
+    },
+    {
+      "id": "MOVE_HEAT_WAVE",
+      "path": "moves/MOVE_HEAT_WAVE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_HEAT_WAVE",
+      "numericId": 257
+    },
+    {
+      "id": "MOVE_HELPING_HAND",
+      "path": "moves/MOVE_HELPING_HAND.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_HELPING_HAND",
+      "numericId": 270
+    },
+    {
+      "id": "MOVE_HIDDEN_POWER",
+      "path": "moves/MOVE_HIDDEN_POWER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_HIDDEN_POWER",
+      "numericId": 237
+    },
+    {
+      "id": "MOVE_HI_JUMP_KICK",
+      "path": "moves/MOVE_HI_JUMP_KICK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_HI_JUMP_KICK",
+      "numericId": 136
+    },
+    {
+      "id": "MOVE_HORN_ATTACK",
+      "path": "moves/MOVE_HORN_ATTACK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_HORN_ATTACK",
+      "numericId": 30
+    },
+    {
+      "id": "MOVE_HORN_DRILL",
+      "path": "moves/MOVE_HORN_DRILL.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_HORN_DRILL",
+      "numericId": 32
+    },
+    {
+      "id": "MOVE_HOWL",
+      "path": "moves/MOVE_HOWL.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_HOWL",
+      "numericId": 336
+    },
+    {
+      "id": "MOVE_HYDRO_CANNON",
+      "path": "moves/MOVE_HYDRO_CANNON.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_HYDRO_CANNON",
+      "numericId": 308
+    },
+    {
+      "id": "MOVE_HYDRO_PUMP",
+      "path": "moves/MOVE_HYDRO_PUMP.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_HYDRO_PUMP",
+      "numericId": 56
+    },
+    {
+      "id": "MOVE_HYPER_BEAM",
+      "path": "moves/MOVE_HYPER_BEAM.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_HYPER_BEAM",
+      "numericId": 63
+    },
+    {
+      "id": "MOVE_HYPER_FANG",
+      "path": "moves/MOVE_HYPER_FANG.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_HYPER_FANG",
+      "numericId": 158
+    },
+    {
+      "id": "MOVE_HYPER_VOICE",
+      "path": "moves/MOVE_HYPER_VOICE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_HYPER_VOICE",
+      "numericId": 304
+    },
+    {
+      "id": "MOVE_HYPNOSIS",
+      "path": "moves/MOVE_HYPNOSIS.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_HYPNOSIS",
+      "numericId": 95
+    },
+    {
+      "id": "MOVE_ICE_BALL",
+      "path": "moves/MOVE_ICE_BALL.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ICE_BALL",
+      "numericId": 301
+    },
+    {
+      "id": "MOVE_ICE_BEAM",
+      "path": "moves/MOVE_ICE_BEAM.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ICE_BEAM",
+      "numericId": 58
+    },
+    {
+      "id": "MOVE_ICE_PUNCH",
+      "path": "moves/MOVE_ICE_PUNCH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ICE_PUNCH",
+      "numericId": 8
+    },
+    {
+      "id": "MOVE_ICICLE_SPEAR",
+      "path": "moves/MOVE_ICICLE_SPEAR.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ICICLE_SPEAR",
+      "numericId": 333
+    },
+    {
+      "id": "MOVE_ICY_WIND",
+      "path": "moves/MOVE_ICY_WIND.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ICY_WIND",
+      "numericId": 196
+    },
+    {
+      "id": "MOVE_IMPRISON",
+      "path": "moves/MOVE_IMPRISON.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_IMPRISON",
+      "numericId": 286
+    },
+    {
+      "id": "MOVE_INGRAIN",
+      "path": "moves/MOVE_INGRAIN.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_INGRAIN",
+      "numericId": 275
+    },
+    {
+      "id": "MOVE_IRON_DEFENSE",
+      "path": "moves/MOVE_IRON_DEFENSE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_IRON_DEFENSE",
+      "numericId": 334
+    },
+    {
+      "id": "MOVE_IRON_TAIL",
+      "path": "moves/MOVE_IRON_TAIL.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_IRON_TAIL",
+      "numericId": 231
+    },
+    {
+      "id": "MOVE_JUMP_KICK",
+      "path": "moves/MOVE_JUMP_KICK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_JUMP_KICK",
+      "numericId": 26
+    },
+    {
+      "id": "MOVE_KARATE_CHOP",
+      "path": "moves/MOVE_KARATE_CHOP.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_KARATE_CHOP",
+      "numericId": 2
+    },
+    {
+      "id": "MOVE_KINESIS",
+      "path": "moves/MOVE_KINESIS.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_KINESIS",
+      "numericId": 134
+    },
+    {
+      "id": "MOVE_KNOCK_OFF",
+      "path": "moves/MOVE_KNOCK_OFF.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_KNOCK_OFF",
+      "numericId": 282
+    },
+    {
+      "id": "MOVE_LEAF_BLADE",
+      "path": "moves/MOVE_LEAF_BLADE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_LEAF_BLADE",
+      "numericId": 348
+    },
+    {
+      "id": "MOVE_LEECH_LIFE",
+      "path": "moves/MOVE_LEECH_LIFE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_LEECH_LIFE",
+      "numericId": 141
+    },
+    {
+      "id": "MOVE_LEECH_SEED",
+      "path": "moves/MOVE_LEECH_SEED.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_LEECH_SEED",
+      "numericId": 73
+    },
+    {
+      "id": "MOVE_LEER",
+      "path": "moves/MOVE_LEER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_LEER",
+      "numericId": 43
+    },
+    {
+      "id": "MOVE_LICK",
+      "path": "moves/MOVE_LICK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_LICK",
+      "numericId": 122
+    },
+    {
+      "id": "MOVE_LIGHT_SCREEN",
+      "path": "moves/MOVE_LIGHT_SCREEN.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_LIGHT_SCREEN",
+      "numericId": 113
+    },
+    {
+      "id": "MOVE_LOCK_ON",
+      "path": "moves/MOVE_LOCK_ON.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_LOCK_ON",
+      "numericId": 199
+    },
+    {
+      "id": "MOVE_LOVELY_KISS",
+      "path": "moves/MOVE_LOVELY_KISS.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_LOVELY_KISS",
+      "numericId": 142
+    },
+    {
+      "id": "MOVE_LOW_KICK",
+      "path": "moves/MOVE_LOW_KICK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_LOW_KICK",
+      "numericId": 67
+    },
+    {
+      "id": "MOVE_LUSTER_PURGE",
+      "path": "moves/MOVE_LUSTER_PURGE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_LUSTER_PURGE",
+      "numericId": 295
+    },
+    {
+      "id": "MOVE_MACH_PUNCH",
+      "path": "moves/MOVE_MACH_PUNCH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MACH_PUNCH",
+      "numericId": 183
+    },
+    {
+      "id": "MOVE_MAGICAL_LEAF",
+      "path": "moves/MOVE_MAGICAL_LEAF.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MAGICAL_LEAF",
+      "numericId": 345
+    },
+    {
+      "id": "MOVE_MAGIC_COAT",
+      "path": "moves/MOVE_MAGIC_COAT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MAGIC_COAT",
+      "numericId": 277
+    },
+    {
+      "id": "MOVE_MAGNITUDE",
+      "path": "moves/MOVE_MAGNITUDE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MAGNITUDE",
+      "numericId": 222
+    },
+    {
+      "id": "MOVE_MEAN_LOOK",
+      "path": "moves/MOVE_MEAN_LOOK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MEAN_LOOK",
+      "numericId": 212
+    },
+    {
+      "id": "MOVE_MEDITATE",
+      "path": "moves/MOVE_MEDITATE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MEDITATE",
+      "numericId": 96
+    },
+    {
+      "id": "MOVE_MEGAHORN",
+      "path": "moves/MOVE_MEGAHORN.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MEGAHORN",
+      "numericId": 224
+    },
+    {
+      "id": "MOVE_MEGA_DRAIN",
+      "path": "moves/MOVE_MEGA_DRAIN.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MEGA_DRAIN",
+      "numericId": 72
+    },
+    {
+      "id": "MOVE_MEGA_KICK",
+      "path": "moves/MOVE_MEGA_KICK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MEGA_KICK",
+      "numericId": 25
+    },
+    {
+      "id": "MOVE_MEGA_PUNCH",
+      "path": "moves/MOVE_MEGA_PUNCH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MEGA_PUNCH",
+      "numericId": 5
+    },
+    {
+      "id": "MOVE_MEMENTO",
+      "path": "moves/MOVE_MEMENTO.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MEMENTO",
+      "numericId": 262
+    },
+    {
+      "id": "MOVE_METAL_CLAW",
+      "path": "moves/MOVE_METAL_CLAW.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_METAL_CLAW",
+      "numericId": 232
+    },
+    {
+      "id": "MOVE_METAL_SOUND",
+      "path": "moves/MOVE_METAL_SOUND.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_METAL_SOUND",
+      "numericId": 319
+    },
+    {
+      "id": "MOVE_METEOR_MASH",
+      "path": "moves/MOVE_METEOR_MASH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_METEOR_MASH",
+      "numericId": 309
+    },
+    {
+      "id": "MOVE_METRONOME",
+      "path": "moves/MOVE_METRONOME.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_METRONOME",
+      "numericId": 118
+    },
+    {
+      "id": "MOVE_MILK_DRINK",
+      "path": "moves/MOVE_MILK_DRINK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MILK_DRINK",
+      "numericId": 208
+    },
+    {
+      "id": "MOVE_MIMIC",
+      "path": "moves/MOVE_MIMIC.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MIMIC",
+      "numericId": 102
+    },
+    {
+      "id": "MOVE_MIND_READER",
+      "path": "moves/MOVE_MIND_READER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MIND_READER",
+      "numericId": 170
+    },
+    {
+      "id": "MOVE_MINIMIZE",
+      "path": "moves/MOVE_MINIMIZE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MINIMIZE",
+      "numericId": 107
+    },
+    {
+      "id": "MOVE_MIRROR_COAT",
+      "path": "moves/MOVE_MIRROR_COAT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MIRROR_COAT",
+      "numericId": 243
+    },
+    {
+      "id": "MOVE_MIRROR_MOVE",
+      "path": "moves/MOVE_MIRROR_MOVE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MIRROR_MOVE",
+      "numericId": 119
+    },
+    {
+      "id": "MOVE_MIST",
+      "path": "moves/MOVE_MIST.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MIST",
+      "numericId": 54
+    },
+    {
+      "id": "MOVE_MIST_BALL",
+      "path": "moves/MOVE_MIST_BALL.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MIST_BALL",
+      "numericId": 296
+    },
+    {
+      "id": "MOVE_MOONLIGHT",
+      "path": "moves/MOVE_MOONLIGHT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MOONLIGHT",
+      "numericId": 236
+    },
+    {
+      "id": "MOVE_MORNING_SUN",
+      "path": "moves/MOVE_MORNING_SUN.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MORNING_SUN",
+      "numericId": 234
+    },
+    {
+      "id": "MOVE_MUDDY_WATER",
+      "path": "moves/MOVE_MUDDY_WATER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MUDDY_WATER",
+      "numericId": 330
+    },
+    {
+      "id": "MOVE_MUD_SHOT",
+      "path": "moves/MOVE_MUD_SHOT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MUD_SHOT",
+      "numericId": 341
+    },
+    {
+      "id": "MOVE_MUD_SLAP",
+      "path": "moves/MOVE_MUD_SLAP.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MUD_SLAP",
+      "numericId": 189
+    },
+    {
+      "id": "MOVE_MUD_SPORT",
+      "path": "moves/MOVE_MUD_SPORT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_MUD_SPORT",
+      "numericId": 300
+    },
+    {
+      "id": "MOVE_NATURE_POWER",
+      "path": "moves/MOVE_NATURE_POWER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_NATURE_POWER",
+      "numericId": 267
+    },
+    {
+      "id": "MOVE_NEEDLE_ARM",
+      "path": "moves/MOVE_NEEDLE_ARM.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_NEEDLE_ARM",
+      "numericId": 302
+    },
+    {
+      "id": "MOVE_NIGHTMARE",
+      "path": "moves/MOVE_NIGHTMARE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_NIGHTMARE",
+      "numericId": 171
+    },
+    {
+      "id": "MOVE_NIGHT_SHADE",
+      "path": "moves/MOVE_NIGHT_SHADE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_NIGHT_SHADE",
+      "numericId": 101
+    },
+    {
+      "id": "MOVE_NONE",
+      "path": "moves/MOVE_NONE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_NONE",
+      "numericId": 0
+    },
+    {
+      "id": "MOVE_OCTAZOOKA",
+      "path": "moves/MOVE_OCTAZOOKA.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_OCTAZOOKA",
+      "numericId": 190
+    },
+    {
+      "id": "MOVE_ODOR_SLEUTH",
+      "path": "moves/MOVE_ODOR_SLEUTH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ODOR_SLEUTH",
+      "numericId": 316
+    },
+    {
+      "id": "MOVE_OUTRAGE",
+      "path": "moves/MOVE_OUTRAGE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_OUTRAGE",
+      "numericId": 200
+    },
+    {
+      "id": "MOVE_OVERHEAT",
+      "path": "moves/MOVE_OVERHEAT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_OVERHEAT",
+      "numericId": 315
+    },
+    {
+      "id": "MOVE_PAIN_SPLIT",
+      "path": "moves/MOVE_PAIN_SPLIT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_PAIN_SPLIT",
+      "numericId": 220
+    },
+    {
+      "id": "MOVE_PAY_DAY",
+      "path": "moves/MOVE_PAY_DAY.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_PAY_DAY",
+      "numericId": 6
+    },
+    {
+      "id": "MOVE_PECK",
+      "path": "moves/MOVE_PECK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_PECK",
+      "numericId": 64
+    },
+    {
+      "id": "MOVE_PERISH_SONG",
+      "path": "moves/MOVE_PERISH_SONG.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_PERISH_SONG",
+      "numericId": 195
+    },
+    {
+      "id": "MOVE_PETAL_DANCE",
+      "path": "moves/MOVE_PETAL_DANCE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_PETAL_DANCE",
+      "numericId": 80
+    },
+    {
+      "id": "MOVE_PIN_MISSILE",
+      "path": "moves/MOVE_PIN_MISSILE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_PIN_MISSILE",
+      "numericId": 42
+    },
+    {
+      "id": "MOVE_POISON_FANG",
+      "path": "moves/MOVE_POISON_FANG.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_POISON_FANG",
+      "numericId": 305
+    },
+    {
+      "id": "MOVE_POISON_GAS",
+      "path": "moves/MOVE_POISON_GAS.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_POISON_GAS",
+      "numericId": 139
+    },
+    {
+      "id": "MOVE_POISON_POWDER",
+      "path": "moves/MOVE_POISON_POWDER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_POISON_POWDER",
+      "numericId": 77
+    },
+    {
+      "id": "MOVE_POISON_STING",
+      "path": "moves/MOVE_POISON_STING.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_POISON_STING",
+      "numericId": 40
+    },
+    {
+      "id": "MOVE_POISON_TAIL",
+      "path": "moves/MOVE_POISON_TAIL.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_POISON_TAIL",
+      "numericId": 342
+    },
+    {
+      "id": "MOVE_POUND",
+      "path": "moves/MOVE_POUND.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_POUND",
+      "numericId": 1
+    },
+    {
+      "id": "MOVE_POWDER_SNOW",
+      "path": "moves/MOVE_POWDER_SNOW.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_POWDER_SNOW",
+      "numericId": 181
+    },
+    {
+      "id": "MOVE_PRESENT",
+      "path": "moves/MOVE_PRESENT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_PRESENT",
+      "numericId": 217
+    },
+    {
+      "id": "MOVE_PROTECT",
+      "path": "moves/MOVE_PROTECT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_PROTECT",
+      "numericId": 182
+    },
+    {
+      "id": "MOVE_PSYBEAM",
+      "path": "moves/MOVE_PSYBEAM.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_PSYBEAM",
+      "numericId": 60
+    },
+    {
+      "id": "MOVE_PSYCHIC",
+      "path": "moves/MOVE_PSYCHIC.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_PSYCHIC",
+      "numericId": 94
+    },
+    {
+      "id": "MOVE_PSYCHO_BOOST",
+      "path": "moves/MOVE_PSYCHO_BOOST.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_PSYCHO_BOOST",
+      "numericId": 354
+    },
+    {
+      "id": "MOVE_PSYCH_UP",
+      "path": "moves/MOVE_PSYCH_UP.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_PSYCH_UP",
+      "numericId": 244
+    },
+    {
+      "id": "MOVE_PSYWAVE",
+      "path": "moves/MOVE_PSYWAVE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_PSYWAVE",
+      "numericId": 149
+    },
+    {
+      "id": "MOVE_PURSUIT",
+      "path": "moves/MOVE_PURSUIT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_PURSUIT",
+      "numericId": 228
+    },
+    {
+      "id": "MOVE_QUICK_ATTACK",
+      "path": "moves/MOVE_QUICK_ATTACK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_QUICK_ATTACK",
+      "numericId": 98
+    },
+    {
+      "id": "MOVE_RAGE",
+      "path": "moves/MOVE_RAGE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_RAGE",
+      "numericId": 99
+    },
+    {
+      "id": "MOVE_RAIN_DANCE",
+      "path": "moves/MOVE_RAIN_DANCE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_RAIN_DANCE",
+      "numericId": 240
+    },
+    {
+      "id": "MOVE_RAPID_SPIN",
+      "path": "moves/MOVE_RAPID_SPIN.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_RAPID_SPIN",
+      "numericId": 229
+    },
+    {
+      "id": "MOVE_RAZOR_LEAF",
+      "path": "moves/MOVE_RAZOR_LEAF.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_RAZOR_LEAF",
+      "numericId": 75
+    },
+    {
+      "id": "MOVE_RAZOR_WIND",
+      "path": "moves/MOVE_RAZOR_WIND.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_RAZOR_WIND",
+      "numericId": 13
+    },
+    {
+      "id": "MOVE_RECOVER",
+      "path": "moves/MOVE_RECOVER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_RECOVER",
+      "numericId": 105
+    },
+    {
+      "id": "MOVE_RECYCLE",
+      "path": "moves/MOVE_RECYCLE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_RECYCLE",
+      "numericId": 278
+    },
+    {
+      "id": "MOVE_REFLECT",
+      "path": "moves/MOVE_REFLECT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_REFLECT",
+      "numericId": 115
+    },
+    {
+      "id": "MOVE_REFRESH",
+      "path": "moves/MOVE_REFRESH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_REFRESH",
+      "numericId": 287
+    },
+    {
+      "id": "MOVE_REST",
+      "path": "moves/MOVE_REST.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_REST",
+      "numericId": 156
+    },
+    {
+      "id": "MOVE_RETURN",
+      "path": "moves/MOVE_RETURN.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_RETURN",
+      "numericId": 216
+    },
+    {
+      "id": "MOVE_REVENGE",
+      "path": "moves/MOVE_REVENGE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_REVENGE",
+      "numericId": 279
+    },
+    {
+      "id": "MOVE_REVERSAL",
+      "path": "moves/MOVE_REVERSAL.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_REVERSAL",
+      "numericId": 179
+    },
+    {
+      "id": "MOVE_ROAR",
+      "path": "moves/MOVE_ROAR.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ROAR",
+      "numericId": 46
+    },
+    {
+      "id": "MOVE_ROCK_BLAST",
+      "path": "moves/MOVE_ROCK_BLAST.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ROCK_BLAST",
+      "numericId": 350
+    },
+    {
+      "id": "MOVE_ROCK_SLIDE",
+      "path": "moves/MOVE_ROCK_SLIDE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ROCK_SLIDE",
+      "numericId": 157
+    },
+    {
+      "id": "MOVE_ROCK_SMASH",
+      "path": "moves/MOVE_ROCK_SMASH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ROCK_SMASH",
+      "numericId": 249
+    },
+    {
+      "id": "MOVE_ROCK_THROW",
+      "path": "moves/MOVE_ROCK_THROW.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ROCK_THROW",
+      "numericId": 88
+    },
+    {
+      "id": "MOVE_ROCK_TOMB",
+      "path": "moves/MOVE_ROCK_TOMB.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ROCK_TOMB",
+      "numericId": 317
+    },
+    {
+      "id": "MOVE_ROLE_PLAY",
+      "path": "moves/MOVE_ROLE_PLAY.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ROLE_PLAY",
+      "numericId": 272
+    },
+    {
+      "id": "MOVE_ROLLING_KICK",
+      "path": "moves/MOVE_ROLLING_KICK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ROLLING_KICK",
+      "numericId": 27
+    },
+    {
+      "id": "MOVE_ROLLOUT",
+      "path": "moves/MOVE_ROLLOUT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ROLLOUT",
+      "numericId": 205
+    },
+    {
+      "id": "MOVE_SACRED_FIRE",
+      "path": "moves/MOVE_SACRED_FIRE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SACRED_FIRE",
+      "numericId": 221
+    },
+    {
+      "id": "MOVE_SAFEGUARD",
+      "path": "moves/MOVE_SAFEGUARD.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SAFEGUARD",
+      "numericId": 219
+    },
+    {
+      "id": "MOVE_SANDSTORM",
+      "path": "moves/MOVE_SANDSTORM.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SANDSTORM",
+      "numericId": 201
+    },
+    {
+      "id": "MOVE_SAND_ATTACK",
+      "path": "moves/MOVE_SAND_ATTACK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SAND_ATTACK",
+      "numericId": 28
+    },
+    {
+      "id": "MOVE_SAND_TOMB",
+      "path": "moves/MOVE_SAND_TOMB.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SAND_TOMB",
+      "numericId": 328
+    },
+    {
+      "id": "MOVE_SCARY_FACE",
+      "path": "moves/MOVE_SCARY_FACE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SCARY_FACE",
+      "numericId": 184
+    },
+    {
+      "id": "MOVE_SCRATCH",
+      "path": "moves/MOVE_SCRATCH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SCRATCH",
+      "numericId": 10
+    },
+    {
+      "id": "MOVE_SCREECH",
+      "path": "moves/MOVE_SCREECH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SCREECH",
+      "numericId": 103
+    },
+    {
+      "id": "MOVE_SECRET_POWER",
+      "path": "moves/MOVE_SECRET_POWER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SECRET_POWER",
+      "numericId": 290
+    },
+    {
+      "id": "MOVE_SEISMIC_TOSS",
+      "path": "moves/MOVE_SEISMIC_TOSS.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SEISMIC_TOSS",
+      "numericId": 69
+    },
+    {
+      "id": "MOVE_SELF_DESTRUCT",
+      "path": "moves/MOVE_SELF_DESTRUCT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SELF_DESTRUCT",
+      "numericId": 120
+    },
+    {
+      "id": "MOVE_SHADOW_BALL",
+      "path": "moves/MOVE_SHADOW_BALL.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SHADOW_BALL",
+      "numericId": 247
+    },
+    {
+      "id": "MOVE_SHADOW_PUNCH",
+      "path": "moves/MOVE_SHADOW_PUNCH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SHADOW_PUNCH",
+      "numericId": 325
+    },
+    {
+      "id": "MOVE_SHARPEN",
+      "path": "moves/MOVE_SHARPEN.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SHARPEN",
+      "numericId": 159
+    },
+    {
+      "id": "MOVE_SHEER_COLD",
+      "path": "moves/MOVE_SHEER_COLD.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SHEER_COLD",
+      "numericId": 329
+    },
+    {
+      "id": "MOVE_SHOCK_WAVE",
+      "path": "moves/MOVE_SHOCK_WAVE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SHOCK_WAVE",
+      "numericId": 351
+    },
+    {
+      "id": "MOVE_SIGNAL_BEAM",
+      "path": "moves/MOVE_SIGNAL_BEAM.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SIGNAL_BEAM",
+      "numericId": 324
+    },
+    {
+      "id": "MOVE_SILVER_WIND",
+      "path": "moves/MOVE_SILVER_WIND.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SILVER_WIND",
+      "numericId": 318
+    },
+    {
+      "id": "MOVE_SING",
+      "path": "moves/MOVE_SING.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SING",
+      "numericId": 47
+    },
+    {
+      "id": "MOVE_SKETCH",
+      "path": "moves/MOVE_SKETCH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SKETCH",
+      "numericId": 166
+    },
+    {
+      "id": "MOVE_SKILL_SWAP",
+      "path": "moves/MOVE_SKILL_SWAP.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SKILL_SWAP",
+      "numericId": 285
+    },
+    {
+      "id": "MOVE_SKULL_BASH",
+      "path": "moves/MOVE_SKULL_BASH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SKULL_BASH",
+      "numericId": 130
+    },
+    {
+      "id": "MOVE_SKY_ATTACK",
+      "path": "moves/MOVE_SKY_ATTACK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SKY_ATTACK",
+      "numericId": 143
+    },
+    {
+      "id": "MOVE_SKY_UPPERCUT",
+      "path": "moves/MOVE_SKY_UPPERCUT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SKY_UPPERCUT",
+      "numericId": 327
+    },
+    {
+      "id": "MOVE_SLACK_OFF",
+      "path": "moves/MOVE_SLACK_OFF.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SLACK_OFF",
+      "numericId": 303
+    },
+    {
+      "id": "MOVE_SLAM",
+      "path": "moves/MOVE_SLAM.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SLAM",
+      "numericId": 21
+    },
+    {
+      "id": "MOVE_SLASH",
+      "path": "moves/MOVE_SLASH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SLASH",
+      "numericId": 163
+    },
+    {
+      "id": "MOVE_SLEEP_POWDER",
+      "path": "moves/MOVE_SLEEP_POWDER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SLEEP_POWDER",
+      "numericId": 79
+    },
+    {
+      "id": "MOVE_SLEEP_TALK",
+      "path": "moves/MOVE_SLEEP_TALK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SLEEP_TALK",
+      "numericId": 214
+    },
+    {
+      "id": "MOVE_SLUDGE",
+      "path": "moves/MOVE_SLUDGE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SLUDGE",
+      "numericId": 124
+    },
+    {
+      "id": "MOVE_SLUDGE_BOMB",
+      "path": "moves/MOVE_SLUDGE_BOMB.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SLUDGE_BOMB",
+      "numericId": 188
+    },
+    {
+      "id": "MOVE_SMELLING_SALT",
+      "path": "moves/MOVE_SMELLING_SALT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SMELLING_SALT",
+      "numericId": 265
+    },
+    {
+      "id": "MOVE_SMOG",
+      "path": "moves/MOVE_SMOG.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SMOG",
+      "numericId": 123
+    },
+    {
+      "id": "MOVE_SMOKESCREEN",
+      "path": "moves/MOVE_SMOKESCREEN.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SMOKESCREEN",
+      "numericId": 108
+    },
+    {
+      "id": "MOVE_SNATCH",
+      "path": "moves/MOVE_SNATCH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SNATCH",
+      "numericId": 289
+    },
+    {
+      "id": "MOVE_SNORE",
+      "path": "moves/MOVE_SNORE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SNORE",
+      "numericId": 173
+    },
+    {
+      "id": "MOVE_SOFT_BOILED",
+      "path": "moves/MOVE_SOFT_BOILED.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SOFT_BOILED",
+      "numericId": 135
+    },
+    {
+      "id": "MOVE_SOLAR_BEAM",
+      "path": "moves/MOVE_SOLAR_BEAM.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SOLAR_BEAM",
+      "numericId": 76
+    },
+    {
+      "id": "MOVE_SONIC_BOOM",
+      "path": "moves/MOVE_SONIC_BOOM.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SONIC_BOOM",
+      "numericId": 49
+    },
+    {
+      "id": "MOVE_SPARK",
+      "path": "moves/MOVE_SPARK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SPARK",
+      "numericId": 209
+    },
+    {
+      "id": "MOVE_SPIDER_WEB",
+      "path": "moves/MOVE_SPIDER_WEB.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SPIDER_WEB",
+      "numericId": 169
+    },
+    {
+      "id": "MOVE_SPIKES",
+      "path": "moves/MOVE_SPIKES.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SPIKES",
+      "numericId": 191
+    },
+    {
+      "id": "MOVE_SPIKE_CANNON",
+      "path": "moves/MOVE_SPIKE_CANNON.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SPIKE_CANNON",
+      "numericId": 131
+    },
+    {
+      "id": "MOVE_SPITE",
+      "path": "moves/MOVE_SPITE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SPITE",
+      "numericId": 180
+    },
+    {
+      "id": "MOVE_SPIT_UP",
+      "path": "moves/MOVE_SPIT_UP.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SPIT_UP",
+      "numericId": 255
+    },
+    {
+      "id": "MOVE_SPLASH",
+      "path": "moves/MOVE_SPLASH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SPLASH",
+      "numericId": 150
+    },
+    {
+      "id": "MOVE_SPORE",
+      "path": "moves/MOVE_SPORE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SPORE",
+      "numericId": 147
+    },
+    {
+      "id": "MOVE_STEEL_WING",
+      "path": "moves/MOVE_STEEL_WING.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_STEEL_WING",
+      "numericId": 211
+    },
+    {
+      "id": "MOVE_STOCKPILE",
+      "path": "moves/MOVE_STOCKPILE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_STOCKPILE",
+      "numericId": 254
+    },
+    {
+      "id": "MOVE_STOMP",
+      "path": "moves/MOVE_STOMP.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_STOMP",
+      "numericId": 23
+    },
+    {
+      "id": "MOVE_STRENGTH",
+      "path": "moves/MOVE_STRENGTH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_STRENGTH",
+      "numericId": 70
+    },
+    {
+      "id": "MOVE_STRING_SHOT",
+      "path": "moves/MOVE_STRING_SHOT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_STRING_SHOT",
+      "numericId": 81
+    },
+    {
+      "id": "MOVE_STRUGGLE",
+      "path": "moves/MOVE_STRUGGLE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_STRUGGLE",
+      "numericId": 165
+    },
+    {
+      "id": "MOVE_STUN_SPORE",
+      "path": "moves/MOVE_STUN_SPORE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_STUN_SPORE",
+      "numericId": 78
+    },
+    {
+      "id": "MOVE_SUBMISSION",
+      "path": "moves/MOVE_SUBMISSION.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SUBMISSION",
+      "numericId": 66
+    },
+    {
+      "id": "MOVE_SUBSTITUTE",
+      "path": "moves/MOVE_SUBSTITUTE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SUBSTITUTE",
+      "numericId": 164
+    },
+    {
+      "id": "MOVE_SUNNY_DAY",
+      "path": "moves/MOVE_SUNNY_DAY.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SUNNY_DAY",
+      "numericId": 241
+    },
+    {
+      "id": "MOVE_SUPERPOWER",
+      "path": "moves/MOVE_SUPERPOWER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SUPERPOWER",
+      "numericId": 276
+    },
+    {
+      "id": "MOVE_SUPERSONIC",
+      "path": "moves/MOVE_SUPERSONIC.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SUPERSONIC",
+      "numericId": 48
+    },
+    {
+      "id": "MOVE_SUPER_FANG",
+      "path": "moves/MOVE_SUPER_FANG.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SUPER_FANG",
+      "numericId": 162
+    },
+    {
+      "id": "MOVE_SURF",
+      "path": "moves/MOVE_SURF.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SURF",
+      "numericId": 57
+    },
+    {
+      "id": "MOVE_SWAGGER",
+      "path": "moves/MOVE_SWAGGER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SWAGGER",
+      "numericId": 207
+    },
+    {
+      "id": "MOVE_SWALLOW",
+      "path": "moves/MOVE_SWALLOW.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SWALLOW",
+      "numericId": 256
+    },
+    {
+      "id": "MOVE_SWEET_KISS",
+      "path": "moves/MOVE_SWEET_KISS.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SWEET_KISS",
+      "numericId": 186
+    },
+    {
+      "id": "MOVE_SWEET_SCENT",
+      "path": "moves/MOVE_SWEET_SCENT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SWEET_SCENT",
+      "numericId": 230
+    },
+    {
+      "id": "MOVE_SWIFT",
+      "path": "moves/MOVE_SWIFT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SWIFT",
+      "numericId": 129
+    },
+    {
+      "id": "MOVE_SWORDS_DANCE",
+      "path": "moves/MOVE_SWORDS_DANCE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SWORDS_DANCE",
+      "numericId": 14
+    },
+    {
+      "id": "MOVE_SYNTHESIS",
+      "path": "moves/MOVE_SYNTHESIS.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_SYNTHESIS",
+      "numericId": 235
+    },
+    {
+      "id": "MOVE_TACKLE",
+      "path": "moves/MOVE_TACKLE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_TACKLE",
+      "numericId": 33
+    },
+    {
+      "id": "MOVE_TAIL_GLOW",
+      "path": "moves/MOVE_TAIL_GLOW.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_TAIL_GLOW",
+      "numericId": 294
+    },
+    {
+      "id": "MOVE_TAIL_WHIP",
+      "path": "moves/MOVE_TAIL_WHIP.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_TAIL_WHIP",
+      "numericId": 39
+    },
+    {
+      "id": "MOVE_TAKE_DOWN",
+      "path": "moves/MOVE_TAKE_DOWN.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_TAKE_DOWN",
+      "numericId": 36
+    },
+    {
+      "id": "MOVE_TAUNT",
+      "path": "moves/MOVE_TAUNT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_TAUNT",
+      "numericId": 269
+    },
+    {
+      "id": "MOVE_TEETER_DANCE",
+      "path": "moves/MOVE_TEETER_DANCE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_TEETER_DANCE",
+      "numericId": 298
+    },
+    {
+      "id": "MOVE_TELEPORT",
+      "path": "moves/MOVE_TELEPORT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_TELEPORT",
+      "numericId": 100
+    },
+    {
+      "id": "MOVE_THIEF",
+      "path": "moves/MOVE_THIEF.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_THIEF",
+      "numericId": 168
+    },
+    {
+      "id": "MOVE_THRASH",
+      "path": "moves/MOVE_THRASH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_THRASH",
+      "numericId": 37
+    },
+    {
+      "id": "MOVE_THUNDER",
+      "path": "moves/MOVE_THUNDER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_THUNDER",
+      "numericId": 87
+    },
+    {
+      "id": "MOVE_THUNDERBOLT",
+      "path": "moves/MOVE_THUNDERBOLT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_THUNDERBOLT",
+      "numericId": 85
+    },
+    {
+      "id": "MOVE_THUNDER_PUNCH",
+      "path": "moves/MOVE_THUNDER_PUNCH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_THUNDER_PUNCH",
+      "numericId": 9
+    },
+    {
+      "id": "MOVE_THUNDER_SHOCK",
+      "path": "moves/MOVE_THUNDER_SHOCK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_THUNDER_SHOCK",
+      "numericId": 84
+    },
+    {
+      "id": "MOVE_THUNDER_WAVE",
+      "path": "moves/MOVE_THUNDER_WAVE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_THUNDER_WAVE",
+      "numericId": 86
+    },
+    {
+      "id": "MOVE_TICKLE",
+      "path": "moves/MOVE_TICKLE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_TICKLE",
+      "numericId": 321
+    },
+    {
+      "id": "MOVE_TORMENT",
+      "path": "moves/MOVE_TORMENT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_TORMENT",
+      "numericId": 259
+    },
+    {
+      "id": "MOVE_TOXIC",
+      "path": "moves/MOVE_TOXIC.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_TOXIC",
+      "numericId": 92
+    },
+    {
+      "id": "MOVE_TRANSFORM",
+      "path": "moves/MOVE_TRANSFORM.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_TRANSFORM",
+      "numericId": 144
+    },
+    {
+      "id": "MOVE_TRICK",
+      "path": "moves/MOVE_TRICK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_TRICK",
+      "numericId": 271
+    },
+    {
+      "id": "MOVE_TRIPLE_KICK",
+      "path": "moves/MOVE_TRIPLE_KICK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_TRIPLE_KICK",
+      "numericId": 167
+    },
+    {
+      "id": "MOVE_TRI_ATTACK",
+      "path": "moves/MOVE_TRI_ATTACK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_TRI_ATTACK",
+      "numericId": 161
+    },
+    {
+      "id": "MOVE_TWINEEDLE",
+      "path": "moves/MOVE_TWINEEDLE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_TWINEEDLE",
+      "numericId": 41
+    },
+    {
+      "id": "MOVE_TWISTER",
+      "path": "moves/MOVE_TWISTER.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_TWISTER",
+      "numericId": 239
+    },
+    {
+      "id": "MOVE_UNAVAILABLE",
+      "path": "moves/MOVE_UNAVAILABLE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_UNAVAILABLE",
+      "numericId": null
+    },
+    {
+      "id": "MOVE_UPROAR",
+      "path": "moves/MOVE_UPROAR.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_UPROAR",
+      "numericId": 253
+    },
+    {
+      "id": "MOVE_VICE_GRIP",
+      "path": "moves/MOVE_VICE_GRIP.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_VICE_GRIP",
+      "numericId": 11
+    },
+    {
+      "id": "MOVE_VINE_WHIP",
+      "path": "moves/MOVE_VINE_WHIP.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_VINE_WHIP",
+      "numericId": 22
+    },
+    {
+      "id": "MOVE_VITAL_THROW",
+      "path": "moves/MOVE_VITAL_THROW.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_VITAL_THROW",
+      "numericId": 233
+    },
+    {
+      "id": "MOVE_VOLT_TACKLE",
+      "path": "moves/MOVE_VOLT_TACKLE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_VOLT_TACKLE",
+      "numericId": 344
+    },
+    {
+      "id": "MOVE_WATERFALL",
+      "path": "moves/MOVE_WATERFALL.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_WATERFALL",
+      "numericId": 127
+    },
+    {
+      "id": "MOVE_WATER_GUN",
+      "path": "moves/MOVE_WATER_GUN.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_WATER_GUN",
+      "numericId": 55
+    },
+    {
+      "id": "MOVE_WATER_PULSE",
+      "path": "moves/MOVE_WATER_PULSE.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_WATER_PULSE",
+      "numericId": 352
+    },
+    {
+      "id": "MOVE_WATER_SPORT",
+      "path": "moves/MOVE_WATER_SPORT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_WATER_SPORT",
+      "numericId": 346
+    },
+    {
+      "id": "MOVE_WATER_SPOUT",
+      "path": "moves/MOVE_WATER_SPOUT.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_WATER_SPOUT",
+      "numericId": 323
+    },
+    {
+      "id": "MOVE_WEATHER_BALL",
+      "path": "moves/MOVE_WEATHER_BALL.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_WEATHER_BALL",
+      "numericId": 311
+    },
+    {
+      "id": "MOVE_WHIRLPOOL",
+      "path": "moves/MOVE_WHIRLPOOL.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_WHIRLPOOL",
+      "numericId": 250
+    },
+    {
+      "id": "MOVE_WHIRLWIND",
+      "path": "moves/MOVE_WHIRLWIND.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_WHIRLWIND",
+      "numericId": 18
+    },
+    {
+      "id": "MOVE_WILL_O_WISP",
+      "path": "moves/MOVE_WILL_O_WISP.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_WILL_O_WISP",
+      "numericId": 261
+    },
+    {
+      "id": "MOVE_WING_ATTACK",
+      "path": "moves/MOVE_WING_ATTACK.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_WING_ATTACK",
+      "numericId": 17
+    },
+    {
+      "id": "MOVE_WISH",
+      "path": "moves/MOVE_WISH.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_WISH",
+      "numericId": 273
+    },
+    {
+      "id": "MOVE_WITHDRAW",
+      "path": "moves/MOVE_WITHDRAW.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_WITHDRAW",
+      "numericId": 110
+    },
+    {
+      "id": "MOVE_WRAP",
+      "path": "moves/MOVE_WRAP.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_WRAP",
+      "numericId": 35
+    },
+    {
+      "id": "MOVE_YAWN",
+      "path": "moves/MOVE_YAWN.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_YAWN",
+      "numericId": 281
+    },
+    {
+      "id": "MOVE_ZAP_CANNON",
+      "path": "moves/MOVE_ZAP_CANNON.json",
+      "sourcePath": "include/constants/moves.h",
+      "legacyKind": "move_define",
+      "symbol": "MOVE_ZAP_CANNON",
+      "numericId": 192
+    }
+  ],
+  "entityCount": 356
+}

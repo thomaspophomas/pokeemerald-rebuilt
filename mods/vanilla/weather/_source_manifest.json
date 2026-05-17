@@ -1,0 +1,4949 @@
+{
+  "id": "weather:source_manifest",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "migrationMode": "source_file_manifest",
+  "sourceAuthority": "vanilla",
+  "sourceFiles": [
+    {
+      "path": "data/maps/.gitignore",
+      "sha1": "0087115cf986932c37f1d872acdc40ef2cca2a22",
+      "bytes": 97
+    },
+    {
+      "path": "data/maps/AbandonedShip_CaptainsOffice/map.json",
+      "sha1": "b9086e13a6659aee4b2da169a1863c7ee818d05b",
+      "bytes": 1701
+    },
+    {
+      "path": "data/maps/AbandonedShip_CaptainsOffice/scripts.inc",
+      "sha1": "0d114a340463ea3916fe9d2dfa90a0ae4b832d57",
+      "bytes": 1487
+    },
+    {
+      "path": "data/maps/AbandonedShip_Corridors_1F/map.json",
+      "sha1": "dce7a9977cd9f4fcb456b1254479c42201d276b6",
+      "bytes": 3045
+    },
+    {
+      "path": "data/maps/AbandonedShip_Corridors_1F/scripts.inc",
+      "sha1": "f4323f7823f017e5f01f23471c0cd139d7409d0c",
+      "bytes": 922
+    },
+    {
+      "path": "data/maps/AbandonedShip_Corridors_B1F/map.json",
+      "sha1": "ba2957c5ca9122aee1cbe438ef90792ced6be13f",
+      "bytes": 2708
+    },
+    {
+      "path": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+      "sha1": "20ae990b6a96e346c899f484fa3bf65e231e4792",
+      "bytes": 2934
+    },
+    {
+      "path": "data/maps/AbandonedShip_Deck/map.json",
+      "sha1": "90e360b907c665ef5a0c90d7e0be797fe5947f5d",
+      "bytes": 1225
+    },
+    {
+      "path": "data/maps/AbandonedShip_Deck/scripts.inc",
+      "sha1": "2181c1a84cd0f94e81fa1c1ebc724012c77e0119",
+      "bytes": 189
+    },
+    {
+      "path": "data/maps/AbandonedShip_HiddenFloorCorridors/map.json",
+      "sha1": "be87fa29c2ab87d97d6c2602a1f40672ed90db8d",
+      "bytes": 2355
+    },
+    {
+      "path": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+      "sha1": "93793c09cf0421032fc19eaa4c310ad93c2d25a2",
+      "bytes": 5887
+    },
+    {
+      "path": "data/maps/AbandonedShip_HiddenFloorRooms/map.json",
+      "sha1": "0b85e2d08d3c35ab4df4c17fffe6733ca9cc50f2",
+      "bytes": 5800
+    },
+    {
+      "path": "data/maps/AbandonedShip_HiddenFloorRooms/scripts.inc",
+      "sha1": "e64dd6958de17dd29909a779ee9862cda0de7b51",
+      "bytes": 3793
+    },
+    {
+      "path": "data/maps/AbandonedShip_Room_B1F/map.json",
+      "sha1": "661cc8d4f456957c7e3ca5f75449c628afc21cc7",
+      "bytes": 1285
+    },
+    {
+      "path": "data/maps/AbandonedShip_Room_B1F/scripts.inc",
+      "sha1": "bb07deed8024a5676947ae8b4600600bd6d81dce",
+      "bytes": 46
+    },
+    {
+      "path": "data/maps/AbandonedShip_Rooms2_1F/map.json",
+      "sha1": "770a007ba49a1edabafefd499f719bb44c65adc3",
+      "bytes": 2967
+    },
+    {
+      "path": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "sha1": "ba923c54b93786d603c658ba8fad2029d216a91e",
+      "bytes": 5888
+    },
+    {
+      "path": "data/maps/AbandonedShip_Rooms2_B1F/map.json",
+      "sha1": "3d77a03d7a6571ace0e99492382fa9db441acc4b",
+      "bytes": 1970
+    },
+    {
+      "path": "data/maps/AbandonedShip_Rooms2_B1F/scripts.inc",
+      "sha1": "5c00108c39aa22dc9e5bdedd358936adcac92043",
+      "bytes": 389
+    },
+    {
+      "path": "data/maps/AbandonedShip_Rooms_1F/map.json",
+      "sha1": "87b122e00c09fb8cda02119f454331b684de9250",
+      "bytes": 3040
+    },
+    {
+      "path": "data/maps/AbandonedShip_Rooms_1F/scripts.inc",
+      "sha1": "ef4a9db99fdce174525e5aa650bc32e2a3288183",
+      "bytes": 2760
+    },
+    {
+      "path": "data/maps/AbandonedShip_Rooms_B1F/map.json",
+      "sha1": "63ab1436eada16775662b5f846694100069021d0",
+      "bytes": 1821
+    },
+    {
+      "path": "data/maps/AbandonedShip_Rooms_B1F/scripts.inc",
+      "sha1": "0f716cc0922c8a7607eae2e979b7c689b3e75400",
+      "bytes": 506
+    },
+    {
+      "path": "data/maps/AbandonedShip_Underwater1/map.json",
+      "sha1": "3ad60ad23a68ac98ce8f56d749fa7999829c816d",
+      "bytes": 857
+    },
+    {
+      "path": "data/maps/AbandonedShip_Underwater1/scripts.inc",
+      "sha1": "2a248b82bb80b7f75ae7d0c35490fb269a8e4b62",
+      "bytes": 222
+    },
+    {
+      "path": "data/maps/AbandonedShip_Underwater2/map.json",
+      "sha1": "5f4149be4c544c2df95115c2a013c719eb19eab0",
+      "bytes": 716
+    },
+    {
+      "path": "data/maps/AbandonedShip_Underwater2/scripts.inc",
+      "sha1": "0fc99be11777763ab6047182b4bbd180d75c3dc9",
+      "bytes": 209
+    },
+    {
+      "path": "data/maps/AlteringCave/map.json",
+      "sha1": "f0f0ea88dda68659f7a9ea102594f0a1c98ad5fe",
+      "bytes": 649
+    },
+    {
+      "path": "data/maps/AlteringCave/scripts.inc",
+      "sha1": "d58fb4e0d50eab7084ac2763e9fdfbea714597f5",
+      "bytes": 170
+    },
+    {
+      "path": "data/maps/AncientTomb/map.json",
+      "sha1": "115981ccd581f3de9b23e46635de7032143af8b7",
+      "bytes": 1909
+    },
+    {
+      "path": "data/maps/AncientTomb/scripts.inc",
+      "sha1": "57ee4b1313324882be319adf4cbdef89f090204c",
+      "bytes": 2571
+    },
+    {
+      "path": "data/maps/AquaHideout_1F/map.json",
+      "sha1": "a13eeb3f0f47f71bf791c3da639b5a46c01b8aa9",
+      "bytes": 2259
+    },
+    {
+      "path": "data/maps/AquaHideout_1F/scripts.inc",
+      "sha1": "fb0f9c771050564c49799918dc1d87097cc9380f",
+      "bytes": 3871
+    },
+    {
+      "path": "data/maps/AquaHideout_B1F/map.json",
+      "sha1": "d18425dffc1bd0e84be8eebcb9e1f8fab27278ed",
+      "bytes": 7646
+    },
+    {
+      "path": "data/maps/AquaHideout_B1F/scripts.inc",
+      "sha1": "2923188c4ae1df18ace73c8a8f87ea7f1d1e7886",
+      "bytes": 5325
+    },
+    {
+      "path": "data/maps/AquaHideout_B2F/map.json",
+      "sha1": "2e6b1c403c764635113fa4262af815f4ece868ff",
+      "bytes": 4864
+    },
+    {
+      "path": "data/maps/AquaHideout_B2F/scripts.inc",
+      "sha1": "2422b13cc4d746236ea4f5c8dbbc6ea26d3d8e36",
+      "bytes": 4976
+    },
+    {
+      "path": "data/maps/AquaHideout_UnusedRubyMap1/map.json",
+      "sha1": "d54f97f127b54344c964011c29cea3a9fc0c7654",
+      "bytes": 571
+    },
+    {
+      "path": "data/maps/AquaHideout_UnusedRubyMap1/scripts.inc",
+      "sha1": "cd540dffd567754b4ffec8e194167d0dd0899d3f",
+      "bytes": 50
+    },
+    {
+      "path": "data/maps/AquaHideout_UnusedRubyMap2/map.json",
+      "sha1": "aaa668fc3303849a7aecc78959c9c13d6adb5d2c",
+      "bytes": 571
+    },
+    {
+      "path": "data/maps/AquaHideout_UnusedRubyMap2/scripts.inc",
+      "sha1": "8a6a7be88e8b49abd0ab1439c2adc7c74631f56b",
+      "bytes": 50
+    },
+    {
+      "path": "data/maps/AquaHideout_UnusedRubyMap3/map.json",
+      "sha1": "cbe5994a9d2b03c5e4a239dfc7198535c41bc0f2",
+      "bytes": 571
+    },
+    {
+      "path": "data/maps/AquaHideout_UnusedRubyMap3/scripts.inc",
+      "sha1": "60bf4b25c8bf789b4998023ecfe0cda6291a41ab",
+      "bytes": 50
+    },
+    {
+      "path": "data/maps/ArtisanCave_1F/map.json",
+      "sha1": "1f41e36a11406470abf6f171be939c5df19c52d5",
+      "bytes": 1226
+    },
+    {
+      "path": "data/maps/ArtisanCave_1F/scripts.inc",
+      "sha1": "f73052173a4d6bfc5063a4677a7e2492460d0956",
+      "bytes": 38
+    },
+    {
+      "path": "data/maps/ArtisanCave_B1F/map.json",
+      "sha1": "c3b78486e63d6a2e81b3518cf8a0024415b8de00",
+      "bytes": 1943
+    },
+    {
+      "path": "data/maps/ArtisanCave_B1F/scripts.inc",
+      "sha1": "2bc4cbb2dcb1ede45e91097755d8a12f59587fbe",
+      "bytes": 178
+    },
+    {
+      "path": "data/maps/BattleColosseum_2P/map.json",
+      "sha1": "759865d0e4fd0286d6db2cc4390c68ea3a0511c1",
+      "bytes": 1605
+    },
+    {
+      "path": "data/maps/BattleColosseum_2P/scripts.inc",
+      "sha1": "ee32a322441ae27cd1791c0c5f3d671f66337783",
+      "bytes": 42
+    },
+    {
+      "path": "data/maps/BattleColosseum_4P/map.json",
+      "sha1": "2ac970314d841831af3a8ee899726de0edb3f295",
+      "bytes": 1883
+    },
+    {
+      "path": "data/maps/BattleColosseum_4P/scripts.inc",
+      "sha1": "04720f6a3efc4af564a2fb6f1223937aa6de2a6b",
+      "bytes": 42
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleArenaBattleRoom/map.json",
+      "sha1": "d0e26e7da3393428082f6e3c177367817d80c9d1",
+      "bytes": 4154
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+      "sha1": "d0a70f09e21302da78823f02966e03f9b41a3a1a",
+      "bytes": 27697
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleArenaCorridor/map.json",
+      "sha1": "2b97faeb466f8715bb811122ab2c83c355808fec",
+      "bytes": 993
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleArenaCorridor/scripts.inc",
+      "sha1": "6c50fa8f26f23235a25e4a509732939b19558eaa",
+      "bytes": 2164
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleArenaLobby/map.json",
+      "sha1": "2ac14f74c218d93289f8cde7134e5a41f2b75b9e",
+      "bytes": 3186
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+      "sha1": "9504bb75bdf62b80271e2304b4804044c8db502a",
+      "bytes": 21964
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleDomeBattleRoom/map.json",
+      "sha1": "3a41e79628c9d078873e2b2b313ab9866fa1e69f",
+      "bytes": 6046
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "sha1": "2cf5ea83e82fbd2189ced7e0cd4d5f894bf74650",
+      "bytes": 43153
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleDomeCorridor/map.json",
+      "sha1": "084ebf0401e715e097a3a7222f288c5d463b6fab",
+      "bytes": 1277
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleDomeCorridor/scripts.inc",
+      "sha1": "17edbc6ae328061934af2e7c6a68048fef30b46a",
+      "bytes": 3523
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleDomeLobby/map.json",
+      "sha1": "501e37959f3603fa3e4b67e390b324383bbfa453",
+      "bytes": 4249
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+      "sha1": "c5673b719ade6a47e6fe1e3055270ca454748cfd",
+      "bytes": 27150
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleDomePreBattleRoom/map.json",
+      "sha1": "a83a9e1efbca70ff6fc9ebb7946383c9b4be0de4",
+      "bytes": 1291
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+      "sha1": "18c4052c546a6c71ff18234f6ef3a8130ec538d0",
+      "bytes": 16055
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleFactoryBattleRoom/map.json",
+      "sha1": "cae471217c9dc95023c69d32ce83d473d66debb9",
+      "bytes": 3835
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+      "sha1": "d6c9d92d97f61a06b3670b7d509844f3bc902eb3",
+      "bytes": 14166
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleFactoryLobby/map.json",
+      "sha1": "60b28bd34a70a8d6a0b8200c1de6f07274a80833",
+      "bytes": 4078
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+      "sha1": "292da35ee750dbef6f890d691b62400b747b2d83",
+      "bytes": 22105
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/map.json",
+      "sha1": "91f7cafd8d2dfb21422635d40505957eb06900ea",
+      "bytes": 1023
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+      "sha1": "1a22c52bd73e3edd87503c90dddd414ef0e181f2",
+      "bytes": 29669
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePalaceBattleRoom/map.json",
+      "sha1": "8eec163ca06d2abe2585ac0f618f87d265300ed9",
+      "bytes": 2883
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+      "sha1": "c4392c432f84fdbe0613ac4b067366a168a52056",
+      "bytes": 24548
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePalaceCorridor/map.json",
+      "sha1": "ebd43530111a38f60755c5e2815d1535f83aa645",
+      "bytes": 3728
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc",
+      "sha1": "64a2ef91c8d0c246c8214b48e91e15abe9171a8e",
+      "bytes": 5426
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePalaceLobby/map.json",
+      "sha1": "ce2d36fe134421f3bca2baf4e1c4f41ebf70c47b",
+      "bytes": 4212
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+      "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd",
+      "bytes": 26856
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePikeCorridor/map.json",
+      "sha1": "b4f2c35f3b7c1b63e16a4b5cf1ce50ebad78d8be",
+      "bytes": 993
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePikeCorridor/scripts.inc",
+      "sha1": "b1eb4439a004760272901a523e8508e96689e96b",
+      "bytes": 1895
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePikeLobby/map.json",
+      "sha1": "cc7115758d3d701ba02c77783fd354342b366538",
+      "bytes": 3066
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+      "sha1": "e2be0fe89296e221d6bdf7bc81fdcf739064bd1b",
+      "bytes": 16527
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePikeRoomFinal/map.json",
+      "sha1": "68c18038df649f56e4ac0e8a2343b6dbd729b1ca",
+      "bytes": 1000
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePikeRoomFinal/scripts.inc",
+      "sha1": "a203f6afe61e2b8ea4bff53c9f1e02c5ff3952b2",
+      "bytes": 1340
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePikeRoomNormal/map.json",
+      "sha1": "559eca66e363c564d7740aac5b3dd22120d90435",
+      "bytes": 3001
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+      "sha1": "54c1e0ee021a3a91375f3b05c8682c17ed095aa9",
+      "bytes": 30382
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePikeRoomWildMons/map.json",
+      "sha1": "677713676f305badbff4fde35ec44aa8e15a6379",
+      "bytes": 2147
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePikeRoomWildMons/scripts.inc",
+      "sha1": "4ce9a1b97a5e7827a052a000b3fe1ab384b493fc",
+      "bytes": 1622
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePikeThreePathRoom/map.json",
+      "sha1": "22afb95cb47369aa1014e20deec5c150f6d8f6fd",
+      "bytes": 3483
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+      "sha1": "927f7bda20dae778159d88132a53038bcfb76615",
+      "bytes": 13865
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePyramidFloor/map.json",
+      "sha1": "a97ac3dc45da45b9e792070de8abd894072bd062",
+      "bytes": 6345
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+      "sha1": "a6f6792ac2bc39a05028dabd4e88f5984d84d4a5",
+      "bytes": 23977
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePyramidLobby/map.json",
+      "sha1": "2b09c54b19da6822ec78e135b02b34f4908ef13a",
+      "bytes": 2882
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+      "sha1": "b93395a7ee7156a94cfa3817fd6222cfa69e94fd",
+      "bytes": 35554
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePyramidTop/map.json",
+      "sha1": "f1b0387d93bfee728126deb8f371b495ab79debb",
+      "bytes": 1623
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+      "sha1": "6256c29eca306dafcaec0dabbacc64547c474e58",
+      "bytes": 13208
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleTowerBattleRoom/map.json",
+      "sha1": "8bfc79fc67251980b6ad1acb85a35ce13e639cef",
+      "bytes": 2119
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+      "sha1": "09b678d8717203a622b1d8714d904bcdeb37d08a",
+      "bytes": 22835
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleTowerCorridor/map.json",
+      "sha1": "56dd5f0f8e9e00fc9f636d23ace927d3ed97b7c7",
+      "bytes": 987
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleTowerCorridor/scripts.inc",
+      "sha1": "a135a140aa42cd9a6034c33942fe11ca534a9b7e",
+      "bytes": 2152
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleTowerElevator/map.json",
+      "sha1": "59949781dcf74a9478674943ecb015e4a4f40b20",
+      "bytes": 963
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleTowerElevator/scripts.inc",
+      "sha1": "65b36e61ef641273e99565ebbc7fd034e09562e1",
+      "bytes": 3003
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleTowerLobby/map.json",
+      "sha1": "bdac9ff7e3d4d969649e263a4f3738db14127b7c",
+      "bytes": 6091
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+      "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592",
+      "bytes": 58113
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/map.json",
+      "sha1": "b8b49abb0d4ab7b0be20732d2de0f4487e06027a",
+      "bytes": 3081
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+      "sha1": "71e71dc7e048f3a27e89d0ae41c736d25233e068",
+      "bytes": 22289
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleTowerMultiCorridor/map.json",
+      "sha1": "30ea7685d79e705b16baa35aeb1f6958444c87e7",
+      "bytes": 2219
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleTowerMultiCorridor/scripts.inc",
+      "sha1": "cd76ae7932d793ea3d83f2ba21546149e29084cf",
+      "bytes": 6881
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/map.json",
+      "sha1": "44f5737975fa4f7a7666bcd5a46ed2158f269714",
+      "bytes": 4706
+    },
+    {
+      "path": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "sha1": "4e7b748d8d3e33414d869ae43d136c857e9955fc",
+      "bytes": 66951
+    },
+    {
+      "path": "data/maps/BattleFrontier_ExchangeServiceCorner/map.json",
+      "sha1": "0fd32284b9c26cb84c2bcbe85f30bb430f4ded98",
+      "bytes": 4644
+    },
+    {
+      "path": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
+      "sha1": "3bee0ca682f7b98f6a5f16085e830466d47ef6e9",
+      "bytes": 29787
+    },
+    {
+      "path": "data/maps/BattleFrontier_Lounge1/map.json",
+      "sha1": "3728d6c6172938d394015f6e043cb9c86dc79ae3",
+      "bytes": 1851
+    },
+    {
+      "path": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "sha1": "2478a4558563ac9694ec1f8471095e49ece1c602",
+      "bytes": 9697
+    },
+    {
+      "path": "data/maps/BattleFrontier_Lounge2/map.json",
+      "sha1": "bf01d42930f3acc5c3521484e07096bf9d6b3eb2",
+      "bytes": 2793
+    },
+    {
+      "path": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+      "sha1": "d4d4f7c0802f8118a63eaf9b68eb6bcff146ff4d",
+      "bytes": 14474
+    },
+    {
+      "path": "data/maps/BattleFrontier_Lounge3/map.json",
+      "sha1": "58696dc5ba8e73b7e33d3788b06d642240fdc218",
+      "bytes": 2617
+    },
+    {
+      "path": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+      "sha1": "52169856e2442e0e7ad660050a45dce1a1b2405a",
+      "bytes": 17627
+    },
+    {
+      "path": "data/maps/BattleFrontier_Lounge4/map.json",
+      "sha1": "e3ff7572497e1450a8dabb3da2868a6d61e16596",
+      "bytes": 1841
+    },
+    {
+      "path": "data/maps/BattleFrontier_Lounge4/scripts.inc",
+      "sha1": "9b6c3a62293ca4381efbd412bf582bb9edb26961",
+      "bytes": 945
+    },
+    {
+      "path": "data/maps/BattleFrontier_Lounge5/map.json",
+      "sha1": "14f7c499a8ac3d9ad037044015916e17b1113911",
+      "bytes": 2410
+    },
+    {
+      "path": "data/maps/BattleFrontier_Lounge5/scripts.inc",
+      "sha1": "c4370b0c94045e8ea73987aa7039851c5e316481",
+      "bytes": 6526
+    },
+    {
+      "path": "data/maps/BattleFrontier_Lounge6/map.json",
+      "sha1": "74ea149a6a1b876d381819e72f4f7066dfe5350c",
+      "bytes": 1081
+    },
+    {
+      "path": "data/maps/BattleFrontier_Lounge6/scripts.inc",
+      "sha1": "400f8668c2640f8efd65ecb8754e4761b5653111",
+      "bytes": 2604
+    },
+    {
+      "path": "data/maps/BattleFrontier_Lounge7/map.json",
+      "sha1": "9eca2f39af0a820e34c909fb72571bf240ba9708",
+      "bytes": 2259
+    },
+    {
+      "path": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+      "sha1": "384442d4fcbb4c5edeb287c69a9c0ca256ec49b1",
+      "bytes": 16377
+    },
+    {
+      "path": "data/maps/BattleFrontier_Lounge8/map.json",
+      "sha1": "fb6e0d33e66e5315886a60b83efa225df6bfc8a0",
+      "bytes": 1852
+    },
+    {
+      "path": "data/maps/BattleFrontier_Lounge8/scripts.inc",
+      "sha1": "645530e958a54b4ac429c03f81abce888272e486",
+      "bytes": 1428
+    },
+    {
+      "path": "data/maps/BattleFrontier_Lounge9/map.json",
+      "sha1": "d6833d84274e18c6df3355fcbbc31759f8958618",
+      "bytes": 1189
+    },
+    {
+      "path": "data/maps/BattleFrontier_Lounge9/scripts.inc",
+      "sha1": "7a003926eb8e21b010f513e26edcbf28de3a2fba",
+      "bytes": 46
+    },
+    {
+      "path": "data/maps/BattleFrontier_Mart/map.json",
+      "sha1": "d9488e1966acba5fdd1973bfd8f26c3144190ef6",
+      "bytes": 2447
+    },
+    {
+      "path": "data/maps/BattleFrontier_Mart/scripts.inc",
+      "sha1": "e8269950fe6ceeeec601d93208e6255555526b6b",
+      "bytes": 1703
+    },
+    {
+      "path": "data/maps/BattleFrontier_OutsideEast/map.json",
+      "sha1": "92a1844f4319344dd5dc49a1c7f996c248d7043c",
+      "bytes": 14768
+    },
+    {
+      "path": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+      "sha1": "daab3e530c74c286237faa58f280f11ef97e663a",
+      "bytes": 14551
+    },
+    {
+      "path": "data/maps/BattleFrontier_OutsideWest/map.json",
+      "sha1": "0468bfc9b139119ef609063be6421d7050189630",
+      "bytes": 13091
+    },
+    {
+      "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9",
+      "bytes": 18052
+    },
+    {
+      "path": "data/maps/BattleFrontier_PokemonCenter_1F/map.json",
+      "sha1": "64ddb92f8e1f3faae5339135da4112b7c058338a",
+      "bytes": 3029
+    },
+    {
+      "path": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc",
+      "sha1": "e4fb392a503e70d6989c6dc6307b6eca9019ac04",
+      "bytes": 1848
+    },
+    {
+      "path": "data/maps/BattleFrontier_PokemonCenter_2F/map.json",
+      "sha1": "d5f28fbd4410cff8cd270b34947145a85b280202",
+      "bytes": 2540
+    },
+    {
+      "path": "data/maps/BattleFrontier_PokemonCenter_2F/scripts.inc",
+      "sha1": "b379f6bb3aac41cf2009503472bc04b33d4cf563",
+      "bytes": 642
+    },
+    {
+      "path": "data/maps/BattleFrontier_RankingHall/map.json",
+      "sha1": "ccb6f6b313550f026597ba7560b564f5093c04b9",
+      "bytes": 4674
+    },
+    {
+      "path": "data/maps/BattleFrontier_RankingHall/scripts.inc",
+      "sha1": "aef77d23874073ac30c7332089066ec74669e249",
+      "bytes": 4125
+    },
+    {
+      "path": "data/maps/BattleFrontier_ReceptionGate/map.json",
+      "sha1": "860f78128a5797e8a59f9ebfccf0e46983b00d2f",
+      "bytes": 2993
+    },
+    {
+      "path": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+      "sha1": "5b6e89c53f6e32c0fa6883bd750252f1d739a97b",
+      "bytes": 19017
+    },
+    {
+      "path": "data/maps/BattleFrontier_ScottsHouse/map.json",
+      "sha1": "cdb6d7e490a5a22f942c1c30e4c989462570d9f7",
+      "bytes": 1289
+    },
+    {
+      "path": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+      "sha1": "c30df9e905f6d4b9d9e1eaf4d4fccf30db88e083",
+      "bytes": 14517
+    },
+    {
+      "path": "data/maps/BattlePyramidSquare01/map.json",
+      "sha1": "9e91077b1dd2af2e41427a5ab8a9c03c001285ea",
+      "bytes": 3168
+    },
+    {
+      "path": "data/maps/BattlePyramidSquare01/scripts.inc",
+      "sha1": "e0f92e0c7815b4c9c6e1c2d3da04925f13867927",
+      "bytes": 44
+    },
+    {
+      "path": "data/maps/BattlePyramidSquare02/map.json",
+      "sha1": "7dc748277215afd71e85a6086f30473feb26818b",
+      "bytes": 3221
+    },
+    {
+      "path": "data/maps/BattlePyramidSquare03/map.json",
+      "sha1": "8b97642ebb3b8e6f8d6bfde6dbbfefb470b0f5b0",
+      "bytes": 3227
+    },
+    {
+      "path": "data/maps/BattlePyramidSquare04/map.json",
+      "sha1": "bf20352dbce373ccaf676e12e9a02551f9745282",
+      "bytes": 3222
+    },
+    {
+      "path": "data/maps/BattlePyramidSquare05/map.json",
+      "sha1": "44eadb08649168a38cb9c5596e9a178254aa4f4a",
+      "bytes": 3197
+    },
+    {
+      "path": "data/maps/BattlePyramidSquare06/map.json",
+      "sha1": "bd6bc4c3bca8c65c38bc62312aec66f8ac4730c0",
+      "bytes": 3220
+    },
+    {
+      "path": "data/maps/BattlePyramidSquare07/map.json",
+      "sha1": "96605b64144321f81d470b39ea1931b9fb0360af",
+      "bytes": 3219
+    },
+    {
+      "path": "data/maps/BattlePyramidSquare08/map.json",
+      "sha1": "a3bd04997d531554f1086efe8196502027a377c0",
+      "bytes": 3238
+    },
+    {
+      "path": "data/maps/BattlePyramidSquare09/map.json",
+      "sha1": "ed16c924f5ee31833e60d92ee6174ad1e181215d",
+      "bytes": 3229
+    },
+    {
+      "path": "data/maps/BattlePyramidSquare10/map.json",
+      "sha1": "4410233d8175d058a65880be8a1273a7f79ee64c",
+      "bytes": 3197
+    },
+    {
+      "path": "data/maps/BattlePyramidSquare11/map.json",
+      "sha1": "b65caa8dad616d3bcff8ee9b3c603efc0841f304",
+      "bytes": 3202
+    },
+    {
+      "path": "data/maps/BattlePyramidSquare12/map.json",
+      "sha1": "7056235ffce210d140b0af6186e80ecfc9c0768a",
+      "bytes": 3189
+    },
+    {
+      "path": "data/maps/BattlePyramidSquare13/map.json",
+      "sha1": "fb9bc2f429e62388115122c9c61684e59e77dec8",
+      "bytes": 3186
+    },
+    {
+      "path": "data/maps/BattlePyramidSquare14/map.json",
+      "sha1": "338be32129d875a03f8ee018610a892ddd5eb121",
+      "bytes": 3232
+    },
+    {
+      "path": "data/maps/BattlePyramidSquare15/map.json",
+      "sha1": "e90ec359a44d2d8e4fce7e0bebd256beafa53596",
+      "bytes": 3232
+    },
+    {
+      "path": "data/maps/BattlePyramidSquare16/map.json",
+      "sha1": "fff70fb24346203a0d6c57abb4dea55769481fd4",
+      "bytes": 3232
+    },
+    {
+      "path": "data/maps/BirthIsland_Exterior/map.json",
+      "sha1": "e175c45e9fec45b267b604a2318fdca43e0d52c0",
+      "bytes": 1570
+    },
+    {
+      "path": "data/maps/BirthIsland_Exterior/scripts.inc",
+      "sha1": "1e5973feb9102d3690432e451cddaf05cc140d76",
+      "bytes": 3798
+    },
+    {
+      "path": "data/maps/BirthIsland_Harbor/map.json",
+      "sha1": "0f2790e8c2b9abe448922a485478822cb8d4b58a",
+      "bytes": 1488
+    },
+    {
+      "path": "data/maps/BirthIsland_Harbor/scripts.inc",
+      "sha1": "b5a2c8d417e1d23a698964760fed411aa00f20e6",
+      "bytes": 721
+    },
+    {
+      "path": "data/maps/CaveOfOrigin_1F/map.json",
+      "sha1": "22bb7926b6ad8113f295da81ec5ff018e8fa05c0",
+      "bytes": 811
+    },
+    {
+      "path": "data/maps/CaveOfOrigin_1F/scripts.inc",
+      "sha1": "47305c3601fb6afcb87233529222315d6db042b8",
+      "bytes": 233
+    },
+    {
+      "path": "data/maps/CaveOfOrigin_B1F/map.json",
+      "sha1": "72a67ed3a836d5fbfff6587a7a62410c70e94a67",
+      "bytes": 1140
+    },
+    {
+      "path": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+      "sha1": "fdccb9d45cf308bd7d76aa97e9b5d7eb16b80004",
+      "bytes": 4123
+    },
+    {
+      "path": "data/maps/CaveOfOrigin_Entrance/map.json",
+      "sha1": "99a460d0d0ef5a7b2cbcc5dcd61f33d9bf1574f8",
+      "bytes": 818
+    },
+    {
+      "path": "data/maps/CaveOfOrigin_Entrance/scripts.inc",
+      "sha1": "b318c74f85a4d425456a16dcddd06bf1482334bd",
+      "bytes": 191
+    },
+    {
+      "path": "data/maps/CaveOfOrigin_UnusedRubySapphireMap1/map.json",
+      "sha1": "7a17952717cf90476cb2b56b80b3515aa0e69913",
+      "bytes": 891
+    },
+    {
+      "path": "data/maps/CaveOfOrigin_UnusedRubySapphireMap1/scripts.inc",
+      "sha1": "63e82a5ada8655fa49eb04bf5b853decbed6ae23",
+      "bytes": 293
+    },
+    {
+      "path": "data/maps/CaveOfOrigin_UnusedRubySapphireMap2/map.json",
+      "sha1": "99f27a84237edf5b336fe53dd14e1626c7a98d76",
+      "bytes": 924
+    },
+    {
+      "path": "data/maps/CaveOfOrigin_UnusedRubySapphireMap2/scripts.inc",
+      "sha1": "35be3cb3979d49449d015f3ee668db9aa53476d1",
+      "bytes": 294
+    },
+    {
+      "path": "data/maps/CaveOfOrigin_UnusedRubySapphireMap3/map.json",
+      "sha1": "cd9423324717654ff97ce26a0f61e140ee188922",
+      "bytes": 902
+    },
+    {
+      "path": "data/maps/CaveOfOrigin_UnusedRubySapphireMap3/scripts.inc",
+      "sha1": "9da9ad51319aabe1a6dd3641d19fca7f68237a77",
+      "bytes": 294
+    },
+    {
+      "path": "data/maps/ContestHall/map.json",
+      "sha1": "dcb8d4d06fa279def99bb3771af5a89413eaccc7",
+      "bytes": 6386
+    },
+    {
+      "path": "data/maps/ContestHall/scripts.inc",
+      "sha1": "1975dda1f6df6ad0ef2b0d81c28afe4508469870",
+      "bytes": 16336
+    },
+    {
+      "path": "data/maps/ContestHallBeauty/map.json",
+      "sha1": "136947135b8c1f0fe52598290c610794efe60f80",
+      "bytes": 518
+    },
+    {
+      "path": "data/maps/ContestHallCool/map.json",
+      "sha1": "d1a98c2a3dd69a9bc6c4fc7fd3d4dac65cbfeb4f",
+      "bytes": 512
+    },
+    {
+      "path": "data/maps/ContestHallCute/map.json",
+      "sha1": "299b1520943790120e13c0743b2ca7ba7d97d384",
+      "bytes": 512
+    },
+    {
+      "path": "data/maps/ContestHallSmart/map.json",
+      "sha1": "f15ebe47802175f22b6f3433de537c85ca620f0b",
+      "bytes": 515
+    },
+    {
+      "path": "data/maps/ContestHallTough/map.json",
+      "sha1": "8b99d7c78845f1460c7285b3e97e847872d9e71b",
+      "bytes": 515
+    },
+    {
+      "path": "data/maps/DesertRuins/map.json",
+      "sha1": "10f7e73dc32fffb52b167f708e71b2e152847e81",
+      "bytes": 1906
+    },
+    {
+      "path": "data/maps/DesertRuins/scripts.inc",
+      "sha1": "7b1ac7de378ca6e87b7881e86adb2bcb9af94a6b",
+      "bytes": 2544
+    },
+    {
+      "path": "data/maps/DesertUnderpass/map.json",
+      "sha1": "46068f68175d5348066516bc036dfbc204c4691c",
+      "bytes": 1139
+    },
+    {
+      "path": "data/maps/DesertUnderpass/scripts.inc",
+      "sha1": "a78b9455c7ce2f8ca51b1e554b3ed0843fd46ee1",
+      "bytes": 850
+    },
+    {
+      "path": "data/maps/DewfordTown/map.json",
+      "sha1": "0481598c70decb6cd75a36c9ab0ee51d577fd51a",
+      "bytes": 4406
+    },
+    {
+      "path": "data/maps/DewfordTown/scripts.inc",
+      "sha1": "e9e724e6d3bba641bcb2d4263fe226ee6c1b4840",
+      "bytes": 19964
+    },
+    {
+      "path": "data/maps/DewfordTown_Gym/map.json",
+      "sha1": "4bca76fcf0a38c12e263ec42a45ec405e4bfed2f",
+      "bytes": 4637
+    },
+    {
+      "path": "data/maps/DewfordTown_Gym/scripts.inc",
+      "sha1": "595ba5581d9eb698f4762f9b34da6e4f6c2a7a55",
+      "bytes": 15081
+    },
+    {
+      "path": "data/maps/DewfordTown_Hall/map.json",
+      "sha1": "734f741102c8ed0a7e71cd3c858059f71bdddb72",
+      "bytes": 4863
+    },
+    {
+      "path": "data/maps/DewfordTown_Hall/scripts.inc",
+      "sha1": "78185d3058996bff2579b5133faf680c4df6865f",
+      "bytes": 13830
+    },
+    {
+      "path": "data/maps/DewfordTown_House1/map.json",
+      "sha1": "bb96db46295902c1ddd9ef6a1d9ab7f96155638a",
+      "bytes": 1919
+    },
+    {
+      "path": "data/maps/DewfordTown_House1/scripts.inc",
+      "sha1": "662ea11eee19a50c0aba09b98fd8297fc4ea8fa3",
+      "bytes": 1030
+    },
+    {
+      "path": "data/maps/DewfordTown_House2/map.json",
+      "sha1": "86c5289fafe525fa8589faae60e731c6b1f9757f",
+      "bytes": 1530
+    },
+    {
+      "path": "data/maps/DewfordTown_House2/scripts.inc",
+      "sha1": "93fb692bf27406f6c25707aa58cba84b4217d77c",
+      "bytes": 1795
+    },
+    {
+      "path": "data/maps/DewfordTown_PokemonCenter_1F/map.json",
+      "sha1": "86457653e18f0aba183a3c6fcae0e41b93eed9f8",
+      "bytes": 2181
+    },
+    {
+      "path": "data/maps/DewfordTown_PokemonCenter_1F/scripts.inc",
+      "sha1": "f0b8cc368e8e856b04a41b40fb5f8bc9c5a39f70",
+      "bytes": 1129
+    },
+    {
+      "path": "data/maps/DewfordTown_PokemonCenter_2F/map.json",
+      "sha1": "3a9aa2abe407e3275e2f57b89635673604dec33a",
+      "bytes": 2528
+    },
+    {
+      "path": "data/maps/DewfordTown_PokemonCenter_2F/scripts.inc",
+      "sha1": "e8060e6d280e94e01c89154a27083bf4dff73b85",
+      "bytes": 630
+    },
+    {
+      "path": "data/maps/EverGrandeCity/map.json",
+      "sha1": "0cc8791074133ebfd3478a2f4e9b240b955f5902",
+      "bytes": 4482
+    },
+    {
+      "path": "data/maps/EverGrandeCity/scripts.inc",
+      "sha1": "03ae6b2d9d17df6e3a50137366ce7f8d136ed5d2",
+      "bytes": 974
+    },
+    {
+      "path": "data/maps/EverGrandeCity_ChampionsRoom/map.json",
+      "sha1": "1a50852d2ac213c086aabf21a5bc16fa4c9f7e03",
+      "bytes": 2108
+    },
+    {
+      "path": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+      "sha1": "4f73bd77d8715e7ac12ff1ac731985eaf75ecd5e",
+      "bytes": 11746
+    },
+    {
+      "path": "data/maps/EverGrandeCity_DrakesRoom/map.json",
+      "sha1": "b30bc4d7980275b977f3fcff96c107bd90f3beb1",
+      "bytes": 1228
+    },
+    {
+      "path": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+      "sha1": "f9ebbd1a5748e35eab8deba2da4622069b1316a9",
+      "bytes": 3331
+    },
+    {
+      "path": "data/maps/EverGrandeCity_GlaciasRoom/map.json",
+      "sha1": "bcc0145ae2d18c0e7a4faa64d18e7bd5e1b8e50d",
+      "bytes": 1235
+    },
+    {
+      "path": "data/maps/EverGrandeCity_GlaciasRoom/scripts.inc",
+      "sha1": "283be726375bae9790aba23661a75e157e304cdc",
+      "bytes": 2942
+    },
+    {
+      "path": "data/maps/EverGrandeCity_Hall1/map.json",
+      "sha1": "fe8e2f2995125bec7279d5dcfcb635013160a7de",
+      "bytes": 1135
+    },
+    {
+      "path": "data/maps/EverGrandeCity_Hall1/scripts.inc",
+      "sha1": "b74c3de5206029be5b5f2efd55c3311f4fd9200f",
+      "bytes": 332
+    },
+    {
+      "path": "data/maps/EverGrandeCity_Hall2/map.json",
+      "sha1": "215574c5c71fd1868ad03969821285cecde8a0e0",
+      "bytes": 1135
+    },
+    {
+      "path": "data/maps/EverGrandeCity_Hall2/scripts.inc",
+      "sha1": "c3ca0f6c3cded4738d31ae46f8c9de5088e5e6d4",
+      "bytes": 332
+    },
+    {
+      "path": "data/maps/EverGrandeCity_Hall3/map.json",
+      "sha1": "0283a46572dcfb490b6f1151d3b13d8f141d3e06",
+      "bytes": 1134
+    },
+    {
+      "path": "data/maps/EverGrandeCity_Hall3/scripts.inc",
+      "sha1": "d385b91355e32375e8384a7f1b646f69e81ec0db",
+      "bytes": 332
+    },
+    {
+      "path": "data/maps/EverGrandeCity_Hall4/map.json",
+      "sha1": "6d646c3e74be01c2de69dbdd929caa377f12a68e",
+      "bytes": 841
+    },
+    {
+      "path": "data/maps/EverGrandeCity_Hall4/scripts.inc",
+      "sha1": "8ed665cec7bce9849168e437c176e7eb271890a5",
+      "bytes": 332
+    },
+    {
+      "path": "data/maps/EverGrandeCity_Hall5/map.json",
+      "sha1": "914b037177d807ac860c85e81f3d87bcdd57ccfc",
+      "bytes": 1150
+    },
+    {
+      "path": "data/maps/EverGrandeCity_Hall5/scripts.inc",
+      "sha1": "0b998c2f2c028b4fcaa34ca7837a7a13dd5f2364",
+      "bytes": 332
+    },
+    {
+      "path": "data/maps/EverGrandeCity_HallOfFame/map.json",
+      "sha1": "970a960d66526a2af6b005846134b2efa2a41f8d",
+      "bytes": 1119
+    },
+    {
+      "path": "data/maps/EverGrandeCity_HallOfFame/scripts.inc",
+      "sha1": "c6da78131eff88a85e046e0e631d7de403522957",
+      "bytes": 3278
+    },
+    {
+      "path": "data/maps/EverGrandeCity_PhoebesRoom/map.json",
+      "sha1": "6c652e4eea3e2b4ab623abb76ef7e97441fd33ea",
+      "bytes": 1235
+    },
+    {
+      "path": "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc",
+      "sha1": "19093003402affcdd9afdda6a47a9abe8524d0e2",
+      "bytes": 2974
+    },
+    {
+      "path": "data/maps/EverGrandeCity_PokemonCenter_1F/map.json",
+      "sha1": "7ddd6ab18fd149b26178c2923830fd37f0977da0",
+      "bytes": 2686
+    },
+    {
+      "path": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+      "sha1": "012038458957d746c6cb9c71ce265a9faf173fe8",
+      "bytes": 3196
+    },
+    {
+      "path": "data/maps/EverGrandeCity_PokemonCenter_2F/map.json",
+      "sha1": "43d0635ab3763c244c88904e7e11193fcacb9a00",
+      "bytes": 2543
+    },
+    {
+      "path": "data/maps/EverGrandeCity_PokemonCenter_2F/scripts.inc",
+      "sha1": "7cd67697e44f8af794e347dbc76459e27a694c16",
+      "bytes": 643
+    },
+    {
+      "path": "data/maps/EverGrandeCity_PokemonLeague_1F/map.json",
+      "sha1": "8bbe2572a494e1e5d8e315341e0e035fcd7ae56c",
+      "bytes": 2984
+    },
+    {
+      "path": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+      "sha1": "a55305762ef4a1d7b0cbf882528ff161154a969b",
+      "bytes": 4430
+    },
+    {
+      "path": "data/maps/EverGrandeCity_PokemonLeague_2F/map.json",
+      "sha1": "f80d6291d8bf81e200964ed2363d436984231d50",
+      "bytes": 2543
+    },
+    {
+      "path": "data/maps/EverGrandeCity_PokemonLeague_2F/scripts.inc",
+      "sha1": "f3f8945b943a530429c30f6ee50477a780980418",
+      "bytes": 642
+    },
+    {
+      "path": "data/maps/EverGrandeCity_SidneysRoom/map.json",
+      "sha1": "22697b78ee9a7027f12c6f41a51084f2f3dd798d",
+      "bytes": 1235
+    },
+    {
+      "path": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+      "sha1": "557570a48b33cd8590cd2a5ef0ed11ae09a3448a",
+      "bytes": 3095
+    },
+    {
+      "path": "data/maps/FallarborTown/map.json",
+      "sha1": "8fe7f19a90a652a8002a0bc5ee11e2cb69ffa7cb",
+      "bytes": 4565
+    },
+    {
+      "path": "data/maps/FallarborTown/scripts.inc",
+      "sha1": "5eb275ca170342d9d6f005ad109dd88d1bf829e1",
+      "bytes": 2698
+    },
+    {
+      "path": "data/maps/FallarborTown_BattleTentBattleRoom/map.json",
+      "sha1": "68d1dd24fd278c85b9fb5129fb2c1963178563e2",
+      "bytes": 1792
+    },
+    {
+      "path": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+      "sha1": "8bbb2b24c65698ff0f5d4dcb7592d7ae122741de",
+      "bytes": 9559
+    },
+    {
+      "path": "data/maps/FallarborTown_BattleTentCorridor/map.json",
+      "sha1": "02a5c56b5021f3012d79772549d7c026bea9b1e8",
+      "bytes": 980
+    },
+    {
+      "path": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+      "sha1": "163b9c21282cae11ce5f396c305aff448fc9ab48",
+      "bytes": 2133
+    },
+    {
+      "path": "data/maps/FallarborTown_BattleTentLobby/map.json",
+      "sha1": "8ae866adf2cda5d05a2b2aa31bed890f00e650cd",
+      "bytes": 3111
+    },
+    {
+      "path": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+      "sha1": "007b5945200863133fd43941054ec8db085a0356",
+      "bytes": 13120
+    },
+    {
+      "path": "data/maps/FallarborTown_CozmosHouse/map.json",
+      "sha1": "b67f8acdff944a6643ea01a0bb8aac38f7fbfaef",
+      "bytes": 1636
+    },
+    {
+      "path": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+      "sha1": "8f6cba0c7d4561645e0110baf848672ddd10d44d",
+      "bytes": 4284
+    },
+    {
+      "path": "data/maps/FallarborTown_Mart/map.json",
+      "sha1": "258c69c086410cf2b59011d345cd84519f2b0482",
+      "bytes": 2752
+    },
+    {
+      "path": "data/maps/FallarborTown_Mart/scripts.inc",
+      "sha1": "0ca66f0e5420cbce8afedeba0991156dec84e531",
+      "bytes": 1593
+    },
+    {
+      "path": "data/maps/FallarborTown_MoveRelearnersHouse/map.json",
+      "sha1": "46698b461841f016dc7b6a0832a0dd1c8ffadc77",
+      "bytes": 1263
+    },
+    {
+      "path": "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc",
+      "sha1": "9afb886b81b1177e00257143804f6a28f9488a57",
+      "bytes": 3946
+    },
+    {
+      "path": "data/maps/FallarborTown_PokemonCenter_1F/map.json",
+      "sha1": "351d952038e4596255ccc8bca53055b081e79823",
+      "bytes": 2669
+    },
+    {
+      "path": "data/maps/FallarborTown_PokemonCenter_1F/scripts.inc",
+      "sha1": "1f48e8d40f8ba3b6123d3e45ff7292df588ad7dd",
+      "bytes": 3263
+    },
+    {
+      "path": "data/maps/FallarborTown_PokemonCenter_2F/map.json",
+      "sha1": "244bfeb47116d0e5f9f80d4ed218fa0322b2a75e",
+      "bytes": 2536
+    },
+    {
+      "path": "data/maps/FallarborTown_PokemonCenter_2F/scripts.inc",
+      "sha1": "6c8019ee0b3cbe90be8b11ec27a91301cfdc0a6d",
+      "bytes": 638
+    },
+    {
+      "path": "data/maps/FarawayIsland_Entrance/map.json",
+      "sha1": "3729d1448e31e8a30c0b21f497bc6a12048dbd0c",
+      "bytes": 2542
+    },
+    {
+      "path": "data/maps/FarawayIsland_Entrance/scripts.inc",
+      "sha1": "23d3bf4f9ef5a8edf9d50398dba305a326eac52e",
+      "bytes": 1204
+    },
+    {
+      "path": "data/maps/FarawayIsland_Interior/map.json",
+      "sha1": "5c361f65bc6c4a9632200d800af1d0471fb543eb",
+      "bytes": 1296
+    },
+    {
+      "path": "data/maps/FarawayIsland_Interior/scripts.inc",
+      "sha1": "748f9f309b0dbfe85cb833f24aeceac469102437",
+      "bytes": 5886
+    },
+    {
+      "path": "data/maps/FieryPath/map.json",
+      "sha1": "1bfd87b322ac6d82537c1476de8e9d1f862fc24c",
+      "bytes": 3946
+    },
+    {
+      "path": "data/maps/FieryPath/scripts.inc",
+      "sha1": "11242b6ad4afd2b69b6b55772c09b18cf102c261",
+      "bytes": 391
+    },
+    {
+      "path": "data/maps/FortreeCity/map.json",
+      "sha1": "bc6e106598defe5c5f6d0848d4ab429438c54a59",
+      "bytes": 5775
+    },
+    {
+      "path": "data/maps/FortreeCity/scripts.inc",
+      "sha1": "a1f53b6d8b894e2f69fc9a5c4e1509ef9ab3ce09",
+      "bytes": 4500
+    },
+    {
+      "path": "data/maps/FortreeCity_DecorationShop/map.json",
+      "sha1": "6afc6924ec6642c5488577ea5d59ac4c9cdcde03",
+      "bytes": 2392
+    },
+    {
+      "path": "data/maps/FortreeCity_DecorationShop/scripts.inc",
+      "sha1": "9052b61ce40e18da90e9f9a9ca5351634902ee39",
+      "bytes": 1848
+    },
+    {
+      "path": "data/maps/FortreeCity_Gym/map.json",
+      "sha1": "fb0df5305ca2d550023d359939be89844639d9b5",
+      "bytes": 4222
+    },
+    {
+      "path": "data/maps/FortreeCity_Gym/scripts.inc",
+      "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2",
+      "bytes": 10747
+    },
+    {
+      "path": "data/maps/FortreeCity_House1/map.json",
+      "sha1": "0053187d878220f0c8fdf48c3b444c9333aab0ee",
+      "bytes": 1944
+    },
+    {
+      "path": "data/maps/FortreeCity_House1/scripts.inc",
+      "sha1": "73fe39f834d30cb9e5eb946dc3e0a824ee7e8c6f",
+      "bytes": 3055
+    },
+    {
+      "path": "data/maps/FortreeCity_House2/map.json",
+      "sha1": "b9ffad559ded3111d58bfff3d2a3c4c767606cfa",
+      "bytes": 1582
+    },
+    {
+      "path": "data/maps/FortreeCity_House2/scripts.inc",
+      "sha1": "44bcbe274ccc5a3585d32b51557300ad9273b5c1",
+      "bytes": 2807
+    },
+    {
+      "path": "data/maps/FortreeCity_House3/map.json",
+      "sha1": "ec13b38d56e6eebeebe6fe9f692bccdd47b490e0",
+      "bytes": 1563
+    },
+    {
+      "path": "data/maps/FortreeCity_House3/scripts.inc",
+      "sha1": "fe50a1e51aebeba4e95bf2a1358a8b22a12445d6",
+      "bytes": 953
+    },
+    {
+      "path": "data/maps/FortreeCity_House4/map.json",
+      "sha1": "7852b9481365452e1acd26acad11b435a9c02724",
+      "bytes": 2017
+    },
+    {
+      "path": "data/maps/FortreeCity_House4/scripts.inc",
+      "sha1": "f38bb5dba9859d7e96965e3b161795e659e29db9",
+      "bytes": 2889
+    },
+    {
+      "path": "data/maps/FortreeCity_House5/map.json",
+      "sha1": "f8f77b69fd1a7b152f955415aea627119156653c",
+      "bytes": 1950
+    },
+    {
+      "path": "data/maps/FortreeCity_House5/scripts.inc",
+      "sha1": "087ce246bf45e3d26a6c5b2dd413da3602da3276",
+      "bytes": 929
+    },
+    {
+      "path": "data/maps/FortreeCity_Mart/map.json",
+      "sha1": "693c25caa5e39ec8756fb433d3aa11a0d2ecacb2",
+      "bytes": 2333
+    },
+    {
+      "path": "data/maps/FortreeCity_Mart/scripts.inc",
+      "sha1": "39e9591afc4b01702cd84304453dd4d1ee0ffe23",
+      "bytes": 1370
+    },
+    {
+      "path": "data/maps/FortreeCity_PokemonCenter_1F/map.json",
+      "sha1": "e2932109b7e30bc816da8ed5c3e6f3ce282cbc80",
+      "bytes": 2557
+    },
+    {
+      "path": "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc",
+      "sha1": "695df0ed7ad6600850be2816ae2060c7c1c6c535",
+      "bytes": 1817
+    },
+    {
+      "path": "data/maps/FortreeCity_PokemonCenter_2F/map.json",
+      "sha1": "e867cae3d17a3247e9b892d20efcec7918e1e737",
+      "bytes": 2528
+    },
+    {
+      "path": "data/maps/FortreeCity_PokemonCenter_2F/scripts.inc",
+      "sha1": "4cbcac17ffd511dfb9e9ca856c10d4adad369f22",
+      "bytes": 630
+    },
+    {
+      "path": "data/maps/GraniteCave_1F/map.json",
+      "sha1": "84ba8d69520a04c9a16927ff88a9a306b2c12881",
+      "bytes": 1863
+    },
+    {
+      "path": "data/maps/GraniteCave_1F/scripts.inc",
+      "sha1": "009a50304c40851653dda9dbfa159a4e7288520e",
+      "bytes": 1229
+    },
+    {
+      "path": "data/maps/GraniteCave_B1F/map.json",
+      "sha1": "bd2c7e4f9b0550b265729d3ef593887d3ce091e3",
+      "bytes": 1883
+    },
+    {
+      "path": "data/maps/GraniteCave_B1F/scripts.inc",
+      "sha1": "64fd6273282c62a4fbf4bd0eaab0ce96a8fa673b",
+      "bytes": 339
+    },
+    {
+      "path": "data/maps/GraniteCave_B2F/map.json",
+      "sha1": "677a91e7369311b7ee62fe2f7c178d63d951e776",
+      "bytes": 5108
+    },
+    {
+      "path": "data/maps/GraniteCave_B2F/scripts.inc",
+      "sha1": "574ea1dc2c663f2cd69d8dfcb12c919f0747e3d2",
+      "bytes": 39
+    },
+    {
+      "path": "data/maps/GraniteCave_StevensRoom/map.json",
+      "sha1": "8caf477c60755017f7b363c9c45ba9ec9df1ba0c",
+      "bytes": 1155
+    },
+    {
+      "path": "data/maps/GraniteCave_StevensRoom/scripts.inc",
+      "sha1": "d6ee0122ad78c2332db89dbd8efa2a788f6bd86e",
+      "bytes": 3739
+    },
+    {
+      "path": "data/maps/InsideOfTruck/map.json",
+      "sha1": "c40354a9dae7ff7c27b55a8889b486648e9561e5",
+      "bytes": 3836
+    },
+    {
+      "path": "data/maps/InsideOfTruck/scripts.inc",
+      "sha1": "4a49579e348e8a2c251edbaf7a3418e83b642424",
+      "bytes": 2042
+    },
+    {
+      "path": "data/maps/IslandCave/map.json",
+      "sha1": "62e7e622ef16e8b6c408d269b721c6aa0f710cd0",
+      "bytes": 1890
+    },
+    {
+      "path": "data/maps/IslandCave/scripts.inc",
+      "sha1": "36e3ca89a53bdf101cff26d6ef8efcf46552e41d",
+      "bytes": 3835
+    },
+    {
+      "path": "data/maps/JaggedPass/map.json",
+      "sha1": "94451c52cb35b0f7df10836f366d992c0e3f9080",
+      "bytes": 6040
+    },
+    {
+      "path": "data/maps/JaggedPass/scripts.inc",
+      "sha1": "3539aca2d309baaf0b57344f9c2014b5d896c94b",
+      "bytes": 8307
+    },
+    {
+      "path": "data/maps/LavaridgeTown/map.json",
+      "sha1": "528036d4fe9b25a1f56aa0f6350f2014968009da",
+      "bytes": 6814
+    },
+    {
+      "path": "data/maps/LavaridgeTown/scripts.inc",
+      "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9",
+      "bytes": 12689
+    },
+    {
+      "path": "data/maps/LavaridgeTown_Gym_1F/map.json",
+      "sha1": "31420f5ccda4f9fa5f1562b2465883c76f72e3a9",
+      "bytes": 6997
+    },
+    {
+      "path": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+      "sha1": "b82ae91ab89ff7156e8125891eff9b7e6a2a260f",
+      "bytes": 15348
+    },
+    {
+      "path": "data/maps/LavaridgeTown_Gym_B1F/map.json",
+      "sha1": "3324d0ce04c1d9308f64303c9d81e78ab73b36d1",
+      "bytes": 5514
+    },
+    {
+      "path": "data/maps/LavaridgeTown_Gym_B1F/scripts.inc",
+      "sha1": "575a7846fd222d10d87752566c50759a04aab0c8",
+      "bytes": 1942
+    },
+    {
+      "path": "data/maps/LavaridgeTown_HerbShop/map.json",
+      "sha1": "0ec35dfb3dc9816961ab92c88de44bde4562dbfb",
+      "bytes": 1976
+    },
+    {
+      "path": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+      "sha1": "ed83c75f66b27defc898c3be46549255ef12185c",
+      "bytes": 1937
+    },
+    {
+      "path": "data/maps/LavaridgeTown_House/map.json",
+      "sha1": "31405e61ea4624fe1e2998ed69c2576e8c2cbc7b",
+      "bytes": 1948
+    },
+    {
+      "path": "data/maps/LavaridgeTown_House/scripts.inc",
+      "sha1": "ed212e3f1367a1e79fdbed072e9a08e0920ddeb6",
+      "bytes": 679
+    },
+    {
+      "path": "data/maps/LavaridgeTown_Mart/map.json",
+      "sha1": "db1633902e5f694ac034d43b14967b5c6415ba63",
+      "bytes": 1986
+    },
+    {
+      "path": "data/maps/LavaridgeTown_Mart/scripts.inc",
+      "sha1": "9ccd266cfc46c11e6006af62bd5e1b2c6ea3ae0e",
+      "bytes": 1158
+    },
+    {
+      "path": "data/maps/LavaridgeTown_PokemonCenter_1F/map.json",
+      "sha1": "cdd361306994e8819b95106b17a3d01075f00340",
+      "bytes": 2734
+    },
+    {
+      "path": "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.inc",
+      "sha1": "6899c6d44a5fd56d99bcdae08fe4b431b5281a13",
+      "bytes": 1633
+    },
+    {
+      "path": "data/maps/LavaridgeTown_PokemonCenter_2F/map.json",
+      "sha1": "66d3f8b98847f9dfee16ce1fe1cbf92f73c1d3ab",
+      "bytes": 2536
+    },
+    {
+      "path": "data/maps/LavaridgeTown_PokemonCenter_2F/scripts.inc",
+      "sha1": "b7e98a191742d79eba5582227d8afb3062ae2a5a",
+      "bytes": 638
+    },
+    {
+      "path": "data/maps/LilycoveCity/map.json",
+      "sha1": "ecd4d8c0f7b8c74fa70d53df6e4922fed0c006b6",
+      "bytes": 13987
+    },
+    {
+      "path": "data/maps/LilycoveCity/scripts.inc",
+      "sha1": "88d2d726de381f98070edef9248c27c660f01ab5",
+      "bytes": 25379
+    },
+    {
+      "path": "data/maps/LilycoveCity_ContestHall/map.json",
+      "sha1": "b19060630b6a0d5386b95012b8c7c60337fe2d2a",
+      "bytes": 16400
+    },
+    {
+      "path": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+      "sha1": "9d258f56144116075b6ffd125cc9edb7fc292736",
+      "bytes": 16363
+    },
+    {
+      "path": "data/maps/LilycoveCity_ContestLobby/map.json",
+      "sha1": "967323657501eb08c1fa55180db9456a6b4962b3",
+      "bytes": 14484
+    },
+    {
+      "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+      "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a",
+      "bytes": 37953
+    },
+    {
+      "path": "data/maps/LilycoveCity_CoveLilyMotel_1F/map.json",
+      "sha1": "4ab6219dc8e99a2fb3b420779550e7fa37593009",
+      "bytes": 1624
+    },
+    {
+      "path": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+      "sha1": "6fbfa2a2632f8e86026cc0a8c8fa9a98046f56ac",
+      "bytes": 4621
+    },
+    {
+      "path": "data/maps/LilycoveCity_CoveLilyMotel_2F/map.json",
+      "sha1": "53373b90318a2a429d17d3f85ba8bed2835a6484",
+      "bytes": 3741
+    },
+    {
+      "path": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+      "sha1": "f1b25840a73dbfc8affb6142a8450fed0204496f",
+      "bytes": 4710
+    },
+    {
+      "path": "data/maps/LilycoveCity_DepartmentStoreElevator/map.json",
+      "sha1": "5cf6289fbb15e24f83581df329a90b212977a680",
+      "bytes": 1267
+    },
+    {
+      "path": "data/maps/LilycoveCity_DepartmentStoreElevator/scripts.inc",
+      "sha1": "6f3c7492d2e00c249c4b430dcd1afe6781156f25",
+      "bytes": 5398
+    },
+    {
+      "path": "data/maps/LilycoveCity_DepartmentStoreRooftop/map.json",
+      "sha1": "3e39c9939735f804c565bcad62aeb78591d07d83",
+      "bytes": 2863
+    },
+    {
+      "path": "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc",
+      "sha1": "3ac544c7b01d367272ba9a3a4ac85c927eeb0c61",
+      "bytes": 8154
+    },
+    {
+      "path": "data/maps/LilycoveCity_DepartmentStore_1F/map.json",
+      "sha1": "40c25ea654224c9c6792c1951e5f7ee9042f5b6e",
+      "bytes": 3802
+    },
+    {
+      "path": "data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc",
+      "sha1": "25a2cc6d86d1739788e578e0911145b04f3d372f",
+      "bytes": 6969
+    },
+    {
+      "path": "data/maps/LilycoveCity_DepartmentStore_2F/map.json",
+      "sha1": "e9a54db1839485c2691dc62632bcb74119f932bf",
+      "bytes": 3008
+    },
+    {
+      "path": "data/maps/LilycoveCity_DepartmentStore_2F/scripts.inc",
+      "sha1": "5b4ee799e1c265da48c7feabc7e0a7e45485708e",
+      "bytes": 1990
+    },
+    {
+      "path": "data/maps/LilycoveCity_DepartmentStore_3F/map.json",
+      "sha1": "dcc1fc74f6827f3f7294946bba976d853cad5c60",
+      "bytes": 3039
+    },
+    {
+      "path": "data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc",
+      "sha1": "7e44e655dce3fffd840dec23146b0ba8b429b3b5",
+      "bytes": 1999
+    },
+    {
+      "path": "data/maps/LilycoveCity_DepartmentStore_4F/map.json",
+      "sha1": "d75b21e552cad4f2d46432cdf44585fc2ebf37b8",
+      "bytes": 3022
+    },
+    {
+      "path": "data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc",
+      "sha1": "1c31f94c3331fa62c92524841334a9b9b0a050ac",
+      "bytes": 1944
+    },
+    {
+      "path": "data/maps/LilycoveCity_DepartmentStore_5F/map.json",
+      "sha1": "0b6789c24f7cde9ba049aa2b9849680226525457",
+      "bytes": 3898
+    },
+    {
+      "path": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+      "sha1": "cd7aae47b8996a67b13e78af3da148a41c68791f",
+      "bytes": 5137
+    },
+    {
+      "path": "data/maps/LilycoveCity_Harbor/map.json",
+      "sha1": "7bb6c3366d5032a1aa3a6b6279dbda154bbee405",
+      "bytes": 2976
+    },
+    {
+      "path": "data/maps/LilycoveCity_Harbor/scripts.inc",
+      "sha1": "ffd83f00915b03bfdd96f51950251d00dd19dbcb",
+      "bytes": 19814
+    },
+    {
+      "path": "data/maps/LilycoveCity_House1/map.json",
+      "sha1": "0f6b38d2c3ff2fc620578c9cb93bb22fa2d5271d",
+      "bytes": 1548
+    },
+    {
+      "path": "data/maps/LilycoveCity_House1/scripts.inc",
+      "sha1": "68c869a4ebb71977a03d938444b31d12586acfe9",
+      "bytes": 647
+    },
+    {
+      "path": "data/maps/LilycoveCity_House2/map.json",
+      "sha1": "a9be8c4acddfc75b09b89e1880a9d2cf59886f18",
+      "bytes": 1178
+    },
+    {
+      "path": "data/maps/LilycoveCity_House2/scripts.inc",
+      "sha1": "9749a96bffae7c19c483abc714546090b02b640c",
+      "bytes": 889
+    },
+    {
+      "path": "data/maps/LilycoveCity_House3/map.json",
+      "sha1": "f6a6963c39eaef0abbd5020f7c4114e839c5a7e7",
+      "bytes": 3104
+    },
+    {
+      "path": "data/maps/LilycoveCity_House3/scripts.inc",
+      "sha1": "d8cf01aabc47c4a1255f8f58616f8cbdcb863fd4",
+      "bytes": 5677
+    },
+    {
+      "path": "data/maps/LilycoveCity_House4/map.json",
+      "sha1": "8881810212ee8d9fdf8eb3cdcdd643e4222dab3b",
+      "bytes": 1547
+    },
+    {
+      "path": "data/maps/LilycoveCity_House4/scripts.inc",
+      "sha1": "b6a5e4f9bdfbd38730d423bea2c1e9066671d202",
+      "bytes": 674
+    },
+    {
+      "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/map.json",
+      "sha1": "61bc103a561828eef855450f818c2812737d695f",
+      "bytes": 8725
+    },
+    {
+      "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+      "sha1": "9b7ed7bb941e379aabaa59bf0da8ffe089df98ba",
+      "bytes": 10373
+    },
+    {
+      "path": "data/maps/LilycoveCity_LilycoveMuseum_2F/map.json",
+      "sha1": "3968fe199dd3996525171ffd7cab54137122cfa4",
+      "bytes": 5073
+    },
+    {
+      "path": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+      "sha1": "c41e25282a159070f0eb7fb3edcf1b61cc1cfa19",
+      "bytes": 13025
+    },
+    {
+      "path": "data/maps/LilycoveCity_MoveDeletersHouse/map.json",
+      "sha1": "625a875c6b0e86f16bca1d7c4a9fdda6436dc541",
+      "bytes": 1247
+    },
+    {
+      "path": "data/maps/LilycoveCity_MoveDeletersHouse/scripts.inc",
+      "sha1": "607d0f5a35fe588b33f31bdc4804af7a61c537bb",
+      "bytes": 3911
+    },
+    {
+      "path": "data/maps/LilycoveCity_PokemonCenter_1F/map.json",
+      "sha1": "8db7f37f4e34b7d881ff36bf684ef303e05295dd",
+      "bytes": 3105
+    },
+    {
+      "path": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+      "sha1": "aea25451773a7c111671a0da53f41f92ce337106",
+      "bytes": 2315
+    },
+    {
+      "path": "data/maps/LilycoveCity_PokemonCenter_2F/map.json",
+      "sha1": "d4799a9f8b30961cd80ab4ca2c292a4a5ed9e6b3",
+      "bytes": 2532
+    },
+    {
+      "path": "data/maps/LilycoveCity_PokemonCenter_2F/scripts.inc",
+      "sha1": "44c0461cadaf0e13f1a830283673f482e2a6d8ab",
+      "bytes": 634
+    },
+    {
+      "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/map.json",
+      "sha1": "313952f28ca6d31fe5282c6632fdf7ab141b0eca",
+      "bytes": 4981
+    },
+    {
+      "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+      "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826",
+      "bytes": 33169
+    },
+    {
+      "path": "data/maps/LilycoveCity_UnusedMart/map.json",
+      "sha1": "93e9e9475aa62ffb7252d194a3cfba06f7c581ea",
+      "bytes": 789
+    },
+    {
+      "path": "data/maps/LilycoveCity_UnusedMart/scripts.inc",
+      "sha1": "14cda5c62610061ea31e96bce6563b6a17ab35f0",
+      "bytes": 47
+    },
+    {
+      "path": "data/maps/LittlerootTown/map.json",
+      "sha1": "1e04563b693f88e4476d9f7b49a2194b5e027957",
+      "bytes": 7165
+    },
+    {
+      "path": "data/maps/LittlerootTown/scripts.inc",
+      "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0",
+      "bytes": 30530
+    },
+    {
+      "path": "data/maps/LittlerootTown_BrendansHouse_1F/map.json",
+      "sha1": "f7be2e429bafe6de2465040402d53ed22d2e30b1",
+      "bytes": 5072
+    },
+    {
+      "path": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+      "sha1": "b92e18aeb34c3856db794aa81beeec7f0f0de717",
+      "bytes": 14806
+    },
+    {
+      "path": "data/maps/LittlerootTown_BrendansHouse_2F/map.json",
+      "sha1": "0457e9e79146ccd0dbf058d0095aedecb5acc4ff",
+      "bytes": 7688
+    },
+    {
+      "path": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+      "sha1": "e2d021d5a56c7a155294e7f5fcba3be133f71b33",
+      "bytes": 9769
+    },
+    {
+      "path": "data/maps/LittlerootTown_MaysHouse_1F/map.json",
+      "sha1": "47547f9e3b236beb339191c794628d09c7ddee7d",
+      "bytes": 5015
+    },
+    {
+      "path": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+      "sha1": "4acc9bd3dce8266e27759616e41b13205491adc6",
+      "bytes": 13441
+    },
+    {
+      "path": "data/maps/LittlerootTown_MaysHouse_2F/map.json",
+      "sha1": "22dcc564c8c9748ea6f038ccb8eb713be5bb82ee",
+      "bytes": 7638
+    },
+    {
+      "path": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+      "sha1": "e014a444dcf389c78773768633900402b1862edb",
+      "bytes": 12912
+    },
+    {
+      "path": "data/maps/LittlerootTown_ProfessorBirchsLab/map.json",
+      "sha1": "b67ac5532774aa4a9a8c03e959c984f389797bf6",
+      "bytes": 6981
+    },
+    {
+      "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+      "sha1": "46740b86b52b067832880c8dcc7166e917416592",
+      "bytes": 40341
+    },
+    {
+      "path": "data/maps/MagmaHideout_1F/map.json",
+      "sha1": "098fea2d47c67112327799f4e8bfaf5e9bf6cb1f",
+      "bytes": 3512
+    },
+    {
+      "path": "data/maps/MagmaHideout_1F/scripts.inc",
+      "sha1": "56855cc0486a1bd6fed1956c54134b994aeb627c",
+      "bytes": 1818
+    },
+    {
+      "path": "data/maps/MagmaHideout_2F_1R/map.json",
+      "sha1": "64f6e7fda24b579991ab1edb6dc8a078d30a7ef9",
+      "bytes": 2676
+    },
+    {
+      "path": "data/maps/MagmaHideout_2F_1R/scripts.inc",
+      "sha1": "015ca35ad24a95edcf15463fdb5c0bcafde94383",
+      "bytes": 2456
+    },
+    {
+      "path": "data/maps/MagmaHideout_2F_2R/map.json",
+      "sha1": "9dd5a5a5bc158d613e11769943126187a43c7b75",
+      "bytes": 3362
+    },
+    {
+      "path": "data/maps/MagmaHideout_2F_2R/scripts.inc",
+      "sha1": "01615ee55415554a4833c7cd9790ada769e12792",
+      "bytes": 2745
+    },
+    {
+      "path": "data/maps/MagmaHideout_2F_3R/map.json",
+      "sha1": "d6820153ee217637fd0e9029c8550e57bb5674e4",
+      "bytes": 815
+    },
+    {
+      "path": "data/maps/MagmaHideout_2F_3R/scripts.inc",
+      "sha1": "4f6a3700b229b158e7482e6d7493f64bef62a699",
+      "bytes": 42
+    },
+    {
+      "path": "data/maps/MagmaHideout_3F_1R/map.json",
+      "sha1": "1e214ad10306ee65cf5b6aadd9c3674df508a931",
+      "bytes": 2215
+    },
+    {
+      "path": "data/maps/MagmaHideout_3F_1R/scripts.inc",
+      "sha1": "474fc38ac5a7f662f15777828471aa95dd813607",
+      "bytes": 1499
+    },
+    {
+      "path": "data/maps/MagmaHideout_3F_2R/map.json",
+      "sha1": "975e0cb251c18d23139b85f019c0f6320900546f",
+      "bytes": 1536
+    },
+    {
+      "path": "data/maps/MagmaHideout_3F_2R/scripts.inc",
+      "sha1": "4923549b2a65ce6594c78eb43699df8e801131dc",
+      "bytes": 937
+    },
+    {
+      "path": "data/maps/MagmaHideout_3F_3R/map.json",
+      "sha1": "20956d52277b535d2402b4dfb13e1b79ec784495",
+      "bytes": 1249
+    },
+    {
+      "path": "data/maps/MagmaHideout_3F_3R/scripts.inc",
+      "sha1": "aac748805ace775a18bc576a0341403d74ed90c8",
+      "bytes": 42
+    },
+    {
+      "path": "data/maps/MagmaHideout_4F/map.json",
+      "sha1": "b266a0771e7f1e9f2d8cd6a74db767b197adf00c",
+      "bytes": 4478
+    },
+    {
+      "path": "data/maps/MagmaHideout_4F/scripts.inc",
+      "sha1": "8f2c61f090f2c324dc4138c5d5ad754b00dfcb48",
+      "bytes": 6891
+    },
+    {
+      "path": "data/maps/MarineCave_End/map.json",
+      "sha1": "c3469e14ff356e2c3ed61336718e46bdd1bfb427",
+      "bytes": 1300
+    },
+    {
+      "path": "data/maps/MarineCave_End/scripts.inc",
+      "sha1": "9fc74c6c75db5dcc1953c7f9fbd123e07dd022d5",
+      "bytes": 2064
+    },
+    {
+      "path": "data/maps/MarineCave_Entrance/map.json",
+      "sha1": "b6715487e58f33a9ed5511e5996b2407378a9a20",
+      "bytes": 677
+    },
+    {
+      "path": "data/maps/MarineCave_Entrance/scripts.inc",
+      "sha1": "b97a1b1a91a318f3f9c80f256631980b5b713792",
+      "bytes": 188
+    },
+    {
+      "path": "data/maps/MauvilleCity/map.json",
+      "sha1": "f3885f20933e6e45c5886f6a829c826d4f8386d2",
+      "bytes": 7868
+    },
+    {
+      "path": "data/maps/MauvilleCity/scripts.inc",
+      "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055",
+      "bytes": 19516
+    },
+    {
+      "path": "data/maps/MauvilleCity_BikeShop/map.json",
+      "sha1": "9cd6a46182b94984ce989120d7f57d7459369776",
+      "bytes": 1998
+    },
+    {
+      "path": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+      "sha1": "31396febb84a2b48608ca32d5a0dd0de865faf26",
+      "bytes": 11212
+    },
+    {
+      "path": "data/maps/MauvilleCity_GameCorner/map.json",
+      "sha1": "c09fcaf0f5e2937154730dd8bec5f2da90d673f4",
+      "bytes": 10252
+    },
+    {
+      "path": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+      "sha1": "3db7cd216c9a2c35e8176ef8b4a1d9ec68649c7b",
+      "bytes": 26240
+    },
+    {
+      "path": "data/maps/MauvilleCity_Gym/map.json",
+      "sha1": "a550195e9016799d3ae0a0f03213db6dbadc4279",
+      "bytes": 4654
+    },
+    {
+      "path": "data/maps/MauvilleCity_Gym/scripts.inc",
+      "sha1": "ba2cd4a14af6a43f9221cd58f6a4a0299a51ce6c",
+      "bytes": 14675
+    },
+    {
+      "path": "data/maps/MauvilleCity_House1/map.json",
+      "sha1": "9898b15a7a91db40b7d2e3df24401cff1695b365",
+      "bytes": 1176
+    },
+    {
+      "path": "data/maps/MauvilleCity_House1/scripts.inc",
+      "sha1": "2d2b0f74cde450b8e601ae7d75ea888588a68e66",
+      "bytes": 1541
+    },
+    {
+      "path": "data/maps/MauvilleCity_House2/map.json",
+      "sha1": "bec9f6cda4df97c237b5856ba0f5048f6486cc8d",
+      "bytes": 1163
+    },
+    {
+      "path": "data/maps/MauvilleCity_House2/scripts.inc",
+      "sha1": "a6d03164752c7787533d05baf97465a81271b528",
+      "bytes": 2156
+    },
+    {
+      "path": "data/maps/MauvilleCity_Mart/map.json",
+      "sha1": "72672da5cc97f36cb33937dd5b2004f080258233",
+      "bytes": 1969
+    },
+    {
+      "path": "data/maps/MauvilleCity_Mart/scripts.inc",
+      "sha1": "d8b603abe3cbe455d4b20a35653269b7e46b6b14",
+      "bytes": 1323
+    },
+    {
+      "path": "data/maps/MauvilleCity_PokemonCenter_1F/map.json",
+      "sha1": "af839dd3ab65ff8215f3d23e3e8f7f08b392419f",
+      "bytes": 2985
+    },
+    {
+      "path": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+      "sha1": "4f26b55b9e0eea95f2364faf35b676a0a26a3ce0",
+      "bytes": 1816
+    },
+    {
+      "path": "data/maps/MauvilleCity_PokemonCenter_2F/map.json",
+      "sha1": "0c5aaf8cc529986a870a5c62675fcfffab0e1a10",
+      "bytes": 2926
+    },
+    {
+      "path": "data/maps/MauvilleCity_PokemonCenter_2F/scripts.inc",
+      "sha1": "0b50b725e4593865c42b15c64ea6995b08dba996",
+      "bytes": 1058
+    },
+    {
+      "path": "data/maps/MeteorFalls_1F_1R/map.json",
+      "sha1": "ae7aaedc6042747aecd640e7cc03f55a046210aa",
+      "bytes": 6065
+    },
+    {
+      "path": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+      "sha1": "9f4ded44922a9eecca2a712d1673b053babe0bae",
+      "bytes": 9385
+    },
+    {
+      "path": "data/maps/MeteorFalls_1F_2R/map.json",
+      "sha1": "71346289babf11a2281065e924306a2092e8183b",
+      "bytes": 2391
+    },
+    {
+      "path": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+      "sha1": "09c545be014eea4099489af97aeae4f12469cf78",
+      "bytes": 6741
+    },
+    {
+      "path": "data/maps/MeteorFalls_B1F_1R/map.json",
+      "sha1": "310122cc63c09f936544d0306f1bc5537ca2a3bf",
+      "bytes": 1348
+    },
+    {
+      "path": "data/maps/MeteorFalls_B1F_1R/scripts.inc",
+      "sha1": "5db76d2d5e98cc0b020e5f56d62cefa2f9700ea5",
+      "bytes": 42
+    },
+    {
+      "path": "data/maps/MeteorFalls_B1F_2R/map.json",
+      "sha1": "b8c16c455448cf1899e36bda137961580960b048",
+      "bytes": 1116
+    },
+    {
+      "path": "data/maps/MeteorFalls_B1F_2R/scripts.inc",
+      "sha1": "f94ab279574ee2c55b53ac77a220693be0ae9725",
+      "bytes": 42
+    },
+    {
+      "path": "data/maps/MeteorFalls_StevensCave/map.json",
+      "sha1": "45667881b4bb07477d9439a87ecada7a47a290da",
+      "bytes": 1128
+    },
+    {
+      "path": "data/maps/MeteorFalls_StevensCave/scripts.inc",
+      "sha1": "1c533dd88d1548eeb3f32082e2ab2c1de6a3a5f5",
+      "bytes": 2176
+    },
+    {
+      "path": "data/maps/MirageTower_1F/map.json",
+      "sha1": "679d16eb29b6c15fd0fc11dc6e730e0814bd5b0b",
+      "bytes": 782
+    },
+    {
+      "path": "data/maps/MirageTower_1F/scripts.inc",
+      "sha1": "a504c55a841b8913fc95683dda3d0b6664ab9095",
+      "bytes": 251
+    },
+    {
+      "path": "data/maps/MirageTower_2F/map.json",
+      "sha1": "98a905580854177a29bcf829bf5d8397fe3ad509",
+      "bytes": 789
+    },
+    {
+      "path": "data/maps/MirageTower_2F/scripts.inc",
+      "sha1": "9add93faabf8bf9460a38b74b7e6f73ec5dd2933",
+      "bytes": 335
+    },
+    {
+      "path": "data/maps/MirageTower_3F/map.json",
+      "sha1": "7318b34923238916c8fdd82e9696ffe2e43ba278",
+      "bytes": 1558
+    },
+    {
+      "path": "data/maps/MirageTower_3F/scripts.inc",
+      "sha1": "8de7cd3ae149abdce9bb4353da67a0681dbafa10",
+      "bytes": 335
+    },
+    {
+      "path": "data/maps/MirageTower_4F/map.json",
+      "sha1": "bbeb7405063d90b8415b06a1553f0cc4e2824e43",
+      "bytes": 1962
+    },
+    {
+      "path": "data/maps/MirageTower_4F/scripts.inc",
+      "sha1": "0e490ee2e9400861a54b910d5d29825dad66deb9",
+      "bytes": 2218
+    },
+    {
+      "path": "data/maps/MossdeepCity/map.json",
+      "sha1": "e5f3ed3515745877143da05bc99302333d940624",
+      "bytes": 12774
+    },
+    {
+      "path": "data/maps/MossdeepCity/scripts.inc",
+      "sha1": "33f0f7f83a475484aaca395542c6bd65a6f2dd45",
+      "bytes": 11145
+    },
+    {
+      "path": "data/maps/MossdeepCity_GameCorner_1F/map.json",
+      "sha1": "ed63dd27bc9d02b602262d2bb4dd92275ef24246",
+      "bytes": 2384
+    },
+    {
+      "path": "data/maps/MossdeepCity_GameCorner_1F/scripts.inc",
+      "sha1": "9705268b8b1f1689ba5ce2a1488d37f1b3e28fee",
+      "bytes": 2881
+    },
+    {
+      "path": "data/maps/MossdeepCity_GameCorner_B1F/map.json",
+      "sha1": "bc19ecddcbe947ed544ac3a3a9111b9794019f96",
+      "bytes": 1054
+    },
+    {
+      "path": "data/maps/MossdeepCity_GameCorner_B1F/scripts.inc",
+      "sha1": "14d33576066cdc153b9e07e48c26610d0be1bbb7",
+      "bytes": 51
+    },
+    {
+      "path": "data/maps/MossdeepCity_Gym/map.json",
+      "sha1": "9a33d6559af206c544f98be7f035bb5a5ee65354",
+      "bytes": 17918
+    },
+    {
+      "path": "data/maps/MossdeepCity_Gym/scripts.inc",
+      "sha1": "f1b3ae6c76fdfe44b1431df4ea78da5c11a79c08",
+      "bytes": 22343
+    },
+    {
+      "path": "data/maps/MossdeepCity_House1/map.json",
+      "sha1": "47067d29a94f0726c02cc3f9b9fcb037aa1e0147",
+      "bytes": 1559
+    },
+    {
+      "path": "data/maps/MossdeepCity_House1/scripts.inc",
+      "sha1": "93c59a6d1eff04f8834df6ef4585f3c7342abcfe",
+      "bytes": 1257
+    },
+    {
+      "path": "data/maps/MossdeepCity_House2/map.json",
+      "sha1": "310f52e71971916b4eb2342944670ab572f0cdda",
+      "bytes": 2005
+    },
+    {
+      "path": "data/maps/MossdeepCity_House2/scripts.inc",
+      "sha1": "dcfbf70d772d40b8358cd2af009c970d7028d279",
+      "bytes": 1904
+    },
+    {
+      "path": "data/maps/MossdeepCity_House3/map.json",
+      "sha1": "ca6e4f7861ea21011ac0bd5ffd66ad053961b180",
+      "bytes": 1178
+    },
+    {
+      "path": "data/maps/MossdeepCity_House3/scripts.inc",
+      "sha1": "862efeb542007e077f0975da975ed00de73db5d8",
+      "bytes": 1593
+    },
+    {
+      "path": "data/maps/MossdeepCity_House4/map.json",
+      "sha1": "c17a16cfe5691f3565b5ff50bf5634bfc11c8069",
+      "bytes": 1950
+    },
+    {
+      "path": "data/maps/MossdeepCity_House4/scripts.inc",
+      "sha1": "06b64434090fa892c2b284488f6e34304b59f7aa",
+      "bytes": 1692
+    },
+    {
+      "path": "data/maps/MossdeepCity_Mart/map.json",
+      "sha1": "937a29e56f85228a80b1c796ba6dc28b8bd07e1e",
+      "bytes": 2353
+    },
+    {
+      "path": "data/maps/MossdeepCity_Mart/scripts.inc",
+      "sha1": "c808a00eab98e6463dd7a37f123ff7123046ccad",
+      "bytes": 1571
+    },
+    {
+      "path": "data/maps/MossdeepCity_PokemonCenter_1F/map.json",
+      "sha1": "4dc743961c95264a75345fab504c495726454ad6",
+      "bytes": 2174
+    },
+    {
+      "path": "data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc",
+      "sha1": "bb19ff9a0e952fad700f5ef42fc9fcd6b6aa3a75",
+      "bytes": 1137
+    },
+    {
+      "path": "data/maps/MossdeepCity_PokemonCenter_2F/map.json",
+      "sha1": "97683f5a5e3ecf51049d3b83bc85894afc8e68ce",
+      "bytes": 2936
+    },
+    {
+      "path": "data/maps/MossdeepCity_PokemonCenter_2F/scripts.inc",
+      "sha1": "b872c404a8cf9392e2924ec4cd02bf75f3cc4c02",
+      "bytes": 934
+    },
+    {
+      "path": "data/maps/MossdeepCity_SpaceCenter_1F/map.json",
+      "sha1": "40f7d98cbbcbcdc34f41e847b0794db707c77bb0",
+      "bytes": 5937
+    },
+    {
+      "path": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+      "sha1": "a0cf82d2df089035fb81d02a013736aab95a13d6",
+      "bytes": 16522
+    },
+    {
+      "path": "data/maps/MossdeepCity_SpaceCenter_2F/map.json",
+      "sha1": "1b87fdfef508a18fb47e850380133fcbd3be7de7",
+      "bytes": 5008
+    },
+    {
+      "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+      "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98",
+      "bytes": 18647
+    },
+    {
+      "path": "data/maps/MossdeepCity_StevensHouse/map.json",
+      "sha1": "3fbecad23caf30b93fa6cd3c1e4bcf783a85d51a",
+      "bytes": 3085
+    },
+    {
+      "path": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+      "sha1": "13a709347ca2c2863ef04de01b7d51d28b9d736e",
+      "bytes": 7391
+    },
+    {
+      "path": "data/maps/MtChimney/map.json",
+      "sha1": "02de2926332ab99346150e00976e69d6b7b962d7",
+      "bytes": 14178
+    },
+    {
+      "path": "data/maps/MtChimney/scripts.inc",
+      "sha1": "4d6a7ac7998e07e6d4f244ef13c499194f5b3668",
+      "bytes": 21596
+    },
+    {
+      "path": "data/maps/MtChimney_CableCarStation/map.json",
+      "sha1": "b53c07d6ad80e9bc6863e52fbfe2254e16272abb",
+      "bytes": 1600
+    },
+    {
+      "path": "data/maps/MtChimney_CableCarStation/scripts.inc",
+      "sha1": "9e305574fdedd25f70ad58e6499cdd46ba5e26c4",
+      "bytes": 2907
+    },
+    {
+      "path": "data/maps/MtPyre_1F/map.json",
+      "sha1": "a00caadc42db4d44f876dc44ae22a3f2e116d610",
+      "bytes": 2392
+    },
+    {
+      "path": "data/maps/MtPyre_1F/scripts.inc",
+      "sha1": "fb767551d4d8fa906d9226adf1aabd795c630e6b",
+      "bytes": 1355
+    },
+    {
+      "path": "data/maps/MtPyre_2F/map.json",
+      "sha1": "019e5e84a593e9bc718dfbacfca8c779b67d84df",
+      "bytes": 4161
+    },
+    {
+      "path": "data/maps/MtPyre_2F/scripts.inc",
+      "sha1": "bc76e62a0ca08b33eb2220b94b2aff96bd7a1311",
+      "bytes": 4209
+    },
+    {
+      "path": "data/maps/MtPyre_3F/map.json",
+      "sha1": "5391dcb4f94af5942489b6537153118956c790fe",
+      "bytes": 2824
+    },
+    {
+      "path": "data/maps/MtPyre_3F/scripts.inc",
+      "sha1": "694f843b2a8c41803b3943fcf555c5a14a36d997",
+      "bytes": 3178
+    },
+    {
+      "path": "data/maps/MtPyre_4F/map.json",
+      "sha1": "e34086c0a59951f42c052346a35b78dd0b87a9b8",
+      "bytes": 2058
+    },
+    {
+      "path": "data/maps/MtPyre_4F/scripts.inc",
+      "sha1": "c48fa2172060d225d434fa0b8e6de09d1dd9b497",
+      "bytes": 602
+    },
+    {
+      "path": "data/maps/MtPyre_5F/map.json",
+      "sha1": "eca093c8d8df61cca1b9fce557f21e0e815360e4",
+      "bytes": 1935
+    },
+    {
+      "path": "data/maps/MtPyre_5F/scripts.inc",
+      "sha1": "3adad473684ea761e469fef968141f4151fa1e7a",
+      "bytes": 675
+    },
+    {
+      "path": "data/maps/MtPyre_6F/map.json",
+      "sha1": "3920697afa050976775c91a8202806e0afef1cc2",
+      "bytes": 1947
+    },
+    {
+      "path": "data/maps/MtPyre_6F/scripts.inc",
+      "sha1": "0d8e5d648a922985ae05d7a5cc3cc0018668a34a",
+      "bytes": 2149
+    },
+    {
+      "path": "data/maps/MtPyre_Exterior/map.json",
+      "sha1": "18f311029f177a135b509d3c01af0762ccc701c2",
+      "bytes": 3204
+    },
+    {
+      "path": "data/maps/MtPyre_Exterior/scripts.inc",
+      "sha1": "9d8222c8fa9a5f582c6d5ecafe1ba433be250e54",
+      "bytes": 632
+    },
+    {
+      "path": "data/maps/MtPyre_Summit/map.json",
+      "sha1": "eb9d040aed670ed1a1ab1ef657d34716f4420686",
+      "bytes": 6085
+    },
+    {
+      "path": "data/maps/MtPyre_Summit/scripts.inc",
+      "sha1": "2d98d572d50cebb678d972aa421854c983329822",
+      "bytes": 19952
+    },
+    {
+      "path": "data/maps/NavelRock_B1F/map.json",
+      "sha1": "139e7d2e9d14e78a05033da75ee1b34ba7e945fc",
+      "bytes": 791
+    },
+    {
+      "path": "data/maps/NavelRock_B1F/scripts.inc",
+      "sha1": "0d5bf24e5ec3b9280b12d3b7e49aadae1dee0c3d",
+      "bytes": 37
+    },
+    {
+      "path": "data/maps/NavelRock_Bottom/map.json",
+      "sha1": "2a8a8b7d884577afda94ada009c3a04137b25ae8",
+      "bytes": 1108
+    },
+    {
+      "path": "data/maps/NavelRock_Bottom/scripts.inc",
+      "sha1": "7102a99e7846229610a261d704347488358f9702",
+      "bytes": 2240
+    },
+    {
+      "path": "data/maps/NavelRock_Down01/map.json",
+      "sha1": "329e6ab1588d7387cf3547dac0add743e24e9c16",
+      "bytes": 803
+    },
+    {
+      "path": "data/maps/NavelRock_Down01/scripts.inc",
+      "sha1": "5510dd396174ab34fbc673af842164fc813cff3b",
+      "bytes": 40
+    },
+    {
+      "path": "data/maps/NavelRock_Down02/map.json",
+      "sha1": "2c8d6293137fe5471f6b9449614d0443619891c5",
+      "bytes": 805
+    },
+    {
+      "path": "data/maps/NavelRock_Down02/scripts.inc",
+      "sha1": "24ae504d171d37d543f474e359303f50e5659c77",
+      "bytes": 40
+    },
+    {
+      "path": "data/maps/NavelRock_Down03/map.json",
+      "sha1": "b9fcb010dd99c0e3f65b3501340142f745a68be4",
+      "bytes": 805
+    },
+    {
+      "path": "data/maps/NavelRock_Down03/scripts.inc",
+      "sha1": "55d523f70e0ddb8a2a9b32afcbb68cebd7161a19",
+      "bytes": 40
+    },
+    {
+      "path": "data/maps/NavelRock_Down04/map.json",
+      "sha1": "73d68fcc54a56c03b959427658582f35e80e4e3c",
+      "bytes": 805
+    },
+    {
+      "path": "data/maps/NavelRock_Down04/scripts.inc",
+      "sha1": "947f0453b553d6f4c72376ed4d1741aa27db3270",
+      "bytes": 40
+    },
+    {
+      "path": "data/maps/NavelRock_Down05/map.json",
+      "sha1": "aa3a687c90a4c81c0016063947a2312d30f44502",
+      "bytes": 805
+    },
+    {
+      "path": "data/maps/NavelRock_Down05/scripts.inc",
+      "sha1": "5b2517782987654ab4cdc32856d07f6f375a1b38",
+      "bytes": 40
+    },
+    {
+      "path": "data/maps/NavelRock_Down06/map.json",
+      "sha1": "725df2d6cef3c68a595a31a3243ab713464cd57b",
+      "bytes": 805
+    },
+    {
+      "path": "data/maps/NavelRock_Down06/scripts.inc",
+      "sha1": "526e98c2f8497960bd8572e6b09dbe370731bf71",
+      "bytes": 40
+    },
+    {
+      "path": "data/maps/NavelRock_Down07/map.json",
+      "sha1": "6d01e2e8ef11bad7732e5e23434795d48267d273",
+      "bytes": 805
+    },
+    {
+      "path": "data/maps/NavelRock_Down07/scripts.inc",
+      "sha1": "68b4a5f9a5220439b9100af68bad6f3d30c0c721",
+      "bytes": 40
+    },
+    {
+      "path": "data/maps/NavelRock_Down08/map.json",
+      "sha1": "6a3de240c30e66d0b3a97b84188f95263a6c8675",
+      "bytes": 805
+    },
+    {
+      "path": "data/maps/NavelRock_Down08/scripts.inc",
+      "sha1": "68a9b484ec96af2f694b72b276377eae9bfa515c",
+      "bytes": 40
+    },
+    {
+      "path": "data/maps/NavelRock_Down09/map.json",
+      "sha1": "98cf8e7f0117033ee3581ffdb71bdaf361d4f598",
+      "bytes": 805
+    },
+    {
+      "path": "data/maps/NavelRock_Down09/scripts.inc",
+      "sha1": "9e31220304e9a78994a9475aa06ac1771529f044",
+      "bytes": 40
+    },
+    {
+      "path": "data/maps/NavelRock_Down10/map.json",
+      "sha1": "204db824952f62462a5a68b285486bef202626f7",
+      "bytes": 805
+    },
+    {
+      "path": "data/maps/NavelRock_Down10/scripts.inc",
+      "sha1": "c16e683607adcd31d6b7e20cead8a302d2ae77fc",
+      "bytes": 40
+    },
+    {
+      "path": "data/maps/NavelRock_Down11/map.json",
+      "sha1": "24f9cb01d3d7e083940159fa6f621dde6b3d2bee",
+      "bytes": 805
+    },
+    {
+      "path": "data/maps/NavelRock_Down11/scripts.inc",
+      "sha1": "b81b861fd42bbcb230857d74e97b7c7133e51f80",
+      "bytes": 40
+    },
+    {
+      "path": "data/maps/NavelRock_Entrance/map.json",
+      "sha1": "5d967a6a8238a3547ae4c03a69b0ba3fadc83e29",
+      "bytes": 807
+    },
+    {
+      "path": "data/maps/NavelRock_Entrance/scripts.inc",
+      "sha1": "f748d448d6be27960ee4bb079812f22e155cc109",
+      "bytes": 42
+    },
+    {
+      "path": "data/maps/NavelRock_Exterior/map.json",
+      "sha1": "9a35a5cf2557d47293314ec56e130525a4a13a70",
+      "bytes": 806
+    },
+    {
+      "path": "data/maps/NavelRock_Exterior/scripts.inc",
+      "sha1": "8276472d137d8f67af694fc72132f489c3c4930f",
+      "bytes": 187
+    },
+    {
+      "path": "data/maps/NavelRock_Fork/map.json",
+      "sha1": "1ee3cde30dade9a4af7a6cdc083a89afc326dd06",
+      "bytes": 922
+    },
+    {
+      "path": "data/maps/NavelRock_Fork/scripts.inc",
+      "sha1": "71c7495b3f3329a518afaea84260283147a41c18",
+      "bytes": 38
+    },
+    {
+      "path": "data/maps/NavelRock_Harbor/map.json",
+      "sha1": "27e42c3f2c105e8de8f5fddabee67a6c25999b18",
+      "bytes": 1484
+    },
+    {
+      "path": "data/maps/NavelRock_Harbor/scripts.inc",
+      "sha1": "1170551fea1573b893dae8127d0a2cf9259cd605",
+      "bytes": 705
+    },
+    {
+      "path": "data/maps/NavelRock_Top/map.json",
+      "sha1": "d94116c665620d434b4b8a97ce620b4b11cbabd5",
+      "bytes": 1443
+    },
+    {
+      "path": "data/maps/NavelRock_Top/scripts.inc",
+      "sha1": "9e9f84f593bf205dd39f29584bf0811e5a1438d4",
+      "bytes": 2933
+    },
+    {
+      "path": "data/maps/NavelRock_Up1/map.json",
+      "sha1": "688647a24d87c76592a41af3172426beebed9798",
+      "bytes": 794
+    },
+    {
+      "path": "data/maps/NavelRock_Up1/scripts.inc",
+      "sha1": "ca4c9c168958f50a4ff9ca3996343920bc5dd161",
+      "bytes": 37
+    },
+    {
+      "path": "data/maps/NavelRock_Up2/map.json",
+      "sha1": "5c5138dadbdcaa48246a06ddb0160f5597aebadd",
+      "bytes": 793
+    },
+    {
+      "path": "data/maps/NavelRock_Up2/scripts.inc",
+      "sha1": "231f5b078cd5d114b82ac7a2e705bd55f9d02eba",
+      "bytes": 37
+    },
+    {
+      "path": "data/maps/NavelRock_Up3/map.json",
+      "sha1": "6d237b7e08b7c5c964f093e7f7130460b2824bba",
+      "bytes": 793
+    },
+    {
+      "path": "data/maps/NavelRock_Up3/scripts.inc",
+      "sha1": "3d58e1df73d67eef13167643075cea99f9ffbcf9",
+      "bytes": 37
+    },
+    {
+      "path": "data/maps/NavelRock_Up4/map.json",
+      "sha1": "4ca84f99a629d0be4898fe6e2b5c58c6c19ef325",
+      "bytes": 793
+    },
+    {
+      "path": "data/maps/NavelRock_Up4/scripts.inc",
+      "sha1": "3e30ae3c6124e016b2c6154be954abefbb4b26fb",
+      "bytes": 37
+    },
+    {
+      "path": "data/maps/NewMauville_Entrance/map.json",
+      "sha1": "bcc1eb30c3ad8d2f4f156e4f004a27870411eb7e",
+      "bytes": 1007
+    },
+    {
+      "path": "data/maps/NewMauville_Entrance/scripts.inc",
+      "sha1": "f27dc6b4117073bcedc10e2cc744e7b01086fb95",
+      "bytes": 2212
+    },
+    {
+      "path": "data/maps/NewMauville_Inside/map.json",
+      "sha1": "32f18a7e6d35bfd09d72368f33c954b09c84cb81",
+      "bytes": 7707
+    },
+    {
+      "path": "data/maps/NewMauville_Inside/scripts.inc",
+      "sha1": "e55cd05ab8dbd71a8b15a7cf2c2dc966549467fe",
+      "bytes": 10973
+    },
+    {
+      "path": "data/maps/OldaleTown/map.json",
+      "sha1": "7697ede5777de62072903856e298259fa2bba11d",
+      "bytes": 4805
+    },
+    {
+      "path": "data/maps/OldaleTown/scripts.inc",
+      "sha1": "b8b6ade6d90e9d5b08d5d2374caa3d404506aa31",
+      "bytes": 9684
+    },
+    {
+      "path": "data/maps/OldaleTown_House1/map.json",
+      "sha1": "30fb7c52c6e44fb21c79cfea55b34e1b4cb57dd5",
+      "bytes": 1153
+    },
+    {
+      "path": "data/maps/OldaleTown_House1/scripts.inc",
+      "sha1": "414b5db9a185fe16516e0e06d1971a70afe8073e",
+      "bytes": 484
+    },
+    {
+      "path": "data/maps/OldaleTown_House2/map.json",
+      "sha1": "a47db28b68b6471257efa9741856c0e83f34cf02",
+      "bytes": 1533
+    },
+    {
+      "path": "data/maps/OldaleTown_House2/scripts.inc",
+      "sha1": "07e915dfbb29550deeb6524c266f91165d7f3b7e",
+      "bytes": 575
+    },
+    {
+      "path": "data/maps/OldaleTown_Mart/map.json",
+      "sha1": "240f26be5b4341e99fad979ba234ff2dbd7a5ca0",
+      "bytes": 1956
+    },
+    {
+      "path": "data/maps/OldaleTown_Mart/scripts.inc",
+      "sha1": "8a968880e5a4d7792fef6fe981f5856832d88170",
+      "bytes": 1739
+    },
+    {
+      "path": "data/maps/OldaleTown_PokemonCenter_1F/map.json",
+      "sha1": "7a60fb1d8ad41ec72608152e790e42f9910c95b2",
+      "bytes": 2547
+    },
+    {
+      "path": "data/maps/OldaleTown_PokemonCenter_1F/scripts.inc",
+      "sha1": "aa6fbbadeecd7b968cca77547695be5b595703f9",
+      "bytes": 2031
+    },
+    {
+      "path": "data/maps/OldaleTown_PokemonCenter_2F/map.json",
+      "sha1": "613fe8f2c75f69e5afa3b8e8ee12badedee2ffcd",
+      "bytes": 2524
+    },
+    {
+      "path": "data/maps/OldaleTown_PokemonCenter_2F/scripts.inc",
+      "sha1": "2cfb51c0d567d263856c89740e059281e24dd295",
+      "bytes": 626
+    },
+    {
+      "path": "data/maps/PacifidlogTown/map.json",
+      "sha1": "6f6de0aed6b9c3abba4aca518908507188e2f4d7",
+      "bytes": 3289
+    },
+    {
+      "path": "data/maps/PacifidlogTown/scripts.inc",
+      "sha1": "a2afe22497d0ac4c974698e76e0cda7094b4e79a",
+      "bytes": 1549
+    },
+    {
+      "path": "data/maps/PacifidlogTown_House1/map.json",
+      "sha1": "31342182f16d451a20a4ffccc33e76c1355a0375",
+      "bytes": 1569
+    },
+    {
+      "path": "data/maps/PacifidlogTown_House1/scripts.inc",
+      "sha1": "08537309384759d602a54f903ee3f58e552cdcc4",
+      "bytes": 778
+    },
+    {
+      "path": "data/maps/PacifidlogTown_House2/map.json",
+      "sha1": "2c6953285f0fa952875f1b4bf0043f8432148eb2",
+      "bytes": 1993
+    },
+    {
+      "path": "data/maps/PacifidlogTown_House2/scripts.inc",
+      "sha1": "18b89c836e0ca6b80f69fe44839d4dd2d94ef1b0",
+      "bytes": 5146
+    },
+    {
+      "path": "data/maps/PacifidlogTown_House3/map.json",
+      "sha1": "0efe7639a90de91643a7a44e60e89abee6f5ffb6",
+      "bytes": 1581
+    },
+    {
+      "path": "data/maps/PacifidlogTown_House3/scripts.inc",
+      "sha1": "ba89fc962199aede788baf3e29a8d5d208c669cb",
+      "bytes": 3059
+    },
+    {
+      "path": "data/maps/PacifidlogTown_House4/map.json",
+      "sha1": "6ed00b438a43878632c8f081ccff930adfe087ea",
+      "bytes": 1968
+    },
+    {
+      "path": "data/maps/PacifidlogTown_House4/scripts.inc",
+      "sha1": "f73026c10489d0f955542625b58858b3adf6b0f1",
+      "bytes": 1588
+    },
+    {
+      "path": "data/maps/PacifidlogTown_House5/map.json",
+      "sha1": "17508a02b7e28c4b8d4ed32d68176bf0095da9db",
+      "bytes": 1596
+    },
+    {
+      "path": "data/maps/PacifidlogTown_House5/scripts.inc",
+      "sha1": "5ae2625b0bc4883674f958e25cbfb6a31941d691",
+      "bytes": 1146
+    },
+    {
+      "path": "data/maps/PacifidlogTown_PokemonCenter_1F/map.json",
+      "sha1": "e7cea92d6000e1a98df4f8f35a0c4aa42cc10d2a",
+      "bytes": 2986
+    },
+    {
+      "path": "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.inc",
+      "sha1": "2d6c7030e320b3702ad7ff18d6f2577a69d1e76a",
+      "bytes": 1560
+    },
+    {
+      "path": "data/maps/PacifidlogTown_PokemonCenter_2F/map.json",
+      "sha1": "163ec3291a7771ed560b1d11bed1cbbbd08f5304",
+      "bytes": 2540
+    },
+    {
+      "path": "data/maps/PacifidlogTown_PokemonCenter_2F/scripts.inc",
+      "sha1": "a5e9e9decb144c0f988c2ac63983c4bc911f429b",
+      "bytes": 642
+    },
+    {
+      "path": "data/maps/PetalburgCity/map.json",
+      "sha1": "ca6092ddf12a2aeddab506e674dc3d3cd443f16d",
+      "bytes": 8572
+    },
+    {
+      "path": "data/maps/PetalburgCity/scripts.inc",
+      "sha1": "b4c5cd37e96410a5c2721d216afbe3a8ea620c87",
+      "bytes": 17346
+    },
+    {
+      "path": "data/maps/PetalburgCity_Gym/map.json",
+      "sha1": "34ba789ea4c8292423a7dd5e264f33dade8777d7",
+      "bytes": 12967
+    },
+    {
+      "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+      "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7",
+      "bytes": 55114
+    },
+    {
+      "path": "data/maps/PetalburgCity_House1/map.json",
+      "sha1": "2b08740298e1d245c88ceac1ed412a0aee4477ab",
+      "bytes": 1553
+    },
+    {
+      "path": "data/maps/PetalburgCity_House1/scripts.inc",
+      "sha1": "b89624887fb09643d8574021f58e4fdfce6a9d0f",
+      "bytes": 862
+    },
+    {
+      "path": "data/maps/PetalburgCity_House2/map.json",
+      "sha1": "1b101f09bfa8fac9dc7838becd6b743a17d4c94c",
+      "bytes": 1574
+    },
+    {
+      "path": "data/maps/PetalburgCity_House2/scripts.inc",
+      "sha1": "77db75d9a37d728b225371a6236df7e09b20b576",
+      "bytes": 713
+    },
+    {
+      "path": "data/maps/PetalburgCity_Mart/map.json",
+      "sha1": "2157d6268f73748aa61e376f99db7a13d56c7eff",
+      "bytes": 2350
+    },
+    {
+      "path": "data/maps/PetalburgCity_Mart/scripts.inc",
+      "sha1": "24d08ff30f80ab3ca9bbc615acb31bc95359ba3b",
+      "bytes": 2126
+    },
+    {
+      "path": "data/maps/PetalburgCity_PokemonCenter_1F/map.json",
+      "sha1": "9825cf5ef28de9c5a23b2ec5ba64fea9a62d8dcf",
+      "bytes": 2958
+    },
+    {
+      "path": "data/maps/PetalburgCity_PokemonCenter_1F/scripts.inc",
+      "sha1": "3355898078ce7d23572c68766ca5af49d35de75d",
+      "bytes": 3280
+    },
+    {
+      "path": "data/maps/PetalburgCity_PokemonCenter_2F/map.json",
+      "sha1": "67ec4c23278db487d2eb15d4829910e58dc07424",
+      "bytes": 2536
+    },
+    {
+      "path": "data/maps/PetalburgCity_PokemonCenter_2F/scripts.inc",
+      "sha1": "1d63deb240243ead73a54ad39126ebad6ca2b659",
+      "bytes": 638
+    },
+    {
+      "path": "data/maps/PetalburgCity_WallysHouse/map.json",
+      "sha1": "679ee949b04412149e8a9236f769bb492695d99b",
+      "bytes": 1636
+    },
+    {
+      "path": "data/maps/PetalburgCity_WallysHouse/scripts.inc",
+      "sha1": "ec42bb72f0a50cce9db9e173ec63e3e0787b8406",
+      "bytes": 4945
+    },
+    {
+      "path": "data/maps/PetalburgWoods/map.json",
+      "sha1": "67d0842207660bdef7b89d73a15eb7943073ee9a",
+      "bytes": 8131
+    },
+    {
+      "path": "data/maps/PetalburgWoods/scripts.inc",
+      "sha1": "a7a3b49731f97088b328145805430d4429326ec8",
+      "bytes": 14730
+    },
+    {
+      "path": "data/maps/RecordCorner/map.json",
+      "sha1": "e4f2e10aeeca18cc7a087f725eb854fb443be6cc",
+      "bytes": 2207
+    },
+    {
+      "path": "data/maps/RecordCorner/scripts.inc",
+      "sha1": "4ed3cb4e0149c305b43e3f9054e4823bad4cb5b0",
+      "bytes": 36
+    },
+    {
+      "path": "data/maps/Route101/map.json",
+      "sha1": "8190d44a22ce7b13ce160858bd09611117dce84d",
+      "bytes": 5200
+    },
+    {
+      "path": "data/maps/Route101/scripts.inc",
+      "sha1": "8bf41eea03b11363dfc29d02f70e66a0a3532478",
+      "bytes": 6939
+    },
+    {
+      "path": "data/maps/Route102/map.json",
+      "sha1": "43cd3bb3d666547b399ca70ade5a1deeff4d7e3f",
+      "bytes": 4528
+    },
+    {
+      "path": "data/maps/Route102/scripts.inc",
+      "sha1": "17c4403137bc871caf964a4fed8e5efc79316b34",
+      "bytes": 3323
+    },
+    {
+      "path": "data/maps/Route103/map.json",
+      "sha1": "1f8a6f5e726bb7c76e6c8bb479101490b2c1a5ae",
+      "bytes": 8746
+    },
+    {
+      "path": "data/maps/Route103/scripts.inc",
+      "sha1": "cdbe6074bf0bdfa44494ccf1457b18c3de43e0de",
+      "bytes": 11489
+    },
+    {
+      "path": "data/maps/Route104/map.json",
+      "sha1": "fbd365d3c17490dde96595712917fe8ceb5e1a7d",
+      "bytes": 17297
+    },
+    {
+      "path": "data/maps/Route104/scripts.inc",
+      "sha1": "10d25047426798be70cda2d9503387bbf8458d85",
+      "bytes": 31886
+    },
+    {
+      "path": "data/maps/Route104_MrBrineysHouse/map.json",
+      "sha1": "d72b9b2e82a27fdee3f4f736b97a873da2a6cc83",
+      "bytes": 1750
+    },
+    {
+      "path": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+      "sha1": "1685496df25ec35fb97de14e44b3ea41b1d1c6db",
+      "bytes": 5948
+    },
+    {
+      "path": "data/maps/Route104_PrettyPetalFlowerShop/map.json",
+      "sha1": "542967c73d7511b0e176ad552b7a077710b6a2e3",
+      "bytes": 2081
+    },
+    {
+      "path": "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc",
+      "sha1": "85421f76af3e2f834a13d611b9a986423e5c93b8",
+      "bytes": 3622
+    },
+    {
+      "path": "data/maps/Route104_Prototype/map.json",
+      "sha1": "88d65b9ec3539e4263565137f880d5c78d1c480a",
+      "bytes": 527
+    },
+    {
+      "path": "data/maps/Route104_Prototype/scripts.inc",
+      "sha1": "0e3159c4f7d07430e2ce96c405be7d8c259ed946",
+      "bytes": 42
+    },
+    {
+      "path": "data/maps/Route104_PrototypePrettyPetalFlowerShop/map.json",
+      "sha1": "0851bbd3151701425c3ae47e1657cbbed5df879c",
+      "bytes": 588
+    },
+    {
+      "path": "data/maps/Route104_PrototypePrettyPetalFlowerShop/scripts.inc",
+      "sha1": "31253c791866de69f69378daf9348e582410f374",
+      "bytes": 63
+    },
+    {
+      "path": "data/maps/Route105/map.json",
+      "sha1": "079b5626bd4bf8964ba8c6ea38e06705daaaefac",
+      "bytes": 4303
+    },
+    {
+      "path": "data/maps/Route105/scripts.inc",
+      "sha1": "fca1ae319346cb625967baf011ba6f8b0e2fb01a",
+      "bytes": 3760
+    },
+    {
+      "path": "data/maps/Route106/map.json",
+      "sha1": "abf7343ff3b946d694c71cf3c2f2409b1e153c5f",
+      "bytes": 3469
+    },
+    {
+      "path": "data/maps/Route106/scripts.inc",
+      "sha1": "a209a44ee2510b2fc73442d6137996f599dae676",
+      "bytes": 1622
+    },
+    {
+      "path": "data/maps/Route107/map.json",
+      "sha1": "b7e9ab54167c1386aedfbb06805624227a3eafde",
+      "bytes": 3355
+    },
+    {
+      "path": "data/maps/Route107/scripts.inc",
+      "sha1": "8d743da872d9be8742fa574ea07deaea71d39b1c",
+      "bytes": 1977
+    },
+    {
+      "path": "data/maps/Route108/map.json",
+      "sha1": "16be6eb309773730b50b68cb7db084bbfb16d8bf",
+      "bytes": 3701
+    },
+    {
+      "path": "data/maps/Route108/scripts.inc",
+      "sha1": "1a6cf722c4ab0951d224d753da9f7fca73caf226",
+      "bytes": 1737
+    },
+    {
+      "path": "data/maps/Route109/map.json",
+      "sha1": "117eb045095e0edf5185c707142024988e3284ce",
+      "bytes": 11559
+    },
+    {
+      "path": "data/maps/Route109/scripts.inc",
+      "sha1": "7b7ddbfc58bd8a1cc6ebeaa13e2d754df362f425",
+      "bytes": 15526
+    },
+    {
+      "path": "data/maps/Route109_SeashoreHouse/map.json",
+      "sha1": "2ca49f80c6aafb75ff0dead58f821265a513a625",
+      "bytes": 2344
+    },
+    {
+      "path": "data/maps/Route109_SeashoreHouse/scripts.inc",
+      "sha1": "e25b82298342bb772f517727cec07c201daa316e",
+      "bytes": 6187
+    },
+    {
+      "path": "data/maps/Route110/map.json",
+      "sha1": "8a0d70f41dabc8b115727a1fccde79f1c803c9e1",
+      "bytes": 21015
+    },
+    {
+      "path": "data/maps/Route110/scripts.inc",
+      "sha1": "ee9846425d6a96c03ac988decb3c48ffbd098f22",
+      "bytes": 29252
+    },
+    {
+      "path": "data/maps/Route110_SeasideCyclingRoadNorthEntrance/map.json",
+      "sha1": "69ca7a6dc018036e4157483c551d1c83ff82c16a",
+      "bytes": 1950
+    },
+    {
+      "path": "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.inc",
+      "sha1": "47c0f318baf7ac84ae014f5bbe6a3bb198670c0e",
+      "bytes": 2280
+    },
+    {
+      "path": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/map.json",
+      "sha1": "16577218e1c31086f8de85e1ec5a356ac231ac39",
+      "bytes": 1950
+    },
+    {
+      "path": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.inc",
+      "sha1": "76a2b9429a0b6a610f3225434b5a09de5ae8146a",
+      "bytes": 1535
+    },
+    {
+      "path": "data/maps/Route110_TrickHouseCorridor/map.json",
+      "sha1": "86722277fab98b678d341aee3e1a51d9279d1e90",
+      "bytes": 1134
+    },
+    {
+      "path": "data/maps/Route110_TrickHouseCorridor/scripts.inc",
+      "sha1": "e2098649f2a3b22c538c3bf8192f0cd3cb57a283",
+      "bytes": 225
+    },
+    {
+      "path": "data/maps/Route110_TrickHouseEnd/map.json",
+      "sha1": "4aae9a518aabdc7632ab655e56fe0c80b12f25b7",
+      "bytes": 1693
+    },
+    {
+      "path": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+      "sha1": "3b39ac1484a417dc8392e9b8712bc29e12891169",
+      "bytes": 13364
+    },
+    {
+      "path": "data/maps/Route110_TrickHouseEntrance/map.json",
+      "sha1": "ea068d81e97ce19c6ac5826131af9c5e6e55b1d8",
+      "bytes": 2593
+    },
+    {
+      "path": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+      "sha1": "9367efc136143832c1697fbcc61fbb296269d396",
+      "bytes": 31357
+    },
+    {
+      "path": "data/maps/Route110_TrickHousePuzzle1/map.json",
+      "sha1": "1412bf3bf19f4ea965e946427d5db18ac2248a92",
+      "bytes": 7013
+    },
+    {
+      "path": "data/maps/Route110_TrickHousePuzzle1/scripts.inc",
+      "sha1": "04ef2232907c7bc5c7540440a8309dccb4f2dd2e",
+      "bytes": 2748
+    },
+    {
+      "path": "data/maps/Route110_TrickHousePuzzle2/map.json",
+      "sha1": "d40e5f4d6ff2fe23cd988fa8f4458a63e53a6215",
+      "bytes": 4086
+    },
+    {
+      "path": "data/maps/Route110_TrickHousePuzzle2/scripts.inc",
+      "sha1": "41c38a9d944fbd502fad75a909365962a336ea0f",
+      "bytes": 4703
+    },
+    {
+      "path": "data/maps/Route110_TrickHousePuzzle3/map.json",
+      "sha1": "abbedc7cb32adc7c0cc02a952eeec9d58ade0fa3",
+      "bytes": 4842
+    },
+    {
+      "path": "data/maps/Route110_TrickHousePuzzle3/scripts.inc",
+      "sha1": "794d221faf5610fdf7f5ce68289b1fbabe859a9b",
+      "bytes": 17594
+    },
+    {
+      "path": "data/maps/Route110_TrickHousePuzzle4/map.json",
+      "sha1": "f4133a0cdc58e9fbda21ec9ed0c75624aadb838e",
+      "bytes": 6738
+    },
+    {
+      "path": "data/maps/Route110_TrickHousePuzzle4/scripts.inc",
+      "sha1": "eb33f28b7301e502843672a1bcbd3b768312b2e2",
+      "bytes": 2501
+    },
+    {
+      "path": "data/maps/Route110_TrickHousePuzzle5/map.json",
+      "sha1": "997a1a0aeaa25dcdb447704587c9137fe7aa475f",
+      "bytes": 8122
+    },
+    {
+      "path": "data/maps/Route110_TrickHousePuzzle5/scripts.inc",
+      "sha1": "aed417cdce03cd64e06d7356a32853075b54ce39",
+      "bytes": 36748
+    },
+    {
+      "path": "data/maps/Route110_TrickHousePuzzle6/map.json",
+      "sha1": "fd87d197b139e33a470bee2fc4d24d946768d813",
+      "bytes": 2820
+    },
+    {
+      "path": "data/maps/Route110_TrickHousePuzzle6/scripts.inc",
+      "sha1": "21a5992162ee4d9033d914af568ef8472d84c843",
+      "bytes": 3196
+    },
+    {
+      "path": "data/maps/Route110_TrickHousePuzzle7/map.json",
+      "sha1": "aa644cdf1b3043a676d13234dceefbb61d8fd8e3",
+      "bytes": 6989
+    },
+    {
+      "path": "data/maps/Route110_TrickHousePuzzle7/scripts.inc",
+      "sha1": "d0faf89c20b52e4b3f4ef5191cdd1e42d9c73feb",
+      "bytes": 14174
+    },
+    {
+      "path": "data/maps/Route110_TrickHousePuzzle8/map.json",
+      "sha1": "7320287110034f3f404551af8ed0525dfa0ac35f",
+      "bytes": 2805
+    },
+    {
+      "path": "data/maps/Route110_TrickHousePuzzle8/scripts.inc",
+      "sha1": "f94444749573ed3ddadd71757d68f34093f97ad2",
+      "bytes": 2522
+    },
+    {
+      "path": "data/maps/Route111/map.json",
+      "sha1": "3161c43b45be9e3c9263e97cf27cb9c95a592a3a",
+      "bytes": 30111
+    },
+    {
+      "path": "data/maps/Route111/scripts.inc",
+      "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136",
+      "bytes": 23098
+    },
+    {
+      "path": "data/maps/Route111_OldLadysRestStop/map.json",
+      "sha1": "d32f68a8ac6bc01b2b49b6df14315447c4439bff",
+      "bytes": 1172
+    },
+    {
+      "path": "data/maps/Route111_OldLadysRestStop/scripts.inc",
+      "sha1": "8f697cdc3624ba6bc26589cc0a0d5649ae645122",
+      "bytes": 1736
+    },
+    {
+      "path": "data/maps/Route111_WinstrateFamilysHouse/map.json",
+      "sha1": "3617d7ad218146b87b106f63851dbbfe7bd64681",
+      "bytes": 2566
+    },
+    {
+      "path": "data/maps/Route111_WinstrateFamilysHouse/scripts.inc",
+      "sha1": "263fea63e58597b7384c5c9ba935a901a00611b0",
+      "bytes": 3881
+    },
+    {
+      "path": "data/maps/Route112/map.json",
+      "sha1": "b661693767b6f599786f2403d78ab8974913a097",
+      "bytes": 7734
+    },
+    {
+      "path": "data/maps/Route112/scripts.inc",
+      "sha1": "2e1afc791f1e05fe9c3dcec0234b3a587c6a64fc",
+      "bytes": 4578
+    },
+    {
+      "path": "data/maps/Route112_CableCarStation/map.json",
+      "sha1": "5025865ea0b3a53d1ceb4d79e245c98fcd71aede",
+      "bytes": 1589
+    },
+    {
+      "path": "data/maps/Route112_CableCarStation/scripts.inc",
+      "sha1": "52163a924cedb2545f8ddfd323e7075d7bcc20d6",
+      "bytes": 2898
+    },
+    {
+      "path": "data/maps/Route113/map.json",
+      "sha1": "4d5b412e7056cb5dda1085ac70fb8a367cb400c1",
+      "bytes": 11433
+    },
+    {
+      "path": "data/maps/Route113/scripts.inc",
+      "sha1": "238e4819cabf545bec77dae988b46382266ced10",
+      "bytes": 5375
+    },
+    {
+      "path": "data/maps/Route113_GlassWorkshop/map.json",
+      "sha1": "937eaee9bf50190017dd23e37c1dc7ad9e887664",
+      "bytes": 1554
+    },
+    {
+      "path": "data/maps/Route113_GlassWorkshop/scripts.inc",
+      "sha1": "6a7101e66439e9abedcc55c8fc60b573807258b0",
+      "bytes": 14498
+    },
+    {
+      "path": "data/maps/Route114/map.json",
+      "sha1": "29d60125e847150e48178ca05f36f1470cb0211c",
+      "bytes": 13710
+    },
+    {
+      "path": "data/maps/Route114/scripts.inc",
+      "sha1": "0c57a7112b8feadf446551150c5dcc13761f8eeb",
+      "bytes": 6782
+    },
+    {
+      "path": "data/maps/Route114_FossilManiacsHouse/map.json",
+      "sha1": "6214af0f6f375671e794c3bb307cf12e347419e8",
+      "bytes": 2214
+    },
+    {
+      "path": "data/maps/Route114_FossilManiacsHouse/scripts.inc",
+      "sha1": "95730e17fb1dc32e597d4ae621cec76ec0f7d421",
+      "bytes": 1866
+    },
+    {
+      "path": "data/maps/Route114_FossilManiacsTunnel/map.json",
+      "sha1": "86268b956d755367739c3557245a0c9596d8a4cf",
+      "bytes": 1888
+    },
+    {
+      "path": "data/maps/Route114_FossilManiacsTunnel/scripts.inc",
+      "sha1": "ecd010d2086a8019284fa4a41a8a3e7e67275e83",
+      "bytes": 3413
+    },
+    {
+      "path": "data/maps/Route114_LanettesHouse/map.json",
+      "sha1": "a32f9af8e9fee2baa4e68ea69dff9c176c0c7c89",
+      "bytes": 1813
+    },
+    {
+      "path": "data/maps/Route114_LanettesHouse/scripts.inc",
+      "sha1": "91f2126eb51b441d0e51b50e9d41b4e45bf67494",
+      "bytes": 3747
+    },
+    {
+      "path": "data/maps/Route115/map.json",
+      "sha1": "b6c6b6d8e02d782dfc66ddae4e4cf9145461193d",
+      "bytes": 12281
+    },
+    {
+      "path": "data/maps/Route115/scripts.inc",
+      "sha1": "553919bcf042cd676325f5ea73ef321b081d0718",
+      "bytes": 5145
+    },
+    {
+      "path": "data/maps/Route116/map.json",
+      "sha1": "4917a04a095314d28f76d7b4807e78bce1251f9a",
+      "bytes": 14570
+    },
+    {
+      "path": "data/maps/Route116/scripts.inc",
+      "sha1": "414d7bb5c4246d6317dd973dc816983566be8cc6",
+      "bytes": 14809
+    },
+    {
+      "path": "data/maps/Route116_TunnelersRestHouse/map.json",
+      "sha1": "8cf753cfc766fad16331c25029b818100d00a61b",
+      "bytes": 1992
+    },
+    {
+      "path": "data/maps/Route116_TunnelersRestHouse/scripts.inc",
+      "sha1": "cf1b26d5655363e9dd7eded558cfb3a4486c3aa4",
+      "bytes": 2272
+    },
+    {
+      "path": "data/maps/Route117/map.json",
+      "sha1": "c7c9af5ecd59a144046f8ae0ea2b93cb235f5110",
+      "bytes": 10765
+    },
+    {
+      "path": "data/maps/Route117/scripts.inc",
+      "sha1": "9c87422ff2d4ac9ebaa7fbe97f86e8cb16c2b92b",
+      "bytes": 6894
+    },
+    {
+      "path": "data/maps/Route117_PokemonDayCare/map.json",
+      "sha1": "40e0924ccae397fdf65bada33f381af682eec9fe",
+      "bytes": 1232
+    },
+    {
+      "path": "data/maps/Route117_PokemonDayCare/scripts.inc",
+      "sha1": "0411fad1c1145cec06904af4852341e3b4d5e048",
+      "bytes": 205
+    },
+    {
+      "path": "data/maps/Route118/map.json",
+      "sha1": "e722f5845bad96db2f079abf577a8918ccdf2db5",
+      "bytes": 11634
+    },
+    {
+      "path": "data/maps/Route118/scripts.inc",
+      "sha1": "5a4868d1490a62e62c6e29a255fc938bad9fa2cd",
+      "bytes": 8720
+    },
+    {
+      "path": "data/maps/Route119/map.json",
+      "sha1": "1c29f1dc3bee58d2813df5307a7b986c95776bd3",
+      "bytes": 24504
+    },
+    {
+      "path": "data/maps/Route119/scripts.inc",
+      "sha1": "576fe3fab09726df20b1bbf3016bc5306f0e0f3d",
+      "bytes": 18128
+    },
+    {
+      "path": "data/maps/Route119_House/map.json",
+      "sha1": "bddc81b2d927f0991fcc11bf3c81b05613a9ae10",
+      "bytes": 3419
+    },
+    {
+      "path": "data/maps/Route119_House/scripts.inc",
+      "sha1": "144c390836ba1613ec204055bbb833f3157d5624",
+      "bytes": 647
+    },
+    {
+      "path": "data/maps/Route119_WeatherInstitute_1F/map.json",
+      "sha1": "85fdcb3adca1f8a298d81a58ee7017b2e9753024",
+      "bytes": 3966
+    },
+    {
+      "path": "data/maps/Route119_WeatherInstitute_1F/scripts.inc",
+      "sha1": "c66e07de5643dfd9d0b7ced5e87ea02257875e77",
+      "bytes": 4772
+    },
+    {
+      "path": "data/maps/Route119_WeatherInstitute_2F/map.json",
+      "sha1": "c96e589d9d35adb4450bb9401ee99c2215b2af00",
+      "bytes": 4340
+    },
+    {
+      "path": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+      "sha1": "fb62e5a84003aa6247f1e7fe6ea409ec86ac92cc",
+      "bytes": 12511
+    },
+    {
+      "path": "data/maps/Route120/map.json",
+      "sha1": "65935e19bb6f8e23506c7e2e85cef33433f4e2d7",
+      "bytes": 23480
+    },
+    {
+      "path": "data/maps/Route120/scripts.inc",
+      "sha1": "c3ab570e7c5b1ea2c74415d703646f5a362564ad",
+      "bytes": 14569
+    },
+    {
+      "path": "data/maps/Route121/map.json",
+      "sha1": "f6697affa29d20f09f078a6a6de0c1d04016f228",
+      "bytes": 14728
+    },
+    {
+      "path": "data/maps/Route121/scripts.inc",
+      "sha1": "25fbd3a3d48b51dbfcf569f03ff4f7001d429ac3",
+      "bytes": 5641
+    },
+    {
+      "path": "data/maps/Route121_SafariZoneEntrance/map.json",
+      "sha1": "011871899a2349069da4dd5c61d62b8a6425beec",
+      "bytes": 2659
+    },
+    {
+      "path": "data/maps/Route121_SafariZoneEntrance/scripts.inc",
+      "sha1": "6a3d6039da49b2973bb2acbe14884a453fef9c72",
+      "bytes": 4265
+    },
+    {
+      "path": "data/maps/Route122/map.json",
+      "sha1": "c813398d325d07c00906655262fd0071eec1085d",
+      "bytes": 801
+    },
+    {
+      "path": "data/maps/Route122/scripts.inc",
+      "sha1": "790a8bf2769be11a205f2c5c6d459f6e5e58f9c7",
+      "bytes": 32
+    },
+    {
+      "path": "data/maps/Route123/map.json",
+      "sha1": "5f30055b99ad151e31bfbdc0bdab9776e6da6471",
+      "bytes": 22549
+    },
+    {
+      "path": "data/maps/Route123/scripts.inc",
+      "sha1": "6ee451eb8a5f0717aed9ff7e71878f845e9727c9",
+      "bytes": 6658
+    },
+    {
+      "path": "data/maps/Route123_BerryMastersHouse/map.json",
+      "sha1": "778a54a89dafe951e7e20b7816de8e63d8034560",
+      "bytes": 1578
+    },
+    {
+      "path": "data/maps/Route123_BerryMastersHouse/scripts.inc",
+      "sha1": "9a0e063a546e4fa501fad1644e1e6356f5e7917a",
+      "bytes": 5503
+    },
+    {
+      "path": "data/maps/Route124/map.json",
+      "sha1": "b87e235602d2cbbdd6a2b66d5ca70a27ecd0486d",
+      "bytes": 5989
+    },
+    {
+      "path": "data/maps/Route124/scripts.inc",
+      "sha1": "605960b79a928e3220855307b2a2ffe4c134fa65",
+      "bytes": 3723
+    },
+    {
+      "path": "data/maps/Route124_DivingTreasureHuntersHouse/map.json",
+      "sha1": "e76f06d6c2d488a3e04e3dfb4cf1b32917ef9b29",
+      "bytes": 1464
+    },
+    {
+      "path": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+      "sha1": "e787b98bef4dd91776e97f180a62a1c98c92003e",
+      "bytes": 15083
+    },
+    {
+      "path": "data/maps/Route125/map.json",
+      "sha1": "83e56273adf242e5b4620eb7a7b0dcd8a9f2ec35",
+      "bytes": 5351
+    },
+    {
+      "path": "data/maps/Route125/scripts.inc",
+      "sha1": "3a3148d4b2c58b8be1e8e54672b7693cb2efc4d1",
+      "bytes": 3292
+    },
+    {
+      "path": "data/maps/Route126/map.json",
+      "sha1": "081ed9d4b80f8815130eb28c769d6400d15680c2",
+      "bytes": 4265
+    },
+    {
+      "path": "data/maps/Route126/scripts.inc",
+      "sha1": "d5025a30fc24eea63ccab29344d229eadf43769b",
+      "bytes": 2215
+    },
+    {
+      "path": "data/maps/Route127/map.json",
+      "sha1": "1888c4a6cdbeaad8f03b0f0d0a7120ea72599971",
+      "bytes": 5837
+    },
+    {
+      "path": "data/maps/Route127/scripts.inc",
+      "sha1": "5e6db9ccb1bc4c94fbe7ac561ad0da7edd28720c",
+      "bytes": 3015
+    },
+    {
+      "path": "data/maps/Route128/map.json",
+      "sha1": "20b9cdab55e7f5ce9f2b0ff580fe5ab2aab22d74",
+      "bytes": 5354
+    },
+    {
+      "path": "data/maps/Route128/scripts.inc",
+      "sha1": "8c3eb5fe541a802a44ec8805e051fe2de0e552f6",
+      "bytes": 8848
+    },
+    {
+      "path": "data/maps/Route129/map.json",
+      "sha1": "273e4f4c2eb5d76dffe34761f5260d84705c704d",
+      "bytes": 2720
+    },
+    {
+      "path": "data/maps/Route129/scripts.inc",
+      "sha1": "dafae748e3f67cdad094b16d6d5b95c90cbfcb13",
+      "bytes": 2082
+    },
+    {
+      "path": "data/maps/Route130/map.json",
+      "sha1": "abc9139221ccdefeecc439e0c49f5ba254873b2b",
+      "bytes": 2276
+    },
+    {
+      "path": "data/maps/Route130/scripts.inc",
+      "sha1": "a9ba0823534cb148395846a36fd5c18d2207922a",
+      "bytes": 1640
+    },
+    {
+      "path": "data/maps/Route131/map.json",
+      "sha1": "b6ed31b50f6e2b6e48e745d6893243a34d8447f4",
+      "bytes": 3914
+    },
+    {
+      "path": "data/maps/Route131/scripts.inc",
+      "sha1": "468c53c849959214aa7f6a5ae109e4109f3491c2",
+      "bytes": 1980
+    },
+    {
+      "path": "data/maps/Route132/map.json",
+      "sha1": "64064a4a3762ea092525be5129f1beb44d17fdf4",
+      "bytes": 4561
+    },
+    {
+      "path": "data/maps/Route132/scripts.inc",
+      "sha1": "defe5d4476b0de9ea0ee085a154a7e2c20c8ec33",
+      "bytes": 1507
+    },
+    {
+      "path": "data/maps/Route133/map.json",
+      "sha1": "89de5e71dce2c0e572dc4d67c1760a6e702b251f",
+      "bytes": 4570
+    },
+    {
+      "path": "data/maps/Route133/scripts.inc",
+      "sha1": "f4bb8f5ba693dd21f2f9e9030fe5eb4e301288ee",
+      "bytes": 1312
+    },
+    {
+      "path": "data/maps/Route134/map.json",
+      "sha1": "4d5c67220079d78c0768d9d30666342feaf4ce98",
+      "bytes": 4930
+    },
+    {
+      "path": "data/maps/Route134/scripts.inc",
+      "sha1": "11ceab276decd5668ebaeb1c0249bcd11554123e",
+      "bytes": 1792
+    },
+    {
+      "path": "data/maps/RustboroCity/map.json",
+      "sha1": "89776bb64fdef8d9171b677d4f7ebeadd02a5674",
+      "bytes": 15460
+    },
+    {
+      "path": "data/maps/RustboroCity/scripts.inc",
+      "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10",
+      "bytes": 39997
+    },
+    {
+      "path": "data/maps/RustboroCity_CuttersHouse/map.json",
+      "sha1": "0c46f9bb610f768a172e0d9065ef1b6af882e4bd",
+      "bytes": 1601
+    },
+    {
+      "path": "data/maps/RustboroCity_CuttersHouse/scripts.inc",
+      "sha1": "0cff426e47a716cd6d3863a87b4d99ec7a72a0b9",
+      "bytes": 1810
+    },
+    {
+      "path": "data/maps/RustboroCity_DevonCorp_1F/map.json",
+      "sha1": "660aa9e8a509fcbf78ef7d180bbb79857b7b7c2e",
+      "bytes": 2635
+    },
+    {
+      "path": "data/maps/RustboroCity_DevonCorp_1F/scripts.inc",
+      "sha1": "c37d7b38d1160c2692286fc6de96377169c9e8d1",
+      "bytes": 5290
+    },
+    {
+      "path": "data/maps/RustboroCity_DevonCorp_2F/map.json",
+      "sha1": "5f95c5cc7ec1dd2612789f2ffb210533edab2dfa",
+      "bytes": 3312
+    },
+    {
+      "path": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+      "sha1": "7e0aa6a4df50ead64287578a24ba19b07cafbb02",
+      "bytes": 14405
+    },
+    {
+      "path": "data/maps/RustboroCity_DevonCorp_3F/map.json",
+      "sha1": "83d29bf466c85ff84e136a0487cab8887890d38a",
+      "bytes": 2402
+    },
+    {
+      "path": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+      "sha1": "c9490be6666cd7ea155cae31641c765560806127",
+      "bytes": 10053
+    },
+    {
+      "path": "data/maps/RustboroCity_Flat1_1F/map.json",
+      "sha1": "d203491c90c536929733c4f52e8fa8f7c6c519ed",
+      "bytes": 1702
+    },
+    {
+      "path": "data/maps/RustboroCity_Flat1_1F/scripts.inc",
+      "sha1": "ba2888194a5804b938a63bae6ae086f7373227c1",
+      "bytes": 495
+    },
+    {
+      "path": "data/maps/RustboroCity_Flat1_2F/map.json",
+      "sha1": "65d9930b788c4b89b851b60d494cf1e252fe7e94",
+      "bytes": 3812
+    },
+    {
+      "path": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+      "sha1": "bce61defe394f3175dd583157b086f1687d0ac6f",
+      "bytes": 6531
+    },
+    {
+      "path": "data/maps/RustboroCity_Flat2_1F/map.json",
+      "sha1": "735b2295fdf08e5bec3c8abf6f35a9d4d4d312dc",
+      "bytes": 1713
+    },
+    {
+      "path": "data/maps/RustboroCity_Flat2_1F/scripts.inc",
+      "sha1": "08ffa0e2b76974081d243eb8044efb0d1cfc7d5a",
+      "bytes": 553
+    },
+    {
+      "path": "data/maps/RustboroCity_Flat2_2F/map.json",
+      "sha1": "4c5f45300e611e9c19f4251e0a8dd5f07ff4927f",
+      "bytes": 1605
+    },
+    {
+      "path": "data/maps/RustboroCity_Flat2_2F/scripts.inc",
+      "sha1": "3f278233f807a1de34242578a0c22234655ecef0",
+      "bytes": 1209
+    },
+    {
+      "path": "data/maps/RustboroCity_Flat2_3F/map.json",
+      "sha1": "1e57e03b4dbd2dd0db61e8154ddccdd191d50e1f",
+      "bytes": 1476
+    },
+    {
+      "path": "data/maps/RustboroCity_Flat2_3F/scripts.inc",
+      "sha1": "4cd1a818230ac043cd553d6079be42516e4f1832",
+      "bytes": 582
+    },
+    {
+      "path": "data/maps/RustboroCity_Gym/map.json",
+      "sha1": "3832f5ae168f3035dc757eacc22ca427c5b16726",
+      "bytes": 3093
+    },
+    {
+      "path": "data/maps/RustboroCity_Gym/scripts.inc",
+      "sha1": "e0aa9de4fed612674104e48c7646854400dcecde",
+      "bytes": 9954
+    },
+    {
+      "path": "data/maps/RustboroCity_House1/map.json",
+      "sha1": "e5d3a289e40f1fd300314c0577e5a4bd7e748c47",
+      "bytes": 1555
+    },
+    {
+      "path": "data/maps/RustboroCity_House1/scripts.inc",
+      "sha1": "40e0730e3208fa5cccc515a948ef43358100668f",
+      "bytes": 2674
+    },
+    {
+      "path": "data/maps/RustboroCity_House2/map.json",
+      "sha1": "d170b3fb81a7b97f206a8880f8daed9311c0b832",
+      "bytes": 1568
+    },
+    {
+      "path": "data/maps/RustboroCity_House2/scripts.inc",
+      "sha1": "c036376f7c01fb41b5259c5cf418cfc9ae7672fc",
+      "bytes": 620
+    },
+    {
+      "path": "data/maps/RustboroCity_House3/map.json",
+      "sha1": "581ec1fcf40f5e3348443241fdb217587f0147c7",
+      "bytes": 1947
+    },
+    {
+      "path": "data/maps/RustboroCity_House3/scripts.inc",
+      "sha1": "2987b036f5c75ce4fbcdcba97c183d01d873d88b",
+      "bytes": 1035
+    },
+    {
+      "path": "data/maps/RustboroCity_Mart/map.json",
+      "sha1": "344ee325eaf219ff8634808205c65d56027d0525",
+      "bytes": 2361
+    },
+    {
+      "path": "data/maps/RustboroCity_Mart/scripts.inc",
+      "sha1": "064cba37df0c93452bb5e6cc75752460d861c58d",
+      "bytes": 2238
+    },
+    {
+      "path": "data/maps/RustboroCity_PokemonCenter_1F/map.json",
+      "sha1": "873a027c62495c888fc2b767441343480ce00088",
+      "bytes": 2563
+    },
+    {
+      "path": "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc",
+      "sha1": "83e7f64af75d58f3a58fed2f76931a1ea46151b5",
+      "bytes": 1524
+    },
+    {
+      "path": "data/maps/RustboroCity_PokemonCenter_2F/map.json",
+      "sha1": "e5d8b3a996661125d64d455ded8a0f71196b7c31",
+      "bytes": 2532
+    },
+    {
+      "path": "data/maps/RustboroCity_PokemonCenter_2F/scripts.inc",
+      "sha1": "45cedcf40bee738468d2a0977aa8fb2936069079",
+      "bytes": 634
+    },
+    {
+      "path": "data/maps/RustboroCity_PokemonSchool/map.json",
+      "sha1": "bf4ca29432926880aeba032b3d1065c6dc8aa2a0",
+      "bytes": 4657
+    },
+    {
+      "path": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+      "sha1": "155fc7f1cee833cb06df85a407e5f98f216a928e",
+      "bytes": 11944
+    },
+    {
+      "path": "data/maps/RusturfTunnel/map.json",
+      "sha1": "5da4b6f65aac47a3b5c84f9bc6aa687cf273cc0e",
+      "bytes": 6302
+    },
+    {
+      "path": "data/maps/RusturfTunnel/scripts.inc",
+      "sha1": "76035185b0aabddf11657305417168db4c1bb93d",
+      "bytes": 14564
+    },
+    {
+      "path": "data/maps/SSTidalCorridor/map.json",
+      "sha1": "b330f8ff48c5ac9c3983f0b2fc6d7328918f83eb",
+      "bytes": 6149
+    },
+    {
+      "path": "data/maps/SSTidalCorridor/scripts.inc",
+      "sha1": "02d0cfdd4cf17b1fcf50d838485aaf7013da6b13",
+      "bytes": 10545
+    },
+    {
+      "path": "data/maps/SSTidalLowerDeck/map.json",
+      "sha1": "fc8250989dba2c0ab661143cbd01f509c5a7679c",
+      "bytes": 1658
+    },
+    {
+      "path": "data/maps/SSTidalLowerDeck/scripts.inc",
+      "sha1": "da5c83687e72d620633c70321ab42f96f4e4f877",
+      "bytes": 1321
+    },
+    {
+      "path": "data/maps/SSTidalRooms/map.json",
+      "sha1": "3bc45a291c2198a08cf2b16f52e85818f574d17d",
+      "bytes": 5552
+    },
+    {
+      "path": "data/maps/SSTidalRooms/scripts.inc",
+      "sha1": "1953df649981f24c9b39a0b7b26b1ed8339d7249",
+      "bytes": 5584
+    },
+    {
+      "path": "data/maps/SafariZone_North/map.json",
+      "sha1": "eec9f9292a8f681530989070ea8a3e08eaaf662d",
+      "bytes": 4324
+    },
+    {
+      "path": "data/maps/SafariZone_North/scripts.inc",
+      "sha1": "586ef44a1e3b673885079eee1bb5940035e46d6e",
+      "bytes": 226
+    },
+    {
+      "path": "data/maps/SafariZone_Northeast/map.json",
+      "sha1": "94217153e5e24f284b425776e2af3ec3ac478483",
+      "bytes": 4614
+    },
+    {
+      "path": "data/maps/SafariZone_Northeast/scripts.inc",
+      "sha1": "04074b4d90bd9301defe227d6665fb371f92648a",
+      "bytes": 121
+    },
+    {
+      "path": "data/maps/SafariZone_Northwest/map.json",
+      "sha1": "2bd0f3eedc67eda7a40eb2cd318c7585c0b2cce4",
+      "bytes": 1554
+    },
+    {
+      "path": "data/maps/SafariZone_Northwest/scripts.inc",
+      "sha1": "67ee949daeb8688abd55b0ea21f6e3152814dbcd",
+      "bytes": 139
+    },
+    {
+      "path": "data/maps/SafariZone_RestHouse/map.json",
+      "sha1": "f9d530c16cf9883314574066aeb1050946f664c1",
+      "bytes": 1976
+    },
+    {
+      "path": "data/maps/SafariZone_RestHouse/scripts.inc",
+      "sha1": "2a98d30e8a7fd2284d3fec505f8b8245ade69d7b",
+      "bytes": 357
+    },
+    {
+      "path": "data/maps/SafariZone_South/map.json",
+      "sha1": "8baf48e1259b4314bb0edbd7f5b208949a5855ac",
+      "bytes": 3427
+    },
+    {
+      "path": "data/maps/SafariZone_South/scripts.inc",
+      "sha1": "f646b8fd9a41bcca9341c62dd81202b659f66065",
+      "bytes": 4163
+    },
+    {
+      "path": "data/maps/SafariZone_Southeast/map.json",
+      "sha1": "e5c5f65c091a5136a9ac0e47e1102f231a6339ae",
+      "bytes": 3161
+    },
+    {
+      "path": "data/maps/SafariZone_Southeast/scripts.inc",
+      "sha1": "993496462c7965abc3cf524812c2b6e6a36799bd",
+      "bytes": 121
+    },
+    {
+      "path": "data/maps/SafariZone_Southwest/map.json",
+      "sha1": "0dc01d17aa691ffcb671d595b86c03379047fe10",
+      "bytes": 1902
+    },
+    {
+      "path": "data/maps/SafariZone_Southwest/scripts.inc",
+      "sha1": "a5be000aa976a457a9b5a14a769497bbed5480ad",
+      "bytes": 259
+    },
+    {
+      "path": "data/maps/ScorchedSlab/map.json",
+      "sha1": "5baa71b2abf44bd5419adeee7b4cfd1e10d5336c",
+      "bytes": 1073
+    },
+    {
+      "path": "data/maps/ScorchedSlab/scripts.inc",
+      "sha1": "54c4a681c065bcbb384a6ebf7c1062b42f1a1230",
+      "bytes": 170
+    },
+    {
+      "path": "data/maps/SeafloorCavern_Entrance/map.json",
+      "sha1": "26558c228dcd913112067322d6441727f233be54",
+      "bytes": 1324
+    },
+    {
+      "path": "data/maps/SeafloorCavern_Entrance/scripts.inc",
+      "sha1": "8c330241299cc7a79f577ced9c7a80a8f74605ab",
+      "bytes": 3449
+    },
+    {
+      "path": "data/maps/SeafloorCavern_Room1/map.json",
+      "sha1": "1fe3ecf9cbd57d3e51c2b689b1886cba884fa4ab",
+      "bytes": 2999
+    },
+    {
+      "path": "data/maps/SeafloorCavern_Room1/scripts.inc",
+      "sha1": "732904dde087d73cbf8a08ba7de7c07176c2a317",
+      "bytes": 1223
+    },
+    {
+      "path": "data/maps/SeafloorCavern_Room2/map.json",
+      "sha1": "85571e9931ec731499543251a0632dcb8a9333b9",
+      "bytes": 4219
+    },
+    {
+      "path": "data/maps/SeafloorCavern_Room2/scripts.inc",
+      "sha1": "3cbdb304f179349da0bc0ad1a3e45450c13ad039",
+      "bytes": 44
+    },
+    {
+      "path": "data/maps/SeafloorCavern_Room3/map.json",
+      "sha1": "ff060779f48ed2b494e40060c4089c3cb2375f1b",
+      "bytes": 4566
+    },
+    {
+      "path": "data/maps/SeafloorCavern_Room3/scripts.inc",
+      "sha1": "114dd5618f9f61a4bdce1766b391fad937adce4c",
+      "bytes": 2051
+    },
+    {
+      "path": "data/maps/SeafloorCavern_Room4/map.json",
+      "sha1": "d3ee4899cbbf03d5a49e8f8fae6477c96399c95d",
+      "bytes": 1960
+    },
+    {
+      "path": "data/maps/SeafloorCavern_Room4/scripts.inc",
+      "sha1": "eb6bd26bd1895d86ee47513520e3d80f2d2301e7",
+      "bytes": 1185
+    },
+    {
+      "path": "data/maps/SeafloorCavern_Room5/map.json",
+      "sha1": "9d828a595ee05cf0e574359fcaa59a4c02f1516f",
+      "bytes": 3302
+    },
+    {
+      "path": "data/maps/SeafloorCavern_Room5/scripts.inc",
+      "sha1": "73c23451e726566420c2613a0d73912348064291",
+      "bytes": 44
+    },
+    {
+      "path": "data/maps/SeafloorCavern_Room6/map.json",
+      "sha1": "23b5918ea1a86112676d2e98e198df52cf0f40c5",
+      "bytes": 961
+    },
+    {
+      "path": "data/maps/SeafloorCavern_Room6/scripts.inc",
+      "sha1": "0bc08e11442d7c67ed0ed4a3ce7880734e18b028",
+      "bytes": 44
+    },
+    {
+      "path": "data/maps/SeafloorCavern_Room7/map.json",
+      "sha1": "fd9642c37473dcbe3422304d493f1da4a496bcb5",
+      "bytes": 820
+    },
+    {
+      "path": "data/maps/SeafloorCavern_Room7/scripts.inc",
+      "sha1": "85092c3c239c0087c577e57ae53eb9766bd8db64",
+      "bytes": 44
+    },
+    {
+      "path": "data/maps/SeafloorCavern_Room8/map.json",
+      "sha1": "5da33fb3c351aade8600bde82a06ffaebbe1f95b",
+      "bytes": 5526
+    },
+    {
+      "path": "data/maps/SeafloorCavern_Room8/scripts.inc",
+      "sha1": "a4258eadcb0ee40a18caaf25476987e5c074817a",
+      "bytes": 44
+    },
+    {
+      "path": "data/maps/SeafloorCavern_Room9/map.json",
+      "sha1": "1a777bb6757d1d172595eb81b91067512e210409",
+      "bytes": 4044
+    },
+    {
+      "path": "data/maps/SeafloorCavern_Room9/scripts.inc",
+      "sha1": "fb74c5efd7ca988ee5566425c585ce3e165249e8",
+      "bytes": 10155
+    },
+    {
+      "path": "data/maps/SealedChamber_InnerRoom/map.json",
+      "sha1": "2f8b00e65058122705de415b0b3a87f6900f2302",
+      "bytes": 2634
+    },
+    {
+      "path": "data/maps/SealedChamber_InnerRoom/scripts.inc",
+      "sha1": "0873e1e1c99f6db0a44da305b2d636211dc92a66",
+      "bytes": 1785
+    },
+    {
+      "path": "data/maps/SealedChamber_OuterRoom/map.json",
+      "sha1": "f93d9e62e636627f8bf3181cf0c7de7a2941e54c",
+      "bytes": 6765
+    },
+    {
+      "path": "data/maps/SealedChamber_OuterRoom/scripts.inc",
+      "sha1": "dee4c4e070ebe2e7c86a5d05381bc15f82ba626a",
+      "bytes": 2794
+    },
+    {
+      "path": "data/maps/SecretBase_BlueCave1/map.json",
+      "sha1": "e4b33831f1df644728e64b16dc606471d5ada2b1",
+      "bytes": 6179
+    },
+    {
+      "path": "data/maps/SecretBase_BlueCave2/map.json",
+      "sha1": "b764499ec6a0df9adfec4a5f138be71995a72fae",
+      "bytes": 6179
+    },
+    {
+      "path": "data/maps/SecretBase_BlueCave3/map.json",
+      "sha1": "8cd1516a078967703b1ae38fd89c5461f9c3727e",
+      "bytes": 6180
+    },
+    {
+      "path": "data/maps/SecretBase_BlueCave4/map.json",
+      "sha1": "bd541b5c22d5a46238e961fc7bf0edd8b6728af1",
+      "bytes": 6181
+    },
+    {
+      "path": "data/maps/SecretBase_BrownCave1/map.json",
+      "sha1": "7664def472cee981fd4c7e4ae8bc1cd2c1b833a1",
+      "bytes": 6182
+    },
+    {
+      "path": "data/maps/SecretBase_BrownCave2/map.json",
+      "sha1": "ebdeb1347db75bcb7362d12a68aa004b1b978a97",
+      "bytes": 6183
+    },
+    {
+      "path": "data/maps/SecretBase_BrownCave3/map.json",
+      "sha1": "80c59c8f66e8632c73914e67c2d252989391fa27",
+      "bytes": 6183
+    },
+    {
+      "path": "data/maps/SecretBase_BrownCave4/map.json",
+      "sha1": "18270e0a5aa20329226bfe64c2313bc3d51cd1af",
+      "bytes": 6182
+    },
+    {
+      "path": "data/maps/SecretBase_RedCave1/map.json",
+      "sha1": "0656667a03e73447404b5300ebff093d5f0f7941",
+      "bytes": 6176
+    },
+    {
+      "path": "data/maps/SecretBase_RedCave2/map.json",
+      "sha1": "8cccb2410d0f0b5ca087e401cfa81adca7044369",
+      "bytes": 6177
+    },
+    {
+      "path": "data/maps/SecretBase_RedCave3/map.json",
+      "sha1": "109eeae9f494ddfc109af34706cd5a022cfab770",
+      "bytes": 6177
+    },
+    {
+      "path": "data/maps/SecretBase_RedCave4/map.json",
+      "sha1": "94faf5424670ab418c1c61462bbbe54e19ee84d8",
+      "bytes": 6177
+    },
+    {
+      "path": "data/maps/SecretBase_Shrub1/map.json",
+      "sha1": "d6cfee6f5e07bcb376a6678d53adf52d0896f148",
+      "bytes": 6168
+    },
+    {
+      "path": "data/maps/SecretBase_Shrub2/map.json",
+      "sha1": "ce8bb2acacedfa318a489c8efc740f7624ae118c",
+      "bytes": 6169
+    },
+    {
+      "path": "data/maps/SecretBase_Shrub3/map.json",
+      "sha1": "6c14d5e1e280c99f742a840f2a5f118041eb5267",
+      "bytes": 6168
+    },
+    {
+      "path": "data/maps/SecretBase_Shrub4/map.json",
+      "sha1": "4bc7e89bf321283c90cbe3497beb8a9b0cf04add",
+      "bytes": 6169
+    },
+    {
+      "path": "data/maps/SecretBase_Tree1/map.json",
+      "sha1": "51a7b8ee408099ef076307ad5664908408765b50",
+      "bytes": 6165
+    },
+    {
+      "path": "data/maps/SecretBase_Tree2/map.json",
+      "sha1": "fc86731586d938afae00399d8e19aec3193194a8",
+      "bytes": 6166
+    },
+    {
+      "path": "data/maps/SecretBase_Tree3/map.json",
+      "sha1": "8e3f91e4ffdaa230129f4881570cf91f57fa9b2a",
+      "bytes": 6165
+    },
+    {
+      "path": "data/maps/SecretBase_Tree4/map.json",
+      "sha1": "b05b5967b741aa27be99c11541a28c08b42fca0f",
+      "bytes": 6167
+    },
+    {
+      "path": "data/maps/SecretBase_YellowCave1/map.json",
+      "sha1": "ee652d02b368fe8b5edc25585b9fff796188712d",
+      "bytes": 6185
+    },
+    {
+      "path": "data/maps/SecretBase_YellowCave2/map.json",
+      "sha1": "ad1fc4bcb257590ce54abb3c80a68744436cbf31",
+      "bytes": 6186
+    },
+    {
+      "path": "data/maps/SecretBase_YellowCave3/map.json",
+      "sha1": "7ca904748a3a0178bf95775e40037452a6590327",
+      "bytes": 6185
+    },
+    {
+      "path": "data/maps/SecretBase_YellowCave4/map.json",
+      "sha1": "320e1ab92bc96b9f8885b24b54e2bb83faccc0f8",
+      "bytes": 6186
+    },
+    {
+      "path": "data/maps/ShoalCave_HighTideEntranceRoom/map.json",
+      "sha1": "b42706486461035346a564edf2fb26e1426212dc",
+      "bytes": 573
+    },
+    {
+      "path": "data/maps/ShoalCave_HighTideEntranceRoom/scripts.inc",
+      "sha1": "60da0e8f961af4d3ff5b246c0ca86672403704a9",
+      "bytes": 54
+    },
+    {
+      "path": "data/maps/ShoalCave_HighTideInnerRoom/map.json",
+      "sha1": "9111784f42609896a270557751e869482635c04b",
+      "bytes": 564
+    },
+    {
+      "path": "data/maps/ShoalCave_HighTideInnerRoom/scripts.inc",
+      "sha1": "c4fa38218e80e19abdd9733bbe1cb57ff690d538",
+      "bytes": 51
+    },
+    {
+      "path": "data/maps/ShoalCave_LowTideEntranceRoom/map.json",
+      "sha1": "418f0b16061337b8047d6bd93d75328ec5543468",
+      "bytes": 1979
+    },
+    {
+      "path": "data/maps/ShoalCave_LowTideEntranceRoom/scripts.inc",
+      "sha1": "1413cd55fcba731c9d6b5315421f4e6fc8f26289",
+      "bytes": 3859
+    },
+    {
+      "path": "data/maps/ShoalCave_LowTideIceRoom/map.json",
+      "sha1": "f6f5c401a0ec662bd15ab5a838fbe53b011ea466",
+      "bytes": 1582
+    },
+    {
+      "path": "data/maps/ShoalCave_LowTideIceRoom/scripts.inc",
+      "sha1": "da89d19231542eb41449735594c741f4190fde1b",
+      "bytes": 48
+    },
+    {
+      "path": "data/maps/ShoalCave_LowTideInnerRoom/map.json",
+      "sha1": "56bbbffdfe774d7e3c93c1294e8467b30cd16cc1",
+      "bytes": 3468
+    },
+    {
+      "path": "data/maps/ShoalCave_LowTideInnerRoom/scripts.inc",
+      "sha1": "869469d7126b490420d342e0851e1e9e44b0de36",
+      "bytes": 5444
+    },
+    {
+      "path": "data/maps/ShoalCave_LowTideLowerRoom/map.json",
+      "sha1": "edca4605bca59c6a29fc1cab1413cc2df7ade6fd",
+      "bytes": 2152
+    },
+    {
+      "path": "data/maps/ShoalCave_LowTideLowerRoom/scripts.inc",
+      "sha1": "ecff8c79aa9294e9c1a40270189212e7063f8d19",
+      "bytes": 2003
+    },
+    {
+      "path": "data/maps/ShoalCave_LowTideStairsRoom/map.json",
+      "sha1": "fed26327a7db9852b44d052d4446b9e54ac59e9c",
+      "bytes": 1514
+    },
+    {
+      "path": "data/maps/ShoalCave_LowTideStairsRoom/scripts.inc",
+      "sha1": "b0923bb56c2e1140b553b7bc4d165a8eb6307cd0",
+      "bytes": 1087
+    },
+    {
+      "path": "data/maps/SkyPillar_1F/map.json",
+      "sha1": "33c5b50f6c3488c7535d571d6800bf7144196a00",
+      "bytes": 915
+    },
+    {
+      "path": "data/maps/SkyPillar_1F/scripts.inc",
+      "sha1": "8ade0894487ee93b34ec4f20fdba3c1e58f7231e",
+      "bytes": 299
+    },
+    {
+      "path": "data/maps/SkyPillar_2F/map.json",
+      "sha1": "37d39e30bc3ec9e45328abe6986a80ab521b54d4",
+      "bytes": 775
+    },
+    {
+      "path": "data/maps/SkyPillar_2F/scripts.inc",
+      "sha1": "2556d9171f059e93dea08caddbff4b6e55edb517",
+      "bytes": 625
+    },
+    {
+      "path": "data/maps/SkyPillar_3F/map.json",
+      "sha1": "dbed6a87d6361ec0aa59b3ca555ee15284bb9ec7",
+      "bytes": 903
+    },
+    {
+      "path": "data/maps/SkyPillar_3F/scripts.inc",
+      "sha1": "53f2348c873857be109ce7afa8ed505ad64f96fd",
+      "bytes": 299
+    },
+    {
+      "path": "data/maps/SkyPillar_4F/map.json",
+      "sha1": "758c0601197431d06a471dc9b09172fab29636d9",
+      "bytes": 903
+    },
+    {
+      "path": "data/maps/SkyPillar_4F/scripts.inc",
+      "sha1": "d5be54eb937250f87a89f0988d8f16e796af14f2",
+      "bytes": 625
+    },
+    {
+      "path": "data/maps/SkyPillar_5F/map.json",
+      "sha1": "5a0cab3d03447039371a247158cdd9348a95d589",
+      "bytes": 776
+    },
+    {
+      "path": "data/maps/SkyPillar_5F/scripts.inc",
+      "sha1": "b7f17b39fbd96515036feaf52c908a45171f0fa2",
+      "bytes": 302
+    },
+    {
+      "path": "data/maps/SkyPillar_Entrance/map.json",
+      "sha1": "70f86649dad426de9d2ad0d32ec6cf9d0ed277e4",
+      "bytes": 794
+    },
+    {
+      "path": "data/maps/SkyPillar_Entrance/scripts.inc",
+      "sha1": "04b6bb8eab1122affe66efc3efc347d37bc3d57d",
+      "bytes": 185
+    },
+    {
+      "path": "data/maps/SkyPillar_Outside/map.json",
+      "sha1": "80f13b591e884a86c91213aa9b43d7af15b5cc85",
+      "bytes": 1251
+    },
+    {
+      "path": "data/maps/SkyPillar_Outside/scripts.inc",
+      "sha1": "9bf749dde7f98e08aa43ccd220b7469c53ade7f3",
+      "bytes": 4742
+    },
+    {
+      "path": "data/maps/SkyPillar_Top/map.json",
+      "sha1": "bcddfa093065951c6399bda62f0df4668db59e12",
+      "bytes": 1722
+    },
+    {
+      "path": "data/maps/SkyPillar_Top/scripts.inc",
+      "sha1": "db486fa7ae1229bdf3cba19c1d86940ca9a59221",
+      "bytes": 4915
+    },
+    {
+      "path": "data/maps/SlateportCity/map.json",
+      "sha1": "69b0cc6d8d6afc1f4a83fc0c3a8bec759f125947",
+      "bytes": 20151
+    },
+    {
+      "path": "data/maps/SlateportCity/scripts.inc",
+      "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed",
+      "bytes": 40841
+    },
+    {
+      "path": "data/maps/SlateportCity_BattleTentBattleRoom/map.json",
+      "sha1": "ada20a77ea208c246dd468990136852c8b3ace1a",
+      "bytes": 1733
+    },
+    {
+      "path": "data/maps/SlateportCity_BattleTentBattleRoom/scripts.inc",
+      "sha1": "009de4f2954851271e5ea3ad79e1dccf5cf815ee",
+      "bytes": 3883
+    },
+    {
+      "path": "data/maps/SlateportCity_BattleTentCorridor/map.json",
+      "sha1": "58abcddb659b36adc6263bbdb10d9fe64914473c",
+      "bytes": 981
+    },
+    {
+      "path": "data/maps/SlateportCity_BattleTentCorridor/scripts.inc",
+      "sha1": "6c49213213fbc0031669e8a364dc312cbe989a7b",
+      "bytes": 10265
+    },
+    {
+      "path": "data/maps/SlateportCity_BattleTentLobby/map.json",
+      "sha1": "ab70ac64838943dfbd0b7732f635885c1130efae",
+      "bytes": 3053
+    },
+    {
+      "path": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+      "sha1": "d8233cb564c951151609565c69259c5bc6039b75",
+      "bytes": 11527
+    },
+    {
+      "path": "data/maps/SlateportCity_Harbor/map.json",
+      "sha1": "75cd1653854ff3fa0e1314dbec4cf661284b8498",
+      "bytes": 5508
+    },
+    {
+      "path": "data/maps/SlateportCity_Harbor/scripts.inc",
+      "sha1": "304e0889603d7850b02e01765d969cf3c903eb9e",
+      "bytes": 18702
+    },
+    {
+      "path": "data/maps/SlateportCity_House/map.json",
+      "sha1": "eee854dca94c548cb61e3c8ea34d001e8ba49af2",
+      "bytes": 1553
+    },
+    {
+      "path": "data/maps/SlateportCity_House/scripts.inc",
+      "sha1": "021c615ffd2a342aedd8825c0148d7ded80baf8a",
+      "bytes": 736
+    },
+    {
+      "path": "data/maps/SlateportCity_Mart/map.json",
+      "sha1": "b4042ef22bf7417d27b6809d2b390e5252676cef",
+      "bytes": 1980
+    },
+    {
+      "path": "data/maps/SlateportCity_Mart/scripts.inc",
+      "sha1": "f2031f776ed5352702005bf7d55b8cd577030684",
+      "bytes": 1156
+    },
+    {
+      "path": "data/maps/SlateportCity_NameRatersHouse/map.json",
+      "sha1": "aa0c23d0c1c7414fcf53fc51427567742b40d20e",
+      "bytes": 1212
+    },
+    {
+      "path": "data/maps/SlateportCity_NameRatersHouse/scripts.inc",
+      "sha1": "ecd2294ed4e3a6a8e122867d365034a6568bcf9c",
+      "bytes": 4316
+    },
+    {
+      "path": "data/maps/SlateportCity_OceanicMuseum_1F/map.json",
+      "sha1": "37699051b069c9a59bea614c5fee533fc328f864",
+      "bytes": 10594
+    },
+    {
+      "path": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+      "sha1": "7a1e00c78bbfbd0fbd6eb59a84a4d4e7114e4261",
+      "bytes": 13533
+    },
+    {
+      "path": "data/maps/SlateportCity_OceanicMuseum_2F/map.json",
+      "sha1": "076d5db789f83c3818fa294bedd1070e7e5fe604",
+      "bytes": 8564
+    },
+    {
+      "path": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+      "sha1": "13553a30435b8213726cfc4734cfaf0043bc447f",
+      "bytes": 14953
+    },
+    {
+      "path": "data/maps/SlateportCity_PokemonCenter_1F/map.json",
+      "sha1": "97adc5b55f85c52ccd80b7fa12e5859c1059ab0d",
+      "bytes": 2188
+    },
+    {
+      "path": "data/maps/SlateportCity_PokemonCenter_1F/scripts.inc",
+      "sha1": "c0dd8403baae500cd386226bc6b94ee6359cdc91",
+      "bytes": 1343
+    },
+    {
+      "path": "data/maps/SlateportCity_PokemonCenter_2F/map.json",
+      "sha1": "837ec6374b247ee2444fc2438e409879f1d5f951",
+      "bytes": 2536
+    },
+    {
+      "path": "data/maps/SlateportCity_PokemonCenter_2F/scripts.inc",
+      "sha1": "bbef33f3994f212922bb3c855315d32e6328e5b9",
+      "bytes": 638
+    },
+    {
+      "path": "data/maps/SlateportCity_PokemonFanClub/map.json",
+      "sha1": "791f9db72a199d7289f8820605f9a03b1e0dddf0",
+      "bytes": 4386
+    },
+    {
+      "path": "data/maps/SlateportCity_PokemonFanClub/scripts.inc",
+      "sha1": "153f02ab68bdca98dac6d2c2cf3e3db7c79f2c91",
+      "bytes": 15111
+    },
+    {
+      "path": "data/maps/SlateportCity_SternsShipyard_1F/map.json",
+      "sha1": "eb82d7eb02e66bee642924d833521cef244c7633",
+      "bytes": 2675
+    },
+    {
+      "path": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+      "sha1": "839a40e95086fb806113f67a7c2dc0dcbbab3217",
+      "bytes": 5237
+    },
+    {
+      "path": "data/maps/SlateportCity_SternsShipyard_2F/map.json",
+      "sha1": "59914c5699b90c3d6a33767776be918a8a6e7000",
+      "bytes": 1879
+    },
+    {
+      "path": "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc",
+      "sha1": "82b7acc291304eea56ffb841fc81b0f02f4cab3a",
+      "bytes": 784
+    },
+    {
+      "path": "data/maps/SootopolisCity/map.json",
+      "sha1": "e651f28449773dc24217811c1afadda1854036d9",
+      "bytes": 11582
+    },
+    {
+      "path": "data/maps/SootopolisCity/scripts.inc",
+      "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4",
+      "bytes": 51357
+    },
+    {
+      "path": "data/maps/SootopolisCity_Gym_1F/map.json",
+      "sha1": "df3baa635e862c32d0336dc9ef2a4d65df8229b2",
+      "bytes": 2129
+    },
+    {
+      "path": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "sha1": "cd5ddf90f8e2b0931828078295732db5c87d2dae",
+      "bytes": 11848
+    },
+    {
+      "path": "data/maps/SootopolisCity_Gym_B1F/map.json",
+      "sha1": "ca5166f321e53cdf666f4931db27bc1ee5a380a7",
+      "bytes": 4550
+    },
+    {
+      "path": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "sha1": "e71da18f579da173413d5f8c5027d9e9c4f14d20",
+      "bytes": 6643
+    },
+    {
+      "path": "data/maps/SootopolisCity_House1/map.json",
+      "sha1": "26e0517c9ce1d87eb5f0c3d48c88d6b947d7ed7d",
+      "bytes": 1595
+    },
+    {
+      "path": "data/maps/SootopolisCity_House1/scripts.inc",
+      "sha1": "d068d18a48fa7b6881fb76a44c94d752d47fa794",
+      "bytes": 1268
+    },
+    {
+      "path": "data/maps/SootopolisCity_House2/map.json",
+      "sha1": "24df49e89031d7d4adac07591d44eb81d4fc0eaa",
+      "bytes": 1197
+    },
+    {
+      "path": "data/maps/SootopolisCity_House2/scripts.inc",
+      "sha1": "0fd7caf62f8684f92dd2533a67d3b0712c346c9c",
+      "bytes": 1080
+    },
+    {
+      "path": "data/maps/SootopolisCity_House3/map.json",
+      "sha1": "243d90be01df1b9e54048082bccaf7b9b93c90ba",
+      "bytes": 1577
+    },
+    {
+      "path": "data/maps/SootopolisCity_House3/scripts.inc",
+      "sha1": "320079b2888f517c81dc62324f418ded1a42364d",
+      "bytes": 1330
+    },
+    {
+      "path": "data/maps/SootopolisCity_House4/map.json",
+      "sha1": "d60775cfc5222e67e5c565ab7913b49a8969c316",
+      "bytes": 1960
+    },
+    {
+      "path": "data/maps/SootopolisCity_House4/scripts.inc",
+      "sha1": "c3109385d86e9bb6e58cd1691d912d37355d9013",
+      "bytes": 1151
+    },
+    {
+      "path": "data/maps/SootopolisCity_House5/map.json",
+      "sha1": "6830dd41f3847a360a781efefa7c1c360832054c",
+      "bytes": 1574
+    },
+    {
+      "path": "data/maps/SootopolisCity_House5/scripts.inc",
+      "sha1": "af8536db2b730ab9c6e789a079899b905f623b5a",
+      "bytes": 635
+    },
+    {
+      "path": "data/maps/SootopolisCity_House6/map.json",
+      "sha1": "12a94abc91b7317c1b9e5d9d4cc037f3858183ea",
+      "bytes": 1197
+    },
+    {
+      "path": "data/maps/SootopolisCity_House6/scripts.inc",
+      "sha1": "9e64a088d48f75235f8890513493b4248a25744a",
+      "bytes": 1738
+    },
+    {
+      "path": "data/maps/SootopolisCity_House7/map.json",
+      "sha1": "bf08684d6702b7f44dea4a88f0a84b3884608cb8",
+      "bytes": 1587
+    },
+    {
+      "path": "data/maps/SootopolisCity_House7/scripts.inc",
+      "sha1": "5851d255152eb8f0147c541d00dc7fe50137d965",
+      "bytes": 866
+    },
+    {
+      "path": "data/maps/SootopolisCity_LotadAndSeedotHouse/map.json",
+      "sha1": "12602a25f93b821d1f53ce2648b3b216feaaeab5",
+      "bytes": 2113
+    },
+    {
+      "path": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+      "sha1": "fc092cb2d8bfc7874143add20c2a81120dbbacc1",
+      "bytes": 7188
+    },
+    {
+      "path": "data/maps/SootopolisCity_Mart/map.json",
+      "sha1": "0cc275af915c0835ccb78205c271ed5c4c6450cb",
+      "bytes": 1995
+    },
+    {
+      "path": "data/maps/SootopolisCity_Mart/scripts.inc",
+      "sha1": "09107a068ba7ecb271ba83663a6a1a20f47464ae",
+      "bytes": 2122
+    },
+    {
+      "path": "data/maps/SootopolisCity_MysteryEventsHouse_1F/map.json",
+      "sha1": "60d8748e87ac0af010f50cc5a6f19fbcb5b6e1be",
+      "bytes": 1468
+    },
+    {
+      "path": "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc",
+      "sha1": "2fdeaa88644de0428efc55499bd5f5d3a0d1831f",
+      "bytes": 8999
+    },
+    {
+      "path": "data/maps/SootopolisCity_MysteryEventsHouse_B1F/map.json",
+      "sha1": "6d77b8919eb774b3760aeda4b7dfb834a9ddf6e6",
+      "bytes": 1101
+    },
+    {
+      "path": "data/maps/SootopolisCity_MysteryEventsHouse_B1F/scripts.inc",
+      "sha1": "9a58ab5d1fb1306581fc7e54c8b85f2f69a8ee94",
+      "bytes": 2300
+    },
+    {
+      "path": "data/maps/SootopolisCity_PokemonCenter_1F/map.json",
+      "sha1": "87470b9995be4e40539ef17afad19758f1a97552",
+      "bytes": 2625
+    },
+    {
+      "path": "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+      "sha1": "9809ed86adf690116a3ed12f4cbacd0ff01d19b9",
+      "bytes": 2575
+    },
+    {
+      "path": "data/maps/SootopolisCity_PokemonCenter_2F/map.json",
+      "sha1": "589d4b276d790b1218aa7e068b028a80f8ad1a94",
+      "bytes": 2540
+    },
+    {
+      "path": "data/maps/SootopolisCity_PokemonCenter_2F/scripts.inc",
+      "sha1": "9ff3e01a1a011c0aa7d8c0d476410a55987525af",
+      "bytes": 642
+    },
+    {
+      "path": "data/maps/SouthernIsland_Exterior/map.json",
+      "sha1": "3757ac072ce5bf012ddfab1a8156de156f82cd56",
+      "bytes": 1881
+    },
+    {
+      "path": "data/maps/SouthernIsland_Exterior/scripts.inc",
+      "sha1": "8637a36ea5ce0ef3626f2af51ae9d5c7c832381b",
+      "bytes": 1427
+    },
+    {
+      "path": "data/maps/SouthernIsland_Interior/map.json",
+      "sha1": "3a9266b65dd007c4c598d887c50d71b1325f5ba4",
+      "bytes": 1877
+    },
+    {
+      "path": "data/maps/SouthernIsland_Interior/scripts.inc",
+      "sha1": "6ed339e41064219d030f00f9c7e62ccbfde31212",
+      "bytes": 4449
+    },
+    {
+      "path": "data/maps/TerraCave_End/map.json",
+      "sha1": "379b259aa32fd18b04dcd1df4e74fbb02353b876",
+      "bytes": 1297
+    },
+    {
+      "path": "data/maps/TerraCave_End/scripts.inc",
+      "sha1": "f580375762b0ce93146fa1e144b30b9b23c3cb5b",
+      "bytes": 2065
+    },
+    {
+      "path": "data/maps/TerraCave_Entrance/map.json",
+      "sha1": "fbc7aac123152861c2f01e1743a3b12b7da69ed8",
+      "bytes": 808
+    },
+    {
+      "path": "data/maps/TerraCave_Entrance/scripts.inc",
+      "sha1": "0b2bbefe22b74039b631c918e8606c0eaf72a07b",
+      "bytes": 196
+    },
+    {
+      "path": "data/maps/TradeCenter/map.json",
+      "sha1": "26c185ec510941ea0b33c1cc2b7065bd3e41706d",
+      "bytes": 1550
+    },
+    {
+      "path": "data/maps/TradeCenter/scripts.inc",
+      "sha1": "d57a7ecf63145881fb8c324b18a2ca42c96e1bc8",
+      "bytes": 35
+    },
+    {
+      "path": "data/maps/TrainerHill_1F/map.json",
+      "sha1": "5a3fbf0e4a8aefe9039d7c428b8756ee6401412a",
+      "bytes": 791
+    },
+    {
+      "path": "data/maps/TrainerHill_1F/scripts.inc",
+      "sha1": "8d87ec6cc9e638f801f9c1bda7b13b4e96f1bb9e",
+      "bytes": 218
+    },
+    {
+      "path": "data/maps/TrainerHill_2F/map.json",
+      "sha1": "33b0ce3c2b07a7cb4418c75106309ddcc150143f",
+      "bytes": 785
+    },
+    {
+      "path": "data/maps/TrainerHill_2F/scripts.inc",
+      "sha1": "f8ffcccc0278f7947ee76bb1dd31c073f67d723a",
+      "bytes": 218
+    },
+    {
+      "path": "data/maps/TrainerHill_3F/map.json",
+      "sha1": "1d17117125f120dcec26380b9985ed13ec52222a",
+      "bytes": 785
+    },
+    {
+      "path": "data/maps/TrainerHill_3F/scripts.inc",
+      "sha1": "f2c658b126d20cdec7eca026ce4a85cf51bc8493",
+      "bytes": 152
+    },
+    {
+      "path": "data/maps/TrainerHill_4F/map.json",
+      "sha1": "b75be32c3345b581a2b5b1ac2a51ce9de09f6b17",
+      "bytes": 787
+    },
+    {
+      "path": "data/maps/TrainerHill_4F/scripts.inc",
+      "sha1": "93217f40a53727f2407074379e15514399376db1",
+      "bytes": 152
+    },
+    {
+      "path": "data/maps/TrainerHill_Elevator/map.json",
+      "sha1": "b5d7a346011cf669eb6dc6657b3f94e6fc22ac9f",
+      "bytes": 1247
+    },
+    {
+      "path": "data/maps/TrainerHill_Elevator/scripts.inc",
+      "sha1": "06b14119162a2b7bf99d17883435f80e4648fabb",
+      "bytes": 2227
+    },
+    {
+      "path": "data/maps/TrainerHill_Entrance/map.json",
+      "sha1": "02b66cc3db7b5407fe2cc48cfdfda6fc00afaf5d",
+      "bytes": 3461
+    },
+    {
+      "path": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "sha1": "cbfca2354a8d8ed8d68e2612fb0b6f2525008a5f",
+      "bytes": 14737
+    },
+    {
+      "path": "data/maps/TrainerHill_Roof/map.json",
+      "sha1": "77446df9496fd2259926dd6487f1dacb81a1789b",
+      "bytes": 1179
+    },
+    {
+      "path": "data/maps/TrainerHill_Roof/scripts.inc",
+      "sha1": "5597180a59a42562e7f9757eaa0b7d95908d37f9",
+      "bytes": 2153
+    },
+    {
+      "path": "data/maps/Underwater_MarineCave/map.json",
+      "sha1": "0846791b4e9ac3f3a7a829d045b1f0470d8b6639",
+      "bytes": 712
+    },
+    {
+      "path": "data/maps/Underwater_MarineCave/scripts.inc",
+      "sha1": "ecfa39a437d6a1fb9639d1637d1a88a043c2479d",
+      "bytes": 358
+    },
+    {
+      "path": "data/maps/Underwater_Route105/map.json",
+      "sha1": "4f96bc46f5f346892076305f73d6ea127ca7451c",
+      "bytes": 921
+    },
+    {
+      "path": "data/maps/Underwater_Route105/scripts.inc",
+      "sha1": "7707eb6d768140713f2d6375002c1bc2f3c9090b",
+      "bytes": 191
+    },
+    {
+      "path": "data/maps/Underwater_Route124/map.json",
+      "sha1": "272d5278e0190c898eb80cafd55163640d24271e",
+      "bytes": 2027
+    },
+    {
+      "path": "data/maps/Underwater_Route124/scripts.inc",
+      "sha1": "2d25bd7e72a42b6fab4b0f59c372deb013711a41",
+      "bytes": 43
+    },
+    {
+      "path": "data/maps/Underwater_Route125/map.json",
+      "sha1": "7b840e14549dec07b61807544045896da96c2897",
+      "bytes": 922
+    },
+    {
+      "path": "data/maps/Underwater_Route125/scripts.inc",
+      "sha1": "cbe6764c2679a93f682c47257b84a3626b590d7f",
+      "bytes": 191
+    },
+    {
+      "path": "data/maps/Underwater_Route126/map.json",
+      "sha1": "b686f89f97dae1ea04460a81a70e5129e026637f",
+      "bytes": 2449
+    },
+    {
+      "path": "data/maps/Underwater_Route126/scripts.inc",
+      "sha1": "8fe98c87410034dedd6acdf5bb9c2ae515a9c445",
+      "bytes": 43
+    },
+    {
+      "path": "data/maps/Underwater_Route127/map.json",
+      "sha1": "9f1a75d10e2150ce1032821b1d824208d94e4427",
+      "bytes": 1853
+    },
+    {
+      "path": "data/maps/Underwater_Route127/scripts.inc",
+      "sha1": "43f8f4109a524d522a7077eeeab1b78d5c0c0af0",
+      "bytes": 191
+    },
+    {
+      "path": "data/maps/Underwater_Route128/map.json",
+      "sha1": "1ef35ff1e75967cb3258d7d5d570cab9e8a20af8",
+      "bytes": 1241
+    },
+    {
+      "path": "data/maps/Underwater_Route128/scripts.inc",
+      "sha1": "bbb88532c7b03e92850db07f96d323a7d402875a",
+      "bytes": 43
+    },
+    {
+      "path": "data/maps/Underwater_Route129/map.json",
+      "sha1": "4bdcc9803063aa89b26dae69f1f2c2084673b544",
+      "bytes": 921
+    },
+    {
+      "path": "data/maps/Underwater_Route129/scripts.inc",
+      "sha1": "2c6d6ef3c205f6970bb09c09959af94a3becd474",
+      "bytes": 191
+    },
+    {
+      "path": "data/maps/Underwater_Route134/map.json",
+      "sha1": "2c06422b49bed97b5224071a3bb40d6ca76fd04e",
+      "bytes": 706
+    },
+    {
+      "path": "data/maps/Underwater_Route134/scripts.inc",
+      "sha1": "420c813cc45f373da1d5f4076b3c9c2cb5164c6e",
+      "bytes": 176
+    },
+    {
+      "path": "data/maps/Underwater_SeafloorCavern/map.json",
+      "sha1": "13f1defdb82691bd427253e000013c9ff160fb0e",
+      "bytes": 2567
+    },
+    {
+      "path": "data/maps/Underwater_SeafloorCavern/scripts.inc",
+      "sha1": "0161920db8325168fff9945e78faf08193f0bc50",
+      "bytes": 1962
+    },
+    {
+      "path": "data/maps/Underwater_SealedChamber/map.json",
+      "sha1": "fb43be481624f3f33fd17f04298cdf74f428a059",
+      "bytes": 926
+    },
+    {
+      "path": "data/maps/Underwater_SealedChamber/scripts.inc",
+      "sha1": "131aad6d8a0be2c293134dd0e2a54a3608a8a64b",
+      "bytes": 756
+    },
+    {
+      "path": "data/maps/Underwater_SootopolisCity/map.json",
+      "sha1": "057aad9ba40cbca5c6c18c9ada27149aa7a97de3",
+      "bytes": 851
+    },
+    {
+      "path": "data/maps/Underwater_SootopolisCity/scripts.inc",
+      "sha1": "6e5f6f6d2ed921e763b07f8cbb0eab4296cf14e1",
+      "bytes": 201
+    },
+    {
+      "path": "data/maps/UnionRoom/map.json",
+      "sha1": "951fb254aa12ec6c0f4131943e9f4cfb149057a0",
+      "bytes": 4778
+    },
+    {
+      "path": "data/maps/UnionRoom/scripts.inc",
+      "sha1": "110f08d8f393e99196ccecbb3f971b805cbb71bc",
+      "bytes": 2037
+    },
+    {
+      "path": "data/maps/UnusedContestHall1/map.json",
+      "sha1": "400005e45bb9172507e15bdfec9e953907601279",
+      "bytes": 524
+    },
+    {
+      "path": "data/maps/UnusedContestHall2/map.json",
+      "sha1": "5c8629f1b3207879fe2321ab6e7e2ac18059999c",
+      "bytes": 524
+    },
+    {
+      "path": "data/maps/UnusedContestHall3/map.json",
+      "sha1": "d42c531485d8376fedd113bc07b10b49fec88bdc",
+      "bytes": 524
+    },
+    {
+      "path": "data/maps/UnusedContestHall4/map.json",
+      "sha1": "130808ddfe2945e2f5cf7a0d9690a43e797aa38e",
+      "bytes": 524
+    },
+    {
+      "path": "data/maps/UnusedContestHall5/map.json",
+      "sha1": "df66aaa04853f59b9e23f9ed223f3b1ec4e61975",
+      "bytes": 524
+    },
+    {
+      "path": "data/maps/UnusedContestHall6/map.json",
+      "sha1": "0c84fd920f7e0b050c7029155c0c00be95ccc0cc",
+      "bytes": 524
+    },
+    {
+      "path": "data/maps/VerdanturfTown/map.json",
+      "sha1": "04541800f7c28fd39bd5e6aa6c17bd2c0e519fb3",
+      "bytes": 4885
+    },
+    {
+      "path": "data/maps/VerdanturfTown/scripts.inc",
+      "sha1": "4cf44981cc32f958f4c2d2c20def161a84763311",
+      "bytes": 3849
+    },
+    {
+      "path": "data/maps/VerdanturfTown_BattleTentBattleRoom/map.json",
+      "sha1": "21ada8a8ae54a975aab5d78e108605d1a224d43c",
+      "bytes": 1814
+    },
+    {
+      "path": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+      "sha1": "ab3b693d78c01bf41de27c238af8f5c28d91cffd",
+      "bytes": 7380
+    },
+    {
+      "path": "data/maps/VerdanturfTown_BattleTentCorridor/map.json",
+      "sha1": "eda6961bf94a569889ae1d253ff06acb667cf144",
+      "bytes": 982
+    },
+    {
+      "path": "data/maps/VerdanturfTown_BattleTentCorridor/scripts.inc",
+      "sha1": "8936c4f1be90d719d6d99b0c0c3c739ed9ad97c0",
+      "bytes": 2331
+    },
+    {
+      "path": "data/maps/VerdanturfTown_BattleTentLobby/map.json",
+      "sha1": "e8cd669d529f89eb47be5eeaa7d2d18f90d4dcc6",
+      "bytes": 3493
+    },
+    {
+      "path": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+      "sha1": "be67ab8ba625b73e575c1594a46cbee43b6f03d9",
+      "bytes": 14810
+    },
+    {
+      "path": "data/maps/VerdanturfTown_FriendshipRatersHouse/map.json",
+      "sha1": "1ca5eddfb3b112ba9eb98f155661b870f1bdaaa1",
+      "bytes": 1633
+    },
+    {
+      "path": "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.inc",
+      "sha1": "b4d2575de6fbd769af370533b2421fabb9e4e2f7",
+      "bytes": 3695
+    },
+    {
+      "path": "data/maps/VerdanturfTown_House/map.json",
+      "sha1": "917a0c9da511c9b158445c36a5ab057e6891889f",
+      "bytes": 1555
+    },
+    {
+      "path": "data/maps/VerdanturfTown_House/scripts.inc",
+      "sha1": "9659cc0896ce0a91ad0582be610baa6bc626af11",
+      "bytes": 832
+    },
+    {
+      "path": "data/maps/VerdanturfTown_Mart/map.json",
+      "sha1": "a624c051ea34a52ff54eb443838d557dc95f7cfe",
+      "bytes": 2362
+    },
+    {
+      "path": "data/maps/VerdanturfTown_Mart/scripts.inc",
+      "sha1": "815f118fd23cab33023fd266a93950041afd0a06",
+      "bytes": 1557
+    },
+    {
+      "path": "data/maps/VerdanturfTown_PokemonCenter_1F/map.json",
+      "sha1": "eed383bf55d87431cc7306e50b6e2f3dd4b05bbf",
+      "bytes": 2622
+    },
+    {
+      "path": "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc",
+      "sha1": "732bae5c84091e111c778e1203e61171dca9d52e",
+      "bytes": 1379
+    },
+    {
+      "path": "data/maps/VerdanturfTown_PokemonCenter_2F/map.json",
+      "sha1": "488944934d02031f8b9702def24c30a951a0d8c1",
+      "bytes": 2540
+    },
+    {
+      "path": "data/maps/VerdanturfTown_PokemonCenter_2F/scripts.inc",
+      "sha1": "5364ad0967754abf884e166d8cb9a33d98f41633",
+      "bytes": 642
+    },
+    {
+      "path": "data/maps/VerdanturfTown_WandasHouse/map.json",
+      "sha1": "c395281c9f225d06bbbb0fe328303b3c1bbf9275",
+      "bytes": 2985
+    },
+    {
+      "path": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+      "sha1": "31973fbe72c23018cb6768d20d4d7addb52bae60",
+      "bytes": 6012
+    },
+    {
+      "path": "data/maps/VictoryRoad_1F/map.json",
+      "sha1": "d2466927c82f22b7d85aef4a98fe5a48b65b1e8a",
+      "bytes": 5453
+    },
+    {
+      "path": "data/maps/VictoryRoad_1F/scripts.inc",
+      "sha1": "dda3a20e79be32fbc7d021ceddf040bbcdbe53c7",
+      "bytes": 7237
+    },
+    {
+      "path": "data/maps/VictoryRoad_B1F/map.json",
+      "sha1": "56e76dcaf444ec1a5a74f447614ff2202bd09903",
+      "bytes": 9678
+    },
+    {
+      "path": "data/maps/VictoryRoad_B1F/scripts.inc",
+      "sha1": "cbf73ba8b0ffae50fb8f8b966d51479555277bbd",
+      "bytes": 3016
+    },
+    {
+      "path": "data/maps/VictoryRoad_B2F/map.json",
+      "sha1": "5b0508499a13799ccdf05389317e6cd372e94865",
+      "bytes": 4121
+    },
+    {
+      "path": "data/maps/VictoryRoad_B2F/scripts.inc",
+      "sha1": "8dfe15551952990f7ac9879a81f4a41a46da4e05",
+      "bytes": 3569
+    },
+    {
+      "path": "data/maps/map_groups.json",
+      "sha1": "9e4994d81207f96295ade3cd0a2558adcea6c150",
+      "bytes": 18822
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "LavaridgeTown_Gym_B1F:LOCALID_KEEGAN",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Gym_B1F/map.json",
+    "sha1": "3324d0ce04c1d9308f64303c9d81e78ab73b36d1"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LavaridgeTown_Gym_B1F/map.json",
+    "raw": {
+      "local_id": "LOCALID_KEEGAN",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "x": 3,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_BURIED",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "LavaridgeTown_Gym_B1F_EventScript_Keegan",
+      "flag": "0"
+    }
+  },
+  "map": "LavaridgeTown_Gym_B1F",
+  "mapId": "MAP_LAVARIDGE_TOWN_GYM_B1F",
+  "localId": "LOCALID_KEEGAN",
+  "graphicsId": "OBJ_EVENT_GFX_MAN_5",
+  "x": 3,
+  "y": 6,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_BURIED",
+  "trainerSightOrBerryTreeId": "1",
+  "script": "LavaridgeTown_Gym_B1F_EventScript_Keegan",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

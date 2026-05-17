@@ -1,0 +1,27 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/map.json",
+    "sha1": "2b09c54b19da6822ec78e135b02b34f4908ef13a"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/map.json",
+    "raw": {
+      "x": 7,
+      "y": 17,
+      "elevation": 4,
+      "dest_map": "MAP_BATTLE_FRONTIER_OUTSIDE_EAST",
+      "dest_warp_id": "3"
+    }
+  },
+  "map": "BattleFrontier_BattlePyramidLobby",
+  "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_LOBBY",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

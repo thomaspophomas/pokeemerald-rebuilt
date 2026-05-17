@@ -1,0 +1,16 @@
+{
+  "id": "SafariZone_South:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_South/map.json",
+    "sha1": "8baf48e1259b4314bb0edbd7f5b208949a5855ac"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/SafariZone_South/map.json"
+  },
+  "map": "SafariZone_South",
+  "mapId": "MAP_SAFARI_ZONE_SOUTH",
+  "weather": "WEATHER_NONE"
+}

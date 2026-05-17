@@ -16,5 +16,26 @@
   "object_events": [],
   "warp_events": [],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_UnusedRubyMap1/map.json",
+    "sha1": "d54f97f127b54344c964011c29cea3a9fc0c7654"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/AquaHideout_UnusedRubyMap1/map.json",
+    "mapName": "AquaHideout_UnusedRubyMap1",
+    "scriptsSourcePath": "data/maps/AquaHideout_UnusedRubyMap1/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 74,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

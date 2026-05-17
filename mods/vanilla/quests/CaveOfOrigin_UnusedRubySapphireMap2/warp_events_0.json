@@ -1,0 +1,27 @@
+{
+  "id": "CaveOfOrigin_UnusedRubySapphireMap2:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/CaveOfOrigin_UnusedRubySapphireMap2/map.json",
+    "sha1": "99f27a84237edf5b336fe53dd14e1626c7a98d76"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/CaveOfOrigin_UnusedRubySapphireMap2/map.json",
+    "raw": {
+      "x": 5,
+      "y": 10,
+      "elevation": 3,
+      "dest_map": "MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP1",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "CaveOfOrigin_UnusedRubySapphireMap2",
+  "mapId": "MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP2",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

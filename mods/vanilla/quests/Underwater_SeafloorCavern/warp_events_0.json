@@ -1,0 +1,27 @@
+{
+  "id": "Underwater_SeafloorCavern:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_SeafloorCavern/map.json",
+    "sha1": "13f1defdb82691bd427253e000013c9ff160fb0e"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Underwater_SeafloorCavern/map.json",
+    "raw": {
+      "x": 6,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_UNDERWATER_ROUTE128",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Underwater_SeafloorCavern",
+  "mapId": "MAP_UNDERWATER_SEAFLOOR_CAVERN",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

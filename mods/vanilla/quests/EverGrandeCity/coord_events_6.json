@@ -1,0 +1,31 @@
+{
+  "id": "EverGrandeCity:coord_events:6",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity/map.json",
+    "sha1": "0cc8791074133ebfd3478a2f4e9b240b955f5902"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/EverGrandeCity/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 22,
+      "y": 58,
+      "elevation": 1,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "EverGrandeCity_EventScript_SetVisitedEverGrande"
+    }
+  },
+  "map": "EverGrandeCity",
+  "mapId": "MAP_EVER_GRANDE_CITY",
+  "eventType": "coord_events",
+  "index": 6,
+  "script": "EverGrandeCity_EventScript_SetVisitedEverGrande",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

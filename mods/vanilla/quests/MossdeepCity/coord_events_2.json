@@ -1,0 +1,31 @@
+{
+  "id": "MossdeepCity:coord_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/map.json",
+    "sha1": "e5f3ed3515745877143da05bc99302333d940624"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MossdeepCity/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 32,
+      "y": 27,
+      "elevation": 0,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "MossdeepCity_EventScript_VisitedMossdeep"
+    }
+  },
+  "map": "MossdeepCity",
+  "mapId": "MAP_MOSSDEEP_CITY",
+  "eventType": "coord_events",
+  "index": 2,
+  "script": "MossdeepCity_EventScript_VisitedMossdeep",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

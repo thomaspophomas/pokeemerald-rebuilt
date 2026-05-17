@@ -31,5 +31,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MirageTower_2F/map.json",
+    "sha1": "98a905580854177a29bcf829bf5d8397fe3ad509"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/MirageTower_2F/map.json",
+    "mapName": "MirageTower_2F",
+    "scriptsSourcePath": "data/maps/MirageTower_2F/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 95,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

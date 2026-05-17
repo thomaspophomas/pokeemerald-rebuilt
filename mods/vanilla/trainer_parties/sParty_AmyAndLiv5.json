@@ -1,0 +1,17 @@
+{
+  "id": "sParty_AmyAndLiv5",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_AmyAndLiv5[] = {\n    {\n    .iv = 30,\n    .lvl = 33,\n    .species = SPECIES_PLUSLE,\n    .moves = {MOVE_SPARK, MOVE_CHARGE, MOVE_FAKE_TEARS, MOVE_HELPING_HAND}\n    },\n    {\n    .iv = 30,\n    .lvl = 33,\n    .species = SPECIES_MINUN,\n    .moves = {MOVE_SPARK, MOVE_CHARGE, MOVE_CHARM, MOVE_HELPING_HAND}\n    }\n};"
+  },
+  "symbol": "sParty_AmyAndLiv5",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 2
+}

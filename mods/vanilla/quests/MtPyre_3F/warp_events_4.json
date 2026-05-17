@@ -1,0 +1,27 @@
+{
+  "id": "MtPyre_3F:warp_events:4",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_3F/map.json",
+    "sha1": "5391dcb4f94af5942489b6537153118956c790fe"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MtPyre_3F/map.json",
+    "raw": {
+      "x": 10,
+      "y": 12,
+      "elevation": 3,
+      "dest_map": "MAP_MT_PYRE_2F",
+      "dest_warp_id": "2"
+    }
+  },
+  "map": "MtPyre_3F",
+  "mapId": "MAP_MT_PYRE_3F",
+  "eventType": "warp_events",
+  "index": 4,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

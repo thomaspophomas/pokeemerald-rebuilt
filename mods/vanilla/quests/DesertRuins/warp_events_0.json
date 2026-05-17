@@ -1,0 +1,27 @@
+{
+  "id": "DesertRuins:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DesertRuins/map.json",
+    "sha1": "10f7e73dc32fffb52b167f708e71b2e152847e81"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/DesertRuins/map.json",
+    "raw": {
+      "x": 8,
+      "y": 29,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE111",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "DesertRuins",
+  "mapId": "MAP_DESERT_RUINS",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

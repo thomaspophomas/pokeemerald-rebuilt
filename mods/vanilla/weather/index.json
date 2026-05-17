@@ -1,0 +1,3641 @@
+{
+  "domain": "weather",
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "AbandonedShip_CaptainsOffice:weather",
+      "path": "maps/AbandonedShip_CaptainsOffice.json",
+      "sourcePath": "data/maps/AbandonedShip_CaptainsOffice/map.json",
+      "legacyKind": "map_weather",
+      "map": "AbandonedShip_CaptainsOffice"
+    },
+    {
+      "id": "AbandonedShip_Corridors_1F:weather",
+      "path": "maps/AbandonedShip_Corridors_1F.json",
+      "sourcePath": "data/maps/AbandonedShip_Corridors_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "AbandonedShip_Corridors_1F"
+    },
+    {
+      "id": "AbandonedShip_Corridors_B1F:weather",
+      "path": "maps/AbandonedShip_Corridors_B1F.json",
+      "sourcePath": "data/maps/AbandonedShip_Corridors_B1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "AbandonedShip_Corridors_B1F"
+    },
+    {
+      "id": "AbandonedShip_Deck:weather",
+      "path": "maps/AbandonedShip_Deck.json",
+      "sourcePath": "data/maps/AbandonedShip_Deck/map.json",
+      "legacyKind": "map_weather",
+      "map": "AbandonedShip_Deck"
+    },
+    {
+      "id": "AbandonedShip_HiddenFloorCorridors:weather",
+      "path": "maps/AbandonedShip_HiddenFloorCorridors.json",
+      "sourcePath": "data/maps/AbandonedShip_HiddenFloorCorridors/map.json",
+      "legacyKind": "map_weather",
+      "map": "AbandonedShip_HiddenFloorCorridors"
+    },
+    {
+      "id": "AbandonedShip_HiddenFloorRooms:weather",
+      "path": "maps/AbandonedShip_HiddenFloorRooms.json",
+      "sourcePath": "data/maps/AbandonedShip_HiddenFloorRooms/map.json",
+      "legacyKind": "map_weather",
+      "map": "AbandonedShip_HiddenFloorRooms"
+    },
+    {
+      "id": "AbandonedShip_Room_B1F:weather",
+      "path": "maps/AbandonedShip_Room_B1F.json",
+      "sourcePath": "data/maps/AbandonedShip_Room_B1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "AbandonedShip_Room_B1F"
+    },
+    {
+      "id": "AbandonedShip_Rooms2_1F:weather",
+      "path": "maps/AbandonedShip_Rooms2_1F.json",
+      "sourcePath": "data/maps/AbandonedShip_Rooms2_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "AbandonedShip_Rooms2_1F"
+    },
+    {
+      "id": "AbandonedShip_Rooms2_B1F:weather",
+      "path": "maps/AbandonedShip_Rooms2_B1F.json",
+      "sourcePath": "data/maps/AbandonedShip_Rooms2_B1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "AbandonedShip_Rooms2_B1F"
+    },
+    {
+      "id": "AbandonedShip_Rooms_1F:weather",
+      "path": "maps/AbandonedShip_Rooms_1F.json",
+      "sourcePath": "data/maps/AbandonedShip_Rooms_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "AbandonedShip_Rooms_1F"
+    },
+    {
+      "id": "AbandonedShip_Rooms_B1F:weather",
+      "path": "maps/AbandonedShip_Rooms_B1F.json",
+      "sourcePath": "data/maps/AbandonedShip_Rooms_B1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "AbandonedShip_Rooms_B1F"
+    },
+    {
+      "id": "AbandonedShip_Underwater1:weather",
+      "path": "maps/AbandonedShip_Underwater1.json",
+      "sourcePath": "data/maps/AbandonedShip_Underwater1/map.json",
+      "legacyKind": "map_weather",
+      "map": "AbandonedShip_Underwater1"
+    },
+    {
+      "id": "AbandonedShip_Underwater2:weather",
+      "path": "maps/AbandonedShip_Underwater2.json",
+      "sourcePath": "data/maps/AbandonedShip_Underwater2/map.json",
+      "legacyKind": "map_weather",
+      "map": "AbandonedShip_Underwater2"
+    },
+    {
+      "id": "AlteringCave:weather",
+      "path": "maps/AlteringCave.json",
+      "sourcePath": "data/maps/AlteringCave/map.json",
+      "legacyKind": "map_weather",
+      "map": "AlteringCave"
+    },
+    {
+      "id": "AncientTomb:weather",
+      "path": "maps/AncientTomb.json",
+      "sourcePath": "data/maps/AncientTomb/map.json",
+      "legacyKind": "map_weather",
+      "map": "AncientTomb"
+    },
+    {
+      "id": "AquaHideout_1F:weather",
+      "path": "maps/AquaHideout_1F.json",
+      "sourcePath": "data/maps/AquaHideout_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "AquaHideout_1F"
+    },
+    {
+      "id": "AquaHideout_B1F:weather",
+      "path": "maps/AquaHideout_B1F.json",
+      "sourcePath": "data/maps/AquaHideout_B1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "AquaHideout_B1F"
+    },
+    {
+      "id": "AquaHideout_B2F:weather",
+      "path": "maps/AquaHideout_B2F.json",
+      "sourcePath": "data/maps/AquaHideout_B2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "AquaHideout_B2F"
+    },
+    {
+      "id": "AquaHideout_UnusedRubyMap1:weather",
+      "path": "maps/AquaHideout_UnusedRubyMap1.json",
+      "sourcePath": "data/maps/AquaHideout_UnusedRubyMap1/map.json",
+      "legacyKind": "map_weather",
+      "map": "AquaHideout_UnusedRubyMap1"
+    },
+    {
+      "id": "AquaHideout_UnusedRubyMap2:weather",
+      "path": "maps/AquaHideout_UnusedRubyMap2.json",
+      "sourcePath": "data/maps/AquaHideout_UnusedRubyMap2/map.json",
+      "legacyKind": "map_weather",
+      "map": "AquaHideout_UnusedRubyMap2"
+    },
+    {
+      "id": "AquaHideout_UnusedRubyMap3:weather",
+      "path": "maps/AquaHideout_UnusedRubyMap3.json",
+      "sourcePath": "data/maps/AquaHideout_UnusedRubyMap3/map.json",
+      "legacyKind": "map_weather",
+      "map": "AquaHideout_UnusedRubyMap3"
+    },
+    {
+      "id": "ArtisanCave_1F:weather",
+      "path": "maps/ArtisanCave_1F.json",
+      "sourcePath": "data/maps/ArtisanCave_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "ArtisanCave_1F"
+    },
+    {
+      "id": "ArtisanCave_B1F:weather",
+      "path": "maps/ArtisanCave_B1F.json",
+      "sourcePath": "data/maps/ArtisanCave_B1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "ArtisanCave_B1F"
+    },
+    {
+      "id": "BattleColosseum_2P:weather",
+      "path": "maps/BattleColosseum_2P.json",
+      "sourcePath": "data/maps/BattleColosseum_2P/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleColosseum_2P"
+    },
+    {
+      "id": "BattleColosseum_4P:weather",
+      "path": "maps/BattleColosseum_4P.json",
+      "sourcePath": "data/maps/BattleColosseum_4P/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleColosseum_4P"
+    },
+    {
+      "id": "BattleFrontier_BattleArenaBattleRoom:weather",
+      "path": "maps/BattleFrontier_BattleArenaBattleRoom.json",
+      "sourcePath": "data/maps/BattleFrontier_BattleArenaBattleRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattleArenaBattleRoom"
+    },
+    {
+      "id": "BattleFrontier_BattleArenaCorridor:weather",
+      "path": "maps/BattleFrontier_BattleArenaCorridor.json",
+      "sourcePath": "data/maps/BattleFrontier_BattleArenaCorridor/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattleArenaCorridor"
+    },
+    {
+      "id": "BattleFrontier_BattleArenaLobby:weather",
+      "path": "maps/BattleFrontier_BattleArenaLobby.json",
+      "sourcePath": "data/maps/BattleFrontier_BattleArenaLobby/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattleArenaLobby"
+    },
+    {
+      "id": "BattleFrontier_BattleDomeBattleRoom:weather",
+      "path": "maps/BattleFrontier_BattleDomeBattleRoom.json",
+      "sourcePath": "data/maps/BattleFrontier_BattleDomeBattleRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattleDomeBattleRoom"
+    },
+    {
+      "id": "BattleFrontier_BattleDomeCorridor:weather",
+      "path": "maps/BattleFrontier_BattleDomeCorridor.json",
+      "sourcePath": "data/maps/BattleFrontier_BattleDomeCorridor/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattleDomeCorridor"
+    },
+    {
+      "id": "BattleFrontier_BattleDomeLobby:weather",
+      "path": "maps/BattleFrontier_BattleDomeLobby.json",
+      "sourcePath": "data/maps/BattleFrontier_BattleDomeLobby/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattleDomeLobby"
+    },
+    {
+      "id": "BattleFrontier_BattleDomePreBattleRoom:weather",
+      "path": "maps/BattleFrontier_BattleDomePreBattleRoom.json",
+      "sourcePath": "data/maps/BattleFrontier_BattleDomePreBattleRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattleDomePreBattleRoom"
+    },
+    {
+      "id": "BattleFrontier_BattleFactoryBattleRoom:weather",
+      "path": "maps/BattleFrontier_BattleFactoryBattleRoom.json",
+      "sourcePath": "data/maps/BattleFrontier_BattleFactoryBattleRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattleFactoryBattleRoom"
+    },
+    {
+      "id": "BattleFrontier_BattleFactoryLobby:weather",
+      "path": "maps/BattleFrontier_BattleFactoryLobby.json",
+      "sourcePath": "data/maps/BattleFrontier_BattleFactoryLobby/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattleFactoryLobby"
+    },
+    {
+      "id": "BattleFrontier_BattleFactoryPreBattleRoom:weather",
+      "path": "maps/BattleFrontier_BattleFactoryPreBattleRoom.json",
+      "sourcePath": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattleFactoryPreBattleRoom"
+    },
+    {
+      "id": "BattleFrontier_BattlePalaceBattleRoom:weather",
+      "path": "maps/BattleFrontier_BattlePalaceBattleRoom.json",
+      "sourcePath": "data/maps/BattleFrontier_BattlePalaceBattleRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattlePalaceBattleRoom"
+    },
+    {
+      "id": "BattleFrontier_BattlePalaceCorridor:weather",
+      "path": "maps/BattleFrontier_BattlePalaceCorridor.json",
+      "sourcePath": "data/maps/BattleFrontier_BattlePalaceCorridor/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattlePalaceCorridor"
+    },
+    {
+      "id": "BattleFrontier_BattlePalaceLobby:weather",
+      "path": "maps/BattleFrontier_BattlePalaceLobby.json",
+      "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattlePalaceLobby"
+    },
+    {
+      "id": "BattleFrontier_BattlePikeCorridor:weather",
+      "path": "maps/BattleFrontier_BattlePikeCorridor.json",
+      "sourcePath": "data/maps/BattleFrontier_BattlePikeCorridor/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattlePikeCorridor"
+    },
+    {
+      "id": "BattleFrontier_BattlePikeLobby:weather",
+      "path": "maps/BattleFrontier_BattlePikeLobby.json",
+      "sourcePath": "data/maps/BattleFrontier_BattlePikeLobby/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattlePikeLobby"
+    },
+    {
+      "id": "BattleFrontier_BattlePikeRoomFinal:weather",
+      "path": "maps/BattleFrontier_BattlePikeRoomFinal.json",
+      "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomFinal/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattlePikeRoomFinal"
+    },
+    {
+      "id": "BattleFrontier_BattlePikeRoomNormal:weather",
+      "path": "maps/BattleFrontier_BattlePikeRoomNormal.json",
+      "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomNormal/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattlePikeRoomNormal"
+    },
+    {
+      "id": "BattleFrontier_BattlePikeRoomWildMons:weather",
+      "path": "maps/BattleFrontier_BattlePikeRoomWildMons.json",
+      "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomWildMons/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattlePikeRoomWildMons"
+    },
+    {
+      "id": "BattleFrontier_BattlePikeThreePathRoom:weather",
+      "path": "maps/BattleFrontier_BattlePikeThreePathRoom.json",
+      "sourcePath": "data/maps/BattleFrontier_BattlePikeThreePathRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattlePikeThreePathRoom"
+    },
+    {
+      "id": "BattleFrontier_BattlePyramidFloor:weather",
+      "path": "maps/BattleFrontier_BattlePyramidFloor.json",
+      "sourcePath": "data/maps/BattleFrontier_BattlePyramidFloor/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattlePyramidFloor"
+    },
+    {
+      "id": "BattleFrontier_BattlePyramidLobby:weather",
+      "path": "maps/BattleFrontier_BattlePyramidLobby.json",
+      "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattlePyramidLobby"
+    },
+    {
+      "id": "BattleFrontier_BattlePyramidTop:weather",
+      "path": "maps/BattleFrontier_BattlePyramidTop.json",
+      "sourcePath": "data/maps/BattleFrontier_BattlePyramidTop/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattlePyramidTop"
+    },
+    {
+      "id": "BattleFrontier_BattleTowerBattleRoom:weather",
+      "path": "maps/BattleFrontier_BattleTowerBattleRoom.json",
+      "sourcePath": "data/maps/BattleFrontier_BattleTowerBattleRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattleTowerBattleRoom"
+    },
+    {
+      "id": "BattleFrontier_BattleTowerCorridor:weather",
+      "path": "maps/BattleFrontier_BattleTowerCorridor.json",
+      "sourcePath": "data/maps/BattleFrontier_BattleTowerCorridor/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattleTowerCorridor"
+    },
+    {
+      "id": "BattleFrontier_BattleTowerElevator:weather",
+      "path": "maps/BattleFrontier_BattleTowerElevator.json",
+      "sourcePath": "data/maps/BattleFrontier_BattleTowerElevator/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattleTowerElevator"
+    },
+    {
+      "id": "BattleFrontier_BattleTowerLobby:weather",
+      "path": "maps/BattleFrontier_BattleTowerLobby.json",
+      "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattleTowerLobby"
+    },
+    {
+      "id": "BattleFrontier_BattleTowerMultiBattleRoom:weather",
+      "path": "maps/BattleFrontier_BattleTowerMultiBattleRoom.json",
+      "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattleTowerMultiBattleRoom"
+    },
+    {
+      "id": "BattleFrontier_BattleTowerMultiCorridor:weather",
+      "path": "maps/BattleFrontier_BattleTowerMultiCorridor.json",
+      "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiCorridor/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattleTowerMultiCorridor"
+    },
+    {
+      "id": "BattleFrontier_BattleTowerMultiPartnerRoom:weather",
+      "path": "maps/BattleFrontier_BattleTowerMultiPartnerRoom.json",
+      "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_BattleTowerMultiPartnerRoom"
+    },
+    {
+      "id": "BattleFrontier_ExchangeServiceCorner:weather",
+      "path": "maps/BattleFrontier_ExchangeServiceCorner.json",
+      "sourcePath": "data/maps/BattleFrontier_ExchangeServiceCorner/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_ExchangeServiceCorner"
+    },
+    {
+      "id": "BattleFrontier_Lounge1:weather",
+      "path": "maps/BattleFrontier_Lounge1.json",
+      "sourcePath": "data/maps/BattleFrontier_Lounge1/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_Lounge1"
+    },
+    {
+      "id": "BattleFrontier_Lounge2:weather",
+      "path": "maps/BattleFrontier_Lounge2.json",
+      "sourcePath": "data/maps/BattleFrontier_Lounge2/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_Lounge2"
+    },
+    {
+      "id": "BattleFrontier_Lounge3:weather",
+      "path": "maps/BattleFrontier_Lounge3.json",
+      "sourcePath": "data/maps/BattleFrontier_Lounge3/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_Lounge3"
+    },
+    {
+      "id": "BattleFrontier_Lounge4:weather",
+      "path": "maps/BattleFrontier_Lounge4.json",
+      "sourcePath": "data/maps/BattleFrontier_Lounge4/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_Lounge4"
+    },
+    {
+      "id": "BattleFrontier_Lounge5:weather",
+      "path": "maps/BattleFrontier_Lounge5.json",
+      "sourcePath": "data/maps/BattleFrontier_Lounge5/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_Lounge5"
+    },
+    {
+      "id": "BattleFrontier_Lounge6:weather",
+      "path": "maps/BattleFrontier_Lounge6.json",
+      "sourcePath": "data/maps/BattleFrontier_Lounge6/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_Lounge6"
+    },
+    {
+      "id": "BattleFrontier_Lounge7:weather",
+      "path": "maps/BattleFrontier_Lounge7.json",
+      "sourcePath": "data/maps/BattleFrontier_Lounge7/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_Lounge7"
+    },
+    {
+      "id": "BattleFrontier_Lounge8:weather",
+      "path": "maps/BattleFrontier_Lounge8.json",
+      "sourcePath": "data/maps/BattleFrontier_Lounge8/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_Lounge8"
+    },
+    {
+      "id": "BattleFrontier_Lounge9:weather",
+      "path": "maps/BattleFrontier_Lounge9.json",
+      "sourcePath": "data/maps/BattleFrontier_Lounge9/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_Lounge9"
+    },
+    {
+      "id": "BattleFrontier_Mart:weather",
+      "path": "maps/BattleFrontier_Mart.json",
+      "sourcePath": "data/maps/BattleFrontier_Mart/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_Mart"
+    },
+    {
+      "id": "BattleFrontier_OutsideEast:weather",
+      "path": "maps/BattleFrontier_OutsideEast.json",
+      "sourcePath": "data/maps/BattleFrontier_OutsideEast/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_OutsideEast"
+    },
+    {
+      "id": "BattleFrontier_OutsideWest:weather",
+      "path": "maps/BattleFrontier_OutsideWest.json",
+      "sourcePath": "data/maps/BattleFrontier_OutsideWest/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_OutsideWest"
+    },
+    {
+      "id": "BattleFrontier_PokemonCenter_1F:weather",
+      "path": "maps/BattleFrontier_PokemonCenter_1F.json",
+      "sourcePath": "data/maps/BattleFrontier_PokemonCenter_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_PokemonCenter_1F"
+    },
+    {
+      "id": "BattleFrontier_PokemonCenter_2F:weather",
+      "path": "maps/BattleFrontier_PokemonCenter_2F.json",
+      "sourcePath": "data/maps/BattleFrontier_PokemonCenter_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_PokemonCenter_2F"
+    },
+    {
+      "id": "BattleFrontier_RankingHall:weather",
+      "path": "maps/BattleFrontier_RankingHall.json",
+      "sourcePath": "data/maps/BattleFrontier_RankingHall/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_RankingHall"
+    },
+    {
+      "id": "BattleFrontier_ReceptionGate:weather",
+      "path": "maps/BattleFrontier_ReceptionGate.json",
+      "sourcePath": "data/maps/BattleFrontier_ReceptionGate/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_ReceptionGate"
+    },
+    {
+      "id": "BattleFrontier_ScottsHouse:weather",
+      "path": "maps/BattleFrontier_ScottsHouse.json",
+      "sourcePath": "data/maps/BattleFrontier_ScottsHouse/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattleFrontier_ScottsHouse"
+    },
+    {
+      "id": "BattlePyramidSquare01:weather",
+      "path": "maps/BattlePyramidSquare01.json",
+      "sourcePath": "data/maps/BattlePyramidSquare01/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattlePyramidSquare01"
+    },
+    {
+      "id": "BattlePyramidSquare02:weather",
+      "path": "maps/BattlePyramidSquare02.json",
+      "sourcePath": "data/maps/BattlePyramidSquare02/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattlePyramidSquare02"
+    },
+    {
+      "id": "BattlePyramidSquare03:weather",
+      "path": "maps/BattlePyramidSquare03.json",
+      "sourcePath": "data/maps/BattlePyramidSquare03/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattlePyramidSquare03"
+    },
+    {
+      "id": "BattlePyramidSquare04:weather",
+      "path": "maps/BattlePyramidSquare04.json",
+      "sourcePath": "data/maps/BattlePyramidSquare04/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattlePyramidSquare04"
+    },
+    {
+      "id": "BattlePyramidSquare05:weather",
+      "path": "maps/BattlePyramidSquare05.json",
+      "sourcePath": "data/maps/BattlePyramidSquare05/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattlePyramidSquare05"
+    },
+    {
+      "id": "BattlePyramidSquare06:weather",
+      "path": "maps/BattlePyramidSquare06.json",
+      "sourcePath": "data/maps/BattlePyramidSquare06/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattlePyramidSquare06"
+    },
+    {
+      "id": "BattlePyramidSquare07:weather",
+      "path": "maps/BattlePyramidSquare07.json",
+      "sourcePath": "data/maps/BattlePyramidSquare07/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattlePyramidSquare07"
+    },
+    {
+      "id": "BattlePyramidSquare08:weather",
+      "path": "maps/BattlePyramidSquare08.json",
+      "sourcePath": "data/maps/BattlePyramidSquare08/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattlePyramidSquare08"
+    },
+    {
+      "id": "BattlePyramidSquare09:weather",
+      "path": "maps/BattlePyramidSquare09.json",
+      "sourcePath": "data/maps/BattlePyramidSquare09/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattlePyramidSquare09"
+    },
+    {
+      "id": "BattlePyramidSquare10:weather",
+      "path": "maps/BattlePyramidSquare10.json",
+      "sourcePath": "data/maps/BattlePyramidSquare10/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattlePyramidSquare10"
+    },
+    {
+      "id": "BattlePyramidSquare11:weather",
+      "path": "maps/BattlePyramidSquare11.json",
+      "sourcePath": "data/maps/BattlePyramidSquare11/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattlePyramidSquare11"
+    },
+    {
+      "id": "BattlePyramidSquare12:weather",
+      "path": "maps/BattlePyramidSquare12.json",
+      "sourcePath": "data/maps/BattlePyramidSquare12/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattlePyramidSquare12"
+    },
+    {
+      "id": "BattlePyramidSquare13:weather",
+      "path": "maps/BattlePyramidSquare13.json",
+      "sourcePath": "data/maps/BattlePyramidSquare13/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattlePyramidSquare13"
+    },
+    {
+      "id": "BattlePyramidSquare14:weather",
+      "path": "maps/BattlePyramidSquare14.json",
+      "sourcePath": "data/maps/BattlePyramidSquare14/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattlePyramidSquare14"
+    },
+    {
+      "id": "BattlePyramidSquare15:weather",
+      "path": "maps/BattlePyramidSquare15.json",
+      "sourcePath": "data/maps/BattlePyramidSquare15/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattlePyramidSquare15"
+    },
+    {
+      "id": "BattlePyramidSquare16:weather",
+      "path": "maps/BattlePyramidSquare16.json",
+      "sourcePath": "data/maps/BattlePyramidSquare16/map.json",
+      "legacyKind": "map_weather",
+      "map": "BattlePyramidSquare16"
+    },
+    {
+      "id": "BirthIsland_Exterior:weather",
+      "path": "maps/BirthIsland_Exterior.json",
+      "sourcePath": "data/maps/BirthIsland_Exterior/map.json",
+      "legacyKind": "map_weather",
+      "map": "BirthIsland_Exterior"
+    },
+    {
+      "id": "BirthIsland_Harbor:weather",
+      "path": "maps/BirthIsland_Harbor.json",
+      "sourcePath": "data/maps/BirthIsland_Harbor/map.json",
+      "legacyKind": "map_weather",
+      "map": "BirthIsland_Harbor"
+    },
+    {
+      "id": "CaveOfOrigin_1F:weather",
+      "path": "maps/CaveOfOrigin_1F.json",
+      "sourcePath": "data/maps/CaveOfOrigin_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "CaveOfOrigin_1F"
+    },
+    {
+      "id": "CaveOfOrigin_B1F:weather",
+      "path": "maps/CaveOfOrigin_B1F.json",
+      "sourcePath": "data/maps/CaveOfOrigin_B1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "CaveOfOrigin_B1F"
+    },
+    {
+      "id": "CaveOfOrigin_Entrance:weather",
+      "path": "maps/CaveOfOrigin_Entrance.json",
+      "sourcePath": "data/maps/CaveOfOrigin_Entrance/map.json",
+      "legacyKind": "map_weather",
+      "map": "CaveOfOrigin_Entrance"
+    },
+    {
+      "id": "CaveOfOrigin_UnusedRubySapphireMap1:weather",
+      "path": "maps/CaveOfOrigin_UnusedRubySapphireMap1.json",
+      "sourcePath": "data/maps/CaveOfOrigin_UnusedRubySapphireMap1/map.json",
+      "legacyKind": "map_weather",
+      "map": "CaveOfOrigin_UnusedRubySapphireMap1"
+    },
+    {
+      "id": "CaveOfOrigin_UnusedRubySapphireMap2:weather",
+      "path": "maps/CaveOfOrigin_UnusedRubySapphireMap2.json",
+      "sourcePath": "data/maps/CaveOfOrigin_UnusedRubySapphireMap2/map.json",
+      "legacyKind": "map_weather",
+      "map": "CaveOfOrigin_UnusedRubySapphireMap2"
+    },
+    {
+      "id": "CaveOfOrigin_UnusedRubySapphireMap3:weather",
+      "path": "maps/CaveOfOrigin_UnusedRubySapphireMap3.json",
+      "sourcePath": "data/maps/CaveOfOrigin_UnusedRubySapphireMap3/map.json",
+      "legacyKind": "map_weather",
+      "map": "CaveOfOrigin_UnusedRubySapphireMap3"
+    },
+    {
+      "id": "ContestHall:weather",
+      "path": "maps/ContestHall.json",
+      "sourcePath": "data/maps/ContestHall/map.json",
+      "legacyKind": "map_weather",
+      "map": "ContestHall"
+    },
+    {
+      "id": "ContestHallBeauty:weather",
+      "path": "maps/ContestHallBeauty.json",
+      "sourcePath": "data/maps/ContestHallBeauty/map.json",
+      "legacyKind": "map_weather",
+      "map": "ContestHallBeauty"
+    },
+    {
+      "id": "ContestHallCool:weather",
+      "path": "maps/ContestHallCool.json",
+      "sourcePath": "data/maps/ContestHallCool/map.json",
+      "legacyKind": "map_weather",
+      "map": "ContestHallCool"
+    },
+    {
+      "id": "ContestHallCute:weather",
+      "path": "maps/ContestHallCute.json",
+      "sourcePath": "data/maps/ContestHallCute/map.json",
+      "legacyKind": "map_weather",
+      "map": "ContestHallCute"
+    },
+    {
+      "id": "ContestHallSmart:weather",
+      "path": "maps/ContestHallSmart.json",
+      "sourcePath": "data/maps/ContestHallSmart/map.json",
+      "legacyKind": "map_weather",
+      "map": "ContestHallSmart"
+    },
+    {
+      "id": "ContestHallTough:weather",
+      "path": "maps/ContestHallTough.json",
+      "sourcePath": "data/maps/ContestHallTough/map.json",
+      "legacyKind": "map_weather",
+      "map": "ContestHallTough"
+    },
+    {
+      "id": "DesertRuins:weather",
+      "path": "maps/DesertRuins.json",
+      "sourcePath": "data/maps/DesertRuins/map.json",
+      "legacyKind": "map_weather",
+      "map": "DesertRuins"
+    },
+    {
+      "id": "DesertUnderpass:weather",
+      "path": "maps/DesertUnderpass.json",
+      "sourcePath": "data/maps/DesertUnderpass/map.json",
+      "legacyKind": "map_weather",
+      "map": "DesertUnderpass"
+    },
+    {
+      "id": "DewfordTown:weather",
+      "path": "maps/DewfordTown.json",
+      "sourcePath": "data/maps/DewfordTown/map.json",
+      "legacyKind": "map_weather",
+      "map": "DewfordTown"
+    },
+    {
+      "id": "DewfordTown_Gym:weather",
+      "path": "maps/DewfordTown_Gym.json",
+      "sourcePath": "data/maps/DewfordTown_Gym/map.json",
+      "legacyKind": "map_weather",
+      "map": "DewfordTown_Gym"
+    },
+    {
+      "id": "DewfordTown_Hall:weather",
+      "path": "maps/DewfordTown_Hall.json",
+      "sourcePath": "data/maps/DewfordTown_Hall/map.json",
+      "legacyKind": "map_weather",
+      "map": "DewfordTown_Hall"
+    },
+    {
+      "id": "DewfordTown_House1:weather",
+      "path": "maps/DewfordTown_House1.json",
+      "sourcePath": "data/maps/DewfordTown_House1/map.json",
+      "legacyKind": "map_weather",
+      "map": "DewfordTown_House1"
+    },
+    {
+      "id": "DewfordTown_House2:weather",
+      "path": "maps/DewfordTown_House2.json",
+      "sourcePath": "data/maps/DewfordTown_House2/map.json",
+      "legacyKind": "map_weather",
+      "map": "DewfordTown_House2"
+    },
+    {
+      "id": "DewfordTown_PokemonCenter_1F:weather",
+      "path": "maps/DewfordTown_PokemonCenter_1F.json",
+      "sourcePath": "data/maps/DewfordTown_PokemonCenter_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "DewfordTown_PokemonCenter_1F"
+    },
+    {
+      "id": "DewfordTown_PokemonCenter_2F:weather",
+      "path": "maps/DewfordTown_PokemonCenter_2F.json",
+      "sourcePath": "data/maps/DewfordTown_PokemonCenter_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "DewfordTown_PokemonCenter_2F"
+    },
+    {
+      "id": "EverGrandeCity:weather",
+      "path": "maps/EverGrandeCity.json",
+      "sourcePath": "data/maps/EverGrandeCity/map.json",
+      "legacyKind": "map_weather",
+      "map": "EverGrandeCity"
+    },
+    {
+      "id": "EverGrandeCity_ChampionsRoom:weather",
+      "path": "maps/EverGrandeCity_ChampionsRoom.json",
+      "sourcePath": "data/maps/EverGrandeCity_ChampionsRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "EverGrandeCity_ChampionsRoom"
+    },
+    {
+      "id": "EverGrandeCity_DrakesRoom:weather",
+      "path": "maps/EverGrandeCity_DrakesRoom.json",
+      "sourcePath": "data/maps/EverGrandeCity_DrakesRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "EverGrandeCity_DrakesRoom"
+    },
+    {
+      "id": "EverGrandeCity_GlaciasRoom:weather",
+      "path": "maps/EverGrandeCity_GlaciasRoom.json",
+      "sourcePath": "data/maps/EverGrandeCity_GlaciasRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "EverGrandeCity_GlaciasRoom"
+    },
+    {
+      "id": "EverGrandeCity_Hall1:weather",
+      "path": "maps/EverGrandeCity_Hall1.json",
+      "sourcePath": "data/maps/EverGrandeCity_Hall1/map.json",
+      "legacyKind": "map_weather",
+      "map": "EverGrandeCity_Hall1"
+    },
+    {
+      "id": "EverGrandeCity_Hall2:weather",
+      "path": "maps/EverGrandeCity_Hall2.json",
+      "sourcePath": "data/maps/EverGrandeCity_Hall2/map.json",
+      "legacyKind": "map_weather",
+      "map": "EverGrandeCity_Hall2"
+    },
+    {
+      "id": "EverGrandeCity_Hall3:weather",
+      "path": "maps/EverGrandeCity_Hall3.json",
+      "sourcePath": "data/maps/EverGrandeCity_Hall3/map.json",
+      "legacyKind": "map_weather",
+      "map": "EverGrandeCity_Hall3"
+    },
+    {
+      "id": "EverGrandeCity_Hall4:weather",
+      "path": "maps/EverGrandeCity_Hall4.json",
+      "sourcePath": "data/maps/EverGrandeCity_Hall4/map.json",
+      "legacyKind": "map_weather",
+      "map": "EverGrandeCity_Hall4"
+    },
+    {
+      "id": "EverGrandeCity_Hall5:weather",
+      "path": "maps/EverGrandeCity_Hall5.json",
+      "sourcePath": "data/maps/EverGrandeCity_Hall5/map.json",
+      "legacyKind": "map_weather",
+      "map": "EverGrandeCity_Hall5"
+    },
+    {
+      "id": "EverGrandeCity_HallOfFame:weather",
+      "path": "maps/EverGrandeCity_HallOfFame.json",
+      "sourcePath": "data/maps/EverGrandeCity_HallOfFame/map.json",
+      "legacyKind": "map_weather",
+      "map": "EverGrandeCity_HallOfFame"
+    },
+    {
+      "id": "EverGrandeCity_PhoebesRoom:weather",
+      "path": "maps/EverGrandeCity_PhoebesRoom.json",
+      "sourcePath": "data/maps/EverGrandeCity_PhoebesRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "EverGrandeCity_PhoebesRoom"
+    },
+    {
+      "id": "EverGrandeCity_PokemonCenter_1F:weather",
+      "path": "maps/EverGrandeCity_PokemonCenter_1F.json",
+      "sourcePath": "data/maps/EverGrandeCity_PokemonCenter_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "EverGrandeCity_PokemonCenter_1F"
+    },
+    {
+      "id": "EverGrandeCity_PokemonCenter_2F:weather",
+      "path": "maps/EverGrandeCity_PokemonCenter_2F.json",
+      "sourcePath": "data/maps/EverGrandeCity_PokemonCenter_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "EverGrandeCity_PokemonCenter_2F"
+    },
+    {
+      "id": "EverGrandeCity_PokemonLeague_1F:weather",
+      "path": "maps/EverGrandeCity_PokemonLeague_1F.json",
+      "sourcePath": "data/maps/EverGrandeCity_PokemonLeague_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "EverGrandeCity_PokemonLeague_1F"
+    },
+    {
+      "id": "EverGrandeCity_PokemonLeague_2F:weather",
+      "path": "maps/EverGrandeCity_PokemonLeague_2F.json",
+      "sourcePath": "data/maps/EverGrandeCity_PokemonLeague_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "EverGrandeCity_PokemonLeague_2F"
+    },
+    {
+      "id": "EverGrandeCity_SidneysRoom:weather",
+      "path": "maps/EverGrandeCity_SidneysRoom.json",
+      "sourcePath": "data/maps/EverGrandeCity_SidneysRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "EverGrandeCity_SidneysRoom"
+    },
+    {
+      "id": "FallarborTown:weather",
+      "path": "maps/FallarborTown.json",
+      "sourcePath": "data/maps/FallarborTown/map.json",
+      "legacyKind": "map_weather",
+      "map": "FallarborTown"
+    },
+    {
+      "id": "FallarborTown_BattleTentBattleRoom:weather",
+      "path": "maps/FallarborTown_BattleTentBattleRoom.json",
+      "sourcePath": "data/maps/FallarborTown_BattleTentBattleRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "FallarborTown_BattleTentBattleRoom"
+    },
+    {
+      "id": "FallarborTown_BattleTentCorridor:weather",
+      "path": "maps/FallarborTown_BattleTentCorridor.json",
+      "sourcePath": "data/maps/FallarborTown_BattleTentCorridor/map.json",
+      "legacyKind": "map_weather",
+      "map": "FallarborTown_BattleTentCorridor"
+    },
+    {
+      "id": "FallarborTown_BattleTentLobby:weather",
+      "path": "maps/FallarborTown_BattleTentLobby.json",
+      "sourcePath": "data/maps/FallarborTown_BattleTentLobby/map.json",
+      "legacyKind": "map_weather",
+      "map": "FallarborTown_BattleTentLobby"
+    },
+    {
+      "id": "FallarborTown_CozmosHouse:weather",
+      "path": "maps/FallarborTown_CozmosHouse.json",
+      "sourcePath": "data/maps/FallarborTown_CozmosHouse/map.json",
+      "legacyKind": "map_weather",
+      "map": "FallarborTown_CozmosHouse"
+    },
+    {
+      "id": "FallarborTown_Mart:weather",
+      "path": "maps/FallarborTown_Mart.json",
+      "sourcePath": "data/maps/FallarborTown_Mart/map.json",
+      "legacyKind": "map_weather",
+      "map": "FallarborTown_Mart"
+    },
+    {
+      "id": "FallarborTown_MoveRelearnersHouse:weather",
+      "path": "maps/FallarborTown_MoveRelearnersHouse.json",
+      "sourcePath": "data/maps/FallarborTown_MoveRelearnersHouse/map.json",
+      "legacyKind": "map_weather",
+      "map": "FallarborTown_MoveRelearnersHouse"
+    },
+    {
+      "id": "FallarborTown_PokemonCenter_1F:weather",
+      "path": "maps/FallarborTown_PokemonCenter_1F.json",
+      "sourcePath": "data/maps/FallarborTown_PokemonCenter_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "FallarborTown_PokemonCenter_1F"
+    },
+    {
+      "id": "FallarborTown_PokemonCenter_2F:weather",
+      "path": "maps/FallarborTown_PokemonCenter_2F.json",
+      "sourcePath": "data/maps/FallarborTown_PokemonCenter_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "FallarborTown_PokemonCenter_2F"
+    },
+    {
+      "id": "FarawayIsland_Entrance:weather",
+      "path": "maps/FarawayIsland_Entrance.json",
+      "sourcePath": "data/maps/FarawayIsland_Entrance/map.json",
+      "legacyKind": "map_weather",
+      "map": "FarawayIsland_Entrance"
+    },
+    {
+      "id": "FarawayIsland_Interior:weather",
+      "path": "maps/FarawayIsland_Interior.json",
+      "sourcePath": "data/maps/FarawayIsland_Interior/map.json",
+      "legacyKind": "map_weather",
+      "map": "FarawayIsland_Interior"
+    },
+    {
+      "id": "FieryPath:weather",
+      "path": "maps/FieryPath.json",
+      "sourcePath": "data/maps/FieryPath/map.json",
+      "legacyKind": "map_weather",
+      "map": "FieryPath"
+    },
+    {
+      "id": "FortreeCity:weather",
+      "path": "maps/FortreeCity.json",
+      "sourcePath": "data/maps/FortreeCity/map.json",
+      "legacyKind": "map_weather",
+      "map": "FortreeCity"
+    },
+    {
+      "id": "FortreeCity_DecorationShop:weather",
+      "path": "maps/FortreeCity_DecorationShop.json",
+      "sourcePath": "data/maps/FortreeCity_DecorationShop/map.json",
+      "legacyKind": "map_weather",
+      "map": "FortreeCity_DecorationShop"
+    },
+    {
+      "id": "FortreeCity_Gym:weather",
+      "path": "maps/FortreeCity_Gym.json",
+      "sourcePath": "data/maps/FortreeCity_Gym/map.json",
+      "legacyKind": "map_weather",
+      "map": "FortreeCity_Gym"
+    },
+    {
+      "id": "FortreeCity_House1:weather",
+      "path": "maps/FortreeCity_House1.json",
+      "sourcePath": "data/maps/FortreeCity_House1/map.json",
+      "legacyKind": "map_weather",
+      "map": "FortreeCity_House1"
+    },
+    {
+      "id": "FortreeCity_House2:weather",
+      "path": "maps/FortreeCity_House2.json",
+      "sourcePath": "data/maps/FortreeCity_House2/map.json",
+      "legacyKind": "map_weather",
+      "map": "FortreeCity_House2"
+    },
+    {
+      "id": "FortreeCity_House3:weather",
+      "path": "maps/FortreeCity_House3.json",
+      "sourcePath": "data/maps/FortreeCity_House3/map.json",
+      "legacyKind": "map_weather",
+      "map": "FortreeCity_House3"
+    },
+    {
+      "id": "FortreeCity_House4:weather",
+      "path": "maps/FortreeCity_House4.json",
+      "sourcePath": "data/maps/FortreeCity_House4/map.json",
+      "legacyKind": "map_weather",
+      "map": "FortreeCity_House4"
+    },
+    {
+      "id": "FortreeCity_House5:weather",
+      "path": "maps/FortreeCity_House5.json",
+      "sourcePath": "data/maps/FortreeCity_House5/map.json",
+      "legacyKind": "map_weather",
+      "map": "FortreeCity_House5"
+    },
+    {
+      "id": "FortreeCity_Mart:weather",
+      "path": "maps/FortreeCity_Mart.json",
+      "sourcePath": "data/maps/FortreeCity_Mart/map.json",
+      "legacyKind": "map_weather",
+      "map": "FortreeCity_Mart"
+    },
+    {
+      "id": "FortreeCity_PokemonCenter_1F:weather",
+      "path": "maps/FortreeCity_PokemonCenter_1F.json",
+      "sourcePath": "data/maps/FortreeCity_PokemonCenter_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "FortreeCity_PokemonCenter_1F"
+    },
+    {
+      "id": "FortreeCity_PokemonCenter_2F:weather",
+      "path": "maps/FortreeCity_PokemonCenter_2F.json",
+      "sourcePath": "data/maps/FortreeCity_PokemonCenter_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "FortreeCity_PokemonCenter_2F"
+    },
+    {
+      "id": "GraniteCave_1F:weather",
+      "path": "maps/GraniteCave_1F.json",
+      "sourcePath": "data/maps/GraniteCave_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "GraniteCave_1F"
+    },
+    {
+      "id": "GraniteCave_B1F:weather",
+      "path": "maps/GraniteCave_B1F.json",
+      "sourcePath": "data/maps/GraniteCave_B1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "GraniteCave_B1F"
+    },
+    {
+      "id": "GraniteCave_B2F:weather",
+      "path": "maps/GraniteCave_B2F.json",
+      "sourcePath": "data/maps/GraniteCave_B2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "GraniteCave_B2F"
+    },
+    {
+      "id": "GraniteCave_StevensRoom:weather",
+      "path": "maps/GraniteCave_StevensRoom.json",
+      "sourcePath": "data/maps/GraniteCave_StevensRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "GraniteCave_StevensRoom"
+    },
+    {
+      "id": "InsideOfTruck:weather",
+      "path": "maps/InsideOfTruck.json",
+      "sourcePath": "data/maps/InsideOfTruck/map.json",
+      "legacyKind": "map_weather",
+      "map": "InsideOfTruck"
+    },
+    {
+      "id": "IslandCave:weather",
+      "path": "maps/IslandCave.json",
+      "sourcePath": "data/maps/IslandCave/map.json",
+      "legacyKind": "map_weather",
+      "map": "IslandCave"
+    },
+    {
+      "id": "JaggedPass:weather",
+      "path": "maps/JaggedPass.json",
+      "sourcePath": "data/maps/JaggedPass/map.json",
+      "legacyKind": "map_weather",
+      "map": "JaggedPass"
+    },
+    {
+      "id": "LavaridgeTown:weather",
+      "path": "maps/LavaridgeTown.json",
+      "sourcePath": "data/maps/LavaridgeTown/map.json",
+      "legacyKind": "map_weather",
+      "map": "LavaridgeTown"
+    },
+    {
+      "id": "LavaridgeTown_Gym_1F:weather",
+      "path": "maps/LavaridgeTown_Gym_1F.json",
+      "sourcePath": "data/maps/LavaridgeTown_Gym_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "LavaridgeTown_Gym_1F"
+    },
+    {
+      "id": "LavaridgeTown_Gym_B1F:weather",
+      "path": "maps/LavaridgeTown_Gym_B1F.json",
+      "sourcePath": "data/maps/LavaridgeTown_Gym_B1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "LavaridgeTown_Gym_B1F"
+    },
+    {
+      "id": "LavaridgeTown_HerbShop:weather",
+      "path": "maps/LavaridgeTown_HerbShop.json",
+      "sourcePath": "data/maps/LavaridgeTown_HerbShop/map.json",
+      "legacyKind": "map_weather",
+      "map": "LavaridgeTown_HerbShop"
+    },
+    {
+      "id": "LavaridgeTown_House:weather",
+      "path": "maps/LavaridgeTown_House.json",
+      "sourcePath": "data/maps/LavaridgeTown_House/map.json",
+      "legacyKind": "map_weather",
+      "map": "LavaridgeTown_House"
+    },
+    {
+      "id": "LavaridgeTown_Mart:weather",
+      "path": "maps/LavaridgeTown_Mart.json",
+      "sourcePath": "data/maps/LavaridgeTown_Mart/map.json",
+      "legacyKind": "map_weather",
+      "map": "LavaridgeTown_Mart"
+    },
+    {
+      "id": "LavaridgeTown_PokemonCenter_1F:weather",
+      "path": "maps/LavaridgeTown_PokemonCenter_1F.json",
+      "sourcePath": "data/maps/LavaridgeTown_PokemonCenter_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "LavaridgeTown_PokemonCenter_1F"
+    },
+    {
+      "id": "LavaridgeTown_PokemonCenter_2F:weather",
+      "path": "maps/LavaridgeTown_PokemonCenter_2F.json",
+      "sourcePath": "data/maps/LavaridgeTown_PokemonCenter_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "LavaridgeTown_PokemonCenter_2F"
+    },
+    {
+      "id": "LilycoveCity:weather",
+      "path": "maps/LilycoveCity.json",
+      "sourcePath": "data/maps/LilycoveCity/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity"
+    },
+    {
+      "id": "LilycoveCity_ContestHall:weather",
+      "path": "maps/LilycoveCity_ContestHall.json",
+      "sourcePath": "data/maps/LilycoveCity_ContestHall/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_ContestHall"
+    },
+    {
+      "id": "LilycoveCity_ContestLobby:weather",
+      "path": "maps/LilycoveCity_ContestLobby.json",
+      "sourcePath": "data/maps/LilycoveCity_ContestLobby/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_ContestLobby"
+    },
+    {
+      "id": "LilycoveCity_CoveLilyMotel_1F:weather",
+      "path": "maps/LilycoveCity_CoveLilyMotel_1F.json",
+      "sourcePath": "data/maps/LilycoveCity_CoveLilyMotel_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_CoveLilyMotel_1F"
+    },
+    {
+      "id": "LilycoveCity_CoveLilyMotel_2F:weather",
+      "path": "maps/LilycoveCity_CoveLilyMotel_2F.json",
+      "sourcePath": "data/maps/LilycoveCity_CoveLilyMotel_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_CoveLilyMotel_2F"
+    },
+    {
+      "id": "LilycoveCity_DepartmentStoreElevator:weather",
+      "path": "maps/LilycoveCity_DepartmentStoreElevator.json",
+      "sourcePath": "data/maps/LilycoveCity_DepartmentStoreElevator/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_DepartmentStoreElevator"
+    },
+    {
+      "id": "LilycoveCity_DepartmentStoreRooftop:weather",
+      "path": "maps/LilycoveCity_DepartmentStoreRooftop.json",
+      "sourcePath": "data/maps/LilycoveCity_DepartmentStoreRooftop/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_DepartmentStoreRooftop"
+    },
+    {
+      "id": "LilycoveCity_DepartmentStore_1F:weather",
+      "path": "maps/LilycoveCity_DepartmentStore_1F.json",
+      "sourcePath": "data/maps/LilycoveCity_DepartmentStore_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_DepartmentStore_1F"
+    },
+    {
+      "id": "LilycoveCity_DepartmentStore_2F:weather",
+      "path": "maps/LilycoveCity_DepartmentStore_2F.json",
+      "sourcePath": "data/maps/LilycoveCity_DepartmentStore_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_DepartmentStore_2F"
+    },
+    {
+      "id": "LilycoveCity_DepartmentStore_3F:weather",
+      "path": "maps/LilycoveCity_DepartmentStore_3F.json",
+      "sourcePath": "data/maps/LilycoveCity_DepartmentStore_3F/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_DepartmentStore_3F"
+    },
+    {
+      "id": "LilycoveCity_DepartmentStore_4F:weather",
+      "path": "maps/LilycoveCity_DepartmentStore_4F.json",
+      "sourcePath": "data/maps/LilycoveCity_DepartmentStore_4F/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_DepartmentStore_4F"
+    },
+    {
+      "id": "LilycoveCity_DepartmentStore_5F:weather",
+      "path": "maps/LilycoveCity_DepartmentStore_5F.json",
+      "sourcePath": "data/maps/LilycoveCity_DepartmentStore_5F/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_DepartmentStore_5F"
+    },
+    {
+      "id": "LilycoveCity_Harbor:weather",
+      "path": "maps/LilycoveCity_Harbor.json",
+      "sourcePath": "data/maps/LilycoveCity_Harbor/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_Harbor"
+    },
+    {
+      "id": "LilycoveCity_House1:weather",
+      "path": "maps/LilycoveCity_House1.json",
+      "sourcePath": "data/maps/LilycoveCity_House1/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_House1"
+    },
+    {
+      "id": "LilycoveCity_House2:weather",
+      "path": "maps/LilycoveCity_House2.json",
+      "sourcePath": "data/maps/LilycoveCity_House2/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_House2"
+    },
+    {
+      "id": "LilycoveCity_House3:weather",
+      "path": "maps/LilycoveCity_House3.json",
+      "sourcePath": "data/maps/LilycoveCity_House3/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_House3"
+    },
+    {
+      "id": "LilycoveCity_House4:weather",
+      "path": "maps/LilycoveCity_House4.json",
+      "sourcePath": "data/maps/LilycoveCity_House4/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_House4"
+    },
+    {
+      "id": "LilycoveCity_LilycoveMuseum_1F:weather",
+      "path": "maps/LilycoveCity_LilycoveMuseum_1F.json",
+      "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_LilycoveMuseum_1F"
+    },
+    {
+      "id": "LilycoveCity_LilycoveMuseum_2F:weather",
+      "path": "maps/LilycoveCity_LilycoveMuseum_2F.json",
+      "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_LilycoveMuseum_2F"
+    },
+    {
+      "id": "LilycoveCity_MoveDeletersHouse:weather",
+      "path": "maps/LilycoveCity_MoveDeletersHouse.json",
+      "sourcePath": "data/maps/LilycoveCity_MoveDeletersHouse/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_MoveDeletersHouse"
+    },
+    {
+      "id": "LilycoveCity_PokemonCenter_1F:weather",
+      "path": "maps/LilycoveCity_PokemonCenter_1F.json",
+      "sourcePath": "data/maps/LilycoveCity_PokemonCenter_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_PokemonCenter_1F"
+    },
+    {
+      "id": "LilycoveCity_PokemonCenter_2F:weather",
+      "path": "maps/LilycoveCity_PokemonCenter_2F.json",
+      "sourcePath": "data/maps/LilycoveCity_PokemonCenter_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_PokemonCenter_2F"
+    },
+    {
+      "id": "LilycoveCity_PokemonTrainerFanClub:weather",
+      "path": "maps/LilycoveCity_PokemonTrainerFanClub.json",
+      "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_PokemonTrainerFanClub"
+    },
+    {
+      "id": "LilycoveCity_UnusedMart:weather",
+      "path": "maps/LilycoveCity_UnusedMart.json",
+      "sourcePath": "data/maps/LilycoveCity_UnusedMart/map.json",
+      "legacyKind": "map_weather",
+      "map": "LilycoveCity_UnusedMart"
+    },
+    {
+      "id": "LittlerootTown:weather",
+      "path": "maps/LittlerootTown.json",
+      "sourcePath": "data/maps/LittlerootTown/map.json",
+      "legacyKind": "map_weather",
+      "map": "LittlerootTown"
+    },
+    {
+      "id": "LittlerootTown_BrendansHouse_1F:weather",
+      "path": "maps/LittlerootTown_BrendansHouse_1F.json",
+      "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "LittlerootTown_BrendansHouse_1F"
+    },
+    {
+      "id": "LittlerootTown_BrendansHouse_2F:weather",
+      "path": "maps/LittlerootTown_BrendansHouse_2F.json",
+      "sourcePath": "data/maps/LittlerootTown_BrendansHouse_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "LittlerootTown_BrendansHouse_2F"
+    },
+    {
+      "id": "LittlerootTown_MaysHouse_1F:weather",
+      "path": "maps/LittlerootTown_MaysHouse_1F.json",
+      "sourcePath": "data/maps/LittlerootTown_MaysHouse_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "LittlerootTown_MaysHouse_1F"
+    },
+    {
+      "id": "LittlerootTown_MaysHouse_2F:weather",
+      "path": "maps/LittlerootTown_MaysHouse_2F.json",
+      "sourcePath": "data/maps/LittlerootTown_MaysHouse_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "LittlerootTown_MaysHouse_2F"
+    },
+    {
+      "id": "LittlerootTown_ProfessorBirchsLab:weather",
+      "path": "maps/LittlerootTown_ProfessorBirchsLab.json",
+      "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/map.json",
+      "legacyKind": "map_weather",
+      "map": "LittlerootTown_ProfessorBirchsLab"
+    },
+    {
+      "id": "MagmaHideout_1F:weather",
+      "path": "maps/MagmaHideout_1F.json",
+      "sourcePath": "data/maps/MagmaHideout_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "MagmaHideout_1F"
+    },
+    {
+      "id": "MagmaHideout_2F_1R:weather",
+      "path": "maps/MagmaHideout_2F_1R.json",
+      "sourcePath": "data/maps/MagmaHideout_2F_1R/map.json",
+      "legacyKind": "map_weather",
+      "map": "MagmaHideout_2F_1R"
+    },
+    {
+      "id": "MagmaHideout_2F_2R:weather",
+      "path": "maps/MagmaHideout_2F_2R.json",
+      "sourcePath": "data/maps/MagmaHideout_2F_2R/map.json",
+      "legacyKind": "map_weather",
+      "map": "MagmaHideout_2F_2R"
+    },
+    {
+      "id": "MagmaHideout_2F_3R:weather",
+      "path": "maps/MagmaHideout_2F_3R.json",
+      "sourcePath": "data/maps/MagmaHideout_2F_3R/map.json",
+      "legacyKind": "map_weather",
+      "map": "MagmaHideout_2F_3R"
+    },
+    {
+      "id": "MagmaHideout_3F_1R:weather",
+      "path": "maps/MagmaHideout_3F_1R.json",
+      "sourcePath": "data/maps/MagmaHideout_3F_1R/map.json",
+      "legacyKind": "map_weather",
+      "map": "MagmaHideout_3F_1R"
+    },
+    {
+      "id": "MagmaHideout_3F_2R:weather",
+      "path": "maps/MagmaHideout_3F_2R.json",
+      "sourcePath": "data/maps/MagmaHideout_3F_2R/map.json",
+      "legacyKind": "map_weather",
+      "map": "MagmaHideout_3F_2R"
+    },
+    {
+      "id": "MagmaHideout_3F_3R:weather",
+      "path": "maps/MagmaHideout_3F_3R.json",
+      "sourcePath": "data/maps/MagmaHideout_3F_3R/map.json",
+      "legacyKind": "map_weather",
+      "map": "MagmaHideout_3F_3R"
+    },
+    {
+      "id": "MagmaHideout_4F:weather",
+      "path": "maps/MagmaHideout_4F.json",
+      "sourcePath": "data/maps/MagmaHideout_4F/map.json",
+      "legacyKind": "map_weather",
+      "map": "MagmaHideout_4F"
+    },
+    {
+      "id": "MarineCave_End:weather",
+      "path": "maps/MarineCave_End.json",
+      "sourcePath": "data/maps/MarineCave_End/map.json",
+      "legacyKind": "map_weather",
+      "map": "MarineCave_End"
+    },
+    {
+      "id": "MarineCave_Entrance:weather",
+      "path": "maps/MarineCave_Entrance.json",
+      "sourcePath": "data/maps/MarineCave_Entrance/map.json",
+      "legacyKind": "map_weather",
+      "map": "MarineCave_Entrance"
+    },
+    {
+      "id": "MauvilleCity:weather",
+      "path": "maps/MauvilleCity.json",
+      "sourcePath": "data/maps/MauvilleCity/map.json",
+      "legacyKind": "map_weather",
+      "map": "MauvilleCity"
+    },
+    {
+      "id": "MauvilleCity_BikeShop:weather",
+      "path": "maps/MauvilleCity_BikeShop.json",
+      "sourcePath": "data/maps/MauvilleCity_BikeShop/map.json",
+      "legacyKind": "map_weather",
+      "map": "MauvilleCity_BikeShop"
+    },
+    {
+      "id": "MauvilleCity_GameCorner:weather",
+      "path": "maps/MauvilleCity_GameCorner.json",
+      "sourcePath": "data/maps/MauvilleCity_GameCorner/map.json",
+      "legacyKind": "map_weather",
+      "map": "MauvilleCity_GameCorner"
+    },
+    {
+      "id": "MauvilleCity_Gym:weather",
+      "path": "maps/MauvilleCity_Gym.json",
+      "sourcePath": "data/maps/MauvilleCity_Gym/map.json",
+      "legacyKind": "map_weather",
+      "map": "MauvilleCity_Gym"
+    },
+    {
+      "id": "MauvilleCity_House1:weather",
+      "path": "maps/MauvilleCity_House1.json",
+      "sourcePath": "data/maps/MauvilleCity_House1/map.json",
+      "legacyKind": "map_weather",
+      "map": "MauvilleCity_House1"
+    },
+    {
+      "id": "MauvilleCity_House2:weather",
+      "path": "maps/MauvilleCity_House2.json",
+      "sourcePath": "data/maps/MauvilleCity_House2/map.json",
+      "legacyKind": "map_weather",
+      "map": "MauvilleCity_House2"
+    },
+    {
+      "id": "MauvilleCity_Mart:weather",
+      "path": "maps/MauvilleCity_Mart.json",
+      "sourcePath": "data/maps/MauvilleCity_Mart/map.json",
+      "legacyKind": "map_weather",
+      "map": "MauvilleCity_Mart"
+    },
+    {
+      "id": "MauvilleCity_PokemonCenter_1F:weather",
+      "path": "maps/MauvilleCity_PokemonCenter_1F.json",
+      "sourcePath": "data/maps/MauvilleCity_PokemonCenter_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "MauvilleCity_PokemonCenter_1F"
+    },
+    {
+      "id": "MauvilleCity_PokemonCenter_2F:weather",
+      "path": "maps/MauvilleCity_PokemonCenter_2F.json",
+      "sourcePath": "data/maps/MauvilleCity_PokemonCenter_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "MauvilleCity_PokemonCenter_2F"
+    },
+    {
+      "id": "MeteorFalls_1F_1R:weather",
+      "path": "maps/MeteorFalls_1F_1R.json",
+      "sourcePath": "data/maps/MeteorFalls_1F_1R/map.json",
+      "legacyKind": "map_weather",
+      "map": "MeteorFalls_1F_1R"
+    },
+    {
+      "id": "MeteorFalls_1F_2R:weather",
+      "path": "maps/MeteorFalls_1F_2R.json",
+      "sourcePath": "data/maps/MeteorFalls_1F_2R/map.json",
+      "legacyKind": "map_weather",
+      "map": "MeteorFalls_1F_2R"
+    },
+    {
+      "id": "MeteorFalls_B1F_1R:weather",
+      "path": "maps/MeteorFalls_B1F_1R.json",
+      "sourcePath": "data/maps/MeteorFalls_B1F_1R/map.json",
+      "legacyKind": "map_weather",
+      "map": "MeteorFalls_B1F_1R"
+    },
+    {
+      "id": "MeteorFalls_B1F_2R:weather",
+      "path": "maps/MeteorFalls_B1F_2R.json",
+      "sourcePath": "data/maps/MeteorFalls_B1F_2R/map.json",
+      "legacyKind": "map_weather",
+      "map": "MeteorFalls_B1F_2R"
+    },
+    {
+      "id": "MeteorFalls_StevensCave:weather",
+      "path": "maps/MeteorFalls_StevensCave.json",
+      "sourcePath": "data/maps/MeteorFalls_StevensCave/map.json",
+      "legacyKind": "map_weather",
+      "map": "MeteorFalls_StevensCave"
+    },
+    {
+      "id": "MirageTower_1F:weather",
+      "path": "maps/MirageTower_1F.json",
+      "sourcePath": "data/maps/MirageTower_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "MirageTower_1F"
+    },
+    {
+      "id": "MirageTower_2F:weather",
+      "path": "maps/MirageTower_2F.json",
+      "sourcePath": "data/maps/MirageTower_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "MirageTower_2F"
+    },
+    {
+      "id": "MirageTower_3F:weather",
+      "path": "maps/MirageTower_3F.json",
+      "sourcePath": "data/maps/MirageTower_3F/map.json",
+      "legacyKind": "map_weather",
+      "map": "MirageTower_3F"
+    },
+    {
+      "id": "MirageTower_4F:weather",
+      "path": "maps/MirageTower_4F.json",
+      "sourcePath": "data/maps/MirageTower_4F/map.json",
+      "legacyKind": "map_weather",
+      "map": "MirageTower_4F"
+    },
+    {
+      "id": "MossdeepCity:weather",
+      "path": "maps/MossdeepCity.json",
+      "sourcePath": "data/maps/MossdeepCity/map.json",
+      "legacyKind": "map_weather",
+      "map": "MossdeepCity"
+    },
+    {
+      "id": "MossdeepCity_GameCorner_1F:weather",
+      "path": "maps/MossdeepCity_GameCorner_1F.json",
+      "sourcePath": "data/maps/MossdeepCity_GameCorner_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "MossdeepCity_GameCorner_1F"
+    },
+    {
+      "id": "MossdeepCity_GameCorner_B1F:weather",
+      "path": "maps/MossdeepCity_GameCorner_B1F.json",
+      "sourcePath": "data/maps/MossdeepCity_GameCorner_B1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "MossdeepCity_GameCorner_B1F"
+    },
+    {
+      "id": "MossdeepCity_Gym:weather",
+      "path": "maps/MossdeepCity_Gym.json",
+      "sourcePath": "data/maps/MossdeepCity_Gym/map.json",
+      "legacyKind": "map_weather",
+      "map": "MossdeepCity_Gym"
+    },
+    {
+      "id": "MossdeepCity_House1:weather",
+      "path": "maps/MossdeepCity_House1.json",
+      "sourcePath": "data/maps/MossdeepCity_House1/map.json",
+      "legacyKind": "map_weather",
+      "map": "MossdeepCity_House1"
+    },
+    {
+      "id": "MossdeepCity_House2:weather",
+      "path": "maps/MossdeepCity_House2.json",
+      "sourcePath": "data/maps/MossdeepCity_House2/map.json",
+      "legacyKind": "map_weather",
+      "map": "MossdeepCity_House2"
+    },
+    {
+      "id": "MossdeepCity_House3:weather",
+      "path": "maps/MossdeepCity_House3.json",
+      "sourcePath": "data/maps/MossdeepCity_House3/map.json",
+      "legacyKind": "map_weather",
+      "map": "MossdeepCity_House3"
+    },
+    {
+      "id": "MossdeepCity_House4:weather",
+      "path": "maps/MossdeepCity_House4.json",
+      "sourcePath": "data/maps/MossdeepCity_House4/map.json",
+      "legacyKind": "map_weather",
+      "map": "MossdeepCity_House4"
+    },
+    {
+      "id": "MossdeepCity_Mart:weather",
+      "path": "maps/MossdeepCity_Mart.json",
+      "sourcePath": "data/maps/MossdeepCity_Mart/map.json",
+      "legacyKind": "map_weather",
+      "map": "MossdeepCity_Mart"
+    },
+    {
+      "id": "MossdeepCity_PokemonCenter_1F:weather",
+      "path": "maps/MossdeepCity_PokemonCenter_1F.json",
+      "sourcePath": "data/maps/MossdeepCity_PokemonCenter_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "MossdeepCity_PokemonCenter_1F"
+    },
+    {
+      "id": "MossdeepCity_PokemonCenter_2F:weather",
+      "path": "maps/MossdeepCity_PokemonCenter_2F.json",
+      "sourcePath": "data/maps/MossdeepCity_PokemonCenter_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "MossdeepCity_PokemonCenter_2F"
+    },
+    {
+      "id": "MossdeepCity_SpaceCenter_1F:weather",
+      "path": "maps/MossdeepCity_SpaceCenter_1F.json",
+      "sourcePath": "data/maps/MossdeepCity_SpaceCenter_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "MossdeepCity_SpaceCenter_1F"
+    },
+    {
+      "id": "MossdeepCity_SpaceCenter_2F:weather",
+      "path": "maps/MossdeepCity_SpaceCenter_2F.json",
+      "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "MossdeepCity_SpaceCenter_2F"
+    },
+    {
+      "id": "MossdeepCity_StevensHouse:weather",
+      "path": "maps/MossdeepCity_StevensHouse.json",
+      "sourcePath": "data/maps/MossdeepCity_StevensHouse/map.json",
+      "legacyKind": "map_weather",
+      "map": "MossdeepCity_StevensHouse"
+    },
+    {
+      "id": "MtChimney:weather",
+      "path": "maps/MtChimney.json",
+      "sourcePath": "data/maps/MtChimney/map.json",
+      "legacyKind": "map_weather",
+      "map": "MtChimney"
+    },
+    {
+      "id": "MtChimney_CableCarStation:weather",
+      "path": "maps/MtChimney_CableCarStation.json",
+      "sourcePath": "data/maps/MtChimney_CableCarStation/map.json",
+      "legacyKind": "map_weather",
+      "map": "MtChimney_CableCarStation"
+    },
+    {
+      "id": "MtPyre_1F:weather",
+      "path": "maps/MtPyre_1F.json",
+      "sourcePath": "data/maps/MtPyre_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "MtPyre_1F"
+    },
+    {
+      "id": "MtPyre_2F:weather",
+      "path": "maps/MtPyre_2F.json",
+      "sourcePath": "data/maps/MtPyre_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "MtPyre_2F"
+    },
+    {
+      "id": "MtPyre_3F:weather",
+      "path": "maps/MtPyre_3F.json",
+      "sourcePath": "data/maps/MtPyre_3F/map.json",
+      "legacyKind": "map_weather",
+      "map": "MtPyre_3F"
+    },
+    {
+      "id": "MtPyre_4F:weather",
+      "path": "maps/MtPyre_4F.json",
+      "sourcePath": "data/maps/MtPyre_4F/map.json",
+      "legacyKind": "map_weather",
+      "map": "MtPyre_4F"
+    },
+    {
+      "id": "MtPyre_5F:weather",
+      "path": "maps/MtPyre_5F.json",
+      "sourcePath": "data/maps/MtPyre_5F/map.json",
+      "legacyKind": "map_weather",
+      "map": "MtPyre_5F"
+    },
+    {
+      "id": "MtPyre_6F:weather",
+      "path": "maps/MtPyre_6F.json",
+      "sourcePath": "data/maps/MtPyre_6F/map.json",
+      "legacyKind": "map_weather",
+      "map": "MtPyre_6F"
+    },
+    {
+      "id": "MtPyre_Exterior:weather",
+      "path": "maps/MtPyre_Exterior.json",
+      "sourcePath": "data/maps/MtPyre_Exterior/map.json",
+      "legacyKind": "map_weather",
+      "map": "MtPyre_Exterior"
+    },
+    {
+      "id": "MtPyre_Summit:weather",
+      "path": "maps/MtPyre_Summit.json",
+      "sourcePath": "data/maps/MtPyre_Summit/map.json",
+      "legacyKind": "map_weather",
+      "map": "MtPyre_Summit"
+    },
+    {
+      "id": "NavelRock_B1F:weather",
+      "path": "maps/NavelRock_B1F.json",
+      "sourcePath": "data/maps/NavelRock_B1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_B1F"
+    },
+    {
+      "id": "NavelRock_Bottom:weather",
+      "path": "maps/NavelRock_Bottom.json",
+      "sourcePath": "data/maps/NavelRock_Bottom/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Bottom"
+    },
+    {
+      "id": "NavelRock_Down01:weather",
+      "path": "maps/NavelRock_Down01.json",
+      "sourcePath": "data/maps/NavelRock_Down01/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Down01"
+    },
+    {
+      "id": "NavelRock_Down02:weather",
+      "path": "maps/NavelRock_Down02.json",
+      "sourcePath": "data/maps/NavelRock_Down02/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Down02"
+    },
+    {
+      "id": "NavelRock_Down03:weather",
+      "path": "maps/NavelRock_Down03.json",
+      "sourcePath": "data/maps/NavelRock_Down03/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Down03"
+    },
+    {
+      "id": "NavelRock_Down04:weather",
+      "path": "maps/NavelRock_Down04.json",
+      "sourcePath": "data/maps/NavelRock_Down04/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Down04"
+    },
+    {
+      "id": "NavelRock_Down05:weather",
+      "path": "maps/NavelRock_Down05.json",
+      "sourcePath": "data/maps/NavelRock_Down05/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Down05"
+    },
+    {
+      "id": "NavelRock_Down06:weather",
+      "path": "maps/NavelRock_Down06.json",
+      "sourcePath": "data/maps/NavelRock_Down06/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Down06"
+    },
+    {
+      "id": "NavelRock_Down07:weather",
+      "path": "maps/NavelRock_Down07.json",
+      "sourcePath": "data/maps/NavelRock_Down07/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Down07"
+    },
+    {
+      "id": "NavelRock_Down08:weather",
+      "path": "maps/NavelRock_Down08.json",
+      "sourcePath": "data/maps/NavelRock_Down08/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Down08"
+    },
+    {
+      "id": "NavelRock_Down09:weather",
+      "path": "maps/NavelRock_Down09.json",
+      "sourcePath": "data/maps/NavelRock_Down09/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Down09"
+    },
+    {
+      "id": "NavelRock_Down10:weather",
+      "path": "maps/NavelRock_Down10.json",
+      "sourcePath": "data/maps/NavelRock_Down10/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Down10"
+    },
+    {
+      "id": "NavelRock_Down11:weather",
+      "path": "maps/NavelRock_Down11.json",
+      "sourcePath": "data/maps/NavelRock_Down11/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Down11"
+    },
+    {
+      "id": "NavelRock_Entrance:weather",
+      "path": "maps/NavelRock_Entrance.json",
+      "sourcePath": "data/maps/NavelRock_Entrance/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Entrance"
+    },
+    {
+      "id": "NavelRock_Exterior:weather",
+      "path": "maps/NavelRock_Exterior.json",
+      "sourcePath": "data/maps/NavelRock_Exterior/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Exterior"
+    },
+    {
+      "id": "NavelRock_Fork:weather",
+      "path": "maps/NavelRock_Fork.json",
+      "sourcePath": "data/maps/NavelRock_Fork/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Fork"
+    },
+    {
+      "id": "NavelRock_Harbor:weather",
+      "path": "maps/NavelRock_Harbor.json",
+      "sourcePath": "data/maps/NavelRock_Harbor/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Harbor"
+    },
+    {
+      "id": "NavelRock_Top:weather",
+      "path": "maps/NavelRock_Top.json",
+      "sourcePath": "data/maps/NavelRock_Top/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Top"
+    },
+    {
+      "id": "NavelRock_Up1:weather",
+      "path": "maps/NavelRock_Up1.json",
+      "sourcePath": "data/maps/NavelRock_Up1/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Up1"
+    },
+    {
+      "id": "NavelRock_Up2:weather",
+      "path": "maps/NavelRock_Up2.json",
+      "sourcePath": "data/maps/NavelRock_Up2/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Up2"
+    },
+    {
+      "id": "NavelRock_Up3:weather",
+      "path": "maps/NavelRock_Up3.json",
+      "sourcePath": "data/maps/NavelRock_Up3/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Up3"
+    },
+    {
+      "id": "NavelRock_Up4:weather",
+      "path": "maps/NavelRock_Up4.json",
+      "sourcePath": "data/maps/NavelRock_Up4/map.json",
+      "legacyKind": "map_weather",
+      "map": "NavelRock_Up4"
+    },
+    {
+      "id": "NewMauville_Entrance:weather",
+      "path": "maps/NewMauville_Entrance.json",
+      "sourcePath": "data/maps/NewMauville_Entrance/map.json",
+      "legacyKind": "map_weather",
+      "map": "NewMauville_Entrance"
+    },
+    {
+      "id": "NewMauville_Inside:weather",
+      "path": "maps/NewMauville_Inside.json",
+      "sourcePath": "data/maps/NewMauville_Inside/map.json",
+      "legacyKind": "map_weather",
+      "map": "NewMauville_Inside"
+    },
+    {
+      "id": "OldaleTown:weather",
+      "path": "maps/OldaleTown.json",
+      "sourcePath": "data/maps/OldaleTown/map.json",
+      "legacyKind": "map_weather",
+      "map": "OldaleTown"
+    },
+    {
+      "id": "OldaleTown_House1:weather",
+      "path": "maps/OldaleTown_House1.json",
+      "sourcePath": "data/maps/OldaleTown_House1/map.json",
+      "legacyKind": "map_weather",
+      "map": "OldaleTown_House1"
+    },
+    {
+      "id": "OldaleTown_House2:weather",
+      "path": "maps/OldaleTown_House2.json",
+      "sourcePath": "data/maps/OldaleTown_House2/map.json",
+      "legacyKind": "map_weather",
+      "map": "OldaleTown_House2"
+    },
+    {
+      "id": "OldaleTown_Mart:weather",
+      "path": "maps/OldaleTown_Mart.json",
+      "sourcePath": "data/maps/OldaleTown_Mart/map.json",
+      "legacyKind": "map_weather",
+      "map": "OldaleTown_Mart"
+    },
+    {
+      "id": "OldaleTown_PokemonCenter_1F:weather",
+      "path": "maps/OldaleTown_PokemonCenter_1F.json",
+      "sourcePath": "data/maps/OldaleTown_PokemonCenter_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "OldaleTown_PokemonCenter_1F"
+    },
+    {
+      "id": "OldaleTown_PokemonCenter_2F:weather",
+      "path": "maps/OldaleTown_PokemonCenter_2F.json",
+      "sourcePath": "data/maps/OldaleTown_PokemonCenter_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "OldaleTown_PokemonCenter_2F"
+    },
+    {
+      "id": "PacifidlogTown:weather",
+      "path": "maps/PacifidlogTown.json",
+      "sourcePath": "data/maps/PacifidlogTown/map.json",
+      "legacyKind": "map_weather",
+      "map": "PacifidlogTown"
+    },
+    {
+      "id": "PacifidlogTown_House1:weather",
+      "path": "maps/PacifidlogTown_House1.json",
+      "sourcePath": "data/maps/PacifidlogTown_House1/map.json",
+      "legacyKind": "map_weather",
+      "map": "PacifidlogTown_House1"
+    },
+    {
+      "id": "PacifidlogTown_House2:weather",
+      "path": "maps/PacifidlogTown_House2.json",
+      "sourcePath": "data/maps/PacifidlogTown_House2/map.json",
+      "legacyKind": "map_weather",
+      "map": "PacifidlogTown_House2"
+    },
+    {
+      "id": "PacifidlogTown_House3:weather",
+      "path": "maps/PacifidlogTown_House3.json",
+      "sourcePath": "data/maps/PacifidlogTown_House3/map.json",
+      "legacyKind": "map_weather",
+      "map": "PacifidlogTown_House3"
+    },
+    {
+      "id": "PacifidlogTown_House4:weather",
+      "path": "maps/PacifidlogTown_House4.json",
+      "sourcePath": "data/maps/PacifidlogTown_House4/map.json",
+      "legacyKind": "map_weather",
+      "map": "PacifidlogTown_House4"
+    },
+    {
+      "id": "PacifidlogTown_House5:weather",
+      "path": "maps/PacifidlogTown_House5.json",
+      "sourcePath": "data/maps/PacifidlogTown_House5/map.json",
+      "legacyKind": "map_weather",
+      "map": "PacifidlogTown_House5"
+    },
+    {
+      "id": "PacifidlogTown_PokemonCenter_1F:weather",
+      "path": "maps/PacifidlogTown_PokemonCenter_1F.json",
+      "sourcePath": "data/maps/PacifidlogTown_PokemonCenter_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "PacifidlogTown_PokemonCenter_1F"
+    },
+    {
+      "id": "PacifidlogTown_PokemonCenter_2F:weather",
+      "path": "maps/PacifidlogTown_PokemonCenter_2F.json",
+      "sourcePath": "data/maps/PacifidlogTown_PokemonCenter_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "PacifidlogTown_PokemonCenter_2F"
+    },
+    {
+      "id": "PetalburgCity:weather",
+      "path": "maps/PetalburgCity.json",
+      "sourcePath": "data/maps/PetalburgCity/map.json",
+      "legacyKind": "map_weather",
+      "map": "PetalburgCity"
+    },
+    {
+      "id": "PetalburgCity_Gym:weather",
+      "path": "maps/PetalburgCity_Gym.json",
+      "sourcePath": "data/maps/PetalburgCity_Gym/map.json",
+      "legacyKind": "map_weather",
+      "map": "PetalburgCity_Gym"
+    },
+    {
+      "id": "PetalburgCity_House1:weather",
+      "path": "maps/PetalburgCity_House1.json",
+      "sourcePath": "data/maps/PetalburgCity_House1/map.json",
+      "legacyKind": "map_weather",
+      "map": "PetalburgCity_House1"
+    },
+    {
+      "id": "PetalburgCity_House2:weather",
+      "path": "maps/PetalburgCity_House2.json",
+      "sourcePath": "data/maps/PetalburgCity_House2/map.json",
+      "legacyKind": "map_weather",
+      "map": "PetalburgCity_House2"
+    },
+    {
+      "id": "PetalburgCity_Mart:weather",
+      "path": "maps/PetalburgCity_Mart.json",
+      "sourcePath": "data/maps/PetalburgCity_Mart/map.json",
+      "legacyKind": "map_weather",
+      "map": "PetalburgCity_Mart"
+    },
+    {
+      "id": "PetalburgCity_PokemonCenter_1F:weather",
+      "path": "maps/PetalburgCity_PokemonCenter_1F.json",
+      "sourcePath": "data/maps/PetalburgCity_PokemonCenter_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "PetalburgCity_PokemonCenter_1F"
+    },
+    {
+      "id": "PetalburgCity_PokemonCenter_2F:weather",
+      "path": "maps/PetalburgCity_PokemonCenter_2F.json",
+      "sourcePath": "data/maps/PetalburgCity_PokemonCenter_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "PetalburgCity_PokemonCenter_2F"
+    },
+    {
+      "id": "PetalburgCity_WallysHouse:weather",
+      "path": "maps/PetalburgCity_WallysHouse.json",
+      "sourcePath": "data/maps/PetalburgCity_WallysHouse/map.json",
+      "legacyKind": "map_weather",
+      "map": "PetalburgCity_WallysHouse"
+    },
+    {
+      "id": "PetalburgWoods:weather",
+      "path": "maps/PetalburgWoods.json",
+      "sourcePath": "data/maps/PetalburgWoods/map.json",
+      "legacyKind": "map_weather",
+      "map": "PetalburgWoods"
+    },
+    {
+      "id": "RecordCorner:weather",
+      "path": "maps/RecordCorner.json",
+      "sourcePath": "data/maps/RecordCorner/map.json",
+      "legacyKind": "map_weather",
+      "map": "RecordCorner"
+    },
+    {
+      "id": "Route101:weather",
+      "path": "maps/Route101.json",
+      "sourcePath": "data/maps/Route101/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route101"
+    },
+    {
+      "id": "Route102:weather",
+      "path": "maps/Route102.json",
+      "sourcePath": "data/maps/Route102/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route102"
+    },
+    {
+      "id": "Route103:weather",
+      "path": "maps/Route103.json",
+      "sourcePath": "data/maps/Route103/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route103"
+    },
+    {
+      "id": "Route104:weather",
+      "path": "maps/Route104.json",
+      "sourcePath": "data/maps/Route104/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route104"
+    },
+    {
+      "id": "Route104_MrBrineysHouse:weather",
+      "path": "maps/Route104_MrBrineysHouse.json",
+      "sourcePath": "data/maps/Route104_MrBrineysHouse/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route104_MrBrineysHouse"
+    },
+    {
+      "id": "Route104_PrettyPetalFlowerShop:weather",
+      "path": "maps/Route104_PrettyPetalFlowerShop.json",
+      "sourcePath": "data/maps/Route104_PrettyPetalFlowerShop/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route104_PrettyPetalFlowerShop"
+    },
+    {
+      "id": "Route104_Prototype:weather",
+      "path": "maps/Route104_Prototype.json",
+      "sourcePath": "data/maps/Route104_Prototype/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route104_Prototype"
+    },
+    {
+      "id": "Route104_PrototypePrettyPetalFlowerShop:weather",
+      "path": "maps/Route104_PrototypePrettyPetalFlowerShop.json",
+      "sourcePath": "data/maps/Route104_PrototypePrettyPetalFlowerShop/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route104_PrototypePrettyPetalFlowerShop"
+    },
+    {
+      "id": "Route105:weather",
+      "path": "maps/Route105.json",
+      "sourcePath": "data/maps/Route105/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route105"
+    },
+    {
+      "id": "Route106:weather",
+      "path": "maps/Route106.json",
+      "sourcePath": "data/maps/Route106/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route106"
+    },
+    {
+      "id": "Route107:weather",
+      "path": "maps/Route107.json",
+      "sourcePath": "data/maps/Route107/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route107"
+    },
+    {
+      "id": "Route108:weather",
+      "path": "maps/Route108.json",
+      "sourcePath": "data/maps/Route108/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route108"
+    },
+    {
+      "id": "Route109:weather",
+      "path": "maps/Route109.json",
+      "sourcePath": "data/maps/Route109/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route109"
+    },
+    {
+      "id": "Route109_SeashoreHouse:weather",
+      "path": "maps/Route109_SeashoreHouse.json",
+      "sourcePath": "data/maps/Route109_SeashoreHouse/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route109_SeashoreHouse"
+    },
+    {
+      "id": "Route110:weather",
+      "path": "maps/Route110.json",
+      "sourcePath": "data/maps/Route110/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route110"
+    },
+    {
+      "id": "Route110_SeasideCyclingRoadNorthEntrance:weather",
+      "path": "maps/Route110_SeasideCyclingRoadNorthEntrance.json",
+      "sourcePath": "data/maps/Route110_SeasideCyclingRoadNorthEntrance/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route110_SeasideCyclingRoadNorthEntrance"
+    },
+    {
+      "id": "Route110_SeasideCyclingRoadSouthEntrance:weather",
+      "path": "maps/Route110_SeasideCyclingRoadSouthEntrance.json",
+      "sourcePath": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route110_SeasideCyclingRoadSouthEntrance"
+    },
+    {
+      "id": "Route110_TrickHouseCorridor:weather",
+      "path": "maps/Route110_TrickHouseCorridor.json",
+      "sourcePath": "data/maps/Route110_TrickHouseCorridor/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route110_TrickHouseCorridor"
+    },
+    {
+      "id": "Route110_TrickHouseEnd:weather",
+      "path": "maps/Route110_TrickHouseEnd.json",
+      "sourcePath": "data/maps/Route110_TrickHouseEnd/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route110_TrickHouseEnd"
+    },
+    {
+      "id": "Route110_TrickHouseEntrance:weather",
+      "path": "maps/Route110_TrickHouseEntrance.json",
+      "sourcePath": "data/maps/Route110_TrickHouseEntrance/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route110_TrickHouseEntrance"
+    },
+    {
+      "id": "Route110_TrickHousePuzzle1:weather",
+      "path": "maps/Route110_TrickHousePuzzle1.json",
+      "sourcePath": "data/maps/Route110_TrickHousePuzzle1/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route110_TrickHousePuzzle1"
+    },
+    {
+      "id": "Route110_TrickHousePuzzle2:weather",
+      "path": "maps/Route110_TrickHousePuzzle2.json",
+      "sourcePath": "data/maps/Route110_TrickHousePuzzle2/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route110_TrickHousePuzzle2"
+    },
+    {
+      "id": "Route110_TrickHousePuzzle3:weather",
+      "path": "maps/Route110_TrickHousePuzzle3.json",
+      "sourcePath": "data/maps/Route110_TrickHousePuzzle3/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route110_TrickHousePuzzle3"
+    },
+    {
+      "id": "Route110_TrickHousePuzzle4:weather",
+      "path": "maps/Route110_TrickHousePuzzle4.json",
+      "sourcePath": "data/maps/Route110_TrickHousePuzzle4/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route110_TrickHousePuzzle4"
+    },
+    {
+      "id": "Route110_TrickHousePuzzle5:weather",
+      "path": "maps/Route110_TrickHousePuzzle5.json",
+      "sourcePath": "data/maps/Route110_TrickHousePuzzle5/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route110_TrickHousePuzzle5"
+    },
+    {
+      "id": "Route110_TrickHousePuzzle6:weather",
+      "path": "maps/Route110_TrickHousePuzzle6.json",
+      "sourcePath": "data/maps/Route110_TrickHousePuzzle6/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route110_TrickHousePuzzle6"
+    },
+    {
+      "id": "Route110_TrickHousePuzzle7:weather",
+      "path": "maps/Route110_TrickHousePuzzle7.json",
+      "sourcePath": "data/maps/Route110_TrickHousePuzzle7/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route110_TrickHousePuzzle7"
+    },
+    {
+      "id": "Route110_TrickHousePuzzle8:weather",
+      "path": "maps/Route110_TrickHousePuzzle8.json",
+      "sourcePath": "data/maps/Route110_TrickHousePuzzle8/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route110_TrickHousePuzzle8"
+    },
+    {
+      "id": "Route111:weather",
+      "path": "maps/Route111.json",
+      "sourcePath": "data/maps/Route111/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route111"
+    },
+    {
+      "id": "Route111_OldLadysRestStop:weather",
+      "path": "maps/Route111_OldLadysRestStop.json",
+      "sourcePath": "data/maps/Route111_OldLadysRestStop/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route111_OldLadysRestStop"
+    },
+    {
+      "id": "Route111_WinstrateFamilysHouse:weather",
+      "path": "maps/Route111_WinstrateFamilysHouse.json",
+      "sourcePath": "data/maps/Route111_WinstrateFamilysHouse/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route111_WinstrateFamilysHouse"
+    },
+    {
+      "id": "Route112:weather",
+      "path": "maps/Route112.json",
+      "sourcePath": "data/maps/Route112/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route112"
+    },
+    {
+      "id": "Route112_CableCarStation:weather",
+      "path": "maps/Route112_CableCarStation.json",
+      "sourcePath": "data/maps/Route112_CableCarStation/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route112_CableCarStation"
+    },
+    {
+      "id": "Route113:weather",
+      "path": "maps/Route113.json",
+      "sourcePath": "data/maps/Route113/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route113"
+    },
+    {
+      "id": "Route113_GlassWorkshop:weather",
+      "path": "maps/Route113_GlassWorkshop.json",
+      "sourcePath": "data/maps/Route113_GlassWorkshop/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route113_GlassWorkshop"
+    },
+    {
+      "id": "Route114:weather",
+      "path": "maps/Route114.json",
+      "sourcePath": "data/maps/Route114/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route114"
+    },
+    {
+      "id": "Route114_FossilManiacsHouse:weather",
+      "path": "maps/Route114_FossilManiacsHouse.json",
+      "sourcePath": "data/maps/Route114_FossilManiacsHouse/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route114_FossilManiacsHouse"
+    },
+    {
+      "id": "Route114_FossilManiacsTunnel:weather",
+      "path": "maps/Route114_FossilManiacsTunnel.json",
+      "sourcePath": "data/maps/Route114_FossilManiacsTunnel/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route114_FossilManiacsTunnel"
+    },
+    {
+      "id": "Route114_LanettesHouse:weather",
+      "path": "maps/Route114_LanettesHouse.json",
+      "sourcePath": "data/maps/Route114_LanettesHouse/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route114_LanettesHouse"
+    },
+    {
+      "id": "Route115:weather",
+      "path": "maps/Route115.json",
+      "sourcePath": "data/maps/Route115/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route115"
+    },
+    {
+      "id": "Route116:weather",
+      "path": "maps/Route116.json",
+      "sourcePath": "data/maps/Route116/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route116"
+    },
+    {
+      "id": "Route116_TunnelersRestHouse:weather",
+      "path": "maps/Route116_TunnelersRestHouse.json",
+      "sourcePath": "data/maps/Route116_TunnelersRestHouse/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route116_TunnelersRestHouse"
+    },
+    {
+      "id": "Route117:weather",
+      "path": "maps/Route117.json",
+      "sourcePath": "data/maps/Route117/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route117"
+    },
+    {
+      "id": "Route117_PokemonDayCare:weather",
+      "path": "maps/Route117_PokemonDayCare.json",
+      "sourcePath": "data/maps/Route117_PokemonDayCare/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route117_PokemonDayCare"
+    },
+    {
+      "id": "Route118:weather",
+      "path": "maps/Route118.json",
+      "sourcePath": "data/maps/Route118/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route118"
+    },
+    {
+      "id": "Route119:weather",
+      "path": "maps/Route119.json",
+      "sourcePath": "data/maps/Route119/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route119"
+    },
+    {
+      "id": "Route119_House:weather",
+      "path": "maps/Route119_House.json",
+      "sourcePath": "data/maps/Route119_House/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route119_House"
+    },
+    {
+      "id": "Route119_WeatherInstitute_1F:weather",
+      "path": "maps/Route119_WeatherInstitute_1F.json",
+      "sourcePath": "data/maps/Route119_WeatherInstitute_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route119_WeatherInstitute_1F"
+    },
+    {
+      "id": "Route119_WeatherInstitute_2F:weather",
+      "path": "maps/Route119_WeatherInstitute_2F.json",
+      "sourcePath": "data/maps/Route119_WeatherInstitute_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route119_WeatherInstitute_2F"
+    },
+    {
+      "id": "Route120:weather",
+      "path": "maps/Route120.json",
+      "sourcePath": "data/maps/Route120/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route120"
+    },
+    {
+      "id": "Route121:weather",
+      "path": "maps/Route121.json",
+      "sourcePath": "data/maps/Route121/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route121"
+    },
+    {
+      "id": "Route121_SafariZoneEntrance:weather",
+      "path": "maps/Route121_SafariZoneEntrance.json",
+      "sourcePath": "data/maps/Route121_SafariZoneEntrance/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route121_SafariZoneEntrance"
+    },
+    {
+      "id": "Route122:weather",
+      "path": "maps/Route122.json",
+      "sourcePath": "data/maps/Route122/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route122"
+    },
+    {
+      "id": "Route123:weather",
+      "path": "maps/Route123.json",
+      "sourcePath": "data/maps/Route123/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route123"
+    },
+    {
+      "id": "Route123_BerryMastersHouse:weather",
+      "path": "maps/Route123_BerryMastersHouse.json",
+      "sourcePath": "data/maps/Route123_BerryMastersHouse/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route123_BerryMastersHouse"
+    },
+    {
+      "id": "Route124:weather",
+      "path": "maps/Route124.json",
+      "sourcePath": "data/maps/Route124/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route124"
+    },
+    {
+      "id": "Route124_DivingTreasureHuntersHouse:weather",
+      "path": "maps/Route124_DivingTreasureHuntersHouse.json",
+      "sourcePath": "data/maps/Route124_DivingTreasureHuntersHouse/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route124_DivingTreasureHuntersHouse"
+    },
+    {
+      "id": "Route125:weather",
+      "path": "maps/Route125.json",
+      "sourcePath": "data/maps/Route125/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route125"
+    },
+    {
+      "id": "Route126:weather",
+      "path": "maps/Route126.json",
+      "sourcePath": "data/maps/Route126/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route126"
+    },
+    {
+      "id": "Route127:weather",
+      "path": "maps/Route127.json",
+      "sourcePath": "data/maps/Route127/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route127"
+    },
+    {
+      "id": "Route128:weather",
+      "path": "maps/Route128.json",
+      "sourcePath": "data/maps/Route128/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route128"
+    },
+    {
+      "id": "Route129:weather",
+      "path": "maps/Route129.json",
+      "sourcePath": "data/maps/Route129/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route129"
+    },
+    {
+      "id": "Route130:weather",
+      "path": "maps/Route130.json",
+      "sourcePath": "data/maps/Route130/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route130"
+    },
+    {
+      "id": "Route131:weather",
+      "path": "maps/Route131.json",
+      "sourcePath": "data/maps/Route131/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route131"
+    },
+    {
+      "id": "Route132:weather",
+      "path": "maps/Route132.json",
+      "sourcePath": "data/maps/Route132/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route132"
+    },
+    {
+      "id": "Route133:weather",
+      "path": "maps/Route133.json",
+      "sourcePath": "data/maps/Route133/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route133"
+    },
+    {
+      "id": "Route134:weather",
+      "path": "maps/Route134.json",
+      "sourcePath": "data/maps/Route134/map.json",
+      "legacyKind": "map_weather",
+      "map": "Route134"
+    },
+    {
+      "id": "RustboroCity:weather",
+      "path": "maps/RustboroCity.json",
+      "sourcePath": "data/maps/RustboroCity/map.json",
+      "legacyKind": "map_weather",
+      "map": "RustboroCity"
+    },
+    {
+      "id": "RustboroCity_CuttersHouse:weather",
+      "path": "maps/RustboroCity_CuttersHouse.json",
+      "sourcePath": "data/maps/RustboroCity_CuttersHouse/map.json",
+      "legacyKind": "map_weather",
+      "map": "RustboroCity_CuttersHouse"
+    },
+    {
+      "id": "RustboroCity_DevonCorp_1F:weather",
+      "path": "maps/RustboroCity_DevonCorp_1F.json",
+      "sourcePath": "data/maps/RustboroCity_DevonCorp_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "RustboroCity_DevonCorp_1F"
+    },
+    {
+      "id": "RustboroCity_DevonCorp_2F:weather",
+      "path": "maps/RustboroCity_DevonCorp_2F.json",
+      "sourcePath": "data/maps/RustboroCity_DevonCorp_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "RustboroCity_DevonCorp_2F"
+    },
+    {
+      "id": "RustboroCity_DevonCorp_3F:weather",
+      "path": "maps/RustboroCity_DevonCorp_3F.json",
+      "sourcePath": "data/maps/RustboroCity_DevonCorp_3F/map.json",
+      "legacyKind": "map_weather",
+      "map": "RustboroCity_DevonCorp_3F"
+    },
+    {
+      "id": "RustboroCity_Flat1_1F:weather",
+      "path": "maps/RustboroCity_Flat1_1F.json",
+      "sourcePath": "data/maps/RustboroCity_Flat1_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "RustboroCity_Flat1_1F"
+    },
+    {
+      "id": "RustboroCity_Flat1_2F:weather",
+      "path": "maps/RustboroCity_Flat1_2F.json",
+      "sourcePath": "data/maps/RustboroCity_Flat1_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "RustboroCity_Flat1_2F"
+    },
+    {
+      "id": "RustboroCity_Flat2_1F:weather",
+      "path": "maps/RustboroCity_Flat2_1F.json",
+      "sourcePath": "data/maps/RustboroCity_Flat2_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "RustboroCity_Flat2_1F"
+    },
+    {
+      "id": "RustboroCity_Flat2_2F:weather",
+      "path": "maps/RustboroCity_Flat2_2F.json",
+      "sourcePath": "data/maps/RustboroCity_Flat2_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "RustboroCity_Flat2_2F"
+    },
+    {
+      "id": "RustboroCity_Flat2_3F:weather",
+      "path": "maps/RustboroCity_Flat2_3F.json",
+      "sourcePath": "data/maps/RustboroCity_Flat2_3F/map.json",
+      "legacyKind": "map_weather",
+      "map": "RustboroCity_Flat2_3F"
+    },
+    {
+      "id": "RustboroCity_Gym:weather",
+      "path": "maps/RustboroCity_Gym.json",
+      "sourcePath": "data/maps/RustboroCity_Gym/map.json",
+      "legacyKind": "map_weather",
+      "map": "RustboroCity_Gym"
+    },
+    {
+      "id": "RustboroCity_House1:weather",
+      "path": "maps/RustboroCity_House1.json",
+      "sourcePath": "data/maps/RustboroCity_House1/map.json",
+      "legacyKind": "map_weather",
+      "map": "RustboroCity_House1"
+    },
+    {
+      "id": "RustboroCity_House2:weather",
+      "path": "maps/RustboroCity_House2.json",
+      "sourcePath": "data/maps/RustboroCity_House2/map.json",
+      "legacyKind": "map_weather",
+      "map": "RustboroCity_House2"
+    },
+    {
+      "id": "RustboroCity_House3:weather",
+      "path": "maps/RustboroCity_House3.json",
+      "sourcePath": "data/maps/RustboroCity_House3/map.json",
+      "legacyKind": "map_weather",
+      "map": "RustboroCity_House3"
+    },
+    {
+      "id": "RustboroCity_Mart:weather",
+      "path": "maps/RustboroCity_Mart.json",
+      "sourcePath": "data/maps/RustboroCity_Mart/map.json",
+      "legacyKind": "map_weather",
+      "map": "RustboroCity_Mart"
+    },
+    {
+      "id": "RustboroCity_PokemonCenter_1F:weather",
+      "path": "maps/RustboroCity_PokemonCenter_1F.json",
+      "sourcePath": "data/maps/RustboroCity_PokemonCenter_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "RustboroCity_PokemonCenter_1F"
+    },
+    {
+      "id": "RustboroCity_PokemonCenter_2F:weather",
+      "path": "maps/RustboroCity_PokemonCenter_2F.json",
+      "sourcePath": "data/maps/RustboroCity_PokemonCenter_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "RustboroCity_PokemonCenter_2F"
+    },
+    {
+      "id": "RustboroCity_PokemonSchool:weather",
+      "path": "maps/RustboroCity_PokemonSchool.json",
+      "sourcePath": "data/maps/RustboroCity_PokemonSchool/map.json",
+      "legacyKind": "map_weather",
+      "map": "RustboroCity_PokemonSchool"
+    },
+    {
+      "id": "RusturfTunnel:weather",
+      "path": "maps/RusturfTunnel.json",
+      "sourcePath": "data/maps/RusturfTunnel/map.json",
+      "legacyKind": "map_weather",
+      "map": "RusturfTunnel"
+    },
+    {
+      "id": "SSTidalCorridor:weather",
+      "path": "maps/SSTidalCorridor.json",
+      "sourcePath": "data/maps/SSTidalCorridor/map.json",
+      "legacyKind": "map_weather",
+      "map": "SSTidalCorridor"
+    },
+    {
+      "id": "SSTidalLowerDeck:weather",
+      "path": "maps/SSTidalLowerDeck.json",
+      "sourcePath": "data/maps/SSTidalLowerDeck/map.json",
+      "legacyKind": "map_weather",
+      "map": "SSTidalLowerDeck"
+    },
+    {
+      "id": "SSTidalRooms:weather",
+      "path": "maps/SSTidalRooms.json",
+      "sourcePath": "data/maps/SSTidalRooms/map.json",
+      "legacyKind": "map_weather",
+      "map": "SSTidalRooms"
+    },
+    {
+      "id": "SafariZone_North:weather",
+      "path": "maps/SafariZone_North.json",
+      "sourcePath": "data/maps/SafariZone_North/map.json",
+      "legacyKind": "map_weather",
+      "map": "SafariZone_North"
+    },
+    {
+      "id": "SafariZone_Northeast:weather",
+      "path": "maps/SafariZone_Northeast.json",
+      "sourcePath": "data/maps/SafariZone_Northeast/map.json",
+      "legacyKind": "map_weather",
+      "map": "SafariZone_Northeast"
+    },
+    {
+      "id": "SafariZone_Northwest:weather",
+      "path": "maps/SafariZone_Northwest.json",
+      "sourcePath": "data/maps/SafariZone_Northwest/map.json",
+      "legacyKind": "map_weather",
+      "map": "SafariZone_Northwest"
+    },
+    {
+      "id": "SafariZone_RestHouse:weather",
+      "path": "maps/SafariZone_RestHouse.json",
+      "sourcePath": "data/maps/SafariZone_RestHouse/map.json",
+      "legacyKind": "map_weather",
+      "map": "SafariZone_RestHouse"
+    },
+    {
+      "id": "SafariZone_South:weather",
+      "path": "maps/SafariZone_South.json",
+      "sourcePath": "data/maps/SafariZone_South/map.json",
+      "legacyKind": "map_weather",
+      "map": "SafariZone_South"
+    },
+    {
+      "id": "SafariZone_Southeast:weather",
+      "path": "maps/SafariZone_Southeast.json",
+      "sourcePath": "data/maps/SafariZone_Southeast/map.json",
+      "legacyKind": "map_weather",
+      "map": "SafariZone_Southeast"
+    },
+    {
+      "id": "SafariZone_Southwest:weather",
+      "path": "maps/SafariZone_Southwest.json",
+      "sourcePath": "data/maps/SafariZone_Southwest/map.json",
+      "legacyKind": "map_weather",
+      "map": "SafariZone_Southwest"
+    },
+    {
+      "id": "ScorchedSlab:weather",
+      "path": "maps/ScorchedSlab.json",
+      "sourcePath": "data/maps/ScorchedSlab/map.json",
+      "legacyKind": "map_weather",
+      "map": "ScorchedSlab"
+    },
+    {
+      "id": "SeafloorCavern_Entrance:weather",
+      "path": "maps/SeafloorCavern_Entrance.json",
+      "sourcePath": "data/maps/SeafloorCavern_Entrance/map.json",
+      "legacyKind": "map_weather",
+      "map": "SeafloorCavern_Entrance"
+    },
+    {
+      "id": "SeafloorCavern_Room1:weather",
+      "path": "maps/SeafloorCavern_Room1.json",
+      "sourcePath": "data/maps/SeafloorCavern_Room1/map.json",
+      "legacyKind": "map_weather",
+      "map": "SeafloorCavern_Room1"
+    },
+    {
+      "id": "SeafloorCavern_Room2:weather",
+      "path": "maps/SeafloorCavern_Room2.json",
+      "sourcePath": "data/maps/SeafloorCavern_Room2/map.json",
+      "legacyKind": "map_weather",
+      "map": "SeafloorCavern_Room2"
+    },
+    {
+      "id": "SeafloorCavern_Room3:weather",
+      "path": "maps/SeafloorCavern_Room3.json",
+      "sourcePath": "data/maps/SeafloorCavern_Room3/map.json",
+      "legacyKind": "map_weather",
+      "map": "SeafloorCavern_Room3"
+    },
+    {
+      "id": "SeafloorCavern_Room4:weather",
+      "path": "maps/SeafloorCavern_Room4.json",
+      "sourcePath": "data/maps/SeafloorCavern_Room4/map.json",
+      "legacyKind": "map_weather",
+      "map": "SeafloorCavern_Room4"
+    },
+    {
+      "id": "SeafloorCavern_Room5:weather",
+      "path": "maps/SeafloorCavern_Room5.json",
+      "sourcePath": "data/maps/SeafloorCavern_Room5/map.json",
+      "legacyKind": "map_weather",
+      "map": "SeafloorCavern_Room5"
+    },
+    {
+      "id": "SeafloorCavern_Room6:weather",
+      "path": "maps/SeafloorCavern_Room6.json",
+      "sourcePath": "data/maps/SeafloorCavern_Room6/map.json",
+      "legacyKind": "map_weather",
+      "map": "SeafloorCavern_Room6"
+    },
+    {
+      "id": "SeafloorCavern_Room7:weather",
+      "path": "maps/SeafloorCavern_Room7.json",
+      "sourcePath": "data/maps/SeafloorCavern_Room7/map.json",
+      "legacyKind": "map_weather",
+      "map": "SeafloorCavern_Room7"
+    },
+    {
+      "id": "SeafloorCavern_Room8:weather",
+      "path": "maps/SeafloorCavern_Room8.json",
+      "sourcePath": "data/maps/SeafloorCavern_Room8/map.json",
+      "legacyKind": "map_weather",
+      "map": "SeafloorCavern_Room8"
+    },
+    {
+      "id": "SeafloorCavern_Room9:weather",
+      "path": "maps/SeafloorCavern_Room9.json",
+      "sourcePath": "data/maps/SeafloorCavern_Room9/map.json",
+      "legacyKind": "map_weather",
+      "map": "SeafloorCavern_Room9"
+    },
+    {
+      "id": "SealedChamber_InnerRoom:weather",
+      "path": "maps/SealedChamber_InnerRoom.json",
+      "sourcePath": "data/maps/SealedChamber_InnerRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "SealedChamber_InnerRoom"
+    },
+    {
+      "id": "SealedChamber_OuterRoom:weather",
+      "path": "maps/SealedChamber_OuterRoom.json",
+      "sourcePath": "data/maps/SealedChamber_OuterRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "SealedChamber_OuterRoom"
+    },
+    {
+      "id": "SecretBase_BlueCave1:weather",
+      "path": "maps/SecretBase_BlueCave1.json",
+      "sourcePath": "data/maps/SecretBase_BlueCave1/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_BlueCave1"
+    },
+    {
+      "id": "SecretBase_BlueCave2:weather",
+      "path": "maps/SecretBase_BlueCave2.json",
+      "sourcePath": "data/maps/SecretBase_BlueCave2/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_BlueCave2"
+    },
+    {
+      "id": "SecretBase_BlueCave3:weather",
+      "path": "maps/SecretBase_BlueCave3.json",
+      "sourcePath": "data/maps/SecretBase_BlueCave3/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_BlueCave3"
+    },
+    {
+      "id": "SecretBase_BlueCave4:weather",
+      "path": "maps/SecretBase_BlueCave4.json",
+      "sourcePath": "data/maps/SecretBase_BlueCave4/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_BlueCave4"
+    },
+    {
+      "id": "SecretBase_BrownCave1:weather",
+      "path": "maps/SecretBase_BrownCave1.json",
+      "sourcePath": "data/maps/SecretBase_BrownCave1/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_BrownCave1"
+    },
+    {
+      "id": "SecretBase_BrownCave2:weather",
+      "path": "maps/SecretBase_BrownCave2.json",
+      "sourcePath": "data/maps/SecretBase_BrownCave2/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_BrownCave2"
+    },
+    {
+      "id": "SecretBase_BrownCave3:weather",
+      "path": "maps/SecretBase_BrownCave3.json",
+      "sourcePath": "data/maps/SecretBase_BrownCave3/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_BrownCave3"
+    },
+    {
+      "id": "SecretBase_BrownCave4:weather",
+      "path": "maps/SecretBase_BrownCave4.json",
+      "sourcePath": "data/maps/SecretBase_BrownCave4/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_BrownCave4"
+    },
+    {
+      "id": "SecretBase_RedCave1:weather",
+      "path": "maps/SecretBase_RedCave1.json",
+      "sourcePath": "data/maps/SecretBase_RedCave1/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_RedCave1"
+    },
+    {
+      "id": "SecretBase_RedCave2:weather",
+      "path": "maps/SecretBase_RedCave2.json",
+      "sourcePath": "data/maps/SecretBase_RedCave2/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_RedCave2"
+    },
+    {
+      "id": "SecretBase_RedCave3:weather",
+      "path": "maps/SecretBase_RedCave3.json",
+      "sourcePath": "data/maps/SecretBase_RedCave3/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_RedCave3"
+    },
+    {
+      "id": "SecretBase_RedCave4:weather",
+      "path": "maps/SecretBase_RedCave4.json",
+      "sourcePath": "data/maps/SecretBase_RedCave4/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_RedCave4"
+    },
+    {
+      "id": "SecretBase_Shrub1:weather",
+      "path": "maps/SecretBase_Shrub1.json",
+      "sourcePath": "data/maps/SecretBase_Shrub1/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_Shrub1"
+    },
+    {
+      "id": "SecretBase_Shrub2:weather",
+      "path": "maps/SecretBase_Shrub2.json",
+      "sourcePath": "data/maps/SecretBase_Shrub2/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_Shrub2"
+    },
+    {
+      "id": "SecretBase_Shrub3:weather",
+      "path": "maps/SecretBase_Shrub3.json",
+      "sourcePath": "data/maps/SecretBase_Shrub3/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_Shrub3"
+    },
+    {
+      "id": "SecretBase_Shrub4:weather",
+      "path": "maps/SecretBase_Shrub4.json",
+      "sourcePath": "data/maps/SecretBase_Shrub4/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_Shrub4"
+    },
+    {
+      "id": "SecretBase_Tree1:weather",
+      "path": "maps/SecretBase_Tree1.json",
+      "sourcePath": "data/maps/SecretBase_Tree1/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_Tree1"
+    },
+    {
+      "id": "SecretBase_Tree2:weather",
+      "path": "maps/SecretBase_Tree2.json",
+      "sourcePath": "data/maps/SecretBase_Tree2/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_Tree2"
+    },
+    {
+      "id": "SecretBase_Tree3:weather",
+      "path": "maps/SecretBase_Tree3.json",
+      "sourcePath": "data/maps/SecretBase_Tree3/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_Tree3"
+    },
+    {
+      "id": "SecretBase_Tree4:weather",
+      "path": "maps/SecretBase_Tree4.json",
+      "sourcePath": "data/maps/SecretBase_Tree4/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_Tree4"
+    },
+    {
+      "id": "SecretBase_YellowCave1:weather",
+      "path": "maps/SecretBase_YellowCave1.json",
+      "sourcePath": "data/maps/SecretBase_YellowCave1/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_YellowCave1"
+    },
+    {
+      "id": "SecretBase_YellowCave2:weather",
+      "path": "maps/SecretBase_YellowCave2.json",
+      "sourcePath": "data/maps/SecretBase_YellowCave2/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_YellowCave2"
+    },
+    {
+      "id": "SecretBase_YellowCave3:weather",
+      "path": "maps/SecretBase_YellowCave3.json",
+      "sourcePath": "data/maps/SecretBase_YellowCave3/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_YellowCave3"
+    },
+    {
+      "id": "SecretBase_YellowCave4:weather",
+      "path": "maps/SecretBase_YellowCave4.json",
+      "sourcePath": "data/maps/SecretBase_YellowCave4/map.json",
+      "legacyKind": "map_weather",
+      "map": "SecretBase_YellowCave4"
+    },
+    {
+      "id": "ShoalCave_HighTideEntranceRoom:weather",
+      "path": "maps/ShoalCave_HighTideEntranceRoom.json",
+      "sourcePath": "data/maps/ShoalCave_HighTideEntranceRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "ShoalCave_HighTideEntranceRoom"
+    },
+    {
+      "id": "ShoalCave_HighTideInnerRoom:weather",
+      "path": "maps/ShoalCave_HighTideInnerRoom.json",
+      "sourcePath": "data/maps/ShoalCave_HighTideInnerRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "ShoalCave_HighTideInnerRoom"
+    },
+    {
+      "id": "ShoalCave_LowTideEntranceRoom:weather",
+      "path": "maps/ShoalCave_LowTideEntranceRoom.json",
+      "sourcePath": "data/maps/ShoalCave_LowTideEntranceRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "ShoalCave_LowTideEntranceRoom"
+    },
+    {
+      "id": "ShoalCave_LowTideIceRoom:weather",
+      "path": "maps/ShoalCave_LowTideIceRoom.json",
+      "sourcePath": "data/maps/ShoalCave_LowTideIceRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "ShoalCave_LowTideIceRoom"
+    },
+    {
+      "id": "ShoalCave_LowTideInnerRoom:weather",
+      "path": "maps/ShoalCave_LowTideInnerRoom.json",
+      "sourcePath": "data/maps/ShoalCave_LowTideInnerRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "ShoalCave_LowTideInnerRoom"
+    },
+    {
+      "id": "ShoalCave_LowTideLowerRoom:weather",
+      "path": "maps/ShoalCave_LowTideLowerRoom.json",
+      "sourcePath": "data/maps/ShoalCave_LowTideLowerRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "ShoalCave_LowTideLowerRoom"
+    },
+    {
+      "id": "ShoalCave_LowTideStairsRoom:weather",
+      "path": "maps/ShoalCave_LowTideStairsRoom.json",
+      "sourcePath": "data/maps/ShoalCave_LowTideStairsRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "ShoalCave_LowTideStairsRoom"
+    },
+    {
+      "id": "SkyPillar_1F:weather",
+      "path": "maps/SkyPillar_1F.json",
+      "sourcePath": "data/maps/SkyPillar_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "SkyPillar_1F"
+    },
+    {
+      "id": "SkyPillar_2F:weather",
+      "path": "maps/SkyPillar_2F.json",
+      "sourcePath": "data/maps/SkyPillar_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "SkyPillar_2F"
+    },
+    {
+      "id": "SkyPillar_3F:weather",
+      "path": "maps/SkyPillar_3F.json",
+      "sourcePath": "data/maps/SkyPillar_3F/map.json",
+      "legacyKind": "map_weather",
+      "map": "SkyPillar_3F"
+    },
+    {
+      "id": "SkyPillar_4F:weather",
+      "path": "maps/SkyPillar_4F.json",
+      "sourcePath": "data/maps/SkyPillar_4F/map.json",
+      "legacyKind": "map_weather",
+      "map": "SkyPillar_4F"
+    },
+    {
+      "id": "SkyPillar_5F:weather",
+      "path": "maps/SkyPillar_5F.json",
+      "sourcePath": "data/maps/SkyPillar_5F/map.json",
+      "legacyKind": "map_weather",
+      "map": "SkyPillar_5F"
+    },
+    {
+      "id": "SkyPillar_Entrance:weather",
+      "path": "maps/SkyPillar_Entrance.json",
+      "sourcePath": "data/maps/SkyPillar_Entrance/map.json",
+      "legacyKind": "map_weather",
+      "map": "SkyPillar_Entrance"
+    },
+    {
+      "id": "SkyPillar_Outside:weather",
+      "path": "maps/SkyPillar_Outside.json",
+      "sourcePath": "data/maps/SkyPillar_Outside/map.json",
+      "legacyKind": "map_weather",
+      "map": "SkyPillar_Outside"
+    },
+    {
+      "id": "SkyPillar_Top:weather",
+      "path": "maps/SkyPillar_Top.json",
+      "sourcePath": "data/maps/SkyPillar_Top/map.json",
+      "legacyKind": "map_weather",
+      "map": "SkyPillar_Top"
+    },
+    {
+      "id": "SlateportCity:weather",
+      "path": "maps/SlateportCity.json",
+      "sourcePath": "data/maps/SlateportCity/map.json",
+      "legacyKind": "map_weather",
+      "map": "SlateportCity"
+    },
+    {
+      "id": "SlateportCity_BattleTentBattleRoom:weather",
+      "path": "maps/SlateportCity_BattleTentBattleRoom.json",
+      "sourcePath": "data/maps/SlateportCity_BattleTentBattleRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "SlateportCity_BattleTentBattleRoom"
+    },
+    {
+      "id": "SlateportCity_BattleTentCorridor:weather",
+      "path": "maps/SlateportCity_BattleTentCorridor.json",
+      "sourcePath": "data/maps/SlateportCity_BattleTentCorridor/map.json",
+      "legacyKind": "map_weather",
+      "map": "SlateportCity_BattleTentCorridor"
+    },
+    {
+      "id": "SlateportCity_BattleTentLobby:weather",
+      "path": "maps/SlateportCity_BattleTentLobby.json",
+      "sourcePath": "data/maps/SlateportCity_BattleTentLobby/map.json",
+      "legacyKind": "map_weather",
+      "map": "SlateportCity_BattleTentLobby"
+    },
+    {
+      "id": "SlateportCity_Harbor:weather",
+      "path": "maps/SlateportCity_Harbor.json",
+      "sourcePath": "data/maps/SlateportCity_Harbor/map.json",
+      "legacyKind": "map_weather",
+      "map": "SlateportCity_Harbor"
+    },
+    {
+      "id": "SlateportCity_House:weather",
+      "path": "maps/SlateportCity_House.json",
+      "sourcePath": "data/maps/SlateportCity_House/map.json",
+      "legacyKind": "map_weather",
+      "map": "SlateportCity_House"
+    },
+    {
+      "id": "SlateportCity_Mart:weather",
+      "path": "maps/SlateportCity_Mart.json",
+      "sourcePath": "data/maps/SlateportCity_Mart/map.json",
+      "legacyKind": "map_weather",
+      "map": "SlateportCity_Mart"
+    },
+    {
+      "id": "SlateportCity_NameRatersHouse:weather",
+      "path": "maps/SlateportCity_NameRatersHouse.json",
+      "sourcePath": "data/maps/SlateportCity_NameRatersHouse/map.json",
+      "legacyKind": "map_weather",
+      "map": "SlateportCity_NameRatersHouse"
+    },
+    {
+      "id": "SlateportCity_OceanicMuseum_1F:weather",
+      "path": "maps/SlateportCity_OceanicMuseum_1F.json",
+      "sourcePath": "data/maps/SlateportCity_OceanicMuseum_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "SlateportCity_OceanicMuseum_1F"
+    },
+    {
+      "id": "SlateportCity_OceanicMuseum_2F:weather",
+      "path": "maps/SlateportCity_OceanicMuseum_2F.json",
+      "sourcePath": "data/maps/SlateportCity_OceanicMuseum_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "SlateportCity_OceanicMuseum_2F"
+    },
+    {
+      "id": "SlateportCity_PokemonCenter_1F:weather",
+      "path": "maps/SlateportCity_PokemonCenter_1F.json",
+      "sourcePath": "data/maps/SlateportCity_PokemonCenter_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "SlateportCity_PokemonCenter_1F"
+    },
+    {
+      "id": "SlateportCity_PokemonCenter_2F:weather",
+      "path": "maps/SlateportCity_PokemonCenter_2F.json",
+      "sourcePath": "data/maps/SlateportCity_PokemonCenter_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "SlateportCity_PokemonCenter_2F"
+    },
+    {
+      "id": "SlateportCity_PokemonFanClub:weather",
+      "path": "maps/SlateportCity_PokemonFanClub.json",
+      "sourcePath": "data/maps/SlateportCity_PokemonFanClub/map.json",
+      "legacyKind": "map_weather",
+      "map": "SlateportCity_PokemonFanClub"
+    },
+    {
+      "id": "SlateportCity_SternsShipyard_1F:weather",
+      "path": "maps/SlateportCity_SternsShipyard_1F.json",
+      "sourcePath": "data/maps/SlateportCity_SternsShipyard_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "SlateportCity_SternsShipyard_1F"
+    },
+    {
+      "id": "SlateportCity_SternsShipyard_2F:weather",
+      "path": "maps/SlateportCity_SternsShipyard_2F.json",
+      "sourcePath": "data/maps/SlateportCity_SternsShipyard_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "SlateportCity_SternsShipyard_2F"
+    },
+    {
+      "id": "SootopolisCity:weather",
+      "path": "maps/SootopolisCity.json",
+      "sourcePath": "data/maps/SootopolisCity/map.json",
+      "legacyKind": "map_weather",
+      "map": "SootopolisCity"
+    },
+    {
+      "id": "SootopolisCity_Gym_1F:weather",
+      "path": "maps/SootopolisCity_Gym_1F.json",
+      "sourcePath": "data/maps/SootopolisCity_Gym_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "SootopolisCity_Gym_1F"
+    },
+    {
+      "id": "SootopolisCity_Gym_B1F:weather",
+      "path": "maps/SootopolisCity_Gym_B1F.json",
+      "sourcePath": "data/maps/SootopolisCity_Gym_B1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "SootopolisCity_Gym_B1F"
+    },
+    {
+      "id": "SootopolisCity_House1:weather",
+      "path": "maps/SootopolisCity_House1.json",
+      "sourcePath": "data/maps/SootopolisCity_House1/map.json",
+      "legacyKind": "map_weather",
+      "map": "SootopolisCity_House1"
+    },
+    {
+      "id": "SootopolisCity_House2:weather",
+      "path": "maps/SootopolisCity_House2.json",
+      "sourcePath": "data/maps/SootopolisCity_House2/map.json",
+      "legacyKind": "map_weather",
+      "map": "SootopolisCity_House2"
+    },
+    {
+      "id": "SootopolisCity_House3:weather",
+      "path": "maps/SootopolisCity_House3.json",
+      "sourcePath": "data/maps/SootopolisCity_House3/map.json",
+      "legacyKind": "map_weather",
+      "map": "SootopolisCity_House3"
+    },
+    {
+      "id": "SootopolisCity_House4:weather",
+      "path": "maps/SootopolisCity_House4.json",
+      "sourcePath": "data/maps/SootopolisCity_House4/map.json",
+      "legacyKind": "map_weather",
+      "map": "SootopolisCity_House4"
+    },
+    {
+      "id": "SootopolisCity_House5:weather",
+      "path": "maps/SootopolisCity_House5.json",
+      "sourcePath": "data/maps/SootopolisCity_House5/map.json",
+      "legacyKind": "map_weather",
+      "map": "SootopolisCity_House5"
+    },
+    {
+      "id": "SootopolisCity_House6:weather",
+      "path": "maps/SootopolisCity_House6.json",
+      "sourcePath": "data/maps/SootopolisCity_House6/map.json",
+      "legacyKind": "map_weather",
+      "map": "SootopolisCity_House6"
+    },
+    {
+      "id": "SootopolisCity_House7:weather",
+      "path": "maps/SootopolisCity_House7.json",
+      "sourcePath": "data/maps/SootopolisCity_House7/map.json",
+      "legacyKind": "map_weather",
+      "map": "SootopolisCity_House7"
+    },
+    {
+      "id": "SootopolisCity_LotadAndSeedotHouse:weather",
+      "path": "maps/SootopolisCity_LotadAndSeedotHouse.json",
+      "sourcePath": "data/maps/SootopolisCity_LotadAndSeedotHouse/map.json",
+      "legacyKind": "map_weather",
+      "map": "SootopolisCity_LotadAndSeedotHouse"
+    },
+    {
+      "id": "SootopolisCity_Mart:weather",
+      "path": "maps/SootopolisCity_Mart.json",
+      "sourcePath": "data/maps/SootopolisCity_Mart/map.json",
+      "legacyKind": "map_weather",
+      "map": "SootopolisCity_Mart"
+    },
+    {
+      "id": "SootopolisCity_MysteryEventsHouse_1F:weather",
+      "path": "maps/SootopolisCity_MysteryEventsHouse_1F.json",
+      "sourcePath": "data/maps/SootopolisCity_MysteryEventsHouse_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "SootopolisCity_MysteryEventsHouse_1F"
+    },
+    {
+      "id": "SootopolisCity_MysteryEventsHouse_B1F:weather",
+      "path": "maps/SootopolisCity_MysteryEventsHouse_B1F.json",
+      "sourcePath": "data/maps/SootopolisCity_MysteryEventsHouse_B1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "SootopolisCity_MysteryEventsHouse_B1F"
+    },
+    {
+      "id": "SootopolisCity_PokemonCenter_1F:weather",
+      "path": "maps/SootopolisCity_PokemonCenter_1F.json",
+      "sourcePath": "data/maps/SootopolisCity_PokemonCenter_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "SootopolisCity_PokemonCenter_1F"
+    },
+    {
+      "id": "SootopolisCity_PokemonCenter_2F:weather",
+      "path": "maps/SootopolisCity_PokemonCenter_2F.json",
+      "sourcePath": "data/maps/SootopolisCity_PokemonCenter_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "SootopolisCity_PokemonCenter_2F"
+    },
+    {
+      "id": "SouthernIsland_Exterior:weather",
+      "path": "maps/SouthernIsland_Exterior.json",
+      "sourcePath": "data/maps/SouthernIsland_Exterior/map.json",
+      "legacyKind": "map_weather",
+      "map": "SouthernIsland_Exterior"
+    },
+    {
+      "id": "SouthernIsland_Interior:weather",
+      "path": "maps/SouthernIsland_Interior.json",
+      "sourcePath": "data/maps/SouthernIsland_Interior/map.json",
+      "legacyKind": "map_weather",
+      "map": "SouthernIsland_Interior"
+    },
+    {
+      "id": "TerraCave_End:weather",
+      "path": "maps/TerraCave_End.json",
+      "sourcePath": "data/maps/TerraCave_End/map.json",
+      "legacyKind": "map_weather",
+      "map": "TerraCave_End"
+    },
+    {
+      "id": "TerraCave_Entrance:weather",
+      "path": "maps/TerraCave_Entrance.json",
+      "sourcePath": "data/maps/TerraCave_Entrance/map.json",
+      "legacyKind": "map_weather",
+      "map": "TerraCave_Entrance"
+    },
+    {
+      "id": "TradeCenter:weather",
+      "path": "maps/TradeCenter.json",
+      "sourcePath": "data/maps/TradeCenter/map.json",
+      "legacyKind": "map_weather",
+      "map": "TradeCenter"
+    },
+    {
+      "id": "TrainerHill_1F:weather",
+      "path": "maps/TrainerHill_1F.json",
+      "sourcePath": "data/maps/TrainerHill_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "TrainerHill_1F"
+    },
+    {
+      "id": "TrainerHill_2F:weather",
+      "path": "maps/TrainerHill_2F.json",
+      "sourcePath": "data/maps/TrainerHill_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "TrainerHill_2F"
+    },
+    {
+      "id": "TrainerHill_3F:weather",
+      "path": "maps/TrainerHill_3F.json",
+      "sourcePath": "data/maps/TrainerHill_3F/map.json",
+      "legacyKind": "map_weather",
+      "map": "TrainerHill_3F"
+    },
+    {
+      "id": "TrainerHill_4F:weather",
+      "path": "maps/TrainerHill_4F.json",
+      "sourcePath": "data/maps/TrainerHill_4F/map.json",
+      "legacyKind": "map_weather",
+      "map": "TrainerHill_4F"
+    },
+    {
+      "id": "TrainerHill_Elevator:weather",
+      "path": "maps/TrainerHill_Elevator.json",
+      "sourcePath": "data/maps/TrainerHill_Elevator/map.json",
+      "legacyKind": "map_weather",
+      "map": "TrainerHill_Elevator"
+    },
+    {
+      "id": "TrainerHill_Entrance:weather",
+      "path": "maps/TrainerHill_Entrance.json",
+      "sourcePath": "data/maps/TrainerHill_Entrance/map.json",
+      "legacyKind": "map_weather",
+      "map": "TrainerHill_Entrance"
+    },
+    {
+      "id": "TrainerHill_Roof:weather",
+      "path": "maps/TrainerHill_Roof.json",
+      "sourcePath": "data/maps/TrainerHill_Roof/map.json",
+      "legacyKind": "map_weather",
+      "map": "TrainerHill_Roof"
+    },
+    {
+      "id": "Underwater_MarineCave:weather",
+      "path": "maps/Underwater_MarineCave.json",
+      "sourcePath": "data/maps/Underwater_MarineCave/map.json",
+      "legacyKind": "map_weather",
+      "map": "Underwater_MarineCave"
+    },
+    {
+      "id": "Underwater_Route105:weather",
+      "path": "maps/Underwater_Route105.json",
+      "sourcePath": "data/maps/Underwater_Route105/map.json",
+      "legacyKind": "map_weather",
+      "map": "Underwater_Route105"
+    },
+    {
+      "id": "Underwater_Route124:weather",
+      "path": "maps/Underwater_Route124.json",
+      "sourcePath": "data/maps/Underwater_Route124/map.json",
+      "legacyKind": "map_weather",
+      "map": "Underwater_Route124"
+    },
+    {
+      "id": "Underwater_Route125:weather",
+      "path": "maps/Underwater_Route125.json",
+      "sourcePath": "data/maps/Underwater_Route125/map.json",
+      "legacyKind": "map_weather",
+      "map": "Underwater_Route125"
+    },
+    {
+      "id": "Underwater_Route126:weather",
+      "path": "maps/Underwater_Route126.json",
+      "sourcePath": "data/maps/Underwater_Route126/map.json",
+      "legacyKind": "map_weather",
+      "map": "Underwater_Route126"
+    },
+    {
+      "id": "Underwater_Route127:weather",
+      "path": "maps/Underwater_Route127.json",
+      "sourcePath": "data/maps/Underwater_Route127/map.json",
+      "legacyKind": "map_weather",
+      "map": "Underwater_Route127"
+    },
+    {
+      "id": "Underwater_Route128:weather",
+      "path": "maps/Underwater_Route128.json",
+      "sourcePath": "data/maps/Underwater_Route128/map.json",
+      "legacyKind": "map_weather",
+      "map": "Underwater_Route128"
+    },
+    {
+      "id": "Underwater_Route129:weather",
+      "path": "maps/Underwater_Route129.json",
+      "sourcePath": "data/maps/Underwater_Route129/map.json",
+      "legacyKind": "map_weather",
+      "map": "Underwater_Route129"
+    },
+    {
+      "id": "Underwater_Route134:weather",
+      "path": "maps/Underwater_Route134.json",
+      "sourcePath": "data/maps/Underwater_Route134/map.json",
+      "legacyKind": "map_weather",
+      "map": "Underwater_Route134"
+    },
+    {
+      "id": "Underwater_SeafloorCavern:weather",
+      "path": "maps/Underwater_SeafloorCavern.json",
+      "sourcePath": "data/maps/Underwater_SeafloorCavern/map.json",
+      "legacyKind": "map_weather",
+      "map": "Underwater_SeafloorCavern"
+    },
+    {
+      "id": "Underwater_SealedChamber:weather",
+      "path": "maps/Underwater_SealedChamber.json",
+      "sourcePath": "data/maps/Underwater_SealedChamber/map.json",
+      "legacyKind": "map_weather",
+      "map": "Underwater_SealedChamber"
+    },
+    {
+      "id": "Underwater_SootopolisCity:weather",
+      "path": "maps/Underwater_SootopolisCity.json",
+      "sourcePath": "data/maps/Underwater_SootopolisCity/map.json",
+      "legacyKind": "map_weather",
+      "map": "Underwater_SootopolisCity"
+    },
+    {
+      "id": "UnionRoom:weather",
+      "path": "maps/UnionRoom.json",
+      "sourcePath": "data/maps/UnionRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "UnionRoom"
+    },
+    {
+      "id": "UnusedContestHall1:weather",
+      "path": "maps/UnusedContestHall1.json",
+      "sourcePath": "data/maps/UnusedContestHall1/map.json",
+      "legacyKind": "map_weather",
+      "map": "UnusedContestHall1"
+    },
+    {
+      "id": "UnusedContestHall2:weather",
+      "path": "maps/UnusedContestHall2.json",
+      "sourcePath": "data/maps/UnusedContestHall2/map.json",
+      "legacyKind": "map_weather",
+      "map": "UnusedContestHall2"
+    },
+    {
+      "id": "UnusedContestHall3:weather",
+      "path": "maps/UnusedContestHall3.json",
+      "sourcePath": "data/maps/UnusedContestHall3/map.json",
+      "legacyKind": "map_weather",
+      "map": "UnusedContestHall3"
+    },
+    {
+      "id": "UnusedContestHall4:weather",
+      "path": "maps/UnusedContestHall4.json",
+      "sourcePath": "data/maps/UnusedContestHall4/map.json",
+      "legacyKind": "map_weather",
+      "map": "UnusedContestHall4"
+    },
+    {
+      "id": "UnusedContestHall5:weather",
+      "path": "maps/UnusedContestHall5.json",
+      "sourcePath": "data/maps/UnusedContestHall5/map.json",
+      "legacyKind": "map_weather",
+      "map": "UnusedContestHall5"
+    },
+    {
+      "id": "UnusedContestHall6:weather",
+      "path": "maps/UnusedContestHall6.json",
+      "sourcePath": "data/maps/UnusedContestHall6/map.json",
+      "legacyKind": "map_weather",
+      "map": "UnusedContestHall6"
+    },
+    {
+      "id": "VerdanturfTown:weather",
+      "path": "maps/VerdanturfTown.json",
+      "sourcePath": "data/maps/VerdanturfTown/map.json",
+      "legacyKind": "map_weather",
+      "map": "VerdanturfTown"
+    },
+    {
+      "id": "VerdanturfTown_BattleTentBattleRoom:weather",
+      "path": "maps/VerdanturfTown_BattleTentBattleRoom.json",
+      "sourcePath": "data/maps/VerdanturfTown_BattleTentBattleRoom/map.json",
+      "legacyKind": "map_weather",
+      "map": "VerdanturfTown_BattleTentBattleRoom"
+    },
+    {
+      "id": "VerdanturfTown_BattleTentCorridor:weather",
+      "path": "maps/VerdanturfTown_BattleTentCorridor.json",
+      "sourcePath": "data/maps/VerdanturfTown_BattleTentCorridor/map.json",
+      "legacyKind": "map_weather",
+      "map": "VerdanturfTown_BattleTentCorridor"
+    },
+    {
+      "id": "VerdanturfTown_BattleTentLobby:weather",
+      "path": "maps/VerdanturfTown_BattleTentLobby.json",
+      "sourcePath": "data/maps/VerdanturfTown_BattleTentLobby/map.json",
+      "legacyKind": "map_weather",
+      "map": "VerdanturfTown_BattleTentLobby"
+    },
+    {
+      "id": "VerdanturfTown_FriendshipRatersHouse:weather",
+      "path": "maps/VerdanturfTown_FriendshipRatersHouse.json",
+      "sourcePath": "data/maps/VerdanturfTown_FriendshipRatersHouse/map.json",
+      "legacyKind": "map_weather",
+      "map": "VerdanturfTown_FriendshipRatersHouse"
+    },
+    {
+      "id": "VerdanturfTown_House:weather",
+      "path": "maps/VerdanturfTown_House.json",
+      "sourcePath": "data/maps/VerdanturfTown_House/map.json",
+      "legacyKind": "map_weather",
+      "map": "VerdanturfTown_House"
+    },
+    {
+      "id": "VerdanturfTown_Mart:weather",
+      "path": "maps/VerdanturfTown_Mart.json",
+      "sourcePath": "data/maps/VerdanturfTown_Mart/map.json",
+      "legacyKind": "map_weather",
+      "map": "VerdanturfTown_Mart"
+    },
+    {
+      "id": "VerdanturfTown_PokemonCenter_1F:weather",
+      "path": "maps/VerdanturfTown_PokemonCenter_1F.json",
+      "sourcePath": "data/maps/VerdanturfTown_PokemonCenter_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "VerdanturfTown_PokemonCenter_1F"
+    },
+    {
+      "id": "VerdanturfTown_PokemonCenter_2F:weather",
+      "path": "maps/VerdanturfTown_PokemonCenter_2F.json",
+      "sourcePath": "data/maps/VerdanturfTown_PokemonCenter_2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "VerdanturfTown_PokemonCenter_2F"
+    },
+    {
+      "id": "VerdanturfTown_WandasHouse:weather",
+      "path": "maps/VerdanturfTown_WandasHouse.json",
+      "sourcePath": "data/maps/VerdanturfTown_WandasHouse/map.json",
+      "legacyKind": "map_weather",
+      "map": "VerdanturfTown_WandasHouse"
+    },
+    {
+      "id": "VictoryRoad_1F:weather",
+      "path": "maps/VictoryRoad_1F.json",
+      "sourcePath": "data/maps/VictoryRoad_1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "VictoryRoad_1F"
+    },
+    {
+      "id": "VictoryRoad_B1F:weather",
+      "path": "maps/VictoryRoad_B1F.json",
+      "sourcePath": "data/maps/VictoryRoad_B1F/map.json",
+      "legacyKind": "map_weather",
+      "map": "VictoryRoad_B1F"
+    },
+    {
+      "id": "VictoryRoad_B2F:weather",
+      "path": "maps/VictoryRoad_B2F.json",
+      "sourcePath": "data/maps/VictoryRoad_B2F/map.json",
+      "legacyKind": "map_weather",
+      "map": "VictoryRoad_B2F"
+    }
+  ],
+  "entityCount": 518,
+  "weatherCounts": {
+    "WEATHER_SHADE": 14,
+    "WEATHER_NONE": 428,
+    "WEATHER_UNDERWATER_BUBBLES": 14,
+    "WEATHER_FOG_HORIZONTAL": 10,
+    "WEATHER_SUNNY": 51,
+    "WEATHER_VOLCANIC_ASH": 1
+  }
+}

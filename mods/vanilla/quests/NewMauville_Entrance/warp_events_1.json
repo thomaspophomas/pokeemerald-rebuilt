@@ -1,0 +1,27 @@
+{
+  "id": "NewMauville_Entrance:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NewMauville_Entrance/map.json",
+    "sha1": "bcc1eb30c3ad8d2f4f156e4f004a27870411eb7e"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/NewMauville_Entrance/map.json",
+    "raw": {
+      "x": 4,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_NEW_MAUVILLE_INSIDE",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "NewMauville_Entrance",
+  "mapId": "MAP_NEW_MAUVILLE_ENTRANCE",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "SeafloorCavern_Entrance:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Entrance/map.json",
+    "sha1": "26558c228dcd913112067322d6441727f233be54"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SeafloorCavern_Entrance/map.json",
+    "raw": {
+      "x": 10,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_SEAFLOOR_CAVERN_ROOM1",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "SeafloorCavern_Entrance",
+  "mapId": "MAP_SEAFLOOR_CAVERN_ENTRANCE",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

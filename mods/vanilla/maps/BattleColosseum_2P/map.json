@@ -64,5 +64,26 @@
       "script": "EventScript_BattleColosseum_2P_PlayerSpot1"
     }
   ],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleColosseum_2P/map.json",
+    "sha1": "759865d0e4fd0286d6db2cc4390c68ea3a0511c1"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/BattleColosseum_2P/map.json",
+    "mapName": "BattleColosseum_2P",
+    "scriptsSourcePath": "data/maps/BattleColosseum_2P/scripts.inc"
+  },
+  "mapGroup": 25,
+  "mapNum": 24,
+  "mapGroupSymbol": "gMapGroup_IndoorDynamic",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,28 @@
+{
+  "id": "Route110:bg_events:12",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/map.json",
+    "sha1": "8a0d70f41dabc8b115727a1fccde79f1c803c9e1"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route110/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 35,
+      "y": 39,
+      "elevation": 3,
+      "item": "ITEM_REVIVE",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_110_REVIVE"
+    }
+  },
+  "map": "Route110",
+  "mapId": "MAP_ROUTE110",
+  "eventType": "bg_events",
+  "index": 12,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

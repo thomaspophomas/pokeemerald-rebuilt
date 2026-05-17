@@ -1,0 +1,14 @@
+{
+  "id": "trainer_parties:source_manifest",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "migrationMode": "source_file_manifest",
+  "sourceAuthority": "vanilla",
+  "sourceFiles": [
+    {
+      "path": "src/data/trainer_parties.h",
+      "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7",
+      "bytes": 240614
+    }
+  ]
+}

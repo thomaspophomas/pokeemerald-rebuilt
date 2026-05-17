@@ -1,0 +1,30 @@
+{
+  "id": "Route109:bg_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route109/map.json",
+    "sha1": "117eb045095e0edf5185c707142024988e3284ce"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route109/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 29,
+      "y": 10,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route109_EventScript_TrainerTipsSign"
+    }
+  },
+  "map": "Route109",
+  "mapId": "MAP_ROUTE109",
+  "eventType": "bg_events",
+  "index": 1,
+  "script": "Route109_EventScript_TrainerTipsSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

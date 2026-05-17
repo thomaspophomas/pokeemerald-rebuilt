@@ -221,5 +221,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SecretBase_BrownCave2/map.json",
+    "sha1": "ebdeb1347db75bcb7362d12a68aa004b1b978a97"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SecretBase_BrownCave2/map.json",
+    "mapName": "SecretBase_BrownCave2",
+    "scriptsSourcePath": null
+  },
+  "mapGroup": 25,
+  "mapNum": 7,
+  "mapGroupSymbol": "gMapGroup_IndoorDynamic",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

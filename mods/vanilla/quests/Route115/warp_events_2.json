@@ -1,0 +1,27 @@
+{
+  "id": "Route115:warp_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route115/map.json",
+    "sha1": "b6c6b6d8e02d782dfc66ddae4e4cf9145461193d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route115/map.json",
+    "raw": {
+      "x": 36,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_TERRA_CAVE_ENTRANCE",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Route115",
+  "mapId": "MAP_ROUTE115",
+  "eventType": "warp_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,18 +1,1523 @@
 {
   "domain": "overworld_sprites",
   "schemaVersion": 1,
-  "fileCount": 1,
-  "jsonFileCount": 1,
-  "bytes": 47710,
-  "sha1": "13afb46afb337fb4ffbee06b22e0e17de0c2fc8a",
+  "fileCount": 302,
+  "jsonFileCount": 302,
+  "bytes": 267722,
+  "sha1": "22db2195cf87da0da0d37fd0ebae7dbcf73ad81d",
   "files": [
     {
-      "path": "mods/vanilla/overworld_sprites/manifest.json",
-      "sha1": "70f908f428c6f5c1c31adb4c391a3365c4b12eaa",
-      "bytes": 47710
+      "path": "mods/vanilla/overworld_sprites/_source_manifest.json",
+      "sha1": "c01aae4b2c3909485416a5b56c8d8319771e730a",
+      "bytes": 47755
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/index.json",
+      "sha1": "3e736c3a5f37541c12a99721c83db6c508b749f1",
+      "bytes": 82356
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_birth_island_stone.pal.json",
+      "sha1": "f0970de409704a7224dbfb8c65af6ba22289587d",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_brendan.pal.json",
+      "sha1": "9bf63203ddb6c9887a5ca59e569ff48ed0c9e01b",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_brendan_reflection.pal.json",
+      "sha1": "d180ff48814857c507bbc2b1ff84593f93ba637c",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_bridge_reflection.pal.json",
+      "sha1": "b601e22091c63e54667037366ebd466fd560bde3",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_cable_car.pal.json",
+      "sha1": "964b1bb73c6e6156d4769aa58e991847f03181c2",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_deoxys.pal.json",
+      "sha1": "dd2bcb1c83de5942147bcd23b13ab820b10c5e3e",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_enemy_zigzagoon.pal.json",
+      "sha1": "879444ea9111c5eecfda1f766b29a598140ef379",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_groudon.pal.json",
+      "sha1": "4cbc1778858602888b4ca0cf0bdfd574a5066033",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_groudon_reflection.pal.json",
+      "sha1": "0ccf262f3cca7311940d18c9aebce5ce954e6e45",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_ho_oh.pal.json",
+      "sha1": "460be9e1295418e0bd8578f0480bd135e7a33c64",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_kyogre.pal.json",
+      "sha1": "de12b070f8b1312625fcc1c201ec386b5b63e534",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_kyogre_reflection.pal.json",
+      "sha1": "c69526f951213b9f5f36147316807a919524b8b2",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_lugia.pal.json",
+      "sha1": "6c1f91f6e8d393a2af279b9b5e36b7f5b6213c92",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_may.pal.json",
+      "sha1": "72af0fd17f293818e41b5675dc065dfe407e9ad4",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_may_reflection.pal.json",
+      "sha1": "10854ab9d16b7aa3c0b23e5a8c2588108f2c3016",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_moving_box.pal.json",
+      "sha1": "3df77cc1f612900dbcdeb5f79a5b8c57f7836125",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_npc_1.pal.json",
+      "sha1": "af5aa82b2050c7981c17fc241611a5e10dff9b87",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_npc_1_reflection.pal.json",
+      "sha1": "b8ad8c523f5066bfc504da0c2fa961ea9bcbe96b",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_npc_2.pal.json",
+      "sha1": "8ccaf33a6243e1ab3b071637031b5679156c2768",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_npc_2_reflection.pal.json",
+      "sha1": "bbdfb3868f6629dff08d7acf6ca7940a865ef368",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_npc_3.pal.json",
+      "sha1": "0264f48c8ba782cafa8dd3f3e1ba5c42e5904b6c",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_npc_3_reflection.pal.json",
+      "sha1": "d5cfda98e4d373b0adbb8818c25db36a6d9060e6",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_npc_4.pal.json",
+      "sha1": "c74379b7cc3cdb2825303f5cba281266a19d91ab",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_npc_4_reflection.pal.json",
+      "sha1": "909e4f7c3faf9da4a2a588e3b546a2a572120c19",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_player_underwater.pal.json",
+      "sha1": "6128659e3dd01d64eced39ddeec481f5ac71e6af",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_poochyena.pal.json",
+      "sha1": "43a6651535f6eebcca0e817ab80b17d107f3e497",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_quinty_plump.pal.json",
+      "sha1": "ea6eb96025a7856f1b60fc5a859478ed15c6faae",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_quinty_plump_reflection.pal.json",
+      "sha1": "39df6ff3e7bd6589e019b88957229ca6f7bb5041",
+      "bytes": 493
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_red_leaf.pal.json",
+      "sha1": "c352271bef1af24be51b15e07d38cace06ef8828",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_ruby_sapphire_brendan.pal.json",
+      "sha1": "d60c1ddd139c5df17c5462adbe3d423d1591531b",
+      "bytes": 485
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_ruby_sapphire_may.pal.json",
+      "sha1": "c128275d6b28589c5ae1a483eca22bace427e312",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_ss_tidal.pal.json",
+      "sha1": "a14398bb13caed18402c65de6542f32637acbcae",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_submarine_shadow.pal.json",
+      "sha1": "80219fe2c71248e97f5f97b44fbd241cd13ec947",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_truck.pal.json",
+      "sha1": "46e298c76e0cec11332349c4b6414e6d4bfc92ad",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_unused_palette.pal.json",
+      "sha1": "1f63cfebe83ce4a839e3233fe95657d2120524d4",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_palettes_vigoroth.pal.json",
+      "sha1": "ddbaf46755af1cf05dec80cd4494eca1f016df47",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_aguav.png.json",
+      "sha1": "dcab92bfa82cfb710696d41d9c27d6d1249e94c1",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_aspear.png.json",
+      "sha1": "3760112a65624874ed69c59c2dc5d28c36fa3afa",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_cheri.png.json",
+      "sha1": "9c5d6dc14770579bb41b554d3d1ed83c69512c7e",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_chesto.png.json",
+      "sha1": "458e355d26f3e09dbad93fc55e0df196ddcf7dfe",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_cornn.png.json",
+      "sha1": "4225c4d87ea246347a77349450468cb4cf4b4bf0",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_dirt_pile.png.json",
+      "sha1": "c46672cee0a1a37179b06cbb5ba8e96d9e7753a0",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_durin.png.json",
+      "sha1": "683a2e98e7aa5e3456fdfb81453717ad2765b36d",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_figy.png.json",
+      "sha1": "b9732b6039db5f8a3ca247c37519972af50de071",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_grepa.png.json",
+      "sha1": "b898532ebbe5501e454053da3acb664ba648131d",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_hondew.png.json",
+      "sha1": "1bcf81b3fa4871bdc3be7feead15d2d8f21cb3bd",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_iapapa.png.json",
+      "sha1": "826476ae5efaa7be3e8f3ce94a14c4af191a3ac5",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_kelpsy.png.json",
+      "sha1": "dbef363f363b92f9bc4834ea24433924cb30035c",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_lansat.png.json",
+      "sha1": "9a159822eaeb455f3d9a81c84230e3f399cd9f29",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_leppa.png.json",
+      "sha1": "af2dd94ca55f1ef072645f98a16b815bbeb5c003",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_liechi.png.json",
+      "sha1": "a74f63d6e819dad39fdd946114b358528adafb0a",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_lum.png.json",
+      "sha1": "853a2fde1d7a4d52de5b9387a1e1583b3717fd56",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_mago.png.json",
+      "sha1": "c38f9316a746b43c3b1a9c4b78f8a0b0ea16bdd7",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_nomel.png.json",
+      "sha1": "e9453b1e04777fac5de7d278876ceae0e83f59a3",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_oran.png.json",
+      "sha1": "86c4047f7e7e22f372be0c185a34c572166eacf9",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_pamtre.png.json",
+      "sha1": "803f996de1799c7461559e8a231aa7a1ed53d7c4",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_pecha.png.json",
+      "sha1": "8031c11e68fc39714e3da29e89530b15c6f62a18",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_persim.png.json",
+      "sha1": "6bbe2195f5db4fd0a298dd7f83bcee570a33717d",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_pomeg.png.json",
+      "sha1": "f9bda3ff5a2af13f12e0810fc30ce267e728522b",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_rabuta.png.json",
+      "sha1": "86f7ab495da57b6a7c450b4316f93218d0c234b1",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_rawst.png.json",
+      "sha1": "4babed3cfd48e4398080984bb9b93419680b99ac",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_razz.png.json",
+      "sha1": "4ddea7679e1e0a7f6d22f8df7af0720b876aeb8f",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_sitrus.png.json",
+      "sha1": "fd49ebabcab279b0358d920c6382d6dceb70b447",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_spelon.png.json",
+      "sha1": "87bcf01a2164077a031151a7bc92e6b459445061",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_sprout.png.json",
+      "sha1": "6c2aafb9037dc9513d46f3562401b571f0619a61",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_tamato.png.json",
+      "sha1": "caa05410e61f938f08d1632ef540de794356d8ae",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_wepear.png.json",
+      "sha1": "f16e201f20ba8077da191e233733b03f92d58a53",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_berry_trees_wiki.png.json",
+      "sha1": "23eac5a22662120b146166cd67fa1910d992fb19",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_cushions_ball_cushion.png.json",
+      "sha1": "cd87c1219abfa3f6c437786c5f5eb8e12120566d",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_cushions_diamond_cushion.png.json",
+      "sha1": "98e46ac48e04c480a16c07754841855d692fd324",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_cushions_fire_cushion.png.json",
+      "sha1": "63797ab4fb4a94214da8a85304bfbbfd5b01fb68",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_cushions_grass_cushion.png.json",
+      "sha1": "8d42614ee450be0bfbb43879fc02b52b7cd501c2",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_cushions_kiss_cushion.png.json",
+      "sha1": "f96b3ca3725fe1ff8ef3fb022595d19bf991cd00",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_cushions_pika_cushion.png.json",
+      "sha1": "69f7a13b9a4df5576b34e2b454531a1e19769e52",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_cushions_round_cushion.png.json",
+      "sha1": "8ecb0a082490fb7eddaa2d3b1309c89cd7bb0482",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_cushions_spin_cushion.png.json",
+      "sha1": "73058ac144d5f5034da90aa36341f131949d5584",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_cushions_water_cushion.png.json",
+      "sha1": "f21a9a6a18927203ef443e2b795bd55a2065994f",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_cushions_zigzag_cushion.png.json",
+      "sha1": "64df1e7602e53537850f97138122c498c949bafe",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_azurill_doll.png.json",
+      "sha1": "f46f5316d4ef7abe1fb2d9d519e5e9c29bc4c83b",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_baltoy_doll.png.json",
+      "sha1": "e9a5799ec502913a8ac2fb2c588d57357c6f0a49",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_big_blastoise_doll.png.json",
+      "sha1": "2ae5468d4881abbf8be5311b1974eebcdf931e2c",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_big_charizard_doll.png.json",
+      "sha1": "1ac388b017a58e98eed17eb055116d61edf44241",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_big_lapras_doll.png.json",
+      "sha1": "da357f649f30006b7a2872f16692815bbb146d2f",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_big_regice_doll.png.json",
+      "sha1": "abf1b2382274a90e74d780c9b34f694e6b7b5e25",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_big_regirock_doll.png.json",
+      "sha1": "76fff011da35e1ddd90c611bf79bf3c1c4c557f3",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_big_registeel_doll.png.json",
+      "sha1": "88c33703e03159d7a6ea7368c8dfc77d47fce08c",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_big_rhydon_doll.png.json",
+      "sha1": "22d87f756672a042dd6b4b659480651ff6ffeec0",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_big_snorlax_doll.png.json",
+      "sha1": "0eabb84abaaa5e6f668c8040de9870d1df9fd797",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_big_venusaur_doll.png.json",
+      "sha1": "c761cc8f9dca73ebb0f2bf4021de27f73c567c28",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_big_wailmer_doll.png.json",
+      "sha1": "193f9e7daa3f328c15f0eb10bc978ecd4a171ddd",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_chikorita_doll.png.json",
+      "sha1": "735377d1a7969e9dadbb88199a9f6cac2cce9de7",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_clefairy_doll.png.json",
+      "sha1": "2db8b03a3e92ce5140c82ec289932e3e8e395581",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_cyndaquil_doll.png.json",
+      "sha1": "a62c7394563bf730eb8e3342bd78b44b04f56819",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_ditto_doll.png.json",
+      "sha1": "55bb8946a32289e4cb95c050461d648c47eeebd2",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_duskull_doll.png.json",
+      "sha1": "98b977c6c77f0a33be1e17b9eaeb959f61f05463",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_gulpin_doll.png.json",
+      "sha1": "d05be67903b0c08a18818144d7393919c19a608a",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_jigglypuff_doll.png.json",
+      "sha1": "d2d88992d71cae7e972574f966b9f3030d420b4b",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_kecleon_doll.png.json",
+      "sha1": "a155cc858c12fc5c62eb32efbeb859ebd98ef536",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_lotad_doll.png.json",
+      "sha1": "5a432a9e72b7bbf266e4005e4809af6596ac5141",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_marill_doll.png.json",
+      "sha1": "278dd6689b0659d1c409612f4f9727eb58a09301",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_meowth_doll.png.json",
+      "sha1": "33759bbb99a20a38dd42508a7a6c854087771103",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_mudkip_doll.png.json",
+      "sha1": "f6391ea8b7a3fec033ab3e32a85c3f5b68c7ca8d",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_pichu_doll.png.json",
+      "sha1": "fcc8b2904a79ba70a15c775c0c3e6065dbda013a",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_pikachu_doll.png.json",
+      "sha1": "d8cd5791cdf1ce57aef40fadc7e11fffb4afdcf3",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_seedot_doll.png.json",
+      "sha1": "e54ad6e0b32175a320ee9c2a826ef99ec9a3fbaf",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_skitty_doll.png.json",
+      "sha1": "7afa26e17c1df486466eb719295c3a51eccb593b",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_smoochum_doll.png.json",
+      "sha1": "ae6b936699a5afea03b1b93829d7e6c21ccc4595",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_swablu_doll.png.json",
+      "sha1": "917e37d5bee5d3c1f368b550dd07db72dcccdb19",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_togepi_doll.png.json",
+      "sha1": "d49ec2a01c0e0a1c6fe16bcd92bc0930667ea54a",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_torchic_doll.png.json",
+      "sha1": "45146dd0daddba2cfe70cee8452494e58903595a",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_totodile_doll.png.json",
+      "sha1": "aa965995e42e19e6c1dcbb340cc5b69c2738bad1",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_treecko_doll.png.json",
+      "sha1": "cd1cee8ba571cbf0297c3b4d7944ea982697c631",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_unused_magnemite_doll.png.json",
+      "sha1": "82dae88fd98189bc864f4a4d0ce43fbee98a0551",
+      "bytes": 493
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_unused_natu_doll.png.json",
+      "sha1": "c42591e1d517abd415d2e8f50cb7a8020a7a3223",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_unused_pikachu_doll.png.json",
+      "sha1": "3d7414593aa34977f7a1c440d43c5bbff420d7eb",
+      "bytes": 485
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_unused_porygon2_doll.png.json",
+      "sha1": "72c30ef98c313fbe528c882a7b03447218fad6b3",
+      "bytes": 489
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_unused_squirtle_doll.png.json",
+      "sha1": "9794dd60121c9799b204010865fc0905aaf8b136",
+      "bytes": 489
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_unused_wooper_doll.png.json",
+      "sha1": "33167bbde96318f47441b99a9bccc7665a3a7a94",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_dolls_wynaut_doll.png.json",
+      "sha1": "fa3cffbea0bdae30f8eaefbc7a361b2633592417",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_misc_birchs_bag.png.json",
+      "sha1": "1adf79bd053e2f708c927b2a686ef12880853a7f",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_misc_birth_island_stone.png.json",
+      "sha1": "d44e6b0209ecbd700e3bba5868d234ef56c312bc",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_misc_breakable_rock.png.json",
+      "sha1": "4caae7d0a227aef6ba4eec53b74e2c332d7947a8",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_misc_cable_car.png.json",
+      "sha1": "fad527677d4cb8650db3fdf1a9c6cba0f58710e2",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_misc_cuttable_tree.png.json",
+      "sha1": "300e1db3dcd3c6ebf548106f7b16ea7c01c01d5e",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_misc_fossil.png.json",
+      "sha1": "26e6a82475ee9ab6b3efb2287d7fe8d3091d1a54",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_misc_item_ball.png.json",
+      "sha1": "dc850f138e80c7a1c84995d314dc06e5aac2bd1b",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_misc_moving_box.png.json",
+      "sha1": "39b9d98669582fc5ccbad1444c80d24bac51fa16",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_misc_mr_brineys_boat.png.json",
+      "sha1": "9becb03abe46a61b927520e8480f7276e7b4ef37",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_misc_pushable_boulder.png.json",
+      "sha1": "f4e7fb07a214455a66529753ad70439ae9ae7d29",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_misc_ss_tidal.png.json",
+      "sha1": "48316d8a873a78e69a48c678970a19cf7c09267e",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_misc_statue.png.json",
+      "sha1": "14d1c97ed34527766c54d049017c90eb7fb2041f",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_misc_submarine_shadow.png.json",
+      "sha1": "ae9de58f76e897b4b95361fe15a7f51411f42903",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_misc_truck.png.json",
+      "sha1": "414f0e6f51415542cac32b556d6c594a87219c2a",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_artist.png.json",
+      "sha1": "496e113c9730636b299cce196c41cb34030bf42c",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_beauty.png.json",
+      "sha1": "a6ecf55d501f4795964d5f4faa353dde9b99146c",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_black_belt.png.json",
+      "sha1": "ddf28945797cd4eabe2a5ed4128883e5fbe549dd",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_boy_1.png.json",
+      "sha1": "975a27e4fd7a6e555be69eba3d5d00b902ed0b4b",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_boy_2.png.json",
+      "sha1": "4898065dfbc73991c98e46bfce4017f2a92a73b4",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_boy_3.png.json",
+      "sha1": "9e6b5a75e123a44bbf81ffebb226c231f4443230",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_brendan_acro_bike.png.json",
+      "sha1": "c180df06fcf633d96c4bb726701ee7f00f915801",
+      "bytes": 482
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_brendan_decorating.png.json",
+      "sha1": "bd14d153c340684243ac11501a8c2729179761ae",
+      "bytes": 485
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_brendan_field_move.png.json",
+      "sha1": "a6cfae0cb9e94b0157a9de74797c526bd349807e",
+      "bytes": 485
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_brendan_fishing.png.json",
+      "sha1": "28d2066d41fb73f8b420e246628a74317d65a668",
+      "bytes": 474
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_brendan_mach_bike.png.json",
+      "sha1": "5b1d4b83679c29fec2913183855f254ae19799b9",
+      "bytes": 482
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_brendan_running.png.json",
+      "sha1": "b0e39ac010a0e6341a0f8c03e5e18cab8567e64d",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_brendan_surfing.png.json",
+      "sha1": "1afdd625acbb412daa72d1939a76217b00e4a704",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_brendan_underwater.png.json",
+      "sha1": "6ad7576b9ee6c9c2b459dcaf7584a1fbe166b086",
+      "bytes": 485
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_brendan_walking.png.json",
+      "sha1": "8c793b7749e1b8ef54407e5c51aeceffad319a3c",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_brendan_watering.png.json",
+      "sha1": "2c52c28f4abc48335d01c91a9dfa84e65230baee",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_bug_catcher.png.json",
+      "sha1": "e0dad0833733b1a08b6e0275608ff03c4d2ede4f",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_cameraman.png.json",
+      "sha1": "c55d546413bacf0231174d8248770652e1a8955d",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_camper.png.json",
+      "sha1": "3b55296b6f30ed3d14623732b527bdacd5cb422e",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_contest_judge.png.json",
+      "sha1": "95cdbb60ab66da73233467ae739842e0f28d85ce",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_cook.png.json",
+      "sha1": "ec3a1a48ccc5c705e99d628ab42b0bd90c472a41",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_cycling_triathlete_f.png.json",
+      "sha1": "2a827e15c2713acec6088739f5016eedc840529b",
+      "bytes": 494
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_cycling_triathlete_m.png.json",
+      "sha1": "49e634c5956164595074a8090f6053aed9a7678d",
+      "bytes": 494
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_devon_employee.png.json",
+      "sha1": "0b45bae0ae50d094d990e99c0bcaa9105911018d",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_elite_four_drake.png.json",
+      "sha1": "484dbf78abcae87a559c079ec6fde5f3781cec4b",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_elite_four_glacia.png.json",
+      "sha1": "9b0fde168d50875288be36f7a2f9b4665f83228d",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_elite_four_phoebe.png.json",
+      "sha1": "e6b0b06ce0b28e8bdac8a69831dc0221afa4e6fa",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_elite_four_sidney.png.json",
+      "sha1": "860ee88f24e6400f201645dce2517a892a1561b0",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_expert_f.png.json",
+      "sha1": "b5c151579b67f465b9c3f480b9a3c0794b7c99a2",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_expert_m.png.json",
+      "sha1": "1d0bfcf8070093a1fd92e30397f5f7dd73ac4d47",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_fat_man.png.json",
+      "sha1": "a3fc8719fe58f4b811b7d6c521b4a67fd6775c5f",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_fisherman.png.json",
+      "sha1": "c99c55fa5664475a622e2c52e311ffab4a911837",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_frontier_brains_anabel.png.json",
+      "sha1": "f0d57dc616f1e26cd090708470f1d7595960a619",
+      "bytes": 501
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_frontier_brains_brandon.png.json",
+      "sha1": "bf3826980068bf0ddea67e7529daa91229b5aacc",
+      "bytes": 505
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_frontier_brains_greta.png.json",
+      "sha1": "71e9a81ee813b6c28e6d6054a9d084c718809d60",
+      "bytes": 497
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_frontier_brains_lucy.png.json",
+      "sha1": "719d4bead1fcd5717784cd37781377f5dbe31579",
+      "bytes": 493
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_frontier_brains_noland.png.json",
+      "sha1": "05ff715fd1380d9fb1d4a2bbf2f41e0b77c431f6",
+      "bytes": 501
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_frontier_brains_spenser.png.json",
+      "sha1": "5de7ab7df86b2a3c98b5348d8c89dc310f755e9f",
+      "bytes": 505
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_frontier_brains_tucker.png.json",
+      "sha1": "d1b03eb2789d3f5e46c5a13d4f8c0283f3a1ecb2",
+      "bytes": 501
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_gameboy_kid.png.json",
+      "sha1": "4638fda4c71fd72f6edd9bd8201f28a84233ae17",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_gentleman.png.json",
+      "sha1": "233b7abf29684ffb6ebb496bcf9fb0532d17799b",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_girl_1.png.json",
+      "sha1": "e227b1404a08d0b62857567676fe59dd0b4c4de3",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_girl_2.png.json",
+      "sha1": "60a861063d620ebebc0e1926c5f8ef1bcbeb263e",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_girl_3.png.json",
+      "sha1": "9d1eff949453c503905bd6d39b090343712882c9",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_gym_leaders_brawly.png.json",
+      "sha1": "3eef13741bb031023603c56a23901a46764eda97",
+      "bytes": 485
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_gym_leaders_flannery.png.json",
+      "sha1": "27b25762c8dcf6d2aa9e15c612f53bf5c1837ffe",
+      "bytes": 493
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_gym_leaders_juan.png.json",
+      "sha1": "c56024cde72c4fc111b5581e6912947f9ad0b3a7",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_gym_leaders_liza.png.json",
+      "sha1": "d101fdb6c6123d29e2d9c5e0abb5f2727fe0808e",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_gym_leaders_norman.png.json",
+      "sha1": "bff066b316833dc40a30e99fe7d9e37070bdf28a",
+      "bytes": 485
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_gym_leaders_roxanne.png.json",
+      "sha1": "feac145865f487080fafea9610a90d28d0ea497b",
+      "bytes": 489
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_gym_leaders_tate.png.json",
+      "sha1": "b40179ccf5659a12212a98dd47e5f8791d2e982f",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_gym_leaders_wattson.png.json",
+      "sha1": "b86a60ceeb39c3c0878014be14e67023a2fe0601",
+      "bytes": 489
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_gym_leaders_winona.png.json",
+      "sha1": "93a346c42ce914ca60a646f1be70f3bf40dffd66",
+      "bytes": 485
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_hex_maniac.png.json",
+      "sha1": "5c9f6251e9fc6a39ff71fdfdf14d6df1b112eadd",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_hiker.png.json",
+      "sha1": "f5c94bd2e9ecc279fa6f56d77d39a72c5a7edad9",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_hot_springs_old_woman.png.json",
+      "sha1": "7e27fef26a0a590fd2ec751ec99ad5c9c3eecbe3",
+      "bytes": 497
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_lass.png.json",
+      "sha1": "303d4d0775b52cd969a5e6a4bf16ba5b78a3a379",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_leaf.png.json",
+      "sha1": "1b45acc0cc099814dbaf9cfdde624fb7f8efca51",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_link_receptionist.png.json",
+      "sha1": "14e70f8e4cec338220c42372686968fcafd86b1d",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_little_boy.png.json",
+      "sha1": "c7f7780ad6b81013c3c3ecbfee97459a589a07f3",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_little_girl.png.json",
+      "sha1": "2e8bdf6dd0de0710772a83a231cf61238c5f62ff",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_man_1.png.json",
+      "sha1": "654fecf71c5208e82a9a1c5d25062b0085504975",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_man_2.png.json",
+      "sha1": "da65042a6e28fd6e5fa3ff9643dafdf1aba0beee",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_man_3.png.json",
+      "sha1": "59e91ddd4a1b65d0feb6360990f97c264b680d96",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_man_4.png.json",
+      "sha1": "4e84687bab5fa26ec9dfd9b694a230af9a0a628d",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_man_5.png.json",
+      "sha1": "578bb303086b670de6f30b4cf06ec76b7ecdd9d7",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_maniac.png.json",
+      "sha1": "b1cb302413558d3ee81ef92bc61e3137b25d8ae6",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_mart_employee.png.json",
+      "sha1": "fa07a9cdc54841f49926e0d8207174fd7b6349cd",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_mauville_old_man_1.png.json",
+      "sha1": "c12181f68657f77882f9f5f76a1053176b81829c",
+      "bytes": 485
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_mauville_old_man_2.png.json",
+      "sha1": "1bf04a74e99872ea36927196e05f4715443a2664",
+      "bytes": 485
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_may_acro_bike.png.json",
+      "sha1": "f6b9c040d7e564d151379cbc681c68f1bd0f0e9a",
+      "bytes": 466
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_may_decorating.png.json",
+      "sha1": "9f6be5cb44d20d27d4d2c957dec90f9edb489f32",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_may_field_move.png.json",
+      "sha1": "d279f909b77b8906637e8966143ac66c688e0271",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_may_fishing.png.json",
+      "sha1": "a0670e77a56c2aed6715dbf1d55b369c690542d3",
+      "bytes": 458
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_may_mach_bike.png.json",
+      "sha1": "3fb26e3b210cd63951703d7d5973c0ee4b837364",
+      "bytes": 466
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_may_running.png.json",
+      "sha1": "9ef3dc5b76833098da10d4c74d1dd7a1547f528b",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_may_surfing.png.json",
+      "sha1": "e9becae1810de3434f01cff43cfec7baffd890d8",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_may_underwater.png.json",
+      "sha1": "c21b267b42ecb1149b2bcdf66dc10c042362d77b",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_may_walking.png.json",
+      "sha1": "484b46a61e403bfc4cedf203d8d7928c831db574",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_may_watering.png.json",
+      "sha1": "edfe666f156a3356870529d54d3594db0284b172",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_mom.png.json",
+      "sha1": "ba09c52cd401c55a649b0467ccab4c76e34d94b0",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_mystery_event_deliveryman.png.json",
+      "sha1": "67152b4f968b7bfcb16796b9ea498d9e45cb4477",
+      "bytes": 513
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_ninja_boy.png.json",
+      "sha1": "709646faaff3443262e2961bb128bcc03e5090b9",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_nurse.png.json",
+      "sha1": "2f325fd770822edf5d2a573865c9410ebdc3214c",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_old_man.png.json",
+      "sha1": "1760ff5246ffc6fcd1bcc7cb20cb8de73cd6a4b2",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_old_woman.png.json",
+      "sha1": "293a7cbbd131eb483130046bbadc23baf35e1ff4",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_picnicker.png.json",
+      "sha1": "acf5e521e7fd4e4ad14ff5433804763324e7d858",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_pokefan_f.png.json",
+      "sha1": "b0e9c1bcceacf0eb33015f7fb9e79927daaeb6ad",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_pokefan_m.png.json",
+      "sha1": "b595f3c4f795139f5c33b6b94dedd3e30912b80a",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_prof_birch.png.json",
+      "sha1": "e0149d9e18058a0247236d808143e18b1fb4e27e",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_psychic_m.png.json",
+      "sha1": "7b0eacc4e44149db8fbb42b6a95bff4c46dd5f93",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_quinty_plump.png.json",
+      "sha1": "5336a258945da073a8284745281489d38fdd6a97",
+      "bytes": 462
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_red.png.json",
+      "sha1": "0649dcacd7122f430213b7bae46f0b6ea20f4eff",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_reporter_f.png.json",
+      "sha1": "8772dbd956699a30c4ab90c7ddffd38015dec5f2",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_reporter_m.png.json",
+      "sha1": "6e75bdba9c18dc188ad59822c8f1bf42f4bfa073",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_rich_boy.png.json",
+      "sha1": "3eed4e7d9525303d0581bd2bb89f60ca7fadfd82",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_rooftop_sale_woman.png.json",
+      "sha1": "bee049229ed4ed827e8b30ce6663157a458d155d",
+      "bytes": 485
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_rs_little_boy.png.json",
+      "sha1": "ede9c260e964a269a470a6e29786444d348d665d",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_ruby_sapphire_brendan_running.png.json",
+      "sha1": "4aedcc0bd66de691ef76203a8b2ad90f424681d0",
+      "bytes": 529
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_ruby_sapphire_brendan_walking.png.json",
+      "sha1": "9c885465e718f49dd24471410008f6f4d55744cf",
+      "bytes": 529
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_ruby_sapphire_may_running.png.json",
+      "sha1": "09df84fb1ccf5ef833677a3605eaee5d3b09b181",
+      "bytes": 513
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_ruby_sapphire_may_walking.png.json",
+      "sha1": "bbc606e4e94a44d2f989430ef6e6ff230c2176f8",
+      "bytes": 513
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_running_triathlete_f.png.json",
+      "sha1": "83a177d596ec2ed7f32b0d2e327311cffb0ba8df",
+      "bytes": 493
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_running_triathlete_m.png.json",
+      "sha1": "64322918de61406273f17cb5a7cf9354b13b5be4",
+      "bytes": 493
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_sailor.png.json",
+      "sha1": "ab92d13e02e424490914145c8e6e23c791b4f292",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_school_kid_m.png.json",
+      "sha1": "85f7286b0771e3e81bd453980bc096a3d6bfe3e1",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_scientist_1.png.json",
+      "sha1": "d4122a69f83980130053484f50bf7f22250cbb6b",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_scientist_2.png.json",
+      "sha1": "ddd485f8f57e246b33e57fca08494082076a75e4",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_scott.png.json",
+      "sha1": "185879d537e61aeeb9302f761cde000ff5fc3a11",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_steven.png.json",
+      "sha1": "c98bb5d743a29881599bbba3641d5f1c8d9d9a77",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_swimmer_f.png.json",
+      "sha1": "fe876122ad20c09d0aa35cfe0a0996c86e52c432",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_swimmer_m.png.json",
+      "sha1": "43a97d80c5ff2f9781448eb0857934d718f9536f",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_teala.png.json",
+      "sha1": "95095a468e93a39c0b5af7d2a3497e83f349d0ab",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_team_aqua_aqua_member_f.png.json",
+      "sha1": "44f52dbc063a7fdab0e5ac60cffd6e18eaba9953",
+      "bytes": 505
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_team_aqua_aqua_member_m.png.json",
+      "sha1": "cd24f4fb9cb91a07be5525eda9a09789e4eb24e9",
+      "bytes": 505
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_team_aqua_archie.png.json",
+      "sha1": "f6ad004e52d3698f3da2b41c5a3795758fc27f47",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_team_magma_magma_member_f.png.json",
+      "sha1": "5993d6628cdbeb448c0ffa12bdbb3d9fc4ebdd69",
+      "bytes": 513
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_team_magma_magma_member_m.png.json",
+      "sha1": "92daf6b4ac5f8f89e2ce5606a1c5759f36f87ce1",
+      "bytes": 513
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_team_magma_maxie.png.json",
+      "sha1": "dd2f98b70f26f9a7eeaaabd3378909bcac974961",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_tuber_f.png.json",
+      "sha1": "106ca82cd303d34e06dbf06634e4a0e5d9a4ce75",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_tuber_m.png.json",
+      "sha1": "f738fa5d5e19dae6581b009242285cfa427830e4",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_tuber_m_swimming.png.json",
+      "sha1": "3362c7a24b9f41ebdbd7603de16b2778fa449498",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_twin.png.json",
+      "sha1": "59e349837cc6849705f2216b1f7821ede8630374",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_union_room_attendant.png.json",
+      "sha1": "fd48492ae6a321af238288b109ba54fe3d1b784b",
+      "bytes": 493
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_unused_woman.png.json",
+      "sha1": "7290b71b086d2c2195086f82b906b75b13f40e30",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_wallace.png.json",
+      "sha1": "99de8653b17dd1ab7f31e62b2a0198a5deb62520",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_wally.png.json",
+      "sha1": "7abe44b4b1394c8996019d5e376fa7355fc5a698",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_woman_1.png.json",
+      "sha1": "aa81cfb2f4b57dc47fcefc978a5ab7c02289dfb5",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_woman_2.png.json",
+      "sha1": "c991f4fbe1a9f00bf7196d9fc7299aea16a03f9d",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_woman_3.png.json",
+      "sha1": "63a282137ce962f0604cc33eab7e89e16aa63fa5",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_woman_4.png.json",
+      "sha1": "b9818108deb8495ed565f73a927e65689b52217c",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_woman_5.png.json",
+      "sha1": "b96f4a5e5e185e66c134512bccfcdfd4abca3b4d",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_people_youngster.png.json",
+      "sha1": "ff78cf09852637563366b5460bb673d6bbc2f5ad",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_azumarill.png.json",
+      "sha1": "23adc623afaa681065d6d65c61bd103341b711ac",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_azurill.png.json",
+      "sha1": "77df4d702b4b0110520d8feb10addb881416753b",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_deoxys.png.json",
+      "sha1": "93884c0fb029a811c3bfdb03b1cef97131a57fb5",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_dusclops.png.json",
+      "sha1": "bf6c7a47896b19faed0b75ffdc66e23499ac4835",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_enemy_zigzagoon.png.json",
+      "sha1": "68ea54b3762836ec175fbdf563d66ebb4238b03d",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_groudon.png.json",
+      "sha1": "4f91da6a0d77d5d31272fa719fef44cec4140a39",
+      "bytes": 446
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_ho_oh.png.json",
+      "sha1": "f726e7c8de40c77edd9f94d8d9fb62d26a07cf03",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_kecleon.png.json",
+      "sha1": "65841fc19f992a98a84057b5e405844bae5a258a",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_kirlia.png.json",
+      "sha1": "6320bc19ac13ad3fffa83d45bbd5ed974543b179",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_kyogre.png.json",
+      "sha1": "989e4ec92dd05077a143eb93eb7330078082081c",
+      "bytes": 442
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_latias_latios.png.json",
+      "sha1": "af9ac9e8760898e9e32b2d7f66bbe6b1bedc6298",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_lugia.png.json",
+      "sha1": "a87c7ff2a2cf69faf97aa4b50e7b1755b9155c2b",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_mew.png.json",
+      "sha1": "cc51b72bcfc9d068cbd4ae611dd4b0421154daf6",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_pikachu.png.json",
+      "sha1": "6d17830ea7d89aa73b6046d67e0409bcfd39aed3",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_poochyena.png.json",
+      "sha1": "7a7003d0b6016a44cc5794af342f5a41d59f1c95",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_rayquaza.png.json",
+      "sha1": "9adb24b2ee092d81e1a29f844a959a9fb2c9e234",
+      "bytes": 450
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_rayquaza_still.png.json",
+      "sha1": "2aee415f3ea465f648cd8656c7f8bf8facc483ba",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_regi.png.json",
+      "sha1": "52726ef6fb9a39b3e902b3dd380e8f105b23f679",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_skitty.png.json",
+      "sha1": "5e0a41d16b7ee4c7e6dc33faad4c36b589d48d3e",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_sudowoodo.png.json",
+      "sha1": "88f0880c5120a1f2c277bb405d4bae802c63075a",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_vigoroth.png.json",
+      "sha1": "6812e0cb6d62054130a7cd1bf4921692b185c8c6",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_wingull.png.json",
+      "sha1": "35b1425e62a1ec97a07d99e20c08f76e51af0cbd",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/graphics_object_events_pics_pokemon_zigzagoon.png.json",
+      "sha1": "3abba17ffe8c1492d3237eda516e94ba2ce165e3",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/include_constants_event_objects.h.json",
+      "sha1": "1fd6bf35778e14df5b9ab4ab51831d35483294ac",
+      "bytes": 391
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/src_data_object_events_base_oam.h.json",
+      "sha1": "a74a9f0511490f4c885db45539772410b1dc5b34",
+      "bytes": 390
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/src_data_object_events_berry_tree_graphics_tables.h.json",
+      "sha1": "7cb54d641470347ea80d15b60ace741c015ff233",
+      "bytes": 463
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/src_data_object_events_movement_action_func_tables.h.json",
+      "sha1": "2bd1da6d4022a015dd6fa2b3856ae91ab9a06269",
+      "bytes": 467
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/src_data_object_events_movement_type_func_tables.h.json",
+      "sha1": "2479957c017b35e7e7743e673324038fb091f0ad",
+      "bytes": 459
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/src_data_object_events_object_event_anims.h.json",
+      "sha1": "2ee9e766718e338fa633c897c9a8d9534b652038",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/src_data_object_events_object_event_graphics.h.json",
+      "sha1": "5e36ec4d066e50f1dcf2772bc9e9f04f3e81221b",
+      "bytes": 443
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/src_data_object_events_object_event_graphics_info.h.json",
+      "sha1": "287466bc0bda67e72cc2244c686dc01c2ee9f8b3",
+      "bytes": 464
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/src_data_object_events_object_event_graphics_info_pointers.h.json",
+      "sha1": "ab74fa4edbd32652529360662361c2d1240cde42",
+      "bytes": 499
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/src_data_object_events_object_event_pic_tables.h.json",
+      "sha1": "6091b838cc4e63645b1b92c0b3a502a40a4cde8a",
+      "bytes": 452
+    },
+    {
+      "path": "mods/vanilla/overworld_sprites/source_files/src_data_object_events_object_event_subsprites.h.json",
+      "sha1": "a2979cc53dc579909242697aef73d83000b88259",
+      "bytes": 451
     }
   ],
   "counts": {
-    "sourceFiles": 300
+    "sourceEntities": 300
   }
 }

@@ -1,0 +1,16 @@
+{
+  "id": "Route116_TunnelersRestHouse:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116_TunnelersRestHouse/map.json",
+    "sha1": "8cf753cfc766fad16331c25029b818100d00a61b"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/Route116_TunnelersRestHouse/map.json"
+  },
+  "map": "Route116_TunnelersRestHouse",
+  "mapId": "MAP_ROUTE116_TUNNELERS_REST_HOUSE",
+  "weather": "WEATHER_NONE"
+}

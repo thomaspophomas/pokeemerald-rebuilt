@@ -17,6 +17,7 @@ import os
 import re
 import shutil
 import sys
+import time
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple
 
@@ -117,6 +118,7 @@ DOMAIN_SOURCE_SPECS: Dict[str, Sequence[str]] = {
         "graphics/items",
     ],
     "pokemon": [
+        "include/constants/species.h",
         "include/constants/pokemon.h",
         "include/pokemon.h",
         "src/data/pokemon",
@@ -285,12 +287,22 @@ def write_schema(root: Path, domain: str) -> None:
             "$id": f"https://pokeemerald.local/mod_api_schemas/{domain}.schema.json",
             "title": title,
             "description": (
-                "Deterministic JSON representation for the vanilla "
-                f"{domain} mod API domain. Domain-specific files may be either "
-                "typed records or lossless source manifests until the legacy "
-                "pipeline for that domain is fully replaced."
+                "Modder-facing entity JSON representation for the vanilla "
+                f"{domain} mod API domain. Each domain has an index.json, "
+                "one or more entity JSON files, and _source_manifest.json "
+                "only for audit and drift checks."
             ),
-            "oneOf": [{"type": "object"}, {"type": "array"}],
+            "type": "object",
+            "required": ["domain", "schemaVersion"],
+            "properties": {
+                "id": {"type": "string"},
+                "domain": {"type": "string"},
+                "schemaVersion": {"type": "integer"},
+                "source": {"type": "object"},
+                "legacy": {"type": "object"},
+                "entries": {"type": "array"},
+            },
+            "additionalProperties": True,
         },
     )
 
@@ -914,6 +926,539 @@ def parse_domains(value: Optional[str]) -> Sequence[str]:
     if unknown:
         raise SystemExit(f"unknown domain(s): {', '.join(unknown)}")
     return domains
+
+
+METADATA_KEYS = {"domain", "schemaVersion", "source", "legacy", "mapGroup", "mapNum", "mapGroupSymbol", "interactionPolicy", "resourceLocks"}
+
+
+def safe_name(value: Any) -> str:
+    text = str(value)
+    text = re.sub(r"[^A-Za-z0-9_.-]+", "_", text)
+    return text.strip("_") or "entry"
+
+
+def clear_domain(root: Path, domain: str) -> None:
+    path = root / "mods" / MOD_ID / domain
+    if path.exists():
+        last_error = None
+        for _ in range(5):
+            try:
+                shutil.rmtree(path)
+                last_error = None
+                break
+            except OSError as exc:
+                last_error = exc
+                time.sleep(0.25)
+        if last_error is not None:
+            raise last_error
+    path.mkdir(parents=True, exist_ok=True)
+
+
+def entity_source(root: Path, source_path: Path) -> Dict[str, Any]:
+    return {"path": rel(root, source_path), "sha1": sha1_file(source_path)}
+
+
+def entity_base(root: Path, domain: str, entity_id: str, source_path: Path, legacy_kind: str, legacy: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+    legacy_data = {"kind": legacy_kind, "sourcePath": rel(root, source_path)}
+    if legacy:
+        legacy_data.update(legacy)
+    return {
+        "id": entity_id,
+        "domain": domain,
+        "schemaVersion": SCHEMA_VERSION,
+        "source": entity_source(root, source_path),
+        "legacy": legacy_data,
+    }
+
+
+def write_domain_index(root: Path, domain: str, entries: List[Dict[str, Any]], extra: Optional[Dict[str, Any]] = None) -> None:
+    data: Dict[str, Any] = {
+        "domain": domain,
+        "schemaVersion": SCHEMA_VERSION,
+        "entries": sorted(entries, key=lambda entry: (str(entry.get("id")), str(entry.get("path")))),
+    }
+    if extra:
+        data.update(extra)
+    write_json(root / "mods" / MOD_ID / domain / "index.json", data)
+
+
+def write_domain_source_manifest(root: Path, domain: str, specs: Sequence[str]) -> None:
+    files = collect_files(root, specs)
+    write_json(
+        root / "mods" / MOD_ID / domain / "_source_manifest.json",
+        {
+            "id": f"{domain}:source_manifest",
+            "domain": domain,
+            "schemaVersion": SCHEMA_VERSION,
+            "migrationMode": "source_file_manifest",
+            "sourceAuthority": "vanilla",
+            "sourceFiles": source_manifest(root, files),
+        },
+    )
+
+
+def write_entity(root: Path, domain: str, relative_path: str, data: Dict[str, Any], entries: List[Dict[str, Any]], entry: Optional[Dict[str, Any]] = None) -> None:
+    path = root / "mods" / MOD_ID / domain / relative_path
+    write_json(path, data)
+    index_entry = {
+        "id": data["id"],
+        "path": relative_path.replace("\\", "/"),
+        "sourcePath": data.get("source", {}).get("path"),
+        "legacyKind": data.get("legacy", {}).get("kind"),
+    }
+    if entry:
+        index_entry.update(entry)
+    entries.append(index_entry)
+
+
+def parse_define_tokens(root: Path, relative_path: str, prefix: str) -> List[Dict[str, Any]]:
+    path = root / relative_path
+    tokens = []
+    seen = set()
+    for match in re.finditer(rf"^#define\s+({re.escape(prefix)}[A-Z0-9_]+)\s+([^\s/]+)", read_text(path), re.MULTILINE):
+        symbol = match.group(1)
+        if symbol in seen:
+            continue
+        seen.add(symbol)
+        value = match.group(2)
+        tokens.append({"symbol": symbol, "value": int(value) if value.isdigit() else value, "source": path})
+    return tokens
+
+
+def extract_entity_maps(root: Path) -> Dict[str, Any]:
+    domain = "maps"
+    clear_domain(root, domain)
+    maps_root = root / "data" / "maps"
+    out_root = root / "mods" / MOD_ID / domain
+    map_dirs = sorted([path for path in maps_root.iterdir() if path.is_dir() and (path / "map.json").exists()])
+    group_lookup = discover_map_group_lookup(root)
+    entries: List[Dict[str, Any]] = []
+
+    map_groups_path = maps_root / "map_groups.json"
+    map_groups_entity = entity_base(root, domain, "map_groups", map_groups_path, "map_groups_json", {"rawJson": read_json(map_groups_path)})
+    write_json(out_root / "map_groups.json", map_groups_entity)
+    for map_dir in map_dirs:
+        map_name = map_dir.name
+        source_path = map_dir / "map.json"
+        data = read_json(source_path)
+        scripts_path = map_dir / "scripts.inc"
+        info = group_lookup.get(map_name, {})
+        entity = dict(data)
+        entity.update(
+            entity_base(
+                root,
+                domain,
+                str(data.get("id", map_name)),
+                source_path,
+                "map_json",
+                {
+                    "mapName": map_name,
+                    "scriptsSourcePath": rel(root, scripts_path) if scripts_path.exists() else None,
+                },
+            )
+        )
+        entity["name"] = map_name
+        entity["mapGroup"] = info.get("mapGroup")
+        entity["mapNum"] = info.get("mapNum")
+        entity["mapGroupSymbol"] = info.get("mapGroupSymbol")
+        entity["interactionPolicy"] = "EXCLUSIVE"
+        entity["resourceLocks"] = ["MAP_SCRIPT", "OBJECT_EVENT", "WARP"]
+        write_entity(
+            root,
+            domain,
+            f"{map_name}/map.json",
+            entity,
+            entries,
+            {
+                "symbol": data.get("id"),
+                "mapGroup": info.get("mapGroup"),
+                "mapNum": info.get("mapNum"),
+                "mapGroupSymbol": info.get("mapGroupSymbol"),
+            },
+        )
+        if scripts_path.exists():
+            copy_file_exact(scripts_path, out_root / map_name / "scripts.inc")
+    write_domain_index(root, domain, entries, {"entityCount": len(entries)})
+    write_domain_source_manifest(root, domain, ["data/maps"])
+    return {"maps": len(entries)}
+
+
+def extract_entity_npcs(root: Path) -> Dict[str, Any]:
+    domain = "npcs"
+    clear_domain(root, domain)
+    entries: List[Dict[str, Any]] = []
+    total = 0
+    for map_json in sorted((root / "data" / "maps").glob("*/map.json")):
+        map_data = read_json(map_json)
+        map_name = map_json.parent.name
+        for index, obj in enumerate(map_data.get("object_events") or []):
+            local_id = obj.get("local_id", index + 1)
+            script = obj.get("script")
+            entity_id = f"{map_name}:{local_id}"
+            entity = entity_base(root, domain, entity_id, map_json, "map_object_event", {"raw": obj})
+            entity.update(
+                {
+                    "map": map_name,
+                    "mapId": map_data.get("id"),
+                    "localId": local_id,
+                    "graphicsId": obj.get("graphics_id"),
+                    "x": obj.get("x"),
+                    "y": obj.get("y"),
+                    "elevation": obj.get("elevation"),
+                    "movementType": obj.get("movement_type"),
+                    "movementRangeX": obj.get("movement_range_x"),
+                    "movementRangeY": obj.get("movement_range_y"),
+                    "trainerType": obj.get("trainer_type", "TRAINER_TYPE_NONE"),
+                    "trainerSightOrBerryTreeId": obj.get("trainer_sight_or_berry_tree_id"),
+                    "script": script,
+                    "flag": obj.get("flag"),
+                    "interactionPolicy": "EXCLUSIVE" if script not in (None, "0", "0x0") else "DISABLED_ONLINE",
+                    "resourceLocks": ["OBJECT_EVENT", "SCRIPT"] if script not in (None, "0", "0x0") else [],
+                }
+            )
+            write_entity(root, domain, f"{map_name}/{safe_name(local_id)}.json", entity, entries, {"map": map_name, "localId": local_id})
+            total += 1
+    write_domain_index(root, domain, entries, {"entityCount": total})
+    write_domain_source_manifest(root, domain, ["data/maps"])
+    return {"npcs": total}
+
+
+def extract_entity_trainers(root: Path) -> Dict[str, Any]:
+    domain = "trainers"
+    clear_domain(root, domain)
+    entries: List[Dict[str, Any]] = []
+    for trainer in parse_trainer_blocks(root):
+        raw_c = trainer.pop("rawC")
+        source_path = root / trainer.pop("sourcePath")
+        symbol = trainer["symbol"]
+        entity = entity_base(root, domain, symbol, source_path, "trainer_c_initializer", {"rawC": raw_c})
+        entity.update({"symbol": symbol, **trainer, "interactionPolicy": "EXCLUSIVE", "resourceLocks": ["TRAINER_BATTLE", "SCRIPT"]})
+        write_entity(root, domain, f"{symbol}.json", entity, entries, {"symbol": symbol, "numericId": trainer.get("numericId")})
+    write_domain_index(root, domain, entries, {"entityCount": len(entries)})
+    write_domain_source_manifest(root, domain, ["src/data/trainers.h", "include/constants/opponents.h"])
+    return {"trainers": len(entries)}
+
+
+def extract_entity_trainer_parties(root: Path) -> Dict[str, Any]:
+    domain = "trainer_parties"
+    clear_domain(root, domain)
+    entries: List[Dict[str, Any]] = []
+    for party in parse_party_blocks(root):
+        raw_c = party.pop("rawC")
+        source_path = root / party.pop("sourcePath")
+        symbol = party["symbol"]
+        entity = entity_base(root, domain, symbol, source_path, "trainer_party_c_initializer", {"rawC": raw_c})
+        entity.update({"symbol": symbol, **party})
+        write_entity(root, domain, f"{symbol}.json", entity, entries, {"symbol": symbol})
+    write_domain_index(root, domain, entries, {"entityCount": len(entries)})
+    write_domain_source_manifest(root, domain, ["src/data/trainer_parties.h"])
+    return {"trainerParties": len(entries)}
+
+
+def extract_entity_weather(root: Path) -> Dict[str, Any]:
+    domain = "weather"
+    clear_domain(root, domain)
+    entries: List[Dict[str, Any]] = []
+    counts: Dict[str, int] = {}
+    for map_json in sorted((root / "data" / "maps").glob("*/map.json")):
+        data = read_json(map_json)
+        weather = data.get("weather")
+        map_name = map_json.parent.name
+        counts[str(weather)] = counts.get(str(weather), 0) + 1
+        entity_id = f"{map_name}:weather"
+        entity = entity_base(root, domain, entity_id, map_json, "map_weather")
+        entity.update({"map": map_name, "mapId": data.get("id"), "weather": weather})
+        write_entity(root, domain, f"maps/{map_name}.json", entity, entries, {"map": map_name})
+    write_domain_index(root, domain, entries, {"entityCount": len(entries), "weatherCounts": counts})
+    write_domain_source_manifest(root, domain, ["data/maps"])
+    return {"mapsWithWeather": len(entries), "weatherKinds": len(counts)}
+
+
+def extract_entity_time(root: Path) -> Dict[str, Any]:
+    domain = "time"
+    clear_domain(root, domain)
+    entries: List[Dict[str, Any]] = []
+    segments = [
+        {"id": "morning", "segment": "MORNING", "startMinute": 4 * 60, "endMinute": 10 * 60 - 1},
+        {"id": "day", "segment": "DAY", "startMinute": 10 * 60, "endMinute": 17 * 60 - 1},
+        {"id": "evening", "segment": "EVENING", "startMinute": 17 * 60, "endMinute": 20 * 60 - 1},
+        {"id": "night", "segment": "NIGHT", "startMinute": 20 * 60, "endMinute": 4 * 60 - 1},
+    ]
+    source_path = root / "src" / "mod" / "time.c"
+    for segment in segments:
+        entity = entity_base(root, domain, segment["id"], source_path, "default_time_segment")
+        entity.update(segment)
+        write_entity(root, domain, f"{segment['id']}.json", entity, entries, {"symbol": segment["segment"]})
+    write_domain_index(root, domain, entries, {"entityCount": len(entries)})
+    write_domain_source_manifest(root, domain, ["src/mod/time.c", "include/mod/time.h"])
+    return {"segments": len(entries)}
+
+
+def extract_entity_engine_rulesets(root: Path) -> Dict[str, Any]:
+    domain = "engine_rulesets"
+    clear_domain(root, domain)
+    entries: List[Dict[str, Any]] = []
+    source_path = root / "src" / "mod" / "engine.c"
+    entity = entity_base(root, domain, "engine:gen3", source_path, "default_engine_ruleset")
+    entity.update({"name": "Generation III", "version": 1, "saveCompatible": True, "captureHook": None, "battleWeatherHook": None})
+    write_entity(root, domain, "gen3.json", entity, entries, {"symbol": "engine:gen3"})
+    write_domain_index(root, domain, entries, {"entityCount": len(entries)})
+    write_domain_source_manifest(root, domain, ["src/mod/engine.c", "include/mod/engine.h"])
+    return {"rulesets": len(entries)}
+
+
+def extract_entity_quests(root: Path) -> Dict[str, Any]:
+    domain = "quests"
+    clear_domain(root, domain)
+    entries: List[Dict[str, Any]] = []
+    for map_json in sorted((root / "data" / "maps").glob("*/map.json")):
+        data = read_json(map_json)
+        map_name = map_json.parent.name
+        for key in ["coord_events", "bg_events", "warp_events"]:
+            for index, event in enumerate(data.get(key) or []):
+                entity_id = f"{map_name}:{key}:{index}"
+                entity = entity_base(root, domain, entity_id, map_json, "map_event_hook", {"raw": event})
+                entity.update(
+                    {
+                        "map": map_name,
+                        "mapId": data.get("id"),
+                        "eventType": key,
+                        "index": index,
+                        "script": event.get("script"),
+                        "interactionPolicy": "EXCLUSIVE" if event.get("script") else "SHARED_READONLY",
+                        "resourceLocks": ["SCRIPT"] if event.get("script") else [],
+                    }
+                )
+                write_entity(root, domain, f"{map_name}/{key}_{index}.json", entity, entries, {"map": map_name, "eventType": key})
+    write_domain_index(root, domain, entries, {"entityCount": len(entries)})
+    write_domain_source_manifest(root, domain, ["data/maps"])
+    return {"questHooks": len(entries)}
+
+
+def extract_entity_wild_encounters(root: Path) -> Dict[str, Any]:
+    domain = "wild_encounters"
+    clear_domain(root, domain)
+    source_path = root / "src" / "data" / "wild_encounters.json"
+    data = read_json(source_path)
+    entries: List[Dict[str, Any]] = []
+    for group in data.get("wild_encounter_groups", []):
+        label = group.get("label", "wild_encounters")
+        for encounter in group.get("encounters", []):
+            map_id = encounter.get("map", safe_name(encounter.get("base_label", len(entries))))
+            entity_id = f"{label}:{map_id}:{len(entries)}"
+            entity = entity_base(root, domain, entity_id, source_path, "wild_encounter_group", {"groupLabel": label})
+            entity.update({"groupLabel": label, "forMaps": group.get("for_maps"), "fields": group.get("fields"), "encounter": encounter})
+            write_entity(root, domain, f"{safe_name(label)}/{safe_name(map_id)}_{len(entries)}.json", entity, entries, {"symbol": map_id})
+    write_domain_index(root, domain, entries, {"entityCount": len(entries)})
+    write_domain_source_manifest(root, domain, ["src/data/wild_encounters.json"])
+    return {"encounters": len(entries)}
+
+
+def extract_entity_flags(root: Path) -> Dict[str, Any]:
+    domain = "flags"
+    clear_domain(root, domain)
+    entries: List[Dict[str, Any]] = []
+    for token in parse_define_tokens(root, "include/constants/flags.h", "FLAG_"):
+        entity = entity_base(root, domain, token["symbol"], token["source"], "flag_define")
+        entity.update({"symbol": token["symbol"], "value": token["value"], "kind": "flag"})
+        write_entity(root, domain, f"flags/{token['symbol']}.json", entity, entries, {"symbol": token["symbol"]})
+    for token in parse_define_tokens(root, "include/constants/vars.h", "VAR_"):
+        entity = entity_base(root, domain, token["symbol"], token["source"], "var_define")
+        entity.update({"symbol": token["symbol"], "value": token["value"], "kind": "var"})
+        write_entity(root, domain, f"vars/{token['symbol']}.json", entity, entries, {"symbol": token["symbol"]})
+    write_domain_index(root, domain, entries, {"entityCount": len(entries)})
+    write_domain_source_manifest(root, domain, DOMAIN_SOURCE_SPECS[domain])
+    return {"entries": len(entries)}
+
+
+def extract_token_domain(root: Path, domain: str, relative_path: str, prefix: str, subdir: str, legacy_kind: str) -> Dict[str, Any]:
+    clear_domain(root, domain)
+    entries: List[Dict[str, Any]] = []
+    for token in parse_define_tokens(root, relative_path, prefix):
+        entity = entity_base(root, domain, token["symbol"], token["source"], legacy_kind)
+        entity.update({"symbol": token["symbol"], "value": token["value"]})
+        write_entity(root, domain, f"{subdir}/{token['symbol']}.json", entity, entries, {"symbol": token["symbol"], "numericId": token["value"] if isinstance(token["value"], int) else None})
+    write_domain_index(root, domain, entries, {"entityCount": len(entries)})
+    write_domain_source_manifest(root, domain, DOMAIN_SOURCE_SPECS.get(domain, [relative_path]))
+    return {"entries": len(entries)}
+
+
+def parse_shop_blocks(root: Path) -> List[Dict[str, Any]]:
+    shops = []
+    label_re = re.compile(r"^([A-Za-z0-9_]+):\s*$")
+    item_re = re.compile(r"\.2byte\s+([A-Z0-9_]+)")
+    for scripts in sorted((root / "data" / "maps").glob("*/scripts.inc")):
+        lines = read_text(scripts).splitlines()
+        i = 0
+        while i < len(lines):
+            label_match = label_re.match(lines[i].strip())
+            if not label_match:
+                i += 1
+                continue
+            label = label_match.group(1)
+            items = []
+            j = i + 1
+            while j < len(lines):
+                stripped = lines[j].strip()
+                if stripped == "pokemartlistend":
+                    if items:
+                        shops.append({"symbol": label, "map": scripts.parent.name, "items": items, "source": scripts})
+                    break
+                if label_re.match(stripped) and j != i + 1:
+                    break
+                item_match = item_re.search(stripped)
+                if item_match:
+                    items.append(item_match.group(1))
+                j += 1
+            i += 1
+    return shops
+
+
+def extract_entity_shops(root: Path) -> Dict[str, Any]:
+    domain = "shops"
+    clear_domain(root, domain)
+    entries: List[Dict[str, Any]] = []
+    for shop in parse_shop_blocks(root):
+        entity = entity_base(root, domain, shop["symbol"], shop["source"], "pokemart_script_list")
+        entity.update({"symbol": shop["symbol"], "map": shop["map"], "items": shop["items"]})
+        write_entity(root, domain, f"{shop['symbol']}.json", entity, entries, {"symbol": shop["symbol"], "map": shop["map"]})
+    write_domain_index(root, domain, entries, {"entityCount": len(entries)})
+    write_domain_source_manifest(root, domain, DOMAIN_SOURCE_SPECS[domain])
+    return {"shops": len(entries)}
+
+
+def extract_source_file_entities(root: Path, domain: str, specs: Sequence[str]) -> Dict[str, Any]:
+    clear_domain(root, domain)
+    entries: List[Dict[str, Any]] = []
+    files = collect_files(root, specs)
+    for path in files:
+        entity_id = rel(root, path)
+        entity = entity_base(root, domain, entity_id, path, "source_file")
+        entity.update({"path": rel(root, path), "bytes": path.stat().st_size})
+        write_entity(root, domain, f"source_files/{safe_name(entity_id)}.json", entity, entries)
+    write_domain_index(root, domain, entries, {"entityCount": len(entries)})
+    write_domain_source_manifest(root, domain, specs)
+    return {"sourceEntities": len(entries)}
+
+
+ENTITY_EXTRACTORS = {
+    "maps": extract_entity_maps,
+    "npcs": extract_entity_npcs,
+    "trainers": extract_entity_trainers,
+    "trainer_parties": extract_entity_trainer_parties,
+    "weather": extract_entity_weather,
+    "time": extract_entity_time,
+    "flags": extract_entity_flags,
+    "engine_rulesets": extract_entity_engine_rulesets,
+    "quests": extract_entity_quests,
+    "wild_encounters": extract_entity_wild_encounters,
+    "items": lambda root: extract_token_domain(root, "items", "include/constants/items.h", "ITEM_", "items", "item_define"),
+    "pokemon": lambda root: extract_token_domain(root, "pokemon", "include/constants/species.h", "SPECIES_", "species", "species_define"),
+    "moves": lambda root: extract_token_domain(root, "moves", "include/constants/moves.h", "MOVE_", "moves", "move_define"),
+    "shops": extract_entity_shops,
+}
+
+
+def extract_domain(root: Path, domain: str) -> Dict[str, Any]:
+    extractor = ENTITY_EXTRACTORS.get(domain)
+    if extractor is not None:
+        return extractor(root)
+    return extract_source_file_entities(root, domain, DOMAIN_SOURCE_SPECS.get(domain, []))
+
+
+def extract(root: Path, domains: Sequence[str]) -> None:
+    ensure_mod_skeleton(root)
+    write_c_adapters(root, domains)
+    write_wrapper_scripts(root)
+    write_all_schemas(root, domains)
+    counts: Dict[str, Dict[str, Any]] = {}
+    for domain in domains:
+        counts[domain] = extract_domain(root, domain)
+    for domain in domains:
+        write_expectation(root, domain, counts.get(domain))
+    write_json(
+        root / "mods" / MOD_ID / "extraction_summary.json",
+        {
+            "mod": MOD_ID,
+            "schemaVersion": SCHEMA_VERSION,
+            "layout": "entity_index_v2",
+            "domains": API_DOMAINS,
+            "counts": counts,
+        },
+    )
+
+
+def strip_map_metadata(data: Dict[str, Any]) -> Dict[str, Any]:
+    return {key: value for key, value in data.items() if key not in METADATA_KEYS}
+
+
+def check_entity_sources(root: Path, domains: Sequence[str]) -> List[str]:
+    errors = []
+    for domain in domains:
+        domain_root = root / "mods" / MOD_ID / domain
+        index_path = domain_root / "index.json"
+        if not index_path.exists():
+            errors.append(f"missing index: {rel(root, index_path)}")
+            continue
+        for entry in read_json(index_path).get("entries", []):
+            path = domain_root / str(entry.get("path", ""))
+            data = read_json(path)
+            source = data.get("source", {}) if isinstance(data, dict) else {}
+            source_path = root / source.get("path", "")
+            if not source_path.exists():
+                errors.append(f"{rel(root, path)}: missing source {source.get('path')}")
+            elif source.get("sha1") != sha1_file(source_path):
+                errors.append(f"{rel(root, path)}: source hash drift for {source.get('path')}")
+    return errors
+
+
+def materialize(root: Path, domains: Sequence[str], check_only: bool) -> None:
+    if not check_only:
+        extract(root, domains)
+        return
+    errors = check_entity_sources(root, domains)
+    if "maps" in domains:
+        for map_entity in sorted((root / "mods" / MOD_ID / "maps").glob("*/map.json")):
+            data = read_json(map_entity)
+            source_path = root / data.get("source", {}).get("path", "")
+            if source_path.exists() and strip_map_metadata(data) != read_json(source_path):
+                errors.append(f"{rel(root, map_entity)}: map data differs from {rel(root, source_path)}")
+            scripts_source = data.get("legacy", {}).get("scriptsSourcePath")
+            scripts_mirror = map_entity.parent / "scripts.inc"
+            if scripts_source:
+                source = root / scripts_source
+                if not scripts_mirror.exists():
+                    errors.append(f"{rel(root, scripts_mirror)}: missing script mirror")
+                elif source.read_bytes() != scripts_mirror.read_bytes():
+                    errors.append(f"{rel(root, scripts_mirror)}: script mirror differs from {rel(root, source)}")
+    if errors:
+        raise SystemExit("\n".join(errors))
+
+
+def check_expectations(root: Path, domains: Sequence[str]) -> None:
+    errors = []
+    for domain in domains:
+        expected_path = root / "mods" / MOD_ID / "expectations" / domain / "baseline.expected.json"
+        schema_path = root / "docs" / "mod_api_schemas" / f"{domain}.schema.json"
+        index_path = root / "mods" / MOD_ID / domain / "index.json"
+        source_manifest_path = root / "mods" / MOD_ID / domain / "_source_manifest.json"
+        if not schema_path.exists():
+            errors.append(f"missing schema: {rel(root, schema_path)}")
+        if not index_path.exists():
+            errors.append(f"missing domain index: {rel(root, index_path)}")
+        if not source_manifest_path.exists():
+            errors.append(f"missing source manifest: {rel(root, source_manifest_path)}")
+        if not expected_path.exists():
+            errors.append(f"missing expectation: {rel(root, expected_path)}")
+            continue
+        expected = read_json(expected_path)
+        current = expectation_for_domain(root, domain)
+        for key in ["fileCount", "jsonFileCount", "bytes", "sha1"]:
+            if expected.get(key) != current.get(key):
+                errors.append(f"{domain}: expectation mismatch for {key}: expected {expected.get(key)!r}, got {current.get(key)!r}")
+    errors.extend(check_entity_sources(root, domains))
+    if errors:
+        raise SystemExit("\n".join(errors))
 
 
 def main(argv: Optional[Sequence[str]] = None) -> int:

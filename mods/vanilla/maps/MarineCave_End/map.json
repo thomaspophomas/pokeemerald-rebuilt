@@ -49,5 +49,26 @@
       "script": "MarineCave_End_EventScript_Kyogre"
     }
   ],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MarineCave_End/map.json",
+    "sha1": "c3469e14ff356e2c3ed61336718e46bdd1bfb427"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/MarineCave_End/map.json",
+    "mapName": "MarineCave_End",
+    "scriptsSourcePath": "data/maps/MarineCave_End/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 103,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

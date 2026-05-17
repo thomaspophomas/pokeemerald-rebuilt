@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_SALLY",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_SALLY] =\n    {\n        .trainerClass = TRAINER_CLASS_LASS,\n        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,\n        .trainerPic = TRAINER_PIC_LASS,\n        .trainerName = _(\"SALLY\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_Sally),\n    },"
+  },
+  "symbol": "TRAINER_SALLY",
+  "numericId": 611,
+  "trainerName": "SALLY",
+  "trainerClass": "TRAINER_CLASS_LASS",
+  "trainerPic": "TRAINER_PIC_LASS",
+  "encounterMusicGender": "F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_Sally",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

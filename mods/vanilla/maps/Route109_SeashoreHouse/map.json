@@ -84,5 +84,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route109_SeashoreHouse/map.json",
+    "sha1": "2ca49f80c6aafb75ff0dead58f821265a513a625"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route109_SeashoreHouse/map.json",
+    "mapName": "Route109_SeashoreHouse",
+    "scriptsSourcePath": "data/maps/Route109_SeashoreHouse/scripts.inc"
+  },
+  "mapGroup": 28,
+  "mapNum": 0,
+  "mapGroupSymbol": "gMapGroup_IndoorRoute109",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

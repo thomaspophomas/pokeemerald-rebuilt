@@ -1,0 +1,16 @@
+{
+  "id": "SeafloorCavern_Entrance:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Entrance/map.json",
+    "sha1": "26558c228dcd913112067322d6441727f233be54"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/SeafloorCavern_Entrance/map.json"
+  },
+  "map": "SeafloorCavern_Entrance",
+  "mapId": "MAP_SEAFLOOR_CAVERN_ENTRANCE",
+  "weather": "WEATHER_NONE"
+}

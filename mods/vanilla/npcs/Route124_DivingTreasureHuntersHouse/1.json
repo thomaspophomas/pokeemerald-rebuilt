@@ -1,0 +1,45 @@
+{
+  "id": "Route124_DivingTreasureHuntersHouse:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route124_DivingTreasureHuntersHouse/map.json",
+    "sha1": "e76f06d6c2d488a3e04e3dfb4cf1b32917ef9b29"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route124_DivingTreasureHuntersHouse/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "x": 5,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route124_DivingTreasureHuntersHouse_EventScript_TreasureHunter",
+      "flag": "0"
+    }
+  },
+  "map": "Route124_DivingTreasureHuntersHouse",
+  "mapId": "MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_MAN_5",
+  "x": 5,
+  "y": 4,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Route124_DivingTreasureHuntersHouse_EventScript_TreasureHunter",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

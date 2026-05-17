@@ -1,0 +1,16 @@
+{
+  "id": "FarawayIsland_Entrance:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FarawayIsland_Entrance/map.json",
+    "sha1": "3729d1448e31e8a30c0b21f497bc6a12048dbd0c"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/FarawayIsland_Entrance/map.json"
+  },
+  "map": "FarawayIsland_Entrance",
+  "mapId": "MAP_FARAWAY_ISLAND_ENTRANCE",
+  "weather": "WEATHER_NONE"
+}

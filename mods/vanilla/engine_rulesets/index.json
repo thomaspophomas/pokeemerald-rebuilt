@@ -1,0 +1,14 @@
+{
+  "domain": "engine_rulesets",
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "engine:gen3",
+      "path": "gen3.json",
+      "sourcePath": "src/mod/engine.c",
+      "legacyKind": "default_engine_ruleset",
+      "symbol": "engine:gen3"
+    }
+  ],
+  "entityCount": 1
+}

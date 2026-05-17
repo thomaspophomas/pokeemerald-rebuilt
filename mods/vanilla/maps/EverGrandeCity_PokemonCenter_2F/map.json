@@ -91,5 +91,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PokemonCenter_2F/map.json",
+    "sha1": "43d0635ab3763c244c88904e7e11193fcacb9a00"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/EverGrandeCity_PokemonCenter_2F/map.json",
+    "mapName": "EverGrandeCity_PokemonCenter_2F",
+    "scriptsSourcePath": "data/maps/EverGrandeCity_PokemonCenter_2F/scripts.inc"
+  },
+  "mapGroup": 16,
+  "mapNum": 13,
+  "mapGroupSymbol": "gMapGroup_IndoorEverGrande",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

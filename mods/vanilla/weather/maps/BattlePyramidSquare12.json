@@ -1,0 +1,16 @@
+{
+  "id": "BattlePyramidSquare12:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattlePyramidSquare12/map.json",
+    "sha1": "7056235ffce210d140b0af6186e80ecfc9c0768a"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/BattlePyramidSquare12/map.json"
+  },
+  "map": "BattlePyramidSquare12",
+  "mapId": "MAP_BATTLE_PYRAMID_SQUARE12",
+  "weather": "WEATHER_NONE"
+}

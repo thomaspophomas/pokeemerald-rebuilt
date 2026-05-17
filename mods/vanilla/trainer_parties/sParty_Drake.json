@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Drake",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemCustomMoves sParty_Drake[] = {\n    {\n    .iv = 250,\n    .lvl = 52,\n    .species = SPECIES_SHELGON,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_ROCK_TOMB, MOVE_DRAGON_CLAW, MOVE_PROTECT, MOVE_DOUBLE_EDGE}\n    },\n    {\n    .iv = 250,\n    .lvl = 54,\n    .species = SPECIES_ALTARIA,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_DOUBLE_EDGE, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE, MOVE_AERIAL_ACE}\n    },\n    {\n    .iv = 250,\n    .lvl = 53,\n    .species = SPECIES_KINGDRA,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_SMOKESCREEN, MOVE_DRAGON_DANCE, MOVE_SURF, MOVE_BODY_SLAM}\n    },\n    {\n    .iv = 250,\n    .lvl = 53,\n    .species = SPECIES_FLYGON,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_FLAMETHROWER, MOVE_CRUNCH, MOVE_DRAGON_BREATH, MOVE_EARTHQUAKE}\n    },\n    {\n    .iv = 255,\n    .lvl = 55,\n    .species = SPECIES_SALAMENCE,\n    .heldItem = ITEM_SITRUS_BERRY,\n    .moves = {MOVE_FLAMETHROWER, MOVE_DRAGON_CLAW, MOVE_ROCK_SLIDE, MOVE_CRUNCH}\n    }\n};"
+  },
+  "symbol": "sParty_Drake",
+  "partyType": "TrainerMonItemCustomMoves",
+  "pokemonCount": 5
+}

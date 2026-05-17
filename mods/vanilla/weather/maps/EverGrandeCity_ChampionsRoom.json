@@ -1,0 +1,16 @@
+{
+  "id": "EverGrandeCity_ChampionsRoom:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_ChampionsRoom/map.json",
+    "sha1": "1a50852d2ac213c086aabf21a5bc16fa4c9f7e03"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/EverGrandeCity_ChampionsRoom/map.json"
+  },
+  "map": "EverGrandeCity_ChampionsRoom",
+  "mapId": "MAP_EVER_GRANDE_CITY_CHAMPIONS_ROOM",
+  "weather": "WEATHER_NONE"
+}

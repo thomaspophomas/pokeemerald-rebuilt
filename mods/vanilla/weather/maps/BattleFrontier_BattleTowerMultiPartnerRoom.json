@@ -1,0 +1,16 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiPartnerRoom:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/map.json",
+    "sha1": "44f5737975fa4f7a7666bcd5a46ed2158f269714"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/map.json"
+  },
+  "map": "BattleFrontier_BattleTowerMultiPartnerRoom",
+  "mapId": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_PARTNER_ROOM",
+  "weather": "WEATHER_NONE"
+}

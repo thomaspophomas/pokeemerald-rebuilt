@@ -1,0 +1,16 @@
+{
+  "id": "Route123:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route123/map.json",
+    "sha1": "5f30055b99ad151e31bfbdc0bdab9776e6da6471"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/Route123/map.json"
+  },
+  "map": "Route123",
+  "mapId": "MAP_ROUTE123",
+  "weather": "WEATHER_SUNNY"
+}

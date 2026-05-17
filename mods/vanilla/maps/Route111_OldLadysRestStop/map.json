@@ -45,5 +45,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111_OldLadysRestStop/map.json",
+    "sha1": "d32f68a8ac6bc01b2b49b6df14315447c4439bff"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route111_OldLadysRestStop/map.json",
+    "mapName": "Route111_OldLadysRestStop",
+    "scriptsSourcePath": "data/maps/Route111_OldLadysRestStop/scripts.inc"
+  },
+  "mapGroup": 18,
+  "mapNum": 1,
+  "mapGroupSymbol": "gMapGroup_IndoorRoute111",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

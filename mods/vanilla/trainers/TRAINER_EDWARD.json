@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_EDWARD",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_EDWARD] =\n    {\n        .trainerClass = TRAINER_CLASS_PSYCHIC,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,\n        .trainerPic = TRAINER_PIC_PSYCHIC_M,\n        .trainerName = _(\"EDWARD\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = NO_ITEM_CUSTOM_MOVES(sParty_Edward),\n    },"
+  },
+  "symbol": "TRAINER_EDWARD",
+  "numericId": 232,
+  "trainerName": "EDWARD",
+  "trainerClass": "TRAINER_CLASS_PSYCHIC",
+  "trainerPic": "TRAINER_PIC_PSYCHIC_M",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_INTENSE",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_Edward",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

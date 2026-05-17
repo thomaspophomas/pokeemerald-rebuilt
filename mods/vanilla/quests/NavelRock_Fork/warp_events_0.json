@@ -1,0 +1,27 @@
+{
+  "id": "NavelRock_Fork:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NavelRock_Fork/map.json",
+    "sha1": "1ee3cde30dade9a4af7a6cdc083a89afc326dd06"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/NavelRock_Fork/map.json",
+    "raw": {
+      "x": 4,
+      "y": 6,
+      "elevation": 3,
+      "dest_map": "MAP_NAVEL_ROCK_UP1",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "NavelRock_Fork",
+  "mapId": "MAP_NAVEL_ROCK_FORK",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

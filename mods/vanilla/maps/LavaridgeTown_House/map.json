@@ -71,5 +71,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_House/map.json",
+    "sha1": "31405e61ea4624fe1e2998ed69c2576e8c2cbc7b"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/LavaridgeTown_House/map.json",
+    "mapName": "LavaridgeTown_House",
+    "scriptsSourcePath": "data/maps/LavaridgeTown_House/scripts.inc"
+  },
+  "mapGroup": 4,
+  "mapNum": 3,
+  "mapGroupSymbol": "gMapGroup_IndoorLavaridge",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

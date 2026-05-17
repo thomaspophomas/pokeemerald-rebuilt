@@ -1,0 +1,45 @@
+{
+  "id": "Route119_House:6",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_House/map.json",
+    "sha1": "bddc81b2d927f0991fcc11bf3c81b05613a9ae10"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route119_House/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_WINGULL",
+      "x": 6,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route119_House_EventScript_Wingull",
+      "flag": "0"
+    }
+  },
+  "map": "Route119_House",
+  "mapId": "MAP_ROUTE119_HOUSE",
+  "localId": 6,
+  "graphicsId": "OBJ_EVENT_GFX_WINGULL",
+  "x": 6,
+  "y": 6,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+  "movementRangeX": 2,
+  "movementRangeY": 2,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Route119_House_EventScript_Wingull",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby:bg_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/map.json",
+    "sha1": "bdac9ff7e3d4d969649e263a4f3738db14127b7c"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 12,
+      "y": 5,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "BattleFrontier_BattleTowerLobby_EventScript_ShowMultisResults"
+    }
+  },
+  "map": "BattleFrontier_BattleTowerLobby",
+  "mapId": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_LOBBY",
+  "eventType": "bg_events",
+  "index": 2,
+  "script": "BattleFrontier_BattleTowerLobby_EventScript_ShowMultisResults",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

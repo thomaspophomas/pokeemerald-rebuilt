@@ -1,0 +1,16 @@
+{
+  "id": "MauvilleCity:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/map.json",
+    "sha1": "f3885f20933e6e45c5886f6a829c826d4f8386d2"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/MauvilleCity/map.json"
+  },
+  "map": "MauvilleCity",
+  "mapId": "MAP_MAUVILLE_CITY",
+  "weather": "WEATHER_SUNNY"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "Route115:bg_events:13",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route115/map.json",
+    "sha1": "b6c6b6d8e02d782dfc66ddae4e4cf9145461193d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route115/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 15,
+      "y": 49,
+      "elevation": 3,
+      "item": "ITEM_HEART_SCALE",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_115_HEART_SCALE"
+    }
+  },
+  "map": "Route115",
+  "mapId": "MAP_ROUTE115",
+  "eventType": "bg_events",
+  "index": 13,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Beau",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_Beau[] = {\n    {\n    .iv = 0,\n    .lvl = 21,\n    .species = SPECIES_BALTOY,\n    .moves = {MOVE_RAPID_SPIN, MOVE_MUD_SLAP, MOVE_PSYBEAM, MOVE_ROCK_TOMB}\n    },\n    {\n    .iv = 0,\n    .lvl = 21,\n    .species = SPECIES_SANDSHREW,\n    .moves = {MOVE_POISON_STING, MOVE_SAND_ATTACK, MOVE_SCRATCH, MOVE_DIG}\n    },\n    {\n    .iv = 0,\n    .lvl = 21,\n    .species = SPECIES_BALTOY,\n    .moves = {MOVE_RAPID_SPIN, MOVE_MUD_SLAP, MOVE_PSYBEAM, MOVE_ROCK_TOMB}\n    }\n};"
+  },
+  "symbol": "sParty_Beau",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 3
+}

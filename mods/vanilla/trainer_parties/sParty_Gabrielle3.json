@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Gabrielle3",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemDefaultMoves sParty_Gabrielle3[] = {\n    {\n    .iv = 20,\n    .lvl = 33,\n    .species = SPECIES_SKITTY,\n    },\n    {\n    .iv = 20,\n    .lvl = 33,\n    .species = SPECIES_MIGHTYENA,\n    },\n    {\n    .iv = 20,\n    .lvl = 33,\n    .species = SPECIES_LINOONE,\n    },\n    {\n    .iv = 20,\n    .lvl = 33,\n    .species = SPECIES_LOMBRE,\n    },\n    {\n    .iv = 20,\n    .lvl = 33,\n    .species = SPECIES_NUZLEAF,\n    },\n    {\n    .iv = 20,\n    .lvl = 33,\n    .species = SPECIES_TAILLOW,\n    }\n};"
+  },
+  "symbol": "sParty_Gabrielle3",
+  "partyType": "TrainerMonNoItemDefaultMoves",
+  "pokemonCount": 6
+}

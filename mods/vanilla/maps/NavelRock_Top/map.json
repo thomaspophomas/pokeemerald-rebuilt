@@ -58,5 +58,26 @@
       "item": "ITEM_SACRED_ASH",
       "flag": "FLAG_HIDDEN_ITEM_NAVEL_ROCK_TOP_SACRED_ASH"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NavelRock_Top/map.json",
+    "sha1": "d94116c665620d434b4b8a97ce620b4b11cbabd5"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/NavelRock_Top/map.json",
+    "mapName": "NavelRock_Top",
+    "scriptsSourcePath": "data/maps/NavelRock_Top/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 75,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "id": "PetalburgCity:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity/map.json",
+    "sha1": "ca6092ddf12a2aeddab506e674dc3d3cd443f16d"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/PetalburgCity/map.json"
+  },
+  "map": "PetalburgCity",
+  "mapId": "MAP_PETALBURG_CITY",
+  "weather": "WEATHER_SUNNY"
+}

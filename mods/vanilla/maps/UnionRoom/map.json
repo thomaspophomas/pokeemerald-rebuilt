@@ -157,5 +157,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/UnionRoom/map.json",
+    "sha1": "951fb254aa12ec6c0f4131943e9f4cfb149057a0"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/UnionRoom/map.json",
+    "mapName": "UnionRoom",
+    "scriptsSourcePath": "data/maps/UnionRoom/scripts.inc"
+  },
+  "mapGroup": 25,
+  "mapNum": 60,
+  "mapGroupSymbol": "gMapGroup_IndoorDynamic",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,16 @@
+{
+  "id": "SafariZone_RestHouse:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_RestHouse/map.json",
+    "sha1": "f9d530c16cf9883314574066aeb1050946f664c1"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/SafariZone_RestHouse/map.json"
+  },
+  "map": "SafariZone_RestHouse",
+  "mapId": "MAP_SAFARI_ZONE_REST_HOUSE",
+  "weather": "WEATHER_NONE"
+}

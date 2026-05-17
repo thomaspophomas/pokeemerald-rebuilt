@@ -45,5 +45,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown_House1/map.json",
+    "sha1": "30fb7c52c6e44fb21c79cfea55b34e1b4cb57dd5"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/OldaleTown_House1/map.json",
+    "mapName": "OldaleTown_House1",
+    "scriptsSourcePath": "data/maps/OldaleTown_House1/scripts.inc"
+  },
+  "mapGroup": 2,
+  "mapNum": 0,
+  "mapGroupSymbol": "gMapGroup_IndoorOldale",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -128,5 +128,26 @@
       "item": "ITEM_MAX_ETHER",
       "flag": "FLAG_HIDDEN_ITEM_MT_PYRE_EXTERIOR_MAX_ETHER"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Exterior/map.json",
+    "sha1": "18f311029f177a135b509d3c01af0762ccc701c2"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/MtPyre_Exterior/map.json",
+    "mapName": "MtPyre_Exterior",
+    "scriptsSourcePath": "data/maps/MtPyre_Exterior/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 21,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

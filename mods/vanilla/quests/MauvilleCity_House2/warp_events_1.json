@@ -1,0 +1,27 @@
+{
+  "id": "MauvilleCity_House2:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_House2/map.json",
+    "sha1": "bec9f6cda4df97c237b5856ba0f5048f6486cc8d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MauvilleCity_House2/map.json",
+    "raw": {
+      "x": 4,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_MAUVILLE_CITY",
+      "dest_warp_id": "6"
+    }
+  },
+  "map": "MauvilleCity_House2",
+  "mapId": "MAP_MAUVILLE_CITY_HOUSE2",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

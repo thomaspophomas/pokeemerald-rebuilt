@@ -1,0 +1,16 @@
+{
+  "id": "BattleFrontier_BattleFactoryPreBattleRoom:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/map.json",
+    "sha1": "91f7cafd8d2dfb21422635d40505957eb06900ea"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/map.json"
+  },
+  "map": "BattleFrontier_BattleFactoryPreBattleRoom",
+  "mapId": "MAP_BATTLE_FRONTIER_BATTLE_FACTORY_PRE_BATTLE_ROOM",
+  "weather": "WEATHER_NONE"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "SafariZone_South:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_South/map.json",
+    "sha1": "8baf48e1259b4314bb0edbd7f5b208949a5855ac"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SafariZone_South/map.json",
+    "raw": {
+      "x": 32,
+      "y": 33,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE121_SAFARI_ZONE_ENTRANCE",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "SafariZone_South",
+  "mapId": "MAP_SAFARI_ZONE_SOUTH",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,46 @@
+{
+  "id": "BattleFrontier_OutsideWest:LOCALID_FRONTIER_MAN_4",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/map.json",
+    "sha1": "0468bfc9b139119ef609063be6421d7050189630"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/map.json",
+    "raw": {
+      "local_id": "LOCALID_FRONTIER_MAN_4",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_4",
+      "x": 8,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BattleFrontier_OutsideWest_EventScript_Man4",
+      "flag": "0"
+    }
+  },
+  "map": "BattleFrontier_OutsideWest",
+  "mapId": "MAP_BATTLE_FRONTIER_OUTSIDE_WEST",
+  "localId": "LOCALID_FRONTIER_MAN_4",
+  "graphicsId": "OBJ_EVENT_GFX_MAN_4",
+  "x": 8,
+  "y": 5,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "BattleFrontier_OutsideWest_EventScript_Man4",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

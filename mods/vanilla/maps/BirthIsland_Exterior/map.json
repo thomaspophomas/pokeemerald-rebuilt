@@ -53,5 +53,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BirthIsland_Exterior/map.json",
+    "sha1": "e175c45e9fec45b267b604a2318fdca43e0d52c0"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/BirthIsland_Exterior/map.json",
+    "mapName": "BirthIsland_Exterior",
+    "scriptsSourcePath": "data/maps/BirthIsland_Exterior/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 58,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

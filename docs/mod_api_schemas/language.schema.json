@@ -2,13 +2,31 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://pokeemerald.local/mod_api_schemas/language.schema.json",
   "title": "Vanilla Language API",
-  "description": "Deterministic JSON representation for the vanilla language mod API domain. Domain-specific files may be either typed records or lossless source manifests until the legacy pipeline for that domain is fully replaced.",
-  "oneOf": [
-    {
+  "description": "Modder-facing entity JSON representation for the vanilla language mod API domain. Each domain has an index.json, one or more entity JSON files, and _source_manifest.json only for audit and drift checks.",
+  "type": "object",
+  "required": [
+    "domain",
+    "schemaVersion"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "type": "integer"
+    },
+    "source": {
       "type": "object"
     },
-    {
+    "legacy": {
+      "type": "object"
+    },
+    "entries": {
       "type": "array"
     }
-  ]
+  },
+  "additionalProperties": true
 }

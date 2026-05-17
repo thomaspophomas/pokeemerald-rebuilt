@@ -1,0 +1,27 @@
+{
+  "id": "Route113_GlassWorkshop:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113_GlassWorkshop/map.json",
+    "sha1": "937eaee9bf50190017dd23e37c1dc7ad9e887664"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route113_GlassWorkshop/map.json",
+    "raw": {
+      "x": 3,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE113",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Route113_GlassWorkshop",
+  "mapId": "MAP_ROUTE113_GLASS_WORKSHOP",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

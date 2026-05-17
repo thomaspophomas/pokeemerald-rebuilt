@@ -1,0 +1,27 @@
+{
+  "id": "SkyPillar_1F:warp_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_1F/map.json",
+    "sha1": "33c5b50f6c3488c7535d571d6800bf7144196a00"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SkyPillar_1F/map.json",
+    "raw": {
+      "x": 10,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_SKY_PILLAR_2F",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "SkyPillar_1F",
+  "mapId": "MAP_SKY_PILLAR_1F",
+  "eventType": "warp_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

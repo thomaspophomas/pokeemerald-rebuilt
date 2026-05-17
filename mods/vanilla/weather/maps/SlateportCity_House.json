@@ -1,0 +1,16 @@
+{
+  "id": "SlateportCity_House:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_House/map.json",
+    "sha1": "eee854dca94c548cb61e3c8ea34d001e8ba49af2"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/SlateportCity_House/map.json"
+  },
+  "map": "SlateportCity_House",
+  "mapId": "MAP_SLATEPORT_CITY_HOUSE",
+  "weather": "WEATHER_NONE"
+}

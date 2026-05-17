@@ -1,0 +1,17 @@
+{
+  "id": "sParty_TabithaMagmaHideout",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemDefaultMoves sParty_TabithaMagmaHideout[] = {\n    {\n    .iv = 75,\n    .lvl = 26,\n    .species = SPECIES_NUMEL,\n    },\n    {\n    .iv = 75,\n    .lvl = 28,\n    .species = SPECIES_MIGHTYENA,\n    },\n    {\n    .iv = 75,\n    .lvl = 30,\n    .species = SPECIES_ZUBAT,\n    },\n    {\n    .iv = 75,\n    .lvl = 33,\n    .species = SPECIES_CAMERUPT,\n    }\n};"
+  },
+  "symbol": "sParty_TabithaMagmaHideout",
+  "partyType": "TrainerMonNoItemDefaultMoves",
+  "pokemonCount": 4
+}

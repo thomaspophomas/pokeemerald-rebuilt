@@ -1,0 +1,16 @@
+{
+  "id": "MtChimney_CableCarStation:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney_CableCarStation/map.json",
+    "sha1": "b53c07d6ad80e9bc6863e52fbfe2254e16272abb"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/MtChimney_CableCarStation/map.json"
+  },
+  "map": "MtChimney_CableCarStation",
+  "mapId": "MAP_MT_CHIMNEY_CABLE_CAR_STATION",
+  "weather": "WEATHER_NONE"
+}

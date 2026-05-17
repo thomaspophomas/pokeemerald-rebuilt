@@ -1,0 +1,30 @@
+{
+  "id": "Route110:bg_events:10",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/map.json",
+    "sha1": "8a0d70f41dabc8b115727a1fccde79f1c803c9e1"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route110/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 8,
+      "y": 67,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route110_EventScript_TrickHouseSign"
+    }
+  },
+  "map": "Route110",
+  "mapId": "MAP_ROUTE110",
+  "eventType": "bg_events",
+  "index": 10,
+  "script": "Route110_EventScript_TrickHouseSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

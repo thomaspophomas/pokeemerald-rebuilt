@@ -1,0 +1,27 @@
+{
+  "id": "Route124_DivingTreasureHuntersHouse:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route124_DivingTreasureHuntersHouse/map.json",
+    "sha1": "e76f06d6c2d488a3e04e3dfb4cf1b32917ef9b29"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route124_DivingTreasureHuntersHouse/map.json",
+    "raw": {
+      "x": 3,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE124",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Route124_DivingTreasureHuntersHouse",
+  "mapId": "MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

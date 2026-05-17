@@ -1,0 +1,21 @@
+{
+  "id": "LilycoveCity_DepartmentStore_4F_Pokemart_AttackTMs",
+  "domain": "shops",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc",
+    "sha1": "1c31f94c3331fa62c92524841334a9b9b0a050ac"
+  },
+  "legacy": {
+    "kind": "pokemart_script_list",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc"
+  },
+  "symbol": "LilycoveCity_DepartmentStore_4F_Pokemart_AttackTMs",
+  "map": "LilycoveCity_DepartmentStore_4F",
+  "items": [
+    "ITEM_TM_FIRE_BLAST",
+    "ITEM_TM_THUNDER",
+    "ITEM_TM_BLIZZARD",
+    "ITEM_TM_HYPER_BEAM"
+  ]
+}

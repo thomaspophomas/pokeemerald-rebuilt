@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Hitoshi",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemDefaultMoves sParty_Hitoshi[] = {\n    {\n    .iv = 50,\n    .lvl = 32,\n    .species = SPECIES_MACHOP,\n    },\n    {\n    .iv = 200,\n    .lvl = 32,\n    .species = SPECIES_MACHOKE,\n    }\n};"
+  },
+  "symbol": "sParty_Hitoshi",
+  "partyType": "TrainerMonNoItemDefaultMoves",
+  "pokemonCount": 2
+}

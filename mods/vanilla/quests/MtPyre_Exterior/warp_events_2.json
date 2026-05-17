@@ -1,0 +1,27 @@
+{
+  "id": "MtPyre_Exterior:warp_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Exterior/map.json",
+    "sha1": "18f311029f177a135b509d3c01af0762ccc701c2"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MtPyre_Exterior/map.json",
+    "raw": {
+      "x": 20,
+      "y": 10,
+      "elevation": 3,
+      "dest_map": "MAP_MT_PYRE_SUMMIT",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "MtPyre_Exterior",
+  "mapId": "MAP_MT_PYRE_EXTERIOR",
+  "eventType": "warp_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

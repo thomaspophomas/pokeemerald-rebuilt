@@ -1,0 +1,16 @@
+{
+  "id": "PetalburgWoods:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/map.json",
+    "sha1": "67d0842207660bdef7b89d73a15eb7943073ee9a"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/PetalburgWoods/map.json"
+  },
+  "map": "PetalburgWoods",
+  "mapId": "MAP_PETALBURG_WOODS",
+  "weather": "WEATHER_SHADE"
+}

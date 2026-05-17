@@ -72,5 +72,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Mart/map.json",
+    "sha1": "db1633902e5f694ac034d43b14967b5c6415ba63"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/LavaridgeTown_Mart/map.json",
+    "mapName": "LavaridgeTown_Mart",
+    "scriptsSourcePath": "data/maps/LavaridgeTown_Mart/scripts.inc"
+  },
+  "mapGroup": 4,
+  "mapNum": 4,
+  "mapGroupSymbol": "gMapGroup_IndoorLavaridge",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

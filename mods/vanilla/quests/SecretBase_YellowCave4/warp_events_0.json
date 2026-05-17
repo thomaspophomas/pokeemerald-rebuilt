@@ -1,0 +1,27 @@
+{
+  "id": "SecretBase_YellowCave4:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SecretBase_YellowCave4/map.json",
+    "sha1": "320e1ab92bc96b9f8885b24b54e2bb83faccc0f8"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SecretBase_YellowCave4/map.json",
+    "raw": {
+      "x": 6,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "WARP_ID_SECRET_BASE"
+    }
+  },
+  "map": "SecretBase_YellowCave4",
+  "mapId": "MAP_SECRET_BASE_YELLOW_CAVE4",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

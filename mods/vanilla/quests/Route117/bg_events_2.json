@@ -1,0 +1,30 @@
+{
+  "id": "Route117:bg_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route117/map.json",
+    "sha1": "c7c9af5ecd59a144046f8ae0ea2b93cb235f5110"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route117/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 49,
+      "y": 5,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route117_EventScript_DayCareSign"
+    }
+  },
+  "map": "Route117",
+  "mapId": "MAP_ROUTE117",
+  "eventType": "bg_events",
+  "index": 2,
+  "script": "Route117_EventScript_DayCareSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

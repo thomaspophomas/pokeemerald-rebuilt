@@ -1,0 +1,30 @@
+{
+  "id": "AbandonedShip_HiddenFloorCorridors:bg_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_HiddenFloorCorridors/map.json",
+    "sha1": "be87fa29c2ab87d97d6c2602a1f40672ed90db8d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/AbandonedShip_HiddenFloorCorridors/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 6,
+      "y": 8,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AbandonedShip_HiddenFloorCorridors_EventScript_Room2Door"
+    }
+  },
+  "map": "AbandonedShip_HiddenFloorCorridors",
+  "mapId": "MAP_ABANDONED_SHIP_HIDDEN_FLOOR_CORRIDORS",
+  "eventType": "bg_events",
+  "index": 1,
+  "script": "AbandonedShip_HiddenFloorCorridors_EventScript_Room2Door",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "LavaridgeTown_Mart_Pokemart",
+  "domain": "shops",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Mart/scripts.inc",
+    "sha1": "9ccd266cfc46c11e6006af62bd5e1b2c6ea3ae0e"
+  },
+  "legacy": {
+    "kind": "pokemart_script_list",
+    "sourcePath": "data/maps/LavaridgeTown_Mart/scripts.inc"
+  },
+  "symbol": "LavaridgeTown_Mart_Pokemart",
+  "map": "LavaridgeTown_Mart",
+  "items": [
+    "ITEM_GREAT_BALL",
+    "ITEM_SUPER_POTION",
+    "ITEM_ANTIDOTE",
+    "ITEM_PARALYZE_HEAL",
+    "ITEM_AWAKENING",
+    "ITEM_BURN_HEAL",
+    "ITEM_REVIVE",
+    "ITEM_SUPER_REPEL",
+    "ITEM_X_SPEED"
+  ]
+}

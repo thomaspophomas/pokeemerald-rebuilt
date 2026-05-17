@@ -1,0 +1,16 @@
+{
+  "id": "FallarborTown_BattleTentCorridor:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentCorridor/map.json",
+    "sha1": "02a5c56b5021f3012d79772549d7c026bea9b1e8"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/FallarborTown_BattleTentCorridor/map.json"
+  },
+  "map": "FallarborTown_BattleTentCorridor",
+  "mapId": "MAP_FALLARBOR_TOWN_BATTLE_TENT_CORRIDOR",
+  "weather": "WEATHER_NONE"
+}

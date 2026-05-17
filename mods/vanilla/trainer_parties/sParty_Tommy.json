@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Tommy",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemDefaultMoves sParty_Tommy[] = {\n    {\n    .iv = 110,\n    .lvl = 8,\n    .species = SPECIES_GEODUDE,\n    },\n    {\n    .iv = 120,\n    .lvl = 8,\n    .species = SPECIES_GEODUDE,\n    }\n};"
+  },
+  "symbol": "sParty_Tommy",
+  "partyType": "TrainerMonNoItemDefaultMoves",
+  "pokemonCount": 2
+}

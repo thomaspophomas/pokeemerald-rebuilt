@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_LYDIA_2",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_LYDIA_2] =\n    {\n        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,\n        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,\n        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,\n        .trainerName = _(\"LYDIA\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_Lydia2),\n    },"
+  },
+  "symbol": "TRAINER_LYDIA_2",
+  "numericId": 548,
+  "trainerName": "LYDIA",
+  "trainerClass": "TRAINER_CLASS_PKMN_BREEDER",
+  "trainerPic": "TRAINER_PIC_POKEMON_BREEDER_F",
+  "encounterMusicGender": "F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_Lydia2",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

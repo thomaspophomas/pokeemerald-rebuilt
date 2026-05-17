@@ -14,5 +14,26 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "shared_events_map": "ContestHall",
-  "shared_scripts_map": "ContestHall"
+  "shared_scripts_map": "ContestHall",
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/UnusedContestHall5/map.json",
+    "sha1": "df66aaa04853f59b9e23f9ed223f3b1ec4e61975"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/UnusedContestHall5/map.json",
+    "mapName": "UnusedContestHall5",
+    "scriptsSourcePath": null
+  },
+  "mapGroup": 25,
+  "mapNum": 33,
+  "mapGroupSymbol": "gMapGroup_IndoorDynamic",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

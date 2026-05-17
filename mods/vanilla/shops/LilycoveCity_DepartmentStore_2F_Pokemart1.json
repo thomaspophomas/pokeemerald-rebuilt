@@ -1,0 +1,28 @@
+{
+  "id": "LilycoveCity_DepartmentStore_2F_Pokemart1",
+  "domain": "shops",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_2F/scripts.inc",
+    "sha1": "5b4ee799e1c265da48c7feabc7e0a7e45485708e"
+  },
+  "legacy": {
+    "kind": "pokemart_script_list",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_2F/scripts.inc"
+  },
+  "symbol": "LilycoveCity_DepartmentStore_2F_Pokemart1",
+  "map": "LilycoveCity_DepartmentStore_2F",
+  "items": [
+    "ITEM_POKE_BALL",
+    "ITEM_GREAT_BALL",
+    "ITEM_ULTRA_BALL",
+    "ITEM_ESCAPE_ROPE",
+    "ITEM_FULL_HEAL",
+    "ITEM_ANTIDOTE",
+    "ITEM_PARALYZE_HEAL",
+    "ITEM_BURN_HEAL",
+    "ITEM_ICE_HEAL",
+    "ITEM_AWAKENING",
+    "ITEM_FLUFFY_TAIL"
+  ]
+}

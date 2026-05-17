@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Mike1",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_Mike1[] = {\n    {\n    .iv = 0,\n    .lvl = 10,\n    .species = SPECIES_PELIPPER,\n    .moves = {MOVE_GUST, MOVE_GROWL, MOVE_NONE, MOVE_NONE}\n    },\n    {\n    .iv = 0,\n    .lvl = 10,\n    .species = SPECIES_POOCHYENA,\n    .moves = {MOVE_BITE, MOVE_SCARY_FACE, MOVE_NONE, MOVE_NONE}\n    }\n};"
+  },
+  "symbol": "sParty_Mike1",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 2
+}

@@ -1,0 +1,45 @@
+{
+  "id": "SlateportCity_OceanicMuseum_1F:2",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_1F/map.json",
+    "sha1": "37699051b069c9a59bea614c5fee533fc328f864"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_1F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 18,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt3",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS"
+    }
+  },
+  "map": "SlateportCity_OceanicMuseum_1F",
+  "mapId": "MAP_SLATEPORT_CITY_OCEANIC_MUSEUM_1F",
+  "localId": 2,
+  "graphicsId": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+  "x": 18,
+  "y": 5,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt3",
+  "flag": "FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

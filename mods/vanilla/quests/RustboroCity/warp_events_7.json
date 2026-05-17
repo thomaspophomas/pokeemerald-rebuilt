@@ -1,0 +1,27 @@
+{
+  "id": "RustboroCity:warp_events:7",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/map.json",
+    "sha1": "89776bb64fdef8d9171b677d4f7ebeadd02a5674"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/RustboroCity/map.json",
+    "raw": {
+      "x": 33,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_RUSTBORO_CITY_HOUSE1",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "RustboroCity",
+  "mapId": "MAP_RUSTBORO_CITY",
+  "eventType": "warp_events",
+  "index": 7,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

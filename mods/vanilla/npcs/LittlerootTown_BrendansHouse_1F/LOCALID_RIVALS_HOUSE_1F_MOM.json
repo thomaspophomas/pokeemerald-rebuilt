@@ -1,0 +1,46 @@
+{
+  "id": "LittlerootTown_BrendansHouse_1F:LOCALID_RIVALS_HOUSE_1F_MOM",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_1F/map.json",
+    "sha1": "f7be2e429bafe6de2465040402d53ed22d2e30b1"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/map.json",
+    "raw": {
+      "local_id": "LOCALID_RIVALS_HOUSE_1F_MOM",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_4",
+      "x": 2,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RivalsHouse_1F_EventScript_RivalMom",
+      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_MOM"
+    }
+  },
+  "map": "LittlerootTown_BrendansHouse_1F",
+  "mapId": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F",
+  "localId": "LOCALID_RIVALS_HOUSE_1F_MOM",
+  "graphicsId": "OBJ_EVENT_GFX_WOMAN_4",
+  "x": 2,
+  "y": 7,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "RivalsHouse_1F_EventScript_RivalMom",
+  "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_MOM",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

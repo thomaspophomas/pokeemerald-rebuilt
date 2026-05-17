@@ -1,0 +1,45 @@
+{
+  "id": "FortreeCity:7",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity/map.json",
+    "sha1": "bc6e106598defe5c5f6d0848d4ab429438c54a59"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/FortreeCity/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_KECLEON",
+      "x": 25,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FortreeCity_EventScript_Kecleon",
+      "flag": "FLAG_HIDE_FORTREE_CITY_KECLEON"
+    }
+  },
+  "map": "FortreeCity",
+  "mapId": "MAP_FORTREE_CITY",
+  "localId": 7,
+  "graphicsId": "OBJ_EVENT_GFX_KECLEON",
+  "x": 25,
+  "y": 8,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_INVISIBLE",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "FortreeCity_EventScript_Kecleon",
+  "flag": "FLAG_HIDE_FORTREE_CITY_KECLEON",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

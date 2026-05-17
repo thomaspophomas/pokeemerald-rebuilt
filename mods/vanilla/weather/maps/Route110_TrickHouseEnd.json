@@ -1,0 +1,16 @@
+{
+  "id": "Route110_TrickHouseEnd:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEnd/map.json",
+    "sha1": "4aae9a518aabdc7632ab655e56fe0c80b12f25b7"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/Route110_TrickHouseEnd/map.json"
+  },
+  "map": "Route110_TrickHouseEnd",
+  "mapId": "MAP_ROUTE110_TRICK_HOUSE_END",
+  "weather": "WEATHER_NONE"
+}

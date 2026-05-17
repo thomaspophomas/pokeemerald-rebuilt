@@ -1,0 +1,27 @@
+{
+  "id": "FieryPath:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FieryPath/map.json",
+    "sha1": "1bfd87b322ac6d82537c1476de8e9d1f862fc24c"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/FieryPath/map.json",
+    "raw": {
+      "x": 26,
+      "y": 36,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE112",
+      "dest_warp_id": "4"
+    }
+  },
+  "map": "FieryPath",
+  "mapId": "MAP_FIERY_PATH",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

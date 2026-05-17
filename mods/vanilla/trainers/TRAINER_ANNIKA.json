@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_ANNIKA",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_ANNIKA] =\n    {\n        .trainerClass = TRAINER_CLASS_POKEFAN,\n        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,\n        .trainerPic = TRAINER_PIC_POKEFAN_F,\n        .trainerName = _(\"ANNIKA\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = ITEM_CUSTOM_MOVES(sParty_Annika),\n    },"
+  },
+  "symbol": "TRAINER_ANNIKA",
+  "numericId": 502,
+  "trainerName": "ANNIKA",
+  "trainerClass": "TRAINER_CLASS_POKEFAN",
+  "trainerPic": "TRAINER_PIC_POKEFAN_F",
+  "encounterMusicGender": "F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_Annika",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

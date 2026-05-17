@@ -59,5 +59,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route112_CableCarStation/map.json",
+    "sha1": "5025865ea0b3a53d1ceb4d79e245c98fcd71aede"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route112_CableCarStation/map.json",
+    "mapName": "Route112_CableCarStation",
+    "scriptsSourcePath": "data/maps/Route112_CableCarStation/scripts.inc"
+  },
+  "mapGroup": 19,
+  "mapNum": 0,
+  "mapGroupSymbol": "gMapGroup_IndoorRoute112",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

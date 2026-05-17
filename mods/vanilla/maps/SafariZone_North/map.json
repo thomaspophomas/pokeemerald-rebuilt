@@ -150,5 +150,26 @@
   ],
   "warp_events": [],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_North/map.json",
+    "sha1": "eec9f9292a8f681530989070ea8a3e08eaaf662d"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SafariZone_North/map.json",
+    "mapName": "SafariZone_North",
+    "scriptsSourcePath": "data/maps/SafariZone_North/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 1,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

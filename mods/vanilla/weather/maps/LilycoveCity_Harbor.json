@@ -1,0 +1,16 @@
+{
+  "id": "LilycoveCity_Harbor:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_Harbor/map.json",
+    "sha1": "7bb6c3366d5032a1aa3a6b6279dbda154bbee405"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/LilycoveCity_Harbor/map.json"
+  },
+  "map": "LilycoveCity_Harbor",
+  "mapId": "MAP_LILYCOVE_CITY_HARBOR",
+  "weather": "WEATHER_NONE"
+}

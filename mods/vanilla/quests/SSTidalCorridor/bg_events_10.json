@@ -1,0 +1,30 @@
+{
+  "id": "SSTidalCorridor:bg_events:10",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalCorridor/map.json",
+    "sha1": "b330f8ff48c5ac9c3983f0b2fc6d7328918f83eb"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SSTidalCorridor/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 11,
+      "y": 9,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "SSTidalCorridor_EventScript_Cabin3Sign"
+    }
+  },
+  "map": "SSTidalCorridor",
+  "mapId": "MAP_SS_TIDAL_CORRIDOR",
+  "eventType": "bg_events",
+  "index": 10,
+  "script": "SSTidalCorridor_EventScript_Cabin3Sign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

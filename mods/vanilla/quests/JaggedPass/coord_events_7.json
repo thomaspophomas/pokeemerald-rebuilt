@@ -1,0 +1,31 @@
+{
+  "id": "JaggedPass:coord_events:7",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/JaggedPass/map.json",
+    "sha1": "94451c52cb35b0f7df10836f366d992c0e3f9080"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/JaggedPass/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 21,
+      "y": 20,
+      "elevation": 3,
+      "var": "VAR_JAGGED_PASS_STATE",
+      "var_value": "1",
+      "script": "JaggedPass_EventScript_OpenMagmaHideout"
+    }
+  },
+  "map": "JaggedPass",
+  "mapId": "MAP_JAGGED_PASS",
+  "eventType": "coord_events",
+  "index": 7,
+  "script": "JaggedPass_EventScript_OpenMagmaHideout",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

@@ -129,5 +129,26 @@
   ],
   "warp_events": [],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryBattleRoom/map.json",
+    "sha1": "cae471217c9dc95023c69d32ce83d473d66debb9"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryBattleRoom/map.json",
+    "mapName": "BattleFrontier_BattleFactoryBattleRoom",
+    "scriptsSourcePath": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 33,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,27 @@
+{
+  "id": "PetalburgWoods:warp_events:3",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/map.json",
+    "sha1": "67d0842207660bdef7b89d73a15eb7943073ee9a"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/PetalburgWoods/map.json",
+    "raw": {
+      "x": 17,
+      "y": 38,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE104",
+      "dest_warp_id": "5"
+    }
+  },
+  "map": "PetalburgWoods",
+  "mapId": "MAP_PETALBURG_WOODS",
+  "eventType": "warp_events",
+  "index": 3,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

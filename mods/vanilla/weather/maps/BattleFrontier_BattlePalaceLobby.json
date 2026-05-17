@@ -1,0 +1,16 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/map.json",
+    "sha1": "ce2d36fe134421f3bca2baf4e1c4f41ebf70c47b"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/map.json"
+  },
+  "map": "BattleFrontier_BattlePalaceLobby",
+  "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PALACE_LOBBY",
+  "weather": "WEATHER_NONE"
+}

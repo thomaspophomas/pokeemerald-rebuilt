@@ -1,0 +1,43 @@
+{
+  "id": "Route104:LOCALID_ROUTE104_BOAT",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104/map.json",
+    "sha1": "fbd365d3c17490dde96595712917fe8ceb5e1a7d"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route104/map.json",
+    "raw": {
+      "local_id": "LOCALID_ROUTE104_BOAT",
+      "graphics_id": "OBJ_EVENT_GFX_MR_BRINEYS_BOAT",
+      "x": 12,
+      "y": 54,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT"
+    }
+  },
+  "map": "Route104",
+  "mapId": "MAP_ROUTE104",
+  "localId": "LOCALID_ROUTE104_BOAT",
+  "graphicsId": "OBJ_EVENT_GFX_MR_BRINEYS_BOAT",
+  "x": 12,
+  "y": 54,
+  "elevation": 1,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

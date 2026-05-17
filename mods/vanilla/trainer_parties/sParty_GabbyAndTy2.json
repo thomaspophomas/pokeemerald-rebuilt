@@ -1,0 +1,17 @@
+{
+  "id": "sParty_GabbyAndTy2",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemDefaultMoves sParty_GabbyAndTy2[] = {\n    {\n    .iv = 100,\n    .lvl = 27,\n    .species = SPECIES_MAGNEMITE,\n    },\n    {\n    .iv = 100,\n    .lvl = 27,\n    .species = SPECIES_LOUDRED,\n    }\n};"
+  },
+  "symbol": "sParty_GabbyAndTy2",
+  "partyType": "TrainerMonNoItemDefaultMoves",
+  "pokemonCount": 2
+}

@@ -1,0 +1,27 @@
+{
+  "id": "LittlerootTown:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/map.json",
+    "sha1": "1e04563b693f88e4476d9f7b49a2194b5e027957"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LittlerootTown/map.json",
+    "raw": {
+      "x": 14,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "LittlerootTown",
+  "mapId": "MAP_LITTLEROOT_TOWN",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

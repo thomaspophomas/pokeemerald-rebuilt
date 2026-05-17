@@ -1,0 +1,45 @@
+{
+  "id": "VerdanturfTown_BattleTentLobby:2",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentLobby/map.json",
+    "sha1": "e8cd669d529f89eb47be5eeaa7d2d18f90d4dcc6"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentLobby/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_1",
+      "x": 0,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "VerdanturfTown_BattleTentLobby_EventScript_AttractGiver",
+      "flag": "0"
+    }
+  },
+  "map": "VerdanturfTown_BattleTentLobby",
+  "mapId": "MAP_VERDANTURF_TOWN_BATTLE_TENT_LOBBY",
+  "localId": 2,
+  "graphicsId": "OBJ_EVENT_GFX_GIRL_1",
+  "x": 0,
+  "y": 5,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "VerdanturfTown_BattleTentLobby_EventScript_AttractGiver",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "AncientTomb:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AncientTomb/map.json",
+    "sha1": "115981ccd581f3de9b23e46635de7032143af8b7"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/AncientTomb/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_REGISTEEL",
+      "x": 8,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AncientTomb_EventScript_Registeel",
+      "flag": "FLAG_HIDE_REGISTEEL"
+    }
+  },
+  "map": "AncientTomb",
+  "mapId": "MAP_ANCIENT_TOMB",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_REGISTEEL",
+  "x": 8,
+  "y": 7,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "AncientTomb_EventScript_Registeel",
+  "flag": "FLAG_HIDE_REGISTEEL",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

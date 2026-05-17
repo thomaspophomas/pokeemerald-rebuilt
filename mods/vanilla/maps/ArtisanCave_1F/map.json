@@ -45,5 +45,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ArtisanCave_1F/map.json",
+    "sha1": "1f41e36a11406470abf6f171be939c5df19c52d5"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/ArtisanCave_1F/map.json",
+    "mapName": "ArtisanCave_1F",
+    "scriptsSourcePath": "data/maps/ArtisanCave_1F/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 100,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

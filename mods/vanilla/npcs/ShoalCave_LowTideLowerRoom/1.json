@@ -1,0 +1,45 @@
+{
+  "id": "ShoalCave_LowTideLowerRoom:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ShoalCave_LowTideLowerRoom/map.json",
+    "sha1": "edca4605bca59c6a29fc1cab1413cc2df7ade6fd"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/ShoalCave_LowTideLowerRoom/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+      "x": 25,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_StrengthBoulder",
+      "flag": "FLAG_TEMP_11"
+    }
+  },
+  "map": "ShoalCave_LowTideLowerRoom",
+  "mapId": "MAP_SHOAL_CAVE_LOW_TIDE_LOWER_ROOM",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+  "x": 25,
+  "y": 3,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "EventScript_StrengthBoulder",
+  "flag": "FLAG_TEMP_11",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

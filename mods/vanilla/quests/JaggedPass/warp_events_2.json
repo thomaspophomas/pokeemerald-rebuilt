@@ -1,0 +1,27 @@
+{
+  "id": "JaggedPass:warp_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/JaggedPass/map.json",
+    "sha1": "94451c52cb35b0f7df10836f366d992c0e3f9080"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/JaggedPass/map.json",
+    "raw": {
+      "x": 13,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_MT_CHIMNEY",
+      "dest_warp_id": "2"
+    }
+  },
+  "map": "JaggedPass",
+  "mapId": "MAP_JAGGED_PASS",
+  "eventType": "warp_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

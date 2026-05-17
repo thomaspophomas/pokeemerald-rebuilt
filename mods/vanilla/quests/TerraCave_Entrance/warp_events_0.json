@@ -1,0 +1,27 @@
+{
+  "id": "TerraCave_Entrance:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TerraCave_Entrance/map.json",
+    "sha1": "fbc7aac123152861c2f01e1743a3b12b7da69ed8"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/TerraCave_Entrance/map.json",
+    "raw": {
+      "x": 8,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "WARP_ID_DYNAMIC"
+    }
+  },
+  "map": "TerraCave_Entrance",
+  "mapId": "MAP_TERRA_CAVE_ENTRANCE",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

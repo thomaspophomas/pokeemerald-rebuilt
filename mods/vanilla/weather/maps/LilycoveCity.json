@@ -1,0 +1,16 @@
+{
+  "id": "LilycoveCity:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/map.json",
+    "sha1": "ecd4d8c0f7b8c74fa70d53df6e4922fed0c006b6"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/LilycoveCity/map.json"
+  },
+  "map": "LilycoveCity",
+  "mapId": "MAP_LILYCOVE_CITY",
+  "weather": "WEATHER_SUNNY"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "Route108:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route108/map.json",
+    "sha1": "16be6eb309773730b50b68cb7db084bbfb16d8bf"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/Route108/map.json"
+  },
+  "map": "Route108",
+  "mapId": "MAP_ROUTE108",
+  "weather": "WEATHER_SUNNY"
+}

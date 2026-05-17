@@ -1,0 +1,27 @@
+{
+  "id": "CaveOfOrigin_1F:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/CaveOfOrigin_1F/map.json",
+    "sha1": "22bb7926b6ad8113f295da81ec5ff018e8fa05c0"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/CaveOfOrigin_1F/map.json",
+    "raw": {
+      "x": 11,
+      "y": 17,
+      "elevation": 3,
+      "dest_map": "MAP_CAVE_OF_ORIGIN_ENTRANCE",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "CaveOfOrigin_1F",
+  "mapId": "MAP_CAVE_OF_ORIGIN_1F",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

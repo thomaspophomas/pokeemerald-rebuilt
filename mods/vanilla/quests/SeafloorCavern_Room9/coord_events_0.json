@@ -1,0 +1,31 @@
+{
+  "id": "SeafloorCavern_Room9:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Room9/map.json",
+    "sha1": "1a777bb6757d1d172595eb81b91067512e210409"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SeafloorCavern_Room9/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 17,
+      "y": 42,
+      "elevation": 3,
+      "var": "VAR_SEAFLOOR_CAVERN_STATE",
+      "var_value": "0",
+      "script": "SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre"
+    }
+  },
+  "map": "SeafloorCavern_Room9",
+  "mapId": "MAP_SEAFLOOR_CAVERN_ROOM9",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": "SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

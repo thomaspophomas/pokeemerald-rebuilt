@@ -64,5 +64,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_SternsShipyard_2F/map.json",
+    "sha1": "59914c5699b90c3d6a33767776be918a8a6e7000"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SlateportCity_SternsShipyard_2F/map.json",
+    "mapName": "SlateportCity_SternsShipyard_2F",
+    "scriptsSourcePath": "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc"
+  },
+  "mapGroup": 9,
+  "mapNum": 1,
+  "mapGroupSymbol": "gMapGroup_IndoorSlateport",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

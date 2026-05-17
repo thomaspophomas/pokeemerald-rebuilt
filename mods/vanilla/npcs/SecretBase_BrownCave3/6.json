@@ -1,0 +1,42 @@
+{
+  "id": "SecretBase_BrownCave3:6",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SecretBase_BrownCave3/map.json",
+    "sha1": "80c59c8f66e8632c73914e67c2d252989391fa27"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SecretBase_BrownCave3/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_VAR_4",
+      "x": 0,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_DECORATION_5"
+    }
+  },
+  "map": "SecretBase_BrownCave3",
+  "mapId": "MAP_SECRET_BASE_BROWN_CAVE3",
+  "localId": 6,
+  "graphicsId": "OBJ_EVENT_GFX_VAR_4",
+  "x": 0,
+  "y": 4,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_DECORATION_5",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

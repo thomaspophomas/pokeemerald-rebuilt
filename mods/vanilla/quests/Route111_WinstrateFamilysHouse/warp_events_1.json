@@ -1,0 +1,27 @@
+{
+  "id": "Route111_WinstrateFamilysHouse:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111_WinstrateFamilysHouse/map.json",
+    "sha1": "3617d7ad218146b87b106f63851dbbfe7bd64681"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route111_WinstrateFamilysHouse/map.json",
+    "raw": {
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE111",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Route111_WinstrateFamilysHouse",
+  "mapId": "MAP_ROUTE111_WINSTRATE_FAMILYS_HOUSE",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

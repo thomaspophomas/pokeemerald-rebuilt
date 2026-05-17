@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Quincy",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_Quincy[] = {\n    {\n    .iv = 100,\n    .lvl = 43,\n    .species = SPECIES_SLAKING,\n    .moves = {MOVE_ATTRACT, MOVE_ICE_BEAM, MOVE_THUNDERBOLT, MOVE_FLAMETHROWER}\n    },\n    {\n    .iv = 100,\n    .lvl = 43,\n    .species = SPECIES_DUSCLOPS,\n    .moves = {MOVE_SKILL_SWAP, MOVE_PROTECT, MOVE_WILL_O_WISP, MOVE_TOXIC}\n    }\n};"
+  },
+  "symbol": "sParty_Quincy",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 2
+}

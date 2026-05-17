@@ -24,5 +24,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MarineCave_Entrance/map.json",
+    "sha1": "b6715487e58f33a9ed5511e5996b2407378a9a20"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/MarineCave_Entrance/map.json",
+    "mapName": "MarineCave_Entrance",
+    "scriptsSourcePath": "data/maps/MarineCave_Entrance/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 102,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

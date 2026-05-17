@@ -1,14 +1,18 @@
 {
+  "id": "engine:gen3",
   "domain": "engine_rulesets",
   "schemaVersion": 1,
-  "engineRulesets": [
-    {
-      "id": "engine:gen3",
-      "name": "Generation III",
-      "version": 1,
-      "saveCompatible": true,
-      "captureHook": null,
-      "battleWeatherHook": null
-    }
-  ]
+  "source": {
+    "path": "src/mod/engine.c",
+    "sha1": "3901b8ba1af8f30f1a210584a3dc98c505acd8cd"
+  },
+  "legacy": {
+    "kind": "default_engine_ruleset",
+    "sourcePath": "src/mod/engine.c"
+  },
+  "name": "Generation III",
+  "version": 1,
+  "saveCompatible": true,
+  "captureHook": null,
+  "battleWeatherHook": null
 }

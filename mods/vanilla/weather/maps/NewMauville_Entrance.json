@@ -1,0 +1,16 @@
+{
+  "id": "NewMauville_Entrance:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NewMauville_Entrance/map.json",
+    "sha1": "bcc1eb30c3ad8d2f4f156e4f004a27870411eb7e"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/NewMauville_Entrance/map.json"
+  },
+  "map": "NewMauville_Entrance",
+  "mapId": "MAP_NEW_MAUVILLE_ENTRANCE",
+  "weather": "WEATHER_NONE"
+}

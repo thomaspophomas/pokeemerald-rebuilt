@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Norman2",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemCustomMoves sParty_Norman2[] = {\n    {\n    .iv = 255,\n    .lvl = 42,\n    .species = SPECIES_CHANSEY,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_LIGHT_SCREEN, MOVE_SING, MOVE_SKILL_SWAP, MOVE_FOCUS_PUNCH}\n    },\n    {\n    .iv = 255,\n    .lvl = 42,\n    .species = SPECIES_SLAKING,\n    .heldItem = ITEM_SITRUS_BERRY,\n    .moves = {MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DOUBLE_EDGE, MOVE_FIRE_BLAST}\n    },\n    {\n    .iv = 255,\n    .lvl = 43,\n    .species = SPECIES_SPINDA,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_TEETER_DANCE, MOVE_SKILL_SWAP, MOVE_FACADE, MOVE_HYPNOSIS}\n    },\n    {\n    .iv = 255,\n    .lvl = 45,\n    .species = SPECIES_SLAKING,\n    .heldItem = ITEM_SITRUS_BERRY,\n    .moves = {MOVE_HYPER_BEAM, MOVE_FLAMETHROWER, MOVE_THUNDERBOLT, MOVE_SHADOW_BALL}\n    }\n};"
+  },
+  "symbol": "sParty_Norman2",
+  "partyType": "TrainerMonItemCustomMoves",
+  "pokemonCount": 4
+}

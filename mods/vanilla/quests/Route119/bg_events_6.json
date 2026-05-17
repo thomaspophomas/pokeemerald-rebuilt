@@ -1,0 +1,27 @@
+{
+  "id": "Route119:bg_events:6",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119/map.json",
+    "sha1": "1c29f1dc3bee58d2813df5307a7b986c95776bd3"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route119/map.json",
+    "raw": {
+      "type": "secret_base",
+      "x": 34,
+      "y": 24,
+      "elevation": 3,
+      "secret_base_id": "SECRET_BASE_SHRUB3_1"
+    }
+  },
+  "map": "Route119",
+  "mapId": "MAP_ROUTE119",
+  "eventType": "bg_events",
+  "index": 6,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,46 @@
+{
+  "id": "DesertUnderpass:LOCALID_UNDERPASS_FOSSIL",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DesertUnderpass/map.json",
+    "sha1": "46068f68175d5348066516bc036dfbc204c4691c"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/DesertUnderpass/map.json",
+    "raw": {
+      "local_id": "LOCALID_UNDERPASS_FOSSIL",
+      "graphics_id": "OBJ_EVENT_GFX_FOSSIL",
+      "x": 132,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "DesertUnderpass_EventScript_Fossil",
+      "flag": "FLAG_HIDE_DESERT_UNDERPASS_FOSSIL"
+    }
+  },
+  "map": "DesertUnderpass",
+  "mapId": "MAP_DESERT_UNDERPASS",
+  "localId": "LOCALID_UNDERPASS_FOSSIL",
+  "graphicsId": "OBJ_EVENT_GFX_FOSSIL",
+  "x": 132,
+  "y": 10,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "DesertUnderpass_EventScript_Fossil",
+  "flag": "FLAG_HIDE_DESERT_UNDERPASS_FOSSIL",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

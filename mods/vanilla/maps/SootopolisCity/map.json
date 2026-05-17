@@ -409,5 +409,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "SootopolisCity_EventScript_CitySign"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/map.json",
+    "sha1": "e651f28449773dc24217811c1afadda1854036d9"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SootopolisCity/map.json",
+    "mapName": "SootopolisCity",
+    "scriptsSourcePath": "data/maps/SootopolisCity/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 7,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

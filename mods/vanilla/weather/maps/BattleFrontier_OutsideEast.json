@@ -1,0 +1,16 @@
+{
+  "id": "BattleFrontier_OutsideEast:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideEast/map.json",
+    "sha1": "92a1844f4319344dd5dc49a1c7f996c248d7043c"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/BattleFrontier_OutsideEast/map.json"
+  },
+  "map": "BattleFrontier_OutsideEast",
+  "mapId": "MAP_BATTLE_FRONTIER_OUTSIDE_EAST",
+  "weather": "WEATHER_NONE"
+}

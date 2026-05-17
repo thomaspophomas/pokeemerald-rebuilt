@@ -1,0 +1,45 @@
+{
+  "id": "RustboroCity_Gym:3",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Gym/map.json",
+    "sha1": "3832f5ae168f3035dc757eacc22ca427c5b16726"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/RustboroCity_Gym/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "x": 3,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "RustboroCity_Gym_EventScript_Tommy",
+      "flag": "0"
+    }
+  },
+  "map": "RustboroCity_Gym",
+  "mapId": "MAP_RUSTBORO_CITY_GYM",
+  "localId": 3,
+  "graphicsId": "OBJ_EVENT_GFX_YOUNGSTER",
+  "x": 3,
+  "y": 9,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "3",
+  "script": "RustboroCity_Gym_EventScript_Tommy",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

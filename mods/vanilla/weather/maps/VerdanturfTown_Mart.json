@@ -1,0 +1,16 @@
+{
+  "id": "VerdanturfTown_Mart:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_Mart/map.json",
+    "sha1": "a624c051ea34a52ff54eb443838d557dc95f7cfe"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/VerdanturfTown_Mart/map.json"
+  },
+  "map": "VerdanturfTown_Mart",
+  "mapId": "MAP_VERDANTURF_TOWN_MART",
+  "weather": "WEATHER_NONE"
+}

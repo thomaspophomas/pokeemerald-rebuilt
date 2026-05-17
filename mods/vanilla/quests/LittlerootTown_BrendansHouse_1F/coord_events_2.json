@@ -1,0 +1,31 @@
+{
+  "id": "LittlerootTown_BrendansHouse_1F:coord_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_1F/map.json",
+    "sha1": "f7be2e429bafe6de2465040402d53ed22d2e30b1"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 8,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_LITTLEROOT_RIVAL_STATE",
+      "var_value": "2",
+      "script": "LittlerootTown_BrendansHouse_1F_EventScript_MeetRival1"
+    }
+  },
+  "map": "LittlerootTown_BrendansHouse_1F",
+  "mapId": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F",
+  "eventType": "coord_events",
+  "index": 2,
+  "script": "LittlerootTown_BrendansHouse_1F_EventScript_MeetRival1",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

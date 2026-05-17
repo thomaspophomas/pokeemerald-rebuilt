@@ -1,0 +1,27 @@
+{
+  "id": "BirthIsland_Harbor:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BirthIsland_Harbor/map.json",
+    "sha1": "0f2790e8c2b9abe448922a485478822cb8d4b58a"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BirthIsland_Harbor/map.json",
+    "raw": {
+      "x": 8,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_BIRTH_ISLAND_EXTERIOR",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "BirthIsland_Harbor",
+  "mapId": "MAP_BIRTH_ISLAND_HARBOR",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

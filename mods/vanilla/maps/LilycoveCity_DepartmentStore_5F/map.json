@@ -131,5 +131,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_5F/map.json",
+    "sha1": "0b6789c24f7cde9ba049aa2b9849680226525457"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_5F/map.json",
+    "mapName": "LilycoveCity_DepartmentStore_5F",
+    "scriptsSourcePath": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc"
+  },
+  "mapGroup": 13,
+  "mapNum": 20,
+  "mapGroupSymbol": "gMapGroup_IndoorLilycove",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

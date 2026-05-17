@@ -1,0 +1,30 @@
+{
+  "id": "LilycoveCity_ContestHall:bg_events:3",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestHall/map.json",
+    "sha1": "b19060630b6a0d5386b95012b8c7c60337fe2d2a"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LilycoveCity_ContestHall/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 15,
+      "y": 28,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LilycoveCity_ContestHall_EventScript_SmartStageSign"
+    }
+  },
+  "map": "LilycoveCity_ContestHall",
+  "mapId": "MAP_LILYCOVE_CITY_CONTEST_HALL",
+  "eventType": "bg_events",
+  "index": 3,
+  "script": "LilycoveCity_ContestHall_EventScript_SmartStageSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

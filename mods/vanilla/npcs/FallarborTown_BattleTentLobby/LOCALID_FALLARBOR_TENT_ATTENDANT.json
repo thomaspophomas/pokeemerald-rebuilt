@@ -1,0 +1,46 @@
+{
+  "id": "FallarborTown_BattleTentLobby:LOCALID_FALLARBOR_TENT_ATTENDANT",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentLobby/map.json",
+    "sha1": "8ae866adf2cda5d05a2b2aa31bed890f00e650cd"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/FallarborTown_BattleTentLobby/map.json",
+    "raw": {
+      "local_id": "LOCALID_FALLARBOR_TENT_ATTENDANT",
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "x": 6,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FallarborTown_BattleTentLobby_EventScript_Attendant",
+      "flag": "0"
+    }
+  },
+  "map": "FallarborTown_BattleTentLobby",
+  "mapId": "MAP_FALLARBOR_TOWN_BATTLE_TENT_LOBBY",
+  "localId": "LOCALID_FALLARBOR_TENT_ATTENDANT",
+  "graphicsId": "OBJ_EVENT_GFX_BLACK_BELT",
+  "x": 6,
+  "y": 5,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "FallarborTown_BattleTentLobby_EventScript_Attendant",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

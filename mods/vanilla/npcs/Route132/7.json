@@ -1,0 +1,45 @@
+{
+  "id": "Route132:7",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route132/map.json",
+    "sha1": "64064a4a3762ea092525be5129f1beb44d17fdf4"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route132/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
+      "x": 33,
+      "y": 31,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_UP_AND_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "Route132_EventScript_Darcy",
+      "flag": "0"
+    }
+  },
+  "map": "Route132",
+  "mapId": "MAP_ROUTE132",
+  "localId": 7,
+  "graphicsId": "OBJ_EVENT_GFX_WOMAN_5",
+  "x": 33,
+  "y": 31,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_WALK_UP_AND_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 4,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "4",
+  "script": "Route132_EventScript_Darcy",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

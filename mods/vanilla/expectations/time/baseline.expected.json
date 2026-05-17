@@ -1,15 +1,40 @@
 {
   "domain": "time",
   "schemaVersion": 1,
-  "fileCount": 1,
-  "jsonFileCount": 1,
-  "bytes": 509,
-  "sha1": "abbea45fc43fa909626052e5e0c979c785d995ed",
+  "fileCount": 6,
+  "jsonFileCount": 6,
+  "bytes": 2474,
+  "sha1": "9c763351095665b521bf1a6112e5bb3d5e28d999",
   "files": [
     {
-      "path": "mods/vanilla/time/segments.json",
-      "sha1": "6aec1788da61f07df998093c7a99eb19917d1226",
-      "bytes": 509
+      "path": "mods/vanilla/time/_source_manifest.json",
+      "sha1": "58dcbaf9bda65ae09c1ff3a9eafc3c346151c521",
+      "bytes": 424
+    },
+    {
+      "path": "mods/vanilla/time/day.json",
+      "sha1": "ba505281fab7f71b65bcf1919e781d3fe04d46e8",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/time/evening.json",
+      "sha1": "d6ef392ef135363c7168e477af8ecb3ef7c1b6f5",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/time/index.json",
+      "sha1": "0d771b78ce6401f764e877258becc5599d959639",
+      "bytes": 762
+    },
+    {
+      "path": "mods/vanilla/time/morning.json",
+      "sha1": "150e037e1f6efdd9b81623346dbcbe39773fd18e",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/time/night.json",
+      "sha1": "fac33270e6b18dda7cd073ff6dd143e86427bcbe",
+      "bytes": 321
     }
   ],
   "counts": {

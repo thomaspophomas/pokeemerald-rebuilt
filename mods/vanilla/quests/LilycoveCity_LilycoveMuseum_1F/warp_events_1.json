@@ -1,0 +1,27 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_1F:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/map.json",
+    "sha1": "61bc103a561828eef855450f818c2812737d695f"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_1F/map.json",
+    "raw": {
+      "x": 10,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_LILYCOVE_CITY",
+      "dest_warp_id": "13"
+    }
+  },
+  "map": "LilycoveCity_LilycoveMuseum_1F",
+  "mapId": "MAP_LILYCOVE_CITY_LILYCOVE_MUSEUM_1F",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "Route116:warp_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116/map.json",
+    "sha1": "4917a04a095314d28f76d7b4807e78bce1251f9a"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route116/map.json",
+    "raw": {
+      "x": 65,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_RUSTURF_TUNNEL",
+      "dest_warp_id": "2"
+    }
+  },
+  "map": "Route116",
+  "mapId": "MAP_ROUTE116",
+  "eventType": "warp_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

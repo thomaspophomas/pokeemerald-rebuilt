@@ -1,0 +1,27 @@
+{
+  "id": "Route106:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route106/map.json",
+    "sha1": "abf7343ff3b946d694c71cf3c2f2409b1e153c5f"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route106/map.json",
+    "raw": {
+      "x": 48,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_GRANITE_CAVE_1F",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Route106",
+  "mapId": "MAP_ROUTE106",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "Route114_LanettesHouse:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_LanettesHouse/map.json",
+    "sha1": "a32f9af8e9fee2baa4e68ea69dff9c176c0c7c89"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/Route114_LanettesHouse/map.json"
+  },
+  "map": "Route114_LanettesHouse",
+  "mapId": "MAP_ROUTE114_LANETTES_HOUSE",
+  "weather": "WEATHER_NONE"
+}

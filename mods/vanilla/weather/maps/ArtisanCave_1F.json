@@ -1,0 +1,16 @@
+{
+  "id": "ArtisanCave_1F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ArtisanCave_1F/map.json",
+    "sha1": "1f41e36a11406470abf6f171be939c5df19c52d5"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/ArtisanCave_1F/map.json"
+  },
+  "map": "ArtisanCave_1F",
+  "mapId": "MAP_ARTISAN_CAVE_1F",
+  "weather": "WEATHER_NONE"
+}

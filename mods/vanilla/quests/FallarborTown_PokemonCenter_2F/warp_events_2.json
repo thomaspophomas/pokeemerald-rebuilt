@@ -1,0 +1,27 @@
+{
+  "id": "FallarborTown_PokemonCenter_2F:warp_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_PokemonCenter_2F/map.json",
+    "sha1": "244bfeb47116d0e5f9f80d4ed218fa0322b2a75e"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/FallarborTown_PokemonCenter_2F/map.json",
+    "raw": {
+      "x": 9,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_TRADE_CENTER",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "FallarborTown_PokemonCenter_2F",
+  "mapId": "MAP_FALLARBOR_TOWN_POKEMON_CENTER_2F",
+  "eventType": "warp_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

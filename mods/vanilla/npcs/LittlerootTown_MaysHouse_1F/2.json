@@ -1,0 +1,45 @@
+{
+  "id": "LittlerootTown_MaysHouse_1F:2",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_1F/map.json",
+    "sha1": "47547f9e3b236beb339191c794628d09c7ddee7d"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_1F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_VIGOROTH_FACING_AWAY",
+      "x": 6,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PlayersHouse_1F_EventScript_Vigoroth1",
+      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_1"
+    }
+  },
+  "map": "LittlerootTown_MaysHouse_1F",
+  "mapId": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F",
+  "localId": 2,
+  "graphicsId": "OBJ_EVENT_GFX_VIGOROTH_FACING_AWAY",
+  "x": 6,
+  "y": 5,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "PlayersHouse_1F_EventScript_Vigoroth1",
+  "flag": "FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_1",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

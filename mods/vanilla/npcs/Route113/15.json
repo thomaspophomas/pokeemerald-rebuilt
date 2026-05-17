@@ -1,0 +1,45 @@
+{
+  "id": "Route113:15",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113/map.json",
+    "sha1": "4d5b412e7056cb5dda1085ac70fb8a367cb400c1"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route113/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
+      "x": 7,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 3,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "6",
+      "script": "Route113_EventScript_Sophie",
+      "flag": "0"
+    }
+  },
+  "map": "Route113",
+  "mapId": "MAP_ROUTE113",
+  "localId": 15,
+  "graphicsId": "OBJ_EVENT_GFX_PICNICKER",
+  "x": 7,
+  "y": 6,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
+  "movementRangeX": 1,
+  "movementRangeY": 3,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "6",
+  "script": "Route113_EventScript_Sophie",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

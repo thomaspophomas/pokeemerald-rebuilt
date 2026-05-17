@@ -1,0 +1,27 @@
+{
+  "id": "MarineCave_End:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MarineCave_End/map.json",
+    "sha1": "c3469e14ff356e2c3ed61336718e46bdd1bfb427"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MarineCave_End/map.json",
+    "raw": {
+      "x": 20,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_MARINE_CAVE_ENTRANCE",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "MarineCave_End",
+  "mapId": "MAP_MARINE_CAVE_END",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

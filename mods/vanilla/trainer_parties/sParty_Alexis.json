@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Alexis",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemDefaultMoves sParty_Alexis[] = {\n    {\n    .iv = 0,\n    .lvl = 41,\n    .species = SPECIES_KIRLIA,\n    },\n    {\n    .iv = 0,\n    .lvl = 41,\n    .species = SPECIES_XATU,\n    }\n};"
+  },
+  "symbol": "sParty_Alexis",
+  "partyType": "TrainerMonNoItemDefaultMoves",
+  "pokemonCount": 2
+}

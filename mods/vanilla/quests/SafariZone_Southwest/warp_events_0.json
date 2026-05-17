@@ -1,0 +1,27 @@
+{
+  "id": "SafariZone_Southwest:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_Southwest/map.json",
+    "sha1": "0dc01d17aa691ffcb671d595b86c03379047fe10"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SafariZone_Southwest/map.json",
+    "raw": {
+      "x": 29,
+      "y": 7,
+      "elevation": 3,
+      "dest_map": "MAP_SAFARI_ZONE_REST_HOUSE",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "SafariZone_Southwest",
+  "mapId": "MAP_SAFARI_ZONE_SOUTHWEST",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,35 @@
+{
+  "domain": "time",
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "day",
+      "path": "day.json",
+      "sourcePath": "src/mod/time.c",
+      "legacyKind": "default_time_segment",
+      "symbol": "DAY"
+    },
+    {
+      "id": "evening",
+      "path": "evening.json",
+      "sourcePath": "src/mod/time.c",
+      "legacyKind": "default_time_segment",
+      "symbol": "EVENING"
+    },
+    {
+      "id": "morning",
+      "path": "morning.json",
+      "sourcePath": "src/mod/time.c",
+      "legacyKind": "default_time_segment",
+      "symbol": "MORNING"
+    },
+    {
+      "id": "night",
+      "path": "night.json",
+      "sourcePath": "src/mod/time.c",
+      "legacyKind": "default_time_segment",
+      "symbol": "NIGHT"
+    }
+  ],
+  "entityCount": 4
+}

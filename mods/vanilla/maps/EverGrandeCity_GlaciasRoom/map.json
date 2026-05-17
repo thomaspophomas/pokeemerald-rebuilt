@@ -45,5 +45,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_GlaciasRoom/map.json",
+    "sha1": "bcc0145ae2d18c0e7a4faa64d18e7bd5e1b8e50d"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/EverGrandeCity_GlaciasRoom/map.json",
+    "mapName": "EverGrandeCity_GlaciasRoom",
+    "scriptsSourcePath": "data/maps/EverGrandeCity_GlaciasRoom/scripts.inc"
+  },
+  "mapGroup": 16,
+  "mapNum": 2,
+  "mapGroupSymbol": "gMapGroup_IndoorEverGrande",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

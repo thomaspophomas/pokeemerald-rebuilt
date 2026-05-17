@@ -1,0 +1,43 @@
+{
+  "id": "NavelRock_Top:LOCALID_NAVEL_ROCK_HO_OH",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NavelRock_Top/map.json",
+    "sha1": "d94116c665620d434b4b8a97ce620b4b11cbabd5"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/NavelRock_Top/map.json",
+    "raw": {
+      "local_id": "LOCALID_NAVEL_ROCK_HO_OH",
+      "graphics_id": "OBJ_EVENT_GFX_HOOH",
+      "x": 12,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_HO_OH"
+    }
+  },
+  "map": "NavelRock_Top",
+  "mapId": "MAP_NAVEL_ROCK_TOP",
+  "localId": "LOCALID_NAVEL_ROCK_HO_OH",
+  "graphicsId": "OBJ_EVENT_GFX_HOOH",
+  "x": 12,
+  "y": 4,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_HIDE_HO_OH",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

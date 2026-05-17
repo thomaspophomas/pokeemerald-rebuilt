@@ -245,5 +245,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "SSTidalCorridor_EventScript_Cabin4Sign"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalCorridor/map.json",
+    "sha1": "b330f8ff48c5ac9c3983f0b2fc6d7328918f83eb"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SSTidalCorridor/map.json",
+    "mapName": "SSTidalCorridor",
+    "scriptsSourcePath": "data/maps/SSTidalCorridor/scripts.inc"
+  },
+  "mapGroup": 25,
+  "mapNum": 41,
+  "mapGroupSymbol": "gMapGroup_IndoorDynamic",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

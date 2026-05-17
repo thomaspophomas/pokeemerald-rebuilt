@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Jessica3",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_Jessica3[] = {\n    {\n    .iv = 20,\n    .lvl = 38,\n    .species = SPECIES_KECLEON,\n    .moves = {MOVE_BIND, MOVE_LICK, MOVE_FURY_SWIPES, MOVE_FAINT_ATTACK}\n    },\n    {\n    .iv = 20,\n    .lvl = 38,\n    .species = SPECIES_SEVIPER,\n    .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH}\n    }\n};"
+  },
+  "symbol": "sParty_Jessica3",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 2
+}

@@ -1,0 +1,17 @@
+{
+  "id": "sParty_MelAndPaul",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_MelAndPaul[] = {\n    {\n    .iv = 0,\n    .lvl = 27,\n    .species = SPECIES_DUSTOX,\n    .moves = {MOVE_GUST, MOVE_PSYBEAM, MOVE_TOXIC, MOVE_PROTECT}\n    },\n    {\n    .iv = 0,\n    .lvl = 27,\n    .species = SPECIES_BEAUTIFLY,\n    .moves = {MOVE_GUST, MOVE_MEGA_DRAIN, MOVE_ATTRACT, MOVE_STUN_SPORE}\n    }\n};"
+  },
+  "symbol": "sParty_MelAndPaul",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 2
+}

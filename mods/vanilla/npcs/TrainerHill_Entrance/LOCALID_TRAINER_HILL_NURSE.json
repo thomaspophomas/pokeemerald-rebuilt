@@ -1,0 +1,46 @@
+{
+  "id": "TrainerHill_Entrance:LOCALID_TRAINER_HILL_NURSE",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Entrance/map.json",
+    "sha1": "02b66cc3db7b5407fe2cc48cfdfda6fc00afaf5d"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/TrainerHill_Entrance/map.json",
+    "raw": {
+      "local_id": "LOCALID_TRAINER_HILL_NURSE",
+      "graphics_id": "OBJ_EVENT_GFX_NURSE",
+      "x": 4,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "TrainerHill_Entrance_EventScript_Nurse",
+      "flag": "0"
+    }
+  },
+  "map": "TrainerHill_Entrance",
+  "mapId": "MAP_TRAINER_HILL_ENTRANCE",
+  "localId": "LOCALID_TRAINER_HILL_NURSE",
+  "graphicsId": "OBJ_EVENT_GFX_NURSE",
+  "x": 4,
+  "y": 9,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "TrainerHill_Entrance_EventScript_Nurse",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

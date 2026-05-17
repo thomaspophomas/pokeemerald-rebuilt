@@ -1,0 +1,27 @@
+{
+  "id": "SSTidalRooms:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalRooms/map.json",
+    "sha1": "3bc45a291c2198a08cf2b16f52e85818f574d17d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SSTidalRooms/map.json",
+    "raw": {
+      "x": 4,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_SS_TIDAL_CORRIDOR",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "SSTidalRooms",
+  "mapId": "MAP_SS_TIDAL_ROOMS",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

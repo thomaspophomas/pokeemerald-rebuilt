@@ -1,0 +1,30 @@
+{
+  "id": "DesertRuins:bg_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DesertRuins/map.json",
+    "sha1": "10f7e73dc32fffb52b167f708e71b2e152847e81"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/DesertRuins/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 8,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "DesertRuins_EventScript_CaveEntranceMiddle"
+    }
+  },
+  "map": "DesertRuins",
+  "mapId": "MAP_DESERT_RUINS",
+  "eventType": "bg_events",
+  "index": 0,
+  "script": "DesertRuins_EventScript_CaveEntranceMiddle",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

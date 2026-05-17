@@ -24,5 +24,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_MarineCave/map.json",
+    "sha1": "0846791b4e9ac3f3a7a829d045b1f0470d8b6639"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Underwater_MarineCave/map.json",
+    "mapName": "Underwater_MarineCave",
+    "scriptsSourcePath": "data/maps/Underwater_MarineCave/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 101,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

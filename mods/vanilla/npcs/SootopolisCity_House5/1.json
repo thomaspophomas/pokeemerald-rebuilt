@@ -1,0 +1,45 @@
+{
+  "id": "SootopolisCity_House5:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_House5/map.json",
+    "sha1": "6830dd41f3847a360a781efefa7c1c360832054c"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SootopolisCity_House5/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "x": 3,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SootopolisCity_House5_EventScript_Maniac",
+      "flag": "0"
+    }
+  },
+  "map": "SootopolisCity_House5",
+  "mapId": "MAP_SOOTOPOLIS_CITY_HOUSE5",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_MANIAC",
+  "x": 3,
+  "y": 3,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "SootopolisCity_House5_EventScript_Maniac",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

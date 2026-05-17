@@ -101,5 +101,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_Harbor/map.json",
+    "sha1": "7bb6c3366d5032a1aa3a6b6279dbda154bbee405"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/LilycoveCity_Harbor/map.json",
+    "mapName": "LilycoveCity_Harbor",
+    "scriptsSourcePath": "data/maps/LilycoveCity_Harbor/scripts.inc"
+  },
+  "mapGroup": 13,
+  "mapNum": 10,
+  "mapGroupSymbol": "gMapGroup_IndoorLilycove",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,45 @@
+{
+  "id": "LittlerootTown_BrendansHouse_2F:15",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_2F/map.json",
+    "sha1": "0457e9e79146ccd0dbf058d0095aedecb5acc4ff"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_2F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 3,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LittlerootTown_BrendansHouse_2F_EventScript_RivalsPokeBall",
+      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL"
+    }
+  },
+  "map": "LittlerootTown_BrendansHouse_2F",
+  "mapId": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F",
+  "localId": 15,
+  "graphicsId": "OBJ_EVENT_GFX_ITEM_BALL",
+  "x": 3,
+  "y": 4,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "LittlerootTown_BrendansHouse_2F_EventScript_RivalsPokeBall",
+  "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

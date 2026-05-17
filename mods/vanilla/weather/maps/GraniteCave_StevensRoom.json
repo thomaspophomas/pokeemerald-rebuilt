@@ -1,0 +1,16 @@
+{
+  "id": "GraniteCave_StevensRoom:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/GraniteCave_StevensRoom/map.json",
+    "sha1": "8caf477c60755017f7b363c9c45ba9ec9df1ba0c"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/GraniteCave_StevensRoom/map.json"
+  },
+  "map": "GraniteCave_StevensRoom",
+  "mapId": "MAP_GRANITE_CAVE_STEVENS_ROOM",
+  "weather": "WEATHER_NONE"
+}

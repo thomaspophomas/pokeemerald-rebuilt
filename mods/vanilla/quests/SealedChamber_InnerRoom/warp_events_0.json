@@ -1,0 +1,27 @@
+{
+  "id": "SealedChamber_InnerRoom:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SealedChamber_InnerRoom/map.json",
+    "sha1": "2f8b00e65058122705de415b0b3a87f6900f2302"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SealedChamber_InnerRoom/map.json",
+    "raw": {
+      "x": 10,
+      "y": 19,
+      "elevation": 3,
+      "dest_map": "MAP_SEALED_CHAMBER_OUTER_ROOM",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "SealedChamber_InnerRoom",
+  "mapId": "MAP_SEALED_CHAMBER_INNER_ROOM",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1123,5 +1123,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route111_EventScript_TrainerHillSign"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/map.json",
+    "sha1": "3161c43b45be9e3c9263e97cf27cb9c95a592a3a"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route111/map.json",
+    "mapName": "Route111",
+    "scriptsSourcePath": "data/maps/Route111/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 26,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

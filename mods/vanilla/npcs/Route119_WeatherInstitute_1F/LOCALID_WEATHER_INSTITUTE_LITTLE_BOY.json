@@ -1,0 +1,46 @@
+{
+  "id": "Route119_WeatherInstitute_1F:LOCALID_WEATHER_INSTITUTE_LITTLE_BOY",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_1F/map.json",
+    "sha1": "85fdcb3adca1f8a298d81a58ee7017b2e9753024"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_1F/map.json",
+    "raw": {
+      "local_id": "LOCALID_WEATHER_INSTITUTE_LITTLE_BOY",
+      "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
+      "x": 14,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route119_WeatherInstitute_1F_EventScript_LittleBoy",
+      "flag": "0"
+    }
+  },
+  "map": "Route119_WeatherInstitute_1F",
+  "mapId": "MAP_ROUTE119_WEATHER_INSTITUTE_1F",
+  "localId": "LOCALID_WEATHER_INSTITUTE_LITTLE_BOY",
+  "graphicsId": "OBJ_EVENT_GFX_NINJA_BOY",
+  "x": 14,
+  "y": 11,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Route119_WeatherInstitute_1F_EventScript_LittleBoy",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

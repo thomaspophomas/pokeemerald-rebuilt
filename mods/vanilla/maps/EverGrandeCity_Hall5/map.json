@@ -45,5 +45,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_Hall5/map.json",
+    "sha1": "914b037177d807ac860c85e81f3d87bcdd57ccfc"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/EverGrandeCity_Hall5/map.json",
+    "mapName": "EverGrandeCity_Hall5",
+    "scriptsSourcePath": "data/maps/EverGrandeCity_Hall5/scripts.inc"
+  },
+  "mapGroup": 16,
+  "mapNum": 9,
+  "mapGroupSymbol": "gMapGroup_IndoorEverGrande",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

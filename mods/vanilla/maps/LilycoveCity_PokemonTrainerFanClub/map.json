@@ -157,5 +157,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/map.json",
+    "sha1": "313952f28ca6d31fe5282c6632fdf7ab141b0eca"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/map.json",
+    "mapName": "LilycoveCity_PokemonTrainerFanClub",
+    "scriptsSourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc"
+  },
+  "mapGroup": 13,
+  "mapNum": 9,
+  "mapGroupSymbol": "gMapGroup_IndoorLilycove",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

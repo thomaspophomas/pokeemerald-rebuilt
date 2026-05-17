@@ -1,0 +1,45 @@
+{
+  "id": "BattlePyramidSquare03:5",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattlePyramidSquare03/map.json",
+    "sha1": "8b97642ebb3b8e6f8d6bfde6dbbfefb470b0f5b0"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/BattlePyramidSquare03/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 4,
+      "y": 2,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BattlePyramid_FindItemBall",
+      "flag": "0"
+    }
+  },
+  "map": "BattlePyramidSquare03",
+  "mapId": "MAP_BATTLE_PYRAMID_SQUARE03",
+  "localId": 5,
+  "graphicsId": "OBJ_EVENT_GFX_ITEM_BALL",
+  "x": 4,
+  "y": 2,
+  "elevation": 4,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "BattlePyramid_FindItemBall",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Winona4",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemCustomMoves sParty_Winona4[] = {\n    {\n    .iv = 255,\n    .lvl = 48,\n    .species = SPECIES_NOCTOWL,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_HYPNOSIS, MOVE_PSYCHIC, MOVE_REFLECT, MOVE_DREAM_EATER}\n    },\n    {\n    .iv = 255,\n    .lvl = 49,\n    .species = SPECIES_TROPIUS,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_SUNNY_DAY, MOVE_AERIAL_ACE, MOVE_SOLAR_BEAM, MOVE_EARTHQUAKE}\n    },\n    {\n    .iv = 255,\n    .lvl = 50,\n    .species = SPECIES_DRAGONAIR,\n    .heldItem = ITEM_SITRUS_BERRY,\n    .moves = {MOVE_THUNDER_WAVE, MOVE_THUNDERBOLT, MOVE_PROTECT, MOVE_ICE_BEAM}\n    },\n    {\n    .iv = 255,\n    .lvl = 51,\n    .species = SPECIES_PELIPPER,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_SURF, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_AERIAL_ACE}\n    },\n    {\n    .iv = 255,\n    .lvl = 53,\n    .species = SPECIES_SKARMORY,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_WHIRLWIND, MOVE_SPIKES, MOVE_STEEL_WING, MOVE_AERIAL_ACE}\n    },\n    {\n    .iv = 255,\n    .lvl = 55,\n    .species = SPECIES_ALTARIA,\n    .heldItem = ITEM_CHESTO_BERRY,\n    .moves = {MOVE_AERIAL_ACE, MOVE_REST, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE}\n    }\n};"
+  },
+  "symbol": "sParty_Winona4",
+  "partyType": "TrainerMonItemCustomMoves",
+  "pokemonCount": 6
+}

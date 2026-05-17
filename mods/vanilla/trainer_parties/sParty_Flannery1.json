@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Flannery1",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemCustomMoves sParty_Flannery1[] = {\n    {\n    .iv = 200,\n    .lvl = 24,\n    .species = SPECIES_NUMEL,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_OVERHEAT, MOVE_TAKE_DOWN, MOVE_MAGNITUDE, MOVE_SUNNY_DAY}\n    },\n    {\n    .iv = 200,\n    .lvl = 24,\n    .species = SPECIES_SLUGMA,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_OVERHEAT, MOVE_SMOG, MOVE_LIGHT_SCREEN, MOVE_SUNNY_DAY}\n    },\n    {\n    .iv = 250,\n    .lvl = 26,\n    .species = SPECIES_CAMERUPT,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_OVERHEAT, MOVE_TACKLE, MOVE_SUNNY_DAY, MOVE_ATTRACT}\n    },\n    {\n    .iv = 250,\n    .lvl = 29,\n    .species = SPECIES_TORKOAL,\n    .heldItem = ITEM_WHITE_HERB,\n    .moves = {MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_BODY_SLAM, MOVE_ATTRACT}\n    }\n};"
+  },
+  "symbol": "sParty_Flannery1",
+  "partyType": "TrainerMonItemCustomMoves",
+  "pokemonCount": 4
+}

@@ -52,5 +52,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Deck/map.json",
+    "sha1": "90e360b907c665ef5a0c90d7e0be797fe5947f5d"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/AbandonedShip_Deck/map.json",
+    "mapName": "AbandonedShip_Deck",
+    "scriptsSourcePath": "data/maps/AbandonedShip_Deck/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 54,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,16 @@
+{
+  "id": "BattleFrontier_PokemonCenter_1F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_PokemonCenter_1F/map.json",
+    "sha1": "64ddb92f8e1f3faae5339135da4112b7c058338a"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/BattleFrontier_PokemonCenter_1F/map.json"
+  },
+  "map": "BattleFrontier_PokemonCenter_1F",
+  "mapId": "MAP_BATTLE_FRONTIER_POKEMON_CENTER_1F",
+  "weather": "WEATHER_NONE"
+}

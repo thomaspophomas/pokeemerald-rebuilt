@@ -1,0 +1,27 @@
+{
+  "id": "BattleFrontier_OutsideWest:warp_events:8",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/map.json",
+    "sha1": "0468bfc9b139119ef609063be6421d7050189630"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/map.json",
+    "raw": {
+      "x": 26,
+      "y": 65,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_FRONTIER_RECEPTION_GATE",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "BattleFrontier_OutsideWest",
+  "mapId": "MAP_BATTLE_FRONTIER_OUTSIDE_WEST",
+  "eventType": "warp_events",
+  "index": 8,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

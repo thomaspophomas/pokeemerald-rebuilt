@@ -1,0 +1,16 @@
+{
+  "id": "Route112:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route112/map.json",
+    "sha1": "b661693767b6f599786f2403d78ab8974913a097"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/Route112/map.json"
+  },
+  "map": "Route112",
+  "mapId": "MAP_ROUTE112",
+  "weather": "WEATHER_SUNNY"
+}

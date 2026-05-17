@@ -1,0 +1,27 @@
+{
+  "id": "EverGrandeCity_SidneysRoom:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_SidneysRoom/map.json",
+    "sha1": "22697b78ee9a7027f12c6f41a51084f2f3dd798d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/EverGrandeCity_SidneysRoom/map.json",
+    "raw": {
+      "x": 6,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_EVER_GRANDE_CITY_HALL1",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "EverGrandeCity_SidneysRoom",
+  "mapId": "MAP_EVER_GRANDE_CITY_SIDNEYS_ROOM",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

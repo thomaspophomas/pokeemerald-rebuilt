@@ -1,0 +1,45 @@
+{
+  "id": "EverGrandeCity_DrakesRoom:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_DrakesRoom/map.json",
+    "sha1": "b30bc4d7980275b977f3fcff96c107bd90f3beb1"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/EverGrandeCity_DrakesRoom/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_DRAKE",
+      "x": 6,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EverGrandeCity_DrakesRoom_EventScript_Drake",
+      "flag": "0"
+    }
+  },
+  "map": "EverGrandeCity_DrakesRoom",
+  "mapId": "MAP_EVER_GRANDE_CITY_DRAKES_ROOM",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_DRAKE",
+  "x": 6,
+  "y": 5,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "EverGrandeCity_DrakesRoom_EventScript_Drake",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

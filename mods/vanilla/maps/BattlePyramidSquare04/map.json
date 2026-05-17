@@ -109,5 +109,26 @@
   ],
   "warp_events": [],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattlePyramidSquare04/map.json",
+    "sha1": "bf20352dbce373ccaf676e12e9a02551f9745282"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/BattlePyramidSquare04/map.json",
+    "mapName": "BattlePyramidSquare04",
+    "scriptsSourcePath": null
+  },
+  "mapGroup": 25,
+  "mapNum": 47,
+  "mapGroupSymbol": "gMapGroup_IndoorDynamic",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

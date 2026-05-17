@@ -1,0 +1,27 @@
+{
+  "id": "FallarborTown_CozmosHouse:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_CozmosHouse/map.json",
+    "sha1": "b67f8acdff944a6643ea01a0bb8aac38f7fbfaef"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/FallarborTown_CozmosHouse/map.json",
+    "raw": {
+      "x": 4,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_FALLARBOR_TOWN",
+      "dest_warp_id": "3"
+    }
+  },
+  "map": "FallarborTown_CozmosHouse",
+  "mapId": "MAP_FALLARBOR_TOWN_COZMOS_HOUSE",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,46 @@
+{
+  "id": "SeafloorCavern_Entrance:LOCALID_SEAFLOOR_CAVERN_ENTRANCE_GRUNT",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Entrance/map.json",
+    "sha1": "26558c228dcd913112067322d6441727f233be54"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SeafloorCavern_Entrance/map.json",
+    "raw": {
+      "local_id": "LOCALID_SEAFLOOR_CAVERN_ENTRANCE_GRUNT",
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 10,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SeafloorCavern_Entrance_EventScript_Grunt",
+      "flag": "FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT"
+    }
+  },
+  "map": "SeafloorCavern_Entrance",
+  "mapId": "MAP_SEAFLOOR_CAVERN_ENTRANCE",
+  "localId": "LOCALID_SEAFLOOR_CAVERN_ENTRANCE_GRUNT",
+  "graphicsId": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+  "x": 10,
+  "y": 2,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "SeafloorCavern_Entrance_EventScript_Grunt",
+  "flag": "FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

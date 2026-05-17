@@ -1,0 +1,27 @@
+{
+  "id": "Route108:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route108/map.json",
+    "sha1": "16be6eb309773730b50b68cb7db084bbfb16d8bf"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route108/map.json",
+    "raw": {
+      "x": 29,
+      "y": 6,
+      "elevation": 3,
+      "dest_map": "MAP_ABANDONED_SHIP_DECK",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Route108",
+  "mapId": "MAP_ROUTE108",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

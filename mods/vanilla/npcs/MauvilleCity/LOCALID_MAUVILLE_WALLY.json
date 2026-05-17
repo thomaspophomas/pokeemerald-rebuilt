@@ -1,0 +1,46 @@
+{
+  "id": "MauvilleCity:LOCALID_MAUVILLE_WALLY",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/map.json",
+    "sha1": "f3885f20933e6e45c5886f6a829c826d4f8386d2"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MauvilleCity/map.json",
+    "raw": {
+      "local_id": "LOCALID_MAUVILLE_WALLY",
+      "graphics_id": "OBJ_EVENT_GFX_WALLY",
+      "x": 8,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MauvilleCity_EventScript_Wally",
+      "flag": "FLAG_HIDE_MAUVILLE_CITY_WALLY"
+    }
+  },
+  "map": "MauvilleCity",
+  "mapId": "MAP_MAUVILLE_CITY",
+  "localId": "LOCALID_MAUVILLE_WALLY",
+  "graphicsId": "OBJ_EVENT_GFX_WALLY",
+  "x": 8,
+  "y": 6,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "MauvilleCity_EventScript_Wally",
+  "flag": "FLAG_HIDE_MAUVILLE_CITY_WALLY",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

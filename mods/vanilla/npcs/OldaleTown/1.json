@@ -1,0 +1,45 @@
+{
+  "id": "OldaleTown:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown/map.json",
+    "sha1": "7697ede5777de62072903856e298259fa2bba11d"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/OldaleTown/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "x": 16,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "OldaleTown_EventScript_Girl",
+      "flag": "0"
+    }
+  },
+  "map": "OldaleTown",
+  "mapId": "MAP_OLDALE_TOWN",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_GIRL_3",
+  "x": 16,
+  "y": 11,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "OldaleTown_EventScript_Girl",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

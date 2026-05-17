@@ -46,5 +46,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ScottsHouse/map.json",
+    "sha1": "cdb6d7e490a5a22f942c1c30e4c989462570d9f7"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/BattleFrontier_ScottsHouse/map.json",
+    "mapName": "BattleFrontier_ScottsHouse",
+    "scriptsSourcePath": "data/maps/BattleFrontier_ScottsHouse/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 46,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

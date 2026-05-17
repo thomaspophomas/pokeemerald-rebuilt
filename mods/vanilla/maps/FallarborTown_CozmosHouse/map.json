@@ -58,5 +58,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_CozmosHouse/map.json",
+    "sha1": "b67f8acdff944a6643ea01a0bb8aac38f7fbfaef"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/FallarborTown_CozmosHouse/map.json",
+    "mapName": "FallarborTown_CozmosHouse",
+    "scriptsSourcePath": "data/maps/FallarborTown_CozmosHouse/scripts.inc"
+  },
+  "mapGroup": 5,
+  "mapNum": 6,
+  "mapGroupSymbol": "gMapGroup_IndoorFallarbor",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

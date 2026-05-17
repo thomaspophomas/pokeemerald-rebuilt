@@ -1,0 +1,16 @@
+{
+  "id": "FarawayIsland_Interior:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FarawayIsland_Interior/map.json",
+    "sha1": "5c361f65bc6c4a9632200d800af1d0471fb543eb"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/FarawayIsland_Interior/map.json"
+  },
+  "map": "FarawayIsland_Interior",
+  "mapId": "MAP_FARAWAY_ISLAND_INTERIOR",
+  "weather": "WEATHER_SHADE"
+}

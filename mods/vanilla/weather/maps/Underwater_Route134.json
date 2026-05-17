@@ -1,0 +1,16 @@
+{
+  "id": "Underwater_Route134:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_Route134/map.json",
+    "sha1": "2c06422b49bed97b5224071a3bb40d6ca76fd04e"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/Underwater_Route134/map.json"
+  },
+  "map": "Underwater_Route134",
+  "mapId": "MAP_UNDERWATER_ROUTE134",
+  "weather": "WEATHER_UNDERWATER_BUBBLES"
+}

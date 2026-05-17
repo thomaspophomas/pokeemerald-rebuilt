@@ -1,0 +1,46 @@
+{
+  "id": "Route119_WeatherInstitute_2F:LOCALID_WEATHER_INSTITUTE_2F_SHELLY",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_2F/map.json",
+    "sha1": "c96e589d9d35adb4450bb9401ee99c2215b2af00"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_2F/map.json",
+    "raw": {
+      "local_id": "LOCALID_WEATHER_INSTITUTE_2F_SHELLY",
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "x": 4,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route119_WeatherInstitute_2F_EventScript_Shelly",
+      "flag": "FLAG_HIDE_ROUTE_119_TEAM_AQUA"
+    }
+  },
+  "map": "Route119_WeatherInstitute_2F",
+  "mapId": "MAP_ROUTE119_WEATHER_INSTITUTE_2F",
+  "localId": "LOCALID_WEATHER_INSTITUTE_2F_SHELLY",
+  "graphicsId": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+  "x": 4,
+  "y": 6,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Route119_WeatherInstitute_2F_EventScript_Shelly",
+  "flag": "FLAG_HIDE_ROUTE_119_TEAM_AQUA",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

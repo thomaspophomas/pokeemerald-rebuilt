@@ -1,0 +1,42 @@
+{
+  "id": "Route112_CableCarStation:2",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route112_CableCarStation/map.json",
+    "sha1": "5025865ea0b3a53d1ceb4d79e245c98fcd71aede"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route112_CableCarStation/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_CABLE_CAR",
+      "x": 6,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "0"
+    }
+  },
+  "map": "Route112_CableCarStation",
+  "mapId": "MAP_ROUTE112_CABLE_CAR_STATION",
+  "localId": 2,
+  "graphicsId": "OBJ_EVENT_GFX_CABLE_CAR",
+  "x": 6,
+  "y": 3,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "0",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

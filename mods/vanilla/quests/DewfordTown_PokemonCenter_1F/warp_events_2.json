@@ -1,0 +1,27 @@
+{
+  "id": "DewfordTown_PokemonCenter_1F:warp_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_PokemonCenter_1F/map.json",
+    "sha1": "86457653e18f0aba183a3c6fcae0e41b93eed9f8"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/DewfordTown_PokemonCenter_1F/map.json",
+    "raw": {
+      "x": 1,
+      "y": 6,
+      "elevation": 4,
+      "dest_map": "MAP_DEWFORD_TOWN_POKEMON_CENTER_2F",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "DewfordTown_PokemonCenter_1F",
+  "mapId": "MAP_DEWFORD_TOWN_POKEMON_CENTER_1F",
+  "eventType": "warp_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

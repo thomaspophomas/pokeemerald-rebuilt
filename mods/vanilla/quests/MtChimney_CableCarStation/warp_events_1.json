@@ -1,0 +1,27 @@
+{
+  "id": "MtChimney_CableCarStation:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney_CableCarStation/map.json",
+    "sha1": "b53c07d6ad80e9bc6863e52fbfe2254e16272abb"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MtChimney_CableCarStation/map.json",
+    "raw": {
+      "x": 7,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_MT_CHIMNEY",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "MtChimney_CableCarStation",
+  "mapId": "MAP_MT_CHIMNEY_CABLE_CAR_STATION",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

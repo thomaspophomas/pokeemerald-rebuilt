@@ -1,0 +1,30 @@
+{
+  "id": "MauvilleCity:bg_events:7",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/map.json",
+    "sha1": "f3885f20933e6e45c5886f6a829c826d4f8386d2"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MauvilleCity/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 11,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MauvilleCity_EventScript_GameCornerSign"
+    }
+  },
+  "map": "MauvilleCity",
+  "mapId": "MAP_MAUVILLE_CITY",
+  "eventType": "bg_events",
+  "index": 7,
+  "script": "MauvilleCity_EventScript_GameCornerSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

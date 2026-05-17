@@ -1,0 +1,27 @@
+{
+  "id": "EverGrandeCity_PhoebesRoom:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PhoebesRoom/map.json",
+    "sha1": "6c652e4eea3e2b4ab623abb76ef7e97441fd33ea"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/EverGrandeCity_PhoebesRoom/map.json",
+    "raw": {
+      "x": 6,
+      "y": 13,
+      "elevation": 3,
+      "dest_map": "MAP_EVER_GRANDE_CITY_HALL1",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "EverGrandeCity_PhoebesRoom",
+  "mapId": "MAP_EVER_GRANDE_CITY_PHOEBES_ROOM",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

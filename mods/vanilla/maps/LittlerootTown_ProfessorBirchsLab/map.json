@@ -237,5 +237,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "LittlerootTown_ProfessorBirchsLab_EventScript_PC"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/map.json",
+    "sha1": "b67ac5532774aa4a9a8c03e959c984f389797bf6"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/map.json",
+    "mapName": "LittlerootTown_ProfessorBirchsLab",
+    "scriptsSourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc"
+  },
+  "mapGroup": 1,
+  "mapNum": 4,
+  "mapGroupSymbol": "gMapGroup_IndoorLittleroot",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

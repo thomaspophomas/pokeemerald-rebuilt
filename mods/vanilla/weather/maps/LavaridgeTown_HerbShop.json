@@ -1,0 +1,16 @@
+{
+  "id": "LavaridgeTown_HerbShop:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_HerbShop/map.json",
+    "sha1": "0ec35dfb3dc9816961ab92c88de44bde4562dbfb"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/LavaridgeTown_HerbShop/map.json"
+  },
+  "map": "LavaridgeTown_HerbShop",
+  "mapId": "MAP_LAVARIDGE_TOWN_HERB_SHOP",
+  "weather": "WEATHER_NONE"
+}

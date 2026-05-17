@@ -1,0 +1,42 @@
+{
+  "id": "SecretBase_YellowCave1:6",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SecretBase_YellowCave1/map.json",
+    "sha1": "ee652d02b368fe8b5edc25585b9fff796188712d"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SecretBase_YellowCave1/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_VAR_4",
+      "x": 0,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_DECORATION_5"
+    }
+  },
+  "map": "SecretBase_YellowCave1",
+  "mapId": "MAP_SECRET_BASE_YELLOW_CAVE1",
+  "localId": 6,
+  "graphicsId": "OBJ_EVENT_GFX_VAR_4",
+  "x": 0,
+  "y": 4,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_DECORATION_5",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

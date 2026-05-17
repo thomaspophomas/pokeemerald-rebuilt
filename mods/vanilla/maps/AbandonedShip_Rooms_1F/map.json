@@ -112,5 +112,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Rooms_1F/map.json",
+    "sha1": "87b122e00c09fb8cda02119f454331b684de9250"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/AbandonedShip_Rooms_1F/map.json",
+    "mapName": "AbandonedShip_Rooms_1F",
+    "scriptsSourcePath": "data/maps/AbandonedShip_Rooms_1F/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 56,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

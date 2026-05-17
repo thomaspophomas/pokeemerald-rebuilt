@@ -1,0 +1,30 @@
+{
+  "id": "MossdeepCity_GameCorner_1F:bg_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_GameCorner_1F/map.json",
+    "sha1": "ed63dd27bc9d02b602262d2bb4dd92275ef24246"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MossdeepCity_GameCorner_1F/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 1,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MossdeepCity_GameCorner_1F_EventScript_PokemonJumpRecords"
+    }
+  },
+  "map": "MossdeepCity_GameCorner_1F",
+  "mapId": "MAP_MOSSDEEP_CITY_GAME_CORNER_1F",
+  "eventType": "bg_events",
+  "index": 2,
+  "script": "MossdeepCity_GameCorner_1F_EventScript_PokemonJumpRecords",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

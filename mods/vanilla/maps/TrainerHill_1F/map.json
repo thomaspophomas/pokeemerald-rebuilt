@@ -31,5 +31,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_1F/map.json",
+    "sha1": "5a3fbf0e4a8aefe9039d7c428b8756ee6401412a"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/TrainerHill_1F/map.json",
+    "mapName": "TrainerHill_1F",
+    "scriptsSourcePath": "data/maps/TrainerHill_1F/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 61,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

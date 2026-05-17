@@ -74,5 +74,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_ChampionsRoom/map.json",
+    "sha1": "1a50852d2ac213c086aabf21a5bc16fa4c9f7e03"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/EverGrandeCity_ChampionsRoom/map.json",
+    "mapName": "EverGrandeCity_ChampionsRoom",
+    "scriptsSourcePath": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc"
+  },
+  "mapGroup": 16,
+  "mapNum": 4,
+  "mapGroupSymbol": "gMapGroup_IndoorEverGrande",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

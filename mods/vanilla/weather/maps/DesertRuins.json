@@ -1,0 +1,16 @@
+{
+  "id": "DesertRuins:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DesertRuins/map.json",
+    "sha1": "10f7e73dc32fffb52b167f708e71b2e152847e81"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/DesertRuins/map.json"
+  },
+  "map": "DesertRuins",
+  "mapId": "MAP_DESERT_RUINS",
+  "weather": "WEATHER_NONE"
+}

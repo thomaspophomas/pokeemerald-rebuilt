@@ -62,5 +62,26 @@
       "script": "SkyPillar_Top_EventScript_AwakenRayquaza"
     }
   ],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Top/map.json",
+    "sha1": "bcddfa093065951c6399bda62f0df4668db59e12"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SkyPillar_Top/map.json",
+    "mapName": "SkyPillar_Top",
+    "scriptsSourcePath": "data/maps/SkyPillar_Top/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 85,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

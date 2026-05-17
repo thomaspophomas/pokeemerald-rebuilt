@@ -1,0 +1,28 @@
+{
+  "id": "LavaridgeTown:bg_events:7",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/map.json",
+    "sha1": "528036d4fe9b25a1f56aa0f6350f2014968009da"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LavaridgeTown/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 4,
+      "y": 5,
+      "elevation": 3,
+      "item": "ITEM_ICE_HEAL",
+      "flag": "FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_ICE_HEAL"
+    }
+  },
+  "map": "LavaridgeTown",
+  "mapId": "MAP_LAVARIDGE_TOWN",
+  "eventType": "bg_events",
+  "index": 7,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

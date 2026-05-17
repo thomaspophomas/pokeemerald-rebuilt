@@ -59,5 +59,26 @@
   ],
   "warp_events": [],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentBattleRoom/map.json",
+    "sha1": "68d1dd24fd278c85b9fb5129fb2c1963178563e2"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/FallarborTown_BattleTentBattleRoom/map.json",
+    "mapName": "FallarborTown_BattleTentBattleRoom",
+    "scriptsSourcePath": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc"
+  },
+  "mapGroup": 5,
+  "mapNum": 3,
+  "mapGroupSymbol": "gMapGroup_IndoorFallarbor",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_MELINA",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_MELINA] =\n    {\n        .trainerClass = TRAINER_CLASS_TRIATHLETE,\n        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,\n        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,\n        .trainerName = _(\"MELINA\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_Melina),\n    },"
+  },
+  "symbol": "TRAINER_MELINA",
+  "numericId": 755,
+  "trainerName": "MELINA",
+  "trainerClass": "TRAINER_CLASS_TRIATHLETE",
+  "trainerPic": "TRAINER_PIC_RUNNING_TRIATHLETE_F",
+  "encounterMusicGender": "F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_Melina",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

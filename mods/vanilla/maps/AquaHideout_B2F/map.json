@@ -187,5 +187,26 @@
       "script": "AquaHideout_B2F_EventScript_MattNoticePlayer"
     }
   ],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B2F/map.json",
+    "sha1": "2e6b1c403c764635113fa4262af815f4ece868ff"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/AquaHideout_B2F/map.json",
+    "mapName": "AquaHideout_B2F",
+    "scriptsSourcePath": "data/maps/AquaHideout_B2F/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 25,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,16 @@
+{
+  "id": "SlateportCity_PokemonCenter_1F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_PokemonCenter_1F/map.json",
+    "sha1": "97adc5b55f85c52ccd80b7fa12e5859c1059ab0d"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/SlateportCity_PokemonCenter_1F/map.json"
+  },
+  "map": "SlateportCity_PokemonCenter_1F",
+  "mapId": "MAP_SLATEPORT_CITY_POKEMON_CENTER_1F",
+  "weather": "WEATHER_NONE"
+}

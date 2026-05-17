@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Daphne",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemCustomMoves sParty_Daphne[] = {\n    {\n    .iv = 100,\n    .lvl = 39,\n    .species = SPECIES_LUVDISC,\n    .heldItem = ITEM_NUGGET,\n    .moves = {MOVE_ATTRACT, MOVE_SWEET_KISS, MOVE_FLAIL, MOVE_WATER_PULSE}\n    },\n    {\n    .iv = 100,\n    .lvl = 39,\n    .species = SPECIES_LUVDISC,\n    .heldItem = ITEM_NUGGET,\n    .moves = {MOVE_ATTRACT, MOVE_SAFEGUARD, MOVE_TAKE_DOWN, MOVE_WATER_PULSE}\n    }\n};"
+  },
+  "symbol": "sParty_Daphne",
+  "partyType": "TrainerMonItemCustomMoves",
+  "pokemonCount": 2
+}

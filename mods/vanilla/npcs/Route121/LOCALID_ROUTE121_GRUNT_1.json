@@ -1,0 +1,43 @@
+{
+  "id": "Route121:LOCALID_ROUTE121_GRUNT_1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route121/map.json",
+    "sha1": "f6697affa29d20f09f078a6a6de0c1d04016f228"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route121/map.json",
+    "raw": {
+      "local_id": "LOCALID_ROUTE121_GRUNT_1",
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 30,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_ROUTE_121_TEAM_AQUA_GRUNTS"
+    }
+  },
+  "map": "Route121",
+  "mapId": "MAP_ROUTE121",
+  "localId": "LOCALID_ROUTE121_GRUNT_1",
+  "graphicsId": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+  "x": 30,
+  "y": 8,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_HIDE_ROUTE_121_TEAM_AQUA_GRUNTS",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

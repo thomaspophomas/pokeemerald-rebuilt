@@ -1,0 +1,27 @@
+{
+  "id": "FortreeCity_Mart:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Mart/map.json",
+    "sha1": "693c25caa5e39ec8756fb433d3aa11a0d2ecacb2"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/FortreeCity_Mart/map.json",
+    "raw": {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_FORTREE_CITY",
+      "dest_warp_id": "3"
+    }
+  },
+  "map": "FortreeCity_Mart",
+  "mapId": "MAP_FORTREE_CITY_MART",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

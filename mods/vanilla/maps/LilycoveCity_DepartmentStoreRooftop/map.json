@@ -94,5 +94,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "LilycoveCity_DepartmentStoreRooftop_EventScript_VendingMachine"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStoreRooftop/map.json",
+    "sha1": "3e39c9939735f804c565bcad62aeb78591d07d83"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStoreRooftop/map.json",
+    "mapName": "LilycoveCity_DepartmentStoreRooftop",
+    "scriptsSourcePath": "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc"
+  },
+  "mapGroup": 13,
+  "mapNum": 21,
+  "mapGroupSymbol": "gMapGroup_IndoorLilycove",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

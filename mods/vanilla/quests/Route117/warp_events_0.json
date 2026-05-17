@@ -1,0 +1,27 @@
+{
+  "id": "Route117:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route117/map.json",
+    "sha1": "c7c9af5ecd59a144046f8ae0ea2b93cb235f5110"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route117/map.json",
+    "raw": {
+      "x": 51,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE117_POKEMON_DAY_CARE",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Route117",
+  "mapId": "MAP_ROUTE117",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

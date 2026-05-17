@@ -1,0 +1,46 @@
+{
+  "id": "RustboroCity_DevonCorp_3F:LOCALID_DEVON_CORP_3F_EMPLOYEE",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_3F/map.json",
+    "sha1": "83d29bf466c85ff84e136a0487cab8887890d38a"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_3F/map.json",
+    "raw": {
+      "local_id": "LOCALID_DEVON_CORP_3F_EMPLOYEE",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_2",
+      "x": 3,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RustboroCity_DevonCorp_3F_EventScript_Employee",
+      "flag": "FLAG_HIDE_RUSTBORO_CITY_DEVON_CORP_3F_EMPLOYEE"
+    }
+  },
+  "map": "RustboroCity_DevonCorp_3F",
+  "mapId": "MAP_RUSTBORO_CITY_DEVON_CORP_3F",
+  "localId": "LOCALID_DEVON_CORP_3F_EMPLOYEE",
+  "graphicsId": "OBJ_EVENT_GFX_MAN_2",
+  "x": 3,
+  "y": 5,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "RustboroCity_DevonCorp_3F_EventScript_Employee",
+  "flag": "FLAG_HIDE_RUSTBORO_CITY_DEVON_CORP_3F_EMPLOYEE",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

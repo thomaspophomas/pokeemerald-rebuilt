@@ -1,0 +1,27 @@
+{
+  "id": "LilycoveCity:warp_events:5",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/map.json",
+    "sha1": "ecd4d8c0f7b8c74fa70d53df6e4922fed0c006b6"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LilycoveCity/map.json",
+    "raw": {
+      "x": 39,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_LILYCOVE_CITY_POKEMON_TRAINER_FAN_CLUB",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "LilycoveCity",
+  "mapId": "MAP_LILYCOVE_CITY",
+  "eventType": "warp_events",
+  "index": 5,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

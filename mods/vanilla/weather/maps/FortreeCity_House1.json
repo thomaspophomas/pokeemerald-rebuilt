@@ -1,0 +1,16 @@
+{
+  "id": "FortreeCity_House1:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_House1/map.json",
+    "sha1": "0053187d878220f0c8fdf48c3b444c9333aab0ee"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/FortreeCity_House1/map.json"
+  },
+  "map": "FortreeCity_House1",
+  "mapId": "MAP_FORTREE_CITY_HOUSE1",
+  "weather": "WEATHER_NONE"
+}

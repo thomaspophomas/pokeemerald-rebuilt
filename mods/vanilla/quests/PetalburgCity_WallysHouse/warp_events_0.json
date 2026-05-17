@@ -1,0 +1,27 @@
+{
+  "id": "PetalburgCity_WallysHouse:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_WallysHouse/map.json",
+    "sha1": "679ee949b04412149e8a9236f769bb492695d99b"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/PetalburgCity_WallysHouse/map.json",
+    "raw": {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_PETALBURG_CITY",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "PetalburgCity_WallysHouse",
+  "mapId": "MAP_PETALBURG_CITY_WALLYS_HOUSE",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

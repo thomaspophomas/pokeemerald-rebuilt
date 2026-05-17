@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Winona1",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemCustomMoves sParty_Winona1[] = {\n    {\n    .iv = 210,\n    .lvl = 29,\n    .species = SPECIES_SWABLU,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_PERISH_SONG, MOVE_MIRROR_MOVE, MOVE_SAFEGUARD, MOVE_AERIAL_ACE}\n    },\n    {\n    .iv = 210,\n    .lvl = 29,\n    .species = SPECIES_TROPIUS,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_SUNNY_DAY, MOVE_AERIAL_ACE, MOVE_SOLAR_BEAM, MOVE_SYNTHESIS}\n    },\n    {\n    .iv = 210,\n    .lvl = 30,\n    .species = SPECIES_PELIPPER,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_WATER_GUN, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_AERIAL_ACE}\n    },\n    {\n    .iv = 220,\n    .lvl = 31,\n    .species = SPECIES_SKARMORY,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_SAND_ATTACK, MOVE_FURY_ATTACK, MOVE_STEEL_WING, MOVE_AERIAL_ACE}\n    },\n    {\n    .iv = 255,\n    .lvl = 33,\n    .species = SPECIES_ALTARIA,\n    .heldItem = ITEM_ORAN_BERRY,\n    .moves = {MOVE_EARTHQUAKE, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE, MOVE_AERIAL_ACE}\n    }\n};"
+  },
+  "symbol": "sParty_Winona1",
+  "partyType": "TrainerMonItemCustomMoves",
+  "pokemonCount": 5
+}

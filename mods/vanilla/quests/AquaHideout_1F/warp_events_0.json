@@ -1,0 +1,27 @@
+{
+  "id": "AquaHideout_1F:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_1F/map.json",
+    "sha1": "a13eeb3f0f47f71bf791c3da639b5a46c01b8aa9"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/AquaHideout_1F/map.json",
+    "raw": {
+      "x": 13,
+      "y": 27,
+      "elevation": 1,
+      "dest_map": "MAP_LILYCOVE_CITY",
+      "dest_warp_id": "6"
+    }
+  },
+  "map": "AquaHideout_1F",
+  "mapId": "MAP_AQUA_HIDEOUT_1F",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": "BattleFrontier_BattlePyramidTop:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidTop/map.json",
+    "sha1": "f1b0387d93bfee728126deb8f371b495ab79debb"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidTop/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 17,
+      "y": 9,
+      "elevation": 4,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "BattleFrontier_BattlePyramidTop_EventScript_BattleBrandon"
+    }
+  },
+  "map": "BattleFrontier_BattlePyramidTop",
+  "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_TOP",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": "BattleFrontier_BattlePyramidTop_EventScript_BattleBrandon",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

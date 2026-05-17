@@ -1,0 +1,25 @@
+{
+  "id": "FortreeCity_DecorationShop_PokemartDecor_Chairs",
+  "domain": "shops",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_DecorationShop/scripts.inc",
+    "sha1": "9052b61ce40e18da90e9f9a9ca5351634902ee39"
+  },
+  "legacy": {
+    "kind": "pokemart_script_list",
+    "sourcePath": "data/maps/FortreeCity_DecorationShop/scripts.inc"
+  },
+  "symbol": "FortreeCity_DecorationShop_PokemartDecor_Chairs",
+  "map": "FortreeCity_DecorationShop",
+  "items": [
+    "DECOR_SMALL_CHAIR",
+    "DECOR_POKEMON_CHAIR",
+    "DECOR_HEAVY_CHAIR",
+    "DECOR_RAGGED_CHAIR",
+    "DECOR_COMFORT_CHAIR",
+    "DECOR_BRICK_CHAIR",
+    "DECOR_CAMP_CHAIR",
+    "DECOR_HARD_CHAIR"
+  ]
+}

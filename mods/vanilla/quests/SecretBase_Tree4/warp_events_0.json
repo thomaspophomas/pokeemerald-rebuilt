@@ -1,0 +1,27 @@
+{
+  "id": "SecretBase_Tree4:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SecretBase_Tree4/map.json",
+    "sha1": "b05b5967b741aa27be99c11541a28c08b42fca0f"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SecretBase_Tree4/map.json",
+    "raw": {
+      "x": 7,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "WARP_ID_SECRET_BASE"
+    }
+  },
+  "map": "SecretBase_Tree4",
+  "mapId": "MAP_SECRET_BASE_TREE4",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

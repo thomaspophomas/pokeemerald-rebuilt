@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Jacob",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemDefaultMoves sParty_Jacob[] = {\n    {\n    .iv = 20,\n    .lvl = 6,\n    .species = SPECIES_VOLTORB,\n    },\n    {\n    .iv = 20,\n    .lvl = 6,\n    .species = SPECIES_VOLTORB,\n    },\n    {\n    .iv = 200,\n    .lvl = 14,\n    .species = SPECIES_MAGNEMITE,\n    }\n};"
+  },
+  "symbol": "sParty_Jacob",
+  "partyType": "TrainerMonNoItemDefaultMoves",
+  "pokemonCount": 3
+}

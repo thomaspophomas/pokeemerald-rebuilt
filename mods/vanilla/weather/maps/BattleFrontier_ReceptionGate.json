@@ -1,0 +1,16 @@
+{
+  "id": "BattleFrontier_ReceptionGate:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ReceptionGate/map.json",
+    "sha1": "860f78128a5797e8a59f9ebfccf0e46983b00d2f"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/BattleFrontier_ReceptionGate/map.json"
+  },
+  "map": "BattleFrontier_ReceptionGate",
+  "mapId": "MAP_BATTLE_FRONTIER_RECEPTION_GATE",
+  "weather": "WEATHER_NONE"
+}

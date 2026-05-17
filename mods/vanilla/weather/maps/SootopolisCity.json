@@ -1,0 +1,16 @@
+{
+  "id": "SootopolisCity:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/map.json",
+    "sha1": "e651f28449773dc24217811c1afadda1854036d9"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/SootopolisCity/map.json"
+  },
+  "map": "SootopolisCity",
+  "mapId": "MAP_SOOTOPOLIS_CITY",
+  "weather": "WEATHER_SUNNY"
+}

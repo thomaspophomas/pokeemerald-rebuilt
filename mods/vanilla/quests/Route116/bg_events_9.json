@@ -1,0 +1,28 @@
+{
+  "id": "Route116:bg_events:9",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116/map.json",
+    "sha1": "4917a04a095314d28f76d7b4807e78bce1251f9a"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route116/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 22,
+      "y": 9,
+      "elevation": 3,
+      "item": "ITEM_SUPER_POTION",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_116_SUPER_POTION"
+    }
+  },
+  "map": "Route116",
+  "mapId": "MAP_ROUTE116",
+  "eventType": "bg_events",
+  "index": 9,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

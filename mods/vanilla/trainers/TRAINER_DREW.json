@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_DREW",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_DREW] =\n    {\n        .trainerClass = TRAINER_CLASS_CAMPER,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,\n        .trainerPic = TRAINER_PIC_CAMPER,\n        .trainerName = _(\"DREW\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = NO_ITEM_CUSTOM_MOVES(sParty_Drew),\n    },"
+  },
+  "symbol": "TRAINER_DREW",
+  "numericId": 211,
+  "trainerName": "DREW",
+  "trainerClass": "TRAINER_CLASS_CAMPER",
+  "trainerPic": "TRAINER_PIC_CAMPER",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_MALE",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_Drew",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

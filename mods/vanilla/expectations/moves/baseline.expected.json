@@ -1,18 +1,1803 @@
 {
   "domain": "moves",
   "schemaVersion": 1,
-  "fileCount": 1,
-  "jsonFileCount": 1,
-  "bytes": 963,
-  "sha1": "183946d0e38fae1d0cec9d51591d793a264b41b9",
+  "fileCount": 358,
+  "jsonFileCount": 358,
+  "bytes": 197091,
+  "sha1": "0d6c3a5dad05eff79233b9f89b07228e53cf93fc",
   "files": [
     {
-      "path": "mods/vanilla/moves/manifest.json",
-      "sha1": "702eee778c1233b7d256168193ed7a4c90b47f35",
-      "bytes": 963
+      "path": "mods/vanilla/moves/_source_manifest.json",
+      "sha1": "47609e4922224d394324626a31c195c33655db76",
+      "bytes": 996
+    },
+    {
+      "path": "mods/vanilla/moves/index.json",
+      "sha1": "2ec4102fdc9d8132cb86b4aa795efa03cfe49a7a",
+      "bytes": 80616
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ABSORB.json",
+      "sha1": "b0bfd84c6aeb57827fef81597432594013c2cbf2",
+      "bytes": 318
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ACID.json",
+      "sha1": "694d98f92d1d167106503947dfd27f5669b7c00a",
+      "bytes": 314
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ACID_ARMOR.json",
+      "sha1": "6bae16f9f7235f95d25aca05b500405c09bc97f0",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_AERIAL_ACE.json",
+      "sha1": "c1f53ddb28acda527227f6c8c1e2604bdcedf91e",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_AEROBLAST.json",
+      "sha1": "f469afcc4599af1041a5fc4cd3cc0fb97d5b9a3d",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_AGILITY.json",
+      "sha1": "da81aae76ceb5309f021b94dd55ca133d62aad7b",
+      "bytes": 320
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_AIR_CUTTER.json",
+      "sha1": "81908943a0ea1fa470d777786e24593038a3148e",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_AMNESIA.json",
+      "sha1": "3efb60632e1e8205c0acf26ea39592a630f014e8",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ANCIENT_POWER.json",
+      "sha1": "5e93f11e15e2230587760b3a87ac6a34d9ef2c13",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ARM_THRUST.json",
+      "sha1": "8f504b79aa35986f050eb2a73a7242c3d611bbaa",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_AROMATHERAPY.json",
+      "sha1": "36282a8dddd35e77b6acc7eb655d83fb98517e82",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ASSIST.json",
+      "sha1": "7d01544c2cc4de05b3aa382014334acc559a9dfc",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ASTONISH.json",
+      "sha1": "8129193341ceeade6f21d8af8f4e6d2e0d2bfc73",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ATTRACT.json",
+      "sha1": "0a73721a5f66b36db87687a588158d689c6e8e45",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_AURORA_BEAM.json",
+      "sha1": "15eee54e9464f0d91bd9432252a629387785d499",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BARRAGE.json",
+      "sha1": "788e489e324aab684f57b05ff2f436b616e0c576",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BARRIER.json",
+      "sha1": "7107e2d2947fcc5692ab9a8cc92bd881e482563f",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BATON_PASS.json",
+      "sha1": "64dfd4e7a99c14066fa04749303034eaa5548802",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BEAT_UP.json",
+      "sha1": "4d564578728ef41909eff799122b1553123a6c83",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BELLY_DRUM.json",
+      "sha1": "4921e788eff45fda34e8247f44b56e46473ccbce",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BIDE.json",
+      "sha1": "791626c01339af9992a2e5eec1ffb0abb12190cc",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BIND.json",
+      "sha1": "53505fe6c63f87615f5d88886df1ad396f3dc255",
+      "bytes": 314
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BITE.json",
+      "sha1": "e5f457174b5f0fd15027efe413e7b48356716512",
+      "bytes": 314
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BLAST_BURN.json",
+      "sha1": "3114ea4f63b52b22958f32c8b027c882bd07c315",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BLAZE_KICK.json",
+      "sha1": "9edc18b4dd0ec820ff5f5a9addd766798fd63da3",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BLIZZARD.json",
+      "sha1": "8200b9b9036bcdd760fbbd125e138ef78ac62670",
+      "bytes": 322
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BLOCK.json",
+      "sha1": "48c69990e070a93327d4ad3739c75f3cb3b5fe35",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BODY_SLAM.json",
+      "sha1": "4c3c19492fa172f38ed1c030d1aeeafc514d837d",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BONEMERANG.json",
+      "sha1": "f9b5bd20d826e025998e7d0c3e945042b5f91412",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BONE_CLUB.json",
+      "sha1": "64957fdd4a6e54507f3b010603f88ac8f50f8930",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BONE_RUSH.json",
+      "sha1": "2523248843e58516690d663d9198253ab03d9d22",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BOUNCE.json",
+      "sha1": "f4f08de2b7e833a4704c9344f6dbbce9229a12f2",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BRICK_BREAK.json",
+      "sha1": "d2f58decbedfa5638727b691612cf539e92c21c4",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BUBBLE.json",
+      "sha1": "ae43847353b8b5081f66901e70e498529b6e750e",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BUBBLE_BEAM.json",
+      "sha1": "fb1871cfbc45c5ce17f84dfada079777f53f0e59",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BULK_UP.json",
+      "sha1": "28517cb69e042f3bfbb182dfb1febd5d93c18428",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_BULLET_SEED.json",
+      "sha1": "2df86a21fb760fa1dc59e5d6e8c16c0ea4c4c42f",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_CALM_MIND.json",
+      "sha1": "ea9ef3592eb78e7fd41a5c96c6070f01a39f0afb",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_CAMOUFLAGE.json",
+      "sha1": "8d142d3f62444907aa392758ca00a1f0c5d39ace",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_CHARGE.json",
+      "sha1": "55a1ec4d992b4184299494ec4b0a8068a693bc90",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_CHARM.json",
+      "sha1": "4cae855e74280be786013fa4cf5f01a8bd6dfda3",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_CLAMP.json",
+      "sha1": "a1954ae1b273e6779e3cdde00c6e50ad63b72770",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_COMET_PUNCH.json",
+      "sha1": "14fb92c0c27bba932701a885f25b40eefa386ce2",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_CONFUSE_RAY.json",
+      "sha1": "fd563e2956b6c52e21206a097f5aed0984eb764b",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_CONFUSION.json",
+      "sha1": "da4496230a8665d517fc156f3cd2c0fa9fcf5d68",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_CONSTRICT.json",
+      "sha1": "dbee44706a11973b47295bd88abcac7b720291e9",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_CONVERSION.json",
+      "sha1": "ee1a26ab5f546661ab16f894709d7fc1fdc39610",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_CONVERSION_2.json",
+      "sha1": "9be5dc26fed70feabeed940728385f9f6032afc1",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_COSMIC_POWER.json",
+      "sha1": "7111ac2cc7788afc35313b5f8aab1f6f0983d60f",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_COTTON_SPORE.json",
+      "sha1": "4b0a501b3d6dabf15ecc3b241cde05eb6cdd397d",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_COUNTER.json",
+      "sha1": "07624eaa28f045f6c36ad37912bfdabe4e23de55",
+      "bytes": 320
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_COVET.json",
+      "sha1": "8679a0e395e639ed510123384fd4848b3ed6c410",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_CRABHAMMER.json",
+      "sha1": "13960916e07d2c7f712811ae4624941781368e06",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_CROSS_CHOP.json",
+      "sha1": "6fd25bba13bee248c58559711e2ee95a6cad0c90",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_CRUNCH.json",
+      "sha1": "6f30cebbda23296ac0d92bcad1b1fdd7bb548f58",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_CRUSH_CLAW.json",
+      "sha1": "a94889e840b779cabd82b0f13e38731e8228607c",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_CURSE.json",
+      "sha1": "4a52842225d2d4dd49cf120bee4d2955c386e15e",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_CUT.json",
+      "sha1": "2069f4960117296b9768ee5e09f9ccf7c5718814",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_DEFENSE_CURL.json",
+      "sha1": "633bedb34e45cdccf09b2f9c22b93fe47557e113",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_DESTINY_BOND.json",
+      "sha1": "aedc2fb09e05c2344bec622ad7d92b6aefa8e61d",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_DETECT.json",
+      "sha1": "db1776290bba40c1e5629b30631a8e9f53ddaac5",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_DIG.json",
+      "sha1": "66731a09c108436bd8550375fd6b6ffeec326707",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_DISABLE.json",
+      "sha1": "51071c3ad81e7d076f815c1b2ad263eaec554cac",
+      "bytes": 320
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_DIVE.json",
+      "sha1": "6da9b47d82ef5036e96f4bbaefacbb5b0ba746c6",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_DIZZY_PUNCH.json",
+      "sha1": "b3233ca5b4229ad0aa1662b6710b202c011d0300",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_DOOM_DESIRE.json",
+      "sha1": "b516df65c026bba3d0ec9d1d26328362e8bb44f7",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_DOUBLE_EDGE.json",
+      "sha1": "184afac9cc7cb130375b6d63ff9341159a797e7d",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_DOUBLE_KICK.json",
+      "sha1": "c00b6792773c1e4224efa10633166028c0b6d956",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_DOUBLE_SLAP.json",
+      "sha1": "aa9ca618bc2a9c24692f7197149e4e95528dddd9",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_DOUBLE_TEAM.json",
+      "sha1": "2f87d46cb9f9348986bdbf01584dc4318f3b4452",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_DRAGON_BREATH.json",
+      "sha1": "5367e0fbb991084df0745142566a42a0d4404219",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_DRAGON_CLAW.json",
+      "sha1": "ed10381bba70f6412ca6b32d2cf3168a92134315",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_DRAGON_DANCE.json",
+      "sha1": "756a05594aede361adbc241926e865d2a246cf06",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_DRAGON_RAGE.json",
+      "sha1": "6819d12b4c577bdea94e356468bf757ed561f99d",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_DREAM_EATER.json",
+      "sha1": "64d0f67130f8312aac18d56d349fe44739e5cf23",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_DRILL_PECK.json",
+      "sha1": "26fd08fe9b7263b7115ebc26d5a2cc051ad1b487",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_DYNAMIC_PUNCH.json",
+      "sha1": "a85eae6599585d28ba1eb970c1aca61da86dd490",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_EARTHQUAKE.json",
+      "sha1": "701bfd96e6c01674334cde6a757c8c9fd8bd0371",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_EGG_BOMB.json",
+      "sha1": "0866c4ddf88c9fa5defa0c63fa5fcdaf0ab7649c",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_EMBER.json",
+      "sha1": "b16370def77ba046abb2fd77a6bee32cb1608233",
+      "bytes": 316
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ENCORE.json",
+      "sha1": "42fe2d400955fb88ef3fc18b981d836f2b96e522",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ENDEAVOR.json",
+      "sha1": "396d059eb4bd900dd9a688b259801713f44b9c02",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ENDURE.json",
+      "sha1": "44158a229046af92a0d15e59631825a792becd8c",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ERUPTION.json",
+      "sha1": "eda465cc11d55aaeff3e53ca06dab39019807d39",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_EXPLOSION.json",
+      "sha1": "620996682df671c4bb7b482b580444204c0fd31b",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_EXTRASENSORY.json",
+      "sha1": "b21100f2e226e7b05d8b833ef841775b45d65c21",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_EXTREME_SPEED.json",
+      "sha1": "4ab2f7c8313d789d2b4d842056ed7cf95d4d37e2",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FACADE.json",
+      "sha1": "30db1047717c4f30417e9983e544f83b7d643698",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FAINT_ATTACK.json",
+      "sha1": "957ec51a2b0d45a50ffe314ff59c4b561851ad58",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FAKE_OUT.json",
+      "sha1": "1612ddbc88588c4292fcb3b0d3d5b2cd94106b5a",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FAKE_TEARS.json",
+      "sha1": "f4bc3fa36f90e295cc04f4f6592e6f6eee373e3e",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FALSE_SWIPE.json",
+      "sha1": "b7406a98708d12f0bf37b6995f76ef04cff0d4e2",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FEATHER_DANCE.json",
+      "sha1": "4e3c72462b4c073063cc7fff07a0d37363fc04e6",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FIRE_BLAST.json",
+      "sha1": "c54b2963abc9bcdd14d4fd93c2fa00398eef6b9d",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FIRE_PUNCH.json",
+      "sha1": "5d514e3481a440d4d6cf3cbb8e8135471f185468",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FIRE_SPIN.json",
+      "sha1": "86ace8dd6fd3f23dd1ed73047e068e976f8a4a85",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FISSURE.json",
+      "sha1": "228c4f1ab622bf6beb411629534ec480135d622e",
+      "bytes": 320
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FLAIL.json",
+      "sha1": "d3dde196edf4c800ac6bfac68d604a8f0c647a48",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FLAMETHROWER.json",
+      "sha1": "36fa80761918a2efaa33c4cea2121beb1d75b64b",
+      "bytes": 330
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FLAME_WHEEL.json",
+      "sha1": "d2e5ce3ae6155350858556010955f0739b0699c1",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FLASH.json",
+      "sha1": "c06364de172a1c972c0306993a6161eae72ddcdb",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FLATTER.json",
+      "sha1": "b4717beb3cfcf237834eaac52ab1cc003cac703d",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FLY.json",
+      "sha1": "86b419ae1f3316c017bab467e1602359ee4f7b91",
+      "bytes": 312
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FOCUS_ENERGY.json",
+      "sha1": "ac1ac9ed5a78eb9be730b9c334e2d323e2a38d3b",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FOCUS_PUNCH.json",
+      "sha1": "55e8a2d81ad44423b2dc63d7aa2b29c007d04cf8",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FOLLOW_ME.json",
+      "sha1": "4b43fba9a8db4bb2c214a5880cb0f8c7ef9f073c",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FORESIGHT.json",
+      "sha1": "5f7526fc0397d1abbae4be67c50988b6cf4eea37",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FRENZY_PLANT.json",
+      "sha1": "efb8c744a32facfe76c8fc0b90d14992bdc0f16d",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FRUSTRATION.json",
+      "sha1": "11a05f8e32c104a824263abb72dce6de52358b98",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FURY_ATTACK.json",
+      "sha1": "146dee0824b040cf1ca56285b64956af4670f774",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FURY_CUTTER.json",
+      "sha1": "18a20190122d0974aa469da0f0e4823443216a48",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FURY_SWIPES.json",
+      "sha1": "b64227a738f54471bff9a6ada81a4deb533cac5f",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_FUTURE_SIGHT.json",
+      "sha1": "cc53a868470ecf57fbd94ec4adb8c08ed652636b",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_GIGA_DRAIN.json",
+      "sha1": "c1652afe9cfb3e9f9b75ecee74e3179edf45f384",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_GLARE.json",
+      "sha1": "af097d526969a863f4e56ae5e804e0fa56b4de5c",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_GRASS_WHISTLE.json",
+      "sha1": "16d87ea2ba69ff2e1b49c6755d8bb0ff44da9660",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_GROWL.json",
+      "sha1": "15303cbeb9eb9ef1d43b7f0c2dc84bcb2be14336",
+      "bytes": 316
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_GROWTH.json",
+      "sha1": "fef2b5eb3fa16abac54766830a21ce68c3f9c106",
+      "bytes": 318
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_GRUDGE.json",
+      "sha1": "6eff55b37805a89609fad4f6ac055f79f15c5172",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_GUILLOTINE.json",
+      "sha1": "ce6246ec3de63ee732c34653850bfe31a4a6adb3",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_GUST.json",
+      "sha1": "601c37567e22dced071fdba8b18760f3f6332be2",
+      "bytes": 314
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_HAIL.json",
+      "sha1": "8be0a3eecb1622e5cc09016ba197af154ec514c5",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_HARDEN.json",
+      "sha1": "8a7c7c57bbf6e40531fae8526f6572dbda924dc0",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_HAZE.json",
+      "sha1": "eb20d4b854589b916fa05f8a4d0eb8a1eb0a91e4",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_HEADBUTT.json",
+      "sha1": "2db9267bde846f77163759e8cc085b2e91d45b30",
+      "bytes": 322
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_HEAL_BELL.json",
+      "sha1": "b89ba921a5ead378561c96c0509193b22790a4b5",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_HEAT_WAVE.json",
+      "sha1": "510377695ef8cc5bcee45cc8668be4800941507a",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_HELPING_HAND.json",
+      "sha1": "febc39a63b0fd15bc8c704a2887ccfabfaa13f06",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_HIDDEN_POWER.json",
+      "sha1": "01afa08e0b6be4b2b9423f785a1f282882d61340",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_HI_JUMP_KICK.json",
+      "sha1": "e7a057fdec084ba46fd11c488fc842a888dd076a",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_HORN_ATTACK.json",
+      "sha1": "7d1aa8d842687c08298cf94342058180efc95e94",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_HORN_DRILL.json",
+      "sha1": "929aad7a48d8284fc762c03b258cb4375147335b",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_HOWL.json",
+      "sha1": "5916df1ca9293622151b714bef2a481dc228a6b7",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_HYDRO_CANNON.json",
+      "sha1": "56f534294ebac284fcadb60c01adcd7e11289c67",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_HYDRO_PUMP.json",
+      "sha1": "0e5d70f63308e4ce73873e1e1f6e36b5d051fc1c",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_HYPER_BEAM.json",
+      "sha1": "9cfee5c90e539caf6c724481267d512d4c7e8384",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_HYPER_FANG.json",
+      "sha1": "03bac320874d59f28df31571640e43d11fe93ae4",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_HYPER_VOICE.json",
+      "sha1": "06ffd9bdd33a22024efa7fc42e6e108fcf7dcd71",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_HYPNOSIS.json",
+      "sha1": "ef762bca8f96559196c8eccb1aa4deac487364af",
+      "bytes": 322
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ICE_BALL.json",
+      "sha1": "acad11415b3794cedd354651ae0e508dcfc66f69",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ICE_BEAM.json",
+      "sha1": "066fb834453bed6b5d19208228ce287f34327de4",
+      "bytes": 322
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ICE_PUNCH.json",
+      "sha1": "695cb1e18d5767f9a0cd2252b8623b85f88ce5dc",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ICICLE_SPEAR.json",
+      "sha1": "a0fd7ee552779359873e16f39b7c7c9ea861e259",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ICY_WIND.json",
+      "sha1": "cbb2a64a462b491682f8ebddafc15f7b2eff3a10",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_IMPRISON.json",
+      "sha1": "f132403f820ff8c8aaedf5f9bffe846f4a74094f",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_INGRAIN.json",
+      "sha1": "dc3001967f14153b0371317dbedbccb667b72048",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_IRON_DEFENSE.json",
+      "sha1": "af0e77aaca1ffc8a06510be25f520a062883b486",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_IRON_TAIL.json",
+      "sha1": "6f723cb7593acb8ba6b41486226f5023d9f45048",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_JUMP_KICK.json",
+      "sha1": "744452baa319ff8ce058bca75a3b1889ecce9d0f",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_KARATE_CHOP.json",
+      "sha1": "75d7333d7383a0da7f476ccef743bfc2183698a8",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_KINESIS.json",
+      "sha1": "155083495847aa75f28a0583bb877cdd898a56ba",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_KNOCK_OFF.json",
+      "sha1": "c91cdf2eb846ac5ee7ab21c4c7d1f4e2a6cea746",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_LEAF_BLADE.json",
+      "sha1": "4b1a625ad2f4f4f5ccc38ac6694b3c1268c0b3a7",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_LEECH_LIFE.json",
+      "sha1": "320cc853990f9e097509e1fe8bd825620858de2e",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_LEECH_SEED.json",
+      "sha1": "f89de353f3499035112317a70e015a3d0c22b68f",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_LEER.json",
+      "sha1": "8ca832db780e8d88e1c3ba737d47dcdfd098cc3e",
+      "bytes": 314
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_LICK.json",
+      "sha1": "e15fdb9aa7d1fcb6e3be314f955ecbb5d763b49b",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_LIGHT_SCREEN.json",
+      "sha1": "5613097800eb71a54e58f0828a0ebd75a3829c0a",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_LOCK_ON.json",
+      "sha1": "24ceac38ad52e5cb09d3e47e31d1002cf3d24dba",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_LOVELY_KISS.json",
+      "sha1": "ff54f4b2b93d1177e46663ddaf0ef63e4035f1f1",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_LOW_KICK.json",
+      "sha1": "8d15955c5ae7609528bfe773204f538c5bdc25a7",
+      "bytes": 322
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_LUSTER_PURGE.json",
+      "sha1": "ebeef3c957d04d41eba15d9ac5dce2e44228fb0f",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MACH_PUNCH.json",
+      "sha1": "3fd5112c657b0e420dbdf610cd94d2798fe97b2d",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MAGICAL_LEAF.json",
+      "sha1": "a2d174942a1425916ec65eefc79a4dfe29c9626f",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MAGIC_COAT.json",
+      "sha1": "ee3e6497f51d7c3f95b92e80d8815f6d9f399f99",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MAGNITUDE.json",
+      "sha1": "41625ec752e0e575e7ad9e3977f27feae5e3e9ff",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MEAN_LOOK.json",
+      "sha1": "1995202d2e03d41889bdf9e2c54d1d87c43d8065",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MEDITATE.json",
+      "sha1": "0bbcc9057d4edc4561d655ddd676be0dc6fa006d",
+      "bytes": 322
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MEGAHORN.json",
+      "sha1": "f9c341d76a75f233bdc29ba171f607cb2ab9559e",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MEGA_DRAIN.json",
+      "sha1": "a9efa5a53b2c1697b8110a53e71a9ca00772d181",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MEGA_KICK.json",
+      "sha1": "804fa8b9bc0aa5a1b0a18c5e055516950d02059c",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MEGA_PUNCH.json",
+      "sha1": "c39cae60e1073a53c129fa6994ed0782bc5ba55f",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MEMENTO.json",
+      "sha1": "2b17ef2109d6b657c9822377628927878c7ab5bb",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_METAL_CLAW.json",
+      "sha1": "3304b2798964f0dd322d3fcb488ffc98d4627899",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_METAL_SOUND.json",
+      "sha1": "4f2b234ff5f4bd0afb07978247593b56491e60fb",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_METEOR_MASH.json",
+      "sha1": "4464fbb4cf387da503f6808f30af47feebe60d7c",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_METRONOME.json",
+      "sha1": "b5f2ad90870cc55b9c2b9207da1a62d6ec21578d",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MILK_DRINK.json",
+      "sha1": "a5d8758f40a6b706025c75817a6c862235f8dcee",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MIMIC.json",
+      "sha1": "58c6c97fd23f9771c7f69fecbeb8b0eeac564e2e",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MIND_READER.json",
+      "sha1": "c79497775550ee629a065015bebb7c64f390ce28",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MINIMIZE.json",
+      "sha1": "a5949c5cdaecf38224390e877fd010ad5695ab4c",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MIRROR_COAT.json",
+      "sha1": "9cac3f737ce3656c4a1a83a0c88fcfcb5db00010",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MIRROR_MOVE.json",
+      "sha1": "7867cb913a05dd5e4ebc2f523081d527bef1ff7b",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MIST.json",
+      "sha1": "5fb5aee459dacde5fb35c63f3ed9227b382c41be",
+      "bytes": 314
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MIST_BALL.json",
+      "sha1": "2eb07e819ad038d1dbb962676d09ab16d787818c",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MOONLIGHT.json",
+      "sha1": "7d044b690284925303c421ea9c7b11e7fd43e2de",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MORNING_SUN.json",
+      "sha1": "a03979c3799159dd9d0383e5f3f65068294ab3e7",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MUDDY_WATER.json",
+      "sha1": "53f11c35006b054ecef6e5ba33fbedb58e125b4b",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MUD_SHOT.json",
+      "sha1": "8db6ed9c080a4e4f195057535c89ed8ed31ff8d2",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MUD_SLAP.json",
+      "sha1": "32c82ca6ac6aed98860c5202ae59d7986fc82af1",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_MUD_SPORT.json",
+      "sha1": "cb75f4061cf8ce32768c4303f15e0f46f6f940cf",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_NATURE_POWER.json",
+      "sha1": "2e9209c897d4b48873120bcc266a2683784fe345",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_NEEDLE_ARM.json",
+      "sha1": "24a16ec2bdfc67066175228a1241d8c1173ad8e0",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_NIGHTMARE.json",
+      "sha1": "a0960a195c8829ff658c13f71157b4587b0398c8",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_NIGHT_SHADE.json",
+      "sha1": "2fe0e4fdd24ac8121ef2e1fd32ea6527878e10c4",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_NONE.json",
+      "sha1": "70d15f2ca981441d765a88c42a42c22cba82f368",
+      "bytes": 313
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_OCTAZOOKA.json",
+      "sha1": "42b246836a9fbfaa16105ca0eaaa540486f36f9d",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ODOR_SLEUTH.json",
+      "sha1": "2d3ac58f64f5ee2509a00844cfa70dbb55467463",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_OUTRAGE.json",
+      "sha1": "400251c88c1b6873b791bf99891d7e7d9bd4a1d2",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_OVERHEAT.json",
+      "sha1": "a861db9e9b6139b1818ebc3ba4a5b2b9f64a81a9",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_PAIN_SPLIT.json",
+      "sha1": "714512c91d08e428e93afad5278cba4596929e9e",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_PAY_DAY.json",
+      "sha1": "e59d6ed20715f671f54e6b5dc6b565da3a57edc2",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_PECK.json",
+      "sha1": "60c4939ac4fe71031f552039e24a3560024d8d5e",
+      "bytes": 314
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_PERISH_SONG.json",
+      "sha1": "68ffb01c0a709e93e97533ed00687ce6b7bd0389",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_PETAL_DANCE.json",
+      "sha1": "16f0878f6ab9637c75b007da038a6682880dbb90",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_PIN_MISSILE.json",
+      "sha1": "667be97b40344c02c9388ecae672690cbd1514e6",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_POISON_FANG.json",
+      "sha1": "3895a74b476ca194e75f3e181ec927e8b4205f26",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_POISON_GAS.json",
+      "sha1": "88d911f618813542e22f6e1dd436b12bd099633e",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_POISON_POWDER.json",
+      "sha1": "ca7d65fe92b3e11bac0d6d7253d869fa38980e02",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_POISON_STING.json",
+      "sha1": "5bffa4d55bd0ff792ddf7c7639557150a82ac452",
+      "bytes": 330
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_POISON_TAIL.json",
+      "sha1": "4f29ba669cd5a434be8c0107a7cb4beb42b810d3",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_POUND.json",
+      "sha1": "6d0e13807a68bb2fb085f960b51fad101308f2bf",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_POWDER_SNOW.json",
+      "sha1": "67d8cb84ae61e47f92dceaafa871c893e9161ebd",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_PRESENT.json",
+      "sha1": "b298d675ba71f3791129e44303216a0ce06ec535",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_PROTECT.json",
+      "sha1": "94517d86c7663528cf52abb4aad0f95b382a87a5",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_PSYBEAM.json",
+      "sha1": "92380b1fb43e0033c6a8c061e9fbeacf4aade8f7",
+      "bytes": 320
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_PSYCHIC.json",
+      "sha1": "d4ac3a2963868da82a01f748bc73df0d1bed7f13",
+      "bytes": 320
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_PSYCHO_BOOST.json",
+      "sha1": "90add1804e32835956d388d61c4161e46dd9fed3",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_PSYCH_UP.json",
+      "sha1": "ccc2d356e1f7a3e6bb233d6fd08d73919b92eed5",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_PSYWAVE.json",
+      "sha1": "8a537ae6c4a2e9f5939642a13d2f5bae2175498d",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_PURSUIT.json",
+      "sha1": "b74663e3fe41517fcce305d1372d236c38b35416",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_QUICK_ATTACK.json",
+      "sha1": "b7d294e2746d3b1a1e6e740a1f27762cc7f1fa12",
+      "bytes": 330
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_RAGE.json",
+      "sha1": "f69f2e80c8abbe0582b20d9aa48d00410692cbaf",
+      "bytes": 314
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_RAIN_DANCE.json",
+      "sha1": "d10364a4f7c73d21a0b8e7e3dc69d32b13a23250",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_RAPID_SPIN.json",
+      "sha1": "f1fadaa2b0cccc38d60da41e6732bf07e80dd4e0",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_RAZOR_LEAF.json",
+      "sha1": "2a09e3e3689e02e7ad4d54ee9c620e2d35fb82bf",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_RAZOR_WIND.json",
+      "sha1": "f0d56720084c2afc6e075f4f15a5444b10254db5",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_RECOVER.json",
+      "sha1": "488151dba42c9c1f3dd337a871938607624252b7",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_RECYCLE.json",
+      "sha1": "e83fcbf1ab239ddd7f61bc7ce258b5dd895784d6",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_REFLECT.json",
+      "sha1": "ed88c882a50e38fdb7032e9cbff3be5ecd48d593",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_REFRESH.json",
+      "sha1": "aa7b5c7519753355e56bc171157df3e90a53fcfb",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_REST.json",
+      "sha1": "c5d9df66f35b014f3a9c2ef854b6b9196c8e324e",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_RETURN.json",
+      "sha1": "7f6b0e5cedf8760a0810d395322873f884378eb4",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_REVENGE.json",
+      "sha1": "79aaf2c1cddb1c569af851f0030e9ff30b3e77e1",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_REVERSAL.json",
+      "sha1": "f4c6f79f928bebc39b791559d442eac2bc753339",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ROAR.json",
+      "sha1": "f14172ee6d543c06ac9d537f70ebb2f5accc49a5",
+      "bytes": 314
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ROCK_BLAST.json",
+      "sha1": "eb02c9502bbb8449a7d5527bb94a0dddc3960226",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ROCK_SLIDE.json",
+      "sha1": "0b691633816e44fa51435af6104ea2e09c2f4094",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ROCK_SMASH.json",
+      "sha1": "1870780c8eef1a85a3a5c1157d1f46e467352e32",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ROCK_THROW.json",
+      "sha1": "71f578b06ef6c3fecdfabc780e8500268f6224c9",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ROCK_TOMB.json",
+      "sha1": "c5fec1278594691f649ed03c060225f8579b71c0",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ROLE_PLAY.json",
+      "sha1": "2d6b006f5bc29182bf58a095e97604251da8a3b6",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ROLLING_KICK.json",
+      "sha1": "00739d61f8966cc6439d7f58eac91e769a75664e",
+      "bytes": 330
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ROLLOUT.json",
+      "sha1": "bc20eb930f43e4c3346f2bf7555d78abc476ed64",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SACRED_FIRE.json",
+      "sha1": "16eca0de63ed2080dbf19b07c2a5ffa340c193e7",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SAFEGUARD.json",
+      "sha1": "e153b9f25c12a982a667a845b22776eae1a2cf6b",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SANDSTORM.json",
+      "sha1": "be14ea21014466541b1bb66c0a19a93c26096a6b",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SAND_ATTACK.json",
+      "sha1": "5f76b7b9dc7d19b82e5c803299df2c03ee656b1c",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SAND_TOMB.json",
+      "sha1": "aa1230446d3b983c40ae6d999b5d6ec2e11d582a",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SCARY_FACE.json",
+      "sha1": "e41528df56a442a9dbe7e6788aa83633191f4583",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SCRATCH.json",
+      "sha1": "2171f2ce0eece597f8e884f74cafdf5bd1aa52cd",
+      "bytes": 320
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SCREECH.json",
+      "sha1": "95d7161fa9265f893b0c02fe3cf7c965b36b6d0f",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SECRET_POWER.json",
+      "sha1": "19784856fa438606b214558368bbe6380574dbf8",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SEISMIC_TOSS.json",
+      "sha1": "07223d05294027a2c204a3f203767f5ec7b7ab14",
+      "bytes": 330
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SELF_DESTRUCT.json",
+      "sha1": "bb98be10672b9ad54c0b67bbb4c54252d5610f26",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SHADOW_BALL.json",
+      "sha1": "325eeadffa4f0c7470610491fadadbd37f3c7261",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SHADOW_PUNCH.json",
+      "sha1": "1ba86b90d4739ff80d8066c347c30757e9d6a5fb",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SHARPEN.json",
+      "sha1": "2459977caba557194a45b1f9527b917e248801f3",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SHEER_COLD.json",
+      "sha1": "af4cae3e28b28af0f918e7b47dec16f7d30ee10e",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SHOCK_WAVE.json",
+      "sha1": "a820b7c2c64a8033e592489a2212bc121f1a5e50",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SIGNAL_BEAM.json",
+      "sha1": "d0e56e4da6948b46fd130d34c47e43a8166b3b7e",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SILVER_WIND.json",
+      "sha1": "a37d92247f59400b7f624edb54136e8cc9af72f7",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SING.json",
+      "sha1": "bcdc04734eba866ec41501f64c21354744fdb3cd",
+      "bytes": 314
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SKETCH.json",
+      "sha1": "0d5db4dada55a40592bf3db2856f6922e10ce82f",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SKILL_SWAP.json",
+      "sha1": "e897e03a66de7dec49aa29dddb22c643d4f1c4f9",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SKULL_BASH.json",
+      "sha1": "17db6b607cdce82cf3bb1a7f4233dc3556de1c83",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SKY_ATTACK.json",
+      "sha1": "3c14864c6535311827a1d2ea975df8e2ffeef134",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SKY_UPPERCUT.json",
+      "sha1": "92c83ab1489eb7fbe19ce56a1d01688a07e3c65b",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SLACK_OFF.json",
+      "sha1": "1887f8961ae3b3aca01d673507935f97b3ed15b6",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SLAM.json",
+      "sha1": "6e58fa36c3f0c8b9cee56dea8f6686931a086b29",
+      "bytes": 314
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SLASH.json",
+      "sha1": "5dad2f66589ee4beef8c7afbdc8dd0fdb544eeeb",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SLEEP_POWDER.json",
+      "sha1": "fb051eb1a2ff8c6a913626d8ddf57c4e9ae5d7b8",
+      "bytes": 330
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SLEEP_TALK.json",
+      "sha1": "cea068894915dbd1ff655d37451c743126d612b8",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SLUDGE.json",
+      "sha1": "58de8a14a740715ddba4bdd8537b59904cda90fc",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SLUDGE_BOMB.json",
+      "sha1": "fde194aa5c4fddab31a65dcdef4f2f8a7b4e6a38",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SMELLING_SALT.json",
+      "sha1": "0527c7d203f312a63bd8dfcbde80e9d49eda627d",
+      "bytes": 333
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SMOG.json",
+      "sha1": "4cb08dd05a7f57b25ec1b5659d87218ba26173ff",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SMOKESCREEN.json",
+      "sha1": "bbe862c0c0d75713ab075935b606f14e4d4af454",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SNATCH.json",
+      "sha1": "fb65d6489e71d299d30d5de1a731567d674bb920",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SNORE.json",
+      "sha1": "4db0cf6eb91e56fa5c990be413db48d11eb13779",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SOFT_BOILED.json",
+      "sha1": "679b382443e753443bee134a1d08c44fdd73dd8b",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SOLAR_BEAM.json",
+      "sha1": "43707543b8ef758d2fc40e81c86dac89816ce61a",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SONIC_BOOM.json",
+      "sha1": "9160d8cdfbbd1f29651dcefadd7f538fd1a43a66",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SPARK.json",
+      "sha1": "1e86fecd9ded05ba80cb8c434da2ea2ca2f36ba2",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SPIDER_WEB.json",
+      "sha1": "6a3c0530c047bd7dc8a8361819a8529826c6197e",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SPIKES.json",
+      "sha1": "ef669ca9e9f5eb59f2486d5b496490fb7b6a4ea9",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SPIKE_CANNON.json",
+      "sha1": "3f1829913088d9b568125044ab2f48d62e34b57f",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SPITE.json",
+      "sha1": "545eab35360834905263877a53d72bdb34816fb5",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SPIT_UP.json",
+      "sha1": "dc6a12b755e2732172e53b521d4f8156dda07876",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SPLASH.json",
+      "sha1": "ecc3d4aa7df23e37eecba837b4327c27d8a78331",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SPORE.json",
+      "sha1": "82d671d3df9bbeb6dfc53a8a4252f5c545ac07f7",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_STEEL_WING.json",
+      "sha1": "ebbc9b9a8f194515894597d54213b9e600423297",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_STOCKPILE.json",
+      "sha1": "234f695c758f542fc9c863846a134c7ce7130a82",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_STOMP.json",
+      "sha1": "79c2b7f092b1dca858a68b0c71dcb3ce255dd973",
+      "bytes": 316
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_STRENGTH.json",
+      "sha1": "62753fb50fb55475a51abb111f7be35404f75459",
+      "bytes": 322
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_STRING_SHOT.json",
+      "sha1": "2d9404abe0f5311eb81efdf1ff98f620775ad3c6",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_STRUGGLE.json",
+      "sha1": "6a50a8e0bfd76acb65576951cf46b74f18f41b32",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_STUN_SPORE.json",
+      "sha1": "fbbd4e14c3979caed6c9a69cdfce3e8125b8c12b",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SUBMISSION.json",
+      "sha1": "ba7a0511733db5e81afa316e284477e500ed18a2",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SUBSTITUTE.json",
+      "sha1": "a4e9093f018acfa7ad273bedec9198be2bd4607c",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SUNNY_DAY.json",
+      "sha1": "3aaf171e3484dea44091e2fc8160e9dae4fccd3a",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SUPERPOWER.json",
+      "sha1": "366cef98983a9f392f9dfe02001c0ca36ada4d74",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SUPERSONIC.json",
+      "sha1": "f12bdb6f57bf2c9b3c5b97e34fa9dfd7697c64a5",
+      "bytes": 326
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SUPER_FANG.json",
+      "sha1": "b6557ad098881e0e35c1df1a89b792ba41a5b0e4",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SURF.json",
+      "sha1": "4f32421a9157e0cb680bd6c929471cf0f9439f74",
+      "bytes": 314
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SWAGGER.json",
+      "sha1": "e1d5aa36d5e4c2eb5aeb510a14b64adc0b4dadea",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SWALLOW.json",
+      "sha1": "392a9e3dd495df8c37fdc76a02953c3beb4e2be5",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SWEET_KISS.json",
+      "sha1": "ce22b94efd442272e5e65d697ce4e58933840e21",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SWEET_SCENT.json",
+      "sha1": "df7e7b602fc85228975c273f41a1069fc449105e",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SWIFT.json",
+      "sha1": "048b182bab28e657451a828893b9977d4da9a096",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SWORDS_DANCE.json",
+      "sha1": "15409e2126f2e6dac6c6cab5510acd9ae071a8c6",
+      "bytes": 330
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_SYNTHESIS.json",
+      "sha1": "c15ece9eb232e9741f1bb030d39729e1cf2f3185",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_TACKLE.json",
+      "sha1": "301977c12aec0f905806f3f6ba7743daaaaadb3d",
+      "bytes": 318
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_TAIL_GLOW.json",
+      "sha1": "2784b5b13ac28444fc4b22be14e32867614c5076",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_TAIL_WHIP.json",
+      "sha1": "ad1e1e768804d0258efc791982a80af5a1cc9da3",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_TAKE_DOWN.json",
+      "sha1": "a3d77b6a1cfb08a3b61c6218ce94e524011b854e",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_TAUNT.json",
+      "sha1": "b3dd9a1e3c2e6ccad3154842a643452722dfefa9",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_TEETER_DANCE.json",
+      "sha1": "2b4fb00545d8bd556ca6560f3d598cc4f96248d9",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_TELEPORT.json",
+      "sha1": "04d95b9815175ae22b4d07843ac3cd577b69e4e4",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_THIEF.json",
+      "sha1": "4f149c5e64670bc729d1b8f01cfd0d8c2cfa5cf6",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_THRASH.json",
+      "sha1": "8f7d792c47e110afdf13cfd6427d742c6886518e",
+      "bytes": 318
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_THUNDER.json",
+      "sha1": "764085d8f308fa69262f4b542ce47f7df24cd142",
+      "bytes": 320
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_THUNDERBOLT.json",
+      "sha1": "84c239fe6e46b4eab22003945c507ff74f1c5274",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_THUNDER_PUNCH.json",
+      "sha1": "ccced56a093c4eb408ec868405cd60fad0e98f39",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_THUNDER_SHOCK.json",
+      "sha1": "7c34d81feb863e35bf2a665c58000c24d62fbc2e",
+      "bytes": 332
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_THUNDER_WAVE.json",
+      "sha1": "a4b9136c5ea9a3a5baff8941629fee8accd2c582",
+      "bytes": 330
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_TICKLE.json",
+      "sha1": "b0aba45226b7c5608fcad6d4bca289a4ea54e4c1",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_TORMENT.json",
+      "sha1": "3b4f2e43d7fbfbebbfd4cae8000d603e163962f2",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_TOXIC.json",
+      "sha1": "f0ea7ab84e4e4ed2a1087f575846f4577e2dea04",
+      "bytes": 316
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_TRANSFORM.json",
+      "sha1": "0e043051133df72a52b12881490e739deff75cf5",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_TRICK.json",
+      "sha1": "cd5af904e03cd68311b0aaa5bb139c95fef355de",
+      "bytes": 317
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_TRIPLE_KICK.json",
+      "sha1": "b35ce1b513c940265c9f960f574ad7f91eb52b16",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_TRI_ATTACK.json",
+      "sha1": "343e0cdbcef00ccc23cf3b5c74b135db3f522304",
+      "bytes": 327
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_TWINEEDLE.json",
+      "sha1": "c766b23c3d45f37084922046a223a719ec31f740",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_TWISTER.json",
+      "sha1": "717c4297479183e633a844430722940d608b61b7",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_UNAVAILABLE.json",
+      "sha1": "5acfcfb3833841bbc574716bbf0c1697f972f038",
+      "bytes": 334
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_UPROAR.json",
+      "sha1": "615aa0e13de1bfd8df3099530dd6adcfcaba17b0",
+      "bytes": 319
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_VICE_GRIP.json",
+      "sha1": "ba5876fe3e565d0c074cca5e75823f7a2ce4d723",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_VINE_WHIP.json",
+      "sha1": "34e614cf806491f6f59b947f604eeb40fae80e24",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_VITAL_THROW.json",
+      "sha1": "d4cc0844903dc32521867c3b2b8d667a93dc5b82",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_VOLT_TACKLE.json",
+      "sha1": "f7270be5af45cd3dbbc9ca0eb8bd1ceff969cf31",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_WATERFALL.json",
+      "sha1": "ae03e32977a41f492cddfc2d5679899359c98d4e",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_WATER_GUN.json",
+      "sha1": "ac0ed41c96e5f73445c152adeb04c32c949fbe76",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_WATER_PULSE.json",
+      "sha1": "e8384ecb3197cb25dafeb683a27368cd0cd709c3",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_WATER_SPORT.json",
+      "sha1": "e1a81f2961ea13d87bd86a8afb6cd2b7f5f3eb02",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_WATER_SPOUT.json",
+      "sha1": "d742c83d9f7b93d714dd76a61dfc02279f1479a1",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_WEATHER_BALL.json",
+      "sha1": "6a9c0fdd8c761bf69e426e9cd925d9c2ef0365d9",
+      "bytes": 331
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_WHIRLPOOL.json",
+      "sha1": "1420e0774462d1a0454e5936f9a1c40103051be5",
+      "bytes": 325
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_WHIRLWIND.json",
+      "sha1": "1b4f564a3e73af37354437ade559d706631e0fdc",
+      "bytes": 324
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_WILL_O_WISP.json",
+      "sha1": "944f121274e940d25b59af33abfdcfde409aaf26",
+      "bytes": 329
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_WING_ATTACK.json",
+      "sha1": "3711e32e797aa623c057e2f8e30b4a288002db11",
+      "bytes": 328
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_WISH.json",
+      "sha1": "01563a485d3cb3f93798ffe3915bf617c663ce89",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_WITHDRAW.json",
+      "sha1": "d36f95d1cda8c43e17ca3dbea70787b23c905677",
+      "bytes": 323
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_WRAP.json",
+      "sha1": "67e7fd506c89f386c298ef9d60c557f99c183a5f",
+      "bytes": 314
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_YAWN.json",
+      "sha1": "398e13f6b40db5a563d4a749bf461716ea8c8cef",
+      "bytes": 315
+    },
+    {
+      "path": "mods/vanilla/moves/moves/MOVE_ZAP_CANNON.json",
+      "sha1": "da747375570b2c779b821373c8e9a77fa9206424",
+      "bytes": 327
     }
   ],
   "counts": {
-    "sourceFiles": 6
+    "entries": 356
   }
 }

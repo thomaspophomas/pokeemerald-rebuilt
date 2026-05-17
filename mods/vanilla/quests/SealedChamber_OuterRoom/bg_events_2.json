@@ -1,0 +1,30 @@
+{
+  "id": "SealedChamber_OuterRoom:bg_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SealedChamber_OuterRoom/map.json",
+    "sha1": "f93d9e62e636627f8bf3181cf0c7de7a2941e54c"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SealedChamber_OuterRoom/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 5,
+      "y": 12,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SealedChamber_OuterRoom_EventScript_BrailleMNO"
+    }
+  },
+  "map": "SealedChamber_OuterRoom",
+  "mapId": "MAP_SEALED_CHAMBER_OUTER_ROOM",
+  "eventType": "bg_events",
+  "index": 2,
+  "script": "SealedChamber_OuterRoom_EventScript_BrailleMNO",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

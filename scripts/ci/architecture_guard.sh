@@ -180,6 +180,14 @@ for domain in maps npcs trainers trainer_parties weather time flags events langu
         echo "Missing vanilla mod expectation: mods/vanilla/expectations/$domain/baseline.expected.json" >&2
         exit 1
     fi
+    if [ ! -f "mods/vanilla/$domain/index.json" ]; then
+        echo "Missing vanilla mod API index: mods/vanilla/$domain/index.json" >&2
+        exit 1
+    fi
+    if [ ! -f "mods/vanilla/$domain/_source_manifest.json" ]; then
+        echo "Missing vanilla mod source audit manifest: mods/vanilla/$domain/_source_manifest.json" >&2
+        exit 1
+    fi
 done
 
 if ! grep -R -n "ModApi_Init" src/engine include/engine >/tmp/architecture_guard_matches.txt 2>/dev/null; then

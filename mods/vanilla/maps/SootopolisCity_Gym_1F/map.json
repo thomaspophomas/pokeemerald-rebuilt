@@ -82,5 +82,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "SootopolisCity_Gym_1F_EventScript_RightGymStatue"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Gym_1F/map.json",
+    "sha1": "df3baa635e862c32d0336dc9ef2a4d65df8229b2"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SootopolisCity_Gym_1F/map.json",
+    "mapName": "SootopolisCity_Gym_1F",
+    "scriptsSourcePath": "data/maps/SootopolisCity_Gym_1F/scripts.inc"
+  },
+  "mapGroup": 15,
+  "mapNum": 0,
+  "mapGroupSymbol": "gMapGroup_IndoorSootopolis",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

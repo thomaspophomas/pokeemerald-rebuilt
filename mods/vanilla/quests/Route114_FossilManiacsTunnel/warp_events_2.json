@@ -1,0 +1,27 @@
+{
+  "id": "Route114_FossilManiacsTunnel:warp_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_FossilManiacsTunnel/map.json",
+    "sha1": "86268b956d755367739c3557245a0c9596d8a4cf"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route114_FossilManiacsTunnel/map.json",
+    "raw": {
+      "x": 6,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_DESERT_UNDERPASS",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Route114_FossilManiacsTunnel",
+  "mapId": "MAP_ROUTE114_FOSSIL_MANIACS_TUNNEL",
+  "eventType": "warp_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

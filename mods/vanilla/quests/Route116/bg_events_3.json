@@ -1,0 +1,27 @@
+{
+  "id": "Route116:bg_events:3",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116/map.json",
+    "sha1": "4917a04a095314d28f76d7b4807e78bce1251f9a"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route116/map.json",
+    "raw": {
+      "type": "secret_base",
+      "x": 71,
+      "y": 4,
+      "elevation": 0,
+      "secret_base_id": "SECRET_BASE_BLUE_CAVE1_1"
+    }
+  },
+  "map": "Route116",
+  "mapId": "MAP_ROUTE116",
+  "eventType": "bg_events",
+  "index": 3,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

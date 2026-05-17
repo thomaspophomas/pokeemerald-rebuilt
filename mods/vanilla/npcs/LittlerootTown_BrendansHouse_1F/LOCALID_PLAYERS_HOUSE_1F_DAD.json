@@ -1,0 +1,43 @@
+{
+  "id": "LittlerootTown_BrendansHouse_1F:LOCALID_PLAYERS_HOUSE_1F_DAD",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_1F/map.json",
+    "sha1": "f7be2e429bafe6de2465040402d53ed22d2e30b1"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/map.json",
+    "raw": {
+      "local_id": "LOCALID_PLAYERS_HOUSE_1F_DAD",
+      "graphics_id": "OBJ_EVENT_GFX_NORMAN",
+      "x": 5,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_PLAYERS_HOUSE_DAD"
+    }
+  },
+  "map": "LittlerootTown_BrendansHouse_1F",
+  "mapId": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F",
+  "localId": "LOCALID_PLAYERS_HOUSE_1F_DAD",
+  "graphicsId": "OBJ_EVENT_GFX_NORMAN",
+  "x": 5,
+  "y": 6,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_HIDE_PLAYERS_HOUSE_DAD",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

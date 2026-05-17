@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_ALVARO",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_ALVARO] =\n    {\n        .trainerClass = TRAINER_CLASS_PSYCHIC,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,\n        .trainerPic = TRAINER_PIC_PSYCHIC_M,\n        .trainerName = _(\"ALVARO\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = 0,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_Alvaro),\n    },"
+  },
+  "symbol": "TRAINER_ALVARO",
+  "numericId": 849,
+  "trainerName": "ALVARO",
+  "trainerClass": "TRAINER_CLASS_PSYCHIC",
+  "trainerPic": "TRAINER_PIC_PSYCHIC_M",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_INTENSE",
+  "doubleBattle": "FALSE",
+  "aiFlags": "0",
+  "partyRef": "sParty_Alvaro",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "RecordCorner:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RecordCorner/map.json",
+    "sha1": "e4f2e10aeeca18cc7a087f725eb854fb443be6cc"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/RecordCorner/map.json",
+    "raw": {
+      "x": 8,
+      "y": 9,
+      "elevation": 3,
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "WARP_ID_DYNAMIC"
+    }
+  },
+  "map": "RecordCorner",
+  "mapId": "MAP_RECORD_CORNER",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

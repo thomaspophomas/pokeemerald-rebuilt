@@ -1,0 +1,45 @@
+{
+  "id": "Route116_TunnelersRestHouse:2",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116_TunnelersRestHouse/map.json",
+    "sha1": "8cf753cfc766fad16331c25029b818100d00a61b"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route116_TunnelersRestHouse/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
+      "x": 3,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route116_TunnelersRestHouse_EventScript_Tunneler3",
+      "flag": "0"
+    }
+  },
+  "map": "Route116_TunnelersRestHouse",
+  "mapId": "MAP_ROUTE116_TUNNELERS_REST_HOUSE",
+  "localId": 2,
+  "graphicsId": "OBJ_EVENT_GFX_POKEFAN_M",
+  "x": 3,
+  "y": 6,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Route116_TunnelersRestHouse_EventScript_Tunneler3",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "SlateportCity_Harbor:3",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/map.json",
+    "sha1": "75cd1653854ff3fa0e1314dbec4cf661284b8498"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SlateportCity_Harbor/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
+      "x": 1,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SlateportCity_Harbor_EventScript_FatMan",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_HARBOR_PATRONS"
+    }
+  },
+  "map": "SlateportCity_Harbor",
+  "mapId": "MAP_SLATEPORT_CITY_HARBOR",
+  "localId": 3,
+  "graphicsId": "OBJ_EVENT_GFX_FAT_MAN",
+  "x": 1,
+  "y": 12,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "SlateportCity_Harbor_EventScript_FatMan",
+  "flag": "FLAG_HIDE_SLATEPORT_CITY_HARBOR_PATRONS",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

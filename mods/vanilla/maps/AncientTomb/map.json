@@ -77,5 +77,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "AncientTomb_EventScript_CaveEntranceSide"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AncientTomb/map.json",
+    "sha1": "115981ccd581f3de9b23e46635de7032143af8b7"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/AncientTomb/map.json",
+    "mapName": "AncientTomb",
+    "scriptsSourcePath": "data/maps/AncientTomb/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 68,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "id": "RustboroCity_Mart:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Mart/map.json",
+    "sha1": "344ee325eaf219ff8634808205c65d56027d0525"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/RustboroCity_Mart/map.json"
+  },
+  "map": "RustboroCity_Mart",
+  "mapId": "MAP_RUSTBORO_CITY_MART",
+  "weather": "WEATHER_NONE"
+}

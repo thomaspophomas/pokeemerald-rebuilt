@@ -78,5 +78,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_1F/map.json",
+    "sha1": "a13eeb3f0f47f71bf791c3da639b5a46c01b8aa9"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/AquaHideout_1F/map.json",
+    "mapName": "AquaHideout_1F",
+    "scriptsSourcePath": "data/maps/AquaHideout_1F/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 23,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,16 @@
+{
+  "id": "PetalburgCity_Mart:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Mart/map.json",
+    "sha1": "2157d6268f73748aa61e376f99db7a13d56c7eff"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/PetalburgCity_Mart/map.json"
+  },
+  "map": "PetalburgCity_Mart",
+  "mapId": "MAP_PETALBURG_CITY_MART",
+  "weather": "WEATHER_NONE"
+}

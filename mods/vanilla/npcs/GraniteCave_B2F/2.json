@@ -1,0 +1,45 @@
+{
+  "id": "GraniteCave_B2F:2",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/GraniteCave_B2F/map.json",
+    "sha1": "677a91e7369311b7ee62fe2f7c178d63d951e776"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/GraniteCave_B2F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 29,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GraniteCave_B2F_EventScript_ItemRareCandy",
+      "flag": "FLAG_ITEM_GRANITE_CAVE_B2F_RARE_CANDY"
+    }
+  },
+  "map": "GraniteCave_B2F",
+  "mapId": "MAP_GRANITE_CAVE_B2F",
+  "localId": 2,
+  "graphicsId": "OBJ_EVENT_GFX_ITEM_BALL",
+  "x": 29,
+  "y": 4,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "GraniteCave_B2F_EventScript_ItemRareCandy",
+  "flag": "FLAG_ITEM_GRANITE_CAVE_B2F_RARE_CANDY",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

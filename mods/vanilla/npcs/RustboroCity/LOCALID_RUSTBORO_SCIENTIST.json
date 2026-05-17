@@ -1,0 +1,43 @@
+{
+  "id": "RustboroCity:LOCALID_RUSTBORO_SCIENTIST",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/map.json",
+    "sha1": "89776bb64fdef8d9171b677d4f7ebeadd02a5674"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/RustboroCity/map.json",
+    "raw": {
+      "local_id": "LOCALID_RUSTBORO_SCIENTIST",
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 11,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_RUSTBORO_CITY_SCIENTIST"
+    }
+  },
+  "map": "RustboroCity",
+  "mapId": "MAP_RUSTBORO_CITY",
+  "localId": "LOCALID_RUSTBORO_SCIENTIST",
+  "graphicsId": "OBJ_EVENT_GFX_SCIENTIST_1",
+  "x": 11,
+  "y": 15,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_HIDE_RUSTBORO_CITY_SCIENTIST",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

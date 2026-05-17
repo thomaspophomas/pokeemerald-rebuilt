@@ -1,0 +1,43 @@
+{
+  "id": "Route110:LOCALID_ROUTE110_BIRCH",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/map.json",
+    "sha1": "8a0d70f41dabc8b115727a1fccde79f1c803c9e1"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route110/map.json",
+    "raw": {
+      "local_id": "LOCALID_ROUTE110_BIRCH",
+      "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
+      "x": 9,
+      "y": 79,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_ROUTE_110_BIRCH"
+    }
+  },
+  "map": "Route110",
+  "mapId": "MAP_ROUTE110",
+  "localId": "LOCALID_ROUTE110_BIRCH",
+  "graphicsId": "OBJ_EVENT_GFX_PROF_BIRCH",
+  "x": 9,
+  "y": 79,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_HIDE_ROUTE_110_BIRCH",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

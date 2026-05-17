@@ -1,0 +1,27 @@
+{
+  "id": "RustboroCity_Gym:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Gym/map.json",
+    "sha1": "3832f5ae168f3035dc757eacc22ca427c5b16726"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/RustboroCity_Gym/map.json",
+    "raw": {
+      "x": 6,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_RUSTBORO_CITY",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "RustboroCity_Gym",
+  "mapId": "MAP_RUSTBORO_CITY_GYM",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

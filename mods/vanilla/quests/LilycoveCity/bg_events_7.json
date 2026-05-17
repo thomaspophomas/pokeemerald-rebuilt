@@ -1,0 +1,30 @@
+{
+  "id": "LilycoveCity:bg_events:7",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/map.json",
+    "sha1": "ecd4d8c0f7b8c74fa70d53df6e4922fed0c006b6"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LilycoveCity/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 6,
+      "y": 30,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LilycoveCity_EventScript_HarborSign"
+    }
+  },
+  "map": "LilycoveCity",
+  "mapId": "MAP_LILYCOVE_CITY",
+  "eventType": "bg_events",
+  "index": 7,
+  "script": "LilycoveCity_EventScript_HarborSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

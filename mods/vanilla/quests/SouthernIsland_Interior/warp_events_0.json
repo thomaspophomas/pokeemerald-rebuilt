@@ -1,0 +1,27 @@
+{
+  "id": "SouthernIsland_Interior:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SouthernIsland_Interior/map.json",
+    "sha1": "3a9266b65dd007c4c598d887c50d71b1325f5ba4"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SouthernIsland_Interior/map.json",
+    "raw": {
+      "x": 13,
+      "y": 18,
+      "elevation": 3,
+      "dest_map": "MAP_SOUTHERN_ISLAND_EXTERIOR",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "SouthernIsland_Interior",
+  "mapId": "MAP_SOUTHERN_ISLAND_INTERIOR",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

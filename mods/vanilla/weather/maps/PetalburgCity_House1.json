@@ -1,0 +1,16 @@
+{
+  "id": "PetalburgCity_House1:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_House1/map.json",
+    "sha1": "2b08740298e1d245c88ceac1ed412a0aee4477ab"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/PetalburgCity_House1/map.json"
+  },
+  "map": "PetalburgCity_House1",
+  "mapId": "MAP_PETALBURG_CITY_HOUSE1",
+  "weather": "WEATHER_NONE"
+}

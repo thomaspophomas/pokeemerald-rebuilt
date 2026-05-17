@@ -1,0 +1,31 @@
+{
+  "id": "SlateportCity:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/map.json",
+    "sha1": "69b0cc6d8d6afc1f4a83fc0c3a8bec759f125947"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SlateportCity/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 10,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE",
+      "var_value": "2",
+      "script": "SlateportCity_EventScript_ScottBattleTentScene"
+    }
+  },
+  "map": "SlateportCity",
+  "mapId": "MAP_SLATEPORT_CITY",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": "SlateportCity_EventScript_ScottBattleTentScene",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

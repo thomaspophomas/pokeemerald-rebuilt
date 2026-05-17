@@ -1,0 +1,46 @@
+{
+  "id": "MtPyre_Summit:LOCALID_MT_PYRE_SUMMIT_GRUNT_4",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/map.json",
+    "sha1": "eb9d040aed670ed1a1ab1ef657d34716f4420686"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MtPyre_Summit/map.json",
+    "raw": {
+      "local_id": "LOCALID_MT_PYRE_SUMMIT_GRUNT_4",
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "x": 25,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "MtPyre_Summit_EventScript_Grunt4",
+      "flag": "FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA"
+    }
+  },
+  "map": "MtPyre_Summit",
+  "mapId": "MAP_MT_PYRE_SUMMIT",
+  "localId": "LOCALID_MT_PYRE_SUMMIT_GRUNT_4",
+  "graphicsId": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+  "x": 25,
+  "y": 11,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "3",
+  "script": "MtPyre_Summit_EventScript_Grunt4",
+  "flag": "FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

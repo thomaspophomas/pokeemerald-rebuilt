@@ -1,0 +1,16 @@
+{
+  "id": "SkyPillar_5F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_5F/map.json",
+    "sha1": "5a0cab3d03447039371a247158cdd9348a95d589"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/SkyPillar_5F/map.json"
+  },
+  "map": "SkyPillar_5F",
+  "mapId": "MAP_SKY_PILLAR_5F",
+  "weather": "WEATHER_NONE"
+}

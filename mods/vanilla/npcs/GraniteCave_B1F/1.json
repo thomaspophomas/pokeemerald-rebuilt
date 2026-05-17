@@ -1,0 +1,45 @@
+{
+  "id": "GraniteCave_B1F:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/GraniteCave_B1F/map.json",
+    "sha1": "bd2c7e4f9b0550b265729d3ef593887d3ce091e3"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/GraniteCave_B1F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 15,
+      "y": 21,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GraniteCave_B1F_EventScript_ItemPokeBall",
+      "flag": "FLAG_ITEM_GRANITE_CAVE_B1F_POKE_BALL"
+    }
+  },
+  "map": "GraniteCave_B1F",
+  "mapId": "MAP_GRANITE_CAVE_B1F",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_ITEM_BALL",
+  "x": 15,
+  "y": 21,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "GraniteCave_B1F_EventScript_ItemPokeBall",
+  "flag": "FLAG_ITEM_GRANITE_CAVE_B1F_POKE_BALL",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -91,5 +91,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_PokemonCenter_2F/map.json",
+    "sha1": "589d4b276d790b1218aa7e068b028a80f8ad1a94"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SootopolisCity_PokemonCenter_2F/map.json",
+    "mapName": "SootopolisCity_PokemonCenter_2F",
+    "scriptsSourcePath": "data/maps/SootopolisCity_PokemonCenter_2F/scripts.inc"
+  },
+  "mapGroup": 15,
+  "mapNum": 3,
+  "mapGroupSymbol": "gMapGroup_IndoorSootopolis",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,27 @@
+{
+  "id": "AquaHideout_B1F:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B1F/map.json",
+    "sha1": "d18425dffc1bd0e84be8eebcb9e1f8fab27278ed"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/AquaHideout_B1F/map.json",
+    "raw": {
+      "x": 18,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_AQUA_HIDEOUT_B2F",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "AquaHideout_B1F",
+  "mapId": "MAP_AQUA_HIDEOUT_B1F",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

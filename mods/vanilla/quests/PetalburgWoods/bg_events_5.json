@@ -1,0 +1,30 @@
+{
+  "id": "PetalburgWoods:bg_events:5",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/map.json",
+    "sha1": "67d0842207660bdef7b89d73a15eb7943073ee9a"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/PetalburgWoods/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 11,
+      "y": 8,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "PetalburgWoods_EventScript_Sign2"
+    }
+  },
+  "map": "PetalburgWoods",
+  "mapId": "MAP_PETALBURG_WOODS",
+  "eventType": "bg_events",
+  "index": 5,
+  "script": "PetalburgWoods_EventScript_Sign2",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

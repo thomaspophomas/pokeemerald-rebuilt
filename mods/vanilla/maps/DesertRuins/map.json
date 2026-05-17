@@ -77,5 +77,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "DesertRuins_EventScript_CaveEntranceSide"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DesertRuins/map.json",
+    "sha1": "10f7e73dc32fffb52b167f708e71b2e152847e81"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/DesertRuins/map.json",
+    "mapName": "DesertRuins",
+    "scriptsSourcePath": "data/maps/DesertRuins/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 6,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

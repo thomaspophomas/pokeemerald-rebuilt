@@ -1,0 +1,952 @@
+{
+  "domain": "wild_encounters",
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "gBattlePikeWildMonHeaders:gBattlePike_1:131",
+      "path": "gBattlePikeWildMonHeaders/gBattlePike_1_131.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "gBattlePike_1"
+    },
+    {
+      "id": "gBattlePikeWildMonHeaders:gBattlePike_2:132",
+      "path": "gBattlePikeWildMonHeaders/gBattlePike_2_132.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "gBattlePike_2"
+    },
+    {
+      "id": "gBattlePikeWildMonHeaders:gBattlePike_3:133",
+      "path": "gBattlePikeWildMonHeaders/gBattlePike_3_133.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "gBattlePike_3"
+    },
+    {
+      "id": "gBattlePikeWildMonHeaders:gBattlePike_4:134",
+      "path": "gBattlePikeWildMonHeaders/gBattlePike_4_134.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "gBattlePike_4"
+    },
+    {
+      "id": "gBattlePyramidWildMonHeaders:gBattlePyramid_1:124",
+      "path": "gBattlePyramidWildMonHeaders/gBattlePyramid_1_124.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "gBattlePyramid_1"
+    },
+    {
+      "id": "gBattlePyramidWildMonHeaders:gBattlePyramid_2:125",
+      "path": "gBattlePyramidWildMonHeaders/gBattlePyramid_2_125.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "gBattlePyramid_2"
+    },
+    {
+      "id": "gBattlePyramidWildMonHeaders:gBattlePyramid_3:126",
+      "path": "gBattlePyramidWildMonHeaders/gBattlePyramid_3_126.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "gBattlePyramid_3"
+    },
+    {
+      "id": "gBattlePyramidWildMonHeaders:gBattlePyramid_4:127",
+      "path": "gBattlePyramidWildMonHeaders/gBattlePyramid_4_127.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "gBattlePyramid_4"
+    },
+    {
+      "id": "gBattlePyramidWildMonHeaders:gBattlePyramid_5:128",
+      "path": "gBattlePyramidWildMonHeaders/gBattlePyramid_5_128.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "gBattlePyramid_5"
+    },
+    {
+      "id": "gBattlePyramidWildMonHeaders:gBattlePyramid_6:129",
+      "path": "gBattlePyramidWildMonHeaders/gBattlePyramid_6_129.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "gBattlePyramid_6"
+    },
+    {
+      "id": "gBattlePyramidWildMonHeaders:gBattlePyramid_7:130",
+      "path": "gBattlePyramidWildMonHeaders/gBattlePyramid_7_130.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "gBattlePyramid_7"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ABANDONED_SHIP_HIDDEN_FLOOR_CORRIDORS:56",
+      "path": "gWildMonHeaders/MAP_ABANDONED_SHIP_HIDDEN_FLOOR_CORRIDORS_56.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ABANDONED_SHIP_HIDDEN_FLOOR_CORRIDORS"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ABANDONED_SHIP_ROOMS_B1F:22",
+      "path": "gWildMonHeaders/MAP_ABANDONED_SHIP_ROOMS_B1F_22.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ABANDONED_SHIP_ROOMS_B1F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ALTERING_CAVE:114",
+      "path": "gWildMonHeaders/MAP_ALTERING_CAVE_114.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ALTERING_CAVE"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ALTERING_CAVE:115",
+      "path": "gWildMonHeaders/MAP_ALTERING_CAVE_115.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ALTERING_CAVE"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ALTERING_CAVE:116",
+      "path": "gWildMonHeaders/MAP_ALTERING_CAVE_116.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ALTERING_CAVE"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ALTERING_CAVE:117",
+      "path": "gWildMonHeaders/MAP_ALTERING_CAVE_117.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ALTERING_CAVE"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ALTERING_CAVE:118",
+      "path": "gWildMonHeaders/MAP_ALTERING_CAVE_118.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ALTERING_CAVE"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ALTERING_CAVE:119",
+      "path": "gWildMonHeaders/MAP_ALTERING_CAVE_119.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ALTERING_CAVE"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ALTERING_CAVE:120",
+      "path": "gWildMonHeaders/MAP_ALTERING_CAVE_120.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ALTERING_CAVE"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ALTERING_CAVE:121",
+      "path": "gWildMonHeaders/MAP_ALTERING_CAVE_121.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ALTERING_CAVE"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ALTERING_CAVE:122",
+      "path": "gWildMonHeaders/MAP_ALTERING_CAVE_122.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ALTERING_CAVE"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ARTISAN_CAVE_1F:113",
+      "path": "gWildMonHeaders/MAP_ARTISAN_CAVE_1F_113.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ARTISAN_CAVE_1F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ARTISAN_CAVE_B1F:112",
+      "path": "gWildMonHeaders/MAP_ARTISAN_CAVE_B1F_112.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ARTISAN_CAVE_B1F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_CAVE_OF_ORIGIN_1F:67",
+      "path": "gWildMonHeaders/MAP_CAVE_OF_ORIGIN_1F_67.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_CAVE_OF_ORIGIN_1F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_CAVE_OF_ORIGIN_ENTRANCE:66",
+      "path": "gWildMonHeaders/MAP_CAVE_OF_ORIGIN_ENTRANCE_66.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_CAVE_OF_ORIGIN_ENTRANCE"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP1:68",
+      "path": "gWildMonHeaders/MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP1_68.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP1"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP2:69",
+      "path": "gWildMonHeaders/MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP2_69.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP2"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP3:70",
+      "path": "gWildMonHeaders/MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP3_70.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP3"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_DESERT_UNDERPASS:111",
+      "path": "gWildMonHeaders/MAP_DESERT_UNDERPASS_111.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_DESERT_UNDERPASS"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_DEWFORD_TOWN:85",
+      "path": "gWildMonHeaders/MAP_DEWFORD_TOWN_85.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_DEWFORD_TOWN"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_EVER_GRANDE_CITY:89",
+      "path": "gWildMonHeaders/MAP_EVER_GRANDE_CITY_89.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_EVER_GRANDE_CITY"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_FIERY_PATH:24",
+      "path": "gWildMonHeaders/MAP_FIERY_PATH_24.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_FIERY_PATH"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_GRANITE_CAVE_1F:16",
+      "path": "gWildMonHeaders/MAP_GRANITE_CAVE_1F_16.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_GRANITE_CAVE_1F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_GRANITE_CAVE_B1F:17",
+      "path": "gWildMonHeaders/MAP_GRANITE_CAVE_B1F_17.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_GRANITE_CAVE_B1F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_GRANITE_CAVE_B2F:23",
+      "path": "gWildMonHeaders/MAP_GRANITE_CAVE_B2F_23.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_GRANITE_CAVE_B2F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_GRANITE_CAVE_STEVENS_ROOM:45",
+      "path": "gWildMonHeaders/MAP_GRANITE_CAVE_STEVENS_ROOM_45.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_GRANITE_CAVE_STEVENS_ROOM"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_JAGGED_PASS:26",
+      "path": "gWildMonHeaders/MAP_JAGGED_PASS_26.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_JAGGED_PASS"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_LILYCOVE_CITY:84",
+      "path": "gWildMonHeaders/MAP_LILYCOVE_CITY_84.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_LILYCOVE_CITY"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MAGMA_HIDEOUT_1F:99",
+      "path": "gWildMonHeaders/MAP_MAGMA_HIDEOUT_1F_99.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MAGMA_HIDEOUT_1F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MAGMA_HIDEOUT_2F_1R:100",
+      "path": "gWildMonHeaders/MAP_MAGMA_HIDEOUT_2F_1R_100.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MAGMA_HIDEOUT_2F_1R"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MAGMA_HIDEOUT_2F_2R:101",
+      "path": "gWildMonHeaders/MAP_MAGMA_HIDEOUT_2F_2R_101.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MAGMA_HIDEOUT_2F_2R"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MAGMA_HIDEOUT_2F_3R:106",
+      "path": "gWildMonHeaders/MAP_MAGMA_HIDEOUT_2F_3R_106.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MAGMA_HIDEOUT_2F_3R"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MAGMA_HIDEOUT_3F_1R:102",
+      "path": "gWildMonHeaders/MAP_MAGMA_HIDEOUT_3F_1R_102.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MAGMA_HIDEOUT_3F_1R"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MAGMA_HIDEOUT_3F_2R:103",
+      "path": "gWildMonHeaders/MAP_MAGMA_HIDEOUT_3F_2R_103.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MAGMA_HIDEOUT_3F_2R"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MAGMA_HIDEOUT_3F_3R:105",
+      "path": "gWildMonHeaders/MAP_MAGMA_HIDEOUT_3F_3R_105.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MAGMA_HIDEOUT_3F_3R"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MAGMA_HIDEOUT_4F:104",
+      "path": "gWildMonHeaders/MAP_MAGMA_HIDEOUT_4F_104.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MAGMA_HIDEOUT_4F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_METEOR_FALLS_1F_1R:77",
+      "path": "gWildMonHeaders/MAP_METEOR_FALLS_1F_1R_77.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_METEOR_FALLS_1F_1R"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_METEOR_FALLS_1F_2R:78",
+      "path": "gWildMonHeaders/MAP_METEOR_FALLS_1F_2R_78.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_METEOR_FALLS_1F_2R"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_METEOR_FALLS_B1F_1R:79",
+      "path": "gWildMonHeaders/MAP_METEOR_FALLS_B1F_1R_79.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_METEOR_FALLS_B1F_1R"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_METEOR_FALLS_B1F_2R:25",
+      "path": "gWildMonHeaders/MAP_METEOR_FALLS_B1F_2R_25.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_METEOR_FALLS_B1F_2R"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_METEOR_FALLS_STEVENS_CAVE:123",
+      "path": "gWildMonHeaders/MAP_METEOR_FALLS_STEVENS_CAVE_123.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_METEOR_FALLS_STEVENS_CAVE"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MIRAGE_TOWER_1F:107",
+      "path": "gWildMonHeaders/MAP_MIRAGE_TOWER_1F_107.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MIRAGE_TOWER_1F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MIRAGE_TOWER_2F:108",
+      "path": "gWildMonHeaders/MAP_MIRAGE_TOWER_2F_108.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MIRAGE_TOWER_2F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MIRAGE_TOWER_3F:109",
+      "path": "gWildMonHeaders/MAP_MIRAGE_TOWER_3F_109.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MIRAGE_TOWER_3F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MIRAGE_TOWER_4F:110",
+      "path": "gWildMonHeaders/MAP_MIRAGE_TOWER_4F_110.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MIRAGE_TOWER_4F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MOSSDEEP_CITY:87",
+      "path": "gWildMonHeaders/MAP_MOSSDEEP_CITY_87.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MOSSDEEP_CITY"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MT_PYRE_1F:18",
+      "path": "gWildMonHeaders/MAP_MT_PYRE_1F_18.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MT_PYRE_1F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MT_PYRE_2F:38",
+      "path": "gWildMonHeaders/MAP_MT_PYRE_2F_38.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MT_PYRE_2F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MT_PYRE_3F:39",
+      "path": "gWildMonHeaders/MAP_MT_PYRE_3F_39.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MT_PYRE_3F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MT_PYRE_4F:40",
+      "path": "gWildMonHeaders/MAP_MT_PYRE_4F_40.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MT_PYRE_4F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MT_PYRE_5F:41",
+      "path": "gWildMonHeaders/MAP_MT_PYRE_5F_41.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MT_PYRE_5F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MT_PYRE_6F:42",
+      "path": "gWildMonHeaders/MAP_MT_PYRE_6F_42.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MT_PYRE_6F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MT_PYRE_EXTERIOR:43",
+      "path": "gWildMonHeaders/MAP_MT_PYRE_EXTERIOR_43.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MT_PYRE_EXTERIOR"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_MT_PYRE_SUMMIT:44",
+      "path": "gWildMonHeaders/MAP_MT_PYRE_SUMMIT_44.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_MT_PYRE_SUMMIT"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_NEW_MAUVILLE_ENTRANCE:71",
+      "path": "gWildMonHeaders/MAP_NEW_MAUVILLE_ENTRANCE_71.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_NEW_MAUVILLE_ENTRANCE"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_NEW_MAUVILLE_INSIDE:32",
+      "path": "gWildMonHeaders/MAP_NEW_MAUVILLE_INSIDE_32.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_NEW_MAUVILLE_INSIDE"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_PACIFIDLOG_TOWN:88",
+      "path": "gWildMonHeaders/MAP_PACIFIDLOG_TOWN_88.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_PACIFIDLOG_TOWN"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_PETALBURG_CITY:90",
+      "path": "gWildMonHeaders/MAP_PETALBURG_CITY_90.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_PETALBURG_CITY"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_PETALBURG_WOODS:14",
+      "path": "gWildMonHeaders/MAP_PETALBURG_WOODS_14.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_PETALBURG_WOODS"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE101:0",
+      "path": "gWildMonHeaders/MAP_ROUTE101_0.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE101"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE102:1",
+      "path": "gWildMonHeaders/MAP_ROUTE102_1.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE102"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE103:2",
+      "path": "gWildMonHeaders/MAP_ROUTE103_2.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE103"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE104:3",
+      "path": "gWildMonHeaders/MAP_ROUTE104_3.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE104"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE105:4",
+      "path": "gWildMonHeaders/MAP_ROUTE105_4.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE105"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE106:27",
+      "path": "gWildMonHeaders/MAP_ROUTE106_27.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE106"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE107:28",
+      "path": "gWildMonHeaders/MAP_ROUTE107_28.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE107"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE108:29",
+      "path": "gWildMonHeaders/MAP_ROUTE108_29.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE108"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE109:30",
+      "path": "gWildMonHeaders/MAP_ROUTE109_30.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE109"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE110:5",
+      "path": "gWildMonHeaders/MAP_ROUTE110_5.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE110"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE111:6",
+      "path": "gWildMonHeaders/MAP_ROUTE111_6.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE111"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE112:7",
+      "path": "gWildMonHeaders/MAP_ROUTE112_7.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE112"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE113:8",
+      "path": "gWildMonHeaders/MAP_ROUTE113_8.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE113"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE114:9",
+      "path": "gWildMonHeaders/MAP_ROUTE114_9.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE114"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE115:31",
+      "path": "gWildMonHeaders/MAP_ROUTE115_31.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE115"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE116:10",
+      "path": "gWildMonHeaders/MAP_ROUTE116_10.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE116"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE117:11",
+      "path": "gWildMonHeaders/MAP_ROUTE117_11.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE117"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE118:12",
+      "path": "gWildMonHeaders/MAP_ROUTE118_12.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE118"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE119:33",
+      "path": "gWildMonHeaders/MAP_ROUTE119_33.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE119"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE120:34",
+      "path": "gWildMonHeaders/MAP_ROUTE120_34.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE120"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE121:35",
+      "path": "gWildMonHeaders/MAP_ROUTE121_35.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE121"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE122:36",
+      "path": "gWildMonHeaders/MAP_ROUTE122_36.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE122"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE123:37",
+      "path": "gWildMonHeaders/MAP_ROUTE123_37.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE123"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE124:13",
+      "path": "gWildMonHeaders/MAP_ROUTE124_13.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE124"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE125:46",
+      "path": "gWildMonHeaders/MAP_ROUTE125_46.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE125"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE126:47",
+      "path": "gWildMonHeaders/MAP_ROUTE126_47.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE126"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE127:48",
+      "path": "gWildMonHeaders/MAP_ROUTE127_48.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE127"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE128:49",
+      "path": "gWildMonHeaders/MAP_ROUTE128_49.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE128"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE129:50",
+      "path": "gWildMonHeaders/MAP_ROUTE129_50.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE129"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE130:51",
+      "path": "gWildMonHeaders/MAP_ROUTE130_51.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE130"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE131:52",
+      "path": "gWildMonHeaders/MAP_ROUTE131_52.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE131"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE132:53",
+      "path": "gWildMonHeaders/MAP_ROUTE132_53.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE132"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE133:54",
+      "path": "gWildMonHeaders/MAP_ROUTE133_54.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE133"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_ROUTE134:55",
+      "path": "gWildMonHeaders/MAP_ROUTE134_55.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_ROUTE134"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_RUSTURF_TUNNEL:15",
+      "path": "gWildMonHeaders/MAP_RUSTURF_TUNNEL_15.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_RUSTURF_TUNNEL"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SAFARI_ZONE_NORTH:73",
+      "path": "gWildMonHeaders/MAP_SAFARI_ZONE_NORTH_73.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SAFARI_ZONE_NORTH"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SAFARI_ZONE_NORTHEAST:98",
+      "path": "gWildMonHeaders/MAP_SAFARI_ZONE_NORTHEAST_98.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SAFARI_ZONE_NORTHEAST"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SAFARI_ZONE_NORTHWEST:74",
+      "path": "gWildMonHeaders/MAP_SAFARI_ZONE_NORTHWEST_74.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SAFARI_ZONE_NORTHWEST"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SAFARI_ZONE_SOUTH:20",
+      "path": "gWildMonHeaders/MAP_SAFARI_ZONE_SOUTH_20.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SAFARI_ZONE_SOUTH"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SAFARI_ZONE_SOUTHEAST:97",
+      "path": "gWildMonHeaders/MAP_SAFARI_ZONE_SOUTHEAST_97.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SAFARI_ZONE_SOUTHEAST"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SAFARI_ZONE_SOUTHWEST:72",
+      "path": "gWildMonHeaders/MAP_SAFARI_ZONE_SOUTHWEST_72.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SAFARI_ZONE_SOUTHWEST"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SEAFLOOR_CAVERN_ENTRANCE:65",
+      "path": "gWildMonHeaders/MAP_SEAFLOOR_CAVERN_ENTRANCE_65.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SEAFLOOR_CAVERN_ENTRANCE"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SEAFLOOR_CAVERN_ROOM1:57",
+      "path": "gWildMonHeaders/MAP_SEAFLOOR_CAVERN_ROOM1_57.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SEAFLOOR_CAVERN_ROOM1"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SEAFLOOR_CAVERN_ROOM2:58",
+      "path": "gWildMonHeaders/MAP_SEAFLOOR_CAVERN_ROOM2_58.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SEAFLOOR_CAVERN_ROOM2"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SEAFLOOR_CAVERN_ROOM3:59",
+      "path": "gWildMonHeaders/MAP_SEAFLOOR_CAVERN_ROOM3_59.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SEAFLOOR_CAVERN_ROOM3"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SEAFLOOR_CAVERN_ROOM4:60",
+      "path": "gWildMonHeaders/MAP_SEAFLOOR_CAVERN_ROOM4_60.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SEAFLOOR_CAVERN_ROOM4"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SEAFLOOR_CAVERN_ROOM5:61",
+      "path": "gWildMonHeaders/MAP_SEAFLOOR_CAVERN_ROOM5_61.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SEAFLOOR_CAVERN_ROOM5"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SEAFLOOR_CAVERN_ROOM6:62",
+      "path": "gWildMonHeaders/MAP_SEAFLOOR_CAVERN_ROOM6_62.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SEAFLOOR_CAVERN_ROOM6"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SEAFLOOR_CAVERN_ROOM7:63",
+      "path": "gWildMonHeaders/MAP_SEAFLOOR_CAVERN_ROOM7_63.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SEAFLOOR_CAVERN_ROOM7"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SEAFLOOR_CAVERN_ROOM8:64",
+      "path": "gWildMonHeaders/MAP_SEAFLOOR_CAVERN_ROOM8_64.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SEAFLOOR_CAVERN_ROOM8"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SHOAL_CAVE_LOW_TIDE_ENTRANCE_ROOM:83",
+      "path": "gWildMonHeaders/MAP_SHOAL_CAVE_LOW_TIDE_ENTRANCE_ROOM_83.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SHOAL_CAVE_LOW_TIDE_ENTRANCE_ROOM"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM:92",
+      "path": "gWildMonHeaders/MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM_92.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SHOAL_CAVE_LOW_TIDE_INNER_ROOM:82",
+      "path": "gWildMonHeaders/MAP_SHOAL_CAVE_LOW_TIDE_INNER_ROOM_82.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SHOAL_CAVE_LOW_TIDE_INNER_ROOM"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SHOAL_CAVE_LOW_TIDE_LOWER_ROOM:81",
+      "path": "gWildMonHeaders/MAP_SHOAL_CAVE_LOW_TIDE_LOWER_ROOM_81.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SHOAL_CAVE_LOW_TIDE_LOWER_ROOM"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SHOAL_CAVE_LOW_TIDE_STAIRS_ROOM:80",
+      "path": "gWildMonHeaders/MAP_SHOAL_CAVE_LOW_TIDE_STAIRS_ROOM_80.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SHOAL_CAVE_LOW_TIDE_STAIRS_ROOM"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SKY_PILLAR_1F:93",
+      "path": "gWildMonHeaders/MAP_SKY_PILLAR_1F_93.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SKY_PILLAR_1F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SKY_PILLAR_3F:95",
+      "path": "gWildMonHeaders/MAP_SKY_PILLAR_3F_95.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SKY_PILLAR_3F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SKY_PILLAR_5F:96",
+      "path": "gWildMonHeaders/MAP_SKY_PILLAR_5F_96.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SKY_PILLAR_5F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SLATEPORT_CITY:86",
+      "path": "gWildMonHeaders/MAP_SLATEPORT_CITY_86.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SLATEPORT_CITY"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_SOOTOPOLIS_CITY:94",
+      "path": "gWildMonHeaders/MAP_SOOTOPOLIS_CITY_94.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_SOOTOPOLIS_CITY"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_UNDERWATER_ROUTE124:91",
+      "path": "gWildMonHeaders/MAP_UNDERWATER_ROUTE124_91.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_UNDERWATER_ROUTE124"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_UNDERWATER_ROUTE126:21",
+      "path": "gWildMonHeaders/MAP_UNDERWATER_ROUTE126_21.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_UNDERWATER_ROUTE126"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_VICTORY_ROAD_1F:19",
+      "path": "gWildMonHeaders/MAP_VICTORY_ROAD_1F_19.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_VICTORY_ROAD_1F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_VICTORY_ROAD_B1F:75",
+      "path": "gWildMonHeaders/MAP_VICTORY_ROAD_B1F_75.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_VICTORY_ROAD_B1F"
+    },
+    {
+      "id": "gWildMonHeaders:MAP_VICTORY_ROAD_B2F:76",
+      "path": "gWildMonHeaders/MAP_VICTORY_ROAD_B2F_76.json",
+      "sourcePath": "src/data/wild_encounters.json",
+      "legacyKind": "wild_encounter_group",
+      "symbol": "MAP_VICTORY_ROAD_B2F"
+    }
+  ],
+  "entityCount": 135
+}

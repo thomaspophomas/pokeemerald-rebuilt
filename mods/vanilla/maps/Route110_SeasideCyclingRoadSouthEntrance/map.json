@@ -78,5 +78,26 @@
       "script": "Route110_SeasideCyclingRoadSouthEntrance_EventScript_ClearCyclingRoad"
     }
   ],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/map.json",
+    "sha1": "16577218e1c31086f8de85e1ec5a356ac231ac39"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/map.json",
+    "mapName": "Route110_SeasideCyclingRoadSouthEntrance",
+    "scriptsSourcePath": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.inc"
+  },
+  "mapGroup": 29,
+  "mapNum": 11,
+  "mapGroupSymbol": "gMapGroup_IndoorRoute110",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

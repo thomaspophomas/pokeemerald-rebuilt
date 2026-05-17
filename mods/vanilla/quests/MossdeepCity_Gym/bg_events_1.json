@@ -1,0 +1,30 @@
+{
+  "id": "MossdeepCity_Gym:bg_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Gym/map.json",
+    "sha1": "9a33d6559af206c544f98be7f035bb5a5ee65354"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MossdeepCity_Gym/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 8,
+      "y": 34,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "MossdeepCity_Gym_EventScript_RightGymStatue"
+    }
+  },
+  "map": "MossdeepCity_Gym",
+  "mapId": "MAP_MOSSDEEP_CITY_GYM",
+  "eventType": "bg_events",
+  "index": 1,
+  "script": "MossdeepCity_Gym_EventScript_RightGymStatue",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

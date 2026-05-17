@@ -1,0 +1,28 @@
+{
+  "id": "LilycoveCity:bg_events:12",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/map.json",
+    "sha1": "ecd4d8c0f7b8c74fa70d53df6e4922fed0c006b6"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LilycoveCity/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 64,
+      "y": 31,
+      "elevation": 0,
+      "item": "ITEM_POKE_BALL",
+      "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_POKE_BALL"
+    }
+  },
+  "map": "LilycoveCity",
+  "mapId": "MAP_LILYCOVE_CITY",
+  "eventType": "bg_events",
+  "index": 12,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

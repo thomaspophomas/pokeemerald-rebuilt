@@ -1,0 +1,27 @@
+{
+  "id": "TrainerHill_Elevator:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Elevator/map.json",
+    "sha1": "b5d7a346011cf669eb6dc6657b3f94e6fc22ac9f"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/TrainerHill_Elevator/map.json",
+    "raw": {
+      "x": 1,
+      "y": 6,
+      "elevation": 3,
+      "dest_map": "MAP_TRAINER_HILL_ROOF",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "TrainerHill_Elevator",
+  "mapId": "MAP_TRAINER_HILL_ELEVATOR",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

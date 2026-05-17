@@ -1,0 +1,46 @@
+{
+  "id": "MtChimney_CableCarStation:LOCALID_MT_CHIMNEY_CABLE_CAR_ATTENDANT",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney_CableCarStation/map.json",
+    "sha1": "b53c07d6ad80e9bc6863e52fbfe2254e16272abb"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MtChimney_CableCarStation/map.json",
+    "raw": {
+      "local_id": "LOCALID_MT_CHIMNEY_CABLE_CAR_ATTENDANT",
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
+      "x": 6,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MtChimney_CableCarStation_EventScript_Attendant",
+      "flag": "0"
+    }
+  },
+  "map": "MtChimney_CableCarStation",
+  "mapId": "MAP_MT_CHIMNEY_CABLE_CAR_STATION",
+  "localId": "LOCALID_MT_CHIMNEY_CABLE_CAR_ATTENDANT",
+  "graphicsId": "OBJ_EVENT_GFX_BEAUTY",
+  "x": 6,
+  "y": 6,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "MtChimney_CableCarStation_EventScript_Attendant",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "SecretBase_BrownCave4:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SecretBase_BrownCave4/map.json",
+    "sha1": "18270e0a5aa20329226bfe64c2313bc3d51cd1af"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SecretBase_BrownCave4/map.json",
+    "raw": {
+      "x": 2,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "WARP_ID_SECRET_BASE"
+    }
+  },
+  "map": "SecretBase_BrownCave4",
+  "mapId": "MAP_SECRET_BASE_BROWN_CAVE4",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

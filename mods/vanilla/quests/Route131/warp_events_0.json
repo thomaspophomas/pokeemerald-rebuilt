@@ -1,0 +1,27 @@
+{
+  "id": "Route131:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route131/map.json",
+    "sha1": "b6ed31b50f6e2b6e48e745d6893243a34d8447f4"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route131/map.json",
+    "raw": {
+      "x": 36,
+      "y": 6,
+      "elevation": 3,
+      "dest_map": "MAP_SKY_PILLAR_ENTRANCE",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Route131",
+  "mapId": "MAP_ROUTE131",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

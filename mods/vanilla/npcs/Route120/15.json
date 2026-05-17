@@ -1,0 +1,45 @@
+{
+  "id": "Route120:15",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route120/map.json",
+    "sha1": "65935e19bb6f8e23506c7e2e85cef33433f4e2d7"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route120/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "x": 19,
+      "y": 80,
+      "elevation": 5,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Route120_EventScript_Jeffrey",
+      "flag": "0"
+    }
+  },
+  "map": "Route120",
+  "mapId": "MAP_ROUTE120",
+  "localId": 15,
+  "graphicsId": "OBJ_EVENT_GFX_MANIAC",
+  "x": 19,
+  "y": 80,
+  "elevation": 5,
+  "movementType": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "3",
+  "script": "Route120_EventScript_Jeffrey",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

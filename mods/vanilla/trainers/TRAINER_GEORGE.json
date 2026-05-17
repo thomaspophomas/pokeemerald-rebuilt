@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_GEORGE",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_GEORGE] =\n    {\n        .trainerClass = TRAINER_CLASS_COOLTRAINER,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,\n        .trainerPic = TRAINER_PIC_COOLTRAINER_M,\n        .trainerName = _(\"GEORGE\"),\n        .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,\n        .party = ITEM_CUSTOM_MOVES(sParty_George),\n    },"
+  },
+  "symbol": "TRAINER_GEORGE",
+  "numericId": 73,
+  "trainerName": "GEORGE",
+  "trainerClass": "TRAINER_CLASS_COOLTRAINER",
+  "trainerPic": "TRAINER_PIC_COOLTRAINER_M",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_COOL",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY",
+  "partyRef": "sParty_George",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

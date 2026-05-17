@@ -1,0 +1,16 @@
+{
+  "id": "BattleFrontier_ExchangeServiceCorner:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ExchangeServiceCorner/map.json",
+    "sha1": "0fd32284b9c26cb84c2bcbe85f30bb430f4ded98"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/BattleFrontier_ExchangeServiceCorner/map.json"
+  },
+  "map": "BattleFrontier_ExchangeServiceCorner",
+  "mapId": "MAP_BATTLE_FRONTIER_EXCHANGE_SERVICE_CORNER",
+  "weather": "WEATHER_NONE"
+}

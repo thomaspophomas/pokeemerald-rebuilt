@@ -1,0 +1,27 @@
+{
+  "id": "OldaleTown_House1:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown_House1/map.json",
+    "sha1": "30fb7c52c6e44fb21c79cfea55b34e1b4cb57dd5"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/OldaleTown_House1/map.json",
+    "raw": {
+      "x": 3,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_OLDALE_TOWN",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "OldaleTown_House1",
+  "mapId": "MAP_OLDALE_TOWN_HOUSE1",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

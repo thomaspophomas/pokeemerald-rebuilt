@@ -1,0 +1,27 @@
+{
+  "id": "PetalburgCity:warp_events:5",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity/map.json",
+    "sha1": "ca6092ddf12a2aeddab506e674dc3d3cd443f16d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/PetalburgCity/map.json",
+    "raw": {
+      "x": 25,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_PETALBURG_CITY_MART",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "PetalburgCity",
+  "mapId": "MAP_PETALBURG_CITY",
+  "eventType": "warp_events",
+  "index": 5,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

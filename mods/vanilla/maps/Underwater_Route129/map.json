@@ -37,5 +37,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_Route129/map.json",
+    "sha1": "4bdcc9803063aa89b26dae69f1f2c2084673b544"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Underwater_Route129/map.json",
+    "mapName": "Underwater_Route129",
+    "scriptsSourcePath": "data/maps/Underwater_Route129/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 54,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

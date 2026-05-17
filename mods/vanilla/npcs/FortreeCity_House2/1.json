@@ -1,0 +1,45 @@
+{
+  "id": "FortreeCity_House2:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_House2/map.json",
+    "sha1": "b9ffad559ded3111d58bfff3d2a3c4c767606cfa"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/FortreeCity_House2/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_F",
+      "x": 2,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FortreeCity_House2_EventScript_HiddenPowerGiver",
+      "flag": "0"
+    }
+  },
+  "map": "FortreeCity_House2",
+  "mapId": "MAP_FORTREE_CITY_HOUSE2",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_EXPERT_F",
+  "x": 2,
+  "y": 3,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+  "movementRangeX": 1,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "FortreeCity_House2_EventScript_HiddenPowerGiver",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

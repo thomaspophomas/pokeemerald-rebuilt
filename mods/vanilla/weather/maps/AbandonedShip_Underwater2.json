@@ -1,0 +1,16 @@
+{
+  "id": "AbandonedShip_Underwater2:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Underwater2/map.json",
+    "sha1": "5f4149be4c544c2df95115c2a013c719eb19eab0"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/AbandonedShip_Underwater2/map.json"
+  },
+  "map": "AbandonedShip_Underwater2",
+  "mapId": "MAP_ABANDONED_SHIP_UNDERWATER2",
+  "weather": "WEATHER_UNDERWATER_BUBBLES"
+}

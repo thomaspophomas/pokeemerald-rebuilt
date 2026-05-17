@@ -33,5 +33,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Underwater_SealedChamber_EventScript_Braille"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_SealedChamber/map.json",
+    "sha1": "fb43be481624f3f33fd17f04298cdf74f428a059"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Underwater_SealedChamber/map.json",
+    "mapName": "Underwater_SealedChamber",
+    "scriptsSourcePath": "data/maps/Underwater_SealedChamber/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 70,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

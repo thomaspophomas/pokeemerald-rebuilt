@@ -1,0 +1,46 @@
+{
+  "id": "MossdeepCity_SpaceCenter_1F:LOCALID_SPACE_CENTER_1F_OLD_MAN",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_1F/map.json",
+    "sha1": "40f7d98cbbcbcdc34f41e847b0794db707c77bb0"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_1F/map.json",
+    "raw": {
+      "local_id": "LOCALID_SPACE_CENTER_1F_OLD_MAN",
+      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
+      "x": 10,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MossdeepCity_SpaceCenter_1F_EventScript_OldMan",
+      "flag": "0"
+    }
+  },
+  "map": "MossdeepCity_SpaceCenter_1F",
+  "mapId": "MAP_MOSSDEEP_CITY_SPACE_CENTER_1F",
+  "localId": "LOCALID_SPACE_CENTER_1F_OLD_MAN",
+  "graphicsId": "OBJ_EVENT_GFX_OLD_MAN",
+  "x": 10,
+  "y": 2,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "MossdeepCity_SpaceCenter_1F_EventScript_OldMan",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

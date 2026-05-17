@@ -1,0 +1,27 @@
+{
+  "id": "VerdanturfTown_WandasHouse:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_WandasHouse/map.json",
+    "sha1": "c395281c9f225d06bbbb0fe328303b3c1bbf9275"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/VerdanturfTown_WandasHouse/map.json",
+    "raw": {
+      "x": 7,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_VERDANTURF_TOWN",
+      "dest_warp_id": "3"
+    }
+  },
+  "map": "VerdanturfTown_WandasHouse",
+  "mapId": "MAP_VERDANTURF_TOWN_WANDAS_HOUSE",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

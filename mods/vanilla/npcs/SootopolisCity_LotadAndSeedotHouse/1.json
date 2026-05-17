@@ -1,0 +1,45 @@
+{
+  "id": "SootopolisCity_LotadAndSeedotHouse:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_LotadAndSeedotHouse/map.json",
+    "sha1": "12602a25f93b821d1f53ce2648b3b216feaaeab5"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SootopolisCity_LotadAndSeedotHouse/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
+      "x": 2,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SootopolisCity_LotadAndSeedotHouse_EventScript_LotadBrother",
+      "flag": "0"
+    }
+  },
+  "map": "SootopolisCity_LotadAndSeedotHouse",
+  "mapId": "MAP_SOOTOPOLIS_CITY_LOTAD_AND_SEEDOT_HOUSE",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_FISHERMAN",
+  "x": 2,
+  "y": 4,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "SootopolisCity_LotadAndSeedotHouse_EventScript_LotadBrother",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

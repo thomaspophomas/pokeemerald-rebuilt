@@ -1,0 +1,31 @@
+{
+  "id": "FarawayIsland_Entrance:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FarawayIsland_Entrance/map.json",
+    "sha1": "3729d1448e31e8a30c0b21f497bc6a12048dbd0c"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/FarawayIsland_Entrance/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 9,
+      "y": 18,
+      "elevation": 3,
+      "var": "TRIGGER_RUN_IMMEDIATELY",
+      "var_value": "0",
+      "script": "FarawayIsland_Entrance_EventScript_SetCloudsWeather"
+    }
+  },
+  "map": "FarawayIsland_Entrance",
+  "mapId": "MAP_FARAWAY_ISLAND_ENTRANCE",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": "FarawayIsland_Entrance_EventScript_SetCloudsWeather",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

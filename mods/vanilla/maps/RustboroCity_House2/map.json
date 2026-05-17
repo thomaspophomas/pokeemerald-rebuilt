@@ -58,5 +58,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_House2/map.json",
+    "sha1": "d170b3fb81a7b97f206a8880f8daed9311c0b832"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/RustboroCity_House2/map.json",
+    "mapName": "RustboroCity_House2",
+    "scriptsSourcePath": "data/maps/RustboroCity_House2/scripts.inc"
+  },
+  "mapGroup": 11,
+  "mapNum": 12,
+  "mapGroupSymbol": "gMapGroup_IndoorRustboro",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

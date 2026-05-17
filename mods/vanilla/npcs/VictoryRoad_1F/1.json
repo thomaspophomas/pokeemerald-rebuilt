@@ -1,0 +1,45 @@
+{
+  "id": "VictoryRoad_1F:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_1F/map.json",
+    "sha1": "d2466927c82f22b7d85aef4a98fe5a48b65b1e8a"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/VictoryRoad_1F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 33,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "VictoryRoad_1F_EventScript_Edgar",
+      "flag": "0"
+    }
+  },
+  "map": "VictoryRoad_1F",
+  "mapId": "MAP_VICTORY_ROAD_1F",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_MAN_3",
+  "x": 33,
+  "y": 22,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "3",
+  "script": "VictoryRoad_1F_EventScript_Edgar",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

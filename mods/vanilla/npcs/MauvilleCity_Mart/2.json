@@ -1,0 +1,45 @@
+{
+  "id": "MauvilleCity_Mart:2",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Mart/map.json",
+    "sha1": "72672da5cc97f36cb33937dd5b2004f080258233"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MauvilleCity_Mart/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+      "x": 5,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MauvilleCity_Mart_EventScript_ExpertM",
+      "flag": "0"
+    }
+  },
+  "map": "MauvilleCity_Mart",
+  "mapId": "MAP_MAUVILLE_CITY_MART",
+  "localId": 2,
+  "graphicsId": "OBJ_EVENT_GFX_EXPERT_M",
+  "x": 5,
+  "y": 4,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "MauvilleCity_Mart_EventScript_ExpertM",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

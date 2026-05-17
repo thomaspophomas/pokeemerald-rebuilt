@@ -520,5 +520,26 @@
       "item": "ITEM_POKE_BALL",
       "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_POKE_BALL"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/map.json",
+    "sha1": "ecd4d8c0f7b8c74fa70d53df6e4922fed0c006b6"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/LilycoveCity/map.json",
+    "mapName": "LilycoveCity",
+    "scriptsSourcePath": "data/maps/LilycoveCity/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 5,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

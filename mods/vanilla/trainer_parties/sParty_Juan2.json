@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Juan2",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemCustomMoves sParty_Juan2[] = {\n    {\n    .iv = 255,\n    .lvl = 46,\n    .species = SPECIES_POLIWAG,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_HYPNOSIS, MOVE_RAIN_DANCE, MOVE_PROTECT, MOVE_HYDRO_PUMP}\n    },\n    {\n    .iv = 255,\n    .lvl = 46,\n    .species = SPECIES_WHISCASH,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_RAIN_DANCE, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_FISSURE}\n    },\n    {\n    .iv = 255,\n    .lvl = 48,\n    .species = SPECIES_WALREIN,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_WATER_PULSE, MOVE_BODY_SLAM, MOVE_PROTECT, MOVE_ICE_BEAM}\n    },\n    {\n    .iv = 255,\n    .lvl = 48,\n    .species = SPECIES_CRAWDAUNT,\n    .heldItem = ITEM_CHESTO_BERRY,\n    .moves = {MOVE_REST, MOVE_CRABHAMMER, MOVE_TAUNT, MOVE_DOUBLE_TEAM}\n    },\n    {\n    .iv = 255,\n    .lvl = 51,\n    .species = SPECIES_KINGDRA,\n    .heldItem = ITEM_CHESTO_BERRY,\n    .moves = {MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_ICE_BEAM, MOVE_REST}\n    }\n};"
+  },
+  "symbol": "sParty_Juan2",
+  "partyType": "TrainerMonItemCustomMoves",
+  "pokemonCount": 5
+}

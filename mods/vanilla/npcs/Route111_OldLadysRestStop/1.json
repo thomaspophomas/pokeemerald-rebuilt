@@ -1,0 +1,45 @@
+{
+  "id": "Route111_OldLadysRestStop:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111_OldLadysRestStop/map.json",
+    "sha1": "d32f68a8ac6bc01b2b49b6df14315447c4439bff"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route111_OldLadysRestStop/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_F",
+      "x": 6,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route111_OldLadysRestStop_EventScript_OldLady",
+      "flag": "0"
+    }
+  },
+  "map": "Route111_OldLadysRestStop",
+  "mapId": "MAP_ROUTE111_OLD_LADYS_REST_STOP",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_EXPERT_F",
+  "x": 6,
+  "y": 3,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Route111_OldLadysRestStop_EventScript_OldLady",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

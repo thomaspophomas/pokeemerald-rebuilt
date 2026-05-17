@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_NONE",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "    [TRAINER_NONE] =\n    {\n        .partyFlags = 0,\n        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,\n        .trainerPic = TRAINER_PIC_HIKER,\n        .trainerName = _(\"\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = 0,\n        .partySize = 0,\n        .party = {.NoItemDefaultMoves = NULL},\n    },"
+  },
+  "symbol": "TRAINER_NONE",
+  "numericId": 0,
+  "trainerName": "",
+  "trainerClass": "TRAINER_CLASS_PKMN_TRAINER_1",
+  "trainerPic": "TRAINER_PIC_HIKER",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_MALE",
+  "doubleBattle": "FALSE",
+  "aiFlags": "0",
+  "partyRef": null,
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

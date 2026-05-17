@@ -1,0 +1,45 @@
+{
+  "id": "ShoalCave_LowTideIceRoom:2",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ShoalCave_LowTideIceRoom/map.json",
+    "sha1": "f6f5c401a0ec662bd15ab5a838fbe53b011ea466"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/ShoalCave_LowTideIceRoom/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 12,
+      "y": 21,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ShoalCave_LowTideIceRoom_EventScript_ItemNeverMeltIce",
+      "flag": "FLAG_ITEM_SHOAL_CAVE_ICE_ROOM_NEVER_MELT_ICE"
+    }
+  },
+  "map": "ShoalCave_LowTideIceRoom",
+  "mapId": "MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM",
+  "localId": 2,
+  "graphicsId": "OBJ_EVENT_GFX_ITEM_BALL",
+  "x": 12,
+  "y": 21,
+  "elevation": 4,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "ShoalCave_LowTideIceRoom_EventScript_ItemNeverMeltIce",
+  "flag": "FLAG_ITEM_SHOAL_CAVE_ICE_ROOM_NEVER_MELT_ICE",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

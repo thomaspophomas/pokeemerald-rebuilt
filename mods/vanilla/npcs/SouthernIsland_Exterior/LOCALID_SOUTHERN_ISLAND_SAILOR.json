@@ -1,0 +1,46 @@
+{
+  "id": "SouthernIsland_Exterior:LOCALID_SOUTHERN_ISLAND_SAILOR",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SouthernIsland_Exterior/map.json",
+    "sha1": "3757ac072ce5bf012ddfab1a8156de156f82cd56"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SouthernIsland_Exterior/map.json",
+    "raw": {
+      "local_id": "LOCALID_SOUTHERN_ISLAND_SAILOR",
+      "graphics_id": "OBJ_EVENT_GFX_SAILOR",
+      "x": 13,
+      "y": 23,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SouthernIsland_Exterior_EventScript_Sailor",
+      "flag": "0"
+    }
+  },
+  "map": "SouthernIsland_Exterior",
+  "mapId": "MAP_SOUTHERN_ISLAND_EXTERIOR",
+  "localId": "LOCALID_SOUTHERN_ISLAND_SAILOR",
+  "graphicsId": "OBJ_EVENT_GFX_SAILOR",
+  "x": 13,
+  "y": 23,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "SouthernIsland_Exterior_EventScript_Sailor",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "SecretBase_Shrub1:2",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SecretBase_Shrub1/map.json",
+    "sha1": "d6cfee6f5e07bcb376a6678d53adf52d0896f148"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SecretBase_Shrub1/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_VAR_0",
+      "x": 0,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_DECORATION_1"
+    }
+  },
+  "map": "SecretBase_Shrub1",
+  "mapId": "MAP_SECRET_BASE_SHRUB1",
+  "localId": 2,
+  "graphicsId": "OBJ_EVENT_GFX_VAR_0",
+  "x": 0,
+  "y": 0,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_DECORATION_1",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

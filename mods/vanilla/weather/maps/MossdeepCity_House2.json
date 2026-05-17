@@ -1,0 +1,16 @@
+{
+  "id": "MossdeepCity_House2:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_House2/map.json",
+    "sha1": "310f52e71971916b4eb2342944670ab572f0cdda"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/MossdeepCity_House2/map.json"
+  },
+  "map": "MossdeepCity_House2",
+  "mapId": "MAP_MOSSDEEP_CITY_HOUSE2",
+  "weather": "WEATHER_NONE"
+}

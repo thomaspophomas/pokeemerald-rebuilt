@@ -38,5 +38,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ScorchedSlab/map.json",
+    "sha1": "5baa71b2abf44bd5419adeee7b4cfd1e10d5336c"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/ScorchedSlab/map.json",
+    "mapName": "ScorchedSlab",
+    "scriptsSourcePath": "data/maps/ScorchedSlab/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 73,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

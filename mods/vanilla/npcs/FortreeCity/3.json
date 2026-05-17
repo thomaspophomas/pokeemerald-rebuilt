@@ -1,0 +1,45 @@
+{
+  "id": "FortreeCity:3",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity/map.json",
+    "sha1": "bc6e106598defe5c5f6d0848d4ab429438c54a59"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/FortreeCity/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
+      "x": 32,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FortreeCity_EventScript_Woman",
+      "flag": "0"
+    }
+  },
+  "map": "FortreeCity",
+  "mapId": "MAP_FORTREE_CITY",
+  "localId": 3,
+  "graphicsId": "OBJ_EVENT_GFX_WOMAN_5",
+  "x": 32,
+  "y": 10,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+  "movementRangeX": 0,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "FortreeCity_EventScript_Woman",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

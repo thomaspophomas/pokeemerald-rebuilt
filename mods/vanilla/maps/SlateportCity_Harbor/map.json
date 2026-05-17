@@ -192,5 +192,26 @@
       "script": "SlateportCity_Harbor_EventScript_AquaEscapeTrigger3"
     }
   ],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/map.json",
+    "sha1": "75cd1653854ff3fa0e1314dbec4cf661284b8498"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SlateportCity_Harbor/map.json",
+    "mapName": "SlateportCity_Harbor",
+    "scriptsSourcePath": "data/maps/SlateportCity_Harbor/scripts.inc"
+  },
+  "mapGroup": 9,
+  "mapNum": 9,
+  "mapGroupSymbol": "gMapGroup_IndoorSlateport",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

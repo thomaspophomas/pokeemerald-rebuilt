@@ -1,18 +1,48 @@
 {
   "domain": "state",
   "schemaVersion": 1,
-  "fileCount": 1,
-  "jsonFileCount": 1,
-  "bytes": 764,
-  "sha1": "8e7085fe7df00a2e1462da42a06d1340ed2bb5c5",
+  "fileCount": 7,
+  "jsonFileCount": 7,
+  "bytes": 3246,
+  "sha1": "b6f48808781252d1bb9fa0af28618c9de9013c9f",
   "files": [
     {
-      "path": "mods/vanilla/state/manifest.json",
-      "sha1": "f826c2b6c58f5de1416842040e18076a638479b9",
-      "bytes": 764
+      "path": "mods/vanilla/state/_source_manifest.json",
+      "sha1": "1484522395d85c9a079e51b968d7f59507b4ee3f",
+      "bytes": 797
+    },
+    {
+      "path": "mods/vanilla/state/index.json",
+      "sha1": "561695923f70bdd901e104f84007e2322512a86c",
+      "bytes": 922
+    },
+    {
+      "path": "mods/vanilla/state/source_files/include_global.h.json",
+      "sha1": "ebb1a6ff52530b53ba773d78178fa4fa3f36a29f",
+      "bytes": 311
+    },
+    {
+      "path": "mods/vanilla/state/source_files/include_mod_state.h.json",
+      "sha1": "bf501d2b5a114bc477c06e97aa28c6077e9864c1",
+      "bytes": 321
+    },
+    {
+      "path": "mods/vanilla/state/source_files/include_save.h.json",
+      "sha1": "c920d037b687d0eafa1087a97c7f487664332694",
+      "bytes": 302
+    },
+    {
+      "path": "mods/vanilla/state/source_files/src_mod_state.c.json",
+      "sha1": "da817c323d0cd4cffec345ce68521632df507635",
+      "bytes": 306
+    },
+    {
+      "path": "mods/vanilla/state/source_files/src_save.c.json",
+      "sha1": "2eca65ddbde6033ffb6398a54e8ec27671b589a7",
+      "bytes": 287
     }
   ],
   "counts": {
-    "sourceFiles": 5
+    "sourceEntities": 5
   }
 }

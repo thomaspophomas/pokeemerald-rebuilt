@@ -1,0 +1,16 @@
+{
+  "id": "FortreeCity_Mart:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Mart/map.json",
+    "sha1": "693c25caa5e39ec8756fb433d3aa11a0d2ecacb2"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/FortreeCity_Mart/map.json"
+  },
+  "map": "FortreeCity_Mart",
+  "mapId": "MAP_FORTREE_CITY_MART",
+  "weather": "WEATHER_NONE"
+}

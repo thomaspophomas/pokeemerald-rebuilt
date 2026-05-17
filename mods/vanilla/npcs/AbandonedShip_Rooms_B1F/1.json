@@ -1,0 +1,45 @@
+{
+  "id": "AbandonedShip_Rooms_B1F:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Rooms_B1F/map.json",
+    "sha1": "63ab1436eada16775662b5f846694100069021d0"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/AbandonedShip_Rooms_B1F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
+      "x": 25,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AbandonedShip_Rooms_B1F_EventScript_FatMan",
+      "flag": "0"
+    }
+  },
+  "map": "AbandonedShip_Rooms_B1F",
+  "mapId": "MAP_ABANDONED_SHIP_ROOMS_B1F",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_FAT_MAN",
+  "x": 25,
+  "y": 6,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "AbandonedShip_Rooms_B1F_EventScript_FatMan",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

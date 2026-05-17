@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_GRUNT_PETALBURG_WOODS",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_GRUNT_PETALBURG_WOODS] =\n    {\n        .trainerClass = TRAINER_CLASS_TEAM_AQUA,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,\n        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,\n        .trainerName = _(\"GRUNT\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntPetalburgWoods),\n    },"
+  },
+  "symbol": "TRAINER_GRUNT_PETALBURG_WOODS",
+  "numericId": 10,
+  "trainerName": "GRUNT",
+  "trainerClass": "TRAINER_CLASS_TEAM_AQUA",
+  "trainerPic": "TRAINER_PIC_AQUA_GRUNT_M",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_AQUA",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_GruntPetalburgWoods",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

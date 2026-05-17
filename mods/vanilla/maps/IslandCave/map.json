@@ -77,5 +77,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "IslandCave_EventScript_CaveEntranceSide"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/IslandCave/map.json",
+    "sha1": "62e7e622ef16e8b6c408d269b721c6aa0f710cd0"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/IslandCave/map.json",
+    "mapName": "IslandCave",
+    "scriptsSourcePath": "data/maps/IslandCave/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 67,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

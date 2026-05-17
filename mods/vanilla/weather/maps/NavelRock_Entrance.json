@@ -1,0 +1,16 @@
+{
+  "id": "NavelRock_Entrance:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NavelRock_Entrance/map.json",
+    "sha1": "5d967a6a8238a3547ae4c03a69b0ba3fadc83e29"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/NavelRock_Entrance/map.json"
+  },
+  "map": "NavelRock_Entrance",
+  "mapId": "MAP_NAVEL_ROCK_ENTRANCE",
+  "weather": "WEATHER_NONE"
+}

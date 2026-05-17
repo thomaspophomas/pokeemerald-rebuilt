@@ -1,56 +1,41 @@
 # Vanilla Mod Extraction
 
-`mods/vanilla` is the source of truth for the built-in vanilla content. Legacy
-C, INC, and data files remain in place only as materialized mirrors while the
-existing build pipeline still consumes them.
+`mods/vanilla` is the source of truth for the built-in vanilla content. Its
+layout is intentionally the same shape that later mods should use: every domain
+has a stable `index.json`, entity JSON files, optional scripts, and an audit-only
+`_source_manifest.json`.
 
 ## Rules
 
 - All gameplay and mod data must be JSON. GitHub Actions workflow YAML is the
   only YAML exception.
-- Every mod API domain has a folder under `mods/vanilla/<domain>`.
-- Every mod API domain has a schema under `docs/mod_api_schemas/<domain>.schema.json`.
-- Every mod API domain has an expectation file under
-  `mods/vanilla/expectations/<domain>/baseline.expected.json`.
-- Ambiguous domains use deterministic source-file manifests until their legacy
-  C/INC pipeline is replaced by typed materializers.
+- Every mod API domain has `mods/vanilla/<domain>/index.json`.
+- Every entity JSON contains `id`, `domain`, `schemaVersion`, `source`, and
+  `legacy`.
+- `_source_manifest.json` is only for drift auditing; it is not the modding API.
+- Legacy C/INC data can remain while the build consumes it, but it must be
+  referenced or reproducible from the entity JSON structure.
 - Multiplayer v7 protocol, bridge, manifest, resource locks, and
-  `OverworldInteraction_*` contracts are not part of this migration and must not
-  be rolled back.
+  `OverworldInteraction_*` contracts must not be rolled back.
 
-## Domains
+## Layout
 
-The vanilla extraction currently covers:
+The extraction covers `maps`, `npcs`, `trainers`, `trainer_parties`, `weather`,
+`time`, `flags`, `events`, `language`, `sprite_assets`, `overworld_sprites`,
+`battle_sprites`, `followers`, `outfits`, `pokeballs`, `engine_rulesets`,
+`state`, `quests`, `wild_encounters`, `items`, `pokemon`, `moves`, and `shops`.
 
-- `maps`
-- `npcs`
-- `trainers`
-- `trainer_parties`
-- `weather`
-- `time`
-- `flags`
-- `events`
-- `language`
-- `sprite_assets`
-- `overworld_sprites`
-- `battle_sprites`
-- `followers`
-- `outfits`
-- `pokeballs`
-- `engine_rulesets`
-- `state`
-- `quests`
-- `wild_encounters`
-- `items`
-- `pokemon`
-- `moves`
-- `shops`
+Important entity layouts:
 
-Maps are extracted fully from `data/maps`, including all 518 map JSON files,
-`map_groups.json`, and each map `scripts.inc` mirror. Trainers are extracted
-from `src/data/trainers.h`, with all 855 trainer records represented as JSON
-and the legacy C mirror retained. Trainer parties are extracted from
-`src/data/trainer_parties.h`, with all 854 party blocks represented as JSON.
+- `maps/<MapName>/map.json` plus optional `maps/<MapName>/scripts.inc`.
+- `npcs/<MapName>/<localId>.json`.
+- `trainers/<TRAINER_SYMBOL>.json`.
+- `trainer_parties/<sPartySymbol>.json`.
+- `flags/flags/<FLAG>.json` and `flags/vars/<VAR>.json`.
+- `items/items/<ITEM>.json`, `pokemon/species/<SPECIES>.json`,
+  `moves/moves/<MOVE>.json`, and `shops/<ShopSymbol>.json`.
+- Domains that are not yet semantically parsed use one JSON per source asset
+  under `source_files/`, so they still have a modder-visible entity structure.
 
 ## Tooling
 
@@ -60,25 +45,17 @@ Run the full extraction with:
 python scripts/vanilla/vanilla_migration.py extract --root .
 ```
 
-Run materialized drift checks with:
-
-```sh
-python scripts/vanilla/vanilla_migration.py materialize --root . --check
-```
-
-Run expectation checks with:
+Run drift checks with:
 
 ```sh
 python scripts/vanilla/vanilla_migration.py check --root .
 ```
 
-Per-domain wrappers exist as `scripts/vanilla/extract_<domain>.py` and
-`scripts/vanilla/materialize_<domain>.py` so future CI jobs can narrow drift
-checks to a single API.
+Per-domain wrappers exist as `scripts/vanilla/extract_<domain>.py`,
+`scripts/vanilla/materialize_<domain>.py`, and
+`scripts/ci/check_vanilla_<domain>_materialized.py`.
 
 ## CI Checks
-
-The migration adds:
 
 - `python scripts/ci/check_mod_json.py`
 - `python scripts/ci/check_no_game_yaml.py`
@@ -86,4 +63,4 @@ The migration adds:
 - `python scripts/ci/check_vanilla_materialized.py`
 
 `make generated` runs vanilla extraction before `scripts/modgen.py`, so the
-generated mod registry sees `mods/vanilla` before it emits C registry files.
+generated mod registry is built from the current `mods/vanilla` indices.

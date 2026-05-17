@@ -1,0 +1,45 @@
+{
+  "id": "LittlerootTown_MaysHouse_2F:16",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_2F/map.json",
+    "sha1": "22dcc564c8c9748ea6f038ccb8eb713be5bb82ee"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_2F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 5,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LittlerootTown_MaysHouse_2F_EventScript_RivalsPokeBall",
+      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL"
+    }
+  },
+  "map": "LittlerootTown_MaysHouse_2F",
+  "mapId": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F",
+  "localId": 16,
+  "graphicsId": "OBJ_EVENT_GFX_ITEM_BALL",
+  "x": 5,
+  "y": 4,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "LittlerootTown_MaysHouse_2F_EventScript_RivalsPokeBall",
+  "flag": "FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

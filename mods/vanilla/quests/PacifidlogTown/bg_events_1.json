@@ -1,0 +1,30 @@
+{
+  "id": "PacifidlogTown:bg_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown/map.json",
+    "sha1": "6f6de0aed6b9c3abba4aca518908507188e2f4d7"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/PacifidlogTown/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 7,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "PacifidlogTown_EventScript_TownSign"
+    }
+  },
+  "map": "PacifidlogTown",
+  "mapId": "MAP_PACIFIDLOG_TOWN",
+  "eventType": "bg_events",
+  "index": 1,
+  "script": "PacifidlogTown_EventScript_TownSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "EverGrandeCity_Hall4:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_Hall4/map.json",
+    "sha1": "6d646c3e74be01c2de69dbdd929caa377f12a68e"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/EverGrandeCity_Hall4/map.json",
+    "raw": {
+      "x": 5,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_EVER_GRANDE_CITY_CHAMPIONS_ROOM",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "EverGrandeCity_Hall4",
+  "mapId": "MAP_EVER_GRANDE_CITY_HALL4",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -24,5 +24,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Underwater2/map.json",
+    "sha1": "5f4149be4c544c2df95115c2a013c719eb19eab0"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/AbandonedShip_Underwater2/map.json",
+    "mapName": "AbandonedShip_Underwater2",
+    "scriptsSourcePath": "data/maps/AbandonedShip_Underwater2/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 64,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

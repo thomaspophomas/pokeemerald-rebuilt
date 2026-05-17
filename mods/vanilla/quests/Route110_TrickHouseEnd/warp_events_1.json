@@ -1,0 +1,27 @@
+{
+  "id": "Route110_TrickHouseEnd:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEnd/map.json",
+    "sha1": "4aae9a518aabdc7632ab655e56fe0c80b12f25b7"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route110_TrickHouseEnd/map.json",
+    "raw": {
+      "x": 2,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE110_TRICK_HOUSE_CORRIDOR",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Route110_TrickHouseEnd",
+  "mapId": "MAP_ROUTE110_TRICK_HOUSE_END",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

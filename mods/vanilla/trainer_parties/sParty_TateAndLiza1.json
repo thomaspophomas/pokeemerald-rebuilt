@@ -1,0 +1,17 @@
+{
+  "id": "sParty_TateAndLiza1",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemCustomMoves sParty_TateAndLiza1[] = {\n    {\n    .iv = 250,\n    .lvl = 41,\n    .species = SPECIES_CLAYDOL,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_EARTHQUAKE, MOVE_ANCIENT_POWER, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN}\n    },\n    {\n    .iv = 250,\n    .lvl = 41,\n    .species = SPECIES_XATU,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_PSYCHIC, MOVE_SUNNY_DAY, MOVE_CONFUSE_RAY, MOVE_CALM_MIND}\n    },\n    {\n    .iv = 250,\n    .lvl = 42,\n    .species = SPECIES_LUNATONE,\n    .heldItem = ITEM_SITRUS_BERRY,\n    .moves = {MOVE_LIGHT_SCREEN, MOVE_PSYCHIC, MOVE_HYPNOSIS, MOVE_CALM_MIND}\n    },\n    {\n    .iv = 250,\n    .lvl = 42,\n    .species = SPECIES_SOLROCK,\n    .heldItem = ITEM_SITRUS_BERRY,\n    .moves = {MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_PSYCHIC, MOVE_FLAMETHROWER}\n    }\n};"
+  },
+  "symbol": "sParty_TateAndLiza1",
+  "partyType": "TrainerMonItemCustomMoves",
+  "pokemonCount": 4
+}

@@ -1,0 +1,30 @@
+{
+  "id": "SlateportCity_OceanicMuseum_2F:bg_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_2F/map.json",
+    "sha1": "076d5db789f83c3818fa294bedd1070e7e5fe604"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_2F/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 18,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SlateportCity_OceanicMuseum_2F_EventScript_WaterQualitySample1"
+    }
+  },
+  "map": "SlateportCity_OceanicMuseum_2F",
+  "mapId": "MAP_SLATEPORT_CITY_OCEANIC_MUSEUM_2F",
+  "eventType": "bg_events",
+  "index": 0,
+  "script": "SlateportCity_OceanicMuseum_2F_EventScript_WaterQualitySample1",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

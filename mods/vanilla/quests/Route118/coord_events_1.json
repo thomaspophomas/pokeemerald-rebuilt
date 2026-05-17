@@ -1,0 +1,31 @@
+{
+  "id": "Route118:coord_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route118/map.json",
+    "sha1": "e722f5845bad96db2f079abf577a8918ccdf2db5"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route118/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 44,
+      "y": 11,
+      "elevation": 3,
+      "var": "VAR_ROUTE118_STATE",
+      "var_value": "0",
+      "script": "Route118_EventScript_StevenTrigger1"
+    }
+  },
+  "map": "Route118",
+  "mapId": "MAP_ROUTE118",
+  "eventType": "coord_events",
+  "index": 1,
+  "script": "Route118_EventScript_StevenTrigger1",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

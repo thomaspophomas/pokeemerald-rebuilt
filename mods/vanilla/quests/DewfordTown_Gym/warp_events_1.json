@@ -1,0 +1,27 @@
+{
+  "id": "DewfordTown_Gym:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Gym/map.json",
+    "sha1": "4bca76fcf0a38c12e263ec42a45ec405e4bfed2f"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/DewfordTown_Gym/map.json",
+    "raw": {
+      "x": 6,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_DEWFORD_TOWN",
+      "dest_warp_id": "2"
+    }
+  },
+  "map": "DewfordTown_Gym",
+  "mapId": "MAP_DEWFORD_TOWN_GYM",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

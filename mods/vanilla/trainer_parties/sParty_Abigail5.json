@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Abigail5",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemDefaultMoves sParty_Abigail5[] = {\n    {\n    .iv = 40,\n    .lvl = 37,\n    .species = SPECIES_MAGNETON,\n    }\n};"
+  },
+  "symbol": "sParty_Abigail5",
+  "partyType": "TrainerMonNoItemDefaultMoves",
+  "pokemonCount": 1
+}

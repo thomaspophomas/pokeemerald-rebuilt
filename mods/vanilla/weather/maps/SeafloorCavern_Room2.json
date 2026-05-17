@@ -1,0 +1,16 @@
+{
+  "id": "SeafloorCavern_Room2:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Room2/map.json",
+    "sha1": "85571e9931ec731499543251a0632dcb8a9333b9"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/SeafloorCavern_Room2/map.json"
+  },
+  "map": "SeafloorCavern_Room2",
+  "mapId": "MAP_SEAFLOOR_CAVERN_ROOM2",
+  "weather": "WEATHER_NONE"
+}

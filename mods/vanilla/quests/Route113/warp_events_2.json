@@ -1,0 +1,27 @@
+{
+  "id": "Route113:warp_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113/map.json",
+    "sha1": "4d5b412e7056cb5dda1085ac70fb8a367cb400c1"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route113/map.json",
+    "raw": {
+      "x": 88,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_TERRA_CAVE_ENTRANCE",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Route113",
+  "mapId": "MAP_ROUTE113",
+  "eventType": "warp_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

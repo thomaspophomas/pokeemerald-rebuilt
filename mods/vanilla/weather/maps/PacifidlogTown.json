@@ -1,0 +1,16 @@
+{
+  "id": "PacifidlogTown:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown/map.json",
+    "sha1": "6f6de0aed6b9c3abba4aca518908507188e2f4d7"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/PacifidlogTown/map.json"
+  },
+  "map": "PacifidlogTown",
+  "mapId": "MAP_PACIFIDLOG_TOWN",
+  "weather": "WEATHER_SUNNY"
+}

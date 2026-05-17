@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_DANIELLE",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_DANIELLE] =\n    {\n        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,\n        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,\n        .trainerPic = TRAINER_PIC_BATTLE_GIRL,\n        .trainerName = _(\"DANIELLE\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = NO_ITEM_CUSTOM_MOVES(sParty_Danielle),\n    },"
+  },
+  "symbol": "TRAINER_DANIELLE",
+  "numericId": 650,
+  "trainerName": "DANIELLE",
+  "trainerClass": "TRAINER_CLASS_BATTLE_GIRL",
+  "trainerPic": "TRAINER_PIC_BATTLE_GIRL",
+  "encounterMusicGender": "F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_Danielle",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

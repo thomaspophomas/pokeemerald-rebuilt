@@ -1,0 +1,27 @@
+{
+  "id": "SecretBase_BlueCave1:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SecretBase_BlueCave1/map.json",
+    "sha1": "e4b33831f1df644728e64b16dc606471d5ada2b1"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SecretBase_BlueCave1/map.json",
+    "raw": {
+      "x": 5,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "WARP_ID_SECRET_BASE"
+    }
+  },
+  "map": "SecretBase_BlueCave1",
+  "mapId": "MAP_SECRET_BASE_BLUE_CAVE1",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

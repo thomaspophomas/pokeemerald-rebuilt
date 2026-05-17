@@ -1,0 +1,45 @@
+{
+  "id": "BattleFrontier_PokemonCenter_2F:4",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_PokemonCenter_2F/map.json",
+    "sha1": "d5f28fbd4410cff8cd270b34947145a85b280202"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/BattleFrontier_PokemonCenter_2F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_MYSTERY_GIFT_MAN",
+      "x": 1,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CableClub_EventScript_MysteryGiftMan",
+      "flag": "FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN"
+    }
+  },
+  "map": "BattleFrontier_PokemonCenter_2F",
+  "mapId": "MAP_BATTLE_FRONTIER_POKEMON_CENTER_2F",
+  "localId": 4,
+  "graphicsId": "OBJ_EVENT_GFX_MYSTERY_GIFT_MAN",
+  "x": 1,
+  "y": 2,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "CableClub_EventScript_MysteryGiftMan",
+  "flag": "FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "Route110:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/map.json",
+    "sha1": "8a0d70f41dabc8b115727a1fccde79f1c803c9e1"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route110/map.json",
+    "raw": {
+      "x": 11,
+      "y": 66,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE110_TRICK_HOUSE_ENTRANCE",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Route110",
+  "mapId": "MAP_ROUTE110",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

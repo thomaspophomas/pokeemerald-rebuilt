@@ -1,0 +1,46 @@
+{
+  "id": "DewfordTown:LOCALID_DEWFORD_BRINEY",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown/map.json",
+    "sha1": "0481598c70decb6cd75a36c9ab0ee51d577fd51a"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/DewfordTown/map.json",
+    "raw": {
+      "local_id": "LOCALID_DEWFORD_BRINEY",
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+      "x": 12,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "DewfordTown_EventScript_Briney",
+      "flag": "FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN"
+    }
+  },
+  "map": "DewfordTown",
+  "mapId": "MAP_DEWFORD_TOWN",
+  "localId": "LOCALID_DEWFORD_BRINEY",
+  "graphicsId": "OBJ_EVENT_GFX_EXPERT_M",
+  "x": 12,
+  "y": 9,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+  "movementRangeX": 0,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "3",
+  "script": "DewfordTown_EventScript_Briney",
+  "flag": "FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

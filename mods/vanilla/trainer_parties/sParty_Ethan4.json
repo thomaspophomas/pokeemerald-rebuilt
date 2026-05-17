@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Ethan4",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemDefaultMoves sParty_Ethan4[] = {\n    {\n    .iv = 30,\n    .lvl = 31,\n    .species = SPECIES_SANDSHREW,\n    },\n    {\n    .iv = 30,\n    .lvl = 31,\n    .species = SPECIES_SWELLOW,\n    },\n    {\n    .iv = 30,\n    .lvl = 31,\n    .species = SPECIES_LINOONE,\n    }\n};"
+  },
+  "symbol": "sParty_Ethan4",
+  "partyType": "TrainerMonNoItemDefaultMoves",
+  "pokemonCount": 3
+}

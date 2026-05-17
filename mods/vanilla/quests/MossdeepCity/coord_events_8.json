@@ -1,0 +1,31 @@
+{
+  "id": "MossdeepCity:coord_events:8",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/map.json",
+    "sha1": "e5f3ed3515745877143da05bc99302333d940624"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MossdeepCity/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 40,
+      "y": 25,
+      "elevation": 5,
+      "var": "VAR_MOSSDEEP_CITY_STATE",
+      "var_value": "1",
+      "script": "MossdeepCity_EventScript_TeamMagmaEnterSpaceCenter"
+    }
+  },
+  "map": "MossdeepCity",
+  "mapId": "MAP_MOSSDEEP_CITY",
+  "eventType": "coord_events",
+  "index": 8,
+  "script": "MossdeepCity_EventScript_TeamMagmaEnterSpaceCenter",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "sParty_AnnaAndMeg4",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_AnnaAndMeg4[] = {\n    {\n    .iv = 30,\n    .lvl = 34,\n    .species = SPECIES_LINOONE,\n    .moves = {MOVE_GROWL, MOVE_TAIL_WHIP, MOVE_HEADBUTT, MOVE_ODOR_SLEUTH}\n    },\n    {\n    .iv = 30,\n    .lvl = 36,\n    .species = SPECIES_MAKUHITA,\n    .moves = {MOVE_TACKLE, MOVE_FOCUS_ENERGY, MOVE_ARM_THRUST, MOVE_NONE}\n    }\n};"
+  },
+  "symbol": "sParty_AnnaAndMeg4",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 2
+}

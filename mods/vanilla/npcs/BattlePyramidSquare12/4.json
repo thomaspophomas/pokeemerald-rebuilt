@@ -1,0 +1,45 @@
+{
+  "id": "BattlePyramidSquare12:4",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattlePyramidSquare12/map.json",
+    "sha1": "7056235ffce210d140b0af6186e80ecfc9c0768a"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/BattlePyramidSquare12/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
+      "x": 3,
+      "y": 3,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "BattlePyramid_TrainerBattle",
+      "flag": "0"
+    }
+  },
+  "map": "BattlePyramidSquare12",
+  "mapId": "MAP_BATTLE_PYRAMID_SQUARE12",
+  "localId": 4,
+  "graphicsId": "OBJ_EVENT_GFX_WOMAN_1",
+  "x": 3,
+  "y": 3,
+  "elevation": 4,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "3",
+  "script": "BattlePyramid_TrainerBattle",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

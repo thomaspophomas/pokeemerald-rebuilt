@@ -24,5 +24,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AlteringCave/map.json",
+    "sha1": "f0f0ea88dda68659f7a9ea102594f0a1c98ad5fe"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/AlteringCave/map.json",
+    "mapName": "AlteringCave",
+    "scriptsSourcePath": "data/maps/AlteringCave/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 106,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

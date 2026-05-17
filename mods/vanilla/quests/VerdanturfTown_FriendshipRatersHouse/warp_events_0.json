@@ -1,0 +1,27 @@
+{
+  "id": "VerdanturfTown_FriendshipRatersHouse:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_FriendshipRatersHouse/map.json",
+    "sha1": "1ca5eddfb3b112ba9eb98f155661b870f1bdaaa1"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/VerdanturfTown_FriendshipRatersHouse/map.json",
+    "raw": {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_VERDANTURF_TOWN",
+      "dest_warp_id": "5"
+    }
+  },
+  "map": "VerdanturfTown_FriendshipRatersHouse",
+  "mapId": "MAP_VERDANTURF_TOWN_FRIENDSHIP_RATERS_HOUSE",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

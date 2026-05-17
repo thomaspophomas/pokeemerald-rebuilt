@@ -1,0 +1,31 @@
+{
+  "id": "Route114_FossilManiacsTunnel:coord_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_FossilManiacsTunnel/map.json",
+    "sha1": "86268b956d755367739c3557245a0c9596d8a4cf"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route114_FossilManiacsTunnel/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 6,
+      "y": 4,
+      "elevation": 3,
+      "var": "VAR_FOSSIL_MANIAC_STATE",
+      "var_value": "1",
+      "script": "Route114_FossilManiacsTunnel_EventScript_ManiacMentionCaveIn"
+    }
+  },
+  "map": "Route114_FossilManiacsTunnel",
+  "mapId": "MAP_ROUTE114_FOSSIL_MANIACS_TUNNEL",
+  "eventType": "coord_events",
+  "index": 1,
+  "script": "Route114_FossilManiacsTunnel_EventScript_ManiacMentionCaveIn",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

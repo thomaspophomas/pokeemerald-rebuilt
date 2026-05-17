@@ -1,0 +1,27 @@
+{
+  "id": "Route114_LanettesHouse:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_LanettesHouse/map.json",
+    "sha1": "a32f9af8e9fee2baa4e68ea69dff9c176c0c7c89"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route114_LanettesHouse/map.json",
+    "raw": {
+      "x": 6,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE114",
+      "dest_warp_id": "2"
+    }
+  },
+  "map": "Route114_LanettesHouse",
+  "mapId": "MAP_ROUTE114_LANETTES_HOUSE",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

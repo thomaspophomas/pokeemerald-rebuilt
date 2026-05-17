@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_GARRET",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_GARRET] =\n    {\n        .trainerClass = TRAINER_CLASS_RICH_BOY,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,\n        .trainerPic = TRAINER_PIC_RICH_BOY,\n        .trainerName = _(\"GARRET\"),\n        .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = ITEM_DEFAULT_MOVES(sParty_Garret),\n    },"
+  },
+  "symbol": "TRAINER_GARRET",
+  "numericId": 138,
+  "trainerName": "GARRET",
+  "trainerClass": "TRAINER_CLASS_RICH_BOY",
+  "trainerPic": "TRAINER_PIC_RICH_BOY",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_RICH",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_Garret",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

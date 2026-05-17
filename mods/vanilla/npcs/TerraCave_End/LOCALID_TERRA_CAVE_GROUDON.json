@@ -1,0 +1,43 @@
+{
+  "id": "TerraCave_End:LOCALID_TERRA_CAVE_GROUDON",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TerraCave_End/map.json",
+    "sha1": "379b259aa32fd18b04dcd1df4e74fbb02353b876"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/TerraCave_End/map.json",
+    "raw": {
+      "local_id": "LOCALID_TERRA_CAVE_GROUDON",
+      "graphics_id": "OBJ_EVENT_GFX_GROUDON_FRONT",
+      "x": 17,
+      "y": 22,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_TERRA_CAVE_GROUDON"
+    }
+  },
+  "map": "TerraCave_End",
+  "mapId": "MAP_TERRA_CAVE_END",
+  "localId": "LOCALID_TERRA_CAVE_GROUDON",
+  "graphicsId": "OBJ_EVENT_GFX_GROUDON_FRONT",
+  "x": 17,
+  "y": 22,
+  "elevation": 1,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_HIDE_TERRA_CAVE_GROUDON",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

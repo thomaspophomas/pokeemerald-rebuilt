@@ -1,0 +1,27 @@
+{
+  "id": "MossdeepCity_GameCorner_1F:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_GameCorner_1F/map.json",
+    "sha1": "ed63dd27bc9d02b602262d2bb4dd92275ef24246"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MossdeepCity_GameCorner_1F/map.json",
+    "raw": {
+      "x": 6,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_MOSSDEEP_CITY",
+      "dest_warp_id": "9"
+    }
+  },
+  "map": "MossdeepCity_GameCorner_1F",
+  "mapId": "MAP_MOSSDEEP_CITY_GAME_CORNER_1F",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

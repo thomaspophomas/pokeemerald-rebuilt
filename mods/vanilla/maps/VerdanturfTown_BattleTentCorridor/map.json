@@ -31,5 +31,26 @@
   ],
   "warp_events": [],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentCorridor/map.json",
+    "sha1": "eda6961bf94a569889ae1d253ff06acb667cf144"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentCorridor/map.json",
+    "mapName": "VerdanturfTown_BattleTentCorridor",
+    "scriptsSourcePath": "data/maps/VerdanturfTown_BattleTentCorridor/scripts.inc"
+  },
+  "mapGroup": 6,
+  "mapNum": 1,
+  "mapGroupSymbol": "gMapGroup_IndoorVerdanturf",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

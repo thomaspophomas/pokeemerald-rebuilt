@@ -41,6 +41,22 @@ Vanilla extraction domains also reserve these top-level folders under
 `battle_sprites`, `followers`, `outfits`, `pokeballs`, `engine_rulesets`,
 `state`, `quests`, `wild_encounters`, `items`, `pokemon`, `moves`, and `shops`.
 
+Vanilla-style domains should include an `index.json` with deterministic
+`entries`. Each entry points at an entity JSON file with `id`, `domain`,
+`schemaVersion`, `source`, and `legacy`. Mods may provide only the entries they
+override or add.
+
+Examples:
+
+```text
+mods/example/trainers/TRAINER_ALFONS.json
+mods/example/trainer_parties/sParty_Alfons.json
+mods/example/maps/AlfonsHouse/map.json
+mods/example/maps/AlfonsHouse/scripts.inc
+mods/example/npcs/AlfonsHouse/LOCALID_ALFONS.json
+mods/example/items/items/ITEM_ALFONS_STONE.json
+```
+
 Run `python3 scripts/modgen.py --root .` or let `make generated` run it during
 the normal build. Generated files live under `include/generated`,
 `src/generated`, and `build/generated`; do not edit those outputs by hand.

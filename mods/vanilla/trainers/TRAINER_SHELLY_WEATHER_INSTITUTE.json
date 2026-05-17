@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_SHELLY_WEATHER_INSTITUTE",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_SHELLY_WEATHER_INSTITUTE] =\n    {\n        .trainerClass = TRAINER_CLASS_AQUA_ADMIN,\n        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,\n        .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,\n        .trainerName = _(\"SHELLY\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_ShellyWeatherInstitute),\n    },"
+  },
+  "symbol": "TRAINER_SHELLY_WEATHER_INSTITUTE",
+  "numericId": 32,
+  "trainerName": "SHELLY",
+  "trainerClass": "TRAINER_CLASS_AQUA_ADMIN",
+  "trainerPic": "TRAINER_PIC_AQUA_ADMIN_F",
+  "encounterMusicGender": "F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY",
+  "partyRef": "sParty_ShellyWeatherInstitute",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

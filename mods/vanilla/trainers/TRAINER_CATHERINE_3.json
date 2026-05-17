@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_CATHERINE_3",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_CATHERINE_3] =\n    {\n        .trainerClass = TRAINER_CLASS_PKMN_RANGER,\n        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,\n        .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,\n        .trainerName = _(\"CATHERINE\"),\n        .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_Catherine3),\n    },"
+  },
+  "symbol": "TRAINER_CATHERINE_3",
+  "numericId": 563,
+  "trainerName": "CATHERINE",
+  "trainerClass": "TRAINER_CLASS_PKMN_RANGER",
+  "trainerPic": "TRAINER_PIC_POKEMON_RANGER_F",
+  "encounterMusicGender": "F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY",
+  "partyRef": "sParty_Catherine3",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

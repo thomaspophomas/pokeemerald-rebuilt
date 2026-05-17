@@ -1,0 +1,242 @@
+{
+  "id": "gWildMonHeaders:MAP_METEOR_FALLS_1F_1R:77",
+  "domain": "wild_encounters",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/wild_encounters.json",
+    "sha1": "49cfb49e719fde5aa0543f883b6c85accb82ebac"
+  },
+  "legacy": {
+    "kind": "wild_encounter_group",
+    "sourcePath": "src/data/wild_encounters.json",
+    "groupLabel": "gWildMonHeaders"
+  },
+  "groupLabel": "gWildMonHeaders",
+  "forMaps": true,
+  "fields": [
+    {
+      "type": "land_mons",
+      "encounter_rates": [
+        20,
+        20,
+        10,
+        10,
+        10,
+        10,
+        5,
+        5,
+        4,
+        4,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "water_mons",
+      "encounter_rates": [
+        60,
+        30,
+        5,
+        4,
+        1
+      ]
+    },
+    {
+      "type": "rock_smash_mons",
+      "encounter_rates": [
+        60,
+        30,
+        5,
+        4,
+        1
+      ]
+    },
+    {
+      "type": "fishing_mons",
+      "encounter_rates": [
+        70,
+        30,
+        60,
+        20,
+        20,
+        40,
+        40,
+        15,
+        4,
+        1
+      ],
+      "groups": {
+        "old_rod": [
+          0,
+          1
+        ],
+        "good_rod": [
+          2,
+          3,
+          4
+        ],
+        "super_rod": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    }
+  ],
+  "encounter": {
+    "map": "MAP_METEOR_FALLS_1F_1R",
+    "base_label": "gMeteorFalls_1F_1R",
+    "land_mons": {
+      "encounter_rate": 10,
+      "mons": [
+        {
+          "min_level": 16,
+          "max_level": 16,
+          "species": "SPECIES_ZUBAT"
+        },
+        {
+          "min_level": 17,
+          "max_level": 17,
+          "species": "SPECIES_ZUBAT"
+        },
+        {
+          "min_level": 18,
+          "max_level": 18,
+          "species": "SPECIES_ZUBAT"
+        },
+        {
+          "min_level": 15,
+          "max_level": 15,
+          "species": "SPECIES_ZUBAT"
+        },
+        {
+          "min_level": 14,
+          "max_level": 14,
+          "species": "SPECIES_ZUBAT"
+        },
+        {
+          "min_level": 16,
+          "max_level": 16,
+          "species": "SPECIES_SOLROCK"
+        },
+        {
+          "min_level": 18,
+          "max_level": 18,
+          "species": "SPECIES_SOLROCK"
+        },
+        {
+          "min_level": 14,
+          "max_level": 14,
+          "species": "SPECIES_SOLROCK"
+        },
+        {
+          "min_level": 19,
+          "max_level": 19,
+          "species": "SPECIES_ZUBAT"
+        },
+        {
+          "min_level": 20,
+          "max_level": 20,
+          "species": "SPECIES_ZUBAT"
+        },
+        {
+          "min_level": 19,
+          "max_level": 19,
+          "species": "SPECIES_ZUBAT"
+        },
+        {
+          "min_level": 20,
+          "max_level": 20,
+          "species": "SPECIES_ZUBAT"
+        }
+      ]
+    },
+    "water_mons": {
+      "encounter_rate": 4,
+      "mons": [
+        {
+          "min_level": 5,
+          "max_level": 35,
+          "species": "SPECIES_ZUBAT"
+        },
+        {
+          "min_level": 30,
+          "max_level": 35,
+          "species": "SPECIES_ZUBAT"
+        },
+        {
+          "min_level": 25,
+          "max_level": 35,
+          "species": "SPECIES_SOLROCK"
+        },
+        {
+          "min_level": 15,
+          "max_level": 25,
+          "species": "SPECIES_SOLROCK"
+        },
+        {
+          "min_level": 5,
+          "max_level": 15,
+          "species": "SPECIES_SOLROCK"
+        }
+      ]
+    },
+    "fishing_mons": {
+      "encounter_rate": 30,
+      "mons": [
+        {
+          "min_level": 5,
+          "max_level": 10,
+          "species": "SPECIES_MAGIKARP"
+        },
+        {
+          "min_level": 5,
+          "max_level": 10,
+          "species": "SPECIES_GOLDEEN"
+        },
+        {
+          "min_level": 10,
+          "max_level": 30,
+          "species": "SPECIES_MAGIKARP"
+        },
+        {
+          "min_level": 10,
+          "max_level": 30,
+          "species": "SPECIES_GOLDEEN"
+        },
+        {
+          "min_level": 10,
+          "max_level": 30,
+          "species": "SPECIES_BARBOACH"
+        },
+        {
+          "min_level": 25,
+          "max_level": 30,
+          "species": "SPECIES_BARBOACH"
+        },
+        {
+          "min_level": 30,
+          "max_level": 35,
+          "species": "SPECIES_BARBOACH"
+        },
+        {
+          "min_level": 20,
+          "max_level": 25,
+          "species": "SPECIES_BARBOACH"
+        },
+        {
+          "min_level": 35,
+          "max_level": 40,
+          "species": "SPECIES_BARBOACH"
+        },
+        {
+          "min_level": 40,
+          "max_level": 45,
+          "species": "SPECIES_BARBOACH"
+        }
+      ]
+    }
+  }
+}

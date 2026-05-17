@@ -1,0 +1,45 @@
+{
+  "id": "BattleFrontier_Lounge3:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge3/map.json",
+    "sha1": "58696dc5ba8e73b7e33d3788b06d642240fdc218"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/BattleFrontier_Lounge3/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 4,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BattleFrontier_Lounge3_EventScript_Gambler",
+      "flag": "0"
+    }
+  },
+  "map": "BattleFrontier_Lounge3",
+  "mapId": "MAP_BATTLE_FRONTIER_LOUNGE3",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_HIKER",
+  "x": 4,
+  "y": 6,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "BattleFrontier_Lounge3_EventScript_Gambler",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

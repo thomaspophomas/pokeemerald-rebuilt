@@ -1,0 +1,16 @@
+{
+  "id": "LavaridgeTown_House:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_House/map.json",
+    "sha1": "31405e61ea4624fe1e2998ed69c2576e8c2cbc7b"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/LavaridgeTown_House/map.json"
+  },
+  "map": "LavaridgeTown_House",
+  "mapId": "MAP_LAVARIDGE_TOWN_HOUSE",
+  "weather": "WEATHER_NONE"
+}

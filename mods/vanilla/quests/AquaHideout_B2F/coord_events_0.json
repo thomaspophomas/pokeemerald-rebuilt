@@ -1,0 +1,31 @@
+{
+  "id": "AquaHideout_B2F:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B2F/map.json",
+    "sha1": "2e6b1c403c764635113fa4262af815f4ece868ff"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/AquaHideout_B2F/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 28,
+      "y": 17,
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "AquaHideout_B2F_EventScript_MattNoticePlayer"
+    }
+  },
+  "map": "AquaHideout_B2F",
+  "mapId": "MAP_AQUA_HIDEOUT_B2F",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": "AquaHideout_B2F_EventScript_MattNoticePlayer",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

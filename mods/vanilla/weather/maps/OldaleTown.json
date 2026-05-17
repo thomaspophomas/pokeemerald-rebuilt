@@ -1,0 +1,16 @@
+{
+  "id": "OldaleTown:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown/map.json",
+    "sha1": "7697ede5777de62072903856e298259fa2bba11d"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/OldaleTown/map.json"
+  },
+  "map": "OldaleTown",
+  "mapId": "MAP_OLDALE_TOWN",
+  "weather": "WEATHER_SUNNY"
+}

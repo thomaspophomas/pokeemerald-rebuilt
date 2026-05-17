@@ -1,0 +1,45 @@
+{
+  "id": "SlateportCity_NameRatersHouse:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_NameRatersHouse/map.json",
+    "sha1": "aa0c23d0c1c7414fcf53fc51427567742b40d20e"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SlateportCity_NameRatersHouse/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+      "x": 7,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SlateportCity_NameRatersHouse_EventScript_NameRater",
+      "flag": "0"
+    }
+  },
+  "map": "SlateportCity_NameRatersHouse",
+  "mapId": "MAP_SLATEPORT_CITY_NAME_RATERS_HOUSE",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_EXPERT_M",
+  "x": 7,
+  "y": 5,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "SlateportCity_NameRatersHouse_EventScript_NameRater",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

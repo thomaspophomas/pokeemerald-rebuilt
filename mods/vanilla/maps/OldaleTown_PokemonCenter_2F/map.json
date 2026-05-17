@@ -91,5 +91,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown_PokemonCenter_2F/map.json",
+    "sha1": "613fe8f2c75f69e5afa3b8e8ee12badedee2ffcd"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/OldaleTown_PokemonCenter_2F/map.json",
+    "mapName": "OldaleTown_PokemonCenter_2F",
+    "scriptsSourcePath": "data/maps/OldaleTown_PokemonCenter_2F/scripts.inc"
+  },
+  "mapGroup": 2,
+  "mapNum": 3,
+  "mapGroupSymbol": "gMapGroup_IndoorOldale",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

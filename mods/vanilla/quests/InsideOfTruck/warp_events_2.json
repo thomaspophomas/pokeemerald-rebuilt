@@ -1,0 +1,27 @@
+{
+  "id": "InsideOfTruck:warp_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/InsideOfTruck/map.json",
+    "sha1": "c40354a9dae7ff7c27b55a8889b486648e9561e5"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/InsideOfTruck/map.json",
+    "raw": {
+      "x": 4,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "WARP_ID_DYNAMIC"
+    }
+  },
+  "map": "InsideOfTruck",
+  "mapId": "MAP_INSIDE_OF_TRUCK",
+  "eventType": "warp_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

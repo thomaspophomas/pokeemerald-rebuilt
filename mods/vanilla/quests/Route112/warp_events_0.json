@@ -1,0 +1,27 @@
+{
+  "id": "Route112:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route112/map.json",
+    "sha1": "b661693767b6f599786f2403d78ab8974913a097"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route112/map.json",
+    "raw": {
+      "x": 28,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE112_CABLE_CAR_STATION",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Route112",
+  "mapId": "MAP_ROUTE112",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

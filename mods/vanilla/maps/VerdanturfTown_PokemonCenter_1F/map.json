@@ -92,5 +92,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_PokemonCenter_1F/map.json",
+    "sha1": "eed383bf55d87431cc7306e50b6e2f3dd4b05bbf"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/VerdanturfTown_PokemonCenter_1F/map.json",
+    "mapName": "VerdanturfTown_PokemonCenter_1F",
+    "scriptsSourcePath": "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc"
+  },
+  "mapGroup": 6,
+  "mapNum": 4,
+  "mapGroupSymbol": "gMapGroup_IndoorVerdanturf",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

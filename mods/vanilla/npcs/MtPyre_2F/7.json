@@ -1,0 +1,45 @@
+{
+  "id": "MtPyre_2F:7",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_2F/map.json",
+    "sha1": "019e5e84a593e9bc718dfbacfca8c779b67d84df"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MtPyre_2F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "x": 6,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "MtPyre_2F_EventScript_Zander",
+      "flag": "0"
+    }
+  },
+  "map": "MtPyre_2F",
+  "mapId": "MAP_MT_PYRE_2F",
+  "localId": 7,
+  "graphicsId": "OBJ_EVENT_GFX_BLACK_BELT",
+  "x": 6,
+  "y": 9,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "2",
+  "script": "MtPyre_2F_EventScript_Zander",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

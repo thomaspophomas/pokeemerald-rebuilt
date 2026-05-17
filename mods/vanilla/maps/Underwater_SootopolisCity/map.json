@@ -31,5 +31,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_SootopolisCity/map.json",
+    "sha1": "057aad9ba40cbca5c6c18c9ada27149aa7a97de3"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Underwater_SootopolisCity/map.json",
+    "mapName": "Underwater_SootopolisCity",
+    "scriptsSourcePath": "data/maps/Underwater_SootopolisCity/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 5,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

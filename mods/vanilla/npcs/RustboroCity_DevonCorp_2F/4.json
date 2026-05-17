@@ -1,0 +1,45 @@
+{
+  "id": "RustboroCity_DevonCorp_2F:4",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_2F/map.json",
+    "sha1": "5f95c5cc7ec1dd2612789f2ffb210533edab2dfa"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_2F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 10,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 10,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RustboroCity_DevonCorp_2F_EventScript_PokemonDreamsScientist",
+      "flag": "0"
+    }
+  },
+  "map": "RustboroCity_DevonCorp_2F",
+  "mapId": "MAP_RUSTBORO_CITY_DEVON_CORP_2F",
+  "localId": 4,
+  "graphicsId": "OBJ_EVENT_GFX_SCIENTIST_1",
+  "x": 10,
+  "y": 5,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 0,
+  "movementRangeY": 10,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "RustboroCity_DevonCorp_2F_EventScript_PokemonDreamsScientist",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

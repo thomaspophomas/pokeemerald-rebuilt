@@ -1,0 +1,27 @@
+{
+  "id": "Route114_FossilManiacsHouse:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_FossilManiacsHouse/map.json",
+    "sha1": "6214af0f6f375671e794c3bb307cf12e347419e8"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route114_FossilManiacsHouse/map.json",
+    "raw": {
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE114",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "Route114_FossilManiacsHouse",
+  "mapId": "MAP_ROUTE114_FOSSIL_MANIACS_HOUSE",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

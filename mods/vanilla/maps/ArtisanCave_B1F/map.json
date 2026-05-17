@@ -78,5 +78,26 @@
       "item": "ITEM_IRON",
       "flag": "FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_IRON"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ArtisanCave_B1F/map.json",
+    "sha1": "c3b78486e63d6a2e81b3518cf8a0024415b8de00"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/ArtisanCave_B1F/map.json",
+    "mapName": "ArtisanCave_B1F",
+    "scriptsSourcePath": "data/maps/ArtisanCave_B1F/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 99,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

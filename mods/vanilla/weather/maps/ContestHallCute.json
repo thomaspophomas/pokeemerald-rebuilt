@@ -1,0 +1,16 @@
+{
+  "id": "ContestHallCute:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ContestHallCute/map.json",
+    "sha1": "299b1520943790120e13c0743b2ca7ba7d97d384"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/ContestHallCute/map.json"
+  },
+  "map": "ContestHallCute",
+  "mapId": "MAP_CONTEST_HALL_CUTE",
+  "weather": "WEATHER_NONE"
+}

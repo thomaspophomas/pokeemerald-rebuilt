@@ -1,25 +1,4295 @@
 {
   "domain": "trainers",
   "schemaVersion": 1,
-  "fileCount": 3,
-  "jsonFileCount": 1,
-  "bytes": 1152216,
-  "sha1": "b356e61e8d1aafdd25e5d286248f0f81e4fc0929",
+  "fileCount": 857,
+  "jsonFileCount": 857,
+  "bytes": 1199062,
+  "sha1": "3d0c43c2efafb2e53ee814728f1f1aa0ffcac253",
   "files": [
     {
-      "path": "mods/vanilla/trainers/legacy/opponents.h",
-      "sha1": "7853601df4505865475ccfd05f28b813956be8f9",
-      "bytes": 41621
+      "path": "mods/vanilla/trainers/TRAINER_AARON.json",
+      "sha1": "2733cefd980faf5b6c44a1a3cd5d415034af19f8",
+      "bytes": 1117
     },
     {
-      "path": "mods/vanilla/trainers/legacy/trainers.h",
-      "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706",
-      "bytes": 355854
+      "path": "mods/vanilla/trainers/TRAINER_ABIGAIL_1.json",
+      "sha1": "2bcb2c721a3daded1d9b7a8c6847ff380583ae8f",
+      "bytes": 1188
     },
     {
-      "path": "mods/vanilla/trainers/trainers.json",
-      "sha1": "8350f626bfe35e170ac8df7c5d7c53672bb36617",
-      "bytes": 754741
+      "path": "mods/vanilla/trainers/TRAINER_ABIGAIL_2.json",
+      "sha1": "f3586311af98d3bc256a733d348de1117fa7513a",
+      "bytes": 1188
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ABIGAIL_3.json",
+      "sha1": "969fee980f515fed53cf1befa8847703466e165e",
+      "bytes": 1188
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ABIGAIL_4.json",
+      "sha1": "d09909091be3dccf3e9fbc9d703ed7987701fa5f",
+      "bytes": 1188
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ABIGAIL_5.json",
+      "sha1": "a33debd8afa062353b62ef0863420d5d6cb234fb",
+      "bytes": 1188
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_AIDAN.json",
+      "sha1": "7f7f5d3b292aa4a01f2ec10655baed042c340ec9",
+      "bytes": 1108
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_AISHA.json",
+      "sha1": "b4760f74dad0d9e52225778dbf4868136e4dc0f7",
+      "bytes": 1152
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ALAN.json",
+      "sha1": "aaf1a1d0bad8dcd34fe6ef941545cb3ed6a95c15",
+      "bytes": 1079
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ALBERT.json",
+      "sha1": "23f78edeae791b9c84e455f3da847d1c712765bd",
+      "bytes": 1274
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ALBERTO.json",
+      "sha1": "881a4eac03d46872ff885166bd8eb08405ccd791",
+      "bytes": 1121
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ALEX.json",
+      "sha1": "8af6a7cd51182412e88e112b8b9215907ceb3d13",
+      "bytes": 1101
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ALEXA.json",
+      "sha1": "7a9105104d05aebf23d5f2aa3bcff4a2d858e1c2",
+      "bytes": 1306
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ALEXIA.json",
+      "sha1": "8a09f02c389796c2b4c5683b4a046a8c15588a5c",
+      "bytes": 1308
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ALEXIS.json",
+      "sha1": "1b766112cc733a171493d99aa0cb5ffa72b367ca",
+      "bytes": 1147
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ALICE.json",
+      "sha1": "c62ac5997491e79fe921fa33a1cc8c8ff1a053cb",
+      "bytes": 1144
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ALIX.json",
+      "sha1": "e9ed1fc9eb22bc213f08d6eec545fe98a536ebfe",
+      "bytes": 1133
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ALLEN.json",
+      "sha1": "4e84dede098760cbac610ab71c95e188ba3f70ca",
+      "bytes": 1100
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ALLISON.json",
+      "sha1": "8beabb013352e36dd4f288dcf153b747458c59cf",
+      "bytes": 1184
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ALVARO.json",
+      "sha1": "fa07ad6814fd78d9ae789e8cdd307cc1d268f2f3",
+      "bytes": 1063
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ALYSSA.json",
+      "sha1": "01dc8cc9ecc1374642f2ac7eb80710fbd7917a53",
+      "bytes": 1173
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_AMY_AND_LIV_1.json",
+      "sha1": "d92c850566031a354550f4b6eb26c0fcdc7f5e47",
+      "bytes": 1126
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_AMY_AND_LIV_2.json",
+      "sha1": "e62f5c54cfee2901de62de87f10bc735b129ece5",
+      "bytes": 1126
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_AMY_AND_LIV_3.json",
+      "sha1": "59483e96631019de87e8da1d9dc36e8538722d73",
+      "bytes": 1126
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_AMY_AND_LIV_4.json",
+      "sha1": "3cc610cb1b42ba405437bd835ecf32f05458f1dd",
+      "bytes": 1126
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_AMY_AND_LIV_5.json",
+      "sha1": "e2c2ace7642c64a90ba514cddffb59318633df6a",
+      "bytes": 1125
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_AMY_AND_LIV_6.json",
+      "sha1": "e689706577d644f4d58391458aafc43d41f65198",
+      "bytes": 1125
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ANABEL.json",
+      "sha1": "ff4ad4162e0975fc99d109d077aeb3bae940318b",
+      "bytes": 1277
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ANDREA.json",
+      "sha1": "ab696b1fecd93fcc2eb4056de91473d057fa651b",
+      "bytes": 1129
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ANDRES_1.json",
+      "sha1": "791655fd436472ee7314477f1da1dc7a2a8450d0",
+      "bytes": 1125
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ANDRES_2.json",
+      "sha1": "600433b155998f1ab02a5b77cdadcd311b3b4a4e",
+      "bytes": 1125
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ANDRES_3.json",
+      "sha1": "6d35e5470a2fb163ffb3320370a4c2c949760132",
+      "bytes": 1125
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ANDRES_4.json",
+      "sha1": "90fdd63dbfdecce9513af22d1d168f5c8a892e2d",
+      "bytes": 1125
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ANDRES_5.json",
+      "sha1": "821ce9002cf9d83a9304351526eb0ce58c486ecb",
+      "bytes": 1125
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ANDREW.json",
+      "sha1": "adb59b622c9f9553db16dc3c678d1a65ec8d1eec",
+      "bytes": 1109
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ANGELICA.json",
+      "sha1": "e9ce2111f2ffa82d45c83f3a152de47c200b441d",
+      "bytes": 1174
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ANGELINA.json",
+      "sha1": "2d3b67ad904bae26930a1fd7af8e1c9438ccbf14",
+      "bytes": 1159
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ANGELO.json",
+      "sha1": "7da5bb0ef72ad10d1c155c674b5f751065596526",
+      "bytes": 1225
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ANNA_AND_MEG_1.json",
+      "sha1": "6a7372bfc4a4151dd73c9f4cbb1139ae68b21d11",
+      "bytes": 1148
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ANNA_AND_MEG_2.json",
+      "sha1": "f3f572c437fade331cc589935cc3129da45278bd",
+      "bytes": 1148
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ANNA_AND_MEG_3.json",
+      "sha1": "f4ca7322e410197285400d28738c344df9bd2e7b",
+      "bytes": 1148
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ANNA_AND_MEG_4.json",
+      "sha1": "284e02ed3a8fb98cda599daf66a9ea0c98203925",
+      "bytes": 1148
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ANNA_AND_MEG_5.json",
+      "sha1": "c0c24881652ec7199d6efca4100da9e82e51d35b",
+      "bytes": 1148
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ANNIKA.json",
+      "sha1": "f9df6db23b46f1cdf493fa05378f952d75ca7cdb",
+      "bytes": 1139
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ANTHONY.json",
+      "sha1": "fd0cff5ad815b979fbdadb7bb6655ff1cb4d6e4a",
+      "bytes": 1138
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ARCHIE.json",
+      "sha1": "e4e04242bba4b85cbfba6d7464d4c0a9aff4272f",
+      "bytes": 1292
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ASHLEY.json",
+      "sha1": "5788c94512eb3a5b5e28f740d329f4d912f03492",
+      "bytes": 1145
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ATHENA.json",
+      "sha1": "07c6e9bf6e3b8ab3b4bbd3a9c41908cef6b6b5d5",
+      "bytes": 1309
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ATSUSHI.json",
+      "sha1": "41c6124e4f325ea79bd76ab1ca459404c63b25b6",
+      "bytes": 1124
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_AURON.json",
+      "sha1": "1b8d5ab98c56f95c07f11a8ea1790994e3f64a3f",
+      "bytes": 1098
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_AUSTINA.json",
+      "sha1": "3d2d86c4ce1e8033b614f4a6ad71830e7775ab7d",
+      "bytes": 1143
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_AUTUMN.json",
+      "sha1": "a4bce08130009c68c87c62790b064ad3e123af8d",
+      "bytes": 1145
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_AXLE.json",
+      "sha1": "f80b5f9c68e4762d863cadf14e2d4c3c56729900",
+      "bytes": 1087
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BARNY.json",
+      "sha1": "942e3ddd0c41100c4693da65131608d0c15995bb",
+      "bytes": 1102
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BARRY.json",
+      "sha1": "7da52415f05ec4505e3139f382cbebb4c29096df",
+      "bytes": 1106
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BEAU.json",
+      "sha1": "7d47acddeebfc6f901e983bde0543cc9dac56d99",
+      "bytes": 1080
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BECK.json",
+      "sha1": "e6844992300a07225bdcc51dca84aa6cd0b7a727",
+      "bytes": 1101
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BECKY.json",
+      "sha1": "e0f6f1187e7cfdb30c428e27c5c6d7eb4cc22f82",
+      "bytes": 1137
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BEN.json",
+      "sha1": "7ea7506ac8d24ff562a6113171ae96e12f944727",
+      "bytes": 1085
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BENJAMIN_1.json",
+      "sha1": "080a84bb28c4b5f6c3a91df5ec54192af39b845f",
+      "bytes": 1153
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BENJAMIN_2.json",
+      "sha1": "02ca816ee939d38ac3de4a2bd2f8a8c7c1122d70",
+      "bytes": 1153
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BENJAMIN_3.json",
+      "sha1": "e0113a866ed692648b1d1e44f4d40198da9ebbec",
+      "bytes": 1153
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BENJAMIN_4.json",
+      "sha1": "a64fa1ad1f2b1a359fcdb76fb6fc4025ebc0b0d3",
+      "bytes": 1153
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BENJAMIN_5.json",
+      "sha1": "c0a0ca5cba3743df210f8bdf5c6b9abe55a897a0",
+      "bytes": 1153
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BENNY.json",
+      "sha1": "dbfd526a14b3058c96c1f2dbfbec1d4c03544b08",
+      "bytes": 1108
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BERKE.json",
+      "sha1": "7aa3f8de18f7eef6a92ab2056865358607365293",
+      "bytes": 1263
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BERNIE_1.json",
+      "sha1": "6fae47ab601eb0be4378c4dc39f09735c377d391",
+      "bytes": 1109
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BERNIE_2.json",
+      "sha1": "824946407ad416b3865118ec7205ec2c89570557",
+      "bytes": 1109
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BERNIE_3.json",
+      "sha1": "02052fceca7ae0710f892fe0c5262ce3bb2c38a1",
+      "bytes": 1109
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BERNIE_4.json",
+      "sha1": "7c9dce9573ad0ab1b33edf8ce2dfaeeb97fbe12a",
+      "bytes": 1109
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BERNIE_5.json",
+      "sha1": "774e9ee3a00c7e91dd74b4cf3d73891b17982429",
+      "bytes": 1109
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BETH.json",
+      "sha1": "5cc3bb3acb5e49d2bfdd8f3f037ab2d14d70ae15",
+      "bytes": 1137
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BETHANY.json",
+      "sha1": "10f95fc47328d4d3cf3f9f61b7dad1ec220257cc",
+      "bytes": 1147
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BEVERLY.json",
+      "sha1": "e644e84baa5a587c26947294142c4c049dc852f0",
+      "bytes": 1158
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BIANCA.json",
+      "sha1": "1a1965acb32550c7498141e51b32c802660d8c85",
+      "bytes": 1145
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BILLY.json",
+      "sha1": "3d46d92a470e6bd749be8784956815b0dbae36bf",
+      "bytes": 1100
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BLAKE.json",
+      "sha1": "f20e01f86c42774b6df26baf0e09ea0c32b26f12",
+      "bytes": 1102
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRANDEN.json",
+      "sha1": "191dd08a5972b9586a77c5d2a7002440a85230ad",
+      "bytes": 1102
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRANDI.json",
+      "sha1": "860eaf930287c6f5f8f6068f88ab9a5ee29b4d97",
+      "bytes": 1147
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRANDON.json",
+      "sha1": "14e9728900086a87c7a28decc7e17aa9f337bd63",
+      "bytes": 1248
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRAWLY_1.json",
+      "sha1": "28b41cd515e72905067ea80073c4cd8017b1d4ec",
+      "bytes": 1277
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRAWLY_2.json",
+      "sha1": "2c21650871ab8b103e290421cf4739f0b56f1b1c",
+      "bytes": 1283
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRAWLY_3.json",
+      "sha1": "a384e4f8c41f56e3d24690ab78cb87bf614a5fe3",
+      "bytes": 1283
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRAWLY_4.json",
+      "sha1": "5fb1cfe7b03e871dcb6777efbd7b3332c2635b9e",
+      "bytes": 1283
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRAWLY_5.json",
+      "sha1": "6db2d8d2ad94d3444aa8fc4dca076aa60d6273dd",
+      "bytes": 1283
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRAXTON.json",
+      "sha1": "0dfd35390c32d14d2aff5b92e790570a42e5369c",
+      "bytes": 1280
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRENDA.json",
+      "sha1": "9b5c646fd82127b7bcbf2be2978d58ceecb0ae30",
+      "bytes": 1151
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRENDAN_LILYCOVE_MUDKIP.json",
+      "sha1": "17dc0b831b1752e5ba7eff72534404a6abc70f91",
+      "bytes": 1284
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRENDAN_LILYCOVE_TORCHIC.json",
+      "sha1": "093f716c38c31ab61ce2e6aa1231c105c689c121",
+      "bytes": 1289
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRENDAN_LILYCOVE_TREECKO.json",
+      "sha1": "e874f422a50e289d43d4f496b8fa64a5fd5ad782",
+      "bytes": 1289
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRENDAN_PLACEHOLDER.json",
+      "sha1": "6cb0bf912cf7e162d8ef7a7fd7a4c4daad3d7e50",
+      "bytes": 1136
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRENDAN_ROUTE_103_MUDKIP.json",
+      "sha1": "2c531e56b845a11a8887e0d408cb1ebc7264e0c8",
+      "bytes": 1287
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRENDAN_ROUTE_103_TORCHIC.json",
+      "sha1": "0db13d60bce14a4ca98e79c2b71b6d24d13db3fd",
+      "bytes": 1292
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRENDAN_ROUTE_103_TREECKO.json",
+      "sha1": "aab11beaf152b41d6e20579b5672e2f4e97a7858",
+      "bytes": 1294
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRENDAN_ROUTE_110_MUDKIP.json",
+      "sha1": "c924783dfdb65c40f9421ba5604d07b1547f800b",
+      "bytes": 1287
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRENDAN_ROUTE_110_TORCHIC.json",
+      "sha1": "3e5a8a73bcc3453b019c894abb57463d56045536",
+      "bytes": 1292
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRENDAN_ROUTE_110_TREECKO.json",
+      "sha1": "688b239574b23b95f4dd96e7520a31891ebab17e",
+      "bytes": 1292
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRENDAN_ROUTE_119_MUDKIP.json",
+      "sha1": "2d24c5fb8068a7b1f96fccdb7fd78c083c77aff5",
+      "bytes": 1287
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRENDAN_ROUTE_119_TORCHIC.json",
+      "sha1": "faeb9f975a0a24a45b875917694f453c45b69768",
+      "bytes": 1292
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRENDAN_ROUTE_119_TREECKO.json",
+      "sha1": "c278f6c5a19a151630c8419c324b7c3a44a93610",
+      "bytes": 1292
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRENDAN_RUSTBORO_MUDKIP.json",
+      "sha1": "2d03f9b47491eadd8d7ee728a6dc3e95b494c41e",
+      "bytes": 1178
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRENDAN_RUSTBORO_TORCHIC.json",
+      "sha1": "996661571db1a3a1c381766585887460efa11cc7",
+      "bytes": 1289
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRENDAN_RUSTBORO_TREECKO.json",
+      "sha1": "13a712c2c4eed2e3ed79c5b4cf83667b1e3da89c",
+      "bytes": 1183
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRENDEN.json",
+      "sha1": "ed2b82e3603d8f6589e465e78c2d4808bc86b78d",
+      "bytes": 1102
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRENT.json",
+      "sha1": "07f5f01f8aab2e6a915f20f77ae94dc38f63e2e9",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRIANNA.json",
+      "sha1": "06d16101010761436652c51f0fb87e23f08ab8a7",
+      "bytes": 1183
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRICE.json",
+      "sha1": "f3d1d115a52917747fa434865c89cba986cec637",
+      "bytes": 1086
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRIDGET.json",
+      "sha1": "b7931cecbbd42399a8a79f518a53f024a6b8494a",
+      "bytes": 1144
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BROOKE_1.json",
+      "sha1": "f8020b6cd9dd4889cd4a5d7cdcf1f92d214e9625",
+      "bytes": 1320
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BROOKE_2.json",
+      "sha1": "c802bc8053f9019f30ec0ac9328c1b546029d857",
+      "bytes": 1321
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BROOKE_3.json",
+      "sha1": "d3c4a5d5bdbf30e7fd80702deb9fa814b26bb7b8",
+      "bytes": 1321
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BROOKE_4.json",
+      "sha1": "29fc9ecad3ea856739e922054c55c6f84902d718",
+      "bytes": 1321
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BROOKE_5.json",
+      "sha1": "0a588b9c14d319d5fbf00345b16363a61ae1df13",
+      "bytes": 1321
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRYAN.json",
+      "sha1": "a7ba5e2dd630cf79ebbdb1c245b67b32cbff6863",
+      "bytes": 1110
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_BRYANT.json",
+      "sha1": "7f18ec04973c27a9c0ffb4d380c0afca95c73b96",
+      "bytes": 1101
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CALE.json",
+      "sha1": "8fdea49dd215f4abe216ae814e76c0b818c8d63e",
+      "bytes": 1109
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CALLIE.json",
+      "sha1": "a74b86c5a823c3b93b2d489cf11188fd2437e01f",
+      "bytes": 1159
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CALVIN_1.json",
+      "sha1": "4d93551c93d4359518725737253864bbfefc7739",
+      "bytes": 1115
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CALVIN_2.json",
+      "sha1": "3a018d6b356cc19ec991733e983ab9049a5c0ce2",
+      "bytes": 1115
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CALVIN_3.json",
+      "sha1": "ad098534cd69b54784db6ec60211d3ff547029f3",
+      "bytes": 1115
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CALVIN_4.json",
+      "sha1": "6d94801612d643bc217680d6e18b78e46e398371",
+      "bytes": 1115
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CALVIN_5.json",
+      "sha1": "599a5492eb0c28ac3546552c58102e3f80b0dcac",
+      "bytes": 1115
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CAMDEN.json",
+      "sha1": "6b7a18d89868b4537496aa7ed2c09a0ae48d503a",
+      "bytes": 1139
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CAMERON_1.json",
+      "sha1": "2f01d87ad1caffec1b78a3721eb0d8f93c17effd",
+      "bytes": 1124
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CAMERON_2.json",
+      "sha1": "d4d7d9f15dc2033d8b5e12a2c6bac753c86eff3f",
+      "bytes": 1124
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CAMERON_3.json",
+      "sha1": "3ddf771780b23eb35f0c233ba8789b7c7ea2bc6f",
+      "bytes": 1124
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CAMERON_4.json",
+      "sha1": "5b2782a28bf9aa6785caceee123c5ba1c21ec0cc",
+      "bytes": 1124
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CAMERON_5.json",
+      "sha1": "c47245662aa0173c7f82f91a739abf30ea330de7",
+      "bytes": 1124
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CAMRON.json",
+      "sha1": "c1f70955cbdbefc29fdd6df8607cd138f64c9594",
+      "bytes": 1139
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CARLEE.json",
+      "sha1": "e03cdb2b45c8d46167320c6545289ba4ff62975f",
+      "bytes": 1151
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CAROL.json",
+      "sha1": "f77217c27fe0e3c6bd49e7f7a1c39c0cf4ebc941",
+      "bytes": 1138
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CAROLINA.json",
+      "sha1": "7a1002ce5e9964aeebefdeb6acd8c5d65bb6cd74",
+      "bytes": 1327
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CAROLINE.json",
+      "sha1": "7737b249e6db8b0e7a62486a67bbdaa2437c72a3",
+      "bytes": 1326
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CARTER.json",
+      "sha1": "e7e9ab208b239c07f7fdf3a561e7509920680b45",
+      "bytes": 1109
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CATHERINE_1.json",
+      "sha1": "f8cede32423218728b451c09c68bc7b1a729f179",
+      "bytes": 1350
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CATHERINE_2.json",
+      "sha1": "1e4dbcb8e60af8edbb2cca3264679a0baf8d33a7",
+      "bytes": 1350
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CATHERINE_3.json",
+      "sha1": "859ea4c7a630b85b5b7992f0d09439b6c18116ff",
+      "bytes": 1348
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CATHERINE_4.json",
+      "sha1": "08cd7f5ac580ac7938a42cdd3a07997fe2c3d3b8",
+      "bytes": 1350
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CATHERINE_5.json",
+      "sha1": "6a9cc7c52eae0b8245541048e4b52d772b379a2a",
+      "bytes": 1348
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CEDRIC.json",
+      "sha1": "69a0af35089375022b9264f00afdc1980016cdbe",
+      "bytes": 1108
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CELIA.json",
+      "sha1": "b939ccb0bc3a141a7e87a4663820b3a1175ee3f4",
+      "bytes": 1138
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CELINA.json",
+      "sha1": "abfa4e20d6fb2985474cc59888228c67211c8da7",
+      "bytes": 1153
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CHAD.json",
+      "sha1": "5c89870ffc08c9e831749ee88038d86bd7d49ed5",
+      "bytes": 1099
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CHANDLER.json",
+      "sha1": "02ff40ed843ac187d8c0672d6e35710f62ffd3b7",
+      "bytes": 1113
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CHARLIE.json",
+      "sha1": "cb3ae9aeebeca39c9e94338ca24bb9e13baf2636",
+      "bytes": 1105
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CHARLOTTE.json",
+      "sha1": "1ed58bbd5d1ba6a607b88e9d6aa19e404c898868",
+      "bytes": 1166
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CHASE.json",
+      "sha1": "581bc6b6adf6cbe7902c3f1e9c527c0e221b85e1",
+      "bytes": 1132
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CHESTER.json",
+      "sha1": "2f0b86857eb7454a99543caab56b7e4b2d57db5b",
+      "bytes": 1122
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CHIP.json",
+      "sha1": "7ff6144fb8119cd35868d5456a821e8e0d6469ff",
+      "bytes": 1101
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CHRIS.json",
+      "sha1": "8f6b9b1a9cc348348e7513a449871e389758499b",
+      "bytes": 1102
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CINDY_1.json",
+      "sha1": "1875190fa432fbba96e7d02fc38d0dab924dafcb",
+      "bytes": 1177
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CINDY_2.json",
+      "sha1": "89a4f0316a807813a69dc4c3e3365ae406cee14d",
+      "bytes": 1176
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CINDY_3.json",
+      "sha1": "9e01da67601f72478b314284b180a8c612287dce",
+      "bytes": 1177
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CINDY_4.json",
+      "sha1": "f91e3df4b803d417cd33f1b7009f714dd96a1ffd",
+      "bytes": 1177
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CINDY_5.json",
+      "sha1": "988c1fc30ecf909e5a1a5a0b2bb7a3fb06f45699",
+      "bytes": 1177
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CINDY_6.json",
+      "sha1": "400bc2c83d6011e4e860ac1167c3935efe87af06",
+      "bytes": 1176
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CLARENCE.json",
+      "sha1": "f8f17171b8b1ca362708fff33711b5a0ce4b38b2",
+      "bytes": 1127
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CLARISSA.json",
+      "sha1": "01019a8938a999c0419c54b80a8c492f8dc93edc",
+      "bytes": 1175
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CLARK.json",
+      "sha1": "a90ba0d4d25f7a2765f920145143b25069f7ec81",
+      "bytes": 1086
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CLAUDE.json",
+      "sha1": "4a5162a5cba05681b83461cd0de65bdf1641d0ae",
+      "bytes": 1109
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CLIFFORD.json",
+      "sha1": "31c3e2449e355b27129f103efe452f341b678c49",
+      "bytes": 1121
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_COBY.json",
+      "sha1": "cadd4258842db2ae6cc4e0fc29d3b3a7ca0c620b",
+      "bytes": 1101
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_COLE.json",
+      "sha1": "62be8665ea86d92004f55270c570c08712a28cc1",
+      "bytes": 1087
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_COLIN.json",
+      "sha1": "be87e40a15b35f9244a41fdc40c7cd1a5284cb24",
+      "bytes": 1108
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_COLTON.json",
+      "sha1": "37c599494fd8120afe8a5001fa8526d0fab3c787",
+      "bytes": 1101
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CONNIE.json",
+      "sha1": "803b48603f242333a959b27e3c127529b4c2c1ce",
+      "bytes": 1137
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CONOR.json",
+      "sha1": "44ace03673eb8973a62f94a3d438133bf8242b6f",
+      "bytes": 1098
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CORA.json",
+      "sha1": "011cbe356bb82641bf0e6be6055d46b3d6d4214e",
+      "bytes": 1145
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CORY_1.json",
+      "sha1": "79f51aaa175dff84843588d8ebf1598ac90bde2b",
+      "bytes": 1089
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CORY_2.json",
+      "sha1": "4caaa41ab2959468275088533db427441bf318c3",
+      "bytes": 1089
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CORY_3.json",
+      "sha1": "e171fdce2519d5441968536c6ad64aa9a97e4102",
+      "bytes": 1089
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CORY_4.json",
+      "sha1": "997097036acef0ff455d604f6d721c2a6188e4b0",
+      "bytes": 1089
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CORY_5.json",
+      "sha1": "24d6236f8f4da31a8a92fc5ec2f21a9522f9c3ee",
+      "bytes": 1089
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CRISSY.json",
+      "sha1": "f60684ac31ba292b5d533c8af9fefd4c8541e621",
+      "bytes": 1129
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CRISTIAN.json",
+      "sha1": "ab5f6d8bdfa808d571092d17e46435f1beef9cc0",
+      "bytes": 1131
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CRISTIN_1.json",
+      "sha1": "55a673e2f1edad860f52510079cc4586e5dca205",
+      "bytes": 1328
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CRISTIN_2.json",
+      "sha1": "a573b3bdc5a80156acbc055aea59b1ef1debb6c4",
+      "bytes": 1328
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CRISTIN_3.json",
+      "sha1": "9cbf9bab4fe94b8b10973f83018ff54bba666d27",
+      "bytes": 1328
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CRISTIN_4.json",
+      "sha1": "7656b047373b8cbc7781fd87f3e95f188e25daa9",
+      "bytes": 1328
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CRISTIN_5.json",
+      "sha1": "25ff6681940c053745fc5a9874ae91110dc5c44f",
+      "bytes": 1328
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CYNDY_1.json",
+      "sha1": "24157e34edc1ae66e9606b7112d79fa9e0a74ec3",
+      "bytes": 1160
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CYNDY_2.json",
+      "sha1": "42c635fb3009af9cfadde8b53269e087d0fa3529",
+      "bytes": 1160
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CYNDY_3.json",
+      "sha1": "ae8d355680f43b081af1c250ad1fec9596a52e36",
+      "bytes": 1160
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CYNDY_4.json",
+      "sha1": "770929c1b9cb080a6b7cf858b3bd585b5528eba7",
+      "bytes": 1160
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_CYNDY_5.json",
+      "sha1": "bb2b2fe503d1fc3bff3a821e72fdee0adfee4a8b",
+      "bytes": 1160
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DAISUKE.json",
+      "sha1": "4ed9167e4d2b4afc88e7d376cac6f93717ab0550",
+      "bytes": 1124
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DAISY.json",
+      "sha1": "c1669d6378f294226fb84c81f5654b76433da727",
+      "bytes": 1145
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DALE.json",
+      "sha1": "1ce830f14bdbcd73219ed898c8371a8da5655cbc",
+      "bytes": 1095
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DALTON_1.json",
+      "sha1": "28c16edbc8b80a505f7585f5a057ddfaf47dfbe2",
+      "bytes": 1121
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DALTON_2.json",
+      "sha1": "5b05b9a24057ce6ec298e169ad643ff0c9a243ba",
+      "bytes": 1121
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DALTON_3.json",
+      "sha1": "1dcdfd0582a45e1d9de68821efab05f04f199aa9",
+      "bytes": 1121
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DALTON_4.json",
+      "sha1": "8999a83f09e051b04eb392c69e7b3a703bd0572c",
+      "bytes": 1121
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DALTON_5.json",
+      "sha1": "39143b5d613ad2b8b28f96dd702e712278043477",
+      "bytes": 1121
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DANA.json",
+      "sha1": "86e0fbddb158d752c4bf9c2c958dcdb597f0c790",
+      "bytes": 1137
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DANIELLE.json",
+      "sha1": "4041b8c9e73a188a3732c1f89d48e5bf9a97fd4b",
+      "bytes": 1172
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DAPHNE.json",
+      "sha1": "a37b8095c3332f05a8688bfc6998ea1098e46dea",
+      "bytes": 1175
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DARCY.json",
+      "sha1": "3444cdbe490227ebf7ab561f007dbba39812475f",
+      "bytes": 1306
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DARIAN.json",
+      "sha1": "5d9f72db2430ded6a665e3501527eb1e67e45ea0",
+      "bytes": 1109
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DARIUS.json",
+      "sha1": "48bf52db5d6ac6b31e954b127e1b9421894e0616",
+      "bytes": 1221
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DARRIN.json",
+      "sha1": "961f84fa0263ca20c41e3da18b302194724dfcd8",
+      "bytes": 1113
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DAVID.json",
+      "sha1": "c61c4883beb20bed69bdbf4bda91345e6124f321",
+      "bytes": 1106
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DAVIS.json",
+      "sha1": "f3d39d668136f984d87adfba7c1420c99a76efca",
+      "bytes": 1108
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DAWSON.json",
+      "sha1": "6c5af84af82db4bb9efb1373a30c1b0ae31f160f",
+      "bytes": 1100
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DAYTON.json",
+      "sha1": "799d586b0f0ed03741cdbf0a079cd17891e205bd",
+      "bytes": 1101
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DEAN.json",
+      "sha1": "7a130ef0dc0db3824dc8d4d92d33765bc3c8f609",
+      "bytes": 1099
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DEANDRE.json",
+      "sha1": "7cd6afbab3c525d73acf7fa6017f6404deea9446",
+      "bytes": 1114
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DEBRA.json",
+      "sha1": "a83b2087df145cf9e06cec7f76a24875cb6e9d79",
+      "bytes": 1144
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DECLAN.json",
+      "sha1": "85de88d8353618c5eff7f5b0f986632b664d49e8",
+      "bytes": 1112
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DEMETRIUS.json",
+      "sha1": "06915476d6c66794287bc6fc5bb62d460f8b30fc",
+      "bytes": 1128
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DENISE.json",
+      "sha1": "45986c3615a9582e0c9c3082088f3af840cf44ed",
+      "bytes": 1151
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DEREK.json",
+      "sha1": "9edb49c5c6fbc012795a7649cc447ed012c62c78",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DEVAN.json",
+      "sha1": "caf5ffbd56bf71fcd4b733dc9e01da437280acd1",
+      "bytes": 1086
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DEZ_AND_LUKE.json",
+      "sha1": "82934a07593380d9c9825976ee7ea1b7ba4da3ff",
+      "bytes": 1151
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DIANA_1.json",
+      "sha1": "834f0e17badf0cafa01a0c77bede34d3f711dd18",
+      "bytes": 1146
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DIANA_2.json",
+      "sha1": "641a821160e60c3c734c124a1ed4661d189244ae",
+      "bytes": 1146
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DIANA_3.json",
+      "sha1": "c54a30471a84a87c2ba8aeb01e40d5c11f1a0477",
+      "bytes": 1146
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DIANA_4.json",
+      "sha1": "c441c955d9d16f0357ae552370ba464db6f9d853",
+      "bytes": 1146
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DIANA_5.json",
+      "sha1": "796cce92325be67194eb1539a05b1483c0bbeb3c",
+      "bytes": 1146
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DIANNE.json",
+      "sha1": "120af83f198655b839bced5b771cfbaf8a232919",
+      "bytes": 1157
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DILLON.json",
+      "sha1": "3e40a9eef5c3fca3e62b1d2cb2bf1c6e28e32ed1",
+      "bytes": 1107
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DOMINIK.json",
+      "sha1": "657fcf66fc8be8e5b9230ce499f1f70543aa79b0",
+      "bytes": 1120
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DONALD.json",
+      "sha1": "d33d0f478203b7df19f41d0ed0a55096bf5e14e0",
+      "bytes": 1123
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DONNY.json",
+      "sha1": "2d1f4d362dae1ce7e5c34fee540c32c359d86d72",
+      "bytes": 1170
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DOUG.json",
+      "sha1": "de3a13558c519ba664eaf0d167fb44bbbf30823f",
+      "bytes": 1101
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DOUGLAS.json",
+      "sha1": "1ea69c21c46222adeaaf6e8cc21bdb900e283eb0",
+      "bytes": 1120
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DRAKE.json",
+      "sha1": "72fbb12514fbe8f557876157a05e7da774f73180",
+      "bytes": 1288
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DREW.json",
+      "sha1": "0d23792cd7cca770ebf83cb36551d8e4cdbefee7",
+      "bytes": 1080
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DUDLEY.json",
+      "sha1": "29d73bfb4acddb8d78637a35b1321a930a7031df",
+      "bytes": 1113
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DUNCAN.json",
+      "sha1": "911fcda536a656372811d5631da3222cf9921372",
+      "bytes": 1095
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DUSTY_1.json",
+      "sha1": "79dbdb7d4ffddf12aa9845e6e01b47158375e844",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DUSTY_2.json",
+      "sha1": "645260abf5d350b6dbc2727929e9bb1c3d4fb21e",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DUSTY_3.json",
+      "sha1": "8a59560d04c39350d30c8160e80634320be5a07c",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DUSTY_4.json",
+      "sha1": "e3b68d16e60276fff29eef2e4c3578aed163db26",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DUSTY_5.json",
+      "sha1": "35edf979c4d84eced5e9d4eebb339203c4251c60",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DWAYNE.json",
+      "sha1": "ac129bfbc6bc1e1b5c4a1af92075a24636aee5c5",
+      "bytes": 1095
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DYLAN_1.json",
+      "sha1": "601d692b30276b063bc5b9af49406541b4e448f4",
+      "bytes": 1132
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DYLAN_2.json",
+      "sha1": "172bdc0a66025d28d97f45676a5b1cfc22a9fe50",
+      "bytes": 1132
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DYLAN_3.json",
+      "sha1": "ca7a4d5e747fc49d18093332c953471fd66342f1",
+      "bytes": 1132
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DYLAN_4.json",
+      "sha1": "834d46d7e1763598fa8a429a24c95f0e8ae10db3",
+      "bytes": 1132
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_DYLAN_5.json",
+      "sha1": "2bbc03aefbb07b2d272a4aeb9590569a9f7e0e04",
+      "bytes": 1132
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ED.json",
+      "sha1": "d286ff6a39b801e8b26b29e3d7cb5d4a24ff56a6",
+      "bytes": 1090
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_EDDIE.json",
+      "sha1": "617da99c99599a53a8facf4401b373ce9df7d235",
+      "bytes": 1100
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_EDGAR.json",
+      "sha1": "b286a015bc9f05225b74b6f440eb3f56a87e5c49",
+      "bytes": 1267
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_EDMOND.json",
+      "sha1": "828f586ad8952fba63edc3e68cb8b5aba06a910d",
+      "bytes": 1095
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_EDWARD.json",
+      "sha1": "1fa5fda5e1e6d00f02bdec2c301fa3c430cce382",
+      "bytes": 1108
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_EDWARDO.json",
+      "sha1": "4ffda400fff5b5b4c9db3e40dc44d470b362d1ff",
+      "bytes": 1122
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_EDWIN_1.json",
+      "sha1": "b2632cce8335d1410e948b56e6462258bef3e705",
+      "bytes": 1120
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_EDWIN_2.json",
+      "sha1": "7fb8e1cd5575b824e889c7b41fcc419ec9efbe31",
+      "bytes": 1120
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_EDWIN_3.json",
+      "sha1": "fa4ebd33f18048b471266fb33d85b67d78d86eea",
+      "bytes": 1120
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_EDWIN_4.json",
+      "sha1": "44460efe2c6387bdbee398b511d16631f6ce8cae",
+      "bytes": 1120
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_EDWIN_5.json",
+      "sha1": "7c99354cdb6af5cbcd638ecfecc394f4315f9ee6",
+      "bytes": 1120
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ELI.json",
+      "sha1": "8a125e67a640544f5ba83a56878231ffb052bd3f",
+      "bytes": 1072
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ELIJAH.json",
+      "sha1": "e1865a605b4e2c3aeb9bbc9a3ce6a030cbff29e6",
+      "bytes": 1115
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ELLIOT_1.json",
+      "sha1": "adc0dafa89cc518507b10d6c7216bd59b67f7382",
+      "bytes": 1117
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ELLIOT_2.json",
+      "sha1": "191e409f7d0d704a47d54ecf000bb0a56b24d44e",
+      "bytes": 1117
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ELLIOT_3.json",
+      "sha1": "755bf6ce0715bd8de14d9ca4228516e66b89da51",
+      "bytes": 1117
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ELLIOT_4.json",
+      "sha1": "f7ada736cf9e286215dde0c24f0281d71fab1dac",
+      "bytes": 1117
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ELLIOT_5.json",
+      "sha1": "277032a61190cca514efb17de8a778ce862b15fd",
+      "bytes": 1167
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ERIC.json",
+      "sha1": "7e2675905db45bf5e92f75b142fe867712b2f816",
+      "bytes": 1079
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ERNEST_1.json",
+      "sha1": "7352b646606eb86a2e1ec92ac34863ca7741d4af",
+      "bytes": 1103
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ERNEST_2.json",
+      "sha1": "4ef4ce185e68c45b3ff4252e9a7eedf0b499b7d1",
+      "bytes": 1103
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ERNEST_3.json",
+      "sha1": "63ffcf1dae2642772d6b837dcbb86dd0636c49b5",
+      "bytes": 1103
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ERNEST_4.json",
+      "sha1": "50946ae99f784ef247111edead3c699c76d19c0d",
+      "bytes": 1103
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ERNEST_5.json",
+      "sha1": "075c8ef5e3f4e6923031d747b7fa2aaaa32a7a82",
+      "bytes": 1103
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ETHAN_1.json",
+      "sha1": "50d4e72f7898125da786a7fbf80a4119cb9af744",
+      "bytes": 1096
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ETHAN_2.json",
+      "sha1": "dd1c398402586797ded2f54069fe61560cbc17b9",
+      "bytes": 1096
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ETHAN_3.json",
+      "sha1": "14bc922dd39bb58ae3f6ef6482e5bb58f2bea26d",
+      "bytes": 1096
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ETHAN_4.json",
+      "sha1": "c6b1cdb2e2e1b9d29b0c63be56d3dca1e5f0ea9b",
+      "bytes": 1096
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ETHAN_5.json",
+      "sha1": "c489c2c5e2b3d3f1201c26119eb488ee57203eb4",
+      "bytes": 1096
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_EVERETT.json",
+      "sha1": "6cf323504ac301c531363225872d3e000bd412d1",
+      "bytes": 1068
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_FABIAN.json",
+      "sha1": "943bddfd3f5e746b7ea34ca7ac785c75f41acb7b",
+      "bytes": 1113
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_FELIX.json",
+      "sha1": "b2f853691940dbfed8f40fcb80bb5b8271018cc1",
+      "bytes": 1266
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_FERNANDO_1.json",
+      "sha1": "85fd98c011eaece47ebad02660a20b6933ab324b",
+      "bytes": 1135
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_FERNANDO_2.json",
+      "sha1": "caad36cdf1b3d2adc57caab47dfea79cb0cdb893",
+      "bytes": 1135
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_FERNANDO_3.json",
+      "sha1": "1bcb20173007ed379f88c5a15490c7d6dc71d1c9",
+      "bytes": 1135
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_FERNANDO_4.json",
+      "sha1": "0fc9b09e8fd76ef3d5667c42e73f5dc8d5784ef9",
+      "bytes": 1135
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_FERNANDO_5.json",
+      "sha1": "4fba6033196ebade26827f2c7b7b3c11efa77a79",
+      "bytes": 1135
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_FLANNERY_1.json",
+      "sha1": "17f45c60fa0c2bf7731087c7aaeaab39132cf9c9",
+      "bytes": 1337
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_FLANNERY_2.json",
+      "sha1": "e4c89ba2c40c87ab21498e18f4d9baf4cc1d673d",
+      "bytes": 1343
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_FLANNERY_3.json",
+      "sha1": "32cd294f3e3a9c32956dc8273181c15a7771f54a",
+      "bytes": 1343
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_FLANNERY_4.json",
+      "sha1": "3bd28f9267e0e5b60d197960b94c42978bd8bad2",
+      "bytes": 1343
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_FLANNERY_5.json",
+      "sha1": "72b4adc76914dfccfb5203e8043a62394e0a998a",
+      "bytes": 1343
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_FLINT.json",
+      "sha1": "cf90861bae4be1bd4906b6f13bb3ac585d590215",
+      "bytes": 1088
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_FOSTER.json",
+      "sha1": "c3574c7cd031ed974b489f2f0fd5de1414b50e97",
+      "bytes": 1115
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_FRANKLIN.json",
+      "sha1": "849a12311e000f92e0c9107cd8ae51c2f3ca974f",
+      "bytes": 1127
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_FREDRICK.json",
+      "sha1": "fa5eac8b941c7b4b3ee5c74913ecc40a24eb427c",
+      "bytes": 1224
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GABBY_AND_TY_1.json",
+      "sha1": "f427bea4dca3119849efb4c89bff10905bcc5951",
+      "bytes": 1168
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GABBY_AND_TY_2.json",
+      "sha1": "df8833e05cc26f05805192c998d0977dfbc67ca2",
+      "bytes": 1168
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GABBY_AND_TY_3.json",
+      "sha1": "11320bd239676f9ec94c3538cead0c03bbb9154a",
+      "bytes": 1168
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GABBY_AND_TY_4.json",
+      "sha1": "f9a48c75ad0649802a4e4408d325026d88e5ef7f",
+      "bytes": 1168
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GABBY_AND_TY_5.json",
+      "sha1": "e073725216c15211c9a9907a9c3b747997604611",
+      "bytes": 1168
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GABBY_AND_TY_6.json",
+      "sha1": "f18fa4e20d6b5ceb19bc961339a6ed13445c1803",
+      "bytes": 1167
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GABRIELLE_1.json",
+      "sha1": "a621e1d74d287ae9a86216808f5dadcc55b32a53",
+      "bytes": 1198
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GABRIELLE_2.json",
+      "sha1": "d1e6d42fc4905f91d41559a7917b417779d7cc54",
+      "bytes": 1200
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GABRIELLE_3.json",
+      "sha1": "5cca5adeb0efbf07401e02e41317307d044496ff",
+      "bytes": 1200
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GABRIELLE_4.json",
+      "sha1": "df890086aaedb9474d7dc16d350ddca792eedc8d",
+      "bytes": 1200
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GABRIELLE_5.json",
+      "sha1": "4979157b77c8e8797a9d419a8e8358d288fd2a19",
+      "bytes": 1200
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GARRET.json",
+      "sha1": "65a5817ff64b83b5af085a67d60b81757bbc2dba",
+      "bytes": 1150
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GARRISON.json",
+      "sha1": "e6a13ea57c1ae40e0bbb04daf8c94d3ad892f7e9",
+      "bytes": 1131
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GEORGE.json",
+      "sha1": "357d543aa57c4c6c798eb04b78bc4d61b274bf6f",
+      "bytes": 1270
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GEORGIA.json",
+      "sha1": "52195eb438cf272704f4e1a8dc28b752fc888539",
+      "bytes": 1160
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GERALD.json",
+      "sha1": "da6f5ed6621ed0ddf09b04916344b159124362f3",
+      "bytes": 1274
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GILBERT.json",
+      "sha1": "7fbd747e92fbb239f480a4fd01cf4f694b3e321c",
+      "bytes": 1120
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GINA_AND_MIA_1.json",
+      "sha1": "6558c1d5d033d0d79ff183221eddc6fbed9f5880",
+      "bytes": 1133
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GINA_AND_MIA_2.json",
+      "sha1": "1d8e8ed2315438b69b0a3a53ae54ca97490a970c",
+      "bytes": 1132
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GLACIA.json",
+      "sha1": "b87205418e9abf8288105a56bab126d396f7a710",
+      "bytes": 1335
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRACE.json",
+      "sha1": "01369ba32a04c2c4aad75116e3a0994df349b72b",
+      "bytes": 1144
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GREG.json",
+      "sha1": "ea711b0f05b210b06da2c065c6d771a3ff93a68a",
+      "bytes": 1101
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRETA.json",
+      "sha1": "36f7201c2f6ee6b8994e4ee036aa8de77c5a93bc",
+      "bytes": 1268
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_AQUA_HIDEOUT_1.json",
+      "sha1": "02f6fd03ecc00d5ead72016317198ad307a679ae",
+      "bytes": 1173
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_AQUA_HIDEOUT_2.json",
+      "sha1": "ee7ff8a7b18590d68c208aad6c23021034348bd7",
+      "bytes": 1173
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_AQUA_HIDEOUT_3.json",
+      "sha1": "c023fd2f652d967e845cd5880c277f922a7efc2b",
+      "bytes": 1173
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_AQUA_HIDEOUT_4.json",
+      "sha1": "1b6cba3552e52da30365d93e9f83ff8751e42705",
+      "bytes": 1173
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_AQUA_HIDEOUT_5.json",
+      "sha1": "03df16252def28629d54d96496746c0815c73489",
+      "bytes": 1212
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_AQUA_HIDEOUT_6.json",
+      "sha1": "adbd49573f688df1c66fa9d2117762a6f0e5692a",
+      "bytes": 1212
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_AQUA_HIDEOUT_7.json",
+      "sha1": "2ef2272ef8aea314318264c039fe5d650f6c6594",
+      "bytes": 1213
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_AQUA_HIDEOUT_8.json",
+      "sha1": "3926a5b0a3ee0640788963ef3d9f9cdc9b8efa05",
+      "bytes": 1175
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_JAGGED_PASS.json",
+      "sha1": "c4cf2a377b768e4c4aae134660eda21872c42a02",
+      "bytes": 1168
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MAGMA_HIDEOUT_1.json",
+      "sha1": "4ad725e1444dbd96924884f2df40456cf1b9449e",
+      "bytes": 1186
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MAGMA_HIDEOUT_10.json",
+      "sha1": "1c924c73c1c9fab64746eeb929281bdcc213f053",
+      "bytes": 1191
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MAGMA_HIDEOUT_11.json",
+      "sha1": "ac220c270bae4aefb0692e694e9fcca8baf419dc",
+      "bytes": 1191
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MAGMA_HIDEOUT_12.json",
+      "sha1": "fac96d3de6e9bd5be8c2ee20d9a547500adf3ed4",
+      "bytes": 1191
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MAGMA_HIDEOUT_13.json",
+      "sha1": "ef87c57047111c2746955a4c8fb21b723bcf9923",
+      "bytes": 1191
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MAGMA_HIDEOUT_14.json",
+      "sha1": "e185b59299a7d1da7fcd599de84aae9cb80ecbc3",
+      "bytes": 1229
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MAGMA_HIDEOUT_15.json",
+      "sha1": "f6e761fea27f70bb647f9ac84be2c0789989b90a",
+      "bytes": 1229
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MAGMA_HIDEOUT_16.json",
+      "sha1": "a5a783d714d4226029564ef4d2338b3b774c1537",
+      "bytes": 1229
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MAGMA_HIDEOUT_2.json",
+      "sha1": "417d6fe0b5c0c767be4820d7bb829a445c617742",
+      "bytes": 1186
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MAGMA_HIDEOUT_3.json",
+      "sha1": "4dc0d8047708a0938e2d35595cd06b045acd42a5",
+      "bytes": 1186
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MAGMA_HIDEOUT_4.json",
+      "sha1": "07e3315a0d10bf620b35ed83559330fcf34aa079",
+      "bytes": 1186
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MAGMA_HIDEOUT_5.json",
+      "sha1": "f4b49a4208db601c34332ad536a4b397bf46f347",
+      "bytes": 1186
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MAGMA_HIDEOUT_6.json",
+      "sha1": "b7e361f734c0ac2d761c32672c44e29359d39382",
+      "bytes": 1186
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MAGMA_HIDEOUT_7.json",
+      "sha1": "da7d343d80740d11523664674746fa542c7cb719",
+      "bytes": 1186
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MAGMA_HIDEOUT_8.json",
+      "sha1": "ee29edd26ae4ec95e82bd7c59aae733a7074a052",
+      "bytes": 1186
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MAGMA_HIDEOUT_9.json",
+      "sha1": "543e84946a8e75960f02b18315a48b237ba38d48",
+      "bytes": 1186
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MT_CHIMNEY_1.json",
+      "sha1": "0287ea17308afa95297fc34a53b83d95b69c1f48",
+      "bytes": 1209
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MT_CHIMNEY_2.json",
+      "sha1": "af3955b44244766d40376bfbc60c3f86b4df3e07",
+      "bytes": 1171
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MT_PYRE_1.json",
+      "sha1": "0a141dae163da3f6c9b50625bff139c977db4a05",
+      "bytes": 1149
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MT_PYRE_2.json",
+      "sha1": "3204a33be2a21feb628061fd0fca177436409ce1",
+      "bytes": 1149
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MT_PYRE_3.json",
+      "sha1": "6f0ae8488a35ac70652f2071d3a4a7e01db46664",
+      "bytes": 1149
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MT_PYRE_4.json",
+      "sha1": "e88e9c67167bda244ddeb6f6b2eb033d83997d35",
+      "bytes": 1188
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MUSEUM_1.json",
+      "sha1": "50506075997d0f89269b1eb3ab09d8ddf402c7d5",
+      "bytes": 1146
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_MUSEUM_2.json",
+      "sha1": "8b61e8b32b6a8f47ab5849207e0b1342cdd01ae3",
+      "bytes": 1146
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_PETALBURG_WOODS.json",
+      "sha1": "932b63452f25041b6d8f2001892fd14be597a9be",
+      "bytes": 1181
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_RUSTURF_TUNNEL.json",
+      "sha1": "3e2d4f222c169a3bd46474e32fb0f41578fb6f7a",
+      "bytes": 1176
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_SEAFLOOR_CAVERN_1.json",
+      "sha1": "3647a183df9fa8703302346806975f9d7e8a5142",
+      "bytes": 1188
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_SEAFLOOR_CAVERN_2.json",
+      "sha1": "c528469f0a0f975616e339ce17f6aae5865eeb65",
+      "bytes": 1188
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_SEAFLOOR_CAVERN_3.json",
+      "sha1": "56936091396adef58d936c2743ca89e1486a39b8",
+      "bytes": 1188
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_SEAFLOOR_CAVERN_4.json",
+      "sha1": "1da8335d3e1a30a2df999fdb996862e882f37502",
+      "bytes": 1227
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_SEAFLOOR_CAVERN_5.json",
+      "sha1": "133226118a2d08da15e769c5a8dd2a5ec899c6f1",
+      "bytes": 1190
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_SPACE_CENTER_1.json",
+      "sha1": "4fda1f53ff162005b14f95f609801e4f43c345a3",
+      "bytes": 1180
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_SPACE_CENTER_2.json",
+      "sha1": "500036b407e301a0b4ccd612a169b96bb10f967f",
+      "bytes": 1181
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_SPACE_CENTER_3.json",
+      "sha1": "79f9875e8c669b641d498af4f8ef41b304bc54e2",
+      "bytes": 1219
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_SPACE_CENTER_4.json",
+      "sha1": "b495676d42aeecde63224f48c31f23887cafb5e4",
+      "bytes": 1181
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_SPACE_CENTER_5.json",
+      "sha1": "688e2542f141e6e38ff37cc19519f0c3f8bcb173",
+      "bytes": 1181
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_SPACE_CENTER_6.json",
+      "sha1": "0447088c4c193308534c6090da5d091a67cd0110",
+      "bytes": 1181
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_SPACE_CENTER_7.json",
+      "sha1": "d79309e4da93ea2c84b53b8c9dc75f5842a0ab66",
+      "bytes": 1181
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_UNUSED.json",
+      "sha1": "4f06b62a3f2dc4ab1e3023f0b06b6ba36e6bdf82",
+      "bytes": 1179
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_WEATHER_INST_1.json",
+      "sha1": "77e6805bf20c4fa8a71ffe1197c4ea9725c2a9e6",
+      "bytes": 1174
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_WEATHER_INST_2.json",
+      "sha1": "5ba9f035ddce19be66d718f9c3797655e4480b7f",
+      "bytes": 1174
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_WEATHER_INST_3.json",
+      "sha1": "3aff584cdce8e484b9849b44f4641f7feb075f77",
+      "bytes": 1174
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_WEATHER_INST_4.json",
+      "sha1": "853f6496a087991bf3ad1d4f95cf824ee04a3347",
+      "bytes": 1212
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GRUNT_WEATHER_INST_5.json",
+      "sha1": "2061a99e73c9c7877baea05f953771fb545933f9",
+      "bytes": 1213
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_GWEN.json",
+      "sha1": "261e5487e8c1523719f7237b4175d0f1b9bcc9f7",
+      "bytes": 1122
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HAILEY.json",
+      "sha1": "3c8e7c47e7a7a2a24a2b9c3cf805e0a85cfe7a2b",
+      "bytes": 1137
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HALEY_1.json",
+      "sha1": "5266fc542e2a2ace43ecacc232333145d1be31eb",
+      "bytes": 1130
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HALEY_2.json",
+      "sha1": "f6cefdc7e7957000bdde1110051aab29473867bb",
+      "bytes": 1130
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HALEY_3.json",
+      "sha1": "28f7a810594a043795ef7b001524f72b4806a105",
+      "bytes": 1130
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HALEY_4.json",
+      "sha1": "c596a0962f6235bdcc95ffad4d0edc8e7de4be3c",
+      "bytes": 1130
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HALEY_5.json",
+      "sha1": "d1ce016ca886dabc5c35e3745efb461c72b40db6",
+      "bytes": 1130
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HALLE.json",
+      "sha1": "041dd4250386c218050140b6591184a8d0caa258",
+      "bytes": 1306
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HANNAH.json",
+      "sha1": "a3c2e631c15a71660bd7a3d1e4e4788ac2575a24",
+      "bytes": 1147
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HARRISON.json",
+      "sha1": "0c04c32a90bba188c992d58906b480d97990f1a3",
+      "bytes": 1127
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HAYDEN.json",
+      "sha1": "3ef29daa54eb4e57147e77e04c874d35109a7a24",
+      "bytes": 1101
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HECTOR.json",
+      "sha1": "366ab4b76b78ab2106389f003bd2b0ce8ecd2fdd",
+      "bytes": 1119
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HEIDI.json",
+      "sha1": "9a3959fe1a59b0f91b64085f5f88c1db23876f22",
+      "bytes": 1137
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HELENE.json",
+      "sha1": "5439176fa9265c89b9c586d24943a286a0c372b1",
+      "bytes": 1159
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HENRY.json",
+      "sha1": "8d4ba30f5ba8362d027f3d2d54b32be68f159852",
+      "bytes": 1102
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HERMAN.json",
+      "sha1": "75c17cce45dddf69bd4534a7238138217b316828",
+      "bytes": 1113
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HIDEO.json",
+      "sha1": "61a3bd31d0b02bb2667cc407ae782fc6e73c2b67",
+      "bytes": 1161
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HITOSHI.json",
+      "sha1": "9a7972f7b70684d8ac212559e4ed546c2275f138",
+      "bytes": 1124
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HOPE.json",
+      "sha1": "6fe47e41bcfb8a382db58c416e6574b313c0a203",
+      "bytes": 1298
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HUDSON.json",
+      "sha1": "27a7f8a538a7dedbc50f0b2f5cc73c3080e5f0d2",
+      "bytes": 1095
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HUEY.json",
+      "sha1": "c757bd6ba767ddf25d914957e13416ab3111dc10",
+      "bytes": 1081
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HUGH.json",
+      "sha1": "b8516b46b5836f9fc5c37ce44981178860fbfb64",
+      "bytes": 1101
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_HUMBERTO.json",
+      "sha1": "3eb234766a18a5afda408ef02523057a026eb2fe",
+      "bytes": 1129
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_IMANI.json",
+      "sha1": "7a35db87747468218855a6b1e6cb2fd916c58fab",
+      "bytes": 1144
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_IRENE.json",
+      "sha1": "b2c8294e09d622bcdb0b77983f191c4b1987e7d0",
+      "bytes": 1138
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ISAAC_1.json",
+      "sha1": "bdfa5996f78cd6898b7c5a905d5422ab1a088fcd",
+      "bytes": 1130
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ISAAC_2.json",
+      "sha1": "ec36f9ced451635668fc329d6d0db2e4632bb2a5",
+      "bytes": 1130
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ISAAC_3.json",
+      "sha1": "fad249358354d23baf073aec7458f11c679faf79",
+      "bytes": 1130
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ISAAC_4.json",
+      "sha1": "aa551d8eaad813b6575f8d82e3c2d79edb270979",
+      "bytes": 1130
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ISAAC_5.json",
+      "sha1": "1d28f58638a0d9ac00e73fdeaa07854c6530d5bc",
+      "bytes": 1130
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ISABELLA.json",
+      "sha1": "04f761a82b3c2a2a21715a8b8576d59ac0a27211",
+      "bytes": 1191
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ISABELLE.json",
+      "sha1": "c76cf857cac0608c8c8d6a03c5ac93f0ae2e5559",
+      "bytes": 1165
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ISABEL_1.json",
+      "sha1": "7eea7fd65abcb85a0ffd9c161462e964db71603c",
+      "bytes": 1148
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ISABEL_2.json",
+      "sha1": "4c65051ff142f9e20d61c05684f874d74e96986e",
+      "bytes": 1148
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ISABEL_3.json",
+      "sha1": "1fbc3590eb37f99ba4f42f360a467c63adc8ef42",
+      "bytes": 1148
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ISABEL_4.json",
+      "sha1": "3adafbe92444da074ddffaa71dde22971a5b6fcd",
+      "bytes": 1148
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ISABEL_5.json",
+      "sha1": "2cf86357838519a91d1cfdfea72403040303884b",
+      "bytes": 1148
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ISAIAH_1.json",
+      "sha1": "edef419385bec54f4e7f35a7222a2cc68c0319fe",
+      "bytes": 1147
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ISAIAH_2.json",
+      "sha1": "ecbfb669fbee7b1552d73d721fcb465332fc103f",
+      "bytes": 1147
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ISAIAH_3.json",
+      "sha1": "414032c95cc997c884a239bc8ae724528dd4b217",
+      "bytes": 1147
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ISAIAH_4.json",
+      "sha1": "e5e647ad0d694c684acb399033e8c155b9d891b2",
+      "bytes": 1147
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ISAIAH_5.json",
+      "sha1": "4a533b43838fb9cb8b89f1a5f5a458859abc4226",
+      "bytes": 1147
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ISOBEL.json",
+      "sha1": "e40c13cce328ff7774c88481ffc5520fb6d3366e",
+      "bytes": 1177
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_IVAN.json",
+      "sha1": "27bcf8650a0f0b2b9eb2612c68cca36e206373a7",
+      "bytes": 1095
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JACE.json",
+      "sha1": "9cc1f080f14b738538c1c633205aa76d361e4014",
+      "bytes": 1087
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JACK.json",
+      "sha1": "8cfb13ff34311d672211c2b54dd6418742211637",
+      "bytes": 1099
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JACKI_1.json",
+      "sha1": "d3d04897117ef9bd75d38273256c6ada7a754b8e",
+      "bytes": 1148
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JACKI_2.json",
+      "sha1": "7d76624b80a57fab9c31af2cf50c7b15ee8651c3",
+      "bytes": 1148
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JACKI_3.json",
+      "sha1": "9b7c17999cd13441035689f5908c397e5ee5ea97",
+      "bytes": 1148
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JACKI_4.json",
+      "sha1": "d03fa980e78786be05c490dbe8629598f3043a2f",
+      "bytes": 1148
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JACKI_5.json",
+      "sha1": "82c210d9bfb32dc3cfed480086306b793c0fd408",
+      "bytes": 1148
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JACKSON_1.json",
+      "sha1": "506cf602fea64d27ce80d230917bef8959e36182",
+      "bytes": 1296
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JACKSON_2.json",
+      "sha1": "0e3184b2b2ac942d74461532ad1327029c01d639",
+      "bytes": 1298
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JACKSON_3.json",
+      "sha1": "0c4047f95bd34c7229599838582e396a901fff2e",
+      "bytes": 1296
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JACKSON_4.json",
+      "sha1": "9aef54768c55320d87077211a4b6476bb00b90f3",
+      "bytes": 1298
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JACKSON_5.json",
+      "sha1": "645887e2a7709f1613953ac97f31ffdebe52b5dc",
+      "bytes": 1296
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JACLYN.json",
+      "sha1": "12ea55d31b1ab7498d723f553933fcf4686701ac",
+      "bytes": 1146
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JACOB.json",
+      "sha1": "6fe4f943f987c2ed265de15d5250e502b23cee63",
+      "bytes": 1124
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JAIDEN.json",
+      "sha1": "813c69db49d4f02590b5ce6ea66f7c30e6cf690f",
+      "bytes": 1119
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JAMES_1.json",
+      "sha1": "5a9943572d963f21a1f2a1ed54bc91c4f652ae9f",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JAMES_2.json",
+      "sha1": "6aeff1018ecc67e84bf2d2edf42fe2616f03084c",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JAMES_3.json",
+      "sha1": "15ed18f1995d3861d9b0f436452f3b34a9bac861",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JAMES_4.json",
+      "sha1": "cb800ea03364a1d3b3736728c800ac2c56b925fb",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JAMES_5.json",
+      "sha1": "3099bc100cfd3b86ca12bccd520f504bccbe26a5",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JANI.json",
+      "sha1": "f268e1d5574e12f0b21c54cce3040fc67bfd2d48",
+      "bytes": 1077
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JANICE.json",
+      "sha1": "59b339ad8299f19c2321ce5cf9e67a8b68fb205e",
+      "bytes": 1129
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JARED.json",
+      "sha1": "b3edfc835497fdb83255757def70b668bb8e8b97",
+      "bytes": 1108
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JASMINE.json",
+      "sha1": "3b5fc7be542644bd93c2045929aab057b9ef7b8f",
+      "bytes": 1180
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JAYLEN.json",
+      "sha1": "3416107a6d7ccfd1a934c1d1c6ce96e5a1a3d0b8",
+      "bytes": 1107
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JAZMYN.json",
+      "sha1": "0a15dde1fdb78ef3a0ed67737fd1afad553c3c92",
+      "bytes": 1317
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JEFF.json",
+      "sha1": "b1db97489993ff1a337a4ead9bcb87756ada5bfe",
+      "bytes": 1087
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JEFFREY_1.json",
+      "sha1": "72acf3ded08aab6dfef9bd379b337589d6b504e6",
+      "bytes": 1138
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JEFFREY_2.json",
+      "sha1": "31c1c271b7a1cd55f92fac5c3481f775391f7e3b",
+      "bytes": 1138
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JEFFREY_3.json",
+      "sha1": "8806d2ebfc187c9896b856d47995b25d7afa5e63",
+      "bytes": 1138
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JEFFREY_4.json",
+      "sha1": "a81b65ff47d529b13f5cd38abb71298f266ad746",
+      "bytes": 1138
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JEFFREY_5.json",
+      "sha1": "01dc4a6909ed27d9496f761cf497143fc90d8f4f",
+      "bytes": 1135
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JENNA.json",
+      "sha1": "ebaa05df6e3934e5eca6090cf06195217d12295b",
+      "bytes": 1314
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JENNIFER.json",
+      "sha1": "4088aeb11b0642d778f7460ef1bb6d30a842a608",
+      "bytes": 1326
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JENNY_1.json",
+      "sha1": "6d8b9010b166b437c7f90b33a13f748bc24ea270",
+      "bytes": 1152
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JENNY_2.json",
+      "sha1": "7f7dcfda7961ee674bd4a07dbb7d86eb74e564fc",
+      "bytes": 1152
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JENNY_3.json",
+      "sha1": "c4e319f6430883f20c2c2f2c5fb243525939df72",
+      "bytes": 1152
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JENNY_4.json",
+      "sha1": "3f1bf20b9b8a424dcbfeb142d6d24da1c002fbf9",
+      "bytes": 1152
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JENNY_5.json",
+      "sha1": "490fa3c6f6102f73487ff9d53c8772256ec882a4",
+      "bytes": 1152
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JEROME.json",
+      "sha1": "d097f5942424ee83d0c93ff3d82e8fb2d2c9a553",
+      "bytes": 1113
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JERRY_1.json",
+      "sha1": "7b3b0ca8e1271e70276f124d66422a604eb2ec82",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JERRY_2.json",
+      "sha1": "3487282ff31974d328ac991f91db235525a31c82",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JERRY_3.json",
+      "sha1": "c49627658c10779f972f9cc522aecba3da151cef",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JERRY_4.json",
+      "sha1": "2eb4eefaa17b6894cdf21970c83bfd0c85912eab",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JERRY_5.json",
+      "sha1": "bb6ebc4ada92103b5a8e525d7a2c32450e36a377",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JESSICA_1.json",
+      "sha1": "cfbe833a54272dc2ca21c0f13318f86b94eb7c00",
+      "bytes": 1151
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JESSICA_2.json",
+      "sha1": "0f21d63f123cb9b565526827e11456a25db3c890",
+      "bytes": 1151
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JESSICA_3.json",
+      "sha1": "da0d85e1f69cee8ad4f6a78d36773c3bb946c8fd",
+      "bytes": 1151
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JESSICA_4.json",
+      "sha1": "87d67cfaf8130672238b26271814d7e1eb76a688",
+      "bytes": 1151
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JESSICA_5.json",
+      "sha1": "ee98c97eabc8c7bf1bf42299163f9d245854a455",
+      "bytes": 1151
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JOCELYN.json",
+      "sha1": "1723bed0fcc1c61f88a7904da1f82a1e34e5957a",
+      "bytes": 1166
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JODY.json",
+      "sha1": "5ab202050cc802ecb95038baa4db2b8c03192672",
+      "bytes": 1296
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JOEY.json",
+      "sha1": "56a5d6fa331aa74b82030351280b5f3f2e604cfd",
+      "bytes": 1093
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JOHANNA.json",
+      "sha1": "762902b5bf4a0fc11b1870f429a9ac34a825c70e",
+      "bytes": 1144
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JOHNSON.json",
+      "sha1": "24dd9cddc445e6bccfd8d00406f29e5de85696a3",
+      "bytes": 1114
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JOHN_AND_JAY_1.json",
+      "sha1": "ea2adf99b1a290b91201b6d4f76a0980aa59dbbd",
+      "bytes": 1262
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JOHN_AND_JAY_2.json",
+      "sha1": "21b4ed60c0fdcf1e76a919cc810437a545157002",
+      "bytes": 1262
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JOHN_AND_JAY_3.json",
+      "sha1": "5f041ed61577a75808983e79dfcb1af4fe0f728f",
+      "bytes": 1262
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JOHN_AND_JAY_4.json",
+      "sha1": "76ccb08c9057097088d7461ec7274e6f8c898c17",
+      "bytes": 1264
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JOHN_AND_JAY_5.json",
+      "sha1": "33a9de1eabdbbab5b2e23f7a4f10bea24f221439",
+      "bytes": 1262
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JONAH.json",
+      "sha1": "1e72e3428fdf846c986b0cbb895b94f13199dae4",
+      "bytes": 1102
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JONAS.json",
+      "sha1": "79fb76eeed477309895b5acaf4d9047f9130da08",
+      "bytes": 1217
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JONATHAN.json",
+      "sha1": "4a1df61f4e6d7918356e264cc71ccf44e616cc2f",
+      "bytes": 1291
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JOSE.json",
+      "sha1": "d05211fdffd0d07bfd3e8e814851a1e6745b6c24",
+      "bytes": 1101
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JOSEPH.json",
+      "sha1": "1e35572f8f0627d5dc173548b3a9bb214ee894c4",
+      "bytes": 1113
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JOSH.json",
+      "sha1": "2ca14757d647fb87533935e187c28f99de0da53c",
+      "bytes": 1092
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JOSHUA.json",
+      "sha1": "39b7550297d7d6fc9b175cfc579f2bb9c384be84",
+      "bytes": 1109
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JOSUE.json",
+      "sha1": "019224793f0d5437cff01d246902f42d9eb5d3b2",
+      "bytes": 1108
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JUAN_1.json",
+      "sha1": "4d15fa22060587666a53e3ef84bac26937ee14cc",
+      "bytes": 1259
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JUAN_2.json",
+      "sha1": "39083829913bfdb2ba2128479591a385f22a9b28",
+      "bytes": 1265
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JUAN_3.json",
+      "sha1": "76ca31e78b0facab5b4f1988bb0f6d999e051f9c",
+      "bytes": 1265
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JUAN_4.json",
+      "sha1": "af6ed43a9879af13d0e5338d46438bd2f5c02a09",
+      "bytes": 1265
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JUAN_5.json",
+      "sha1": "4130f5d5c1e9222811f53fdefaaf0ff5d335ca0d",
+      "bytes": 1265
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JULIE.json",
+      "sha1": "7f3f3d713e8272b3235e9492202266b5b0b84a4f",
+      "bytes": 1306
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JULIO.json",
+      "sha1": "6730746c23cadf4a78bce400550b3bd042b21460",
+      "bytes": 1124
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_JUSTIN.json",
+      "sha1": "fb047a2ea7c8289105bbbbeadd4b4828236de7cc",
+      "bytes": 1095
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KAI.json",
+      "sha1": "afed7d89c45187310a0542be05a2c2c0889d636b",
+      "bytes": 1088
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KALEB.json",
+      "sha1": "53d97dd002b5582097f2ce2f2f370237e39f84af",
+      "bytes": 1095
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KARA.json",
+      "sha1": "58eec2637bf0c549b33b8f29a48330308b4be0a5",
+      "bytes": 1137
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KAREN_1.json",
+      "sha1": "46eb7bbd2df227f7c8d17b100d1271c019a47bbb",
+      "bytes": 1154
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KAREN_2.json",
+      "sha1": "8945c6935ad8a7dfc18aa690c023d6fa2345e59a",
+      "bytes": 1154
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KAREN_3.json",
+      "sha1": "046fa135e382f90474b5e51c6bac54c51a55707d",
+      "bytes": 1154
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KAREN_4.json",
+      "sha1": "359723738b26014da75ee1528649a5f3abe67627",
+      "bytes": 1154
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KAREN_5.json",
+      "sha1": "bd82596aa4739d51798216db4fedc4c34cc7b2e6",
+      "bytes": 1154
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KATELYNN.json",
+      "sha1": "eb187a07b7237e4bdc015670655ba1b25317a664",
+      "bytes": 1326
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KATELYN_1.json",
+      "sha1": "90c9511a396c4c8a04b3e1b5cd7dc3dca43002bb",
+      "bytes": 1192
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KATELYN_2.json",
+      "sha1": "2e96fed6e96c2bea1f85f704cb45ff67a8c38a1d",
+      "bytes": 1192
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KATELYN_3.json",
+      "sha1": "c2ee2ec831213291ce20203e6a34c56b4c5ab66e",
+      "bytes": 1192
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KATELYN_4.json",
+      "sha1": "a61b244b66910c46f2a16b16654f1aab10c4fdcd",
+      "bytes": 1192
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KATELYN_5.json",
+      "sha1": "58127827695c9a1262ed0ec8eb40fc8fec09810d",
+      "bytes": 1192
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KATE_AND_JOY.json",
+      "sha1": "ec20bb845d73819c4cc28f7249718c69184c85be",
+      "bytes": 1140
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KATHLEEN.json",
+      "sha1": "86870e6c35c728de7ac3123ffbb8edf785d701ca",
+      "bytes": 1175
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KATIE.json",
+      "sha1": "39ddde7457ed814db0f9c79bb59d3471e7358dcc",
+      "bytes": 1144
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KAYLA.json",
+      "sha1": "e00600a05925c9a82b75cd1f55ab633440770a71",
+      "bytes": 1140
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KAYLEE.json",
+      "sha1": "237cfd75bf14882a3e33637c579c2b30a446c576",
+      "bytes": 1151
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KAYLEY.json",
+      "sha1": "8f3a0757c5115d88e99d03717ef87f5be1673c4a",
+      "bytes": 1160
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KEEGAN.json",
+      "sha1": "58020a9edfd484209ea0275884594a89f1e2d52f",
+      "bytes": 1101
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KEIGO.json",
+      "sha1": "56b06d497128da228cca0dd55b06be8f6aa7baf5",
+      "bytes": 1161
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KEIRA.json",
+      "sha1": "2234140ce4699b4b4eea79c8bb94d5fd6c9eb7bf",
+      "bytes": 1307
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KELVIN.json",
+      "sha1": "74bac354c6de47d7ace48122dad15a71f9663e55",
+      "bytes": 1095
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KENT.json",
+      "sha1": "ab90a43410054b119e26318a1ef554159eea960c",
+      "bytes": 1101
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KEVIN.json",
+      "sha1": "279ea5c0659fda8337d4df58a50a8d9501d1f1b8",
+      "bytes": 1106
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KIM_AND_IRIS.json",
+      "sha1": "9ca1e770bed06f9e661940e10c043879835cb2dd",
+      "bytes": 1140
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KINDRA.json",
+      "sha1": "d97ce1a537b5c72614b5ac1b936501809e180682",
+      "bytes": 1161
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KIRA_AND_DAN_1.json",
+      "sha1": "2d078ae2b65ee620dcfc1e8095c466a0454fa0c9",
+      "bytes": 1159
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KIRA_AND_DAN_2.json",
+      "sha1": "0a8a4a8fcd1cc6104e135254c8f035ae841ed088",
+      "bytes": 1159
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KIRA_AND_DAN_3.json",
+      "sha1": "fc24bea859b1e6ff0749efe40723d10c4c51d873",
+      "bytes": 1159
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KIRA_AND_DAN_4.json",
+      "sha1": "81f5c39a333ead53aada656b7915079b36d5fe56",
+      "bytes": 1159
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KIRA_AND_DAN_5.json",
+      "sha1": "63a76338cedb4a6d39a18a2699556c7f315039ca",
+      "bytes": 1159
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KIRK.json",
+      "sha1": "15976ea6cf07cd3ac12daf4323b11b48793e1594",
+      "bytes": 1098
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KIYO.json",
+      "sha1": "440e0df530925ec67bb690a9b4813dfb9abc81b3",
+      "bytes": 1103
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KOICHI.json",
+      "sha1": "efa44115fb61511b19b994b52fe57e5b83df86a3",
+      "bytes": 1117
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KOJI_1.json",
+      "sha1": "508e706b9fd5893df025175e2f6c260f28512e91",
+      "bytes": 1111
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KOJI_2.json",
+      "sha1": "7a066b6a2d56840426b03435589026e69e281c40",
+      "bytes": 1111
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KOJI_3.json",
+      "sha1": "840077f5bdcd6747ae2bc129f52d1236eb39f450",
+      "bytes": 1111
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KOJI_4.json",
+      "sha1": "33078b7702944207c313d5a7962f1e2bfa198ce5",
+      "bytes": 1111
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KOJI_5.json",
+      "sha1": "e6e513442d83473d4cffee6c42f1bac051592781",
+      "bytes": 1111
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KYLA.json",
+      "sha1": "153acfa192ecb1c4fc4fae3709edb8064048f94f",
+      "bytes": 1137
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_KYRA.json",
+      "sha1": "c74aa33ccc78958210143f3a6ff2ebf9d86308f3",
+      "bytes": 1159
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LAO_1.json",
+      "sha1": "ed2026d9b1ec10f3b92f4cb1809927f53d71cdd9",
+      "bytes": 1059
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LAO_2.json",
+      "sha1": "ecce969d6ff70b418bf917ac26e250777ad216df",
+      "bytes": 1059
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LAO_3.json",
+      "sha1": "a785cc5e71555f6bcc5c85901a58f6da950f7cec",
+      "bytes": 1059
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LAO_4.json",
+      "sha1": "c151c4c54ea993ff7727c0a427cc91c0d63b5089",
+      "bytes": 1059
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LAO_5.json",
+      "sha1": "bbccc6465868ba637e58ac618d894efa8f641572",
+      "bytes": 1056
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LARRY.json",
+      "sha1": "2a26ba1184a5ebe0bf447160d556841e29929c91",
+      "bytes": 1088
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LAURA.json",
+      "sha1": "f54129ca768ea2cc2723dd66cd14c3cbb08ad4f9",
+      "bytes": 1152
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LAUREL.json",
+      "sha1": "15f560af60d57fa5d08e7ba0e09fbe56eaf514b0",
+      "bytes": 1151
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LAWRENCE.json",
+      "sha1": "00b47180a8b82d906d9f4b55674a8437b3371238",
+      "bytes": 1109
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LEAF.json",
+      "sha1": "2b3e9bf78fbd36bf234f09ab737865c3632ddfee",
+      "bytes": 1067
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LEAH.json",
+      "sha1": "1fe2e2fa53926078034a6b0fe53ec4d28dcab7b5",
+      "bytes": 1146
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LEA_AND_JED.json",
+      "sha1": "4b5cfc036ea0d49c5613af018311971da71579ae",
+      "bytes": 1144
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LENNY.json",
+      "sha1": "d23cf79c1932826539a718176449f503d57753fb",
+      "bytes": 1086
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LEONARD.json",
+      "sha1": "86f63e79919871ca1a9f23452ba62872bc099d48",
+      "bytes": 1102
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LEONARDO.json",
+      "sha1": "38dac210644d2a41d940196d32258050aacfc1c9",
+      "bytes": 1127
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LEONEL.json",
+      "sha1": "c5bfe595985f739ae00f44bc9d706c1a32a626a0",
+      "bytes": 1274
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LEROY.json",
+      "sha1": "ab4a3ab6dacf71fe416577998b9fcc3176756c43",
+      "bytes": 1267
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LILA_AND_ROY_1.json",
+      "sha1": "e9610a41c52e305f961f94201f75a42a2532334b",
+      "bytes": 1161
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LILA_AND_ROY_2.json",
+      "sha1": "5be0b5c57902358408ad4f0aadd5a69785a93536",
+      "bytes": 1161
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LILA_AND_ROY_3.json",
+      "sha1": "6445818a04a2e028597e51935b1d1a823acda0a3",
+      "bytes": 1161
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LILA_AND_ROY_4.json",
+      "sha1": "c649d1f78e978582bf4a8b9575e086aabe9c7801",
+      "bytes": 1161
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LILA_AND_ROY_5.json",
+      "sha1": "ed580d4d6e772a3b81fd74c5ac49c004ca4086e8",
+      "bytes": 1161
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LILITH.json",
+      "sha1": "a1a0286ea7a4c6951f03126728b6893e1bbf387c",
+      "bytes": 1159
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LINDA.json",
+      "sha1": "ba40eb6287895035aa2771054274d6952e5b31ac",
+      "bytes": 1144
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LISA_AND_RAY.json",
+      "sha1": "cfeefb0e9271d4f9013cd6336a73ebcf41a51167",
+      "bytes": 1153
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LOLA_1.json",
+      "sha1": "0933ea5a1535a69f513b4bbdd51575e5b62a7314",
+      "bytes": 1130
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LOLA_2.json",
+      "sha1": "146176f458c31677f10b015aeb7fa6e8b65a5d41",
+      "bytes": 1130
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LOLA_3.json",
+      "sha1": "ea65e512f558d428553968a5945fed40d3cd8306",
+      "bytes": 1130
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LOLA_4.json",
+      "sha1": "79c0844ef814f8deda37889cb323a96a3a9a6c6d",
+      "bytes": 1130
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LOLA_5.json",
+      "sha1": "cc901f0a4124208fdf0d4aaeb2023c02ac73e1c1",
+      "bytes": 1130
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LORENZO.json",
+      "sha1": "29136132f246088e9f3c0ebd4991f7163b84d8a3",
+      "bytes": 1288
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LUCAS_1.json",
+      "sha1": "ddff50893e55923c1b779d60a55e84cf259a4205",
+      "bytes": 1094
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LUCAS_2.json",
+      "sha1": "8f4cec7e1b65522acebe2704d0229f11f8946299",
+      "bytes": 1093
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LUCY.json",
+      "sha1": "f10138bf2db5cb525b0c8154cefe7ffcc82ef4e7",
+      "bytes": 1251
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LUIS.json",
+      "sha1": "7258d471c259da6359021ca4665e51d58949b224",
+      "bytes": 1099
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LUNG.json",
+      "sha1": "9d493a3462fe82143b12f919354126e020d0dc25",
+      "bytes": 1059
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LYDIA_1.json",
+      "sha1": "08834d2950bb401c6afe3a9149f01e7e73631f10",
+      "bytes": 1172
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LYDIA_2.json",
+      "sha1": "a9e127b74a7463cfddbe6a32098350248eb43beb",
+      "bytes": 1172
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LYDIA_3.json",
+      "sha1": "ed24746927726ef35b0430f00df4ef33b2c7323b",
+      "bytes": 1172
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LYDIA_4.json",
+      "sha1": "2a36e2df653ae99984fccb14265f1f9b74b324c2",
+      "bytes": 1172
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LYDIA_5.json",
+      "sha1": "ec579662e63e46ebf72286f9d66dd035ad3b5b17",
+      "bytes": 1172
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_LYLE.json",
+      "sha1": "cb946ca536f69479c4b9bee36c8f1b5778665d0d",
+      "bytes": 1101
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MACEY.json",
+      "sha1": "ab35b89db2c09a94f965c2a6c0f81ad4aa0c80b7",
+      "bytes": 1140
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MADELINE_1.json",
+      "sha1": "6e0eb2f70fff20802700507dd54253292f486480",
+      "bytes": 1182
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MADELINE_2.json",
+      "sha1": "d1052f4d15a02502d59bc7fbc46e907120519b02",
+      "bytes": 1182
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MADELINE_3.json",
+      "sha1": "eeb3dce1039045bdf4e1cdc25796f4c17393e1c8",
+      "bytes": 1182
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MADELINE_4.json",
+      "sha1": "1650a55d68921120e6552b2656f3805449300d64",
+      "bytes": 1182
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MADELINE_5.json",
+      "sha1": "4acf1e0d19c4b87a230b159af713aedeae847edf",
+      "bytes": 1182
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAKAYLA.json",
+      "sha1": "b85e4c3210e3e4fafa334cc0c7af06d1b947b089",
+      "bytes": 1306
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MARC.json",
+      "sha1": "31aef1b7e61a97c391850dde9e49e2b8be52fa98",
+      "bytes": 1079
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MARCEL.json",
+      "sha1": "0c31c73abbd455bb5726b900f573e98788426ede",
+      "bytes": 1274
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MARCOS.json",
+      "sha1": "4b0d7f3fe123fceb22fa776d5c4c3cbe7a93a353",
+      "bytes": 1113
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MARIA_1.json",
+      "sha1": "49d9c7a301421c527a0dc3695d645a854d97f8bb",
+      "bytes": 1174
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MARIA_2.json",
+      "sha1": "2d1f19542cb98031a1cecbce1e38a9e167d2cd33",
+      "bytes": 1174
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MARIA_3.json",
+      "sha1": "8a1bed0d78abe4f0d6667d2a0987a47bd2f44653",
+      "bytes": 1174
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MARIA_4.json",
+      "sha1": "58f3359f8d2055584df5b54613d3288045be4443",
+      "bytes": 1174
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MARIA_5.json",
+      "sha1": "098a0eb828cd6d9dc35c3de558c404a3068b429c",
+      "bytes": 1174
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MARIELA.json",
+      "sha1": "3be7d81c6356a453c8fd50d32ce26f5863c5df18",
+      "bytes": 1108
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MARK.json",
+      "sha1": "68447c5607debc5f4db717321d95e6779afabd2f",
+      "bytes": 1109
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MARLENE.json",
+      "sha1": "95756fdabbaa2727fdc12f6f7023079b5290b98f",
+      "bytes": 1154
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MARLEY.json",
+      "sha1": "c1b7621c4233bdae5e10ff8f3080dff19ec274f8",
+      "bytes": 1309
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MARTHA.json",
+      "sha1": "4ec5e10821ed8df2fa583035bf38129e2393a41f",
+      "bytes": 1145
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MARY.json",
+      "sha1": "398286d70c74c95a24f8d721ba98882a00c0de0b",
+      "bytes": 1294
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MATT.json",
+      "sha1": "44d9a347d4117a8bd7dbaa7c6892f972da07b55a",
+      "bytes": 1256
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MATTHEW.json",
+      "sha1": "7d599892223530c8073ea13ad581f7dd2fb846a2",
+      "bytes": 1120
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAURA.json",
+      "sha1": "ad96d79b407de48d7c3278d20d77c832c21e43d0",
+      "bytes": 1140
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAXIE_MAGMA_HIDEOUT.json",
+      "sha1": "ac275d9b019ad39b5802a5758b66780ed9a8ba62",
+      "bytes": 1356
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAXIE_MOSSDEEP.json",
+      "sha1": "3ea10b558b67a108db560c843161de7b1952d33c",
+      "bytes": 1275
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAXIE_MT_CHIMNEY.json",
+      "sha1": "bc7430a8853e77981b7b9f14696370a6b12296ab",
+      "bytes": 1341
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAY_LILYCOVE_MUDKIP.json",
+      "sha1": "415bc5f660946a59844f45dc209d6d471e2ffcb4",
+      "bytes": 1290
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAY_LILYCOVE_TORCHIC.json",
+      "sha1": "20eeacd526d51eaf462c309428445218df93ef5c",
+      "bytes": 1295
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAY_LILYCOVE_TREECKO.json",
+      "sha1": "6b1b754b581c10d5d0ff195a250e07cf2665b961",
+      "bytes": 1295
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAY_PLACEHOLDER.json",
+      "sha1": "e8d79680e1d68b8c0fd22a8a742b12c08044acb6",
+      "bytes": 1138
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAY_ROUTE_103_MUDKIP.json",
+      "sha1": "2cb484b1c493ceac56dcfe901a2eb877486e647c",
+      "bytes": 1293
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAY_ROUTE_103_TORCHIC.json",
+      "sha1": "088e3979a0964d5ab5f76185e57281ba5c3327d1",
+      "bytes": 1298
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAY_ROUTE_103_TREECKO.json",
+      "sha1": "25101e8c522e4c8303368b4988022fd3492c07d8",
+      "bytes": 1298
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAY_ROUTE_110_MUDKIP.json",
+      "sha1": "aad98e5d3a09e383db0f89b85a6d16eafc49f54a",
+      "bytes": 1293
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAY_ROUTE_110_TORCHIC.json",
+      "sha1": "5ae1d33f6c8903e990646528f576b3a4fbad7e43",
+      "bytes": 1298
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAY_ROUTE_110_TREECKO.json",
+      "sha1": "86ee5e11b25f83db7330377885925f0856d93b46",
+      "bytes": 1298
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAY_ROUTE_119_MUDKIP.json",
+      "sha1": "9dd585a148b44d645c2d296ed01d60eabf1315ac",
+      "bytes": 1293
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAY_ROUTE_119_TORCHIC.json",
+      "sha1": "8a3471e2d43fa636295e09f469a2200043acf7b7",
+      "bytes": 1298
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAY_ROUTE_119_TREECKO.json",
+      "sha1": "35d448c8c472b250bb705e9a7a54834092cc0590",
+      "bytes": 1298
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAY_RUSTBORO_MUDKIP.json",
+      "sha1": "40a8b047eb0626e95e1c8d2cf1265f8ebf9a7251",
+      "bytes": 1292
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAY_RUSTBORO_TORCHIC.json",
+      "sha1": "e3fa1fedea270e24622c58ac9eb7f8204cfbf75c",
+      "bytes": 1295
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MAY_RUSTBORO_TREECKO.json",
+      "sha1": "4baaed8955f8ee66d69605699fe8869f0ee9f1ef",
+      "bytes": 1295
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MELINA.json",
+      "sha1": "5d58a122d55097633c6a395e73367cd89bd66d12",
+      "bytes": 1173
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MELISSA.json",
+      "sha1": "2f15bd5e4059147039cf9b597419f9f97cc77a3e",
+      "bytes": 1144
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MEL_AND_PAUL.json",
+      "sha1": "786aa1570f2c486b00ca857b55019e7c989f8cb5",
+      "bytes": 1150
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MICAH.json",
+      "sha1": "030852e613bc7b7b800a764bc87cf72b3453a92e",
+      "bytes": 1100
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MICHELLE.json",
+      "sha1": "ba198485b7c61d1ec34b73b59946df7557d42f6e",
+      "bytes": 1326
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MIGUEL_1.json",
+      "sha1": "c7ac337d94b68b8514cd3a124ae0821baed6fe3c",
+      "bytes": 1110
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MIGUEL_2.json",
+      "sha1": "a7062e6425b7e76740ff1b0648f1f1082f3b4acc",
+      "bytes": 1110
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MIGUEL_3.json",
+      "sha1": "0b009ef59ca160cf516be9d792bf50e109a9eea7",
+      "bytes": 1110
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MIGUEL_4.json",
+      "sha1": "4f5ec7f0e617bcef52a58ac721e1aa475aef7351",
+      "bytes": 1110
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MIGUEL_5.json",
+      "sha1": "61926f2214f9f817cb1b62c854a23ffba83ea1bd",
+      "bytes": 1110
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MIKE_1.json",
+      "sha1": "bf0d3d583cb9cafe5c5486ed566557b542e52ef4",
+      "bytes": 1086
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MIKE_2.json",
+      "sha1": "925a16ca4716f3f1ae13bae18ad36767573b981c",
+      "bytes": 1087
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MISSY.json",
+      "sha1": "057a432215f2831738032aef919eb2b874f31829",
+      "bytes": 1144
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MITCHELL.json",
+      "sha1": "c6f7fec4484ebfee0e556570a564f11e30bfc398",
+      "bytes": 1238
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MIU_AND_YUKI.json",
+      "sha1": "f878c3ef1f95a2b531527668e20b11912b9cbd84",
+      "bytes": 1125
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MOLLIE.json",
+      "sha1": "e4a21899792f166aeeb2dc1300e6d8ef9302f4b3",
+      "bytes": 1143
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_MYLES.json",
+      "sha1": "8418f1f3382b9ee43d71be6fa892ef1d870a8e66",
+      "bytes": 1122
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NANCY.json",
+      "sha1": "c9d346e9ed7451971b91864808d86a03a714e7d1",
+      "bytes": 1138
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NAOMI.json",
+      "sha1": "c69c30e982809512d514944ae2e22c9edee0f7d3",
+      "bytes": 1169
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NATE.json",
+      "sha1": "c49962a51c33cd79ee278bd2f99a84fa11c6dec3",
+      "bytes": 1093
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NED.json",
+      "sha1": "4c2ce49c3ce90df46315da8685834326e8a741e4",
+      "bytes": 1088
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NICHOLAS.json",
+      "sha1": "c88affd6aef958d83d41b0858f8d941f1ce67cad",
+      "bytes": 1123
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NICOLAS_1.json",
+      "sha1": "78e1aa4725f0a2daae045ea07cbf0db1e1ab4081",
+      "bytes": 1140
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NICOLAS_2.json",
+      "sha1": "47c62871d8d1a5809cf88b41957b6ee6dce8d11b",
+      "bytes": 1140
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NICOLAS_3.json",
+      "sha1": "22d4daf8a0ac48e6f6654d50152b53f81077920f",
+      "bytes": 1140
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NICOLAS_4.json",
+      "sha1": "b5c3f791a91eeafcfdaed436a5fee6e50a5639e6",
+      "bytes": 1140
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NICOLAS_5.json",
+      "sha1": "41048d2d63b5c4982919d5351c28e4f2114eca64",
+      "bytes": 1137
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NIKKI.json",
+      "sha1": "5e1e2f549d1c9b9bb932de1ff081526ac92f504e",
+      "bytes": 1144
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NOB_1.json",
+      "sha1": "3c616210bee4bcfea87c617aee21035047f7c9d6",
+      "bytes": 1104
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NOB_2.json",
+      "sha1": "5e2ef57e1d3cc6e9272804095ce4d7d95d1e2a92",
+      "bytes": 1104
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NOB_3.json",
+      "sha1": "db1c83d389aa78e9e269ff912a72a555648c5435",
+      "bytes": 1104
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NOB_4.json",
+      "sha1": "934ceca7a05a3f52fe9cf3296e0c2d5f4bc1d712",
+      "bytes": 1104
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NOB_5.json",
+      "sha1": "11d4c495e3332b156e838b879fd3ab4ba8e2b385",
+      "bytes": 1101
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NOLAN.json",
+      "sha1": "b5db07d435efb7634d35157309d4dc58d97564b0",
+      "bytes": 1102
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NOLAND.json",
+      "sha1": "f18f965961c6ad17c1c55db6433590bbaab4b3f9",
+      "bytes": 1239
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NOLEN.json",
+      "sha1": "e6b829a4efafff2a5c1682b33063d2b1c7daa653",
+      "bytes": 1106
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NONE.json",
+      "sha1": "98f217d8a1eb6d506bcc71d16c06ba7b69d909a2",
+      "bytes": 1073
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NORMAN_1.json",
+      "sha1": "e6bad1305a487be56e38b52d268a1d9bae212fc7",
+      "bytes": 1277
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NORMAN_2.json",
+      "sha1": "ae2e09071c5cd33c1acdd615afabff564669799b",
+      "bytes": 1283
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NORMAN_3.json",
+      "sha1": "ca2ec3809daec62bae8e40821320f7bfed8f2b58",
+      "bytes": 1283
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NORMAN_4.json",
+      "sha1": "c44f8b996d2f1efac59439882775e80e04a7744f",
+      "bytes": 1283
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_NORMAN_5.json",
+      "sha1": "d454892ad9c454fbdf8ddc7187888412f816967b",
+      "bytes": 1283
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_OLIVIA.json",
+      "sha1": "64db4aca4afdb413a1cf5ed4c1ba7e2460e5795e",
+      "bytes": 1136
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_OWEN.json",
+      "sha1": "07abff131be728014b749de6698c5e41219c2fdf",
+      "bytes": 1260
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_PABLO_1.json",
+      "sha1": "35b360f58f3dc990d6348e3ca67668ee81458f8e",
+      "bytes": 1140
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_PABLO_2.json",
+      "sha1": "a6c727d5bb21168f665bc016d4e1fac1f6849c9b",
+      "bytes": 1140
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_PABLO_3.json",
+      "sha1": "d57944fd73c490dc6b1b66aec0b6bbe91ceebf7a",
+      "bytes": 1140
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_PABLO_4.json",
+      "sha1": "ff7d6bc76705195861d2ffdf6f41f10e94bd6a89",
+      "bytes": 1140
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_PABLO_5.json",
+      "sha1": "3635edd42c835a3f528e8bcf84f5b22819d7edea",
+      "bytes": 1140
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_PARKER.json",
+      "sha1": "92210992289fc7cc61e218915df4e1b54bedea85",
+      "bytes": 1270
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_PAT.json",
+      "sha1": "a75240aa168ef4c7870cacbb1e0b93121a5a7e79",
+      "bytes": 1150
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_PATRICIA.json",
+      "sha1": "2247c4b7c357e12649ab573ec7bb236e6eed9765",
+      "bytes": 1175
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_PAUL.json",
+      "sha1": "e086fae620c8d31e1018702c574fb7d4f577f73f",
+      "bytes": 1101
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_PAULA.json",
+      "sha1": "eb19f6f8d9c9bbfdb8e1d8a2b87c573d1db688b4",
+      "bytes": 1152
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_PAXTON.json",
+      "sha1": "d60cf42a39bd8d92b3d2b481c0b471e43b68e2cc",
+      "bytes": 1211
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_PERRY.json",
+      "sha1": "63e3853fb3db1752776043f9f3959aac970ff5f3",
+      "bytes": 1108
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_PETE.json",
+      "sha1": "f691c9db55830729fa0acb048e7ae2a8c54a487c",
+      "bytes": 1099
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_PHIL.json",
+      "sha1": "979a84586cf28ce30c8727310756e78c5fd2302f",
+      "bytes": 1101
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_PHILLIP.json",
+      "sha1": "f15a246ac3ee8fd1cb89d63db4d6b5379ef02395",
+      "bytes": 1102
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_PHOEBE.json",
+      "sha1": "a143fcdca808d6d3c3afdf96668a8caee2ff3d7c",
+      "bytes": 1335
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_PRESLEY.json",
+      "sha1": "6b64ba6d870108e0e511f53821a88d1b271628b3",
+      "bytes": 1122
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_PRESTON.json",
+      "sha1": "a6680075aafa0746b41b685f273873942d39db3d",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_QUINCY.json",
+      "sha1": "881567416cef9a16ced11df355b82ccec93d3840",
+      "bytes": 1274
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_RACHEL.json",
+      "sha1": "7242d72b454dde2ccf47c35dea188f051759d61f",
+      "bytes": 1161
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_RANDALL.json",
+      "sha1": "b7addaa287872356e24775f63fe4ed4a3e89312f",
+      "bytes": 1277
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_RED.json",
+      "sha1": "a2c95e5f19de1ee1fe1e34fc4c0c811d58feffc8",
+      "bytes": 1020
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_REED.json",
+      "sha1": "475577b791d8f898b636214b4e7259bf48da2c04",
+      "bytes": 1099
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_RELI_AND_IAN.json",
+      "sha1": "1b37170b7f1a6b88e5aa087a74d551deab074ddf",
+      "bytes": 1153
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_REYNA.json",
+      "sha1": "395b434af3afa3ae38e329fc2a9562b18183d4ff",
+      "bytes": 1152
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_RHETT.json",
+      "sha1": "9f6d3600689d48b44ca8751ea0e2b07c1516367d",
+      "bytes": 1110
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_RICHARD.json",
+      "sha1": "ebccfd1904c2ce3dcdb485b1ce4d8c5189157851",
+      "bytes": 1120
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_RICK.json",
+      "sha1": "b9b79dcb13047ca0334dd164baf168067351c0b2",
+      "bytes": 1101
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_RICKY_1.json",
+      "sha1": "0e1e4ef5a1f29f036997199425c6df50d09147f2",
+      "bytes": 1098
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_RICKY_2.json",
+      "sha1": "813052a8d6d4e797077ffbbb2308388ab4d0d813",
+      "bytes": 1098
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_RICKY_3.json",
+      "sha1": "b23c52e779fb9b43594ba83071c48ac52cdd7268",
+      "bytes": 1098
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_RICKY_4.json",
+      "sha1": "b1c8ee4cd92ee98818a9076e8ad1e3773e8a707f",
+      "bytes": 1098
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_RICKY_5.json",
+      "sha1": "c3483f22188749e4409c1120ea37134726ea9fd7",
+      "bytes": 1098
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_RILEY.json",
+      "sha1": "46d1cb08f7b43c3116a02ebfd03aa8d2b923610f",
+      "bytes": 1161
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ROBERT_1.json",
+      "sha1": "e7b41e5f57d89cab83b925732a380cb65859242d",
+      "bytes": 1123
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ROBERT_2.json",
+      "sha1": "698c051570cd51de77e9c2c934d5a8113226ec2c",
+      "bytes": 1123
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ROBERT_3.json",
+      "sha1": "2391cf0f6eae0e19ff1b06eaef1988329c9dd14e",
+      "bytes": 1123
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ROBERT_4.json",
+      "sha1": "2f8d654340c796861e19592414396408aef1046c",
+      "bytes": 1123
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ROBERT_5.json",
+      "sha1": "37cc220b66b9ac6b2202b83d7e47a02d8c3a77aa",
+      "bytes": 1123
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ROBIN.json",
+      "sha1": "a3d5b548a04ef7e4021ec3c719e9de5231c5a347",
+      "bytes": 1122
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_RODNEY.json",
+      "sha1": "4ab6907b50f9c869e7759fcb471807edf9917ab0",
+      "bytes": 1113
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ROGER.json",
+      "sha1": "0feaeb324cbbb2a4fab07c026d7c0c99354d3f8a",
+      "bytes": 1102
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ROLAND.json",
+      "sha1": "5840c62ee8632bcaac69a3274aa92f8044dc96b5",
+      "bytes": 1113
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_RONALD.json",
+      "sha1": "b60ad28cd36508ec9e56d02a0a082c3ab49837f1",
+      "bytes": 1109
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ROSE_1.json",
+      "sha1": "e0a712564d9dc9c53c92377a873d6ba66fa7a3ee",
+      "bytes": 1146
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ROSE_2.json",
+      "sha1": "9ef6c3ccb85adfad78af9879852560ad16288fc4",
+      "bytes": 1146
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ROSE_3.json",
+      "sha1": "36a5454cf9131332e0b815e6c5932929e42c1bff",
+      "bytes": 1146
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ROSE_4.json",
+      "sha1": "f9c14bba701eb9de1f19057c54eb02eda770256b",
+      "bytes": 1146
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ROSE_5.json",
+      "sha1": "2f1bf26897bf2b61ea040a7bb594d736d52de533",
+      "bytes": 1146
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ROXANNE_1.json",
+      "sha1": "108267759aaf6fd402a67449c53e4617397f8641",
+      "bytes": 1316
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ROXANNE_2.json",
+      "sha1": "2c8926d215912d2c0f2d6a32a8f93bb77cdd4fc2",
+      "bytes": 1334
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ROXANNE_3.json",
+      "sha1": "26b684b8ff2fa7268e8ba0083ea1ae748ba54e02",
+      "bytes": 1334
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ROXANNE_4.json",
+      "sha1": "c9a351c65af1206e26b2f21d6e303b744b198a8d",
+      "bytes": 1334
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ROXANNE_5.json",
+      "sha1": "1308cca28fe4ed282e959f38b5c33a2b7cd9a2a4",
+      "bytes": 1334
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_RUBEN.json",
+      "sha1": "2c1b0ba1858a3d320b9c039a7de45d4952c56e61",
+      "bytes": 1268
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SALLY.json",
+      "sha1": "4883f8351f264e96306cc482a8fd1baa83aac58e",
+      "bytes": 1122
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SAMANTHA.json",
+      "sha1": "9fbe901747825b884da33f4c27f521d54659881b",
+      "bytes": 1161
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SAMUEL.json",
+      "sha1": "38d1854d89729d92c34856caab7349fc702e2a41",
+      "bytes": 1274
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SANTIAGO.json",
+      "sha1": "a870dafd004c24f8c8f2f756b2638cd4474b26fd",
+      "bytes": 1127
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SARAH.json",
+      "sha1": "9089d053592bf3241369aa4950276e56402acef6",
+      "bytes": 1169
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SAWYER_1.json",
+      "sha1": "cc706b93fba57119700ca88df82a79839c03b4ee",
+      "bytes": 1205
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SAWYER_2.json",
+      "sha1": "2024ea5e2e9a07fca32231e2cf240bfe485b72f0",
+      "bytes": 1207
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SAWYER_3.json",
+      "sha1": "34a837808ec0fc8b8a5f518eea7693037aed1557",
+      "bytes": 1207
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SAWYER_4.json",
+      "sha1": "4a42dcc7a1266a61c498bce1d05aa64e54df4094",
+      "bytes": 1207
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SAWYER_5.json",
+      "sha1": "9ed3b05adcd4ea96f508bf4a1913c0baea314225",
+      "bytes": 1207
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SEBASTIAN.json",
+      "sha1": "f177719f0fc28aa3419278cd94318a50b4280fc1",
+      "bytes": 1302
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SHANE.json",
+      "sha1": "6ac6b2da3682f5b36373ab1ef1587c6e3b9c2672",
+      "bytes": 1088
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SHANNON.json",
+      "sha1": "1dd70c2a9d38875cc82b4fd59313273b8b6a7910",
+      "bytes": 1319
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SHARON.json",
+      "sha1": "e5f25e98b182c7df4e9991694bc205057365d8fa",
+      "bytes": 1151
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SHAWN.json",
+      "sha1": "de8628e7357f8d1d53a368c7342e94ae73df588f",
+      "bytes": 1106
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SHAYLA.json",
+      "sha1": "12b4dc158713514bed9eb3fd8db378bbe9e8df7b",
+      "bytes": 1153
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SHEILA.json",
+      "sha1": "61917f02afdb88971dda90ab256d1eabc864069e",
+      "bytes": 1137
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SHELBY_1.json",
+      "sha1": "d76b42aec36baf790f603c401c5f9d98ffff2ebc",
+      "bytes": 1257
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SHELBY_2.json",
+      "sha1": "faddda15a281116249dfa6aa2ce06895f471b86c",
+      "bytes": 1257
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SHELBY_3.json",
+      "sha1": "4a737ee4c0d95f410543dad213512adc63e5cfee",
+      "bytes": 1257
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SHELBY_4.json",
+      "sha1": "23a779d2abc76f36f556e0ca601d57d7461567b1",
+      "bytes": 1257
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SHELBY_5.json",
+      "sha1": "9a495f4d6be4b6345d917775844370493b77cfad",
+      "bytes": 1257
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SHELLY_SEAFLOOR_CAVERN.json",
+      "sha1": "2ad7a604c07d4035e107cc303ff6b49ec1ad079e",
+      "bytes": 1334
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SHELLY_WEATHER_INSTITUTE.json",
+      "sha1": "105b2b76e51106166d9c62c3208e4e42d10ae354",
+      "bytes": 1344
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SHIRLEY.json",
+      "sha1": "6f38d4941947f0f922dcabeaa60b01950a03a59a",
+      "bytes": 1144
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SIDNEY.json",
+      "sha1": "e948a8ba645a70fe631aed9e4b3e6dd1b02bebb8",
+      "bytes": 1355
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SIENNA.json",
+      "sha1": "e80bc0a9001e711a36380cd152746a5afdb7183c",
+      "bytes": 1151
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SIMON.json",
+      "sha1": "7080575ff9b70b3cf97045e669e14c84ca530a00",
+      "bytes": 1091
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SOPHIA.json",
+      "sha1": "f7eb986690b333b384e754c984285f8c90e9aa5d",
+      "bytes": 1319
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SOPHIE.json",
+      "sha1": "9d2e0ff06dbf0cf3faafdfb8a2149b67ac4043ec",
+      "bytes": 1145
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SPENCER.json",
+      "sha1": "4506dd8f8ef78d99060cfe980269b6708ec7ecd6",
+      "bytes": 1120
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SPENSER.json",
+      "sha1": "5fd1b69c21a00a23006bbd4f462cb64d62cefd98",
+      "bytes": 1248
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_STAN.json",
+      "sha1": "adc86040e36b71731f682672866447d6c9bc41ad",
+      "bytes": 1099
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_STEVEN.json",
+      "sha1": "eb87d1acda189a2eb6169755d4876c1f7de84e73",
+      "bytes": 1269
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_STEVE_1.json",
+      "sha1": "9cba5590ec8597666923df9b006ba21c2f5f950b",
+      "bytes": 1124
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_STEVE_2.json",
+      "sha1": "df6ced001fa226df7a5d2feaaaf8cb5ca8d3ad3c",
+      "bytes": 1124
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_STEVE_3.json",
+      "sha1": "8cc1dbc18f3f516359d15a4e1dfafe00409a8b27",
+      "bytes": 1124
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_STEVE_4.json",
+      "sha1": "58406a93a66e549ea9e79d17571131471a95e1e2",
+      "bytes": 1124
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_STEVE_5.json",
+      "sha1": "303725a9a1bbbf0a59313dd6c8cc4354e919c271",
+      "bytes": 1124
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SUSIE.json",
+      "sha1": "190e4622403a5098ac80949c403e02c7d244cad1",
+      "bytes": 1144
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_SYLVIA.json",
+      "sha1": "86ec64bef5950a4dd8da57a0ba694e12fe594352",
+      "bytes": 1161
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TABITHA_MAGMA_HIDEOUT.json",
+      "sha1": "43f146f71c9c920970c7a09d8f289d5a6c0a1c42",
+      "bytes": 1190
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TABITHA_MOSSDEEP.json",
+      "sha1": "e5a3cc2632ff2716b8b51f4bf6ec3b3ff3ad7b37",
+      "bytes": 1167
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TABITHA_MT_CHIMNEY.json",
+      "sha1": "6a92be2023ea9f1bcbb3da06c04b22e951125f1f",
+      "bytes": 1281
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TAKAO.json",
+      "sha1": "1cb7641b7c8f7876e046d63347b94511fee805ff",
+      "bytes": 1110
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TAKASHI.json",
+      "sha1": "af6031bb7a86fad274c6da54b2a2429707c63ea1",
+      "bytes": 1176
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TALIA.json",
+      "sha1": "f9842065c2eceba1de27a571db12d7939843aecd",
+      "bytes": 1170
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TAMMY.json",
+      "sha1": "edaa84757c605d80451e3f8a780c0fc05308ab62",
+      "bytes": 1154
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TANYA.json",
+      "sha1": "85f591bad8530aafa78cc9a64b346a1df2aa8627",
+      "bytes": 1144
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TARA.json",
+      "sha1": "cf05cbf4ddd1629384e362b739a7139127b1d841",
+      "bytes": 1137
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TASHA.json",
+      "sha1": "cf8b60076f596c03e9b6d3463cff98ec3a79eb52",
+      "bytes": 1154
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TATE_AND_LIZA_1.json",
+      "sha1": "5f770d43c1e0d7e4327020837e659eb78787e6bf",
+      "bytes": 1346
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TATE_AND_LIZA_2.json",
+      "sha1": "c443a692a1adf1d7a7c2ff58b56e7aeca694e0e8",
+      "bytes": 1338
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TATE_AND_LIZA_3.json",
+      "sha1": "4d671417708212f074725ac00932cfdb2c9e4feb",
+      "bytes": 1338
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TATE_AND_LIZA_4.json",
+      "sha1": "dd793cd445130d720e70f5b092f16180c5ddd775",
+      "bytes": 1338
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TATE_AND_LIZA_5.json",
+      "sha1": "13fc175b8a32990336f5a0beaa696a2d6d96a8c3",
+      "bytes": 1338
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TAYLOR.json",
+      "sha1": "8d5ff21779bb4272e2fe3a8c06b6ca9105c8392a",
+      "bytes": 1123
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TED.json",
+      "sha1": "784544d9a1a3ffb24d4b0da1c49ea8174ce0e7d5",
+      "bytes": 1094
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TERRY.json",
+      "sha1": "aed7d4944e9304e561aa0cff25397c773839ea9d",
+      "bytes": 1140
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_THALIA_1.json",
+      "sha1": "6a67ff0a9b00e6bc8fe04f60744c1cc3b3585883",
+      "bytes": 1145
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_THALIA_2.json",
+      "sha1": "c67aac80d02ca32c8a23ca4ab4d3b198d788b1f7",
+      "bytes": 1145
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_THALIA_3.json",
+      "sha1": "f71b7c48bef88b1711a613d81d0ce0e97e0f0f24",
+      "bytes": 1145
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_THALIA_4.json",
+      "sha1": "74be4e16504467e4b754348a4f5ad11723a667ea",
+      "bytes": 1145
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_THALIA_5.json",
+      "sha1": "60636e02474f8fc08c7888327a1f831d30dfaa1b",
+      "bytes": 1145
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_THOMAS.json",
+      "sha1": "db8b5df7439d72aa08630c16134f749a33eef39b",
+      "bytes": 1107
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TIANA.json",
+      "sha1": "39c40f199bc8d64a1d84c67335e501d14da4a9de",
+      "bytes": 1122
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TIFFANY.json",
+      "sha1": "858271deece04e5c9d42ee943895eb2f6f151a78",
+      "bytes": 1144
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TIMMY.json",
+      "sha1": "e6ccbc4adb638c9cb066089957e2a423ae6e07bf",
+      "bytes": 1100
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TIMOTHY_1.json",
+      "sha1": "b30f8ee26c4e83f374e694d5bf34ab23145f25de",
+      "bytes": 1226
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TIMOTHY_2.json",
+      "sha1": "461e7a2bbc4c1c3b44481f13d28a2601bce2c1e7",
+      "bytes": 1225
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TIMOTHY_3.json",
+      "sha1": "2ad6c9866c83bcb361287f3eac6bb75b1495e48e",
+      "bytes": 1225
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TIMOTHY_4.json",
+      "sha1": "c8254918a2fa73dfc7a6de678fb19992a8eba7e4",
+      "bytes": 1225
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TIMOTHY_5.json",
+      "sha1": "2512d4b758edc4318fdc0213c4a6f225b804e9f1",
+      "bytes": 1225
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TISHA.json",
+      "sha1": "6b13888e79dd25d69772dc8e7038fc2f955da424",
+      "bytes": 1144
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TOMMY.json",
+      "sha1": "95375c69c70101b063a58e0d5f24b7893fa4970c",
+      "bytes": 1100
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TONY_1.json",
+      "sha1": "fccadfb9d3e9d6802319334e13392b53f69748ef",
+      "bytes": 1107
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TONY_2.json",
+      "sha1": "e65fc3c01ab400a0438c9c6acc6d180c231c8ad3",
+      "bytes": 1107
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TONY_3.json",
+      "sha1": "5803c8ed7d6c7a38d1b5cb6bc6689ecafd7e52fc",
+      "bytes": 1107
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TONY_4.json",
+      "sha1": "a13c95099626cceee1b82ce9b95157a487fde238",
+      "bytes": 1107
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TONY_5.json",
+      "sha1": "15809984c140a0cb694c34089daeb3d2d3b015d2",
+      "bytes": 1107
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TORI_AND_TIA.json",
+      "sha1": "29e35a56cd02d62a739c2df40c8ed225370f91f0",
+      "bytes": 1125
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TRAVIS.json",
+      "sha1": "92436762a916510aefd6a35efcc2b6a73b11ade2",
+      "bytes": 1095
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TRENT_1.json",
+      "sha1": "9d8b47f0fb6d174d30673483fca35c94d3c3417d",
+      "bytes": 1094
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TRENT_2.json",
+      "sha1": "86afc48a1fb3923f5002e41b7321050d60e2f220",
+      "bytes": 1094
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TRENT_3.json",
+      "sha1": "1dc800189976b1e2fb536afdf4bce4b21a50b303",
+      "bytes": 1094
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TRENT_4.json",
+      "sha1": "ac23500e27202354f30869b30a3f60e674dd2b99",
+      "bytes": 1094
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TRENT_5.json",
+      "sha1": "a5516721b9d8e885b27ab5706756a03b1dbea713",
+      "bytes": 1094
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TUCKER.json",
+      "sha1": "9211e42af0c32289338b9e018e4c95c6511466e7",
+      "bytes": 1223
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TYRA_AND_IVY.json",
+      "sha1": "650174a531922bb35f5b089e40d87f2e9b38283a",
+      "bytes": 1140
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_TYRON.json",
+      "sha1": "4a49773e7c080e3bf8655871015a76eb776b6cd7",
+      "bytes": 1088
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_VALERIE_1.json",
+      "sha1": "c617d6dff6f68a0fdd87e626bfec29a18b578a9d",
+      "bytes": 1176
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_VALERIE_2.json",
+      "sha1": "207e71aef41878fe8485fd248c6369a8eaf4866e",
+      "bytes": 1176
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_VALERIE_3.json",
+      "sha1": "491e7afd2549a360bccce0421ce79884a9dab048",
+      "bytes": 1176
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_VALERIE_4.json",
+      "sha1": "582aa58c6633a40e153ff3f7974603fe8503cec8",
+      "bytes": 1176
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_VALERIE_5.json",
+      "sha1": "fbd04fdade68b466e57b6ab37f08bea64e0fdaec",
+      "bytes": 1176
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_VANESSA.json",
+      "sha1": "8d382b26269da496cc066f7b609738aac8130151",
+      "bytes": 1147
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_VICKY.json",
+      "sha1": "5804542f985f240baa265a589ed9b284bfb45a3b",
+      "bytes": 1247
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_VICTOR.json",
+      "sha1": "5970b80212458fc088695e4fc438b697575b9463",
+      "bytes": 1106
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_VICTORIA.json",
+      "sha1": "6c17b92b9f82e6e06fea0832b18a8d2a81f7ebc2",
+      "bytes": 1208
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_VINCENT.json",
+      "sha1": "5bdd090d7299730354e65eaf260460b40fbdf4a0",
+      "bytes": 1281
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_VIOLET.json",
+      "sha1": "6af068970818aff7fe1f10c34c37a127b0367f37",
+      "bytes": 1152
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_VIRGIL.json",
+      "sha1": "8521b89ea29311cc8a325b4ecac8f6b43d0df9b4",
+      "bytes": 1109
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_VITO.json",
+      "sha1": "004e413ea5e7e1449f6bb3383cc49af2a47f8745",
+      "bytes": 1260
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_VIVI.json",
+      "sha1": "4a4d749885c8b33ef0ea5d23f59128cf99ddbe42",
+      "bytes": 1231
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_VIVIAN.json",
+      "sha1": "fbeb321a4b0cbb8a87ff44d94260529d959dc948",
+      "bytes": 1158
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WADE.json",
+      "sha1": "a44d3100e7650428b82b7a2b824b6fd70a935964",
+      "bytes": 1095
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WALLACE.json",
+      "sha1": "9d7aec7fadf21d01a0579658b0ae61cfe274ae2c",
+      "bytes": 1302
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WALLY_MAUVILLE.json",
+      "sha1": "152b8dbcecc5f3db80470cf542d41ad7048d369b",
+      "bytes": 1233
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WALLY_VR_1.json",
+      "sha1": "30d97e7d32d0e74d5ac4e25ce86781d2a950dca9",
+      "bytes": 1268
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WALLY_VR_2.json",
+      "sha1": "0c66c67932f678e751618da0ac854fa3bda3aadc",
+      "bytes": 1268
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WALLY_VR_3.json",
+      "sha1": "4cb2944c6e174eb8b9b1bcc2b5e813bb765220a2",
+      "bytes": 1268
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WALLY_VR_4.json",
+      "sha1": "5c36ce4078f1db08d31b634744ce94de374f5008",
+      "bytes": 1268
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WALLY_VR_5.json",
+      "sha1": "7ecb03d15ceb0f7184d1870d1a5c18f4015a4a38",
+      "bytes": 1268
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WALTER_1.json",
+      "sha1": "72a6ffa104ab520f03a66e21cd662e3868bfb156",
+      "bytes": 1115
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WALTER_2.json",
+      "sha1": "e35abefd68e709db840320796c5fb4a36850e00c",
+      "bytes": 1115
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WALTER_3.json",
+      "sha1": "e852596a1085d60ccfcbaa94ba400cf05c9da901",
+      "bytes": 1114
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WALTER_4.json",
+      "sha1": "de0a1208002b75e805cd2f07db85e64e7d2034f6",
+      "bytes": 1114
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WALTER_5.json",
+      "sha1": "5e3691be02a442c663c23d5faade3482819d0596",
+      "bytes": 1114
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WARREN.json",
+      "sha1": "14dcf4a36a21ce10a9846805b166c37fe8ca3566",
+      "bytes": 1274
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WATTSON_1.json",
+      "sha1": "de71bcd29bc1bc843f5553d1df04be7c74b83adb",
+      "bytes": 1286
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WATTSON_2.json",
+      "sha1": "ad9215e6d1b9fdf11ee0621b52d4085ea95a6e86",
+      "bytes": 1292
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WATTSON_3.json",
+      "sha1": "9d9e9eecc74cb0bf143288d92616c0ff1e056163",
+      "bytes": 1292
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WATTSON_4.json",
+      "sha1": "b13067b8e60d723a8ce92a696ac9c75f9a2d35f0",
+      "bytes": 1292
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WATTSON_5.json",
+      "sha1": "e357e877a25ed6b4b6bdbe400b2b223f266a79a1",
+      "bytes": 1292
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WAYNE.json",
+      "sha1": "5cf64cd3d5659f41144d9059862b8f3d91a950b5",
+      "bytes": 1102
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WENDY.json",
+      "sha1": "9dc9261603d258d49c8749ea9b7d5c93029f8ef9",
+      "bytes": 1306
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WILLIAM.json",
+      "sha1": "eee44a1e36cf57aa8d592ad437234a9477f800e3",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WILTON_1.json",
+      "sha1": "e3b3470b20c2d2f37680b3996f44d337b218446f",
+      "bytes": 1282
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WILTON_2.json",
+      "sha1": "de2bb9fc1fb323ef26c2c6f76f79f134c4d8e657",
+      "bytes": 1282
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WILTON_3.json",
+      "sha1": "655dc011f324fbabc5a916fba24b2244471a97c3",
+      "bytes": 1282
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WILTON_4.json",
+      "sha1": "687c8663308d1f0abaaf5d359437977b44efd1dc",
+      "bytes": 1282
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WILTON_5.json",
+      "sha1": "aefed88c74423ae4d992161e74286c9231faddfa",
+      "bytes": 1282
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WINONA_1.json",
+      "sha1": "c80463ba587f970cb81523ca09f8066cec881c21",
+      "bytes": 1355
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WINONA_2.json",
+      "sha1": "2b92dabfe12301456ee0bc9533ba29b4843ba319",
+      "bytes": 1361
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WINONA_3.json",
+      "sha1": "6b040e82367bdef10e043dafce908361429fad53",
+      "bytes": 1361
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WINONA_4.json",
+      "sha1": "c0b898dbef151dc64fd2d2b1de46bafe705a6924",
+      "bytes": 1361
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WINONA_5.json",
+      "sha1": "424e5236356f3076efb6eb387af2c8d2493043b2",
+      "bytes": 1361
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WINSTON_1.json",
+      "sha1": "be55b52691c69f5cc4c7c944e93681a13595681d",
+      "bytes": 1165
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WINSTON_2.json",
+      "sha1": "cdd49cde7cfc69257d3d29417998ca07e5bcc838",
+      "bytes": 1165
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WINSTON_3.json",
+      "sha1": "9f15f06903f2cbce5ba6c1dc6fc57e49a0c7856c",
+      "bytes": 1165
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WINSTON_4.json",
+      "sha1": "d0e7dd583f6966ccc7abfd5034383e98c28585c7",
+      "bytes": 1165
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WINSTON_5.json",
+      "sha1": "ea088150cfe9579a2e68939fedc851172714ad15",
+      "bytes": 1164
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_WYATT.json",
+      "sha1": "7879246743ab7ef8ac4b7f84b5345e8f5f4bd841",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_YASU.json",
+      "sha1": "fa3daee784788810993c5bd176234cf30b882882",
+      "bytes": 1155
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_YUJI.json",
+      "sha1": "f347908ab4251e18d0ed056f5eb2d389acff0bba",
+      "bytes": 1103
+    },
+    {
+      "path": "mods/vanilla/trainers/TRAINER_ZANDER.json",
+      "sha1": "fb4850ca83b275e1da6a7863f23fbb2798dacad7",
+      "bytes": 1116
+    },
+    {
+      "path": "mods/vanilla/trainers/_source_manifest.json",
+      "sha1": "33c94db20f3644cc462d415319346e1a366d7c35",
+      "bytes": 452
+    },
+    {
+      "path": "mods/vanilla/trainers/index.json",
+      "sha1": "8b8c76852726f8ea06bf4d416f42f5aff393e7c5",
+      "bytes": 199000
     }
   ],
   "counts": {

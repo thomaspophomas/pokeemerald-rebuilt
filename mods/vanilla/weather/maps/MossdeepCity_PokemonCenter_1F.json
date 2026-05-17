@@ -1,0 +1,16 @@
+{
+  "id": "MossdeepCity_PokemonCenter_1F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_PokemonCenter_1F/map.json",
+    "sha1": "4dc743961c95264a75345fab504c495726454ad6"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/MossdeepCity_PokemonCenter_1F/map.json"
+  },
+  "map": "MossdeepCity_PokemonCenter_1F",
+  "mapId": "MAP_MOSSDEEP_CITY_POKEMON_CENTER_1F",
+  "weather": "WEATHER_NONE"
+}

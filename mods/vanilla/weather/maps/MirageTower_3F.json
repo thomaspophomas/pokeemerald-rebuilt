@@ -1,0 +1,16 @@
+{
+  "id": "MirageTower_3F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MirageTower_3F/map.json",
+    "sha1": "7318b34923238916c8fdd82e9696ffe2e43ba278"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/MirageTower_3F/map.json"
+  },
+  "map": "MirageTower_3F",
+  "mapId": "MAP_MIRAGE_TOWER_3F",
+  "weather": "WEATHER_NONE"
+}

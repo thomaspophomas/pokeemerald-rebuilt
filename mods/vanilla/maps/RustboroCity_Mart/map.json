@@ -85,5 +85,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Mart/map.json",
+    "sha1": "344ee325eaf219ff8634808205c65d56027d0525"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/RustboroCity_Mart/map.json",
+    "mapName": "RustboroCity_Mart",
+    "scriptsSourcePath": "data/maps/RustboroCity_Mart/scripts.inc"
+  },
+  "mapGroup": 11,
+  "mapNum": 7,
+  "mapGroupSymbol": "gMapGroup_IndoorRustboro",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

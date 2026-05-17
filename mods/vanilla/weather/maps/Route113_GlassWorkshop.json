@@ -1,0 +1,16 @@
+{
+  "id": "Route113_GlassWorkshop:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113_GlassWorkshop/map.json",
+    "sha1": "937eaee9bf50190017dd23e37c1dc7ad9e887664"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/Route113_GlassWorkshop/map.json"
+  },
+  "map": "Route113_GlassWorkshop",
+  "mapId": "MAP_ROUTE113_GLASS_WORKSHOP",
+  "weather": "WEATHER_NONE"
+}

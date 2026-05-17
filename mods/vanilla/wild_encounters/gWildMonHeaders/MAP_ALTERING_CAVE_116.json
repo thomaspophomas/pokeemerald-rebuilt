@@ -1,0 +1,157 @@
+{
+  "id": "gWildMonHeaders:MAP_ALTERING_CAVE:116",
+  "domain": "wild_encounters",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/wild_encounters.json",
+    "sha1": "49cfb49e719fde5aa0543f883b6c85accb82ebac"
+  },
+  "legacy": {
+    "kind": "wild_encounter_group",
+    "sourcePath": "src/data/wild_encounters.json",
+    "groupLabel": "gWildMonHeaders"
+  },
+  "groupLabel": "gWildMonHeaders",
+  "forMaps": true,
+  "fields": [
+    {
+      "type": "land_mons",
+      "encounter_rates": [
+        20,
+        20,
+        10,
+        10,
+        10,
+        10,
+        5,
+        5,
+        4,
+        4,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "water_mons",
+      "encounter_rates": [
+        60,
+        30,
+        5,
+        4,
+        1
+      ]
+    },
+    {
+      "type": "rock_smash_mons",
+      "encounter_rates": [
+        60,
+        30,
+        5,
+        4,
+        1
+      ]
+    },
+    {
+      "type": "fishing_mons",
+      "encounter_rates": [
+        70,
+        30,
+        60,
+        20,
+        20,
+        40,
+        40,
+        15,
+        4,
+        1
+      ],
+      "groups": {
+        "old_rod": [
+          0,
+          1
+        ],
+        "good_rod": [
+          2,
+          3,
+          4
+        ],
+        "super_rod": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    }
+  ],
+  "encounter": {
+    "map": "MAP_ALTERING_CAVE",
+    "base_label": "gAlteringCave3",
+    "land_mons": {
+      "encounter_rate": 7,
+      "mons": [
+        {
+          "min_level": 23,
+          "max_level": 23,
+          "species": "SPECIES_PINECO"
+        },
+        {
+          "min_level": 25,
+          "max_level": 25,
+          "species": "SPECIES_PINECO"
+        },
+        {
+          "min_level": 22,
+          "max_level": 22,
+          "species": "SPECIES_PINECO"
+        },
+        {
+          "min_level": 27,
+          "max_level": 27,
+          "species": "SPECIES_PINECO"
+        },
+        {
+          "min_level": 23,
+          "max_level": 23,
+          "species": "SPECIES_PINECO"
+        },
+        {
+          "min_level": 25,
+          "max_level": 25,
+          "species": "SPECIES_PINECO"
+        },
+        {
+          "min_level": 29,
+          "max_level": 29,
+          "species": "SPECIES_PINECO"
+        },
+        {
+          "min_level": 19,
+          "max_level": 19,
+          "species": "SPECIES_PINECO"
+        },
+        {
+          "min_level": 21,
+          "max_level": 21,
+          "species": "SPECIES_PINECO"
+        },
+        {
+          "min_level": 27,
+          "max_level": 27,
+          "species": "SPECIES_PINECO"
+        },
+        {
+          "min_level": 21,
+          "max_level": 21,
+          "species": "SPECIES_PINECO"
+        },
+        {
+          "min_level": 27,
+          "max_level": 27,
+          "species": "SPECIES_PINECO"
+        }
+      ]
+    }
+  }
+}

@@ -49,5 +49,26 @@
       "script": "TerraCave_End_EventScript_Groudon"
     }
   ],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TerraCave_End/map.json",
+    "sha1": "379b259aa32fd18b04dcd1df4e74fbb02353b876"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/TerraCave_End/map.json",
+    "mapName": "TerraCave_End",
+    "scriptsSourcePath": "data/maps/TerraCave_End/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 105,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

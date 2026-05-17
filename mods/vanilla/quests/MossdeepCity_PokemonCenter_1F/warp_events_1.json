@@ -1,0 +1,27 @@
+{
+  "id": "MossdeepCity_PokemonCenter_1F:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_PokemonCenter_1F/map.json",
+    "sha1": "4dc743961c95264a75345fab504c495726454ad6"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MossdeepCity_PokemonCenter_1F/map.json",
+    "raw": {
+      "x": 6,
+      "y": 8,
+      "elevation": 3,
+      "dest_map": "MAP_MOSSDEEP_CITY",
+      "dest_warp_id": "2"
+    }
+  },
+  "map": "MossdeepCity_PokemonCenter_1F",
+  "mapId": "MAP_MOSSDEEP_CITY_POKEMON_CENTER_1F",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -31,5 +31,26 @@
   ],
   "warp_events": [],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaCorridor/map.json",
+    "sha1": "2b97faeb466f8715bb811122ab2c83c355808fec"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaCorridor/map.json",
+    "mapName": "BattleFrontier_BattleArenaCorridor",
+    "scriptsSourcePath": "data/maps/BattleFrontier_BattleArenaCorridor/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 29,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

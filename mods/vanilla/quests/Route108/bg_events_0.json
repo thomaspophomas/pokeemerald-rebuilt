@@ -1,0 +1,28 @@
+{
+  "id": "Route108:bg_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route108/map.json",
+    "sha1": "16be6eb309773730b50b68cb7db084bbfb16d8bf"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route108/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 38,
+      "y": 14,
+      "elevation": 3,
+      "item": "ITEM_RARE_CANDY",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_108_RARE_CANDY"
+    }
+  },
+  "map": "Route108",
+  "mapId": "MAP_ROUTE108",
+  "eventType": "bg_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

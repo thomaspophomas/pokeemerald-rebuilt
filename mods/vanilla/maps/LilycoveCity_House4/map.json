@@ -58,5 +58,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_House4/map.json",
+    "sha1": "8881810212ee8d9fdf8eb3cdcdd643e4222dab3b"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/LilycoveCity_House4/map.json",
+    "mapName": "LilycoveCity_House4",
+    "scriptsSourcePath": "data/maps/LilycoveCity_House4/scripts.inc"
+  },
+  "mapGroup": 13,
+  "mapNum": 15,
+  "mapGroupSymbol": "gMapGroup_IndoorLilycove",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

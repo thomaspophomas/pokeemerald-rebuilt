@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Olivia",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_Olivia[] = {\n    {\n    .iv = 100,\n    .lvl = 35,\n    .species = SPECIES_CLAMPERL,\n    .moves = {MOVE_IRON_DEFENSE, MOVE_WHIRLPOOL, MOVE_RAIN_DANCE, MOVE_WATER_PULSE}\n    },\n    {\n    .iv = 100,\n    .lvl = 37,\n    .species = SPECIES_CORPHISH,\n    .moves = {MOVE_TAUNT, MOVE_CRABHAMMER, MOVE_WATER_PULSE, MOVE_NONE}\n    },\n    {\n    .iv = 100,\n    .lvl = 39,\n    .species = SPECIES_LOMBRE,\n    .moves = {MOVE_UPROAR, MOVE_FURY_SWIPES, MOVE_FAKE_OUT, MOVE_WATER_PULSE}\n    }\n};"
+  },
+  "symbol": "sParty_Olivia",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 3
+}

@@ -86,5 +86,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Mart/map.json",
+    "sha1": "d9488e1966acba5fdd1973bfd8f26c3144190ef6"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/BattleFrontier_Mart/map.json",
+    "mapName": "BattleFrontier_Mart",
+    "scriptsSourcePath": "data/maps/BattleFrontier_Mart/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 55,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,45 @@
+{
+  "id": "RusturfTunnel:9",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/map.json",
+    "sha1": "5da4b6f65aac47a3b5c84f9bc6aa687cf273cc0e"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/RusturfTunnel/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 32,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "RusturfTunnel_EventScript_Mike",
+      "flag": "0"
+    }
+  },
+  "map": "RusturfTunnel",
+  "mapId": "MAP_RUSTURF_TUNNEL",
+  "localId": 9,
+  "graphicsId": "OBJ_EVENT_GFX_HIKER",
+  "x": 32,
+  "y": 13,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "3",
+  "script": "RusturfTunnel_EventScript_Mike",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -59,5 +59,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_WallysHouse/map.json",
+    "sha1": "679ee949b04412149e8a9236f769bb492695d99b"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/PetalburgCity_WallysHouse/map.json",
+    "mapName": "PetalburgCity_WallysHouse",
+    "scriptsSourcePath": "data/maps/PetalburgCity_WallysHouse/scripts.inc"
+  },
+  "mapGroup": 8,
+  "mapNum": 0,
+  "mapGroupSymbol": "gMapGroup_IndoorPetalburg",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

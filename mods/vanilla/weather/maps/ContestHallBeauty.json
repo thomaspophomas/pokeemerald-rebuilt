@@ -1,0 +1,16 @@
+{
+  "id": "ContestHallBeauty:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ContestHallBeauty/map.json",
+    "sha1": "136947135b8c1f0fe52598290c610794efe60f80"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/ContestHallBeauty/map.json"
+  },
+  "map": "ContestHallBeauty",
+  "mapId": "MAP_CONTEST_HALL_BEAUTY",
+  "weather": "WEATHER_NONE"
+}

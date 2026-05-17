@@ -200,5 +200,26 @@
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_YELLOW_CAVE4_2"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route125/map.json",
+    "sha1": "83e56273adf242e5b4620eb7a7b0dcd8a9f2ec35"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route125/map.json",
+    "mapName": "Route125",
+    "scriptsSourcePath": "data/maps/Route125/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 40,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

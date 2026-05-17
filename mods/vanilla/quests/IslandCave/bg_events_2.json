@@ -1,0 +1,30 @@
+{
+  "id": "IslandCave:bg_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/IslandCave/map.json",
+    "sha1": "62e7e622ef16e8b6c408d269b721c6aa0f710cd0"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/IslandCave/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 9,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "IslandCave_EventScript_CaveEntranceSide"
+    }
+  },
+  "map": "IslandCave",
+  "mapId": "MAP_ISLAND_CAVE",
+  "eventType": "bg_events",
+  "index": 2,
+  "script": "IslandCave_EventScript_CaveEntranceSide",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

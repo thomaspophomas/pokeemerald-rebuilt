@@ -1,0 +1,31 @@
+{
+  "id": "Route110_TrickHousePuzzle3:coord_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle3/map.json",
+    "sha1": "abbedc7cb32adc7c0cc02a952eeec9d58ade0fa3"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle3/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 12,
+      "y": 5,
+      "elevation": 3,
+      "var": "VAR_TEMP_3",
+      "var_value": "0",
+      "script": "Route110_TrickHousePuzzle3_EventScript_Button3"
+    }
+  },
+  "map": "Route110_TrickHousePuzzle3",
+  "mapId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE3",
+  "eventType": "coord_events",
+  "index": 2,
+  "script": "Route110_TrickHousePuzzle3_EventScript_Button3",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

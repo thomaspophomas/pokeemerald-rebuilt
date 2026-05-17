@@ -1,0 +1,43 @@
+{
+  "id": "SkyPillar_Top:LOCALID_RAYQUAZA_SLEEPING",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Top/map.json",
+    "sha1": "bcddfa093065951c6399bda62f0df4668db59e12"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SkyPillar_Top/map.json",
+    "raw": {
+      "local_id": "LOCALID_RAYQUAZA_SLEEPING",
+      "graphics_id": "OBJ_EVENT_GFX_RAYQUAZA",
+      "x": 14,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA"
+    }
+  },
+  "map": "SkyPillar_Top",
+  "mapId": "MAP_SKY_PILLAR_TOP",
+  "localId": "LOCALID_RAYQUAZA_SLEEPING",
+  "graphicsId": "OBJ_EVENT_GFX_RAYQUAZA",
+  "x": 14,
+  "y": 7,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

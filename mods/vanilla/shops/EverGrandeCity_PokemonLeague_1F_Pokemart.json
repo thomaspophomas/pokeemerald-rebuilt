@@ -1,0 +1,24 @@
+{
+  "id": "EverGrandeCity_PokemonLeague_1F_Pokemart",
+  "domain": "shops",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+    "sha1": "a55305762ef4a1d7b0cbf882528ff161154a969b"
+  },
+  "legacy": {
+    "kind": "pokemart_script_list",
+    "sourcePath": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc"
+  },
+  "symbol": "EverGrandeCity_PokemonLeague_1F_Pokemart",
+  "map": "EverGrandeCity_PokemonLeague_1F",
+  "items": [
+    "ITEM_ULTRA_BALL",
+    "ITEM_HYPER_POTION",
+    "ITEM_MAX_POTION",
+    "ITEM_FULL_RESTORE",
+    "ITEM_FULL_HEAL",
+    "ITEM_REVIVE",
+    "ITEM_MAX_REPEL"
+  ]
+}

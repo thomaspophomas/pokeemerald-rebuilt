@@ -1,0 +1,27 @@
+{
+  "id": "NavelRock_Harbor:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NavelRock_Harbor/map.json",
+    "sha1": "27e42c3f2c105e8de8f5fddabee67a6c25999b18"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/NavelRock_Harbor/map.json",
+    "raw": {
+      "x": 8,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_NAVEL_ROCK_EXTERIOR",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "NavelRock_Harbor",
+  "mapId": "MAP_NAVEL_ROCK_HARBOR",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "MossdeepCity_StevensHouse:bg_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_StevensHouse/map.json",
+    "sha1": "3fbecad23caf30b93fa6cd3c1e4bcf783a85d51a"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MossdeepCity_StevensHouse/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 0,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MossdeepCity_StevensHouse_EventScript_RockDisplay"
+    }
+  },
+  "map": "MossdeepCity_StevensHouse",
+  "mapId": "MAP_MOSSDEEP_CITY_STEVENS_HOUSE",
+  "eventType": "bg_events",
+  "index": 0,
+  "script": "MossdeepCity_StevensHouse_EventScript_RockDisplay",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

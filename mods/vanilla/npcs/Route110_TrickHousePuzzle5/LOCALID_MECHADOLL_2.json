@@ -1,0 +1,46 @@
+{
+  "id": "Route110_TrickHousePuzzle5:LOCALID_MECHADOLL_2",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle5/map.json",
+    "sha1": "997a1a0aeaa25dcdb447704587c9137fe7aa475f"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle5/map.json",
+    "raw": {
+      "local_id": "LOCALID_MECHADOLL_2",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
+      "x": 0,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route110_TrickHousePuzzle5_EventScript_Mechadoll2",
+      "flag": "0"
+    }
+  },
+  "map": "Route110_TrickHousePuzzle5",
+  "mapId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE5",
+  "localId": "LOCALID_MECHADOLL_2",
+  "graphicsId": "OBJ_EVENT_GFX_MAN_1",
+  "x": 0,
+  "y": 7,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Route110_TrickHousePuzzle5_EventScript_Mechadoll2",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

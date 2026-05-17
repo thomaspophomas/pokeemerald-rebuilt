@@ -1,0 +1,27 @@
+{
+  "id": "PetalburgCity_House2:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_House2/map.json",
+    "sha1": "1b101f09bfa8fac9dc7838becd6b743a17d4c94c"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/PetalburgCity_House2/map.json",
+    "raw": {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_PETALBURG_CITY",
+      "dest_warp_id": "4"
+    }
+  },
+  "map": "PetalburgCity_House2",
+  "mapId": "MAP_PETALBURG_CITY_HOUSE2",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

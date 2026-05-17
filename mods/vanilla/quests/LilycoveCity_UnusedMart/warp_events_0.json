@@ -1,0 +1,27 @@
+{
+  "id": "LilycoveCity_UnusedMart:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_UnusedMart/map.json",
+    "sha1": "93e9e9475aa62ffb7252d194a3cfba06f7c581ea"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LilycoveCity_UnusedMart/map.json",
+    "raw": {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_LILYCOVE_CITY",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "LilycoveCity_UnusedMart",
+  "mapId": "MAP_LILYCOVE_CITY_UNUSED_MART",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

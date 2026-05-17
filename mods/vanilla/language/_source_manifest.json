@@ -1,0 +1,249 @@
+{
+  "id": "language:source_manifest",
+  "domain": "language",
+  "schemaVersion": 1,
+  "migrationMode": "source_file_manifest",
+  "sourceAuthority": "vanilla",
+  "sourceFiles": [
+    {
+      "path": "data/text/abnormal_weather.inc",
+      "sha1": "a92d7d72b7d246fffd7bf9d8561307e2b840419b",
+      "bytes": 215
+    },
+    {
+      "path": "data/text/apprentice.inc",
+      "sha1": "ef2e379f11e580de9cbcc017003f92ac0e9db3ca",
+      "bytes": 89354
+    },
+    {
+      "path": "data/text/battle_dome.inc",
+      "sha1": "841c1756bca0b5179a8b904137f42ab56384fe5f",
+      "bytes": 8982
+    },
+    {
+      "path": "data/text/battle_tent.inc",
+      "sha1": "e737b108d19adeabf51ad15f409a7853a6e15e02",
+      "bytes": 16044
+    },
+    {
+      "path": "data/text/berries.inc",
+      "sha1": "a02bdafc97a8fd2912a67f37dd3132fe0204be9b",
+      "bytes": 8337
+    },
+    {
+      "path": "data/text/birch_speech.inc",
+      "sha1": "1cc5cae627a1780f69ff83751837d9369d35e9f7",
+      "bytes": 1827
+    },
+    {
+      "path": "data/text/blend_master.inc",
+      "sha1": "aad473a289927da6ceda7e42e91d994729a1bfd7",
+      "bytes": 2801
+    },
+    {
+      "path": "data/text/braille.inc",
+      "sha1": "5f4e5332cfb89c581228b8a4e18830ea04800edc",
+      "bytes": 3055
+    },
+    {
+      "path": "data/text/cable_club.inc",
+      "sha1": "16bd35c6b1d5b380b23dc9652c53a26aed50e0eb",
+      "bytes": 15360
+    },
+    {
+      "path": "data/text/check_furniture.inc",
+      "sha1": "2df5b7fd808f519717f376d1d047acc9c8a93d3b",
+      "bytes": 650
+    },
+    {
+      "path": "data/text/contest_link.inc",
+      "sha1": "d7f1a115cb8f2da148ec79eb13dc8ff0e9dbed16",
+      "bytes": 1119
+    },
+    {
+      "path": "data/text/contest_painting.inc",
+      "sha1": "6c929ed1ba536e2296eed97b2440d8006b6bf5ef",
+      "bytes": 2030
+    },
+    {
+      "path": "data/text/contest_strings.inc",
+      "sha1": "534e08cd9ab5cfa4f7a81201ea21bbd38893bed7",
+      "bytes": 21660
+    },
+    {
+      "path": "data/text/event_ticket_1.inc",
+      "sha1": "9d6b5692a1c464f0e2b85735872e41e357cdbea3",
+      "bytes": 1329
+    },
+    {
+      "path": "data/text/event_ticket_2.inc",
+      "sha1": "59be70f4fda8b0c72f5faa41449ad03cfdeaea99",
+      "bytes": 2470
+    },
+    {
+      "path": "data/text/frontier_brain.inc",
+      "sha1": "7bf5f5bd0d0766d69b9a731af142e6da180fad6c",
+      "bytes": 2290
+    },
+    {
+      "path": "data/text/lottery_corner.inc",
+      "sha1": "700a378fd3490131ca47bc06fefd21f4dcffde7d",
+      "bytes": 2876
+    },
+    {
+      "path": "data/text/mart_clerk.inc",
+      "sha1": "7c13eb8b93b01f59ce595d9ca7d4f2bf62649e3a",
+      "bytes": 244
+    },
+    {
+      "path": "data/text/match_call.inc",
+      "sha1": "4645bbbb7134f03acee45308a338259ab83fb15e",
+      "bytes": 100418
+    },
+    {
+      "path": "data/text/mauville_man.inc",
+      "sha1": "85fca74ac653843a1f28e20fd57a3270aad10414",
+      "bytes": 1616
+    },
+    {
+      "path": "data/text/move_tutors.inc",
+      "sha1": "87ce8f69ac363d5c7bdf27e33fc14c88c620a477",
+      "bytes": 7784
+    },
+    {
+      "path": "data/text/obtain_item.inc",
+      "sha1": "d1b3a03f81d11007a68253780c0961b2de623dfb",
+      "bytes": 758
+    },
+    {
+      "path": "data/text/pc.inc",
+      "sha1": "5b2e3b3afe4bdd8f823184c21b642d236d7768fe",
+      "bytes": 390
+    },
+    {
+      "path": "data/text/pc_transfer.inc",
+      "sha1": "22afdd73af617ce21a31aa2f8444d5e61caf1343",
+      "bytes": 997
+    },
+    {
+      "path": "data/text/pkmn_center_nurse.inc",
+      "sha1": "e710ae4d60bd9a040cb91acdbc4315e34e44a5e0",
+      "bytes": 1543
+    },
+    {
+      "path": "data/text/pokedex_rating.inc",
+      "sha1": "520b77a669e5294253640fabba5037ffc01e74fd",
+      "bytes": 3574
+    },
+    {
+      "path": "data/text/pokemon_news.inc",
+      "sha1": "c5da2121c26d8f931d02e4b76bb90737fdfeb5fb",
+      "bytes": 6283
+    },
+    {
+      "path": "data/text/questionnaire.inc",
+      "sha1": "5e185dcf9d219047c1271806e0c4853287820111",
+      "bytes": 1384
+    },
+    {
+      "path": "data/text/record_mix.inc",
+      "sha1": "8bb638d61ca8ff18b6162f04cb0677a8fd2e9869",
+      "bytes": 172
+    },
+    {
+      "path": "data/text/save.inc",
+      "sha1": "01849403916a350b0c0ca0f517e9a84036cd86a2",
+      "bytes": 892
+    },
+    {
+      "path": "data/text/secret_base_trainers.inc",
+      "sha1": "f6f2707bcc3ac3b908a3ae764e2675fafb8f3c67",
+      "bytes": 8792
+    },
+    {
+      "path": "data/text/shoal_cave.inc",
+      "sha1": "303da0c0c96b79ba7807a2fc93403883e6c81b89",
+      "bytes": 1982
+    },
+    {
+      "path": "data/text/surf.inc",
+      "sha1": "e1154db5e8905c255abfabb590722cf5adf7689c",
+      "bytes": 163
+    },
+    {
+      "path": "data/text/trainers.inc",
+      "sha1": "16781b43bbd1994d8d2b1eddedcf77905c0ceb5f",
+      "bytes": 134565
+    },
+    {
+      "path": "data/text/trick_house_mechadolls.inc",
+      "sha1": "24c1659206be7a1361cf33f2f4167b7c44648f13",
+      "bytes": 2351
+    },
+    {
+      "path": "data/text/tv.inc",
+      "sha1": "66caf89c2576fbe778b075f0ede9ed16ab9e5fc2",
+      "bytes": 105669
+    },
+    {
+      "path": "include/strings.h",
+      "sha1": "2606e3e1eba84747e3be26b34341d1821765acdd",
+      "bytes": 140765
+    },
+    {
+      "path": "src/data/text/abilities.h",
+      "sha1": "186f871ff03e8fbd73fab1247152133de01c8d9e",
+      "bytes": 12826
+    },
+    {
+      "path": "src/data/text/gift_ribbon_descriptions.h",
+      "sha1": "b1c2e93ebb270866092e11605ab889fc50ee8225",
+      "bytes": 10172
+    },
+    {
+      "path": "src/data/text/item_descriptions.h",
+      "sha1": "184c023242c0ef1e864009a727e9de8326d2db9f",
+      "bytes": 34672
+    },
+    {
+      "path": "src/data/text/match_call_messages.h",
+      "sha1": "4dd9610e8ce83717a8741a6f99a12f601737d201",
+      "bytes": 29792
+    },
+    {
+      "path": "src/data/text/move_descriptions.h",
+      "sha1": "3648dc684ef794b51b1819d0f57fd1bfd29a2f4f",
+      "bytes": 56557
+    },
+    {
+      "path": "src/data/text/move_names.h",
+      "sha1": "88b1c4fc12c06d8a9baa4222f75e43744ad83e5f",
+      "bytes": 13767
+    },
+    {
+      "path": "src/data/text/nature_names.h",
+      "sha1": "374d29cee230bfd2654c296cd6e7a7b0c64b503f",
+      "bytes": 2305
+    },
+    {
+      "path": "src/data/text/ribbon_descriptions.h",
+      "sha1": "e927df430bc6b1144298e68608b009fa3e2cdc98",
+      "bytes": 4046
+    },
+    {
+      "path": "src/data/text/species_names.h",
+      "sha1": "56941cc133948052528076b073dfb3a9f67fd49f",
+      "bytes": 15851
+    },
+    {
+      "path": "src/data/text/trainer_class_names.h",
+      "sha1": "d4645c25b0102adb8604f9286c75f5cfc496b04b",
+      "bytes": 3279
+    },
+    {
+      "path": "src/strings.c",
+      "sha1": "8ad5c9e2e180afa297ceb739b9a85b9c3231df43",
+      "bytes": 114747
+    }
+  ]
+}

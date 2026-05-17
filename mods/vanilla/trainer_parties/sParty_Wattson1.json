@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Wattson1",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemCustomMoves sParty_Wattson1[] = {\n    {\n    .iv = 200,\n    .lvl = 20,\n    .species = SPECIES_VOLTORB,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_ROLLOUT, MOVE_SPARK, MOVE_SELF_DESTRUCT, MOVE_SHOCK_WAVE}\n    },\n    {\n    .iv = 200,\n    .lvl = 20,\n    .species = SPECIES_ELECTRIKE,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_SHOCK_WAVE, MOVE_LEER, MOVE_QUICK_ATTACK, MOVE_HOWL}\n    },\n    {\n    .iv = 220,\n    .lvl = 22,\n    .species = SPECIES_MAGNETON,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_SUPERSONIC, MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_SONIC_BOOM}\n    },\n    {\n    .iv = 250,\n    .lvl = 24,\n    .species = SPECIES_MANECTRIC,\n    .heldItem = ITEM_SITRUS_BERRY,\n    .moves = {MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE, MOVE_SHOCK_WAVE, MOVE_HOWL}\n    }\n};"
+  },
+  "symbol": "sParty_Wattson1",
+  "partyType": "TrainerMonItemCustomMoves",
+  "pokemonCount": 4
+}

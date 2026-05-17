@@ -1,0 +1,27 @@
+{
+  "id": "VictoryRoad_B1F:warp_events:6",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_B1F/map.json",
+    "sha1": "56e76dcaf444ec1a5a74f447614ff2202bd09903"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/VictoryRoad_B1F/map.json",
+    "raw": {
+      "x": 5,
+      "y": 26,
+      "elevation": 3,
+      "dest_map": "MAP_VICTORY_ROAD_B2F",
+      "dest_warp_id": "3"
+    }
+  },
+  "map": "VictoryRoad_B1F",
+  "mapId": "MAP_VICTORY_ROAD_B1F",
+  "eventType": "warp_events",
+  "index": 6,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

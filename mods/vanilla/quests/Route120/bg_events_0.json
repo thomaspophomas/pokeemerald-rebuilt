@@ -1,0 +1,30 @@
+{
+  "id": "Route120:bg_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route120/map.json",
+    "sha1": "65935e19bb6f8e23506c7e2e85cef33433f4e2d7"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route120/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 27,
+      "y": 3,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route120_EventScript_RouteSignFortree"
+    }
+  },
+  "map": "Route120",
+  "mapId": "MAP_ROUTE120",
+  "eventType": "bg_events",
+  "index": 0,
+  "script": "Route120_EventScript_RouteSignFortree",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

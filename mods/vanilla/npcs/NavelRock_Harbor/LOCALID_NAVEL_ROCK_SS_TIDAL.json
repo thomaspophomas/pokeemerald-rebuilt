@@ -1,0 +1,43 @@
+{
+  "id": "NavelRock_Harbor:LOCALID_NAVEL_ROCK_SS_TIDAL",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NavelRock_Harbor/map.json",
+    "sha1": "27e42c3f2c105e8de8f5fddabee67a6c25999b18"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/NavelRock_Harbor/map.json",
+    "raw": {
+      "local_id": "LOCALID_NAVEL_ROCK_SS_TIDAL",
+      "graphics_id": "OBJ_EVENT_GFX_SS_TIDAL",
+      "x": 8,
+      "y": 7,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "0"
+    }
+  },
+  "map": "NavelRock_Harbor",
+  "mapId": "MAP_NAVEL_ROCK_HARBOR",
+  "localId": "LOCALID_NAVEL_ROCK_SS_TIDAL",
+  "graphicsId": "OBJ_EVENT_GFX_SS_TIDAL",
+  "x": 8,
+  "y": 7,
+  "elevation": 1,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "0",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

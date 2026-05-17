@@ -1,0 +1,45 @@
+{
+  "id": "SSTidalLowerDeck:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalLowerDeck/map.json",
+    "sha1": "fc8250989dba2c0ab661143cbd01f509c5a7679c"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SSTidalLowerDeck/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_SAILOR",
+      "x": 10,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_RIGHT_UP_LEFT",
+      "movement_range_x": 4,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "SSTidalLowerDeck_EventScript_Phillip",
+      "flag": "0"
+    }
+  },
+  "map": "SSTidalLowerDeck",
+  "mapId": "MAP_SS_TIDAL_LOWER_DECK",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_SAILOR",
+  "x": 10,
+  "y": 4,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_RIGHT_UP_LEFT",
+  "movementRangeX": 4,
+  "movementRangeY": 4,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "3",
+  "script": "SSTidalLowerDeck_EventScript_Phillip",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

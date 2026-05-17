@@ -1,0 +1,43 @@
+{
+  "id": "Route110:LOCALID_ROUTE110_RIVAL",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/map.json",
+    "sha1": "8a0d70f41dabc8b115727a1fccde79f1c803c9e1"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route110/map.json",
+    "raw": {
+      "local_id": "LOCALID_ROUTE110_RIVAL",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_0",
+      "x": 34,
+      "y": 54,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_ROUTE_110_RIVAL"
+    }
+  },
+  "map": "Route110",
+  "mapId": "MAP_ROUTE110",
+  "localId": "LOCALID_ROUTE110_RIVAL",
+  "graphicsId": "OBJ_EVENT_GFX_VAR_0",
+  "x": 34,
+  "y": 54,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_HIDE_ROUTE_110_RIVAL",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

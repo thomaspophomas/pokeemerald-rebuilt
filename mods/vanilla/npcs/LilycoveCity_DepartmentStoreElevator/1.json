@@ -1,0 +1,45 @@
+{
+  "id": "LilycoveCity_DepartmentStoreElevator:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStoreElevator/map.json",
+    "sha1": "5cf6289fbb15e24f83581df329a90b212977a680"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStoreElevator/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_TEALA",
+      "x": 0,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LilycoveCity_DepartmentStoreElevator_EventScript_Attendant",
+      "flag": "0"
+    }
+  },
+  "map": "LilycoveCity_DepartmentStoreElevator",
+  "mapId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ELEVATOR",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_TEALA",
+  "x": 0,
+  "y": 5,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "LilycoveCity_DepartmentStoreElevator_EventScript_Attendant",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

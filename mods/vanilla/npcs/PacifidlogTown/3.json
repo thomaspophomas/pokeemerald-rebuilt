@@ -1,0 +1,45 @@
+{
+  "id": "PacifidlogTown:3",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown/map.json",
+    "sha1": "6f6de0aed6b9c3abba4aca518908507188e2f4d7"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/PacifidlogTown/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
+      "x": 9,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PacifidlogTown_EventScript_NinjaBoy",
+      "flag": "0"
+    }
+  },
+  "map": "PacifidlogTown",
+  "mapId": "MAP_PACIFIDLOG_TOWN",
+  "localId": 3,
+  "graphicsId": "OBJ_EVENT_GFX_NINJA_BOY",
+  "x": 9,
+  "y": 16,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "PacifidlogTown_EventScript_NinjaBoy",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

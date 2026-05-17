@@ -1,0 +1,45 @@
+{
+  "id": "Route119:23",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119/map.json",
+    "sha1": "1c29f1dc3bee58d2813df5307a7b986c95776bd3"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route119/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 13,
+      "y": 33,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route119_EventScript_BridgeAquaGrunt1",
+      "flag": "FLAG_HIDE_ROUTE_119_TEAM_AQUA"
+    }
+  },
+  "map": "Route119",
+  "mapId": "MAP_ROUTE119",
+  "localId": 23,
+  "graphicsId": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+  "x": 13,
+  "y": 33,
+  "elevation": 4,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Route119_EventScript_BridgeAquaGrunt1",
+  "flag": "FLAG_HIDE_ROUTE_119_TEAM_AQUA",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

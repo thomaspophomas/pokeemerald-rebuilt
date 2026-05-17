@@ -85,5 +85,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Mart/map.json",
+    "sha1": "693c25caa5e39ec8756fb433d3aa11a0d2ecacb2"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/FortreeCity_Mart/map.json",
+    "mapName": "FortreeCity_Mart",
+    "scriptsSourcePath": "data/maps/FortreeCity_Mart/scripts.inc"
+  },
+  "mapGroup": 12,
+  "mapNum": 4,
+  "mapGroupSymbol": "gMapGroup_IndoorFortree",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

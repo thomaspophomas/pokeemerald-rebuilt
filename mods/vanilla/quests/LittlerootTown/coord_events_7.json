@@ -1,0 +1,31 @@
+{
+  "id": "LittlerootTown:coord_events:7",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/map.json",
+    "sha1": "1e04563b693f88e4476d9f7b49a2194b5e027957"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LittlerootTown/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 10,
+      "y": 2,
+      "elevation": 3,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "3",
+      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger0"
+    }
+  },
+  "map": "LittlerootTown",
+  "mapId": "MAP_LITTLEROOT_TOWN",
+  "eventType": "coord_events",
+  "index": 7,
+  "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

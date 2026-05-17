@@ -72,5 +72,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Mart/map.json",
+    "sha1": "72672da5cc97f36cb33937dd5b2004f080258233"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/MauvilleCity_Mart/map.json",
+    "mapName": "MauvilleCity_Mart",
+    "scriptsSourcePath": "data/maps/MauvilleCity_Mart/scripts.inc"
+  },
+  "mapGroup": 10,
+  "mapNum": 7,
+  "mapGroupSymbol": "gMapGroup_IndoorMauville",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

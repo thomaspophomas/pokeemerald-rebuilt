@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Madeline5",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_Madeline5[] = {\n    {\n    .iv = 40,\n    .lvl = 37,\n    .species = SPECIES_ROSELIA,\n    .moves = {MOVE_LEECH_SEED, MOVE_GIGA_DRAIN, MOVE_SOLAR_BEAM, MOVE_SUNNY_DAY}\n    },\n    {\n    .iv = 40,\n    .lvl = 37,\n    .species = SPECIES_CAMERUPT,\n    .moves = {MOVE_FLAMETHROWER, MOVE_TAKE_DOWN, MOVE_EARTHQUAKE, MOVE_SUNNY_DAY}\n    }\n};"
+  },
+  "symbol": "sParty_Madeline5",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 2
+}

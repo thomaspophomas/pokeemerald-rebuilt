@@ -1,0 +1,27 @@
+{
+  "id": "ScorchedSlab:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ScorchedSlab/map.json",
+    "sha1": "5baa71b2abf44bd5419adeee7b4cfd1e10d5336c"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/ScorchedSlab/map.json",
+    "raw": {
+      "x": 7,
+      "y": 16,
+      "elevation": 1,
+      "dest_map": "MAP_ROUTE120",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "ScorchedSlab",
+  "mapId": "MAP_SCORCHED_SLAB",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

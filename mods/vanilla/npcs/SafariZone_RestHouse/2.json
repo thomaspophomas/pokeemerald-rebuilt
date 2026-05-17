@@ -1,0 +1,45 @@
+{
+  "id": "SafariZone_RestHouse:2",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_RestHouse/map.json",
+    "sha1": "f9d530c16cf9883314574066aeb1050946f664c1"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SafariZone_RestHouse/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_PSYCHIC_M",
+      "x": 8,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SafariZone_RestHouse_EventScript_PsychicM",
+      "flag": "0"
+    }
+  },
+  "map": "SafariZone_RestHouse",
+  "mapId": "MAP_SAFARI_ZONE_REST_HOUSE",
+  "localId": 2,
+  "graphicsId": "OBJ_EVENT_GFX_PSYCHIC_M",
+  "x": 8,
+  "y": 4,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "SafariZone_RestHouse_EventScript_PsychicM",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "FarawayIsland_Interior:LOCALID_FARAWAY_ISLAND_MEW",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FarawayIsland_Interior/map.json",
+    "sha1": "5c361f65bc6c4a9632200d800af1d0471fb543eb"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/FarawayIsland_Interior/map.json",
+    "raw": {
+      "local_id": "LOCALID_FARAWAY_ISLAND_MEW",
+      "graphics_id": "OBJ_EVENT_GFX_MEW",
+      "x": 13,
+      "y": 17,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_COPY_PLAYER_OPPOSITE_IN_GRASS",
+      "movement_range_x": 15,
+      "movement_range_y": 15,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "FarawayIsland_Interior_EventScript_Mew",
+      "flag": "FLAG_HIDE_MEW"
+    }
+  },
+  "map": "FarawayIsland_Interior",
+  "mapId": "MAP_FARAWAY_ISLAND_INTERIOR",
+  "localId": "LOCALID_FARAWAY_ISLAND_MEW",
+  "graphicsId": "OBJ_EVENT_GFX_MEW",
+  "x": 13,
+  "y": 17,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_COPY_PLAYER_OPPOSITE_IN_GRASS",
+  "movementRangeX": 15,
+  "movementRangeY": 15,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "1",
+  "script": "FarawayIsland_Interior_EventScript_Mew",
+  "flag": "FLAG_HIDE_MEW",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

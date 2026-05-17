@@ -1,0 +1,30 @@
+{
+  "id": "BattleFrontier_OutsideWest:bg_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/map.json",
+    "sha1": "0468bfc9b139119ef609063be6421d7050189630"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 15,
+      "y": 18,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "BattleFrontier_OutsideWest_EventScript_BattleDomeSign"
+    }
+  },
+  "map": "BattleFrontier_OutsideWest",
+  "mapId": "MAP_BATTLE_FRONTIER_OUTSIDE_WEST",
+  "eventType": "bg_events",
+  "index": 0,
+  "script": "BattleFrontier_OutsideWest_EventScript_BattleDomeSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

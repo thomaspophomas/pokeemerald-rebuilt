@@ -268,5 +268,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "PlayersHouse_2F_EventScript_GameCube"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_2F/map.json",
+    "sha1": "0457e9e79146ccd0dbf058d0095aedecb5acc4ff"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_2F/map.json",
+    "mapName": "LittlerootTown_BrendansHouse_2F",
+    "scriptsSourcePath": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc"
+  },
+  "mapGroup": 1,
+  "mapNum": 1,
+  "mapGroupSymbol": "gMapGroup_IndoorLittleroot",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

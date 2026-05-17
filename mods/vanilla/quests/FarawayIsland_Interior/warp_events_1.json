@@ -1,0 +1,27 @@
+{
+  "id": "FarawayIsland_Interior:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FarawayIsland_Interior/map.json",
+    "sha1": "5c361f65bc6c4a9632200d800af1d0471fb543eb"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/FarawayIsland_Interior/map.json",
+    "raw": {
+      "x": 13,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_FARAWAY_ISLAND_ENTRANCE",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "FarawayIsland_Interior",
+  "mapId": "MAP_FARAWAY_ISLAND_INTERIOR",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

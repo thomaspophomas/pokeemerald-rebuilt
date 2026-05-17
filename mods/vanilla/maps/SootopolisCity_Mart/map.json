@@ -72,5 +72,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Mart/map.json",
+    "sha1": "0cc275af915c0835ccb78205c271ed5c4c6450cb"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SootopolisCity_Mart/map.json",
+    "mapName": "SootopolisCity_Mart",
+    "scriptsSourcePath": "data/maps/SootopolisCity_Mart/scripts.inc"
+  },
+  "mapGroup": 15,
+  "mapNum": 4,
+  "mapGroupSymbol": "gMapGroup_IndoorSootopolis",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

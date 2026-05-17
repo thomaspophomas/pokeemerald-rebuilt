@@ -1,0 +1,31 @@
+{
+  "id": "OldaleTown:coord_events:3",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown/map.json",
+    "sha1": "7697ede5777de62072903856e298259fa2bba11d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/OldaleTown/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 10,
+      "y": 19,
+      "elevation": 3,
+      "var": "VAR_OLDALE_RIVAL_STATE",
+      "var_value": "1",
+      "script": "OldaleTown_EventScript_RivalTrigger3"
+    }
+  },
+  "map": "OldaleTown",
+  "mapId": "MAP_OLDALE_TOWN",
+  "eventType": "coord_events",
+  "index": 3,
+  "script": "OldaleTown_EventScript_RivalTrigger3",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "InsideOfTruck:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/InsideOfTruck/map.json",
+    "sha1": "c40354a9dae7ff7c27b55a8889b486648e9561e5"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/InsideOfTruck/map.json"
+  },
+  "map": "InsideOfTruck",
+  "mapId": "MAP_INSIDE_OF_TRUCK",
+  "weather": "WEATHER_NONE"
+}

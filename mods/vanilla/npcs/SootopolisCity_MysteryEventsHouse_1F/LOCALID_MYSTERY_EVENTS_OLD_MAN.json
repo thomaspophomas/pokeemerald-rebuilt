@@ -1,0 +1,46 @@
+{
+  "id": "SootopolisCity_MysteryEventsHouse_1F:LOCALID_MYSTERY_EVENTS_OLD_MAN",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_MysteryEventsHouse_1F/map.json",
+    "sha1": "60d8748e87ac0af010f50cc5a6f19fbcb5b6e1be"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SootopolisCity_MysteryEventsHouse_1F/map.json",
+    "raw": {
+      "local_id": "LOCALID_MYSTERY_EVENTS_OLD_MAN",
+      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
+      "x": 6,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SootopolisCity_MysteryEventsHouse_1F_EventScript_OldMan",
+      "flag": "0"
+    }
+  },
+  "map": "SootopolisCity_MysteryEventsHouse_1F",
+  "mapId": "MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_1F",
+  "localId": "LOCALID_MYSTERY_EVENTS_OLD_MAN",
+  "graphicsId": "OBJ_EVENT_GFX_OLD_MAN",
+  "x": 6,
+  "y": 4,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "SootopolisCity_MysteryEventsHouse_1F_EventScript_OldMan",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

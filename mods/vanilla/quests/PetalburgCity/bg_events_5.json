@@ -1,0 +1,30 @@
+{
+  "id": "PetalburgCity:bg_events:5",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity/map.json",
+    "sha1": "ca6092ddf12a2aeddab506e674dc3d3cd443f16d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/PetalburgCity/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 27,
+      "y": 12,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Common_EventScript_ShowPokemartSign"
+    }
+  },
+  "map": "PetalburgCity",
+  "mapId": "MAP_PETALBURG_CITY",
+  "eventType": "bg_events",
+  "index": 5,
+  "script": "Common_EventScript_ShowPokemartSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

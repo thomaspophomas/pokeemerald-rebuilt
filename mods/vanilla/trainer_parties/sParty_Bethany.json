@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Bethany",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemDefaultMoves sParty_Bethany[] = {\n    {\n    .iv = 100,\n    .lvl = 35,\n    .species = SPECIES_AZURILL,\n    .heldItem = ITEM_ORAN_BERRY\n    },\n    {\n    .iv = 100,\n    .lvl = 37,\n    .species = SPECIES_MARILL,\n    .heldItem = ITEM_ORAN_BERRY\n    },\n    {\n    .iv = 100,\n    .lvl = 39,\n    .species = SPECIES_AZUMARILL,\n    .heldItem = ITEM_ORAN_BERRY\n    }\n};"
+  },
+  "symbol": "sParty_Bethany",
+  "partyType": "TrainerMonItemDefaultMoves",
+  "pokemonCount": 3
+}

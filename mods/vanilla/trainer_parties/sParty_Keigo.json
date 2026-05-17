@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Keigo",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_Keigo[] = {\n    {\n    .iv = 0,\n    .lvl = 28,\n    .species = SPECIES_KOFFING,\n    .moves = {MOVE_POISON_GAS, MOVE_SELF_DESTRUCT, MOVE_SLUDGE, MOVE_SMOKESCREEN}\n    },\n    {\n    .iv = 0,\n    .lvl = 28,\n    .species = SPECIES_NINJASK,\n    .moves = {MOVE_SAND_ATTACK, MOVE_DOUBLE_TEAM, MOVE_FURY_CUTTER, MOVE_SWORDS_DANCE}\n    }\n};"
+  },
+  "symbol": "sParty_Keigo",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 2
+}

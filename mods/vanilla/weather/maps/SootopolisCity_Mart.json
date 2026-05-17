@@ -1,0 +1,16 @@
+{
+  "id": "SootopolisCity_Mart:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Mart/map.json",
+    "sha1": "0cc275af915c0835ccb78205c271ed5c4c6450cb"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/SootopolisCity_Mart/map.json"
+  },
+  "map": "SootopolisCity_Mart",
+  "mapId": "MAP_SOOTOPOLIS_CITY_MART",
+  "weather": "WEATHER_NONE"
+}

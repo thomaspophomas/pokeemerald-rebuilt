@@ -1,0 +1,16 @@
+{
+  "id": "BattleFrontier_BattlePikeCorridor:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeCorridor/map.json",
+    "sha1": "b4f2c35f3b7c1b63e16a4b5cf1ce50ebad78d8be"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeCorridor/map.json"
+  },
+  "map": "BattleFrontier_BattlePikeCorridor",
+  "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PIKE_CORRIDOR",
+  "weather": "WEATHER_NONE"
+}

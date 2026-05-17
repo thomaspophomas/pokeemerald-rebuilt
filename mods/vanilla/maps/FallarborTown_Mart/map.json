@@ -98,5 +98,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_Mart/map.json",
+    "sha1": "258c69c086410cf2b59011d345cd84519f2b0482"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/FallarborTown_Mart/map.json",
+    "mapName": "FallarborTown_Mart",
+    "scriptsSourcePath": "data/maps/FallarborTown_Mart/scripts.inc"
+  },
+  "mapGroup": 5,
+  "mapNum": 0,
+  "mapGroupSymbol": "gMapGroup_IndoorFallarbor",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

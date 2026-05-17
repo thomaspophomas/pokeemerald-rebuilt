@@ -1,0 +1,17 @@
+{
+  "id": "sParty_KimAndIris",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_KimAndIris[] = {\n    {\n    .iv = 0,\n    .lvl = 32,\n    .species = SPECIES_SWABLU,\n    .moves = {MOVE_SING, MOVE_FURY_ATTACK, MOVE_SAFEGUARD, MOVE_AERIAL_ACE}\n    },\n    {\n    .iv = 0,\n    .lvl = 35,\n    .species = SPECIES_NUMEL,\n    .moves = {MOVE_FLAMETHROWER, MOVE_TAKE_DOWN, MOVE_REST, MOVE_EARTHQUAKE}\n    }\n};"
+  },
+  "symbol": "sParty_KimAndIris",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 2
+}

@@ -1,0 +1,16 @@
+{
+  "id": "EverGrandeCity_HallOfFame:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_HallOfFame/map.json",
+    "sha1": "970a960d66526a2af6b005846134b2efa2a41f8d"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/EverGrandeCity_HallOfFame/map.json"
+  },
+  "map": "EverGrandeCity_HallOfFame",
+  "mapId": "MAP_EVER_GRANDE_CITY_HALL_OF_FAME",
+  "weather": "WEATHER_NONE"
+}

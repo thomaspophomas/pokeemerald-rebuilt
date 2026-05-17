@@ -1,0 +1,16 @@
+{
+  "id": "FieryPath:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FieryPath/map.json",
+    "sha1": "1bfd87b322ac6d82537c1476de8e9d1f862fc24c"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/FieryPath/map.json"
+  },
+  "map": "FieryPath",
+  "mapId": "MAP_FIERY_PATH",
+  "weather": "WEATHER_NONE"
+}

@@ -64,5 +64,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge4/map.json",
+    "sha1": "e3ff7572497e1450a8dabb3da2868a6d61e16596"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/BattleFrontier_Lounge4/map.json",
+    "mapName": "BattleFrontier_Lounge4",
+    "scriptsSourcePath": "data/maps/BattleFrontier_Lounge4/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 45,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,45 @@
+{
+  "id": "Route102:2",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route102/map.json",
+    "sha1": "43cd3bb3d666547b399ca70ade5a1deeff4d7e3f"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route102/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "x": 33,
+      "y": 14,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Route102_EventScript_Calvin",
+      "flag": "0"
+    }
+  },
+  "map": "Route102",
+  "mapId": "MAP_ROUTE102",
+  "localId": 2,
+  "graphicsId": "OBJ_EVENT_GFX_YOUNGSTER",
+  "x": 33,
+  "y": 14,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "3",
+  "script": "Route102_EventScript_Calvin",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

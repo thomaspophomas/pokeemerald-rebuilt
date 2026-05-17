@@ -1,0 +1,27 @@
+{
+  "id": "Route110:bg_events:6",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/map.json",
+    "sha1": "8a0d70f41dabc8b115727a1fccde79f1c803c9e1"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route110/map.json",
+    "raw": {
+      "type": "secret_base",
+      "x": 16,
+      "y": 25,
+      "elevation": 0,
+      "secret_base_id": "SECRET_BASE_TREE3_1"
+    }
+  },
+  "map": "Route110",
+  "mapId": "MAP_ROUTE110",
+  "eventType": "bg_events",
+  "index": 6,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

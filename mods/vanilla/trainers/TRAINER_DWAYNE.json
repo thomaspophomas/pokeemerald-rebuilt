@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_DWAYNE",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_DWAYNE] =\n    {\n        .trainerClass = TRAINER_CLASS_SAILOR,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,\n        .trainerPic = TRAINER_PIC_SAILOR,\n        .trainerName = _(\"DWAYNE\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_Dwayne),\n    },"
+  },
+  "symbol": "TRAINER_DWAYNE",
+  "numericId": 493,
+  "trainerName": "DWAYNE",
+  "trainerClass": "TRAINER_CLASS_SAILOR",
+  "trainerPic": "TRAINER_PIC_SAILOR",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_MALE",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_Dwayne",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

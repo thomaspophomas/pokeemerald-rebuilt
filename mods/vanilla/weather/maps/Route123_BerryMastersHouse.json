@@ -1,0 +1,16 @@
+{
+  "id": "Route123_BerryMastersHouse:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route123_BerryMastersHouse/map.json",
+    "sha1": "778a54a89dafe951e7e20b7816de8e63d8034560"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/Route123_BerryMastersHouse/map.json"
+  },
+  "map": "Route123_BerryMastersHouse",
+  "mapId": "MAP_ROUTE123_BERRY_MASTERS_HOUSE",
+  "weather": "WEATHER_NONE"
+}

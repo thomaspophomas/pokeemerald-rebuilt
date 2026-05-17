@@ -58,5 +58,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_CuttersHouse/map.json",
+    "sha1": "0c46f9bb610f768a172e0d9065ef1b6af882e4bd"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/RustboroCity_CuttersHouse/map.json",
+    "mapName": "RustboroCity_CuttersHouse",
+    "scriptsSourcePath": "data/maps/RustboroCity_CuttersHouse/scripts.inc"
+  },
+  "mapGroup": 11,
+  "mapNum": 11,
+  "mapGroupSymbol": "gMapGroup_IndoorRustboro",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

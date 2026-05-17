@@ -1,0 +1,28 @@
+{
+  "id": "PetalburgCity_Mart_Pokemart_Basic",
+  "domain": "shops",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Mart/scripts.inc",
+    "sha1": "24d08ff30f80ab3ca9bbc615acb31bc95359ba3b"
+  },
+  "legacy": {
+    "kind": "pokemart_script_list",
+    "sourcePath": "data/maps/PetalburgCity_Mart/scripts.inc"
+  },
+  "symbol": "PetalburgCity_Mart_Pokemart_Basic",
+  "map": "PetalburgCity_Mart",
+  "items": [
+    "ITEM_POKE_BALL",
+    "ITEM_POTION",
+    "ITEM_ANTIDOTE",
+    "ITEM_PARALYZE_HEAL",
+    "ITEM_AWAKENING",
+    "ITEM_ESCAPE_ROPE",
+    "ITEM_REPEL",
+    "ITEM_X_SPEED",
+    "ITEM_X_ATTACK",
+    "ITEM_X_DEFEND",
+    "ITEM_ORANGE_MAIL"
+  ]
+}

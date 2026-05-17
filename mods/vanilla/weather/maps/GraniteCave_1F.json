@@ -1,0 +1,16 @@
+{
+  "id": "GraniteCave_1F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/GraniteCave_1F/map.json",
+    "sha1": "84ba8d69520a04c9a16927ff88a9a306b2c12881"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/GraniteCave_1F/map.json"
+  },
+  "map": "GraniteCave_1F",
+  "mapId": "MAP_GRANITE_CAVE_1F",
+  "weather": "WEATHER_NONE"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "LilycoveCity_PokemonCenter_2F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonCenter_2F/map.json",
+    "sha1": "d4799a9f8b30961cd80ab4ca2c292a4a5ed9e6b3"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/LilycoveCity_PokemonCenter_2F/map.json"
+  },
+  "map": "LilycoveCity_PokemonCenter_2F",
+  "mapId": "MAP_LILYCOVE_CITY_POKEMON_CENTER_2F",
+  "weather": "WEATHER_NONE"
+}

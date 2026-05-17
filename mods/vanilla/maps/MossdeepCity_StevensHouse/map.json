@@ -106,5 +106,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "MossdeepCity_StevensHouse_EventScript_RockDisplay"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_StevensHouse/map.json",
+    "sha1": "3fbecad23caf30b93fa6cd3c1e4bcf783a85d51a"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/MossdeepCity_StevensHouse/map.json",
+    "mapName": "MossdeepCity_StevensHouse",
+    "scriptsSourcePath": "data/maps/MossdeepCity_StevensHouse/scripts.inc"
+  },
+  "mapGroup": 14,
+  "mapNum": 7,
+  "mapGroupSymbol": "gMapGroup_IndoorMossdeep",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

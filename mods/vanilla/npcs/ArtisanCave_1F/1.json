@@ -1,0 +1,45 @@
+{
+  "id": "ArtisanCave_1F:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ArtisanCave_1F/map.json",
+    "sha1": "1f41e36a11406470abf6f171be939c5df19c52d5"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/ArtisanCave_1F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 14,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ArtisanCave_1F_EventScript_ItemCarbos",
+      "flag": "FLAG_ITEM_ARTISAN_CAVE_1F_CARBOS"
+    }
+  },
+  "map": "ArtisanCave_1F",
+  "mapId": "MAP_ARTISAN_CAVE_1F",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_ITEM_BALL",
+  "x": 14,
+  "y": 5,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "ArtisanCave_1F_EventScript_ItemCarbos",
+  "flag": "FLAG_ITEM_ARTISAN_CAVE_1F_CARBOS",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

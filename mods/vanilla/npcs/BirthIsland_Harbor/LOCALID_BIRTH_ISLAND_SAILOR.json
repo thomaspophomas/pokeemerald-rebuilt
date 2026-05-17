@@ -1,0 +1,46 @@
+{
+  "id": "BirthIsland_Harbor:LOCALID_BIRTH_ISLAND_SAILOR",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BirthIsland_Harbor/map.json",
+    "sha1": "0f2790e8c2b9abe448922a485478822cb8d4b58a"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/BirthIsland_Harbor/map.json",
+    "raw": {
+      "local_id": "LOCALID_BIRTH_ISLAND_SAILOR",
+      "graphics_id": "OBJ_EVENT_GFX_SAILOR",
+      "x": 8,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BirthIsland_Harbor_EventScript_Sailor",
+      "flag": "0"
+    }
+  },
+  "map": "BirthIsland_Harbor",
+  "mapId": "MAP_BIRTH_ISLAND_HARBOR",
+  "localId": "LOCALID_BIRTH_ISLAND_SAILOR",
+  "graphicsId": "OBJ_EVENT_GFX_SAILOR",
+  "x": 8,
+  "y": 5,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "BirthIsland_Harbor_EventScript_Sailor",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

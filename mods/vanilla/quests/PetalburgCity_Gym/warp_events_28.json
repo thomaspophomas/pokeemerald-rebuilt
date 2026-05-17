@@ -1,0 +1,27 @@
+{
+  "id": "PetalburgCity_Gym:warp_events:28",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/map.json",
+    "sha1": "34ba789ea4c8292423a7dd5e264f33dade8777d7"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/PetalburgCity_Gym/map.json",
+    "raw": {
+      "x": 1,
+      "y": 33,
+      "elevation": 3,
+      "dest_map": "MAP_PETALBURG_CITY_GYM",
+      "dest_warp_id": "22"
+    }
+  },
+  "map": "PetalburgCity_Gym",
+  "mapId": "MAP_PETALBURG_CITY_GYM",
+  "eventType": "warp_events",
+  "index": 28,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

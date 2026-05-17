@@ -1,0 +1,27 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/map.json",
+    "sha1": "1b87fdfef508a18fb47e850380133fcbd3be7de7"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/map.json",
+    "raw": {
+      "x": 13,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_MOSSDEEP_CITY_SPACE_CENTER_1F",
+      "dest_warp_id": "2"
+    }
+  },
+  "map": "MossdeepCity_SpaceCenter_2F",
+  "mapId": "MAP_MOSSDEEP_CITY_SPACE_CENTER_2F",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

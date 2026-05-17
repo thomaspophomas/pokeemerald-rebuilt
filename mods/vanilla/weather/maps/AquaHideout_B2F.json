@@ -1,0 +1,16 @@
+{
+  "id": "AquaHideout_B2F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B2F/map.json",
+    "sha1": "2e6b1c403c764635113fa4262af815f4ece868ff"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/AquaHideout_B2F/map.json"
+  },
+  "map": "AquaHideout_B2F",
+  "mapId": "MAP_AQUA_HIDEOUT_B2F",
+  "weather": "WEATHER_NONE"
+}

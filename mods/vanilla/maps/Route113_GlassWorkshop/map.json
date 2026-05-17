@@ -58,5 +58,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113_GlassWorkshop/map.json",
+    "sha1": "937eaee9bf50190017dd23e37c1dc7ad9e887664"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route113_GlassWorkshop/map.json",
+    "mapName": "Route113_GlassWorkshop",
+    "scriptsSourcePath": "data/maps/Route113_GlassWorkshop/scripts.inc"
+  },
+  "mapGroup": 30,
+  "mapNum": 0,
+  "mapGroupSymbol": "gMapGroup_IndoorRoute113",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

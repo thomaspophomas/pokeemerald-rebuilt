@@ -1,0 +1,30 @@
+{
+  "id": "Route104:bg_events:3",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104/map.json",
+    "sha1": "fbd365d3c17490dde96595712917fe8ceb5e1a7d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route104/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 7,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route104_EventScript_FlowerShopSign"
+    }
+  },
+  "map": "Route104",
+  "mapId": "MAP_ROUTE104",
+  "eventType": "bg_events",
+  "index": 3,
+  "script": "Route104_EventScript_FlowerShopSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

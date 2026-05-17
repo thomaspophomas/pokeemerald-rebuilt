@@ -1,0 +1,27 @@
+{
+  "id": "BattleFrontier_PokemonCenter_1F:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_PokemonCenter_1F/map.json",
+    "sha1": "64ddb92f8e1f3faae5339135da4112b7c058338a"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BattleFrontier_PokemonCenter_1F/map.json",
+    "raw": {
+      "x": 6,
+      "y": 8,
+      "elevation": 3,
+      "dest_map": "MAP_BATTLE_FRONTIER_OUTSIDE_EAST",
+      "dest_warp_id": "12"
+    }
+  },
+  "map": "BattleFrontier_PokemonCenter_1F",
+  "mapId": "MAP_BATTLE_FRONTIER_POKEMON_CENTER_1F",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

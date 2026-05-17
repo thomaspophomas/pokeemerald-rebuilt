@@ -1,0 +1,45 @@
+{
+  "id": "Route114:10",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114/map.json",
+    "sha1": "29d60125e847150e48178ca05f36f1470cb0211c"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route114/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 11,
+      "y": 37,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route114_EventScript_ItemProtein",
+      "flag": "FLAG_ITEM_ROUTE_114_PROTEIN"
+    }
+  },
+  "map": "Route114",
+  "mapId": "MAP_ROUTE114",
+  "localId": 10,
+  "graphicsId": "OBJ_EVENT_GFX_ITEM_BALL",
+  "x": 11,
+  "y": 37,
+  "elevation": 4,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Route114_EventScript_ItemProtein",
+  "flag": "FLAG_ITEM_ROUTE_114_PROTEIN",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

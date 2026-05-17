@@ -1,0 +1,31 @@
+{
+  "id": "Route110_TrickHouseEntrance:coord_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEntrance/map.json",
+    "sha1": "ea068d81e97ce19c6ac5826131af9c5e6e55b1d8"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route110_TrickHouseEntrance/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 6,
+      "y": 6,
+      "elevation": 3,
+      "var": "VAR_TRICK_HOUSE_BEING_WATCHED_STATE",
+      "var_value": "0",
+      "script": "Route110_TrickHouseEntrance_EventScript_TrickMasterHiding"
+    }
+  },
+  "map": "Route110_TrickHouseEntrance",
+  "mapId": "MAP_ROUTE110_TRICK_HOUSE_ENTRANCE",
+  "eventType": "coord_events",
+  "index": 2,
+  "script": "Route110_TrickHouseEntrance_EventScript_TrickMasterHiding",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

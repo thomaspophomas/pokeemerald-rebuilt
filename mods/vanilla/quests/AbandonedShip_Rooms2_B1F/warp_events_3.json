@@ -1,0 +1,27 @@
+{
+  "id": "AbandonedShip_Rooms2_B1F:warp_events:3",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Rooms2_B1F/map.json",
+    "sha1": "3d77a03d7a6571ace0e99492382fa9db441acc4b"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/AbandonedShip_Rooms2_B1F/map.json",
+    "raw": {
+      "x": 14,
+      "y": 7,
+      "elevation": 3,
+      "dest_map": "MAP_ABANDONED_SHIP_CORRIDORS_B1F",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "AbandonedShip_Rooms2_B1F",
+  "mapId": "MAP_ABANDONED_SHIP_ROOMS2_B1F",
+  "eventType": "warp_events",
+  "index": 3,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

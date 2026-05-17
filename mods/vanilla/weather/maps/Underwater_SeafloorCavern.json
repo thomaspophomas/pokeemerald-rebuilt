@@ -1,0 +1,16 @@
+{
+  "id": "Underwater_SeafloorCavern:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_SeafloorCavern/map.json",
+    "sha1": "13f1defdb82691bd427253e000013c9ff160fb0e"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/Underwater_SeafloorCavern/map.json"
+  },
+  "map": "Underwater_SeafloorCavern",
+  "mapId": "MAP_UNDERWATER_SEAFLOOR_CAVERN",
+  "weather": "WEATHER_UNDERWATER_BUBBLES"
+}

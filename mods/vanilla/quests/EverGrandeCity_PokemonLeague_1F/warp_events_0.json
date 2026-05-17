@@ -1,0 +1,27 @@
+{
+  "id": "EverGrandeCity_PokemonLeague_1F:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PokemonLeague_1F/map.json",
+    "sha1": "8bbe2572a494e1e5d8e315341e0e035fcd7ae56c"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/EverGrandeCity_PokemonLeague_1F/map.json",
+    "raw": {
+      "x": 9,
+      "y": 11,
+      "elevation": 3,
+      "dest_map": "MAP_EVER_GRANDE_CITY",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "EverGrandeCity_PokemonLeague_1F",
+  "mapId": "MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

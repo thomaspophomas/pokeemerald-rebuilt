@@ -1,0 +1,30 @@
+{
+  "id": "LilycoveCity_DepartmentStoreRooftop:bg_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStoreRooftop/map.json",
+    "sha1": "3e39c9939735f804c565bcad62aeb78591d07d83"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStoreRooftop/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 10,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LilycoveCity_DepartmentStoreRooftop_EventScript_VendingMachine"
+    }
+  },
+  "map": "LilycoveCity_DepartmentStoreRooftop",
+  "mapId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP",
+  "eventType": "bg_events",
+  "index": 1,
+  "script": "LilycoveCity_DepartmentStoreRooftop_EventScript_VendingMachine",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

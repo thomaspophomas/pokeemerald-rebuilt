@@ -1,0 +1,16 @@
+{
+  "id": "MossdeepCity_StevensHouse:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_StevensHouse/map.json",
+    "sha1": "3fbecad23caf30b93fa6cd3c1e4bcf783a85d51a"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/MossdeepCity_StevensHouse/map.json"
+  },
+  "map": "MossdeepCity_StevensHouse",
+  "mapId": "MAP_MOSSDEEP_CITY_STEVENS_HOUSE",
+  "weather": "WEATHER_NONE"
+}

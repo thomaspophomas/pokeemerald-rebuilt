@@ -1,0 +1,27 @@
+{
+  "id": "SlateportCity_NameRatersHouse:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_NameRatersHouse/map.json",
+    "sha1": "aa0c23d0c1c7414fcf53fc51427567742b40d20e"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SlateportCity_NameRatersHouse/map.json",
+    "raw": {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_SLATEPORT_CITY",
+      "dest_warp_id": "6"
+    }
+  },
+  "map": "SlateportCity_NameRatersHouse",
+  "mapId": "MAP_SLATEPORT_CITY_NAME_RATERS_HOUSE",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

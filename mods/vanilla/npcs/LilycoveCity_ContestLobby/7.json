@@ -1,0 +1,45 @@
+{
+  "id": "LilycoveCity_ContestLobby:7",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/map.json",
+    "sha1": "967323657501eb08c1fa55180db9456a6b4962b3"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ARTIST",
+      "x": 3,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LilycoveCity_ContestLobby_EventScript_Artist",
+      "flag": "0"
+    }
+  },
+  "map": "LilycoveCity_ContestLobby",
+  "mapId": "MAP_LILYCOVE_CITY_CONTEST_LOBBY",
+  "localId": 7,
+  "graphicsId": "OBJ_EVENT_GFX_ARTIST",
+  "x": 3,
+  "y": 4,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "LilycoveCity_ContestLobby_EventScript_Artist",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

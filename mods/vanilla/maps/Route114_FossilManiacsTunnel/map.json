@@ -72,5 +72,26 @@
       "script": "Route114_FossilManiacsTunnel_EventScript_ManiacMentionCaveIn"
     }
   ],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_FossilManiacsTunnel/map.json",
+    "sha1": "86268b956d755367739c3557245a0c9596d8a4cf"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route114_FossilManiacsTunnel/map.json",
+    "mapName": "Route114_FossilManiacsTunnel",
+    "scriptsSourcePath": "data/maps/Route114_FossilManiacsTunnel/scripts.inc"
+  },
+  "mapGroup": 20,
+  "mapNum": 1,
+  "mapGroupSymbol": "gMapGroup_IndoorRoute114",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -132,5 +132,26 @@
       "script": "SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre"
     }
   ],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Room9/map.json",
+    "sha1": "1a777bb6757d1d172595eb81b91067512e210409"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SeafloorCavern_Room9/map.json",
+    "mapName": "SeafloorCavern_Room9",
+    "scriptsSourcePath": "data/maps/SeafloorCavern_Room9/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 36,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

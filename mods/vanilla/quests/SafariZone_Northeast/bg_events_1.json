@@ -1,0 +1,28 @@
+{
+  "id": "SafariZone_Northeast:bg_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_Northeast/map.json",
+    "sha1": "94217153e5e24f284b425776e2af3ec3ac478483"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SafariZone_Northeast/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 21,
+      "y": 5,
+      "elevation": 3,
+      "item": "ITEM_ZINC",
+      "flag": "FLAG_HIDDEN_ITEM_SAFARI_ZONE_NORTH_EAST_ZINC"
+    }
+  },
+  "map": "SafariZone_Northeast",
+  "mapId": "MAP_SAFARI_ZONE_NORTHEAST",
+  "eventType": "bg_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "SSTidalCorridor:warp_events:8",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalCorridor/map.json",
+    "sha1": "b330f8ff48c5ac9c3983f0b2fc6d7328918f83eb"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SSTidalCorridor/map.json",
+    "raw": {
+      "x": 16,
+      "y": 2,
+      "elevation": 3,
+      "dest_map": "MAP_SS_TIDAL_LOWER_DECK",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "SSTidalCorridor",
+  "mapId": "MAP_SS_TIDAL_CORRIDOR",
+  "eventType": "warp_events",
+  "index": 8,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

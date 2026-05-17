@@ -1,0 +1,16 @@
+{
+  "id": "AbandonedShip_CaptainsOffice:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_CaptainsOffice/map.json",
+    "sha1": "b9086e13a6659aee4b2da169a1863c7ee818d05b"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/AbandonedShip_CaptainsOffice/map.json"
+  },
+  "map": "AbandonedShip_CaptainsOffice",
+  "mapId": "MAP_ABANDONED_SHIP_CAPTAINS_OFFICE",
+  "weather": "WEATHER_SHADE"
+}

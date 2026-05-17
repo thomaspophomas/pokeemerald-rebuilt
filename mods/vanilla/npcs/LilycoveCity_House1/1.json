@@ -1,0 +1,45 @@
+{
+  "id": "LilycoveCity_House1:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_House1/map.json",
+    "sha1": "0f6b38d2c3ff2fc620578c9cb93bb22fa2d5271d"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LilycoveCity_House1/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+      "x": 4,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LilycoveCity_House1_EventScript_ExpertM",
+      "flag": "0"
+    }
+  },
+  "map": "LilycoveCity_House1",
+  "mapId": "MAP_LILYCOVE_CITY_HOUSE1",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_EXPERT_M",
+  "x": 4,
+  "y": 5,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "LilycoveCity_House1_EventScript_ExpertM",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

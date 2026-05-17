@@ -1,0 +1,27 @@
+{
+  "id": "EverGrandeCity_Hall1:warp_events:3",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_Hall1/map.json",
+    "sha1": "fe8e2f2995125bec7279d5dcfcb635013160a7de"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/EverGrandeCity_Hall1/map.json",
+    "raw": {
+      "x": 6,
+      "y": 12,
+      "elevation": 3,
+      "dest_map": "MAP_EVER_GRANDE_CITY_SIDNEYS_ROOM",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "EverGrandeCity_Hall1",
+  "mapId": "MAP_EVER_GRANDE_CITY_HALL1",
+  "eventType": "warp_events",
+  "index": 3,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": "MagmaHideout_4F:LOCALID_MAGMA_HIDEOUT_4F_GROUDON",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_4F/map.json",
+    "sha1": "b266a0771e7f1e9f2d8cd6a74db767b197adf00c"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MagmaHideout_4F/map.json",
+    "raw": {
+      "local_id": "LOCALID_MAGMA_HIDEOUT_4F_GROUDON",
+      "graphics_id": "OBJ_EVENT_GFX_GROUDON_FRONT",
+      "x": 16,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_MAGMA_HIDEOUT_4F_GROUDON"
+    }
+  },
+  "map": "MagmaHideout_4F",
+  "mapId": "MAP_MAGMA_HIDEOUT_4F",
+  "localId": "LOCALID_MAGMA_HIDEOUT_4F_GROUDON",
+  "graphicsId": "OBJ_EVENT_GFX_GROUDON_FRONT",
+  "x": 16,
+  "y": 17,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_HIDE_MAGMA_HIDEOUT_4F_GROUDON",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

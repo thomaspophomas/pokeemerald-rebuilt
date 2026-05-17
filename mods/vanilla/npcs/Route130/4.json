@@ -1,0 +1,45 @@
+{
+  "id": "Route130:4",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route130/map.json",
+    "sha1": "abc9139221ccdefeecc439e0c49f5ba254873b2b"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route130/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
+      "x": 7,
+      "y": 30,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_WALK_UP_AND_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "Route130_EventScript_Santiago",
+      "flag": "0"
+    }
+  },
+  "map": "Route130",
+  "mapId": "MAP_ROUTE130",
+  "localId": 4,
+  "graphicsId": "OBJ_EVENT_GFX_SWIMMER_M",
+  "x": 7,
+  "y": 30,
+  "elevation": 1,
+  "movementType": "MOVEMENT_TYPE_WALK_UP_AND_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 4,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "5",
+  "script": "Route130_EventScript_Santiago",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

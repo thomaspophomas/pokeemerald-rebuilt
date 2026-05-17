@@ -1,0 +1,17 @@
+{
+  "id": "sParty_WallyVR4",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_WallyVR4[] = {\n    {\n    .iv = 150,\n    .lvl = 53,\n    .species = SPECIES_ALTARIA,\n    .moves = {MOVE_AERIAL_ACE, MOVE_SAFEGUARD, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE}\n    },\n    {\n    .iv = 150,\n    .lvl = 52,\n    .species = SPECIES_DELCATTY,\n    .moves = {MOVE_SING, MOVE_ASSIST, MOVE_CHARM, MOVE_FAINT_ATTACK}\n    },\n    {\n    .iv = 150,\n    .lvl = 53,\n    .species = SPECIES_ROSELIA,\n    .moves = {MOVE_MAGICAL_LEAF, MOVE_LEECH_SEED, MOVE_GIGA_DRAIN, MOVE_TOXIC}\n    },\n    {\n    .iv = 150,\n    .lvl = 50,\n    .species = SPECIES_MAGNETON,\n    .moves = {MOVE_SUPERSONIC, MOVE_THUNDERBOLT, MOVE_TRI_ATTACK, MOVE_SCREECH}\n    },\n    {\n    .iv = 250,\n    .lvl = 54,\n    .species = SPECIES_GARDEVOIR,\n    .moves = {MOVE_DOUBLE_TEAM, MOVE_CALM_MIND, MOVE_PSYCHIC, MOVE_FUTURE_SIGHT}\n    }\n};"
+  },
+  "symbol": "sParty_WallyVR4",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 5
+}

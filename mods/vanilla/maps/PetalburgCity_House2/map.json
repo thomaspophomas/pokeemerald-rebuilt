@@ -58,5 +58,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_House2/map.json",
+    "sha1": "1b101f09bfa8fac9dc7838becd6b743a17d4c94c"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/PetalburgCity_House2/map.json",
+    "mapName": "PetalburgCity_House2",
+    "scriptsSourcePath": "data/maps/PetalburgCity_House2/scripts.inc"
+  },
+  "mapGroup": 8,
+  "mapNum": 3,
+  "mapGroupSymbol": "gMapGroup_IndoorPetalburg",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,27 @@
+{
+  "id": "LittlerootTown:warp_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/map.json",
+    "sha1": "1e04563b693f88e4476d9f7b49a2194b5e027957"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LittlerootTown/map.json",
+    "raw": {
+      "x": 7,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "LittlerootTown",
+  "mapId": "MAP_LITTLEROOT_TOWN",
+  "eventType": "warp_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

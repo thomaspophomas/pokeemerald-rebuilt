@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_EVERETT",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_EVERETT] =\n    {\n        .trainerClass = TRAINER_CLASS_GENTLEMAN,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,\n        .trainerPic = TRAINER_PIC_GENTLEMAN,\n        .trainerName = _(\"EVERETT\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = 0,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_Everett),\n    },"
+  },
+  "symbol": "TRAINER_EVERETT",
+  "numericId": 850,
+  "trainerName": "EVERETT",
+  "trainerClass": "TRAINER_CLASS_GENTLEMAN",
+  "trainerPic": "TRAINER_PIC_GENTLEMAN",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_RICH",
+  "doubleBattle": "FALSE",
+  "aiFlags": "0",
+  "partyRef": "sParty_Everett",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

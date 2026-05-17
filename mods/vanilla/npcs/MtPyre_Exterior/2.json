@@ -1,0 +1,45 @@
+{
+  "id": "MtPyre_Exterior:2",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Exterior/map.json",
+    "sha1": "18f311029f177a135b509d3c01af0762ccc701c2"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MtPyre_Exterior/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 19,
+      "y": 40,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MtPyre_Exterior_EventScript_ItemTMSkillSwap",
+      "flag": "FLAG_ITEM_MT_PYRE_EXTERIOR_TM_SKILL_SWAP"
+    }
+  },
+  "map": "MtPyre_Exterior",
+  "mapId": "MAP_MT_PYRE_EXTERIOR",
+  "localId": 2,
+  "graphicsId": "OBJ_EVENT_GFX_ITEM_BALL",
+  "x": 19,
+  "y": 40,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "MtPyre_Exterior_EventScript_ItemTMSkillSwap",
+  "flag": "FLAG_ITEM_MT_PYRE_EXTERIOR_TM_SKILL_SWAP",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ShoalCave_LowTideIceRoom:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ShoalCave_LowTideIceRoom/map.json",
+    "sha1": "f6f5c401a0ec662bd15ab5a838fbe53b011ea466"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/ShoalCave_LowTideIceRoom/map.json",
+    "raw": {
+      "x": 17,
+      "y": 10,
+      "elevation": 3,
+      "dest_map": "MAP_SHOAL_CAVE_LOW_TIDE_LOWER_ROOM",
+      "dest_warp_id": "3"
+    }
+  },
+  "map": "ShoalCave_LowTideIceRoom",
+  "mapId": "MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

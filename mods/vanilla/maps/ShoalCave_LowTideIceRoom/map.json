@@ -51,5 +51,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ShoalCave_LowTideIceRoom/map.json",
+    "sha1": "f6f5c401a0ec662bd15ab5a838fbe53b011ea466"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/ShoalCave_LowTideIceRoom/map.json",
+    "mapName": "ShoalCave_LowTideIceRoom",
+    "scriptsSourcePath": "data/maps/ShoalCave_LowTideIceRoom/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 83,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

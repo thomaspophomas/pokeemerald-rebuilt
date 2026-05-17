@@ -1,18 +1,203 @@
 {
   "domain": "shops",
   "schemaVersion": 1,
-  "fileCount": 1,
-  "jsonFileCount": 1,
-  "bytes": 149265,
-  "sha1": "00a9c2339ba42a4857c2602d369a64164b9b4a5e",
+  "fileCount": 38,
+  "jsonFileCount": 38,
+  "bytes": 184847,
+  "sha1": "066cd791e02203f76c0f9f1af2a0340f3c1adce0",
   "files": [
     {
-      "path": "mods/vanilla/shops/manifest.json",
-      "sha1": "e36d5e8f291b0c3050b8666161873c554002cc69",
-      "bytes": 149265
+      "path": "mods/vanilla/shops/BattleFrontier_Mart_Pokemart.json",
+      "sha1": "f257d8a0818422381798efad2f913031321d1a50",
+      "bytes": 697
+    },
+    {
+      "path": "mods/vanilla/shops/EverGrandeCity_PokemonLeague_1F_Pokemart.json",
+      "sha1": "fef32e8c01d2b9f97fabd9481446012c910dbecc",
+      "bytes": 646
+    },
+    {
+      "path": "mods/vanilla/shops/FallarborTown_Mart_Pokemart.json",
+      "sha1": "d5cb495d09182c896f53f84f4df2e24b1f2e2557",
+      "bytes": 693
+    },
+    {
+      "path": "mods/vanilla/shops/FortreeCity_DecorationShop_PokemartDecor_Chairs.json",
+      "sha1": "91fbe57f0b6fb433b6b00e82e34293698a5636e7",
+      "bytes": 689
+    },
+    {
+      "path": "mods/vanilla/shops/FortreeCity_DecorationShop_PokemartDecor_Desks.json",
+      "sha1": "6dd2c4e3a3045b7ba12ed73744f63fccf3397143",
+      "bytes": 679
+    },
+    {
+      "path": "mods/vanilla/shops/FortreeCity_Mart_Pokemart.json",
+      "sha1": "952d8e00f0552187a2d4cf41a4778516379325cf",
+      "bytes": 642
+    },
+    {
+      "path": "mods/vanilla/shops/LavaridgeTown_HerbShop_Pokemart.json",
+      "sha1": "8a1c3003823722f72c1a87c0eaff1103ea65b2ac",
+      "bytes": 541
+    },
+    {
+      "path": "mods/vanilla/shops/LavaridgeTown_Mart_Pokemart.json",
+      "sha1": "cca790eac3957529fa17ab839d5a6da80d41e5ee",
+      "bytes": 624
+    },
+    {
+      "path": "mods/vanilla/shops/LilycoveCity_DepartmentStore_2F_Pokemart1.json",
+      "sha1": "f9924cd23b6a68336ccfd6a29ceffcafc2e61831",
+      "bytes": 739
+    },
+    {
+      "path": "mods/vanilla/shops/LilycoveCity_DepartmentStore_2F_Pokemart2.json",
+      "sha1": "45fe011491866c6731d27ea5c0b8bb763b5cdc27",
+      "bytes": 708
+    },
+    {
+      "path": "mods/vanilla/shops/LilycoveCity_DepartmentStore_3F_Pokemart_StatBoosters.json",
+      "sha1": "b0460295516652b3692c92fb19bdba54a073f1d3",
+      "bytes": 664
+    },
+    {
+      "path": "mods/vanilla/shops/LilycoveCity_DepartmentStore_3F_Pokemart_Vitamins.json",
+      "sha1": "078295145deabe4900475c14708d6768096f2ffb",
+      "bytes": 616
+    },
+    {
+      "path": "mods/vanilla/shops/LilycoveCity_DepartmentStore_4F_Pokemart_AttackTMs.json",
+      "sha1": "7222bc53d45080b53408f97b5c8dd4d283d6ec03",
+      "bytes": 606
+    },
+    {
+      "path": "mods/vanilla/shops/LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs.json",
+      "sha1": "d475d815a4f12d01c193dcdedcaa91fee8fa5e69",
+      "bytes": 608
+    },
+    {
+      "path": "mods/vanilla/shops/LilycoveCity_DepartmentStore_5F_Pokemart_Cushions.json",
+      "sha1": "14d5c890c2b41963b556624d688cefa3a36fee3d",
+      "bytes": 747
+    },
+    {
+      "path": "mods/vanilla/shops/LilycoveCity_DepartmentStore_5F_Pokemart_Dolls.json",
+      "sha1": "d77f9c96177d4ad61c68538be1f5755c1be4e4d3",
+      "bytes": 806
+    },
+    {
+      "path": "mods/vanilla/shops/LilycoveCity_DepartmentStore_5F_Pokemart_Mats.json",
+      "sha1": "163e66fc536da4314e3a44df45818df7892bc0e9",
+      "bytes": 744
+    },
+    {
+      "path": "mods/vanilla/shops/LilycoveCity_DepartmentStore_5F_Pokemart_Posters.json",
+      "sha1": "5c0dd8bb55f1ef5a2e25e713f0dc307296e4bf95",
+      "bytes": 726
+    },
+    {
+      "path": "mods/vanilla/shops/MauvilleCity_Mart_Pokemart.json",
+      "sha1": "f02b3c15a33704fd115242193e1716f2a94f83b3",
+      "bytes": 685
+    },
+    {
+      "path": "mods/vanilla/shops/MossdeepCity_Mart_Pokemart.json",
+      "sha1": "f8e09e254f3c48769d6496eed06a7e72610f7bbd",
+      "bytes": 613
+    },
+    {
+      "path": "mods/vanilla/shops/OldaleTown_Mart_Pokemart_Basic.json",
+      "sha1": "d7dba2617e6bab9c09e0ba64dce90687c4e0b516",
+      "bytes": 507
+    },
+    {
+      "path": "mods/vanilla/shops/OldaleTown_Mart_Pokemart_Expanded.json",
+      "sha1": "c16966874d6ae84ff5d6d3ebba1a430ac3eaf39f",
+      "bytes": 535
+    },
+    {
+      "path": "mods/vanilla/shops/PetalburgCity_Mart_Pokemart_Basic.json",
+      "sha1": "b9ecc72778c9c65e361e51114a6b8790e0651f79",
+      "bytes": 672
+    },
+    {
+      "path": "mods/vanilla/shops/PetalburgCity_Mart_Pokemart_Expanded.json",
+      "sha1": "8fc33768445a5728ec2fc0503ef32d87cf2df4a5",
+      "bytes": 726
+    },
+    {
+      "path": "mods/vanilla/shops/Route104_PrettyPetalFlowerShop_Pokemart_Plants.json",
+      "sha1": "fcb476c8fb14796b1a11e10e84843c0338998eed",
+      "bytes": 654
+    },
+    {
+      "path": "mods/vanilla/shops/RustboroCity_Mart_Pokemart_Basic.json",
+      "sha1": "b52afc3072a563027a354f07573456d122126570",
+      "bytes": 646
+    },
+    {
+      "path": "mods/vanilla/shops/RustboroCity_Mart_Pokemart_Expanded.json",
+      "sha1": "b3feac4115ae18b7c27250fb0bad161c524286da",
+      "bytes": 699
+    },
+    {
+      "path": "mods/vanilla/shops/SlateportCity_Mart_Pokemart.json",
+      "sha1": "88d46781991e21c891e907b87a4065a033b9340e",
+      "bytes": 624
+    },
+    {
+      "path": "mods/vanilla/shops/SlateportCity_PokemartDecor.json",
+      "sha1": "b01d51812ce67a7a1fed3e057b4d602fe9a2b2b1",
+      "bytes": 760
+    },
+    {
+      "path": "mods/vanilla/shops/SlateportCity_PokemartDecor_Dolls.json",
+      "sha1": "6d29dd0096bfc46ef8fdbb32345e7ad24ff91748",
+      "bytes": 495
+    },
+    {
+      "path": "mods/vanilla/shops/SlateportCity_Pokemart_EnergyGuru.json",
+      "sha1": "f11f0dd9c034a7a57d8a15d31b3ad7dbcea7b4f5",
+      "bytes": 530
+    },
+    {
+      "path": "mods/vanilla/shops/SlateportCity_Pokemart_PowerTMs.json",
+      "sha1": "d2ade780e3a463a79c5879926e61bd3ca0e339d1",
+      "bytes": 471
+    },
+    {
+      "path": "mods/vanilla/shops/SootopolisCity_Mart_Pokemart.json",
+      "sha1": "c73d81cfe05f3fad097210a5d67bab1c608c59d9",
+      "bytes": 627
+    },
+    {
+      "path": "mods/vanilla/shops/TrainerHill_Entrance_Pokemart_Basic.json",
+      "sha1": "b876cba8fdc217be34b249ea9690d29181ff02ad",
+      "bytes": 689
+    },
+    {
+      "path": "mods/vanilla/shops/TrainerHill_Entrance_Pokemart_Expanded.json",
+      "sha1": "d2b6b8d6e11170a61693912a5d997e5b0c271a63",
+      "bytes": 715
+    },
+    {
+      "path": "mods/vanilla/shops/VerdanturfTown_Mart_Pokemart.json",
+      "sha1": "96984b14672e39ab9d82279c994b432d2704a633",
+      "bytes": 673
+    },
+    {
+      "path": "mods/vanilla/shops/_source_manifest.json",
+      "sha1": "750de84c979e18ff2ffbc7187fed5706b5688228",
+      "bytes": 149298
+    },
+    {
+      "path": "mods/vanilla/shops/index.json",
+      "sha1": "72dd063a85c5f601047ad54b766f8ea32ec013db",
+      "bytes": 12053
     }
   ],
   "counts": {
-    "sourceFiles": 991
+    "shops": 36
   }
 }

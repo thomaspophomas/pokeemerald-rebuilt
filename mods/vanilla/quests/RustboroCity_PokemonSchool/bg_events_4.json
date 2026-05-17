@@ -1,0 +1,30 @@
+{
+  "id": "RustboroCity_PokemonSchool:bg_events:4",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonSchool/map.json",
+    "sha1": "bf4ca29432926880aeba032b3d1065c6dc8aa2a0"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/RustboroCity_PokemonSchool/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 3,
+      "y": 5,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RustboroCity_PokemonSchool_EventScript_StudentNotebook"
+    }
+  },
+  "map": "RustboroCity_PokemonSchool",
+  "mapId": "MAP_RUSTBORO_CITY_POKEMON_SCHOOL",
+  "eventType": "bg_events",
+  "index": 4,
+  "script": "RustboroCity_PokemonSchool_EventScript_StudentNotebook",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "AbandonedShip_Underwater2:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Underwater2/map.json",
+    "sha1": "5f4149be4c544c2df95115c2a013c719eb19eab0"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/AbandonedShip_Underwater2/map.json",
+    "raw": {
+      "x": 3,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_ABANDONED_SHIP_UNDERWATER1",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "AbandonedShip_Underwater2",
+  "mapId": "MAP_ABANDONED_SHIP_UNDERWATER2",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

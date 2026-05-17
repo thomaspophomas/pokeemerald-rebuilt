@@ -1,0 +1,28 @@
+{
+  "id": "Route121:bg_events:9",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route121/map.json",
+    "sha1": "f6697affa29d20f09f078a6a6de0c1d04016f228"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route121/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 68,
+      "y": 8,
+      "elevation": 3,
+      "item": "ITEM_MAX_REVIVE",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_121_MAX_REVIVE"
+    }
+  },
+  "map": "Route121",
+  "mapId": "MAP_ROUTE121",
+  "eventType": "bg_events",
+  "index": 9,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

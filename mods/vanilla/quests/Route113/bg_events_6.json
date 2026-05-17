@@ -1,0 +1,28 @@
+{
+  "id": "Route113:bg_events:6",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113/map.json",
+    "sha1": "4d5b412e7056cb5dda1085ac70fb8a367cb400c1"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route113/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 22,
+      "y": 5,
+      "elevation": 3,
+      "item": "ITEM_TM_DOUBLE_TEAM",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_113_TM_DOUBLE_TEAM"
+    }
+  },
+  "map": "Route113",
+  "mapId": "MAP_ROUTE113",
+  "eventType": "bg_events",
+  "index": 6,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

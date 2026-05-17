@@ -1,0 +1,31 @@
+{
+  "id": "Route104:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104/map.json",
+    "sha1": "fbd365d3c17490dde96595712917fe8ceb5e1a7d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route104/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 17,
+      "y": 51,
+      "elevation": 3,
+      "var": "VAR_ROUTE104_STATE",
+      "var_value": "1",
+      "script": "Route104_EventScript_RivalTrigger"
+    }
+  },
+  "map": "Route104",
+  "mapId": "MAP_ROUTE104",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": "Route104_EventScript_RivalTrigger",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "Route102:bg_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route102/map.json",
+    "sha1": "43cd3bb3d666547b399ca70ade5a1deeff4d7e3f"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route102/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 40,
+      "y": 9,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route102_EventScript_RouteSignOldale"
+    }
+  },
+  "map": "Route102",
+  "mapId": "MAP_ROUTE102",
+  "eventType": "bg_events",
+  "index": 1,
+  "script": "Route102_EventScript_RouteSignOldale",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

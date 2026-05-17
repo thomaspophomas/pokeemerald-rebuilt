@@ -505,5 +505,26 @@
       "item": "ITEM_REVIVE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_114_REVIVE"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114/map.json",
+    "sha1": "29d60125e847150e48178ca05f36f1470cb0211c"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route114/map.json",
+    "mapName": "Route114",
+    "scriptsSourcePath": "data/maps/Route114/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 29,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

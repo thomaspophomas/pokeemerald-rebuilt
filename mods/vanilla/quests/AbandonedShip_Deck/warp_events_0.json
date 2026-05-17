@@ -1,0 +1,27 @@
+{
+  "id": "AbandonedShip_Deck:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Deck/map.json",
+    "sha1": "90e360b907c665ef5a0c90d7e0be797fe5947f5d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/AbandonedShip_Deck/map.json",
+    "raw": {
+      "x": 13,
+      "y": 15,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE108",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "AbandonedShip_Deck",
+  "mapId": "MAP_ABANDONED_SHIP_DECK",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

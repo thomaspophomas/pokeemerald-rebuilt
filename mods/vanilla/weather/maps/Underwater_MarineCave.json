@@ -1,0 +1,16 @@
+{
+  "id": "Underwater_MarineCave:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_MarineCave/map.json",
+    "sha1": "0846791b4e9ac3f3a7a829d045b1f0470d8b6639"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/Underwater_MarineCave/map.json"
+  },
+  "map": "Underwater_MarineCave",
+  "mapId": "MAP_UNDERWATER_MARINE_CAVE",
+  "weather": "WEATHER_UNDERWATER_BUBBLES"
+}

@@ -199,5 +199,26 @@
       "item": "ITEM_ULTRA_BALL",
       "flag": "FLAG_HIDDEN_ITEM_VICTORY_ROAD_1F_ULTRA_BALL"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_1F/map.json",
+    "sha1": "d2466927c82f22b7d85aef4a98fe5a48b65b1e8a"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/VictoryRoad_1F/map.json",
+    "mapName": "VictoryRoad_1F",
+    "scriptsSourcePath": "data/maps/VictoryRoad_1F/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 43,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

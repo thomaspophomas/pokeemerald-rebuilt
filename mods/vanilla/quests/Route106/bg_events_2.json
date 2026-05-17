@@ -1,0 +1,28 @@
+{
+  "id": "Route106:bg_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route106/map.json",
+    "sha1": "abf7343ff3b946d694c71cf3c2f2409b1e153c5f"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route106/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 68,
+      "y": 15,
+      "elevation": 3,
+      "item": "ITEM_HEART_SCALE",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_106_HEART_SCALE"
+    }
+  },
+  "map": "Route106",
+  "mapId": "MAP_ROUTE106",
+  "eventType": "bg_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

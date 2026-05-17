@@ -1,0 +1,27 @@
+{
+  "id": "Underwater_Route126:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_Route126/map.json",
+    "sha1": "b686f89f97dae1ea04460a81a70e5129e026637f"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Underwater_Route126/map.json",
+    "raw": {
+      "x": 45,
+      "y": 65,
+      "elevation": 0,
+      "dest_map": "MAP_UNDERWATER_SOOTOPOLIS_CITY",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Underwater_Route126",
+  "mapId": "MAP_UNDERWATER_ROUTE126",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

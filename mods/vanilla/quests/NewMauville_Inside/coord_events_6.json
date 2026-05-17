@@ -1,0 +1,31 @@
+{
+  "id": "NewMauville_Inside:coord_events:6",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NewMauville_Inside/map.json",
+    "sha1": "32f18a7e6d35bfd09d72368f33c954b09c84cb81"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/NewMauville_Inside/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 6,
+      "y": 11,
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "NewMauville_Inside_EventScript_BlueButton"
+    }
+  },
+  "map": "NewMauville_Inside",
+  "mapId": "MAP_NEW_MAUVILLE_INSIDE",
+  "eventType": "coord_events",
+  "index": 6,
+  "script": "NewMauville_Inside_EventScript_BlueButton",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

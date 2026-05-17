@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_ANGELICA",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_ANGELICA] =\n    {\n        .trainerClass = TRAINER_CLASS_PARASOL_LADY,\n        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,\n        .trainerPic = TRAINER_PIC_PARASOL_LADY,\n        .trainerName = _(\"ANGELICA\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = NO_ITEM_CUSTOM_MOVES(sParty_Angelica),\n    },"
+  },
+  "symbol": "TRAINER_ANGELICA",
+  "numericId": 436,
+  "trainerName": "ANGELICA",
+  "trainerClass": "TRAINER_CLASS_PARASOL_LADY",
+  "trainerPic": "TRAINER_PIC_PARASOL_LADY",
+  "encounterMusicGender": "F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_Angelica",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

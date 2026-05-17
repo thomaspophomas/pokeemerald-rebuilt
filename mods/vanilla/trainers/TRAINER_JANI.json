@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_JANI",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_JANI] =\n    {\n        .trainerClass = TRAINER_CLASS_TUBER_F,\n        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,\n        .trainerPic = TRAINER_PIC_TUBER_F,\n        .trainerName = _(\"JANI\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = 0,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_Jani),\n    },"
+  },
+  "symbol": "TRAINER_JANI",
+  "numericId": 418,
+  "trainerName": "JANI",
+  "trainerClass": "TRAINER_CLASS_TUBER_F",
+  "trainerPic": "TRAINER_PIC_TUBER_F",
+  "encounterMusicGender": "F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL",
+  "doubleBattle": "FALSE",
+  "aiFlags": "0",
+  "partyRef": "sParty_Jani",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

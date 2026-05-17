@@ -1,0 +1,46 @@
+{
+  "id": "Route118:LOCALID_ROUTE118_GABBY_3",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route118/map.json",
+    "sha1": "e722f5845bad96db2f079abf577a8918ccdf2db5"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route118/map.json",
+    "raw": {
+      "local_id": "LOCALID_ROUTE118_GABBY_3",
+      "graphics_id": "OBJ_EVENT_GFX_REPORTER_F",
+      "x": 33,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GabbyAndTy_EventScript_GabbyBattle6",
+      "flag": "FLAG_HIDE_ROUTE_118_GABBY_AND_TY_3"
+    }
+  },
+  "map": "Route118",
+  "mapId": "MAP_ROUTE118",
+  "localId": "LOCALID_ROUTE118_GABBY_3",
+  "graphicsId": "OBJ_EVENT_GFX_REPORTER_F",
+  "x": 33,
+  "y": 8,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "GabbyAndTy_EventScript_GabbyBattle6",
+  "flag": "FLAG_HIDE_ROUTE_118_GABBY_AND_TY_3",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

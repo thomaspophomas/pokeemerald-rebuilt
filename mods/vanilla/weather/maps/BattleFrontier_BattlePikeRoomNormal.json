@@ -1,0 +1,16 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomNormal:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomNormal/map.json",
+    "sha1": "559eca66e363c564d7740aac5b3dd22120d90435"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomNormal/map.json"
+  },
+  "map": "BattleFrontier_BattlePikeRoomNormal",
+  "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_NORMAL",
+  "weather": "WEATHER_NONE"
+}

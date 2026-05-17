@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_SARAH",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_SARAH] =\n    {\n        .trainerClass = TRAINER_CLASS_LADY,\n        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,\n        .trainerPic = TRAINER_PIC_LADY,\n        .trainerName = _(\"SARAH\"),\n        .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = ITEM_DEFAULT_MOVES(sParty_Sarah),\n    },"
+  },
+  "symbol": "TRAINER_SARAH",
+  "numericId": 695,
+  "trainerName": "SARAH",
+  "trainerClass": "TRAINER_CLASS_LADY",
+  "trainerPic": "TRAINER_PIC_LADY",
+  "encounterMusicGender": "F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_Sarah",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

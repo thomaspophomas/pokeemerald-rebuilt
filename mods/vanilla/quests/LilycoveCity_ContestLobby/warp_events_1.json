@@ -1,0 +1,27 @@
+{
+  "id": "LilycoveCity_ContestLobby:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/map.json",
+    "sha1": "967323657501eb08c1fa55180db9456a6b4962b3"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/map.json",
+    "raw": {
+      "x": 15,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_LILYCOVE_CITY",
+      "dest_warp_id": "4"
+    }
+  },
+  "map": "LilycoveCity_ContestLobby",
+  "mapId": "MAP_LILYCOVE_CITY_CONTEST_LOBBY",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -71,5 +71,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_House1/map.json",
+    "sha1": "0053187d878220f0c8fdf48c3b444c9333aab0ee"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/FortreeCity_House1/map.json",
+    "mapName": "FortreeCity_House1",
+    "scriptsSourcePath": "data/maps/FortreeCity_House1/scripts.inc"
+  },
+  "mapGroup": 12,
+  "mapNum": 0,
+  "mapGroupSymbol": "gMapGroup_IndoorFortree",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,27 @@
+{
+  "id": "BattleFrontier_BattleDomeCorridor:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeCorridor/map.json",
+    "sha1": "084ebf0401e715e097a3a7222f288c5d463b6fab"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeCorridor/map.json",
+    "raw": {
+      "x": 7,
+      "y": 8,
+      "elevation": 3,
+      "dest_map": "MAP_BATTLE_FRONTIER_OUTSIDE_WEST",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "BattleFrontier_BattleDomeCorridor",
+  "mapId": "MAP_BATTLE_FRONTIER_BATTLE_DOME_CORRIDOR",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

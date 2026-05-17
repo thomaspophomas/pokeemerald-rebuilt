@@ -1,0 +1,16 @@
+{
+  "id": "FortreeCity_Gym:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/map.json",
+    "sha1": "fb0df5305ca2d550023d359939be89844639d9b5"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/FortreeCity_Gym/map.json"
+  },
+  "map": "FortreeCity_Gym",
+  "mapId": "MAP_FORTREE_CITY_GYM",
+  "weather": "WEATHER_NONE"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "FallarborTown:4",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown/map.json",
+    "sha1": "8fe7f19a90a652a8002a0bc5ee11e2cb69ffa7cb"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/FallarborTown/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_AZURILL",
+      "x": 8,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FallarborTown_EventScript_Azurill",
+      "flag": "FLAG_HIDE_FALLARBOR_AZURILL"
+    }
+  },
+  "map": "FallarborTown",
+  "mapId": "MAP_FALLARBOR_TOWN",
+  "localId": 4,
+  "graphicsId": "OBJ_EVENT_GFX_AZURILL",
+  "x": 8,
+  "y": 12,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "FallarborTown_EventScript_Azurill",
+  "flag": "FLAG_HIDE_FALLARBOR_AZURILL",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

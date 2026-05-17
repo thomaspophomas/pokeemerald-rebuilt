@@ -1,0 +1,16 @@
+{
+  "id": "LavaridgeTown:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/map.json",
+    "sha1": "528036d4fe9b25a1f56aa0f6350f2014968009da"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/LavaridgeTown/map.json"
+  },
+  "map": "LavaridgeTown",
+  "mapId": "MAP_LAVARIDGE_TOWN",
+  "weather": "WEATHER_SUNNY"
+}

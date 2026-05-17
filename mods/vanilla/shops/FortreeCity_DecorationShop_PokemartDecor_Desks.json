@@ -1,0 +1,25 @@
+{
+  "id": "FortreeCity_DecorationShop_PokemartDecor_Desks",
+  "domain": "shops",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_DecorationShop/scripts.inc",
+    "sha1": "9052b61ce40e18da90e9f9a9ca5351634902ee39"
+  },
+  "legacy": {
+    "kind": "pokemart_script_list",
+    "sourcePath": "data/maps/FortreeCity_DecorationShop/scripts.inc"
+  },
+  "symbol": "FortreeCity_DecorationShop_PokemartDecor_Desks",
+  "map": "FortreeCity_DecorationShop",
+  "items": [
+    "DECOR_SMALL_DESK",
+    "DECOR_POKEMON_DESK",
+    "DECOR_HEAVY_DESK",
+    "DECOR_RAGGED_DESK",
+    "DECOR_COMFORT_DESK",
+    "DECOR_BRICK_DESK",
+    "DECOR_CAMP_DESK",
+    "DECOR_HARD_DESK"
+  ]
+}

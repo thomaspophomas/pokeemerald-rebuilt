@@ -1,0 +1,16 @@
+{
+  "id": "RustboroCity_Flat1_2F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Flat1_2F/map.json",
+    "sha1": "65d9930b788c4b89b851b60d494cf1e252fe7e94"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/RustboroCity_Flat1_2F/map.json"
+  },
+  "map": "RustboroCity_Flat1_2F",
+  "mapId": "MAP_RUSTBORO_CITY_FLAT1_2F",
+  "weather": "WEATHER_NONE"
+}

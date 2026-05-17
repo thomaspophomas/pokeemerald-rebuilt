@@ -1,0 +1,27 @@
+{
+  "id": "LilycoveCity_DepartmentStoreElevator:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStoreElevator/map.json",
+    "sha1": "5cf6289fbb15e24f83581df329a90b212977a680"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStoreElevator/map.json",
+    "raw": {
+      "x": 2,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "WARP_ID_DYNAMIC"
+    }
+  },
+  "map": "LilycoveCity_DepartmentStoreElevator",
+  "mapId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ELEVATOR",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

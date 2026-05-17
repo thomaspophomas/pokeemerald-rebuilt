@@ -100,5 +100,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ReceptionGate/map.json",
+    "sha1": "860f78128a5797e8a59f9ebfccf0e46983b00d2f"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/BattleFrontier_ReceptionGate/map.json",
+    "mapName": "BattleFrontier_ReceptionGate",
+    "scriptsSourcePath": "data/maps/BattleFrontier_ReceptionGate/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 50,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

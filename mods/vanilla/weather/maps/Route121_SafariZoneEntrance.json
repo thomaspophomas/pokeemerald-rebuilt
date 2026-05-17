@@ -1,0 +1,16 @@
+{
+  "id": "Route121_SafariZoneEntrance:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route121_SafariZoneEntrance/map.json",
+    "sha1": "011871899a2349069da4dd5c61d62b8a6425beec"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/Route121_SafariZoneEntrance/map.json"
+  },
+  "map": "Route121_SafariZoneEntrance",
+  "mapId": "MAP_ROUTE121_SAFARI_ZONE_ENTRANCE",
+  "weather": "WEATHER_NONE"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_DepartmentStore_3F_Pokemart_Vitamins",
+  "domain": "shops",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc",
+    "sha1": "7e44e655dce3fffd840dec23146b0ba8b429b3b5"
+  },
+  "legacy": {
+    "kind": "pokemart_script_list",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc"
+  },
+  "symbol": "LilycoveCity_DepartmentStore_3F_Pokemart_Vitamins",
+  "map": "LilycoveCity_DepartmentStore_3F",
+  "items": [
+    "ITEM_PROTEIN",
+    "ITEM_CALCIUM",
+    "ITEM_IRON",
+    "ITEM_ZINC",
+    "ITEM_CARBOS",
+    "ITEM_HP_UP"
+  ]
+}

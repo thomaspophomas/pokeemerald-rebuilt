@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_LUCY",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_LUCY] =\n    {\n        .trainerClass = TRAINER_CLASS_PIKE_QUEEN,\n        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,\n        .trainerPic = TRAINER_PIC_PIKE_QUEEN_LUCY,\n        .trainerName = _(\"LUCY\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_Lucy),\n    },"
+  },
+  "symbol": "TRAINER_LUCY",
+  "numericId": 810,
+  "trainerName": "LUCY",
+  "trainerClass": "TRAINER_CLASS_PIKE_QUEEN",
+  "trainerPic": "TRAINER_PIC_PIKE_QUEEN_LUCY",
+  "encounterMusicGender": "F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY",
+  "partyRef": "sParty_Lucy",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

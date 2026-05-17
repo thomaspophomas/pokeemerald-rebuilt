@@ -1,0 +1,26 @@
+{
+  "id": "MossdeepCity_Mart_Pokemart",
+  "domain": "shops",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Mart/scripts.inc",
+    "sha1": "c808a00eab98e6463dd7a37f123ff7123046ccad"
+  },
+  "legacy": {
+    "kind": "pokemart_script_list",
+    "sourcePath": "data/maps/MossdeepCity_Mart/scripts.inc"
+  },
+  "symbol": "MossdeepCity_Mart_Pokemart",
+  "map": "MossdeepCity_Mart",
+  "items": [
+    "ITEM_ULTRA_BALL",
+    "ITEM_NET_BALL",
+    "ITEM_DIVE_BALL",
+    "ITEM_HYPER_POTION",
+    "ITEM_FULL_HEAL",
+    "ITEM_REVIVE",
+    "ITEM_MAX_REPEL",
+    "ITEM_X_ATTACK",
+    "ITEM_X_DEFEND"
+  ]
+}

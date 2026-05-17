@@ -1,0 +1,27 @@
+{
+  "id": "Underwater_MarineCave:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_MarineCave/map.json",
+    "sha1": "0846791b4e9ac3f3a7a829d045b1f0470d8b6639"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Underwater_MarineCave/map.json",
+    "raw": {
+      "x": 9,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "WARP_ID_DYNAMIC"
+    }
+  },
+  "map": "Underwater_MarineCave",
+  "mapId": "MAP_UNDERWATER_MARINE_CAVE",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

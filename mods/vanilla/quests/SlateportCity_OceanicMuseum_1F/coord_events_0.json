@@ -1,0 +1,31 @@
+{
+  "id": "SlateportCity_OceanicMuseum_1F:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_1F/map.json",
+    "sha1": "37699051b069c9a59bea614c5fee533fc328f864"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_1F/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 9,
+      "y": 7,
+      "elevation": 3,
+      "var": "VAR_SLATEPORT_MUSEUM_1F_STATE",
+      "var_value": "0",
+      "script": "SlateportCity_OceanicMuseum_1F_EventScript_PayEntranceFeeLeft"
+    }
+  },
+  "map": "SlateportCity_OceanicMuseum_1F",
+  "mapId": "MAP_SLATEPORT_CITY_OCEANIC_MUSEUM_1F",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": "SlateportCity_OceanicMuseum_1F_EventScript_PayEntranceFeeLeft",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

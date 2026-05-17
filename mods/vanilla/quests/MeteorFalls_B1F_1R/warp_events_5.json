@@ -1,0 +1,27 @@
+{
+  "id": "MeteorFalls_B1F_1R:warp_events:5",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_B1F_1R/map.json",
+    "sha1": "310122cc63c09f936544d0306f1bc5537ca2a3bf"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MeteorFalls_B1F_1R/map.json",
+    "raw": {
+      "x": 20,
+      "y": 36,
+      "elevation": 3,
+      "dest_map": "MAP_METEOR_FALLS_1F_1R",
+      "dest_warp_id": "4"
+    }
+  },
+  "map": "MeteorFalls_B1F_1R",
+  "mapId": "MAP_METEOR_FALLS_B1F_1R",
+  "eventType": "warp_events",
+  "index": 5,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

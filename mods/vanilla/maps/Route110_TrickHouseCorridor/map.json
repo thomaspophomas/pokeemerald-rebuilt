@@ -45,5 +45,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseCorridor/map.json",
+    "sha1": "86722277fab98b678d341aee3e1a51d9279d1e90"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route110_TrickHouseCorridor/map.json",
+    "mapName": "Route110_TrickHouseCorridor",
+    "scriptsSourcePath": "data/maps/Route110_TrickHouseCorridor/scripts.inc"
+  },
+  "mapGroup": 29,
+  "mapNum": 2,
+  "mapGroupSymbol": "gMapGroup_IndoorRoute110",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

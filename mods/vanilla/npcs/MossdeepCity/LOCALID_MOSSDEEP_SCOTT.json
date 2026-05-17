@@ -1,0 +1,46 @@
+{
+  "id": "MossdeepCity:LOCALID_MOSSDEEP_SCOTT",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/map.json",
+    "sha1": "e5f3ed3515745877143da05bc99302333d940624"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MossdeepCity/map.json",
+    "raw": {
+      "local_id": "LOCALID_MOSSDEEP_SCOTT",
+      "graphics_id": "OBJ_EVENT_GFX_SCOTT",
+      "x": 61,
+      "y": 29,
+      "elevation": 5,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MossdeepCity_EventScript_Scott",
+      "flag": "FLAG_HIDE_MOSSDEEP_CITY_SCOTT"
+    }
+  },
+  "map": "MossdeepCity",
+  "mapId": "MAP_MOSSDEEP_CITY",
+  "localId": "LOCALID_MOSSDEEP_SCOTT",
+  "graphicsId": "OBJ_EVENT_GFX_SCOTT",
+  "x": 61,
+  "y": 29,
+  "elevation": 5,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "MossdeepCity_EventScript_Scott",
+  "flag": "FLAG_HIDE_MOSSDEEP_CITY_SCOTT",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

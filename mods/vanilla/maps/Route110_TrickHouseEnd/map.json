@@ -65,5 +65,26 @@
       "item": "ITEM_NUGGET",
       "flag": "FLAG_HIDDEN_ITEM_TRICK_HOUSE_NUGGET"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEnd/map.json",
+    "sha1": "4aae9a518aabdc7632ab655e56fe0c80b12f25b7"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route110_TrickHouseEnd/map.json",
+    "mapName": "Route110_TrickHouseEnd",
+    "scriptsSourcePath": "data/maps/Route110_TrickHouseEnd/scripts.inc"
+  },
+  "mapGroup": 29,
+  "mapNum": 1,
+  "mapGroupSymbol": "gMapGroup_IndoorRoute110",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

@@ -1,0 +1,30 @@
+{
+  "id": "Route124:bg_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route124/map.json",
+    "sha1": "b87e235602d2cbbdd6a2b66d5ca70a27ecd0486d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route124/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 73,
+      "y": 48,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route124_EventScript_HuntersHouseSign"
+    }
+  },
+  "map": "Route124",
+  "mapId": "MAP_ROUTE124",
+  "eventType": "bg_events",
+  "index": 0,
+  "script": "Route124_EventScript_HuntersHouseSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

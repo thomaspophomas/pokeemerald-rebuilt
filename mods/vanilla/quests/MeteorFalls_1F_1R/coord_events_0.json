@@ -1,0 +1,31 @@
+{
+  "id": "MeteorFalls_1F_1R:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_1R/map.json",
+    "sha1": "ae7aaedc6042747aecd640e7cc03f55a046210aa"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MeteorFalls_1F_1R/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 14,
+      "y": 18,
+      "elevation": 4,
+      "var": "VAR_METEOR_FALLS_STATE",
+      "var_value": "0",
+      "script": "MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene"
+    }
+  },
+  "map": "MeteorFalls_1F_1R",
+  "mapId": "MAP_METEOR_FALLS_1F_1R",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": "MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

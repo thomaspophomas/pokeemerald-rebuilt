@@ -1,0 +1,27 @@
+{
+  "id": "VerdanturfTown_BattleTentLobby:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentLobby/map.json",
+    "sha1": "e8cd669d529f89eb47be5eeaa7d2d18f90d4dcc6"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentLobby/map.json",
+    "raw": {
+      "x": 7,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_VERDANTURF_TOWN",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "VerdanturfTown_BattleTentLobby",
+  "mapId": "MAP_VERDANTURF_TOWN_BATTLE_TENT_LOBBY",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

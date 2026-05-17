@@ -1,0 +1,45 @@
+{
+  "id": "Route110_TrickHousePuzzle4:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle4/map.json",
+    "sha1": "f4133a0cdc58e9fbda21ec9ed0c75624aadb838e"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle4/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "x": 2,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "Route110_TrickHousePuzzle4_EventScript_Cora",
+      "flag": "0"
+    }
+  },
+  "map": "Route110_TrickHousePuzzle4",
+  "mapId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE4",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_GIRL_3",
+  "x": 2,
+  "y": 2,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "1",
+  "script": "Route110_TrickHousePuzzle4_EventScript_Cora",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

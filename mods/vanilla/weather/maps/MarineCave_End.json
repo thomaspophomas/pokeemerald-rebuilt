@@ -1,0 +1,16 @@
+{
+  "id": "MarineCave_End:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MarineCave_End/map.json",
+    "sha1": "c3469e14ff356e2c3ed61336718e46bdd1bfb427"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/MarineCave_End/map.json"
+  },
+  "map": "MarineCave_End",
+  "mapId": "MAP_MARINE_CAVE_END",
+  "weather": "WEATHER_FOG_HORIZONTAL"
+}

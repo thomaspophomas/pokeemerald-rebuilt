@@ -58,5 +58,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_CaptainsOffice/map.json",
+    "sha1": "b9086e13a6659aee4b2da169a1863c7ee818d05b"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/AbandonedShip_CaptainsOffice/map.json",
+    "mapName": "AbandonedShip_CaptainsOffice",
+    "scriptsSourcePath": "data/maps/AbandonedShip_CaptainsOffice/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 63,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

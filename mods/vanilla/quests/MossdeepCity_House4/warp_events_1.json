@@ -1,0 +1,27 @@
+{
+  "id": "MossdeepCity_House4:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_House4/map.json",
+    "sha1": "c17a16cfe5691f3565b5ff50bf5634bfc11c8069"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MossdeepCity_House4/map.json",
+    "raw": {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_MOSSDEEP_CITY",
+      "dest_warp_id": "7"
+    }
+  },
+  "map": "MossdeepCity_House4",
+  "mapId": "MAP_MOSSDEEP_CITY_HOUSE4",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

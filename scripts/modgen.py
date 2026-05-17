@@ -204,6 +204,22 @@ def iter_json_files(path: Path) -> Iterable[Path]:
     return sorted(path.rglob("*.json"))
 
 
+def load_domain_index(mod: Dict[str, Any], domain: str) -> List[Dict[str, Any]]:
+    index_path = mod["root"] / domain / "index.json"
+    if not index_path.exists():
+        return []
+    data = read_json(index_path)
+    return as_list(data, "entries")
+
+
+def read_domain_entity(mod: Dict[str, Any], domain: str, entry: Dict[str, Any]) -> Dict[str, Any]:
+    path = mod["root"] / domain / str(entry.get("path", ""))
+    data = read_json(path)
+    if not isinstance(data, dict):
+        raise ModgenError(f"{path}: indexed domain entity must be a JSON object")
+    return data
+
+
 def load_mods(root: Path) -> List[Dict[str, Any]]:
     mods_dir = root / "mods"
     mods: List[Dict[str, Any]] = []
@@ -256,7 +272,22 @@ def collect_flags(mods: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     seen = set()
     next_id = 0
     for mod in mods:
+        indexed = load_domain_index(mod, "flags")
+        if indexed:
+            for entry in indexed:
+                if entry.get("legacyKind") != "flag_define":
+                    continue
+                item = read_domain_entity(mod, "flags", entry)
+                key = key_for(mod["id"], item, str(item.get("symbol", f"flag_{next_id}")))
+                if key in seen:
+                    raise ModgenError(f"Duplicate flag key {key!r}")
+                seen.add(key)
+                flags.append({"key": key, "id": next_id, "initial": bool(item.get("initial", False))})
+                next_id += 1
+            continue
         for path in iter_json_files(mod["root"] / "flags"):
+            if path.name in ("index.json", "_source_manifest.json"):
+                continue
             for index, item in enumerate(as_list(read_json(path), "flags")):
                 if isinstance(item, str):
                     item = {"id": item}
@@ -312,7 +343,21 @@ def collect_time_segments(mods: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     segments = []
     seen = set()
     for mod in mods:
+        indexed = load_domain_index(mod, "time")
+        if indexed:
+            for entry in indexed:
+                item = read_domain_entity(mod, "time", entry)
+                key = key_for(mod["id"], item, str(entry.get("id", "segment")))
+                if key in seen:
+                    raise ModgenError(f"Duplicate time segment key {key!r}")
+                seen.add(key)
+                start = int(item.get("startMinute", item.get("start_minute", 0)))
+                end = int(item.get("endMinute", item.get("end_minute", 0)))
+                segments.append({"key": key, "start": start, "end": end, "segment": normalize_time_segment(item.get("segment", "DAY"))})
+            continue
         for path in iter_json_files(mod["root"] / "time"):
+            if path.name in ("index.json", "_source_manifest.json"):
+                continue
             for item in as_list(read_json(path), "segments"):
                 key = key_for(mod["id"], item, path.stem)
                 if key in seen:
@@ -526,26 +571,38 @@ def collect_npcs(mods: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     seen = set()
     next_id = 0
     for mod in mods:
-        for path in iter_json_files(mod["root"] / "npcs"):
-            for index, item in enumerate(as_list(read_json(path), "npcs")):
-                key = key_for(mod["id"], item, f"npc_{index}")
-                if key in seen:
-                    raise ModgenError(f"Duplicate NPC key {key!r}")
-                seen.add(key)
-                npcs.append(
-                    {
-                        "key": key,
-                        "id": next_id,
-                        "graphics": c_int_or_token(item.get("graphicsId", item.get("graphics_id")), "OBJ_EVENT_GFX_BOY_1"),
-                        "movement": c_int_or_token(item.get("movementType", item.get("movement_type")), "MOVEMENT_TYPE_FACE_DOWN"),
-                        "local": c_int_or_token(item.get("localId", item.get("local_id")), "0"),
-                        "elevation": c_int_or_token(item.get("elevation"), "3"),
-                        "policy": normalize_npc_interaction_policy(item.get("interactionPolicy", item.get("interaction_policy"))),
-                        "flag": c_int_or_token(item.get("flagId", item.get("flag")), "0"),
-                        "script": c_func(item.get("scriptSymbol", item.get("script"))),
-                    }
-                )
-                next_id += 1
+        indexed = load_domain_index(mod, "npcs")
+        if indexed:
+            iterable = [read_domain_entity(mod, "npcs", entry) for entry in indexed]
+        else:
+            iterable = []
+            for path in iter_json_files(mod["root"] / "npcs"):
+                if path.name in ("index.json", "_source_manifest.json"):
+                    continue
+                iterable.extend(as_list(read_json(path), "npcs"))
+        if indexed:
+            source_items = iterable
+        else:
+            source_items = iterable
+        for index, item in enumerate(source_items):
+            key = key_for(mod["id"], item, f"npc_{index}")
+            if key in seen:
+                raise ModgenError(f"Duplicate NPC key {key!r}")
+            seen.add(key)
+            npcs.append(
+                {
+                    "key": key,
+                    "id": next_id,
+                    "graphics": c_int_or_token(item.get("graphicsId", item.get("graphics_id")), "OBJ_EVENT_GFX_BOY_1"),
+                    "movement": c_int_or_token(item.get("movementType", item.get("movement_type")), "MOVEMENT_TYPE_FACE_DOWN"),
+                    "local": c_int_or_token(item.get("localId", item.get("local_id")), "0"),
+                    "elevation": c_int_or_token(item.get("elevation"), "3"),
+                    "policy": normalize_npc_interaction_policy(item.get("interactionPolicy", item.get("interaction_policy"))),
+                    "flag": c_int_or_token(item.get("flagId", item.get("flag")), "0"),
+                    "script": c_func(None if item.get("script") in ("0", "0x0") else item.get("scriptSymbol", item.get("script"))),
+                }
+            )
+            next_id += 1
     return npcs
 
 
@@ -556,6 +613,25 @@ def collect_maps(mods: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     for mod in mods:
         maps_root = mod["root"] / "maps"
         if not maps_root.exists():
+            continue
+        indexed = load_domain_index(mod, "maps")
+        if indexed:
+            for entry in indexed:
+                data = read_domain_entity(mod, "maps", entry)
+                key = key_for(mod["id"], data, str(entry.get("id", next_id)))
+                if key in seen:
+                    raise ModgenError(f"Duplicate map key {key!r}")
+                seen.add(key)
+                maps.append(
+                    {
+                        "key": key,
+                        "id": next_id,
+                        "group": c_int_or_token(entry.get("mapGroup", data.get("mapGroup")), "0"),
+                        "num": c_int_or_token(entry.get("mapNum", data.get("mapNum")), "0"),
+                        "path": (maps_root / str(entry.get("path"))).relative_to(mod["repo_root"]).as_posix(),
+                    }
+                )
+                next_id += 1
             continue
         group_lookup: Dict[str, Dict[str, int]] = {}
         map_groups_path = maps_root / "map_groups.json"
@@ -593,8 +669,13 @@ def collect_domain_files(mods: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             domain_root = mod["root"] / domain
             if not domain_root.exists():
                 continue
-            for path in iter_json_files(domain_root):
-                relative_key = path.relative_to(domain_root).with_suffix("").as_posix().replace("/", ".")
+            indexed = load_domain_index(mod, domain)
+            if indexed:
+                paths = [(entry, domain_root / str(entry.get("path"))) for entry in indexed]
+            else:
+                paths = [({"id": path.relative_to(domain_root).with_suffix("").as_posix().replace("/", ".")}, path) for path in iter_json_files(domain_root) if path.name not in ("index.json", "_source_manifest.json")]
+            for entry, path in paths:
+                relative_key = str(entry.get("id") or path.relative_to(domain_root).with_suffix("").as_posix().replace("/", "."))
                 key = f"{mod['id']}:{domain}:{relative_key}"
                 if key in seen:
                     raise ModgenError(f"Duplicate domain JSON key {key!r}")

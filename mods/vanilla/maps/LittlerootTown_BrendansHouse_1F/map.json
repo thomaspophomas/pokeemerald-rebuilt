@@ -171,5 +171,26 @@
       "script": "LittlerootTown_BrendansHouse_1F_EventScript_MeetRival2"
     }
   ],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_1F/map.json",
+    "sha1": "f7be2e429bafe6de2465040402d53ed22d2e30b1"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/map.json",
+    "mapName": "LittlerootTown_BrendansHouse_1F",
+    "scriptsSourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc"
+  },
+  "mapGroup": 1,
+  "mapNum": 0,
+  "mapGroupSymbol": "gMapGroup_IndoorLittleroot",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

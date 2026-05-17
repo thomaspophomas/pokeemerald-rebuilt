@@ -1,0 +1,17 @@
+{
+  "id": "sParty_GabbyAndTy6",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_GabbyAndTy6[] = {\n    {\n    .iv = 250,\n    .lvl = 39,\n    .species = SPECIES_MAGNETON,\n    .moves = {MOVE_SONIC_BOOM, MOVE_THUNDER_WAVE, MOVE_METAL_SOUND, MOVE_THUNDERBOLT}\n    },\n    {\n    .iv = 250,\n    .lvl = 39,\n    .species = SPECIES_EXPLOUD,\n    .moves = {MOVE_ASTONISH, MOVE_STOMP, MOVE_SUPERSONIC, MOVE_HYPER_VOICE}\n    }\n};"
+  },
+  "symbol": "sParty_GabbyAndTy6",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 2
+}

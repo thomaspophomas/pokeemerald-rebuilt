@@ -1,0 +1,16 @@
+{
+  "id": "FallarborTown:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown/map.json",
+    "sha1": "8fe7f19a90a652a8002a0bc5ee11e2cb69ffa7cb"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/FallarborTown/map.json"
+  },
+  "map": "FallarborTown",
+  "mapId": "MAP_FALLARBOR_TOWN",
+  "weather": "WEATHER_SUNNY"
+}

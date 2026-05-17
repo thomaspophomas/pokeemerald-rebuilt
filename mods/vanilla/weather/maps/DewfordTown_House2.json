@@ -1,0 +1,16 @@
+{
+  "id": "DewfordTown_House2:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_House2/map.json",
+    "sha1": "86c5289fafe525fa8589faae60e731c6b1f9757f"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/DewfordTown_House2/map.json"
+  },
+  "map": "DewfordTown_House2",
+  "mapId": "MAP_DEWFORD_TOWN_HOUSE2",
+  "weather": "WEATHER_NONE"
+}

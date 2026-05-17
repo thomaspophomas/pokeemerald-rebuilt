@@ -1,0 +1,27 @@
+{
+  "id": "RustboroCity_PokemonCenter_1F:warp_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonCenter_1F/map.json",
+    "sha1": "873a027c62495c888fc2b767441343480ce00088"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/RustboroCity_PokemonCenter_1F/map.json",
+    "raw": {
+      "x": 1,
+      "y": 6,
+      "elevation": 4,
+      "dest_map": "MAP_RUSTBORO_CITY_POKEMON_CENTER_2F",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "RustboroCity_PokemonCenter_1F",
+  "mapId": "MAP_RUSTBORO_CITY_POKEMON_CENTER_1F",
+  "eventType": "warp_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Roxanne3",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemCustomMoves sParty_Roxanne3[] = {\n    {\n    .iv = 255,\n    .lvl = 37,\n    .species = SPECIES_OMANYTE,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_PROTECT, MOVE_ICE_BEAM, MOVE_ROCK_SLIDE, MOVE_SURF}\n    },\n    {\n    .iv = 255,\n    .lvl = 37,\n    .species = SPECIES_GOLEM,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_PROTECT, MOVE_ROLLOUT, MOVE_MAGNITUDE, MOVE_EXPLOSION}\n    },\n    {\n    .iv = 255,\n    .lvl = 40,\n    .species = SPECIES_KABUTOPS,\n    .heldItem = ITEM_SITRUS_BERRY,\n    .moves = {MOVE_SWORDS_DANCE, MOVE_ICE_BEAM, MOVE_SURF, MOVE_ROCK_SLIDE}\n    },\n    {\n    .iv = 255,\n    .lvl = 40,\n    .species = SPECIES_ONIX,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_IRON_TAIL, MOVE_EXPLOSION, MOVE_ROAR, MOVE_ROCK_SLIDE}\n    },\n    {\n    .iv = 255,\n    .lvl = 42,\n    .species = SPECIES_NOSEPASS,\n    .heldItem = ITEM_SITRUS_BERRY,\n    .moves = {MOVE_DOUBLE_TEAM, MOVE_EXPLOSION, MOVE_PROTECT, MOVE_ROCK_SLIDE}\n    }\n};"
+  },
+  "symbol": "sParty_Roxanne3",
+  "partyType": "TrainerMonItemCustomMoves",
+  "pokemonCount": 5
+}

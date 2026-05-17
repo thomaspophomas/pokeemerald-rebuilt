@@ -1,0 +1,28 @@
+{
+  "id": "NavelRock_Top:bg_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NavelRock_Top/map.json",
+    "sha1": "d94116c665620d434b4b8a97ce620b4b11cbabd5"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/NavelRock_Top/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 12,
+      "y": 9,
+      "elevation": 3,
+      "item": "ITEM_SACRED_ASH",
+      "flag": "FLAG_HIDDEN_ITEM_NAVEL_ROCK_TOP_SACRED_ASH"
+    }
+  },
+  "map": "NavelRock_Top",
+  "mapId": "MAP_NAVEL_ROCK_TOP",
+  "eventType": "bg_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": "SootopolisCity:LOCALID_SOOTOPOLIS_KYOGRE",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/map.json",
+    "sha1": "e651f28449773dc24217811c1afadda1854036d9"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SootopolisCity/map.json",
+    "raw": {
+      "local_id": "LOCALID_SOOTOPOLIS_KYOGRE",
+      "graphics_id": "OBJ_EVENT_GFX_KYOGRE_SIDE",
+      "x": 34,
+      "y": 44,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_SOOTOPOLIS_CITY_KYOGRE"
+    }
+  },
+  "map": "SootopolisCity",
+  "mapId": "MAP_SOOTOPOLIS_CITY",
+  "localId": "LOCALID_SOOTOPOLIS_KYOGRE",
+  "graphicsId": "OBJ_EVENT_GFX_KYOGRE_SIDE",
+  "x": 34,
+  "y": 44,
+  "elevation": 1,
+  "movementType": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_LEFT",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_HIDE_SOOTOPOLIS_CITY_KYOGRE",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

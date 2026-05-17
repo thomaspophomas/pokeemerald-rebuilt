@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Angelica",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_Angelica[] = {\n    {\n    .iv = 50,\n    .lvl = 30,\n    .species = SPECIES_CASTFORM,\n    .moves = {MOVE_RAIN_DANCE, MOVE_WEATHER_BALL, MOVE_THUNDER, MOVE_WATER_PULSE}\n    }\n};"
+  },
+  "symbol": "sParty_Angelica",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 1
+}

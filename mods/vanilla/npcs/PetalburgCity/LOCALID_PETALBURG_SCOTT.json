@@ -1,0 +1,43 @@
+{
+  "id": "PetalburgCity:LOCALID_PETALBURG_SCOTT",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity/map.json",
+    "sha1": "ca6092ddf12a2aeddab506e674dc3d3cd443f16d"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/PetalburgCity/map.json",
+    "raw": {
+      "local_id": "LOCALID_PETALBURG_SCOTT",
+      "graphics_id": "OBJ_EVENT_GFX_SCOTT",
+      "x": 13,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_PETALBURG_CITY_SCOTT"
+    }
+  },
+  "map": "PetalburgCity",
+  "mapId": "MAP_PETALBURG_CITY",
+  "localId": "LOCALID_PETALBURG_SCOTT",
+  "graphicsId": "OBJ_EVENT_GFX_SCOTT",
+  "x": 13,
+  "y": 12,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_HIDE_PETALBURG_CITY_SCOTT",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

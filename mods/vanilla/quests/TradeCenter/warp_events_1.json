@@ -1,0 +1,27 @@
+{
+  "id": "TradeCenter:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TradeCenter/map.json",
+    "sha1": "26c185ec510941ea0b33c1cc2b7065bd3e41706d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/TradeCenter/map.json",
+    "raw": {
+      "x": 6,
+      "y": 8,
+      "elevation": 3,
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "WARP_ID_DYNAMIC"
+    }
+  },
+  "map": "TradeCenter",
+  "mapId": "MAP_TRADE_CENTER",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

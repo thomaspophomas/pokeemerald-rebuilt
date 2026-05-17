@@ -1,0 +1,27 @@
+{
+  "id": "TrainerHill_Roof:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Roof/map.json",
+    "sha1": "77446df9496fd2259926dd6487f1dacb81a1789b"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/TrainerHill_Roof/map.json",
+    "raw": {
+      "x": 9,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_TRAINER_HILL_4F",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "TrainerHill_Roof",
+  "mapId": "MAP_TRAINER_HILL_ROOF",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "LilycoveCity_DepartmentStoreElevator:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStoreElevator/map.json",
+    "sha1": "5cf6289fbb15e24f83581df329a90b212977a680"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStoreElevator/map.json"
+  },
+  "map": "LilycoveCity_DepartmentStoreElevator",
+  "mapId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ELEVATOR",
+  "weather": "WEATHER_NONE"
+}

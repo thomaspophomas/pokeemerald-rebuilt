@@ -1,0 +1,16 @@
+{
+  "id": "night",
+  "domain": "time",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/mod/time.c",
+    "sha1": "5c04955045b0f3c404d5aa7867731158d2a967c5"
+  },
+  "legacy": {
+    "kind": "default_time_segment",
+    "sourcePath": "src/mod/time.c"
+  },
+  "segment": "NIGHT",
+  "startMinute": 1200,
+  "endMinute": 239
+}

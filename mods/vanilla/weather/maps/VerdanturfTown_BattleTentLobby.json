@@ -1,0 +1,16 @@
+{
+  "id": "VerdanturfTown_BattleTentLobby:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentLobby/map.json",
+    "sha1": "e8cd669d529f89eb47be5eeaa7d2d18f90d4dcc6"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentLobby/map.json"
+  },
+  "map": "VerdanturfTown_BattleTentLobby",
+  "mapId": "MAP_VERDANTURF_TOWN_BATTLE_TENT_LOBBY",
+  "weather": "WEATHER_NONE"
+}

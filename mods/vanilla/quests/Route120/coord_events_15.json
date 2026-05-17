@@ -1,0 +1,27 @@
+{
+  "id": "Route120:coord_events:15",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route120/map.json",
+    "sha1": "65935e19bb6f8e23506c7e2e85cef33433f4e2d7"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route120/map.json",
+    "raw": {
+      "type": "weather",
+      "x": 10,
+      "y": 75,
+      "elevation": 3,
+      "weather": "COORD_EVENT_WEATHER_SUNNY_CLOUDS"
+    }
+  },
+  "map": "Route120",
+  "mapId": "MAP_ROUTE120",
+  "eventType": "coord_events",
+  "index": 15,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "SlateportCity:warp_events:7",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/map.json",
+    "sha1": "69b0cc6d8d6afc1f4a83fc0c3a8bec759f125947"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SlateportCity/map.json",
+    "raw": {
+      "x": 31,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_SLATEPORT_CITY_OCEANIC_MUSEUM_1F",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "SlateportCity",
+  "mapId": "MAP_SLATEPORT_CITY",
+  "eventType": "warp_events",
+  "index": 7,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

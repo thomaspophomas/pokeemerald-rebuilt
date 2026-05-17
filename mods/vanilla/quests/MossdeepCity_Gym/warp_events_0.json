@@ -1,0 +1,27 @@
+{
+  "id": "MossdeepCity_Gym:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Gym/map.json",
+    "sha1": "9a33d6559af206c544f98be7f035bb5a5ee65354"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MossdeepCity_Gym/map.json",
+    "raw": {
+      "x": 6,
+      "y": 35,
+      "elevation": 3,
+      "dest_map": "MAP_MOSSDEEP_CITY",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "MossdeepCity_Gym",
+  "mapId": "MAP_MOSSDEEP_CITY_GYM",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

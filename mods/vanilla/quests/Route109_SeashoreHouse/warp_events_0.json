@@ -1,0 +1,27 @@
+{
+  "id": "Route109_SeashoreHouse:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route109_SeashoreHouse/map.json",
+    "sha1": "2ca49f80c6aafb75ff0dead58f821265a513a625"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route109_SeashoreHouse/map.json",
+    "raw": {
+      "x": 6,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE109",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Route109_SeashoreHouse",
+  "mapId": "MAP_ROUTE109_SEASHORE_HOUSE",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

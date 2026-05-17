@@ -1,0 +1,16 @@
+{
+  "id": "BattleFrontier_ScottsHouse:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ScottsHouse/map.json",
+    "sha1": "cdb6d7e490a5a22f942c1c30e4c989462570d9f7"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/BattleFrontier_ScottsHouse/map.json"
+  },
+  "map": "BattleFrontier_ScottsHouse",
+  "mapId": "MAP_BATTLE_FRONTIER_SCOTTS_HOUSE",
+  "weather": "WEATHER_NONE"
+}

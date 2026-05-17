@@ -1,0 +1,31 @@
+{
+  "id": "MtPyre_Summit:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/map.json",
+    "sha1": "eb9d040aed670ed1a1ab1ef657d34716f4420686"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MtPyre_Summit/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 22,
+      "y": 7,
+      "elevation": 3,
+      "var": "VAR_MT_PYRE_STATE",
+      "var_value": "0",
+      "script": "MtPyre_Summit_EventScript_TeamAquaTrigger0"
+    }
+  },
+  "map": "MtPyre_Summit",
+  "mapId": "MAP_MT_PYRE_SUMMIT",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": "MtPyre_Summit_EventScript_TeamAquaTrigger0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

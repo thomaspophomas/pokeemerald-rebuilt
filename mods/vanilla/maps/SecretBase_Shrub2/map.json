@@ -221,5 +221,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SecretBase_Shrub2/map.json",
+    "sha1": "ce8bb2acacedfa318a489c8efc740f7624ae118c"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SecretBase_Shrub2/map.json",
+    "mapName": "SecretBase_Shrub2",
+    "scriptsSourcePath": null
+  },
+  "mapGroup": 25,
+  "mapNum": 11,
+  "mapGroupSymbol": "gMapGroup_IndoorDynamic",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

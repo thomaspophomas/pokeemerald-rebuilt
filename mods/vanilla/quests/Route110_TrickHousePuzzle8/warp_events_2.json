@@ -1,0 +1,27 @@
+{
+  "id": "Route110_TrickHousePuzzle8:warp_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle8/map.json",
+    "sha1": "7320287110034f3f404551af8ed0525dfa0ac35f"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle8/map.json",
+    "raw": {
+      "x": 13,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE110_TRICK_HOUSE_END",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Route110_TrickHousePuzzle8",
+  "mapId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE8",
+  "eventType": "warp_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

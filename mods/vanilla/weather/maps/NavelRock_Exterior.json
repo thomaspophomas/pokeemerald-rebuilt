@@ -1,0 +1,16 @@
+{
+  "id": "NavelRock_Exterior:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NavelRock_Exterior/map.json",
+    "sha1": "9a35a5cf2557d47293314ec56e130525a4a13a70"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/NavelRock_Exterior/map.json"
+  },
+  "map": "NavelRock_Exterior",
+  "mapId": "MAP_NAVEL_ROCK_EXTERIOR",
+  "weather": "WEATHER_NONE"
+}

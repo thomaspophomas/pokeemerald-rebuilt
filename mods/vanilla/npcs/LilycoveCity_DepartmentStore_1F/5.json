@@ -1,0 +1,45 @@
+{
+  "id": "LilycoveCity_DepartmentStore_1F:5",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_1F/map.json",
+    "sha1": "40c25ea654224c9c6792c1951e5f7ee9042f5b6e"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_1F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
+      "x": 3,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LilycoveCity_DepartmentStore_1F_EventScript_PokefanM",
+      "flag": "0"
+    }
+  },
+  "map": "LilycoveCity_DepartmentStore_1F",
+  "mapId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_1F",
+  "localId": 5,
+  "graphicsId": "OBJ_EVENT_GFX_POKEFAN_M",
+  "x": 3,
+  "y": 6,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "LilycoveCity_DepartmentStore_1F_EventScript_PokefanM",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "PetalburgWoods:6",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/map.json",
+    "sha1": "67d0842207660bdef7b89d73a15eb7943073ee9a"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/PetalburgWoods/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 35,
+      "y": 20,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PetalburgWoods_EventScript_ItemXAttack",
+      "flag": "FLAG_ITEM_PETALBURG_WOODS_X_ATTACK"
+    }
+  },
+  "map": "PetalburgWoods",
+  "mapId": "MAP_PETALBURG_WOODS",
+  "localId": 6,
+  "graphicsId": "OBJ_EVENT_GFX_ITEM_BALL",
+  "x": 35,
+  "y": 20,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "PetalburgWoods_EventScript_ItemXAttack",
+  "flag": "FLAG_ITEM_PETALBURG_WOODS_X_ATTACK",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

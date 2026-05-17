@@ -46,5 +46,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Elevator/map.json",
+    "sha1": "b5d7a346011cf669eb6dc6657b3f94e6fc22ac9f"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/TrainerHill_Elevator/map.json",
+    "mapName": "TrainerHill_Elevator",
+    "scriptsSourcePath": "data/maps/TrainerHill_Elevator/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 88,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

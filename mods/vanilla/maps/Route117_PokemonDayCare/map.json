@@ -46,5 +46,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route117_PokemonDayCare/map.json",
+    "sha1": "40e0924ccae397fdf65bada33f381af682eec9fe"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route117_PokemonDayCare/map.json",
+    "mapName": "Route117_PokemonDayCare",
+    "scriptsSourcePath": "data/maps/Route117_PokemonDayCare/scripts.inc"
+  },
+  "mapGroup": 22,
+  "mapNum": 0,
+  "mapGroupSymbol": "gMapGroup_IndoorRoute117",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -16,5 +16,26 @@
   "object_events": [],
   "warp_events": [],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104_PrototypePrettyPetalFlowerShop/map.json",
+    "sha1": "0851bbd3151701425c3ae47e1657cbbed5df879c"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route104_PrototypePrettyPetalFlowerShop/map.json",
+    "mapName": "Route104_PrototypePrettyPetalFlowerShop",
+    "scriptsSourcePath": "data/maps/Route104_PrototypePrettyPetalFlowerShop/scripts.inc"
+  },
+  "mapGroup": 27,
+  "mapNum": 1,
+  "mapGroupSymbol": "gMapGroup_IndoorRoute104Prototype",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,27 @@
+{
+  "id": "Route116_TunnelersRestHouse:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116_TunnelersRestHouse/map.json",
+    "sha1": "8cf753cfc766fad16331c25029b818100d00a61b"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route116_TunnelersRestHouse/map.json",
+    "raw": {
+      "x": 4,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE116",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "Route116_TunnelersRestHouse",
+  "mapId": "MAP_ROUTE116_TUNNELERS_REST_HOUSE",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

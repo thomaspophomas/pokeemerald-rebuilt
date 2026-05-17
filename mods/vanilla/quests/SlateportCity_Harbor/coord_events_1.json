@@ -1,0 +1,31 @@
+{
+  "id": "SlateportCity_Harbor:coord_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/map.json",
+    "sha1": "75cd1653854ff3fa0e1314dbec4cf661284b8498"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SlateportCity_Harbor/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 8,
+      "y": 12,
+      "elevation": 3,
+      "var": "VAR_SLATEPORT_HARBOR_STATE",
+      "var_value": "1",
+      "script": "SlateportCity_Harbor_EventScript_AquaEscapeTrigger1"
+    }
+  },
+  "map": "SlateportCity_Harbor",
+  "mapId": "MAP_SLATEPORT_CITY_HARBOR",
+  "eventType": "coord_events",
+  "index": 1,
+  "script": "SlateportCity_Harbor_EventScript_AquaEscapeTrigger1",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

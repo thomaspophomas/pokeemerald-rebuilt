@@ -1,0 +1,30 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby:bg_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/map.json",
+    "sha1": "ce2d36fe134421f3bca2baf4e1c4f41ebf70c47b"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 16,
+      "y": 7,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "BattleFrontier_BattlePalaceLobby_EventScript_ShowDoublesResults"
+    }
+  },
+  "map": "BattleFrontier_BattlePalaceLobby",
+  "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PALACE_LOBBY",
+  "eventType": "bg_events",
+  "index": 1,
+  "script": "BattleFrontier_BattlePalaceLobby_EventScript_ShowDoublesResults",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

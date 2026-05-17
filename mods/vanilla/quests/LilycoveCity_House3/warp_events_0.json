@@ -1,0 +1,27 @@
+{
+  "id": "LilycoveCity_House3:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_House3/map.json",
+    "sha1": "f6a6963c39eaef0abbd5020f7c4114e839c5a7e7"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LilycoveCity_House3/map.json",
+    "raw": {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_LILYCOVE_CITY",
+      "dest_warp_id": "10"
+    }
+  },
+  "map": "LilycoveCity_House3",
+  "mapId": "MAP_LILYCOVE_CITY_HOUSE3",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -526,5 +526,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Common_EventScript_ShowPokemonCenterSign"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideEast/map.json",
+    "sha1": "92a1844f4319344dd5dc49a1c7f996c248d7043c"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/BattleFrontier_OutsideEast/map.json",
+    "mapName": "BattleFrontier_OutsideEast",
+    "scriptsSourcePath": "data/maps/BattleFrontier_OutsideEast/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 14,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

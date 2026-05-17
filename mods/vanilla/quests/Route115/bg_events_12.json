@@ -1,0 +1,27 @@
+{
+  "id": "Route115:bg_events:12",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route115/map.json",
+    "sha1": "b6c6b6d8e02d782dfc66ddae4e4cf9145461193d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route115/map.json",
+    "raw": {
+      "type": "secret_base",
+      "x": 20,
+      "y": 53,
+      "elevation": 0,
+      "secret_base_id": "SECRET_BASE_RED_CAVE3_1"
+    }
+  },
+  "map": "Route115",
+  "mapId": "MAP_ROUTE115",
+  "eventType": "bg_events",
+  "index": 12,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

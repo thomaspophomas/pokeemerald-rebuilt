@@ -1,0 +1,45 @@
+{
+  "id": "MauvilleCity_Gym:3",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Gym/map.json",
+    "sha1": "a550195e9016799d3ae0a0f03213db6dbadc4279"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MauvilleCity_Gym/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "x": 1,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "MauvilleCity_Gym_EventScript_Vivian",
+      "flag": "0"
+    }
+  },
+  "map": "MauvilleCity_Gym",
+  "mapId": "MAP_MAUVILLE_CITY_GYM",
+  "localId": 3,
+  "graphicsId": "OBJ_EVENT_GFX_GIRL_3",
+  "x": 1,
+  "y": 16,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "2",
+  "script": "MauvilleCity_Gym_EventScript_Vivian",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

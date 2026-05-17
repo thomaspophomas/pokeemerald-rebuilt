@@ -1,0 +1,16 @@
+{
+  "id": "MeteorFalls_1F_1R:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_1R/map.json",
+    "sha1": "ae7aaedc6042747aecd640e7cc03f55a046210aa"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/MeteorFalls_1F_1R/map.json"
+  },
+  "map": "MeteorFalls_1F_1R",
+  "mapId": "MAP_METEOR_FALLS_1F_1R",
+  "weather": "WEATHER_NONE"
+}

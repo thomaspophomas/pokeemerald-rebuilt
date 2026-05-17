@@ -1,0 +1,28 @@
+{
+  "id": "SafariZone_Southeast:bg_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_Southeast/map.json",
+    "sha1": "e5c5f65c091a5136a9ac0e47e1102f231a6339ae"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SafariZone_Southeast/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 19,
+      "y": 36,
+      "elevation": 3,
+      "item": "ITEM_PP_UP",
+      "flag": "FLAG_HIDDEN_ITEM_SAFARI_ZONE_SOUTH_EAST_PP_UP"
+    }
+  },
+  "map": "SafariZone_Southeast",
+  "mapId": "MAP_SAFARI_ZONE_SOUTHEAST",
+  "eventType": "bg_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

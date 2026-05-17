@@ -162,5 +162,26 @@
       "item": "ITEM_ZINC",
       "flag": "FLAG_HIDDEN_ITEM_SAFARI_ZONE_NORTH_EAST_ZINC"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_Northeast/map.json",
+    "sha1": "94217153e5e24f284b425776e2af3ec3ac478483"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SafariZone_Northeast/map.json",
+    "mapName": "SafariZone_Northeast",
+    "scriptsSourcePath": "data/maps/SafariZone_Northeast/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 12,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

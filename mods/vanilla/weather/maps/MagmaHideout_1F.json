@@ -1,0 +1,16 @@
+{
+  "id": "MagmaHideout_1F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_1F/map.json",
+    "sha1": "098fea2d47c67112327799f4e8bfaf5e9bf6cb1f"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/MagmaHideout_1F/map.json"
+  },
+  "map": "MagmaHideout_1F",
+  "mapId": "MAP_MAGMA_HIDEOUT_1F",
+  "weather": "WEATHER_NONE"
+}

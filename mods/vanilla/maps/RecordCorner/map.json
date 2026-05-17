@@ -96,5 +96,26 @@
       "script": "EventScript_RecordCenter_Spot3"
     }
   ],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RecordCorner/map.json",
+    "sha1": "e4f2e10aeeca18cc7a087f725eb854fb443be6cc"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/RecordCorner/map.json",
+    "mapName": "RecordCorner",
+    "scriptsSourcePath": "data/maps/RecordCorner/scripts.inc"
+  },
+  "mapGroup": 25,
+  "mapNum": 26,
+  "mapGroupSymbol": "gMapGroup_IndoorDynamic",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

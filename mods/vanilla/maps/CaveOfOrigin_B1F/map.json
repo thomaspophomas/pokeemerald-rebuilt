@@ -39,5 +39,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/CaveOfOrigin_B1F/map.json",
+    "sha1": "72a67ed3a836d5fbfff6587a7a62410c70e94a67"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/CaveOfOrigin_B1F/map.json",
+    "mapName": "CaveOfOrigin_B1F",
+    "scriptsSourcePath": "data/maps/CaveOfOrigin_B1F/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 42,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

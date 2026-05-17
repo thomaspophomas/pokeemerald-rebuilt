@@ -1,0 +1,27 @@
+{
+  "id": "BattleFrontier_OutsideEast:warp_events:8",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideEast/map.json",
+    "sha1": "92a1844f4319344dd5dc49a1c7f996c248d7043c"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BattleFrontier_OutsideEast/map.json",
+    "raw": {
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_FRONTIER_LOUNGE6",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "BattleFrontier_OutsideEast",
+  "mapId": "MAP_BATTLE_FRONTIER_OUTSIDE_EAST",
+  "eventType": "warp_events",
+  "index": 8,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

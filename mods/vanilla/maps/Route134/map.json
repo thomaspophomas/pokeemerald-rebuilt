@@ -171,5 +171,26 @@
   ],
   "warp_events": [],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route134/map.json",
+    "sha1": "4d5c67220079d78c0768d9d30666342feaf4ce98"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route134/map.json",
+    "mapName": "Route134",
+    "scriptsSourcePath": "data/maps/Route134/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 49,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

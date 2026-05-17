@@ -1,0 +1,27 @@
+{
+  "id": "LavaridgeTown_Mart:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Mart/map.json",
+    "sha1": "db1633902e5f694ac034d43b14967b5c6415ba63"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LavaridgeTown_Mart/map.json",
+    "raw": {
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_LAVARIDGE_TOWN",
+      "dest_warp_id": "2"
+    }
+  },
+  "map": "LavaridgeTown_Mart",
+  "mapId": "MAP_LAVARIDGE_TOWN_MART",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

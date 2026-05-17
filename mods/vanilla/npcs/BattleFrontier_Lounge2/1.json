@@ -1,0 +1,45 @@
+{
+  "id": "BattleFrontier_Lounge2:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge2/map.json",
+    "sha1": "bf01d42930f3acc5c3521484e07096bf9d6b3eb2"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/BattleFrontier_Lounge2/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "x": 8,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BattleFrontier_Lounge2_EventScript_FrontierManiac",
+      "flag": "0"
+    }
+  },
+  "map": "BattleFrontier_Lounge2",
+  "mapId": "MAP_BATTLE_FRONTIER_LOUNGE2",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_MANIAC",
+  "x": 8,
+  "y": 4,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "BattleFrontier_Lounge2_EventScript_FrontierManiac",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

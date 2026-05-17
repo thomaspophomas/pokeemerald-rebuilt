@@ -260,5 +260,26 @@
       "item": "ITEM_ICE_HEAL",
       "flag": "FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_ICE_HEAL"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/map.json",
+    "sha1": "528036d4fe9b25a1f56aa0f6350f2014968009da"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/LavaridgeTown/map.json",
+    "mapName": "LavaridgeTown",
+    "scriptsSourcePath": "data/maps/LavaridgeTown/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 12,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

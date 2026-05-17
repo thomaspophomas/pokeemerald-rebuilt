@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Drew",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_Drew[] = {\n    {\n    .iv = 0,\n    .lvl = 23,\n    .species = SPECIES_SANDSHREW,\n    .moves = {MOVE_DIG, MOVE_SAND_ATTACK, MOVE_POISON_STING, MOVE_SLASH}\n    }\n};"
+  },
+  "symbol": "sParty_Drew",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 1
+}

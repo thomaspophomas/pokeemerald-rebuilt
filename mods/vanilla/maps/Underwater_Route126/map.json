@@ -105,5 +105,26 @@
       "item": "ITEM_BLUE_SHARD",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_Route126/map.json",
+    "sha1": "b686f89f97dae1ea04460a81a70e5129e026637f"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Underwater_Route126/map.json",
+    "mapName": "Underwater_Route126",
+    "scriptsSourcePath": "data/maps/Underwater_Route126/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 51,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

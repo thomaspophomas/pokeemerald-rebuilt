@@ -72,5 +72,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/GraniteCave_1F/map.json",
+    "sha1": "84ba8d69520a04c9a16927ff88a9a306b2c12881"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/GraniteCave_1F/map.json",
+    "mapName": "GraniteCave_1F",
+    "scriptsSourcePath": "data/maps/GraniteCave_1F/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 7,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

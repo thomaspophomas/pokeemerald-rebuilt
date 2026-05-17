@@ -1,0 +1,30 @@
+{
+  "id": "ShoalCave_LowTideLowerRoom:bg_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ShoalCave_LowTideLowerRoom/map.json",
+    "sha1": "edca4605bca59c6a29fc1cab1413cc2df7ade6fd"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/ShoalCave_LowTideLowerRoom/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 18,
+      "y": 2,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "ShoalCave_LowTideLowerRoom_EventScript_ShoalSalt4"
+    }
+  },
+  "map": "ShoalCave_LowTideLowerRoom",
+  "mapId": "MAP_SHOAL_CAVE_LOW_TIDE_LOWER_ROOM",
+  "eventType": "bg_events",
+  "index": 0,
+  "script": "ShoalCave_LowTideLowerRoom_EventScript_ShoalSalt4",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

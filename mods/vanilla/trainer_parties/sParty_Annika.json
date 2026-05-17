@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Annika",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemCustomMoves sParty_Annika[] = {\n    {\n    .iv = 100,\n    .lvl = 39,\n    .species = SPECIES_FEEBAS,\n    .heldItem = ITEM_ORAN_BERRY,\n    .moves = {MOVE_FLAIL, MOVE_WATER_PULSE, MOVE_RETURN, MOVE_ATTRACT}\n    },\n    {\n    .iv = 100,\n    .lvl = 39,\n    .species = SPECIES_FEEBAS,\n    .heldItem = ITEM_ORAN_BERRY,\n    .moves = {MOVE_FLAIL, MOVE_WATER_PULSE, MOVE_RETURN, MOVE_ATTRACT}\n    }\n};"
+  },
+  "symbol": "sParty_Annika",
+  "partyType": "TrainerMonItemCustomMoves",
+  "pokemonCount": 2
+}

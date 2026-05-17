@@ -1,0 +1,16 @@
+{
+  "id": "DewfordTown_Gym:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Gym/map.json",
+    "sha1": "4bca76fcf0a38c12e263ec42a45ec405e4bfed2f"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/DewfordTown_Gym/map.json"
+  },
+  "map": "DewfordTown_Gym",
+  "mapId": "MAP_DEWFORD_TOWN_GYM",
+  "weather": "WEATHER_NONE"
+}

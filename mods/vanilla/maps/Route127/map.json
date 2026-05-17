@@ -217,5 +217,26 @@
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_YELLOW_CAVE1_3"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route127/map.json",
+    "sha1": "1888c4a6cdbeaad8f03b0f0d0a7120ea72599971"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route127/map.json",
+    "mapName": "Route127",
+    "scriptsSourcePath": "data/maps/Route127/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 42,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

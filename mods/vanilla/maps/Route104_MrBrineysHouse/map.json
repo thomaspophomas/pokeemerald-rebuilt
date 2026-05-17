@@ -60,5 +60,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104_MrBrineysHouse/map.json",
+    "sha1": "d72b9b2e82a27fdee3f4f736b97a873da2a6cc83"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route104_MrBrineysHouse/map.json",
+    "mapName": "Route104_MrBrineysHouse",
+    "scriptsSourcePath": "data/maps/Route104_MrBrineysHouse/scripts.inc"
+  },
+  "mapGroup": 17,
+  "mapNum": 0,
+  "mapGroupSymbol": "gMapGroup_IndoorRoute104",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,45 @@
+{
+  "id": "LilycoveCity_ContestLobby:25",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/map.json",
+    "sha1": "967323657501eb08c1fa55180db9456a6b4962b3"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
+      "x": 9,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LilycoveCity_ContestLobby_EventScript_LittleGirl",
+      "flag": "0"
+    }
+  },
+  "map": "LilycoveCity_ContestLobby",
+  "mapId": "MAP_LILYCOVE_CITY_CONTEST_LOBBY",
+  "localId": 25,
+  "graphicsId": "OBJ_EVENT_GFX_LITTLE_GIRL",
+  "x": 9,
+  "y": 10,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 2,
+  "movementRangeY": 2,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "LilycoveCity_ContestLobby_EventScript_LittleGirl",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

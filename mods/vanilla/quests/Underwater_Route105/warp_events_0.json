@@ -1,0 +1,27 @@
+{
+  "id": "Underwater_Route105:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_Route105/map.json",
+    "sha1": "4f96bc46f5f346892076305f73d6ea127ca7451c"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Underwater_Route105/map.json",
+    "raw": {
+      "x": 13,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_UNDERWATER_MARINE_CAVE",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Underwater_Route105",
+  "mapId": "MAP_UNDERWATER_ROUTE105",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

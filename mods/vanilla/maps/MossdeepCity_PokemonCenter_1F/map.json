@@ -79,5 +79,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_PokemonCenter_1F/map.json",
+    "sha1": "4dc743961c95264a75345fab504c495726454ad6"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/MossdeepCity_PokemonCenter_1F/map.json",
+    "mapName": "MossdeepCity_PokemonCenter_1F",
+    "scriptsSourcePath": "data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc"
+  },
+  "mapGroup": 14,
+  "mapNum": 3,
+  "mapGroupSymbol": "gMapGroup_IndoorMossdeep",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

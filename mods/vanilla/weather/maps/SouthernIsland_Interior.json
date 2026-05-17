@@ -1,0 +1,16 @@
+{
+  "id": "SouthernIsland_Interior:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SouthernIsland_Interior/map.json",
+    "sha1": "3a9266b65dd007c4c598d887c50d71b1325f5ba4"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/SouthernIsland_Interior/map.json"
+  },
+  "map": "SouthernIsland_Interior",
+  "mapId": "MAP_SOUTHERN_ISLAND_INTERIOR",
+  "weather": "WEATHER_SHADE"
+}

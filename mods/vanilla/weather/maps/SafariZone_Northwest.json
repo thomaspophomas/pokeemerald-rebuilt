@@ -1,0 +1,16 @@
+{
+  "id": "SafariZone_Northwest:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_Northwest/map.json",
+    "sha1": "2bd0f3eedc67eda7a40eb2cd318c7585c0b2cce4"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/SafariZone_Northwest/map.json"
+  },
+  "map": "SafariZone_Northwest",
+  "mapId": "MAP_SAFARI_ZONE_NORTHWEST",
+  "weather": "WEATHER_NONE"
+}

@@ -310,5 +310,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B1F/map.json",
+    "sha1": "d18425dffc1bd0e84be8eebcb9e1f8fab27278ed"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/AquaHideout_B1F/map.json",
+    "mapName": "AquaHideout_B1F",
+    "scriptsSourcePath": "data/maps/AquaHideout_B1F/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 24,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

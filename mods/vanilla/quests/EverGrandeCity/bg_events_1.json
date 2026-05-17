@@ -1,0 +1,30 @@
+{
+  "id": "EverGrandeCity:bg_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity/map.json",
+    "sha1": "0cc8791074133ebfd3478a2f4e9b240b955f5902"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/EverGrandeCity/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 29,
+      "y": 48,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Common_EventScript_ShowPokemonCenterSign"
+    }
+  },
+  "map": "EverGrandeCity",
+  "mapId": "MAP_EVER_GRANDE_CITY",
+  "eventType": "bg_events",
+  "index": 1,
+  "script": "Common_EventScript_ShowPokemonCenterSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

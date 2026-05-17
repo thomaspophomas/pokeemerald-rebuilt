@@ -1,0 +1,27 @@
+{
+  "id": "Route104_PrettyPetalFlowerShop:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104_PrettyPetalFlowerShop/map.json",
+    "sha1": "542967c73d7511b0e176ad552b7a077710b6a2e3"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route104_PrettyPetalFlowerShop/map.json",
+    "raw": {
+      "x": 3,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE104",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "Route104_PrettyPetalFlowerShop",
+  "mapId": "MAP_ROUTE104_PRETTY_PETAL_FLOWER_SHOP",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

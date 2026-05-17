@@ -1,0 +1,30 @@
+{
+  "id": "LavaridgeTown:bg_events:6",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/map.json",
+    "sha1": "528036d4fe9b25a1f56aa0f6350f2014968009da"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LavaridgeTown/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 11,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Common_EventScript_ShowPokemonCenterSign"
+    }
+  },
+  "map": "LavaridgeTown",
+  "mapId": "MAP_LAVARIDGE_TOWN",
+  "eventType": "bg_events",
+  "index": 6,
+  "script": "Common_EventScript_ShowPokemonCenterSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

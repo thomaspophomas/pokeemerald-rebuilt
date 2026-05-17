@@ -1,0 +1,43 @@
+{
+  "id": "SeafloorCavern_Room9:LOCALID_SEAFLOOR_CAVERN_GRUNT_1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Room9/map.json",
+    "sha1": "1a777bb6757d1d172595eb81b91067512e210409"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SeafloorCavern_Room9/map.json",
+    "raw": {
+      "local_id": "LOCALID_SEAFLOOR_CAVERN_GRUNT_1",
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 8,
+      "y": 41,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_MAGMA_GRUNTS"
+    }
+  },
+  "map": "SeafloorCavern_Room9",
+  "mapId": "MAP_SEAFLOOR_CAVERN_ROOM9",
+  "localId": "LOCALID_SEAFLOOR_CAVERN_GRUNT_1",
+  "graphicsId": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+  "x": 8,
+  "y": 41,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_MAGMA_GRUNTS",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

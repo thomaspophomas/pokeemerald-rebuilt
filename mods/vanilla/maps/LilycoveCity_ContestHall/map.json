@@ -538,5 +538,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "LilycoveCity_ContestHall_EventScript_CuteStageSign"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestHall/map.json",
+    "sha1": "b19060630b6a0d5386b95012b8c7c60337fe2d2a"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/LilycoveCity_ContestHall/map.json",
+    "mapName": "LilycoveCity_ContestHall",
+    "scriptsSourcePath": "data/maps/LilycoveCity_ContestHall/scripts.inc"
+  },
+  "mapGroup": 13,
+  "mapNum": 5,
+  "mapGroupSymbol": "gMapGroup_IndoorLilycove",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

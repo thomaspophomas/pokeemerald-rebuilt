@@ -1,0 +1,45 @@
+{
+  "id": "SafariZone_Southeast:3",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_Southeast/map.json",
+    "sha1": "e5c5f65c091a5136a9ac0e47e1102f231a6339ae"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SafariZone_Southeast/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
+      "x": 8,
+      "y": 26,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SafariZone_Southeast_EventScript_LittleGirl",
+      "flag": "0"
+    }
+  },
+  "map": "SafariZone_Southeast",
+  "mapId": "MAP_SAFARI_ZONE_SOUTHEAST",
+  "localId": 3,
+  "graphicsId": "OBJ_EVENT_GFX_LITTLE_GIRL",
+  "x": 8,
+  "y": 26,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "SafariZone_Southeast_EventScript_LittleGirl",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

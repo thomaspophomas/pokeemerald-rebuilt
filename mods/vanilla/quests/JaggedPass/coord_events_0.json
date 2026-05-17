@@ -1,0 +1,27 @@
+{
+  "id": "JaggedPass:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/JaggedPass/map.json",
+    "sha1": "94451c52cb35b0f7df10836f366d992c0e3f9080"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/JaggedPass/map.json",
+    "raw": {
+      "type": "weather",
+      "x": 13,
+      "y": 15,
+      "elevation": 3,
+      "weather": "COORD_EVENT_WEATHER_SUNNY"
+    }
+  },
+  "map": "JaggedPass",
+  "mapId": "MAP_JAGGED_PASS",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

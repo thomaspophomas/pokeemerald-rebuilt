@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_BRENDAN_ROUTE_119_TORCHIC",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_BRENDAN_ROUTE_119_TORCHIC] =\n    {\n        .trainerClass = TRAINER_CLASS_RIVAL,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,\n        .trainerPic = TRAINER_PIC_BRENDAN,\n        .trainerName = _(\"BRENDAN\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_BrendanRoute119Torchic),\n    },"
+  },
+  "symbol": "TRAINER_BRENDAN_ROUTE_119_TORCHIC",
+  "numericId": 528,
+  "trainerName": "BRENDAN",
+  "trainerClass": "TRAINER_CLASS_RIVAL",
+  "trainerPic": "TRAINER_PIC_BRENDAN",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_MALE",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY",
+  "partyRef": "sParty_BrendanRoute119Torchic",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "MossdeepCity_Mart:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Mart/map.json",
+    "sha1": "937a29e56f85228a80b1c796ba6dc28b8bd07e1e"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MossdeepCity_Mart/map.json",
+    "raw": {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_MOSSDEEP_CITY",
+      "dest_warp_id": "4"
+    }
+  },
+  "map": "MossdeepCity_Mart",
+  "mapId": "MAP_MOSSDEEP_CITY_MART",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

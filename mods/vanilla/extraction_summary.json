@@ -1,6 +1,7 @@
 {
   "mod": "vanilla",
   "schemaVersion": 1,
+  "layout": "entity_index_v2",
   "domains": [
     "maps",
     "npcs",
@@ -47,55 +48,55 @@
       "segments": 4
     },
     "flags": {
-      "sourceFiles": 4
+      "entries": 1418
     },
     "events": {
-      "sourceFiles": 1050
+      "sourceEntities": 1050
     },
     "language": {
-      "sourceFiles": 48
+      "sourceEntities": 48
     },
     "sprite_assets": {
-      "sourceFiles": 3732
+      "sourceEntities": 3732
     },
     "overworld_sprites": {
-      "sourceFiles": 300
+      "sourceEntities": 300
     },
     "battle_sprites": {
-      "sourceFiles": 2974
+      "sourceEntities": 2974
     },
     "followers": {
-      "sourceFiles": 299
+      "sourceEntities": 299
     },
     "outfits": {
-      "sourceFiles": 136
+      "sourceEntities": 136
     },
     "pokeballs": {
-      "sourceFiles": 474
+      "sourceEntities": 474
     },
     "engine_rulesets": {
       "rulesets": 1
     },
     "state": {
-      "sourceFiles": 5
+      "sourceEntities": 5
     },
     "quests": {
       "questHooks": 2408
     },
     "wild_encounters": {
-      "files": 1
+      "encounters": 135
     },
     "items": {
-      "sourceFiles": 475
+      "entries": 385
     },
     "pokemon": {
-      "sourceFiles": 2882
+      "entries": 440
     },
     "moves": {
-      "sourceFiles": 6
+      "entries": 356
     },
     "shops": {
-      "sourceFiles": 991
+      "shops": 36
     }
   }
 }

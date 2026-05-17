@@ -1,0 +1,31 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomWildMons:coord_events:6",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomWildMons/map.json",
+    "sha1": "677713676f305badbff4fde35ec44aa8e15a6379"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomWildMons/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 5,
+      "y": 19,
+      "elevation": 3,
+      "var": "VAR_TEMP_3",
+      "var_value": "1",
+      "script": "BattleFrontier_BattlePikeRoomWildMons_EventScript_NoTurningBack"
+    }
+  },
+  "map": "BattleFrontier_BattlePikeRoomWildMons",
+  "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_WILD_MONS",
+  "eventType": "coord_events",
+  "index": 6,
+  "script": "BattleFrontier_BattlePikeRoomWildMons_EventScript_NoTurningBack",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

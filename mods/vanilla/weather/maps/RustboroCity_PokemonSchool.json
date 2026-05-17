@@ -1,0 +1,16 @@
+{
+  "id": "RustboroCity_PokemonSchool:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonSchool/map.json",
+    "sha1": "bf4ca29432926880aeba032b3d1065c6dc8aa2a0"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/RustboroCity_PokemonSchool/map.json"
+  },
+  "map": "RustboroCity_PokemonSchool",
+  "mapId": "MAP_RUSTBORO_CITY_POKEMON_SCHOOL",
+  "weather": "WEATHER_NONE"
+}

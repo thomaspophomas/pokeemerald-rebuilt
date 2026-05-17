@@ -1,0 +1,29 @@
+{
+  "id": "RustboroCity_Mart_Pokemart_Expanded",
+  "domain": "shops",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Mart/scripts.inc",
+    "sha1": "064cba37df0c93452bb5e6cc75752460d861c58d"
+  },
+  "legacy": {
+    "kind": "pokemart_script_list",
+    "sourcePath": "data/maps/RustboroCity_Mart/scripts.inc"
+  },
+  "symbol": "RustboroCity_Mart_Pokemart_Expanded",
+  "map": "RustboroCity_Mart",
+  "items": [
+    "ITEM_POKE_BALL",
+    "ITEM_TIMER_BALL",
+    "ITEM_REPEAT_BALL",
+    "ITEM_POTION",
+    "ITEM_SUPER_POTION",
+    "ITEM_ANTIDOTE",
+    "ITEM_PARALYZE_HEAL",
+    "ITEM_ESCAPE_ROPE",
+    "ITEM_REPEL",
+    "ITEM_X_SPEED",
+    "ITEM_X_ATTACK",
+    "ITEM_X_DEFEND"
+  ]
+}

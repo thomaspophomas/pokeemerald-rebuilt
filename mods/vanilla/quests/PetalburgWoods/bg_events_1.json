@@ -1,0 +1,28 @@
+{
+  "id": "PetalburgWoods:bg_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/map.json",
+    "sha1": "67d0842207660bdef7b89d73a15eb7943073ee9a"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/PetalburgWoods/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 39,
+      "y": 35,
+      "elevation": 3,
+      "item": "ITEM_POTION",
+      "flag": "FLAG_HIDDEN_ITEM_PETALBURG_WOODS_POTION"
+    }
+  },
+  "map": "PetalburgWoods",
+  "mapId": "MAP_PETALBURG_WOODS",
+  "eventType": "bg_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

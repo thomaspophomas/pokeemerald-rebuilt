@@ -1,0 +1,28 @@
+{
+  "id": "Route110_TrickHouseEnd:bg_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEnd/map.json",
+    "sha1": "4aae9a518aabdc7632ab655e56fe0c80b12f25b7"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route110_TrickHouseEnd/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 4,
+      "y": 5,
+      "elevation": 3,
+      "item": "ITEM_NUGGET",
+      "flag": "FLAG_HIDDEN_ITEM_TRICK_HOUSE_NUGGET"
+    }
+  },
+  "map": "Route110_TrickHouseEnd",
+  "mapId": "MAP_ROUTE110_TRICK_HOUSE_END",
+  "eventType": "bg_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

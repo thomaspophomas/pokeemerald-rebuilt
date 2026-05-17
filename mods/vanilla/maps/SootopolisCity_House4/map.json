@@ -71,5 +71,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_House4/map.json",
+    "sha1": "d60775cfc5222e67e5c565ab7913b49a8969c316"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SootopolisCity_House4/map.json",
+    "mapName": "SootopolisCity_House4",
+    "scriptsSourcePath": "data/maps/SootopolisCity_House4/scripts.inc"
+  },
+  "mapGroup": 15,
+  "mapNum": 8,
+  "mapGroupSymbol": "gMapGroup_IndoorSootopolis",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

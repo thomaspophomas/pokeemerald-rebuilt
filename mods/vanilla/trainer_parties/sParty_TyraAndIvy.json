@@ -1,0 +1,17 @@
+{
+  "id": "sParty_TyraAndIvy",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_TyraAndIvy[] = {\n    {\n    .iv = 0,\n    .lvl = 18,\n    .species = SPECIES_ROSELIA,\n    .moves = {MOVE_GROWTH, MOVE_STUN_SPORE, MOVE_MEGA_DRAIN, MOVE_LEECH_SEED}\n    },\n    {\n    .iv = 0,\n    .lvl = 20,\n    .species = SPECIES_GRAVELER,\n    .moves = {MOVE_DEFENSE_CURL, MOVE_ROLLOUT, MOVE_MUD_SPORT, MOVE_ROCK_THROW}\n    }\n};"
+  },
+  "symbol": "sParty_TyraAndIvy",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 2
+}

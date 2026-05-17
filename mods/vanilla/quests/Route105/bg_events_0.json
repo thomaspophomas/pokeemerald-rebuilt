@@ -1,0 +1,28 @@
+{
+  "id": "Route105:bg_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route105/map.json",
+    "sha1": "079b5626bd4bf8964ba8c6ea38e06705daaaefac"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route105/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 15,
+      "y": 68,
+      "elevation": 3,
+      "item": "ITEM_HEART_SCALE",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_105_HEART_SCALE"
+    }
+  },
+  "map": "Route105",
+  "mapId": "MAP_ROUTE105",
+  "eventType": "bg_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

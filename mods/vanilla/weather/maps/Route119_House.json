@@ -1,0 +1,16 @@
+{
+  "id": "Route119_House:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_House/map.json",
+    "sha1": "bddc81b2d927f0991fcc11bf3c81b05613a9ae10"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/Route119_House/map.json"
+  },
+  "map": "Route119_House",
+  "mapId": "MAP_ROUTE119_HOUSE",
+  "weather": "WEATHER_NONE"
+}

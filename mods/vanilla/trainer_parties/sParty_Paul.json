@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Paul",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemDefaultMoves sParty_Paul[] = {\n    {\n    .iv = 10,\n    .lvl = 15,\n    .species = SPECIES_NUMEL,\n    },\n    {\n    .iv = 10,\n    .lvl = 15,\n    .species = SPECIES_ODDISH,\n    },\n    {\n    .iv = 10,\n    .lvl = 15,\n    .species = SPECIES_WINGULL,\n    }\n};"
+  },
+  "symbol": "sParty_Paul",
+  "partyType": "TrainerMonNoItemDefaultMoves",
+  "pokemonCount": 3
+}

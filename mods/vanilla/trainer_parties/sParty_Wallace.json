@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Wallace",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {\n    {\n    .iv = 255,\n    .lvl = 57,\n    .species = SPECIES_WAILORD,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_RAIN_DANCE, MOVE_WATER_SPOUT, MOVE_DOUBLE_EDGE, MOVE_BLIZZARD}\n    },\n    {\n    .iv = 255,\n    .lvl = 55,\n    .species = SPECIES_TENTACRUEL,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_TOXIC, MOVE_HYDRO_PUMP, MOVE_SLUDGE_BOMB, MOVE_ICE_BEAM}\n    },\n    {\n    .iv = 255,\n    .lvl = 56,\n    .species = SPECIES_LUDICOLO,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_GIGA_DRAIN, MOVE_SURF, MOVE_LEECH_SEED, MOVE_DOUBLE_TEAM}\n    },\n    {\n    .iv = 255,\n    .lvl = 56,\n    .species = SPECIES_WHISCASH,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_EARTHQUAKE, MOVE_SURF, MOVE_AMNESIA, MOVE_HYPER_BEAM}\n    },\n    {\n    .iv = 255,\n    .lvl = 56,\n    .species = SPECIES_GYARADOS,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_HYPER_BEAM, MOVE_SURF}\n    },\n    {\n    .iv = 255,\n    .lvl = 58,\n    .species = SPECIES_MILOTIC,\n    .heldItem = ITEM_SITRUS_BERRY,\n    .moves = {MOVE_RECOVER, MOVE_SURF, MOVE_ICE_BEAM, MOVE_TOXIC}\n    }\n};"
+  },
+  "symbol": "sParty_Wallace",
+  "partyType": "TrainerMonItemCustomMoves",
+  "pokemonCount": 6
+}

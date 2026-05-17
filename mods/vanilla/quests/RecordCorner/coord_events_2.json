@@ -1,0 +1,31 @@
+{
+  "id": "RecordCorner:coord_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RecordCorner/map.json",
+    "sha1": "e4f2e10aeeca18cc7a087f725eb854fb443be6cc"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/RecordCorner/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 13,
+      "y": 4,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "EventScript_RecordCenter_Spot1"
+    }
+  },
+  "map": "RecordCorner",
+  "mapId": "MAP_RECORD_CORNER",
+  "eventType": "coord_events",
+  "index": 2,
+  "script": "EventScript_RecordCenter_Spot1",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

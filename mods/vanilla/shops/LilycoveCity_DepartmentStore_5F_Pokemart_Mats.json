@@ -1,0 +1,27 @@
+{
+  "id": "LilycoveCity_DepartmentStore_5F_Pokemart_Mats",
+  "domain": "shops",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+    "sha1": "cd7aae47b8996a67b13e78af3da148a41c68791f"
+  },
+  "legacy": {
+    "kind": "pokemart_script_list",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc"
+  },
+  "symbol": "LilycoveCity_DepartmentStore_5F_Pokemart_Mats",
+  "map": "LilycoveCity_DepartmentStore_5F",
+  "items": [
+    "DECOR_SURF_MAT",
+    "DECOR_THUNDER_MAT",
+    "DECOR_FIRE_BLAST_MAT",
+    "DECOR_POWDER_SNOW_MAT",
+    "DECOR_ATTRACT_MAT",
+    "DECOR_FISSURE_MAT",
+    "DECOR_SPIKES_MAT",
+    "DECOR_GLITTER_MAT",
+    "DECOR_JUMP_MAT",
+    "DECOR_SPIN_MAT"
+  ]
+}

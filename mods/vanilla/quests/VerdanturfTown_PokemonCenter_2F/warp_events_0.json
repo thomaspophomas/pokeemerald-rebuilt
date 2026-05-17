@@ -1,0 +1,27 @@
+{
+  "id": "VerdanturfTown_PokemonCenter_2F:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_PokemonCenter_2F/map.json",
+    "sha1": "488944934d02031f8b9702def24c30a951a0d8c1"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/VerdanturfTown_PokemonCenter_2F/map.json",
+    "raw": {
+      "x": 1,
+      "y": 6,
+      "elevation": 4,
+      "dest_map": "MAP_VERDANTURF_TOWN_POKEMON_CENTER_1F",
+      "dest_warp_id": "2"
+    }
+  },
+  "map": "VerdanturfTown_PokemonCenter_2F",
+  "mapId": "MAP_VERDANTURF_TOWN_POKEMON_CENTER_2F",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

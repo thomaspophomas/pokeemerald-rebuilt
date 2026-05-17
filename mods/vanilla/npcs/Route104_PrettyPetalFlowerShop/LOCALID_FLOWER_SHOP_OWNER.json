@@ -1,0 +1,46 @@
+{
+  "id": "Route104_PrettyPetalFlowerShop:LOCALID_FLOWER_SHOP_OWNER",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104_PrettyPetalFlowerShop/map.json",
+    "sha1": "542967c73d7511b0e176ad552b7a077710b6a2e3"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route104_PrettyPetalFlowerShop/map.json",
+    "raw": {
+      "local_id": "LOCALID_FLOWER_SHOP_OWNER",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "x": 0,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route104_PrettyPetalFlowerShop_EventScript_ShopOwner",
+      "flag": "0"
+    }
+  },
+  "map": "Route104_PrettyPetalFlowerShop",
+  "mapId": "MAP_ROUTE104_PRETTY_PETAL_FLOWER_SHOP",
+  "localId": "LOCALID_FLOWER_SHOP_OWNER",
+  "graphicsId": "OBJ_EVENT_GFX_WOMAN_2",
+  "x": 0,
+  "y": 3,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Route104_PrettyPetalFlowerShop_EventScript_ShopOwner",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

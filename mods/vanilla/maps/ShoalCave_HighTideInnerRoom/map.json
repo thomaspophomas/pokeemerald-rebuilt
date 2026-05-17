@@ -16,5 +16,26 @@
   "object_events": [],
   "warp_events": [],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ShoalCave_HighTideInnerRoom/map.json",
+    "sha1": "9111784f42609896a270557751e869482635c04b"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/ShoalCave_HighTideInnerRoom/map.json",
+    "mapName": "ShoalCave_HighTideInnerRoom",
+    "scriptsSourcePath": "data/maps/ShoalCave_HighTideInnerRoom/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 51,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

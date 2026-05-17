@@ -1,0 +1,31 @@
+{
+  "id": "MossdeepCity_Gym:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Gym/map.json",
+    "sha1": "9a33d6559af206c544f98be7f035bb5a5ee65354"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MossdeepCity_Gym/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 2,
+      "y": 21,
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "MossdeepCity_Gym_EventScript_YellowFloorSwitch"
+    }
+  },
+  "map": "MossdeepCity_Gym",
+  "mapId": "MAP_MOSSDEEP_CITY_GYM",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": "MossdeepCity_Gym_EventScript_YellowFloorSwitch",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

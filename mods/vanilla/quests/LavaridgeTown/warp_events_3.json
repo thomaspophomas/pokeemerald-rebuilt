@@ -1,0 +1,27 @@
+{
+  "id": "LavaridgeTown:warp_events:3",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/map.json",
+    "sha1": "528036d4fe9b25a1f56aa0f6350f2014968009da"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LavaridgeTown/map.json",
+    "raw": {
+      "x": 9,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_LAVARIDGE_TOWN_POKEMON_CENTER_1F",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "LavaridgeTown",
+  "mapId": "MAP_LAVARIDGE_TOWN",
+  "eventType": "warp_events",
+  "index": 3,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

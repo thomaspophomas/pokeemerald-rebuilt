@@ -1,0 +1,27 @@
+{
+  "id": "NavelRock_Down02:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NavelRock_Down02/map.json",
+    "sha1": "2c8d6293137fe5471f6b9449614d0443619891c5"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/NavelRock_Down02/map.json",
+    "raw": {
+      "x": 5,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_NAVEL_ROCK_DOWN01",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "NavelRock_Down02",
+  "mapId": "MAP_NAVEL_ROCK_DOWN02",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

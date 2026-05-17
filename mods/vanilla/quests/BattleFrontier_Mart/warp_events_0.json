@@ -1,0 +1,27 @@
+{
+  "id": "BattleFrontier_Mart:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Mart/map.json",
+    "sha1": "d9488e1966acba5fdd1973bfd8f26c3144190ef6"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BattleFrontier_Mart/map.json",
+    "raw": {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_FRONTIER_OUTSIDE_WEST",
+      "dest_warp_id": "4"
+    }
+  },
+  "map": "BattleFrontier_Mart",
+  "mapId": "MAP_BATTLE_FRONTIER_MART",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -91,5 +91,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_PokemonCenter_2F/map.json",
+    "sha1": "3a9aa2abe407e3275e2f57b89635673604dec33a"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/DewfordTown_PokemonCenter_2F/map.json",
+    "mapName": "DewfordTown_PokemonCenter_2F",
+    "scriptsSourcePath": "data/maps/DewfordTown_PokemonCenter_2F/scripts.inc"
+  },
+  "mapGroup": 3,
+  "mapNum": 2,
+  "mapGroupSymbol": "gMapGroup_IndoorDewford",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

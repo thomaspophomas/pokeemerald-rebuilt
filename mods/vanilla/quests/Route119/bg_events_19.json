@@ -1,0 +1,30 @@
+{
+  "id": "Route119:bg_events:19",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119/map.json",
+    "sha1": "1c29f1dc3bee58d2813df5307a7b986c95776bd3"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route119/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 28,
+      "y": 9,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route119_EventScript_TrainerTipsDecoration"
+    }
+  },
+  "map": "Route119",
+  "mapId": "MAP_ROUTE119",
+  "eventType": "bg_events",
+  "index": 19,
+  "script": "Route119_EventScript_TrainerTipsDecoration",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

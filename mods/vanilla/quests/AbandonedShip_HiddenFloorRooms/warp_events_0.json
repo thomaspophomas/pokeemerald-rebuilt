@@ -1,0 +1,27 @@
+{
+  "id": "AbandonedShip_HiddenFloorRooms:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_HiddenFloorRooms/map.json",
+    "sha1": "0b85e2d08d3c35ab4df4c17fffe6733ca9cc50f2"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/AbandonedShip_HiddenFloorRooms/map.json",
+    "raw": {
+      "x": 6,
+      "y": 14,
+      "elevation": 3,
+      "dest_map": "MAP_ABANDONED_SHIP_HIDDEN_FLOOR_CORRIDORS",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "AbandonedShip_HiddenFloorRooms",
+  "mapId": "MAP_ABANDONED_SHIP_HIDDEN_FLOOR_ROOMS",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

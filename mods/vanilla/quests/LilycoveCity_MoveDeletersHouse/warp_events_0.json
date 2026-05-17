@@ -1,0 +1,27 @@
+{
+  "id": "LilycoveCity_MoveDeletersHouse:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_MoveDeletersHouse/map.json",
+    "sha1": "625a875c6b0e86f16bca1d7c4a9fdda6436dc541"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LilycoveCity_MoveDeletersHouse/map.json",
+    "raw": {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_LILYCOVE_CITY",
+      "dest_warp_id": "7"
+    }
+  },
+  "map": "LilycoveCity_MoveDeletersHouse",
+  "mapId": "MAP_LILYCOVE_CITY_MOVE_DELETERS_HOUSE",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

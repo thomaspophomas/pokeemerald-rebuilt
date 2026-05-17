@@ -1,0 +1,42 @@
+{
+  "id": "LittlerootTown:5",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/map.json",
+    "sha1": "1e04563b693f88e4476d9f7b49a2194b5e027957"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LittlerootTown/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_TRUCK",
+      "x": 2,
+      "y": 10,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK"
+    }
+  },
+  "map": "LittlerootTown",
+  "mapId": "MAP_LITTLEROOT_TOWN",
+  "localId": 5,
+  "graphicsId": "OBJ_EVENT_GFX_TRUCK",
+  "x": 2,
+  "y": 10,
+  "elevation": 4,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

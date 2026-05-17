@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_EDWIN_5",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_EDWIN_5] =\n    {\n        .trainerClass = TRAINER_CLASS_COLLECTOR,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,\n        .trainerPic = TRAINER_PIC_COLLECTOR,\n        .trainerName = _(\"EDWIN\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_Edwin5),\n    },"
+  },
+  "symbol": "TRAINER_EDWIN_5",
+  "numericId": 518,
+  "trainerName": "EDWIN",
+  "trainerClass": "TRAINER_CLASS_COLLECTOR",
+  "trainerPic": "TRAINER_PIC_COLLECTOR",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_Edwin5",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

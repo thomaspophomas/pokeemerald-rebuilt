@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_CAMDEN",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_CAMDEN] =\n    {\n        .trainerClass = TRAINER_CLASS_TRIATHLETE,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,\n        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,\n        .trainerName = _(\"CAMDEN\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_Camden),\n    },"
+  },
+  "symbol": "TRAINER_CAMDEN",
+  "numericId": 374,
+  "trainerName": "CAMDEN",
+  "trainerClass": "TRAINER_CLASS_TRIATHLETE",
+  "trainerPic": "TRAINER_PIC_SWIMMING_TRIATHLETE_M",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_SWIMMER",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_Camden",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

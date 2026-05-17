@@ -1,0 +1,16 @@
+{
+  "id": "AbandonedShip_Rooms_1F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Rooms_1F/map.json",
+    "sha1": "87b122e00c09fb8cda02119f454331b684de9250"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/AbandonedShip_Rooms_1F/map.json"
+  },
+  "map": "AbandonedShip_Rooms_1F",
+  "mapId": "MAP_ABANDONED_SHIP_ROOMS_1F",
+  "weather": "WEATHER_SHADE"
+}

@@ -1,23 +1,698 @@
 {
   "domain": "wild_encounters",
   "schemaVersion": 1,
-  "fileCount": 2,
-  "jsonFileCount": 2,
-  "bytes": 708008,
-  "sha1": "66d8343e757c8b3e500fb462d16156b6ac516329",
+  "fileCount": 137,
+  "jsonFileCount": 137,
+  "bytes": 480164,
+  "sha1": "74439d2523ebe2c6f9c49c8ceb58c824a487ecf2",
   "files": [
     {
-      "path": "mods/vanilla/wild_encounters/legacy/wild_encounters.json",
-      "sha1": "49cfb49e719fde5aa0543f883b6c85accb82ebac",
-      "bytes": 341425
+      "path": "mods/vanilla/wild_encounters/_source_manifest.json",
+      "sha1": "2bf2fd13c5ba0b168296ea209468dabb471c8b4b",
+      "bytes": 337
     },
     {
-      "path": "mods/vanilla/wild_encounters/wild_encounters.json",
-      "sha1": "a3c8a073131fb14e82eb9123060903dea4c1960f",
-      "bytes": 366583
+      "path": "mods/vanilla/wild_encounters/gBattlePikeWildMonHeaders/gBattlePike_1_131.json",
+      "sha1": "2dfe4da76b7fdafa2c007539adc07eedc5a7f5ef",
+      "bytes": 1948
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gBattlePikeWildMonHeaders/gBattlePike_2_132.json",
+      "sha1": "f70b1ec437061f192294b6d102d7ef977f52b37c",
+      "bytes": 1954
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gBattlePikeWildMonHeaders/gBattlePike_3_133.json",
+      "sha1": "1f7f0101b72b7ca33afb7bec4659d414f931f1b8",
+      "bytes": 1942
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gBattlePikeWildMonHeaders/gBattlePike_4_134.json",
+      "sha1": "3340129a71111ff13af361575484a0dabaaa8ae4",
+      "bytes": 1954
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gBattlePyramidWildMonHeaders/gBattlePyramid_1_124.json",
+      "sha1": "f978cad620fa13f78012ada00172622831a74a7d",
+      "bytes": 1974
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gBattlePyramidWildMonHeaders/gBattlePyramid_2_125.json",
+      "sha1": "8784ea5273bbdeb3a26e1aecff94e9dffd4bdc84",
+      "bytes": 1976
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gBattlePyramidWildMonHeaders/gBattlePyramid_3_126.json",
+      "sha1": "80dfc97e6e09b6e795e13b9a059d6b1684489ab3",
+      "bytes": 1982
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gBattlePyramidWildMonHeaders/gBattlePyramid_4_127.json",
+      "sha1": "0b58a571af30c6b62822bf2513a1ec8f89c015a9",
+      "bytes": 1984
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gBattlePyramidWildMonHeaders/gBattlePyramid_5_128.json",
+      "sha1": "528c301d0465c2f97eac4e17fe8d985d25c606a8",
+      "bytes": 1980
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gBattlePyramidWildMonHeaders/gBattlePyramid_6_129.json",
+      "sha1": "86d7774add580108e492eede99a682ed3225a9b7",
+      "bytes": 1979
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gBattlePyramidWildMonHeaders/gBattlePyramid_7_130.json",
+      "sha1": "a93e42f67fccaae27889500a54ca7c1e7c2ceb3e",
+      "bytes": 1981
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ABANDONED_SHIP_HIDDEN_FLOOR_CORRIDORS_56.json",
+      "sha1": "326748de3e4ba02f374c8e8f1d5ab1e7c3703960",
+      "bytes": 3416
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ABANDONED_SHIP_ROOMS_B1F_22.json",
+      "sha1": "2e41d3a8369a41c011dbbb9093506c566e493277",
+      "bytes": 3379
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ALTERING_CAVE_114.json",
+      "sha1": "a005bb228395f12b3c08a31943422a1482d8e3a1",
+      "bytes": 2867
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ALTERING_CAVE_115.json",
+      "sha1": "bbfd5d5a7018376ec69528fb175c43f08f2bdf0b",
+      "bytes": 2871
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ALTERING_CAVE_116.json",
+      "sha1": "0a0f3ac0ed34a1702d252de97793de12f46e3535",
+      "bytes": 2887
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ALTERING_CAVE_117.json",
+      "sha1": "442d51294674d1bfe0fcb0294b5d0595e36ba3c5",
+      "bytes": 2911
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ALTERING_CAVE_118.json",
+      "sha1": "f36c02c117069056e8c2edc5e8ef17f259e189e4",
+      "bytes": 2915
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ALTERING_CAVE_119.json",
+      "sha1": "2f79490244e23d6af49868d1660eb09755099356",
+      "bytes": 2875
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ALTERING_CAVE_120.json",
+      "sha1": "efd5217b486423279969b2382c67e425e3ab1956",
+      "bytes": 2899
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ALTERING_CAVE_121.json",
+      "sha1": "8e11c93879abd7dc276d6b608020fa11a917e16f",
+      "bytes": 2911
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ALTERING_CAVE_122.json",
+      "sha1": "bf8c5c116225f5f818a6fb409bb596b07b0a9b10",
+      "bytes": 2911
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ARTISAN_CAVE_1F_113.json",
+      "sha1": "c736af8b29b44b0f61f1a9f22be54c894b4a1863",
+      "bytes": 2917
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ARTISAN_CAVE_B1F_112.json",
+      "sha1": "6fa1c2053672ec4f376811a105e6bfd5a5665c53",
+      "bytes": 2920
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_CAVE_OF_ORIGIN_1F_67.json",
+      "sha1": "1b7075a600f19fcfbae865bb09397c6ab398328d",
+      "bytes": 2894
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_CAVE_OF_ORIGIN_ENTRANCE_66.json",
+      "sha1": "ba0d39dfaf35af0b688721c94688e4ae021120b5",
+      "bytes": 2906
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP1_68.json",
+      "sha1": "5a899c26dc338a3fdbf823c2847cf494c02a9a69",
+      "bytes": 2960
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP2_69.json",
+      "sha1": "7e67dbe48d86f73ad84da6bcaa52c88c22649753",
+      "bytes": 2960
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP3_70.json",
+      "sha1": "296623afa5d2181719a714b285699a6760115067",
+      "bytes": 2960
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_DESERT_UNDERPASS_111.json",
+      "sha1": "6b5bf9e6a1a70e200528c3a53adcf104ba7fc53f",
+      "bytes": 2896
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_DEWFORD_TOWN_85.json",
+      "sha1": "ac676ecf03d7b0c7be1cff2cb8f027fd8524c5f9",
+      "bytes": 3324
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_EVER_GRANDE_CITY_89.json",
+      "sha1": "4c92c097b539bd4ecab2a65003ad1d6b5b55561a",
+      "bytes": 3333
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_FIERY_PATH_24.json",
+      "sha1": "4641babc005014abc4c3cd1eac0c8f1097adb936",
+      "bytes": 2880
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_GRANITE_CAVE_1F_16.json",
+      "sha1": "0ddbe88b0e358716a78a357dcf442763ca353f8f",
+      "bytes": 2880
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_GRANITE_CAVE_B1F_17.json",
+      "sha1": "32c7c39793a9a701310cb215e4188ee6ae48b2e4",
+      "bytes": 2885
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_GRANITE_CAVE_B2F_23.json",
+      "sha1": "7be75cad213a882a0185a146478e9092a421ba6b",
+      "bytes": 3544
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_GRANITE_CAVE_STEVENS_ROOM_45.json",
+      "sha1": "78471602749d4bc21f0beb7282cf34bc30f6c9f0",
+      "bytes": 2897
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_JAGGED_PASS_26.json",
+      "sha1": "5563916482eef70adce453ecd66e323151f1acd7",
+      "bytes": 2875
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_LILYCOVE_CITY_84.json",
+      "sha1": "7ccea2d1bb6e4dfb51f9f0ecfdb5a48f0a896ac9",
+      "bytes": 3326
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MAGMA_HIDEOUT_1F_99.json",
+      "sha1": "d8b5092afd5b5ff24191cfc5c05900b6a9a96bc3",
+      "bytes": 2912
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MAGMA_HIDEOUT_2F_1R_100.json",
+      "sha1": "235236bed6709248c9a9bdf1061d7027aedb0333",
+      "bytes": 2922
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MAGMA_HIDEOUT_2F_2R_101.json",
+      "sha1": "b1f1cb1eb838d85b19db13ee1ef65aea0b89206b",
+      "bytes": 2922
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MAGMA_HIDEOUT_2F_3R_106.json",
+      "sha1": "5d442f9838b43c5c45de6f90e75d5a2fe8ef7e9b",
+      "bytes": 2922
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MAGMA_HIDEOUT_3F_1R_102.json",
+      "sha1": "8396a293ab19948509b48c79f8e60c80ee1fba5c",
+      "bytes": 2922
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MAGMA_HIDEOUT_3F_2R_103.json",
+      "sha1": "271f8033b8a6621549a762b54bf688ecc908b8d9",
+      "bytes": 2922
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MAGMA_HIDEOUT_3F_3R_105.json",
+      "sha1": "e8408dcf6ca34718c4d2e41ef75fc88313fedda7",
+      "bytes": 2922
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MAGMA_HIDEOUT_4F_104.json",
+      "sha1": "851c7c5620e275e3cf61883607cddd1697bcd578",
+      "bytes": 2913
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_METEOR_FALLS_1F_1R_77.json",
+      "sha1": "47156cd8f8ee9d0a4da698b30584dcd4c8f1c8b7",
+      "bytes": 4762
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_METEOR_FALLS_1F_2R_78.json",
+      "sha1": "d0bde59f370d554eb88db465015691767fe4de26",
+      "bytes": 4775
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_METEOR_FALLS_B1F_1R_79.json",
+      "sha1": "f48c38bfa2f196e8ecf83c8e26bcbf977da4bf48",
+      "bytes": 4778
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_METEOR_FALLS_B1F_2R_25.json",
+      "sha1": "36b1ae7e0f299d62abe807f4850ed87eb36e02bb",
+      "bytes": 4774
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_METEOR_FALLS_STEVENS_CAVE_123.json",
+      "sha1": "69235cdc2f5749b0fd90dfb9708f7e6d5630706c",
+      "bytes": 2926
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MIRAGE_TOWER_1F_107.json",
+      "sha1": "ed876e3f8a7de3acbd93b46e6693c15fdba92a74",
+      "bytes": 2923
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MIRAGE_TOWER_2F_108.json",
+      "sha1": "09474f97002c54ad3ff9fc3b3cb19c525f144b4a",
+      "bytes": 2923
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MIRAGE_TOWER_3F_109.json",
+      "sha1": "81da120fce52ee690ab0d512ab9162be885aaa89",
+      "bytes": 2923
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MIRAGE_TOWER_4F_110.json",
+      "sha1": "d2ef89775d1bdf2237e0a4222d19d52699681e24",
+      "bytes": 2923
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MOSSDEEP_CITY_87.json",
+      "sha1": "f510bb0fa9f9ea0a2b6bb4ec24efb6e472314fd3",
+      "bytes": 3328
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MT_PYRE_1F_18.json",
+      "sha1": "70e888de9072be2ee040565e63655ef1794751a5",
+      "bytes": 2889
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MT_PYRE_2F_38.json",
+      "sha1": "4c07c86c15cb4beac39d31484087b0315dcf8e76",
+      "bytes": 2889
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MT_PYRE_3F_39.json",
+      "sha1": "cccbdef09a979533ee7367cbe4d3530a492b0280",
+      "bytes": 2889
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MT_PYRE_4F_40.json",
+      "sha1": "2b75353d7739256a6c52df3ebfafcfde8a64589d",
+      "bytes": 2889
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MT_PYRE_5F_41.json",
+      "sha1": "81ea673038ef41ccd25829ce9e467c3bb9d0d2c3",
+      "bytes": 2889
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MT_PYRE_6F_42.json",
+      "sha1": "44b1315f4e643c9bcedc512e3ae39f242353ec2d",
+      "bytes": 2889
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MT_PYRE_EXTERIOR_43.json",
+      "sha1": "2564c873313a9e505115a4686d7fb493f2b0b12a",
+      "bytes": 2903
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_MT_PYRE_SUMMIT_44.json",
+      "sha1": "bb45ea928be42d44848f22b17ad30586f94ba78e",
+      "bytes": 2903
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_NEW_MAUVILLE_ENTRANCE_71.json",
+      "sha1": "5a49e391243b7708a3777f27cdedecf953506db1",
+      "bytes": 2934
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_NEW_MAUVILLE_INSIDE_32.json",
+      "sha1": "a57d67b307e96dec66e8153094e8660262285131",
+      "bytes": 2929
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_PACIFIDLOG_TOWN_88.json",
+      "sha1": "3ba03e10f35d081a5b9afb241f6f7b61692ce476",
+      "bytes": 3334
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_PETALBURG_CITY_90.json",
+      "sha1": "41d75d6f36aaebb576ca8d6e772a48232ee2328b",
+      "bytes": 3322
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_PETALBURG_WOODS_14.json",
+      "sha1": "7aabb18195732b3631416ed86b945f40a5f4bb07",
+      "bytes": 2888
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE101_0.json",
+      "sha1": "d6245033acdca8c78a113dcbe25391749b200fce",
+      "bytes": 2875
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE102_1.json",
+      "sha1": "9c7cddcff7bba8313d8365603993986429795e26",
+      "bytes": 4732
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE103_2.json",
+      "sha1": "cbab6903e0cc3c7d6b78b2652bf24fe835cd9039",
+      "bytes": 4748
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE104_3.json",
+      "sha1": "8b3ad6a72796b0df8072b03543e5580913755228",
+      "bytes": 4740
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE105_4.json",
+      "sha1": "9ac01d0ccdd091471849134fb612e52cb90414f7",
+      "bytes": 3312
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE106_27.json",
+      "sha1": "0ad13bc6a269f102f2a6e644500083c75d4190db",
+      "bytes": 3313
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE107_28.json",
+      "sha1": "e322808437fc578464f35b4462172d27595cc0c2",
+      "bytes": 3313
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE108_29.json",
+      "sha1": "333030fef074900ffd96c249915073d3b3df4b28",
+      "bytes": 3313
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE109_30.json",
+      "sha1": "b72c70ea1975de75d402438e13dfa57b21980aa5",
+      "bytes": 3313
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE110_5.json",
+      "sha1": "0e507c49d7a740237c38c11911ca2d11feff670c",
+      "bytes": 4754
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE111_6.json",
+      "sha1": "0438232c37fcbf5fe6e8dce7716b94245ccf5fe4",
+      "bytes": 5406
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE112_7.json",
+      "sha1": "7083f5b888ba54ccf2cd637805a419719bb56084",
+      "bytes": 2862
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE113_8.json",
+      "sha1": "22d349e9485b9f09601e15539e890fe84f1636fa",
+      "bytes": 2875
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE114_9.json",
+      "sha1": "d3b80a7a89977f55b4552ceff01b383ddc52b3e6",
+      "bytes": 5393
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE115_31.json",
+      "sha1": "f50f1fc70920df49c5172a9bf2ac3573ba6ee501",
+      "bytes": 4762
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE116_10.json",
+      "sha1": "5fb5d7000db6277a9a0cfaff3011b2945c9758f2",
+      "bytes": 2861
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE117_11.json",
+      "sha1": "772be4eb36b9e5c72df068a90ef48d3720cf657f",
+      "bytes": 4755
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE118_12.json",
+      "sha1": "55a613ba5602ee66f129416b842a6f6bbd642558",
+      "bytes": 4774
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE119_33.json",
+      "sha1": "1ae449d4ab72d95652160b123794a2b28ea68f3a",
+      "bytes": 4764
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE120_34.json",
+      "sha1": "a40d117cb8d0a7b0ad631ad31ab44f4d977ea1c7",
+      "bytes": 4748
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE121_35.json",
+      "sha1": "767a7ac69e1ab4279e6f3db7816cd61005712114",
+      "bytes": 4760
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE122_36.json",
+      "sha1": "0950f187abe107c84f8ab172b8750e99e04b7e82",
+      "bytes": 3314
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE123_37.json",
+      "sha1": "03e9f9a42cf57e77d0b9ccc4f0e7f5949a606f7c",
+      "bytes": 4760
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE124_13.json",
+      "sha1": "ba9e75fd5e47cc5760b03a87e4af01bf052d76d2",
+      "bytes": 3314
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE125_46.json",
+      "sha1": "bb753fbe10ce6a8e817675b67b5e00a72f105ad4",
+      "bytes": 3314
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE126_47.json",
+      "sha1": "2d9fcfa793eed6cb476a6fce3c6e9d28dc27974b",
+      "bytes": 3314
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE127_48.json",
+      "sha1": "6a9d1208c0b3eb2225dfbd409a19944773bf196c",
+      "bytes": 3314
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE128_49.json",
+      "sha1": "2457e10bc1cbc17708e73230eda7b4d12dc3a45a",
+      "bytes": 3311
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE129_50.json",
+      "sha1": "f1242ccf58542613ee77bb1e41d7ed513c0d7476",
+      "bytes": 3313
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE130_51.json",
+      "sha1": "4c0a053645c71dd88028b04a61b7989c5b2f344c",
+      "bytes": 4743
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE131_52.json",
+      "sha1": "f297e3562e993cbd66716955832834c6683b8dc9",
+      "bytes": 3314
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE132_53.json",
+      "sha1": "a736468238bf35dbdf6e6289967aa63c1be08c41",
+      "bytes": 3313
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE133_54.json",
+      "sha1": "e11bc763661ffebef6679856eacbcab6063b0eec",
+      "bytes": 3313
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_ROUTE134_55.json",
+      "sha1": "9f556669319e9cb7b8100ed3993c1643b4727abe",
+      "bytes": 3313
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_RUSTURF_TUNNEL_15.json",
+      "sha1": "a7ff77f0814e4405afe9e22587bc0f4d4969b55e",
+      "bytes": 2877
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SAFARI_ZONE_NORTHEAST_98.json",
+      "sha1": "cca648d4a25689d7f3e726a96f0c51520bdff55a",
+      "bytes": 3576
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SAFARI_ZONE_NORTHWEST_74.json",
+      "sha1": "96eaec120ad22bd36d2693f082bbb305c05f2da0",
+      "bytes": 4775
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SAFARI_ZONE_NORTH_73.json",
+      "sha1": "1f61cfa2f3637820e4cd348213e041db4b9ce77e",
+      "bytes": 3546
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SAFARI_ZONE_SOUTHEAST_97.json",
+      "sha1": "e392c1ac38697a948e08833d8fbdc5ed9a4c315a",
+      "bytes": 4793
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SAFARI_ZONE_SOUTHWEST_72.json",
+      "sha1": "65dc83e3de44ff0faea529365a2da80668ebd3b3",
+      "bytes": 4790
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SAFARI_ZONE_SOUTH_20.json",
+      "sha1": "2ab58d2d2d2a4c8f6b7fac91c6cb035b836506b5",
+      "bytes": 2911
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SEAFLOOR_CAVERN_ENTRANCE_65.json",
+      "sha1": "7c171062aae9c11800964bb20a3f5a177a5078c5",
+      "bytes": 3351
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SEAFLOOR_CAVERN_ROOM1_57.json",
+      "sha1": "856db9d9c963dd24018582f874afb4547a3c0a9f",
+      "bytes": 2901
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SEAFLOOR_CAVERN_ROOM2_58.json",
+      "sha1": "fa2889721eb66977bcc0471abe36d6ba08cf7e88",
+      "bytes": 2901
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SEAFLOOR_CAVERN_ROOM3_59.json",
+      "sha1": "dc9d3b9e320e1c29e6284459e0a3a7ef32957cfc",
+      "bytes": 2901
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SEAFLOOR_CAVERN_ROOM4_60.json",
+      "sha1": "afd8b997e1480a46e2df5082d11cfad1b1416b2e",
+      "bytes": 2901
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SEAFLOOR_CAVERN_ROOM5_61.json",
+      "sha1": "7d4c148fdba672790b4e069a5d533efda00ebd39",
+      "bytes": 2901
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SEAFLOOR_CAVERN_ROOM6_62.json",
+      "sha1": "449ed54385ac8c59491e2d7605b3ce8ba10d6097",
+      "bytes": 4766
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SEAFLOOR_CAVERN_ROOM7_63.json",
+      "sha1": "c7269ce8f0dd7ba71f8747ade50918d219e0774a",
+      "bytes": 4766
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SEAFLOOR_CAVERN_ROOM8_64.json",
+      "sha1": "62b48119c22c91565bbb852183d77a9bd42c9b9a",
+      "bytes": 2901
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SHOAL_CAVE_LOW_TIDE_ENTRANCE_ROOM_83.json",
+      "sha1": "ab0aa5dd95cf655a53eca581c592b47bfc3463be",
+      "bytes": 4805
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM_92.json",
+      "sha1": "1a9da83bac24280e21faf5e579b98fe4d406283a",
+      "bytes": 2928
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SHOAL_CAVE_LOW_TIDE_INNER_ROOM_82.json",
+      "sha1": "44d1ad00d8f071004b1aa5647de7cd307930604e",
+      "bytes": 4796
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SHOAL_CAVE_LOW_TIDE_LOWER_ROOM_81.json",
+      "sha1": "79223280471fdd5a052c797338cd8ad6d1486d1a",
+      "bytes": 2930
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SHOAL_CAVE_LOW_TIDE_STAIRS_ROOM_80.json",
+      "sha1": "358f442f8ff7e5b30e2cf266c399695c537beaff",
+      "bytes": 2933
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SKY_PILLAR_1F_93.json",
+      "sha1": "e5cefee43d8621dcc7d6b856f7adecffa7ec40a6",
+      "bytes": 2896
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SKY_PILLAR_3F_95.json",
+      "sha1": "0aac170018598dff386f301af2bdeb8ea0838e20",
+      "bytes": 2896
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SKY_PILLAR_5F_96.json",
+      "sha1": "bfc7e0c5e9d57979d695e170b906e5bd8b2d2b05",
+      "bytes": 2896
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SLATEPORT_CITY_86.json",
+      "sha1": "69efff6a886ea9174b4e9e93fa60c6b14f97e57a",
+      "bytes": 3330
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_SOOTOPOLIS_CITY_94.json",
+      "sha1": "26aa88b5fc56008c5cb43bab046304f7dcbbd46e",
+      "bytes": 3338
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_UNDERWATER_ROUTE124_91.json",
+      "sha1": "585059d3698fb3bf39598645c2b1aa620f37d5d3",
+      "bytes": 2126
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_UNDERWATER_ROUTE126_21.json",
+      "sha1": "fdc2170929c404540265ae7a5dc04ba2a30fb074",
+      "bytes": 2126
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_VICTORY_ROAD_1F_19.json",
+      "sha1": "ddd09d4b96f30ad66605ec89f8d0a41256bf4755",
+      "bytes": 2896
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_VICTORY_ROAD_B1F_75.json",
+      "sha1": "61e3ec0b651bd6bfc4fcbd8a7c2c03e6d9a7e9f6",
+      "bytes": 3558
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/gWildMonHeaders/MAP_VICTORY_ROAD_B2F_76.json",
+      "sha1": "f43fe43542a1c3971432cc4c6413865694b5611d",
+      "bytes": 4766
+    },
+    {
+      "path": "mods/vanilla/wild_encounters/index.json",
+      "sha1": "65d34576ab6e17a33fbbdad8a5bd2585f6765b97",
+      "bytes": 35935
     }
   ],
   "counts": {
-    "files": 1
+    "encounters": 135
   }
 }

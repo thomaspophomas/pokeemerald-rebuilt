@@ -1,0 +1,27 @@
+{
+  "id": "LavaridgeTown_Gym_1F:warp_events:14",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Gym_1F/map.json",
+    "sha1": "31420f5ccda4f9fa5f1562b2465883c76f72e3a9"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LavaridgeTown_Gym_1F/map.json",
+    "raw": {
+      "x": 3,
+      "y": 6,
+      "elevation": 3,
+      "dest_map": "MAP_LAVARIDGE_TOWN_GYM_B1F",
+      "dest_warp_id": "12"
+    }
+  },
+  "map": "LavaridgeTown_Gym_1F",
+  "mapId": "MAP_LAVARIDGE_TOWN_GYM_1F",
+  "eventType": "warp_events",
+  "index": 14,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

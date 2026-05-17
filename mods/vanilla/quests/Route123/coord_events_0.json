@@ -1,0 +1,27 @@
+{
+  "id": "Route123:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route123/map.json",
+    "sha1": "5f30055b99ad151e31bfbdc0bdab9776e6da6471"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route123/map.json",
+    "raw": {
+      "type": "weather",
+      "x": 90,
+      "y": 16,
+      "elevation": 3,
+      "weather": "COORD_EVENT_WEATHER_ROUTE123_CYCLE"
+    }
+  },
+  "map": "Route123",
+  "mapId": "MAP_ROUTE123",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

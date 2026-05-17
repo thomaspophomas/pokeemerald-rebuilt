@@ -1,0 +1,46 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F:LOCALID_SPACE_CENTER_2F_SCIENTIST",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/map.json",
+    "sha1": "1b87fdfef508a18fb47e850380133fcbd3be7de7"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/map.json",
+    "raw": {
+      "local_id": "LOCALID_SPACE_CENTER_2F_SCIENTIST",
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 5,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MossdeepCity_SpaceCenter_2F_EventScript_Scientist",
+      "flag": "0"
+    }
+  },
+  "map": "MossdeepCity_SpaceCenter_2F",
+  "mapId": "MAP_MOSSDEEP_CITY_SPACE_CENTER_2F",
+  "localId": "LOCALID_SPACE_CENTER_2F_SCIENTIST",
+  "graphicsId": "OBJ_EVENT_GFX_SCIENTIST_1",
+  "x": 5,
+  "y": 6,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "MossdeepCity_SpaceCenter_2F_EventScript_Scientist",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

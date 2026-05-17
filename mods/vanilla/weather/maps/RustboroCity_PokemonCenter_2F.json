@@ -1,0 +1,16 @@
+{
+  "id": "RustboroCity_PokemonCenter_2F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonCenter_2F/map.json",
+    "sha1": "e5d8b3a996661125d64d455ded8a0f71196b7c31"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/RustboroCity_PokemonCenter_2F/map.json"
+  },
+  "map": "RustboroCity_PokemonCenter_2F",
+  "mapId": "MAP_RUSTBORO_CITY_POKEMON_CENTER_2F",
+  "weather": "WEATHER_NONE"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "TrainerHill_Entrance:warp_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Entrance/map.json",
+    "sha1": "02b66cc3db7b5407fe2cc48cfdfda6fc00afaf5d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/TrainerHill_Entrance/map.json",
+    "raw": {
+      "x": 9,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_TRAINER_HILL_1F",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "TrainerHill_Entrance",
+  "mapId": "MAP_TRAINER_HILL_ENTRANCE",
+  "eventType": "warp_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

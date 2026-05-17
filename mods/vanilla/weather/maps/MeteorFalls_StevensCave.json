@@ -1,0 +1,16 @@
+{
+  "id": "MeteorFalls_StevensCave:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_StevensCave/map.json",
+    "sha1": "45667881b4bb07477d9439a87ecada7a47a290da"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/MeteorFalls_StevensCave/map.json"
+  },
+  "map": "MeteorFalls_StevensCave",
+  "mapId": "MAP_METEOR_FALLS_STEVENS_CAVE",
+  "weather": "WEATHER_NONE"
+}

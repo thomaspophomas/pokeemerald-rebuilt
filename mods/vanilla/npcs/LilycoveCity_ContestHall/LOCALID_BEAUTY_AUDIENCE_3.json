@@ -1,0 +1,46 @@
+{
+  "id": "LilycoveCity_ContestHall:LOCALID_BEAUTY_AUDIENCE_3",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestHall/map.json",
+    "sha1": "b19060630b6a0d5386b95012b8c7c60337fe2d2a"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LilycoveCity_ContestHall/map.json",
+    "raw": {
+      "local_id": "LOCALID_BEAUTY_AUDIENCE_3",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
+      "x": 30,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LilycoveCity_ContestHall_EventScript_BeautyContestAudience3",
+      "flag": "0"
+    }
+  },
+  "map": "LilycoveCity_ContestHall",
+  "mapId": "MAP_LILYCOVE_CITY_CONTEST_HALL",
+  "localId": "LOCALID_BEAUTY_AUDIENCE_3",
+  "graphicsId": "OBJ_EVENT_GFX_WOMAN_1",
+  "x": 30,
+  "y": 11,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "LilycoveCity_ContestHall_EventScript_BeautyContestAudience3",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

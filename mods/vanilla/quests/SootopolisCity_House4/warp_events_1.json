@@ -1,0 +1,27 @@
+{
+  "id": "SootopolisCity_House4:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_House4/map.json",
+    "sha1": "d60775cfc5222e67e5c565ab7913b49a8969c316"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SootopolisCity_House4/map.json",
+    "raw": {
+      "x": 4,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SOOTOPOLIS_CITY",
+      "dest_warp_id": "7"
+    }
+  },
+  "map": "SootopolisCity_House4",
+  "mapId": "MAP_SOOTOPOLIS_CITY_HOUSE4",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

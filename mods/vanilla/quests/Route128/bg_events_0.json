@@ -1,0 +1,28 @@
+{
+  "id": "Route128:bg_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route128/map.json",
+    "sha1": "20b9cdab55e7f5ce9f2b0ff580fe5ab2aab22d74"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route128/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 49,
+      "y": 9,
+      "elevation": 3,
+      "item": "ITEM_HEART_SCALE",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_128_HEART_SCALE_1"
+    }
+  },
+  "map": "Route128",
+  "mapId": "MAP_ROUTE128",
+  "eventType": "bg_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

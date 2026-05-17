@@ -1,0 +1,27 @@
+{
+  "id": "Route123_BerryMastersHouse:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route123_BerryMastersHouse/map.json",
+    "sha1": "778a54a89dafe951e7e20b7816de8e63d8034560"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route123_BerryMastersHouse/map.json",
+    "raw": {
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE123",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Route123_BerryMastersHouse",
+  "mapId": "MAP_ROUTE123_BERRY_MASTERS_HOUSE",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -85,5 +85,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Mart/map.json",
+    "sha1": "2157d6268f73748aa61e376f99db7a13d56c7eff"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/PetalburgCity_Mart/map.json",
+    "mapName": "PetalburgCity_Mart",
+    "scriptsSourcePath": "data/maps/PetalburgCity_Mart/scripts.inc"
+  },
+  "mapGroup": 8,
+  "mapNum": 6,
+  "mapGroupSymbol": "gMapGroup_IndoorPetalburg",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,31 @@
+{
+  "id": "Route110:coord_events:8",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/map.json",
+    "sha1": "8a0d70f41dabc8b115727a1fccde79f1c803c9e1"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route110/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 10,
+      "y": 85,
+      "elevation": 3,
+      "var": "VAR_REGISTER_BIRCH_STATE",
+      "var_value": "1",
+      "script": "Route110_EventScript_BirchScene4"
+    }
+  },
+  "map": "Route110",
+  "mapId": "MAP_ROUTE110",
+  "eventType": "coord_events",
+  "index": 8,
+  "script": "Route110_EventScript_BirchScene4",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

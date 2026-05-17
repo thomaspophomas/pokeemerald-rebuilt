@@ -1,0 +1,27 @@
+{
+  "id": "MauvilleCity_Mart:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Mart/map.json",
+    "sha1": "72672da5cc97f36cb33937dd5b2004f080258233"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MauvilleCity_Mart/map.json",
+    "raw": {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_MAUVILLE_CITY",
+      "dest_warp_id": "3"
+    }
+  },
+  "map": "MauvilleCity_Mart",
+  "mapId": "MAP_MAUVILLE_CITY_MART",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

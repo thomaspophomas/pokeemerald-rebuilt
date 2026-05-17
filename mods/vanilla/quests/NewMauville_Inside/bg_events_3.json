@@ -1,0 +1,30 @@
+{
+  "id": "NewMauville_Inside:bg_events:3",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NewMauville_Inside/map.json",
+    "sha1": "32f18a7e6d35bfd09d72368f33c954b09c84cb81"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/NewMauville_Inside/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 33,
+      "y": 4,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NewMauville_Inside_EventScript_Generator"
+    }
+  },
+  "map": "NewMauville_Inside",
+  "mapId": "MAP_NEW_MAUVILLE_INSIDE",
+  "eventType": "bg_events",
+  "index": 3,
+  "script": "NewMauville_Inside_EventScript_Generator",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

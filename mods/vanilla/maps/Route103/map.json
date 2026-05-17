@@ -306,5 +306,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route103_EventScript_RouteSign"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route103/map.json",
+    "sha1": "1f8a6f5e726bb7c76e6c8bb479101490b2c1a5ae"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route103/map.json",
+    "mapName": "Route103",
+    "scriptsSourcePath": "data/maps/Route103/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 18,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Isabel2",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemDefaultMoves sParty_Isabel2[] = {\n    {\n    .iv = 10,\n    .lvl = 26,\n    .species = SPECIES_PLUSLE,\n    .heldItem = ITEM_ORAN_BERRY\n    },\n    {\n    .iv = 10,\n    .lvl = 26,\n    .species = SPECIES_MINUN,\n    .heldItem = ITEM_ORAN_BERRY\n    }\n};"
+  },
+  "symbol": "sParty_Isabel2",
+  "partyType": "TrainerMonItemDefaultMoves",
+  "pokemonCount": 2
+}

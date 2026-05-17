@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_JAZMYN",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_JAZMYN] =\n    {\n        .trainerClass = TRAINER_CLASS_COOLTRAINER_2,\n        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,\n        .trainerPic = TRAINER_PIC_COOLTRAINER_F,\n        .trainerName = _(\"JAZMYN\"),\n        .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_Jazmyn),\n    },"
+  },
+  "symbol": "TRAINER_JAZMYN",
+  "numericId": 503,
+  "trainerName": "JAZMYN",
+  "trainerClass": "TRAINER_CLASS_COOLTRAINER_2",
+  "trainerPic": "TRAINER_PIC_COOLTRAINER_F",
+  "encounterMusicGender": "F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY",
+  "partyRef": "sParty_Jazmyn",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "VerdanturfTown:bg_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown/map.json",
+    "sha1": "04541800f7c28fd39bd5e6aa6c17bd2c0e519fb3"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/VerdanturfTown/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 17,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Common_EventScript_ShowPokemonCenterSign"
+    }
+  },
+  "map": "VerdanturfTown",
+  "mapId": "MAP_VERDANTURF_TOWN",
+  "eventType": "bg_events",
+  "index": 2,
+  "script": "Common_EventScript_ShowPokemonCenterSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

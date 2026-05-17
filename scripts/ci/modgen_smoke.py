@@ -139,6 +139,31 @@ def main() -> int:
             mod_root / "maps" / "map_groups.json",
             {"group_order": ["gMapGroup_Demo"], "gMapGroup_Demo": ["DemoTown"]},
         )
+        write_json(
+            mod_root / "trainers" / "TRAINER_DEMO.json",
+            {
+                "id": "TRAINER_DEMO",
+                "domain": "trainers",
+                "schemaVersion": 1,
+                "source": {"path": "src/data/trainers.h", "sha1": "demo"},
+                "legacy": {"kind": "trainer_c_initializer"},
+                "symbol": "TRAINER_DEMO",
+            },
+        )
+        write_json(
+            mod_root / "trainers" / "index.json",
+            {
+                "domain": "trainers",
+                "schemaVersion": 1,
+                "entries": [
+                    {
+                        "id": "TRAINER_DEMO",
+                        "path": "TRAINER_DEMO.json",
+                        "legacyKind": "trainer_c_initializer",
+                    }
+                ],
+            },
+        )
         for domain in api_domains:
             domain_root = mod_root / domain
             if domain_root.exists():
@@ -189,7 +214,7 @@ def main() -> int:
             "MOD_NPC_INTERACTION_SHARED_READONLY",
             "demo:demo_town",
             "demo:demo_engine",
-            "demo:trainers:manifest",
+            "demo:trainers:TRAINER_DEMO",
             "gModDomainFileCount",
         ]
         for needle in required:

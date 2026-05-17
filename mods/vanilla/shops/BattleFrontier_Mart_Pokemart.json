@@ -1,0 +1,30 @@
+{
+  "id": "BattleFrontier_Mart_Pokemart",
+  "domain": "shops",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Mart/scripts.inc",
+    "sha1": "e8269950fe6ceeeec601d93208e6255555526b6b"
+  },
+  "legacy": {
+    "kind": "pokemart_script_list",
+    "sourcePath": "data/maps/BattleFrontier_Mart/scripts.inc"
+  },
+  "symbol": "BattleFrontier_Mart_Pokemart",
+  "map": "BattleFrontier_Mart",
+  "items": [
+    "ITEM_ULTRA_BALL",
+    "ITEM_HYPER_POTION",
+    "ITEM_MAX_POTION",
+    "ITEM_FULL_RESTORE",
+    "ITEM_FULL_HEAL",
+    "ITEM_REVIVE",
+    "ITEM_MAX_REPEL",
+    "ITEM_PROTEIN",
+    "ITEM_CALCIUM",
+    "ITEM_IRON",
+    "ITEM_ZINC",
+    "ITEM_CARBOS",
+    "ITEM_HP_UP"
+  ]
+}

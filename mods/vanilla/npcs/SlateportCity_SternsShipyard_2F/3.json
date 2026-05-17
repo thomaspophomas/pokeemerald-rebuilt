@@ -1,0 +1,45 @@
+{
+  "id": "SlateportCity_SternsShipyard_2F:3",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_SternsShipyard_2F/map.json",
+    "sha1": "59914c5699b90c3d6a33767776be918a8a6e7000"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SlateportCity_SternsShipyard_2F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 0,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SlateportCity_SternsShipyard_2F_EventScript_Scientist2",
+      "flag": "0"
+    }
+  },
+  "map": "SlateportCity_SternsShipyard_2F",
+  "mapId": "MAP_SLATEPORT_CITY_STERNS_SHIPYARD_2F",
+  "localId": 3,
+  "graphicsId": "OBJ_EVENT_GFX_SCIENTIST_1",
+  "x": 0,
+  "y": 9,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "SlateportCity_SternsShipyard_2F_EventScript_Scientist2",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

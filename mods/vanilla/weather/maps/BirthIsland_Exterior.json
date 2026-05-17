@@ -1,0 +1,16 @@
+{
+  "id": "BirthIsland_Exterior:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BirthIsland_Exterior/map.json",
+    "sha1": "e175c45e9fec45b267b604a2318fdca43e0d52c0"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/BirthIsland_Exterior/map.json"
+  },
+  "map": "BirthIsland_Exterior",
+  "mapId": "MAP_BIRTH_ISLAND_EXTERIOR",
+  "weather": "WEATHER_NONE"
+}

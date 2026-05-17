@@ -1,0 +1,30 @@
+{
+  "id": "LittlerootTown_MaysHouse_2F:bg_events:3",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_2F/map.json",
+    "sha1": "22dcc564c8c9748ea6f038ccb8eb713be5bb82ee"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_2F/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 8,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LittlerootTown_MaysHouse_2F_EventScript_PC"
+    }
+  },
+  "map": "LittlerootTown_MaysHouse_2F",
+  "mapId": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F",
+  "eventType": "bg_events",
+  "index": 3,
+  "script": "LittlerootTown_MaysHouse_2F_EventScript_PC",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

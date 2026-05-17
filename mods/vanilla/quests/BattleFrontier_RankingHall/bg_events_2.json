@@ -1,0 +1,30 @@
+{
+  "id": "BattleFrontier_RankingHall:bg_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_RankingHall/map.json",
+    "sha1": "ccb6f6b313550f026597ba7560b564f5093c04b9"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BattleFrontier_RankingHall/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 26,
+      "y": 5,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "BattleFrontier_RankingHall_EventScript_TowerMultisRecords"
+    }
+  },
+  "map": "BattleFrontier_RankingHall",
+  "mapId": "MAP_BATTLE_FRONTIER_RANKING_HALL",
+  "eventType": "bg_events",
+  "index": 2,
+  "script": "BattleFrontier_RankingHall_EventScript_TowerMultisRecords",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

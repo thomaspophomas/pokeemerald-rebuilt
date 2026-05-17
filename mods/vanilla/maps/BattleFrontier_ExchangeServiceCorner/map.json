@@ -156,5 +156,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ExchangeServiceCorner/map.json",
+    "sha1": "0fd32284b9c26cb84c2bcbe85f30bb430f4ded98"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/BattleFrontier_ExchangeServiceCorner/map.json",
+    "mapName": "BattleFrontier_ExchangeServiceCorner",
+    "scriptsSourcePath": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 42,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

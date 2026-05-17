@@ -1,0 +1,16 @@
+{
+  "id": "TrainerHill_3F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_3F/map.json",
+    "sha1": "1d17117125f120dcec26380b9985ed13ec52222a"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/TrainerHill_3F/map.json"
+  },
+  "map": "TrainerHill_3F",
+  "mapId": "MAP_TRAINER_HILL_3F",
+  "weather": "WEATHER_NONE"
+}

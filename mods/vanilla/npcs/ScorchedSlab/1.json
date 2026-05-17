@@ -1,0 +1,45 @@
+{
+  "id": "ScorchedSlab:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ScorchedSlab/map.json",
+    "sha1": "5baa71b2abf44bd5419adeee7b4cfd1e10d5336c"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/ScorchedSlab/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 7,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ScorchedSlab_EventScript_ItemTMSunnyDay",
+      "flag": "FLAG_ITEM_SCORCHED_SLAB_TM_SUNNY_DAY"
+    }
+  },
+  "map": "ScorchedSlab",
+  "mapId": "MAP_SCORCHED_SLAB",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_ITEM_BALL",
+  "x": 7,
+  "y": 5,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "ScorchedSlab_EventScript_ItemTMSunnyDay",
+  "flag": "FLAG_ITEM_SCORCHED_SLAB_TM_SUNNY_DAY",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

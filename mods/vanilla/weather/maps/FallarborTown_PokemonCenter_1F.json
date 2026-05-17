@@ -1,0 +1,16 @@
+{
+  "id": "FallarborTown_PokemonCenter_1F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_PokemonCenter_1F/map.json",
+    "sha1": "351d952038e4596255ccc8bca53055b081e79823"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/FallarborTown_PokemonCenter_1F/map.json"
+  },
+  "map": "FallarborTown_PokemonCenter_1F",
+  "mapId": "MAP_FALLARBOR_TOWN_POKEMON_CENTER_1F",
+  "weather": "WEATHER_NONE"
+}

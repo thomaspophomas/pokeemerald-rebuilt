@@ -1,0 +1,31 @@
+{
+  "id": "TerraCave_End:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TerraCave_End/map.json",
+    "sha1": "379b259aa32fd18b04dcd1df4e74fbb02353b876"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/TerraCave_End/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 17,
+      "y": 26,
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
+      "var_value": "1",
+      "script": "TerraCave_End_EventScript_Groudon"
+    }
+  },
+  "map": "TerraCave_End",
+  "mapId": "MAP_TERRA_CAVE_END",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": "TerraCave_End_EventScript_Groudon",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

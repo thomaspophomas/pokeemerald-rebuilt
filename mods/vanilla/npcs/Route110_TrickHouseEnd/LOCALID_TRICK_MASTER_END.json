@@ -1,0 +1,46 @@
+{
+  "id": "Route110_TrickHouseEnd:LOCALID_TRICK_MASTER_END",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEnd/map.json",
+    "sha1": "4aae9a518aabdc7632ab655e56fe0c80b12f25b7"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route110_TrickHouseEnd/map.json",
+    "raw": {
+      "local_id": "LOCALID_TRICK_MASTER_END",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
+      "x": 4,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route110_TrickHouseEnd_EventScript_TrickMaster",
+      "flag": "FLAG_HIDE_TRICK_HOUSE_END_MAN"
+    }
+  },
+  "map": "Route110_TrickHouseEnd",
+  "mapId": "MAP_ROUTE110_TRICK_HOUSE_END",
+  "localId": "LOCALID_TRICK_MASTER_END",
+  "graphicsId": "OBJ_EVENT_GFX_MAN_1",
+  "x": 4,
+  "y": 5,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Route110_TrickHouseEnd_EventScript_TrickMaster",
+  "flag": "FLAG_HIDE_TRICK_HOUSE_END_MAN",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ContestHallCool:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ContestHallCool/map.json",
+    "sha1": "d1a98c2a3dd69a9bc6c4fc7fd3d4dac65cbfeb4f"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/ContestHallCool/map.json"
+  },
+  "map": "ContestHallCool",
+  "mapId": "MAP_CONTEST_HALL_COOL",
+  "weather": "WEATHER_NONE"
+}

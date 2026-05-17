@@ -71,5 +71,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_HerbShop/map.json",
+    "sha1": "0ec35dfb3dc9816961ab92c88de44bde4562dbfb"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/LavaridgeTown_HerbShop/map.json",
+    "mapName": "LavaridgeTown_HerbShop",
+    "scriptsSourcePath": "data/maps/LavaridgeTown_HerbShop/scripts.inc"
+  },
+  "mapGroup": 4,
+  "mapNum": 0,
+  "mapGroupSymbol": "gMapGroup_IndoorLavaridge",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

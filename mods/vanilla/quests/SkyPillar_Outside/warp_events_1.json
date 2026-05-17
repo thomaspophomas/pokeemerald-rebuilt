@@ -1,0 +1,27 @@
+{
+  "id": "SkyPillar_Outside:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Outside/map.json",
+    "sha1": "80f13b591e884a86c91213aa9b43d7af15b5cc85"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SkyPillar_Outside/map.json",
+    "raw": {
+      "x": 14,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_SKY_PILLAR_1F",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "SkyPillar_Outside",
+  "mapId": "MAP_SKY_PILLAR_OUTSIDE",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

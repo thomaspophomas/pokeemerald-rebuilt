@@ -35,5 +35,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route122/map.json",
+    "sha1": "c813398d325d07c00906655262fd0071eec1085d"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route122/map.json",
+    "mapName": "Route122",
+    "scriptsSourcePath": "data/maps/Route122/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 37,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

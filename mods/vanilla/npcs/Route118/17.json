@@ -1,0 +1,45 @@
+{
+  "id": "Route118:17",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route118/map.json",
+    "sha1": "e722f5845bad96db2f079abf577a8918ccdf2db5"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route118/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
+      "x": 39,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Route118_EventScript_Barny",
+      "flag": "0"
+    }
+  },
+  "map": "Route118",
+  "mapId": "MAP_ROUTE118",
+  "localId": 17,
+  "graphicsId": "OBJ_EVENT_GFX_FISHERMAN",
+  "x": 39,
+  "y": 15,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "2",
+  "script": "Route118_EventScript_Barny",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

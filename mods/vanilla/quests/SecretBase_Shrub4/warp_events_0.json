@@ -1,0 +1,27 @@
+{
+  "id": "SecretBase_Shrub4:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SecretBase_Shrub4/map.json",
+    "sha1": "4bc7e89bf321283c90cbe3497beb8a9b0cf04add"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SecretBase_Shrub4/map.json",
+    "raw": {
+      "x": 11,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "WARP_ID_SECRET_BASE"
+    }
+  },
+  "map": "SecretBase_Shrub4",
+  "mapId": "MAP_SECRET_BASE_SHRUB4",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

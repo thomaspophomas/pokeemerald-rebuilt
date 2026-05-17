@@ -1,0 +1,46 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub:LOCALID_TRAINER_FAN_CLUB_EXPERT_F",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/map.json",
+    "sha1": "313952f28ca6d31fe5282c6632fdf7ab141b0eca"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/map.json",
+    "raw": {
+      "local_id": "LOCALID_TRAINER_FAN_CLUB_EXPERT_F",
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_F",
+      "x": 10,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LilycoveCity_PokemonTrainerFanClub_EventScript_ExpertF",
+      "flag": "FLAG_HIDE_FANCLUB_OLD_LADY"
+    }
+  },
+  "map": "LilycoveCity_PokemonTrainerFanClub",
+  "mapId": "MAP_LILYCOVE_CITY_POKEMON_TRAINER_FAN_CLUB",
+  "localId": "LOCALID_TRAINER_FAN_CLUB_EXPERT_F",
+  "graphicsId": "OBJ_EVENT_GFX_EXPERT_F",
+  "x": 10,
+  "y": 10,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "LilycoveCity_PokemonTrainerFanClub_EventScript_ExpertF",
+  "flag": "FLAG_HIDE_FANCLUB_OLD_LADY",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

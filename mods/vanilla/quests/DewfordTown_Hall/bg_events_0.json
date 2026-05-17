@@ -1,0 +1,30 @@
+{
+  "id": "DewfordTown_Hall:bg_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Hall/map.json",
+    "sha1": "734f741102c8ed0a7e71cd3c858059f71bdddb72"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/DewfordTown_Hall/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 0,
+      "y": 1,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "DewfordTown_Hall_EventScript_Bookshelf"
+    }
+  },
+  "map": "DewfordTown_Hall",
+  "mapId": "MAP_DEWFORD_TOWN_HALL",
+  "eventType": "bg_events",
+  "index": 0,
+  "script": "DewfordTown_Hall_EventScript_Bookshelf",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

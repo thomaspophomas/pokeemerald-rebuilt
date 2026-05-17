@@ -1,0 +1,16 @@
+{
+  "id": "SlateportCity_Harbor:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/map.json",
+    "sha1": "75cd1653854ff3fa0e1314dbec4cf661284b8498"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/SlateportCity_Harbor/map.json"
+  },
+  "map": "SlateportCity_Harbor",
+  "mapId": "MAP_SLATEPORT_CITY_HARBOR",
+  "weather": "WEATHER_NONE"
+}

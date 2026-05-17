@@ -1,0 +1,45 @@
+{
+  "id": "Underwater_SeafloorCavern:4",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_SeafloorCavern/map.json",
+    "sha1": "13f1defdb82691bd427253e000013c9ff160fb0e"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Underwater_SeafloorCavern/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL",
+      "x": 8,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Underwater_SeafloorCavern_EventScript_CheckStolenSub",
+      "flag": "FLAG_HIDE_UNDERWATER_SEA_FLOOR_CAVERN_STOLEN_SUBMARINE"
+    }
+  },
+  "map": "Underwater_SeafloorCavern",
+  "mapId": "MAP_UNDERWATER_SEAFLOOR_CAVERN",
+  "localId": 4,
+  "graphicsId": "OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL",
+  "x": 8,
+  "y": 4,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_INVISIBLE",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Underwater_SeafloorCavern_EventScript_CheckStolenSub",
+  "flag": "FLAG_HIDE_UNDERWATER_SEA_FLOOR_CAVERN_STOLEN_SUBMARINE",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

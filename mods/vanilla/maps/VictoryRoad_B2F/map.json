@@ -154,5 +154,26 @@
       "item": "ITEM_MAX_REPEL",
       "flag": "FLAG_HIDDEN_ITEM_VICTORY_ROAD_B2F_MAX_REPEL"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_B2F/map.json",
+    "sha1": "5b0508499a13799ccdf05389317e6cd372e94865"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/VictoryRoad_B2F/map.json",
+    "mapName": "VictoryRoad_B2F",
+    "scriptsSourcePath": "data/maps/VictoryRoad_B2F/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 45,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

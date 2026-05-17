@@ -1,0 +1,46 @@
+{
+  "id": "Route111_WinstrateFamilysHouse:LOCALID_WINSTRATE_HOUSE_VICTOR",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111_WinstrateFamilysHouse/map.json",
+    "sha1": "3617d7ad218146b87b106f63851dbbfe7bd64681"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route111_WinstrateFamilysHouse/map.json",
+    "raw": {
+      "local_id": "LOCALID_WINSTRATE_HOUSE_VICTOR",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
+      "x": 4,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route111_WinstrateFamilysHouse_EventScript_Victor",
+      "flag": "0"
+    }
+  },
+  "map": "Route111_WinstrateFamilysHouse",
+  "mapId": "MAP_ROUTE111_WINSTRATE_FAMILYS_HOUSE",
+  "localId": "LOCALID_WINSTRATE_HOUSE_VICTOR",
+  "graphicsId": "OBJ_EVENT_GFX_MAN_1",
+  "x": 4,
+  "y": 5,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Route111_WinstrateFamilysHouse_EventScript_Victor",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

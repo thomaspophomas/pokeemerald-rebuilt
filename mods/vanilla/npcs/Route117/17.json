@@ -1,0 +1,45 @@
+{
+  "id": "Route117:17",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route117/map.json",
+    "sha1": "c7c9af5ecd59a144046f8ae0ea2b93cb235f5110"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route117/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F",
+      "x": 26,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_LEFT_RIGHT_DOWN",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "Route117_EventScript_Maria",
+      "flag": "0"
+    }
+  },
+  "map": "Route117",
+  "mapId": "MAP_ROUTE117",
+  "localId": 17,
+  "graphicsId": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F",
+  "x": 26,
+  "y": 13,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_LEFT_RIGHT_DOWN",
+  "movementRangeX": 2,
+  "movementRangeY": 2,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "5",
+  "script": "Route117_EventScript_Maria",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

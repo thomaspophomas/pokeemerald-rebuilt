@@ -77,5 +77,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_SeafloorCavern/map.json",
+    "sha1": "13f1defdb82691bd427253e000013c9ff160fb0e"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Underwater_SeafloorCavern/map.json",
+    "mapName": "Underwater_SeafloorCavern",
+    "scriptsSourcePath": "data/maps/Underwater_SeafloorCavern/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 26,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

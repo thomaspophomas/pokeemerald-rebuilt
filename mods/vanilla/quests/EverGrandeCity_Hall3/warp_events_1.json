@@ -1,0 +1,27 @@
+{
+  "id": "EverGrandeCity_Hall3:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_Hall3/map.json",
+    "sha1": "0283a46572dcfb490b6f1151d3b13d8f141d3e06"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/EverGrandeCity_Hall3/map.json",
+    "raw": {
+      "x": 5,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_EVER_GRANDE_CITY_DRAKES_ROOM",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "EverGrandeCity_Hall3",
+  "mapId": "MAP_EVER_GRANDE_CITY_HALL3",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,45 @@
+{
+  "id": "SafariZone_South:3",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_South/map.json",
+    "sha1": "8baf48e1259b4314bb0edbd7f5b208949a5855ac"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SafariZone_South/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_4",
+      "x": 16,
+      "y": 6,
+      "elevation": 5,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SafariZone_South_EventScript_Man",
+      "flag": "0"
+    }
+  },
+  "map": "SafariZone_South",
+  "mapId": "MAP_SAFARI_ZONE_SOUTH",
+  "localId": 3,
+  "graphicsId": "OBJ_EVENT_GFX_MAN_4",
+  "x": 16,
+  "y": 6,
+  "elevation": 5,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "SafariZone_South_EventScript_Man",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

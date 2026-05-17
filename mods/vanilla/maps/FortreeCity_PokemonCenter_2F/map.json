@@ -91,5 +91,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_PokemonCenter_2F/map.json",
+    "sha1": "e867cae3d17a3247e9b892d20efcec7918e1e737"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/FortreeCity_PokemonCenter_2F/map.json",
+    "mapName": "FortreeCity_PokemonCenter_2F",
+    "scriptsSourcePath": "data/maps/FortreeCity_PokemonCenter_2F/scripts.inc"
+  },
+  "mapGroup": 12,
+  "mapNum": 3,
+  "mapGroupSymbol": "gMapGroup_IndoorFortree",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

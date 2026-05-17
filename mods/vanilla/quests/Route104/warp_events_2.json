@@ -1,0 +1,27 @@
+{
+  "id": "Route104:warp_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104/map.json",
+    "sha1": "fbd365d3c17490dde96595712917fe8ceb5e1a7d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route104/map.json",
+    "raw": {
+      "x": 10,
+      "y": 30,
+      "elevation": 3,
+      "dest_map": "MAP_PETALBURG_WOODS",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Route104",
+  "mapId": "MAP_ROUTE104",
+  "eventType": "warp_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

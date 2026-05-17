@@ -1,0 +1,45 @@
+{
+  "id": "LilycoveCity_DepartmentStoreRooftop:3",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStoreRooftop/map.json",
+    "sha1": "3e39c9939735f804c565bcad62aeb78591d07d83"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStoreRooftop/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ROOFTOP_SALE_WOMAN",
+      "x": 6,
+      "y": 1,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LilycoveCity_DepartmentStoreRooftop_EventScript_SaleWoman",
+      "flag": "FLAG_HIDE_LILYCOVE_DEPARTMENT_STORE_ROOFTOP_SALE_WOMAN"
+    }
+  },
+  "map": "LilycoveCity_DepartmentStoreRooftop",
+  "mapId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP",
+  "localId": 3,
+  "graphicsId": "OBJ_EVENT_GFX_ROOFTOP_SALE_WOMAN",
+  "x": 6,
+  "y": 1,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "LilycoveCity_DepartmentStoreRooftop_EventScript_SaleWoman",
+  "flag": "FLAG_HIDE_LILYCOVE_DEPARTMENT_STORE_ROOFTOP_SALE_WOMAN",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

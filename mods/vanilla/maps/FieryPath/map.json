@@ -136,5 +136,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FieryPath/map.json",
+    "sha1": "1bfd87b322ac6d82537c1476de8e9d1f862fc24c"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/FieryPath/map.json",
+    "mapName": "FieryPath",
+    "scriptsSourcePath": "data/maps/FieryPath/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 14,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

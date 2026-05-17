@@ -1,0 +1,42 @@
+{
+  "id": "MossdeepCity_GameCorner_B1F:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_GameCorner_B1F/map.json",
+    "sha1": "bc19ecddcbe947ed544ac3a3a9111b9794019f96"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MossdeepCity_GameCorner_B1F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_VAR_0",
+      "x": 6,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "0"
+    }
+  },
+  "map": "MossdeepCity_GameCorner_B1F",
+  "mapId": "MAP_MOSSDEEP_CITY_GAME_CORNER_B1F",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_VAR_0",
+  "x": 6,
+  "y": 5,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "0",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

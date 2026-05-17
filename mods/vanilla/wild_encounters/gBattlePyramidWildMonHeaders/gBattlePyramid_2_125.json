@@ -1,0 +1,85 @@
+{
+  "id": "gBattlePyramidWildMonHeaders:gBattlePyramid_2:125",
+  "domain": "wild_encounters",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/wild_encounters.json",
+    "sha1": "49cfb49e719fde5aa0543f883b6c85accb82ebac"
+  },
+  "legacy": {
+    "kind": "wild_encounter_group",
+    "sourcePath": "src/data/wild_encounters.json",
+    "groupLabel": "gBattlePyramidWildMonHeaders"
+  },
+  "groupLabel": "gBattlePyramidWildMonHeaders",
+  "forMaps": false,
+  "fields": null,
+  "encounter": {
+    "base_label": "gBattlePyramid_2",
+    "land_mons": {
+      "encounter_rate": 4,
+      "mons": [
+        {
+          "min_level": 5,
+          "max_level": 5,
+          "species": "SPECIES_IVYSAUR"
+        },
+        {
+          "min_level": 5,
+          "max_level": 5,
+          "species": "SPECIES_IVYSAUR"
+        },
+        {
+          "min_level": 5,
+          "max_level": 5,
+          "species": "SPECIES_IVYSAUR"
+        },
+        {
+          "min_level": 5,
+          "max_level": 5,
+          "species": "SPECIES_IVYSAUR"
+        },
+        {
+          "min_level": 5,
+          "max_level": 5,
+          "species": "SPECIES_VENUSAUR"
+        },
+        {
+          "min_level": 5,
+          "max_level": 5,
+          "species": "SPECIES_VENUSAUR"
+        },
+        {
+          "min_level": 5,
+          "max_level": 5,
+          "species": "SPECIES_CHARMANDER"
+        },
+        {
+          "min_level": 5,
+          "max_level": 5,
+          "species": "SPECIES_CHARMANDER"
+        },
+        {
+          "min_level": 5,
+          "max_level": 5,
+          "species": "SPECIES_CHARMANDER"
+        },
+        {
+          "min_level": 5,
+          "max_level": 5,
+          "species": "SPECIES_CHARMELEON"
+        },
+        {
+          "min_level": 5,
+          "max_level": 5,
+          "species": "SPECIES_CHARMELEON"
+        },
+        {
+          "min_level": 5,
+          "max_level": 5,
+          "species": "SPECIES_CHARMANDER"
+        }
+      ]
+    }
+  }
+}

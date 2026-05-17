@@ -70,5 +70,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route114_LanettesHouse_EventScript_PC"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_LanettesHouse/map.json",
+    "sha1": "a32f9af8e9fee2baa4e68ea69dff9c176c0c7c89"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route114_LanettesHouse/map.json",
+    "mapName": "Route114_LanettesHouse",
+    "scriptsSourcePath": "data/maps/Route114_LanettesHouse/scripts.inc"
+  },
+  "mapGroup": 20,
+  "mapNum": 2,
+  "mapGroupSymbol": "gMapGroup_IndoorRoute114",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

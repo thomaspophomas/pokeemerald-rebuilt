@@ -1,0 +1,43 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomFinal:LOCALID_PIKE_FINAL_ROOM_ATTENDANT",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomFinal/map.json",
+    "sha1": "68c18038df649f56e4ac0e8a2343b6dbd729b1ca"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomFinal/map.json",
+    "raw": {
+      "local_id": "LOCALID_PIKE_FINAL_ROOM_ATTENDANT",
+      "graphics_id": "OBJ_EVENT_GFX_LINK_RECEPTIONIST",
+      "x": 2,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "0"
+    }
+  },
+  "map": "BattleFrontier_BattlePikeRoomFinal",
+  "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_FINAL",
+  "localId": "LOCALID_PIKE_FINAL_ROOM_ATTENDANT",
+  "graphicsId": "OBJ_EVENT_GFX_LINK_RECEPTIONIST",
+  "x": 2,
+  "y": 4,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "0",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

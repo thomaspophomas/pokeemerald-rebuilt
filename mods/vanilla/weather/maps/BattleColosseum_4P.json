@@ -1,0 +1,16 @@
+{
+  "id": "BattleColosseum_4P:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleColosseum_4P/map.json",
+    "sha1": "2ac970314d841831af3a8ee899726de0edb3f295"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/BattleColosseum_4P/map.json"
+  },
+  "map": "BattleColosseum_4P",
+  "mapId": "MAP_BATTLE_COLOSSEUM_4P",
+  "weather": "WEATHER_NONE"
+}

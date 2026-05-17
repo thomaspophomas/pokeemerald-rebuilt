@@ -535,5 +535,26 @@
       "item": "ITEM_MAX_REVIVE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_121_MAX_REVIVE"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route121/map.json",
+    "sha1": "f6697affa29d20f09f078a6a6de0c1d04016f228"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route121/map.json",
+    "mapName": "Route121",
+    "scriptsSourcePath": "data/maps/Route121/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 36,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

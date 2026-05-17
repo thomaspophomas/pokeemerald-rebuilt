@@ -1,0 +1,46 @@
+{
+  "id": "RusturfTunnel:LOCALID_RUSTURF_TUNNEL_WANDA",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/map.json",
+    "sha1": "5da4b6f65aac47a3b5c84f9bc6aa687cf273cc0e"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/RusturfTunnel/map.json",
+    "raw": {
+      "local_id": "LOCALID_RUSTURF_TUNNEL_WANDA",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "x": 25,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RusturfTunnel_EventScript_Wanda",
+      "flag": "FLAG_HIDE_RUSTURF_TUNNEL_WANDA"
+    }
+  },
+  "map": "RusturfTunnel",
+  "mapId": "MAP_RUSTURF_TUNNEL",
+  "localId": "LOCALID_RUSTURF_TUNNEL_WANDA",
+  "graphicsId": "OBJ_EVENT_GFX_WOMAN_2",
+  "x": 25,
+  "y": 4,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "RusturfTunnel_EventScript_Wanda",
+  "flag": "FLAG_HIDE_RUSTURF_TUNNEL_WANDA",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

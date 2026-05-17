@@ -1,0 +1,16 @@
+{
+  "id": "Route117_PokemonDayCare:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route117_PokemonDayCare/map.json",
+    "sha1": "40e0924ccae397fdf65bada33f381af682eec9fe"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/Route117_PokemonDayCare/map.json"
+  },
+  "map": "Route117_PokemonDayCare",
+  "mapId": "MAP_ROUTE117_POKEMON_DAY_CARE",
+  "weather": "WEATHER_NONE"
+}

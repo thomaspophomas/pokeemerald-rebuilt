@@ -149,5 +149,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_PokemonFanClub/map.json",
+    "sha1": "791f9db72a199d7289f8820605f9a03b1e0dddf0"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SlateportCity_PokemonFanClub/map.json",
+    "mapName": "SlateportCity_PokemonFanClub",
+    "scriptsSourcePath": "data/maps/SlateportCity_PokemonFanClub/scripts.inc"
+  },
+  "mapGroup": 9,
+  "mapNum": 6,
+  "mapGroupSymbol": "gMapGroup_IndoorSlateport",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

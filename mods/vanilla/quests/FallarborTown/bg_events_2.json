@@ -1,0 +1,30 @@
+{
+  "id": "FallarborTown:bg_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown/map.json",
+    "sha1": "8fe7f19a90a652a8002a0bc5ee11e2cb69ffa7cb"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/FallarborTown/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 6,
+      "y": 8,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FallarborTown_EventScript_BattleTentSign"
+    }
+  },
+  "map": "FallarborTown",
+  "mapId": "MAP_FALLARBOR_TOWN",
+  "eventType": "bg_events",
+  "index": 2,
+  "script": "FallarborTown_EventScript_BattleTentSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "PetalburgCity_House2:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_House2/map.json",
+    "sha1": "1b101f09bfa8fac9dc7838becd6b743a17d4c94c"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/PetalburgCity_House2/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F",
+      "x": 2,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PetalburgCity_House2_EventScript_Woman",
+      "flag": "0"
+    }
+  },
+  "map": "PetalburgCity_House2",
+  "mapId": "MAP_PETALBURG_CITY_HOUSE2",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_POKEFAN_F",
+  "x": 2,
+  "y": 5,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "PetalburgCity_House2_EventScript_Woman",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

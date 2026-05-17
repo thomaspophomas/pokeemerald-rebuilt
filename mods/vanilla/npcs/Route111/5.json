@@ -1,0 +1,45 @@
+{
+  "id": "Route111:5",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/map.json",
+    "sha1": "3161c43b45be9e3c9263e97cf27cb9c95a592a3a"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route111/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
+      "x": 28,
+      "y": 51,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Route111_EventScript_Heidi",
+      "flag": "0"
+    }
+  },
+  "map": "Route111",
+  "mapId": "MAP_ROUTE111",
+  "localId": 5,
+  "graphicsId": "OBJ_EVENT_GFX_PICNICKER",
+  "x": 28,
+  "y": 51,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "3",
+  "script": "Route111_EventScript_Heidi",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

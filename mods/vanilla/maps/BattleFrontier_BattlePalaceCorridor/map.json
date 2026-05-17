@@ -138,5 +138,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceCorridor/map.json",
+    "sha1": "ebd43530111a38f60755c5e2815d1535f83aa645"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceCorridor/map.json",
+    "mapName": "BattleFrontier_BattlePalaceCorridor",
+    "scriptsSourcePath": "data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 23,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

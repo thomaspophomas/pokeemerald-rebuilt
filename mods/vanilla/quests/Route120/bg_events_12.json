@@ -1,0 +1,28 @@
+{
+  "id": "Route120:bg_events:12",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route120/map.json",
+    "sha1": "65935e19bb6f8e23506c7e2e85cef33433f4e2d7"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route120/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 24,
+      "y": 42,
+      "elevation": 3,
+      "item": "ITEM_ZINC",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_120_ZINC"
+    }
+  },
+  "map": "Route120",
+  "mapId": "MAP_ROUTE120",
+  "eventType": "bg_events",
+  "index": 12,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

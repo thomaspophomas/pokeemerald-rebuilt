@@ -45,5 +45,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_NameRatersHouse/map.json",
+    "sha1": "aa0c23d0c1c7414fcf53fc51427567742b40d20e"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SlateportCity_NameRatersHouse/map.json",
+    "mapName": "SlateportCity_NameRatersHouse",
+    "scriptsSourcePath": "data/maps/SlateportCity_NameRatersHouse/scripts.inc"
+  },
+  "mapGroup": 9,
+  "mapNum": 5,
+  "mapGroupSymbol": "gMapGroup_IndoorSlateport",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

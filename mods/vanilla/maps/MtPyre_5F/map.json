@@ -79,5 +79,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_5F/map.json",
+    "sha1": "eca093c8d8df61cca1b9fce557f21e0e815360e4"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/MtPyre_5F/map.json",
+    "mapName": "MtPyre_5F",
+    "scriptsSourcePath": "data/maps/MtPyre_5F/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 19,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

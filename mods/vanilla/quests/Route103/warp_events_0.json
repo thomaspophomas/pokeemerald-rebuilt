@@ -1,0 +1,27 @@
+{
+  "id": "Route103:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route103/map.json",
+    "sha1": "1f8a6f5e726bb7c76e6c8bb479101490b2c1a5ae"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route103/map.json",
+    "raw": {
+      "x": 45,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_ALTERING_CAVE",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Route103",
+  "mapId": "MAP_ROUTE103",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

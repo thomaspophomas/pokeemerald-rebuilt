@@ -85,5 +85,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Mart/map.json",
+    "sha1": "937a29e56f85228a80b1c796ba6dc28b8bd07e1e"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/MossdeepCity_Mart/map.json",
+    "mapName": "MossdeepCity_Mart",
+    "scriptsSourcePath": "data/maps/MossdeepCity_Mart/scripts.inc"
+  },
+  "mapGroup": 14,
+  "mapNum": 5,
+  "mapGroupSymbol": "gMapGroup_IndoorMossdeep",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

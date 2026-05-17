@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Benny",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemDefaultMoves sParty_Benny[] = {\n    {\n    .iv = 0,\n    .lvl = 36,\n    .species = SPECIES_SWELLOW,\n    },\n    {\n    .iv = 0,\n    .lvl = 36,\n    .species = SPECIES_PELIPPER,\n    },\n    {\n    .iv = 0,\n    .lvl = 36,\n    .species = SPECIES_XATU,\n    }\n};"
+  },
+  "symbol": "sParty_Benny",
+  "partyType": "TrainerMonNoItemDefaultMoves",
+  "pokemonCount": 3
+}

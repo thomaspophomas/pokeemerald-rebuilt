@@ -138,5 +138,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route119_WeatherInstitute_1F_EventScript_Bed"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_1F/map.json",
+    "sha1": "85fdcb3adca1f8a298d81a58ee7017b2e9753024"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_1F/map.json",
+    "mapName": "Route119_WeatherInstitute_1F",
+    "scriptsSourcePath": "data/maps/Route119_WeatherInstitute_1F/scripts.inc"
+  },
+  "mapGroup": 32,
+  "mapNum": 0,
+  "mapGroupSymbol": "gMapGroup_IndoorRoute119",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

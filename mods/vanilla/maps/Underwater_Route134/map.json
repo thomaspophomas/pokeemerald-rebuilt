@@ -24,5 +24,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_Route134/map.json",
+    "sha1": "2c06422b49bed97b5224071a3bb40d6ca76fd04e"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Underwater_Route134/map.json",
+    "mapName": "Underwater_Route134",
+    "scriptsSourcePath": "data/maps/Underwater_Route134/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 69,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

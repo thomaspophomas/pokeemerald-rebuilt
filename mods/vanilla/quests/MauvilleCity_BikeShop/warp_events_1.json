@@ -1,0 +1,27 @@
+{
+  "id": "MauvilleCity_BikeShop:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_BikeShop/map.json",
+    "sha1": "9cd6a46182b94984ce989120d7f57d7459369776"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MauvilleCity_BikeShop/map.json",
+    "raw": {
+      "x": 4,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_MAUVILLE_CITY",
+      "dest_warp_id": "2"
+    }
+  },
+  "map": "MauvilleCity_BikeShop",
+  "mapId": "MAP_MAUVILLE_CITY_BIKE_SHOP",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

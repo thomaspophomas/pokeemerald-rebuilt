@@ -45,5 +45,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_House1/map.json",
+    "sha1": "9898b15a7a91db40b7d2e3df24401cff1695b365"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/MauvilleCity_House1/map.json",
+    "mapName": "MauvilleCity_House1",
+    "scriptsSourcePath": "data/maps/MauvilleCity_House1/scripts.inc"
+  },
+  "mapGroup": 10,
+  "mapNum": 2,
+  "mapGroupSymbol": "gMapGroup_IndoorMauville",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

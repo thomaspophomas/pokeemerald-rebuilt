@@ -1,0 +1,27 @@
+{
+  "id": "ArtisanCave_1F:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ArtisanCave_1F/map.json",
+    "sha1": "1f41e36a11406470abf6f171be939c5df19c52d5"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/ArtisanCave_1F/map.json",
+    "raw": {
+      "x": 10,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_FRONTIER_OUTSIDE_EAST",
+      "dest_warp_id": "13"
+    }
+  },
+  "map": "ArtisanCave_1F",
+  "mapId": "MAP_ARTISAN_CAVE_1F",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

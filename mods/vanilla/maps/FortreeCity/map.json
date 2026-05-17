@@ -232,5 +232,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemartSign"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity/map.json",
+    "sha1": "bc6e106598defe5c5f6d0848d4ab429438c54a59"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/FortreeCity/map.json",
+    "mapName": "FortreeCity",
+    "scriptsSourcePath": "data/maps/FortreeCity/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 4,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

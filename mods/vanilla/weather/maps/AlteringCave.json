@@ -1,0 +1,16 @@
+{
+  "id": "AlteringCave:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AlteringCave/map.json",
+    "sha1": "f0f0ea88dda68659f7a9ea102594f0a1c98ad5fe"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/AlteringCave/map.json"
+  },
+  "map": "AlteringCave",
+  "mapId": "MAP_ALTERING_CAVE",
+  "weather": "WEATHER_NONE"
+}

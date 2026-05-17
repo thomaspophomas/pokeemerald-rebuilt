@@ -137,5 +137,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "BattleFrontier_BattleFactoryLobby_EventScript_RulesBoard"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryLobby/map.json",
+    "sha1": "60b28bd34a70a8d6a0b8200c1de6f07274a80833"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryLobby/map.json",
+    "mapName": "BattleFrontier_BattleFactoryLobby",
+    "scriptsSourcePath": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 31,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

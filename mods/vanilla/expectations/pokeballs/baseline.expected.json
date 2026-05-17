@@ -1,18 +1,2393 @@
 {
   "domain": "pokeballs",
   "schemaVersion": 1,
-  "fileCount": 1,
-  "jsonFileCount": 1,
-  "bytes": 69960,
-  "sha1": "d2b9eccd3e9651084905d3dfdbc84c538d3d4db2",
+  "fileCount": 476,
+  "jsonFileCount": 476,
+  "bytes": 376726,
+  "sha1": "59a9f59bd67249a541e7a1e2bda9a37b22277ed9",
   "files": [
     {
-      "path": "mods/vanilla/pokeballs/manifest.json",
-      "sha1": "b5d54ca9a61314bcdfd6d39a52058d77b1dc17fd",
-      "bytes": 69960
+      "path": "mods/vanilla/pokeballs/_source_manifest.json",
+      "sha1": "a2cdb870f3c147a0914492b1ce5d0215bd13f84d",
+      "bytes": 69997
+    },
+    {
+      "path": "mods/vanilla/pokeballs/index.json",
+      "sha1": "1a782fe6658b3d849648db12cd41739ff78db43e",
+      "bytes": 114238
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_acro_bike.pal.json",
+      "sha1": "2720921de74e802df39e57516ae5e44c4f6078b7",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_aguav_berry.pal.json",
+      "sha1": "89fe3bcf52a58c8ea03d76c2963a5da75ba32089",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_amulet_coin.pal.json",
+      "sha1": "fb3b34a0967704c825b49c33a3e7896c72842bdc",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_antidote.pal.json",
+      "sha1": "00ab5d91e2bb78107960aef7494054b078e5c705",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_apicot_berry.pal.json",
+      "sha1": "91db63c806e996b48053b62ec1bbc10afb47d3d4",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_aspear_berry.pal.json",
+      "sha1": "ac1e3e36a3150bd0f9f27871210bd2b1a65d001d",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_aurora_ticket.pal.json",
+      "sha1": "94b64068e5fb60710a69d4149e97e88ef83468f2",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_awakening.pal.json",
+      "sha1": "7cd1abadaab6d5c5457be96c3372abe63a3a084b",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_bead_mail.pal.json",
+      "sha1": "4db105d9922e62df3126b3d0b0602d54a8fcde51",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_belue_berry.pal.json",
+      "sha1": "d387c0364936da79e57f95f7bd06c20d801962a9",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_berry_juice.pal.json",
+      "sha1": "d1897ce9ac3e83b03825be18fb957963ab7fce8b",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_berry_pouch.pal.json",
+      "sha1": "a6bbe47e8e7555d6b76522069b646a5cb1247257",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_bicycle.pal.json",
+      "sha1": "0497a1ef0005aea6469f897e7168909b48a80021",
+      "bytes": 409
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_bike_voucher.pal.json",
+      "sha1": "ac961dd90a30e9f0ef07f345e052184930fd035e",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_black_flute.pal.json",
+      "sha1": "42bc4e9bb70ac639948be21a8c40f7b5aa85e687",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_black_type_enhancing_item.pal.json",
+      "sha1": "027a6bfa3593fbd08d91f08a5df12cbd5571b704",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_blue_flute.pal.json",
+      "sha1": "1d18f0728e4adcc27412cc2585ecaf6b88785a50",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_blue_orb.pal.json",
+      "sha1": "9d38dbd236fe0ad0864117af4ca7474e1d8f702e",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_blue_scarf.pal.json",
+      "sha1": "3a8db3c9fdae8ba87ab3804e8b1049bca4907e70",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_blue_shard.pal.json",
+      "sha1": "4770196d77826053762f71dc6757d06dcd98884a",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_bluk_berry.pal.json",
+      "sha1": "bf04ee5b7f2a355a3b2ce4c3b4dff1cb966753b0",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_bright_powder.pal.json",
+      "sha1": "c406aabff1f9c7c819cc1fed45ccd84f3051cd04",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_burn_heal.pal.json",
+      "sha1": "e36bd67beb4c239d41d8b414664ad1f876b37f8b",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_calcium.pal.json",
+      "sha1": "98fd22db6a3d0529e72cb855529e2cbad41b1842",
+      "bytes": 409
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_carbos.pal.json",
+      "sha1": "0665395297c1aec7b83679244f01964e7cc182db",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_card_key.pal.json",
+      "sha1": "379e8022a12fd45c6f870f3c00b9279c507e935e",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_charcoal.pal.json",
+      "sha1": "7bac8b9b9820bde3e67016d539910a25fedeae49",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_cheri_berry.pal.json",
+      "sha1": "96885ff261a2675c6747d8892be503ed8b44e27c",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_chesto_berry.pal.json",
+      "sha1": "62fd18c9eb608f8c0044b82ed67c14748ba841bb",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_choice_band.pal.json",
+      "sha1": "fb1d907fde89a467576274d67553be6a84d64190",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_cleanse_tag.pal.json",
+      "sha1": "5d29d1b9d24fc327763d25a81f8d5d7437c28cd7",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_coin_case.pal.json",
+      "sha1": "dfdcc0635d4489826c68697eaaeb58050f91b4c5",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_contest_pass.pal.json",
+      "sha1": "5aa1c6ea33bebce9b9182cb5983299dbfa40accd",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_cornn_berry.pal.json",
+      "sha1": "687a6de0cfed3949c4b85164e47c760397f12b74",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_dark_tm_hm.pal.json",
+      "sha1": "87948c51ffcc7f38b9078b828bc597bbbef9b34f",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_deep_sea_scale.pal.json",
+      "sha1": "af289f7a6ec5889c3e6e62c5b3e73980f19e08cd",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_deep_sea_tooth.pal.json",
+      "sha1": "71584940fcb58faab2498882c7ac1e3bb0ed8cc3",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_devon_goods.pal.json",
+      "sha1": "64c97bc4747db924753a48ebeca2a53c6f761ddb",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_devon_scope.pal.json",
+      "sha1": "3302bc5830d73d2fee38b0d41412e840650a7899",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_dire_hit.pal.json",
+      "sha1": "0022edb9d3ffeba0b2c874ef23e43a2d1854ab44",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_dive_ball.pal.json",
+      "sha1": "1367e900c96ea7dbf68c6bc0fa2bc9540b20f7be",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_dragon_fang.pal.json",
+      "sha1": "fa43c71c1cf1ff081197b269ee2025fb6852c987",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_dragon_scale.pal.json",
+      "sha1": "98f34762c11a20ba1a3c8b6829236403b7093369",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_dragon_tm_hm.pal.json",
+      "sha1": "18392ac9c47cd043a22d6aaa6dfae34b33a21f6a",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_dream_mail.pal.json",
+      "sha1": "1f0e9e0d388606c714e37a708af093a3ef3ba88d",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_durin_berry.pal.json",
+      "sha1": "9ecab579972c857cca08b122c612503b839234ac",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_electric_tm_hm.pal.json",
+      "sha1": "d64e6bce8a698098b6df71183f530befc65991f5",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_elixir.pal.json",
+      "sha1": "2589cea5c6d4650509167d6fc03d5d241261d6a1",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_energy_powder.pal.json",
+      "sha1": "051b7797312108e9011b0be8bdbdfa48d312e0bd",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_energy_root.pal.json",
+      "sha1": "0082661d8b7ac801104d64b4bb1d319182b56ce0",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_enigma_berry.pal.json",
+      "sha1": "0b4688c52c2c3a9304c4c4426afaba109bc47a89",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_eon_ticket.pal.json",
+      "sha1": "ded4f03c1684b134a648e6d2294cb42b6bc084b5",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_escape_rope.pal.json",
+      "sha1": "2dbcf6ff1fd072a0f970ffca05e804ae01b49123",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_ether.pal.json",
+      "sha1": "6c3a47cf732d9184e895d06a5d1583d9ee05b32f",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_everstone.pal.json",
+      "sha1": "460fddd3819771da8ce9cd43c0eac856f87e0120",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_exp_share.pal.json",
+      "sha1": "86defbed2920d28d96a91ab7776fb0ebe0a2990b",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_fab_mail.pal.json",
+      "sha1": "079b09cf3fa828f939b449432ad3c12c94cb5a4a",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_fame_checker.pal.json",
+      "sha1": "60a75b96c74ad4e96794a0ca9abc1b3465704eeb",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_fighting_tm_hm.pal.json",
+      "sha1": "6f66f82518d9c55bef400c51097f7a983f8238ef",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_figy_berry.pal.json",
+      "sha1": "475f24720e6bb7cf5de5a9b0b90af321f27e425a",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_fire_stone.pal.json",
+      "sha1": "d565b71f102ef272c5f330e9f6265e4128dffc54",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_fire_tm_hm.pal.json",
+      "sha1": "d21cf0662345adf2ce1d47247951ff7fff06b2e2",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_fluffy_tail.pal.json",
+      "sha1": "1cfcf83f517656f30fda538a96613474422becfc",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_flying_tm_hm.pal.json",
+      "sha1": "9b33cc3081d78f72398094658063f1251e3dc9fa",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_focus_band.pal.json",
+      "sha1": "36abe7ea4c5ec722fd68318522fc273ee28e7a5b",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_fresh_water.pal.json",
+      "sha1": "4f72daaa5432f57cad3a7c705f8284181c618828",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_full_heal.pal.json",
+      "sha1": "eeae8b8e381baec46cad790006e1b7ff8ccc2861",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_full_restore.pal.json",
+      "sha1": "10193a0fba7b7aa5c8c810d2cc4f75a078a3ac6e",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_ganlon_berry.pal.json",
+      "sha1": "8f47c0ff54d6694905aa0ba25598d8378e3d04e0",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_ghost_tm_hm.pal.json",
+      "sha1": "757de65f7ad26904fc79989b40f0662f54432889",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_glitter_mail.pal.json",
+      "sha1": "af81e64aa01d7aed41593432fb147488ee11e001",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_go_goggles.pal.json",
+      "sha1": "1c70b55b14f0172283b952a4d59474dedddb076f",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_gold_teeth.pal.json",
+      "sha1": "330b6878b945debb56f115647a1b6b5954bce5a8",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_good_rod.pal.json",
+      "sha1": "4c68d6a9d9c98ab11a59aeeb8f7160f1e712ee2b",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_grass_tm_hm.pal.json",
+      "sha1": "5a153b02d85fd8029e7bb6fa30fd2d34ecdafbd8",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_great_ball.pal.json",
+      "sha1": "04d48939ccbe6b4523161eab48af87fffccaf471",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_green_scarf.pal.json",
+      "sha1": "695df7cc89b3bed97ee7d9b28432ca7a4f02daf2",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_green_shard.pal.json",
+      "sha1": "0ecaef48921af129497bbdd3e00fdbb1963ac705",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_grepa_berry.pal.json",
+      "sha1": "c9eab7c6cdde45fa78798cacf5b741c6eeeb4317",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_ground_tm_hm.pal.json",
+      "sha1": "5766d5a807bed06b8d05cb020559ed900438f9eb",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_guard_spec.pal.json",
+      "sha1": "8c44f3c2356d0d002a6870f41a6fdfff2fa64879",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_harbor_mail.pal.json",
+      "sha1": "5a185d2f181ff56c2b3eb6d30166dc058d11bb4b",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_hard_stone.pal.json",
+      "sha1": "bdd6a54a63a4ab85f26fee16bc190d8aa9c190be",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_heal_powder.pal.json",
+      "sha1": "2aa31bccdedaa1dffefe0d40e854bec222155f8f",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_heart_scale.pal.json",
+      "sha1": "071d07ef60a5dd4091ea09591d13d3c68d4584bc",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_hoenn_fossil.pal.json",
+      "sha1": "aa71e6295dc3290740acb72cb9ff32a0deaa8eca",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_hondew_berry.pal.json",
+      "sha1": "4e4e6c748c23fa0269c6fc88dbeb15f1ea837d21",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_hp_up.pal.json",
+      "sha1": "bdad2b790f6fe131ecc3430ea8ef693ada0d71bb",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_hyper_potion.pal.json",
+      "sha1": "0fb70e80fdee38f05c1fa2c53a1a7611f18c5abc",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_iapapa_berry.pal.json",
+      "sha1": "ac4fbdefb848ed5c92c538ec779f5e4508cb0b5f",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_ice_heal.pal.json",
+      "sha1": "e743bfa3f1bedf4932077c8d0b9a8a856d6b9d2f",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_ice_tm_hm.pal.json",
+      "sha1": "7691fc638a48fe1b561fb9bf36bdbf1749d1f029",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_iron.pal.json",
+      "sha1": "4c0895d64a53464edf496398dc0f94fdb9ba2031",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_itemfinder.pal.json",
+      "sha1": "118b6779e0aedab29bb38274021a663c6c778d69",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_kanto_fossil.pal.json",
+      "sha1": "fedd233a71a3798e01fda060a2454f5daeccb111",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_kelpsy_berry.pal.json",
+      "sha1": "f4de1ff919660dcc06d6f752d5c83125a4634dd2",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_key.pal.json",
+      "sha1": "a14cb96174f1d9c28045e674ae8e19490c0b6462",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_kings_rock.pal.json",
+      "sha1": "27a6d3f64cd4216f47858093e426061a75df68e3",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_lansat_berry.pal.json",
+      "sha1": "9293b594b4d57803d8449853e8fa439321b36b9b",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_lava_cookie_and_letter.pal.json",
+      "sha1": "4062b28ee745b0ea3f14f422e680bcf9a1e50465",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_lax_incense.pal.json",
+      "sha1": "881b09a3ba234f2ca09de5803875e07f9a5d96c0",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_leaf_stone.pal.json",
+      "sha1": "31d254f268db3202e439315922fbc0504458d418",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_leftovers.pal.json",
+      "sha1": "78dfb4e6a61af307024e55b50fc6ccfb7a5fdc1d",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_lemonade.pal.json",
+      "sha1": "c2a50f4c54e13f75fbcfb8ece6c227d9aa456c1f",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_leppa_berry.pal.json",
+      "sha1": "7e2ac33a14b7caf2b70406a9819e2530aa356f25",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_liechi_berry.pal.json",
+      "sha1": "2018721d90a783a7e521b709afa2e30c9dcfca1e",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_light_ball.pal.json",
+      "sha1": "bc97060924924786df1614e618b241a0d419ea8c",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_lucky_egg.pal.json",
+      "sha1": "a164d1d56500d4ebfcfd43e835d1e69989bbae46",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_lucky_punch.pal.json",
+      "sha1": "b79514d68929299fe38d2e903a0580abd107991f",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_lum_berry.pal.json",
+      "sha1": "0edc3719258c85738bb944eeb6e0e6ce829d31ef",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_luxury_ball.pal.json",
+      "sha1": "08cb2ad20055ebc5b077321866b9e6b5e6bd971f",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_mach_bike.pal.json",
+      "sha1": "f5547f62ba73a10426d2faf5268b52eb511e0c70",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_macho_brace.pal.json",
+      "sha1": "fbcc8a37d3c1842387a8374a944255e718fb644b",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_magma_emblem.pal.json",
+      "sha1": "a270681407e9615b560092af4e07ec9b0456f680",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_magnet.pal.json",
+      "sha1": "8c833aa8b53e0c7821a17c9f9c9f44a87cc5cafc",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_mago_berry.pal.json",
+      "sha1": "7568d25f651c5e80be2d1f9fcaa873e513e1d98a",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_magost_berry.pal.json",
+      "sha1": "18809894a6e484a00444881ae512c49ddb7ebd71",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_master_ball.pal.json",
+      "sha1": "a065e68bb5590b69dfe975ded34394d4025e8f90",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_max_elixir.pal.json",
+      "sha1": "3d208b25349008f0430d90120fda18b315692eb7",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_max_ether.pal.json",
+      "sha1": "f8d58b69cc063a1a3130956dcbc45b1368d6958e",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_max_potion.pal.json",
+      "sha1": "acc40d7f6ad270743d3e8148b31a077a178ec27b",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_max_repel.pal.json",
+      "sha1": "5e799cabad7d16b7d48034c47a343c9b6723b808",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_mech_mail.pal.json",
+      "sha1": "ed4987fbb12e80c498f85412d337194688f0525e",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_mental_herb.pal.json",
+      "sha1": "b46a7c2040015acfa52b3256cca6a90ffc37a54f",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_metal_coat.pal.json",
+      "sha1": "2f3b2500bf917513a8422084759b4939027cf8df",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_metal_powder.pal.json",
+      "sha1": "7bab170efdf04555ff22dd69d292c1cedaa511ff",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_meteorite.pal.json",
+      "sha1": "97f5a349dcb2c8ced0006274ca5b33809504c841",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_miracle_seed.pal.json",
+      "sha1": "29b3faf7f0d18394a255d3cb789ef122e56212b6",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_moomoo_milk.pal.json",
+      "sha1": "02cc9339735876c4aedc3c3eb335bbca9966807a",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_moon_stone.pal.json",
+      "sha1": "10cffa01525232f8d394be54ff028838d4bf952e",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_mushroom.pal.json",
+      "sha1": "0abb856d109405be0f63693633b87f630cf28a5d",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_mystic_ticket.pal.json",
+      "sha1": "86f0771c0f69893b1e2991af9970be3e835643ad",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_mystic_water.pal.json",
+      "sha1": "83f4ef1c926d84acb9d1b473654ce7219edd3ac4",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_nanab_berry.pal.json",
+      "sha1": "3d59ec5cbccdcc082fa50cf3742b08474846d381",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_nest_ball.pal.json",
+      "sha1": "708fa8844501c53d97c9fd65230fa3410b8c2dfc",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_net_ball.pal.json",
+      "sha1": "911ea2fc24adfb84a1d1427fc05ebfbd1244017a",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_never_melt_ice.pal.json",
+      "sha1": "8b6e58472d806ae8619091bf13cb0d4228f9d836",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_nomel_berry.pal.json",
+      "sha1": "e1d149b5f3478cbcb7a205cf302c180154cec741",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_normal_tm_hm.pal.json",
+      "sha1": "76e8bdc44e00b895e45ec6072fa6443217c9c45d",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_nugget.pal.json",
+      "sha1": "03cced0ab21dcc9cb8443a7b8f3e37d427dd76da",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_oaks_parcel.pal.json",
+      "sha1": "224d0531f32cdc9cef6c0f12f35cfec6c58cc2be",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_old_amber.pal.json",
+      "sha1": "7630593fb1debc7e445c4ef49623baa78fef7245",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_old_key.pal.json",
+      "sha1": "bbcc10de8c2ad54c1503fb089b0969896cd97aae",
+      "bytes": 409
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_old_rod.pal.json",
+      "sha1": "c564a457bcb91e965747ea5c7aae85792644126e",
+      "bytes": 409
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_old_sea_map.pal.json",
+      "sha1": "acdd1c1cfd8ba214e46324932c1f70be0c9bb2c2",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_oran_berry.pal.json",
+      "sha1": "8b11465a8d03740463e77ff608c93060263096d0",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_orange_mail.pal.json",
+      "sha1": "954f8ecaf172fa09ff5cb058466e42c66c8a847c",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_pamtre_berry.pal.json",
+      "sha1": "1475d2e393e07a8e24224102d3abcd30737f843d",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_paralyze_heal.pal.json",
+      "sha1": "542503a6da74b0dce4d5eac604aa86df7be4f042",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_pearl.pal.json",
+      "sha1": "cb2d676bbea41bd7ca6d55e5f8e721c869b504ca",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_pecha_berry.pal.json",
+      "sha1": "e4455b10442c4a55fd6639cc411821eb8a5fa435",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_persim_berry.pal.json",
+      "sha1": "89ea30d85216b39b8b359463c52fd352a8e6ec08",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_petaya_berry.pal.json",
+      "sha1": "d2b8536c37bad786c36b401c393813a1a937ceb9",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_pinap_berry.pal.json",
+      "sha1": "5fd40c84b8434d2399e7b6db1dd1c64e3a7af81b",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_pink_scarf.pal.json",
+      "sha1": "d9f9b09fbf54483370e392e866be410020f88e08",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_poison_barb.pal.json",
+      "sha1": "bf53a90bc4cbb59e280305cc67a4697a840c90a6",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_poison_tm_hm.pal.json",
+      "sha1": "9fc7acf49368fc5eff0d4432b918da0b9f8a4743",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_poke_ball.pal.json",
+      "sha1": "3f80ca1c6f394ff9363caf2124176621776bffbb",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_poke_doll.pal.json",
+      "sha1": "fc9e89408cb523ed4493549a80ae5f55fbe73d20",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_poke_flute.pal.json",
+      "sha1": "53143a4d9b83dbc0a423591ce9e8966c824d26c9",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_pokeblock_case.pal.json",
+      "sha1": "4d3c3b9e4d21de64cc948d09d9b98285b16d78fa",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_pomeg_berry.pal.json",
+      "sha1": "94b75bb18e13d01d8ea6a4a11bef3f39f1249c42",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_potion.pal.json",
+      "sha1": "454dfd91ef2fd60c7bdf5bdad05f314dce13bfed",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_powder_jar.pal.json",
+      "sha1": "378a6bc8c3f627215b95ca3d89c115820ecf0b22",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_pp_max.pal.json",
+      "sha1": "b712a006885b1da8da907f80a77714dd33318add",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_pp_up.pal.json",
+      "sha1": "ed176947f0617b6754fc8ef357af7fad60f02170",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_protein.pal.json",
+      "sha1": "059f7b3ce5e947400c83d6f8bd11e3b7d089bf87",
+      "bytes": 409
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_psychic_tm_hm.pal.json",
+      "sha1": "41fd911af91cc8226d1afedb86a61bc2c86480ed",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_qualot_berry.pal.json",
+      "sha1": "cbe3f2a60247b65b01f269e74bde7fcfd13d0206",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_question_mark.pal.json",
+      "sha1": "0cf05b2961887867005328fd5eaffde19db1468f",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_quick_claw.pal.json",
+      "sha1": "7cb33f8e6ed6995193814625754006975dd36bb0",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_rabuta_berry.pal.json",
+      "sha1": "8b2a9ca85e55957b8fe28e859294cbe38340aa90",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_rainbow_pass.pal.json",
+      "sha1": "e37b96fec6b25706d379b3f1f6697e156a3f766a",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_rare_candy.pal.json",
+      "sha1": "3499c6b2f600886504a8167b297b8fa5fe4a66de",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_rawst_berry.pal.json",
+      "sha1": "a78f4afff56f9ad9719a83a0250dde6cdf70b0f0",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_razz_berry.pal.json",
+      "sha1": "4bde8a509f2ecd4baf719e4f4f4b95ee63cb6a85",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_red_flute.pal.json",
+      "sha1": "c25a52e1b4c779c241160d83246962b2bbf16c06",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_red_orb.pal.json",
+      "sha1": "50c6bf8b2ce263fb59895db38223e6ba474b7bae",
+      "bytes": 409
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_red_scarf.pal.json",
+      "sha1": "dfab4fc57ba2fad96f98b1d2b30a4b0b869e2c9b",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_red_shard.pal.json",
+      "sha1": "52bcd369a929777a5c7df31280bde9c86a488224",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_repeat_ball.pal.json",
+      "sha1": "89842a876d81aea9927c51565040875ac9fe8cf7",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_repel.pal.json",
+      "sha1": "c7f7ed70020a0db8228b8dd9d4cb49233f902dbd",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_retro_mail.pal.json",
+      "sha1": "b3b1716e80ad4ce47580cbc91d7cc7b0acab8312",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_return_to_field_arrow.pal.json",
+      "sha1": "ab1c050460e33a067f6b3f4027d5afde69624ce0",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_revival_herb.pal.json",
+      "sha1": "74cd4c14c103a17d1e72894648e89db1c8c10054",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_revive.pal.json",
+      "sha1": "c8b31bca823221e59b3fdfc2265ba8e357c8448d",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_rock_tm_hm.pal.json",
+      "sha1": "d008db31141eb3cb71765a09e29bd89c95d54689",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_ruby.pal.json",
+      "sha1": "4f8d25d6a51b162ee6d37c6df07f2664f02bd191",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_sacred_ash.pal.json",
+      "sha1": "13e00d9973839bd4f8933085cd652bc42a3a63f2",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_safari_ball.pal.json",
+      "sha1": "1bbcecbe9d16b3523c198e7592c194aa0c996a8d",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_salac_berry.pal.json",
+      "sha1": "0d15cca6dfaa6004093f95ef3d0c38bbb45334b2",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_sapphire.pal.json",
+      "sha1": "fd3b05b0d76ccb6fb3294543baeefb30562356a0",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_scanner.pal.json",
+      "sha1": "d6f388562e15136c8d528e43fdae19e0879471c0",
+      "bytes": 409
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_scope_lens.pal.json",
+      "sha1": "656530eeaaa5a87c8d220c362fef10bffeb47079",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_sea_incense.pal.json",
+      "sha1": "a432840e11cd440e34904ad53a9cc97d29590e07",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_secret_key.pal.json",
+      "sha1": "cc8e154fa5a1ddeadb9bae39fd024f56a66541ed",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_shadow_mail.pal.json",
+      "sha1": "fdc25758866e604708e24d49aab317de7dd5d6a8",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_sharp_beak.pal.json",
+      "sha1": "ec66c4a74c83986c9fdb1cd18c21a3ae07e7c210",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_shell.pal.json",
+      "sha1": "d2d08070f6a658a6de205fa3028046430ab7bbed",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_shoal_salt.pal.json",
+      "sha1": "419590794066e7129d382e64d7ee20d2771a7964",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_silk_scarf.pal.json",
+      "sha1": "954bbbfda81b12d5e530388edc6b30904dee5018",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_silph_scope.pal.json",
+      "sha1": "92795e09d6cc3bee5bef44d834b3137f552f483d",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_silver_powder.pal.json",
+      "sha1": "ea56ba53d755f1c12044c5dd49ee3b9ce5ca3e66",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_sitrus_berry.pal.json",
+      "sha1": "b305309e93b99e2ebbd4c207453fa3d16273e43c",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_smoke_ball.pal.json",
+      "sha1": "87209309bf466fab3d61a144d48ccf88bcc832c1",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_soda_pop.pal.json",
+      "sha1": "9d3ba1184e74bab51a7ef40936582472c52e95de",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_soft_sand.pal.json",
+      "sha1": "568c8015f53406ffaaee78d73a04819d1ceb445a",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_soot_sack.pal.json",
+      "sha1": "da850ff00ef306e78c603c407562ec3b8f432741",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_soothe_bell.pal.json",
+      "sha1": "78463f9c0d02ef7ae00d1c2bfe4d578a42cdce8e",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_soul_dew.pal.json",
+      "sha1": "1c879fde0504617612f0a708d11fc7c2d999b355",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_spell_tag.pal.json",
+      "sha1": "0f3b0458d1bfd6b46d2e6016f772fa46f9602456",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_spelon_berry.pal.json",
+      "sha1": "768a52e3067651d07ef9aa1fc98e8ae153167c09",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_ss_ticket.pal.json",
+      "sha1": "511cf07a43482b671c28c33dae3f4cdc0cd760e2",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_star.pal.json",
+      "sha1": "beb4eb88da155bac91d41408bb47e73b59382f04",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_starf_berry.pal.json",
+      "sha1": "8f15d2295348a66f4a341c214f423e261fa3e0b4",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_steel_tm_hm.pal.json",
+      "sha1": "a1c691d9f047d2b05e15f48375f223098f960480",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_stick.pal.json",
+      "sha1": "2ce50d87cf7b9025dc979cf014941548284eb48b",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_sun_stone.pal.json",
+      "sha1": "7ea416f3cf13576bec5b235053aa7f4f6d4dc876",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_super_potion.pal.json",
+      "sha1": "e32ab3effa9cd9212eb7ba434bba7e4c98388135",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_super_repel.pal.json",
+      "sha1": "b02a9eaabb8e029a0393eee030475cbe09718d69",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_super_rod.pal.json",
+      "sha1": "9dcff4d5952815dc93bcf9cdf14df583b2270001",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_tamato_berry.pal.json",
+      "sha1": "46707b0f90bf8d553a812691045bb06cea2d1b50",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_tea.pal.json",
+      "sha1": "4159133e6cffad400f98cb91f100a6303e50a56a",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_teachy_tv.pal.json",
+      "sha1": "5aebfa408b04775845e31b260997c75228989d92",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_thick_club.pal.json",
+      "sha1": "9e5063b591c1210e65c711c56518a8f9f974a234",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_thunder_stone.pal.json",
+      "sha1": "253d30a328e3741c79a429d9da7aade712dbc40b",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_tm_case.pal.json",
+      "sha1": "c580bb66bc510783c668b4338eb65f303d6753f6",
+      "bytes": 409
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_town_map.pal.json",
+      "sha1": "b87f77e5c5fa9a53758494eade132ad6b4d5a4c3",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_tri_pass.pal.json",
+      "sha1": "0ac99bc4133895d5b7d979a9aac4a2980281c236",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_tropic_mail.pal.json",
+      "sha1": "835f559bb16ea7f3c474833263026fac0d09c9d1",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_twisted_spoon.pal.json",
+      "sha1": "fd613ceff7f4b3bc0a05190066c4455674451cd7",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_ultra_ball.pal.json",
+      "sha1": "1823aa229abecf3767215ffd93b467c893fdf7e6",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_up_grade.pal.json",
+      "sha1": "8874af65bd3de13ddfa0de1762f02f3e08972193",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_vs_seeker.pal.json",
+      "sha1": "5a167dfaf308cc6b67f5e13a0f1714765cb6b591",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_wailmer_pail.pal.json",
+      "sha1": "258d5485cf26bbd89ff69638d425785095b29f57",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_water_stone.pal.json",
+      "sha1": "5e9256ece47cae8c5a566bd271b6f47cf034b872",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_water_tm_hm.pal.json",
+      "sha1": "9bfc00112ed5cf3c21f970c48f5689b92b963e20",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_watmel_berry.pal.json",
+      "sha1": "4c57dbc2dfd003f231cd13e267ab8a49ed4086a5",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_wave_mail.pal.json",
+      "sha1": "c8546ba377e9a9b17bfba5730fbfc11ea9882988",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_wepear_berry.pal.json",
+      "sha1": "7067092d623aaeb43c6cb52af07691c5bd512fe3",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_white_flute.pal.json",
+      "sha1": "a672333f8742745b7ca37f927ddab36aa5bf0bd8",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_white_herb.pal.json",
+      "sha1": "7870e5c6cba3c4bdf927c98196ac9e45048638c2",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_wiki_berry.pal.json",
+      "sha1": "7f0447f0312ec1b425244c5fab1ba0a05e5a5926",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_wood_mail.pal.json",
+      "sha1": "aed905da22906e7dec0d6620529c24f6a5cbb805",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_x_accuracy.pal.json",
+      "sha1": "ef7f08dafae49a3e3a5a83ce06bb05f565171a11",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_x_attack.pal.json",
+      "sha1": "22c1137d449fb8670fada26860c3895c3d3892a2",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_x_defend.pal.json",
+      "sha1": "8d8ddc4ee3c76d6adb63bd5d65af160d3c4570d2",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_x_special.pal.json",
+      "sha1": "edcfc6063aaa87ffe49a0719c3072001fb91b616",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_x_speed.pal.json",
+      "sha1": "32b36fe2e82b220591c856705977e5eaf8d9548e",
+      "bytes": 409
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_yellow_flute.pal.json",
+      "sha1": "317f61410df6895becc98652392b36cf9d7a6fad",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_yellow_scarf.pal.json",
+      "sha1": "dc062bce5c3dc0ca89d9a296099a9ed0879266b8",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_yellow_shard.pal.json",
+      "sha1": "77a2d3edab7551d57671857643640cf52b08a541",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icon_palettes_zinc.pal.json",
+      "sha1": "6760127978d290c4a401db0d3db5e14c2e359e8e",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_acro_bike.png.json",
+      "sha1": "f14bad1cb7fa7f875c114400110add513bf20728",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_aguav_berry.png.json",
+      "sha1": "bbbe22f5a3ef643b3f862d3ca68eb370379c6e66",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_amulet_coin.png.json",
+      "sha1": "e2038c8c3e1c07a47ddacb484d318f7201549bd2",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_antidote.png.json",
+      "sha1": "3f862e07cf77932a5777f57653748e808b131fd4",
+      "bytes": 381
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_apicot_berry.png.json",
+      "sha1": "5f882d4692e709305feac6e7516e28dcb7d552b5",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_aspear_berry.png.json",
+      "sha1": "ed3f3d76b6cac5ff86213b586226a4481137785b",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_aurora_ticket.png.json",
+      "sha1": "a418ebeff6dfde3903d879afec2c1a9d8005b5ec",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_basement_key.png.json",
+      "sha1": "566cb63ba667d99769028018ad04f9fabd203da6",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_battle_stat_item.png.json",
+      "sha1": "ba3f74e67a68696278afd3f95bfbb856dd4be5f2",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_bead_mail.png.json",
+      "sha1": "4a11e949a6392cd8a75e175e35caa43af40051b1",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_belue_berry.png.json",
+      "sha1": "9aeba50b6acae91f4cabb8b0bfced57006fae9c9",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_berry_juice.png.json",
+      "sha1": "60449ae1eece4d940137f00e3c31fc6d27173a8c",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_berry_pouch.png.json",
+      "sha1": "5fb766b6ff42a6bbd4daa49075096f5cf4021cf1",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_bicycle.png.json",
+      "sha1": "a5f092516a2caf61d100a058b72bbf5d1bbe2dfa",
+      "bytes": 377
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_big_mushroom.png.json",
+      "sha1": "f39238807c2880986c7a55dc88e183965a4e1086",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_big_pearl.png.json",
+      "sha1": "04d0863ea422942cfe5c3ee4d8150405e55c7c3b",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_bike_voucher.png.json",
+      "sha1": "b8f916e4085228acf528103c7df8c7f2b8996cb2",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_black_belt.png.json",
+      "sha1": "57738703fbd7e311a66e533bf249a0a38e8f9e4a",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_black_glasses.png.json",
+      "sha1": "c93bc3c31e2d224d11be5ee20c77a54c4fbf8b28",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_bluk_berry.png.json",
+      "sha1": "cfe8bc122d4ae1f824ee5cf29e77a7ea11752e47",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_bright_powder.png.json",
+      "sha1": "21e2aaf1202ea2572f39dfe260f3c0d7bd4dcd0a",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_card_key.png.json",
+      "sha1": "d9d161e1fd8d32086fd41f7cb4f0a4f5c1958e22",
+      "bytes": 381
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_charcoal.png.json",
+      "sha1": "3c9653355ad2da0af65f0849f2a5d7abdf7182d0",
+      "bytes": 381
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_cheri_berry.png.json",
+      "sha1": "804c31f4d99387f25055de086f1ec126cb0237bf",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_chesto_berry.png.json",
+      "sha1": "b872f28ae2ae3f8fede5971d66fc58aabdf237c8",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_choice_band.png.json",
+      "sha1": "a5fe4ae15b5463d5720808a8ec0c278a33f1b825",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_claw_fossil.png.json",
+      "sha1": "ccd3d14645cf899957e1c411238688f4de86797a",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_cleanse_tag.png.json",
+      "sha1": "957c198b4206954d866244683ae66609ba1540e8",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_coin_case.png.json",
+      "sha1": "307a847c304a1de3990f53a672e6f50533f08e4b",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_contest_pass.png.json",
+      "sha1": "55185b7d111f3354a5528efe9ec85dd3522487fa",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_cornn_berry.png.json",
+      "sha1": "86693706bb3c26ca7fc6c4f068e29c48e56bb147",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_deep_sea_scale.png.json",
+      "sha1": "650e1696f081029eda021a0514d627890350df90",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_deep_sea_tooth.png.json",
+      "sha1": "122ca7e3acee1bd43f4c4406585507964605acc0",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_devon_goods.png.json",
+      "sha1": "238e0bc95d15b84609f2e4f3496e385e0d9f2949",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_devon_scope.png.json",
+      "sha1": "128b4b9b05f7e186f098b05d896f46f4279dcc10",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_dive_ball.png.json",
+      "sha1": "5218ede36dc0d8e6f08e69911707b60652e9746d",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_dome_fossil.png.json",
+      "sha1": "5d286c3cd41569515ef6b783b95d670e8df3a5e8",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_dragon_fang.png.json",
+      "sha1": "03920e774e00e99f8d746cdacfb08bcb0420163d",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_dragon_scale.png.json",
+      "sha1": "f8117cad3e5829bd5fb416a77b58d4572778b3bb",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_dream_mail.png.json",
+      "sha1": "b884314c049e55fca104e0a73f84412dace5d6cc",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_durin_berry.png.json",
+      "sha1": "84bf24134cffa30b09f5f53de766473182e0ef75",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_energy_root.png.json",
+      "sha1": "e490ecfa6013d11a95ec40831bce856d773ba7f4",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_enigma_berry.png.json",
+      "sha1": "ae6725959f20a906776bb8fa27654156cd8e9ce3",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_eon_ticket.png.json",
+      "sha1": "a137f0dfc702abd5e4f353e78c38beed622c61fc",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_escape_rope.png.json",
+      "sha1": "e7c99be530b052a594dae1a7a27f298c69d964ad",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_ether.png.json",
+      "sha1": "a5c1ec593086d725ffef71d922a538c7582218fd",
+      "bytes": 369
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_everstone.png.json",
+      "sha1": "60c529753fb3210d108ab1d50c2527a28ef37db9",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_exp_share.png.json",
+      "sha1": "f7738282fc680ff449689a840a0b8c421a6e6339",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_fab_mail.png.json",
+      "sha1": "3bed00f4c569d8529280ee0cb62b106721ab7f95",
+      "bytes": 381
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_fame_checker.png.json",
+      "sha1": "6bb0b3414d467cfe083e16abe5c5e313dd403851",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_figy_berry.png.json",
+      "sha1": "2b042f98dfc856a95fe49afb7d51cc7d1d9e0651",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_fire_stone.png.json",
+      "sha1": "e3094697dc6d27b243f24ee2920db013bf4dbe81",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_fluffy_tail.png.json",
+      "sha1": "059aee1be4bae179571bab40fc097af921d8706d",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_flute.png.json",
+      "sha1": "72aa9af18ce7162d78f9a5db1012cfa40e82d10e",
+      "bytes": 369
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_focus_band.png.json",
+      "sha1": "59104e19ecf9398621b3fbe5382a3644ea1a838a",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_fresh_water.png.json",
+      "sha1": "1995ea7a41a01cac98f9ce04b46a8b2af0321eed",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_full_heal.png.json",
+      "sha1": "261a3e388ba0b150cd790709bc5c204bb7690ef1",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_ganlon_berry.png.json",
+      "sha1": "6b615bde3528fe32c1a50fd8a5b5ad6ece8eff77",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_gem.png.json",
+      "sha1": "b88a254b944238cf190d062faa65ebce49797231",
+      "bytes": 361
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_glitter_mail.png.json",
+      "sha1": "ff3d89ba68a4bede548747e44ae6ee8a4904e9e4",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_go_goggles.png.json",
+      "sha1": "5c87277e8b809087e3b7837b76b5a540d436a7c0",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_gold_teeth.png.json",
+      "sha1": "45442b7794586ed40d99a495106fc511100bcba6",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_good_rod.png.json",
+      "sha1": "2f4d53d44c87a4b32f3e18b81672234ebddb54da",
+      "bytes": 381
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_great_ball.png.json",
+      "sha1": "a5ff34eda923c336d102fb7074755227ae143024",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_grepa_berry.png.json",
+      "sha1": "e4ee6d2086f9655a6d00caffc70c7ff435b153ec",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_harbor_mail.png.json",
+      "sha1": "a187843eac3eb525988a2836928eb1cb562f04d5",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_hard_stone.png.json",
+      "sha1": "f0397659afaf9f484d57bd81eda00170985cf355",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_heart_scale.png.json",
+      "sha1": "ff85d2a8a1fca2884b288dc7a77ac87c0748e881",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_helix_fossil.png.json",
+      "sha1": "713dd7ce255f43069b8a2cd3ed949d0d09209b23",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_hm.png.json",
+      "sha1": "b20962ccd34487f31c2204003b1f1c0a0ce8a164",
+      "bytes": 357
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_hondew_berry.png.json",
+      "sha1": "ec975b5a23ae5589284f010360605a220ac3a4a0",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_hp_up.png.json",
+      "sha1": "741611b4c924cf1e65c8d797ab683b2ebb27858b",
+      "bytes": 369
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_iapapa_berry.png.json",
+      "sha1": "1f4162ce5d22b89b8149f0621ab7ee6cde125fc4",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_in_battle_herb.png.json",
+      "sha1": "89b44cc8d4b1b3f4073d7f5d6a5c7c1f046db64e",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_itemfinder.png.json",
+      "sha1": "12adc04ae56d0ecc0072706e10bcc9db7082b5cc",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_kelpsy_berry.png.json",
+      "sha1": "a8ee2f1248c608ce6d5538bb380b89f41bc8670d",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_kings_rock.png.json",
+      "sha1": "94694646ce289e4a34b4490f06a31d6ee594a4ec",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_lansat_berry.png.json",
+      "sha1": "ce86fff19aa8f1e15321b40f0d46145f88582dda",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_large_potion.png.json",
+      "sha1": "b459cb72ee9ad6e3810a30e5fd457959483deb8e",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_lava_cookie.png.json",
+      "sha1": "dd46db39164dfb0d78db8479f04a299fb9e84d06",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_lax_incense.png.json",
+      "sha1": "0b08c2848b4b2e7d5a9c1d9ef724d390abcf3b8a",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_leaf_stone.png.json",
+      "sha1": "17dfedeed7afca472f101226e3f1af16f3e4a967",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_leftovers.png.json",
+      "sha1": "157cdafef89ab50121c59d920092badb52ec6e67",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_lemonade.png.json",
+      "sha1": "1428373bf9ff346b808258b083976795c74c50c8",
+      "bytes": 381
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_leppa_berry.png.json",
+      "sha1": "35bb2ddbe6ef80d75ece70420d76f28d2931c0ee",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_letter.png.json",
+      "sha1": "18996095303e03ab3af6c87bbee16a5dc31709a0",
+      "bytes": 373
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_liechi_berry.png.json",
+      "sha1": "b59ad9ef6f902d90c9cf6436e7450665ee41d4a1",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_lift_key.png.json",
+      "sha1": "6ed7241ab74da327ba79220f358f1bfd2e2e7a68",
+      "bytes": 381
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_light_ball.png.json",
+      "sha1": "0894b1a234e51fc180e6b501b5af8f708290ead9",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_lucky_egg.png.json",
+      "sha1": "78cc802cb7aa65762cdaa2a05ec024de05c96e94",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_lucky_punch.png.json",
+      "sha1": "afced80b3a2258bbab651b69321a89d0d3e6f917",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_lum_berry.png.json",
+      "sha1": "7eaae2fb497560663266041a75a25b1e85b3ddb6",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_luxury_ball.png.json",
+      "sha1": "5d90449c2f1143cc0192be7ad339b66c51e31c5f",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_mach_bike.png.json",
+      "sha1": "4b2a6c38ab24e6dd84c076d32bfaa393b023ed0a",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_macho_brace.png.json",
+      "sha1": "5b027bf0e61f4771cf37d881c9bcad89e7a2e913",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_magma_emblem.png.json",
+      "sha1": "d1ce35bfd64f852380de08117238904fef48b46c",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_magnet.png.json",
+      "sha1": "2b99af148351d596b78415fbd1f2ae9ed90c536f",
+      "bytes": 373
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_mago_berry.png.json",
+      "sha1": "3677ff3f5ea158958486703ec49d26b67ddf816c",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_magost_berry.png.json",
+      "sha1": "d0e6e16fa49b153ad735ed8b3670f4c7d5c3cb99",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_master_ball.png.json",
+      "sha1": "d202410bd2b2226062649f5d280bfe2271184dac",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_max_revive.png.json",
+      "sha1": "3d4913a42ae8a97ce20b94b4bc0929f9f0af0f7c",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_mech_mail.png.json",
+      "sha1": "b01b33063dc9c6084402fba381b98563a8016e3f",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_metal_coat.png.json",
+      "sha1": "91c6135cac422051ce1f2553946ba4a951431af4",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_metal_powder.png.json",
+      "sha1": "b4f3396315e65cad05126c7d21c7f93963f6d704",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_meteorite.png.json",
+      "sha1": "c229a22856ced2fc99df37bbc7aa91f934abd87e",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_miracle_seed.png.json",
+      "sha1": "11da37154f5c66cd6a2ca9d7993a0980cd3a0621",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_moomoo_milk.png.json",
+      "sha1": "fa8962336302dbb996583c62e900aa25217f1f45",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_moon_stone.png.json",
+      "sha1": "7e7c73dedec5d979e35bd255ee1c47ec30e35b27",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_mystic_ticket.png.json",
+      "sha1": "30b689e0c981ba557dc9e64c2f2547e9fa2e3e22",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_mystic_water.png.json",
+      "sha1": "b972ffefd9f0f1d77cfc6fa8de7da55faa97d4a4",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_nanab_berry.png.json",
+      "sha1": "0373670494202a1d6931536438a1192198cb2a24",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_nest_ball.png.json",
+      "sha1": "acaec01b3822416c8fa04502a65b10543d978fe1",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_net_ball.png.json",
+      "sha1": "21e5af77a7106e5d22410a9de3be1986ea9215ba",
+      "bytes": 381
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_never_melt_ice.png.json",
+      "sha1": "b3a79550726ead1672afd0edaa61ce2253fe9c50",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_nomel_berry.png.json",
+      "sha1": "57e387a33d2f1cf6ecff74961e337e2c3a1e8cca",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_nugget.png.json",
+      "sha1": "e652ecf55a87432417ee883bac248d17a4c9336b",
+      "bytes": 373
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_oaks_parcel.png.json",
+      "sha1": "cfe883c102197e469007b96cbc40e1349a242e08",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_old_amber.png.json",
+      "sha1": "5e3890db9337f13d3e418e0ab244dd3d1339341c",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_old_rod.png.json",
+      "sha1": "2ad049d012622c0624f83960f2d54adb270a47b4",
+      "bytes": 377
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_old_sea_map.png.json",
+      "sha1": "add5b2ef35ddfcf0fcb9d9b7f4f356bc12cefc51",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_oran_berry.png.json",
+      "sha1": "5db3a003c333536871a2cd04c671d5b10c8e16be",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_orange_mail.png.json",
+      "sha1": "8e5f57dc2c83d40598a54051e9c0bb423a6c8539",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_orb.png.json",
+      "sha1": "f12be8e9cbafb242e5d1feb5dfca0bce4f8a7387",
+      "bytes": 361
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_pamtre_berry.png.json",
+      "sha1": "4ed8ca5139b24974232ebb32ee74fdb4f3758665",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_pearl.png.json",
+      "sha1": "1d8472589a27260eda123d85e657dc26858715d0",
+      "bytes": 369
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_pecha_berry.png.json",
+      "sha1": "23ae590ae09d0a014ae6a8f2fb2e9799ec414a0c",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_persim_berry.png.json",
+      "sha1": "9f7491a4ebadd857751f58b57ff81b2e8f541cba",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_petaya_berry.png.json",
+      "sha1": "d64d2c17e43281ea674f0d52c80e2d9e156d86ba",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_pinap_berry.png.json",
+      "sha1": "6c3de27d6218206195ceb3404dfbb4dff7abe370",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_poison_barb.png.json",
+      "sha1": "248c80993635d287acaac58fd0ff77a1088b7d92",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_poke_ball.png.json",
+      "sha1": "ea40deb00c7c244761105c12d84ef0a50aa35801",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_poke_doll.png.json",
+      "sha1": "ac492581a6eab2dfecec7082842e83fcb9faa347",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_poke_flute.png.json",
+      "sha1": "c9de0d73a580a61edee092f07df5ab2c3a73efc3",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_pokeblock_case.png.json",
+      "sha1": "e857a6925fcc5ae4fecde5e27e2a33413481ecf8",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_pomeg_berry.png.json",
+      "sha1": "112acff2b81dd31ce3983a96f717b9d7cd497bfc",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_potion.png.json",
+      "sha1": "632b0aa7473cdea000f2c9858360cc2de2075434",
+      "bytes": 373
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_powder.png.json",
+      "sha1": "fc28ddfba2a849e7016f0e4905d91cbea571a74e",
+      "bytes": 373
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_powder_jar.png.json",
+      "sha1": "30da6a697de6a6c0a1f1312c801c8ed46601d1da",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_pp_max.png.json",
+      "sha1": "d536161f0d8c3aee84a910300dfd20f8680b67d2",
+      "bytes": 373
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_pp_up.png.json",
+      "sha1": "29c2baaa830b2ed24d9aff9cd59261f0e93b9f63",
+      "bytes": 369
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_premier_ball.png.json",
+      "sha1": "8ec927634291aaf504d0f711af75d68e6ab2228c",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_qualot_berry.png.json",
+      "sha1": "637c87453dc7f8c9a1184832c5cca1c2fbf82c11",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_question_mark.png.json",
+      "sha1": "2312925b0f8e735d96b6c75a9e445b5cd1231a8b",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_quick_claw.png.json",
+      "sha1": "ecafe1bd7f6f0ad3df21d463997ab9e8141dabf1",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_rabuta_berry.png.json",
+      "sha1": "8bc7d2278cfdabb7fbf2daf935f17a0901ca511c",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_rainbow_pass.png.json",
+      "sha1": "3332ce692308c8bd6b811951549de926462c575f",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_rare_candy.png.json",
+      "sha1": "d36980f49acb9d2c432878fbb41a436b6d022c59",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_rawst_berry.png.json",
+      "sha1": "9d9e1f8fe9d5cd8adc2f377ad60526ff4d27f592",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_razz_berry.png.json",
+      "sha1": "a0cc993fb19e5361b47486212cbd016eef140c3a",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_repeat_ball.png.json",
+      "sha1": "cef7613323b4bd3d463fbb41b656fc54e9ca0d04",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_repel.png.json",
+      "sha1": "bfde25d30ac46625c26124b39c50d062a84304ca",
+      "bytes": 369
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_retro_mail.png.json",
+      "sha1": "76be2bd9a59030ccb047dabd5f9ab4fc300fcfdc",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_return_to_field_arrow.png.json",
+      "sha1": "2e6d236faee454f2a4d3301c3e2f2933eaf31dae",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_revival_herb.png.json",
+      "sha1": "35a8310bd521fd2ec8bfc242966ddc103a44dce5",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_revive.png.json",
+      "sha1": "12123bb364d1fa9a34022305114c0df2b8742ae7",
+      "bytes": 373
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_room1_key.png.json",
+      "sha1": "91d02239ce8b63d0621ccc4443bab75cd9fc5e68",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_room2_key.png.json",
+      "sha1": "9c72ec85a6889fd24d9566f67346524c82a754ab",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_room4_key.png.json",
+      "sha1": "23462980f6a7aae97d99284e9e65fb1e2ef98ae2",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_room6_key.png.json",
+      "sha1": "534c84e0572afa7f7b790e108e1e5dfa67fd8fc3",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_root_fossil.png.json",
+      "sha1": "ebb85d91c4f876e06a5dab099c8cf090e18f3813",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_sacred_ash.png.json",
+      "sha1": "95695e50e57f8342f2c6292d70bf170735142327",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_safari_ball.png.json",
+      "sha1": "4dfd82543bb1e299dc52237197eec33cdface8a3",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_salac_berry.png.json",
+      "sha1": "c82571484ebf5241f6c6de5db46d3960d225d2d9",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_scanner.png.json",
+      "sha1": "b58c7a37311500a1ab04c0aa41b2560a4110f4f9",
+      "bytes": 377
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_scarf.png.json",
+      "sha1": "05ecb6971bdf233f684d8ebd9b9f01613c6228b1",
+      "bytes": 369
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_scope_lens.png.json",
+      "sha1": "b0e2cbacaadc09ec99723592bf14a8a4f0b721ab",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_sea_incense.png.json",
+      "sha1": "04099895fbbf0c576ae4696917a655462dc5fe4e",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_secret_key.png.json",
+      "sha1": "fcfb71cd457cb9320860d05498c26c18a3d817b4",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_shadow_mail.png.json",
+      "sha1": "d94e381f47335ef840bd6f3e3e4d066058660a3b",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_shard.png.json",
+      "sha1": "b80df03ed67ae3a166008904fa093f4d792d4de9",
+      "bytes": 369
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_sharp_beak.png.json",
+      "sha1": "23f4abc2ba39228c0b5caacc2eede3c445009b15",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_shell_bell.png.json",
+      "sha1": "c22ae463babc1f9302748cdb7d2729dc6b66503e",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_shoal_shell.png.json",
+      "sha1": "7a473deb73b4c85fef76561dfbe6aefa46f4854b",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_silk_scarf.png.json",
+      "sha1": "21c675ee3e90f05ad653120b9ab7ed8b05bf903a",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_silph_scope.png.json",
+      "sha1": "ce38c9d3b4ba0154287dbc7cc697c44d6bf0ef17",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_silver_powder.png.json",
+      "sha1": "700abcc08a1222d34dd834b75458b152bad3ccd1",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_sitrus_berry.png.json",
+      "sha1": "283892291f103c4dd827d4abd8b44d8146036b66",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_smoke_ball.png.json",
+      "sha1": "c9498bed74a0dcc639906862541bdba53494aa91",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_soda_pop.png.json",
+      "sha1": "87ca5ca022519b1953f760c16db5203ccb60aad9",
+      "bytes": 381
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_soft_sand.png.json",
+      "sha1": "3ac90227e71fdcaca12674f4eabfbf5f60841cf8",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_soot_sack.png.json",
+      "sha1": "e69b4a567b706215f5ba21ed387ed3027b2b66bf",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_soothe_bell.png.json",
+      "sha1": "d1165e8af59efc83cebb11365bf8a30895ed0393",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_soul_dew.png.json",
+      "sha1": "530bd51021e51452bfdc02af0be6a0d9eb945e31",
+      "bytes": 381
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_spell_tag.png.json",
+      "sha1": "e47c62bf01dd831b3ce2b0e7f2f867e7661990a3",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_spelon_berry.png.json",
+      "sha1": "5889bf22d4964e480e5e96179e462c98544a405a",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_ss_ticket.png.json",
+      "sha1": "ed759f2c2dcc52222903cf62301523fd711b5b77",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_star_piece.png.json",
+      "sha1": "69591c6738d6f9799099604b2c8b54ea7e1fffd8",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_stardust.png.json",
+      "sha1": "90bb3a882a656e4b0dd90bb54c818cd99e63e396",
+      "bytes": 381
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_starf_berry.png.json",
+      "sha1": "17a21fa6dac74bb28f96ac6a11a4e477699aa01d",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_status_heal.png.json",
+      "sha1": "0af6f843e4ddcbe2a8d093da4014d2df282aa6e3",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_stick.png.json",
+      "sha1": "1ab087d9f10caf1fcb190fd0d278e73f357712d2",
+      "bytes": 369
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_storage_key.png.json",
+      "sha1": "3dda89f6cd45453d73184e32b3135bb091b1e89a",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_sun_stone.png.json",
+      "sha1": "d48083dd5445fd034360aa97afb3c94ce63e947c",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_super_rod.png.json",
+      "sha1": "f8878dea1e57355d5de52ae0ee90d13669890fac",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_tamato_berry.png.json",
+      "sha1": "a3b74f3068a677f9f553ecf58b9e11853f2b31ee",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_tea.png.json",
+      "sha1": "fe68769864fb11698a26d2ddaf232feccd851240",
+      "bytes": 361
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_teachy_tv.png.json",
+      "sha1": "9e6e5c5d6e667c411510ab2060f08ac1395f9526",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_thick_club.png.json",
+      "sha1": "8f255c2d5b32fe0f54017fbc6a689d176012a5a1",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_thunder_stone.png.json",
+      "sha1": "9ee25ce81bab97d7fe1b56af31edf94a9c401a8a",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_timer_ball.png.json",
+      "sha1": "641bb6bab5a9152ad68f13bc2fac2427f6092caf",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_tiny_mushroom.png.json",
+      "sha1": "cea0bac936b00aa5823f6c14d30ac66a6445d1a5",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_tm.png.json",
+      "sha1": "9193631de4a77c788273e6606cf5fe106088ad22",
+      "bytes": 357
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_tm_case.png.json",
+      "sha1": "447547116d312b1f6dd30870684e7fa5e4a9d73d",
+      "bytes": 377
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_town_map.png.json",
+      "sha1": "bae1b5f431d4c837c65f8937ecaf19c6ea1ab6d0",
+      "bytes": 381
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_tri_pass.png.json",
+      "sha1": "903730a4196521a1486737bccbe5f3849919a7c7",
+      "bytes": 381
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_tropic_mail.png.json",
+      "sha1": "9843c299f8028ba20a7f26e147d3ee6967435e94",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_twisted_spoon.png.json",
+      "sha1": "98089847b1dec5d6fb835fe0b1207667f34bfc65",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_ultra_ball.png.json",
+      "sha1": "b558aa1c8220753ddabe862b242bceea749d45dd",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_up_grade.png.json",
+      "sha1": "b1c5ac2e9d4bcbc3db4462ba184d720537899bff",
+      "bytes": 381
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_vitamin.png.json",
+      "sha1": "6f808746a5b08ad3ede1a441ebc230349a2593f5",
+      "bytes": 377
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_vs_seeker.png.json",
+      "sha1": "221c494ede81a8b5e23165bcd99dbb0e32f92472",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_wailmer_pail.png.json",
+      "sha1": "61ccda5a0c3e2a0a5ef4cc72908bbf551b185dce",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_water_stone.png.json",
+      "sha1": "acfb870b4badfeb35d474345567726d788f11337",
+      "bytes": 393
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_watmel_berry.png.json",
+      "sha1": "8628000147927f1780ea3b57df493a29cf35485d",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_wave_mail.png.json",
+      "sha1": "1d03c0b28932da3d8b2e5a522d7d38ffa65a30de",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_wepear_berry.png.json",
+      "sha1": "dae50a02be651d11be6451754d04c6a69e1d837e",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_wiki_berry.png.json",
+      "sha1": "d583175cef3802bc61c8b7172dfd5755593dc2b8",
+      "bytes": 389
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/graphics_items_icons_wood_mail.png.json",
+      "sha1": "104ab696d48f9c62610d1690d9fbe7734e1bee2c",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/include_constants_items.h.json",
+      "sha1": "1f76b89f47b0e6377c9d8e3d9516e6a5a2541a27",
+      "bytes": 351
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/src_mod_pokeball.c.json",
+      "sha1": "f9c1814fd7d81afa9485a7bf085be9fb94675eb5",
+      "bytes": 322
+    },
+    {
+      "path": "mods/vanilla/pokeballs/source_files/src_pokeball.c.json",
+      "sha1": "180da5a54ff01b6f92dd486ab1f9805427290de8",
+      "bytes": 307
     }
   ],
   "counts": {
-    "sourceFiles": 474
+    "sourceEntities": 474
   }
 }

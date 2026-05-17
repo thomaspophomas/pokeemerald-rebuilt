@@ -1,0 +1,45 @@
+{
+  "id": "Route103:18",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route103/map.json",
+    "sha1": "1f8a6f5e726bb7c76e6c8bb479101490b2c1a5ae"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route103/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
+      "x": 36,
+      "y": 6,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 3,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "Route103_EventScript_Isabelle",
+      "flag": "0"
+    }
+  },
+  "map": "Route103",
+  "mapId": "MAP_ROUTE103",
+  "localId": 18,
+  "graphicsId": "OBJ_EVENT_GFX_SWIMMER_F",
+  "x": 36,
+  "y": 6,
+  "elevation": 1,
+  "movementType": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
+  "movementRangeX": 1,
+  "movementRangeY": 3,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "5",
+  "script": "Route103_EventScript_Isabelle",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

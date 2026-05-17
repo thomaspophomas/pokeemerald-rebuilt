@@ -1,0 +1,27 @@
+{
+  "id": "BattleColosseum_4P:warp_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleColosseum_4P/map.json",
+    "sha1": "2ac970314d841831af3a8ee899726de0edb3f295"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BattleColosseum_4P/map.json",
+    "raw": {
+      "x": 7,
+      "y": 8,
+      "elevation": 3,
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "WARP_ID_DYNAMIC"
+    }
+  },
+  "map": "BattleColosseum_4P",
+  "mapId": "MAP_BATTLE_COLOSSEUM_4P",
+  "eventType": "warp_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

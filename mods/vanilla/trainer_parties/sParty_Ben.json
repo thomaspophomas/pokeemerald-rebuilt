@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Ben",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_Ben[] = {\n    {\n    .iv = 150,\n    .lvl = 17,\n    .species = SPECIES_ZIGZAGOON,\n    .moves = {MOVE_HEADBUTT, MOVE_SAND_ATTACK, MOVE_GROWL, MOVE_THUNDERBOLT}\n    },\n    {\n    .iv = 150,\n    .lvl = 17,\n    .species = SPECIES_GULPIN,\n    .moves = {MOVE_AMNESIA, MOVE_SLUDGE, MOVE_YAWN, MOVE_POUND}\n    }\n};"
+  },
+  "symbol": "sParty_Ben",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 2
+}

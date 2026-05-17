@@ -1,0 +1,31 @@
+{
+  "id": "BattleColosseum_2P:coord_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleColosseum_2P/map.json",
+    "sha1": "759865d0e4fd0286d6db2cc4390c68ea3a0511c1"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BattleColosseum_2P/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 10,
+      "y": 5,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "EventScript_BattleColosseum_2P_PlayerSpot1"
+    }
+  },
+  "map": "BattleColosseum_2P",
+  "mapId": "MAP_BATTLE_COLOSSEUM_2P",
+  "eventType": "coord_events",
+  "index": 1,
+  "script": "EventScript_BattleColosseum_2P_PlayerSpot1",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

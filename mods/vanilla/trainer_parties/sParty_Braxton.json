@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Braxton",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_Braxton[] = {\n    {\n    .iv = 100,\n    .lvl = 28,\n    .species = SPECIES_SWELLOW,\n    .moves = {MOVE_FOCUS_ENERGY, MOVE_QUICK_ATTACK, MOVE_WING_ATTACK, MOVE_ENDEAVOR}\n    },\n    {\n    .iv = 100,\n    .lvl = 28,\n    .species = SPECIES_TRAPINCH,\n    .moves = {MOVE_BITE, MOVE_DIG, MOVE_FAINT_ATTACK, MOVE_SAND_TOMB}\n    },\n    {\n    .iv = 100,\n    .lvl = 28,\n    .species = SPECIES_WAILMER,\n    .moves = {MOVE_ROLLOUT, MOVE_WHIRLPOOL, MOVE_ASTONISH, MOVE_WATER_PULSE}\n    },\n    {\n    .iv = 100,\n    .lvl = 28,\n    .species = SPECIES_MAGNETON,\n    .moves = {MOVE_THUNDERBOLT, MOVE_SUPERSONIC, MOVE_THUNDER_WAVE, MOVE_SONIC_BOOM}\n    },\n    {\n    .iv = 100,\n    .lvl = 28,\n    .species = SPECIES_SHIFTRY,\n    .moves = {MOVE_GIGA_DRAIN, MOVE_FAINT_ATTACK, MOVE_DOUBLE_TEAM, MOVE_SWAGGER}\n    }\n};"
+  },
+  "symbol": "sParty_Braxton",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 5
+}

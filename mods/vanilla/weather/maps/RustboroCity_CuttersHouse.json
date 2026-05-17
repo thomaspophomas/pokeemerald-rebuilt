@@ -1,0 +1,16 @@
+{
+  "id": "RustboroCity_CuttersHouse:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_CuttersHouse/map.json",
+    "sha1": "0c46f9bb610f768a172e0d9065ef1b6af882e4bd"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/RustboroCity_CuttersHouse/map.json"
+  },
+  "map": "RustboroCity_CuttersHouse",
+  "mapId": "MAP_RUSTBORO_CITY_CUTTERS_HOUSE",
+  "weather": "WEATHER_NONE"
+}

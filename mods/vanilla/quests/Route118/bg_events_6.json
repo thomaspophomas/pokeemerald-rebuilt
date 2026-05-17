@@ -1,0 +1,27 @@
+{
+  "id": "Route118:bg_events:6",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route118/map.json",
+    "sha1": "e722f5845bad96db2f079abf577a8918ccdf2db5"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route118/map.json",
+    "raw": {
+      "type": "secret_base",
+      "x": 46,
+      "y": 5,
+      "elevation": 0,
+      "secret_base_id": "SECRET_BASE_TREE2_1"
+    }
+  },
+  "map": "Route118",
+  "mapId": "MAP_ROUTE118",
+  "eventType": "bg_events",
+  "index": 6,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

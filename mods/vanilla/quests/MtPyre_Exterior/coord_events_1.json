@@ -1,0 +1,31 @@
+{
+  "id": "MtPyre_Exterior:coord_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Exterior/map.json",
+    "sha1": "18f311029f177a135b509d3c01af0762ccc701c2"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MtPyre_Exterior/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 25,
+      "y": 21,
+      "elevation": 3,
+      "var": "TRIGGER_RUN_IMMEDIATELY",
+      "var_value": "0",
+      "script": "MtPyre_Exterior_EventScript_FogTrigger"
+    }
+  },
+  "map": "MtPyre_Exterior",
+  "mapId": "MAP_MT_PYRE_EXTERIOR",
+  "eventType": "coord_events",
+  "index": 1,
+  "script": "MtPyre_Exterior_EventScript_FogTrigger",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

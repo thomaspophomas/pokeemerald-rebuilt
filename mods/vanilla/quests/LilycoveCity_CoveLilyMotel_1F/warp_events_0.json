@@ -1,0 +1,27 @@
+{
+  "id": "LilycoveCity_CoveLilyMotel_1F:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_CoveLilyMotel_1F/map.json",
+    "sha1": "4ab6219dc8e99a2fb3b420779550e7fa37593009"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LilycoveCity_CoveLilyMotel_1F/map.json",
+    "raw": {
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_LILYCOVE_CITY",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "LilycoveCity_CoveLilyMotel_1F",
+  "mapId": "MAP_LILYCOVE_CITY_COVE_LILY_MOTEL_1F",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "OldaleTown_Mart_Pokemart_Expanded",
+  "domain": "shops",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown_Mart/scripts.inc",
+    "sha1": "8a968880e5a4d7792fef6fe981f5856832d88170"
+  },
+  "legacy": {
+    "kind": "pokemart_script_list",
+    "sourcePath": "data/maps/OldaleTown_Mart/scripts.inc"
+  },
+  "symbol": "OldaleTown_Mart_Pokemart_Expanded",
+  "map": "OldaleTown_Mart",
+  "items": [
+    "ITEM_POKE_BALL",
+    "ITEM_POTION",
+    "ITEM_ANTIDOTE",
+    "ITEM_PARALYZE_HEAL",
+    "ITEM_AWAKENING"
+  ]
+}

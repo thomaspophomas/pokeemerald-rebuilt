@@ -1,0 +1,27 @@
+{
+  "id": "SootopolisCity_Mart:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Mart/map.json",
+    "sha1": "0cc275af915c0835ccb78205c271ed5c4c6450cb"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SootopolisCity_Mart/map.json",
+    "raw": {
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_SOOTOPOLIS_CITY",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "SootopolisCity_Mart",
+  "mapId": "MAP_SOOTOPOLIS_CITY_MART",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

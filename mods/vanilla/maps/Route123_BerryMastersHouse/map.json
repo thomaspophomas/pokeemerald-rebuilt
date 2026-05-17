@@ -58,5 +58,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route123_BerryMastersHouse/map.json",
+    "sha1": "778a54a89dafe951e7e20b7816de8e63d8034560"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route123_BerryMastersHouse/map.json",
+    "mapName": "Route123_BerryMastersHouse",
+    "scriptsSourcePath": "data/maps/Route123_BerryMastersHouse/scripts.inc"
+  },
+  "mapGroup": 31,
+  "mapNum": 0,
+  "mapGroupSymbol": "gMapGroup_IndoorRoute123",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

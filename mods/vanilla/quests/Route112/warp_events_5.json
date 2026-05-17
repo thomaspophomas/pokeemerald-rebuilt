@@ -1,0 +1,27 @@
+{
+  "id": "Route112:warp_events:5",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route112/map.json",
+    "sha1": "b661693767b6f599786f2403d78ab8974913a097"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route112/map.json",
+    "raw": {
+      "x": 22,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_FIERY_PATH",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "Route112",
+  "mapId": "MAP_ROUTE112",
+  "eventType": "warp_events",
+  "index": 5,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

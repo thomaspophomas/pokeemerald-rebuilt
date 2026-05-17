@@ -1,0 +1,31 @@
+{
+  "id": "Route101:coord_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route101/map.json",
+    "sha1": "8190d44a22ce7b13ce160858bd09611117dce84d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route101/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 11,
+      "y": 19,
+      "elevation": 3,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "1",
+      "script": "Route101_EventScript_StartBirchRescue"
+    }
+  },
+  "map": "Route101",
+  "mapId": "MAP_ROUTE101",
+  "eventType": "coord_events",
+  "index": 1,
+  "script": "Route101_EventScript_StartBirchRescue",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

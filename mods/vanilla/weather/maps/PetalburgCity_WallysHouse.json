@@ -1,0 +1,16 @@
+{
+  "id": "PetalburgCity_WallysHouse:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_WallysHouse/map.json",
+    "sha1": "679ee949b04412149e8a9236f769bb492695d99b"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/PetalburgCity_WallysHouse/map.json"
+  },
+  "map": "PetalburgCity_WallysHouse",
+  "mapId": "MAP_PETALBURG_CITY_WALLYS_HOUSE",
+  "weather": "WEATHER_NONE"
+}

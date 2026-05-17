@@ -150,5 +150,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Room2/map.json",
+    "sha1": "85571e9931ec731499543251a0632dcb8a9333b9"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SeafloorCavern_Room2/map.json",
+    "mapName": "SeafloorCavern_Room2",
+    "scriptsSourcePath": "data/maps/SeafloorCavern_Room2/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 29,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,46 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F:LOCALID_SPACE_CENTER_2F_RICH_BOY",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/map.json",
+    "sha1": "1b87fdfef508a18fb47e850380133fcbd3be7de7"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/map.json",
+    "raw": {
+      "local_id": "LOCALID_SPACE_CENTER_2F_RICH_BOY",
+      "graphics_id": "OBJ_EVENT_GFX_RICH_BOY",
+      "x": 6,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MossdeepCity_SpaceCenter_2F_EventScript_RichBoy",
+      "flag": "0"
+    }
+  },
+  "map": "MossdeepCity_SpaceCenter_2F",
+  "mapId": "MAP_MOSSDEEP_CITY_SPACE_CENTER_2F",
+  "localId": "LOCALID_SPACE_CENTER_2F_RICH_BOY",
+  "graphicsId": "OBJ_EVENT_GFX_RICH_BOY",
+  "x": 6,
+  "y": 2,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "MossdeepCity_SpaceCenter_2F_EventScript_RichBoy",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

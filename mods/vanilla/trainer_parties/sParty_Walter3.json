@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Walter3",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_Walter3[] = {\n    {\n    .iv = 20,\n    .lvl = 36,\n    .species = SPECIES_LINOONE,\n    .moves = {MOVE_HEADBUTT, MOVE_SAND_ATTACK, MOVE_ODOR_SLEUTH, MOVE_FURY_SWIPES}\n    },\n    {\n    .iv = 20,\n    .lvl = 36,\n    .species = SPECIES_MANECTRIC,\n    .moves = {MOVE_QUICK_ATTACK, MOVE_SPARK, MOVE_ODOR_SLEUTH, MOVE_ROAR}\n    }\n};"
+  },
+  "symbol": "sParty_Walter3",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 2
+}

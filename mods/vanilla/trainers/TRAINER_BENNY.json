@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_BENNY",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_BENNY] =\n    {\n        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,\n        .trainerPic = TRAINER_PIC_BIRD_KEEPER,\n        .trainerName = _(\"BENNY\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_Benny),\n    },"
+  },
+  "symbol": "TRAINER_BENNY",
+  "numericId": 407,
+  "trainerName": "BENNY",
+  "trainerClass": "TRAINER_CLASS_BIRD_KEEPER",
+  "trainerPic": "TRAINER_PIC_BIRD_KEEPER",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_COOL",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_Benny",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

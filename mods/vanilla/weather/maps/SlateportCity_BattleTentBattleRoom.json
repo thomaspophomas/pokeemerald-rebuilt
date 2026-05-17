@@ -1,0 +1,16 @@
+{
+  "id": "SlateportCity_BattleTentBattleRoom:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_BattleTentBattleRoom/map.json",
+    "sha1": "ada20a77ea208c246dd468990136852c8b3ace1a"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/SlateportCity_BattleTentBattleRoom/map.json"
+  },
+  "map": "SlateportCity_BattleTentBattleRoom",
+  "mapId": "MAP_SLATEPORT_CITY_BATTLE_TENT_BATTLE_ROOM",
+  "weather": "WEATHER_NONE"
+}

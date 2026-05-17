@@ -1,0 +1,16 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/map.json",
+    "sha1": "2b09c54b19da6822ec78e135b02b34f4908ef13a"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/map.json"
+  },
+  "map": "BattleFrontier_BattlePyramidLobby",
+  "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_LOBBY",
+  "weather": "WEATHER_NONE"
+}

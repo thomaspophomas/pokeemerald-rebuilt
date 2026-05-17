@@ -55,5 +55,26 @@
       "script": "BattleFrontier_BattlePyramidTop_EventScript_BattleBrandon"
     }
   ],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidTop/map.json",
+    "sha1": "f1b0387d93bfee728126deb8f371b495ab79debb"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidTop/map.json",
+    "mapName": "BattleFrontier_BattlePyramidTop",
+    "scriptsSourcePath": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 27,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

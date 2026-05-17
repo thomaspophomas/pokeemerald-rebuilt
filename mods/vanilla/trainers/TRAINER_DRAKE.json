@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_DRAKE",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_DRAKE] =\n    {\n        .trainerClass = TRAINER_CLASS_ELITE_FOUR,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,\n        .trainerPic = TRAINER_PIC_ELITE_FOUR_DRAKE,\n        .trainerName = _(\"DRAKE\"),\n        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,\n        .party = ITEM_CUSTOM_MOVES(sParty_Drake),\n    },"
+  },
+  "symbol": "TRAINER_DRAKE",
+  "numericId": 264,
+  "trainerName": "DRAKE",
+  "trainerClass": "TRAINER_CLASS_ELITE_FOUR",
+  "trainerPic": "TRAINER_PIC_ELITE_FOUR_DRAKE",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY",
+  "partyRef": "sParty_Drake",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

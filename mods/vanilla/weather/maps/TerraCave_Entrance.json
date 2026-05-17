@@ -1,0 +1,16 @@
+{
+  "id": "TerraCave_Entrance:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TerraCave_Entrance/map.json",
+    "sha1": "fbc7aac123152861c2f01e1743a3b12b7da69ed8"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/TerraCave_Entrance/map.json"
+  },
+  "map": "TerraCave_Entrance",
+  "mapId": "MAP_TERRA_CAVE_ENTRANCE",
+  "weather": "WEATHER_NONE"
+}

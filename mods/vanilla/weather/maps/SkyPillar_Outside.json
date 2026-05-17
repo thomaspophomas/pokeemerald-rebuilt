@@ -1,0 +1,16 @@
+{
+  "id": "SkyPillar_Outside:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Outside/map.json",
+    "sha1": "80f13b591e884a86c91213aa9b43d7af15b5cc85"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/SkyPillar_Outside/map.json"
+  },
+  "map": "SkyPillar_Outside",
+  "mapId": "MAP_SKY_PILLAR_OUTSIDE",
+  "weather": "WEATHER_NONE"
+}

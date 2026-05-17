@@ -1,0 +1,23 @@
+{
+  "id": "SlateportCity_Pokemart_EnergyGuru",
+  "domain": "shops",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "pokemart_script_list",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc"
+  },
+  "symbol": "SlateportCity_Pokemart_EnergyGuru",
+  "map": "SlateportCity",
+  "items": [
+    "ITEM_PROTEIN",
+    "ITEM_IRON",
+    "ITEM_CARBOS",
+    "ITEM_ZINC",
+    "ITEM_CALCIUM",
+    "ITEM_HP_UP"
+  ]
+}

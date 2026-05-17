@@ -1,0 +1,45 @@
+{
+  "id": "VictoryRoad_1F:5",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_1F/map.json",
+    "sha1": "d2466927c82f22b7d85aef4a98fe5a48b65b1e8a"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/VictoryRoad_1F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 40,
+      "y": 26,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "VictoryRoad_1F_EventScript_ItemMaxElixir",
+      "flag": "FLAG_ITEM_VICTORY_ROAD_1F_MAX_ELIXIR"
+    }
+  },
+  "map": "VictoryRoad_1F",
+  "mapId": "MAP_VICTORY_ROAD_1F",
+  "localId": 5,
+  "graphicsId": "OBJ_EVENT_GFX_ITEM_BALL",
+  "x": 40,
+  "y": 26,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "VictoryRoad_1F_EventScript_ItemMaxElixir",
+  "flag": "FLAG_ITEM_VICTORY_ROAD_1F_MAX_ELIXIR",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

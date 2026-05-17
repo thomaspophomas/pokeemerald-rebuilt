@@ -1,0 +1,31 @@
+{
+  "id": "BattleFrontier_BattlePikeThreePathRoom:coord_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeThreePathRoom/map.json",
+    "sha1": "22afb95cb47369aa1014e20deec5c150f6d8f6fd"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeThreePathRoom/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 6,
+      "y": 3,
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "BattleFrontier_BattlePikeThreePathRoom_EventScript_CenterRoomWarp"
+    }
+  },
+  "map": "BattleFrontier_BattlePikeThreePathRoom",
+  "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PIKE_THREE_PATH_ROOM",
+  "eventType": "coord_events",
+  "index": 1,
+  "script": "BattleFrontier_BattlePikeThreePathRoom_EventScript_CenterRoomWarp",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

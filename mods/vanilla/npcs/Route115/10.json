@@ -1,0 +1,45 @@
+{
+  "id": "Route115:10",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route115/map.json",
+    "sha1": "b6c6b6d8e02d782dfc66ddae4e4cf9145461193d"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route115/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 20,
+      "y": 60,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route115_EventScript_ItemSuperPotion",
+      "flag": "FLAG_ITEM_ROUTE_115_SUPER_POTION"
+    }
+  },
+  "map": "Route115",
+  "mapId": "MAP_ROUTE115",
+  "localId": 10,
+  "graphicsId": "OBJ_EVENT_GFX_ITEM_BALL",
+  "x": 20,
+  "y": 60,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Route115_EventScript_ItemSuperPotion",
+  "flag": "FLAG_ITEM_ROUTE_115_SUPER_POTION",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "FieryPath:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FieryPath/map.json",
+    "sha1": "1bfd87b322ac6d82537c1476de8e9d1f862fc24c"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/FieryPath/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 8,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FieryPath_EventScript_ItemTMToxic",
+      "flag": "FLAG_ITEM_FIERY_PATH_TM_TOXIC"
+    }
+  },
+  "map": "FieryPath",
+  "mapId": "MAP_FIERY_PATH",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_ITEM_BALL",
+  "x": 8,
+  "y": 3,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "FieryPath_EventScript_ItemTMToxic",
+  "flag": "FLAG_ITEM_FIERY_PATH_TM_TOXIC",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

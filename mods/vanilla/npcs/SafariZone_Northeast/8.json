@@ -1,0 +1,45 @@
+{
+  "id": "SafariZone_Northeast:8",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_Northeast/map.json",
+    "sha1": "94217153e5e24f284b425776e2af3ec3ac478483"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SafariZone_Northeast/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 12,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_12"
+    }
+  },
+  "map": "SafariZone_Northeast",
+  "mapId": "MAP_SAFARI_ZONE_NORTHEAST",
+  "localId": 8,
+  "graphicsId": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+  "x": 12,
+  "y": 8,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "EventScript_RockSmash",
+  "flag": "FLAG_TEMP_12",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "RecordCorner:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RecordCorner/map.json",
+    "sha1": "e4f2e10aeeca18cc7a087f725eb854fb443be6cc"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/RecordCorner/map.json"
+  },
+  "map": "RecordCorner",
+  "mapId": "MAP_RECORD_CORNER",
+  "weather": "WEATHER_NONE"
+}

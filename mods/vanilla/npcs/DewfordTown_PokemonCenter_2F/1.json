@@ -1,0 +1,45 @@
+{
+  "id": "DewfordTown_PokemonCenter_2F:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_PokemonCenter_2F/map.json",
+    "sha1": "3a9aa2abe407e3275e2f57b89635673604dec33a"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/DewfordTown_PokemonCenter_2F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_TEALA",
+      "x": 6,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Common_EventScript_UnionRoomAttendant",
+      "flag": "0"
+    }
+  },
+  "map": "DewfordTown_PokemonCenter_2F",
+  "mapId": "MAP_DEWFORD_TOWN_POKEMON_CENTER_2F",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_TEALA",
+  "x": 6,
+  "y": 2,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Common_EventScript_UnionRoomAttendant",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

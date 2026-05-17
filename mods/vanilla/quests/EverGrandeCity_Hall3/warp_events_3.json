@@ -1,0 +1,27 @@
+{
+  "id": "EverGrandeCity_Hall3:warp_events:3",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_Hall3/map.json",
+    "sha1": "0283a46572dcfb490b6f1151d3b13d8f141d3e06"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/EverGrandeCity_Hall3/map.json",
+    "raw": {
+      "x": 6,
+      "y": 12,
+      "elevation": 3,
+      "dest_map": "MAP_EVER_GRANDE_CITY_GLACIAS_ROOM",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "EverGrandeCity_Hall3",
+  "mapId": "MAP_EVER_GRANDE_CITY_HALL3",
+  "eventType": "warp_events",
+  "index": 3,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "PetalburgCity_Gym:bg_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/map.json",
+    "sha1": "34ba789ea4c8292423a7dd5e264f33dade8777d7"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/PetalburgCity_Gym/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 7,
+      "y": 105,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "PetalburgCity_Gym_EventScript_AccuracyRoomDoor"
+    }
+  },
+  "map": "PetalburgCity_Gym",
+  "mapId": "MAP_PETALBURG_CITY_GYM",
+  "eventType": "bg_events",
+  "index": 1,
+  "script": "PetalburgCity_Gym_EventScript_AccuracyRoomDoor",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

@@ -31,5 +31,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_2F/map.json",
+    "sha1": "37d39e30bc3ec9e45328abe6986a80ab521b54d4"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SkyPillar_2F/map.json",
+    "mapName": "SkyPillar_2F",
+    "scriptsSourcePath": "data/maps/SkyPillar_2F/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 80,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

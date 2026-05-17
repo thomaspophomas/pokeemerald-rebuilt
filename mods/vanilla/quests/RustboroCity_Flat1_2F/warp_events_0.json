@@ -1,0 +1,27 @@
+{
+  "id": "RustboroCity_Flat1_2F:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Flat1_2F/map.json",
+    "sha1": "65d9930b788c4b89b851b60d494cf1e252fe7e94"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/RustboroCity_Flat1_2F/map.json",
+    "raw": {
+      "x": 2,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_RUSTBORO_CITY_FLAT1_1F",
+      "dest_warp_id": "2"
+    }
+  },
+  "map": "RustboroCity_Flat1_2F",
+  "mapId": "MAP_RUSTBORO_CITY_FLAT1_2F",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

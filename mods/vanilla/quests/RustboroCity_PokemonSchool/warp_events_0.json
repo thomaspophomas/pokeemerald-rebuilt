@@ -1,0 +1,27 @@
+{
+  "id": "RustboroCity_PokemonSchool:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonSchool/map.json",
+    "sha1": "bf4ca29432926880aeba032b3d1065c6dc8aa2a0"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/RustboroCity_PokemonSchool/map.json",
+    "raw": {
+      "x": 5,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_RUSTBORO_CITY",
+      "dest_warp_id": "4"
+    }
+  },
+  "map": "RustboroCity_PokemonSchool",
+  "mapId": "MAP_RUSTBORO_CITY_POKEMON_SCHOOL",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

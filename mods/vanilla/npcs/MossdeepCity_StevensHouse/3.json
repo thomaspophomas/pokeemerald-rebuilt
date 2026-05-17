@@ -1,0 +1,45 @@
+{
+  "id": "MossdeepCity_StevensHouse:3",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_StevensHouse/map.json",
+    "sha1": "3fbecad23caf30b93fa6cd3c1e4bcf783a85d51a"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MossdeepCity_StevensHouse/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
+      "x": 6,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MossdeepCity_StevensHouse_EventScript_Letter",
+      "flag": "FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY"
+    }
+  },
+  "map": "MossdeepCity_StevensHouse",
+  "mapId": "MAP_MOSSDEEP_CITY_STEVENS_HOUSE",
+  "localId": 3,
+  "graphicsId": "OBJ_EVENT_GFX_NINJA_BOY",
+  "x": 6,
+  "y": 4,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_INVISIBLE",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "MossdeepCity_StevensHouse_EventScript_Letter",
+  "flag": "FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -46,5 +46,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_MoveRelearnersHouse/map.json",
+    "sha1": "46698b461841f016dc7b6a0832a0dd1c8ffadc77"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/FallarborTown_MoveRelearnersHouse/map.json",
+    "mapName": "FallarborTown_MoveRelearnersHouse",
+    "scriptsSourcePath": "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc"
+  },
+  "mapGroup": 5,
+  "mapNum": 7,
+  "mapGroupSymbol": "gMapGroup_IndoorFallarbor",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

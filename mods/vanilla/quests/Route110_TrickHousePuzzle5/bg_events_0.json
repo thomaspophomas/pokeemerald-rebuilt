@@ -1,0 +1,30 @@
+{
+  "id": "Route110_TrickHousePuzzle5:bg_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle5/map.json",
+    "sha1": "997a1a0aeaa25dcdb447704587c9137fe7aa475f"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle5/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 11,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route110_TrickHousePuzzle5_EventScript_Scroll"
+    }
+  },
+  "map": "Route110_TrickHousePuzzle5",
+  "mapId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE5",
+  "eventType": "bg_events",
+  "index": 0,
+  "script": "Route110_TrickHousePuzzle5_EventScript_Scroll",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

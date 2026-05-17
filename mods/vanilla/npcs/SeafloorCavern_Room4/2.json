@@ -1,0 +1,45 @@
+{
+  "id": "SeafloorCavern_Room4:2",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Room4/map.json",
+    "sha1": "d3ee4899cbbf03d5a49e8f8fae6477c96399c95d"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SeafloorCavern_Room4/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "x": 5,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "SeafloorCavern_Room4_EventScript_Grunt4",
+      "flag": "FLAG_HIDE_SEAFLOOR_CAVERN_AQUA_GRUNTS"
+    }
+  },
+  "map": "SeafloorCavern_Room4",
+  "mapId": "MAP_SEAFLOOR_CAVERN_ROOM4",
+  "localId": 2,
+  "graphicsId": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+  "x": 5,
+  "y": 12,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "3",
+  "script": "SeafloorCavern_Room4_EventScript_Grunt4",
+  "flag": "FLAG_HIDE_SEAFLOOR_CAVERN_AQUA_GRUNTS",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

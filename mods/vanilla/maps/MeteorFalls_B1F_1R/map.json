@@ -59,5 +59,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_B1F_1R/map.json",
+    "sha1": "310122cc63c09f936544d0306f1bc5537ca2a3bf"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/MeteorFalls_B1F_1R/map.json",
+    "mapName": "MeteorFalls_B1F_1R",
+    "scriptsSourcePath": "data/maps/MeteorFalls_B1F_1R/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 2,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

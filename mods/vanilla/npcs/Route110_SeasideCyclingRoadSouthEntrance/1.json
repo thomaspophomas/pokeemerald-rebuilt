@@ -1,0 +1,45 @@
+{
+  "id": "Route110_SeasideCyclingRoadSouthEntrance:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/map.json",
+    "sha1": "16577218e1c31086f8de85e1ec5a356ac231ac39"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
+      "x": 7,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route110_SeasideCyclingRoadSouthEntrance_EventScript_Clerk",
+      "flag": "0"
+    }
+  },
+  "map": "Route110_SeasideCyclingRoadSouthEntrance",
+  "mapId": "MAP_ROUTE110_SEASIDE_CYCLING_ROAD_SOUTH_ENTRANCE",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_MART_EMPLOYEE",
+  "x": 7,
+  "y": 2,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Route110_SeasideCyclingRoadSouthEntrance_EventScript_Clerk",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_DIANNE",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_DIANNE] =\n    {\n        .trainerClass = TRAINER_CLASS_COOLTRAINER,\n        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,\n        .trainerPic = TRAINER_PIC_COOLTRAINER_F,\n        .trainerName = _(\"DIANNE\"),\n        .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},\n        .doubleBattle = FALSE,\n        .aiFlags = 0,\n        .party = ITEM_CUSTOM_MOVES(sParty_Dianne),\n    },"
+  },
+  "symbol": "TRAINER_DIANNE",
+  "numericId": 417,
+  "trainerName": "DIANNE",
+  "trainerClass": "TRAINER_CLASS_COOLTRAINER",
+  "trainerPic": "TRAINER_PIC_COOLTRAINER_F",
+  "encounterMusicGender": "F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL",
+  "doubleBattle": "FALSE",
+  "aiFlags": "0",
+  "partyRef": "sParty_Dianne",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

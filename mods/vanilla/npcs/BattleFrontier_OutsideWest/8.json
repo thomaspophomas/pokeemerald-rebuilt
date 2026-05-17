@@ -1,0 +1,45 @@
+{
+  "id": "BattleFrontier_OutsideWest:8",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/map.json",
+    "sha1": "0468bfc9b139119ef609063be6421d7050189630"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
+      "x": 17,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BattleFrontier_OutsideWest_EventScript_Gentleman",
+      "flag": "0"
+    }
+  },
+  "map": "BattleFrontier_OutsideWest",
+  "mapId": "MAP_BATTLE_FRONTIER_OUTSIDE_WEST",
+  "localId": 8,
+  "graphicsId": "OBJ_EVENT_GFX_GENTLEMAN",
+  "x": 17,
+  "y": 20,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "BattleFrontier_OutsideWest_EventScript_Gentleman",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

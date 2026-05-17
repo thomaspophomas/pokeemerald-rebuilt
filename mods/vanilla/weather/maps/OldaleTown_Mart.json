@@ -1,0 +1,16 @@
+{
+  "id": "OldaleTown_Mart:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown_Mart/map.json",
+    "sha1": "240f26be5b4341e99fad979ba234ff2dbd7a5ca0"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/OldaleTown_Mart/map.json"
+  },
+  "map": "OldaleTown_Mart",
+  "mapId": "MAP_OLDALE_TOWN_MART",
+  "weather": "WEATHER_NONE"
+}

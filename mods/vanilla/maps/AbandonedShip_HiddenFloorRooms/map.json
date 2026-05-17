@@ -214,5 +214,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "AbandonedShip_HiddenFloorRooms_EventScript_Trash"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_HiddenFloorRooms/map.json",
+    "sha1": "0b85e2d08d3c35ab4df4c17fffe6733ca9cc50f2"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/AbandonedShip_HiddenFloorRooms/map.json",
+    "mapName": "AbandonedShip_HiddenFloorRooms",
+    "scriptsSourcePath": "data/maps/AbandonedShip_HiddenFloorRooms/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 66,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

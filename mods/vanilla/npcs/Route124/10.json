@@ -1,0 +1,45 @@
+{
+  "id": "Route124:10",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route124/map.json",
+    "sha1": "b87e235602d2cbbdd6a2b66d5ca70a27ecd0486d"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route124/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_TUBER_M_SWIMMING",
+      "x": 17,
+      "y": 44,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "Route124_EventScript_Roy",
+      "flag": "0"
+    }
+  },
+  "map": "Route124",
+  "mapId": "MAP_ROUTE124",
+  "localId": 10,
+  "graphicsId": "OBJ_EVENT_GFX_TUBER_M_SWIMMING",
+  "x": 17,
+  "y": 44,
+  "elevation": 1,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "1",
+  "script": "Route124_EventScript_Roy",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

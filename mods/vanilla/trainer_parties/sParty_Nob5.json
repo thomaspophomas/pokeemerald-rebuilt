@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Nob5",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemDefaultMoves sParty_Nob5[] = {\n    {\n    .iv = 140,\n    .lvl = 33,\n    .species = SPECIES_MACHOP,\n    .heldItem = ITEM_NONE\n    },\n    {\n    .iv = 140,\n    .lvl = 33,\n    .species = SPECIES_MACHOKE,\n    .heldItem = ITEM_NONE\n    },\n    {\n    .iv = 140,\n    .lvl = 33,\n    .species = SPECIES_MACHOKE,\n    .heldItem = ITEM_NONE\n    },\n    {\n    .iv = 140,\n    .lvl = 33,\n    .species = SPECIES_MACHAMP,\n    .heldItem = ITEM_BLACK_BELT\n    }\n};"
+  },
+  "symbol": "sParty_Nob5",
+  "partyType": "TrainerMonItemDefaultMoves",
+  "pokemonCount": 4
+}

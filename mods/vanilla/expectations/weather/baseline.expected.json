@@ -1,15 +1,2610 @@
 {
   "domain": "weather",
   "schemaVersion": 1,
-  "fileCount": 1,
-  "jsonFileCount": 1,
-  "bytes": 67499,
-  "sha1": "5c48dc011a586029019849677d2e989eb4835c05",
+  "fileCount": 520,
+  "jsonFileCount": 520,
+  "bytes": 499568,
+  "sha1": "d7b24cc4208f11a792e532e619cadff5f67b0e12",
   "files": [
     {
-      "path": "mods/vanilla/weather/map_weather.json",
-      "sha1": "257b6f6ef1dde2590098d4d1dc83afcbb38e3a09",
-      "bytes": 67499
+      "path": "mods/vanilla/weather/_source_manifest.json",
+      "sha1": "4a367c90e52f35252d61d7afd270d52641dfdbfc",
+      "bytes": 148928
+    },
+    {
+      "path": "mods/vanilla/weather/index.json",
+      "sha1": "b7878e0f5c749b3c13c6dd462290f137c64d8d9e",
+      "bytes": 126630
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AbandonedShip_CaptainsOffice.json",
+      "sha1": "940333c16bf5e47284e864e5a84dd8bf2094ef92",
+      "bytes": 467
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AbandonedShip_Corridors_1F.json",
+      "sha1": "ee543697dbe5a78b049c3ef59dd6c4807d62e0c4",
+      "bytes": 456
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AbandonedShip_Corridors_B1F.json",
+      "sha1": "8b107d50408d5f3722639235709e27ecbb464ae9",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AbandonedShip_Deck.json",
+      "sha1": "f4149b6dae5d491f6c1097dc64e568f343caa64e",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AbandonedShip_HiddenFloorCorridors.json",
+      "sha1": "3b7487407d46d6ee099623ce32e5b9faff757abc",
+      "bytes": 498
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AbandonedShip_HiddenFloorRooms.json",
+      "sha1": "826440703b78ad54645c2f01feff3606adbc00ac",
+      "bytes": 478
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AbandonedShip_Room_B1F.json",
+      "sha1": "f73086e36e762c4ac8ee8d7bb90655cc38b725b2",
+      "bytes": 436
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AbandonedShip_Rooms2_1F.json",
+      "sha1": "f85a3018854a63ccc166dbd81421716eaeb6b269",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AbandonedShip_Rooms2_B1F.json",
+      "sha1": "2ef70648083a328d8121e554ac054abd21a43e71",
+      "bytes": 446
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AbandonedShip_Rooms_1F.json",
+      "sha1": "e53b7713a68354887cdec73da14aa393fde13434",
+      "bytes": 436
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AbandonedShip_Rooms_B1F.json",
+      "sha1": "04af4d28a6705f4a2d25da2c287ef67dacd7bfc0",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AbandonedShip_Underwater1.json",
+      "sha1": "ef14f1d63974867d5d71aef6ceb978176bdf387b",
+      "bytes": 464
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AbandonedShip_Underwater2.json",
+      "sha1": "c198b2402409df4abb69b65283c143171c797832",
+      "bytes": 464
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AlteringCave.json",
+      "sha1": "8b17d875aaf9137144fee4da2afa6fd30f15e740",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AncientTomb.json",
+      "sha1": "8ff04a4911fef89e3056d8cffc2dd93d19b4e4a3",
+      "bytes": 380
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AquaHideout_1F.json",
+      "sha1": "b40e339b68b40c89cbf0aeebaa545e490dcc6a2f",
+      "bytes": 395
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AquaHideout_B1F.json",
+      "sha1": "d0261cc8321814a46f9910b1d60e4a26183cadf0",
+      "bytes": 400
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AquaHideout_B2F.json",
+      "sha1": "76173acffb76cf0741ab240a1e5ba9989174ef99",
+      "bytes": 400
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AquaHideout_UnusedRubyMap1.json",
+      "sha1": "f54cbc61731569995eeaf45a0852bdf295907911",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AquaHideout_UnusedRubyMap2.json",
+      "sha1": "b277e224a5d548810c18d058c3f0638c4ac07d85",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/weather/maps/AquaHideout_UnusedRubyMap3.json",
+      "sha1": "003867d07ff8c376e5e0da8c81dee36cdbe494f9",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/weather/maps/ArtisanCave_1F.json",
+      "sha1": "e5b59164874b9ff2e597a39421cd8b524569b539",
+      "bytes": 395
+    },
+    {
+      "path": "mods/vanilla/weather/maps/ArtisanCave_B1F.json",
+      "sha1": "dfbb44d392d9df2a3b8f58f020af2ccd1b3bc6b5",
+      "bytes": 400
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleColosseum_2P.json",
+      "sha1": "7262ddd40edbaeeff9e4a03d866fdfb32a9d87d0",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleColosseum_4P.json",
+      "sha1": "91a7cf94912d7b3f7575f6777a78d195d3899d67",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattleArenaBattleRoom.json",
+      "sha1": "50ed13bc9eb2687a3f0d05d8a3b088c81d1a7e0c",
+      "bytes": 508
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattleArenaCorridor.json",
+      "sha1": "afccbd3523cff941678d40443d17bfc099a1e5b6",
+      "bytes": 497
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattleArenaLobby.json",
+      "sha1": "7573013ce1c8ff140c30656ee444a06d24509f0b",
+      "bytes": 482
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattleDomeBattleRoom.json",
+      "sha1": "a7dd04d1450e587265d6380b2e99da7e40d29518",
+      "bytes": 503
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattleDomeCorridor.json",
+      "sha1": "c8668458a74bc70e64ed5555104a605dee6861cc",
+      "bytes": 492
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattleDomeLobby.json",
+      "sha1": "18ab5f2c3a77ce5697681327b7f1fbfd053cee47",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattleDomePreBattleRoom.json",
+      "sha1": "4844e64d6ece2bc9039bdc467278a5c0e413d82e",
+      "bytes": 519
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattleFactoryBattleRoom.json",
+      "sha1": "5618ba1af25fab88ea37f13c3fe23ab3a31c8f23",
+      "bytes": 518
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattleFactoryLobby.json",
+      "sha1": "57eb64edf9becf6ffd69235298f65a3f9c25942e",
+      "bytes": 492
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattleFactoryPreBattleRoom.json",
+      "sha1": "febea19a0ebd77ad1ab2a581cb5bacc5f60f0f0c",
+      "bytes": 534
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattlePalaceBattleRoom.json",
+      "sha1": "42d09e9646ed44d310cd293ccaf0a635e9642428",
+      "bytes": 513
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattlePalaceCorridor.json",
+      "sha1": "2383ff1edca762d672c158fb14a4dcaedecf47b6",
+      "bytes": 502
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattlePalaceLobby.json",
+      "sha1": "ea67ba6eb4158360f4b3805e9535e0230054d523",
+      "bytes": 487
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattlePikeCorridor.json",
+      "sha1": "ffb32f7238e69ed7608120af65fd121bb7499056",
+      "bytes": 492
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattlePikeLobby.json",
+      "sha1": "3bda09d9e3a1a7175b524813b4929b39fe740257",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattlePikeRoomFinal.json",
+      "sha1": "39691d997cc1c97ee0a5a5733547c1174304c619",
+      "bytes": 498
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattlePikeRoomNormal.json",
+      "sha1": "8de259dd6cb4e557af5b31de5f2d034ae05f15ac",
+      "bytes": 503
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattlePikeRoomWildMons.json",
+      "sha1": "8f1433842365644a73c040e6720f0863d26508e4",
+      "bytes": 514
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattlePikeThreePathRoom.json",
+      "sha1": "fb934728101493df5509b211c8978dc4bacf9153",
+      "bytes": 519
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattlePyramidFloor.json",
+      "sha1": "cdb1bd6ec00273cfe956bc27c2423d85f0c6edde",
+      "bytes": 492
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattlePyramidLobby.json",
+      "sha1": "a16b598e2dfd99a762b19ad5529d7dc949c27452",
+      "bytes": 492
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattlePyramidTop.json",
+      "sha1": "39b41164ae8431385a244dd2912643c57c314837",
+      "bytes": 482
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattleTowerBattleRoom.json",
+      "sha1": "90a8b42a3998a2461c667044c7ab0741f8ae2488",
+      "bytes": 508
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattleTowerCorridor.json",
+      "sha1": "93b73bf25bb65ee24188f0e4d761e7d70973bfc6",
+      "bytes": 497
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattleTowerElevator.json",
+      "sha1": "c05d31668390b9de22d0724958b8a3bb67c4ad8d",
+      "bytes": 497
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattleTowerLobby.json",
+      "sha1": "3cc4fbee20d1f9e4b99d030331d7346344332a8a",
+      "bytes": 482
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattleTowerMultiBattleRoom.json",
+      "sha1": "a39e4220ffac8fc7c5ceaf60fc79d47b282f4f5a",
+      "bytes": 534
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattleTowerMultiCorridor.json",
+      "sha1": "7c18e283a12efbaf29e3a98f4e33301440c32a06",
+      "bytes": 523
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_BattleTowerMultiPartnerRoom.json",
+      "sha1": "801dbd10721c006e4754cd156b51effb67598b5a",
+      "bytes": 539
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_ExchangeServiceCorner.json",
+      "sha1": "347cd0a5dba48ce11e27ec6bc5e3e680af2a6fe9",
+      "bytes": 507
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_Lounge1.json",
+      "sha1": "a2a1c8ac87adee7db9b50160d7273840624568b0",
+      "bytes": 435
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_Lounge2.json",
+      "sha1": "59fccb9436e809f012eeebcd090cbf847a64c55f",
+      "bytes": 435
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_Lounge3.json",
+      "sha1": "1375828dfd96e71965ba410fa791d210e81ecdfc",
+      "bytes": 435
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_Lounge4.json",
+      "sha1": "385e5489b1235c375806b695ada5a3e78ec41331",
+      "bytes": 435
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_Lounge5.json",
+      "sha1": "8cb5f24ddd7c7d21bc4cb20e77be489cb6ffcd4e",
+      "bytes": 435
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_Lounge6.json",
+      "sha1": "a2b6d5f9ce5c54666a7615fcd7f54819b808ef2d",
+      "bytes": 435
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_Lounge7.json",
+      "sha1": "797250c3fa5c9065025aacda8136da2ce2e5cc0d",
+      "bytes": 435
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_Lounge8.json",
+      "sha1": "4fe4ab14a8cc3f95b35c1797cbc73217a86f49b3",
+      "bytes": 435
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_Lounge9.json",
+      "sha1": "a9909fee43fc926f6e5aed89e07c3c1e882e3126",
+      "bytes": 435
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_Mart.json",
+      "sha1": "9a6122b7c0bac3de0ddb85549a280d4db8d20a56",
+      "bytes": 420
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_OutsideEast.json",
+      "sha1": "244a7d625335e2e335c39311541fdb29959207d1",
+      "bytes": 456
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_OutsideWest.json",
+      "sha1": "d800bc60ad0f95922f47dcee7354a27b1fdcbd6d",
+      "bytes": 456
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_PokemonCenter_1F.json",
+      "sha1": "7e0b06334c515822b92b387e6dd49d9197add419",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_PokemonCenter_2F.json",
+      "sha1": "f964aefd4dfaf9e8a06bf8189a1cb0001cdf1038",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_RankingHall.json",
+      "sha1": "aa30526909b7d417d0dc715b114ac50fe4a80e18",
+      "bytes": 456
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_ReceptionGate.json",
+      "sha1": "384363f3deeb9d7091d6fb1f20560c118199a05a",
+      "bytes": 466
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattleFrontier_ScottsHouse.json",
+      "sha1": "927e72c7eb4890f2716a4b1bd25de4999051a7de",
+      "bytes": 456
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattlePyramidSquare01.json",
+      "sha1": "f29790099d98d55c0b2769e4650d182fbe897742",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattlePyramidSquare02.json",
+      "sha1": "a2701c2250006f79d2662a00542295542f4beb3a",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattlePyramidSquare03.json",
+      "sha1": "246718b1733b0501d106a897540415303316ec2b",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattlePyramidSquare04.json",
+      "sha1": "aacc8c362e8426bf3112f122f87a8b2993c5b16a",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattlePyramidSquare05.json",
+      "sha1": "c8632ffff15296ebc8e1eb75bc914704c4509345",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattlePyramidSquare06.json",
+      "sha1": "b2bc4aa422b6f341b9f06bad3c12220fa5397302",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattlePyramidSquare07.json",
+      "sha1": "281a4682d915a8854aa64d5523ee569a441bd88f",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattlePyramidSquare08.json",
+      "sha1": "d208a9b15212145886759b7960502e848818547c",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattlePyramidSquare09.json",
+      "sha1": "d4a6e25c874bd69fe86b2a5cc31e15bf46749c68",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattlePyramidSquare10.json",
+      "sha1": "59a95f31e9734e6232cd094eae19cf5bca12b4c5",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattlePyramidSquare11.json",
+      "sha1": "dd6966958f0aca982f51d8e33ee46deb19b658ed",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattlePyramidSquare12.json",
+      "sha1": "1a6ef5a69e06302fd391310aa2eef6901de5d7e2",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattlePyramidSquare13.json",
+      "sha1": "c19a64e41574cd5e98c5bad5b1ac32d9a3f9820f",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattlePyramidSquare14.json",
+      "sha1": "d061155dbb0fa1416b61114929abfc6b5b5c5104",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattlePyramidSquare15.json",
+      "sha1": "2b5f6241343c5873711ee7736914d5b154063b2b",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BattlePyramidSquare16.json",
+      "sha1": "c1ee9e1120715be9e9787617f8d3f02c6669cf77",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BirthIsland_Exterior.json",
+      "sha1": "f46ecba33db597bb3e547c6ec8a8fb32de6e8a38",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/weather/maps/BirthIsland_Harbor.json",
+      "sha1": "a64fbed1e159f3d2349cd3f9aa24a7b1a74d789d",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/CaveOfOrigin_1F.json",
+      "sha1": "efae73f9661b4d8d63fc96222184fcfe98ce2e5f",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/weather/maps/CaveOfOrigin_B1F.json",
+      "sha1": "f6303af5d6f498a25d38f1182ac785b9b40963f0",
+      "bytes": 416
+    },
+    {
+      "path": "mods/vanilla/weather/maps/CaveOfOrigin_Entrance.json",
+      "sha1": "3618208294775c629f1b7832f15255d44d5789b0",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/CaveOfOrigin_UnusedRubySapphireMap1.json",
+      "sha1": "e57a96eaf460bdfca7ec28aac06b6a9c86172ff9",
+      "bytes": 504
+    },
+    {
+      "path": "mods/vanilla/weather/maps/CaveOfOrigin_UnusedRubySapphireMap2.json",
+      "sha1": "fda7bd49037b5ef55b7249b58275aac1c12b6c23",
+      "bytes": 514
+    },
+    {
+      "path": "mods/vanilla/weather/maps/CaveOfOrigin_UnusedRubySapphireMap3.json",
+      "sha1": "6ea6133e9e24f44aa0d4a69cbc133260ff14871d",
+      "bytes": 514
+    },
+    {
+      "path": "mods/vanilla/weather/maps/ContestHall.json",
+      "sha1": "a7d2d8e77c0e029642d460d641176e80ba95665b",
+      "bytes": 380
+    },
+    {
+      "path": "mods/vanilla/weather/maps/ContestHallBeauty.json",
+      "sha1": "d6ebb573fde100c6b5f86babb1e86d19d2639b1c",
+      "bytes": 411
+    },
+    {
+      "path": "mods/vanilla/weather/maps/ContestHallCool.json",
+      "sha1": "78b91bbc16cafb29ff33db0eee62d6794de07fc8",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/weather/maps/ContestHallCute.json",
+      "sha1": "ee4bb853bc5ced7248d93a32ce62a96d8ccf6a09",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/weather/maps/ContestHallSmart.json",
+      "sha1": "b31a33e6222d4202acfdaa0e9642da2b8267ab9a",
+      "bytes": 406
+    },
+    {
+      "path": "mods/vanilla/weather/maps/ContestHallTough.json",
+      "sha1": "cab6cbf9c3fc80c10dd908fe6bb26ce50d16319b",
+      "bytes": 406
+    },
+    {
+      "path": "mods/vanilla/weather/maps/DesertRuins.json",
+      "sha1": "24f1f8bc060747f08998a44aada3567826794cc1",
+      "bytes": 380
+    },
+    {
+      "path": "mods/vanilla/weather/maps/DesertUnderpass.json",
+      "sha1": "8b5c46314a31dbe95e5c2f8b97be14d564c590f4",
+      "bytes": 400
+    },
+    {
+      "path": "mods/vanilla/weather/maps/DewfordTown.json",
+      "sha1": "5615f196f9c3105ce7446c66e22f3405b386660e",
+      "bytes": 381
+    },
+    {
+      "path": "mods/vanilla/weather/maps/DewfordTown_Gym.json",
+      "sha1": "3d0e513a143d6ca8edf1525b4f7cac157020d984",
+      "bytes": 400
+    },
+    {
+      "path": "mods/vanilla/weather/maps/DewfordTown_Hall.json",
+      "sha1": "eb730cf32dbbdcc08e1e334a15d0c04a78f473bb",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/DewfordTown_House1.json",
+      "sha1": "aabdd9b98877c7b2f04e9335a156e93684975f0a",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/DewfordTown_House2.json",
+      "sha1": "6596b45df58fce916ac6f09c205fa1ef34200930",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/DewfordTown_PokemonCenter_1F.json",
+      "sha1": "1292e924f74ed4c21896645b5a61ba2b57760084",
+      "bytes": 466
+    },
+    {
+      "path": "mods/vanilla/weather/maps/DewfordTown_PokemonCenter_2F.json",
+      "sha1": "8845721ef1994482b86e737c14992f4f610f1e0a",
+      "bytes": 466
+    },
+    {
+      "path": "mods/vanilla/weather/maps/EverGrandeCity.json",
+      "sha1": "8e1d66c6d5fd8e74f66aeb2a4ec4b51346d2ed1b",
+      "bytes": 397
+    },
+    {
+      "path": "mods/vanilla/weather/maps/EverGrandeCity_ChampionsRoom.json",
+      "sha1": "014cf287f402d0b1ec4236be417091d1e43e5819",
+      "bytes": 467
+    },
+    {
+      "path": "mods/vanilla/weather/maps/EverGrandeCity_DrakesRoom.json",
+      "sha1": "8cdefaa3cd1de670f0d66b0fb36317c00fd0ff04",
+      "bytes": 452
+    },
+    {
+      "path": "mods/vanilla/weather/maps/EverGrandeCity_GlaciasRoom.json",
+      "sha1": "e584f427157d42517d9db328f56dc96880f953b1",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/weather/maps/EverGrandeCity_Hall1.json",
+      "sha1": "7c2683d590a2616db3ffd6de6dedb117bf54a047",
+      "bytes": 426
+    },
+    {
+      "path": "mods/vanilla/weather/maps/EverGrandeCity_Hall2.json",
+      "sha1": "e4b29736291fdb288e8ba7b6cdd40c4d36e23007",
+      "bytes": 426
+    },
+    {
+      "path": "mods/vanilla/weather/maps/EverGrandeCity_Hall3.json",
+      "sha1": "b5cd1c8b806312769c462b76fb579a5c0fc3585b",
+      "bytes": 426
+    },
+    {
+      "path": "mods/vanilla/weather/maps/EverGrandeCity_Hall4.json",
+      "sha1": "0c9d8b2b65f8b5c3d0b1f3c05848347db49ba3e5",
+      "bytes": 426
+    },
+    {
+      "path": "mods/vanilla/weather/maps/EverGrandeCity_Hall5.json",
+      "sha1": "98b97706c7c0c71ef6938131867caf77dd5ac09b",
+      "bytes": 426
+    },
+    {
+      "path": "mods/vanilla/weather/maps/EverGrandeCity_HallOfFame.json",
+      "sha1": "dd29273ea6275d0e5b7e0117bcd73e7ce1c9b76d",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/weather/maps/EverGrandeCity_PhoebesRoom.json",
+      "sha1": "1550459afcdd124ab6882c82d8611c527c85bc63",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/weather/maps/EverGrandeCity_PokemonCenter_1F.json",
+      "sha1": "f185d92ced07d6927fac5bce19644583b75b98fb",
+      "bytes": 482
+    },
+    {
+      "path": "mods/vanilla/weather/maps/EverGrandeCity_PokemonCenter_2F.json",
+      "sha1": "5033d9b91061cf3defee8917aa25a92d7a2b70ba",
+      "bytes": 482
+    },
+    {
+      "path": "mods/vanilla/weather/maps/EverGrandeCity_PokemonLeague_1F.json",
+      "sha1": "9e2ff95a869dd290dc46990cbb9e21a7da46cd8f",
+      "bytes": 482
+    },
+    {
+      "path": "mods/vanilla/weather/maps/EverGrandeCity_PokemonLeague_2F.json",
+      "sha1": "a070454699f18800d0825ed7b0d26f0144d9e55c",
+      "bytes": 482
+    },
+    {
+      "path": "mods/vanilla/weather/maps/EverGrandeCity_SidneysRoom.json",
+      "sha1": "82a7ca0d1fa6394a0c4183a33d35b29c636daa32",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FallarborTown.json",
+      "sha1": "e3e3a70ab56516ac7d3f3f563cf56a016cf6f47c",
+      "bytes": 391
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FallarborTown_BattleTentBattleRoom.json",
+      "sha1": "e5e466e58234f2579716a65180323656239c190f",
+      "bytes": 498
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FallarborTown_BattleTentCorridor.json",
+      "sha1": "38207b5407f3c8d6c10f43643ea5a25cec2672b2",
+      "bytes": 487
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FallarborTown_BattleTentLobby.json",
+      "sha1": "0565f226ac65e5decc97d5b8b31e76f0a29255d0",
+      "bytes": 472
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FallarborTown_CozmosHouse.json",
+      "sha1": "052435eee7479cf3efa2dd53dc3694becfcdc585",
+      "bytes": 451
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FallarborTown_Mart.json",
+      "sha1": "c658aacce2041e3926502238f61dcb262470a6cf",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FallarborTown_MoveRelearnersHouse.json",
+      "sha1": "29a332711b7d8c246e3dedfa0cfe1e39f37eeba2",
+      "bytes": 492
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FallarborTown_PokemonCenter_1F.json",
+      "sha1": "96f84ea58b5721d2bf54de97019cc51bef99467d",
+      "bytes": 476
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FallarborTown_PokemonCenter_2F.json",
+      "sha1": "b442e657ad55e107125ef27c27941649d39b3d24",
+      "bytes": 476
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FarawayIsland_Entrance.json",
+      "sha1": "83d4970d0e2a3d21f4eebcb050a31d96a820d0c6",
+      "bytes": 435
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FarawayIsland_Interior.json",
+      "sha1": "f0d7d11cf076ee71b4083a54fb56dd88ebc2ce0f",
+      "bytes": 436
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FieryPath.json",
+      "sha1": "3abb1b9e69aec00f2849cc493958b6ff809e128a",
+      "bytes": 370
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FortreeCity.json",
+      "sha1": "6a0b3cb1c1999f6e404cbdcaadc735f6f830f3a3",
+      "bytes": 381
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FortreeCity_DecorationShop.json",
+      "sha1": "eb9828a41a3e7f8336e6df95576c20c464523a3e",
+      "bytes": 456
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FortreeCity_Gym.json",
+      "sha1": "03905122da18c10a01c7c44cb5ddfce5383b2819",
+      "bytes": 400
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FortreeCity_House1.json",
+      "sha1": "a25875ed5e54231839975aa48c1c64325d03cf5e",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FortreeCity_House2.json",
+      "sha1": "882fdc0664f059519100136b86db81d680081fb9",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FortreeCity_House3.json",
+      "sha1": "761215e5c85b4f1cc73e9fe5d72364b5fcc2f05e",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FortreeCity_House4.json",
+      "sha1": "e821ca2b0c7b4ee76544f0aaada8470fec6af191",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FortreeCity_House5.json",
+      "sha1": "e448b98b4cdc5721865eac4f7d9b187f27340693",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FortreeCity_Mart.json",
+      "sha1": "67bff94f2d44a25a2366c7c99be2a65640a31419",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FortreeCity_PokemonCenter_1F.json",
+      "sha1": "e035f60d7b1630d53e64b01ceab23a5b54457266",
+      "bytes": 466
+    },
+    {
+      "path": "mods/vanilla/weather/maps/FortreeCity_PokemonCenter_2F.json",
+      "sha1": "ab7e3ac28d982e1419e943a6220579b8c6b65eb7",
+      "bytes": 466
+    },
+    {
+      "path": "mods/vanilla/weather/maps/GraniteCave_1F.json",
+      "sha1": "4a54f916dd427ec4075c7ceccd3a1f91323b4044",
+      "bytes": 395
+    },
+    {
+      "path": "mods/vanilla/weather/maps/GraniteCave_B1F.json",
+      "sha1": "0ddea134eac6a90b56cae5979c66b9c21e7580ff",
+      "bytes": 400
+    },
+    {
+      "path": "mods/vanilla/weather/maps/GraniteCave_B2F.json",
+      "sha1": "f3a9eb4dbae8e2717b9af98e14d94a37bd7ae1c2",
+      "bytes": 400
+    },
+    {
+      "path": "mods/vanilla/weather/maps/GraniteCave_StevensRoom.json",
+      "sha1": "9a5a955c55814813dda1c6383925f0a7cfb54851",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/weather/maps/InsideOfTruck.json",
+      "sha1": "c0152831346ed8d0c19f2c83f26542238c5e784f",
+      "bytes": 391
+    },
+    {
+      "path": "mods/vanilla/weather/maps/IslandCave.json",
+      "sha1": "4f6f5041b05452bd91c2d4352ac7b06fccfbb876",
+      "bytes": 375
+    },
+    {
+      "path": "mods/vanilla/weather/maps/JaggedPass.json",
+      "sha1": "7524e48dbf6fa34ba088ac1e219524b815027092",
+      "bytes": 375
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LavaridgeTown.json",
+      "sha1": "e0b0a9f3b62c4821b75cac5f52ec2584c2fc59e0",
+      "bytes": 391
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LavaridgeTown_Gym_1F.json",
+      "sha1": "af6ab05600b5ab1436e7462a10949a8e9efcb2f3",
+      "bytes": 435
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LavaridgeTown_Gym_B1F.json",
+      "sha1": "de1aa0c5173fda3a965d5ca2eed2b01f590a27b4",
+      "bytes": 440
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LavaridgeTown_HerbShop.json",
+      "sha1": "48e5a4abf1111053b9245b20cb506ad54acb9de6",
+      "bytes": 436
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LavaridgeTown_House.json",
+      "sha1": "cf080f366d8193b4d2bb3e0a39fd70bcce5c62fb",
+      "bytes": 420
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LavaridgeTown_Mart.json",
+      "sha1": "7975d6859b578fc0f0eda4d6de171457b89f626c",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LavaridgeTown_PokemonCenter_1F.json",
+      "sha1": "64a6cd84cce9f8006a7899e238fcfca64c9f6057",
+      "bytes": 476
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LavaridgeTown_PokemonCenter_2F.json",
+      "sha1": "6e4b714562cbd8591bddf3df85d8b2506e2d570c",
+      "bytes": 476
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity.json",
+      "sha1": "5a95be5c018bc5472cd7e41d619d2df53ff3048d",
+      "bytes": 386
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_ContestHall.json",
+      "sha1": "a1672b56829c23695596255be4a32e03031aa435",
+      "bytes": 446
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_ContestLobby.json",
+      "sha1": "72c42ba436117f042c16fca23078ab0b6ded1b33",
+      "bytes": 451
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_CoveLilyMotel_1F.json",
+      "sha1": "ed2419ff2c070a4d90e29051dc4b5a193db2c214",
+      "bytes": 472
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_CoveLilyMotel_2F.json",
+      "sha1": "009b08491667f202041c9e00d20ba2c7f0ffc4d2",
+      "bytes": 472
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_DepartmentStoreElevator.json",
+      "sha1": "baa7a954a57ac34e11153d7d315c0629f86123f2",
+      "bytes": 507
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_DepartmentStoreRooftop.json",
+      "sha1": "d59bd356c125e6a0040f0192046012af1c063421",
+      "bytes": 502
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_DepartmentStore_1F.json",
+      "sha1": "bede5ccfaf077b44b5aaa734d8aa6c1e6e39eecb",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_DepartmentStore_2F.json",
+      "sha1": "574ba96b8b8d49ca93eb4ba21c1436147a06ad32",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_DepartmentStore_3F.json",
+      "sha1": "3e1941196a426c4f2e2e3446b2dd1e45a2cf360f",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_DepartmentStore_4F.json",
+      "sha1": "c7fdd423bd4c4cb5836ec06ef34b9eb022008fd1",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_DepartmentStore_5F.json",
+      "sha1": "fbcc1c58639d7033b15353da98ac244295b51556",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_Harbor.json",
+      "sha1": "19803deb3abce5d69389acc6e30a131f2dc4b26c",
+      "bytes": 420
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_House1.json",
+      "sha1": "cea3bcd8c6834ddbde0dedf1011eee92b5f875a6",
+      "bytes": 420
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_House2.json",
+      "sha1": "d11c9cf5c55ee7aaee2aba707ce34a0bd9f0a285",
+      "bytes": 420
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_House3.json",
+      "sha1": "5a91a521db0b34b6f9206d8b8f08109529e31ec1",
+      "bytes": 420
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_House4.json",
+      "sha1": "e60de6202d8731e0d730a86dfd91dbe9374dbc28",
+      "bytes": 420
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_LilycoveMuseum_1F.json",
+      "sha1": "c26152a6084dd0423c0e8285e9912fff103623d2",
+      "bytes": 476
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_LilycoveMuseum_2F.json",
+      "sha1": "d89149a2d36ffb6c2a9e30030a963b1dda31449b",
+      "bytes": 476
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_MoveDeletersHouse.json",
+      "sha1": "7d1693ceff542d2d7c54acfc5827e92eed654753",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_PokemonCenter_1F.json",
+      "sha1": "e3cd8fb77732cd1fb5665f94f7c1f061889221f5",
+      "bytes": 471
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_PokemonCenter_2F.json",
+      "sha1": "dbe6af7883a494a4051abb5b9d6b7c027b01dc4b",
+      "bytes": 471
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_PokemonTrainerFanClub.json",
+      "sha1": "f74dee712c6632906c9c1fc0e96136efaf955141",
+      "bytes": 498
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LilycoveCity_UnusedMart.json",
+      "sha1": "57916bad681da567afb508488eb01b5b53daa15c",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LittlerootTown.json",
+      "sha1": "a6b328ce2dcee430ff7297e3bb660e5cd03b4559",
+      "bytes": 396
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LittlerootTown_BrendansHouse_1F.json",
+      "sha1": "7f8ab4a72538b12704b2c243f618fa1a943e3412",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LittlerootTown_BrendansHouse_2F.json",
+      "sha1": "9a4b092cc1f668f145a80528a00dc567627098fb",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LittlerootTown_MaysHouse_1F.json",
+      "sha1": "4594bd327b2d37a221279d1846e47363c9bf8ef4",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LittlerootTown_MaysHouse_2F.json",
+      "sha1": "a719cf806a7b1db0382d1564d83ec326d716fda1",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/weather/maps/LittlerootTown_ProfessorBirchsLab.json",
+      "sha1": "76f1908314a3db0e22a5836fcce89e492b0c9db1",
+      "bytes": 492
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MagmaHideout_1F.json",
+      "sha1": "502873c8c649ba2b1a485317255760abd809cf12",
+      "bytes": 400
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MagmaHideout_2F_1R.json",
+      "sha1": "6709a4dc471881fb10bd890629631512f160eaef",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MagmaHideout_2F_2R.json",
+      "sha1": "ffdd1459820f7bdfaf1b88d724ff299ebd9fef06",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MagmaHideout_2F_3R.json",
+      "sha1": "655c986e0430e5e16e038029b99bc4d4480c72a8",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MagmaHideout_3F_1R.json",
+      "sha1": "5cf18c2f3e4178c9220daee6652d41399238b6ae",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MagmaHideout_3F_2R.json",
+      "sha1": "a6e470273e5a4514f937640abc5f41f89e3ff05b",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MagmaHideout_3F_3R.json",
+      "sha1": "fca35fba500a4807c79356a5868e37af1764d569",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MagmaHideout_4F.json",
+      "sha1": "55d49deff5e61faa15b2ad3db77ea023ad4701da",
+      "bytes": 400
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MarineCave_End.json",
+      "sha1": "bc9b11ce9ae49e1c126b000f36eaa247c420d768",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MarineCave_Entrance.json",
+      "sha1": "fb186b1c6487ad0cb07d10f025a56cc5cf854e51",
+      "bytes": 420
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MauvilleCity.json",
+      "sha1": "098df70f09b498362c1eac59c2943eccd64be9a8",
+      "bytes": 386
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MauvilleCity_BikeShop.json",
+      "sha1": "df6d5afe4ce703cba1e5e4564c8ccda69503a525",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MauvilleCity_GameCorner.json",
+      "sha1": "f8d74fecb522aa831520d24445999759ea63e711",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MauvilleCity_Gym.json",
+      "sha1": "66842294ba5f77671eb85f23f820a2dd1057e135",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MauvilleCity_House1.json",
+      "sha1": "2b326749bc538e6bd9fc5c57b42217e608161ec6",
+      "bytes": 420
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MauvilleCity_House2.json",
+      "sha1": "d3f799253a95fb402f2c5e6181f217106dbf58ad",
+      "bytes": 420
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MauvilleCity_Mart.json",
+      "sha1": "8aaad5f16a503fa365206570255bed700466f9ed",
+      "bytes": 410
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MauvilleCity_PokemonCenter_1F.json",
+      "sha1": "8dfccbab246558809b7704443e08d41fc83164a0",
+      "bytes": 471
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MauvilleCity_PokemonCenter_2F.json",
+      "sha1": "8c971f61cc859e3194c6bf285385017f0d538240",
+      "bytes": 471
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MeteorFalls_1F_1R.json",
+      "sha1": "de9cef9771769d583d475678b56fa9996bac7d5d",
+      "bytes": 410
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MeteorFalls_1F_2R.json",
+      "sha1": "74c06ac17a3f9be68890b6174d768547d3f15aa1",
+      "bytes": 410
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MeteorFalls_B1F_1R.json",
+      "sha1": "a853293cd87fdf74cee66b7e2740776acc7296d2",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MeteorFalls_B1F_2R.json",
+      "sha1": "210dbe89d63540a9787ed1b25c4a0592ddec78b7",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MeteorFalls_StevensCave.json",
+      "sha1": "56f932ddda95285118f124a7d07a302cf3d4e307",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MirageTower_1F.json",
+      "sha1": "babdc2b2432b715a076731199764f777c65a0128",
+      "bytes": 395
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MirageTower_2F.json",
+      "sha1": "887d2fe11b8632a1220f013afd7ffaba0678026a",
+      "bytes": 395
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MirageTower_3F.json",
+      "sha1": "29cad390b1bbfc4744fc037c55a6ab717b3d3f02",
+      "bytes": 395
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MirageTower_4F.json",
+      "sha1": "566d42a62db0cf6d9addf51207428b247876ad2c",
+      "bytes": 395
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MossdeepCity.json",
+      "sha1": "b4302dd4859cfba6fe82866a8e6b0ce85d262935",
+      "bytes": 386
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MossdeepCity_GameCorner_1F.json",
+      "sha1": "af8f5d72e58064b1a5a99008a87abf1c98d7f5c8",
+      "bytes": 456
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MossdeepCity_GameCorner_B1F.json",
+      "sha1": "81dc84158862a12fc413e9973b46588123eafd59",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MossdeepCity_Gym.json",
+      "sha1": "dc06ec82e44ba1d124cfaac98f7f915200885d2c",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MossdeepCity_House1.json",
+      "sha1": "cca945b43378a0e5826649eff7ea14dbcee7b8d8",
+      "bytes": 420
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MossdeepCity_House2.json",
+      "sha1": "9f7f1bb9cca120b73059c3cba0f10cc7197445b3",
+      "bytes": 420
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MossdeepCity_House3.json",
+      "sha1": "a36c9598e8b1e4d30c7dc9a4b8df38a6cbf915d8",
+      "bytes": 420
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MossdeepCity_House4.json",
+      "sha1": "b26b26a5cf98c29b7cd8068901c06df1aa334d70",
+      "bytes": 420
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MossdeepCity_Mart.json",
+      "sha1": "bc4b0e1d4d6457fd740b16dcd2c1b80c2ffdc18a",
+      "bytes": 410
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MossdeepCity_PokemonCenter_1F.json",
+      "sha1": "f0c5773fef26c6fb3c44cac36e360b1193156abc",
+      "bytes": 471
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MossdeepCity_PokemonCenter_2F.json",
+      "sha1": "cd5b08d1ea4cd0f9a89ce1c5076e2a9a7a2da1e9",
+      "bytes": 471
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MossdeepCity_SpaceCenter_1F.json",
+      "sha1": "2194367c49426794a1eaef3f14ded120305fa2bd",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MossdeepCity_SpaceCenter_2F.json",
+      "sha1": "8013d46075ef09fec5d8bb9746b003701b598e4c",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MossdeepCity_StevensHouse.json",
+      "sha1": "5a41a26672421c7bcfed48772adf397217b3ae58",
+      "bytes": 451
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MtChimney.json",
+      "sha1": "5bf47d902bad63e0abbb4747deae31ea5f2a5e2d",
+      "bytes": 378
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MtChimney_CableCarStation.json",
+      "sha1": "1302f25b0170cba5ffdb5a20e5455beacf034bf4",
+      "bytes": 452
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MtPyre_1F.json",
+      "sha1": "fe76c1ac0503dbd65fd6f13c45dca31b4df47faf",
+      "bytes": 370
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MtPyre_2F.json",
+      "sha1": "add45bc87c3765b4d20dd89f962105191a42453f",
+      "bytes": 370
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MtPyre_3F.json",
+      "sha1": "5e5499785cf63bb57cfbe63da9ed5f73b2188343",
+      "bytes": 370
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MtPyre_4F.json",
+      "sha1": "63becb112e149b1c651884bea526188b202b2b4e",
+      "bytes": 370
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MtPyre_5F.json",
+      "sha1": "97eb3dcfdd6dd3aba0ae8fe622d2d4a04c61d132",
+      "bytes": 370
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MtPyre_6F.json",
+      "sha1": "f52d7b233be86fab8a4b830efa03e7d3b858806a",
+      "bytes": 370
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MtPyre_Exterior.json",
+      "sha1": "da08d37d849f6d71d0987fa8843e81dc6df35676",
+      "bytes": 400
+    },
+    {
+      "path": "mods/vanilla/weather/maps/MtPyre_Summit.json",
+      "sha1": "ee470e0c3a00bb39c53e3242b37898af4ead78d7",
+      "bytes": 400
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_B1F.json",
+      "sha1": "9ee31db5cb9bc886fb18abb0a72bf8d28600e502",
+      "bytes": 390
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Bottom.json",
+      "sha1": "0332f2ceda7cd1fae7794eebac14491104f17e66",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Down01.json",
+      "sha1": "2fe04ab3f6a012a95c7bf0285796b0ffc2865b84",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Down02.json",
+      "sha1": "44b3d26e65710c06bc10d994258bb5ef54c2cc14",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Down03.json",
+      "sha1": "b27994cf617b47480fdfeca7abf31c0d2e938175",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Down04.json",
+      "sha1": "c4605cd542c48ccbe6c0691e404d2689e781c129",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Down05.json",
+      "sha1": "c724c22938d2268a4103bb4f00fde408a9d802c1",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Down06.json",
+      "sha1": "4895cd01c0719d463f2f2a706a1d9c1c7a9f5a67",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Down07.json",
+      "sha1": "c56d4c6164bebd7bf71e74ee9b8d02c3ae8c631c",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Down08.json",
+      "sha1": "4fec2bc1251805cd4572d0887a502582ac569ef1",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Down09.json",
+      "sha1": "dd68e410d020aee6c44f380703ab934c4a570a8c",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Down10.json",
+      "sha1": "e34fd39f77df345c0ea879e62be35b60d244938b",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Down11.json",
+      "sha1": "81b821fd3494c24d0be6251461c64039caf5a29f",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Entrance.json",
+      "sha1": "dd76107b588fc01451bc961db9791baa2f77c7ce",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Exterior.json",
+      "sha1": "2a6580dc507173c868c9f9b0f077a1d626afec44",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Fork.json",
+      "sha1": "a7dc2e006d2a85025362c5449058122892236ae9",
+      "bytes": 395
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Harbor.json",
+      "sha1": "1d0edfb7b5b36b2f2c9678e0800c68eaa06ccf97",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Top.json",
+      "sha1": "10b48bd73a7f87c8754d002b3c59eb2acd76c5d3",
+      "bytes": 391
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Up1.json",
+      "sha1": "62adeb8911b45a783bae06b33f7232462a6987c4",
+      "bytes": 390
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Up2.json",
+      "sha1": "a7df43276dbe89c57b1dcd7af74b291015c9ac4c",
+      "bytes": 390
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Up3.json",
+      "sha1": "115ade827b962d730f1f82c2cc9eb025d2b79704",
+      "bytes": 390
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NavelRock_Up4.json",
+      "sha1": "57f47e286d3b77f266d45ef3defb1e572ad13d45",
+      "bytes": 390
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NewMauville_Entrance.json",
+      "sha1": "09fb05672b7ea7e4a11c2003f5971bfadf643ffc",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/weather/maps/NewMauville_Inside.json",
+      "sha1": "5984f3cf8b6e25f442ca511dde28aed658c63b81",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/OldaleTown.json",
+      "sha1": "b7b15ad4bfee124d8d850ab4bf301554e3b089c9",
+      "bytes": 376
+    },
+    {
+      "path": "mods/vanilla/weather/maps/OldaleTown_House1.json",
+      "sha1": "41aa0f23f746619fe424632728f6107cac6e79be",
+      "bytes": 410
+    },
+    {
+      "path": "mods/vanilla/weather/maps/OldaleTown_House2.json",
+      "sha1": "f74162c8a76e420bf63a5cf389f012b46069a458",
+      "bytes": 410
+    },
+    {
+      "path": "mods/vanilla/weather/maps/OldaleTown_Mart.json",
+      "sha1": "d62b5a8d5aa5cd55e9faba832a841ed0bbd9149c",
+      "bytes": 400
+    },
+    {
+      "path": "mods/vanilla/weather/maps/OldaleTown_PokemonCenter_1F.json",
+      "sha1": "fb2b79f49f6717711b00579ad13c86230ecf4768",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/weather/maps/OldaleTown_PokemonCenter_2F.json",
+      "sha1": "c4eebd5ab1ecf2465a877bf858e7e78184501436",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/weather/maps/PacifidlogTown.json",
+      "sha1": "5238bb146fd300cf4a5545e725d33b54be81bc24",
+      "bytes": 396
+    },
+    {
+      "path": "mods/vanilla/weather/maps/PacifidlogTown_House1.json",
+      "sha1": "4849747aa39063e6c24cd39d34b5c1c77cd4dbdd",
+      "bytes": 430
+    },
+    {
+      "path": "mods/vanilla/weather/maps/PacifidlogTown_House2.json",
+      "sha1": "85854adec3185a01fab22ae78aab3aa1ede9a6b7",
+      "bytes": 430
+    },
+    {
+      "path": "mods/vanilla/weather/maps/PacifidlogTown_House3.json",
+      "sha1": "3c7ef1b92edd2d64135cab1228576fb6d57a5921",
+      "bytes": 430
+    },
+    {
+      "path": "mods/vanilla/weather/maps/PacifidlogTown_House4.json",
+      "sha1": "f3da36f3fba898f955937ae0cb714a9ef7f310e2",
+      "bytes": 430
+    },
+    {
+      "path": "mods/vanilla/weather/maps/PacifidlogTown_House5.json",
+      "sha1": "33bbe81f8a159dfc7594e324145e7564e9910b59",
+      "bytes": 430
+    },
+    {
+      "path": "mods/vanilla/weather/maps/PacifidlogTown_PokemonCenter_1F.json",
+      "sha1": "ad5ffce57b109fedcadd911986109bd782ec3606",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/weather/maps/PacifidlogTown_PokemonCenter_2F.json",
+      "sha1": "350cdbe8a687fb5ebc08c91e30f3c0d313fd24b0",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/weather/maps/PetalburgCity.json",
+      "sha1": "7488d2ddc36eadfbcadf9e14a04e195332a6ba60",
+      "bytes": 391
+    },
+    {
+      "path": "mods/vanilla/weather/maps/PetalburgCity_Gym.json",
+      "sha1": "d518d4f9c94033500acd1625e54f56661fb824b3",
+      "bytes": 410
+    },
+    {
+      "path": "mods/vanilla/weather/maps/PetalburgCity_House1.json",
+      "sha1": "014d4e464517f76865935ea00d94b5dcc9b6d5f2",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/weather/maps/PetalburgCity_House2.json",
+      "sha1": "ace9b070364b0bb898c5bf4a5ca7a764e8638ed5",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/weather/maps/PetalburgCity_Mart.json",
+      "sha1": "4538444378a5c8d17f2f3957b04ce288872d0b3c",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/PetalburgCity_PokemonCenter_1F.json",
+      "sha1": "764175eb63fd1a122dd36bd7406b763a5f4386e2",
+      "bytes": 476
+    },
+    {
+      "path": "mods/vanilla/weather/maps/PetalburgCity_PokemonCenter_2F.json",
+      "sha1": "23da20e3fff8b15a0e0567c6c11881fb11068c50",
+      "bytes": 476
+    },
+    {
+      "path": "mods/vanilla/weather/maps/PetalburgCity_WallysHouse.json",
+      "sha1": "fa29af1907666b846adfcdf4352c9159740d08b1",
+      "bytes": 451
+    },
+    {
+      "path": "mods/vanilla/weather/maps/PetalburgWoods.json",
+      "sha1": "b5d652fe24c0eba424a3aad385f49594f73b95e4",
+      "bytes": 396
+    },
+    {
+      "path": "mods/vanilla/weather/maps/RecordCorner.json",
+      "sha1": "dd15e3ee13bca0184c49006d978f3895d0688dda",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route101.json",
+      "sha1": "c0c1d4b776ced74c0e8ceae41252dfe0515eef97",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route102.json",
+      "sha1": "193b92268b449ea88cc36b0027ac65eeb82a23cf",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route103.json",
+      "sha1": "242a7367ebfcb0ef38bd2636ff7d133ecfe62961",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route104.json",
+      "sha1": "bb3e785d6754cdbc57d6c52021ed81e2ae42a927",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route104_MrBrineysHouse.json",
+      "sha1": "b43901966fcc91e5c7211c6306506d3bff054b51",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route104_PrettyPetalFlowerShop.json",
+      "sha1": "1221f5ab6ff2de31e4ea278d151adedae5976427",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route104_Prototype.json",
+      "sha1": "22b57121e4e26939bf14e1fb4a6c7f2793ac9f37",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route104_PrototypePrettyPetalFlowerShop.json",
+      "sha1": "c4e662e519683aff4d835dc4424daae18091a71b",
+      "bytes": 523
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route105.json",
+      "sha1": "59e11259862df6678fa06c50c823cfa02c317dc8",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route106.json",
+      "sha1": "f9e21a9ba915ba1aba2c8f9f885901698b8118d6",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route107.json",
+      "sha1": "3865cf9c34a9aff6a01951c09e5f7f416db7547c",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route108.json",
+      "sha1": "322971fc37cf7e94d71d339087bb0694f400ed72",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route109.json",
+      "sha1": "978d04544a4afa220a0db14c1c77840bf754d035",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route109_SeashoreHouse.json",
+      "sha1": "fab76a7bfc6b5ca85add47e6c4b02b5c2118d19a",
+      "bytes": 435
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route110.json",
+      "sha1": "665a9410643e37a5c8783016f801fb1db14679b8",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route110_SeasideCyclingRoadNorthEntrance.json",
+      "sha1": "afc1a7c244e7310c0928714aef75b2ab980fb635",
+      "bytes": 528
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route110_SeasideCyclingRoadSouthEntrance.json",
+      "sha1": "f4ae8da278d1f250d60f2d0a9a35ee79395a15b8",
+      "bytes": 528
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route110_TrickHouseCorridor.json",
+      "sha1": "0943b76444f712eb58c37f3a1d8c6735458ca41a",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route110_TrickHouseEnd.json",
+      "sha1": "c76948f4b5d5c27d45bf3e7466319760f2bf7fb0",
+      "bytes": 436
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route110_TrickHouseEntrance.json",
+      "sha1": "dfb5603ac7c69a45086440b06a01ad952009b09a",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route110_TrickHousePuzzle1.json",
+      "sha1": "0d7bf9e11158e43e9b2a1a887503439aefbf2649",
+      "bytes": 456
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route110_TrickHousePuzzle2.json",
+      "sha1": "9f997ac2e0fbe4f44d0adea757742ffb6d200f49",
+      "bytes": 456
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route110_TrickHousePuzzle3.json",
+      "sha1": "009c8069cd6a8cb82a4aa6c32d370aeccd9661d7",
+      "bytes": 456
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route110_TrickHousePuzzle4.json",
+      "sha1": "4c04b951f1d11dc2dcdb1f99c4d9d13cc8bee89c",
+      "bytes": 456
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route110_TrickHousePuzzle5.json",
+      "sha1": "f1b945b115b0af9d113a5d7e7794c970ab54b73d",
+      "bytes": 456
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route110_TrickHousePuzzle6.json",
+      "sha1": "793946cdb113c3e22732cde0b133ed619b09804f",
+      "bytes": 456
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route110_TrickHousePuzzle7.json",
+      "sha1": "dc849a37fde9400f70780ea684ec84b39d5624e8",
+      "bytes": 456
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route110_TrickHousePuzzle8.json",
+      "sha1": "0d6ed2cdea14489a32a1152a0c2475335e56a23f",
+      "bytes": 456
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route111.json",
+      "sha1": "39f47159f107913bb6b66c96d0cf5f062ae94c81",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route111_OldLadysRestStop.json",
+      "sha1": "70b8354aecb1b6c4f1ff273bd1b5b5aca83480f3",
+      "bytes": 452
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route111_WinstrateFamilysHouse.json",
+      "sha1": "246ca32186c8baedeb0eef14847532307ecd4ead",
+      "bytes": 476
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route112.json",
+      "sha1": "87d590944e2d907966cc4b6b18a7254b8be6805f",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route112_CableCarStation.json",
+      "sha1": "caf7dbf3f7a729e2af7e523568a5c3866f363561",
+      "bytes": 446
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route113.json",
+      "sha1": "ed799d33c7cd9d182177787dfeedc48a6896c862",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route113_GlassWorkshop.json",
+      "sha1": "b5aec6ad4ad0f1a96edccd49b3c340539c62b85d",
+      "bytes": 435
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route114.json",
+      "sha1": "5e2cce295e253047d18ccca612af68900eb25e80",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route114_FossilManiacsHouse.json",
+      "sha1": "2ce8b5c6edbfe4b5874eb97d719fe27438ca3f26",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route114_FossilManiacsTunnel.json",
+      "sha1": "6e282a70ad40b719e081b08e9a5ed63c7660ebe3",
+      "bytes": 466
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route114_LanettesHouse.json",
+      "sha1": "e9b7021b34d4dd278df36eac83b502aaf5a8d6ae",
+      "bytes": 435
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route115.json",
+      "sha1": "669235c74106957ef6047e138a82d472582c52a7",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route116.json",
+      "sha1": "8e396ff24cef3922a3398d6a069e202cc04646b8",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route116_TunnelersRestHouse.json",
+      "sha1": "c665da7fb4f561e1ce590a2b195c00be1a339131",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route117.json",
+      "sha1": "6d85058b3dc9dd13909b5bc1e2618b09c2562343",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route117_PokemonDayCare.json",
+      "sha1": "0e2c1628827539f83e03873429d1683bb8e4b9a3",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route118.json",
+      "sha1": "be2bb4454de560b9b3d5242f9cc44f0303cc829b",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route119.json",
+      "sha1": "84dce340696f337ae7e186ae572629caf7044c35",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route119_House.json",
+      "sha1": "c124f6e0622ca6b195cfcdd0a662616c9209279a",
+      "bytes": 394
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route119_WeatherInstitute_1F.json",
+      "sha1": "52709ec4e307be7aaa2775a332c824b4f7e8ba35",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route119_WeatherInstitute_2F.json",
+      "sha1": "65ad12c629f3c1f3a07003272a267bf08852bfc8",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route120.json",
+      "sha1": "dd5e0afe69e6fa7dcd5774341a91f9c0bf1c222a",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route121.json",
+      "sha1": "05fae87276d8d99b99b9b2404089b165aa495b8c",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route121_SafariZoneEntrance.json",
+      "sha1": "8341a821f2278e95e18fa2eceee450c531fed5b9",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route122.json",
+      "sha1": "53036cf13eb1750280e1a8f04e0a90c89db8fbe1",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route123.json",
+      "sha1": "83ca98090482dcd7e461c75304387d3179bf9b39",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route123_BerryMastersHouse.json",
+      "sha1": "57695febbfb672a481c6960e382bdf7343b9e053",
+      "bytes": 456
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route124.json",
+      "sha1": "e59296262309c31dd9cf53ea1c1e05a4b319ff78",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route124_DivingTreasureHuntersHouse.json",
+      "sha1": "e55e67a8d12247f37cc5055c59f60b7a41cd1f2f",
+      "bytes": 502
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route125.json",
+      "sha1": "5334231dfc348c532eedd16020f38fc66f3b8e80",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route126.json",
+      "sha1": "80384cb18cba19cd256ebe28ae88f38a8a8b3790",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route127.json",
+      "sha1": "9a1d8cb6e0a623276cde09eada3bf1e0931047e2",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route128.json",
+      "sha1": "817fb1b832eb6b98b91af21ca72f6c74260497fd",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route129.json",
+      "sha1": "0236414ed9b80a145dac0fd40382f26c43e4cfe9",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route130.json",
+      "sha1": "9573681beb34ce4632a4eefffcb5167e098647fd",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route131.json",
+      "sha1": "9e86f4870487bcf2bdfa1a382652078a2683f754",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route132.json",
+      "sha1": "c66bd803970f66e9650e610814e632864bb5d69c",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route133.json",
+      "sha1": "f5a85c22fe7ac1bffe6728288e9e2fdeeeeb2349",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Route134.json",
+      "sha1": "544f0afdd7c4506164393f4c435245cb2b3bed4e",
+      "bytes": 365
+    },
+    {
+      "path": "mods/vanilla/weather/maps/RustboroCity.json",
+      "sha1": "c97e6b43e608dd739bcbd90358bb62f08247e308",
+      "bytes": 386
+    },
+    {
+      "path": "mods/vanilla/weather/maps/RustboroCity_CuttersHouse.json",
+      "sha1": "6f49de45c72895ec0c27355a64294439fbe62e1c",
+      "bytes": 451
+    },
+    {
+      "path": "mods/vanilla/weather/maps/RustboroCity_DevonCorp_1F.json",
+      "sha1": "a49f6e0cc23a5acc51cd0eb7b20b732421a4a918",
+      "bytes": 451
+    },
+    {
+      "path": "mods/vanilla/weather/maps/RustboroCity_DevonCorp_2F.json",
+      "sha1": "1b47b113dd11192bd6f7f228a6dfe625a27e8155",
+      "bytes": 451
+    },
+    {
+      "path": "mods/vanilla/weather/maps/RustboroCity_DevonCorp_3F.json",
+      "sha1": "e9c89d23162d5647e0a294f4ae4174ff07377b27",
+      "bytes": 451
+    },
+    {
+      "path": "mods/vanilla/weather/maps/RustboroCity_Flat1_1F.json",
+      "sha1": "0bdfffc53ceb223a52780adb644d95506369bdb9",
+      "bytes": 430
+    },
+    {
+      "path": "mods/vanilla/weather/maps/RustboroCity_Flat1_2F.json",
+      "sha1": "12bc4cd2b412f67784f66b55cc0b8a9b867ab64f",
+      "bytes": 430
+    },
+    {
+      "path": "mods/vanilla/weather/maps/RustboroCity_Flat2_1F.json",
+      "sha1": "17952dd3f04a21a85e93e7576fb3b56e1bb6b5f3",
+      "bytes": 430
+    },
+    {
+      "path": "mods/vanilla/weather/maps/RustboroCity_Flat2_2F.json",
+      "sha1": "7c777ef74b9989b6fa0681bf9712a82bdf3759ff",
+      "bytes": 430
+    },
+    {
+      "path": "mods/vanilla/weather/maps/RustboroCity_Flat2_3F.json",
+      "sha1": "498bd48535234ab5473dbead22492e92f68944f3",
+      "bytes": 430
+    },
+    {
+      "path": "mods/vanilla/weather/maps/RustboroCity_Gym.json",
+      "sha1": "20ed105c9a0d3dc900bfd20e5ee80fb28f0f7c0a",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/RustboroCity_House1.json",
+      "sha1": "31de6e3e2933449d983d1ce3708d747c4353b115",
+      "bytes": 420
+    },
+    {
+      "path": "mods/vanilla/weather/maps/RustboroCity_House2.json",
+      "sha1": "608e8614f9137755fca35ad4ce02b7631d1b1b32",
+      "bytes": 420
+    },
+    {
+      "path": "mods/vanilla/weather/maps/RustboroCity_House3.json",
+      "sha1": "5ad66f9ab7d4145bce40c124bcb995e8b8dd078d",
+      "bytes": 420
+    },
+    {
+      "path": "mods/vanilla/weather/maps/RustboroCity_Mart.json",
+      "sha1": "f17a6a5dc78a6f0ba1f85ec7954b48d3f7d09cc9",
+      "bytes": 410
+    },
+    {
+      "path": "mods/vanilla/weather/maps/RustboroCity_PokemonCenter_1F.json",
+      "sha1": "87e01475777e32f80b952a694c0dcaf607d7f4ee",
+      "bytes": 471
+    },
+    {
+      "path": "mods/vanilla/weather/maps/RustboroCity_PokemonCenter_2F.json",
+      "sha1": "3bbc86d52f8f8fdcbdc4891256f7e69ae39eec1e",
+      "bytes": 471
+    },
+    {
+      "path": "mods/vanilla/weather/maps/RustboroCity_PokemonSchool.json",
+      "sha1": "dde97806b59bebc241c8332b053c9dc4cf76e29c",
+      "bytes": 456
+    },
+    {
+      "path": "mods/vanilla/weather/maps/RusturfTunnel.json",
+      "sha1": "d67783e014b05078a8bcbec0f784cc42021bb8a5",
+      "bytes": 400
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SSTidalCorridor.json",
+      "sha1": "4992a2dbb16517132b04902b9f540629e161518f",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SSTidalLowerDeck.json",
+      "sha1": "651f76f6252e6bc4e6c7c5446917930499c1f436",
+      "bytes": 407
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SSTidalRooms.json",
+      "sha1": "4f35c11237fc3e1f9dc13ce4010c392f0722daee",
+      "bytes": 386
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SafariZone_North.json",
+      "sha1": "46fd4dfc700a4931c05c2b25661cff65d32154f5",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SafariZone_Northeast.json",
+      "sha1": "109ed266ec0db69a7588741cc5e210a122fdec2c",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SafariZone_Northwest.json",
+      "sha1": "40e8ff81d6afd3ad1dc898426fc3a0507716d1e1",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SafariZone_RestHouse.json",
+      "sha1": "7096fcc82a28c6f8d8b3a35eed3402ef06b0be4c",
+      "bytes": 426
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SafariZone_South.json",
+      "sha1": "dd7053ea174a17c0e3774396d3c51d325acfb754",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SafariZone_Southeast.json",
+      "sha1": "7ededc68efb061a211afd2b6e25447a682558456",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SafariZone_Southwest.json",
+      "sha1": "83f37eb7f8b7b459e7e41f1f40df94ef6314f25f",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/weather/maps/ScorchedSlab.json",
+      "sha1": "e4d2e23fd13374d6102176bef994fcd150096ea9",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SeafloorCavern_Entrance.json",
+      "sha1": "20cba9ca4e8d452f21b661d9a27d295c99a407be",
+      "bytes": 440
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SeafloorCavern_Room1.json",
+      "sha1": "ad2c9e58571965068ca4d18dc29fa707095764dd",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SeafloorCavern_Room2.json",
+      "sha1": "f96715eba04d59d23f8903397fd616e3049f1110",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SeafloorCavern_Room3.json",
+      "sha1": "3d5051e6c585b4cd11d50a890edc97c6efe6abc4",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SeafloorCavern_Room4.json",
+      "sha1": "4b1c707a98f7746a39ec83f090495e71e581af2d",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SeafloorCavern_Room5.json",
+      "sha1": "1c6d80815a36f1e648c629f0ccda4d4b07b7ae16",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SeafloorCavern_Room6.json",
+      "sha1": "7874b6f37e75ed6dd98e9b1958d2faedd8dad788",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SeafloorCavern_Room7.json",
+      "sha1": "9260bd595df63117e820b2ad377e9a1c8425b805",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SeafloorCavern_Room8.json",
+      "sha1": "7701d0b28ba9428aa3582263f04842ea2f9992b9",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SeafloorCavern_Room9.json",
+      "sha1": "feba787a8134c79442b4908d8de72fc66565d7dc",
+      "bytes": 435
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SealedChamber_InnerRoom.json",
+      "sha1": "fa829630f69a9b831a38f8e38281de6458851cfd",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SealedChamber_OuterRoom.json",
+      "sha1": "a968afeb418ad0de35f51ac91dd8fd185165baaf",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_BlueCave1.json",
+      "sha1": "dc131ce1ca65f5ab79f85db26a9183101e7a76dd",
+      "bytes": 426
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_BlueCave2.json",
+      "sha1": "b489adef3d8bb1bec6f38600c0e2a6f62ef158b9",
+      "bytes": 426
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_BlueCave3.json",
+      "sha1": "66837e8f4a020a9dde953ff0a27c34aa382562ac",
+      "bytes": 426
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_BlueCave4.json",
+      "sha1": "b0c056cdc484e066039bba677c9ae8b2ca587b48",
+      "bytes": 426
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_BrownCave1.json",
+      "sha1": "b9d8e564ccb0e5522df4bd525a02cd2c4034b4b1",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_BrownCave2.json",
+      "sha1": "862aebf8cd0c397d3c021c910b3de874362b8655",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_BrownCave3.json",
+      "sha1": "1f872263a1a808bb898be012869cfe0726b74be6",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_BrownCave4.json",
+      "sha1": "2c8145b8ac4bd40be80753bde70c2919038be4b1",
+      "bytes": 431
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_RedCave1.json",
+      "sha1": "85e8ef6234741450aae9d45c6c7b6d8526dd7f88",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_RedCave2.json",
+      "sha1": "d78ba172ae98e91824db4c5a5de6e99b7698117f",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_RedCave3.json",
+      "sha1": "3cf85a8f7ceeeed5e19283ce6bd372b0b5e02858",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_RedCave4.json",
+      "sha1": "f9a16e79144e80fcb97e7ba214df287af7bcd7ab",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_Shrub1.json",
+      "sha1": "2975ed65af391e93d447734aa934c4375dadaa03",
+      "bytes": 410
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_Shrub2.json",
+      "sha1": "dab1702bfa935bac3bb8e596e00cf2daecab95f1",
+      "bytes": 410
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_Shrub3.json",
+      "sha1": "40ff175ec08d67003b47c27107b18e79e46e3e6d",
+      "bytes": 410
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_Shrub4.json",
+      "sha1": "3816b611af3d96ac58c7e66c394ae2f3d37af0f7",
+      "bytes": 410
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_Tree1.json",
+      "sha1": "a1f6bbff4302175ac9abf42f7d1e3f846a99126c",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_Tree2.json",
+      "sha1": "4e85adc9985cbacb19ce8c56b16009dcdef382bc",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_Tree3.json",
+      "sha1": "9031f0d57e854e02fb4cf4abf5e99f0a504bd63f",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_Tree4.json",
+      "sha1": "3f88562a7b0d52008129b1e336d0b53f16c1239a",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_YellowCave1.json",
+      "sha1": "af064000a5e3229977e2638201ed44b382c02dd5",
+      "bytes": 436
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_YellowCave2.json",
+      "sha1": "6f60575b965059df30f2e113479bea7b1cf66d40",
+      "bytes": 436
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_YellowCave3.json",
+      "sha1": "aacd7dd7540d6ef4ece4ac70cb2f8ea3a108e7f4",
+      "bytes": 436
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SecretBase_YellowCave4.json",
+      "sha1": "51a0d2e45d60eaa8d4947a2a1c493ccef60d6570",
+      "bytes": 436
+    },
+    {
+      "path": "mods/vanilla/weather/maps/ShoalCave_HighTideEntranceRoom.json",
+      "sha1": "b5bd4aadd3339b1e560fc1885f10cada30ba5eb2",
+      "bytes": 478
+    },
+    {
+      "path": "mods/vanilla/weather/maps/ShoalCave_HighTideInnerRoom.json",
+      "sha1": "0175ed0d85356f45c18ad2e7452375ac2909757a",
+      "bytes": 463
+    },
+    {
+      "path": "mods/vanilla/weather/maps/ShoalCave_LowTideEntranceRoom.json",
+      "sha1": "6946db1091aedabf04a35ef5f22e6b72cb1ce8e5",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/weather/maps/ShoalCave_LowTideIceRoom.json",
+      "sha1": "9f27ad8c2668d25aac93e2bc9d2fbd6c96bb8fe4",
+      "bytes": 448
+    },
+    {
+      "path": "mods/vanilla/weather/maps/ShoalCave_LowTideInnerRoom.json",
+      "sha1": "0374eae8a666b69a8fbb6611654004232efd35ce",
+      "bytes": 458
+    },
+    {
+      "path": "mods/vanilla/weather/maps/ShoalCave_LowTideLowerRoom.json",
+      "sha1": "582e8805c8123c2a56bc6b871444a33a80347efa",
+      "bytes": 458
+    },
+    {
+      "path": "mods/vanilla/weather/maps/ShoalCave_LowTideStairsRoom.json",
+      "sha1": "b757a4551706ccca93ac14f10436a7c916c1f616",
+      "bytes": 463
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SkyPillar_1F.json",
+      "sha1": "fc496b9088c04fbe87f925cbaf9a4f81d06d0002",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SkyPillar_2F.json",
+      "sha1": "00a320cb1b93f0accd8e3c75e730c3ac6a1c2de6",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SkyPillar_3F.json",
+      "sha1": "9596d444c5c022ed23bf5f1dc870a39ce2dfecd0",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SkyPillar_4F.json",
+      "sha1": "c442c416d58fd124527db8bc08498f9d46e2a859",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SkyPillar_5F.json",
+      "sha1": "7490e26c0727e07bc23656ce3a2ca074207d269d",
+      "bytes": 385
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SkyPillar_Entrance.json",
+      "sha1": "72843b4936e49a1bddde7b921ea0c4f1bc27fd50",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SkyPillar_Outside.json",
+      "sha1": "ac6456bc5787b521d992a93c12bd38390a10508e",
+      "bytes": 410
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SkyPillar_Top.json",
+      "sha1": "a0127e0c3f7d5c0b77499c0a402d98d40ed69d06",
+      "bytes": 390
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SlateportCity.json",
+      "sha1": "6aa0d0b70963ae9517784e4649822d79ef3beaa7",
+      "bytes": 391
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SlateportCity_BattleTentBattleRoom.json",
+      "sha1": "087f077db522cc987851260b94f3853b5d3aa07c",
+      "bytes": 498
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SlateportCity_BattleTentCorridor.json",
+      "sha1": "d96daab03d677ee294a859a6b88e31051bb8d8de",
+      "bytes": 487
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SlateportCity_BattleTentLobby.json",
+      "sha1": "25893eb9e22f44d0723a2171fa493874688ab616",
+      "bytes": 472
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SlateportCity_Harbor.json",
+      "sha1": "1ac91142065fbf215df7e261bd4d1e87d7b15c33",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SlateportCity_House.json",
+      "sha1": "4baabbf4a81af408c227a8a48bd2f8f00d546179",
+      "bytes": 420
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SlateportCity_Mart.json",
+      "sha1": "92b5d9594dc7d2687f322d25b4329729186d8844",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SlateportCity_NameRatersHouse.json",
+      "sha1": "bcd4bf002ac4eeef400c8dcb314630d07d79299e",
+      "bytes": 472
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SlateportCity_OceanicMuseum_1F.json",
+      "sha1": "d8c75fb0be5d2c68641b766bb82cfa8183670e8f",
+      "bytes": 476
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SlateportCity_OceanicMuseum_2F.json",
+      "sha1": "e87b3f70e416ce80c40c552bbbe302409474e990",
+      "bytes": 476
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SlateportCity_PokemonCenter_1F.json",
+      "sha1": "138080b73bc06c19241ef7825adb17fd35064cc9",
+      "bytes": 476
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SlateportCity_PokemonCenter_2F.json",
+      "sha1": "d7e12562aec8a0730d31901485e15e7c1d60c9a5",
+      "bytes": 476
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SlateportCity_PokemonFanClub.json",
+      "sha1": "820575e3ac204057c7eeb5d760afeda788814bd7",
+      "bytes": 467
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SlateportCity_SternsShipyard_1F.json",
+      "sha1": "61b11921f238cb7baa6d0dad1766989d77a38f0d",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SlateportCity_SternsShipyard_2F.json",
+      "sha1": "2a05594c2dc41b76ed8857393ead6907ce2c3234",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SootopolisCity.json",
+      "sha1": "a00480f1de98828a79fef299bd8096c3f3f39256",
+      "bytes": 396
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SootopolisCity_Gym_1F.json",
+      "sha1": "a6d7656e724976338678bad3d017edf40bae46f4",
+      "bytes": 430
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SootopolisCity_Gym_B1F.json",
+      "sha1": "657fa009f7020ba54db77a35bf4709f0d8d6f323",
+      "bytes": 435
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SootopolisCity_House1.json",
+      "sha1": "47cc89fc01200ba745151ba387d071ea6c8fb221",
+      "bytes": 430
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SootopolisCity_House2.json",
+      "sha1": "518141ccff1453886cf2733ad2c8e9a9509bd72d",
+      "bytes": 430
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SootopolisCity_House3.json",
+      "sha1": "541e6ae41ace7b55a5732e81b67514b1af9af906",
+      "bytes": 430
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SootopolisCity_House4.json",
+      "sha1": "ce96f805d769de9b5238b907d79d7035993ae4ee",
+      "bytes": 430
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SootopolisCity_House5.json",
+      "sha1": "acb1154facd8fee8cc2366d053bc2136e43788c8",
+      "bytes": 430
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SootopolisCity_House6.json",
+      "sha1": "873e595ab196ae843bdfa3fbad7f4635a5029d07",
+      "bytes": 430
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SootopolisCity_House7.json",
+      "sha1": "53077f0cc0edf76e8135eb26fcce8e7ce1ef797e",
+      "bytes": 430
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SootopolisCity_LotadAndSeedotHouse.json",
+      "sha1": "17fc985c675f6c287af0af5773e5083b317be6da",
+      "bytes": 498
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SootopolisCity_Mart.json",
+      "sha1": "f904ca4922ad18b5aeb00ac9786fbec02f0a768d",
+      "bytes": 420
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SootopolisCity_MysteryEventsHouse_1F.json",
+      "sha1": "ae27899280a3f1cc2ac79ebd83955608445331f8",
+      "bytes": 507
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SootopolisCity_MysteryEventsHouse_B1F.json",
+      "sha1": "b340b48e540fffa81529de66ae2cb5e0abf6662a",
+      "bytes": 512
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SootopolisCity_PokemonCenter_1F.json",
+      "sha1": "ad820b8db7afa14a2df223381ae2281bf02a4f93",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SootopolisCity_PokemonCenter_2F.json",
+      "sha1": "be72146086350f5dbf2e21e84cece00ab52788eb",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SouthernIsland_Exterior.json",
+      "sha1": "19108e0ab12e36577cb0e76a717a76ca77e00264",
+      "bytes": 440
+    },
+    {
+      "path": "mods/vanilla/weather/maps/SouthernIsland_Interior.json",
+      "sha1": "e0b4eaaf67ab62ff891d68b32ded7674a301800d",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/weather/maps/TerraCave_End.json",
+      "sha1": "020a53647036a8f57c1dd1942ac4a11c3287f373",
+      "bytes": 400
+    },
+    {
+      "path": "mods/vanilla/weather/maps/TerraCave_Entrance.json",
+      "sha1": "598d77b2a518ec42dff11e7a649e5c95f885a33d",
+      "bytes": 415
+    },
+    {
+      "path": "mods/vanilla/weather/maps/TradeCenter.json",
+      "sha1": "dc113f9797c68711d61f350f7fe4b4407bf545e7",
+      "bytes": 380
+    },
+    {
+      "path": "mods/vanilla/weather/maps/TrainerHill_1F.json",
+      "sha1": "1798ba62f4490eeda11f8054ca896fe0c78999fc",
+      "bytes": 395
+    },
+    {
+      "path": "mods/vanilla/weather/maps/TrainerHill_2F.json",
+      "sha1": "de333bd7eb9fec47d691a722ffaa6d39e9557080",
+      "bytes": 395
+    },
+    {
+      "path": "mods/vanilla/weather/maps/TrainerHill_3F.json",
+      "sha1": "7a987e0e9734106a2d0120bcb6e734f2c6860948",
+      "bytes": 395
+    },
+    {
+      "path": "mods/vanilla/weather/maps/TrainerHill_4F.json",
+      "sha1": "2a7b4c50925a0c2f523a70fcfe67aba3e9291550",
+      "bytes": 395
+    },
+    {
+      "path": "mods/vanilla/weather/maps/TrainerHill_Elevator.json",
+      "sha1": "dbcc48c504ffdcc91986913f95f640078305c6f0",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/weather/maps/TrainerHill_Entrance.json",
+      "sha1": "663bcdb4d8a7c19fffe3f9796e9bf13059b9bfa0",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/weather/maps/TrainerHill_Roof.json",
+      "sha1": "547bc2d730adbd14c7a1ea5aec9ed7eb66fe29ce",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Underwater_MarineCave.json",
+      "sha1": "5e4c48aa1c71c7866cb00427608d2b83742d5450",
+      "bytes": 444
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Underwater_Route105.json",
+      "sha1": "72b2b85ff2dd73191c9758ebb98b697940cb0e8d",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Underwater_Route124.json",
+      "sha1": "910cbfc0b7b0fff92919c2fda676fca6054b6a5c",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Underwater_Route125.json",
+      "sha1": "402a23fe169d2bd157a21725494f8f371533fb83",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Underwater_Route126.json",
+      "sha1": "c8c9686571b785fcf417fe5aec08018770185b5f",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Underwater_Route127.json",
+      "sha1": "1cb625b9947819c517044c3d5ec4c157db59d706",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Underwater_Route128.json",
+      "sha1": "79ecdc8e5e401386528f9902692ea2803ea739c5",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Underwater_Route129.json",
+      "sha1": "c23ed7289105e72b17cc417706b2449bdd0ea89f",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Underwater_Route134.json",
+      "sha1": "d3d15532b658c97ab80377a0aa89952ce93610c6",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Underwater_SeafloorCavern.json",
+      "sha1": "b2abd233e250a08f50598b93fad182e62c1ff92b",
+      "bytes": 464
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Underwater_SealedChamber.json",
+      "sha1": "553a4da218162863a11072912815496dab4a6f2b",
+      "bytes": 459
+    },
+    {
+      "path": "mods/vanilla/weather/maps/Underwater_SootopolisCity.json",
+      "sha1": "a11fe65bb720d56406a023a0460042d8b3765e25",
+      "bytes": 464
+    },
+    {
+      "path": "mods/vanilla/weather/maps/UnionRoom.json",
+      "sha1": "25227a512e92471926664b56959eef4eba636ce2",
+      "bytes": 370
+    },
+    {
+      "path": "mods/vanilla/weather/maps/UnusedContestHall1.json",
+      "sha1": "6eb57563c6cf4bd531b2a80ace5da575407ab87c",
+      "bytes": 416
+    },
+    {
+      "path": "mods/vanilla/weather/maps/UnusedContestHall2.json",
+      "sha1": "f95ea07fd41fdc79b7f4e4959e5ecc47ca5a99f5",
+      "bytes": 416
+    },
+    {
+      "path": "mods/vanilla/weather/maps/UnusedContestHall3.json",
+      "sha1": "c7a4240d4ee944a0fea53a3a0b16c9163e39d81f",
+      "bytes": 416
+    },
+    {
+      "path": "mods/vanilla/weather/maps/UnusedContestHall4.json",
+      "sha1": "a45cdb69db8673c007bdd9e329168363ecc1ee6a",
+      "bytes": 416
+    },
+    {
+      "path": "mods/vanilla/weather/maps/UnusedContestHall5.json",
+      "sha1": "40005309011d9849ce17ff9c6a58ba5a97883efe",
+      "bytes": 416
+    },
+    {
+      "path": "mods/vanilla/weather/maps/UnusedContestHall6.json",
+      "sha1": "a6717f5ddd3569dbd6d41f42b4d3640b072381cc",
+      "bytes": 416
+    },
+    {
+      "path": "mods/vanilla/weather/maps/VerdanturfTown.json",
+      "sha1": "c847da1fda86138593c4e4b76a87829e52c365bb",
+      "bytes": 396
+    },
+    {
+      "path": "mods/vanilla/weather/maps/VerdanturfTown_BattleTentBattleRoom.json",
+      "sha1": "c457b27e85917032573faaccb97e60cd021c7c43",
+      "bytes": 503
+    },
+    {
+      "path": "mods/vanilla/weather/maps/VerdanturfTown_BattleTentCorridor.json",
+      "sha1": "d9fc73ddd4ddd5090372b32e943c799e7fdfae7b",
+      "bytes": 492
+    },
+    {
+      "path": "mods/vanilla/weather/maps/VerdanturfTown_BattleTentLobby.json",
+      "sha1": "83e0a400440faa816695142372988991240a528c",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/weather/maps/VerdanturfTown_FriendshipRatersHouse.json",
+      "sha1": "f1f13ead2504937e35ba4d97d399ae74423d2a3c",
+      "bytes": 507
+    },
+    {
+      "path": "mods/vanilla/weather/maps/VerdanturfTown_House.json",
+      "sha1": "48611b450eb8a0b610f3405f045fff0bc7a66b77",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/weather/maps/VerdanturfTown_Mart.json",
+      "sha1": "81ff8447faf2baff85649da8fa291851662f6a9b",
+      "bytes": 420
+    },
+    {
+      "path": "mods/vanilla/weather/maps/VerdanturfTown_PokemonCenter_1F.json",
+      "sha1": "79043fb55c0a94e19d45f80a8f4cfd8ab6f1a613",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/weather/maps/VerdanturfTown_PokemonCenter_2F.json",
+      "sha1": "e69e0a8ad057acc5ff31e343e7f79cfd0a09f618",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/weather/maps/VerdanturfTown_WandasHouse.json",
+      "sha1": "461a9206878607aed40d2b6d624abcf01008396b",
+      "bytes": 456
+    },
+    {
+      "path": "mods/vanilla/weather/maps/VictoryRoad_1F.json",
+      "sha1": "36912be036f6f3f2023bdedcba1434091cdc0d58",
+      "bytes": 395
+    },
+    {
+      "path": "mods/vanilla/weather/maps/VictoryRoad_B1F.json",
+      "sha1": "407805d40f7552126d96c20ffaed1fb279b23865",
+      "bytes": 400
+    },
+    {
+      "path": "mods/vanilla/weather/maps/VictoryRoad_B2F.json",
+      "sha1": "09912e60c66c0b8b485d32d8e3b8e466ad83abe7",
+      "bytes": 400
     }
   ],
   "counts": {

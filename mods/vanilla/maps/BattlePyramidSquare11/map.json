@@ -109,5 +109,26 @@
   ],
   "warp_events": [],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattlePyramidSquare11/map.json",
+    "sha1": "b65caa8dad616d3bcff8ee9b3c603efc0841f304"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/BattlePyramidSquare11/map.json",
+    "mapName": "BattlePyramidSquare11",
+    "scriptsSourcePath": null
+  },
+  "mapGroup": 25,
+  "mapNum": 54,
+  "mapGroupSymbol": "gMapGroup_IndoorDynamic",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

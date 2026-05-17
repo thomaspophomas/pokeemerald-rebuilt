@@ -1,0 +1,16 @@
+{
+  "id": "Route112_CableCarStation:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route112_CableCarStation/map.json",
+    "sha1": "5025865ea0b3a53d1ceb4d79e245c98fcd71aede"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/Route112_CableCarStation/map.json"
+  },
+  "map": "Route112_CableCarStation",
+  "mapId": "MAP_ROUTE112_CABLE_CAR_STATION",
+  "weather": "WEATHER_NONE"
+}

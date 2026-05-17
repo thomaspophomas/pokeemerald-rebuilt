@@ -299,5 +299,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "LavaridgeTown_Gym_1F_EventScript_RightGymStatue"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Gym_1F/map.json",
+    "sha1": "31420f5ccda4f9fa5f1562b2465883c76f72e3a9"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/LavaridgeTown_Gym_1F/map.json",
+    "mapName": "LavaridgeTown_Gym_1F",
+    "scriptsSourcePath": "data/maps/LavaridgeTown_Gym_1F/scripts.inc"
+  },
+  "mapGroup": 4,
+  "mapNum": 1,
+  "mapGroupSymbol": "gMapGroup_IndoorLavaridge",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

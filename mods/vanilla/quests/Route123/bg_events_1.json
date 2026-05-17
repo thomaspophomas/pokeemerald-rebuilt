@@ -1,0 +1,27 @@
+{
+  "id": "Route123:bg_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route123/map.json",
+    "sha1": "5f30055b99ad151e31bfbdc0bdab9776e6da6471"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route123/map.json",
+    "raw": {
+      "type": "secret_base",
+      "x": 47,
+      "y": 3,
+      "elevation": 0,
+      "secret_base_id": "SECRET_BASE_BLUE_CAVE1_2"
+    }
+  },
+  "map": "Route123",
+  "mapId": "MAP_ROUTE123",
+  "eventType": "bg_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

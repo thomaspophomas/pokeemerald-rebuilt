@@ -1,0 +1,27 @@
+{
+  "id": "ShoalCave_LowTideInnerRoom:warp_events:6",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ShoalCave_LowTideInnerRoom/map.json",
+    "sha1": "56bbbffdfe774d7e3c93c1294e8467b30cd16cc1"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/ShoalCave_LowTideInnerRoom/map.json",
+    "raw": {
+      "x": 14,
+      "y": 33,
+      "elevation": 5,
+      "dest_map": "MAP_SHOAL_CAVE_LOW_TIDE_ENTRANCE_ROOM",
+      "dest_warp_id": "2"
+    }
+  },
+  "map": "ShoalCave_LowTideInnerRoom",
+  "mapId": "MAP_SHOAL_CAVE_LOW_TIDE_INNER_ROOM",
+  "eventType": "warp_events",
+  "index": 6,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "MagmaHideout_3F_1R:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_3F_1R/map.json",
+    "sha1": "1e214ad10306ee65cf5b6aadd9c3674df508a931"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MagmaHideout_3F_1R/map.json",
+    "raw": {
+      "x": 21,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_MAGMA_HIDEOUT_3F_2R",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "MagmaHideout_3F_1R",
+  "mapId": "MAP_MAGMA_HIDEOUT_3F_1R",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

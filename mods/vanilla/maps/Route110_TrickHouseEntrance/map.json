@@ -99,5 +99,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Route110_TrickHouseEntrance_EventScript_Door"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEntrance/map.json",
+    "sha1": "ea068d81e97ce19c6ac5826131af9c5e6e55b1d8"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route110_TrickHouseEntrance/map.json",
+    "mapName": "Route110_TrickHouseEntrance",
+    "scriptsSourcePath": "data/maps/Route110_TrickHouseEntrance/scripts.inc"
+  },
+  "mapGroup": 29,
+  "mapNum": 0,
+  "mapGroupSymbol": "gMapGroup_IndoorRoute110",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

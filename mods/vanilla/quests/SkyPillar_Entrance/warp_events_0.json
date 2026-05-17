@@ -1,0 +1,27 @@
+{
+  "id": "SkyPillar_Entrance:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Entrance/map.json",
+    "sha1": "70f86649dad426de9d2ad0d32ec6cf9d0ed277e4"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SkyPillar_Entrance/map.json",
+    "raw": {
+      "x": 6,
+      "y": 16,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE131",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "SkyPillar_Entrance",
+  "mapId": "MAP_SKY_PILLAR_ENTRANCE",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

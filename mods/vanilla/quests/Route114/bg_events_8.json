@@ -1,0 +1,30 @@
+{
+  "id": "Route114:bg_events:8",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114/map.json",
+    "sha1": "29d60125e847150e48178ca05f36f1470cb0211c"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route114/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 25,
+      "y": 38,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route114_EventScript_LanettesHouseSign"
+    }
+  },
+  "map": "Route114",
+  "mapId": "MAP_ROUTE114",
+  "eventType": "bg_events",
+  "index": 8,
+  "script": "Route114_EventScript_LanettesHouseSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

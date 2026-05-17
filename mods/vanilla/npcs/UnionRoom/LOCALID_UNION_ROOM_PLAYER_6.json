@@ -1,0 +1,46 @@
+{
+  "id": "UnionRoom:LOCALID_UNION_ROOM_PLAYER_6",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/UnionRoom/map.json",
+    "sha1": "951fb254aa12ec6c0f4131943e9f4cfb149057a0"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/UnionRoom/map.json",
+    "raw": {
+      "local_id": "LOCALID_UNION_ROOM_PLAYER_6",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_5",
+      "x": 7,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "UnionRoom_EventScript_Player6",
+      "flag": "FLAG_HIDE_UNION_ROOM_PLAYER_6"
+    }
+  },
+  "map": "UnionRoom",
+  "mapId": "MAP_UNION_ROOM",
+  "localId": "LOCALID_UNION_ROOM_PLAYER_6",
+  "graphicsId": "OBJ_EVENT_GFX_VAR_5",
+  "x": 7,
+  "y": 4,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "UnionRoom_EventScript_Player6",
+  "flag": "FLAG_HIDE_UNION_ROOM_PLAYER_6",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "FallarborTown_Mart:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_Mart/map.json",
+    "sha1": "258c69c086410cf2b59011d345cd84519f2b0482"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/FallarborTown_Mart/map.json",
+    "raw": {
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_FALLARBOR_TOWN",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "FallarborTown_Mart",
+  "mapId": "MAP_FALLARBOR_TOWN_MART",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

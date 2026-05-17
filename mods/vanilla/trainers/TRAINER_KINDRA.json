@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_KINDRA",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_KINDRA] =\n    {\n        .trainerClass = TRAINER_CLASS_HEX_MANIAC,\n        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,\n        .trainerPic = TRAINER_PIC_HEX_MANIAC,\n        .trainerName = _(\"KINDRA\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_Kindra),\n    },"
+  },
+  "symbol": "TRAINER_KINDRA",
+  "numericId": 106,
+  "trainerName": "KINDRA",
+  "trainerClass": "TRAINER_CLASS_HEX_MANIAC",
+  "trainerPic": "TRAINER_PIC_HEX_MANIAC",
+  "encounterMusicGender": "F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_Kindra",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

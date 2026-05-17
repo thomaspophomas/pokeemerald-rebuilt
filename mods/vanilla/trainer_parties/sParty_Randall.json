@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Randall",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemCustomMoves sParty_Randall[] = {\n    {\n    .iv = 255,\n    .lvl = 26,\n    .species = SPECIES_SWELLOW,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_QUICK_ATTACK, MOVE_AGILITY, MOVE_WING_ATTACK, MOVE_NONE}\n    }\n};"
+  },
+  "symbol": "sParty_Randall",
+  "partyType": "TrainerMonItemCustomMoves",
+  "pokemonCount": 1
+}

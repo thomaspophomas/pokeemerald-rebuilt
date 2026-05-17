@@ -1,0 +1,45 @@
+{
+  "id": "DewfordTown_Hall:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Hall/map.json",
+    "sha1": "734f741102c8ed0a7e71cd3c858059f71bdddb72"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/DewfordTown_Hall/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_2",
+      "x": 4,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "DewfordTown_Hall_EventScript_Girl",
+      "flag": "0"
+    }
+  },
+  "map": "DewfordTown_Hall",
+  "mapId": "MAP_DEWFORD_TOWN_HALL",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_GIRL_2",
+  "x": 4,
+  "y": 6,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "DewfordTown_Hall_EventScript_Girl",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

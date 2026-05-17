@@ -1,0 +1,27 @@
+{
+  "id": "LittlerootTown_BrendansHouse_1F:warp_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_1F/map.json",
+    "sha1": "f7be2e429bafe6de2465040402d53ed22d2e30b1"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/map.json",
+    "raw": {
+      "x": 8,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "LittlerootTown_BrendansHouse_1F",
+  "mapId": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F",
+  "eventType": "warp_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

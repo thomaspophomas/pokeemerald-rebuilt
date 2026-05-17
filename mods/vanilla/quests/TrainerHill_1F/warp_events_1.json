@@ -1,0 +1,27 @@
+{
+  "id": "TrainerHill_1F:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_1F/map.json",
+    "sha1": "5a3fbf0e4a8aefe9039d7c428b8756ee6401412a"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/TrainerHill_1F/map.json",
+    "raw": {
+      "x": 12,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_TRAINER_HILL_2F",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "TrainerHill_1F",
+  "mapId": "MAP_TRAINER_HILL_1F",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

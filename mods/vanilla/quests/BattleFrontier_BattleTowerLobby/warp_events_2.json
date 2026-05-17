@@ -1,0 +1,27 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby:warp_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/map.json",
+    "sha1": "bdac9ff7e3d4d969649e263a4f3738db14127b7c"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/map.json",
+    "raw": {
+      "x": 6,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_BATTLE_ROOM",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "BattleFrontier_BattleTowerLobby",
+  "mapId": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_LOBBY",
+  "eventType": "warp_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

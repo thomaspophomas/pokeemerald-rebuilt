@@ -1,0 +1,46 @@
+{
+  "id": "GraniteCave_StevensRoom:LOCALID_GRANITE_CAVE_STEVEN",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/GraniteCave_StevensRoom/map.json",
+    "sha1": "8caf477c60755017f7b363c9c45ba9ec9df1ba0c"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/GraniteCave_StevensRoom/map.json",
+    "raw": {
+      "local_id": "LOCALID_GRANITE_CAVE_STEVEN",
+      "graphics_id": "OBJ_EVENT_GFX_STEVEN",
+      "x": 7,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GraniteCave_StevensRoom_EventScript_Steven",
+      "flag": "FLAG_HIDE_GRANITE_CAVE_STEVEN"
+    }
+  },
+  "map": "GraniteCave_StevensRoom",
+  "mapId": "MAP_GRANITE_CAVE_STEVENS_ROOM",
+  "localId": "LOCALID_GRANITE_CAVE_STEVEN",
+  "graphicsId": "OBJ_EVENT_GFX_STEVEN",
+  "x": 7,
+  "y": 8,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "GraniteCave_StevensRoom_EventScript_Steven",
+  "flag": "FLAG_HIDE_GRANITE_CAVE_STEVEN",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

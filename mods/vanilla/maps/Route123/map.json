@@ -836,5 +836,26 @@
       "item": "ITEM_RARE_CANDY",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route123/map.json",
+    "sha1": "5f30055b99ad151e31bfbdc0bdab9776e6da6471"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route123/map.json",
+    "mapName": "Route123",
+    "scriptsSourcePath": "data/maps/Route123/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 38,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

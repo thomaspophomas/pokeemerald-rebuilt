@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Madeline2",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_Madeline2[] = {\n    {\n    .iv = 10,\n    .lvl = 29,\n    .species = SPECIES_NUMEL,\n    .moves = {MOVE_EMBER, MOVE_TACKLE, MOVE_MAGNITUDE, MOVE_SUNNY_DAY}\n    }\n};"
+  },
+  "symbol": "sParty_Madeline2",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 1
+}

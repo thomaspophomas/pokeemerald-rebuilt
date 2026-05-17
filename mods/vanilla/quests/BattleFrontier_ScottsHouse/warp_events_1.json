@@ -1,0 +1,27 @@
+{
+  "id": "BattleFrontier_ScottsHouse:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ScottsHouse/map.json",
+    "sha1": "cdb6d7e490a5a22f942c1c30e4c989462570d9f7"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BattleFrontier_ScottsHouse/map.json",
+    "raw": {
+      "x": 3,
+      "y": 7,
+      "elevation": 3,
+      "dest_map": "MAP_BATTLE_FRONTIER_OUTSIDE_WEST",
+      "dest_warp_id": "5"
+    }
+  },
+  "map": "BattleFrontier_ScottsHouse",
+  "mapId": "MAP_BATTLE_FRONTIER_SCOTTS_HOUSE",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

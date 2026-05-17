@@ -1,0 +1,45 @@
+{
+  "id": "Route123:11",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route123/map.json",
+    "sha1": "5f30055b99ad151e31bfbdc0bdab9776e6da6471"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route123/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
+      "x": 15,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_123_GREPA_4",
+      "script": "BerryTreeScript",
+      "flag": "0"
+    }
+  },
+  "map": "Route123",
+  "mapId": "MAP_ROUTE123",
+  "localId": 11,
+  "graphicsId": "OBJ_EVENT_GFX_BERRY_TREE",
+  "x": 15,
+  "y": 5,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "BERRY_TREE_ROUTE_123_GREPA_4",
+  "script": "BerryTreeScript",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "SkyPillar_Top:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Top/map.json",
+    "sha1": "bcddfa093065951c6399bda62f0df4668db59e12"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SkyPillar_Top/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 14,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_SKY_PILLAR_RAYQUAZA_CRY_DONE",
+      "var_value": "0",
+      "script": "SkyPillar_Top_EventScript_AwakenRayquaza"
+    }
+  },
+  "map": "SkyPillar_Top",
+  "mapId": "MAP_SKY_PILLAR_TOP",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": "SkyPillar_Top_EventScript_AwakenRayquaza",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

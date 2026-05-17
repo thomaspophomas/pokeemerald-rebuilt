@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Chris",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemDefaultMoves sParty_Chris[] = {\n    {\n    .iv = 0,\n    .lvl = 29,\n    .species = SPECIES_MAGIKARP,\n    },\n    {\n    .iv = 0,\n    .lvl = 20,\n    .species = SPECIES_TENTACOOL,\n    },\n    {\n    .iv = 0,\n    .lvl = 26,\n    .species = SPECIES_FEEBAS,\n    },\n    {\n    .iv = 0,\n    .lvl = 23,\n    .species = SPECIES_CARVANHA,\n    }\n};"
+  },
+  "symbol": "sParty_Chris",
+  "partyType": "TrainerMonNoItemDefaultMoves",
+  "pokemonCount": 4
+}

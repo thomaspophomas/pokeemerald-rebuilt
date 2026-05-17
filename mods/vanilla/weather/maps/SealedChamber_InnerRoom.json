@@ -1,0 +1,16 @@
+{
+  "id": "SealedChamber_InnerRoom:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SealedChamber_InnerRoom/map.json",
+    "sha1": "2f8b00e65058122705de415b0b3a87f6900f2302"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/SealedChamber_InnerRoom/map.json"
+  },
+  "map": "SealedChamber_InnerRoom",
+  "mapId": "MAP_SEALED_CHAMBER_INNER_ROOM",
+  "weather": "WEATHER_NONE"
+}

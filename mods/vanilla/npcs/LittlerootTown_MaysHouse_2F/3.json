@@ -1,0 +1,42 @@
+{
+  "id": "LittlerootTown_MaysHouse_2F:3",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_2F/map.json",
+    "sha1": "22dcc564c8c9748ea6f038ccb8eb713be5bb82ee"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_2F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_VAR_1",
+      "x": 1,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_DECORATION_2"
+    }
+  },
+  "map": "LittlerootTown_MaysHouse_2F",
+  "mapId": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F",
+  "localId": 3,
+  "graphicsId": "OBJ_EVENT_GFX_VAR_1",
+  "x": 1,
+  "y": 6,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_DECORATION_2",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

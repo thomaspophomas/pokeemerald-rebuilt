@@ -1,0 +1,31 @@
+{
+  "id": "SlateportCity_PokemartDecor",
+  "domain": "shops",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "pokemart_script_list",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc"
+  },
+  "symbol": "SlateportCity_PokemartDecor",
+  "map": "SlateportCity",
+  "items": [
+    "DECOR_RED_BRICK",
+    "DECOR_BLUE_BRICK",
+    "DECOR_YELLOW_BRICK",
+    "DECOR_RED_BALLOON",
+    "DECOR_BLUE_BALLOON",
+    "DECOR_YELLOW_BALLOON",
+    "DECOR_C_LOW_NOTE_MAT",
+    "DECOR_D_NOTE_MAT",
+    "DECOR_E_NOTE_MAT",
+    "DECOR_F_NOTE_MAT",
+    "DECOR_G_NOTE_MAT",
+    "DECOR_A_NOTE_MAT",
+    "DECOR_B_NOTE_MAT",
+    "DECOR_C_HIGH_NOTE_MAT"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "Route127:bg_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route127/map.json",
+    "sha1": "1888c4a6cdbeaad8f03b0f0d0a7120ea72599971"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route127/map.json",
+    "raw": {
+      "type": "secret_base",
+      "x": 59,
+      "y": 72,
+      "elevation": 0,
+      "secret_base_id": "SECRET_BASE_YELLOW_CAVE3_2"
+    }
+  },
+  "map": "Route127",
+  "mapId": "MAP_ROUTE127",
+  "eventType": "bg_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -268,5 +268,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "LittlerootTown_MaysHouse_2F_EventScript_PC"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_2F/map.json",
+    "sha1": "22dcc564c8c9748ea6f038ccb8eb713be5bb82ee"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_2F/map.json",
+    "mapName": "LittlerootTown_MaysHouse_2F",
+    "scriptsSourcePath": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc"
+  },
+  "mapGroup": 1,
+  "mapNum": 3,
+  "mapGroupSymbol": "gMapGroup_IndoorLittleroot",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

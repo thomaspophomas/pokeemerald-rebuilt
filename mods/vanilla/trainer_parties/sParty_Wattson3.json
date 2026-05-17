@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Wattson3",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemCustomMoves sParty_Wattson3[] = {\n    {\n    .iv = 255,\n    .lvl = 39,\n    .species = SPECIES_PIKACHU,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_THUNDER, MOVE_SLAM, MOVE_RAIN_DANCE, MOVE_SHOCK_WAVE}\n    },\n    {\n    .iv = 255,\n    .lvl = 41,\n    .species = SPECIES_FLAAFFY,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_THUNDER, MOVE_PROTECT, MOVE_THUNDER_WAVE, MOVE_LIGHT_SCREEN}\n    },\n    {\n    .iv = 255,\n    .lvl = 41,\n    .species = SPECIES_ELECTRODE,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_ROLLOUT, MOVE_THUNDER, MOVE_EXPLOSION, MOVE_RAIN_DANCE}\n    },\n    {\n    .iv = 255,\n    .lvl = 43,\n    .species = SPECIES_MAGNETON,\n    .heldItem = ITEM_SITRUS_BERRY,\n    .moves = {MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_THUNDER, MOVE_RAIN_DANCE}\n    },\n    {\n    .iv = 255,\n    .lvl = 45,\n    .species = SPECIES_MANECTRIC,\n    .heldItem = ITEM_SITRUS_BERRY,\n    .moves = {MOVE_BITE, MOVE_THUNDER_WAVE, MOVE_THUNDER, MOVE_PROTECT}\n    }\n};"
+  },
+  "symbol": "sParty_Wattson3",
+  "partyType": "TrainerMonItemCustomMoves",
+  "pokemonCount": 5
+}

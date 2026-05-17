@@ -1,0 +1,29 @@
+{
+  "id": "MauvilleCity_Mart_Pokemart",
+  "domain": "shops",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Mart/scripts.inc",
+    "sha1": "d8b603abe3cbe455d4b20a35653269b7e46b6b14"
+  },
+  "legacy": {
+    "kind": "pokemart_script_list",
+    "sourcePath": "data/maps/MauvilleCity_Mart/scripts.inc"
+  },
+  "symbol": "MauvilleCity_Mart_Pokemart",
+  "map": "MauvilleCity_Mart",
+  "items": [
+    "ITEM_POKE_BALL",
+    "ITEM_GREAT_BALL",
+    "ITEM_SUPER_POTION",
+    "ITEM_ANTIDOTE",
+    "ITEM_PARALYZE_HEAL",
+    "ITEM_AWAKENING",
+    "ITEM_X_SPEED",
+    "ITEM_X_ATTACK",
+    "ITEM_X_DEFEND",
+    "ITEM_GUARD_SPEC",
+    "ITEM_DIRE_HIT",
+    "ITEM_X_ACCURACY"
+  ]
+}

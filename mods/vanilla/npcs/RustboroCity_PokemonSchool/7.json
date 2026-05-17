@@ -1,0 +1,45 @@
+{
+  "id": "RustboroCity_PokemonSchool:7",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonSchool/map.json",
+    "sha1": "bf4ca29432926880aeba032b3d1065c6dc8aa2a0"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/RustboroCity_PokemonSchool/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_SCOTT",
+      "x": 0,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RustboroCity_PokemonSchool_EventScript_Scott",
+      "flag": "FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT"
+    }
+  },
+  "map": "RustboroCity_PokemonSchool",
+  "mapId": "MAP_RUSTBORO_CITY_POKEMON_SCHOOL",
+  "localId": 7,
+  "graphicsId": "OBJ_EVENT_GFX_SCOTT",
+  "x": 0,
+  "y": 10,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "RustboroCity_PokemonSchool_EventScript_Scott",
+  "flag": "FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

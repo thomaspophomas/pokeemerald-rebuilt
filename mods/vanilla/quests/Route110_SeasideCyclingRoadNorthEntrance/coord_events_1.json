@@ -1,0 +1,31 @@
+{
+  "id": "Route110_SeasideCyclingRoadNorthEntrance:coord_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_SeasideCyclingRoadNorthEntrance/map.json",
+    "sha1": "69ca7a6dc018036e4157483c551d1c83ff82c16a"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route110_SeasideCyclingRoadNorthEntrance/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 5,
+      "y": 4,
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
+      "var_value": "1",
+      "script": "Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad"
+    }
+  },
+  "map": "Route110_SeasideCyclingRoadNorthEntrance",
+  "mapId": "MAP_ROUTE110_SEASIDE_CYCLING_ROAD_NORTH_ENTRANCE",
+  "eventType": "coord_events",
+  "index": 1,
+  "script": "Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

@@ -110,5 +110,26 @@
       "item": "ITEM_FULL_RESTORE",
       "flag": "FLAG_HIDDEN_ITEM_SAFARI_ZONE_SOUTH_EAST_FULL_RESTORE"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_Southeast/map.json",
+    "sha1": "e5c5f65c091a5136a9ac0e47e1102f231a6339ae"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SafariZone_Southeast/map.json",
+    "mapName": "SafariZone_Southeast",
+    "scriptsSourcePath": "data/maps/SafariZone_Southeast/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 13,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

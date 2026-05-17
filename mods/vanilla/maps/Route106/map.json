@@ -134,5 +134,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route106_EventScript_TrainerTipsSign"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route106/map.json",
+    "sha1": "abf7343ff3b946d694c71cf3c2f2409b1e153c5f"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route106/map.json",
+    "mapName": "Route106",
+    "scriptsSourcePath": "data/maps/Route106/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 21,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

@@ -32,10 +32,16 @@ def main() -> int:
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         for domain in summary.get("domains", []):
             domain_root = vanilla_root / domain
+            index_path = domain_root / "index.json"
+            source_manifest_path = domain_root / "_source_manifest.json"
             schema_path = root / "docs" / "mod_api_schemas" / f"{domain}.schema.json"
             expectation_path = vanilla_root / "expectations" / domain / "baseline.expected.json"
             if not domain_root.is_dir():
                 errors.append(f"missing vanilla domain folder: mods/vanilla/{domain}")
+            if not index_path.is_file():
+                errors.append(f"missing vanilla domain index: mods/vanilla/{domain}/index.json")
+            if not source_manifest_path.is_file():
+                errors.append(f"missing vanilla source manifest: mods/vanilla/{domain}/_source_manifest.json")
             if not schema_path.is_file():
                 errors.append(f"missing schema: docs/mod_api_schemas/{domain}.schema.json")
             if not expectation_path.is_file():

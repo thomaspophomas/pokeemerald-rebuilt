@@ -1,0 +1,27 @@
+{
+  "id": "FallarborTown:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown/map.json",
+    "sha1": "8fe7f19a90a652a8002a0bc5ee11e2cb69ffa7cb"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/FallarborTown/map.json",
+    "raw": {
+      "x": 8,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_FALLARBOR_TOWN_BATTLE_TENT_LOBBY",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "FallarborTown",
+  "mapId": "MAP_FALLARBOR_TOWN",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

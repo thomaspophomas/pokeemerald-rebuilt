@@ -31,5 +31,26 @@
   ],
   "warp_events": [],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomFinal/map.json",
+    "sha1": "68c18038df649f56e4ac0e8a2343b6dbd729b1ca"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomFinal/map.json",
+    "mapName": "BattleFrontier_BattlePikeRoomFinal",
+    "scriptsSourcePath": "data/maps/BattleFrontier_BattlePikeRoomFinal/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 38,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

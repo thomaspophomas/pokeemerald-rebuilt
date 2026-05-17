@@ -1,0 +1,46 @@
+{
+  "id": "Route116:LOCALID_ROUTE116_WANDAS_BF",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116/map.json",
+    "sha1": "4917a04a095314d28f76d7b4807e78bce1251f9a"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route116/map.json",
+    "raw": {
+      "local_id": "LOCALID_ROUTE116_WANDAS_BF",
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "x": 38,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route116_EventScript_WandasBoyfriend",
+      "flag": "FLAG_HIDE_ROUTE_116_WANDAS_BOYFRIEND"
+    }
+  },
+  "map": "Route116",
+  "mapId": "MAP_ROUTE116",
+  "localId": "LOCALID_ROUTE116_WANDAS_BF",
+  "graphicsId": "OBJ_EVENT_GFX_BLACK_BELT",
+  "x": 38,
+  "y": 9,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Route116_EventScript_WandasBoyfriend",
+  "flag": "FLAG_HIDE_ROUTE_116_WANDAS_BOYFRIEND",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

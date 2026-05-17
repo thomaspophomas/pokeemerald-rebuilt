@@ -105,5 +105,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_PokemonCenter_1F/map.json",
+    "sha1": "64ddb92f8e1f3faae5339135da4112b7c058338a"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/BattleFrontier_PokemonCenter_1F/map.json",
+    "mapName": "BattleFrontier_PokemonCenter_1F",
+    "scriptsSourcePath": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 53,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

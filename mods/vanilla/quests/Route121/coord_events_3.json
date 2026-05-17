@@ -1,0 +1,31 @@
+{
+  "id": "Route121:coord_events:3",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route121/map.json",
+    "sha1": "f6697affa29d20f09f078a6a6de0c1d04016f228"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route121/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 25,
+      "y": 8,
+      "elevation": 3,
+      "var": "VAR_ROUTE121_STATE",
+      "var_value": "0",
+      "script": "Route121_EventScript_AquaGruntsMoveOut"
+    }
+  },
+  "map": "Route121",
+  "mapId": "MAP_ROUTE121",
+  "eventType": "coord_events",
+  "index": 3,
+  "script": "Route121_EventScript_AquaGruntsMoveOut",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

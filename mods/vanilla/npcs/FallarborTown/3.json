@@ -1,0 +1,45 @@
+{
+  "id": "FallarborTown:3",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown/map.json",
+    "sha1": "8fe7f19a90a652a8002a0bc5ee11e2cb69ffa7cb"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/FallarborTown/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
+      "x": 11,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FallarborTown_EventScript_Gentleman",
+      "flag": "0"
+    }
+  },
+  "map": "FallarborTown",
+  "mapId": "MAP_FALLARBOR_TOWN",
+  "localId": 3,
+  "graphicsId": "OBJ_EVENT_GFX_GENTLEMAN",
+  "x": 11,
+  "y": 15,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "FallarborTown_EventScript_Gentleman",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

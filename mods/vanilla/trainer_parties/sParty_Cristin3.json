@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Cristin3",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemDefaultMoves sParty_Cristin3[] = {\n    {\n    .iv = 120,\n    .lvl = 37,\n    .species = SPECIES_SPINDA,\n    },\n    {\n    .iv = 120,\n    .lvl = 37,\n    .species = SPECIES_LOUDRED,\n    },\n    {\n    .iv = 120,\n    .lvl = 37,\n    .species = SPECIES_VIGOROTH,\n    }\n};"
+  },
+  "symbol": "sParty_Cristin3",
+  "partyType": "TrainerMonNoItemDefaultMoves",
+  "pokemonCount": 3
+}

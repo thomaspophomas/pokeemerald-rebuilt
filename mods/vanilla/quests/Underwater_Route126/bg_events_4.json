@@ -1,0 +1,28 @@
+{
+  "id": "Underwater_Route126:bg_events:4",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_Route126/map.json",
+    "sha1": "b686f89f97dae1ea04460a81a70e5129e026637f"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Underwater_Route126/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 11,
+      "y": 39,
+      "elevation": 3,
+      "item": "ITEM_IRON",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_IRON"
+    }
+  },
+  "map": "Underwater_Route126",
+  "mapId": "MAP_UNDERWATER_ROUTE126",
+  "eventType": "bg_events",
+  "index": 4,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

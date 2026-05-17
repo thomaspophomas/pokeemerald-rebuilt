@@ -1,0 +1,27 @@
+{
+  "id": "RustboroCity_DevonCorp_2F:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_2F/map.json",
+    "sha1": "5f95c5cc7ec1dd2612789f2ffb210533edab2dfa"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_2F/map.json",
+    "raw": {
+      "x": 2,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_RUSTBORO_CITY_DEVON_CORP_3F",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "RustboroCity_DevonCorp_2F",
+  "mapId": "MAP_RUSTBORO_CITY_DEVON_CORP_2F",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

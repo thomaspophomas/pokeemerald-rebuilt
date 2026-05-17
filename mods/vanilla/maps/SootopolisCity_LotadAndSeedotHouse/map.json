@@ -75,5 +75,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "SootopolisCity_LotadAndSeedotHouse_EventScript_LotadSizeRecord"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_LotadAndSeedotHouse/map.json",
+    "sha1": "12602a25f93b821d1f53ce2648b3b216feaaeab5"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SootopolisCity_LotadAndSeedotHouse/map.json",
+    "mapName": "SootopolisCity_LotadAndSeedotHouse",
+    "scriptsSourcePath": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc"
+  },
+  "mapGroup": 15,
+  "mapNum": 12,
+  "mapGroupSymbol": "gMapGroup_IndoorSootopolis",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

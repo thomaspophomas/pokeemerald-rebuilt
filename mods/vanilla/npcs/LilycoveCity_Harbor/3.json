@@ -1,0 +1,45 @@
+{
+  "id": "LilycoveCity_Harbor:3",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_Harbor/map.json",
+    "sha1": "7bb6c3366d5032a1aa3a6b6279dbda154bbee405"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LilycoveCity_Harbor/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_SAILOR",
+      "x": 3,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LilycoveCity_Harbor_EventScript_Sailor",
+      "flag": "0"
+    }
+  },
+  "map": "LilycoveCity_Harbor",
+  "mapId": "MAP_LILYCOVE_CITY_HARBOR",
+  "localId": 3,
+  "graphicsId": "OBJ_EVENT_GFX_SAILOR",
+  "x": 3,
+  "y": 13,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "LilycoveCity_Harbor_EventScript_Sailor",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

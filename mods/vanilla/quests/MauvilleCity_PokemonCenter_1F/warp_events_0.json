@@ -1,0 +1,27 @@
+{
+  "id": "MauvilleCity_PokemonCenter_1F:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_PokemonCenter_1F/map.json",
+    "sha1": "af839dd3ab65ff8215f3d23e3e8f7f08b392419f"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MauvilleCity_PokemonCenter_1F/map.json",
+    "raw": {
+      "x": 7,
+      "y": 8,
+      "elevation": 3,
+      "dest_map": "MAP_MAUVILLE_CITY",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "MauvilleCity_PokemonCenter_1F",
+  "mapId": "MAP_MAUVILLE_CITY_POKEMON_CENTER_1F",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

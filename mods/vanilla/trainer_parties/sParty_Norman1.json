@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Norman1",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemCustomMoves sParty_Norman1[] = {\n    {\n    .iv = 200,\n    .lvl = 27,\n    .species = SPECIES_SPINDA,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_TEETER_DANCE, MOVE_PSYBEAM, MOVE_FACADE, MOVE_ENCORE}\n    },\n    {\n    .iv = 200,\n    .lvl = 27,\n    .species = SPECIES_VIGOROTH,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_SLASH, MOVE_FACADE, MOVE_ENCORE, MOVE_FAINT_ATTACK}\n    },\n    {\n    .iv = 200,\n    .lvl = 29,\n    .species = SPECIES_LINOONE,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_SLASH, MOVE_BELLY_DRUM, MOVE_FACADE, MOVE_HEADBUTT}\n    },\n    {\n    .iv = 250,\n    .lvl = 31,\n    .species = SPECIES_SLAKING,\n    .heldItem = ITEM_SITRUS_BERRY,\n    .moves = {MOVE_COUNTER, MOVE_YAWN, MOVE_FACADE, MOVE_FAINT_ATTACK}\n    }\n};"
+  },
+  "symbol": "sParty_Norman1",
+  "partyType": "TrainerMonItemCustomMoves",
+  "pokemonCount": 4
+}

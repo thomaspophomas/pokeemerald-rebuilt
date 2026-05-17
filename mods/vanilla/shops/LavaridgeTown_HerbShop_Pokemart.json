@@ -1,0 +1,21 @@
+{
+  "id": "LavaridgeTown_HerbShop_Pokemart",
+  "domain": "shops",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+    "sha1": "ed83c75f66b27defc898c3be46549255ef12185c"
+  },
+  "legacy": {
+    "kind": "pokemart_script_list",
+    "sourcePath": "data/maps/LavaridgeTown_HerbShop/scripts.inc"
+  },
+  "symbol": "LavaridgeTown_HerbShop_Pokemart",
+  "map": "LavaridgeTown_HerbShop",
+  "items": [
+    "ITEM_ENERGY_POWDER",
+    "ITEM_ENERGY_ROOT",
+    "ITEM_HEAL_POWDER",
+    "ITEM_REVIVAL_HERB"
+  ]
+}

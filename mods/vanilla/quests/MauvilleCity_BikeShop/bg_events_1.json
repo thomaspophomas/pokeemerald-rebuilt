@@ -1,0 +1,30 @@
+{
+  "id": "MauvilleCity_BikeShop:bg_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_BikeShop/map.json",
+    "sha1": "9cd6a46182b94984ce989120d7f57d7459369776"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MauvilleCity_BikeShop/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 11,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MauvilleCity_BikeShop_EventScript_AcroBikeHandbook"
+    }
+  },
+  "map": "MauvilleCity_BikeShop",
+  "mapId": "MAP_MAUVILLE_CITY_BIKE_SHOP",
+  "eventType": "bg_events",
+  "index": 1,
+  "script": "MauvilleCity_BikeShop_EventScript_AcroBikeHandbook",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

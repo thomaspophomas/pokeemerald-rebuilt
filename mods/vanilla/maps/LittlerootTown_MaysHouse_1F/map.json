@@ -171,5 +171,26 @@
       "script": "LittlerootTown_MaysHouse_1F_EventScript_MeetRival2"
     }
   ],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_1F/map.json",
+    "sha1": "47547f9e3b236beb339191c794628d09c7ddee7d"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_1F/map.json",
+    "mapName": "LittlerootTown_MaysHouse_1F",
+    "scriptsSourcePath": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc"
+  },
+  "mapGroup": 1,
+  "mapNum": 2,
+  "mapGroupSymbol": "gMapGroup_IndoorLittleroot",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

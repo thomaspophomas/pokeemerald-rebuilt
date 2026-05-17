@@ -1,0 +1,31 @@
+{
+  "id": "Route116:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116/map.json",
+    "sha1": "4917a04a095314d28f76d7b4807e78bce1251f9a"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route116/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 47,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_ROUTE116_STATE",
+      "var_value": "1",
+      "script": "Route116_EventScript_BrineyTrigger"
+    }
+  },
+  "map": "Route116",
+  "mapId": "MAP_ROUTE116",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": "Route116_EventScript_BrineyTrigger",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

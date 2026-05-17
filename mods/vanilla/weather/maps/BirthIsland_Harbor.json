@@ -1,0 +1,16 @@
+{
+  "id": "BirthIsland_Harbor:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BirthIsland_Harbor/map.json",
+    "sha1": "0f2790e8c2b9abe448922a485478822cb8d4b58a"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/BirthIsland_Harbor/map.json"
+  },
+  "map": "BirthIsland_Harbor",
+  "mapId": "MAP_BIRTH_ISLAND_HARBOR",
+  "weather": "WEATHER_NONE"
+}

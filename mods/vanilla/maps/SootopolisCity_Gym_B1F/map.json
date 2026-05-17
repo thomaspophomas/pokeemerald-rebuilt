@@ -155,5 +155,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Gym_B1F/map.json",
+    "sha1": "ca5166f321e53cdf666f4931db27bc1ee5a380a7"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SootopolisCity_Gym_B1F/map.json",
+    "mapName": "SootopolisCity_Gym_B1F",
+    "scriptsSourcePath": "data/maps/SootopolisCity_Gym_B1F/scripts.inc"
+  },
+  "mapGroup": 15,
+  "mapNum": 1,
+  "mapGroupSymbol": "gMapGroup_IndoorSootopolis",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

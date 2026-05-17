@@ -1,0 +1,43 @@
+{
+  "id": "LittlerootTown:LOCALID_LITTLEROOT_RIVAL",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/map.json",
+    "sha1": "1e04563b693f88e4476d9f7b49a2194b5e027957"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LittlerootTown/map.json",
+    "raw": {
+      "local_id": "LOCALID_LITTLEROOT_RIVAL",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_0",
+      "x": 13,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_RIVAL"
+    }
+  },
+  "map": "LittlerootTown",
+  "mapId": "MAP_LITTLEROOT_TOWN",
+  "localId": "LOCALID_LITTLEROOT_RIVAL",
+  "graphicsId": "OBJ_EVENT_GFX_VAR_0",
+  "x": 13,
+  "y": 10,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_HIDE_LITTLEROOT_TOWN_RIVAL",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

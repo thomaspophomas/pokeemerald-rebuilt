@@ -1,0 +1,45 @@
+{
+  "id": "NewMauville_Inside:8",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NewMauville_Inside/map.json",
+    "sha1": "32f18a7e6d35bfd09d72368f33c954b09c84cb81"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/NewMauville_Inside/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 13,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NewMauville_Inside_EventScript_Voltorb3",
+      "flag": "FLAG_HIDE_NEW_MAUVILLE_VOLTORB_3"
+    }
+  },
+  "map": "NewMauville_Inside",
+  "mapId": "MAP_NEW_MAUVILLE_INSIDE",
+  "localId": 8,
+  "graphicsId": "OBJ_EVENT_GFX_ITEM_BALL",
+  "x": 13,
+  "y": 10,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "NewMauville_Inside_EventScript_Voltorb3",
+  "flag": "FLAG_HIDE_NEW_MAUVILLE_VOLTORB_3",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

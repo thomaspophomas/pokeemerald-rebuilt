@@ -1,0 +1,28 @@
+{
+  "id": "Underwater_Route124:bg_events:3",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_Route124/map.json",
+    "sha1": "272d5278e0190c898eb80cafd55163640d24271e"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Underwater_Route124/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 64,
+      "y": 54,
+      "elevation": 3,
+      "item": "ITEM_BIG_PEARL",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_124_BIG_PEARL"
+    }
+  },
+  "map": "Underwater_Route124",
+  "mapId": "MAP_UNDERWATER_ROUTE124",
+  "eventType": "bg_events",
+  "index": 3,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

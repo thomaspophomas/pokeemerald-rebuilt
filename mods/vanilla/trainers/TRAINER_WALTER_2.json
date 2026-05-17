@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_WALTER_2",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_WALTER_2] =\n    {\n        .trainerClass = TRAINER_CLASS_GENTLEMAN,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,\n        .trainerPic = TRAINER_PIC_GENTLEMAN,\n        .trainerName = _(\"WALTER\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_Walter2),\n    },"
+  },
+  "symbol": "TRAINER_WALTER_2",
+  "numericId": 257,
+  "trainerName": "WALTER",
+  "trainerClass": "TRAINER_CLASS_GENTLEMAN",
+  "trainerPic": "TRAINER_PIC_GENTLEMAN",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_RICH",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_Walter2",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

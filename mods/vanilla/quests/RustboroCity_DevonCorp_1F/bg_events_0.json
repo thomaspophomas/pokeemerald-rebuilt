@@ -1,0 +1,30 @@
+{
+  "id": "RustboroCity_DevonCorp_1F:bg_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_1F/map.json",
+    "sha1": "660aa9e8a509fcbf78ef7d180bbb79857b7b7c2e"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_1F/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 3,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RustboroCity_DevonCorp_1F_EventScript_ProductsDisplay"
+    }
+  },
+  "map": "RustboroCity_DevonCorp_1F",
+  "mapId": "MAP_RUSTBORO_CITY_DEVON_CORP_1F",
+  "eventType": "bg_events",
+  "index": 0,
+  "script": "RustboroCity_DevonCorp_1F_EventScript_ProductsDisplay",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

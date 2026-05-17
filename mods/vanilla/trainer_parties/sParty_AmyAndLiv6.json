@@ -1,0 +1,17 @@
+{
+  "id": "sParty_AmyAndLiv6",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_AmyAndLiv6[] = {\n    {\n    .iv = 40,\n    .lvl = 36,\n    .species = SPECIES_PLUSLE,\n    .moves = {MOVE_THUNDER, MOVE_CHARGE, MOVE_FAKE_TEARS, MOVE_HELPING_HAND}\n    },\n    {\n    .iv = 40,\n    .lvl = 36,\n    .species = SPECIES_MINUN,\n    .moves = {MOVE_THUNDER, MOVE_CHARGE, MOVE_CHARM, MOVE_HELPING_HAND}\n    }\n};"
+  },
+  "symbol": "sParty_AmyAndLiv6",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 2
+}

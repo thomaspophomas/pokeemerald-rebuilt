@@ -1,0 +1,28 @@
+{
+  "id": "Route117:bg_events:3",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route117/map.json",
+    "sha1": "c7c9af5ecd59a144046f8ae0ea2b93cb235f5110"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route117/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 3,
+      "y": 18,
+      "elevation": 3,
+      "item": "ITEM_REPEL",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_117_REPEL"
+    }
+  },
+  "map": "Route117",
+  "mapId": "MAP_ROUTE117",
+  "eventType": "bg_events",
+  "index": 3,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

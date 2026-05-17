@@ -1,0 +1,16 @@
+{
+  "id": "TerraCave_End:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TerraCave_End/map.json",
+    "sha1": "379b259aa32fd18b04dcd1df4e74fbb02353b876"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/TerraCave_End/map.json"
+  },
+  "map": "TerraCave_End",
+  "mapId": "MAP_TERRA_CAVE_END",
+  "weather": "WEATHER_FOG_HORIZONTAL"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "SouthernIsland_Exterior:LOCALID_SOUTHERN_ISLAND_SS_TIDAL",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SouthernIsland_Exterior/map.json",
+    "sha1": "3757ac072ce5bf012ddfab1a8156de156f82cd56"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SouthernIsland_Exterior/map.json",
+    "raw": {
+      "local_id": "LOCALID_SOUTHERN_ISLAND_SS_TIDAL",
+      "graphics_id": "OBJ_EVENT_GFX_SS_TIDAL",
+      "x": 13,
+      "y": 25,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "0"
+    }
+  },
+  "map": "SouthernIsland_Exterior",
+  "mapId": "MAP_SOUTHERN_ISLAND_EXTERIOR",
+  "localId": "LOCALID_SOUTHERN_ISLAND_SS_TIDAL",
+  "graphicsId": "OBJ_EVENT_GFX_SS_TIDAL",
+  "x": 13,
+  "y": 25,
+  "elevation": 1,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "0",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "BattleFrontier_BattleTowerElevator:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerElevator/map.json",
+    "sha1": "59949781dcf74a9478674943ecb015e4a4f40b20"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerElevator/map.json"
+  },
+  "map": "BattleFrontier_BattleTowerElevator",
+  "mapId": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_ELEVATOR",
+  "weather": "WEATHER_NONE"
+}

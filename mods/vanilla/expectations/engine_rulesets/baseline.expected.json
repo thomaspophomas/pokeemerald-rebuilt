@@ -1,15 +1,25 @@
 {
   "domain": "engine_rulesets",
   "schemaVersion": 1,
-  "fileCount": 1,
-  "jsonFileCount": 1,
-  "bytes": 263,
-  "sha1": "606bd6ca97be3b567719cf2b21e8abf0a32eb498",
+  "fileCount": 3,
+  "jsonFileCount": 3,
+  "bytes": 1129,
+  "sha1": "d2a9e09bef8743858605f4c9e2329ce3a8ffc4e5",
   "files": [
     {
+      "path": "mods/vanilla/engine_rulesets/_source_manifest.json",
+      "sha1": "ef8e1d30f98564d39851ed86c22344ffe289a4d4",
+      "bytes": 450
+    },
+    {
       "path": "mods/vanilla/engine_rulesets/gen3.json",
-      "sha1": "a12cba5877a5c10c6e37f1e27a432ec1aaadf110",
-      "bytes": 263
+      "sha1": "a429ac5d96bc8f2d1a43b84066af960c831d4ad6",
+      "bytes": 401
+    },
+    {
+      "path": "mods/vanilla/engine_rulesets/index.json",
+      "sha1": "aed9a517019c89416f467752d97fc4888e926ec1",
+      "bytes": 278
     }
   ],
   "counts": {

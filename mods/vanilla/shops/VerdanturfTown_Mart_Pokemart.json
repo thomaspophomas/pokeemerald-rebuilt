@@ -1,0 +1,28 @@
+{
+  "id": "VerdanturfTown_Mart_Pokemart",
+  "domain": "shops",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_Mart/scripts.inc",
+    "sha1": "815f118fd23cab33023fd266a93950041afd0a06"
+  },
+  "legacy": {
+    "kind": "pokemart_script_list",
+    "sourcePath": "data/maps/VerdanturfTown_Mart/scripts.inc"
+  },
+  "symbol": "VerdanturfTown_Mart_Pokemart",
+  "map": "VerdanturfTown_Mart",
+  "items": [
+    "ITEM_GREAT_BALL",
+    "ITEM_NEST_BALL",
+    "ITEM_SUPER_POTION",
+    "ITEM_ANTIDOTE",
+    "ITEM_PARALYZE_HEAL",
+    "ITEM_AWAKENING",
+    "ITEM_BURN_HEAL",
+    "ITEM_ICE_HEAL",
+    "ITEM_REPEL",
+    "ITEM_X_SPECIAL",
+    "ITEM_FLUFFY_TAIL"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "Route111:bg_events:17",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/map.json",
+    "sha1": "3161c43b45be9e3c9263e97cf27cb9c95a592a3a"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route111/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 24,
+      "y": 116,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route111_EventScript_TrainerHillSign"
+    }
+  },
+  "map": "Route111",
+  "mapId": "MAP_ROUTE111",
+  "eventType": "bg_events",
+  "index": 17,
+  "script": "Route111_EventScript_TrainerHillSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "LilycoveCity:bg_events:11",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/map.json",
+    "sha1": "ecd4d8c0f7b8c74fa70d53df6e4922fed0c006b6"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LilycoveCity/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 61,
+      "y": 7,
+      "elevation": 0,
+      "item": "ITEM_PP_UP",
+      "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_PP_UP"
+    }
+  },
+  "map": "LilycoveCity",
+  "mapId": "MAP_LILYCOVE_CITY",
+  "eventType": "bg_events",
+  "index": 11,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

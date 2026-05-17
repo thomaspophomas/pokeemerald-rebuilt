@@ -1,0 +1,45 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_1F:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/map.json",
+    "sha1": "61bc103a561828eef855450f818c2812737d695f"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_1F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
+      "x": 5,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LilycoveCity_LilycoveMuseum_1F_EventScript_Greeter",
+      "flag": "0"
+    }
+  },
+  "map": "LilycoveCity_LilycoveMuseum_1F",
+  "mapId": "MAP_LILYCOVE_CITY_LILYCOVE_MUSEUM_1F",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_BEAUTY",
+  "x": 5,
+  "y": 12,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "LilycoveCity_LilycoveMuseum_1F_EventScript_Greeter",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

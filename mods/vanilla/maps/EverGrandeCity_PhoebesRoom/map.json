@@ -45,5 +45,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PhoebesRoom/map.json",
+    "sha1": "6c652e4eea3e2b4ab623abb76ef7e97441fd33ea"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/EverGrandeCity_PhoebesRoom/map.json",
+    "mapName": "EverGrandeCity_PhoebesRoom",
+    "scriptsSourcePath": "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc"
+  },
+  "mapGroup": 16,
+  "mapNum": 1,
+  "mapGroupSymbol": "gMapGroup_IndoorEverGrande",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

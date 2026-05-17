@@ -1,0 +1,19 @@
+{
+  "id": "time:source_manifest",
+  "domain": "time",
+  "schemaVersion": 1,
+  "migrationMode": "source_file_manifest",
+  "sourceAuthority": "vanilla",
+  "sourceFiles": [
+    {
+      "path": "include/mod/time.h",
+      "sha1": "f51c8d68813febd8e97c63af32de5cf4f5601dc4",
+      "bytes": 712
+    },
+    {
+      "path": "src/mod/time.c",
+      "sha1": "5c04955045b0f3c404d5aa7867731158d2a967c5",
+      "bytes": 3329
+    }
+  ]
+}

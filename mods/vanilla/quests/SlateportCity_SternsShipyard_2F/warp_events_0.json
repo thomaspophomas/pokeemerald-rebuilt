@@ -1,0 +1,27 @@
+{
+  "id": "SlateportCity_SternsShipyard_2F:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_SternsShipyard_2F/map.json",
+    "sha1": "59914c5699b90c3d6a33767776be918a8a6e7000"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SlateportCity_SternsShipyard_2F/map.json",
+    "raw": {
+      "x": 3,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_SLATEPORT_CITY_STERNS_SHIPYARD_1F",
+      "dest_warp_id": "2"
+    }
+  },
+  "map": "SlateportCity_SternsShipyard_2F",
+  "mapId": "MAP_SLATEPORT_CITY_STERNS_SHIPYARD_2F",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -96,5 +96,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "BattleFrontier_BattlePyramidLobby_EventScript_RulesBoard"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/map.json",
+    "sha1": "2b09c54b19da6822ec78e135b02b34f4908ef13a"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/map.json",
+    "mapName": "BattleFrontier_BattlePyramidLobby",
+    "scriptsSourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 25,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

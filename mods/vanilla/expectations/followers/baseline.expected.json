@@ -1,18 +1,1518 @@
 {
   "domain": "followers",
   "schemaVersion": 1,
-  "fileCount": 1,
-  "jsonFileCount": 1,
-  "bytes": 47559,
-  "sha1": "a842b12b0c5fd9706b8675f4d96e178ca348d8cd",
+  "fileCount": 301,
+  "jsonFileCount": 301,
+  "bytes": 264550,
+  "sha1": "42decc38552743c14475abbced2c60a701e3c994",
   "files": [
     {
-      "path": "mods/vanilla/followers/manifest.json",
-      "sha1": "b23a7ca813e78786c15d5e6dc49090919063a8fe",
-      "bytes": 47559
+      "path": "mods/vanilla/followers/_source_manifest.json",
+      "sha1": "61d8f07e3596a1a7d2b18e3592692ce34391cd0b",
+      "bytes": 47596
+    },
+    {
+      "path": "mods/vanilla/followers/index.json",
+      "sha1": "7330fd504c7db92b0677e3547c1607d986304c36",
+      "bytes": 82126
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_birth_island_stone.pal.json",
+      "sha1": "5ddb9bd127fbb3cf82631e31645479dbc1d9c7f6",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_brendan.pal.json",
+      "sha1": "8239bd3d03ff90ce2d740e312f7bfd720a3cb967",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_brendan_reflection.pal.json",
+      "sha1": "feac11e83134964cd6587d476b6f18e3ceb95829",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_bridge_reflection.pal.json",
+      "sha1": "a8b7aa8497d0e4e039ac595ada1f01cf0ce20ebb",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_cable_car.pal.json",
+      "sha1": "fc9d7f12cc18dd1335d288cb9a86aa4a1af6fce2",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_deoxys.pal.json",
+      "sha1": "b566e2fc63878cf119d33bd2ee577896114eb651",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_enemy_zigzagoon.pal.json",
+      "sha1": "67f3afb2bcdfb374c07d1d00fe84181c44de9572",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_groudon.pal.json",
+      "sha1": "3689e85d127624c0bc2e0b31b7589af135c0e9df",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_groudon_reflection.pal.json",
+      "sha1": "a65e7b90876a1e17e2268e39182f51322281b531",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_ho_oh.pal.json",
+      "sha1": "8de2f348db3a1b9d646a12b0001852508781cd9b",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_kyogre.pal.json",
+      "sha1": "dcb4eee0fe08ebf9e98efdf2a9824fccb14f0084",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_kyogre_reflection.pal.json",
+      "sha1": "0e77b883d302981f94184f7865df85584aa7c3ab",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_lugia.pal.json",
+      "sha1": "bb2495d5b4ae82792e09fa879ff9f068a2cd765a",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_may.pal.json",
+      "sha1": "a4d57382c4a893d2c8749046dd7f9d4c836ad5a7",
+      "bytes": 405
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_may_reflection.pal.json",
+      "sha1": "6ad465c6dd2728b2f8f5dbabb4a7d562014b78df",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_moving_box.pal.json",
+      "sha1": "00221a9c71d2f6d4877aea232997bf29ca404979",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_npc_1.pal.json",
+      "sha1": "ea07b7fb18ed16029ea9976b86d41e3414d7d033",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_npc_1_reflection.pal.json",
+      "sha1": "f0032880e0f87b96e905baaf5de91efea0fb26f2",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_npc_2.pal.json",
+      "sha1": "c22a2ed2fe1418500c3f46bd8855c6d9987b70b9",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_npc_2_reflection.pal.json",
+      "sha1": "0875b8baee8d43d3c07234a9295aefe66146dbc3",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_npc_3.pal.json",
+      "sha1": "e2b2d9240dc8828b5d59a5df0099be48ca10bd6d",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_npc_3_reflection.pal.json",
+      "sha1": "aedf13b7c171714eb1ca70d1fa1fedf4ef7557da",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_npc_4.pal.json",
+      "sha1": "0a846d517d9aa2f7b252edbaab551c91491fddc0",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_npc_4_reflection.pal.json",
+      "sha1": "0435b68886a772b002d4eb11513189e86db6993a",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_player_underwater.pal.json",
+      "sha1": "a4f345aed42a9188db06e4a9a5f5c69babdfc068",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_poochyena.pal.json",
+      "sha1": "efefeb553277140eba71e44146e0a92e16117e4f",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_quinty_plump.pal.json",
+      "sha1": "4691934d7b94e40964fcb72859a11c5258b520a4",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_quinty_plump_reflection.pal.json",
+      "sha1": "7e56eea6b748d322a4cd6e87893ee4d2d663acdc",
+      "bytes": 485
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_red_leaf.pal.json",
+      "sha1": "1f6f1174f11833dc77f15ab3342320bf0e5b9217",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_ruby_sapphire_brendan.pal.json",
+      "sha1": "e29a82123de00d7616d2e8a1723ced6d1b3418cd",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_ruby_sapphire_may.pal.json",
+      "sha1": "94717496be56f1bf52c443f932feebf71491039f",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_ss_tidal.pal.json",
+      "sha1": "fbd3bb129e9bb7c93f4d01a4e1d519c7ae7dc030",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_submarine_shadow.pal.json",
+      "sha1": "da814fe8e57b6336435616a652f5f7439f6f3263",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_truck.pal.json",
+      "sha1": "ed640fe9c8e478c4c968b710d43908461bbe4ed3",
+      "bytes": 413
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_unused_palette.pal.json",
+      "sha1": "6510021b06bf20847142ad322ae1e0ff5450ae73",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_palettes_vigoroth.pal.json",
+      "sha1": "e9345fb634271aea3a3a2d97643232c01042826a",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_aguav.png.json",
+      "sha1": "e67d97f4620a32276fcf37de33b8564921c4572a",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_aspear.png.json",
+      "sha1": "77c6964ee7b57d21f1d7be1f4282110e176a283e",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_cheri.png.json",
+      "sha1": "da88f5914ccbb3cbbf7f862c394b25ade6e5e445",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_chesto.png.json",
+      "sha1": "307846f46c39464037f68560d7cf7eda1da4bdd8",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_cornn.png.json",
+      "sha1": "2bbdfa0bfa02623b63b42e8494717fd9a2c7cd33",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_dirt_pile.png.json",
+      "sha1": "480a17dd837d6c767107d2a13a33adc5d3bea5ff",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_durin.png.json",
+      "sha1": "15b83dce734d8c1502bed8937948eaa12aa40c3a",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_figy.png.json",
+      "sha1": "54395a6f7283551aaecf74152f2e27e16a33315d",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_grepa.png.json",
+      "sha1": "2a228486fc4428b1c2590eff165e710e75a145cb",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_hondew.png.json",
+      "sha1": "313386f82cf696998bed4dcded8bf1421a276eee",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_iapapa.png.json",
+      "sha1": "7341e3fa4f3371b2de8f80e6738507daa027eff1",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_kelpsy.png.json",
+      "sha1": "3c357b22083b667f66e513d758d504c7f6f07149",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_lansat.png.json",
+      "sha1": "e4f86f1794a8168920818c132c606331b4ebb440",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_leppa.png.json",
+      "sha1": "ef8af893285e07740ebd347697cb6b180ab3270e",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_liechi.png.json",
+      "sha1": "1b5b58f3d31412addc1867a58ab24a5e74daa197",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_lum.png.json",
+      "sha1": "ec7ce2184ebc36d86d3e04e27e4595d65665b411",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_mago.png.json",
+      "sha1": "e9fe195831e7af637114e2aa1056f9c036b2e69d",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_nomel.png.json",
+      "sha1": "e09c99196ab6cbf3278719ddca37d0881a4ddc5c",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_oran.png.json",
+      "sha1": "07626904d5b5d6996222f851c66bf015d017d11c",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_pamtre.png.json",
+      "sha1": "3ed3b9acfcc3208c9fdc73113643771db3e2d849",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_pecha.png.json",
+      "sha1": "1d22b95db1bc0bf3cfee3f7201d43de8068b1e05",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_persim.png.json",
+      "sha1": "03b2b881458481abdc1546225f62c8591dd28116",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_pomeg.png.json",
+      "sha1": "475607d96c707dd5b3109be3a1446882e971366c",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_rabuta.png.json",
+      "sha1": "a74ee8f7649c920ab38f663dfd8d25c306b75e92",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_rawst.png.json",
+      "sha1": "020ed551671692ecfa49dfa851da09db7c8a63fd",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_razz.png.json",
+      "sha1": "4c8c1ffd782766d7643d198bce12e9d145fbfe13",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_sitrus.png.json",
+      "sha1": "c8dc921add5bfa5daa909d9d487b15122559f917",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_spelon.png.json",
+      "sha1": "69eaac68244d4abbe26ae119c8442a54352fcd98",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_sprout.png.json",
+      "sha1": "7a11d05edec2cfd256869554f838a2707bd8cb63",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_tamato.png.json",
+      "sha1": "702d7bc02b93c1c2fe333614685517adbec6311c",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_wepear.png.json",
+      "sha1": "18d07c753abc70b65e0e8309bd9d99343d0ff796",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_berry_trees_wiki.png.json",
+      "sha1": "6f9aa2c78bb5abeae7ec7c65ffed571c53c8ad13",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_cushions_ball_cushion.png.json",
+      "sha1": "24f07050c1d21d8fab5d8438eef89592dc6a590c",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_cushions_diamond_cushion.png.json",
+      "sha1": "c3a1da1290302620f0717c4e2b0310f551ff7fc0",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_cushions_fire_cushion.png.json",
+      "sha1": "8edbf072d235eb28823ca9bcb063d8ffda43af1a",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_cushions_grass_cushion.png.json",
+      "sha1": "8397adb3da75b744f8120d4370ea867d4678b471",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_cushions_kiss_cushion.png.json",
+      "sha1": "0e70f020ae86a2d20066ce4c4970c7949d3ba9ff",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_cushions_pika_cushion.png.json",
+      "sha1": "e4726d680a299a57c12f123132321a41fbb07328",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_cushions_round_cushion.png.json",
+      "sha1": "dc43a714d6b16cfff751f6d3295f426de87b473b",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_cushions_spin_cushion.png.json",
+      "sha1": "2cb6d18de5edf454554577834bba7247e7b6be3d",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_cushions_water_cushion.png.json",
+      "sha1": "541fa9c6bfbe4795bc6b45859a067dee54d33e63",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_cushions_zigzag_cushion.png.json",
+      "sha1": "ace023dd6b433ce140fdae3447f413a4a195cac8",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_azurill_doll.png.json",
+      "sha1": "11fe4d832bcf080ab30691e61b9fbbaeca287107",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_baltoy_doll.png.json",
+      "sha1": "ae8cecc2de9661a3fc11c15a4fd041bc538dc96b",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_big_blastoise_doll.png.json",
+      "sha1": "18292a9d3d16333e521a9c6bffbfc6bdbfa2b804",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_big_charizard_doll.png.json",
+      "sha1": "8037a218ed56a4c257b06ad84146cd05573a65af",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_big_lapras_doll.png.json",
+      "sha1": "2e0fb7ea84829f9a9f49d368a29f456684d5f3bd",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_big_regice_doll.png.json",
+      "sha1": "2b645ad981c7019a1866eada9dfb1d0543b50ba7",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_big_regirock_doll.png.json",
+      "sha1": "3eafe621841c94bc6b12d703c4cf039283d5a658",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_big_registeel_doll.png.json",
+      "sha1": "fbacc8cfdea963d70dbae1c98fdfb3d58c4c7da8",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_big_rhydon_doll.png.json",
+      "sha1": "919ef5cea280b8543c2b90565288c7a53bc1b8cb",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_big_snorlax_doll.png.json",
+      "sha1": "27d07711bdb8719185c4cb7a5b96f0f95413eacc",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_big_venusaur_doll.png.json",
+      "sha1": "9852deac28432cd6d042a4e6b3d926953e4bc847",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_big_wailmer_doll.png.json",
+      "sha1": "78657b6fe4ddc14aeb99c9e22d14fa99d0b2ba73",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_chikorita_doll.png.json",
+      "sha1": "d4c200f5ab8b9d9349923204bfcba75a4e589723",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_clefairy_doll.png.json",
+      "sha1": "3f5b7561a0b7fc9bdc82b8e09cd4b1db41025b27",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_cyndaquil_doll.png.json",
+      "sha1": "766cef2a3f464caacd0bf479b94d047d3d0ed7b2",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_ditto_doll.png.json",
+      "sha1": "421d781680f8c24daa36dea41aa142d7d56d40d7",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_duskull_doll.png.json",
+      "sha1": "29950d77f43743bab40456df8bda30e7004429b7",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_gulpin_doll.png.json",
+      "sha1": "c7ef66430d45d2b0bcaaa0373a77f1689999e71b",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_jigglypuff_doll.png.json",
+      "sha1": "e1716a101112626a10346ceee31bf907c1a14efa",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_kecleon_doll.png.json",
+      "sha1": "bec2aad109efaeb70390f8bf3b8c6e67de7777e5",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_lotad_doll.png.json",
+      "sha1": "ebaf37e60bb4a64deb358700366102e982296d5a",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_marill_doll.png.json",
+      "sha1": "e581612db65ba09ab61114a5aa59719e96cefcac",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_meowth_doll.png.json",
+      "sha1": "da9c63341fa332ba38150b8ad7526cfdfd5492fd",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_mudkip_doll.png.json",
+      "sha1": "19f455006f2359bd7698a58cfa77831610fbcad4",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_pichu_doll.png.json",
+      "sha1": "a6e06940f36b4db3009cde5f56aae710bbe47d7c",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_pikachu_doll.png.json",
+      "sha1": "ca9db2bc2a37ce8de5a5201225dcca8e01e9c9b7",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_seedot_doll.png.json",
+      "sha1": "50120cc1166b4048b0649684983138f3a63edea2",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_skitty_doll.png.json",
+      "sha1": "ce3fd6557ed6273fe89f91e4548acf192b3ee1e3",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_smoochum_doll.png.json",
+      "sha1": "bffe3377c401a93211fd0f2913e6be02c60f72dc",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_swablu_doll.png.json",
+      "sha1": "3c86a7c484a8cd8bc8f67881d385d53c066593b9",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_togepi_doll.png.json",
+      "sha1": "3e8e9558b9a19bb1b5e3cbc00d17b1fdfa2733c8",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_torchic_doll.png.json",
+      "sha1": "a38e53f88e179717dba9a6a9128c41f200099b55",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_totodile_doll.png.json",
+      "sha1": "e64f3f01f61c538bc817499a296de8bb77c72f99",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_treecko_doll.png.json",
+      "sha1": "728bef7a9ada1be6eb920524fc61742f75e13df7",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_unused_magnemite_doll.png.json",
+      "sha1": "451f9028034af4287d60a48d03540c2f7f69bc74",
+      "bytes": 485
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_unused_natu_doll.png.json",
+      "sha1": "c56d1db38d6c4a5dc1abe7b97d0ec9b95a4c23ae",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_unused_pikachu_doll.png.json",
+      "sha1": "0910a5d4e2bb1abdba1dee4b8b80e7e8d980c959",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_unused_porygon2_doll.png.json",
+      "sha1": "878087f54e8d912c62b7f2aff5dade3c8056b0e9",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_unused_squirtle_doll.png.json",
+      "sha1": "4f8288f67cb45b41e1cb67c8a7ba71abc4288309",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_unused_wooper_doll.png.json",
+      "sha1": "e1e7493ce2d24fe583ef42e1ff338a73a3f28f46",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_dolls_wynaut_doll.png.json",
+      "sha1": "49b39e9a2a924cbbfa615641b6638b91fe12e7e4",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_misc_birchs_bag.png.json",
+      "sha1": "23c6dd818a99dfdae75deca8cf6836ca8a5f3d1e",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_misc_birth_island_stone.png.json",
+      "sha1": "e1205650af622d8dc33bf4e3baab76355a92e7ee",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_misc_breakable_rock.png.json",
+      "sha1": "c83ad58fb911c068f22fe02a7027840b76ef57d8",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_misc_cable_car.png.json",
+      "sha1": "e882be0231072c8a6b95eebdd0a65df0a31972de",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_misc_cuttable_tree.png.json",
+      "sha1": "f2ce2d90f5aafd97238729a289b670ebc9d94e87",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_misc_fossil.png.json",
+      "sha1": "a81dca47830dbcecbffa714b0d17953a3d03588e",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_misc_item_ball.png.json",
+      "sha1": "d0478c79f208d696e17e63a673c9ed08d64f8052",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_misc_moving_box.png.json",
+      "sha1": "5ca2895a39f574f2ba3029f73c96c66bfc688ac6",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_misc_mr_brineys_boat.png.json",
+      "sha1": "3f3cf875a82576087a6c8e0652fe4425a509fd66",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_misc_pushable_boulder.png.json",
+      "sha1": "0cad8a4a2a54ef59636c6df88a77515e1ea8f622",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_misc_ss_tidal.png.json",
+      "sha1": "dbae7f3b1f7e0e20a473fc38d4aba3fed08aefb9",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_misc_statue.png.json",
+      "sha1": "0c2d437242ad71b5c8a6784a3a0b30c42feac106",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_misc_submarine_shadow.png.json",
+      "sha1": "9c647316b30251747358ead5f0317a8de31fa2e7",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_misc_truck.png.json",
+      "sha1": "8183064ba6c7496a78a5c9e9c9fc9d6993fa97b8",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_artist.png.json",
+      "sha1": "3b6d524dcadd5b772e55a5c7316456fe5fac47f2",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_beauty.png.json",
+      "sha1": "6aef792a5e67f4cb1833033965f94555086ec2ee",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_black_belt.png.json",
+      "sha1": "cafc4fb2d7bbad4fa6998580ff64ae071a2b75f4",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_boy_1.png.json",
+      "sha1": "54a485c16008c3a825bc72007d4dc972936b05ce",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_boy_2.png.json",
+      "sha1": "394fa842052071873d53b0530a746cc859bab671",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_boy_3.png.json",
+      "sha1": "82d77b9f3f588226c66af656a2fce93ab2a1d5d1",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_brendan_acro_bike.png.json",
+      "sha1": "d5b6d4d23987a00d49636291f4e54b0cdbc24d4a",
+      "bytes": 474
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_brendan_decorating.png.json",
+      "sha1": "0224009571c6b7d9faddbb98707308f6c45707c1",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_brendan_field_move.png.json",
+      "sha1": "36b1d87fe8295a3cf43dff710c0ba7a3be7688e8",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_brendan_fishing.png.json",
+      "sha1": "0b5562ef6815c064bf4f6916bfa649e60d889af0",
+      "bytes": 466
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_brendan_mach_bike.png.json",
+      "sha1": "146cb003138ddbf41c3daf8621efe65c4ad72394",
+      "bytes": 474
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_brendan_running.png.json",
+      "sha1": "a096521fc46d73d26106da5d0af4a64754582297",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_brendan_surfing.png.json",
+      "sha1": "7685dd528b47f179a5751f20f6e06cfa1b0fbc41",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_brendan_underwater.png.json",
+      "sha1": "475f7285f527a4bafa5b9256eef69c842e6d6727",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_brendan_walking.png.json",
+      "sha1": "8ae469ec3afe4b06c479ea27f6688190220d59a6",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_brendan_watering.png.json",
+      "sha1": "3d062ac8593d0f50152b9724893fb7165917a8ad",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_bug_catcher.png.json",
+      "sha1": "d2f59dc4512114e076fc755bb04f9800431a0dfe",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_cameraman.png.json",
+      "sha1": "e1d2ad358502e5dee426271302ca1c9198a7a8f6",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_camper.png.json",
+      "sha1": "69e08ddcb779c95a85698fb8384e5e17117fb99a",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_contest_judge.png.json",
+      "sha1": "4b989581e4ed71592c9b2195ea29a2cf76beaaf1",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_cook.png.json",
+      "sha1": "6d64976d77b5b8294427595ee9f00089dc6e6a64",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_cycling_triathlete_f.png.json",
+      "sha1": "c191d7db5447a224f2a313f925e1f06eaf1b5444",
+      "bytes": 486
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_cycling_triathlete_m.png.json",
+      "sha1": "a755026270d7dd38135f8b2e1ee2f2f110a3f4fc",
+      "bytes": 486
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_devon_employee.png.json",
+      "sha1": "047b5dbcaf8c85f021737946da3d5810115be8a3",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_elite_four_drake.png.json",
+      "sha1": "29f2a51af7e4c8eac1dba3d2106ccab540f35510",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_elite_four_glacia.png.json",
+      "sha1": "60d48f4a53230255b2fd1f3659c01c6baab8ab06",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_elite_four_phoebe.png.json",
+      "sha1": "484c1393ff7c467f7dfea16d6fd24f28d0cd44b0",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_elite_four_sidney.png.json",
+      "sha1": "72dfe584a0f7e379001e1fdf4d01bc69e423993c",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_expert_f.png.json",
+      "sha1": "93e4fa98acd4ec77b927c0ce6db05ef4dd6d0702",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_expert_m.png.json",
+      "sha1": "fc08d6c37d1652daab9a7303e9c1341945d37338",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_fat_man.png.json",
+      "sha1": "fcfe6879bd9d72456dd65fb200ebe837873ccf10",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_fisherman.png.json",
+      "sha1": "6749d757312cc67a48ec4f7259e83244f3bc002c",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_frontier_brains_anabel.png.json",
+      "sha1": "1f54c56b375796284d433f50e64b6c549e1062fd",
+      "bytes": 493
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_frontier_brains_brandon.png.json",
+      "sha1": "9ae44bacc9d6bb0907c803735ae3ba7e41411148",
+      "bytes": 497
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_frontier_brains_greta.png.json",
+      "sha1": "2755853e777a05b77089d11c1bb9e1086180454f",
+      "bytes": 489
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_frontier_brains_lucy.png.json",
+      "sha1": "518a3d9ce68a99d9f125608ca3500a118b83bc63",
+      "bytes": 485
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_frontier_brains_noland.png.json",
+      "sha1": "5628b1c1edb9ea2061fe1e8617a012ec9479a406",
+      "bytes": 493
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_frontier_brains_spenser.png.json",
+      "sha1": "d1135e547ae8ffce80c55047b4a911d2be9dec66",
+      "bytes": 497
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_frontier_brains_tucker.png.json",
+      "sha1": "bd253ad7a4eca58fb08f94bc7794d0968e8f659b",
+      "bytes": 493
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_gameboy_kid.png.json",
+      "sha1": "1dd39b928cb01b9ccfbb4622278798c154cddd3d",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_gentleman.png.json",
+      "sha1": "023e2ac891bceec4612146b035027660fa15b390",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_girl_1.png.json",
+      "sha1": "ef878cdf331fd643c2e59b9650e4c2cf32e5625a",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_girl_2.png.json",
+      "sha1": "bc4b52dc94ff507106a081afba808c3f64303eca",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_girl_3.png.json",
+      "sha1": "c8c517df011b95f69e7217dc27cd6913d853b389",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_gym_leaders_brawly.png.json",
+      "sha1": "6ddc14a1c54080f29376b0ea1da1e60e66b7fc0b",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_gym_leaders_flannery.png.json",
+      "sha1": "9770d3f83f3c235ed15f68b80e02cbe7367fa03f",
+      "bytes": 485
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_gym_leaders_juan.png.json",
+      "sha1": "4e470816789b081e7d529ec1da9f9b2f8dabf275",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_gym_leaders_liza.png.json",
+      "sha1": "4ba865f8f1603b07db3f665a919e55951e178207",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_gym_leaders_norman.png.json",
+      "sha1": "7a34b91d3244ea808b890c8a59c1cc6dc3c9de67",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_gym_leaders_roxanne.png.json",
+      "sha1": "ee989110e528a1633c6ae8c776b511f8e3e34f35",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_gym_leaders_tate.png.json",
+      "sha1": "5db2d479fbdb28b5ba394ac75593ce02928b53cd",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_gym_leaders_wattson.png.json",
+      "sha1": "6277ed3c00d444ed9ebb86696d38b15636248215",
+      "bytes": 481
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_gym_leaders_winona.png.json",
+      "sha1": "4a3729f8f0e859be024f71cbdcf5cda7d46630c4",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_hex_maniac.png.json",
+      "sha1": "4a8206fcce6a6f4e2bd838812d0c1c57c3bad4d4",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_hiker.png.json",
+      "sha1": "dc7d612b007993d43090f3032ff0e9216ab22f2c",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_hot_springs_old_woman.png.json",
+      "sha1": "4987089346533b79c20ad0e3feb62fe4eb8d6268",
+      "bytes": 489
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_lass.png.json",
+      "sha1": "8fbb25c0a35dc7e8938359bdda587fdf73c2ed85",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_leaf.png.json",
+      "sha1": "fe8940f67522f56488c47fb6f003bb03713a6556",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_link_receptionist.png.json",
+      "sha1": "2a16a294768e77f059802c46f270ad19a1713a2b",
+      "bytes": 473
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_little_boy.png.json",
+      "sha1": "2b41ecf4e42f636ee22d6cf9722ab57897a925cd",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_little_girl.png.json",
+      "sha1": "563d0a10ed85017276b844477cdd2183793ffc9a",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_man_1.png.json",
+      "sha1": "e8afe67133ace2b625de36033b34058e4bf1891c",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_man_2.png.json",
+      "sha1": "42c250873d6bd2ed44b95cfc13de8b1eed5c4c3f",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_man_3.png.json",
+      "sha1": "7a9fc76a5ad3db2eea6ac03facb534313839a714",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_man_4.png.json",
+      "sha1": "781b3caf124331f4a3e109e361ab023d57264998",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_man_5.png.json",
+      "sha1": "7d669528daf1e8011887330eb0a1737691c8e342",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_maniac.png.json",
+      "sha1": "a6236d0a45db875b9589c98334a32aae5ffa02e6",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_mart_employee.png.json",
+      "sha1": "3fe7db3288d76fde1d792dacc5c77b6d7e4cd812",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_mauville_old_man_1.png.json",
+      "sha1": "2d3acabf29cc54cccf5fe1a9378e501c4f3ad140",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_mauville_old_man_2.png.json",
+      "sha1": "bd2119dcff181cc8ca25b2cdc6e7d6af11ec0572",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_may_acro_bike.png.json",
+      "sha1": "24d261b5ff488af7f06fb9494187045f69f7dca4",
+      "bytes": 458
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_may_decorating.png.json",
+      "sha1": "9abbd32040eff50c56ad0adcc020ed14bac0aea3",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_may_field_move.png.json",
+      "sha1": "ab01fea870904f10d807afeffbd23015734c9b4a",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_may_fishing.png.json",
+      "sha1": "f9d066e9f32b8d2316d979c28712c08f3aa02a3a",
+      "bytes": 450
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_may_mach_bike.png.json",
+      "sha1": "60350d7bca1d7b8863082efed962602e147f0381",
+      "bytes": 458
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_may_running.png.json",
+      "sha1": "361aba843480bf463f7c22e655b6cc0b3913c504",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_may_surfing.png.json",
+      "sha1": "9cd87eb5130240983d62c056c803b25f7f768110",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_may_underwater.png.json",
+      "sha1": "54fbcfa2098a00508dd84928c2de241fd967d3a0",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_may_walking.png.json",
+      "sha1": "163d6a08069fe66f5fcdeebc82326f418b848bff",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_may_watering.png.json",
+      "sha1": "d48845cc72b10fe59e0e371206686a65f3bf7f7a",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_mom.png.json",
+      "sha1": "2083287644b00f79e6b8ce7050fa69d238c11cfa",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_mystery_event_deliveryman.png.json",
+      "sha1": "7439a92be93417a55f7e1699da41f3b57594a912",
+      "bytes": 505
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_ninja_boy.png.json",
+      "sha1": "f1bde1c9708ed6cea31197769efc934e98434e66",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_nurse.png.json",
+      "sha1": "0133d9156fd50706c32f2b2b8530bb8f53cef456",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_old_man.png.json",
+      "sha1": "155a93518724e742079798ace7ca05c795a3cab2",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_old_woman.png.json",
+      "sha1": "75a3f81fd2fce2d98f4d4b75d25796c2fb968ed2",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_picnicker.png.json",
+      "sha1": "96b903e708cff02e053a6bd84525f74d957ac973",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_pokefan_f.png.json",
+      "sha1": "7d8dc3d7498b30f2ffe6e1aa63b5f196c7897e55",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_pokefan_m.png.json",
+      "sha1": "b2be78119b279bc279fd684ff0e4137eb68884a8",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_prof_birch.png.json",
+      "sha1": "88313b467694eb303d586497a1835ec68aee0e4a",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_psychic_m.png.json",
+      "sha1": "83bb685651c19d746723891ee65f5df669eef57a",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_quinty_plump.png.json",
+      "sha1": "10eabed200b1901f2743c6c5a6322d4c23df4758",
+      "bytes": 454
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_red.png.json",
+      "sha1": "7f7d13675e29f98f9fe92249a8ccc18048512a30",
+      "bytes": 417
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_reporter_f.png.json",
+      "sha1": "bad15cffa9164b2cde48a32a6d55526ffb4aa643",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_reporter_m.png.json",
+      "sha1": "b9158878609c7f0d43f1ea96340a37a7e67ea803",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_rich_boy.png.json",
+      "sha1": "b0f4d173e03a9e1511946faa30765733868c9a5d",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_rooftop_sale_woman.png.json",
+      "sha1": "f2f14491376cf8b5b059527ac03901a843202312",
+      "bytes": 477
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_rs_little_boy.png.json",
+      "sha1": "f2eb7321fefdd46fbd81bec13c3c7b093ffeee9e",
+      "bytes": 457
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_ruby_sapphire_brendan_running.png.json",
+      "sha1": "425e47a7dcb35526292c5bcfa0e6c9b0a9c7ea19",
+      "bytes": 521
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_ruby_sapphire_brendan_walking.png.json",
+      "sha1": "5cb7e2f53383b36f301f02e58c2bb0ff566e41a6",
+      "bytes": 521
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_ruby_sapphire_may_running.png.json",
+      "sha1": "0ca092b94041d64a60990520a88c4c8016c79e03",
+      "bytes": 505
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_ruby_sapphire_may_walking.png.json",
+      "sha1": "92c347766b0346c6df0ed299cfb88d31da433cb7",
+      "bytes": 505
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_running_triathlete_f.png.json",
+      "sha1": "384968e756d0d2927697fc1c9d5e5b6283f76a7d",
+      "bytes": 485
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_running_triathlete_m.png.json",
+      "sha1": "4bc315c3cf00d21c3f3d1a9b5157082485fa6cef",
+      "bytes": 485
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_sailor.png.json",
+      "sha1": "a264fd103eb52931673d04bf75d1fffc417faeab",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_school_kid_m.png.json",
+      "sha1": "9bd9fd00b97114e5d48537e84e7b5ff7d9100faf",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_scientist_1.png.json",
+      "sha1": "106175eaf9f8e8a9c7db3095afdf9fcd68d40ec5",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_scientist_2.png.json",
+      "sha1": "6706dd549d57f8e5485644696a3be4c364d5c9d3",
+      "bytes": 449
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_scott.png.json",
+      "sha1": "93abfd69551a7dba110ce486b48642482e9a8174",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_steven.png.json",
+      "sha1": "83d909a7a270d8771466f5cf7bea8d32961e262d",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_swimmer_f.png.json",
+      "sha1": "dd67eaea47977e98d2026c9a1ef000cc80c44709",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_swimmer_m.png.json",
+      "sha1": "96c55ece53471116d78495ec43202881120f3282",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_teala.png.json",
+      "sha1": "961ea9b9c0e260d5d880f83e8825c2c923bc0a0a",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_team_aqua_aqua_member_f.png.json",
+      "sha1": "16b05cec7e057f134b853b7c6b5138421a7c16bc",
+      "bytes": 497
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_team_aqua_aqua_member_m.png.json",
+      "sha1": "9d586b64dd648fa990fa2682b54cfc61fe1e8464",
+      "bytes": 497
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_team_aqua_archie.png.json",
+      "sha1": "a629340b92fa480e8580f53d0e4d7e7f4bccc4bc",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_team_magma_magma_member_f.png.json",
+      "sha1": "a0c020c944158e806b40d41b7e9155b3415931d5",
+      "bytes": 505
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_team_magma_magma_member_m.png.json",
+      "sha1": "233da513319170378e3af4e280a0ba8e5de0df86",
+      "bytes": 505
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_team_magma_maxie.png.json",
+      "sha1": "7aaebd3e454986c19d1e9524bc50de7055557d5d",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_tuber_f.png.json",
+      "sha1": "2722dee800cdd6d61d2f32c6e2ec199ac175e13e",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_tuber_m.png.json",
+      "sha1": "b914503543b316137fb5cd036b9676c92a610c72",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_tuber_m_swimming.png.json",
+      "sha1": "5a37178f41e5642f4add07acd00104a769a0b96b",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_twin.png.json",
+      "sha1": "b435fc3aa8798118cc0ff387c78c0e3d78345b7f",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_union_room_attendant.png.json",
+      "sha1": "2d4b0ca678522d0ccc0692706699fa9c9e6fe468",
+      "bytes": 485
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_unused_woman.png.json",
+      "sha1": "506787b15c223e733ab3406ae32c2506297e89c0",
+      "bytes": 453
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_wallace.png.json",
+      "sha1": "e83d4ff7ae658d7a30e18b1202b2cda48f4325a7",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_wally.png.json",
+      "sha1": "a069cd08935c3c18be41953e54232f1c5bd34870",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_woman_1.png.json",
+      "sha1": "9a753eb91e903343ebd680b0ce7b9023967ed8a4",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_woman_2.png.json",
+      "sha1": "9f8b6387eaaba1cb72a9a065a4fef712828280c4",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_woman_3.png.json",
+      "sha1": "b7be108fec11879c739474ce526bb8e0c104c077",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_woman_4.png.json",
+      "sha1": "afd35ad0d124aa334f4efbc201f8536f1f0ae3dd",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_woman_5.png.json",
+      "sha1": "5cdba43b7ed97391fa00c6f71cee46f4f4ca9a72",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_people_youngster.png.json",
+      "sha1": "604e328d53025588bf9004f04767dddc213c16be",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_azumarill.png.json",
+      "sha1": "8c7560ff3df6ce85e663aa76afeab549ed97a852",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_azurill.png.json",
+      "sha1": "1119ac0040177b6bbda77b138fe98e6aa1c85a26",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_deoxys.png.json",
+      "sha1": "a06517974485b7812862db75a3d450e343983a69",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_dusclops.png.json",
+      "sha1": "99e88e460aebd4ea0f93d76912a5f676b59a4d6e",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_enemy_zigzagoon.png.json",
+      "sha1": "92687530ffbc8a6d6a962389cefd81ec7e1ebfd8",
+      "bytes": 469
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_groudon.png.json",
+      "sha1": "7dcea753227d023a40c8e59408fc90b350cb4fbc",
+      "bytes": 438
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_ho_oh.png.json",
+      "sha1": "2183dad34480ba7af6a1ff0b9590ae9ec2f70a56",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_kecleon.png.json",
+      "sha1": "a3b4456fffef924d310c54bb91efaeaf96a54870",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_kirlia.png.json",
+      "sha1": "c20d87cbec2fdea26272a8d0af9cdf3351c6d02e",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_kyogre.png.json",
+      "sha1": "d816f8906059bc82802ff6b3968ff6abb868991b",
+      "bytes": 434
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_latias_latios.png.json",
+      "sha1": "9893343e293983bf4d04d7cdf9265c1805d6d4d1",
+      "bytes": 461
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_lugia.png.json",
+      "sha1": "5e630bb30bc67f8728bd6acf8b7df10ea6b8bb73",
+      "bytes": 429
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_mew.png.json",
+      "sha1": "0caf0a517a4ea42090b089d01c569856fea5b418",
+      "bytes": 421
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_pikachu.png.json",
+      "sha1": "ef4837f00feabeb44ea27eb8b596c90069a53d95",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_poochyena.png.json",
+      "sha1": "0a1f1b723e498ddf1d486cebf83369358df37b99",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_rayquaza.png.json",
+      "sha1": "b44f612ffdb153ccda35b12949c8f7710055b99a",
+      "bytes": 442
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_rayquaza_still.png.json",
+      "sha1": "40e5d9aa5aa37824f2bde334623e59341341398d",
+      "bytes": 465
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_regi.png.json",
+      "sha1": "eedb5e5973ccf8a9ed7bb7cefbaa987e082d8e02",
+      "bytes": 425
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_skitty.png.json",
+      "sha1": "2ec9441135566d3cca1b53b4cc9783e6b0f2e244",
+      "bytes": 433
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_sudowoodo.png.json",
+      "sha1": "d15feeb9b5356afc59ff11f13d82259a4eb44b74",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_vigoroth.png.json",
+      "sha1": "919d89ef612c55198436b555fe326d4bea95064d",
+      "bytes": 441
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_wingull.png.json",
+      "sha1": "f76c5ae751b32f436d74aeadc7ddf5d2cb64e399",
+      "bytes": 437
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/graphics_object_events_pics_pokemon_zigzagoon.png.json",
+      "sha1": "393837fa03b57c73302cc2e09217a6b66a011752",
+      "bytes": 445
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/src_data_object_events_base_oam.h.json",
+      "sha1": "f49f51e0b69e0e8035b16c0ef824bcda1ee394f5",
+      "bytes": 382
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/src_data_object_events_berry_tree_graphics_tables.h.json",
+      "sha1": "f03c5f91c14c4deb7db36f50cdc6a602e0886800",
+      "bytes": 455
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/src_data_object_events_movement_action_func_tables.h.json",
+      "sha1": "a1170394b611f7b79696243f4732f350f85bb78d",
+      "bytes": 459
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/src_data_object_events_movement_type_func_tables.h.json",
+      "sha1": "8990ffdc40ede24bbb63701538c1a1ecc9c06fab",
+      "bytes": 451
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/src_data_object_events_object_event_anims.h.json",
+      "sha1": "d501a58361fb1499c4d768f7cca6f7e23648728e",
+      "bytes": 423
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/src_data_object_events_object_event_graphics.h.json",
+      "sha1": "e826f80a2e1eb437d7736dc499e7a68c7787b5e5",
+      "bytes": 435
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/src_data_object_events_object_event_graphics_info.h.json",
+      "sha1": "765529c69306436b1e9460b8b5e597bcb0c47bdd",
+      "bytes": 456
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/src_data_object_events_object_event_graphics_info_pointers.h.json",
+      "sha1": "6dce94526caf2b650b739aa144fab9132fa8c38f",
+      "bytes": 491
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/src_data_object_events_object_event_pic_tables.h.json",
+      "sha1": "7a81ab1878e7cfc7cb9a765ad8aca3faa32d2091",
+      "bytes": 444
+    },
+    {
+      "path": "mods/vanilla/followers/source_files/src_data_object_events_object_event_subsprites.h.json",
+      "sha1": "779ae1025fbc9a6a2923a5a43a9e910f253a4640",
+      "bytes": 443
     }
   ],
   "counts": {
-    "sourceFiles": 299
+    "sourceEntities": 299
   }
 }

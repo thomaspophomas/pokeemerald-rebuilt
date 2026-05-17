@@ -1,0 +1,28 @@
+{
+  "id": "SSTidalLowerDeck:bg_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalLowerDeck/map.json",
+    "sha1": "fc8250989dba2c0ab661143cbd01f509c5a7679c"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SSTidalLowerDeck/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 0,
+      "y": 2,
+      "elevation": 0,
+      "item": "ITEM_LEFTOVERS",
+      "flag": "FLAG_HIDDEN_ITEM_SS_TIDAL_LOWER_DECK_LEFTOVERS"
+    }
+  },
+  "map": "SSTidalLowerDeck",
+  "mapId": "MAP_SS_TIDAL_LOWER_DECK",
+  "eventType": "bg_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

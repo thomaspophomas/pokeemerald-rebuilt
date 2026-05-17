@@ -1,0 +1,45 @@
+{
+  "id": "Route117:16",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route117/map.json",
+    "sha1": "c7c9af5ecd59a144046f8ae0ea2b93cb235f5110"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route117/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 9,
+      "y": 1,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route117_EventScript_ItemRevive",
+      "flag": "FLAG_ITEM_ROUTE_117_REVIVE"
+    }
+  },
+  "map": "Route117",
+  "mapId": "MAP_ROUTE117",
+  "localId": 16,
+  "graphicsId": "OBJ_EVENT_GFX_ITEM_BALL",
+  "x": 9,
+  "y": 1,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Route117_EventScript_ItemRevive",
+  "flag": "FLAG_ITEM_ROUTE_117_REVIVE",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

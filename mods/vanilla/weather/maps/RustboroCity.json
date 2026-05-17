@@ -1,0 +1,16 @@
+{
+  "id": "RustboroCity:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/map.json",
+    "sha1": "89776bb64fdef8d9171b677d4f7ebeadd02a5674"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/RustboroCity/map.json"
+  },
+  "map": "RustboroCity",
+  "mapId": "MAP_RUSTBORO_CITY",
+  "weather": "WEATHER_SUNNY"
+}

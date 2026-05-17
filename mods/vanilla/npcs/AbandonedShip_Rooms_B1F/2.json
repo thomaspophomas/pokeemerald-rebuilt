@@ -1,0 +1,45 @@
+{
+  "id": "AbandonedShip_Rooms_B1F:2",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Rooms_B1F/map.json",
+    "sha1": "63ab1436eada16775662b5f846694100069021d0"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/AbandonedShip_Rooms_B1F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 6,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AbandonedShip_Rooms_B1F_EventScript_ItemEscapeRope",
+      "flag": "FLAG_ITEM_ABANDONED_SHIP_ROOMS_B1F_ESCAPE_ROPE"
+    }
+  },
+  "map": "AbandonedShip_Rooms_B1F",
+  "mapId": "MAP_ABANDONED_SHIP_ROOMS_B1F",
+  "localId": 2,
+  "graphicsId": "OBJ_EVENT_GFX_ITEM_BALL",
+  "x": 6,
+  "y": 7,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "AbandonedShip_Rooms_B1F_EventScript_ItemEscapeRope",
+  "flag": "FLAG_ITEM_ABANDONED_SHIP_ROOMS_B1F_ESCAPE_ROPE",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

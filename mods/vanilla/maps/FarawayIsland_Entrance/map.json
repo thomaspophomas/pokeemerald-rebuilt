@@ -97,5 +97,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "FarawayIsland_Entrance_EventScript_Sign"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FarawayIsland_Entrance/map.json",
+    "sha1": "3729d1448e31e8a30c0b21f497bc6a12048dbd0c"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/FarawayIsland_Entrance/map.json",
+    "mapName": "FarawayIsland_Entrance",
+    "scriptsSourcePath": "data/maps/FarawayIsland_Entrance/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 56,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

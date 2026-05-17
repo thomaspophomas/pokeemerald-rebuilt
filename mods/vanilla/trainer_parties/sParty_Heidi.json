@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Heidi",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_Heidi[] = {\n    {\n    .iv = 0,\n    .lvl = 22,\n    .species = SPECIES_SANDSHREW,\n    .moves = {MOVE_DIG, MOVE_SAND_ATTACK, MOVE_POISON_STING, MOVE_SLASH}\n    },\n    {\n    .iv = 0,\n    .lvl = 22,\n    .species = SPECIES_BALTOY,\n    .moves = {MOVE_RAPID_SPIN, MOVE_MUD_SLAP, MOVE_PSYBEAM, MOVE_ROCK_TOMB}\n    }\n};"
+  },
+  "symbol": "sParty_Heidi",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 2
+}

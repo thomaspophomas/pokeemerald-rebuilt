@@ -1,0 +1,45 @@
+{
+  "id": "FortreeCity_Gym:8",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/map.json",
+    "sha1": "fb0df5305ca2d550023d359939be89844639d9b5"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/FortreeCity_Gym/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "x": 1,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "FortreeCity_Gym_EventScript_Darius",
+      "flag": "0"
+    }
+  },
+  "map": "FortreeCity_Gym",
+  "mapId": "MAP_FORTREE_CITY_GYM",
+  "localId": 8,
+  "graphicsId": "OBJ_EVENT_GFX_MAN_5",
+  "x": 1,
+  "y": 10,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "3",
+  "script": "FortreeCity_Gym_EventScript_Darius",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

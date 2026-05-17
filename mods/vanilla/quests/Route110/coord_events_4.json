@@ -1,0 +1,31 @@
+{
+  "id": "Route110:coord_events:4",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/map.json",
+    "sha1": "8a0d70f41dabc8b115727a1fccde79f1c803c9e1"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route110/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 35,
+      "y": 56,
+      "elevation": 3,
+      "var": "VAR_ROUTE110_STATE",
+      "var_value": "0",
+      "script": "Route110_EventScript_RivalTrigger3"
+    }
+  },
+  "map": "Route110",
+  "mapId": "MAP_ROUTE110",
+  "eventType": "coord_events",
+  "index": 4,
+  "script": "Route110_EventScript_RivalTrigger3",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

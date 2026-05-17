@@ -91,5 +91,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_PokemonCenter_2F/map.json",
+    "sha1": "163ec3291a7771ed560b1d11bed1cbbbd08f5304"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/PacifidlogTown_PokemonCenter_2F/map.json",
+    "mapName": "PacifidlogTown_PokemonCenter_2F",
+    "scriptsSourcePath": "data/maps/PacifidlogTown_PokemonCenter_2F/scripts.inc"
+  },
+  "mapGroup": 7,
+  "mapNum": 1,
+  "mapGroupSymbol": "gMapGroup_IndoorPacifidlog",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

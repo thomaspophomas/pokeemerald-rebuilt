@@ -1,0 +1,31 @@
+{
+  "id": "Route121_SafariZoneEntrance:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route121_SafariZoneEntrance/map.json",
+    "sha1": "011871899a2349069da4dd5c61d62b8a6425beec"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route121_SafariZoneEntrance/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 8,
+      "y": 4,
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "Route121_SafariZoneEntrance_EventScript_EntranceCounterTrigger"
+    }
+  },
+  "map": "Route121_SafariZoneEntrance",
+  "mapId": "MAP_ROUTE121_SAFARI_ZONE_ENTRANCE",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": "Route121_SafariZoneEntrance_EventScript_EntranceCounterTrigger",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

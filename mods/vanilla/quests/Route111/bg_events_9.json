@@ -1,0 +1,27 @@
+{
+  "id": "Route111:bg_events:9",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/map.json",
+    "sha1": "3161c43b45be9e3c9263e97cf27cb9c95a592a3a"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route111/map.json",
+    "raw": {
+      "type": "secret_base",
+      "x": 35,
+      "y": 31,
+      "elevation": 0,
+      "secret_base_id": "SECRET_BASE_YELLOW_CAVE4_3"
+    }
+  },
+  "map": "Route111",
+  "mapId": "MAP_ROUTE111",
+  "eventType": "bg_events",
+  "index": 9,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

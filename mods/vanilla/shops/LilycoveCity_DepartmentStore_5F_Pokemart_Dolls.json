@@ -1,0 +1,29 @@
+{
+  "id": "LilycoveCity_DepartmentStore_5F_Pokemart_Dolls",
+  "domain": "shops",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+    "sha1": "cd7aae47b8996a67b13e78af3da148a41c68791f"
+  },
+  "legacy": {
+    "kind": "pokemart_script_list",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc"
+  },
+  "symbol": "LilycoveCity_DepartmentStore_5F_Pokemart_Dolls",
+  "map": "LilycoveCity_DepartmentStore_5F",
+  "items": [
+    "DECOR_PICHU_DOLL",
+    "DECOR_PIKACHU_DOLL",
+    "DECOR_MARILL_DOLL",
+    "DECOR_JIGGLYPUFF_DOLL",
+    "DECOR_DUSKULL_DOLL",
+    "DECOR_WYNAUT_DOLL",
+    "DECOR_BALTOY_DOLL",
+    "DECOR_KECLEON_DOLL",
+    "DECOR_AZURILL_DOLL",
+    "DECOR_SKITTY_DOLL",
+    "DECOR_SWABLU_DOLL",
+    "DECOR_GULPIN_DOLL"
+  ]
+}

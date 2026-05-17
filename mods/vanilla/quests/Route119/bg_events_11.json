@@ -1,0 +1,28 @@
+{
+  "id": "Route119:bg_events:11",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119/map.json",
+    "sha1": "1c29f1dc3bee58d2813df5307a7b986c95776bd3"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route119/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 38,
+      "y": 63,
+      "elevation": 3,
+      "item": "ITEM_ULTRA_BALL",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_ULTRA_BALL"
+    }
+  },
+  "map": "Route119",
+  "mapId": "MAP_ROUTE119",
+  "eventType": "bg_events",
+  "index": 11,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

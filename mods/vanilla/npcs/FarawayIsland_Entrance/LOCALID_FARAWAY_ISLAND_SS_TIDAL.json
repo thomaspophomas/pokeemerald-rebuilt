@@ -1,0 +1,43 @@
+{
+  "id": "FarawayIsland_Entrance:LOCALID_FARAWAY_ISLAND_SS_TIDAL",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FarawayIsland_Entrance/map.json",
+    "sha1": "3729d1448e31e8a30c0b21f497bc6a12048dbd0c"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/FarawayIsland_Entrance/map.json",
+    "raw": {
+      "local_id": "LOCALID_FARAWAY_ISLAND_SS_TIDAL",
+      "graphics_id": "OBJ_EVENT_GFX_SS_TIDAL",
+      "x": 13,
+      "y": 41,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "0"
+    }
+  },
+  "map": "FarawayIsland_Entrance",
+  "mapId": "MAP_FARAWAY_ISLAND_ENTRANCE",
+  "localId": "LOCALID_FARAWAY_ISLAND_SS_TIDAL",
+  "graphicsId": "OBJ_EVENT_GFX_SS_TIDAL",
+  "x": 13,
+  "y": 41,
+  "elevation": 1,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "0",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

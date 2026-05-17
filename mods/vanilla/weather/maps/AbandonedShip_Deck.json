@@ -1,0 +1,16 @@
+{
+  "id": "AbandonedShip_Deck:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Deck/map.json",
+    "sha1": "90e360b907c665ef5a0c90d7e0be797fe5947f5d"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/AbandonedShip_Deck/map.json"
+  },
+  "map": "AbandonedShip_Deck",
+  "mapId": "MAP_ABANDONED_SHIP_DECK",
+  "weather": "WEATHER_NONE"
+}

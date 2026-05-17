@@ -1,0 +1,31 @@
+{
+  "id": "TrainerHill_Entrance:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Entrance/map.json",
+    "sha1": "02b66cc3db7b5407fe2cc48cfdfda6fc00afaf5d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/TrainerHill_Entrance/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 9,
+      "y": 6,
+      "elevation": 3,
+      "var": "VAR_TRAINER_HILL_IS_ACTIVE",
+      "var_value": "0",
+      "script": "TrainerHill_Entrance_EventScript_EntryTrigger"
+    }
+  },
+  "map": "TrainerHill_Entrance",
+  "mapId": "MAP_TRAINER_HILL_ENTRANCE",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": "TrainerHill_Entrance_EventScript_EntryTrigger",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

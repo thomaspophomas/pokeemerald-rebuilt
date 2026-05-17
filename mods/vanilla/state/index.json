@@ -1,0 +1,37 @@
+{
+  "domain": "state",
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "include/global.h",
+      "path": "source_files/include_global.h.json",
+      "sourcePath": "include/global.h",
+      "legacyKind": "source_file"
+    },
+    {
+      "id": "include/mod/state.h",
+      "path": "source_files/include_mod_state.h.json",
+      "sourcePath": "include/mod/state.h",
+      "legacyKind": "source_file"
+    },
+    {
+      "id": "include/save.h",
+      "path": "source_files/include_save.h.json",
+      "sourcePath": "include/save.h",
+      "legacyKind": "source_file"
+    },
+    {
+      "id": "src/mod/state.c",
+      "path": "source_files/src_mod_state.c.json",
+      "sourcePath": "src/mod/state.c",
+      "legacyKind": "source_file"
+    },
+    {
+      "id": "src/save.c",
+      "path": "source_files/src_save.c.json",
+      "sourcePath": "src/save.c",
+      "legacyKind": "source_file"
+    }
+  ],
+  "entityCount": 5
+}

@@ -91,5 +91,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonCenter_2F/map.json",
+    "sha1": "e5d8b3a996661125d64d455ded8a0f71196b7c31"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/RustboroCity_PokemonCenter_2F/map.json",
+    "mapName": "RustboroCity_PokemonCenter_2F",
+    "scriptsSourcePath": "data/maps/RustboroCity_PokemonCenter_2F/scripts.inc"
+  },
+  "mapGroup": 11,
+  "mapNum": 6,
+  "mapGroupSymbol": "gMapGroup_IndoorRustboro",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

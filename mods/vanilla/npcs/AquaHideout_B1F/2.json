@@ -1,0 +1,45 @@
+{
+  "id": "AquaHideout_B1F:2",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B1F/map.json",
+    "sha1": "d18425dffc1bd0e84be8eebcb9e1f8fab27278ed"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/AquaHideout_B1F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 6,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "AquaHideout_B1F_EventScript_Grunt3",
+      "flag": "FLAG_HIDE_AQUA_HIDEOUT_GRUNTS"
+    }
+  },
+  "map": "AquaHideout_B1F",
+  "mapId": "MAP_AQUA_HIDEOUT_B1F",
+  "localId": 2,
+  "graphicsId": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+  "x": 6,
+  "y": 6,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "5",
+  "script": "AquaHideout_B1F_EventScript_Grunt3",
+  "flag": "FLAG_HIDE_AQUA_HIDEOUT_GRUNTS",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

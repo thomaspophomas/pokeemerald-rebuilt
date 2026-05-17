@@ -72,5 +72,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown_Mart/map.json",
+    "sha1": "240f26be5b4341e99fad979ba234ff2dbd7a5ca0"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/OldaleTown_Mart/map.json",
+    "mapName": "OldaleTown_Mart",
+    "scriptsSourcePath": "data/maps/OldaleTown_Mart/scripts.inc"
+  },
+  "mapGroup": 2,
+  "mapNum": 4,
+  "mapGroupSymbol": "gMapGroup_IndoorOldale",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,31 @@
+{
+  "id": "RustboroCity:coord_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/map.json",
+    "sha1": "89776bb64fdef8d9171b677d4f7ebeadd02a5674"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/RustboroCity/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 23,
+      "y": 22,
+      "elevation": 3,
+      "var": "VAR_RUSTBORO_CITY_STATE",
+      "var_value": "1",
+      "script": "RustboroCity_EventScript_StolenGoodsTrigger2"
+    }
+  },
+  "map": "RustboroCity",
+  "mapId": "MAP_RUSTBORO_CITY",
+  "eventType": "coord_events",
+  "index": 2,
+  "script": "RustboroCity_EventScript_StolenGoodsTrigger2",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

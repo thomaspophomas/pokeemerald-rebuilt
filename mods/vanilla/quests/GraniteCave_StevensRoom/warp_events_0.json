@@ -1,0 +1,27 @@
+{
+  "id": "GraniteCave_StevensRoom:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/GraniteCave_StevensRoom/map.json",
+    "sha1": "8caf477c60755017f7b363c9c45ba9ec9df1ba0c"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/GraniteCave_StevensRoom/map.json",
+    "raw": {
+      "x": 7,
+      "y": 3,
+      "elevation": 3,
+      "dest_map": "MAP_GRANITE_CAVE_1F",
+      "dest_warp_id": "3"
+    }
+  },
+  "map": "GraniteCave_StevensRoom",
+  "mapId": "MAP_GRANITE_CAVE_STEVENS_ROOM",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

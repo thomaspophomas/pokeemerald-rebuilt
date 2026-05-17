@@ -1,0 +1,43 @@
+{
+  "id": "Route128:LOCALID_ROUTE128_STEVEN",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route128/map.json",
+    "sha1": "20b9cdab55e7f5ce9f2b0ff580fe5ab2aab22d74"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route128/map.json",
+    "raw": {
+      "local_id": "LOCALID_ROUTE128_STEVEN",
+      "graphics_id": "OBJ_EVENT_GFX_STEVEN",
+      "x": 40,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_ROUTE_128_STEVEN"
+    }
+  },
+  "map": "Route128",
+  "mapId": "MAP_ROUTE128",
+  "localId": "LOCALID_ROUTE128_STEVEN",
+  "graphicsId": "OBJ_EVENT_GFX_STEVEN",
+  "x": 40,
+  "y": 22,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_HIDE_ROUTE_128_STEVEN",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

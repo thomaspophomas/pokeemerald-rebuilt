@@ -1,0 +1,16 @@
+{
+  "id": "Route104_Prototype:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104_Prototype/map.json",
+    "sha1": "88d65b9ec3539e4263565137f880d5c78d1c480a"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/Route104_Prototype/map.json"
+  },
+  "map": "Route104_Prototype",
+  "mapId": "MAP_ROUTE104_PROTOTYPE",
+  "weather": "WEATHER_SUNNY"
+}

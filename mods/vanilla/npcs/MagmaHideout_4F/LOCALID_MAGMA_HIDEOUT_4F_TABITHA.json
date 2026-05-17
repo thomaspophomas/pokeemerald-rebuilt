@@ -1,0 +1,46 @@
+{
+  "id": "MagmaHideout_4F:LOCALID_MAGMA_HIDEOUT_4F_TABITHA",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_4F/map.json",
+    "sha1": "b266a0771e7f1e9f2d8cd6a74db767b197adf00c"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MagmaHideout_4F/map.json",
+    "raw": {
+      "local_id": "LOCALID_MAGMA_HIDEOUT_4F_TABITHA",
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 22,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "MagmaHideout_4F_EventScript_Tabitha",
+      "flag": "FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS"
+    }
+  },
+  "map": "MagmaHideout_4F",
+  "mapId": "MAP_MAGMA_HIDEOUT_4F",
+  "localId": "LOCALID_MAGMA_HIDEOUT_4F_TABITHA",
+  "graphicsId": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+  "x": 22,
+  "y": 4,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "4",
+  "script": "MagmaHideout_4F_EventScript_Tabitha",
+  "flag": "FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

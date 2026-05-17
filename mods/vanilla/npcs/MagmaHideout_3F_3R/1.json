@@ -1,0 +1,45 @@
+{
+  "id": "MagmaHideout_3F_3R:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_3F_3R/map.json",
+    "sha1": "20956d52277b535d2402b4dfb13e1b79ec784495"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MagmaHideout_3F_3R/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 9,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MagmaHideout_3F_3R_EventScript_ItemEscapeRope",
+      "flag": "FLAG_ITEM_MAGMA_HIDEOUT_3F_3R_ECAPE_ROPE"
+    }
+  },
+  "map": "MagmaHideout_3F_3R",
+  "mapId": "MAP_MAGMA_HIDEOUT_3F_3R",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_ITEM_BALL",
+  "x": 9,
+  "y": 19,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "MagmaHideout_3F_3R_EventScript_ItemEscapeRope",
+  "flag": "FLAG_ITEM_MAGMA_HIDEOUT_3F_3R_ECAPE_ROPE",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

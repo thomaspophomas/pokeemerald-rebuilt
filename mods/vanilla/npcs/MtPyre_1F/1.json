@@ -1,0 +1,45 @@
+{
+  "id": "MtPyre_1F:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_1F/map.json",
+    "sha1": "a00caadc42db4d44f876dc44ae22a3f2e116d610"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MtPyre_1F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_OLD_WOMAN",
+      "x": 21,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MtPyre_1F_EventScript_CleanseTagWoman",
+      "flag": "0"
+    }
+  },
+  "map": "MtPyre_1F",
+  "mapId": "MAP_MT_PYRE_1F",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_OLD_WOMAN",
+  "x": 21,
+  "y": 2,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "MtPyre_1F_EventScript_CleanseTagWoman",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

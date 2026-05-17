@@ -172,5 +172,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "DewfordTown_EventScript_HallSign"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown/map.json",
+    "sha1": "0481598c70decb6cd75a36c9ab0ee51d577fd51a"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/DewfordTown/map.json",
+    "mapName": "DewfordTown",
+    "scriptsSourcePath": "data/maps/DewfordTown/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 11,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

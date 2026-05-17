@@ -1,0 +1,16 @@
+{
+  "id": "SSTidalCorridor:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalCorridor/map.json",
+    "sha1": "b330f8ff48c5ac9c3983f0b2fc6d7328918f83eb"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/SSTidalCorridor/map.json"
+  },
+  "map": "SSTidalCorridor",
+  "mapId": "MAP_SS_TIDAL_CORRIDOR",
+  "weather": "WEATHER_NONE"
+}

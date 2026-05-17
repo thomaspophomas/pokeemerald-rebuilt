@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Kirk",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_Kirk[] = {\n    {\n    .iv = 100,\n    .lvl = 17,\n    .species = SPECIES_ELECTRIKE,\n    .moves = {MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE, MOVE_SPARK, MOVE_LEER}\n    },\n    {\n    .iv = 100,\n    .lvl = 17,\n    .species = SPECIES_VOLTORB,\n    .moves = {MOVE_CHARGE, MOVE_SHOCK_WAVE, MOVE_SCREECH, MOVE_NONE}\n    }\n};"
+  },
+  "symbol": "sParty_Kirk",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 2
+}

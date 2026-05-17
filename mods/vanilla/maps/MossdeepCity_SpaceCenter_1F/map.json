@@ -188,5 +188,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_1F/map.json",
+    "sha1": "40f7d98cbbcbcdc34f41e847b0794db707c77bb0"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_1F/map.json",
+    "mapName": "MossdeepCity_SpaceCenter_1F",
+    "scriptsSourcePath": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc"
+  },
+  "mapGroup": 14,
+  "mapNum": 9,
+  "mapGroupSymbol": "gMapGroup_IndoorMossdeep",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

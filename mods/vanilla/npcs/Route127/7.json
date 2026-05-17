@@ -1,0 +1,45 @@
+{
+  "id": "Route127:7",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route127/map.json",
+    "sha1": "1888c4a6cdbeaad8f03b0f0d0a7120ea72599971"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route127/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
+      "x": 54,
+      "y": 14,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route127_EventScript_Henry",
+      "flag": "0"
+    }
+  },
+  "map": "Route127",
+  "mapId": "MAP_ROUTE127",
+  "localId": 7,
+  "graphicsId": "OBJ_EVENT_GFX_FISHERMAN",
+  "x": 54,
+  "y": 14,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Route127_EventScript_Henry",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

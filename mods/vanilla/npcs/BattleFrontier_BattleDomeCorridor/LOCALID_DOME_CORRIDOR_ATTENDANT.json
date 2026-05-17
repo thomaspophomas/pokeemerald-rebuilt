@@ -1,0 +1,43 @@
+{
+  "id": "BattleFrontier_BattleDomeCorridor:LOCALID_DOME_CORRIDOR_ATTENDANT",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeCorridor/map.json",
+    "sha1": "084ebf0401e715e097a3a7222f288c5d463b6fab"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeCorridor/map.json",
+    "raw": {
+      "local_id": "LOCALID_DOME_CORRIDOR_ATTENDANT",
+      "graphics_id": "OBJ_EVENT_GFX_TEALA",
+      "x": 23,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "0"
+    }
+  },
+  "map": "BattleFrontier_BattleDomeCorridor",
+  "mapId": "MAP_BATTLE_FRONTIER_BATTLE_DOME_CORRIDOR",
+  "localId": "LOCALID_DOME_CORRIDOR_ATTENDANT",
+  "graphicsId": "OBJ_EVENT_GFX_TEALA",
+  "x": 23,
+  "y": 5,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "0",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

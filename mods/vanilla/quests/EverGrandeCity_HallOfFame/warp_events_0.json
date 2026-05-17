@@ -1,0 +1,27 @@
+{
+  "id": "EverGrandeCity_HallOfFame:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_HallOfFame/map.json",
+    "sha1": "970a960d66526a2af6b005846134b2efa2a41f8d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/EverGrandeCity_HallOfFame/map.json",
+    "raw": {
+      "x": 7,
+      "y": 11,
+      "elevation": 3,
+      "dest_map": "MAP_EVER_GRANDE_CITY_CHAMPIONS_ROOM",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "EverGrandeCity_HallOfFame",
+  "mapId": "MAP_EVER_GRANDE_CITY_HALL_OF_FAME",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

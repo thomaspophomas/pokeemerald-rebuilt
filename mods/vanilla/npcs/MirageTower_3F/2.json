@@ -1,0 +1,45 @@
+{
+  "id": "MirageTower_3F:2",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MirageTower_3F/map.json",
+    "sha1": "7318b34923238916c8fdd82e9696ffe2e43ba278"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MirageTower_3F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 4,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_12"
+    }
+  },
+  "map": "MirageTower_3F",
+  "mapId": "MAP_MIRAGE_TOWER_3F",
+  "localId": 2,
+  "graphicsId": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+  "x": 4,
+  "y": 8,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "EventScript_RockSmash",
+  "flag": "FLAG_TEMP_12",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

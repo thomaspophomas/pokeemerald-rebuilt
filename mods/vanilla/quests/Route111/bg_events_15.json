@@ -1,0 +1,28 @@
+{
+  "id": "Route111:bg_events:15",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/map.json",
+    "sha1": "3161c43b45be9e3c9263e97cf27cb9c95a592a3a"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route111/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 19,
+      "y": 55,
+      "elevation": 0,
+      "item": "ITEM_PROTEIN",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_111_PROTEIN"
+    }
+  },
+  "map": "Route111",
+  "mapId": "MAP_ROUTE111",
+  "eventType": "bg_events",
+  "index": 15,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

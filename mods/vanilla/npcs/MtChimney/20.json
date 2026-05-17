@@ -1,0 +1,45 @@
+{
+  "id": "MtChimney:20",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney/map.json",
+    "sha1": "02de2926332ab99346150e00976e69d6b7b962d7"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MtChimney/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_POOCHYENA",
+      "x": 30,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MtChimney_EventScript_AquaPoochyena",
+      "flag": "FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA"
+    }
+  },
+  "map": "MtChimney",
+  "mapId": "MAP_MT_CHIMNEY",
+  "localId": 20,
+  "graphicsId": "OBJ_EVENT_GFX_POOCHYENA",
+  "x": 30,
+  "y": 5,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "MtChimney_EventScript_AquaPoochyena",
+  "flag": "FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

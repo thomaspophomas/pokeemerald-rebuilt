@@ -31,5 +31,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NavelRock_Down01/map.json",
+    "sha1": "329e6ab1588d7387cf3547dac0add743e24e9c16"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/NavelRock_Down01/map.json",
+    "mapName": "NavelRock_Down01",
+    "scriptsSourcePath": "data/maps/NavelRock_Down01/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 76,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

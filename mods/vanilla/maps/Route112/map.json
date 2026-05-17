@@ -285,5 +285,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route112_EventScript_RouteSignLavaridge"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route112/map.json",
+    "sha1": "b661693767b6f599786f2403d78ab8974913a097"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route112/map.json",
+    "mapName": "Route112",
+    "scriptsSourcePath": "data/maps/Route112/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 27,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

@@ -1,0 +1,27 @@
+{
+  "id": "AncientTomb:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AncientTomb/map.json",
+    "sha1": "115981ccd581f3de9b23e46635de7032143af8b7"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/AncientTomb/map.json",
+    "raw": {
+      "x": 8,
+      "y": 29,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE120",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "AncientTomb",
+  "mapId": "MAP_ANCIENT_TOMB",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

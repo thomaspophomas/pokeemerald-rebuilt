@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_SAWYER_1",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_SAWYER_1] =\n    {\n        .trainerClass = TRAINER_CLASS_HIKER,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,\n        .trainerPic = TRAINER_PIC_HIKER,\n        .trainerName = _(\"SAWYER\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_Sawyer1),\n    },"
+  },
+  "symbol": "TRAINER_SAWYER_1",
+  "numericId": 1,
+  "trainerName": "SAWYER",
+  "trainerClass": "TRAINER_CLASS_HIKER",
+  "trainerPic": "TRAINER_PIC_HIKER",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_HIKER",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY",
+  "partyRef": "sParty_Sawyer1",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

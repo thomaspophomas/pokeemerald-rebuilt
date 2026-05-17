@@ -64,5 +64,26 @@
       "script": "EventScript_TradeCenter_Chair1"
     }
   ],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TradeCenter/map.json",
+    "sha1": "26c185ec510941ea0b33c1cc2b7065bd3e41706d"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/TradeCenter/map.json",
+    "mapName": "TradeCenter",
+    "scriptsSourcePath": "data/maps/TradeCenter/scripts.inc"
+  },
+  "mapGroup": 25,
+  "mapNum": 25,
+  "mapGroupSymbol": "gMapGroup_IndoorDynamic",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

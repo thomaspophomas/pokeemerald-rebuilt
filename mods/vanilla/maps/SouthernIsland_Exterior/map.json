@@ -69,5 +69,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "SouthernIsland_Exterior_EventScript_Sign"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SouthernIsland_Exterior/map.json",
+    "sha1": "3757ac072ce5bf012ddfab1a8156de156f82cd56"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SouthernIsland_Exterior/map.json",
+    "mapName": "SouthernIsland_Exterior",
+    "scriptsSourcePath": "data/maps/SouthernIsland_Exterior/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 9,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

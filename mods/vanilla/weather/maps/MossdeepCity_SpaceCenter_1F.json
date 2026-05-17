@@ -1,0 +1,16 @@
+{
+  "id": "MossdeepCity_SpaceCenter_1F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_1F/map.json",
+    "sha1": "40f7d98cbbcbcdc34f41e847b0794db707c77bb0"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_1F/map.json"
+  },
+  "map": "MossdeepCity_SpaceCenter_1F",
+  "mapId": "MAP_MOSSDEEP_CITY_SPACE_CENTER_1F",
+  "weather": "WEATHER_NONE"
+}

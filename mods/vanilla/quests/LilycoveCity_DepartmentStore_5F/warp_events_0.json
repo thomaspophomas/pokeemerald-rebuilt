@@ -1,0 +1,27 @@
+{
+  "id": "LilycoveCity_DepartmentStore_5F:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_5F/map.json",
+    "sha1": "0b6789c24f7cde9ba049aa2b9849680226525457"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_5F/map.json",
+    "raw": {
+      "x": 13,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_4F",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "LilycoveCity_DepartmentStore_5F",
+  "mapId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_5F",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

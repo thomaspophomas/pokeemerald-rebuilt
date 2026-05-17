@@ -227,5 +227,26 @@
   ],
   "warp_events": [],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ContestHall/map.json",
+    "sha1": "dcb8d4d06fa279def99bb3771af5a89413eaccc7"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/ContestHall/map.json",
+    "mapName": "ContestHall",
+    "scriptsSourcePath": "data/maps/ContestHall/scripts.inc"
+  },
+  "mapGroup": 25,
+  "mapNum": 28,
+  "mapGroupSymbol": "gMapGroup_IndoorDynamic",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

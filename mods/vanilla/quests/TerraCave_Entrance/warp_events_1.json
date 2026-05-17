@@ -1,0 +1,27 @@
+{
+  "id": "TerraCave_Entrance:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TerraCave_Entrance/map.json",
+    "sha1": "fbc7aac123152861c2f01e1743a3b12b7da69ed8"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/TerraCave_Entrance/map.json",
+    "raw": {
+      "x": 14,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_TERRA_CAVE_END",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "TerraCave_Entrance",
+  "mapId": "MAP_TERRA_CAVE_ENTRANCE",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

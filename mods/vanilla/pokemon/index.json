@@ -1,0 +1,3527 @@
+{
+  "domain": "pokemon",
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "SPECIES_ABRA",
+      "path": "species/SPECIES_ABRA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ABRA",
+      "numericId": 63
+    },
+    {
+      "id": "SPECIES_ABSOL",
+      "path": "species/SPECIES_ABSOL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ABSOL",
+      "numericId": 376
+    },
+    {
+      "id": "SPECIES_AERODACTYL",
+      "path": "species/SPECIES_AERODACTYL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_AERODACTYL",
+      "numericId": 142
+    },
+    {
+      "id": "SPECIES_AGGRON",
+      "path": "species/SPECIES_AGGRON.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_AGGRON",
+      "numericId": 384
+    },
+    {
+      "id": "SPECIES_AIPOM",
+      "path": "species/SPECIES_AIPOM.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_AIPOM",
+      "numericId": 190
+    },
+    {
+      "id": "SPECIES_ALAKAZAM",
+      "path": "species/SPECIES_ALAKAZAM.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ALAKAZAM",
+      "numericId": 65
+    },
+    {
+      "id": "SPECIES_ALTARIA",
+      "path": "species/SPECIES_ALTARIA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ALTARIA",
+      "numericId": 359
+    },
+    {
+      "id": "SPECIES_AMPHAROS",
+      "path": "species/SPECIES_AMPHAROS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_AMPHAROS",
+      "numericId": 181
+    },
+    {
+      "id": "SPECIES_ANORITH",
+      "path": "species/SPECIES_ANORITH.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ANORITH",
+      "numericId": 390
+    },
+    {
+      "id": "SPECIES_ARBOK",
+      "path": "species/SPECIES_ARBOK.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ARBOK",
+      "numericId": 24
+    },
+    {
+      "id": "SPECIES_ARCANINE",
+      "path": "species/SPECIES_ARCANINE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ARCANINE",
+      "numericId": 59
+    },
+    {
+      "id": "SPECIES_ARIADOS",
+      "path": "species/SPECIES_ARIADOS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ARIADOS",
+      "numericId": 168
+    },
+    {
+      "id": "SPECIES_ARMALDO",
+      "path": "species/SPECIES_ARMALDO.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ARMALDO",
+      "numericId": 391
+    },
+    {
+      "id": "SPECIES_ARON",
+      "path": "species/SPECIES_ARON.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ARON",
+      "numericId": 382
+    },
+    {
+      "id": "SPECIES_ARTICUNO",
+      "path": "species/SPECIES_ARTICUNO.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ARTICUNO",
+      "numericId": 144
+    },
+    {
+      "id": "SPECIES_AZUMARILL",
+      "path": "species/SPECIES_AZUMARILL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_AZUMARILL",
+      "numericId": 184
+    },
+    {
+      "id": "SPECIES_AZURILL",
+      "path": "species/SPECIES_AZURILL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_AZURILL",
+      "numericId": 350
+    },
+    {
+      "id": "SPECIES_BAGON",
+      "path": "species/SPECIES_BAGON.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_BAGON",
+      "numericId": 395
+    },
+    {
+      "id": "SPECIES_BALTOY",
+      "path": "species/SPECIES_BALTOY.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_BALTOY",
+      "numericId": 318
+    },
+    {
+      "id": "SPECIES_BANETTE",
+      "path": "species/SPECIES_BANETTE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_BANETTE",
+      "numericId": 378
+    },
+    {
+      "id": "SPECIES_BARBOACH",
+      "path": "species/SPECIES_BARBOACH.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_BARBOACH",
+      "numericId": 323
+    },
+    {
+      "id": "SPECIES_BAYLEEF",
+      "path": "species/SPECIES_BAYLEEF.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_BAYLEEF",
+      "numericId": 153
+    },
+    {
+      "id": "SPECIES_BEAUTIFLY",
+      "path": "species/SPECIES_BEAUTIFLY.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_BEAUTIFLY",
+      "numericId": 292
+    },
+    {
+      "id": "SPECIES_BEEDRILL",
+      "path": "species/SPECIES_BEEDRILL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_BEEDRILL",
+      "numericId": 15
+    },
+    {
+      "id": "SPECIES_BELDUM",
+      "path": "species/SPECIES_BELDUM.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_BELDUM",
+      "numericId": 398
+    },
+    {
+      "id": "SPECIES_BELLOSSOM",
+      "path": "species/SPECIES_BELLOSSOM.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_BELLOSSOM",
+      "numericId": 182
+    },
+    {
+      "id": "SPECIES_BELLSPROUT",
+      "path": "species/SPECIES_BELLSPROUT.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_BELLSPROUT",
+      "numericId": 69
+    },
+    {
+      "id": "SPECIES_BLASTOISE",
+      "path": "species/SPECIES_BLASTOISE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_BLASTOISE",
+      "numericId": 9
+    },
+    {
+      "id": "SPECIES_BLAZIKEN",
+      "path": "species/SPECIES_BLAZIKEN.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_BLAZIKEN",
+      "numericId": 282
+    },
+    {
+      "id": "SPECIES_BLISSEY",
+      "path": "species/SPECIES_BLISSEY.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_BLISSEY",
+      "numericId": 242
+    },
+    {
+      "id": "SPECIES_BRELOOM",
+      "path": "species/SPECIES_BRELOOM.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_BRELOOM",
+      "numericId": 307
+    },
+    {
+      "id": "SPECIES_BULBASAUR",
+      "path": "species/SPECIES_BULBASAUR.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_BULBASAUR",
+      "numericId": 1
+    },
+    {
+      "id": "SPECIES_BUTTERFREE",
+      "path": "species/SPECIES_BUTTERFREE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_BUTTERFREE",
+      "numericId": 12
+    },
+    {
+      "id": "SPECIES_CACNEA",
+      "path": "species/SPECIES_CACNEA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CACNEA",
+      "numericId": 344
+    },
+    {
+      "id": "SPECIES_CACTURNE",
+      "path": "species/SPECIES_CACTURNE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CACTURNE",
+      "numericId": 345
+    },
+    {
+      "id": "SPECIES_CAMERUPT",
+      "path": "species/SPECIES_CAMERUPT.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CAMERUPT",
+      "numericId": 340
+    },
+    {
+      "id": "SPECIES_CARVANHA",
+      "path": "species/SPECIES_CARVANHA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CARVANHA",
+      "numericId": 330
+    },
+    {
+      "id": "SPECIES_CASCOON",
+      "path": "species/SPECIES_CASCOON.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CASCOON",
+      "numericId": 293
+    },
+    {
+      "id": "SPECIES_CASTFORM",
+      "path": "species/SPECIES_CASTFORM.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CASTFORM",
+      "numericId": 385
+    },
+    {
+      "id": "SPECIES_CATERPIE",
+      "path": "species/SPECIES_CATERPIE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CATERPIE",
+      "numericId": 10
+    },
+    {
+      "id": "SPECIES_CELEBI",
+      "path": "species/SPECIES_CELEBI.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CELEBI",
+      "numericId": 251
+    },
+    {
+      "id": "SPECIES_CHANSEY",
+      "path": "species/SPECIES_CHANSEY.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CHANSEY",
+      "numericId": 113
+    },
+    {
+      "id": "SPECIES_CHARIZARD",
+      "path": "species/SPECIES_CHARIZARD.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CHARIZARD",
+      "numericId": 6
+    },
+    {
+      "id": "SPECIES_CHARMANDER",
+      "path": "species/SPECIES_CHARMANDER.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CHARMANDER",
+      "numericId": 4
+    },
+    {
+      "id": "SPECIES_CHARMELEON",
+      "path": "species/SPECIES_CHARMELEON.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CHARMELEON",
+      "numericId": 5
+    },
+    {
+      "id": "SPECIES_CHIKORITA",
+      "path": "species/SPECIES_CHIKORITA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CHIKORITA",
+      "numericId": 152
+    },
+    {
+      "id": "SPECIES_CHIMECHO",
+      "path": "species/SPECIES_CHIMECHO.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CHIMECHO",
+      "numericId": 411
+    },
+    {
+      "id": "SPECIES_CHINCHOU",
+      "path": "species/SPECIES_CHINCHOU.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CHINCHOU",
+      "numericId": 170
+    },
+    {
+      "id": "SPECIES_CLAMPERL",
+      "path": "species/SPECIES_CLAMPERL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CLAMPERL",
+      "numericId": 373
+    },
+    {
+      "id": "SPECIES_CLAYDOL",
+      "path": "species/SPECIES_CLAYDOL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CLAYDOL",
+      "numericId": 319
+    },
+    {
+      "id": "SPECIES_CLEFABLE",
+      "path": "species/SPECIES_CLEFABLE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CLEFABLE",
+      "numericId": 36
+    },
+    {
+      "id": "SPECIES_CLEFAIRY",
+      "path": "species/SPECIES_CLEFAIRY.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CLEFAIRY",
+      "numericId": 35
+    },
+    {
+      "id": "SPECIES_CLEFFA",
+      "path": "species/SPECIES_CLEFFA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CLEFFA",
+      "numericId": 173
+    },
+    {
+      "id": "SPECIES_CLOYSTER",
+      "path": "species/SPECIES_CLOYSTER.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CLOYSTER",
+      "numericId": 91
+    },
+    {
+      "id": "SPECIES_COMBUSKEN",
+      "path": "species/SPECIES_COMBUSKEN.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_COMBUSKEN",
+      "numericId": 281
+    },
+    {
+      "id": "SPECIES_CORPHISH",
+      "path": "species/SPECIES_CORPHISH.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CORPHISH",
+      "numericId": 326
+    },
+    {
+      "id": "SPECIES_CORSOLA",
+      "path": "species/SPECIES_CORSOLA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CORSOLA",
+      "numericId": 222
+    },
+    {
+      "id": "SPECIES_CRADILY",
+      "path": "species/SPECIES_CRADILY.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CRADILY",
+      "numericId": 389
+    },
+    {
+      "id": "SPECIES_CRAWDAUNT",
+      "path": "species/SPECIES_CRAWDAUNT.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CRAWDAUNT",
+      "numericId": 327
+    },
+    {
+      "id": "SPECIES_CROBAT",
+      "path": "species/SPECIES_CROBAT.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CROBAT",
+      "numericId": 169
+    },
+    {
+      "id": "SPECIES_CROCONAW",
+      "path": "species/SPECIES_CROCONAW.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CROCONAW",
+      "numericId": 159
+    },
+    {
+      "id": "SPECIES_CUBONE",
+      "path": "species/SPECIES_CUBONE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CUBONE",
+      "numericId": 104
+    },
+    {
+      "id": "SPECIES_CYNDAQUIL",
+      "path": "species/SPECIES_CYNDAQUIL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_CYNDAQUIL",
+      "numericId": 155
+    },
+    {
+      "id": "SPECIES_DELCATTY",
+      "path": "species/SPECIES_DELCATTY.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_DELCATTY",
+      "numericId": 316
+    },
+    {
+      "id": "SPECIES_DELIBIRD",
+      "path": "species/SPECIES_DELIBIRD.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_DELIBIRD",
+      "numericId": 225
+    },
+    {
+      "id": "SPECIES_DEOXYS",
+      "path": "species/SPECIES_DEOXYS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_DEOXYS",
+      "numericId": 410
+    },
+    {
+      "id": "SPECIES_DEWGONG",
+      "path": "species/SPECIES_DEWGONG.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_DEWGONG",
+      "numericId": 87
+    },
+    {
+      "id": "SPECIES_DIGLETT",
+      "path": "species/SPECIES_DIGLETT.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_DIGLETT",
+      "numericId": 50
+    },
+    {
+      "id": "SPECIES_DITTO",
+      "path": "species/SPECIES_DITTO.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_DITTO",
+      "numericId": 132
+    },
+    {
+      "id": "SPECIES_DODRIO",
+      "path": "species/SPECIES_DODRIO.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_DODRIO",
+      "numericId": 85
+    },
+    {
+      "id": "SPECIES_DODUO",
+      "path": "species/SPECIES_DODUO.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_DODUO",
+      "numericId": 84
+    },
+    {
+      "id": "SPECIES_DONPHAN",
+      "path": "species/SPECIES_DONPHAN.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_DONPHAN",
+      "numericId": 232
+    },
+    {
+      "id": "SPECIES_DRAGONAIR",
+      "path": "species/SPECIES_DRAGONAIR.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_DRAGONAIR",
+      "numericId": 148
+    },
+    {
+      "id": "SPECIES_DRAGONITE",
+      "path": "species/SPECIES_DRAGONITE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_DRAGONITE",
+      "numericId": 149
+    },
+    {
+      "id": "SPECIES_DRATINI",
+      "path": "species/SPECIES_DRATINI.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_DRATINI",
+      "numericId": 147
+    },
+    {
+      "id": "SPECIES_DROWZEE",
+      "path": "species/SPECIES_DROWZEE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_DROWZEE",
+      "numericId": 96
+    },
+    {
+      "id": "SPECIES_DUGTRIO",
+      "path": "species/SPECIES_DUGTRIO.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_DUGTRIO",
+      "numericId": 51
+    },
+    {
+      "id": "SPECIES_DUNSPARCE",
+      "path": "species/SPECIES_DUNSPARCE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_DUNSPARCE",
+      "numericId": 206
+    },
+    {
+      "id": "SPECIES_DUSCLOPS",
+      "path": "species/SPECIES_DUSCLOPS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_DUSCLOPS",
+      "numericId": 362
+    },
+    {
+      "id": "SPECIES_DUSKULL",
+      "path": "species/SPECIES_DUSKULL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_DUSKULL",
+      "numericId": 361
+    },
+    {
+      "id": "SPECIES_DUSTOX",
+      "path": "species/SPECIES_DUSTOX.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_DUSTOX",
+      "numericId": 294
+    },
+    {
+      "id": "SPECIES_EEVEE",
+      "path": "species/SPECIES_EEVEE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_EEVEE",
+      "numericId": 133
+    },
+    {
+      "id": "SPECIES_EGG",
+      "path": "species/SPECIES_EGG.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_EGG",
+      "numericId": 412
+    },
+    {
+      "id": "SPECIES_EKANS",
+      "path": "species/SPECIES_EKANS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_EKANS",
+      "numericId": 23
+    },
+    {
+      "id": "SPECIES_ELECTABUZZ",
+      "path": "species/SPECIES_ELECTABUZZ.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ELECTABUZZ",
+      "numericId": 125
+    },
+    {
+      "id": "SPECIES_ELECTRIKE",
+      "path": "species/SPECIES_ELECTRIKE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ELECTRIKE",
+      "numericId": 337
+    },
+    {
+      "id": "SPECIES_ELECTRODE",
+      "path": "species/SPECIES_ELECTRODE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ELECTRODE",
+      "numericId": 101
+    },
+    {
+      "id": "SPECIES_ELEKID",
+      "path": "species/SPECIES_ELEKID.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ELEKID",
+      "numericId": 239
+    },
+    {
+      "id": "SPECIES_ENTEI",
+      "path": "species/SPECIES_ENTEI.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ENTEI",
+      "numericId": 244
+    },
+    {
+      "id": "SPECIES_ESPEON",
+      "path": "species/SPECIES_ESPEON.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ESPEON",
+      "numericId": 196
+    },
+    {
+      "id": "SPECIES_EXEGGCUTE",
+      "path": "species/SPECIES_EXEGGCUTE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_EXEGGCUTE",
+      "numericId": 102
+    },
+    {
+      "id": "SPECIES_EXEGGUTOR",
+      "path": "species/SPECIES_EXEGGUTOR.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_EXEGGUTOR",
+      "numericId": 103
+    },
+    {
+      "id": "SPECIES_EXPLOUD",
+      "path": "species/SPECIES_EXPLOUD.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_EXPLOUD",
+      "numericId": 372
+    },
+    {
+      "id": "SPECIES_FARFETCHD",
+      "path": "species/SPECIES_FARFETCHD.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_FARFETCHD",
+      "numericId": 83
+    },
+    {
+      "id": "SPECIES_FEAROW",
+      "path": "species/SPECIES_FEAROW.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_FEAROW",
+      "numericId": 22
+    },
+    {
+      "id": "SPECIES_FEEBAS",
+      "path": "species/SPECIES_FEEBAS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_FEEBAS",
+      "numericId": 328
+    },
+    {
+      "id": "SPECIES_FERALIGATR",
+      "path": "species/SPECIES_FERALIGATR.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_FERALIGATR",
+      "numericId": 160
+    },
+    {
+      "id": "SPECIES_FLAAFFY",
+      "path": "species/SPECIES_FLAAFFY.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_FLAAFFY",
+      "numericId": 180
+    },
+    {
+      "id": "SPECIES_FLAREON",
+      "path": "species/SPECIES_FLAREON.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_FLAREON",
+      "numericId": 136
+    },
+    {
+      "id": "SPECIES_FLYGON",
+      "path": "species/SPECIES_FLYGON.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_FLYGON",
+      "numericId": 334
+    },
+    {
+      "id": "SPECIES_FORRETRESS",
+      "path": "species/SPECIES_FORRETRESS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_FORRETRESS",
+      "numericId": 205
+    },
+    {
+      "id": "SPECIES_FURRET",
+      "path": "species/SPECIES_FURRET.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_FURRET",
+      "numericId": 162
+    },
+    {
+      "id": "SPECIES_GARDEVOIR",
+      "path": "species/SPECIES_GARDEVOIR.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GARDEVOIR",
+      "numericId": 394
+    },
+    {
+      "id": "SPECIES_GASTLY",
+      "path": "species/SPECIES_GASTLY.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GASTLY",
+      "numericId": 92
+    },
+    {
+      "id": "SPECIES_GENGAR",
+      "path": "species/SPECIES_GENGAR.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GENGAR",
+      "numericId": 94
+    },
+    {
+      "id": "SPECIES_GEODUDE",
+      "path": "species/SPECIES_GEODUDE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GEODUDE",
+      "numericId": 74
+    },
+    {
+      "id": "SPECIES_GIRAFARIG",
+      "path": "species/SPECIES_GIRAFARIG.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GIRAFARIG",
+      "numericId": 203
+    },
+    {
+      "id": "SPECIES_GLALIE",
+      "path": "species/SPECIES_GLALIE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GLALIE",
+      "numericId": 347
+    },
+    {
+      "id": "SPECIES_GLIGAR",
+      "path": "species/SPECIES_GLIGAR.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GLIGAR",
+      "numericId": 207
+    },
+    {
+      "id": "SPECIES_GLOOM",
+      "path": "species/SPECIES_GLOOM.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GLOOM",
+      "numericId": 44
+    },
+    {
+      "id": "SPECIES_GOLBAT",
+      "path": "species/SPECIES_GOLBAT.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GOLBAT",
+      "numericId": 42
+    },
+    {
+      "id": "SPECIES_GOLDEEN",
+      "path": "species/SPECIES_GOLDEEN.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GOLDEEN",
+      "numericId": 118
+    },
+    {
+      "id": "SPECIES_GOLDUCK",
+      "path": "species/SPECIES_GOLDUCK.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GOLDUCK",
+      "numericId": 55
+    },
+    {
+      "id": "SPECIES_GOLEM",
+      "path": "species/SPECIES_GOLEM.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GOLEM",
+      "numericId": 76
+    },
+    {
+      "id": "SPECIES_GOREBYSS",
+      "path": "species/SPECIES_GOREBYSS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GOREBYSS",
+      "numericId": 375
+    },
+    {
+      "id": "SPECIES_GRANBULL",
+      "path": "species/SPECIES_GRANBULL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GRANBULL",
+      "numericId": 210
+    },
+    {
+      "id": "SPECIES_GRAVELER",
+      "path": "species/SPECIES_GRAVELER.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GRAVELER",
+      "numericId": 75
+    },
+    {
+      "id": "SPECIES_GRIMER",
+      "path": "species/SPECIES_GRIMER.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GRIMER",
+      "numericId": 88
+    },
+    {
+      "id": "SPECIES_GROUDON",
+      "path": "species/SPECIES_GROUDON.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GROUDON",
+      "numericId": 405
+    },
+    {
+      "id": "SPECIES_GROVYLE",
+      "path": "species/SPECIES_GROVYLE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GROVYLE",
+      "numericId": 278
+    },
+    {
+      "id": "SPECIES_GROWLITHE",
+      "path": "species/SPECIES_GROWLITHE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GROWLITHE",
+      "numericId": 58
+    },
+    {
+      "id": "SPECIES_GRUMPIG",
+      "path": "species/SPECIES_GRUMPIG.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GRUMPIG",
+      "numericId": 352
+    },
+    {
+      "id": "SPECIES_GULPIN",
+      "path": "species/SPECIES_GULPIN.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GULPIN",
+      "numericId": 367
+    },
+    {
+      "id": "SPECIES_GYARADOS",
+      "path": "species/SPECIES_GYARADOS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_GYARADOS",
+      "numericId": 130
+    },
+    {
+      "id": "SPECIES_HARIYAMA",
+      "path": "species/SPECIES_HARIYAMA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_HARIYAMA",
+      "numericId": 336
+    },
+    {
+      "id": "SPECIES_HAUNTER",
+      "path": "species/SPECIES_HAUNTER.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_HAUNTER",
+      "numericId": 93
+    },
+    {
+      "id": "SPECIES_HERACROSS",
+      "path": "species/SPECIES_HERACROSS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_HERACROSS",
+      "numericId": 214
+    },
+    {
+      "id": "SPECIES_HITMONCHAN",
+      "path": "species/SPECIES_HITMONCHAN.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_HITMONCHAN",
+      "numericId": 107
+    },
+    {
+      "id": "SPECIES_HITMONLEE",
+      "path": "species/SPECIES_HITMONLEE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_HITMONLEE",
+      "numericId": 106
+    },
+    {
+      "id": "SPECIES_HITMONTOP",
+      "path": "species/SPECIES_HITMONTOP.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_HITMONTOP",
+      "numericId": 237
+    },
+    {
+      "id": "SPECIES_HOOTHOOT",
+      "path": "species/SPECIES_HOOTHOOT.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_HOOTHOOT",
+      "numericId": 163
+    },
+    {
+      "id": "SPECIES_HOPPIP",
+      "path": "species/SPECIES_HOPPIP.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_HOPPIP",
+      "numericId": 187
+    },
+    {
+      "id": "SPECIES_HORSEA",
+      "path": "species/SPECIES_HORSEA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_HORSEA",
+      "numericId": 116
+    },
+    {
+      "id": "SPECIES_HOUNDOOM",
+      "path": "species/SPECIES_HOUNDOOM.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_HOUNDOOM",
+      "numericId": 229
+    },
+    {
+      "id": "SPECIES_HOUNDOUR",
+      "path": "species/SPECIES_HOUNDOUR.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_HOUNDOUR",
+      "numericId": 228
+    },
+    {
+      "id": "SPECIES_HO_OH",
+      "path": "species/SPECIES_HO_OH.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_HO_OH",
+      "numericId": 250
+    },
+    {
+      "id": "SPECIES_HUNTAIL",
+      "path": "species/SPECIES_HUNTAIL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_HUNTAIL",
+      "numericId": 374
+    },
+    {
+      "id": "SPECIES_HYPNO",
+      "path": "species/SPECIES_HYPNO.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_HYPNO",
+      "numericId": 97
+    },
+    {
+      "id": "SPECIES_IGGLYBUFF",
+      "path": "species/SPECIES_IGGLYBUFF.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_IGGLYBUFF",
+      "numericId": 174
+    },
+    {
+      "id": "SPECIES_ILLUMISE",
+      "path": "species/SPECIES_ILLUMISE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ILLUMISE",
+      "numericId": 387
+    },
+    {
+      "id": "SPECIES_IVYSAUR",
+      "path": "species/SPECIES_IVYSAUR.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_IVYSAUR",
+      "numericId": 2
+    },
+    {
+      "id": "SPECIES_JIGGLYPUFF",
+      "path": "species/SPECIES_JIGGLYPUFF.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_JIGGLYPUFF",
+      "numericId": 39
+    },
+    {
+      "id": "SPECIES_JIRACHI",
+      "path": "species/SPECIES_JIRACHI.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_JIRACHI",
+      "numericId": 409
+    },
+    {
+      "id": "SPECIES_JOLTEON",
+      "path": "species/SPECIES_JOLTEON.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_JOLTEON",
+      "numericId": 135
+    },
+    {
+      "id": "SPECIES_JUMPLUFF",
+      "path": "species/SPECIES_JUMPLUFF.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_JUMPLUFF",
+      "numericId": 189
+    },
+    {
+      "id": "SPECIES_JYNX",
+      "path": "species/SPECIES_JYNX.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_JYNX",
+      "numericId": 124
+    },
+    {
+      "id": "SPECIES_KABUTO",
+      "path": "species/SPECIES_KABUTO.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_KABUTO",
+      "numericId": 140
+    },
+    {
+      "id": "SPECIES_KABUTOPS",
+      "path": "species/SPECIES_KABUTOPS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_KABUTOPS",
+      "numericId": 141
+    },
+    {
+      "id": "SPECIES_KADABRA",
+      "path": "species/SPECIES_KADABRA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_KADABRA",
+      "numericId": 64
+    },
+    {
+      "id": "SPECIES_KAKUNA",
+      "path": "species/SPECIES_KAKUNA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_KAKUNA",
+      "numericId": 14
+    },
+    {
+      "id": "SPECIES_KANGASKHAN",
+      "path": "species/SPECIES_KANGASKHAN.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_KANGASKHAN",
+      "numericId": 115
+    },
+    {
+      "id": "SPECIES_KECLEON",
+      "path": "species/SPECIES_KECLEON.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_KECLEON",
+      "numericId": 317
+    },
+    {
+      "id": "SPECIES_KINGDRA",
+      "path": "species/SPECIES_KINGDRA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_KINGDRA",
+      "numericId": 230
+    },
+    {
+      "id": "SPECIES_KINGLER",
+      "path": "species/SPECIES_KINGLER.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_KINGLER",
+      "numericId": 99
+    },
+    {
+      "id": "SPECIES_KIRLIA",
+      "path": "species/SPECIES_KIRLIA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_KIRLIA",
+      "numericId": 393
+    },
+    {
+      "id": "SPECIES_KOFFING",
+      "path": "species/SPECIES_KOFFING.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_KOFFING",
+      "numericId": 109
+    },
+    {
+      "id": "SPECIES_KRABBY",
+      "path": "species/SPECIES_KRABBY.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_KRABBY",
+      "numericId": 98
+    },
+    {
+      "id": "SPECIES_KYOGRE",
+      "path": "species/SPECIES_KYOGRE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_KYOGRE",
+      "numericId": 404
+    },
+    {
+      "id": "SPECIES_LAIRON",
+      "path": "species/SPECIES_LAIRON.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_LAIRON",
+      "numericId": 383
+    },
+    {
+      "id": "SPECIES_LANTURN",
+      "path": "species/SPECIES_LANTURN.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_LANTURN",
+      "numericId": 171
+    },
+    {
+      "id": "SPECIES_LAPRAS",
+      "path": "species/SPECIES_LAPRAS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_LAPRAS",
+      "numericId": 131
+    },
+    {
+      "id": "SPECIES_LARVITAR",
+      "path": "species/SPECIES_LARVITAR.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_LARVITAR",
+      "numericId": 246
+    },
+    {
+      "id": "SPECIES_LATIAS",
+      "path": "species/SPECIES_LATIAS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_LATIAS",
+      "numericId": 407
+    },
+    {
+      "id": "SPECIES_LATIOS",
+      "path": "species/SPECIES_LATIOS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_LATIOS",
+      "numericId": 408
+    },
+    {
+      "id": "SPECIES_LEDIAN",
+      "path": "species/SPECIES_LEDIAN.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_LEDIAN",
+      "numericId": 166
+    },
+    {
+      "id": "SPECIES_LEDYBA",
+      "path": "species/SPECIES_LEDYBA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_LEDYBA",
+      "numericId": 165
+    },
+    {
+      "id": "SPECIES_LICKITUNG",
+      "path": "species/SPECIES_LICKITUNG.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_LICKITUNG",
+      "numericId": 108
+    },
+    {
+      "id": "SPECIES_LILEEP",
+      "path": "species/SPECIES_LILEEP.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_LILEEP",
+      "numericId": 388
+    },
+    {
+      "id": "SPECIES_LINOONE",
+      "path": "species/SPECIES_LINOONE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_LINOONE",
+      "numericId": 289
+    },
+    {
+      "id": "SPECIES_LOMBRE",
+      "path": "species/SPECIES_LOMBRE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_LOMBRE",
+      "numericId": 296
+    },
+    {
+      "id": "SPECIES_LOTAD",
+      "path": "species/SPECIES_LOTAD.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_LOTAD",
+      "numericId": 295
+    },
+    {
+      "id": "SPECIES_LOUDRED",
+      "path": "species/SPECIES_LOUDRED.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_LOUDRED",
+      "numericId": 371
+    },
+    {
+      "id": "SPECIES_LUDICOLO",
+      "path": "species/SPECIES_LUDICOLO.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_LUDICOLO",
+      "numericId": 297
+    },
+    {
+      "id": "SPECIES_LUGIA",
+      "path": "species/SPECIES_LUGIA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_LUGIA",
+      "numericId": 249
+    },
+    {
+      "id": "SPECIES_LUNATONE",
+      "path": "species/SPECIES_LUNATONE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_LUNATONE",
+      "numericId": 348
+    },
+    {
+      "id": "SPECIES_LUVDISC",
+      "path": "species/SPECIES_LUVDISC.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_LUVDISC",
+      "numericId": 325
+    },
+    {
+      "id": "SPECIES_MACHAMP",
+      "path": "species/SPECIES_MACHAMP.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MACHAMP",
+      "numericId": 68
+    },
+    {
+      "id": "SPECIES_MACHOKE",
+      "path": "species/SPECIES_MACHOKE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MACHOKE",
+      "numericId": 67
+    },
+    {
+      "id": "SPECIES_MACHOP",
+      "path": "species/SPECIES_MACHOP.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MACHOP",
+      "numericId": 66
+    },
+    {
+      "id": "SPECIES_MAGBY",
+      "path": "species/SPECIES_MAGBY.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MAGBY",
+      "numericId": 240
+    },
+    {
+      "id": "SPECIES_MAGCARGO",
+      "path": "species/SPECIES_MAGCARGO.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MAGCARGO",
+      "numericId": 219
+    },
+    {
+      "id": "SPECIES_MAGIKARP",
+      "path": "species/SPECIES_MAGIKARP.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MAGIKARP",
+      "numericId": 129
+    },
+    {
+      "id": "SPECIES_MAGMAR",
+      "path": "species/SPECIES_MAGMAR.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MAGMAR",
+      "numericId": 126
+    },
+    {
+      "id": "SPECIES_MAGNEMITE",
+      "path": "species/SPECIES_MAGNEMITE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MAGNEMITE",
+      "numericId": 81
+    },
+    {
+      "id": "SPECIES_MAGNETON",
+      "path": "species/SPECIES_MAGNETON.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MAGNETON",
+      "numericId": 82
+    },
+    {
+      "id": "SPECIES_MAKUHITA",
+      "path": "species/SPECIES_MAKUHITA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MAKUHITA",
+      "numericId": 335
+    },
+    {
+      "id": "SPECIES_MANECTRIC",
+      "path": "species/SPECIES_MANECTRIC.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MANECTRIC",
+      "numericId": 338
+    },
+    {
+      "id": "SPECIES_MANKEY",
+      "path": "species/SPECIES_MANKEY.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MANKEY",
+      "numericId": 56
+    },
+    {
+      "id": "SPECIES_MANTINE",
+      "path": "species/SPECIES_MANTINE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MANTINE",
+      "numericId": 226
+    },
+    {
+      "id": "SPECIES_MAREEP",
+      "path": "species/SPECIES_MAREEP.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MAREEP",
+      "numericId": 179
+    },
+    {
+      "id": "SPECIES_MARILL",
+      "path": "species/SPECIES_MARILL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MARILL",
+      "numericId": 183
+    },
+    {
+      "id": "SPECIES_MAROWAK",
+      "path": "species/SPECIES_MAROWAK.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MAROWAK",
+      "numericId": 105
+    },
+    {
+      "id": "SPECIES_MARSHTOMP",
+      "path": "species/SPECIES_MARSHTOMP.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MARSHTOMP",
+      "numericId": 284
+    },
+    {
+      "id": "SPECIES_MASQUERAIN",
+      "path": "species/SPECIES_MASQUERAIN.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MASQUERAIN",
+      "numericId": 312
+    },
+    {
+      "id": "SPECIES_MAWILE",
+      "path": "species/SPECIES_MAWILE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MAWILE",
+      "numericId": 355
+    },
+    {
+      "id": "SPECIES_MEDICHAM",
+      "path": "species/SPECIES_MEDICHAM.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MEDICHAM",
+      "numericId": 357
+    },
+    {
+      "id": "SPECIES_MEDITITE",
+      "path": "species/SPECIES_MEDITITE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MEDITITE",
+      "numericId": 356
+    },
+    {
+      "id": "SPECIES_MEGANIUM",
+      "path": "species/SPECIES_MEGANIUM.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MEGANIUM",
+      "numericId": 154
+    },
+    {
+      "id": "SPECIES_MEOWTH",
+      "path": "species/SPECIES_MEOWTH.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MEOWTH",
+      "numericId": 52
+    },
+    {
+      "id": "SPECIES_METAGROSS",
+      "path": "species/SPECIES_METAGROSS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_METAGROSS",
+      "numericId": 400
+    },
+    {
+      "id": "SPECIES_METANG",
+      "path": "species/SPECIES_METANG.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_METANG",
+      "numericId": 399
+    },
+    {
+      "id": "SPECIES_METAPOD",
+      "path": "species/SPECIES_METAPOD.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_METAPOD",
+      "numericId": 11
+    },
+    {
+      "id": "SPECIES_MEW",
+      "path": "species/SPECIES_MEW.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MEW",
+      "numericId": 151
+    },
+    {
+      "id": "SPECIES_MEWTWO",
+      "path": "species/SPECIES_MEWTWO.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MEWTWO",
+      "numericId": 150
+    },
+    {
+      "id": "SPECIES_MIGHTYENA",
+      "path": "species/SPECIES_MIGHTYENA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MIGHTYENA",
+      "numericId": 287
+    },
+    {
+      "id": "SPECIES_MILOTIC",
+      "path": "species/SPECIES_MILOTIC.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MILOTIC",
+      "numericId": 329
+    },
+    {
+      "id": "SPECIES_MILTANK",
+      "path": "species/SPECIES_MILTANK.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MILTANK",
+      "numericId": 241
+    },
+    {
+      "id": "SPECIES_MINUN",
+      "path": "species/SPECIES_MINUN.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MINUN",
+      "numericId": 354
+    },
+    {
+      "id": "SPECIES_MISDREAVUS",
+      "path": "species/SPECIES_MISDREAVUS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MISDREAVUS",
+      "numericId": 200
+    },
+    {
+      "id": "SPECIES_MOLTRES",
+      "path": "species/SPECIES_MOLTRES.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MOLTRES",
+      "numericId": 146
+    },
+    {
+      "id": "SPECIES_MR_MIME",
+      "path": "species/SPECIES_MR_MIME.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MR_MIME",
+      "numericId": 122
+    },
+    {
+      "id": "SPECIES_MUDKIP",
+      "path": "species/SPECIES_MUDKIP.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MUDKIP",
+      "numericId": 283
+    },
+    {
+      "id": "SPECIES_MUK",
+      "path": "species/SPECIES_MUK.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MUK",
+      "numericId": 89
+    },
+    {
+      "id": "SPECIES_MURKROW",
+      "path": "species/SPECIES_MURKROW.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_MURKROW",
+      "numericId": 198
+    },
+    {
+      "id": "SPECIES_NATU",
+      "path": "species/SPECIES_NATU.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_NATU",
+      "numericId": 177
+    },
+    {
+      "id": "SPECIES_NIDOKING",
+      "path": "species/SPECIES_NIDOKING.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_NIDOKING",
+      "numericId": 34
+    },
+    {
+      "id": "SPECIES_NIDOQUEEN",
+      "path": "species/SPECIES_NIDOQUEEN.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_NIDOQUEEN",
+      "numericId": 31
+    },
+    {
+      "id": "SPECIES_NIDORAN_F",
+      "path": "species/SPECIES_NIDORAN_F.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_NIDORAN_F",
+      "numericId": 29
+    },
+    {
+      "id": "SPECIES_NIDORAN_M",
+      "path": "species/SPECIES_NIDORAN_M.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_NIDORAN_M",
+      "numericId": 32
+    },
+    {
+      "id": "SPECIES_NIDORINA",
+      "path": "species/SPECIES_NIDORINA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_NIDORINA",
+      "numericId": 30
+    },
+    {
+      "id": "SPECIES_NIDORINO",
+      "path": "species/SPECIES_NIDORINO.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_NIDORINO",
+      "numericId": 33
+    },
+    {
+      "id": "SPECIES_NINCADA",
+      "path": "species/SPECIES_NINCADA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_NINCADA",
+      "numericId": 301
+    },
+    {
+      "id": "SPECIES_NINETALES",
+      "path": "species/SPECIES_NINETALES.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_NINETALES",
+      "numericId": 38
+    },
+    {
+      "id": "SPECIES_NINJASK",
+      "path": "species/SPECIES_NINJASK.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_NINJASK",
+      "numericId": 302
+    },
+    {
+      "id": "SPECIES_NOCTOWL",
+      "path": "species/SPECIES_NOCTOWL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_NOCTOWL",
+      "numericId": 164
+    },
+    {
+      "id": "SPECIES_NONE",
+      "path": "species/SPECIES_NONE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_NONE",
+      "numericId": 0
+    },
+    {
+      "id": "SPECIES_NOSEPASS",
+      "path": "species/SPECIES_NOSEPASS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_NOSEPASS",
+      "numericId": 320
+    },
+    {
+      "id": "SPECIES_NUMEL",
+      "path": "species/SPECIES_NUMEL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_NUMEL",
+      "numericId": 339
+    },
+    {
+      "id": "SPECIES_NUZLEAF",
+      "path": "species/SPECIES_NUZLEAF.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_NUZLEAF",
+      "numericId": 299
+    },
+    {
+      "id": "SPECIES_OCTILLERY",
+      "path": "species/SPECIES_OCTILLERY.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OCTILLERY",
+      "numericId": 224
+    },
+    {
+      "id": "SPECIES_ODDISH",
+      "path": "species/SPECIES_ODDISH.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ODDISH",
+      "numericId": 43
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_B",
+      "path": "species/SPECIES_OLD_UNOWN_B.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_B",
+      "numericId": 252
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_C",
+      "path": "species/SPECIES_OLD_UNOWN_C.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_C",
+      "numericId": 253
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_D",
+      "path": "species/SPECIES_OLD_UNOWN_D.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_D",
+      "numericId": 254
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_E",
+      "path": "species/SPECIES_OLD_UNOWN_E.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_E",
+      "numericId": 255
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_F",
+      "path": "species/SPECIES_OLD_UNOWN_F.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_F",
+      "numericId": 256
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_G",
+      "path": "species/SPECIES_OLD_UNOWN_G.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_G",
+      "numericId": 257
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_H",
+      "path": "species/SPECIES_OLD_UNOWN_H.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_H",
+      "numericId": 258
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_I",
+      "path": "species/SPECIES_OLD_UNOWN_I.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_I",
+      "numericId": 259
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_J",
+      "path": "species/SPECIES_OLD_UNOWN_J.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_J",
+      "numericId": 260
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_K",
+      "path": "species/SPECIES_OLD_UNOWN_K.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_K",
+      "numericId": 261
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_L",
+      "path": "species/SPECIES_OLD_UNOWN_L.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_L",
+      "numericId": 262
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_M",
+      "path": "species/SPECIES_OLD_UNOWN_M.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_M",
+      "numericId": 263
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_N",
+      "path": "species/SPECIES_OLD_UNOWN_N.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_N",
+      "numericId": 264
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_O",
+      "path": "species/SPECIES_OLD_UNOWN_O.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_O",
+      "numericId": 265
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_P",
+      "path": "species/SPECIES_OLD_UNOWN_P.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_P",
+      "numericId": 266
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_Q",
+      "path": "species/SPECIES_OLD_UNOWN_Q.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_Q",
+      "numericId": 267
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_R",
+      "path": "species/SPECIES_OLD_UNOWN_R.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_R",
+      "numericId": 268
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_S",
+      "path": "species/SPECIES_OLD_UNOWN_S.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_S",
+      "numericId": 269
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_T",
+      "path": "species/SPECIES_OLD_UNOWN_T.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_T",
+      "numericId": 270
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_U",
+      "path": "species/SPECIES_OLD_UNOWN_U.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_U",
+      "numericId": 271
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_V",
+      "path": "species/SPECIES_OLD_UNOWN_V.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_V",
+      "numericId": 272
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_W",
+      "path": "species/SPECIES_OLD_UNOWN_W.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_W",
+      "numericId": 273
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_X",
+      "path": "species/SPECIES_OLD_UNOWN_X.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_X",
+      "numericId": 274
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_Y",
+      "path": "species/SPECIES_OLD_UNOWN_Y.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_Y",
+      "numericId": 275
+    },
+    {
+      "id": "SPECIES_OLD_UNOWN_Z",
+      "path": "species/SPECIES_OLD_UNOWN_Z.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OLD_UNOWN_Z",
+      "numericId": 276
+    },
+    {
+      "id": "SPECIES_OMANYTE",
+      "path": "species/SPECIES_OMANYTE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OMANYTE",
+      "numericId": 138
+    },
+    {
+      "id": "SPECIES_OMASTAR",
+      "path": "species/SPECIES_OMASTAR.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_OMASTAR",
+      "numericId": 139
+    },
+    {
+      "id": "SPECIES_ONIX",
+      "path": "species/SPECIES_ONIX.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ONIX",
+      "numericId": 95
+    },
+    {
+      "id": "SPECIES_PARAS",
+      "path": "species/SPECIES_PARAS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_PARAS",
+      "numericId": 46
+    },
+    {
+      "id": "SPECIES_PARASECT",
+      "path": "species/SPECIES_PARASECT.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_PARASECT",
+      "numericId": 47
+    },
+    {
+      "id": "SPECIES_PELIPPER",
+      "path": "species/SPECIES_PELIPPER.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_PELIPPER",
+      "numericId": 310
+    },
+    {
+      "id": "SPECIES_PERSIAN",
+      "path": "species/SPECIES_PERSIAN.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_PERSIAN",
+      "numericId": 53
+    },
+    {
+      "id": "SPECIES_PHANPY",
+      "path": "species/SPECIES_PHANPY.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_PHANPY",
+      "numericId": 231
+    },
+    {
+      "id": "SPECIES_PICHU",
+      "path": "species/SPECIES_PICHU.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_PICHU",
+      "numericId": 172
+    },
+    {
+      "id": "SPECIES_PIDGEOT",
+      "path": "species/SPECIES_PIDGEOT.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_PIDGEOT",
+      "numericId": 18
+    },
+    {
+      "id": "SPECIES_PIDGEOTTO",
+      "path": "species/SPECIES_PIDGEOTTO.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_PIDGEOTTO",
+      "numericId": 17
+    },
+    {
+      "id": "SPECIES_PIDGEY",
+      "path": "species/SPECIES_PIDGEY.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_PIDGEY",
+      "numericId": 16
+    },
+    {
+      "id": "SPECIES_PIKACHU",
+      "path": "species/SPECIES_PIKACHU.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_PIKACHU",
+      "numericId": 25
+    },
+    {
+      "id": "SPECIES_PILOSWINE",
+      "path": "species/SPECIES_PILOSWINE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_PILOSWINE",
+      "numericId": 221
+    },
+    {
+      "id": "SPECIES_PINECO",
+      "path": "species/SPECIES_PINECO.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_PINECO",
+      "numericId": 204
+    },
+    {
+      "id": "SPECIES_PINSIR",
+      "path": "species/SPECIES_PINSIR.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_PINSIR",
+      "numericId": 127
+    },
+    {
+      "id": "SPECIES_PLUSLE",
+      "path": "species/SPECIES_PLUSLE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_PLUSLE",
+      "numericId": 353
+    },
+    {
+      "id": "SPECIES_POLITOED",
+      "path": "species/SPECIES_POLITOED.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_POLITOED",
+      "numericId": 186
+    },
+    {
+      "id": "SPECIES_POLIWAG",
+      "path": "species/SPECIES_POLIWAG.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_POLIWAG",
+      "numericId": 60
+    },
+    {
+      "id": "SPECIES_POLIWHIRL",
+      "path": "species/SPECIES_POLIWHIRL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_POLIWHIRL",
+      "numericId": 61
+    },
+    {
+      "id": "SPECIES_POLIWRATH",
+      "path": "species/SPECIES_POLIWRATH.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_POLIWRATH",
+      "numericId": 62
+    },
+    {
+      "id": "SPECIES_PONYTA",
+      "path": "species/SPECIES_PONYTA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_PONYTA",
+      "numericId": 77
+    },
+    {
+      "id": "SPECIES_POOCHYENA",
+      "path": "species/SPECIES_POOCHYENA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_POOCHYENA",
+      "numericId": 286
+    },
+    {
+      "id": "SPECIES_PORYGON",
+      "path": "species/SPECIES_PORYGON.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_PORYGON",
+      "numericId": 137
+    },
+    {
+      "id": "SPECIES_PORYGON2",
+      "path": "species/SPECIES_PORYGON2.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_PORYGON2",
+      "numericId": 233
+    },
+    {
+      "id": "SPECIES_PRIMEAPE",
+      "path": "species/SPECIES_PRIMEAPE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_PRIMEAPE",
+      "numericId": 57
+    },
+    {
+      "id": "SPECIES_PSYDUCK",
+      "path": "species/SPECIES_PSYDUCK.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_PSYDUCK",
+      "numericId": 54
+    },
+    {
+      "id": "SPECIES_PUPITAR",
+      "path": "species/SPECIES_PUPITAR.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_PUPITAR",
+      "numericId": 247
+    },
+    {
+      "id": "SPECIES_QUAGSIRE",
+      "path": "species/SPECIES_QUAGSIRE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_QUAGSIRE",
+      "numericId": 195
+    },
+    {
+      "id": "SPECIES_QUILAVA",
+      "path": "species/SPECIES_QUILAVA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_QUILAVA",
+      "numericId": 156
+    },
+    {
+      "id": "SPECIES_QWILFISH",
+      "path": "species/SPECIES_QWILFISH.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_QWILFISH",
+      "numericId": 211
+    },
+    {
+      "id": "SPECIES_RAICHU",
+      "path": "species/SPECIES_RAICHU.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_RAICHU",
+      "numericId": 26
+    },
+    {
+      "id": "SPECIES_RAIKOU",
+      "path": "species/SPECIES_RAIKOU.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_RAIKOU",
+      "numericId": 243
+    },
+    {
+      "id": "SPECIES_RALTS",
+      "path": "species/SPECIES_RALTS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_RALTS",
+      "numericId": 392
+    },
+    {
+      "id": "SPECIES_RAPIDASH",
+      "path": "species/SPECIES_RAPIDASH.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_RAPIDASH",
+      "numericId": 78
+    },
+    {
+      "id": "SPECIES_RATICATE",
+      "path": "species/SPECIES_RATICATE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_RATICATE",
+      "numericId": 20
+    },
+    {
+      "id": "SPECIES_RATTATA",
+      "path": "species/SPECIES_RATTATA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_RATTATA",
+      "numericId": 19
+    },
+    {
+      "id": "SPECIES_RAYQUAZA",
+      "path": "species/SPECIES_RAYQUAZA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_RAYQUAZA",
+      "numericId": 406
+    },
+    {
+      "id": "SPECIES_REGICE",
+      "path": "species/SPECIES_REGICE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_REGICE",
+      "numericId": 402
+    },
+    {
+      "id": "SPECIES_REGIROCK",
+      "path": "species/SPECIES_REGIROCK.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_REGIROCK",
+      "numericId": 401
+    },
+    {
+      "id": "SPECIES_REGISTEEL",
+      "path": "species/SPECIES_REGISTEEL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_REGISTEEL",
+      "numericId": 403
+    },
+    {
+      "id": "SPECIES_RELICANTH",
+      "path": "species/SPECIES_RELICANTH.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_RELICANTH",
+      "numericId": 381
+    },
+    {
+      "id": "SPECIES_REMORAID",
+      "path": "species/SPECIES_REMORAID.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_REMORAID",
+      "numericId": 223
+    },
+    {
+      "id": "SPECIES_RHYDON",
+      "path": "species/SPECIES_RHYDON.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_RHYDON",
+      "numericId": 112
+    },
+    {
+      "id": "SPECIES_RHYHORN",
+      "path": "species/SPECIES_RHYHORN.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_RHYHORN",
+      "numericId": 111
+    },
+    {
+      "id": "SPECIES_ROSELIA",
+      "path": "species/SPECIES_ROSELIA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ROSELIA",
+      "numericId": 363
+    },
+    {
+      "id": "SPECIES_SABLEYE",
+      "path": "species/SPECIES_SABLEYE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SABLEYE",
+      "numericId": 322
+    },
+    {
+      "id": "SPECIES_SALAMENCE",
+      "path": "species/SPECIES_SALAMENCE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SALAMENCE",
+      "numericId": 397
+    },
+    {
+      "id": "SPECIES_SANDSHREW",
+      "path": "species/SPECIES_SANDSHREW.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SANDSHREW",
+      "numericId": 27
+    },
+    {
+      "id": "SPECIES_SANDSLASH",
+      "path": "species/SPECIES_SANDSLASH.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SANDSLASH",
+      "numericId": 28
+    },
+    {
+      "id": "SPECIES_SCEPTILE",
+      "path": "species/SPECIES_SCEPTILE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SCEPTILE",
+      "numericId": 279
+    },
+    {
+      "id": "SPECIES_SCIZOR",
+      "path": "species/SPECIES_SCIZOR.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SCIZOR",
+      "numericId": 212
+    },
+    {
+      "id": "SPECIES_SCYTHER",
+      "path": "species/SPECIES_SCYTHER.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SCYTHER",
+      "numericId": 123
+    },
+    {
+      "id": "SPECIES_SEADRA",
+      "path": "species/SPECIES_SEADRA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SEADRA",
+      "numericId": 117
+    },
+    {
+      "id": "SPECIES_SEAKING",
+      "path": "species/SPECIES_SEAKING.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SEAKING",
+      "numericId": 119
+    },
+    {
+      "id": "SPECIES_SEALEO",
+      "path": "species/SPECIES_SEALEO.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SEALEO",
+      "numericId": 342
+    },
+    {
+      "id": "SPECIES_SEEDOT",
+      "path": "species/SPECIES_SEEDOT.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SEEDOT",
+      "numericId": 298
+    },
+    {
+      "id": "SPECIES_SEEL",
+      "path": "species/SPECIES_SEEL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SEEL",
+      "numericId": 86
+    },
+    {
+      "id": "SPECIES_SENTRET",
+      "path": "species/SPECIES_SENTRET.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SENTRET",
+      "numericId": 161
+    },
+    {
+      "id": "SPECIES_SEVIPER",
+      "path": "species/SPECIES_SEVIPER.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SEVIPER",
+      "numericId": 379
+    },
+    {
+      "id": "SPECIES_SHARPEDO",
+      "path": "species/SPECIES_SHARPEDO.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SHARPEDO",
+      "numericId": 331
+    },
+    {
+      "id": "SPECIES_SHEDINJA",
+      "path": "species/SPECIES_SHEDINJA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SHEDINJA",
+      "numericId": 303
+    },
+    {
+      "id": "SPECIES_SHELGON",
+      "path": "species/SPECIES_SHELGON.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SHELGON",
+      "numericId": 396
+    },
+    {
+      "id": "SPECIES_SHELLDER",
+      "path": "species/SPECIES_SHELLDER.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SHELLDER",
+      "numericId": 90
+    },
+    {
+      "id": "SPECIES_SHIFTRY",
+      "path": "species/SPECIES_SHIFTRY.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SHIFTRY",
+      "numericId": 300
+    },
+    {
+      "id": "SPECIES_SHROOMISH",
+      "path": "species/SPECIES_SHROOMISH.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SHROOMISH",
+      "numericId": 306
+    },
+    {
+      "id": "SPECIES_SHUCKLE",
+      "path": "species/SPECIES_SHUCKLE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SHUCKLE",
+      "numericId": 213
+    },
+    {
+      "id": "SPECIES_SHUPPET",
+      "path": "species/SPECIES_SHUPPET.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SHUPPET",
+      "numericId": 377
+    },
+    {
+      "id": "SPECIES_SILCOON",
+      "path": "species/SPECIES_SILCOON.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SILCOON",
+      "numericId": 291
+    },
+    {
+      "id": "SPECIES_SKARMORY",
+      "path": "species/SPECIES_SKARMORY.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SKARMORY",
+      "numericId": 227
+    },
+    {
+      "id": "SPECIES_SKIPLOOM",
+      "path": "species/SPECIES_SKIPLOOM.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SKIPLOOM",
+      "numericId": 188
+    },
+    {
+      "id": "SPECIES_SKITTY",
+      "path": "species/SPECIES_SKITTY.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SKITTY",
+      "numericId": 315
+    },
+    {
+      "id": "SPECIES_SLAKING",
+      "path": "species/SPECIES_SLAKING.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SLAKING",
+      "numericId": 366
+    },
+    {
+      "id": "SPECIES_SLAKOTH",
+      "path": "species/SPECIES_SLAKOTH.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SLAKOTH",
+      "numericId": 364
+    },
+    {
+      "id": "SPECIES_SLOWBRO",
+      "path": "species/SPECIES_SLOWBRO.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SLOWBRO",
+      "numericId": 80
+    },
+    {
+      "id": "SPECIES_SLOWKING",
+      "path": "species/SPECIES_SLOWKING.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SLOWKING",
+      "numericId": 199
+    },
+    {
+      "id": "SPECIES_SLOWPOKE",
+      "path": "species/SPECIES_SLOWPOKE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SLOWPOKE",
+      "numericId": 79
+    },
+    {
+      "id": "SPECIES_SLUGMA",
+      "path": "species/SPECIES_SLUGMA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SLUGMA",
+      "numericId": 218
+    },
+    {
+      "id": "SPECIES_SMEARGLE",
+      "path": "species/SPECIES_SMEARGLE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SMEARGLE",
+      "numericId": 235
+    },
+    {
+      "id": "SPECIES_SMOOCHUM",
+      "path": "species/SPECIES_SMOOCHUM.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SMOOCHUM",
+      "numericId": 238
+    },
+    {
+      "id": "SPECIES_SNEASEL",
+      "path": "species/SPECIES_SNEASEL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SNEASEL",
+      "numericId": 215
+    },
+    {
+      "id": "SPECIES_SNORLAX",
+      "path": "species/SPECIES_SNORLAX.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SNORLAX",
+      "numericId": 143
+    },
+    {
+      "id": "SPECIES_SNORUNT",
+      "path": "species/SPECIES_SNORUNT.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SNORUNT",
+      "numericId": 346
+    },
+    {
+      "id": "SPECIES_SNUBBULL",
+      "path": "species/SPECIES_SNUBBULL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SNUBBULL",
+      "numericId": 209
+    },
+    {
+      "id": "SPECIES_SOLROCK",
+      "path": "species/SPECIES_SOLROCK.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SOLROCK",
+      "numericId": 349
+    },
+    {
+      "id": "SPECIES_SPEAROW",
+      "path": "species/SPECIES_SPEAROW.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SPEAROW",
+      "numericId": 21
+    },
+    {
+      "id": "SPECIES_SPHEAL",
+      "path": "species/SPECIES_SPHEAL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SPHEAL",
+      "numericId": 341
+    },
+    {
+      "id": "SPECIES_SPINARAK",
+      "path": "species/SPECIES_SPINARAK.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SPINARAK",
+      "numericId": 167
+    },
+    {
+      "id": "SPECIES_SPINDA",
+      "path": "species/SPECIES_SPINDA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SPINDA",
+      "numericId": 308
+    },
+    {
+      "id": "SPECIES_SPOINK",
+      "path": "species/SPECIES_SPOINK.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SPOINK",
+      "numericId": 351
+    },
+    {
+      "id": "SPECIES_SQUIRTLE",
+      "path": "species/SPECIES_SQUIRTLE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SQUIRTLE",
+      "numericId": 7
+    },
+    {
+      "id": "SPECIES_STANTLER",
+      "path": "species/SPECIES_STANTLER.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_STANTLER",
+      "numericId": 234
+    },
+    {
+      "id": "SPECIES_STARMIE",
+      "path": "species/SPECIES_STARMIE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_STARMIE",
+      "numericId": 121
+    },
+    {
+      "id": "SPECIES_STARYU",
+      "path": "species/SPECIES_STARYU.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_STARYU",
+      "numericId": 120
+    },
+    {
+      "id": "SPECIES_STEELIX",
+      "path": "species/SPECIES_STEELIX.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_STEELIX",
+      "numericId": 208
+    },
+    {
+      "id": "SPECIES_SUDOWOODO",
+      "path": "species/SPECIES_SUDOWOODO.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SUDOWOODO",
+      "numericId": 185
+    },
+    {
+      "id": "SPECIES_SUICUNE",
+      "path": "species/SPECIES_SUICUNE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SUICUNE",
+      "numericId": 245
+    },
+    {
+      "id": "SPECIES_SUNFLORA",
+      "path": "species/SPECIES_SUNFLORA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SUNFLORA",
+      "numericId": 192
+    },
+    {
+      "id": "SPECIES_SUNKERN",
+      "path": "species/SPECIES_SUNKERN.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SUNKERN",
+      "numericId": 191
+    },
+    {
+      "id": "SPECIES_SURSKIT",
+      "path": "species/SPECIES_SURSKIT.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SURSKIT",
+      "numericId": 311
+    },
+    {
+      "id": "SPECIES_SWABLU",
+      "path": "species/SPECIES_SWABLU.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SWABLU",
+      "numericId": 358
+    },
+    {
+      "id": "SPECIES_SWALOT",
+      "path": "species/SPECIES_SWALOT.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SWALOT",
+      "numericId": 368
+    },
+    {
+      "id": "SPECIES_SWAMPERT",
+      "path": "species/SPECIES_SWAMPERT.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SWAMPERT",
+      "numericId": 285
+    },
+    {
+      "id": "SPECIES_SWELLOW",
+      "path": "species/SPECIES_SWELLOW.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SWELLOW",
+      "numericId": 305
+    },
+    {
+      "id": "SPECIES_SWINUB",
+      "path": "species/SPECIES_SWINUB.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_SWINUB",
+      "numericId": 220
+    },
+    {
+      "id": "SPECIES_TAILLOW",
+      "path": "species/SPECIES_TAILLOW.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_TAILLOW",
+      "numericId": 304
+    },
+    {
+      "id": "SPECIES_TANGELA",
+      "path": "species/SPECIES_TANGELA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_TANGELA",
+      "numericId": 114
+    },
+    {
+      "id": "SPECIES_TAUROS",
+      "path": "species/SPECIES_TAUROS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_TAUROS",
+      "numericId": 128
+    },
+    {
+      "id": "SPECIES_TEDDIURSA",
+      "path": "species/SPECIES_TEDDIURSA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_TEDDIURSA",
+      "numericId": 216
+    },
+    {
+      "id": "SPECIES_TENTACOOL",
+      "path": "species/SPECIES_TENTACOOL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_TENTACOOL",
+      "numericId": 72
+    },
+    {
+      "id": "SPECIES_TENTACRUEL",
+      "path": "species/SPECIES_TENTACRUEL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_TENTACRUEL",
+      "numericId": 73
+    },
+    {
+      "id": "SPECIES_TOGEPI",
+      "path": "species/SPECIES_TOGEPI.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_TOGEPI",
+      "numericId": 175
+    },
+    {
+      "id": "SPECIES_TOGETIC",
+      "path": "species/SPECIES_TOGETIC.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_TOGETIC",
+      "numericId": 176
+    },
+    {
+      "id": "SPECIES_TORCHIC",
+      "path": "species/SPECIES_TORCHIC.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_TORCHIC",
+      "numericId": 280
+    },
+    {
+      "id": "SPECIES_TORKOAL",
+      "path": "species/SPECIES_TORKOAL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_TORKOAL",
+      "numericId": 321
+    },
+    {
+      "id": "SPECIES_TOTODILE",
+      "path": "species/SPECIES_TOTODILE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_TOTODILE",
+      "numericId": 158
+    },
+    {
+      "id": "SPECIES_TRAPINCH",
+      "path": "species/SPECIES_TRAPINCH.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_TRAPINCH",
+      "numericId": 332
+    },
+    {
+      "id": "SPECIES_TREECKO",
+      "path": "species/SPECIES_TREECKO.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_TREECKO",
+      "numericId": 277
+    },
+    {
+      "id": "SPECIES_TROPIUS",
+      "path": "species/SPECIES_TROPIUS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_TROPIUS",
+      "numericId": 369
+    },
+    {
+      "id": "SPECIES_TYPHLOSION",
+      "path": "species/SPECIES_TYPHLOSION.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_TYPHLOSION",
+      "numericId": 157
+    },
+    {
+      "id": "SPECIES_TYRANITAR",
+      "path": "species/SPECIES_TYRANITAR.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_TYRANITAR",
+      "numericId": 248
+    },
+    {
+      "id": "SPECIES_TYROGUE",
+      "path": "species/SPECIES_TYROGUE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_TYROGUE",
+      "numericId": 236
+    },
+    {
+      "id": "SPECIES_UMBREON",
+      "path": "species/SPECIES_UMBREON.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UMBREON",
+      "numericId": 197
+    },
+    {
+      "id": "SPECIES_UNOWN",
+      "path": "species/SPECIES_UNOWN.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN",
+      "numericId": 201
+    },
+    {
+      "id": "SPECIES_UNOWN_B",
+      "path": "species/SPECIES_UNOWN_B.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_B",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_C",
+      "path": "species/SPECIES_UNOWN_C.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_C",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_D",
+      "path": "species/SPECIES_UNOWN_D.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_D",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_E",
+      "path": "species/SPECIES_UNOWN_E.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_E",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_EMARK",
+      "path": "species/SPECIES_UNOWN_EMARK.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_EMARK",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_F",
+      "path": "species/SPECIES_UNOWN_F.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_F",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_G",
+      "path": "species/SPECIES_UNOWN_G.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_G",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_H",
+      "path": "species/SPECIES_UNOWN_H.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_H",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_I",
+      "path": "species/SPECIES_UNOWN_I.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_I",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_J",
+      "path": "species/SPECIES_UNOWN_J.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_J",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_K",
+      "path": "species/SPECIES_UNOWN_K.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_K",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_L",
+      "path": "species/SPECIES_UNOWN_L.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_L",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_M",
+      "path": "species/SPECIES_UNOWN_M.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_M",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_N",
+      "path": "species/SPECIES_UNOWN_N.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_N",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_O",
+      "path": "species/SPECIES_UNOWN_O.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_O",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_P",
+      "path": "species/SPECIES_UNOWN_P.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_P",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_Q",
+      "path": "species/SPECIES_UNOWN_Q.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_Q",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_QMARK",
+      "path": "species/SPECIES_UNOWN_QMARK.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_QMARK",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_R",
+      "path": "species/SPECIES_UNOWN_R.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_R",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_S",
+      "path": "species/SPECIES_UNOWN_S.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_S",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_T",
+      "path": "species/SPECIES_UNOWN_T.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_T",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_U",
+      "path": "species/SPECIES_UNOWN_U.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_U",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_V",
+      "path": "species/SPECIES_UNOWN_V.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_V",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_W",
+      "path": "species/SPECIES_UNOWN_W.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_W",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_X",
+      "path": "species/SPECIES_UNOWN_X.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_X",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_Y",
+      "path": "species/SPECIES_UNOWN_Y.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_Y",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_UNOWN_Z",
+      "path": "species/SPECIES_UNOWN_Z.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_UNOWN_Z",
+      "numericId": null
+    },
+    {
+      "id": "SPECIES_URSARING",
+      "path": "species/SPECIES_URSARING.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_URSARING",
+      "numericId": 217
+    },
+    {
+      "id": "SPECIES_VAPOREON",
+      "path": "species/SPECIES_VAPOREON.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_VAPOREON",
+      "numericId": 134
+    },
+    {
+      "id": "SPECIES_VENOMOTH",
+      "path": "species/SPECIES_VENOMOTH.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_VENOMOTH",
+      "numericId": 49
+    },
+    {
+      "id": "SPECIES_VENONAT",
+      "path": "species/SPECIES_VENONAT.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_VENONAT",
+      "numericId": 48
+    },
+    {
+      "id": "SPECIES_VENUSAUR",
+      "path": "species/SPECIES_VENUSAUR.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_VENUSAUR",
+      "numericId": 3
+    },
+    {
+      "id": "SPECIES_VIBRAVA",
+      "path": "species/SPECIES_VIBRAVA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_VIBRAVA",
+      "numericId": 333
+    },
+    {
+      "id": "SPECIES_VICTREEBEL",
+      "path": "species/SPECIES_VICTREEBEL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_VICTREEBEL",
+      "numericId": 71
+    },
+    {
+      "id": "SPECIES_VIGOROTH",
+      "path": "species/SPECIES_VIGOROTH.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_VIGOROTH",
+      "numericId": 365
+    },
+    {
+      "id": "SPECIES_VILEPLUME",
+      "path": "species/SPECIES_VILEPLUME.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_VILEPLUME",
+      "numericId": 45
+    },
+    {
+      "id": "SPECIES_VOLBEAT",
+      "path": "species/SPECIES_VOLBEAT.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_VOLBEAT",
+      "numericId": 386
+    },
+    {
+      "id": "SPECIES_VOLTORB",
+      "path": "species/SPECIES_VOLTORB.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_VOLTORB",
+      "numericId": 100
+    },
+    {
+      "id": "SPECIES_VULPIX",
+      "path": "species/SPECIES_VULPIX.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_VULPIX",
+      "numericId": 37
+    },
+    {
+      "id": "SPECIES_WAILMER",
+      "path": "species/SPECIES_WAILMER.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_WAILMER",
+      "numericId": 313
+    },
+    {
+      "id": "SPECIES_WAILORD",
+      "path": "species/SPECIES_WAILORD.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_WAILORD",
+      "numericId": 314
+    },
+    {
+      "id": "SPECIES_WALREIN",
+      "path": "species/SPECIES_WALREIN.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_WALREIN",
+      "numericId": 343
+    },
+    {
+      "id": "SPECIES_WARTORTLE",
+      "path": "species/SPECIES_WARTORTLE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_WARTORTLE",
+      "numericId": 8
+    },
+    {
+      "id": "SPECIES_WEEDLE",
+      "path": "species/SPECIES_WEEDLE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_WEEDLE",
+      "numericId": 13
+    },
+    {
+      "id": "SPECIES_WEEPINBELL",
+      "path": "species/SPECIES_WEEPINBELL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_WEEPINBELL",
+      "numericId": 70
+    },
+    {
+      "id": "SPECIES_WEEZING",
+      "path": "species/SPECIES_WEEZING.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_WEEZING",
+      "numericId": 110
+    },
+    {
+      "id": "SPECIES_WHISCASH",
+      "path": "species/SPECIES_WHISCASH.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_WHISCASH",
+      "numericId": 324
+    },
+    {
+      "id": "SPECIES_WHISMUR",
+      "path": "species/SPECIES_WHISMUR.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_WHISMUR",
+      "numericId": 370
+    },
+    {
+      "id": "SPECIES_WIGGLYTUFF",
+      "path": "species/SPECIES_WIGGLYTUFF.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_WIGGLYTUFF",
+      "numericId": 40
+    },
+    {
+      "id": "SPECIES_WINGULL",
+      "path": "species/SPECIES_WINGULL.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_WINGULL",
+      "numericId": 309
+    },
+    {
+      "id": "SPECIES_WOBBUFFET",
+      "path": "species/SPECIES_WOBBUFFET.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_WOBBUFFET",
+      "numericId": 202
+    },
+    {
+      "id": "SPECIES_WOOPER",
+      "path": "species/SPECIES_WOOPER.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_WOOPER",
+      "numericId": 194
+    },
+    {
+      "id": "SPECIES_WURMPLE",
+      "path": "species/SPECIES_WURMPLE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_WURMPLE",
+      "numericId": 290
+    },
+    {
+      "id": "SPECIES_WYNAUT",
+      "path": "species/SPECIES_WYNAUT.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_WYNAUT",
+      "numericId": 360
+    },
+    {
+      "id": "SPECIES_XATU",
+      "path": "species/SPECIES_XATU.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_XATU",
+      "numericId": 178
+    },
+    {
+      "id": "SPECIES_YANMA",
+      "path": "species/SPECIES_YANMA.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_YANMA",
+      "numericId": 193
+    },
+    {
+      "id": "SPECIES_ZANGOOSE",
+      "path": "species/SPECIES_ZANGOOSE.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ZANGOOSE",
+      "numericId": 380
+    },
+    {
+      "id": "SPECIES_ZAPDOS",
+      "path": "species/SPECIES_ZAPDOS.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ZAPDOS",
+      "numericId": 145
+    },
+    {
+      "id": "SPECIES_ZIGZAGOON",
+      "path": "species/SPECIES_ZIGZAGOON.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ZIGZAGOON",
+      "numericId": 288
+    },
+    {
+      "id": "SPECIES_ZUBAT",
+      "path": "species/SPECIES_ZUBAT.json",
+      "sourcePath": "include/constants/species.h",
+      "legacyKind": "species_define",
+      "symbol": "SPECIES_ZUBAT",
+      "numericId": 41
+    }
+  ],
+  "entityCount": 440
+}

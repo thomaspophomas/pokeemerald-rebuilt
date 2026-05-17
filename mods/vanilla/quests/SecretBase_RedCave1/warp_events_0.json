@@ -1,0 +1,27 @@
+{
+  "id": "SecretBase_RedCave1:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SecretBase_RedCave1/map.json",
+    "sha1": "0656667a03e73447404b5300ebff093d5f0f7941"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SecretBase_RedCave1/map.json",
+    "raw": {
+      "x": 5,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "WARP_ID_SECRET_BASE"
+    }
+  },
+  "map": "SecretBase_RedCave1",
+  "mapId": "MAP_SECRET_BASE_RED_CAVE1",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

@@ -1,0 +1,42 @@
+{
+  "id": "SootopolisCity_MysteryEventsHouse_B1F:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_MysteryEventsHouse_B1F/map.json",
+    "sha1": "6d77b8919eb774b3760aeda4b7dfb834a9ddf6e6"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SootopolisCity_MysteryEventsHouse_B1F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_VAR_0",
+      "x": 6,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "0"
+    }
+  },
+  "map": "SootopolisCity_MysteryEventsHouse_B1F",
+  "mapId": "MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_B1F",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_VAR_0",
+  "x": 6,
+  "y": 5,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "0",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

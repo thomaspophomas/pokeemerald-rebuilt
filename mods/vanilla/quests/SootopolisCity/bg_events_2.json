@@ -1,0 +1,30 @@
+{
+  "id": "SootopolisCity:bg_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/map.json",
+    "sha1": "e651f28449773dc24217811c1afadda1854036d9"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SootopolisCity/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 44,
+      "y": 31,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Common_EventScript_ShowPokemonCenterSign"
+    }
+  },
+  "map": "SootopolisCity",
+  "mapId": "MAP_SOOTOPOLIS_CITY",
+  "eventType": "bg_events",
+  "index": 2,
+  "script": "Common_EventScript_ShowPokemonCenterSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

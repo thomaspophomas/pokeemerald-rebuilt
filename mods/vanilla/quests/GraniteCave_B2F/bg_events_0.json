@@ -1,0 +1,28 @@
+{
+  "id": "GraniteCave_B2F:bg_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/GraniteCave_B2F/map.json",
+    "sha1": "677a91e7369311b7ee62fe2f7c178d63d951e776"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/GraniteCave_B2F/map.json",
+    "raw": {
+      "type": "hidden_item",
+      "x": 28,
+      "y": 6,
+      "elevation": 3,
+      "item": "ITEM_EVERSTONE",
+      "flag": "FLAG_HIDDEN_ITEM_GRANITE_CAVE_B2F_EVERSTONE_1"
+    }
+  },
+  "map": "GraniteCave_B2F",
+  "mapId": "MAP_GRANITE_CAVE_B2F",
+  "eventType": "bg_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

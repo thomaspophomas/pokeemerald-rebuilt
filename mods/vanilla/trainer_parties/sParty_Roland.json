@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Roland",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemDefaultMoves sParty_Roland[] = {\n    {\n    .iv = 0,\n    .lvl = 34,\n    .species = SPECIES_CARVANHA,\n    }\n};"
+  },
+  "symbol": "sParty_Roland",
+  "partyType": "TrainerMonNoItemDefaultMoves",
+  "pokemonCount": 1
+}

@@ -1,0 +1,45 @@
+{
+  "id": "Route130:3",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route130/map.json",
+    "sha1": "abc9139221ccdefeecc439e0c49f5ba254873b2b"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route130/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
+      "x": 52,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_130_LIECHI",
+      "script": "BerryTreeScript",
+      "flag": "FLAG_TEMP_HIDE_MIRAGE_ISLAND_BERRY_TREE"
+    }
+  },
+  "map": "Route130",
+  "mapId": "MAP_ROUTE130",
+  "localId": 3,
+  "graphicsId": "OBJ_EVENT_GFX_BERRY_TREE",
+  "x": 52,
+  "y": 9,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "BERRY_TREE_ROUTE_130_LIECHI",
+  "script": "BerryTreeScript",
+  "flag": "FLAG_TEMP_HIDE_MIRAGE_ISLAND_BERRY_TREE",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

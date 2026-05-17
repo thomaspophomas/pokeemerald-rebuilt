@@ -221,5 +221,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SecretBase_RedCave4/map.json",
+    "sha1": "94faf5424670ab418c1c61462bbbe54e19ee84d8"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SecretBase_RedCave4/map.json",
+    "mapName": "SecretBase_RedCave4",
+    "scriptsSourcePath": null
+  },
+  "mapGroup": 25,
+  "mapNum": 18,
+  "mapGroupSymbol": "gMapGroup_IndoorDynamic",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,187 @@
+{
+  "id": "gWildMonHeaders:MAP_SAFARI_ZONE_NORTHEAST:98",
+  "domain": "wild_encounters",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/wild_encounters.json",
+    "sha1": "49cfb49e719fde5aa0543f883b6c85accb82ebac"
+  },
+  "legacy": {
+    "kind": "wild_encounter_group",
+    "sourcePath": "src/data/wild_encounters.json",
+    "groupLabel": "gWildMonHeaders"
+  },
+  "groupLabel": "gWildMonHeaders",
+  "forMaps": true,
+  "fields": [
+    {
+      "type": "land_mons",
+      "encounter_rates": [
+        20,
+        20,
+        10,
+        10,
+        10,
+        10,
+        5,
+        5,
+        4,
+        4,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "water_mons",
+      "encounter_rates": [
+        60,
+        30,
+        5,
+        4,
+        1
+      ]
+    },
+    {
+      "type": "rock_smash_mons",
+      "encounter_rates": [
+        60,
+        30,
+        5,
+        4,
+        1
+      ]
+    },
+    {
+      "type": "fishing_mons",
+      "encounter_rates": [
+        70,
+        30,
+        60,
+        20,
+        20,
+        40,
+        40,
+        15,
+        4,
+        1
+      ],
+      "groups": {
+        "old_rod": [
+          0,
+          1
+        ],
+        "good_rod": [
+          2,
+          3,
+          4
+        ],
+        "super_rod": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    }
+  ],
+  "encounter": {
+    "map": "MAP_SAFARI_ZONE_NORTHEAST",
+    "base_label": "gSafariZone_Northeast",
+    "land_mons": {
+      "encounter_rate": 25,
+      "mons": [
+        {
+          "min_level": 33,
+          "max_level": 33,
+          "species": "SPECIES_AIPOM"
+        },
+        {
+          "min_level": 34,
+          "max_level": 34,
+          "species": "SPECIES_TEDDIURSA"
+        },
+        {
+          "min_level": 35,
+          "max_level": 35,
+          "species": "SPECIES_AIPOM"
+        },
+        {
+          "min_level": 36,
+          "max_level": 36,
+          "species": "SPECIES_TEDDIURSA"
+        },
+        {
+          "min_level": 34,
+          "max_level": 34,
+          "species": "SPECIES_SUNKERN"
+        },
+        {
+          "min_level": 33,
+          "max_level": 33,
+          "species": "SPECIES_LEDYBA"
+        },
+        {
+          "min_level": 35,
+          "max_level": 35,
+          "species": "SPECIES_HOOTHOOT"
+        },
+        {
+          "min_level": 34,
+          "max_level": 34,
+          "species": "SPECIES_PINECO"
+        },
+        {
+          "min_level": 36,
+          "max_level": 36,
+          "species": "SPECIES_HOUNDOUR"
+        },
+        {
+          "min_level": 37,
+          "max_level": 37,
+          "species": "SPECIES_MILTANK"
+        },
+        {
+          "min_level": 39,
+          "max_level": 39,
+          "species": "SPECIES_HOUNDOUR"
+        },
+        {
+          "min_level": 40,
+          "max_level": 40,
+          "species": "SPECIES_MILTANK"
+        }
+      ]
+    },
+    "rock_smash_mons": {
+      "encounter_rate": 25,
+      "mons": [
+        {
+          "min_level": 25,
+          "max_level": 30,
+          "species": "SPECIES_SHUCKLE"
+        },
+        {
+          "min_level": 20,
+          "max_level": 25,
+          "species": "SPECIES_SHUCKLE"
+        },
+        {
+          "min_level": 30,
+          "max_level": 35,
+          "species": "SPECIES_SHUCKLE"
+        },
+        {
+          "min_level": 30,
+          "max_level": 35,
+          "species": "SPECIES_SHUCKLE"
+        },
+        {
+          "min_level": 35,
+          "max_level": 40,
+          "species": "SPECIES_SHUCKLE"
+        }
+      ]
+    }
+  }
+}

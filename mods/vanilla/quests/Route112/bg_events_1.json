@@ -1,0 +1,30 @@
+{
+  "id": "Route112:bg_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route112/map.json",
+    "sha1": "b661693767b6f599786f2403d78ab8974913a097"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route112/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 22,
+      "y": 37,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route112_EventScript_MtChimneyCableCarSign"
+    }
+  },
+  "map": "Route112",
+  "mapId": "MAP_ROUTE112",
+  "eventType": "bg_events",
+  "index": 1,
+  "script": "Route112_EventScript_MtChimneyCableCarSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

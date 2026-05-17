@@ -1,0 +1,46 @@
+{
+  "id": "RustboroCity_Flat1_2F:LOCALID_WALDAS_DAD",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Flat1_2F/map.json",
+    "sha1": "65d9930b788c4b89b851b60d494cf1e252fe7e94"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/RustboroCity_Flat1_2F/map.json",
+    "raw": {
+      "local_id": "LOCALID_WALDAS_DAD",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
+      "x": 8,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RustboroCity_Flat1_2F_EventScript_WaldasDad",
+      "flag": "0"
+    }
+  },
+  "map": "RustboroCity_Flat1_2F",
+  "mapId": "MAP_RUSTBORO_CITY_FLAT1_2F",
+  "localId": "LOCALID_WALDAS_DAD",
+  "graphicsId": "OBJ_EVENT_GFX_MAN_1",
+  "x": 8,
+  "y": 5,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "RustboroCity_Flat1_2F_EventScript_WaldasDad",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

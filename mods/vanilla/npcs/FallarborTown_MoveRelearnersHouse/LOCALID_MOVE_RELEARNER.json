@@ -1,0 +1,46 @@
+{
+  "id": "FallarborTown_MoveRelearnersHouse:LOCALID_MOVE_RELEARNER",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_MoveRelearnersHouse/map.json",
+    "sha1": "46698b461841f016dc7b6a0832a0dd1c8ffadc77"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/FallarborTown_MoveRelearnersHouse/map.json",
+    "raw": {
+      "local_id": "LOCALID_MOVE_RELEARNER",
+      "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
+      "x": 4,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FallarborTown_MoveRelearnersHouse_EventScript_MoveRelearner",
+      "flag": "0"
+    }
+  },
+  "map": "FallarborTown_MoveRelearnersHouse",
+  "mapId": "MAP_FALLARBOR_TOWN_MOVE_RELEARNERS_HOUSE",
+  "localId": "LOCALID_MOVE_RELEARNER",
+  "graphicsId": "OBJ_EVENT_GFX_FAT_MAN",
+  "x": 4,
+  "y": 4,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "FallarborTown_MoveRelearnersHouse_EventScript_MoveRelearner",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

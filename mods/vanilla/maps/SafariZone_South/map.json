@@ -120,5 +120,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_South/map.json",
+    "sha1": "8baf48e1259b4314bb0edbd7f5b208949a5855ac"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SafariZone_South/map.json",
+    "mapName": "SafariZone_South",
+    "scriptsSourcePath": "data/maps/SafariZone_South/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 3,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

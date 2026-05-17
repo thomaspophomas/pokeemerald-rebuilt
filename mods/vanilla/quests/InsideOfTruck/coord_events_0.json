@@ -1,0 +1,31 @@
+{
+  "id": "InsideOfTruck:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/InsideOfTruck/map.json",
+    "sha1": "c40354a9dae7ff7c27b55a8889b486648e9561e5"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/InsideOfTruck/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 3,
+      "y": 1,
+      "elevation": 3,
+      "var": "VAR_LITTLEROOT_INTRO_STATE",
+      "var_value": "0",
+      "script": "InsideOfTruck_EventScript_SetIntroFlags"
+    }
+  },
+  "map": "InsideOfTruck",
+  "mapId": "MAP_INSIDE_OF_TRUCK",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": "InsideOfTruck_EventScript_SetIntroFlags",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_TORI_AND_TIA",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_TORI_AND_TIA] =\n    {\n        .trainerClass = TRAINER_CLASS_TWINS,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,\n        .trainerPic = TRAINER_PIC_TWINS,\n        .trainerName = _(\"TORI & TIA\"),\n        .items = {},\n        .doubleBattle = TRUE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_ToriAndTia),\n    },"
+  },
+  "symbol": "TRAINER_TORI_AND_TIA",
+  "numericId": 677,
+  "trainerName": "TORI & TIA",
+  "trainerClass": "TRAINER_CLASS_TWINS",
+  "trainerPic": "TRAINER_PIC_TWINS",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_TWINS",
+  "doubleBattle": "TRUE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_ToriAndTia",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

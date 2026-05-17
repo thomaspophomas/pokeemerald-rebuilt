@@ -1,0 +1,27 @@
+{
+  "id": "EverGrandeCity:warp_events:3",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity/map.json",
+    "sha1": "0cc8791074133ebfd3478a2f4e9b240b955f5902"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/EverGrandeCity/map.json",
+    "raw": {
+      "x": 18,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_VICTORY_ROAD_1F",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "EverGrandeCity",
+  "mapId": "MAP_EVER_GRANDE_CITY",
+  "eventType": "warp_events",
+  "index": 3,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

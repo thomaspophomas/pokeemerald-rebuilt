@@ -1,0 +1,27 @@
+{
+  "id": "PacifidlogTown_House2:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_House2/map.json",
+    "sha1": "2c6953285f0fa952875f1b4bf0043f8432148eb2"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/PacifidlogTown_House2/map.json",
+    "raw": {
+      "x": 4,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_PACIFIDLOG_TOWN",
+      "dest_warp_id": "2"
+    }
+  },
+  "map": "PacifidlogTown_House2",
+  "mapId": "MAP_PACIFIDLOG_TOWN_HOUSE2",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

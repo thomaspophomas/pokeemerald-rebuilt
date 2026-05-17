@@ -59,5 +59,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney_CableCarStation/map.json",
+    "sha1": "b53c07d6ad80e9bc6863e52fbfe2254e16272abb"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/MtChimney_CableCarStation/map.json",
+    "mapName": "MtChimney_CableCarStation",
+    "scriptsSourcePath": "data/maps/MtChimney_CableCarStation/scripts.inc"
+  },
+  "mapGroup": 19,
+  "mapNum": 1,
+  "mapGroupSymbol": "gMapGroup_IndoorRoute112",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -461,5 +461,26 @@
       "item": "ITEM_NUGGET",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_113_NUGGET"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113/map.json",
+    "sha1": "4d5b412e7056cb5dda1085ac70fb8a367cb400c1"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route113/map.json",
+    "mapName": "Route113",
+    "scriptsSourcePath": "data/maps/Route113/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 28,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

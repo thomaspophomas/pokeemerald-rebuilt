@@ -1,0 +1,27 @@
+{
+  "id": "GraniteCave_B2F:warp_events:3",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/GraniteCave_B2F/map.json",
+    "sha1": "677a91e7369311b7ee62fe2f7c178d63d951e776"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/GraniteCave_B2F/map.json",
+    "raw": {
+      "x": 12,
+      "y": 3,
+      "elevation": 3,
+      "dest_map": "MAP_GRANITE_CAVE_B1F",
+      "dest_warp_id": "5"
+    }
+  },
+  "map": "GraniteCave_B2F",
+  "mapId": "MAP_GRANITE_CAVE_B2F",
+  "eventType": "warp_events",
+  "index": 3,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

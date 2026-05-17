@@ -1,0 +1,27 @@
+{
+  "id": "Route114:bg_events:3",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114/map.json",
+    "sha1": "29d60125e847150e48178ca05f36f1470cb0211c"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route114/map.json",
+    "raw": {
+      "type": "secret_base",
+      "x": 30,
+      "y": 51,
+      "elevation": 0,
+      "secret_base_id": "SECRET_BASE_BROWN_CAVE2_1"
+    }
+  },
+  "map": "Route114",
+  "mapId": "MAP_ROUTE114",
+  "eventType": "bg_events",
+  "index": 3,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

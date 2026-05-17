@@ -1,0 +1,17 @@
+{
+  "id": "sParty_KateAndJoy",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_KateAndJoy[] = {\n    {\n    .iv = 0,\n    .lvl = 30,\n    .species = SPECIES_SPINDA,\n    .moves = {MOVE_HYPNOSIS, MOVE_PSYBEAM, MOVE_DIZZY_PUNCH, MOVE_TEETER_DANCE}\n    },\n    {\n    .iv = 0,\n    .lvl = 32,\n    .species = SPECIES_SLAKING,\n    .moves = {MOVE_FOCUS_PUNCH, MOVE_YAWN, MOVE_SLACK_OFF, MOVE_FAINT_ATTACK}\n    }\n};"
+  },
+  "symbol": "sParty_KateAndJoy",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 2
+}

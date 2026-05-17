@@ -1,0 +1,27 @@
+{
+  "id": "CaveOfOrigin_Entrance:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/CaveOfOrigin_Entrance/map.json",
+    "sha1": "99a460d0d0ef5a7b2cbcc5dcd61f33d9bf1574f8"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/CaveOfOrigin_Entrance/map.json",
+    "raw": {
+      "x": 9,
+      "y": 20,
+      "elevation": 3,
+      "dest_map": "MAP_SOOTOPOLIS_CITY",
+      "dest_warp_id": "3"
+    }
+  },
+  "map": "CaveOfOrigin_Entrance",
+  "mapId": "MAP_CAVE_OF_ORIGIN_ENTRANCE",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

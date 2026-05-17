@@ -126,5 +126,26 @@
       "script": "BattleFrontier_BattlePikeThreePathRoom_EventScript_NoTurningBack"
     }
   ],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeThreePathRoom/map.json",
+    "sha1": "22afb95cb47369aa1014e20deec5c150f6d8f6fd"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeThreePathRoom/map.json",
+    "mapName": "BattleFrontier_BattlePikeThreePathRoom",
+    "scriptsSourcePath": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 36,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

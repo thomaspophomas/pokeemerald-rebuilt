@@ -1,0 +1,16 @@
+{
+  "id": "Route109_SeashoreHouse:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route109_SeashoreHouse/map.json",
+    "sha1": "2ca49f80c6aafb75ff0dead58f821265a513a625"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/Route109_SeashoreHouse/map.json"
+  },
+  "map": "Route109_SeashoreHouse",
+  "mapId": "MAP_ROUTE109_SEASHORE_HOUSE",
+  "weather": "WEATHER_NONE"
+}

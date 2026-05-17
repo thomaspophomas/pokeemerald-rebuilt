@@ -71,5 +71,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116_TunnelersRestHouse/map.json",
+    "sha1": "8cf753cfc766fad16331c25029b818100d00a61b"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route116_TunnelersRestHouse/map.json",
+    "mapName": "Route116_TunnelersRestHouse",
+    "scriptsSourcePath": "data/maps/Route116_TunnelersRestHouse/scripts.inc"
+  },
+  "mapGroup": 21,
+  "mapNum": 0,
+  "mapGroupSymbol": "gMapGroup_IndoorRoute116",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

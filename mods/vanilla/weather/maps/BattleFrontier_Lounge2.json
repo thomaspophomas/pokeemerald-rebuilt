@@ -1,0 +1,16 @@
+{
+  "id": "BattleFrontier_Lounge2:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge2/map.json",
+    "sha1": "bf01d42930f3acc5c3521484e07096bf9d6b3eb2"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/BattleFrontier_Lounge2/map.json"
+  },
+  "map": "BattleFrontier_Lounge2",
+  "mapId": "MAP_BATTLE_FRONTIER_LOUNGE2",
+  "weather": "WEATHER_NONE"
+}

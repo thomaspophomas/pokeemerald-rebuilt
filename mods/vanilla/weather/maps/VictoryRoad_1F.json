@@ -1,0 +1,16 @@
+{
+  "id": "VictoryRoad_1F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_1F/map.json",
+    "sha1": "d2466927c82f22b7d85aef4a98fe5a48b65b1e8a"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/VictoryRoad_1F/map.json"
+  },
+  "map": "VictoryRoad_1F",
+  "mapId": "MAP_VICTORY_ROAD_1F",
+  "weather": "WEATHER_NONE"
+}

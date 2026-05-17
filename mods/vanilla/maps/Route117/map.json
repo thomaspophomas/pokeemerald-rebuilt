@@ -382,5 +382,26 @@
       "item": "ITEM_REPEL",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_117_REPEL"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route117/map.json",
+    "sha1": "c7c9af5ecd59a144046f8ae0ea2b93cb235f5110"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route117/map.json",
+    "mapName": "Route117",
+    "scriptsSourcePath": "data/maps/Route117/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 32,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

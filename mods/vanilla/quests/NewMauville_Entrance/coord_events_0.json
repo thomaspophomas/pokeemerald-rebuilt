@@ -1,0 +1,31 @@
+{
+  "id": "NewMauville_Entrance:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NewMauville_Entrance/map.json",
+    "sha1": "bcc1eb30c3ad8d2f4f156e4f004a27870411eb7e"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/NewMauville_Entrance/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 4,
+      "y": 2,
+      "elevation": 3,
+      "var": "VAR_NEW_MAUVILLE_STATE",
+      "var_value": "0",
+      "script": "NewMauville_Entrance_EventScript_Door"
+    }
+  },
+  "map": "NewMauville_Entrance",
+  "mapId": "MAP_NEW_MAUVILLE_ENTRANCE",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": "NewMauville_Entrance_EventScript_Door",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

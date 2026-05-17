@@ -1,0 +1,31 @@
+{
+  "id": "Route110_TrickHousePuzzle5:coord_events:6",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle5/map.json",
+    "sha1": "997a1a0aeaa25dcdb447704587c9137fe7aa475f"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle5/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 13,
+      "y": 10,
+      "elevation": 3,
+      "var": "VAR_TEMP_3",
+      "var_value": "0",
+      "script": "Route110_TrickHousePuzzle5_EventScript_Mechadoll3Trigger0"
+    }
+  },
+  "map": "Route110_TrickHousePuzzle5",
+  "mapId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE5",
+  "eventType": "coord_events",
+  "index": 6,
+  "script": "Route110_TrickHousePuzzle5_EventScript_Mechadoll3Trigger0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

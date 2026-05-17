@@ -458,5 +458,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "MtChimney_EventScript_RouteSign"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney/map.json",
+    "sha1": "02de2926332ab99346150e00976e69d6b7b962d7"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/MtChimney/map.json",
+    "mapName": "MtChimney",
+    "scriptsSourcePath": "data/maps/MtChimney/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 12,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

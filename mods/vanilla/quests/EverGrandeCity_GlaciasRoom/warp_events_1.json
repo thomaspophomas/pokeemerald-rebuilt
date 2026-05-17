@@ -1,0 +1,27 @@
+{
+  "id": "EverGrandeCity_GlaciasRoom:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_GlaciasRoom/map.json",
+    "sha1": "bcc0145ae2d18c0e7a4faa64d18e7bd5e1b8e50d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/EverGrandeCity_GlaciasRoom/map.json",
+    "raw": {
+      "x": 6,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_EVER_GRANDE_CITY_HALL3",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "EverGrandeCity_GlaciasRoom",
+  "mapId": "MAP_EVER_GRANDE_CITY_GLACIAS_ROOM",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

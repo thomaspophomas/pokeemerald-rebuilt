@@ -1,0 +1,45 @@
+{
+  "id": "PacifidlogTown_House2:2",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_House2/map.json",
+    "sha1": "2c6953285f0fa952875f1b4bf0043f8432148eb2"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/PacifidlogTown_House2/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_AZURILL",
+      "x": 8,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PacifidlogTown_House2_EventScript_HappyAzurill",
+      "flag": "0"
+    }
+  },
+  "map": "PacifidlogTown_House2",
+  "mapId": "MAP_PACIFIDLOG_TOWN_HOUSE2",
+  "localId": 2,
+  "graphicsId": "OBJ_EVENT_GFX_AZURILL",
+  "x": 8,
+  "y": 6,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "PacifidlogTown_House2_EventScript_HappyAzurill",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

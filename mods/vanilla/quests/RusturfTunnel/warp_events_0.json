@@ -1,0 +1,27 @@
+{
+  "id": "RusturfTunnel:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/map.json",
+    "sha1": "5da4b6f65aac47a3b5c84f9bc6aa687cf273cc0e"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/RusturfTunnel/map.json",
+    "raw": {
+      "x": 4,
+      "y": 10,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE116",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "RusturfTunnel",
+  "mapId": "MAP_RUSTURF_TUNNEL",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

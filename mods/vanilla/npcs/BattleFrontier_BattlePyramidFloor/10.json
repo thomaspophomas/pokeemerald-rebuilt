@@ -1,0 +1,42 @@
+{
+  "id": "BattleFrontier_BattlePyramidFloor:10",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidFloor/map.json",
+    "sha1": "a97ac3dc45da45b9e792070de8abd894072bd062"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidFloor/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL",
+      "x": 1,
+      "y": 1,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "0"
+    }
+  },
+  "map": "BattleFrontier_BattlePyramidFloor",
+  "mapId": "MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_FLOOR",
+  "localId": 10,
+  "graphicsId": "OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL",
+  "x": 1,
+  "y": 1,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "0",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

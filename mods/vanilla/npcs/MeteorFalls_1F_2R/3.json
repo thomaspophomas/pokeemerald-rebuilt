@@ -1,0 +1,45 @@
+{
+  "id": "MeteorFalls_1F_2R:3",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_2R/map.json",
+    "sha1": "71346289babf11a2281065e924306a2092e8183b"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MeteorFalls_1F_2R/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_F",
+      "x": 7,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "MeteorFalls_1F_2R_EventScript_Jay",
+      "flag": "0"
+    }
+  },
+  "map": "MeteorFalls_1F_2R",
+  "mapId": "MAP_METEOR_FALLS_1F_2R",
+  "localId": 3,
+  "graphicsId": "OBJ_EVENT_GFX_EXPERT_F",
+  "x": 7,
+  "y": 12,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "1",
+  "script": "MeteorFalls_1F_2R_EventScript_Jay",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

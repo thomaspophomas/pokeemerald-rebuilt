@@ -123,5 +123,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_House/map.json",
+    "sha1": "bddc81b2d927f0991fcc11bf3c81b05613a9ae10"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route119_House/map.json",
+    "mapName": "Route119_House",
+    "scriptsSourcePath": "data/maps/Route119_House/scripts.inc"
+  },
+  "mapGroup": 32,
+  "mapNum": 2,
+  "mapGroupSymbol": "gMapGroup_IndoorRoute119",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

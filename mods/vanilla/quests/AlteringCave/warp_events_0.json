@@ -1,0 +1,27 @@
+{
+  "id": "AlteringCave:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AlteringCave/map.json",
+    "sha1": "f0f0ea88dda68659f7a9ea102594f0a1c98ad5fe"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/AlteringCave/map.json",
+    "raw": {
+      "x": 18,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE103",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "AlteringCave",
+  "mapId": "MAP_ALTERING_CAVE",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

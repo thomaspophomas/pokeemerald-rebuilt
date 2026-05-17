@@ -1,0 +1,31 @@
+{
+  "id": "RusturfTunnel:coord_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/map.json",
+    "sha1": "5da4b6f65aac47a3b5c84f9bc6aa687cf273cc0e"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/RusturfTunnel/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 9,
+      "y": 5,
+      "elevation": 3,
+      "var": "VAR_RUSTURF_TUNNEL_STATE",
+      "var_value": "2",
+      "script": "RusturfTunnel_EventScript_AquaGruntBackUp"
+    }
+  },
+  "map": "RusturfTunnel",
+  "mapId": "MAP_RUSTURF_TUNNEL",
+  "eventType": "coord_events",
+  "index": 2,
+  "script": "RusturfTunnel_EventScript_AquaGruntBackUp",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

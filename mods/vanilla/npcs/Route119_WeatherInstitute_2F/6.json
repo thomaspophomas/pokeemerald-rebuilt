@@ -1,0 +1,42 @@
+{
+  "id": "Route119_WeatherInstitute_2F:6",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_2F/map.json",
+    "sha1": "c96e589d9d35adb4450bb9401ee99c2215b2af00"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_2F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_4",
+      "x": 1,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_WEATHER_INSTITUTE_2F_WORKERS"
+    }
+  },
+  "map": "Route119_WeatherInstitute_2F",
+  "mapId": "MAP_ROUTE119_WEATHER_INSTITUTE_2F",
+  "localId": 6,
+  "graphicsId": "OBJ_EVENT_GFX_MAN_4",
+  "x": 1,
+  "y": 7,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "0x0",
+  "flag": "FLAG_HIDE_WEATHER_INSTITUTE_2F_WORKERS",
+  "interactionPolicy": "DISABLED_ONLINE",
+  "resourceLocks": []
+}

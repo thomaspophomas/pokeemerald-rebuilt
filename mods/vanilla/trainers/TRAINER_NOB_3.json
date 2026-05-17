@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_NOB_3",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_NOB_3] =\n    {\n        .trainerClass = TRAINER_CLASS_BLACK_BELT,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,\n        .trainerPic = TRAINER_PIC_BLACK_BELT,\n        .trainerName = _(\"NOB\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_Nob3),\n    },"
+  },
+  "symbol": "TRAINER_NOB_3",
+  "numericId": 185,
+  "trainerName": "NOB",
+  "trainerClass": "TRAINER_CLASS_BLACK_BELT",
+  "trainerPic": "TRAINER_PIC_BLACK_BELT",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_INTENSE",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_Nob3",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

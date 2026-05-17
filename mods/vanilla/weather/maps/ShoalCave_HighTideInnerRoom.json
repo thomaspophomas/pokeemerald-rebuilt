@@ -1,0 +1,16 @@
+{
+  "id": "ShoalCave_HighTideInnerRoom:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ShoalCave_HighTideInnerRoom/map.json",
+    "sha1": "9111784f42609896a270557751e869482635c04b"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/ShoalCave_HighTideInnerRoom/map.json"
+  },
+  "map": "ShoalCave_HighTideInnerRoom",
+  "mapId": "MAP_SHOAL_CAVE_HIGH_TIDE_INNER_ROOM",
+  "weather": "WEATHER_NONE"
+}

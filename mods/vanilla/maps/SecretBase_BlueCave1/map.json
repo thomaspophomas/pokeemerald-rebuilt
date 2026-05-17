@@ -221,5 +221,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SecretBase_BlueCave1/map.json",
+    "sha1": "e4b33831f1df644728e64b16dc606471d5ada2b1"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/SecretBase_BlueCave1/map.json",
+    "mapName": "SecretBase_BlueCave1",
+    "scriptsSourcePath": null
+  },
+  "mapGroup": 25,
+  "mapNum": 2,
+  "mapGroupSymbol": "gMapGroup_IndoorDynamic",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

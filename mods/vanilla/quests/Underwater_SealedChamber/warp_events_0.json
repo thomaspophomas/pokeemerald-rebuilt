@@ -1,0 +1,27 @@
+{
+  "id": "Underwater_SealedChamber:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_SealedChamber/map.json",
+    "sha1": "fb43be481624f3f33fd17f04298cdf74f428a059"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Underwater_SealedChamber/map.json",
+    "raw": {
+      "x": 7,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_UNDERWATER_ROUTE134",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Underwater_SealedChamber",
+  "mapId": "MAP_UNDERWATER_SEALED_CHAMBER",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

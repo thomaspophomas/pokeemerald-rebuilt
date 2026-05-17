@@ -1,0 +1,45 @@
+{
+  "id": "MossdeepCity:15",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/map.json",
+    "sha1": "e5f3ed3515745877143da05bc99302333d940624"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MossdeepCity/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "x": 19,
+      "y": 25,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 3,
+      "movement_range_y": 3,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MossdeepCity_EventScript_DynamicPunchTutor",
+      "flag": "0"
+    }
+  },
+  "map": "MossdeepCity",
+  "mapId": "MAP_MOSSDEEP_CITY",
+  "localId": 15,
+  "graphicsId": "OBJ_EVENT_GFX_BLACK_BELT",
+  "x": 19,
+  "y": 25,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+  "movementRangeX": 3,
+  "movementRangeY": 3,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "MossdeepCity_EventScript_DynamicPunchTutor",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

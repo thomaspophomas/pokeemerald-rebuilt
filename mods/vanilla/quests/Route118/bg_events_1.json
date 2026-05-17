@@ -1,0 +1,30 @@
+{
+  "id": "Route118:bg_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route118/map.json",
+    "sha1": "e722f5845bad96db2f079abf577a8918ccdf2db5"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route118/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 13,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route118_EventScript_RouteSignMauville"
+    }
+  },
+  "map": "Route118",
+  "mapId": "MAP_ROUTE118",
+  "eventType": "bg_events",
+  "index": 1,
+  "script": "Route118_EventScript_RouteSignMauville",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

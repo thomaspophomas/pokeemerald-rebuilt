@@ -1,0 +1,46 @@
+{
+  "id": "LilycoveCity_CoveLilyMotel_1F:LOCALID_MOTEL_OWNER",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_CoveLilyMotel_1F/map.json",
+    "sha1": "4ab6219dc8e99a2fb3b420779550e7fa37593009"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LilycoveCity_CoveLilyMotel_1F/map.json",
+    "raw": {
+      "local_id": "LOCALID_MOTEL_OWNER",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
+      "x": 10,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LilycoveCity_CoveLilyMotel_1F_EventScript_MotelOwner",
+      "flag": "0"
+    }
+  },
+  "map": "LilycoveCity_CoveLilyMotel_1F",
+  "mapId": "MAP_LILYCOVE_CITY_COVE_LILY_MOTEL_1F",
+  "localId": "LOCALID_MOTEL_OWNER",
+  "graphicsId": "OBJ_EVENT_GFX_MAN_1",
+  "x": 10,
+  "y": 3,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "LilycoveCity_CoveLilyMotel_1F_EventScript_MotelOwner",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

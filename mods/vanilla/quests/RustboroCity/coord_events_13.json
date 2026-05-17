@@ -1,0 +1,31 @@
+{
+  "id": "RustboroCity:coord_events:13",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/map.json",
+    "sha1": "89776bb64fdef8d9171b677d4f7ebeadd02a5674"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/RustboroCity/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 12,
+      "y": 53,
+      "elevation": 3,
+      "var": "VAR_RUSTBORO_CITY_STATE",
+      "var_value": "7",
+      "script": "RustboroCity_EventScript_RivalTrigger0"
+    }
+  },
+  "map": "RustboroCity",
+  "mapId": "MAP_RUSTBORO_CITY",
+  "eventType": "coord_events",
+  "index": 13,
+  "script": "RustboroCity_EventScript_RivalTrigger0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

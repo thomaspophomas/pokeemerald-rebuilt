@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Wendy",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_Wendy[] = {\n    {\n    .iv = 100,\n    .lvl = 29,\n    .species = SPECIES_MAWILE,\n    .moves = {MOVE_BATON_PASS, MOVE_FAINT_ATTACK, MOVE_FAKE_TEARS, MOVE_BITE}\n    },\n    {\n    .iv = 100,\n    .lvl = 29,\n    .species = SPECIES_ROSELIA,\n    .moves = {MOVE_MEGA_DRAIN, MOVE_MAGICAL_LEAF, MOVE_GRASS_WHISTLE, MOVE_LEECH_SEED}\n    },\n    {\n    .iv = 100,\n    .lvl = 29,\n    .species = SPECIES_PELIPPER,\n    .moves = {MOVE_FLY, MOVE_WATER_GUN, MOVE_MIST, MOVE_PROTECT}\n    }\n};"
+  },
+  "symbol": "sParty_Wendy",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 3
+}

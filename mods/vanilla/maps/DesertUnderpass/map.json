@@ -39,5 +39,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DesertUnderpass/map.json",
+    "sha1": "46068f68175d5348066516bc036dfbc204c4691c"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/DesertUnderpass/map.json",
+    "mapName": "DesertUnderpass",
+    "scriptsSourcePath": "data/maps/DesertUnderpass/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 98,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

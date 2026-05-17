@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_GABBY_AND_TY_4",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_GABBY_AND_TY_4] =\n    {\n        .trainerClass = TRAINER_CLASS_INTERVIEWER,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,\n        .trainerPic = TRAINER_PIC_INTERVIEWER,\n        .trainerName = _(\"GABBY & TY\"),\n        .items = {},\n        .doubleBattle = TRUE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_GabbyAndTy4),\n    },"
+  },
+  "symbol": "TRAINER_GABBY_AND_TY_4",
+  "numericId": 54,
+  "trainerName": "GABBY & TY",
+  "trainerClass": "TRAINER_CLASS_INTERVIEWER",
+  "trainerPic": "TRAINER_PIC_INTERVIEWER",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_INTERVIEWER",
+  "doubleBattle": "TRUE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_GabbyAndTy4",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

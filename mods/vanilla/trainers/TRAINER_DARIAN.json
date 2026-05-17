@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_DARIAN",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_DARIAN] =\n    {\n        .trainerClass = TRAINER_CLASS_FISHERMAN,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,\n        .trainerPic = TRAINER_PIC_FISHERMAN,\n        .trainerName = _(\"DARIAN\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_Darian),\n    },"
+  },
+  "symbol": "TRAINER_DARIAN",
+  "numericId": 696,
+  "trainerName": "DARIAN",
+  "trainerClass": "TRAINER_CLASS_FISHERMAN",
+  "trainerPic": "TRAINER_PIC_FISHERMAN",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_HIKER",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_Darian",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

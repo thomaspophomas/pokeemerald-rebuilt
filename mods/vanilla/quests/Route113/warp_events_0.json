@@ -1,0 +1,27 @@
+{
+  "id": "Route113:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113/map.json",
+    "sha1": "4d5b412e7056cb5dda1085ac70fb8a367cb400c1"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route113/map.json",
+    "raw": {
+      "x": 33,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE113_GLASS_WORKSHOP",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "Route113",
+  "mapId": "MAP_ROUTE113",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

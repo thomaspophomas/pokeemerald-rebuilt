@@ -1,0 +1,45 @@
+{
+  "id": "MossdeepCity_Gym:5",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Gym/map.json",
+    "sha1": "9a33d6559af206c544f98be7f035bb5a5ee65354"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MossdeepCity_Gym/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_LASS",
+      "x": 4,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "MossdeepCity_Gym_EventScript_Samantha",
+      "flag": "0"
+    }
+  },
+  "map": "MossdeepCity_Gym",
+  "mapId": "MAP_MOSSDEEP_CITY_GYM",
+  "localId": 5,
+  "graphicsId": "OBJ_EVENT_GFX_LASS",
+  "x": 4,
+  "y": 23,
+  "elevation": 0,
+  "movementType": "MOVEMENT_TYPE_FACE_UP",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "1",
+  "script": "MossdeepCity_Gym_EventScript_Samantha",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

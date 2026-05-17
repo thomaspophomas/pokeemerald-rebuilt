@@ -53,5 +53,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NavelRock_Harbor/map.json",
+    "sha1": "27e42c3f2c105e8de8f5fddabee67a6c25999b18"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/NavelRock_Harbor/map.json",
+    "mapName": "NavelRock_Harbor",
+    "scriptsSourcePath": "data/maps/NavelRock_Harbor/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 67,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

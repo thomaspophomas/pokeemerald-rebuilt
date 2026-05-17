@@ -1,0 +1,27 @@
+{
+  "id": "BattleFrontier_BattleFactoryLobby:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryLobby/map.json",
+    "sha1": "60b28bd34a70a8d6a0b8200c1de6f07274a80833"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryLobby/map.json",
+    "raw": {
+      "x": 9,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_FRONTIER_OUTSIDE_WEST",
+      "dest_warp_id": "2"
+    }
+  },
+  "map": "BattleFrontier_BattleFactoryLobby",
+  "mapId": "MAP_BATTLE_FRONTIER_BATTLE_FACTORY_LOBBY",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

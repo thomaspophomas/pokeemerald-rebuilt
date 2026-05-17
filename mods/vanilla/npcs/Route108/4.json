@@ -1,0 +1,45 @@
+{
+  "id": "Route108:4",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route108/map.json",
+    "sha1": "16be6eb309773730b50b68cb7db084bbfb16d8bf"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route108/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
+      "x": 8,
+      "y": 7,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_UP_AND_RIGHT",
+      "movement_range_x": 6,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Route108_EventScript_Missy",
+      "flag": "0"
+    }
+  },
+  "map": "Route108",
+  "mapId": "MAP_ROUTE108",
+  "localId": 4,
+  "graphicsId": "OBJ_EVENT_GFX_SWIMMER_F",
+  "x": 8,
+  "y": 7,
+  "elevation": 1,
+  "movementType": "MOVEMENT_TYPE_FACE_DOWN_UP_AND_RIGHT",
+  "movementRangeX": 6,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "3",
+  "script": "Route108_EventScript_Missy",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

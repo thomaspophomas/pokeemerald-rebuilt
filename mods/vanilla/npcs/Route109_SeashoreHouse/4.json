@@ -1,0 +1,45 @@
+{
+  "id": "Route109_SeashoreHouse:4",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route109_SeashoreHouse/map.json",
+    "sha1": "2ca49f80c6aafb75ff0dead58f821265a513a625"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route109_SeashoreHouse/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
+      "x": 10,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Route109_SeashoreHouse_EventScript_Johanna",
+      "flag": "0"
+    }
+  },
+  "map": "Route109_SeashoreHouse",
+  "mapId": "MAP_ROUTE109_SEASHORE_HOUSE",
+  "localId": 4,
+  "graphicsId": "OBJ_EVENT_GFX_BEAUTY",
+  "x": 10,
+  "y": 5,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NORMAL",
+  "trainerSightOrBerryTreeId": "2",
+  "script": "Route109_SeashoreHouse_EventScript_Johanna",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

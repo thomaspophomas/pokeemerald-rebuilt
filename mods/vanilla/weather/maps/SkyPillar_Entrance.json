@@ -1,0 +1,16 @@
+{
+  "id": "SkyPillar_Entrance:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Entrance/map.json",
+    "sha1": "70f86649dad426de9d2ad0d32ec6cf9d0ed277e4"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/SkyPillar_Entrance/map.json"
+  },
+  "map": "SkyPillar_Entrance",
+  "mapId": "MAP_SKY_PILLAR_ENTRANCE",
+  "weather": "WEATHER_NONE"
+}

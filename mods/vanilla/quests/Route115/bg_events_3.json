@@ -1,0 +1,30 @@
+{
+  "id": "Route115:bg_events:3",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route115/map.json",
+    "sha1": "b6c6b6d8e02d782dfc66ddae4e4cf9145461193d"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route115/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 25,
+      "y": 38,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route115_EventScript_MeteorFallsSign"
+    }
+  },
+  "map": "Route115",
+  "mapId": "MAP_ROUTE115",
+  "eventType": "bg_events",
+  "index": 3,
+  "script": "Route115_EventScript_MeteorFallsSign",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

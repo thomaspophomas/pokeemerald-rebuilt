@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Sidney",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemCustomMoves sParty_Sidney[] = {\n    {\n    .iv = 250,\n    .lvl = 46,\n    .species = SPECIES_MIGHTYENA,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_ROAR, MOVE_DOUBLE_EDGE, MOVE_SAND_ATTACK, MOVE_CRUNCH}\n    },\n    {\n    .iv = 250,\n    .lvl = 48,\n    .species = SPECIES_SHIFTRY,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_TORMENT, MOVE_DOUBLE_TEAM, MOVE_SWAGGER, MOVE_EXTRASENSORY}\n    },\n    {\n    .iv = 250,\n    .lvl = 46,\n    .species = SPECIES_CACTURNE,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_LEECH_SEED, MOVE_FAINT_ATTACK, MOVE_NEEDLE_ARM, MOVE_COTTON_SPORE}\n    },\n    {\n    .iv = 250,\n    .lvl = 48,\n    .species = SPECIES_CRAWDAUNT,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_SURF, MOVE_SWORDS_DANCE, MOVE_STRENGTH, MOVE_FACADE}\n    },\n    {\n    .iv = 255,\n    .lvl = 49,\n    .species = SPECIES_ABSOL,\n    .heldItem = ITEM_SITRUS_BERRY,\n    .moves = {MOVE_AERIAL_ACE, MOVE_ROCK_SLIDE, MOVE_SWORDS_DANCE, MOVE_SLASH}\n    }\n};"
+  },
+  "symbol": "sParty_Sidney",
+  "partyType": "TrainerMonItemCustomMoves",
+  "pokemonCount": 5
+}

@@ -187,5 +187,26 @@
       "item": "ITEM_EVERSTONE",
       "flag": "FLAG_HIDDEN_ITEM_GRANITE_CAVE_B2F_EVERSTONE_2"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/GraniteCave_B2F/map.json",
+    "sha1": "677a91e7369311b7ee62fe2f7c178d63d951e776"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/GraniteCave_B2F/map.json",
+    "mapName": "GraniteCave_B2F",
+    "scriptsSourcePath": "data/maps/GraniteCave_B2F/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 9,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

@@ -1,0 +1,31 @@
+{
+  "id": "Route110_TrickHouseEnd:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEnd/map.json",
+    "sha1": "4aae9a518aabdc7632ab655e56fe0c80b12f25b7"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route110_TrickHouseEnd/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 2,
+      "y": 2,
+      "elevation": 3,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "Route110_TrickHouseEnd_EventScript_TrickMasterExitTrigger"
+    }
+  },
+  "map": "Route110_TrickHouseEnd",
+  "mapId": "MAP_ROUTE110_TRICK_HOUSE_END",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": "Route110_TrickHouseEnd_EventScript_TrickMasterExitTrigger",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

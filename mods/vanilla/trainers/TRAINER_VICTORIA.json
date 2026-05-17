@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_VICTORIA",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_VICTORIA] =\n    {\n        .trainerClass = TRAINER_CLASS_WINSTRATE,\n        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,\n        .trainerPic = TRAINER_PIC_POKEFAN_F,\n        .trainerName = _(\"VICTORIA\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,\n        .party = ITEM_DEFAULT_MOVES(sParty_Victoria),\n    },"
+  },
+  "symbol": "TRAINER_VICTORIA",
+  "numericId": 299,
+  "trainerName": "VICTORIA",
+  "trainerClass": "TRAINER_CLASS_WINSTRATE",
+  "trainerPic": "TRAINER_PIC_POKEFAN_F",
+  "encounterMusicGender": "F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT",
+  "partyRef": "sParty_Victoria",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

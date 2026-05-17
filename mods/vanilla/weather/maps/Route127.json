@@ -1,0 +1,16 @@
+{
+  "id": "Route127:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route127/map.json",
+    "sha1": "1888c4a6cdbeaad8f03b0f0d0a7120ea72599971"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/Route127/map.json"
+  },
+  "map": "Route127",
+  "mapId": "MAP_ROUTE127",
+  "weather": "WEATHER_SUNNY"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "NavelRock_Down01:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NavelRock_Down01/map.json",
+    "sha1": "329e6ab1588d7387cf3547dac0add743e24e9c16"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/NavelRock_Down01/map.json"
+  },
+  "map": "NavelRock_Down01",
+  "mapId": "MAP_NAVEL_ROCK_DOWN01",
+  "weather": "WEATHER_NONE"
+}

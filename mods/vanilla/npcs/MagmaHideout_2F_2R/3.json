@@ -1,0 +1,45 @@
+{
+  "id": "MagmaHideout_2F_2R:3",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_2F_2R/map.json",
+    "sha1": "9dd5a5a5bc158d613e11769943126187a43c7b75"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/MagmaHideout_2F_2R/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 21,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MagmaHideout_2F_2R_EventScript_ItemMaxElixir",
+      "flag": "FLAG_ITEM_MAGMA_HIDEOUT_2F_2R_MAX_ELIXIR"
+    }
+  },
+  "map": "MagmaHideout_2F_2R",
+  "mapId": "MAP_MAGMA_HIDEOUT_2F_2R",
+  "localId": 3,
+  "graphicsId": "OBJ_EVENT_GFX_ITEM_BALL",
+  "x": 21,
+  "y": 7,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+  "movementRangeX": 1,
+  "movementRangeY": 1,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "MagmaHideout_2F_2R_EventScript_ItemMaxElixir",
+  "flag": "FLAG_ITEM_MAGMA_HIDEOUT_2F_2R_MAX_ELIXIR",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_KATELYN_1",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_KATELYN_1] =\n    {\n        .trainerClass = TRAINER_CLASS_TRIATHLETE,\n        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,\n        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,\n        .trainerName = _(\"KATELYN\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = NO_ITEM_DEFAULT_MOVES(sParty_Katelyn1),\n    },"
+  },
+  "symbol": "TRAINER_KATELYN_1",
+  "numericId": 386,
+  "trainerName": "KATELYN",
+  "trainerClass": "TRAINER_CLASS_TRIATHLETE",
+  "trainerPic": "TRAINER_PIC_SWIMMING_TRIATHLETE_F",
+  "encounterMusicGender": "F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_Katelyn1",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

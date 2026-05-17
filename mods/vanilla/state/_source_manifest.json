@@ -1,0 +1,34 @@
+{
+  "id": "state:source_manifest",
+  "domain": "state",
+  "schemaVersion": 1,
+  "migrationMode": "source_file_manifest",
+  "sourceAuthority": "vanilla",
+  "sourceFiles": [
+    {
+      "path": "include/global.h",
+      "sha1": "7bbfadf9f5dca8adf20dfe941e39a3fbd53ed6d7",
+      "bytes": 33543
+    },
+    {
+      "path": "include/mod/state.h",
+      "sha1": "35ca39366baa9ff92e56c727fbe765957b284d87",
+      "bytes": 712
+    },
+    {
+      "path": "include/save.h",
+      "sha1": "f5cd7d49fdfd81d6c3b881043644180e5ee7f68e",
+      "bytes": 3276
+    },
+    {
+      "path": "src/mod/state.c",
+      "sha1": "3d440dca8990c97b3c1d03f08fb48ddf58e8e86f",
+      "bytes": 1849
+    },
+    {
+      "path": "src/save.c",
+      "sha1": "698757f324f4229e95fa66d40a5a0b94f1ee8b8a",
+      "bytes": 32704
+    }
+  ]
+}

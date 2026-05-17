@@ -214,5 +214,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "0x0"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_1R/map.json",
+    "sha1": "ae7aaedc6042747aecd640e7cc03f55a046210aa"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/MeteorFalls_1F_1R/map.json",
+    "mapName": "MeteorFalls_1F_1R",
+    "scriptsSourcePath": "data/maps/MeteorFalls_1F_1R/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 0,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

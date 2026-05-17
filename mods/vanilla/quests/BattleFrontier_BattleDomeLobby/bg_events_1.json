@@ -1,0 +1,30 @@
+{
+  "id": "BattleFrontier_BattleDomeLobby:bg_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeLobby/map.json",
+    "sha1": "501e37959f3603fa3e4b67e390b324383bbfa453"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeLobby/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 7,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "BattleFrontier_BattleDomeLobby_EventScript_ShowPrevTourneyTree"
+    }
+  },
+  "map": "BattleFrontier_BattleDomeLobby",
+  "mapId": "MAP_BATTLE_FRONTIER_BATTLE_DOME_LOBBY",
+  "eventType": "bg_events",
+  "index": 1,
+  "script": "BattleFrontier_BattleDomeLobby_EventScript_ShowPrevTourneyTree",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

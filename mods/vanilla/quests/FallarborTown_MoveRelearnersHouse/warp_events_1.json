@@ -1,0 +1,27 @@
+{
+  "id": "FallarborTown_MoveRelearnersHouse:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_MoveRelearnersHouse/map.json",
+    "sha1": "46698b461841f016dc7b6a0832a0dd1c8ffadc77"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/FallarborTown_MoveRelearnersHouse/map.json",
+    "raw": {
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_FALLARBOR_TOWN",
+      "dest_warp_id": "4"
+    }
+  },
+  "map": "FallarborTown_MoveRelearnersHouse",
+  "mapId": "MAP_FALLARBOR_TOWN_MOVE_RELEARNERS_HOUSE",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

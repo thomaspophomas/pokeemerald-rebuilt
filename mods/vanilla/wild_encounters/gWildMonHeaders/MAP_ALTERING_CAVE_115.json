@@ -1,0 +1,157 @@
+{
+  "id": "gWildMonHeaders:MAP_ALTERING_CAVE:115",
+  "domain": "wild_encounters",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/wild_encounters.json",
+    "sha1": "49cfb49e719fde5aa0543f883b6c85accb82ebac"
+  },
+  "legacy": {
+    "kind": "wild_encounter_group",
+    "sourcePath": "src/data/wild_encounters.json",
+    "groupLabel": "gWildMonHeaders"
+  },
+  "groupLabel": "gWildMonHeaders",
+  "forMaps": true,
+  "fields": [
+    {
+      "type": "land_mons",
+      "encounter_rates": [
+        20,
+        20,
+        10,
+        10,
+        10,
+        10,
+        5,
+        5,
+        4,
+        4,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "water_mons",
+      "encounter_rates": [
+        60,
+        30,
+        5,
+        4,
+        1
+      ]
+    },
+    {
+      "type": "rock_smash_mons",
+      "encounter_rates": [
+        60,
+        30,
+        5,
+        4,
+        1
+      ]
+    },
+    {
+      "type": "fishing_mons",
+      "encounter_rates": [
+        70,
+        30,
+        60,
+        20,
+        20,
+        40,
+        40,
+        15,
+        4,
+        1
+      ],
+      "groups": {
+        "old_rod": [
+          0,
+          1
+        ],
+        "good_rod": [
+          2,
+          3,
+          4
+        ],
+        "super_rod": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    }
+  ],
+  "encounter": {
+    "map": "MAP_ALTERING_CAVE",
+    "base_label": "gAlteringCave2",
+    "land_mons": {
+      "encounter_rate": 7,
+      "mons": [
+        {
+          "min_level": 7,
+          "max_level": 7,
+          "species": "SPECIES_MAREEP"
+        },
+        {
+          "min_level": 9,
+          "max_level": 9,
+          "species": "SPECIES_MAREEP"
+        },
+        {
+          "min_level": 5,
+          "max_level": 5,
+          "species": "SPECIES_MAREEP"
+        },
+        {
+          "min_level": 11,
+          "max_level": 11,
+          "species": "SPECIES_MAREEP"
+        },
+        {
+          "min_level": 7,
+          "max_level": 7,
+          "species": "SPECIES_MAREEP"
+        },
+        {
+          "min_level": 9,
+          "max_level": 9,
+          "species": "SPECIES_MAREEP"
+        },
+        {
+          "min_level": 13,
+          "max_level": 13,
+          "species": "SPECIES_MAREEP"
+        },
+        {
+          "min_level": 3,
+          "max_level": 3,
+          "species": "SPECIES_MAREEP"
+        },
+        {
+          "min_level": 5,
+          "max_level": 5,
+          "species": "SPECIES_MAREEP"
+        },
+        {
+          "min_level": 11,
+          "max_level": 11,
+          "species": "SPECIES_MAREEP"
+        },
+        {
+          "min_level": 5,
+          "max_level": 5,
+          "species": "SPECIES_MAREEP"
+        },
+        {
+          "min_level": 11,
+          "max_level": 11,
+          "species": "SPECIES_MAREEP"
+        }
+      ]
+    }
+  }
+}

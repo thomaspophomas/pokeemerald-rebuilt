@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Dawson",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemDefaultMoves sParty_Dawson[] = {\n    {\n    .iv = 0,\n    .lvl = 8,\n    .species = SPECIES_ZIGZAGOON,\n    .heldItem = ITEM_NUGGET\n    },\n    {\n    .iv = 0,\n    .lvl = 8,\n    .species = SPECIES_POOCHYENA,\n    .heldItem = ITEM_NONE\n    }\n};"
+  },
+  "symbol": "sParty_Dawson",
+  "partyType": "TrainerMonItemDefaultMoves",
+  "pokemonCount": 2
+}

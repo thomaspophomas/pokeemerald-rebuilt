@@ -1,0 +1,46 @@
+{
+  "id": "Route104_MrBrineysHouse:LOCALID_BRINEYS_HOUSE_BRINEY",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104_MrBrineysHouse/map.json",
+    "sha1": "d72b9b2e82a27fdee3f4f736b97a873da2a6cc83"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/Route104_MrBrineysHouse/map.json",
+    "raw": {
+      "local_id": "LOCALID_BRINEYS_HOUSE_BRINEY",
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+      "x": 5,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_LEFT_UP_RIGHT",
+      "movement_range_x": 3,
+      "movement_range_y": 3,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route104_MrBrineysHouse_EventScript_Briney",
+      "flag": "FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY"
+    }
+  },
+  "map": "Route104_MrBrineysHouse",
+  "mapId": "MAP_ROUTE104_MR_BRINEYS_HOUSE",
+  "localId": "LOCALID_BRINEYS_HOUSE_BRINEY",
+  "graphicsId": "OBJ_EVENT_GFX_EXPERT_M",
+  "x": 5,
+  "y": 3,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_LEFT_UP_RIGHT",
+  "movementRangeX": 3,
+  "movementRangeY": 3,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "Route104_MrBrineysHouse_EventScript_Briney",
+  "flag": "FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

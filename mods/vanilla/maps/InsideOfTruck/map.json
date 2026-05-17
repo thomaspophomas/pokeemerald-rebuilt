@@ -150,5 +150,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "InsideOfTruck_EventScript_MovingBox"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/InsideOfTruck/map.json",
+    "sha1": "c40354a9dae7ff7c27b55a8889b486648e9561e5"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/InsideOfTruck/map.json",
+    "mapName": "InsideOfTruck",
+    "scriptsSourcePath": "data/maps/InsideOfTruck/scripts.inc"
+  },
+  "mapGroup": 25,
+  "mapNum": 40,
+  "mapGroupSymbol": "gMapGroup_IndoorDynamic",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

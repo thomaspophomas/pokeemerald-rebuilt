@@ -71,5 +71,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_House4/map.json",
+    "sha1": "6ed00b438a43878632c8f081ccff930adfe087ea"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/PacifidlogTown_House4/map.json",
+    "mapName": "PacifidlogTown_House4",
+    "scriptsSourcePath": "data/maps/PacifidlogTown_House4/scripts.inc"
+  },
+  "mapGroup": 7,
+  "mapNum": 5,
+  "mapGroupSymbol": "gMapGroup_IndoorPacifidlog",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

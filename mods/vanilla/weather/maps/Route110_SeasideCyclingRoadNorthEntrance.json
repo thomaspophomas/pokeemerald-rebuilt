@@ -1,0 +1,16 @@
+{
+  "id": "Route110_SeasideCyclingRoadNorthEntrance:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_SeasideCyclingRoadNorthEntrance/map.json",
+    "sha1": "69ca7a6dc018036e4157483c551d1c83ff82c16a"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/Route110_SeasideCyclingRoadNorthEntrance/map.json"
+  },
+  "map": "Route110_SeasideCyclingRoadNorthEntrance",
+  "mapId": "MAP_ROUTE110_SEASIDE_CYCLING_ROAD_NORTH_ENTRANCE",
+  "weather": "WEATHER_NONE"
+}

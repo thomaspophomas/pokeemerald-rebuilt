@@ -1,0 +1,19 @@
+{
+  "id": "engine_rulesets:source_manifest",
+  "domain": "engine_rulesets",
+  "schemaVersion": 1,
+  "migrationMode": "source_file_manifest",
+  "sourceAuthority": "vanilla",
+  "sourceFiles": [
+    {
+      "path": "include/mod/engine.h",
+      "sha1": "e9fc880fe4b957088a88fa7b67e76ae496649bb5",
+      "bytes": 878
+    },
+    {
+      "path": "src/mod/engine.c",
+      "sha1": "3901b8ba1af8f30f1a210584a3dc98c505acd8cd",
+      "bytes": 1404
+    }
+  ]
+}

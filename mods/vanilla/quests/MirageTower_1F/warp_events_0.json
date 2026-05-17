@@ -1,0 +1,27 @@
+{
+  "id": "MirageTower_1F:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MirageTower_1F/map.json",
+    "sha1": "679d16eb29b6c15fd0fc11dc6e730e0814bd5b0b"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MirageTower_1F/map.json",
+    "raw": {
+      "x": 10,
+      "y": 14,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE111",
+      "dest_warp_id": "3"
+    }
+  },
+  "map": "MirageTower_1F",
+  "mapId": "MAP_MIRAGE_TOWER_1F",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

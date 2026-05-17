@@ -112,5 +112,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_3F/map.json",
+    "sha1": "5391dcb4f94af5942489b6537153118956c790fe"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/MtPyre_3F/map.json",
+    "mapName": "MtPyre_3F",
+    "scriptsSourcePath": "data/maps/MtPyre_3F/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 17,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

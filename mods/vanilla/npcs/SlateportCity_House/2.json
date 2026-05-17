@@ -1,0 +1,45 @@
+{
+  "id": "SlateportCity_House:2",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_House/map.json",
+    "sha1": "eee854dca94c548cb61e3c8ea34d001e8ba49af2"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/SlateportCity_House/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "x": 7,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SlateportCity_House_EventScript_Girl",
+      "flag": "0"
+    }
+  },
+  "map": "SlateportCity_House",
+  "mapId": "MAP_SLATEPORT_CITY_HOUSE",
+  "localId": 2,
+  "graphicsId": "OBJ_EVENT_GFX_GIRL_3",
+  "x": 7,
+  "y": 4,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "SlateportCity_House_EventScript_Girl",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "TRAINER_DUSTY_1",
+  "domain": "trainers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainers.h",
+    "sha1": "864fa9143a9bfa47747d2802da1666b3e6671706"
+  },
+  "legacy": {
+    "kind": "trainer_c_initializer",
+    "sourcePath": "src/data/trainers.h",
+    "rawC": "\n    [TRAINER_DUSTY_1] =\n    {\n        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,\n        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,\n        .trainerPic = TRAINER_PIC_RUIN_MANIAC,\n        .trainerName = _(\"DUSTY\"),\n        .items = {},\n        .doubleBattle = FALSE,\n        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,\n        .party = NO_ITEM_CUSTOM_MOVES(sParty_Dusty1),\n    },"
+  },
+  "symbol": "TRAINER_DUSTY_1",
+  "numericId": 44,
+  "trainerName": "DUSTY",
+  "trainerClass": "TRAINER_CLASS_RUIN_MANIAC",
+  "trainerPic": "TRAINER_PIC_RUIN_MANIAC",
+  "encounterMusicGender": "TRAINER_ENCOUNTER_MUSIC_HIKER",
+  "doubleBattle": "FALSE",
+  "aiFlags": "AI_SCRIPT_CHECK_BAD_MOVE",
+  "partyRef": "sParty_Dusty1",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ]
+}

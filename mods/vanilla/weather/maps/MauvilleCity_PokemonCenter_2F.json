@@ -1,0 +1,16 @@
+{
+  "id": "MauvilleCity_PokemonCenter_2F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_PokemonCenter_2F/map.json",
+    "sha1": "0c5aaf8cc529986a870a5c62675fcfffab0e1a10"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/MauvilleCity_PokemonCenter_2F/map.json"
+  },
+  "map": "MauvilleCity_PokemonCenter_2F",
+  "mapId": "MAP_MAUVILLE_CITY_POKEMON_CENTER_2F",
+  "weather": "WEATHER_NONE"
+}

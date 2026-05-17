@@ -1,0 +1,27 @@
+{
+  "id": "LilycoveCity_PokemonCenter_2F:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonCenter_2F/map.json",
+    "sha1": "d4799a9f8b30961cd80ab4ca2c292a4a5ed9e6b3"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LilycoveCity_PokemonCenter_2F/map.json",
+    "raw": {
+      "x": 5,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_UNION_ROOM",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "LilycoveCity_PokemonCenter_2F",
+  "mapId": "MAP_LILYCOVE_CITY_POKEMON_CENTER_2F",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

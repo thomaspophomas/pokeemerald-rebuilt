@@ -71,5 +71,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_House1/map.json",
+    "sha1": "bb96db46295902c1ddd9ef6a1d9ab7f96155638a"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/DewfordTown_House1/map.json",
+    "mapName": "DewfordTown_House1",
+    "scriptsSourcePath": "data/maps/DewfordTown_House1/scripts.inc"
+  },
+  "mapGroup": 3,
+  "mapNum": 0,
+  "mapGroupSymbol": "gMapGroup_IndoorDewford",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,16 @@
+{
+  "id": "FortreeCity_PokemonCenter_2F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_PokemonCenter_2F/map.json",
+    "sha1": "e867cae3d17a3247e9b892d20efcec7918e1e737"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/FortreeCity_PokemonCenter_2F/map.json"
+  },
+  "map": "FortreeCity_PokemonCenter_2F",
+  "mapId": "MAP_FORTREE_CITY_POKEMON_CENTER_2F",
+  "weather": "WEATHER_NONE"
+}

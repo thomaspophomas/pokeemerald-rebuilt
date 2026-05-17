@@ -1,0 +1,27 @@
+{
+  "id": "Route119_House:warp_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_House/map.json",
+    "sha1": "bddc81b2d927f0991fcc11bf3c81b05613a9ae10"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route119_House/map.json",
+    "raw": {
+      "x": 4,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE119",
+      "dest_warp_id": "1"
+    }
+  },
+  "map": "Route119_House",
+  "mapId": "MAP_ROUTE119_HOUSE",
+  "eventType": "warp_events",
+  "index": 1,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

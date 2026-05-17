@@ -162,5 +162,26 @@
       "item": "ITEM_BIG_PEARL",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route105/map.json",
+    "sha1": "079b5626bd4bf8964ba8c6ea38e06705daaaefac"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/Route105/map.json",
+    "mapName": "Route105",
+    "scriptsSourcePath": "data/maps/Route105/scripts.inc"
+  },
+  "mapGroup": 0,
+  "mapNum": 20,
+  "mapGroupSymbol": "gMapGroup_TownsAndRoutes",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

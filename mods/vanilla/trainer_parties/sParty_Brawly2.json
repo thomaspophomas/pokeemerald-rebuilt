@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Brawly2",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemCustomMoves sParty_Brawly2[] = {\n    {\n    .iv = 255,\n    .lvl = 33,\n    .species = SPECIES_MACHAMP,\n    .heldItem = ITEM_SITRUS_BERRY,\n    .moves = {MOVE_KARATE_CHOP, MOVE_ROCK_SLIDE, MOVE_FOCUS_PUNCH, MOVE_BULK_UP}\n    },\n    {\n    .iv = 255,\n    .lvl = 33,\n    .species = SPECIES_MEDITITE,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_PSYCHIC, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_FOCUS_PUNCH}\n    },\n    {\n    .iv = 255,\n    .lvl = 35,\n    .species = SPECIES_HITMONTOP,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_PURSUIT, MOVE_COUNTER, MOVE_PROTECT, MOVE_TRIPLE_KICK}\n    },\n    {\n    .iv = 255,\n    .lvl = 37,\n    .species = SPECIES_HARIYAMA,\n    .heldItem = ITEM_SITRUS_BERRY,\n    .moves = {MOVE_FAKE_OUT, MOVE_FOCUS_PUNCH, MOVE_BELLY_DRUM, MOVE_EARTHQUAKE}\n    }\n};"
+  },
+  "symbol": "sParty_Brawly2",
+  "partyType": "TrainerMonItemCustomMoves",
+  "pokemonCount": 4
+}

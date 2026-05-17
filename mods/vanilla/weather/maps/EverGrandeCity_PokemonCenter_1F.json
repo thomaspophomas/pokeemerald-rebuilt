@@ -1,0 +1,16 @@
+{
+  "id": "EverGrandeCity_PokemonCenter_1F:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PokemonCenter_1F/map.json",
+    "sha1": "7ddd6ab18fd149b26178c2923830fd37f0977da0"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/EverGrandeCity_PokemonCenter_1F/map.json"
+  },
+  "map": "EverGrandeCity_PokemonCenter_1F",
+  "mapId": "MAP_EVER_GRANDE_CITY_POKEMON_CENTER_1F",
+  "weather": "WEATHER_NONE"
+}

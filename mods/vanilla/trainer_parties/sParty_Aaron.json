@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Aaron",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonNoItemCustomMoves sParty_Aaron[] = {\n    {\n    .iv = 255,\n    .lvl = 34,\n    .species = SPECIES_BAGON,\n    .moves = {MOVE_DRAGON_BREATH, MOVE_HEADBUTT, MOVE_FOCUS_ENERGY, MOVE_EMBER}\n    }\n};"
+  },
+  "symbol": "sParty_Aaron",
+  "partyType": "TrainerMonNoItemCustomMoves",
+  "pokemonCount": 1
+}

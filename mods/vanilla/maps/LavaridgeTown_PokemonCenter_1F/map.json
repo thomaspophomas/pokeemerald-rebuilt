@@ -99,5 +99,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_PokemonCenter_1F/map.json",
+    "sha1": "cdd361306994e8819b95106b17a3d01075f00340"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/LavaridgeTown_PokemonCenter_1F/map.json",
+    "mapName": "LavaridgeTown_PokemonCenter_1F",
+    "scriptsSourcePath": "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.inc"
+  },
+  "mapGroup": 4,
+  "mapNum": 5,
+  "mapGroupSymbol": "gMapGroup_IndoorLavaridge",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

@@ -1,0 +1,27 @@
+{
+  "id": "SootopolisCity_MysteryEventsHouse_B1F:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_MysteryEventsHouse_B1F/map.json",
+    "sha1": "6d77b8919eb774b3760aeda4b7dfb834a9ddf6e6"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/SootopolisCity_MysteryEventsHouse_B1F/map.json",
+    "raw": {
+      "x": 3,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_1F",
+      "dest_warp_id": "2"
+    }
+  },
+  "map": "SootopolisCity_MysteryEventsHouse_B1F",
+  "mapId": "MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_B1F",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

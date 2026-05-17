@@ -1,0 +1,31 @@
+{
+  "id": "MauvilleCity_Gym:coord_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Gym/map.json",
+    "sha1": "a550195e9016799d3ae0a0f03213db6dbadc4279"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MauvilleCity_Gym/map.json",
+    "raw": {
+      "type": "trigger",
+      "x": 4,
+      "y": 12,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "MauvilleCity_Gym_EventScript_Switch2"
+    }
+  },
+  "map": "MauvilleCity_Gym",
+  "mapId": "MAP_MAUVILLE_CITY_GYM",
+  "eventType": "coord_events",
+  "index": 0,
+  "script": "MauvilleCity_Gym_EventScript_Switch2",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

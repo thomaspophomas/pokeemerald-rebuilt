@@ -1,0 +1,30 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_2F:bg_events:1",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_2F/map.json",
+    "sha1": "3968fe199dd3996525171ffd7cab54137122cfa4"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_2F/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 15,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LilycoveCity_LilycoveMuseum_2F_EventScript_CutePainting"
+    }
+  },
+  "map": "LilycoveCity_LilycoveMuseum_2F",
+  "mapId": "MAP_LILYCOVE_CITY_LILYCOVE_MUSEUM_2F",
+  "eventType": "bg_events",
+  "index": 1,
+  "script": "LilycoveCity_LilycoveMuseum_2F_EventScript_CutePainting",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

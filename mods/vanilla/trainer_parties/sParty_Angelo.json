@@ -1,0 +1,17 @@
+{
+  "id": "sParty_Angelo",
+  "domain": "trainer_parties",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/trainer_parties.h",
+    "sha1": "5f4bc4bb1a75f15711e383878563459bc2e84dc7"
+  },
+  "legacy": {
+    "kind": "trainer_party_c_initializer",
+    "sourcePath": "src/data/trainer_parties.h",
+    "rawC": "static const struct TrainerMonItemCustomMoves sParty_Angelo[] = {\n    {\n    .iv = 100,\n    .lvl = 17,\n    .species = SPECIES_ILLUMISE,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_SHOCK_WAVE, MOVE_QUICK_ATTACK, MOVE_CHARM, MOVE_NONE}\n    },\n    {\n    .iv = 100,\n    .lvl = 17,\n    .species = SPECIES_VOLBEAT,\n    .heldItem = ITEM_NONE,\n    .moves = {MOVE_SHOCK_WAVE, MOVE_QUICK_ATTACK, MOVE_CONFUSE_RAY, MOVE_NONE}\n    }\n};"
+  },
+  "symbol": "sParty_Angelo",
+  "partyType": "TrainerMonItemCustomMoves",
+  "pokemonCount": 2
+}

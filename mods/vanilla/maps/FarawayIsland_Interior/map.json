@@ -46,5 +46,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FarawayIsland_Interior/map.json",
+    "sha1": "5c361f65bc6c4a9632200d800af1d0471fb543eb"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/FarawayIsland_Interior/map.json",
+    "mapName": "FarawayIsland_Interior",
+    "scriptsSourcePath": "data/maps/FarawayIsland_Interior/scripts.inc"
+  },
+  "mapGroup": 26,
+  "mapNum": 57,
+  "mapGroupSymbol": "gMapGroup_SpecialArea",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

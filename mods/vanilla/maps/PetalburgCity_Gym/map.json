@@ -543,5 +543,26 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "PetalburgCity_Gym_EventScript_RightGymStatue"
     }
+  ],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/map.json",
+    "sha1": "34ba789ea4c8292423a7dd5e264f33dade8777d7"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/PetalburgCity_Gym/map.json",
+    "mapName": "PetalburgCity_Gym",
+    "scriptsSourcePath": "data/maps/PetalburgCity_Gym/scripts.inc"
+  },
+  "mapGroup": 8,
+  "mapNum": 1,
+  "mapGroupSymbol": "gMapGroup_IndoorPetalburg",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
   ]
 }

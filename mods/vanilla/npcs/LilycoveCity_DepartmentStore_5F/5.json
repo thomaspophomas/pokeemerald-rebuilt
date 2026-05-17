@@ -1,0 +1,45 @@
+{
+  "id": "LilycoveCity_DepartmentStore_5F:5",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_5F/map.json",
+    "sha1": "0b6789c24f7cde9ba049aa2b9849680226525457"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_5F/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_3",
+      "x": 15,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LilycoveCity_DepartmentStore_5F_EventScript_ClerkMidRight",
+      "flag": "0"
+    }
+  },
+  "map": "LilycoveCity_DepartmentStore_5F",
+  "mapId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_5F",
+  "localId": 5,
+  "graphicsId": "OBJ_EVENT_GFX_WOMAN_3",
+  "x": 15,
+  "y": 6,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "LilycoveCity_DepartmentStore_5F_EventScript_ClerkMidRight",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

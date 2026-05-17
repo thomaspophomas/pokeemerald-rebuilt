@@ -1,0 +1,46 @@
+{
+  "id": "RustboroCity_Mart:LOCALID_RUSTBORO_MART_CLERK",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Mart/map.json",
+    "sha1": "344ee325eaf219ff8634808205c65d56027d0525"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/RustboroCity_Mart/map.json",
+    "raw": {
+      "local_id": "LOCALID_RUSTBORO_MART_CLERK",
+      "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
+      "x": 1,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RustboroCity_Mart_EventScript_Clerk",
+      "flag": "0"
+    }
+  },
+  "map": "RustboroCity_Mart",
+  "mapId": "MAP_RUSTBORO_CITY_MART",
+  "localId": "LOCALID_RUSTBORO_MART_CLERK",
+  "graphicsId": "OBJ_EVENT_GFX_MART_EMPLOYEE",
+  "x": 1,
+  "y": 3,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "RustboroCity_Mart_EventScript_Clerk",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "OldaleTown_PokemonCenter_2F:warp_events:2",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown_PokemonCenter_2F/map.json",
+    "sha1": "613fe8f2c75f69e5afa3b8e8ee12badedee2ffcd"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/OldaleTown_PokemonCenter_2F/map.json",
+    "raw": {
+      "x": 9,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_TRADE_CENTER",
+      "dest_warp_id": "0"
+    }
+  },
+  "map": "OldaleTown_PokemonCenter_2F",
+  "mapId": "MAP_OLDALE_TOWN_POKEMON_CENTER_2F",
+  "eventType": "warp_events",
+  "index": 2,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

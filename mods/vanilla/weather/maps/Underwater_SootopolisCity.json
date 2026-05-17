@@ -1,0 +1,16 @@
+{
+  "id": "Underwater_SootopolisCity:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_SootopolisCity/map.json",
+    "sha1": "057aad9ba40cbca5c6c18c9ada27149aa7a97de3"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/Underwater_SootopolisCity/map.json"
+  },
+  "map": "Underwater_SootopolisCity",
+  "mapId": "MAP_UNDERWATER_SOOTOPOLIS_CITY",
+  "weather": "WEATHER_UNDERWATER_BUBBLES"
+}

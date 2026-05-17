@@ -1,0 +1,27 @@
+{
+  "id": "FortreeCity_House3:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_House3/map.json",
+    "sha1": "ec13b38d56e6eebeebe6fe9f692bccdd47b490e0"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/FortreeCity_House3/map.json",
+    "raw": {
+      "x": 3,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_FORTREE_CITY",
+      "dest_warp_id": "5"
+    }
+  },
+  "map": "FortreeCity_House3",
+  "mapId": "MAP_FORTREE_CITY_HOUSE3",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

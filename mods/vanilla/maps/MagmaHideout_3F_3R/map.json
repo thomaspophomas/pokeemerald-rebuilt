@@ -45,5 +45,26 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "domain": "maps",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_3F_3R/map.json",
+    "sha1": "20956d52277b535d2402b4dfb13e1b79ec784495"
+  },
+  "legacy": {
+    "kind": "map_json",
+    "sourcePath": "data/maps/MagmaHideout_3F_3R/map.json",
+    "mapName": "MagmaHideout_3F_3R",
+    "scriptsSourcePath": "data/maps/MagmaHideout_3F_3R/scripts.inc"
+  },
+  "mapGroup": 24,
+  "mapNum": 92,
+  "mapGroupSymbol": "gMapGroup_Dungeons",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "WARP"
+  ]
 }

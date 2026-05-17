@@ -1,0 +1,16 @@
+{
+  "id": "DesertUnderpass:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DesertUnderpass/map.json",
+    "sha1": "46068f68175d5348066516bc036dfbc204c4691c"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/DesertUnderpass/map.json"
+  },
+  "map": "DesertUnderpass",
+  "mapId": "MAP_DESERT_UNDERPASS",
+  "weather": "WEATHER_NONE"
+}

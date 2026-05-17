@@ -1,0 +1,45 @@
+{
+  "id": "BattleColosseum_2P:1",
+  "domain": "npcs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleColosseum_2P/map.json",
+    "sha1": "759865d0e4fd0286d6db2cc4390c68ea3a0511c1"
+  },
+  "legacy": {
+    "kind": "map_object_event",
+    "sourcePath": "data/maps/BattleColosseum_2P/map.json",
+    "raw": {
+      "graphics_id": "OBJ_EVENT_GFX_LINK_RECEPTIONIST",
+      "x": 9,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BattleColosseum_2P_EventScript_Attendant",
+      "flag": "0"
+    }
+  },
+  "map": "BattleColosseum_2P",
+  "mapId": "MAP_BATTLE_COLOSSEUM_2P",
+  "localId": 1,
+  "graphicsId": "OBJ_EVENT_GFX_LINK_RECEPTIONIST",
+  "x": 9,
+  "y": 3,
+  "elevation": 3,
+  "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+  "movementRangeX": 0,
+  "movementRangeY": 0,
+  "trainerType": "TRAINER_TYPE_NONE",
+  "trainerSightOrBerryTreeId": "0",
+  "script": "BattleColosseum_2P_EventScript_Attendant",
+  "flag": "0",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "OBJECT_EVENT",
+    "SCRIPT"
+  ]
+}

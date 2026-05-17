@@ -1,0 +1,30 @@
+{
+  "id": "MauvilleCity_GameCorner:bg_events:11",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_GameCorner/map.json",
+    "sha1": "c09fcaf0f5e2937154730dd8bec5f2da90d673f4"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/MauvilleCity_GameCorner/map.json",
+    "raw": {
+      "type": "sign",
+      "x": 8,
+      "y": 9,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_WEST",
+      "script": "MauvilleCity_GameCorner_EventScript_SlotMachine11"
+    }
+  },
+  "map": "MauvilleCity_GameCorner",
+  "mapId": "MAP_MAUVILLE_CITY_GAME_CORNER",
+  "eventType": "bg_events",
+  "index": 11,
+  "script": "MauvilleCity_GameCorner_EventScript_SlotMachine11",
+  "interactionPolicy": "EXCLUSIVE",
+  "resourceLocks": [
+    "SCRIPT"
+  ]
+}

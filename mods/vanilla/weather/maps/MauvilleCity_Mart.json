@@ -1,0 +1,16 @@
+{
+  "id": "MauvilleCity_Mart:weather",
+  "domain": "weather",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Mart/map.json",
+    "sha1": "72672da5cc97f36cb33937dd5b2004f080258233"
+  },
+  "legacy": {
+    "kind": "map_weather",
+    "sourcePath": "data/maps/MauvilleCity_Mart/map.json"
+  },
+  "map": "MauvilleCity_Mart",
+  "mapId": "MAP_MAUVILLE_CITY_MART",
+  "weather": "WEATHER_NONE"
+}

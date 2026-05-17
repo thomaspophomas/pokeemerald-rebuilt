@@ -1,0 +1,27 @@
+{
+  "id": "LilycoveCity_Harbor:warp_events:0",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_Harbor/map.json",
+    "sha1": "7bb6c3366d5032a1aa3a6b6279dbda154bbee405"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/LilycoveCity_Harbor/map.json",
+    "raw": {
+      "x": 11,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_LILYCOVE_CITY",
+      "dest_warp_id": "12"
+    }
+  },
+  "map": "LilycoveCity_Harbor",
+  "mapId": "MAP_LILYCOVE_CITY_HARBOR",
+  "eventType": "warp_events",
+  "index": 0,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}

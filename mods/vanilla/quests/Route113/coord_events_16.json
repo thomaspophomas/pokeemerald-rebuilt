@@ -1,0 +1,27 @@
+{
+  "id": "Route113:coord_events:16",
+  "domain": "quests",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113/map.json",
+    "sha1": "4d5b412e7056cb5dda1085ac70fb8a367cb400c1"
+  },
+  "legacy": {
+    "kind": "map_event_hook",
+    "sourcePath": "data/maps/Route113/map.json",
+    "raw": {
+      "type": "weather",
+      "x": 87,
+      "y": 8,
+      "elevation": 3,
+      "weather": "COORD_EVENT_WEATHER_VOLCANIC_ASH"
+    }
+  },
+  "map": "Route113",
+  "mapId": "MAP_ROUTE113",
+  "eventType": "coord_events",
+  "index": 16,
+  "script": null,
+  "interactionPolicy": "SHARED_READONLY",
+  "resourceLocks": []
+}
