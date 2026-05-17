@@ -1,6 +1,6 @@
 # pokeemerald-rebuilt
 
-<!-- last_updated: 2026-05-16 -->
+<!-- last_updated: 2026-05-17 -->
 
 [![CI/CD](https://github.com/thomaspophomas/pokeemerald-rebuilt/actions/workflows/build.yml/badge.svg)](https://github.com/thomaspophomas/pokeemerald-rebuilt/actions/workflows/build.yml)
 
@@ -11,6 +11,46 @@ runtime weather/time/follower systems, and compile-time engine rule sets.
 
 This repository is based on the public Pokemon Emerald decompilation layout.
 It does not distribute a built ROM in releases or CI artifacts.
+
+## Current Status
+
+As of the 2026-05-17 documentation/build audit, `origin/master` pointed at
+`8b3f7f7036dfac2defb7c590f9aa49c34419b15a` ("Merge multiplayer modular
+refactor foundation"). The checked `master` CI/CD run for that commit started
+on 2026-05-16 at 16:15 UTC and concluded `failure`.
+
+- Green on `master`: documentation structure, architecture guard, multiplayer
+  fuzz checks, multiplayer host simulator, net-manifest check, modgen smoke,
+  and whitespace check.
+- Red on `master`: `build-compare`, all `build-modern` matrix entries, and
+  `build-feature-agbcc`. `build-compare` failed before compare at the symbol
+  branch checkout step; the modern and feature build lanes failed in their
+  build steps. This working tree carries fixes for the known checkout and
+  compile failures; the badge remains authoritative after the next pushed CI
+  run.
+- Do not describe the online multiplayer work as ready to use. It remains a
+  foundation/skeleton until the bridge, server authority, matchmaking, and
+  persistence pieces exist.
+
+Implemented foundation:
+
+- Module registry hooks and runtime state storage for the Solo/Online setting.
+- Generated mod registries and mod-facing APIs for flags, events, weather,
+  time, sprites, language text, Pokeballs, engine rulesets, NPCs, and maps.
+- Multiplayer session, transport, overworld snapshot, battle subsession, trade
+  subsession, clock, and fail-closed commit scaffolding.
+- Host-side CI checks for the documented protocol and invariants.
+
+Known limits:
+
+- Online multiplayer is not finished. There is no production bridge process,
+  server, matchmaking, persistence mirror, or public play path in this repo.
+- `FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT=1` enables only the ROM-side EWRAM
+  mailbox adapter. The emulator/bridge/server side of that contract is a
+  specification target, not an implemented component.
+- Battle, trade, item, party, story, reward, and daily-event authority is still
+  server-side future work. Client-side online commits intentionally fail closed
+  where authoritative validation is missing.
 
 ## TL;DR
 
@@ -24,6 +64,7 @@ It does not distribute a built ROM in releases or CI artifacts.
 - Build-time feature gate: `FEATURE_MULTIPLAYER=1`.
 - Emulator bridge transport is opt-in with
   `FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT=1`.
+- The bridge/server side is not implemented in this repository yet.
 - Multiplayer defaults to Solo and can be switched to Online in-game through
   Options or the Start menu when `FEATURE_MULTIPLAYER=1`.
 - Runtime-safe feature state starts in `engine/runtime_state`; the
@@ -36,7 +77,7 @@ It does not distribute a built ROM in releases or CI artifacts.
 ## Architecture
 
 ```mermaid
-%% last_updated: 2026-05-15
+%% last_updated: 2026-05-17
 flowchart LR
     Main["main.c / overworld.c / battle_main.c"]
     Registry["engine/module_registry"]
@@ -120,7 +161,9 @@ Jobs:
 - Host-side multiplayer simulator checks for duplicate/retry/rollback safety.
 - Multiplayer net-manifest check for protocol/build/bridge allowlist drift.
 - Mod generator smoke test for generated registries and mod source discovery.
-- Vanilla compare build plus `.sym` generation.
+- Non-modern `COMPARE=0` build plus `.sym` generation. This fork is no longer
+  byte-identical to upstream vanilla Emerald, so the legacy `make compare`
+  checksum is not a required CI gate.
 - Modern builds with `FEATURE_MULTIPLAYER=0`, `FEATURE_MULTIPLAYER=1`, and
   an explicit emulator-transport variant.
 - Non-modern feature build with `FEATURE_MULTIPLAYER=1`, explicit
@@ -190,12 +233,16 @@ CI intentionally does not upload built ROM artifacts.
 1. [AGENTS.md](AGENTS.md) or [CLAUDE.md](CLAUDE.md) for AI-agent rules.
 2. [docs/modular_multiplayer_architecture.md](docs/modular_multiplayer_architecture.md)
    for the current refactor boundary.
-3. `include/config/features.h` for build-time feature gates.
-4. `include/engine/` and `src/engine/` for module hooks and runtime state.
-5. `include/mod/` and `src/mod/` for mod-facing APIs and adapters.
-6. `include/multiplayer/` and `src/multiplayer/` for session, transport,
+3. [docs/multiplayer_bridge.md](docs/multiplayer_bridge.md) for the
+   emulator bridge/server contract.
+4. [mods/README.md](mods/README.md) for mod manifest JSON and conflict rules.
+5. [CONTRIBUTING.md](CONTRIBUTING.md) for PR checks and repository policy.
+6. `include/config/features.h` for build-time feature gates.
+7. `include/engine/` and `src/engine/` for module hooks and runtime state.
+8. `include/mod/` and `src/mod/` for mod-facing APIs and adapters.
+9. `include/multiplayer/` and `src/multiplayer/` for session, transport,
    overworld, battle, and trade APIs.
-7. `INSTALL.md` for toolchain setup.
+10. `INSTALL.md` for toolchain setup.
 
 ## References
 

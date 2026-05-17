@@ -8,6 +8,15 @@
   "transportModeValue": 1,
   "maxNetPlayers": 8,
   "reliableQueueSize": 16,
+  "packetPayloadSize": 128,
   "commitLogSize": 32,
-  "authoritativeServer": true
+  "authoritativeServer": true,
+  "mailbox": {
+    "symbol": "gNetEmulatorBridgeMailbox",
+    "struct": "NetEmulatorBridgeBuffer",
+    "memoryDomain": "EWRAM",
+    "minAddress": "0x02000000",
+    "maxAddress": "0x0203FFFF",
+    "maxSize": 8192
+  }
 }

@@ -59,11 +59,7 @@ bool8 MultiplayerBattle_CanStart(const struct MultiplayerBattleRequest *request)
         return FALSE;
     }
 #else
-    (void)subsessionId;
-    (void)battlerSlot;
-    (void)action;
-    (void)target;
-    (void)parameter;
+    (void)request;
     return FALSE;
 #endif
 }

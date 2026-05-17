@@ -24,6 +24,7 @@ NET_EMULATOR_BRIDGE_VERSION = 5
 NET_TRANSPORT_MODE_SERVER_BRIDGE = 1
 NET_COMMIT_LOG_SIZE = 32
 NET_RELIABLE_QUEUE_SIZE = 16
+NET_TRANSPORT_PACKET_PAYLOAD_SIZE = 128
 NET_PENDING_TX_COUNT = 16
 OPTIONS_MULTIPLAYER_MODE_SOLO = 0
 OPTIONS_MULTIPLAYER_MODE_ONLINE = 1
@@ -297,15 +298,15 @@ def test_snapshot_edges() -> None:
 
 
 def test_packet_edges() -> None:
-    assert packet_is_valid(Packet(packet_type=1, sequence=1), 7, 0, 256)
-    assert not packet_is_valid(Packet(packet_type=NET_PACKET_NONE, sequence=1), 7, 0, 256)
-    assert not packet_is_valid(Packet(packet_type=NET_PACKET_COUNT, sequence=1), 7, 0, 256)
-    assert not packet_is_valid(Packet(packet_type=1, sequence=0), 7, 0, 256)
-    assert not packet_is_valid(Packet(packet_type=1, sequence=4), 7, 4, 256)
-    assert not packet_is_valid(Packet(packet_type=1, sequence=5, session_id=8), 7, 4, 256)
-    assert not packet_is_valid(Packet(packet_type=1, sequence=5, session_epoch=10), 7, 4, 256)
-    assert not packet_is_valid(Packet(packet_type=1, sequence=5, player_id=8), 7, 4, 256)
-    assert not packet_is_valid(Packet(packet_type=1, sequence=5, payload_size=257), 7, 4, 256)
+    assert packet_is_valid(Packet(packet_type=1, sequence=1), 7, 0, NET_TRANSPORT_PACKET_PAYLOAD_SIZE)
+    assert not packet_is_valid(Packet(packet_type=NET_PACKET_NONE, sequence=1), 7, 0, NET_TRANSPORT_PACKET_PAYLOAD_SIZE)
+    assert not packet_is_valid(Packet(packet_type=NET_PACKET_COUNT, sequence=1), 7, 0, NET_TRANSPORT_PACKET_PAYLOAD_SIZE)
+    assert not packet_is_valid(Packet(packet_type=1, sequence=0), 7, 0, NET_TRANSPORT_PACKET_PAYLOAD_SIZE)
+    assert not packet_is_valid(Packet(packet_type=1, sequence=4), 7, 4, NET_TRANSPORT_PACKET_PAYLOAD_SIZE)
+    assert not packet_is_valid(Packet(packet_type=1, sequence=5, session_id=8), 7, 4, NET_TRANSPORT_PACKET_PAYLOAD_SIZE)
+    assert not packet_is_valid(Packet(packet_type=1, sequence=5, session_epoch=10), 7, 4, NET_TRANSPORT_PACKET_PAYLOAD_SIZE)
+    assert not packet_is_valid(Packet(packet_type=1, sequence=5, player_id=8), 7, 4, NET_TRANSPORT_PACKET_PAYLOAD_SIZE)
+    assert not packet_is_valid(Packet(packet_type=1, sequence=5, payload_size=NET_TRANSPORT_PACKET_PAYLOAD_SIZE + 1), 7, 4, NET_TRANSPORT_PACKET_PAYLOAD_SIZE)
 
 
 def test_handshake_edges() -> None:

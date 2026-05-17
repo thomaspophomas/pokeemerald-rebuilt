@@ -10,19 +10,28 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 CONSTANTS = ROOT / "include" / "multiplayer" / "constants.h"
+TRANSPORT = ROOT / "include" / "multiplayer" / "transport.h"
+MAILBOX = ROOT / "include" / "multiplayer" / "bridge_mailbox.h"
 MANIFEST = ROOT / "docs" / "multiplayer_net_manifest.json"
 
 
-def read_define(name: str) -> str:
-    text = CONSTANTS.read_text(encoding="utf-8")
+def read_define(path: Path, name: str) -> str:
+    text = path.read_text(encoding="utf-8")
     match = re.search(rf"^\s*#define\s+{re.escape(name)}\s+(.+?)\s*(?://.*)?$", text, re.MULTILINE)
     if not match:
-        raise SystemExit(f"Missing {name} in {CONSTANTS}")
+        raise SystemExit(f"Missing {name} in {path}")
     return match.group(1).strip()
 
 
 def parse_int(value: str) -> int:
     return int(value, 0)
+
+
+def parse_string(value: str) -> str:
+    match = re.fullmatch(r'"([^"]*)"', value.strip())
+    if not match:
+        raise SystemExit(f"Expected string define, got {value!r}")
+    return match.group(1)
 
 
 def expect(name: str, actual: object, expected: object) -> None:
@@ -33,18 +42,30 @@ def expect(name: str, actual: object, expected: object) -> None:
 def main() -> None:
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
 
-    expect("protocolVersion", manifest["protocolVersion"], parse_int(read_define("NET_PROTOCOL_VERSION")))
-    expect("emulatorBridgeVersion", manifest["emulatorBridgeVersion"], parse_int(read_define("NET_EMULATOR_BRIDGE_VERSION")))
-    expect("buildId", manifest["buildId"], f"0x{parse_int(read_define('NET_PROTOCOL_BUILD_ID')):08X}")
-    expect("rulesetHash", manifest["rulesetHash"], f"0x{parse_int(read_define('NET_RULESET_HASH')):08X}")
-    expect("transportModeValue", manifest["transportModeValue"], parse_int(read_define("NET_TRANSPORT_MODE_SERVER_BRIDGE")))
-    expect("maxNetPlayers", manifest["maxNetPlayers"], parse_int(read_define("MAX_NET_PLAYERS")))
-    expect("reliableQueueSize", manifest["reliableQueueSize"], parse_int(read_define("NET_RELIABLE_QUEUE_SIZE")))
-    expect("commitLogSize", manifest["commitLogSize"], parse_int(read_define("NET_COMMIT_LOG_SIZE")))
+    expect("protocolVersion", manifest["protocolVersion"], parse_int(read_define(CONSTANTS, "NET_PROTOCOL_VERSION")))
+    expect("emulatorBridgeVersion", manifest["emulatorBridgeVersion"], parse_int(read_define(CONSTANTS, "NET_EMULATOR_BRIDGE_VERSION")))
+    expect("buildId", manifest["buildId"], f"0x{parse_int(read_define(CONSTANTS, 'NET_PROTOCOL_BUILD_ID')):08X}")
+    expect("rulesetHash", manifest["rulesetHash"], f"0x{parse_int(read_define(CONSTANTS, 'NET_RULESET_HASH')):08X}")
+    expect("transportModeValue", manifest["transportModeValue"], parse_int(read_define(CONSTANTS, "NET_TRANSPORT_MODE_SERVER_BRIDGE")))
+    expect("maxNetPlayers", manifest["maxNetPlayers"], parse_int(read_define(CONSTANTS, "MAX_NET_PLAYERS")))
+    expect("reliableQueueSize", manifest["reliableQueueSize"], parse_int(read_define(CONSTANTS, "NET_RELIABLE_QUEUE_SIZE")))
+    expect("packetPayloadSize", manifest["packetPayloadSize"], parse_int(read_define(TRANSPORT, "NET_TRANSPORT_PACKET_PAYLOAD_SIZE")))
+    expect("commitLogSize", manifest["commitLogSize"], parse_int(read_define(CONSTANTS, "NET_COMMIT_LOG_SIZE")))
     if manifest.get("transportMode") != "server_bridge":
         raise SystemExit("transportMode must be server_bridge")
     if manifest.get("authoritativeServer") is not True:
         raise SystemExit("authoritativeServer must be true")
+    mailbox = manifest.get("mailbox")
+    if not isinstance(mailbox, dict):
+        raise SystemExit("manifest mailbox object is required")
+    expect("mailbox.symbol", mailbox.get("symbol"), parse_string(read_define(MAILBOX, "NET_EMULATOR_MAILBOX_SYMBOL_NAME")))
+    expect("mailbox.struct", mailbox.get("struct"), "NetEmulatorBridgeBuffer")
+    expect("mailbox.memoryDomain", mailbox.get("memoryDomain"), parse_string(read_define(MAILBOX, "NET_EMULATOR_MAILBOX_MEMORY_DOMAIN")))
+    expect("mailbox.minAddress", mailbox.get("minAddress"), "0x02000000")
+    expect("mailbox.maxAddress", mailbox.get("maxAddress"), "0x0203FFFF")
+    expect("mailbox.maxSize", mailbox.get("maxSize"), parse_int(read_define(MAILBOX, "NET_EMULATOR_MAILBOX_MAX_SIZE")))
+    if "NET_EMULATOR_SHARED_BASE" in CONSTANTS.read_text(encoding="utf-8"):
+        raise SystemExit("NET_EMULATOR_SHARED_BASE must not be reintroduced")
 
     print("Multiplayer net manifest OK")
 

@@ -33,10 +33,14 @@ if grep -n '#define FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT FEATURE_MULTIPLAYER' 
     exit 1
 fi
 
-if grep -R -n "0x10000000" src/multiplayer include/multiplayer 2>/dev/null \
-    | grep -v "include/multiplayer/constants.h" >/tmp/architecture_guard_matches.txt; then
-    echo "Raw emulator bridge addresses must stay in multiplayer constants/transport only." >&2
+if grep -R -n "0x10000000\\|NET_EMULATOR_SHARED_BASE" src/multiplayer include/multiplayer 2>/dev/null >/tmp/architecture_guard_matches.txt; then
+    echo "Raw emulator bridge addresses must not be used; bridge adapters must resolve the EWRAM mailbox symbol." >&2
     cat /tmp/architecture_guard_matches.txt >&2
+    exit 1
+fi
+
+if ! grep -n "gNetEmulatorBridgeMailbox" include/multiplayer/bridge_mailbox.h src/multiplayer/transport_emulator.c >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Emulator bridge mailbox must remain a stable exported EWRAM symbol." >&2
     exit 1
 fi
 
@@ -68,6 +72,11 @@ fi
 
 if ! grep -n '#define NET_RELIABLE_QUEUE_SIZE 16' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
     echo "Multiplayer reliable action lane must retain a bounded ring buffer." >&2
+    exit 1
+fi
+
+if ! grep -n '#define NET_TRANSPORT_PACKET_PAYLOAD_SIZE 128' include/multiplayer/transport.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer packet payload size must stay within the EWRAM mailbox budget." >&2
     exit 1
 fi
 

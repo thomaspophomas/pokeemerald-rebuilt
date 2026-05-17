@@ -1,4 +1,5 @@
 #include "global.h"
+#include "battle.h"
 #include "generated/mod_registry.h"
 #include "mod/battle_sprite.h"
 #include "mod/pokeball.h"

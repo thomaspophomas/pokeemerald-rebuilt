@@ -5,13 +5,22 @@
 #include "multiplayer/protocol.h"
 #include "multiplayer/types.h"
 
-#define NET_TRANSPORT_PACKET_PAYLOAD_SIZE 256
+#define NET_TRANSPORT_PACKET_PAYLOAD_SIZE 128
 
 struct NetTransportPacketSlot
 {
     struct NetPacketEnvelope envelope;
     u8 payload[NET_TRANSPORT_PACKET_PAYLOAD_SIZE];
 } __attribute__((packed));
+
+STATIC_ASSERT(sizeof(struct NetClientHello) <= NET_TRANSPORT_PACKET_PAYLOAD_SIZE, NetClientHelloPayloadTooLarge);
+STATIC_ASSERT(sizeof(struct NetHeartbeat) <= NET_TRANSPORT_PACKET_PAYLOAD_SIZE, NetHeartbeatPayloadTooLarge);
+STATIC_ASSERT(sizeof(struct NetMoveIntent) <= NET_TRANSPORT_PACKET_PAYLOAD_SIZE, NetMoveIntentPayloadTooLarge);
+STATIC_ASSERT(sizeof(struct NetInteractIntent) <= NET_TRANSPORT_PACKET_PAYLOAD_SIZE, NetInteractIntentPayloadTooLarge);
+STATIC_ASSERT(sizeof(struct NetBattleAction) <= NET_TRANSPORT_PACKET_PAYLOAD_SIZE, NetBattleActionPayloadTooLarge);
+STATIC_ASSERT(sizeof(struct NetTradeAction) <= NET_TRANSPORT_PACKET_PAYLOAD_SIZE, NetTradeActionPayloadTooLarge);
+STATIC_ASSERT(sizeof(struct NetCommitResult) <= NET_TRANSPORT_PACKET_PAYLOAD_SIZE, NetCommitResultPayloadTooLarge);
+STATIC_ASSERT(sizeof(struct MultiplayerSubsession) <= NET_TRANSPORT_PACKET_PAYLOAD_SIZE, MultiplayerSubsessionPayloadTooLarge);
 
 struct NetTransportSessionView
 {

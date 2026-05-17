@@ -1,40 +1,12 @@
 #include "global.h"
+#include "multiplayer/bridge_mailbox.h"
 #include "multiplayer/transport.h"
 
 #if FEATURE_MULTIPLAYER && FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT
 
-struct EmulatorBridgeBuffer
-{
-    u32 magic;
-    u16 version;
-    u8 connected;
-    u8 localPlayerId;
-    u8 hostPlayerId;
-    u8 playerCount;
-    u8 transportMode;
-    u8 reserved;
-    u32 sessionId;
-    u32 sessionEpoch;
-    u32 playerToken;
-    u32 joinNonce;
-    u32 bridgeTick;
-    u32 serverClockSeconds;
-    u32 viewSequence;
-    u32 localSnapshotSequence;
-    u32 reliableOutboundHead;
-    u32 reliableOutboundTail;
-    u32 reliableInboundHead;
-    u32 reliableInboundTail;
-    u32 latestUnreliableSequence;
-    struct NetPlayerSnapshot serverPlayers[MAX_NET_PLAYERS];
-    struct MultiplayerSubsession serverSubsessions[MAX_NET_SUBSESSIONS];
-    struct NetPlayerSnapshot localSnapshot;
-    struct NetTransportPacketSlot latestUnreliable;
-    struct NetTransportPacketSlot reliableOutbound[NET_RELIABLE_QUEUE_SIZE];
-    struct NetTransportPacketSlot reliableInbound[NET_RELIABLE_QUEUE_SIZE];
-} __attribute__((packed));
+EWRAM_DATA volatile struct NetEmulatorBridgeBuffer gNetEmulatorBridgeMailbox = {0};
 
-static volatile struct EmulatorBridgeBuffer *const sBridge = (volatile struct EmulatorBridgeBuffer *)NET_EMULATOR_SHARED_BASE;
+static volatile struct NetEmulatorBridgeBuffer *const sBridge = &gNetEmulatorBridgeMailbox;
 static EWRAM_DATA u32 sOutboundSequence = 0;
 static EWRAM_DATA u32 sLastInboundSequence = 0;
 static EWRAM_DATA u32 sCurrentSessionId = 0;

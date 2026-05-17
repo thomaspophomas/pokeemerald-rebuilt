@@ -1,9 +1,16 @@
 # Modular Multiplayer Architecture
 
+<!-- last_updated: 2026-05-17 -->
+
 This project is moving toward a mod-first architecture. The goal is not to
 preserve vanilla compare behavior at all costs, but to keep new systems
 attachable and removable without hardwiring them through the existing global
 engine state.
+
+This file describes the architecture boundary and target shape. For the
+normative emulator bridge/server contract, see
+[multiplayer_bridge.md](multiplayer_bridge.md). For current build status and
+known limits, start with [README.md](../README.md#current-status).
 
 ## Feature Gates
 
@@ -127,7 +134,10 @@ Every online bridge session must expose `transportMode=server_bridge`,
 `sessionEpoch`, `playerToken`, `joinNonce`, `serverClockSeconds`,
 `protocolVersion`, `bridgeVersion`, `buildId`, `rulesetHash`, and
 `featureFlags`. The tracked manifest in `docs/multiplayer_net_manifest.json`
-is the build artifact contract that the future server should allowlist.
+is the build artifact contract that the future server should allowlist. The
+emulator-side bridge must resolve `gNetEmulatorBridgeMailbox` from symbols and
+write that EWRAM mailbox; fixed pseudo-addresses such as `0x10000000` are not
+part of the ROM contract.
 
 Client data is always a request, never authority. The ROM sends
 `ClientHello`, `Heartbeat`, `LocalSnapshot`, `MoveIntent`, `InteractIntent`,
@@ -156,6 +166,8 @@ RTC, and run mismatched ROM/core builds. The hardening rules are:
 - The emulator transport exposes only one latest snapshot lane, while gameplay
   actions use `NET_RELIABLE_QUEUE_SIZE` ringbuffer slots instead of overwriting
   a prior action packet.
+- Reliable packet payloads are capped at `NET_TRANSPORT_PACKET_PAYLOAD_SIZE`
+  (`128`) so the mailbox fits inside the current EWRAM budget.
 - Snapshots carry `clientFrame`, `serverTickSeen`, `sequence`, and
   `sessionEpoch`; future frames, frame regressions, and stale sequences cause
   drop/resync paths.
@@ -238,6 +250,10 @@ This pass adds:
   maps
 - Mod-facing APIs for shared sprite assets, overworld sprites, battle sprites,
   language text, and Pokeball rules
+
+This is still foundation work. It is not a finished online multiplayer release:
+there is no production emulator-side bridge, authoritative server, matchmaking,
+server persistence mirror, or public online play path in this repository.
 
 The next implementation pass should replace the bridge skeleton with an actual
 emulator-side bridge, move battle-controller synchronization behind

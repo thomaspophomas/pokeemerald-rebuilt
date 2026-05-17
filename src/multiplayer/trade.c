@@ -27,10 +27,7 @@ bool8 MultiplayerTrade_CanStart(const struct MultiplayerTradeRequest *request)
 
     return TRUE;
 #else
-    (void)subsessionId;
-    (void)action;
-    (void)partySlot;
-    (void)tradeChecksum;
+    (void)request;
     return FALSE;
 #endif
 }

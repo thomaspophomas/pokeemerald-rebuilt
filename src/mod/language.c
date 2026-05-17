@@ -2,6 +2,7 @@
 #include "generated/mod_registry.h"
 #include "mod/language.h"
 #include "string_util.h"
+#include "text.h"
 
 static EWRAM_DATA char sActiveLanguage[LANGUAGE_API_MAX_ID_LENGTH + 1];
 static const u8 sMissingText[] = _("");

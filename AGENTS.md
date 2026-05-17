@@ -5,7 +5,7 @@ metadata:
 
 # AGENTS.md - pokeemerald-rebuilt
 
-<!-- last_updated: 2026-05-16 -->
+<!-- last_updated: 2026-05-17 -->
 
 Briefing for AI agents working in this repository. Read this first, then inspect
 the relevant source files before changing code.
@@ -13,7 +13,8 @@ the relevant source files before changing code.
 ## TL;DR
 
 This is a mod-first Pokemon Emerald decomp repo. The active architectural goal
-is a multiplayer-first modular refactor:
+is a multiplayer-first modular refactor. Current `master` is foundation code,
+not a finished online multiplayer release:
 
 - 8 online players in the overworld session.
 - PvE battle subsessions with up to 2 human players.
@@ -21,6 +22,8 @@ is a multiplayer-first modular refactor:
 - Trade subsessions with 2 players.
 - Emulator bridge transport adapter, isolated behind `NetTransport_*` and
   enabled only with `FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT=1`.
+- No production bridge/server, matchmaking layer, persistence mirror, or public
+  online play path exists in this repository yet.
 - Runtime-safe feature settings behind `engine/runtime_state`.
 - Mod-facing APIs for weather, time, events, flags, sprites, language text,
   Pokeballs, engine rulesets, NPCs, and maps under `include/mod` and `src/mod`.
@@ -131,11 +134,14 @@ toolchain described in `INSTALL.md`.
 
 1. `README.md` for project setup and current feature direction.
 2. `docs/modular_multiplayer_architecture.md` for multiplayer boundaries.
-3. `include/config/features.h` for feature gates.
-4. `include/engine/` and `src/engine/` for module attachment points.
-5. `include/mod/` and `src/mod/` for mod-facing APIs.
-6. `include/multiplayer/` and `src/multiplayer/` for network/session APIs.
-7. Legacy Emerald systems only after reading the relevant adapter.
+3. `docs/multiplayer_bridge.md` for the bridge/server contract.
+4. `mods/README.md` for generated mod manifest domains.
+5. `CONTRIBUTING.md` for PR checks and source-only policy.
+6. `include/config/features.h` for feature gates.
+7. `include/engine/` and `src/engine/` for module attachment points.
+8. `include/mod/` and `src/mod/` for mod-facing APIs.
+9. `include/multiplayer/` and `src/multiplayer/` for network/session APIs.
+10. Legacy Emerald systems only after reading the relevant adapter.
 
 ## Do NOT
 

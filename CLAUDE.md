@@ -5,7 +5,7 @@ metadata:
 
 # CLAUDE.md - pokeemerald-rebuilt
 
-<!-- last_updated: 2026-05-16 -->
+<!-- last_updated: 2026-05-17 -->
 
 Briefing for Claude and other AI consumers. This file mirrors the agent-facing
 rules in [AGENTS.md](AGENTS.md); keep both in sync when changing repository
@@ -14,7 +14,8 @@ conventions.
 ## TL;DR
 
 Mod-first Pokemon Emerald decomp repo. The current architecture work is an
-8-player online overworld plus battle/trade subsessions:
+8-player online overworld plus battle/trade subsessions. Current `master` is
+foundation code, not a finished online multiplayer release:
 
 - Overworld: up to 8 online players.
 - PvE battle: up to 2 human players.
@@ -22,6 +23,8 @@ Mod-first Pokemon Emerald decomp repo. The current architecture work is an
 - Trade: 2-player subsession.
 - Transport: emulator bridge adapter, isolated behind `NetTransport_*` and
   opt-in with `FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT=1`.
+- No production bridge/server, matchmaking layer, persistence mirror, or public
+  online play path exists in this repository yet.
 - Runtime-safe feature toggles: `engine/runtime_state`.
 - Mod-facing APIs: weather, time, events, flags, sprites, language text,
   Pokeballs, engine rulesets, NPCs, and maps under `include/mod` and `src/mod`.
@@ -101,10 +104,13 @@ legacy-global access through feature code.
 1. `README.md`
 2. `AGENTS.md`
 3. `docs/modular_multiplayer_architecture.md`
-4. `include/config/features.h`
-5. `include/engine/` and `src/engine/`
-6. `include/mod/` and `src/mod/`
-7. `include/multiplayer/` and `src/multiplayer/`
+4. `docs/multiplayer_bridge.md`
+5. `mods/README.md`
+6. `CONTRIBUTING.md`
+7. `include/config/features.h`
+8. `include/engine/` and `src/engine/`
+9. `include/mod/` and `src/mod/`
+10. `include/multiplayer/` and `src/multiplayer/`
 
 ## Do NOT
 

@@ -42,6 +42,7 @@ jobs:
         run: git diff-tree --check -r --no-commit-id HEAD
 
   build-compare:
+    name: build-nonmodern-symbols
     runs-on: ubuntu-latest
     needs: docs-and-architecture
     permissions:
@@ -51,13 +52,24 @@ jobs:
       GAME_REVISION: 0
       GAME_LANGUAGE: ENGLISH
       MODERN: 0
-      COMPARE: 1
+      COMPARE: 0
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Check symbols branch
+        id: symbols
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+        run: |
+          if git ls-remote --exit-code --heads origin symbols >/dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+            echo "symbols branch not found; non-modern build will continue without symbol publishing"
+          fi
+
       - name: Checkout syms
-        if: ${{ github.event_name == 'push' }}
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' && steps.symbols.outputs.exists == 'true' }}
         uses: actions/checkout@v4
         with:
           path: symbols
@@ -80,17 +92,17 @@ jobs:
           ./install.sh ../
         working-directory: agbcc
 
-      - name: Compare
+      - name: Non-modern build and symbols
         run: make -j${nproc} all syms
 
       - name: Move symfiles
-        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' && steps.symbols.outputs.exists == 'true' }}
         run: |
           cp -v *.sym symbols/
           echo "SYMBOLS_COMMIT_MSG=$(git log --format=%s -n 1 ${GITHUB_SHA})" >> $GITHUB_ENV
 
       - name: Update symfiles
-        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' && steps.symbols.outputs.exists == 'true' }}
         working-directory: symbols
         run: |
           git config user.name "github-actions[bot]"

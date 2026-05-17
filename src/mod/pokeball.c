@@ -224,8 +224,8 @@ void PokeBallApi_BuildContextFromBattle(struct PokeBallCatchContext *context, u1
     context->itemId = itemId;
     context->targetSpecies = gBattleMons[targetBattler].species;
     context->targetLevel = gBattleMons[targetBattler].level;
-    context->targetType1 = gBattleMons[targetBattler].type1;
-    context->targetType2 = gBattleMons[targetBattler].type2;
+    context->targetType1 = gBattleMons[targetBattler].types[0];
+    context->targetType2 = gBattleMons[targetBattler].types[1];
     context->targetMaxHp = gBattleMons[targetBattler].maxHP;
     context->targetHp = gBattleMons[targetBattler].hp;
     context->targetStatus1 = gBattleMons[targetBattler].status1;
