@@ -1,0 +1,39 @@
+{
+  "id": "ITEM_LUXURY_BALL",
+  "domain": "pokeballs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/mod/pokeball.c",
+    "sha1": "33d25b17be0efe4ad368348c596e2ba324574b45"
+  },
+  "legacy": {
+    "kind": "pokeball_definition",
+    "sourcePath": "src/mod/pokeball.c",
+    "rawC": "{ \"vanilla:luxury_ball\",  ITEM_LUXURY_BALL,  BALL_LUXURY,  10,                             0, NULL, BattleScript_BallThrow,       NULL }",
+    "generatedKey": "vanilla:luxury_ball"
+  },
+  "key": "vanilla:luxury_ball",
+  "itemId": "ITEM_LUXURY_BALL",
+  "ballId": "BALL_LUXURY",
+  "catchModifier": "10",
+  "catchModifierHook": null,
+  "battleScript": "BattleScript_BallThrow",
+  "commitHook": null,
+  "flags": "0",
+  "itemIcon": "gItemIcon_LuxuryBall",
+  "itemPalette": "gItemIconPalette_LuxuryBall",
+  "throwSprite": {
+    "sheet": "gBallGfx_Luxury",
+    "palette": "gBallPal_Luxury",
+    "tileTag": "GFX_TAG_LUXURY_BALL",
+    "paletteTag": "GFX_TAG_LUXURY_BALL",
+    "templateTable": "gBallSpriteTemplates"
+  },
+  "openAnimation": {
+    "particleSheet": "gBattleAnimSpriteGfx_Particles",
+    "particlePalette": "gBattleAnimSpritePal_CircleImpact",
+    "particleTag": "TAG_PARTICLES_LUXURYBALL",
+    "animNum": "4",
+    "taskFunc": "GreatBallOpenParticleAnimation"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "MysteryGiftScript_OldSeaMap",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_old_sea_map.inc",
+    "sha1": "a286d32b8bc8623f436bc69e8fe4956f5bfc5228"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_old_sea_map.inc",
+    "rawScript": "setvaddress MysteryGiftScript_OldSeaMap\n\tlock\n\tfaceplayer\n\tvgoto_if_set FLAG_RECEIVED_OLD_SEA_MAP, OldSeaMap_Obtained\n\tvgoto_if_set FLAG_CAUGHT_MEW, OldSeaMap_Obtained\n\tcheckitem ITEM_OLD_SEA_MAP\n\tvgoto_if_eq VAR_RESULT, TRUE, OldSeaMap_Obtained\n\tvmessage sText_MysteryGiftOldSeaMapForYou\n\twaitmessage\n\twaitbuttonpress\n\tcheckitemspace ITEM_OLD_SEA_MAP\n\tvgoto_if_eq VAR_RESULT, FALSE, OldSeaMap_NoBagSpace\n\tgiveitem ITEM_OLD_SEA_MAP\n\tsetflag FLAG_ENABLE_SHIP_FARAWAY_ISLAND\n\tsetflag FLAG_RECEIVED_OLD_SEA_MAP\n\tvmessage sText_MysteryGiftOldSeaMapUseAtPort\n\twaitmessage\n\twaitbuttonpress\n\trelease\n\tend"
+  },
+  "label": "MysteryGiftScript_OldSeaMap",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_old_sea_map.inc",
+  "references": {
+    "flags": [
+      "FLAG_CAUGHT_MEW",
+      "FLAG_ENABLE_SHIP_FARAWAY_ISLAND",
+      "FLAG_RECEIVED_OLD_SEA_MAP"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_OLD_SEA_MAP"
+    ]
+  }
+}

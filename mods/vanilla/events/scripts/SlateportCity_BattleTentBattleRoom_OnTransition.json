@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_BattleTentBattleRoom_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_BattleTentBattleRoom/scripts.inc",
+    "sha1": "009de4f2954851271e5ea3ad79e1dccf5cf815ee"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_BattleTentBattleRoom/scripts.inc",
+    "rawScript": "call SlateportCity_BattleTentBattleRoom_EventScript_SetPlayerGfx\n\tend"
+  },
+  "label": "SlateportCity_BattleTentBattleRoom_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/SlateportCity_BattleTentBattleRoom/scripts.inc",
+  "references": {}
+}

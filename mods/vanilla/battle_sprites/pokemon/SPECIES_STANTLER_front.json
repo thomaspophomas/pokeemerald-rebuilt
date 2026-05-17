@@ -1,0 +1,21 @@
+{
+  "id": "SPECIES_STANTLER:front",
+  "domain": "battle_sprites",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/pokemon_graphics/front_pic_table.h",
+    "sha1": "97072e5b2fa4c63c6b4acc093cd9e06d37f7bad9"
+  },
+  "legacy": {
+    "kind": "pokemon_battle_sprite",
+    "sourcePath": "src/data/pokemon_graphics/front_pic_table.h"
+  },
+  "key": "SPECIES_STANTLER:front",
+  "entityKind": "pokemon",
+  "species": "SPECIES_STANTLER",
+  "form": 0,
+  "side": "BATTLE_SPRITE_SIDE_FRONT",
+  "flags": 0,
+  "assetKey": "SPECIES_STANTLER:front",
+  "table": "gMonFrontPicTable"
+}

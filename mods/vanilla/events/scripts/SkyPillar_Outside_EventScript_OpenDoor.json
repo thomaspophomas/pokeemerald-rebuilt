@@ -1,0 +1,19 @@
+{
+  "id": "SkyPillar_Outside_EventScript_OpenDoor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Outside/scripts.inc",
+    "sha1": "9bf749dde7f98e08aa43ccd220b7469c53ade7f3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_Outside/scripts.inc",
+    "rawScript": "setmetatile 14, 4, METATILE_Pacifidlog_SkyPillar_DoorOpen_Top, FALSE\n\tsetmetatile 14, 5, METATILE_Pacifidlog_SkyPillar_DoorOpen_Bottom, FALSE\n\treturn"
+  },
+  "label": "SkyPillar_Outside_EventScript_OpenDoor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SkyPillar_Outside/scripts.inc",
+  "references": {}
+}

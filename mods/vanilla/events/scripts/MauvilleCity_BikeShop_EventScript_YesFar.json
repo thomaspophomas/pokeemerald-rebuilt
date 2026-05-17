@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_BikeShop_EventScript_YesFar",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "sha1": "31396febb84a2b48608ca32d5a0dd0de865faf26"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "rawScript": "setflag FLAG_RECEIVED_BIKE\n\tgoto MauvilleCity_BikeShop_EventScript_ChooseBike\n\tend"
+  },
+  "label": "MauvilleCity_BikeShop_EventScript_YesFar",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_BIKE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_SternsShipyard_1F_EventScript_Scientist2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+    "sha1": "839a40e95086fb806113f67a7c2dc0dcbbab3217"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+    "rawScript": "msgbox SlateportCity_SternsShipyard_1F_Text_GetSeasickEasily, MSGBOX_NPC\n\tend"
+  },
+  "label": "SlateportCity_SternsShipyard_1F_EventScript_Scientist2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+  "references": {}
+}

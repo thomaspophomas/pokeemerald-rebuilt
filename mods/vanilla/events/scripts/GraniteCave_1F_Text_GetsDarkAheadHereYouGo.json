@@ -1,0 +1,19 @@
+{
+  "id": "GraniteCave_1F_Text_GetsDarkAheadHereYouGo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/GraniteCave_1F/scripts.inc",
+    "sha1": "009a50304c40851653dda9dbfa159a4e7288520e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/GraniteCave_1F/scripts.inc",
+    "rawScript": ".string \"Hey, you.\\n\"\n\t.string \"It gets awfully dark ahead.\\l\"\n\t.string \"It'll be tough trying to explore.\\p\"\n\t.string \"That guy who came by earlier\u2026\\n\"\n\t.string \"STEVEN, I think it was.\\p\"\n\t.string \"He knew how to use FLASH, so he ought\\n\"\n\t.string \"to be all right, but\u2026\\p\"\n\t.string \"Well, for us HIKERS, helping out those\\n\"\n\t.string \"that we meet is our motto.\\p\"\n\t.string \"Here you go, I'll pass this on to you.$\""
+  },
+  "label": "GraniteCave_1F_Text_GetsDarkAheadHereYouGo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/GraniteCave_1F/scripts.inc",
+  "references": {}
+}

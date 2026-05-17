@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge3_Text_ChallengeBattlePalaceDouble",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "sha1": "52169856e2442e0e7ad660050a45dce1a1b2405a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "rawScript": ".string \"What I'm looking for is a TRAINER who's\\n\"\n\t.string \"going to be challenging the BATTLE\\l\"\n\t.string \"PALACE's DOUBLE BATTLE HALLS.\\p\"\n\t.string \"But so far, I haven't seen a TRAINER\\n\"\n\t.string \"that has that winning quality.$\""
+  },
+  "label": "BattleFrontier_Lounge3_Text_ChallengeBattlePalaceDouble",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+  "references": {}
+}

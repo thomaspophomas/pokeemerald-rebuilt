@@ -1,0 +1,19 @@
+{
+  "id": "RusturfTunnel_Text_ToGetToVerdanturf",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/scripts.inc",
+    "sha1": "76035185b0aabddf11657305417168db4c1bb93d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RusturfTunnel/scripts.inc",
+    "rawScript": ".string \"To get from RUSTBORO to VERDANTURF,\\n\"\n\t.string \"you need to go to DEWFORD, then pass\\l\"\n\t.string \"through SLATEPORT and MAUVILLE\u2026$\""
+  },
+  "label": "RusturfTunnel_Text_ToGetToVerdanturf",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RusturfTunnel/scripts.inc",
+  "references": {}
+}

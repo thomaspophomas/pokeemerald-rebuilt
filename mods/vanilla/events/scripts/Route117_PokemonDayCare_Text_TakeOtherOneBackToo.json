@@ -1,0 +1,19 @@
+{
+  "id": "Route117_PokemonDayCare_Text_TakeOtherOneBackToo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/day_care.inc",
+    "sha1": "b807399ab522de3ba938194e85f890a343362752"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/day_care.inc",
+    "rawScript": ".string \"Will you take back the other one,\\n\"\n\t.string \"too?$\""
+  },
+  "label": "Route117_PokemonDayCare_Text_TakeOtherOneBackToo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/day_care.inc",
+  "references": {}
+}

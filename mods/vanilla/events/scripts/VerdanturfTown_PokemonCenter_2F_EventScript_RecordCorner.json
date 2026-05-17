@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_PokemonCenter_2F_EventScript_RecordCorner",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_PokemonCenter_2F/scripts.inc",
+    "sha1": "5364ad0967754abf884e166d8cb9a33d98f41633"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_PokemonCenter_2F/scripts.inc",
+    "rawScript": "call CableClub_EventScript_RecordCorner\n\tend"
+  },
+  "label": "VerdanturfTown_PokemonCenter_2F_EventScript_RecordCorner",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/VerdanturfTown_PokemonCenter_2F/scripts.inc",
+  "references": {}
+}

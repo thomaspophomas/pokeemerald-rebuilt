@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitNorth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "sha1": "7a1e00c78bbfbd0fbd6eb59a84a4d4e7114e4261"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "rawScript": "applymovement LOCALID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PlayerWatchGruntExitNorth\n\tapplymovement LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT, SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExitNorth\n\twaitmovement 0\n\tgoto SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExited\n\tend"
+  },
+  "label": "SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitNorth",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+  "references": {}
+}

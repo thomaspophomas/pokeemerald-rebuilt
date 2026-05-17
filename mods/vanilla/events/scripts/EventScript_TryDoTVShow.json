@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_TryDoTVShow",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/tv.inc",
+    "sha1": "6710fec48cce1bb3d0ce8ab17e9e9756f367ca71"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/tv.inc",
+    "rawScript": "specialvar VAR_0x8004, GetRandomActiveShowIdx\n\tgoto_if_eq VAR_0x8004, 255, EventScript_MomDadMightLikeThis2\n\tspecialvar VAR_RESULT, GetNextActiveShowIfMassOutbreak\n\tgoto_if_eq VAR_RESULT, 255, EventScript_MomDadMightLikeThis2\n\tcopyvar VAR_0x8004, VAR_RESULT\n\tspecialvar VAR_RESULT, GetSelectedTVShow\n\tgoto_if_ne VAR_RESULT, 0, EventScript_DoTVShow\n\tend"
+  },
+  "label": "EventScript_TryDoTVShow",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/tv.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

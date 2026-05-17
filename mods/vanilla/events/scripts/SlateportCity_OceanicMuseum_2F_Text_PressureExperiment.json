@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_OceanicMuseum_2F_Text_PressureExperiment",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+    "sha1": "13553a30435b8213726cfc4734cfaf0043bc447f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+    "rawScript": ".string \"A rubber ball is expanding and\\n\"\n\t.string \"shrinking.\\p\"\n\t.string \"\u201cIn the sea, the weight of water itself\\n\"\n\t.string \"exerts pressure.\\p\"\n\t.string \"\u201cIn shallow water, the pressure is not\\n\"\n\t.string \"very heavy.\\p\"\n\t.string \"\u201cHowever, in extremely deep water,\\n\"\n\t.string \"the pressure can reach even tens of\\l\"\n\t.string \"thousands of tons on a small area.\u201d$\""
+  },
+  "label": "SlateportCity_OceanicMuseum_2F_Text_PressureExperiment",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+  "references": {}
+}

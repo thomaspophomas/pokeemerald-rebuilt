@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_MoveRelearnersHouse_EventScript_ComeBackWithHeartScale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc",
+    "sha1": "9afb886b81b1177e00257143804f6a28f9488a57"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc",
+    "rawScript": "msgbox FallarborTown_MoveRelearnersHouse_Text_ComeBackWithHeartScale, MSGBOX_DEFAULT\n\treleaseall\n\tend"
+  },
+  "label": "FallarborTown_MoveRelearnersHouse_EventScript_ComeBackWithHeartScale",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc",
+  "references": {}
+}

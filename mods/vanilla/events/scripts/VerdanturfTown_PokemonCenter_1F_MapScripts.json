@@ -1,0 +1,24 @@
+{
+  "id": "VerdanturfTown_PokemonCenter_1F_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc",
+    "sha1": "732bae5c84091e111c778e1203e61171dca9d52e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, VerdanturfTown_PokemonCenter_1F_OnTransition\n\tmap_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume\n\t.byte 0"
+  },
+  "label": "VerdanturfTown_PokemonCenter_1F_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

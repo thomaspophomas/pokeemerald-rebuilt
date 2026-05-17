@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"DAD: Hm?\\p\"\n\t.string \"Well, if it isn't {PLAYER}!\\n\"\n\t.string \"So you're all finished moving in?\\p\"\n\t.string \"I'm surprised that you managed to\\n\"\n\t.string \"get here by yourself.\\p\"\n\t.string \"Oh, I see.\\n\"\n\t.string \"You're with your POK\u00e9MON.\\p\"\n\t.string \"Hm\u2026 Then I guess you're going to\\n\"\n\t.string \"become a TRAINER like me, {PLAYER}.\\p\"\n\t.string \"That's great news!\\n\"\n\t.string \"I'll be looking forward to it!$\""
+  },
+  "label": "PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

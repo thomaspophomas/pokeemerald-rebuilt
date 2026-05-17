@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_PokemonCenter_1F_Text_RodeCableCarStory",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/mauville_man.inc",
+    "sha1": "5d5e72f125b988a1fbd10a6264af3893ef9cc868"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/mauville_man.inc",
+    "rawScript": ".string \"This is a tale of a TRAINER\\n\"\n\t.string \"named {STR_VAR_3}.\\p\"\n\t.string \"This TRAINER rode the CABLE CAR\\n\"\n\t.string \"{STR_VAR_1} times!\\p\"\n\t.string \"{STR_VAR_3} must be a busy TRAINER\\n\"\n\t.string \"who's up and down all the time!$\""
+  },
+  "label": "MauvilleCity_PokemonCenter_1F_Text_RodeCableCarStory",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/scripts/mauville_man.inc",
+  "references": {}
+}

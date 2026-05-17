@@ -1,0 +1,30 @@
+{
+  "id": "SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "sha1": "7a1e00c78bbfbd0fbd6eb59a84a4d4e7114e4261"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tdelay 8\n\tplayse SE_PIN\n\tapplymovement LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT, Common_Movement_Delay48\n\twaitmovement 0\n\tmsgbox SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis, MSGBOX_DEFAULT\n\tgiveitem ITEM_TM_THIEF\n\tgoto_if_eq VAR_RESULT, 0, SlateportCity_OceanicMuseum_1F_EventScript_NoRoomForThief\n\tsetflag FLAG_RECEIVED_TM_THIEF\n\tmsgbox SlateportCity_OceanicMuseum_1F_Text_HopeINeverSeeYouAgain, MSGBOX_DEFAULT\n\tclosemessage\n\tgoto_if_eq VAR_FACING, DIR_NORTH, SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitNorth\n\tgoto_if_eq VAR_FACING, DIR_SOUTH, SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitSouth\n\tgoto_if_eq VAR_FACING, DIR_WEST, SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitWestEast\n\tgoto_if_eq VAR_FACING, DIR_EAST, SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitWestEast\n\tend"
+  },
+  "label": "SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_TM_THIEF"
+    ],
+    "vars": [
+      "VAR_FACING",
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_TM_THIEF"
+    ]
+  }
+}

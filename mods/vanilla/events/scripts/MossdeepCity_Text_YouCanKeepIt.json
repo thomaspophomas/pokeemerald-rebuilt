@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Text_YouCanKeepIt",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/scripts.inc",
+    "sha1": "33f0f7f83a475484aaca395542c6bd65a6f2dd45"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity/scripts.inc",
+    "rawScript": ".string \"Why would you want it?\\n\"\n\t.string \"You're weird.\\p\"\n\t.string \"You can keep it, but keep it a secret\\n\"\n\t.string \"from STEVEN.$\""
+  },
+  "label": "MossdeepCity_Text_YouCanKeepIt",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity/scripts.inc",
+  "references": {}
+}

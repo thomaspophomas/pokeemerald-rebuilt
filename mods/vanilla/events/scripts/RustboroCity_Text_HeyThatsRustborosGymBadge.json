@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Text_HeyThatsRustborosGymBadge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": ".string \"Hey, that's RUSTBORO's GYM BADGE!\\p\"\n\t.string \"Out of all the POK\u00e9MON GYM BADGES,\\n\"\n\t.string \"RUSTBORO's is the coolest, I'd say.$\""
+  },
+  "label": "RustboroCity_Text_HeyThatsRustborosGymBadge",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

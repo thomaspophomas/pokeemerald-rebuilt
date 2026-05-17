@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceBattleRoom_Movement_UnusedOpponentEnter1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "sha1": "c4392c432f84fdbe0613ac4b067366a168a52056"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "rawScript": "set_visible\n\twalk_slow_down\n\twalk_slow_down\n\tface_left\n\tstep_end"
+  },
+  "label": "BattleFrontier_BattlePalaceBattleRoom_Movement_UnusedOpponentEnter1",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+  "references": {}
+}

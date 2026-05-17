@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ReceptionGate_Text_HoldItemsInfo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "sha1": "5b6e89c53f6e32c0fa6883bd750252f1d739a97b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "rawScript": ".string \"When entering a challenge at a BATTLE\\n\"\n\t.string \"FRONTIER facility, POK\u00e9MON may not\\l\"\n\t.string \"be holding the same kind of item.\\p\"\n\t.string \"Please make sure that all POK\u00e9MON\\n\"\n\t.string \"entering a challenge are holding\\l\"\n\t.string \"different items.$\""
+  },
+  "label": "BattleFrontier_ReceptionGate_Text_HoldItemsInfo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+  "references": {}
+}

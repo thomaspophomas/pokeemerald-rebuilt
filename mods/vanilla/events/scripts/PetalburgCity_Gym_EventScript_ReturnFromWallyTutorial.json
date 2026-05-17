@@ -1,0 +1,26 @@
+{
+  "id": "PetalburgCity_Gym_EventScript_ReturnFromWallyTutorial",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": "lockall\n\tmsgbox PetalburgCity_Gym_Text_DadSoDidItWorkOut, MSGBOX_DEFAULT\n\tmsgbox PetalburgCity_Gym_Text_WallyThankYouBye, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown\n\tapplymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_Movement_WallyExitGym\n\twaitmovement 0\n\tplayse SE_EXIT\n\tremoveobject LOCALID_PETALBURG_GYM_WALLY\n\tsetflag FLAG_HIDE_PETALBURG_CITY_WALLY\n\tdelay 30\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tmsgbox PetalburgCity_Gym_Text_DadGoCollectBadges, MSGBOX_DEFAULT\n\tsetvar VAR_PETALBURG_GYM_STATE, 2\n\treleaseall\n\tend"
+  },
+  "label": "PetalburgCity_Gym_EventScript_ReturnFromWallyTutorial",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_PETALBURG_CITY_WALLY"
+    ],
+    "vars": [
+      "VAR_PETALBURG_GYM_STATE"
+    ]
+  }
+}

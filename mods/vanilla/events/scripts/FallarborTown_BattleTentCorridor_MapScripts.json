@@ -1,0 +1,23 @@
+{
+  "id": "FallarborTown_BattleTentCorridor_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+    "sha1": "163b9c21282cae11ce5f396c305aff448fc9ab48"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_FRAME_TABLE, FallarborTown_BattleTentCorridor_OnFrame\n\t.byte 0"
+  },
+  "label": "FallarborTown_BattleTentCorridor_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_ScottsHouse_EventScript_WelcomeToFrontier",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "sha1": "c30df9e905f6d4b9d9e1eaf4d4fccf30db88e083"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier, MSGBOX_DEFAULT\n\tclosemessage\n\tdelay 30\n\tcall_if_eq VAR_FACING, DIR_NORTH, BattleFrontier_ScottsHouse_EventScript_ScottFaceAwayNorth\n\tcall_if_eq VAR_FACING, DIR_SOUTH, BattleFrontier_ScottsHouse_EventScript_ScottFaceAwaySouth\n\tcall_if_eq VAR_FACING, DIR_EAST, BattleFrontier_ScottsHouse_EventScript_ScottFaceAwayEast\n\tcall_if_eq VAR_FACING, DIR_WEST, BattleFrontier_ScottsHouse_EventScript_ScottFaceAwayWest\n\tmsgbox BattleFrontier_ScottsHouse_Text_HowMuchEffortItTookToMakeReal, MSGBOX_DEFAULT\n\tapplymovement LOCALID_SCOTTS_HOUSE_SCOTT, Common_Movement_FacePlayer\n\twaitmovement 0\n\tmsgbox BattleFrontier_ScottsHouse_Text_HaveThisAsMementoOfOurPathsCrossing, MSGBOX_DEFAULT\n\tgoto_if_eq VAR_SCOTT_STATE, 13, BattleFrontier_ScottsHouse_EventScript_Give4BattlePoints\n\tgoto_if_ge VAR_SCOTT_STATE, 9, BattleFrontier_ScottsHouse_EventScript_Give3BattlePoints\n\tgoto_if_ge VAR_SCOTT_STATE, 6, BattleFrontier_ScottsHouse_EventScript_Give2BattlePoints\n\tgoto BattleFrontier_ScottsHouse_EventScript_Give1BattlePoint\n\tend"
+  },
+  "label": "BattleFrontier_ScottsHouse_EventScript_WelcomeToFrontier",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FACING",
+      "VAR_SCOTT_STATE"
+    ]
+  }
+}

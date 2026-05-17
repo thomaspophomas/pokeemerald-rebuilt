@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_PokemonFanClub_Text_MonEnjoyedProtein",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_PokemonFanClub/scripts.inc",
+    "sha1": "153f02ab68bdca98dac6d2c2cf3e3db7c79f2c91"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_PokemonFanClub/scripts.inc",
+    "rawScript": ".string \"Do POK\u00e9MON enjoy having items used\\n\"\n\t.string \"on them?\\p\"\n\t.string \"Mine acted really happy when I gave\\n\"\n\t.string \"it some PROTEIN.$\""
+  },
+  "label": "SlateportCity_PokemonFanClub_Text_MonEnjoyedProtein",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_PokemonFanClub/scripts.inc",
+  "references": {}
+}

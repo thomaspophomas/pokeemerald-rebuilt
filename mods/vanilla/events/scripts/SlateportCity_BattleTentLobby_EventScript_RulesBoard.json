@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_BattleTentLobby_EventScript_RulesBoard",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+    "sha1": "d8233cb564c951151609565c69259c5bc6039b75"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+    "rawScript": "lockall\n\tmsgbox BattleFrontier_BattleFactoryLobby_Text_RulesAreListed, MSGBOX_DEFAULT\n\tgoto SlateportCity_BattleTentLobby_EventScript_ReadRulesBoard\n\tend"
+  },
+  "label": "SlateportCity_BattleTentLobby_EventScript_RulesBoard",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+  "references": {}
+}

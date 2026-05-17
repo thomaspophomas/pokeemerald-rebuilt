@@ -1,0 +1,23 @@
+{
+  "id": "VerdanturfTown_BattleTentBattleRoom_EventScript_NextOpponentEnter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+    "sha1": "ab3b693d78c01bf41de27c238af8f5c28d91cffd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+    "rawScript": "tower_setopponent\n\taddobject LOCALID_VERDANTURF_TENT_BATTLE_OPPONENT\n\tapplymovement LOCALID_VERDANTURF_TENT_BATTLE_OPPONENT, VerdanturfTown_BattleTentBattleRoom_Movement_OpponentEnter\n\twaitmovement 0\n\tbattletent_getopponentintro\n\tmsgbox gStringVar4, MSGBOX_DEFAULT\n\twaitmessage\n\tcall BattleFrontier_BattlePalaceBattleRoom_EventScript_DoPalaceBattle\n\tswitch VAR_RESULT\n\tcase 1, VerdanturfTown_BattleTentBattleRoom_EventScript_DefeatedOpponent"
+  },
+  "label": "VerdanturfTown_BattleTentBattleRoom_EventScript_NextOpponentEnter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

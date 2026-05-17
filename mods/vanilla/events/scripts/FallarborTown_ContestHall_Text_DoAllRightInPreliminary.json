@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_ContestHall_Text_DoAllRightInPreliminary",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+    "sha1": "163b9c21282cae11ce5f396c305aff448fc9ab48"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+    "rawScript": ".string \"We do all right in the preliminary round,\\n\"\n\t.string \"but we can never win the appeals\u2026\\p\"\n\t.string \"Maybe it means I have to watch what\\n\"\n\t.string \"other contestants are doing\u2026$\"\n\n@ Unused"
+  },
+  "label": "FallarborTown_ContestHall_Text_DoAllRightInPreliminary",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+  "references": {}
+}

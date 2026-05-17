@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_DecorationShop_PokemartDecor_Desks",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_DecorationShop/scripts.inc",
+    "sha1": "9052b61ce40e18da90e9f9a9ca5351634902ee39"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_DecorationShop/scripts.inc",
+    "rawScript": ".2byte DECOR_SMALL_DESK\n\t.2byte DECOR_POKEMON_DESK\n\t.2byte DECOR_HEAVY_DESK\n\t.2byte DECOR_RAGGED_DESK\n\t.2byte DECOR_COMFORT_DESK\n\t.2byte DECOR_BRICK_DESK\n\t.2byte DECOR_CAMP_DESK\n\t.2byte DECOR_HARD_DESK\n\tpokemartlistend"
+  },
+  "label": "FortreeCity_DecorationShop_PokemartDecor_Desks",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/FortreeCity_DecorationShop/scripts.inc",
+  "references": {}
+}

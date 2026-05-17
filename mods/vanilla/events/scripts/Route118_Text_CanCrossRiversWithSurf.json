@@ -1,0 +1,19 @@
+{
+  "id": "Route118_Text_CanCrossRiversWithSurf",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route118/scripts.inc",
+    "sha1": "5a4868d1490a62e62c6e29a255fc938bad9fa2cd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route118/scripts.inc",
+    "rawScript": ".string \"Even if there isn't a boat, you can\\n\"\n\t.string \"cross rivers and the sea if you have\\l\"\n\t.string \"a POK\u00e9MON that knows SURF.\\p\"\n\t.string \"POK\u00e9MON can be counted on to do so\\n\"\n\t.string \"much!$\""
+  },
+  "label": "Route118_Text_CanCrossRiversWithSurf",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route118/scripts.inc",
+  "references": {}
+}

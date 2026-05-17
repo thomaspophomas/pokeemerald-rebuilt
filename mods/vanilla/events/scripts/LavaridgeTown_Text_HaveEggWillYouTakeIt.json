@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Text_HaveEggWillYouTakeIt",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": ".string \"I have here an EGG.\\p\"\n\t.string \"I'd hoped to hatch it by covering it in\\n\"\n\t.string \"hot sand by the hot springs.\\l\"\n\t.string \"But that doesn't seem to be enough\u2026\\p\"\n\t.string \"I've heard it would be best if it were\\n\"\n\t.string \"kept together with POK\u00e9MON and\\l\"\n\t.string \"carried about.\\p\"\n\t.string \"You are a TRAINER, yes?\\n\"\n\t.string \"And your POK\u00e9MON radiate vitality.\\p\"\n\t.string \"So, what say you?\\n\"\n\t.string \"Will you take this EGG to hatch?$\""
+  },
+  "label": "LavaridgeTown_Text_HaveEggWillYouTakeIt",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {}
+}

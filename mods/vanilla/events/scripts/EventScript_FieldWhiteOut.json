@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_FieldWhiteOut",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/field_poison.inc",
+    "sha1": "5f88349e5a39d50912f00b834304b6a66214eee8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/field_poison.inc",
+    "rawScript": "message gText_PlayerWhitedOut\n\twaitmessage\n\twaitbuttonpress\n\tspecial Script_FadeOutMapMusic\n\tfadescreen FADE_TO_BLACK\n\tcall_if_set FLAG_WHITEOUT_TO_LAVARIDGE, EventScript_SetRespawnLavaridgePkmnCenter\n\tspecial SetCB2WhiteOut\n\tend"
+  },
+  "label": "EventScript_FieldWhiteOut",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/field_poison.inc",
+  "references": {
+    "flags": [
+      "FLAG_WHITEOUT_TO_LAVARIDGE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Text_SomethingBlockingGym",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity/scripts.inc",
+    "sha1": "a1f53b6d8b894e2f69fc9a5c4e1509ef9ab3ce09"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity/scripts.inc",
+    "rawScript": ".string \"I want to go to the POK\u00e9MON GYM,\\n\"\n\t.string \"but something's blocking the way.\\p\"\n\t.string \"After all the bother I went through\\n\"\n\t.string \"training on ROUTE 120\u2026$\""
+  },
+  "label": "FortreeCity_Text_SomethingBlockingGym",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity/scripts.inc",
+  "references": {}
+}

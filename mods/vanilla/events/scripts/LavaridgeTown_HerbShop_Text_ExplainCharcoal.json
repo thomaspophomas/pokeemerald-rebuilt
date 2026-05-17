@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_HerbShop_Text_ExplainCharcoal",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+    "sha1": "ed83c75f66b27defc898c3be46549255ef12185c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+    "rawScript": ".string \"That CHARCOAL I gave you, it's used\\n\"\n\t.string \"for making herbal medicine.\\p\"\n\t.string \"It also does wonders when held by\\n\"\n\t.string \"a POK\u00e9MON.\\p\"\n\t.string \"It intensifies the power of FIRE-type\\n\"\n\t.string \"moves.$\""
+  },
+  "label": "LavaridgeTown_HerbShop_Text_ExplainCharcoal",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+  "references": {}
+}

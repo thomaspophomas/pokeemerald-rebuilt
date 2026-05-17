@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Mart_EventScript_Boy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Mart/scripts.inc",
+    "sha1": "e8269950fe6ceeeec601d93208e6255555526b6b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Mart/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_Mart_Text_FacilitiesDontAllowItems, MSGBOX_NPC\n\tend"
+  },
+  "label": "BattleFrontier_Mart_EventScript_Boy",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_Mart/scripts.inc",
+  "references": {}
+}

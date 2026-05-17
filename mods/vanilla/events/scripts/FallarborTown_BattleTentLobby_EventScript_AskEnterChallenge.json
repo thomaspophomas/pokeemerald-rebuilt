@@ -1,0 +1,23 @@
+{
+  "id": "FallarborTown_BattleTentLobby_EventScript_AskEnterChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "sha1": "007b5945200863133fd43941054ec8db085a0356"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "rawScript": "message FallarborTown_BattleTentLobby_Text_TakeChallenge\n\twaitmessage\n\tmultichoice 17, 6, MULTI_CHALLENGEINFO, FALSE\n\tswitch VAR_RESULT\n\tcase 0, FallarborTown_BattleTentLobby_EventScript_TryEnterChallenge\n\tcase 1, FallarborTown_BattleTentLobby_EventScript_ExplainChallenge\n\tcase 2, FallarborTown_BattleTentLobby_EventScript_CancelChallenge\n\tcase MULTI_B_PRESSED, FallarborTown_BattleTentLobby_EventScript_CancelChallenge"
+  },
+  "label": "FallarborTown_BattleTentLobby_EventScript_AskEnterChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiCorridor_EventScript_EnterCorridor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiCorridor/scripts.inc",
+    "sha1": "cd76ae7932d793ea3d83f2ba21546149e29084cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiCorridor/scripts.inc",
+    "rawScript": "lockall\n\tsetflag FLAG_ENABLE_MULTI_CORRIDOR_DOOR\n\tsetvar VAR_0x8004, 14  @ x coord of far door, used by DrawDoor\n\tsetvar VAR_0x8005, 1   @ y coord of far door, used by DrawDoor\n\topendoor 1, 1\n\twaitdooranim\n\tclearflag FLAG_ENABLE_MULTI_CORRIDOR_DOOR\n\tshowobjectat LOCALID_TOWER_MULTI_CORRIDOR_PLAYER, MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_CORRIDOR\n\tshowobjectat LOCALID_TOWER_MULTI_CORRIDOR_PARTNER, MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_CORRIDOR\n\tapplymovement LOCALID_TOWER_MULTI_CORRIDOR_PLAYER, BattleFrontier_BattleTowerMultiCorridor_Movement_ExitElevator\n\tapplymovement LOCALID_TOWER_MULTI_CORRIDOR_PARTNER, BattleFrontier_BattleTowerMultiCorridor_Movement_ExitElevator\n\twaitmovement 0\n\tsetflag FLAG_ENABLE_MULTI_CORRIDOR_DOOR\n\tsetvar VAR_0x8004, 14  @ x coord of far door, used by DrawDoor\n\tsetvar VAR_0x8005, 1   @ y coord of far door, used by DrawDoor\n\tclosedoor 1, 1\n\twaitdooranim\n\tclearflag FLAG_ENABLE_MULTI_CORRIDOR_DOOR\n\tapplymovement LOCALID_TOWER_MULTI_CORRIDOR_PLAYER, BattleFrontier_BattleTowerMultiCorridor_Movement_PlayerWalkToDoor\n\tapplymovement LOCALID_TOWER_MULTI_CORRIDOR_PARTNER, BattleFrontier_BattleTowerMultiCorridor_Movement_PartnerWalkToDoor\n\tapplymovement LOCALID_TOWER_MULTI_CORRIDOR_ATTENDANT_2, BattleFrontier_BattleTowerMultiCorridor_Movement_PlayerAttendantWalkToDoor\n\tapplymovement LOCALID_TOWER_MULTI_CORRIDOR_ATTENDANT_1, BattleFrontier_BattleTowerMultiCorridor_Movement_PartnerAttendantWalkToDoor\n\twaitmovement 0\n\tdelay 40\n\tapplymovement LOCALID_TOWER_MULTI_CORRIDOR_ATTENDANT_2, Common_Movement_WalkInPlaceFasterUp\n\tapplymovement LOCALID_TOWER_MULTI_CORRIDOR_ATTENDANT_1, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\topendoor 7, 1\n\twaitdooranim\n\tapplymovement LOCALID_TOWER_MULTI_CORRIDOR_ATTENDANT_2, BattleFrontier_BattleTowerMultiCorridor_Movement_AttendantEnterDoor\n\tapplymovement LOCALID_TOWER_MULTI_CORRIDOR_ATTENDANT_1, BattleFrontier_BattleTowerMultiCorridor_Movement_AttendantEnterDoor\n\tapplymovement LOCALID_TOWER_MULTI_CORRIDOR_PLAYER, BattleFrontier_BattleTowerMultiCorridor_Movement_TrainerEnterDoor\n\tapplymovement LOCALID_TOWER_MULTI_CORRIDOR_PARTNER, BattleFrontier_BattleTowerMultiCorridor_Movement_TrainerEnterDoor\n\twaitmovement 0\n\tclosedoor 7, 1\n\twaitdooranim\n\tdelay 30\n\tsetvar VAR_TEMP_1, 1\n\tcall BattleFrontier_BattleTowerMultiCorridor_EventScript_WarpToBattleRoom\n\treleaseall\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerMultiCorridor_EventScript_EnterCorridor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiCorridor/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_ENABLE_MULTI_CORRIDOR_DOOR"
+    ],
+    "vars": [
+      "VAR_TEMP_1"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_CORRIDOR"
+    ]
+  }
+}

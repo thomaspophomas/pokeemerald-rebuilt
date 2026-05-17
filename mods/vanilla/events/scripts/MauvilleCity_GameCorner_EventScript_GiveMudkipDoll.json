@@ -1,0 +1,26 @@
+{
+  "id": "MauvilleCity_GameCorner_EventScript_GiveMudkipDoll",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "sha1": "3db7cd216c9a2c35e8176ef8b4a1d9ec68649c7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "rawScript": "bufferdecorationname STR_VAR_2, DECOR_MUDKIP_DOLL\n\tcheckdecorspace DECOR_MUDKIP_DOLL\n\tgoto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForStarterDoll\n\tmsgbox MauvilleCity_GameCorner_Text_HereYouGo2, MSGBOX_DEFAULT\n\tgivedecoration DECOR_MUDKIP_DOLL\n\tsetflag FLAG_RECEIVED_STARTER_DOLL\n\tgoto MauvilleCity_GameCorner_EventScript_ReceivedStarterDoll\n\tend"
+  },
+  "label": "MauvilleCity_GameCorner_EventScript_GiveMudkipDoll",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_STARTER_DOLL"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

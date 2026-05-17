@@ -1,0 +1,19 @@
+{
+  "id": "MagmaHideout_4F_Text_Grunt11Intro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_4F/scripts.inc",
+    "sha1": "8f2c61f090f2c324dc4138c5d5ad754b00dfcb48"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_4F/scripts.inc",
+    "rawScript": ".string \"I want to see GROUDON, too, but they\\n\"\n\t.string \"won't let me see even its tail\u2026\\p\"\n\t.string \"It's got me feeling really frustrated.\\p\"\n\t.string \"Oh, no!\\n\"\n\t.string \"I blabbed about GROUDON!$\""
+  },
+  "label": "MagmaHideout_4F_Text_Grunt11Intro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MagmaHideout_4F/scripts.inc",
+  "references": {}
+}

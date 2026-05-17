@@ -1,0 +1,23 @@
+{
+  "id": "Route111_EventScript_SetFallingPlayerGfxFemale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": "setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_MAY_NORMAL\n\treturn"
+  },
+  "label": "Route111_EventScript_SetFallingPlayerGfxFemale",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_OBJ_GFX_ID_0"
+    ]
+  }
+}

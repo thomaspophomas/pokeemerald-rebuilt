@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_JustArrivedAndSawRarePokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"We just arrived here on our\\n\"\n\t.string \"honeymoon vacation.\\p\"\n\t.string \"We happened to see a DRAGON-type\\n\"\n\t.string \"POK\u00e9MON flying way up in the sky.\\p\"\n\t.string \"Do cool POK\u00e9MON like that live in\\n\"\n\t.string \"the HOENN region?$\""
+  },
+  "label": "LilycoveCity_Text_JustArrivedAndSawRarePokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

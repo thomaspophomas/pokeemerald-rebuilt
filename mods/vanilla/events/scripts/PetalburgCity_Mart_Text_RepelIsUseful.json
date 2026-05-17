@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Mart_Text_RepelIsUseful",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Mart/scripts.inc",
+    "sha1": "24d08ff30f80ab3ca9bbc615acb31bc95359ba3b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Mart/scripts.inc",
+    "rawScript": ".string \"Do you use REPEL?\\n\"\n\t.string \"It keeps POK\u00e9MON away, so it's\\l\"\n\t.string \"useful when you're in a hurry.$\""
+  },
+  "label": "PetalburgCity_Mart_Text_RepelIsUseful",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Mart/scripts.inc",
+  "references": {}
+}

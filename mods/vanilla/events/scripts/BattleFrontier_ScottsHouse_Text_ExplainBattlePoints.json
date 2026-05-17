@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ScottsHouse_Text_ExplainBattlePoints",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "sha1": "c30df9e905f6d4b9d9e1eaf4d4fccf30db88e083"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "rawScript": ".string \"SCOTT: You can check your Battle\\n\"\n\t.string \"Points on your FRONTIER PASS.\\p\"\n\t.string \"The more success you have here at\\n\"\n\t.string \"the BATTLE FRONTIER, the more Battle\\l\"\n\t.string \"Points you will collect.\\p\"\n\t.string \"Use your Battle Points the way you\\n\"\n\t.string \"see fit, like trading them for items.$\""
+  },
+  "label": "BattleFrontier_ScottsHouse_Text_ExplainBattlePoints",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+  "references": {}
+}

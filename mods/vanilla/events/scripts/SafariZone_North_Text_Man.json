@@ -1,0 +1,19 @@
+{
+  "id": "SafariZone_North_Text_Man",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/safari_zone.inc",
+    "sha1": "435880c660a34d3e51dcedb348a41731d28af7cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/safari_zone.inc",
+    "rawScript": ".string \"I'm going to catch a lot of rare POK\u00e9MON\\n\"\n\t.string \"here and trade them with my friends!$\""
+  },
+  "label": "SafariZone_North_Text_Man",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/safari_zone.inc",
+  "references": {}
+}

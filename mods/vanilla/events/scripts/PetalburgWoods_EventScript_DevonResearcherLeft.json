@@ -1,0 +1,23 @@
+{
+  "id": "PetalburgWoods_EventScript_DevonResearcherLeft",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/scripts.inc",
+    "sha1": "a7a3b49731f97088b328145805430d4429326ec8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgWoods/scripts.inc",
+    "rawScript": "lockall\n\tcall PetalburgWoods_EventScript_DevonResearcherIntro\n\tapplymovement LOCALID_PETALBURG_WOODS_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherApproachPlayerLeft\n\twaitmovement 0\n\tmsgbox PetalburgWoods_Text_HaveYouSeenShroomish, MSGBOX_DEFAULT\n\tclosemessage\n\tplaybgm MUS_ENCOUNTER_AQUA, FALSE\n\tapplymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaEntrance\n\twaitmovement 0\n\tmsgbox PetalburgWoods_Text_IWasGoingToAmbushYou, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaApproachResearcherLeft\n\twaitmovement 0\n\tapplymovement LOCALID_PETALBURG_WOODS_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tmsgbox PetalburgWoods_Text_HandOverThosePapers, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_PETALBURG_WOODS_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherFleeToPlayerLeft\n\twaitmovement 0\n\tmsgbox PetalburgWoods_Text_YouHaveToHelpMe, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaApproachPlayer\n\twaitmovement 0\n\tmsgbox PetalburgWoods_Text_NoOneCrossesTeamAqua, MSGBOX_DEFAULT\n\ttrainerbattle_no_intro TRAINER_GRUNT_PETALBURG_WOODS, PetalburgWoods_Text_YoureKiddingMe\n\tapplymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaBackOff\n\twaitmovement 0\n\tcall PetalburgWoods_EventScript_DevonResearcherPostBattle\n\tapplymovement LOCALID_PLAYER, PetalburgWoods_Movement_WatchResearcherLeave\n\tapplymovement LOCALID_PETALBURG_WOODS_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherExitLeft\n\twaitmovement 0\n\tgoto PetalburgWoods_EventScript_RemoveDevonResearcher\n\tend"
+  },
+  "label": "PetalburgWoods_EventScript_DevonResearcherLeft",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgWoods/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_GRUNT_PETALBURG_WOODS"
+    ]
+  }
+}

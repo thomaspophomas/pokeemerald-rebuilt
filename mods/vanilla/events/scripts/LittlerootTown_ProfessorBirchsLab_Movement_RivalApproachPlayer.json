@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Movement_RivalApproachPlayer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": "walk_down\n\twalk_in_place_faster_left\n\tstep_end"
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Movement_RivalApproachPlayer",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

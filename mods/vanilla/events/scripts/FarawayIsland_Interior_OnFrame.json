@@ -1,0 +1,23 @@
+{
+  "id": "FarawayIsland_Interior_OnFrame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FarawayIsland_Interior/scripts.inc",
+    "sha1": "748f9f309b0dbfe85cb833f24aeceac469102437"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FarawayIsland_Interior/scripts.inc",
+    "rawScript": "map_script_2 VAR_TEMP_1, 0, FarawayIsland_Interior_EventScript_FindMew\n\t.2byte 0"
+  },
+  "label": "FarawayIsland_Interior_OnFrame",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/FarawayIsland_Interior/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1"
+    ]
+  }
+}

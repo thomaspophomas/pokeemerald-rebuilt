@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePalaceBattleRoom_EventScript_WarpToLobbyDoubles",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "sha1": "c4392c432f84fdbe0613ac4b067366a168a52056"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "rawScript": "warp MAP_BATTLE_FRONTIER_BATTLE_PALACE_LOBBY, 19, 7\n\twaitstate\n\tend"
+  },
+  "label": "BattleFrontier_BattlePalaceBattleRoom_EventScript_WarpToLobbyDoubles",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_PALACE_LOBBY"
+    ]
+  }
+}

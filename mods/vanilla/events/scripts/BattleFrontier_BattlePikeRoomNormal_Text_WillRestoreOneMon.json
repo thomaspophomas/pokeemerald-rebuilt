@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreOneMon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "sha1": "54c1e0ee021a3a91375f3b05c8682c17ed095aa9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "rawScript": ".string \"Ah, you're a lucky one.\\n\"\n\t.string \"I'm in somewhat-good spirits now.\\p\"\n\t.string \"I will restore one of your POK\u00e9MON\\n\"\n\t.string \"to full health.$\""
+  },
+  "label": "BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreOneMon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+  "references": {}
+}

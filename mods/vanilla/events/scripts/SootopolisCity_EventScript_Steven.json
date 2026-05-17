@@ -1,0 +1,27 @@
+{
+  "id": "SootopolisCity_EventScript_Steven",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_SOOTOPOLIS_STEVEN, Common_Movement_FacePlayer\n\twaitmovement 0\n\tcall_if_unset FLAG_STEVEN_GUIDES_TO_CAVE_OF_ORIGIN, SootopolisCity_EventScript_StevenLeadPlayerCaveOfOrigin\n\tgoto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 2, SootopolisCity_EventScript_StevenHelpWallace\n\tgoto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 3, SootopolisCity_EventScript_StevenHelpedWallace\n\tgoto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 4, SootopolisCity_EventScript_StevenHelpedWallace\n\tgoto_if_set FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, SootopolisCity_EventScript_StevenMaxieArchieLeft\n\tmsgbox SootopolisCity_Text_SoThatsRayquaza, MSGBOX_DEFAULT\n\treleaseall\n\tend"
+  },
+  "label": "SootopolisCity_EventScript_Steven",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE",
+      "FLAG_STEVEN_GUIDES_TO_CAVE_OF_ORIGIN"
+    ],
+    "vars": [
+      "VAR_SOOTOPOLIS_CITY_STATE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Text_HotSpringsNeverRunDry",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": ".string \"We draw as much hot water as we need,\\n\"\n\t.string \"and yet the hot springs never run dry.\\p\"\n\t.string \"Isn't it magical?\\p\"\n\t.string \"These hot springs appear near active\\n\"\n\t.string \"volcanoes. Veins of water under the\\l\"\n\t.string \"ground are heated by magma to well up\\l\"\n\t.string \"as hot springs.$\""
+  },
+  "label": "LavaridgeTown_Text_HotSpringsNeverRunDry",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {}
+}

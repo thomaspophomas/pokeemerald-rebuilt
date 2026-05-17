@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_House4_Text_WhereDidYouComeFrom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_House4/scripts.inc",
+    "sha1": "f73026c10489d0f955542625b58858b3adf6b0f1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown_House4/scripts.inc",
+    "rawScript": ".string \"Where did you come from?$\""
+  },
+  "label": "PacifidlogTown_House4_Text_WhereDidYouComeFrom",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PacifidlogTown_House4/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "GraniteCave_1F_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/GraniteCave_1F/scripts.inc",
+    "sha1": "009a50304c40851653dda9dbfa159a4e7288520e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/GraniteCave_1F/scripts.inc",
+    "rawScript": ".byte 0"
+  },
+  "label": "GraniteCave_1F_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/GraniteCave_1F/scripts.inc",
+  "references": {}
+}

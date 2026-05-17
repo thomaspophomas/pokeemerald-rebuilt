@@ -1,0 +1,19 @@
+{
+  "id": "SealedChamber_InnerRoom_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SealedChamber_InnerRoom/scripts.inc",
+    "sha1": "0873e1e1c99f6db0a44da305b2d636211dc92a66"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SealedChamber_InnerRoom/scripts.inc",
+    "rawScript": ".byte 0"
+  },
+  "label": "SealedChamber_InnerRoom_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/SealedChamber_InnerRoom/scripts.inc",
+  "references": {}
+}

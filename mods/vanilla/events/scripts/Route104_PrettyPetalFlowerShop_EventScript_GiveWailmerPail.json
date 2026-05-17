@@ -1,0 +1,26 @@
+{
+  "id": "Route104_PrettyPetalFlowerShop_EventScript_GiveWailmerPail",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc",
+    "sha1": "85421f76af3e2f834a13d611b9a986423e5c93b8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc",
+    "rawScript": "msgbox Route104_PrettyPetalFlowerShop_Text_YouCanHaveThis, MSGBOX_DEFAULT\n\tgiveitem ITEM_WAILMER_PAIL\n\tmsgbox Route104_PrettyPetalFlowerShop_Text_WailmerPailExplanation, MSGBOX_DEFAULT\n\tsetflag FLAG_RECEIVED_WAILMER_PAIL\n\trelease\n\tend"
+  },
+  "label": "Route104_PrettyPetalFlowerShop_EventScript_GiveWailmerPail",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_WAILMER_PAIL"
+    ],
+    "items": [
+      "ITEM_WAILMER_PAIL"
+    ]
+  }
+}

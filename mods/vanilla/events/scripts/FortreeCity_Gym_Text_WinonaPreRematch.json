@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Gym_Text_WinonaPreRematch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/scripts.inc",
+    "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Gym/scripts.inc",
+    "rawScript": ".string \"WINONA: We humans can never escape\\n\"\n\t.string \"gravity's pull on the ground.\\p\"\n\t.string \"But by striving for excellence,\\n\"\n\t.string \"we have the power to soar!\\p\"\n\t.string \"You have scaled the pinnacle as\\n\"\n\t.string \"the reigning CHAMPION.\\p\"\n\t.string \"Please, allow me to see your power\\n\"\n\t.string \"at full flight!$\""
+  },
+  "label": "FortreeCity_Gym_Text_WinonaPreRematch",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_Gym/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "DewfordTown_EventScript_ReturnToPetalburgPrompt",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown/scripts.inc",
+    "sha1": "e9e724e6d3bba641bcb2d4263fe226ee6c1b4840"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown/scripts.inc",
+    "rawScript": "msgbox DewfordTown_Text_SetSailBackToPetalburg, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_SailBackToPetalburg\n\tmsgbox DewfordTown_Text_GoDeliverIllBeWaiting, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "DewfordTown_EventScript_ReturnToPetalburgPrompt",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DewfordTown/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

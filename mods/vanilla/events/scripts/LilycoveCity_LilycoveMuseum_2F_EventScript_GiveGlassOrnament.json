@@ -1,0 +1,26 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_2F_EventScript_GiveGlassOrnament",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "sha1": "c41e25282a159070f0eb7fb3edcf1b61cc1cfa19"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "rawScript": "applymovement LOCALID_MUSEUM_2F_CURATOR, Common_Movement_FacePlayer\n\tmsgbox LilycoveCity_LilycoveMuseum_2F_Text_TokenOfGratitude, MSGBOX_DEFAULT\n\tgivedecoration DECOR_GLASS_ORNAMENT\n\tgoto_if_eq VAR_RESULT, FALSE, LilycoveCity_LilycoveMuseum_2F_EventScript_NoRoomForGlassOrnament\n\tsetflag FLAG_RECEIVED_GLASS_ORNAMENT\n\tclosemessage\n\treleaseall\n\tend"
+  },
+  "label": "LilycoveCity_LilycoveMuseum_2F_EventScript_GiveGlassOrnament",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_GLASS_ORNAMENT"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

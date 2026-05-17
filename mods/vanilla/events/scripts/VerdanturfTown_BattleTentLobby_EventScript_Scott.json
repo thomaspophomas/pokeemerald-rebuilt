@@ -1,0 +1,26 @@
+{
+  "id": "VerdanturfTown_BattleTentLobby_EventScript_Scott",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "sha1": "be67ab8ba625b73e575c1594a46cbee43b6f03d9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_MET_SCOTT_IN_VERDANTURF, VerdanturfTown_BattleTentLobby_EventScript_ScottAlreadySpokenTo\n\tmsgbox VerdanturfTown_BattleTentLobby_Text_ScottCanMeetToughTrainers, MSGBOX_DEFAULT\n\taddvar VAR_SCOTT_STATE, 1\n\tsetflag FLAG_MET_SCOTT_IN_VERDANTURF\n\trelease\n\tend"
+  },
+  "label": "VerdanturfTown_BattleTentLobby_EventScript_Scott",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_SCOTT_IN_VERDANTURF"
+    ],
+    "vars": [
+      "VAR_SCOTT_STATE"
+    ]
+  }
+}

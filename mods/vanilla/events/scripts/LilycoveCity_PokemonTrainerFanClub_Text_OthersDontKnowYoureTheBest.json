@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_Text_OthersDontKnowYoureTheBest",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": ".string \"The others, they don't know that\\n\"\n\t.string \"you're the best of the best!\\p\"\n\t.string \"Isn't that right, {PLAYER}?\\n\"\n\t.string \"Show them you've got guts!$\""
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_Text_OthersDontKnowYoureTheBest",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {}
+}

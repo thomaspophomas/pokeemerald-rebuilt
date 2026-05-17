@@ -1,0 +1,23 @@
+{
+  "id": "SeafloorCavern_Room4_EventScript_Grunt3",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Room4/scripts.inc",
+    "sha1": "eb6bd26bd1895d86ee47513520e3d80f2d2301e7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SeafloorCavern_Room4/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_GRUNT_SEAFLOOR_CAVERN_3, SeafloorCavern_Room4_Text_Grunt3Intro, SeafloorCavern_Room4_Text_Grunt3Defeat\n\tmsgbox SeafloorCavern_Room4_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "SeafloorCavern_Room4_EventScript_Grunt3",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SeafloorCavern_Room4/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_GRUNT_SEAFLOOR_CAVERN_3"
+    ]
+  }
+}

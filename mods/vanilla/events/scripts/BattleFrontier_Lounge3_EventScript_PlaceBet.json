@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_Lounge3_EventScript_PlaceBet",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "sha1": "52169856e2442e0e7ad660050a45dce1a1b2405a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "rawScript": "copyvar VAR_0x8004, VAR_0x8008\n\tspecial TakeFrontierBattlePoints\n\tsetvar VAR_FRONTIER_GAMBLER_STATE, FRONTIER_GAMBLER_PLACED_BET\n\tspecial UpdateBattlePointsWindow\n\tplayse SE_SHOP\n\tmsgbox BattleFrontier_Lounge3_Text_ThanksOffYouGo, MSGBOX_DEFAULT\n\tgoto BattleFrontier_Lounge3_EventScript_FinishBet\n\tend"
+  },
+  "label": "BattleFrontier_Lounge3_EventScript_PlaceBet",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FRONTIER_GAMBLER_STATE"
+    ]
+  }
+}

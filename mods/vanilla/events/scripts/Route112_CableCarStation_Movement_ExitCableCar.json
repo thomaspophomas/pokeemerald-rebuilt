@@ -1,0 +1,19 @@
+{
+  "id": "Route112_CableCarStation_Movement_ExitCableCar",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route112_CableCarStation/scripts.inc",
+    "sha1": "52163a924cedb2545f8ddfd323e7075d7bcc20d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route112_CableCarStation/scripts.inc",
+    "rawScript": "walk_down\n\twalk_down\n\twalk_down\n\tdelay_16\n\tstep_end"
+  },
+  "label": "Route112_CableCarStation_Movement_ExitCableCar",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/Route112_CableCarStation/scripts.inc",
+  "references": {}
+}

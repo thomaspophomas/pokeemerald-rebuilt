@@ -1,0 +1,25 @@
+{
+  "id": "SkyPillar_Outside_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Outside/scripts.inc",
+    "sha1": "9bf749dde7f98e08aa43ccd220b7469c53ade7f3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_Outside/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, SkyPillar_Outside_OnTransition\n\tmap_script MAP_SCRIPT_ON_LOAD, SkyPillar_Outside_OnLoad\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, SkyPillar_Outside_OnFrame\n\t.byte 0"
+  },
+  "label": "SkyPillar_Outside_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/SkyPillar_Outside/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

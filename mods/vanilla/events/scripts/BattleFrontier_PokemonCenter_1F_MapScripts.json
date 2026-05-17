@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_PokemonCenter_1F_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc",
+    "sha1": "e4fb392a503e70d6989c6dc6307b6eca9019ac04"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, BattleFrontier_PokemonCenter_1F_OnTransition\n\tmap_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume\n\t.byte 0"
+  },
+  "label": "BattleFrontier_PokemonCenter_1F_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

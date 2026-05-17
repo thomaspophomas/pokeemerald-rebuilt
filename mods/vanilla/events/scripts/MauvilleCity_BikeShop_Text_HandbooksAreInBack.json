@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_BikeShop_Text_HandbooksAreInBack",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "sha1": "31396febb84a2b48608ca32d5a0dd0de865faf26"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "rawScript": ".string \"I'm learning about BIKES while\\n\"\n\t.string \"I work here.\\p\"\n\t.string \"If you need advice on how to ride your\\n\"\n\t.string \"BIKE, there're a couple handbooks in\\l\"\n\t.string \"the back.$\""
+  },
+  "label": "MauvilleCity_BikeShop_Text_HandbooksAreInBack",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattleFactoryLobby_EventScript_SaveBeforeChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+    "sha1": "292da35ee750dbef6f890d691b62400b747b2d83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+    "rawScript": "setvar VAR_TEMP_CHALLENGE_STATUS, 0\n\tfactory_init\n\tfrontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_SAVING\n\tfactory_set FACTORY_DATA_WIN_STREAK_ACTIVE, TRUE\n\tfrontier_set FRONTIER_DATA_PAUSED, FALSE\n\tclosemessage\n\tdelay 2\n\tcall Common_EventScript_SaveGame\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 255\n\tgoto_if_eq VAR_RESULT, 0, BattleFrontier_BattleFactoryLobby_EventScript_CancelChallengeSaveFailed\n\tsetvar VAR_0x8006, 0"
+  },
+  "label": "BattleFrontier_BattleFactoryLobby_EventScript_SaveBeforeChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ]
+  }
+}

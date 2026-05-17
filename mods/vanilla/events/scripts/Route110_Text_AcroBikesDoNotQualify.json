@@ -1,0 +1,19 @@
+{
+  "id": "Route110_Text_AcroBikesDoNotQualify",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/scripts.inc",
+    "sha1": "ee9846425d6a96c03ac988decb3c48ffbd098f22"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110/scripts.inc",
+    "rawScript": ".string \"On this CYCLING ROAD, those riding\\n\"\n\t.string \"MACH BIKES are rated for their number\\l\"\n\t.string \"of collisions and their total times.\\p\"\n\t.string \"ACRO BIKES do not qualify for rating.\\n\"\n\t.string \"They are easy to turn, so it's not fair.$\""
+  },
+  "label": "Route110_Text_AcroBikesDoNotQualify",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110/scripts.inc",
+  "references": {}
+}

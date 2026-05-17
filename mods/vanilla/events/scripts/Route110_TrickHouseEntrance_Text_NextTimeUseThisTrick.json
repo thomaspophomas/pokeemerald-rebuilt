@@ -1,0 +1,19 @@
+{
+  "id": "Route110_TrickHouseEntrance_Text_NextTimeUseThisTrick",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "sha1": "9367efc136143832c1697fbcc61fbb296269d396"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "rawScript": ".string \"For the next time, I'll use this trick,\\n\"\n\t.string \"and that scheme, and those ruses\u2026\\p\"\n\t.string \"Mufufufu\u2026 If I may say so, it's\\n\"\n\t.string \"brilliantly difficult, even for me!$\""
+  },
+  "label": "Route110_TrickHouseEntrance_Text_NextTimeUseThisTrick",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+  "references": {}
+}

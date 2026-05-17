@@ -1,0 +1,19 @@
+{
+  "id": "Route110_TrickHouseEnd_Text_YoureIgnoringMe",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "sha1": "3b39ac1484a417dc8392e9b8712bc29e12891169"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "rawScript": ".string \"Now, now! You're ignoring me now?\\n\"\n\t.string \"Now that, I consider heartbreaking!$\""
+  },
+  "label": "Route110_TrickHouseEnd_Text_YoureIgnoringMe",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+  "references": {}
+}

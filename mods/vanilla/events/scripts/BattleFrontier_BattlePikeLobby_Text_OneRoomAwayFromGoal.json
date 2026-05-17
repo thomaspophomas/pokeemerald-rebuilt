@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeLobby_Text_OneRoomAwayFromGoal",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "sha1": "e2be0fe89296e221d6bdf7bc81fdcf739064bd1b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "rawScript": ".string \"Arrgh! I blew my chance!\\n\"\n\t.string \"I was one room away from the goal!\\p\"\n\t.string \"In this place, you'd better watch out\\n\"\n\t.string \"for poison, freezing, and so on.$\""
+  },
+  "label": "BattleFrontier_BattlePikeLobby_Text_OneRoomAwayFromGoal",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+  "references": {}
+}

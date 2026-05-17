@@ -1,0 +1,19 @@
+{
+  "id": "SeafloorCavern_Room3_Text_ShellyIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Room3/scripts.inc",
+    "sha1": "114dd5618f9f61a4bdce1766b391fad937adce4c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SeafloorCavern_Room3/scripts.inc",
+    "rawScript": ".string \"Ahahahaha!\\p\"\n\t.string \"How did you manage to get here without\\n\"\n\t.string \"a submarine?\\l\"\n\t.string \"What an impressive child!\\p\"\n\t.string \"But\u2026 It won't do to have you\\n\"\n\t.string \"meddling about here.\\p\"\n\t.string \"And, I do want payback for what\\n\"\n\t.string \"happened at the WEATHER INSTITUTE\u2026\\p\"\n\t.string \"I'm going to give you a little taste\\n\"\n\t.string \"of pain! Resign yourself to it!$\""
+  },
+  "label": "SeafloorCavern_Room3_Text_ShellyIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SeafloorCavern_Room3/scripts.inc",
+  "references": {}
+}

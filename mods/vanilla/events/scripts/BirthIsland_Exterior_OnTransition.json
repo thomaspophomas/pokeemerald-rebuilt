@@ -1,0 +1,29 @@
+{
+  "id": "BirthIsland_Exterior_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BirthIsland_Exterior/scripts.inc",
+    "sha1": "1e5973feb9102d3690432e451cddaf05cc140d76"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BirthIsland_Exterior/scripts.inc",
+    "rawScript": "setflag FLAG_MAP_SCRIPT_CHECKED_DEOXYS\n\tsetvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL\n\tsetvar VAR_DEOXYS_ROCK_STEP_COUNT, 0\n\tsetvar VAR_DEOXYS_ROCK_LEVEL, 0\n\tcall_if_set FLAG_BATTLED_DEOXYS, BirthIsland_Exterior_EventScript_HideDeoxysAndPuzzle\n\tcall_if_unset FLAG_BATTLED_DEOXYS, BirthIsland_Exterior_EventScript_TryShowDeoxysPuzzle\n\tend"
+  },
+  "label": "BirthIsland_Exterior_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/BirthIsland_Exterior/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_BATTLED_DEOXYS",
+      "FLAG_MAP_SCRIPT_CHECKED_DEOXYS"
+    ],
+    "vars": [
+      "VAR_DEOXYS_ROCK_LEVEL",
+      "VAR_DEOXYS_ROCK_STEP_COUNT",
+      "VAR_OBJ_GFX_ID_0"
+    ]
+  }
+}

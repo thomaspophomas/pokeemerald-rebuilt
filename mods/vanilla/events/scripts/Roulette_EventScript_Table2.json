@@ -1,0 +1,26 @@
+{
+  "id": "Roulette_EventScript_Table2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/roulette.inc",
+    "sha1": "8e0813f5173876bc584c25d8985abcf8d73c7f01"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/roulette.inc",
+    "rawScript": "checkitem ITEM_COIN_CASE\n\tgoto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoCoinCase\n\tsetvar VAR_0x8004, 1\n\tgetpokenewsactive POKENEWS_GAME_CORNER\n\tgoto_if_eq VAR_RESULT, FALSE, Roulette_EventScript_Play\n\taddvar VAR_0x8004, ROULETTE_SPECIAL_RATE\n\tgoto Roulette_EventScript_Play\n\tend"
+  },
+  "label": "Roulette_EventScript_Table2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/roulette.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_COIN_CASE"
+    ]
+  }
+}

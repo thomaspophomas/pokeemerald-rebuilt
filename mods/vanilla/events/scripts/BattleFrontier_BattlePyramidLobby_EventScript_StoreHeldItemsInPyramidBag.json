@@ -1,0 +1,26 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby_EventScript_StoreHeldItemsInPyramidBag",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "sha1": "b93395a7ee7156a94cfa3817fd6222cfa69e94fd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattlePyramidLobby_Text_MonHoldingItemCannotTake, MSGBOX_DEFAULT\n\tsetflag FLAG_STORING_ITEMS_IN_PYRAMID_BAG\n\tspecial TryStoreHeldItemsInPyramidBag\n\tgoto_if_eq VAR_RESULT, 0, BattleFrontier_BattlePyramidLobby_EventScript_HeldItemsStoredInPyramidBag\n\tmessage BattleFrontier_BattlePyramidLobby_Text_BagCannotHoldPickItemsToKeep\n\twaitmessage\n\tgoto BattleFrontier_BattlePyramidLobby_EventScript_PickItemsToKeep\n\tend"
+  },
+  "label": "BattleFrontier_BattlePyramidLobby_EventScript_StoreHeldItemsInPyramidBag",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_STORING_ITEMS_IN_PYRAMID_BAG"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

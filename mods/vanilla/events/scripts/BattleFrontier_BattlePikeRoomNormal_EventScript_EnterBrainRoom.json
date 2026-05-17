@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomNormal_EventScript_EnterBrainRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "sha1": "54c1e0ee021a3a91375f3b05c8682c17ed095aa9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "rawScript": "delay 22\n\tlockall\n\tapplymovement LOCALID_PIKE_ROOM_NPC_2, BattleFrontier_BattlePikeRoomNormal_Movement_PreQueenHealNPCApproachPlayer\n\twaitmovement 0\n\tpike_prequeenheal\n\tswitch VAR_RESULT\n\tcase 0, BattleFrontier_BattlePikeRoomNormal_EventScript_PreQueenNoHeal\n\tcase 1, BattleFrontier_BattlePikeRoomNormal_EventScript_PreQueenHealOneMon\n\tcase 2, BattleFrontier_BattlePikeRoomNormal_EventScript_PreQueenHealTwoMons"
+  },
+  "label": "BattleFrontier_BattlePikeRoomNormal_EventScript_EnterBrainRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "PetalburgCity_WallysHouse_EventScript_WallysMom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_WallysHouse/scripts.inc",
+    "sha1": "ec42bb72f0a50cce9db9e173ec63e3e0787b8406"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_WallysHouse/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_HM_SURF, PetalburgCity_WallysHouse_EventScript_ReceivedHMSurf\n\tmsgbox PetalburgCity_WallysHouse_Text_WallyWasReallyHappy, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "PetalburgCity_WallysHouse_EventScript_WallysMom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgCity_WallysHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_HM_SURF"
+    ]
+  }
+}

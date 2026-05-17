@@ -1,0 +1,29 @@
+{
+  "id": "PetalburgCity_Gym_EventScript_GiveFacade",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": "giveitem ITEM_TM_FACADE\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull\n\tsetflag FLAG_RECEIVED_TM_FACADE\n\tmsgbox PetalburgCity_Gym_Text_ExplainFacade, MSGBOX_DEFAULT\n\treturn"
+  },
+  "label": "PetalburgCity_Gym_EventScript_GiveFacade",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_TM_FACADE"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_TM_FACADE"
+    ]
+  }
+}

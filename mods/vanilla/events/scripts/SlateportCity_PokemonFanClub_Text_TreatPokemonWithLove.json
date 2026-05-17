@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_PokemonFanClub_Text_TreatPokemonWithLove",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_PokemonFanClub/scripts.inc",
+    "sha1": "153f02ab68bdca98dac6d2c2cf3e3db7c79f2c91"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_PokemonFanClub/scripts.inc",
+    "rawScript": ".string \"POK\u00e9MON are very sensitive to\\n\"\n\t.string \"the feelings of their TRAINERS.\\p\"\n\t.string \"If you treat your POK\u00e9MON with love\\n\"\n\t.string \"and care, they'll love you back.$\""
+  },
+  "label": "SlateportCity_PokemonFanClub_Text_TreatPokemonWithLove",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_PokemonFanClub/scripts.inc",
+  "references": {}
+}

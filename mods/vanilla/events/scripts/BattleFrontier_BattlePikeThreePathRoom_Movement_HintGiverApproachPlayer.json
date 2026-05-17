@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeThreePathRoom_Movement_HintGiverApproachPlayer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "sha1": "927f7bda20dae778159d88132a53038bcfb76615"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "rawScript": "walk_left\n\twalk_left\n\twalk_down\n\twalk_down\n\twalk_down\n\twalk_down\n\tstep_end"
+  },
+  "label": "BattleFrontier_BattlePikeThreePathRoom_Movement_HintGiverApproachPlayer",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+  "references": {}
+}

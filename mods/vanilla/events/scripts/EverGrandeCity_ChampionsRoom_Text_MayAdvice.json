@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_ChampionsRoom_Text_MayAdvice",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "sha1": "4f73bd77d8715e7ac12ff1ac731985eaf75ecd5e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "rawScript": ".string \"MAY: {PLAYER}{KUN}!\\p\"\n\t.string \"Here's some advice before you challenge\\n\"\n\t.string \"the CHAMPION\u2026$\""
+  },
+  "label": "EverGrandeCity_ChampionsRoom_Text_MayAdvice",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+  "references": {}
+}

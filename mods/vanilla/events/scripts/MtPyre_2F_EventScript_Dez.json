@@ -1,0 +1,23 @@
+{
+  "id": "MtPyre_2F_EventScript_Dez",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_2F/scripts.inc",
+    "sha1": "bc76e62a0ca08b33eb2220b94b2aff96bd7a1311"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_2F/scripts.inc",
+    "rawScript": "trainerbattle_double TRAINER_DEZ_AND_LUKE, MtPyre_2F_Text_DezIntro, MtPyre_2F_Text_DezDefeat, MtPyre_2F_Text_DezNotEnoughMons\n\tmsgbox MtPyre_2F_Text_DezPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "MtPyre_2F_EventScript_Dez",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtPyre_2F/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_DEZ_AND_LUKE"
+    ]
+  }
+}

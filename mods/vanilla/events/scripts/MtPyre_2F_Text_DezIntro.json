@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_2F_Text_DezIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_2F/scripts.inc",
+    "sha1": "bc76e62a0ca08b33eb2220b94b2aff96bd7a1311"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_2F/scripts.inc",
+    "rawScript": ".string \"DEZ: I came here on a dare with my\\n\"\n\t.string \"boyfriend.\\p\"\n\t.string \"It's really scary, but I'm with my\\n\"\n\t.string \"boyfriend. It's okay.\\p\"\n\t.string \"I know! I'll get my boyfriend to look\\n\"\n\t.string \"cool by beating you!$\""
+  },
+  "label": "MtPyre_2F_Text_DezIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_2F/scripts.inc",
+  "references": {}
+}

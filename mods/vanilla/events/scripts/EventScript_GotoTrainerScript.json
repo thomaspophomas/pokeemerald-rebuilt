@@ -1,0 +1,19 @@
+{
+  "id": "EventScript_GotoTrainerScript",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/trainer_script.inc",
+    "sha1": "4e5e9c336d839f6e5d36d652600ff46ee7d7f831"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/trainer_script.inc",
+    "rawScript": "gotobeatenscript\n\treleaseall\n\tend"
+  },
+  "label": "EventScript_GotoTrainerScript",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/trainer_script.inc",
+  "references": {}
+}

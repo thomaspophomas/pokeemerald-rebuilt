@@ -1,0 +1,23 @@
+{
+  "id": "OldaleTown_EventScript_DoExitMovement1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown/scripts.inc",
+    "sha1": "b8b6ade6d90e9d5b08d5d2374caa3d404506aa31"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/OldaleTown/scripts.inc",
+    "rawScript": "goto_if_ne VAR_FACING, DIR_SOUTH, OldaleTown_EventScript_DoExitMovement2\n\tapplymovement LOCALID_OLDALE_RIVAL, OldaleTown_Movement_RivalExit\n\twaitmovement 0\n\treturn"
+  },
+  "label": "OldaleTown_EventScript_DoExitMovement1",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/OldaleTown/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FACING"
+    ]
+  }
+}

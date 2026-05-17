@@ -1,0 +1,23 @@
+{
+  "id": "DewfordTown_Gym_EventScript_SetFlashLevel",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Gym/scripts.inc",
+    "sha1": "595ba5581d9eb698f4762f9b34da6e4f6c2a7a55"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Gym/scripts.inc",
+    "rawScript": "goto_if_defeated TRAINER_BRAWLY_1, DewfordTown_Gym_EventScript_SetLightsOn\n\tcall DewfordTown_Gym_EventScript_CountTrainersDefeated\n\tcopyvar VAR_0x8001, VAR_0x8000\n\tgoto_if_eq VAR_0x8000, 0, DewfordTown_Gym_EventScript_SetFlashLevel7\n\tgoto_if_eq VAR_0x8000, 1, DewfordTown_Gym_EventScript_SetFlashLevel6\n\tgoto_if_eq VAR_0x8000, 2, DewfordTown_Gym_EventScript_SetFlashLevel5\n\tgoto_if_eq VAR_0x8000, 3, DewfordTown_Gym_EventScript_SetFlashLevel4\n\tgoto_if_eq VAR_0x8000, 4, DewfordTown_Gym_EventScript_SetFlashLevel3\n\tgoto_if_eq VAR_0x8000, 5, DewfordTown_Gym_EventScript_SetFlashLevel2\n\tgoto DewfordTown_Gym_EventScript_SetFlashLevel1"
+  },
+  "label": "DewfordTown_Gym_EventScript_SetFlashLevel",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DewfordTown_Gym/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_BRAWLY_1"
+    ]
+  }
+}

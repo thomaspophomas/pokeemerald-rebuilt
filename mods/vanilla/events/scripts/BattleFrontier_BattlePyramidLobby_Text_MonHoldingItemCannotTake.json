@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby_Text_MonHoldingItemCannotTake",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "sha1": "b93395a7ee7156a94cfa3817fd6222cfa69e94fd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "rawScript": ".string \"Ah, a slight problem.\\p\"\n\t.string \"At least one POK\u00e9MON is holding\\n\"\n\t.string \"an item.\\p\"\n\t.string \"I'm sorry to say, items obtained in\\n\"\n\t.string \"the PYRAMID cannot be taken away.$\""
+  },
+  "label": "BattleFrontier_BattlePyramidLobby_Text_MonHoldingItemCannotTake",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+  "references": {}
+}

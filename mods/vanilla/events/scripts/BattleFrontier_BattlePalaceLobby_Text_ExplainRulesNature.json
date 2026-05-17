@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_Text_ExplainRulesNature",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": ".string \"Depending on its nature, a POK\u00e9MON\\n\"\n\t.string \"may prefer to attack no matter what.\\p\"\n\t.string \"Another POK\u00e9MON may prefer to protect\\n\"\n\t.string \"itself from any harm.\\p\"\n\t.string \"Yet another may enjoy vexing or\\n\"\n\t.string \"confounding its foes.\\p\"\n\t.string \"Due to its nature, a POK\u00e9MON\\n\"\n\t.string \"will have favorite moves that it is good\\l\"\n\t.string \"at using.\\p\"\n\t.string \"It may also dislike certain moves that\\n\"\n\t.string \"it has trouble using.$\""
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_Text_ExplainRulesNature",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {}
+}

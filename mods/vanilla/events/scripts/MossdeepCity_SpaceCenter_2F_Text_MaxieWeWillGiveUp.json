@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "rawScript": ".string \"MAXIE: All right\u2026\\n\"\n\t.string \"We will give up on the fuel\u2026\\p\"\n\t.string \"There appear to be more important\\n\"\n\t.string \"matters that I must examine\u2026$\""
+  },
+  "label": "MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+  "references": {}
+}

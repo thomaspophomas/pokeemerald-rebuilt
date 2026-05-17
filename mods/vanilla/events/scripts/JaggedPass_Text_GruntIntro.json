@@ -1,0 +1,19 @@
+{
+  "id": "JaggedPass_Text_GruntIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/JaggedPass/scripts.inc",
+    "sha1": "3539aca2d309baaf0b57344f9c2014b5d896c94b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/JaggedPass/scripts.inc",
+    "rawScript": ".string \"Wah!\\n\"\n\t.string \"What are you doing here?\\p\"\n\t.string \"What am I doing in a place like this?\\p\"\n\t.string \"What business is it of yours?$\""
+  },
+  "label": "JaggedPass_Text_GruntIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/JaggedPass/scripts.inc",
+  "references": {}
+}

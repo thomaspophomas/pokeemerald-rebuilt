@@ -1,0 +1,24 @@
+{
+  "id": "NewMauville_Entrance_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NewMauville_Entrance/scripts.inc",
+    "sha1": "f27dc6b4117073bcedc10e2cc744e7b01086fb95"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NewMauville_Entrance/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_LOAD, NewMauville_Entrance_OnLoad\n\tmap_script MAP_SCRIPT_ON_TRANSITION, NewMauville_Entrance_OnTransition\n\t.byte 0"
+  },
+  "label": "NewMauville_Entrance_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/NewMauville_Entrance/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

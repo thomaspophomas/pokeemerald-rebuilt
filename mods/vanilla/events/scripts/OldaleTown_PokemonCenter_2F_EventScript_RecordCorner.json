@@ -1,0 +1,19 @@
+{
+  "id": "OldaleTown_PokemonCenter_2F_EventScript_RecordCorner",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown_PokemonCenter_2F/scripts.inc",
+    "sha1": "2cfb51c0d567d263856c89740e059281e24dd295"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/OldaleTown_PokemonCenter_2F/scripts.inc",
+    "rawScript": "call CableClub_EventScript_RecordCorner\n\tend"
+  },
+  "label": "OldaleTown_PokemonCenter_2F_EventScript_RecordCorner",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/OldaleTown_PokemonCenter_2F/scripts.inc",
+  "references": {}
+}

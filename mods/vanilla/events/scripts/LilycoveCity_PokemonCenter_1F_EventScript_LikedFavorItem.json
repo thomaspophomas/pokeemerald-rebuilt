@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonCenter_1F_EventScript_LikedFavorItem",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/lilycove_lady.inc",
+    "sha1": "2c2864b913cc532d514481fce3a5e381d5af5f83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/lilycove_lady.inc",
+    "rawScript": "special BufferFavorLadyRequest\n\tmsgbox LilycoveCity_PokemonCenter_1F_Text_IWillCherishThis, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "LilycoveCity_PokemonCenter_1F_EventScript_LikedFavorItem",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/lilycove_lady.inc",
+  "references": {}
+}

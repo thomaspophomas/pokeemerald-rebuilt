@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ReceptionGate_Text_LevelModeInfo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "sha1": "5b6e89c53f6e32c0fa6883bd750252f1d739a97b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "rawScript": ".string \"All the challenges at the BATTLE\\n\"\n\t.string \"FRONTIER's facilities come in\\l\"\n\t.string \"two courses--Level 50 and Open Level.$\""
+  },
+  "label": "BattleFrontier_ReceptionGate_Text_LevelModeInfo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+  "references": {}
+}

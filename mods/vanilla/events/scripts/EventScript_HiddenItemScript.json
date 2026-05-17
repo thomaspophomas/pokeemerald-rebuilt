@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_HiddenItemScript",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/obtain_item.inc",
+    "sha1": "53094705147ea153e40933cbc7f9cbe653e2a59b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/obtain_item.inc",
+    "rawScript": "lockall\n\twaitse\n\tadditem VAR_0x8005\n\tcopyvar VAR_0x8007, VAR_RESULT\n\tbufferitemnameplural STR_VAR_2, VAR_0x8005, 1\n\tcheckitemtype VAR_0x8005\n\tcall EventScript_BufferPocketNameAndTryFanfare\n\tgoto_if_eq VAR_0x8007, TRUE, EventScript_PickUpHiddenItem\n\tgoto_if_eq VAR_0x8007, FALSE, EventScript_NoRoomForHiddenItem\n\tend"
+  },
+  "label": "EventScript_HiddenItemScript",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/obtain_item.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_WallysHouse/scripts.inc",
+    "sha1": "ec42bb72f0a50cce9db9e173ec63e3e0787b8406"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_WallysHouse/scripts.inc",
+    "rawScript": ".string \"Oh? You met WALLY in\\n\"\n\t.string \"EVER GRANDE CITY?\\p\"\n\t.string \"Oh, {PLAYER}{KUN}, don't be silly.\\p\"\n\t.string \"He may have gotten healthy, but he\\n\"\n\t.string \"can't go somewhere far away like\\l\"\n\t.string \"that all by himself.$\""
+  },
+  "label": "PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_WallysHouse/scripts.inc",
+  "references": {}
+}

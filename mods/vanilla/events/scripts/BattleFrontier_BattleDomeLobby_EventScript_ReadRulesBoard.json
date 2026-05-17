@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleDomeLobby_EventScript_ReadRulesBoard",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "sha1": "c5673b719ade6a47e6fe1e3055270ca454748cfd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "rawScript": "message BattleFrontier_BattleDomeLobby_Text_ReadWhichHeading\n\twaitmessage\n\tmultichoice 17, 4, MULTI_BATTLE_DOME_RULES, FALSE\n\tswitch VAR_RESULT\n\tcase 0, BattleFrontier_BattleDomeLobby_EventScript_RulesMatchup\n\tcase 1, BattleFrontier_BattleDomeLobby_EventScript_RulesTourneyTree\n\tcase 2, BattleFrontier_BattleDomeLobby_EventScript_RulesDoubleKO\n\tcase 3, BattleFrontier_BattleDomeLobby_EventScript_ExitRules\n\tcase MULTI_B_PRESSED, BattleFrontier_BattleDomeLobby_EventScript_ExitRules\n\tend"
+  },
+  "label": "BattleFrontier_BattleDomeLobby_EventScript_ReadRulesBoard",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

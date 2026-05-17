@@ -1,0 +1,26 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskRecordBattleLink",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+    "sha1": "71e71dc7e048f3a27e89d0ae41c736d25233e068"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+    "rawScript": "message BattleFrontier_BattleTowerBattleRoom_Text_RecordYourBattle\n\twaitmessage\n\tmultichoicedefault 20, 8, MULTI_YESNO, 1, FALSE\n\tswitch VAR_RESULT\n\tcase 1, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskReadyForOpponents\n\tcase MULTI_B_PRESSED, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskReadyForOpponents\n\tcall BattleFrontier_EventScript_SaveBattle\n\tsetflag FLAG_TEMP_2\n\tgoto BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskReadyForOpponents\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskRecordBattleLink",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_TEMP_2"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

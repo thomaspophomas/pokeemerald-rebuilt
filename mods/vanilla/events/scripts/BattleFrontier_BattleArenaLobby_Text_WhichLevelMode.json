@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleArenaLobby_Text_WhichLevelMode",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "sha1": "9504bb75bdf62b80271e2304b4804044c8db502a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "rawScript": ".string \"The BATTLE ARENA offers two levels\\n\"\n\t.string \"of challenge, Level 50 and Open Level.\\l\"\n\t.string \"Which is your choice?$\""
+  },
+  "label": "BattleFrontier_BattleArenaLobby_Text_WhichLevelMode",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+  "references": {}
+}

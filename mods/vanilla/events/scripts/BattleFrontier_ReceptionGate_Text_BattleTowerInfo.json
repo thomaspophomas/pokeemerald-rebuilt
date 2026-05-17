@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ReceptionGate_Text_BattleTowerInfo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "sha1": "5b6e89c53f6e32c0fa6883bd750252f1d739a97b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "rawScript": ".string \"It is the gigantic tower considered\\n\"\n\t.string \"to be the BATTLE FRONTIER's symbol.\\p\"\n\t.string \"There are four kinds of BATTLE ROOMS\\n\"\n\t.string \"in the tower for SINGLE, DOUBLE, MULTI,\\l\"\n\t.string \"and LINK MULTI BATTLES.$\""
+  },
+  "label": "BattleFrontier_ReceptionGate_Text_BattleTowerInfo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+  "references": {}
+}

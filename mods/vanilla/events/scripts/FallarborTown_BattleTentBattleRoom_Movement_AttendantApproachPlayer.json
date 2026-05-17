@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_BattleTentBattleRoom_Movement_AttendantApproachPlayer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+    "sha1": "8bbb2b24c65698ff0f5d4dcb7592d7ae122741de"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+    "rawScript": "walk_down\n\twalk_down\n\twalk_down\n\twalk_in_place_faster_right\n\tstep_end"
+  },
+  "label": "FallarborTown_BattleTentBattleRoom_Movement_AttendantApproachPlayer",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+  "references": {}
+}

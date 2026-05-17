@@ -1,0 +1,29 @@
+{
+  "id": "ShoalCave_LowTideLowerRoom_EventScript_ShoalSalt4",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ShoalCave_LowTideLowerRoom/scripts.inc",
+    "sha1": "ecff8c79aa9294e9c1a40270189212e7063f8d19"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ShoalCave_LowTideLowerRoom/scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_set FLAG_RECEIVED_SHOAL_SALT_4, ShoalCave_LowTideLowerRoom_EventScript_ReceivedShoalSalt\n\tgiveitem ITEM_SHOAL_SALT\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetmetatile 18, 2, METATILE_Cave_ShoalCave_DirtPile_Small, FALSE\n\tspecial DrawWholeMapView\n\tsetflag FLAG_RECEIVED_SHOAL_SALT_4\n\treleaseall\n\tend"
+  },
+  "label": "ShoalCave_LowTideLowerRoom_EventScript_ShoalSalt4",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/ShoalCave_LowTideLowerRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_SHOAL_SALT_4"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_SHOAL_SALT"
+    ]
+  }
+}

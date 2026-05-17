@@ -1,0 +1,24 @@
+{
+  "id": "TrainerHill_Entrance_EventScript_SaveGame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "sha1": "cbfca2354a8d8ed8d68e2612fb0b6f2525008a5f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "rawScript": "msgbox TrainerHill_Entrance_Text_SaveGameBeforeEnter, MSGBOX_DEFAULT\n\ttrainerhill_setsaved\n\tsetvar VAR_TEMP_5, 1\n\tcall Common_EventScript_SaveGame\n\tgoto_if_eq VAR_RESULT, FALSE, TrainerHill_Entrance_EventScript_SaveFailed\n\ttrainerhill_setsaved\n\treturn"
+  },
+  "label": "TrainerHill_Entrance_EventScript_SaveGame",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/TrainerHill_Entrance/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_5"
+    ]
+  }
+}

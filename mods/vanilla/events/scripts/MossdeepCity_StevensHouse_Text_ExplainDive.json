@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_StevensHouse_Text_ExplainDive",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "sha1": "13a709347ca2c2863ef04de01b7d51d28b9d736e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "rawScript": ".string \"STEVEN: While you're using SURF, you\\n\"\n\t.string \"should notice dark patches of water.\\p\"\n\t.string \"Use DIVE if you come to deep water\\n\"\n\t.string \"like it. You'll drop to the seafloor.\\p\"\n\t.string \"When you want to come back up, use\\n\"\n\t.string \"DIVE again.\\p\"\n\t.string \"In some places, it won't be possible\\n\"\n\t.string \"for you to surface, though.$\""
+  },
+  "label": "MossdeepCity_StevensHouse_Text_ExplainDive",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+  "references": {}
+}

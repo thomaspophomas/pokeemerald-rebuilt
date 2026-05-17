@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_BattleTentLobby_Text_ExplainTorment",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+    "sha1": "d8233cb564c951151609565c69259c5bc6039b75"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+    "rawScript": ".string \"That's, like, TM41, you know?\\n\"\n\t.string \"Hey, it's TORMENT, you hearing me?\\p\"\n\t.string \"Like, it won't let the other guy\\n\"\n\t.string \"use the same move twice in a row, see?\\p\"\n\t.string \"Hey, now, you listen here, like,\\n\"\n\t.string \"I'm not laying a torment on you!$\""
+  },
+  "label": "SlateportCity_BattleTentLobby_Text_ExplainTorment",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+  "references": {}
+}

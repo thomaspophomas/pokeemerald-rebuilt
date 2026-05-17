@@ -1,6 +1,8 @@
 {
   "domain": "weather",
   "schemaVersion": 1,
+  "entityKind": "weather_entity",
+  "semanticCoverage": "full",
   "entries": [
     {
       "id": "AbandonedShip_CaptainsOffice:weather",

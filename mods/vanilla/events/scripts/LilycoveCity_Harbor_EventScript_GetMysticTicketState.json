@@ -1,0 +1,31 @@
+{
+  "id": "LilycoveCity_Harbor_EventScript_GetMysticTicketState",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "sha1": "ffd83f00915b03bfdd96f51950251d00dd19dbcb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "rawScript": "setvar VAR_TEMP_9, 0\n\tgoto_if_unset FLAG_ENABLE_SHIP_NAVEL_ROCK, Common_EventScript_NopReturn\n\tcheckitem ITEM_MYSTIC_TICKET\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_NopReturn\n\tsetvar VAR_TEMP_9, 1\n\tgoto_if_set FLAG_SHOWN_MYSTIC_TICKET, Common_EventScript_NopReturn\n\tsetvar VAR_TEMP_9, 2\n\treturn"
+  },
+  "label": "LilycoveCity_Harbor_EventScript_GetMysticTicketState",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_Harbor/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_ENABLE_SHIP_NAVEL_ROCK",
+      "FLAG_SHOWN_MYSTIC_TICKET"
+    ],
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_9"
+    ],
+    "items": [
+      "ITEM_MYSTIC_TICKET"
+    ]
+  }
+}

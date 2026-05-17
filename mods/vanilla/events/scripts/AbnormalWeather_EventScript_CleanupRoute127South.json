@@ -1,0 +1,19 @@
+{
+  "id": "AbnormalWeather_EventScript_CleanupRoute127South",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/abnormal_weather.inc",
+    "sha1": "8bf77729e5d8e5ebd0812ce736eaf3712ec673f3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/abnormal_weather.inc",
+    "rawScript": "setmetatile 61, 30, METATILE_General_CalmWater, FALSE\n\tsetmetatile 62, 30, METATILE_General_CalmWater, FALSE\n\tsetmetatile 60, 31, METATILE_General_CalmWater, FALSE\n\tsetmetatile 61, 31, METATILE_General_CalmWater, FALSE\n\tsetmetatile 62, 31, METATILE_General_CalmWater, FALSE\n\tsetmetatile 63, 31, METATILE_General_CalmWater, FALSE\n\tsetmetatile 60, 32, METATILE_General_CalmWater, FALSE\n\tsetmetatile 61, 32, METATILE_General_CalmWater, FALSE\n\tsetmetatile 62, 32, METATILE_General_CalmWater, FALSE\n\tsetmetatile 63, 32, METATILE_General_CalmWater, FALSE\n\tsetmetatile 61, 33, METATILE_General_CalmWater, FALSE\n\tsetmetatile 62, 33, METATILE_General_CalmWater, FALSE\n\treturn"
+  },
+  "label": "AbnormalWeather_EventScript_CleanupRoute127South",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/abnormal_weather.inc",
+  "references": {}
+}

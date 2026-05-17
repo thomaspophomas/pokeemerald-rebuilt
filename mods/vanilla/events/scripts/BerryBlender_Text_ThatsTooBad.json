@@ -1,0 +1,19 @@
+{
+  "id": "BerryBlender_Text_ThatsTooBad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": ".string \"That's too bad\u2026\\p\"\n\t.string \"But we'll always be around whenever\\n\"\n\t.string \"you get the urge to blend!$\""
+  },
+  "label": "BerryBlender_Text_ThatsTooBad",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {}
+}

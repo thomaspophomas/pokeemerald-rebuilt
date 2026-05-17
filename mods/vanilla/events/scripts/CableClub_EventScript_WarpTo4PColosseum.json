@@ -1,0 +1,23 @@
+{
+  "id": "CableClub_EventScript_WarpTo4PColosseum",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "special SetCableClubWarp\n\twarp MAP_BATTLE_COLOSSEUM_4P, 5, 8\n\tspecial DoCableClubWarp\n\tend"
+  },
+  "label": "CableClub_EventScript_WarpTo4PColosseum",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {
+    "maps": [
+      "MAP_BATTLE_COLOSSEUM_4P"
+    ]
+  }
+}

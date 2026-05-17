@@ -1,0 +1,24 @@
+{
+  "id": "ShoalCave_LowTideInnerRoom_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ShoalCave_LowTideInnerRoom/scripts.inc",
+    "sha1": "869469d7126b490420d342e0851e1e9e44b0de36"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ShoalCave_LowTideInnerRoom/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_LOAD, ShoalCave_LowTideInnerRoom_OnLoad\n\tmap_script MAP_SCRIPT_ON_TRANSITION, ShoalCave_LowTideInnerRoom_OnTransition\n\t.byte 0"
+  },
+  "label": "ShoalCave_LowTideInnerRoom_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/ShoalCave_LowTideInnerRoom/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

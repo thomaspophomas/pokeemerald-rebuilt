@@ -1,0 +1,23 @@
+{
+  "id": "FallarborTown_BattleTentBattleRoom_EventScript_WarpToLobbyLost",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+    "sha1": "8bbb2b24c65698ff0f5d4dcb7592d7ae122741de"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+    "rawScript": "frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_LOST\n\tspecial LoadPlayerParty\n\twarp MAP_FALLARBOR_TOWN_BATTLE_TENT_LOBBY, 6, 6\n\twaitstate"
+  },
+  "label": "FallarborTown_BattleTentBattleRoom_EventScript_WarpToLobbyLost",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_FALLARBOR_TOWN_BATTLE_TENT_LOBBY"
+    ]
+  }
+}

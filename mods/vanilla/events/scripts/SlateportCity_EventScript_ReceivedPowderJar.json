@@ -1,0 +1,23 @@
+{
+  "id": "SlateportCity_EventScript_ReceivedPowderJar",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": "setvar VAR_0x8004, 1\n\tspecialvar VAR_RESULT, HasEnoughBerryPowder\n\tgoto_if_eq VAR_RESULT, FALSE, SlateportCity_EventScript_ExplainBerryPowder\n\tmsgbox SlateportCity_Text_BroughtMeSomeBerryPowder, MSGBOX_DEFAULT\n\tspecial DisplayBerryPowderVendorMenu\n\tgoto SlateportCity_EventScript_ChooseBerryPowderItem\n\tend"
+  },
+  "label": "SlateportCity_EventScript_ReceivedPowderJar",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

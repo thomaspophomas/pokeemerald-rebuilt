@@ -1,0 +1,19 @@
+{
+  "id": "VictoryRoad_1F_EventScript_WallyBattleTrigger2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_1F/scripts.inc",
+    "sha1": "dda3a20e79be32fbc7d021ceddf040bbcdbe53c7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VictoryRoad_1F/scripts.inc",
+    "rawScript": "lockall\n\tsetvar VAR_0x8008, 2\n\taddobject LOCALID_VICTORY_ROAD_ENTRANCE_WALLY\n\tapplymovement LOCALID_VICTORY_ROAD_ENTRANCE_WALLY, VictoryRoad_1F_Movement_WallyApproachPlayer2\n\twaitmovement 0\n\tgoto VictoryRoad_1F_EventScript_WallyEntranceBattle\n\tend"
+  },
+  "label": "VictoryRoad_1F_EventScript_WallyBattleTrigger2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/VictoryRoad_1F/scripts.inc",
+  "references": {}
+}

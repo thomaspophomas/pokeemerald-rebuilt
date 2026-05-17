@@ -1,0 +1,24 @@
+{
+  "id": "EverGrandeCity_SidneysRoom_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+    "sha1": "557570a48b33cd8590cd2a5ef0ed11ae09a3448a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+    "rawScript": "setflag FLAG_MET_SCOTT_IN_EVERGRANDE\n\tsetflag FLAG_HIDE_EVER_GRANDE_POKEMON_CENTER_1F_SCOTT\n\tend"
+  },
+  "label": "EverGrandeCity_SidneysRoom_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_EVER_GRANDE_POKEMON_CENTER_1F_SCOTT",
+      "FLAG_MET_SCOTT_IN_EVERGRANDE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleWeakenFoe",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+    "sha1": "1a22c52bd73e3edd87503c90dddd414ef0e181f2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+    "rawScript": ".string \"The favorite battle style appears\\n\"\n\t.string \"to be weakening the foe to start.$\""
+  },
+  "label": "BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleWeakenFoe",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,32 @@
+{
+  "id": "FortreeCity_Mart_Pokemart",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Mart/scripts.inc",
+    "sha1": "39e9591afc4b01702cd84304453dd4d1ee0ffe23"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Mart/scripts.inc",
+    "rawScript": ".2byte ITEM_GREAT_BALL\n\t.2byte ITEM_ULTRA_BALL\n\t.2byte ITEM_SUPER_POTION\n\t.2byte ITEM_HYPER_POTION\n\t.2byte ITEM_ANTIDOTE\n\t.2byte ITEM_PARALYZE_HEAL\n\t.2byte ITEM_AWAKENING\n\t.2byte ITEM_REVIVE\n\t.2byte ITEM_SUPER_REPEL\n\t.2byte ITEM_WOOD_MAIL\n\tpokemartlistend"
+  },
+  "label": "FortreeCity_Mart_Pokemart",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/FortreeCity_Mart/scripts.inc",
+  "references": {
+    "items": [
+      "ITEM_ANTIDOTE",
+      "ITEM_AWAKENING",
+      "ITEM_GREAT_BALL",
+      "ITEM_HYPER_POTION",
+      "ITEM_PARALYZE_HEAL",
+      "ITEM_REVIVE",
+      "ITEM_SUPER_POTION",
+      "ITEM_SUPER_REPEL",
+      "ITEM_ULTRA_BALL",
+      "ITEM_WOOD_MAIL"
+    ]
+  }
+}

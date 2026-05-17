@@ -1,10 +1,10 @@
 {
   "domain": "language",
   "schemaVersion": 1,
-  "fileCount": 50,
-  "jsonFileCount": 50,
-  "bytes": 33512,
-  "sha1": "23ee5dee145e509a3e0f3101513cf33dcc616464",
+  "fileCount": 27,
+  "jsonFileCount": 27,
+  "bytes": 549846,
+  "sha1": "04690bac1a3ba853923653e6a8f50fa9d072747a",
   "files": [
     {
       "path": "mods/vanilla/language/_source_manifest.json",
@@ -12,252 +12,138 @@
       "bytes": 6693
     },
     {
+      "path": "mods/vanilla/language/en/abnormal_weather.json",
+      "sha1": "ebf38a297dd1f0e5b2a6e310f329722d68a47897",
+      "bytes": 639
+    },
+    {
+      "path": "mods/vanilla/language/en/apprentice.json",
+      "sha1": "a4004b21455499634aeadcb351a857295b0e166f",
+      "bytes": 101491
+    },
+    {
+      "path": "mods/vanilla/language/en/battle_dome.json",
+      "sha1": "7dcda82840285ce2a7433c9fe0f014387ac75f56",
+      "bytes": 10270
+    },
+    {
+      "path": "mods/vanilla/language/en/birch_speech.json",
+      "sha1": "0b5d64aca2da412357cd44d272542df0f89b5261",
+      "bytes": 2496
+    },
+    {
+      "path": "mods/vanilla/language/en/cable_club.json",
+      "sha1": "67b77ab365cdef81bff460f21927c69cdfa3c27b",
+      "bytes": 17253
+    },
+    {
+      "path": "mods/vanilla/language/en/contest_link.json",
+      "sha1": "f420f507daabf4f6b50319839d6936ce2bc4af89",
+      "bytes": 1535
+    },
+    {
+      "path": "mods/vanilla/language/en/contest_painting.json",
+      "sha1": "464bf013263bd4ee22f0f424993edd5899db3df9",
+      "bytes": 2740
+    },
+    {
+      "path": "mods/vanilla/language/en/contest_strings.json",
+      "sha1": "b817cdfc13b8b3650de39fd7cd653ec848a9bf7a",
+      "bytes": 24577
+    },
+    {
+      "path": "mods/vanilla/language/en/core_strings.json",
+      "sha1": "42b099e738d910ca7a8092c465b4cea0688f591a",
+      "bytes": 103748
+    },
+    {
+      "path": "mods/vanilla/language/en/frontier_brain.json",
+      "sha1": "bfe4d7d4ea936ed47bff4dfe2d7f81cac81a5e5f",
+      "bytes": 3025
+    },
+    {
+      "path": "mods/vanilla/language/en/mart_clerk.json",
+      "sha1": "207e1761fbc5ddbe726560c7de5cc1e9ee21763d",
+      "bytes": 646
+    },
+    {
+      "path": "mods/vanilla/language/en/match_call.json",
+      "sha1": "bb86fa5b74589b3ffe6741a7d87fbb33d49acd47",
+      "bytes": 114822
+    },
+    {
+      "path": "mods/vanilla/language/en/mauville_man.json",
+      "sha1": "0ab29c6bfae32820ac9311d34229105f8a4a29a0",
+      "bytes": 2085
+    },
+    {
+      "path": "mods/vanilla/language/en/obtain_item.json",
+      "sha1": "d6f7b2dd85c2b96654168e909f024901dede3a73",
+      "bytes": 1236
+    },
+    {
+      "path": "mods/vanilla/language/en/pc.json",
+      "sha1": "512e2c25d327b032b09fb7f9f188dec305ca648e",
+      "bytes": 715
+    },
+    {
+      "path": "mods/vanilla/language/en/pc_transfer.json",
+      "sha1": "5c8c603e84135fb392c57b2b04f339c55b94d94a",
+      "bytes": 1536
+    },
+    {
+      "path": "mods/vanilla/language/en/pkmn_center_nurse.json",
+      "sha1": "602665ea248725f4f97a18ef889bd6359e8ef978",
+      "bytes": 2174
+    },
+    {
+      "path": "mods/vanilla/language/en/pokedex_rating.json",
+      "sha1": "7e6e428640d3a2deaf2b03da3a11a3c38131a269",
+      "bytes": 4481
+    },
+    {
+      "path": "mods/vanilla/language/en/pokemon_news.json",
+      "sha1": "7865c83b24ec774ec2668c5dace0ce956684f6b6",
+      "bytes": 7516
+    },
+    {
+      "path": "mods/vanilla/language/en/questionnaire.json",
+      "sha1": "efcf4c2511b02dbbd1601b80b48e70d3fc3d3566",
+      "bytes": 1928
+    },
+    {
+      "path": "mods/vanilla/language/en/save.json",
+      "sha1": "10d95d23c89d1d43f0850ef87b08f575a87aa937",
+      "bytes": 1352
+    },
+    {
+      "path": "mods/vanilla/language/en/secret_base_trainers.json",
+      "sha1": "52b5451f1a0959e182a24a20870125c860f9f74d",
+      "bytes": 9700
+    },
+    {
+      "path": "mods/vanilla/language/en/surf.json",
+      "sha1": "ee0b4b46c359f38a0f35694fcab0a79aa1efd77a",
+      "bytes": 531
+    },
+    {
+      "path": "mods/vanilla/language/en/trick_house_mechadolls.json",
+      "sha1": "a50bd1fbc00c01e130afe451873ef6dbb182866d",
+      "bytes": 3135
+    },
+    {
+      "path": "mods/vanilla/language/en/tv.json",
+      "sha1": "92f00417573c3a7f4f9b6d10d5609c6ab29ddf52",
+      "bytes": 117790
+    },
+    {
       "path": "mods/vanilla/language/index.json",
-      "sha1": "009348887db006ce44ca364c2202c441b9dc9eb5",
-      "bytes": 9791
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_abnormal_weather.inc.json",
-      "sha1": "bd3d6c565c2521ec493158c36ef4de3c1b8097da",
-      "bytes": 368
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_apprentice.inc.json",
-      "sha1": "739aa1f43447ece4351388464228394205f7e381",
-      "bytes": 346
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_battle_dome.inc.json",
-      "sha1": "586d65b39d4f6be8b0f0cabaf175d2a4c09d5d0d",
-      "bytes": 349
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_battle_tent.inc.json",
-      "sha1": "96d7dea46def382236188f9ef9d9c077f65ce1b8",
-      "bytes": 350
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_berries.inc.json",
-      "sha1": "49b1304e7125e38219044a5ea6c416eee875facd",
-      "bytes": 333
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_birch_speech.inc.json",
-      "sha1": "52d61463e2e2791c3d22620a9965a16214be5939",
-      "bytes": 353
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_blend_master.inc.json",
-      "sha1": "e738275e071177fd84840ea71d58220c54cc7700",
-      "bytes": 353
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_braille.inc.json",
-      "sha1": "b290c3b33c00cb762aac0e766155e92c180614aa",
-      "bytes": 333
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_cable_club.inc.json",
-      "sha1": "15972da1c452fa0cc4b98083bec0c128a53d655d",
-      "bytes": 346
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_check_furniture.inc.json",
-      "sha1": "cf816f13f8c5eb6e487589f45e991863ee71b7b3",
-      "bytes": 364
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_contest_link.inc.json",
-      "sha1": "9b171e7e67266f8b9f6e3549a2efedbaf70fe043",
-      "bytes": 353
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_contest_painting.inc.json",
-      "sha1": "7a6a86881a01d16ab335b13f65e2b848ddc3d850",
-      "bytes": 369
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_contest_strings.inc.json",
-      "sha1": "5dd24becaeea1e94d22745b569eb5b7d60506431",
-      "bytes": 366
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_event_ticket_1.inc.json",
-      "sha1": "e8f36d3f38e2e6042264012ab2c00b64d49fbed1",
-      "bytes": 361
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_event_ticket_2.inc.json",
-      "sha1": "58739359a2887d21caa50afff3a382e163681b26",
-      "bytes": 361
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_frontier_brain.inc.json",
-      "sha1": "7f82ac35f04ece3d237515debe8abbc4a1bae1a9",
-      "bytes": 361
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_lottery_corner.inc.json",
-      "sha1": "2cb901aa4c9fb263b529778af3abba6c159aa2d9",
-      "bytes": 361
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_mart_clerk.inc.json",
-      "sha1": "895c3d3e33b7e450b4392909e536393fca0d9ed0",
-      "bytes": 344
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_match_call.inc.json",
-      "sha1": "aeb308a767d50758ff70862cab33cac39ed5d865",
-      "bytes": 347
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_mauville_man.inc.json",
-      "sha1": "7a89269f432b38407e55bf50d92597379f7f6d43",
-      "bytes": 353
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_move_tutors.inc.json",
-      "sha1": "8624ef956d0b2be0fb2e6c5d303fe63673156a23",
-      "bytes": 349
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_obtain_item.inc.json",
-      "sha1": "f186b20e697520411f4c9523457059704a360b8c",
-      "bytes": 348
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_pc.inc.json",
-      "sha1": "abf650e60fc285a5c90c3a4b3cd6a3125ccac8d1",
-      "bytes": 312
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_pc_transfer.inc.json",
-      "sha1": "085db7ea04123e7da0cee634aa6a555c9db2dfe3",
-      "bytes": 348
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_pkmn_center_nurse.inc.json",
-      "sha1": "85a2a7bd8c9d8b71fbd292b8069dff37a6ff3d41",
-      "bytes": 373
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_pokedex_rating.inc.json",
-      "sha1": "1282056269053b5abc12bb106391e6f865560be1",
-      "bytes": 361
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_pokemon_news.inc.json",
-      "sha1": "7e0fe0bc19145855c08a0845a76ee733d1c45d2b",
-      "bytes": 353
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_questionnaire.inc.json",
-      "sha1": "8db5286ce6e0f13f045e2baadca2a624e2ef47ec",
-      "bytes": 357
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_record_mix.inc.json",
-      "sha1": "031a05e09568c52b02f00482b7429a81559cb530",
-      "bytes": 344
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_save.inc.json",
-      "sha1": "cb7b278399951125ba45c22a10bfc76ecc41e488",
-      "bytes": 320
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_secret_base_trainers.inc.json",
-      "sha1": "a6e97705ccbaebeaf01b1bb0687779598696455e",
-      "bytes": 385
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_shoal_cave.inc.json",
-      "sha1": "66009a3d32b9a42525e3338daa0f0585815ffe6e",
-      "bytes": 345
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_surf.inc.json",
-      "sha1": "d1d5207a7efb7da07e22e402c14db7b59dfb71eb",
-      "bytes": 320
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_trainers.inc.json",
-      "sha1": "5ceb0a079a70ea0229f06e44b9a5bb613e4eb9c6",
-      "bytes": 339
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_trick_house_mechadolls.inc.json",
-      "sha1": "99df36a88e7de74cf1a4a5985cbc71b8ad4ae2cc",
-      "bytes": 393
-    },
-    {
-      "path": "mods/vanilla/language/source_files/data_text_tv.inc.json",
-      "sha1": "7ad9ac3a7c5c0df4f87862c8098d2f9dca84d632",
-      "bytes": 315
-    },
-    {
-      "path": "mods/vanilla/language/source_files/include_strings.h.json",
-      "sha1": "25cafc1feeb4c908727f1c6b5ba4e2cc22269195",
-      "bytes": 319
-    },
-    {
-      "path": "mods/vanilla/language/source_files/src_data_text_abilities.h.json",
-      "sha1": "b0dd534ba0b560c8f33aa82e815bb4e1e975d52a",
-      "bytes": 350
-    },
-    {
-      "path": "mods/vanilla/language/source_files/src_data_text_gift_ribbon_descriptions.h.json",
-      "sha1": "373621e94c14378b575af022ead20c858e969c56",
-      "bytes": 410
-    },
-    {
-      "path": "mods/vanilla/language/source_files/src_data_text_item_descriptions.h.json",
-      "sha1": "8de594a30a1367e4c39caf002481f9b9418b010a",
-      "bytes": 382
-    },
-    {
-      "path": "mods/vanilla/language/source_files/src_data_text_match_call_messages.h.json",
-      "sha1": "10886ece3b7ec9f4f6f20e2e4c71229dbd56b35b",
-      "bytes": 390
-    },
-    {
-      "path": "mods/vanilla/language/source_files/src_data_text_move_descriptions.h.json",
-      "sha1": "6bcaa671c305c701220baf3490695eab082db098",
-      "bytes": 382
-    },
-    {
-      "path": "mods/vanilla/language/source_files/src_data_text_move_names.h.json",
-      "sha1": "bc2acd2b8f89ceddea1e93362347d52b5a3b4d4f",
-      "bytes": 354
-    },
-    {
-      "path": "mods/vanilla/language/source_files/src_data_text_nature_names.h.json",
-      "sha1": "a89bc61282d6dbb132711e1c7eb767c22755a4b7",
-      "bytes": 361
-    },
-    {
-      "path": "mods/vanilla/language/source_files/src_data_text_ribbon_descriptions.h.json",
-      "sha1": "c98a21b798b31b070359f61cdaa94f1df9993b7b",
-      "bytes": 389
-    },
-    {
-      "path": "mods/vanilla/language/source_files/src_data_text_species_names.h.json",
-      "sha1": "46e8d2b2afdf999d4995934ef3f4cba38c224031",
-      "bytes": 366
-    },
-    {
-      "path": "mods/vanilla/language/source_files/src_data_text_trainer_class_names.h.json",
-      "sha1": "3dae457c514d3f06a769682152bc041a83b71a65",
-      "bytes": 389
-    },
-    {
-      "path": "mods/vanilla/language/source_files/src_strings.c.json",
-      "sha1": "55e9034d5762fb6a160f3c71aafd2ba190842c78",
-      "bytes": 303
+      "sha1": "9ac889a12c01bf88b2e3eb0697c993db01d6cc48",
+      "bytes": 5732
     }
   ],
   "counts": {
-    "sourceEntities": 48
+    "languageGroups": 25,
+    "strings": 3288
   }
 }

@@ -1,0 +1,26 @@
+{
+  "id": "RustboroCity_House1_EventScript_Trader",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_House1/scripts.inc",
+    "sha1": "40e0730e3208fa5cccc515a948ef43358100668f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_House1/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RUSTBORO_NPC_TRADE_COMPLETED, RustboroCity_House1_EventScript_TradeCompleted\n\tsetvar VAR_0x8008, INGAME_TRADE_SEEDOT\n\tcopyvar VAR_0x8004, VAR_0x8008\n\tspecialvar VAR_RESULT, GetInGameTradeSpeciesInfo\n\tcopyvar VAR_0x8009, VAR_RESULT\n\tmsgbox RustboroCity_House1_Text_IllTradeIfYouWant, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, RustboroCity_House1_EventScript_DeclineTrade\n\tspecial ChoosePartyMon\n\tcopyvar VAR_0x800A, VAR_0x8004\n\tgoto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, RustboroCity_House1_EventScript_DeclineTrade\n\tcopyvar VAR_0x8005, VAR_0x800A\n\tspecialvar VAR_RESULT, GetTradeSpecies\n\tcopyvar VAR_0x800B, VAR_RESULT\n\tgoto_if_ne VAR_RESULT, VAR_0x8009, RustboroCity_House1_EventScript_NotRequestedMon\n\tcopyvar VAR_0x8004, VAR_0x8008\n\tcopyvar VAR_0x8005, VAR_0x800A\n\tspecial CreateInGameTradePokemon\n\tspecial DoInGameTradeScene\n\tmsgbox RustboroCity_House1_Text_PleaseBeGoodToMyPokemon, MSGBOX_DEFAULT\n\tsetflag FLAG_RUSTBORO_NPC_TRADE_COMPLETED\n\trelease\n\tend"
+  },
+  "label": "RustboroCity_House1_EventScript_Trader",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_House1/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RUSTBORO_NPC_TRADE_COMPLETED"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

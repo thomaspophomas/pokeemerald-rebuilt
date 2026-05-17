@@ -1,0 +1,19 @@
+{
+  "id": "Common_EventScript_SaveGame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/std_msgbox.inc",
+    "sha1": "f703ed4b95c88fdbbad4b12d4f4204426568b7d0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/std_msgbox.inc",
+    "rawScript": "special SaveGame\n\treturn"
+  },
+  "label": "Common_EventScript_SaveGame",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/std_msgbox.inc",
+  "references": {}
+}

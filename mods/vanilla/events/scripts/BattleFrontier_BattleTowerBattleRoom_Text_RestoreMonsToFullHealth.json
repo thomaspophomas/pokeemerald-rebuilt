@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerBattleRoom_Text_RestoreMonsToFullHealth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "sha1": "09b678d8717203a622b1d8714d904bcdeb37d08a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "rawScript": ".string \"We will restore your POK\u00e9MON to\\n\"\n\t.string \"full health.$\"\n\n@ Unused"
+  },
+  "label": "BattleFrontier_BattleTowerBattleRoom_Text_RestoreMonsToFullHealth",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+  "references": {}
+}

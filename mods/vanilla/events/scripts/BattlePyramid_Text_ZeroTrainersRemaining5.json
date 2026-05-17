@@ -1,0 +1,19 @@
+{
+  "id": "BattlePyramid_Text_ZeroTrainersRemaining5",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "sha1": "a6f6792ac2bc39a05028dabd4e88f5984d84d4a5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "rawScript": ".string \"Your skills are beyond reproach.\\p\"\n\t.string \"There are no more TRAINERS here\\n\"\n\t.string \"who have any chance of beating you.$\""
+  },
+  "label": "BattlePyramid_Text_ZeroTrainersRemaining5",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+  "references": {}
+}

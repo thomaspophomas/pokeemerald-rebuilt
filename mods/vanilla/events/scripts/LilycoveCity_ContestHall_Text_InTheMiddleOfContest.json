@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestHall_Text_InTheMiddleOfContest",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "sha1": "9d258f56144116075b6ffd125cc9edb7fc292736"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "rawScript": ".string \"MC: Uh-oh! Hello!\\n\"\n\t.string \"We're in the middle of a CONTEST!\\p\"\n\t.string \"Please enter at our registration\\n\"\n\t.string \"counter and come out, okay?$\""
+  },
+  "label": "LilycoveCity_ContestHall_Text_InTheMiddleOfContest",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+  "references": {}
+}

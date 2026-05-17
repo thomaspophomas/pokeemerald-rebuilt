@@ -1,0 +1,26 @@
+{
+  "id": "DewfordTown_EventScript_Briney",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown/scripts.inc",
+    "sha1": "e9e724e6d3bba641bcb2d4263fe226ee6c1b4840"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_unset FLAG_DELIVERED_STEVEN_LETTER, DewfordTown_EventScript_ReturnToPetalburgPrompt\n\tmessage DewfordTown_Text_WhereAreWeBound\n\twaitmessage\n\tmultichoicedefault 21, 6, MULTI_BRINEY_ON_DEWFORD, 2, FALSE\n\tswitch VAR_RESULT\n\tcase 0, DewfordTown_EventScript_ChoosePetalburg\n\tcase 1, DewfordTown_EventScript_ChooseSlateport\n\tcase 2, DewfordTown_EventScript_CancelSailSelect\n\tcase MULTI_B_PRESSED, DewfordTown_EventScript_CancelSailSelect\n\tend"
+  },
+  "label": "DewfordTown_EventScript_Briney",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DewfordTown/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DELIVERED_STEVEN_LETTER"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

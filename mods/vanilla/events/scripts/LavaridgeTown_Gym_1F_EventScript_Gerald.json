@@ -1,0 +1,24 @@
+{
+  "id": "LavaridgeTown_Gym_1F_EventScript_Gerald",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "sha1": "b82ae91ab89ff7156e8125891eff9b7e6a2a260f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "rawScript": "trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_GERALD, LOCALID_GERALD, LavaridgeTown_Gym_1F_Text_GeraldIntro, LavaridgeTown_Gym_1F_Text_GeraldDefeat, LavaridgeTown_Gym_EventScript_CheckTrainerScript\n\tmsgbox LavaridgeTown_Gym_1F_Text_GeraldPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "LavaridgeTown_Gym_1F_EventScript_Gerald",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_BATTLE_CONTINUE_SCRIPT",
+      "TRAINER_GERALD"
+    ]
+  }
+}

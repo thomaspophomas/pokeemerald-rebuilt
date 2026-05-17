@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_House1_Text_DoesntLikeOrDislikePokeblocks",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_House1/scripts.inc",
+    "sha1": "93c59a6d1eff04f8834df6ef4585f3c7342abcfe"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_House1/scripts.inc",
+    "rawScript": ".string \"It doesn't appear to like or dislike\\n\"\n\t.string \"any {POKEBLOCK}S.$\""
+  },
+  "label": "MossdeepCity_House1_Text_DoesntLikeOrDislikePokeblocks",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_House1/scripts.inc",
+  "references": {}
+}

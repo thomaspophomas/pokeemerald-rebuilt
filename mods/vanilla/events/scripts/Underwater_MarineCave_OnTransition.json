@@ -1,0 +1,23 @@
+{
+  "id": "Underwater_MarineCave_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_MarineCave/scripts.inc",
+    "sha1": "ecfa39a437d6a1fb9639d1637d1a88a043c2479d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Underwater_MarineCave/scripts.inc",
+    "rawScript": "setflag FLAG_ARRIVED_AT_MARINE_CAVE_EMERGE_SPOT\n\tend"
+  },
+  "label": "Underwater_MarineCave_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Underwater_MarineCave/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_ARRIVED_AT_MARINE_CAVE_EMERGE_SPOT"
+    ]
+  }
+}

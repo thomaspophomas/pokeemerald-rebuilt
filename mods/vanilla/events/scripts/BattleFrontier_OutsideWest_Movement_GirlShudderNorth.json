@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideWest_Movement_GirlShudderNorth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": "walk_in_place_faster_down\n\twalk_in_place_faster_down\n\tstep_end"
+  },
+  "label": "BattleFrontier_OutsideWest_Movement_GirlShudderNorth",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {}
+}

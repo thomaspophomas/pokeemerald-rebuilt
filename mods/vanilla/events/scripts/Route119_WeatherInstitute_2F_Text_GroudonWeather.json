@@ -1,0 +1,19 @@
+{
+  "id": "Route119_WeatherInstitute_2F_Text_GroudonWeather",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "sha1": "fb62e5a84003aa6247f1e7fe6ea409ec86ac92cc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "rawScript": ".string \"I track weather patterns over\\n\"\n\t.string \"the HOENN region.\\p\"\n\t.string \"Presently, a drought has been recorded\\n\"\n\t.string \"in {STR_VAR_1}.\\p\"\n\t.string \"Could that mean, somewhere near\\n\"\n\t.string \"{STR_VAR_1}\u2026$\""
+  },
+  "label": "Route119_WeatherInstitute_2F_Text_GroudonWeather",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_AccessPokemonStorage",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/pc.inc",
+    "sha1": "7bcbb4797cbf3d04de79d03c5e2b947f76ffcf90"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/pc.inc",
+    "rawScript": "playse SE_PC_LOGIN\n\tcall_if_unset FLAG_SYS_PC_LANETTE, EventScript_AccessSomeonesPC\n\tcall_if_set FLAG_SYS_PC_LANETTE, EventScript_AccessLanettesPC\n\tmsgbox gText_StorageSystemOpened, MSGBOX_DEFAULT\n\tspecial ShowPokemonStorageSystemPC\n\tgoto EventScript_PCMainMenu\n\tend"
+  },
+  "label": "EventScript_AccessPokemonStorage",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/pc.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_PC_LANETTE"
+    ]
+  }
+}

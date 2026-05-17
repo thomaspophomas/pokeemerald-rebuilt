@@ -1,0 +1,23 @@
+{
+  "id": "DewfordTown_Hall_EventScript_Painting",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Hall/scripts.inc",
+    "sha1": "78185d3058996bff2579b5133faf680c4df6865f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Hall/scripts.inc",
+    "rawScript": "lockall\n\tcall Common_EventScript_BufferTrendyPhrase\n\tspecial GetDewfordHallPaintingNameIndex\n\tswitch VAR_RESULT\n\tcase 0, DewfordTown_Hall_EventScript_ScreamTitle\n\tcase 4, DewfordTown_Hall_EventScript_ScreamTitle\n\tcase 1, DewfordTown_Hall_EventScript_SmileTitle\n\tcase 5, DewfordTown_Hall_EventScript_ScreamTitle\n\tcase 2, DewfordTown_Hall_EventScript_LastTitle\n\tcase 6, DewfordTown_Hall_EventScript_LastTitle\n\tcase 3, DewfordTown_Hall_EventScript_BirthTitle\n\tcase 7, DewfordTown_Hall_EventScript_LastTitle\n\tend"
+  },
+  "label": "DewfordTown_Hall_EventScript_Painting",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DewfordTown_Hall/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_BrendanDefeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"Humph\u2026\\n\"\n\t.string \"You've done a lot of raising.\\p\"\n\t.string \"That stings a bit--I had a head start\\n\"\n\t.string \"on you as a TRAINER\u2026$\""
+  },
+  "label": "LilycoveCity_Text_BrendanDefeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

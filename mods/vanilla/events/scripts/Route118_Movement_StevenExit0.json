@@ -1,0 +1,19 @@
+{
+  "id": "Route118_Movement_StevenExit0",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route118/scripts.inc",
+    "sha1": "5a4868d1490a62e62c6e29a255fc938bad9fa2cd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route118/scripts.inc",
+    "rawScript": "walk_right\n\twalk_right\n\twalk_right\n\twalk_right\n\twalk_right\n\twalk_right\n\twalk_right\n\twalk_right\n\twalk_right\n\twalk_right\n\tstep_end"
+  },
+  "label": "Route118_Movement_StevenExit0",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/Route118/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "AbandonedShip_Underwater2_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Underwater2/scripts.inc",
+    "sha1": "0fc99be11777763ab6047182b4bbd180d75c3dc9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_Underwater2/scripts.inc",
+    "rawScript": "setdivewarp MAP_ABANDONED_SHIP_ROOMS_B1F, 13, 7\n\tend"
+  },
+  "label": "AbandonedShip_Underwater2_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/AbandonedShip_Underwater2/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_ABANDONED_SHIP_ROOMS_B1F"
+    ]
+  }
+}

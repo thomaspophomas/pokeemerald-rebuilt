@@ -1,0 +1,19 @@
+{
+  "id": "sText_FullParty",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_pichu.inc",
+    "sha1": "b8f12719008c830f693c4c1d3228265f92693526"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_pichu.inc",
+    "rawScript": ".string \"Oh, your party appears to be full.\\p\"\n\t.string \"Please come see me after storing\\n\"\n\t.string \"a POK\u00e9MON on a PC.$\""
+  },
+  "label": "sText_FullParty",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_pichu.inc",
+  "references": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": "PetalburgCity_Gym_EventScript_George",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_GEORGE, PetalburgCity_Gym_Text_GeorgeIntro, PetalburgCity_Gym_Text_GeorgeDefeat, PetalburgCity_Gym_EventScript_SlideOpenRecoveryRoomDoors\n\tgoto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_GeorgePostBadge\n\tmsgbox PetalburgCity_Gym_Text_GeorgePostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "PetalburgCity_Gym_EventScript_George",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_PETALBURG_GYM"
+    ],
+    "trainers": [
+      "TRAINER_GEORGE"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ContestHall_EventScript_AudienceLookAround",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": "addvar VAR_TEMP_1, 1\n\tlockall\n\tcall_if_gt VAR_CONTEST_TYPE, CONTEST_TYPE_NPC_NORMAL, ContestHall_EventScript_VObjectAudienceLookAround\n\tapplymovement LOCALID_CONTEST_AUDIENCE_5, ContestHall_Movement_AudienceMemberLookRight\n\tapplymovement LOCALID_CONTEST_AUDIENCE_2, ContestHall_Movement_AudienceMemberLookDown\n\tapplymovement LOCALID_CONTEST_AUDIENCE_3, ContestHall_Movement_AudienceMemberLookRight\n\tdelay 30\n\tapplymovement LOCALID_CONTEST_AUDIENCE_6, ContestHall_Movement_AudienceMemberLookLeft\n\tapplymovement LOCALID_CONTEST_AUDIENCE_7, ContestHall_Movement_AudienceMemberLookDown\n\tapplymovement LOCALID_CONTEST_AUDIENCE_1, ContestHall_Movement_AudienceMemberLookUp\n\tapplymovement LOCALID_CONTEST_AUDIENCE_4, ContestHall_Movement_AudienceMemberLookLeft\n\tgoto_if_ne VAR_TEMP_1, 4, ContestHall_EventScript_AudienceLookAround\n\tdelay 30\n\treturn"
+  },
+  "label": "ContestHall_EventScript_AudienceLookAround",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {
+    "vars": [
+      "VAR_CONTEST_TYPE",
+      "VAR_TEMP_1"
+    ]
+  }
+}

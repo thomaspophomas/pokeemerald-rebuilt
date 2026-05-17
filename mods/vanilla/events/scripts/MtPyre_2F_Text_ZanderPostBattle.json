@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_2F_Text_ZanderPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_2F/scripts.inc",
+    "sha1": "bc76e62a0ca08b33eb2220b94b2aff96bd7a1311"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_2F/scripts.inc",
+    "rawScript": ".string \"I get freaked out every time I see\\n\"\n\t.string \"anything move\u2026\\p\"\n\t.string \"I shouldn't have come here to train\u2026$\""
+  },
+  "label": "MtPyre_2F_Text_ZanderPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_2F/scripts.inc",
+  "references": {}
+}

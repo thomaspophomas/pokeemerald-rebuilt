@@ -1,0 +1,26 @@
+{
+  "id": "LavaridgeTown_EventScript_MayGiveGoGoggles",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": "msgbox LavaridgeTown_Text_MayNiceBadgesTakeThis, MSGBOX_DEFAULT\n\tgiveitem ITEM_GO_GOGGLES\n\tsetflag FLAG_RECEIVED_GO_GOGGLES\n\tmsgbox LavaridgeTown_Text_MayExplainGoGogglesChallengeDad, MSGBOX_DEFAULT\n\tgoto LavaridgeTown_EventScript_RivalExit\n\tend"
+  },
+  "label": "LavaridgeTown_EventScript_MayGiveGoGoggles",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_GO_GOGGLES"
+    ],
+    "items": [
+      "ITEM_GO_GOGGLES"
+    ]
+  }
+}

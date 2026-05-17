@@ -1,0 +1,19 @@
+{
+  "id": "Underwater_SeafloorCavern_Text_SubExplorer1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_SeafloorCavern/scripts.inc",
+    "sha1": "0161920db8325168fff9945e78faf08193f0bc50"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Underwater_SeafloorCavern/scripts.inc",
+    "rawScript": ".string \"\u201cSUBMARINE EXPLORER 1\u201d is painted\\n\"\n\t.string \"on the hull.\\p\"\n\t.string \"This is the submarine TEAM AQUA\\n\"\n\t.string \"stole in SLATEPORT!\\p\"\n\t.string \"TEAM AQUA must have gone\\n\"\n\t.string \"ashore here.$\""
+  },
+  "label": "Underwater_SeafloorCavern_Text_SubExplorer1",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Underwater_SeafloorCavern/scripts.inc",
+  "references": {}
+}

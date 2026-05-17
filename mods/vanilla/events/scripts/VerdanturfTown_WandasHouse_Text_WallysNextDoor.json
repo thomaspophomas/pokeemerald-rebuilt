@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_WandasHouse_Text_WallysNextDoor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+    "sha1": "31973fbe72c23018cb6768d20d4d7addb52bae60"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+    "rawScript": ".string \"UNCLE: Oh! {PLAYER}{KUN}!\\n\"\n\t.string \"WALLY's next door.\\p\"\n\t.string \"But, boy, there's something I have to\\n\"\n\t.string \"tell you.\\p\"\n\t.string \"This natural environment is doing\\n\"\n\t.string \"wonders for WALLY's health.\\p\"\n\t.string \"Maybe it's not just the environment.\\n\"\n\t.string \"It could be POK\u00e9MON that are giving\\l\"\n\t.string \"the boy hope.$\""
+  },
+  "label": "VerdanturfTown_WandasHouse_Text_WallysNextDoor",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+  "references": {}
+}

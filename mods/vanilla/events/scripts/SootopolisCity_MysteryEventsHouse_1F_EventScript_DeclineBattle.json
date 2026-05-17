@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_MysteryEventsHouse_1F_EventScript_DeclineBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc",
+    "sha1": "2fdeaa88644de0428efc55499bd5f5d3a0d1831f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc",
+    "rawScript": "special LoadPlayerParty\n\tmsgbox SootopolisCity_MysteryEventsHouse_1F_Text_YouWontBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "SootopolisCity_MysteryEventsHouse_1F_EventScript_DeclineBattle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomeLobby_Text_WelcomeSingleBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "sha1": "c5673b719ade6a47e6fe1e3055270ca454748cfd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "rawScript": ".string \"Where the strategies of TRAINERS\\n\"\n\t.string \"are put to the test!\\p\"\n\t.string \"Welcome to the BATTLE DOME!\\p\"\n\t.string \"I am your guide to the SINGLE BATTLE\\n\"\n\t.string \"Tournament.$\""
+  },
+  "label": "BattleFrontier_BattleDomeLobby_Text_WelcomeSingleBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+  "references": {}
+}

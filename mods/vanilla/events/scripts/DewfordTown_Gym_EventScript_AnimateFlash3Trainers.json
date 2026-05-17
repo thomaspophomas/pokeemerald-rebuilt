@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Gym_EventScript_AnimateFlash3Trainers",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Gym/scripts.inc",
+    "sha1": "595ba5581d9eb698f4762f9b34da6e4f6c2a7a55"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Gym/scripts.inc",
+    "rawScript": "playse SE_SWITCH\n\tanimateflash 4\n\tcall DewfordTown_Gym_EventScript_SetFlashLevel\n\treturn"
+  },
+  "label": "DewfordTown_Gym_EventScript_AnimateFlash3Trainers",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DewfordTown_Gym/scripts.inc",
+  "references": {}
+}

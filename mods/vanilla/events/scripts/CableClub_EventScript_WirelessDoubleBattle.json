@@ -1,0 +1,23 @@
+{
+  "id": "CableClub_EventScript_WirelessDoubleBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "special HasEnoughMonsForDoubleBattle\n\tgoto_if_ne VAR_RESULT, PLAYER_HAS_TWO_USABLE_MONS, CableClub_EventScript_TwoMonsNeededForWirelessDoubleBattle\n\tsetvar VAR_0x8004, LINK_GROUP_DOUBLE_BATTLE\n\tgoto CableClub_EventScript_SaveAndChooseLinkLeader\n\tend"
+  },
+  "label": "CableClub_EventScript_WirelessDoubleBattle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

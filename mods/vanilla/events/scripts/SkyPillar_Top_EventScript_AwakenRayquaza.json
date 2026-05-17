@@ -1,0 +1,25 @@
+{
+  "id": "SkyPillar_Top_EventScript_AwakenRayquaza",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Top/scripts.inc",
+    "sha1": "db486fa7ae1229bdf3cba19c1d86940ca9a59221"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_Top/scripts.inc",
+    "rawScript": "lockall\n\tfadeoutbgm 1\n\tapplymovement LOCALID_PLAYER, Common_Movement_FaceUp\n\twaitmovement 0\n\tspecial SpawnCameraObject\n\tapplymovement LOCALID_CAMERA, SkyPillar_Top_Movement_CameraPanUp\n\twaitmovement 0\n\tspecial RemoveCameraObject\n\tapplymovement LOCALID_RAYQUAZA_SLEEPING, SkyPillar_Top_Movement_RayquazaStir\n\twaitmovement 0\n\twaitse\n\tplaymoncry SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER\n\tsetvar VAR_0x8004, 1  @ vertical pan\n\tsetvar VAR_0x8005, 1  @ horizontal pan\n\tsetvar VAR_0x8006, 8  @ num shakes\n\tsetvar VAR_0x8007, 3  @ shake delay\n\tspecial ShakeCamera\n\twaitstate\n\twaitse\n\tplaymoncry SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER\n\tsetvar VAR_0x8004, 1  @ vertical pan\n\tsetvar VAR_0x8005, 2  @ horizontal pan\n\tsetvar VAR_0x8006, 8  @ num shakes\n\tsetvar VAR_0x8007, 5  @ shake delay\n\tspecial ShakeCamera\n\twaitstate\n\twaitmoncry\n\tapplymovement LOCALID_RAYQUAZA_SLEEPING, SkyPillar_Top_Movement_RayquazaFlyOff\n\twaitmovement 0\n\tremoveobject LOCALID_RAYQUAZA_SLEEPING\n\tmsgbox SkyPillar_Top_Text_RayquazaFlewOff, MSGBOX_DEFAULT\n\tclosemessage\n\tdelay 20\n\tfadeinbgm 1\n\tspecial SpawnCameraObject\n\tapplymovement LOCALID_CAMERA, SkyPillar_Top_Movement_CameraPanDown\n\twaitmovement 0\n\tspecial RemoveCameraObject\n\tsetvar VAR_SOOTOPOLIS_CITY_STATE, 5\n\tsetvar VAR_SKY_PILLAR_STATE, 1\n\tsetvar VAR_SKY_PILLAR_RAYQUAZA_CRY_DONE, 1\n\treleaseall\n\tend\n\n@ Rayquaza has unusual movement frames\n@ See comments, or sAnimTable_Rayquaza"
+  },
+  "label": "SkyPillar_Top_EventScript_AwakenRayquaza",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SkyPillar_Top/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_SKY_PILLAR_RAYQUAZA_CRY_DONE",
+      "VAR_SKY_PILLAR_STATE",
+      "VAR_SOOTOPOLIS_CITY_STATE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Movement_PlayerWatchScottExit",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": "delay_16\n\twalk_in_place_faster_right\n\tstep_end"
+  },
+  "label": "SlateportCity_Movement_PlayerWatchScottExit",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "FarawayIsland_Entrance_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FarawayIsland_Entrance/scripts.inc",
+    "sha1": "23d3bf4f9ef5a8edf9d50398dba305a326eac52e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FarawayIsland_Entrance/scripts.inc",
+    "rawScript": "setflag FLAG_ARRIVED_ON_FARAWAY_ISLAND\n\tend"
+  },
+  "label": "FarawayIsland_Entrance_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/FarawayIsland_Entrance/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_ARRIVED_ON_FARAWAY_ISLAND"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_UncleYourePushingIt",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"UNCLE: Now hold on, WALLY.\\p\"\n\t.string \"Since you started living with POK\u00e9MON,\\n\"\n\t.string \"you have grown quite a lot stronger.\\p\"\n\t.string \"But don't you think you're pushing it\\n\"\n\t.string \"to suddenly challenge a GYM?$\""
+  },
+  "label": "MauvilleCity_Text_UncleYourePushingIt",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

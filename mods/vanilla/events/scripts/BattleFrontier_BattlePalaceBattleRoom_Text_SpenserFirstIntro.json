@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserFirstIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "sha1": "c4392c432f84fdbe0613ac4b067366a168a52056"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "rawScript": ".string \"SPENSER: My physical being is with\\n\"\n\t.string \"POK\u00e9MON always!\\p\"\n\t.string \"My heart beats as one with\\n\"\n\t.string \"POK\u00e9MON always!\\p\"\n\t.string \"Young one of a TRAINER!\\n\"\n\t.string \"Do you believe in your POK\u00e9MON?\\p\"\n\t.string \"Can you believe them through\\n\"\n\t.string \"and through?\\p\"\n\t.string \"If your bonds of trust are frail,\\n\"\n\t.string \"you will never beat my brethren!$\""
+  },
+  "label": "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserFirstIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+  "references": {}
+}

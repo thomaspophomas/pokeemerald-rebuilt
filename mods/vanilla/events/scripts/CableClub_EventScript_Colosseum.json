@@ -1,0 +1,23 @@
+{
+  "id": "CableClub_EventScript_Colosseum",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "copyvar VAR_0x8007, VAR_LAST_TALKED\n\tgoto CableClub_EventScript_SelectBattleMode\n\tend"
+  },
+  "label": "CableClub_EventScript_Colosseum",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED"
+    ]
+  }
+}

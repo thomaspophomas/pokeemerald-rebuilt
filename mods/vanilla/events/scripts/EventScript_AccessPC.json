@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_AccessPC",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/pc.inc",
+    "sha1": "7bcbb4797cbf3d04de79d03c5e2b947f76ffcf90"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/pc.inc",
+    "rawScript": "switch VAR_RESULT\n\tcase 0, EventScript_AccessPokemonStorage\n\tcase 1, EventScript_AccessPlayersPC\n\tcase 2, EventScript_AccessHallOfFame\n\tcase 3, EventScript_TurnOffPC\n\tcase MULTI_B_PRESSED, EventScript_TurnOffPC\n\tend"
+  },
+  "label": "EventScript_AccessPC",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/pc.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

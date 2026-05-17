@@ -1,0 +1,19 @@
+{
+  "id": "Route110_Text_TrainerTipsRegisterItems",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/scripts.inc",
+    "sha1": "ee9846425d6a96c03ac988decb3c48ffbd098f22"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110/scripts.inc",
+    "rawScript": ".string \"TRAINER TIPS\\p\"\n\t.string \"The items in the BAG can be reorganized\\n\"\n\t.string \"by pressing SELECT.$\""
+  },
+  "label": "Route110_Text_TrainerTipsRegisterItems",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "RusturfTunnel_Text_YouShatteredBoulderTakeHM",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/scripts.inc",
+    "sha1": "76035185b0aabddf11657305417168db4c1bb93d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RusturfTunnel/scripts.inc",
+    "rawScript": ".string \"Wow! You shattered that boulder\\n\"\n\t.string \"blocking the way.\\p\"\n\t.string \"To show you how much I appreciate it,\\n\"\n\t.string \"I'd like you to have this HM.$\""
+  },
+  "label": "RusturfTunnel_Text_YouShatteredBoulderTakeHM",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RusturfTunnel/scripts.inc",
+  "references": {}
+}

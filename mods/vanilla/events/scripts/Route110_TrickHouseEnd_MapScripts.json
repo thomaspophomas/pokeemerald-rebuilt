@@ -1,0 +1,26 @@
+{
+  "id": "Route110_TrickHouseEnd_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "sha1": "3b39ac1484a417dc8392e9b8712bc29e12891169"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, Route110_TrickHouseEnd_OnResume\n\tmap_script MAP_SCRIPT_ON_TRANSITION, Route110_TrickHouseEnd_OnTransition\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, Route110_TrickHouseEnd_OnFrame\n\tmap_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, Route110_TrickHouseEnd_OnWarp\n\t.byte 0"
+  },
+  "label": "Route110_TrickHouseEnd_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION",
+      "MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE"
+    ]
+  }
+}

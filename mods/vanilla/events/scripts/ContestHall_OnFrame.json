@@ -1,0 +1,23 @@
+{
+  "id": "ContestHall_OnFrame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ContestHall/scripts.inc",
+    "sha1": "1975dda1f6df6ad0ef2b0d81c28afe4508469870"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ContestHall/scripts.inc",
+    "rawScript": "map_script_2 VAR_CONTEST_HALL_STATE, 1, ContestHall_EventScript_Contest\n\t.2byte 0"
+  },
+  "label": "ContestHall_OnFrame",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/ContestHall/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_CONTEST_HALL_STATE"
+    ]
+  }
+}

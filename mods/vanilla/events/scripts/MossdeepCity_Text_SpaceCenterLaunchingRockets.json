@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Text_SpaceCenterLaunchingRockets",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/scripts.inc",
+    "sha1": "33f0f7f83a475484aaca395542c6bd65a6f2dd45"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity/scripts.inc",
+    "rawScript": ".string \"The island's SPACE CENTER has been\\n\"\n\t.string \"launching huge rockets.$\""
+  },
+  "label": "MossdeepCity_Text_SpaceCenterLaunchingRockets",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePyramidTop_Text_BrandonYouveReturned",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "sha1": "6256c29eca306dafcaec0dabbacc64547c474e58"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "rawScript": ".string \"BRANDON: \u2026You've finally returned,\\n\"\n\t.string \"young explorer\u2026\\p\"\n\t.string \"Your love of adventure seems to come\\n\"\n\t.string \"deep from within your heart\u2026\\p\"\n\t.string \"Yes\u2026 You are exactly as I was in\\n\"\n\t.string \"my own youth\u2026\\p\"\n\t.string \"\u2026 \u2026 \u2026Ah\u2026\\p\"\n\t.string \"The passionate!\\p\"\n\t.string \"The dangerous!\\p\"\n\t.string \"The desperate!\\p\"\n\t.string \"Those days of death-defying,\\n\"\n\t.string \"life-affirming adventures are back\u2026$\""
+  },
+  "label": "BattleFrontier_BattlePyramidTop_Text_BrandonYouveReturned",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+  "references": {}
+}

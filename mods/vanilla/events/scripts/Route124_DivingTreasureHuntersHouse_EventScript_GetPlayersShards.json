@@ -1,0 +1,30 @@
+{
+  "id": "Route124_DivingTreasureHuntersHouse_EventScript_GetPlayersShards",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+    "sha1": "e787b98bef4dd91776e97f180a62a1c98c92003e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+    "rawScript": "setvar VAR_TEMP_1, 0\n\tcheckitem ITEM_RED_SHARD\n\tcall_if_eq VAR_RESULT, TRUE, Route124_DivingTreasureHuntersHouse_EventScript_HasRedShard\n\tcheckitem ITEM_YELLOW_SHARD\n\tcall_if_eq VAR_RESULT, TRUE, Route124_DivingTreasureHuntersHouse_EventScript_HasYellowShard\n\tcheckitem ITEM_BLUE_SHARD\n\tcall_if_eq VAR_RESULT, TRUE, Route124_DivingTreasureHuntersHouse_EventScript_HasBlueShard\n\tcheckitem ITEM_GREEN_SHARD\n\tcall_if_eq VAR_RESULT, TRUE, Route124_DivingTreasureHuntersHouse_EventScript_HasGreenShard\n\treturn"
+  },
+  "label": "Route124_DivingTreasureHuntersHouse_EventScript_GetPlayersShards",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_1"
+    ],
+    "items": [
+      "ITEM_BLUE_SHARD",
+      "ITEM_GREEN_SHARD",
+      "ITEM_RED_SHARD",
+      "ITEM_YELLOW_SHARD"
+    ]
+  }
+}

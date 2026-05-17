@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Gym_Text_WinonaIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/scripts.inc",
+    "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Gym/scripts.inc",
+    "rawScript": ".string \"I am WINONA. I am the LEADER of\\n\"\n\t.string \"the FORTREE POK\u00e9MON GYM.\\p\"\n\t.string \"I have become one with BIRD POK\u00e9MON\\n\"\n\t.string \"and have soared the skies\u2026\\p\"\n\t.string \"However grueling the battle, we have\\n\"\n\t.string \"triumphed with grace\u2026\\p\"\n\t.string \"Witness the elegant choreography\\n\"\n\t.string \"of BIRD POK\u00e9MON and I!$\""
+  },
+  "label": "FortreeCity_Gym_Text_WinonaIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_Gym/scripts.inc",
+  "references": {}
+}

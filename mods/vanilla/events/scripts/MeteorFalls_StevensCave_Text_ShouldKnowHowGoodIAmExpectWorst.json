@@ -1,0 +1,19 @@
+{
+  "id": "MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_StevensCave/scripts.inc",
+    "sha1": "1c533dd88d1548eeb3f32082e2ab2c1de6a3a5f5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_StevensCave/scripts.inc",
+    "rawScript": ".string \"STEVEN: Oh, wow, {PLAYER}{KUN}.\\n\"\n\t.string \"I'm amazed you knew where to find me.\\p\"\n\t.string \"Do you, uh\u2026maybe think of me as\\n\"\n\t.string \"just a rock maniac?\\p\"\n\t.string \"No, that can't be right.\\p\"\n\t.string \"We battled alongside each other at\\n\"\n\t.string \"the SOOTOPOLIS SPACE CENTER.\\p\"\n\t.string \"You should have a very good idea\\n\"\n\t.string \"about how good I am.\\p\"\n\t.string \"Okay, {PLAYER}{KUN}, if you're going to mount\\n\"\n\t.string \"a serious challenge, expect the worst!$\""
+  },
+  "label": "MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MeteorFalls_StevensCave/scripts.inc",
+  "references": {}
+}

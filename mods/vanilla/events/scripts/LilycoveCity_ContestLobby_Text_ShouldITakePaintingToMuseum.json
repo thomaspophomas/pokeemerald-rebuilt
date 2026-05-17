@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestLobby_Text_ShouldITakePaintingToMuseum",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": ".string \"What do you think? I'm confident in\\n\"\n\t.string \"what I've done, but do you like it?\\p\"\n\t.string \"A work of this caliber, it wouldn't look\\n\"\n\t.string \"out of place in an art museum.\\p\"\n\t.string \"Huh? An art museum really is looking\\n\"\n\t.string \"for paintings?\\p\"\n\t.string \"Do you think I should take this there?$\""
+  },
+  "label": "LilycoveCity_ContestLobby_Text_ShouldITakePaintingToMuseum",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {}
+}

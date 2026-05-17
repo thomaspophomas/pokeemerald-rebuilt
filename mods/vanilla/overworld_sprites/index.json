@@ -1,1807 +1,1921 @@
 {
   "domain": "overworld_sprites",
   "schemaVersion": 1,
+  "entityKind": "overworld_sprite",
+  "semanticCoverage": "full",
   "entries": [
     {
-      "id": "graphics/object_events/palettes/birth_island_stone.pal",
-      "path": "source_files/graphics_object_events_palettes_birth_island_stone.pal.json",
-      "sourcePath": "graphics/object_events/palettes/birth_island_stone.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/brendan.pal",
-      "path": "source_files/graphics_object_events_palettes_brendan.pal.json",
-      "sourcePath": "graphics/object_events/palettes/brendan.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/brendan_reflection.pal",
-      "path": "source_files/graphics_object_events_palettes_brendan_reflection.pal.json",
-      "sourcePath": "graphics/object_events/palettes/brendan_reflection.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/bridge_reflection.pal",
-      "path": "source_files/graphics_object_events_palettes_bridge_reflection.pal.json",
-      "sourcePath": "graphics/object_events/palettes/bridge_reflection.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/cable_car.pal",
-      "path": "source_files/graphics_object_events_palettes_cable_car.pal.json",
-      "sourcePath": "graphics/object_events/palettes/cable_car.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/deoxys.pal",
-      "path": "source_files/graphics_object_events_palettes_deoxys.pal.json",
-      "sourcePath": "graphics/object_events/palettes/deoxys.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/enemy_zigzagoon.pal",
-      "path": "source_files/graphics_object_events_palettes_enemy_zigzagoon.pal.json",
-      "sourcePath": "graphics/object_events/palettes/enemy_zigzagoon.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/groudon.pal",
-      "path": "source_files/graphics_object_events_palettes_groudon.pal.json",
-      "sourcePath": "graphics/object_events/palettes/groudon.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/groudon_reflection.pal",
-      "path": "source_files/graphics_object_events_palettes_groudon_reflection.pal.json",
-      "sourcePath": "graphics/object_events/palettes/groudon_reflection.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/ho_oh.pal",
-      "path": "source_files/graphics_object_events_palettes_ho_oh.pal.json",
-      "sourcePath": "graphics/object_events/palettes/ho_oh.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/kyogre.pal",
-      "path": "source_files/graphics_object_events_palettes_kyogre.pal.json",
-      "sourcePath": "graphics/object_events/palettes/kyogre.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/kyogre_reflection.pal",
-      "path": "source_files/graphics_object_events_palettes_kyogre_reflection.pal.json",
-      "sourcePath": "graphics/object_events/palettes/kyogre_reflection.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/lugia.pal",
-      "path": "source_files/graphics_object_events_palettes_lugia.pal.json",
-      "sourcePath": "graphics/object_events/palettes/lugia.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/may.pal",
-      "path": "source_files/graphics_object_events_palettes_may.pal.json",
-      "sourcePath": "graphics/object_events/palettes/may.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/may_reflection.pal",
-      "path": "source_files/graphics_object_events_palettes_may_reflection.pal.json",
-      "sourcePath": "graphics/object_events/palettes/may_reflection.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/moving_box.pal",
-      "path": "source_files/graphics_object_events_palettes_moving_box.pal.json",
-      "sourcePath": "graphics/object_events/palettes/moving_box.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/npc_1.pal",
-      "path": "source_files/graphics_object_events_palettes_npc_1.pal.json",
-      "sourcePath": "graphics/object_events/palettes/npc_1.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/npc_1_reflection.pal",
-      "path": "source_files/graphics_object_events_palettes_npc_1_reflection.pal.json",
-      "sourcePath": "graphics/object_events/palettes/npc_1_reflection.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/npc_2.pal",
-      "path": "source_files/graphics_object_events_palettes_npc_2.pal.json",
-      "sourcePath": "graphics/object_events/palettes/npc_2.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/npc_2_reflection.pal",
-      "path": "source_files/graphics_object_events_palettes_npc_2_reflection.pal.json",
-      "sourcePath": "graphics/object_events/palettes/npc_2_reflection.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/npc_3.pal",
-      "path": "source_files/graphics_object_events_palettes_npc_3.pal.json",
-      "sourcePath": "graphics/object_events/palettes/npc_3.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/npc_3_reflection.pal",
-      "path": "source_files/graphics_object_events_palettes_npc_3_reflection.pal.json",
-      "sourcePath": "graphics/object_events/palettes/npc_3_reflection.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/npc_4.pal",
-      "path": "source_files/graphics_object_events_palettes_npc_4.pal.json",
-      "sourcePath": "graphics/object_events/palettes/npc_4.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/npc_4_reflection.pal",
-      "path": "source_files/graphics_object_events_palettes_npc_4_reflection.pal.json",
-      "sourcePath": "graphics/object_events/palettes/npc_4_reflection.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/player_underwater.pal",
-      "path": "source_files/graphics_object_events_palettes_player_underwater.pal.json",
-      "sourcePath": "graphics/object_events/palettes/player_underwater.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/poochyena.pal",
-      "path": "source_files/graphics_object_events_palettes_poochyena.pal.json",
-      "sourcePath": "graphics/object_events/palettes/poochyena.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/quinty_plump.pal",
-      "path": "source_files/graphics_object_events_palettes_quinty_plump.pal.json",
-      "sourcePath": "graphics/object_events/palettes/quinty_plump.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/quinty_plump_reflection.pal",
-      "path": "source_files/graphics_object_events_palettes_quinty_plump_reflection.pal.json",
-      "sourcePath": "graphics/object_events/palettes/quinty_plump_reflection.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/red_leaf.pal",
-      "path": "source_files/graphics_object_events_palettes_red_leaf.pal.json",
-      "sourcePath": "graphics/object_events/palettes/red_leaf.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/ruby_sapphire_brendan.pal",
-      "path": "source_files/graphics_object_events_palettes_ruby_sapphire_brendan.pal.json",
-      "sourcePath": "graphics/object_events/palettes/ruby_sapphire_brendan.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/ruby_sapphire_may.pal",
-      "path": "source_files/graphics_object_events_palettes_ruby_sapphire_may.pal.json",
-      "sourcePath": "graphics/object_events/palettes/ruby_sapphire_may.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/ss_tidal.pal",
-      "path": "source_files/graphics_object_events_palettes_ss_tidal.pal.json",
-      "sourcePath": "graphics/object_events/palettes/ss_tidal.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/submarine_shadow.pal",
-      "path": "source_files/graphics_object_events_palettes_submarine_shadow.pal.json",
-      "sourcePath": "graphics/object_events/palettes/submarine_shadow.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/truck.pal",
-      "path": "source_files/graphics_object_events_palettes_truck.pal.json",
-      "sourcePath": "graphics/object_events/palettes/truck.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/unused_palette.pal",
-      "path": "source_files/graphics_object_events_palettes_unused_palette.pal.json",
-      "sourcePath": "graphics/object_events/palettes/unused_palette.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/palettes/vigoroth.pal",
-      "path": "source_files/graphics_object_events_palettes_vigoroth.pal.json",
-      "sourcePath": "graphics/object_events/palettes/vigoroth.pal",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/aguav.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_aguav.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/aguav.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/aspear.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_aspear.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/aspear.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/cheri.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_cheri.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/cheri.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/chesto.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_chesto.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/chesto.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/cornn.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_cornn.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/cornn.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/dirt_pile.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_dirt_pile.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/dirt_pile.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/durin.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_durin.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/durin.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/figy.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_figy.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/figy.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/grepa.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_grepa.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/grepa.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/hondew.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_hondew.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/hondew.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/iapapa.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_iapapa.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/iapapa.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/kelpsy.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_kelpsy.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/kelpsy.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/lansat.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_lansat.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/lansat.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/leppa.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_leppa.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/leppa.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/liechi.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_liechi.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/liechi.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/lum.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_lum.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/lum.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/mago.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_mago.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/mago.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/nomel.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_nomel.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/nomel.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/oran.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_oran.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/oran.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/pamtre.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_pamtre.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/pamtre.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/pecha.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_pecha.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/pecha.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/persim.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_persim.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/persim.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/pomeg.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_pomeg.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/pomeg.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/rabuta.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_rabuta.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/rabuta.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/rawst.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_rawst.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/rawst.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/razz.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_razz.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/razz.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/sitrus.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_sitrus.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/sitrus.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/spelon.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_spelon.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/spelon.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/sprout.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_sprout.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/sprout.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/tamato.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_tamato.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/tamato.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/wepear.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_wepear.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/wepear.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/berry_trees/wiki.png",
-      "path": "source_files/graphics_object_events_pics_berry_trees_wiki.png.json",
-      "sourcePath": "graphics/object_events/pics/berry_trees/wiki.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/cushions/ball_cushion.png",
-      "path": "source_files/graphics_object_events_pics_cushions_ball_cushion.png.json",
-      "sourcePath": "graphics/object_events/pics/cushions/ball_cushion.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/cushions/diamond_cushion.png",
-      "path": "source_files/graphics_object_events_pics_cushions_diamond_cushion.png.json",
-      "sourcePath": "graphics/object_events/pics/cushions/diamond_cushion.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/cushions/fire_cushion.png",
-      "path": "source_files/graphics_object_events_pics_cushions_fire_cushion.png.json",
-      "sourcePath": "graphics/object_events/pics/cushions/fire_cushion.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/cushions/grass_cushion.png",
-      "path": "source_files/graphics_object_events_pics_cushions_grass_cushion.png.json",
-      "sourcePath": "graphics/object_events/pics/cushions/grass_cushion.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/cushions/kiss_cushion.png",
-      "path": "source_files/graphics_object_events_pics_cushions_kiss_cushion.png.json",
-      "sourcePath": "graphics/object_events/pics/cushions/kiss_cushion.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/cushions/pika_cushion.png",
-      "path": "source_files/graphics_object_events_pics_cushions_pika_cushion.png.json",
-      "sourcePath": "graphics/object_events/pics/cushions/pika_cushion.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/cushions/round_cushion.png",
-      "path": "source_files/graphics_object_events_pics_cushions_round_cushion.png.json",
-      "sourcePath": "graphics/object_events/pics/cushions/round_cushion.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/cushions/spin_cushion.png",
-      "path": "source_files/graphics_object_events_pics_cushions_spin_cushion.png.json",
-      "sourcePath": "graphics/object_events/pics/cushions/spin_cushion.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/cushions/water_cushion.png",
-      "path": "source_files/graphics_object_events_pics_cushions_water_cushion.png.json",
-      "sourcePath": "graphics/object_events/pics/cushions/water_cushion.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/cushions/zigzag_cushion.png",
-      "path": "source_files/graphics_object_events_pics_cushions_zigzag_cushion.png.json",
-      "sourcePath": "graphics/object_events/pics/cushions/zigzag_cushion.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/azurill_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_azurill_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/azurill_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/baltoy_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_baltoy_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/baltoy_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/big_blastoise_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_big_blastoise_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/big_blastoise_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/big_charizard_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_big_charizard_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/big_charizard_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/big_lapras_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_big_lapras_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/big_lapras_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/big_regice_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_big_regice_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/big_regice_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/big_regirock_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_big_regirock_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/big_regirock_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/big_registeel_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_big_registeel_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/big_registeel_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/big_rhydon_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_big_rhydon_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/big_rhydon_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/big_snorlax_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_big_snorlax_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/big_snorlax_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/big_venusaur_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_big_venusaur_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/big_venusaur_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/big_wailmer_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_big_wailmer_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/big_wailmer_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/chikorita_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_chikorita_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/chikorita_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/clefairy_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_clefairy_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/clefairy_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/cyndaquil_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_cyndaquil_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/cyndaquil_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/ditto_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_ditto_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/ditto_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/duskull_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_duskull_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/duskull_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/gulpin_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_gulpin_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/gulpin_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/jigglypuff_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_jigglypuff_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/jigglypuff_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/kecleon_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_kecleon_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/kecleon_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/lotad_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_lotad_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/lotad_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/marill_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_marill_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/marill_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/meowth_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_meowth_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/meowth_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/mudkip_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_mudkip_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/mudkip_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/pichu_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_pichu_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/pichu_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/pikachu_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_pikachu_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/pikachu_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/seedot_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_seedot_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/seedot_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/skitty_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_skitty_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/skitty_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/smoochum_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_smoochum_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/smoochum_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/swablu_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_swablu_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/swablu_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/togepi_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_togepi_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/togepi_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/torchic_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_torchic_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/torchic_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/totodile_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_totodile_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/totodile_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/treecko_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_treecko_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/treecko_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/unused_magnemite_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_unused_magnemite_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/unused_magnemite_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/unused_natu_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_unused_natu_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/unused_natu_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/unused_pikachu_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_unused_pikachu_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/unused_pikachu_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/unused_porygon2_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_unused_porygon2_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/unused_porygon2_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/unused_squirtle_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_unused_squirtle_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/unused_squirtle_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/unused_wooper_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_unused_wooper_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/unused_wooper_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/dolls/wynaut_doll.png",
-      "path": "source_files/graphics_object_events_pics_dolls_wynaut_doll.png.json",
-      "sourcePath": "graphics/object_events/pics/dolls/wynaut_doll.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/misc/birchs_bag.png",
-      "path": "source_files/graphics_object_events_pics_misc_birchs_bag.png.json",
-      "sourcePath": "graphics/object_events/pics/misc/birchs_bag.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/misc/birth_island_stone.png",
-      "path": "source_files/graphics_object_events_pics_misc_birth_island_stone.png.json",
-      "sourcePath": "graphics/object_events/pics/misc/birth_island_stone.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/misc/breakable_rock.png",
-      "path": "source_files/graphics_object_events_pics_misc_breakable_rock.png.json",
-      "sourcePath": "graphics/object_events/pics/misc/breakable_rock.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/misc/cable_car.png",
-      "path": "source_files/graphics_object_events_pics_misc_cable_car.png.json",
-      "sourcePath": "graphics/object_events/pics/misc/cable_car.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/misc/cuttable_tree.png",
-      "path": "source_files/graphics_object_events_pics_misc_cuttable_tree.png.json",
-      "sourcePath": "graphics/object_events/pics/misc/cuttable_tree.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/misc/fossil.png",
-      "path": "source_files/graphics_object_events_pics_misc_fossil.png.json",
-      "sourcePath": "graphics/object_events/pics/misc/fossil.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/misc/item_ball.png",
-      "path": "source_files/graphics_object_events_pics_misc_item_ball.png.json",
-      "sourcePath": "graphics/object_events/pics/misc/item_ball.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/misc/moving_box.png",
-      "path": "source_files/graphics_object_events_pics_misc_moving_box.png.json",
-      "sourcePath": "graphics/object_events/pics/misc/moving_box.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/misc/mr_brineys_boat.png",
-      "path": "source_files/graphics_object_events_pics_misc_mr_brineys_boat.png.json",
-      "sourcePath": "graphics/object_events/pics/misc/mr_brineys_boat.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/misc/pushable_boulder.png",
-      "path": "source_files/graphics_object_events_pics_misc_pushable_boulder.png.json",
-      "sourcePath": "graphics/object_events/pics/misc/pushable_boulder.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/misc/ss_tidal.png",
-      "path": "source_files/graphics_object_events_pics_misc_ss_tidal.png.json",
-      "sourcePath": "graphics/object_events/pics/misc/ss_tidal.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/misc/statue.png",
-      "path": "source_files/graphics_object_events_pics_misc_statue.png.json",
-      "sourcePath": "graphics/object_events/pics/misc/statue.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/misc/submarine_shadow.png",
-      "path": "source_files/graphics_object_events_pics_misc_submarine_shadow.png.json",
-      "sourcePath": "graphics/object_events/pics/misc/submarine_shadow.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/misc/truck.png",
-      "path": "source_files/graphics_object_events_pics_misc_truck.png.json",
-      "sourcePath": "graphics/object_events/pics/misc/truck.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/artist.png",
-      "path": "source_files/graphics_object_events_pics_people_artist.png.json",
-      "sourcePath": "graphics/object_events/pics/people/artist.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/beauty.png",
-      "path": "source_files/graphics_object_events_pics_people_beauty.png.json",
-      "sourcePath": "graphics/object_events/pics/people/beauty.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/black_belt.png",
-      "path": "source_files/graphics_object_events_pics_people_black_belt.png.json",
-      "sourcePath": "graphics/object_events/pics/people/black_belt.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/boy_1.png",
-      "path": "source_files/graphics_object_events_pics_people_boy_1.png.json",
-      "sourcePath": "graphics/object_events/pics/people/boy_1.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/boy_2.png",
-      "path": "source_files/graphics_object_events_pics_people_boy_2.png.json",
-      "sourcePath": "graphics/object_events/pics/people/boy_2.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/boy_3.png",
-      "path": "source_files/graphics_object_events_pics_people_boy_3.png.json",
-      "sourcePath": "graphics/object_events/pics/people/boy_3.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/brendan/acro_bike.png",
-      "path": "source_files/graphics_object_events_pics_people_brendan_acro_bike.png.json",
-      "sourcePath": "graphics/object_events/pics/people/brendan/acro_bike.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/brendan/decorating.png",
-      "path": "source_files/graphics_object_events_pics_people_brendan_decorating.png.json",
-      "sourcePath": "graphics/object_events/pics/people/brendan/decorating.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/brendan/field_move.png",
-      "path": "source_files/graphics_object_events_pics_people_brendan_field_move.png.json",
-      "sourcePath": "graphics/object_events/pics/people/brendan/field_move.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/brendan/fishing.png",
-      "path": "source_files/graphics_object_events_pics_people_brendan_fishing.png.json",
-      "sourcePath": "graphics/object_events/pics/people/brendan/fishing.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/brendan/mach_bike.png",
-      "path": "source_files/graphics_object_events_pics_people_brendan_mach_bike.png.json",
-      "sourcePath": "graphics/object_events/pics/people/brendan/mach_bike.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/brendan/running.png",
-      "path": "source_files/graphics_object_events_pics_people_brendan_running.png.json",
-      "sourcePath": "graphics/object_events/pics/people/brendan/running.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/brendan/surfing.png",
-      "path": "source_files/graphics_object_events_pics_people_brendan_surfing.png.json",
-      "sourcePath": "graphics/object_events/pics/people/brendan/surfing.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/brendan/underwater.png",
-      "path": "source_files/graphics_object_events_pics_people_brendan_underwater.png.json",
-      "sourcePath": "graphics/object_events/pics/people/brendan/underwater.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/brendan/walking.png",
-      "path": "source_files/graphics_object_events_pics_people_brendan_walking.png.json",
-      "sourcePath": "graphics/object_events/pics/people/brendan/walking.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/brendan/watering.png",
-      "path": "source_files/graphics_object_events_pics_people_brendan_watering.png.json",
-      "sourcePath": "graphics/object_events/pics/people/brendan/watering.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/bug_catcher.png",
-      "path": "source_files/graphics_object_events_pics_people_bug_catcher.png.json",
-      "sourcePath": "graphics/object_events/pics/people/bug_catcher.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/cameraman.png",
-      "path": "source_files/graphics_object_events_pics_people_cameraman.png.json",
-      "sourcePath": "graphics/object_events/pics/people/cameraman.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/camper.png",
-      "path": "source_files/graphics_object_events_pics_people_camper.png.json",
-      "sourcePath": "graphics/object_events/pics/people/camper.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/contest_judge.png",
-      "path": "source_files/graphics_object_events_pics_people_contest_judge.png.json",
-      "sourcePath": "graphics/object_events/pics/people/contest_judge.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/cook.png",
-      "path": "source_files/graphics_object_events_pics_people_cook.png.json",
-      "sourcePath": "graphics/object_events/pics/people/cook.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/cycling_triathlete_f.png",
-      "path": "source_files/graphics_object_events_pics_people_cycling_triathlete_f.png.json",
-      "sourcePath": "graphics/object_events/pics/people/cycling_triathlete_f.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/cycling_triathlete_m.png",
-      "path": "source_files/graphics_object_events_pics_people_cycling_triathlete_m.png.json",
-      "sourcePath": "graphics/object_events/pics/people/cycling_triathlete_m.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/devon_employee.png",
-      "path": "source_files/graphics_object_events_pics_people_devon_employee.png.json",
-      "sourcePath": "graphics/object_events/pics/people/devon_employee.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/elite_four/drake.png",
-      "path": "source_files/graphics_object_events_pics_people_elite_four_drake.png.json",
-      "sourcePath": "graphics/object_events/pics/people/elite_four/drake.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/elite_four/glacia.png",
-      "path": "source_files/graphics_object_events_pics_people_elite_four_glacia.png.json",
-      "sourcePath": "graphics/object_events/pics/people/elite_four/glacia.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/elite_four/phoebe.png",
-      "path": "source_files/graphics_object_events_pics_people_elite_four_phoebe.png.json",
-      "sourcePath": "graphics/object_events/pics/people/elite_four/phoebe.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/elite_four/sidney.png",
-      "path": "source_files/graphics_object_events_pics_people_elite_four_sidney.png.json",
-      "sourcePath": "graphics/object_events/pics/people/elite_four/sidney.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/expert_f.png",
-      "path": "source_files/graphics_object_events_pics_people_expert_f.png.json",
-      "sourcePath": "graphics/object_events/pics/people/expert_f.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/expert_m.png",
-      "path": "source_files/graphics_object_events_pics_people_expert_m.png.json",
-      "sourcePath": "graphics/object_events/pics/people/expert_m.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/fat_man.png",
-      "path": "source_files/graphics_object_events_pics_people_fat_man.png.json",
-      "sourcePath": "graphics/object_events/pics/people/fat_man.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/fisherman.png",
-      "path": "source_files/graphics_object_events_pics_people_fisherman.png.json",
-      "sourcePath": "graphics/object_events/pics/people/fisherman.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/frontier_brains/anabel.png",
-      "path": "source_files/graphics_object_events_pics_people_frontier_brains_anabel.png.json",
-      "sourcePath": "graphics/object_events/pics/people/frontier_brains/anabel.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/frontier_brains/brandon.png",
-      "path": "source_files/graphics_object_events_pics_people_frontier_brains_brandon.png.json",
-      "sourcePath": "graphics/object_events/pics/people/frontier_brains/brandon.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/frontier_brains/greta.png",
-      "path": "source_files/graphics_object_events_pics_people_frontier_brains_greta.png.json",
-      "sourcePath": "graphics/object_events/pics/people/frontier_brains/greta.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/frontier_brains/lucy.png",
-      "path": "source_files/graphics_object_events_pics_people_frontier_brains_lucy.png.json",
-      "sourcePath": "graphics/object_events/pics/people/frontier_brains/lucy.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/frontier_brains/noland.png",
-      "path": "source_files/graphics_object_events_pics_people_frontier_brains_noland.png.json",
-      "sourcePath": "graphics/object_events/pics/people/frontier_brains/noland.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/frontier_brains/spenser.png",
-      "path": "source_files/graphics_object_events_pics_people_frontier_brains_spenser.png.json",
-      "sourcePath": "graphics/object_events/pics/people/frontier_brains/spenser.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/frontier_brains/tucker.png",
-      "path": "source_files/graphics_object_events_pics_people_frontier_brains_tucker.png.json",
-      "sourcePath": "graphics/object_events/pics/people/frontier_brains/tucker.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/gameboy_kid.png",
-      "path": "source_files/graphics_object_events_pics_people_gameboy_kid.png.json",
-      "sourcePath": "graphics/object_events/pics/people/gameboy_kid.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/gentleman.png",
-      "path": "source_files/graphics_object_events_pics_people_gentleman.png.json",
-      "sourcePath": "graphics/object_events/pics/people/gentleman.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/girl_1.png",
-      "path": "source_files/graphics_object_events_pics_people_girl_1.png.json",
-      "sourcePath": "graphics/object_events/pics/people/girl_1.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/girl_2.png",
-      "path": "source_files/graphics_object_events_pics_people_girl_2.png.json",
-      "sourcePath": "graphics/object_events/pics/people/girl_2.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/girl_3.png",
-      "path": "source_files/graphics_object_events_pics_people_girl_3.png.json",
-      "sourcePath": "graphics/object_events/pics/people/girl_3.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/gym_leaders/brawly.png",
-      "path": "source_files/graphics_object_events_pics_people_gym_leaders_brawly.png.json",
-      "sourcePath": "graphics/object_events/pics/people/gym_leaders/brawly.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/gym_leaders/flannery.png",
-      "path": "source_files/graphics_object_events_pics_people_gym_leaders_flannery.png.json",
-      "sourcePath": "graphics/object_events/pics/people/gym_leaders/flannery.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/gym_leaders/juan.png",
-      "path": "source_files/graphics_object_events_pics_people_gym_leaders_juan.png.json",
-      "sourcePath": "graphics/object_events/pics/people/gym_leaders/juan.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/gym_leaders/liza.png",
-      "path": "source_files/graphics_object_events_pics_people_gym_leaders_liza.png.json",
-      "sourcePath": "graphics/object_events/pics/people/gym_leaders/liza.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/gym_leaders/norman.png",
-      "path": "source_files/graphics_object_events_pics_people_gym_leaders_norman.png.json",
-      "sourcePath": "graphics/object_events/pics/people/gym_leaders/norman.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/gym_leaders/roxanne.png",
-      "path": "source_files/graphics_object_events_pics_people_gym_leaders_roxanne.png.json",
-      "sourcePath": "graphics/object_events/pics/people/gym_leaders/roxanne.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/gym_leaders/tate.png",
-      "path": "source_files/graphics_object_events_pics_people_gym_leaders_tate.png.json",
-      "sourcePath": "graphics/object_events/pics/people/gym_leaders/tate.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/gym_leaders/wattson.png",
-      "path": "source_files/graphics_object_events_pics_people_gym_leaders_wattson.png.json",
-      "sourcePath": "graphics/object_events/pics/people/gym_leaders/wattson.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/gym_leaders/winona.png",
-      "path": "source_files/graphics_object_events_pics_people_gym_leaders_winona.png.json",
-      "sourcePath": "graphics/object_events/pics/people/gym_leaders/winona.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/hex_maniac.png",
-      "path": "source_files/graphics_object_events_pics_people_hex_maniac.png.json",
-      "sourcePath": "graphics/object_events/pics/people/hex_maniac.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/hiker.png",
-      "path": "source_files/graphics_object_events_pics_people_hiker.png.json",
-      "sourcePath": "graphics/object_events/pics/people/hiker.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/hot_springs_old_woman.png",
-      "path": "source_files/graphics_object_events_pics_people_hot_springs_old_woman.png.json",
-      "sourcePath": "graphics/object_events/pics/people/hot_springs_old_woman.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/lass.png",
-      "path": "source_files/graphics_object_events_pics_people_lass.png.json",
-      "sourcePath": "graphics/object_events/pics/people/lass.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/leaf.png",
-      "path": "source_files/graphics_object_events_pics_people_leaf.png.json",
-      "sourcePath": "graphics/object_events/pics/people/leaf.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/link_receptionist.png",
-      "path": "source_files/graphics_object_events_pics_people_link_receptionist.png.json",
-      "sourcePath": "graphics/object_events/pics/people/link_receptionist.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/little_boy.png",
-      "path": "source_files/graphics_object_events_pics_people_little_boy.png.json",
-      "sourcePath": "graphics/object_events/pics/people/little_boy.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/little_girl.png",
-      "path": "source_files/graphics_object_events_pics_people_little_girl.png.json",
-      "sourcePath": "graphics/object_events/pics/people/little_girl.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/man_1.png",
-      "path": "source_files/graphics_object_events_pics_people_man_1.png.json",
-      "sourcePath": "graphics/object_events/pics/people/man_1.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/man_2.png",
-      "path": "source_files/graphics_object_events_pics_people_man_2.png.json",
-      "sourcePath": "graphics/object_events/pics/people/man_2.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/man_3.png",
-      "path": "source_files/graphics_object_events_pics_people_man_3.png.json",
-      "sourcePath": "graphics/object_events/pics/people/man_3.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/man_4.png",
-      "path": "source_files/graphics_object_events_pics_people_man_4.png.json",
-      "sourcePath": "graphics/object_events/pics/people/man_4.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/man_5.png",
-      "path": "source_files/graphics_object_events_pics_people_man_5.png.json",
-      "sourcePath": "graphics/object_events/pics/people/man_5.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/maniac.png",
-      "path": "source_files/graphics_object_events_pics_people_maniac.png.json",
-      "sourcePath": "graphics/object_events/pics/people/maniac.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/mart_employee.png",
-      "path": "source_files/graphics_object_events_pics_people_mart_employee.png.json",
-      "sourcePath": "graphics/object_events/pics/people/mart_employee.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/mauville_old_man_1.png",
-      "path": "source_files/graphics_object_events_pics_people_mauville_old_man_1.png.json",
-      "sourcePath": "graphics/object_events/pics/people/mauville_old_man_1.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/mauville_old_man_2.png",
-      "path": "source_files/graphics_object_events_pics_people_mauville_old_man_2.png.json",
-      "sourcePath": "graphics/object_events/pics/people/mauville_old_man_2.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/may/acro_bike.png",
-      "path": "source_files/graphics_object_events_pics_people_may_acro_bike.png.json",
-      "sourcePath": "graphics/object_events/pics/people/may/acro_bike.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/may/decorating.png",
-      "path": "source_files/graphics_object_events_pics_people_may_decorating.png.json",
-      "sourcePath": "graphics/object_events/pics/people/may/decorating.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/may/field_move.png",
-      "path": "source_files/graphics_object_events_pics_people_may_field_move.png.json",
-      "sourcePath": "graphics/object_events/pics/people/may/field_move.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/may/fishing.png",
-      "path": "source_files/graphics_object_events_pics_people_may_fishing.png.json",
-      "sourcePath": "graphics/object_events/pics/people/may/fishing.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/may/mach_bike.png",
-      "path": "source_files/graphics_object_events_pics_people_may_mach_bike.png.json",
-      "sourcePath": "graphics/object_events/pics/people/may/mach_bike.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/may/running.png",
-      "path": "source_files/graphics_object_events_pics_people_may_running.png.json",
-      "sourcePath": "graphics/object_events/pics/people/may/running.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/may/surfing.png",
-      "path": "source_files/graphics_object_events_pics_people_may_surfing.png.json",
-      "sourcePath": "graphics/object_events/pics/people/may/surfing.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/may/underwater.png",
-      "path": "source_files/graphics_object_events_pics_people_may_underwater.png.json",
-      "sourcePath": "graphics/object_events/pics/people/may/underwater.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/may/walking.png",
-      "path": "source_files/graphics_object_events_pics_people_may_walking.png.json",
-      "sourcePath": "graphics/object_events/pics/people/may/walking.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/may/watering.png",
-      "path": "source_files/graphics_object_events_pics_people_may_watering.png.json",
-      "sourcePath": "graphics/object_events/pics/people/may/watering.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/mom.png",
-      "path": "source_files/graphics_object_events_pics_people_mom.png.json",
-      "sourcePath": "graphics/object_events/pics/people/mom.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/mystery_event_deliveryman.png",
-      "path": "source_files/graphics_object_events_pics_people_mystery_event_deliveryman.png.json",
-      "sourcePath": "graphics/object_events/pics/people/mystery_event_deliveryman.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/ninja_boy.png",
-      "path": "source_files/graphics_object_events_pics_people_ninja_boy.png.json",
-      "sourcePath": "graphics/object_events/pics/people/ninja_boy.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/nurse.png",
-      "path": "source_files/graphics_object_events_pics_people_nurse.png.json",
-      "sourcePath": "graphics/object_events/pics/people/nurse.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/old_man.png",
-      "path": "source_files/graphics_object_events_pics_people_old_man.png.json",
-      "sourcePath": "graphics/object_events/pics/people/old_man.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/old_woman.png",
-      "path": "source_files/graphics_object_events_pics_people_old_woman.png.json",
-      "sourcePath": "graphics/object_events/pics/people/old_woman.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/picnicker.png",
-      "path": "source_files/graphics_object_events_pics_people_picnicker.png.json",
-      "sourcePath": "graphics/object_events/pics/people/picnicker.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/pokefan_f.png",
-      "path": "source_files/graphics_object_events_pics_people_pokefan_f.png.json",
-      "sourcePath": "graphics/object_events/pics/people/pokefan_f.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/pokefan_m.png",
-      "path": "source_files/graphics_object_events_pics_people_pokefan_m.png.json",
-      "sourcePath": "graphics/object_events/pics/people/pokefan_m.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/prof_birch.png",
-      "path": "source_files/graphics_object_events_pics_people_prof_birch.png.json",
-      "sourcePath": "graphics/object_events/pics/people/prof_birch.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/psychic_m.png",
-      "path": "source_files/graphics_object_events_pics_people_psychic_m.png.json",
-      "sourcePath": "graphics/object_events/pics/people/psychic_m.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/quinty_plump.png",
-      "path": "source_files/graphics_object_events_pics_people_quinty_plump.png.json",
-      "sourcePath": "graphics/object_events/pics/people/quinty_plump.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/red.png",
-      "path": "source_files/graphics_object_events_pics_people_red.png.json",
-      "sourcePath": "graphics/object_events/pics/people/red.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/reporter_f.png",
-      "path": "source_files/graphics_object_events_pics_people_reporter_f.png.json",
-      "sourcePath": "graphics/object_events/pics/people/reporter_f.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/reporter_m.png",
-      "path": "source_files/graphics_object_events_pics_people_reporter_m.png.json",
-      "sourcePath": "graphics/object_events/pics/people/reporter_m.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/rich_boy.png",
-      "path": "source_files/graphics_object_events_pics_people_rich_boy.png.json",
-      "sourcePath": "graphics/object_events/pics/people/rich_boy.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/rooftop_sale_woman.png",
-      "path": "source_files/graphics_object_events_pics_people_rooftop_sale_woman.png.json",
-      "sourcePath": "graphics/object_events/pics/people/rooftop_sale_woman.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/rs_little_boy.png",
-      "path": "source_files/graphics_object_events_pics_people_rs_little_boy.png.json",
-      "sourcePath": "graphics/object_events/pics/people/rs_little_boy.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/ruby_sapphire_brendan/running.png",
-      "path": "source_files/graphics_object_events_pics_people_ruby_sapphire_brendan_running.png.json",
-      "sourcePath": "graphics/object_events/pics/people/ruby_sapphire_brendan/running.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/ruby_sapphire_brendan/walking.png",
-      "path": "source_files/graphics_object_events_pics_people_ruby_sapphire_brendan_walking.png.json",
-      "sourcePath": "graphics/object_events/pics/people/ruby_sapphire_brendan/walking.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/ruby_sapphire_may/running.png",
-      "path": "source_files/graphics_object_events_pics_people_ruby_sapphire_may_running.png.json",
-      "sourcePath": "graphics/object_events/pics/people/ruby_sapphire_may/running.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/ruby_sapphire_may/walking.png",
-      "path": "source_files/graphics_object_events_pics_people_ruby_sapphire_may_walking.png.json",
-      "sourcePath": "graphics/object_events/pics/people/ruby_sapphire_may/walking.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/running_triathlete_f.png",
-      "path": "source_files/graphics_object_events_pics_people_running_triathlete_f.png.json",
-      "sourcePath": "graphics/object_events/pics/people/running_triathlete_f.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/running_triathlete_m.png",
-      "path": "source_files/graphics_object_events_pics_people_running_triathlete_m.png.json",
-      "sourcePath": "graphics/object_events/pics/people/running_triathlete_m.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/sailor.png",
-      "path": "source_files/graphics_object_events_pics_people_sailor.png.json",
-      "sourcePath": "graphics/object_events/pics/people/sailor.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/school_kid_m.png",
-      "path": "source_files/graphics_object_events_pics_people_school_kid_m.png.json",
-      "sourcePath": "graphics/object_events/pics/people/school_kid_m.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/scientist_1.png",
-      "path": "source_files/graphics_object_events_pics_people_scientist_1.png.json",
-      "sourcePath": "graphics/object_events/pics/people/scientist_1.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/scientist_2.png",
-      "path": "source_files/graphics_object_events_pics_people_scientist_2.png.json",
-      "sourcePath": "graphics/object_events/pics/people/scientist_2.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/scott.png",
-      "path": "source_files/graphics_object_events_pics_people_scott.png.json",
-      "sourcePath": "graphics/object_events/pics/people/scott.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/steven.png",
-      "path": "source_files/graphics_object_events_pics_people_steven.png.json",
-      "sourcePath": "graphics/object_events/pics/people/steven.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/swimmer_f.png",
-      "path": "source_files/graphics_object_events_pics_people_swimmer_f.png.json",
-      "sourcePath": "graphics/object_events/pics/people/swimmer_f.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/swimmer_m.png",
-      "path": "source_files/graphics_object_events_pics_people_swimmer_m.png.json",
-      "sourcePath": "graphics/object_events/pics/people/swimmer_m.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/teala.png",
-      "path": "source_files/graphics_object_events_pics_people_teala.png.json",
-      "sourcePath": "graphics/object_events/pics/people/teala.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/team_aqua/aqua_member_f.png",
-      "path": "source_files/graphics_object_events_pics_people_team_aqua_aqua_member_f.png.json",
-      "sourcePath": "graphics/object_events/pics/people/team_aqua/aqua_member_f.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/team_aqua/aqua_member_m.png",
-      "path": "source_files/graphics_object_events_pics_people_team_aqua_aqua_member_m.png.json",
-      "sourcePath": "graphics/object_events/pics/people/team_aqua/aqua_member_m.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/team_aqua/archie.png",
-      "path": "source_files/graphics_object_events_pics_people_team_aqua_archie.png.json",
-      "sourcePath": "graphics/object_events/pics/people/team_aqua/archie.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/team_magma/magma_member_f.png",
-      "path": "source_files/graphics_object_events_pics_people_team_magma_magma_member_f.png.json",
-      "sourcePath": "graphics/object_events/pics/people/team_magma/magma_member_f.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/team_magma/magma_member_m.png",
-      "path": "source_files/graphics_object_events_pics_people_team_magma_magma_member_m.png.json",
-      "sourcePath": "graphics/object_events/pics/people/team_magma/magma_member_m.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/team_magma/maxie.png",
-      "path": "source_files/graphics_object_events_pics_people_team_magma_maxie.png.json",
-      "sourcePath": "graphics/object_events/pics/people/team_magma/maxie.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/tuber_f.png",
-      "path": "source_files/graphics_object_events_pics_people_tuber_f.png.json",
-      "sourcePath": "graphics/object_events/pics/people/tuber_f.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/tuber_m.png",
-      "path": "source_files/graphics_object_events_pics_people_tuber_m.png.json",
-      "sourcePath": "graphics/object_events/pics/people/tuber_m.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/tuber_m_swimming.png",
-      "path": "source_files/graphics_object_events_pics_people_tuber_m_swimming.png.json",
-      "sourcePath": "graphics/object_events/pics/people/tuber_m_swimming.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/twin.png",
-      "path": "source_files/graphics_object_events_pics_people_twin.png.json",
-      "sourcePath": "graphics/object_events/pics/people/twin.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/union_room_attendant.png",
-      "path": "source_files/graphics_object_events_pics_people_union_room_attendant.png.json",
-      "sourcePath": "graphics/object_events/pics/people/union_room_attendant.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/unused_woman.png",
-      "path": "source_files/graphics_object_events_pics_people_unused_woman.png.json",
-      "sourcePath": "graphics/object_events/pics/people/unused_woman.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/wallace.png",
-      "path": "source_files/graphics_object_events_pics_people_wallace.png.json",
-      "sourcePath": "graphics/object_events/pics/people/wallace.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/wally.png",
-      "path": "source_files/graphics_object_events_pics_people_wally.png.json",
-      "sourcePath": "graphics/object_events/pics/people/wally.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/woman_1.png",
-      "path": "source_files/graphics_object_events_pics_people_woman_1.png.json",
-      "sourcePath": "graphics/object_events/pics/people/woman_1.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/woman_2.png",
-      "path": "source_files/graphics_object_events_pics_people_woman_2.png.json",
-      "sourcePath": "graphics/object_events/pics/people/woman_2.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/woman_3.png",
-      "path": "source_files/graphics_object_events_pics_people_woman_3.png.json",
-      "sourcePath": "graphics/object_events/pics/people/woman_3.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/woman_4.png",
-      "path": "source_files/graphics_object_events_pics_people_woman_4.png.json",
-      "sourcePath": "graphics/object_events/pics/people/woman_4.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/woman_5.png",
-      "path": "source_files/graphics_object_events_pics_people_woman_5.png.json",
-      "sourcePath": "graphics/object_events/pics/people/woman_5.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/people/youngster.png",
-      "path": "source_files/graphics_object_events_pics_people_youngster.png.json",
-      "sourcePath": "graphics/object_events/pics/people/youngster.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/azumarill.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_azumarill.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/azumarill.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/azurill.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_azurill.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/azurill.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/deoxys.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_deoxys.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/deoxys.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/dusclops.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_dusclops.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/dusclops.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/enemy_zigzagoon.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_enemy_zigzagoon.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/enemy_zigzagoon.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/groudon.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_groudon.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/groudon.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/ho_oh.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_ho_oh.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/ho_oh.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/kecleon.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_kecleon.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/kecleon.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/kirlia.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_kirlia.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/kirlia.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/kyogre.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_kyogre.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/kyogre.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/latias_latios.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_latias_latios.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/latias_latios.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/lugia.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_lugia.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/lugia.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/mew.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_mew.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/mew.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/pikachu.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_pikachu.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/pikachu.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/poochyena.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_poochyena.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/poochyena.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/rayquaza.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_rayquaza.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/rayquaza.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/rayquaza_still.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_rayquaza_still.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/rayquaza_still.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/regi.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_regi.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/regi.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/skitty.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_skitty.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/skitty.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/sudowoodo.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_sudowoodo.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/sudowoodo.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/vigoroth.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_vigoroth.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/vigoroth.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/wingull.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_wingull.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/wingull.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "graphics/object_events/pics/pokemon/zigzagoon.png",
-      "path": "source_files/graphics_object_events_pics_pokemon_zigzagoon.png.json",
-      "sourcePath": "graphics/object_events/pics/pokemon/zigzagoon.png",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "include/constants/event_objects.h",
-      "path": "source_files/include_constants_event_objects.h.json",
-      "sourcePath": "include/constants/event_objects.h",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "src/data/object_events/base_oam.h",
-      "path": "source_files/src_data_object_events_base_oam.h.json",
-      "sourcePath": "src/data/object_events/base_oam.h",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "src/data/object_events/berry_tree_graphics_tables.h",
-      "path": "source_files/src_data_object_events_berry_tree_graphics_tables.h.json",
-      "sourcePath": "src/data/object_events/berry_tree_graphics_tables.h",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "src/data/object_events/movement_action_func_tables.h",
-      "path": "source_files/src_data_object_events_movement_action_func_tables.h.json",
-      "sourcePath": "src/data/object_events/movement_action_func_tables.h",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "src/data/object_events/movement_type_func_tables.h",
-      "path": "source_files/src_data_object_events_movement_type_func_tables.h.json",
-      "sourcePath": "src/data/object_events/movement_type_func_tables.h",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "src/data/object_events/object_event_anims.h",
-      "path": "source_files/src_data_object_events_object_event_anims.h.json",
-      "sourcePath": "src/data/object_events/object_event_anims.h",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "src/data/object_events/object_event_graphics.h",
-      "path": "source_files/src_data_object_events_object_event_graphics.h.json",
-      "sourcePath": "src/data/object_events/object_event_graphics.h",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "src/data/object_events/object_event_graphics_info.h",
-      "path": "source_files/src_data_object_events_object_event_graphics_info.h.json",
-      "sourcePath": "src/data/object_events/object_event_graphics_info.h",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "src/data/object_events/object_event_graphics_info_pointers.h",
-      "path": "source_files/src_data_object_events_object_event_graphics_info_pointers.h.json",
+      "id": "OBJ_EVENT_GFX_ANABEL",
+      "path": "sprites/OBJ_EVENT_GFX_ANABEL.json",
       "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
-      "legacyKind": "source_file"
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_ANABEL",
+      "numericId": 70
     },
     {
-      "id": "src/data/object_events/object_event_pic_tables.h",
-      "path": "source_files/src_data_object_events_object_event_pic_tables.h.json",
-      "sourcePath": "src/data/object_events/object_event_pic_tables.h",
-      "legacyKind": "source_file"
+      "id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "path": "sprites/OBJ_EVENT_GFX_AQUA_MEMBER_F.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "numericId": 118
     },
     {
-      "id": "src/data/object_events/object_event_subsprites.h",
-      "path": "source_files/src_data_object_events_object_event_subsprites.h.json",
-      "sourcePath": "src/data/object_events/object_event_subsprites.h",
-      "legacyKind": "source_file"
+      "id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "path": "sprites/OBJ_EVENT_GFX_AQUA_MEMBER_M.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "numericId": 117
+    },
+    {
+      "id": "OBJ_EVENT_GFX_ARCHIE",
+      "path": "sprites/OBJ_EVENT_GFX_ARCHIE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_ARCHIE",
+      "numericId": 195
+    },
+    {
+      "id": "OBJ_EVENT_GFX_ARTIST",
+      "path": "sprites/OBJ_EVENT_GFX_ARTIST.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_ARTIST",
+      "numericId": 99
+    },
+    {
+      "id": "OBJ_EVENT_GFX_AZUMARILL",
+      "path": "sprites/OBJ_EVENT_GFX_AZUMARILL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_AZUMARILL",
+      "numericId": 210
+    },
+    {
+      "id": "OBJ_EVENT_GFX_AZURILL",
+      "path": "sprites/OBJ_EVENT_GFX_AZURILL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_AZURILL",
+      "numericId": 214
+    },
+    {
+      "id": "OBJ_EVENT_GFX_AZURILL_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_AZURILL_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_AZURILL_DOLL",
+      "numericId": 161
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BALL_CUSHION",
+      "path": "sprites/OBJ_EVENT_GFX_BALL_CUSHION.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BALL_CUSHION",
+      "numericId": 173
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BALTOY_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_BALTOY_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BALTOY_DOLL",
+      "numericId": 159
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BARD",
+      "path": "sprites/OBJ_EVENT_GFX_BARD.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BARD",
+      "numericId": 69
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BEAUTY",
+      "path": "sprites/OBJ_EVENT_GFX_BEAUTY.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BEAUTY",
+      "numericId": 45
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BERRY_TREE",
+      "path": "sprites/OBJ_EVENT_GFX_BERRY_TREE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BERRY_TREE",
+      "numericId": 60
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BERRY_TREE_EARLY_STAGES",
+      "path": "sprites/OBJ_EVENT_GFX_BERRY_TREE_EARLY_STAGES.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BERRY_TREE_EARLY_STAGES",
+      "numericId": 61
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BERRY_TREE_LATE_STAGES",
+      "path": "sprites/OBJ_EVENT_GFX_BERRY_TREE_LATE_STAGES.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BERRY_TREE_LATE_STAGES",
+      "numericId": 62
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BIG_BLASTOISE_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_BIG_BLASTOISE_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BIG_BLASTOISE_DOLL",
+      "numericId": 182
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BIG_CHARIZARD_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_BIG_CHARIZARD_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BIG_CHARIZARD_DOLL",
+      "numericId": 181
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BIG_LAPRAS_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_BIG_LAPRAS_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BIG_LAPRAS_DOLL",
+      "numericId": 179
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BIG_REGICE_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_BIG_REGICE_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BIG_REGICE_DOLL",
+      "numericId": 185
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BIG_REGIROCK_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_BIG_REGIROCK_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BIG_REGIROCK_DOLL",
+      "numericId": 184
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BIG_REGISTEEL_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_BIG_REGISTEEL_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BIG_REGISTEEL_DOLL",
+      "numericId": 186
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BIG_RHYDON_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_BIG_RHYDON_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BIG_RHYDON_DOLL",
+      "numericId": 178
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BIG_SNORLAX_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_BIG_SNORLAX_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BIG_SNORLAX_DOLL",
+      "numericId": 177
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BIG_VENUSAUR_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_BIG_VENUSAUR_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BIG_VENUSAUR_DOLL",
+      "numericId": 180
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BIG_WAILMER_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_BIG_WAILMER_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BIG_WAILMER_DOLL",
+      "numericId": 183
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BIRCHS_BAG",
+      "path": "sprites/OBJ_EVENT_GFX_BIRCHS_BAG.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BIRCHS_BAG",
+      "numericId": 97
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "path": "sprites/OBJ_EVENT_GFX_BLACK_BELT.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BLACK_BELT",
+      "numericId": 44
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BOY_1",
+      "path": "sprites/OBJ_EVENT_GFX_BOY_1.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BOY_1",
+      "numericId": 7
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BOY_2",
+      "path": "sprites/OBJ_EVENT_GFX_BOY_2.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BOY_2",
+      "numericId": 9
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BOY_3",
+      "path": "sprites/OBJ_EVENT_GFX_BOY_3.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BOY_3",
+      "numericId": 13
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BRANDON",
+      "path": "sprites/OBJ_EVENT_GFX_BRANDON.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BRANDON",
+      "numericId": 234
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BRAWLY",
+      "path": "sprites/OBJ_EVENT_GFX_BRAWLY.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BRAWLY",
+      "numericId": 126
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "path": "sprites/OBJ_EVENT_GFX_BREAKABLE_ROCK.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "numericId": 86
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BRENDAN_ACRO_BIKE",
+      "path": "sprites/OBJ_EVENT_GFX_BRENDAN_ACRO_BIKE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BRENDAN_ACRO_BIKE",
+      "numericId": 63
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BRENDAN_DECORATING",
+      "path": "sprites/OBJ_EVENT_GFX_BRENDAN_DECORATING.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BRENDAN_DECORATING",
+      "numericId": 193
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BRENDAN_FIELD_MOVE",
+      "path": "sprites/OBJ_EVENT_GFX_BRENDAN_FIELD_MOVE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BRENDAN_FIELD_MOVE",
+      "numericId": 3
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BRENDAN_FISHING",
+      "path": "sprites/OBJ_EVENT_GFX_BRENDAN_FISHING.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BRENDAN_FISHING",
+      "numericId": 137
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BRENDAN_MACH_BIKE",
+      "path": "sprites/OBJ_EVENT_GFX_BRENDAN_MACH_BIKE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BRENDAN_MACH_BIKE",
+      "numericId": 1
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "path": "sprites/OBJ_EVENT_GFX_BRENDAN_NORMAL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "numericId": 0
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BRENDAN_SURFING",
+      "path": "sprites/OBJ_EVENT_GFX_BRENDAN_SURFING.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BRENDAN_SURFING",
+      "numericId": 2
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BRENDAN_UNDERWATER",
+      "path": "sprites/OBJ_EVENT_GFX_BRENDAN_UNDERWATER.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BRENDAN_UNDERWATER",
+      "numericId": 111
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BRENDAN_WATERING",
+      "path": "sprites/OBJ_EVENT_GFX_BRENDAN_WATERING.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BRENDAN_WATERING",
+      "numericId": 191
+    },
+    {
+      "id": "OBJ_EVENT_GFX_BUG_CATCHER",
+      "path": "sprites/OBJ_EVENT_GFX_BUG_CATCHER.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_BUG_CATCHER",
+      "numericId": 36
+    },
+    {
+      "id": "OBJ_EVENT_GFX_CABLE_CAR",
+      "path": "sprites/OBJ_EVENT_GFX_CABLE_CAR.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_CABLE_CAR",
+      "numericId": 114
+    },
+    {
+      "id": "OBJ_EVENT_GFX_CAMERAMAN",
+      "path": "sprites/OBJ_EVENT_GFX_CAMERAMAN.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_CAMERAMAN",
+      "numericId": 110
+    },
+    {
+      "id": "OBJ_EVENT_GFX_CAMPER",
+      "path": "sprites/OBJ_EVENT_GFX_CAMPER.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_CAMPER",
+      "numericId": 31
+    },
+    {
+      "id": "OBJ_EVENT_GFX_CHIKORITA_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_CHIKORITA_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_CHIKORITA_DOLL",
+      "numericId": 147
+    },
+    {
+      "id": "OBJ_EVENT_GFX_CLEFAIRY_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_CLEFAIRY_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_CLEFAIRY_DOLL",
+      "numericId": 151
+    },
+    {
+      "id": "OBJ_EVENT_GFX_CONTEST_JUDGE",
+      "path": "sprites/OBJ_EVENT_GFX_CONTEST_JUDGE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_CONTEST_JUDGE",
+      "numericId": 190
+    },
+    {
+      "id": "OBJ_EVENT_GFX_COOK",
+      "path": "sprites/OBJ_EVENT_GFX_COOK.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_COOK",
+      "numericId": 27
+    },
+    {
+      "id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "path": "sprites/OBJ_EVENT_GFX_CUTTABLE_TREE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "numericId": 82
+    },
+    {
+      "id": "OBJ_EVENT_GFX_CYCLING_TRIATHLETE_F",
+      "path": "sprites/OBJ_EVENT_GFX_CYCLING_TRIATHLETE_F.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_CYCLING_TRIATHLETE_F",
+      "numericId": 57
+    },
+    {
+      "id": "OBJ_EVENT_GFX_CYCLING_TRIATHLETE_M",
+      "path": "sprites/OBJ_EVENT_GFX_CYCLING_TRIATHLETE_M.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_CYCLING_TRIATHLETE_M",
+      "numericId": 56
+    },
+    {
+      "id": "OBJ_EVENT_GFX_CYNDAQUIL_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_CYNDAQUIL_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_CYNDAQUIL_DOLL",
+      "numericId": 146
+    },
+    {
+      "id": "OBJ_EVENT_GFX_DEOXYS",
+      "path": "sprites/OBJ_EVENT_GFX_DEOXYS.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_DEOXYS",
+      "numericId": 232
+    },
+    {
+      "id": "OBJ_EVENT_GFX_DEOXYS_TRIANGLE",
+      "path": "sprites/OBJ_EVENT_GFX_DEOXYS_TRIANGLE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_DEOXYS_TRIANGLE",
+      "numericId": 233
+    },
+    {
+      "id": "OBJ_EVENT_GFX_DEVON_EMPLOYEE",
+      "path": "sprites/OBJ_EVENT_GFX_DEVON_EMPLOYEE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_DEVON_EMPLOYEE",
+      "numericId": 116
+    },
+    {
+      "id": "OBJ_EVENT_GFX_DIAMOND_CUSHION",
+      "path": "sprites/OBJ_EVENT_GFX_DIAMOND_CUSHION.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_DIAMOND_CUSHION",
+      "numericId": 172
+    },
+    {
+      "id": "OBJ_EVENT_GFX_DITTO_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_DITTO_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_DITTO_DOLL",
+      "numericId": 152
+    },
+    {
+      "id": "OBJ_EVENT_GFX_DRAKE",
+      "path": "sprites/OBJ_EVENT_GFX_DRAKE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_DRAKE",
+      "numericId": 124
+    },
+    {
+      "id": "OBJ_EVENT_GFX_DUSCLOPS",
+      "path": "sprites/OBJ_EVENT_GFX_DUSCLOPS.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_DUSCLOPS",
+      "numericId": 226
+    },
+    {
+      "id": "OBJ_EVENT_GFX_DUSKULL_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_DUSKULL_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_DUSKULL_DOLL",
+      "numericId": 157
+    },
+    {
+      "id": "OBJ_EVENT_GFX_EXPERT_F",
+      "path": "sprites/OBJ_EVENT_GFX_EXPERT_F.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_EXPERT_F",
+      "numericId": 22
+    },
+    {
+      "id": "OBJ_EVENT_GFX_EXPERT_M",
+      "path": "sprites/OBJ_EVENT_GFX_EXPERT_M.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_EXPERT_M",
+      "numericId": 21
+    },
+    {
+      "id": "OBJ_EVENT_GFX_FAT_MAN",
+      "path": "sprites/OBJ_EVENT_GFX_FAT_MAN.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_FAT_MAN",
+      "numericId": 17
+    },
+    {
+      "id": "OBJ_EVENT_GFX_FIRE_CUSHION",
+      "path": "sprites/OBJ_EVENT_GFX_FIRE_CUSHION.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_FIRE_CUSHION",
+      "numericId": 175
+    },
+    {
+      "id": "OBJ_EVENT_GFX_FISHERMAN",
+      "path": "sprites/OBJ_EVENT_GFX_FISHERMAN.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_FISHERMAN",
+      "numericId": 50
+    },
+    {
+      "id": "OBJ_EVENT_GFX_FLANNERY",
+      "path": "sprites/OBJ_EVENT_GFX_FLANNERY.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_FLANNERY",
+      "numericId": 128
+    },
+    {
+      "id": "OBJ_EVENT_GFX_FOSSIL",
+      "path": "sprites/OBJ_EVENT_GFX_FOSSIL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_FOSSIL",
+      "numericId": 199
+    },
+    {
+      "id": "OBJ_EVENT_GFX_GAMEBOY_KID",
+      "path": "sprites/OBJ_EVENT_GFX_GAMEBOY_KID.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_GAMEBOY_KID",
+      "numericId": 189
+    },
+    {
+      "id": "OBJ_EVENT_GFX_GENTLEMAN",
+      "path": "sprites/OBJ_EVENT_GFX_GENTLEMAN.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_GENTLEMAN",
+      "numericId": 48
+    },
+    {
+      "id": "OBJ_EVENT_GFX_GIRL_1",
+      "path": "sprites/OBJ_EVENT_GFX_GIRL_1.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_GIRL_1",
+      "numericId": 8
+    },
+    {
+      "id": "OBJ_EVENT_GFX_GIRL_2",
+      "path": "sprites/OBJ_EVENT_GFX_GIRL_2.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_GIRL_2",
+      "numericId": 10
+    },
+    {
+      "id": "OBJ_EVENT_GFX_GIRL_3",
+      "path": "sprites/OBJ_EVENT_GFX_GIRL_3.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_GIRL_3",
+      "numericId": 14
+    },
+    {
+      "id": "OBJ_EVENT_GFX_GLACIA",
+      "path": "sprites/OBJ_EVENT_GFX_GLACIA.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_GLACIA",
+      "numericId": 123
+    },
+    {
+      "id": "OBJ_EVENT_GFX_GRASS_CUSHION",
+      "path": "sprites/OBJ_EVENT_GFX_GRASS_CUSHION.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_GRASS_CUSHION",
+      "numericId": 174
+    },
+    {
+      "id": "OBJ_EVENT_GFX_GRETA",
+      "path": "sprites/OBJ_EVENT_GFX_GRETA.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_GRETA",
+      "numericId": 72
+    },
+    {
+      "id": "OBJ_EVENT_GFX_GROUDON_ASLEEP",
+      "path": "sprites/OBJ_EVENT_GFX_GROUDON_ASLEEP.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_GROUDON_ASLEEP",
+      "numericId": 206
+    },
+    {
+      "id": "OBJ_EVENT_GFX_GROUDON_FRONT",
+      "path": "sprites/OBJ_EVENT_GFX_GROUDON_FRONT.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_GROUDON_FRONT",
+      "numericId": 198
+    },
+    {
+      "id": "OBJ_EVENT_GFX_GROUDON_SIDE",
+      "path": "sprites/OBJ_EVENT_GFX_GROUDON_SIDE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_GROUDON_SIDE",
+      "numericId": 222
+    },
+    {
+      "id": "OBJ_EVENT_GFX_GULPIN_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_GULPIN_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_GULPIN_DOLL",
+      "numericId": 164
+    },
+    {
+      "id": "OBJ_EVENT_GFX_HEX_MANIAC",
+      "path": "sprites/OBJ_EVENT_GFX_HEX_MANIAC.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_HEX_MANIAC",
+      "numericId": 40
+    },
+    {
+      "id": "OBJ_EVENT_GFX_HIKER",
+      "path": "sprites/OBJ_EVENT_GFX_HIKER.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_HIKER",
+      "numericId": 55
+    },
+    {
+      "id": "OBJ_EVENT_GFX_HOOH",
+      "path": "sprites/OBJ_EVENT_GFX_HOOH.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_HOOH",
+      "numericId": 238
+    },
+    {
+      "id": "OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN",
+      "path": "sprites/OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN",
+      "numericId": 139
+    },
+    {
+      "id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "path": "sprites/OBJ_EVENT_GFX_ITEM_BALL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_ITEM_BALL",
+      "numericId": 59
+    },
+    {
+      "id": "OBJ_EVENT_GFX_JIGGLYPUFF_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_JIGGLYPUFF_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_JIGGLYPUFF_DOLL",
+      "numericId": 149
+    },
+    {
+      "id": "OBJ_EVENT_GFX_JUAN",
+      "path": "sprites/OBJ_EVENT_GFX_JUAN.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_JUAN",
+      "numericId": 218
+    },
+    {
+      "id": "OBJ_EVENT_GFX_KECLEON",
+      "path": "sprites/OBJ_EVENT_GFX_KECLEON.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_KECLEON",
+      "numericId": 204
+    },
+    {
+      "id": "OBJ_EVENT_GFX_KECLEON_BRIDGE_SHADOW",
+      "path": "sprites/OBJ_EVENT_GFX_KECLEON_BRIDGE_SHADOW.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_KECLEON_BRIDGE_SHADOW",
+      "numericId": 212
+    },
+    {
+      "id": "OBJ_EVENT_GFX_KECLEON_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_KECLEON_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_KECLEON_DOLL",
+      "numericId": 160
+    },
+    {
+      "id": "OBJ_EVENT_GFX_KIRLIA",
+      "path": "sprites/OBJ_EVENT_GFX_KIRLIA.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_KIRLIA",
+      "numericId": 225
+    },
+    {
+      "id": "OBJ_EVENT_GFX_KISS_CUSHION",
+      "path": "sprites/OBJ_EVENT_GFX_KISS_CUSHION.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_KISS_CUSHION",
+      "numericId": 169
+    },
+    {
+      "id": "OBJ_EVENT_GFX_KYOGRE_ASLEEP",
+      "path": "sprites/OBJ_EVENT_GFX_KYOGRE_ASLEEP.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_KYOGRE_ASLEEP",
+      "numericId": 205
+    },
+    {
+      "id": "OBJ_EVENT_GFX_KYOGRE_FRONT",
+      "path": "sprites/OBJ_EVENT_GFX_KYOGRE_FRONT.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_KYOGRE_FRONT",
+      "numericId": 197
+    },
+    {
+      "id": "OBJ_EVENT_GFX_KYOGRE_SIDE",
+      "path": "sprites/OBJ_EVENT_GFX_KYOGRE_SIDE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_KYOGRE_SIDE",
+      "numericId": 221
+    },
+    {
+      "id": "OBJ_EVENT_GFX_LASS",
+      "path": "sprites/OBJ_EVENT_GFX_LASS.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_LASS",
+      "numericId": 47
+    },
+    {
+      "id": "OBJ_EVENT_GFX_LATIAS",
+      "path": "sprites/OBJ_EVENT_GFX_LATIAS.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_LATIAS",
+      "numericId": 187
+    },
+    {
+      "id": "OBJ_EVENT_GFX_LATIOS",
+      "path": "sprites/OBJ_EVENT_GFX_LATIOS.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_LATIOS",
+      "numericId": 188
+    },
+    {
+      "id": "OBJ_EVENT_GFX_LEAF",
+      "path": "sprites/OBJ_EVENT_GFX_LEAF.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_LEAF",
+      "numericId": 231
+    },
+    {
+      "id": "OBJ_EVENT_GFX_LINK_BRENDAN",
+      "path": "sprites/OBJ_EVENT_GFX_LINK_BRENDAN.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_LINK_BRENDAN",
+      "numericId": 216
+    },
+    {
+      "id": "OBJ_EVENT_GFX_LINK_MAY",
+      "path": "sprites/OBJ_EVENT_GFX_LINK_MAY.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_LINK_MAY",
+      "numericId": 217
+    },
+    {
+      "id": "OBJ_EVENT_GFX_LINK_RECEPTIONIST",
+      "path": "sprites/OBJ_EVENT_GFX_LINK_RECEPTIONIST.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_LINK_RECEPTIONIST",
+      "numericId": 28
+    },
+    {
+      "id": "OBJ_EVENT_GFX_LINK_RS_BRENDAN",
+      "path": "sprites/OBJ_EVENT_GFX_LINK_RS_BRENDAN.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_LINK_RS_BRENDAN",
+      "numericId": 235
+    },
+    {
+      "id": "OBJ_EVENT_GFX_LINK_RS_MAY",
+      "path": "sprites/OBJ_EVENT_GFX_LINK_RS_MAY.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_LINK_RS_MAY",
+      "numericId": 236
+    },
+    {
+      "id": "OBJ_EVENT_GFX_LITTLE_BOY",
+      "path": "sprites/OBJ_EVENT_GFX_LITTLE_BOY.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_LITTLE_BOY",
+      "numericId": 11
+    },
+    {
+      "id": "OBJ_EVENT_GFX_LITTLE_BOY_3",
+      "path": "sprites/OBJ_EVENT_GFX_LITTLE_BOY_3.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_LITTLE_BOY_3",
+      "numericId": 136
+    },
+    {
+      "id": "OBJ_EVENT_GFX_LITTLE_GIRL",
+      "path": "sprites/OBJ_EVENT_GFX_LITTLE_GIRL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_LITTLE_GIRL",
+      "numericId": 12
+    },
+    {
+      "id": "OBJ_EVENT_GFX_LIZA",
+      "path": "sprites/OBJ_EVENT_GFX_LIZA.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_LIZA",
+      "numericId": 131
+    },
+    {
+      "id": "OBJ_EVENT_GFX_LOTAD_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_LOTAD_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_LOTAD_DOLL",
+      "numericId": 165
+    },
+    {
+      "id": "OBJ_EVENT_GFX_LUCY",
+      "path": "sprites/OBJ_EVENT_GFX_LUCY.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_LUCY",
+      "numericId": 75
+    },
+    {
+      "id": "OBJ_EVENT_GFX_LUGIA",
+      "path": "sprites/OBJ_EVENT_GFX_LUGIA.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_LUGIA",
+      "numericId": 237
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
+      "path": "sprites/OBJ_EVENT_GFX_MAGMA_MEMBER_F.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
+      "numericId": 120
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "path": "sprites/OBJ_EVENT_GFX_MAGMA_MEMBER_M.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "numericId": 119
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MANIAC",
+      "path": "sprites/OBJ_EVENT_GFX_MANIAC.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MANIAC",
+      "numericId": 39
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MAN_1",
+      "path": "sprites/OBJ_EVENT_GFX_MAN_1.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MAN_1",
+      "numericId": 19
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MAN_2",
+      "path": "sprites/OBJ_EVENT_GFX_MAN_2.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MAN_2",
+      "numericId": 23
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MAN_3",
+      "path": "sprites/OBJ_EVENT_GFX_MAN_3.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MAN_3",
+      "numericId": 33
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MAN_4",
+      "path": "sprites/OBJ_EVENT_GFX_MAN_4.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MAN_4",
+      "numericId": 65
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MAN_5",
+      "path": "sprites/OBJ_EVENT_GFX_MAN_5.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MAN_5",
+      "numericId": 66
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MARILL_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_MARILL_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MARILL_DOLL",
+      "numericId": 144
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
+      "path": "sprites/OBJ_EVENT_GFX_MART_EMPLOYEE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MART_EMPLOYEE",
+      "numericId": 83
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MAXIE",
+      "path": "sprites/OBJ_EVENT_GFX_MAXIE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MAXIE",
+      "numericId": 196
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MAY_ACRO_BIKE",
+      "path": "sprites/OBJ_EVENT_GFX_MAY_ACRO_BIKE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MAY_ACRO_BIKE",
+      "numericId": 91
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MAY_DECORATING",
+      "path": "sprites/OBJ_EVENT_GFX_MAY_DECORATING.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MAY_DECORATING",
+      "numericId": 194
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MAY_FIELD_MOVE",
+      "path": "sprites/OBJ_EVENT_GFX_MAY_FIELD_MOVE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MAY_FIELD_MOVE",
+      "numericId": 93
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MAY_FISHING",
+      "path": "sprites/OBJ_EVENT_GFX_MAY_FISHING.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MAY_FISHING",
+      "numericId": 138
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MAY_MACH_BIKE",
+      "path": "sprites/OBJ_EVENT_GFX_MAY_MACH_BIKE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MAY_MACH_BIKE",
+      "numericId": 90
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MAY_NORMAL",
+      "path": "sprites/OBJ_EVENT_GFX_MAY_NORMAL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MAY_NORMAL",
+      "numericId": 89
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MAY_SURFING",
+      "path": "sprites/OBJ_EVENT_GFX_MAY_SURFING.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MAY_SURFING",
+      "numericId": 92
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MAY_UNDERWATER",
+      "path": "sprites/OBJ_EVENT_GFX_MAY_UNDERWATER.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MAY_UNDERWATER",
+      "numericId": 112
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MAY_WATERING",
+      "path": "sprites/OBJ_EVENT_GFX_MAY_WATERING.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MAY_WATERING",
+      "numericId": 192
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MEOWTH_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_MEOWTH_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MEOWTH_DOLL",
+      "numericId": 150
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MEW",
+      "path": "sprites/OBJ_EVENT_GFX_MEW.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MEW",
+      "numericId": 229
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MOM",
+      "path": "sprites/OBJ_EVENT_GFX_MOM.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MOM",
+      "numericId": 215
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MOVING_BOX",
+      "path": "sprites/OBJ_EVENT_GFX_MOVING_BOX.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MOVING_BOX",
+      "numericId": 113
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MR_BRINEYS_BOAT",
+      "path": "sprites/OBJ_EVENT_GFX_MR_BRINEYS_BOAT.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MR_BRINEYS_BOAT",
+      "numericId": 88
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MUDKIP_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_MUDKIP_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MUDKIP_DOLL",
+      "numericId": 156
+    },
+    {
+      "id": "OBJ_EVENT_GFX_MYSTERY_GIFT_MAN",
+      "path": "sprites/OBJ_EVENT_GFX_MYSTERY_GIFT_MAN.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_MYSTERY_GIFT_MAN",
+      "numericId": 223
+    },
+    {
+      "id": "OBJ_EVENT_GFX_NINJA_BOY",
+      "path": "sprites/OBJ_EVENT_GFX_NINJA_BOY.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_NINJA_BOY",
+      "numericId": 5
+    },
+    {
+      "id": "OBJ_EVENT_GFX_NOLAND",
+      "path": "sprites/OBJ_EVENT_GFX_NOLAND.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_NOLAND",
+      "numericId": 74
+    },
+    {
+      "id": "OBJ_EVENT_GFX_NORMAN",
+      "path": "sprites/OBJ_EVENT_GFX_NORMAN.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_NORMAN",
+      "numericId": 129
+    },
+    {
+      "id": "OBJ_EVENT_GFX_NURSE",
+      "path": "sprites/OBJ_EVENT_GFX_NURSE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_NURSE",
+      "numericId": 58
+    },
+    {
+      "id": "OBJ_EVENT_GFX_OLD_MAN",
+      "path": "sprites/OBJ_EVENT_GFX_OLD_MAN.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_OLD_MAN",
+      "numericId": 29
+    },
+    {
+      "id": "OBJ_EVENT_GFX_OLD_WOMAN",
+      "path": "sprites/OBJ_EVENT_GFX_OLD_WOMAN.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_OLD_WOMAN",
+      "numericId": 30
+    },
+    {
+      "id": "OBJ_EVENT_GFX_PHOEBE",
+      "path": "sprites/OBJ_EVENT_GFX_PHOEBE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_PHOEBE",
+      "numericId": 122
+    },
+    {
+      "id": "OBJ_EVENT_GFX_PICHU_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_PICHU_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_PICHU_DOLL",
+      "numericId": 142
+    },
+    {
+      "id": "OBJ_EVENT_GFX_PICNICKER",
+      "path": "sprites/OBJ_EVENT_GFX_PICNICKER.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_PICNICKER",
+      "numericId": 32
+    },
+    {
+      "id": "OBJ_EVENT_GFX_PIKACHU",
+      "path": "sprites/OBJ_EVENT_GFX_PIKACHU.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_PIKACHU",
+      "numericId": 209
+    },
+    {
+      "id": "OBJ_EVENT_GFX_PIKACHU_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_PIKACHU_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_PIKACHU_DOLL",
+      "numericId": 143
+    },
+    {
+      "id": "OBJ_EVENT_GFX_PIKA_CUSHION",
+      "path": "sprites/OBJ_EVENT_GFX_PIKA_CUSHION.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_PIKA_CUSHION",
+      "numericId": 167
+    },
+    {
+      "id": "OBJ_EVENT_GFX_POKEFAN_F",
+      "path": "sprites/OBJ_EVENT_GFX_POKEFAN_F.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_POKEFAN_F",
+      "numericId": 18
+    },
+    {
+      "id": "OBJ_EVENT_GFX_POKEFAN_M",
+      "path": "sprites/OBJ_EVENT_GFX_POKEFAN_M.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_POKEFAN_M",
+      "numericId": 25
+    },
+    {
+      "id": "OBJ_EVENT_GFX_POOCHYENA",
+      "path": "sprites/OBJ_EVENT_GFX_POOCHYENA.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_POOCHYENA",
+      "numericId": 220
+    },
+    {
+      "id": "OBJ_EVENT_GFX_PROF_BIRCH",
+      "path": "sprites/OBJ_EVENT_GFX_PROF_BIRCH.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_PROF_BIRCH",
+      "numericId": 64
+    },
+    {
+      "id": "OBJ_EVENT_GFX_PSYCHIC_M",
+      "path": "sprites/OBJ_EVENT_GFX_PSYCHIC_M.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_PSYCHIC_M",
+      "numericId": 37
+    },
+    {
+      "id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+      "path": "sprites/OBJ_EVENT_GFX_PUSHABLE_BOULDER.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+      "numericId": 87
+    },
+    {
+      "id": "OBJ_EVENT_GFX_QUINTY_PLUMP",
+      "path": "sprites/OBJ_EVENT_GFX_QUINTY_PLUMP.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_QUINTY_PLUMP",
+      "numericId": 4
+    },
+    {
+      "id": "OBJ_EVENT_GFX_RAYQUAZA",
+      "path": "sprites/OBJ_EVENT_GFX_RAYQUAZA.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_RAYQUAZA",
+      "numericId": 207
+    },
+    {
+      "id": "OBJ_EVENT_GFX_RAYQUAZA_STILL",
+      "path": "sprites/OBJ_EVENT_GFX_RAYQUAZA_STILL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_RAYQUAZA_STILL",
+      "numericId": 41
+    },
+    {
+      "id": "OBJ_EVENT_GFX_RED",
+      "path": "sprites/OBJ_EVENT_GFX_RED.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_RED",
+      "numericId": 230
+    },
+    {
+      "id": "OBJ_EVENT_GFX_REGICE",
+      "path": "sprites/OBJ_EVENT_GFX_REGICE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_REGICE",
+      "numericId": 201
+    },
+    {
+      "id": "OBJ_EVENT_GFX_REGIROCK",
+      "path": "sprites/OBJ_EVENT_GFX_REGIROCK.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_REGIROCK",
+      "numericId": 200
+    },
+    {
+      "id": "OBJ_EVENT_GFX_REGISTEEL",
+      "path": "sprites/OBJ_EVENT_GFX_REGISTEEL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_REGISTEEL",
+      "numericId": 202
+    },
+    {
+      "id": "OBJ_EVENT_GFX_REPORTER_F",
+      "path": "sprites/OBJ_EVENT_GFX_REPORTER_F.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_REPORTER_F",
+      "numericId": 68
+    },
+    {
+      "id": "OBJ_EVENT_GFX_REPORTER_M",
+      "path": "sprites/OBJ_EVENT_GFX_REPORTER_M.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_REPORTER_M",
+      "numericId": 67
+    },
+    {
+      "id": "OBJ_EVENT_GFX_RICH_BOY",
+      "path": "sprites/OBJ_EVENT_GFX_RICH_BOY.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_RICH_BOY",
+      "numericId": 15
+    },
+    {
+      "id": "OBJ_EVENT_GFX_RIVAL_BRENDAN_ACRO_BIKE",
+      "path": "sprites/OBJ_EVENT_GFX_RIVAL_BRENDAN_ACRO_BIKE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_RIVAL_BRENDAN_ACRO_BIKE",
+      "numericId": 102
+    },
+    {
+      "id": "OBJ_EVENT_GFX_RIVAL_BRENDAN_FIELD_MOVE",
+      "path": "sprites/OBJ_EVENT_GFX_RIVAL_BRENDAN_FIELD_MOVE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_RIVAL_BRENDAN_FIELD_MOVE",
+      "numericId": 104
+    },
+    {
+      "id": "OBJ_EVENT_GFX_RIVAL_BRENDAN_MACH_BIKE",
+      "path": "sprites/OBJ_EVENT_GFX_RIVAL_BRENDAN_MACH_BIKE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_RIVAL_BRENDAN_MACH_BIKE",
+      "numericId": 101
+    },
+    {
+      "id": "OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL",
+      "path": "sprites/OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL",
+      "numericId": 100
+    },
+    {
+      "id": "OBJ_EVENT_GFX_RIVAL_BRENDAN_SURFING",
+      "path": "sprites/OBJ_EVENT_GFX_RIVAL_BRENDAN_SURFING.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_RIVAL_BRENDAN_SURFING",
+      "numericId": 103
+    },
+    {
+      "id": "OBJ_EVENT_GFX_RIVAL_MAY_ACRO_BIKE",
+      "path": "sprites/OBJ_EVENT_GFX_RIVAL_MAY_ACRO_BIKE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_RIVAL_MAY_ACRO_BIKE",
+      "numericId": 107
+    },
+    {
+      "id": "OBJ_EVENT_GFX_RIVAL_MAY_FIELD_MOVE",
+      "path": "sprites/OBJ_EVENT_GFX_RIVAL_MAY_FIELD_MOVE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_RIVAL_MAY_FIELD_MOVE",
+      "numericId": 109
+    },
+    {
+      "id": "OBJ_EVENT_GFX_RIVAL_MAY_MACH_BIKE",
+      "path": "sprites/OBJ_EVENT_GFX_RIVAL_MAY_MACH_BIKE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_RIVAL_MAY_MACH_BIKE",
+      "numericId": 106
+    },
+    {
+      "id": "OBJ_EVENT_GFX_RIVAL_MAY_NORMAL",
+      "path": "sprites/OBJ_EVENT_GFX_RIVAL_MAY_NORMAL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_RIVAL_MAY_NORMAL",
+      "numericId": 105
+    },
+    {
+      "id": "OBJ_EVENT_GFX_RIVAL_MAY_SURFING",
+      "path": "sprites/OBJ_EVENT_GFX_RIVAL_MAY_SURFING.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_RIVAL_MAY_SURFING",
+      "numericId": 108
+    },
+    {
+      "id": "OBJ_EVENT_GFX_ROOFTOP_SALE_WOMAN",
+      "path": "sprites/OBJ_EVENT_GFX_ROOFTOP_SALE_WOMAN.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_ROOFTOP_SALE_WOMAN",
+      "numericId": 84
+    },
+    {
+      "id": "OBJ_EVENT_GFX_ROUND_CUSHION",
+      "path": "sprites/OBJ_EVENT_GFX_ROUND_CUSHION.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_ROUND_CUSHION",
+      "numericId": 168
+    },
+    {
+      "id": "OBJ_EVENT_GFX_ROXANNE",
+      "path": "sprites/OBJ_EVENT_GFX_ROXANNE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_ROXANNE",
+      "numericId": 125
+    },
+    {
+      "id": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F",
+      "path": "sprites/OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F",
+      "numericId": 52
+    },
+    {
+      "id": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M",
+      "path": "sprites/OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M",
+      "numericId": 51
+    },
+    {
+      "id": "OBJ_EVENT_GFX_SAILOR",
+      "path": "sprites/OBJ_EVENT_GFX_SAILOR.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_SAILOR",
+      "numericId": 49
+    },
+    {
+      "id": "OBJ_EVENT_GFX_SCHOOL_KID_M",
+      "path": "sprites/OBJ_EVENT_GFX_SCHOOL_KID_M.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_SCHOOL_KID_M",
+      "numericId": 38
+    },
+    {
+      "id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "path": "sprites/OBJ_EVENT_GFX_SCIENTIST_1.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "numericId": 46
+    },
+    {
+      "id": "OBJ_EVENT_GFX_SCIENTIST_2",
+      "path": "sprites/OBJ_EVENT_GFX_SCIENTIST_2.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_SCIENTIST_2",
+      "numericId": 115
+    },
+    {
+      "id": "OBJ_EVENT_GFX_SCOTT",
+      "path": "sprites/OBJ_EVENT_GFX_SCOTT.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_SCOTT",
+      "numericId": 219
+    },
+    {
+      "id": "OBJ_EVENT_GFX_SEEDOT_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_SEEDOT_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_SEEDOT_DOLL",
+      "numericId": 166
+    },
+    {
+      "id": "OBJ_EVENT_GFX_SIDNEY",
+      "path": "sprites/OBJ_EVENT_GFX_SIDNEY.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_SIDNEY",
+      "numericId": 121
+    },
+    {
+      "id": "OBJ_EVENT_GFX_SKITTY",
+      "path": "sprites/OBJ_EVENT_GFX_SKITTY.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_SKITTY",
+      "numericId": 203
+    },
+    {
+      "id": "OBJ_EVENT_GFX_SKITTY_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_SKITTY_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_SKITTY_DOLL",
+      "numericId": 162
+    },
+    {
+      "id": "OBJ_EVENT_GFX_SMOOCHUM_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_SMOOCHUM_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_SMOOCHUM_DOLL",
+      "numericId": 153
+    },
+    {
+      "id": "OBJ_EVENT_GFX_SPENSER",
+      "path": "sprites/OBJ_EVENT_GFX_SPENSER.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_SPENSER",
+      "numericId": 73
+    },
+    {
+      "id": "OBJ_EVENT_GFX_SPIN_CUSHION",
+      "path": "sprites/OBJ_EVENT_GFX_SPIN_CUSHION.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_SPIN_CUSHION",
+      "numericId": 171
+    },
+    {
+      "id": "OBJ_EVENT_GFX_SS_TIDAL",
+      "path": "sprites/OBJ_EVENT_GFX_SS_TIDAL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_SS_TIDAL",
+      "numericId": 140
+    },
+    {
+      "id": "OBJ_EVENT_GFX_STEVEN",
+      "path": "sprites/OBJ_EVENT_GFX_STEVEN.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_STEVEN",
+      "numericId": 134
+    },
+    {
+      "id": "OBJ_EVENT_GFX_SUBMARINE_SHADOW",
+      "path": "sprites/OBJ_EVENT_GFX_SUBMARINE_SHADOW.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_SUBMARINE_SHADOW",
+      "numericId": 141
+    },
+    {
+      "id": "OBJ_EVENT_GFX_SUDOWOODO",
+      "path": "sprites/OBJ_EVENT_GFX_SUDOWOODO.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_SUDOWOODO",
+      "numericId": 228
+    },
+    {
+      "id": "OBJ_EVENT_GFX_SWABLU_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_SWABLU_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_SWABLU_DOLL",
+      "numericId": 163
+    },
+    {
+      "id": "OBJ_EVENT_GFX_SWIMMER_F",
+      "path": "sprites/OBJ_EVENT_GFX_SWIMMER_F.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_SWIMMER_F",
+      "numericId": 43
+    },
+    {
+      "id": "OBJ_EVENT_GFX_SWIMMER_M",
+      "path": "sprites/OBJ_EVENT_GFX_SWIMMER_M.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_SWIMMER_M",
+      "numericId": 42
+    },
+    {
+      "id": "OBJ_EVENT_GFX_TATE",
+      "path": "sprites/OBJ_EVENT_GFX_TATE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_TATE",
+      "numericId": 132
+    },
+    {
+      "id": "OBJ_EVENT_GFX_TEALA",
+      "path": "sprites/OBJ_EVENT_GFX_TEALA.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_TEALA",
+      "numericId": 85
+    },
+    {
+      "id": "OBJ_EVENT_GFX_TOGEPI_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_TOGEPI_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_TOGEPI_DOLL",
+      "numericId": 145
+    },
+    {
+      "id": "OBJ_EVENT_GFX_TORCHIC_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_TORCHIC_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_TORCHIC_DOLL",
+      "numericId": 155
+    },
+    {
+      "id": "OBJ_EVENT_GFX_TOTODILE_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_TOTODILE_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_TOTODILE_DOLL",
+      "numericId": 148
+    },
+    {
+      "id": "OBJ_EVENT_GFX_TREECKO_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_TREECKO_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_TREECKO_DOLL",
+      "numericId": 154
+    },
+    {
+      "id": "OBJ_EVENT_GFX_TRICK_HOUSE_STATUE",
+      "path": "sprites/OBJ_EVENT_GFX_TRICK_HOUSE_STATUE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_TRICK_HOUSE_STATUE",
+      "numericId": 224
+    },
+    {
+      "id": "OBJ_EVENT_GFX_TRUCK",
+      "path": "sprites/OBJ_EVENT_GFX_TRUCK.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_TRUCK",
+      "numericId": 94
+    },
+    {
+      "id": "OBJ_EVENT_GFX_TUBER_F",
+      "path": "sprites/OBJ_EVENT_GFX_TUBER_F.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_TUBER_F",
+      "numericId": 53
+    },
+    {
+      "id": "OBJ_EVENT_GFX_TUBER_M",
+      "path": "sprites/OBJ_EVENT_GFX_TUBER_M.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_TUBER_M",
+      "numericId": 54
+    },
+    {
+      "id": "OBJ_EVENT_GFX_TUBER_M_SWIMMING",
+      "path": "sprites/OBJ_EVENT_GFX_TUBER_M_SWIMMING.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_TUBER_M_SWIMMING",
+      "numericId": 213
+    },
+    {
+      "id": "OBJ_EVENT_GFX_TUCKER",
+      "path": "sprites/OBJ_EVENT_GFX_TUCKER.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_TUCKER",
+      "numericId": 71
+    },
+    {
+      "id": "OBJ_EVENT_GFX_TWIN",
+      "path": "sprites/OBJ_EVENT_GFX_TWIN.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_TWIN",
+      "numericId": 6
+    },
+    {
+      "id": "OBJ_EVENT_GFX_UNION_ROOM_NURSE",
+      "path": "sprites/OBJ_EVENT_GFX_UNION_ROOM_NURSE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_UNION_ROOM_NURSE",
+      "numericId": 227
+    },
+    {
+      "id": "OBJ_EVENT_GFX_UNUSED_MAGNEMITE_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_UNUSED_MAGNEMITE_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_UNUSED_MAGNEMITE_DOLL",
+      "numericId": 77
+    },
+    {
+      "id": "OBJ_EVENT_GFX_UNUSED_NATU_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_UNUSED_NATU_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_UNUSED_NATU_DOLL",
+      "numericId": 76
+    },
+    {
+      "id": "OBJ_EVENT_GFX_UNUSED_PIKACHU_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_UNUSED_PIKACHU_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_UNUSED_PIKACHU_DOLL",
+      "numericId": 80
+    },
+    {
+      "id": "OBJ_EVENT_GFX_UNUSED_PORYGON2_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_UNUSED_PORYGON2_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_UNUSED_PORYGON2_DOLL",
+      "numericId": 81
+    },
+    {
+      "id": "OBJ_EVENT_GFX_UNUSED_SQUIRTLE_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_UNUSED_SQUIRTLE_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_UNUSED_SQUIRTLE_DOLL",
+      "numericId": 78
+    },
+    {
+      "id": "OBJ_EVENT_GFX_UNUSED_WOOPER_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_UNUSED_WOOPER_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_UNUSED_WOOPER_DOLL",
+      "numericId": 79
+    },
+    {
+      "id": "OBJ_EVENT_GFX_VIGOROTH_CARRYING_BOX",
+      "path": "sprites/OBJ_EVENT_GFX_VIGOROTH_CARRYING_BOX.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_VIGOROTH_CARRYING_BOX",
+      "numericId": 95
+    },
+    {
+      "id": "OBJ_EVENT_GFX_VIGOROTH_FACING_AWAY",
+      "path": "sprites/OBJ_EVENT_GFX_VIGOROTH_FACING_AWAY.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_VIGOROTH_FACING_AWAY",
+      "numericId": 96
+    },
+    {
+      "id": "OBJ_EVENT_GFX_WALLACE",
+      "path": "sprites/OBJ_EVENT_GFX_WALLACE.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_WALLACE",
+      "numericId": 133
+    },
+    {
+      "id": "OBJ_EVENT_GFX_WALLY",
+      "path": "sprites/OBJ_EVENT_GFX_WALLY.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_WALLY",
+      "numericId": 135
+    },
+    {
+      "id": "OBJ_EVENT_GFX_WATER_CUSHION",
+      "path": "sprites/OBJ_EVENT_GFX_WATER_CUSHION.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_WATER_CUSHION",
+      "numericId": 176
+    },
+    {
+      "id": "OBJ_EVENT_GFX_WATTSON",
+      "path": "sprites/OBJ_EVENT_GFX_WATTSON.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_WATTSON",
+      "numericId": 127
+    },
+    {
+      "id": "OBJ_EVENT_GFX_WINGULL",
+      "path": "sprites/OBJ_EVENT_GFX_WINGULL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_WINGULL",
+      "numericId": 211
+    },
+    {
+      "id": "OBJ_EVENT_GFX_WINONA",
+      "path": "sprites/OBJ_EVENT_GFX_WINONA.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_WINONA",
+      "numericId": 130
+    },
+    {
+      "id": "OBJ_EVENT_GFX_WOMAN_1",
+      "path": "sprites/OBJ_EVENT_GFX_WOMAN_1.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_WOMAN_1",
+      "numericId": 16
+    },
+    {
+      "id": "OBJ_EVENT_GFX_WOMAN_2",
+      "path": "sprites/OBJ_EVENT_GFX_WOMAN_2.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_WOMAN_2",
+      "numericId": 20
+    },
+    {
+      "id": "OBJ_EVENT_GFX_WOMAN_3",
+      "path": "sprites/OBJ_EVENT_GFX_WOMAN_3.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_WOMAN_3",
+      "numericId": 24
+    },
+    {
+      "id": "OBJ_EVENT_GFX_WOMAN_4",
+      "path": "sprites/OBJ_EVENT_GFX_WOMAN_4.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_WOMAN_4",
+      "numericId": 26
+    },
+    {
+      "id": "OBJ_EVENT_GFX_WOMAN_5",
+      "path": "sprites/OBJ_EVENT_GFX_WOMAN_5.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_WOMAN_5",
+      "numericId": 34
+    },
+    {
+      "id": "OBJ_EVENT_GFX_WYNAUT_DOLL",
+      "path": "sprites/OBJ_EVENT_GFX_WYNAUT_DOLL.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_WYNAUT_DOLL",
+      "numericId": 158
+    },
+    {
+      "id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "path": "sprites/OBJ_EVENT_GFX_YOUNGSTER.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_YOUNGSTER",
+      "numericId": 35
+    },
+    {
+      "id": "OBJ_EVENT_GFX_ZIGZAGOON_1",
+      "path": "sprites/OBJ_EVENT_GFX_ZIGZAGOON_1.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_ZIGZAGOON_1",
+      "numericId": 98
+    },
+    {
+      "id": "OBJ_EVENT_GFX_ZIGZAGOON_2",
+      "path": "sprites/OBJ_EVENT_GFX_ZIGZAGOON_2.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_ZIGZAGOON_2",
+      "numericId": 208
+    },
+    {
+      "id": "OBJ_EVENT_GFX_ZIGZAG_CUSHION",
+      "path": "sprites/OBJ_EVENT_GFX_ZIGZAG_CUSHION.json",
+      "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+      "legacyKind": "object_event_graphics",
+      "symbol": "OBJ_EVENT_GFX_ZIGZAG_CUSHION",
+      "numericId": 170
     }
   ],
-  "entityCount": 300
+  "entityCount": 239
 }

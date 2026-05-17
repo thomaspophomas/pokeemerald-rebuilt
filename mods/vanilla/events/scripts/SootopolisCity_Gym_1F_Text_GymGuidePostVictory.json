@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Gym_1F_Text_GymGuidePostVictory",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "sha1": "cd5ddf90f8e2b0931828078295732db5c87d2dae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "rawScript": ".string \"Yow! You've beaten even JUAN, who\\n\"\n\t.string \"was supposedly the best in all HOENN!\\p\"\n\t.string \"Okay! Check out your TRAINER CARD.\\p\"\n\t.string \"If you've gotten all the BADGES, you're\\n\"\n\t.string \"set for the POK\u00e9MON LEAGUE challenge!$\""
+  },
+  "label": "SootopolisCity_Gym_1F_Text_GymGuidePostVictory",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "IslandCave_OnLoad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/IslandCave/scripts.inc",
+    "sha1": "36e3ca89a53bdf101cff26d6ef8efcf46552e41d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/IslandCave/scripts.inc",
+    "rawScript": "call_if_unset FLAG_SYS_BRAILLE_REGICE_COMPLETED, IslandCave_EventScript_HideRegiEntrance\n\tend"
+  },
+  "label": "IslandCave_OnLoad",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/IslandCave/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_BRAILLE_REGICE_COMPLETED"
+    ]
+  }
+}

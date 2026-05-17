@@ -1,0 +1,23 @@
+{
+  "id": "LittlerootTown_OnWarp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": "map_script_2 VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_EventScript_SetRivalBirchPosForDexUpgrade\n\t.2byte 0"
+  },
+  "label": "LittlerootTown_OnWarp",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_DEX_UPGRADE_JOHTO_STARTER_STATE"
+    ]
+  }
+}

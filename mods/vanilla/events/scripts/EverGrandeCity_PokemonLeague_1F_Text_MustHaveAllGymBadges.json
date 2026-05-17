@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+    "sha1": "a55305762ef4a1d7b0cbf882528ff161154a969b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+    "rawScript": ".string \"Beyond this point, only those TRAINERS\\n\"\n\t.string \"who have collected all the GYM BADGES\\l\"\n\t.string \"are permitted to enter.\\p\"\n\t.string \"TRAINER, let us confirm that you have\\n\"\n\t.string \"all the GYM BADGES.$\""
+  },
+  "label": "EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+  "references": {}
+}

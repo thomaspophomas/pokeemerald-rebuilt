@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_PokemonCenter_1F_EventScript_SetLilycoveLadyGfx",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "aea25451773a7c111671a0da53f41f92ce337106"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": "special SetLilycoveLadyGfx\n\tgoto_if_eq VAR_RESULT, FALSE, LilycoveCity_PokemonCenter_1F_EventScript_HideContestLadyMon\n\tgoto_if_eq VAR_RESULT, TRUE, LilycoveCity_PokemonCenter_1F_EventScript_ShowContestLadyMon\n\tend"
+  },
+  "label": "LilycoveCity_PokemonCenter_1F_EventScript_SetLilycoveLadyGfx",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

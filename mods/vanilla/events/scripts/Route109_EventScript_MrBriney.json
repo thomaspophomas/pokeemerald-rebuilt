@@ -1,0 +1,23 @@
+{
+  "id": "Route109_EventScript_MrBriney",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route109/scripts.inc",
+    "sha1": "7b7ddbfc58bd8a1cc6ebeaa13e2d754df362f425"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route109/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_unset FLAG_DELIVERED_DEVON_GOODS, Route109_EventScript_HaveNotDeliveredDevonGood\n\tgoto Route109_EventScript_DeliveredDevonGoods\n\tend"
+  },
+  "label": "Route109_EventScript_MrBriney",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route109/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DELIVERED_DEVON_GOODS"
+    ]
+  }
+}

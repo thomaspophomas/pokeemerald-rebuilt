@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_NameRatersHouse_EventScript_PlayerNotMonsOT",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_NameRatersHouse/scripts.inc",
+    "sha1": "ecd2294ed4e3a6a8e122867d365034a6568bcf9c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_NameRatersHouse/scripts.inc",
+    "rawScript": "msgbox SlateportCity_NameRatersHouse_Text_MagnificentName, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "SlateportCity_NameRatersHouse_EventScript_PlayerNotMonsOT",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity_NameRatersHouse/scripts.inc",
+  "references": {}
+}

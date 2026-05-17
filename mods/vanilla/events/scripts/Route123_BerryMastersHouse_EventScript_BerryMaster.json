@@ -1,0 +1,26 @@
+{
+  "id": "Route123_BerryMastersHouse_EventScript_BerryMaster",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route123_BerryMastersHouse/scripts.inc",
+    "sha1": "9a0e063a546e4fa501fad1644e1e6356f5e7917a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route123_BerryMastersHouse/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tdotimebasedevents\n\tgoto_if_set FLAG_DAILY_BERRY_MASTER_RECEIVED_BERRY, Route123_BerryMastersHouse_EventScript_ReceivedBerryToday\n\tmsgbox Route123_BerryMastersHouse_Text_YoureDeservingOfBerry, MSGBOX_DEFAULT\n\trandom NUM_BERRY_MASTER_BERRIES\n\taddvar VAR_RESULT, NUM_BERRY_MASTER_BERRIES_SKIPPED\n\taddvar VAR_RESULT, FIRST_BERRY_INDEX\n\tgiveitem VAR_RESULT\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_DAILY_BERRY_MASTER_RECEIVED_BERRY\n\tmsgbox Route123_BerryMastersHouse_Text_WhyBeStingyTakeAnother, MSGBOX_DEFAULT\n\trandom NUM_BERRY_MASTER_BERRIES\n\taddvar VAR_RESULT, NUM_BERRY_MASTER_BERRIES_SKIPPED\n\taddvar VAR_RESULT, FIRST_BERRY_INDEX\n\tgiveitem VAR_RESULT\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tmsgbox Route123_BerryMastersHouse_Text_VisitPrettyPetalFlowerShop, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route123_BerryMastersHouse_EventScript_BerryMaster",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route123_BerryMastersHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DAILY_BERRY_MASTER_RECEIVED_BERRY"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

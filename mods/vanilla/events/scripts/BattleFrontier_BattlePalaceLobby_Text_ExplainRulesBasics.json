@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_Text_ExplainRulesBasics",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": ".string \"Here, POK\u00e9MON are required to think\\n\"\n\t.string \"and battle by themselves.\\p\"\n\t.string \"Unlike in the wild, POK\u00e9MON that live\\n\"\n\t.string \"with people behave differently\\l\"\n\t.string \"depending on their nature.$\""
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_Text_ExplainRulesBasics",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {}
+}

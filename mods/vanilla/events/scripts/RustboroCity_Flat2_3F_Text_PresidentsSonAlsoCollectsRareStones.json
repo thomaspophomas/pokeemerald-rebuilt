@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Flat2_3F_Text_PresidentsSonAlsoCollectsRareStones",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Flat2_3F/scripts.inc",
+    "sha1": "4cd1a818230ac043cd553d6079be42516e4f1832"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Flat2_3F/scripts.inc",
+    "rawScript": ".string \"I think the PRESIDENT's son also\\n\"\n\t.string \"collects rare stones.$\""
+  },
+  "label": "RustboroCity_Flat2_3F_Text_PresidentsSonAlsoCollectsRareStones",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Flat2_3F/scripts.inc",
+  "references": {}
+}

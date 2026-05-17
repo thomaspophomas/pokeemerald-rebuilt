@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_Text_LikeToRecordMatch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": ".string \"Would you like to record your latest\\n\"\n\t.string \"BATTLE PALACE match on your\\l\"\n\t.string \"FRONTIER PASS?$\""
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_Text_LikeToRecordMatch",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {}
+}

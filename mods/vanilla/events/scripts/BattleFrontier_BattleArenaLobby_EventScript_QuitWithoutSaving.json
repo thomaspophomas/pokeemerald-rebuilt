@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleArenaLobby_EventScript_QuitWithoutSaving",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "sha1": "9504bb75bdf62b80271e2304b4804044c8db502a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "rawScript": "lockall\n\tmsgbox BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown, MSGBOX_DEFAULT\n\tclosemessage\n\tarena_set ARENA_DATA_WIN_STREAK, 0\n\tarena_set ARENA_DATA_WIN_STREAK_ACTIVE, FALSE\n\tfrontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 255\n\treleaseall\n\tend"
+  },
+  "label": "BattleFrontier_BattleArenaLobby_EventScript_QuitWithoutSaving",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ]
+  }
+}

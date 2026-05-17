@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "695df0ed7ad6600850be2816ae2060c7c1c6c535"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"Have you done anything at\\n\"\n\t.string \"the RECORD CORNER?\\p\"\n\t.string \"It's pretty neat. It mixes and matches\\n\"\n\t.string \"the records of TRAINERS.\\p\"\n\t.string \"I don't know quite how it works,\\n\"\n\t.string \"but it's cool. It's exciting, even!$\""
+  },
+  "label": "FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattleArenaLobby_EventScript_SaveBeforeChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "sha1": "9504bb75bdf62b80271e2304b4804044c8db502a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "rawScript": "setvar VAR_TEMP_CHALLENGE_STATUS, 0\n\tfrontier_set FRONTIER_DATA_SELECTED_MON_ORDER\n\tarena_init\n\tarena_set ARENA_DATA_WIN_STREAK_ACTIVE, TRUE\n\tfrontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_SAVING\n\tfrontier_set FRONTIER_DATA_PAUSED, FALSE\n\tspecial LoadPlayerParty\n\tclosemessage\n\tdelay 2\n\tcall Common_EventScript_SaveGame\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 255\n\tgoto_if_eq VAR_RESULT, 0, BattleFrontier_BattleArenaLobby_EventScript_CancelChallengeSaveFailed"
+  },
+  "label": "BattleFrontier_BattleArenaLobby_EventScript_SaveBeforeChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ]
+  }
+}

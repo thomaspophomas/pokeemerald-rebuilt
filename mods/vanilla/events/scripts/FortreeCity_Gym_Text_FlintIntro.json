@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Gym_Text_FlintIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/scripts.inc",
+    "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Gym/scripts.inc",
+    "rawScript": ".string \"There's no need for WINONA, our GYM\\n\"\n\t.string \"LEADER, to deal with you!\\p\"\n\t.string \"I'm plenty good enough for you!$\""
+  },
+  "label": "FortreeCity_Gym_Text_FlintIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_Gym/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_EventScript_MuseumSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": "lockall\n\tspecialvar VAR_0x8004, CountPlayerMuseumPaintings\n\tswitch VAR_0x8004\n\tcase 0, LilycoveCity_EventScript_MuseumSignNoPaintings\n\tmsgbox LilycoveCity_Text_MuseumSignPlayersExhibit, MSGBOX_DEFAULT\n\treleaseall\n\tend"
+  },
+  "label": "LilycoveCity_EventScript_MuseumSign",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Route114_Text_ExplainRoar",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114/scripts.inc",
+    "sha1": "0c57a7112b8feadf446551150c5dcc13761f8eeb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114/scripts.inc",
+    "rawScript": ".string \"TM05 contains ROAR.\\n\"\n\t.string \"A ROAR sends POK\u00e9MON scurrying.$\""
+  },
+  "label": "Route114_Text_ExplainRoar",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route114/scripts.inc",
+  "references": {}
+}

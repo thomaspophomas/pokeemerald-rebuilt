@@ -1,0 +1,19 @@
+{
+  "id": "OldaleTown_Movement_PlayerSouth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown/scripts.inc",
+    "sha1": "b8b6ade6d90e9d5b08d5d2374caa3d404506aa31"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/OldaleTown/scripts.inc",
+    "rawScript": "delay_16\n\tdelay_16\n\tdelay_16\n\tdelay_16\n\twalk_up\n\twalk_up\n\twalk_up\n\twalk_up\n\twalk_up\n\tstep_end"
+  },
+  "label": "OldaleTown_Movement_PlayerSouth",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/OldaleTown/scripts.inc",
+  "references": {}
+}

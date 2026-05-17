@@ -1,0 +1,28 @@
+{
+  "id": "BirthIsland_Harbor_EventScript_Sailor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BirthIsland_Harbor/scripts.inc",
+    "sha1": "b5a2c8d417e1d23a698964760fed411aa00f20e6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BirthIsland_Harbor/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmsgbox BirthIsland_Harbor_Text_SailorReturn, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, BirthIsland_Harbor_EventScript_AsYouLike\n\tmsgbox EventTicket_Text_SailHome, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tdelay 30\n\thideobjectat LOCALID_BIRTH_ISLAND_SAILOR, MAP_BIRTH_ISLAND_HARBOR\n\tsetvar VAR_0x8004, LOCALID_BIRTH_ISLAND_SS_TIDAL\n\tcall Common_EventScript_FerryDepartIsland\n\twarp MAP_LILYCOVE_CITY_HARBOR, 8, 11\n\twaitstate\n\trelease\n\tend"
+  },
+  "label": "BirthIsland_Harbor_EventScript_Sailor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BirthIsland_Harbor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ],
+    "maps": [
+      "MAP_BIRTH_ISLAND_HARBOR",
+      "MAP_LILYCOVE_CITY_HARBOR"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Route125_EventScript_Presley",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route125/scripts.inc",
+    "sha1": "3a3148d4b2c58b8be1e8e54672b7693cb2efc4d1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route125/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_PRESLEY, Route125_Text_PresleyIntro, Route125_Text_PresleyDefeat\n\tmsgbox Route125_Text_PresleyPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route125_EventScript_Presley",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route125/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_PRESLEY"
+    ]
+  }
+}

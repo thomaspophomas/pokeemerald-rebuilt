@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Text_WeatherWentWild",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": ".string \"The weather was clear this morning,\\n\"\n\t.string \"but\u2026\\p\"\n\t.string \"All of a sudden, dark clouds brewed up,\\n\"\n\t.string \"rain started falling in sheets, and\\l\"\n\t.string \"there was thunder and lightning, too.\\p\"\n\t.string \"The weather just went completely\\n\"\n\t.string \"wild!\\p\"\n\t.string \"Is all of this because of those\\n\"\n\t.string \"POK\u00e9MON?$\""
+  },
+  "label": "SootopolisCity_Text_WeatherWentWild",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

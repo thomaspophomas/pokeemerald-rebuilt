@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Flat1_2F_EventScript_CancelGiveFirstPhrase",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+    "sha1": "bce61defe394f3175dd583157b086f1687d0ac6f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+    "rawScript": "msgbox RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase, MSGBOX_DEFAULT\n\tcall RustboroCity_Flat1_2F_EventScript_WaldasDadFaceWalda\n\tmsgbox RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll2, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "RustboroCity_Flat1_2F_EventScript_CancelGiveFirstPhrase",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+  "references": {}
+}

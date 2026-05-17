@@ -1,0 +1,26 @@
+{
+  "id": "SouthernIsland_Interior_EventScript_LatiDefeated",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SouthernIsland_Interior/scripts.inc",
+    "sha1": "6ed339e41064219d030f00f9c7e62ccbfde31212"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SouthernIsland_Interior/scripts.inc",
+    "rawScript": "setflag FLAG_DEFEATED_LATIAS_OR_LATIOS\n\tcopyvar VAR_0x8004, VAR_TEMP_4\n\tgoto Common_EventScript_LegendaryFlewAway\n\tend"
+  },
+  "label": "SouthernIsland_Interior_EventScript_LatiDefeated",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SouthernIsland_Interior/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_LATIAS_OR_LATIOS"
+    ],
+    "vars": [
+      "VAR_TEMP_4"
+    ]
+  }
+}

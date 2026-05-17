@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
+    "sha1": "3bee0ca682f7b98f6a5f16085e830466d47ef6e9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
+    "rawScript": ".string \"Did you know?\\p\"\n\t.string \"If you stretch your record at any of\\n\"\n\t.string \"the BATTLE facilities, they start\\l\"\n\t.string \"giving you more and more Battle Points.$\""
+  },
+  "label": "BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
+  "references": {}
+}

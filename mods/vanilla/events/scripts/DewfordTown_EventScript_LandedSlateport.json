@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_EventScript_LandedSlateport",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown/scripts.inc",
+    "sha1": "e9e724e6d3bba641bcb2d4263fe226ee6c1b4840"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown/scripts.inc",
+    "rawScript": "msgbox DewfordTown_Text_BrineyLandedInSlateport, MSGBOX_DEFAULT\n\treturn"
+  },
+  "label": "DewfordTown_EventScript_LandedSlateport",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DewfordTown/scripts.inc",
+  "references": {}
+}

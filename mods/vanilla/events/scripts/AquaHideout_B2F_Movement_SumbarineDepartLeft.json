@@ -1,0 +1,19 @@
+{
+  "id": "AquaHideout_B2F_Movement_SumbarineDepartLeft",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B2F/scripts.inc",
+    "sha1": "2422b13cc4d746236ea4f5c8dbbc6ea26d3d8e36"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_B2F/scripts.inc",
+    "rawScript": "walk_left\n\twalk_left\n\twalk_left\n\twalk_left\n\tstep_end\n\n@ Unused"
+  },
+  "label": "AquaHideout_B2F_Movement_SumbarineDepartLeft",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/AquaHideout_B2F/scripts.inc",
+  "references": {}
+}

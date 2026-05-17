@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/scripts.inc",
+    "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Gym/scripts.inc",
+    "rawScript": ".string \"With the FEATHER BADGE, all POK\u00e9MON up\\n\"\n\t.string \"to LV 70, even those received through\\l\"\n\t.string \"trades, will obey your every command.\\p\"\n\t.string \"You will also be able to use\\n\"\n\t.string \"the HM move FLY outside of battle.\\p\"\n\t.string \"And this\u2026\\n\"\n\t.string \"This is a gift from me.$\""
+  },
+  "label": "FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_Gym/scripts.inc",
+  "references": {}
+}

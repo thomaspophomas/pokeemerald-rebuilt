@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_BrendansHouse_2F_EventScript_CheckPlayersPC",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+    "sha1": "e2d021d5a56c7a155294e7f5fcba3be133f71b33"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+    "rawScript": "setvar VAR_0x8004, PC_LOCATION_BRENDANS_HOUSE\n\tspecial DoPCTurnOnEffect\n\tplayse SE_PC_ON\n\tmsgbox gText_PlayerHouseBootPC, MSGBOX_DEFAULT\n\tspecial BedroomPC\n\treleaseall\n\tend"
+  },
+  "label": "LittlerootTown_BrendansHouse_2F_EventScript_CheckPlayersPC",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+  "references": {}
+}

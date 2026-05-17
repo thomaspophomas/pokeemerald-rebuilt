@@ -1,0 +1,19 @@
+{
+  "id": "Route110_Text_MayExplainItemfinder",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/scripts.inc",
+    "sha1": "ee9846425d6a96c03ac988decb3c48ffbd098f22"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110/scripts.inc",
+    "rawScript": ".string \"MAY: That's an ITEMFINDER.\\p\"\n\t.string \"Try it out. If there is an item that's\\n\"\n\t.string \"not visible, it emits a sound.\\p\"\n\t.string \"Okay, {PLAYER}{KUN}, let's meet again!\\p\"\n\t.string \"I know it's a little silly coming from\\n\"\n\t.string \"me, but I think you should train a lot\\l\"\n\t.string \"harder for the next time.$\""
+  },
+  "label": "Route110_Text_MayExplainItemfinder",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeLobby_EventScript_TurnPlayerNorth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "sha1": "e2be0fe89296e221d6bdf7bc81fdcf739064bd1b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "rawScript": "setvar VAR_TEMP_1, 1\n\tturnobject LOCALID_PLAYER, DIR_NORTH\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeLobby_EventScript_TurnPlayerNorth",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1"
+    ]
+  }
+}

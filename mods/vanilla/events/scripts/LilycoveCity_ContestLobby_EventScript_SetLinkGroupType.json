@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_SetLinkGroupType",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": "call_if_eq VAR_CONTEST_CATEGORY, CONTEST_CATEGORY_COOL, LilycoveCity_ContestLobby_EventScript_SetLinkGroupCoolContest\n\tcall_if_eq VAR_CONTEST_CATEGORY, CONTEST_CATEGORY_BEAUTY, LilycoveCity_ContestLobby_EventScript_SetLinkGroupBeautyContest\n\tcall_if_eq VAR_CONTEST_CATEGORY, CONTEST_CATEGORY_CUTE, LilycoveCity_ContestLobby_EventScript_SetLinkGroupCuteContest\n\tcall_if_eq VAR_CONTEST_CATEGORY, CONTEST_CATEGORY_SMART, LilycoveCity_ContestLobby_EventScript_SetLinkGroupSmartContest\n\tcall_if_eq VAR_CONTEST_CATEGORY, CONTEST_CATEGORY_TOUGH, LilycoveCity_ContestLobby_EventScript_SetLinkGroupToughContest\n\tgoto LilycoveCity_ContestLobby_EventScript_DecideLinkLeader\n\tend"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_SetLinkGroupType",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_CONTEST_CATEGORY"
+    ]
+  }
+}

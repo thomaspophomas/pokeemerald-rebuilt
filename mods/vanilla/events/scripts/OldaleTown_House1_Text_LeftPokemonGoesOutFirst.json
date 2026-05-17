@@ -1,0 +1,19 @@
+{
+  "id": "OldaleTown_House1_Text_LeftPokemonGoesOutFirst",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown_House1/scripts.inc",
+    "sha1": "414b5db9a185fe16516e0e06d1971a70afe8073e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/OldaleTown_House1/scripts.inc",
+    "rawScript": ".string \"When a POK\u00e9MON battle starts, the one\\n\"\n\t.string \"at the left of the list goes out first.\\p\"\n\t.string \"So, when you get more POK\u00e9MON in your\\n\"\n\t.string \"party, try switching around the order\\l\"\n\t.string \"of your POK\u00e9MON.\\p\"\n\t.string \"It could give you an advantage.$\""
+  },
+  "label": "OldaleTown_House1_Text_LeftPokemonGoesOutFirst",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/OldaleTown_House1/scripts.inc",
+  "references": {}
+}

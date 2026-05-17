@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Gym_1F_Text_FlanneryRematchDefeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "sha1": "b82ae91ab89ff7156e8125891eff9b7e6a2a260f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "rawScript": ".string \"Whew!\\n\"\n\t.string \"On the verge of eruption!$\""
+  },
+  "label": "LavaridgeTown_Gym_1F_Text_FlanneryRematchDefeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+  "references": {}
+}

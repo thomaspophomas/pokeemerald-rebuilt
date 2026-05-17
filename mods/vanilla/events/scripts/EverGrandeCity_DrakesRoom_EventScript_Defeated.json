@@ -1,0 +1,23 @@
+{
+  "id": "EverGrandeCity_DrakesRoom_EventScript_Defeated",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+    "sha1": "f9ebbd1a5748e35eab8deba2da4622069b1316a9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+    "rawScript": "setvar VAR_0x8004, FANCOUNTER_DEFEATED_DRAKE\n\tspecial Script_TryGainNewFanFromCounter\n\tsetflag FLAG_DEFEATED_ELITE_4_DRAKE\n\tcall PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles\n\tmsgbox EverGrandeCity_DrakesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "EverGrandeCity_DrakesRoom_EventScript_Defeated",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_ELITE_4_DRAKE"
+    ]
+  }
+}

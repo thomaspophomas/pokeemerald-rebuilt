@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice16Mon1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "sha1": "4e7b748d8d3e33414d869ae43d136c857e9955fc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "rawScript": ".string \"{STR_VAR_3} recommended my team.\\p\"\n\t.string \"Since the advice sounded sincere,\\n\"\n\t.string \"I decided to bring with me\\l\"\n\t.string \"my {STR_VAR_1}-using {STR_VAR_2} and$\""
+  },
+  "label": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice16Mon1",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+  "references": {}
+}

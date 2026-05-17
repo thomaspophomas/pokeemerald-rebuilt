@@ -1,0 +1,19 @@
+{
+  "id": "Route103_Text_BrendanDefeated",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route103/scripts.inc",
+    "sha1": "cdbe6074bf0bdfa44494ccf1457b18c3de43e0de"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route103/scripts.inc",
+    "rawScript": ".string \"Huh, {PLAYER}, you're not too shabby.$\""
+  },
+  "label": "Route103_Text_BrendanDefeated",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route103/scripts.inc",
+  "references": {}
+}

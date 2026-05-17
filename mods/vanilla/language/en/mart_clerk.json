@@ -1,0 +1,21 @@
+{
+  "id": "en:mart_clerk",
+  "domain": "language",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/text/mart_clerk.inc",
+    "sha1": "7c13eb8b93b01f59ce595d9ca7d4f2bf62649e3a"
+  },
+  "legacy": {
+    "kind": "asm_text_labels",
+    "sourcePath": "data/text/mart_clerk.inc"
+  },
+  "language": "en",
+  "group": "mart_clerk",
+  "runtime": false,
+  "strings": {
+    "gText_HowMayIServeYou": ".string \"Welcome!\\p\"\n\t.string \"How may I serve you?$\"",
+    "gText_PleaseComeAgain": ".string \"Please come again!$\"",
+    "gText_PlayerWhatCanIDoForYou": ".string \"{PLAYER}{STRING 5}, welcome!\\p\"\n\t.string \"What can I do for you?$\""
+  }
+}

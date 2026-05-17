@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_BattleTentLobby_Text_TaughtWhatKindsOfMoves",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "sha1": "be67ab8ba625b73e575c1594a46cbee43b6f03d9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "rawScript": ".string \"What kind of moves have you taught\\n\"\n\t.string \"your POK\u00e9MON?\\p\"\n\t.string \"I think you would give yourself\\n\"\n\t.string \"an advantage if they knew how to\\l\"\n\t.string \"heal or protect themselves.$\""
+  },
+  "label": "VerdanturfTown_BattleTentLobby_Text_TaughtWhatKindsOfMoves",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+  "references": {}
+}

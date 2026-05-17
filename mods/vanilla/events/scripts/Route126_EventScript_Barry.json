@@ -1,0 +1,23 @@
+{
+  "id": "Route126_EventScript_Barry",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route126/scripts.inc",
+    "sha1": "d5025a30fc24eea63ccab29344d229eadf43769b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route126/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_BARRY, Route126_Text_BarryIntro, Route126_Text_BarryDefeat\n\tmsgbox Route126_Text_BarryPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route126_EventScript_Barry",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route126/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_BARRY"
+    ]
+  }
+}

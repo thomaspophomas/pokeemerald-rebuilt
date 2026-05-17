@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_PokemonFanClub_EventScript_Twin",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_PokemonFanClub/scripts.inc",
+    "sha1": "153f02ab68bdca98dac6d2c2cf3e3db7c79f2c91"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_PokemonFanClub/scripts.inc",
+    "rawScript": "msgbox SlateportCity_PokemonFanClub_Text_MonEnjoyedProtein, MSGBOX_NPC\n\tend"
+  },
+  "label": "SlateportCity_PokemonFanClub_EventScript_Twin",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity_PokemonFanClub/scripts.inc",
+  "references": {}
+}

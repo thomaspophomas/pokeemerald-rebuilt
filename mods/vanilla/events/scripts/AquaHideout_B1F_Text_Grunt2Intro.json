@@ -1,0 +1,19 @@
+{
+  "id": "AquaHideout_B1F_Text_Grunt2Intro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B1F/scripts.inc",
+    "sha1": "2923188c4ae1df18ace73c8a8f87ea7f1d1e7886"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_B1F/scripts.inc",
+    "rawScript": ".string \"If you want to know the secret about\\n\"\n\t.string \"our HIDEOUT, you have me to beat!$\""
+  },
+  "label": "AquaHideout_B1F_Text_Grunt2Intro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AquaHideout_B1F/scripts.inc",
+  "references": {}
+}

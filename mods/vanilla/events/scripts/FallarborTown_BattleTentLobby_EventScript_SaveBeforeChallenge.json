@@ -1,0 +1,24 @@
+{
+  "id": "FallarborTown_BattleTentLobby_EventScript_SaveBeforeChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "sha1": "007b5945200863133fd43941054ec8db085a0356"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "rawScript": "setvar VAR_TEMP_CHALLENGE_STATUS, 0\n\tfrontier_set FRONTIER_DATA_SELECTED_MON_ORDER\n\tfallarbortent_init\n\tfrontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_SAVING\n\tfrontier_set FRONTIER_DATA_PAUSED, FALSE\n\tspecial LoadPlayerParty\n\tclosemessage\n\tdelay 2\n\tcall Common_EventScript_SaveGame\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 255\n\tgoto_if_eq VAR_RESULT, 0, FallarborTown_BattleTentLobby_EventScript_CancelChallengeSaveFailed"
+  },
+  "label": "FallarborTown_BattleTentLobby_EventScript_SaveBeforeChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ]
+  }
+}

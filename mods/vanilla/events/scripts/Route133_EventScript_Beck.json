@@ -1,0 +1,23 @@
+{
+  "id": "Route133_EventScript_Beck",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route133/scripts.inc",
+    "sha1": "f4bb8f5ba693dd21f2f9e9030fe5eb4e301288ee"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route133/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_BECK, Route133_Text_BeckIntro, Route133_Text_BeckDefeat\n\tmsgbox Route133_Text_BeckPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route133_EventScript_Beck",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route133/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_BECK"
+    ]
+  }
+}

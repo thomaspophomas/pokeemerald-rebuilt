@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_House1_Text_ExplainRockSmash",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_House1/scripts.inc",
+    "sha1": "2d2b0f74cde450b8e601ae7d75ea888588a68e66"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_House1/scripts.inc",
+    "rawScript": ".string \"That HM contains ROCK SMASH.\\p\"\n\t.string \"If you come across large boulders\\n\"\n\t.string \"that block your path\u2026\\p\"\n\t.string \"Well, use that HM move and smash\\n\"\n\t.string \"them right out of your way!\\p\"\n\t.string \"Yes, sir! Smash rocks aside, I say!\\n\"\n\t.string \"Woohoo!$\""
+  },
+  "label": "MauvilleCity_House1_Text_ExplainRockSmash",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_House1/scripts.inc",
+  "references": {}
+}

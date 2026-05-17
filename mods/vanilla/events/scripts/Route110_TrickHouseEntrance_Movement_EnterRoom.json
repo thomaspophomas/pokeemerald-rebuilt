@@ -1,0 +1,19 @@
+{
+  "id": "Route110_TrickHouseEntrance_Movement_EnterRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "sha1": "9367efc136143832c1697fbcc61fbb296269d396"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "rawScript": "set_invisible\n\tstep_end"
+  },
+  "label": "Route110_TrickHouseEntrance_Movement_EnterRoom",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+  "references": {}
+}

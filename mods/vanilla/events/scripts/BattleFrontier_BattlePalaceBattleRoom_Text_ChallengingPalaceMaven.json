@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceBattleRoom_Text_ChallengingPalaceMaven",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "sha1": "c4392c432f84fdbe0613ac4b067366a168a52056"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "rawScript": ".string \"And now\u2026\\p\"\n\t.string \"By winning consistently, you have\\n\"\n\t.string \"earned the privilege of challenging\\l\"\n\t.string \"our master, the PALACE MAVEN\u2026$\""
+  },
+  "label": "BattleFrontier_BattlePalaceBattleRoom_Text_ChallengingPalaceMaven",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+  "references": {}
+}

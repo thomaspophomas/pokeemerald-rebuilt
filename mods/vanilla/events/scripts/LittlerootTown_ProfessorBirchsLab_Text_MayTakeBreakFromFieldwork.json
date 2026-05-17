@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Text_MayTakeBreakFromFieldwork",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": ".string \"MAY: I think I'll take a short break\\n\"\n\t.string \"from fieldwork.\\p\"\n\t.string \"I think I'll help the PROF here for\\n\"\n\t.string \"a while.$\""
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Text_MayTakeBreakFromFieldwork",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

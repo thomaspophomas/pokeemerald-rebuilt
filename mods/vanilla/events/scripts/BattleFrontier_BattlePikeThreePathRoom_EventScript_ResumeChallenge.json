@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeThreePathRoom_EventScript_ResumeChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "sha1": "927f7bda20dae778159d88132a53038bcfb76615"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "rawScript": "lockall\n\tmessage BattleFrontier_BattlePikeThreePathRoom_Text_AwaitingReturnSaveBeforeResume\n\twaitmessage\n\tpike_save CHALLENGE_STATUS_SAVING\n\tplayse SE_SAVE\n\twaitse\n\tfrontier_set FRONTIER_DATA_PAUSED, FALSE\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 255\n\tspecial SavePlayerParty\n\tfrontier_setpartyorder FRONTIER_PARTY_SIZE\n\tmsgbox BattleFrontier_BattlePikeThreePathRoom_Text_PleaseEnjoyChallenge, MSGBOX_DEFAULT\n\tclosemessage\n\treleaseall\n\tfrontier_settrainers\n\tfrontier_set FRONTIER_DATA_CHALLENGE_STATUS, 99\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeThreePathRoom_EventScript_ResumeChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ]
+  }
+}

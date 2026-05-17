@@ -1,0 +1,26 @@
+{
+  "id": "GabbyAndTy_EventScript_UpdateLocation",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gabby_and_ty.inc",
+    "sha1": "94bbdc1414879c9d53e3c5a88c9429ac40dbfdeb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gabby_and_ty.inc",
+    "rawScript": "cleartrainerflag TRAINER_GABBY_AND_TY_6  @ Clear flag for their final party to allow infinite rematches.\n\tspecialvar VAR_RESULT, GabbyAndTyGetBattleNum\n\tswitch VAR_RESULT\n\tcase 0, GabbyAndTy_EventScript_MoveForBattle1\n\tcase 1, GabbyAndTy_EventScript_MoveForBattle2\n\tcase 2, GabbyAndTy_EventScript_MoveForBattle3\n\tcase 3, GabbyAndTy_EventScript_MoveForBattle4\n\tcase 4, GabbyAndTy_EventScript_MoveForBattle5\n\tcase 5, GabbyAndTy_EventScript_MoveForBattle6\n\tcase 6, GabbyAndTy_EventScript_MoveForBattle7\n\tcase 7, GabbyAndTy_EventScript_MoveForBattle8\n\tcase 8, GabbyAndTy_EventScript_MoveForBattle9\n\tend"
+  },
+  "label": "GabbyAndTy_EventScript_UpdateLocation",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/gabby_and_ty.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_GABBY_AND_TY_6"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Route110_TrickHousePuzzle8_EventScript_Door",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "sha1": "9367efc136143832c1697fbcc61fbb296269d396"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "rawScript": "goto_if_eq VAR_TRICK_HOUSE_PUZZLE_8_STATE, 0, Route110_TrickHousePuzzle_EventScript_DoorLocked\n\tmsgbox Route110_TrickHousePuzzle8_Text_WroteSecretCodeLockOpened, MSGBOX_DEFAULT\n\tplayse SE_PIN\n\tsetvar VAR_TRICK_HOUSE_PUZZLE_8_STATE, 2\n\tsetmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down, FALSE\n\tspecial DrawWholeMapView\n\treleaseall\n\tend"
+  },
+  "label": "Route110_TrickHousePuzzle8_EventScript_Door",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TRICK_HOUSE_PUZZLE_8_STATE"
+    ]
+  }
+}

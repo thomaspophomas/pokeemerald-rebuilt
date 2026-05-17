@@ -1,0 +1,24 @@
+{
+  "id": "Route105_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route105/scripts.inc",
+    "sha1": "fca1ae319346cb625967baf011ba6f8b0e2fb01a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route105/scripts.inc",
+    "rawScript": "call_if_eq VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_HideMapNamePopup\n\tcall_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_105_NORTH, AbnormalWeather_StartKyogreWeather\n\tcall_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_105_SOUTH, AbnormalWeather_StartKyogreWeather\n\tend"
+  },
+  "label": "Route105_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Route105/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_ABNORMAL_WEATHER_LOCATION",
+      "VAR_SHOULD_END_ABNORMAL_WEATHER"
+    ]
+  }
+}

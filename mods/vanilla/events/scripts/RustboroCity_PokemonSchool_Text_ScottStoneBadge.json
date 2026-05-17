@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_PokemonSchool_Text_ScottStoneBadge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "sha1": "155fc7f1cee833cb06df85a407e5f98f216a928e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "rawScript": ".string \"SCOTT: Oh, what's that?\\p\"\n\t.string \"It's a STONE BADGE, isn't it?\\n\"\n\t.string \"That's pretty impressive, I'd say.\\p\"\n\t.string \"But, you know, I would've loved to see\\n\"\n\t.string \"you in battle.\\p\"\n\t.string \"It's hard to tell what you're like as\\n\"\n\t.string \"a TRAINER from a LEAGUE BADGE.$\""
+  },
+  "label": "RustboroCity_PokemonSchool_Text_ScottStoneBadge",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+  "references": {}
+}

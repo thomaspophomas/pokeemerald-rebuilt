@@ -1,0 +1,23 @@
+{
+  "id": "TrainerHill_Elevator_EventScript_ExitToRoof",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Elevator/scripts.inc",
+    "sha1": "06b14119162a2b7bf99d17883435f80e4648fabb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Elevator/scripts.inc",
+    "rawScript": "applymovement LOCALID_PLAYER, TrainerHill_Elevator_Movement_PlayerExitElevatorToRoof\n\twaitmovement 0\n\treleaseall\n\twarp MAP_TRAINER_HILL_ROOF, 15, 5\n\twaitstate\n\tend"
+  },
+  "label": "TrainerHill_Elevator_EventScript_ExitToRoof",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/TrainerHill_Elevator/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_TRAINER_HILL_ROOF"
+    ]
+  }
+}

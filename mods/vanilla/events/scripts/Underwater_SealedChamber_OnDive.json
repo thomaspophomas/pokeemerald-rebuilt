@@ -1,0 +1,19 @@
+{
+  "id": "Underwater_SealedChamber_OnDive",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_SealedChamber/scripts.inc",
+    "sha1": "131aad6d8a0be2c293134dd0e2a54a3608a8a64b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Underwater_SealedChamber/scripts.inc",
+    "rawScript": "getplayerxy VAR_0x8004, VAR_0x8005\n\tgoto_if_ne VAR_0x8004, 12, Underwater_SealedChamber_EventScript_SurfaceRoute134\n\tgoto_if_ne VAR_0x8005, 44, Underwater_SealedChamber_EventScript_SurfaceRoute134\n\tgoto Underwater_SealedChamber_EventScript_SurfaceSealedChamber"
+  },
+  "label": "Underwater_SealedChamber_OnDive",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Underwater_SealedChamber/scripts.inc",
+  "references": {}
+}

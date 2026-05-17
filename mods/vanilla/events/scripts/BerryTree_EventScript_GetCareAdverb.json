@@ -1,0 +1,19 @@
+{
+  "id": "BerryTree_EventScript_GetCareAdverb",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_tree.inc",
+    "sha1": "749b44e862850f19e689ac4622065bdedf7c8393"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_tree.inc",
+    "rawScript": "goto_if_eq VAR_0x8005, 0, BerryTree_EventScript_SetAdverbPoor\n\tgoto_if_eq VAR_0x8005, 4, BerryTree_EventScript_SetAdverbGreat\n\tbufferstring STR_VAR_2, BerryTree_Text_CareAdverbGood\n\treturn"
+  },
+  "label": "BerryTree_EventScript_GetCareAdverb",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_tree.inc",
+  "references": {}
+}

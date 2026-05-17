@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_OceanicMuseum_1F_EventScript_DeclineInterview",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/interview.inc",
+    "sha1": "bd1d5135ce2e319a18291aebafac5c4760b90500"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/interview.inc",
+    "rawScript": "msgbox SlateportCity_OceanicMuseum_1F_Text_LetMeKnowIfYouHaveStory, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "SlateportCity_OceanicMuseum_1F_EventScript_DeclineInterview",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/interview.inc",
+  "references": {}
+}

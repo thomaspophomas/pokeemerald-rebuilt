@@ -1,0 +1,25 @@
+{
+  "id": "Route109_SeashoreHouse_EventScript_Owner",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route109_SeashoreHouse/scripts.inc",
+    "sha1": "e25b82298342bb772f517727cec07c201daa316e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route109_SeashoreHouse/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_6_SODA_POP, Route109_SeashoreHouse_EventScript_AlreadyReceivedSodaPop\n\tgoto_if_set FLAG_DEFEATED_SEASHORE_HOUSE, Route109_SeashoreHouse_EventScript_DefeatedTrainers\n\tgoto_if_set FLAG_TEMP_2, Route109_SeashoreHouse_EventScript_AlreadyGaveIntroduction\n\tmsgbox Route109_SeashoreHouse_Text_SeashoreHouseIntro, MSGBOX_DEFAULT\n\tsetflag FLAG_TEMP_2\n\trelease\n\tend"
+  },
+  "label": "Route109_SeashoreHouse_EventScript_Owner",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route109_SeashoreHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_SEASHORE_HOUSE",
+      "FLAG_RECEIVED_6_SODA_POP",
+      "FLAG_TEMP_2"
+    ]
+  }
+}

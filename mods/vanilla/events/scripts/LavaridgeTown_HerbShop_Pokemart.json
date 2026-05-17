@@ -1,0 +1,26 @@
+{
+  "id": "LavaridgeTown_HerbShop_Pokemart",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+    "sha1": "ed83c75f66b27defc898c3be46549255ef12185c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+    "rawScript": ".2byte ITEM_ENERGY_POWDER\n\t.2byte ITEM_ENERGY_ROOT\n\t.2byte ITEM_HEAL_POWDER\n\t.2byte ITEM_REVIVAL_HERB\n\tpokemartlistend"
+  },
+  "label": "LavaridgeTown_HerbShop_Pokemart",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+  "references": {
+    "items": [
+      "ITEM_ENERGY_POWDER",
+      "ITEM_ENERGY_ROOT",
+      "ITEM_HEAL_POWDER",
+      "ITEM_REVIVAL_HERB"
+    ]
+  }
+}

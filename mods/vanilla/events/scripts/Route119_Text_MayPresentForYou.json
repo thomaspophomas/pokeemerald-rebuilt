@@ -1,0 +1,19 @@
+{
+  "id": "Route119_Text_MayPresentForYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119/scripts.inc",
+    "sha1": "576fe3fab09726df20b1bbf3016bc5306f0e0f3d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119/scripts.inc",
+    "rawScript": ".string \"MAY: But I had absolutely nothing to\\n\"\n\t.string \"worry about! Keep it up!\\p\"\n\t.string \"And, here! I have a present for you.$\""
+  },
+  "label": "Route119_Text_MayPresentForYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route119/scripts.inc",
+  "references": {}
+}

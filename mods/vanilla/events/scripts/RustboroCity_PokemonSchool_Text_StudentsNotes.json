@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_PokemonSchool_Text_StudentsNotes",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "sha1": "155fc7f1cee833cb06df85a407e5f98f216a928e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "rawScript": ".string \"It's this student's notebook\u2026\\p\"\n\t.string \"POK\u00e9MON are to be caught using\\n\"\n\t.string \"POK\u00e9 BALLS.\\p\"\n\t.string \"Up to six POK\u00e9MON can accompany\\n\"\n\t.string \"a TRAINER.\\p\"\n\t.string \"A TRAINER is someone who catches\\n\"\n\t.string \"POK\u00e9MON, raises them, and battles\\l\"\n\t.string \"with them.\\p\"\n\t.string \"A TRAINER's mission is to defeat\\n\"\n\t.string \"the strong TRAINERS who await\\l\"\n\t.string \"challengers in POK\u00e9MON GYMS.$\""
+  },
+  "label": "RustboroCity_PokemonSchool_Text_StudentsNotes",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+  "references": {}
+}

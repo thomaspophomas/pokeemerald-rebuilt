@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_DevonCorp_3F_Text_ExplainExpShare",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+    "sha1": "c9490be6666cd7ea155cae31641c765560806127"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+    "rawScript": ".string \"MR. STONE: A POK\u00e9MON holding that\\n\"\n\t.string \"EXP. SHARE will be given some of the\\l\"\n\t.string \"EXP Points from battle.\\p\"\n\t.string \"It will get EXP Points even if it didn't\\n\"\n\t.string \"actually battle.\\p\"\n\t.string \"I would say EXP. SHARE is quite useful\\n\"\n\t.string \"for raising weak POK\u00e9MON.$\""
+  },
+  "label": "RustboroCity_DevonCorp_3F_Text_ExplainExpShare",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+  "references": {}
+}

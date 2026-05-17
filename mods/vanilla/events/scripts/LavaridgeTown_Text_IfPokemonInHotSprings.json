@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Text_IfPokemonInHotSprings",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": ".string \"If people put POK\u00e9MON in hot springs,\\n\"\n\t.string \"it might be seriously strange.\\p\"\n\t.string \"Why, it might be an electric bath, or\\n\"\n\t.string \"a bubble bath, or even a lava bath\u2026$\""
+  },
+  "label": "LavaridgeTown_Text_IfPokemonInHotSprings",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {}
+}

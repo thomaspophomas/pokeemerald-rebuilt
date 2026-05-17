@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_SetPlayerGfx",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ContestHall/scripts.inc",
+    "sha1": "1975dda1f6df6ad0ef2b0d81c28afe4508469870"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ContestHall/scripts.inc",
+    "rawScript": "checkplayergender\n\tgoto_if_eq VAR_RESULT, MALE, LilycoveCity_ContestLobby_EventScript_SetPlayerGfxBrendan\n\tgoto_if_eq VAR_RESULT, FEMALE, LilycoveCity_ContestLobby_EventScript_SetPlayerGfxMay\n\treturn"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_SetPlayerGfx",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/ContestHall/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

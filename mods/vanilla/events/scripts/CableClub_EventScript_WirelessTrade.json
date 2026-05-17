@@ -1,0 +1,23 @@
+{
+  "id": "CableClub_EventScript_WirelessTrade",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "msgbox CableClub_Text_TradePokemon, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, CableClub_EventScript_AbortLink\n\tcall CableClub_EventScript_CheckPartyTradeRequirements\n\tgoto_if_eq VAR_RESULT, 0, CableClub_EventScript_AbortLink\n\tsetvar VAR_0x8004, LINK_GROUP_TRADE\n\tgoto CableClub_EventScript_SaveAndChooseLinkLeader\n\tend"
+  },
+  "label": "CableClub_EventScript_WirelessTrade",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

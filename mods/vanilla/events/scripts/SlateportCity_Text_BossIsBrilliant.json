@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Text_BossIsBrilliant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": ".string \"Our BOSS is brilliant.\\p\"\n\t.string \"What would he want to do with\\n\"\n\t.string \"a MUSEUM now?$\""
+  },
+  "label": "SlateportCity_Text_BossIsBrilliant",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_BikeShop_Text_IllSwitchBikes",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "sha1": "31396febb84a2b48608ca32d5a0dd0de865faf26"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "rawScript": ".string \"RYDEL: Okay, no problem!\\n\"\n\t.string \"I'll switch BIKES for you!$\""
+  },
+  "label": "MauvilleCity_BikeShop_Text_IllSwitchBikes",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+  "references": {}
+}

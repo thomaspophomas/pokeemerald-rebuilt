@@ -1,0 +1,34 @@
+{
+  "id": "RustboroCity_EventScript_StolenGoodsScene",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": "msgbox RustboroCity_Text_OutOfTheWay, MSGBOX_DEFAULT\n\tclosemessage\n\tplaybgm MUS_ENCOUNTER_AQUA, FALSE\n\taddobject LOCALID_RUSTBORO_GRUNT\n\taddobject LOCALID_RUSTBORO_DEVON_EMPLOYEE\n\tapplymovement LOCALID_RUSTBORO_GRUNT, RustboroCity_Movement_GruntEscape\n\twaitmovement 0\n\tremoveobject LOCALID_RUSTBORO_GRUNT\n\tapplymovement LOCALID_RUSTBORO_DEVON_EMPLOYEE, RustboroCity_Movement_EmployeeChaseGrunt1\n\twaitmovement 0\n\tmsgbox RustboroCity_Text_WaitDontTakeMyGoods, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_RUSTBORO_DEVON_EMPLOYEE, RustboroCity_Movement_EmployeeChaseGrunt2\n\twaitmovement 0\n\tfadedefaultbgm\n\tremoveobject LOCALID_RUSTBORO_DEVON_EMPLOYEE\n\tsetobjectxyperm LOCALID_RUSTBORO_DEVON_EMPLOYEE, 30, 10\n\tclearflag FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1\n\tsetflag FLAG_DEVON_GOODS_STOLEN\n\tsetvar VAR_RUSTBORO_CITY_STATE, 2\n\tsetvar VAR_RUSTURF_TUNNEL_STATE, 2\n\tsetvar VAR_ROUTE116_STATE, 1\n\tclearflag FLAG_HIDE_ROUTE_116_MR_BRINEY\n\tclearflag FLAG_HIDE_RUSTURF_TUNNEL_PEEKO\n\tclearflag FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT\n\tsetflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY\n\tsetflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO\n\treleaseall\n\tend\n\n@ Unused"
+  },
+  "label": "RustboroCity_EventScript_StolenGoodsScene",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEVON_GOODS_STOLEN",
+      "FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY",
+      "FLAG_HIDE_BRINEYS_HOUSE_PEEKO",
+      "FLAG_HIDE_ROUTE_116_MR_BRINEY",
+      "FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1",
+      "FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT",
+      "FLAG_HIDE_RUSTURF_TUNNEL_PEEKO"
+    ],
+    "vars": [
+      "VAR_ROUTE116_STATE",
+      "VAR_RUSTBORO_CITY_STATE",
+      "VAR_RUSTURF_TUNNEL_STATE"
+    ]
+  }
+}

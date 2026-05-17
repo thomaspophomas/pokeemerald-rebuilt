@@ -1,0 +1,23 @@
+{
+  "id": "Route105_EventScript_Luis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route105/scripts.inc",
+    "sha1": "fca1ae319346cb625967baf011ba6f8b0e2fb01a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route105/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_LUIS, Route105_Text_LuisIntro, Route105_Text_LuisDefeated\n\tmsgbox Route105_Text_LuisPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route105_EventScript_Luis",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route105/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_LUIS"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerCorridor_EventScript_EnterCorridor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerCorridor/scripts.inc",
+    "sha1": "a135a140aa42cd9a6034c33942fe11ca534a9b7e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerCorridor/scripts.inc",
+    "rawScript": "setvar VAR_TEMP_0, 1\n\tgoto_if_eq VAR_0x8006, 1, BattleFrontier_BattleTowerCorridor_EventScript_WalkToFarDoor\n\tapplymovement LOCALID_TOWER_CORRIDOR_ATTENDANT, BattleFrontier_BattleTowerCorridor_Movement_AttendantWalkToDoor\n\tapplymovement LOCALID_PLAYER, BattleFrontier_BattleTowerCorridor_Movement_PlayerWalkToDoor\n\twaitmovement 0\n\tgoto BattleFrontier_BattleTowerCorridor_EventScript_WarpToBattleRoom"
+  },
+  "label": "BattleFrontier_BattleTowerCorridor_EventScript_EnterCorridor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerCorridor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0"
+    ]
+  }
+}

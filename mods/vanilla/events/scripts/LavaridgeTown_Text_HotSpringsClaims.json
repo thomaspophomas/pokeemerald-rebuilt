@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Text_HotSpringsClaims",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": ".string \"They're claiming that these hot springs\\n\"\n\t.string \"are good for calming nervous tension,\\l\"\n\t.string \"relieving aching muscles, solving\\l\"\n\t.string \"romantic problems, and attracting\\l\"\n\t.string \"money\u2026$\""
+  },
+  "label": "LavaridgeTown_Text_HotSpringsClaims",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {}
+}

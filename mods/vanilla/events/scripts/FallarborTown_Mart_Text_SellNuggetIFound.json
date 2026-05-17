@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_Mart_Text_SellNuggetIFound",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_Mart/scripts.inc",
+    "sha1": "0ca66f0e5420cbce8afedeba0991156dec84e531"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_Mart/scripts.inc",
+    "rawScript": ".string \"This NUGGET I found here\u2026\\n\"\n\t.string \"I suppose I'll have to sell it, seeing\\l\"\n\t.string \"as how it has no other use.$\""
+  },
+  "label": "FallarborTown_Mart_Text_SellNuggetIFound",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FallarborTown_Mart/scripts.inc",
+  "references": {}
+}

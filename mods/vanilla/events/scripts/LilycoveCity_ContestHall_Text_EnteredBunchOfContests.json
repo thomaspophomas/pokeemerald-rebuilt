@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestHall_Text_EnteredBunchOfContests",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "sha1": "9d258f56144116075b6ffd125cc9edb7fc292736"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "rawScript": ".string \"I've entered a bunch of CONTESTS,\\n\"\n\t.string \"so I'm seeing how things work.\\p\"\n\t.string \"If you're in a COOLNESS CONTEST,\\n\"\n\t.string \"cool moves go over as appeals.\\p\"\n\t.string \"But smart moves and cute moves\\n\"\n\t.string \"don't go over well, for instance.$\""
+  },
+  "label": "LilycoveCity_ContestHall_Text_EnteredBunchOfContests",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+  "references": {}
+}

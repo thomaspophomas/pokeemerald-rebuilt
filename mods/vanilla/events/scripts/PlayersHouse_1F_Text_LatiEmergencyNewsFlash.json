@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_1F_Text_LatiEmergencyNewsFlash",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "sha1": "b92e18aeb34c3856db794aa81beeec7f0f0de717"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "rawScript": ".string \"We bring you this emergency\\n\"\n\t.string \"news flash!\\p\"\n\t.string \"In various HOENN locales, there have\\n\"\n\t.string \"been reports of a BZZT\u2026colored\\l\"\n\t.string \"POK\u00e9MON in flight.\\p\"\n\t.string \"The identity of this POK\u00e9MON is\\n\"\n\t.string \"currently unknown.\\p\"\n\t.string \"We now return you to the regular\\n\"\n\t.string \"movie program.$\""
+  },
+  "label": "PlayersHouse_1F_Text_LatiEmergencyNewsFlash",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+  "references": {}
+}

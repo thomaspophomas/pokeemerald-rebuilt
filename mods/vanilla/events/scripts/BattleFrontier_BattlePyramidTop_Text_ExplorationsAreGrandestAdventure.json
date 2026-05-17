@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePyramidTop_Text_ExplorationsAreGrandestAdventure",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "sha1": "6256c29eca306dafcaec0dabbacc64547c474e58"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "rawScript": ".string \"Young adventurer\u2026\\p\"\n\t.string \"Wouldn't you agree that explorations\\n\"\n\t.string \"are the grandest of adventures?\\p\"\n\t.string \"Your own wits!\\p\"\n\t.string \"Your own strength!\\p\"\n\t.string \"Your own POK\u00e9MON!\\p\"\n\t.string \"And, above all, only your own courage\\n\"\n\t.string \"to lead you through unknown worlds\u2026$\""
+  },
+  "label": "BattleFrontier_BattlePyramidTop_Text_ExplorationsAreGrandestAdventure",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+  "references": {}
+}

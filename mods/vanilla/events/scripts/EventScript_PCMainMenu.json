@@ -1,0 +1,19 @@
+{
+  "id": "EventScript_PCMainMenu",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/pc.inc",
+    "sha1": "7bcbb4797cbf3d04de79d03c5e2b947f76ffcf90"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/pc.inc",
+    "rawScript": "message gText_WhichPCShouldBeAccessed\n\twaitmessage\n\tspecial ScriptMenu_CreatePCMultichoice\n\tgoto EventScript_AccessPC\n\tend"
+  },
+  "label": "EventScript_PCMainMenu",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/pc.inc",
+  "references": {}
+}

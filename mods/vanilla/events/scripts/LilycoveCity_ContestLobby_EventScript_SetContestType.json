@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_SetContestType",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": "switch VAR_CONTEST_RANK\n\tcase CONTEST_RANK_NORMAL, LilycoveCity_ContestLobby_EventScript_SetNormalContestType\n\tcase CONTEST_RANK_SUPER, LilycoveCity_ContestLobby_EventScript_SetSuperContestType\n\tcase CONTEST_RANK_HYPER, LilycoveCity_ContestLobby_EventScript_SetHyperContestType\n\tcase CONTEST_RANK_MASTER, LilycoveCity_ContestLobby_EventScript_SetMasterContestType\n\treturn"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_SetContestType",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_CONTEST_RANK"
+    ]
+  }
+}

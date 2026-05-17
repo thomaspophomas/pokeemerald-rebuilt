@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserPostSilverBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "sha1": "c4392c432f84fdbe0613ac4b067366a168a52056"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "rawScript": ".string \"SPENSER: Gwahahah!\\p\"\n\t.string \"Hah, you never fell for my bluster!\\n\"\n\t.string \"Sorry for trying that stunt!\\p\"\n\t.string \"Here!\\n\"\n\t.string \"Bring me the thing!$\""
+  },
+  "label": "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserPostSilverBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+  "references": {}
+}

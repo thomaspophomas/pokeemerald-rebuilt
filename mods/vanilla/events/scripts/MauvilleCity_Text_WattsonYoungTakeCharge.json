@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_WattsonYoungTakeCharge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"WATTSON: Wahahahaha!\\p\"\n\t.string \"It pleases me to no end to see\\n\"\n\t.string \"the young step up and take charge!$\""
+  },
+  "label": "MauvilleCity_Text_WattsonYoungTakeCharge",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

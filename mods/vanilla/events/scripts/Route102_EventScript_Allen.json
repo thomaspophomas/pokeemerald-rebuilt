@@ -1,0 +1,23 @@
+{
+  "id": "Route102_EventScript_Allen",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route102/scripts.inc",
+    "sha1": "17c4403137bc871caf964a4fed8e5efc79316b34"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route102/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_ALLEN, Route102_Text_AllenIntro, Route102_Text_AllenDefeated\n\tmsgbox Route102_Text_AllenPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route102_EventScript_Allen",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route102/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ALLEN"
+    ]
+  }
+}

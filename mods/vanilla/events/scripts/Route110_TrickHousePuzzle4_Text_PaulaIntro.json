@@ -1,0 +1,19 @@
+{
+  "id": "Route110_TrickHousePuzzle4_Text_PaulaIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle4/scripts.inc",
+    "sha1": "eb33f28b7301e502843672a1bcbd3b768312b2e2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle4/scripts.inc",
+    "rawScript": ".string \"The TRICK HOUSE is getting trickier,\\n\"\n\t.string \"isn't it?$\""
+  },
+  "label": "Route110_TrickHousePuzzle4_Text_PaulaIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110_TrickHousePuzzle4/scripts.inc",
+  "references": {}
+}

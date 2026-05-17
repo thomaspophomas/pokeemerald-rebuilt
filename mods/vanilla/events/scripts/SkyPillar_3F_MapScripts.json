@@ -1,0 +1,23 @@
+{
+  "id": "SkyPillar_3F_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_3F/scripts.inc",
+    "sha1": "53f2348c873857be109ce7afa8ed505ad64f96fd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_3F/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, SkyPillar_3F_OnTransition\n\t.byte 0"
+  },
+  "label": "SkyPillar_3F_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/SkyPillar_3F/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

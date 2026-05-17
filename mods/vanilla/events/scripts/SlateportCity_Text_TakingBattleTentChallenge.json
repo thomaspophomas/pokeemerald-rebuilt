@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Text_TakingBattleTentChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": ".string \"SCOTT: Oh, hey!\\n\"\n\t.string \"If it isn't {PLAYER}{KUN}!\\p\"\n\t.string \"{PLAYER}{KUN}, let me guess--you're going\\n\"\n\t.string \"to take the BATTLE TENT challenge?\\p\"\n\t.string \"Yeah! That's a good idea!\\n\"\n\t.string \"That's a really great idea!\\p\"\n\t.string \"After all, a tough TRAINER is\\n\"\n\t.string \"the perfect fit for the BATTLE TENT!\\p\"\n\t.string \"Give it your best effort!$\""
+  },
+  "label": "SlateportCity_Text_TakingBattleTentChallenge",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {}
+}

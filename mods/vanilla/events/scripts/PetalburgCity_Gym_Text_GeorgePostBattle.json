@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_GeorgePostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"I should have expected no less from\\n\"\n\t.string \"our LEADER's kid.\\p\"\n\t.string \"No, wait! A TRAINER's abilities are\\n\"\n\t.string \"earned only through effort.\\p\"\n\t.string \"I lost because my own efforts\\n\"\n\t.string \"weren't enough.\\p\"\n\t.string \"Go on! The ONE-HIT KO ROOM is next.$\""
+  },
+  "label": "PetalburgCity_Gym_Text_GeorgePostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

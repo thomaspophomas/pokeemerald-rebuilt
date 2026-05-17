@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby_Text_StepOnFloorPanel",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "sha1": "b93395a7ee7156a94cfa3817fd6222cfa69e94fd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "rawScript": ".string \"When you step on this floor panel,\\n\"\n\t.string \"you will be transported to a higher\\l\"\n\t.string \"floor in the PYRAMID.\\p\"\n\t.string \"I hope for your sake that your\\n\"\n\t.string \"quest goes safely!$\""
+  },
+  "label": "BattleFrontier_BattlePyramidLobby_Text_StepOnFloorPanel",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+  "references": {}
+}

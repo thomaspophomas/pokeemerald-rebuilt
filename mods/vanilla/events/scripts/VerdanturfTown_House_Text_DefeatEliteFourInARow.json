@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_House_Text_DefeatEliteFourInARow",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_House/scripts.inc",
+    "sha1": "9659cc0896ce0a91ad0582be610baa6bc626af11"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_House/scripts.inc",
+    "rawScript": ".string \"In the POK\u00e9MON LEAGUE, I think the\\n\"\n\t.string \"rules say that you have to battle the\\l\"\n\t.string \"ELITE FOUR all in a row.\\p\"\n\t.string \"If you lose to any of them, you have\\n\"\n\t.string \"to begin your challenge again from the\\l\"\n\t.string \"first one.$\""
+  },
+  "label": "VerdanturfTown_House_Text_DefeatEliteFourInARow",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_House/scripts.inc",
+  "references": {}
+}

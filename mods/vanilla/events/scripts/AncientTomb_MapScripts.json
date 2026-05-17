@@ -1,0 +1,25 @@
+{
+  "id": "AncientTomb_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AncientTomb/scripts.inc",
+    "sha1": "57ee4b1313324882be319adf4cbdef89f090204c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AncientTomb/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, AncientTomb_OnResume\n\tmap_script MAP_SCRIPT_ON_LOAD, AncientTomb_OnLoad\n\tmap_script MAP_SCRIPT_ON_TRANSITION, AncientTomb_OnTransition\n\t.byte 0"
+  },
+  "label": "AncientTomb_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/AncientTomb/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

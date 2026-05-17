@@ -1,0 +1,27 @@
+{
+  "id": "PetalburgCity_Gym_EventScript_ShouldGiveEnigmaBerry",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": "specialvar VAR_RESULT, IsEnigmaBerryValid\n\tgoto_if_eq VAR_RESULT, FALSE, PetalburgCity_Gym_EventScript_DontGiveEnigmaBerry\n\tcheckitem ITEM_ENIGMA_BERRY\n\tgoto_if_eq VAR_RESULT, TRUE, PetalburgCity_Gym_EventScript_DontGiveEnigmaBerry\n\tcheckpcitem ITEM_ENIGMA_BERRY\n\tgoto_if_eq VAR_RESULT, TRUE, PetalburgCity_Gym_EventScript_DontGiveEnigmaBerry\n\tgoto_if_eq VAR_ENIGMA_BERRY_AVAILABLE, 0, PetalburgCity_Gym_EventScript_DontGiveEnigmaBerry\n\tmsgbox PetalburgCity_Gym_Text_GiveEnigmaBerry, MSGBOX_DEFAULT\n\tsetvar VAR_RESULT, TRUE\n\treturn"
+  },
+  "label": "PetalburgCity_Gym_EventScript_ShouldGiveEnigmaBerry",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_ENIGMA_BERRY_AVAILABLE",
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_ENIGMA_BERRY"
+    ]
+  }
+}

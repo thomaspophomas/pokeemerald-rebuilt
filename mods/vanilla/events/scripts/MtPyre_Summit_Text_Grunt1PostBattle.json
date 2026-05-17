@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_Summit_Text_Grunt1PostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/scripts.inc",
+    "sha1": "2d98d572d50cebb678d972aa421854c983329822"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Summit/scripts.inc",
+    "rawScript": ".string \"Yeah, so you are strong\u2026\\n\"\n\t.string \"But there're a lot of us!$\""
+  },
+  "label": "MtPyre_Summit_Text_Grunt1PostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_Summit/scripts.inc",
+  "references": {}
+}

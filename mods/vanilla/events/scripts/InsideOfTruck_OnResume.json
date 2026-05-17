@@ -1,0 +1,19 @@
+{
+  "id": "InsideOfTruck_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/InsideOfTruck/scripts.inc",
+    "sha1": "4a49579e348e8a2c251edbaf7a3418e83b642424"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/InsideOfTruck/scripts.inc",
+    "rawScript": "setstepcallback STEP_CB_TRUCK\n\tend"
+  },
+  "label": "InsideOfTruck_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/InsideOfTruck/scripts.inc",
+  "references": {}
+}

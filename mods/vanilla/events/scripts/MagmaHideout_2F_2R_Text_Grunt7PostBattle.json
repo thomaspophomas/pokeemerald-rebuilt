@@ -1,0 +1,19 @@
+{
+  "id": "MagmaHideout_2F_2R_Text_Grunt7PostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_2F_2R/scripts.inc",
+    "sha1": "01615ee55415554a4833c7cd9790ada769e12792"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_2F_2R/scripts.inc",
+    "rawScript": ".string \"You just happened to win this time,\\n\"\n\t.string \"but that doesn't matter.\\p\"\n\t.string \"TEAM MAGMA's goal is about to be\\n\"\n\t.string \"reached!$\""
+  },
+  "label": "MagmaHideout_2F_2R_Text_Grunt7PostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MagmaHideout_2F_2R/scripts.inc",
+  "references": {}
+}

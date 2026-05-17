@@ -1,0 +1,19 @@
+{
+  "id": "Route114_LanettesHouse_Text_ResearchNotesPage2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_LanettesHouse/scripts.inc",
+    "sha1": "91f2126eb51b441d0e51b50e9d41b4e45bf67494"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114_LanettesHouse/scripts.inc",
+    "rawScript": ".string \"A marking system should be added to\\n\"\n\t.string \"make POK\u00e9MON easier to organize.\\p\"\n\t.string \"The name and wallpaper design of each\\n\"\n\t.string \"BOX will be made changeable to please\\l\"\n\t.string \"the stored POK\u00e9MON.\\p\"\n\t.string \"Keep reading?$\""
+  },
+  "label": "Route114_LanettesHouse_Text_ResearchNotesPage2",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route114_LanettesHouse/scripts.inc",
+  "references": {}
+}

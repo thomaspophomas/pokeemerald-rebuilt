@@ -1,0 +1,30 @@
+{
+  "id": "RustboroCity_DevonCorp_3F_EventScript_GiveExpShare",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+    "sha1": "c9490be6666cd7ea155cae31641c765560806127"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+    "rawScript": "msgbox RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter, MSGBOX_DEFAULT\n\tgiveitem ITEM_EXP_SHARE\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_RECEIVED_EXP_SHARE\n\tmsgbox RustboroCity_DevonCorp_3F_Text_ExplainExpShare, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection\n\twaitmovement 0\n\trelease\n\tend"
+  },
+  "label": "RustboroCity_DevonCorp_3F_EventScript_GiveExpShare",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_EXP_SHARE"
+    ],
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_EXP_SHARE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomNormal_Movement_Trainer2WalkLeft",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "sha1": "54c1e0ee021a3a91375f3b05c8682c17ed095aa9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "rawScript": "walk_left\n\tstep_end"
+  },
+  "label": "BattleFrontier_BattlePikeRoomNormal_Movement_Trainer2WalkLeft",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+  "references": {}
+}

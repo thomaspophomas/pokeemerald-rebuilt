@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Text_BirchRivalGoneHome",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": ".string \"PROF. BIRCH: {RIVAL}?\\n\"\n\t.string \"Gone home, I think.\\p\"\n\t.string \"Or maybe that kid's scrabbling around\\n\"\n\t.string \"in tall grass again somewhere\u2026\\p\"\n\t.string \"If you or your POK\u00e9MON get tired,\\n\"\n\t.string \"you should get some rest at home.$\""
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Text_BirchRivalGoneHome",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

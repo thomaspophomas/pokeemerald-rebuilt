@@ -1,0 +1,19 @@
+{
+  "id": "Route113_GlassWorkshop_Text_NotEnoughAshNeedX",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "sha1": "6a7101e66439e9abedcc55c8fc60b573807258b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "rawScript": ".string \"Hmmm\u2026\\n\"\n\t.string \"There's not enough ash here, huff-puff.\\l\"\n\t.string \"I can't make glass with this, huff-puff.\\p\"\n\t.string \"Let's see\u2026 {STR_VAR_1} is the number of steps\\n\"\n\t.string \"you'll need to walk for me to make you\\l\"\n\t.string \"a BLUE FLUTE, huff-puff.$\""
+  },
+  "label": "Route113_GlassWorkshop_Text_NotEnoughAshNeedX",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route113_GlassWorkshop/scripts.inc",
+  "references": {}
+}

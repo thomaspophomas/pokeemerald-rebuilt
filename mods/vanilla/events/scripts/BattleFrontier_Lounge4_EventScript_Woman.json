@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge4_EventScript_Woman",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge4/scripts.inc",
+    "sha1": "9b6c3a62293ca4381efbd412bf582bb9edb26961"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge4/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_Lounge4_Text_WonderIfInterviewsAiring, MSGBOX_NPC\n\tend"
+  },
+  "label": "BattleFrontier_Lounge4_EventScript_Woman",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_Lounge4/scripts.inc",
+  "references": {}
+}

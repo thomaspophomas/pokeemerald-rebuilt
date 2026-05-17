@@ -1,0 +1,27 @@
+{
+  "id": "Common_EventScript_TransferredToPC",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/pc_transfer.inc",
+    "sha1": "89076aa37dfc6e20e6d83501c342a8a7b58101be"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/pc_transfer.inc",
+    "rawScript": "bufferboxname STR_VAR_1, VAR_PC_BOX_TO_SEND_MON\n\tbufferspeciesname STR_VAR_2, VAR_TEMP_TRANSFERRED_SPECIES\n\tcall_if_unset FLAG_SYS_PC_LANETTE, EventScript_TransferredSomeonesPC\n\tcall_if_set FLAG_SYS_PC_LANETTE, EventScript_TransferredLanettesPC\n\treturn"
+  },
+  "label": "Common_EventScript_TransferredToPC",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/pc_transfer.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_PC_LANETTE"
+    ],
+    "vars": [
+      "VAR_PC_BOX_TO_SEND_MON",
+      "VAR_TEMP_TRANSFERRED_SPECIES"
+    ]
+  }
+}

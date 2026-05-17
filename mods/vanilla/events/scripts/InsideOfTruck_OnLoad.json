@@ -1,0 +1,19 @@
+{
+  "id": "InsideOfTruck_OnLoad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/InsideOfTruck/scripts.inc",
+    "sha1": "4a49579e348e8a2c251edbaf7a3418e83b642424"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/InsideOfTruck/scripts.inc",
+    "rawScript": "setmetatile 4, 1, METATILE_InsideOfTruck_ExitLight_Top, FALSE\n\tsetmetatile 4, 2, METATILE_InsideOfTruck_ExitLight_Mid, FALSE\n\tsetmetatile 4, 3, METATILE_InsideOfTruck_ExitLight_Bottom, FALSE\n\tend"
+  },
+  "label": "InsideOfTruck_OnLoad",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/InsideOfTruck/scripts.inc",
+  "references": {}
+}

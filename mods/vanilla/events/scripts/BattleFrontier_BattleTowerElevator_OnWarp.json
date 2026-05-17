@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerElevator_OnWarp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerElevator/scripts.inc",
+    "sha1": "65b36e61ef641273e99565ebbc7fd034e09562e1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerElevator/scripts.inc",
+    "rawScript": "map_script_2 VAR_TEMP_1, 0, BattleFrontier_BattleTowerElevator_EventScript_TurnPlayerNorth\n\t.2byte 0"
+  },
+  "label": "BattleFrontier_BattleTowerElevator_OnWarp",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerElevator/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1"
+    ]
+  }
+}

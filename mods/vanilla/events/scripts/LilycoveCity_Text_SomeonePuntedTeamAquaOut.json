@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_SomeonePuntedTeamAquaOut",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"Ahoy, did you know?\\p\"\n\t.string \"Someone punted TEAM AQUA out of\\n\"\n\t.string \"the way for us!\\p\"\n\t.string \"That got the WAILMER out of the cove,\\n\"\n\t.string \"so we can get our boats out again.$\""
+  },
+  "label": "LilycoveCity_Text_SomeonePuntedTeamAquaOut",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

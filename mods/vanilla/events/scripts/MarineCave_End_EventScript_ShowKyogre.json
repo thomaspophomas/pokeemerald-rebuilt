@@ -1,0 +1,26 @@
+{
+  "id": "MarineCave_End_EventScript_ShowKyogre",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MarineCave_End/scripts.inc",
+    "sha1": "9fc74c6c75db5dcc1953c7f9fbd123e07dd022d5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MarineCave_End/scripts.inc",
+    "rawScript": "clearflag FLAG_HIDE_MARINE_CAVE_KYOGRE\n\tsetvar VAR_TEMP_1, 1\n\treturn"
+  },
+  "label": "MarineCave_End_EventScript_ShowKyogre",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MarineCave_End/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_MARINE_CAVE_KYOGRE"
+    ],
+    "vars": [
+      "VAR_TEMP_1"
+    ]
+  }
+}

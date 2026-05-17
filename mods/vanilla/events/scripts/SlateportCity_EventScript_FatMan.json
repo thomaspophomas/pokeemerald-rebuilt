@@ -1,0 +1,23 @@
+{
+  "id": "SlateportCity_EventScript_FatMan",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": "goto_if_eq VAR_SLATEPORT_CITY_STATE, 1, SlateportCity_EventScript_FatManSternInterview\n\tmsgbox SlateportCity_Text_BushedHikingFromMauville, MSGBOX_NPC\n\tend"
+  },
+  "label": "SlateportCity_EventScript_FatMan",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_SLATEPORT_CITY_STATE"
+    ]
+  }
+}

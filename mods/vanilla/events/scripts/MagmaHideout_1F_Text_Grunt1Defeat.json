@@ -1,0 +1,19 @@
+{
+  "id": "MagmaHideout_1F_Text_Grunt1Defeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_1F/scripts.inc",
+    "sha1": "56855cc0486a1bd6fed1956c54134b994aeb627c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_1F/scripts.inc",
+    "rawScript": ".string \"I'm always late for training sessions,\\n\"\n\t.string \"too!\\p\"\n\t.string \"I hate to say it, but I'm wimpy\u2026$\""
+  },
+  "label": "MagmaHideout_1F_Text_Grunt1Defeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MagmaHideout_1F/scripts.inc",
+  "references": {}
+}

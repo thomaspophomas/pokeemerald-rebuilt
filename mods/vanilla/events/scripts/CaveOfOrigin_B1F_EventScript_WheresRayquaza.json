@@ -1,0 +1,23 @@
+{
+  "id": "CaveOfOrigin_B1F_EventScript_WheresRayquaza",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+    "sha1": "fdccb9d45cf308bd7d76aa97e9b5d7eb16b80004"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+    "rawScript": "multichoice 0, 0, MULTI_WHERES_RAYQUAZA, FALSE\n\tswitch VAR_RESULT\n\tcase 0, CaveOfOrigin_B1F_EventScript_AtCaveOfOrigin\n\tcase 1, CaveOfOrigin_B1F_EventScript_AtMtPyre\n\tcase 2, CaveOfOrigin_B1F_EventScript_AtSkyPillar\n\tcase 3, CaveOfOrigin_B1F_EventScript_DontRemember\n\tgoto CaveOfOrigin_B1F_EventScript_DontRemember\n\tend"
+  },
+  "label": "CaveOfOrigin_B1F_EventScript_WheresRayquaza",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

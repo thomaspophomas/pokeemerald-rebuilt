@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ExchangeServiceCorner_Text_ConfirmScopeLens",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
+    "sha1": "3bee0ca682f7b98f6a5f16085e830466d47ef6e9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
+    "rawScript": ".string \"You've chosen the SCOPE LENS.\\n\"\n\t.string \"Is that correct?$\""
+  },
+  "label": "BattleFrontier_ExchangeServiceCorner_Text_ConfirmScopeLens",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
+  "references": {}
+}

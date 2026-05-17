@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Gym_1F_Text_GymGuideAdvice",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "sha1": "b82ae91ab89ff7156e8125891eff9b7e6a2a260f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "rawScript": ".string \"Hey, how's it going, CHAMPION-\\n\"\n\t.string \"bound {PLAYER}?\\p\"\n\t.string \"LAVARIDGE's GYM LEADER FLANNERY\\n\"\n\t.string \"uses FIRE-type POK\u00e9MON.\\p\"\n\t.string \"Her passion for POK\u00e9MON burns stronger\\n\"\n\t.string \"and hotter than a volcano.\\p\"\n\t.string \"Don't get too close to her--you'll burn!\\n\"\n\t.string \"Hose her down with water and then\\l\"\n\t.string \"go for it!$\""
+  },
+  "label": "LavaridgeTown_Gym_1F_Text_GymGuideAdvice",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+  "references": {}
+}

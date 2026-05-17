@@ -1,0 +1,19 @@
+{
+  "id": "Route110_TrickHouseEntrance_Text_InMidstOfDevisingNewChallenges",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "sha1": "9367efc136143832c1697fbcc61fbb296269d396"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "rawScript": ".string \"Hah? What?!\\n\"\n\t.string \"Oh, it's you!\\p\"\n\t.string \"I'm in the midst of devising new tricky\\n\"\n\t.string \"challenges!\\p\"\n\t.string \"It's not too much to ask for a bit more\\n\"\n\t.string \"time for me to think, is it now?\\l\"\n\t.string \"You wouldn't begrudge me that?\\l\"\n\t.string \"Come back in a little while!$\""
+  },
+  "label": "Route110_TrickHouseEntrance_Text_InMidstOfDevisingNewChallenges",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+  "references": {}
+}

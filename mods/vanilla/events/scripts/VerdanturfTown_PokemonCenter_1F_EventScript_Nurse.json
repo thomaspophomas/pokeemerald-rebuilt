@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_PokemonCenter_1F_EventScript_Nurse",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc",
+    "sha1": "732bae5c84091e111c778e1203e61171dca9d52e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc",
+    "rawScript": "setvar VAR_0x800B, LOCALID_VERDANTURF_NURSE\n\tcall Common_EventScript_PkmnCenterNurse\n\twaitmessage\n\twaitbuttonpress\n\trelease\n\tend"
+  },
+  "label": "VerdanturfTown_PokemonCenter_1F_EventScript_Nurse",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

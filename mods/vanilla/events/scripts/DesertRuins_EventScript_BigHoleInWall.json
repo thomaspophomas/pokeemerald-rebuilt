@@ -1,0 +1,19 @@
+{
+  "id": "DesertRuins_EventScript_BigHoleInWall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DesertRuins/scripts.inc",
+    "sha1": "7b1ac7de378ca6e87b7881e86adb2bcb9af94a6b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DesertRuins/scripts.inc",
+    "rawScript": "msgbox gText_BigHoleInTheWall, MSGBOX_DEFAULT\n\treleaseall\n\tend"
+  },
+  "label": "DesertRuins_EventScript_BigHoleInWall",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DesertRuins/scripts.inc",
+  "references": {}
+}

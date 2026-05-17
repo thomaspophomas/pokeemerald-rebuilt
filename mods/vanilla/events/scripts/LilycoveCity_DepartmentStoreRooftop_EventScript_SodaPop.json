@@ -1,0 +1,26 @@
+{
+  "id": "LilycoveCity_DepartmentStoreRooftop_EventScript_SodaPop",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc",
+    "sha1": "3ac544c7b01d367272ba9a3a4ac85c927eeb0c61"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc",
+    "rawScript": "setvar VAR_TEMP_0, ITEM_SODA_POP\n\tgoto LilycoveCity_DepartmentStoreRooftop_EventScript_TryBuyDrink\n\tend"
+  },
+  "label": "LilycoveCity_DepartmentStoreRooftop_EventScript_SodaPop",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0"
+    ],
+    "items": [
+      "ITEM_SODA_POP"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Route102_EventScript_AmyRegisterMatchCallAfterBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route103/scripts.inc",
+    "sha1": "cdbe6074bf0bdfa44494ccf1457b18c3de43e0de"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route103/scripts.inc",
+    "rawScript": "msgbox Route103_Text_AmyLivRegister, MSGBOX_DEFAULT\n\tregister_matchcall TRAINER_AMY_AND_LIV_1\n\trelease\n\tend"
+  },
+  "label": "Route102_EventScript_AmyRegisterMatchCallAfterBattle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route103/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_AMY_AND_LIV_1"
+    ]
+  }
+}

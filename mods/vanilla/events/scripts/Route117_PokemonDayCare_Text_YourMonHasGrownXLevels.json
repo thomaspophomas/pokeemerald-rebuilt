@@ -1,0 +1,19 @@
+{
+  "id": "Route117_PokemonDayCare_Text_YourMonHasGrownXLevels",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/day_care.inc",
+    "sha1": "b807399ab522de3ba938194e85f890a343362752"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/day_care.inc",
+    "rawScript": ".string \"By level, your {STR_VAR_1} has\\n\"\n\t.string \"grown by {STR_VAR_2}.$\""
+  },
+  "label": "Route117_PokemonDayCare_Text_YourMonHasGrownXLevels",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/day_care.inc",
+  "references": {}
+}

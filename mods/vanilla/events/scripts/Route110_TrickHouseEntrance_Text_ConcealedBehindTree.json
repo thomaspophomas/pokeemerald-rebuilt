@@ -1,0 +1,19 @@
+{
+  "id": "Route110_TrickHouseEntrance_Text_ConcealedBehindTree",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "sha1": "9367efc136143832c1697fbcc61fbb296269d396"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "rawScript": ".string \"Hah? Grrr\u2026\\p\"\n\t.string \"How did you know I concealed myself\\n\"\n\t.string \"behind this tree? You're sharp!$\""
+  },
+  "label": "Route110_TrickHouseEntrance_Text_ConcealedBehindTree",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+  "references": {}
+}

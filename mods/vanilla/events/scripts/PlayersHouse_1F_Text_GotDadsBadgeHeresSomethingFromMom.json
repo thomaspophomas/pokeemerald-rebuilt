@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "sha1": "b92e18aeb34c3856db794aa81beeec7f0f0de717"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "rawScript": ".string \"MOM: Oh? Did DAD give you that BADGE?\\p\"\n\t.string \"Then here's something from your MOM!$\""
+  },
+  "label": "PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+  "references": {}
+}

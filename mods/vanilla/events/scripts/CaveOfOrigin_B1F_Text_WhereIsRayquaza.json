@@ -1,0 +1,19 @@
+{
+  "id": "CaveOfOrigin_B1F_Text_WhereIsRayquaza",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+    "sha1": "fdccb9d45cf308bd7d76aa97e9b5d7eb16b80004"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+    "rawScript": ".string \"WALLACE: {PLAYER}{KUN}, do you perhaps\\n\"\n\t.string \"know where RAYQUAZA is now?\\p\"\n\t.string \"If you do, please tell me.$\""
+  },
+  "label": "CaveOfOrigin_B1F_Text_WhereIsRayquaza",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+  "references": {}
+}

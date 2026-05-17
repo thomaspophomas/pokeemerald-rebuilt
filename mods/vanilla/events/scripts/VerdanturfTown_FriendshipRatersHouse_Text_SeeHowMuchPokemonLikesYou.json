@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_FriendshipRatersHouse_Text_SeeHowMuchPokemonLikesYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.inc",
+    "sha1": "b4d2575de6fbd769af370533b2421fabb9e4e2f7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.inc",
+    "rawScript": ".string \"Let me see your POK\u00e9MON.\\n\"\n\t.string \"I'll check to see how much it likes you.\\p\"\n\t.string \"Oh.\\n\"\n\t.string \"Your POK\u00e9MON\u2026$\""
+  },
+  "label": "VerdanturfTown_FriendshipRatersHouse_Text_SeeHowMuchPokemonLikesYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.inc",
+  "references": {}
+}

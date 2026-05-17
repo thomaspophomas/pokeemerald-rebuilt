@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleFrontier_BattlePalaceLobby_OnFrame\n\tmap_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, BattleFrontier_BattlePalaceLobby_OnWarp\n\t.byte 0"
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE"
+    ]
+  }
+}

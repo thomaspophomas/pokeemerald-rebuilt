@@ -1,0 +1,23 @@
+{
+  "id": "FortreeCity_EventScript_AskUseDevonScope",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity/scripts.inc",
+    "sha1": "a1f53b6d8b894e2f69fc9a5c4e1509ef9ab3ce09"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity/scripts.inc",
+    "rawScript": "msgbox FortreeCity_Text_UnseeableUseDevonScope, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, FortreeCity_EventScript_UseDevonScope\n\trelease\n\tend"
+  },
+  "label": "FortreeCity_EventScript_AskUseDevonScope",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FortreeCity/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

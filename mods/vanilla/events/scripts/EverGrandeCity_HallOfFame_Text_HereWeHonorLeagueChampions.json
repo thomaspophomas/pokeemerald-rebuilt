@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_HallOfFame/scripts.inc",
+    "sha1": "c6da78131eff88a85e046e0e631d7de403522957"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_HallOfFame/scripts.inc",
+    "rawScript": ".string \"WALLACE: This room\u2026\\p\"\n\t.string \"This is where we keep records of\\n\"\n\t.string \"POK\u00e9MON that prevailed through\\l\"\n\t.string \"harsh battles.\\p\"\n\t.string \"It is here that the LEAGUE CHAMPIONS\\n\"\n\t.string \"are honored.$\""
+  },
+  "label": "EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_HallOfFame/scripts.inc",
+  "references": {}
+}

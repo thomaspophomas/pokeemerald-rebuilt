@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Text_MayWhatNextImStayingHere",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": ".string \"MAY: {PLAYER}{KUN}, after this\u2026\\n\"\n\t.string \"What are you going to do?\\p\"\n\t.string \"Are you going to keep battling\\n\"\n\t.string \"and sharpening your skills?\\p\"\n\t.string \"Or are you going to try filling\\n\"\n\t.string \"the NATIONAL POK\u00e9DEX?\\p\"\n\t.string \"I'm staying here to help the PROF.$\""
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Text_MayWhatNextImStayingHere",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

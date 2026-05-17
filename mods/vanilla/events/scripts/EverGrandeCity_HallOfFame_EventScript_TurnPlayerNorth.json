@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_HallOfFame_EventScript_TurnPlayerNorth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_HallOfFame/scripts.inc",
+    "sha1": "c6da78131eff88a85e046e0e631d7de403522957"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_HallOfFame/scripts.inc",
+    "rawScript": "turnobject LOCALID_PLAYER, DIR_NORTH\n\tend"
+  },
+  "label": "EverGrandeCity_HallOfFame_EventScript_TurnPlayerNorth",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_HallOfFame/scripts.inc",
+  "references": {}
+}

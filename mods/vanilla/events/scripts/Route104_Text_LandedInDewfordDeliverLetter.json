@@ -1,0 +1,19 @@
+{
+  "id": "Route104_Text_LandedInDewfordDeliverLetter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown/scripts.inc",
+    "sha1": "e9e724e6d3bba641bcb2d4263fe226ee6c1b4840"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown/scripts.inc",
+    "rawScript": ".string \"MR. BRINEY: Ahoy!\\n\"\n\t.string \"We've hit land in DEWFORD.\\p\"\n\t.string \"I suppose you're off to deliver that\\n\"\n\t.string \"LETTER to, who was it now, STEVEN!$\""
+  },
+  "label": "Route104_Text_LandedInDewfordDeliverLetter",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown/scripts.inc",
+  "references": {}
+}

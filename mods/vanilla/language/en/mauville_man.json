@@ -1,0 +1,36 @@
+{
+  "id": "en:mauville_man",
+  "domain": "language",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/text/mauville_man.inc",
+    "sha1": "85fca74ac653843a1f28e20fd57a3270aad10414"
+  },
+  "legacy": {
+    "kind": "asm_text_labels",
+    "sourcePath": "data/text/mauville_man.inc"
+  },
+  "language": "en",
+  "group": "mauville_man",
+  "runtime": false,
+  "strings": {
+    "GiddyText_SoPretty": ".string \" so pretty!$\"",
+    "GiddyText_SoDarling": ".string \" so darling!$\"",
+    "GiddyText_SoRelaxed": ".string \" so relaxed!$\"",
+    "GiddyText_SoSunny": ".string \" so sunny!$\"",
+    "GiddyText_SoDesirable": ".string \" so desirable!$\"",
+    "GiddyText_SoExciting": ".string \" so exciting!$\"",
+    "GiddyText_SoAmusing": ".string \" so amusing!$\"",
+    "GiddyText_SoMagical": ".string \" so magical!$\"",
+    "GiddyText_Is": ".string \" is$\"",
+    "GiddyText_DontYouAgree": ".string \"\\n\"\n\t.string \"Don't you agree?$\"",
+    "GiddyText_ISoWantToGoOnAVacation": ".string \"I so want to go on a vacation.\\n\"\n\t.string \"Would you happen to know a nice place?$\"",
+    "GiddyText_IBoughtCrayonsWith120Colors": ".string \"I bought crayons with 120 colors!\\n\"\n\t.string \"Don't you think that's nice?$\"",
+    "GiddyText_WouldntItBeNiceIfWeCouldFloat": ".string \"Wouldn't it be nice if we could float\\n\"\n\t.string \"away on a cloud of bubbles?$\"",
+    "GiddyText_WhenYouWriteOnASandyBeach": ".string \"When you write on a sandy beach,\\n\"\n\t.string \"they wash away. It makes me sad.$\"",
+    "GiddyText_WhatsTheBottomOfTheSeaLike": ".string \"What's the bottom of the sea like?\\n\"\n\t.string \"Just once I would so love to go!$\"",
+    "GiddyText_WhenYouSeeTheSettingSunDoesIt": ".string \"When you see the setting sun, does it\\n\"\n\t.string \"make you want to go home?$\"",
+    "GiddyText_LyingBackInTheGreenGrass": ".string \"Lying back in the green grass\u2026\\n\"\n\t.string \"Oh, it's so, so nice!$\"",
+    "GiddyText_SecretBasesAreSoWonderful": ".string \"SECRET BASES are so wonderful!\\n\"\n\t.string \"Can't you feel the excitement?$\""
+  }
+}

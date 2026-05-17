@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_BattleTentLobby_Text_IllTryUsingBugMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+    "sha1": "d8233cb564c951151609565c69259c5bc6039b75"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+    "rawScript": ".string \"I don't really like BUG POK\u00e9MON,\\n\"\n\t.string \"but maybe I'll try using some for\\l\"\n\t.string \"a change of pace.\\p\"\n\t.string \"Who knows, I might even get to like\\n\"\n\t.string \"them!$\""
+  },
+  "label": "SlateportCity_BattleTentLobby_Text_IllTryUsingBugMons",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+  "references": {}
+}

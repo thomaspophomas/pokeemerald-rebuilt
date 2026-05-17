@@ -1,0 +1,31 @@
+{
+  "id": "LavaridgeTown_Mart_Pokemart",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Mart/scripts.inc",
+    "sha1": "9ccd266cfc46c11e6006af62bd5e1b2c6ea3ae0e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_Mart/scripts.inc",
+    "rawScript": ".2byte ITEM_GREAT_BALL\n\t.2byte ITEM_SUPER_POTION\n\t.2byte ITEM_ANTIDOTE\n\t.2byte ITEM_PARALYZE_HEAL\n\t.2byte ITEM_AWAKENING\n\t.2byte ITEM_BURN_HEAL\n\t.2byte ITEM_REVIVE\n\t.2byte ITEM_SUPER_REPEL\n\t.2byte ITEM_X_SPEED\n\tpokemartlistend"
+  },
+  "label": "LavaridgeTown_Mart_Pokemart",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/LavaridgeTown_Mart/scripts.inc",
+  "references": {
+    "items": [
+      "ITEM_ANTIDOTE",
+      "ITEM_AWAKENING",
+      "ITEM_BURN_HEAL",
+      "ITEM_GREAT_BALL",
+      "ITEM_PARALYZE_HEAL",
+      "ITEM_REVIVE",
+      "ITEM_SUPER_POTION",
+      "ITEM_SUPER_REPEL",
+      "ITEM_X_SPEED"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "sha1": "7a1e00c78bbfbd0fbd6eb59a84a4d4e7114e4261"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "rawScript": ".string \"\u201cOCEANIC MINIFACT 1\\n\"\n\t.string \"Why is seawater blue?\\p\"\n\t.string \"\u201cLight is composed of many colors.\\p\"\n\t.string \"\u201cWhen light passes through water,\\n\"\n\t.string \"most kinds of light lose color.\\p\"\n\t.string \"\u201cHowever, blue light retains its\\n\"\n\t.string \"color, making the sea appear blue.\u201d$\""
+  },
+  "label": "SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact1",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+  "references": {}
+}

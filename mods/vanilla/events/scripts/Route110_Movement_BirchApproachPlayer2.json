@@ -1,0 +1,19 @@
+{
+  "id": "Route110_Movement_BirchApproachPlayer2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/scripts.inc",
+    "sha1": "ee9846425d6a96c03ac988decb3c48ffbd098f22"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110/scripts.inc",
+    "rawScript": "walk_down\n\twalk_left\n\twalk_down\n\tstep_end"
+  },
+  "label": "Route110_Movement_BirchApproachPlayer2",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/Route110/scripts.inc",
+  "references": {}
+}

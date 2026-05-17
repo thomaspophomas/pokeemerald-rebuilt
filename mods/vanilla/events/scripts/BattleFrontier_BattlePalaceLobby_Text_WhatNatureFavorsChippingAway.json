@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_Text_WhatNatureFavorsChippingAway",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": ".string \"I wonder what sort of nature a POK\u00e9MON\\n\"\n\t.string \"would have if it favored enfeebling its\\l\"\n\t.string \"opponents and chipping away slowly.\\p\"\n\t.string \"I'd be surprised if it was a LAX nature.\\p\"\n\t.string \"But, nah, that can't be right.$\""
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_Text_WhatNatureFavorsChippingAway",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {}
+}

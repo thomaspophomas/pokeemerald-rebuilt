@@ -1,0 +1,19 @@
+{
+  "id": "Route110_TrickHousePuzzle_EventScript_FoundScroll",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "sha1": "9367efc136143832c1697fbcc61fbb296269d396"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "rawScript": "playfanfare MUS_OBTAIN_ITEM\n\tmessage Route110_TrickHousePuzzle_Text_FoundAScroll\n\twaitfanfare\n\tmsgbox Route110_TrickHousePuzzle_Text_MemorizedSecretCode, MSGBOX_DEFAULT\n\treleaseall\n\tend"
+  },
+  "label": "Route110_TrickHousePuzzle_EventScript_FoundScroll",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+  "references": {}
+}

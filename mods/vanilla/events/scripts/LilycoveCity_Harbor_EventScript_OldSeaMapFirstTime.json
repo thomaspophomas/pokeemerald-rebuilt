@@ -1,0 +1,29 @@
+{
+  "id": "LilycoveCity_Harbor_EventScript_OldSeaMapFirstTime",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "sha1": "ffd83f00915b03bfdd96f51950251d00dd19dbcb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "rawScript": "setflag FLAG_SHOWN_OLD_SEA_MAP\n\tmsgbox EventTicket_Text_ShowOldSeaMap, MSGBOX_DEFAULT\n\tclosemessage\n\tcall LilycoveCity_Harbor_EventScript_GetEventTicketSailor\n\tmsgbox EventTicket_Text_OldSeaMapTooFar, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_LILYCOVE_HARBOR_FERRY_SAILOR, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tplayse SE_PIN\n\tapplymovement LOCALID_LILYCOVE_HARBOR_FERRY_SAILOR, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_LILYCOVE_HARBOR_FERRY_SAILOR, Common_Movement_Delay48\n\twaitmovement 0\n\tcall_if_eq VAR_FACING, DIR_NORTH, LilycoveCity_Harbor_EventScript_MoveSailorOutOfWayNorth\n\tcall_if_eq VAR_FACING, DIR_EAST, LilycoveCity_Harbor_EventScript_MoveSailorOutOfWayEast\n\taddobject LOCALID_LILYCOVE_HARBOR_BRINEY\n\tcall_if_eq VAR_FACING, DIR_NORTH, LilycoveCity_Harbor_EventScript_BrineyFaceSailorNorth\n\tcall_if_eq VAR_FACING, DIR_EAST, LilycoveCity_Harbor_EventScript_BrineyFaceSailorEast\n\tmsgbox EventTicket_Text_BrineyHoldOnASecond, MSGBOX_DEFAULT\n\tcall_if_eq VAR_FACING, DIR_NORTH, LilycoveCity_Harbor_EventScript_BrineyFacePlayerNorth\n\tcall_if_eq VAR_FACING, DIR_EAST, LilycoveCity_Harbor_EventScript_BrineyFacePlayerEast\n\tmsgbox EventTicket_Text_BrineyLetsSail, MSGBOX_DEFAULT\n\tclosemessage\n\tcall_if_eq VAR_FACING, DIR_NORTH, LilycoveCity_Harbor_EventScript_BoardFerryWithBrineyAndSailorNorth\n\tcall_if_eq VAR_FACING, DIR_EAST, LilycoveCity_Harbor_EventScript_BoardFerryWithBrineyAndSailorEast\n\tsetvar VAR_0x8004, LOCALID_LILYCOVE_HARBOR_SS_TIDAL\n\tcall Common_EventScript_FerryDepart\n\twarp MAP_FARAWAY_ISLAND_ENTRANCE, 13, 38\n\twaitstate\n\trelease\n\tend"
+  },
+  "label": "LilycoveCity_Harbor_EventScript_OldSeaMapFirstTime",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_Harbor/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SHOWN_OLD_SEA_MAP"
+    ],
+    "vars": [
+      "VAR_FACING"
+    ],
+    "maps": [
+      "MAP_FARAWAY_ISLAND_ENTRANCE"
+    ]
+  }
+}

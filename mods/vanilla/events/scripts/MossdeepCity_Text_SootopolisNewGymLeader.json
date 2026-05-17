@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Text_SootopolisNewGymLeader",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/scripts.inc",
+    "sha1": "33f0f7f83a475484aaca395542c6bd65a6f2dd45"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity/scripts.inc",
+    "rawScript": ".string \"Ahh\u2026 It feels great letting the waves\\n\"\n\t.string \"wash over my feet\u2026\\p\"\n\t.string \"Speaking of the waves, you know that\\n\"\n\t.string \"island city SOOTOPOLIS?\\p\"\n\t.string \"I think the GYM there had a new\\n\"\n\t.string \"LEADER come in.\\p\"\n\t.string \"People tell me the new LEADER once\\n\"\n\t.string \"mentored WALLACE.$\""
+  },
+  "label": "MossdeepCity_Text_SootopolisNewGymLeader",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity/scripts.inc",
+  "references": {}
+}

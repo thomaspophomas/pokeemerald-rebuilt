@@ -1,0 +1,27 @@
+{
+  "id": "NewMauville_Entrance_EventScript_Door",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NewMauville_Entrance/scripts.inc",
+    "sha1": "f27dc6b4117073bcedc10e2cc744e7b01086fb95"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NewMauville_Entrance/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tmsgbox NewMauville_Entrance_Text_DoorIsLocked, MSGBOX_DEFAULT\n\tcheckitem ITEM_BASEMENT_KEY\n\tgoto_if_eq VAR_RESULT, FALSE, NewMauville_Entrance_EventScript_DontOpenDoor\n\tmsgbox NewMauville_Entrance_Text_UseBasementKey, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, NewMauville_Entrance_EventScript_DontOpenDoor\n\tmsgbox NewMauville_Entrance_Text_UsedBasementKey, MSGBOX_DEFAULT\n\tsetmetatile 3, 0, METATILE_Facility_NewMauvilleDoor_Open_Tile0, FALSE\n\tsetmetatile 4, 0, METATILE_Facility_NewMauvilleDoor_Open_Tile1, FALSE\n\tsetmetatile 5, 0, METATILE_Facility_NewMauvilleDoor_Open_Tile2, FALSE\n\tsetmetatile 3, 1, METATILE_Facility_NewMauvilleDoor_Open_Tile3, TRUE\n\tsetmetatile 4, 1, METATILE_Facility_NewMauvilleDoor_Open_Tile4, FALSE\n\tsetmetatile 5, 1, METATILE_Facility_NewMauvilleDoor_Open_Tile5, TRUE\n\tspecial DrawWholeMapView\n\tplayse SE_BANG\n\tsetvar VAR_NEW_MAUVILLE_STATE, 1\n\treleaseall\n\tend"
+  },
+  "label": "NewMauville_Entrance_EventScript_Door",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/NewMauville_Entrance/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_NEW_MAUVILLE_STATE",
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_BASEMENT_KEY"
+    ]
+  }
+}

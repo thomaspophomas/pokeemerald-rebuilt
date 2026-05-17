@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Text_AfterAllOurScheming",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": ".string \"MAXIE: So the super-ancient POK\u00e9MON\\n\"\n\t.string \"weren't only GROUDON and KYOGRE\u2026\\p\"\n\t.string \"After all our fruitless scheming and\\n\"\n\t.string \"frantic efforts, that one POK\u00e9MON's\\l\"\n\t.string \"simple action puts everything right\\l\"\n\t.string \"again as if nothing had happened\u2026\\p\"\n\t.string \"Fu\u2026\\n\"\n\t.string \"Fuhahaha\u2026$\""
+  },
+  "label": "SootopolisCity_Text_AfterAllOurScheming",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

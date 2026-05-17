@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_Text_LadyCanTellWhatMonsThink",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": ".string \"For a hardy fellow like me,\\n\"\n\t.string \"hardy POK\u00e9MON are the best.\\p\"\n\t.string \"Offense is the best defense!\\n\"\n\t.string \"A relentless attack is the ultimate!\\p\"\n\t.string \"But that's not what I wanted to chat\\n\"\n\t.string \"about.\\p\"\n\t.string \"Every so often a really cute lady\\n\"\n\t.string \"swings by here.\\p\"\n\t.string \"She says that she can tell what\\n\"\n\t.string \"POK\u00e9MON are thinking.\\p\"\n\t.string \"I don't know about that part,\\n\"\n\t.string \"but she is really cute.\\p\"\n\t.string \"Huh?\\n\"\n\t.string \"Why are you looking at me like that?$\""
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_Text_LadyCanTellWhatMonsThink",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_TransferredLanettesPC",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/pc_transfer.inc",
+    "sha1": "89076aa37dfc6e20e6d83501c342a8a7b58101be"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/pc_transfer.inc",
+    "rawScript": "specialvar VAR_RESULT, ShouldShowBoxWasFullMessage\n\tgoto_if_eq VAR_RESULT, TRUE, EventScript_LanettesPCBoxFull\n\tmsgbox gText_PkmnTransferredLanettesPC, MSGBOX_DEFAULT\n\treturn"
+  },
+  "label": "EventScript_TransferredLanettesPC",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/pc_transfer.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

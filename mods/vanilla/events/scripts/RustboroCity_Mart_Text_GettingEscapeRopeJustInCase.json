@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Mart_Text_GettingEscapeRopeJustInCase",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Mart/scripts.inc",
+    "sha1": "064cba37df0c93452bb5e6cc75752460d861c58d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Mart/scripts.inc",
+    "rawScript": ".string \"I'm getting an ESCAPE ROPE just in\\n\"\n\t.string \"case I get lost in a cave.\\p\"\n\t.string \"I just need to use it to get back to\\n\"\n\t.string \"the entrance.$\""
+  },
+  "label": "RustboroCity_Mart_Text_GettingEscapeRopeJustInCase",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Mart/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Route105_EventScript_Dominik",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route105/scripts.inc",
+    "sha1": "fca1ae319346cb625967baf011ba6f8b0e2fb01a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route105/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_DOMINIK, Route105_Text_DominikIntro, Route105_Text_DominikDefeated\n\tmsgbox Route105_Text_DominikPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route105_EventScript_Dominik",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route105/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_DOMINIK"
+    ]
+  }
+}

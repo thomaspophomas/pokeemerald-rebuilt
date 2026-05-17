@@ -1,0 +1,23 @@
+{
+  "id": "RustboroCity_Flat1_2F_EventScript_GivePhrase",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+    "sha1": "bce61defe394f3175dd583157b086f1687d0ac6f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+    "rawScript": "special DoWaldaNamingScreen\n\tgoto_if_eq VAR_0x8004, 1, RustboroCity_Flat1_2F_EventScript_CancelGivePhrase\n\tgoto_if_eq VAR_0x8004, 2, RustboroCity_Flat1_2F_EventScript_CancelGiveFirstPhrase\n\tspecialvar VAR_RESULT, TryGetWallpaperWithWaldaPhrase\n\tgoto_if_eq VAR_RESULT, TRUE, RustboroCity_Flat1_2F_EventScript_WaldaLikesPhrase\n\tgoto_if_eq VAR_RESULT, FALSE, RustboroCity_Flat1_2F_EventScript_WaldaDoesntLikePhrase\n\tend"
+  },
+  "label": "RustboroCity_Flat1_2F_EventScript_GivePhrase",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

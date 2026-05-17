@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Gym_Text_HannahIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "sha1": "f1b3ae6c76fdfe44b1431df4ea78da5c11a79c08"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "rawScript": ".string \"When you lose to me, don't be too hard\\n\"\n\t.string \"on yourself.\\p\"\n\t.string \"It's not that you're weak--I'm just\\n\"\n\t.string \"too strong!$\""
+  },
+  "label": "MossdeepCity_Gym_Text_HannahIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_Gym/scripts.inc",
+  "references": {}
+}

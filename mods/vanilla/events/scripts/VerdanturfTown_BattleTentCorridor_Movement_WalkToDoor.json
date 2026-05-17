@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_BattleTentCorridor_Movement_WalkToDoor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentCorridor/scripts.inc",
+    "sha1": "8936c4f1be90d719d6d99b0c0c3c739ed9ad97c0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentCorridor/scripts.inc",
+    "rawScript": "walk_up\n\twalk_up\n\twalk_up\n\twalk_up\n\tstep_end"
+  },
+  "label": "VerdanturfTown_BattleTentCorridor_Movement_WalkToDoor",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentCorridor/scripts.inc",
+  "references": {}
+}

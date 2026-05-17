@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_House_Text_NatureToDoWithStatGains",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_House/scripts.inc",
+    "sha1": "021c615ffd2a342aedd8825c0148d7ded80baf8a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_House/scripts.inc",
+    "rawScript": ".string \"My POK\u00e9MON has a HASTY nature.\\p\"\n\t.string \"It has higher SPEED compared to\\n\"\n\t.string \"my other POK\u00e9MON.\\p\"\n\t.string \"Maybe their nature has something to\\n\"\n\t.string \"do with the stat gains of POK\u00e9MON.$\""
+  },
+  "label": "SlateportCity_House_Text_NatureToDoWithStatGains",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_House/scripts.inc",
+  "references": {}
+}

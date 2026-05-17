@@ -67,46 +67,80 @@ def main() -> int:
             {"providers": [{"id": "dark_rain", "handler": "Demo_Weather", "priority": 5}]},
         )
         write_json(
-            mod_root / "sprites" / "assets" / "assets.json",
+            mod_root / "sprite_assets" / "assets" / "guide_asset.json",
             {
-                "assets": [
-                    {
-                        "id": "guide_asset",
-                        "compressedSheetSymbol": "Demo_GuideSheet",
-                        "compressedPaletteSymbol": "Demo_GuidePalette",
-                        "tileTag": "0xF100",
-                        "paletteTag": "0xF101",
-                    }
-                ]
+                "id": "guide_asset",
+                "domain": "sprite_assets",
+                "schemaVersion": 1,
+                "compressedSheetSymbol": "Demo_GuideSheet",
+                "compressedPaletteSymbol": "Demo_GuidePalette",
+                "tileTag": "0xF100",
+                "paletteTag": "0xF101",
             },
         )
         write_json(
-            mod_root / "sprites" / "overworld" / "sprites.json",
-            {"sprites": [{"id": "guide_ow", "asset": "guide_asset", "graphicsId": "OBJ_EVENT_GFX_BOY_1"}]},
+            mod_root / "sprite_assets" / "index.json",
+            {"domain": "sprite_assets", "schemaVersion": 1, "entries": [{"id": "guide_asset", "path": "assets/guide_asset.json"}]},
         )
         write_json(
-            mod_root / "sprites" / "battle" / "sprites.json",
-            {"sprites": [{"id": "demo_ball_anim", "asset": "guide_asset", "species": 1, "side": 0}]},
+            mod_root / "overworld_sprites" / "sprites" / "guide_ow.json",
+            {"id": "guide_ow", "domain": "overworld_sprites", "schemaVersion": 1, "assetKey": "guide_asset", "graphicsId": "OBJ_EVENT_GFX_BOY_1"},
         )
         write_json(
-            mod_root / "followers" / "followers.json",
-            {"followers": [{"id": "treecko", "species": "SPECIES_TREECKO", "form": 0, "graphicsId": "OBJ_EVENT_GFX_BOY_1"}]},
+            mod_root / "overworld_sprites" / "index.json",
+            {"domain": "overworld_sprites", "schemaVersion": 1, "entries": [{"id": "guide_ow", "path": "sprites/guide_ow.json"}]},
         )
-        write_json(mod_root / "lang" / "en.json", {"strings": {"npc_intro": "Hello!"}})
-        write_json(mod_root / "lang" / "de.json", {"strings": {"npc_intro": "Hallo!"}})
         write_json(
-            mod_root / "pokeballs" / "balls.json",
+            mod_root / "battle_sprites" / "pokemon" / "SPECIES_TREECKO_front.json",
             {
-                "pokeballs": [
-                    {
-                        "id": "story_ball",
-                        "itemId": "ITEM_POKE_BALL",
-                        "ballId": "BALL_PREMIER",
-                        "catchModifier": 20,
-                        "catchModifierHook": "Demo_BallModifier",
-                    }
-                ]
+                "id": "demo_ball_anim",
+                "domain": "battle_sprites",
+                "schemaVersion": 1,
+                "assetKey": "guide_asset",
+                "species": "SPECIES_TREECKO",
+                "side": "BATTLE_SPRITE_SIDE_FRONT",
             },
+        )
+        write_json(
+            mod_root / "battle_sprites" / "index.json",
+            {"domain": "battle_sprites", "schemaVersion": 1, "entries": [{"id": "demo_ball_anim", "path": "pokemon/SPECIES_TREECKO_front.json"}]},
+        )
+        write_json(
+            mod_root / "followers" / "followers" / "SPECIES_TREECKO.json",
+            {"id": "treecko", "domain": "followers", "schemaVersion": 1, "species": "SPECIES_TREECKO", "form": 0, "graphicsId": "OBJ_EVENT_GFX_BOY_1"},
+        )
+        write_json(
+            mod_root / "followers" / "index.json",
+            {"domain": "followers", "schemaVersion": 1, "entries": [{"id": "treecko", "path": "followers/SPECIES_TREECKO.json"}]},
+        )
+        write_json(mod_root / "language" / "en" / "core_strings.json", {"id": "en:core_strings", "domain": "language", "schemaVersion": 1, "language": "en", "runtime": True, "strings": {"npc_intro": "Hello!"}})
+        write_json(mod_root / "language" / "de" / "core_strings.json", {"id": "de:core_strings", "domain": "language", "schemaVersion": 1, "language": "de", "runtime": True, "strings": {"npc_intro": "Hallo!"}})
+        write_json(
+            mod_root / "language" / "index.json",
+            {
+                "domain": "language",
+                "schemaVersion": 1,
+                "entries": [
+                    {"id": "en:core_strings", "path": "en/core_strings.json"},
+                    {"id": "de:core_strings", "path": "de/core_strings.json"},
+                ],
+            },
+        )
+        write_json(
+            mod_root / "pokeballs" / "balls" / "ITEM_POKE_BALL.json",
+            {
+                "id": "story_ball",
+                "domain": "pokeballs",
+                "schemaVersion": 1,
+                "itemId": "ITEM_POKE_BALL",
+                "ballId": "BALL_PREMIER",
+                "catchModifier": 20,
+                "catchModifierHook": "Demo_BallModifier",
+            },
+        )
+        write_json(
+            mod_root / "pokeballs" / "index.json",
+            {"domain": "pokeballs", "schemaVersion": 1, "entries": [{"id": "story_ball", "path": "balls/ITEM_POKE_BALL.json"}]},
         )
         write_json(
             mod_root / "time" / "segments.json",

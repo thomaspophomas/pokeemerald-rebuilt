@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_DepartmentStoreRooftop_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc",
+    "sha1": "3ac544c7b01d367272ba9a3a4ac85c927eeb0c61"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc",
+    "rawScript": "getpokenewsactive POKENEWS_LILYCOVE\n\tcall_if_eq VAR_RESULT, TRUE, LilycoveCity_DepartmentStoreRooftop_EventScript_ShowSaleWoman\n\tcall_if_eq VAR_RESULT, FALSE, LilycoveCity_DepartmentStoreRooftop_EventScript_HideSaleWoman\n\tend"
+  },
+  "label": "LilycoveCity_DepartmentStoreRooftop_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

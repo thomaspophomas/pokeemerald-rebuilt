@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_House4_Text_BrotherLikesToFindBases",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_House4/scripts.inc",
+    "sha1": "06b64434090fa892c2b284488f6e34304b59f7aa"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_House4/scripts.inc",
+    "rawScript": ".string \"My little brother says he likes to go\\n\"\n\t.string \"find people's SECRET BASES.$\""
+  },
+  "label": "MossdeepCity_House4_Text_BrotherLikesToFindBases",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_House4/scripts.inc",
+  "references": {}
+}

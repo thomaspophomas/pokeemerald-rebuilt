@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_Summit_Text_WillYouHearOutMyTale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/scripts.inc",
+    "sha1": "2d98d572d50cebb678d972aa421854c983329822"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Summit/scripts.inc",
+    "rawScript": ".string \"MT. PYRE is where we calm the spirits\\n\"\n\t.string \"of POK\u00e9MON that have passed on\u2026\\p\"\n\t.string \"This is a high place where one can\\n\"\n\t.string \"see all of HOENN\u2026\\p\"\n\t.string \"The disembodied spirits of POK\u00e9MON\\n\"\n\t.string \"must find solace here\u2026\\p\"\n\t.string \"Is it coincidence that you are here\u2026\\p\"\n\t.string \"Will you hear out my tale? A tale long\\n\"\n\t.string \"told in the HOENN region?$\""
+  },
+  "label": "MtPyre_Summit_Text_WillYouHearOutMyTale",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_Summit/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestLobby_Text_NowThatWeveClearedThatUp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": ".string \"Okay, now that we've cleared that\\n\"\n\t.string \"up\u2026\\p\"\n\t.string \"Hello!\\p\"\n\t.string \"This is the reception counter for\\n\"\n\t.string \"POK\u00e9MON CONTESTS.$\""
+  },
+  "label": "LilycoveCity_ContestLobby_Text_NowThatWeveClearedThatUp",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {}
+}

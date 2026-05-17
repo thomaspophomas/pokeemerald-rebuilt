@@ -1,0 +1,28 @@
+{
+  "id": "BattleFrontier_BattlePikeLobby_EventScript_SaveBeforeChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "sha1": "e2be0fe89296e221d6bdf7bc81fdcf739064bd1b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "rawScript": "setvar VAR_TEMP_CHALLENGE_STATUS, 0\n\tsetvar VAR_TEMP_1, 0\n\tfrontier_set FRONTIER_DATA_SELECTED_MON_ORDER\n\tpike_init\n\tfrontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_SAVING\n\tpike_set PIKE_DATA_WIN_STREAK_ACTIVE, TRUE\n\tpike_savehelditems\n\tfrontier_set FRONTIER_DATA_PAUSED, FALSE\n\tspecial LoadPlayerParty\n\tclosemessage\n\tdelay 2\n\tcall Common_EventScript_SaveGame\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 255\n\tpike_savehelditems\n\tgoto_if_eq VAR_RESULT, 0, BattleFrontier_BattlePikeLobby_EventScript_CancelChallengeSaveFailed\n\tspecial SavePlayerParty\n\tfrontier_setpartyorder FRONTIER_PARTY_SIZE\n\tmsgbox BattleFrontier_BattlePikeLobby_Text_StepThisWay, MSGBOX_DEFAULT\n\tclosemessage\n\tfrontier_settrainers\n\tcall BattleFrontier_BattlePikeLobby_EventScript_WalkToCorridor\n\tspecial HealPlayerParty\n\tcall BattleFrontier_BattlePike_EventScript_CloseCurtain\n\twarpsilent MAP_BATTLE_FRONTIER_BATTLE_PIKE_CORRIDOR, 6, 7\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 0\n\twaitstate\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeLobby_EventScript_SaveBeforeChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_1",
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_PIKE_CORRIDOR"
+    ]
+  }
+}

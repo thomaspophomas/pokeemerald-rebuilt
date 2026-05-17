@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_PhoebesRoom_Text_IntroSpeech",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc",
+    "sha1": "19093003402affcdd9afdda6a47a9abe8524d0e2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc",
+    "rawScript": ".string \"Ahahaha!\\p\"\n\t.string \"I'm PHOEBE of the ELITE FOUR.\\n\"\n\t.string \"I did my training on MT. PYRE.\\p\"\n\t.string \"While I trained, I gained the ability\\n\"\n\t.string \"to commune with GHOST-type POK\u00e9MON.\\p\"\n\t.string \"Yes, the bond I developed with POK\u00e9MON\\n\"\n\t.string \"is extremely tight.\\p\"\n\t.string \"So, come on, just try and see if you can\\n\"\n\t.string \"even inflict damage on my POK\u00e9MON!$\""
+  },
+  "label": "EverGrandeCity_PhoebesRoom_Text_IntroSpeech",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc",
+  "references": {}
+}

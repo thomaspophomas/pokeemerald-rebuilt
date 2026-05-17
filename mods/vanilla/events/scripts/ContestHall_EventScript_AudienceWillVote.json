@@ -1,0 +1,23 @@
+{
+  "id": "ContestHall_EventScript_AudienceWillVote",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": "goto_if_eq VAR_CONTEST_TYPE, CONTEST_TYPE_LINK, ContestHall_EventScript_AudienceWillVoteLink\n\tmsgbox ContestHall_Text_SeenContestantsAudienceWillVote, MSGBOX_DEFAULT\n\treturn"
+  },
+  "label": "ContestHall_EventScript_AudienceWillVote",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {
+    "vars": [
+      "VAR_CONTEST_TYPE"
+    ]
+  }
+}

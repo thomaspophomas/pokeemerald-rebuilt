@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_EventScript_AcceptInterview",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/interview.inc",
+    "sha1": "bd1d5135ce2e319a18291aebafac5c4760b90500"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/interview.inc",
+    "rawScript": "message BattleFrontier_BattleTowerLobby_Text_HowDidBattleTowerTurnOut\n\twaitmessage\n\tmultichoice 20, 8, MULTI_SATISFACTION, TRUE\n\tcopyvar VAR_0x8008, VAR_RESULT\n\tcall_if_eq VAR_RESULT, 0, BattleFrontier_BattleTowerLobby_EventScript_Satisfied\n\tcall_if_eq VAR_RESULT, 1, BattleFrontier_BattleTowerLobby_EventScript_Dissatisfied\n\tmsgbox BattleFrontier_BattleTowerLobby_Text_DescribeYourBattle, MSGBOX_DEFAULT\n\tsetvar VAR_0x8004, EASY_CHAT_TYPE_BATTLE_TOWER_INTERVIEW\n\tcopyvar VAR_0x8005, VAR_0x8009\n\tcall Common_ShowEasyChatScreen\n\tlock\n\tfaceplayer\n\tgoto_if_eq VAR_RESULT, 1, BattleFrontier_BattleTowerLobby_EventScript_SubmitResponse\n\tgoto_if_eq VAR_RESULT, 0, BattleFrontier_BattleTowerLobby_EventScript_CancelInterview\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerLobby_EventScript_AcceptInterview",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/interview.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

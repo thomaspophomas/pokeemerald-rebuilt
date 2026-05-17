@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_DevonCorp_2F_Text_FossilRegeneratorTakesTime",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "sha1": "7e0aa6a4df50ead64287578a24ba19b07cafbb02"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "rawScript": ".string \"The FOSSIL REGENERATOR, which I made,\\n\"\n\t.string \"is incredible.\\p\"\n\t.string \"But it has one drawback--it takes\\n\"\n\t.string \"a long time to work.\\p\"\n\t.string \"So, uh\u2026 How about you go for a stroll\\n\"\n\t.string \"and look around for a while?$\""
+  },
+  "label": "RustboroCity_DevonCorp_2F_Text_FossilRegeneratorTakesTime",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleArenaBattleRoom_Text_ReceivedGutsSymbol",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "sha1": "d0a70f09e21302da78823f02966e03f9b41a3a1a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "rawScript": ".string \"The Guts Symbol was embossed on\\n\"\n\t.string \"the FRONTIER PASS!$\""
+  },
+  "label": "BattleFrontier_BattleArenaBattleRoom_Text_ReceivedGutsSymbol",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+  "references": {}
+}

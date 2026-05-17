@@ -1,0 +1,31 @@
+{
+  "id": "LilycoveCity_Harbor_EventScript_GetEonTicketState",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "sha1": "ffd83f00915b03bfdd96f51950251d00dd19dbcb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "rawScript": "setvar VAR_TEMP_E, 0\n\tgoto_if_unset FLAG_ENABLE_SHIP_SOUTHERN_ISLAND, Common_EventScript_NopReturn\n\tcheckitem ITEM_EON_TICKET\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_NopReturn\n\tsetvar VAR_TEMP_E, 1\n\tgoto_if_set FLAG_SHOWN_EON_TICKET, Common_EventScript_NopReturn\n\tsetvar VAR_TEMP_E, 2\n\treturn"
+  },
+  "label": "LilycoveCity_Harbor_EventScript_GetEonTicketState",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_Harbor/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_ENABLE_SHIP_SOUTHERN_ISLAND",
+      "FLAG_SHOWN_EON_TICKET"
+    ],
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_E"
+    ],
+    "items": [
+      "ITEM_EON_TICKET"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_House5_Text_CantSeeMirageIslandToday",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_House5/scripts.inc",
+    "sha1": "5ae2625b0bc4883674f958e25cbfb6a31941d691"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown_House5/scripts.inc",
+    "rawScript": ".string \"I can't see MIRAGE ISLAND today\u2026$\""
+  },
+  "label": "PacifidlogTown_House5_Text_CantSeeMirageIslandToday",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PacifidlogTown_House5/scripts.inc",
+  "references": {}
+}

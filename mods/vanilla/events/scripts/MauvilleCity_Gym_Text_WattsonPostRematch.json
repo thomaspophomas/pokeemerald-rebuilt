@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Gym_Text_WattsonPostRematch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "sha1": "ba2cd4a14af6a43f9221cd58f6a4a0299a51ce6c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "rawScript": ".string \"WATTSON: We'll have to recharge our\\n\"\n\t.string \"batteries again.\\p\"\n\t.string \"When we're fully charged up, we'll\\n\"\n\t.string \"gladly accept your challenge.\\p\"\n\t.string \"So, come back again sometime,\\n\"\n\t.string \"won't you?$\""
+  },
+  "label": "MauvilleCity_Gym_Text_WattsonPostRematch",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_Gym/scripts.inc",
+  "references": {}
+}

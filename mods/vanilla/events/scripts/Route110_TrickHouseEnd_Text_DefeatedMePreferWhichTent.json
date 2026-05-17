@@ -1,0 +1,19 @@
+{
+  "id": "Route110_TrickHouseEnd_Text_DefeatedMePreferWhichTent",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "sha1": "3b39ac1484a417dc8392e9b8712bc29e12891169"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "rawScript": ".string \"I hate to admit defeat, but you have\\n\"\n\t.string \"bested me!\\p\"\n\t.string \"Still, you must have been reeled in by\\n\"\n\t.string \"my charisma for you to visit me again\\l\"\n\t.string \"and again. Yes, you must have!\\p\"\n\t.string \"But that has nothing to do with my\\n\"\n\t.string \"losing!\\p\"\n\t.string \"In recognition of the friendship\\n\"\n\t.string \"between you, the driven, and the genius\\l\"\n\t.string \"that is myself, I demand that you take\\l\"\n\t.string \"this keepsake!\\p\"\n\t.string \"Actually there are two--\\n\"\n\t.string \"a RED TENT and a BLUE TENT.\\l\"\n\t.string \"Which do you prefer?$\""
+  },
+  "label": "Route110_TrickHouseEnd_Text_DefeatedMePreferWhichTent",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+  "references": {}
+}

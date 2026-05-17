@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_Text_ExplainRulesMoves",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": ".string \"There are offensive moves that inflict\\n\"\n\t.string \"direct damage on the foe.\\p\"\n\t.string \"There are defensive moves that are\\n\"\n\t.string \"used to prepare for enemy attacks or\\l\"\n\t.string \"used to heal HP and so on.\\p\"\n\t.string \"There are also other somewhat-odd\\n\"\n\t.string \"moves that may enfeeble the foes with\\l\"\n\t.string \"stat problems including poison and \\l\"\n\t.string \"paralysis.\\p\"\n\t.string \"POK\u00e9MON will consider using moves in\\n\"\n\t.string \"these three categories.$\""
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_Text_ExplainRulesMoves",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {}
+}

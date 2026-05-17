@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_1F_EventScript_FollowCuratorWest",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+    "sha1": "9b7ed7bb941e379aabaa59bf0da8ffe089df98ba"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_PLAYER, LilycoveCity_LilycoveMuseum_1F_Movement_FollowCuratorWest\n\twaitmovement 0\n\twarp MAP_LILYCOVE_CITY_LILYCOVE_MUSEUM_2F, 11, 8\n\twaitstate\n\tend"
+  },
+  "label": "LilycoveCity_LilycoveMuseum_1F_EventScript_FollowCuratorWest",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_LILYCOVE_CITY_LILYCOVE_MUSEUM_2F"
+    ]
+  }
+}

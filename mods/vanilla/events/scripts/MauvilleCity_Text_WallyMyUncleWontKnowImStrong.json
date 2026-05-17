@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_WallyMyUncleWontKnowImStrong",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"WALLY: Oh\u2026 If you won't battle me,\\n\"\n\t.string \"{PLAYER}, my UNCLE won't know that I've\\l\"\n\t.string \"become really strong.$\""
+  },
+  "label": "MauvilleCity_Text_WallyMyUncleWontKnowImStrong",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

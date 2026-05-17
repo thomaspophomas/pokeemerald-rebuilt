@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerBattleRoom_EventScript_RetireChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "sha1": "09b678d8717203a622b1d8714d904bcdeb37d08a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "rawScript": "setflag FLAG_CANCEL_BATTLE_ROOM_CHALLENGE\n\tgoto BattleFrontier_BattleTower_EventScript_WarpToLobbyLost\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerBattleRoom_EventScript_RetireChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_CANCEL_BATTLE_ROOM_CHALLENGE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Text_EveryoneHealthyAndLively",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity/scripts.inc",
+    "sha1": "a1f53b6d8b894e2f69fc9a5c4e1509ef9ab3ce09"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity/scripts.inc",
+    "rawScript": ".string \"The CITY consists of homes built on\\n\"\n\t.string \"trees.\\p\"\n\t.string \"Perhaps because of that lifestyle,\\n\"\n\t.string \"everyone is healthy and lively.\\p\"\n\t.string \"Why, even myself--I feel as if I've\\n\"\n\t.string \"grown thirty years younger.$\""
+  },
+  "label": "FortreeCity_Text_EveryoneHealthyAndLively",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,27 @@
+{
+  "id": "MtPyre_Summit_EventScript_OldLady",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/scripts.inc",
+    "sha1": "2d98d572d50cebb678d972aa421854c983329822"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Summit/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RETURNED_RED_OR_BLUE_ORB, MtPyre_Summit_EventScript_OldLadyAfterOrbsReturned\n\tcall_if_ge VAR_MT_PYRE_STATE, 3, MtPyre_Summit_EventScript_OldLadyOrbsReturned\n\tgoto_if_set FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, MtPyre_Summit_EventScript_OldLadyLegendariesAwake\n\tmsgbox MtPyre_Summit_Text_OrbsHaveBeenTaken, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "MtPyre_Summit_EventScript_OldLady",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtPyre_Summit/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN",
+      "FLAG_RETURNED_RED_OR_BLUE_ORB"
+    ],
+    "vars": [
+      "VAR_MT_PYRE_STATE"
+    ]
+  }
+}

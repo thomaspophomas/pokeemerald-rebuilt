@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice14Intro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "sha1": "4e7b748d8d3e33414d869ae43d136c857e9955fc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "rawScript": ".string \"Cough!\\p\"\n\t.string \"Oh, sorry, I have a cold.\\n\"\n\t.string \"My POK\u00e9MON are fine, though.\\p\"\n\t.string \"My name's {STR_VAR_3}, {STR_VAR_1}'s\\n\"\n\t.string \"no. {STR_VAR_2} apprentice. Cough!$\""
+  },
+  "label": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice14Intro",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+  "references": {}
+}

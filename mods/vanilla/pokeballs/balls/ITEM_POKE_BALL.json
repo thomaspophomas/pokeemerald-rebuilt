@@ -1,0 +1,39 @@
+{
+  "id": "ITEM_POKE_BALL",
+  "domain": "pokeballs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/mod/pokeball.c",
+    "sha1": "33d25b17be0efe4ad368348c596e2ba324574b45"
+  },
+  "legacy": {
+    "kind": "pokeball_definition",
+    "sourcePath": "src/mod/pokeball.c",
+    "rawC": "{ \"vanilla:poke_ball\",    ITEM_POKE_BALL,    BALL_POKE,    10,                             0, NULL, BattleScript_BallThrow,       NULL }",
+    "generatedKey": "vanilla:poke_ball"
+  },
+  "key": "vanilla:poke_ball",
+  "itemId": "ITEM_POKE_BALL",
+  "ballId": "BALL_POKE",
+  "catchModifier": "10",
+  "catchModifierHook": null,
+  "battleScript": "BattleScript_BallThrow",
+  "commitHook": null,
+  "flags": "0",
+  "itemIcon": "gItemIcon_PokeBall",
+  "itemPalette": "gItemIconPalette_PokeBall",
+  "throwSprite": {
+    "sheet": "gBallGfx_Poke",
+    "palette": "gBallPal_Poke",
+    "tileTag": "GFX_TAG_POKE_BALL",
+    "paletteTag": "GFX_TAG_POKE_BALL",
+    "templateTable": "gBallSpriteTemplates"
+  },
+  "openAnimation": {
+    "particleSheet": "gBattleAnimSpriteGfx_Particles",
+    "particlePalette": "gBattleAnimSpritePal_CircleImpact",
+    "particleTag": "TAG_PARTICLES_POKEBALL",
+    "animNum": "0",
+    "taskFunc": "PokeBallOpenParticleAnimation"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Route109_SeashoreHouse_Text_ShowMeSomeHotMatches",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route109_SeashoreHouse/scripts.inc",
+    "sha1": "e25b82298342bb772f517727cec07c201daa316e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route109_SeashoreHouse/scripts.inc",
+    "rawScript": ".string \"Show me some hot matches!\\p\"\n\t.string \"I run this SEASHORE HOUSE just for\\n\"\n\t.string \"that reason alone!$\""
+  },
+  "label": "Route109_SeashoreHouse_Text_ShowMeSomeHotMatches",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route109_SeashoreHouse/scripts.inc",
+  "references": {}
+}

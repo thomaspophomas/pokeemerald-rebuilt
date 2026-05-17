@@ -1,0 +1,37 @@
+{
+  "id": "BattleFrontier_ScottsHouse_EventScript_CheckGoldSymbols",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "sha1": "c30df9e905f6d4b9d9e1eaf4d4fccf30db88e083"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "rawScript": "goto_if_unset FLAG_SYS_TOWER_GOLD, BattleFrontier_ScottsHouse_EventScript_CheckGiveShield\n\tgoto_if_unset FLAG_SYS_DOME_GOLD, BattleFrontier_ScottsHouse_EventScript_CheckGiveShield\n\tgoto_if_unset FLAG_SYS_PALACE_GOLD, BattleFrontier_ScottsHouse_EventScript_CheckGiveShield\n\tgoto_if_unset FLAG_SYS_ARENA_GOLD, BattleFrontier_ScottsHouse_EventScript_CheckGiveShield\n\tgoto_if_unset FLAG_SYS_FACTORY_GOLD, BattleFrontier_ScottsHouse_EventScript_CheckGiveShield\n\tgoto_if_unset FLAG_SYS_PIKE_GOLD, BattleFrontier_ScottsHouse_EventScript_CheckGiveShield\n\tgoto_if_unset FLAG_SYS_PYRAMID_GOLD, BattleFrontier_ScottsHouse_EventScript_CheckGiveShield\n\tmsgbox BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols, MSGBOX_DEFAULT\n\tgiveitem ITEM_STARF_BERRY\n\tgoto_if_eq VAR_RESULT, FALSE, BattleFrontier_ScottsHouse_EventScript_BerryPocketFull\n\tsetflag FLAG_COLLECTED_ALL_GOLD_SYMBOLS\n\tsetflag FLAG_TEMP_4\n\trelease\n\tend"
+  },
+  "label": "BattleFrontier_ScottsHouse_EventScript_CheckGoldSymbols",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_COLLECTED_ALL_GOLD_SYMBOLS",
+      "FLAG_SYS_ARENA_GOLD",
+      "FLAG_SYS_DOME_GOLD",
+      "FLAG_SYS_FACTORY_GOLD",
+      "FLAG_SYS_PALACE_GOLD",
+      "FLAG_SYS_PIKE_GOLD",
+      "FLAG_SYS_PYRAMID_GOLD",
+      "FLAG_SYS_TOWER_GOLD",
+      "FLAG_TEMP_4"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_STARF_BERRY"
+    ]
+  }
+}

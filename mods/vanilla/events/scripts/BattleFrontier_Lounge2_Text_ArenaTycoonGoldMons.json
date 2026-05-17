@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "sha1": "d4d4f7c0802f8118a63eaf9b68eb6bcff146ff4d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "rawScript": ".string \"Have you battled the ARENA TYCOON\\n\"\n\t.string \"when she's serious?\\p\"\n\t.string \"When she battles for keeps,\\n\"\n\t.string \"she supposedly uses these POK\u00e9MON:\\p\"\n\t.string \"A DARK-type MOONLIGHT POK\u00e9MON,\\n\"\n\t.string \"a GHOST & POISON SHADOW POK\u00e9MON\\l\"\n\t.string \"and a GRASS- & FIGHTING-type\\l\"\n\t.string \"MUSHROOM POK\u00e9MON.$\""
+  },
+  "label": "BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+  "references": {}
+}

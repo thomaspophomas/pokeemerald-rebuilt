@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "3355898078ce7d23572c68766ca5af49d35de75d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"For example, your MUDKIP\\n\"\n\t.string \"is a WATER type.\\p\"\n\t.string \"It's strong against the FIRE type.\\p\"\n\t.string \"But, it's weak against GRASS-type\\n\"\n\t.string \"and ELECTRIC-type POK\u00e9MON.$\""
+  },
+  "label": "PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

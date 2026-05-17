@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_DrakesRoom_Text_PostBattleSpeech",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+    "sha1": "f9ebbd1a5748e35eab8deba2da4622069b1316a9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+    "rawScript": ".string \"You deserve every credit for coming\\n\"\n\t.string \"this far as a TRAINER of POK\u00e9MON.\\p\"\n\t.string \"You do seem to know what is needed.\\p\"\n\t.string \"Yes, what a TRAINER needs is a\\n\"\n\t.string \"virtuous heart.\\p\"\n\t.string \"POK\u00e9MON touch the good hearts of\\n\"\n\t.string \"TRAINERS and learn good from wrong.\\p\"\n\t.string \"They touch the good hearts of\\n\"\n\t.string \"TRAINERS and grow strong.\\p\"\n\t.string \"Go! Go onwards!\\n\"\n\t.string \"The CHAMPION is waiting!$\""
+  },
+  "label": "EverGrandeCity_DrakesRoom_Text_PostBattleSpeech",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+  "references": {}
+}

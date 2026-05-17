@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby_EventScript_WonChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "sha1": "b93395a7ee7156a94cfa3817fd6222cfa69e94fd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "rawScript": "lockall\n\tfrontier_isbrain\n\tgoto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattlePyramidLobby_EventScript_DefeatedKing\n\tmsgbox BattleFrontier_BattlePyramidLobby_Text_YouveConqueredPyramid, MSGBOX_DEFAULT\n\tgoto BattleFrontier_BattlePyramidLobby_EventScript_GiveBattlePoints"
+  },
+  "label": "BattleFrontier_BattlePyramidLobby_EventScript_WonChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

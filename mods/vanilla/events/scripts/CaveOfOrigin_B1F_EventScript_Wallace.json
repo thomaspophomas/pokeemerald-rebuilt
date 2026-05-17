@@ -1,0 +1,19 @@
+{
+  "id": "CaveOfOrigin_B1F_EventScript_Wallace",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+    "sha1": "fdccb9d45cf308bd7d76aa97e9b5d7eb16b80004"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmsgbox CaveOfOrigin_B1F_Text_WallaceStory, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_CAVE_OF_ORIGIN_WALLACE, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tdelay 60\n\tplayse SE_PIN\n\tapplymovement LOCALID_CAVE_OF_ORIGIN_WALLACE, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_CAVE_OF_ORIGIN_WALLACE, Common_Movement_Delay48\n\twaitmovement 0\n\tdelay 30\n\tapplymovement LOCALID_CAVE_OF_ORIGIN_WALLACE, Common_Movement_FacePlayer\n\twaitmovement 0\n\tmessage CaveOfOrigin_B1F_Text_WhereIsRayquaza\n\twaitmessage\n\tgoto CaveOfOrigin_B1F_EventScript_WheresRayquaza"
+  },
+  "label": "CaveOfOrigin_B1F_EventScript_Wallace",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+  "references": {}
+}

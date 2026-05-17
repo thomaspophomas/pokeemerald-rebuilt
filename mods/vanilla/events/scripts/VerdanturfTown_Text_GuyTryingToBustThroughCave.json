@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_Text_GuyTryingToBustThroughCave",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown/scripts.inc",
+    "sha1": "4cf44981cc32f958f4c2d2c20def161a84763311"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown/scripts.inc",
+    "rawScript": ".string \"Did you see the cave next to the\\n\"\n\t.string \"POK\u00e9MON MART?\\p\"\n\t.string \"There's a guy in there who's trying to\\n\"\n\t.string \"bust up boulders so he can bust out\\l\"\n\t.string \"through to the other side.\\p\"\n\t.string \"It'd be great if we could go through\u2026\\n\"\n\t.string \"It'll make it easy to visit RUSTBORO.$\""
+  },
+  "label": "VerdanturfTown_Text_GuyTryingToBustThroughCave",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown/scripts.inc",
+  "references": {}
+}

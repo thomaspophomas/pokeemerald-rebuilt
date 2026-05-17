@@ -1,0 +1,23 @@
+{
+  "id": "RusturfTunnel_OnFrame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/scripts.inc",
+    "sha1": "76035185b0aabddf11657305417168db4c1bb93d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RusturfTunnel/scripts.inc",
+    "rawScript": "map_script_2 VAR_RUSTURF_TUNNEL_STATE, 4, RusturfTunnel_EventScript_ClearTunnelScene\n\tmap_script_2 VAR_RUSTURF_TUNNEL_STATE, 5, RusturfTunnel_EventScript_ClearTunnelScene\n\t.2byte 0"
+  },
+  "label": "RusturfTunnel_OnFrame",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/RusturfTunnel/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RUSTURF_TUNNEL_STATE"
+    ]
+  }
+}

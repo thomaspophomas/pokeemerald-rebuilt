@@ -1,0 +1,23 @@
+{
+  "id": "Route119_EventScript_Phil",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119/scripts.inc",
+    "sha1": "576fe3fab09726df20b1bbf3016bc5306f0e0f3d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_PHIL, Route119_Text_PhilIntro, Route119_Text_PhilDefeat\n\tmsgbox Route119_Text_PhilPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route119_EventScript_Phil",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route119/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_PHIL"
+    ]
+  }
+}

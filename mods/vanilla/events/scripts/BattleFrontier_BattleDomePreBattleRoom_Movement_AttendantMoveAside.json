@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomePreBattleRoom_Movement_AttendantMoveAside",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+    "sha1": "18c4052c546a6c71ff18234f6ef3a8130ec538d0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+    "rawScript": "walk_right\n\tface_left\n\tstep_end"
+  },
+  "label": "BattleFrontier_BattleDomePreBattleRoom_Movement_AttendantMoveAside",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+  "references": {}
+}

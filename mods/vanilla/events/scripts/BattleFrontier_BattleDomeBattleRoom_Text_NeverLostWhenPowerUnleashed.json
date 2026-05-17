@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomeBattleRoom_Text_NeverLostWhenPowerUnleashed",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "sha1": "2cf5ea83e82fbd2189ced7e0cd4d5f894bf74650"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "rawScript": ".string \"TUCKER: You're genuinely fantastic!\\p\"\n\t.string \"Never before! I haven't ever lost in the\\n\"\n\t.string \"times I've had to unleash my power.\\p\"\n\t.string \"Yes, quite fantastic!\\n\"\n\t.string \"Your FRONTIER PASS, please?$\""
+  },
+  "label": "BattleFrontier_BattleDomeBattleRoom_Text_NeverLostWhenPowerUnleashed",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+  "references": {}
+}

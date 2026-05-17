@@ -1,0 +1,19 @@
+{
+  "id": "Route116_Text_ScoundrelMadeOffWithPeeko",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116/scripts.inc",
+    "sha1": "414d7bb5c4246d6317dd973dc816983566be8cc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route116/scripts.inc",
+    "rawScript": ".string \"Ohhh, what am I to do?\\p\"\n\t.string \"We were on our walk, PEEKO and I, when\\n\"\n\t.string \"we were jumped by an odd thug\u2026\\p\"\n\t.string \"The scoundrel made off with my\\n\"\n\t.string \"darling PEEKO!\\p\"\n\t.string \"Wrrrooooooaaaar! PEEKO!$\""
+  },
+  "label": "Route116_Text_ScoundrelMadeOffWithPeeko",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route116/scripts.inc",
+  "references": {}
+}

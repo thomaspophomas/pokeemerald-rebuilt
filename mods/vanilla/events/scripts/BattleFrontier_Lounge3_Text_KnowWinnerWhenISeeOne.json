@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge3_Text_KnowWinnerWhenISeeOne",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "sha1": "52169856e2442e0e7ad660050a45dce1a1b2405a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "rawScript": ".string \"Giggle!\\n\"\n\t.string \"I know a winner when I see one!$\""
+  },
+  "label": "BattleFrontier_Lounge3_Text_KnowWinnerWhenISeeOne",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+  "references": {}
+}

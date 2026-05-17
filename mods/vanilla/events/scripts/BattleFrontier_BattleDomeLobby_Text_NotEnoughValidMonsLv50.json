@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsLv50",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "sha1": "c5673b719ade6a47e6fe1e3055270ca454748cfd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "rawScript": ".string \"Excuse me!\\p\"\n\t.string \"You don't have three eligible POK\u00e9MON.\\p\"\n\t.string \"You must have three different POK\u00e9MON\\n\"\n\t.string \"of Level 50 or less to enter.\\p\"\n\t.string \"They also must be holding different\\n\"\n\t.string \"kinds of items.\\p\"\n\t.string \"EGGS{STR_VAR_1} ineligible.\\p\"\n\t.string \"Please come see me when you are ready.$\""
+  },
+  "label": "BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsLv50",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ContestHall_EventScript_AddRandomAudienceMembers",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ContestHall/scripts.inc",
+    "sha1": "1975dda1f6df6ad0ef2b0d81c28afe4508469870"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ContestHall/scripts.inc",
+    "rawScript": "call ContestHall_EventScript_GetRandomAudienceGfxId\n\tcall ContestHall_EventScript_SetRandomAudienceGfx\n\tgoto_if_lt VAR_TEMP_0, 8, ContestHall_EventScript_AddRandomAudienceMembers\n\treturn"
+  },
+  "label": "ContestHall_EventScript_AddRandomAudienceMembers",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/ContestHall/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0"
+    ]
+  }
+}

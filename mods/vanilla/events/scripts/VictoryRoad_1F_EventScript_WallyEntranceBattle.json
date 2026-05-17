@@ -1,0 +1,30 @@
+{
+  "id": "VictoryRoad_1F_EventScript_WallyEntranceBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_1F/scripts.inc",
+    "sha1": "dda3a20e79be32fbc7d021ceddf040bbcdbe53c7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VictoryRoad_1F/scripts.inc",
+    "rawScript": "applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tmsgbox VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore, MSGBOX_DEFAULT\n\ttrainerbattle_no_intro TRAINER_WALLY_VR_1, VictoryRoad_1F_Text_WallyEntranceDefeat\n\tmsgbox VictoryRoad_1F_Text_WallyPostEntranceBattle, MSGBOX_DEFAULT\n\tclearflag FLAG_HIDE_VICTORY_ROAD_ENTRANCE_WALLY\n\tcopyobjectxytoperm LOCALID_VICTORY_ROAD_ENTRANCE_WALLY\n\tsetflag FLAG_DEFEATED_WALLY_VICTORY_ROAD\n\tcopyvar VAR_VICTORY_ROAD_1F_STATE, VAR_0x8008\n\treleaseall\n\tend"
+  },
+  "label": "VictoryRoad_1F_EventScript_WallyEntranceBattle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/VictoryRoad_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_WALLY_VICTORY_ROAD",
+      "FLAG_HIDE_VICTORY_ROAD_ENTRANCE_WALLY"
+    ],
+    "vars": [
+      "VAR_VICTORY_ROAD_1F_STATE"
+    ],
+    "trainers": [
+      "TRAINER_WALLY_VR_1"
+    ]
+  }
+}

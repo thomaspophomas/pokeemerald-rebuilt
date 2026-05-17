@@ -1,0 +1,23 @@
+{
+  "id": "Underwater_SeafloorCavern_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_SeafloorCavern/scripts.inc",
+    "sha1": "0161920db8325168fff9945e78faf08193f0bc50"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Underwater_SeafloorCavern/scripts.inc",
+    "rawScript": "setdivewarp MAP_SEAFLOOR_CAVERN_ENTRANCE, 10, 17\n\tend"
+  },
+  "label": "Underwater_SeafloorCavern_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Underwater_SeafloorCavern/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SEAFLOOR_CAVERN_ENTRANCE"
+    ]
+  }
+}

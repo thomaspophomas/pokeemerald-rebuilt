@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Mart/scripts.inc",
+    "sha1": "24d08ff30f80ab3ca9bbc615acb31bc95359ba3b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Mart/scripts.inc",
+    "rawScript": ".string \"Do you have any ANTIDOTES with\\n\"\n\t.string \"you?\\p\"\n\t.string \"If you walk around with a poisoned\\n\"\n\t.string \"POK\u00e9MON, it will lose HP until it faints.\\l\"\n\t.string \"Take some ANTIDOTES with you.$\""
+  },
+  "label": "PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Mart/scripts.inc",
+  "references": {}
+}

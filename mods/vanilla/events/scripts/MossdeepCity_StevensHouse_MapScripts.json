@@ -1,0 +1,25 @@
+{
+  "id": "MossdeepCity_StevensHouse_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "sha1": "13a709347ca2c2863ef04de01b7d51d28b9d736e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_LOAD, MossdeepCity_StevensHouse_OnLoad\n\tmap_script MAP_SCRIPT_ON_TRANSITION, MossdeepCity_StevensHouse_OnTransition\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, MossdeepCity_StevensHouse_OnFrame\n\t.byte 0"
+  },
+  "label": "MossdeepCity_StevensHouse_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

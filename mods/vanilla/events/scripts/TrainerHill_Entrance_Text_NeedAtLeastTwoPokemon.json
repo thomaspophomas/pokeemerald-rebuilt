@@ -1,0 +1,19 @@
+{
+  "id": "TrainerHill_Entrance_Text_NeedAtLeastTwoPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "sha1": "cbfca2354a8d8ed8d68e2612fb0b6f2525008a5f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "rawScript": ".string \"Oh, I'm sorry, but you appear to have\\n\"\n\t.string \"only one POK\u00e9MON with you.\\p\"\n\t.string \"You will need at least two POK\u00e9MON\\n\"\n\t.string \"to enter this event.$\""
+  },
+  "label": "TrainerHill_Entrance_Text_NeedAtLeastTwoPokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/TrainerHill_Entrance/scripts.inc",
+  "references": {}
+}

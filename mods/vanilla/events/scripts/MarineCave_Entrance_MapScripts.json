@@ -1,0 +1,23 @@
+{
+  "id": "MarineCave_Entrance_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MarineCave_Entrance/scripts.inc",
+    "sha1": "b97a1b1a91a318f3f9c80f256631980b5b713792"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MarineCave_Entrance/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, MarineCave_Entrance_OnResume\n\t.byte 0"
+  },
+  "label": "MarineCave_Entrance_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/MarineCave_Entrance/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_RESUME"
+    ]
+  }
+}

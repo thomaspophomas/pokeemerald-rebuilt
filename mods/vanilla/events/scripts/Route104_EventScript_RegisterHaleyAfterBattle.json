@@ -1,0 +1,23 @@
+{
+  "id": "Route104_EventScript_RegisterHaleyAfterBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104/scripts.inc",
+    "sha1": "10d25047426798be70cda2d9503387bbf8458d85"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104/scripts.inc",
+    "rawScript": "msgbox Route104_Text_HaleyRegister2, MSGBOX_DEFAULT\n\tregister_matchcall TRAINER_HALEY_1\n\trelease\n\tend"
+  },
+  "label": "Route104_EventScript_RegisterHaleyAfterBattle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route104/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_HALEY_1"
+    ]
+  }
+}

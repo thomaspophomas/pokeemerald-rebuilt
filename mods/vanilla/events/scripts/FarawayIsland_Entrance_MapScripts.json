@@ -1,0 +1,23 @@
+{
+  "id": "FarawayIsland_Entrance_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FarawayIsland_Entrance/scripts.inc",
+    "sha1": "23d3bf4f9ef5a8edf9d50398dba305a326eac52e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FarawayIsland_Entrance/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, FarawayIsland_Entrance_OnTransition\n\t.byte 0"
+  },
+  "label": "FarawayIsland_Entrance_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/FarawayIsland_Entrance/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterReject",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "sha1": "4e7b748d8d3e33414d869ae43d136c857e9955fc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "rawScript": ".string \"Aww! If you'd form a tag team with\\n\"\n\t.string \"my POK\u00e9MON, we'd be unstoppable!$\""
+  },
+  "label": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterReject",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+  "references": {}
+}

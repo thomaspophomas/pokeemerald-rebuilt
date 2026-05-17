@@ -1,0 +1,29 @@
+{
+  "id": "Route123_BerryMastersHouse_EventScript_GiveDurinBerry",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route123_BerryMastersHouse/scripts.inc",
+    "sha1": "9a0e063a546e4fa501fad1644e1e6356f5e7917a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route123_BerryMastersHouse/scripts.inc",
+    "rawScript": "goto_if_set FLAG_RECEIVED_DURIN_BERRY, Route123_BerryMastersHouse_EventScript_GiveNormalBerry\n\tmsgbox Route123_BerryMastersHouse_Text_InspirationalTakeThis, MSGBOX_DEFAULT\n\tgiveitem ITEM_DURIN_BERRY\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_RECEIVED_DURIN_BERRY\n\tgoto Route123_BerryMastersHouse_EventScript_GaveBerry\n\tend"
+  },
+  "label": "Route123_BerryMastersHouse_EventScript_GiveDurinBerry",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route123_BerryMastersHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_DURIN_BERRY"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_DURIN_BERRY"
+    ]
+  }
+}

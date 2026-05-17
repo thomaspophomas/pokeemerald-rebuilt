@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleFactoryBattleRoom_Text_NextTimeNoHoldsBarred",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+    "sha1": "d6c9d92d97f61a06b3670b7d509844f3bc902eb3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+    "rawScript": ".string \"Heh\u2026\\n\"\n\t.string \"You're a pretty bright spark\u2026\\p\"\n\t.string \"Next time, I'll come after you hard.\\n\"\n\t.string \"No holds barred, understand?\\p\"\n\t.string \"You keep up your studies!$\""
+  },
+  "label": "BattleFrontier_BattleFactoryBattleRoom_Text_NextTimeNoHoldsBarred",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_PokemonCenter_1F_EventScript_GiddyTellTale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/mauville_man.inc",
+    "sha1": "5d5e72f125b988a1fbd10a6264af3893ef9cc868"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/mauville_man.inc",
+    "rawScript": "special GenerateGiddyLine\n\tspecial ShowFieldMessageStringVar4\n\twaitmessage\n\tyesnobox 20, 8\n\tgoto_if_eq VAR_RESULT, YES, MauvilleCity_PokemonCenter_1F_EventScript_TryTellNewTale\n\tgoto_if_eq VAR_RESULT, NO, MauvilleCity_PokemonCenter_1F_EventScript_TryTellNewTale\n\tend"
+  },
+  "label": "MauvilleCity_PokemonCenter_1F_EventScript_GiddyTellTale",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/mauville_man.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

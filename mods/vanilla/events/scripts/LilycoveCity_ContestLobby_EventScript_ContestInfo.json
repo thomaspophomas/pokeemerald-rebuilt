@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_ContestInfo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": "message LilycoveCity_ContestLobby_Text_WhichTopic1\n\twaitmessage\n\tmultichoice 0, 0, MULTI_CONTEST_INFO, FALSE\n\tswitch VAR_RESULT\n\tcase 0, LilycoveCity_ContestLobby_EventScript_ExplainContests\n\tcase 1, LilycoveCity_ContestLobby_EventScript_ExplainContestTypes\n\tcase 2, LilycoveCity_ContestLobby_EventScript_ExplainContestRanks\n\tcase 3, LilycoveCity_ContestLobby_EventScript_AskEnterContest\n\tcase MULTI_B_PRESSED, LilycoveCity_ContestLobby_EventScript_AskEnterContest\n\tend"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_ContestInfo",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyForOpponent",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "sha1": "09b678d8717203a622b1d8714d904bcdeb37d08a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "rawScript": "copyvar VAR_TEMP_F, VAR_RESULT\n\tswitch VAR_TEMP_F\n\tcase 1, BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyFor2ndOpponent\n\tcase 2, BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyFor3rdOpponent\n\tcase 3, BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyFor4thOpponent\n\tcase 4, BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyFor5thOpponent\n\tcase 5, BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyFor6thOpponent\n\tcase 6, BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyFor7thOpponent"
+  },
+  "label": "BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyForOpponent",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_F"
+    ]
+  }
+}

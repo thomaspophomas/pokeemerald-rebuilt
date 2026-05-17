@@ -52,6 +52,11 @@ struct ModPokeBallDefinition
 
 bool8 PokeBallApi_IsBall(u16 itemId);
 const struct ModPokeBallDefinition *PokeBallApi_GetDefinition(u16 itemId);
+u8 PokeBallApi_NetBallCatchModifier(const struct PokeBallCatchContext *context);
+u8 PokeBallApi_DiveBallCatchModifier(const struct PokeBallCatchContext *context);
+u8 PokeBallApi_NestBallCatchModifier(const struct PokeBallCatchContext *context);
+u8 PokeBallApi_RepeatBallCatchModifier(const struct PokeBallCatchContext *context);
+u8 PokeBallApi_TimerBallCatchModifier(const struct PokeBallCatchContext *context);
 u8 PokeBallApi_GetCatchModifier(const struct PokeBallCatchContext *context);
 bool8 PokeBallApi_CalculateThrowResult(const struct PokeBallCatchContext *context, struct PokeBallThrowResult *result);
 const u8 *PokeBallApi_GetBattleScript(u16 itemId);

@@ -1,0 +1,23 @@
+{
+  "id": "MeteorFalls_1F_1R_EventScript_ProfCozmo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "sha1": "9f4ded44922a9eecca2a712d1673b053babe0bae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_MET_PROF_COZMO, MeteorFalls_1F_1R_EventScript_MetCozmo\n\tsetflag FLAG_MET_PROF_COZMO\n\tmsgbox MeteorFalls_1F_1R_Text_MeetProfCozmo, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "MeteorFalls_1F_1R_EventScript_ProfCozmo",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_PROF_COZMO"
+    ]
+  }
+}

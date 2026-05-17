@@ -1,0 +1,19 @@
+{
+  "id": "GraniteCave_StevensRoom_Text_ThankYouTakeThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/GraniteCave_StevensRoom/scripts.inc",
+    "sha1": "d6ee0122ad78c2332db89dbd8efa2a788f6bd86e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/GraniteCave_StevensRoom/scripts.inc",
+    "rawScript": ".string \"STEVEN: Okay, thank you.\\p\"\n\t.string \"You went through all this trouble to\\n\"\n\t.string \"deliver that. I need to thank you.\\p\"\n\t.string \"Let me see\u2026\\n\"\n\t.string \"I'll give you this TM.\\p\"\n\t.string \"It contains my favorite move,\\n\"\n\t.string \"STEEL WING.$\""
+  },
+  "label": "GraniteCave_StevensRoom_Text_ThankYouTakeThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/GraniteCave_StevensRoom/scripts.inc",
+  "references": {}
+}

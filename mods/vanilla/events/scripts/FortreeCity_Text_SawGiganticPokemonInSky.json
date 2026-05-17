@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Text_SawGiganticPokemonInSky",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity/scripts.inc",
+    "sha1": "a1f53b6d8b894e2f69fc9a5c4e1509ef9ab3ce09"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity/scripts.inc",
+    "rawScript": ".string \"No one believes me, but I saw this\\n\"\n\t.string \"gigantic POK\u00e9MON in the sky.\\p\"\n\t.string \"It seemed to squirm as it flew toward\\n\"\n\t.string \"ROUTE 131.\\p\"\n\t.string \"By the way\u2026 Sniff\u2026\\n\"\n\t.string \"Um\u2026 You, uh\u2026smell singed.\\p\"\n\t.string \"Were you at a volcano or something?$\""
+  },
+  "label": "FortreeCity_Text_SawGiganticPokemonInSky",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge2_Text_ArenaTycoonSilverMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "sha1": "d4d4f7c0802f8118a63eaf9b68eb6bcff146ff4d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "rawScript": ".string \"Have you battled the ARENA TYCOON\\n\"\n\t.string \"before?\\p\"\n\t.string \"When she's assessing the foe's ability,\\n\"\n\t.string \"she supposedly uses these POK\u00e9MON:\\p\"\n\t.string \"A BUG & FIGHTING SINGLE HORN POK\u00e9MON,\\n\"\n\t.string \"a DARK-type MOONLIGHT POK\u00e9MON,\\l\"\n\t.string \"and a BUG & GHOST SHED POK\u00e9MON.$\""
+  },
+  "label": "BattleFrontier_Lounge2_Text_ArenaTycoonSilverMons",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+  "references": {}
+}

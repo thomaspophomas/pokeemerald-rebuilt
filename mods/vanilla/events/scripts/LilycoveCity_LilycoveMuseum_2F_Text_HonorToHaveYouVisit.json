@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_2F_Text_HonorToHaveYouVisit",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "sha1": "c41e25282a159070f0eb7fb3edcf1b61cc1cfa19"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "rawScript": ".string \"Ah, so good to see you, {PLAYER}!\\p\"\n\t.string \"It's an honor to have you visit us\\n\"\n\t.string \"on your busy journeys.\\p\"\n\t.string \"Please, relax and do enjoy your\\n\"\n\t.string \"visit with us.$\""
+  },
+  "label": "LilycoveCity_LilycoveMuseum_2F_Text_HonorToHaveYouVisit",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Text_CantChangeTradeMonName",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": ".string \"Any POK\u00e9MON you get in a trade,\\n\"\n\t.string \"you can't change its nickname.\\p\"\n\t.string \"The original TRAINER's love for that\\n\"\n\t.string \"POK\u00e9MON is in the nickname.$\""
+  },
+  "label": "SlateportCity_Text_CantChangeTradeMonName",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {}
+}

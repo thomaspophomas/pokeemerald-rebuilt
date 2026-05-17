@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_Text_SkyPillarTooScary",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown/scripts.inc",
+    "sha1": "a2afe22497d0ac4c974698e76e0cda7094b4e79a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown/scripts.inc",
+    "rawScript": ".string \"The SKY PILLAR?\\p\"\n\t.string \"\u2026Oh, you must mean that tall, tall\\n\"\n\t.string \"tower a little further out.\\p\"\n\t.string \"If you asked me, I wouldn't climb it.\\n\"\n\t.string \"It's too scary to get up that high.\\p\"\n\t.string \"Life at sea level in PACIFIDLOG,\\n\"\n\t.string \"that suits me fine.$\""
+  },
+  "label": "PacifidlogTown_Text_SkyPillarTooScary",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PacifidlogTown/scripts.inc",
+  "references": {}
+}

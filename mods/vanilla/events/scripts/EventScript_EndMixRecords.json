@@ -1,0 +1,19 @@
+{
+  "id": "EventScript_EndMixRecords",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/record_mix.inc",
+    "sha1": "f1c21fcc5ef0d000a7f249d6eeb01ff1fa7dc0e9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/record_mix.inc",
+    "rawScript": "message Text_WeHopeToSeeYouAgain\n\twaitmessage\n\twaitbuttonpress\n\trelease\n\tend"
+  },
+  "label": "EventScript_EndMixRecords",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/record_mix.inc",
+  "references": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": "Route110_TrickHouseEntrance_EventScript_GivePuzzle7Reward",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "sha1": "9367efc136143832c1697fbcc61fbb296269d396"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "rawScript": "giveitem ITEM_PP_MAX\n\tgoto_if_eq VAR_RESULT, TRUE, Route110_TrickHouseEntrance_EventScript_GotReward\n\tcall_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull\n\tmsgbox Route110_TrickHouseEntrance_Text_DidYouNotComeToClaimReward, MSGBOX_DEFAULT\n\treleaseall\n\tend"
+  },
+  "label": "Route110_TrickHouseEntrance_EventScript_GivePuzzle7Reward",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_PP_MAX"
+    ]
+  }
+}

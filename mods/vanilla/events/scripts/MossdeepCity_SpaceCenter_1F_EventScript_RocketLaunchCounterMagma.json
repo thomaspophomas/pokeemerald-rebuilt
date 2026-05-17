@@ -1,0 +1,24 @@
+{
+  "id": "MossdeepCity_SpaceCenter_1F_EventScript_RocketLaunchCounterMagma",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "sha1": "a0cf82d2df089035fb81d02a013736aab95a13d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "rawScript": "dotimebasedevents\n\tspecialvar VAR_RESULT, GetWeekCount\n\tbuffernumberstring STR_VAR_1, VAR_RESULT\n\tcall_if_eq VAR_RESULT, 0, MossdeepCity_SpaceCenter_1F_EventScript_NoLaunchesYetMagma\n\tcall_if_ge VAR_RESULT, 1, MossdeepCity_SpaceCenter_1F_EventScript_ShowLaunchNumberMagma\n\tclosemessage\n\tapplymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\trelease\n\tend"
+  },
+  "label": "MossdeepCity_SpaceCenter_1F_EventScript_RocketLaunchCounterMagma",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "EverGrandeCity_DrakesRoom_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+    "sha1": "f9ebbd1a5748e35eab8deba2da4622069b1316a9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_FRAME_TABLE, EverGrandeCity_DrakesRoom_OnFrame\n\tmap_script MAP_SCRIPT_ON_LOAD, EverGrandeCity_DrakesRoom_OnLoad\n\tmap_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, EverGrandeCity_SidneysRoom_OnWarp\n\t.byte 0\n\n@ Unused, Drake uses Sidneys identical OnWarp for some reason"
+  },
+  "label": "EverGrandeCity_DrakesRoom_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE"
+    ]
+  }
+}

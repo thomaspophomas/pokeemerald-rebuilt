@@ -1,0 +1,27 @@
+{
+  "id": "BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+    "sha1": "384442d4fcbb4c5edeb287c69a9c0ca256ec49b1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+    "rawScript": "copyvar VAR_0x8004, VAR_TEMP_FRONTIER_TUTOR_SELECTION\n\tcopyvar VAR_0x8005, VAR_TEMP_FRONTIER_TUTOR_ID\n\tspecial BufferBattleFrontierTutorMoveName\n\tbuffernumberstring STR_VAR_2, VAR_0x8008\n\tcopyvar VAR_0x8004, VAR_TEMP_C\n\tmsgbox BattleFrontier_Lounge7_Text_MoveWillBeXBattlePoints, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, BattleFrontier_Lounge7_EventScript_ChooseNewMove\n\tspecialvar VAR_TEMP_1, GetFrontierBattlePoints\n\tgoto_if_ge VAR_TEMP_1, VAR_0x8008, BattleFrontier_Lounge7_EventScript_TeachTutorMove\n\tmsgbox BattleFrontier_Lounge7_Text_HaventGotEnoughPoints, MSGBOX_DEFAULT\n\tgoto BattleFrontier_Lounge7_EventScript_ChooseNewMove\n\tend"
+  },
+  "label": "BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_1",
+      "VAR_TEMP_C",
+      "VAR_TEMP_FRONTIER_TUTOR_ID",
+      "VAR_TEMP_FRONTIER_TUTOR_SELECTION"
+    ]
+  }
+}

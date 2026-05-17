@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeThreePathRoom_EventScript_PauseChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "sha1": "927f7bda20dae778159d88132a53038bcfb76615"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "rawScript": "frontier_saveparty\n\tmessage BattleFrontier_BattlePikeThreePathRoom_Text_SavingYourData\n\twaitmessage\n\tspecial LoadPlayerParty\n\tpike_save CHALLENGE_STATUS_PAUSED\n\tplayse SE_SAVE\n\twaitse\n\tfadescreen FADE_TO_BLACK\n\tfrontier_reset\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeThreePathRoom_EventScript_PauseChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+  "references": {}
+}

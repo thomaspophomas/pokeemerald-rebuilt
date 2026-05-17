@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge6_Text_WouldYouLikeToTrade",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge6/scripts.inc",
+    "sha1": "400f8668c2640f8efd65ecb8754e4761b5653111"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge6/scripts.inc",
+    "rawScript": ".string \"My POK\u00e9MON is a {STR_VAR_2}.\\n\"\n\t.string \"Do you know it?\\l\"\n\t.string \"It's quite cute and rather nice.\\p\"\n\t.string \"This little one, I could trade with\\n\"\n\t.string \"pride!\\p\"\n\t.string \"Would you like to trade me a {STR_VAR_1}\\n\"\n\t.string \"for my {STR_VAR_2}?$\""
+  },
+  "label": "BattleFrontier_Lounge6_Text_WouldYouLikeToTrade",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge6/scripts.inc",
+  "references": {}
+}

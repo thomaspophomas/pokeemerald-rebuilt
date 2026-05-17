@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Gym_Text_MarcPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Gym/scripts.inc",
+    "sha1": "e0aa9de4fed612674104e48c7646854400dcecde"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Gym/scripts.inc",
+    "rawScript": ".string \"I have to hand it to our LEADER.\\p\"\n\t.string \"It took smarts and sense for her to\\n\"\n\t.string \"pick the ROCK type at her young age.$\""
+  },
+  "label": "RustboroCity_Gym_Text_MarcPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Gym/scripts.inc",
+  "references": {}
+}

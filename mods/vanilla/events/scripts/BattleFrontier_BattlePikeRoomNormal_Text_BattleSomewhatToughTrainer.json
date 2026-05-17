@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomNormal_Text_BattleSomewhatToughTrainer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "sha1": "54c1e0ee021a3a91375f3b05c8682c17ed095aa9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "rawScript": ".string \"Welcome\u2026\\p\"\n\t.string \"Here, we will have you battle\\n\"\n\t.string \"a somewhat-tough TRAINER\u2026$\""
+  },
+  "label": "BattleFrontier_BattlePikeRoomNormal_Text_BattleSomewhatToughTrainer",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+  "references": {}
+}

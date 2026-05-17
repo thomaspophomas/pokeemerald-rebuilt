@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomNormal_EventScript_NPC",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "sha1": "54c1e0ee021a3a91375f3b05c8682c17ed095aa9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "rawScript": "pike_getroomtype\n\tswitch VAR_RESULT\n\tcase PIKE_ROOM_NPC, BattleFrontier_BattlePikeRoomNormal_EventScript_NormalNPC\n\tcase PIKE_ROOM_STATUS, BattleFrontier_BattlePikeRoomNormal_EventScript_StatusNPC\n\tcase PIKE_ROOM_HEAL_PART, BattleFrontier_BattlePikeRoomNormal_EventScript_HealNPC"
+  },
+  "label": "BattleFrontier_BattlePikeRoomNormal_EventScript_NPC",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

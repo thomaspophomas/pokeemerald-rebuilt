@@ -1,0 +1,19 @@
+{
+  "id": "TrainerHill_Elevator_Movement_PlayerApproachAttendant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Elevator/scripts.inc",
+    "sha1": "06b14119162a2b7bf99d17883435f80e4648fabb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Elevator/scripts.inc",
+    "rawScript": "delay_16\n\twalk_left\n\tstep_end"
+  },
+  "label": "TrainerHill_Elevator_Movement_PlayerApproachAttendant",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/TrainerHill_Elevator/scripts.inc",
+  "references": {}
+}

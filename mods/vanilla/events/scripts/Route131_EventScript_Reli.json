@@ -1,0 +1,23 @@
+{
+  "id": "Route131_EventScript_Reli",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route131/scripts.inc",
+    "sha1": "468c53c849959214aa7f6a5ae109e4109f3491c2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route131/scripts.inc",
+    "rawScript": "trainerbattle_double TRAINER_RELI_AND_IAN, Route131_Text_ReliIntro, Route131_Text_ReliDefeat, Route131_Text_ReliNotEnoughMons\n\tmsgbox Route131_Text_ReliPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route131_EventScript_Reli",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route131/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_RELI_AND_IAN"
+    ]
+  }
+}

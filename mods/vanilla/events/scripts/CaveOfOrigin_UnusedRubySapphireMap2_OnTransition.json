@@ -1,0 +1,23 @@
+{
+  "id": "CaveOfOrigin_UnusedRubySapphireMap2_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/CaveOfOrigin_UnusedRubySapphireMap2/scripts.inc",
+    "sha1": "35be3cb3979d49449d015f3ee668db9aa53476d1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/CaveOfOrigin_UnusedRubySapphireMap2/scripts.inc",
+    "rawScript": "call_if_set FLAG_UNUSED_RS_LEGENDARY_BATTLE_DONE, CaveOfOrigin_EventScript_DisableTriggers\n\tend"
+  },
+  "label": "CaveOfOrigin_UnusedRubySapphireMap2_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/CaveOfOrigin_UnusedRubySapphireMap2/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_UNUSED_RS_LEGENDARY_BATTLE_DONE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge2_Text_FactoryHeadGoldMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "sha1": "d4d4f7c0802f8118a63eaf9b68eb6bcff146ff4d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "rawScript": ".string \"Have you battled the FACTORY HEAD\\n\"\n\t.string \"when he's serious?\\p\"\n\t.string \"When he goes seriously to battle,\\n\"\n\t.string \"he still gets three rental POK\u00e9MON.\\p\"\n\t.string \"He battles under virtually the same\\n\"\n\t.string \"conditions as you.$\""
+  },
+  "label": "BattleFrontier_Lounge2_Text_FactoryHeadGoldMons",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+  "references": {}
+}

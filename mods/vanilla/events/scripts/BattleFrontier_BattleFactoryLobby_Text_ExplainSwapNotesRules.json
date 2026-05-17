@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleFactoryLobby_Text_ExplainSwapNotesRules",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+    "sha1": "292da35ee750dbef6f890d691b62400b747b2d83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+    "rawScript": ".string \"There are two key points to be aware\\n\"\n\t.string \"of when swapping POK\u00e9MON.\\p\"\n\t.string \"First, when swapping, you can't check\\n\"\n\t.string \"the stats of the POK\u00e9MON you are\\l\"\n\t.string \"about to receive.\\p\"\n\t.string \"Second, the POK\u00e9MON on your team\\n\"\n\t.string \"are lined up in sequence, depending on\\l\"\n\t.string \"the order in which you rented them.\\p\"\n\t.string \"This sequence remains unchanged\\n\"\n\t.string \"even when swaps are made.$\""
+  },
+  "label": "BattleFrontier_BattleFactoryLobby_Text_ExplainSwapNotesRules",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+  "references": {}
+}

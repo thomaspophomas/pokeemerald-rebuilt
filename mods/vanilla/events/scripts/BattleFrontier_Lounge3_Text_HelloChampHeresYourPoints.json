@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge3_Text_HelloChampHeresYourPoints",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "sha1": "52169856e2442e0e7ad660050a45dce1a1b2405a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "rawScript": ".string \"Oh, yes!\\n\"\n\t.string \"Hello there, champ!\\p\"\n\t.string \"I knew you could!\\n\"\n\t.string \"I knew you would!\\l\"\n\t.string \"We're both big winners!\\p\"\n\t.string \"I'll return your Battle Points and,\\n\"\n\t.string \"of course, a little extra from me!$\""
+  },
+  "label": "BattleFrontier_Lounge3_Text_HelloChampHeresYourPoints",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+  "references": {}
+}

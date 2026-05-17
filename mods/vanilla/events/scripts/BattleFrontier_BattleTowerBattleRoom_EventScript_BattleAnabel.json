@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattleTowerBattleRoom_EventScript_BattleAnabel",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "sha1": "09b678d8717203a622b1d8714d904bcdeb37d08a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "rawScript": "call BattleFrontier_EventScript_SetBrainObjectGfx\n\tclosemessage\n\tapplymovement LOCALID_PLAYER, BattleFrontier_BattleTowerBattleRoom_Movement_PlayerFaceBattle\n\twaitmovement 0\n\tapplymovement LOCALID_TOWER_BATTLE_ATTENDANT_1, BattleFrontier_BattleTowerBattleRoom_Movement_AttendantReturnToPos\n\twaitmovement 0\n\taddobject LOCALID_TOWER_BATTLE_OPPONENT\n\tapplymovement LOCALID_TOWER_BATTLE_OPPONENT, BattleFrontier_BattleTowerBattleRoom_Movement_AnabelEnter\n\twaitmovement 0\n\tswitch VAR_TEMP_F\n\tcase FRONTIER_BRAIN_GOLD, BattleFrontier_BattleTowerBattleRoom_EventScript_AnabelGoldIntro\n\tcase FRONTIER_BRAIN_STREAK, BattleFrontier_BattleTowerBattleRoom_EventScript_BattleAnabelSilver\n\tcase FRONTIER_BRAIN_STREAK_LONG, BattleFrontier_BattleTowerBattleRoom_EventScript_BattleAnabelGold\n\tfrontier_get FRONTIER_DATA_HEARD_BRAIN_SPEECH\n\tgoto_if_ne VAR_RESULT, FALSE, BattleFrontier_BattleTowerBattleRoom_EventScript_BattleAnabelSilver\n\tmsgbox BattleFrontier_BattleTowerBattleRoom_Text_GreetingsImAnabel, MSGBOX_DEFAULT\n\tfrontier_set FRONTIER_DATA_HEARD_BRAIN_SPEECH"
+  },
+  "label": "BattleFrontier_BattleTowerBattleRoom_EventScript_BattleAnabel",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_F"
+    ]
+  }
+}

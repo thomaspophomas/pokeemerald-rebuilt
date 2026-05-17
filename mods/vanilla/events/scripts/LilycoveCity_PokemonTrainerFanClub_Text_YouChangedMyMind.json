@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_Text_YouChangedMyMind",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": ".string \"You've changed my mind!\\n\"\n\t.string \"You are strong, aren't you?\\p\"\n\t.string \"I'd like you to tell me how you managed\\n\"\n\t.string \"to get so strong!$\""
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_Text_YouChangedMyMind",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_DepartmentStore_5F_Pokemart_Cushions",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+    "sha1": "cd7aae47b8996a67b13e78af3da148a41c68791f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+    "rawScript": ".2byte DECOR_PIKA_CUSHION\n\t.2byte DECOR_ROUND_CUSHION\n\t.2byte DECOR_ZIGZAG_CUSHION\n\t.2byte DECOR_SPIN_CUSHION\n\t.2byte DECOR_DIAMOND_CUSHION\n\t.2byte DECOR_BALL_CUSHION\n\t.2byte DECOR_GRASS_CUSHION\n\t.2byte DECOR_FIRE_CUSHION\n\t.2byte DECOR_WATER_CUSHION\n\tpokemartlistend"
+  },
+  "label": "LilycoveCity_DepartmentStore_5F_Pokemart_Cushions",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+  "references": {}
+}

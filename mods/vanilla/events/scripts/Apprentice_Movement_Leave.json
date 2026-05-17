@@ -1,0 +1,19 @@
+{
+  "id": "Apprentice_Movement_Leave",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/apprentice.inc",
+    "sha1": "353208142bca1df117076064d141b84efe196e7c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/apprentice.inc",
+    "rawScript": "walk_fast_down\n\twalk_fast_down\n\twalk_fast_right\n\twalk_fast_right\n\twalk_fast_right\n\twalk_fast_right\n\twalk_fast_right\n\twalk_fast_right\n\twalk_fast_right\n\twalk_fast_right\n\twalk_fast_right\n\tset_invisible\n\tslide_down\n\tslide_down\n\tslide_down\n\tstep_end"
+  },
+  "label": "Apprentice_Movement_Leave",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/scripts/apprentice.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ReceptionGate_Text_OpenLevelInfo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "sha1": "5b6e89c53f6e32c0fa6883bd750252f1d739a97b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "rawScript": ".string \"The Open Level course places no limit\\n\"\n\t.string \"on the levels of POK\u00e9MON entering\\l\"\n\t.string \"challenges.\\p\"\n\t.string \"The levels of your opponents will\\n\"\n\t.string \"be adjusted to match the levels of\\l\"\n\t.string \"your POK\u00e9MON.\\p\"\n\t.string \"However, no TRAINER you face will\\n\"\n\t.string \"have any POK\u00e9MON below Level 60.$\""
+  },
+  "label": "BattleFrontier_ReceptionGate_Text_OpenLevelInfo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+  "references": {}
+}

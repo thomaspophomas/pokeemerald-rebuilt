@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskReadyForOpponents",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+    "sha1": "71e71dc7e048f3a27e89d0ae41c736d25233e068"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+    "rawScript": "frontier_get FRONTIER_DATA_BATTLE_NUM\n\tcall BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyForNextOpponentSet\n\tgoto_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_LINK_MULTIS, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ContinueChallenge\n\tcall BattleFrontier_EventScript_GetCantRecordBattle\n\tgoto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskReadyForOpponentsNoRecord\n\tmultichoice 19, 4, MULTI_GO_ON_RECORD_REST_RETIRE, TRUE\n\tswitch VAR_RESULT\n\tcase 0, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ContinueChallenge\n\tcase 1, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskRecordBattle\n\tcase 2, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskPauseChallenge\n\tcase 3, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskRetireChallenge\n\tcase MULTI_B_PRESSED, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskReadyForOpponents"
+  },
+  "label": "BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskReadyForOpponents",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FRONTIER_BATTLE_MODE",
+      "VAR_RESULT"
+    ]
+  }
+}

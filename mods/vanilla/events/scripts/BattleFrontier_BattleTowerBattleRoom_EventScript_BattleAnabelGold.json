@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerBattleRoom_EventScript_BattleAnabelGold",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "sha1": "09b678d8717203a622b1d8714d904bcdeb37d08a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattleTowerBattleRoom_Text_LetsBeginShallWe, MSGBOX_DEFAULT\n\tcall BattleFrontier_BattleTowerBattleRoom_EventScript_DoTowerBattle\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_WON, BattleFrontier_BattleTowerBattleRoom_EventScript_DefeatedAnabelGold\n\tgoto BattleFrontier_BattleTower_EventScript_WarpToLobbyLost"
+  },
+  "label": "BattleFrontier_BattleTowerBattleRoom_EventScript_BattleAnabelGold",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_2F_EventScript_SetWallClock",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/players_house.inc",
+    "sha1": "0f3da1347500315ef212a252409f1d410b0d226c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/players_house.inc",
+    "rawScript": "fadescreen FADE_TO_BLACK\n\tspecial StartWallClock\n\treturn"
+  },
+  "label": "PlayersHouse_2F_EventScript_SetWallClock",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/players_house.inc",
+  "references": {}
+}

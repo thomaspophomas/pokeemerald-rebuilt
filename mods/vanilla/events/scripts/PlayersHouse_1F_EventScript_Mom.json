@@ -1,0 +1,30 @@
+{
+  "id": "PlayersHouse_1F_EventScript_Mom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/players_house.inc",
+    "sha1": "0f3da1347500315ef212a252409f1d410b0d226c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/players_house.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_eq VAR_LITTLEROOT_HOUSES_STATE_MAY, 4, PlayersHouse_1F_EventScript_DontPushYourselfTooHard\n\tgoto_if_eq VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 4, PlayersHouse_1F_EventScript_DontPushYourselfTooHard\n\tgoto_if_set FLAG_HAS_MATCH_CALL, PlayersHouse_1F_EventScript_TryRegisterMom\n\tgoto_if_set FLAG_RESCUED_BIRCH, PlayersHouse_1F_EventScript_MomHealsParty\n\tgoto_if_eq VAR_TEMP_1, 1, PlayersHouse_1F_EventScript_SeeYouHoney\n\tgoto_if_eq VAR_LITTLEROOT_INTRO_STATE, 7, PlayersHouse_1F_EventScript_DidYouMeetProfBirch\n\tmsgbox PlayersHouse_1F_Text_IsntItNiceInHere, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "PlayersHouse_1F_EventScript_Mom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/players_house.inc",
+  "references": {
+    "flags": [
+      "FLAG_HAS_MATCH_CALL",
+      "FLAG_RESCUED_BIRCH"
+    ],
+    "vars": [
+      "VAR_LITTLEROOT_HOUSES_STATE_BRENDAN",
+      "VAR_LITTLEROOT_HOUSES_STATE_MAY",
+      "VAR_LITTLEROOT_INTRO_STATE",
+      "VAR_TEMP_1"
+    ]
+  }
+}

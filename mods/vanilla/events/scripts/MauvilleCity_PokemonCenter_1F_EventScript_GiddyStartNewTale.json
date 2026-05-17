@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_PokemonCenter_1F_EventScript_GiddyStartNewTale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/mauville_man.inc",
+    "sha1": "5d5e72f125b988a1fbd10a6264af3893ef9cc868"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/mauville_man.inc",
+    "rawScript": "msgbox MauvilleCity_PokemonCenter_1F_Text_AlsoIWasThinking, MSGBOX_DEFAULT\n\tgoto MauvilleCity_PokemonCenter_1F_EventScript_GiddyTellTale\n\tend\n\n@ Giddy will continue to tell stories regardless of whether yes or no is selected below.\n@ Each story there is a 10% chance it will be his last. Otherwise he will stop at 10 stories."
+  },
+  "label": "MauvilleCity_PokemonCenter_1F_EventScript_GiddyStartNewTale",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/mauville_man.inc",
+  "references": {}
+}

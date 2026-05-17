@@ -1,0 +1,23 @@
+{
+  "id": "AbandonedShip_Rooms2_1F_EventScript_DanRematch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+    "sha1": "ba923c54b93786d603c658ba8fad2029d216a91e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+    "rawScript": "trainerbattle_rematch_double TRAINER_KIRA_AND_DAN_1, AbandonedShip_Rooms2_1F_Text_DanRematchIntro, AbandonedShip_Rooms2_1F_Text_DanRematchDefeat, AbandonedShip_Rooms2_1F_Text_DanRematchNotEnoughMons\n\tmsgbox AbandonedShip_Rooms2_1F_Text_DanPostRematch, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "AbandonedShip_Rooms2_1F_EventScript_DanRematch",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_KIRA_AND_DAN_1"
+    ]
+  }
+}

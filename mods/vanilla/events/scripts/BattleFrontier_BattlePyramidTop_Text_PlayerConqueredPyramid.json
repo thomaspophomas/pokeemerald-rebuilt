@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePyramidTop_Text_PlayerConqueredPyramid",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "sha1": "6256c29eca306dafcaec0dabbacc64547c474e58"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "rawScript": ".string \"The PYRAMID's new conqueror!\\n\"\n\t.string \"Let the name {PLAYER} be known!$\""
+  },
+  "label": "BattleFrontier_BattlePyramidTop_Text_PlayerConqueredPyramid",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+  "references": {}
+}

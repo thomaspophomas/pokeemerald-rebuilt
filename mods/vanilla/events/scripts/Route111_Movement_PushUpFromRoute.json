@@ -1,0 +1,19 @@
+{
+  "id": "Route111_Movement_PushUpFromRoute",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": "walk_up\n\tstep_end"
+  },
+  "label": "Route111_Movement_PushUpFromRoute",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {}
+}

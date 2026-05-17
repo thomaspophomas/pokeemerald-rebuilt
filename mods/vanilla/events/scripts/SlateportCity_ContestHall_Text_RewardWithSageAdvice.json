@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_ContestHall_Text_RewardWithSageAdvice",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_BattleTentCorridor/scripts.inc",
+    "sha1": "6c49213213fbc0031669e8a364dc312cbe989a7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_BattleTentCorridor/scripts.inc",
+    "rawScript": ".string \"Oh, hi! You must be a serious fan to get\\n\"\n\t.string \"this close to the action.\\p\"\n\t.string \"I'll reward your enthusiasm with\\n\"\n\t.string \"this sage advice.\\p\"\n\t.string \"If a move goes over really well,\\n\"\n\t.string \"the audience will get excited.\\p\"\n\t.string \"The POK\u00e9MON that makes its appeal\\n\"\n\t.string \"right when everyone's excited\u2026\\p\"\n\t.string \"Well, you'd think something good has\\n\"\n\t.string \"to happen!$\"\n\n@ Unused"
+  },
+  "label": "SlateportCity_ContestHall_Text_RewardWithSageAdvice",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_BattleTentCorridor/scripts.inc",
+  "references": {}
+}

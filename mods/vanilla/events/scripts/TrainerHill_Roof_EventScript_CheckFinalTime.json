@@ -1,0 +1,23 @@
+{
+  "id": "TrainerHill_Roof_EventScript_CheckFinalTime",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Roof/scripts.inc",
+    "sha1": "5597180a59a42562e7f9757eaa0b7d95908d37f9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Roof/scripts.inc",
+    "rawScript": "trainerhill_finaltime\n\tswitch VAR_RESULT\n\tcase 0, TrainerHill_Roof_EventScript_NewRecord\n\tcase 1, TrainerHill_Roof_EventScript_NoNewRecord\n\tcase 2, TrainerHill_Roof_EventScript_EndSpeakToOwner"
+  },
+  "label": "TrainerHill_Roof_EventScript_CheckFinalTime",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/TrainerHill_Roof/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

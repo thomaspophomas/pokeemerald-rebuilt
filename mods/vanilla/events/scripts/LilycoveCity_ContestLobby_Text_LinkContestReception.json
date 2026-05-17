@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestLobby_Text_LinkContestReception",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": ".string \"Welcome! This is the POK\u00e9MON CONTEST\\n\"\n\t.string \"link reception counter.\\p\"\n\t.string \"You may enter CONTESTS together with\\n\"\n\t.string \"one or more friends.$\""
+  },
+  "label": "LilycoveCity_ContestLobby_Text_LinkContestReception",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {}
+}

@@ -1,0 +1,29 @@
+{
+  "id": "MauvilleCity_EventScript_CompletedNewMauville",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": "msgbox MauvilleCity_Text_WattsonThanksTakeTM, MSGBOX_DEFAULT\n\tgiveitem ITEM_TM_THUNDERBOLT\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON\n\tmsgbox MauvilleCity_Text_WattsonYoungTakeCharge, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "MauvilleCity_EventScript_CompletedNewMauville",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_TM_THUNDERBOLT"
+    ]
+  }
+}

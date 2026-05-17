@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F_Text_YoureOutnumberedTakeUsOn",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "rawScript": ".string \"What's wrong with you?\\p\"\n\t.string \"You're outnumbered three to one,\\n\"\n\t.string \"but you still want to take us on?$\""
+  },
+  "label": "MossdeepCity_SpaceCenter_2F_Text_YoureOutnumberedTakeUsOn",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+  "references": {}
+}

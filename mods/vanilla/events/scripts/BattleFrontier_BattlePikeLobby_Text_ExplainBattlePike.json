@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeLobby_Text_ExplainBattlePike",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "sha1": "e2be0fe89296e221d6bdf7bc81fdcf739064bd1b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "rawScript": ".string \"Here we conduct an event we call\\n\"\n\t.string \"the Battle Choice.\\p\"\n\t.string \"The Battle Choice rules are very\\n\"\n\t.string \"simple\u2026\\p\"\n\t.string \"Choose one of three paths and make\\n\"\n\t.string \"your way to the goal room at the end\\l\"\n\t.string \"of the BATTLE PIKE. It's that simple.\\p\"\n\t.string \"However, what happens on the chosen\\n\"\n\t.string \"path depends entirely on the luck\\l\"\n\t.string \"of the challenger\u2026\\p\"\n\t.string \"If you reach the goal, you will be\\n\"\n\t.string \"rewarded with Battle Points.\\p\"\n\t.string \"If you want to interrupt your\\n\"\n\t.string \"challenge, please have a word with\\l\"\n\t.string \"our staff in the big rooms on the way.\\p\"\n\t.string \"If you don't save before interrupting,\\n\"\n\t.string \"you will be disqualified.$\""
+  },
+  "label": "BattleFrontier_BattlePikeLobby_Text_ExplainBattlePike",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+  "references": {}
+}

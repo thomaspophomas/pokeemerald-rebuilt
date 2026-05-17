@@ -1,0 +1,26 @@
+{
+  "id": "SlateportCity_BattleTentLobby_EventScript_EnterChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+    "sha1": "d8233cb564c951151609565c69259c5bc6039b75"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+    "rawScript": "msgbox SlateportCity_BattleTentLobby_Text_StepThisWay, MSGBOX_DEFAULT\n\tclosemessage\n\tcall SlateportCity_BattleTentLobby_EventScript_WalkToDoor\n\twarp MAP_SLATEPORT_CITY_BATTLE_TENT_CORRIDOR, 2, 7\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 0\n\twaitstate\n\tend"
+  },
+  "label": "SlateportCity_BattleTentLobby_EventScript_EnterChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ],
+    "maps": [
+      "MAP_SLATEPORT_CITY_BATTLE_TENT_CORRIDOR"
+    ]
+  }
+}

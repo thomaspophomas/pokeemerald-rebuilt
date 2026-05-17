@@ -1,0 +1,26 @@
+{
+  "id": "AbandonedShip_HiddenFloorRooms_EventScript_DoHiddenItemSparkle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_HiddenFloorRooms/scripts.inc",
+    "sha1": "e64dd6958de17dd29909a779ee9862cda0de7b51"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_HiddenFloorRooms/scripts.inc",
+    "rawScript": "setvar VAR_TEMP_1, 1\n\tgetplayerxy VAR_TEMP_2, VAR_TEMP_3\n\tsetvar VAR_TEMP_4, 1\n\tcall_if_eq VAR_TEMP_2, 21, AbandonedShip_HiddenFloorRooms_EventScript_InMiddleRoomColumn\n\tcall_if_eq VAR_TEMP_2, 36, AbandonedShip_HiddenFloorRooms_EventScript_InRightRoomColumn\n\tcall_if_eq VAR_TEMP_3, 2, AbandonedShip_HiddenFloorRooms_EventScript_InUpperRoomRow\n\tswitch VAR_TEMP_4\n\tcase 1, AbandonedShip_HiddenFloorRooms_EventScript_EnterRm1\n\tcase 2, AbandonedShip_HiddenFloorRooms_EventScript_EnterRm2\n\tcase 3, AbandonedShip_HiddenFloorRooms_EventScript_EnterRm3\n\tcase 4, AbandonedShip_HiddenFloorRooms_EventScript_EnterRm4\n\tcase 5, AbandonedShip_HiddenFloorRooms_EventScript_EnterRm5\n\tcase 6, AbandonedShip_HiddenFloorRooms_EventScript_EnterRm6\n\tend"
+  },
+  "label": "AbandonedShip_HiddenFloorRooms_EventScript_DoHiddenItemSparkle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AbandonedShip_HiddenFloorRooms/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1",
+      "VAR_TEMP_2",
+      "VAR_TEMP_3",
+      "VAR_TEMP_4"
+    ]
+  }
+}

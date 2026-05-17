@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Mart_Text_SuperRepelBetter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Mart/scripts.inc",
+    "sha1": "39e9591afc4b01702cd84304453dd4d1ee0ffe23"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Mart/scripts.inc",
+    "rawScript": ".string \"SUPER REPEL lasts a long time,\\n\"\n\t.string \"and it gets the job done.\\p\"\n\t.string \"It's much better than an ordinary\\n\"\n\t.string \"REPEL.$\""
+  },
+  "label": "FortreeCity_Mart_Text_SuperRepelBetter",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_Mart/scripts.inc",
+  "references": {}
+}

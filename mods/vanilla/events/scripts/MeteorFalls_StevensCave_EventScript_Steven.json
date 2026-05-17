@@ -1,0 +1,26 @@
+{
+  "id": "MeteorFalls_StevensCave_EventScript_Steven",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_StevensCave/scripts.inc",
+    "sha1": "1c533dd88d1548eeb3f32082e2ab2c1de6a3a5f5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_StevensCave/scripts.inc",
+    "rawScript": "lock\n\tgoto_if_set FLAG_DEFEATED_METEOR_FALLS_STEVEN, MeteorFalls_StevensCave_EventScript_Defeated\n\twaitse\n\tplayse SE_PIN\n\tapplymovement LOCALID_METEOR_FALLS_STEVEN, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_METEOR_FALLS_STEVEN, Common_Movement_Delay48\n\twaitmovement 0\n\tapplymovement LOCALID_METEOR_FALLS_STEVEN, Common_Movement_FacePlayer\n\twaitmovement 0\n\tmsgbox MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst, MSGBOX_DEFAULT\n\ttrainerbattle_no_intro TRAINER_STEVEN, MeteorFalls_StevensCave_Text_StevenDefeat\n\tmsgbox MeteorFalls_StevensCave_Text_MyPredictionCameTrue, MSGBOX_DEFAULT\n\tsetflag FLAG_DEFEATED_METEOR_FALLS_STEVEN\n\trelease\n\tend"
+  },
+  "label": "MeteorFalls_StevensCave_EventScript_Steven",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MeteorFalls_StevensCave/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_METEOR_FALLS_STEVEN"
+    ],
+    "trainers": [
+      "TRAINER_STEVEN"
+    ]
+  }
+}

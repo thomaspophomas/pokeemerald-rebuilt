@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_RankingHall_Text_MyNamesNotUpThere",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_RankingHall/scripts.inc",
+    "sha1": "aef77d23874073ac30c7332089066ec74669e249"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_RankingHall/scripts.inc",
+    "rawScript": ".string \"Hmm\u2026\\n\"\n\t.string \"My name's not up there\u2026\\p\"\n\t.string \"Well, it's only natural since I haven't\\n\"\n\t.string \"taken any challenges yet.$\""
+  },
+  "label": "BattleFrontier_RankingHall_Text_MyNamesNotUpThere",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_RankingHall/scripts.inc",
+  "references": {}
+}

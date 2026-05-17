@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "sha1": "304e0889603d7850b02e01765d969cf3c903eb9e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "rawScript": ".string \"CAPT. STERN: Are you certain?\\n\"\n\t.string \"It's useless to you, {PLAYER}{KUN}\u2026\\p\"\n\t.string \"Well, okay, then. If you want to trade\\n\"\n\t.string \"your SCANNER, let me know.$\""
+  },
+  "label": "SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_Harbor/scripts.inc",
+  "references": {}
+}

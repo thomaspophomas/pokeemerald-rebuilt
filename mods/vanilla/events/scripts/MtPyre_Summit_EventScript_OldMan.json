@@ -1,0 +1,26 @@
+{
+  "id": "MtPyre_Summit_EventScript_OldMan",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/scripts.inc",
+    "sha1": "2d98d572d50cebb678d972aa421854c983329822"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Summit/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, MtPyre_Summit_EventScript_OldManAfterRayquaza\n\tmsgbox MtPyre_Summit_Text_WillYouHearOutMyTale, MSGBOX_YESNO\n\tcall_if_eq VAR_RESULT, YES, MtPyre_Summit_EventScript_OldManTale\n\tcall_if_eq VAR_RESULT, NO, MtPyre_Summit_EventScript_DeclineOldManTale\n\trelease\n\tend"
+  },
+  "label": "MtPyre_Summit_EventScript_OldMan",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtPyre_Summit/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

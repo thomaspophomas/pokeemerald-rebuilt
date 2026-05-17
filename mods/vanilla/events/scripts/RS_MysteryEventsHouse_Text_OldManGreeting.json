@@ -1,0 +1,19 @@
+{
+  "id": "RS_MysteryEventsHouse_Text_OldManGreeting",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_GameCorner_1F/scripts.inc",
+    "sha1": "9705268b8b1f1689ba5ce2a1488d37f1b3e28fee"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_GameCorner_1F/scripts.inc",
+    "rawScript": ".string \"When I was young, I traveled the world\\n\"\n\t.string \"as a POK\u00e9MON TRAINER.\\p\"\n\t.string \"Now that I've become an old buzzard,\\n\"\n\t.string \"my only amusement is watching young\\l\"\n\t.string \"TRAINERS battle.$\""
+  },
+  "label": "RS_MysteryEventsHouse_Text_OldManGreeting",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_GameCorner_1F/scripts.inc",
+  "references": {}
+}

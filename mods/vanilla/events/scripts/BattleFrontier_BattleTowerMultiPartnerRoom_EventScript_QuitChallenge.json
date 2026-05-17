@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_QuitChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "sha1": "4e7b748d8d3e33414d869ae43d136c857e9955fc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "rawScript": "frontier_set FRONTIER_DATA_RECORD_DISABLED, TRUE\n\tgoto BattleFrontier_BattleTower_EventScript_WarpToLobbyLost\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_QuitChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown/scripts.inc",
+    "sha1": "a2afe22497d0ac4c974698e76e0cda7094b4e79a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown/scripts.inc",
+    "rawScript": "setstepcallback STEP_CB_PACIFIDLOG_BRIDGE\n\tend"
+  },
+  "label": "PacifidlogTown_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/PacifidlogTown/scripts.inc",
+  "references": {}
+}

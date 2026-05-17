@@ -1,0 +1,23 @@
+{
+  "id": "SlateportCity_EventScript_EffortRibbonWoman",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tbufferleadmonspeciesname STR_VAR_1\n\tmsgbox SlateportCity_Text_OhYourPokemon, MSGBOX_DEFAULT\n\tspecialvar VAR_RESULT, LeadMonHasEffortRibbon\n\tcall_if_eq VAR_RESULT, TRUE, SlateportCity_EventScript_MonHasEffortRibbon\n\tspecialvar VAR_RESULT, Special_AreLeadMonEVsMaxedOut\n\tcall_if_eq VAR_RESULT, FALSE, SlateportCity_EventScript_MonEVsNotMaxed\n\tmsgbox SlateportCity_Text_PleaseGiveItThisEffortRibbon, MSGBOX_DEFAULT\n\tplayfanfare MUS_OBTAIN_ITEM\n\tmessage SlateportCity_Text_ReceivedEffortRibbon\n\twaitfanfare\n\tmsgbox SlateportCity_Text_PutEffortRibbonOnMon, MSGBOX_DEFAULT\n\tspecial GiveLeadMonEffortRibbon\n\trelease\n\tend"
+  },
+  "label": "SlateportCity_EventScript_EffortRibbonWoman",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

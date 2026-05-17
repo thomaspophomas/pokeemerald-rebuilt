@@ -1,0 +1,19 @@
+{
+  "id": "Route104_EventScript_Rival",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104/scripts.inc",
+    "sha1": "10d25047426798be70cda2d9503387bbf8458d85"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104/scripts.inc",
+    "rawScript": "lockall\n\tsetvar VAR_0x8008, 1\n\tapplymovement LOCALID_ROUTE104_RIVAL, Common_Movement_FacePlayer\n\twaitmovement 0\n\tgoto Route104_EventScript_RivalEncounter"
+  },
+  "label": "Route104_EventScript_Rival",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route104/scripts.inc",
+  "references": {}
+}

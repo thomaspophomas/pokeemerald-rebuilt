@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"DAD: With that BADGE, the DEFENSE\\n\"\n\t.string \"of all your POK\u00e9MON will increase.\\p\"\n\t.string \"POK\u00e9MON that know the HM move SURF\\n\"\n\t.string \"will be able to travel over water.\\p\"\n\t.string \"This is my gift to you. {PLAYER}, I'm\\n\"\n\t.string \"sure you can use it correctly.$\""
+  },
+  "label": "PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

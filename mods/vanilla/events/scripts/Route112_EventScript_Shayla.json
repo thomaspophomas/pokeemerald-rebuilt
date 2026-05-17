@@ -1,0 +1,23 @@
+{
+  "id": "Route112_EventScript_Shayla",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route112/scripts.inc",
+    "sha1": "2e1afc791f1e05fe9c3dcec0234b3a587c6a64fc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route112/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_SHAYLA, Route112_Text_ShaylaIntro, Route112_Text_ShaylaDefeat\n\tmsgbox Route112_Text_ShaylaPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route112_EventScript_Shayla",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route112/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_SHAYLA"
+    ]
+  }
+}

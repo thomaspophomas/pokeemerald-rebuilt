@@ -1,0 +1,23 @@
+{
+  "id": "MossdeepCity_GameCorner_1F_EventScript_ChooseLinkLeader",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "message CableClub_Text_ChooseGroupLeader\n\twaitmessage\n\tmultichoice 16, 6, MULTI_LINK_LEADER, FALSE\n\tswitch VAR_RESULT\n\tcase 0, MossdeepCity_GameCorner_1F_EventScript_TryJoinLinkGroup\n\tcase 1, MossdeepCity_GameCorner_1F_EventScript_TryBecomeLinkLeader\n\tcase 2, MossdeepCity_GameCorner_1F_EventScript_AbortMinigame\n\tcase MULTI_B_PRESSED, MossdeepCity_GameCorner_1F_EventScript_AbortMinigame\n\tend"
+  },
+  "label": "MossdeepCity_GameCorner_1F_EventScript_ChooseLinkLeader",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

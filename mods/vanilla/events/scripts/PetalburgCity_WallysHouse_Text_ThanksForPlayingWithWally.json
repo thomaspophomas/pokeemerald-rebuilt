@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_WallysHouse/scripts.inc",
+    "sha1": "ec42bb72f0a50cce9db9e173ec63e3e0787b8406"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_WallysHouse/scripts.inc",
+    "rawScript": ".string \"You're\u2026\\n\"\n\t.string \"Ah, you must be {PLAYER}{KUN}, right?\\p\"\n\t.string \"Thank you for playing with WALLY a\\n\"\n\t.string \"little while ago.\\p\"\n\t.string \"He's been frail and sickly ever\\n\"\n\t.string \"since he was a baby.\\p\"\n\t.string \"We've sent him to stay with my relatives\\n\"\n\t.string \"in VERDANTURF TOWN for a while.\\p\"\n\t.string \"The air is a lot cleaner there\\n\"\n\t.string \"than it is here.\\p\"\n\t.string \"What's that? Where's WALLY?\\n\"\n\t.string \"He's already left, our WALLY.\\p\"\n\t.string \"I wonder where he could have\\n\"\n\t.string \"gotten by now?$\""
+  },
+  "label": "PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_WallysHouse/scripts.inc",
+  "references": {}
+}

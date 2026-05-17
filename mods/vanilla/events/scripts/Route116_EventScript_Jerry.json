@@ -1,0 +1,26 @@
+{
+  "id": "Route116_EventScript_Jerry",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116/scripts.inc",
+    "sha1": "414d7bb5c4246d6317dd973dc816983566be8cc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route116/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_JERRY_1, Route116_Text_JerryIntro, Route116_Text_JerryDefeat, Route116_EventScript_TryRegisterJerryAfterBattle\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, Route116_EventScript_RematchJerry\n\tsetvar VAR_0x8004, TRAINER_JERRY_1\n\tspecialvar VAR_RESULT, IsTrainerRegistered\n\tgoto_if_eq VAR_RESULT, FALSE, Route116_EventScript_TryRegisterJerry\n\tmsgbox Route116_Text_JerryPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route116_EventScript_Jerry",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route116/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_JERRY_1"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_PokemonCenter_1F_Text_HaveYouHeardOfWord",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/mauville_man.inc",
+    "sha1": "5d5e72f125b988a1fbd10a6264af3893ef9cc868"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/mauville_man.inc",
+    "rawScript": ".string \"Hey, have you heard about\\n\"\n\t.string \"\u201c{STR_VAR_1}\u201d?\\p\"\n\t.string \"What's it mean? Well\u2026\\n\"\n\t.string \"Ask your daddy or mommy, okay?$\""
+  },
+  "label": "MauvilleCity_PokemonCenter_1F_Text_HaveYouHeardOfWord",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/mauville_man.inc",
+  "references": {}
+}

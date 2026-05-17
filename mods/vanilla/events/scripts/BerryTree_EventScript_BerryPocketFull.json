@@ -1,0 +1,19 @@
+{
+  "id": "BerryTree_EventScript_BerryPocketFull",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_tree.inc",
+    "sha1": "749b44e862850f19e689ac4622065bdedf7c8393"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_tree.inc",
+    "rawScript": "message BerryTree_Text_BerryPocketFull\n\twaitmessage\n\twaitbuttonpress\n\trelease\n\tend"
+  },
+  "label": "BerryTree_EventScript_BerryPocketFull",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_tree.inc",
+  "references": {}
+}

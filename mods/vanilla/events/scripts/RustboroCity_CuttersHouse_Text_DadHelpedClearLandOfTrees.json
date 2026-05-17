@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_CuttersHouse/scripts.inc",
+    "sha1": "0cff426e47a716cd6d3863a87b4d99ec7a72a0b9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_CuttersHouse/scripts.inc",
+    "rawScript": ".string \"When they were expanding the city of\\n\"\n\t.string \"RUSTBORO, my dad helped out.\\p\"\n\t.string \"He made his POK\u00e9MON use CUT to clear\\n\"\n\t.string \"the land of trees.$\""
+  },
+  "label": "RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_CuttersHouse/scripts.inc",
+  "references": {}
+}

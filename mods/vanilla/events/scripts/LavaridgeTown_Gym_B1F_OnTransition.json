@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Gym_B1F_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Gym_B1F/scripts.inc",
+    "sha1": "575a7846fd222d10d87752566c50759a04aab0c8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_Gym_B1F/scripts.inc",
+    "rawScript": "call LavaridgeTown_Gym_B1F_EventScript_SetTrainerTempVars\n\tcall LavaridgeTown_Gym_B1F_EventScript_CheckBuryTrainers\n\tend\n\n@ Unclear where/if these temp vars are getting checked"
+  },
+  "label": "LavaridgeTown_Gym_B1F_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/LavaridgeTown_Gym_B1F/scripts.inc",
+  "references": {}
+}

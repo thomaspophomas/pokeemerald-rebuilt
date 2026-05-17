@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "sha1": "b92e18aeb34c3856db794aa81beeec7f0f0de717"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "rawScript": ".string \"Oh, yes.\\n\"\n\t.string \"One of DAD's friends lives in town.\\p\"\n\t.string \"PROF. BIRCH is his name.\\p\"\n\t.string \"He lives right next door, so you should\\n\"\n\t.string \"go over and introduce yourself.$\""
+  },
+  "label": "PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_Text_CanYouGoSeeWhatsHappening",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": ".string \"Um, hi!\\p\"\n\t.string \"There are scary POK\u00e9MON outside!\\n\"\n\t.string \"I can hear their cries!\\p\"\n\t.string \"I want to go see what's going on,\\n\"\n\t.string \"but I don't have any POK\u00e9MON\u2026\\p\"\n\t.string \"Can you go see what's happening\\n\"\n\t.string \"for me?$\""
+  },
+  "label": "LittlerootTown_Text_CanYouGoSeeWhatsHappening",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {}
+}

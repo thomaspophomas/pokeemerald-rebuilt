@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_BikeShop_EventScript_SkipGreeting",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "sha1": "31396febb84a2b48608ca32d5a0dd0de865faf26"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "rawScript": "msgbox MauvilleCity_BikeShop_Text_DidYouComeFromFarAway, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, MauvilleCity_BikeShop_EventScript_YesFar\n\tgoto_if_eq VAR_RESULT, NO, MauvilleCity_BikeShop_EventScript_NotFar\n\tend"
+  },
+  "label": "MauvilleCity_BikeShop_EventScript_SkipGreeting",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_Mart_EventScript_Clerk",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_Mart/scripts.inc",
+    "sha1": "0ca66f0e5420cbce8afedeba0991156dec84e531"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_Mart/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmessage gText_HowMayIServeYou\n\twaitmessage\n\tpokemart FallarborTown_Mart_Pokemart\n\tmsgbox gText_PleaseComeAgain, MSGBOX_DEFAULT\n\trelease\n\tend\n\n\t.align 2"
+  },
+  "label": "FallarborTown_Mart_EventScript_Clerk",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_Mart/scripts.inc",
+  "references": {}
+}

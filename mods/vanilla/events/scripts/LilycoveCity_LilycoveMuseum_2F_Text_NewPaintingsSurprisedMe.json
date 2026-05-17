@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsSurprisedMe",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "sha1": "c41e25282a159070f0eb7fb3edcf1b61cc1cfa19"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "rawScript": ".string \"I've been away awhile, so the new\\n\"\n\t.string \"paintings up here surprised me.\\p\"\n\t.string \"I wish someone would paint my POK\u00e9MON\\n\"\n\t.string \"this pretty.$\""
+  },
+  "label": "LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsSurprisedMe",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+  "references": {}
+}

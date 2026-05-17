@@ -1,0 +1,25 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_StartLinkContest",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": "special GetContestPlayerId\n\taddvar VAR_0x8004, 1\n\tbuffernumberstring STR_VAR_2, VAR_0x8004\n\tmessageautoscroll LilycoveCity_ContestLobby_Text_YourMonIsEntryNumX\n\twaitmessage\n\tsubvar VAR_0x8004, 1\n\tcall LilycoveCity_ContestLobby_EventScript_LeadToLinkContestHall\n\tsetvar VAR_CONTEST_HALL_STATE, 1\n\tspecial SetLinkContestPlayerGfx\n\tsetvar VAR_CONTEST_TYPE, CONTEST_TYPE_LINK\n\tsetvar VAR_CONTEST_RANK, CONTEST_RANK_MASTER\n\tcall LilycoveCity_ContestLobby_EventScript_WarpToContestHall\n\tend"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_StartLinkContest",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_CONTEST_HALL_STATE",
+      "VAR_CONTEST_RANK",
+      "VAR_CONTEST_TYPE"
+    ]
+  }
+}

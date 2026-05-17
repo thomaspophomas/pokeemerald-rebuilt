@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Gym_1F_Text_ReceivedRainBadge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "sha1": "cd5ddf90f8e2b0931828078295732db5c87d2dae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "rawScript": ".string \"{PLAYER} received the RAIN BADGE\\n\"\n\t.string \"from JUAN.$\""
+  },
+  "label": "SootopolisCity_Gym_1F_Text_ReceivedRainBadge",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ContestHall_EventScript_SetExitWarp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ContestHall/scripts.inc",
+    "sha1": "1975dda1f6df6ad0ef2b0d81c28afe4508469870"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ContestHall/scripts.inc",
+    "rawScript": "special ClearLinkContestFlags\n\tswitch VAR_CONTEST_TYPE\n\tcase CONTEST_TYPE_NPC_NORMAL, ContestHall_EventScript_SetExitWarpNormalContest\n\tcase CONTEST_TYPE_NPC_SUPER, ContestHall_EventScript_SetExitWarpSuperContest\n\tcase CONTEST_TYPE_NPC_HYPER, ContestHall_EventScript_SetExitWarpHyperContest\n\tcase CONTEST_TYPE_NPC_MASTER, ContestHall_EventScript_SetExitWarpMasterContest\n\tcase CONTEST_TYPE_LINK, ContestHall_EventScript_SetExitWarpLinkContest\n\treturn"
+  },
+  "label": "ContestHall_EventScript_SetExitWarp",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/ContestHall/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_CONTEST_TYPE"
+    ]
+  }
+}

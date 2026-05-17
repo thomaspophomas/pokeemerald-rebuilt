@@ -1,0 +1,35 @@
+{
+  "id": "RustboroCity_EventScript_ReturnGoods",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": "call_if_eq VAR_TEMP_1, 0, RustboroCity_EventScript_EmployeeFacePlayerUp2\n\tcall_if_eq VAR_TEMP_1, 1, RustboroCity_EventScript_EmployeeFacePlayerLeft2\n\tcall_if_eq VAR_TEMP_1, 2, RustboroCity_EventScript_EmployeeFacePlayerDown2\n\tcall_if_eq VAR_TEMP_1, 3, RustboroCity_EventScript_EmployeeApproachPlayerDown2\n\tcall_if_eq VAR_TEMP_1, 4, RustboroCity_EventScript_EmployeeFacePlayerRight\n\tmsgbox RustboroCity_Text_YouGotItThankYou, MSGBOX_DEFAULT\n\tgiveitem ITEM_GREAT_BALL\n\tcall_if_eq VAR_RESULT, FALSE, RustboroCity_EventScript_BagFull\n\tmsgbox RustboroCity_Text_PleaseComeWithMe, MSGBOX_DEFAULT\n\tclosemessage\n\tsetflag FLAG_RETURNED_DEVON_GOODS\n\tsetflag FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1\n\tsetvar VAR_RUSTBORO_CITY_STATE, 5\n\tdelay 30\n\twarp MAP_RUSTBORO_CITY_DEVON_CORP_3F, 2, 2\n\twaitstate\n\treleaseall\n\tend"
+  },
+  "label": "RustboroCity_EventScript_ReturnGoods",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1",
+      "FLAG_RETURNED_DEVON_GOODS"
+    ],
+    "vars": [
+      "VAR_RESULT",
+      "VAR_RUSTBORO_CITY_STATE",
+      "VAR_TEMP_1"
+    ],
+    "items": [
+      "ITEM_GREAT_BALL"
+    ],
+    "maps": [
+      "MAP_RUSTBORO_CITY_DEVON_CORP_3F"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Route127_EventScript_Jonah",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route127/scripts.inc",
+    "sha1": "5e6db9ccb1bc4c94fbe7ac561ad0da7edd28720c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route127/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_JONAH, Route127_Text_JonahIntro, Route127_Text_JonahDefeat\n\tmsgbox Route127_Text_JonahPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route127_EventScript_Jonah",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route127/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_JONAH"
+    ]
+  }
+}

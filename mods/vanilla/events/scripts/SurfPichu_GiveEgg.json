@@ -1,0 +1,23 @@
+{
+  "id": "SurfPichu_GiveEgg",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_pichu.inc",
+    "sha1": "b8f12719008c830f693c4c1d3228265f92693526"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_pichu.inc",
+    "rawScript": "giveegg SPECIES_PICHU\n\tsetmodernfatefulencounter VAR_GIFT_PICHU_SLOT\n\tsetmonmetlocation VAR_GIFT_PICHU_SLOT, METLOC_FATEFUL_ENCOUNTER\n\tvgoto_if_eq VAR_GIFT_PICHU_SLOT, 1, SurfPichu_Slot1\n\tvgoto_if_eq VAR_GIFT_PICHU_SLOT, 2, SurfPichu_Slot2\n\tvgoto_if_eq VAR_GIFT_PICHU_SLOT, 3, SurfPichu_Slot3\n\tvgoto_if_eq VAR_GIFT_PICHU_SLOT, 4, SurfPichu_Slot4\n\tvgoto_if_eq VAR_GIFT_PICHU_SLOT, 5, SurfPichu_Slot5\n\treturn"
+  },
+  "label": "SurfPichu_GiveEgg",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_pichu.inc",
+  "references": {
+    "vars": [
+      "VAR_GIFT_PICHU_SLOT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_EventScript_Woman",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/scripts.inc",
+    "sha1": "33f0f7f83a475484aaca395542c6bd65a6f2dd45"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity/scripts.inc",
+    "rawScript": "msgbox MossdeepCity_Text_SpecialSpaceCenterRock, MSGBOX_NPC\n\tend"
+  },
+  "label": "MossdeepCity_EventScript_Woman",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity/scripts.inc",
+  "references": {}
+}

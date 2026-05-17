@@ -1,0 +1,31 @@
+{
+  "id": "FallarborTown_CozmosHouse_EventScript_PlayerHasMeteorite",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+    "sha1": "8f6cba0c7d4561645e0110baf848672ddd10d44d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+    "rawScript": "call_if_unset FLAG_TEMP_2, FallarborTown_CozmosHouse_EventScript_NoticeMeteorite\n\tcall_if_set FLAG_TEMP_2, FallarborTown_CozmosHouse_EventScript_AskForMeteorite\n\tgoto_if_eq VAR_RESULT, NO, FallarborTown_CozmosHouse_EventScript_DeclineGiveMeteorite\n\tmsgbox FallarborTown_CozmosHouse_Text_PleaseUseThisTM, MSGBOX_DEFAULT\n\tgiveitem ITEM_TM_RETURN\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetvar VAR_0x8004, ITEM_METEORITE\n\tcall Common_EventScript_PlayerHandedOverTheItem\n\tsetflag FLAG_RECEIVED_TM_RETURN\n\tmsgbox FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "FallarborTown_CozmosHouse_EventScript_PlayerHasMeteorite",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_TM_RETURN",
+      "FLAG_TEMP_2"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_METEORITE",
+      "ITEM_TM_RETURN"
+    ]
+  }
+}

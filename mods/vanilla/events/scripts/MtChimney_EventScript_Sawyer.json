@@ -1,0 +1,26 @@
+{
+  "id": "MtChimney_EventScript_Sawyer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney/scripts.inc",
+    "sha1": "4d6a7ac7998e07e6d4f244ef13c499194f5b3668"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtChimney/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_SAWYER_1, MtChimney_Text_SawyerIntro, MtChimney_Text_SawyerDefeat, MtChimney_EventScript_SawyerDefeated\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, MtChimney_EventScript_SawyerRematch\n\tmsgbox MtChimney_Text_SawyerPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "MtChimney_EventScript_Sawyer",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtChimney/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_SAWYER_1"
+    ]
+  }
+}

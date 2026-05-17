@@ -1,0 +1,26 @@
+{
+  "id": "Route128_EventScript_KyogreAwakenedScene",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route128/scripts.inc",
+    "sha1": "8c3eb5fe541a802a44ec8805e051fe2de0e552f6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route128/scripts.inc",
+    "rawScript": "lockall\n\tdelay 20\n\tapplymovement LOCALID_ROUTE128_ARCHIE, Route128_Movement_ArchieLookAround\n\twaitmovement 0\n\tmsgbox Route128_Text_ArchieWhatHappened, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_ROUTE128_ARCHIE, Route128_Movement_ArchieBackUp\n\twaitmovement 0\n\tmsgbox Route128_Text_ArchieIOnlyWanted, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_ROUTE128_MAXIE, Route128_Movement_MaxieApproachArchie\n\twaitmovement 0\n\tapplymovement LOCALID_ROUTE128_ARCHIE, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tmsgbox Route128_Text_MaxieDoYouUnderstandNow, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_ROUTE128_MAXIE, Route128_Movement_MaxieApproachPlayer\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tmsgbox Route128_Text_MaxieResposibilityFallsToArchieAndMe, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_ROUTE128_ARCHIE, Route128_Movement_ArchieRunLeft\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft\n\tapplymovement LOCALID_ROUTE128_MAXIE, Route128_Movement_MaxieWalkLeft\n\twaitmovement 0\n\tmsgbox Route128_Text_MaxieThisDefiesBelief, MSGBOX_DEFAULT\n\tclosemessage\n\tdelay 40\n\tapplymovement LOCALID_ROUTE128_MAXIE, Route128_Movement_MaxieExit\n\tapplymovement LOCALID_ROUTE128_ARCHIE, Route128_Movement_ArchieExit\n\twaitmovement 0\n\tremoveobject LOCALID_ROUTE128_MAXIE\n\tremoveobject LOCALID_ROUTE128_ARCHIE\n\tdelay 100\n\tsetfieldeffectargument 0, 1\n\tdofieldeffect FLDEFF_NPCFLY_OUT\n\twaitfieldeffect FLDEFF_NPCFLY_OUT\n\taddobject LOCALID_ROUTE128_STEVEN\n\tapplymovement LOCALID_ROUTE128_STEVEN, Route128_Movement_StevenApproachPlayer\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\tmsgbox Route128_Text_StevenWhatIsHappening, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_ROUTE128_STEVEN, Route128_Movement_StevenWalkUp\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tmsgbox Route128_Text_StevenWholeWorldWillDrown, MSGBOX_DEFAULT\n\tapplymovement LOCALID_ROUTE128_STEVEN, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tmsgbox Route128_Text_StevenImGoingToSootopolis, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_ROUTE128_STEVEN, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tdelay 50\n\tsetfieldeffectargument 0, 1\n\tdofieldeffect FLDEFF_NPCFLY_OUT\n\tdelay 15\n\tremoveobject LOCALID_ROUTE128_STEVEN\n\twaitfieldeffect FLDEFF_NPCFLY_OUT\n\tclearflag FLAG_HIDE_MAP_NAME_POPUP\n\tsetvar VAR_ROUTE128_STATE, 2\n\treleaseall\n\tend"
+  },
+  "label": "Route128_EventScript_KyogreAwakenedScene",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route128/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_MAP_NAME_POPUP"
+    ],
+    "vars": [
+      "VAR_ROUTE128_STATE"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "Route114_FossilManiacsTunnel_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_FossilManiacsTunnel/scripts.inc",
+    "sha1": "ecd010d2086a8019284fa4a41a8a3e7e67275e83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114_FossilManiacsTunnel/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, Route114_FossilManiacsTunnel_OnTransition\n\tmap_script MAP_SCRIPT_ON_LOAD, Route114_FossilManiacsTunnel_OnLoad\n\t.byte 0"
+  },
+  "label": "Route114_FossilManiacsTunnel_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Route114_FossilManiacsTunnel/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "ITEM_ULTRA_BALL",
+  "domain": "pokeballs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/mod/pokeball.c",
+    "sha1": "33d25b17be0efe4ad368348c596e2ba324574b45"
+  },
+  "legacy": {
+    "kind": "pokeball_definition",
+    "sourcePath": "src/mod/pokeball.c",
+    "rawC": "{ \"vanilla:ultra_ball\",   ITEM_ULTRA_BALL,   BALL_ULTRA,   20,                             0, NULL, BattleScript_BallThrow,       NULL }",
+    "generatedKey": "vanilla:ultra_ball"
+  },
+  "key": "vanilla:ultra_ball",
+  "itemId": "ITEM_ULTRA_BALL",
+  "ballId": "BALL_ULTRA",
+  "catchModifier": "20",
+  "catchModifierHook": null,
+  "battleScript": "BattleScript_BallThrow",
+  "commitHook": null,
+  "flags": "0",
+  "itemIcon": "gItemIcon_UltraBall",
+  "itemPalette": "gItemIconPalette_UltraBall",
+  "throwSprite": {
+    "sheet": "gBallGfx_Ultra",
+    "palette": "gBallPal_Ultra",
+    "tileTag": "GFX_TAG_ULTRA_BALL",
+    "paletteTag": "GFX_TAG_ULTRA_BALL",
+    "templateTable": "gBallSpriteTemplates"
+  },
+  "openAnimation": {
+    "particleSheet": "gBattleAnimSpriteGfx_Particles",
+    "particlePalette": "gBattleAnimSpritePal_CircleImpact",
+    "particleTag": "TAG_PARTICLES_ULTRABALL",
+    "animNum": "5",
+    "taskFunc": "UltraBallOpenParticleAnimation"
+  }
+}

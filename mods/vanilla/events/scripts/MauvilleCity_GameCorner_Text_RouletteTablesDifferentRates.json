@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_GameCorner_Text_RouletteTablesDifferentRates",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "sha1": "3db7cd216c9a2c35e8176ef8b4a1d9ec68649c7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "rawScript": ".string \"The ROULETTE tables have different\\n\"\n\t.string \"rates.\\p\"\n\t.string \"Check your COINS if you're going to\\n\"\n\t.string \"pick a table.$\""
+  },
+  "label": "MauvilleCity_GameCorner_Text_RouletteTablesDifferentRates",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+  "references": {}
+}

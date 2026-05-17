@@ -1,0 +1,26 @@
+{
+  "id": "Route106_EventScript_Elliot",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route106/scripts.inc",
+    "sha1": "a209a44ee2510b2fc73442d6137996f599dae676"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route106/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_ELLIOT_1, Route106_Text_ElliotIntro, Route106_Text_ElliotDefeated, Route106_EventScript_ElliotRegisterMatchCallAfterBattle\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, Route106_EventScript_ElliotRematch\n\tmsgbox Route106_Text_ElliotPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route106_EventScript_Elliot",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route106/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_ELLIOT_1"
+    ]
+  }
+}

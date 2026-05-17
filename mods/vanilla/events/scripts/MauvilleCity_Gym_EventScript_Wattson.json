@@ -1,0 +1,30 @@
+{
+  "id": "MauvilleCity_Gym_EventScript_Wattson",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "sha1": "ba2cd4a14af6a43f9221cd58f6a4a0299a51ce6c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_WATTSON_1, MauvilleCity_Gym_Text_WattsonIntro, MauvilleCity_Gym_Text_WattsonDefeat, MauvilleCity_Gym_EventScript_WattsonDefeated, NO_MUSIC\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, MauvilleCity_Gym_EventScript_WattsonRematch\n\tgoto_if_unset FLAG_RECEIVED_TM_SHOCK_WAVE, MauvilleCity_Gym_EventScript_GiveShockWave2\n\tgoto_if_eq VAR_NEW_MAUVILLE_STATE, 2, MauvilleCity_Gym_EventScript_CompletedNewMauville\n\tmsgbox MauvilleCity_Gym_Text_WattsonPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "MauvilleCity_Gym_EventScript_Wattson",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_TM_SHOCK_WAVE"
+    ],
+    "vars": [
+      "VAR_NEW_MAUVILLE_STATE",
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_WATTSON_1"
+    ]
+  }
+}

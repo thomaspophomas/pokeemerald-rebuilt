@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_DepartmentStore_5F_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+    "sha1": "cd7aae47b8996a67b13e78af3da148a41c68791f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, LilycoveCity_DepartmentStore_5F_OnWarp\n\t.byte 0\n\n@ During the abnormal weather from Kyogre/Groudon awakening the dept store rooftop is inaccessible\n@ Likely done to avoid dealing with showing the weather. Technically the rooftop is indoors"
+  },
+  "label": "LilycoveCity_DepartmentStore_5F_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE"
+    ]
+  }
+}

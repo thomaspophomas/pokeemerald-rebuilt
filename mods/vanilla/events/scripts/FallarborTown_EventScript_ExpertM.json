@@ -1,0 +1,23 @@
+{
+  "id": "FallarborTown_EventScript_ExpertM",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown/scripts.inc",
+    "sha1": "5eb275ca170342d9d6f005ad109dd88d1bf829e1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY, FallarborTown_EventScript_ExpertMNormal\n\tmsgbox FallarborTown_Text_ShadyCharactersCozmosHome, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "FallarborTown_EventScript_ExpertM",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY"
+    ]
+  }
+}

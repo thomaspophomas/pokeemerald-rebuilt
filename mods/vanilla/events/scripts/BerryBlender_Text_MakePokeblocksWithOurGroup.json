@@ -1,0 +1,19 @@
+{
+  "id": "BerryBlender_Text_MakePokeblocksWithOurGroup",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": ".string \"Oh, hello! Did you want to make some\\n\"\n\t.string \"{POKEBLOCK}S with our little group?$\""
+  },
+  "label": "BerryBlender_Text_MakePokeblocksWithOurGroup",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {}
+}

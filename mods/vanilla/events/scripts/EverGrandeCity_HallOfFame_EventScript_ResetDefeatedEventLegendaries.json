@@ -1,0 +1,27 @@
+{
+  "id": "EverGrandeCity_HallOfFame_EventScript_ResetDefeatedEventLegendaries",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/hall_of_fame.inc",
+    "sha1": "ad8d59f5f126d3c072b77148cefce9521a239ae5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/hall_of_fame.inc",
+    "rawScript": "clearflag FLAG_DEFEATED_MEW\n\tclearflag FLAG_DEFEATED_LATIAS_OR_LATIOS\n\tclearflag FLAG_DEFEATED_DEOXYS\n\tclearflag FLAG_DEFEATED_LUGIA\n\tclearflag FLAG_DEFEATED_HO_OH\n\treturn"
+  },
+  "label": "EverGrandeCity_HallOfFame_EventScript_ResetDefeatedEventLegendaries",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/hall_of_fame.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_DEOXYS",
+      "FLAG_DEFEATED_HO_OH",
+      "FLAG_DEFEATED_LATIAS_OR_LATIOS",
+      "FLAG_DEFEATED_LUGIA",
+      "FLAG_DEFEATED_MEW"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Movement_ScientistLeave",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": "walk_up\n\tstep_end"
+  },
+  "label": "RustboroCity_Movement_ScientistLeave",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

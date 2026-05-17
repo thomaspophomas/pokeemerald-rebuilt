@@ -1,0 +1,19 @@
+{
+  "id": "SafariZone_North_Text_Fisherman",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/safari_zone.inc",
+    "sha1": "435880c660a34d3e51dcedb348a41731d28af7cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/safari_zone.inc",
+    "rawScript": ".string \"I'm on a mission to find WATER POK\u00e9MON\\n\"\n\t.string \"you don't see in HOENN.\\p\"\n\t.string \"Do you have any idea where the lake is?$\""
+  },
+  "label": "SafariZone_North_Text_Fisherman",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/safari_zone.inc",
+  "references": {}
+}

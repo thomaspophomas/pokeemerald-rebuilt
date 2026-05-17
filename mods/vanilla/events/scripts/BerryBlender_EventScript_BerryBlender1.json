@@ -1,0 +1,26 @@
+{
+  "id": "BerryBlender_EventScript_BerryBlender1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": "lockall\n\tgoto_if_unset FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER, BerryBlender_EventScript_BlendMasterPresent\n\tsetvar NUM_OPPONENTS, 1\n\tapplymovement LOCALID_BLEND_MASTER, BerryBlender_Movement_BlendLeaderWalkInPlace\n\twaitmovement 0\n\tmsgbox BerryBlender_Text_WantToMakePokeblocks, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, BerryBlender_EventScript_TryUseBerryBlender1\n\tgoto BerryBlender_EventScript_DeclineBlender1\n\tend"
+  },
+  "label": "BerryBlender_EventScript_BerryBlender1",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

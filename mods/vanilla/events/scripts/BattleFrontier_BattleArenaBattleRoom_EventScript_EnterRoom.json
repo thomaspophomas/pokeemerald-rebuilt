@@ -1,0 +1,27 @@
+{
+  "id": "BattleFrontier_BattleArenaBattleRoom_EventScript_EnterRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "sha1": "d0a70f09e21302da78823f02966e03f9b41a3a1a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "rawScript": "lockall\n\tshowobjectat LOCALID_ARENA_BATTLE_PLAYER, MAP_BATTLE_FRONTIER_BATTLE_ARENA_BATTLE_ROOM\n\tapplymovement LOCALID_ARENA_BATTLE_PLAYER, BattleFrontier_BattleArenaBattleRoom_Movement_PlayerEnter\n\twaitmovement 0\n\tfrontier_get FRONTIER_DATA_BATTLE_NUM\n\tgoto_if_eq VAR_RESULT, 0, BattleFrontier_BattleArenaBattleRoom_EventScript_AnnounceTrainers\n\tapplymovement LOCALID_ARENA_BATTLE_ATTENDANT, BattleFrontier_BattleArenaBattleRoom_Movement_WalkInPlaceDown\n\tapplymovement LOCALID_ARENA_BATTLE_PLAYER, BattleFrontier_BattleArenaBattleRoom_Movement_WalkInPlaceLeft\n\tsetvar VAR_TEMP_2, 1\n\tfrontier_set FRONTIER_DATA_RECORD_DISABLED, TRUE\n\tgoto BattleFrontier_BattleArenaBattleRoom_EventScript_AskReadyForOpponent"
+  },
+  "label": "BattleFrontier_BattleArenaBattleRoom_EventScript_EnterRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_2"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_ARENA_BATTLE_ROOM"
+    ]
+  }
+}

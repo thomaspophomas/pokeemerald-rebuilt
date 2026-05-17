@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_GameCorner_Text_OhIsThatSo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "sha1": "3db7cd216c9a2c35e8176ef8b4a1d9ec68649c7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "rawScript": ".string \"Oh, is that so? \\n\"\n\t.string \"You need to save some COINS before\\l\"\n\t.string \"coming back here.$\""
+  },
+  "label": "MauvilleCity_GameCorner_Text_OhIsThatSo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+  "references": {}
+}

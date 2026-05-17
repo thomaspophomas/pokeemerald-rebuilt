@@ -1,0 +1,19 @@
+{
+  "id": "Route119_WeatherInstitute_2F_Text_Grunt3Intro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "sha1": "fb62e5a84003aa6247f1e7fe6ea409ec86ac92cc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "rawScript": ".string \"We're TEAM AQUA!\\n\"\n\t.string \"We appear wherever anything rare is\\l\"\n\t.string \"found!$\""
+  },
+  "label": "Route119_WeatherInstitute_2F_Text_Grunt3Intro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+  "references": {}
+}

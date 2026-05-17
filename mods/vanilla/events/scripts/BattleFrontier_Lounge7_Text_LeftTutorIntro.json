@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge7_Text_LeftTutorIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+    "sha1": "384442d4fcbb4c5edeb287c69a9c0ca256ec49b1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+    "rawScript": ".string \"Buhahaha!\\p\"\n\t.string \"You couldn't tell it from looking now,\\n\"\n\t.string \"but I used to be one tough TRAINER.\\p\"\n\t.string \"I had a reputation as the toughest\\n\"\n\t.string \"BEAUTY around, I tell you!\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"What is it now?\\n\"\n\t.string \"You don't believe me.\\p\"\n\t.string \"I'm not like that blowhard woman over\\n\"\n\t.string \"there. I'm actually talented!\\p\"\n\t.string \"Let me prove it to you.\\n\"\n\t.string \"I can teach your POK\u00e9MON special and\\l\"\n\t.string \"yet cute moves.\\p\"\n\t.string \"But my lessons don't come free.\\n\"\n\t.string \"How about paying for the moves I teach\\l\"\n\t.string \"with a wee bit of Battle Points?$\""
+  },
+  "label": "BattleFrontier_Lounge7_Text_LeftTutorIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+  "references": {}
+}

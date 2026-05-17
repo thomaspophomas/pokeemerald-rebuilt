@@ -1,0 +1,19 @@
+{
+  "id": "Route102_Text_ImNotVeryTall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route102/scripts.inc",
+    "sha1": "17c4403137bc871caf964a4fed8e5efc79316b34"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route102/scripts.inc",
+    "rawScript": ".string \"I'm\u2026not very tall, so I sink right\\n\"\n\t.string \"into tall grass.\\p\"\n\t.string \"The grass goes up my nose and\u2026\\n\"\n\t.string \"Fwafwafwafwafwa\u2026\\p\"\n\t.string \"Fwatchoo!$\""
+  },
+  "label": "Route102_Text_ImNotVeryTall",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route102/scripts.inc",
+  "references": {}
+}

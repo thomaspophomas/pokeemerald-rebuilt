@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc",
+    "sha1": "1c31f94c3331fa62c92524841334a9b9b0a050ac"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc",
+    "rawScript": ".string \"Hmm\u2026\\p\"\n\t.string \"An attacking move\u2026\\n\"\n\t.string \"Or a defensive move\u2026\\p\"\n\t.string \"It's no easy matter to decide which TM\\n\"\n\t.string \"moves should be taught to POK\u00e9MON\u2026$\""
+  },
+  "label": "LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc",
+  "references": {}
+}

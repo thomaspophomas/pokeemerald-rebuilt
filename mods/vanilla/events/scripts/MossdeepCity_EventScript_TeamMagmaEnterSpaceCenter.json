@@ -1,0 +1,26 @@
+{
+  "id": "MossdeepCity_EventScript_TeamMagmaEnterSpaceCenter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/scripts.inc",
+    "sha1": "33f0f7f83a475484aaca395542c6bd65a6f2dd45"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_MOSSDEEP_MAXIE, MossdeepCity_Movement_MaxieGestureToSpaceCenter\n\twaitmovement 0\n\tapplymovement LOCALID_MOSSDEEP_GRUNT_1, MossdeepCity_Movement_GruntFaceSpaceCenter\n\tapplymovement LOCALID_MOSSDEEP_GRUNT_2, MossdeepCity_Movement_GruntFaceSpaceCenter\n\tapplymovement LOCALID_MOSSDEEP_GRUNT_3, MossdeepCity_Movement_GruntFaceSpaceCenter\n\tapplymovement LOCALID_MOSSDEEP_GRUNT_4, MossdeepCity_Movement_GruntFaceSpaceCenter\n\twaitmovement 0\n\tapplymovement LOCALID_MOSSDEEP_MAXIE, MossdeepCity_Movement_MaxieEnterSpaceCenter\n\tapplymovement LOCALID_MOSSDEEP_GRUNT_1, MossdeepCity_Movement_Grunt1EnterSpaceCenter\n\tapplymovement LOCALID_MOSSDEEP_GRUNT_2, MossdeepCity_Movement_Grunt2EnterSpaceCenter\n\tapplymovement LOCALID_MOSSDEEP_GRUNT_3, MossdeepCity_Movement_Grunt3EnterSpaceCenter\n\tapplymovement LOCALID_MOSSDEEP_GRUNT_4, MossdeepCity_Movement_Grunt4EnterSpaceCenter\n\twaitmovement 0\n\tremoveobject LOCALID_MOSSDEEP_MAXIE\n\tremoveobject LOCALID_MOSSDEEP_GRUNT_1\n\tremoveobject LOCALID_MOSSDEEP_GRUNT_2\n\tremoveobject LOCALID_MOSSDEEP_GRUNT_3\n\tremoveobject LOCALID_MOSSDEEP_GRUNT_4\n\tdelay 30\n\tsetvar VAR_MOSSDEEP_CITY_STATE, 2\n\tsetflag FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA\n\treleaseall\n\tend"
+  },
+  "label": "MossdeepCity_EventScript_TeamMagmaEnterSpaceCenter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA"
+    ],
+    "vars": [
+      "VAR_MOSSDEEP_CITY_STATE"
+    ]
+  }
+}

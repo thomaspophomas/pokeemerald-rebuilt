@@ -1,0 +1,19 @@
+{
+  "id": "EventScript_ObtainItemMessage",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/obtain_item.inc",
+    "sha1": "53094705147ea153e40933cbc7f9cbe653e2a59b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/obtain_item.inc",
+    "rawScript": "bufferitemnameplural STR_VAR_2, ITEMID, AMOUNT\n\tcheckitemtype ITEMID\n\tcall EventScript_BufferPocketNameAndTryFanfare\n\tcall_if_eq VAR_0x8007, TRUE, EventScript_ObtainedItem\n\tcall_if_eq VAR_0x8007, FALSE, EventScript_NoRoomForItem\n\treturn"
+  },
+  "label": "EventScript_ObtainItemMessage",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/obtain_item.inc",
+  "references": {}
+}

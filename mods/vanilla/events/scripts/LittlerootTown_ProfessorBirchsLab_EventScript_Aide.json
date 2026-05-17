@@ -1,0 +1,26 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_EventScript_Aide",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_ge VAR_BIRCH_LAB_STATE, 3, LittlerootTown_ProfessorBirchsLab_EventScript_AideReceivedStarter\n\tgoto_if_set FLAG_BIRCH_AIDE_MET, LittlerootTown_ProfessorBirchsLab_EventScript_AideAlreadyMet\n\tmsgbox LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork, MSGBOX_DEFAULT\n\tsetflag FLAG_BIRCH_AIDE_MET\n\trelease\n\tend"
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_EventScript_Aide",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_BIRCH_AIDE_MET"
+    ],
+    "vars": [
+      "VAR_BIRCH_LAB_STATE"
+    ]
+  }
+}

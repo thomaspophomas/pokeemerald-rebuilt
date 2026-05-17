@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsStandout",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": ".string \"Among the recently hot TRAINERS,\\n\"\n\t.string \"{STR_VAR_1} is the standout.\\p\"\n\t.string \"That toughness, it's simply not normal.\\p\"\n\t.string \"You're doing okay, but you're not in\\n\"\n\t.string \"the same class as {STR_VAR_1}.$\""
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsStandout",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {}
+}

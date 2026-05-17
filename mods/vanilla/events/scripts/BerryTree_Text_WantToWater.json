@@ -1,0 +1,19 @@
+{
+  "id": "BerryTree_Text_WantToWater",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_tree.inc",
+    "sha1": "749b44e862850f19e689ac4622065bdedf7c8393"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_tree.inc",
+    "rawScript": ".string \"Want to water the {STR_VAR_1} with the\\n\"\n\t.string \"WAILMER PAIL?$\""
+  },
+  "label": "BerryTree_Text_WantToWater",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/berry_tree.inc",
+  "references": {}
+}

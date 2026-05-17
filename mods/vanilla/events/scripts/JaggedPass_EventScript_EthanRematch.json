@@ -1,0 +1,23 @@
+{
+  "id": "JaggedPass_EventScript_EthanRematch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/JaggedPass/scripts.inc",
+    "sha1": "3539aca2d309baaf0b57344f9c2014b5d896c94b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/JaggedPass/scripts.inc",
+    "rawScript": "trainerbattle_rematch TRAINER_ETHAN_1, JaggedPass_Text_EthanRematchIntro, JaggedPass_Text_EthanRematchDefeat\n\tmsgbox JaggedPass_Text_EthanPostRematch, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "JaggedPass_EventScript_EthanRematch",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/JaggedPass/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ETHAN_1"
+    ]
+  }
+}

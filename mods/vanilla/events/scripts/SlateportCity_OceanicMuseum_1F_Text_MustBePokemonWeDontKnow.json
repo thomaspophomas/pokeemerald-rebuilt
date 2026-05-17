@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_OceanicMuseum_1F_Text_MustBePokemonWeDontKnow",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "sha1": "7a1e00c78bbfbd0fbd6eb59a84a4d4e7114e4261"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "rawScript": ".string \"The sea is vast without end, and\\n\"\n\t.string \"infinitely deep\u2026\\p\"\n\t.string \"There must be many POK\u00e9MON that\\n\"\n\t.string \"we don't know about.$\""
+  },
+  "label": "SlateportCity_OceanicMuseum_1F_Text_MustBePokemonWeDontKnow",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+  "references": {}
+}

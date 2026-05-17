@@ -1,0 +1,23 @@
+{
+  "id": "SkyPillar_Outside_OnFrame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Outside/scripts.inc",
+    "sha1": "9bf749dde7f98e08aa43ccd220b7469c53ade7f3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_Outside/scripts.inc",
+    "rawScript": "map_script_2 VAR_SOOTOPOLIS_CITY_STATE, 3, SkyPillar_Outside_EventScript_WallaceScene\n\t.2byte 0"
+  },
+  "label": "SkyPillar_Outside_OnFrame",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/SkyPillar_Outside/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_SOOTOPOLIS_CITY_STATE"
+    ]
+  }
+}

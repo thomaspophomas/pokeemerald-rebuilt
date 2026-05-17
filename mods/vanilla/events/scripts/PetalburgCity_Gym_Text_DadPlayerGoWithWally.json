@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_DadPlayerGoWithWally",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"DAD: {PLAYER}, you heard that,\\n\"\n\t.string \"right?\\p\"\n\t.string \"Go with WALLY and make sure that he\\n\"\n\t.string \"safely catches a POK\u00e9MON.$\""
+  },
+  "label": "PetalburgCity_Gym_Text_DadPlayerGoWithWally",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

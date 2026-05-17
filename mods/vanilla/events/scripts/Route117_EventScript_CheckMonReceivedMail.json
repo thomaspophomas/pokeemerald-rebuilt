@@ -1,0 +1,23 @@
+{
+  "id": "Route117_EventScript_CheckMonReceivedMail",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/day_care.inc",
+    "sha1": "b807399ab522de3ba938194e85f890a343362752"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/day_care.inc",
+    "rawScript": "specialvar VAR_RESULT, CheckDaycareMonReceivedMail\n\tcall_if_eq VAR_RESULT, 1, Route117_EventScript_MonReceivedMail\n\treturn"
+  },
+  "label": "Route117_EventScript_CheckMonReceivedMail",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/day_care.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

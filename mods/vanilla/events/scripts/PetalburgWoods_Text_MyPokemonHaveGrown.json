@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgWoods_Text_MyPokemonHaveGrown",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/scripts.inc",
+    "sha1": "a7a3b49731f97088b328145805430d4429326ec8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgWoods/scripts.inc",
+    "rawScript": ".string \"My BUG POK\u00e9MON have grown.\\n\"\n\t.string \"I'll be popular again.$\""
+  },
+  "label": "PetalburgWoods_Text_MyPokemonHaveGrown",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgWoods/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F_EventScript_ThreeMagmaGrunts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "rawScript": "playse SE_PIN\n\tapplymovement LOCALID_PLAYER, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, Common_Movement_Delay48\n\twaitmovement 0\n\tmsgbox MossdeepCity_SpaceCenter_2F_Text_YoureOutnumberedTakeUsOn, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, MossdeepCity_SpaceCenter_2F_EventScript_BattleThreeMagmaGrunts\n\tmsgbox MossdeepCity_SpaceCenter_2F_Text_GoodAnswer, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_PLAYER, MossdeepCity_SpaceCenter_2F_Movement_PlayerExit\n\twaitmovement 0\n\twarp MAP_MOSSDEEP_CITY_SPACE_CENTER_1F, 13, 1\n\twaitstate\n\treleaseall\n\tend"
+  },
+  "label": "MossdeepCity_SpaceCenter_2F_EventScript_ThreeMagmaGrunts",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "maps": [
+      "MAP_MOSSDEEP_CITY_SPACE_CENTER_1F"
+    ]
+  }
+}

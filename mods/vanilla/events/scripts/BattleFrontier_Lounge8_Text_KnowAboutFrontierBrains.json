@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge8_Text_KnowAboutFrontierBrains",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge8/scripts.inc",
+    "sha1": "645530e958a54b4ac429c03f81abce888272e486"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge8/scripts.inc",
+    "rawScript": ".string \"Do you know about the FRONTIER\\n\"\n\t.string \"BRAINS?\\p\"\n\t.string \"That's what SCOTT calls the seven\\n\"\n\t.string \"special TRAINERS that run the seven\\l\"\n\t.string \"facilities in the BATTLE FRONTIER.$\""
+  },
+  "label": "BattleFrontier_Lounge8_Text_KnowAboutFrontierBrains",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge8/scripts.inc",
+  "references": {}
+}

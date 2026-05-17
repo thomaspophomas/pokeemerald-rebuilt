@@ -1,0 +1,31 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_TalkToPotentialPartner",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "sha1": "4e7b748d8d3e33414d869ae43d136c857e9955fc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "rawScript": "goto_if_set FLAG_CHOSEN_MULTI_BATTLE_NPC_PARTNER, BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_RejectPartner\n\ttower_dopartnermsg PARTNER_MSGID_INTRO\n\twaitmessage\n\twaitbuttonpress\n\ttower_dopartnermsg PARTNER_MSGID_MON1\n\twaitmessage\n\twaitbuttonpress\n\ttower_dopartnermsg PARTNER_MSGID_MON2_ASK\n\twaitmessage\n\tmultichoicedefault 20, 8, MULTI_YESNO, 1, FALSE\n\tswitch VAR_RESULT\n\tcase 1, BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_RejectPartner\n\tcase MULTI_B_PRESSED, BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_RejectPartner\n\ttower_dopartnermsg PARTNER_MSGID_ACCEPT\n\twaitmessage\n\twaitbuttonpress\n\tclosemessage\n\tcall_if_ne VAR_FACING, DIR_SOUTH, BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_PartnerExit\n\tcall_if_eq VAR_FACING, DIR_SOUTH, BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_PartnerExitSouth\n\tremoveobject VAR_LAST_TALKED\n\tsetflag FLAG_CHOSEN_MULTI_BATTLE_NPC_PARTNER\n\twarpsilent MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_PARTNER_ROOM, 10, 3\n\twaitstate\n\trelease\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_TalkToPotentialPartner",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_CHOSEN_MULTI_BATTLE_NPC_PARTNER"
+    ],
+    "vars": [
+      "VAR_FACING",
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_PARTNER_ROOM"
+    ]
+  }
+}

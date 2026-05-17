@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Text_SneakyLookingManWentAroundCorner",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": ".string \"Hm? A sneaky-looking man?\\p\"\n\t.string \"Come to think of it, yes, a shady-\\n\"\n\t.string \"looking guy went around the corner.$\""
+  },
+  "label": "RustboroCity_Text_SneakyLookingManWentAroundCorner",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

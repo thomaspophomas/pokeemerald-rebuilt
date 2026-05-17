@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Text_GiveYouOneOfMyRods",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown/scripts.inc",
+    "sha1": "e9e724e6d3bba641bcb2d4263fe226ee6c1b4840"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown/scripts.inc",
+    "rawScript": ".string \"I hear you, and I like what\\n\"\n\t.string \"you're saying!\\p\"\n\t.string \"I'll give you one of my fishing RODS.$\""
+  },
+  "label": "DewfordTown_Text_GiveYouOneOfMyRods",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown/scripts.inc",
+  "references": {}
+}

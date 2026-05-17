@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerCorridor_Movement_AttendantWalkToFarDoor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerCorridor/scripts.inc",
+    "sha1": "a135a140aa42cd9a6034c33942fe11ca534a9b7e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerCorridor/scripts.inc",
+    "rawScript": "walk_right\n\twalk_right"
+  },
+  "label": "BattleFrontier_BattleTowerCorridor_Movement_AttendantWalkToFarDoor",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerCorridor/scripts.inc",
+  "references": {}
+}

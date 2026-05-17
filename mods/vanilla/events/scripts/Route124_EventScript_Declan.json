@@ -1,0 +1,23 @@
+{
+  "id": "Route124_EventScript_Declan",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route124/scripts.inc",
+    "sha1": "605960b79a928e3220855307b2a2ffe4c134fa65"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route124/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_DECLAN, Route124_Text_DeclanIntro, Route124_Text_DeclanDefeat\n\tmsgbox Route124_Text_DeclanPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route124_EventScript_Declan",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route124/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_DECLAN"
+    ]
+  }
+}

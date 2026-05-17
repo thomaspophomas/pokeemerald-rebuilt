@@ -1,0 +1,26 @@
+{
+  "id": "BerryBlender_EventScript_ExpertMGiveBerry",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": "msgbox BerryBlender_Text_DontHaveAnyBerriesHaveOne, MSGBOX_DEFAULT\n\tgiveitem ITEM_PECHA_BERRY\n\tsetflag FLAG_DAILY_CONTEST_LOBBY_RECEIVED_BERRY\n\tmsgbox BerryBlender_Text_UseItToMakePokeblocksTogether, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "BerryBlender_EventScript_ExpertMGiveBerry",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {
+    "flags": [
+      "FLAG_DAILY_CONTEST_LOBBY_RECEIVED_BERRY"
+    ],
+    "items": [
+      "ITEM_PECHA_BERRY"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_EventScript_SetFanMemberPositionsForFirstFanMeeting",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": "call LilycoveCity_PokemonTrainerFanClub_EventScript_CheckSetUpTVShow\n\tcall LilycoveCity_PokemonTrainerFanClub_EventScript_MoveMember2ToFarTable\n\tcall LilycoveCity_PokemonTrainerFanClub_EventScript_MoveMember4ToFarTable\n\tcall LilycoveCity_PokemonTrainerFanClub_EventScript_MoveMember5ToFarTable\n\tcall LilycoveCity_PokemonTrainerFanClub_EventScript_MoveMember7ToFarTable\n\tcall LilycoveCity_PokemonTrainerFanClub_EventScript_MoveMember8ToFarTable\n\tend"
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_EventScript_SetFanMemberPositionsForFirstFanMeeting",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {}
+}

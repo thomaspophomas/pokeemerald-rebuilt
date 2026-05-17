@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_WattsonThanksTakeTM",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"WATTSON: Wahahahaha!\\p\"\n\t.string \"I knew it, {PLAYER}{KUN}! I knew I'd made\\n\"\n\t.string \"the right choice asking you!\\p\"\n\t.string \"This is my thanks--a TM containing\\n\"\n\t.string \"THUNDERBOLT!\\p\"\n\t.string \"Go on, you've earned it!$\""
+  },
+  "label": "MauvilleCity_Text_WattsonThanksTakeTM",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

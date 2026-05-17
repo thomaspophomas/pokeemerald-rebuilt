@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_CoveLilyMotel_2F_EventScript_GameBoyKid",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+    "sha1": "f1b25840a73dbfc8affb6142a8450fed0204496f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+    "rawScript": "msgbox LilycoveCity_CoveLilyMotel_2F_Text_NeverLeaveWithoutGameBoy, MSGBOX_NPC\n\tend"
+  },
+  "label": "LilycoveCity_CoveLilyMotel_2F_EventScript_GameBoyKid",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+  "references": {}
+}

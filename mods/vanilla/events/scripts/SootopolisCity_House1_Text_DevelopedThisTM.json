@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_House1_Text_DevelopedThisTM",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_House1/scripts.inc",
+    "sha1": "d068d18a48fa7b6881fb76a44c94d752d47fa794"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_House1/scripts.inc",
+    "rawScript": ".string \"For thirty years I've remained in\\n\"\n\t.string \"SOOTOPOLIS honing my skills.\\p\"\n\t.string \"I developed a shattering TM.\\n\"\n\t.string \"I bequeath it to you!$\""
+  },
+  "label": "SootopolisCity_House1_Text_DevelopedThisTM",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_House1/scripts.inc",
+  "references": {}
+}

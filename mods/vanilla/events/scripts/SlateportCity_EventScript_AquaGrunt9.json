@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_EventScript_AquaGrunt9",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tplayse SE_PIN\n\tapplymovement LOCALID_SLATEPORT_GRUNT_9, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_SLATEPORT_GRUNT_9, Common_Movement_Delay48\n\twaitmovement 0\n\tmsgbox SlateportCity_Text_WhatDoYouWant, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_SLATEPORT_GRUNT_9, Common_Movement_FaceOriginalDirection\n\twaitmovement 0\n\tapplymovement LOCALID_SLATEPORT_GRUNT_9, SlateportCity_Movement_DelayAquaGrunt\n\twaitmovement 0\n\tapplymovement LOCALID_SLATEPORT_GRUNT_9, Common_Movement_FacePlayer\n\twaitmovement 0\n\tmsgbox SlateportCity_Text_IllReadSignForYou, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_SLATEPORT_GRUNT_9, Common_Movement_FaceOriginalDirection\n\twaitmovement 0\n\tapplymovement LOCALID_SLATEPORT_GRUNT_9, SlateportCity_Movement_DelayAquaGrunt\n\twaitmovement 0\n\tmsgbox SlateportCity_Text_SaysSomethingLikeSeaIsEndless, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_SLATEPORT_GRUNT_9, Common_Movement_FacePlayer\n\twaitmovement 0\n\tapplymovement LOCALID_SLATEPORT_GRUNT_9, SlateportCity_Movement_DelayAquaGrunt\n\twaitmovement 0\n\tapplymovement LOCALID_SLATEPORT_GRUNT_9, Common_Movement_FaceOriginalDirection\n\twaitmovement 0\n\trelease\n\tend"
+  },
+  "label": "SlateportCity_EventScript_AquaGrunt9",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {}
+}

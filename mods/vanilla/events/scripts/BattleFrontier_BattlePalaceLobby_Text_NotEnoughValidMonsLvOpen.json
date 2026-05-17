@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_Text_NotEnoughValidMonsLvOpen",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": ".string \"Sigh\u2026\\p\"\n\t.string \"You do not have the three POK\u00e9MON\\n\"\n\t.string \"required for the challenge.\\p\"\n\t.string \"To enter, you must provide three\\n\"\n\t.string \"different kinds of POK\u00e9MON.\\p\"\n\t.string \"They also must not be holding\\n\"\n\t.string \"the same kinds of items.\\p\"\n\t.string \"EGGS{STR_VAR_1} ineligible.\\p\"\n\t.string \"Come back when you have made\\n\"\n\t.string \"your preparations.$\""
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_Text_NotEnoughValidMonsLvOpen",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {}
+}

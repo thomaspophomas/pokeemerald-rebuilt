@@ -1,0 +1,19 @@
+{
+  "id": "AncientTomb_EventScript_BigHoleInWall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AncientTomb/scripts.inc",
+    "sha1": "57ee4b1313324882be319adf4cbdef89f090204c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AncientTomb/scripts.inc",
+    "rawScript": "msgbox gText_BigHoleInTheWall, MSGBOX_DEFAULT\n\treleaseall\n\tend"
+  },
+  "label": "AncientTomb_EventScript_BigHoleInWall",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AncientTomb/scripts.inc",
+  "references": {}
+}

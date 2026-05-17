@@ -1,0 +1,26 @@
+{
+  "id": "BattlePyramid_WarpToNextFloor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "sha1": "a6f6792ac2bc39a05028dabd4e88f5984d84d4a5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "rawScript": "call BattleFrontier_EventScript_IncrementWinStreak\n\tfrontier_get FRONTIER_DATA_BATTLE_NUM  @ Floor number\n\taddvar VAR_RESULT, 1\n\tfrontier_set FRONTIER_DATA_BATTLE_NUM, VAR_RESULT\n\tgoto_if_eq VAR_RESULT, 7, BattlePyramid_WarpToTop\n\tpyramid_seedfloor\n\tfrontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0\n\tsetvar VAR_RESULT, 0\n\twarp MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_FLOOR, 1, 1\n\twaitstate\n\tend"
+  },
+  "label": "BattlePyramid_WarpToNextFloor",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_FLOOR"
+    ]
+  }
+}

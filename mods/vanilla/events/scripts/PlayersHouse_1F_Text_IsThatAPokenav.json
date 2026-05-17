@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_1F_Text_IsThatAPokenav",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "sha1": "b92e18aeb34c3856db794aa81beeec7f0f0de717"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "rawScript": ".string \"MOM: What is that, honey? A POK\u00e9NAV?\\n\"\n\t.string \"Someone from DEVON gave it to you?\\p\"\n\t.string \"Well, honey, how about registering\\n\"\n\t.string \"your mom?\\p\"\n\t.string \"\u2026 \u2026 \u2026$\""
+  },
+  "label": "PlayersHouse_1F_Text_IsThatAPokenav",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+  "references": {}
+}

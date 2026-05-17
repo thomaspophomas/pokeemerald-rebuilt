@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_House2_Text_NormanBecameGymLeader",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_House2/scripts.inc",
+    "sha1": "77db75d9a37d728b225371a6236df7e09b20b576"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_House2/scripts.inc",
+    "rawScript": ".string \"NORMAN became our town's new\\n\"\n\t.string \"GYM LEADER.\\p\"\n\t.string \"I think he called his family over from\\n\"\n\t.string \"somewhere far away.$\""
+  },
+  "label": "PetalburgCity_House2_Text_NormanBecameGymLeader",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_House2/scripts.inc",
+  "references": {}
+}

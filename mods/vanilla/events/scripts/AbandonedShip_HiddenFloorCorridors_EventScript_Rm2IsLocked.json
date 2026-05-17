@@ -1,0 +1,19 @@
+{
+  "id": "AbandonedShip_HiddenFloorCorridors_EventScript_Rm2IsLocked",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+    "sha1": "93793c09cf0421032fc19eaa4c310ad93c2d25a2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+    "rawScript": "msgbox AbandonedShip_HiddenFloorCorridors_Text_Rm2DoorIsLocked, MSGBOX_DEFAULT\n\treleaseall\n\tend"
+  },
+  "label": "AbandonedShip_HiddenFloorCorridors_EventScript_Rm2IsLocked",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+  "references": {}
+}

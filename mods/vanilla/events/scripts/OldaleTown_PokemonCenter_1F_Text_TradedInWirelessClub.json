@@ -1,0 +1,19 @@
+{
+  "id": "OldaleTown_PokemonCenter_1F_Text_TradedInWirelessClub",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown_PokemonCenter_1F/scripts.inc",
+    "sha1": "aa6fbbadeecd7b968cca77547695be5b595703f9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/OldaleTown_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"The POK\u00e9MON WIRELESS CLUB on\\n\"\n\t.string \"the second floor was built recently.\\p\"\n\t.string \"I traded POK\u00e9MON right away.$\""
+  },
+  "label": "OldaleTown_PokemonCenter_1F_Text_TradedInWirelessClub",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/OldaleTown_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

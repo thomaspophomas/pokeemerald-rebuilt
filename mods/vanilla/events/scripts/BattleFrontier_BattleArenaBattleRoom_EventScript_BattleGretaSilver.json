@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleArenaBattleRoom_EventScript_BattleGretaSilver",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "sha1": "d0a70f09e21302da78823f02966e03f9b41a3a1a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattleArenaBattleRoom_Text_IgniteMyPassionForBattle, MSGBOX_DEFAULT\n\tcall BattleFrontier_BattleArenaBattleRoom_EventScript_StartArenaBattle\n\tgoto_if_eq VAR_RESULT, 1, BattleFrontier_BattleArenaBattleRoom_EventScript_DefeatedGretaSilver\n\tgoto BattleFrontier_BattleArenaBattleRoom_EventScript_DeclareOpponentWinner"
+  },
+  "label": "BattleFrontier_BattleArenaBattleRoom_EventScript_BattleGretaSilver",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

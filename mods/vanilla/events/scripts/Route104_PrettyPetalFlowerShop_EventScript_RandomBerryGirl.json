@@ -1,0 +1,26 @@
+{
+  "id": "Route104_PrettyPetalFlowerShop_EventScript_RandomBerryGirl",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc",
+    "sha1": "85421f76af3e2f834a13d611b9a986423e5c93b8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tdotimebasedevents\n\tgoto_if_set FLAG_DAILY_FLOWER_SHOP_RECEIVED_BERRY, Route104_PrettyPetalFlowerShop_EventScript_AlreadyReceivedBerry\n\tmsgbox Route104_PrettyPetalFlowerShop_Text_ImGrowingFlowers, MSGBOX_DEFAULT\n\trandom 8\n\taddvar VAR_RESULT, FIRST_BERRY_INDEX\n\tgiveitem VAR_RESULT\n\tgoto_if_eq VAR_RESULT, 0, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_DAILY_FLOWER_SHOP_RECEIVED_BERRY\n\tmsgbox Route104_PrettyPetalFlowerShop_Text_MachineMixesBerries, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route104_PrettyPetalFlowerShop_EventScript_RandomBerryGirl",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DAILY_FLOWER_SHOP_RECEIVED_BERRY"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

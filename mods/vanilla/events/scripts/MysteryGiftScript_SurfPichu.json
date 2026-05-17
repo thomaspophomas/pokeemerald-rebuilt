@@ -1,0 +1,23 @@
+{
+  "id": "MysteryGiftScript_SurfPichu",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_pichu.inc",
+    "sha1": "b8f12719008c830f693c4c1d3228265f92693526"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_pichu.inc",
+    "rawScript": "setvaddress MysteryGiftScript_SurfPichu\n\tvgoto_if_unset FLAG_MYSTERY_GIFT_DONE, SurfPichu_GiveIfPossible\n\treturnram"
+  },
+  "label": "MysteryGiftScript_SurfPichu",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_pichu.inc",
+  "references": {
+    "flags": [
+      "FLAG_MYSTERY_GIFT_DONE"
+    ]
+  }
+}

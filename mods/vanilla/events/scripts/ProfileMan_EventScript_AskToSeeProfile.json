@@ -1,0 +1,23 @@
+{
+  "id": "ProfileMan_EventScript_AskToSeeProfile",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/profile_man.inc",
+    "sha1": "d1dbe5fa547c96e450cb8f168f65a783b75cc29c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/profile_man.inc",
+    "rawScript": "msgbox ProfileMan_Text_MayISeeYourProfile, MSGBOX_DEFAULT\n\tmultichoice 17, 6, MULTI_YESNOINFO_2, FALSE\n\tswitch VAR_RESULT\n\tcase 0, ProfileMan_EventScript_CreateProfile\n\tcase 1, ProfileMan_EventScript_DeclineShowProfile\n\tcase 2, ProfileMan_EventScript_Info\n\tcase MULTI_B_PRESSED, ProfileMan_EventScript_DeclineShowProfile\n\tend"
+  },
+  "label": "ProfileMan_EventScript_AskToSeeProfile",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/profile_man.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

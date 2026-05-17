@@ -1,0 +1,23 @@
+{
+  "id": "Route131_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route131/scripts.inc",
+    "sha1": "468c53c849959214aa7f6a5ae109e4109f3491c2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route131/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, Route131_OnTransition\n\t.byte 0"
+  },
+  "label": "Route131_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Route131/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

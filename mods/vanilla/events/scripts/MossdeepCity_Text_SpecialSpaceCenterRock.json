@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Text_SpecialSpaceCenterRock",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/scripts.inc",
+    "sha1": "33f0f7f83a475484aaca395542c6bd65a6f2dd45"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity/scripts.inc",
+    "rawScript": ".string \"This rock has a special meaning to\\n\"\n\t.string \"the people at the SPACE CENTER.\\p\"\n\t.string \"They put it here as their wish for\\n\"\n\t.string \"their rockets to fly safely.\\p\"\n\t.string \"When you make a wish, what do you use?\\n\"\n\t.string \"Do you wish upon a star?\\p\"\n\t.string \"I use a wish tag to make it happen.\\n\"\n\t.string \"That's what I do.$\""
+  },
+  "label": "MossdeepCity_Text_SpecialSpaceCenterRock",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity/scripts.inc",
+  "references": {}
+}

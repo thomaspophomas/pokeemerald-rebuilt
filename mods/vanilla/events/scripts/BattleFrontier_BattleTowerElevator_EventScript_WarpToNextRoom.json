@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerElevator_EventScript_WarpToNextRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerElevator/scripts.inc",
+    "sha1": "65b36e61ef641273e99565ebbc7fd034e09562e1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerElevator/scripts.inc",
+    "rawScript": "call_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_SINGLES, BattleFrontier_BattleTowerElevator_EventScript_WarpToCorridor\n\tcall_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_DOUBLES, BattleFrontier_BattleTowerElevator_EventScript_WarpToCorridor\n\tcall_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_MULTIS, BattleFrontier_BattleTowerElevator_EventScript_WarpToNextRoomMulti\n\tcall_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_LINK_MULTIS, BattleFrontier_BattleTowerElevator_EventScript_WarpToCorridorMulti\n\treturn"
+  },
+  "label": "BattleFrontier_BattleTowerElevator_EventScript_WarpToNextRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerElevator/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FRONTIER_BATTLE_MODE"
+    ]
+  }
+}

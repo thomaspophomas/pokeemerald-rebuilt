@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomeBattleRoom_Text_LegendHasReturnedDomeAceTucker",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "sha1": "2cf5ea83e82fbd2189ced7e0cd4d5f894bf74650"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "rawScript": ".string \"Ladies and gentlemen!\\n\"\n\t.string \"Boys, girls, and POK\u00e9MON!\\p\"\n\t.string \"Finally!\\n\"\n\t.string \"Finally, the legend has returned!\\p\"\n\t.string \"Yes, the name of that legend!\\n\"\n\t.string \"Our very own DOME ACE!\\l\"\n\t.string \"It's none other than TUCKER!$\""
+  },
+  "label": "BattleFrontier_BattleDomeBattleRoom_Text_LegendHasReturnedDomeAceTucker",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+  "references": {}
+}

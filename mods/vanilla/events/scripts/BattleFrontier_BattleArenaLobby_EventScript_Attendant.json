@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattleArenaLobby_EventScript_Attendant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "sha1": "9504bb75bdf62b80271e2304b4804044c8db502a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tsetvar VAR_FRONTIER_FACILITY, FRONTIER_FACILITY_ARENA\n\tsetvar VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_SINGLES\n\tspecial SavePlayerParty\n\tmsgbox BattleFrontier_BattleArenaLobby_Text_WelcomeToBattleArena, MSGBOX_DEFAULT"
+  },
+  "label": "BattleFrontier_BattleArenaLobby_EventScript_Attendant",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FRONTIER_BATTLE_MODE",
+      "VAR_FRONTIER_FACILITY"
+    ]
+  }
+}

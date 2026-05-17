@@ -1,0 +1,19 @@
+{
+  "id": "Route111_OldLadysRestStop_Text_StillTiredTakeAnotherRest",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111_OldLadysRestStop/scripts.inc",
+    "sha1": "8f697cdc3624ba6bc26589cc0a0d5649ae645122"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111_OldLadysRestStop/scripts.inc",
+    "rawScript": ".string \"Oh, dear, dear.\\n\"\n\t.string \"Are your POK\u00e9MON still tired?\\p\"\n\t.string \"You should take another rest here.\\n\"\n\t.string \"That's a fine idea. You should do that.$\""
+  },
+  "label": "Route111_OldLadysRestStop_Text_StillTiredTakeAnotherRest",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route111_OldLadysRestStop/scripts.inc",
+  "references": {}
+}

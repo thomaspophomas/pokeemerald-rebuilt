@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_BrendanShoppingLetsBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"BRENDAN: Oh, hey, it's {PLAYER}.\\p\"\n\t.string \"I'm running an errand for my dad.\\n\"\n\t.string \"No, I'm not buying any DOLLS.\\p\"\n\t.string \"Anyways, it's been a while.\\p\"\n\t.string \"Want to have a battle to see who's been\\n\"\n\t.string \"raising POK\u00e9MON better?$\""
+  },
+  "label": "LilycoveCity_Text_BrendanShoppingLetsBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

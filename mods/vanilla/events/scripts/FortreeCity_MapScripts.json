@@ -1,0 +1,24 @@
+{
+  "id": "FortreeCity_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity/scripts.inc",
+    "sha1": "a1f53b6d8b894e2f69fc9a5c4e1509ef9ab3ce09"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, FortreeCity_OnTransition\n\tmap_script MAP_SCRIPT_ON_RESUME, FortreeCity_OnResume\n\t.byte 0"
+  },
+  "label": "FortreeCity_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/FortreeCity/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

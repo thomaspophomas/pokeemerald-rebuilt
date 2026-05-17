@@ -1,0 +1,32 @@
+{
+  "id": "Route109_EventScript_DoSailToDewford",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route109/scripts.inc",
+    "sha1": "7b7ddbfc58bd8a1cc6ebeaa13e2d754df362f425"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route109/scripts.inc",
+    "rawScript": "hideobjectat LOCALID_PLAYER, MAP_ROUTE109\n\tcall Common_EventScript_PlayBrineysBoatMusic\n\tapplymovement LOCALID_ROUTE109_BOAT, Route109_Movement_SailToDewford\n\tapplymovement LOCALID_PLAYER, Route109_Movement_SailToDewford\n\twaitmovement 0\n\tdelay 50\n\tcall Common_EventScript_StopBrineysBoatMusic\n\tshowobjectat LOCALID_PLAYER, MAP_DEWFORD_TOWN\n\tapplymovement LOCALID_PLAYER, Route109_Movement_PlayerExitBoat\n\twaitmovement 0\n\taddobject LOCALID_DEWFORD_BOAT\n\tclearflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN\n\tsetobjectxyperm LOCALID_DEWFORD_BRINEY, 12, 8\n\taddobject LOCALID_DEWFORD_BRINEY\n\tsetobjectsubpriority LOCALID_DEWFORD_BRINEY, MAP_DEWFORD_TOWN, 0\n\tapplymovement LOCALID_DEWFORD_BRINEY, Route109_Movement_BrineyExitBoat\n\twaitmovement 0\n\tclearflag FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN\n\tsetflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT\n\thideobjectat LOCALID_ROUTE109_BOAT, MAP_ROUTE109\n\tmsgbox DewfordTown_Text_BrineyLandedInDewford, MSGBOX_DEFAULT\n\tclosemessage\n\tcopyvar VAR_BRINEY_LOCATION, VAR_0x8008\n\tresetobjectsubpriority LOCALID_PLAYER, MAP_ROUTE109\n\tresetobjectsubpriority LOCALID_DEWFORD_BRINEY, MAP_DEWFORD_TOWN\n\tcopyobjectxytoperm LOCALID_DEWFORD_BRINEY\n\trelease\n\tend"
+  },
+  "label": "Route109_EventScript_DoSailToDewford",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route109/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN",
+      "FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN",
+      "FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT"
+    ],
+    "vars": [
+      "VAR_BRINEY_LOCATION"
+    ],
+    "maps": [
+      "MAP_DEWFORD_TOWN",
+      "MAP_ROUTE109"
+    ]
+  }
+}

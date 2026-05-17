@@ -1,0 +1,19 @@
+{
+  "id": "Route119_WeatherInstitute_1F_Text_Grunt1Intro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_1F/scripts.inc",
+    "sha1": "c66e07de5643dfd9d0b7ced5e87ea02257875e77"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_1F/scripts.inc",
+    "rawScript": ".string \"The BOSS got interested in\\n\"\n\t.string \"the research they have going here,\\l\"\n\t.string \"so he sent us out.\\p\"\n\t.string \"You quit meddling!$\""
+  },
+  "label": "Route119_WeatherInstitute_1F_Text_Grunt1Intro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route119_WeatherInstitute_1F/scripts.inc",
+  "references": {}
+}

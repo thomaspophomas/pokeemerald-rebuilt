@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "83e7f64af75d58f3a58fed2f76931a1ea46151b5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"The man next door gave me an HM!\\p\"\n\t.string \"I used it to teach my POK\u00e9MON how to\\n\"\n\t.string \"CUT down skinny trees.$\""
+  },
+  "label": "RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

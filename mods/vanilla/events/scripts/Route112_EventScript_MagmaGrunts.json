@@ -1,0 +1,19 @@
+{
+  "id": "Route112_EventScript_MagmaGrunts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route112/scripts.inc",
+    "sha1": "2e1afc791f1e05fe9c3dcec0234b3a587c6a64fc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route112/scripts.inc",
+    "rawScript": "lockall\n\tdelay 40\n\tapplymovement LOCALID_ROUTE112_GRUNT_1, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\tdelay 20\n\tmsgbox Route112_Text_LeaderGoingToAwakenThing, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_ROUTE112_GRUNT_1, Common_Movement_FaceOriginalDirection\n\twaitmovement 0\n\tdelay 40\n\tapplymovement LOCALID_ROUTE112_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tdelay 20\n\tmsgbox Route112_Text_YeahWeNeedMeteorite, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_ROUTE112_GRUNT_2, Common_Movement_FaceOriginalDirection\n\twaitmovement 0\n\tdelay 40\n\tapplymovement LOCALID_ROUTE112_GRUNT_1, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\tdelay 20\n\tmsgbox Route112_Text_OhThatsWhyCrewWentToFallarbor, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_ROUTE112_GRUNT_1, Common_Movement_FaceOriginalDirection\n\twaitmovement 0\n\tdelay 40\n\tapplymovement LOCALID_ROUTE112_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tdelay 20\n\tmsgbox Route112_Text_CantLetAnyonePassUntilTheyreBack, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_ROUTE112_GRUNT_2, Common_Movement_FaceOriginalDirection\n\twaitmovement 0\n\treleaseall\n\tend"
+  },
+  "label": "Route112_EventScript_MagmaGrunts",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route112/scripts.inc",
+  "references": {}
+}

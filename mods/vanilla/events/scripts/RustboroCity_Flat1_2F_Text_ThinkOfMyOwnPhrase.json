@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+    "sha1": "bce61defe394f3175dd583157b086f1687d0ac6f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+    "rawScript": ".string \"Oh, so you don't know any good words.\\n\"\n\t.string \"I'd better think for myself, then.\\p\"\n\t.string \"Hmm\u2026\\n\"\n\t.string \"How about \u201c{STR_VAR_1}\u201d?\\l\"\n\t.string \"Let's see if that will work.$\""
+  },
+  "label": "RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+  "references": {}
+}

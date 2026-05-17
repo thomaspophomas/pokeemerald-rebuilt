@@ -1,0 +1,26 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomNormal_EventScript_LucyEnter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "sha1": "54c1e0ee021a3a91375f3b05c8682c17ed095aa9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattlePikeRoomNormal_Text_ShallFetchOurMaster, MSGBOX_DEFAULT\n\tclosemessage\n\tspecial SpawnCameraObject\n\tapplymovement LOCALID_CAMERA, BattleFrontier_BattlePikeRoomNormal_Movement_CameraPanUp\n\tapplymovement LOCALID_PIKE_ROOM_NPC_2, BattleFrontier_BattlePikeRoomNormal_Movement_HealNPCExitForLucy\n\twaitmovement 0\n\tplayse SE_PIKE_CURTAIN_CLOSE\n\tcall BattleFrontier_BattlePikeRoomNormal_EventScript_SetCurtainTilesLittleClosed\n\tdelay 4\n\tcall BattleFrontier_BattlePikeRoomNormal_EventScript_SetCurtainTilesMostlyClosed\n\tdelay 4\n\tcall BattleFrontier_BattlePikeRoomNormal_EventScript_SetCurtainTilesClosed\n\tdelay 4\n\twaitse\n\tdelay 60\n\tplayse SE_PIKE_CURTAIN_OPEN\n\tdelay 65\n\tcall BattleFrontier_BattlePikeRoomNormal_EventScript_SetCurtainTilesMostlyClosed\n\tshowobjectat LOCALID_PIKE_ROOM_NPC_1, MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_NORMAL\n\tdelay 4\n\tcall BattleFrontier_BattlePikeRoomNormal_EventScript_SetCurtainTilesLittleClosed\n\tdelay 4\n\tcall BattleFrontier_BattlePikeRoomNormal_EventScript_SetCurtainTilesOpen\n\twaitse\n\tapplymovement LOCALID_PIKE_ROOM_NPC_1, BattleFrontier_BattlePikeRoomNormal_Movement_LucyEnter\n\twaitmovement 0\n\tpike_getbrainstatus\n\tswitch VAR_RESULT\n\tcase FRONTIER_BRAIN_GOLD, BattleFrontier_BattlePikeRoomNormal_EventScript_IntroLucyGold\n\tcase FRONTIER_BRAIN_STREAK, BattleFrontier_BattlePikeRoomNormal_EventScript_BattleLucySilver\n\tcase FRONTIER_BRAIN_STREAK_LONG, BattleFrontier_BattlePikeRoomNormal_EventScript_BattleLucyGold\n\tfrontier_get FRONTIER_DATA_HEARD_BRAIN_SPEECH\n\tgoto_if_ne VAR_RESULT, FALSE, BattleFrontier_BattlePikeRoomNormal_EventScript_BattleLucySilver\n\tmsgbox BattleFrontier_BattlePikeRoomNormal_Text_ImThePikeQueen, MSGBOX_DEFAULT\n\tfrontier_set FRONTIER_DATA_HEARD_BRAIN_SPEECH"
+  },
+  "label": "BattleFrontier_BattlePikeRoomNormal_EventScript_LucyEnter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_NORMAL"
+    ]
+  }
+}

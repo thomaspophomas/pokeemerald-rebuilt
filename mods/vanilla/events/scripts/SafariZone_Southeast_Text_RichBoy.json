@@ -1,0 +1,19 @@
+{
+  "id": "SafariZone_Southeast_Text_RichBoy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/safari_zone.inc",
+    "sha1": "435880c660a34d3e51dcedb348a41731d28af7cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/safari_zone.inc",
+    "rawScript": ".string \"The POK\u00e9MON around here seem to be\\n\"\n\t.string \"from somewhere other than HOENN.$\""
+  },
+  "label": "SafariZone_Southeast_Text_RichBoy",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/safari_zone.inc",
+  "references": {}
+}

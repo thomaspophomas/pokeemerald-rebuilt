@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomePreBattleRoom_Text_Round1Complete",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+    "sha1": "18c4052c546a6c71ff18234f6ef3a8130ec538d0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+    "rawScript": ".string \"All 1st-round matches have been\\n\"\n\t.string \"completed.\\p\"\n\t.string \"These are the teams that advanced!$\""
+  },
+  "label": "BattleFrontier_BattleDomePreBattleRoom_Text_Round1Complete",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": ".string \"PROF. BIRCH: Oh, hi, {PLAYER}{KUN}!\\p\"\n\t.string \"I heard you beat {RIVAL} on\\n\"\n\t.string \"your first try. That's excellent!\\p\"\n\t.string \"{RIVAL}'s been helping with my research\\n\"\n\t.string \"for a long time.\\p\"\n\t.string \"{RIVAL} has an extensive history as\\n\"\n\t.string \"a TRAINER already.\\p\"\n\t.string \"Here, {PLAYER}{KUN}, I ordered this for my\\n\"\n\t.string \"research, but I think you should have\\l\"\n\t.string \"this POK\u00e9DEX.$\""
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

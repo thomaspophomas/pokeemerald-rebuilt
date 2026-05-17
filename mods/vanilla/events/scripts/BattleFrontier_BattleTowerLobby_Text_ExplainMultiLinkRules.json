@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_Text_ExplainMultiLinkRules",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": ".string \"The LINK MULTI BATTLE Mode is for two\\n\"\n\t.string \"friends to mount a challenge together.\\p\"\n\t.string \"You and your friend must be linked with\\n\"\n\t.string \"Wireless Adapters or a GBA Game Link\\l\"\n\t.string \"cable.\\p\"\n\t.string \"You must choose two POK\u00e9MON at\\n\"\n\t.string \"the registration counter.\\p\"\n\t.string \"These POK\u00e9MON must be different\\n\"\n\t.string \"from those of your friend.\\p\"\n\t.string \"You may not interrupt this challenge\\n\"\n\t.string \"in the middle, unlike other modes.$\""
+  },
+  "label": "BattleFrontier_BattleTowerLobby_Text_ExplainMultiLinkRules",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {}
+}

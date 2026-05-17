@@ -1,0 +1,19 @@
+{
+  "id": "SkyPillar_Outside_Movement_WallaceApproachPlayer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Outside/scripts.inc",
+    "sha1": "9bf749dde7f98e08aa43ccd220b7469c53ade7f3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_Outside/scripts.inc",
+    "rawScript": "walk_down\n\twalk_down\n\twalk_down\n\twalk_down\n\twalk_down\n\twalk_down\n\twalk_down\n\twalk_right\n\twalk_right\n\twalk_right\n\tstep_end"
+  },
+  "label": "SkyPillar_Outside_Movement_WallaceApproachPlayer",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/SkyPillar_Outside/scripts.inc",
+  "references": {}
+}

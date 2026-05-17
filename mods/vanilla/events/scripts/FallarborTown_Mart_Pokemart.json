@@ -1,0 +1,34 @@
+{
+  "id": "FallarborTown_Mart_Pokemart",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_Mart/scripts.inc",
+    "sha1": "0ca66f0e5420cbce8afedeba0991156dec84e531"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_Mart/scripts.inc",
+    "rawScript": ".2byte ITEM_GREAT_BALL\n\t.2byte ITEM_SUPER_POTION\n\t.2byte ITEM_ANTIDOTE\n\t.2byte ITEM_PARALYZE_HEAL\n\t.2byte ITEM_ESCAPE_ROPE\n\t.2byte ITEM_SUPER_REPEL\n\t.2byte ITEM_X_SPECIAL\n\t.2byte ITEM_X_SPEED\n\t.2byte ITEM_X_ATTACK\n\t.2byte ITEM_X_DEFEND\n\t.2byte ITEM_DIRE_HIT\n\t.2byte ITEM_GUARD_SPEC\n\tpokemartlistend"
+  },
+  "label": "FallarborTown_Mart_Pokemart",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/FallarborTown_Mart/scripts.inc",
+  "references": {
+    "items": [
+      "ITEM_ANTIDOTE",
+      "ITEM_DIRE_HIT",
+      "ITEM_ESCAPE_ROPE",
+      "ITEM_GREAT_BALL",
+      "ITEM_GUARD_SPEC",
+      "ITEM_PARALYZE_HEAL",
+      "ITEM_SUPER_POTION",
+      "ITEM_SUPER_REPEL",
+      "ITEM_X_ATTACK",
+      "ITEM_X_DEFEND",
+      "ITEM_X_SPECIAL",
+      "ITEM_X_SPEED"
+    ]
+  }
+}

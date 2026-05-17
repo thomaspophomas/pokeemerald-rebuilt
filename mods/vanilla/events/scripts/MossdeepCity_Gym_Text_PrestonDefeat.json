@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Gym_Text_PrestonDefeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "sha1": "f1b3ae6c76fdfe44b1431df4ea78da5c11a79c08"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "rawScript": ".string \"I lost!\\n\"\n\t.string \"I must temper my spirit again!$\""
+  },
+  "label": "MossdeepCity_Gym_Text_PrestonDefeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_Gym/scripts.inc",
+  "references": {}
+}

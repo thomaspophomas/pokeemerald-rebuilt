@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_DepartmentStore_5F_Pokemart_Dolls",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+    "sha1": "cd7aae47b8996a67b13e78af3da148a41c68791f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+    "rawScript": ".2byte DECOR_PICHU_DOLL\n\t.2byte DECOR_PIKACHU_DOLL\n\t.2byte DECOR_MARILL_DOLL\n\t.2byte DECOR_JIGGLYPUFF_DOLL\n\t.2byte DECOR_DUSKULL_DOLL\n\t.2byte DECOR_WYNAUT_DOLL\n\t.2byte DECOR_BALTOY_DOLL\n\t.2byte DECOR_KECLEON_DOLL\n\t.2byte DECOR_AZURILL_DOLL\n\t.2byte DECOR_SKITTY_DOLL\n\t.2byte DECOR_SWABLU_DOLL\n\t.2byte DECOR_GULPIN_DOLL\n\tpokemartlistend"
+  },
+  "label": "LilycoveCity_DepartmentStore_5F_Pokemart_Dolls",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+  "references": {}
+}

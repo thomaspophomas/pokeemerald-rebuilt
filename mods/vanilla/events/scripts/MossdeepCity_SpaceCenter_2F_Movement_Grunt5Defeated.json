@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F_Movement_Grunt5Defeated",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "rawScript": "lock_facing_direction\n\twalk_down\n\tunlock_facing_direction\n\tstep_end"
+  },
+  "label": "MossdeepCity_SpaceCenter_2F_Movement_Grunt5Defeated",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+  "references": {}
+}

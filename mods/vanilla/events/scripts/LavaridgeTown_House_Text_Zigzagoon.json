@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_House_Text_Zigzagoon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_House/scripts.inc",
+    "sha1": "ed212e3f1367a1e79fdbed072e9a08e0920ddeb6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_House/scripts.inc",
+    "rawScript": ".string \"ZIGZAGOON: Pshoo!$\""
+  },
+  "label": "LavaridgeTown_House_Text_Zigzagoon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown_House/scripts.inc",
+  "references": {}
+}

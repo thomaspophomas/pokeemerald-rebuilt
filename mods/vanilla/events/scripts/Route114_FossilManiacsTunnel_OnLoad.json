@@ -1,0 +1,23 @@
+{
+  "id": "Route114_FossilManiacsTunnel_OnLoad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_FossilManiacsTunnel/scripts.inc",
+    "sha1": "ecd010d2086a8019284fa4a41a8a3e7e67275e83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114_FossilManiacsTunnel/scripts.inc",
+    "rawScript": "call_if_unset FLAG_SYS_GAME_CLEAR, Route114_FossilManiacsTunnel_EventScript_CloseDesertUnderpass\n\tend"
+  },
+  "label": "Route114_FossilManiacsTunnel_OnLoad",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Route114_FossilManiacsTunnel/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_GAME_CLEAR"
+    ]
+  }
+}

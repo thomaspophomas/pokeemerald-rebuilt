@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeThreePathRoom_EventScript_AcceptHint",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "sha1": "927f7bda20dae778159d88132a53038bcfb76615"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "rawScript": "pike_gethintroomid\n\tswitch VAR_RESULT\n\tcase PIKE_ROOM_LEFT, BattleFrontier_BattlePikeThreePathRoom_EventScript_GiveLeftRoomHint\n\tcase PIKE_ROOM_CENTER, BattleFrontier_BattlePikeThreePathRoom_EventScript_GiveCenterRoomHint\n\tcase PIKE_ROOM_RIGHT, BattleFrontier_BattlePikeThreePathRoom_EventScript_GiveRightRoomHint\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeThreePathRoom_EventScript_AcceptHint",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreToFullHealth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "sha1": "54c1e0ee021a3a91375f3b05c8682c17ed095aa9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "rawScript": ".string \"Welcome\u2026\\n\"\n\t.string \"You must be commended for your luck\u2026\\p\"\n\t.string \"Your POK\u00e9MON shall be restored\\n\"\n\t.string \"to full health\u2026$\""
+  },
+  "label": "BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreToFullHealth",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "VerdanturfTown_BattleTentLobby_EventScript_ResumeChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "sha1": "be67ab8ba625b73e575c1594a46cbee43b6f03d9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "rawScript": "lockall\n\tmsgbox BattleFrontier_BattlePalaceLobby_Text_WeHaveBeenWaiting, MSGBOX_DEFAULT\n\tmessage BattleFrontier_BattlePalaceLobby_Text_MustSaveBeforeChallenge\n\twaitmessage\n\tverdanturftent_save CHALLENGE_STATUS_SAVING\n\tplayse SE_SAVE\n\twaitse\n\tfrontier_set FRONTIER_DATA_PAUSED, FALSE\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 255\n\tgoto VerdanturfTown_BattleTentLobby_EventScript_EnterChallenge"
+  },
+  "label": "VerdanturfTown_BattleTentLobby_EventScript_ResumeChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ]
+  }
+}

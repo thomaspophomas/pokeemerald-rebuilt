@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_EnterStrengthRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"\u201cSTRENGTH ROOM,\u201d the sign says.\\p\"\n\t.string \"Do you want to go through?$\""
+  },
+  "label": "PetalburgCity_Gym_Text_EnterStrengthRoom",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

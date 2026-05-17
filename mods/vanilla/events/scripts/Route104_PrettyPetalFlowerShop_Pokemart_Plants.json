@@ -1,0 +1,19 @@
+{
+  "id": "Route104_PrettyPetalFlowerShop_Pokemart_Plants",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc",
+    "sha1": "85421f76af3e2f834a13d611b9a986423e5c93b8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc",
+    "rawScript": ".2byte DECOR_RED_PLANT\n\t.2byte DECOR_TROPICAL_PLANT\n\t.2byte DECOR_PRETTY_FLOWERS\n\t.2byte DECOR_COLORFUL_PLANT\n\t.2byte DECOR_BIG_PLANT\n\t.2byte DECOR_GORGEOUS_PLANT\n\tpokemartlistend"
+  },
+  "label": "Route104_PrettyPetalFlowerShop_Pokemart_Plants",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc",
+  "references": {}
+}

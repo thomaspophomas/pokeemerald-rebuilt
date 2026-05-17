@@ -1,0 +1,19 @@
+{
+  "id": "Route114_LanettesHouse_Text_ResearchNotesPage3",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_LanettesHouse/scripts.inc",
+    "sha1": "91f2126eb51b441d0e51b50e9d41b4e45bf67494"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114_LanettesHouse/scripts.inc",
+    "rawScript": ".string \"When storing a POK\u00e9MON, it should be\\n\"\n\t.string \"sent to the BOX inspected last.\\p\"\n\t.string \"If that BOX is full, the received\\n\"\n\t.string \"POK\u00e9MON is stored in the next BOX.\\p\"\n\t.string \"In other words, when a BOX is examined,\\n\"\n\t.string \"it is automatically selected as the BOX\\l\"\n\t.string \"to which POK\u00e9MON are sent.$\""
+  },
+  "label": "Route114_LanettesHouse_Text_ResearchNotesPage3",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route114_LanettesHouse/scripts.inc",
+  "references": {}
+}

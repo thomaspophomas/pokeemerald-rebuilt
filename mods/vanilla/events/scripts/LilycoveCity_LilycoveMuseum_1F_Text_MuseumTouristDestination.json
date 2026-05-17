@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_1F_Text_MuseumTouristDestination",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+    "sha1": "9b7ed7bb941e379aabaa59bf0da8ffe089df98ba"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+    "rawScript": ".string \"The ART MUSEUM has become a favorite\\n\"\n\t.string \"tourist destination.\\p\"\n\t.string \"It's great for LILYCOVE\u2026\\n\"\n\t.string \"No, great for the HOENN region!\\p\"\n\t.string \"This is what I've heard--a lone TRAINER\\n\"\n\t.string \"procured all the paintings upstairs.$\""
+  },
+  "label": "LilycoveCity_LilycoveMuseum_1F_Text_MuseumTouristDestination",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+  "references": {}
+}

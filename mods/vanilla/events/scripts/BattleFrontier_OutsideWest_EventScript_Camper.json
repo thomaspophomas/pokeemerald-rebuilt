@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_OutsideWest_EventScript_Camper",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tdelay 20\n\tcall_if_eq VAR_FACING, DIR_NORTH, BattleFrontier_OutsideWest_EventScript_CamperFaceFactory\n\tcall_if_eq VAR_FACING, DIR_SOUTH, BattleFrontier_OutsideWest_EventScript_CamperAlreadyFacingFactory\n\tcall_if_eq VAR_FACING, DIR_WEST, BattleFrontier_OutsideWest_EventScript_CamperFaceFactory\n\tcall_if_eq VAR_FACING, DIR_EAST, BattleFrontier_OutsideWest_EventScript_CamperFaceFactory\n\tmsgbox BattleFrontier_OutsideWest_Text_WhosRaisingThoseRentalMons, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "BattleFrontier_OutsideWest_EventScript_Camper",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FACING"
+    ]
+  }
+}

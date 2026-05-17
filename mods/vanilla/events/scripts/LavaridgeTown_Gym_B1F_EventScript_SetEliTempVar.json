@@ -1,0 +1,26 @@
+{
+  "id": "LavaridgeTown_Gym_B1F_EventScript_SetEliTempVar",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Gym_B1F/scripts.inc",
+    "sha1": "575a7846fd222d10d87752566c50759a04aab0c8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_Gym_B1F/scripts.inc",
+    "rawScript": "goto_if_defeated TRAINER_ELI, LavaridgeTown_Gym_B1F_EventScript_EndSetTrainerTempVars\n\tsetvar VAR_TEMP_A, 1"
+  },
+  "label": "LavaridgeTown_Gym_B1F_EventScript_SetEliTempVar",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LavaridgeTown_Gym_B1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_A"
+    ],
+    "trainers": [
+      "TRAINER_ELI"
+    ]
+  }
+}

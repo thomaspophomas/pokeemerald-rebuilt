@@ -1,0 +1,26 @@
+{
+  "id": "JaggedPass_EventScript_Ethan",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/JaggedPass/scripts.inc",
+    "sha1": "3539aca2d309baaf0b57344f9c2014b5d896c94b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/JaggedPass/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_ETHAN_1, JaggedPass_Text_EthanIntro, JaggedPass_Text_EthanDefeat, JaggedPass_EventScript_RegisterEthan\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, JaggedPass_EventScript_EthanRematch\n\tmsgbox JaggedPass_Text_EthanPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "JaggedPass_EventScript_Ethan",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/JaggedPass/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_ETHAN_1"
+    ]
+  }
+}

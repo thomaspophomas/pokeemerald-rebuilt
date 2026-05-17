@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_Text_ChoseSameMonAsFriend",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": ".string \"You have chosen the same kind of\\n\"\n\t.string \"POK\u00e9MON as your friend.\\p\"\n\t.string \"Please choose two POK\u00e9MON different\\n\"\n\t.string \"from your friend's, match the level\\l\"\n\t.string \"you wish to enter, and register again.$\""
+  },
+  "label": "BattleFrontier_BattleTowerLobby_Text_ChoseSameMonAsFriend",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {}
+}

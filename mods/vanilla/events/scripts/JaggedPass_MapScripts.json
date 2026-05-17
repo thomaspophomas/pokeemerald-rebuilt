@@ -1,0 +1,25 @@
+{
+  "id": "JaggedPass_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/JaggedPass/scripts.inc",
+    "sha1": "3539aca2d309baaf0b57344f9c2014b5d896c94b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/JaggedPass/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, JaggedPass_OnResume\n\tmap_script MAP_SCRIPT_ON_TRANSITION, JaggedPass_OnTransition\n\tmap_script MAP_SCRIPT_ON_LOAD, JaggedPass_OnLoad\n\t.byte 0"
+  },
+  "label": "JaggedPass_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/JaggedPass/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

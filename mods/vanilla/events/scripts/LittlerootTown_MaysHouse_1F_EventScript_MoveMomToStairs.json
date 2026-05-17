@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_MaysHouse_1F_EventScript_MoveMomToStairs",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+    "sha1": "4acc9bd3dce8266e27759616e41b13205491adc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+    "rawScript": "setobjectxyperm LOCALID_PLAYERS_HOUSE_1F_MOM, 2, 4\n\tsetobjectmovementtype LOCALID_PLAYERS_HOUSE_1F_MOM, MOVEMENT_TYPE_FACE_UP\n\treturn"
+  },
+  "label": "LittlerootTown_MaysHouse_1F_EventScript_MoveMomToStairs",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,24 @@
+{
+  "id": "TrainerHill_Entrance_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "sha1": "cbfca2354a8d8ed8d68e2612fb0b6f2525008a5f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "rawScript": "trainerhill_resumetimer\n\tsetvar VAR_TEMP_0, 0\n\ttrainerhill_getusingereader\n\tgoto_if_eq VAR_RESULT, FALSE, TrainerHill_Entrance_EventScript_TryFaceAttendant  @ VAR_RESULT always FALSE here\n\tsetobjectxy LOCALID_PLAYER, 9, 6\n\tapplymovement LOCALID_PLAYER, TrainerHill_Entrance_Movement_PlayerFaceAttendant\n\tend"
+  },
+  "label": "TrainerHill_Entrance_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/TrainerHill_Entrance/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_0"
+    ]
+  }
+}

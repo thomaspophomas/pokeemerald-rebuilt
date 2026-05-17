@@ -1,0 +1,19 @@
+{
+  "id": "BerryBlender_Text_ExplainBerryBlending2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": ".string \"Okay!\\n\"\n\t.string \"Let me explain it to you!\\p\"\n\t.string \"When the spinning BLENDER's arrow\\n\"\n\t.string \"reaches your marker, just press\\l\"\n\t.string \"the A Button.\\p\"\n\t.string \"That's all it takes.\\n\"\n\t.string \"Pretty easy, don't you think?$\""
+  },
+  "label": "BerryBlender_Text_ExplainBerryBlending2",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {}
+}

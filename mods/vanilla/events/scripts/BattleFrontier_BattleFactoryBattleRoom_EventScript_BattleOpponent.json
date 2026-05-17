@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattleFactoryBattleRoom_EventScript_BattleOpponent",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+    "sha1": "d6c9d92d97f61a06b3670b7d509844f3bc902eb3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+    "rawScript": "goto_if_ne VAR_TEMP_F, FRONTIER_BRAIN_NOT_READY, BattleFrontier_BattleFactoryBattleRoom_EventScript_BattleNoland\n\tpalace_getopponentintro\n\tlockall\n\tmsgbox gStringVar4, MSGBOX_DEFAULT\n\twaitmessage\n\tclosemessage\n\tfrontier_set FRONTIER_DATA_RECORD_DISABLED, FALSE\n\tspecial HealPlayerParty\n\tsetvar VAR_0x8004, SPECIAL_BATTLE_FACTORY\n\tsetvar VAR_0x8005, 0\n\tspecial DoSpecialTrainerBattle\n\tswitch VAR_RESULT\n\tcase 1, BattleFrontier_BattleFactoryBattleRoom_EventScript_DefeatedOpponent"
+  },
+  "label": "BattleFrontier_BattleFactoryBattleRoom_EventScript_BattleOpponent",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_F"
+    ]
+  }
+}

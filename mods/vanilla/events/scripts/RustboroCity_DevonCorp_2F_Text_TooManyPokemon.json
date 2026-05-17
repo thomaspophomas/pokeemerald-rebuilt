@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_DevonCorp_2F_Text_TooManyPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "sha1": "7e0aa6a4df50ead64287578a24ba19b07cafbb02"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "rawScript": ".string \"Uh-oh, you've got too many POK\u00e9MON.\\n\"\n\t.string \"You have no room for this one.$\""
+  },
+  "label": "RustboroCity_DevonCorp_2F_Text_TooManyPokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+  "references": {}
+}

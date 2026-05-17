@@ -1,0 +1,19 @@
+{
+  "id": "Route121_SafariZoneEntrance_Movement_ExitSafariZone",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route121_SafariZoneEntrance/scripts.inc",
+    "sha1": "6a3d6039da49b2973bb2acbe14884a453fef9c72"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route121_SafariZoneEntrance/scripts.inc",
+    "rawScript": "walk_up\n\twalk_right\n\twalk_right\n\twalk_right\n\twalk_right\n\twalk_right\n\twalk_right\n\twalk_right\n\tstep_end"
+  },
+  "label": "Route121_SafariZoneEntrance_Movement_ExitSafariZone",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/Route121_SafariZoneEntrance/scripts.inc",
+  "references": {}
+}

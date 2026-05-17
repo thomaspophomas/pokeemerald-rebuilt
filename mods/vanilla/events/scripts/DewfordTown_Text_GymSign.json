@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Text_GymSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown/scripts.inc",
+    "sha1": "e9e724e6d3bba641bcb2d4263fe226ee6c1b4840"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown/scripts.inc",
+    "rawScript": ".string \"DEWFORD TOWN POK\u00e9MON GYM\\n\"\n\t.string \"LEADER: BRAWLY\\l\"\n\t.string \"\u201cA big wave in fighting!\u201d$\""
+  },
+  "label": "DewfordTown_Text_GymSign",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown/scripts.inc",
+  "references": {}
+}

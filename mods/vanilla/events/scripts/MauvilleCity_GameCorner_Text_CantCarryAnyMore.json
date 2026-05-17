@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_GameCorner_Text_CantCarryAnyMore",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "sha1": "3db7cd216c9a2c35e8176ef8b4a1d9ec68649c7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "rawScript": ".string \"Oh, you can't carry any more than that.$\""
+  },
+  "label": "MauvilleCity_GameCorner_Text_CantCarryAnyMore",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+  "references": {}
+}

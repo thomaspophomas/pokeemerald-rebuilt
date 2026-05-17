@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Text_NoOrdinaryTourist",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": ".string \"Hm!\\n\"\n\t.string \"You've come all the way to SOOTOPOLIS?\\l\"\n\t.string \"You're no ordinary tourist.\\p\"\n\t.string \"But I suppose that doesn't make you\\n\"\n\t.string \"an extraordinary tourist, either.$\""
+  },
+  "label": "SootopolisCity_Text_NoOrdinaryTourist",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

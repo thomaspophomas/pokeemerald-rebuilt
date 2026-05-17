@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_EventScript_WalkToElevator",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": "closemessage\n\tcall BattleFrontier_BattleTowerLobby_EventScript_SetAttendantTalkedTo\n\tcall BattleFrontier_BattleTowerLobby_EventScript_GetDoorXCoord\n\tapplymovement VAR_LAST_TALKED, BattleFrontier_BattleTowerLobby_Movement_WalkToElevator\n\tapplymovement LOCALID_PLAYER, BattleFrontier_BattleTowerLobby_Movement_WalkToElevator\n\twaitmovement 0\n\topendoor VAR_0x8004, 1\n\twaitdooranim\n\tapplymovement VAR_LAST_TALKED, BattleFrontier_BattleTowerLobby_Movement_AttendantEnterElevator\n\tapplymovement LOCALID_PLAYER, BattleFrontier_BattleTowerLobby_Movement_PlayerEnterElevator\n\twaitmovement 0\n\tclosedoor VAR_0x8004, 1\n\twaitdooranim\n\treturn"
+  },
+  "label": "BattleFrontier_BattleTowerLobby_EventScript_WalkToElevator",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED"
+    ]
+  }
+}

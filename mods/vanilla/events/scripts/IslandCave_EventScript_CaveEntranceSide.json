@@ -1,0 +1,25 @@
+{
+  "id": "IslandCave_EventScript_CaveEntranceSide",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/IslandCave/scripts.inc",
+    "sha1": "36e3ca89a53bdf101cff26d6ef8efcf46552e41d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/IslandCave/scripts.inc",
+    "rawScript": "lockall\n\tcall_if_set FLAG_TEMP_REGICE_PUZZLE_FAILED, IslandCave_EventScript_ClearSteps\n\tbraillemessage IslandCave_Braille_RunLapAroundWall\n\tgoto_if_set FLAG_SYS_BRAILLE_REGICE_COMPLETED, IslandCave_EventScript_CloseBrailleMsg\n\tsetflag FLAG_TEMP_REGICE_PUZZLE_STARTED\n\tspecial ShouldDoBrailleRegicePuzzle\n\tgoto IslandCave_EventScript_CloseBrailleMsg\n\tend"
+  },
+  "label": "IslandCave_EventScript_CaveEntranceSide",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/IslandCave/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_BRAILLE_REGICE_COMPLETED",
+      "FLAG_TEMP_REGICE_PUZZLE_FAILED",
+      "FLAG_TEMP_REGICE_PUZZLE_STARTED"
+    ]
+  }
+}

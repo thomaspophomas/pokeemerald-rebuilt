@@ -1,0 +1,19 @@
+{
+  "id": "Route114_FossilManiacsHouse_Text_CrammedWithBooks",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_FossilManiacsHouse/scripts.inc",
+    "sha1": "95730e17fb1dc32e597d4ae621cec76ec0f7d421"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114_FossilManiacsHouse/scripts.inc",
+    "rawScript": ".string \"THE COMPOSITION OF STRATA\u2026\\n\"\n\t.string \"HOW RAIN SHAPES THE LAND\u2026\\l\"\n\t.string \"STONES, SOIL, AND ROCK\u2026\\p\"\n\t.string \"It's crammed with books.$\""
+  },
+  "label": "Route114_FossilManiacsHouse_Text_CrammedWithBooks",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route114_FossilManiacsHouse/scripts.inc",
+  "references": {}
+}

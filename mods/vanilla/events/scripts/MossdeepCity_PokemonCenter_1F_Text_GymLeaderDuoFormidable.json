@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "bb19ff9a0e952fad700f5ef42fc9fcd6b6aa3a75"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"The GYM LEADERS in this town are\\n\"\n\t.string \"a formidable duo.\\p\"\n\t.string \"Their combination attacks are, like,\\n\"\n\t.string \"excellent and wow!$\""
+  },
+  "label": "MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

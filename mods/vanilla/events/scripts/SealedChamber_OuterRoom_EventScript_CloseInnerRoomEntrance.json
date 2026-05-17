@@ -1,0 +1,19 @@
+{
+  "id": "SealedChamber_OuterRoom_EventScript_CloseInnerRoomEntrance",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SealedChamber_OuterRoom/scripts.inc",
+    "sha1": "dee4c4e070ebe2e7c86a5d05381bc15f82ba626a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SealedChamber_OuterRoom/scripts.inc",
+    "rawScript": "setmetatile 9, 1, METATILE_Cave_EntranceCover, TRUE\n\tsetmetatile 10, 1, METATILE_Cave_EntranceCover, TRUE\n\tsetmetatile 11, 1, METATILE_Cave_EntranceCover, TRUE\n\tsetmetatile 9, 2, METATILE_Cave_SealedChamberBraille_Mid, TRUE\n\tsetmetatile 10, 2, METATILE_Cave_SealedChamberBraille_Mid, TRUE\n\tsetmetatile 11, 2, METATILE_Cave_SealedChamberBraille_Mid, TRUE\n\treturn"
+  },
+  "label": "SealedChamber_OuterRoom_EventScript_CloseInnerRoomEntrance",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SealedChamber_OuterRoom/scripts.inc",
+  "references": {}
+}

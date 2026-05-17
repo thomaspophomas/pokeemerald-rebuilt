@@ -1,0 +1,26 @@
+{
+  "id": "LavaridgeTown_EventScript_EggWoman",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_LAVARIDGE_EGG, LavaridgeTown_EventScript_ReceivedEgg\n\tmsgbox LavaridgeTown_Text_HaveEggWillYouTakeIt, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, LavaridgeTown_EventScript_DeclineEgg\n\tgetpartysize\n\tgoto_if_eq VAR_RESULT, PARTY_SIZE, LavaridgeTown_EventScript_NoRoomForEgg\n\tmsgbox LavaridgeTown_Text_HopeYoullWalkPlentyWithEgg, MSGBOX_DEFAULT\n\tsetflag FLAG_RECEIVED_LAVARIDGE_EGG\n\tplayfanfare MUS_OBTAIN_ITEM\n\tmessage LavaridgeTown_Text_ReceivedTheEgg\n\twaitfanfare\n\tgiveegg SPECIES_WYNAUT\n\trelease\n\tend"
+  },
+  "label": "LavaridgeTown_EventScript_EggWoman",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_LAVARIDGE_EGG"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

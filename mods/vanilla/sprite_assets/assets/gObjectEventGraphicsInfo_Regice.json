@@ -1,0 +1,35 @@
+{
+  "id": "gObjectEventGraphicsInfo_Regice",
+  "domain": "sprite_assets",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/object_events/object_event_graphics_info.h",
+    "sha1": "6e39355ad5f42a055e0a4aba39fadac078dcb7cf"
+  },
+  "legacy": {
+    "kind": "object_event_sprite_asset",
+    "sourcePath": "src/data/object_events/object_event_graphics_info.h",
+    "rawC": "const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Regice = {\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 512,\n    .width = 32,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = TRUE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_32x32,\n    .subspriteTables = sOamTables_32x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Regi,\n    .affineAnims = gDummySpriteAffineAnimTable,\n};"
+  },
+  "key": "gObjectEventGraphicsInfo_Regice",
+  "assetKind": "object_event",
+  "graphicsId": "OBJ_EVENT_GFX_REGICE",
+  "graphicsInfoSymbol": "gObjectEventGraphicsInfo_Regice",
+  "sheetSymbol": null,
+  "compressedSheetSymbol": null,
+  "paletteSymbol": null,
+  "compressedPaletteSymbol": null,
+  "templateSymbol": null,
+  "tileTag": "TAG_NONE",
+  "paletteTag": "OBJ_EVENT_PAL_TAG_NPC_3",
+  "dimensions": {
+    "width": "32",
+    "height": "32",
+    "size": "512"
+  },
+  "oam": "&gObjectEventBaseOam_32x32",
+  "images": "sPicTable_Regi",
+  "anims": "sAnimTable_Standard",
+  "subspriteTables": "sOamTables_32x32",
+  "affineAnims": "gDummySpriteAffineAnimTable"
+}

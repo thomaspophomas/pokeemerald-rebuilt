@@ -1,0 +1,23 @@
+{
+  "id": "RusturfTunnel_EventScript_ItemMaxEther",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/item_ball_scripts.inc",
+    "sha1": "fb0889a473104b0cbc645aec0925e626c732615f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/item_ball_scripts.inc",
+    "rawScript": "finditem ITEM_MAX_ETHER\n\tend"
+  },
+  "label": "RusturfTunnel_EventScript_ItemMaxEther",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/item_ball_scripts.inc",
+  "references": {
+    "items": [
+      "ITEM_MAX_ETHER"
+    ]
+  }
+}

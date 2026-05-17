@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerBattleRoom_Text_GreetingsImAnabel",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "sha1": "09b678d8717203a622b1d8714d904bcdeb37d08a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "rawScript": ".string \"Greetings\u2026\\n\"\n\t.string \"My name is ANABEL.\\p\"\n\t.string \"I am the SALON MAIDEN, and I am in\\n\"\n\t.string \"charge of running the BATTLE TOWER\u2026\\p\"\n\t.string \"I have heard several rumors\\n\"\n\t.string \"about you\u2026\\p\"\n\t.string \"In all honesty, what I have heard does\\n\"\n\t.string \"not seem attractive in any way\u2026\\p\"\n\t.string \"The reason I've come to see you\u2026\\n\"\n\t.string \"Well, there is but one reason\u2026$\""
+  },
+  "label": "BattleFrontier_BattleTowerBattleRoom_Text_GreetingsImAnabel",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+  "references": {}
+}

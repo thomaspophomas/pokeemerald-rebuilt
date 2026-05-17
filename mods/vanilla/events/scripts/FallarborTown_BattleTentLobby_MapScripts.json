@@ -1,0 +1,24 @@
+{
+  "id": "FallarborTown_BattleTentLobby_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "sha1": "007b5945200863133fd43941054ec8db085a0356"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_FRAME_TABLE, FallarborTown_BattleTentLobby_OnFrame\n\tmap_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, FallarborTown_BattleTentLobby_OnWarp\n\t.byte 0"
+  },
+  "label": "FallarborTown_BattleTentLobby_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE"
+    ]
+  }
+}

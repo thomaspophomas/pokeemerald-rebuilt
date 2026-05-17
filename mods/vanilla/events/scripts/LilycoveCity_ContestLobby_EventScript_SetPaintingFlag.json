@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_SetPaintingFlag",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": "switch VAR_CONTEST_CATEGORY\n\tcase CONTEST_CATEGORY_COOL, LilycoveCity_ContestLobby_EventScript_MadeCoolPainting\n\tcase CONTEST_CATEGORY_BEAUTY, LilycoveCity_ContestLobby_EventScript_MadeBeautyPainting\n\tcase CONTEST_CATEGORY_CUTE, LilycoveCity_ContestLobby_EventScript_MadeCutePainting\n\tcase CONTEST_CATEGORY_SMART, LilycoveCity_ContestLobby_EventScript_MadeSmartPainting\n\tcase CONTEST_CATEGORY_TOUGH, LilycoveCity_ContestLobby_EventScript_MadeToughPainting\n\treturn"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_SetPaintingFlag",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_CONTEST_CATEGORY"
+    ]
+  }
+}

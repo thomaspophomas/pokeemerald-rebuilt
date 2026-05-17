@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_1F_EventScript_Curator",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+    "sha1": "9b7ed7bb941e379aabaa59bf0da8ffe089df98ba"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_MUSEUM_1F_CURATOR, Common_Movement_FacePlayer\n\tmessage LilycoveCity_LilycoveMuseum_1F_Text_ImCuratorHaveYouViewedOurPaintings\n\twaitmessage\n\tmultichoice 20, 8, MULTI_VIEWED_PAINTINGS, TRUE\n\tgoto_if_eq VAR_RESULT, 0, LilycoveCity_LilycoveMuseum_1F_EventScript_SawPaintings\n\tgoto_if_eq VAR_RESULT, 1, LilycoveCity_LilycoveMuseum_1F_EventScript_NotYet\n\tend"
+  },
+  "label": "LilycoveCity_LilycoveMuseum_1F_EventScript_Curator",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "TrainerHill_Roof_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Roof/scripts.inc",
+    "sha1": "5597180a59a42562e7f9757eaa0b7d95908d37f9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Roof/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, TrainerHill_OnResume\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, TrainerHill_OnFrame\n\t.byte 0"
+  },
+  "label": "TrainerHill_Roof_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/TrainerHill_Roof/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_RESUME"
+    ]
+  }
+}

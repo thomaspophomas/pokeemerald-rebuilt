@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_ExplainTV",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"Hi, do you check out TV at all?\\p\"\n\t.string \"They've added a bunch of cool new\\n\"\n\t.string \"shows recently.\\p\"\n\t.string \"TV is so cool. I've seen my friends on\\n\"\n\t.string \"TV just out of the blue.\\p\"\n\t.string \"And, sometimes, they even put you on TV\\n\"\n\t.string \"without telling you.\\p\"\n\t.string \"I wish I would be on TV sometime.\\p\"\n\t.string \"That's why I think you should check\\n\"\n\t.string \"out TVs whenever you can.$\""
+  },
+  "label": "MauvilleCity_Text_ExplainTV",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

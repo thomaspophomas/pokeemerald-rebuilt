@@ -1,0 +1,26 @@
+{
+  "id": "BattleFrontier_OutsideWest_EventScript_FerryAttendant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmsgbox BattleFrontier_OutsideWest_Text_MayISeeYourTicket, MSGBOX_DEFAULT\n\tcheckitem ITEM_SS_TICKET\n\tgoto_if_eq VAR_RESULT, FALSE, BattleFrontier_OutsideWest_EventScript_NoSSTicket\n\tmessage BattleFrontier_OutsideWest_Text_WhereWouldYouLikeToGo\n\twaitmessage\n\tgoto BattleFrontier_OutsideWest_EventScript_ChooseFerryDestination\n\tend"
+  },
+  "label": "BattleFrontier_OutsideWest_EventScript_FerryAttendant",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_SS_TICKET"
+    ]
+  }
+}

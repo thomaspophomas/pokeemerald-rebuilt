@@ -1,0 +1,23 @@
+{
+  "id": "Route110_TrickHousePuzzle6_EventScript_Scroll",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle6/scripts.inc",
+    "sha1": "21a5992162ee4d9033d914af568ef8472d84c843"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle6/scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_eq VAR_TRICK_HOUSE_PUZZLE_6_STATE, 0, Route110_TrickHousePuzzle6_EventScript_FoundScroll\n\tgoto Route110_TrickHousePuzzle_EventScript_ReadScrollAgain\n\tend"
+  },
+  "label": "Route110_TrickHousePuzzle6_EventScript_Scroll",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHousePuzzle6/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TRICK_HOUSE_PUZZLE_6_STATE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Gym_Text_TateAndLizaPostRematch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "sha1": "f1b3ae6c76fdfe44b1431df4ea78da5c11a79c08"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "rawScript": ".string \"TATE: You can knock us down,\\n\"\n\t.string \"but we'll never stay down!\\p\"\n\t.string \"LIZA: Because the two of us,\\n\"\n\t.string \"we always support each other!$\""
+  },
+  "label": "MossdeepCity_Gym_Text_TateAndLizaPostRematch",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_Gym/scripts.inc",
+  "references": {}
+}

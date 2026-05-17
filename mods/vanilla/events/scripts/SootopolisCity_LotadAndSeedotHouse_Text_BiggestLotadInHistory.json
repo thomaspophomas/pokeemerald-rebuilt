@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+    "sha1": "fc092cb2d8bfc7874143add20c2a81120dbbacc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+    "rawScript": ".string \"The biggest LOTAD in history!\\n\"\n\t.string \"{STR_VAR_2}'s {STR_VAR_3}-inch colossus!\\p\"\n\t.string \"A LOTAD bigger than a SEEDOT\\n\"\n\t.string \"always wanted!$\""
+  },
+  "label": "SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+  "references": {}
+}

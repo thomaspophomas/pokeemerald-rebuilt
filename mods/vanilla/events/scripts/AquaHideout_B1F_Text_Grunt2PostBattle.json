@@ -1,0 +1,19 @@
+{
+  "id": "AquaHideout_B1F_Text_Grunt2PostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B1F/scripts.inc",
+    "sha1": "2923188c4ae1df18ace73c8a8f87ea7f1d1e7886"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_B1F/scripts.inc",
+    "rawScript": ".string \"Our HIDEOUT's secret?\\p\"\n\t.string \"Well, let's just say\u2026\\n\"\n\t.string \"There's a submarine at the far end!\\p\"\n\t.string \"But, by now\u2026\\n\"\n\t.string \"Kekekeke\u2026$\""
+  },
+  "label": "AquaHideout_B1F_Text_Grunt2PostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AquaHideout_B1F/scripts.inc",
+  "references": {}
+}

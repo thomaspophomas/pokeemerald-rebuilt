@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F_Text_MaxieUseFuelToEruptVolcano",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "rawScript": ".string \"MAXIE: Fufufu\u2026 Since you're so\\n\"\n\t.string \"curious, you deserve an explanation.\\p\"\n\t.string \"We're going to jettison the entire\\n\"\n\t.string \"load into MT. CHIMNEY!\\p\"\n\t.string \"With GROUDON gone, we have no need\\n\"\n\t.string \"for that slag heap of a mountain!\\p\"\n\t.string \"So we'll use the fuel's power to make\\n\"\n\t.string \"the volcano erupt!\\p\"\n\t.string \"It will be savage!$\""
+  },
+  "label": "MossdeepCity_SpaceCenter_2F_Text_MaxieUseFuelToEruptVolcano",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+  "references": {}
+}

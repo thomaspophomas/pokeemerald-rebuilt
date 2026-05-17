@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Harbor_Text_TradeForDeepSeaScale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "sha1": "304e0889603d7850b02e01765d969cf3c903eb9e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "rawScript": ".string \"CAPT. STERN: So you'll trade it for\\n\"\n\t.string \"my DEEPSEASCALE?$\""
+  },
+  "label": "SlateportCity_Harbor_Text_TradeForDeepSeaScale",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_Harbor/scripts.inc",
+  "references": {}
+}

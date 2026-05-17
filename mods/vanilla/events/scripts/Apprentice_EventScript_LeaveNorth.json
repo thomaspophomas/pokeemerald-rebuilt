@@ -1,0 +1,19 @@
+{
+  "id": "Apprentice_EventScript_LeaveNorth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/apprentice.inc",
+    "sha1": "353208142bca1df117076064d141b84efe196e7c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/apprentice.inc",
+    "rawScript": "apprentice_shouldleave\n\tgoto_if_eq VAR_0x8004, FALSE, Apprentice_EventScript_DontMove  @ VAR_0x8004 always TRUE here\n\tapplymovement LOCALID_APPRENTICE, Apprentice_Movement_LeaveNorth\n\twaitmovement 0\n\tend"
+  },
+  "label": "Apprentice_EventScript_LeaveNorth",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/apprentice.inc",
+  "references": {}
+}

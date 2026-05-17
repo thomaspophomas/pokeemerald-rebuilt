@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideEast_Text_LegendOfBattlePyramid",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "sha1": "daab3e530c74c286237faa58f280f11ef97e663a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "rawScript": ".string \"Do you know it?\\n\"\n\t.string \"The legend of the BATTLE PYRAMID?\\p\"\n\t.string \"When there comes a confident TRAINER\\n\"\n\t.string \"reaching for the golden pinnacle,\\l\"\n\t.string \"there shall appear a man among men.\\p\"\n\t.string \"Don't know that legend?\\n\"\n\t.string \"Well, of course not!\\l\"\n\t.string \"I just made it up!\\p\"\n\t.string \"What's it supposed to mean?\\n\"\n\t.string \"That, my friend, I can't say!$\""
+  },
+  "label": "BattleFrontier_OutsideEast_Text_LegendOfBattlePyramid",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ShoalCave_LowTideEntranceRoom_EventScript_NotEnoughShoalSaltOrShells",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ShoalCave_LowTideEntranceRoom/scripts.inc",
+    "sha1": "1413cd55fcba731c9d6b5315421f4e6fc8f26289"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ShoalCave_LowTideEntranceRoom/scripts.inc",
+    "rawScript": "checkitem ITEM_SHOAL_SALT\n\tgoto_if_eq VAR_RESULT, TRUE, ShoalCave_LowTideEntranceRoom_EventScript_HasSomeShoalSaltOrShell\n\tcheckitem ITEM_SHOAL_SHELL\n\tgoto_if_eq VAR_RESULT, TRUE, ShoalCave_LowTideEntranceRoom_EventScript_HasSomeShoalSaltOrShell\n\tmsgbox ShoalCave_LowTideEntranceRoom_Text_AreYouPlanningOnGoingInThere, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "ShoalCave_LowTideEntranceRoom_EventScript_NotEnoughShoalSaltOrShells",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/ShoalCave_LowTideEntranceRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_SHOAL_SALT",
+      "ITEM_SHOAL_SHELL"
+    ]
+  }
+}

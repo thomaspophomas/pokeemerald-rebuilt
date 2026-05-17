@@ -1,0 +1,19 @@
+{
+  "id": "TrainerHill_Elevator_EventScript_CloseFloorSelect",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Elevator/scripts.inc",
+    "sha1": "06b14119162a2b7bf99d17883435f80e4648fabb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Elevator/scripts.inc",
+    "rawScript": "special CloseDeptStoreElevatorWindow\n\treleaseall\n\tend"
+  },
+  "label": "TrainerHill_Elevator_EventScript_CloseFloorSelect",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/TrainerHill_Elevator/scripts.inc",
+  "references": {}
+}

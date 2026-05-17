@@ -1,0 +1,23 @@
+{
+  "id": "Route117_PokemonDayCare_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route117_PokemonDayCare/scripts.inc",
+    "sha1": "0411fad1c1145cec06904af4852341e3b4d5e048"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route117_PokemonDayCare/scripts.inc",
+    "rawScript": "setflag FLAG_LANDMARK_POKEMON_DAYCARE\n\tend"
+  },
+  "label": "Route117_PokemonDayCare_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Route117_PokemonDayCare/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_LANDMARK_POKEMON_DAYCARE"
+    ]
+  }
+}

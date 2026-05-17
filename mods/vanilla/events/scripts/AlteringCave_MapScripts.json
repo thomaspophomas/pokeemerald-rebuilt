@@ -1,0 +1,23 @@
+{
+  "id": "AlteringCave_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AlteringCave/scripts.inc",
+    "sha1": "d58fb4e0d50eab7084ac2763e9fdfbea714597f5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AlteringCave/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, AlteringCave_OnTransition\n\t.byte 0"
+  },
+  "label": "AlteringCave_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/AlteringCave/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

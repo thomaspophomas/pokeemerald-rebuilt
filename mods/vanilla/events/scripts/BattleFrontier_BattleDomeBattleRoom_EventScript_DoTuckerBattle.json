@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomeBattleRoom_EventScript_DoTuckerBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "sha1": "2cf5ea83e82fbd2189ced7e0cd4d5f894bf74650"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_DOME_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_PlayerStepForward2\n\tapplymovement LOCALID_DOME_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_TuckerStepForward\n\twaitmovement 0\n\tcall BattleFrontier_BattleDomeBattleRoom_EventScript_DoDomeBattle\n\treturn"
+  },
+  "label": "BattleFrontier_BattleDomeBattleRoom_EventScript_DoTuckerBattle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+  "references": {}
+}

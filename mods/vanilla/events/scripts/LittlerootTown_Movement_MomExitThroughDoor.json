@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_Movement_MomExitThroughDoor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": "walk_up\n\tstep_end"
+  },
+  "label": "LittlerootTown_Movement_MomExitThroughDoor",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {}
+}

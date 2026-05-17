@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_RegisteredWally",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"Registered WALLY\\n\"\n\t.string \"in the POK\u00e9NAV.$\""
+  },
+  "label": "MauvilleCity_Text_RegisteredWally",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "sha1": "54c1e0ee021a3a91375f3b05c8682c17ed095aa9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "rawScript": ".string \"The best of luck to you.\\n\"\n\t.string \"Farewell.$\"\n\n@ Seems there was a planned room type where the player could choose to battle and would be healed if they won\n@ Possibly replaced/superseded by the hard battle room, which is the same but the battle isnt optional\n@ Unused"
+  },
+  "label": "BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+  "references": {}
+}

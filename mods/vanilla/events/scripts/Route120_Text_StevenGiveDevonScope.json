@@ -1,0 +1,19 @@
+{
+  "id": "Route120_Text_StevenGiveDevonScope",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route120/scripts.inc",
+    "sha1": "c3ab570e7c5b1ea2c74415d703646f5a362564ad"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route120/scripts.inc",
+    "rawScript": ".string \"STEVEN: I see\u2026\\n\"\n\t.string \"Your battle style is intriguing.\\p\"\n\t.string \"Your POK\u00e9MON have obviously grown\\n\"\n\t.string \"since I first met you in DEWFORD.\\p\"\n\t.string \"I'd like you to have this\\n\"\n\t.string \"DEVON SCOPE.\\p\"\n\t.string \"Who knows, there may be other\\n\"\n\t.string \"concealed POK\u00e9MON.$\""
+  },
+  "label": "Route120_Text_StevenGiveDevonScope",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route120/scripts.inc",
+  "references": {}
+}

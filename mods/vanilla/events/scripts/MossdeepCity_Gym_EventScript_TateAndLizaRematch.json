@@ -1,0 +1,23 @@
+{
+  "id": "MossdeepCity_Gym_EventScript_TateAndLizaRematch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "sha1": "f1b3ae6c76fdfe44b1431df4ea78da5c11a79c08"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "rawScript": "trainerbattle_rematch_double TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaPreRematch, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat, MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons\n\tmsgbox MossdeepCity_Gym_Text_TateAndLizaPostRematch, MSGBOX_AUTOCLOSE\n\tend\n\n@ All the below switch scripts are leftover from RS and are functionally unused"
+  },
+  "label": "MossdeepCity_Gym_EventScript_TateAndLizaRematch",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_Gym/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_TATE_AND_LIZA_1"
+    ]
+  }
+}

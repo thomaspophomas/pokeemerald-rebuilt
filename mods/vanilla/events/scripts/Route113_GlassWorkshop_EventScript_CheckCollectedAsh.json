@@ -1,0 +1,27 @@
+{
+  "id": "Route113_GlassWorkshop_EventScript_CheckCollectedAsh",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "sha1": "6a7101e66439e9abedcc55c8fc60b573807258b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "rawScript": "checkitem ITEM_SOOT_SACK\n\tgoto_if_eq VAR_RESULT, FALSE, Route113_GlassWorkshop_EventScript_SootSackNotInBag\n\tmsgbox Route113_GlassWorkshop_Text_LetsSeeCollectedAshes, MSGBOX_DEFAULT\n\tgoto_if_lt VAR_ASH_GATHER_COUNT, LOWEST_ASH_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAsh\n\tmessage Route113_GlassWorkshop_Text_WhichGlassItemWoudYouLike\n\twaitmessage\n\tgoto Route113_GlassWorkshop_EventScript_ChooseGlassItem\n\tend"
+  },
+  "label": "Route113_GlassWorkshop_EventScript_CheckCollectedAsh",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route113_GlassWorkshop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_ASH_GATHER_COUNT",
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_SOOT_SACK"
+    ]
+  }
+}

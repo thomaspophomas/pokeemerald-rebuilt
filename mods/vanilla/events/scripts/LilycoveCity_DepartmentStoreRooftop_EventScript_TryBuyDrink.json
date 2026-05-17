@@ -1,0 +1,25 @@
+{
+  "id": "LilycoveCity_DepartmentStoreRooftop_EventScript_TryBuyDrink",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc",
+    "sha1": "3ac544c7b01d367272ba9a3a4ac85c927eeb0c61"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc",
+    "rawScript": "call_if_eq VAR_TEMP_1, 0, LilycoveCity_DepartmentStoreRooftop_EventScript_CheckMoneyFreshWater\n\tcall_if_eq VAR_TEMP_1, 1, LilycoveCity_DepartmentStoreRooftop_EventScript_CheckMoneySodaPop\n\tcall_if_eq VAR_TEMP_1, 2, LilycoveCity_DepartmentStoreRooftop_EventScript_CheckMoneyLemonade\n\tgoto_if_eq VAR_RESULT, FALSE, LilycoveCity_DepartmentStoreRooftop_EventScript_NotEnoughMoneyForDrink\n\tcheckitemspace VAR_TEMP_0\n\tgoto_if_eq VAR_RESULT, FALSE, LilycoveCity_DepartmentStoreRooftop_EventScript_NoRoomForDrink\n\tcall_if_eq VAR_TEMP_1, 0, LilycoveCity_DepartmentStoreRooftop_EventScript_RemoveMoneyFreshWater\n\tcall_if_eq VAR_TEMP_1, 1, LilycoveCity_DepartmentStoreRooftop_EventScript_RemoveMoneySodaPop\n\tcall_if_eq VAR_TEMP_1, 2, LilycoveCity_DepartmentStoreRooftop_EventScript_RemoveMoneyLemonade\n\tupdatemoneybox\n\tbufferitemname STR_VAR_1, VAR_TEMP_0\n\tplayse SE_VEND\n\tmsgbox LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown, MSGBOX_DEFAULT\n\tadditem VAR_TEMP_0\n\tbufferitemname STR_VAR_2, VAR_TEMP_0\n\tbufferstdstring STR_VAR_3, STDSTRING_ITEMS\n\tmsgbox gText_PutItemInPocket, MSGBOX_DEFAULT\n\trandom 64  @ 1/64 chance of an additional drink dropping\n\tgoto_if_ne VAR_RESULT, 0, LilycoveCity_DepartmentStoreRooftop_EventScript_ChooseNewDrink\n\tcheckitemspace VAR_TEMP_0\n\tgoto_if_eq VAR_RESULT, FALSE, LilycoveCity_DepartmentStoreRooftop_EventScript_NoRoomForDrink\n\tplayse SE_VEND\n\tmsgbox LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown, MSGBOX_DEFAULT\n\tadditem VAR_TEMP_0\n\tbufferitemname STR_VAR_2, VAR_TEMP_0\n\tbufferstdstring STR_VAR_3, STDSTRING_ITEMS\n\tmsgbox gText_PutItemInPocket, MSGBOX_DEFAULT\n\trandom 64  @ 1/64 * the prev 1/64 chance of a third additional drink dropping, ~ 0.02% chance\n\tgoto_if_ne VAR_RESULT, 0, LilycoveCity_DepartmentStoreRooftop_EventScript_ChooseNewDrink\n\tcheckitemspace VAR_TEMP_0\n\tgoto_if_eq VAR_RESULT, 0, LilycoveCity_DepartmentStoreRooftop_EventScript_NoRoomForDrink\n\tplayse SE_VEND\n\tmsgbox LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown, MSGBOX_DEFAULT\n\tadditem VAR_TEMP_0\n\tbufferitemname STR_VAR_2, VAR_TEMP_0\n\tbufferstdstring STR_VAR_3, STDSTRING_ITEMS\n\tmsgbox gText_PutItemInPocket, MSGBOX_DEFAULT\n\tgoto LilycoveCity_DepartmentStoreRooftop_EventScript_ChooseNewDrink\n\tend"
+  },
+  "label": "LilycoveCity_DepartmentStoreRooftop_EventScript_TryBuyDrink",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_0",
+      "VAR_TEMP_1"
+    ]
+  }
+}

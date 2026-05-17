@@ -1,0 +1,26 @@
+{
+  "id": "SSTidalCorridor_EventScript_ExitSlateport",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalCorridor/scripts.inc",
+    "sha1": "02d0cfdd4cf17b1fcf50d838485aaf7013da6b13"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalCorridor/scripts.inc",
+    "rawScript": "setrespawn HEAL_LOCATION_SLATEPORT_CITY\n\tmsgbox SSTidalCorridor_Text_WeveArrived, MSGBOX_DEFAULT\n\tcall_if_set FLAG_RECEIVED_TM_SNATCH, SSTidalCorridor_EventScript_HideSnatchGiver\n\twarp MAP_SLATEPORT_CITY_HARBOR, 8, 11\n\twaitstate\n\trelease\n\tend"
+  },
+  "label": "SSTidalCorridor_EventScript_ExitSlateport",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SSTidalCorridor/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_TM_SNATCH"
+    ],
+    "maps": [
+      "MAP_SLATEPORT_CITY_HARBOR"
+    ]
+  }
+}

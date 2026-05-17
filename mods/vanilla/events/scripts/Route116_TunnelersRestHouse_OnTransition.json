@@ -1,0 +1,23 @@
+{
+  "id": "Route116_TunnelersRestHouse_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116_TunnelersRestHouse/scripts.inc",
+    "sha1": "cf1b26d5655363e9dd7eded558cfb3a4486c3aa4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route116_TunnelersRestHouse/scripts.inc",
+    "rawScript": "setflag FLAG_LANDMARK_TUNNELERS_REST_HOUSE\n\tend"
+  },
+  "label": "Route116_TunnelersRestHouse_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Route116_TunnelersRestHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_LANDMARK_TUNNELERS_REST_HOUSE"
+    ]
+  }
+}

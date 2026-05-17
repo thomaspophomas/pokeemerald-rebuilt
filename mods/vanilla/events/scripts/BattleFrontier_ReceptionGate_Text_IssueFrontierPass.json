@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ReceptionGate_Text_IssueFrontierPass",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "sha1": "5b6e89c53f6e32c0fa6883bd750252f1d739a97b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "rawScript": ".string \"For a first-time visitor, we issue\\n\"\n\t.string \"the FRONTIER PASS.\\p\"\n\t.string \"It's for use at all the facilities\\n\"\n\t.string \"in the BATTLE FRONTIER.\\p\"\n\t.string \"Here you are!$\""
+  },
+  "label": "BattleFrontier_ReceptionGate_Text_IssueFrontierPass",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+  "references": {}
+}

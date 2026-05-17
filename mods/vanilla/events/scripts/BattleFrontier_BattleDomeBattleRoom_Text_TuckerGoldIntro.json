@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomeBattleRoom_Text_TuckerGoldIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "sha1": "2cf5ea83e82fbd2189ced7e0cd4d5f894bf74650"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "rawScript": ".string \"TUCKER: Ah\u2026\\n\"\n\t.string \"The pummeling roar of the crowd\u2026\\l\"\n\t.string \"Their furnace-like heat of excitement\u2026\\l\"\n\t.string \"This is a wonderful place\u2026\\p\"\n\t.string \"To the crowd, I am the DOME ACE\u2026\\n\"\n\t.string \"I represent their hopes and dreams\u2026\\l\"\n\t.string \"I must never fade from their sight\u2026\\p\"\n\t.string \"I must burn!\\n\"\n\t.string \"Brighter and more brilliant!\\l\"\n\t.string \"I must light all that gather here!$\""
+  },
+  "label": "BattleFrontier_BattleDomeBattleRoom_Text_TuckerGoldIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+  "references": {}
+}

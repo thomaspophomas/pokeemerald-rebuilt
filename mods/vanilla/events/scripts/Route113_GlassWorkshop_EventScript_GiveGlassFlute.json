@@ -1,0 +1,23 @@
+{
+  "id": "Route113_GlassWorkshop_EventScript_GiveGlassFlute",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "sha1": "6a7101e66439e9abedcc55c8fc60b573807258b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "rawScript": "giveitem VAR_0x8008\n\tgoto_if_eq VAR_RESULT, FALSE, Route113_GlassWorkshop_EventScript_NoRoomForFlute\n\treturn"
+  },
+  "label": "Route113_GlassWorkshop_EventScript_GiveGlassFlute",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route113_GlassWorkshop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

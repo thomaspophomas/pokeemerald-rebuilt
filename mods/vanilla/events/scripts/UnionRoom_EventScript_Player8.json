@@ -1,0 +1,23 @@
+{
+  "id": "UnionRoom_EventScript_Player8",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/UnionRoom/scripts.inc",
+    "sha1": "110f08d8f393e99196ccecbb3f971b805cbb71bc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/UnionRoom/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tsetvar VAR_RESULT, UR_INTERACT_PLAYER_8\n\twaitstate\n\trelease\n\tend"
+  },
+  "label": "UnionRoom_EventScript_Player8",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/UnionRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

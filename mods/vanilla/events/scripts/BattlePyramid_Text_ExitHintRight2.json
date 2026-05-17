@@ -1,0 +1,19 @@
+{
+  "id": "BattlePyramid_Text_ExitHintRight2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "sha1": "a6f6792ac2bc39a05028dabd4e88f5984d84d4a5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "rawScript": ".string \"The exit on this floor is in\\n\"\n\t.string \"the {RIGHT_ARROW} direction.$\""
+  },
+  "label": "BattlePyramid_Text_ExitHintRight2",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+  "references": {}
+}

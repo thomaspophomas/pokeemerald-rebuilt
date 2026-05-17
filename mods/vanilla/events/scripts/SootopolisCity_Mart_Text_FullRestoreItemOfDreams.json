@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Mart_Text_FullRestoreItemOfDreams",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Mart/scripts.inc",
+    "sha1": "09107a068ba7ecb271ba83663a6a1a20f47464ae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_Mart/scripts.inc",
+    "rawScript": ".string \"Do you know FULL RESTORE?\\p\"\n\t.string \"Full restoration of HP!\\n\"\n\t.string \"Eradication of all status problems!\\p\"\n\t.string \"It's truly an item of your dreams!$\""
+  },
+  "label": "SootopolisCity_Mart_Text_FullRestoreItemOfDreams",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_Mart/scripts.inc",
+  "references": {}
+}

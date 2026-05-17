@@ -1,0 +1,26 @@
+{
+  "id": "Route107_EventScript_Tony",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route107/scripts.inc",
+    "sha1": "8d743da872d9be8742fa574ea07deaea71d39b1c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route107/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_TONY_1, Route107_Text_TonyIntro, Route107_Text_TonyDefeated, Route107_EventScript_TonyRegisterMatchCallAfterBattle\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, Route107_EventScript_TonyRematch\n\tmsgbox Route107_Text_TonyPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route107_EventScript_Tony",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route107/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_TONY_1"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_BattleTentLobby_Text_CouldntFindMonForMe",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+    "sha1": "d8233cb564c951151609565c69259c5bc6039b75"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+    "rawScript": ".string \"So, like, I couldn't find myself any\\n\"\n\t.string \"POK\u00e9MON that were, like, for me.\\p\"\n\t.string \"So, I figured, like, hey, I should file\\n\"\n\t.string \"a complaint to the guy there?\\p\"\n\t.string \"And he wouldn't hear me out, like, hey!\\n\"\n\t.string \"So, like, total bummer, man!\\p\"\n\t.string \"Hey, like, you! Zip it, you know?\\n\"\n\t.string \"Just, you know, take this!$\""
+  },
+  "label": "SlateportCity_BattleTentLobby_Text_CouldntFindMonForMe",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+  "references": {}
+}

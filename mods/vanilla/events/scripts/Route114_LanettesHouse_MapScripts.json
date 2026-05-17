@@ -1,0 +1,23 @@
+{
+  "id": "Route114_LanettesHouse_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_LanettesHouse/scripts.inc",
+    "sha1": "91f2126eb51b441d0e51b50e9d41b4e45bf67494"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114_LanettesHouse/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, Route114_LanettesHouse_OnTransition\n\t.byte 0"
+  },
+  "label": "Route114_LanettesHouse_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Route114_LanettesHouse/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

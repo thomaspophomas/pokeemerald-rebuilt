@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForFinals",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+    "sha1": "18c4052c546a6c71ff18234f6ef3a8130ec538d0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+    "rawScript": "frontier_getbrainstatus\n\tswitch VAR_RESULT\n\tcase FRONTIER_BRAIN_SILVER, BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForTuckerSilver\n\tcase FRONTIER_BRAIN_GOLD, BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForTuckerGold\n\tcase FRONTIER_BRAIN_STREAK, BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForTuckerSilver\n\tcase FRONTIER_BRAIN_STREAK_LONG, BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForTuckerGold\n\tmessage BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForFinals\n\treturn"
+  },
+  "label": "BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForFinals",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

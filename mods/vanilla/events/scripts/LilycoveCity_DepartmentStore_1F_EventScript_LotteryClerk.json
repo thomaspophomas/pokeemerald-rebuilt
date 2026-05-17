@@ -1,0 +1,30 @@
+{
+  "id": "LilycoveCity_DepartmentStore_1F_EventScript_LotteryClerk",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc",
+    "sha1": "25a2cc6d86d1739788e578e0911145b04f3d372f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tdotimebasedevents\n\tgoto_if_ne VAR_POKELOT_PRIZE_ITEM, ITEM_NONE, LilycoveCity_DepartmentStore_1F_EventScript_GivePrizeFromEarlier\n\tgoto_if_set FLAG_DAILY_PICKED_LOTO_TICKET, LilycoveCity_DepartmentStore_1F_EventScript_ComeBackTomorrow\n\tmsgbox LilycoveCity_DepartmentStore_1F_Text_LotteryCornerDrawTicket, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, LilycoveCity_DepartmentStore_1F_EventScript_PleaseVisitAgain\n\tsetflag FLAG_DAILY_PICKED_LOTO_TICKET\n\tmessage LilycoveCity_DepartmentStore_1F_Text_PleasePickTicket\n\twaitmessage\n\tspecial RetrieveLotteryNumber\n\tcopyvar VAR_0x8008, VAR_RESULT\n\tspecial BufferLottoTicketNumber\n\tmsgbox LilycoveCity_DepartmentStore_1F_Text_TicketNumberIsXPleaseWait, MSGBOX_DEFAULT\n\tapplymovement LOCALID_LOTTERY_CLERK, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\tplayse SE_PC_ON\n\tspecial DoLotteryCornerComputerEffect\n\tspecial PickLotteryCornerTicket\n\tdelay 220\n\tspecial EndLotteryCornerComputerEffect\n\tdelay 10\n\tapplymovement LOCALID_LOTTERY_CLERK, Common_Movement_FacePlayer\n\twaitmovement 0\n\tgoto_if_eq VAR_0x8004, 0, LilycoveCity_DepartmentStore_1F_EventScript_NoMatch\n\tincrementgamestat GAME_STAT_WON_POKEMON_LOTTERY\n\tcall_if_eq VAR_0x8006, 0, LilycoveCity_DepartmentStore_1F_EventScript_TicketMatchPartyMon\n\tcall_if_eq VAR_0x8006, 1, LilycoveCity_DepartmentStore_1F_EventScript_TicketMatchPCMon\n\tbufferitemname STR_VAR_1, VAR_0x8005\n\tcall_if_eq VAR_0x8004, 1, LilycoveCity_DepartmentStore_1F_EventScript_TwoDigitMatch\n\tcall_if_eq VAR_0x8004, 2, LilycoveCity_DepartmentStore_1F_EventScript_ThreeDigitMatch\n\tcall_if_eq VAR_0x8004, 3, LilycoveCity_DepartmentStore_1F_EventScript_FourDigitMatch\n\tcall_if_eq VAR_0x8004, 4, LilycoveCity_DepartmentStore_1F_EventScript_FullMatch\n\tgiveitem VAR_0x8005\n\tgoto_if_eq VAR_RESULT, FALSE, LilycoveCity_DepartmentStore_1F_EventScript_RecordPrizeNoRoom\n\tspecial TryPutLotteryWinnerReportOnAir\n\tgoto LilycoveCity_DepartmentStore_1F_EventScript_PleaseVisitAgain2\n\tend"
+  },
+  "label": "LilycoveCity_DepartmentStore_1F_EventScript_LotteryClerk",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DAILY_PICKED_LOTO_TICKET"
+    ],
+    "vars": [
+      "VAR_POKELOT_PRIZE_ITEM",
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_NONE"
+    ]
+  }
+}

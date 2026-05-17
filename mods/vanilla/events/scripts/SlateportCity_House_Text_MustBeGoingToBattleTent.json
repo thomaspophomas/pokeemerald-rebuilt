@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_House_Text_MustBeGoingToBattleTent",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_House/scripts.inc",
+    "sha1": "021c615ffd2a342aedd8825c0148d7ded80baf8a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_House/scripts.inc",
+    "rawScript": ".string \"You're a TRAINER, aren't you?\\p\"\n\t.string \"Since you came to SLATEPORT CITY,\\n\"\n\t.string \"you must be going to the BATTLE TENT.$\""
+  },
+  "label": "SlateportCity_House_Text_MustBeGoingToBattleTent",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_House/scripts.inc",
+  "references": {}
+}

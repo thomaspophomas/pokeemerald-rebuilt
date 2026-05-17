@@ -1,0 +1,23 @@
+{
+  "id": "GabbyAndTy_EventScript_ShowAtRoute111_3",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gabby_and_ty.inc",
+    "sha1": "94bbdc1414879c9d53e3c5a88c9429ac40dbfdeb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gabby_and_ty.inc",
+    "rawScript": "clearflag FLAG_HIDE_ROUTE_111_GABBY_AND_TY_3\n\treturn"
+  },
+  "label": "GabbyAndTy_EventScript_ShowAtRoute111_3",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/gabby_and_ty.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_ROUTE_111_GABBY_AND_TY_3"
+    ]
+  }
+}

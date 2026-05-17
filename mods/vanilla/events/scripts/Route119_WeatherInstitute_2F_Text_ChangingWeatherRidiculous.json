@@ -1,0 +1,19 @@
+{
+  "id": "Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "sha1": "fb62e5a84003aa6247f1e7fe6ea409ec86ac92cc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "rawScript": ".string \"I've been researching rain for many\\n\"\n\t.string \"years, but it's ridiculous to think that\\l\"\n\t.string \"humans can freely change the weather.$\""
+  },
+  "label": "Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+  "references": {}
+}

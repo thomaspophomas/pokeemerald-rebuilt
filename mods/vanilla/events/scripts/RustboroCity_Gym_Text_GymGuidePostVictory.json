@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Gym_Text_GymGuidePostVictory",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Gym/scripts.inc",
+    "sha1": "e0aa9de4fed612674104e48c7646854400dcecde"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Gym/scripts.inc",
+    "rawScript": ".string \"Whoa! What a breathtaking victory!\\n\"\n\t.string \"My cheering must've worked!\\p\"\n\t.string \"Great!\\n\"\n\t.string \"Check your TRAINER CARD.\\p\"\n\t.string \"The STONE BADGE you got should be\\n\"\n\t.string \"properly recorded on it.\\p\"\n\t.string \"In other words\u2026\\p\"\n\t.string \"You've climbed the first step on\\n\"\n\t.string \"the stairs to the CHAMPIONSHIP!\\p\"\n\t.string \"That's got to feel awesome!$\""
+  },
+  "label": "RustboroCity_Gym_Text_GymGuidePostVictory",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Gym/scripts.inc",
+  "references": {}
+}

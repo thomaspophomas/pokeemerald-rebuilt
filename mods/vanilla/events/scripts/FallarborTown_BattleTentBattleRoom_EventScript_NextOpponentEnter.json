@@ -1,0 +1,23 @@
+{
+  "id": "FallarborTown_BattleTentBattleRoom_EventScript_NextOpponentEnter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+    "sha1": "8bbb2b24c65698ff0f5d4dcb7592d7ae122741de"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+    "rawScript": "tower_setopponent\n\taddobject LOCALID_FALLARBOR_TENT_BATTLE_OPPONENT\n\tapplymovement LOCALID_FALLARBOR_TENT_BATTLE_OPPONENT, FallarborTown_BattleTentBattleRoom_Movement_OpponentEnter\n\twaitmovement 0\n\tapplymovement LOCALID_FALLARBOR_TENT_BATTLE_ATTENDANT, FallarborTown_BattleTentBattleRoom_Movement_AttendantJump\n\tplayse SE_M_BELLY_DRUM\n\twaitse\n\twaitmovement 0\n\tmsgbox BattleFrontier_BattleArenaBattleRoom_Text_SetKOTourneyBegin, MSGBOX_DEFAULT\n\tbattletent_getopponentintro\n\tmsgbox gStringVar4, MSGBOX_DEFAULT\n\twaitmessage\n\tcall BattleFrontier_BattleArenaBattleRoom_EventScript_DoArenaBattle\n\tswitch VAR_RESULT\n\tcase 1, FallarborTown_BattleTentBattleRoom_EventScript_DefeatedOpponent\n\tapplymovement LOCALID_FALLARBOR_TENT_BATTLE_ATTENDANT, FallarborTown_BattleTentBattleRoom_Movement_AttendantJump\n\tplayse SE_M_SNORE\n\twaitse\n\twaitmovement 0\n\tfallarbortent_getopponentname\n\tmsgbox BattleFrontier_BattleArenaBattleRoom_Text_WinnerIsOpponent, MSGBOX_DEFAULT"
+  },
+  "label": "FallarborTown_BattleTentBattleRoom_EventScript_NextOpponentEnter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

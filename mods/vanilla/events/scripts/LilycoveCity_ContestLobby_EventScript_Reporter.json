@@ -1,0 +1,26 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_Reporter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/interview.inc",
+    "sha1": "bd1d5135ce2e319a18291aebafac5c4760b90500"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/interview.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_TEMP_2, LilycoveCity_ContestLobby_EventScript_AlreadyInterviewed\n\tsetvar VAR_0x8005, TVSHOW_BRAVO_TRAINER_POKEMON_PROFILE\n\tspecial InterviewBefore\n\tgoto_if_eq VAR_RESULT, TRUE, LilycoveCity_ContestLobby_EventScript_AlreadyInterviewed\n\tcopyvar VAR_0x8009, VAR_0x8006\n\tmsgbox LilycoveCity_ContestLobby_Text_InterviewRequest, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, LilycoveCity_ContestLobby_EventScript_AcceptInterview\n\tgoto_if_eq VAR_RESULT, NO, LilycoveCity_ContestLobby_EventScript_DeclineInterview\n\tend"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_Reporter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/interview.inc",
+  "references": {
+    "flags": [
+      "FLAG_TEMP_2"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

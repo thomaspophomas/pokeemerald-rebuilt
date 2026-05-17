@@ -1,0 +1,19 @@
+{
+  "id": "Route110_TrickHouseEntrance_Text_LeavingOnJourneyNote",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "sha1": "9367efc136143832c1697fbcc61fbb296269d396"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "rawScript": ".string \"There is a note affixed to the scroll\u2026\\p\"\n\t.string \"\u201cI am leaving on a journey.\\n\"\n\t.string \"Don't look for me. TRICK MASTER\u201d$\""
+  },
+  "label": "Route110_TrickHouseEntrance_Text_LeavingOnJourneyNote",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "sText_MysteryGiftVisitingTrainerArrived",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_trainer.inc",
+    "sha1": "4bc244e1cb3a7775bbe4fb775bfef3886b08d25d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_trainer.inc",
+    "rawScript": ".string \"Thank you for using the MYSTERY\\n\"\n\t.string \"GIFT System.\\p\"\n\t.string \"A TRAINER has arrived in\\n\"\n\t.string \"SOOTOPOLIS CITY looking for you.\\p\"\n\t.string \"We hope you will enjoy\\n\"\n\t.string \"battling the visiting TRAINER.\\p\"\n\t.string \"You may invite other TRAINERS by\\n\"\n\t.string \"entering other passwords.\\p\"\n\t.string \"Try looking for other passwords\\n\"\n\t.string \"that may work.$\""
+  },
+  "label": "sText_MysteryGiftVisitingTrainerArrived",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_trainer.inc",
+  "references": {}
+}

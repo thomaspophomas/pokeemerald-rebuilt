@@ -1,0 +1,24 @@
+{
+  "id": "ContestHall_EventScript_CreateAudience",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ContestHall/scripts.inc",
+    "sha1": "1975dda1f6df6ad0ef2b0d81c28afe4508469870"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ContestHall/scripts.inc",
+    "rawScript": "specialvar VAR_RESULT, IsWirelessContest\n\tgoto_if_eq VAR_RESULT, TRUE, ContestHall_EventScript_CreateWirelessContestAudience\n\tswitch VAR_CONTEST_TYPE\n\tcase CONTEST_TYPE_NPC_NORMAL, ContestHall_EventScript_CreateNormalContestAudience\n\tcase CONTEST_TYPE_NPC_SUPER, ContestHall_EventScript_CreateSuperContestAudience\n\tcase CONTEST_TYPE_NPC_HYPER, ContestHall_EventScript_CreateHyperContestAudience\n\tcase CONTEST_TYPE_NPC_MASTER, ContestHall_EventScript_CreateMasterContestAudience\n\tcase CONTEST_TYPE_LINK, ContestHall_EventScript_CreateMasterContestAudience\n\treturn"
+  },
+  "label": "ContestHall_EventScript_CreateAudience",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/ContestHall/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_CONTEST_TYPE",
+      "VAR_RESULT"
+    ]
+  }
+}

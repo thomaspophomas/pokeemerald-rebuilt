@@ -1,0 +1,24 @@
+{
+  "id": "FieryPath_EventScript_MoveScottToFallarbor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FieryPath/scripts.inc",
+    "sha1": "11242b6ad4afd2b69b6b55772c09b18cf102c261"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FieryPath/scripts.inc",
+    "rawScript": "setflag FLAG_HIDE_VERDANTURF_TOWN_SCOTT\n\tclearflag FLAG_HIDE_FALLARBOR_TOWN_BATTLE_TENT_SCOTT\n\treturn"
+  },
+  "label": "FieryPath_EventScript_MoveScottToFallarbor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FieryPath/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_FALLARBOR_TOWN_BATTLE_TENT_SCOTT",
+      "FLAG_HIDE_VERDANTURF_TOWN_SCOTT"
+    ]
+  }
+}

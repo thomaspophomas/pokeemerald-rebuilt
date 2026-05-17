@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_Gym_EventScript_LeftGymStatue",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "sha1": "ba2cd4a14af6a43f9221cd58f6a4a0299a51ce6c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_set FLAG_BADGE03_GET, MauvilleCity_Gym_EventScript_GymStatueCertified\n\tgoto MauvilleCity_Gym_EventScript_GymStatue\n\tend"
+  },
+  "label": "MauvilleCity_Gym_EventScript_LeftGymStatue",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_BADGE03_GET"
+    ]
+  }
+}

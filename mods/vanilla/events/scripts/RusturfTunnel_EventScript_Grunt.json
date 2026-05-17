@@ -1,0 +1,35 @@
+{
+  "id": "RusturfTunnel_EventScript_Grunt",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/scripts.inc",
+    "sha1": "76035185b0aabddf11657305417168db4c1bb93d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RusturfTunnel/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tplaybgm MUS_ENCOUNTER_AQUA, FALSE\n\tmsgbox RusturfTunnel_Text_GruntIntro, MSGBOX_DEFAULT\n\ttrainerbattle_no_intro TRAINER_GRUNT_RUSTURF_TUNNEL, RusturfTunnel_Text_GruntDefeat\n\tmsgbox RusturfTunnel_Text_GruntTakePackage, MSGBOX_DEFAULT\n\tgiveitem ITEM_DEVON_GOODS\n\tclosemessage\n\tapplymovement LOCALID_PLAYER, RusturfTunnel_Movement_PushPlayerAsideForGrunt\n\tapplymovement LOCALID_RUSTURF_TUNNEL_GRUNT, RusturfTunnel_Movement_GruntEscape\n\twaitmovement 0\n\tremoveobject LOCALID_RUSTURF_TUNNEL_GRUNT\n\tdelay 50\n\taddobject LOCALID_RUSTURF_TUNNEL_BRINEY\n\tapplymovement LOCALID_RUSTURF_TUNNEL_BRINEY, RusturfTunnel_Movement_BrineyApproachPeeko1\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, RusturfTunnel_Movement_PlayerMoveAsideForBriney\n\tapplymovement LOCALID_RUSTURF_TUNNEL_BRINEY, RusturfTunnel_Movement_BrineyApproachPeeko2\n\twaitmovement 0\n\tmsgbox RusturfTunnel_Text_PeekoGladToSeeYouSafe, MSGBOX_DEFAULT\n\tapplymovement LOCALID_RUSTURF_TUNNEL_BRINEY, Common_Movement_FacePlayer\n\twaitmovement 0\n\tmessage RusturfTunnel_Text_ThankYouLetsGoHomePeeko\n\twaitmessage\n\twaitse\n\tplaymoncry SPECIES_WINGULL, CRY_MODE_NORMAL\n\twaitbuttonpress\n\twaitmoncry\n\tclosemessage\n\tapplymovement LOCALID_PLAYER, RusturfTunnel_Movement_PlayerWatchBrineyExit\n\tapplymovement LOCALID_RUSTURF_TUNNEL_BRINEY, RusturfTunnel_Movement_BrineyExit\n\tapplymovement LOCALID_RUSTURF_TUNNEL_PEEKO, RusturfTunnel_Movement_PeekoExit\n\twaitmovement 0\n\tremoveobject LOCALID_RUSTURF_TUNNEL_BRINEY\n\tremoveobject LOCALID_RUSTURF_TUNNEL_PEEKO\n\tclearflag FLAG_DEVON_GOODS_STOLEN\n\tsetflag FLAG_RECOVERED_DEVON_GOODS\n\tsetvar VAR_RUSTBORO_CITY_STATE, 4\n\tsetvar VAR_BRINEY_HOUSE_STATE, 1\n\tsetflag FLAG_HIDE_ROUTE_116_MR_BRINEY\n\trelease\n\tend"
+  },
+  "label": "RusturfTunnel_EventScript_Grunt",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RusturfTunnel/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEVON_GOODS_STOLEN",
+      "FLAG_HIDE_ROUTE_116_MR_BRINEY",
+      "FLAG_RECOVERED_DEVON_GOODS"
+    ],
+    "vars": [
+      "VAR_BRINEY_HOUSE_STATE",
+      "VAR_RUSTBORO_CITY_STATE"
+    ],
+    "items": [
+      "ITEM_DEVON_GOODS"
+    ],
+    "trainers": [
+      "TRAINER_GRUNT_RUSTURF_TUNNEL"
+    ]
+  }
+}

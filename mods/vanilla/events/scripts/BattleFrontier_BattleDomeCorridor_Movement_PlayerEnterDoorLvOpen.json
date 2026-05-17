@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomeCorridor_Movement_PlayerEnterDoorLvOpen",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeCorridor/scripts.inc",
+    "sha1": "17edbc6ae328061934af2e7c6a68048fef30b46a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeCorridor/scripts.inc",
+    "rawScript": "walk_up\n\twalk_up\n\tset_invisible\n\tstep_end"
+  },
+  "label": "BattleFrontier_BattleDomeCorridor_Movement_PlayerEnterDoorLvOpen",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeCorridor/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgWoods_Movement_DevonResearcherLookAround",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/scripts.inc",
+    "sha1": "a7a3b49731f97088b328145805430d4429326ec8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgWoods/scripts.inc",
+    "rawScript": "face_up\n\tdelay_16\n\tdelay_4\n\tface_right\n\tdelay_16\n\tdelay_8\n\tface_left\n\tdelay_16\n\tdelay_8\n\tface_down\n\tdelay_16\n\tface_right\n\tdelay_16\n\tdelay_8\n\tface_up\n\tdelay_16\n\tstep_end"
+  },
+  "label": "PetalburgWoods_Movement_DevonResearcherLookAround",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/PetalburgWoods/scripts.inc",
+  "references": {}
+}

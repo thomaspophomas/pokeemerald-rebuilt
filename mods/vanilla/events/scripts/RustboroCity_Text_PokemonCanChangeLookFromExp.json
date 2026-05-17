@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Text_PokemonCanChangeLookFromExp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": ".string \"If a POK\u00e9MON gains experience in\\n\"\n\t.string \"battles, it can sometimes change in\\l\"\n\t.string \"the way it looks.$\""
+  },
+  "label": "RustboroCity_Text_PokemonCanChangeLookFromExp",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

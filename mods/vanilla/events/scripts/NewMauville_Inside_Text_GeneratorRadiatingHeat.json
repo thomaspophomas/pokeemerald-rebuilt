@@ -1,0 +1,19 @@
+{
+  "id": "NewMauville_Inside_Text_GeneratorRadiatingHeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NewMauville_Inside/scripts.inc",
+    "sha1": "e55cd05ab8dbd71a8b15a7cf2c2dc966549467fe"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NewMauville_Inside/scripts.inc",
+    "rawScript": ".string \"The generator is radiating heat that\\n\"\n\t.string \"can be felt even at a distance.\\p\"\n\t.string \"It looks like it should be turned off\\n\"\n\t.string \"as soon as possible.$\""
+  },
+  "label": "NewMauville_Inside_Text_GeneratorRadiatingHeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/NewMauville_Inside/scripts.inc",
+  "references": {}
+}

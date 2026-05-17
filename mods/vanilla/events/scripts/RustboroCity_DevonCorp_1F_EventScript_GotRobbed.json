@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_DevonCorp_1F_EventScript_GotRobbed",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_1F/scripts.inc",
+    "sha1": "c37d7b38d1160c2692286fc6de96377169c9e8d1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_1F/scripts.inc",
+    "rawScript": "msgbox RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "RustboroCity_DevonCorp_1F_EventScript_GotRobbed",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_PokemonCenter_1F_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "9809ed86adf690116a3ed12f4cbacd0ff01d19b9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": "setrespawn HEAL_LOCATION_SOOTOPOLIS_CITY\n\tend"
+  },
+  "label": "SootopolisCity_PokemonCenter_1F_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

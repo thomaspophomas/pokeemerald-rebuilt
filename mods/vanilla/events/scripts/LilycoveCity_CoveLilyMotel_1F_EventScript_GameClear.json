@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_CoveLilyMotel_1F_EventScript_GameClear",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+    "sha1": "6fbfa2a2632f8e86026cc0a8c8fa9a98046f56ac"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+    "rawScript": "msgbox LilycoveCity_CoveLilyMotel_1F_Text_HouseSittingMonCaughtBurglar, MSGBOX_DEFAULT\n\tapplymovement LOCALID_MOTEL_OWNER, Common_Movement_FacePlayer\n\twaitmovement 0\n\tmsgbox LilycoveCity_CoveLilyMotel_1F_Text_BetterGetWorkingOnGuestsDinner, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_MOTEL_OWNER, Common_Movement_FaceOriginalDirection\n\twaitmovement 0\n\treleaseall\n\tend"
+  },
+  "label": "LilycoveCity_CoveLilyMotel_1F_EventScript_GameClear",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+  "references": {}
+}

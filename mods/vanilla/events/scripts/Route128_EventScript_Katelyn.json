@@ -1,0 +1,26 @@
+{
+  "id": "Route128_EventScript_Katelyn",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route128/scripts.inc",
+    "sha1": "8c3eb5fe541a802a44ec8805e051fe2de0e552f6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route128/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_KATELYN_1, Route128_Text_KatelynIntro, Route128_Text_KatelynDefeat, Route128_EventScript_RegisterKatelyn\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, Route128_EventScript_RematchKatelyn\n\tmsgbox Route128_Text_KatelynPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route128_EventScript_Katelyn",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route128/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_KATELYN_1"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F_Text_WhyWouldMagmaStealRocketFuel",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "rawScript": ".string \"Why would TEAM MAGMA want to steal\\n\"\n\t.string \"our rocket fuel in the first place?$\""
+  },
+  "label": "MossdeepCity_SpaceCenter_2F_Text_WhyWouldMagmaStealRocketFuel",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+  "references": {}
+}

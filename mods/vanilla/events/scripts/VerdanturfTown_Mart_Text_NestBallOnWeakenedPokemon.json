@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_Mart_Text_NestBallOnWeakenedPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_Mart/scripts.inc",
+    "sha1": "815f118fd23cab33023fd266a93950041afd0a06"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_Mart/scripts.inc",
+    "rawScript": ".string \"The NEST BALL works better on\\n\"\n\t.string \"weakened POK\u00e9MON.\\p\"\n\t.string \"VERDANTURF is the only place you can\\n\"\n\t.string \"buy it.$\""
+  },
+  "label": "VerdanturfTown_Mart_Text_NestBallOnWeakenedPokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_Mart/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "VerdanturfTown_BattleTentBattleRoom_OnFrame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+    "sha1": "ab3b693d78c01bf41de27c238af8f5c28d91cffd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+    "rawScript": "map_script_2 VAR_TEMP_0, 0, VerdanturfTown_BattleTentBattleRoom_EventScript_EnterRoom\n\t.2byte 0"
+  },
+  "label": "VerdanturfTown_BattleTentBattleRoom_OnFrame",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0"
+    ]
+  }
+}

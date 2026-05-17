@@ -1,0 +1,23 @@
+{
+  "id": "SSTidalLowerDeck_EventScript_Leonard",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalLowerDeck/scripts.inc",
+    "sha1": "da5c83687e72d620633c70321ab42f96f4e4f877"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalLowerDeck/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_LEONARD, SSTidalLowerDeck_Text_LeonardIntro, SSTidalLowerDeck_Text_LeonardDefeat\n\tmsgbox SSTidalLowerDeck_Text_LeonardPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "SSTidalLowerDeck_EventScript_Leonard",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SSTidalLowerDeck/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_LEONARD"
+    ]
+  }
+}

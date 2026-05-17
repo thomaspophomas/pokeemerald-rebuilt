@@ -1,0 +1,23 @@
+{
+  "id": "Route111_EventScript_RegisterDusty",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": "special PlayerFaceTrainerAfterBattle\n\twaitmovement 0\n\tmsgbox Route111_Text_DustyRegister, MSGBOX_DEFAULT\n\tregister_matchcall TRAINER_DUSTY_1\n\trelease\n\tend"
+  },
+  "label": "Route111_EventScript_RegisterDusty",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_DUSTY_1"
+    ]
+  }
+}

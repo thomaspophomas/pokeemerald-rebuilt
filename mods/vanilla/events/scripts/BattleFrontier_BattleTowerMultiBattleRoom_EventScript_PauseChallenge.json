@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiBattleRoom_EventScript_PauseChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+    "sha1": "71e71dc7e048f3a27e89d0ae41c736d25233e068"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+    "rawScript": "message BattleFrontier_BattleTowerBattleRoom_Text_SavingPleaseWait\n\twaitmessage\n\ttower_save CHALLENGE_STATUS_PAUSED\n\tplayse SE_SAVE\n\twaitse\n\tfadescreen 1\n\tfrontier_reset\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerMultiBattleRoom_EventScript_PauseChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+  "references": {}
+}

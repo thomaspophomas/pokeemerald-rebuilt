@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Text_CompletedDexChoosePokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": ".string \"PROF. BIRCH: Oh, {PLAYER}{KUN}!\\n\"\n\t.string \"Let's have a look at your POK\u00e9DEX.\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\n\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"Yes, there's no doubt about it.\\p\"\n\t.string \"You really have completed the HOENN\\n\"\n\t.string \"region's POK\u00e9DEX.\\p\"\n\t.string \"That's more than just impressive.\\p\"\n\t.string \"I have a gift for you.\\p\"\n\t.string \"Consider it my show of appreciation\\n\"\n\t.string \"for the fantastic work you've done.\\p\"\n\t.string \"My gift is a rare POK\u00e9MON only found\\n\"\n\t.string \"in another region!\\p\"\n\t.string \"You can have any one of these\\n\"\n\t.string \"three POK\u00e9MON!$\""
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Text_CompletedDexChoosePokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

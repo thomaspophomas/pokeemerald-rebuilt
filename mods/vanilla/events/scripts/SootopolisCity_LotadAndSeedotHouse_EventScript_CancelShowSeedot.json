@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_LotadAndSeedotHouse_EventScript_CancelShowSeedot",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+    "sha1": "fc092cb2d8bfc7874143add20c2a81120dbbacc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+    "rawScript": "msgbox SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigSeedot, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "SootopolisCity_LotadAndSeedotHouse_EventScript_CancelShowSeedot",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+  "references": {}
+}

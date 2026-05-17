@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Gym_EventScript_NoLightChange",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Gym/scripts.inc",
+    "sha1": "595ba5581d9eb698f4762f9b34da6e4f6c2a7a55"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Gym/scripts.inc",
+    "rawScript": "return\n\n@ NOTE: A little confusingly, a larger animateflash param value is a smaller flash radius"
+  },
+  "label": "DewfordTown_Gym_EventScript_NoLightChange",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DewfordTown_Gym/scripts.inc",
+  "references": {}
+}

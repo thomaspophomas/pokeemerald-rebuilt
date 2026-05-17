@@ -1,0 +1,26 @@
+{
+  "id": "FortreeCity_House4_EventScript_Boy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_House4/scripts.inc",
+    "sha1": "f38bb5dba9859d7e96965e3b161795e659e29db9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_House4/scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_set FLAG_RECEIVED_MENTAL_HERB, FortreeCity_House4_EventScript_ReceivedMentalHerb\n\tgoto_if_set FLAG_WINGULL_DELIVERED_MAIL, FortreeCity_House4_EventScript_WingullReturned\n\tgoto_if_set FLAG_WINGULL_SENT_ON_ERRAND, FortreeCity_House4_EventScript_WingullOnErrand\n\tmsgbox FortreeCity_House4_Text_GoBirdPokemon, MSGBOX_DEFAULT\n\tclosemessage\n\tsetflag FLAG_WINGULL_SENT_ON_ERRAND\n\tclearflag FLAG_HIDE_MOSSDEEP_CITY_HOUSE_2_WINGULL\n\tapplymovement LOCALID_FORTREE_HOUSE_WINGULL, FortreeCity_House4_Movement_WingullExit\n\twaitmovement 0\n\tremoveobject LOCALID_FORTREE_HOUSE_WINGULL\n\treleaseall\n\tend"
+  },
+  "label": "FortreeCity_House4_EventScript_Boy",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FortreeCity_House4/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_MOSSDEEP_CITY_HOUSE_2_WINGULL",
+      "FLAG_RECEIVED_MENTAL_HERB",
+      "FLAG_WINGULL_DELIVERED_MAIL",
+      "FLAG_WINGULL_SENT_ON_ERRAND"
+    ]
+  }
+}

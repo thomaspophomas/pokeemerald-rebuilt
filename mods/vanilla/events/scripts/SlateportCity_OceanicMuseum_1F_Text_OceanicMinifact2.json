@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "sha1": "7a1e00c78bbfbd0fbd6eb59a84a4d4e7114e4261"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "rawScript": ".string \"\u201cOCEANIC MINIFACT 2\\n\"\n\t.string \"Why is the sea salty?\\p\"\n\t.string \"\u201cSeawater contains dissolved salt in\\n\"\n\t.string \"the form of sodium and chlorine ions.\\p\"\n\t.string \"\u201cThese ions leech out of rocks\\n\"\n\t.string \"and are carried out to sea by rain.\\p\"\n\t.string \"\u201cThe concentration of dissolved salt\\n\"\n\t.string \"makes the sea salty.\u201d$\""
+  },
+  "label": "SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact2",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+  "references": {}
+}

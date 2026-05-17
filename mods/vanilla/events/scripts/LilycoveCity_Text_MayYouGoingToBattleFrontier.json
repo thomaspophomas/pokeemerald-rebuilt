@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_MayYouGoingToBattleFrontier",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"{PLAYER}{KUN}, what are you going to do?\\p\"\n\t.string \"Are you taking the BATTLE FRONTIER\\n\"\n\t.string \"challenge?\\p\"\n\t.string \"Or, are you going to complete your\\n\"\n\t.string \"POK\u00e9DEX?\\p\"\n\t.string \"I might've lost to you in battling,\\n\"\n\t.string \"but I'll finish my POK\u00e9DEX before you!\\p\"\n\t.string \"See you!$\""
+  },
+  "label": "LilycoveCity_Text_MayYouGoingToBattleFrontier",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

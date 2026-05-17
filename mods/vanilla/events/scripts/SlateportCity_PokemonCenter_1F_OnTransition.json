@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_PokemonCenter_1F_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "c0dd8403baae500cd386226bc6b94ee6359cdc91"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": "setrespawn HEAL_LOCATION_SLATEPORT_CITY\n\tcall Common_EventScript_UpdateBrineyLocation\n\tend"
+  },
+  "label": "SlateportCity_PokemonCenter_1F_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/SlateportCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

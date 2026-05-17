@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonCenter_1F_EventScript_MonEnjoyPokeblock",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/lilycove_lady.inc",
+    "sha1": "2c2864b913cc532d514481fce3a5e381d5af5f83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/lilycove_lady.inc",
+    "rawScript": "applymovement LOCALID_LILYCOVE_LADYS_MON, LilycoveCity_PokemonCenter_1F_Movement_MonJump\n\twaitmovement 0\n\tdelay 60"
+  },
+  "label": "LilycoveCity_PokemonCenter_1F_EventScript_MonEnjoyPokeblock",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/lilycove_lady.inc",
+  "references": {}
+}

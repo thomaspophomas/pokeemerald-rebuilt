@@ -1,0 +1,26 @@
+{
+  "id": "RustboroCity_CuttersHouse_EventScript_Cutter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_CuttersHouse/scripts.inc",
+    "sha1": "0cff426e47a716cd6d3863a87b4d99ec7a72a0b9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_CuttersHouse/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_HM_CUT, RustboroCity_CuttersHouse_EventScript_ExplainCut\n\tmsgbox RustboroCity_CuttersHouse_Text_YouCanPutThisHMToGoodUse, MSGBOX_DEFAULT\n\tgiveitem ITEM_HM_CUT\n\tsetflag FLAG_RECEIVED_HM_CUT\n\tmsgbox RustboroCity_CuttersHouse_Text_ExplainCut, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "RustboroCity_CuttersHouse_EventScript_Cutter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_CuttersHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_HM_CUT"
+    ],
+    "items": [
+      "ITEM_HM_CUT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Movement_ScottExitEast",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/scripts.inc",
+    "sha1": "33f0f7f83a475484aaca395542c6bd65a6f2dd45"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity/scripts.inc",
+    "rawScript": "walk_down\n\twalk_left\n\twalk_left\n\twalk_left\n\twalk_left\n\twalk_left\n\twalk_left\n\twalk_left\n\twalk_left\n\twalk_left\n\tstep_end"
+  },
+  "label": "MossdeepCity_Movement_ScottExitEast",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/MossdeepCity/scripts.inc",
+  "references": {}
+}

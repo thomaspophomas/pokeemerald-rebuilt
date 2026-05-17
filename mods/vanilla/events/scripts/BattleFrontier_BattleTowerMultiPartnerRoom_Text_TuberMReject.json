@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberMReject",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "sha1": "4e7b748d8d3e33414d869ae43d136c857e9955fc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "rawScript": ".string \"My POK\u00e9MON are tough for sure\u2026\\n\"\n\t.string \"It's too bad you don't want to team up.$\""
+  },
+  "label": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberMReject",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+  "references": {}
+}

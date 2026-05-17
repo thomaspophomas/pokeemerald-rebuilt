@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_DecorationShop_Text_BuyingDeskForDolls",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_DecorationShop/scripts.inc",
+    "sha1": "9052b61ce40e18da90e9f9a9ca5351634902ee39"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_DecorationShop/scripts.inc",
+    "rawScript": ".string \"I'm buying a pretty desk and I'm\\n\"\n\t.string \"putting my cute DOLLS on it.\\p\"\n\t.string \"If I don't, when I decorate my\\n\"\n\t.string \"SECRET BASE, my DOLLS will get\\l\"\n\t.string \"dirty or poked with splinters.$\""
+  },
+  "label": "FortreeCity_DecorationShop_Text_BuyingDeskForDolls",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_DecorationShop/scripts.inc",
+  "references": {}
+}

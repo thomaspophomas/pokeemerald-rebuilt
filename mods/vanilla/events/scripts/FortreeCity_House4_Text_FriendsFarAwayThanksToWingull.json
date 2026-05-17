@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_House4_Text_FriendsFarAwayThanksToWingull",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_House4/scripts.inc",
+    "sha1": "f38bb5dba9859d7e96965e3b161795e659e29db9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_House4/scripts.inc",
+    "rawScript": ".string \"Thanks to my WINGULL, I have friends\\n\"\n\t.string \"who live far away.$\""
+  },
+  "label": "FortreeCity_House4_Text_FriendsFarAwayThanksToWingull",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_House4/scripts.inc",
+  "references": {}
+}

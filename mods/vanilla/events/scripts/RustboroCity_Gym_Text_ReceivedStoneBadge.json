@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Gym_Text_ReceivedStoneBadge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Gym/scripts.inc",
+    "sha1": "e0aa9de4fed612674104e48c7646854400dcecde"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Gym/scripts.inc",
+    "rawScript": ".string \"{PLAYER} received the STONE BADGE\\n\"\n\t.string \"from ROXANNE.$\""
+  },
+  "label": "RustboroCity_Gym_Text_ReceivedStoneBadge",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Gym/scripts.inc",
+  "references": {}
+}

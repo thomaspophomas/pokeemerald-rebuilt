@@ -1,0 +1,23 @@
+{
+  "id": "PetalburgCity_Gym_EventScript_GymGuide",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_GymGuidePostVictory\n\tmsgbox PetalburgCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "PetalburgCity_Gym_EventScript_GymGuide",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_PETALBURG_GYM"
+    ]
+  }
+}

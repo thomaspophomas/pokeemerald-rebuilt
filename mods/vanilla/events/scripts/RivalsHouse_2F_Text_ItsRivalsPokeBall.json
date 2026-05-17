@@ -1,0 +1,19 @@
+{
+  "id": "RivalsHouse_2F_Text_ItsRivalsPokeBall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "sha1": "e014a444dcf389c78773768633900402b1862edb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "rawScript": ".string \"It's {RIVAL}'s POK\u00e9 BALL!\\p\"\n\t.string \"Better leave it right where it is.$\""
+  },
+  "label": "RivalsHouse_2F_Text_ItsRivalsPokeBall",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RustboroCity_Flat2_2F_EventScript_NinjaBoy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Flat2_2F/scripts.inc",
+    "sha1": "3f278233f807a1de34242578a0c22234655ecef0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Flat2_2F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_PREMIER_BALL_RUSTBORO, RustboroCity_Flat2_2F_EventScript_GavePremierBall\n\tmsgbox RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt, MSGBOX_DEFAULT\n\tgiveitem ITEM_PREMIER_BALL\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_RECEIVED_PREMIER_BALL_RUSTBORO\n\trelease\n\tend"
+  },
+  "label": "RustboroCity_Flat2_2F_EventScript_NinjaBoy",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_Flat2_2F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_PREMIER_BALL_RUSTBORO"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_PREMIER_BALL"
+    ]
+  }
+}

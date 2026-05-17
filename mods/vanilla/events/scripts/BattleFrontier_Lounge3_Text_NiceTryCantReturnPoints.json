@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge3_Text_NiceTryCantReturnPoints",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "sha1": "52169856e2442e0e7ad660050a45dce1a1b2405a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "rawScript": ".string \"Oh, it's you\u2026\\n\"\n\t.string \"Nice try\u2026\\p\"\n\t.string \"I hate to break it to you, but I can't\\n\"\n\t.string \"return your Battle Points\u2026\\p\"\n\t.string \"I guess we'll have to let it motivate\\n\"\n\t.string \"us to try harder next time!$\""
+  },
+  "label": "BattleFrontier_Lounge3_Text_NiceTryCantReturnPoints",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+  "references": {}
+}

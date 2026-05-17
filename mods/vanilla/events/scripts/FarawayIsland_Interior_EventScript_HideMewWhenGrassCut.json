@@ -1,0 +1,23 @@
+{
+  "id": "FarawayIsland_Interior_EventScript_HideMewWhenGrassCut",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FarawayIsland_Interior/scripts.inc",
+    "sha1": "748f9f309b0dbfe85cb833f24aeceac469102437"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FarawayIsland_Interior/scripts.inc",
+    "rawScript": "lockall\n\tfadescreenswapbuffers FADE_TO_BLACK\n\tsetflag FLAG_HIDE_MEW\n\tremoveobject LOCALID_FARAWAY_ISLAND_MEW\n\tfadescreenswapbuffers FADE_FROM_BLACK\n\tmsgbox FarawayIsland_Interior_Text_TheFeelingOfBeingWatchedFaded, MSGBOX_DEFAULT\n\tclosemessage\n\treleaseall\n\tend"
+  },
+  "label": "FarawayIsland_Interior_EventScript_HideMewWhenGrassCut",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FarawayIsland_Interior/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_MEW"
+    ]
+  }
+}

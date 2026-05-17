@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_StevensHouse_EventScript_RockDisplay",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "sha1": "13a709347ca2c2863ef04de01b7d51d28b9d736e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "rawScript": "msgbox MossdeepCity_StevensHouse_Text_CollectionOfRareRocks, MSGBOX_SIGN\n\tend"
+  },
+  "label": "MossdeepCity_StevensHouse_EventScript_RockDisplay",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+  "references": {}
+}

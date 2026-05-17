@@ -1,0 +1,19 @@
+{
+  "id": "Route104_Text_TrainerTipsDoubleBattles",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104/scripts.inc",
+    "sha1": "10d25047426798be70cda2d9503387bbf8458d85"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104/scripts.inc",
+    "rawScript": ".string \"TRAINER TIPS\\p\"\n\t.string \"In the HOENN region there are pairs\\n\"\n\t.string \"of TRAINERS who challenge others\\l\"\n\t.string \"for 2-on-2 POK\u00e9MON battles called\\l\"\n\t.string \"DOUBLE BATTLES.\\p\"\n\t.string \"In a DOUBLE BATTLE, the TRAINER must\\n\"\n\t.string \"send out two POK\u00e9MON, the one at the\\l\"\n\t.string \"left of the list and the top one.\\l\"\n\t.string \"Watch how POK\u00e9MON are lined up.$\""
+  },
+  "label": "Route104_Text_TrainerTipsDoubleBattles",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route104/scripts.inc",
+  "references": {}
+}

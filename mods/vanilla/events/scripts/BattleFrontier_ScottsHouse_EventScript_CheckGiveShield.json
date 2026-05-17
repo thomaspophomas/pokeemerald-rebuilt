@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_ScottsHouse_EventScript_CheckGiveShield",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "sha1": "c30df9e905f6d4b9d9e1eaf4d4fccf30db88e083"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "rawScript": "goto_if_unset FLAG_RECEIVED_SILVER_SHIELD, BattleFrontier_ScottsHouse_EventScript_CheckGiveSilverShield\n\tgoto_if_unset FLAG_RECEIVED_GOLD_SHIELD, BattleFrontier_ScottsHouse_EventScript_CheckGiveGoldShield\n\tgoto BattleFrontier_ScottsHouse_EventScript_RandomComment\n\tend"
+  },
+  "label": "BattleFrontier_ScottsHouse_EventScript_CheckGiveShield",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_GOLD_SHIELD",
+      "FLAG_RECEIVED_SILVER_SHIELD"
+    ]
+  }
+}

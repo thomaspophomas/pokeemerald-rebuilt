@@ -1,0 +1,23 @@
+{
+  "id": "NavelRock_Bottom_EventScript_TryRemoveLugia",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NavelRock_Bottom/scripts.inc",
+    "sha1": "7102a99e7846229610a261d704347488358f9702"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NavelRock_Bottom/scripts.inc",
+    "rawScript": "specialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn\n\tremoveobject LOCALID_NAVEL_ROCK_LUGIA\n\treturn"
+  },
+  "label": "NavelRock_Bottom_EventScript_TryRemoveLugia",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/NavelRock_Bottom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

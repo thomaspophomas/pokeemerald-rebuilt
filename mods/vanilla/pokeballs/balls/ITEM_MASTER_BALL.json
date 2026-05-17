@@ -1,0 +1,39 @@
+{
+  "id": "ITEM_MASTER_BALL",
+  "domain": "pokeballs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/mod/pokeball.c",
+    "sha1": "33d25b17be0efe4ad368348c596e2ba324574b45"
+  },
+  "legacy": {
+    "kind": "pokeball_definition",
+    "sourcePath": "src/mod/pokeball.c",
+    "rawC": "{ \"vanilla:master_ball\",  ITEM_MASTER_BALL,  BALL_MASTER,  POKEBALL_CATCH_MODIFIER_MASTER, 0, NULL, BattleScript_BallThrow,       NULL }",
+    "generatedKey": "vanilla:master_ball"
+  },
+  "key": "vanilla:master_ball",
+  "itemId": "ITEM_MASTER_BALL",
+  "ballId": "BALL_MASTER",
+  "catchModifier": "POKEBALL_CATCH_MODIFIER_MASTER",
+  "catchModifierHook": null,
+  "battleScript": "BattleScript_BallThrow",
+  "commitHook": null,
+  "flags": "0",
+  "itemIcon": "gItemIcon_MasterBall",
+  "itemPalette": "gItemIconPalette_MasterBall",
+  "throwSprite": {
+    "sheet": "gBallGfx_Master",
+    "palette": "gBallPal_Master",
+    "tileTag": "GFX_TAG_MASTER_BALL",
+    "paletteTag": "GFX_TAG_MASTER_BALL",
+    "templateTable": "gBallSpriteTemplates"
+  },
+  "openAnimation": {
+    "particleSheet": "gBattleAnimSpriteGfx_Particles",
+    "particlePalette": "gBattleAnimSpritePal_CircleImpact",
+    "particleTag": "TAG_PARTICLES_MASTERBALL",
+    "animNum": "1",
+    "taskFunc": "MasterBallOpenParticleAnimation"
+  }
+}

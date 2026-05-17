@@ -1,0 +1,19 @@
+{
+  "id": "RusturfTunnel_EventScript_WandaAndBoyfriendExit",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/scripts.inc",
+    "sha1": "76035185b0aabddf11657305417168db4c1bb93d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RusturfTunnel/scripts.inc",
+    "rawScript": "applymovement LOCALID_PLAYER, RusturfTunnel_Movement_PlayerWatchWandaExit\n\tapplymovement LOCALID_RUSTURF_TUNNEL_WANDA, RusturfTunnel_Movement_WandaExit\n\tapplymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_WandasBoyfriendExit\n\twaitmovement 0\n\treturn"
+  },
+  "label": "RusturfTunnel_EventScript_WandaAndBoyfriendExit",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RusturfTunnel/scripts.inc",
+  "references": {}
+}

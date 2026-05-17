@@ -1,0 +1,23 @@
+{
+  "id": "BerryBlender_EventScript_SpawnLinkPartners",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": "fadescreen FADE_TO_BLACK\n\tspecialvar VAR_RESULT, GetLinkPartnerNames\n\tcopyvar VAR_0x8008, VAR_RESULT\n\tcopyvar VAR_0x8004, VAR_0x8008\n\tspecial SpawnLinkPartnerObjectEvent\n\tgoto BerryBlender_EventScript_LinkPlayersArrived\n\tend"
+  },
+  "label": "BerryBlender_EventScript_SpawnLinkPartners",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

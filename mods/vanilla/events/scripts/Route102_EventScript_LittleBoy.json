@@ -1,0 +1,19 @@
+{
+  "id": "Route102_EventScript_LittleBoy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route102/scripts.inc",
+    "sha1": "17c4403137bc871caf964a4fed8e5efc79316b34"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route102/scripts.inc",
+    "rawScript": "msgbox Route102_Text_ImNotVeryTall, MSGBOX_NPC\n\tend"
+  },
+  "label": "Route102_EventScript_LittleBoy",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route102/scripts.inc",
+  "references": {}
+}

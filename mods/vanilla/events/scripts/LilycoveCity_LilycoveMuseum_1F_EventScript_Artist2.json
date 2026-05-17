@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_1F_EventScript_Artist2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+    "sha1": "9b7ed7bb941e379aabaa59bf0da8ffe089df98ba"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmsgbox LilycoveCity_LilycoveMuseum_1F_Text_AimToSeeGreatPaintings, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_MUSEUM_1F_ARTIST_2, Common_Movement_FaceOriginalDirection\n\twaitmovement 0\n\trelease\n\tend"
+  },
+  "label": "LilycoveCity_LilycoveMuseum_1F_EventScript_Artist2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+  "references": {}
+}

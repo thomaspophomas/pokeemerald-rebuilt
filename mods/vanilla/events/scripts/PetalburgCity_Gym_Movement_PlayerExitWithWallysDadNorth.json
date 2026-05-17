@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Movement_PlayerExitWithWallysDadNorth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": "delay_16\n\twalk_down\n\twalk_down\n\twalk_left\n\twalk_left\n\twalk_down\n\twalk_down\n\tstep_end"
+  },
+  "label": "PetalburgCity_Gym_Movement_PlayerExitWithWallysDadNorth",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Hall_Text_WellBeTrendDuo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Hall/scripts.inc",
+    "sha1": "78185d3058996bff2579b5133faf680c4df6865f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Hall/scripts.inc",
+    "rawScript": ".string \"Spot on, my friend!\\p\"\n\t.string \"We shall be the\\n\"\n\t.string \"\u201c{STR_VAR_1}\u201d DUO!\\p\"\n\t.string \"Isn't that a ripe image?\\n\"\n\t.string \"Hahahah!$\""
+  },
+  "label": "DewfordTown_Hall_Text_WellBeTrendDuo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown_Hall/scripts.inc",
+  "references": {}
+}

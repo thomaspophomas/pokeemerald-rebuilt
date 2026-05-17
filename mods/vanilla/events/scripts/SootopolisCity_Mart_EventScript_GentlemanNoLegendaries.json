@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Mart_EventScript_GentlemanNoLegendaries",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Mart/scripts.inc",
+    "sha1": "09107a068ba7ecb271ba83663a6a1a20f47464ae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_Mart/scripts.inc",
+    "rawScript": "msgbox SootopolisCity_Mart_Text_FullRestoreItemOfDreams, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "SootopolisCity_Mart_EventScript_GentlemanNoLegendaries",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity_Mart/scripts.inc",
+  "references": {}
+}

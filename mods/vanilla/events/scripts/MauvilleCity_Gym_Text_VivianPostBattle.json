@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Gym_Text_VivianPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "sha1": "ba2cd4a14af6a43f9221cd58f6a4a0299a51ce6c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "rawScript": ".string \"I've heard that MAUVILLE was founded\\n\"\n\t.string \"by WATTSON.\\p\"\n\t.string \"He was a TRAINER long before we\\n\"\n\t.string \"became TRAINERS.\\l\"\n\t.string \"He must know all sorts of things!$\""
+  },
+  "label": "MauvilleCity_Gym_Text_VivianPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_Gym/scripts.inc",
+  "references": {}
+}

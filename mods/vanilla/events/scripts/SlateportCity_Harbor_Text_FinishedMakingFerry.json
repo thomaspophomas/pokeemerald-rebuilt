@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Harbor_Text_FinishedMakingFerry",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "sha1": "304e0889603d7850b02e01765d969cf3c903eb9e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "rawScript": ".string \"CAPT. STERN: {PLAYER}{KUN}!\\p\"\n\t.string \"We finally finished making the ferry\\n\"\n\t.string \"S.S. TIDAL!\\p\"\n\t.string \"We couldn't have done it without\\n\"\n\t.string \"your friend MR. BRINEY.\\p\"\n\t.string \"Please go for a short cruise on it!$\""
+  },
+  "label": "SlateportCity_Harbor_Text_FinishedMakingFerry",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_Harbor/scripts.inc",
+  "references": {}
+}

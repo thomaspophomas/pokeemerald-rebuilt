@@ -1,0 +1,19 @@
+{
+  "id": "Route119_House_Text_RumorAboutCaveOfOrigin",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_House/scripts.inc",
+    "sha1": "144c390836ba1613ec204055bbb833f3157d5624"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_House/scripts.inc",
+    "rawScript": ".string \"I heard about a cave called the CAVE\\n\"\n\t.string \"OF ORIGIN.\\p\"\n\t.string \"People rumor that the spirits of\\n\"\n\t.string \"POK\u00e9MON are revived there. Could\\l\"\n\t.string \"something like that really happen?$\""
+  },
+  "label": "Route119_House_Text_RumorAboutCaveOfOrigin",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route119_House/scripts.inc",
+  "references": {}
+}

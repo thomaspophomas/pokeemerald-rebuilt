@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_Text_FirmTrueBondsFor7WinStreak",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": ".string \"To achieve a 7-win streak\u2026\\p\"\n\t.string \"The bonds that bind your heart with\\n\"\n\t.string \"your POK\u00e9MON seem firm and true.$\""
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_Text_FirmTrueBondsFor7WinStreak",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_DevonCorp_2F_Text_WeFinallyMadeNewBalls",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "sha1": "7e0aa6a4df50ead64287578a24ba19b07cafbb02"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "rawScript": ".string \"We finally made new kinds of\\n\"\n\t.string \"POK\u00e9 BALLS!\\p\"\n\t.string \"The REPEAT BALL makes it easier to\\n\"\n\t.string \"catch POK\u00e9MON you've caught before.\\p\"\n\t.string \"The TIMER BALL gets better at catching\\n\"\n\t.string \"POK\u00e9MON the longer a battle runs.\\p\"\n\t.string \"Both are proudly developed by\\n\"\n\t.string \"the DEVON CORPORATION.\\p\"\n\t.string \"Please give them a try!$\""
+  },
+  "label": "RustboroCity_DevonCorp_2F_Text_WeFinallyMadeNewBalls",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "EventScript_PkmnCenterNurse_Goodbye",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/pkmn_center_nurse.inc",
+    "sha1": "49fcb801886d68c6fee548595b10470404136e7a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/pkmn_center_nurse.inc",
+    "rawScript": "message gText_WeHopeToSeeYouAgain\n\treturn\n\n@ VAR_0x8004 is 1 when player has Gold Card; jumps are identical"
+  },
+  "label": "EventScript_PkmnCenterNurse_Goodbye",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/pkmn_center_nurse.inc",
+  "references": {}
+}

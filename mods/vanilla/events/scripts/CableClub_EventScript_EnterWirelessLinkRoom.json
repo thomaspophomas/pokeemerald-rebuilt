@@ -1,0 +1,23 @@
+{
+  "id": "CableClub_EventScript_EnterWirelessLinkRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "messageautoscroll CableClub_Text_DirectYouToYourRoom\n\twaitmessage\n\tdelay 60\n\tclosemessage\n\tcopyvar VAR_0x8007, VAR_LAST_TALKED\n\tcall CableClub_EventScript_OpenDirectCornerBarrier\n\tspecial DrawWholeMapView\n\tplayse SE_CLICK\n\tdelay 60\n\tapplymovement VAR_LAST_TALKED, Movement_AttendantFaceLeft\n\twaitmovement 0\n\tclosemessage\n\tapplymovement LOCALID_PLAYER, Movement_PlayerApproachLinkRoomLeft\n\twaitmovement 0\n\topendoor 9, 1\n\twaitdooranim\n\tapplymovement LOCALID_PLAYER, Movement_PlayerEnterLinkRoom\n\twaitmovement 0\n\thideplayer\n\tclosedoor 9, 1\n\twaitdooranim\n\trelease\n\twaitstate\n\tend"
+  },
+  "label": "CableClub_EventScript_EnterWirelessLinkRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED"
+    ]
+  }
+}

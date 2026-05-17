@@ -1,0 +1,19 @@
+{
+  "id": "VictoryRoad_B1F_Text_ShannonPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_B1F/scripts.inc",
+    "sha1": "cbf73ba8b0ffae50fb8f8b966d51479555277bbd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VictoryRoad_B1F/scripts.inc",
+    "rawScript": ".string \"By being together all the time, trust\\n\"\n\t.string \"grows between POK\u00e9MON and TRAINERS.$\""
+  },
+  "label": "VictoryRoad_B1F_Text_ShannonPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VictoryRoad_B1F/scripts.inc",
+  "references": {}
+}

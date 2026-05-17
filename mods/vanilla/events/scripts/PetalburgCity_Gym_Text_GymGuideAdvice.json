@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_GymGuideAdvice",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"Hey, how's it going, CHAMPION-\\n\"\n\t.string \"bound {PLAYER}?\\p\"\n\t.string \"The doors in this GYM open when you\\n\"\n\t.string \"beat the awaiting TRAINERS.\\p\"\n\t.string \"Whoops! The doors in this room are\\n\"\n\t.string \"already open, so don't attack me!\\p\"\n\t.string \"The TRAINERS of PETALBURG GYM\\n\"\n\t.string \"use all kinds of items.\\p\"\n\t.string \"The door at the left leads to\\n\"\n\t.string \"the SPEED ROOM.\\p\"\n\t.string \"The door at the right leads to\\n\"\n\t.string \"the ACCURACY ROOM.\\p\"\n\t.string \"The room's name will be on\\n\"\n\t.string \"the door, so choose carefully.\\p\"\n\t.string \"Once you've chosen the door\u2026\\n\"\n\t.string \"Well, hey, go for it!$\""
+  },
+  "label": "PetalburgCity_Gym_Text_GymGuideAdvice",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

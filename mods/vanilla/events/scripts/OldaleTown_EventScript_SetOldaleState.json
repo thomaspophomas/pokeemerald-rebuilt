@@ -1,0 +1,23 @@
+{
+  "id": "OldaleTown_EventScript_SetOldaleState",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown/scripts.inc",
+    "sha1": "b8b6ade6d90e9d5b08d5d2374caa3d404506aa31"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/OldaleTown/scripts.inc",
+    "rawScript": "setvar VAR_OLDALE_TOWN_STATE, 1\n\treturn"
+  },
+  "label": "OldaleTown_EventScript_SetOldaleState",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/OldaleTown/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_OLDALE_TOWN_STATE"
+    ]
+  }
+}

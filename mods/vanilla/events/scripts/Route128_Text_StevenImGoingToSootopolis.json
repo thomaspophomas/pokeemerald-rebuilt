@@ -1,0 +1,19 @@
+{
+  "id": "Route128_Text_StevenImGoingToSootopolis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route128/scripts.inc",
+    "sha1": "8c3eb5fe541a802a44ec8805e051fe2de0e552f6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route128/scripts.inc",
+    "rawScript": ".string \"{PLAYER}{KUN}\u2026\\n\"\n\t.string \"I don't know what you intend to do,\\l\"\n\t.string \"but don't do anything reckless.\\p\"\n\t.string \"Okay.\\n\"\n\t.string \"I'm going to SOOTOPOLIS.$\""
+  },
+  "label": "Route128_Text_StevenImGoingToSootopolis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route128/scripts.inc",
+  "references": {}
+}

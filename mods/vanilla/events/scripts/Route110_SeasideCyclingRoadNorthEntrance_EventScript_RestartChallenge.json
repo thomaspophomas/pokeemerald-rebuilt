@@ -1,0 +1,23 @@
+{
+  "id": "Route110_SeasideCyclingRoadNorthEntrance_EventScript_RestartChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.inc",
+    "sha1": "47c0f318baf7ac84ae014f5bbe6a3bb198670c0e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.inc",
+    "rawScript": "setvar VAR_CYCLING_CHALLENGE_STATE, 1\n\treturn"
+  },
+  "label": "Route110_SeasideCyclingRoadNorthEntrance_EventScript_RestartChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_CYCLING_CHALLENGE_STATE"
+    ]
+  }
+}

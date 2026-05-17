@@ -1,0 +1,23 @@
+{
+  "id": "Route114_EventScript_Kai",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114/scripts.inc",
+    "sha1": "0c57a7112b8feadf446551150c5dcc13761f8eeb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_KAI, Route114_Text_KaiIntro, Route114_Text_KaiDefeat\n\tmsgbox Route114_Text_KaiPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route114_EventScript_Kai",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route114/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_KAI"
+    ]
+  }
+}

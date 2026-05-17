@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_MoveRelearnersHouse_Text_DontHaveMoveToTeachPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc",
+    "sha1": "9afb886b81b1177e00257143804f6a28f9488a57"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc",
+    "rawScript": ".string \"Sorry\u2026\\p\"\n\t.string \"It doesn't appear as if I have any move\\n\"\n\t.string \"I can teach that POK\u00e9MON.$\""
+  },
+  "label": "FallarborTown_MoveRelearnersHouse_Text_DontHaveMoveToTeachPokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc",
+  "references": {}
+}

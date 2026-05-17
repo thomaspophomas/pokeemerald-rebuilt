@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_BattleTentBattleRoom_EventScript_DefeatedOpponent",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+    "sha1": "8bbb2b24c65698ff0f5d4dcb7592d7ae122741de"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+    "rawScript": "applymovement LOCALID_FALLARBOR_TENT_BATTLE_ATTENDANT, FallarborTown_BattleTentBattleRoom_Movement_AttendantJump\n\tplayse SE_BANG\n\twaitse\n\twaitmovement 0\n\tmsgbox BattleFrontier_BattleArenaBattleRoom_Text_WinnerIsPlayer, MSGBOX_DEFAULT\n\tclosemessage"
+  },
+  "label": "FallarborTown_BattleTentBattleRoom_EventScript_DefeatedOpponent",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+  "references": {}
+}

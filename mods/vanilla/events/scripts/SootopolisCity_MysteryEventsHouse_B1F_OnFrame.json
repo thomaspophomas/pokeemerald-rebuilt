@@ -1,0 +1,23 @@
+{
+  "id": "SootopolisCity_MysteryEventsHouse_B1F_OnFrame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_MysteryEventsHouse_B1F/scripts.inc",
+    "sha1": "9a58ab5d1fb1306581fc7e54c8b85f2f69a8ee94"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_MysteryEventsHouse_B1F/scripts.inc",
+    "rawScript": "map_script_2 VAR_TEMP_1, 0, SootopolisCity_MysteryEventsHouse_B1F_EventScript_BattleVisitingTrainer\n\t.2byte 0"
+  },
+  "label": "SootopolisCity_MysteryEventsHouse_B1F_OnFrame",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/SootopolisCity_MysteryEventsHouse_B1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1"
+    ]
+  }
+}

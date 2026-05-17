@@ -1,0 +1,23 @@
+{
+  "id": "PetalburgCity_Gym_EventScript_NormanRematch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": "trainerbattle_rematch_double TRAINER_NORMAN_1, PetalburgCity_Gym_Text_NormanPreRematch, PetalburgCity_Gym_Text_NormanRematchDefeat, PetalburgCity_Gym_Text_NormanRematchNeedTwoMons\n\tmsgbox PetalburgCity_Gym_Text_NormanPostRematch, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "PetalburgCity_Gym_EventScript_NormanRematch",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_NORMAN_1"
+    ]
+  }
+}

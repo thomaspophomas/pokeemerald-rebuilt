@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_PokemonCenter_1F_EventScript_PlaySong",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/mauville_man.inc",
+    "sha1": "5d5e72f125b988a1fbd10a6264af3893ef9cc868"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/mauville_man.inc",
+    "rawScript": "setvar VAR_0x8004, FALSE  @ Play his current song\n\tspecial PlayBardSong\n\tdelay 60\n\tspecial HasBardSongBeenChanged\n\tgoto_if_eq VAR_RESULT, FALSE, MauvilleCity_PokemonCenter_1F_EventScript_AskToWriteLyrics\n\tmsgbox MauvilleCity_PokemonCenter_1F_Text_WishICouldPlaySongForOthers, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "MauvilleCity_PokemonCenter_1F_EventScript_PlaySong",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/mauville_man.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

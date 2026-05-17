@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_BattleTentLobby_Text_NiceIfMoreSelection",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+    "sha1": "d8233cb564c951151609565c69259c5bc6039b75"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+    "rawScript": ".string \"Wouldn't it be nice if they had more of\\n\"\n\t.string \"a selection?$\""
+  },
+  "label": "SlateportCity_BattleTentLobby_Text_NiceIfMoreSelection",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+  "references": {}
+}

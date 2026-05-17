@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomWildMons_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomWildMons/scripts.inc",
+    "sha1": "4ce9a1b97a5e7827a052a000b3fe1ab384b493fc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomWildMons/scripts.inc",
+    "rawScript": "call BattleFrontier_BattlePikeRoom_EventScript_ResetSketchedMoves\n\tfrontier_get FRONTIER_DATA_BATTLE_OUTCOME\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_LOST, BattleFrontier_BattlePikeRoomWildMons_EventScript_SetLost\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_DREW, BattleFrontier_BattlePikeRoomWildMons_EventScript_SetLost\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeRoomWildMons_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomWildMons/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

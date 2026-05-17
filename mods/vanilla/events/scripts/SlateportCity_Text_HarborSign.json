@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Text_HarborSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": ".string \"SLATEPORT HARBOR\\p\"\n\t.string \"\u201cEnjoy a delightful cruise on\\n\"\n\t.string \"the ferry S.S. TIDAL.\u201d$\""
+  },
+  "label": "SlateportCity_Text_HarborSign",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {}
+}

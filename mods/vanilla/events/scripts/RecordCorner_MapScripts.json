@@ -1,0 +1,19 @@
+{
+  "id": "RecordCorner_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RecordCorner/scripts.inc",
+    "sha1": "4ed3cb4e0149c305b43e3f9054e4823bad4cb5b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RecordCorner/scripts.inc",
+    "rawScript": ".byte 0"
+  },
+  "label": "RecordCorner_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/RecordCorner/scripts.inc",
+  "references": {}
+}

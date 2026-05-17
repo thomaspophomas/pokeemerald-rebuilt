@@ -1,0 +1,19 @@
+{
+  "id": "AquaHideout_1F_Text_OurBossIsSnatchingSomething",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_1F/scripts.inc",
+    "sha1": "fb0f9c771050564c49799918dc1d87097cc9380f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_1F/scripts.inc",
+    "rawScript": ".string \"What? What? What do you want with \\n\"\n\t.string \"TEAM AQUA?\\p\"\n\t.string \"Our BOSS isn't here! He's gone off to\\n\"\n\t.string \"snatch something important!\\p\"\n\t.string \"\u2026 \u2026\\n\"\n\t.string \"Where did he go?\\p\"\n\t.string \"Wahaha! Do you really think I'd tell\\n\"\n\t.string \"you something that crucial?$\""
+  },
+  "label": "AquaHideout_1F_Text_OurBossIsSnatchingSomething",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AquaHideout_1F/scripts.inc",
+  "references": {}
+}

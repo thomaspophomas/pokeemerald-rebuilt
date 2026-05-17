@@ -1,0 +1,27 @@
+{
+  "id": "MauvilleCity_GameCorner_EventScript_Girl",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "sha1": "3db7cd216c9a2c35e8176ef8b4a1d9ec68649c7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_STARTER_DOLL, MauvilleCity_GameCorner_EventScript_ReceivedStarterDoll\n\tmsgbox MauvilleCity_GameCorner_Text_GotTwoOfSameDollWantOne, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_DeclineStarterDoll\n\tswitch VAR_STARTER_MON\n\tcase 0, MauvilleCity_GameCorner_EventScript_GiveTreeckoDoll\n\tcase 1, MauvilleCity_GameCorner_EventScript_GiveTorchicDoll\n\tcase 2, MauvilleCity_GameCorner_EventScript_GiveMudkipDoll\n\tend"
+  },
+  "label": "MauvilleCity_GameCorner_EventScript_Girl",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_STARTER_DOLL"
+    ],
+    "vars": [
+      "VAR_RESULT",
+      "VAR_STARTER_MON"
+    ]
+  }
+}

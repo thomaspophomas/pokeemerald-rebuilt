@@ -1,0 +1,19 @@
+{
+  "id": "Route116_TunnelersRestHouse_Text_WeHadToStopBoring",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116_TunnelersRestHouse/scripts.inc",
+    "sha1": "cf1b26d5655363e9dd7eded558cfb3a4486c3aa4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route116_TunnelersRestHouse/scripts.inc",
+    "rawScript": ".string \"That RUSTURF TUNNEL there\u2026\\p\"\n\t.string \"At first, we had a huge work crew boring\\n\"\n\t.string \"through rock with the latest machinery.\\l\"\n\t.string \"But, we had to stop.\\p\"\n\t.string \"It turns out that we would have had\\n\"\n\t.string \"a negative effect on wild POK\u00e9MON in\\l\"\n\t.string \"the area.\\p\"\n\t.string \"So, we've got nothing to do but loll\\n\"\n\t.string \"around here doing nothing.$\""
+  },
+  "label": "Route116_TunnelersRestHouse_Text_WeHadToStopBoring",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route116_TunnelersRestHouse/scripts.inc",
+  "references": {}
+}

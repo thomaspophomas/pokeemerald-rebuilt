@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonCenter_1F_Text_IllTryToCherishIt",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/lilycove_lady.inc",
+    "sha1": "2c2864b913cc532d514481fce3a5e381d5af5f83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/lilycove_lady.inc",
+    "rawScript": ".string \"Oh?\\n\"\n\t.string \"That {STR_VAR_2} is {STR_VAR_1}?\\p\"\n\t.string \"\u2026Oh, is that right?\\p\"\n\t.string \"Well, I owe you a thanks anyway.\\n\"\n\t.string \"I'll try to cherish it\u2026$\""
+  },
+  "label": "LilycoveCity_PokemonCenter_1F_Text_IllTryToCherishIt",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/lilycove_lady.inc",
+  "references": {}
+}

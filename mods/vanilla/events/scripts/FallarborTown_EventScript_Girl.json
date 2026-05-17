@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_EventScript_Girl",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown/scripts.inc",
+    "sha1": "5eb275ca170342d9d6f005ad109dd88d1bf829e1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown/scripts.inc",
+    "rawScript": "msgbox FallarborTown_Text_MyPreciousAzurill, MSGBOX_NPC\n\tend"
+  },
+  "label": "FallarborTown_EventScript_Girl",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown/scripts.inc",
+  "references": {}
+}

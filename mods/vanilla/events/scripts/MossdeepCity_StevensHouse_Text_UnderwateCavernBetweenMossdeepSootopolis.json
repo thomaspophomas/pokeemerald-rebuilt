@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "sha1": "13a709347ca2c2863ef04de01b7d51d28b9d736e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "rawScript": ".string \"STEVEN: Apparently, there's an\\n\"\n\t.string \"underwater cavern between\\l\"\n\t.string \"MOSSDEEP and SOOTOPOLIS.\\p\"\n\t.string \"You know, the one that CAPT. STERN\\n\"\n\t.string \"found in his submarine.$\""
+  },
+  "label": "MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+  "references": {}
+}

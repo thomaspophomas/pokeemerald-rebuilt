@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_House3_Text_ExplainPokeblocks",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_House3/scripts.inc",
+    "sha1": "d8cf01aabc47c4a1255f8f58616f8cbdcb863fd4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_House3/scripts.inc",
+    "rawScript": ".string \"Oh, good! You're a smart soul!\\n\"\n\t.string \"This is a bit long, so listen up!\\p\"\n\t.string \"Are you ready?\\p\"\n\t.string \"If you look at {POKEBLOCK}S, you should see\\n\"\n\t.string \"that they are rated on how they feel.\\p\"\n\t.string \"The lower the feel rating,\\n\"\n\t.string \"the better it is. Don't forget this!\\p\"\n\t.string \"A good {POKEBLOCK} has a low feel\\n\"\n\t.string \"rating and a high level.\\p\"\n\t.string \"A POK\u00e9MON can eat more good\\n\"\n\t.string \"{POKEBLOCK}S than ordinary ones, too.\\p\"\n\t.string \"And this is important.\\p\"\n\t.string \"If you want to make smooth {POKEBLOCK}S,\\n\"\n\t.string \"use different kinds of BERRIES.\\p\"\n\t.string \"Don't be stingy--the kinds of BERRIES\\n\"\n\t.string \"affect the smoothness of {POKEBLOCK}S.\\p\"\n\t.string \"And another thing.\\p\"\n\t.string \"The more people blending BERRIES,\\n\"\n\t.string \"the smoother the {POKEBLOCK}S.\\p\"\n\t.string \"That's why you should talk to other\\n\"\n\t.string \"people and make {POKEBLOCK}S together.\\p\"\n\t.string \"That's about all you need to know to\\n\"\n\t.string \"make good {POKEBLOCK}S.\\p\"\n\t.string \"If everyone had POK\u00e9MON they love,\\n\"\n\t.string \"smooth {POKEBLOCK}S, and a loving family,\\l\"\n\t.string \"the world would be a happier place.\\p\"\n\t.string \"Don't give up, dear!$\""
+  },
+  "label": "LilycoveCity_House3_Text_ExplainPokeblocks",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_House3/scripts.inc",
+  "references": {}
+}

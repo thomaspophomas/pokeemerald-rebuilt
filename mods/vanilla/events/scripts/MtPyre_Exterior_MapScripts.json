@@ -1,0 +1,23 @@
+{
+  "id": "MtPyre_Exterior_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Exterior/scripts.inc",
+    "sha1": "9d8222c8fa9a5f582c6d5ecafe1ba433be250e54"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Exterior/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, MtPyre_Exterior_OnTransition\n\t.byte 0"
+  },
+  "label": "MtPyre_Exterior_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/MtPyre_Exterior/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

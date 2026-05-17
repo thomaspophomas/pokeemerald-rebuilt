@@ -1,0 +1,19 @@
+{
+  "id": "gText_BattlePyramidConfirmRest",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "sha1": "a6f6792ac2bc39a05028dabd4e88f5984d84d4a5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "rawScript": ".string \"Your BATTLE PYRAMID quest will be\\n\"\n\t.string \"saved so that you may quit for now.\\l\"\n\t.string \"Is that okay?$\""
+  },
+  "label": "gText_BattlePyramidConfirmRest",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+  "references": {}
+}

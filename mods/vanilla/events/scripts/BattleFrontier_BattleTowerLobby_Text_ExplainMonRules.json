@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_Text_ExplainMonRules",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": ".string \"Depending on the BATTLE ROOM you are\\n\"\n\t.string \"entering, you will be required to take\\l\"\n\t.string \"a certain number of POK\u00e9MON.\\p\"\n\t.string \"The SINGLE BATTLE mode requires\\n\"\n\t.string \"three POK\u00e9MON.\\p\"\n\t.string \"The DOUBLE BATTLE mode requires four,\\n\"\n\t.string \"and the MULTI modes both require two.$\""
+  },
+  "label": "BattleFrontier_BattleTowerLobby_Text_ExplainMonRules",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {}
+}

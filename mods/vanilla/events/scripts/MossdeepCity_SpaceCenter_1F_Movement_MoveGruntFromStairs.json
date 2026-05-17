@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairs",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "sha1": "a0cf82d2df089035fb81d02a013736aab95a13d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "rawScript": "face_left\n\tlock_facing_direction\n\twalk_right\n\tunlock_facing_direction\n\tstep_end"
+  },
+  "label": "MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairs",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+  "references": {}
+}

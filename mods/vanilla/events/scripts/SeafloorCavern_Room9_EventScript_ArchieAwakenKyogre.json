@@ -1,0 +1,54 @@
+{
+  "id": "SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Room9/scripts.inc",
+    "sha1": "fb74c5efd7ca988ee5566425c585ce3e165249e8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SeafloorCavern_Room9/scripts.inc",
+    "rawScript": "lockall\n\tsetvar VAR_0x8004, LOCALID_SEAFLOOR_CAVERN_ARCHIE\n\tsetvar VAR_0x8005, LOCALID_SEAFLOOR_CAVERN_MAXIE\n\tsetvar VAR_0x8006, LOCALID_SEAFLOOR_CAVERN_GRUNT_1\n\tsetvar VAR_0x8007, LOCALID_SEAFLOOR_CAVERN_GRUNT_2\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, SeafloorCavern_Room9_Movement_Delay32\n\twaitmovement 0\n\tplaybgm MUS_ENCOUNTER_AQUA, FALSE\n\tmsgbox SeafloorCavern_Room9_Text_ArchieHoldItRightThere, MSGBOX_DEFAULT\n\tclosemessage\n\taddobject VAR_0x8004\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tapplymovement VAR_0x8004, SeafloorCavern_Room9_Movement_ArchieApproachPlayer\n\twaitmovement 0\n\tmsgbox SeafloorCavern_Room9_Text_ArchieSoItWasYou, MSGBOX_DEFAULT\n\tapplymovement VAR_0x8004, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tmsgbox SeafloorCavern_Room9_Text_ArchieBeholdKyogre, MSGBOX_DEFAULT\n\tapplymovement VAR_0x8004, Common_Movement_FacePlayer\n\twaitmovement 0\n\tmsgbox SeafloorCavern_Room9_Text_ArchieYouMustDisappear, MSGBOX_DEFAULT\n\ttrainerbattle_no_intro TRAINER_ARCHIE, SeafloorCavern_Room9_Text_ArchieDefeat\n\tmsgbox SeafloorCavern_Room9_Text_ArchieWithThisRedOrb, MSGBOX_DEFAULT\n\tsetweather WEATHER_NONE\n\tdoweather\n\tspecial Script_FadeOutMapMusic\n\tmsgbox SeafloorCavern_Room9_Text_RedOrbShinesByItself, MSGBOX_DEFAULT\n\tspecial WaitWeather\n\tsetvar VAR_RESULT, 1\n\tplayse SE_M_DETECT\n\tdofieldeffectsparkle 16, 42, 0\n\twaitfieldeffect FLDEFF_SPARKLE\n\tclosemessage\n\tsetvar VAR_RESULT, 0\n\tplayfanfare MUS_AWAKEN_LEGEND\n\tplayse SE_ORB\n\tspecial DoOrbEffect\n\tapplymovement VAR_0x8004, Common_Movement_WalkInPlaceFasterUp\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tdelay 150\n\tremoveobject LOCALID_SEAFLOOR_CAVERN_KYOGRE_SLEEPING\n\taddobject LOCALID_SEAFLOOR_CAVERN_KYOGRE\n\twaitstate\n\tdelay 60\n\tapplymovement LOCALID_SEAFLOOR_CAVERN_KYOGRE, SeafloorCavern_Room9_Movement_KyogreApproach\n\twaitmovement 0\n\tspecial FadeOutOrbEffect\n\tsetvar VAR_0x8004, 1  @ vertical pan\n\tsetvar VAR_0x8005, 1  @ horizontal pan\n\tsetvar VAR_0x8006, 8  @ num shakes\n\tsetvar VAR_0x8007, 5  @ shake delay\n\tspecial ShakeCamera\n\twaitstate\n\tapplymovement LOCALID_SEAFLOOR_CAVERN_KYOGRE, SeafloorCavern_Room9_Movement_KyogreExit\n\twaitmovement 0\n\tremoveobject LOCALID_SEAFLOOR_CAVERN_KYOGRE\n\tdelay 4\n\tsetvar VAR_0x8004, 2  @ vertical pan\n\tsetvar VAR_0x8005, 2  @ horizontal pan\n\tsetvar VAR_0x8006, 8  @ num shakes\n\tsetvar VAR_0x8007, 5  @ shake delay\n\tspecial ShakeCamera\n\twaitstate\n\tdelay 30\n\tsetvar VAR_0x8004, LOCALID_SEAFLOOR_CAVERN_ARCHIE\n\tsetvar VAR_0x8005, LOCALID_SEAFLOOR_CAVERN_MAXIE\n\tsetvar VAR_0x8006, LOCALID_SEAFLOOR_CAVERN_GRUNT_1\n\tsetvar VAR_0x8007, LOCALID_SEAFLOOR_CAVERN_GRUNT_2\n\tmsgbox SeafloorCavern_Room9_Text_ArchieWhereDidKyogreGo, MSGBOX_DEFAULT\n\tplayse SE_PC_LOGIN\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tmsgbox SeafloorCavern_Room9_Text_ArchieAMessageFromOutside, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement VAR_0x8004, SeafloorCavern_Room9_Movement_ArchieListenMessage\n\twaitmovement 0\n\tmsgbox SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard, MSGBOX_DEFAULT\n\tclosemessage\n\tplayse SE_PC_OFF\n\tdelay 20\n\tapplymovement VAR_0x8004, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tmsgbox SeafloorCavern_Room9_Text_ArchieWhyDidKyogreDisappear, MSGBOX_DEFAULT\n\tclosemessage\n\taddobject VAR_0x8005\n\taddobject VAR_0x8006\n\taddobject VAR_0x8007\n\tapplymovement VAR_0x8007, SeafloorCavern_Room9_Movement_MagmaGruntArrive\n\tapplymovement VAR_0x8006, SeafloorCavern_Room9_Movement_MagmaGruntArrive\n\tapplymovement VAR_0x8005, SeafloorCavern_Room9_Movement_MaxieArrive\n\twaitmovement 0\n\tapplymovement VAR_0x8004, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tmsgbox SeafloorCavern_Room9_Text_MaxieWhatHaveYouWrought, MSGBOX_DEFAULT\n\tplayse SE_PIN\n\tapplymovement VAR_0x8004, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement VAR_0x8004, Common_Movement_Delay48\n\twaitmovement 0\n\tmsgbox SeafloorCavern_Room9_Text_ArchieDontGetAllHighAndMighty, MSGBOX_DEFAULT\n\tmsgbox SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement VAR_0x8005, SeafloorCavern_Room9_Movement_MaxieExit\n\tapplymovement VAR_0x8004, SeafloorCavern_Room9_Movement_ArchieExit\n\twaitmovement 0\n\tmsgbox SeafloorCavern_Room9_Text_MaxieComeOnPlayer, MSGBOX_DEFAULT\n\tsetvar VAR_ROUTE128_STATE, 1\n\tsetvar VAR_SOOTOPOLIS_CITY_STATE, 1\n\tclearflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN\n\tclearflag FLAG_HIDE_SOOTOPOLIS_CITY_ARCHIE\n\tclearflag FLAG_HIDE_SOOTOPOLIS_CITY_MAXIE\n\tclearflag FLAG_HIDE_SOOTOPOLIS_CITY_RESIDENTS\n\tclearflag FLAG_HIDE_SOOTOPOLIS_CITY_GROUDON\n\tclearflag FLAG_HIDE_SOOTOPOLIS_CITY_KYOGRE\n\tsetflag FLAG_HIDE_SOOTOPOLIS_CITY_MAN_1\n\tsetflag FLAG_LEGENDARIES_IN_SOOTOPOLIS\n\tclearflag FLAG_HIDE_ROUTE_128_ARCHIE\n\tclearflag FLAG_HIDE_ROUTE_128_MAXIE\n\tsetflag FLAG_SYS_WEATHER_CTRL\n\tsetflag FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN\n\tsetflag FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_STEVEN\n\tsetvar VAR_STEVENS_HOUSE_STATE, 2\n\tsetvar VAR_SEAFLOOR_CAVERN_STATE, 1\n\tsetflag FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_ARCHIE\n\tsetflag FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_MAXIE\n\tsetflag FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_MAGMA_GRUNTS\n\tsetflag FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_KYOGRE\n\tsetflag FLAG_HIDE_SEAFLOOR_CAVERN_AQUA_GRUNTS\n\tsetflag FLAG_HIDE_MAP_NAME_POPUP\n\twarp MAP_ROUTE128, 38, 22\n\twaitstate\n\treleaseall\n\tend"
+  },
+  "label": "SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SeafloorCavern_Room9/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_MAP_NAME_POPUP",
+      "FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_STEVEN",
+      "FLAG_HIDE_ROUTE_128_ARCHIE",
+      "FLAG_HIDE_ROUTE_128_MAXIE",
+      "FLAG_HIDE_SEAFLOOR_CAVERN_AQUA_GRUNTS",
+      "FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_ARCHIE",
+      "FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_KYOGRE",
+      "FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_MAGMA_GRUNTS",
+      "FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_MAXIE",
+      "FLAG_HIDE_SOOTOPOLIS_CITY_ARCHIE",
+      "FLAG_HIDE_SOOTOPOLIS_CITY_GROUDON",
+      "FLAG_HIDE_SOOTOPOLIS_CITY_KYOGRE",
+      "FLAG_HIDE_SOOTOPOLIS_CITY_MAN_1",
+      "FLAG_HIDE_SOOTOPOLIS_CITY_MAXIE",
+      "FLAG_HIDE_SOOTOPOLIS_CITY_RESIDENTS",
+      "FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN",
+      "FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN",
+      "FLAG_LEGENDARIES_IN_SOOTOPOLIS",
+      "FLAG_SYS_WEATHER_CTRL"
+    ],
+    "vars": [
+      "VAR_RESULT",
+      "VAR_ROUTE128_STATE",
+      "VAR_SEAFLOOR_CAVERN_STATE",
+      "VAR_SOOTOPOLIS_CITY_STATE",
+      "VAR_STEVENS_HOUSE_STATE"
+    ],
+    "trainers": [
+      "TRAINER_ARCHIE"
+    ],
+    "maps": [
+      "MAP_ROUTE128"
+    ]
+  }
+}

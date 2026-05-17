@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Mart_Text_NetAndDiveBallsRare",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Mart/scripts.inc",
+    "sha1": "c808a00eab98e6463dd7a37f123ff7123046ccad"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_Mart/scripts.inc",
+    "rawScript": ".string \"The NET and DIVE BALLS are rare POK\u00e9\\n\"\n\t.string \"BALLS that are only made in MOSSDEEP.\\p\"\n\t.string \"A NET BALL is effective against\\n\"\n\t.string \"BUG-type and WATER-type POK\u00e9MON.\\p\"\n\t.string \"A DIVE BALL works best on POK\u00e9MON\\n\"\n\t.string \"at the bottom of the sea.$\""
+  },
+  "label": "MossdeepCity_Mart_Text_NetAndDiveBallsRare",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_Mart/scripts.inc",
+  "references": {}
+}

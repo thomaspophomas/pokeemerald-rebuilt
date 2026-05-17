@@ -1,0 +1,23 @@
+{
+  "id": "Route121_SafariZoneEntrance_EventScript_ExitSafariZone",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route121_SafariZoneEntrance/scripts.inc",
+    "sha1": "6a3d6039da49b2973bb2acbe14884a453fef9c72"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route121_SafariZoneEntrance/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_PLAYER, Route121_SafariZoneEntrance_Movement_ExitSafariZone\n\twaitmovement 0\n\tsetvar VAR_SAFARI_ZONE_STATE, 0\n\treleaseall\n\tend"
+  },
+  "label": "Route121_SafariZoneEntrance_EventScript_ExitSafariZone",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route121_SafariZoneEntrance/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_SAFARI_ZONE_STATE"
+    ]
+  }
+}

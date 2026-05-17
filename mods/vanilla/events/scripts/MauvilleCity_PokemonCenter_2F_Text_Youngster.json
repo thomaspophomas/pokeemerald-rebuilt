@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_PokemonCenter_2F_Text_Youngster",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_PokemonCenter_2F/scripts.inc",
+    "sha1": "0b50b725e4593865c42b15c64ea6995b08dba996"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_PokemonCenter_2F/scripts.inc",
+    "rawScript": ".string \"Did you know that you can link battle\\n\"\n\t.string \"at the COLOSSEUM here?\\p\"\n\t.string \"They put up your record on the wall\\n\"\n\t.string \"for everyone to see.\\p\"\n\t.string \"It's embarrassing if you lose more\\n\"\n\t.string \"often than you win\u2026$\""
+  },
+  "label": "MauvilleCity_PokemonCenter_2F_Text_Youngster",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_PokemonCenter_2F/scripts.inc",
+  "references": {}
+}

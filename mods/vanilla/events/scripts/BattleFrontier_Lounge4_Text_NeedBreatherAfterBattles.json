@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge4_Text_NeedBreatherAfterBattles",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge4/scripts.inc",
+    "sha1": "9b6c3a62293ca4381efbd412bf582bb9edb26961"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge4/scripts.inc",
+    "rawScript": ".string \"Whew\u2026\\p\"\n\t.string \"I need to take a breather after\\n\"\n\t.string \"some intense battles\u2026\\p\"\n\t.string \"But even now, I never take a break\\n\"\n\t.string \"from plotting strategy and combos.$\""
+  },
+  "label": "BattleFrontier_Lounge4_Text_NeedBreatherAfterBattles",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge4/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "NewMauville_Inside_Text_SteppedOnSwitchGeneratorStopped",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NewMauville_Inside/scripts.inc",
+    "sha1": "e55cd05ab8dbd71a8b15a7cf2c2dc966549467fe"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NewMauville_Inside/scripts.inc",
+    "rawScript": ".string \"{PLAYER} stepped on the switch.\\p\"\n\t.string \"Click\u2026\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\n\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"The generator appears to have\\n\"\n\t.string \"stopped\u2026$\""
+  },
+  "label": "NewMauville_Inside_Text_SteppedOnSwitchGeneratorStopped",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/NewMauville_Inside/scripts.inc",
+  "references": {}
+}

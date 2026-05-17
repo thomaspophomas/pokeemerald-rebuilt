@@ -1,0 +1,24 @@
+{
+  "id": "LavaridgeTown_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, LavaridgeTown_OnTransition\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, LavaridgeTown_OnFrame\n\t.byte 0"
+  },
+  "label": "LavaridgeTown_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

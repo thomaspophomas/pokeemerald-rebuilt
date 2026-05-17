@@ -1,0 +1,23 @@
+{
+  "id": "CableClub_EventScript_CantTradeEnigmaBerry",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "msgbox CableClub_Text_CantTradeEnigmaBerry, MSGBOX_DEFAULT\n\tsetvar VAR_RESULT, 0\n\treturn"
+  },
+  "label": "CableClub_EventScript_CantTradeEnigmaBerry",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

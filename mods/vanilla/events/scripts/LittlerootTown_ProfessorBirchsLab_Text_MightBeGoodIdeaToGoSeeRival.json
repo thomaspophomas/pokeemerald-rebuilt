@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": ".string \"PROF. BIRCH: If you work at POK\u00e9MON\\n\"\n\t.string \"and gain experience, I think you'll make\\l\"\n\t.string \"an extremely good TRAINER.\\p\"\n\t.string \"My kid, {RIVAL}, is also studying\\n\"\n\t.string \"POK\u00e9MON while helping me out.\\p\"\n\t.string \"{PLAYER}{KUN}, don't you think it might be\\n\"\n\t.string \"a good idea to go see {RIVAL}?$\""
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

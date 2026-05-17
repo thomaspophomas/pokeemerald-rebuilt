@@ -1,0 +1,23 @@
+{
+  "id": "ContestHall_EventScript_ShowContestMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": "call ContestHall_EventScript_ContestantWalkToCenter\n\tcall ContestHall_EventScript_ShowContestMonPic\n\tcall ContestHall_EventScript_AudienceHeartEmotes\n\tcall ContestHall_EventScript_AudienceReactToContestant\n\tcall ContestHall_EventScript_ContestantReturn\n\tcall ContestHall_EventScript_TryWaitForLink\n\tcall ContestHall_EventScript_TryWaitForLink\n\taddvar VAR_0x8006, 1\n\tgoto_if_ne VAR_0x8006, CONTESTANT_COUNT, ContestHall_EventScript_ShowContestMons\n\tcall ContestHall_EventScript_AudienceVote\n\tsetvar VAR_TEMP_1, 6\n\treturn"
+  },
+  "label": "ContestHall_EventScript_ShowContestMons",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1"
+    ]
+  }
+}

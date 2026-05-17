@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Mart_Text_StockUpOnItems",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Mart/scripts.inc",
+    "sha1": "39e9591afc4b01702cd84304453dd4d1ee0ffe23"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Mart/scripts.inc",
+    "rawScript": ".string \"I always stock up on more items than\\n\"\n\t.string \"I'm sure I'll need.\\p\"\n\t.string \"You never know what might happen.\\n\"\n\t.string \"Better to be safe than sorry!$\""
+  },
+  "label": "FortreeCity_Mart_Text_StockUpOnItems",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_Mart/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Gym_1F_Text_ExplainOverheat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "sha1": "b82ae91ab89ff7156e8125891eff9b7e6a2a260f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "rawScript": ".string \"That TM50 contains OVERHEAT.\\p\"\n\t.string \"That move inflicts serious damage on\\n\"\n\t.string \"the opponent.\\p\"\n\t.string \"But it also sharply cuts the SP. ATK\\n\"\n\t.string \"of the POK\u00e9MON using it. It might not\\l\"\n\t.string \"be suitable for longer battles.$\""
+  },
+  "label": "LavaridgeTown_Gym_1F_Text_ExplainOverheat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Harbor_Movement_SternApproachPlayer1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "sha1": "304e0889603d7850b02e01765d969cf3c903eb9e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "rawScript": "walk_left\n\twalk_left\n\twalk_up\n\twalk_left\n\tstep_end"
+  },
+  "label": "SlateportCity_Harbor_Movement_SternApproachPlayer1",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/SlateportCity_Harbor/scripts.inc",
+  "references": {}
+}

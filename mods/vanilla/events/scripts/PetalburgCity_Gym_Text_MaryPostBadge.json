@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_MaryPostBadge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"Do you know what we're trying to\\n\"\n\t.string \"achieve as TRAINERS?\\p\"\n\t.string \"We're striving to become soul mates\\n\"\n\t.string \"with our POK\u00e9MON.$\""
+  },
+  "label": "PetalburgCity_Gym_Text_MaryPostBadge",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

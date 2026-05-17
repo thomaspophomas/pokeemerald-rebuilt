@@ -1,0 +1,26 @@
+{
+  "id": "OBJ_EVENT_GFX_VIGOROTH_CARRYING_BOX",
+  "domain": "overworld_sprites",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/object_events/object_event_graphics_info_pointers.h",
+    "sha1": "77fa348a5d882f94e478f2c7b9ed44de4de80ba1"
+  },
+  "legacy": {
+    "kind": "object_event_graphics",
+    "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+    "rawC": "const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VigorothCarryingBox = {\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_VIGOROTH,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 512,\n    .width = 32,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_SPECIAL,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_32x32,\n    .subspriteTables = sOamTables_32x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_VigorothCarryingBox,\n    .affineAnims = gDummySpriteAffineAnimTable,\n};"
+  },
+  "key": "OBJ_EVENT_GFX_VIGOROTH_CARRYING_BOX",
+  "graphicsId": "OBJ_EVENT_GFX_VIGOROTH_CARRYING_BOX",
+  "numericId": 95,
+  "graphicsRevision": 1,
+  "assetKey": "gObjectEventGraphicsInfo_VigorothCarryingBox",
+  "graphicsInfoSymbol": "gObjectEventGraphicsInfo_VigorothCarryingBox",
+  "width": "32",
+  "height": "32",
+  "paletteTag": "OBJ_EVENT_PAL_TAG_VIGOROTH",
+  "reflectionPaletteTag": "OBJ_EVENT_PAL_TAG_NONE",
+  "shadowSize": "SHADOW_SIZE_M",
+  "tracks": "TRACKS_FOOT"
+}

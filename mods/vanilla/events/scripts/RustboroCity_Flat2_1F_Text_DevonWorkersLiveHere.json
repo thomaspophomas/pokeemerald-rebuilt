@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Flat2_1F_Text_DevonWorkersLiveHere",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Flat2_1F/scripts.inc",
+    "sha1": "08ffa0e2b76974081d243eb8044efb0d1cfc7d5a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Flat2_1F/scripts.inc",
+    "rawScript": ".string \"DEVON CORPORATION's workers live in\\n\"\n\t.string \"this building.$\""
+  },
+  "label": "RustboroCity_Flat2_1F_Text_DevonWorkersLiveHere",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Flat2_1F/scripts.inc",
+  "references": {}
+}

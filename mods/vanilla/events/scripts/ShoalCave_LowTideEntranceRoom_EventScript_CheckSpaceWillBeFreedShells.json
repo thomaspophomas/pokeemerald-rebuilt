@@ -1,0 +1,26 @@
+{
+  "id": "ShoalCave_LowTideEntranceRoom_EventScript_CheckSpaceWillBeFreedShells",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ShoalCave_LowTideEntranceRoom/scripts.inc",
+    "sha1": "1413cd55fcba731c9d6b5315421f4e6fc8f26289"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ShoalCave_LowTideEntranceRoom/scripts.inc",
+    "rawScript": "checkitem ITEM_SHOAL_SHELL, 5\n\tgoto_if_eq VAR_RESULT, TRUE, ShoalCave_LowTideEntranceRoom_EventScript_NoSpaceWillBeFreed\n\treturn"
+  },
+  "label": "ShoalCave_LowTideEntranceRoom_EventScript_CheckSpaceWillBeFreedShells",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/ShoalCave_LowTideEntranceRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_SHOAL_SHELL"
+    ]
+  }
+}

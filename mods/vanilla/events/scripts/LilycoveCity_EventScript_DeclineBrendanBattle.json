@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_EventScript_DeclineBrendanBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": "setflag FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE\n\tmsgbox LilycoveCity_Text_BrendanNoConfidence, MSGBOX_DEFAULT\n\tsavebgm MUS_DUMMY\n\tfadedefaultbgm\n\trelease\n\tend"
+  },
+  "label": "LilycoveCity_EventScript_DeclineBrendanBattle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE"
+    ]
+  }
+}

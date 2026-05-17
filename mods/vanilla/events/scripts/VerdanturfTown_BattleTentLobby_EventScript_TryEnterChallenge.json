@@ -1,0 +1,25 @@
+{
+  "id": "VerdanturfTown_BattleTentLobby_EventScript_TryEnterChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "sha1": "be67ab8ba625b73e575c1594a46cbee43b6f03d9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "rawScript": "setvar VAR_FRONTIER_FACILITY, FRONTIER_FACILITY_PALACE\n\tsetvar VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_SINGLES\n\tsetvar VAR_RESULT, 2\n\tfrontier_checkineligible\n\tgoto_if_eq VAR_0x8004, TRUE, VerdanturfTown_BattleTentLobby_EventScript_NotEnoughValidMons\n\tfrontier_set FRONTIER_DATA_LVL_MODE, FRONTIER_LVL_TENT\n\tmsgbox VerdanturfTown_BattleTentLobby_Text_SelectThreeMons, MSGBOX_DEFAULT\n\tfadescreen FADE_TO_BLACK\n\tsetvar VAR_0x8004, 1\n\tsetvar VAR_0x8005, FRONTIER_PARTY_SIZE\n\tspecial ChoosePartyForBattleFrontier\n\tgoto_if_eq VAR_RESULT, 0, VerdanturfTown_BattleTentLobby_EventScript_LoadPartyCancelChallenge\n\tmsgbox VerdanturfTown_BattleTentLobby_Text_SaveBeforeChallenge, MSGBOX_YESNO\n\tswitch VAR_RESULT\n\tcase NO, VerdanturfTown_BattleTentLobby_EventScript_LoadPartyCancelChallenge\n\tcase YES, VerdanturfTown_BattleTentLobby_EventScript_SaveBeforeChallenge\n\tcase MULTI_B_PRESSED, VerdanturfTown_BattleTentLobby_EventScript_LoadPartyCancelChallenge"
+  },
+  "label": "VerdanturfTown_BattleTentLobby_EventScript_TryEnterChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FRONTIER_BATTLE_MODE",
+      "VAR_FRONTIER_FACILITY",
+      "VAR_RESULT"
+    ]
+  }
+}

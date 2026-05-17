@@ -1,0 +1,23 @@
+{
+  "id": "en:pc",
+  "domain": "language",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/text/pc.inc",
+    "sha1": "5b2e3b3afe4bdd8f823184c21b642d236d7768fe"
+  },
+  "legacy": {
+    "kind": "asm_text_labels",
+    "sourcePath": "data/text/pc.inc"
+  },
+  "language": "en",
+  "group": "pc",
+  "runtime": false,
+  "strings": {
+    "gText_WhichPCShouldBeAccessed": ".string \"Which PC should be accessed?$\"",
+    "gText_AccessedSomeonesPC": ".string \"Accessed SOMEONE'S PC.$\"",
+    "gText_StorageSystemOpened": ".string \"POK\u00e9MON Storage System opened.$\"",
+    "gText_AccessedPlayersPC": ".string \"Accessed {PLAYER}'s PC.$\"",
+    "gText_AccessedLanettesPC": ".string \"Accessed LANETTE's PC.$\""
+  }
+}

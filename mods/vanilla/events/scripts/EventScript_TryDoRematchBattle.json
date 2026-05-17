@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_TryDoRematchBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/trainer_battle.inc",
+    "sha1": "e0a1669e78b64d19492df48e8eba97d776e88df0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/trainer_battle.inc",
+    "rawScript": "call EventScript_RevealTrainer\n\tspecialvar VAR_RESULT, IsTrainerReadyForRematch\n\tgoto_if_eq VAR_RESULT, FALSE, EventScript_NoRematchTrainerBattle\n\tspecial PlayTrainerEncounterMusic\n\tspecial SetTrainerFacingDirection\n\tspecial ShowTrainerIntroSpeech\n\twaitmessage\n\twaitbuttonpress\n\tspecial BattleSetup_StartRematchBattle\n\treleaseall\n\tend"
+  },
+  "label": "EventScript_TryDoRematchBattle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/trainer_battle.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

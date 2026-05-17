@@ -1,0 +1,19 @@
+{
+  "id": "SealedChamber_InnerRoom_EventScript_BrailleStoryPart1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SealedChamber_InnerRoom/scripts.inc",
+    "sha1": "0873e1e1c99f6db0a44da305b2d636211dc92a66"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SealedChamber_InnerRoom/scripts.inc",
+    "rawScript": "lockall\n\tbraillemsgbox SealedChamber_InnerRoom_Braille_InThisCaveWeHaveLived\n\treleaseall\n\tend"
+  },
+  "label": "SealedChamber_InnerRoom_EventScript_BrailleStoryPart1",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SealedChamber_InnerRoom/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Route110_Text_ImagineSeeingYouHere",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/scripts.inc",
+    "sha1": "ee9846425d6a96c03ac988decb3c48ffbd098f22"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110/scripts.inc",
+    "rawScript": ".string \"PROF. BIRCH: Oh, {PLAYER}{KUN}!\\n\"\n\t.string \"Imagine seeing you here!\\p\"\n\t.string \"And where might my {RIVAL} be?$\""
+  },
+  "label": "Route110_Text_ImagineSeeingYouHere",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110/scripts.inc",
+  "references": {}
+}

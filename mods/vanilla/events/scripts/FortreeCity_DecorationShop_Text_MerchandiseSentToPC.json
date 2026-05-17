@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_DecorationShop_Text_MerchandiseSentToPC",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_DecorationShop/scripts.inc",
+    "sha1": "9052b61ce40e18da90e9f9a9ca5351634902ee39"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_DecorationShop/scripts.inc",
+    "rawScript": ".string \"Merchandise you buy here is sent to\\n\"\n\t.string \"your own PC.\\p\"\n\t.string \"That's fantastic! I wish they could\\n\"\n\t.string \"also deliver me home like that.$\""
+  },
+  "label": "FortreeCity_DecorationShop_Text_MerchandiseSentToPC",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_DecorationShop/scripts.inc",
+  "references": {}
+}

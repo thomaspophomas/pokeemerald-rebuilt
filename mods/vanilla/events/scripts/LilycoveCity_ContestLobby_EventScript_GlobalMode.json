@@ -1,0 +1,24 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_GlobalMode",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": "setvar VAR_TEMP_C, 1\n\tgoto_if_eq VAR_TEMP_D, 1, LilycoveCity_ContestLobby_EventScript_CancelLinkNoWirelessGMode\n\tgoto LilycoveCity_ContestLobby_EventScript_ChooseLinkContestType\n\tend"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_GlobalMode",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_C",
+      "VAR_TEMP_D"
+    ]
+  }
+}

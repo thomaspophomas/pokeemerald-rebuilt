@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_ChanceToDoBigThings",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"I'm just a GRUNT, so I don't know what\\n\"\n\t.string \"the BOSS is thinking\u2026\\p\"\n\t.string \"But being on TEAM AQUA, I know I'll get\\n\"\n\t.string \"the chance to do big things!\\p\"\n\t.string \"Wh-who are you?!\\n\"\n\t.string \"I was just talking to myself!$\""
+  },
+  "label": "LilycoveCity_Text_ChanceToDoBigThings",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

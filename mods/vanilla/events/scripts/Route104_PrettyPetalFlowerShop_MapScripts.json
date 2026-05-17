@@ -1,0 +1,23 @@
+{
+  "id": "Route104_PrettyPetalFlowerShop_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc",
+    "sha1": "85421f76af3e2f834a13d611b9a986423e5c93b8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, Route104_PrettyPetalFlowerShop_OnTransition\n\t.byte 0"
+  },
+  "label": "Route104_PrettyPetalFlowerShop_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

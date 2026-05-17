@@ -1,0 +1,19 @@
+{
+  "id": "EventScript_NotEnoughMonsForDoubleBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/trainer_battle.inc",
+    "sha1": "e0a1669e78b64d19492df48e8eba97d776e88df0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/trainer_battle.inc",
+    "rawScript": "special ShowTrainerCantBattleSpeech\n\twaitmessage\n\twaitbuttonpress\n\trelease\n\tend"
+  },
+  "label": "EventScript_NotEnoughMonsForDoubleBattle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/trainer_battle.inc",
+  "references": {}
+}

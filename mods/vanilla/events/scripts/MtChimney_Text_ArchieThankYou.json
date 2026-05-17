@@ -1,0 +1,19 @@
+{
+  "id": "MtChimney_Text_ArchieThankYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney/scripts.inc",
+    "sha1": "4d6a7ac7998e07e6d4f244ef13c499194f5b3668"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtChimney/scripts.inc",
+    "rawScript": ".string \"ARCHIE: {PLAYER}!\\n\"\n\t.string \"Thank you!\\p\"\n\t.string \"With your help, we thwarted TEAM\\n\"\n\t.string \"MAGMA's destructive plan!\\p\"\n\t.string \"But\u2026 You\u2026\\n\"\n\t.string \"Whose side are you on?\\p\"\n\t.string \"Ah, it doesn't matter.\\p\"\n\t.string \"We will remain vigilant and keep up\\n\"\n\t.string \"our pursuit of TEAM MAGMA.\\p\"\n\t.string \"{PLAYER}, we shall meet again!$\""
+  },
+  "label": "MtChimney_Text_ArchieThankYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtChimney/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,28 @@
+{
+  "id": "CableClub_EventScript_EnterUnionRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "call CableClub_EventScript_CheckPartyUnionRoomRequirements\n\tgoto_if_eq VAR_RESULT, 0, CableClub_EventScript_AbortLink\n\tcall Common_EventScript_SaveGame\n\tgoto_if_eq VAR_RESULT, 0, CableClub_EventScript_AbortLink\n\tmsgbox CableClub_Text_EnjoyUnionRoom, MSGBOX_DEFAULT\n\tclosemessage\n\tspecial HealPlayerParty\n\tsetvar VAR_0x8004, USING_UNION_ROOM\n\tcopyvar VAR_CABLE_CLUB_STATE, VAR_0x8004\n\tcall CableClub_EventScript_OpenUnionRoomBarrier\n\tspecial DrawWholeMapView\n\tplayse SE_CLICK\n\tdelay 60\n\tapplymovement VAR_LAST_TALKED, Movement_AttendantFaceLeft\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, Movement_PlayerApproachLinkRoomLeft\n\twaitmovement 0\n\topendoor 5, 1\n\twaitdooranim\n\tapplymovement LOCALID_PLAYER, Movement_PlayerEnterLinkRoom\n\twaitmovement 0\n\thideplayer\n\tclosedoor 5, 1\n\twaitdooranim\n\tspecial Script_ResetUnionRoomTrade\n\tspecial SetCableClubWarp\n\twarpspinenter MAP_UNION_ROOM, 7, 11\n\twaitstate\n\tspecial RunUnionRoom\n\twaitstate\n\tend"
+  },
+  "label": "CableClub_EventScript_EnterUnionRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {
+    "vars": [
+      "VAR_CABLE_CLUB_STATE",
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ],
+    "maps": [
+      "MAP_UNION_ROOM"
+    ]
+  }
+}

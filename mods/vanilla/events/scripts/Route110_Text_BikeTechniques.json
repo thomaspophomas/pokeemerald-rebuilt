@@ -1,0 +1,19 @@
+{
+  "id": "Route110_Text_BikeTechniques",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/scripts.inc",
+    "sha1": "ee9846425d6a96c03ac988decb3c48ffbd098f22"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110/scripts.inc",
+    "rawScript": ".string \"Learning techniques will make BIKE\\n\"\n\t.string \"riding even more fun.\\p\"\n\t.string \"There are some places that you can\\n\"\n\t.string \"reach only by using a BIKE technique.$\""
+  },
+  "label": "Route110_Text_BikeTechniques",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110/scripts.inc",
+  "references": {}
+}

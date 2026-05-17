@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_PokemonCenter_1F_EventScript_Maniac",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "aea25451773a7c111671a0da53f41f92ce337106"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_BADGE07_GET, LilycoveCity_PokemonCenter_1F_EventScript_ManiacBadTeamGone\n\tmsgbox LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "LilycoveCity_PokemonCenter_1F_EventScript_Maniac",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_BADGE07_GET"
+    ]
+  }
+}

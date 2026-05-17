@@ -1,0 +1,19 @@
+{
+  "id": "Route116_Text_RusturfTunnelSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116/scripts.inc",
+    "sha1": "414d7bb5c4246d6317dd973dc816983566be8cc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route116/scripts.inc",
+    "rawScript": ".string \"RUSTURF TUNNEL\\n\"\n\t.string \"\u201cLinking RUSTBORO and VERDANTURF\\p\"\n\t.string \"\u201cThe tunnel project has been\\n\"\n\t.string \"canceled.\u201d$\""
+  },
+  "label": "Route116_Text_RusturfTunnelSign",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route116/scripts.inc",
+  "references": {}
+}

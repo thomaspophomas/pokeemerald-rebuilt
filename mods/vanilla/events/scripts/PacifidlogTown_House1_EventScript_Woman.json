@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_House1_EventScript_Woman",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_House1/scripts.inc",
+    "sha1": "08537309384759d602a54f903ee3f58e552cdcc4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown_House1/scripts.inc",
+    "rawScript": "msgbox PacifidlogTown_House1_Text_SixDotsOpenThreeDoors, MSGBOX_NPC\n\tend"
+  },
+  "label": "PacifidlogTown_House1_EventScript_Woman",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PacifidlogTown_House1/scripts.inc",
+  "references": {}
+}

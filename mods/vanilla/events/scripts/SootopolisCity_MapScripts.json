@@ -1,0 +1,27 @@
+{
+  "id": "SootopolisCity_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_LOAD, SootopolisCity_OnLoad\n\tmap_script MAP_SCRIPT_ON_TRANSITION, SootopolisCity_OnTransition\n\tmap_script MAP_SCRIPT_ON_RESUME, SootopolisCity_OnResume\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, SootopolisCity_OnFrame\n\tmap_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, SootopolisCity_OnWarp\n\t.byte 0"
+  },
+  "label": "SootopolisCity_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION",
+      "MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE"
+    ]
+  }
+}

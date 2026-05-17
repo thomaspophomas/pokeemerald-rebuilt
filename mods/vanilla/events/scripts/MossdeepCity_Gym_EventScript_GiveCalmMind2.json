@@ -1,0 +1,29 @@
+{
+  "id": "MossdeepCity_Gym_EventScript_GiveCalmMind2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "sha1": "f1b3ae6c76fdfe44b1431df4ea78da5c11a79c08"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "rawScript": "giveitem ITEM_TM_CALM_MIND\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tmsgbox MossdeepCity_Gym_Text_ExplainCalmMind, MSGBOX_DEFAULT\n\tsetflag FLAG_RECEIVED_TM_CALM_MIND\n\trelease\n\tend"
+  },
+  "label": "MossdeepCity_Gym_EventScript_GiveCalmMind2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_TM_CALM_MIND"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_TM_CALM_MIND"
+    ]
+  }
+}

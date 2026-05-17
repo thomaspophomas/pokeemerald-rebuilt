@@ -1,0 +1,23 @@
+{
+  "id": "MarineCave_Entrance_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MarineCave_Entrance/scripts.inc",
+    "sha1": "b97a1b1a91a318f3f9c80f256631980b5b713792"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MarineCave_Entrance/scripts.inc",
+    "rawScript": "setdivewarp MAP_UNDERWATER_MARINE_CAVE, 9, 6\n\tend"
+  },
+  "label": "MarineCave_Entrance_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/MarineCave_Entrance/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_UNDERWATER_MARINE_CAVE"
+    ]
+  }
+}

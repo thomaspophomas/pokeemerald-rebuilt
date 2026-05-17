@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_HoneymoonVowToSeeRarePokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"On our honeymoon, we vowed to see as\\n\"\n\t.string \"many rare POK\u00e9MON as we can.\\p\"\n\t.string \"So we were delighted to see a rare\\n\"\n\t.string \"POK\u00e9MON as soon as we arrived.\\p\"\n\t.string \"I mean, we are totally happy!$\""
+  },
+  "label": "LilycoveCity_Text_HoneymoonVowToSeeRarePokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

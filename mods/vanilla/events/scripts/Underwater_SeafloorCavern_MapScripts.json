@@ -1,0 +1,25 @@
+{
+  "id": "Underwater_SeafloorCavern_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_SeafloorCavern/scripts.inc",
+    "sha1": "0161920db8325168fff9945e78faf08193f0bc50"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Underwater_SeafloorCavern/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, Underwater_SeafloorCavern_OnResume\n\tmap_script MAP_SCRIPT_ON_TRANSITION, Underwater_SeafloorCavern_OnTransition\n\tmap_script MAP_SCRIPT_ON_LOAD, Underwater_SeafloorCavern_OnLoad\n\t.byte 0"
+  },
+  "label": "Underwater_SeafloorCavern_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Underwater_SeafloorCavern/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

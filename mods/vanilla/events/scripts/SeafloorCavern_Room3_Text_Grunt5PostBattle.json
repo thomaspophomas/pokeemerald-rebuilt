@@ -1,0 +1,19 @@
+{
+  "id": "SeafloorCavern_Room3_Text_Grunt5PostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Room3/scripts.inc",
+    "sha1": "114dd5618f9f61a4bdce1766b391fad937adce4c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SeafloorCavern_Room3/scripts.inc",
+    "rawScript": ".string \"You know, we don't dare question\\n\"\n\t.string \"the motives of our leader.\\p\"\n\t.string \"But here you are, just some punk,\\n\"\n\t.string \"going up against our BOSS.\\p\"\n\t.string \"Maybe\u2026\\n\"\n\t.string \"You must be something\u2026$\""
+  },
+  "label": "SeafloorCavern_Room3_Text_Grunt5PostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SeafloorCavern_Room3/scripts.inc",
+  "references": {}
+}

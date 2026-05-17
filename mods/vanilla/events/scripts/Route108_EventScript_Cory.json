@@ -1,0 +1,26 @@
+{
+  "id": "Route108_EventScript_Cory",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route108/scripts.inc",
+    "sha1": "1a6cf722c4ab0951d224d753da9f7fca73caf226"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route108/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_CORY_1, Route108_Text_CoryIntro, Route108_Text_CoryDefeated, Route108_EventScript_CoryRegisterMatchCallAfterBattle\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, Route108_EventScript_CoryRematch\n\tmsgbox Route108_Text_CoryPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route108_EventScript_Cory",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route108/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_CORY_1"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_House3_Text_LearnFromMasterOfPokeblocks",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_House3/scripts.inc",
+    "sha1": "d8cf01aabc47c4a1255f8f58616f8cbdcb863fd4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_House3/scripts.inc",
+    "rawScript": ".string \"Oh, my, my! Are you traveling alone?\\n\"\n\t.string \"But you're so young! Good for you!\\p\"\n\t.string \"I'm sure my kids could learn a thing\\n\"\n\t.string \"or two from you!\\p\"\n\t.string \"Me? I'm a master of {POKEBLOCK}S.\\p\"\n\t.string \"If I get serious just a little, why,\\n\"\n\t.string \"I can concoct great {POKEBLOCK}S.\\p\"\n\t.string \"Would you like to learn from me,\\n\"\n\t.string \"a master of {POKEBLOCK}S?$\""
+  },
+  "label": "LilycoveCity_House3_Text_LearnFromMasterOfPokeblocks",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_House3/scripts.inc",
+  "references": {}
+}

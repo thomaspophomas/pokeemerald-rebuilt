@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_BattleTentLobby_Text_ScottLookingForSomeone",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "sha1": "007b5945200863133fd43941054ec8db085a0356"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "rawScript": ".string \"SCOTT: Hi, {PLAYER}{KUN}!\\n\"\n\t.string \"So you came out to this BATTLE TENT!\\p\"\n\t.string \"The people in these parts tend to be\\n\"\n\t.string \"easygoing and laid-back.\\p\"\n\t.string \"But, you see, what I'm looking for are\\n\"\n\t.string \"people with\u2026\\p\"\n\t.string \"How should I say this?\\p\"\n\t.string \"Someone bursting with the desire\\n\"\n\t.string \"and the drive to win.\\p\"\n\t.string \"If there were a TRAINER like that,\\n\"\n\t.string \"I'd immediately\u2026\\p\"\n\t.string \"Whoops! Never mind!\\n\"\n\t.string \"Keep working at it!$\""
+  },
+  "label": "FallarborTown_BattleTentLobby_Text_ScottLookingForSomeone",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+  "references": {}
+}

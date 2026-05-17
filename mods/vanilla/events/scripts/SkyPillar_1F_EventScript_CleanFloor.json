@@ -1,0 +1,19 @@
+{
+  "id": "SkyPillar_1F_EventScript_CleanFloor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_1F/scripts.inc",
+    "sha1": "8ade0894487ee93b34ec4f20fdba3c1e58f7231e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_1F/scripts.inc",
+    "rawScript": "setmaplayoutindex LAYOUT_SKY_PILLAR_1F_CLEAN\n\treturn"
+  },
+  "label": "SkyPillar_1F_EventScript_CleanFloor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SkyPillar_1F/scripts.inc",
+  "references": {}
+}

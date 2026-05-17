@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleFactoryPreBattleRoom_Text_LetUsRestoreMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+    "sha1": "1a22c52bd73e3edd87503c90dddd414ef0e181f2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+    "rawScript": ".string \"Thank you for competing!\\n\"\n\t.string \"Let us restore your POK\u00e9MON!$\""
+  },
+  "label": "BattleFrontier_BattleFactoryPreBattleRoom_Text_LetUsRestoreMons",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+  "references": {}
+}

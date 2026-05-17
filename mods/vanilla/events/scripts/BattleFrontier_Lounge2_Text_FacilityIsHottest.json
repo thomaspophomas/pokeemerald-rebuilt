@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge2_Text_FacilityIsHottest",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "sha1": "d4d4f7c0802f8118a63eaf9b68eb6bcff146ff4d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "rawScript": ".string \"Let's see now\u2026\\p\"\n\t.string \"It sounds like the {STR_VAR_1}\\n\"\n\t.string \"is the hottest place going.$\""
+  },
+  "label": "BattleFrontier_Lounge2_Text_FacilityIsHottest",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+  "references": {}
+}

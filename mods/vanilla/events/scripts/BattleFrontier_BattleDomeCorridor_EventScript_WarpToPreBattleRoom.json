@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleDomeCorridor_EventScript_WarpToPreBattleRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeCorridor/scripts.inc",
+    "sha1": "17edbc6ae328061934af2e7c6a68048fef30b46a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeCorridor/scripts.inc",
+    "rawScript": "waitmovement 0\n\tsetvar VAR_0x8006, 0\n\twarp MAP_BATTLE_FRONTIER_BATTLE_DOME_PRE_BATTLE_ROOM, 5, 7\n\twaitstate\n\tend"
+  },
+  "label": "BattleFrontier_BattleDomeCorridor_EventScript_WarpToPreBattleRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeCorridor/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_DOME_PRE_BATTLE_ROOM"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge1_EventScript_ChooseMonToShowBreeder",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+    "sha1": "2478a4558563ac9694ec1f8471095e49ece1c602"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+    "rawScript": "special ChoosePartyMon\n\tgoto_if_ne VAR_0x8004, PARTY_NOTHING_CHOSEN, BattleFrontier_Lounge1_EventScript_ShowMonToBreeder\n\tgoto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, BattleFrontier_Lounge1_EventScript_CancelMonSelect\n\tend"
+  },
+  "label": "BattleFrontier_Lounge1_EventScript_ChooseMonToShowBreeder",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_DepartmentStore_1F_Text_WirelessCommIsFun",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc",
+    "sha1": "25a2cc6d86d1739788e578e0911145b04f3d372f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc",
+    "rawScript": ".string \"Wireless Communication is a\\n\"\n\t.string \"lot of fun, isn't it?\\p\"\n\t.string \"I think it lets you do things that\\n\"\n\t.string \"weren't possible before.\\p\"\n\t.string \"For instance, you can now trade\\n\"\n\t.string \"with people you couldn't before.\\p\"\n\t.string \"I think it's going to be exciting!$\"\n\n@ Unused"
+  },
+  "label": "LilycoveCity_DepartmentStore_1F_Text_WirelessCommIsFun",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc",
+  "references": {}
+}

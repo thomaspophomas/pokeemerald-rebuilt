@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+    "sha1": "fc092cb2d8bfc7874143add20c2a81120dbbacc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+    "rawScript": ".string \"{STR_VAR_2} inches!\\n\"\n\t.string \"Oh, my gosh, this is a big one!\\p\"\n\t.string \"It might even beat the big LOTAD\\n\"\n\t.string \"my younger brother saw!\\p\"\n\t.string \"Thanks for showing me.\\n\"\n\t.string \"This is my thanks!$\"\n\n@ Unused"
+  },
+  "label": "SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+  "references": {}
+}

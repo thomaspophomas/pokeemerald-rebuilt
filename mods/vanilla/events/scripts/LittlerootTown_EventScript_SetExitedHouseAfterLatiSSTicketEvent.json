@@ -1,0 +1,24 @@
+{
+  "id": "LittlerootTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": "setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 5\n\tsetvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 5\n\treturn"
+  },
+  "label": "LittlerootTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LITTLEROOT_HOUSES_STATE_BRENDAN",
+      "VAR_LITTLEROOT_HOUSES_STATE_MAY"
+    ]
+  }
+}

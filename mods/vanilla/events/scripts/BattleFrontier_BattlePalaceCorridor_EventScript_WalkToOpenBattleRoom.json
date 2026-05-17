@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceCorridor_EventScript_WalkToOpenBattleRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc",
+    "sha1": "64a2ef91c8d0c246c8214b48e91e15abe9171a8e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc",
+    "rawScript": "applymovement LOCALID_PALACE_CORRIDOR_ATTENDANT, BattleFrontier_BattlePalaceCorridor_Movement_AttendantWalkToOpenBattleRoom\n\tapplymovement LOCALID_PLAYER, BattleFrontier_BattlePalaceCorridor_Movement_PlayerWalkToOpenBattleRoom\n\twaitmovement 0\n\topendoor 10, 3\n\twaitdooranim\n\tapplymovement LOCALID_PALACE_CORRIDOR_ATTENDANT, BattleFrontier_BattlePalaceCorridor_Movement_AttendantEnterBattleRoom\n\tapplymovement LOCALID_PLAYER, BattleFrontier_BattlePalaceCorridor_Movement_PlayerEnterBattleRoom\n\twaitmovement 0\n\tclosedoor 10, 3\n\twaitdooranim"
+  },
+  "label": "BattleFrontier_BattlePalaceCorridor_EventScript_WalkToOpenBattleRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc",
+  "references": {}
+}

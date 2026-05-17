@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestHall_Text_AllSeemToUseDifferentMoves",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "sha1": "9d258f56144116075b6ffd125cc9edb7fc292736"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "rawScript": ".string \"Even when TRAINERS enter the same\\n\"\n\t.string \"kind of POK\u00e9MON, they all seem to use\\l\"\n\t.string \"different moves for appeals.\\p\"\n\t.string \"It's just like the way people have\\n\"\n\t.string \"different styles for battling.$\""
+  },
+  "label": "LilycoveCity_ContestHall_Text_AllSeemToUseDifferentMoves",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+  "references": {}
+}

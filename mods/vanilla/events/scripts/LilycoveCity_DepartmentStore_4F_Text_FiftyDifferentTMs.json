@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc",
+    "sha1": "1c31f94c3331fa62c92524841334a9b9b0a050ac"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc",
+    "rawScript": ".string \"There are so many different kinds of\\n\"\n\t.string \"TM moves.\\p\"\n\t.string \"A catalog I read said there are fifty\\n\"\n\t.string \"different kinds.$\""
+  },
+  "label": "LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc",
+  "references": {}
+}

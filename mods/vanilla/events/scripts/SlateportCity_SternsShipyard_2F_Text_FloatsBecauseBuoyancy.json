@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_SternsShipyard_2F_Text_FloatsBecauseBuoyancy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc",
+    "sha1": "82b7acc291304eea56ffb841fc81b0f02f4cab3a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc",
+    "rawScript": ".string \"Don't you think it's strange that\\n\"\n\t.string \"a ship made of heavy iron floats?\\p\"\n\t.string \"It floats because of a principle\\n\"\n\t.string \"called buoyancy.$\""
+  },
+  "label": "SlateportCity_SternsShipyard_2F_Text_FloatsBecauseBuoyancy",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc",
+  "references": {}
+}

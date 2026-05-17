@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_House3_Text_ReallyWantedToGetBagon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_House3/scripts.inc",
+    "sha1": "ba89fc962199aede788baf3e29a8d5d208c669cb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown_House3/scripts.inc",
+    "rawScript": ".string \"I know I could go looking for one\\n\"\n\t.string \"on my own, but\u2026\\p\"\n\t.string \"But I really wanted to get a BAGON\\n\"\n\t.string \"that another TRAINER caught\u2026$\""
+  },
+  "label": "PacifidlogTown_House3_Text_ReallyWantedToGetBagon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PacifidlogTown_House3/scripts.inc",
+  "references": {}
+}

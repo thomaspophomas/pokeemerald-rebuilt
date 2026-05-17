@@ -1,0 +1,19 @@
+{
+  "id": "Route114_FossilManiacsHouse_Text_DigReturnsYouToEntrance",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_FossilManiacsHouse/scripts.inc",
+    "sha1": "95730e17fb1dc32e597d4ae621cec76ec0f7d421"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114_FossilManiacsHouse/scripts.inc",
+    "rawScript": ".string \"If you make a POK\u00e9MON DIG inside a\\n\"\n\t.string \"cave, you're returned to the entrance\u2026$\""
+  },
+  "label": "Route114_FossilManiacsHouse_Text_DigReturnsYouToEntrance",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route114_FossilManiacsHouse/scripts.inc",
+  "references": {}
+}

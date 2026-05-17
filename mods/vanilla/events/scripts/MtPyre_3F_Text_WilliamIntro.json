@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_3F_Text_WilliamIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_3F/scripts.inc",
+    "sha1": "694f843b2a8c41803b3943fcf555c5a14a36d997"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_3F/scripts.inc",
+    "rawScript": ".string \"The rich atmosphere of the mountain\\n\"\n\t.string \"has elevated my psychic power!\\p\"\n\t.string \"A mere child like you\u2026\\n\"\n\t.string \"You dream of winning?$\""
+  },
+  "label": "MtPyre_3F_Text_WilliamIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_3F/scripts.inc",
+  "references": {}
+}

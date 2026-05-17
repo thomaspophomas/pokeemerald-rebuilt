@@ -1,0 +1,19 @@
+{
+  "id": "AquaHideout_B2F_Text_Grunt8PostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B2F/scripts.inc",
+    "sha1": "2422b13cc4d746236ea4f5c8dbbc6ea26d3d8e36"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_B2F/scripts.inc",
+    "rawScript": ".string \"I'll have to learn about how I can\\n\"\n\t.string \"battle more effectively\u2026$\""
+  },
+  "label": "AquaHideout_B2F_Text_Grunt8PostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AquaHideout_B2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "sha1": "304e0889603d7850b02e01765d969cf3c903eb9e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "rawScript": ".string \"CAPT. STERN: Why\u2026\\p\"\n\t.string \"Why would TEAM AQUA steal my\\n\"\n\t.string \"SUBMARINE EXPLORER 1?\\p\"\n\t.string \"They can't be after the slumbering\\n\"\n\t.string \"POK\u00e9MON at the bottom of the sea\u2026\\p\"\n\t.string \"But even if I were to chase them,\\n\"\n\t.string \"I don't stand a chance against them\u2026$\""
+  },
+  "label": "SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_Harbor/scripts.inc",
+  "references": {}
+}

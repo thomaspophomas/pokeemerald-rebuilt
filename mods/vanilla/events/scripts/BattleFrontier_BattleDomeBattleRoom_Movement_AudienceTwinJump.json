@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomeBattleRoom_Movement_AudienceTwinJump",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "sha1": "2cf5ea83e82fbd2189ced7e0cd4d5f894bf74650"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "rawScript": "delay_16\n\tdelay_16\n\tdelay_16\n\tdelay_16\n\tdelay_16\n\tdelay_16\n\tdelay_16\n\tdelay_16\n\tdelay_16\n\tdelay_16\n\tdelay_16\n\tdelay_16\n\tdelay_8\n\tdisable_jump_landing_ground_effect\n\tjump_in_place_down\n\tdelay_4\n\tjump_in_place_down\n\tenable_jump_landing_ground_effect\n\tstep_end"
+  },
+  "label": "BattleFrontier_BattleDomeBattleRoom_Movement_AudienceTwinJump",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+  "references": {}
+}

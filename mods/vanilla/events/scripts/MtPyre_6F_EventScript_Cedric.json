@@ -1,0 +1,23 @@
+{
+  "id": "MtPyre_6F_EventScript_Cedric",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_6F/scripts.inc",
+    "sha1": "0d8e5d648a922985ae05d7a5cc3cc0018668a34a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_6F/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_CEDRIC, MtPyre_6F_Text_CedricIntro, MtPyre_6F_Text_CedricDefeat\n\tmsgbox MtPyre_6F_Text_CedricPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "MtPyre_6F_EventScript_Cedric",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtPyre_6F/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_CEDRIC"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_EventScript_Man",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity/scripts.inc",
+    "sha1": "a1f53b6d8b894e2f69fc9a5c4e1509ef9ab3ce09"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity/scripts.inc",
+    "rawScript": "msgbox FortreeCity_Text_SawGiganticPokemonInSky, MSGBOX_NPC\n\tend"
+  },
+  "label": "FortreeCity_EventScript_Man",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FortreeCity/scripts.inc",
+  "references": {}
+}

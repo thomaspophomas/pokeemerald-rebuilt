@@ -1,0 +1,19 @@
+{
+  "id": "Route113_Text_FunWalkingThroughAsh",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113/scripts.inc",
+    "sha1": "238e4819cabf545bec77dae988b46382266ced10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route113/scripts.inc",
+    "rawScript": ".string \"It's fun walking through the volcano's\\n\"\n\t.string \"ashes on the ground and grass.\\p\"\n\t.string \"You can see where you walked--it's\\n\"\n\t.string \"really neat!$\""
+  },
+  "label": "Route113_Text_FunWalkingThroughAsh",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route113/scripts.inc",
+  "references": {}
+}

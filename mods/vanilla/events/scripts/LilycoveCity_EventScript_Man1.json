@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_EventScript_Man1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": "lockall\n\tmsgbox LilycoveCity_Text_JustArrivedAndSawRarePokemon, MSGBOX_NPC\n\tapplymovement LOCALID_LILYCOVE_MAN_1, Common_Movement_FaceOriginalDirection\n\tend"
+  },
+  "label": "LilycoveCity_EventScript_Man1",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

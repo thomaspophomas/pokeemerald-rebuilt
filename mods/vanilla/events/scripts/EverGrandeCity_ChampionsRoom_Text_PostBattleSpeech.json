@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "sha1": "4f73bd77d8715e7ac12ff1ac731985eaf75ecd5e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "rawScript": ".string \"WALLACE: The POK\u00e9MON you sent into\\n\"\n\t.string \"battle\u2026\\p\"\n\t.string \"At times they danced like a spring\\n\"\n\t.string \"breeze, and at times they struck\\l\"\n\t.string \"like lightning.\\p\"\n\t.string \"It was with light, yet surefooted,\\n\"\n\t.string \"elegance that you led your POK\u00e9MON.\\p\"\n\t.string \"Even I felt bedazzled by your\\n\"\n\t.string \"masterful performance!\\p\"\n\t.string \"You now stand at the glorious peak\\n\"\n\t.string \"of the POK\u00e9MON LEAGUE.\\p\"\n\t.string \"I now proclaim you to be the new\\n\"\n\t.string \"HOENN region\u2026$\""
+  },
+  "label": "EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+  "references": {}
+}

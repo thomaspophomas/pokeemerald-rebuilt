@@ -1,0 +1,26 @@
+{
+  "id": "VerdanturfTown_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown/scripts.inc",
+    "sha1": "4cf44981cc32f958f4c2d2c20def161a84763311"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown/scripts.inc",
+    "rawScript": "setflag FLAG_VISITED_VERDANTURF_TOWN\n\tsetvar VAR_CONTEST_HALL_STATE, 0\n\tend"
+  },
+  "label": "VerdanturfTown_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/VerdanturfTown/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_VISITED_VERDANTURF_TOWN"
+    ],
+    "vars": [
+      "VAR_CONTEST_HALL_STATE"
+    ]
+  }
+}

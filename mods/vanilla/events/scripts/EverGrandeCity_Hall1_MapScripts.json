@@ -1,0 +1,23 @@
+{
+  "id": "EverGrandeCity_Hall1_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_Hall1/scripts.inc",
+    "sha1": "b74c3de5206029be5b5f2efd55c3311f4fd9200f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_Hall1/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, EverGrandeCity_Hall1_OnWarp\n\t.byte 0"
+  },
+  "label": "EverGrandeCity_Hall1_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/EverGrandeCity_Hall1/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE"
+    ]
+  }
+}

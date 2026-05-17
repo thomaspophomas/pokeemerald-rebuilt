@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonCenter_1F_EventScript_GivePokeblock",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/lilycove_lady.inc",
+    "sha1": "2c2864b913cc532d514481fce3a5e381d5af5f83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/lilycove_lady.inc",
+    "rawScript": "msgbox LilycoveCity_PokemonCenter_1F_Text_IllUseYourPokeblock, MSGBOX_DEFAULT\n\tspecial SetContestLadyGivenPokeblock\n\tspecial GetContestLadyMonSpecies\n\tgoto LilycoveCity_PokemonCenter_1F_EventScript_FeedPokeblock\n\tend\n\n@ VAR_0x8004 here is the return value from GivePokeblockToContestLady"
+  },
+  "label": "LilycoveCity_PokemonCenter_1F_EventScript_GivePokeblock",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/lilycove_lady.inc",
+  "references": {}
+}

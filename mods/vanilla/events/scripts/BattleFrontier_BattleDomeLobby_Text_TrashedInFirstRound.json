@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomeLobby_Text_TrashedInFirstRound",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "sha1": "c5673b719ade6a47e6fe1e3055270ca454748cfd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "rawScript": ".string \"I ran into one of the tournament\\n\"\n\t.string \"favorites in the very first round.\\p\"\n\t.string \"Of course I got trashed\u2026$\""
+  },
+  "label": "BattleFrontier_BattleDomeLobby_Text_TrashedInFirstRound",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+  "references": {}
+}

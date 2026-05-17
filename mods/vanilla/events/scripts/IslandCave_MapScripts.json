@@ -1,0 +1,25 @@
+{
+  "id": "IslandCave_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/IslandCave/scripts.inc",
+    "sha1": "36e3ca89a53bdf101cff26d6ef8efcf46552e41d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/IslandCave/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, IslandCave_OnResume\n\tmap_script MAP_SCRIPT_ON_LOAD, IslandCave_OnLoad\n\tmap_script MAP_SCRIPT_ON_TRANSITION, IslandCave_OnTransition\n\t.byte 0"
+  },
+  "label": "IslandCave_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/IslandCave/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

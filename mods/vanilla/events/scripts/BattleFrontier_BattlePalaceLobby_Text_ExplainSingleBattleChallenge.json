@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_Text_ExplainSingleBattleChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": ".string \"In the BATTLE PALACE, there are\\n\"\n\t.string \"several auditoriums for SINGLE BATTLES\\l\"\n\t.string \"that are named SINGLE BATTLE HALLS.\\p\"\n\t.string \"The SINGLE BATTLES are conducted in\\n\"\n\t.string \"the usual way, except with one crucial\\l\"\n\t.string \"rule that must be obeyed.\\p\"\n\t.string \"TRAINERS are permitted only to switch\\n\"\n\t.string \"their POK\u00e9MON in and out.\\p\"\n\t.string \"TRAINERS are otherwise forbidden to\\n\"\n\t.string \"command their POK\u00e9MON.\\p\"\n\t.string \"The POK\u00e9MON are to behave according\\n\"\n\t.string \"to their nature and battle on their own.\\p\"\n\t.string \"You must put your trust in your\\n\"\n\t.string \"POK\u00e9MON and watch over them.\\p\"\n\t.string \"If you achieve the honor of beating\\n\"\n\t.string \"seven TRAINERS in succession,\\l\"\n\t.string \"we will present you with Battle Points.\\p\"\n\t.string \"If you want to interrupt your\\n\"\n\t.string \"challenge, you must save the game.\\p\"\n\t.string \"If you don't save before interrupting,\\n\"\n\t.string \"you will be disqualified.$\""
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_Text_ExplainSingleBattleChallenge",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {}
+}

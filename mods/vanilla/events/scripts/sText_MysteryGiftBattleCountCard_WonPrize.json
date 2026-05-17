@@ -1,0 +1,19 @@
+{
+  "id": "sText_MysteryGiftBattleCountCard_WonPrize",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_battle_card.inc",
+    "sha1": "5c337e1d015559dcfd7443dbb3c08146005fa127"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_battle_card.inc",
+    "rawScript": ".string \"Thank you for using the MYSTERY\\n\"\n\t.string \"GIFT System.\\p\"\n\t.string \"Congratulations!\\p\"\n\t.string \"You have won a prize for winning\\n\"\n\t.string \"three battles!\\p\"\n\t.string \"We hope you will be inspired to\\n\"\n\t.string \"battle some more.$\""
+  },
+  "label": "sText_MysteryGiftBattleCountCard_WonPrize",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_battle_card.inc",
+  "references": {}
+}

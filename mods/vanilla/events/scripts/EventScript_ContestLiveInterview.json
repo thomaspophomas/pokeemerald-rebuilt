@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_ContestLiveInterview",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/interview.inc",
+    "sha1": "bd1d5135ce2e319a18291aebafac5c4760b90500"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/interview.inc",
+    "rawScript": "setvar VAR_0x8005, TVSHOW_CONTEST_LIVE_UPDATES\n\tspecial InterviewBefore\n\tgoto_if_eq VAR_RESULT, TRUE, EventScript_ContestLiveInterviewEnd\n\tsetvar VAR_0x8005, TVSHOW_CONTEST_LIVE_UPDATES\n\tspecial InterviewAfter\n\treturn"
+  },
+  "label": "EventScript_ContestLiveInterview",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/interview.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

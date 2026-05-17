@@ -1,0 +1,19 @@
+{
+  "id": "BattlePyramid_Text_FourItemsRemaining3",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "sha1": "a6f6792ac2bc39a05028dabd4e88f5984d84d4a5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "rawScript": ".string \"How's your stock of items holding up?\\p\"\n\t.string \"I reckon there are four items left\\n\"\n\t.string \"waiting to be found on this floor.$\""
+  },
+  "label": "BattlePyramid_Text_FourItemsRemaining3",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+  "references": {}
+}

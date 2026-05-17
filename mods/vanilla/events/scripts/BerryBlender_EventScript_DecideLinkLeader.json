@@ -1,0 +1,23 @@
+{
+  "id": "BerryBlender_EventScript_DecideLinkLeader",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": "message LilycoveCity_ContestLobby_Text_PleaseDecideLinkLeader\n\twaitmessage\n\tmultichoice 16, 6, MULTI_LINK_LEADER, FALSE\n\tswitch VAR_RESULT\n\tcase 0, BerryBlender_EventScript_TryJoinGroup\n\tcase 1, BerryBlender_EventScript_TryLeadGroup\n\tcase 2, BerryBlender_EventScript_CloseLink\n\tcase MULTI_B_PRESSED, BerryBlender_EventScript_CloseLink\n\tend"
+  },
+  "label": "BerryBlender_EventScript_DecideLinkLeader",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

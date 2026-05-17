@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_House1_EventScript_ReceivedRockSmash",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_House1/scripts.inc",
+    "sha1": "2d2b0f74cde450b8e601ae7d75ea888588a68e66"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_House1/scripts.inc",
+    "rawScript": "msgbox MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "MauvilleCity_House1_EventScript_ReceivedRockSmash",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_House1/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_EventScript_SetRivalBirchPosForDexUpgradeMale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": "setobjectxy LOCALID_LITTLEROOT_RIVAL, 6, 10\n\tsetobjectxy LOCALID_LITTLEROOT_BIRCH, 5, 10\n\tend"
+  },
+  "label": "LittlerootTown_EventScript_SetRivalBirchPosForDexUpgradeMale",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {}
+}

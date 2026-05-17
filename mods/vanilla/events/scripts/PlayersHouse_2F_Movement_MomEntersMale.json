@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_2F_Movement_MomEntersMale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/players_house.inc",
+    "sha1": "0f3da1347500315ef212a252409f1d410b0d226c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/players_house.inc",
+    "rawScript": "delay_8\n\twalk_down\n\twalk_in_place_faster_left\n\tdelay_16\n\tdelay_8\n\twalk_left\n\tstep_end"
+  },
+  "label": "PlayersHouse_2F_Movement_MomEntersMale",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/scripts/players_house.inc",
+  "references": {}
+}

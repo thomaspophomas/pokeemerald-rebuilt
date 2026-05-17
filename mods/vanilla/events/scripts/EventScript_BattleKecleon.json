@@ -1,0 +1,27 @@
+{
+  "id": "EventScript_BattleKecleon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/kecleon.inc",
+    "sha1": "853d51ea059b0385e54680a0e8673b749de3efc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/kecleon.inc",
+    "rawScript": "msgbox Kecleon_Text_UseDevonScopeMonAttacked, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement VAR_LAST_TALKED, Common_Movement_FacePlayer\n\twaitmovement 0\n\tapplymovement VAR_LAST_TALKED, Movement_KecleonAppears\n\twaitmovement 0\n\twaitse\n\tplaymoncry SPECIES_KECLEON, CRY_MODE_ENCOUNTER\n\tdelay 40\n\twaitmoncry\n\tsetwildbattle SPECIES_KECLEON, 30\n\tsetflag FLAG_SYS_CTRL_OBJ_DELETE\n\tdowildbattle\n\tclearflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_WON, EventScript_RemoveKecleon\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_RAN, EventScript_RemoveKecleon\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, EventScript_RemoveKecleon\n\trelease\n\tend"
+  },
+  "label": "EventScript_BattleKecleon",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/kecleon.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_CTRL_OBJ_DELETE"
+    ],
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ]
+  }
+}

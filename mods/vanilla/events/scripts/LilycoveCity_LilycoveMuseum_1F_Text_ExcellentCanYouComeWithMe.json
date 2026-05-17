@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_1F_Text_ExcellentCanYouComeWithMe",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+    "sha1": "9b7ed7bb941e379aabaa59bf0da8ffe089df98ba"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+    "rawScript": ".string \"Ah, excellent!\\n\"\n\t.string \"You do like paintings!\\p\"\n\t.string \"Then, may I ask you to come with me?$\""
+  },
+  "label": "LilycoveCity_LilycoveMuseum_1F_Text_ExcellentCanYouComeWithMe",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+  "references": {}
+}

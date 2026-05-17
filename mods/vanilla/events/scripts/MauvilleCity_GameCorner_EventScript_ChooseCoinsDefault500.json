@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_GameCorner_EventScript_ChooseCoinsDefault500",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "sha1": "3db7cd216c9a2c35e8176ef8b4a1d9ec68649c7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "rawScript": "multichoicedefault 15, 0, MULTI_GAME_CORNER_COINS, 1, FALSE\n\tswitch VAR_RESULT\n\tcase 0, MauvilleCity_GameCorner_EventScript_Buy50Coins\n\tcase 1, MauvilleCity_GameCorner_EventScript_Buy500Coins\n\tgoto MauvilleCity_GameCorner_EventScript_CancelBuyCoins\n\tend"
+  },
+  "label": "MauvilleCity_GameCorner_EventScript_ChooseCoinsDefault500",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

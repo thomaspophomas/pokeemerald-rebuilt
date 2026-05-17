@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Harbor_Text_FerryUnavailable",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "sha1": "ffd83f00915b03bfdd96f51950251d00dd19dbcb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "rawScript": ".string \"I beg your pardon?\\n\"\n\t.string \"You're looking for a ship?\\p\"\n\t.string \"I'm sorry, the ferry service isn't\\n\"\n\t.string \"available at present\u2026$\""
+  },
+  "label": "LilycoveCity_Harbor_Text_FerryUnavailable",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_Harbor/scripts.inc",
+  "references": {}
+}

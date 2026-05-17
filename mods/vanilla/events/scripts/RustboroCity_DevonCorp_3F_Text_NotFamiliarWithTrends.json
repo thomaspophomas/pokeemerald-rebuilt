@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+    "sha1": "c9490be6666cd7ea155cae31641c765560806127"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+    "rawScript": ".string \"MR. STONE: Since my youth, I've immersed\\n\"\n\t.string \"myself in work.\\p\"\n\t.string \"Consequently, I'm not familiar with\\n\"\n\t.string \"trends and that sort of thing.\\p\"\n\t.string \"But do young people all want to be\\n\"\n\t.string \"TRAINERS in the POK\u00e9MON LEAGUE?$\""
+  },
+  "label": "RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+  "references": {}
+}

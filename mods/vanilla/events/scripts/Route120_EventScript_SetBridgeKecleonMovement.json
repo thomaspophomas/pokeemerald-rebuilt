@@ -1,0 +1,19 @@
+{
+  "id": "Route120_EventScript_SetBridgeKecleonMovement",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route120/scripts.inc",
+    "sha1": "c3ab570e7c5b1ea2c74415d703646f5a362564ad"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route120/scripts.inc",
+    "rawScript": "setobjectmovementtype LOCALID_BRIDGE_KECLEON_SHADOW, MOVEMENT_TYPE_FACE_RIGHT\n\treturn"
+  },
+  "label": "Route120_EventScript_SetBridgeKecleonMovement",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route120/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleDomePreBattleRoom_EventScript_AskReadyForNextRound",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+    "sha1": "18c4052c546a6c71ff18234f6ef3a8130ec538d0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+    "rawScript": "call BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForNextRoundMessage\n\twaitmessage\n\tswitch VAR_RESULT  @ No case?\n\tcall BattleFrontier_EventScript_GetCantRecordBattle\n\tgoto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattleDomePreBattleRoom_EventScript_AskReadyForNextRoundNoRecord\n\tmultichoice 16, 0, MULTI_TOURNEY_WITH_RECORD, TRUE\n\tswitch VAR_RESULT\n\tcase 0, BattleFrontier_BattleDomePreBattleRoom_EventScript_ShowOpponentInfo\n\tcase 1, BattleFrontier_BattleDomePreBattleRoom_EventScript_ShowTourneyTree\n\tcase 2, BattleFrontier_BattleDomePreBattleRoom_EventScript_ContinueChallenge\n\tcase 3, BattleFrontier_BattleDomePreBattleRoom_EventScript_AskRecordBattle\n\tcase 4, BattleFrontier_BattleDomePreBattleRoom_EventScript_AskPauseChallenge\n\tcase 5, BattleFrontier_BattleDomePreBattleRoom_EventScript_AskRetireChallenge\n\tcase MULTI_B_PRESSED, BattleFrontier_BattleDomePreBattleRoom_EventScript_AskReadyForNextRound"
+  },
+  "label": "BattleFrontier_BattleDomePreBattleRoom_EventScript_AskReadyForNextRound",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

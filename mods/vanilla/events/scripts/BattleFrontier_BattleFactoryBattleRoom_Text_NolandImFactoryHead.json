@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleFactoryBattleRoom_Text_NolandImFactoryHead",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+    "sha1": "d6c9d92d97f61a06b3670b7d509844f3bc902eb3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+    "rawScript": ".string \"Hey, my name's NOLAND!\\n\"\n\t.string \"I'm basically in charge of this place,\\l\"\n\t.string \"which is why I'm the FACTORY HEAD!\\p\"\n\t.string \"I had a look at your Battle Swap data.\\p\"\n\t.string \"You seem to have the right idea,\\n\"\n\t.string \"but you're still square in your head!\\p\"\n\t.string \"Listen up, okay? Knowledge isn't only\\n\"\n\t.string \"about reading books or doing desk work.\\p\"\n\t.string \"Just doing that sort of thing\u2026\\n\"\n\t.string \"It may as well be useless!\\p\"\n\t.string \"You have to experience things with\\n\"\n\t.string \"your heart and your body, understand?\\p\"\n\t.string \"I'll take you on under the same\\n\"\n\t.string \"conditions as you.\\p\"\n\t.string \"I'll be using rental POK\u00e9MON, too!$\""
+  },
+  "label": "BattleFrontier_BattleFactoryBattleRoom_Text_NolandImFactoryHead",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+  "references": {}
+}

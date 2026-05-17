@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomeLobby_Text_ExplainDoubleKORules",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "sha1": "c5673b719ade6a47e6fe1e3055270ca454748cfd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "rawScript": ".string \"If battling POK\u00e9MON faint at the same\\n\"\n\t.string \"time--a double KO--in a tournament\\l\"\n\t.string \"match, the REFEREES will review\\l\"\n\t.string \"the match and declare the winner.$\""
+  },
+  "label": "BattleFrontier_BattleDomeLobby_Text_ExplainDoubleKORules",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+  "references": {}
+}

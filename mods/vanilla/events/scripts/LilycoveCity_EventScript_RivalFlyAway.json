@@ -1,0 +1,26 @@
+{
+  "id": "LilycoveCity_EventScript_RivalFlyAway",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": "closemessage\n\tapplymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tdelay 50\n\tsetfieldeffectargument 0, 1\n\tdofieldeffect FLDEFF_NPCFLY_OUT\n\tdelay 15\n\tremoveobject VAR_LAST_TALKED\n\twaitfieldeffect FLDEFF_NPCFLY_OUT\n\tsavebgm MUS_DUMMY\n\tfadedefaultbgm\n\tsetflag FLAG_MET_RIVAL_LILYCOVE\n\trelease\n\tend"
+  },
+  "label": "LilycoveCity_EventScript_RivalFlyAway",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_RIVAL_LILYCOVE"
+    ],
+    "vars": [
+      "VAR_LAST_TALKED"
+    ]
+  }
+}

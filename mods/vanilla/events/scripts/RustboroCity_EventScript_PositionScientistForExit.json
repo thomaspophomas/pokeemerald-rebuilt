@@ -1,0 +1,23 @@
+{
+  "id": "RustboroCity_EventScript_PositionScientistForExit",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": "goto_if_eq VAR_TEMP_0, 11, RustboroCity_EventScript_PositionScientistLeftExit\n\tsetobjectxyperm LOCALID_RUSTBORO_SCIENTIST, 12, 15\n\tend"
+  },
+  "label": "RustboroCity_EventScript_PositionScientistForExit",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0"
+    ]
+  }
+}

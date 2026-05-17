@@ -1,0 +1,24 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_FRAME_TABLE, LilycoveCity_PokemonTrainerFanClub_OnFrame\n\tmap_script MAP_SCRIPT_ON_TRANSITION, LilycoveCity_PokemonTrainerFanClub_OnTransition\n\t.byte 0\n\n\t@ See field_specials.c for a breakdown of the Fan Club and its variables"
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

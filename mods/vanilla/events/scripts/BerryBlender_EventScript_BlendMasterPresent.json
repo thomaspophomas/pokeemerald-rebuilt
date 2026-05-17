@@ -1,0 +1,23 @@
+{
+  "id": "BerryBlender_EventScript_BlendMasterPresent",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": "lockall\n\tsetvar NUM_OPPONENTS, 1\n\tmsgbox BerryBlender_Text_SeeMyMasteryInAction, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, BerryBlender_EventScript_TryBlendWithBlendMaster\n\tmsgbox BerryBlender_Text_TooBusyNowIsee, MSGBOX_DEFAULT\n\treleaseall\n\tend"
+  },
+  "label": "BerryBlender_EventScript_BlendMasterPresent",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

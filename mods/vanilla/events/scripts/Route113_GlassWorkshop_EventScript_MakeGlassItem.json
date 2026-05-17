@@ -1,0 +1,23 @@
+{
+  "id": "Route113_GlassWorkshop_EventScript_MakeGlassItem",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "sha1": "6a7101e66439e9abedcc55c8fc60b573807258b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "rawScript": "msgbox Route113_GlassWorkshop_Text_IllMakeItemForYou, MSGBOX_DEFAULT\n\tclosemessage\n\tfadescreen FADE_TO_BLACK\n\tplayse SE_SELECT\n\tdelay 30\n\tfadescreen FADE_FROM_BLACK\n\tmsgbox Route113_GlassWorkshop_Text_IveFinishedGlassItem, MSGBOX_DEFAULT\n\tcall_if_eq VAR_0x8009, 0, Route113_GlassWorkshop_EventScript_GiveGlassFlute\n\tcall_if_eq VAR_0x8009, 1, Route113_GlassWorkshop_EventScript_GiveGlassDecor\n\tsetvar VAR_GLASS_WORKSHOP_STATE, 2\n\trelease\n\tend"
+  },
+  "label": "Route113_GlassWorkshop_EventScript_MakeGlassItem",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route113_GlassWorkshop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_GLASS_WORKSHOP_STATE"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "MarineCave_End_EventScript_TryRemoveKyogre",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MarineCave_End/scripts.inc",
+    "sha1": "9fc74c6c75db5dcc1953c7f9fbd123e07dd022d5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MarineCave_End/scripts.inc",
+    "rawScript": "specialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn\n\tremoveobject LOCALID_MARINE_CAVE_KYOGRE\n\treturn"
+  },
+  "label": "MarineCave_End_EventScript_TryRemoveKyogre",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MarineCave_End/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "BirthIsland_Exterior_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BirthIsland_Exterior/scripts.inc",
+    "sha1": "1e5973feb9102d3690432e451cddaf05cc140d76"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BirthIsland_Exterior/scripts.inc",
+    "rawScript": "call_if_set FLAG_SYS_CTRL_OBJ_DELETE, BirthIsland_Exterior_EventScript_TryRemoveDeoxys\n\tend"
+  },
+  "label": "BirthIsland_Exterior_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/BirthIsland_Exterior/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_CTRL_OBJ_DELETE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "EventScript_SetRespawnLavaridgePkmnCenter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/field_poison.inc",
+    "sha1": "5f88349e5a39d50912f00b834304b6a66214eee8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/field_poison.inc",
+    "rawScript": "setrespawn HEAL_LOCATION_LAVARIDGE_TOWN\n\treturn"
+  },
+  "label": "EventScript_SetRespawnLavaridgePkmnCenter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/field_poison.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Std_RegisteredInMatchCall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/trainer_script.inc",
+    "sha1": "4e5e9c336d839f6e5d36d652600ff46ee7d7f831"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/trainer_script.inc",
+    "rawScript": "buffertrainerclassname STR_VAR_1, VAR_0x8000\n\tbuffertrainername STR_VAR_2, VAR_0x8000\n\tclosemessage\n\tdelay 30\n\tplayfanfare MUS_REGISTER_MATCH_CALL\n\tmsgbox gText_RegisteredTrainerinPokeNav, MSGBOX_DEFAULT\n\twaitfanfare\n\tclosemessage\n\tdelay 30\n\treturn"
+  },
+  "label": "Std_RegisteredInMatchCall",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/scripts/trainer_script.inc",
+  "references": {}
+}

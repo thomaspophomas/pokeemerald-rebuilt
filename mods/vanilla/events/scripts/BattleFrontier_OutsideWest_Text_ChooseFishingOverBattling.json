@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideWest_Text_ChooseFishingOverBattling",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": ".string \"I believe I'm the only person here who,\\n\"\n\t.string \"for some unknown reason, would choose\\l\"\n\t.string \"fishing over battling.\\p\"\n\t.string \"Huh? You can't catch anything here?\\n\"\n\t.string \"That's disappointing\u2026$\""
+  },
+  "label": "BattleFrontier_OutsideWest_Text_ChooseFishingOverBattling",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {}
+}

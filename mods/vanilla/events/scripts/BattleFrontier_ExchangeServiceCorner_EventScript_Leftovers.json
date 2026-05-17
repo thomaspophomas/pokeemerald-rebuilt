@@ -1,0 +1,26 @@
+{
+  "id": "BattleFrontier_ExchangeServiceCorner_EventScript_Leftovers",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
+    "sha1": "3bee0ca682f7b98f6a5f16085e830466d47ef6e9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmLeftovers, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem\n\tsetvar VAR_0x8008, 48\n\tsetvar VAR_0x8009, ITEM_LEFTOVERS\n\tgoto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize\n\tend"
+  },
+  "label": "BattleFrontier_ExchangeServiceCorner_EventScript_Leftovers",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_LEFTOVERS"
+    ]
+  }
+}

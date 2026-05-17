@@ -1,0 +1,29 @@
+{
+  "id": "FortreeCity_Gym_EventScript_WinonaDefeated",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/scripts.inc",
+    "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Gym/scripts.inc",
+    "rawScript": "message FortreeCity_Gym_Text_ReceivedFeatherBadge\n\twaitmessage\n\tcall Common_EventScript_PlayGymBadgeFanfare\n\tmsgbox FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis, MSGBOX_DEFAULT\n\tsetflag FLAG_DEFEATED_FORTREE_GYM\n\tsetflag FLAG_BADGE06_GET\n\tsetvar VAR_0x8008, 6\n\tcall Common_EventScript_SetGymTrainers\n\tcall FortreeCity_Gym_EventScript_GiveAerialAce\n\tclosemessage\n\tdelay 30\n\tplayfanfare MUS_REGISTER_MATCH_CALL\n\tmsgbox FortreeCity_Gym_Text_RegisteredWinona, MSGBOX_DEFAULT\n\twaitfanfare\n\tclosemessage\n\tdelay 30\n\tsetflag FLAG_ENABLE_WINONA_MATCH_CALL\n\tsetvar VAR_SCOTT_FORTREE_CALL_STEP_COUNTER, 0\n\tsetflag FLAG_SCOTT_CALL_FORTREE_GYM\n\trelease\n\tend"
+  },
+  "label": "FortreeCity_Gym_EventScript_WinonaDefeated",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FortreeCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_BADGE06_GET",
+      "FLAG_DEFEATED_FORTREE_GYM",
+      "FLAG_ENABLE_WINONA_MATCH_CALL",
+      "FLAG_SCOTT_CALL_FORTREE_GYM"
+    ],
+    "vars": [
+      "VAR_SCOTT_FORTREE_CALL_STEP_COUNTER"
+    ]
+  }
+}

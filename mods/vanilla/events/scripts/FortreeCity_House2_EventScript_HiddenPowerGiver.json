@@ -1,0 +1,30 @@
+{
+  "id": "FortreeCity_House2_EventScript_HiddenPowerGiver",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_House2/scripts.inc",
+    "sha1": "44bcbe274ccc5a3585d32b51557300ad9273b5c1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_House2/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_TM_HIDDEN_POWER, FortreeCity_House2_EventScript_ExplainHiddenPower\n\tcall_if_unset FLAG_MET_HIDDEN_POWER_GIVER, FortreeCity_House2_EventScript_Greeting\n\tmsgbox FortreeCity_House2_Text_CoinInWhichHand, MSGBOX_DEFAULT\n\tmultichoice 21, 8, MULTI_RIGHTLEFT, TRUE\n\tswitch VAR_RESULT\n\tcase 1, FortreeCity_House2_EventScript_WrongGuess\n\tmsgbox FortreeCity_House2_Text_CorrectTryAgainWhichHand, MSGBOX_DEFAULT\n\tmultichoice 21, 8, MULTI_RIGHTLEFT, TRUE\n\tswitch VAR_RESULT\n\tcase 1, FortreeCity_House2_EventScript_WrongGuess\n\tmsgbox FortreeCity_House2_Text_CorrectTryAgainWhichHand2, MSGBOX_DEFAULT\n\tmultichoice 21, 8, MULTI_RIGHTLEFT, TRUE\n\tswitch VAR_RESULT\n\tcase 0, FortreeCity_House2_EventScript_WrongGuess\n\tmsgbox FortreeCity_House2_Text_YourHiddenPowerHasAwoken, MSGBOX_DEFAULT\n\tgiveitem ITEM_TM_HIDDEN_POWER\n\tgoto_if_eq VAR_RESULT, 0, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_RECEIVED_TM_HIDDEN_POWER\n\tmsgbox FortreeCity_House2_Text_ExplainHiddenPower, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "FortreeCity_House2_EventScript_HiddenPowerGiver",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FortreeCity_House2/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_HIDDEN_POWER_GIVER",
+      "FLAG_RECEIVED_TM_HIDDEN_POWER"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_TM_HIDDEN_POWER"
+    ]
+  }
+}

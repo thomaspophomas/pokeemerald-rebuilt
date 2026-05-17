@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Gym_Text_DariusIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/scripts.inc",
+    "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Gym/scripts.inc",
+    "rawScript": ".string \"You'd better know that there are all\\n\"\n\t.string \"sorts of FLYING-type POK\u00e9MON.\\p\"\n\t.string \"You do know that, right?$\""
+  },
+  "label": "FortreeCity_Gym_Text_DariusIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_Gym/scripts.inc",
+  "references": {}
+}

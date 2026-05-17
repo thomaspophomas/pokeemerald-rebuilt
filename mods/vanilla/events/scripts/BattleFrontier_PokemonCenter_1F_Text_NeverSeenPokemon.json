@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc",
+    "sha1": "e4fb392a503e70d6989c6dc6307b6eca9019ac04"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"There was someone here using a \\n\"\n\t.string \"POK\u00e9MON I've never seen before.\\p\"\n\t.string \"I never learned about it at\\n\"\n\t.string \"TRAINER'S SCHOOL at least.\\p\"\n\t.string \"I wonder where you can catch POK\u00e9MON\\n\"\n\t.string \"like that.$\""
+  },
+  "label": "BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

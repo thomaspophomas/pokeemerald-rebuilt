@@ -1,0 +1,28 @@
+{
+  "id": "EverGrandeCity_PokemonLeague_1F_EventScript_DoorGuard",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+    "sha1": "a55305762ef4a1d7b0cbf882528ff161154a969b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_set FLAG_ENTERED_ELITE_FOUR, EverGrandeCity_PokemonLeague_1F_EventScript_GoForth\n\tgetplayerxy VAR_TEMP_0, VAR_TEMP_1\n\tcall_if_ge VAR_TEMP_0, 11, EverGrandeCity_PokemonLeague_1F_EventScript_PlayerMoveToFrontFromRight\n\tcall_if_le VAR_TEMP_0, 8, EverGrandeCity_PokemonLeague_1F_EventScript_PlayerMoveToFrontFromLeft\n\tmessage EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges\n\twaitmessage\n\tdelay 120\n\tgoto_if_unset FLAG_BADGE06_GET, EverGrandeCity_PokemonLeague_1F_EventScript_NotAllBadges\n\tclosemessage\n\tapplymovement LOCALID_LEAGUE_GUARD_1, EverGrandeCity_PokemonLeague_1F_Movement_LeftGuardOutOfWay\n\tapplymovement LOCALID_LEAGUE_GUARD_2, EverGrandeCity_PokemonLeague_1F_Movement_RightGuardOutOfWay\n\twaitmovement 0\n\tdelay 10\n\tplayfanfare MUS_OBTAIN_BADGE\n\tmessage EverGrandeCity_PokemonLeague_1F_Text_GoForth\n\twaitmessage\n\twaitfanfare\n\tclosemessage\n\tcopyobjectxytoperm LOCALID_LEAGUE_GUARD_1\n\tcopyobjectxytoperm LOCALID_LEAGUE_GUARD_2\n\tsetflag FLAG_ENTERED_ELITE_FOUR\n\treleaseall\n\tend"
+  },
+  "label": "EverGrandeCity_PokemonLeague_1F_EventScript_DoorGuard",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_BADGE06_GET",
+      "FLAG_ENTERED_ELITE_FOUR"
+    ],
+    "vars": [
+      "VAR_TEMP_0",
+      "VAR_TEMP_1"
+    ]
+  }
+}

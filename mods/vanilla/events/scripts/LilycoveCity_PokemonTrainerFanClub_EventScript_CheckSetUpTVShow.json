@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_EventScript_CheckSetUpTVShow",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": "setvar VAR_0x8005, NUM_TRAINER_FAN_CLUB_MEMBERS\n\tsetvar VAR_0x8004, FANCLUB_MEMBER1\n\tspecialvar VAR_RESULT, IsFanClubMemberFanOfPlayer\n\tcall_if_eq VAR_RESULT, FALSE, LilycoveCity_PokemonTrainerFanClub_EventScript_CountNotPlayersFan\n\tsetvar VAR_0x8004, FANCLUB_MEMBER2\n\tspecialvar VAR_RESULT, IsFanClubMemberFanOfPlayer\n\tcall_if_eq VAR_RESULT, FALSE, LilycoveCity_PokemonTrainerFanClub_EventScript_CountNotPlayersFan\n\tsetvar VAR_0x8004, FANCLUB_MEMBER3\n\tspecialvar VAR_RESULT, IsFanClubMemberFanOfPlayer\n\tcall_if_eq VAR_RESULT, FALSE, LilycoveCity_PokemonTrainerFanClub_EventScript_CountNotPlayersFan\n\tsetvar VAR_0x8004, FANCLUB_MEMBER4\n\tspecialvar VAR_RESULT, IsFanClubMemberFanOfPlayer\n\tcall_if_eq VAR_RESULT, FALSE, LilycoveCity_PokemonTrainerFanClub_EventScript_CountNotPlayersFan\n\tsetvar VAR_0x8004, FANCLUB_MEMBER5\n\tspecialvar VAR_RESULT, IsFanClubMemberFanOfPlayer\n\tcall_if_eq VAR_RESULT, FALSE, LilycoveCity_PokemonTrainerFanClub_EventScript_CountNotPlayersFan\n\tsetvar VAR_0x8004, FANCLUB_MEMBER6\n\tspecialvar VAR_RESULT, IsFanClubMemberFanOfPlayer\n\tcall_if_eq VAR_RESULT, FALSE, LilycoveCity_PokemonTrainerFanClub_EventScript_CountNotPlayersFan\n\tsetvar VAR_0x8004, FANCLUB_MEMBER7\n\tspecialvar VAR_RESULT, IsFanClubMemberFanOfPlayer\n\tcall_if_eq VAR_RESULT, FALSE, LilycoveCity_PokemonTrainerFanClub_EventScript_CountNotPlayersFan\n\tsetvar VAR_0x8004, FANCLUB_MEMBER8\n\tspecialvar VAR_RESULT, IsFanClubMemberFanOfPlayer\n\tcall_if_eq VAR_RESULT, FALSE, LilycoveCity_PokemonTrainerFanClub_EventScript_CountNotPlayersFan\n\tgoto_if_ge VAR_0x8005, 5, LilycoveCity_PokemonTrainerFanClub_EventScript_TrySetUpTVShow\n\treturn"
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_EventScript_CheckSetUpTVShow",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

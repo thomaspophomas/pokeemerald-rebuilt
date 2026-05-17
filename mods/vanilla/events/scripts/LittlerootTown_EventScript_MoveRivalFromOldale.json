@@ -1,0 +1,26 @@
+{
+  "id": "LittlerootTown_EventScript_MoveRivalFromOldale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": "setvar VAR_OLDALE_RIVAL_STATE, 2\n\tsetflag FLAG_HIDE_OLDALE_TOWN_RIVAL\n\treturn"
+  },
+  "label": "LittlerootTown_EventScript_MoveRivalFromOldale",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_OLDALE_TOWN_RIVAL"
+    ],
+    "vars": [
+      "VAR_OLDALE_RIVAL_STATE"
+    ]
+  }
+}

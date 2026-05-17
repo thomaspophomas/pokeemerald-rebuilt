@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestLobby_Text_ExplainContestRanks",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": ".string \"There are four ranks of POK\u00e9MON\\n\"\n\t.string \"CONTESTS.\\p\"\n\t.string \"NORMAL, SUPER, HYPER, and MASTER\\n\"\n\t.string \"are the four ranks.\\p\"\n\t.string \"In the NORMAL Rank, any POK\u00e9MON may\\n\"\n\t.string \"enter.\\p\"\n\t.string \"Any POK\u00e9MON that won a NORMAL Rank\\n\"\n\t.string \"CONTEST may move up to the SUPER Rank\\l\"\n\t.string \"in the same category.\\p\"\n\t.string \"In the same way, a SUPER Rank winner\\n\"\n\t.string \"can move up to the HYPER Rank, and\\l\"\n\t.string \"a HYPER Rank winner can advance to\\l\"\n\t.string \"the MASTER Rank in the same category.\\p\"\n\t.string \"A POK\u00e9MON that won in the MASTER Rank\\n\"\n\t.string \"may compete in the MASTER Rank as\\l\"\n\t.string \"often as its TRAINER wants.$\""
+  },
+  "label": "LilycoveCity_ContestLobby_Text_ExplainContestRanks",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {}
+}

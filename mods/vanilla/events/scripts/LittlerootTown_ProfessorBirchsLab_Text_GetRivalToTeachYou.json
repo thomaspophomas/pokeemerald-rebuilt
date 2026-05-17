@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Text_GetRivalToTeachYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": ".string \"PROF. BIRCH: Great!\\n\"\n\t.string \"{RIVAL} should be happy, too.\\p\"\n\t.string \"Get {RIVAL} to teach you what it\\n\"\n\t.string \"means to be a TRAINER.$\""
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Text_GetRivalToTeachYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

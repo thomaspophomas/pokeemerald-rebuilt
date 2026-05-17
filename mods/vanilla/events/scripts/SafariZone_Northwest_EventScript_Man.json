@@ -1,0 +1,19 @@
+{
+  "id": "SafariZone_Northwest_EventScript_Man",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_Northwest/scripts.inc",
+    "sha1": "67ee949daeb8688abd55b0ea21f6e3152814dbcd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SafariZone_Northwest/scripts.inc",
+    "rawScript": "msgbox SafariZone_Northwest_Text_Man, MSGBOX_NPC\n\tend"
+  },
+  "label": "SafariZone_Northwest_EventScript_Man",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SafariZone_Northwest/scripts.inc",
+  "references": {}
+}

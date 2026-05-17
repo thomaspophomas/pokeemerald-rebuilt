@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_House1_Text_ExplainBrickBreak",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_House1/scripts.inc",
+    "sha1": "d068d18a48fa7b6881fb76a44c94d752d47fa794"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_House1/scripts.inc",
+    "rawScript": ".string \"TM31 contains BRICK BREAK! It's a move\\n\"\n\t.string \"so horrible that I can't describe it.$\""
+  },
+  "label": "SootopolisCity_House1_Text_ExplainBrickBreak",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_House1/scripts.inc",
+  "references": {}
+}

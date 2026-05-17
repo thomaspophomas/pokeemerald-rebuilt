@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_CuttersHouse_EventScript_Lass",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_CuttersHouse/scripts.inc",
+    "sha1": "0cff426e47a716cd6d3863a87b4d99ec7a72a0b9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_CuttersHouse/scripts.inc",
+    "rawScript": "msgbox RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees, MSGBOX_NPC\n\tend"
+  },
+  "label": "RustboroCity_CuttersHouse_EventScript_Lass",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_CuttersHouse/scripts.inc",
+  "references": {}
+}

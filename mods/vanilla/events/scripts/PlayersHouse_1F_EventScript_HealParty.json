@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_1F_EventScript_HealParty",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/players_house.inc",
+    "sha1": "0f3da1347500315ef212a252409f1d410b0d226c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/players_house.inc",
+    "rawScript": "closemessage\n\tcall Common_EventScript_OutOfCenterPartyHeal\n\tincrementgamestat GAME_STAT_RESTED_AT_HOME\n\tmsgbox PlayersHouse_1F_Text_TakeCareHoney, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "PlayersHouse_1F_EventScript_HealParty",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/players_house.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiBattleRoom_EventScript_OpponentsEnter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+    "sha1": "71e71dc7e048f3a27e89d0ae41c736d25233e068"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+    "rawScript": "tower_setopponent\n\taddobject LOCALID_TOWER_MULTI_BATTLE_OPPONENT_1\n\taddobject LOCALID_TOWER_MULTI_BATTLE_OPPONENT_2\n\tapplymovement LOCALID_TOWER_MULTI_BATTLE_OPPONENT_1, BattleFrontier_BattleTowerMultiBattleRoom_Movement_Opponent1Enter\n\tapplymovement LOCALID_TOWER_MULTI_BATTLE_OPPONENT_2, BattleFrontier_BattleTowerMultiBattleRoom_Movement_Opponent2Enter\n\twaitmovement 0\n\tgoto_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_LINK_MULTIS, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_DoOpponentIntrosLink\n\ttower_getopponentintro 0\n\tdelay 15\n\tapplymovement LOCALID_TOWER_MULTI_BATTLE_OPPONENT_1, BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceLeft\n\twaitmovement 0\n\tmsgbox gStringVar4, MSGBOX_DEFAULT\n\twaitmessage\n\ttower_getopponentintro 1\n\tapplymovement LOCALID_TOWER_MULTI_BATTLE_OPPONENT_2, BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceLeft\n\twaitmovement 0\n\tmsgbox gStringVar4, MSGBOX_DEFAULT\n\twaitmessage\n\tgoto BattleFrontier_BattleTowerMultiBattleRoom_EventScript_DoTowerBattle"
+  },
+  "label": "BattleFrontier_BattleTowerMultiBattleRoom_EventScript_OpponentsEnter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FRONTIER_BATTLE_MODE"
+    ]
+  }
+}

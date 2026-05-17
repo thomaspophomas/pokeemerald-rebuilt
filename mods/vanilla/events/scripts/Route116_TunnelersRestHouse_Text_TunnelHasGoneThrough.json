@@ -1,0 +1,19 @@
+{
+  "id": "Route116_TunnelersRestHouse_Text_TunnelHasGoneThrough",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116_TunnelersRestHouse/scripts.inc",
+    "sha1": "cf1b26d5655363e9dd7eded558cfb3a4486c3aa4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route116_TunnelersRestHouse/scripts.inc",
+    "rawScript": ".string \"Did you hear? The TUNNEL to VERDANTURF\\n\"\n\t.string \"has gone through!\\p\"\n\t.string \"Sometimes, if you hope strongly enough,\\n\"\n\t.string \"dreams do come true.$\""
+  },
+  "label": "Route116_TunnelersRestHouse_Text_TunnelHasGoneThrough",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route116_TunnelersRestHouse/scripts.inc",
+  "references": {}
+}

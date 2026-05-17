@@ -1,0 +1,19 @@
+{
+  "id": "SSTidalRooms_Text_ExplainSnatch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalRooms/scripts.inc",
+    "sha1": "1953df649981f24c9b39a0b7b26b1ed8339d7249"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalRooms/scripts.inc",
+    "rawScript": ".string \"SNATCH steals the beneficial effects\\n\"\n\t.string \"of certain moves before they can be\\l\"\n\t.string \"used by a foe or ally.$\""
+  },
+  "label": "SSTidalRooms_Text_ExplainSnatch",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SSTidalRooms/scripts.inc",
+  "references": {}
+}

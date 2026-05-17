@@ -1,0 +1,26 @@
+{
+  "id": "Route104_EventScript_SailToDewford",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104/scripts.inc",
+    "sha1": "10d25047426798be70cda2d9503387bbf8458d85"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104/scripts.inc",
+    "rawScript": "setobjectsubpriority LOCALID_ROUTE104_BRINEY, MAP_ROUTE104, 0\n\tsetobjectsubpriority LOCALID_PLAYER, MAP_ROUTE104, 0\n\tapplymovement LOCALID_ROUTE104_BRINEY, Route104_Movement_BrineyBoardBoat\n\twaitmovement 0\n\tremoveobject LOCALID_ROUTE104_BRINEY\n\tapplymovement LOCALID_PLAYER, Route104_Movement_PlayerBoardBoat\n\twaitmovement 0\n\thideobjectat LOCALID_PLAYER, MAP_ROUTE104\n\tcall Common_EventScript_PlayBrineysBoatMusic\n\tgoto_if_set FLAG_ENABLE_NORMAN_MATCH_CALL, Route104_EventScript_SailToDewfordNoCall\n\tgoto_if_unset FLAG_ENABLE_NORMAN_MATCH_CALL, Route104_EventScript_SailToDewfordDadCalls\n\tend"
+  },
+  "label": "Route104_EventScript_SailToDewford",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route104/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_ENABLE_NORMAN_MATCH_CALL"
+    ],
+    "maps": [
+      "MAP_ROUTE104"
+    ]
+  }
+}

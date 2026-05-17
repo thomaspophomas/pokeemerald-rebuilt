@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleArenaLobby_Text_CongratsOnDefeatingTycoon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "sha1": "9504bb75bdf62b80271e2304b4804044c8db502a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "rawScript": ".string \"A victory snatched from the ARENA\\n\"\n\t.string \"TYCOON, and a seven-TRAINER sweep!\\p\"\n\t.string \"We congratulate you on your most\\n\"\n\t.string \"splendid challenge!$\""
+  },
+  "label": "BattleFrontier_BattleArenaLobby_Text_CongratsOnDefeatingTycoon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+  "references": {}
+}

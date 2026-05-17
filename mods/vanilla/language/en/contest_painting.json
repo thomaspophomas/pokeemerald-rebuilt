@@ -1,0 +1,45 @@
+{
+  "id": "en:contest_painting",
+  "domain": "language",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/text/contest_painting.inc",
+    "sha1": "6c929ed1ba536e2296eed97b2440d8006b6bf5ef"
+  },
+  "legacy": {
+    "kind": "asm_text_labels",
+    "sourcePath": "data/text/contest_painting.inc"
+  },
+  "language": "en",
+  "group": "contest_painting",
+  "runtime": false,
+  "strings": {
+    "gContestHallPaintingCaption": ".string \"{STR_VAR_1}\\n\"\n\t.string \"{STR_VAR_2}'s {STR_VAR_3}$\"\n\n@ Unused",
+    "gContestPaintingContest": ".string \"CONTEST$\"",
+    "gContestRankNormal": ".string \"NORMAL RANK$\"",
+    "gContestRankSuper": ".string \"SUPER RANK$\"",
+    "gContestRankHyper": ".string \"HYPER RANK$\"",
+    "gContestRankMaster": ".string \"MASTER RANK$\"",
+    "gContestLink": ".string \"LINK$\"",
+    "gContestCoolness": ".string \"COOLNESS$\"",
+    "gContestBeauty": ".string \"BEAUTY$\"",
+    "gContestCuteness": ".string \"CUTENESS$\"",
+    "gContestSmartness": ".string \"SMARTNESS$\"",
+    "gContestToughness": ".string \"TOUGHNESS$\"",
+    "gContestPaintingCool1": ".string \"Nonstop supercool--\\n\"\n\t.string \"the inestimable {STR_VAR_1}$\"",
+    "gContestPaintingCool2": ".string \"Hey, there!\\n\"\n\t.string \"The good-looking POK\u00e9MON {STR_VAR_1}$\"",
+    "gContestPaintingCool3": ".string \"The marvelous, wonderful, and\\n\"\n\t.string \"very great {STR_VAR_1}$\"",
+    "gContestPaintingBeauty1": ".string \"This century's last Venus--\\n\"\n\t.string \"the beautiful {STR_VAR_1}$\"",
+    "gContestPaintingBeauty2": ".string \"{STR_VAR_1}'s dazzling,\\n\"\n\t.string \"glittering smile$\"",
+    "gContestPaintingBeauty3": ".string \"POK\u00e9MON CENTER's super idol--\\n\"\n\t.string \"the incomparable {STR_VAR_1}$\"",
+    "gContestPaintingCute1": ".string \"The lovely and sweet {STR_VAR_1}$\"",
+    "gContestPaintingCute2": ".string \"The pretty {STR_VAR_1}'s\\n\"\n\t.string \"winning portrait$\"",
+    "gContestPaintingCute3": ".string \"Give us a wink!\\n\"\n\t.string \"The cutie POK\u00e9MON {STR_VAR_1}$\"",
+    "gContestPaintingSmart1": ".string \"The smartness maestro--\\n\"\n\t.string \"the wise POK\u00e9MON {STR_VAR_1}$\"",
+    "gContestPaintingSmart2": ".string \"{STR_VAR_1}--the one chosen\\n\"\n\t.string \"above all POK\u00e9MON$\"",
+    "gContestPaintingSmart3": ".string \"The excellent {STR_VAR_1}'s\\n\"\n\t.string \"moment of elegance$\"",
+    "gContestPaintingTough1": ".string \"The powerfully muscular\\n\"\n\t.string \"speedster {STR_VAR_1}$\"",
+    "gContestPaintingTough2": ".string \"The strong, stronger, and\\n\"\n\t.string \"strongest {STR_VAR_1}$\"",
+    "gContestPaintingTough3": ".string \"The mighty tough\\n\"\n\t.string \"hyper POK\u00e9MON {STR_VAR_1}$\""
+  }
+}

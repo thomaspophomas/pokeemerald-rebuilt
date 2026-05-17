@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_House2_Text_YouGuessedWrong",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_House2/scripts.inc",
+    "sha1": "44bcbe274ccc5a3585d32b51557300ad9273b5c1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_House2/scripts.inc",
+    "rawScript": ".string \"No, too bad.\\n\"\n\t.string \"You guessed wrong.$\""
+  },
+  "label": "FortreeCity_House2_Text_YouGuessedWrong",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_House2/scripts.inc",
+  "references": {}
+}

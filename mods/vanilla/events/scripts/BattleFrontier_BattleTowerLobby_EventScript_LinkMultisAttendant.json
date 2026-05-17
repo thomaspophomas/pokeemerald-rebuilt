@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_EventScript_LinkMultisAttendant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tsetvar VAR_FRONTIER_FACILITY, FRONTIER_FACILITY_TOWER\n\tspecial SavePlayerParty\n\tmsgbox BattleFrontier_BattleTowerLobby_Text_WelcomeLinkMultiBattle, MSGBOX_DEFAULT"
+  },
+  "label": "BattleFrontier_BattleTowerLobby_EventScript_LinkMultisAttendant",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FRONTIER_FACILITY"
+    ]
+  }
+}

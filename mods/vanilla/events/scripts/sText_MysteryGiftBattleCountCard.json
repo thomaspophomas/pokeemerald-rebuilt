@@ -1,0 +1,19 @@
+{
+  "id": "sText_MysteryGiftBattleCountCard",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_battle_card.inc",
+    "sha1": "5c337e1d015559dcfd7443dbb3c08146005fa127"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_battle_card.inc",
+    "rawScript": ".string \"Thank you for using the MYSTERY\\n\"\n\t.string \"GIFT System.\\p\"\n\t.string \"Your BATTLE COUNT CARD keeps\\n\"\n\t.string \"track of your battle record against\\l\"\n\t.string \"TRAINERS with the same CARD.\\p\"\n\t.string \"Look for and battle TRAINERS who\\n\"\n\t.string \"have the same CARD as you.\\p\"\n\t.string \"You may check the overall rankings\\n\"\n\t.string \"by reading the NEWS.\\p\"\n\t.string \"Please do give it a try!$\""
+  },
+  "label": "sText_MysteryGiftBattleCountCard",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_battle_card.inc",
+  "references": {}
+}

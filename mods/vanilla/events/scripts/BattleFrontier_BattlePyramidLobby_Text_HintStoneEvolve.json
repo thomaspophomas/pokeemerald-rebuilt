@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby_Text_HintStoneEvolve",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "sha1": "b93395a7ee7156a94cfa3817fd6222cfa69e94fd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "rawScript": ".string \"I see those that have evolved from\\n\"\n\t.string \"the power of stones\u2026\\p\"\n\t.string \"I also sense fire, water,\\n\"\n\t.string \"and electricity\u2026\\p\"\n\t.string \"\u2026And, I see your POK\u00e9MON suffering\\n\"\n\t.string \"from those three powers\u2026$\""
+  },
+  "label": "BattleFrontier_BattlePyramidLobby_Text_HintStoneEvolve",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+  "references": {}
+}

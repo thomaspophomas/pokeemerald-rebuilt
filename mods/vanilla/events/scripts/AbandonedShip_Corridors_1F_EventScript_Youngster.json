@@ -1,0 +1,19 @@
+{
+  "id": "AbandonedShip_Corridors_1F_EventScript_Youngster",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Corridors_1F/scripts.inc",
+    "sha1": "f4323f7823f017e5f01f23471c0cd139d7409d0c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_Corridors_1F/scripts.inc",
+    "rawScript": "msgbox AbandonedShip_Corridors_1F_Text_IsntItFunHere, MSGBOX_NPC\n\tend"
+  },
+  "label": "AbandonedShip_Corridors_1F_EventScript_Youngster",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AbandonedShip_Corridors_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Text_WhereAreWeBound",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown/scripts.inc",
+    "sha1": "e9e724e6d3bba641bcb2d4263fe226ee6c1b4840"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown/scripts.inc",
+    "rawScript": ".string \"MR. BRINEY: Ahoy!\\n\"\n\t.string \"For you, I'll go out to sea anytime!\\p\"\n\t.string \"Now, my friend, where are we bound?$\""
+  },
+  "label": "DewfordTown_Text_WhereAreWeBound",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown/scripts.inc",
+  "references": {}
+}

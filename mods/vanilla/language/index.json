@@ -1,295 +1,209 @@
 {
   "domain": "language",
   "schemaVersion": 1,
+  "entityKind": "language_group",
+  "semanticCoverage": "full",
   "entries": [
     {
-      "id": "data/text/abnormal_weather.inc",
-      "path": "source_files/data_text_abnormal_weather.inc.json",
+      "id": "en:abnormal_weather",
+      "path": "en/abnormal_weather.json",
       "sourcePath": "data/text/abnormal_weather.inc",
-      "legacyKind": "source_file"
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "abnormal_weather"
     },
     {
-      "id": "data/text/apprentice.inc",
-      "path": "source_files/data_text_apprentice.inc.json",
+      "id": "en:apprentice",
+      "path": "en/apprentice.json",
       "sourcePath": "data/text/apprentice.inc",
-      "legacyKind": "source_file"
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "apprentice"
     },
     {
-      "id": "data/text/battle_dome.inc",
-      "path": "source_files/data_text_battle_dome.inc.json",
+      "id": "en:battle_dome",
+      "path": "en/battle_dome.json",
       "sourcePath": "data/text/battle_dome.inc",
-      "legacyKind": "source_file"
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "battle_dome"
     },
     {
-      "id": "data/text/battle_tent.inc",
-      "path": "source_files/data_text_battle_tent.inc.json",
-      "sourcePath": "data/text/battle_tent.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/berries.inc",
-      "path": "source_files/data_text_berries.inc.json",
-      "sourcePath": "data/text/berries.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/birch_speech.inc",
-      "path": "source_files/data_text_birch_speech.inc.json",
+      "id": "en:birch_speech",
+      "path": "en/birch_speech.json",
       "sourcePath": "data/text/birch_speech.inc",
-      "legacyKind": "source_file"
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "birch_speech"
     },
     {
-      "id": "data/text/blend_master.inc",
-      "path": "source_files/data_text_blend_master.inc.json",
-      "sourcePath": "data/text/blend_master.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/braille.inc",
-      "path": "source_files/data_text_braille.inc.json",
-      "sourcePath": "data/text/braille.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/cable_club.inc",
-      "path": "source_files/data_text_cable_club.inc.json",
+      "id": "en:cable_club",
+      "path": "en/cable_club.json",
       "sourcePath": "data/text/cable_club.inc",
-      "legacyKind": "source_file"
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "cable_club"
     },
     {
-      "id": "data/text/check_furniture.inc",
-      "path": "source_files/data_text_check_furniture.inc.json",
-      "sourcePath": "data/text/check_furniture.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/contest_link.inc",
-      "path": "source_files/data_text_contest_link.inc.json",
+      "id": "en:contest_link",
+      "path": "en/contest_link.json",
       "sourcePath": "data/text/contest_link.inc",
-      "legacyKind": "source_file"
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "contest_link"
     },
     {
-      "id": "data/text/contest_painting.inc",
-      "path": "source_files/data_text_contest_painting.inc.json",
+      "id": "en:contest_painting",
+      "path": "en/contest_painting.json",
       "sourcePath": "data/text/contest_painting.inc",
-      "legacyKind": "source_file"
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "contest_painting"
     },
     {
-      "id": "data/text/contest_strings.inc",
-      "path": "source_files/data_text_contest_strings.inc.json",
+      "id": "en:contest_strings",
+      "path": "en/contest_strings.json",
       "sourcePath": "data/text/contest_strings.inc",
-      "legacyKind": "source_file"
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "contest_strings"
     },
     {
-      "id": "data/text/event_ticket_1.inc",
-      "path": "source_files/data_text_event_ticket_1.inc.json",
-      "sourcePath": "data/text/event_ticket_1.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/event_ticket_2.inc",
-      "path": "source_files/data_text_event_ticket_2.inc.json",
-      "sourcePath": "data/text/event_ticket_2.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/frontier_brain.inc",
-      "path": "source_files/data_text_frontier_brain.inc.json",
-      "sourcePath": "data/text/frontier_brain.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/lottery_corner.inc",
-      "path": "source_files/data_text_lottery_corner.inc.json",
-      "sourcePath": "data/text/lottery_corner.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/mart_clerk.inc",
-      "path": "source_files/data_text_mart_clerk.inc.json",
-      "sourcePath": "data/text/mart_clerk.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/match_call.inc",
-      "path": "source_files/data_text_match_call.inc.json",
-      "sourcePath": "data/text/match_call.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/mauville_man.inc",
-      "path": "source_files/data_text_mauville_man.inc.json",
-      "sourcePath": "data/text/mauville_man.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/move_tutors.inc",
-      "path": "source_files/data_text_move_tutors.inc.json",
-      "sourcePath": "data/text/move_tutors.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/obtain_item.inc",
-      "path": "source_files/data_text_obtain_item.inc.json",
-      "sourcePath": "data/text/obtain_item.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/pc.inc",
-      "path": "source_files/data_text_pc.inc.json",
-      "sourcePath": "data/text/pc.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/pc_transfer.inc",
-      "path": "source_files/data_text_pc_transfer.inc.json",
-      "sourcePath": "data/text/pc_transfer.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/pkmn_center_nurse.inc",
-      "path": "source_files/data_text_pkmn_center_nurse.inc.json",
-      "sourcePath": "data/text/pkmn_center_nurse.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/pokedex_rating.inc",
-      "path": "source_files/data_text_pokedex_rating.inc.json",
-      "sourcePath": "data/text/pokedex_rating.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/pokemon_news.inc",
-      "path": "source_files/data_text_pokemon_news.inc.json",
-      "sourcePath": "data/text/pokemon_news.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/questionnaire.inc",
-      "path": "source_files/data_text_questionnaire.inc.json",
-      "sourcePath": "data/text/questionnaire.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/record_mix.inc",
-      "path": "source_files/data_text_record_mix.inc.json",
-      "sourcePath": "data/text/record_mix.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/save.inc",
-      "path": "source_files/data_text_save.inc.json",
-      "sourcePath": "data/text/save.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/secret_base_trainers.inc",
-      "path": "source_files/data_text_secret_base_trainers.inc.json",
-      "sourcePath": "data/text/secret_base_trainers.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/shoal_cave.inc",
-      "path": "source_files/data_text_shoal_cave.inc.json",
-      "sourcePath": "data/text/shoal_cave.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/surf.inc",
-      "path": "source_files/data_text_surf.inc.json",
-      "sourcePath": "data/text/surf.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/trainers.inc",
-      "path": "source_files/data_text_trainers.inc.json",
-      "sourcePath": "data/text/trainers.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/trick_house_mechadolls.inc",
-      "path": "source_files/data_text_trick_house_mechadolls.inc.json",
-      "sourcePath": "data/text/trick_house_mechadolls.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "data/text/tv.inc",
-      "path": "source_files/data_text_tv.inc.json",
-      "sourcePath": "data/text/tv.inc",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "include/strings.h",
-      "path": "source_files/include_strings.h.json",
-      "sourcePath": "include/strings.h",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "src/data/text/abilities.h",
-      "path": "source_files/src_data_text_abilities.h.json",
-      "sourcePath": "src/data/text/abilities.h",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "src/data/text/gift_ribbon_descriptions.h",
-      "path": "source_files/src_data_text_gift_ribbon_descriptions.h.json",
-      "sourcePath": "src/data/text/gift_ribbon_descriptions.h",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "src/data/text/item_descriptions.h",
-      "path": "source_files/src_data_text_item_descriptions.h.json",
-      "sourcePath": "src/data/text/item_descriptions.h",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "src/data/text/match_call_messages.h",
-      "path": "source_files/src_data_text_match_call_messages.h.json",
-      "sourcePath": "src/data/text/match_call_messages.h",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "src/data/text/move_descriptions.h",
-      "path": "source_files/src_data_text_move_descriptions.h.json",
-      "sourcePath": "src/data/text/move_descriptions.h",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "src/data/text/move_names.h",
-      "path": "source_files/src_data_text_move_names.h.json",
-      "sourcePath": "src/data/text/move_names.h",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "src/data/text/nature_names.h",
-      "path": "source_files/src_data_text_nature_names.h.json",
-      "sourcePath": "src/data/text/nature_names.h",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "src/data/text/ribbon_descriptions.h",
-      "path": "source_files/src_data_text_ribbon_descriptions.h.json",
-      "sourcePath": "src/data/text/ribbon_descriptions.h",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "src/data/text/species_names.h",
-      "path": "source_files/src_data_text_species_names.h.json",
-      "sourcePath": "src/data/text/species_names.h",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "src/data/text/trainer_class_names.h",
-      "path": "source_files/src_data_text_trainer_class_names.h.json",
-      "sourcePath": "src/data/text/trainer_class_names.h",
-      "legacyKind": "source_file"
-    },
-    {
-      "id": "src/strings.c",
-      "path": "source_files/src_strings.c.json",
+      "id": "en:core_strings",
+      "path": "en/core_strings.json",
       "sourcePath": "src/strings.c",
-      "legacyKind": "source_file"
+      "legacyKind": "c_string_table",
+      "language": "en",
+      "group": "core_strings"
+    },
+    {
+      "id": "en:frontier_brain",
+      "path": "en/frontier_brain.json",
+      "sourcePath": "data/text/frontier_brain.inc",
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "frontier_brain"
+    },
+    {
+      "id": "en:mart_clerk",
+      "path": "en/mart_clerk.json",
+      "sourcePath": "data/text/mart_clerk.inc",
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "mart_clerk"
+    },
+    {
+      "id": "en:match_call",
+      "path": "en/match_call.json",
+      "sourcePath": "data/text/match_call.inc",
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "match_call"
+    },
+    {
+      "id": "en:mauville_man",
+      "path": "en/mauville_man.json",
+      "sourcePath": "data/text/mauville_man.inc",
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "mauville_man"
+    },
+    {
+      "id": "en:obtain_item",
+      "path": "en/obtain_item.json",
+      "sourcePath": "data/text/obtain_item.inc",
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "obtain_item"
+    },
+    {
+      "id": "en:pc",
+      "path": "en/pc.json",
+      "sourcePath": "data/text/pc.inc",
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "pc"
+    },
+    {
+      "id": "en:pc_transfer",
+      "path": "en/pc_transfer.json",
+      "sourcePath": "data/text/pc_transfer.inc",
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "pc_transfer"
+    },
+    {
+      "id": "en:pkmn_center_nurse",
+      "path": "en/pkmn_center_nurse.json",
+      "sourcePath": "data/text/pkmn_center_nurse.inc",
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "pkmn_center_nurse"
+    },
+    {
+      "id": "en:pokedex_rating",
+      "path": "en/pokedex_rating.json",
+      "sourcePath": "data/text/pokedex_rating.inc",
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "pokedex_rating"
+    },
+    {
+      "id": "en:pokemon_news",
+      "path": "en/pokemon_news.json",
+      "sourcePath": "data/text/pokemon_news.inc",
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "pokemon_news"
+    },
+    {
+      "id": "en:questionnaire",
+      "path": "en/questionnaire.json",
+      "sourcePath": "data/text/questionnaire.inc",
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "questionnaire"
+    },
+    {
+      "id": "en:save",
+      "path": "en/save.json",
+      "sourcePath": "data/text/save.inc",
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "save"
+    },
+    {
+      "id": "en:secret_base_trainers",
+      "path": "en/secret_base_trainers.json",
+      "sourcePath": "data/text/secret_base_trainers.inc",
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "secret_base_trainers"
+    },
+    {
+      "id": "en:surf",
+      "path": "en/surf.json",
+      "sourcePath": "data/text/surf.inc",
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "surf"
+    },
+    {
+      "id": "en:trick_house_mechadolls",
+      "path": "en/trick_house_mechadolls.json",
+      "sourcePath": "data/text/trick_house_mechadolls.inc",
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "trick_house_mechadolls"
+    },
+    {
+      "id": "en:tv",
+      "path": "en/tv.json",
+      "sourcePath": "data/text/tv.inc",
+      "legacyKind": "asm_text_labels",
+      "language": "en",
+      "group": "tv"
     }
   ],
-  "entityCount": 48
+  "entityCount": 25
 }

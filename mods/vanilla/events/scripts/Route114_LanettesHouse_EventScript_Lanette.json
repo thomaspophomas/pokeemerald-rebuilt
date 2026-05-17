@@ -1,0 +1,27 @@
+{
+  "id": "Route114_LanettesHouse_EventScript_Lanette",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_LanettesHouse/scripts.inc",
+    "sha1": "91f2126eb51b441d0e51b50e9d41b4e45bf67494"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114_LanettesHouse/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_DOLL_LANETTE, Route114_LanettesHouse_EventScript_OfferAdvice\n\tsetflag FLAG_SYS_PC_LANETTE\n\tmsgbox Route114_LanettesHouse_Text_EverythingClutteredKeepThis, MSGBOX_DEFAULT\n\tgivedecoration DECOR_LOTAD_DOLL\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowNoRoomForDecor\n\tsetflag FLAG_RECEIVED_DOLL_LANETTE\n\trelease\n\tend"
+  },
+  "label": "Route114_LanettesHouse_EventScript_Lanette",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route114_LanettesHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_DOLL_LANETTE",
+      "FLAG_SYS_PC_LANETTE"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

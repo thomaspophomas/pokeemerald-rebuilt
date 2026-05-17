@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideWest_Text_FansOverThereUsedToBeTrainers",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": ".string \"Those people squabbling over there\u2026\\p\"\n\t.string \"It's hard to believe, but they once\\n\"\n\t.string \"were TRAINERS, and good ones, too.\\p\"\n\t.string \"They used to be incredibly tough,\\n\"\n\t.string \"and they were famous, too.\\p\"\n\t.string \"But they were obliterated by this\\n\"\n\t.string \"certain TRAINER at a tournament.\\p\"\n\t.string \"They were so thoroughly whipped,\\n\"\n\t.string \"they became smitten by the TRAINER.\\p\"\n\t.string \"Now they're just fans of the TRAINER.\\n\"\n\t.string \"They go cheer for their idol at the\\l\"\n\t.string \"BATTLE DOME every day now.$\""
+  },
+  "label": "BattleFrontier_OutsideWest_Text_FansOverThereUsedToBeTrainers",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {}
+}

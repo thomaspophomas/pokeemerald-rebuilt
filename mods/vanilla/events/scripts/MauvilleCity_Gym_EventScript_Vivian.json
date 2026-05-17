@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_Gym_EventScript_Vivian",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "sha1": "ba2cd4a14af6a43f9221cd58f6a4a0299a51ce6c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_VIVIAN, MauvilleCity_Gym_Text_VivianIntro, MauvilleCity_Gym_Text_VivianDefeat\n\tmsgbox MauvilleCity_Gym_Text_VivianPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "MauvilleCity_Gym_EventScript_Vivian",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_Gym/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_VIVIAN"
+    ]
+  }
+}

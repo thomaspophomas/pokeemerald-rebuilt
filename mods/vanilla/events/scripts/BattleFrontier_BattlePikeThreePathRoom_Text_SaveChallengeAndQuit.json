@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeThreePathRoom_Text_SaveChallengeAndQuit",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "sha1": "927f7bda20dae778159d88132a53038bcfb76615"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "rawScript": ".string \"Would you like to save your challenge\\n\"\n\t.string \"and quit the game for now?$\""
+  },
+  "label": "BattleFrontier_BattlePikeThreePathRoom_Text_SaveChallengeAndQuit",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+  "references": {}
+}

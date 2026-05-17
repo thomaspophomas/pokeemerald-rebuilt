@@ -1,0 +1,23 @@
+{
+  "id": "DewfordTown_Gym_EventScript_Laura",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Gym/scripts.inc",
+    "sha1": "595ba5581d9eb698f4762f9b34da6e4f6c2a7a55"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Gym/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_LAURA, DewfordTown_Gym_Text_LauraIntro, DewfordTown_Gym_Text_LauraDefeat, DewfordTown_Gym_EventScript_LauraBrightenRoom\n\tmsgbox DewfordTown_Gym_Text_LauraPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "DewfordTown_Gym_EventScript_Laura",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DewfordTown_Gym/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_LAURA"
+    ]
+  }
+}

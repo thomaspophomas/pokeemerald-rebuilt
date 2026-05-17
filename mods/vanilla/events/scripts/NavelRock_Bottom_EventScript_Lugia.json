@@ -1,0 +1,27 @@
+{
+  "id": "NavelRock_Bottom_EventScript_Lugia",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NavelRock_Bottom/scripts.inc",
+    "sha1": "7102a99e7846229610a261d704347488358f9702"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NavelRock_Bottom/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\twaitse\n\tdelay 20\n\tplayse SE_THUNDERSTORM_STOP\n\tsetvar VAR_0x8004, 0  @ vertical pan\n\tsetvar VAR_0x8005, 3  @ horizontal pan\n\tsetvar VAR_0x8006, 4  @ num shakes\n\tsetvar VAR_0x8007, 2  @ shake delay\n\tspecial ShakeCamera\n\tdelay 30\n\tplayse SE_THUNDERSTORM_STOP\n\tsetvar VAR_0x8004, 0  @ vertical pan\n\tsetvar VAR_0x8005, 3  @ horizontal pan\n\tsetvar VAR_0x8006, 4  @ num shakes\n\tsetvar VAR_0x8007, 2  @ shake delay\n\tspecial ShakeCamera\n\tdelay 30\n\tdelay 50\n\twaitse\n\tplaymoncry SPECIES_LUGIA, CRY_MODE_ENCOUNTER\n\twaitmoncry\n\tdelay 20\n\tseteventmon SPECIES_LUGIA, 70\n\tsetflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecial BattleSetup_StartLegendaryBattle\n\tclearflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_WON, NavelRock_Bottom_EventScript_DefeatedLugia\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_RAN, NavelRock_Bottom_EventScript_RanFromLugia\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, NavelRock_Bottom_EventScript_RanFromLugia\n\tsetflag FLAG_CAUGHT_LUGIA\n\trelease\n\tend"
+  },
+  "label": "NavelRock_Bottom_EventScript_Lugia",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/NavelRock_Bottom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_CAUGHT_LUGIA",
+      "FLAG_SYS_CTRL_OBJ_DELETE"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

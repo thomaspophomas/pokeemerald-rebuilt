@@ -1,0 +1,19 @@
+{
+  "id": "Route118_Text_TryCatchingMonWithGoodRod",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route118/scripts.inc",
+    "sha1": "5a4868d1490a62e62c6e29a255fc938bad9fa2cd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route118/scripts.inc",
+    "rawScript": ".string \"Try catching all sorts of POK\u00e9MON\\n\"\n\t.string \"with your GOOD ROD.$\""
+  },
+  "label": "Route118_Text_TryCatchingMonWithGoodRod",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route118/scripts.inc",
+  "references": {}
+}

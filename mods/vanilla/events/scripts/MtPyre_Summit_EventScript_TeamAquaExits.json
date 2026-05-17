@@ -1,0 +1,32 @@
+{
+  "id": "MtPyre_Summit_EventScript_TeamAquaExits",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/scripts.inc",
+    "sha1": "2d98d572d50cebb678d972aa421854c983329822"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Summit/scripts.inc",
+    "rawScript": "playbgm MUS_ENCOUNTER_AQUA, FALSE\n\tapplymovement LOCALID_PLAYER, Common_Movement_FaceUp\n\twaitmovement 0\n\tapplymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tdelay 50\n\tcall_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_ArchieFacePlayer0\n\tcall_if_eq VAR_0x8008, 1, MtPyre_Summit_EventScript_ArchieFacePlayer1\n\tcall_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_ArchieFacePlayer2\n\tmsgbox MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo, MSGBOX_DEFAULT\n\tclosemessage\n\tfadescreen FADE_TO_BLACK\n\tremoveobject LOCALID_MT_PYRE_SUMMIT_ARCHIE\n\tremoveobject LOCALID_MT_PYRE_SUMMIT_GRUNT_1\n\tremoveobject LOCALID_MT_PYRE_SUMMIT_GRUNT_2\n\tremoveobject LOCALID_MT_PYRE_SUMMIT_GRUNT_3\n\tremoveobject LOCALID_MT_PYRE_SUMMIT_GRUNT_4\n\tsetflag FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE\n\tsetflag FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA\n\tfadedefaultbgm\n\tfadescreen FADE_FROM_BLACK\n\tdelay 20\n\tsetvar VAR_MT_PYRE_STATE, 1\n\tcall_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_OldLadyApproachPlayer0\n\tcall_if_eq VAR_0x8008, 1, MtPyre_Summit_EventScript_OldLadyApproachPlayer1\n\tcall_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_OldLadyApproachPlayer2\n\tmsgbox MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis, MSGBOX_DEFAULT\n\tgiveitem ITEM_MAGMA_EMBLEM\n\tsetflag FLAG_RECEIVED_RED_OR_BLUE_ORB\n\tsetflag FLAG_HIDE_JAGGED_PASS_MAGMA_GUARD\n\treleaseall\n\tend"
+  },
+  "label": "MtPyre_Summit_EventScript_TeamAquaExits",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtPyre_Summit/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_JAGGED_PASS_MAGMA_GUARD",
+      "FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE",
+      "FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA",
+      "FLAG_RECEIVED_RED_OR_BLUE_ORB"
+    ],
+    "vars": [
+      "VAR_MT_PYRE_STATE"
+    ],
+    "items": [
+      "ITEM_MAGMA_EMBLEM"
+    ]
+  }
+}

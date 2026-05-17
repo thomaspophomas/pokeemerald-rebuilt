@@ -1,0 +1,19 @@
+{
+  "id": "Interview_EventScript_EndInterview",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/interview.inc",
+    "sha1": "bd1d5135ce2e319a18291aebafac5c4760b90500"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/interview.inc",
+    "rawScript": "special InterviewAfter\n\tincrementgamestat GAME_STAT_GOT_INTERVIEWED\n\trelease\n\tend\n\n@ Shares reporter object with TVSHOW_PKMN_FAN_CLUB_OPINIONS"
+  },
+  "label": "Interview_EventScript_EndInterview",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/interview.inc",
+  "references": {}
+}

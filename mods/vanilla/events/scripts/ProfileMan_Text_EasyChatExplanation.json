@@ -1,0 +1,19 @@
+{
+  "id": "ProfileMan_Text_EasyChatExplanation",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/profile_man.inc",
+    "sha1": "d1dbe5fa547c96e450cb8f168f65a783b75cc29c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/profile_man.inc",
+    "rawScript": ".string \"You make your own profile by putting\\n\"\n\t.string \"together four words or phrases.\\p\"\n\t.string \"Here, I'll show you an example of a\\n\"\n\t.string \"profile using four pieces of text.\\p\"\n\t.string \"You can switch those four pieces with\\n\"\n\t.string \"other text pieces any which way you\\l\"\n\t.string \"like to make your own profile.\\p\"\n\t.string \"There are a lot of text pieces that\\n\"\n\t.string \"you can use.\\p\"\n\t.string \"They are arranged in groups like\\n\"\n\t.string \"POK\u00e9MON, lifestyles, and hobbies so\\l\"\n\t.string \"it is easier to look them up.\\p\"\n\t.string \"So, first, choose the group of text\\n\"\n\t.string \"pieces to display a list of choices.\\p\"\n\t.string \"Then, pick the choice you want.\\p\"\n\t.string \"Repeat for the remaining text choices,\\n\"\n\t.string \"and you'll have your very own profile.$\""
+  },
+  "label": "ProfileMan_Text_EasyChatExplanation",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/profile_man.inc",
+  "references": {}
+}

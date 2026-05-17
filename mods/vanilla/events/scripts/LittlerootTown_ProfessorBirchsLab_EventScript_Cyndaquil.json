@@ -1,0 +1,24 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_EventScript_Cyndaquil",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": "release\n\tgoto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 6, LittlerootTown_ProfessorBirchsLab_EventScript_AlreadyChoseJohtoStarter\n\tapplymovement LOCALID_BIRCHS_LAB_BIRCH, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\tshowmonpic SPECIES_CYNDAQUIL, 10, 3\n\tmsgbox LittlerootTown_ProfessorBirchsLab_Text_YoullTakeCyndaquil, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_TakeYourTime\n\tgoto LittlerootTown_ProfessorBirchsLab_EventScript_GiveCyndaquil\n\tend"
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_EventScript_Cyndaquil",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_DEX_UPGRADE_JOHTO_STARTER_STATE",
+      "VAR_RESULT"
+    ]
+  }
+}

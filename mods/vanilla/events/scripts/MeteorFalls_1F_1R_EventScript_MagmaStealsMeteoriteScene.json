@@ -1,0 +1,28 @@
+{
+  "id": "MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "sha1": "9f4ded44922a9eecca2a712d1673b053babe0bae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "rawScript": "lockall\n\tplaybgm MUS_ENCOUNTER_MAGMA, FALSE\n\tapplymovement LOCALID_PLAYER, Common_Movement_FaceDown\n\twaitmovement 0\n\tdelay 30\n\tapplymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceDown\n\twaitmovement 0\n\tmsgbox MeteorFalls_1F_1R_Text_WithThisMeteorite, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceFasterUp\n\tapplymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_2, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tplayse SE_PIN\n\tapplymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_Delay48\n\twaitmovement 0\n\tmsgbox MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, MeteorFalls_1F_1R_Movement_MagmaGruntApproachPlayer\n\twaitmovement 0\n\tmsgbox MeteorFalls_1F_1R_Text_HoldItRightThereMagma, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft\n\tapplymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceFasterLeft\n\tapplymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\taddobject LOCALID_METEOR_FALLS_ARCHIE\n\taddobject LOCALID_METEOR_FALLS_AQUA_GRUNT_1\n\taddobject LOCALID_METEOR_FALLS_AQUA_GRUNT_2\n\tplaybgm MUS_ENCOUNTER_AQUA, FALSE\n\tapplymovement LOCALID_METEOR_FALLS_ARCHIE, MeteorFalls_1F_1R_Movement_ArchieArrive\n\tapplymovement LOCALID_METEOR_FALLS_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGrunt1Arrive\n\tapplymovement LOCALID_METEOR_FALLS_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGrunt2Arrive\n\twaitmovement 0\n\tapplymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceFasterLeft\n\tapplymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tmsgbox MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_PLAYER, MeteorFalls_1F_1R_Movement_PushPlayerOutOfWay\n\tapplymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, MeteorFalls_1F_1R_Movement_MagmaGrunt1Exit\n\tapplymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_2, MeteorFalls_1F_1R_Movement_MagmaGrunt2Exit\n\twaitmovement 0\n\tremoveobject LOCALID_METEOR_FALLS_MAGMA_GRUNT_1\n\tremoveobject LOCALID_METEOR_FALLS_MAGMA_GRUNT_2\n\tapplymovement LOCALID_METEOR_FALLS_ARCHIE, MeteorFalls_1F_1R_Movement_ArchieApproachPlayer\n\twaitmovement 0\n\tmsgbox MeteorFalls_1F_1R_Text_ArchieSeenYouBefore, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_METEOR_FALLS_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGrunt1ApproachArchie\n\tapplymovement LOCALID_METEOR_FALLS_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGrunt2ApproachArchie\n\twaitmovement 0\n\tmsgbox MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma, MSGBOX_DEFAULT\n\tapplymovement LOCALID_METEOR_FALLS_ARCHIE, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tmsgbox MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo, MSGBOX_DEFAULT\n\tapplymovement LOCALID_METEOR_FALLS_ARCHIE, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tmsgbox MeteorFalls_1F_1R_Text_ArchieFarewell, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_METEOR_FALLS_ARCHIE, MeteorFalls_1F_1R_Movement_ArchieExit\n\tapplymovement LOCALID_METEOR_FALLS_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGrunt1Exit\n\tapplymovement LOCALID_METEOR_FALLS_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGrunt2Exit\n\twaitmovement 0\n\tfadedefaultbgm\n\tremoveobject LOCALID_METEOR_FALLS_ARCHIE\n\tremoveobject LOCALID_METEOR_FALLS_AQUA_GRUNT_1\n\tremoveobject LOCALID_METEOR_FALLS_AQUA_GRUNT_2\n\tsetflag FLAG_HIDE_ROUTE_112_TEAM_MAGMA\n\tsetflag FLAG_MET_ARCHIE_METEOR_FALLS\n\tsetflag FLAG_HIDE_FALLARBOR_TOWN_BATTLE_TENT_SCOTT\n\tsetvar VAR_METEOR_FALLS_STATE, 1\n\treleaseall\n\tend"
+  },
+  "label": "MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_FALLARBOR_TOWN_BATTLE_TENT_SCOTT",
+      "FLAG_HIDE_ROUTE_112_TEAM_MAGMA",
+      "FLAG_MET_ARCHIE_METEOR_FALLS"
+    ],
+    "vars": [
+      "VAR_METEOR_FALLS_STATE"
+    ]
+  }
+}

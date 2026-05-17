@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_EventScript_EnergyGuru",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmessage SlateportCity_Text_EnergyGuruSellWhatYouNeed\n\twaitmessage\n\tpokemart SlateportCity_Pokemart_EnergyGuru\n\tmsgbox gText_PleaseComeAgain, MSGBOX_DEFAULT\n\trelease\n\tend\n\n\t.align 2"
+  },
+  "label": "SlateportCity_EventScript_EnergyGuru",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": "Route127_EventScript_Koji",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route127/scripts.inc",
+    "sha1": "5e6db9ccb1bc4c94fbe7ac561ad0da7edd28720c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route127/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_KOJI_1, Route127_Text_KojiIntro, Route127_Text_KojiDefeat, Route127_EventScript_RegisterKoji\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, Route127_EventScript_RematchKoji\n\tmsgbox Route127_Text_KojiPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route127_EventScript_Koji",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route127/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_KOJI_1"
+    ]
+  }
+}

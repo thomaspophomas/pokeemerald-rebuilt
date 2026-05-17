@@ -1,0 +1,24 @@
+{
+  "id": "IslandCave_EventScript_TryRemoveRegice",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/IslandCave/scripts.inc",
+    "sha1": "36e3ca89a53bdf101cff26d6ef8efcf46552e41d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/IslandCave/scripts.inc",
+    "rawScript": "specialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn\n\tremoveobject VAR_LAST_TALKED\n\treturn"
+  },
+  "label": "IslandCave_EventScript_TryRemoveRegice",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/IslandCave/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ]
+  }
+}

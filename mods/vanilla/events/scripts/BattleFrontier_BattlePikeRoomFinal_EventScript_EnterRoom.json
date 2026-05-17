@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomFinal_EventScript_EnterRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomFinal/scripts.inc",
+    "sha1": "a203f6afe61e2b8ea4bff53c9f1e02c5ff3952b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomFinal/scripts.inc",
+    "rawScript": "delay 16\n\tapplymovement LOCALID_PIKE_FINAL_ROOM_ATTENDANT, BattleFrontier_BattlePikeRoomFinal_Movement_AttendantApproachPlayer\n\twaitmovement 0\n\tfrontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_WON\n\tlockall\n\tmsgbox BattleFrontier_BattlePikeRoomFinal_Text_CongratsThisWayPlease, MSGBOX_DEFAULT\n\tclosemessage\n\treleaseall\n\twarp MAP_BATTLE_FRONTIER_BATTLE_PIKE_LOBBY, 5, 6\n\twaitstate\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeRoomFinal_EventScript_EnterRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomFinal/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_PIKE_LOBBY"
+    ]
+  }
+}

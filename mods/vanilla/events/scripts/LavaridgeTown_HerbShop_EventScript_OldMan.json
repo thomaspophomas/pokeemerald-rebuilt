@@ -1,0 +1,29 @@
+{
+  "id": "LavaridgeTown_HerbShop_EventScript_OldMan",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+    "sha1": "ed83c75f66b27defc898c3be46549255ef12185c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_CHARCOAL, LavaridgeTown_HerbShop_EventScript_ExplainCharcoal\n\tmsgbox LavaridgeTown_HerbShop_Text_YouveComeToLookAtHerbalMedicine, MSGBOX_DEFAULT\n\tgiveitem ITEM_CHARCOAL\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_RECEIVED_CHARCOAL\n\trelease\n\tend"
+  },
+  "label": "LavaridgeTown_HerbShop_EventScript_OldMan",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_CHARCOAL"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_CHARCOAL"
+    ]
+  }
+}

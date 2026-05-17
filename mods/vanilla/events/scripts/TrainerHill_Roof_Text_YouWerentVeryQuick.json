@@ -1,0 +1,19 @@
+{
+  "id": "TrainerHill_Roof_Text_YouWerentVeryQuick",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "sha1": "cbfca2354a8d8ed8d68e2612fb0b6f2525008a5f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "rawScript": ".string \"But, oh\u2026\\n\"\n\t.string \"You weren't very quick getting here.$\""
+  },
+  "label": "TrainerHill_Roof_Text_YouWerentVeryQuick",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/TrainerHill_Entrance/scripts.inc",
+  "references": {}
+}

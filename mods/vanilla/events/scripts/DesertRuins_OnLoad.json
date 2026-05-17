@@ -1,0 +1,23 @@
+{
+  "id": "DesertRuins_OnLoad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DesertRuins/scripts.inc",
+    "sha1": "7b1ac7de378ca6e87b7881e86adb2bcb9af94a6b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DesertRuins/scripts.inc",
+    "rawScript": "call_if_unset FLAG_SYS_REGIROCK_PUZZLE_COMPLETED, DesertRuins_EventScript_HideRegiEntrance\n\tend"
+  },
+  "label": "DesertRuins_OnLoad",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/DesertRuins/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_REGIROCK_PUZZLE_COMPLETED"
+    ]
+  }
+}

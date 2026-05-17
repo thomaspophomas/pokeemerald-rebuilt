@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleArenaLobby_Text_ExplainChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "sha1": "9504bb75bdf62b80271e2304b4804044c8db502a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "rawScript": ".string \"In the BATTLE ARENA, we undertake\\n\"\n\t.string \"the Set KO Tourney.\\p\"\n\t.string \"All participants enter with a team of\\n\"\n\t.string \"three POK\u00e9MON.\\p\"\n\t.string \"The three POK\u00e9MON must be lined up in\\n\"\n\t.string \"the order in which they are to appear.\\p\"\n\t.string \"During battle, the POK\u00e9MON will appear\\n\"\n\t.string \"one at a time in the preset order.\\p\"\n\t.string \"Once a POK\u00e9MON enters battle, it must\\n\"\n\t.string \"remain out until the match is decided.\\p\"\n\t.string \"If a match remains undecided in\\n\"\n\t.string \"three turns, it goes to judging.\\p\"\n\t.string \"If you wish to interrupt your challenge,\\n\"\n\t.string \"please save the game.\\p\"\n\t.string \"If you don't save, you will not be able\\n\"\n\t.string \"to continue with your challenge.\\p\"\n\t.string \"If you pull off the feat of beating\\n\"\n\t.string \"seven TRAINERS in succession,\\l\"\n\t.string \"we will present you with Battle Points.$\""
+  },
+  "label": "BattleFrontier_BattleArenaLobby_Text_ExplainChallenge",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+  "references": {}
+}

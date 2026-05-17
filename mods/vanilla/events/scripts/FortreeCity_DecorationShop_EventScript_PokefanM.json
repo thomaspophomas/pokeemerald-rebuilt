@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_DecorationShop_EventScript_PokefanM",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_DecorationShop/scripts.inc",
+    "sha1": "9052b61ce40e18da90e9f9a9ca5351634902ee39"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_DecorationShop/scripts.inc",
+    "rawScript": "msgbox FortreeCity_DecorationShop_Text_MerchandiseSentToPC, MSGBOX_NPC\n\tend"
+  },
+  "label": "FortreeCity_DecorationShop_EventScript_PokefanM",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FortreeCity_DecorationShop/scripts.inc",
+  "references": {}
+}

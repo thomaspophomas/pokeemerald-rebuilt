@@ -1,0 +1,25 @@
+{
+  "id": "MirageTower_1F_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MirageTower_1F/scripts.inc",
+    "sha1": "a504c55a841b8913fc95683dda3d0b6664ab9095"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MirageTower_1F/scripts.inc",
+    "rawScript": "setflag FLAG_ENTERED_MIRAGE_TOWER\n\tsetflag FLAG_FORCE_MIRAGE_TOWER_VISIBLE\n\tsetflag FLAG_LANDMARK_MIRAGE_TOWER\n\tend"
+  },
+  "label": "MirageTower_1F_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/MirageTower_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_ENTERED_MIRAGE_TOWER",
+      "FLAG_FORCE_MIRAGE_TOWER_VISIBLE",
+      "FLAG_LANDMARK_MIRAGE_TOWER"
+    ]
+  }
+}

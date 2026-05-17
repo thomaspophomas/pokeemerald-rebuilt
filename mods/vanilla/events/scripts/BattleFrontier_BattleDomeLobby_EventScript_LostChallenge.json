@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomeLobby_EventScript_LostChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "sha1": "c5673b719ade6a47e6fe1e3055270ca454748cfd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "rawScript": "lockall\n\tmsgbox BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying, MSGBOX_DEFAULT\n\tmessage BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved\n\twaitmessage\n\tspecial LoadPlayerParty\n\tfrontier_setpartyorder FRONTIER_PARTY_SIZE\n\tfrontier_checkairshow\n\tdome_set DOME_DATA_WIN_STREAK_ACTIVE, FALSE\n\tdome_set DOME_DATA_ATTEMPTED_CHALLENGE, TRUE\n\tspecial LoadPlayerParty\n\tspecial HealPlayerParty"
+  },
+  "label": "BattleFrontier_BattleDomeLobby_EventScript_LostChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+  "references": {}
+}

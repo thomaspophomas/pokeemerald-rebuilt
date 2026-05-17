@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby_EventScript_Attendant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "sha1": "b93395a7ee7156a94cfa3817fd6222cfa69e94fd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tsetvar VAR_FRONTIER_FACILITY, FRONTIER_FACILITY_PYRAMID\n\tsetvar VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_SINGLES\n\tspecial SavePlayerParty\n\tmsgbox BattleFrontier_BattlePyramidLobby_Text_WelcomeToBattlePyramid, MSGBOX_DEFAULT"
+  },
+  "label": "BattleFrontier_BattlePyramidLobby_EventScript_Attendant",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FRONTIER_BATTLE_MODE",
+      "VAR_FRONTIER_FACILITY"
+    ]
+  }
+}

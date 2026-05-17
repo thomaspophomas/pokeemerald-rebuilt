@@ -1,0 +1,23 @@
+{
+  "id": "BerryBlender_EventScript_TryDoLinkBlender",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": "call Common_EventScript_SaveGame\n\tgoto_if_eq VAR_RESULT, FALSE, BerryBlender_EventScript_CancelLinkBlender\n\tspecialvar VAR_RESULT, IsWirelessAdapterConnected\n\tgoto_if_eq VAR_RESULT, TRUE, BerryBlender_EventScript_StartDecideLinkLeader\n\tmessage BerryBlender_Text_SearchingForFriends\n\twaitmessage\n\tspecial TryBerryBlenderLinkup\n\tgoto_if_eq VAR_RESULT, LINKUP_SUCCESS, BerryBlender_EventScript_SpawnLinkPartners\n\tgoto_if_eq VAR_RESULT, LINKUP_SOMEONE_NOT_READY, BerryBlender_EventScript_CloseLinkNotReady\n\tgoto_if_eq VAR_RESULT, LINKUP_DIFF_SELECTIONS, BerryBlender_EventScript_CloseLinkDifferentSelections\n\tgoto_if_eq VAR_RESULT, LINKUP_FAILED, BerryBlender_EventScript_CloseLink\n\tgoto_if_eq VAR_RESULT, LINKUP_CONNECTION_ERROR, BerryBlender_EventScript_LinkError\n\tend"
+  },
+  "label": "BerryBlender_EventScript_TryDoLinkBlender",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

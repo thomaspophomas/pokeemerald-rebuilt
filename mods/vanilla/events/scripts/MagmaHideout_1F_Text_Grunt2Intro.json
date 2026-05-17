@@ -1,0 +1,19 @@
+{
+  "id": "MagmaHideout_1F_Text_Grunt2Intro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_1F/scripts.inc",
+    "sha1": "56855cc0486a1bd6fed1956c54134b994aeb627c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_1F/scripts.inc",
+    "rawScript": ".string \"Our leader told us to dig into\\n\"\n\t.string \"MT. CHIMNEY, so we dug and dug.\\p\"\n\t.string \"And in the course of digging, we came\\n\"\n\t.string \"across something that blew our minds!\\p\"\n\t.string \"What did we find?\\p\"\n\t.string \"Fuhahaha!\\n\"\n\t.string \"I'll tell you if you beat me!$\""
+  },
+  "label": "MagmaHideout_1F_Text_Grunt2Intro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MagmaHideout_1F/scripts.inc",
+  "references": {}
+}

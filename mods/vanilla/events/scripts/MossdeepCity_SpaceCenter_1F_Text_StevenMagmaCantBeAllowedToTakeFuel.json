@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "sha1": "a0cf82d2df089035fb81d02a013736aab95a13d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "rawScript": ".string \"STEVEN: {PLAYER}{KUN}, have you read that\\n\"\n\t.string \"proclamation already?\\p\"\n\t.string \"TEAM MAGMA is coming after the rocket\\n\"\n\t.string \"fuel on this island.\\p\"\n\t.string \"I don't know what they'd need it for,\\n\"\n\t.string \"but they can't be allowed to take it.\\p\"\n\t.string \"I'll keep an eye on things for\\n\"\n\t.string \"a while longer.\\p\"\n\t.string \"In the meantime, why don't you go\\n\"\n\t.string \"check out the town?$\""
+  },
+  "label": "MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+  "references": {}
+}

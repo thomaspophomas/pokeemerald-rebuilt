@@ -1,0 +1,19 @@
+{
+  "id": "Route109_Movement_PlayerExitBoat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route109/scripts.inc",
+    "sha1": "7b7ddbfc58bd8a1cc6ebeaa13e2d754df362f425"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route109/scripts.inc",
+    "rawScript": "walk_down\n\twalk_down\n\twalk_left\n\twalk_in_place_faster_right\n\tstep_end"
+  },
+  "label": "Route109_Movement_PlayerExitBoat",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/Route109/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "PlayersHouse_1F_EventScript_AirLatiBroadcast",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/players_house.inc",
+    "sha1": "0f3da1347500315ef212a252409f1d410b0d226c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/players_house.inc",
+    "rawScript": "setflag FLAG_SYS_TV_LATIAS_LATIOS\n\treturn"
+  },
+  "label": "PlayersHouse_1F_EventScript_AirLatiBroadcast",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/players_house.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_TV_LATIAS_LATIOS"
+    ]
+  }
+}

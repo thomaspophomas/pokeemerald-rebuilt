@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_Text_ExplainSinglesChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": ".string \"The BATTLE TOWER's SINGLE BATTLE\\n\"\n\t.string \"ROOMS are facilities for conducting\\l\"\n\t.string \"SINGLE BATTLES with three POK\u00e9MON.\\p\"\n\t.string \"There are many SINGLE BATTLE ROOMS\\n\"\n\t.string \"in the BATTLE TOWER for team battles.\\p\"\n\t.string \"In each of the SINGLE BATTLE ROOMS,\\n\"\n\t.string \"seven TRAINERS await your challenge.\\p\"\n\t.string \"If you manage to defeat all seven,\\n\"\n\t.string \"you will earn Battle Points.\\p\"\n\t.string \"If you want to interrupt your\\n\"\n\t.string \"challenge, please save the game.\\p\"\n\t.string \"If you don't save before interrupting,\\n\"\n\t.string \"you will be disqualified.$\""
+  },
+  "label": "BattleFrontier_BattleTowerLobby_Text_ExplainSinglesChallenge",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {}
+}

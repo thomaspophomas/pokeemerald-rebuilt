@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc",
+    "sha1": "e4fb392a503e70d6989c6dc6307b6eca9019ac04"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"Giggle\u2026 I'm going to go through every\\n\"\n\t.string \"challenge with just this baby!$\""
+  },
+  "label": "BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

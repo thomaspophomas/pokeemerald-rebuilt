@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForSemifinals",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+    "sha1": "18c4052c546a6c71ff18234f6ef3a8130ec538d0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+    "rawScript": ".string \"Congratulations for advancing\\n\"\n\t.string \"to the semifinals.\\p\"\n\t.string \"The best four teams meet in this round.\\n\"\n\t.string \"Are you ready?$\"\n\n@ Unused"
+  },
+  "label": "BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForSemifinals",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+  "references": {}
+}

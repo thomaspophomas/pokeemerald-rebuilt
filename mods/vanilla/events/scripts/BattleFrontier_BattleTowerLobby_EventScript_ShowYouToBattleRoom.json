@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_EventScript_ShowYouToBattleRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": "call BattleFrontier_BattleTowerLobby_EventScript_BufferModeText\n\tgoto_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_LINK_MULTIS, BattleFrontier_BattleTowerLobby_EventScript_ShowYouToLinkMultiBattleRoom\n\tmsgbox BattleFrontier_BattleTowerLobby_Text_ShowYouToBattleRoom, MSGBOX_DEFAULT\n\tgoto BattleFrontier_BattleTowerLobby_EventScript_WalkToElevator"
+  },
+  "label": "BattleFrontier_BattleTowerLobby_EventScript_ShowYouToBattleRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FRONTIER_BATTLE_MODE"
+    ]
+  }
+}

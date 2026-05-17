@@ -1,0 +1,19 @@
+{
+  "id": "BerryTree_EventScript_CheckBerryStage1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_tree.inc",
+    "sha1": "749b44e862850f19e689ac4622065bdedf7c8393"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_tree.inc",
+    "rawScript": "lockall\n\tspecial ObjectEventInteractionGetBerryCountString\n\tmessage BerryTree_Text_BerryGrowthStage1\n\twaitmessage\n\twaitbuttonpress\n\tgoto BerryTree_EventScript_WantToWater"
+  },
+  "label": "BerryTree_EventScript_CheckBerryStage1",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_tree.inc",
+  "references": {}
+}

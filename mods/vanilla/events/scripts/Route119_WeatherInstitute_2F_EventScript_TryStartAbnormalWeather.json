@@ -1,0 +1,28 @@
+{
+  "id": "Route119_WeatherInstitute_2F_EventScript_TryStartAbnormalWeather",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "sha1": "fb62e5a84003aa6247f1e7fe6ea409ec86ac92cc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "rawScript": "setvar VAR_0x8004, 0\n\tcall_if_set FLAG_DEFEATED_KYOGRE, Route119_WeatherInstitute_2F_EventScript_LegendaryDefeated\n\tcall_if_set FLAG_DEFEATED_GROUDON, Route119_WeatherInstitute_2F_EventScript_LegendaryDefeated\n\tgoto_if_eq VAR_0x8004, 2, Route119_WeatherInstitute_2F_EventScript_NoAbnormalWeather  @ Both defeated\n\tcall_if_unset FLAG_TEMP_2, Route119_WeatherInstitute_2F_EventScript_CreateAbnormalWeather\n\tspecialvar VAR_RESULT, GetAbnormalWeatherMapNameAndType\n\tgoto_if_eq VAR_RESULT, 1, Route119_WeatherInstitute_2F_EventScript_KyogreWeather\n\tmsgbox Route119_WeatherInstitute_2F_Text_GroudonWeather, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route119_WeatherInstitute_2F_EventScript_TryStartAbnormalWeather",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_GROUDON",
+      "FLAG_DEFEATED_KYOGRE",
+      "FLAG_TEMP_2"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

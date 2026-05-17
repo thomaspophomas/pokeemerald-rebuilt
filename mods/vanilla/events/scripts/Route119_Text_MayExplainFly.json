@@ -1,0 +1,19 @@
+{
+  "id": "Route119_Text_MayExplainFly",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119/scripts.inc",
+    "sha1": "576fe3fab09726df20b1bbf3016bc5306f0e0f3d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119/scripts.inc",
+    "rawScript": ".string \"MAY: Use FLY, and your POK\u00e9MON will\\n\"\n\t.string \"instantly carry you to any town you've\\l\"\n\t.string \"already visited.\\p\"\n\t.string \"But, to use FLY, you have to get\\n\"\n\t.string \"the GYM BADGE from FORTREE CITY.\\l\"\n\t.string \"That's important, so don't forget.\\p\"\n\t.string \"You should FLY home and visit\\n\"\n\t.string \"LITTLEROOT for a change.\\p\"\n\t.string \"I bet your mom's worried about you,\\n\"\n\t.string \"{PLAYER}{KUN}.\\p\"\n\t.string \"Well, let's meet again somewhere!$\""
+  },
+  "label": "Route119_Text_MayExplainFly",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route119/scripts.inc",
+  "references": {}
+}

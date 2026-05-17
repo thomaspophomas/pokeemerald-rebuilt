@@ -1,0 +1,30 @@
+{
+  "id": "MossdeepCity_SpaceCenter_1F_EventScript_SunStoneManMagma",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "sha1": "a0cf82d2df089035fb81d02a013736aab95a13d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "rawScript": "goto_if_set FLAG_RECEIVED_SUN_STONE_MOSSDEEP, MossdeepCity_SpaceCenter_1F_EventScript_GaveSunStoneMagma\n\tmsgbox MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis, MSGBOX_DEFAULT\n\tgiveitem ITEM_SUN_STONE\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_RECEIVED_SUN_STONE_MOSSDEEP\n\tmsgbox MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma, MSGBOX_DEFAULT\n\tapplymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\trelease\n\tend"
+  },
+  "label": "MossdeepCity_SpaceCenter_1F_EventScript_SunStoneManMagma",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_SUN_STONE_MOSSDEEP"
+    ],
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_SUN_STONE"
+    ]
+  }
+}

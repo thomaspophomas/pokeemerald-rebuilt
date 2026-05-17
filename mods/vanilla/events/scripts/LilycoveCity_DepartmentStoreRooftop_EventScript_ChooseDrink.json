@@ -1,0 +1,24 @@
+{
+  "id": "LilycoveCity_DepartmentStoreRooftop_EventScript_ChooseDrink",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc",
+    "sha1": "3ac544c7b01d367272ba9a3a4ac85c927eeb0c61"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc",
+    "rawScript": "multichoice 16, 0, MULTI_VENDING_MACHINE, FALSE\n\tcopyvar VAR_TEMP_1, VAR_RESULT\n\tswitch VAR_TEMP_1\n\tcase 0, LilycoveCity_DepartmentStoreRooftop_EventScript_FreshWater\n\tcase 1, LilycoveCity_DepartmentStoreRooftop_EventScript_SodaPop\n\tcase 2, LilycoveCity_DepartmentStoreRooftop_EventScript_Lemonade\n\tmsgbox LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink, MSGBOX_DEFAULT\n\tgoto LilycoveCity_DepartmentStoreRooftop_EventScript_ExitVendingMachine\n\tend"
+  },
+  "label": "LilycoveCity_DepartmentStoreRooftop_EventScript_ChooseDrink",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_1"
+    ]
+  }
+}

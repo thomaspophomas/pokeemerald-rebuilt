@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
+    "sha1": "3bee0ca682f7b98f6a5f16085e830466d47ef6e9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
+    "rawScript": ".string \"Hah?\\n\"\n\t.string \"What are you gawking at?\\p\"\n\t.string \"I don't like you staring at my plush\\n\"\n\t.string \"doll like that.\\p\"\n\t.string \"If you want it, go get one yourself!\\n\"\n\t.string \"Isn't that right, SMOOCHUM?$\""
+  },
+  "label": "BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
+  "references": {}
+}

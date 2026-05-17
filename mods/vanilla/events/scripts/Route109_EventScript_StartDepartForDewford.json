@@ -1,0 +1,26 @@
+{
+  "id": "Route109_EventScript_StartDepartForDewford",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route109/scripts.inc",
+    "sha1": "7b7ddbfc58bd8a1cc6ebeaa13e2d754df362f425"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route109/scripts.inc",
+    "rawScript": "call EventScript_BackupMrBrineyLocation\n\tsetobjectsubpriority LOCALID_ROUTE109_BRINEY, MAP_ROUTE109, 0\n\tsetobjectsubpriority LOCALID_PLAYER, MAP_ROUTE109, 0\n\tapplymovement LOCALID_ROUTE109_BRINEY, Route109_Movement_BrineyEnterBoat\n\twaitmovement 0\n\tremoveobject LOCALID_ROUTE109_BRINEY\n\tswitch VAR_FACING\n\tcase DIR_SOUTH, Route109_EventScript_EnterBoatSouth\n\tcase DIR_WEST, Route109_EventScript_EnterBoatWest\n\tcase DIR_EAST, Route109_EventScript_EnterBoatEast\n\tend"
+  },
+  "label": "Route109_EventScript_StartDepartForDewford",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route109/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FACING"
+    ],
+    "maps": [
+      "MAP_ROUTE109"
+    ]
+  }
+}

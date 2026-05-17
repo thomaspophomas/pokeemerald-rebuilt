@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_1F_EventScript_SeeYouHoney",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/players_house.inc",
+    "sha1": "0f3da1347500315ef212a252409f1d410b0d226c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/players_house.inc",
+    "rawScript": "msgbox PlayersHouse_1F_Text_SeeYouHoney, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "PlayersHouse_1F_EventScript_SeeYouHoney",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/players_house.inc",
+  "references": {}
+}

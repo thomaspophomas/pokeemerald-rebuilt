@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Hall_Text_ComposedTrendThemeSong",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Hall/scripts.inc",
+    "sha1": "78185d3058996bff2579b5133faf680c4df6865f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Hall/scripts.inc",
+    "rawScript": ".string \"Hey, listen, I composed a theme song\\n\"\n\t.string \"for \u201c{STR_VAR_1}.\u201d\\p\"\n\t.string \"\u201c{STR_VAR_1}\u201d\\n\"\n\t.string \"is really popular right now.\\p\"\n\t.string \"Okay, listen!\\n\"\n\t.string \"\u2026 \u2026\\p\"\n\t.string \"Oh!\\n\"\n\t.string \"{STR_VAR_1}!\\p\"\n\t.string \"Wonderful\\n\"\n\t.string \"{STR_VAR_1}!$\""
+  },
+  "label": "DewfordTown_Hall_Text_ComposedTrendThemeSong",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown_Hall/scripts.inc",
+  "references": {}
+}

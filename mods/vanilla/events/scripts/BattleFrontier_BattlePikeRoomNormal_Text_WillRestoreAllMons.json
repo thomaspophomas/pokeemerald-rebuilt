@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreAllMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "sha1": "54c1e0ee021a3a91375f3b05c8682c17ed095aa9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "rawScript": ".string \"I welcome you\u2026\\p\"\n\t.string \"Giggle\u2026\\n\"\n\t.string \"You should thank your lucky stars\u2026\\p\"\n\t.string \"Since you have chosen this room,\\n\"\n\t.string \"all your POK\u00e9MON will be restored\u2026$\""
+  },
+  "label": "BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreAllMons",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+  "references": {}
+}

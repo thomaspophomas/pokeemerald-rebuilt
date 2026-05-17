@@ -1,0 +1,27 @@
+{
+  "id": "Route116_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116/scripts.inc",
+    "sha1": "414d7bb5c4246d6317dd973dc816983566be8cc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route116/scripts.inc",
+    "rawScript": "call_if_set FLAG_RECOVERED_DEVON_GOODS, Route116_EventScript_SetWandasBoyfriendPos\n\tcall_if_eq VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_HideMapNamePopup\n\tcall_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_116_NORTH, AbnormalWeather_StartGroudonWeather\n\tcall_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_116_SOUTH, AbnormalWeather_StartGroudonWeather\n\tend"
+  },
+  "label": "Route116_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Route116/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECOVERED_DEVON_GOODS"
+    ],
+    "vars": [
+      "VAR_ABNORMAL_WEATHER_LOCATION",
+      "VAR_SHOULD_END_ABNORMAL_WEATHER"
+    ]
+  }
+}

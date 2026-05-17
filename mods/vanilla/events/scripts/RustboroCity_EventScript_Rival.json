@@ -1,0 +1,23 @@
+{
+  "id": "RustboroCity_EventScript_Rival",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": "lockall\n\tcall_if_unset FLAG_MET_RIVAL_RUSTBORO, RustboroCity_EventScript_PlayRivalMusic\n\tapplymovement LOCALID_RUSTBORO_RIVAL, Common_Movement_FacePlayer\n\twaitmovement 0\n\tgoto RustboroCity_EventScript_RivalEncounter"
+  },
+  "label": "RustboroCity_EventScript_Rival",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_RIVAL_RUSTBORO"
+    ]
+  }
+}

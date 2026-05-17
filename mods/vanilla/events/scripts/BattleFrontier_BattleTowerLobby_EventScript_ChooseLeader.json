@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_EventScript_ChooseLeader",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": "message CableClub_Text_ChooseGroupLeaderOfTwo\n\twaitmessage\n\tmultichoice 16, 6, MULTI_LINK_LEADER, FALSE\n\tswitch VAR_RESULT\n\tcase 0, BattleFrontier_BattleTowerLobby_EventScript_TryJoinGroup\n\tcase 1, BattleFrontier_BattleTowerLobby_EventScript_TryBecomeLeader\n\tcase 2, BattleFrontier_BattleTowerLobby_EventScript_CancelChallenge\n\tcase MULTI_B_PRESSED, BattleFrontier_BattleTowerLobby_EventScript_CancelChallenge\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerLobby_EventScript_ChooseLeader",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

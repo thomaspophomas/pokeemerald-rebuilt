@@ -1,0 +1,23 @@
+{
+  "id": "TerraCave_Entrance_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TerraCave_Entrance/scripts.inc",
+    "sha1": "0b2bbefe22b74039b631c918e8606c0eaf72a07b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TerraCave_Entrance/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, TerraCave_Entrance_OnTransition\n\t.byte 0"
+  },
+  "label": "TerraCave_Entrance_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/TerraCave_Entrance/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Text_DoesThisMakeYourFearPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": ".string \"STEVEN: Listen, {PLAYER}{KUN}.\\p\"\n\t.string \"Does seeing GROUDON and KYOGRE make\\n\"\n\t.string \"you think POK\u00e9MON are to be feared?\\p\"\n\t.string \"But that's not true.\\n\"\n\t.string \"POK\u00e9MON are really more\u2026\\p\"\n\t.string \"\u2026Why am I asking you this?\\n\"\n\t.string \"You already know.$\""
+  },
+  "label": "SootopolisCity_Text_DoesThisMakeYourFearPokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Text_TunnelNearingCompletion",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": ".string \"\u201cTimesaving tunnel nearing\\n\"\n\t.string \"completion!\u201d\\p\"\n\t.string \"\u2026Is what it says on the sign, but\\n\"\n\t.string \"there's also a big \u201cX\u201d splashed\\l\"\n\t.string \"across it in red paint\u2026$\""
+  },
+  "label": "RustboroCity_Text_TunnelNearingCompletion",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

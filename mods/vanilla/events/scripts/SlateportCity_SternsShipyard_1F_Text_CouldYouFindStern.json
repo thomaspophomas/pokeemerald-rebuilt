@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_SternsShipyard_1F_Text_CouldYouFindStern",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+    "sha1": "839a40e95086fb806113f67a7c2dc0dcbbab3217"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+    "rawScript": ".string \"DOCK: Where could CAPT. STERN have\\n\"\n\t.string \"gone off to?\\p\"\n\t.string \"Could you go find CAPT. STERN and\\n\"\n\t.string \"deliver that parcel to him?$\""
+  },
+  "label": "SlateportCity_SternsShipyard_1F_Text_CouldYouFindStern",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_CoveLilyMotel_1F_Text_BetterGetWorkingOnGuestsDinner",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+    "sha1": "6fbfa2a2632f8e86026cc0a8c8fa9a98046f56ac"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+    "rawScript": ".string \"Oh, sorry, sorry!\\n\"\n\t.string \"I was too involved in watching TV.\\p\"\n\t.string \"Oh, yes. A big group of guests arrived\\n\"\n\t.string \"a little while ago.\\p\"\n\t.string \"They booked in as GAME FREAK,\\n\"\n\t.string \"so I guess they must make games.\\p\"\n\t.string \"Uh-oh, I'd better get working on\\n\"\n\t.string \"their dinner!$\""
+  },
+  "label": "LilycoveCity_CoveLilyMotel_1F_Text_BetterGetWorkingOnGuestsDinner",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+  "references": {}
+}

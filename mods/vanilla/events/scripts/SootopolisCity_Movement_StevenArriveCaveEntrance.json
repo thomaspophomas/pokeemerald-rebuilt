@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Movement_StevenArriveCaveEntrance",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": "walk_down\n\twalk_down\n\twalk_left\n\tdelay_8\n\twalk_right\n\twalk_up\n\twalk_up\n\twalk_up\n\twalk_right\n\twalk_in_place_faster_left\n\tstep_end"
+  },
+  "label": "SootopolisCity_Movement_StevenArriveCaveEntrance",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

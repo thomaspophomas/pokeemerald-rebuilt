@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Gym_B1F_Text_CrissyIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+    "sha1": "e71da18f579da173413d5f8c5027d9e9c4f14d20"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+    "rawScript": ".string \"You came all the way here, but you won't\\n\"\n\t.string \"get to see JUAN.\\p\"\n\t.string \"Not if you lose to me, you won't!$\""
+  },
+  "label": "SootopolisCity_Gym_B1F_Text_CrissyIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+  "references": {}
+}

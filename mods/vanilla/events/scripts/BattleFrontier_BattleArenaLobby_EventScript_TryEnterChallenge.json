@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleArenaLobby_EventScript_TryEnterChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "sha1": "9504bb75bdf62b80271e2304b4804044c8db502a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "rawScript": "message BattleFrontier_BattleArenaLobby_Text_WhichLevelMode\n\twaitmessage\n\tmultichoice 17, 6, MULTI_LEVEL_MODE, FALSE\n\tswitch VAR_RESULT\n\tcase FRONTIER_LVL_TENT, BattleFrontier_BattleArenaLobby_EventScript_CancelChallenge\n\tcase MULTI_B_PRESSED, BattleFrontier_BattleArenaLobby_EventScript_CancelChallenge\n\tfrontier_checkineligible\n\tgoto_if_eq VAR_0x8004, TRUE, BattleFrontier_BattleArenaLobby_EventScript_NotEnoughValidMons\n\tfrontier_set FRONTIER_DATA_LVL_MODE, VAR_RESULT\n\tmsgbox BattleFrontier_BattleArenaLobby_Text_SelectThreeMons, MSGBOX_DEFAULT\n\tfadescreen FADE_TO_BLACK\n\tcall BattleFrontier_EventScript_GetLvlMode\n\tcopyvar VAR_0x8004, VAR_RESULT\n\tsetvar VAR_0x8005, FRONTIER_PARTY_SIZE\n\tspecial ChoosePartyForBattleFrontier\n\tgoto_if_eq VAR_RESULT, 0, BattleFrontier_BattleArenaLobby_EventScript_LoadPartyAndCancelChallenge\n\tmsgbox BattleFrontier_BattleArenaLobby_Text_OkayToSave, MSGBOX_YESNO\n\tswitch VAR_RESULT\n\tcase NO, BattleFrontier_BattleArenaLobby_EventScript_LoadPartyAndCancelChallenge\n\tcase YES, BattleFrontier_BattleArenaLobby_EventScript_SaveBeforeChallenge\n\tcase MULTI_B_PRESSED, BattleFrontier_BattleArenaLobby_EventScript_LoadPartyAndCancelChallenge"
+  },
+  "label": "BattleFrontier_BattleArenaLobby_EventScript_TryEnterChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

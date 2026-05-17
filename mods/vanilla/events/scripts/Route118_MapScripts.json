@@ -1,0 +1,25 @@
+{
+  "id": "Route118_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route118/scripts.inc",
+    "sha1": "5a4868d1490a62e62c6e29a255fc938bad9fa2cd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route118/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, Route118_OnTransition\n\tmap_script MAP_SCRIPT_ON_LOAD, Route118_OnLoad\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, Route118_OnFrame\n\t.byte 0"
+  },
+  "label": "Route118_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Route118/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

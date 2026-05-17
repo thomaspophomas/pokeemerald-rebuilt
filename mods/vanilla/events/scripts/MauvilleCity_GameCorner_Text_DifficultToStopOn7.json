@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_GameCorner_Text_DifficultToStopOn7",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "sha1": "3db7cd216c9a2c35e8176ef8b4a1d9ec68649c7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "rawScript": ".string \"It's very difficult to make it stop\\n\"\n\t.string \"right on \u201c7.\u201d\\p\"\n\t.string \"If it stops on \u201c7\u201d during the REEL TIME\\n\"\n\t.string \"bonus game, you'll receive extra COINS.$\""
+  },
+  "label": "MauvilleCity_GameCorner_Text_DifficultToStopOn7",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+  "references": {}
+}

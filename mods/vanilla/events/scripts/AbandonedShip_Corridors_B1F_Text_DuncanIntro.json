@@ -1,0 +1,19 @@
+{
+  "id": "AbandonedShip_Corridors_B1F_Text_DuncanIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+    "sha1": "20ae990b6a96e346c899f484fa3bf65e231e4792"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+    "rawScript": ".string \"When we go out to sea, we SAILORS\\n\"\n\t.string \"always bring our POK\u00e9MON.\\l\"\n\t.string \"How about a quick battle?$\""
+  },
+  "label": "AbandonedShip_Corridors_B1F_Text_DuncanIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+  "references": {}
+}

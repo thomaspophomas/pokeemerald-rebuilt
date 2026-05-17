@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_MaysHouse_1F_Movement_MayApproachPlayer2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+    "sha1": "4acc9bd3dce8266e27759616e41b13205491adc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+    "rawScript": "walk_in_place_faster_right\n\twalk_right\n\twalk_in_place_faster_up\n\twalk_up\n\twalk_up\n\twalk_up\n\twalk_up\n\tstep_end"
+  },
+  "label": "LittlerootTown_MaysHouse_1F_Movement_MayApproachPlayer2",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+  "references": {}
+}

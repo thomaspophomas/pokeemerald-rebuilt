@@ -1,0 +1,23 @@
+{
+  "id": "Apprentice_EventScript_ConfirmHoldNothing",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/apprentice.inc",
+    "sha1": "353208142bca1df117076064d141b84efe196e7c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/apprentice.inc",
+    "rawScript": "apprentice_initquestion APPRENTICE_QUESTION_WHAT_ITEM\n\tapprentice_buff STR_VAR_1, APPRENTICE_BUFF_SPECIES3\n\tapprentice_msg FALSE, APPRENTICE_MSG_HOLD_NOTHING\n\tapprentice_menu APPRENTICE_ASK_GIVE\n\tapprentice_freequestion\n\tgoto_if_eq VAR_RESULT, 0, Apprentice_EventScript_ChooseHoldItem"
+  },
+  "label": "Apprentice_EventScript_ConfirmHoldNothing",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/apprentice.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

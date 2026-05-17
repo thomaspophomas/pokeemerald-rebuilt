@@ -1,0 +1,23 @@
+{
+  "id": "FallarborTown_MoveRelearnersHouse_EventScript_MoveRelearner",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc",
+    "sha1": "9afb886b81b1177e00257143804f6a28f9488a57"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_MOVE_RELEARNER, Common_Movement_FacePlayer\n\twaitmovement 0\n\tgoto_if_set FLAG_TEMP_1, FallarborTown_MoveRelearnersHouse_EventScript_AskTeachMove\n\tmsgbox FallarborTown_MoveRelearnersHouse_Text_ImTheMoveTutor, MSGBOX_DEFAULT\n\tsetflag FLAG_TEMP_1\n\tgoto FallarborTown_MoveRelearnersHouse_EventScript_AskTeachMove\n\tend"
+  },
+  "label": "FallarborTown_MoveRelearnersHouse_EventScript_MoveRelearner",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_TEMP_1"
+    ]
+  }
+}

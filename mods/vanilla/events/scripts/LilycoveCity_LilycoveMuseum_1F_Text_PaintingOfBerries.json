@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBerries",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+    "sha1": "9b7ed7bb941e379aabaa59bf0da8ffe089df98ba"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+    "rawScript": ".string \"It's a delicious-looking painting\\n\"\n\t.string \"of BERRIES.\\p\"\n\t.string \"This painting could make you hungry!$\""
+  },
+  "label": "LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBerries",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+  "references": {}
+}

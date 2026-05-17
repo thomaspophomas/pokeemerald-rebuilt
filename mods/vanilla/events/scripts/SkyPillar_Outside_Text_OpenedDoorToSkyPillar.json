@@ -1,0 +1,19 @@
+{
+  "id": "SkyPillar_Outside_Text_OpenedDoorToSkyPillar",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Outside/scripts.inc",
+    "sha1": "9bf749dde7f98e08aa43ccd220b7469c53ade7f3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_Outside/scripts.inc",
+    "rawScript": ".string \"WALLACE: Oh, my, I'm terribly sorry!\\p\"\n\t.string \"In my haste, I didn't notice that\\n\"\n\t.string \"I'd left you behind!\\p\"\n\t.string \"I've opened the locked door of\\n\"\n\t.string \"the SKY PILLAR.\\p\"\n\t.string \"{PLAYER}{KUN}, let's be on our way!$\""
+  },
+  "label": "SkyPillar_Outside_Text_OpenedDoorToSkyPillar",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SkyPillar_Outside/scripts.inc",
+  "references": {}
+}

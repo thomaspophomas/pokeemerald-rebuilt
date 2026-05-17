@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_StevensHouse_Text_YouveEarnedHMDive",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "sha1": "13a709347ca2c2863ef04de01b7d51d28b9d736e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "rawScript": ".string \"STEVEN: {PLAYER}{KUN}\u2026\\p\"\n\t.string \"As you can see, there's not much here,\\n\"\n\t.string \"but this is my home.\\p\"\n\t.string \"Thank you for all that you've done.\\p\"\n\t.string \"This is my token of appreciation.\\n\"\n\t.string \"It's the HIDDEN MACHINE DIVE.\\p\"\n\t.string \"No need to be shy--you've earned\\n\"\n\t.string \"this HM.$\""
+  },
+  "label": "MossdeepCity_StevensHouse_Text_YouveEarnedHMDive",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+  "references": {}
+}

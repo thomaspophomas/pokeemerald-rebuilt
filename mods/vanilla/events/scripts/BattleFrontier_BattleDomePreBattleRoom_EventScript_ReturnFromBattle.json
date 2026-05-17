@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleDomePreBattleRoom_EventScript_ReturnFromBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+    "sha1": "18c4052c546a6c71ff18234f6ef3a8130ec538d0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+    "rawScript": "setvar VAR_TEMP_0, 1\n\tmsgbox BattleFrontier_BattleDomePreBattleRoom_Text_RestoreMonsToFullHealth, MSGBOX_DEFAULT\n\tspecial LoadPlayerParty\n\tfrontier_setpartyorder FRONTIER_PARTY_SIZE\n\tplayfanfare MUS_HEAL\n\twaitfanfare\n\tspecial HealPlayerParty\n\tcall BattleFrontier_BattleDomePreBattleRoom_EventScript_RoundCompleteMessage\n\tfadescreen FADE_TO_BLACK\n\tdome_showstatictourneytree\n\twaitstate\n\tgoto BattleFrontier_BattleDomePreBattleRoom_EventScript_AskReadyForNextRound"
+  },
+  "label": "BattleFrontier_BattleDomePreBattleRoom_EventScript_ReturnFromBattle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0"
+    ]
+  }
+}

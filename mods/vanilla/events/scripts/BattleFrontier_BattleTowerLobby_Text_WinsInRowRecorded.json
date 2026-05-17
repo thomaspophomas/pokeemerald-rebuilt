@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_Text_WinsInRowRecorded",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": ".string \"The number of matches you win in a row\\n\"\n\t.string \"is recorded.\\p\"\n\t.string \"I'd better not get beaten in\\n\"\n\t.string \"an embarrassing way!$\""
+  },
+  "label": "BattleFrontier_BattleTowerLobby_Text_WinsInRowRecorded",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {}
+}

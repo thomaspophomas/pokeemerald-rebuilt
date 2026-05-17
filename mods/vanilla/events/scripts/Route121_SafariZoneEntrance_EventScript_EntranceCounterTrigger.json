@@ -1,0 +1,23 @@
+{
+  "id": "Route121_SafariZoneEntrance_EventScript_EntranceCounterTrigger",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route121_SafariZoneEntrance/scripts.inc",
+    "sha1": "6a3d6039da49b2973bb2acbe14884a453fef9c72"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route121_SafariZoneEntrance/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tshowmoneybox 0, 0\n\tmsgbox Route121_SafariZoneEntrance_Text_WouldYouLikeToPlay, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, Route121_SafariZoneEntrance_EventScript_TryEnterSafariZone\n\tmsgbox Route121_SafariZoneEntrance_Text_PlayAnotherTime, MSGBOX_DEFAULT\n\tgoto Route121_SafariZoneEntrance_EventScript_MovePlayerBackFromCounter\n\tend"
+  },
+  "label": "Route121_SafariZoneEntrance_EventScript_EntranceCounterTrigger",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route121_SafariZoneEntrance/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

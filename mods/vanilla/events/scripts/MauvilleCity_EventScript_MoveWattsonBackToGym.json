@@ -1,0 +1,25 @@
+{
+  "id": "MauvilleCity_EventScript_MoveWattsonBackToGym",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": "clearflag FLAG_HIDE_MAUVILLE_GYM_WATTSON\n\tsetflag FLAG_HIDE_MAUVILLE_CITY_WATTSON\n\tsetflag FLAG_WATTSON_REMATCH_AVAILABLE\n\treturn"
+  },
+  "label": "MauvilleCity_EventScript_MoveWattsonBackToGym",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_MAUVILLE_CITY_WATTSON",
+      "FLAG_HIDE_MAUVILLE_GYM_WATTSON",
+      "FLAG_WATTSON_REMATCH_AVAILABLE"
+    ]
+  }
+}

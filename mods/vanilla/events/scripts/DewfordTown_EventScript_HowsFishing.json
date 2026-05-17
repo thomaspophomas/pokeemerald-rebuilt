@@ -1,0 +1,23 @@
+{
+  "id": "DewfordTown_EventScript_HowsFishing",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown/scripts.inc",
+    "sha1": "e9e724e6d3bba641bcb2d4263fe226ee6c1b4840"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown/scripts.inc",
+    "rawScript": "message DewfordTown_Text_HowsYourFishing\n\twaitmessage\n\tmultichoice 20, 8, MULTI_HOWS_FISHING, TRUE\n\tgoto_if_eq VAR_RESULT, 0, DewfordTown_EventScript_FishingExcellent\n\tgoto_if_eq VAR_RESULT, 1, DewfordTown_EventScript_FishingNotSoGood\n\tend"
+  },
+  "label": "DewfordTown_EventScript_HowsFishing",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DewfordTown/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

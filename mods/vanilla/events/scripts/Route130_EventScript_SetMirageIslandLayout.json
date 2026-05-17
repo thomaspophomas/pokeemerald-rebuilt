@@ -1,0 +1,19 @@
+{
+  "id": "Route130_EventScript_SetMirageIslandLayout",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route130/scripts.inc",
+    "sha1": "a9ba0823534cb148395846a36fd5c18d2207922a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route130/scripts.inc",
+    "rawScript": "setmaplayoutindex LAYOUT_ROUTE130_MIRAGE_ISLAND\n\tend"
+  },
+  "label": "Route130_EventScript_SetMirageIslandLayout",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route130/scripts.inc",
+  "references": {}
+}

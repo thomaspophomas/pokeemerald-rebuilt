@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestHall_Text_EnteredWrongContest",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "sha1": "9d258f56144116075b6ffd125cc9edb7fc292736"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "rawScript": ".string \"Ayayayay\u2026\\n\"\n\t.string \"I entered the wrong CONTEST.\\p\"\n\t.string \"I entered this tough POK\u00e9MON in\\n\"\n\t.string \"the SMARTNESS CONTEST\u2026\\p\"\n\t.string \"Come on, wow them with a smart-looking\\n\"\n\t.string \"ROCK SMASH.$\""
+  },
+  "label": "LilycoveCity_ContestHall_Text_EnteredWrongContest",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+  "references": {}
+}

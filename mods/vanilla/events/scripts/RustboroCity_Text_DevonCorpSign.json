@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Text_DevonCorpSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": ".string \"DEVON CORPORATION\\p\"\n\t.string \"\u201cFor all your living needs, we make\\n\"\n\t.string \"it all.\u201d$\""
+  },
+  "label": "RustboroCity_Text_DevonCorpSign",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

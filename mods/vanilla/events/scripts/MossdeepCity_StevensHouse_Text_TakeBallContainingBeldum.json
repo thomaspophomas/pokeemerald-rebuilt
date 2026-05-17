@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "sha1": "13a709347ca2c2863ef04de01b7d51d28b9d736e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "rawScript": ".string \"{PLAYER} checked the POK\u00e9 BALL.\\p\"\n\t.string \"It contained the POK\u00e9MON\\n\"\n\t.string \"BELDUM.\\p\"\n\t.string \"Take the POK\u00e9 BALL?$\""
+  },
+  "label": "MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+  "references": {}
+}

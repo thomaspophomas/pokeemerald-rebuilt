@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_SternsShipyard_1F_Text_DecidedToHelpDock",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+    "sha1": "839a40e95086fb806113f67a7c2dc0dcbbab3217"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+    "rawScript": ".string \"MR. BRINEY: Ah, {PLAYER}{KUN}!\\n\"\n\t.string \"It's been too long!\\p\"\n\t.string \"Aye, since I met you, this old sea dog's\\n\"\n\t.string \"been feeling frisky!\\p\"\n\t.string \"So I've decided to help DOCK make\\n\"\n\t.string \"a ferry.\\p\"\n\t.string \"Aye, after all, a ferry would be able\\n\"\n\t.string \"to carry a lot of people.\\p\"\n\t.string \"But, you know, that DOCK is really\\n\"\n\t.string \"something special.\\p\"\n\t.string \"With his knack for technology and\\n\"\n\t.string \"my experience, I'm sure that we can\\l\"\n\t.string \"build one great ship, aye!$\""
+  },
+  "label": "SlateportCity_SternsShipyard_1F_Text_DecidedToHelpDock",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+  "references": {}
+}

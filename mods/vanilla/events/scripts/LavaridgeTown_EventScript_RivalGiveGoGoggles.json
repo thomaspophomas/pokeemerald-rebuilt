@@ -1,0 +1,23 @@
+{
+  "id": "LavaridgeTown_EventScript_RivalGiveGoGoggles",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": "lockall\n\tgetplayerxy VAR_0x8008, VAR_0x8009\n\tcall_if_eq VAR_0x8008, 9, LavaridgeTown_EventScript_RivalNoticePlayer\n\tcall_if_ne VAR_0x8008, 9, LavaridgeTown_EventScript_RivalExitHerbShop\n\tdelay 20\n\tcheckplayergender\n\tcall_if_eq VAR_RESULT, MALE, LavaridgeTown_EventScript_PlayMayMusic\n\tcall_if_eq VAR_RESULT, FEMALE, LavaridgeTown_EventScript_PlayBrendanMusic\n\tcall_if_eq VAR_0x8008, 9, LavaridgeTown_EventScript_RivalApproachPlayer1\n\tcall_if_ne VAR_0x8008, 9, LavaridgeTown_EventScript_RivalApproachPlayer2\n\tcheckplayergender\n\tgoto_if_eq VAR_RESULT, MALE, LavaridgeTown_EventScript_MayGiveGoGoggles\n\tgoto_if_eq VAR_RESULT, FEMALE, LavaridgeTown_EventScript_BrendanGiveGoGoggles\n\tend"
+  },
+  "label": "LavaridgeTown_EventScript_RivalGiveGoGoggles",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BerryBlender_Text_SearchingForFriends",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": ".string \"Searching for your friends\u2026\\n\"\n\t.string \"\u2026 \u2026 B Button: Cancel$\""
+  },
+  "label": "BerryBlender_Text_SearchingForFriends",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {}
+}

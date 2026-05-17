@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_CitySign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"MAUVILLE CITY\\n\"\n\t.string \"\u201cThe bright and shiny city of fun!\u201d$\""
+  },
+  "label": "MauvilleCity_Text_CitySign",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

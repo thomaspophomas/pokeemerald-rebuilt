@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeThreePathRoom_EventScript_WarpWildMonRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/battle_pike.inc",
+    "sha1": "f01ae67ca8ba2e8860c192c38f413ebd89aa5204"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/battle_pike.inc",
+    "rawScript": "applymovement LOCALID_PLAYER, BattleFrontier_BattlePikeRoom_Movement_HidePlayer\n\twaitmovement 0\n\tcall BattleFrontier_BattlePike_EventScript_CloseCurtain\n\twarpsilent MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_WILD_MONS, 4, 19\n\twaitstate\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeThreePathRoom_EventScript_WarpWildMonRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/battle_pike.inc",
+  "references": {
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_WILD_MONS"
+    ]
+  }
+}

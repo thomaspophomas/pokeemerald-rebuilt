@@ -1,0 +1,27 @@
+{
+  "id": "EventScript_TV",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/tv.inc",
+    "sha1": "6710fec48cce1bb3d0ce8ab17e9e9756f367ca71"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/tv.inc",
+    "rawScript": "lockall\n\tincrementgamestat GAME_STAT_WATCHED_TV\n\tspecial ResetTVShowState\n\tspecialvar VAR_RESULT, CheckForPlayersHouseNews\n\tgoto_if_eq VAR_RESULT, PLAYERS_HOUSE_TV_MOVIE, EventScript_PlayersHouseMovie\n\tgoto_if_eq VAR_RESULT, PLAYERS_HOUSE_TV_LATI, EventScript_PlayersHouseLatiNewsFlash\n\tgoto_if_unset FLAG_SYS_TV_START, EventScript_MomDadMightLikeThis1\n\tgoto_if_set FLAG_SYS_TV_WATCH, EventScript_MomDadMightLikeThis1\n\tspecialvar VAR_RESULT, IsGabbyAndTyShowOnTheAir\n\tgoto_if_eq VAR_RESULT, TRUE, EventScript_DoInSearchOfTrainers\n\tgoto EventScript_TryDoPokeNews\n\tend"
+  },
+  "label": "EventScript_TV",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/tv.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_TV_START",
+      "FLAG_SYS_TV_WATCH"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

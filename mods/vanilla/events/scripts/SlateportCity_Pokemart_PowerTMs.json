@@ -1,0 +1,24 @@
+{
+  "id": "SlateportCity_Pokemart_PowerTMs",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": ".2byte ITEM_TM_HIDDEN_POWER\n\t.2byte ITEM_TM_SECRET_POWER\n\tpokemartlistend\n\n@ Scene with Capt Sterns interview and Team Aqua announcing plans to steal Submarine"
+  },
+  "label": "SlateportCity_Pokemart_PowerTMs",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {
+    "items": [
+      "ITEM_TM_HIDDEN_POWER",
+      "ITEM_TM_SECRET_POWER"
+    ]
+  }
+}

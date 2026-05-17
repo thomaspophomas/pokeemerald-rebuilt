@@ -1,0 +1,26 @@
+{
+  "id": "MauvilleCity_Gym_OnLoad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "sha1": "ba2cd4a14af6a43f9221cd58f6a4a0299a51ce6c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "rawScript": "goto_if_set FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_DeactivatePuzzle\n\tswitch VAR_MAUVILLE_GYM_STATE\n\tcase 0, MauvilleCity_Gym_EventScript_UpdateBarriers\n\tcase 1, MauvilleCity_Gym_EventScript_Switch1Pressed\n\tcase 2, MauvilleCity_Gym_EventScript_Switch2Pressed\n\tcase 3, MauvilleCity_Gym_EventScript_Switch3Pressed\n\tcase 4, MauvilleCity_Gym_EventScript_Switch4Pressed\n\tend"
+  },
+  "label": "MauvilleCity_Gym_OnLoad",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/MauvilleCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_MAUVILLE_GYM"
+    ],
+    "vars": [
+      "VAR_MAUVILLE_GYM_STATE"
+    ]
+  }
+}

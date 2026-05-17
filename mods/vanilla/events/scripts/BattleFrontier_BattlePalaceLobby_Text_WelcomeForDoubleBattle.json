@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_Text_WelcomeForDoubleBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": ".string \"Where the hearts of TRAINERS\\n\"\n\t.string \"are put to the test.\\p\"\n\t.string \"I welcome you to the BATTLE PALACE.\\p\"\n\t.string \"I accept challenges to the DOUBLE\\n\"\n\t.string \"BATTLE HALLS.$\""
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_Text_WelcomeForDoubleBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {}
+}

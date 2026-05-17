@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_PokemonCenter_1F_Text_GoToSafariZone",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "695df0ed7ad6600850be2816ae2060c7c1c6c535"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"Listen, kid, are you working\\n\"\n\t.string \"on a POK\u00e9DEX?\\p\"\n\t.string \"Hmm\u2026 Go to the SAFARI ZONE.\\n\"\n\t.string \"That's my suggestion.$\""
+  },
+  "label": "FortreeCity_PokemonCenter_1F_Text_GoToSafariZone",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

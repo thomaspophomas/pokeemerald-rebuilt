@@ -1,0 +1,29 @@
+{
+  "id": "MtPyre_1F_EventScript_CleanseTagWoman",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_1F/scripts.inc",
+    "sha1": "fb767551d4d8fa906d9226adf1aabd795c630e6b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_1F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_CLEANSE_TAG, MtPyre_1F_EventScript_ReceivedCleanseTag\n\tmsgbox MtPyre_1F_Text_TakeThisForYourOwnGood, MSGBOX_DEFAULT\n\tgiveitem ITEM_CLEANSE_TAG\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_RECEIVED_CLEANSE_TAG\n\trelease\n\tend"
+  },
+  "label": "MtPyre_1F_EventScript_CleanseTagWoman",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtPyre_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_CLEANSE_TAG"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_CLEANSE_TAG"
+    ]
+  }
+}

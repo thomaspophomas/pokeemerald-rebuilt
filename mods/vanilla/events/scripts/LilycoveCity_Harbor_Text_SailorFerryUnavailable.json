@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Harbor_Text_SailorFerryUnavailable",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "sha1": "ffd83f00915b03bfdd96f51950251d00dd19dbcb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "rawScript": ".string \"Until they finish making the ferry,\\n\"\n\t.string \"we sailors have nothing to do\u2026\\p\"\n\t.string \"I wish they'd get a move on, the folks\\n\"\n\t.string \"at the SHIPYARD in SLATEPORT.$\""
+  },
+  "label": "LilycoveCity_Harbor_Text_SailorFerryUnavailable",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_Harbor/scripts.inc",
+  "references": {}
+}

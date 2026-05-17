@@ -1,0 +1,26 @@
+{
+  "id": "LittlerootTown_MaysHouse_2F_EventScript_CheckShouldUpdateMayPos",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "sha1": "e014a444dcf389c78773768633900402b1862edb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "rawScript": "goto_if_set FLAG_MET_RIVAL_LILYCOVE, LittlerootTown_MaysHouse_2F_EventScript_TryUpdateMayPos\n\tgoto_if_ge VAR_BIRCH_LAB_STATE, 2, LittlerootTown_MaysHouse_2F_EventScript_Ret\n\tgoto LittlerootTown_MaysHouse_2F_EventScript_TryUpdateMayPos"
+  },
+  "label": "LittlerootTown_MaysHouse_2F_EventScript_CheckShouldUpdateMayPos",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_RIVAL_LILYCOVE"
+    ],
+    "vars": [
+      "VAR_BIRCH_LAB_STATE"
+    ]
+  }
+}

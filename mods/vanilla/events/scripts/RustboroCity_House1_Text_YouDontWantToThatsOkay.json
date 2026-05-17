@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_House1_Text_YouDontWantToThatsOkay",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_House1/scripts.inc",
+    "sha1": "40e0730e3208fa5cccc515a948ef43358100668f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_House1/scripts.inc",
+    "rawScript": ".string \"Oh, if you don't want to, that's okay.\\n\"\n\t.string \"But my POK\u00e9MON is cute, you know\u2026$\""
+  },
+  "label": "RustboroCity_House1_Text_YouDontWantToThatsOkay",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_House1/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": "SootopolisCity_EventScript_KiriGiveBerry",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": "dotimebasedevents\n\tspecial GetPlayerBigGuyGirlString\n\tgoto_if_set FLAG_DAILY_SOOTOPOLIS_RECEIVED_BERRY, SootopolisCity_EventScript_KiriReceivedBerry\n\tmsgbox SootopolisCity_Text_NameIsKiriHaveOneOfThese, MSGBOX_DEFAULT\n\trandom NUM_KIRI_BERRIES\n\taddvar VAR_RESULT, NUM_KIRI_BERRIES_SKIPPED\n\taddvar VAR_RESULT, FIRST_BERRY_INDEX\n\tgiveitem VAR_RESULT\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_DAILY_SOOTOPOLIS_RECEIVED_BERRY\n\tmsgbox SootopolisCity_Text_GiveYouThisBerryToo, MSGBOX_DEFAULT\n\trandom 2\n\tgoto_if_eq VAR_RESULT, 0, SootopolisCity_EventScript_GiveFigyBerry\n\tgoto_if_eq VAR_RESULT, 1, SootopolisCity_EventScript_GiveIapapaBerry\n\tend"
+  },
+  "label": "SootopolisCity_EventScript_KiriGiveBerry",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DAILY_SOOTOPOLIS_RECEIVED_BERRY"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

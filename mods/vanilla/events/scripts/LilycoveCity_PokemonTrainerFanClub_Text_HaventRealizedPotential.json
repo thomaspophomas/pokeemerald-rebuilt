@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_Text_HaventRealizedPotential",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": ".string \"Yes, I see strength in your eyes.\\p\"\n\t.string \"But!\\p\"\n\t.string \"You still haven't realized your\\n\"\n\t.string \"potential.$\""
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_Text_HaventRealizedPotential",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {}
+}

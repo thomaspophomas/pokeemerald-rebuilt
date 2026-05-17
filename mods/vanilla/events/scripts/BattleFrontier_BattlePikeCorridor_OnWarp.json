@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeCorridor_OnWarp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeCorridor/scripts.inc",
+    "sha1": "b1eb4439a004760272901a523e8508e96689e96b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeCorridor/scripts.inc",
+    "rawScript": "map_script_2 VAR_TEMP_1, 0, BattleFrontier_BattlePikeCorridor_EventScript_TurnPlayerNorth\n\t.2byte 0"
+  },
+  "label": "BattleFrontier_BattlePikeCorridor_OnWarp",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeCorridor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Text_ThisIsATestSignpostMsg",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/test_signpost.inc",
+    "sha1": "c28c0f143606e6f3c72bf689f66206d2ebbf5662"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/test_signpost.inc",
+    "rawScript": ".string \"This is a test message.\\n\"\n\t.string \"This is a signpost.$\""
+  },
+  "label": "Text_ThisIsATestSignpostMsg",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/scripts/test_signpost.inc",
+  "references": {}
+}

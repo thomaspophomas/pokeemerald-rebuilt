@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Mart_Text_MaxRepelLastsLongest",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Mart/scripts.inc",
+    "sha1": "c808a00eab98e6463dd7a37f123ff7123046ccad"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_Mart/scripts.inc",
+    "rawScript": ".string \"MAX REPEL keeps all weak POK\u00e9MON away.\\p\"\n\t.string \"Out of all the REPEL sprays, it lasts\\n\"\n\t.string \"the longest.$\""
+  },
+  "label": "MossdeepCity_Mart_Text_MaxRepelLastsLongest",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_Mart/scripts.inc",
+  "references": {}
+}

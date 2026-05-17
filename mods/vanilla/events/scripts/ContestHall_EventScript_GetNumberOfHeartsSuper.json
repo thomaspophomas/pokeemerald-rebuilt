@@ -1,0 +1,23 @@
+{
+  "id": "ContestHall_EventScript_GetNumberOfHeartsSuper",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": "goto_if_gt VAR_0x8004, 230, ContestHall_EventScript_Set8Hearts\n\tgoto_if_gt VAR_0x8004, 210, ContestHall_EventScript_Set7Hearts\n\tgoto_if_gt VAR_0x8004, 190, ContestHall_EventScript_Set6Hearts\n\tgoto_if_gt VAR_0x8004, 170, ContestHall_EventScript_Set5Hearts\n\tgoto_if_gt VAR_0x8004, 150, ContestHall_EventScript_Set4Hearts\n\tgoto_if_gt VAR_0x8004, 130, ContestHall_EventScript_Set3Hearts\n\tgoto_if_gt VAR_0x8004, 110, ContestHall_EventScript_Set2Hearts\n\tgoto_if_gt VAR_0x8004, 90, ContestHall_EventScript_Set1Heart\n\tsetvar VAR_TEMP_0, 0\n\treturn"
+  },
+  "label": "ContestHall_EventScript_GetNumberOfHeartsSuper",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0"
+    ]
+  }
+}

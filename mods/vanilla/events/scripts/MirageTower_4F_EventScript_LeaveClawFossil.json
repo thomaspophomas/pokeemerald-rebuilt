@@ -1,0 +1,19 @@
+{
+  "id": "MirageTower_4F_EventScript_LeaveClawFossil",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MirageTower_4F/scripts.inc",
+    "sha1": "0e490ee2e9400861a54b910d5d29825dad66deb9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MirageTower_4F/scripts.inc",
+    "rawScript": "msgbox MirageTower_4F_Text_LeaveClawFossilAlone, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "MirageTower_4F_EventScript_LeaveClawFossil",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MirageTower_4F/scripts.inc",
+  "references": {}
+}

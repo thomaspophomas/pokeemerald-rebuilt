@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_PokemonLeague_1F_EventScript_PlayerMoveToFrontFromRight",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+    "sha1": "a55305762ef4a1d7b0cbf882528ff161154a969b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+    "rawScript": "applymovement LOCALID_PLAYER, EverGrandeCity_PokemonLeague_1F_Movement_MoveToFrontFromRight\n\twaitmovement 0\n\treturn"
+  },
+  "label": "EverGrandeCity_PokemonLeague_1F_EventScript_PlayerMoveToFrontFromRight",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+  "references": {}
+}

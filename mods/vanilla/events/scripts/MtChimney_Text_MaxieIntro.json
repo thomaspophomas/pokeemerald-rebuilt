@@ -1,0 +1,19 @@
+{
+  "id": "MtChimney_Text_MaxieIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney/scripts.inc",
+    "sha1": "4d6a7ac7998e07e6d4f244ef13c499194f5b3668"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtChimney/scripts.inc",
+    "rawScript": ".string \"MAXIE: Hm?\\n\"\n\t.string \"Who are you?\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\n\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"I'd heard ARCHIE bemoaning a child\\n\"\n\t.string \"who's been meddling in TEAM AQUA's\\l\"\n\t.string \"affairs.\\p\"\n\t.string \"It must be you he meant.\\p\"\n\t.string \"Humph! So you're thinking of\\n\"\n\t.string \"interfering with us, TEAM MAGMA?\\p\"\n\t.string \"Now you listen.\\n\"\n\t.string \"Long ago, living things used the\\l\"\n\t.string \"land to live and grow.\\p\"\n\t.string \"That is why land is all important!\\n\"\n\t.string \"It is the cradle of all!\\p\"\n\t.string \"That is why TEAM MAGMA is dedicated\\n\"\n\t.string \"to the expansion of the land mass.\\p\"\n\t.string \"It is for further advancement of\\n\"\n\t.string \"humankind and POK\u00e9MON!\\p\"\n\t.string \"And for that, we need the power of\\n\"\n\t.string \"what sleeps within this mountain\u2026\\p\"\n\t.string \"Oh! There was no need for you to\\n\"\n\t.string \"learn that much.\\p\"\n\t.string \"But, no matter!\\n\"\n\t.string \"I'll teach you the consequences of\\l\"\n\t.string \"meddling in our grand design!$\""
+  },
+  "label": "MtChimney_Text_MaxieIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtChimney/scripts.inc",
+  "references": {}
+}

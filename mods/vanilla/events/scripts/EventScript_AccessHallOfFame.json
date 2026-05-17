@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_AccessHallOfFame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/pc.inc",
+    "sha1": "7bcbb4797cbf3d04de79d03c5e2b947f76ffcf90"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/pc.inc",
+    "rawScript": "goto_if_unset FLAG_SYS_GAME_CLEAR, EventScript_TurnOffPC\n\tplayse SE_PC_LOGIN\n\tspecial AccessHallOfFamePC\n\tgoto EventScript_AccessPC\n\tend"
+  },
+  "label": "EventScript_AccessHallOfFame",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/pc.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_GAME_CLEAR"
+    ]
+  }
+}

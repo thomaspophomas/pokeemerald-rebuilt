@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Text_AquaWillAssumeControlOfSubmarine",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": ".string \"Fufufu\u2026\\n\"\n\t.string \"CAPT. STERN, I presume.\\p\"\n\t.string \"We of TEAM AQUA will assume\\n\"\n\t.string \"control of your submarine!\\p\"\n\t.string \"Your objections are meaningless!\\n\"\n\t.string \"We expect your total cooperation!\\p\"\n\t.string \"Fufufu\u2026\\n\"\n\t.string \"Just watch and learn what TEAM\\l\"\n\t.string \"AQUA has planned!$\""
+  },
+  "label": "SlateportCity_Text_AquaWillAssumeControlOfSubmarine",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {}
+}

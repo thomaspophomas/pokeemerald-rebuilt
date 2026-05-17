@@ -1,0 +1,26 @@
+{
+  "id": "Route104_MrBrineysHouse_EventScript_SailingIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+    "sha1": "1685496df25ec35fb97de14e44b3ea41b1d1c6db"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+    "rawScript": "setflag FLAG_MR_BRINEY_SAILING_INTRO\n\tmsgbox Route104_MrBrineysHouse_Text_WaitUpPeeko, MSGBOX_DEFAULT\n\tmsgbox Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, Route104_MrBrineysHouse_EventScript_DeclineDeliverySailing\n\tgoto Route104_MrBrineysHouse_EventScript_SailToDewford\n\tend"
+  },
+  "label": "Route104_MrBrineysHouse_EventScript_SailingIntro",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MR_BRINEY_SAILING_INTRO"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

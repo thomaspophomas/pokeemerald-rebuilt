@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_Mart_Text_XSpecialIsCrucial",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_Mart/scripts.inc",
+    "sha1": "815f118fd23cab33023fd266a93950041afd0a06"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_Mart/scripts.inc",
+    "rawScript": ".string \"For any POK\u00e9MON match, X SPECIAL\\n\"\n\t.string \"is crucial.\\p\"\n\t.string \"It jacks up the power of some moves\\n\"\n\t.string \"even though it's only for one battle.$\""
+  },
+  "label": "VerdanturfTown_Mart_Text_XSpecialIsCrucial",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_Mart/scripts.inc",
+  "references": {}
+}

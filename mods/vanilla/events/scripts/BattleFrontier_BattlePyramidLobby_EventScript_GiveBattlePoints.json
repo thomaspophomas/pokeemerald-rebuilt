@@ -1,0 +1,27 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby_EventScript_GiveBattlePoints",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "sha1": "b93395a7ee7156a94cfa3817fd6222cfa69e94fd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "rawScript": "special DoBattlePyramidMonsHaveHeldItem\n\tcall_if_eq VAR_RESULT, TRUE, BattleFrontier_BattlePyramidLobby_EventScript_StoreHeldItemsInPyramidBag\n\tclearflag FLAG_STORING_ITEMS_IN_PYRAMID_BAG\n\tfrontier_checkairshow\n\tspecial LoadPlayerParty\n\tpyramid_clearhelditems\n\tspecial HealPlayerParty\n\tmessage BattleFrontier_BattlePyramidLobby_Text_UsedBattleBagWillBeKept\n\twaitmessage\n\tplayse SE_EXP_MAX\n\twaitse\n\tmsgbox BattleFrontier_BattlePyramidLobby_Text_GiveYouTheseBattlePoints, MSGBOX_DEFAULT\n\tfrontier_givepoints\n\tmsgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS\n\tmessage BattleFrontier_BattlePyramidLobby_Text_RecordResultsWait\n\twaitmessage\n\tpyramid_setprize\n\tpyramid_save 0\n\tplayse SE_SAVE\n\twaitse\n\tmsgbox BattleFrontier_BattlePyramidLobby_Text_LookForwardToNextChallenge, MSGBOX_DEFAULT\n\tclosemessage\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 255\n\treleaseall\n\tend"
+  },
+  "label": "BattleFrontier_BattlePyramidLobby_EventScript_GiveBattlePoints",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_STORING_ITEMS_IN_PYRAMID_BAG"
+    ],
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ]
+  }
+}

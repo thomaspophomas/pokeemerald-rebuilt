@@ -1,0 +1,28 @@
+{
+  "id": "BattleFrontier_BattleDomeBattleRoom_EventScript_SetUpObjects",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "sha1": "2cf5ea83e82fbd2189ced7e0cd4d5f894bf74650"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "rawScript": "hideobjectat LOCALID_DOME_PLAYER, MAP_BATTLE_FRONTIER_BATTLE_DOME_BATTLE_ROOM\n\tcall BattleFrontier_BattleDomeBattleRoom_EventScript_AddAudience\n\tcall BattleFrontier_BattleDomeBattleRoom_EventScript_SetPlayerGfx\n\tsetvar VAR_TEMP_1, 1\n\tapplymovement LOCALID_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_SetInvisible\n\tfrontier_get FRONTIER_DATA_BATTLE_NUM\n\tgoto_if_ne VAR_RESULT, DOME_FINAL, BattleFrontier_BattleDomeBattleRoom_EventScript_EndSetUpObjects\n\tfrontier_getbrainstatus\n\tcopyvar VAR_TEMP_E, VAR_RESULT\n\tgoto_if_eq VAR_RESULT, FRONTIER_BRAIN_NOT_READY, BattleFrontier_BattleDomeBattleRoom_EventScript_EndSetUpObjects\n\tcall BattleFrontier_EventScript_SetBrainObjectGfx\n\tsetobjectxyperm LOCALID_DOME_OPPONENT, 13, 9\n\tremoveobject LOCALID_DOME_OPPONENT\n\taddobject LOCALID_DOME_OPPONENT\n\tapplymovement LOCALID_DOME_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_SetInvisibleFacingUp"
+  },
+  "label": "BattleFrontier_BattleDomeBattleRoom_EventScript_SetUpObjects",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_1",
+      "VAR_TEMP_E"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_DOME_BATTLE_ROOM"
+    ]
+  }
+}

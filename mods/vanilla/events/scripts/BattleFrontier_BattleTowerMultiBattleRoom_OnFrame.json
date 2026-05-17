@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiBattleRoom_OnFrame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+    "sha1": "71e71dc7e048f3a27e89d0ae41c736d25233e068"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+    "rawScript": "map_script_2 VAR_TEMP_0, 0, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_EnterRoom\n\t.2byte 0"
+  },
+  "label": "BattleFrontier_BattleTowerMultiBattleRoom_OnFrame",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice4Accept",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "sha1": "4e7b748d8d3e33414d869ae43d136c857e9955fc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "rawScript": ".string \"Really? I can't believe it!\\n\"\n\t.string \"I can't believe you'll let me join you!\\l\"\n\t.string \"I\u2026 I won't let you down!\\p\"\n\t.string \"Um\u2026 If it's really okay, I'll go register\\n\"\n\t.string \"right this instant!$\""
+  },
+  "label": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice4Accept",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+  "references": {}
+}

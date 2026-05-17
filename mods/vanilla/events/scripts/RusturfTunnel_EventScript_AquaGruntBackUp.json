@@ -1,0 +1,23 @@
+{
+  "id": "RusturfTunnel_EventScript_AquaGruntBackUp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/scripts.inc",
+    "sha1": "76035185b0aabddf11657305417168db4c1bb93d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RusturfTunnel/scripts.inc",
+    "rawScript": "lockall\n\tmsgbox RusturfTunnel_Text_ComeAndGetSome, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_RUSTURF_TUNNEL_GRUNT, RusturfTunnel_Movement_GruntAndPeekoBackUp\n\tapplymovement LOCALID_RUSTURF_TUNNEL_PEEKO, RusturfTunnel_Movement_GruntAndPeekoBackUp\n\twaitmovement 0\n\tcopyobjectxytoperm LOCALID_RUSTURF_TUNNEL_GRUNT\n\tcopyobjectxytoperm LOCALID_RUSTURF_TUNNEL_PEEKO\n\tsetvar VAR_RUSTURF_TUNNEL_STATE, 3\n\treleaseall\n\tend"
+  },
+  "label": "RusturfTunnel_EventScript_AquaGruntBackUp",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RusturfTunnel/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RUSTURF_TUNNEL_STATE"
+    ]
+  }
+}

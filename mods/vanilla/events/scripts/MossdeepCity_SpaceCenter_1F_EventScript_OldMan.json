@@ -1,0 +1,26 @@
+{
+  "id": "MossdeepCity_SpaceCenter_1F_EventScript_OldMan",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "sha1": "a0cf82d2df089035fb81d02a013736aab95a13d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_SYS_GAME_CLEAR, MossdeepCity_SpaceCenter_1F_EventScript_OldManNormal\n\tgoto_if_eq VAR_MOSSDEEP_CITY_STATE, 2, MossdeepCity_SpaceCenter_1F_EventScript_OldManMagma\n\tgoto_if_lt VAR_MOSSDEEP_CITY_STATE, 2, MossdeepCity_SpaceCenter_1F_EventScript_OldManNormal\n\tgoto MossdeepCity_SpaceCenter_1F_EventScript_OldManMagma\n\tend"
+  },
+  "label": "MossdeepCity_SpaceCenter_1F_EventScript_OldMan",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_GAME_CLEAR"
+    ],
+    "vars": [
+      "VAR_MOSSDEEP_CITY_STATE"
+    ]
+  }
+}

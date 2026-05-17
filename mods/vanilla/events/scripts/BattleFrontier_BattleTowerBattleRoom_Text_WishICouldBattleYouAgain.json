@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerBattleRoom_Text_WishICouldBattleYouAgain",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "sha1": "09b678d8717203a622b1d8714d904bcdeb37d08a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "rawScript": ".string \"That was fun\u2026\\p\"\n\t.string \"I have never had a POK\u00e9MON battle\\n\"\n\t.string \"so enjoyable before\u2026\\p\"\n\t.string \"I wish I could battle with you again\u2026$\""
+  },
+  "label": "BattleFrontier_BattleTowerBattleRoom_Text_WishICouldBattleYouAgain",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+  "references": {}
+}

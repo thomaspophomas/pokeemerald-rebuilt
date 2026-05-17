@@ -1,0 +1,19 @@
+{
+  "id": "MagmaHideout_4F_Text_MaxieDefeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_4F/scripts.inc",
+    "sha1": "8f2c61f090f2c324dc4138c5d5ad754b00dfcb48"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_4F/scripts.inc",
+    "rawScript": ".string \"What makes you so adept at handling\\n\"\n\t.string \"POK\u00e9MON?$\""
+  },
+  "label": "MagmaHideout_4F_Text_MaxieDefeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MagmaHideout_4F/scripts.inc",
+  "references": {}
+}

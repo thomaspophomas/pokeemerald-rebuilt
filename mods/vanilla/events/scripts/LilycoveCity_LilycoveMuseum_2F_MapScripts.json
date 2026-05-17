@@ -1,0 +1,24 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_2F_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "sha1": "c41e25282a159070f0eb7fb3edcf1b61cc1cfa19"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_LOAD, LilycoveCity_LilycoveMuseum_2F_OnLoad\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, LilycoveCity_LilycoveMuseum_2F_OnFrame\n\t.byte 0"
+  },
+  "label": "LilycoveCity_LilycoveMuseum_2F_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_LOAD"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "MossdeepCity_Gym_OnLoad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "sha1": "f1b3ae6c76fdfe44b1431df4ea78da5c11a79c08"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "rawScript": "goto_if_set FLAG_MOSSDEEP_GYM_SWITCH_1, MossdeepCity_Gym_EventScript_SetSwitch1Metatiles\n\tgoto MossdeepCity_Gym_EventScript_CheckSwitch2\n\tend"
+  },
+  "label": "MossdeepCity_Gym_OnLoad",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/MossdeepCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MOSSDEEP_GYM_SWITCH_1"
+    ]
+  }
+}

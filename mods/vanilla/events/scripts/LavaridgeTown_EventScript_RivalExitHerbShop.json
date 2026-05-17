@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_EventScript_RivalExitHerbShop",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": "opendoor 12, 15\n\twaitdooranim\n\taddobject LOCALID_LAVARIDGE_RIVAL\n\tapplymovement LOCALID_LAVARIDGE_RIVAL, LavaridgeTown_Movement_RivalExitHerbShop\n\twaitmovement 0\n\tclosedoor 12, 15\n\twaitdooranim\n\tapplymovement LOCALID_LAVARIDGE_RIVAL, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tplayse SE_PIN\n\tapplymovement LOCALID_LAVARIDGE_RIVAL, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_LAVARIDGE_RIVAL, Common_Movement_Delay48\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\treturn"
+  },
+  "label": "LavaridgeTown_EventScript_RivalExitHerbShop",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {}
+}

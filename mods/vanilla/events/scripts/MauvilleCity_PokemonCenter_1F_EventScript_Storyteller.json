@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_PokemonCenter_1F_EventScript_Storyteller",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/mauville_man.inc",
+    "sha1": "5d5e72f125b988a1fbd10a6264af3893ef9cc868"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/mauville_man.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tsetvar VAR_0x8008, 0\n\tsetvar VAR_0x8009, 0\n\tsetvar VAR_0x800A, 0\n\tsetvar VAR_0x800B, 0\n\tmsgbox MauvilleCity_PokemonCenter_1F_Text_WillYouHearMyTale, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, MauvilleCity_PokemonCenter_1F_EventScript_DeclineStoryteller\n\tspecialvar VAR_RESULT, StorytellerGetFreeStorySlot\n\tgoto_if_eq VAR_RESULT, 0, MauvilleCity_PokemonCenter_1F_EventScript_KnowNoTales\n\tmessage MauvilleCity_PokemonCenter_1F_Text_WhichTaleToTell\n\twaitmessage\n\tspecial StorytellerStoryListMenu\n\tgoto_if_eq VAR_RESULT, 0, MauvilleCity_PokemonCenter_1F_EventScript_CancelStorySelection\n\tsetvar VAR_0x8008, 1\n\tspecial Script_StorytellerDisplayStory\n\twaitmessage\n\twaitbuttonpress\n\tspecialvar VAR_RESULT, StorytellerUpdateStat\n\tgoto_if_eq VAR_RESULT, 0, MauvilleCity_PokemonCenter_1F_EventScript_AreThereOtherTales\n\tgoto MauvilleCity_PokemonCenter_1F_EventScript_TellPlayersTale"
+  },
+  "label": "MauvilleCity_PokemonCenter_1F_EventScript_Storyteller",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/mauville_man.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

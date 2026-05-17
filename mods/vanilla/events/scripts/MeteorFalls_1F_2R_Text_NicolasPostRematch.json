@@ -1,0 +1,19 @@
+{
+  "id": "MeteorFalls_1F_2R_Text_NicolasPostRematch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+    "sha1": "09c545be014eea4099489af97aeae4f12469cf78"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+    "rawScript": ".string \"You've obviously kept up your\\n\"\n\t.string \"POK\u00e9MON training.\\p\"\n\t.string \"So long as you remain strong, I, too,\\n\"\n\t.string \"can become stronger!$\""
+  },
+  "label": "MeteorFalls_1F_2R_Text_NicolasPostRematch",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+  "references": {}
+}

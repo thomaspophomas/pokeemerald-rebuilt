@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleFactoryLobby_EventScript_AskRecordBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+    "sha1": "292da35ee750dbef6f890d691b62400b747b2d83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+    "rawScript": "call BattleFrontier_EventScript_GetCantRecordBattle\n\tgoto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattleFactoryLobby_EventScript_EndRecordBattle\n\tmessage BattleFrontier_BattleFactoryLobby_Text_RecordLastMatch\n\twaitmessage\n\tmultichoicedefault 20, 8, MULTI_YESNO, 1, FALSE\n\tswitch VAR_RESULT\n\tcase 1, BattleFrontier_BattleFactoryLobby_EventScript_EndRecordBattle\n\tcase 0, BattleFrontier_BattleFactoryLobby_EventScript_RecordBattle\n\tcase MULTI_B_PRESSED, BattleFrontier_BattleFactoryLobby_EventScript_EndRecordBattle"
+  },
+  "label": "BattleFrontier_BattleFactoryLobby_EventScript_AskRecordBattle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Text_CaveOfOriginPleaseLeave",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": ".string \"Who might you be?\\p\"\n\t.string \"This is the CAVE OF ORIGIN.\\p\"\n\t.string \"The spirits of POK\u00e9MON, becalmed at\\n\"\n\t.string \"MT. PYRE, are said to be revived here.\\p\"\n\t.string \"Please leave.$\""
+  },
+  "label": "SootopolisCity_Text_CaveOfOriginPleaseLeave",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

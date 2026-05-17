@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_GameCornerSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"\u201cThe play spot for all!\u201d\\n\"\n\t.string \"MAUVILLE GAME CORNER$\""
+  },
+  "label": "MauvilleCity_Text_GameCornerSign",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

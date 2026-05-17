@@ -1,0 +1,26 @@
+{
+  "id": "FallarborTown_BattleTentLobby_EventScript_EnterChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "sha1": "007b5945200863133fd43941054ec8db085a0356"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "rawScript": "special SavePlayerParty\n\tfrontier_setpartyorder FRONTIER_PARTY_SIZE\n\tmsgbox FallarborTown_BattleTentLobby_Text_GuideYouToBattleTent, MSGBOX_DEFAULT\n\tclosemessage\n\tcall FallarborTown_BattleTentLobby_EventScript_WalkToDoor\n\twarp MAP_FALLARBOR_TOWN_BATTLE_TENT_CORRIDOR, 2, 7\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 0\n\twaitstate\n\tend"
+  },
+  "label": "FallarborTown_BattleTentLobby_EventScript_EnterChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ],
+    "maps": [
+      "MAP_FALLARBOR_TOWN_BATTLE_TENT_CORRIDOR"
+    ]
+  }
+}

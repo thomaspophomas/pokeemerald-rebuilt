@@ -1,0 +1,19 @@
+{
+  "id": "JaggedPass_Text_EricPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/JaggedPass/scripts.inc",
+    "sha1": "3539aca2d309baaf0b57344f9c2014b5d896c94b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/JaggedPass/scripts.inc",
+    "rawScript": ".string \"Yes, I did lose at POK\u00e9MON\u2026\\p\"\n\t.string \"But, when it comes to the love of\\n\"\n\t.string \"the mountains, I have you beat!$\""
+  },
+  "label": "JaggedPass_Text_EricPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/JaggedPass/scripts.inc",
+  "references": {}
+}

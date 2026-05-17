@@ -1,0 +1,26 @@
+{
+  "id": "MtPyre_3F_EventScript_Gabrielle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_3F/scripts.inc",
+    "sha1": "694f843b2a8c41803b3943fcf555c5a14a36d997"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_3F/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_GABRIELLE_1, MtPyre_3F_Text_GabrielleIntro, MtPyre_3F_Text_GabrielleDefeat, MtPyre_3F_EventScript_RegisterGabrielle\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, MtPyre_3F_EventScript_RematchGabrielle\n\tmsgbox MtPyre_3F_Text_GabriellePostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "MtPyre_3F_EventScript_Gabrielle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtPyre_3F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_GABRIELLE_1"
+    ]
+  }
+}

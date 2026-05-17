@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_Gym_EventScript_Ben",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "sha1": "ba2cd4a14af6a43f9221cd58f6a4a0299a51ce6c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_BEN, MauvilleCity_Gym_Text_BenIntro, MauvilleCity_Gym_Text_BenDefeat\n\tmsgbox MauvilleCity_Gym_Text_BenPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "MauvilleCity_Gym_EventScript_Ben",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_Gym/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_BEN"
+    ]
+  }
+}

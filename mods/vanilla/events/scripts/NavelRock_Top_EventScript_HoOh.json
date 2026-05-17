@@ -1,0 +1,29 @@
+{
+  "id": "NavelRock_Top_EventScript_HoOh",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NavelRock_Top/scripts.inc",
+    "sha1": "9e9f84f593bf205dd39f29584bf0811e5a1438d4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NavelRock_Top/scripts.inc",
+    "rawScript": "lockall\n\tsetvar VAR_TEMP_1, 1\n\tspecial SpawnCameraObject\n\tsetvar VAR_0x8004, 3  @ num loops\n\tsetvar VAR_0x8005, 35 @ delay\n\tspecial LoopWingFlapSE\n\tapplymovement LOCALID_NAVEL_ROCK_HO_OH, NavelRock_Top_Movement_HoOhAppear\n\tapplymovement LOCALID_CAMERA, NavelRock_Top_Movement_CameraPanUp\n\twaitmovement 0\n\tdelay 50\n\tsetweather WEATHER_NONE\n\tdoweather\n\twaitse\n\tplaymoncry SPECIES_HO_OH, CRY_MODE_ENCOUNTER\n\tdelay 30\n\twaitmoncry\n\tdelay 60\n\tsetvar VAR_0x8004, 3  @ num loops\n\tsetvar VAR_0x8005, 35 @ delay\n\tspecial LoopWingFlapSE\n\tapplymovement LOCALID_CAMERA, NavelRock_Top_Movement_CameraPanDown\n\tapplymovement LOCALID_NAVEL_ROCK_HO_OH, NavelRock_Top_Movement_HoOhApproach\n\twaitmovement 0\n\tspecial RemoveCameraObject\n\tseteventmon SPECIES_HO_OH, 70\n\tsetflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecial BattleSetup_StartLegendaryBattle\n\tclearflag FLAG_SYS_CTRL_OBJ_DELETE\n\tsetvar VAR_LAST_TALKED, LOCALID_NAVEL_ROCK_HO_OH\n\tspecialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_WON, NavelRock_Top_EventScript_DefeatedHoOh\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_RAN, NavelRock_Top_EventScript_RanFromHoOh\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, NavelRock_Top_EventScript_RanFromHoOh\n\tsetflag FLAG_CAUGHT_HO_OH\n\treleaseall\n\tend"
+  },
+  "label": "NavelRock_Top_EventScript_HoOh",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/NavelRock_Top/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_CAUGHT_HO_OH",
+      "FLAG_SYS_CTRL_OBJ_DELETE"
+    ],
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT",
+      "VAR_TEMP_1"
+    ]
+  }
+}

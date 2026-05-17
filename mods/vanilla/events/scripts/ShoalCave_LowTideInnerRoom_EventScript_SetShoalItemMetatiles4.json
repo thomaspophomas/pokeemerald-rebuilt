@@ -1,0 +1,23 @@
+{
+  "id": "ShoalCave_LowTideInnerRoom_EventScript_SetShoalItemMetatiles4",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ShoalCave_LowTideInnerRoom/scripts.inc",
+    "sha1": "869469d7126b490420d342e0851e1e9e44b0de36"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ShoalCave_LowTideInnerRoom/scripts.inc",
+    "rawScript": "goto_if_set FLAG_RECEIVED_SHOAL_SHELL_2, ShoalCave_LowTideInnerRoom_EventScript_SetShoalItemMetatiles5\n\tsetmetatile 41, 10, METATILE_Cave_ShoalCave_BlueStone_Large, TRUE\n\tgoto ShoalCave_LowTideInnerRoom_EventScript_SetShoalItemMetatiles5\n\tend"
+  },
+  "label": "ShoalCave_LowTideInnerRoom_EventScript_SetShoalItemMetatiles4",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/ShoalCave_LowTideInnerRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_SHOAL_SHELL_2"
+    ]
+  }
+}

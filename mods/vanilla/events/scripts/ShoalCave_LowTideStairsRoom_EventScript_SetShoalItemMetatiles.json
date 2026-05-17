@@ -1,0 +1,23 @@
+{
+  "id": "ShoalCave_LowTideStairsRoom_EventScript_SetShoalItemMetatiles",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ShoalCave_LowTideStairsRoom/scripts.inc",
+    "sha1": "b0923bb56c2e1140b553b7bc4d165a8eb6307cd0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ShoalCave_LowTideStairsRoom/scripts.inc",
+    "rawScript": "goto_if_set FLAG_RECEIVED_SHOAL_SALT_3, ShoalCave_LowTideStairsRoom_EventScript_SetShoalItemMetatilesEnd\n\tsetmetatile 11, 11, METATILE_Cave_ShoalCave_DirtPile_Large, TRUE\n\treturn"
+  },
+  "label": "ShoalCave_LowTideStairsRoom_EventScript_SetShoalItemMetatiles",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/ShoalCave_LowTideStairsRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_SHOAL_SALT_3"
+    ]
+  }
+}

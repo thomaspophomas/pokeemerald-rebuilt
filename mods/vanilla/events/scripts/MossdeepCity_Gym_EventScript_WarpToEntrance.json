@@ -1,0 +1,23 @@
+{
+  "id": "MossdeepCity_Gym_EventScript_WarpToEntrance",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "sha1": "f1b3ae6c76fdfe44b1431df4ea78da5c11a79c08"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "rawScript": "lockall\n\twarpmossdeepgym MAP_MOSSDEEP_CITY_GYM, 7, 30\n\twaitstate\n\treleaseall\n\tend"
+  },
+  "label": "MossdeepCity_Gym_EventScript_WarpToEntrance",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_Gym/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_MOSSDEEP_CITY_GYM"
+    ]
+  }
+}

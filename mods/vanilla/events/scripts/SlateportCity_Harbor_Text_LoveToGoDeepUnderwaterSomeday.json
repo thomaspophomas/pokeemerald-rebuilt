@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Harbor_Text_LoveToGoDeepUnderwaterSomeday",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "sha1": "304e0889603d7850b02e01765d969cf3c903eb9e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "rawScript": ".string \"A journey to the bottom of the sea\u2026\\n\"\n\t.string \"I wonder what it'd be like?\\p\"\n\t.string \"I'd love to go deep underwater like\\n\"\n\t.string \"that someday.$\""
+  },
+  "label": "SlateportCity_Harbor_Text_LoveToGoDeepUnderwaterSomeday",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_Harbor/scripts.inc",
+  "references": {}
+}

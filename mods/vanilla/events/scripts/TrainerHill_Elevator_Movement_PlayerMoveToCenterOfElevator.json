@@ -1,0 +1,19 @@
+{
+  "id": "TrainerHill_Elevator_Movement_PlayerMoveToCenterOfElevator",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Elevator/scripts.inc",
+    "sha1": "06b14119162a2b7bf99d17883435f80e4648fabb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Elevator/scripts.inc",
+    "rawScript": "walk_up\n\twalk_up\n\twalk_right\n\tface_down\n\tstep_end"
+  },
+  "label": "TrainerHill_Elevator_Movement_PlayerMoveToCenterOfElevator",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/TrainerHill_Elevator/scripts.inc",
+  "references": {}
+}

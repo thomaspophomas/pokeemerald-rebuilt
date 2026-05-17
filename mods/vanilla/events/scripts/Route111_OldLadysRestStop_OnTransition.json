@@ -1,0 +1,23 @@
+{
+  "id": "Route111_OldLadysRestStop_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111_OldLadysRestStop/scripts.inc",
+    "sha1": "8f697cdc3624ba6bc26589cc0a0d5649ae645122"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111_OldLadysRestStop/scripts.inc",
+    "rawScript": "setflag FLAG_LANDMARK_OLD_LADY_REST_SHOP\n\tend"
+  },
+  "label": "Route111_OldLadysRestStop_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Route111_OldLadysRestStop/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_LANDMARK_OLD_LADY_REST_SHOP"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestLobby_Text_WholeVarietyOfPokemonHere",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": ".string \"You can see a whole variety of\\n\"\n\t.string \"POK\u00e9MON here.\\p\"\n\t.string \"That's why I make this place a regular\\n\"\n\t.string \"part of my daily stroll.$\""
+  },
+  "label": "LilycoveCity_ContestLobby_Text_WholeVarietyOfPokemonHere",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {}
+}

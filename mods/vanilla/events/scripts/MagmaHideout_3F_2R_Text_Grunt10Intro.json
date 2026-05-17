@@ -1,0 +1,19 @@
+{
+  "id": "MagmaHideout_3F_2R_Text_Grunt10Intro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_3F_2R/scripts.inc",
+    "sha1": "4923549b2a65ce6594c78eb43699df8e801131dc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_3F_2R/scripts.inc",
+    "rawScript": ".string \"I understand everything our leader\\n\"\n\t.string \"says. But you know what?\\p\"\n\t.string \"Doing stuff like digging up a super-\\n\"\n\t.string \"ancient POK\u00e9MON and ripping off\\l\"\n\t.string \"someone's METEORITE\u2026\\p\"\n\t.string \"I think we're going a little too far.\\n\"\n\t.string \"What do you think?$\""
+  },
+  "label": "MagmaHideout_3F_2R_Text_Grunt10Intro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MagmaHideout_3F_2R/scripts.inc",
+  "references": {}
+}

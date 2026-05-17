@@ -1,0 +1,23 @@
+{
+  "id": "BerryTree_EventScript_CheckBerryFullyGrown",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_tree.inc",
+    "sha1": "749b44e862850f19e689ac4622065bdedf7c8393"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_tree.inc",
+    "rawScript": "buffernumberstring STR_VAR_2, VAR_0x8006\n\tlock\n\tfaceplayer\n\tspecial ObjectEventInteractionGetBerryCountString\n\tmsgbox BerryTree_Text_WantToPick, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, BerryTree_EventScript_PickBerry\n\tgoto_if_eq VAR_RESULT, NO, BerryTree_EventScript_CancelPickingBerry"
+  },
+  "label": "BerryTree_EventScript_CheckBerryFullyGrown",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_tree.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "MysteryGiftScript_StampCard",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_stamp_card.inc",
+    "sha1": "c14d1b4be68ca1d15cae9db09bc818e49dd2feb8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_stamp_card.inc",
+    "rawScript": "setvaddress MysteryGiftScript_StampCard\n\tsetorcopyvar VAR_RESULT, GET_MAX_STAMPS\n\tspecialvar VAR_0x8008, GetMysteryGiftCardStat\n\tsetorcopyvar VAR_RESULT, GET_NUM_STAMPS\n\tspecialvar VAR_0x8009, GetMysteryGiftCardStat\n\tsubvar VAR_0x8008, VAR_0x8009\n\tbuffernumberstring STR_VAR_1, VAR_0x8008\n\tlock\n\tfaceplayer\n\tvmessage sText_MysteryGiftStampCard\n\twaitmessage\n\twaitbuttonpress\n\trelease\n\tend"
+  },
+  "label": "MysteryGiftScript_StampCard",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_stamp_card.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskSwapBeforeHead",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+    "sha1": "1a22c52bd73e3edd87503c90dddd414ef0e181f2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_CantTellAnythingAboutHead, MSGBOX_DEFAULT\n\tmsgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_LikeToSwapMon, MSGBOX_YESNO\n\tswitch VAR_RESULT\n\tcase NO, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_EnterBattleRoom\n\tcase YES, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_SwapMons\n\tcase MULTI_B_PRESSED, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_EnterBattleRoom"
+  },
+  "label": "BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskSwapBeforeHead",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

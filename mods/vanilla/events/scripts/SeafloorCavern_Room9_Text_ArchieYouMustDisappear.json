@@ -1,0 +1,19 @@
+{
+  "id": "SeafloorCavern_Room9_Text_ArchieYouMustDisappear",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Room9/scripts.inc",
+    "sha1": "fb74c5efd7ca988ee5566425c585ce3e165249e8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SeafloorCavern_Room9/scripts.inc",
+    "rawScript": ".string \"ARCHIE: It surprises me, how you've\\n\"\n\t.string \"managed to chase me here.\\p\"\n\t.string \"But that's all over now.\\p\"\n\t.string \"For the realization of my dream,\\n\"\n\t.string \"you must disappear now!$\""
+  },
+  "label": "SeafloorCavern_Room9_Text_ArchieYouMustDisappear",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SeafloorCavern_Room9/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonCenter_1F_Text_TakeTheQuizAnotherTime",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/lilycove_lady.inc",
+    "sha1": "2c2864b913cc532d514481fce3a5e381d5af5f83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/lilycove_lady.inc",
+    "rawScript": ".string \"Please take the quiz challenge\\n\"\n\t.string \"another time!$\""
+  },
+  "label": "LilycoveCity_PokemonCenter_1F_Text_TakeTheQuizAnotherTime",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/lilycove_lady.inc",
+  "references": {}
+}

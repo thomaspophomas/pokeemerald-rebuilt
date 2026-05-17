@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleFactoryLobby_EventScript_WonChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+    "sha1": "292da35ee750dbef6f890d691b62400b747b2d83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+    "rawScript": "lockall\n\tfrontier_isbrain\n\tgoto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattleFactoryLobby_EventScript_DefeatedFactoryHead\n\tmsgbox BattleFrontier_BattleFactoryLobby_Text_CongratsSevenWins, MSGBOX_DEFAULT\n\twaitmessage\n\tgoto BattleFrontier_BattleFactoryLobby_EventScript_GiveBattlePoints"
+  },
+  "label": "BattleFrontier_BattleFactoryLobby_EventScript_WonChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

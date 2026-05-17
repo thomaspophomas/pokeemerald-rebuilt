@@ -1,0 +1,19 @@
+{
+  "id": "EventScript_TrainerHillTimer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/trainer_hill.inc",
+    "sha1": "47f18ba4af2e68695280d853b9b0ada8ee6cad46"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/trainer_hill.inc",
+    "rawScript": "lockall\n\ttrainerhill_gettime\n\tmsgbox TrainerHill_Entrance_Text_ChallengeTime, MSGBOX_DEFAULT\n\treleaseall\n\tend"
+  },
+  "label": "EventScript_TrainerHillTimer",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/trainer_hill.inc",
+  "references": {}
+}

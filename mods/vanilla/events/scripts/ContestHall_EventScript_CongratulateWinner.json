@@ -1,0 +1,24 @@
+{
+  "id": "ContestHall_EventScript_CongratulateWinner",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": "special BufferContestWinnerTrainerName\n\tspecial BufferContestWinnerMonName\n\taddvar VAR_0x8005, 1\n\tbuffernumberstring STR_VAR_2, VAR_0x8005\n\taddvar VAR_0x8005, -1\n\tcall ContestHall_EventScript_CongratsWinner\n\tapplymovement VAR_TEMP_3, ContestHall_Movement_WinningPlayerWalkUp\n\twaitmovement 0\n\tplayse SE_M_ENCORE2\n\tsetvar VAR_TEMP_1, 0\n\treturn"
+  },
+  "label": "ContestHall_EventScript_CongratulateWinner",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1",
+      "VAR_TEMP_3"
+    ]
+  }
+}

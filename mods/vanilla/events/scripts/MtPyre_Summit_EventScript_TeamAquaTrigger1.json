@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_Summit_EventScript_TeamAquaTrigger1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/scripts.inc",
+    "sha1": "2d98d572d50cebb678d972aa421854c983329822"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Summit/scripts.inc",
+    "rawScript": "lockall\n\tsetvar VAR_0x8008, 1\n\tgoto MtPyre_Summit_EventScript_TeamAquaExits\n\tend"
+  },
+  "label": "MtPyre_Summit_EventScript_TeamAquaTrigger1",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtPyre_Summit/scripts.inc",
+  "references": {}
+}

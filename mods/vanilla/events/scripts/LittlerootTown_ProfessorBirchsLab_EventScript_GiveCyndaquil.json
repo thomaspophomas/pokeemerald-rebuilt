@@ -1,0 +1,24 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveCyndaquil",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": "bufferspeciesname STR_VAR_1, SPECIES_CYNDAQUIL\n\tsetvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CYNDAQUIL\n\tgivemon SPECIES_CYNDAQUIL, 5\n\tgoto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, LittlerootTown_ProfessorBirchsLab_EventScript_SendCyndaquilToParty\n\tgoto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, LittlerootTown_ProfessorBirchsLab_EventScript_SendCyndaquilToPC\n\thidemonpic\n\tgoto Common_EventScript_NoMoreRoomForPokemon\n\tend"
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveCyndaquil",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_TRANSFERRED_SPECIES"
+    ]
+  }
+}

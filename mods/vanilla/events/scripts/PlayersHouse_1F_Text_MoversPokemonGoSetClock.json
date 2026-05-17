@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_1F_Text_MoversPokemonGoSetClock",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "sha1": "b92e18aeb34c3856db794aa81beeec7f0f0de717"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "rawScript": ".string \"The mover's POK\u00e9MON do all the work\\n\"\n\t.string \"of moving us in and cleaning up after.\\l\"\n\t.string \"This is so convenient!\\p\"\n\t.string \"{PLAYER}, your room is upstairs.\\n\"\n\t.string \"Go check it out, dear!\\p\"\n\t.string \"DAD bought you a new clock to mark\\n\"\n\t.string \"our move here.\\l\"\n\t.string \"Don't forget to set it!$\""
+  },
+  "label": "PlayersHouse_1F_Text_MoversPokemonGoSetClock",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+  "references": {}
+}

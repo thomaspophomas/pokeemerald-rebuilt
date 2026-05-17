@@ -1,0 +1,19 @@
+{
+  "id": "Route128_Text_MaxieDoYouUnderstandNow",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route128/scripts.inc",
+    "sha1": "8c3eb5fe541a802a44ec8805e051fe2de0e552f6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route128/scripts.inc",
+    "rawScript": ".string \"MAXIE: Do you understand now,\\n\"\n\t.string \"ARCHIE?\\p\"\n\t.string \"Do you finally see how disastrous\\n\"\n\t.string \"your dream turned out to be?\\p\"\n\t.string \"We have to hurry! We have to do\\n\"\n\t.string \"something before the situation goes\\l\"\n\t.string \"completely out of control!$\""
+  },
+  "label": "Route128_Text_MaxieDoYouUnderstandNow",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route128/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_1F_Text_RunningShoesManual",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "sha1": "b92e18aeb34c3856db794aa81beeec7f0f0de717"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "rawScript": ".string \"It's the instruction booklet for the\\n\"\n\t.string \"RUNNING SHOES.\\p\"\n\t.string \"\u201cPress the B Button to run while\\n\"\n\t.string \"wearing your RUNNING SHOES.\\p\"\n\t.string \"\u201cLace up your RUNNING SHOES and hit\\n\"\n\t.string \"the road running!\u201d$\""
+  },
+  "label": "PlayersHouse_1F_Text_RunningShoesManual",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+  "references": {}
+}

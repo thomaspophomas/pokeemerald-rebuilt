@@ -1,0 +1,23 @@
+{
+  "id": "ContestHall_EventScript_ContestResults",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": "call ContestHall_EventScript_TryWaitForLink\n\tcall ContestHall_EventScript_ThatsItForJudging\n\tcall ContestHall_EventScript_TryWaitForLink\n\tcall ContestHall_EventScript_ThankYouForAppeals\n\tcall ContestHall_EventScript_TryWaitForLink\n\tapplymovement LOCALID_CONTEST_MC, ContestHall_Movement_MCFaceJudge\n\twaitmovement 0\n\tcall ContestHall_EventScript_JudgeLooksReady\n\tcall ContestHall_EventScript_TryWaitForLink\n\tcall ContestHall_EventScript_WeWillDeclareWinner\n\tcall ContestHall_EventScript_TryWaitForLink\n\tapplymovement LOCALID_CONTEST_MC, ContestHall_Movement_FaceContestants\n\twaitmovement 0\n\tclosemessage\n\treleaseall\n\tspecial LinkContestTryHideWirelessIndicator\n\tsetvar VAR_TEMP_9, 1\n\tshowcontestresults\n\tsetvar VAR_TEMP_9, 0\n\tplaybgm MUS_CONTEST_WINNER, FALSE\n\treturn"
+  },
+  "label": "ContestHall_EventScript_ContestResults",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_9"
+    ]
+  }
+}

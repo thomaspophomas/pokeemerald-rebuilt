@@ -1,0 +1,30 @@
+{
+  "id": "Route111_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": "setvar VAR_TRAINER_HILL_IS_ACTIVE, 0\n\tspecial SetMirageTowerVisibility\n\tcall_if_unset FLAG_MIRAGE_TOWER_VISIBLE, Route111_EventScript_SetLayoutNoMirageTower\n\tcall_if_eq VAR_MIRAGE_TOWER_STATE, 1, Route111_EventScript_SetFallingPlayerGfx\n\tcall_if_eq VAR_MIRAGE_TOWER_STATE, 2, Route111_EventScript_SetMirageTowerGone\n\tcall Route111_EventScript_CheckSetSandstorm\n\tcall GabbyAndTy_EventScript_UpdateLocation\n\tgoto_if_not_defeated TRAINER_VICKY, Route111_EventScript_SetWinstratesNotDefeated\n\tend"
+  },
+  "label": "Route111_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MIRAGE_TOWER_VISIBLE"
+    ],
+    "vars": [
+      "VAR_MIRAGE_TOWER_STATE",
+      "VAR_TRAINER_HILL_IS_ACTIVE"
+    ],
+    "trainers": [
+      "TRAINER_VICKY"
+    ]
+  }
+}

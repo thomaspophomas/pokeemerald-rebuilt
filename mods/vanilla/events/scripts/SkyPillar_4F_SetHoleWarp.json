@@ -1,0 +1,23 @@
+{
+  "id": "SkyPillar_4F_SetHoleWarp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_4F/scripts.inc",
+    "sha1": "d5be54eb937250f87a89f0988d8f16e796af14f2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_4F/scripts.inc",
+    "rawScript": "setstepcallback STEP_CB_CRACKED_FLOOR\n\tsetholewarp MAP_SKY_PILLAR_3F\n\tend"
+  },
+  "label": "SkyPillar_4F_SetHoleWarp",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/SkyPillar_4F/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SKY_PILLAR_3F"
+    ]
+  }
+}

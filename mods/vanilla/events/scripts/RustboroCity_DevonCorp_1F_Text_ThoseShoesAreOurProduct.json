@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_1F/scripts.inc",
+    "sha1": "c37d7b38d1160c2692286fc6de96377169c9e8d1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_1F/scripts.inc",
+    "rawScript": ".string \"Hey, those RUNNING SHOES!\\n\"\n\t.string \"They're one of our products!\\p\"\n\t.string \"It makes me happy when I see someone\\n\"\n\t.string \"using something we made.$\""
+  },
+  "label": "RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_1F/scripts.inc",
+  "references": {}
+}

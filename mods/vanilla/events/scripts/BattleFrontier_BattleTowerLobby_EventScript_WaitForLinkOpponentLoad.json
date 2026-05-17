@@ -1,0 +1,30 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_EventScript_WaitForLinkOpponentLoad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": "tower_loadlinkopponents\n\tdelay 1\n\tgoto_if_ne VAR_RESULT, 6, BattleFrontier_BattleTowerLobby_EventScript_WaitForLinkOpponentLoad\n\tcall BattleFrontier_BattleTowerLobby_EventScript_ShowYouToBattleRoom\n\tclearflag FLAG_CANCEL_BATTLE_ROOM_CHALLENGE\n\twarp MAP_BATTLE_FRONTIER_BATTLE_TOWER_ELEVATOR, 1, 6\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 0\n\twaitstate\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerLobby_EventScript_WaitForLinkOpponentLoad",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_CANCEL_BATTLE_ROOM_CHALLENGE"
+    ],
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_TOWER_ELEVATOR"
+    ]
+  }
+}

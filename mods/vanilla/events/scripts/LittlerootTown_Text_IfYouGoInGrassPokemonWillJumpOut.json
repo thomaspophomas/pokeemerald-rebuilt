@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": ".string \"Um, um, um!\\p\"\n\t.string \"If you go outside and go in the grass,\\n\"\n\t.string \"wild POK\u00e9MON will jump out!$\""
+  },
+  "label": "LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": "VerdanturfTown_BattleTentBattleRoom_EventScript_SetUpObjects",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+    "sha1": "ab3b693d78c01bf41de27c238af8f5c28d91cffd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+    "rawScript": "hideobjectat LOCALID_VERDANTURF_TENT_BATTLE_PLAYER, MAP_VERDANTURF_TOWN_BATTLE_TENT_BATTLE_ROOM\n\tcall VerdanturfTown_BattleTentBattleRoom_EventScript_SetPlayerGfx\n\tsetvar VAR_TEMP_1, 1\n\tapplymovement LOCALID_PLAYER, VerdanturfTown_BattleTentBattleRoom_Movement_SetInvisible\n\tremoveobject LOCALID_VERDANTURF_TENT_BATTLE_OPPONENT\n\tend"
+  },
+  "label": "VerdanturfTown_BattleTentBattleRoom_EventScript_SetUpObjects",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1"
+    ],
+    "maps": [
+      "MAP_VERDANTURF_TOWN_BATTLE_TENT_BATTLE_ROOM"
+    ]
+  }
+}

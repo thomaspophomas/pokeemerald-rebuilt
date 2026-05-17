@@ -1,0 +1,23 @@
+{
+  "id": "MtPyre_3F_EventScript_RematchGabrielle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_3F/scripts.inc",
+    "sha1": "694f843b2a8c41803b3943fcf555c5a14a36d997"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_3F/scripts.inc",
+    "rawScript": "trainerbattle_rematch TRAINER_GABRIELLE_1, MtPyre_3F_Text_GabrielleRematchIntro, MtPyre_3F_Text_GabrielleRematchDefeat\n\tmsgbox MtPyre_3F_Text_GabriellePostRematch, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "MtPyre_3F_EventScript_RematchGabrielle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtPyre_3F/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_GABRIELLE_1"
+    ]
+  }
+}

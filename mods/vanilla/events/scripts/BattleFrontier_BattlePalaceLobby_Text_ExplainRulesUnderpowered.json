@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_Text_ExplainRulesUnderpowered",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": ".string \"When not under command by its TRAINER,\\n\"\n\t.string \"a POK\u00e9MON may be unable to effectively\\l\"\n\t.string \"use certain moves.\\p\"\n\t.string \"A POK\u00e9MON is not good at using any\\n\"\n\t.string \"move that it dislikes.\\p\"\n\t.string \"If a POK\u00e9MON only knows moves that\\n\"\n\t.string \"do not match its nature, it will often\\l\"\n\t.string \"be unable to live up to its potential.$\""
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_Text_ExplainRulesUnderpowered",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {}
+}

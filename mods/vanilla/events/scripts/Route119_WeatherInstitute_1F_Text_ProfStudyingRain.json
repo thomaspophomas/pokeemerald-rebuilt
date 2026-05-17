@@ -1,0 +1,19 @@
+{
+  "id": "Route119_WeatherInstitute_1F_Text_ProfStudyingRain",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_1F/scripts.inc",
+    "sha1": "c66e07de5643dfd9d0b7ced5e87ea02257875e77"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_1F/scripts.inc",
+    "rawScript": ".string \"The PROFESSOR loves rain.\\n\"\n\t.string \"That's a fact.\\p\"\n\t.string \"But if it keeps raining, people will be in\\n\"\n\t.string \"trouble. That's another fact.\\p\"\n\t.string \"And thus, the PROFESSOR is studying\\n\"\n\t.string \"if the rain can be put to good use.$\""
+  },
+  "label": "Route119_WeatherInstitute_1F_Text_ProfStudyingRain",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route119_WeatherInstitute_1F/scripts.inc",
+  "references": {}
+}

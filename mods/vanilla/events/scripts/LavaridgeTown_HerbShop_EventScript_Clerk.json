@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_HerbShop_EventScript_Clerk",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+    "sha1": "ed83c75f66b27defc898c3be46549255ef12185c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmessage LavaridgeTown_HerbShop_Text_WelcomeToHerbShop\n\twaitmessage\n\tpokemart LavaridgeTown_HerbShop_Pokemart\n\tmsgbox gText_PleaseComeAgain, MSGBOX_DEFAULT\n\trelease\n\tend\n\n\t.align 2"
+  },
+  "label": "LavaridgeTown_HerbShop_EventScript_Clerk",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "JaggedPass_EventScript_Julio",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/JaggedPass/scripts.inc",
+    "sha1": "3539aca2d309baaf0b57344f9c2014b5d896c94b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/JaggedPass/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_JULIO, JaggedPass_Text_JulioIntro, JaggedPass_Text_JulioDefeat\n\tmsgbox JaggedPass_Text_JulioPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "JaggedPass_EventScript_Julio",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/JaggedPass/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_JULIO"
+    ]
+  }
+}

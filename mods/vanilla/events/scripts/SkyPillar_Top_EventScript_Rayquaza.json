@@ -1,0 +1,27 @@
+{
+  "id": "SkyPillar_Top_EventScript_Rayquaza",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Top/scripts.inc",
+    "sha1": "db486fa7ae1229bdf3cba19c1d86940ca9a59221"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_Top/scripts.inc",
+    "rawScript": "lockall\n\twaitse\n\tplaymoncry SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER\n\tdelay 40\n\twaitmoncry\n\tsetwildbattle SPECIES_RAYQUAZA, 70\n\tsetflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecial BattleSetup_StartLegendaryBattle\n\tclearflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_WON, SkyPillar_Top_EventScript_DefeatedRayquaza\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_RAN, SkyPillar_Top_EventScript_RanFromRayquaza\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, SkyPillar_Top_EventScript_RanFromRayquaza\n\tsetflag FLAG_DEFEATED_RAYQUAZA\n\treleaseall\n\tend"
+  },
+  "label": "SkyPillar_Top_EventScript_Rayquaza",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SkyPillar_Top/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_RAYQUAZA",
+      "FLAG_SYS_CTRL_OBJ_DELETE"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

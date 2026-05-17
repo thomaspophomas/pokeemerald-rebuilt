@@ -1,0 +1,31 @@
+{
+  "id": "MauvilleCity_EventScript_DefeatedWally",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": "removeobject LOCALID_MAUVILLE_WALLY\n\tremoveobject LOCALID_MAUVILLE_WALLYS_UNCLE\n\tclearflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLY\n\tclearflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLYS_UNCLE\n\tsetflag FLAG_DEFEATED_WALLY_MAUVILLE\n\tsetvar VAR_WALLY_CALL_STEP_COUNTER, 0\n\tsetflag FLAG_ENABLE_FIRST_WALLY_POKENAV_CALL\n\tcall_if_eq VAR_FACING, DIR_NORTH, MauvilleCity_EventScript_ScottApproachPlayerNorth\n\tcall_if_eq VAR_FACING, DIR_EAST, MauvilleCity_EventScript_ScottApproachPlayerEast\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tmsgbox MauvilleCity_Text_ScottYouDidntHoldBack, MSGBOX_DEFAULT\n\tclosemessage\n\taddvar VAR_SCOTT_STATE, 1\n\tcall_if_eq VAR_FACING, DIR_NORTH, MauvilleCity_EventScript_ScottExitNorth\n\tcall_if_eq VAR_FACING, DIR_EAST, MauvilleCity_EventScript_ScottExitEast\n\tremoveobject LOCALID_MAUVILLE_SCOTT\n\treleaseall\n\tend"
+  },
+  "label": "MauvilleCity_EventScript_DefeatedWally",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_WALLY_MAUVILLE",
+      "FLAG_ENABLE_FIRST_WALLY_POKENAV_CALL",
+      "FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLY",
+      "FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLYS_UNCLE"
+    ],
+    "vars": [
+      "VAR_FACING",
+      "VAR_SCOTT_STATE",
+      "VAR_WALLY_CALL_STEP_COUNTER"
+    ]
+  }
+}

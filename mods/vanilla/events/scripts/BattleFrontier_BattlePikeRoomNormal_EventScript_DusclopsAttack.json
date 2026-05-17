@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomNormal_EventScript_DusclopsAttack",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "sha1": "54c1e0ee021a3a91375f3b05c8682c17ed095aa9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattlePikeRoomNormal_Text_DusclopsStop, MSGBOX_DEFAULT\n\tclosemessage\n\twaitse\n\tplaymoncry SPECIES_DUSCLOPS, CRY_MODE_NORMAL\n\twaitmoncry\n\tpike_getstatus\n\tcall_if_eq VAR_RESULT, PIKE_STATUS_FREEZE, BattleFrontier_BattlePikeRoomNormal_EventScript_DusclopsUsedIceBeam\n\tcall_if_eq VAR_RESULT, PIKE_STATUS_BURN, BattleFrontier_BattlePikeRoomNormal_EventScript_DusclopsUsedWillOWisp\n\tpike_flashscreen\n\twaitstate\n\tapplymovement LOCALID_PIKE_ROOM_NPC_1, BattleFrontier_BattlePikeRoomNormal_Movement_NPCApproachMon\n\twaitmovement 0\n\tapplymovement LOCALID_PIKE_ROOM_NPC_2, BattleFrontier_BattlePikeRoomNormal_Movement_MonFaceNPC\n\twaitmovement 0\n\twaitse\n\tplaymoncry SPECIES_DUSCLOPS, CRY_MODE_NORMAL\n\twaitmoncry\n\tmsgbox BattleFrontier_BattlePikeRoomNormal_Text_ThatsEnough, MSGBOX_DEFAULT\n\twaitse\n\tplaymoncry SPECIES_DUSCLOPS, CRY_MODE_NORMAL\n\twaitmoncry\n\tclosemessage\n\tapplymovement LOCALID_PIKE_ROOM_NPC_2, BattleFrontier_BattlePikeRoomNormal_Movement_MonMoveAside\n\tapplymovement LOCALID_PIKE_ROOM_NPC_1, BattleFrontier_BattlePikeRoomNormal_Movement_StatusNPCApproachPlayer\n\twaitmovement 0\n\tmsgbox BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForDusclops, MSGBOX_DEFAULT\n\treturn"
+  },
+  "label": "BattleFrontier_BattlePikeRoomNormal_EventScript_DusclopsAttack",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

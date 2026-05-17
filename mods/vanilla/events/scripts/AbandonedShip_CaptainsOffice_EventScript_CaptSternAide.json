@@ -1,0 +1,30 @@
+{
+  "id": "AbandonedShip_CaptainsOffice_EventScript_CaptSternAide",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_CaptainsOffice/scripts.inc",
+    "sha1": "0d114a340463ea3916fe9d2dfa90a0ae4b832d57"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_CaptainsOffice/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_EXCHANGED_SCANNER, AbandonedShip_CaptainsOffice_EventScript_ThisIsSSCactus\n\tcheckitem ITEM_SCANNER\n\tgoto_if_eq VAR_RESULT, TRUE, AbandonedShip_CaptainsOffice_EventScript_CanYouDeliverScanner\n\tgoto_if_set FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_2_SCANNER, AbandonedShip_CaptainsOffice_EventScript_ThisIsSSCactus\n\tmsgbox AbandonedShip_CaptainsOffice_Text_NoSuccessFindingScanner, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "AbandonedShip_CaptainsOffice_EventScript_CaptSternAide",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AbandonedShip_CaptainsOffice/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_EXCHANGED_SCANNER",
+      "FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_2_SCANNER"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_SCANNER"
+    ]
+  }
+}

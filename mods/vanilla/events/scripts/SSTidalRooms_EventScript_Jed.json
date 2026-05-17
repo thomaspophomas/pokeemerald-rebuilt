@@ -1,0 +1,23 @@
+{
+  "id": "SSTidalRooms_EventScript_Jed",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalRooms/scripts.inc",
+    "sha1": "1953df649981f24c9b39a0b7b26b1ed8339d7249"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalRooms/scripts.inc",
+    "rawScript": "trainerbattle_double TRAINER_LEA_AND_JED, SSTidalRooms_Text_JedIntro, SSTidalRooms_Text_JedDefeat, SSTidalRooms_Text_JedNotEnoughMons\n\tmsgbox SSTidalRooms_Text_JedPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "SSTidalRooms_EventScript_Jed",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SSTidalRooms/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_LEA_AND_JED"
+    ]
+  }
+}

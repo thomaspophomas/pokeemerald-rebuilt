@@ -1,0 +1,19 @@
+{
+  "id": "Route114_LanettesHouse_Text_OrganizeYourBoxes",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_LanettesHouse/scripts.inc",
+    "sha1": "91f2126eb51b441d0e51b50e9d41b4e45bf67494"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114_LanettesHouse/scripts.inc",
+    "rawScript": ".string \"May I offer advice about my POK\u00e9MON\\n\"\n\t.string \"Storage System?\\p\"\n\t.string \"You should organize your BOXES so you\\n\"\n\t.string \"can tell which POK\u00e9MON are in them.$\""
+  },
+  "label": "Route114_LanettesHouse_Text_OrganizeYourBoxes",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route114_LanettesHouse/scripts.inc",
+  "references": {}
+}

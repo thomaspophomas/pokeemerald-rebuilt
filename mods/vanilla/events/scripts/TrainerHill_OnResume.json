@@ -1,0 +1,24 @@
+{
+  "id": "TrainerHill_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/trainer_hill.inc",
+    "sha1": "47f18ba4af2e68695280d853b9b0ada8ee6cad46"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/trainer_hill.inc",
+    "rawScript": "setvar VAR_TEMP_2, 0\n\ttrainerhill_resumetimer\n\tfrontier_get FRONTIER_DATA_BATTLE_OUTCOME\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_LOST, TrainerHill_1F_EventScript_Lost\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_DREW, TrainerHill_1F_EventScript_Lost\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_FORFEITED, TrainerHill_1F_EventScript_Lost\n\tend"
+  },
+  "label": "TrainerHill_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/trainer_hill.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_2"
+    ]
+  }
+}

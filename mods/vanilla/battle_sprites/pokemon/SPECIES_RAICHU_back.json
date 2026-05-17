@@ -1,0 +1,21 @@
+{
+  "id": "SPECIES_RAICHU:back",
+  "domain": "battle_sprites",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/pokemon_graphics/back_pic_table.h",
+    "sha1": "d7d92d9bd2b85b04fe832128fba5b24e5ed35a6c"
+  },
+  "legacy": {
+    "kind": "pokemon_battle_sprite",
+    "sourcePath": "src/data/pokemon_graphics/back_pic_table.h"
+  },
+  "key": "SPECIES_RAICHU:back",
+  "entityKind": "pokemon",
+  "species": "SPECIES_RAICHU",
+  "form": 0,
+  "side": "BATTLE_SPRITE_SIDE_BACK",
+  "flags": 0,
+  "assetKey": "SPECIES_RAICHU:back",
+  "table": "gMonBackPicTable"
+}

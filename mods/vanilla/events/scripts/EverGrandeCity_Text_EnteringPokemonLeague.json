@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_Text_EnteringPokemonLeague",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity/scripts.inc",
+    "sha1": "03ae6b2d9d17df6e3a50137366ce7f8d136ed5d2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity/scripts.inc",
+    "rawScript": ".string \"ENTERING POK\u00e9MON LEAGUE\\n\"\n\t.string \"CENTER GATE$\""
+  },
+  "label": "EverGrandeCity_Text_EnteringPokemonLeague",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity/scripts.inc",
+  "references": {}
+}

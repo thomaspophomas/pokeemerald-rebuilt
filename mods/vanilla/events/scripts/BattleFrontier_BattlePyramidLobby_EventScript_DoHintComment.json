@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby_EventScript_DoHintComment",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "sha1": "b93395a7ee7156a94cfa3817fd6222cfa69e94fd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "rawScript": "copyvar VAR_0x8004, VAR_RESULT\n\tspecial GetBattlePyramidHint\n\tswitch VAR_RESULT\n\tcase 0, BattleFrontier_BattlePyramidLobby_EventScript_HintParalysis\n\tcase 1, BattleFrontier_BattlePyramidLobby_EventScript_HintPoison\n\tcase 2, BattleFrontier_BattlePyramidLobby_EventScript_HintBurn\n\tcase 3, BattleFrontier_BattlePyramidLobby_EventScript_HintPPWaste\n\tcase 4, BattleFrontier_BattlePyramidLobby_EventScript_HintLevitate\n\tcase 5, BattleFrontier_BattlePyramidLobby_EventScript_HintTrapAbility\n\tcase 6, BattleFrontier_BattlePyramidLobby_EventScript_HintIce\n\tcase 7, BattleFrontier_BattlePyramidLobby_EventScript_HintExplosion\n\tcase 8, BattleFrontier_BattlePyramidLobby_EventScript_HintPsychic\n\tcase 9, BattleFrontier_BattlePyramidLobby_EventScript_HintRock\n\tcase 10, BattleFrontier_BattlePyramidLobby_EventScript_HintFighting\n\tcase 11, BattleFrontier_BattlePyramidLobby_EventScript_HintWeather\n\tcase 12, BattleFrontier_BattlePyramidLobby_EventScript_HintBug\n\tcase 13, BattleFrontier_BattlePyramidLobby_EventScript_HintDark\n\tcase 14, BattleFrontier_BattlePyramidLobby_EventScript_HintWater\n\tcase 15, BattleFrontier_BattlePyramidLobby_EventScript_HintGhost\n\tcase 16, BattleFrontier_BattlePyramidLobby_EventScript_HintSteel\n\tcase 17, BattleFrontier_BattlePyramidLobby_EventScript_HintFlyingDragon\n\tcase 18, BattleFrontier_BattlePyramidLobby_EventScript_HintStoneEvolve\n\tcase 19, BattleFrontier_BattlePyramidLobby_EventScript_HintNormal\n\treturn"
+  },
+  "label": "BattleFrontier_BattlePyramidLobby_EventScript_DoHintComment",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

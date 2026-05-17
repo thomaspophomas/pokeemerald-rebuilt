@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideWest_Text_KeepBattlingUntilIGetSymbol",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": ".string \"Today, I'm going to keep battling, no\\n\"\n\t.string \"matter what, until I get a Symbol.$\""
+  },
+  "label": "BattleFrontier_OutsideWest_Text_KeepBattlingUntilIGetSymbol",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,27 @@
+{
+  "id": "Route110_TrickHouseEntrance_EventScript_FoundTrickMaster",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "sha1": "9367efc136143832c1697fbcc61fbb296269d396"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "rawScript": "playse SE_PIN\n\tapplymovement LOCALID_PLAYER, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, Common_Movement_Delay48\n\twaitmovement 0\n\tcall_if_eq VAR_TRICK_HOUSE_LEVEL, 0, Route110_TrickHouseEntrance_EventScript_FoundBeneathDesk\n\tcall_if_eq VAR_TRICK_HOUSE_LEVEL, 1, Route110_TrickHouseEntrance_EventScript_FoundBehindTree\n\tcall_if_eq VAR_TRICK_HOUSE_LEVEL, 2, Route110_TrickHouseEntrance_EventScript_FoundInDresser\n\tcall_if_eq VAR_TRICK_HOUSE_LEVEL, 3, Route110_TrickHouseEntrance_EventScript_FoundBeyondWindow\n\tcall_if_eq VAR_TRICK_HOUSE_LEVEL, 4, Route110_TrickHouseEntrance_EventScript_FoundInPlanter\n\tcall_if_eq VAR_TRICK_HOUSE_LEVEL, 5, Route110_TrickHouseEntrance_EventScript_FoundInCupboard\n\tcall_if_eq VAR_TRICK_HOUSE_LEVEL, 6, Route110_TrickHouseEntrance_EventScript_FoundBehindWindow\n\tcall_if_eq VAR_TRICK_HOUSE_LEVEL, 7, Route110_TrickHouseEntrance_EventScript_FoundBeneathCushion\n\tclosemessage\n\tsetvar VAR_TRICK_HOUSE_FOUND_TRICK_MASTER, 1\n\twarpsilent MAP_ROUTE110_TRICK_HOUSE_ENTRANCE, 6, 2\n\twaitstate\n\treleaseall\n\tend"
+  },
+  "label": "Route110_TrickHouseEntrance_EventScript_FoundTrickMaster",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TRICK_HOUSE_FOUND_TRICK_MASTER",
+      "VAR_TRICK_HOUSE_LEVEL"
+    ],
+    "maps": [
+      "MAP_ROUTE110_TRICK_HOUSE_ENTRANCE"
+    ]
+  }
+}

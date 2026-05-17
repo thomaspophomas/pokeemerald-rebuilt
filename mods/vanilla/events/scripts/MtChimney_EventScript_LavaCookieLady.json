@@ -1,0 +1,26 @@
+{
+  "id": "MtChimney_EventScript_LavaCookieLady",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney/scripts.inc",
+    "sha1": "4d6a7ac7998e07e6d4f244ef13c499194f5b3668"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtChimney/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tshowmoneybox 0, 0\n\tmsgbox MtChimney_Text_LavaCookiesJust200, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, MtChimney_EventScript_DeclineLavaCookie\n\tcheckmoney 200\n\tgoto_if_eq VAR_RESULT, FALSE, MtChimney_EventScript_NotEnoughMoney\n\tmsgbox MtChimney_Text_ThankYouDear, MSGBOX_DEFAULT\n\tcheckitemspace ITEM_LAVA_COOKIE\n\tcall_if_eq VAR_RESULT, TRUE, MtChimney_EventScript_RemoveMoney\n\tgiveitem ITEM_LAVA_COOKIE\n\tgoto_if_eq VAR_RESULT, FALSE, MtChimney_EventScript_BagIsFull\n\thidemoneybox\n\trelease\n\tend"
+  },
+  "label": "MtChimney_EventScript_LavaCookieLady",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtChimney/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_LAVA_COOKIE"
+    ]
+  }
+}

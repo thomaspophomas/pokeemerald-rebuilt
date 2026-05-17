@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "sha1": "a0cf82d2df089035fb81d02a013736aab95a13d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "rawScript": ".string \"The rocket fuel the SPACE CENTER has\\n\"\n\t.string \"in storage--that's what we're after.\\p\"\n\t.string \"We mean to take every last bit of it!$\""
+  },
+  "label": "MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+  "references": {}
+}

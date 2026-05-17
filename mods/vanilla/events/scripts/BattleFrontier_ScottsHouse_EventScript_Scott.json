@@ -1,0 +1,25 @@
+{
+  "id": "BattleFrontier_ScottsHouse_EventScript_Scott",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "sha1": "c30df9e905f6d4b9d9e1eaf4d4fccf30db88e083"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_TEMP_4, BattleFrontier_ScottsHouse_EventScript_GivenBerry\n\tgoto_if_set FLAG_TEMP_3, BattleFrontier_ScottsHouse_EventScript_GivenShield\n\tgoto_if_set FLAG_TEMP_2, BattleFrontier_ScottsHouse_EventScript_GivenBattlePoints\n\tgoto BattleFrontier_ScottsHouse_EventScript_CheckGiveItems\n\tend"
+  },
+  "label": "BattleFrontier_ScottsHouse_EventScript_Scott",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_TEMP_2",
+      "FLAG_TEMP_3",
+      "FLAG_TEMP_4"
+    ]
+  }
+}

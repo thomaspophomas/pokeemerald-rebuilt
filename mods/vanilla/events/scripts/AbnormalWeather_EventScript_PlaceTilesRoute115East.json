@@ -1,0 +1,19 @@
+{
+  "id": "AbnormalWeather_EventScript_PlaceTilesRoute115East",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/abnormal_weather.inc",
+    "sha1": "8bf77729e5d8e5ebd0812ce736eaf3712ec673f3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/abnormal_weather.inc",
+    "rawScript": "setmetatile 36, 9, METATILE_Fallarbor_BrownCaveEntrance_Top, TRUE\n\tsetmetatile 36, 10, METATILE_Fallarbor_BrownCaveEntrance_Bottom, FALSE\n\treturn"
+  },
+  "label": "AbnormalWeather_EventScript_PlaceTilesRoute115East",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/abnormal_weather.inc",
+  "references": {}
+}

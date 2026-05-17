@@ -1,0 +1,26 @@
+{
+  "id": "Route110_TrickHousePuzzle7_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle7/scripts.inc",
+    "sha1": "d0faf89c20b52e4b3f4ef5191cdd1e42d9c73feb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle7/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, Route110_TrickHousePuzzle7_OnResume\n\tmap_script MAP_SCRIPT_ON_TRANSITION, Route110_TrickHousePuzzle7_OnTransition\n\tmap_script MAP_SCRIPT_ON_LOAD, Route110_TrickHousePuzzle7_OnLoad\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, Route110_TrickHousePuzzle7_OnFrame\n\t.byte 0\n\n@ Puzzle Room 7 in RSE uses whatever puzzle Mossdeep Gym uses\n@ Because Mossdeep Gym was redesigned for Emerald, theres a good deal of leftover script from the old R/S puzzle"
+  },
+  "label": "Route110_TrickHousePuzzle7_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Route110_TrickHousePuzzle7/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

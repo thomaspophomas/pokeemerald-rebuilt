@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_House1_Text_RegiStory",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_House1/scripts.inc",
+    "sha1": "08537309384759d602a54f903ee3f58e552cdcc4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown_House1/scripts.inc",
+    "rawScript": ".string \"In the HOENN region, there are three\\n\"\n\t.string \"POK\u00e9MON that represent the power of\\l\"\n\t.string \"rock, ice, and steel.\\p\"\n\t.string \"Each of them is said to hide away deep\\n\"\n\t.string \"inside caves.\\p\"\n\t.string \"That's the story I heard when I was\\n\"\n\t.string \"just a little kid.$\""
+  },
+  "label": "PacifidlogTown_House1_Text_RegiStory",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PacifidlogTown_House1/scripts.inc",
+  "references": {}
+}

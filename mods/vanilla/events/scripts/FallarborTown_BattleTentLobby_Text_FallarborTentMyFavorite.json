@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_BattleTentLobby_Text_FallarborTentMyFavorite",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "sha1": "007b5945200863133fd43941054ec8db085a0356"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "rawScript": ".string \"You know how BATTLE TENTS offer\\n\"\n\t.string \"different events in different towns?\\p\"\n\t.string \"My favorite is definitely the BATTLE\\n\"\n\t.string \"TENT in FALLARBOR TOWN.\\p\"\n\t.string \"I think it's fantastic how TRAINERS\\n\"\n\t.string \"try to win with all their faith in\\l\"\n\t.string \"their POK\u00e9MON.$\""
+  },
+  "label": "FallarborTown_BattleTentLobby_Text_FallarborTentMyFavorite",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+  "references": {}
+}

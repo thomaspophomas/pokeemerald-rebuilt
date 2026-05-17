@@ -1,0 +1,34 @@
+{
+  "id": "InsideOfTruck_EventScript_SetIntroFlagsFemale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/InsideOfTruck/scripts.inc",
+    "sha1": "4a49579e348e8a2c251edbaf7a3418e83b642424"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/InsideOfTruck/scripts.inc",
+    "rawScript": "setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE_2F\n\tsetvar VAR_LITTLEROOT_INTRO_STATE, 2\n\tsetflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_MOM\n\tsetflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK\n\tsetflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_MOM\n\tsetflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING\n\tsetflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL\n\tsetvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 1\n\tsetdynamicwarp MAP_LITTLEROOT_TOWN, 12, 10\n\treleaseall\n\tend"
+  },
+  "label": "InsideOfTruck_EventScript_SetIntroFlagsFemale",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/InsideOfTruck/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_MOM",
+      "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK",
+      "FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL",
+      "FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_MOM",
+      "FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING"
+    ],
+    "vars": [
+      "VAR_LITTLEROOT_HOUSES_STATE_MAY",
+      "VAR_LITTLEROOT_INTRO_STATE"
+    ],
+    "maps": [
+      "MAP_LITTLEROOT_TOWN"
+    ]
+  }
+}

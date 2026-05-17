@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "012038458957d746c6cb9c71ce265a9faf173fe8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"The POK\u00e9MON LEAGUE is only a short\\n\"\n\t.string \"distance after the VICTORY ROAD.\\p\"\n\t.string \"If you've come this far, what choice\\n\"\n\t.string \"do you have but to keep going?$\""
+  },
+  "label": "EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

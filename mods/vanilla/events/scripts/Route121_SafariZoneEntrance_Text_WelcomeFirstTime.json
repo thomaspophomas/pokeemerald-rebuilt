@@ -1,0 +1,19 @@
+{
+  "id": "Route121_SafariZoneEntrance_Text_WelcomeFirstTime",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/safari_zone.inc",
+    "sha1": "435880c660a34d3e51dcedb348a41731d28af7cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/safari_zone.inc",
+    "rawScript": ".string \"Welcome to the SAFARI ZONE!\\n\"\n\t.string \"Is it your first time here?$\""
+  },
+  "label": "Route121_SafariZoneEntrance_Text_WelcomeFirstTime",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/safari_zone.inc",
+  "references": {}
+}

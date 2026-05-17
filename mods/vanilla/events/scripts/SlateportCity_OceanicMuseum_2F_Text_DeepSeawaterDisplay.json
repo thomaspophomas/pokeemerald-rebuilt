@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_OceanicMuseum_2F_Text_DeepSeawaterDisplay",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+    "sha1": "13553a30435b8213726cfc4734cfaf0043bc447f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+    "rawScript": ".string \"It's a display on the flow of seawater.\\p\"\n\t.string \"\u201cNear the bottom of the sea, water\\n\"\n\t.string \"flows due to differences in such\\l\"\n\t.string \"factors as temperature and salinity.\u201d$\""
+  },
+  "label": "SlateportCity_OceanicMuseum_2F_Text_DeepSeawaterDisplay",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+  "references": {}
+}

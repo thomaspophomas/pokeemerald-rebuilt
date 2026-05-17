@@ -1,0 +1,19 @@
+{
+  "id": "Route120_Movement_ApproachKecleonWest",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route120/scripts.inc",
+    "sha1": "c3ab570e7c5b1ea2c74415d703646f5a362564ad"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route120/scripts.inc",
+    "rawScript": "walk_down\n\twalk_left\n\tstep_end"
+  },
+  "label": "Route120_Movement_ApproachKecleonWest",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/Route120/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,31 @@
+{
+  "id": "MauvilleCity_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": "setflag FLAG_VISITED_MAUVILLE_CITY\n\tclearflag FLAG_FORCE_MIRAGE_TOWER_VISIBLE\n\tclearflag FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION\n\tsetflag FLAG_SYS_TV_START\n\tclearflag FLAG_MAUVILLE_GYM_BARRIERS_STATE\n\tsetvar VAR_MAUVILLE_GYM_STATE, 0\n\tcall_if_set FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON, MauvilleCity_EventScript_MoveWattsonBackToGym\n\tend"
+  },
+  "label": "MauvilleCity_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_FORCE_MIRAGE_TOWER_VISIBLE",
+      "FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON",
+      "FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION",
+      "FLAG_MAUVILLE_GYM_BARRIERS_STATE",
+      "FLAG_SYS_TV_START",
+      "FLAG_VISITED_MAUVILLE_CITY"
+    ],
+    "vars": [
+      "VAR_MAUVILLE_GYM_STATE"
+    ]
+  }
+}

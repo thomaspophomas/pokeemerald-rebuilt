@@ -1,0 +1,19 @@
+{
+  "id": "Route111_WinstrateFamilysHouse_Text_StrongerFamilyMembers",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111_WinstrateFamilysHouse/scripts.inc",
+    "sha1": "263fea63e58597b7384c5c9ba935a901a00611b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111_WinstrateFamilysHouse/scripts.inc",
+    "rawScript": ".string \"Mommy is stronger than Daddy.\\p\"\n\t.string \"I'm stronger than Mommy.\\p\"\n\t.string \"And Grandma's stronger than me!\\p\"\n\t.string \"But my big brother is even stronger\\n\"\n\t.string \"than Grandma.$\""
+  },
+  "label": "Route111_WinstrateFamilysHouse_Text_StrongerFamilyMembers",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route111_WinstrateFamilysHouse/scripts.inc",
+  "references": {}
+}

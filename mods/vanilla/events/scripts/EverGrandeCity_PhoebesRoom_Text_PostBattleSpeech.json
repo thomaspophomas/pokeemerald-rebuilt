@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc",
+    "sha1": "19093003402affcdd9afdda6a47a9abe8524d0e2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc",
+    "rawScript": ".string \"There's a definite bond between you\\n\"\n\t.string \"and your POK\u00e9MON, too.\\p\"\n\t.string \"I didn't recognize it, so it's only\\n\"\n\t.string \"natural that I lost.\\p\"\n\t.string \"Yup, I'd like to see how far your bond\\n\"\n\t.string \"will carry you.\\p\"\n\t.string \"Go ahead, move on to the next room.$\""
+  },
+  "label": "EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc",
+  "references": {}
+}

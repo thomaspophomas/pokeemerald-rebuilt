@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_PokemonCenter_1F_EventScript_Woman2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "4f26b55b9e0eea95f2364faf35b676a0a26a3ce0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": "msgbox MauvilleCity_PokemonCenter_1F_Text_MyDataUpdatedFromRecordCorner, MSGBOX_NPC\n\tend"
+  },
+  "label": "MauvilleCity_PokemonCenter_1F_EventScript_Woman2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

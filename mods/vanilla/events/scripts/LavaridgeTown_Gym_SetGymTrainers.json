@@ -1,0 +1,30 @@
+{
+  "id": "LavaridgeTown_Gym_SetGymTrainers",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/set_gym_trainers.inc",
+    "sha1": "90019f7a2097712cc57c824c9118423a5a8171bd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/set_gym_trainers.inc",
+    "rawScript": "settrainerflag TRAINER_COLE\n\tsettrainerflag TRAINER_AXLE\n\tsettrainerflag TRAINER_KEEGAN\n\tsettrainerflag TRAINER_GERALD\n\tsettrainerflag TRAINER_DANIELLE\n\tsettrainerflag TRAINER_JACE\n\tsettrainerflag TRAINER_JEFF\n\tsettrainerflag TRAINER_ELI\n\treturn"
+  },
+  "label": "LavaridgeTown_Gym_SetGymTrainers",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/scripts/set_gym_trainers.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_AXLE",
+      "TRAINER_COLE",
+      "TRAINER_DANIELLE",
+      "TRAINER_ELI",
+      "TRAINER_GERALD",
+      "TRAINER_JACE",
+      "TRAINER_JEFF",
+      "TRAINER_KEEGAN"
+    ]
+  }
+}

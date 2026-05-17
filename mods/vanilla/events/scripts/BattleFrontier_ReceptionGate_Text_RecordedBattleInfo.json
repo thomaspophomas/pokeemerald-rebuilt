@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ReceptionGate_Text_RecordedBattleInfo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "sha1": "5b6e89c53f6e32c0fa6883bd750252f1d739a97b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "rawScript": ".string \"It is possible to record one battle\\n\"\n\t.string \"on your FRONTIER PASS.\\p\"\n\t.string \"You may record a battle you had with\\n\"\n\t.string \"a friend or friends.\\p\"\n\t.string \"Or you may record a battle conducted\\n\"\n\t.string \"at the BATTLE FRONTIER excluding\\l\"\n\t.string \"matches at the BATTLE PIKE or\\l\"\n\t.string \"the BATTLE PYRAMID.\\p\"\n\t.string \"You may choose to record your match\\n\"\n\t.string \"at the end of a battle.$\""
+  },
+  "label": "BattleFrontier_ReceptionGate_Text_RecordedBattleInfo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "sha1": "4f73bd77d8715e7ac12ff1ac731985eaf75ecd5e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "rawScript": ".string \"PROF. BIRCH: See?\\n\"\n\t.string \"What did I tell you, {RIVAL}?\\p\"\n\t.string \"Didn't I tell you that you don't need\\n\"\n\t.string \"to worry about {PLAYER}{KUN}?\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\n\"\n\t.string \"{PLAYER}{KUN}, you've finally done it.\\p\"\n\t.string \"When I heard that you defeated your\\n\"\n\t.string \"own father at the PETALBURG GYM,\\l\"\n\t.string \"I thought perhaps you had a chance\u2026\\p\"\n\t.string \"But to think you've actually become\\n\"\n\t.string \"the CHAMPION!\\p\"\n\t.string \"Ah, yes!\\p\"\n\t.string \"What became of your POK\u00e9DEX?\\n\"\n\t.string \"Here, let me see.$\""
+  },
+  "label": "EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+  "references": {}
+}

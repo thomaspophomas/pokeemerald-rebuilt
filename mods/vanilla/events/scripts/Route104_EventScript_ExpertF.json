@@ -1,0 +1,29 @@
+{
+  "id": "Route104_EventScript_ExpertF",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104/scripts.inc",
+    "sha1": "10d25047426798be70cda2d9503387bbf8458d85"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_CHESTO_BERRY_ROUTE_104, Route104_EventScript_ReceivedBerry\n\tmsgbox Route104_Text_PlantBerriesInSoilTakeThis, MSGBOX_DEFAULT\n\tgiveitem ITEM_CHESTO_BERRY\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_RECEIVED_CHESTO_BERRY_ROUTE_104\n\tmsgbox Route104_Text_TrainersOftenMakeMonHoldBerries, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route104_EventScript_ExpertF",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route104/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_CHESTO_BERRY_ROUTE_104"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_CHESTO_BERRY"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "JaggedPass_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/JaggedPass/scripts.inc",
+    "sha1": "3539aca2d309baaf0b57344f9c2014b5d896c94b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/JaggedPass/scripts.inc",
+    "rawScript": "setstepcallback STEP_CB_ASH\n\tcall_if_eq VAR_JAGGED_PASS_STATE, 0, JaggedPass_EventScript_CheckHasMagmaEmblem\n\tend"
+  },
+  "label": "JaggedPass_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/JaggedPass/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_JAGGED_PASS_STATE"
+    ]
+  }
+}

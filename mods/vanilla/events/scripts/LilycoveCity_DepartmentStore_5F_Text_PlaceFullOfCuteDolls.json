@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+    "sha1": "cd7aae47b8996a67b13e78af3da148a41c68791f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+    "rawScript": ".string \"This place is full of cute DOLLS.\\p\"\n\t.string \"I should buy some for me, instead of\\n\"\n\t.string \"just for my children.$\""
+  },
+  "label": "LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+  "references": {}
+}

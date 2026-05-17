@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleFactoryPreBattleRoom_Text_MessageFromHeadComeRightNow",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+    "sha1": "1a22c52bd73e3edd87503c90dddd414ef0e181f2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+    "rawScript": ".string \"Oh, my\u2026\\n\"\n\t.string \"Sorry to keep you waiting!\\p\"\n\t.string \"I have a message from this facility's\\n\"\n\t.string \"boss, the FACTORY HEAD.\\p\"\n\t.string \"He says, \u201cWe're going to do it!\\n\"\n\t.string \"Come here right now!\u201d$\""
+  },
+  "label": "BattleFrontier_BattleFactoryPreBattleRoom_Text_MessageFromHeadComeRightNow",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+  "references": {}
+}

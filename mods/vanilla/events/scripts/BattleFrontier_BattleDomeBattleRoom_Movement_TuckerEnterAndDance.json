@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomeBattleRoom_Movement_TuckerEnterAndDance",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "sha1": "2cf5ea83e82fbd2189ced7e0cd4d5f894bf74650"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "rawScript": "set_visible\n\twalk_up\n\twalk_up\n\twalk_up\n\tface_left\n\tdelay_8\n\tdelay_4\n\tface_down\n\tdelay_8\n\tdelay_4\n\tface_right\n\tdelay_8\n\tdelay_4\n\tface_up\n\tdelay_8\n\tdelay_4\n\tface_left\n\tdelay_16\n\twalk_fast_up\n\twalk_fast_up\n\tface_left\n\tdelay_8\n\tdelay_4\n\tface_down\n\tdelay_8\n\tdelay_4\n\tface_right\n\tdelay_8\n\tdelay_4\n\tface_up\n\tdelay_8\n\tdelay_4\n\tface_left\n\tjump_2_left\n\tunlock_facing_direction\n\tface_up\n\tlock_facing_direction\n\tjump_2_left\n\tjump_2_left\n\tunlock_facing_direction\n\tface_right\n\tlock_facing_direction\n\tjump_2_left\n\tunlock_facing_direction\n\tface_down\n\tdelay_2\n\tface_left\n\tdelay_8\n\tdelay_4\n\tface_up\n\tdelay_8\n\tdelay_4\n\tface_right\n\tdelay_8\n\tdelay_4\n\tface_down\n\tdelay_8\n\tdelay_4\n\tface_left\n\tdelay_4\n\tface_up\n\tdelay_4\n\tface_right\n\tdelay_4\n\tface_down\n\tdelay_4\n\tface_left\n\tdelay_2\n\tface_up\n\tdelay_2\n\tface_right\n\tdelay_2\n\tface_down\n\tdelay_2\n\tface_left\n\tlock_facing_direction\n\twalk_right\n\twalk_slow_right\n\twalk_right\n\twalk_slow_right\n\tunlock_facing_direction\n\tface_up\n\tdelay_16\n\tjump_in_place_up\n\tjump_in_place_up\n\tdelay_16\n\twalk_right\n\twalk_right\n\twalk_right\n\tjump_in_place_up\n\tdelay_16\n\twalk_right\n\twalk_down\n\twalk_down\n\tface_left\n\tdelay_2\n\tface_up\n\tdelay_2\n\tface_right\n\tdelay_2\n\tface_down\n\tdelay_2\n\tface_left\n\tdelay_4\n\twalk_left\n\twalk_left\n\tstep_end"
+  },
+  "label": "BattleFrontier_BattleDomeBattleRoom_Movement_TuckerEnterAndDance",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+  "references": {}
+}

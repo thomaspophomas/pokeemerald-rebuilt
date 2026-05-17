@@ -1,0 +1,24 @@
+{
+  "id": "AncientTomb_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AncientTomb/scripts.inc",
+    "sha1": "57ee4b1313324882be319adf4cbdef89f090204c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AncientTomb/scripts.inc",
+    "rawScript": "setflag FLAG_LANDMARK_ANCIENT_TOMB\n\tcall_if_unset FLAG_DEFEATED_REGISTEEL, AncientTomb_EventScript_ShowRegisteel\n\tend"
+  },
+  "label": "AncientTomb_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/AncientTomb/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_REGISTEEL",
+      "FLAG_LANDMARK_ANCIENT_TOMB"
+    ]
+  }
+}

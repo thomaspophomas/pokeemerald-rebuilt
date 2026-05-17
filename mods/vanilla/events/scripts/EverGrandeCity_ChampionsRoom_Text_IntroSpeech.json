@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_ChampionsRoom_Text_IntroSpeech",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "sha1": "4f73bd77d8715e7ac12ff1ac731985eaf75ecd5e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "rawScript": ".string \"WALLACE: Welcome, {PLAYER}{KUN}.\\p\"\n\t.string \"That incident in SOOTOPOLIS CITY\u2026\\n\"\n\t.string \"That was superb work, putting an end\\l\"\n\t.string \"to that crisis all by yourself.\\p\"\n\t.string \"Oops!\\p\"\n\t.string \"It wouldn't be fair to say that you\\n\"\n\t.string \"alone ended the crisis.\\p\"\n\t.string \"You overcame that difficult situation\\n\"\n\t.string \"by working as one with your POK\u00e9MON.\\p\"\n\t.string \"We TRAINERS raise POK\u00e9MON by giving\\n\"\n\t.string \"them items and by teaching them new\\l\"\n\t.string \"techniques for battle.\\p\"\n\t.string \"But we ourselves also learn many\\n\"\n\t.string \"things from POK\u00e9MON.\\p\"\n\t.string \"And this is where your achievements\\n\"\n\t.string \"are put to the test against what\\l\"\n\t.string \"others like you have achieved.\\p\"\n\t.string \"Now!\\p\"\n\t.string \"Who can most elegantly dance with\\n\"\n\t.string \"their POK\u00e9MON in HOENN?\\p\"\n\t.string \"Show me right here and now!$\""
+  },
+  "label": "EverGrandeCity_ChampionsRoom_Text_IntroSpeech",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ScottsHouse_Text_ComeBackForThisLater",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "sha1": "c30df9e905f6d4b9d9e1eaf4d4fccf30db88e083"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "rawScript": ".string \"Oops, well, if you have too much\\n\"\n\t.string \"stuff, come back for this later.$\""
+  },
+  "label": "BattleFrontier_ScottsHouse_Text_ComeBackForThisLater",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+  "references": {}
+}

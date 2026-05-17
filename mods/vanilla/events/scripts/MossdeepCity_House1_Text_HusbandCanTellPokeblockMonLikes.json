@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_House1_Text_HusbandCanTellPokeblockMonLikes",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_House1/scripts.inc",
+    "sha1": "93c59a6d1eff04f8834df6ef4585f3c7342abcfe"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_House1/scripts.inc",
+    "rawScript": ".string \"My husband can tell what kind of\\n\"\n\t.string \"{POKEBLOCK}S a POK\u00e9MON likes at a glance.$\""
+  },
+  "label": "MossdeepCity_House1_Text_HusbandCanTellPokeblockMonLikes",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_House1/scripts.inc",
+  "references": {}
+}

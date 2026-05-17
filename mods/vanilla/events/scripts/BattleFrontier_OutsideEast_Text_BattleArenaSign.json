@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideEast_Text_BattleArenaSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "sha1": "daab3e530c74c286237faa58f280f11ef97e663a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "rawScript": ".string \"This is the BATTLE ARENA!\\n\"\n\t.string \"Let the toughest teams gather!$\""
+  },
+  "label": "BattleFrontier_OutsideEast_Text_BattleArenaSign",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+  "references": {}
+}

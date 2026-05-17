@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideWest_Text_DomeAceIsMine",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": ".string \"Oh, shush!\\n\"\n\t.string \"Keep that racket down!\\p\"\n\t.string \"You fair-weather fans should stick\\n\"\n\t.string \"to cheering for some GYM LEADER!\\p\"\n\t.string \"The DOME ACE is mine!\\n\"\n\t.string \"The only idol for me!$\""
+  },
+  "label": "BattleFrontier_OutsideWest_Text_DomeAceIsMine",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {}
+}

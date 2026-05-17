@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerCorridor_OnLoad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerCorridor/scripts.inc",
+    "sha1": "a135a140aa42cd9a6034c33942fe11ca534a9b7e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerCorridor/scripts.inc",
+    "rawScript": "goto_if_eq VAR_0x8006, 1, BattleFrontier_BattleTowerCorridor_EventScript_OpenFarDoor\n\tsetmetatile 12, 0, METATILE_BattleFrontier_CorridorOpenDoor_Top, FALSE\n\tsetmetatile 12, 1, METATILE_BattleFrontier_CorridorOpenDoor_Bottom, FALSE\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerCorridor_OnLoad",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerCorridor/scripts.inc",
+  "references": {}
+}

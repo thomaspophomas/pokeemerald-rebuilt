@@ -1,0 +1,19 @@
+{
+  "id": "MtChimney_Text_MagmasNameSimilar",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney/scripts.inc",
+    "sha1": "4d6a7ac7998e07e6d4f244ef13c499194f5b3668"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtChimney/scripts.inc",
+    "rawScript": ".string \"We're TEAM AQUA!\\p\"\n\t.string \"They're TEAM MAGMA!\\p\"\n\t.string \"It burns me up that they'd use such\\n\"\n\t.string \"a confusing name!$\""
+  },
+  "label": "MtChimney_Text_MagmasNameSimilar",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtChimney/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_OnLoad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": "call_if_unset FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_SetWailmerMetatiles\n\tend"
+  },
+  "label": "LilycoveCity_OnLoad",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE"
+    ]
+  }
+}

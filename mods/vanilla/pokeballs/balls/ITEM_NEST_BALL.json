@@ -1,0 +1,39 @@
+{
+  "id": "ITEM_NEST_BALL",
+  "domain": "pokeballs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/mod/pokeball.c",
+    "sha1": "33d25b17be0efe4ad368348c596e2ba324574b45"
+  },
+  "legacy": {
+    "kind": "pokeball_definition",
+    "sourcePath": "src/mod/pokeball.c",
+    "rawC": "{ \"vanilla:nest_ball\",    ITEM_NEST_BALL,    BALL_NEST,    10,                             0, NULL, BattleScript_BallThrow,       NULL }",
+    "generatedKey": "vanilla:nest_ball"
+  },
+  "key": "vanilla:nest_ball",
+  "itemId": "ITEM_NEST_BALL",
+  "ballId": "BALL_NEST",
+  "catchModifier": "10",
+  "catchModifierHook": "PokeBallApi_NestBallCatchModifier",
+  "battleScript": "BattleScript_BallThrow",
+  "commitHook": null,
+  "flags": "0",
+  "itemIcon": "gItemIcon_NestBall",
+  "itemPalette": "gItemIconPalette_NestBall",
+  "throwSprite": {
+    "sheet": "gBallGfx_Nest",
+    "palette": "gBallPal_Nest",
+    "tileTag": "GFX_TAG_NEST_BALL",
+    "paletteTag": "GFX_TAG_NEST_BALL",
+    "templateTable": "gBallSpriteTemplates"
+  },
+  "openAnimation": {
+    "particleSheet": "gBattleAnimSpriteGfx_Particles",
+    "particlePalette": "gBattleAnimSpritePal_CircleImpact",
+    "particleTag": "TAG_PARTICLES_NESTBALL",
+    "animNum": "3",
+    "taskFunc": "UltraBallOpenParticleAnimation"
+  }
+}

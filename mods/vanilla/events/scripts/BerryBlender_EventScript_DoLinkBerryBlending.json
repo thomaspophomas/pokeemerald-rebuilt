@@ -1,0 +1,19 @@
+{
+  "id": "BerryBlender_EventScript_DoLinkBerryBlending",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": "setvar VAR_0x8004, 0  @ number of opponents, 0 indicates Link\n\tfadescreen FADE_TO_BLACK\n\tremoveobject 240 @ Unclear where these local IDs come from,\n\tremoveobject 239 @ but presumably they'd be the 4 link players\n\tremoveobject 238\n\tremoveobject 237\n\tspecial DoBerryBlending\n\treleaseall\n\tend"
+  },
+  "label": "BerryBlender_EventScript_DoLinkBerryBlending",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "SootopolisCity_Gym_B1F_EventScript_Daphne",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+    "sha1": "e71da18f579da173413d5f8c5027d9e9c4f14d20"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_DAPHNE, SootopolisCity_Gym_B1F_Text_DaphneIntro, SootopolisCity_Gym_B1F_Text_DaphneDefeat\n\tmsgbox SootopolisCity_Gym_B1F_Text_DaphnePostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "SootopolisCity_Gym_B1F_EventScript_Daphne",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_DAPHNE"
+    ]
+  }
+}

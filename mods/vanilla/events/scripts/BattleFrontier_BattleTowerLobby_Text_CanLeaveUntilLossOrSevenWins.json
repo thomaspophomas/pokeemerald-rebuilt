@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_Text_CanLeaveUntilLossOrSevenWins",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": ".string \"Once you've entered the BATTLE TOWER,\\n\"\n\t.string \"you can't leave until you either lose\\l\"\n\t.string \"or you beat seven TRAINERS in a row.\\p\"\n\t.string \"You'd best be certain that you're up\\n\"\n\t.string \"to the challenge.$\"\n\n@ Unused"
+  },
+  "label": "BattleFrontier_BattleTowerLobby_Text_CanLeaveUntilLossOrSevenWins",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {}
+}

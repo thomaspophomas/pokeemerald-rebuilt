@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_FieldPoison",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/field_poison.inc",
+    "sha1": "5f88349e5a39d50912f00b834304b6a66214eee8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/field_poison.inc",
+    "rawScript": "lockall\n\tspecial TryFieldPoisonWhiteOut\n\tgoto_if_eq VAR_RESULT, FLDPSN_WHITEOUT, EventScript_FieldWhiteOut\n\tgoto_if_eq VAR_RESULT, FLDPSN_FRONTIER_WHITEOUT, EventScript_FrontierFieldWhiteOut\n\treleaseall\n\tend"
+  },
+  "label": "EventScript_FieldPoison",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/field_poison.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

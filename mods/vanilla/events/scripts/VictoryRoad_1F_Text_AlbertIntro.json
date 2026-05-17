@@ -1,0 +1,19 @@
+{
+  "id": "VictoryRoad_1F_Text_AlbertIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_1F/scripts.inc",
+    "sha1": "dda3a20e79be32fbc7d021ceddf040bbcdbe53c7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VictoryRoad_1F/scripts.inc",
+    "rawScript": ".string \"I didn't come all this way to lose now.\\n\"\n\t.string \"That possibility doesn't exist!$\""
+  },
+  "label": "VictoryRoad_1F_Text_AlbertIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VictoryRoad_1F/scripts.inc",
+  "references": {}
+}

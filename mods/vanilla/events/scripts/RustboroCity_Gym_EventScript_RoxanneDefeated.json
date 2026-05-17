@@ -1,0 +1,28 @@
+{
+  "id": "RustboroCity_Gym_EventScript_RoxanneDefeated",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Gym/scripts.inc",
+    "sha1": "e0aa9de4fed612674104e48c7646854400dcecde"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Gym/scripts.inc",
+    "rawScript": "message RustboroCity_Gym_Text_ReceivedStoneBadge\n\twaitmessage\n\tcall Common_EventScript_PlayGymBadgeFanfare\n\tmsgbox RustboroCity_Gym_Text_StoneBadgeInfoTakeThis, MSGBOX_DEFAULT\n\tsetflag FLAG_DEFEATED_RUSTBORO_GYM\n\tsetflag FLAG_BADGE01_GET\n\tsetvar VAR_RUSTBORO_CITY_STATE, 1\n\taddvar VAR_PETALBURG_GYM_STATE, 1\n\tsetvar VAR_0x8008, 1\n\tcall Common_EventScript_SetGymTrainers\n\tcall_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle\n\tgoto RustboroCity_Gym_EventScript_GiveRockTomb\n\tend"
+  },
+  "label": "RustboroCity_Gym_EventScript_RoxanneDefeated",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_BADGE01_GET",
+      "FLAG_DEFEATED_RUSTBORO_GYM"
+    ],
+    "vars": [
+      "VAR_PETALBURG_GYM_STATE",
+      "VAR_RUSTBORO_CITY_STATE"
+    ]
+  }
+}

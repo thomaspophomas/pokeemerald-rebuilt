@@ -1,0 +1,19 @@
+{
+  "id": "Movement_PkmnCenterNurse_Bow",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/pkmn_center_nurse.inc",
+    "sha1": "49fcb801886d68c6fee548595b10470404136e7a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/pkmn_center_nurse.inc",
+    "rawScript": "nurse_joy_bow\n\tdelay_4\n\tstep_end"
+  },
+  "label": "Movement_PkmnCenterNurse_Bow",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/scripts/pkmn_center_nurse.inc",
+  "references": {}
+}

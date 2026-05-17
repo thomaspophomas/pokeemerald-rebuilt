@@ -1,0 +1,23 @@
+{
+  "id": "MeteorFalls_1F_2R_EventScript_RematchJay",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+    "sha1": "09c545be014eea4099489af97aeae4f12469cf78"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+    "rawScript": "trainerbattle_rematch_double TRAINER_JOHN_AND_JAY_1, MeteorFalls_1F_2R_Text_JayRematchIntro, MeteorFalls_1F_2R_Text_JayRematchDefeat, MeteorFalls_1F_2R_Text_JayRematchNotEnoughMons\n\tmsgbox MeteorFalls_1F_2R_Text_JayPostRematch, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "MeteorFalls_1F_2R_EventScript_RematchJay",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_JOHN_AND_JAY_1"
+    ]
+  }
+}

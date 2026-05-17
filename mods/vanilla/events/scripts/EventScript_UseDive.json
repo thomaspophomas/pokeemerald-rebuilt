@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_UseDive",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/field_move_scripts.inc",
+    "sha1": "83a0d3bb9ff1263278592b6a78563154bb422956"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/field_move_scripts.inc",
+    "rawScript": "lockall\n\tcheckpartymove MOVE_DIVE\n\tgoto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantDive\n\tbufferpartymonnick STR_VAR_1, VAR_RESULT\n\tsetfieldeffectargument 0, VAR_RESULT\n\tsetfieldeffectargument 1, 1\n\tmsgbox Text_WantToDive, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, EventScript_EndDive\n\tmsgbox Text_MonUsedDive, MSGBOX_DEFAULT\n\tdofieldeffect FLDEFF_USE_DIVE\n\tgoto EventScript_EndDive\n\tend"
+  },
+  "label": "EventScript_UseDive",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/field_move_scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

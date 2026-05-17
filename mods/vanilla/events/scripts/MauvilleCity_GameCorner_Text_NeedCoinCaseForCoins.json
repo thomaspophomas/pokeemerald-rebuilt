@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_GameCorner_Text_NeedCoinCaseForCoins",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "sha1": "3db7cd216c9a2c35e8176ef8b4a1d9ec68649c7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "rawScript": ".string \"Okay, you wanted some COINS for\\n\"\n\t.string \"the games?\\p\"\n\t.string \"But you don't have a COIN CASE for\\n\"\n\t.string \"stowing the COINS.$\""
+  },
+  "label": "MauvilleCity_GameCorner_Text_NeedCoinCaseForCoins",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": "SootopolisCity_PokemonCenter_1F_EventScript_Woman",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "9809ed86adf690116a3ed12f4cbacd0ff01d19b9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_ge VAR_SKY_PILLAR_STATE, 2, SootopolisCity_PokemonCenter_1F_EventScript_WomanNoLegendaries\n\tgoto_if_unset FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, SootopolisCity_PokemonCenter_1F_EventScript_WomanNoLegendaries\n\tmsgbox SootopolisCity_PokemonCenter_1F_Text_ArentPokemonOurFriends, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "SootopolisCity_PokemonCenter_1F_EventScript_Woman",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN"
+    ],
+    "vars": [
+      "VAR_SKY_PILLAR_STATE"
+    ]
+  }
+}

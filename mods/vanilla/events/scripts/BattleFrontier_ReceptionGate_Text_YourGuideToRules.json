@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ReceptionGate_Text_YourGuideToRules",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "sha1": "5b6e89c53f6e32c0fa6883bd750252f1d739a97b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "rawScript": ".string \"I'm your guide to the basic rules that\\n\"\n\t.string \"are common to all the challenges\\l\"\n\t.string \"offered by the facilities in the BATTLE\\l\"\n\t.string \"FRONTIER.$\""
+  },
+  "label": "BattleFrontier_ReceptionGate_Text_YourGuideToRules",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+  "references": {}
+}

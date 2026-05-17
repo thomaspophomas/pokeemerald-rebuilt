@@ -1,0 +1,29 @@
+{
+  "id": "DewfordTown_Gym_EventScript_Brawly",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Gym/scripts.inc",
+    "sha1": "595ba5581d9eb698f4762f9b34da6e4f6c2a7a55"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Gym/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_BRAWLY_1, DewfordTown_Gym_Text_BrawlyIntro, DewfordTown_Gym_Text_BrawlyDefeat, DewfordTown_Gym_EventScript_BrawlyDefeated, NO_MUSIC\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, DewfordTown_Gym_EventScript_BrawlyRematch\n\tgoto_if_unset FLAG_RECEIVED_TM_BULK_UP, DewfordTown_Gym_EventScript_GiveBulkUp2\n\tmsgbox DewfordTown_Gym_Text_BrawlyPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "DewfordTown_Gym_EventScript_Brawly",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DewfordTown_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_TM_BULK_UP"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_BRAWLY_1"
+    ]
+  }
+}

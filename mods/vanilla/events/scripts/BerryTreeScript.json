@@ -1,0 +1,19 @@
+{
+  "id": "BerryTreeScript",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_tree.inc",
+    "sha1": "749b44e862850f19e689ac4622065bdedf7c8393"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_tree.inc",
+    "rawScript": "special ObjectEventInteractionGetBerryTreeData\n\tswitch VAR_0x8004\n\tcase BERRY_STAGE_SPARKLING, BerryTree_EventScript_Sparkling\n\tcase BERRY_STAGE_NO_BERRY, BerryTree_EventScript_CheckSoil\n\tcase BERRY_STAGE_PLANTED, BerryTree_EventScript_CheckBerryStage1\n\tcase BERRY_STAGE_SPROUTED, BerryTree_EventScript_CheckBerryStage2\n\tcase BERRY_STAGE_TALLER, BerryTree_EventScript_CheckBerryStage3\n\tcase BERRY_STAGE_FLOWERING, BerryTree_EventScript_CheckBerryStage4\n\tcase BERRY_STAGE_BERRIES, BerryTree_EventScript_CheckBerryFullyGrown\n\tend"
+  },
+  "label": "BerryTreeScript",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/scripts/berry_tree.inc",
+  "references": {}
+}

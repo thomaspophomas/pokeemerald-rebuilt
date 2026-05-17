@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_PokemonFanClub_EventScript_SubmitResponse2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/interview.inc",
+    "sha1": "bd1d5135ce2e319a18291aebafac5c4760b90500"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/interview.inc",
+    "rawScript": "msgbox SlateportCity_PokemonFanClub_Text_ThatsAllForInterview2, MSGBOX_DEFAULT\n\tsetvar VAR_0x8005, TVSHOW_FAN_CLUB_LETTER\n\tgoto Interview_EventScript_EndInterview\n\tend"
+  },
+  "label": "SlateportCity_PokemonFanClub_EventScript_SubmitResponse2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/interview.inc",
+  "references": {}
+}

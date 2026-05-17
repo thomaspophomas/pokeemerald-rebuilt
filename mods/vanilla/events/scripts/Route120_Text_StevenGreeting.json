@@ -1,0 +1,19 @@
+{
+  "id": "Route120_Text_StevenGreeting",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route120/scripts.inc",
+    "sha1": "c3ab570e7c5b1ea2c74415d703646f5a362564ad"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route120/scripts.inc",
+    "rawScript": ".string \"STEVEN: Hm? {PLAYER}{KUN}, hi.\\n\"\n\t.string \"It's been a while.\\p\"\n\t.string \"There's something here that you can't\\n\"\n\t.string \"see, right?\\p\"\n\t.string \"Now, if I were to use this device on\\n\"\n\t.string \"the invisible obstacle\u2026\\p\"\n\t.string \"No, no. Rather than describing it,\\n\"\n\t.string \"I should just show you.\\l\"\n\t.string \"That would be more fun.\\p\"\n\t.string \"{PLAYER}{KUN}, are your POK\u00e9MON ready for\\n\"\n\t.string \"battle?$\""
+  },
+  "label": "Route120_Text_StevenGreeting",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route120/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_PokemonCenter_2F_EventScript_Colosseum",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_PokemonCenter_2F/scripts.inc",
+    "sha1": "e8060e6d280e94e01c89154a27083bf4dff73b85"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_PokemonCenter_2F/scripts.inc",
+    "rawScript": "call CableClub_EventScript_Colosseum\n\tend"
+  },
+  "label": "DewfordTown_PokemonCenter_2F_EventScript_Colosseum",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DewfordTown_PokemonCenter_2F/scripts.inc",
+  "references": {}
+}

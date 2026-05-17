@@ -1,0 +1,26 @@
+{
+  "id": "SootopolisCity_LotadAndSeedotHouse_EventScript_BigLotad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+    "sha1": "fc092cb2d8bfc7874143add20c2a81120dbbacc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+    "rawScript": "msgbox SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot, MSGBOX_DEFAULT\n\tgiveitem ITEM_ELIXIR\n\tgoto_if_eq VAR_RESULT, FALSE, SootopolisCity_LotadAndSeedotHouse_EventScript_NoRoomForElixir2\n\tclosemessage\n\trelease\n\tend"
+  },
+  "label": "SootopolisCity_LotadAndSeedotHouse_EventScript_BigLotad",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_ELIXIR"
+    ]
+  }
+}

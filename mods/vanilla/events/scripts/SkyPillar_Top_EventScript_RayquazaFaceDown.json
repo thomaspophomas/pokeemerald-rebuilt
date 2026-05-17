@@ -1,0 +1,19 @@
+{
+  "id": "SkyPillar_Top_EventScript_RayquazaFaceDown",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Top/scripts.inc",
+    "sha1": "db486fa7ae1229bdf3cba19c1d86940ca9a59221"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_Top/scripts.inc",
+    "rawScript": "turnobject LOCALID_RAYQUAZA_SLEEPING, DIR_SOUTH\n\tend"
+  },
+  "label": "SkyPillar_Top_EventScript_RayquazaFaceDown",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SkyPillar_Top/scripts.inc",
+  "references": {}
+}

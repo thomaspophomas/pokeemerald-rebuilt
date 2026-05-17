@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattlePikeThreePathRoom_EventScript_SetHintRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "sha1": "927f7bda20dae778159d88132a53038bcfb76615"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "rawScript": "pike_sethintroom\n\tgoto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattlePikeThreePathRoom_EventScript_SetPikeQueenHint\n\tsetvar VAR_TEMP_5, 255\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeThreePathRoom_EventScript_SetHintRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_5"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceBattleRoom_Text_HurryWithFrontierPass",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "sha1": "c4392c432f84fdbe0613ac4b067366a168a52056"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "rawScript": ".string \"My, my, if only you could maintain\\n\"\n\t.string \"a certain level of decorum\u2026\\p\"\n\t.string \"Gaaah, here!\\n\"\n\t.string \"Hurry with that FRONTIER PASS, you!$\""
+  },
+  "label": "BattleFrontier_BattlePalaceBattleRoom_Text_HurryWithFrontierPass",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+  "references": {}
+}

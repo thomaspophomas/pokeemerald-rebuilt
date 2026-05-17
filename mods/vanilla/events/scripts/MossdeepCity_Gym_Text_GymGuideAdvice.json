@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Gym_Text_GymGuideAdvice",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "sha1": "f1b3ae6c76fdfe44b1431df4ea78da5c11a79c08"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "rawScript": ".string \"Yo, how's it going, CHAMPION-bound\\n\"\n\t.string \"{PLAYER}?\\p\"\n\t.string \"The GYM LEADERS here use\\n\"\n\t.string \"PSYCHIC-type POK\u00e9MON.\\p\"\n\t.string \"If you go up against them with\\n\"\n\t.string \"FIGHTING- or POISON-type POK\u00e9MON,\\l\"\n\t.string \"they'll inflict horrible damage!\\p\"\n\t.string \"Plus, they'll come at you with\\n\"\n\t.string \"outstanding combination attacks.\\p\"\n\t.string \"If you want to win, you'll need to show\\n\"\n\t.string \"them how tight you are with your\\l\"\n\t.string \"POK\u00e9MON. Go for it!$\""
+  },
+  "label": "MossdeepCity_Gym_Text_GymGuideAdvice",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_Gym/scripts.inc",
+  "references": {}
+}

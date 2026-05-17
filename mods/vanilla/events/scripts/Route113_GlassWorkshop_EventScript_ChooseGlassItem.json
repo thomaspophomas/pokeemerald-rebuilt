@@ -1,0 +1,23 @@
+{
+  "id": "Route113_GlassWorkshop_EventScript_ChooseGlassItem",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "sha1": "6a7101e66439e9abedcc55c8fc60b573807258b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "rawScript": "setvar VAR_0x8009, 0\n\tsetvar VAR_0x8004, SCROLL_MULTI_GLASS_WORKSHOP_VENDOR\n\tspecial ShowScrollableMultichoice\n\tswitch VAR_RESULT\n\tcase 0, Route113_GlassWorkshop_EventScript_BlueFlute\n\tcase 1, Route113_GlassWorkshop_EventScript_YellowFlute\n\tcase 2, Route113_GlassWorkshop_EventScript_RedFlute\n\tcase 3, Route113_GlassWorkshop_EventScript_WhiteFlute\n\tcase 4, Route113_GlassWorkshop_EventScript_BlackFlute\n\tcase 5, Route113_GlassWorkshop_EventScript_PrettyChair\n\tcase 6, Route113_GlassWorkshop_EventScript_PrettyDesk\n\tcase 7, Route113_GlassWorkshop_EventScript_CancelGlassItemSelect\n\tcase MULTI_B_PRESSED, Route113_GlassWorkshop_EventScript_CancelGlassItemSelect\n\tend"
+  },
+  "label": "Route113_GlassWorkshop_EventScript_ChooseGlassItem",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route113_GlassWorkshop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

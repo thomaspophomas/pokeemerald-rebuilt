@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Gym_1F_Text_RegisteredFlannery",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "sha1": "b82ae91ab89ff7156e8125891eff9b7e6a2a260f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "rawScript": ".string \"Registered GYM LEADER FLANNERY\\n\"\n\t.string \"in the POK\u00e9NAV.$\""
+  },
+  "label": "LavaridgeTown_Gym_1F_Text_RegisteredFlannery",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+  "references": {}
+}

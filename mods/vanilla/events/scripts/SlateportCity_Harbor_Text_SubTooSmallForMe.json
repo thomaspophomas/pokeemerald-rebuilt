@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Harbor_Text_SubTooSmallForMe",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "sha1": "304e0889603d7850b02e01765d969cf3c903eb9e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "rawScript": ".string \"I wanted to go with CAPT. STERN on\\n\"\n\t.string \"the ocean floor exploration.\\p\"\n\t.string \"But the sub's too small for me.\\p\"\n\t.string \"If I squeezed in, there wouldn't be\\n\"\n\t.string \"any room for the CAPTAIN\u2026$\""
+  },
+  "label": "SlateportCity_Harbor_Text_SubTooSmallForMe",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_Harbor/scripts.inc",
+  "references": {}
+}

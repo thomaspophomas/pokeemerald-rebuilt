@@ -1,0 +1,23 @@
+{
+  "id": "Common_EventScript_SetupRivalGfxIdSameGender",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/rival_graphics.inc",
+    "sha1": "d8fa11b33626ba4f78fc99a4165d4e9ffc88b42c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/rival_graphics.inc",
+    "rawScript": "checkplayergender\n\tgoto_if_eq VAR_RESULT, MALE, EventScript_SetupRivalGfxIdMale2\n\tgoto_if_eq VAR_RESULT, FEMALE, EventScript_SetupRivalGfxIdFemale2\n\tend"
+  },
+  "label": "Common_EventScript_SetupRivalGfxIdSameGender",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/rival_graphics.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_CoveLilyMotel_2F_Text_ContestsDoTakeStrategy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+    "sha1": "f1b25840a73dbfc8affb6142a8450fed0204496f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+    "rawScript": ".string \"SCOTT: I think it does take strategy\\n\"\n\t.string \"to win a CONTEST.\\p\"\n\t.string \"Devising CONTEST strategies is one way\\n\"\n\t.string \"of becoming a better TRAINER, I'd say.$\""
+  },
+  "label": "LilycoveCity_CoveLilyMotel_2F_Text_ContestsDoTakeStrategy",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+  "references": {}
+}

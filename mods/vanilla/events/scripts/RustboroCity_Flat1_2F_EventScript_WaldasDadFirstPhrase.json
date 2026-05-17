@@ -1,0 +1,23 @@
+{
+  "id": "RustboroCity_Flat1_2F_EventScript_WaldasDadFirstPhrase",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+    "sha1": "bce61defe394f3175dd583157b086f1687d0ac6f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+    "rawScript": "msgbox RustboroCity_Flat1_2F_Text_HelloDoYouKnowFunnyPhrase, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, RustboroCity_Flat1_2F_EventScript_DeclineGivePhrase\n\tmsgbox RustboroCity_Flat1_2F_Text_WonderfulLetsHearSuggestion, MSGBOX_DEFAULT\n\tgoto RustboroCity_Flat1_2F_EventScript_GivePhrase"
+  },
+  "label": "RustboroCity_Flat1_2F_EventScript_WaldasDadFirstPhrase",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

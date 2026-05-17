@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_Text_SwitchShoesWithRunningShoes",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": ".string \"{PLAYER} switched shoes with the\\n\"\n\t.string \"RUNNING SHOES.$\""
+  },
+  "label": "LittlerootTown_Text_SwitchShoesWithRunningShoes",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePalaceBattleRoom_EventScript_DefeatedOpponent",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "sha1": "c4392c432f84fdbe0613ac4b067366a168a52056"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "rawScript": "call BattleFrontier_EventScript_IncrementWinStreak\n\tfrontier_get FRONTIER_DATA_BATTLE_NUM\n\taddvar VAR_RESULT, 1\n\tfrontier_set FRONTIER_DATA_BATTLE_NUM, VAR_RESULT\n\tswitch VAR_RESULT\n\tcase 7, BattleFrontier_BattlePalaceBattleRoom_EventScript_WarpToLobbyWon\n\tapplymovement LOCALID_PALACE_BATTLE_OPPONENT, BattleFrontier_BattlePalaceBattleRoom_Movement_OpponentExit\n\twaitmovement 0\n\tremoveobject LOCALID_PALACE_BATTLE_OPPONENT\n\tapplymovement LOCALID_PALACE_BATTLE_PLAYER, BattleFrontier_BattlePalaceBattleRoom_Movement_FaceUp\n\tapplymovement LOCALID_PALACE_BATTLE_ATTENDANT, BattleFrontier_BattlePalaceBattleRoom_Movement_FaceDown\n\twaitmovement 0\n\tmsgbox BattleFrontier_BattlePalaceBattleRoom_Text_LetMeRestoreYourMons, MSGBOX_DEFAULT\n\tspecial LoadPlayerParty\n\tspecial SavePlayerParty\n\tfrontier_setpartyorder FRONTIER_PARTY_SIZE\n\tplayfanfare MUS_HEAL\n\twaitfanfare\n\tspecial HealPlayerParty"
+  },
+  "label": "BattleFrontier_BattlePalaceBattleRoom_EventScript_DefeatedOpponent",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

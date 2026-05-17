@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_WallyIllGoBackToVerdanturf",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"WALLY: UNCLE\u2026\\n\"\n\t.string \"I'll go back to VERDANTURF\u2026$\""
+  },
+  "label": "MauvilleCity_Text_WallyIllGoBackToVerdanturf",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

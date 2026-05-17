@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_CoveLilyMotel_2F_Text_ImTheProgrammer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+    "sha1": "f1b25840a73dbfc8affb6142a8450fed0204496f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+    "rawScript": ".string \"Me? You're talking to me?\\n\"\n\t.string \"I'm the PROGRAMMER.\\p\"\n\t.string \"I wonder what the SLOTS are\\n\"\n\t.string \"like here.$\""
+  },
+  "label": "LilycoveCity_CoveLilyMotel_2F_Text_ImTheProgrammer",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+  "references": {}
+}

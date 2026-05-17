@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonCenter_1F_Text_IWillTreasureThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/lilycove_lady.inc",
+    "sha1": "2c2864b913cc532d514481fce3a5e381d5af5f83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/lilycove_lady.inc",
+    "rawScript": ".string \"\u2026Oh, oh, oh\u2026\\p\"\n\t.string \"This is amazing!\\n\"\n\t.string \"This really is {STR_VAR_1}!\\p\"\n\t.string \"I never knew that one {STR_VAR_2}\\n\"\n\t.string \"could be this {STR_VAR_1}!\\p\"\n\t.string \"Thank you!\\p\"\n\t.string \"I will treasure this for the rest\\n\"\n\t.string \"of my life!$\""
+  },
+  "label": "LilycoveCity_PokemonCenter_1F_Text_IWillTreasureThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/lilycove_lady.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Route114_OnFrame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114/scripts.inc",
+    "sha1": "0c57a7112b8feadf446551150c5dcc13761f8eeb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114/scripts.inc",
+    "rawScript": "map_script_2 VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_EndEventAndCleanup_1\n\t.2byte 0"
+  },
+  "label": "Route114_OnFrame",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Route114/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_SHOULD_END_ABNORMAL_WEATHER"
+    ]
+  }
+}

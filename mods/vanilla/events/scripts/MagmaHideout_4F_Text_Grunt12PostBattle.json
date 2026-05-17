@@ -1,0 +1,19 @@
+{
+  "id": "MagmaHideout_4F_Text_Grunt12PostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_4F/scripts.inc",
+    "sha1": "8f2c61f090f2c324dc4138c5d5ad754b00dfcb48"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_4F/scripts.inc",
+    "rawScript": ".string \"MAXIE, sir!\\n\"\n\t.string \"An intruder is headed your way!$\""
+  },
+  "label": "MagmaHideout_4F_Text_Grunt12PostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MagmaHideout_4F/scripts.inc",
+  "references": {}
+}

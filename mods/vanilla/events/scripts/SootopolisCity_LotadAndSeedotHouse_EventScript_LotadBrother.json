@@ -1,0 +1,23 @@
+{
+  "id": "SootopolisCity_LotadAndSeedotHouse_EventScript_LotadBrother",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+    "sha1": "fc092cb2d8bfc7874143add20c2a81120dbbacc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+    "rawScript": "special GetLotadSizeRecordInfo\n\tlock\n\tfaceplayer\n\tmsgbox SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad, MSGBOX_DEFAULT\n\tspecial ChoosePartyMon\n\tcopyvar VAR_RESULT, VAR_0x8004\n\tgoto_if_eq VAR_RESULT, PARTY_NOTHING_CHOSEN, SootopolisCity_LotadAndSeedotHouse_EventScript_CancelShowLotad\n\tspecial CompareLotadSize\n\tgoto_if_eq VAR_RESULT, COMPARE_SIZE_INCORRECT_SPECIES, SootopolisCity_LotadAndSeedotHouse_EventScript_NotLotad\n\tgoto_if_eq VAR_RESULT, COMPARE_SIZE_SMALLER, SootopolisCity_LotadAndSeedotHouse_EventScript_SmallLotad\n\tgoto_if_eq VAR_RESULT, COMPARE_SIZE_LARGER, SootopolisCity_LotadAndSeedotHouse_EventScript_BigLotad\n\trelease\n\tend"
+  },
+  "label": "SootopolisCity_LotadAndSeedotHouse_EventScript_LotadBrother",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

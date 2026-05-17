@@ -1,0 +1,19 @@
+{
+  "id": "AquaHideout_B2F_Text_MattIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B2F/scripts.inc",
+    "sha1": "2422b13cc4d746236ea4f5c8dbbc6ea26d3d8e36"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_B2F/scripts.inc",
+    "rawScript": ".string \"Hehehe\u2026\\p\"\n\t.string \"Got here already, did you?\\n\"\n\t.string \"We underestimated you!\\p\"\n\t.string \"But this is it!\\p\"\n\t.string \"I'm a cut above the GRUNTS you've seen\\n\"\n\t.string \"so far.\\p\"\n\t.string \"I'm not stalling for time.\\n\"\n\t.string \"I'm going to pulverize you!$\""
+  },
+  "label": "AquaHideout_B2F_Text_MattIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AquaHideout_B2F/scripts.inc",
+  "references": {}
+}

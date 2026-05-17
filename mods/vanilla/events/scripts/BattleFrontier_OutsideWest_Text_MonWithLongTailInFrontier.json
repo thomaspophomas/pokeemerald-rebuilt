@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideWest_Text_MonWithLongTailInFrontier",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": ".string \"I heard a rumor that someone saw\\n\"\n\t.string \"a POK\u00e9MON with an unusually long tail\\l\"\n\t.string \"somewhere in the BATTLE FRONTIER.\\p\"\n\t.string \"It must be adorable. I'm sure of it\u2026\\p\"\n\t.string \"Oh, challenges can wait. I feel driven\\n\"\n\t.string \"to find the delightful creature!$\""
+  },
+  "label": "BattleFrontier_OutsideWest_Text_MonWithLongTailInFrontier",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {}
+}

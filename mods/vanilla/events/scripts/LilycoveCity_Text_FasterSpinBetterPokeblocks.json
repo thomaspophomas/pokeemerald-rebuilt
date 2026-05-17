@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_FasterSpinBetterPokeblocks",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"People have to work together to get it\\n\"\n\t.string \"to spin faster.\\p\"\n\t.string \"The faster you can make it spin, the\\n\"\n\t.string \"better {POKEBLOCK}S you can get, I've heard.$\""
+  },
+  "label": "LilycoveCity_Text_FasterSpinBetterPokeblocks",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

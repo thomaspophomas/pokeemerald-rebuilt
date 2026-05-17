@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_ReceptionGate_EventScript_ChooseFacilityToLearnAbout",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "sha1": "5b6e89c53f6e32c0fa6883bd750252f1d739a97b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "rawScript": "message BattleFrontier_ReceptionGate_Text_LearnAboutWhich2\n\twaitmessage\n\tsetvar VAR_0x8004, SCROLL_MULTI_BF_RECEPTIONIST\n\tspecial ShowScrollableMultichoice\n\tswitch VAR_RESULT\n\tcase 0, BattleFrontier_ReceptionGate_EventScript_BattleTower\n\tcase 1, BattleFrontier_ReceptionGate_EventScript_BattleDome\n\tcase 2, BattleFrontier_ReceptionGate_EventScript_BattlePalace\n\tcase 3, BattleFrontier_ReceptionGate_EventScript_BattleArena\n\tcase 4, BattleFrontier_ReceptionGate_EventScript_BattleFactory\n\tcase 5, BattleFrontier_ReceptionGate_EventScript_BattlePike\n\tcase 6, BattleFrontier_ReceptionGate_EventScript_BattlePyramid\n\tcase 7, BattleFrontier_ReceptionGate_EventScript_RankingHall\n\tcase 8, BattleFrontier_ReceptionGate_EventScript_ExchangeCorner\n\tcase 9, BattleFrontier_ReceptionGate_EventScript_ExitFacilityGuide\n\tcase MULTI_B_PRESSED, BattleFrontier_ReceptionGate_EventScript_ExitFacilityGuide\n\tend"
+  },
+  "label": "BattleFrontier_ReceptionGate_EventScript_ChooseFacilityToLearnAbout",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "AquaHideout_B1F_Text_Grunt5Defeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B1F/scripts.inc",
+    "sha1": "2923188c4ae1df18ace73c8a8f87ea7f1d1e7886"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_B1F/scripts.inc",
+    "rawScript": ".string \"Yawn\u2026\\n\"\n\t.string \"Oh, I lost\u2026$\""
+  },
+  "label": "AquaHideout_B1F_Text_Grunt5Defeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AquaHideout_B1F/scripts.inc",
+  "references": {}
+}

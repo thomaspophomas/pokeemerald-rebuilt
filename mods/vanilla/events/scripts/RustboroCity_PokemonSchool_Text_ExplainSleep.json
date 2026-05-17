@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_PokemonSchool_Text_ExplainSleep",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "sha1": "155fc7f1cee833cb06df85a407e5f98f216a928e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "rawScript": ".string \"If a POK\u00e9MON falls asleep, it will be\\n\"\n\t.string \"unable to attack.\\p\"\n\t.string \"A POK\u00e9MON may wake up on its own,\\n\"\n\t.string \"but if a battle ends while it is\\l\"\n\t.string \"sleeping, it will stay asleep.\\p\"\n\t.string \"Wake it up using an AWAKENING.$\""
+  },
+  "label": "RustboroCity_PokemonSchool_Text_ExplainSleep",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+  "references": {}
+}

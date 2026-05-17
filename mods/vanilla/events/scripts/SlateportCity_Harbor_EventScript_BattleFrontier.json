@@ -1,0 +1,26 @@
+{
+  "id": "SlateportCity_Harbor_EventScript_BattleFrontier",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "sha1": "304e0889603d7850b02e01765d969cf3c903eb9e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "rawScript": "msgbox SlateportCity_Harbor_Text_BattleFrontierItIs, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_ChooseNewDestination\n\tcall SlateportCity_Harbor_EventScript_BoardFerry\n\twarp MAP_BATTLE_FRONTIER_OUTSIDE_WEST, 19, 67\n\twaitstate\n\trelease\n\tend"
+  },
+  "label": "SlateportCity_Harbor_EventScript_BattleFrontier",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity_Harbor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_OUTSIDE_WEST"
+    ]
+  }
+}

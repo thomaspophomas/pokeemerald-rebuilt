@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleFactoryBattleRoom_EventScript_EnterRoomFactoryHeadBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+    "sha1": "d6c9d92d97f61a06b3670b7d509844f3bc902eb3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattleFactoryBattleRoom_Text_GetAMoveOn, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_FACTORY_BATTLE_OPPONENT, BattleFrontier_BattleFactoryBattleRoom_Movement_NolandMoveToBattle\n\tapplymovement LOCALID_FACTORY_BATTLE_PLAYER, BattleFrontier_BattleFactoryBattleRoom_Movement_PlayerEnterRoom\n\tapplymovement LOCALID_PLAYER, BattleFrontier_BattleFactoryBattleRoom_Movement_PlayerEnterRoom\n\twaitmovement 0\n\tcall BattleFrontier_BattleFactoryBattleRoom_EventScript_ScientistsFaceBattle\n\tgoto BattleFrontier_BattleFactoryBattleRoom_EventScript_BattleOpponent\n\tend"
+  },
+  "label": "BattleFrontier_BattleFactoryBattleRoom_EventScript_EnterRoomFactoryHeadBattle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+  "references": {}
+}

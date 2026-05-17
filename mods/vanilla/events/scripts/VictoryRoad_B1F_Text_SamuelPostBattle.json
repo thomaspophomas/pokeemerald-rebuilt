@@ -1,0 +1,19 @@
+{
+  "id": "VictoryRoad_B1F_Text_SamuelPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_B1F/scripts.inc",
+    "sha1": "cbf73ba8b0ffae50fb8f8b966d51479555277bbd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VictoryRoad_B1F/scripts.inc",
+    "rawScript": ".string \"The POK\u00e9MON LEAGUE became distant\\n\"\n\t.string \"again\u2026 What a letdown\u2026$\""
+  },
+  "label": "VictoryRoad_B1F_Text_SamuelPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VictoryRoad_B1F/scripts.inc",
+  "references": {}
+}

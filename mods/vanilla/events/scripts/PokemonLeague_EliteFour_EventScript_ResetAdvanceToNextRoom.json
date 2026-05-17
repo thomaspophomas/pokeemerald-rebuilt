@@ -1,0 +1,19 @@
+{
+  "id": "PokemonLeague_EliteFour_EventScript_ResetAdvanceToNextRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/elite_four.inc",
+    "sha1": "91caff4309123d1aebba75b086a777fb46401901"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/elite_four.inc",
+    "rawScript": "setmetatile 6, 1, METATILE_EliteFour_OpenDoor_Frame, FALSE\n\tsetmetatile 6, 2, METATILE_EliteFour_OpenDoor_Opening, FALSE\n\tsetmetatile 5, 12, METATILE_EliteFour_EntryDoor_ClosedTop, TRUE\n\tsetmetatile 6, 12, METATILE_EliteFour_EntryDoor_ClosedTop, TRUE\n\tsetmetatile 7, 12, METATILE_EliteFour_EntryDoor_ClosedTop, TRUE\n\tsetmetatile 5, 13, METATILE_EliteFour_EntryDoor_ClosedBottom, TRUE\n\tsetmetatile 6, 13, METATILE_EliteFour_EntryDoor_ClosedBottom, TRUE\n\tsetmetatile 7, 13, METATILE_EliteFour_EntryDoor_ClosedBottom, TRUE\n\tsetmetatile 0, 2, METATILE_EliteFour_RightSpotlightOff, TRUE\n\tsetmetatile 1, 2, METATILE_EliteFour_LeftSpotlightOff, TRUE\n\tsetmetatile 2, 2, METATILE_EliteFour_RightSpotlightOff, TRUE\n\tsetmetatile 3, 2, METATILE_EliteFour_LeftSpotlightOff, TRUE\n\tsetmetatile 4, 2, METATILE_EliteFour_RightSpotlightOff, TRUE\n\tsetmetatile 8, 2, METATILE_EliteFour_LeftSpotlightOff, TRUE\n\tsetmetatile 9, 2, METATILE_EliteFour_RightSpotlightOff, TRUE\n\tsetmetatile 10, 2, METATILE_EliteFour_LeftSpotlightOff, TRUE\n\tsetmetatile 11, 2, METATILE_EliteFour_RightSpotlightOff, TRUE\n\tsetmetatile 12, 2, METATILE_EliteFour_LeftSpotlightOff, TRUE\n\treturn"
+  },
+  "label": "PokemonLeague_EliteFour_EventScript_ResetAdvanceToNextRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/elite_four.inc",
+  "references": {}
+}

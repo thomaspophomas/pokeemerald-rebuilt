@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_MaysHouse_2F_Movement_PlayerWatchMayEast",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "sha1": "e014a444dcf389c78773768633900402b1862edb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "rawScript": "delay_16\n\twalk_in_place_faster_up\n\tdelay_16\n\tdelay_16\n\twalk_in_place_faster_right\n\tstep_end"
+  },
+  "label": "LittlerootTown_MaysHouse_2F_Movement_PlayerWatchMayEast",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+  "references": {}
+}

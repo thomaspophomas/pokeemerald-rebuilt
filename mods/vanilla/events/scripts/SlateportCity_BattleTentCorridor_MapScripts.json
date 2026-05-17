@@ -1,0 +1,24 @@
+{
+  "id": "SlateportCity_BattleTentCorridor_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_BattleTentCorridor/scripts.inc",
+    "sha1": "6c49213213fbc0031669e8a364dc312cbe989a7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_BattleTentCorridor/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_FRAME_TABLE, SlateportCity_BattleTentCorridor_OnFrame\n\tmap_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, SlateportCity_BattleTentCorridor_OnWarp\n\t.byte 0\n\n\t@ This is Slateport Tent's version of the Battle Factory Pre-Battle Room"
+  },
+  "label": "SlateportCity_BattleTentCorridor_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/SlateportCity_BattleTentCorridor/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Route119_Text_ThoughtFlyByCatchingBirdMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119/scripts.inc",
+    "sha1": "576fe3fab09726df20b1bbf3016bc5306f0e0f3d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119/scripts.inc",
+    "rawScript": ".string \"I thought you FLY by catching a whole\\n\"\n\t.string \"flock of BIRD POK\u00e9MON, and then\\l\"\n\t.string \"hanging on to them somehow.\\p\"\n\t.string \"But it turns out there's an HM move\\n\"\n\t.string \"called FLY!\\p\"\n\t.string \"I wish I'd known about that a long\\n\"\n\t.string \"time ago\u2026$\""
+  },
+  "label": "Route119_Text_ThoughtFlyByCatchingBirdMons",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route119/scripts.inc",
+  "references": {}
+}

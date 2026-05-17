@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Hall_Text_BrilliantIndeed",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Hall/scripts.inc",
+    "sha1": "78185d3058996bff2579b5133faf680c4df6865f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Hall/scripts.inc",
+    "rawScript": ".string \"Oh, a smashing good idea!\\p\"\n\t.string \"It will settle once and for all\\n\"\n\t.string \"who is the best at\\l\"\n\t.string \"\u201c{STR_VAR_1}.\u201d\\l\"\n\t.string \"Brilliant, indeed!\\p\"\n\t.string \"Starting today, our lives will revolve\\n\"\n\t.string \"around \u201c{STR_VAR_1}\u201d!$\""
+  },
+  "label": "DewfordTown_Hall_Text_BrilliantIndeed",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown_Hall/scripts.inc",
+  "references": {}
+}

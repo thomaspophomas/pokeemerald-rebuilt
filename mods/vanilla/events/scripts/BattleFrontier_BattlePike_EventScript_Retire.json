@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePike_EventScript_Retire",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/battle_pike.inc",
+    "sha1": "f01ae67ca8ba2e8860c192c38f413ebd89aa5204"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/battle_pike.inc",
+    "rawScript": "frontier_set FRONTIER_DATA_CHALLENGE_STATUS CHALLENGE_STATUS_LOST\n\twarp MAP_BATTLE_FRONTIER_BATTLE_PIKE_LOBBY, 5, 6\n\twaitstate\n\tend"
+  },
+  "label": "BattleFrontier_BattlePike_EventScript_Retire",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/battle_pike.inc",
+  "references": {
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_PIKE_LOBBY"
+    ]
+  }
+}

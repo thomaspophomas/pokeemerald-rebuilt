@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_EventScript_PokemonLeagueSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity/scripts.inc",
+    "sha1": "03ae6b2d9d17df6e3a50137366ce7f8d136ed5d2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity/scripts.inc",
+    "rawScript": "msgbox EverGrandeCity_Text_EnteringPokemonLeague, MSGBOX_SIGN\n\tend"
+  },
+  "label": "EverGrandeCity_EventScript_PokemonLeagueSign",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity/scripts.inc",
+  "references": {}
+}

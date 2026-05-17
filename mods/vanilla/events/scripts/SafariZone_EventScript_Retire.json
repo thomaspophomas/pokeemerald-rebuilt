@@ -1,0 +1,19 @@
+{
+  "id": "SafariZone_EventScript_Retire",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/safari_zone.inc",
+    "sha1": "435880c660a34d3e51dcedb348a41731d28af7cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/safari_zone.inc",
+    "rawScript": "goto SafariZone_EventScript_Exit"
+  },
+  "label": "SafariZone_EventScript_Retire",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/safari_zone.inc",
+  "references": {}
+}

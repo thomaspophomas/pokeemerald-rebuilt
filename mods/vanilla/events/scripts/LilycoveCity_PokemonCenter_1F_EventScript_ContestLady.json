@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_PokemonCenter_1F_EventScript_ContestLady",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/lilycove_lady.inc",
+    "sha1": "2c2864b913cc532d514481fce3a5e381d5af5f83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/lilycove_lady.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmsgbox LilycoveCity_PokemonCenter_1F_Text_ImTheContestLady, MSGBOX_DEFAULT\n\tspecialvar VAR_RESULT, HasPlayerGivenContestLadyPokeblock\n\tgoto_if_eq VAR_RESULT, FALSE, LilycoveCity_PokemonCenter_1F_EventScript_NotGivenPokeblock\n\tgoto_if_eq VAR_RESULT, TRUE, LilycoveCity_PokemonCenter_1F_EventScript_GivenPokeblock\n\tend\n\n@ Redundant with above script, VAR_RESULT will always be FALSE here"
+  },
+  "label": "LilycoveCity_PokemonCenter_1F_EventScript_ContestLady",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/lilycove_lady.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

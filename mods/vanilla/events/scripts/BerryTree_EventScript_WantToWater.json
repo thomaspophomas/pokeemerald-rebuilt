@@ -1,0 +1,26 @@
+{
+  "id": "BerryTree_EventScript_WantToWater",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_tree.inc",
+    "sha1": "749b44e862850f19e689ac4622065bdedf7c8393"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_tree.inc",
+    "rawScript": "checkitem ITEM_WAILMER_PAIL\n\tgoto_if_eq VAR_RESULT, FALSE, BerryTree_EventScript_DontWater\n\tspecial ObjectEventInteractionGetBerryName\n\tmsgbox BerryTree_Text_WantToWater, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, BerryTree_EventScript_WaterBerry\n\tgoto_if_eq VAR_RESULT, NO, BerryTree_EventScript_DontWater"
+  },
+  "label": "BerryTree_EventScript_WantToWater",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_tree.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_WAILMER_PAIL"
+    ]
+  }
+}

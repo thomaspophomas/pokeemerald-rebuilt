@@ -1,0 +1,19 @@
+{
+  "id": "Route103_Text_MayLetsBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route103/scripts.inc",
+    "sha1": "cdbe6074bf0bdfa44494ccf1457b18c3de43e0de"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route103/scripts.inc",
+    "rawScript": ".string \"Oh, hi, {PLAYER}{KUN}!\\p\"\n\t.string \"\u2026Oh, I see, my dad gave you\\n\"\n\t.string \"a POK\u00e9MON as a gift.\\p\"\n\t.string \"Since we're here, let's have a quick\\n\"\n\t.string \"battle!\\p\"\n\t.string \"I'll give you a taste of what being\\n\"\n\t.string \"a TRAINER is like.$\""
+  },
+  "label": "Route103_Text_MayLetsBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route103/scripts.inc",
+  "references": {}
+}

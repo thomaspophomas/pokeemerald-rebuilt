@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge3_Text_YouDontHaveEnoughPoints",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "sha1": "52169856e2442e0e7ad660050a45dce1a1b2405a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "rawScript": ".string \"Oh, no, no, no!\\n\"\n\t.string \"You don't have enough Battle Points!\\p\"\n\t.string \"I wish you wouldn't monkey around and\\n\"\n\t.string \"waste everyone's time!$\""
+  },
+  "label": "BattleFrontier_Lounge3_Text_YouDontHaveEnoughPoints",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Harbor_Text_TeamAquaLeftNeedDive",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "sha1": "304e0889603d7850b02e01765d969cf3c903eb9e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "rawScript": ".string \"CAPT. STERN: Oh, {PLAYER}{KUN}\u2026\\p\"\n\t.string \"Okay\u2026 So TEAM AQUA left before you\\n\"\n\t.string \"could stop them\u2026\\p\"\n\t.string \"Oh, no, don't blame yourself.\\n\"\n\t.string \"You're not responsible for this.\\p\"\n\t.string \"Trying to catch a submarine\u2026\\n\"\n\t.string \"It's impossible for most people.\\p\"\n\t.string \"You would need a POK\u00e9MON that knows\\n\"\n\t.string \"how to DIVE\u2026\\p\"\n\t.string \"Perhaps if you went out to\\n\"\n\t.string \"MOSSDEEP CITY\u2026\\p\"\n\t.string \"A lot of divers live out there, so\\n\"\n\t.string \"someone might teach you\u2026$\""
+  },
+  "label": "SlateportCity_Harbor_Text_TeamAquaLeftNeedDive",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_Harbor/scripts.inc",
+  "references": {}
+}

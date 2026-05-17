@@ -1,0 +1,19 @@
+{
+  "id": "EventScript_PkmnCenterNurse_TakeAndHealPkmn",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/pkmn_center_nurse.inc",
+    "sha1": "49fcb801886d68c6fee548595b10470404136e7a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/pkmn_center_nurse.inc",
+    "rawScript": "applymovement VAR_0x800B, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tdofieldeffect FLDEFF_POKECENTER_HEAL\n\twaitfieldeffect FLDEFF_POKECENTER_HEAL\n\tapplymovement VAR_0x800B, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tspecial HealPlayerParty\n\treturn"
+  },
+  "label": "EventScript_PkmnCenterNurse_TakeAndHealPkmn",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/pkmn_center_nurse.inc",
+  "references": {}
+}

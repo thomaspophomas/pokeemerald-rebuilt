@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerBattleRoom_Text_AnabelTalentShallBeRecognized",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "sha1": "09b678d8717203a622b1d8714d904bcdeb37d08a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "rawScript": ".string \"ANABEL: Fufufu, nicely done\u2026\\p\"\n\t.string \"Your FRONTIER PASS, please\u2026\\n\"\n\t.string \"Your talent shall be recognized.$\""
+  },
+  "label": "BattleFrontier_BattleTowerBattleRoom_Text_AnabelTalentShallBeRecognized",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+  "references": {}
+}

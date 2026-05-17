@@ -1,0 +1,23 @@
+{
+  "id": "PlayersHouse_1F_EventScript_PetalburgGymReportMale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/players_house.inc",
+    "sha1": "0f3da1347500315ef212a252409f1d410b0d226c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/players_house.inc",
+    "rawScript": "applymovement VAR_0x8005, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\tcall PlayersHouse_1F_EventScript_MomNoticeGymBroadcast\n\tapplymovement LOCALID_PLAYER, PlayersHouse_1F_Movement_PlayerApproachTVForGymMale\n\twaitmovement 0\n\tplaybgm MUS_ENCOUNTER_INTERVIEWER, FALSE\n\tmsgbox PlayersHouse_1F_Text_MaybeDadWillBeOn, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement VAR_0x8005, PlayersHouse_1F_Movement_MomMakeRoomToSeeTVMale\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, PlayersHouse_1F_Movement_PlayerMoveToTVMale\n\twaitmovement 0\n\tcall PlayersHouse_1F_EventScript_WatchGymBroadcast\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tmsgbox PlayersHouse_1F_Text_ItsOverWeMissedHim, MSGBOX_DEFAULT\n\tmsgbox PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor, MSGBOX_DEFAULT\n\tclosemessage\n\tsetvar VAR_TEMP_1, 1\n\tapplymovement VAR_0x8005, PlayersHouse_1F_Movement_MomReturnToSeatMale\n\twaitmovement 0\n\tgoto PlayersHouse_1F_EventScript_SetWatchedBroadcast\n\tend"
+  },
+  "label": "PlayersHouse_1F_EventScript_PetalburgGymReportMale",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/players_house.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1"
+    ]
+  }
+}

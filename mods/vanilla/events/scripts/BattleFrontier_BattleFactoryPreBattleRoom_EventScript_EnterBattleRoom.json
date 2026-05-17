@@ -1,0 +1,26 @@
+{
+  "id": "BattleFrontier_BattleFactoryPreBattleRoom_EventScript_EnterBattleRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+    "sha1": "1a22c52bd73e3edd87503c90dddd414ef0e181f2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_RightThisWay, MSGBOX_DEFAULT\n\tclosemessage\n\tcall BattleFrontier_EventScript_GetLvlMode\n\tcall_if_eq VAR_RESULT, FRONTIER_LVL_50, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_WalkToBattleRoomLv50\n\tcall_if_eq VAR_RESULT, FRONTIER_LVL_OPEN, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_WalkToBattleRoomLvOpen\n\twaitmovement 0\n\twarp MAP_BATTLE_FRONTIER_BATTLE_FACTORY_BATTLE_ROOM, 6, 11\n\twaitstate\n\tend"
+  },
+  "label": "BattleFrontier_BattleFactoryPreBattleRoom_EventScript_EnterBattleRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_FACTORY_BATTLE_ROOM"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_PokemonSchool_Text_ExplainPoison",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "sha1": "155fc7f1cee833cb06df85a407e5f98f216a928e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "rawScript": ".string \"If a POK\u00e9MON is poisoned, it will\\n\"\n\t.string \"steadily lose HP.\\p\"\n\t.string \"The effects of poison remain after\\n\"\n\t.string \"a battle.\\p\"\n\t.string \"A poisoned POK\u00e9MON's HP will drop\\n\"\n\t.string \"while it is traveling.\\p\"\n\t.string \"Heal a poisoning using an ANTIDOTE.$\""
+  },
+  "label": "RustboroCity_PokemonSchool_Text_ExplainPoison",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+  "references": {}
+}

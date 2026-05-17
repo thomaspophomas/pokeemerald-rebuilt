@@ -1,0 +1,19 @@
+{
+  "id": "Route121_SafariZoneEntrance_Text_FirstTimeInfo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/safari_zone.inc",
+    "sha1": "435880c660a34d3e51dcedb348a41731d28af7cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/safari_zone.inc",
+    "rawScript": ".string \"When you enter the SAFARI ZONE, you\\n\"\n\t.string \"start with 30 SAFARI BALLS for\\l\"\n\t.string \"catching POK\u00e9MON.\\p\"\n\t.string \"The SAFARI Game is over when you run\\n\"\n\t.string \"out of SAFARI BALLS, or when you've\\l\"\n\t.string \"walked 500 steps.\\p\"\n\t.string \"Come in and enjoy the SAFARI ZONE!$\""
+  },
+  "label": "Route121_SafariZoneEntrance_Text_FirstTimeInfo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/safari_zone.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Route104_Text_MayWeShouldRegister",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104/scripts.inc",
+    "sha1": "10d25047426798be70cda2d9503387bbf8458d85"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104/scripts.inc",
+    "rawScript": ".string \"MAY: Oh, hi, {PLAYER}{KUN}!\\p\"\n\t.string \"DEVON upgraded your POK\u00e9NAV with\\n\"\n\t.string \"the MATCH CALL system, huh?\\p\"\n\t.string \"We should register each other so we\\n\"\n\t.string \"can get in contact anytime.$\""
+  },
+  "label": "Route104_Text_MayWeShouldRegister",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route104/scripts.inc",
+  "references": {}
+}

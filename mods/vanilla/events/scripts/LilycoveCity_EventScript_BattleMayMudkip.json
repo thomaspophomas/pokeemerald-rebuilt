@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_EventScript_BattleMayMudkip",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": "trainerbattle_no_intro TRAINER_MAY_LILYCOVE_MUDKIP, LilycoveCity_Text_MayDefeat\n\tgoto LilycoveCity_EventScript_DefeatedMay\n\tend"
+  },
+  "label": "LilycoveCity_EventScript_BattleMayMudkip",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_MAY_LILYCOVE_MUDKIP"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_EventScript_ChooseJohtoStarter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_PLAYER, LittlerootTown_ProfessorBirchsLab_Movement_PlayerEnterLabForJohtoStarter\n\twaitmovement 0\n\tmsgbox LittlerootTown_ProfessorBirchsLab_Text_CompletedDexChoosePokemon, MSGBOX_DEFAULT\n\tsetvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 5\n\treleaseall\n\tend"
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_EventScript_ChooseJohtoStarter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_DEX_UPGRADE_JOHTO_STARTER_STATE"
+    ]
+  }
+}

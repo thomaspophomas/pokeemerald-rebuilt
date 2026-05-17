@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_SomeoneStoleMyPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"I was taking a relaxing snooze at the\\n\"\n\t.string \"seaside inn to the sound of waves\u2026\\p\"\n\t.string \"When someone stole my POK\u00e9MON!\\p\"\n\t.string \"Who's the abductor?\\n\"\n\t.string \"TEAM AQUA? Is it TEAM AQUA?$\""
+  },
+  "label": "LilycoveCity_Text_SomeoneStoleMyPokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

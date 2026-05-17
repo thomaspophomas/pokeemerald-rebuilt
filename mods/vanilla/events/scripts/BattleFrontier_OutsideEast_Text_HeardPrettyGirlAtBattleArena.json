@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideEast_Text_HeardPrettyGirlAtBattleArena",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "sha1": "daab3e530c74c286237faa58f280f11ef97e663a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "rawScript": ".string \"It wasn't easy getting here,\\n\"\n\t.string \"but I'd heard about this knockout\\l\"\n\t.string \"pretty girl at the BATTLE ARENA.\\p\"\n\t.string \"Instead of her, do you know what\\n\"\n\t.string \"I found?\\p\"\n\t.string \"A whole teeming mob of sweaty,\\n\"\n\t.string \"stinky, and primitive martial artists!$\""
+  },
+  "label": "BattleFrontier_OutsideEast_Text_HeardPrettyGirlAtBattleArena",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+  "references": {}
+}

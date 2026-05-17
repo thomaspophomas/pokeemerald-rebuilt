@@ -1,0 +1,19 @@
+{
+  "id": "Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+    "sha1": "1685496df25ec35fb97de14e44b3ea41b1d1c6db"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+    "rawScript": ".string \"MR. BRINEY: Ahoy!\\n\"\n\t.string \"I know exactly what you want to say!\\p\"\n\t.string \"You're to deliver a package to\\n\"\n\t.string \"CAPT. STERN in SLATEPORT.\\p\"\n\t.string \"What you need me to do is no problem\\n\"\n\t.string \"at all--I'm the man for the job!\\p\"\n\t.string \"First, we'll set sail for DEWFORD.$\""
+  },
+  "label": "Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+  "references": {}
+}

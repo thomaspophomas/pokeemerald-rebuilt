@@ -1,0 +1,29 @@
+{
+  "id": "VerdanturfTown_BattleTentLobby_EventScript_AttractGiver",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "sha1": "be67ab8ba625b73e575c1594a46cbee43b6f03d9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_TM_ATTRACT, VerdanturfTown_BattleTentLobby_EventScript_ReceivedAttract\n\tmsgbox VerdanturfTown_BattleTentLobby_Text_AttractionRunsDeep, MSGBOX_DEFAULT\n\tgiveitem ITEM_TM_ATTRACT\n\tgoto_if_eq VAR_RESULT, 0, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_RECEIVED_TM_ATTRACT\n\tmsgbox VerdanturfTown_BattleTentLobby_Text_AttractionMutual, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "VerdanturfTown_BattleTentLobby_EventScript_AttractGiver",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_TM_ATTRACT"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_TM_ATTRACT"
+    ]
+  }
+}

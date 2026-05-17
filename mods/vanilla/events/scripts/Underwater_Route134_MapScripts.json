@@ -1,0 +1,23 @@
+{
+  "id": "Underwater_Route134_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_Route134/scripts.inc",
+    "sha1": "420c813cc45f373da1d5f4076b3c9c2cb5164c6e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Underwater_Route134/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, Underwater_Route134_OnResume\n\t.byte 0"
+  },
+  "label": "Underwater_Route134_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Underwater_Route134/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_RESUME"
+    ]
+  }
+}

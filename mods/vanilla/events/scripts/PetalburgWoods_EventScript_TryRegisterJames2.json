@@ -1,0 +1,23 @@
+{
+  "id": "PetalburgWoods_EventScript_TryRegisterJames2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/scripts.inc",
+    "sha1": "a7a3b49731f97088b328145805430d4429326ec8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgWoods/scripts.inc",
+    "rawScript": "goto_if_set FLAG_HAS_MATCH_CALL, PetalburgWoods_EventScript_RegisterJames2\n\tmsgbox PetalburgWoods_Text_PeopleRespectYou, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "PetalburgWoods_EventScript_TryRegisterJames2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgWoods/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HAS_MATCH_CALL"
+    ]
+  }
+}

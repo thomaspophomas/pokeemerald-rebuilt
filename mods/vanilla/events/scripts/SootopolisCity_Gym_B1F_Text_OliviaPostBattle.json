@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Gym_B1F_Text_OliviaPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+    "sha1": "e71da18f579da173413d5f8c5027d9e9c4f14d20"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+    "rawScript": ".string \"I think you have potential.\\n\"\n\t.string \"Why don't you stay and train with us?$\""
+  },
+  "label": "SootopolisCity_Gym_B1F_Text_OliviaPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+  "references": {}
+}

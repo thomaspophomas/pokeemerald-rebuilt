@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_TurnOffTV",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/tv.inc",
+    "sha1": "6710fec48cce1bb3d0ce8ab17e9e9756f367ca71"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/tv.inc",
+    "rawScript": "special TurnOffTVScreen\n\tsetflag FLAG_SYS_TV_WATCH\n\treleaseall\n\tend"
+  },
+  "label": "EventScript_TurnOffTV",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/tv.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_TV_WATCH"
+    ]
+  }
+}

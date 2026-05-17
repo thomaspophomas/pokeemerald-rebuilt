@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_GameCorner_EventScript_NoRoomForDoll",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "sha1": "3db7cd216c9a2c35e8176ef8b4a1d9ec68649c7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "rawScript": "call Common_EventScript_NoRoomForDecor\n\tgoto MauvilleCity_GameCorner_EventScript_ReturnToChooseDollPrize\n\tend"
+  },
+  "label": "MauvilleCity_GameCorner_EventScript_NoRoomForDoll",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+  "references": {}
+}

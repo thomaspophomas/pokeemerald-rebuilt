@@ -1,0 +1,27 @@
+{
+  "id": "RivalsHouse_1F_EventScript_RivalMom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+    "sha1": "4acc9bd3dce8266e27759616e41b13205491adc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_DEFEATED_RIVAL_ROUTE103, RivalsHouse_1F_EventScript_GoHomeEverySoOften\n\tgoto_if_set FLAG_SYS_POKEMON_GET, RivalsHouse_1F_EventScript_RivalIsOnRoute103\n\tgoto_if_eq VAR_LITTLEROOT_RIVAL_STATE, 3, RivalsHouse_1F_EventScript_RivalTooBusy\n\tspecial GetRivalSonDaughterString\n\tmsgbox RivalsHouse_1F_Text_LikeChildLikeFather, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "RivalsHouse_1F_EventScript_RivalMom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_RIVAL_ROUTE103",
+      "FLAG_SYS_POKEMON_GET"
+    ],
+    "vars": [
+      "VAR_LITTLEROOT_RIVAL_STATE"
+    ]
+  }
+}

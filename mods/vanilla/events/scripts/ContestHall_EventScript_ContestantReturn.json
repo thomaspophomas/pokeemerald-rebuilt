@@ -1,0 +1,19 @@
+{
+  "id": "ContestHall_EventScript_ContestantReturn",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": "closemessage\n\trelease\n\tremoveobject LOCALID_CONTEST_POKEBALL\n\tspecial HideContestEntryMonPic\n\tcall ContestHall_EventScript_TryWaitForLink\n\tswitch VAR_0x8006\n\tcase 0, ContestHall_EventScript_Player1WalkBack\n\tcase 1, ContestHall_EventScript_Player2WalkBack\n\tcase 2, ContestHall_EventScript_Player3WalkBack\n\tcase 3, ContestHall_EventScript_Player4WalkBack\n\treturn"
+  },
+  "label": "ContestHall_EventScript_ContestantReturn",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {}
+}

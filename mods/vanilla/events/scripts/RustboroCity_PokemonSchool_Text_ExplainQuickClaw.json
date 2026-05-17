@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_PokemonSchool_Text_ExplainQuickClaw",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "sha1": "155fc7f1cee833cb06df85a407e5f98f216a928e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "rawScript": ".string \"A POK\u00e9MON holding the QUICK CLAW will\\n\"\n\t.string \"occasionally speed up and get to move\\l\"\n\t.string \"before its opponent.\\p\"\n\t.string \"There are many other items that are\\n\"\n\t.string \"meant to be held by POK\u00e9MON.\\p\"\n\t.string \"Just those alone will give you many\\n\"\n\t.string \"topics to study!$\""
+  },
+  "label": "RustboroCity_PokemonSchool_Text_ExplainQuickClaw",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+  "references": {}
+}

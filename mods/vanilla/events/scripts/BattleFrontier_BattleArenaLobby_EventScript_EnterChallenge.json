@@ -1,0 +1,27 @@
+{
+  "id": "BattleFrontier_BattleArenaLobby_EventScript_EnterChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "sha1": "9504bb75bdf62b80271e2304b4804044c8db502a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "rawScript": "special SavePlayerParty\n\tfrontier_setpartyorder FRONTIER_PARTY_SIZE\n\tmsgbox BattleFrontier_BattleArenaLobby_Text_GuideYouToArena, MSGBOX_DEFAULT\n\tclosemessage\n\tfrontier_get FRONTIER_DATA_LVL_MODE\n\tcall_if_eq VAR_RESULT, FRONTIER_LVL_50, BattleFrontier_BattleArenaLobby_EventScript_WalkToDoorLv50\n\tcall_if_eq VAR_RESULT, FRONTIER_LVL_OPEN, BattleFrontier_BattleArenaLobby_EventScript_WalkToDoorLvOpen\n\twarp MAP_BATTLE_FRONTIER_BATTLE_ARENA_CORRIDOR, 9, 13\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 0\n\twaitstate\n\tend"
+  },
+  "label": "BattleFrontier_BattleArenaLobby_EventScript_EnterChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_ARENA_CORRIDOR"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_BerkeIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"I'm not going to take it easy just\\n\"\n\t.string \"because you're our LEADER's kid.\\p\"\n\t.string \"I'll show you how horrid it is for\\n\"\n\t.string \"a POK\u00e9MON to take a critical hit!$\""
+  },
+  "label": "PetalburgCity_Gym_Text_BerkeIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

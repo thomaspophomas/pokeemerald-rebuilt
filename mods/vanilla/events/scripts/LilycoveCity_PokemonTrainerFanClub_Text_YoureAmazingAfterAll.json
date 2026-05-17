@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_Text_YoureAmazingAfterAll",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": ".string \"{PLAYER}!\\n\"\n\t.string \"You are amazing after all!\\p\"\n\t.string \"Ever since I set eyes on you,\\n\"\n\t.string \"I knew that you were great.\\p\"\n\t.string \"It looks like my eyes didn't deceive me.$\""
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_Text_YoureAmazingAfterAll",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {}
+}

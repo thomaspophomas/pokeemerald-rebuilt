@@ -1,0 +1,23 @@
+{
+  "id": "JaggedPass_EventScript_OpenMagmaHideout",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/JaggedPass/scripts.inc",
+    "sha1": "3539aca2d309baaf0b57344f9c2014b5d896c94b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/JaggedPass/scripts.inc",
+    "rawScript": "lockall\n\tsetvar VAR_0x8004, 1  @ vertical pan\n\tsetvar VAR_0x8005, 1  @ horizontal pan\n\tsetvar VAR_0x8006, 8  @ num shakes\n\tsetvar VAR_0x8007, 5  @ shake delay\n\tspecial ShakeCamera\n\twaitstate\n\tmsgbox JaggedPass_Text_BoulderShakingInResponseToEmblem, MSGBOX_DEFAULT\n\tclosemessage\n\tsetvar VAR_0x8004, 1   @ vertical pan\n\tsetvar VAR_0x8005, 1   @ horizontal pan\n\tsetvar VAR_0x8006, 16  @ num shakes\n\tsetvar VAR_0x8007, 3   @ shake delay\n\tspecial ShakeCamera\n\twaitstate\n\tplayse SE_EFFECTIVE\n\tsetmetatile 16, 17, METATILE_Lavaridge_CaveEntrance_Top, TRUE\n\tsetmetatile 16, 18, METATILE_Lavaridge_CaveEntrance_Bottom, FALSE\n\tspecial DrawWholeMapView\n\tdelay 30\n\tsetvar VAR_JAGGED_PASS_STATE, 2\n\twaitse\n\treleaseall\n\tend"
+  },
+  "label": "JaggedPass_EventScript_OpenMagmaHideout",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/JaggedPass/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_JAGGED_PASS_STATE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Room9/scripts.inc",
+    "sha1": "fb74c5efd7ca988ee5566425c585ce3e165249e8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SeafloorCavern_Room9/scripts.inc",
+    "rawScript": ".string \"MAXIE: We don't have the time to\\n\"\n\t.string \"argue about it here!\\p\"\n\t.string \"Get outside and see for yourself!\\p\"\n\t.string \"See if what you've wrought is the\\n\"\n\t.string \"world that we desired!$\""
+  },
+  "label": "SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SeafloorCavern_Room9/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,27 @@
+{
+  "id": "Route119_WeatherInstitute_2F_EventScript_ReceiveCastform",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "sha1": "fb62e5a84003aa6247f1e7fe6ea409ec86ac92cc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "rawScript": "msgbox Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon, MSGBOX_DEFAULT\n\tsetvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CASTFORM\n\tgivemon SPECIES_CASTFORM, 25, ITEM_MYSTIC_WATER\n\tgoto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Route119_WeatherInstitute_2F_EventScript_ReceiveCastformParty\n\tgoto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Route119_WeatherInstitute_2F_EventScript_ReceiveCastformPC\n\tgoto Common_EventScript_NoMoreRoomForPokemon\n\tend"
+  },
+  "label": "Route119_WeatherInstitute_2F_EventScript_ReceiveCastform",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_TRANSFERRED_SPECIES"
+    ],
+    "items": [
+      "ITEM_MYSTIC_WATER"
+    ]
+  }
+}

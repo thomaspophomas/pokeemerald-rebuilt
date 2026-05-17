@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Mart/scripts.inc",
+    "sha1": "064cba37df0c93452bb5e6cc75752460d861c58d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Mart/scripts.inc",
+    "rawScript": ".string \"I'm buying some PARLYZ HEALS and\\n\"\n\t.string \"ANTIDOTES.\\p\"\n\t.string \"Just in case I run into SHROOMISH\\n\"\n\t.string \"in PETALBURG WOODS.$\""
+  },
+  "label": "RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Mart/scripts.inc",
+  "references": {}
+}

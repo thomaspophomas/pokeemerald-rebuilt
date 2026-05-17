@@ -1,0 +1,27 @@
+{
+  "id": "LilycoveCity_Harbor_EventScript_FerryAttendant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "sha1": "ffd83f00915b03bfdd96f51950251d00dd19dbcb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_unset FLAG_SYS_GAME_CLEAR, LilycoveCity_Harbor_EventScript_FerryUnavailable\n\tcall LilycoveCity_Harbor_EventScript_GetEonTicketState\n\tcall LilycoveCity_Harbor_EventScript_GetAuroraTicketState\n\tcall LilycoveCity_Harbor_EventScript_GetOldSeaMapState\n\tcall LilycoveCity_Harbor_EventScript_GetMysticTicketState\n\tcall LilycoveCity_Harbor_EventScript_GetFirstTimeShowingTicket\n\tcall LilycoveCity_Harbor_EventScript_GetHasTicketsState\n\tgoto_if_eq VAR_TEMP_C, 2, LilycoveCity_Harbor_EventScript_OldSeaMapFirstTime\n\tgoto_if_eq VAR_TEMP_B, 1, LilycoveCity_Harbor_EventScript_EonTicketFirstTime\n\tgoto_if_eq VAR_TEMP_B, 2, LilycoveCity_Harbor_EventScript_AuroraTicketFirstTime\n\tgoto_if_eq VAR_TEMP_B, 4, LilycoveCity_Harbor_EventScript_OldSeaMapFirstTime\n\tgoto_if_eq VAR_TEMP_B, 8, LilycoveCity_Harbor_EventScript_MysticTicketFirstTime\n\tgoto_if_ne VAR_TEMP_B, 0, LilycoveCity_Harbor_EventScript_MultipleEventTicketsFirstTime\n\tgoto LilycoveCity_Harbor_EventScript_NoFirstTimeEventTickets\n\tend\n\n@ First goto_if_eq is unnecessary; identical scripts"
+  },
+  "label": "LilycoveCity_Harbor_EventScript_FerryAttendant",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_Harbor/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_GAME_CLEAR"
+    ],
+    "vars": [
+      "VAR_TEMP_B",
+      "VAR_TEMP_C"
+    ]
+  }
+}

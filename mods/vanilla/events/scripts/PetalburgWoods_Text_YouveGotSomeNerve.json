@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgWoods_Text_YouveGotSomeNerve",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/scripts.inc",
+    "sha1": "a7a3b49731f97088b328145805430d4429326ec8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgWoods/scripts.inc",
+    "rawScript": ".string \"Grrr\u2026 You've got some nerve\\n\"\n\t.string \"meddling with TEAM AQUA!\\l\"\n\t.string \"Come on and battle me again!\\p\"\n\t.string \"I wish I could say that, but I'm out of\\n\"\n\t.string \"POK\u00e9MON\u2026\\p\"\n\t.string \"And, hey, we of TEAM AQUA are also\\n\"\n\t.string \"after something in RUSTBORO.\\p\"\n\t.string \"I'll let you go today!$\""
+  },
+  "label": "PetalburgWoods_Text_YouveGotSomeNerve",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgWoods/scripts.inc",
+  "references": {}
+}

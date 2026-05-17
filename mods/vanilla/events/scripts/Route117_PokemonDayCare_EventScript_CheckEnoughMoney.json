@@ -1,0 +1,23 @@
+{
+  "id": "Route117_PokemonDayCare_EventScript_CheckEnoughMoney",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/day_care.inc",
+    "sha1": "b807399ab522de3ba938194e85f890a343362752"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/day_care.inc",
+    "rawScript": "specialvar VAR_RESULT, IsEnoughForCostInVar0x8005\n\tgoto_if_eq VAR_RESULT, 1, Route117_PokemonDayCare_EventScript_RetrieveMon\n\tmsgbox Route117_PokemonDayCare_Text_NotEnoughMoney, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route117_PokemonDayCare_EventScript_CheckEnoughMoney",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/day_care.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_House3_Text_OhYouHavePokedex",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_House3/scripts.inc",
+    "sha1": "fe50a1e51aebeba4e95bf2a1358a8b22a12445d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_House3/scripts.inc",
+    "rawScript": ".string \"What's that thing you have there?\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"Oh, it's called a POK\u00e9DEX?\\n\"\n\t.string \"It's really awesome!$\""
+  },
+  "label": "FortreeCity_House3_Text_OhYouHavePokedex",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_House3/scripts.inc",
+  "references": {}
+}

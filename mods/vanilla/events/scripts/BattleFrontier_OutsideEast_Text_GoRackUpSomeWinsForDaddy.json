@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideEast_Text_GoRackUpSomeWinsForDaddy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "sha1": "daab3e530c74c286237faa58f280f11ef97e663a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "rawScript": ".string \"Go on, my baby sweetie!\\n\"\n\t.string \"Go rack up some wins for Daddy!\\p\"\n\t.string \"You're just like your mother,\\n\"\n\t.string \"so you'll be dominating!$\""
+  },
+  "label": "BattleFrontier_OutsideEast_Text_GoRackUpSomeWinsForDaddy",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+  "references": {}
+}

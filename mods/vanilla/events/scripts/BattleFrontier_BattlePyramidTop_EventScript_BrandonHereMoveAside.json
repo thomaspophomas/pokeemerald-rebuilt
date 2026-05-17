@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePyramidTop_EventScript_BrandonHereMoveAside",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "sha1": "6256c29eca306dafcaec0dabbacc64547c474e58"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattlePyramidTop_Text_ChiefBeatYouHere, MSGBOX_DEFAULT\n\tapplymovement LOCALID_PYRAMID_TOP_ATTENDANT, BattleFrontier_BattlePyramidTop_Movement_AttendantMoveAside\n\tsetvar VAR_TEMP_D, 1\n\tclosemessage\n\tend"
+  },
+  "label": "BattleFrontier_BattlePyramidTop_EventScript_BrandonHereMoveAside",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_D"
+    ]
+  }
+}

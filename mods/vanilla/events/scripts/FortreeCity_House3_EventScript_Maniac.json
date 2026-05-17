@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_House3_EventScript_Maniac",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_House3/scripts.inc",
+    "sha1": "fe50a1e51aebeba4e95bf2a1358a8b22a12445d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_House3/scripts.inc",
+    "rawScript": "msgbox FortreeCity_House3_Text_MetStevenHadAmazingPokemon, MSGBOX_NPC\n\tend"
+  },
+  "label": "FortreeCity_House3_EventScript_Maniac",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FortreeCity_House3/scripts.inc",
+  "references": {}
+}

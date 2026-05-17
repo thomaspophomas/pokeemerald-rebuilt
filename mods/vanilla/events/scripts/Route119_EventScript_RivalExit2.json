@@ -1,0 +1,19 @@
+{
+  "id": "Route119_EventScript_RivalExit2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119/scripts.inc",
+    "sha1": "576fe3fab09726df20b1bbf3016bc5306f0e0f3d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119/scripts.inc",
+    "rawScript": "applymovement LOCALID_PLAYER, Route119_Movement_PlayerWatchRivalExit2\n\tapplymovement LOCALID_ROUTE119_RIVAL_ON_BIKE, Route119_Movement_RivalExit2\n\twaitmovement 0\n\treturn"
+  },
+  "label": "Route119_EventScript_RivalExit2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route119/scripts.inc",
+  "references": {}
+}

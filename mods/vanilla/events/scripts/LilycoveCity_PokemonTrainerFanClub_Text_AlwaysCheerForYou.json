@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_Text_AlwaysCheerForYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": ".string \"I'll always cheer for you, {PLAYER}!\\n\"\n\t.string \"Always, always!\\p\"\n\t.string \"I don't want to see you lose ever,\\n\"\n\t.string \"{PLAYER}.\\p\"\n\t.string \"Because I know you're really,\\n\"\n\t.string \"really strong, {PLAYER}!$\""
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_Text_AlwaysCheerForYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {}
+}

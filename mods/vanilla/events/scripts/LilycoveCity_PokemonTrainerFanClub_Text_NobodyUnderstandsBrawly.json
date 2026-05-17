@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_Text_NobodyUnderstandsBrawly",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": ".string \"Nobody understands the charm of\\n\"\n\t.string \"BRAWLY\u2026\\p\"\n\t.string \"I don't care!\\p\"\n\t.string \"Even if I'm the only one, I'm going\\n\"\n\t.string \"to keep cheering for BRAWLY!$\""
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_Text_NobodyUnderstandsBrawly",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {}
+}

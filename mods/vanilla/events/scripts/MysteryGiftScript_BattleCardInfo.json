@@ -1,0 +1,19 @@
+{
+  "id": "MysteryGiftScript_BattleCardInfo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_battle_card.inc",
+    "sha1": "5c337e1d015559dcfd7443dbb3c08146005fa127"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_battle_card.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tvmessage sText_MysteryGiftBattleCountCard\n\twaitmessage\n\twaitbuttonpress\n\trelease\n\tend"
+  },
+  "label": "MysteryGiftScript_BattleCardInfo",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_battle_card.inc",
+  "references": {}
+}

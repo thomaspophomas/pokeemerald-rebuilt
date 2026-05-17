@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideEast_Text_FastOnBikeAndBattles",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "sha1": "daab3e530c74c286237faa58f280f11ef97e663a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "rawScript": ".string \"I'm fast on my BIKE, and that goes for\\n\"\n\t.string \"the way I battle, too.\\p\"\n\t.string \"I win matches in the blink of\\n\"\n\t.string \"an eye!$\""
+  },
+  "label": "BattleFrontier_OutsideEast_Text_FastOnBikeAndBattles",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+  "references": {}
+}

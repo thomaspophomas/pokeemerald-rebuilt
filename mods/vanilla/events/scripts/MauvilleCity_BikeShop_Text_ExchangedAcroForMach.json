@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_BikeShop_Text_ExchangedAcroForMach",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "sha1": "31396febb84a2b48608ca32d5a0dd0de865faf26"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "rawScript": ".string \"{PLAYER} got the ACRO BIKE exchanged\\n\"\n\t.string \"for a MACH BIKE.$\""
+  },
+  "label": "MauvilleCity_BikeShop_Text_ExchangedAcroForMach",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+  "references": {}
+}

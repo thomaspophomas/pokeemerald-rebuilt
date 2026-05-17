@@ -1,0 +1,24 @@
+{
+  "id": "InsideOfTruck_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/InsideOfTruck/scripts.inc",
+    "sha1": "4a49579e348e8a2c251edbaf7a3418e83b642424"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/InsideOfTruck/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_LOAD, InsideOfTruck_OnLoad\n\tmap_script MAP_SCRIPT_ON_RESUME, InsideOfTruck_OnResume\n\t.byte 0"
+  },
+  "label": "InsideOfTruck_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/InsideOfTruck/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_RESUME"
+    ]
+  }
+}

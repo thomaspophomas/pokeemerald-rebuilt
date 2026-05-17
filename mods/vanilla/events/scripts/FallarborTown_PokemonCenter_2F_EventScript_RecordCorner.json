@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_PokemonCenter_2F_EventScript_RecordCorner",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_PokemonCenter_2F/scripts.inc",
+    "sha1": "6c8019ee0b3cbe90be8b11ec27a91301cfdc0a6d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_PokemonCenter_2F/scripts.inc",
+    "rawScript": "call CableClub_EventScript_RecordCorner\n\tend"
+  },
+  "label": "FallarborTown_PokemonCenter_2F_EventScript_RecordCorner",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_PokemonCenter_2F/scripts.inc",
+  "references": {}
+}

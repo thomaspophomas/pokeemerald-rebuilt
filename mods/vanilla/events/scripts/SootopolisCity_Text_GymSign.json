@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Text_GymSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": ".string \"SOOTOPOLIS CITY POK\u00e9MON GYM\\n\"\n\t.string \"LEADER: JUAN\\p\"\n\t.string \"\u201cThe GYM LEADER with the beauty\\n\"\n\t.string \"of pure water!\u201d$\""
+  },
+  "label": "SootopolisCity_Text_GymSign",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

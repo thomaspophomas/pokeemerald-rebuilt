@@ -1,0 +1,24 @@
+{
+  "id": "LittlerootTown_BrendansHouse_2F_EventScript_TryUpdateBrendanPos",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+    "sha1": "e2d021d5a56c7a155294e7f5fcba3be133f71b33"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+    "rawScript": "checkplayergender\n\tgoto_if_eq VAR_RESULT, MALE, LittlerootTown_BrendansHouse_2F_EventScript_Ret\n\t@ Odd that the MaysHouse equivalent was used below instead\n\tgoto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_MaysHouse_2F_EventScript_Ret\n\tsetobjectxyperm LOCALID_RIVALS_HOUSE_2F_RIVAL, 0, 2\n\tsetobjectmovementtype LOCALID_RIVALS_HOUSE_2F_RIVAL, MOVEMENT_TYPE_FACE_UP\n\treturn"
+  },
+  "label": "LittlerootTown_BrendansHouse_2F_EventScript_TryUpdateBrendanPos",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_DEX_UPGRADE_JOHTO_STARTER_STATE",
+      "VAR_RESULT"
+    ]
+  }
+}

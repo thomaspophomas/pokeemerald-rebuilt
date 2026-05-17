@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_PokemonSchool_EventScript_StudentNotebook",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "sha1": "155fc7f1cee833cb06df85a407e5f98f216a928e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "rawScript": "msgbox RustboroCity_PokemonSchool_Text_StudentsNotes, MSGBOX_SIGN\n\tend"
+  },
+  "label": "RustboroCity_PokemonSchool_EventScript_StudentNotebook",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_NormanGoToDewford",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"DAD: I see\u2026 So, you've beaten\\n\"\n\t.string \"the GYM LEADER in RUSTBORO CITY.\\p\"\n\t.string \"But there are many more TRAINERS\\n\"\n\t.string \"who are stronger than you, {PLAYER}.\\p\"\n\t.string \"Across the sea in DEWFORD TOWN is a\\n\"\n\t.string \"GYM LEADER named BRAWLY.\\p\"\n\t.string \"You should go challenge him.$\""
+  },
+  "label": "PetalburgCity_Gym_Text_NormanGoToDewford",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+    "sha1": "bce61defe394f3175dd583157b086f1687d0ac6f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+    "rawScript": ".string \"{STR_VAR_1}.\\n\"\n\t.string \"{STR_VAR_1}.\\p\"\n\t.string \"Hmmm\u2026 She's not smiling at all.\\n\"\n\t.string \"Maybe WALDA is one serious child\u2026$\""
+  },
+  "label": "RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll2",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+  "references": {}
+}

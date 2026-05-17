@@ -1,0 +1,23 @@
+{
+  "id": "FallarborTown_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown/scripts.inc",
+    "sha1": "5eb275ca170342d9d6f005ad109dd88d1bf829e1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, FallarborTown_OnTransition\n\t.byte 0"
+  },
+  "label": "FallarborTown_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/FallarborTown/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

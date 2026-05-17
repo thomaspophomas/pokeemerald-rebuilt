@@ -1,0 +1,19 @@
+{
+  "id": "RivalsHouse_2F_Text_BrendanWhereShouldIGoNext",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "sha1": "e014a444dcf389c78773768633900402b1862edb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "rawScript": ".string \"BRENDAN: I'm having a hard time deciding\\n\"\n\t.string \"where I should catch POK\u00e9MON next.\\p\"\n\t.string \"Hey, {PLAYER}, if I see you while I'm out\\n\"\n\t.string \"catching POK\u00e9MON, I can pitch you a\\l\"\n\t.string \"battle if you'd like.$\""
+  },
+  "label": "RivalsHouse_2F_Text_BrendanWhereShouldIGoNext",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "EverGrandeCity_PokemonCenter_1F_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "012038458957d746c6cb9c71ce265a9faf173fe8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": "setrespawn HEAL_LOCATION_EVER_GRANDE_CITY\n\tcall_if_unset FLAG_MET_SCOTT_IN_EVERGRANDE, EverGrandeCity_PokemonCenter_1F_EventScript_TryShowScott\n\tend"
+  },
+  "label": "EverGrandeCity_PokemonCenter_1F_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_SCOTT_IN_EVERGRANDE"
+    ]
+  }
+}

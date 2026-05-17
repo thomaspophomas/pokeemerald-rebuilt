@@ -1,0 +1,24 @@
+{
+  "id": "Underwater_SeafloorCavern_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_SeafloorCavern/scripts.inc",
+    "sha1": "0161920db8325168fff9945e78faf08193f0bc50"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Underwater_SeafloorCavern/scripts.inc",
+    "rawScript": "setflag FLAG_LANDMARK_SEAFLOOR_CAVERN\n\tgoto_if_set FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, Underwater_SeafloorCavern_EventScript_HideSubmarine\n\tend"
+  },
+  "label": "Underwater_SeafloorCavern_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Underwater_SeafloorCavern/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN",
+      "FLAG_LANDMARK_SEAFLOOR_CAVERN"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiCorridor_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiCorridor/scripts.inc",
+    "sha1": "cd76ae7932d793ea3d83f2ba21546149e29084cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiCorridor/scripts.inc",
+    "rawScript": "call_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_MULTIS, BattleFrontier_BattleTowerMultiCorridor_EventScript_SetObjGfx\n\tcall_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_LINK_MULTIS, BattleFrontier_BattleTowerMultiCorridor_EventScript_SetLinkPlayerGfx\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerMultiCorridor_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiCorridor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FRONTIER_BATTLE_MODE"
+    ]
+  }
+}

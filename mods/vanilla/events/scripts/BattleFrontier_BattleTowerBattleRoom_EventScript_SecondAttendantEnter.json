@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerBattleRoom_EventScript_SecondAttendantEnter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "sha1": "09b678d8717203a622b1d8714d904bcdeb37d08a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "rawScript": "applymovement LOCALID_TOWER_BATTLE_ATTENDANT_2, BattleFrontier_BattleTowerBattleRoom_Movement_SecondAttendantEnter\n\twaitmovement 0\n\tapplymovement LOCALID_TOWER_BATTLE_ATTENDANT_2, Common_Movement_WalkInPlaceLeft\n\twaitmovement 0\n\tplayse SE_PIN\n\tapplymovement LOCALID_TOWER_BATTLE_ATTENDANT_1, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_TOWER_BATTLE_ATTENDANT_1, Common_Movement_Delay48\n\twaitmovement 0\n\tapplymovement LOCALID_TOWER_BATTLE_ATTENDANT_2, BattleFrontier_BattleTowerBattleRoom_Movement_SecondAttendantDelay\n\tapplymovement LOCALID_TOWER_BATTLE_ATTENDANT_1, BattleFrontier_BattleTowerBattleRoom_Movement_AttendantFaceSecondAttendant\n\twaitmovement 0\n\tapplymovement LOCALID_TOWER_BATTLE_ATTENDANT_2, BattleFrontier_BattleTowerBattleRoom_Movement_SecondAttendantExit\n\twaitmovement 0\n\treturn"
+  },
+  "label": "BattleFrontier_BattleTowerBattleRoom_EventScript_SecondAttendantEnter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+  "references": {}
+}

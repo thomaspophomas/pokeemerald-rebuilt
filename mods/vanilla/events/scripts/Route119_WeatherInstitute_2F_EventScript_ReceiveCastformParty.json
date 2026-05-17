@@ -1,0 +1,23 @@
+{
+  "id": "Route119_WeatherInstitute_2F_EventScript_ReceiveCastformParty",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "sha1": "fb62e5a84003aa6247f1e7fe6ea409ec86ac92cc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "rawScript": "call Route119_WeatherInstitute_2F_EventScript_ReceivedCastformFanfare\n\tmsgbox gText_NicknameThisPokemon, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, Route119_WeatherInstitute_2F_EventScript_ExplainCastform\n\tcall Common_EventScript_GetGiftMonPartySlot\n\tcall Common_EventScript_NameReceivedPartyMon\n\tgoto Route119_WeatherInstitute_2F_EventScript_ExplainCastform\n\tend"
+  },
+  "label": "Route119_WeatherInstitute_2F_EventScript_ReceiveCastformParty",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

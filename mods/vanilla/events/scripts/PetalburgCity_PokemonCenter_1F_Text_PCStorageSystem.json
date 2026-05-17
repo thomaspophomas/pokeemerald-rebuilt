@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "3355898078ce7d23572c68766ca5af49d35de75d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"That PC-based POK\u00e9MON Storage\\n\"\n\t.string \"System\u2026\\p\"\n\t.string \"Whoever made it must be some kind\\n\"\n\t.string \"of a scientific wizard!$\""
+  },
+  "label": "PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

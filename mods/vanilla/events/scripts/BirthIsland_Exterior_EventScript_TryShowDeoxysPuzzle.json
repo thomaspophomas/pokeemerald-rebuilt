@@ -1,0 +1,25 @@
+{
+  "id": "BirthIsland_Exterior_EventScript_TryShowDeoxysPuzzle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BirthIsland_Exterior/scripts.inc",
+    "sha1": "1e5973feb9102d3690432e451cddaf05cc140d76"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BirthIsland_Exterior/scripts.inc",
+    "rawScript": "goto_if_set FLAG_DEFEATED_DEOXYS, Common_EventScript_NopReturn\n\tclearflag FLAG_HIDE_BIRTH_ISLAND_DEOXYS_TRIANGLE\n\tclearflag FLAG_DEOXYS_ROCK_COMPLETE\n\treturn"
+  },
+  "label": "BirthIsland_Exterior_EventScript_TryShowDeoxysPuzzle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BirthIsland_Exterior/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_DEOXYS",
+      "FLAG_DEOXYS_ROCK_COMPLETE",
+      "FLAG_HIDE_BIRTH_ISLAND_DEOXYS_TRIANGLE"
+    ]
+  }
+}

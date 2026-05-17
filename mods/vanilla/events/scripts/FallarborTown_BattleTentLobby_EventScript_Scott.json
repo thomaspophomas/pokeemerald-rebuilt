@@ -1,0 +1,26 @@
+{
+  "id": "FallarborTown_BattleTentLobby_EventScript_Scott",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "sha1": "007b5945200863133fd43941054ec8db085a0356"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_MET_SCOTT_IN_FALLARBOR, FallarborTown_BattleTentLobby_EventScript_ScottAlreadySpokenTo\n\tmsgbox FallarborTown_BattleTentLobby_Text_ScottLookingForSomeone, MSGBOX_DEFAULT\n\taddvar VAR_SCOTT_STATE, 1\n\tsetflag FLAG_MET_SCOTT_IN_FALLARBOR\n\trelease\n\tend"
+  },
+  "label": "FallarborTown_BattleTentLobby_EventScript_Scott",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_SCOTT_IN_FALLARBOR"
+    ],
+    "vars": [
+      "VAR_SCOTT_STATE"
+    ]
+  }
+}

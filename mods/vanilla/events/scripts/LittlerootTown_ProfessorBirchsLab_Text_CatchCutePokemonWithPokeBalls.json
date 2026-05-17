@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Text_CatchCutePokemonWithPokeBalls",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": ".string \"MAY: It's fun if you can get a lot of\\n\"\n\t.string \"POK\u00e9MON!\\p\"\n\t.string \"I'm going to look all over the place\\n\"\n\t.string \"because I want different POK\u00e9MON.\\p\"\n\t.string \"If I find any cute POK\u00e9MON, I'll catch\\n\"\n\t.string \"them with POK\u00e9 BALLS!$\""
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Text_CatchCutePokemonWithPokeBalls",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

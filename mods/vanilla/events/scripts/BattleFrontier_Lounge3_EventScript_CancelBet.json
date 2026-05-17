@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge3_EventScript_CancelBet",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "sha1": "52169856e2442e0e7ad660050a45dce1a1b2405a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "rawScript": "special CloseBattlePointsWindow\n\tgoto BattleFrontier_Lounge3_EventScript_DeclineChallenge\n\tend"
+  },
+  "label": "BattleFrontier_Lounge3_EventScript_CancelBet",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+  "references": {}
+}

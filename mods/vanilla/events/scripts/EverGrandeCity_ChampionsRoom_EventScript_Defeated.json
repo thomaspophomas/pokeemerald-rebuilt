@@ -1,0 +1,23 @@
+{
+  "id": "EverGrandeCity_ChampionsRoom_EventScript_Defeated",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "sha1": "4f73bd77d8715e7ac12ff1ac731985eaf75ecd5e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "rawScript": "playse SE_DOOR\n\tsetmetatile 6, 1, METATILE_EliteFour_OpenDoorChampion_Frame, FALSE\n\tsetmetatile 6, 2, METATILE_EliteFour_OpenDoorChampion_Opening, FALSE\n\tspecial DrawWholeMapView\n\tmsgbox EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT\n\tclosemessage\n\tplayse SE_DOOR\n\tcheckplayergender\n\tcall_if_eq VAR_RESULT, MALE, EverGrandeCity_ChampionsRoom_EventScript_PlayMayMusic\n\tcall_if_eq VAR_RESULT, FEMALE, EverGrandeCity_ChampionsRoom_EventScript_PlayBrendanMusic\n\taddobject LOCALID_CHAMPIONS_ROOM_RIVAL\n\tcall EverGrandeCity_ChampionsRoom_EventScript_RivalApproachPlayer\n\tcheckplayergender\n\tgoto_if_eq VAR_RESULT, MALE, EverGrandeCity_ChampionsRoom_EventScript_MayAdvice\n\tgoto_if_eq VAR_RESULT, FEMALE, EverGrandeCity_ChampionsRoom_EventScript_BrendanAdvice\n\tend"
+  },
+  "label": "EverGrandeCity_ChampionsRoom_EventScript_Defeated",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

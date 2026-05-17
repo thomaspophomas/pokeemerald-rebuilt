@@ -1,0 +1,28 @@
+{
+  "id": "Route110_TrickHouseEntrance_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "sha1": "9367efc136143832c1697fbcc61fbb296269d396"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, Route110_TrickHouseEntrance_OnTransition\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, Route110_TrickHouseEntrance_OnFrame\n\tmap_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, Route110_TrickHouseEntrance_OnWarp\n\t.byte 0\n\n\t@ State descriptions for VAR_TRICK_HOUSE_ENTRANCE_STATE\n\t@ 0: Trick Master is hiding\n\t@ 1: Trick Master has left at start of challenge\n\t@ 2: Trick Master ready to give normal reward from previous challenge (if bag was full)\n\t@ 3: Trick Master still making next puzzle\n\t@ 4: Finished final puzzle\n\t@ 5: Completed previous challenge\n\t@ 6: 'Trick Master' mechadoll ready to give Tent reward from final challenge (if bag was full)"
+  },
+  "label": "Route110_TrickHouseEntrance_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TRICK_HOUSE_ENTRANCE_STATE"
+    ],
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_TRANSITION",
+      "MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE"
+    ]
+  }
+}

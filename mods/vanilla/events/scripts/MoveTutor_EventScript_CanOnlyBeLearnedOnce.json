@@ -1,0 +1,19 @@
+{
+  "id": "MoveTutor_EventScript_CanOnlyBeLearnedOnce",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/move_tutors.inc",
+    "sha1": "9c188f9a9477e783c3dda838ce8c2873c44b9398"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/move_tutors.inc",
+    "rawScript": "msgbox MoveTutor_Text_ThisMoveCanOnlyBeLearnedOnce, MSGBOX_YESNO\n\treturn"
+  },
+  "label": "MoveTutor_EventScript_CanOnlyBeLearnedOnce",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/move_tutors.inc",
+  "references": {}
+}

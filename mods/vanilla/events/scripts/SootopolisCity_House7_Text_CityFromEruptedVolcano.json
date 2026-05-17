@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_House7_Text_CityFromEruptedVolcano",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_House7/scripts.inc",
+    "sha1": "5851d255152eb8f0147c541d00dc7fe50137d965"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_House7/scripts.inc",
+    "rawScript": ".string \"An underwater volcano erupted and\\n\"\n\t.string \"forced itself up from the depths.\\p\"\n\t.string \"Its crater emerged from the sea and\\n\"\n\t.string \"became filled with rainwater.\\p\"\n\t.string \"That's how SOOTOPOLIS CITY came into\\n\"\n\t.string \"being.$\""
+  },
+  "label": "SootopolisCity_House7_Text_CityFromEruptedVolcano",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_House7/scripts.inc",
+  "references": {}
+}

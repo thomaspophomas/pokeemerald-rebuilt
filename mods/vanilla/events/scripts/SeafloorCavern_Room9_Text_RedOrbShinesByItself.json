@@ -1,0 +1,19 @@
+{
+  "id": "SeafloorCavern_Room9_Text_RedOrbShinesByItself",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Room9/scripts.inc",
+    "sha1": "fb74c5efd7ca988ee5566425c585ce3e165249e8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SeafloorCavern_Room9/scripts.inc",
+    "rawScript": ".string \"The RED ORB suddenly began shining\\n\"\n\t.string \"by itself!$\""
+  },
+  "label": "SeafloorCavern_Room9_Text_RedOrbShinesByItself",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SeafloorCavern_Room9/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "VictoryRoad_1F_EventScript_Albert",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_1F/scripts.inc",
+    "sha1": "dda3a20e79be32fbc7d021ceddf040bbcdbe53c7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VictoryRoad_1F/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_ALBERT, VictoryRoad_1F_Text_AlbertIntro, VictoryRoad_1F_Text_AlbertDefeat\n\tmsgbox VictoryRoad_1F_Text_AlbertPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "VictoryRoad_1F_EventScript_Albert",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/VictoryRoad_1F/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ALBERT"
+    ]
+  }
+}

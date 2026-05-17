@@ -1,0 +1,35 @@
+{
+  "id": "gObjectEventGraphicsInfo_Greta",
+  "domain": "sprite_assets",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/object_events/object_event_graphics_info.h",
+    "sha1": "6e39355ad5f42a055e0a4aba39fadac078dcb7cf"
+  },
+  "legacy": {
+    "kind": "object_event_sprite_asset",
+    "sourcePath": "src/data/object_events/object_event_graphics_info.h",
+    "rawC": "const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Greta = {\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Greta,\n    .affineAnims = gDummySpriteAffineAnimTable,\n};"
+  },
+  "key": "gObjectEventGraphicsInfo_Greta",
+  "assetKind": "object_event",
+  "graphicsId": "OBJ_EVENT_GFX_GRETA",
+  "graphicsInfoSymbol": "gObjectEventGraphicsInfo_Greta",
+  "sheetSymbol": null,
+  "compressedSheetSymbol": null,
+  "paletteSymbol": null,
+  "compressedPaletteSymbol": null,
+  "templateSymbol": null,
+  "tileTag": "TAG_NONE",
+  "paletteTag": "OBJ_EVENT_PAL_TAG_NPC_1",
+  "dimensions": {
+    "width": "16",
+    "height": "32",
+    "size": "256"
+  },
+  "oam": "&gObjectEventBaseOam_16x32",
+  "images": "sPicTable_Greta",
+  "anims": "sAnimTable_Standard",
+  "subspriteTables": "sOamTables_16x32",
+  "affineAnims": "gDummySpriteAffineAnimTable"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "OldaleTown_House2_Text_YoullGoFurtherWithStrongPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown_House2/scripts.inc",
+    "sha1": "07e915dfbb29550deeb6524c266f91165d7f3b7e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/OldaleTown_House2/scripts.inc",
+    "rawScript": ".string \"If the POK\u00e9MON with you become\\n\"\n\t.string \"stronger, you'll be able to go farther\\l\"\n\t.string \"away from here.$\""
+  },
+  "label": "OldaleTown_House2_Text_YoullGoFurtherWithStrongPokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/OldaleTown_House2/scripts.inc",
+  "references": {}
+}

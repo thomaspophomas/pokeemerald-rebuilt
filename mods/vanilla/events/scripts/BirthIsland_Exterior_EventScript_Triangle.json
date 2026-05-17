@@ -1,0 +1,23 @@
+{
+  "id": "BirthIsland_Exterior_EventScript_Triangle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BirthIsland_Exterior/scripts.inc",
+    "sha1": "1e5973feb9102d3690432e451cddaf05cc140d76"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BirthIsland_Exterior/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tspecial DoDeoxysRockInteraction\n\tswitch VAR_RESULT\n\tcase DEOXYS_ROCK_FAILED,     BirthIsland_Exterior_EventScript_Failed\n\tcase DEOXYS_ROCK_PROGRESSED, BirthIsland_Exterior_EventScript_Progressed\n\tcase DEOXYS_ROCK_SOLVED,     BirthIsland_Exterior_EventScript_Deoxys\n\tcase DEOXYS_ROCK_COMPLETE,   BirthIsland_Exterior_EventScript_Complete\n\tend\n\n@ The actual rock triangle movement is handled by DoDeoxysRockInteraction.\n@ Unless the player has solved the puzzle and needs to encounter Deoxys,\n@ there's nothing else the script needs to do."
+  },
+  "label": "BirthIsland_Exterior_EventScript_Triangle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BirthIsland_Exterior/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

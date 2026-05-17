@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_MoveRelearnersHouse_Text_ComeBackWithHeartScale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc",
+    "sha1": "9afb886b81b1177e00257143804f6a28f9488a57"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc",
+    "rawScript": ".string \"If your POK\u00e9MON need to learn a move,\\n\"\n\t.string \"come back with a HEART SCALE.$\""
+  },
+  "label": "FallarborTown_MoveRelearnersHouse_Text_ComeBackWithHeartScale",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc",
+  "references": {}
+}

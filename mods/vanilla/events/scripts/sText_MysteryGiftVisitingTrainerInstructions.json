@@ -1,0 +1,19 @@
+{
+  "id": "sText_MysteryGiftVisitingTrainerInstructions",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_trainer.inc",
+    "sha1": "4bc244e1cb3a7775bbe4fb775bfef3886b08d25d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_trainer.inc",
+    "rawScript": ".string \"Thank you for using the MYSTERY\\n\"\n\t.string \"GIFT System.\\p\"\n\t.string \"By holding this WONDER CARD, you\\n\"\n\t.string \"may take part in a survey at a\\l\"\n\t.string \"POK\u00e9MON MART.\\p\"\n\t.string \"Use these surveys to invite\\n\"\n\t.string \"TRAINERS to SOOTOPOLIS CITY.\\p\"\n\t.string \"\u2026Let me give you a secret\\n\"\n\t.string \"password for a survey:\\p\"\n\t.string \"\u201cGIVE ME\\n\"\n\t.string \"AWESOME TRAINER\u201d\\p\"\n\t.string \"Write that in on a survey and send\\n\"\n\t.string \"it to the WIRELESS\\l\"\n\t.string \"COMMUNICATION SYSTEM.$\""
+  },
+  "label": "sText_MysteryGiftVisitingTrainerInstructions",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_trainer.inc",
+  "references": {}
+}

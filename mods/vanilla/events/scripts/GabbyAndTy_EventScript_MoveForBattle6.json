@@ -1,0 +1,19 @@
+{
+  "id": "GabbyAndTy_EventScript_MoveForBattle6",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gabby_and_ty.inc",
+    "sha1": "94bbdc1414879c9d53e3c5a88c9429ac40dbfdeb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gabby_and_ty.inc",
+    "rawScript": "call GabbyAndTy_EventScript_ShowAtRoute120_2\n\tcall GabbyAndTy_EventScript_HideAtRoute118_2\n\treturn"
+  },
+  "label": "GabbyAndTy_EventScript_MoveForBattle6",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/gabby_and_ty.inc",
+  "references": {}
+}

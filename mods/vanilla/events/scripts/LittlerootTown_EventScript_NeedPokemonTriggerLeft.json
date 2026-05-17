@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_EventScript_NeedPokemonTriggerLeft",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_LITTLEROOT_TWIN, LittlerootTown_Movement_TwinApproachPlayerLeft\n\twaitmovement 0\n\tcall LittlerootTown_EventScript_DangerousWithoutPokemon\n\tapplymovement LOCALID_LITTLEROOT_TWIN, LittlerootTown_Movement_TwinReturnLeft\n\twaitmovement 0\n\treleaseall\n\tend"
+  },
+  "label": "LittlerootTown_EventScript_NeedPokemonTriggerLeft",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {}
+}

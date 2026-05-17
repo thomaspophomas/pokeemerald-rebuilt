@@ -1,0 +1,19 @@
+{
+  "id": "BerryBlender_Text_KnowHowToMakePokeblocks2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": ".string \"Of course, you do know how to\\n\"\n\t.string \"blend {POKEBLOCK}S, don't you?$\""
+  },
+  "label": "BerryBlender_Text_KnowHowToMakePokeblocks2",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {}
+}

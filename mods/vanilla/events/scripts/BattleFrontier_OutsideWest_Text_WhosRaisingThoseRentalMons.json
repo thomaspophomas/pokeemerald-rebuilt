@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideWest_Text_WhosRaisingThoseRentalMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": ".string \"That's the BATTLE FACTORY.\\n\"\n\t.string \"You can rent strong POK\u00e9MON there.\\p\"\n\t.string \"But it makes me wonder.\\n\"\n\t.string \"Who's raising those rental POK\u00e9MON?$\""
+  },
+  "label": "BattleFrontier_OutsideWest_Text_WhosRaisingThoseRentalMons",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {}
+}

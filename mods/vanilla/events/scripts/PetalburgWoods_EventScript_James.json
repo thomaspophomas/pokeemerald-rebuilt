@@ -1,0 +1,26 @@
+{
+  "id": "PetalburgWoods_EventScript_James",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/scripts.inc",
+    "sha1": "a7a3b49731f97088b328145805430d4429326ec8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgWoods/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_JAMES_1, PetalburgWoods_Text_InstantlyPopularWithBugPokemon, PetalburgWoods_Text_CantBePopularIfILose, PetalburgWoods_EventScript_TryRegisterJames\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, PetalburgWoods_EventScript_JamesRematch\n\tsetvar VAR_0x8004, TRAINER_JAMES_1\n\tspecialvar VAR_RESULT, IsTrainerRegistered\n\tgoto_if_eq VAR_RESULT, FALSE, PetalburgWoods_EventScript_TryRegisterJames2\n\tmsgbox PetalburgWoods_Text_PeopleRespectYou, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "PetalburgWoods_EventScript_James",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgWoods/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_JAMES_1"
+    ]
+  }
+}

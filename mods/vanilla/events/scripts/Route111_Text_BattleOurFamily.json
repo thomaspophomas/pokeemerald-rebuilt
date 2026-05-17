@@ -1,0 +1,19 @@
+{
+  "id": "Route111_Text_BattleOurFamily",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": ".string \"Hello! I take it you're a traveler.\\p\"\n\t.string \"How's this? What do you say to taking\\n\"\n\t.string \"on our family of four in a series of\\l\"\n\t.string \"POK\u00e9MON battles?$\""
+  },
+  "label": "Route111_Text_BattleOurFamily",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {}
+}

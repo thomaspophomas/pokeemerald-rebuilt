@@ -1,0 +1,26 @@
+{
+  "id": "RustboroCity_EventScript_ScientistAddMatchCall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": "lockall\n\tsetvar VAR_ROUTE104_STATE, 1\n\tapplymovement LOCALID_PLAYER, RustboroCity_Movement_PlayerWalkDown\n\twaitmovement 0\n\tplayse SE_EXIT\n\tdelay 10\n\taddobject LOCALID_RUSTBORO_SCIENTIST\n\tapplymovement LOCALID_RUSTBORO_SCIENTIST, RustboroCity_Movement_ScientistApproachPlayer\n\twaitmovement 0\n\tplayse SE_PIN\n\tapplymovement LOCALID_RUSTBORO_SCIENTIST, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_RUSTBORO_SCIENTIST, Common_Movement_Delay48\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tapplymovement LOCALID_RUSTBORO_SCIENTIST, RustboroCity_Movement_ScientistWalkInPlaceDown\n\twaitmovement 0\n\tmsgbox RustboroCity_Text_DevelopedNewPokenavFeature, MSGBOX_DEFAULT\n\tclosemessage\n\tsetflag FLAG_HAS_MATCH_CALL\n\tapplymovement LOCALID_RUSTBORO_SCIENTIST, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tplayse SE_CLICK\n\tdelay 10\n\tplayse SE_CLICK\n\tdelay 10\n\tplayse SE_CLICK\n\tdelay 10\n\tplayse SE_CLICK\n\tdelay 20\n\tapplymovement LOCALID_RUSTBORO_SCIENTIST, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tmsgbox RustboroCity_Text_AddedMatchCallPleaseCallMrStone, MSGBOX_DEFAULT\n\tclosemessage\n\tdelay 20\n\tgoto RustboroCity_EventScript_MatchCallTutorial"
+  },
+  "label": "RustboroCity_EventScript_ScientistAddMatchCall",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HAS_MATCH_CALL"
+    ],
+    "vars": [
+      "VAR_ROUTE104_STATE"
+    ]
+  }
+}

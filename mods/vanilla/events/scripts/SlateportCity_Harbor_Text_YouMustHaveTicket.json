@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Harbor_Text_YouMustHaveTicket",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "sha1": "304e0889603d7850b02e01765d969cf3c903eb9e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "rawScript": ".string \"{PLAYER} doesn't have the TICKET\u2026\\p\"\n\t.string \"I'm terribly sorry.\\p\"\n\t.string \"You must have a TICKET to board\\n\"\n\t.string \"the ferry.$\""
+  },
+  "label": "SlateportCity_Harbor_Text_YouMustHaveTicket",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_Harbor/scripts.inc",
+  "references": {}
+}

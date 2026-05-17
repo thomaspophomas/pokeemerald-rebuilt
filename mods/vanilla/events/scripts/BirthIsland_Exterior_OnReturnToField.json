@@ -1,0 +1,19 @@
+{
+  "id": "BirthIsland_Exterior_OnReturnToField",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BirthIsland_Exterior/scripts.inc",
+    "sha1": "1e5973feb9102d3690432e451cddaf05cc140d76"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BirthIsland_Exterior/scripts.inc",
+    "rawScript": "special SetDeoxysRockPalette\n\tend"
+  },
+  "label": "BirthIsland_Exterior_OnReturnToField",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/BirthIsland_Exterior/scripts.inc",
+  "references": {}
+}

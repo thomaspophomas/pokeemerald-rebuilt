@@ -1,0 +1,26 @@
+{
+  "id": "SootopolisCity_House6_EventScript_Woman",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_House6/scripts.inc",
+    "sha1": "9e64a088d48f75235f8890513493b4248a25744a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_House6/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_WAILMER_DOLL, SootopolisCity_House6_EventScript_ReceivedWailmerDoll\n\tmsgbox SootopolisCity_House6_Text_FirstGuestInWhileTakeDoll, MSGBOX_YESNO\n\tcall_if_eq VAR_RESULT, NO, SootopolisCity_House6_EventScript_DeclineWailmerDoll\n\tmsgbox SootopolisCity_House6_Text_TakeGoodCareOfIt, MSGBOX_DEFAULT\n\tgivedecoration DECOR_WAILMER_DOLL\n\tgoto_if_eq VAR_RESULT, FALSE, SootopolisCity_House6_EventScript_NoRoomForWailmerDoll\n\tsetflag FLAG_RECEIVED_WAILMER_DOLL\n\trelease\n\tend"
+  },
+  "label": "SootopolisCity_House6_EventScript_Woman",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity_House6/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_WAILMER_DOLL"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

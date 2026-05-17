@@ -1,0 +1,19 @@
+{
+  "id": "Route111_Text_MirageTowerHasntBeenSeenSince",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": ".string \"Since I spoke to you, the tower of sand\\n\"\n\t.string \"hasn't been seen.\\p\"\n\t.string \"Perhaps it really was\\n\"\n\t.string \"the MIRAGE TOWER\u2026$\""
+  },
+  "label": "Route111_Text_MirageTowerHasntBeenSeenSince",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {}
+}

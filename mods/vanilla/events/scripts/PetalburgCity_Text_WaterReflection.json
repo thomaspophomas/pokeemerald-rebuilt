@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Text_WaterReflection",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity/scripts.inc",
+    "sha1": "b4c5cd37e96410a5c2721d216afbe3a8ea620c87"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity/scripts.inc",
+    "rawScript": ".string \"My face is reflected in the water.\\p\"\n\t.string \"It's a shining grin full of hope\u2026\\p\"\n\t.string \"Or it could be a look of somber silence\\n\"\n\t.string \"struggling with fear\u2026\\p\"\n\t.string \"What do you see reflected in your face?$\""
+  },
+  "label": "PetalburgCity_Text_WaterReflection",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity/scripts.inc",
+  "references": {}
+}

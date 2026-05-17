@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_ContestHall_Text_RaisedMonToBeCute",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentCorridor/scripts.inc",
+    "sha1": "8936c4f1be90d719d6d99b0c0c3c739ed9ad97c0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentCorridor/scripts.inc",
+    "rawScript": ".string \"I raised my POK\u00e9MON to be cute.\\p\"\n\t.string \"I found out you can put POK\u00e9MON in\\n\"\n\t.string \"a CONTEST for cuteness!\\p\"\n\t.string \"I'm so glad I raised my POK\u00e9MON with\\n\"\n\t.string \"loving care\u2026$\"\n\n@ Unused"
+  },
+  "label": "VerdanturfTown_ContestHall_Text_RaisedMonToBeCute",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentCorridor/scripts.inc",
+  "references": {}
+}

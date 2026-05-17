@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_BattleTentLobby_Text_ScottCanMeetToughTrainers",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "sha1": "be67ab8ba625b73e575c1594a46cbee43b6f03d9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "rawScript": ".string \"SCOTT: Hey there, {PLAYER}{KUN}!\\n\"\n\t.string \"I thought I might see you here.\\p\"\n\t.string \"A BATTLE TENT's a place where\\n\"\n\t.string \"you can meet tough TRAINERS.\\p\"\n\t.string \"It doesn't matter what the rules are,\\n\"\n\t.string \"or how battles are waged, either.\\p\"\n\t.string \"{PLAYER}{KUN}, I expect you to do\\n\"\n\t.string \"the best you can!$\""
+  },
+  "label": "VerdanturfTown_BattleTentLobby_Text_ScottCanMeetToughTrainers",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+  "references": {}
+}

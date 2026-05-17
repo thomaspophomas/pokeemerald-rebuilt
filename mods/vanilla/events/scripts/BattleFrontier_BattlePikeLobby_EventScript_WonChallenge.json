@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeLobby_EventScript_WonChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "sha1": "e2be0fe89296e221d6bdf7bc81fdcf739064bd1b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "rawScript": "lockall\n\tfrontier_isbrain\n\tgoto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattlePikeLobby_EventScript_DefeatedQueen\n\tmsgbox BattleFrontier_BattlePikeLobby_Text_PossessLuckInAbundance, MSGBOX_DEFAULT\n\twaitmessage\n\tgoto BattleFrontier_BattlePikeLobby_EventScript_GiveBattlePoints"
+  },
+  "label": "BattleFrontier_BattlePikeLobby_EventScript_WonChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

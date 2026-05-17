@@ -1,0 +1,26 @@
+{
+  "id": "BattleFrontier_BattlePyramidTop_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "sha1": "6256c29eca306dafcaec0dabbacc64547c474e58"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, BattleFrontier_BattlePyramidTop_OnResume\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, BattleFrontier_BattlePyramidTop_OnFrame\n\tmap_script MAP_SCRIPT_ON_TRANSITION, BattleFrontier_BattlePyramidTop_OnTransition\n\tmap_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, BattleFrontier_BattlePyramidTop_OnWarp\n\t.byte 0"
+  },
+  "label": "BattleFrontier_BattlePyramidTop_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION",
+      "MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE"
+    ]
+  }
+}

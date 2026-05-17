@@ -1,0 +1,19 @@
+{
+  "id": "MeteorFalls_1F_2R_Text_JayRematchNotEnoughMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+    "sha1": "09c545be014eea4099489af97aeae4f12469cf78"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+    "rawScript": ".string \"JAY: Well, well, aren't you a young\\n\"\n\t.string \"TRAINER?\\p\"\n\t.string \"If you'd care to battle with us, you'll\\n\"\n\t.string \"have to come back with more POK\u00e9MON.$\""
+  },
+  "label": "MeteorFalls_1F_2R_Text_JayRematchNotEnoughMons",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+  "references": {}
+}

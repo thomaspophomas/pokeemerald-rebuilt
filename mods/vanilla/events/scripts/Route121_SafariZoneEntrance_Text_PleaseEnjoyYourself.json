@@ -1,0 +1,19 @@
+{
+  "id": "Route121_SafariZoneEntrance_Text_PleaseEnjoyYourself",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/safari_zone.inc",
+    "sha1": "435880c660a34d3e51dcedb348a41731d28af7cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/safari_zone.inc",
+    "rawScript": ".string \"We'll let you know when your game\\n\"\n\t.string \"is over.\\p\"\n\t.string \"So, until then, enjoy yourself, please!\\n\"\n\t.string \"Off you go on your wild excursion!$\""
+  },
+  "label": "Route121_SafariZoneEntrance_Text_PleaseEnjoyYourself",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/safari_zone.inc",
+  "references": {}
+}

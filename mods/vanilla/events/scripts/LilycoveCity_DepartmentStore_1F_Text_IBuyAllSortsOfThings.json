@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc",
+    "sha1": "25a2cc6d86d1739788e578e0911145b04f3d372f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc",
+    "rawScript": ".string \"Whenever I come to the DEPARTMENT\\n\"\n\t.string \"STORE, I always end up buying all sorts\\l\"\n\t.string \"of things because it's so fun.$\""
+  },
+  "label": "LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc",
+  "references": {}
+}

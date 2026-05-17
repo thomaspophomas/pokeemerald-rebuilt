@@ -1,0 +1,19 @@
+{
+  "id": "SSTidalCorridor_Text_BrineyWelcomeAboard",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalCorridor/scripts.inc",
+    "sha1": "02d0cfdd4cf17b1fcf50d838485aaf7013da6b13"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalCorridor/scripts.inc",
+    "rawScript": ".string \"MR. BRINEY: Welcome aboard, {PLAYER}{KUN}!\\p\"\n\t.string \"They made me honorary captain of\\n\"\n\t.string \"the S.S. TIDAL!\\p\"\n\t.string \"You can call me CAPTAIN BRINEY now!\\p\"\n\t.string \"You know, I retired once before,\\n\"\n\t.string \"but when I saw this majestic ship\u2026\\p\"\n\t.string \"Let me just say, it stirred my sleeping\\n\"\n\t.string \"soul as a sailor!$\""
+  },
+  "label": "SSTidalCorridor_Text_BrineyWelcomeAboard",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SSTidalCorridor/scripts.inc",
+  "references": {}
+}

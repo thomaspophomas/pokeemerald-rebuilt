@@ -1,0 +1,30 @@
+{
+  "id": "SlateportCity_Harbor_EventScript_CaptSternFerryOrScannerComment",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "sha1": "304e0889603d7850b02e01765d969cf3c903eb9e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "rawScript": "goto_if_eq VAR_TEMP_1, 1, SlateportCity_Harbor_EventScript_TradedScanner\n\tcheckitem ITEM_SCANNER\n\tgoto_if_eq VAR_RESULT, TRUE, SlateportCity_Harbor_EventScript_AskToTradeScanner\n\tgoto_if_set FLAG_SYS_GAME_CLEAR, SlateportCity_Harbor_EventScript_FerryFinished\n\tmsgbox SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "SlateportCity_Harbor_EventScript_CaptSternFerryOrScannerComment",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity_Harbor/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_GAME_CLEAR"
+    ],
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_1"
+    ],
+    "items": [
+      "ITEM_SCANNER"
+    ]
+  }
+}

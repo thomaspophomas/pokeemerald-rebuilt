@@ -1,0 +1,19 @@
+{
+  "id": "OldaleTown_Text_FinishedSketchingFootprints",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown/scripts.inc",
+    "sha1": "b8b6ade6d90e9d5b08d5d2374caa3d404506aa31"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/OldaleTown/scripts.inc",
+    "rawScript": ".string \"I finished sketching the footprints of\\n\"\n\t.string \"a rare POK\u00e9MON.\\p\"\n\t.string \"But it turns out they were only my\\n\"\n\t.string \"own footprints\u2026$\""
+  },
+  "label": "OldaleTown_Text_FinishedSketchingFootprints",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/OldaleTown/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,32 @@
+{
+  "id": "MysteryGiftScript_MysticTicket",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_mystic_ticket.inc",
+    "sha1": "84698c0b8e6ebaadb3177e0b3abacdbd74a89f9a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_mystic_ticket.inc",
+    "rawScript": "setvaddress MysteryGiftScript_MysticTicket\n\tlock\n\tfaceplayer\n\tvgoto_if_set FLAG_RECEIVED_MYSTIC_TICKET, MysticTicket_Obtained\n\tvgoto_if_set FLAG_CAUGHT_LUGIA, MysticTicket_Obtained\n\tvgoto_if_set FLAG_CAUGHT_HO_OH, MysticTicket_Obtained\n\tcheckitem ITEM_MYSTIC_TICKET\n\tvgoto_if_eq VAR_RESULT, TRUE, MysticTicket_Obtained\n\tvmessage sText_MysticTicketForYou\n\twaitmessage\n\twaitbuttonpress\n\tcheckitemspace ITEM_MYSTIC_TICKET\n\tvgoto_if_eq VAR_RESULT, FALSE, MysticTicket_NoBagSpace\n\tgiveitem ITEM_MYSTIC_TICKET\n\tsetflag FLAG_ENABLE_SHIP_NAVEL_ROCK\n\tsetflag FLAG_RECEIVED_MYSTIC_TICKET\n\tvmessage sText_MysticTicketUseAtPort\n\twaitmessage\n\twaitbuttonpress\n\trelease\n\tend"
+  },
+  "label": "MysteryGiftScript_MysticTicket",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_mystic_ticket.inc",
+  "references": {
+    "flags": [
+      "FLAG_CAUGHT_HO_OH",
+      "FLAG_CAUGHT_LUGIA",
+      "FLAG_ENABLE_SHIP_NAVEL_ROCK",
+      "FLAG_RECEIVED_MYSTIC_TICKET"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_MYSTIC_TICKET"
+    ]
+  }
+}

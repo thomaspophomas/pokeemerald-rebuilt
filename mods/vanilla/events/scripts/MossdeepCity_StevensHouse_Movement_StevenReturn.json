@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_StevensHouse_Movement_StevenReturn",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "sha1": "13a709347ca2c2863ef04de01b7d51d28b9d736e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "rawScript": "walk_up\n\twalk_right\n\twalk_right\n\twalk_right\n\twalk_in_place_faster_up\n\tstep_end"
+  },
+  "label": "MossdeepCity_StevensHouse_Movement_StevenReturn",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+  "references": {}
+}

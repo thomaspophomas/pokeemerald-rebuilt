@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_ContestHall_Text_CantWinEverywhere",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+    "sha1": "163b9c21282cae11ce5f396c305aff448fc9ab48"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+    "rawScript": ".string \"I can't beat GYM LEADERS\u2026\\p\"\n\t.string \"I can't win any CONTESTS\u2026\\p\"\n\t.string \"I've been here, there, and everywhere,\\n\"\n\t.string \"and it's all for naught\u2026$\"\n\n@ Unused"
+  },
+  "label": "FallarborTown_ContestHall_Text_CantWinEverywhere",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+  "references": {}
+}

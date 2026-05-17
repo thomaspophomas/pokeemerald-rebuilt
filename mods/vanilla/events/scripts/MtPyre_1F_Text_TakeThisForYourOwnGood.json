@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_1F_Text_TakeThisForYourOwnGood",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_1F/scripts.inc",
+    "sha1": "fb767551d4d8fa906d9226adf1aabd795c630e6b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_1F/scripts.inc",
+    "rawScript": ".string \"All sorts of beings wander the slopes\\n\"\n\t.string \"of MT. PYRE\u2026\\p\"\n\t.string \"There is no telling what may happen.\\n\"\n\t.string \"Take this. It's for your own good.$\""
+  },
+  "label": "MtPyre_1F_Text_TakeThisForYourOwnGood",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Common_EventScript_SetGymTrainers",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/set_gym_trainers.inc",
+    "sha1": "90019f7a2097712cc57c824c9118423a5a8171bd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/set_gym_trainers.inc",
+    "rawScript": "switch VAR_0x8008\n\tcase 1, RustboroCity_Gym_SetGymTrainers\n\tcase 2, DewfordTown_Gym_SetGymTrainers\n\tcase 3, MauvilleCity_Gym_SetGymTrainers\n\tcase 4, LavaridgeTown_Gym_SetGymTrainers\n\tcase 5, PetalburgCity_Gym_SetGymTrainers\n\tcase 6, FortreeCity_Gym_SetGymTrainers\n\tcase 7, MossdeepCity_Gym_SetGymTrainers\n\tcase 8, SootopolisCity_Gym_SetGymTrainers\n\tend"
+  },
+  "label": "Common_EventScript_SetGymTrainers",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/set_gym_trainers.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_HallOfFame/scripts.inc",
+    "sha1": "c6da78131eff88a85e046e0e631d7de403522957"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_HallOfFame/scripts.inc",
+    "rawScript": ".string \"WALLACE: Come on, let's record your\\n\"\n\t.string \"name as a TRAINER who triumphed over\\l\"\n\t.string \"the POK\u00e9MON LEAGUE, and the names of\\l\"\n\t.string \"the partners who battled with you.$\""
+  },
+  "label": "EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_HallOfFame/scripts.inc",
+  "references": {}
+}

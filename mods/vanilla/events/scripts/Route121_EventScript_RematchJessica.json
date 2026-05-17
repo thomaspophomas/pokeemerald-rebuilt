@@ -1,0 +1,23 @@
+{
+  "id": "Route121_EventScript_RematchJessica",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route121/scripts.inc",
+    "sha1": "25fbd3a3d48b51dbfcf569f03ff4f7001d429ac3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route121/scripts.inc",
+    "rawScript": "trainerbattle_rematch TRAINER_JESSICA_1, Route121_Text_JessicaRematchIntro, Route121_Text_JessicaRematchDefeat\n\tmsgbox Route121_Text_JessicaPostRematch, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route121_EventScript_RematchJessica",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route121/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_JESSICA_1"
+    ]
+  }
+}

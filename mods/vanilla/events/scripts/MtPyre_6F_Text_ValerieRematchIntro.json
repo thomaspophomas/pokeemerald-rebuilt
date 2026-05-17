@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_6F_Text_ValerieRematchIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_6F/scripts.inc",
+    "sha1": "0d8e5d648a922985ae05d7a5cc3cc0018668a34a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_6F/scripts.inc",
+    "rawScript": ".string \"Behind you\u2026\\n\"\n\t.string \"What is it\u2026$\""
+  },
+  "label": "MtPyre_6F_Text_ValerieRematchIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_6F/scripts.inc",
+  "references": {}
+}

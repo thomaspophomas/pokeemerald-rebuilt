@@ -1,0 +1,19 @@
+{
+  "id": "GraniteCave_StevensRoom_EventScript_StevenExitNorth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/GraniteCave_StevensRoom/scripts.inc",
+    "sha1": "d6ee0122ad78c2332db89dbd8efa2a788f6bd86e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/GraniteCave_StevensRoom/scripts.inc",
+    "rawScript": "applymovement LOCALID_GRANITE_CAVE_STEVEN, GraniteCave_StevensRoom_Movement_StevenExit\n\twaitmovement 0\n\treturn"
+  },
+  "label": "GraniteCave_StevensRoom_EventScript_StevenExitNorth",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/GraniteCave_StevensRoom/scripts.inc",
+  "references": {}
+}

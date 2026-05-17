@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_2F_Text_ExplainExhibitHall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "sha1": "c41e25282a159070f0eb7fb3edcf1b61cc1cfa19"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "rawScript": ".string \"As you can plainly see, there is not\\n\"\n\t.string \"a single painting on exhibit.\\p\"\n\t.string \"Here, I don't wish to exhibit works of\\n\"\n\t.string \"so-called classical art.\\p\"\n\t.string \"Such classical works you can see on\\n\"\n\t.string \"our ground floor.\\p\"\n\t.string \"I wish to exhibit work that is far\\n\"\n\t.string \"different from the classics.\\p\"\n\t.string \"Art, after all, is not restricted to old,\\n\"\n\t.string \"famous works!\\p\"\n\t.string \"This exhibit hall, I wish to fill it with\u2026\\p\"\n\t.string \"Modern and vibrant artworks of\\n\"\n\t.string \"POK\u00e9MON seemingly ready to spring\\l\"\n\t.string \"forth into glorious life!$\""
+  },
+  "label": "LilycoveCity_LilycoveMuseum_2F_Text_ExplainExhibitHall",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+  "references": {}
+}

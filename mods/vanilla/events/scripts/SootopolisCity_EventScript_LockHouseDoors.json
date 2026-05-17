@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_EventScript_LockHouseDoors",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": "setmetatile 9, 6, METATILE_Sootopolis_Door_Closed, TRUE\n\tsetmetatile 9, 17, METATILE_Sootopolis_Door_Closed, TRUE\n\tsetmetatile 9, 26, METATILE_Sootopolis_Door_Closed, TRUE\n\tsetmetatile 44, 17, METATILE_Sootopolis_Door_Closed, TRUE\n\tsetmetatile 8, 35, METATILE_Sootopolis_Door_Closed, TRUE\n\tsetmetatile 53, 28, METATILE_Sootopolis_Door_Closed, TRUE\n\tsetmetatile 45, 6, METATILE_Sootopolis_Door_Closed, TRUE\n\tsetmetatile 48, 25, METATILE_Sootopolis_Door_Closed, TRUE\n\tsetmetatile 51, 36, METATILE_Sootopolis_Door_Closed, TRUE\n\treturn"
+  },
+  "label": "SootopolisCity_EventScript_LockHouseDoors",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Route121_SafariZoneEntrance_EventScript_CheckHasRoomForPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route121_SafariZoneEntrance/scripts.inc",
+    "sha1": "6a3d6039da49b2973bb2acbe14884a453fef9c72"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route121_SafariZoneEntrance/scripts.inc",
+    "rawScript": "getpartysize\n\tgoto_if_ne VAR_RESULT, PARTY_SIZE, Route121_SafariZoneEntrance_EventScript_HasRoomForPokemon\n\tspecialvar VAR_RESULT, ScriptCheckFreePokemonStorageSpace\n\tgoto_if_eq VAR_RESULT, 1, Route121_SafariZoneEntrance_EventScript_HasRoomForPokemon\n\tmsgbox Route121_SafariZoneEntrance_Text_PCIsFull, MSGBOX_DEFAULT\n\tgoto Route121_SafariZoneEntrance_EventScript_MovePlayerBackFromCounter\n\tend"
+  },
+  "label": "Route121_SafariZoneEntrance_EventScript_CheckHasRoomForPokemon",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route121_SafariZoneEntrance/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

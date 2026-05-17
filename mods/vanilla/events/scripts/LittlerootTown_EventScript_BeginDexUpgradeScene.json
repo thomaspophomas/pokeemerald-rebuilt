@@ -1,0 +1,28 @@
+{
+  "id": "LittlerootTown_EventScript_BeginDexUpgradeScene",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": "lockall\n\tplayse SE_PIN\n\tapplymovement LOCALID_LITTLEROOT_BIRCH, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tdelay 80\n\tmsgbox LittlerootTown_Text_BirchSomethingToShowYouAtLab, MSGBOX_DEFAULT\n\tclosemessage\n\tclearflag FLAG_HIDE_LITTLEROOT_TOWN_RIVAL\n\tclearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCH\n\tdelay 20\n\tclearflag FLAG_HIDE_MAP_NAME_POPUP\n\twarp MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB, 6, 5\n\twaitstate\n\treleaseall\n\tend"
+  },
+  "label": "LittlerootTown_EventScript_BeginDexUpgradeScene",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_LITTLEROOT_TOWN_BIRCH",
+      "FLAG_HIDE_LITTLEROOT_TOWN_RIVAL",
+      "FLAG_HIDE_MAP_NAME_POPUP"
+    ],
+    "maps": [
+      "MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Route110_TrickHouseEntrance_Text_PCFullAgain",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "sha1": "9367efc136143832c1697fbcc61fbb296269d396"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "rawScript": ".string \"YOUR PC STATUS: FULL AGAIN.\\n\"\n\t.string \"MEAN, YOU ARE.$\""
+  },
+  "label": "Route110_TrickHouseEntrance_Text_PCFullAgain",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+  "references": {}
+}

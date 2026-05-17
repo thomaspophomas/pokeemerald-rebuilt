@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_PokemonCenter_1F_Text_StoneCavern",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_PokemonCenter_1F/scripts.inc",
+    "sha1": "f0b8cc368e8e856b04a41b40fb5f8bc9c5a39f70"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"There's a stone cavern at the edge\\n\"\n\t.string \"of town.\\p\"\n\t.string \"I've heard you can find rare stones\\n\"\n\t.string \"there.$\""
+  },
+  "label": "DewfordTown_PokemonCenter_1F_Text_StoneCavern",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

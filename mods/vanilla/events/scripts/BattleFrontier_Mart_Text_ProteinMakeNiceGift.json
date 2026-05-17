@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Mart_Text_ProteinMakeNiceGift",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Mart/scripts.inc",
+    "sha1": "e8269950fe6ceeeec601d93208e6255555526b6b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Mart/scripts.inc",
+    "rawScript": ".string \"Dear, what do you think of this?\\n\"\n\t.string \"Wouldn't this make a nice gift?\\p\"\n\t.string \"It's\u2026PRO\u2026TE\u2026IN?\\n\"\n\t.string \"It sounds delicious, doesn't it?$\""
+  },
+  "label": "BattleFrontier_Mart_Text_ProteinMakeNiceGift",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Mart/scripts.inc",
+  "references": {}
+}

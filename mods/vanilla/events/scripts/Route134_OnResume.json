@@ -1,0 +1,23 @@
+{
+  "id": "Route134_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route134/scripts.inc",
+    "sha1": "11ceab276decd5668ebaeb1c0249bcd11554123e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route134/scripts.inc",
+    "rawScript": "setdivewarp MAP_UNDERWATER_ROUTE134, 8, 6\n\tend"
+  },
+  "label": "Route134_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Route134/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_UNDERWATER_ROUTE134"
+    ]
+  }
+}

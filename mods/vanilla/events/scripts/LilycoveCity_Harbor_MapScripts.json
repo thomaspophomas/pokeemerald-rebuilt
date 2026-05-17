@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_Harbor_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "sha1": "ffd83f00915b03bfdd96f51950251d00dd19dbcb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, LilycoveCity_Harbor_OnTransition\n\t.byte 0"
+  },
+  "label": "LilycoveCity_Harbor_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/LilycoveCity_Harbor/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

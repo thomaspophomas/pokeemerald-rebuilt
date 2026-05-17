@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_PokemonCenter_1F_Text_LanetteGreeting",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_PokemonCenter_1F/scripts.inc",
+    "sha1": "1f48e8d40f8ba3b6123d3e45ff7292df588ad7dd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"Oh, hello.\\n\"\n\t.string \"You are?\\p\"\n\t.string \"Okay, your name's {PLAYER}{KUN}.\\n\"\n\t.string \"I can see that you're a TRAINER.\\p\"\n\t.string \"So that means you use the POK\u00e9MON\\n\"\n\t.string \"Storage System I developed.\\p\"\n\t.string \"How I arrived at that conclusion is\\n\"\n\t.string \"a simple deductive process.\\p\"\n\t.string \"You spoke to me because you wanted\\n\"\n\t.string \"to access something on this PC.\\p\"\n\t.string \"Oh, I'm sorry. I'm LANETTE.\\p\"\n\t.string \"Honestly, I'm glad to meet you--it's\\n\"\n\t.string \"great you're using the Storage System.\\p\"\n\t.string \"If you could, please visit me at home.\\n\"\n\t.string \"My house is on ROUTE 114.$\""
+  },
+  "label": "FallarborTown_PokemonCenter_1F_Text_LanetteGreeting",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FallarborTown_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

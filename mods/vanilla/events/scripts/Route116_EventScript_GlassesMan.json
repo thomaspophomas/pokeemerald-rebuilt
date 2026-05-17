@@ -1,0 +1,26 @@
+{
+  "id": "Route116_EventScript_GlassesMan",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116/scripts.inc",
+    "sha1": "414d7bb5c4246d6317dd973dc816983566be8cc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route116/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tcheckitem ITEM_BLACK_GLASSES\n\tgoto_if_eq VAR_RESULT, TRUE, Route116_EventScript_PlayerHasGlasses\n\tspecialvar VAR_RESULT, FoundBlackGlasses\n\tgoto_if_eq VAR_RESULT, TRUE, Route116_EventScript_FoundGlassesNotOnPlayer\n\tmsgbox Route116_Text_CanYouHelpMeFindGlasses, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route116_EventScript_GlassesMan",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route116/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_BLACK_GLASSES"
+    ]
+  }
+}

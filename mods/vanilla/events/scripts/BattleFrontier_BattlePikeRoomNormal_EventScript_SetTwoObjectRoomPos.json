@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomNormal_EventScript_SetTwoObjectRoomPos",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/battle_pike.inc",
+    "sha1": "f01ae67ca8ba2e8860c192c38f413ebd89aa5204"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/battle_pike.inc",
+    "rawScript": "setobjectxyperm LOCALID_PIKE_ROOM_NPC_1, 4, 4\n\tsetobjectxyperm LOCALID_PIKE_ROOM_NPC_2, 3, 4\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeRoomNormal_EventScript_SetTwoObjectRoomPos",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/battle_pike.inc",
+  "references": {}
+}

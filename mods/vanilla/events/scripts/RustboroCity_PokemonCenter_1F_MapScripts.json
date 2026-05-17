@@ -1,0 +1,24 @@
+{
+  "id": "RustboroCity_PokemonCenter_1F_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "83e7f64af75d58f3a58fed2f76931a1ea46151b5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, RustboroCity_PokemonCenter_1F_OnTransition\n\tmap_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume\n\t.byte 0"
+  },
+  "label": "RustboroCity_PokemonCenter_1F_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomNormal_Text_ImThePikeQueen",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "sha1": "54c1e0ee021a3a91375f3b05c8682c17ed095aa9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "rawScript": ".string \"I am LUCY\u2026\\n\"\n\t.string \"I am the law here\u2026\\l\"\n\t.string \"For I am the PIKE QUEEN\u2026\\p\"\n\t.string \"You already know it, but to advance,\\n\"\n\t.string \"you must defeat me\u2026\\p\"\n\t.string \"\u2026I'm not one for idle chatter.\\n\"\n\t.string \"Hurry. Come on\u2026$\""
+  },
+  "label": "BattleFrontier_BattlePikeRoomNormal_Text_ImThePikeQueen",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+  "references": {}
+}

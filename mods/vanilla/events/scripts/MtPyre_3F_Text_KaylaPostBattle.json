@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_3F_Text_KaylaPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_3F/scripts.inc",
+    "sha1": "694f843b2a8c41803b3943fcf555c5a14a36d997"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_3F/scripts.inc",
+    "rawScript": ".string \"This means my training is still not\\n\"\n\t.string \"enough\u2026\\p\"\n\t.string \"I've got to keep working toward the\\n\"\n\t.string \"summit\u2026\\p\"\n\t.string \"Go, me!$\""
+  },
+  "label": "MtPyre_3F_Text_KaylaPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_3F/scripts.inc",
+  "references": {}
+}

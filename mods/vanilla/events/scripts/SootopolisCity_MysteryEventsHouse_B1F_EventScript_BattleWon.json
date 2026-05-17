@@ -1,0 +1,23 @@
+{
+  "id": "SootopolisCity_MysteryEventsHouse_B1F_EventScript_BattleWon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_MysteryEventsHouse_B1F/scripts.inc",
+    "sha1": "9a58ab5d1fb1306581fc7e54c8b85f2f69a8ee94"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_MysteryEventsHouse_B1F/scripts.inc",
+    "rawScript": "setvar VAR_SOOTOPOLIS_MYSTERY_EVENTS_STATE, 1\n\tspecial ShowFieldMessageStringVar4\n\twaitmessage\n\twaitbuttonpress\n\treturn"
+  },
+  "label": "SootopolisCity_MysteryEventsHouse_B1F_EventScript_BattleWon",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity_MysteryEventsHouse_B1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_SOOTOPOLIS_MYSTERY_EVENTS_STATE"
+    ]
+  }
+}

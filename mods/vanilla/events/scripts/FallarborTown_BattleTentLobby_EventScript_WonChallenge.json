@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_BattleTentLobby_EventScript_WonChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "sha1": "007b5945200863133fd43941054ec8db085a0356"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "rawScript": "lockall\n\tmsgbox FallarborTown_BattleTentLobby_Text_BeatThreeTrainers, MSGBOX_DEFAULT\n\tmessage FallarborTown_BattleTentLobby_Text_WaitWhileSaveGame\n\twaitmessage\n\tfallarbortent_setrandomprize\n\tfrontier_set FRONTIER_DATA_LVL_MODE, FRONTIER_LVL_50\n\tfallarbortent_save 0\n\tplayse SE_SAVE\n\twaitse"
+  },
+  "label": "FallarborTown_BattleTentLobby_EventScript_WonChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+  "references": {}
+}

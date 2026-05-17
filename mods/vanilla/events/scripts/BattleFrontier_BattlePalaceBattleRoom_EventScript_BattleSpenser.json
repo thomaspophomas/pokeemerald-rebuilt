@@ -1,0 +1,27 @@
+{
+  "id": "BattleFrontier_BattlePalaceBattleRoom_EventScript_BattleSpenser",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "sha1": "c4392c432f84fdbe0613ac4b067366a168a52056"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "rawScript": "call BattleFrontier_EventScript_SetBrainObjectGfx\n\tmsgbox BattleFrontier_BattlePalaceBattleRoom_Text_AnnounceArrivalOfSpenser, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_PALACE_BATTLE_PLAYER, BattleFrontier_BattlePalaceBattleRoom_Movement_FaceRight\n\tapplymovement LOCALID_PALACE_BATTLE_ATTENDANT, BattleFrontier_BattlePalaceBattleRoom_Movement_FaceRight\n\tsetobjectxyperm LOCALID_PALACE_BATTLE_OPPONENT, 15, 1\n\taddobject LOCALID_PALACE_BATTLE_OPPONENT\n\thideobjectat LOCALID_PALACE_BATTLE_OPPONENT, MAP_BATTLE_FRONTIER_BATTLE_PALACE_BATTLE_ROOM\n\tsetobjectxy LOCALID_PALACE_BATTLE_OPPONENT, 13, 1\n\tsetobjectxyperm LOCALID_PALACE_BATTLE_OPPONENT, 13, 1\n\tapplymovement LOCALID_PALACE_DUSCLOPS, BattleFrontier_BattlePalaceBattleRoom_Movement_DusclopsEnter\n\tapplymovement LOCALID_PALACE_AZURILL, BattleFrontier_BattlePalaceBattleRoom_Movement_AzurillEnter\n\tapplymovement LOCALID_PALACE_BATTLE_OPPONENT, BattleFrontier_BattlePalaceBattleRoom_Movement_SpenserEnter\n\twaitmovement 0\n\tswitch VAR_TEMP_F\n\tcase FRONTIER_BRAIN_GOLD, BattleFrontier_BattlePalaceBattleRoom_EventScript_IntroSpenserGold\n\tcase FRONTIER_BRAIN_STREAK, BattleFrontier_BattlePalaceBattleRoom_EventScript_BattleSpenserSilver\n\tcase FRONTIER_BRAIN_STREAK_LONG, BattleFrontier_BattlePalaceBattleRoom_EventScript_BattleSpenserGold\n\tfrontier_get FRONTIER_DATA_HEARD_BRAIN_SPEECH\n\tgoto_if_ne VAR_RESULT, FALSE, BattleFrontier_BattlePalaceBattleRoom_EventScript_BattleSpenserSilver\n\tmsgbox BattleFrontier_BattlePalaceBattleRoom_Text_SpenserFirstIntro, MSGBOX_DEFAULT\n\tfrontier_set FRONTIER_DATA_HEARD_BRAIN_SPEECH"
+  },
+  "label": "BattleFrontier_BattlePalaceBattleRoom_EventScript_BattleSpenser",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_F"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_PALACE_BATTLE_ROOM"
+    ]
+  }
+}

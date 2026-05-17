@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_2F/scripts.inc",
+    "sha1": "5b4ee799e1c265da48c7feabc7e0a7e45485708e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_2F/scripts.inc",
+    "rawScript": ".string \"Learn to use items properly.\\n\"\n\t.string \"That's basic, really.$\""
+  },
+  "label": "LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Underwater_SootopolisCity_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_SootopolisCity/scripts.inc",
+    "sha1": "6e5f6f6d2ed921e763b07f8cbb0eab4296cf14e1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Underwater_SootopolisCity/scripts.inc",
+    "rawScript": "setdivewarp MAP_SOOTOPOLIS_CITY, 29, 53\n\tend"
+  },
+  "label": "Underwater_SootopolisCity_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Underwater_SootopolisCity/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SOOTOPOLIS_CITY"
+    ]
+  }
+}

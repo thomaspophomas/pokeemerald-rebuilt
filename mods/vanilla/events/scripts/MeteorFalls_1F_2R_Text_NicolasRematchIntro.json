@@ -1,0 +1,19 @@
+{
+  "id": "MeteorFalls_1F_2R_Text_NicolasRematchIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+    "sha1": "09c545be014eea4099489af97aeae4f12469cf78"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+    "rawScript": ".string \"Since we met, we have trained hard\\n\"\n\t.string \"with our sights on number one.\\p\"\n\t.string \"Help us see how much stronger we've\\n\"\n\t.string \"become!$\""
+  },
+  "label": "MeteorFalls_1F_2R_Text_NicolasRematchIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+  "references": {}
+}

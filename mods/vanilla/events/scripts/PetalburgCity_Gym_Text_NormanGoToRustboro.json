@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_NormanGoToRustboro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"DAD: Hm? Aren't you going to the\\n\"\n\t.string \"POK\u00e9MON GYM in RUSTBORO CITY?\\p\"\n\t.string \"There's no challenge for me to\\n\"\n\t.string \"battle a greenhorn TRAINER.\\p\"\n\t.string \"{PLAYER}, I want you to challenge me\\n\"\n\t.string \"when you become a lot stronger.\\p\"\n\t.string \"I'll battle you, {PLAYER}, when you\\n\"\n\t.string \"can show me four GYM BADGES, okay?$\""
+  },
+  "label": "PetalburgCity_Gym_Text_NormanGoToRustboro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

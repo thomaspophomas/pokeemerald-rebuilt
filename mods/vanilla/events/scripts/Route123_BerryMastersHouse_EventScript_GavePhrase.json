@@ -1,0 +1,19 @@
+{
+  "id": "Route123_BerryMastersHouse_EventScript_GavePhrase",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route123_BerryMastersHouse/scripts.inc",
+    "sha1": "9a0e063a546e4fa501fad1644e1e6356f5e7917a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route123_BerryMastersHouse/scripts.inc",
+    "rawScript": "goto_if_eq VAR_0x8004, NOT_SPECIAL_PHRASE, Route123_BerryMastersHouse_EventScript_GiveNormalBerry\n\tgoto_if_eq VAR_0x8004, PHRASE_GREAT_BATTLE, Route123_BerryMastersHouse_EventScript_GiveSpelonBerry\n\tgoto_if_eq VAR_0x8004, PHRASE_CHALLENGE_CONTEST, Route123_BerryMastersHouse_EventScript_GivePamtreBerry\n\tgoto_if_eq VAR_0x8004, PHRASE_OVERWHELMING_LATIAS, Route123_BerryMastersHouse_EventScript_GiveWatmelBerry\n\tgoto_if_eq VAR_0x8004, PHRASE_COOL_LATIOS, Route123_BerryMastersHouse_EventScript_GiveDurinBerry\n\tgoto_if_eq VAR_0x8004, PHRASE_SUPER_HUSTLE, Route123_BerryMastersHouse_EventScript_GiveBelueBerry\n\tend"
+  },
+  "label": "Route123_BerryMastersHouse_EventScript_GavePhrase",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route123_BerryMastersHouse/scripts.inc",
+  "references": {}
+}

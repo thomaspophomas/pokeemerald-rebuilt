@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_PokemonFanClub_EventScript_DeclineInterview2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/interview.inc",
+    "sha1": "bd1d5135ce2e319a18291aebafac5c4760b90500"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/interview.inc",
+    "rawScript": "msgbox SlateportCity_PokemonFanClub_Text_HereIfYouGetUrgeToTellMe, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "SlateportCity_PokemonFanClub_EventScript_DeclineInterview2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/interview.inc",
+  "references": {}
+}

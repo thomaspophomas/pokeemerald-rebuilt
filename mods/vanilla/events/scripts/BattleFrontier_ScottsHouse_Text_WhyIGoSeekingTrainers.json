@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "sha1": "c30df9e905f6d4b9d9e1eaf4d4fccf30db88e083"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "rawScript": ".string \"SCOTT: Every TRAINER is an individual.\\n\"\n\t.string \"They all lead lives of their own.\\p\"\n\t.string \"But when they're in a battle,\\n\"\n\t.string \"it doesn't matter who they are.\\p\"\n\t.string \"They're all the same!\\p\"\n\t.string \"I love the purity of battle,\\n\"\n\t.string \"where everyone is equal.\\p\"\n\t.string \"That's why I go everywhere seeking\\n\"\n\t.string \"TRAINERS who are serious about\\l\"\n\t.string \"battling, and invite them here.$\""
+  },
+  "label": "BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "AquaHideout_1F_EventScript_MagmaHideoutHint2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_1F/scripts.inc",
+    "sha1": "fb0f9c771050564c49799918dc1d87097cc9380f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_1F/scripts.inc",
+    "rawScript": "msgbox AquaHideout_1F_Text_TeamMagmaAtMtChimney, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "AquaHideout_1F_EventScript_MagmaHideoutHint2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AquaHideout_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleDomeBattleRoom_EventScript_LostToOpponent",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "sha1": "2cf5ea83e82fbd2189ced7e0cd4d5f894bf74650"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "rawScript": "applymovement LOCALID_DOME_ANNOUNCER, Common_Movement_WalkInPlaceDown\n\twaitmovement 0\n\tdome_getopponentname\n\tcall_if_eq VAR_TEMP_2, NO_DRAW, BattleFrontier_BattleDomeBattleRoom_EventScript_OpponentWon\n\tcall_if_eq VAR_TEMP_2, DRAW_TRAINER, BattleFrontier_BattleDomeBattleRoom_EventScript_OpponentWonDraw\n\tcall_if_eq VAR_TEMP_2, DRAW_TUCKER, BattleFrontier_BattleDomeBattleRoom_EventScript_TuckerWonDraw\n\tplayse SE_M_ENCORE2\n\tcall BattleFrontier_BattleDomeBattleRoom_EventScript_AudienceLookAround\n\tdelay 60"
+  },
+  "label": "BattleFrontier_BattleDomeBattleRoom_EventScript_LostToOpponent",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_2"
+    ]
+  }
+}

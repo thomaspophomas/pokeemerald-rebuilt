@@ -1,0 +1,19 @@
+{
+  "id": "Route117_PokemonDayCare_Text_ComeAgain",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/day_care.inc",
+    "sha1": "b807399ab522de3ba938194e85f890a343362752"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/day_care.inc",
+    "rawScript": ".string \"Fine.\\n\"\n\t.string \"Come again.$\""
+  },
+  "label": "Route117_PokemonDayCare_Text_ComeAgain",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/day_care.inc",
+  "references": {}
+}

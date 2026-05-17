@@ -1,0 +1,19 @@
+{
+  "id": "Route119_EventScript_Kecleon1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/kecleon.inc",
+    "sha1": "853d51ea059b0385e54680a0e8673b749de3efc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/kecleon.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tsetvar VAR_0x8009, 6\n\tgoto EventScript_Kecleon\n\tend"
+  },
+  "label": "Route119_EventScript_Kecleon1",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/kecleon.inc",
+  "references": {}
+}

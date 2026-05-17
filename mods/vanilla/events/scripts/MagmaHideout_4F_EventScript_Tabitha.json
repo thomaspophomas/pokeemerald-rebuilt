@@ -1,0 +1,23 @@
+{
+  "id": "MagmaHideout_4F_EventScript_Tabitha",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_4F/scripts.inc",
+    "sha1": "8f2c61f090f2c324dc4138c5d5ad754b00dfcb48"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_4F/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_TABITHA_MAGMA_HIDEOUT, MagmaHideout_4F_Text_TabithaIntro, MagmaHideout_4F_Text_TabithaDefeat\n\tmsgbox MagmaHideout_4F_Text_TabithaPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "MagmaHideout_4F_EventScript_Tabitha",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MagmaHideout_4F/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_TABITHA_MAGMA_HIDEOUT"
+    ]
+  }
+}

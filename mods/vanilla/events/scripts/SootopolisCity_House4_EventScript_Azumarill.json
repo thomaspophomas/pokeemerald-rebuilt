@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_House4_EventScript_Azumarill",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_House4/scripts.inc",
+    "sha1": "c3109385d86e9bb6e58cd1691d912d37355d9013"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_House4/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\twaitse\n\tplaymoncry SPECIES_AZUMARILL, CRY_MODE_NORMAL\n\tmsgbox SootopolisCity_House4_Text_Azumarill, MSGBOX_DEFAULT\n\twaitmoncry\n\trelease\n\tend"
+  },
+  "label": "SootopolisCity_House4_EventScript_Azumarill",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity_House4/scripts.inc",
+  "references": {}
+}

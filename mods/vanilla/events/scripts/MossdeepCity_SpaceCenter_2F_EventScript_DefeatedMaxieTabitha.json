@@ -1,0 +1,34 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "rawScript": "msgbox MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided, MSGBOX_DEFAULT\n\tclosemessage\n\tdelay 20\n\tapplymovement LOCALID_SPACE_CENTER_MAXIE, Common_Movement_WalkInPlaceFasterLeft\n\tapplymovement LOCALID_SPACE_CENTER_TABITHA, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tdelay 60\n\tapplymovement LOCALID_SPACE_CENTER_MAXIE, Common_Movement_WalkInPlaceFasterUp\n\tapplymovement LOCALID_SPACE_CENTER_TABITHA, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\tdelay 20\n\tmsgbox MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp, MSGBOX_DEFAULT\n\tclosemessage\n\tsetvar VAR_MOSSDEEP_CITY_STATE, 3\n\tfadedefaultbgm\n\tfadescreen FADE_TO_BLACK\n\tsetvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 3\n\tsetflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_TEAM_MAGMA\n\tsetflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA\n\tsetflag FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA\n\tremoveobject LOCALID_SPACE_CENTER_GRUNT_6\n\tremoveobject LOCALID_SPACE_CENTER_GRUNT_7\n\tremoveobject LOCALID_SPACE_CENTER_GRUNT_5\n\tremoveobject LOCALID_SPACE_CENTER_TABITHA\n\tremoveobject LOCALID_SPACE_CENTER_MAXIE\n\tsetobjectxy LOCALID_SPACE_CENTER_2F_SCIENTIST, 5, 6\n\tturnobject LOCALID_SPACE_CENTER_2F_SCIENTIST, DIR_SOUTH\n\tsetobjectxy LOCALID_SPACE_CENTER_2F_GENTLEMAN, 11, 8\n\tturnobject LOCALID_SPACE_CENTER_2F_GENTLEMAN, DIR_NORTH\n\tsetobjectxy LOCALID_SPACE_CENTER_2F_RICH_BOY, 6, 2\n\tturnobject LOCALID_SPACE_CENTER_2F_RICH_BOY, DIR_NORTH\n\tcall MossdeepCity_SpaceCenter_2F_EventScript_StevenFacePlayer\n\tfadescreen FADE_FROM_BLACK\n\tmsgbox MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome, MSGBOX_DEFAULT\n\tclosemessage\n\tfadescreen FADE_TO_BLACK\n\tsetflag FLAG_DEFEATED_MAGMA_SPACE_CENTER\n\tsetflag FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_STEVEN\n\tremoveobject LOCALID_SPACE_CENTER_2F_STEVEN\n\tsetflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_MAGMA_NOTE\n\tclearflag FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_STEVEN\n\tsetvar VAR_STEVENS_HOUSE_STATE, 1\n\tsetflag FLAG_HIDE_MOSSDEEP_CITY_SCOTT\n\tremoveobject LOCALID_SPACE_CENTER_2F_SCIENTIST\n\tsetobjectxyperm LOCALID_SPACE_CENTER_2F_SCIENTIST, 5, 6\n\tsetobjectmovementtype LOCALID_SPACE_CENTER_2F_SCIENTIST, MOVEMENT_TYPE_WANDER_AROUND\n\taddobject LOCALID_SPACE_CENTER_2F_SCIENTIST\n\tfadescreen FADE_FROM_BLACK\n#ifdef BUGFIX\n\treleaseall\n#endif\n\tend"
+  },
+  "label": "MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_MAGMA_SPACE_CENTER",
+      "FLAG_HIDE_MOSSDEEP_CITY_SCOTT",
+      "FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_TEAM_MAGMA",
+      "FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA",
+      "FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_MAGMA_NOTE",
+      "FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_STEVEN",
+      "FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA"
+    ],
+    "vars": [
+      "VAR_MOSSDEEP_CITY_STATE",
+      "VAR_MOSSDEEP_SPACE_CENTER_STATE",
+      "VAR_STEVENS_HOUSE_STATE"
+    ]
+  }
+}

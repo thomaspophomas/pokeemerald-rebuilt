@@ -1,0 +1,23 @@
+{
+  "id": "SafariZone_South_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_South/scripts.inc",
+    "sha1": "f646b8fd9a41bcca9341c62dd81202b659f66065"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SafariZone_South/scripts.inc",
+    "rawScript": "call_if_eq VAR_SAFARI_ZONE_STATE, 2, SafariZone_South_EventScript_SetExitAttendantAside\n\tend"
+  },
+  "label": "SafariZone_South_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/SafariZone_South/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_SAFARI_ZONE_STATE"
+    ]
+  }
+}

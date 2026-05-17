@@ -1,0 +1,23 @@
+{
+  "id": "FieryPath_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FieryPath/scripts.inc",
+    "sha1": "11242b6ad4afd2b69b6b55772c09b18cf102c261"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FieryPath/scripts.inc",
+    "rawScript": "call_if_unset FLAG_LANDMARK_FIERY_PATH, FieryPath_EventScript_MoveScottToFallarbor\n\tsetflag FLAG_LANDMARK_FIERY_PATH\n\tend"
+  },
+  "label": "FieryPath_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/FieryPath/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_LANDMARK_FIERY_PATH"
+    ]
+  }
+}

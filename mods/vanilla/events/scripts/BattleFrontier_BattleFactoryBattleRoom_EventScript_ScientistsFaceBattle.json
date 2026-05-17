@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleFactoryBattleRoom_EventScript_ScientistsFaceBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+    "sha1": "d6c9d92d97f61a06b3670b7d509844f3bc902eb3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+    "rawScript": "applymovement LOCALID_FACTORY_BATTLE_SCIENTIST_1, Common_Movement_WalkInPlaceFasterRight\n\tapplymovement LOCALID_FACTORY_BATTLE_SCIENTIST_2, Common_Movement_WalkInPlaceFasterRight\n\tapplymovement LOCALID_FACTORY_BATTLE_SCIENTIST_3, Common_Movement_WalkInPlaceFasterRight\n\tapplymovement LOCALID_FACTORY_BATTLE_SCIENTIST_4, Common_Movement_WalkInPlaceFasterLeft\n\tapplymovement LOCALID_FACTORY_BATTLE_SCIENTIST_5, Common_Movement_WalkInPlaceFasterLeft\n\tapplymovement LOCALID_FACTORY_BATTLE_SCIENTIST_6, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\treturn"
+  },
+  "label": "BattleFrontier_BattleFactoryBattleRoom_EventScript_ScientistsFaceBattle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+  "references": {}
+}

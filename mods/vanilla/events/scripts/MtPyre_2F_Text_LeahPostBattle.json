@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_2F_Text_LeahPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_2F/scripts.inc",
+    "sha1": "bc76e62a0ca08b33eb2220b94b2aff96bd7a1311"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_2F/scripts.inc",
+    "rawScript": ".string \"Our family has been TRAINERS here\\n\"\n\t.string \"since my great-grandmother's time\u2026\\p\"\n\t.string \"It is my duty to protect this\\n\"\n\t.string \"mountain\u2026$\""
+  },
+  "label": "MtPyre_2F_Text_LeahPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_2F/scripts.inc",
+  "references": {}
+}

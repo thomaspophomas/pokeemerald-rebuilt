@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomeBattleRoom_Text_RefereeDecisionPleaseWait",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "sha1": "2cf5ea83e82fbd2189ced7e0cd4d5f894bf74650"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "rawScript": ".string \"What an unbelievable finish!\\n\"\n\t.string \"We have a double knockout!\\p\"\n\t.string \"In this event, the Battle Tournament\\n\"\n\t.string \"rules call for a REFEREE'S decision.\\p\"\n\t.string \"Please wait while the judging\\n\"\n\t.string \"is under way.$\""
+  },
+  "label": "BattleFrontier_BattleDomeBattleRoom_Text_RefereeDecisionPleaseWait",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+  "references": {}
+}

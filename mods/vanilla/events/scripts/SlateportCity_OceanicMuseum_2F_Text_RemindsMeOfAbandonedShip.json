@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_OceanicMuseum_2F_Text_RemindsMeOfAbandonedShip",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+    "sha1": "13553a30435b8213726cfc4734cfaf0043bc447f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+    "rawScript": ".string \"I saw a model of a ship here.\\p\"\n\t.string \"It reminded me of the ABANDONED SHIP\\n\"\n\t.string \"near DEWFORD TOWN\u2026$\""
+  },
+  "label": "SlateportCity_OceanicMuseum_2F_Text_RemindsMeOfAbandonedShip",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+  "references": {}
+}

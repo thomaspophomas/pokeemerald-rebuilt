@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_EventScript_LittleGirl",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmsgbox RustboroCity_Text_PokemonChangeShape, MSGBOX_DEFAULT\n\tapplymovement LOCALID_RUSTBORO_LITTLE_GIRL, Common_Movement_FaceOriginalDirection\n\twaitmovement 0\n\trelease\n\tend"
+  },
+  "label": "RustboroCity_EventScript_LittleGirl",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

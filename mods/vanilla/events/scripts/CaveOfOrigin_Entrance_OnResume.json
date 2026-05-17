@@ -1,0 +1,23 @@
+{
+  "id": "CaveOfOrigin_Entrance_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/CaveOfOrigin_Entrance/scripts.inc",
+    "sha1": "b318c74f85a4d425456a16dcddd06bf1482334bd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/CaveOfOrigin_Entrance/scripts.inc",
+    "rawScript": "setescapewarp MAP_SOOTOPOLIS_CITY, 31, 17\n\tend"
+  },
+  "label": "CaveOfOrigin_Entrance_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/CaveOfOrigin_Entrance/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SOOTOPOLIS_CITY"
+    ]
+  }
+}

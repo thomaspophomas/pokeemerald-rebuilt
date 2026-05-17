@@ -1,0 +1,37 @@
+{
+  "id": "MossdeepCity_Gym_EventScript_TateAndLizaDefeated",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "sha1": "f1b3ae6c76fdfe44b1431df4ea78da5c11a79c08"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "rawScript": "message MossdeepCity_Gym_Text_ReceivedMindBadge\n\twaitmessage\n\tcall Common_EventScript_PlayGymBadgeFanfare\n\tmsgbox MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis, MSGBOX_DEFAULT\n\tsetflag FLAG_DEFEATED_MOSSDEEP_GYM\n\tsetflag FLAG_BADGE07_GET\n\tsetflag FLAG_HIDE_AQUA_HIDEOUT_GRUNTS\n\tclearflag FLAG_HIDE_SLATEPORT_CITY_STERNS_SHIPYARD_MR_BRINEY\n\tclearflag FLAG_UNKNOWN_0x393\n\tsetvar VAR_0x8008, 7\n\tcall Common_EventScript_SetGymTrainers\n\tclearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_PATRONS\n\tclearflag FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA\n\tclearflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_TEAM_MAGMA\n\tclearflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA\n\tclearflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_STEVEN\n\tsetvar VAR_MOSSDEEP_CITY_STATE, 1\n\tsetflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_STEVEN\n\tsetvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 1\n\tcall MossdeepCity_Gym_EventScript_GiveCalmMind\n\tclosemessage\n\tdelay 30\n\tplayfanfare MUS_REGISTER_MATCH_CALL\n\tmsgbox MossdeepCity_Gym_Text_RegisteredTateAndLiza, MSGBOX_DEFAULT\n\twaitfanfare\n\tclosemessage\n\tdelay 30\n\tsetflag FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL\n\trelease\n\tend"
+  },
+  "label": "MossdeepCity_Gym_EventScript_TateAndLizaDefeated",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_BADGE07_GET",
+      "FLAG_DEFEATED_MOSSDEEP_GYM",
+      "FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL",
+      "FLAG_HIDE_AQUA_HIDEOUT_GRUNTS",
+      "FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_STEVEN",
+      "FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_TEAM_MAGMA",
+      "FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_STEVEN",
+      "FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA",
+      "FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA",
+      "FLAG_HIDE_SLATEPORT_CITY_HARBOR_PATRONS",
+      "FLAG_HIDE_SLATEPORT_CITY_STERNS_SHIPYARD_MR_BRINEY"
+    ],
+    "vars": [
+      "VAR_MOSSDEEP_CITY_STATE",
+      "VAR_MOSSDEEP_SPACE_CENTER_STATE"
+    ]
+  }
+}

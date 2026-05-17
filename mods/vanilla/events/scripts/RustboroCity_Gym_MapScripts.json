@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Gym_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Gym/scripts.inc",
+    "sha1": "e0aa9de4fed612674104e48c7646854400dcecde"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Gym/scripts.inc",
+    "rawScript": ".byte 0"
+  },
+  "label": "RustboroCity_Gym_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/RustboroCity_Gym/scripts.inc",
+  "references": {}
+}

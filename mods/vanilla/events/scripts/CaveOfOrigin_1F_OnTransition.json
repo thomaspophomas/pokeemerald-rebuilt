@@ -1,0 +1,23 @@
+{
+  "id": "CaveOfOrigin_1F_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/CaveOfOrigin_1F/scripts.inc",
+    "sha1": "47305c3601fb6afcb87233529222315d6db042b8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/CaveOfOrigin_1F/scripts.inc",
+    "rawScript": "call_if_set FLAG_UNUSED_RS_LEGENDARY_BATTLE_DONE, CaveOfOrigin_EventScript_DisableTriggers\n\tend"
+  },
+  "label": "CaveOfOrigin_1F_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/CaveOfOrigin_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_UNUSED_RS_LEGENDARY_BATTLE_DONE"
+    ]
+  }
+}

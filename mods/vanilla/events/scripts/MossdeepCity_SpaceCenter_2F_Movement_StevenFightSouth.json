@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F_Movement_StevenFightSouth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "rawScript": "face_left\n\tlock_facing_direction\n\twalk_fast_right\n\twalk_fast_right\n\tunlock_facing_direction\n\tdelay_16\n\tdelay_16\n\twalk_slow_left\n\twalk_slow_left\n\tface_down\n\tstep_end"
+  },
+  "label": "MossdeepCity_SpaceCenter_2F_Movement_StevenFightSouth",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+  "references": {}
+}

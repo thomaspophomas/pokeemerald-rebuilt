@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby_EventScript_QuitWithoutSaving",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "sha1": "b93395a7ee7156a94cfa3817fd6222cfa69e94fd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "rawScript": "lockall\n\tmessage BattleFrontier_BattlePyramidLobby_Text_DidntSaveBeforeQuittingTakeBag\n\twaitmessage\n\tplayse SE_EXP_MAX\n\twaitse\n\tclosemessage\n\tpyramid_set PYRAMID_DATA_WIN_STREAK, 0\n\tpyramid_set PYRAMID_DATA_WIN_STREAK_ACTIVE, FALSE\n\tfrontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 255\n\treleaseall\n\tend"
+  },
+  "label": "BattleFrontier_BattlePyramidLobby_EventScript_QuitWithoutSaving",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ]
+  }
+}

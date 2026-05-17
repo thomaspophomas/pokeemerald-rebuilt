@@ -1,0 +1,19 @@
+{
+  "id": "Route119_WeatherInstitute_2F_EventScript_SetScientistPosAquaHere",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "sha1": "fb62e5a84003aa6247f1e7fe6ea409ec86ac92cc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "rawScript": "setobjectxyperm LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST, 1, 6\n\tsetobjectmovementtype LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST, MOVEMENT_TYPE_FACE_RIGHT\n\treturn"
+  },
+  "label": "Route119_WeatherInstitute_2F_EventScript_SetScientistPosAquaHere",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+  "references": {}
+}

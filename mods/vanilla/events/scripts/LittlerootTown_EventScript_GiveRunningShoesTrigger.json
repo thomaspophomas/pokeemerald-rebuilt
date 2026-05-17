@@ -1,0 +1,23 @@
+{
+  "id": "LittlerootTown_EventScript_GiveRunningShoesTrigger",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": "checkplayergender\n\tcall_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_MomNoticePlayerMale\n\tcall_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_MomNoticePlayerFemale\n\tcheckplayergender\n\tcall_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_SetHomeDoorCoordsMale\n\tcall_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_SetHomeDoorCoordsFemale\n\tmsgbox LittlerootTown_Text_WaitPlayer, MSGBOX_DEFAULT\n\tclosemessage\n\tcheckplayergender\n\tcall_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_MomApproachPlayerMale\n\tcall_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_MomApproachPlayerFemale\n\tcall LittlerootTown_EventScript_GiveRunningShoes\n\tcheckplayergender\n\tcall_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_MomReturnHomeMale\n\tcall_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_MomReturnHomeFemale\n\tgoto LittlerootTown_EventScript_SetReceivedRunningShoes\n\tend"
+  },
+  "label": "LittlerootTown_EventScript_GiveRunningShoesTrigger",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

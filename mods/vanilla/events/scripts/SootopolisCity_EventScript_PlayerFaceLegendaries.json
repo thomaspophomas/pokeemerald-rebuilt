@@ -1,0 +1,23 @@
+{
+  "id": "SootopolisCity_EventScript_PlayerFaceLegendaries",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": "call_if_eq VAR_SKY_PILLAR_STATE, 1, SootopolisCity_EventScript_PlayerFaceLegendaries1\n\tcall_if_eq VAR_SKY_PILLAR_STATE, 2, SootopolisCity_EventScript_PlayerFaceLegendaries2\n\tend"
+  },
+  "label": "SootopolisCity_EventScript_PlayerFaceLegendaries",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_SKY_PILLAR_STATE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_DevonCorp_1F_Text_RocksMetalDisplay",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_1F/scripts.inc",
+    "sha1": "c37d7b38d1160c2692286fc6de96377169c9e8d1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_1F/scripts.inc",
+    "rawScript": ".string \"Samples of rocks and metal are\\n\"\n\t.string \"displayed in the glass case.\\p\"\n\t.string \"There's a panel with some writing\\n\"\n\t.string \"on it\u2026\\p\"\n\t.string \"\u201cDEVON CORPORATION got its start as\\n\"\n\t.string \"a producer of stones from quarries.\\p\"\n\t.string \"\u201cThe company also produced iron from\\n\"\n\t.string \"filings in the sand.\\p\"\n\t.string \"\u201cFrom that humble start as a producer\\n\"\n\t.string \"of raw materials, DEVON developed.\\p\"\n\t.string \"\u201cDEVON is now a manufacturer of a wide\\n\"\n\t.string \"range of industrial products.\u201d$\""
+  },
+  "label": "RustboroCity_DevonCorp_1F_Text_RocksMetalDisplay",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_1F/scripts.inc",
+  "references": {}
+}

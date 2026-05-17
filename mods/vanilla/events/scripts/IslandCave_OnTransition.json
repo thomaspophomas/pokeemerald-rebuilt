@@ -1,0 +1,24 @@
+{
+  "id": "IslandCave_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/IslandCave/scripts.inc",
+    "sha1": "36e3ca89a53bdf101cff26d6ef8efcf46552e41d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/IslandCave/scripts.inc",
+    "rawScript": "setflag FLAG_LANDMARK_ISLAND_CAVE\n\tcall IslandCave_EventScript_ClearSteps\n\tcall_if_unset FLAG_DEFEATED_REGICE, IslandCave_EventScript_ShowRegice\n\tend"
+  },
+  "label": "IslandCave_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/IslandCave/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_REGICE",
+      "FLAG_LANDMARK_ISLAND_CAVE"
+    ]
+  }
+}

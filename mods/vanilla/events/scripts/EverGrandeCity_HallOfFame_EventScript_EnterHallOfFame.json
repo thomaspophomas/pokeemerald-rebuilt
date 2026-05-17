@@ -1,0 +1,24 @@
+{
+  "id": "EverGrandeCity_HallOfFame_EventScript_EnterHallOfFame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_HallOfFame/scripts.inc",
+    "sha1": "c6da78131eff88a85e046e0e631d7de403522957"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_HallOfFame/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_HALL_OF_FAME_WALLACE, EverGrandeCity_HallOfFame_Movement_WalkIntoHallOfFame1\n\tapplymovement LOCALID_PLAYER, EverGrandeCity_HallOfFame_Movement_WalkIntoHallOfFame1\n\twaitmovement 0\n\tapplymovement LOCALID_HALL_OF_FAME_WALLACE, Common_Movement_WalkInPlaceFasterRight\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tmsgbox EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_HALL_OF_FAME_WALLACE, EverGrandeCity_HallOfFame_Movement_WalkIntoHallOfFame2\n\tapplymovement LOCALID_PLAYER, EverGrandeCity_HallOfFame_Movement_WalkIntoHallOfFame2\n\twaitmovement 0\n\tdelay 20\n\tapplymovement LOCALID_HALL_OF_FAME_WALLACE, Common_Movement_WalkInPlaceFasterRight\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tmsgbox EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_HALL_OF_FAME_WALLACE, Common_Movement_WalkInPlaceFasterUp\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tdelay 20\n\tdofieldeffect FLDEFF_HALL_OF_FAME_RECORD\n\twaitfieldeffect FLDEFF_HALL_OF_FAME_RECORD\n\tdelay 40\n\tsetvar VAR_TEMP_1, 1\n\tcall EverGrandeCity_HallOfFame_EventScript_SetGameClearFlags\n\tcheckplayergender\n\tgoto_if_eq VAR_RESULT, MALE, EverGrandeCity_HallOfFame_EventScript_GameClearMale\n\tgoto_if_eq VAR_RESULT, FEMALE, EverGrandeCity_HallOfFame_EventScript_GameClearFemale\n\tend"
+  },
+  "label": "EverGrandeCity_HallOfFame_EventScript_EnterHallOfFame",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_HallOfFame/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_1"
+    ]
+  }
+}

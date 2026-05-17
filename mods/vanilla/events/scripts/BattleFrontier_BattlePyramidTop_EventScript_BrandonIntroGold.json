@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePyramidTop_EventScript_BrandonIntroGold",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "sha1": "6256c29eca306dafcaec0dabbacc64547c474e58"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "rawScript": "frontier_get FRONTIER_DATA_HEARD_BRAIN_SPEECH\n\tgoto_if_ne VAR_RESULT, FALSE, BattleFrontier_BattlePyramidTop_EventScript_BrandonHeardGoldSpeech\n\tspecial SpawnCameraObject\n\tapplymovement LOCALID_CAMERA, BattleFrontier_BattlePyramidTop_Movement_CameraPanUp\n\twaitmovement 0\n\tmsgbox BattleFrontier_BattlePyramidTop_Text_BrandonYouveReturned, MSGBOX_DEFAULT\n\tclosemessage\n\tfrontier_set FRONTIER_DATA_HEARD_BRAIN_SPEECH\n\tapplymovement LOCALID_BRANDON, BattleFrontier_BattlePyramidTop_Movement_BrandonApproachPlayer\n\twaitmovement 0\n\tmsgbox BattleFrontier_BattlePyramidTop_Text_MyCourageIsOffMeter, MSGBOX_DEFAULT\n\tgoto BattleFrontier_BattlePyramidTop_EventScript_BattleBrandonGold\n\tend"
+  },
+  "label": "BattleFrontier_BattlePyramidTop_EventScript_BrandonIntroGold",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

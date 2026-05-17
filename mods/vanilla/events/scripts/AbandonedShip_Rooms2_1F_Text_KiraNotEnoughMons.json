@@ -1,0 +1,19 @@
+{
+  "id": "AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+    "sha1": "ba923c54b93786d603c658ba8fad2029d216a91e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+    "rawScript": ".string \"KIRA: Oh, you don't have two POK\u00e9MON?\\n\"\n\t.string \"We'll have to battle some other time!$\""
+  },
+  "label": "AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_EventScript_Apprentice",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/apprentice.inc",
+    "sha1": "353208142bca1df117076064d141b84efe196e7c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/apprentice.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tapprentice_gavelvlmode\n\tgoto_if_eq VAR_RESULT, FALSE, Apprentice_EventScript_FirstMeeting\n\tapprentice_shouldcheckgone\n\tgoto_if_eq VAR_0x8004, FALSE, Apprentice_EventScript_AskQuestion  @ VAR_0x8004 always TRUE here\n\tgoto_if_set FLAG_DAILY_APPRENTICE_LEAVES, Apprentice_EventScript_Gone"
+  },
+  "label": "BattleFrontier_BattleTowerLobby_EventScript_Apprentice",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/apprentice.inc",
+  "references": {
+    "flags": [
+      "FLAG_DAILY_APPRENTICE_LEAVES"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

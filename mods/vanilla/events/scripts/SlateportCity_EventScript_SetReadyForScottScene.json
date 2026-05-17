@@ -1,0 +1,23 @@
+{
+  "id": "SlateportCity_EventScript_SetReadyForScottScene",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": "setflag FLAG_HIDE_MAP_NAME_POPUP\n\tgetplayerxy VAR_0x8004, VAR_0x8005\n\tgoto_if_eq VAR_0x8004, 30, SlateportCity_EventScript_MoveScottLeft\n\tsetobjectxyperm LOCALID_SLATEPORT_SCOTT, 23, 27\n\tsetobjectmovementtype LOCALID_SLATEPORT_SCOTT, MOVEMENT_TYPE_FACE_RIGHT\n\treturn"
+  },
+  "label": "SlateportCity_EventScript_SetReadyForScottScene",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_MAP_NAME_POPUP"
+    ]
+  }
+}

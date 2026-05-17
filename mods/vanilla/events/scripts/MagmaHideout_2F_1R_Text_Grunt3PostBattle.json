@@ -1,0 +1,19 @@
+{
+  "id": "MagmaHideout_2F_1R_Text_Grunt3PostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_2F_1R/scripts.inc",
+    "sha1": "015ca35ad24a95edcf15463fdb5c0bcafde94383"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_2F_1R/scripts.inc",
+    "rawScript": ".string \"Maybe it would've been better if I did\\n\"\n\t.string \"just let you go unchallenged\u2026$\""
+  },
+  "label": "MagmaHideout_2F_1R_Text_Grunt3PostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MagmaHideout_2F_1R/scripts.inc",
+  "references": {}
+}

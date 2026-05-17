@@ -1,0 +1,23 @@
+{
+  "id": "Route110_TrickHouseEntrance_EventScript_TrickMasterFound",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "sha1": "9367efc136143832c1697fbcc61fbb296269d396"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "rawScript": "addobject LOCALID_TRICK_MASTER\n\tshowobjectat LOCALID_TRICK_MASTER, MAP_ROUTE110_TRICK_HOUSE_ENTRANCE\n\tturnobject LOCALID_TRICK_MASTER, DIR_EAST\n\tturnobject LOCALID_PLAYER, DIR_WEST\n\tend"
+  },
+  "label": "Route110_TrickHouseEntrance_EventScript_TrickMasterFound",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_ROUTE110_TRICK_HOUSE_ENTRANCE"
+    ]
+  }
+}

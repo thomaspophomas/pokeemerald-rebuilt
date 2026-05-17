@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge3_Text_BackedWrongTrainer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "sha1": "52169856e2442e0e7ad660050a45dce1a1b2405a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "rawScript": ".string \"I backed the wrong TRAINER again!\\p\"\n\t.string \"Maybe I should be battling normally\\n\"\n\t.string \"like everyone else\u2026$\""
+  },
+  "label": "BattleFrontier_Lounge3_Text_BackedWrongTrainer",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+  "references": {}
+}

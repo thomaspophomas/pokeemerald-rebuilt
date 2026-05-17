@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_BattleTentBattleRoom_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+    "sha1": "ab3b693d78c01bf41de27c238af8f5c28d91cffd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+    "rawScript": "call VerdanturfTown_BattleTentBattleRoom_EventScript_SetPlayerGfx\n\tend"
+  },
+  "label": "VerdanturfTown_BattleTentBattleRoom_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+  "references": {}
+}

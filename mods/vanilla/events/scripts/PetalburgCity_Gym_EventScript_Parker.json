@@ -1,0 +1,26 @@
+{
+  "id": "PetalburgCity_Gym_EventScript_Parker",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_PARKER, PetalburgCity_Gym_Text_ParkerIntro, PetalburgCity_Gym_Text_ParkerDefeat, PetalburgCity_Gym_EventScript_SlideOpenConfusionRoomDoors\n\tgoto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_ParkerPostBadge\n\tmsgbox PetalburgCity_Gym_Text_ParkerPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "PetalburgCity_Gym_EventScript_Parker",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_PETALBURG_GYM"
+    ],
+    "trainers": [
+      "TRAINER_PARKER"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "MtPyre_4F_EventScript_Tasha",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_5F/scripts.inc",
+    "sha1": "3adad473684ea761e469fef968141f4151fa1e7a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_5F/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_TASHA, MtPyre_4F_Text_TashaIntro, MtPyre_4F_Text_TashaDefeat\n\tmsgbox MtPyre_4F_Text_TashaPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "MtPyre_4F_EventScript_Tasha",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtPyre_5F/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_TASHA"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Text_BrendanYouCanThankMe",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": ".string \"BRENDAN: I went out all over HOENN\\n\"\n\t.string \"and checked out POK\u00e9MON.\\p\"\n\t.string \"You can thank me for getting\\n\"\n\t.string \"the NATIONAL Mode POK\u00e9DEX.\\p\"\n\t.string \"Yep, you're lucky, {PLAYER}!$\""
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Text_BrendanYouCanThankMe",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

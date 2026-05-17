@@ -1,0 +1,23 @@
+{
+  "id": "Route121_SafariZoneEntrance_EventScript_InfoAttendant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route121_SafariZoneEntrance/scripts.inc",
+    "sha1": "6a3d6039da49b2973bb2acbe14884a453fef9c72"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route121_SafariZoneEntrance/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmsgbox Route121_SafariZoneEntrance_Text_WelcomeFirstTime, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, Route121_SafariZoneEntrance_EventScript_FirstTimeInfo\n\tmsgbox Route121_SafariZoneEntrance_Text_ComeInAndEnjoy, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route121_SafariZoneEntrance_EventScript_InfoAttendant",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route121_SafariZoneEntrance/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

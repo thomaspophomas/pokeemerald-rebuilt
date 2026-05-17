@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_Text_TrainersPowerIsOutOfTheOrdinary",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": ".string \"I hate to say this, but the TRAINER\\n\"\n\t.string \"everybody's talking about is\\l\"\n\t.string \"{STR_VAR_1}, no question about it!\\p\"\n\t.string \"That TRAINER's power\u2026\\n\"\n\t.string \"It's out of the ordinary.$\""
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_Text_TrainersPowerIsOutOfTheOrdinary",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {}
+}

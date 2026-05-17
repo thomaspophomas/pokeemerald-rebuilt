@@ -1,0 +1,26 @@
+{
+  "id": "FortreeCity_EventScript_UseDevonScope",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity/scripts.inc",
+    "sha1": "a1f53b6d8b894e2f69fc9a5c4e1509ef9ab3ce09"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity/scripts.inc",
+    "rawScript": "msgbox FortreeCity_Text_UsedDevonScopePokemonFled, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement VAR_LAST_TALKED, Movement_KecleonAppears\n\twaitmovement 0\n\twaitse\n\tplaymoncry SPECIES_KECLEON, CRY_MODE_ENCOUNTER\n\tdelay 40\n\twaitmoncry\n\tapplymovement VAR_LAST_TALKED, FortreeCity_Movement_KecleonFlee\n\twaitmovement 0\n\tremoveobject VAR_LAST_TALKED\n\tsetflag FLAG_KECLEON_FLED_FORTREE\n\trelease\n\tend"
+  },
+  "label": "FortreeCity_EventScript_UseDevonScope",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FortreeCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_KECLEON_FLED_FORTREE"
+    ],
+    "vars": [
+      "VAR_LAST_TALKED"
+    ]
+  }
+}

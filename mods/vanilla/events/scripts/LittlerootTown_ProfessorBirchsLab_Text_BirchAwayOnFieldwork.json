@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": ".string \"Hunh? PROF. BIRCH?\\p\"\n\t.string \"The PROF's away on fieldwork.\\n\"\n\t.string \"Ergo, he isn't here.\\p\"\n\t.string \"Oh, let me explain what fieldwork is.\\p\"\n\t.string \"It is to study things in the natural\\n\"\n\t.string \"environment, like fields and mountains,\\l\"\n\t.string \"instead of a laboratory.\\p\"\n\t.string \"The PROF isn't one for doing desk work.\\n\"\n\t.string \"He's the type of person who would\\l\"\n\t.string \"rather go outside and experience\\l\"\n\t.string \"things than read about them here.$\""
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

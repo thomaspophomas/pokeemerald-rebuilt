@@ -1,0 +1,23 @@
+{
+  "id": "MeteorFalls_1F_2R_EventScript_RegisterJay",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+    "sha1": "09c545be014eea4099489af97aeae4f12469cf78"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+    "rawScript": "msgbox MeteorFalls_1F_2R_Text_JohnRegister, MSGBOX_DEFAULT  @ John speaks for both during register\n\tregister_matchcall TRAINER_JOHN_AND_JAY_1\n\trelease\n\tend"
+  },
+  "label": "MeteorFalls_1F_2R_EventScript_RegisterJay",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_JOHN_AND_JAY_1"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePyramidTop_Text_ImPyramidKingBrandon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "sha1": "6256c29eca306dafcaec0dabbacc64547c474e58"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "rawScript": ".string \"Aah, yes, indeed this life is grand!\\n\"\n\t.string \"Grand, it is! Eh?\\p\"\n\t.string \"I'm BRANDON!\\p\"\n\t.string \"I'm the PYRAMID KING, which means\\n\"\n\t.string \"I'm in charge here.\\p\"\n\t.string \"Most people call me the chief!\\p\"\n\t.string \"You coming here means you have\\n\"\n\t.string \"that much confidence in yourself,\\l\"\n\t.string \"am I right?\\p\"\n\t.string \"Hahahah!\\n\"\n\t.string \"This should be exciting!$\""
+  },
+  "label": "BattleFrontier_BattlePyramidTop_Text_ImPyramidKingBrandon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+  "references": {}
+}

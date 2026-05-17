@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_CuttersHouse_Text_YouCanPutThisHMToGoodUse",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_CuttersHouse/scripts.inc",
+    "sha1": "0cff426e47a716cd6d3863a87b4d99ec7a72a0b9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_CuttersHouse/scripts.inc",
+    "rawScript": ".string \"That determined expression\u2026\\n\"\n\t.string \"That limber way you move\u2026\\l\"\n\t.string \"And your well-trained POK\u00e9MON\u2026\\p\"\n\t.string \"You're obviously a skilled TRAINER!\\p\"\n\t.string \"No, wait, don't say a word.\\n\"\n\t.string \"I can tell just by looking at you.\\p\"\n\t.string \"I'm sure that you can put this\\n\"\n\t.string \"HIDDEN MACHINE to good use.\\p\"\n\t.string \"No need to be modest or shy.\\n\"\n\t.string \"Go on, take it!$\""
+  },
+  "label": "RustboroCity_CuttersHouse_Text_YouCanPutThisHMToGoodUse",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_CuttersHouse/scripts.inc",
+  "references": {}
+}

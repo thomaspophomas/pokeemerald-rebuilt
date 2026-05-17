@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_DevonCorp_2F_Text_TwoFossilsPickOne",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "sha1": "7e0aa6a4df50ead64287578a24ba19b07cafbb02"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "rawScript": ".string \"Oh, now that's a surprise!\\n\"\n\t.string \"You have not one, but two, fossils?\\p\"\n\t.string \"Unfortunately, my machine can only\\n\"\n\t.string \"regenerate one POK\u00e9MON at a time.\\p\"\n\t.string \"Would you like to pick one of your\\n\"\n\t.string \"fossils for regeneration?$\""
+  },
+  "label": "RustboroCity_DevonCorp_2F_Text_TwoFossilsPickOne",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+  "references": {}
+}

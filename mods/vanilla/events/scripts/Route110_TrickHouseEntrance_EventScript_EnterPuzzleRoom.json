@@ -1,0 +1,23 @@
+{
+  "id": "Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "sha1": "9367efc136143832c1697fbcc61fbb296269d396"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "rawScript": "setmetatile 5, 1, METATILE_GenericBuilding_TrickHouse_Stairs_Down, FALSE\n\tspecial DrawWholeMapView\n\tdelay 20\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkUp\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, Route110_TrickHouseEntrance_Movement_EnterRoom\n\twaitmovement 0\n\tswitch VAR_TRICK_HOUSE_LEVEL\n\tcase 0, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom1\n\tcase 1, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom2\n\tcase 2, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom3\n\tcase 3, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom4\n\tcase 4, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom5\n\tcase 5, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom6\n\tcase 6, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom7\n\tcase 7, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom8\n\tend"
+  },
+  "label": "Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TRICK_HOUSE_LEVEL"
+    ]
+  }
+}

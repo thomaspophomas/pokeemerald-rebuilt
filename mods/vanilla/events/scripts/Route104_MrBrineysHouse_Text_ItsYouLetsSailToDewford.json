@@ -1,0 +1,19 @@
+{
+  "id": "Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+    "sha1": "1685496df25ec35fb97de14e44b3ea41b1d1c6db"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+    "rawScript": ".string \"Hm? You're {PLAYER}{KUN}!\\n\"\n\t.string \"You saved my darling PEEKO!\\l\"\n\t.string \"We owe so much to you!\\p\"\n\t.string \"What's that?\\n\"\n\t.string \"You want to sail with me?\\p\"\n\t.string \"Hmhm\u2026\\p\"\n\t.string \"You have a LETTER bound for DEWFORD\\n\"\n\t.string \"and a package for SLATEPORT, then?\\p\"\n\t.string \"Quite the busy life you must lead!\\p\"\n\t.string \"But, certainly, what you're asking is\\n\"\n\t.string \"no problem at all.\\p\"\n\t.string \"You've come to the right man!\\n\"\n\t.string \"We'll set sail for DEWFORD.$\""
+  },
+  "label": "Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+  "references": {}
+}

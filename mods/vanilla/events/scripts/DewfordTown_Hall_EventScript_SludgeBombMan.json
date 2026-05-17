@@ -1,0 +1,29 @@
+{
+  "id": "DewfordTown_Hall_EventScript_SludgeBombMan",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Hall/scripts.inc",
+    "sha1": "78185d3058996bff2579b5133faf680c4df6865f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Hall/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tcall Common_EventScript_BufferTrendyPhrase\n\tgoto_if_set FLAG_RECEIVED_TM_SLUDGE_BOMB, DewfordTown_Hall_EventScript_ReceivedSludgeBomb\n\tmsgbox DewfordTown_Hall_Text_GiveYouSludgeBomb, MSGBOX_DEFAULT\n\tgiveitem ITEM_TM_SLUDGE_BOMB\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_RECEIVED_TM_SLUDGE_BOMB\n\trelease\n\tend"
+  },
+  "label": "DewfordTown_Hall_EventScript_SludgeBombMan",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DewfordTown_Hall/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_TM_SLUDGE_BOMB"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_TM_SLUDGE_BOMB"
+    ]
+  }
+}

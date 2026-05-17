@@ -1,0 +1,25 @@
+{
+  "id": "Route105_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route105/scripts.inc",
+    "sha1": "fca1ae319346cb625967baf011ba6f8b0e2fb01a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route105/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_LOAD, Route105_OnLoad\n\tmap_script MAP_SCRIPT_ON_TRANSITION, Route105_OnTransition\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, Route105_OnFrame\n\t.byte 0"
+  },
+  "label": "Route105_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Route105/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

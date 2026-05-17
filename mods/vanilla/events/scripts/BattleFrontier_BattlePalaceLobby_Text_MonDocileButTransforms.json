@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_Text_MonDocileButTransforms",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": ".string \"My POK\u00e9MON is usually very docile.\\p\"\n\t.string \"But when it's in a BATTLE HALL,\\n\"\n\t.string \"it sometimes seems to become\\l\"\n\t.string \"transformed into something wicked!\\p\"\n\t.string \"It becomes totally intimidating.\\n\"\n\t.string \"It's shocking, even.$\""
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_Text_MonDocileButTransforms",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {}
+}

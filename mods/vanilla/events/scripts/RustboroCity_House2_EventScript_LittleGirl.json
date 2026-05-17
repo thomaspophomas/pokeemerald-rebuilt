@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_House2_EventScript_LittleGirl",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_House2/scripts.inc",
+    "sha1": "c036376f7c01fb41b5259c5cf418cfc9ae7672fc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_House2/scripts.inc",
+    "rawScript": "msgbox RustboroCity_House2_Text_RoxanneKnowsALot, MSGBOX_NPC\n\tend"
+  },
+  "label": "RustboroCity_House2_EventScript_LittleGirl",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_House2/scripts.inc",
+  "references": {}
+}

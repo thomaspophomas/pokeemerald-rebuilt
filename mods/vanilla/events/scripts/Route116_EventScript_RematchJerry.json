@@ -1,0 +1,23 @@
+{
+  "id": "Route116_EventScript_RematchJerry",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116/scripts.inc",
+    "sha1": "414d7bb5c4246d6317dd973dc816983566be8cc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route116/scripts.inc",
+    "rawScript": "trainerbattle_rematch TRAINER_JERRY_1, Route116_Text_JerryRematchIntro, Route116_Text_JerryRematchDefeat\n\tmsgbox Route116_Text_JerryPostRematch, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route116_EventScript_RematchJerry",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route116/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_JERRY_1"
+    ]
+  }
+}

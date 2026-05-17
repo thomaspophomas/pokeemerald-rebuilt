@@ -1,0 +1,24 @@
+{
+  "id": "TrainerHill_EventScript_TrainerBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/trainer_hill.inc",
+    "sha1": "47f18ba4af2e68695280d853b9b0ada8ee6cad46"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/trainer_hill.inc",
+    "rawScript": "trainerbattle TRAINER_BATTLE_HILL, TRAINER_PHILLIP, LOCALID_NONE, BattleFacility_TrainerBattle_PlaceholderText, BattleFacility_TrainerBattle_PlaceholderText\n\ttrainerhill_postbattletext\n\twaitmessage\n\twaitbuttonpress\n\tclosemessage\n\tend"
+  },
+  "label": "TrainerHill_EventScript_TrainerBattle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/trainer_hill.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_BATTLE_HILL",
+      "TRAINER_PHILLIP"
+    ]
+  }
+}

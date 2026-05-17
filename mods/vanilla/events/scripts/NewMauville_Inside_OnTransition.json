@@ -1,0 +1,29 @@
+{
+  "id": "NewMauville_Inside_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NewMauville_Inside/scripts.inc",
+    "sha1": "e55cd05ab8dbd71a8b15a7cf2c2dc966549467fe"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NewMauville_Inside/scripts.inc",
+    "rawScript": "setvar VAR_TEMP_1, 0\n\tsetvar VAR_TEMP_2, 0\n\tcall_if_unset FLAG_DEFEATED_VOLTORB_1_NEW_MAUVILLE, NewMauville_Inside_EventScript_ShowVoltorb1\n\tcall_if_unset FLAG_DEFEATED_VOLTORB_2_NEW_MAUVILLE, NewMauville_Inside_EventScript_ShowVoltorb2\n\tcall_if_unset FLAG_DEFEATED_VOLTORB_3_NEW_MAUVILLE, NewMauville_Inside_EventScript_ShowVoltorb3\n\tend"
+  },
+  "label": "NewMauville_Inside_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/NewMauville_Inside/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_VOLTORB_1_NEW_MAUVILLE",
+      "FLAG_DEFEATED_VOLTORB_2_NEW_MAUVILLE",
+      "FLAG_DEFEATED_VOLTORB_3_NEW_MAUVILLE"
+    ],
+    "vars": [
+      "VAR_TEMP_1",
+      "VAR_TEMP_2"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "NewMauville_Entrance_Text_DoorIsLocked",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NewMauville_Entrance/scripts.inc",
+    "sha1": "f27dc6b4117073bcedc10e2cc744e7b01086fb95"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NewMauville_Entrance/scripts.inc",
+    "rawScript": ".string \"The door is locked.$\""
+  },
+  "label": "NewMauville_Entrance_Text_DoorIsLocked",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/NewMauville_Entrance/scripts.inc",
+  "references": {}
+}

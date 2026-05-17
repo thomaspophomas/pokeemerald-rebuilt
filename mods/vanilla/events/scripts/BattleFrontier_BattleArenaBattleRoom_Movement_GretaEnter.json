@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleArenaBattleRoom_Movement_GretaEnter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "sha1": "d0a70f09e21302da78823f02966e03f9b41a3a1a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "rawScript": "walk_fast_left\n\twalk_fast_left\n\twalk_fast_left\n\twalk_fast_left\n\twalk_fast_left\n\tstep_end"
+  },
+  "label": "BattleFrontier_BattleArenaBattleRoom_Movement_GretaEnter",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+  "references": {}
+}

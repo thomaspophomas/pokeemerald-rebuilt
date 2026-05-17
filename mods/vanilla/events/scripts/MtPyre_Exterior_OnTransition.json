@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_Exterior_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Exterior/scripts.inc",
+    "sha1": "9d8222c8fa9a5f582c6d5ecafe1ba433be250e54"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Exterior/scripts.inc",
+    "rawScript": "call MtPyre_Exterior_EventScript_CheckEnterFromSummit\n\tend"
+  },
+  "label": "MtPyre_Exterior_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/MtPyre_Exterior/scripts.inc",
+  "references": {}
+}

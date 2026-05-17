@@ -1,0 +1,24 @@
+{
+  "id": "FortreeCity_Gym_OnWarp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/scripts.inc",
+    "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Gym/scripts.inc",
+    "rawScript": "map_script_2 VAR_TEMP_0, VAR_TEMP_0, FortreeCity_Gym_EventScript_InitRotatingGates\n\t.2byte 0\n\n@ NOTE: This rotating gate puzzle makes use of VAR_TEMP_0 - VAR_TEMP_3"
+  },
+  "label": "FortreeCity_Gym_OnWarp",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/FortreeCity_Gym/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0",
+      "VAR_TEMP_3"
+    ]
+  }
+}

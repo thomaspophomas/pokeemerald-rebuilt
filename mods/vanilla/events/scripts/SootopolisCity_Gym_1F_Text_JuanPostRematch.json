@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Gym_1F_Text_JuanPostRematch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "sha1": "cd5ddf90f8e2b0931828078295732db5c87d2dae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "rawScript": ".string \"JUAN: If I told you to become my\\n\"\n\t.string \"apprentice, you will refuse, I am sure.\\p\"\n\t.string \"I would like to make a gift of my coat\\n\"\n\t.string \"to you.\\p\"\n\t.string \"But again, you will refuse.\\n\"\n\t.string \"I imagine that to be so.\\p\"\n\t.string \"And that, my friend, is a certain sign\\n\"\n\t.string \"of nobility!$\""
+  },
+  "label": "SootopolisCity_Gym_1F_Text_JuanPostRematch",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Route123_Text_RouteSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route123/scripts.inc",
+    "sha1": "6ee451eb8a5f0717aed9ff7e71878f845e9727c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route123/scripts.inc",
+    "rawScript": ".string \"{RIGHT_ARROW} ROUTE 123\\n\"\n\t.string \"{LEFT_ARROW} ROUTE 118$\""
+  },
+  "label": "Route123_Text_RouteSign",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route123/scripts.inc",
+  "references": {}
+}

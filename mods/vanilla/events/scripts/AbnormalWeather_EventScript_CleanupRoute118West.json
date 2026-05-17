@@ -1,0 +1,19 @@
+{
+  "id": "AbnormalWeather_EventScript_CleanupRoute118West",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/abnormal_weather.inc",
+    "sha1": "8bf77729e5d8e5ebd0812ce736eaf3712ec673f3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/abnormal_weather.inc",
+    "rawScript": "setmetatile 9, 5, METATILE_General_RockWall_RockBase, TRUE\n\tsetmetatile 9, 6, METATILE_General_RockWall_GrassBase, TRUE\n\treturn"
+  },
+  "label": "AbnormalWeather_EventScript_CleanupRoute118West",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/abnormal_weather.inc",
+  "references": {}
+}

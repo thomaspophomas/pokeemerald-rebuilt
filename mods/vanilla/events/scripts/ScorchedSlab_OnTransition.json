@@ -1,0 +1,23 @@
+{
+  "id": "ScorchedSlab_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ScorchedSlab/scripts.inc",
+    "sha1": "54c4a681c065bcbb384a6ebf7c1062b42f1a1230"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ScorchedSlab/scripts.inc",
+    "rawScript": "setflag FLAG_LANDMARK_SCORCHED_SLAB\n\tend"
+  },
+  "label": "ScorchedSlab_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/ScorchedSlab/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_LANDMARK_SCORCHED_SLAB"
+    ]
+  }
+}

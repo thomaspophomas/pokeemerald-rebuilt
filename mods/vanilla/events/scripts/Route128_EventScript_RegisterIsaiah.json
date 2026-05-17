@@ -1,0 +1,23 @@
+{
+  "id": "Route128_EventScript_RegisterIsaiah",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route128/scripts.inc",
+    "sha1": "8c3eb5fe541a802a44ec8805e051fe2de0e552f6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route128/scripts.inc",
+    "rawScript": "special PlayerFaceTrainerAfterBattle\n\twaitmovement 0\n\tmsgbox Route128_Text_IsaiahRegister, MSGBOX_DEFAULT\n\tregister_matchcall TRAINER_ISAIAH_1\n\trelease\n\tend"
+  },
+  "label": "Route128_EventScript_RegisterIsaiah",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route128/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ISAIAH_1"
+    ]
+  }
+}

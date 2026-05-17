@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_MaysHouse_2F_Movement_MayApproachPlayerEast",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "sha1": "e014a444dcf389c78773768633900402b1862edb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "rawScript": "walk_right\n\twalk_right\n\twalk_down\n\twalk_in_place_faster_right\n\tstep_end"
+  },
+  "label": "LittlerootTown_MaysHouse_2F_Movement_MayApproachPlayerEast",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+  "references": {}
+}

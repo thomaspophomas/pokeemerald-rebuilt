@@ -1,0 +1,19 @@
+{
+  "id": "BerryBlender_Text_DontHaveAnyBerries3",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": ".string \"You don't have any BERRIES,\\n\"\n\t.string \"do you?\\p\"\n\t.string \"If you don't have any BERRIES,\\n\"\n\t.string \"you can't make any {POKEBLOCK}S.\\p\"\n\t.string \"We'll always be making {POKEBLOCK}S here,\\n\"\n\t.string \"so let's make some together when\\l\"\n\t.string \"you get a BERRY or two.$\""
+  },
+  "label": "BerryBlender_Text_DontHaveAnyBerries3",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_Summit_Text_GroudonKyogreAwakened",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/scripts.inc",
+    "sha1": "2d98d572d50cebb678d972aa421854c983329822"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Summit/scripts.inc",
+    "rawScript": ".string \"Oh, my goodness\u2026\\p\"\n\t.string \"You say that both GROUDON and KYOGRE\\n\"\n\t.string \"have been awakened?\\p\"\n\t.string \"It is said that the BLUE ORB and\\n\"\n\t.string \"the RED ORB quelled the rage of\\l\"\n\t.string \"the two POK\u00e9MON\u2026\\p\"\n\t.string \"It is also said that the true owner\\n\"\n\t.string \"of the ORBS still exists.\\p\"\n\t.string \"However, no one knows who, or what\\n\"\n\t.string \"exactly, the ORBS belong to.\\p\"\n\t.string \"It could be a human, or perhaps\\n\"\n\t.string \"a POK\u00e9MON, but no one knows.$\""
+  },
+  "label": "MtPyre_Summit_Text_GroudonKyogreAwakened",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_Summit/scripts.inc",
+  "references": {}
+}

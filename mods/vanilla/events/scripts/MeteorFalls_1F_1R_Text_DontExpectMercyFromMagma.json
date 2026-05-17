@@ -1,0 +1,19 @@
+{
+  "id": "MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "sha1": "9f4ded44922a9eecca2a712d1673b053babe0bae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "rawScript": ".string \"Heh?\\p\"\n\t.string \"I don't know who you are, but if you get\\n\"\n\t.string \"in the way of TEAM MAGMA, don't\\l\"\n\t.string \"expect any mercy!$\""
+  },
+  "label": "MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+  "references": {}
+}

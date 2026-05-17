@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "aea25451773a7c111671a0da53f41f92ce337106"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"I've been hearing about some rotten\\n\"\n\t.string \"scoundrels who steal POK\u00e9MON and rip\\l\"\n\t.string \"off METEORITES.$\""
+  },
+  "label": "LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

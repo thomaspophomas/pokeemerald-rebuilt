@@ -1,0 +1,23 @@
+{
+  "id": "Route111_EventScript_Drew",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_DREW, Route111_Text_DrewIntro, Route111_Text_DrewDefeat\n\tmsgbox Route111_Text_DrewPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route111_EventScript_Drew",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_DREW"
+    ]
+  }
+}

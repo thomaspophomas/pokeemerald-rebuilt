@@ -1,0 +1,19 @@
+{
+  "id": "MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "sha1": "9f4ded44922a9eecca2a712d1673b053babe0bae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "rawScript": ".string \"Hehehe!\\n\"\n\t.string \"Even TEAM AQUA joins us!\\p\"\n\t.string \"But it's too much trouble to deal with\\n\"\n\t.string \"you all\u2026\\p\"\n\t.string \"Heh, it doesn't matter!\\p\"\n\t.string \"We've got the METEORITE, so off to\\n\"\n\t.string \"MT. CHIMNEY we go!\\p\"\n\t.string \"Hehehe! Be seeing you, you TEAM\\n\"\n\t.string \"AQUA dingbats!$\""
+  },
+  "label": "MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+  "references": {}
+}

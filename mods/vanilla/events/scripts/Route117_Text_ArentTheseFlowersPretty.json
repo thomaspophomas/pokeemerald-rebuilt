@@ -1,0 +1,19 @@
+{
+  "id": "Route117_Text_ArentTheseFlowersPretty",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route117/scripts.inc",
+    "sha1": "9c87422ff2d4ac9ebaa7fbe97f86e8cb16c2b92b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route117/scripts.inc",
+    "rawScript": ".string \"What do you think?\\n\"\n\t.string \"Aren't these flowers pretty?\\p\"\n\t.string \"I planted them all!$\""
+  },
+  "label": "Route117_Text_ArentTheseFlowersPretty",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route117/scripts.inc",
+  "references": {}
+}

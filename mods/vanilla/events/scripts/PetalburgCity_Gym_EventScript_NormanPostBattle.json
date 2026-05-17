@@ -1,0 +1,27 @@
+{
+  "id": "PetalburgCity_Gym_EventScript_NormanPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": "call PetalburgCity_Gym_EventScript_ShouldGiveEnigmaBerry\n\tgoto_if_eq VAR_RESULT, TRUE, PetalburgCity_Gym_EventScript_GiveEnigmaBerry\n\tgoto_if_unset FLAG_RECEIVED_TM_FACADE, PetalburgCity_Gym_EventScript_GiveFacade2\n\tgoto_if_set FLAG_SYS_GAME_CLEAR, PetalburgCity_Gym_EventScript_NoAmountOfTrainingIsEnough\n\tmsgbox PetalburgCity_Gym_Text_DadGoingToKeepTraining, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "PetalburgCity_Gym_EventScript_NormanPostBattle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_TM_FACADE",
+      "FLAG_SYS_GAME_CLEAR"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

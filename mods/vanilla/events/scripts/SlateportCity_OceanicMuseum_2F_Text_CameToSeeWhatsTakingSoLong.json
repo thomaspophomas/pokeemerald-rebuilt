@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+    "sha1": "13553a30435b8213726cfc4734cfaf0043bc447f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+    "rawScript": ".string \"I came to see what was taking so\\n\"\n\t.string \"long to snatch some parts, and you\\l\"\n\t.string \"simps are held up by a mere child?$\""
+  },
+  "label": "SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+  "references": {}
+}

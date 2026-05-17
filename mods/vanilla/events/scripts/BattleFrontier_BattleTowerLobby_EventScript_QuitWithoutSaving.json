@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_EventScript_QuitWithoutSaving",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmsgbox BattleFrontier_BattleTowerLobby_Text_DidntSaveBeforeQuitting, MSGBOX_DEFAULT\n\tclosemessage\n\ttower_set TOWER_DATA_WIN_STREAK, 0\n\ttower_set TOWER_DATA_WIN_STREAK_ACTIVE, FALSE\n\tfrontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 255\n\trelease\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerLobby_EventScript_QuitWithoutSaving",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ]
+  }
+}

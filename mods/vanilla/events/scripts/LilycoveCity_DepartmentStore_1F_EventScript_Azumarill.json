@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_DepartmentStore_1F_EventScript_Azumarill",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc",
+    "sha1": "25a2cc6d86d1739788e578e0911145b04f3d372f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\twaitse\n\tplaymoncry SPECIES_AZUMARILL, CRY_MODE_NORMAL\n\tmsgbox LilycoveCity_DepartmentStore_1F_Text_Azumarill, MSGBOX_DEFAULT\n\twaitmoncry\n\trelease\n\tend"
+  },
+  "label": "LilycoveCity_DepartmentStore_1F_EventScript_Azumarill",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc",
+  "references": {}
+}

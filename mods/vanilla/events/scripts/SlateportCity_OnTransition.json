@@ -1,0 +1,25 @@
+{
+  "id": "SlateportCity_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": "setvar VAR_SLATEPORT_MUSEUM_1F_STATE, 0\n\tcall SlateportCity_EventScript_EnterSlateport\n\tcall_if_eq VAR_SLATEPORT_CITY_STATE, 1, SlateportCity_EventScript_MovePeopleForSternInterview\n\tcall_if_eq VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 1, SlateportCity_EventScript_SetReadyForScottScene\n\tend"
+  },
+  "label": "SlateportCity_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_SLATEPORT_CITY_STATE",
+      "VAR_SLATEPORT_MUSEUM_1F_STATE",
+      "VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE"
+    ]
+  }
+}

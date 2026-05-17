@@ -1,0 +1,19 @@
+{
+  "id": "Route103_Movement_RivalExit2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route103/scripts.inc",
+    "sha1": "cdbe6074bf0bdfa44494ccf1457b18c3de43e0de"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route103/scripts.inc",
+    "rawScript": "jump_2_down\n\tdelay_16\n\twalk_down\n\twalk_down\n\twalk_down\n\tstep_end"
+  },
+  "label": "Route103_Movement_RivalExit2",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/Route103/scripts.inc",
+  "references": {}
+}

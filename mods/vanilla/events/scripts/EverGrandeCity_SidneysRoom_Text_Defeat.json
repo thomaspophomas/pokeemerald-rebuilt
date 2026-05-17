@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_SidneysRoom_Text_Defeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+    "sha1": "557570a48b33cd8590cd2a5ef0ed11ae09a3448a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+    "rawScript": ".string \"Well, how do you like that? I lost!\\n\"\n\t.string \"Eh, it was fun, so it doesn't matter.$\""
+  },
+  "label": "EverGrandeCity_SidneysRoom_Text_Defeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Text_SeeingLegendWithOwnEyes",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": ".string \"There's an ancient legend that claims\\n\"\n\t.string \"the land and sea were shaped by\\l\"\n\t.string \"a colossal battle between POK\u00e9MON.\\p\"\n\t.string \"Well, I'm seeing that happen with\\n\"\n\t.string \"my very own eyes!\\p\"\n\t.string \"Whoa! I never expected to be\\n\"\n\t.string \"witness to something this huge!$\""
+  },
+  "label": "SootopolisCity_Text_SeeingLegendWithOwnEyes",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SkyPillar_Outside_Text_GotToGoBackForSootopolis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Outside/scripts.inc",
+    "sha1": "9bf749dde7f98e08aa43ccd220b7469c53ade7f3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_Outside/scripts.inc",
+    "rawScript": ".string \"WALLACE: This isn't good\u2026\\p\"\n\t.string \"The weather distortion is spreading\\n\"\n\t.string \"even here\u2026\\p\"\n\t.string \"{PLAYER}{KUN}.\\p\"\n\t.string \"RAYQUAZA should be farther up\\n\"\n\t.string \"from here.\\p\"\n\t.string \"I'm worried about SOOTOPOLIS.\\n\"\n\t.string \"I've got to go back.\\p\"\n\t.string \"Everything is in your hands now.\\n\"\n\t.string \"Don't fail us!$\""
+  },
+  "label": "SkyPillar_Outside_Text_GotToGoBackForSootopolis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SkyPillar_Outside/scripts.inc",
+  "references": {}
+}

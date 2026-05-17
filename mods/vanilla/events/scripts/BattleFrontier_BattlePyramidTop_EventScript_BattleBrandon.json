@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattlePyramidTop_EventScript_BattleBrandon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "sha1": "6256c29eca306dafcaec0dabbacc64547c474e58"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "rawScript": "lockall\n\tswitch VAR_TEMP_C\n\tcase FRONTIER_BRAIN_GOLD, BattleFrontier_BattlePyramidTop_EventScript_BrandonIntroGold\n\tcase FRONTIER_BRAIN_STREAK, BattleFrontier_BattlePyramidTop_EventScript_BrandonHeardSilverSpeech\n\tcase FRONTIER_BRAIN_STREAK_LONG, BattleFrontier_BattlePyramidTop_EventScript_BrandonHeardGoldSpeech\n\tfrontier_get FRONTIER_DATA_HEARD_BRAIN_SPEECH\n\tgoto_if_ne VAR_RESULT, FALSE, BattleFrontier_BattlePyramidTop_EventScript_BrandonHeardSilverSpeech\n\tspecial SpawnCameraObject\n\tapplymovement LOCALID_CAMERA, BattleFrontier_BattlePyramidTop_Movement_CameraPanUp\n\twaitmovement 0\n\tmsgbox BattleFrontier_BattlePyramidTop_Text_ExplorationsAreGrandestAdventure, MSGBOX_DEFAULT\n\tclosemessage\n\tfrontier_set FRONTIER_DATA_HEARD_BRAIN_SPEECH\n\tapplymovement LOCALID_BRANDON, BattleFrontier_BattlePyramidTop_Movement_BrandonApproachPlayer\n\twaitmovement 0\n\tmsgbox BattleFrontier_BattlePyramidTop_Text_ImPyramidKingBrandon, MSGBOX_DEFAULT\n\tgoto BattleFrontier_BattlePyramidTop_EventScript_BattleBrandonSilver\n\tend"
+  },
+  "label": "BattleFrontier_BattlePyramidTop_EventScript_BattleBrandon",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_C"
+    ]
+  }
+}

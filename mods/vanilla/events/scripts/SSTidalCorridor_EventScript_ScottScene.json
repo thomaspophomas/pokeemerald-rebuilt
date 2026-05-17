@@ -1,0 +1,26 @@
+{
+  "id": "SSTidalCorridor_EventScript_ScottScene",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalCorridor/scripts.inc",
+    "sha1": "02d0cfdd4cf17b1fcf50d838485aaf7013da6b13"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalCorridor/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_SS_TIDAL_SCOTT, SSTidalCorridor_Movement_ScottApproachPlayer\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\tmsgbox SSTidalCorridor_Text_ScottBattleFrontierInvite, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_PLAYER, SSTidalCorridor_Movement_PlayerWatchScottExit\n\tapplymovement LOCALID_SS_TIDAL_EXIT_SAILOR, SSTidalCorridor_Movement_SailorMoveForScott\n\tapplymovement LOCALID_SS_TIDAL_SCOTT, SSTidalCorridor_Movement_ScottExit\n\twaitmovement 0\n\tplayse SE_EXIT\n\twaitse\n\tremoveobject LOCALID_SS_TIDAL_SCOTT\n\tapplymovement LOCALID_SS_TIDAL_EXIT_SAILOR, SSTidalCorridor_Movement_SailorReturn\n\twaitmovement 0\n\tdelay 30\n\tsetflag FLAG_MET_SCOTT_ON_SS_TIDAL\n\tsetvar VAR_SS_TIDAL_SCOTT_STATE, 1\n\treleaseall\n\tend"
+  },
+  "label": "SSTidalCorridor_EventScript_ScottScene",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SSTidalCorridor/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_SCOTT_ON_SS_TIDAL"
+    ],
+    "vars": [
+      "VAR_SS_TIDAL_SCOTT_STATE"
+    ]
+  }
+}

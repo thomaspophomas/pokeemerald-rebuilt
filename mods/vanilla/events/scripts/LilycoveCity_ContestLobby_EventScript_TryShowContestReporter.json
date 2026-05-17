@@ -1,0 +1,25 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_TryShowContestReporter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/interview.inc",
+    "sha1": "bd1d5135ce2e319a18291aebafac5c4760b90500"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/interview.inc",
+    "rawScript": "goto_if_ne VAR_CONTEST_HALL_STATE, 2, LilycoveCity_ContestLobby_EventScript_DontShowContestReporter\n\tsetvar VAR_0x8005, TVSHOW_BRAVO_TRAINER_POKEMON_PROFILE\n\tspecial InterviewBefore\n\tgoto_if_eq VAR_RESULT, TRUE, LilycoveCity_ContestLobby_EventScript_DontShowContestReporter\n\tswitch VAR_CONTEST_TYPE\n\tcase 0, LilycoveCity_ContestLobby_EventScript_DontShowContestReporter\n\tcase 2, LilycoveCity_ContestLobby_EventScript_ShowContestReporter\n\tcase 1, LilycoveCity_ContestLobby_EventScript_ShowContestReporter\n\tcase 3, LilycoveCity_ContestLobby_EventScript_ShowContestReporter\n\tcase 4, LilycoveCity_ContestLobby_EventScript_ShowContestReporter\n\tcase 5, LilycoveCity_ContestLobby_EventScript_DontShowContestReporter\n\tend"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_TryShowContestReporter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/interview.inc",
+  "references": {
+    "vars": [
+      "VAR_CONTEST_HALL_STATE",
+      "VAR_CONTEST_TYPE",
+      "VAR_RESULT"
+    ]
+  }
+}

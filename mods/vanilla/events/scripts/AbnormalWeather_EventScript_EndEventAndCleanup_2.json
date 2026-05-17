@@ -1,0 +1,27 @@
+{
+  "id": "AbnormalWeather_EventScript_EndEventAndCleanup_2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/abnormal_weather.inc",
+    "sha1": "8bf77729e5d8e5ebd0812ce736eaf3712ec673f3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/abnormal_weather.inc",
+    "rawScript": "closemessage\n\tfadescreenswapbuffers FADE_TO_BLACK\n\tsetweather WEATHER_SUNNY\n\tdoweather\n\tcall AbnormalWeather_EventScript_CleanupMapTiles\n\tspecial DrawWholeMapView\n\tsetvar VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_NONE\n\tsetvar VAR_SHOULD_END_ABNORMAL_WEATHER, 0\n\tclearflag FLAG_HIDE_MAP_NAME_POPUP\n\tfadescreenswapbuffers FADE_FROM_BLACK\n\treleaseall\n\tend"
+  },
+  "label": "AbnormalWeather_EventScript_EndEventAndCleanup_2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/abnormal_weather.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_MAP_NAME_POPUP"
+    ],
+    "vars": [
+      "VAR_ABNORMAL_WEATHER_LOCATION",
+      "VAR_SHOULD_END_ABNORMAL_WEATHER"
+    ]
+  }
+}

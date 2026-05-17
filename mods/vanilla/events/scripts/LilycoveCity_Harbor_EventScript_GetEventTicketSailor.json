@@ -1,0 +1,26 @@
+{
+  "id": "LilycoveCity_Harbor_EventScript_GetEventTicketSailor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "sha1": "ffd83f00915b03bfdd96f51950251d00dd19dbcb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "rawScript": "applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tdelay 30\n\thideobjectat VAR_LAST_TALKED, MAP_LILYCOVE_CITY_HARBOR\n\tdelay 60\n\taddobject LOCALID_LILYCOVE_HARBOR_FERRY_SAILOR\n\tdelay 30\n\tapplymovement LOCALID_LILYCOVE_HARBOR_FERRY_SAILOR, Common_Movement_FacePlayer\n\twaitmovement 0\n\treturn"
+  },
+  "label": "LilycoveCity_Harbor_EventScript_GetEventTicketSailor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_Harbor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED"
+    ],
+    "maps": [
+      "MAP_LILYCOVE_CITY_HARBOR"
+    ]
+  }
+}

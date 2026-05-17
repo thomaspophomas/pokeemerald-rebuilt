@@ -1,0 +1,23 @@
+{
+  "id": "AbandonedShip_HiddenFloorRooms_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_HiddenFloorRooms/scripts.inc",
+    "sha1": "e64dd6958de17dd29909a779ee9862cda0de7b51"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_HiddenFloorRooms/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_FRAME_TABLE, AbandonedShip_HiddenFloorRooms_OnFrame\n\t.byte 0"
+  },
+  "label": "AbandonedShip_HiddenFloorRooms_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/AbandonedShip_HiddenFloorRooms/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE"
+    ]
+  }
+}

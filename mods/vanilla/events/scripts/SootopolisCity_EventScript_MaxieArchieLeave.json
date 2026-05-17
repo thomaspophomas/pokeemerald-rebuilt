@@ -1,0 +1,33 @@
+{
+  "id": "SootopolisCity_EventScript_MaxieArchieLeave",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": "setflag FLAG_HIDE_SOOTOPOLIS_CITY_MAXIE\n\tsetflag FLAG_HIDE_SOOTOPOLIS_CITY_ARCHIE\n\tsetflag FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE\n\tclearflag FLAG_HIDE_MT_PYRE_SUMMIT_MAXIE\n\tclearflag FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE\n\tsetvar VAR_MT_PYRE_STATE, 2\n\twarpsilent MAP_SOOTOPOLIS_CITY, 31, 34\n\twaitstate\n\treleaseall\n\tend\n\n@ Unused"
+  },
+  "label": "SootopolisCity_EventScript_MaxieArchieLeave",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE",
+      "FLAG_HIDE_MT_PYRE_SUMMIT_MAXIE",
+      "FLAG_HIDE_SOOTOPOLIS_CITY_ARCHIE",
+      "FLAG_HIDE_SOOTOPOLIS_CITY_MAXIE",
+      "FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE"
+    ],
+    "vars": [
+      "VAR_MT_PYRE_STATE"
+    ],
+    "maps": [
+      "MAP_SOOTOPOLIS_CITY"
+    ]
+  }
+}

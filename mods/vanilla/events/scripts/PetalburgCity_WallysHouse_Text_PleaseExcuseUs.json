@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_WallysHouse_Text_PleaseExcuseUs",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_WallysHouse/scripts.inc",
+    "sha1": "ec42bb72f0a50cce9db9e173ec63e3e0787b8406"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_WallysHouse/scripts.inc",
+    "rawScript": ".string \"{PLAYER}{KUN}! Please excuse us for\\n\"\n\t.string \"dragging you here this way.\\p\"\n\t.string \"But our WALLY's become very healthy\\n\"\n\t.string \"since he went to VERDANTURF TOWN.\\p\"\n\t.string \"We owe it all to you!\\p\"\n\t.string \"When WALLY left town, you helped\\n\"\n\t.string \"him catch a POK\u00e9MON, right?\\p\"\n\t.string \"I think that made WALLY really\\n\"\n\t.string \"happy.\\p\"\n\t.string \"Actually, not just WALLY.\\n\"\n\t.string \"It made me, his father, happy too.\\p\"\n\t.string \"Happy that he's gained such a great\\n\"\n\t.string \"friend as you.\\p\"\n\t.string \"This isn't a bribe or anything, but\\n\"\n\t.string \"I'd really like you to have this.$\""
+  },
+  "label": "PetalburgCity_WallysHouse_Text_PleaseExcuseUs",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_WallysHouse/scripts.inc",
+  "references": {}
+}

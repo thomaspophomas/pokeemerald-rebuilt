@@ -1,0 +1,26 @@
+{
+  "id": "MauvilleCity_EventScript_RolloutTutor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/move_tutors.inc",
+    "sha1": "9c188f9a9477e783c3dda838ce8c2873c44b9398"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/move_tutors.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_MOVE_TUTOR_TAUGHT_ROLLOUT, MoveTutor_EventScript_RolloutTaught\n\tmsgbox MoveTutor_Text_RolloutTeach, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_RolloutDeclined\n\tcall MoveTutor_EventScript_CanOnlyBeLearnedOnce\n\tgoto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_RolloutDeclined\n\tmsgbox MoveTutor_Text_RolloutWhichMon, MSGBOX_DEFAULT\n\tsetvar VAR_0x8005, TUTOR_MOVE_ROLLOUT\n\tcall MoveTutor_EventScript_OpenPartyMenu\n\tgoto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_RolloutDeclined\n\tsetflag FLAG_MOVE_TUTOR_TAUGHT_ROLLOUT\n\tgoto MoveTutor_EventScript_RolloutTaught\n\tend"
+  },
+  "label": "MauvilleCity_EventScript_RolloutTutor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/move_tutors.inc",
+  "references": {
+    "flags": [
+      "FLAG_MOVE_TUTOR_TAUGHT_ROLLOUT"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Route115_EventScript_Alix",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route115/scripts.inc",
+    "sha1": "553919bcf042cd676325f5ea73ef321b081d0718"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route115/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_ALIX, Route115_Text_AlixIntro, Route115_Text_AlixDefeat\n\tmsgbox Route115_Text_AlixPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route115_EventScript_Alix",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route115/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ALIX"
+    ]
+  }
+}

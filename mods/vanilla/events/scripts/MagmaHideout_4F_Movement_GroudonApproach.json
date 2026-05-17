@@ -1,0 +1,19 @@
+{
+  "id": "MagmaHideout_4F_Movement_GroudonApproach",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_4F/scripts.inc",
+    "sha1": "8f2c61f090f2c324dc4138c5d5ad754b00dfcb48"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_4F/scripts.inc",
+    "rawScript": "delay_16\n\tdelay_16\n\twalk_slow_down\n\tdelay_16\n\tdelay_16\n\tdelay_16\n\twalk_slow_down\n\tdelay_16\n\tdelay_16\n\tdelay_16\n\tstep_end"
+  },
+  "label": "MagmaHideout_4F_Movement_GroudonApproach",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/MagmaHideout_4F/scripts.inc",
+  "references": {}
+}

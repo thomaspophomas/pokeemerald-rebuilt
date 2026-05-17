@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_Gym_EventScript_Kirk",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "sha1": "ba2cd4a14af6a43f9221cd58f6a4a0299a51ce6c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_KIRK, MauvilleCity_Gym_Text_KirkIntro, MauvilleCity_Gym_Text_KirkDefeat\n\tmsgbox MauvilleCity_Gym_Text_KirkPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "MauvilleCity_Gym_EventScript_Kirk",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_Gym/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_KIRK"
+    ]
+  }
+}

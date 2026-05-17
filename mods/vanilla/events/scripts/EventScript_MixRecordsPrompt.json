@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_MixRecordsPrompt",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/record_mix.inc",
+    "sha1": "f1c21fcc5ef0d000a7f249d6eeb01ff1fa7dc0e9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/record_mix.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmsgbox Text_WouldYouLikeToMixRecords, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, EventScript_MixRecords\n\tgoto_if_eq VAR_RESULT, NO, EventScript_EndMixRecords\n\tgoto EventScript_EndMixRecords"
+  },
+  "label": "EventScript_MixRecordsPrompt",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/record_mix.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

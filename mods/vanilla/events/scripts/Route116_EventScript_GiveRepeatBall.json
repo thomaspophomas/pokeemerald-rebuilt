@@ -1,0 +1,33 @@
+{
+  "id": "Route116_EventScript_GiveRepeatBall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116/scripts.inc",
+    "sha1": "414d7bb5c4246d6317dd973dc816983566be8cc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route116/scripts.inc",
+    "rawScript": "setflag FLAG_MET_DEVON_EMPLOYEE\n\tgiveitem ITEM_REPEAT_BALL\n\tgoto_if_eq VAR_RESULT, FALSE, Route116_EventScript_NoRoomForRepeatBall\n\tmsgbox Route116_Text_NewBallAvailableAtMart, MSGBOX_DEFAULT\n\tclosemessage\n\tcall_if_eq VAR_FACING, DIR_NORTH, Route116_EventScript_DevonEmployeeExit\n\tcall_if_eq VAR_FACING, DIR_SOUTH, Route116_EventScript_DevonEmployeeExit\n\tcall_if_eq VAR_FACING, DIR_WEST, Route116_EventScript_DevonEmployeeExit\n\tcall_if_eq VAR_FACING, DIR_EAST, Route116_EventScript_DevonEmployeeExitEast\n\tremoveobject VAR_LAST_TALKED\n\tclearflag FLAG_HIDE_RUSTBORO_CITY_DEVON_CORP_3F_EMPLOYEE\n\tsetflag FLAG_RECEIVED_REPEAT_BALL\n\trelease\n\tend"
+  },
+  "label": "Route116_EventScript_GiveRepeatBall",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route116/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_RUSTBORO_CITY_DEVON_CORP_3F_EMPLOYEE",
+      "FLAG_MET_DEVON_EMPLOYEE",
+      "FLAG_RECEIVED_REPEAT_BALL"
+    ],
+    "vars": [
+      "VAR_FACING",
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_REPEAT_BALL"
+    ]
+  }
+}

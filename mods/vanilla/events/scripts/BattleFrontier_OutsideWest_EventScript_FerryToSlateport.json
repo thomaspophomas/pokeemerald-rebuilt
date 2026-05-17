@@ -1,0 +1,26 @@
+{
+  "id": "BattleFrontier_OutsideWest_EventScript_FerryToSlateport",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_OutsideWest_Text_SlateportItIs, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, BattleFrontier_OutsideWest_EventScript_ChooseNewFerryDestination\n\tmsgbox BattleFrontier_OutsideWest_Text_PleaseBoardFerry, MSGBOX_DEFAULT\n\tcall BattleFrontier_OutsideWest_EventScript_BoardFerry\n\twarp MAP_SLATEPORT_CITY_HARBOR, 8, 11\n\twaitstate\n\trelease\n\tend"
+  },
+  "label": "BattleFrontier_OutsideWest_EventScript_FerryToSlateport",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "maps": [
+      "MAP_SLATEPORT_CITY_HARBOR"
+    ]
+  }
+}

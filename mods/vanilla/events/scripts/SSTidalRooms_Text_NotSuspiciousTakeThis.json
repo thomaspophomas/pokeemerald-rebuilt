@@ -1,0 +1,19 @@
+{
+  "id": "SSTidalRooms_Text_NotSuspiciousTakeThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalRooms/scripts.inc",
+    "sha1": "1953df649981f24c9b39a0b7b26b1ed8339d7249"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalRooms/scripts.inc",
+    "rawScript": ".string \"Uh\u2026 Hi! I\u2026 I'm not acting suspicious!\\n\"\n\t.string \"Uh\u2026 You can have this! For free!\\p\"\n\t.string \"It\u2026 Honestly, I didn't SNATCH it from\\n\"\n\t.string \"someone! I'd never do such a thing!\\l\"\n\t.string \"It's clean! You can use it!$\""
+  },
+  "label": "SSTidalRooms_Text_NotSuspiciousTakeThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SSTidalRooms/scripts.inc",
+  "references": {}
+}

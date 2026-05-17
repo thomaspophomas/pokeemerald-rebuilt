@@ -1,0 +1,23 @@
+{
+  "id": "Route119_WeatherInstitute_1F_EventScript_LittleBoy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_1F/scripts.inc",
+    "sha1": "c66e07de5643dfd9d0b7ced5e87ea02257875e77"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_1F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tspecial GetPlayerBigGuyGirlString\n\tgoto_if_eq VAR_WEATHER_INSTITUTE_STATE, 0, Route119_WeatherInstitute_1F_EventScript_LittleBoyTeamAquaHere\n\tmsgbox Route119_WeatherInstitute_1F_Text_WowYoureStrong, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route119_WeatherInstitute_1F_EventScript_LittleBoy",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route119_WeatherInstitute_1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_WEATHER_INSTITUTE_STATE"
+    ]
+  }
+}

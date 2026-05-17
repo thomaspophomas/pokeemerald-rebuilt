@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_House1_Text_PokemonPartnersNotTools",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_House1/scripts.inc",
+    "sha1": "68c869a4ebb71977a03d938444b31d12586acfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_House1/scripts.inc",
+    "rawScript": ".string \"POK\u00e9MON are partners to people.\\n\"\n\t.string \"They aren't our tools.\\p\"\n\t.string \"Unfortunately, there are some people\\n\"\n\t.string \"who fail to understand that\u2026$\""
+  },
+  "label": "LilycoveCity_House1_Text_PokemonPartnersNotTools",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_House1/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,46 @@
+{
+  "id": "en:frontier_brain",
+  "domain": "language",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/text/frontier_brain.inc",
+    "sha1": "7bf5f5bd0d0766d69b9a731af142e6da180fad6c"
+  },
+  "legacy": {
+    "kind": "asm_text_labels",
+    "sourcePath": "data/text/frontier_brain.inc"
+  },
+  "language": "en",
+  "group": "frontier_brain",
+  "runtime": false,
+  "strings": {
+    "gText_AnabelWonSilver": ".string \"It's very disappointing\u2026$\"",
+    "gText_AnabelDefeatSilver": ".string \"Okay, I understand\u2026$\"",
+    "gText_AnabelWonGold": ".string \"I'm terribly sorry\u2026$\"",
+    "gText_AnabelDefeatGold": ".string \"Thank you\u2026$\"\n\n@ Battle Dome",
+    "gText_TuckerWonSilver": ".string \"Ahahaha! Aren't you embarrassed?\\n\"\n\t.string \"Everyone's watching!$\"",
+    "gText_TuckerDefeatSilver": ".string \"Grr\u2026\\n\"\n\t.string \"What the\u2026$\"",
+    "gText_TuckerWonGold": ".string \"My DOME ACE title isn't just for show!$\"",
+    "gText_TuckerDefeatGold": ".string \"Ahahaha!\\n\"\n\t.string \"You're inspiring!$\"\n\n@ Battle Factory",
+    "gText_NolandWonSilver": ".string \"Way to work!\\n\"\n\t.string \"That was a good lesson, eh?$\"",
+    "gText_NolandDefeatSilver": ".string \"Good job!\\n\"\n\t.string \"You know what you're doing!$\"",
+    "gText_NolandWonGold": ".string \"Hey, hey, hey!\\n\"\n\t.string \"You're finished already?$\"",
+    "gText_NolandDefeatGold": ".string \"What happened here?$\"\n\n@ Battle Pike",
+    "gText_LucyWonSilver": ".string \"Humph\u2026$\"",
+    "gText_LucyDefeatSilver": ".string \"Urk\u2026$\"",
+    "gText_LucyWonGold": ".string \"Hah!$\"",
+    "gText_LucyDefeatGold": ".string \"Darn!$\"\n\n@ Battle Arena",
+    "gText_GretaWonSilver": ".string \"Oh, come on!\\n\"\n\t.string \"You have to try harder than that!$\"",
+    "gText_GretaDefeatSilver": ".string \"No way!\\n\"\n\t.string \"Good job!$\"",
+    "gText_GretaWonGold": ".string \"Heheh!\\n\"\n\t.string \"What did you expect?$\"",
+    "gText_GretaDefeatGold": ".string \"Huh?\\n\"\n\t.string \"Are you serious?!$\"\n\n@ Battle Palace",
+    "gText_SpenserWonSilver": ".string \"Your POK\u00e9MON are wimpy because\\n\"\n\t.string \"you're wimpy as a TRAINER!$\"",
+    "gText_SpenserDefeatSilver": ".string \"Ah\u2026\\n\"\n\t.string \"Now this is something else\u2026$\"",
+    "gText_SpenserWonGold": ".string \"Gwahahaha!\\n\"\n\t.string \"My brethren, we have nothing to fear!$\"",
+    "gText_SpenserDefeatGold": ".string \"Gwah!\\n\"\n\t.string \"Hahahaha!$\"\n\n@ Battle Pyramid",
+    "gText_BrandonWonSilver": ".string \"Hey! What's wrong with you!\\n\"\n\t.string \"Let's see some effort! Get up!$\"",
+    "gText_BrandonDefeatSilver": ".string \"That's it! You've done great!\\n\"\n\t.string \"You've worked hard for this!$\"",
+    "gText_BrandonWonGold": ".string \"Hey! Don't you give up now!\\n\"\n\t.string \"Get up! Don't lose faith in yourself!$\"",
+    "gText_BrandonDefeatGold": ".string \"That's it! You've done it!\\n\"\n\t.string \"You kept working for this!$\""
+  }
+}

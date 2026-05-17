@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Text_SlateportWereSettingSail",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown/scripts.inc",
+    "sha1": "e9e724e6d3bba641bcb2d4263fe226ee6c1b4840"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown/scripts.inc",
+    "rawScript": ".string \"MR. BRINEY: SLATEPORT, is it?\\p\"\n\t.string \"Anchors aweigh!\\n\"\n\t.string \"PEEKO, we're setting sail, my darling!$\""
+  },
+  "label": "DewfordTown_Text_SlateportWereSettingSail",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_DepartmentStore_5F_EventScript_BlockRoofStairs",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+    "sha1": "cd7aae47b8996a67b13e78af3da148a41c68791f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+    "rawScript": "setobjectxy LOCALID_DEPARTMENT_STORE_STAIRS_WOMAN, 16, 2\n\tturnobject LOCALID_DEPARTMENT_STORE_STAIRS_WOMAN, DIR_NORTH\n\tend"
+  },
+  "label": "LilycoveCity_DepartmentStore_5F_EventScript_BlockRoofStairs",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+  "references": {}
+}

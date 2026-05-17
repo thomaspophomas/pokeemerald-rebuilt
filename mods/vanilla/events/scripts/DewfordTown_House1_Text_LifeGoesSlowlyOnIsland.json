@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_House1_Text_LifeGoesSlowlyOnIsland",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_House1/scripts.inc",
+    "sha1": "662ea11eee19a50c0aba09b98fd8297fc4ea8fa3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_House1/scripts.inc",
+    "rawScript": ".string \"I left the major port of SLATEPORT\\n\"\n\t.string \"CITY when I married my husband here.\\p\"\n\t.string \"Life goes by slowly on this little\\n\"\n\t.string \"island. But being surrounded by the\\l\"\n\t.string \"beautiful sea--that's happiness, too.$\""
+  },
+  "label": "DewfordTown_House1_Text_LifeGoesSlowlyOnIsland",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown_House1/scripts.inc",
+  "references": {}
+}

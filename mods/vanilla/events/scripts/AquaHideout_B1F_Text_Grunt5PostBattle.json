@@ -1,0 +1,19 @@
+{
+  "id": "AquaHideout_B1F_Text_Grunt5PostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B1F/scripts.inc",
+    "sha1": "2923188c4ae1df18ace73c8a8f87ea7f1d1e7886"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_B1F/scripts.inc",
+    "rawScript": ".string \"If you scurry too much, other TEAM\\n\"\n\t.string \"AQUA members might get you.$\""
+  },
+  "label": "AquaHideout_B1F_Text_Grunt5PostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AquaHideout_B1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_2F_Movement_FaceExhibitHall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "sha1": "c41e25282a159070f0eb7fb3edcf1b61cc1cfa19"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "rawScript": "face_up\n\tdelay_16\n\tstep_end"
+  },
+  "label": "LilycoveCity_LilycoveMuseum_2F_Movement_FaceExhibitHall",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+  "references": {}
+}

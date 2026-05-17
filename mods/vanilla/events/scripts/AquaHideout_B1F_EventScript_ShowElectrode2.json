@@ -1,0 +1,23 @@
+{
+  "id": "AquaHideout_B1F_EventScript_ShowElectrode2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B1F/scripts.inc",
+    "sha1": "2923188c4ae1df18ace73c8a8f87ea7f1d1e7886"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_B1F/scripts.inc",
+    "rawScript": "clearflag FLAG_HIDE_AQUA_HIDEOUT_B1F_ELECTRODE_2\n\treturn"
+  },
+  "label": "AquaHideout_B1F_EventScript_ShowElectrode2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AquaHideout_B1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_AQUA_HIDEOUT_B1F_ELECTRODE_2"
+    ]
+  }
+}

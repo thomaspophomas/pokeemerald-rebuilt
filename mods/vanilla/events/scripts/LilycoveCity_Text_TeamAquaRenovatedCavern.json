@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_TeamAquaRenovatedCavern",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"Hm, you know of the peculiar cavern\\n\"\n\t.string \"in this cove?\\p\"\n\t.string \"That had been a natural formation,\\n\"\n\t.string \"but then that TEAM AQUA lot came\\l\"\n\t.string \"along and made their renovations.\\p\"\n\t.string \"They call themselves\\n\"\n\t.string \"the \u201cnature-loving TEAM AQUA\u201d!\\p\"\n\t.string \"But what they do and what they say\\n\"\n\t.string \"don't match at all!$\""
+  },
+  "label": "LilycoveCity_Text_TeamAquaRenovatedCavern",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

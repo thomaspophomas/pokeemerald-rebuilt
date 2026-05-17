@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "sha1": "31396febb84a2b48608ca32d5a0dd0de865faf26"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "rawScript": ".string \"RYDEL: Hm, hm\u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"You're saying that you came all this\\n\"\n\t.string \"way from LITTLEROOT?\\p\"\n\t.string \"My goodness!\\n\"\n\t.string \"That's ridiculously far!\\p\"\n\t.string \"If you had one of my BIKES, you could\\n\"\n\t.string \"go anywhere easily while feeling the\\l\"\n\t.string \"gentle caress of the wind!\\p\"\n\t.string \"I'll tell you what!\\n\"\n\t.string \"I'll give you a BIKE!\\p\"\n\t.string \"Oh, wait a second!\\p\"\n\t.string \"I forgot to tell you that there are\\n\"\n\t.string \"two kinds of BIKES!\\p\"\n\t.string \"They are the MACH BIKE and\\n\"\n\t.string \"the ACRO BIKE!\\p\"\n\t.string \"The MACH BIKE is for cyclists who want\\n\"\n\t.string \"to feel the wind with their bodies!\\p\"\n\t.string \"And an ACRO BIKE is for those who\\n\"\n\t.string \"prefer technical rides!\\p\"\n\t.string \"I'm a real sweetheart, so you can\\n\"\n\t.string \"have whichever one you like!\\p\"\n\t.string \"Which one will you choose?$\""
+  },
+  "label": "MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+  "references": {}
+}

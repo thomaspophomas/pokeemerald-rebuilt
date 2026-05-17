@@ -1,0 +1,28 @@
+{
+  "id": "LavaridgeTown_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": "setflag FLAG_VISITED_LAVARIDGE_TOWN\n\tcall_if_set FLAG_WHITEOUT_TO_LAVARIDGE, LavaridgeTown_EventScript_ClearLavaridgeWhiteOut\n\tcall_if_set FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY, LavaridgeTown_EventScript_ShowMtChimneyTrainers\n\tcall Common_EventScript_SetupRivalGfxId\n\tcall Common_EventScript_SetupRivalOnBikeGfxId\n\tcall_if_eq VAR_LAVARIDGE_TOWN_STATE, 1, LavaridgeTown_EventScript_CheckSetRivalPos\n\tcall_if_eq VAR_LAVARIDGE_TOWN_STATE, 1, LavaridgeTown_EventScript_HideMapNamePopup\n\tend"
+  },
+  "label": "LavaridgeTown_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY",
+      "FLAG_VISITED_LAVARIDGE_TOWN",
+      "FLAG_WHITEOUT_TO_LAVARIDGE"
+    ],
+    "vars": [
+      "VAR_LAVARIDGE_TOWN_STATE"
+    ]
+  }
+}

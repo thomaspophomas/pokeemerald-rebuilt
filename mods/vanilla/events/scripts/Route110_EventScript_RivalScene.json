@@ -1,0 +1,23 @@
+{
+  "id": "Route110_EventScript_RivalScene",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/scripts.inc",
+    "sha1": "ee9846425d6a96c03ac988decb3c48ffbd098f22"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110/scripts.inc",
+    "rawScript": "lockall\n\tcheckplayergender\n\tcall_if_eq VAR_RESULT, MALE, Route110_EventScript_PlayMayMusic\n\tcall_if_eq VAR_RESULT, FEMALE, Route110_EventScript_PlayBrendanMusic\n\tapplymovement LOCALID_ROUTE110_RIVAL, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tapplymovement LOCALID_ROUTE110_RIVAL, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_ROUTE110_RIVAL, Common_Movement_Delay48\n\twaitmovement 0\n\tdelay 30\n\tcall_if_eq VAR_0x8008, 1, Route110_EventScript_RivalApproachPlayer1\n\tcall_if_eq VAR_0x8008, 2, Route110_EventScript_RivalApproachPlayer2\n\tcall_if_eq VAR_0x8008, 3, Route110_EventScript_RivalApproachPlayer3\n\tcheckplayergender\n\tgoto_if_eq VAR_RESULT, MALE, Route110_EventScript_MayBattle\n\tgoto_if_eq VAR_RESULT, FEMALE, Route110_EventScript_BrendanBattle\n\treleaseall\n\tend"
+  },
+  "label": "Route110_EventScript_RivalScene",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Route103_Text_BrendanRoute103Pokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route103/scripts.inc",
+    "sha1": "cdbe6074bf0bdfa44494ccf1457b18c3de43e0de"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route103/scripts.inc",
+    "rawScript": ".string \"BRENDAN: Okay, so it's this one and\\n\"\n\t.string \"that one that live on ROUTE 103\u2026$\""
+  },
+  "label": "Route103_Text_BrendanRoute103Pokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route103/scripts.inc",
+  "references": {}
+}

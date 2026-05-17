@@ -1,0 +1,23 @@
+{
+  "id": "Std_ObtainItem",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/obtain_item.inc",
+    "sha1": "53094705147ea153e40933cbc7f9cbe653e2a59b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/obtain_item.inc",
+    "rawScript": "additem ITEMID, AMOUNT\n\tcopyvar VAR_0x8007, VAR_RESULT\n\tcall EventScript_ObtainItemMessage\n\treturn"
+  },
+  "label": "Std_ObtainItem",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/scripts/obtain_item.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

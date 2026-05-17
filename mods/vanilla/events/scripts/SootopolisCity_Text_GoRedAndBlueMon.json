@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Text_GoRedAndBlueMon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": ".string \"Go for it, red POK\u00e9MON!\\n\"\n\t.string \"Don't back off, blue POK\u00e9MON!$\""
+  },
+  "label": "SootopolisCity_Text_GoRedAndBlueMon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

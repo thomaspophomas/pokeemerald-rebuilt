@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_PokemonLeague_1F_Text_GoForth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+    "sha1": "a55305762ef4a1d7b0cbf882528ff161154a969b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+    "rawScript": ".string \"TRAINER! Believe in yourself and your\\n\"\n\t.string \"POK\u00e9MON, and go forth!$\""
+  },
+  "label": "EverGrandeCity_PokemonLeague_1F_Text_GoForth",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+  "references": {}
+}

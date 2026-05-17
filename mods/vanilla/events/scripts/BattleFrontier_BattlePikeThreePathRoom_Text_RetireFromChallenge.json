@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeThreePathRoom_Text_RetireFromChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "sha1": "927f7bda20dae778159d88132a53038bcfb76615"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "rawScript": ".string \"Do you wish to retire from your\\n\"\n\t.string \"Battle Choice challenge?$\""
+  },
+  "label": "BattleFrontier_BattlePikeThreePathRoom_Text_RetireFromChallenge",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+  "references": {}
+}

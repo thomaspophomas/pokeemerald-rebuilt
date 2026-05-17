@@ -1,0 +1,19 @@
+{
+  "id": "Route113_Text_TrainerTipsRegisterKeyItems",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113/scripts.inc",
+    "sha1": "238e4819cabf545bec77dae988b46382266ced10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route113/scripts.inc",
+    "rawScript": ".string \"TRAINER TIPS\\p\"\n\t.string \"You may register one of the KEY ITEMS\\n\"\n\t.string \"in your BAG as SELECT.\\p\"\n\t.string \"Simply press SELECT to use\\n\"\n\t.string \"the registered item conveniently.$\""
+  },
+  "label": "Route113_Text_TrainerTipsRegisterKeyItems",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route113/scripts.inc",
+  "references": {}
+}

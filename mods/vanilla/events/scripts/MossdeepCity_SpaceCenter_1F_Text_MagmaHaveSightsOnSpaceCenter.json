@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "sha1": "a0cf82d2df089035fb81d02a013736aab95a13d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "rawScript": ".string \"Those MAGMA thugs have their sights\\n\"\n\t.string \"set on our SPACE CENTER.\\p\"\n\t.string \"But we can't allow anything that minor\\n\"\n\t.string \"to interfere with our rocket launch!$\""
+  },
+  "label": "MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+  "references": {}
+}

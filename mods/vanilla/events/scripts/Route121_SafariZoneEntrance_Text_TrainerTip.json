@@ -1,0 +1,19 @@
+{
+  "id": "Route121_SafariZoneEntrance_Text_TrainerTip",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/safari_zone.inc",
+    "sha1": "435880c660a34d3e51dcedb348a41731d28af7cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/safari_zone.inc",
+    "rawScript": ".string \"SAFARI ZONE TRAINER TIP!\\p\"\n\t.string \"Throw {POKEBLOCK}S at wild POK\u00e9MON to make\\n\"\n\t.string \"them less likely to flee.$\""
+  },
+  "label": "Route121_SafariZoneEntrance_Text_TrainerTip",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/safari_zone.inc",
+  "references": {}
+}

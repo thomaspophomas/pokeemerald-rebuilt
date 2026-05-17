@@ -1,0 +1,30 @@
+{
+  "id": "DewfordTown_Gym_EventScript_BrawlyDefeated",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Gym/scripts.inc",
+    "sha1": "595ba5581d9eb698f4762f9b34da6e4f6c2a7a55"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Gym/scripts.inc",
+    "rawScript": "call DewfordTown_Gym_EventScript_AnimateFlashFullBrightness\n\tmessage DewfordTown_Gym_Text_ReceivedKnuckleBadge\n\twaitmessage\n\tcall Common_EventScript_PlayGymBadgeFanfare\n\tmsgbox DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis, MSGBOX_DEFAULT\n\tsetflag FLAG_DEFEATED_DEWFORD_GYM\n\tsetflag FLAG_BADGE02_GET\n\taddvar VAR_PETALBURG_GYM_STATE, 1\n\tcall_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle\n\tsetvar VAR_0x8008, 2\n\tcall Common_EventScript_SetGymTrainers\n\tcall DewfordTown_Gym_EventScript_GiveBulkUp\n\tclosemessage\n\tdelay 30\n\tplayfanfare MUS_REGISTER_MATCH_CALL\n\tmsgbox DewfordTown_Gym_Text_RegisteredBrawly, MSGBOX_DEFAULT\n\twaitfanfare\n\tclosemessage\n\tdelay 30\n\tsetflag FLAG_ENABLE_BRAWLY_MATCH_CALL\n\tsetvar VAR_ROXANNE_CALL_STEP_COUNTER, 0\n\tsetflag FLAG_ENABLE_ROXANNE_FIRST_CALL\n\trelease\n\tend"
+  },
+  "label": "DewfordTown_Gym_EventScript_BrawlyDefeated",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DewfordTown_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_BADGE02_GET",
+      "FLAG_DEFEATED_DEWFORD_GYM",
+      "FLAG_ENABLE_BRAWLY_MATCH_CALL",
+      "FLAG_ENABLE_ROXANNE_FIRST_CALL"
+    ],
+    "vars": [
+      "VAR_PETALBURG_GYM_STATE",
+      "VAR_ROXANNE_CALL_STEP_COUNTER"
+    ]
+  }
+}

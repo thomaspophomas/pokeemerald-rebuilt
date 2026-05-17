@@ -1,0 +1,19 @@
+{
+  "id": "Route116_Text_ThankYouTokenOfAppreciation",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116/scripts.inc",
+    "sha1": "414d7bb5c4246d6317dd973dc816983566be8cc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route116/scripts.inc",
+    "rawScript": ".string \"Oh! It's you!\\p\"\n\t.string \"You're that person who not only helped\\n\"\n\t.string \"me in PETALBURG WOODS, but also got\\l\"\n\t.string \"back my stolen package and then even\\l\"\n\t.string \"graciously delivered it to SLATEPORT!\\p\"\n\t.string \"CAPT. STERN informed us that the\\n\"\n\t.string \"package arrived, too!\\p\"\n\t.string \"I thank you very, very much!\\p\"\n\t.string \"Why, if I were a rain cloud, I would\\n\"\n\t.string \"shower you with gratitude and hail\\l\"\n\t.string \"you as a hero!\\p\"\n\t.string \"For you, the most wonderful TRAINER,\\n\"\n\t.string \"I bear good news!\\p\"\n\t.string \"Recently, our company developed\\n\"\n\t.string \"a new kind of POK\u00e9 BALL.\\p\"\n\t.string \"As a token of our appreciation, this\\n\"\n\t.string \"is our gift to our wonderful TRAINER!$\""
+  },
+  "label": "Route116_Text_ThankYouTokenOfAppreciation",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route116/scripts.inc",
+  "references": {}
+}

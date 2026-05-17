@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_House1_Text_GoOnAdventure",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_House1/scripts.inc",
+    "sha1": "b89624887fb09643d8574021f58e4fdfce6a9d0f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_House1/scripts.inc",
+    "rawScript": ".string \"Sigh\u2026\\p\"\n\t.string \"I wish I could go on an adventure\\n\"\n\t.string \"with some POK\u00e9MON\u2026\\p\"\n\t.string \"Crawl through some damp grass\u2026\\n\"\n\t.string \"Climb rocky, rugged mountains\u2026\\p\"\n\t.string \"Cross the raging seas\u2026\\n\"\n\t.string \"Wander about in dark caves\u2026\\p\"\n\t.string \"And, sometimes, even get a little\\n\"\n\t.string \"homesick\u2026\\p\"\n\t.string \"It must be fabulous to travel!$\""
+  },
+  "label": "PetalburgCity_House1_Text_GoOnAdventure",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_House1/scripts.inc",
+  "references": {}
+}

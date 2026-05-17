@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Gym_1F_Text_JuanPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "sha1": "cd5ddf90f8e2b0931828078295732db5c87d2dae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "rawScript": ".string \"The TRAINERS who have gathered all\\n\"\n\t.string \"the GYM BADGES of HOENN should make\\l\"\n\t.string \"way to the ultimate destination.\\p\"\n\t.string \"The POK\u00e9MON LEAGUE.\\p\"\n\t.string \"Travel to the easternmost reaches\\n\"\n\t.string \"of HOENN, to the island EVER GRANDE.\\p\"\n\t.string \"There, you shall find the POK\u00e9MON\\n\"\n\t.string \"LEAGUE.$\""
+  },
+  "label": "SootopolisCity_Gym_1F_Text_JuanPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+  "references": {}
+}

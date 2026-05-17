@@ -1,0 +1,23 @@
+{
+  "id": "EverGrandeCity_GlaciasRoom_EventScript_WalkInCloseDoor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_GlaciasRoom/scripts.inc",
+    "sha1": "283be726375bae9790aba23661a75e157e304cdc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_GlaciasRoom/scripts.inc",
+    "rawScript": "lockall\n\tcall PokemonLeague_EliteFour_EventScript_WalkInCloseDoor\n\tsetvar VAR_ELITE_4_STATE, 3\n\treleaseall\n\tend"
+  },
+  "label": "EverGrandeCity_GlaciasRoom_EventScript_WalkInCloseDoor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_GlaciasRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_ELITE_4_STATE"
+    ]
+  }
+}

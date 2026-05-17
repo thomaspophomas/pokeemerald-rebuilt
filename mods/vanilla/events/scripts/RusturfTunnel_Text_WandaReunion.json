@@ -1,0 +1,19 @@
+{
+  "id": "RusturfTunnel_Text_WandaReunion",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/scripts.inc",
+    "sha1": "76035185b0aabddf11657305417168db4c1bb93d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RusturfTunnel/scripts.inc",
+    "rawScript": ".string \"WANDA!\\n\"\n\t.string \"Now I can see you anytime!\\p\"\n\t.string \"WANDA: That's\u2026wonderful.\\p\"\n\t.string \"Please, take some rest at my home.$\""
+  },
+  "label": "RusturfTunnel_Text_WandaReunion",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RusturfTunnel/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "DewfordTown_Gym_EventScript_CheckLilith",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Gym/scripts.inc",
+    "sha1": "595ba5581d9eb698f4762f9b34da6e4f6c2a7a55"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Gym/scripts.inc",
+    "rawScript": "goto_if_not_defeated TRAINER_LILITH, DewfordTown_Gym_EventScript_StopCountingTrainers\n\taddvar VAR_0x8000, 1"
+  },
+  "label": "DewfordTown_Gym_EventScript_CheckLilith",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DewfordTown_Gym/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_LILITH"
+    ]
+  }
+}

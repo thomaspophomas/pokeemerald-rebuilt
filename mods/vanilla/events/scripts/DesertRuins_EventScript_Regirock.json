@@ -1,0 +1,27 @@
+{
+  "id": "DesertRuins_EventScript_Regirock",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DesertRuins/scripts.inc",
+    "sha1": "7b1ac7de378ca6e87b7881e86adb2bcb9af94a6b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DesertRuins/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\twaitse\n\tplaymoncry SPECIES_REGIROCK, CRY_MODE_ENCOUNTER\n\tdelay 40\n\twaitmoncry\n\tsetwildbattle SPECIES_REGIROCK, 40\n\tsetflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecial StartRegiBattle\n\tclearflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_WON, DesertRuins_EventScript_DefeatedRegirock\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_RAN, DesertRuins_EventScript_RanFromRegirock\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, DesertRuins_EventScript_RanFromRegirock\n\tsetflag FLAG_DEFEATED_REGIROCK\n\trelease\n\tend"
+  },
+  "label": "DesertRuins_EventScript_Regirock",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DesertRuins/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_REGIROCK",
+      "FLAG_SYS_CTRL_OBJ_DELETE"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

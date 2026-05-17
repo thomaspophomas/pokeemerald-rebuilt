@@ -1,0 +1,23 @@
+{
+  "id": "Route130_EventScript_Katie",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route130/scripts.inc",
+    "sha1": "a9ba0823534cb148395846a36fd5c18d2207922a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route130/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_KATIE, Route130_Text_KatieIntro, Route130_Text_KatieDefeat\n\tmsgbox Route130_Text_KatiePostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route130_EventScript_Katie",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route130/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_KATIE"
+    ]
+  }
+}

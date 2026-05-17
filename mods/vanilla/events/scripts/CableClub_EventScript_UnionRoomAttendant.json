@@ -1,0 +1,28 @@
+{
+  "id": "CableClub_EventScript_UnionRoomAttendant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tsetvar VAR_FRONTIER_FACILITY, FACILITY_UNION_ROOM\n\tgoto_if_unset FLAG_SYS_POKEDEX_GET, CableClub_EventScript_WirelessClubAdjustements\n\tspecialvar VAR_RESULT, IsBadEggInParty\n\tgoto_if_eq VAR_RESULT, TRUE, CableClub_EventScript_AbortLinkPlayerHasBadEgg\n\tcopyvar VAR_0x8007, VAR_LAST_TALKED\n\tspecialvar VAR_RESULT, IsWirelessAdapterConnected\n\tgoto_if_eq VAR_RESULT, FALSE, CableClub_EventScript_UnionRoomAdapterNotConnected\n\tmessage CableClub_Text_WelcomeUnionRoomEnter\n\twaitmessage\n\tgoto CableClub_EventScript_UnionRoomSelect\n\tend"
+  },
+  "label": "CableClub_EventScript_UnionRoomAttendant",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_POKEDEX_GET"
+    ],
+    "vars": [
+      "VAR_FRONTIER_FACILITY",
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "CableClub_EventScript_TradeCenter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "copyvar VAR_0x8007, VAR_LAST_TALKED\n\tcall CableClub_EventScript_CheckPartyTradeRequirements\n\tgoto_if_eq VAR_RESULT, 0, CableClub_EventScript_AbortLink\n\tcall Common_EventScript_SaveGame\n\tgoto_if_eq VAR_RESULT, 0, CableClub_EventScript_AbortLink\n\tmessage gText_PleaseWaitForLink\n\twaitmessage\n\tspecial TryTradeLinkup\n\tgoto_if_eq VAR_RESULT, LINKUP_SUCCESS, CableClub_EventScript_EnterTradeCenter\n\tgoto_if_eq VAR_RESULT, LINKUP_SOMEONE_NOT_READY, CableClub_EventScript_AbortLinkSomeoneNotReady\n\tgoto_if_eq VAR_RESULT, LINKUP_DIFF_SELECTIONS, CableClub_EventScript_AbortLinkDifferentSelections\n\tgoto_if_eq VAR_RESULT, LINKUP_WRONG_NUM_PLAYERS, CableClub_EventScript_AbortLinkIncorrectNumberOfParticipants\n\tgoto_if_eq VAR_RESULT, LINKUP_FAILED, CableClub_EventScript_AbortLink\n\tgoto_if_eq VAR_RESULT, LINKUP_CONNECTION_ERROR, CableClub_EventScript_AbortLinkConnectionError\n\tgoto_if_eq VAR_RESULT, LINKUP_PLAYER_NOT_READY, CableClub_EventScript_AbortLinkPlayerNotReady\n\tgoto_if_eq VAR_RESULT, LINKUP_PARTNER_NOT_READY, CableClub_EventScript_AbortLinkOtherTrainerNotReady\n\tend"
+  },
+  "label": "CableClub_EventScript_TradeCenter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ]
+  }
+}

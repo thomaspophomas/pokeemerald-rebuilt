@@ -1,10 +1,10 @@
 {
   "domain": "outfits",
   "schemaVersion": 1,
-  "fileCount": 138,
-  "jsonFileCount": 138,
-  "bytes": 120780,
-  "sha1": "a2b51cb2a6c752c0342e2243efdfa3c9f5c76a86",
+  "fileCount": 20,
+  "jsonFileCount": 20,
+  "bytes": 34553,
+  "sha1": "e801a60960d0e76652f99e0ea8feb047fa87cb08",
   "files": [
     {
       "path": "mods/vanilla/outfits/_source_manifest.json",
@@ -13,691 +13,101 @@
     },
     {
       "path": "mods/vanilla/outfits/index.json",
-      "sha1": "03fe03caa251a473db782d21a141d4af576590cc",
-      "bytes": 37619
+      "sha1": "058f9874cabcdec7ac13aed2dda85a293ee64a5a",
+      "bytes": 4153
     },
     {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_artist.png.json",
-      "sha1": "0fc404ccc8a3c06ce8b2972089cbc25e4df5628c",
-      "bytes": 427
+      "path": "mods/vanilla/outfits/outfits/female_acro_bike.json",
+      "sha1": "e12b35b95a299ba956a5de8329302178ac8cb19e",
+      "bytes": 473
     },
     {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_beauty.png.json",
-      "sha1": "833b56280458287c70c9fbc60376b4160a6515c5",
-      "bytes": 427
+      "path": "mods/vanilla/outfits/outfits/female_decorating.json",
+      "sha1": "c74a3c6a5d9e1b30de57c0297df13aa42410f7f8",
+      "bytes": 478
     },
     {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_black_belt.png.json",
-      "sha1": "ae48186e1eebef54ecd25bef41d65c0ce6b3b9cb",
-      "bytes": 443
+      "path": "mods/vanilla/outfits/outfits/female_field_move.json",
+      "sha1": "ef8135bb3562b13664e117c1dac5a6cc22daa4a3",
+      "bytes": 477
     },
     {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_boy_1.png.json",
-      "sha1": "638975b7ad27787bdf61a940bfbe070d0877e632",
-      "bytes": 423
+      "path": "mods/vanilla/outfits/outfits/female_fishing.json",
+      "sha1": "401f446877d2f42e587c934dcc6bcd719094f721",
+      "bytes": 466
     },
     {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_boy_2.png.json",
-      "sha1": "87f6002c961ec780dda086fc204a539921f7ee70",
-      "bytes": 423
+      "path": "mods/vanilla/outfits/outfits/female_mach_bike.json",
+      "sha1": "e07ca8acf6a623990d07cb3be5a1b44a781c75e2",
+      "bytes": 473
     },
     {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_boy_3.png.json",
-      "sha1": "60f86990b7766f01276b6ea67ef7fbf0ef4bffd8",
-      "bytes": 423
+      "path": "mods/vanilla/outfits/outfits/female_normal.json",
+      "sha1": "f32e0c8f1ada4b9cba1259f17efbb779fbf3b77a",
+      "bytes": 462
     },
     {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_brendan_acro_bike.png.json",
-      "sha1": "0a5d94487e54dfc9046e64a83e83b53addd134a1",
-      "bytes": 472
+      "path": "mods/vanilla/outfits/outfits/female_surfing.json",
+      "sha1": "d9a0a0fc0536ad0e4b102d3eea262eca7765e657",
+      "bytes": 466
     },
     {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_brendan_decorating.png.json",
-      "sha1": "b0d105640ce145f3f815d33eea87b41824517374",
-      "bytes": 475
+      "path": "mods/vanilla/outfits/outfits/female_underwater.json",
+      "sha1": "3e134fed610882a3436d325d75440189772c63af",
+      "bytes": 492
     },
     {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_brendan_field_move.png.json",
-      "sha1": "753ec62312748d8454ed5c0ca7d06357b5bdb892",
-      "bytes": 475
+      "path": "mods/vanilla/outfits/outfits/female_watering.json",
+      "sha1": "9df1636a49b0e2308feca49c0d0ee4a368ff63e3",
+      "bytes": 470
     },
     {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_brendan_fishing.png.json",
-      "sha1": "4b79eef523044ec5a00d02828ef7a80f4299d610",
-      "bytes": 464
+      "path": "mods/vanilla/outfits/outfits/male_acro_bike.json",
+      "sha1": "a268d13ab8184adeac287eca35cc00e3e314c756",
+      "bytes": 481
     },
     {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_brendan_mach_bike.png.json",
-      "sha1": "d7906d087f069855a100e7e0ddb56e8441602239",
-      "bytes": 472
+      "path": "mods/vanilla/outfits/outfits/male_decorating.json",
+      "sha1": "7635e5dcb90a40cb4c20b97223976f440e4f9b7c",
+      "bytes": 486
     },
     {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_brendan_running.png.json",
-      "sha1": "c25faecbc7b2823400b03ee7aa23e351e3cbbb91",
-      "bytes": 463
+      "path": "mods/vanilla/outfits/outfits/male_field_move.json",
+      "sha1": "6b1617c1229da98031b0900c6481198edc8ab858",
+      "bytes": 485
     },
     {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_brendan_surfing.png.json",
-      "sha1": "2bf31624f5e2a0b0ad1f931336776c2cf0f8c74c",
-      "bytes": 463
+      "path": "mods/vanilla/outfits/outfits/male_fishing.json",
+      "sha1": "3be27832979f847ce61fc6c1c6bb60ca811968e3",
+      "bytes": 474
     },
     {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_brendan_underwater.png.json",
-      "sha1": "65bb0bc612fde1ad7ece309cba9423b1504c62ea",
-      "bytes": 475
+      "path": "mods/vanilla/outfits/outfits/male_mach_bike.json",
+      "sha1": "c6fc3efa072eac4f16cac6e525943a73584474f0",
+      "bytes": 481
     },
     {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_brendan_walking.png.json",
-      "sha1": "f2f8e026f899eb9a9f8d7b35fca6bfdb9b6667f3",
-      "bytes": 463
+      "path": "mods/vanilla/outfits/outfits/male_normal.json",
+      "sha1": "e306f15bb3eee784393f80577b795092b9acdd15",
+      "bytes": 470
     },
     {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_brendan_watering.png.json",
-      "sha1": "fd8dac3f15d64bf3619c6f52289775a11671640e",
-      "bytes": 467
+      "path": "mods/vanilla/outfits/outfits/male_surfing.json",
+      "sha1": "79ea13aee6c6ea1cd662ceaa144f3792eb6964b9",
+      "bytes": 474
     },
     {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_bug_catcher.png.json",
-      "sha1": "8280da7ee70cae473526bb5affde4b932efcd66e",
-      "bytes": 447
+      "path": "mods/vanilla/outfits/outfits/male_underwater.json",
+      "sha1": "2bb257161d341352505d61cf823c53a269b9387e",
+      "bytes": 496
     },
     {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_cameraman.png.json",
-      "sha1": "b7bc34683fc3b2e7fd3ff06ff6f7c5ba34a502b4",
-      "bytes": 439
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_camper.png.json",
-      "sha1": "3ec0f2cca2675cb896948ef8a4e2d4fd48d4e33e",
-      "bytes": 427
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_contest_judge.png.json",
-      "sha1": "3c59c366d5b1b9cba60ec2610b525be1d7a7318c",
-      "bytes": 455
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_cook.png.json",
-      "sha1": "a092948198d5bb4908e81ee901fd688e5a7c84ba",
-      "bytes": 419
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_cycling_triathlete_f.png.json",
-      "sha1": "ef04c17ede920a832b68126a40333d8a6865a11a",
-      "bytes": 484
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_cycling_triathlete_m.png.json",
-      "sha1": "0d761239977e64b5e2d83549f7b30e0bd4058f95",
-      "bytes": 484
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_devon_employee.png.json",
-      "sha1": "b50da807d554a687bac261d38bebc6e427e8f838",
-      "bytes": 459
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_elite_four_drake.png.json",
-      "sha1": "b5d562f8c37c020d08175f2a4362483226b8bad0",
-      "bytes": 467
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_elite_four_glacia.png.json",
-      "sha1": "349c4461d34d0a6fa217d12710027c177083f101",
-      "bytes": 471
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_elite_four_phoebe.png.json",
-      "sha1": "ce7beb59b09465de747008b82aba97b83d2c27a4",
-      "bytes": 471
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_elite_four_sidney.png.json",
-      "sha1": "eab66b60b4538aecd1e16092475945cf3ab46282",
-      "bytes": 471
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_expert_f.png.json",
-      "sha1": "9cabe895ab17574fb2f76aafee58bad990c305e2",
-      "bytes": 435
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_expert_m.png.json",
-      "sha1": "50839e910ccbc4a58abcc238a44701ee979fda88",
-      "bytes": 435
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_fat_man.png.json",
-      "sha1": "55ab2df5a34fd1320f88888bc174911bf1dd456b",
-      "bytes": 431
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_fisherman.png.json",
-      "sha1": "3bf3e04c21fc29f46a026ba69e465bb3bea16d09",
-      "bytes": 439
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_frontier_brains_anabel.png.json",
-      "sha1": "80880a128e0f7d96c09863dbc951ca0044b13a1b",
-      "bytes": 491
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_frontier_brains_brandon.png.json",
-      "sha1": "6f21533fa769a6e3614bcd4ca8357058edbb4914",
-      "bytes": 495
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_frontier_brains_greta.png.json",
-      "sha1": "f9de6f7cdb366efb5529ba3807b4b40dcbacd483",
-      "bytes": 487
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_frontier_brains_lucy.png.json",
-      "sha1": "9e65d6ff2537909d46a765b941a38bcbfea7bb67",
-      "bytes": 483
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_frontier_brains_noland.png.json",
-      "sha1": "263768a70435ff4ea1a134898735e546a7e5d6f2",
-      "bytes": 491
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_frontier_brains_spenser.png.json",
-      "sha1": "bed2bdaff1c8d8f1b1dd4b3b7eeb2679bb62e626",
-      "bytes": 495
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_frontier_brains_tucker.png.json",
-      "sha1": "008b71562bb8ecaedb41d6aa7e586a8fdbb9fad3",
-      "bytes": 491
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_gameboy_kid.png.json",
-      "sha1": "24ee95d4e11e5b8433c3369b159459579bfd0bd1",
-      "bytes": 447
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_gentleman.png.json",
-      "sha1": "9546e4e55399187fa70c699588fcbbd7e3f590fd",
-      "bytes": 439
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_girl_1.png.json",
-      "sha1": "e9648b2af05016b31ab399c3087943c9eeed16c5",
-      "bytes": 427
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_girl_2.png.json",
-      "sha1": "5cb1d6429b3e8df4e876891f27c897c8bacc932a",
-      "bytes": 427
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_girl_3.png.json",
-      "sha1": "2601efaec46f1a906266d101921b6dd40f81ef0e",
-      "bytes": 427
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_gym_leaders_brawly.png.json",
-      "sha1": "9646697f809919d95e06aa303f41b984a8344b07",
-      "bytes": 475
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_gym_leaders_flannery.png.json",
-      "sha1": "037693c25e9780a725d107382f24fba88e889782",
-      "bytes": 483
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_gym_leaders_juan.png.json",
-      "sha1": "4df2a2d4525bceb3aadb131448697f5a5520e267",
-      "bytes": 467
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_gym_leaders_liza.png.json",
-      "sha1": "0484aed2c9a01917d748dfd3d3bb9139521a5ea7",
-      "bytes": 467
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_gym_leaders_norman.png.json",
-      "sha1": "1250bb352ec5805382a47820b165a520526d241f",
-      "bytes": 475
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_gym_leaders_roxanne.png.json",
-      "sha1": "9bc95124250ee61d311a70c501fc9bd171a6bb6b",
-      "bytes": 479
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_gym_leaders_tate.png.json",
-      "sha1": "f5fdb9260ba79649b681935e54ec9a1c958aa7b9",
-      "bytes": 467
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_gym_leaders_wattson.png.json",
-      "sha1": "b975ca69b289c9e539b69eb57e5451c2692b65c5",
-      "bytes": 479
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_gym_leaders_winona.png.json",
-      "sha1": "d00715809eddc0b8a36149ce4355d8bbfad072e1",
-      "bytes": 475
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_hex_maniac.png.json",
-      "sha1": "be9dd93cf0e61b0ea41dc7fefd86b5e1c5c53ef9",
-      "bytes": 443
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_hiker.png.json",
-      "sha1": "d0c342d712b7e47a20b7c24b9cd4740f6fea8440",
-      "bytes": 423
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_hot_springs_old_woman.png.json",
-      "sha1": "86a80e13c75ad816d0882c4550ad0fb5a4928a3b",
-      "bytes": 487
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_lass.png.json",
-      "sha1": "23291054bdba29feeb807065ee50bb7b222a50da",
-      "bytes": 419
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_leaf.png.json",
-      "sha1": "2a33218cf17202cdc811499ed745a83369eb4b75",
-      "bytes": 419
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_link_receptionist.png.json",
-      "sha1": "41d9eca72547404236e3757de93a1677604a03ce",
-      "bytes": 471
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_little_boy.png.json",
-      "sha1": "fdc9e96c7ce07a6b89a444bc141907c3aed846cf",
-      "bytes": 443
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_little_girl.png.json",
-      "sha1": "c17d8e6cbb60fd715dfab78f635d4f6d95112607",
-      "bytes": 447
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_man_1.png.json",
-      "sha1": "c032047278503d02b6247ee50d6e5bd0383de2f6",
-      "bytes": 423
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_man_2.png.json",
-      "sha1": "a00ad5cef29f7ee123b3e1bde9a67c830a5a3cbd",
-      "bytes": 423
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_man_3.png.json",
-      "sha1": "e17a957a3e543aee8b23a36b4c2ebbd70dee447f",
-      "bytes": 423
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_man_4.png.json",
-      "sha1": "b808de3b94bba61f7f8a25a2f62d8fdfb88567b9",
-      "bytes": 423
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_man_5.png.json",
-      "sha1": "3e95da33efd840960685d82e617eb5acdffdd506",
-      "bytes": 423
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_maniac.png.json",
-      "sha1": "c906b200cbba4b0ba704057aa228fee0a2dbf916",
-      "bytes": 427
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_mart_employee.png.json",
-      "sha1": "93cd33023abde40a953989f0af4de30bc8e5b6d9",
-      "bytes": 455
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_mauville_old_man_1.png.json",
-      "sha1": "cc9ad4f764cc1ee5eebacb041d37a637bc0281ff",
-      "bytes": 475
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_mauville_old_man_2.png.json",
-      "sha1": "209078e7db81c2a388a9278eafebfb76e1a2e9fa",
-      "bytes": 475
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_may_acro_bike.png.json",
-      "sha1": "7f1db60e6315b1d69487a2b8c5139fc442717304",
-      "bytes": 456
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_may_decorating.png.json",
-      "sha1": "fb0cb7259e9f6adc416a2c8d3bb589ef06784c47",
-      "bytes": 459
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_may_field_move.png.json",
-      "sha1": "224f9c38f34015c79ed18d8f5d46fc79af3c1a07",
-      "bytes": 459
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_may_fishing.png.json",
-      "sha1": "ef6a80d22cc6e0ac56f53dbcf4fecf4f5095482f",
-      "bytes": 448
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_may_mach_bike.png.json",
-      "sha1": "1f9e7b7b52d402ea668d59388c3f30eda728d4aa",
-      "bytes": 456
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_may_running.png.json",
-      "sha1": "857189e372a5570fb3085f7c1bb8f651ffccef50",
-      "bytes": 447
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_may_surfing.png.json",
-      "sha1": "1faff08adb4a54b4ab3648a9926d13ad20d57495",
-      "bytes": 447
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_may_underwater.png.json",
-      "sha1": "d853d655fa9d2e941701591d36a8af7f0ded9d59",
-      "bytes": 459
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_may_walking.png.json",
-      "sha1": "a669e5dd0824c7f73e5841950a6ba48305b5e463",
-      "bytes": 447
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_may_watering.png.json",
-      "sha1": "916a1f208fb4cf906617015ed092e0e2b4d62e10",
-      "bytes": 451
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_mom.png.json",
-      "sha1": "bb4c9c42489c97bd5d844c0aa4fbfc3b7b752b19",
-      "bytes": 415
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_mystery_event_deliveryman.png.json",
-      "sha1": "d00917c01646515fbf879101096c84890cff11ab",
-      "bytes": 503
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_ninja_boy.png.json",
-      "sha1": "c99b285e077d29303fda5aca0da39778bb52a1a0",
-      "bytes": 439
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_nurse.png.json",
-      "sha1": "119f875467d4ca96aa21576697fab0525bb6cece",
-      "bytes": 423
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_old_man.png.json",
-      "sha1": "c659a2425dafa1eefa5a78965249d267a2977081",
-      "bytes": 431
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_old_woman.png.json",
-      "sha1": "33349c5cf6cca5a9a864663575794e855de03bf2",
-      "bytes": 439
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_picnicker.png.json",
-      "sha1": "ed8b7c2d773eac6372d352ff724b4b320f37dcc2",
-      "bytes": 439
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_pokefan_f.png.json",
-      "sha1": "37399411451e47206f0657f47426cbb25178d304",
-      "bytes": 439
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_pokefan_m.png.json",
-      "sha1": "bca9e45f80f93316c147744060e8bba998196c4d",
-      "bytes": 439
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_prof_birch.png.json",
-      "sha1": "a833526fe32866f4494b6fe96f79af0eeebade39",
-      "bytes": 443
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_psychic_m.png.json",
-      "sha1": "50231d7ef5f9af15c481e35a8104d45e23e45571",
-      "bytes": 439
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_quinty_plump.png.json",
-      "sha1": "c140ad2095859725b2d10691f6b03b78c07ea424",
-      "bytes": 452
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_red.png.json",
-      "sha1": "7f4449553756117184ff4b34158a3d126844e693",
-      "bytes": 415
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_reporter_f.png.json",
-      "sha1": "95b3333cbf06ddd975076a073ceeaab43e94be56",
-      "bytes": 443
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_reporter_m.png.json",
-      "sha1": "33601a9cbb53d2a617002ecf7986c7dce69b054d",
-      "bytes": 443
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_rich_boy.png.json",
-      "sha1": "c3604e60699e63d73a6986c4ae6b373e15459a3c",
-      "bytes": 435
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_rooftop_sale_woman.png.json",
-      "sha1": "e2053ef262f8cad932136adb84e403fe5421b0eb",
-      "bytes": 475
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_rs_little_boy.png.json",
-      "sha1": "b71d6c39cc4977e75de21bd5508bb8a3494e0002",
-      "bytes": 455
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_ruby_sapphire_brendan_running.png.json",
-      "sha1": "19bc62d4eb5ada0c71d330cb2c71dd032cf057ee",
-      "bytes": 519
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_ruby_sapphire_brendan_walking.png.json",
-      "sha1": "588e36a7a921893e1efa3a34c6d68c56a3f8584e",
-      "bytes": 519
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_ruby_sapphire_may_running.png.json",
-      "sha1": "3390d3c213f62ea2441cc29b3f6541701180d4a9",
-      "bytes": 503
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_ruby_sapphire_may_walking.png.json",
-      "sha1": "f0da8c7469bc80b176cd6e5bbbd006e5014c9bea",
-      "bytes": 503
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_running_triathlete_f.png.json",
-      "sha1": "215d0897624744d5485026184351e8828d688922",
-      "bytes": 483
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_running_triathlete_m.png.json",
-      "sha1": "8874a1e0d5e5f5ed1e90847b9f01708bd2a78912",
-      "bytes": 483
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_sailor.png.json",
-      "sha1": "146944bf248595703c94af5db696819dc60a3dc8",
-      "bytes": 427
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_school_kid_m.png.json",
-      "sha1": "14362cdb1537e4e1173eda1a6aa0a2af15e64fdb",
-      "bytes": 451
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_scientist_1.png.json",
-      "sha1": "3eaef95f93e9b57498b30be0a6325cda78da074b",
-      "bytes": 447
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_scientist_2.png.json",
-      "sha1": "46428d5dc5b40ddd6d10c6d7fd1c682ecf5ef08f",
-      "bytes": 447
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_scott.png.json",
-      "sha1": "7bd77dea0a978b24ed58b0580ffb99455318cd9b",
-      "bytes": 423
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_steven.png.json",
-      "sha1": "925340161cd66916dc083c81e8b023be77b6f292",
-      "bytes": 427
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_swimmer_f.png.json",
-      "sha1": "7cfa036dc95c99a24e67a0f8b68dc6afbd37a859",
-      "bytes": 439
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_swimmer_m.png.json",
-      "sha1": "91c87c951cefffe09259e8cdd296b3d944dd9314",
-      "bytes": 439
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_teala.png.json",
-      "sha1": "2297b86f3217e84027fafead9691217da4b1d5e4",
-      "bytes": 423
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_team_aqua_aqua_member_f.png.json",
-      "sha1": "7abd5c11116061d2d6ecee07e27c2f4ea3a08abb",
-      "bytes": 495
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_team_aqua_aqua_member_m.png.json",
-      "sha1": "3e5299a08bb15f81e60d2caae15f1d3f2dab220e",
-      "bytes": 495
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_team_aqua_archie.png.json",
-      "sha1": "8309d06a5ddb785bf03be9ace3fd21a6ebe47fbf",
-      "bytes": 467
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_team_magma_magma_member_f.png.json",
-      "sha1": "012271136e5ecb2db6c574d20db22ffc77307b86",
-      "bytes": 503
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_team_magma_magma_member_m.png.json",
-      "sha1": "4b7430e3653fed5d9f5ef5d6f5e7da0057f2a7b2",
-      "bytes": 503
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_team_magma_maxie.png.json",
-      "sha1": "2671064db96bf8dc476ec6f06f30aa59008f0479",
-      "bytes": 467
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_tuber_f.png.json",
-      "sha1": "650eb2df2ab0eb600b933cfd795d2216d32cb78e",
-      "bytes": 431
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_tuber_m.png.json",
-      "sha1": "64d569cd88b23a324d54513be32706aa98cccec1",
-      "bytes": 431
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_tuber_m_swimming.png.json",
-      "sha1": "2d1fe243f2ced3479f6ed388f31819b31d9cbc78",
-      "bytes": 467
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_twin.png.json",
-      "sha1": "7fff95f14338b10a4775c13ac3b6e6e9624605b4",
-      "bytes": 419
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_union_room_attendant.png.json",
-      "sha1": "b7f0f082e90bbf589335635df096cb18730be7b1",
-      "bytes": 483
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_unused_woman.png.json",
-      "sha1": "824eed0079d5012c516bf46d9582d74f2ddaf998",
-      "bytes": 451
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_wallace.png.json",
-      "sha1": "138d0c8385815bd7b320e5d5ba7c1843ba4bcc67",
-      "bytes": 431
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_wally.png.json",
-      "sha1": "996aec95dd1696766811d35c2b134a06881e7c24",
-      "bytes": 423
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_woman_1.png.json",
-      "sha1": "1b5ff3d927520a2cd03120422372e5fb28734e80",
-      "bytes": 431
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_woman_2.png.json",
-      "sha1": "56cbeaef46e1d3fbe14c34783c9915716e75a4d5",
-      "bytes": 431
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_woman_3.png.json",
-      "sha1": "7b8b3acaa0a986b273086eb0aca9c29660044032",
-      "bytes": 431
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_woman_4.png.json",
-      "sha1": "9b6ab9c2426c6a97045b9c39ef55e6135aa8f47f",
-      "bytes": 431
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_woman_5.png.json",
-      "sha1": "43bedd8258737063f1c09a082cad80e237b69066",
-      "bytes": 431
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/graphics_object_events_pics_people_youngster.png.json",
-      "sha1": "39d719a5a6904358bd02a81135c55d407c5cb9a2",
-      "bytes": 439
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/include_constants_event_objects.h.json",
-      "sha1": "30dbadaa69fedc7c07efd592fa72424b601af706",
-      "bytes": 381
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/src_overworld.c.json",
-      "sha1": "262a99457d81c26f160adfec9081d17a41a48dcf",
-      "bytes": 309
-    },
-    {
-      "path": "mods/vanilla/outfits/source_files/src_player_pc.c.json",
-      "sha1": "071c14858f44590b4b2657fbf6400b5630eedaee",
-      "bytes": 309
+      "path": "mods/vanilla/outfits/outfits/male_watering.json",
+      "sha1": "8ef70672405f2ed50760f66b52692f598b4d9c96",
+      "bytes": 478
     }
   ],
   "counts": {
-    "sourceEntities": 136
+    "outfits": 18
   }
 }

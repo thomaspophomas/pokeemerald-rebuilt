@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_PokemonLeague_2F_EventScript_RecordCorner",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PokemonLeague_2F/scripts.inc",
+    "sha1": "f3f8945b943a530429c30f6ee50477a780980418"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_PokemonLeague_2F/scripts.inc",
+    "rawScript": "call CableClub_EventScript_RecordCorner\n\tend"
+  },
+  "label": "EverGrandeCity_PokemonLeague_2F_EventScript_RecordCorner",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_PokemonLeague_2F/scripts.inc",
+  "references": {}
+}

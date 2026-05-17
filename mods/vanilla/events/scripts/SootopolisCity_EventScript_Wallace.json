@@ -1,0 +1,27 @@
+{
+  "id": "SootopolisCity_EventScript_Wallace",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 4, SootopolisCity_EventScript_GoToSkyPillar\n\tgoto_if_set FLAG_RECEIVED_HM_WATERFALL, SootopolisCity_EventScript_GoToGym\n\tgoto_if_set FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, SootopolisCity_EventScript_GiveWaterfall\n\tmsgbox SootopolisCity_Text_AquaMagmaDidntMeanHarm, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "SootopolisCity_EventScript_Wallace",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_HM_WATERFALL",
+      "FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE"
+    ],
+    "vars": [
+      "VAR_SOOTOPOLIS_CITY_STATE"
+    ]
+  }
+}

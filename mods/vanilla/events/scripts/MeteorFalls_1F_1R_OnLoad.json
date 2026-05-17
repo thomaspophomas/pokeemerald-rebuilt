@@ -1,0 +1,23 @@
+{
+  "id": "MeteorFalls_1F_1R_OnLoad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "sha1": "9f4ded44922a9eecca2a712d1673b053babe0bae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "rawScript": "call_if_set FLAG_SYS_GAME_CLEAR, MeteorFalls_1F_1R_EventScript_OpenStevensCave\n\tend"
+  },
+  "label": "MeteorFalls_1F_1R_OnLoad",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_GAME_CLEAR"
+    ]
+  }
+}

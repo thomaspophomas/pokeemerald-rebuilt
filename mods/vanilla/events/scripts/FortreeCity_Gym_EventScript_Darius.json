@@ -1,0 +1,23 @@
+{
+  "id": "FortreeCity_Gym_EventScript_Darius",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/scripts.inc",
+    "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Gym/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_DARIUS, FortreeCity_Gym_Text_DariusIntro, FortreeCity_Gym_Text_DariusDefeat\n\tmsgbox FortreeCity_Gym_Text_DariusPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "FortreeCity_Gym_EventScript_Darius",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FortreeCity_Gym/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_DARIUS"
+    ]
+  }
+}

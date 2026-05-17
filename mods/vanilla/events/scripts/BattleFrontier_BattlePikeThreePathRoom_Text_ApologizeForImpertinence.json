@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeThreePathRoom_Text_ApologizeForImpertinence",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "sha1": "927f7bda20dae778159d88132a53038bcfb76615"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "rawScript": ".string \"I see\u2026\\n\"\n\t.string \"I apologize for my impertinence\u2026$\""
+  },
+  "label": "BattleFrontier_BattlePikeThreePathRoom_Text_ApologizeForImpertinence",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+  "references": {}
+}

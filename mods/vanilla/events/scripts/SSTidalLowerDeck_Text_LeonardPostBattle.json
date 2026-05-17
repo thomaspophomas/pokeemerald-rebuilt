@@ -1,0 +1,19 @@
+{
+  "id": "SSTidalLowerDeck_Text_LeonardPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalLowerDeck/scripts.inc",
+    "sha1": "da5c83687e72d620633c70321ab42f96f4e4f877"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalLowerDeck/scripts.inc",
+    "rawScript": ".string \"We're the CLEANUP BROTHERS!\\p\"\n\t.string \"The old one dumps the detergent,\\n\"\n\t.string \"and the young one does the scrubbing!$\""
+  },
+  "label": "SSTidalLowerDeck_Text_LeonardPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SSTidalLowerDeck/scripts.inc",
+  "references": {}
+}

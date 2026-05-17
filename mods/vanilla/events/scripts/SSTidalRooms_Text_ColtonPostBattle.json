@@ -1,0 +1,19 @@
+{
+  "id": "SSTidalRooms_Text_ColtonPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalRooms/scripts.inc",
+    "sha1": "1953df649981f24c9b39a0b7b26b1ed8339d7249"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalRooms/scripts.inc",
+    "rawScript": ".string \"I get so excited imagining what kinds\\n\"\n\t.string \"of POK\u00e9MON I'll get to see in the next\\l\"\n\t.string \"CONTEST. The anticipation of it thrills!$\""
+  },
+  "label": "SSTidalRooms_Text_ColtonPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SSTidalRooms/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_PokemonFanClub_Text_AllowMeToExamineYourPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_PokemonFanClub/scripts.inc",
+    "sha1": "153f02ab68bdca98dac6d2c2cf3e3db7c79f2c91"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_PokemonFanClub/scripts.inc",
+    "rawScript": ".string \"Er-hem! I see you've participated in\\n\"\n\t.string \"a POK\u00e9MON CONTEST!\\p\"\n\t.string \"Please! Allow me to examine how you\\n\"\n\t.string \"have raised your POK\u00e9MON.\\p\"\n\t.string \"It delights me no end to see POK\u00e9MON\\n\"\n\t.string \"raised by other TRAINERS.\\p\"\n\t.string \"The happy expressions of POK\u00e9MON\\n\"\n\t.string \"raised with proper care\u2026\\p\"\n\t.string \"The kindly eyes of the TRAINER that\\n\"\n\t.string \"nurtured and raised the POK\u00e9MON\u2026\\p\"\n\t.string \"The very thought fills my heart to\\n\"\n\t.string \"overwhelming with joy.\\p\"\n\t.string \"Oh! I do beg your pardon!\\n\"\n\t.string \"Forgive me for prattling on so!\\p\"\n\t.string \"Please! Allow me to examine how much\\n\"\n\t.string \"your POK\u00e9MON has grown!$\""
+  },
+  "label": "SlateportCity_PokemonFanClub_Text_AllowMeToExamineYourPokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_PokemonFanClub/scripts.inc",
+  "references": {}
+}

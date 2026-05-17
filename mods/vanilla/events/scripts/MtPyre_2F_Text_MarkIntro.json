@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_2F_Text_MarkIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_2F/scripts.inc",
+    "sha1": "bc76e62a0ca08b33eb2220b94b2aff96bd7a1311"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_2F/scripts.inc",
+    "rawScript": ".string \"Hey! Are you searching for POK\u00e9MON?\\n\"\n\t.string \"You came along after me! You're rude!$\""
+  },
+  "label": "MtPyre_2F_Text_MarkIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_2F/scripts.inc",
+  "references": {}
+}

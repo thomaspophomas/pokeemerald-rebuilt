@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_WandasHouse_Text_StrongerSpeechShort",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+    "sha1": "31973fbe72c23018cb6768d20d4d7addb52bae60"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+    "rawScript": ".string \"WALLY: Please watch me, {PLAYER}.\\n\"\n\t.string \"I'm going to get stronger than you.\\p\"\n\t.string \"When I do, I'm going to challenge you\\n\"\n\t.string \"to another battle.$\""
+  },
+  "label": "VerdanturfTown_WandasHouse_Text_StrongerSpeechShort",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+  "references": {}
+}

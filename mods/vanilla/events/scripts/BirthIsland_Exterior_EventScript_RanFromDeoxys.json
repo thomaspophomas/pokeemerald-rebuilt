@@ -1,0 +1,19 @@
+{
+  "id": "BirthIsland_Exterior_EventScript_RanFromDeoxys",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BirthIsland_Exterior/scripts.inc",
+    "sha1": "1e5973feb9102d3690432e451cddaf05cc140d76"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BirthIsland_Exterior/scripts.inc",
+    "rawScript": "setvar VAR_0x8004, SPECIES_DEOXYS\n\tgoto Common_EventScript_LegendaryFlewAway\n\tend"
+  },
+  "label": "BirthIsland_Exterior_EventScript_RanFromDeoxys",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BirthIsland_Exterior/scripts.inc",
+  "references": {}
+}

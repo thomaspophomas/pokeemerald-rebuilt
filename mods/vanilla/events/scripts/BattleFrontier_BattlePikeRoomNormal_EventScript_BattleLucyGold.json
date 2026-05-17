@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomNormal_EventScript_BattleLucyGold",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "sha1": "54c1e0ee021a3a91375f3b05c8682c17ed095aa9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattlePikeRoomNormal_Text_NowComeOn, MSGBOX_DEFAULT\n\tcall BattleFrontier_BattlePikeRoomNormal_EventScript_DoPikeQueenBattle\n\tgoto_if_eq VAR_RESULT, 1, BattleFrontier_BattlePikeRoomNormal_EventScript_DefeatedLucyGold\n\tgoto BattleFrontier_BattlePikeRoomNormal_EventScript_WarpToLobbyLost"
+  },
+  "label": "BattleFrontier_BattlePikeRoomNormal_EventScript_BattleLucyGold",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

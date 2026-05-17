@@ -1,0 +1,23 @@
+{
+  "id": "Route127_OnLoad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route127/scripts.inc",
+    "sha1": "5e6db9ccb1bc4c94fbe7ac561ad0da7edd28720c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route127/scripts.inc",
+    "rawScript": "call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_127_NORTH, AbnormalWeather_EventScript_PlaceTilesRoute127North\n\tcall_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_127_SOUTH, AbnormalWeather_EventScript_PlaceTilesRoute127South\n\tend"
+  },
+  "label": "Route127_OnLoad",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Route127/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_ABNORMAL_WEATHER_LOCATION"
+    ]
+  }
+}

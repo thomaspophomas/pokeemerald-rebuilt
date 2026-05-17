@@ -1,0 +1,23 @@
+{
+  "id": "Route107_EventScript_Darrin",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route107/scripts.inc",
+    "sha1": "8d743da872d9be8742fa574ea07deaea71d39b1c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route107/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_DARRIN, Route107_Text_DarrinIntro, Route107_Text_DarrinDefeated\n\tmsgbox Route107_Text_DarrinPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route107_EventScript_Darrin",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route107/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_DARRIN"
+    ]
+  }
+}

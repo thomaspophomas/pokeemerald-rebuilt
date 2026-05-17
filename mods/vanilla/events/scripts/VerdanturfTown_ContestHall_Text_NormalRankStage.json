@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_ContestHall_Text_NormalRankStage",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentCorridor/scripts.inc",
+    "sha1": "8936c4f1be90d719d6d99b0c0c3c739ed9ad97c0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentCorridor/scripts.inc",
+    "rawScript": ".string \"POK\u00e9MON CONTESTS\\n\"\n\t.string \"NORMAL RANK STAGE!$\""
+  },
+  "label": "VerdanturfTown_ContestHall_Text_NormalRankStage",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentCorridor/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": ".string \"PROF. BIRCH: Now\u2026\\p\"\n\t.string \"{PLAYER}{KUN} and {RIVAL}, I've had the two\\n\"\n\t.string \"of you help me study POK\u00e9MON.\\p\"\n\t.string \"Thanks to your help, new facts\\n\"\n\t.string \"are coming to light.\\p\"\n\t.string \"It appears that in the HOENN region,\\n\"\n\t.string \"there are also POK\u00e9MON from other\\l\"\n\t.string \"regions.\\p\"\n\t.string \"It goes to show how rich and varied\\n\"\n\t.string \"the natural environments of HOENN\\l\"\n\t.string \"happen to be.\\p\"\n\t.string \"That's why I think it's necessary for\\n\"\n\t.string \"me to upgrade your POK\u00e9DEX to\\l\"\n\t.string \"the NATIONAL Mode.\\p\"\n\t.string \"Here, let me see your POK\u00e9DEX units.$\""
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

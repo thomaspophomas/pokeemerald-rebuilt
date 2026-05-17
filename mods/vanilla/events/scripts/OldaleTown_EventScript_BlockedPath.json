@@ -1,0 +1,19 @@
+{
+  "id": "OldaleTown_EventScript_BlockedPath",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown/scripts.inc",
+    "sha1": "b8b6ade6d90e9d5b08d5d2374caa3d404506aa31"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/OldaleTown/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_PLAYER, OldaleTown_Movement_PlayerStepBack\n\tapplymovement LOCALID_FOOTPRINTS_MAN, OldaleTown_Movement_BackUp\n\twaitmovement 0\n\tmsgbox OldaleTown_Text_WaitDontComeInHere, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_FOOTPRINTS_MAN, OldaleTown_Movement_ReturnToOriginalPosition\n\twaitmovement 0\n\treleaseall\n\tend"
+  },
+  "label": "OldaleTown_EventScript_BlockedPath",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/OldaleTown/scripts.inc",
+  "references": {}
+}

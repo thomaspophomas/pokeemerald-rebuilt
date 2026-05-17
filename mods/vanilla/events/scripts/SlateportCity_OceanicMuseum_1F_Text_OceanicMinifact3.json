@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact3",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "sha1": "7a1e00c78bbfbd0fbd6eb59a84a4d4e7114e4261"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "rawScript": ".string \"\u201cOCEANIC MINIFACT 3\\n\"\n\t.string \"Which is bigger? The sea or land?\\p\"\n\t.string \"\u201cThe sea covers about 70% of\\n\"\n\t.string \"the planet, and the rest is land.\\p\"\n\t.string \"\u201cThe sea is therefore more than twice\\n\"\n\t.string \"the size of land.\u201d$\""
+  },
+  "label": "SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact3",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+  "references": {}
+}

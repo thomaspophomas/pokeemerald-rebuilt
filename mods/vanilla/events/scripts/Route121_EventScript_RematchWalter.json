@@ -1,0 +1,23 @@
+{
+  "id": "Route121_EventScript_RematchWalter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route121/scripts.inc",
+    "sha1": "25fbd3a3d48b51dbfcf569f03ff4f7001d429ac3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route121/scripts.inc",
+    "rawScript": "trainerbattle_rematch TRAINER_WALTER_1, Route121_Text_WalterRematchIntro, Route121_Text_WalterRematchDefeat\n\tmsgbox Route121_Text_WalterPostRematch, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route121_EventScript_RematchWalter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route121/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_WALTER_1"
+    ]
+  }
+}

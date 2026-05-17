@@ -1,0 +1,26 @@
+{
+  "id": "BattleFrontier_BattleTowerCorridor_EventScript_WarpToBattleRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerCorridor/scripts.inc",
+    "sha1": "a135a140aa42cd9a6034c33942fe11ca534a9b7e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerCorridor/scripts.inc",
+    "rawScript": "setvar VAR_TEMP_0, 0\n\twarp MAP_BATTLE_FRONTIER_BATTLE_TOWER_BATTLE_ROOM, 4, 8\n\twaitstate\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerCorridor_EventScript_WarpToBattleRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerCorridor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_TOWER_BATTLE_ROOM"
+    ]
+  }
+}

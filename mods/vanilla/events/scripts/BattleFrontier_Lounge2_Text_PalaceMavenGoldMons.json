@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge2_Text_PalaceMavenGoldMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "sha1": "d4d4f7c0802f8118a63eaf9b68eb6bcff146ff4d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "rawScript": ".string \"Have you battled the PALACE MAVEN\\n\"\n\t.string \"when he's serious?\\p\"\n\t.string \"When he throws his entire might into\\n\"\n\t.string \"battle, he's said to use these POK\u00e9MON:\\p\"\n\t.string \"A FIRE-type LEGENDARY POK\u00e9MON,\\n\"\n\t.string \"a NORMAL-type LAZY POK\u00e9MON,\\l\"\n\t.string \"and a WATER-type AURORA POK\u00e9MON.$\""
+  },
+  "label": "BattleFrontier_Lounge2_Text_PalaceMavenGoldMons",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+  "references": {}
+}

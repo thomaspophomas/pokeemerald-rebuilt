@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Gym_Text_RoxanneIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Gym/scripts.inc",
+    "sha1": "e0aa9de4fed612674104e48c7646854400dcecde"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Gym/scripts.inc",
+    "rawScript": ".string \"Hello, I am ROXANNE, the RUSTBORO\\n\"\n\t.string \"POK\u00e9MON GYM LEADER.\\p\"\n\t.string \"I became a GYM LEADER so that I might\\n\"\n\t.string \"apply what I learned at the POK\u00e9MON\\l\"\n\t.string \"TRAINER'S SCHOOL in battle.\\p\"\n\t.string \"Would you kindly demonstrate how you\\n\"\n\t.string \"battle, and with which POK\u00e9MON?$\""
+  },
+  "label": "RustboroCity_Gym_Text_RoxanneIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Gym/scripts.inc",
+  "references": {}
+}

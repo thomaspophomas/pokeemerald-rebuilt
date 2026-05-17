@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideWest_EventScript_CamperFaceFactory",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": "applymovement LOCALID_FRONTIER_CAMPER, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\treturn"
+  },
+  "label": "BattleFrontier_OutsideWest_EventScript_CamperFaceFactory",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {}
+}

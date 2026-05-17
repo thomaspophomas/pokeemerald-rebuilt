@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestHall_Text_IfMonPullsSmartMoveNext",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "sha1": "9d258f56144116075b6ffd125cc9edb7fc292736"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "rawScript": ".string \"There it is!\\p\"\n\t.string \"If my POK\u00e9MON pulls a smart move next,\\n\"\n\t.string \"the audience's excitement will peak!$\""
+  },
+  "label": "LilycoveCity_ContestHall_Text_IfMonPullsSmartMoveNext",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+  "references": {}
+}

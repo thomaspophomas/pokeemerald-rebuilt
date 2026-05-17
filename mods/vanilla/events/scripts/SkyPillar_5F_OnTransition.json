@@ -1,0 +1,23 @@
+{
+  "id": "SkyPillar_5F_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_5F/scripts.inc",
+    "sha1": "b7f17b39fbd96515036feaf52c908a45171f0fa2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_5F/scripts.inc",
+    "rawScript": "call_if_lt VAR_SKY_PILLAR_STATE, 2, SkyPillar_5F_EventScript_CleanFloor\n\treturn"
+  },
+  "label": "SkyPillar_5F_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/SkyPillar_5F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_SKY_PILLAR_STATE"
+    ]
+  }
+}

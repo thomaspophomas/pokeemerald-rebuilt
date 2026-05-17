@@ -1,0 +1,23 @@
+{
+  "id": "LittlerootTown_BrendansHouse_2F_EventScript_RivalsPokeBall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+    "sha1": "e2d021d5a56c7a155294e7f5fcba3be133f71b33"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_eq VAR_LITTLEROOT_RIVAL_STATE, 2, LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendan\n\tmsgbox RivalsHouse_2F_Text_ItsRivalsPokeBall, MSGBOX_DEFAULT\n\treleaseall\n\tend"
+  },
+  "label": "LittlerootTown_BrendansHouse_2F_EventScript_RivalsPokeBall",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LITTLEROOT_RIVAL_STATE"
+    ]
+  }
+}

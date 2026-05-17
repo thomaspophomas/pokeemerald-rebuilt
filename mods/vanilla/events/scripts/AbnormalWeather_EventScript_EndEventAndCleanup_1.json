@@ -1,0 +1,23 @@
+{
+  "id": "AbnormalWeather_EventScript_EndEventAndCleanup_1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/abnormal_weather.inc",
+    "sha1": "8bf77729e5d8e5ebd0812ce736eaf3712ec673f3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/abnormal_weather.inc",
+    "rawScript": "lockall\n\tgoto_if_ge VAR_ABNORMAL_WEATHER_LOCATION, MARINE_CAVE_LOCATIONS_START, AbnormalWeather_EventScript_ShowRainEndedMessage\n\tgoto AbnormalWeather_EventScript_ShowSunEndedMessage\n\tend"
+  },
+  "label": "AbnormalWeather_EventScript_EndEventAndCleanup_1",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/abnormal_weather.inc",
+  "references": {
+    "vars": [
+      "VAR_ABNORMAL_WEATHER_LOCATION"
+    ]
+  }
+}

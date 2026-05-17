@@ -1,0 +1,23 @@
+{
+  "id": "ContestHall_EventScript_SetContestObjects",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ContestHall/scripts.inc",
+    "sha1": "1975dda1f6df6ad0ef2b0d81c28afe4508469870"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ContestHall/scripts.inc",
+    "rawScript": "special LoadLinkContestPlayerPalettes\n\thideobjectat LOCALID_PLAYER, MAP_LITTLEROOT_TOWN\n\tcall ContestHall_EventScript_CreateAudience\n\tend\n\n@ There are 8 audience member object events, 7 of which are given random gfx below (the 8th is the Artist)\n@ The rest of the audience is created statically by ContestHall_EventScript_CreateAudience"
+  },
+  "label": "ContestHall_EventScript_SetContestObjects",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/ContestHall/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_LITTLEROOT_TOWN"
+    ]
+  }
+}

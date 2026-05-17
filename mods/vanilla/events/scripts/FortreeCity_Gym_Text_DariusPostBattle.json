@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Gym_Text_DariusPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/scripts.inc",
+    "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Gym/scripts.inc",
+    "rawScript": ".string \"Sure, you beat me all right.\\n\"\n\t.string \"But you'd better watch it! Our LEADER\\l\"\n\t.string \"WINONA's POK\u00e9MON are all business.$\""
+  },
+  "label": "FortreeCity_Gym_Text_DariusPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_Gym/scripts.inc",
+  "references": {}
+}

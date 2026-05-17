@@ -1,0 +1,23 @@
+{
+  "id": "MtPyre_6F_EventScript_RegisterValerie",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_6F/scripts.inc",
+    "sha1": "0d8e5d648a922985ae05d7a5cc3cc0018668a34a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_6F/scripts.inc",
+    "rawScript": "special PlayerFaceTrainerAfterBattle\n\twaitmovement 0\n\tmsgbox MtPyre_6F_Text_ValerieRegister, MSGBOX_DEFAULT\n\tregister_matchcall TRAINER_VALERIE_1\n\trelease\n\tend"
+  },
+  "label": "MtPyre_6F_EventScript_RegisterValerie",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtPyre_6F/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_VALERIE_1"
+    ]
+  }
+}

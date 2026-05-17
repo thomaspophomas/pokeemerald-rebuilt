@@ -1,0 +1,19 @@
+{
+  "id": "Route101_Text_YouSavedMe",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route101/scripts.inc",
+    "sha1": "8bf41eea03b11363dfc29d02f70e66a0a3532478"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route101/scripts.inc",
+    "rawScript": ".string \"PROF. BIRCH: Whew\u2026\\p\"\n\t.string \"I was in the tall grass studying wild\\n\"\n\t.string \"POK\u00e9MON when I was jumped.\\p\"\n\t.string \"You saved me.\\n\"\n\t.string \"Thanks a lot!\\p\"\n\t.string \"Oh?\\p\"\n\t.string \"Hi, you're {PLAYER}{KUN}!\\p\"\n\t.string \"This is not the place to chat, so come\\n\"\n\t.string \"by my POK\u00e9MON LAB later, okay?$\""
+  },
+  "label": "Route101_Text_YouSavedMe",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route101/scripts.inc",
+  "references": {}
+}

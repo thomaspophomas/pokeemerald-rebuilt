@@ -1,0 +1,19 @@
+{
+  "id": "MtChimney_Text_Grunt1Intro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney/scripts.inc",
+    "sha1": "4d6a7ac7998e07e6d4f244ef13c499194f5b3668"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtChimney/scripts.inc",
+    "rawScript": ".string \"If there were more land, I'd be able\\n\"\n\t.string \"to get a big house of my own!\\p\"\n\t.string \"I'm going to build it on hardened lava!$\""
+  },
+  "label": "MtChimney_Text_Grunt1Intro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtChimney/scripts.inc",
+  "references": {}
+}

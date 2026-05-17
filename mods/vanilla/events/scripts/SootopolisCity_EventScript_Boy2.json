@@ -1,0 +1,23 @@
+{
+  "id": "SootopolisCity_EventScript_Boy2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_SOOTOPOLIS_BOY_2, Common_Movement_FacePlayer\n\twaitmovement 0\n\tgoto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_Boy2Rayquaza\n\tmsgbox SootopolisCity_Text_TwoPokemonArentAngry, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_SOOTOPOLIS_BOY_2, Common_Movement_FaceOriginalDirection\n\twaitmovement 0\n\treleaseall\n\tend"
+  },
+  "label": "SootopolisCity_EventScript_Boy2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_SOOTOPOLIS_CITY_STATE"
+    ]
+  }
+}

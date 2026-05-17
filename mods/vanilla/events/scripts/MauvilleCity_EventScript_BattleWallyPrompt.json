@@ -1,0 +1,24 @@
+{
+  "id": "MauvilleCity_EventScript_BattleWallyPrompt",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": "call_if_eq VAR_RESULT, YES, MauvilleCity_EventScript_BattleWally\n\tgoto_if_eq VAR_RESULT, NO, MauvilleCity_EventScript_DeclineWallyBattle\n\tclosemessage\n\tswitch VAR_FACING\n\tcase DIR_NORTH, MauvilleCity_EventScript_WallyAndUncleExitNorth\n\tcase DIR_EAST, MauvilleCity_EventScript_WallyAndUncleExitEast\n\tend"
+  },
+  "label": "MauvilleCity_EventScript_BattleWallyPrompt",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FACING",
+      "VAR_RESULT"
+    ]
+  }
+}

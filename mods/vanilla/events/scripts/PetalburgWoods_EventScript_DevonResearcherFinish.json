@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgWoods_EventScript_DevonResearcherFinish",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/scripts.inc",
+    "sha1": "a7a3b49731f97088b328145805430d4429326ec8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgWoods/scripts.inc",
+    "rawScript": "msgbox PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro, MSGBOX_DEFAULT\n\tapplymovement LOCALID_PETALBURG_WOODS_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherStartExit\n\twaitmovement 0\n\tmsgbox PetalburgWoods_Text_ICantBeWastingTime, MSGBOX_DEFAULT\n\tclosemessage\n\treturn"
+  },
+  "label": "PetalburgWoods_EventScript_DevonResearcherFinish",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgWoods/scripts.inc",
+  "references": {}
+}

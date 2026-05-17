@@ -1,0 +1,19 @@
+{
+  "id": "Route114_FossilManiacsTunnel_Text_LookInDesertForFossils",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_FossilManiacsTunnel/scripts.inc",
+    "sha1": "ecd010d2086a8019284fa4a41a8a3e7e67275e83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114_FossilManiacsTunnel/scripts.inc",
+    "rawScript": ".string \"I'm the FOSSIL MANIAC\u2026\\n\"\n\t.string \"I'm a nice guy who loves FOSSILS\u2026\\p\"\n\t.string \"Do you want a FOSSIL?\\p\"\n\t.string \"But the FOSSILS around these parts all\\n\"\n\t.string \"belong to me\u2026 None for you\u2026\\p\"\n\t.string \"If you can't bear to go without\\n\"\n\t.string \"a FOSSIL, look in a desert where there\\l\"\n\t.string \"are boulders and sand that may hide\\l\"\n\t.string \"FOSSILS\u2026$\""
+  },
+  "label": "Route114_FossilManiacsTunnel_Text_LookInDesertForFossils",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route114_FossilManiacsTunnel/scripts.inc",
+  "references": {}
+}

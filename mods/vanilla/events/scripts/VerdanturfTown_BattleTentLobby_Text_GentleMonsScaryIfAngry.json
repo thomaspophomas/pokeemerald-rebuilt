@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_BattleTentLobby_Text_GentleMonsScaryIfAngry",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "sha1": "be67ab8ba625b73e575c1594a46cbee43b6f03d9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "rawScript": ".string \"My big sister is gentle usually.\\n\"\n\t.string \"But when she gets angry,\\l\"\n\t.string \"she's really, really scary!\\p\"\n\t.string \"I bet a gentle POK\u00e9MON will be scary\\n\"\n\t.string \"if it gets angry!$\""
+  },
+  "label": "VerdanturfTown_BattleTentLobby_Text_GentleMonsScaryIfAngry",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+  "references": {}
+}

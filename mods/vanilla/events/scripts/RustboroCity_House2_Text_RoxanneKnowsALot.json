@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_House2_Text_RoxanneKnowsALot",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_House2/scripts.inc",
+    "sha1": "c036376f7c01fb41b5259c5cf418cfc9ae7672fc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_House2/scripts.inc",
+    "rawScript": ".string \"ROXANNE, the GYM LEADER, really knows\\n\"\n\t.string \"a lot about POK\u00e9MON.\\p\"\n\t.string \"She's really strong, too!$\""
+  },
+  "label": "RustboroCity_House2_Text_RoxanneKnowsALot",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_House2/scripts.inc",
+  "references": {}
+}

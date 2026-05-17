@@ -1,0 +1,19 @@
+{
+  "id": "VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_1F/scripts.inc",
+    "sha1": "dda3a20e79be32fbc7d021ceddf040bbcdbe53c7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VictoryRoad_1F/scripts.inc",
+    "rawScript": ".string \"WALLY: Hi! {PLAYER}!\\p\"\n\t.string \"I bet you're surprised to see me here!\\p\"\n\t.string \"I made it all the way here, and it's\\n\"\n\t.string \"all thanks to you!\\p\"\n\t.string \"{PLAYER}, losing to you that time\\n\"\n\t.string \"made me stronger!\\p\"\n\t.string \"But I'm not going to lose anymore!\\p\"\n\t.string \"I'm going to win! For the POK\u00e9MON who\\n\"\n\t.string \"gave me courage and strength!\\p\"\n\t.string \"Okay\u2026 Here I come!$\""
+  },
+  "label": "VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VictoryRoad_1F/scripts.inc",
+  "references": {}
+}

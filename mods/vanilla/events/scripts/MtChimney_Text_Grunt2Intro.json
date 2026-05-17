@@ -1,0 +1,19 @@
+{
+  "id": "MtChimney_Text_Grunt2Intro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney/scripts.inc",
+    "sha1": "4d6a7ac7998e07e6d4f244ef13c499194f5b3668"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtChimney/scripts.inc",
+    "rawScript": ".string \"We of TEAM MAGMA are working hard for\\n\"\n\t.string \"everyone's sake.\\p\"\n\t.string \"Like, if that thing's power made more\\n\"\n\t.string \"land, there'd be more places to live.\\p\"\n\t.string \"Everyone'd be happy!$\""
+  },
+  "label": "MtChimney_Text_Grunt2Intro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtChimney/scripts.inc",
+  "references": {}
+}

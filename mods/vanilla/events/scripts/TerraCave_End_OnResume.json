@@ -1,0 +1,23 @@
+{
+  "id": "TerraCave_End_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TerraCave_End/scripts.inc",
+    "sha1": "f580375762b0ce93146fa1e144b30b9b23c3cb5b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TerraCave_End/scripts.inc",
+    "rawScript": "call_if_set FLAG_SYS_CTRL_OBJ_DELETE, TerraCave_End_EventScript_TryRemoveGroudon\n\tend"
+  },
+  "label": "TerraCave_End_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/TerraCave_End/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_CTRL_OBJ_DELETE"
+    ]
+  }
+}

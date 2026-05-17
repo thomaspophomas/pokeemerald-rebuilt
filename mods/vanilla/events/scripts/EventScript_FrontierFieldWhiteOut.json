@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_FrontierFieldWhiteOut",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/field_poison.inc",
+    "sha1": "5f88349e5a39d50912f00b834304b6a66214eee8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/field_poison.inc",
+    "rawScript": "message gText_PlayerWhitedOut\n\twaitmessage\n\twaitbuttonpress\n\tpike_inchallenge\n\tgoto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattlePike_EventScript_Retire\n\tpyramid_getlocation\n\tgoto_if_eq VAR_RESULT, PYRAMID_LOCATION_FLOOR, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost\n\tgoto_if_eq VAR_RESULT, PYRAMID_LOCATION_TOP, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost\n\ttrainerhill_inchallenge\n\tgoto_if_eq VAR_RESULT, TRUE, TrainerHill_1F_EventScript_Lost\n\tspecial Script_FadeOutMapMusic\n\tfadescreen FADE_TO_BLACK\n\tspecial SetCB2WhiteOut\n\tend"
+  },
+  "label": "EventScript_FrontierFieldWhiteOut",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/field_poison.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

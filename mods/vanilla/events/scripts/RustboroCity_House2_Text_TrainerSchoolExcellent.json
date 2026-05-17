@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_House2_Text_TrainerSchoolExcellent",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_House2/scripts.inc",
+    "sha1": "c036376f7c01fb41b5259c5cf418cfc9ae7672fc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_House2/scripts.inc",
+    "rawScript": ".string \"The TRAINER'S SCHOOL is excellent.\\p\"\n\t.string \"If you study there, you could even\\n\"\n\t.string \"become a GYM LEADER.$\""
+  },
+  "label": "RustboroCity_House2_Text_TrainerSchoolExcellent",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_House2/scripts.inc",
+  "references": {}
+}

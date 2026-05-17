@@ -1,0 +1,19 @@
+{
+  "id": "Route104_MrBrineysHouse_Text_WaitUpPeeko",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+    "sha1": "1685496df25ec35fb97de14e44b3ea41b1d1c6db"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+    "rawScript": ".string \"MR. BRINEY: Hold on, lass!\\n\"\n\t.string \"Wait up, PEEKO!$\""
+  },
+  "label": "Route104_MrBrineysHouse_Text_WaitUpPeeko",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+  "references": {}
+}

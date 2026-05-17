@@ -1,0 +1,19 @@
+{
+  "id": "Route112_Text_CantLetAnyonePassUntilTheyreBack",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route112/scripts.inc",
+    "sha1": "2e1afc791f1e05fe9c3dcec0234b3a587c6a64fc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route112/scripts.inc",
+    "rawScript": ".string \"You got it. And until they come back,\\n\"\n\t.string \"we're not to let anyone pass, right.$\""
+  },
+  "label": "Route112_Text_CantLetAnyonePassUntilTheyreBack",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route112/scripts.inc",
+  "references": {}
+}

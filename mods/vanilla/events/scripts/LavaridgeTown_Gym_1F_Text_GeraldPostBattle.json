@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Gym_1F_Text_GeraldPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "sha1": "b82ae91ab89ff7156e8125891eff9b7e6a2a260f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "rawScript": ".string \"The temperature of magma is\\n\"\n\t.string \"392 degrees.\\p\"\n\t.string \"Your POK\u00e9MON beat me, so they should\\n\"\n\t.string \"easily survive in magma.$\""
+  },
+  "label": "LavaridgeTown_Gym_1F_Text_GeraldPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+  "references": {}
+}

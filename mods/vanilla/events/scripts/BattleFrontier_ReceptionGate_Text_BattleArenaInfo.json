@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ReceptionGate_Text_BattleArenaInfo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "sha1": "5b6e89c53f6e32c0fa6883bd750252f1d739a97b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "rawScript": ".string \"The BATTLE ARENA is the dojo-like\\n\"\n\t.string \"building at the center-right of\\l\"\n\t.string \"the BATTLE FRONTIER.\\p\"\n\t.string \"An event called the Set KO Tourney\\n\"\n\t.string \"takes place at the BATTLE ARENA.$\""
+  },
+  "label": "BattleFrontier_ReceptionGate_Text_BattleArenaInfo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+  "references": {}
+}

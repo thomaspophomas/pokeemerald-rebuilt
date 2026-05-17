@@ -1,0 +1,19 @@
+{
+  "id": "Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_FossilManiacsTunnel/scripts.inc",
+    "sha1": "ecd010d2086a8019284fa4a41a8a3e7e67275e83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114_FossilManiacsTunnel/scripts.inc",
+    "rawScript": ".string \"You found a FOSSIL, didn't you?\\n\"\n\t.string \"That's so nice\u2026 It's so dreamy\u2026\\p\"\n\t.string \"What are you going to do with that\\n\"\n\t.string \"FOSSIL?\\p\"\n\t.string \"From what I've heard, DEVON is doing\\n\"\n\t.string \"research on reviving POK\u00e9MON from\\l\"\n\t.string \"FOSSILS\u2026\\p\"\n\t.string \"I love my FOSSILS, so I would never\\n\"\n\t.string \"do anything like that\u2026$\""
+  },
+  "label": "Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route114_FossilManiacsTunnel/scripts.inc",
+  "references": {}
+}

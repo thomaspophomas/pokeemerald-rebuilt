@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_2F_Text_LukeIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_2F/scripts.inc",
+    "sha1": "bc76e62a0ca08b33eb2220b94b2aff96bd7a1311"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_2F/scripts.inc",
+    "rawScript": ".string \"LUKE: We're here on a dare.\\p\"\n\t.string \"Heheh, if I show her how cool I am,\\n\"\n\t.string \"she'll fall for me. I know it!\\p\"\n\t.string \"I know! I'll cream you and show her\\n\"\n\t.string \"how cool I am!$\""
+  },
+  "label": "MtPyre_2F_Text_LukeIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,25 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_TrySetUpLinkContest",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": "goto_if_eq VAR_TEMP_D, 1, LilycoveCity_ContestLobby_EventScript_SetLinkGroupType\n\tgoto_if_ge VAR_TEMP_D, 2, LilycoveCity_ContestLobby_EventScript_CancelLinkContest\n\tmessage LilycoveCity_ContestLobby_Text_PleaseWaitBButtonCancel\n\twaitmessage\n\tcopyvar VAR_0x8004, VAR_RESULT\n\tcall_if_eq VAR_TEMP_C, 0, LilycoveCity_ContestLobby_EventScript_TryLinkEMode\n\tcall_if_eq VAR_TEMP_C, 1, LilycoveCity_ContestLobby_EventScript_TryLinkGMode\n\tgoto_if_ge VAR_TEMP_C, 2, LilycoveCity_ContestLobby_EventScript_CancelLinkContest\n\tgoto_if_eq VAR_RESULT, LINKUP_WRONG_NUM_PLAYERS, LilycoveCity_ContestLobby_EventScript_CancelLinkDifferentChoices\n\tgoto_if_eq VAR_RESULT, LINKUP_DIFF_SELECTIONS, LilycoveCity_ContestLobby_EventScript_CancelLinkDifferentChoices\n\tgoto_if_eq VAR_RESULT, LINKUP_FAILED, LilycoveCity_ContestLobby_EventScript_CancelLinkContest\n\tgoto_if_eq VAR_RESULT, LINKUP_CONNECTION_ERROR, LilycoveCity_ContestLobby_EventScript_CancelLinkError\n\tgoto_if_eq VAR_RESULT, LINKUP_FAILED_CONTEST_GMODE, LilycoveCity_ContestLobby_EventScript_CancelLinkModeDifference\n\tmessageinstant LilycoveCity_ContestLobby_Text_Transmitting\n\tcontestlinktransfer\n\tswitch VAR_0x8004\n\tcase 0, LilycoveCity_ContestLobby_EventScript_StartLinkContest\n\tcase 1, LilycoveCity_ContestLobby_EventScript_CancelLinkDifferentContest\n\tcase 2, LilycoveCity_ContestLobby_EventScript_CancelLinkTransmissionError\n\tend"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_TrySetUpLinkContest",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_C",
+      "VAR_TEMP_D"
+    ]
+  }
+}

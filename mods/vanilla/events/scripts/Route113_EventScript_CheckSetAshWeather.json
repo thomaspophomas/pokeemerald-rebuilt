@@ -1,0 +1,24 @@
+{
+  "id": "Route113_EventScript_CheckSetAshWeather",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113/scripts.inc",
+    "sha1": "238e4819cabf545bec77dae988b46382266ced10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route113/scripts.inc",
+    "rawScript": "getplayerxy VAR_TEMP_0, VAR_TEMP_1\n\tgoto_if_lt VAR_TEMP_0, 19, Route113_EventScript_DontSetAshWeather\n\tgoto_if_gt VAR_TEMP_0, 84, Route113_EventScript_DontSetAshWeather\n\tsetweather WEATHER_VOLCANIC_ASH\n\treturn"
+  },
+  "label": "Route113_EventScript_CheckSetAshWeather",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route113/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0",
+      "VAR_TEMP_1"
+    ]
+  }
+}

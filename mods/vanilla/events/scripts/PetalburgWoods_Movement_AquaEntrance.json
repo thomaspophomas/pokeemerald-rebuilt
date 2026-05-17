@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgWoods_Movement_AquaEntrance",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/scripts.inc",
+    "sha1": "a7a3b49731f97088b328145805430d4429326ec8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgWoods/scripts.inc",
+    "rawScript": "walk_down\n\twalk_down\n\tdelay_16\n\tdelay_16\n\tstep_end"
+  },
+  "label": "PetalburgWoods_Movement_AquaEntrance",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/PetalburgWoods/scripts.inc",
+  "references": {}
+}

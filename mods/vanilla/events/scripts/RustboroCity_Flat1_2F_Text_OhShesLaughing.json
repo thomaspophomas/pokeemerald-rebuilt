@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Flat1_2F_Text_OhShesLaughing",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+    "sha1": "bce61defe394f3175dd583157b086f1687d0ac6f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+    "rawScript": ".string \"{STR_VAR_1}.\\n\"\n\t.string \"{STR_VAR_1}.\\p\"\n\t.string \"Oh, yes! She's laughing!\\n\"\n\t.string \"Oh, I am as delighted as she!$\""
+  },
+  "label": "RustboroCity_Flat1_2F_Text_OhShesLaughing",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+  "references": {}
+}

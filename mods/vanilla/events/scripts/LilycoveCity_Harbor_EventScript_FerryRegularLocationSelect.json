@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_Harbor_EventScript_FerryRegularLocationSelect",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "sha1": "ffd83f00915b03bfdd96f51950251d00dd19dbcb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "rawScript": "setvar VAR_0x8004, 0\n\tspecial ScriptMenu_CreateLilycoveSSTidalMultichoice\n\tspecial GetLilycoveSSTidalSelection\n\tswitch VAR_RESULT\n\tcase 0, LilycoveCity_Harbor_EventScript_GoToSlateport\n\tcase 1, LilycoveCity_Harbor_EventScript_GoToBattleFrontier\n\tcase 2, LilycoveCity_Harbor_EventScript_GoToSouthernIsland\n\tcase 3, LilycoveCity_Harbor_EventScript_GoToNavelRock\n\tcase 4, LilycoveCity_Harbor_EventScript_GoToBirthIsland\n\tcase 5, LilycoveCity_Harbor_EventScript_GoToFarawayIsland\n\tcase 6, LilycoveCity_Harbor_EventScript_ExitSailSelect\n\tcase MULTI_B_PRESSED, LilycoveCity_Harbor_EventScript_ExitSailSelect\n\tend"
+  },
+  "label": "LilycoveCity_Harbor_EventScript_FerryRegularLocationSelect",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_Harbor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

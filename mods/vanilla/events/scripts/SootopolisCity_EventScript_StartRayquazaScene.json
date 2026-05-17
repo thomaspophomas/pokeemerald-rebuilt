@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_EventScript_StartRayquazaScene",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": "lockall\n\tspecial StorePlayerCoordsInVars\n\tgoto_if_ne VAR_0x8004, 43, SootopolisCity_EventScript_RayquazaSceneFromDive\n\tgoto_if_ne VAR_0x8005, 32, SootopolisCity_EventScript_RayquazaSceneFromDive\n\tgoto SootopolisCity_EventScript_RayquazaSceneFromPokeCenter\n\tend"
+  },
+  "label": "SootopolisCity_EventScript_StartRayquazaScene",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

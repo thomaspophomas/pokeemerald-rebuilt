@@ -1,0 +1,23 @@
+{
+  "id": "Route127_EventScript_Roger",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route127/scripts.inc",
+    "sha1": "5e6db9ccb1bc4c94fbe7ac561ad0da7edd28720c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route127/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_ROGER, Route127_Text_RogerIntro, Route127_Text_RogerDefeat\n\tmsgbox Route127_Text_RogerPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route127_EventScript_Roger",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route127/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ROGER"
+    ]
+  }
+}

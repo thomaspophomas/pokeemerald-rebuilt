@@ -1,0 +1,28 @@
+{
+  "id": "PetalburgCity_Gym_EventScript_CheckNormanForRematch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": "setorcopyvar VAR_TRAINER_BATTLE_OPPONENT_A, TRAINER_NORMAN_1\n\tspecialvar VAR_RESULT, IsTrainerReadyForRematch\n\tgoto_if_eq VAR_RESULT, TRUE, PetalburgCity_Gym_EventScript_DontMoveNormanToFront\n\tgoto_if_eq VAR_PETALBURG_GYM_STATE, 8, PetalburgCity_Gym_EventScript_DontMoveNormanToFront\n\tsetobjectxyperm LOCALID_PETALBURG_GYM_NORMAN, 4, 107\n\treturn"
+  },
+  "label": "PetalburgCity_Gym_EventScript_CheckNormanForRematch",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_PETALBURG_GYM_STATE",
+      "VAR_RESULT",
+      "VAR_TRAINER_BATTLE_OPPONENT_A"
+    ],
+    "trainers": [
+      "TRAINER_NORMAN_1"
+    ]
+  }
+}

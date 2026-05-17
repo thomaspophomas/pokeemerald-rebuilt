@@ -1,0 +1,19 @@
+{
+  "id": "Route121_SafariZoneEntrance_Text_WelcomeToSafariZone",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/safari_zone.inc",
+    "sha1": "435880c660a34d3e51dcedb348a41731d28af7cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/safari_zone.inc",
+    "rawScript": ".string \"Welcome to the SAFARI ZONE!\\p\"\n\t.string \"Here, you may witness many kinds of\\n\"\n\t.string \"POK\u00e9MON rarely seen in HOENN.\\p\"\n\t.string \"And, you'll see them in their wild,\\n\"\n\t.string \"untamed state in natural habitats.\\p\"\n\t.string \"What's more, we've thrown open the\\n\"\n\t.string \"gates to POK\u00e9MON TRAINERS.\\p\"\n\t.string \"You're encouraged to catch POK\u00e9MON\\n\"\n\t.string \"for keeps!\\p\"\n\t.string \"Come in and enjoy the SAFARI ZONE!$\""
+  },
+  "label": "Route121_SafariZoneEntrance_Text_WelcomeToSafariZone",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/safari_zone.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeLobby_EventScript_LostChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "sha1": "e2be0fe89296e221d6bdf7bc81fdcf739064bd1b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "rawScript": "lockall\n\tmessage BattleFrontier_BattlePikeLobby_Text_ChallengeEndedRecordResults\n\twaitmessage\n\tfrontier_checkairshow\n\tfrontier_set FRONTIER_DATA_BATTLE_NUM, 0\n\tpike_set PIKE_DATA_WIN_STREAK_ACTIVE, FALSE\n\tspecial LoadPlayerParty\n\tspecial HealPlayerParty\n\tpike_resethelditems\n\tpike_save 0\n\tplayse SE_SAVE\n\twaitse\n\tmsgbox BattleFrontier_BattlePikeLobby_Text_LookForwardToSeeingYou, MSGBOX_DEFAULT\n\tclosemessage\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 255\n\treleaseall\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeLobby_EventScript_LostChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ]
+  }
+}

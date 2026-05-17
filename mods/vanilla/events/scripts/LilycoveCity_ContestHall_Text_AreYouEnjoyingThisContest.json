@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestHall_Text_AreYouEnjoyingThisContest",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "sha1": "9d258f56144116075b6ffd125cc9edb7fc292736"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "rawScript": ".string \"JUDGE: Are you enjoying this CONTEST?\\p\"\n\t.string \"Come back with three friends, and\\n\"\n\t.string \"all of you may enter a CONTEST!$\""
+  },
+  "label": "LilycoveCity_ContestHall_Text_AreYouEnjoyingThisContest",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+  "references": {}
+}

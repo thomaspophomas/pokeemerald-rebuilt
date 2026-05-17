@@ -1,0 +1,23 @@
+{
+  "id": "AquaHideout_B2F_EventScript_MattNoticePlayer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B2F/scripts.inc",
+    "sha1": "2422b13cc4d746236ea4f5c8dbbc6ea26d3d8e36"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_B2F/scripts.inc",
+    "rawScript": "lockall\n\tsetvar VAR_0x8008, LOCALID_AQUA_HIDEOUT_MATT\n\tplayse SE_PIN\n\tapplymovement VAR_0x8008, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement VAR_0x8008, Common_Movement_FacePlayer\n\twaitmovement 0\n\tsetvar VAR_TEMP_1, 1\n\treleaseall\n\tend"
+  },
+  "label": "AquaHideout_B2F_EventScript_MattNoticePlayer",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AquaHideout_B2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "MtChimney_EventScript_Shirley",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney/scripts.inc",
+    "sha1": "4d6a7ac7998e07e6d4f244ef13c499194f5b3668"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtChimney/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_SHIRLEY, MtChimney_Text_ShirleyIntro, MtChimney_Text_ShirleyDefeat\n\tmsgbox MtChimney_Text_ShirleyPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "MtChimney_EventScript_Shirley",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtChimney/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_SHIRLEY"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "SSTidalLowerDeck_EventScript_Phillip",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalLowerDeck/scripts.inc",
+    "sha1": "da5c83687e72d620633c70321ab42f96f4e4f877"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalLowerDeck/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_PHILLIP, SSTidalLowerDeck_Text_PhillipIntro, SSTidalLowerDeck_Text_PhillipDefeat\n\tmsgbox SSTidalLowerDeck_Text_PhillipPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "SSTidalLowerDeck_EventScript_Phillip",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SSTidalLowerDeck/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_PHILLIP"
+    ]
+  }
+}

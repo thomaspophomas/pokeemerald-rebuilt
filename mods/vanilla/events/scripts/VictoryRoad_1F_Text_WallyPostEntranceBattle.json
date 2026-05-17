@@ -1,0 +1,19 @@
+{
+  "id": "VictoryRoad_1F_Text_WallyPostEntranceBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_1F/scripts.inc",
+    "sha1": "dda3a20e79be32fbc7d021ceddf040bbcdbe53c7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VictoryRoad_1F/scripts.inc",
+    "rawScript": ".string \"WALLY: I couldn't beat you today,\\n\"\n\t.string \"{PLAYER}, but one of these days, I'll\\l\"\n\t.string \"catch up to you!$\""
+  },
+  "label": "VictoryRoad_1F_Text_WallyPostEntranceBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VictoryRoad_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_WandasHouse_Text_CanSeeGirlfriendEveryDay",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+    "sha1": "31973fbe72c23018cb6768d20d4d7addb52bae60"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+    "rawScript": ".string \"Thanks to you, I can see my girlfriend\\n\"\n\t.string \"every day.\\l\"\n\t.string \"Happy? You bet I am!$\""
+  },
+  "label": "VerdanturfTown_WandasHouse_Text_CanSeeGirlfriendEveryDay",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+  "references": {}
+}

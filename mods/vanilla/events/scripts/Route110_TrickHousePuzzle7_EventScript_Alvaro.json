@@ -1,0 +1,23 @@
+{
+  "id": "Route110_TrickHousePuzzle7_EventScript_Alvaro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle7/scripts.inc",
+    "sha1": "d0faf89c20b52e4b3f4ef5191cdd1e42d9c73feb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle7/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_ALVARO, Route110_TrickHousePuzzle7_Text_AlvaroIntro, Route110_TrickHousePuzzle7_Text_AlvaroDefeat\n\tmsgbox Route110_TrickHousePuzzle7_Text_AlvaroPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route110_TrickHousePuzzle7_EventScript_Alvaro",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHousePuzzle7/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ALVARO"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "Underwater_MarineCave_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_MarineCave/scripts.inc",
+    "sha1": "ecfa39a437d6a1fb9639d1637d1a88a043c2479d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Underwater_MarineCave/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, Underwater_MarineCave_OnResume\n\tmap_script MAP_SCRIPT_ON_TRANSITION, Underwater_MarineCave_OnTransition\n\t.byte 0"
+  },
+  "label": "Underwater_MarineCave_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Underwater_MarineCave/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

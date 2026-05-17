@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideWest_Text_FinallyArrivedAtFrontier",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": ".string \"I've finally arrived at the BATTLE\\n\"\n\t.string \"FRONTIER!\\p\"\n\t.string \"I'm sure to grab attention with\\n\"\n\t.string \"my looks and ability!$\""
+  },
+  "label": "BattleFrontier_OutsideWest_Text_FinallyArrivedAtFrontier",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {}
+}

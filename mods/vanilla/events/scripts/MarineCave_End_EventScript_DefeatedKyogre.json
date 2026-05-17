@@ -1,0 +1,26 @@
+{
+  "id": "MarineCave_End_EventScript_DefeatedKyogre",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MarineCave_End/scripts.inc",
+    "sha1": "9fc74c6c75db5dcc1953c7f9fbd123e07dd022d5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MarineCave_End/scripts.inc",
+    "rawScript": "setvar VAR_SHOULD_END_ABNORMAL_WEATHER, 1\n\tsetflag FLAG_DEFEATED_KYOGRE\n\tgoto Common_EventScript_RemoveStaticPokemon\n\tend"
+  },
+  "label": "MarineCave_End_EventScript_DefeatedKyogre",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MarineCave_End/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_KYOGRE"
+    ],
+    "vars": [
+      "VAR_SHOULD_END_ABNORMAL_WEATHER"
+    ]
+  }
+}

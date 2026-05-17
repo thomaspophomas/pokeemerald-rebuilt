@@ -1,0 +1,23 @@
+{
+  "id": "SlateportCity_EventScript_ChooseBerryPowderItem",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": "message SlateportCity_Text_ExchangeWhatWithIt\n\twaitmessage\n\tsetvar VAR_0x8004, SCROLL_MULTI_BERRY_POWDER_VENDOR\n\tspecial ShowScrollableMultichoice\n\tswitch VAR_RESULT\n\tcase 0, SlateportCity_EventScript_EnergyPowder\n\tcase 1, SlateportCity_EventScript_EnergyRoot\n\tcase 2, SlateportCity_EventScript_HealPowder\n\tcase 3, SlateportCity_EventScript_RevivalHerb\n\tcase 4, SlateportCity_EventScript_Protein\n\tcase 5, SlateportCity_EventScript_Iron\n\tcase 6, SlateportCity_EventScript_Carbos\n\tcase 7, SlateportCity_EventScript_Calcium\n\tcase 8, SlateportCity_EventScript_Zinc\n\tcase 9, SlateportCity_EventScript_HPUp\n\tcase 10, SlateportCity_EventScript_PPUp\n\tcase 11, SlateportCity_EventScript_CancelPowderItemSelect\n\tcase MULTI_B_PRESSED, SlateportCity_EventScript_CancelPowderItemSelect\n\tend"
+  },
+  "label": "SlateportCity_EventScript_ChooseBerryPowderItem",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

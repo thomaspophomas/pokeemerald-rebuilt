@@ -1,0 +1,19 @@
+{
+  "id": "SouthernIsland_Interior_EventScript_TryLatiEncounter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SouthernIsland_Interior/scripts.inc",
+    "sha1": "6ed339e41064219d030f00f9c7e62ccbfde31212"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SouthernIsland_Interior/scripts.inc",
+    "rawScript": "lockall\n\tsetvar VAR_0x8008, 12  @ Player's Y coordinate. Not read\n\tgoto SouthernIsland_Interior_EventScript_Lati\n\tend"
+  },
+  "label": "SouthernIsland_Interior_EventScript_TryLatiEncounter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SouthernIsland_Interior/scripts.inc",
+  "references": {}
+}

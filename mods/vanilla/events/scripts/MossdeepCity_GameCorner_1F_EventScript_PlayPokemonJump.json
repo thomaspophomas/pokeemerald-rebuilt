@@ -1,0 +1,23 @@
+{
+  "id": "MossdeepCity_GameCorner_1F_EventScript_PlayPokemonJump",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "setvar VAR_0x8005, 0\n\tspecial IsPokemonJumpSpeciesInParty\n\tgoto_if_eq VAR_RESULT, FALSE, MossdeepCity_GameCorner_1F_EventScript_DontHaveRequiredMon\n\tmsgbox MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon, MSGBOX_DEFAULT\n\tfadescreen FADE_TO_BLACK\n\tsetvar VAR_0x8005, 0\n\tspecial ChooseMonForWirelessMinigame\n\tgoto_if_ge VAR_0x8004, PARTY_SIZE, MossdeepCity_GameCorner_1F_EventScript_AbortMinigame\n\tcall Common_EventScript_SaveGame\n\tgoto_if_eq VAR_RESULT, 0, MossdeepCity_GameCorner_1F_EventScript_AbortMinigame\n\tsetvar VAR_0x8004, LINK_GROUP_POKEMON_JUMP\n\tgoto MossdeepCity_GameCorner_1F_EventScript_ChooseLinkLeader\n\tend"
+  },
+  "label": "MossdeepCity_GameCorner_1F_EventScript_PlayPokemonJump",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

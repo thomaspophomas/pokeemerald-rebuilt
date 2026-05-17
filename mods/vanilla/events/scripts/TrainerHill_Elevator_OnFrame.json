@@ -1,0 +1,23 @@
+{
+  "id": "TrainerHill_Elevator_OnFrame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Elevator/scripts.inc",
+    "sha1": "06b14119162a2b7bf99d17883435f80e4648fabb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Elevator/scripts.inc",
+    "rawScript": "map_script_2 VAR_TEMP_4, 0, TrainerHill_Elevator_EventScript_EnterElevator\n\t.2byte 0"
+  },
+  "label": "TrainerHill_Elevator_OnFrame",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/TrainerHill_Elevator/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_4"
+    ]
+  }
+}

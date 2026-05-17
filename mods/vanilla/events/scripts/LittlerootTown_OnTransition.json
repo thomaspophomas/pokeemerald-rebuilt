@@ -1,0 +1,33 @@
+{
+  "id": "LittlerootTown_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": "setflag FLAG_VISITED_LITTLEROOT_TOWN\n\tcall Common_EventScript_SetupRivalGfxId\n\tcall_if_eq VAR_LITTLEROOT_INTRO_STATE, 2, LittlerootTown_EventScript_MoveMomToMaysDoor\n\tcall_if_unset FLAG_RESCUED_BIRCH, LittlerootTown_EventScript_SetTwinPos\n\tcall_if_eq VAR_LITTLEROOT_TOWN_STATE, 3, LittlerootTown_EventScript_SetMomStandingInFrontOfDoorPos\n\tcall_if_eq VAR_LITTLEROOT_HOUSES_STATE_MAY, 4, LittlerootTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent\n\tcall_if_eq VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 4, LittlerootTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent\n\tcall_if_eq VAR_OLDALE_RIVAL_STATE, 1, LittlerootTown_EventScript_MoveRivalFromOldale\n\tcall_if_eq VAR_LITTLEROOT_RIVAL_STATE, 3, LittlerootTown_EventScript_SetRivalLeftForRoute103\n\tcall_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_EventScript_HideMapNamePopup\n\tcall_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_EventScript_LeftLabAfterDexUpgrade\n\tend"
+  },
+  "label": "LittlerootTown_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RESCUED_BIRCH",
+      "FLAG_VISITED_LITTLEROOT_TOWN"
+    ],
+    "vars": [
+      "VAR_DEX_UPGRADE_JOHTO_STARTER_STATE",
+      "VAR_LITTLEROOT_HOUSES_STATE_BRENDAN",
+      "VAR_LITTLEROOT_HOUSES_STATE_MAY",
+      "VAR_LITTLEROOT_INTRO_STATE",
+      "VAR_LITTLEROOT_RIVAL_STATE",
+      "VAR_LITTLEROOT_TOWN_STATE",
+      "VAR_OLDALE_RIVAL_STATE"
+    ]
+  }
+}

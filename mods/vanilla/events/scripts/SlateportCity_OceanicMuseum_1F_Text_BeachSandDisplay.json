@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_OceanicMuseum_1F_Text_BeachSandDisplay",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "sha1": "7a1e00c78bbfbd0fbd6eb59a84a4d4e7114e4261"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "rawScript": ".string \"It's a sample of beach sand.\\p\"\n\t.string \"\u201cStones from mountains are washed\\n\"\n\t.string \"down by rivers where they are\\l\"\n\t.string \"chipped and ground down.\\p\"\n\t.string \"\u201cThey are reduced to grains and end\\n\"\n\t.string \"up as sand on beaches.\u201d$\""
+  },
+  "label": "SlateportCity_OceanicMuseum_1F_Text_BeachSandDisplay",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+  "references": {}
+}

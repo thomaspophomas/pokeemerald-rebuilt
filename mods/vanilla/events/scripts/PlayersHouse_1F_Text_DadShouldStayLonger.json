@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_1F_Text_DadShouldStayLonger",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "sha1": "b92e18aeb34c3856db794aa81beeec7f0f0de717"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "rawScript": ".string \"MOM: That DAD of yours\u2026\\p\"\n\t.string \"He comes home for the first time in a\\n\"\n\t.string \"while, but all he talks about is POK\u00e9MON.\\p\"\n\t.string \"He should relax and stay a little longer.$\""
+  },
+  "label": "PlayersHouse_1F_Text_DadShouldStayLonger",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+  "references": {}
+}

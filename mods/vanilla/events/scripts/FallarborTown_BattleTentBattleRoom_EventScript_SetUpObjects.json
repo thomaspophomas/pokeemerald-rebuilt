@@ -1,0 +1,26 @@
+{
+  "id": "FallarborTown_BattleTentBattleRoom_EventScript_SetUpObjects",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+    "sha1": "8bbb2b24c65698ff0f5d4dcb7592d7ae122741de"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+    "rawScript": "hideobjectat LOCALID_PLAYER, MAP_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM\n\thideobjectat LOCALID_FALLARBOR_TENT_BATTLE_PLAYER, MAP_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM\n\tremoveobject LOCALID_FALLARBOR_TENT_BATTLE_OPPONENT\n\tsetvar VAR_TEMP_1, 1\n\tend"
+  },
+  "label": "FallarborTown_BattleTentBattleRoom_EventScript_SetUpObjects",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1"
+    ],
+    "maps": [
+      "MAP_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM"
+    ]
+  }
+}

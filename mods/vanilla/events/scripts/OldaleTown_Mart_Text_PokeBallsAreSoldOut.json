@@ -1,0 +1,19 @@
+{
+  "id": "OldaleTown_Mart_Text_PokeBallsAreSoldOut",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown_Mart/scripts.inc",
+    "sha1": "8a968880e5a4d7792fef6fe981f5856832d88170"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/OldaleTown_Mart/scripts.inc",
+    "rawScript": ".string \"The clerk says they're all sold out.\\n\"\n\t.string \"I can't buy any POK\u00e9 BALLS.$\""
+  },
+  "label": "OldaleTown_Mart_Text_PokeBallsAreSoldOut",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/OldaleTown_Mart/scripts.inc",
+  "references": {}
+}

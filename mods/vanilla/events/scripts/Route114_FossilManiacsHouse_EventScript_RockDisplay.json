@@ -1,0 +1,19 @@
+{
+  "id": "Route114_FossilManiacsHouse_EventScript_RockDisplay",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_FossilManiacsHouse/scripts.inc",
+    "sha1": "95730e17fb1dc32e597d4ae621cec76ec0f7d421"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114_FossilManiacsHouse/scripts.inc",
+    "rawScript": "msgbox Route114_FossilManiacsHouse_Text_RocksFillDisplayCase, MSGBOX_SIGN\n\tend"
+  },
+  "label": "Route114_FossilManiacsHouse_EventScript_RockDisplay",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route114_FossilManiacsHouse/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "EventScript_PC",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/pc.inc",
+    "sha1": "7bcbb4797cbf3d04de79d03c5e2b947f76ffcf90"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/pc.inc",
+    "rawScript": "lockall\n\tsetvar VAR_0x8004, PC_LOCATION_OTHER\n\tspecial DoPCTurnOnEffect\n\tplayse SE_PC_ON\n\tmsgbox Text_BootUpPC, MSGBOX_DEFAULT\n\tgoto EventScript_PCMainMenu\n\tend"
+  },
+  "label": "EventScript_PC",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/pc.inc",
+  "references": {}
+}

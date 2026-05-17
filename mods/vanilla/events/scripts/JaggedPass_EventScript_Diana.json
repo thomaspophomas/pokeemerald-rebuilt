@@ -1,0 +1,26 @@
+{
+  "id": "JaggedPass_EventScript_Diana",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/JaggedPass/scripts.inc",
+    "sha1": "3539aca2d309baaf0b57344f9c2014b5d896c94b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/JaggedPass/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_DIANA_1, JaggedPass_Text_DianaIntro, JaggedPass_Text_DianaDefeat, JaggedPass_EventScript_RegisterDiana\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, JaggedPass_EventScript_DianaRematch\n\tmsgbox JaggedPass_Text_DianaPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "JaggedPass_EventScript_Diana",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/JaggedPass/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_DIANA_1"
+    ]
+  }
+}

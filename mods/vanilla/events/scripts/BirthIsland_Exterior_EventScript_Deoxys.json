@@ -1,0 +1,33 @@
+{
+  "id": "BirthIsland_Exterior_EventScript_Deoxys",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BirthIsland_Exterior/scripts.inc",
+    "sha1": "1e5973feb9102d3690432e451cddaf05cc140d76"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BirthIsland_Exterior/scripts.inc",
+    "rawScript": "waitse\n\tsetfieldeffectargument 0, LOCALID_BIRTH_ISLAND_EXTERIOR_ROCK\n\tsetfieldeffectargument 1, MAP_NUM(MAP_BIRTH_ISLAND_EXTERIOR)\n\tsetfieldeffectargument 2, MAP_GROUP(MAP_BIRTH_ISLAND_EXTERIOR)\n\tdofieldeffect FLDEFF_DESTROY_DEOXYS_ROCK\n\tplaybgm MUS_RG_ENCOUNTER_DEOXYS, FALSE\n\twaitfieldeffect FLDEFF_DESTROY_DEOXYS_ROCK\n\taddobject LOCALID_BIRTH_ISLAND_DEOXYS\n\tapplymovement LOCALID_BIRTH_ISLAND_DEOXYS, BirthIsland_Exterior_Movement_DeoxysApproach\n\twaitmovement 0\n\twaitse\n\tplaymoncry SPECIES_DEOXYS, CRY_MODE_ENCOUNTER\n\tdelay 40\n\twaitmoncry\n\tsetvar VAR_LAST_TALKED, LOCALID_BIRTH_ISLAND_DEOXYS\n\tseteventmon SPECIES_DEOXYS, 30\n\tsetflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecial BattleSetup_StartLegendaryBattle\n\tclearflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_WON, BirthIsland_Exterior_EventScript_DefeatedDeoxys\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_RAN, BirthIsland_Exterior_EventScript_RanFromDeoxys\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, BirthIsland_Exterior_EventScript_RanFromDeoxys\n\tsetflag FLAG_BATTLED_DEOXYS\n\trelease\n\tend"
+  },
+  "label": "BirthIsland_Exterior_EventScript_Deoxys",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BirthIsland_Exterior/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_BATTLED_DEOXYS",
+      "FLAG_SYS_CTRL_OBJ_DELETE"
+    ],
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ],
+    "maps": [
+      "MAP_BIRTH_ISLAND_EXTERIOR",
+      "MAP_GROUP",
+      "MAP_NUM"
+    ]
+  }
+}

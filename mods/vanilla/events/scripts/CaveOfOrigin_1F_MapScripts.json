@@ -1,0 +1,23 @@
+{
+  "id": "CaveOfOrigin_1F_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/CaveOfOrigin_1F/scripts.inc",
+    "sha1": "47305c3601fb6afcb87233529222315d6db042b8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/CaveOfOrigin_1F/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, CaveOfOrigin_1F_OnTransition\n\t.byte 0"
+  },
+  "label": "CaveOfOrigin_1F_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/CaveOfOrigin_1F/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

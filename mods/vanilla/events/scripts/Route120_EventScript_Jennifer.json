@@ -1,0 +1,23 @@
+{
+  "id": "Route120_EventScript_Jennifer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route120/scripts.inc",
+    "sha1": "c3ab570e7c5b1ea2c74415d703646f5a362564ad"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route120/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_JENNIFER, Route120_Text_JenniferIntro, Route120_Text_JenniferDefeat\n\tmsgbox Route120_Text_JenniferPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route120_EventScript_Jennifer",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route120/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_JENNIFER"
+    ]
+  }
+}

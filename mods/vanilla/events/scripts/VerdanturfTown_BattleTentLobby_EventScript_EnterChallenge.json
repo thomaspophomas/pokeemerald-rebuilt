@@ -1,0 +1,26 @@
+{
+  "id": "VerdanturfTown_BattleTentLobby_EventScript_EnterChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "sha1": "be67ab8ba625b73e575c1594a46cbee43b6f03d9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "rawScript": "special SavePlayerParty\n\tfrontier_setpartyorder FRONTIER_PARTY_SIZE\n\tmsgbox VerdanturfTown_BattleTentLobby_Text_NowFollowMe, MSGBOX_DEFAULT\n\tclosemessage\n\tcall VerdanturfTown_BattleTentLobby_EventScript_WalkToDoor\n\twarp MAP_VERDANTURF_TOWN_BATTLE_TENT_CORRIDOR, 2, 7\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 0\n\twaitstate\n\tend"
+  },
+  "label": "VerdanturfTown_BattleTentLobby_EventScript_EnterChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ],
+    "maps": [
+      "MAP_VERDANTURF_TOWN_BATTLE_TENT_CORRIDOR"
+    ]
+  }
+}

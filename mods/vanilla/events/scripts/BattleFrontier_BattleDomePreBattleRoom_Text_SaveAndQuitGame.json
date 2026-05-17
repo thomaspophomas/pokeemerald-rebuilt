@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+    "sha1": "18c4052c546a6c71ff18234f6ef3a8130ec538d0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+    "rawScript": ".string \"Would you like to save and\\n\"\n\t.string \"quit the game?$\""
+  },
+  "label": "BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+  "references": {}
+}

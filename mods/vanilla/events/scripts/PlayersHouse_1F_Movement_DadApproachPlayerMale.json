@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_1F_Movement_DadApproachPlayerMale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/players_house.inc",
+    "sha1": "0f3da1347500315ef212a252409f1d410b0d226c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/players_house.inc",
+    "rawScript": "walk_right\n\twalk_right\n\tstep_end"
+  },
+  "label": "PlayersHouse_1F_Movement_DadApproachPlayerMale",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/scripts/players_house.inc",
+  "references": {}
+}

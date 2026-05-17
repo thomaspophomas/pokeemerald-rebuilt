@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_PokemonCenter_1F_Text_VisitForBattleTent",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc",
+    "sha1": "732bae5c84091e111c778e1203e61171dca9d52e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"The reason why anyone would visit\\n\"\n\t.string \"VERDANTURF\u2026\\p\"\n\t.string \"It's the BATTLE TENT. It goes without\\n\"\n\t.string \"saying.\\p\"\n\t.string \"Or is there somebody here that you\\n\"\n\t.string \"came to see?$\""
+  },
+  "label": "VerdanturfTown_PokemonCenter_1F_Text_VisitForBattleTent",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

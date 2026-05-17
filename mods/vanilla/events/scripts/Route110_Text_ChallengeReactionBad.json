@@ -1,0 +1,19 @@
+{
+  "id": "Route110_Text_ChallengeReactionBad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/scripts.inc",
+    "sha1": "ee9846425d6a96c03ac988decb3c48ffbd098f22"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110/scripts.inc",
+    "rawScript": ".string \"My word\u2026 Your cycling skills border\\n\"\n\t.string \"on terrifying.\\p\"\n\t.string \"Most certainly, you need much more\\n\"\n\t.string \"practice riding.$\""
+  },
+  "label": "Route110_Text_ChallengeReactionBad",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110/scripts.inc",
+  "references": {}
+}

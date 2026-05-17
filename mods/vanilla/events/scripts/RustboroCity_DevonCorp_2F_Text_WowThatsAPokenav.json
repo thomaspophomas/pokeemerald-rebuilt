@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_DevonCorp_2F_Text_WowThatsAPokenav",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "sha1": "7e0aa6a4df50ead64287578a24ba19b07cafbb02"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "rawScript": ".string \"Oh, wow!\\n\"\n\t.string \"That's a POK\u00e9NAV!\\p\"\n\t.string \"It came about as a result of our\\n\"\n\t.string \"PRESIDENT's desire to learn about\\l\"\n\t.string \"the feelings of POK\u00e9MON.\\p\"\n\t.string \"Would you like me to describe its\\n\"\n\t.string \"features in detail?\\p\"\n\t.string \"No, no. I think you'll find out just by\\n\"\n\t.string \"trying the POK\u00e9NAV out.$\""
+  },
+  "label": "RustboroCity_DevonCorp_2F_Text_WowThatsAPokenav",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+  "references": {}
+}

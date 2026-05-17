@@ -1,0 +1,19 @@
+{
+  "id": "AquaHideout_B2F_EventScript_Grunt4Defeated",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B2F/scripts.inc",
+    "sha1": "2422b13cc4d746236ea4f5c8dbbc6ea26d3d8e36"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_B2F/scripts.inc",
+    "rawScript": "msgbox AquaHideout_B2F_Text_Grunt4PostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "AquaHideout_B2F_EventScript_Grunt4Defeated",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AquaHideout_B2F/scripts.inc",
+  "references": {}
+}

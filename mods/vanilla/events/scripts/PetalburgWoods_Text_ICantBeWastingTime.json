@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgWoods_Text_ICantBeWastingTime",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/scripts.inc",
+    "sha1": "a7a3b49731f97088b328145805430d4429326ec8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgWoods/scripts.inc",
+    "rawScript": ".string \"Uh-oh! It's a crisis!\\n\"\n\t.string \"I can't be wasting time!$\""
+  },
+  "label": "PetalburgWoods_Text_ICantBeWastingTime",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgWoods/scripts.inc",
+  "references": {}
+}

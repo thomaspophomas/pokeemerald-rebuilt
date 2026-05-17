@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+    "sha1": "13553a30435b8213726cfc4734cfaf0043bc447f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+    "rawScript": ".string \"CAPT. STERN: Whoops!\\n\"\n\t.string \"There's no time to lose!\\p\"\n\t.string \"We have to set out on our ocean-floor\\n\"\n\t.string \"expedition really soon.\\p\"\n\t.string \"Thanks again, but now I've got\\n\"\n\t.string \"to go!\\p\"\n\t.string \"Feel free to wander around and check\\n\"\n\t.string \"out our facilities, though.$\""
+  },
+  "label": "SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": "EventScript_PkmnCenterNurse_GoldCard",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/pkmn_center_nurse.inc",
+    "sha1": "49fcb801886d68c6fee548595b10470404136e7a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/pkmn_center_nurse.inc",
+    "rawScript": "goto_if_set FLAG_NURSE_MENTIONS_GOLD_CARD, EventScript_PkmnCenterNurse_AskForUsual\n\tsetflag FLAG_NURSE_MENTIONS_GOLD_CARD\n\tmsgbox gText_WelcomeCutShort, MSGBOX_DEFAULT\n\tplayse SE_PIN\n\tapplymovement VAR_0x800B, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement VAR_0x800B, Common_Movement_Delay48\n\twaitmovement 0\n\tmsgbox gText_NoticesGoldCard, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, EventScript_PkmnCenterNurse_GoldCardHealPkmn\n\tmessage gText_WeHopeToSeeYouAgain2\n\treturn"
+  },
+  "label": "EventScript_PkmnCenterNurse_GoldCard",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/pkmn_center_nurse.inc",
+  "references": {
+    "flags": [
+      "FLAG_NURSE_MENTIONS_GOLD_CARD"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

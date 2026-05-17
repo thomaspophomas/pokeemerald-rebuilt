@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_House1_Text_ItLikesXPokeblocks",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_House1/scripts.inc",
+    "sha1": "93c59a6d1eff04f8834df6ef4585f3c7342abcfe"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_House1/scripts.inc",
+    "rawScript": ".string \"It likes {STR_VAR_1}S,\\n\"\n\t.string \"doesn't it?\\p\"\n\t.string \"No, I'm positive of it! It definitely\\n\"\n\t.string \"likes {STR_VAR_1}S!$\""
+  },
+  "label": "MossdeepCity_House1_Text_ItLikesXPokeblocks",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_House1/scripts.inc",
+  "references": {}
+}

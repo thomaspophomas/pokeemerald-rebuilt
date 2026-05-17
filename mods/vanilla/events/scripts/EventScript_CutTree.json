@@ -1,0 +1,26 @@
+{
+  "id": "EventScript_CutTree",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/field_move_scripts.inc",
+    "sha1": "83a0d3bb9ff1263278592b6a78563154bb422956"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/field_move_scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_unset FLAG_BADGE01_GET, EventScript_CheckTreeCantCut\n\tcheckpartymove MOVE_CUT\n\tgoto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CheckTreeCantCut\n\tsetfieldeffectargument 0, VAR_RESULT\n\tbufferpartymonnick STR_VAR_1, VAR_RESULT\n\tbuffermovename STR_VAR_2, MOVE_CUT\n\tmsgbox Text_WantToCut, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, EventScript_CancelCut\n\tmsgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT\n\tclosemessage\n\tdofieldeffect FLDEFF_USE_CUT_ON_TREE\n\twaitstate\n\tgoto EventScript_CutTreeDown\n\tend\n\n@ Use cut from party menu"
+  },
+  "label": "EventScript_CutTree",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/field_move_scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_BADGE01_GET"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

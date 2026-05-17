@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_1F_Text_TheresAMovieOnTV",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "sha1": "b92e18aeb34c3856db794aa81beeec7f0f0de717"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "rawScript": ".string \"There is a movie on TV.\\p\"\n\t.string \"Two men are dancing on a big piano\\n\"\n\t.string \"keyboard.\\p\"\n\t.string \"Better get going!$\""
+  },
+  "label": "PlayersHouse_1F_Text_TheresAMovieOnTV",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+  "references": {}
+}

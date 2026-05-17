@@ -1,0 +1,26 @@
+{
+  "id": "LittlerootTown_BrendansHouse_1F_OnLoad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "sha1": "b92e18aeb34c3856db794aa81beeec7f0f0de717"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "rawScript": "call_if_lt VAR_LITTLEROOT_INTRO_STATE, 6, LittlerootTown_BrendansHouse_1F_EventScript_SetMovingBoxes\n\tcall_if_set FLAG_RECEIVED_RUNNING_SHOES, LittlerootTown_BrendansHouse_1F_EventScript_CheckShowShoesManual\n\tend"
+  },
+  "label": "LittlerootTown_BrendansHouse_1F_OnLoad",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_RUNNING_SHOES"
+    ],
+    "vars": [
+      "VAR_LITTLEROOT_INTRO_STATE"
+    ]
+  }
+}

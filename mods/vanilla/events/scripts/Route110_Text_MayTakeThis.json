@@ -1,0 +1,19 @@
+{
+  "id": "Route110_Text_MayTakeThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/scripts.inc",
+    "sha1": "ee9846425d6a96c03ac988decb3c48ffbd098f22"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110/scripts.inc",
+    "rawScript": ".string \"MAY: {PLAYER}{KUN}, you've been busy\\n\"\n\t.string \"training, too, haven't you?\\p\"\n\t.string \"I think you deserve a reward!\\n\"\n\t.string \"This is from me!$\""
+  },
+  "label": "Route110_Text_MayTakeThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_UncleHesTooPeppy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"UNCLE: It's because of POK\u00e9MON that\\n\"\n\t.string \"this boy's got more pep, I suppose\u2026\\l\"\n\t.string \"But he's become a bit too peppy\u2026$\""
+  },
+  "label": "MauvilleCity_Text_UncleHesTooPeppy",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

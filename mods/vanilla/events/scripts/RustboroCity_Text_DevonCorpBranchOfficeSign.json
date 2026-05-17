@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Text_DevonCorpBranchOfficeSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": ".string \"DEVON CORP. BRANCH OFFICE\\p\"\n\t.string \"\u201cAccess limited to DEVON employees\\n\"\n\t.string \"and authorized personnel.\u201d$\""
+  },
+  "label": "RustboroCity_Text_DevonCorpBranchOfficeSign",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

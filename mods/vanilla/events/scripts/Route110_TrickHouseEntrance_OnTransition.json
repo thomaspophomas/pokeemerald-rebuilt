@@ -1,0 +1,29 @@
+{
+  "id": "Route110_TrickHouseEntrance_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "sha1": "9367efc136143832c1697fbcc61fbb296269d396"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "rawScript": "setflag FLAG_LANDMARK_TRICK_HOUSE\n\tgoto_if_eq VAR_TRICK_HOUSE_ENTER_FROM_CORRIDOR, 1, Route110_TrickHouseEntrance_EventScript_EnterFromCorridor\n\tgoto_if_eq VAR_TRICK_HOUSE_PRIZE_PICKUP, 1, Route110_TrickHouseEntrance_EventScript_SetReadyToGiveReward\n\tgoto_if_eq VAR_TRICK_HOUSE_FOUND_TRICK_MASTER, 1, Route110_TrickHouseEntrance_EventScript_MoveTrickMasterToDoor\n\tcall_if_eq VAR_TRICK_HOUSE_ENTRANCE_STATE, 5, Route110_TrickHouseEntrance_EventScript_CheckReadyForNextPuzzle\n\tcall_if_eq VAR_TRICK_HOUSE_ENTRANCE_STATE, 3, Route110_TrickHouseEntrance_EventScript_CheckReadyForNextPuzzle\n\tcall_if_eq VAR_TRICK_HOUSE_ENTRANCE_STATE, 0, Route110_TrickHouseEntrance_EventScript_CheckReadyForNextPuzzle\n\tswitch VAR_TRICK_HOUSE_ENTRANCE_STATE\n\tcase 0, Route110_TrickHouseEntrance_EventScript_ReadyBeingWatchedTrigger\n\tcase 1, Route110_TrickHouseEntrance_EventScript_SetNotBeingWatched1\n\tcase 3, Route110_TrickHouseEntrance_EventScript_SetNotBeingWatched2\n\tcase 4, Route110_TrickHouseEntrance_EventScript_SetNotBeingWatched3\n\tend"
+  },
+  "label": "Route110_TrickHouseEntrance_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_LANDMARK_TRICK_HOUSE"
+    ],
+    "vars": [
+      "VAR_TRICK_HOUSE_ENTER_FROM_CORRIDOR",
+      "VAR_TRICK_HOUSE_ENTRANCE_STATE",
+      "VAR_TRICK_HOUSE_FOUND_TRICK_MASTER",
+      "VAR_TRICK_HOUSE_PRIZE_PICKUP"
+    ]
+  }
+}

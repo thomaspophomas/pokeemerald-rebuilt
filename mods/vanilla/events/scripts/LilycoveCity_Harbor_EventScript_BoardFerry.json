@@ -1,0 +1,27 @@
+{
+  "id": "LilycoveCity_Harbor_EventScript_BoardFerry",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "sha1": "ffd83f00915b03bfdd96f51950251d00dd19dbcb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "rawScript": "msgbox LilycoveCity_Harbor_Text_PleaseBoard, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tdelay 30\n\thideobjectat VAR_LAST_TALKED, MAP_LILYCOVE_CITY_HARBOR\n\tcall_if_eq VAR_FACING, DIR_NORTH, LilycoveCity_Harbor_EventScript_PlayerBoardFerryNorth\n\tcall_if_eq VAR_FACING, DIR_EAST, LilycoveCity_Harbor_EventScript_PlayerBoardFerryEast\n\tdelay 30\n\thideplayer\n\tsetvar VAR_0x8004, LOCALID_LILYCOVE_HARBOR_SS_TIDAL\n\tcall Common_EventScript_FerryDepart\n\treturn"
+  },
+  "label": "LilycoveCity_Harbor_EventScript_BoardFerry",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_Harbor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FACING",
+      "VAR_LAST_TALKED"
+    ],
+    "maps": [
+      "MAP_LILYCOVE_CITY_HARBOR"
+    ]
+  }
+}

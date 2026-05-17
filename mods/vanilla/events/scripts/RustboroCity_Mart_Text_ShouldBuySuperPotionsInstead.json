@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Mart/scripts.inc",
+    "sha1": "064cba37df0c93452bb5e6cc75752460d861c58d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Mart/scripts.inc",
+    "rawScript": ".string \"My POK\u00e9MON evolved.\\n\"\n\t.string \"It has a lot of HP now.\\p\"\n\t.string \"I should buy SUPER POTIONS for it\\n\"\n\t.string \"instead of ordinary POTIONS.$\""
+  },
+  "label": "RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Mart/scripts.inc",
+  "references": {}
+}

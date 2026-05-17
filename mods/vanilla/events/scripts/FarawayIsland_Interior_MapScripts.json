@@ -1,0 +1,26 @@
+{
+  "id": "FarawayIsland_Interior_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FarawayIsland_Interior/scripts.inc",
+    "sha1": "748f9f309b0dbfe85cb833f24aeceac469102437"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FarawayIsland_Interior/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, FarawayIsland_Interior_OnResume\n\tmap_script MAP_SCRIPT_ON_TRANSITION, FarawayIsland_Interior_OnTransition\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, FarawayIsland_Interior_OnFrame\n\tmap_script MAP_SCRIPT_ON_RETURN_TO_FIELD, FarawayIsland_Interior_OnReturnToField\n\t.byte 0"
+  },
+  "label": "FarawayIsland_Interior_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/FarawayIsland_Interior/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_RETURN_TO_FIELD",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

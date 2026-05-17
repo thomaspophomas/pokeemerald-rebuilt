@@ -1,0 +1,34 @@
+{
+  "id": "MauvilleCity_Mart_Pokemart",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Mart/scripts.inc",
+    "sha1": "d8b603abe3cbe455d4b20a35653269b7e46b6b14"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Mart/scripts.inc",
+    "rawScript": ".2byte ITEM_POKE_BALL\n\t.2byte ITEM_GREAT_BALL\n\t.2byte ITEM_SUPER_POTION\n\t.2byte ITEM_ANTIDOTE\n\t.2byte ITEM_PARALYZE_HEAL\n\t.2byte ITEM_AWAKENING\n\t.2byte ITEM_X_SPEED\n\t.2byte ITEM_X_ATTACK\n\t.2byte ITEM_X_DEFEND\n\t.2byte ITEM_GUARD_SPEC\n\t.2byte ITEM_DIRE_HIT\n\t.2byte ITEM_X_ACCURACY\n\tpokemartlistend"
+  },
+  "label": "MauvilleCity_Mart_Pokemart",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/MauvilleCity_Mart/scripts.inc",
+  "references": {
+    "items": [
+      "ITEM_ANTIDOTE",
+      "ITEM_AWAKENING",
+      "ITEM_DIRE_HIT",
+      "ITEM_GREAT_BALL",
+      "ITEM_GUARD_SPEC",
+      "ITEM_PARALYZE_HEAL",
+      "ITEM_POKE_BALL",
+      "ITEM_SUPER_POTION",
+      "ITEM_X_ACCURACY",
+      "ITEM_X_ATTACK",
+      "ITEM_X_DEFEND",
+      "ITEM_X_SPEED"
+    ]
+  }
+}

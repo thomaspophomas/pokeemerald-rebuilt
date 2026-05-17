@@ -1,0 +1,23 @@
+{
+  "id": "Route117_PokemonDayCare_EventScript_GiveMonToRaise",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/day_care.inc",
+    "sha1": "b807399ab522de3ba938194e85f890a343362752"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/day_care.inc",
+    "rawScript": "specialvar VAR_RESULT, CountPartyNonEggMons\n\tgoto_if_eq VAR_RESULT, 1, Route117_PokemonDayCare_EventScript_OnlyOneMon\n\tspecialvar VAR_RESULT, CountPartyAliveNonEggMons\n\tgoto_if_eq VAR_RESULT, 2, Route117_PokemonDayCare_EventScript_OnlyTwoAliveMons\n\tmsgbox Route117_PokemonDayCare_Text_WhichMonShouldWeRaise, MSGBOX_DEFAULT\n\tfadescreen FADE_TO_BLACK\n\tspecial ChooseSendDaycareMon\n\tgoto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, Route117_PokemonDayCare_EventScript_ComeAgain\n\tspecialvar VAR_RESULT, CountPartyAliveNonEggMons_IgnoreVar0x8004Slot\n\tgoto_if_eq VAR_RESULT, 0, Route117_PokemonDayCare_EventScript_OnlyOneAliveMon\n\tspecialvar VAR_0x8005, GetSelectedMonNicknameAndSpecies\n\twaitse\n\tplaymoncry VAR_0x8005, CRY_MODE_NORMAL\n\tmsgbox Route117_PokemonDayCare_Text_WellRaiseYourMon, MSGBOX_DEFAULT\n\twaitmoncry\n\tspecial StoreSelectedPokemonInDaycare\n\tincrementgamestat GAME_STAT_USED_DAYCARE\n\tspecialvar VAR_RESULT, GetDaycareState\n\tgoto_if_eq VAR_RESULT, DAYCARE_ONE_MON, Route117_PokemonDayCare_EventScript_CanRaiseOneMore\n\trelease\n\tend"
+  },
+  "label": "Route117_PokemonDayCare_EventScript_GiveMonToRaise",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/day_care.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

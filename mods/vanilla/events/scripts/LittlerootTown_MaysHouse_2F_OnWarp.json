@@ -1,0 +1,23 @@
+{
+  "id": "LittlerootTown_MaysHouse_2F_OnWarp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "sha1": "e014a444dcf389c78773768633900402b1862edb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "rawScript": "map_script_2 VAR_SECRET_BASE_INITIALIZED, 0, LittlerootTown_MaysHouse_2F_EventScript_CheckInitDecor\n\t.2byte 0"
+  },
+  "label": "LittlerootTown_MaysHouse_2F_OnWarp",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_SECRET_BASE_INITIALIZED"
+    ]
+  }
+}

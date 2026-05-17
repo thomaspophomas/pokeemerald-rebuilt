@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_EventScript_CableLinkSuccessful",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": "incrementgamestat GAME_STAT_ENTERED_BATTLE_TOWER\n\tsetvar VAR_BRAVO_TRAINER_BATTLE_TOWER_ON, FALSE\n\tmessage BattleFrontier_BattleTowerLobby_Text_SaveGameBeforeShowingIn\n\twaitmessage\n\ttower_save CHALLENGE_STATUS_SAVING\n\tspecial SaveForBattleTowerLink\n\tplayse SE_SAVE\n\twaitse\n\tspecial TrySetBattleTowerLinkType\n\tgoto BattleFrontier_BattleTowerLobby_EventScript_EnterElevator\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerLobby_EventScript_CableLinkSuccessful",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_BRAVO_TRAINER_BATTLE_TOWER_ON"
+    ]
+  }
+}

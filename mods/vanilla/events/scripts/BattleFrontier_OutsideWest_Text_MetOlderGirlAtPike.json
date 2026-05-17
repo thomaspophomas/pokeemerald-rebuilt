@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideWest_Text_MetOlderGirlAtPike",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": ".string \"Crunch, munch\u2026\\p\"\n\t.string \"A while back, I met this older girl\\n\"\n\t.string \"at the BATTLE PIKE.\\p\"\n\t.string \"She had these eyes that were scary\\n\"\n\t.string \"in a real ornery way.\\p\"\n\t.string \"Crunch, munch\u2026\\p\"\n\t.string \"She got all furious: \u201cWill you quit\\n\"\n\t.string \"eating!\u201d Then she whaled on me.\\p\"\n\t.string \"It was a hair-raising kind of\\n\"\n\t.string \"scary experience, sure enough.\\p\"\n\t.string \"Crunch, munch\u2026$\""
+  },
+  "label": "BattleFrontier_OutsideWest_Text_MetOlderGirlAtPike",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {}
+}

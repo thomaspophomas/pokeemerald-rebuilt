@@ -1,0 +1,19 @@
+{
+  "id": "TrainerHill_Entrance_Text_MovedReceptionHereForSwitch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "sha1": "cbfca2354a8d8ed8d68e2612fb0b6f2525008a5f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "rawScript": ".string \"When the TRAINERS switch places,\\n\"\n\t.string \"the movement can be hectic.\\p\"\n\t.string \"To avoid the stampede, we moved\\n\"\n\t.string \"the reception counter here.\\p\"\n\t.string \"I'm sorry for the inconvenience.$\""
+  },
+  "label": "TrainerHill_Entrance_Text_MovedReceptionHereForSwitch",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/TrainerHill_Entrance/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_Summit_EventScript_SetArchieMaxiePositions",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/scripts.inc",
+    "sha1": "2d98d572d50cebb678d972aa421854c983329822"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Summit/scripts.inc",
+    "rawScript": "setobjectxyperm LOCALID_MT_PYRE_SUMMIT_MAXIE, 23, 6\n\tsetobjectxyperm LOCALID_MT_PYRE_SUMMIT_ARCHIE, 22, 6\n\tend"
+  },
+  "label": "MtPyre_Summit_EventScript_SetArchieMaxiePositions",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtPyre_Summit/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_EventScript_ShowGymToPlayer3",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity/scripts.inc",
+    "sha1": "b4c5cd37e96410a5c2721d216afbe3a8ea620c87"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity/scripts.inc",
+    "rawScript": "lockall\n\tsetvar VAR_0x8008, 3\n\tgoto PetalburgCity_EventScript_ShowGymToPlayer\n\tend"
+  },
+  "label": "PetalburgCity_EventScript_ShowGymToPlayer3",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgCity/scripts.inc",
+  "references": {}
+}

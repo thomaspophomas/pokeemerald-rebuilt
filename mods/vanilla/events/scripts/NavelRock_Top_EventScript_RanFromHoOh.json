@@ -1,0 +1,19 @@
+{
+  "id": "NavelRock_Top_EventScript_RanFromHoOh",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NavelRock_Top/scripts.inc",
+    "sha1": "9e9f84f593bf205dd39f29584bf0811e5a1438d4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NavelRock_Top/scripts.inc",
+    "rawScript": "setvar VAR_0x8004, SPECIES_HO_OH\n\tgoto Common_EventScript_LegendaryFlewAway\n\tend"
+  },
+  "label": "NavelRock_Top_EventScript_RanFromHoOh",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/NavelRock_Top/scripts.inc",
+  "references": {}
+}

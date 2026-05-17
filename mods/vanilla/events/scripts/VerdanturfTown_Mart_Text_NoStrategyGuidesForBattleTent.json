@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_Mart_Text_NoStrategyGuidesForBattleTent",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_Mart/scripts.inc",
+    "sha1": "815f118fd23cab33023fd266a93950041afd0a06"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_Mart/scripts.inc",
+    "rawScript": ".string \"They don't seem to sell any winning\\n\"\n\t.string \"strategy guides for the BATTLE TENT\u2026\\p\"\n\t.string \"It seems one must rely on one's\\n\"\n\t.string \"own wits after all\u2026$\""
+  },
+  "label": "VerdanturfTown_Mart_Text_NoStrategyGuidesForBattleTent",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_Mart/scripts.inc",
+  "references": {}
+}

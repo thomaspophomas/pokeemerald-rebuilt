@@ -1,0 +1,24 @@
+{
+  "id": "Route110_TrickHousePuzzle5_EventScript_Mechadoll3",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle5/scripts.inc",
+    "sha1": "aed417cdce03cd64e06d7356a32853075b54ce39"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle5/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_MECHADOLL_3, Common_Movement_FacePlayer\n\twaitmovement 0\n\tgoto_if_eq VAR_TEMP_3, 1, Route110_TrickHousePuzzle5_EventScript_CorrectGoThrough\n\tsetvar VAR_TEMP_9, 0\n\tgoto Route110_TrickHousePuzzle5_EventScript_Mechadoll3Activate\n\tend"
+  },
+  "label": "Route110_TrickHousePuzzle5_EventScript_Mechadoll3",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHousePuzzle5/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_3",
+      "VAR_TEMP_9"
+    ]
+  }
+}

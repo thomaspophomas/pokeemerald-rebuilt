@@ -1,0 +1,19 @@
+{
+  "id": "MeteorFalls_1F_1R_Text_ArchieSeenYouBefore",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "sha1": "9f4ded44922a9eecca2a712d1673b053babe0bae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "rawScript": ".string \"ARCHIE: Didn't I see you before?\\n\"\n\t.string \"At SLATEPORT's MUSEUM?\\p\"\n\t.string \"Ah, so your name is {PLAYER}.\\p\"\n\t.string \"At the time, I thought you were one\\n\"\n\t.string \"of TEAM MAGMA's goons.\\p\"\n\t.string \"Humph\u2026\\n\"\n\t.string \"You're one odd kid.\\p\"\n\t.string \"TEAM MAGMA is a dangerous group of\\n\"\n\t.string \"total fanatics.\\p\"\n\t.string \"They engage in destruction, claiming\\n\"\n\t.string \"to expand the land mass.\\p\"\n\t.string \"They are the rivals to us,\\n\"\n\t.string \"the sea-loving TEAM AQUA!$\""
+  },
+  "label": "MeteorFalls_1F_1R_Text_ArchieSeenYouBefore",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+  "references": {}
+}

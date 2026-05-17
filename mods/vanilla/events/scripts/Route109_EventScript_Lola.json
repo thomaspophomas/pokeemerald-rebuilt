@@ -1,0 +1,26 @@
+{
+  "id": "Route109_EventScript_Lola",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route109/scripts.inc",
+    "sha1": "7b7ddbfc58bd8a1cc6ebeaa13e2d754df362f425"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route109/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_LOLA_1, Route109_Text_LolaIntro, Route109_Text_LolaDefeated, Route109_EventScript_LolaRegisterMatchCallAfterBattle\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, Route109_EventScript_LolaRematch\n\tmsgbox Route109_Text_LolaPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route109_EventScript_Lola",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route109/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_LOLA_1"
+    ]
+  }
+}

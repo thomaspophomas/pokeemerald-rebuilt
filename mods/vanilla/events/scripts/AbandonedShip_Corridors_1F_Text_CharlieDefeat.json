@@ -1,0 +1,19 @@
+{
+  "id": "AbandonedShip_Corridors_1F_Text_CharlieDefeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Corridors_1F/scripts.inc",
+    "sha1": "f4323f7823f017e5f01f23471c0cd139d7409d0c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_Corridors_1F/scripts.inc",
+    "rawScript": ".string \"Whoa, you overwhelmed me!$\""
+  },
+  "label": "AbandonedShip_Corridors_1F_Text_CharlieDefeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AbandonedShip_Corridors_1F/scripts.inc",
+  "references": {}
+}

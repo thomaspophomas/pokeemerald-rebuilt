@@ -1,0 +1,19 @@
+{
+  "id": "BerryBlender_Text_DontHavePokeblockCase3",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": ".string \"You haven't gotten a {POKEBLOCK} CASE\\n\"\n\t.string \"yet, it looks like.\\p\"\n\t.string \"You need to get a {POKEBLOCK} CASE before\\n\"\n\t.string \"you come back.$\""
+  },
+  "label": "BerryBlender_Text_DontHavePokeblockCase3",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {}
+}

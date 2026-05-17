@@ -1,0 +1,23 @@
+{
+  "id": "Route124_DivingTreasureHuntersHouse_EventScript_ShowTradeOptions",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+    "sha1": "e787b98bef4dd91776e97f180a62a1c98c92003e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+    "rawScript": "message Route124_DivingTreasureHuntersHouse_Text_WhatDoYouWantToTrade\n\twaitmessage\n\tswitch VAR_TEMP_1\n\tcase 1,  Route124_DivingTreasureHuntersHouse_EventScript_ShardOptionsR\n\tcase 2,  Route124_DivingTreasureHuntersHouse_EventScript_ShardOptionsY\n\tcase 3,  Route124_DivingTreasureHuntersHouse_EventScript_ShardOptionsRY\n\tcase 4,  Route124_DivingTreasureHuntersHouse_EventScript_ShardOptionsB\n\tcase 5,  Route124_DivingTreasureHuntersHouse_EventScript_ShardOptionsRB\n\tcase 6,  Route124_DivingTreasureHuntersHouse_EventScript_ShardOptionsYB\n\tcase 7,  Route124_DivingTreasureHuntersHouse_EventScript_ShardOptionsRYB\n\tcase 8,  Route124_DivingTreasureHuntersHouse_EventScript_ShardOptionsG\n\tcase 9,  Route124_DivingTreasureHuntersHouse_EventScript_ShardOptionsRG\n\tcase 10, Route124_DivingTreasureHuntersHouse_EventScript_ShardOptionsYG\n\tcase 11, Route124_DivingTreasureHuntersHouse_EventScript_ShardOptionsRYG\n\tcase 12, Route124_DivingTreasureHuntersHouse_EventScript_ShardOptionsBG\n\tcase 13, Route124_DivingTreasureHuntersHouse_EventScript_ShardOptionsRBG\n\tcase 14, Route124_DivingTreasureHuntersHouse_EventScript_ShardOptionsYBG\n\tcase 15, Route124_DivingTreasureHuntersHouse_EventScript_ShardOptionsRYBG\n\tend"
+  },
+  "label": "Route124_DivingTreasureHuntersHouse_EventScript_ShowTradeOptions",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1"
+    ]
+  }
+}

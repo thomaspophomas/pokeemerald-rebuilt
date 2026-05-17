@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_DepartmentStore_5F_EventScript_ClerkMidRight",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+    "sha1": "cd7aae47b8996a67b13e78af3da148a41c68791f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmessage gText_HowMayIServeYou\n\twaitmessage\n\tpokemartdecoration2 LilycoveCity_DepartmentStore_5F_Pokemart_Posters\n\tmsgbox gText_PleaseComeAgain, MSGBOX_DEFAULT\n\trelease\n\tend\n\n\t.align 2"
+  },
+  "label": "LilycoveCity_DepartmentStore_5F_EventScript_ClerkMidRight",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc",
+  "references": {}
+}

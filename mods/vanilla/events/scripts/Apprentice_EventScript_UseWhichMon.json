@@ -1,0 +1,24 @@
+{
+  "id": "Apprentice_EventScript_UseWhichMon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/apprentice.inc",
+    "sha1": "353208142bca1df117076064d141b84efe196e7c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/apprentice.inc",
+    "rawScript": "apprentice_initquestion APPRENTICE_QUESTION_WHICH_MON\n\tapprentice_buff STR_VAR_1, APPRENTICE_BUFF_SPECIES1\n\tapprentice_buff STR_VAR_2, APPRENTICE_BUFF_SPECIES2\n\tapprentice_msg FALSE, APPRENTICE_MSG_WHICH_MON\n\tapprentice_menu APPRENTICE_ASK_2SPECIES\n\tcopyvar VAR_0x8005, VAR_RESULT\n\tcall_if_eq VAR_0x8005, 0, Apprentice_EventScript_ChoseFirstMon\n\tcall_if_eq VAR_0x8005, 1, Apprentice_EventScript_ChoseSecondMon\n\tapprentice_getnumpartymons\n\tapprentice_setpartymon VAR_RESULT\n\tapprentice_answeredquestion\n\tapprentice_getnumpartymons\n\tcall_if_eq VAR_RESULT, MULTI_PARTY_SIZE, Apprentice_EventScript_LastMonSelected\n\tapprentice_buff STR_VAR_1, VAR_0x8007\n\tapprentice_freequestion\n\tapprentice_msg TRUE, APPRENTICE_MSG_THANKS_MON\n\tcall Apprentice_EventScript_SetHideFlags\n\trelease\n\treleaseall\n\tswitch VAR_FACING\n\tcase DIR_NORTH, Apprentice_EventScript_LeaveNorth\n\tgoto Apprentice_EventScript_Leave\n\tend"
+  },
+  "label": "Apprentice_EventScript_UseWhichMon",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/apprentice.inc",
+  "references": {
+    "vars": [
+      "VAR_FACING",
+      "VAR_RESULT"
+    ]
+  }
+}

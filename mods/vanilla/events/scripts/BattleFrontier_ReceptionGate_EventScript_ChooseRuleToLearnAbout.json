@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_ReceptionGate_EventScript_ChooseRuleToLearnAbout",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "sha1": "5b6e89c53f6e32c0fa6883bd750252f1d739a97b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "rawScript": "message BattleFrontier_ReceptionGate_Text_LearnAboutWhat\n\twaitmessage\n\tmultichoice 15, 0, MULTI_FRONTIER_RULES, FALSE\n\tswitch VAR_RESULT\n\tcase 0, BattleFrontier_ReceptionGate_EventScript_LevelMode\n\tcase 1, BattleFrontier_ReceptionGate_EventScript_Level50\n\tcase 2, BattleFrontier_ReceptionGate_EventScript_OpenLevel\n\tcase 3, BattleFrontier_ReceptionGate_EventScript_MonEntry\n\tcase 4, BattleFrontier_ReceptionGate_EventScript_HoldItems\n\tcase 5, BattleFrontier_ReceptionGate_EventScript_ExitRulesGuide\n\tcase MULTI_B_PRESSED, BattleFrontier_ReceptionGate_EventScript_ExitRulesGuide\n\tend"
+  },
+  "label": "BattleFrontier_ReceptionGate_EventScript_ChooseRuleToLearnAbout",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

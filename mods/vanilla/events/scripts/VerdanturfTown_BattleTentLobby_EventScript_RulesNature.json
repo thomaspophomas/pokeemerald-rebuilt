@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_BattleTentLobby_EventScript_RulesNature",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "sha1": "be67ab8ba625b73e575c1594a46cbee43b6f03d9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattlePalaceLobby_Text_ExplainRulesNature, MSGBOX_DEFAULT\n\tgoto VerdanturfTown_BattleTentLobby_EventScript_ReadRulesBoard\n\tend"
+  },
+  "label": "VerdanturfTown_BattleTentLobby_EventScript_RulesNature",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+  "references": {}
+}

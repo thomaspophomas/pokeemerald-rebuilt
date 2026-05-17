@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": ".string \"BRENDAN: Keep those with you if you're\\n\"\n\t.string \"planning on going into that desert near\\l\"\n\t.string \"ROUTE 111.\\p\"\n\t.string \"There should be some POK\u00e9MON that\\n\"\n\t.string \"are exclusively desert-dwellers.\\l\"\n\t.string \"You might look around for those.\\p\"\n\t.string \"As for me\u2026\\n\"\n\t.string \"I'm considering challenging NORMAN,\\l\"\n\t.string \"the GYM LEADER of PETALBURG.\\p\"\n\t.string \"Unlike you, {PLAYER}, your dad looks like\\n\"\n\t.string \"he really is tough.\\p\"\n\t.string \"See you around!$\""
+  },
+  "label": "LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {}
+}

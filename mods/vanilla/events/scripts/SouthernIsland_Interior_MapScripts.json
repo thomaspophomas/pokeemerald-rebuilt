@@ -1,0 +1,24 @@
+{
+  "id": "SouthernIsland_Interior_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SouthernIsland_Interior/scripts.inc",
+    "sha1": "6ed339e41064219d030f00f9c7e62ccbfde31212"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SouthernIsland_Interior/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, SouthernIsland_Interior_OnResume\n\tmap_script MAP_SCRIPT_ON_TRANSITION, SouthernIsland_Interior_OnTransition\n\t.byte 0"
+  },
+  "label": "SouthernIsland_Interior_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/SouthernIsland_Interior/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

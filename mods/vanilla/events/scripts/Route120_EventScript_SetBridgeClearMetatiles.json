@@ -1,0 +1,19 @@
+{
+  "id": "Route120_EventScript_SetBridgeClearMetatiles",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route120/scripts.inc",
+    "sha1": "c3ab570e7c5b1ea2c74415d703646f5a362564ad"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route120/scripts.inc",
+    "rawScript": "setmetatile 13, 15, METATILE_Fortree_WoodBridge1_Top, FALSE\n\tsetmetatile 12, 16, METATILE_Fortree_WoodBridge1_Bottom, FALSE\n\tsetmetatile 12, 17, METATILE_General_ReflectiveWater, FALSE\n\tsetmetatile 13, 17, METATILE_General_ReflectiveWater, FALSE\n\treturn"
+  },
+  "label": "Route120_EventScript_SetBridgeClearMetatiles",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route120/scripts.inc",
+  "references": {}
+}

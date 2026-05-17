@@ -1,0 +1,27 @@
+{
+  "id": "MauvilleCity_GameCorner_EventScript_BuyTMThunderbolt",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "sha1": "3db7cd216c9a2c35e8176ef8b4a1d9ec68649c7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "rawScript": "checkcoins VAR_TEMP_2\n\tgoto_if_lt VAR_TEMP_2, TM_THUNDERBOLT_COINS, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForTM\n\tcheckitemspace ITEM_TM_THUNDERBOLT\n\tgoto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForTM\n\tremovecoins TM_THUNDERBOLT_COINS\n\tadditem ITEM_TM_THUNDERBOLT\n\tupdatecoinsbox 1, 1\n\tplayse SE_SHOP\n\tmsgbox MauvilleCity_GameCorner_Text_HereYouGo, MSGBOX_DEFAULT\n\tgoto MauvilleCity_GameCorner_EventScript_ReturnToChooseTMPrize\n\tend"
+  },
+  "label": "MauvilleCity_GameCorner_EventScript_BuyTMThunderbolt",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_2"
+    ],
+    "items": [
+      "ITEM_TM_THUNDERBOLT"
+    ]
+  }
+}

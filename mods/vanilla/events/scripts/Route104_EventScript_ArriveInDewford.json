@@ -1,0 +1,34 @@
+{
+  "id": "Route104_EventScript_ArriveInDewford",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104/scripts.inc",
+    "sha1": "10d25047426798be70cda2d9503387bbf8458d85"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104/scripts.inc",
+    "rawScript": "delay 50\n\tapplymovement LOCALID_PLAYER, Route104_Movement_PlayerExitBoat\n\twaitmovement 0\n\tcall Common_EventScript_StopBrineysBoatMusic\n\tshowobjectat LOCALID_PLAYER, MAP_DEWFORD_TOWN\n\tapplymovement LOCALID_PLAYER, Route104_Movement_PlayerMoveForBriney\n\twaitmovement 0\n\tsetobjectxyperm LOCALID_DEWFORD_BRINEY, 12, 8\n\taddobject LOCALID_DEWFORD_BRINEY\n\tsetobjectsubpriority LOCALID_DEWFORD_BRINEY, MAP_DEWFORD_TOWN, 0\n\tclearflag FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN\n\tapplymovement LOCALID_DEWFORD_BRINEY, Route104_Movement_BrineyExitBoat\n\twaitmovement 0\n\taddobject LOCALID_DEWFORD_BOAT\n\tclearflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN\n\tcall Common_EventScript_StopBrineysBoatMusic\n\tsetflag FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT\n\thideobjectat LOCALID_ROUTE104_BOAT, MAP_ROUTE104\n\tcopyvar VAR_BRINEY_LOCATION, VAR_0x8008\n\tresetobjectsubpriority LOCALID_PLAYER, MAP_ROUTE104\n\tresetobjectsubpriority LOCALID_DEWFORD_BRINEY, MAP_DEWFORD_TOWN\n\tcopyobjectxytoperm LOCALID_DEWFORD_BRINEY\n\tsetvar VAR_BOARD_BRINEY_BOAT_STATE, 0\n\tgoto_if_unset FLAG_DELIVERED_STEVEN_LETTER, Route104_EventScript_DeliverLetterReminder\n\tgoto_if_set FLAG_DELIVERED_STEVEN_LETTER, Route104_EventScript_LandedInDewford\n\tend"
+  },
+  "label": "Route104_EventScript_ArriveInDewford",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route104/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DELIVERED_STEVEN_LETTER",
+      "FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN",
+      "FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN",
+      "FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT"
+    ],
+    "vars": [
+      "VAR_BOARD_BRINEY_BOAT_STATE",
+      "VAR_BRINEY_LOCATION"
+    ],
+    "maps": [
+      "MAP_DEWFORD_TOWN",
+      "MAP_ROUTE104"
+    ]
+  }
+}

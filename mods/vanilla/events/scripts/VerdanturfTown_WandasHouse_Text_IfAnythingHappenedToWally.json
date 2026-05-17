@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_WandasHouse_Text_IfAnythingHappenedToWally",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+    "sha1": "31973fbe72c23018cb6768d20d4d7addb52bae60"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+    "rawScript": ".string \"If anything were to happen to WALLY,\\n\"\n\t.string \"I would never be able to look his\\l\"\n\t.string \"parents in PETALBURG in the eye\u2026$\""
+  },
+  "label": "VerdanturfTown_WandasHouse_Text_IfAnythingHappenedToWally",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+  "references": {}
+}

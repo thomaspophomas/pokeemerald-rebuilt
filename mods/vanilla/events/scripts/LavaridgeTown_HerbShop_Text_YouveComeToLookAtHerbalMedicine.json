@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_HerbShop_Text_YouveComeToLookAtHerbalMedicine",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+    "sha1": "ed83c75f66b27defc898c3be46549255ef12185c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+    "rawScript": ".string \"You've come to look at herbal medicine\\n\"\n\t.string \"in LAVARIDGE?\\p\"\n\t.string \"That's rather commendable.\\p\"\n\t.string \"I like you! Take this!$\""
+  },
+  "label": "LavaridgeTown_HerbShop_Text_YouveComeToLookAtHerbalMedicine",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "RivalsHouse_1F_Text_OhYoureTheNewNeighbor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+    "sha1": "4acc9bd3dce8266e27759616e41b13205491adc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+    "rawScript": ".string \"Oh, hello. And you are?\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\n\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"Oh, you're {PLAYER}{KUN}, our new next-door\\n\"\n\t.string \"neighbor! Hi!\\p\"\n\t.string \"We have a {STR_VAR_1} about the same\\n\"\n\t.string \"age as you.\\p\"\n\t.string \"Our {STR_VAR_1} was excited about making\\n\"\n\t.string \"a new friend.\\p\"\n\t.string \"Our {STR_VAR_1} is upstairs, I think.$\""
+  },
+  "label": "RivalsHouse_1F_Text_OhYoureTheNewNeighbor",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_HallOfFame_Movement_WalkIntoHallOfFame1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_HallOfFame/scripts.inc",
+    "sha1": "c6da78131eff88a85e046e0e631d7de403522957"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_HallOfFame/scripts.inc",
+    "rawScript": "walk_up\n\twalk_up\n\twalk_up\n\twalk_up\n\twalk_up\n\twalk_up\n\tstep_end"
+  },
+  "label": "EverGrandeCity_HallOfFame_Movement_WalkIntoHallOfFame1",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/EverGrandeCity_HallOfFame/scripts.inc",
+  "references": {}
+}

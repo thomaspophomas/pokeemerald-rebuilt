@@ -1,0 +1,30 @@
+{
+  "id": "TerraCave_End_EventScript_Groudon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TerraCave_End/scripts.inc",
+    "sha1": "f580375762b0ce93146fa1e144b30b9b23c3cb5b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TerraCave_End/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_PLAYER, Common_Movement_FaceUp\n\twaitmovement 0\n\tapplymovement LOCALID_TERRA_CAVE_GROUDON, TerraCave_End_Movement_GroudonApproach\n\twaitmovement 0\n\twaitse\n\tplaymoncry SPECIES_GROUDON, CRY_MODE_ENCOUNTER\n\tdelay 40\n\twaitmoncry\n\tsetvar VAR_LAST_TALKED, LOCALID_TERRA_CAVE_GROUDON\n\tsetwildbattle SPECIES_GROUDON, 70\n\tsetflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecial BattleSetup_StartLegendaryBattle\n\tclearflag FLAG_SYS_CTRL_OBJ_DELETE\n\tsetvar VAR_TEMP_1, 0\n\tspecialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_WON, TerraCave_End_EventScript_DefeatedGroudon\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_RAN, TerraCave_End_EventScript_RanFromGroudon\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, TerraCave_End_EventScript_RanFromGroudon\n\tsetvar VAR_SHOULD_END_ABNORMAL_WEATHER, 1\n\tsetflag FLAG_DEFEATED_GROUDON\n\treleaseall\n\tend"
+  },
+  "label": "TerraCave_End_EventScript_Groudon",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/TerraCave_End/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_GROUDON",
+      "FLAG_SYS_CTRL_OBJ_DELETE"
+    ],
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT",
+      "VAR_SHOULD_END_ABNORMAL_WEATHER",
+      "VAR_TEMP_1"
+    ]
+  }
+}

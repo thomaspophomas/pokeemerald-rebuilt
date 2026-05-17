@@ -1,0 +1,19 @@
+{
+  "id": "VictoryRoad_1F_Text_WallyIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_1F/scripts.inc",
+    "sha1": "dda3a20e79be32fbc7d021ceddf040bbcdbe53c7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VictoryRoad_1F/scripts.inc",
+    "rawScript": ".string \"WALLY: Hi! {PLAYER}!\\p\"\n\t.string \"I've gotten stronger since that last\\n\"\n\t.string \"time! I wanted to show you, {PLAYER}!\\p\"\n\t.string \"Okay\u2026 Here I come!$\""
+  },
+  "label": "VictoryRoad_1F_Text_WallyIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VictoryRoad_1F/scripts.inc",
+  "references": {}
+}

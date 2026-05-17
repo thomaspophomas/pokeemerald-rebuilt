@@ -1,0 +1,19 @@
+{
+  "id": "AbandonedShip_Corridors_B1F_EventScript_LockStorageRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+    "sha1": "20ae990b6a96e346c899f484fa3bf65e231e4792"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+    "rawScript": "setmetatile 11, 4, METATILE_InsideShip_IntactDoor_Bottom_Locked, TRUE\n\treturn"
+  },
+  "label": "AbandonedShip_Corridors_B1F_EventScript_LockStorageRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+  "references": {}
+}

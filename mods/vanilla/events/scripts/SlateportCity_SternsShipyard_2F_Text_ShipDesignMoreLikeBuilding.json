@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_SternsShipyard_2F_Text_ShipDesignMoreLikeBuilding",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc",
+    "sha1": "82b7acc291304eea56ffb841fc81b0f02f4cab3a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc",
+    "rawScript": ".string \"Designing a large ship is more like\\n\"\n\t.string \"making a big building than putting\\l\"\n\t.string \"together a transportation vehicle.$\""
+  },
+  "label": "SlateportCity_SternsShipyard_2F_Text_ShipDesignMoreLikeBuilding",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc",
+  "references": {}
+}

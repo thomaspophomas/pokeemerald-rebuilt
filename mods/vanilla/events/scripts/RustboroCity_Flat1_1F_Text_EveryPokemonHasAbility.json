@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Flat1_1F_Text_EveryPokemonHasAbility",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Flat1_1F/scripts.inc",
+    "sha1": "ba2888194a5804b938a63bae6ae086f7373227c1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Flat1_1F/scripts.inc",
+    "rawScript": ".string \"Every POK\u00e9MON has a special ability\\n\"\n\t.string \"that it can use.$\""
+  },
+  "label": "RustboroCity_Flat1_1F_Text_EveryPokemonHasAbility",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Flat1_1F/scripts.inc",
+  "references": {}
+}

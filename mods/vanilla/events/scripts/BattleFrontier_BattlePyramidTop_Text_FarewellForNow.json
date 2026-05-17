@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePyramidTop_Text_FarewellForNow",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "sha1": "6256c29eca306dafcaec0dabbacc64547c474e58"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "rawScript": ".string \"Ah, yes! It just goes to show that\\n\"\n\t.string \"I have much to learn still!\\p\"\n\t.string \"May our paths cross again!\\n\"\n\t.string \"Farewell for now, young explorer!$\""
+  },
+  "label": "BattleFrontier_BattlePyramidTop_Text_FarewellForNow",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+  "references": {}
+}

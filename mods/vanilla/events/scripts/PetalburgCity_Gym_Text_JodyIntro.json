@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_JodyIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"Our GYM LEADER told us to go all out\\n\"\n\t.string \"and beat you.\\p\"\n\t.string \"Even if you happen to be the\\n\"\n\t.string \"LEADER's kid!$\""
+  },
+  "label": "PetalburgCity_Gym_Text_JodyIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

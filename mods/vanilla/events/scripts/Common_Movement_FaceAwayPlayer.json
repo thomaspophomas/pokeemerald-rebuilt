@@ -1,0 +1,19 @@
+{
+  "id": "Common_Movement_FaceAwayPlayer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/movement.inc",
+    "sha1": "db4bc30041800dc2eef6f2a30a2f3751c2560c74"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/movement.inc",
+    "rawScript": "face_away_player\n\tstep_end"
+  },
+  "label": "Common_Movement_FaceAwayPlayer",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/scripts/movement.inc",
+  "references": {}
+}

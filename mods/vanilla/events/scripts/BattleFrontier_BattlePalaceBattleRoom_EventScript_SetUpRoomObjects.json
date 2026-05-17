@@ -1,0 +1,26 @@
+{
+  "id": "BattleFrontier_BattlePalaceBattleRoom_EventScript_SetUpRoomObjects",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "sha1": "c4392c432f84fdbe0613ac4b067366a168a52056"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "rawScript": "hideobjectat LOCALID_PALACE_BATTLE_PLAYER, MAP_BATTLE_FRONTIER_BATTLE_PALACE_BATTLE_ROOM\n\tcall BattleFrontier_BattlePalaceBattleRoom_EventScript_SetPlayerGfx\n\tsetvar VAR_TEMP_1, 1\n\tapplymovement LOCALID_PLAYER, BattleFrontier_BattlePalaceBattleRoom_Movement_SetInvisible\n\tremoveobject LOCALID_PALACE_BATTLE_OPPONENT\n\tapplymovement LOCALID_PALACE_DUSCLOPS, BattleFrontier_BattlePalaceBattleRoom_Movement_SetInvisible\n\tapplymovement LOCALID_PALACE_AZURILL, BattleFrontier_BattlePalaceBattleRoom_Movement_SetInvisible\n\tend"
+  },
+  "label": "BattleFrontier_BattlePalaceBattleRoom_EventScript_SetUpRoomObjects",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_PALACE_BATTLE_ROOM"
+    ]
+  }
+}

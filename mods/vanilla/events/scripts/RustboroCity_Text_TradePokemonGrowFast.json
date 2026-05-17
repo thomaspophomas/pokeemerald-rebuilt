@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Text_TradePokemonGrowFast",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": ".string \"A POK\u00e9MON you get in a trade from\\n\"\n\t.string \"someone grows fast.\\p\"\n\t.string \"But if you don't have certain GYM\\n\"\n\t.string \"BADGES, it may not obey you\u2026$\""
+  },
+  "label": "RustboroCity_Text_TradePokemonGrowFast",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

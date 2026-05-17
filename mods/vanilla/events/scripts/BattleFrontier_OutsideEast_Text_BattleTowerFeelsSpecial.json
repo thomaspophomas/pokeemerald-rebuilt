@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideEast_Text_BattleTowerFeelsSpecial",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "sha1": "daab3e530c74c286237faa58f280f11ef97e663a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "rawScript": ".string \"Wow!\\n\"\n\t.string \"It's huge!\\p\"\n\t.string \"The BATTLE TOWER feels special.\\n\"\n\t.string \"It's different from the others.$\""
+  },
+  "label": "BattleFrontier_OutsideEast_Text_BattleTowerFeelsSpecial",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+  "references": {}
+}

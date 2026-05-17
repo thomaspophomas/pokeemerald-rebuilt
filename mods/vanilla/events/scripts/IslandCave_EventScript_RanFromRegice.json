@@ -1,0 +1,19 @@
+{
+  "id": "IslandCave_EventScript_RanFromRegice",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/IslandCave/scripts.inc",
+    "sha1": "36e3ca89a53bdf101cff26d6ef8efcf46552e41d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/IslandCave/scripts.inc",
+    "rawScript": "setvar VAR_0x8004, SPECIES_REGICE\n\tgoto Common_EventScript_LegendaryFlewAway\n\tend"
+  },
+  "label": "IslandCave_EventScript_RanFromRegice",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/IslandCave/scripts.inc",
+  "references": {}
+}

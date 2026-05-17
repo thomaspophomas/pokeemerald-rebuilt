@@ -1,0 +1,19 @@
+{
+  "id": "Route113_GlassWorkshop_Text_NoRoomInBag",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "sha1": "6a7101e66439e9abedcc55c8fc60b573807258b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "rawScript": ".string \"Oh?\\n\"\n\t.string \"You've no room in your BAG, huff-puff.\\p\"\n\t.string \"I'll hold on to it, so come back later,\\n\"\n\t.string \"huff-puff.$\""
+  },
+  "label": "Route113_GlassWorkshop_Text_NoRoomInBag",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route113_GlassWorkshop/scripts.inc",
+  "references": {}
+}

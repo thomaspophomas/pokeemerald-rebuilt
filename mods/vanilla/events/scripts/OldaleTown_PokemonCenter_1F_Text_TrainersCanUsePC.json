@@ -1,0 +1,19 @@
+{
+  "id": "OldaleTown_PokemonCenter_1F_Text_TrainersCanUsePC",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown_PokemonCenter_1F/scripts.inc",
+    "sha1": "aa6fbbadeecd7b968cca77547695be5b595703f9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/OldaleTown_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"That PC in the corner there is\\n\"\n\t.string \"for any POK\u00e9MON TRAINER to use.\\p\"\n\t.string \"Naturally, that means you're welcome\\n\"\n\t.string \"to use it, too.$\""
+  },
+  "label": "OldaleTown_PokemonCenter_1F_Text_TrainersCanUsePC",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/OldaleTown_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

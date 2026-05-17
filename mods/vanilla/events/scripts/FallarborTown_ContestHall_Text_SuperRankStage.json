@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_ContestHall_Text_SuperRankStage",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+    "sha1": "163b9c21282cae11ce5f396c305aff448fc9ab48"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+    "rawScript": ".string \"POK\u00e9MON CONTESTS\\n\"\n\t.string \"SUPER RANK STAGE!$\""
+  },
+  "label": "FallarborTown_ContestHall_Text_SuperRankStage",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+  "references": {}
+}

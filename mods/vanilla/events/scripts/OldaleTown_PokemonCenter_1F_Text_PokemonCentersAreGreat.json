@@ -1,0 +1,19 @@
+{
+  "id": "OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown_PokemonCenter_1F/scripts.inc",
+    "sha1": "aa6fbbadeecd7b968cca77547695be5b595703f9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/OldaleTown_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"POK\u00e9MON CENTERS are great!\\p\"\n\t.string \"You can use their services as much\\n\"\n\t.string \"as you like, and it's all for free.\\l\"\n\t.string \"You never have to worry!$\""
+  },
+  "label": "OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/OldaleTown_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

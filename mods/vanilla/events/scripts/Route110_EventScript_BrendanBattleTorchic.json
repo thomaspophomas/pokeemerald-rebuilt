@@ -1,0 +1,23 @@
+{
+  "id": "Route110_EventScript_BrendanBattleTorchic",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/scripts.inc",
+    "sha1": "ee9846425d6a96c03ac988decb3c48ffbd098f22"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110/scripts.inc",
+    "rawScript": "trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_110_TORCHIC, Route110_Text_BrendanDefeated\n\tgoto Route110_EventScript_BrendanDefeated\n\tend"
+  },
+  "label": "Route110_EventScript_BrendanBattleTorchic",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_BRENDAN_ROUTE_110_TORCHIC"
+    ]
+  }
+}

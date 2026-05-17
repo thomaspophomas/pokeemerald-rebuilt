@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "bb19ff9a0e952fad700f5ef42fc9fcd6b6aa3a75"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"Depending on the special abilities of\\n\"\n\t.string \"POK\u00e9MON, some moves might change\\l\"\n\t.string \"or not work at all.$\""
+  },
+  "label": "MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

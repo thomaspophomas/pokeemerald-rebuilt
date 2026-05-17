@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonCenter_1F_EventScript_Boy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "aea25451773a7c111671a0da53f41f92ce337106"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": "msgbox LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon, MSGBOX_NPC\n\tend"
+  },
+  "label": "LilycoveCity_PokemonCenter_1F_EventScript_Boy",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

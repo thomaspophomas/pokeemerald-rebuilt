@@ -1,0 +1,23 @@
+{
+  "id": "EverGrandeCity_DrakesRoom_OnWarp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+    "sha1": "f9ebbd1a5748e35eab8deba2da4622069b1316a9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+    "rawScript": "map_script_2 VAR_TEMP_1, 0, EverGrandeCity_DrakesRoom_EventScript_PlayerTurnNorth\n\t.2byte 0"
+  },
+  "label": "EverGrandeCity_DrakesRoom_OnWarp",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "RusturfTunnel_EventScript_AlreadySpokenTo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/scripts.inc",
+    "sha1": "76035185b0aabddf11657305417168db4c1bb93d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RusturfTunnel/scripts.inc",
+    "rawScript": "msgbox RusturfTunnel_Text_ToGetToVerdanturf, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection\n\twaitmovement 0\n\trelease\n\tend"
+  },
+  "label": "RusturfTunnel_EventScript_AlreadySpokenTo",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RusturfTunnel/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED"
+    ]
+  }
+}

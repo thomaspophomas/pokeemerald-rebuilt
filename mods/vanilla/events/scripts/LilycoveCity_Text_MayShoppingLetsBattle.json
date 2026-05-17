@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_MayShoppingLetsBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"MAY: Oh, hey?\\n\"\n\t.string \"{PLAYER}{KUN}, are you shopping, too?\\p\"\n\t.string \"I bought a whole bunch of DOLLS and\\n\"\n\t.string \"POSTERS.\\p\"\n\t.string \"Of course, I've also caught a lot of\\n\"\n\t.string \"POK\u00e9MON, and I'm raising them\\l\"\n\t.string \"properly, too.\\p\"\n\t.string \"Actually, I'm more worried if you're\\n\"\n\t.string \"raising POK\u00e9MON properly, {PLAYER}{KUN}.\\p\"\n\t.string \"I'll battle with you, so you can show\\n\"\n\t.string \"me your POK\u00e9MON, {PLAYER}{KUN}.$\""
+  },
+  "label": "LilycoveCity_Text_MayShoppingLetsBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

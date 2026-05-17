@@ -1,0 +1,19 @@
+{
+  "id": "VictoryRoad_1F_Text_WallyPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_1F/scripts.inc",
+    "sha1": "dda3a20e79be32fbc7d021ceddf040bbcdbe53c7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VictoryRoad_1F/scripts.inc",
+    "rawScript": ".string \"WALLY: I couldn't beat you this time,\\n\"\n\t.string \"too\u2026 But one of these days, {PLAYER},\\l\"\n\t.string \"I'm going to catch up to you\u2026\\p\"\n\t.string \"And challenge the POK\u00e9MON LEAGUE!$\""
+  },
+  "label": "VictoryRoad_1F_Text_WallyPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VictoryRoad_1F/scripts.inc",
+  "references": {}
+}

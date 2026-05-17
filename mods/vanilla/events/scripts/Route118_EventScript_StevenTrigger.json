@@ -1,0 +1,23 @@
+{
+  "id": "Route118_EventScript_StevenTrigger",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route118/scripts.inc",
+    "sha1": "5a4868d1490a62e62c6e29a255fc938bad9fa2cd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route118/scripts.inc",
+    "rawScript": "playse SE_LEDGE\n\tapplymovement LOCALID_ROUTE118_STEVEN, Route118_Movement_StevenJumpLedge\n\twaitmovement 0\n\tdelay 30\n\tmsgbox Route118_Text_StevenQuestions, MSGBOX_DEFAULT\n\tclosemessage\n\tcall_if_eq VAR_0x8008, 0, Route118_EventScript_StevenExit0\n\tcall_if_eq VAR_0x8008, 1, Route118_EventScript_StevenExit1\n\tcall_if_eq VAR_0x8008, 2, Route118_EventScript_StevenExit2\n\tsetvar VAR_ROUTE118_STATE, 1\n\tremoveobject LOCALID_ROUTE118_STEVEN\n\treleaseall\n\tend"
+  },
+  "label": "Route118_EventScript_StevenTrigger",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route118/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_ROUTE118_STATE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_1F_Text_BetterGetBackToGym",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "sha1": "b92e18aeb34c3856db794aa81beeec7f0f0de717"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "rawScript": ".string \"I'd better get back to PETALBURG GYM.\\p\"\n\t.string \"MOM, thanks for looking after the house\\n\"\n\t.string \"while I'm away.$\""
+  },
+  "label": "PlayersHouse_1F_Text_BetterGetBackToGym",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+  "references": {}
+}

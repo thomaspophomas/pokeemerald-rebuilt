@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_House2_EventScript_FirstMonAssessment",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_House2/scripts.inc",
+    "sha1": "18b89c836e0ca6b80f69fe44839d4dd2d94ef1b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown_House2/scripts.inc",
+    "rawScript": "msgbox PacifidlogTown_House2_Text_ChairmansYoungerBrotherOnVacation, MSGBOX_DEFAULT\n\tmsgbox PacifidlogTown_House2_Text_AhYourPokemon, MSGBOX_DEFAULT\n\treturn"
+  },
+  "label": "PacifidlogTown_House2_EventScript_FirstMonAssessment",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PacifidlogTown_House2/scripts.inc",
+  "references": {}
+}

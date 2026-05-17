@@ -1,0 +1,25 @@
+{
+  "id": "GraniteCave_B1F_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/GraniteCave_B1F/scripts.inc",
+    "sha1": "64fd6273282c62a4fbf4bd0eaab0ce96a8fa673b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/GraniteCave_B1F/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_FRAME_TABLE, CaveHole_CheckFallDownHole\n\tmap_script MAP_SCRIPT_ON_TRANSITION, CaveHole_FixCrackedGround\n\tmap_script MAP_SCRIPT_ON_RESUME, GraniteCave_B1F_SetHoleWarp\n\t.byte 0"
+  },
+  "label": "GraniteCave_B1F_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/GraniteCave_B1F/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

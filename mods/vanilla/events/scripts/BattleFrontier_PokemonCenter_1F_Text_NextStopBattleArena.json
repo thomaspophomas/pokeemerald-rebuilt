@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc",
+    "sha1": "e4fb392a503e70d6989c6dc6307b6eca9019ac04"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"Okay! Next stop, the BATTLE ARENA!\\n\"\n\t.string \"I'd better get the right POK\u00e9MON from\\l\"\n\t.string \"the PC Storage System.$\""
+  },
+  "label": "BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "RivalsHouse_1F_Text_WentOutToRoute103",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+    "sha1": "4acc9bd3dce8266e27759616e41b13205491adc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+    "rawScript": ".string \"Oh, {RIVAL} went out to ROUTE 103\\n\"\n\t.string \"just a little while ago.\\p\"\n\t.string \"Like father, like child.\\n\"\n\t.string \"{RIVAL} can't stay quietly at home.$\""
+  },
+  "label": "RivalsHouse_1F_Text_WentOutToRoute103",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+  "references": {}
+}

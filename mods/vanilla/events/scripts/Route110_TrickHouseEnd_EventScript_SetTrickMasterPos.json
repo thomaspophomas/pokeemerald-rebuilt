@@ -1,0 +1,23 @@
+{
+  "id": "Route110_TrickHouseEnd_EventScript_SetTrickMasterPos",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "sha1": "3b39ac1484a417dc8392e9b8712bc29e12891169"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "rawScript": "addobject LOCALID_TRICK_MASTER_END\n\tshowobjectat LOCALID_TRICK_MASTER_END, MAP_ROUTE110_TRICK_HOUSE_END\n\tturnobject LOCALID_TRICK_MASTER_END, DIR_EAST\n\tend"
+  },
+  "label": "Route110_TrickHouseEnd_EventScript_SetTrickMasterPos",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_ROUTE110_TRICK_HOUSE_END"
+    ]
+  }
+}

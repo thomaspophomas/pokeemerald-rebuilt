@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_PleaseComeWithMe",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"Ah, there you are, {PLAYER}{KUN}!\\p\"\n\t.string \"Please come with me.\\n\"\n\t.string \"I have something I want you to have.$\""
+  },
+  "label": "PetalburgCity_Gym_Text_PleaseComeWithMe",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

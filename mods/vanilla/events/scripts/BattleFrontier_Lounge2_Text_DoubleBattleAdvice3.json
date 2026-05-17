@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge2_Text_DoubleBattleAdvice3",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "sha1": "d4d4f7c0802f8118a63eaf9b68eb6bcff146ff4d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "rawScript": ".string \"Once you're confident and comfortable\\n\"\n\t.string \"with DOUBLE BATTLES here, you should\\l\"\n\t.string \"think about challenging other places\\l\"\n\t.string \"offering DOUBLE BATTLES.$\""
+  },
+  "label": "BattleFrontier_Lounge2_Text_DoubleBattleAdvice3",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+  "references": {}
+}

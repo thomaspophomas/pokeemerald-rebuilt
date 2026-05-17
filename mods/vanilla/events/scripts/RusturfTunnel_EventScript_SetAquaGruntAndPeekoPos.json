@@ -1,0 +1,19 @@
+{
+  "id": "RusturfTunnel_EventScript_SetAquaGruntAndPeekoPos",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/scripts.inc",
+    "sha1": "76035185b0aabddf11657305417168db4c1bb93d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RusturfTunnel/scripts.inc",
+    "rawScript": "setobjectxyperm LOCALID_RUSTURF_TUNNEL_PEEKO, 13, 4\n\tsetobjectxyperm LOCALID_RUSTURF_TUNNEL_GRUNT, 13, 5\n\treturn"
+  },
+  "label": "RusturfTunnel_EventScript_SetAquaGruntAndPeekoPos",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RusturfTunnel/scripts.inc",
+  "references": {}
+}

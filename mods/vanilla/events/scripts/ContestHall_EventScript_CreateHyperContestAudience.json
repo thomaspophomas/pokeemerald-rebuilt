@@ -1,0 +1,19 @@
+{
+  "id": "ContestHall_EventScript_CreateHyperContestAudience",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ContestHall/scripts.inc",
+    "sha1": "1975dda1f6df6ad0ef2b0d81c28afe4508469870"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ContestHall/scripts.inc",
+    "rawScript": "createvobject OBJ_EVENT_GFX_BEAUTY, 0, 2, 3, 3, DIR_EAST\n\tcreatevobject OBJ_EVENT_GFX_MAN_5, 1, 2, 4, 3, DIR_EAST\n\tcreatevobject OBJ_EVENT_GFX_HIKER, 2, 2, 7, 3, DIR_EAST\n\tcreatevobject OBJ_EVENT_GFX_GENTLEMAN, 3, 2, 8, 3, DIR_EAST\n\tcreatevobject OBJ_EVENT_GFX_NINJA_BOY, 10, 12, 3, 3, DIR_WEST\n\tcreatevobject OBJ_EVENT_GFX_WOMAN_2, 11, 12, 4, 3, DIR_WEST\n\tcreatevobject OBJ_EVENT_GFX_WOMAN_3, 12, 12, 7, 3, DIR_WEST\n\tcreatevobject OBJ_EVENT_GFX_BEAUTY, 13, 12, 8, 3, DIR_WEST\n\tcreatevobject OBJ_EVENT_GFX_EXPERT_F, 20, 3, 2, 3, DIR_SOUTH\n\tcreatevobject OBJ_EVENT_GFX_MAN_2, 20, 6, 2, 3, DIR_SOUTH\n\tcreatevobject OBJ_EVENT_GFX_WOMAN_5, 20, 7, 2, 3, DIR_SOUTH\n\tcreatevobject OBJ_EVENT_GFX_SCIENTIST_1, 24, 8, 2, 3, DIR_SOUTH\n\tcreatevobject OBJ_EVENT_GFX_GENTLEMAN, 24, 11, 2, 3, DIR_SOUTH\n\tcreatevobject OBJ_EVENT_GFX_LITTLE_BOY, 25, 3, 9, 3, DIR_NORTH\n\tcreatevobject OBJ_EVENT_GFX_YOUNGSTER, 26, 4, 9, 3, DIR_NORTH\n\tcreatevobject OBJ_EVENT_GFX_FAT_MAN, 27, 5, 9, 3, DIR_NORTH\n\tcreatevobject OBJ_EVENT_GFX_HEX_MANIAC, 28, 9, 9, 3, DIR_NORTH\n\tcreatevobject OBJ_EVENT_GFX_SCHOOL_KID_M, 29, 10, 9, 3, DIR_NORTH\n\tcreatevobject OBJ_EVENT_GFX_MART_EMPLOYEE, 30, 11, 9, 3, DIR_NORTH\n\treturn"
+  },
+  "label": "ContestHall_EventScript_CreateHyperContestAudience",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/ContestHall/scripts.inc",
+  "references": {}
+}

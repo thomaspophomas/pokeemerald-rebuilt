@@ -1,0 +1,24 @@
+{
+  "id": "Route110_TrickHouseEnd_EventScript_TrickMaster",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "sha1": "3b39ac1484a417dc8392e9b8712bc29e12891169"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmsgbox Route110_TrickHouseEnd_Text_YouveMadeItToMe, MSGBOX_DEFAULT\n\tsetvar VAR_TEMP_2, 1\n\tswitch VAR_TRICK_HOUSE_LEVEL\n\tcase 0, Route110_TrickHouseEnd_EventScript_CompletedPuzzle1\n\tcase 1, Route110_TrickHouseEnd_EventScript_CompletedPuzzle2\n\tcase 2, Route110_TrickHouseEnd_EventScript_CompletedPuzzle3\n\tcase 3, Route110_TrickHouseEnd_EventScript_CompletedPuzzle4\n\tcase 4, Route110_TrickHouseEnd_EventScript_CompletedPuzzle5\n\tcase 5, Route110_TrickHouseEnd_EventScript_CompletedPuzzle6\n\tcase 6, Route110_TrickHouseEnd_EventScript_CompletedPuzzle7\n\tcase 7, Route110_TrickHouseEnd_EventScript_CompletedPuzzle8\n\tend"
+  },
+  "label": "Route110_TrickHouseEnd_EventScript_TrickMaster",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_2",
+      "VAR_TRICK_HOUSE_LEVEL"
+    ]
+  }
+}

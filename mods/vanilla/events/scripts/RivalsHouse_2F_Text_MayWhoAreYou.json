@@ -1,0 +1,19 @@
+{
+  "id": "RivalsHouse_2F_Text_MayWhoAreYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "sha1": "e014a444dcf389c78773768633900402b1862edb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "rawScript": ".string \"Huh?\\n\"\n\t.string \"Who\u2026 Who are you?\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\n\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"Oh, you're {PLAYER}{KUN}.\\n\"\n\t.string \"So your move was today.\\p\"\n\t.string \"Um\u2026 I'm MAY.\\n\"\n\t.string \"Glad to meet you!\\p\"\n\t.string \"I\u2026\\n\"\n\t.string \"I have this dream of becoming friends\\l\"\n\t.string \"with POK\u00e9MON all over the world.\\p\"\n\t.string \"I\u2026 I heard about you, {PLAYER}{KUN}, from\\n\"\n\t.string \"my dad, PROF. BIRCH.\\p\"\n\t.string \"I was hoping that you would be nice,\\n\"\n\t.string \"{PLAYER}{KUN}, and that we could be friends.\\p\"\n\t.string \"Oh, this is silly, isn't it?\\n\"\n\t.string \"I\u2026 I've just met you, {PLAYER}{KUN}.\\p\"\n\t.string \"Eheheh\u2026\\p\"\n\t.string \"Oh, no! I forgot!\\p\"\n\t.string \"I was supposed to go help Dad catch\\n\"\n\t.string \"some wild POK\u00e9MON!\\p\"\n\t.string \"{PLAYER}{KUN}, I'll catch you later!$\""
+  },
+  "label": "RivalsHouse_2F_Text_MayWhoAreYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+  "references": {}
+}

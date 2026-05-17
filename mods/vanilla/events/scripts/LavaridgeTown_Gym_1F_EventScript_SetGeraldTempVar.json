@@ -1,0 +1,26 @@
+{
+  "id": "LavaridgeTown_Gym_1F_EventScript_SetGeraldTempVar",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "sha1": "b82ae91ab89ff7156e8125891eff9b7e6a2a260f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "rawScript": "goto_if_defeated TRAINER_GERALD, LavaridgeTown_Gym_1F_EventScript_SetAxleTempVar\n\tsetvar VAR_TEMP_C, 1"
+  },
+  "label": "LavaridgeTown_Gym_1F_EventScript_SetGeraldTempVar",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_C"
+    ],
+    "trainers": [
+      "TRAINER_GERALD"
+    ]
+  }
+}

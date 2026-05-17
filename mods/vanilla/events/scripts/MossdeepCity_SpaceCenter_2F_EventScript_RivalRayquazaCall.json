@@ -1,0 +1,26 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F_EventScript_RivalRayquazaCall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "rawScript": "lockall\n\tcheckplayergender\n\tcall_if_eq VAR_RESULT, MALE, MossdeepCity_SpaceCenter_2F_EventScript_MayRayquazaCall\n\tcall_if_eq VAR_RESULT, FEMALE, MossdeepCity_SpaceCenter_2F_EventScript_BrendanRayquazaCall\n\tclosemessage\n\tclearflag FLAG_DEFEATED_MAGMA_SPACE_CENTER\n\treleaseall\n\tend"
+  },
+  "label": "MossdeepCity_SpaceCenter_2F_EventScript_RivalRayquazaCall",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_MAGMA_SPACE_CENTER"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

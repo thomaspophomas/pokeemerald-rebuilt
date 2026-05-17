@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_EventScript_BattleWally",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": "msgbox MauvilleCity_Text_WallyHereICome, MSGBOX_DEFAULT\n\ttrainerbattle_no_intro TRAINER_WALLY_MAUVILLE, MauvilleCity_Text_WallyDefeat\n\tapplymovement LOCALID_MAUVILLE_WALLY, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\tmsgbox MauvilleCity_Text_WallyIllGoBackToVerdanturf, MSGBOX_DEFAULT\n\tapplymovement LOCALID_MAUVILLE_WALLY, Common_Movement_FacePlayer\n\twaitmovement 0\n\tmsgbox MauvilleCity_Text_ThankYouNotEnoughToBattle, MSGBOX_DEFAULT\n\tapplymovement LOCALID_MAUVILLE_WALLY, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\tmsgbox MauvilleCity_Text_UncleNoNeedToBeDown, MSGBOX_DEFAULT\n\treturn"
+  },
+  "label": "MauvilleCity_EventScript_BattleWally",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_WALLY_MAUVILLE"
+    ]
+  }
+}

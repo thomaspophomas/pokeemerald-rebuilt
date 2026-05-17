@@ -1,0 +1,23 @@
+{
+  "id": "BerryBlender_EventScript_BerryBlender2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": "lockall\n\tsetvar NUM_OPPONENTS, 2\n\tapplymovement LOCALID_CONTEST_LOBBY_BLENDER_2_PARTICIPANT, Common_Movement_FaceOriginalDirection\n\tapplymovement LOCALID_CONTEST_LOBBY_BLENDER_2_LEADER, BerryBlender_Movement_BlendLeaderWalkInPlace\n\twaitmovement 0\n\tmsgbox BerryBlender_Text_WantToBlendPokeblocksWithUs, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, BerryBlender_EventScript_TryUseBerryBlender2\n\tgoto BerryBlender_EventScript_DeclineBlender2\n\tend"
+  },
+  "label": "BerryBlender_EventScript_BerryBlender2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

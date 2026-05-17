@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Mart_EventScript_Man",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Mart/scripts.inc",
+    "sha1": "d8b603abe3cbe455d4b20a35653269b7e46b6b14"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Mart/scripts.inc",
+    "rawScript": "msgbox MauvilleCity_Mart_Text_DecisionsDetermineBattle, MSGBOX_NPC\n\tend"
+  },
+  "label": "MauvilleCity_Mart_EventScript_Man",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_Mart/scripts.inc",
+  "references": {}
+}

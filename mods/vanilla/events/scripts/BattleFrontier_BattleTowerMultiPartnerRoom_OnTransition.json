@@ -1,0 +1,31 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiPartnerRoom_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "sha1": "4e7b748d8d3e33414d869ae43d136c857e9955fc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "rawScript": "goto_if_set FLAG_CHOSEN_MULTI_BATTLE_NPC_PARTNER, BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_ChosePartner\n\tclearflag FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_1\n\tclearflag FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_2\n\tclearflag FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_3\n\tclearflag FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_4\n\tclearflag FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_5\n\tclearflag FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_6\n\tsetflag FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_ALT_1\n\tsetflag FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_ALT_2\n\ttower_loadpartners\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerMultiPartnerRoom_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_CHOSEN_MULTI_BATTLE_NPC_PARTNER",
+      "FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_1",
+      "FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_2",
+      "FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_3",
+      "FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_4",
+      "FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_5",
+      "FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_6",
+      "FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_ALT_1",
+      "FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_ALT_2"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.inc",
+    "sha1": "6899c6d44a5fd56d99bcdae08fe4b431b5281a13"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"I think POK\u00e9MON get closer to their\\n\"\n\t.string \"TRAINERS if they spend time together.\\p\"\n\t.string \"The longer the better.\\n\"\n\t.string \"That's what I think.$\""
+  },
+  "label": "LavaridgeTown_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

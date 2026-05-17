@@ -1,0 +1,23 @@
+{
+  "id": "Route113_GlassWorkshop_EventScript_ReenterWorkshopAfterSootSack",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "sha1": "6a7101e66439e9abedcc55c8fc60b573807258b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "rawScript": "setvar VAR_GLASS_WORKSHOP_STATE, 2\n\treturn"
+  },
+  "label": "Route113_GlassWorkshop_EventScript_ReenterWorkshopAfterSootSack",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route113_GlassWorkshop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_GLASS_WORKSHOP_STATE"
+    ]
+  }
+}

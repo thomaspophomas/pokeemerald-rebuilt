@@ -1,0 +1,19 @@
+{
+  "id": "SafariZone_Text_WouldYouLikeToExit",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/safari_zone.inc",
+    "sha1": "435880c660a34d3e51dcedb348a41731d28af7cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/safari_zone.inc",
+    "rawScript": ".string \"Would you like to exit the SAFARI\\n\"\n\t.string \"ZONE right now?$\""
+  },
+  "label": "SafariZone_Text_WouldYouLikeToExit",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/safari_zone.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Route110_TrickHouseEnd_Text_YouveMadeItToMe",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "sha1": "3b39ac1484a417dc8392e9b8712bc29e12891169"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "rawScript": ".string \"Aak!\\n\"\n\t.string \"You've made it to me?\\l\"\n\t.string \"Hmmm\u2026 You're sharp!$\""
+  },
+  "label": "Route110_TrickHouseEnd_Text_YouveMadeItToMe",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+  "references": {}
+}

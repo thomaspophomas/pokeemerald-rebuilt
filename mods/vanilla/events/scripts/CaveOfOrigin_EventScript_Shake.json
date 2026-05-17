@@ -1,0 +1,19 @@
+{
+  "id": "CaveOfOrigin_EventScript_Shake",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cave_of_origin.inc",
+    "sha1": "3b25b8696d85672c07bb7fd23a4bb27522009fc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cave_of_origin.inc",
+    "rawScript": "setvar VAR_0x8004, 1  @ vertical pan\n\tsetvar VAR_0x8005, 1  @ horizontal pan\n\tsetvar VAR_0x8006, 8  @ num shakes\n\tsetvar VAR_0x8007, 5  @ shake delay\n\tspecial ShakeCamera\n\twaitstate\n\treleaseall\n\tend"
+  },
+  "label": "CaveOfOrigin_EventScript_Shake",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cave_of_origin.inc",
+  "references": {}
+}

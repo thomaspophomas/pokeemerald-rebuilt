@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "sha1": "a0cf82d2df089035fb81d02a013736aab95a13d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "rawScript": ".string \"I was taking a stroll down the beach\\n\"\n\t.string \"when I found this.\\p\"\n\t.string \"It's not anything I need, so you can\\n\"\n\t.string \"have it.$\""
+  },
+  "label": "MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+  "references": {}
+}

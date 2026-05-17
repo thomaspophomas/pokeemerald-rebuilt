@@ -1,0 +1,31 @@
+{
+  "id": "SootopolisCity_EventScript_RayquazaSceneFromDive",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": "delay 60\n\tspecial SpawnCameraObject\n\tapplymovement LOCALID_CAMERA, SootopolisCity_Movement_PanToActionFromDive\n\twaitmovement 0\n\tspecial RemoveCameraObject\n\tdelay 60\n\tfadescreenspeed FADE_TO_BLACK, 8\n\tcall SootopolisCity_EventScript_SetRoughWater\n\tremoveobject LOCALID_SOOTOPOLIS_GROUDON\n\tremoveobject LOCALID_SOOTOPOLIS_KYOGRE\n\taddobject LOCALID_SOOTOPOLIS_RAYQUAZA\n\tsetvar VAR_0x8004, TRUE\n\tspecial Script_DoRayquazaScene\n\tspecial SpawnCameraObject\n\tapplymovement LOCALID_CAMERA, SootopolisCity_Movement_PanUp\n\tapplymovement LOCALID_PLAYER, SootopolisCity_Movement_PlayerApproachLegendaries\n\twaitmovement 0\n\twaitse\n\tplaymoncry SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER\n\tsetvar VAR_0x8004, 1  @ vertical pan\n\tsetvar VAR_0x8005, 1  @ horizontal pan\n\tsetvar VAR_0x8006, 8  @ num shakes\n\tsetvar VAR_0x8007, 3  @ shake delay\n\tspecial ShakeCamera\n\twaitstate\n\twaitse\n\tplaymoncry SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER\n\tsetvar VAR_0x8004, 1  @ vertical pan\n\tsetvar VAR_0x8005, 2  @ horizontal pan\n\tsetvar VAR_0x8006, 8  @ num shakes\n\tsetvar VAR_0x8007, 5  @ shake delay\n\tspecial ShakeCamera\n\twaitstate\n\twaitmoncry\n\tsetweather WEATHER_NONE\n\tdoweather\n\tapplymovement LOCALID_SOOTOPOLIS_RAYQUAZA, SootopolisCity_Movement_RayquazaFlyOff\n\twaitmovement 0\n\tremoveobject LOCALID_SOOTOPOLIS_RAYQUAZA\n\tspecial WaitWeather\n\tclearflag FLAG_SYS_WEATHER_CTRL\n\tsetvar VAR_SKY_PILLAR_STATE, 2\n\tclearflag FLAG_LEGENDARIES_IN_SOOTOPOLIS\n\tfadenewbgm MUS_SURF\n\tdelay 120\n\tclearflag FLAG_HIDE_MAP_NAME_POPUP\n\twarpwhitefade MAP_SOOTOPOLIS_CITY, 29, 53\n\twaitstate\n\tend"
+  },
+  "label": "SootopolisCity_EventScript_RayquazaSceneFromDive",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_MAP_NAME_POPUP",
+      "FLAG_LEGENDARIES_IN_SOOTOPOLIS",
+      "FLAG_SYS_WEATHER_CTRL"
+    ],
+    "vars": [
+      "VAR_SKY_PILLAR_STATE"
+    ],
+    "maps": [
+      "MAP_SOOTOPOLIS_CITY"
+    ]
+  }
+}

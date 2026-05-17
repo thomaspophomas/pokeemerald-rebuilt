@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerBattleRoom_EventScript_AskReadyForMaidenNoRecord",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "sha1": "09b678d8717203a622b1d8714d904bcdeb37d08a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "rawScript": "multichoice 20, 6, MULTI_GO_ON_REST_RETIRE, TRUE\n\tswitch VAR_RESULT\n\tcase 0, BattleFrontier_BattleTowerBattleRoom_EventScript_BattleAnabel\n\tcase 1, BattleFrontier_BattleTowerBattleRoom_EventScript_AskPauseChallenge\n\tcase 2, BattleFrontier_BattleTowerBattleRoom_EventScript_AskRetireChallenge\n\tcase MULTI_B_PRESSED, BattleFrontier_BattleTowerBattleRoom_EventScript_AskReadyForMaiden"
+  },
+  "label": "BattleFrontier_BattleTowerBattleRoom_EventScript_AskReadyForMaidenNoRecord",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

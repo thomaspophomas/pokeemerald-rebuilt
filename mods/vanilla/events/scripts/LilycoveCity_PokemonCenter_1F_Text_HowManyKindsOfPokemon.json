@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "aea25451773a7c111671a0da53f41f92ce337106"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"I wonder how many kinds of POK\u00e9MON\\n\"\n\t.string \"there are in the world.\\p\"\n\t.string \"It'd be great to cross seas and\\n\"\n\t.string \"trade POK\u00e9MON with people far away.$\""
+  },
+  "label": "LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

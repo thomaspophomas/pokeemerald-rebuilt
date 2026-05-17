@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": ".string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\n\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 Beep!\\p\"\n\t.string \"SCOTT: Hi, hi, {PLAYER}!\\n\"\n\t.string \"It's me, SCOTT.\\p\"\n\t.string \"I'm aboard the S.S. TIDAL now.\\n\"\n\t.string \"It feels great to be on the sea!\\p\"\n\t.string \"By the way\u2026\\p\"\n\t.string \"There's this place that I'd like to\\n\"\n\t.string \"invite you to for a visit.\\p\"\n\t.string \"If you're interested, board a ferry\\n\"\n\t.string \"at either SLATEPORT or LILYCOVE.\\p\"\n\t.string \"I'll fill you in on the details when\\n\"\n\t.string \"we meet. I'll be waiting!\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\n\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 Click!$\""
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

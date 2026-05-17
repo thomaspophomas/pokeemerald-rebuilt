@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_1F_Text_ThisPokemonIsAdorable",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+    "sha1": "9b7ed7bb941e379aabaa59bf0da8ffe089df98ba"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+    "rawScript": ".string \"This POK\u00e9MON is adorable!\\n\"\n\t.string \"Just like our little boy!$\""
+  },
+  "label": "LilycoveCity_LilycoveMuseum_1F_Text_ThisPokemonIsAdorable",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+  "references": {}
+}

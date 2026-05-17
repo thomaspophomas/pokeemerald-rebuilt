@@ -1,0 +1,19 @@
+{
+  "id": "TrainerHill_Roof_EventScript_EndSpeakToOwner",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Roof/scripts.inc",
+    "sha1": "5597180a59a42562e7f9757eaa0b7d95908d37f9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Roof/scripts.inc",
+    "rawScript": "msgbox TrainerHill_Roof_Text_ArriveZippierNextTime, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "TrainerHill_Roof_EventScript_EndSpeakToOwner",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/TrainerHill_Roof/scripts.inc",
+  "references": {}
+}

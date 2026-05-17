@@ -1,0 +1,23 @@
+{
+  "id": "VerdanturfTown_BattleTentLobby_EventScript_LostChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "sha1": "be67ab8ba625b73e575c1594a46cbee43b6f03d9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "rawScript": "lockall\n\tmessage VerdanturfTown_BattleTentLobby_Text_ResultsWillBeRecorded\n\twaitmessage\n\tfrontier_set FRONTIER_DATA_LVL_MODE, FRONTIER_LVL_50\n\tverdanturftent_save 0\n\tplayse SE_SAVE\n\twaitse\n\tmsgbox VerdanturfTown_BattleTentLobby_Text_ReturnFortified, MSGBOX_DEFAULT\n\tclosemessage\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 255\n\treleaseall\n\tend"
+  },
+  "label": "VerdanturfTown_BattleTentLobby_EventScript_LostChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ]
+  }
+}

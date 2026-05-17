@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_House1_EventScript_Kecleon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_House1/scripts.inc",
+    "sha1": "68c869a4ebb71977a03d938444b31d12586acfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_House1/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\twaitse\n\tplaymoncry SPECIES_KECLEON, CRY_MODE_NORMAL\n\tmsgbox LilycoveCity_House1_Text_Kecleon, MSGBOX_DEFAULT\n\twaitmoncry\n\trelease\n\tend"
+  },
+  "label": "LilycoveCity_House1_EventScript_Kecleon",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_House1/scripts.inc",
+  "references": {}
+}

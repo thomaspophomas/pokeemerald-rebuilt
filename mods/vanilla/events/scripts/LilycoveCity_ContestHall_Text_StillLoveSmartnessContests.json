@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestHall_Text_StillLoveSmartnessContests",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "sha1": "9d258f56144116075b6ffd125cc9edb7fc292736"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "rawScript": ".string \"When all's said and done, I still love\\n\"\n\t.string \"SMARTNESS CONTESTS.\\p\"\n\t.string \"That intellectual green color\u2026\\n\"\n\t.string \"It's so\u2026 So\u2026 Cool.$\""
+  },
+  "label": "LilycoveCity_ContestHall_Text_StillLoveSmartnessContests",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+  "references": {}
+}

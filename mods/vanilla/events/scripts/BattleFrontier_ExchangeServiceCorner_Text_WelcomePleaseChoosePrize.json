@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ExchangeServiceCorner_Text_WelcomePleaseChoosePrize",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
+    "sha1": "3bee0ca682f7b98f6a5f16085e830466d47ef6e9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
+    "rawScript": ".string \"Hello, this is the EXCHANGE SERVICE\\n\"\n\t.string \"CORNER.\\p\"\n\t.string \"We exchange the Battle Points you\\n\"\n\t.string \"have collected for lovely prizes.\\p\"\n\t.string \"Please choose a prize from this list.$\"\n\n@ Unused"
+  },
+  "label": "BattleFrontier_ExchangeServiceCorner_Text_WelcomePleaseChoosePrize",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
+  "references": {}
+}

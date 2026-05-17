@@ -1,0 +1,24 @@
+{
+  "id": "UnionRoom_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/UnionRoom/scripts.inc",
+    "sha1": "110f08d8f393e99196ccecbb3f971b805cbb71bc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/UnionRoom/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, UnionRoom_OnResume\n\tmap_script MAP_SCRIPT_ON_TRANSITION, UnionRoom_OnTransition\n\t.byte 0"
+  },
+  "label": "UnionRoom_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/UnionRoom/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

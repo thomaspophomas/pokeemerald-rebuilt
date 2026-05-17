@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_PokemonCenter_1F_Text_ManOverThereSaysWeirdThings",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "4f26b55b9e0eea95f2364faf35b676a0a26a3ce0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"That man over there, he says weird\\n\"\n\t.string \"things!\\p\"\n\t.string \"He's funny in a weird way.\\n\"\n\t.string \"I doubt I'll forget about him!$\""
+  },
+  "label": "MauvilleCity_PokemonCenter_1F_Text_ManOverThereSaysWeirdThings",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

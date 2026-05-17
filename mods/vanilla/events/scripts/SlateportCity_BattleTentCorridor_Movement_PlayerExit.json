@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_BattleTentCorridor_Movement_PlayerExit",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_BattleTentCorridor/scripts.inc",
+    "sha1": "6c49213213fbc0031669e8a364dc312cbe989a7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_BattleTentCorridor/scripts.inc",
+    "rawScript": "walk_up\n\twalk_up\n\tset_invisible\n\tstep_end"
+  },
+  "label": "SlateportCity_BattleTentCorridor_Movement_PlayerExit",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/SlateportCity_BattleTentCorridor/scripts.inc",
+  "references": {}
+}

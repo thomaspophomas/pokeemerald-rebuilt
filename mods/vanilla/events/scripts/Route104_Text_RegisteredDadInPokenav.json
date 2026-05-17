@@ -1,0 +1,19 @@
+{
+  "id": "Route104_Text_RegisteredDadInPokenav",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route105/scripts.inc",
+    "sha1": "fca1ae319346cb625967baf011ba6f8b0e2fb01a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route105/scripts.inc",
+    "rawScript": ".string \"Registered DAD NORMAN\\n\"\n\t.string \"in the POK\u00e9NAV.$\""
+  },
+  "label": "Route104_Text_RegisteredDadInPokenav",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route105/scripts.inc",
+  "references": {}
+}

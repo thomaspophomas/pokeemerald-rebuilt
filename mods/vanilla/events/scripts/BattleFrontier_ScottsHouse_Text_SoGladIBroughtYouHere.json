@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ScottsHouse_Text_SoGladIBroughtYouHere",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "sha1": "c30df9e905f6d4b9d9e1eaf4d4fccf30db88e083"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "rawScript": ".string \"I must say I have the gift of knowing\\n\"\n\t.string \"a good TRAINER when I see one.\\p\"\n\t.string \"I'm so glad I had the foresight to\\n\"\n\t.string \"bring you here!$\""
+  },
+  "label": "BattleFrontier_ScottsHouse_Text_SoGladIBroughtYouHere",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+  "references": {}
+}

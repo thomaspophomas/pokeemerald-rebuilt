@@ -1,0 +1,23 @@
+{
+  "id": "FarawayIsland_Interior_EventScript_MewDefeated",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FarawayIsland_Interior/scripts.inc",
+    "sha1": "748f9f309b0dbfe85cb833f24aeceac469102437"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FarawayIsland_Interior/scripts.inc",
+    "rawScript": "setflag FLAG_DEFEATED_MEW\n\tsetvar VAR_0x8004, SPECIES_MEW\n\tgoto Common_EventScript_LegendaryFlewAway\n\tend"
+  },
+  "label": "FarawayIsland_Interior_EventScript_MewDefeated",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FarawayIsland_Interior/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_MEW"
+    ]
+  }
+}

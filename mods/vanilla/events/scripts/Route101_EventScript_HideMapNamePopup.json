@@ -1,0 +1,26 @@
+{
+  "id": "Route101_EventScript_HideMapNamePopup",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route101/scripts.inc",
+    "sha1": "8bf41eea03b11363dfc29d02f70e66a0a3532478"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route101/scripts.inc",
+    "rawScript": "setflag FLAG_HIDE_MAP_NAME_POPUP\n\tsetvar VAR_ROUTE101_STATE, 1\n\tend"
+  },
+  "label": "Route101_EventScript_HideMapNamePopup",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route101/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_MAP_NAME_POPUP"
+    ],
+    "vars": [
+      "VAR_ROUTE101_STATE"
+    ]
+  }
+}

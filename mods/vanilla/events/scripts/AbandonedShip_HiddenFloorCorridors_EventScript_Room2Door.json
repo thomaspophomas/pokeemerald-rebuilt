@@ -1,0 +1,29 @@
+{
+  "id": "AbandonedShip_HiddenFloorCorridors_EventScript_Room2Door",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+    "sha1": "93793c09cf0421032fc19eaa4c310ad93c2d25a2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_set FLAG_USED_ROOM_2_KEY, AbandonedShip_HiddenFloorCorridors_EventScript_TheDoorIsOpen\n\tcheckitem ITEM_ROOM_2_KEY\n\tgoto_if_eq VAR_RESULT, FALSE, AbandonedShip_HiddenFloorCorridors_EventScript_Rm2IsLocked\n\tmsgbox AbandonedShip_HiddenFloorCorridors_Text_InsertedKey, MSGBOX_DEFAULT\n\tplayse SE_PIN\n\tremoveitem ITEM_ROOM_2_KEY\n\tsetflag FLAG_USED_ROOM_2_KEY\n\tcall AbandonedShip_HiddenFloorCorridors_EventScript_UnlockRoom2\n\tspecial DrawWholeMapView\n\treleaseall\n\tend"
+  },
+  "label": "AbandonedShip_HiddenFloorCorridors_EventScript_Room2Door",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_USED_ROOM_2_KEY"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_ROOM_2_KEY"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "CaveOfOrigin_UnusedRubySapphireMap1_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/CaveOfOrigin_UnusedRubySapphireMap1/scripts.inc",
+    "sha1": "63e82a5ada8655fa49eb04bf5b853decbed6ae23"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/CaveOfOrigin_UnusedRubySapphireMap1/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, CaveOfOrigin_UnusedRubySapphireMap1_OnTransition\n\t.byte 0"
+  },
+  "label": "CaveOfOrigin_UnusedRubySapphireMap1_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/CaveOfOrigin_UnusedRubySapphireMap1/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

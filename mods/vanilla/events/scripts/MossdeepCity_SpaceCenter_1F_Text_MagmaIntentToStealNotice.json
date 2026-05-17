@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "sha1": "a0cf82d2df089035fb81d02a013736aab95a13d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "rawScript": ".string \"This is\u2026\\n\"\n\t.string \"An intent-to-steal notice?\\p\"\n\t.string \"\u201cTo the staff of the SPACE CENTER:\\n\"\n\t.string \"How are you? We are doing fine.\\p\"\n\t.string \"\u201cWe will soon visit you to take your\\n\"\n\t.string \"rocket fuel.\\p\"\n\t.string \"\u201cPlease don't try to stop us.\\n\"\n\t.string \"We will take the fuel no matter what.\\p\"\n\t.string \"\u201cLet there be more land!\\n\"\n\t.string \"                                          TEAM MAGMA\u201d$\""
+  },
+  "label": "MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+  "references": {}
+}

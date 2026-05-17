@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePyramidTop_EventScript_ReadyChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "sha1": "6256c29eca306dafcaec0dabbacc64547c474e58"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "rawScript": "pyramid_save CHALLENGE_STATUS_SAVING\n\tspecial SavePlayerParty\n\tfrontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0\n\tpyramid_settrainers\n\tfrontier_setpartyorder FRONTIER_PARTY_SIZE\n\tsetvar VAR_TEMP_F, 1\n\tend"
+  },
+  "label": "BattleFrontier_BattlePyramidTop_EventScript_ReadyChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_F"
+    ]
+  }
+}

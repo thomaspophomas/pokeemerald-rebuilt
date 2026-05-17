@@ -1,0 +1,19 @@
+{
+  "id": "PokemonLeague_EliteFour_EventScript_CloseDoor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/elite_four.inc",
+    "sha1": "91caff4309123d1aebba75b086a777fb46401901"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/elite_four.inc",
+    "rawScript": "setmetatile 5, 12, METATILE_EliteFour_EntryDoor_ClosedTop, TRUE\n\tsetmetatile 6, 12, METATILE_EliteFour_EntryDoor_ClosedTop, TRUE\n\tsetmetatile 7, 12, METATILE_EliteFour_EntryDoor_ClosedTop, TRUE\n\tsetmetatile 5, 13, METATILE_EliteFour_EntryDoor_ClosedBottom, TRUE\n\tsetmetatile 6, 13, METATILE_EliteFour_EntryDoor_ClosedBottom, TRUE\n\tsetmetatile 7, 13, METATILE_EliteFour_EntryDoor_ClosedBottom, TRUE\n\treturn"
+  },
+  "label": "PokemonLeague_EliteFour_EventScript_CloseDoor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/elite_four.inc",
+  "references": {}
+}

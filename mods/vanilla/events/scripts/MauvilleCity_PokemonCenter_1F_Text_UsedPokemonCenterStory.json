@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_PokemonCenter_1F_Text_UsedPokemonCenterStory",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/mauville_man.inc",
+    "sha1": "5d5e72f125b988a1fbd10a6264af3893ef9cc868"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/mauville_man.inc",
+    "rawScript": ".string \"This is a tale of a TRAINER\\n\"\n\t.string \"named {STR_VAR_3}.\\p\"\n\t.string \"This TRAINER healed POK\u00e9MON\\n\"\n\t.string \"{STR_VAR_1} times at POK\u00e9MON CENTERS!\\p\"\n\t.string \"There could be no greater lover of\\n\"\n\t.string \"POK\u00e9MON CENTERS than {STR_VAR_3}!$\""
+  },
+  "label": "MauvilleCity_PokemonCenter_1F_Text_UsedPokemonCenterStory",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/scripts/mauville_man.inc",
+  "references": {}
+}

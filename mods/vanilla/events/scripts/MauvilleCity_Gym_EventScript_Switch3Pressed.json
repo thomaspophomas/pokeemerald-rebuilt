@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Gym_EventScript_Switch3Pressed",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "sha1": "ba2cd4a14af6a43f9221cd58f6a4a0299a51ce6c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "rawScript": "setvar VAR_0x8004, 2\n\tspecial MauvilleGymPressSwitch\n\tgoto MauvilleCity_Gym_EventScript_UpdateBarriers\n\tend"
+  },
+  "label": "MauvilleCity_Gym_EventScript_Switch3Pressed",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_Gym/scripts.inc",
+  "references": {}
+}

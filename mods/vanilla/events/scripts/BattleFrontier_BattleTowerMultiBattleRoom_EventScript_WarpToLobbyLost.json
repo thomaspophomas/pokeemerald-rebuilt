@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiBattleRoom_EventScript_WarpToLobbyLost",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+    "sha1": "71e71dc7e048f3a27e89d0ae41c736d25233e068"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+    "rawScript": "frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_LOST\n\ttower_set TOWER_DATA_LVL_MODE\n\tsetvar VAR_0x8004, FANCOUNTER_USED_BATTLE_TOWER\n\tspecial Script_TryGainNewFanFromCounter\n\tgoto BattleFrontier_BattleTowerBattleRoom_EventScript_WarpToLobby"
+  },
+  "label": "BattleFrontier_BattleTowerMultiBattleRoom_EventScript_WarpToLobbyLost",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+  "references": {}
+}

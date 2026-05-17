@@ -1,0 +1,26 @@
+{
+  "id": "RivalsHouse_2F_EventScript_Rival",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "sha1": "e014a444dcf389c78773768633900402b1862edb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_set FLAG_MET_RIVAL_LILYCOVE, RivalsHouse_2F_EventScript_RivalPostLilycove\n\tcheckplayergender\n\tgoto_if_eq VAR_RESULT, MALE, RivalsHouse_2F_EventScript_May\n\tgoto_if_eq VAR_RESULT, FEMALE, RivalsHouse_2F_EventScript_Brendan\n\tend"
+  },
+  "label": "RivalsHouse_2F_EventScript_Rival",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_RIVAL_LILYCOVE"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

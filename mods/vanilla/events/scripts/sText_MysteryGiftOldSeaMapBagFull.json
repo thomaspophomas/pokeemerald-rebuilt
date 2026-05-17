@@ -1,0 +1,19 @@
+{
+  "id": "sText_MysteryGiftOldSeaMapBagFull",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_old_sea_map.inc",
+    "sha1": "a286d32b8bc8623f436bc69e8fe4956f5bfc5228"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_old_sea_map.inc",
+    "rawScript": ".string \"Oh, I'm sorry, {PLAYER}.\\n\"\n\t.string \"Your BAG's KEY ITEMS POCKET is full.\\p\"\n\t.string \"Please store something on your PC,\\n\"\n\t.string \"then come back for this.$\""
+  },
+  "label": "sText_MysteryGiftOldSeaMapBagFull",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_old_sea_map.inc",
+  "references": {}
+}

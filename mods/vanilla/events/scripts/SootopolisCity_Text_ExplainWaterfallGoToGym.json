@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Text_ExplainWaterfallGoToGym",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": ".string \"That HIDDEN MACHINE contains\\n\"\n\t.string \"WATERFALL.\\p\"\n\t.string \"If you have the RAIN BADGE, a POK\u00e9MON\\n\"\n\t.string \"that has learned that HM move can\\l\"\n\t.string \"force its way up waterfalls.\\p\"\n\t.string \"And where does one get the RAIN BADGE?\\n\"\n\t.string \"You know, don't you?\\p\"\n\t.string \"That's right! You have to beat\\n\"\n\t.string \"the SOOTOPOLIS GYM LEADER.\\p\"\n\t.string \"When you're all set to go, step through\\n\"\n\t.string \"that door.$\""
+  },
+  "label": "SootopolisCity_Text_ExplainWaterfallGoToGym",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

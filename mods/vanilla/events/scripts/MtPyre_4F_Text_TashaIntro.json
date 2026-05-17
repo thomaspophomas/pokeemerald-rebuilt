@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_4F_Text_TashaIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_5F/scripts.inc",
+    "sha1": "3adad473684ea761e469fef968141f4151fa1e7a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_5F/scripts.inc",
+    "rawScript": ".string \"I love all things horrifying\u2026\\n\"\n\t.string \"It's like a disease\u2026\\p\"\n\t.string \"When I'm here\u2026\\n\"\n\t.string \"I shiver with fear\u2026$\""
+  },
+  "label": "MtPyre_4F_Text_TashaIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_5F/scripts.inc",
+  "references": {}
+}

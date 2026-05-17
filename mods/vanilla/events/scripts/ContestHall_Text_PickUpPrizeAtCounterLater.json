@@ -1,0 +1,19 @@
+{
+  "id": "ContestHall_Text_PickUpPrizeAtCounterLater",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": ".string \"Please pick up your prize at\\n\"\n\t.string \"the reception counter later.\\l\"\n\t.string \"Please do compete again!$\"\n\n@ Unused"
+  },
+  "label": "ContestHall_Text_PickUpPrizeAtCounterLater",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {}
+}

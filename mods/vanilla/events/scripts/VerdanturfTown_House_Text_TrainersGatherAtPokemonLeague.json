@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_House_Text_TrainersGatherAtPokemonLeague",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_House/scripts.inc",
+    "sha1": "9659cc0896ce0a91ad0582be610baa6bc626af11"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_House/scripts.inc",
+    "rawScript": ".string \"Far away, deep in EVER GRANDE CITY,\\n\"\n\t.string \"is the POK\u00e9MON LEAGUE.\\p\"\n\t.string \"The TRAINERS who gather there are\\n\"\n\t.string \"all frighteningly well skilled.$\""
+  },
+  "label": "VerdanturfTown_House_Text_TrainersGatherAtPokemonLeague",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_House/scripts.inc",
+  "references": {}
+}

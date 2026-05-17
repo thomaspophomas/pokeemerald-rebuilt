@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_Text_OurNewHomeLetsGoInside",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": ".string \"MOM: {PLAYER}, we're here, honey!\\p\"\n\t.string \"It must be tiring riding with our things\\n\"\n\t.string \"in the moving truck.\\p\"\n\t.string \"Well, this is LITTLEROOT TOWN.\\p\"\n\t.string \"How do you like it?\\n\"\n\t.string \"This is our new home!\\p\"\n\t.string \"It has a quaint feel, but it seems to be\\n\"\n\t.string \"an easy place to live, don't you think?\\p\"\n\t.string \"And, you get your own room, {PLAYER}!\\n\"\n\t.string \"Let's go inside.$\""
+  },
+  "label": "LittlerootTown_Text_OurNewHomeLetsGoInside",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {}
+}

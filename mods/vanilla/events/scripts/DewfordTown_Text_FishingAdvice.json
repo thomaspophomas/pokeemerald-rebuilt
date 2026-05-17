@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Text_FishingAdvice",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown/scripts.inc",
+    "sha1": "e9e724e6d3bba641bcb2d4263fe226ee6c1b4840"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown/scripts.inc",
+    "rawScript": ".string \"Oh, hey, don't get down on yourself!\\n\"\n\t.string \"I'll give you a little fishing advice.\\p\"\n\t.string \"First, you want to face the water,\\n\"\n\t.string \"then use the ROD.\\p\"\n\t.string \"Focus your mind\u2026\\n\"\n\t.string \"If you get a bite, pull the ROD.\\p\"\n\t.string \"Sometimes you can snag something\\n\"\n\t.string \"immediately, but with bigger catches,\\l\"\n\t.string \"you need to time the pulls on your ROD\\l\"\n\t.string \"to haul them in.$\""
+  },
+  "label": "DewfordTown_Text_FishingAdvice",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown/scripts.inc",
+  "references": {}
+}

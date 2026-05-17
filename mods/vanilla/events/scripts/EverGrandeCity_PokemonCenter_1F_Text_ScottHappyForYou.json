@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "012038458957d746c6cb9c71ce265a9faf173fe8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"SCOTT: {PLAYER}{KUN}, you've clawed your\\n\"\n\t.string \"way up to face the POK\u00e9MON LEAGUE!\\p\"\n\t.string \"I'm happy for you!\\n\"\n\t.string \"You made my cheering worthwhile!\\p\"\n\t.string \"{PLAYER}{KUN}, if you were to become\\n\"\n\t.string \"the POK\u00e9MON LEAGUE CHAMPION\u2026\\p\"\n\t.string \"I'll get in touch with you then.\\p\"\n\t.string \"Okay, {PLAYER}{KUN}.\\n\"\n\t.string \"Go for greatness!$\""
+  },
+  "label": "EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

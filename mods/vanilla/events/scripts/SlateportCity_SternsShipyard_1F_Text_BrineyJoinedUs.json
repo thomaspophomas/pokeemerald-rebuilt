@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_SternsShipyard_1F_Text_BrineyJoinedUs",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+    "sha1": "839a40e95086fb806113f67a7c2dc0dcbbab3217"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+    "rawScript": ".string \"DOCK: Hi! MR. BRINEY's joined us to\\n\"\n\t.string \"lend us his help.\\p\"\n\t.string \"Thanks to the veteran sailor, the\\n\"\n\t.string \"ferry is steadily coming together.$\""
+  },
+  "label": "SlateportCity_SternsShipyard_1F_Text_BrineyJoinedUs",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+  "references": {}
+}

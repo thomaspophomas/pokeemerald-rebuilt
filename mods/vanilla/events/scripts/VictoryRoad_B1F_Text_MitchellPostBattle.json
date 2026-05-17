@@ -1,0 +1,19 @@
+{
+  "id": "VictoryRoad_B1F_Text_MitchellPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_B1F/scripts.inc",
+    "sha1": "cbf73ba8b0ffae50fb8f8b966d51479555277bbd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VictoryRoad_B1F/scripts.inc",
+    "rawScript": ".string \"Even outside of battle, I sense\\n\"\n\t.string \"incredible power emanating from you\\l\"\n\t.string \"and your POK\u00e9MON.$\""
+  },
+  "label": "VictoryRoad_B1F_Text_MitchellPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VictoryRoad_B1F/scripts.inc",
+  "references": {}
+}

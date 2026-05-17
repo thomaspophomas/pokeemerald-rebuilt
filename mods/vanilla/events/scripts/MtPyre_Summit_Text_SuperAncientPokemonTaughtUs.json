@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_Summit_Text_SuperAncientPokemonTaughtUs",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/scripts.inc",
+    "sha1": "2d98d572d50cebb678d972aa421854c983329822"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Summit/scripts.inc",
+    "rawScript": ".string \"The embodiments of the land, sea,\\n\"\n\t.string \"and the sky\u2026\\p\"\n\t.string \"That is said to be the identities of\\n\"\n\t.string \"the super-ancient POK\u00e9MON\u2026\\p\"\n\t.string \"In the same way that we humans and\\n\"\n\t.string \"POK\u00e9MON have life, our world, too,\\l\"\n\t.string \"is alive\u2026\\p\"\n\t.string \"The super-ancient POK\u00e9MON have\\n\"\n\t.string \"taught us that\u2026$\""
+  },
+  "label": "MtPyre_Summit_Text_SuperAncientPokemonTaughtUs",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_Summit/scripts.inc",
+  "references": {}
+}

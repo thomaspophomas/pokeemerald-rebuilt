@@ -1,0 +1,23 @@
+{
+  "id": "AbandonedShip_HiddenFloorRooms_EventScript_EnterRm4",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_HiddenFloorRooms/scripts.inc",
+    "sha1": "e64dd6958de17dd29909a779ee9862cda0de7b51"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_HiddenFloorRooms/scripts.inc",
+    "rawScript": "delay 20\n\tdofieldeffectsparkle 8, 5, 0\n\tdofieldeffectsparkle 11, 3, 0\n\tspecialvar VAR_RESULT, FoundAbandonedShipRoom6Key\n\tcall_if_eq VAR_RESULT, FALSE, AbandonedShip_HiddenFloorRooms_EventScript_Rm6KeySparkle\n\twaitfieldeffect FLDEFF_SPARKLE\n\tdelay 10\n\tend"
+  },
+  "label": "AbandonedShip_HiddenFloorRooms_EventScript_EnterRm4",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AbandonedShip_HiddenFloorRooms/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

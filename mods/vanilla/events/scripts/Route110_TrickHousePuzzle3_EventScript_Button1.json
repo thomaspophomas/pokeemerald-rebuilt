@@ -1,0 +1,23 @@
+{
+  "id": "Route110_TrickHousePuzzle3_EventScript_Button1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle3/scripts.inc",
+    "sha1": "794d221faf5610fdf7f5ce68289b1fbabe859a9b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle3/scripts.inc",
+    "rawScript": "lockall\n\tsetvar VAR_TEMP_8, 1\n\tgoto Route110_TrickHousePuzzle3_EventScript_PressButton\n\tend"
+  },
+  "label": "Route110_TrickHousePuzzle3_EventScript_Button1",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHousePuzzle3/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_8"
+    ]
+  }
+}

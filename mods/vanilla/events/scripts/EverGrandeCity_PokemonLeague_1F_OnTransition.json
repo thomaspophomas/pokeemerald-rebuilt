@@ -1,0 +1,24 @@
+{
+  "id": "EverGrandeCity_PokemonLeague_1F_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+    "sha1": "a55305762ef4a1d7b0cbf882528ff161154a969b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+    "rawScript": "setrespawn HEAL_LOCATION_EVER_GRANDE_CITY_POKEMON_LEAGUE\n\tsetflag FLAG_LANDMARK_POKEMON_LEAGUE\n\tcall_if_unset FLAG_ENTERED_ELITE_FOUR, EverGrandeCity_PokemonLeague_1F_EventScript_GuardsBlockDoor\n\tend"
+  },
+  "label": "EverGrandeCity_PokemonLeague_1F_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_ENTERED_ELITE_FOUR",
+      "FLAG_LANDMARK_POKEMON_LEAGUE"
+    ]
+  }
+}

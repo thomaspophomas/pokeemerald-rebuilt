@@ -1,0 +1,19 @@
+{
+  "id": "DesertUnderpass_Text_FoundRootFossil",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DesertUnderpass/scripts.inc",
+    "sha1": "a78b9455c7ce2f8ca51b1e554b3ed0843fd46ee1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DesertUnderpass/scripts.inc",
+    "rawScript": ".string \"{PLAYER} found the ROOT FOSSIL.$\"\n\n@ Unused"
+  },
+  "label": "DesertUnderpass_Text_FoundRootFossil",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/DesertUnderpass/scripts.inc",
+  "references": {}
+}

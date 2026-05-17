@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "sha1": "155fc7f1cee833cb06df85a407e5f98f216a928e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "rawScript": ".string \"You know how some POK\u00e9MON moves can\\n\"\n\t.string \"confuse a POK\u00e9MON?\\p\"\n\t.string \"A confused POK\u00e9MON will sometimes\\n\"\n\t.string \"attack itself without meaning to.\\p\"\n\t.string \"But once it leaves battle, it will\\n\"\n\t.string \"return to normal.$\""
+  },
+  "label": "RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+  "references": {}
+}

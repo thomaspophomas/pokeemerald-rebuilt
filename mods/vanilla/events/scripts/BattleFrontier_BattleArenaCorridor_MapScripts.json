@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleArenaCorridor_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaCorridor/scripts.inc",
+    "sha1": "6c50fa8f26f23235a25e4a509732939b19558eaa"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaCorridor/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleFrontier_BattleArenaCorridor_OnFrame\n\t.byte 0"
+  },
+  "label": "BattleFrontier_BattleArenaCorridor_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaCorridor/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE"
+    ]
+  }
+}

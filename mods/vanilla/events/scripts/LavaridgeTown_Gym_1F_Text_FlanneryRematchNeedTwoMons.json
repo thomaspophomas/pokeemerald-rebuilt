@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "sha1": "b82ae91ab89ff7156e8125891eff9b7e6a2a260f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "rawScript": ".string \"FLANNERY: Losing a battle isn't going\\n\"\n\t.string \"to deflate me.\\p\"\n\t.string \"I love POK\u00e9MON.\\n\"\n\t.string \"I love to battle.\\l\"\n\t.string \"And\u2026 I love this GYM!\\p\"\n\t.string \"Let's exchange superhot moves\\n\"\n\t.string \"in another battle!\\p\"\n\t.string \"Oh, wait. Do you only have one POK\u00e9MON\\n\"\n\t.string \"that can battle?\\p\"\n\t.string \"I hate to say this, but when you come\\n\"\n\t.string \"see me, bring at least two POK\u00e9MON.$\""
+  },
+  "label": "LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+  "references": {}
+}

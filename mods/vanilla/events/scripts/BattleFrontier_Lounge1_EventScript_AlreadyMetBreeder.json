@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge1_EventScript_AlreadyMetBreeder",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+    "sha1": "2478a4558563ac9694ec1f8471095e49ece1c602"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_Lounge1_Text_LetsLookAtYourPokemon, MSGBOX_DEFAULT\n\treturn\n\n@ BufferVarsForIVRater buffers the following values\n@ VAR_0x8005: Sum of the mons IVs\n@ VAR_0x8006: Stat id of highest IV stat\n@ VAR_0x8007: IV of the highest IV stat"
+  },
+  "label": "BattleFrontier_Lounge1_EventScript_AlreadyMetBreeder",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+  "references": {}
+}

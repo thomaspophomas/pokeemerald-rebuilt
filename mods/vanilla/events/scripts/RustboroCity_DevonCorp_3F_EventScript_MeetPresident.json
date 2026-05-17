@@ -1,0 +1,39 @@
+{
+  "id": "RustboroCity_DevonCorp_3F_EventScript_MeetPresident",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+    "sha1": "c9490be6666cd7ea155cae31641c765560806127"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+    "rawScript": "lockall\n\tmsgbox RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_DEVON_CORP_3F_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_EmployeeWalkOffscreen\n\twaitmovement 0\n\tdelay 80\n\tapplymovement LOCALID_DEVON_CORP_3F_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_EmployeeReturnToPlayer\n\twaitmovement 0\n\tmsgbox RustboroCity_DevonCorp_3F_Text_WordWithPresidentComeWithMe, MSGBOX_DEFAULT\n\tclosemessage\n\tplaybgm MUS_FOLLOW_ME, FALSE\n\tapplymovement LOCALID_DEVON_CORP_3F_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_LeadPlayerToPresident\n\tapplymovement LOCALID_PLAYER, RustboroCity_DevonCorp_3F_Movement_PlayerFollowToPresident\n\twaitmovement 0\n\tmsgbox RustboroCity_DevonCorp_3F_Text_PleaseGoAhead, MSGBOX_DEFAULT\n\tclosemessage\n\tfadedefaultbgm\n\tapplymovement LOCALID_DEVON_CORP_3F_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_EmployeeFaceDesk\n\tapplymovement LOCALID_PLAYER, RustboroCity_DevonCorp_3F_Movement_PlayerApproachDesk\n\twaitmovement 0\n\tmsgbox RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor, MSGBOX_DEFAULT\n\tgiveitem ITEM_LETTER\n\tmsgbox RustboroCity_DevonCorp_3F_Text_MrStoneWantYouToHaveThis, MSGBOX_DEFAULT\n\tplayfanfare MUS_OBTAIN_ITEM\n\tmessage RustboroCity_DevonCorp_3F_Text_ReceivedPokenav\n\twaitfanfare\n\tsetflag FLAG_SYS_POKENAV_GET\n\tsetflag FLAG_RECEIVED_POKENAV\n\tsetflag FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT\n\tmsgbox RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp, MSGBOX_DEFAULT\n\tclosemessage\n\tcall Common_EventScript_OutOfCenterPartyHeal\n\tmsgbox RustboroCity_DevonCorp_3F_Text_MrStoneGoWithCautionAndCare, MSGBOX_DEFAULT\n\tsetflag FLAG_HIDE_ROUTE_116_WANDAS_BOYFRIEND\n\tclearflag FLAG_HIDE_RUSTURF_TUNNEL_WANDAS_BOYFRIEND\n\tclearflag FLAG_HIDE_RUSTURF_TUNNEL_WANDA\n\tclearflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY\n\tclearflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO\n\tsetvar VAR_BRINEY_LOCATION, 1\n\tclearflag FLAG_HIDE_RUSTBORO_CITY_RIVAL\n\tsetvar VAR_DEVON_CORP_3F_STATE, 1\n\tsetvar VAR_RUSTBORO_CITY_STATE, 6\n\treleaseall\n\tend"
+  },
+  "label": "RustboroCity_DevonCorp_3F_EventScript_MeetPresident",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY",
+      "FLAG_HIDE_BRINEYS_HOUSE_PEEKO",
+      "FLAG_HIDE_ROUTE_116_WANDAS_BOYFRIEND",
+      "FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT",
+      "FLAG_HIDE_RUSTBORO_CITY_RIVAL",
+      "FLAG_HIDE_RUSTURF_TUNNEL_WANDA",
+      "FLAG_HIDE_RUSTURF_TUNNEL_WANDAS_BOYFRIEND",
+      "FLAG_RECEIVED_POKENAV",
+      "FLAG_SYS_POKENAV_GET"
+    ],
+    "vars": [
+      "VAR_BRINEY_LOCATION",
+      "VAR_DEVON_CORP_3F_STATE",
+      "VAR_RUSTBORO_CITY_STATE"
+    ],
+    "items": [
+      "ITEM_LETTER"
+    ]
+  }
+}

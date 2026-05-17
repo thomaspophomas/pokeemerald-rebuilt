@@ -1,0 +1,27 @@
+{
+  "id": "LilycoveCity_DepartmentStoreElevator_EventScript_Attendant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStoreElevator/scripts.inc",
+    "sha1": "6f3c7492d2e00c249c4b430dcd1afe6781156f25"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStoreElevator/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tsetvar VAR_0x8004, 0\n\tcall_if_unset FLAG_TEMP_2, LilycoveCity_DepartmentStoreElevator_EventScript_SetFloor\n\tcopyvar VAR_0x8005, VAR_DEPT_STORE_FLOOR\n\tspecial ShowDeptStoreElevatorFloorSelect\n\tmessage gText_WhichFloorWouldYouLike\n\twaitmessage\n\tsetvar VAR_0x8004, 0\n\tspecialvar VAR_RESULT, GetDeptStoreDefaultFloorChoice\n\tswitch VAR_RESULT\n\tcase 0, LilycoveCity_DepartmentStoreElevator_EventScript_ChooseFloorFrom5th\n\tcase 1, LilycoveCity_DepartmentStoreElevator_EventScript_ChooseFloorFrom4th\n\tcase 2, LilycoveCity_DepartmentStoreElevator_EventScript_ChooseFloorFrom3rd\n\tcase 3, LilycoveCity_DepartmentStoreElevator_EventScript_ChooseFloorFrom2nd\n\tcase 4, LilycoveCity_DepartmentStoreElevator_EventScript_ChooseFloorFrom1st\n\tend\n\n@ Below scripts ensure the cursor for floor select always starts on the current floor"
+  },
+  "label": "LilycoveCity_DepartmentStoreElevator_EventScript_Attendant",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStoreElevator/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_TEMP_2"
+    ],
+    "vars": [
+      "VAR_DEPT_STORE_FLOOR",
+      "VAR_RESULT"
+    ]
+  }
+}

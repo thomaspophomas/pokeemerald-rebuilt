@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleArenaBattleRoom_EventScript_TycoonUpNext",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "sha1": "d0a70f09e21302da78823f02966e03f9b41a3a1a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "rawScript": "goto_if_eq VAR_TEMP_2, 1, BattleFrontier_BattleArenaBattleRoom_EventScript_AskReadyForTycoon\n\tmsgbox BattleFrontier_BattleArenaBattleRoom_Text_NowFaceTycoon, MSGBOX_DEFAULT\n\tsetvar VAR_TEMP_2, 1"
+  },
+  "label": "BattleFrontier_BattleArenaBattleRoom_EventScript_TycoonUpNext",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_2"
+    ]
+  }
+}

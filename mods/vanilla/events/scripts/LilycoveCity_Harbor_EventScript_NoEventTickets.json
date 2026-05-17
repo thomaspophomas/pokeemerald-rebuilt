@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Harbor_EventScript_NoEventTickets",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "sha1": "ffd83f00915b03bfdd96f51950251d00dd19dbcb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "rawScript": "msgbox LilycoveCity_Harbor_Text_MayISeeYourTicket, MSGBOX_DEFAULT\n\tmessage LilycoveCity_Harbor_Text_FlashTicketWhereTo\n\twaitmessage\n\tgoto LilycoveCity_Harbor_EventScript_FerryRegularLocationSelect\n\tend\n\n@ Unused"
+  },
+  "label": "LilycoveCity_Harbor_EventScript_NoEventTickets",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_Harbor/scripts.inc",
+  "references": {}
+}

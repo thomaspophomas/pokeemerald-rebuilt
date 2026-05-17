@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+    "sha1": "c9490be6666cd7ea155cae31641c765560806127"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+    "rawScript": ".string \"This is the DEVON CORPORATION's\\n\"\n\t.string \"third floor.\\p\"\n\t.string \"Our PRESIDENT's OFFICE is on\\n\"\n\t.string \"this floor.\\p\"\n\t.string \"Anyway, I can't tell you how much I'm\\n\"\n\t.string \"grateful for what you've done.\\p\"\n\t.string \"Um\u2026 By the way, that parcel\\n\"\n\t.string \"you got back for us\u2026\\p\"\n\t.string \"Could I get you to deliver that to\\n\"\n\t.string \"the SHIPYARD in SLATEPORT?\\p\"\n\t.string \"It would be awful if those robbers\\n\"\n\t.string \"tried to take it again.\\p\"\n\t.string \"Uh\u2026 Hehehe, so, uh, could I count\\n\"\n\t.string \"on you to do that for me?\\p\"\n\t.string \"Oh, that's right.\\n\"\n\t.string \"Could you wait here a second?$\""
+  },
+  "label": "RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+  "references": {}
+}

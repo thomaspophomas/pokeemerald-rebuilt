@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Gym_1F_Text_FlanneryPostRematch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "sha1": "b82ae91ab89ff7156e8125891eff9b7e6a2a260f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "rawScript": ".string \"FLANNERY: I lost the match,\\n\"\n\t.string \"but I'm completely satisfied.\\p\"\n\t.string \"It's not often I get to enjoy a battle\\n\"\n\t.string \"this heated.\\p\"\n\t.string \"Let's have another one like this\\n\"\n\t.string \"again sometime!$\""
+  },
+  "label": "LavaridgeTown_Gym_1F_Text_FlanneryPostRematch",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+  "references": {}
+}

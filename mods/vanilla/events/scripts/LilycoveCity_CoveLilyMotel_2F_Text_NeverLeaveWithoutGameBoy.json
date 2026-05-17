@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_CoveLilyMotel_2F_Text_NeverLeaveWithoutGameBoy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+    "sha1": "f1b25840a73dbfc8affb6142a8450fed0204496f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+    "rawScript": ".string \"You never know when and where\\n\"\n\t.string \"people will challenge you.\\p\"\n\t.string \"That's why I never leave home without\\n\"\n\t.string \"my GAME BOY ADVANCE.$\""
+  },
+  "label": "LilycoveCity_CoveLilyMotel_2F_Text_NeverLeaveWithoutGameBoy",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "MtChimney_EventScript_Tabitha",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney/scripts.inc",
+    "sha1": "4d6a7ac7998e07e6d4f244ef13c499194f5b3668"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtChimney/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_TABITHA_MT_CHIMNEY, MtChimney_Text_TabithaIntro, MtChimney_Text_TabithaDefeat\n\tmsgbox MtChimney_Text_TabithaPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "MtChimney_EventScript_Tabitha",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtChimney/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_TABITHA_MT_CHIMNEY"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Gym_EventScript_GymStatueCertified",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/scripts.inc",
+    "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Gym/scripts.inc",
+    "rawScript": "msgbox FortreeCity_Gym_Text_GymStatueCertified, MSGBOX_DEFAULT\n\treleaseall\n\tend"
+  },
+  "label": "FortreeCity_Gym_EventScript_GymStatueCertified",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FortreeCity_Gym/scripts.inc",
+  "references": {}
+}

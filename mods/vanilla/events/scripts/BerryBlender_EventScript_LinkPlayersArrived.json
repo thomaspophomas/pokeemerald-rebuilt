@@ -1,0 +1,19 @@
+{
+  "id": "BerryBlender_EventScript_LinkPlayersArrived",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": "fadescreen FADE_FROM_BLACK\n\tswitch VAR_0x8008\n\tcase 2, BerryBlender_EventScript_TwoPlayerLink\n\tcase 3, BerryBlender_EventScript_ThreePlayerLink\n\tcase 4, BerryBlender_EventScript_FourPlayerLink\n\tend"
+  },
+  "label": "BerryBlender_EventScript_LinkPlayersArrived",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {}
+}

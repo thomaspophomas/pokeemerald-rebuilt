@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+    "sha1": "8f6cba0c7d4561645e0110baf848672ddd10d44d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+    "rawScript": ".string \"PROF. COZMO went off to METEOR FALLS\\n\"\n\t.string \"on ROUTE 114 with some people from\\l\"\n\t.string \"TEAM MAGMA.$\""
+  },
+  "label": "FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ContestHall_EventScript_TryDisplayHeartAudienceMember3",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": "goto_if_eq VAR_TEMP_3, 1, ContestHall_EventScript_AudienceMember3AlreadyEmoted\n\tapplymovement LOCALID_CONTEST_AUDIENCE_3, ContestHall_Movement_Heart\n\tplayse SE_PIN\n\tdelay 14\n\tsetvar VAR_TEMP_3, 1\n\taddvar VAR_TEMP_0, -1\n\treturn"
+  },
+  "label": "ContestHall_EventScript_TryDisplayHeartAudienceMember3",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0",
+      "VAR_TEMP_3"
+    ]
+  }
+}

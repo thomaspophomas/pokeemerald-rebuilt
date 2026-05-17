@@ -1,0 +1,23 @@
+{
+  "id": "MossdeepCity_GameCorner_1F_EventScript_EnterMinigameRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "messageautoscroll MossdeepCity_GameCorner_1F_Text_AllGoodToGo\n\twaitmessage\n\tdelay 60\n\tclosemessage\n\tcopyvar VAR_0x8007, VAR_LAST_TALKED\n\tcall EventScript_OpenMossdeepGameCornerBarrier\n\tspecial DrawWholeMapView\n\tplayse SE_CLICK\n\tdelay 60\n\tapplymovement VAR_LAST_TALKED, Movement_AttendantFaceLeft\n\twaitmovement 0\n\tclosemessage\n\tapplymovement LOCALID_PLAYER, Movement_PlayerEnterMinigameRoom\n\twaitmovement 0\n\thideplayer\n\trelease\n\twaitstate\n\tend"
+  },
+  "label": "MossdeepCity_GameCorner_1F_EventScript_EnterMinigameRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED"
+    ]
+  }
+}

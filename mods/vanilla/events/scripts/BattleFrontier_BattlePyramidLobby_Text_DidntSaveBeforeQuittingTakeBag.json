@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby_Text_DidntSaveBeforeQuittingTakeBag",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "sha1": "b93395a7ee7156a94cfa3817fd6222cfa69e94fd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "rawScript": ".string \"A major problem, explorer!\\p\"\n\t.string \"You did not save before ending\\n\"\n\t.string \"your challenge the last time.\\p\"\n\t.string \"Consequently, your challenge has\\n\"\n\t.string \"been disqualified, I'm sorry to say.\\p\"\n\t.string \"Here is the BAG we've been holding\\n\"\n\t.string \"for you.\\p\"\n\t.string \"{PLAYER} got the BAG back.$\""
+  },
+  "label": "BattleFrontier_BattlePyramidLobby_Text_DidntSaveBeforeQuittingTakeBag",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+  "references": {}
+}

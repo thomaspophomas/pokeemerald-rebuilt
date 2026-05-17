@@ -1,0 +1,27 @@
+{
+  "id": "IslandCave_EventScript_Regice",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/IslandCave/scripts.inc",
+    "sha1": "36e3ca89a53bdf101cff26d6ef8efcf46552e41d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/IslandCave/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\twaitse\n\tplaymoncry SPECIES_REGICE, CRY_MODE_ENCOUNTER\n\tdelay 40\n\twaitmoncry\n\tsetwildbattle SPECIES_REGICE, 40\n\tsetflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecial StartRegiBattle\n\tclearflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_WON, IslandCave_EventScript_DefeatedRegice\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_RAN, IslandCave_EventScript_RanFromRegice\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, IslandCave_EventScript_RanFromRegice\n\tsetflag FLAG_DEFEATED_REGICE\n\trelease\n\tend"
+  },
+  "label": "IslandCave_EventScript_Regice",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/IslandCave/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_REGICE",
+      "FLAG_SYS_CTRL_OBJ_DELETE"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_PkmnCenterNurse_ExplainPokerus",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/pkmn_center_nurse.inc",
+    "sha1": "49fcb801886d68c6fee548595b10470404136e7a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/pkmn_center_nurse.inc",
+    "rawScript": "message gText_PokerusExplanation\n\tsetflag FLAG_POKERUS_EXPLAINED\n\treturn"
+  },
+  "label": "EventScript_PkmnCenterNurse_ExplainPokerus",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/pkmn_center_nurse.inc",
+  "references": {
+    "flags": [
+      "FLAG_POKERUS_EXPLAINED"
+    ]
+  }
+}

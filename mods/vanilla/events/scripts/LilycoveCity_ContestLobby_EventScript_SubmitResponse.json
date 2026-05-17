@@ -1,0 +1,26 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_SubmitResponse",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/interview.inc",
+    "sha1": "bd1d5135ce2e319a18291aebafac5c4760b90500"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/interview.inc",
+    "rawScript": "setvar VAR_0x8004, 24\n\tspecial SetContestCategoryStringVarForInterview\n\tmsgbox LilycoveCity_ContestLobby_Text_WhatImageWhenYouHearX, MSGBOX_DEFAULT\n\tsetvar VAR_0x8004, EASY_CHAT_TYPE_CONTEST_INTERVIEW\n\tcopyvar VAR_0x8005, VAR_0x8009\n\tsetvar VAR_0x8006, 1\n\tcall Common_ShowEasyChatScreen\n\tlock\n\tfaceplayer\n\tgoto_if_eq VAR_RESULT, 0, LilycoveCity_ContestLobby_EventScript_DeclineInterview\n\tmsgbox LilycoveCity_ContestLobby_Text_ThatsAllForInterview, MSGBOX_DEFAULT\n\tsetflag FLAG_TEMP_2\n\tsetvar VAR_0x8005, TVSHOW_BRAVO_TRAINER_POKEMON_PROFILE\n\tgoto Interview_EventScript_EndInterview\n\tend"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_SubmitResponse",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/interview.inc",
+  "references": {
+    "flags": [
+      "FLAG_TEMP_2"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

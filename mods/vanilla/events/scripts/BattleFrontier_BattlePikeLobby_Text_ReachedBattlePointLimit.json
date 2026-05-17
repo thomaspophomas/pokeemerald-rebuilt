@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeLobby_Text_ReachedBattlePointLimit",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "sha1": "e2be0fe89296e221d6bdf7bc81fdcf739064bd1b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "rawScript": ".string \"You appear to have reached the limit\\n\"\n\t.string \"for Battle Points\u2026\\p\"\n\t.string \"Please exchange some Battle Points\\n\"\n\t.string \"for prizes, then return\u2026$\""
+  },
+  "label": "BattleFrontier_BattlePikeLobby_Text_ReachedBattlePointLimit",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+  "references": {}
+}

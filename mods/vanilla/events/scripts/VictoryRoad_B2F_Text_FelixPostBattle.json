@@ -1,0 +1,19 @@
+{
+  "id": "VictoryRoad_B2F_Text_FelixPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_B2F/scripts.inc",
+    "sha1": "8dfe15551952990f7ac9879a81f4a41a46da4e05"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VictoryRoad_B2F/scripts.inc",
+    "rawScript": ".string \"I can't help getting all tense knowing\\n\"\n\t.string \"that I'm nearing the POK\u00e9MON LEAGUE.\\p\"\n\t.string \"It's all I can do to feign calm.$\""
+  },
+  "label": "VictoryRoad_B2F_Text_FelixPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VictoryRoad_B2F/scripts.inc",
+  "references": {}
+}

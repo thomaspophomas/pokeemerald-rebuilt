@@ -1,0 +1,19 @@
+{
+  "id": "Route111_Text_TrainerTipsSpAtkSpDef",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": ".string \"TRAINER TIPS\\p\"\n\t.string \"One of the indicators of a POK\u00e9MON's\\n\"\n\t.string \"powerfulness is SP. ATK. It stands for\\l\"\n\t.string \"\u201cSPECIAL ATTACK.\u201d\\p\"\n\t.string \"Likewise, SP. DEF stands for \u201cSPECIAL\\n\"\n\t.string \"DEFENSE.\u201d$\""
+  },
+  "label": "Route111_Text_TrainerTipsSpAtkSpDef",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {}
+}

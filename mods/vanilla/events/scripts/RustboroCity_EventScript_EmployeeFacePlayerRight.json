@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_EventScript_EmployeeFacePlayerRight",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": "applymovement LOCALID_RUSTBORO_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tplayse SE_PIN\n\tapplymovement LOCALID_RUSTBORO_DEVON_EMPLOYEE, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_RUSTBORO_DEVON_EMPLOYEE, Common_Movement_Delay48\n\twaitmovement 0\n\treturn"
+  },
+  "label": "RustboroCity_EventScript_EmployeeFacePlayerRight",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

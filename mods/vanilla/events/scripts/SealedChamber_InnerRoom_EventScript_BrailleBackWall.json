@@ -1,0 +1,26 @@
+{
+  "id": "SealedChamber_InnerRoom_EventScript_BrailleBackWall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SealedChamber_InnerRoom/scripts.inc",
+    "sha1": "0873e1e1c99f6db0a44da305b2d636211dc92a66"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SealedChamber_InnerRoom/scripts.inc",
+    "rawScript": "lockall\n\tbraillemsgbox SealedChamber_InnerRoom_Braille_FirstWailordLastRelicanth\n\tgoto_if_set FLAG_REGI_DOORS_OPENED, SealedChamber_InnerRoom_EventScript_NoEffect\n\tspecialvar VAR_RESULT, CheckRelicanthWailord\n\tgoto_if_eq VAR_RESULT, FALSE, SealedChamber_InnerRoom_EventScript_NoEffect\n\tfadeoutbgm 0\n\tplayse SE_TRUCK_MOVE\n\tspecial DoSealedChamberShakingEffect_Long\n\tdelay 40\n\tspecial DoSealedChamberShakingEffect_Short\n\tplayse SE_DOOR\n\tdelay 40\n\tspecial DoSealedChamberShakingEffect_Short\n\tplayse SE_DOOR\n\tdelay 40\n\tspecial DoSealedChamberShakingEffect_Short\n\tplayse SE_DOOR\n\tdelay 40\n\tmsgbox gText_DoorOpenedFarAway, MSGBOX_DEFAULT\n\tclosemessage\n\tfadeinbgm 0\n\tsetflag FLAG_REGI_DOORS_OPENED\n\treleaseall\n\tend"
+  },
+  "label": "SealedChamber_InnerRoom_EventScript_BrailleBackWall",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SealedChamber_InnerRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_REGI_DOORS_OPENED"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomeBattleRoom_Text_LookForwardToNextEncounter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "sha1": "2cf5ea83e82fbd2189ced7e0cd4d5f894bf74650"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "rawScript": ".string \"You're strong, but above all,\\n\"\n\t.string \"you have a unique charm!\\p\"\n\t.string \"In you, I see a definite potential for\\n\"\n\t.string \"a superstar like me.\\p\"\n\t.string \"I will very much look forward to\\n\"\n\t.string \"our next encounter!$\"\n\n@ Unused"
+  },
+  "label": "BattleFrontier_BattleDomeBattleRoom_Text_LookForwardToNextEncounter",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+  "references": {}
+}

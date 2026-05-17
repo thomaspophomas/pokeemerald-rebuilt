@@ -1,0 +1,23 @@
+{
+  "id": "PacifidlogTown_House2_EventScript_ComeBackInXDays",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_House2/scripts.inc",
+    "sha1": "18b89c836e0ca6b80f69fe44839d4dd2d94ef1b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown_House2/scripts.inc",
+    "rawScript": "specialvar VAR_RESULT, GetDaysUntilPacifidlogTMAvailable\n\tbuffernumberstring STR_VAR_1, VAR_RESULT\n\tmsgbox PacifidlogTown_House2_Text_GetGoodTMInXDays, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "PacifidlogTown_House2_EventScript_ComeBackInXDays",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PacifidlogTown_House2/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

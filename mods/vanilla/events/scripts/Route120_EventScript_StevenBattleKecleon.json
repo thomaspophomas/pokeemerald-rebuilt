@@ -1,0 +1,27 @@
+{
+  "id": "Route120_EventScript_StevenBattleKecleon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route120/scripts.inc",
+    "sha1": "c3ab570e7c5b1ea2c74415d703646f5a362564ad"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route120/scripts.inc",
+    "rawScript": "msgbox Route120_Text_StevenShowMeYourPower, MSGBOX_DEFAULT\n\tclosemessage\n\tcall_if_eq VAR_FACING, DIR_NORTH, Route120_EventScript_PlayerApproachKecleonNorth\n\tcall_if_eq VAR_FACING, DIR_WEST, Route120_EventScript_PlayerApproachKecleonWest\n\tapplymovement LOCALID_ROUTE120_STEVEN, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tdelay 20\n\tmsgbox Route120_Text_StevenUsedDevonScope, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_BRIDGE_KECLEON, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\tapplymovement LOCALID_BRIDGE_KECLEON, Movement_KecleonAppears\n\twaitmovement 0\n\twaitse\n\tplaymoncry SPECIES_KECLEON, CRY_MODE_ENCOUNTER\n\tdelay 40\n\twaitmoncry\n\tsetwildbattle SPECIES_KECLEON, 30\n\tsetvar VAR_0x8009, 0\n\tsetflag FLAG_SYS_CTRL_OBJ_DELETE\n\tdowildbattle\n\tclearflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_WON, Route120_EventScript_RemoveBridgeKecleonPostBattle\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_RAN, Route120_EventScript_RemoveBridgeKecleonPostBattle\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Route120_EventScript_RemoveBridgeKecleonPostBattle\n\tgoto Route120_EventScript_StevenGiveDeconScope\n\tend"
+  },
+  "label": "Route120_EventScript_StevenBattleKecleon",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route120/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_CTRL_OBJ_DELETE"
+    ],
+    "vars": [
+      "VAR_FACING",
+      "VAR_RESULT"
+    ]
+  }
+}

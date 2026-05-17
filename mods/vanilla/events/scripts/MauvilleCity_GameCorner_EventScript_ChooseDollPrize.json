@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_GameCorner_EventScript_ChooseDollPrize",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "sha1": "3db7cd216c9a2c35e8176ef8b4a1d9ec68649c7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "rawScript": "multichoice 12, 0, MULTI_GAME_CORNER_DOLLS, FALSE\n\tswitch VAR_RESULT\n\tcase 0, MauvilleCity_GameCorner_EventScript_TreeckoDoll\n\tcase 1, MauvilleCity_GameCorner_EventScript_TorchicDoll\n\tcase 2, MauvilleCity_GameCorner_EventScript_MudkipDoll\n\tcase 3, MauvilleCity_GameCorner_EventScript_CancelDollSelect\n\tgoto MauvilleCity_GameCorner_EventScript_CancelDollSelect\n\tend"
+  },
+  "label": "MauvilleCity_GameCorner_EventScript_ChooseDollPrize",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

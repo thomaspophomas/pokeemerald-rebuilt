@@ -1,0 +1,26 @@
+{
+  "id": "Route120_EventScript_Jeffrey",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route120/scripts.inc",
+    "sha1": "c3ab570e7c5b1ea2c74415d703646f5a362564ad"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route120/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_JEFFREY_1, Route120_Text_JeffreyIntro, Route120_Text_JeffreyDefeat, Route120_EventScript_RegisterJeffrey\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, Route120_EventScript_RematchJeffrey\n\tmsgbox Route120_Text_JeffreyPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route120_EventScript_Jeffrey",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route120/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_JEFFREY_1"
+    ]
+  }
+}

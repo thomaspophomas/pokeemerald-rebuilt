@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_Harbor_EventScript_MultipleEventTicketsFirstTime",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "sha1": "ffd83f00915b03bfdd96f51950251d00dd19dbcb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "rawScript": "msgbox EventTicket_Text_ThatPass, MSGBOX_DEFAULT\n\tclosemessage\n\tcall LilycoveCity_Harbor_EventScript_GetEventTicketSailor\n\tmessage EventTicket_Text_OddTicketsWhereTo\n\twaitmessage\n\tsetvar VAR_0x8004, 1\n\tspecial ScriptMenu_CreateLilycoveSSTidalMultichoice\n\tspecial GetLilycoveSSTidalSelection\n\tswitch VAR_RESULT\n\tcase 2, LilycoveCity_Harbor_EventScript_GoToSouthernIslandFirstTime\n\tcase 3, LilycoveCity_Harbor_EventScript_GoToNavelRockFirstTime\n\tcase 4, LilycoveCity_Harbor_EventScript_GoToBirthIslandFirstTime\n\tcase 5, LilycoveCity_Harbor_EventScript_GoToFarawayIslandFirstTime\n\tcase 6, LilycoveCity_Harbor_EventScript_ExitFirstTimeTicketSailSelect\n\tcase MULTI_B_PRESSED, LilycoveCity_Harbor_EventScript_ExitFirstTimeTicketSailSelect\n\trelease\n\tend"
+  },
+  "label": "LilycoveCity_Harbor_EventScript_MultipleEventTicketsFirstTime",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_Harbor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

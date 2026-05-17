@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "sha1": "a0cf82d2df089035fb81d02a013736aab95a13d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "rawScript": ".string \"A giant chunk of metal bursts through\\n\"\n\t.string \"the skies and flies into space\u2026\\p\"\n\t.string \"But TEAM MAGMA wants to spoil\\n\"\n\t.string \"that dream of mine!\\p\"\n\t.string \"I'm not having any of that!$\""
+  },
+  "label": "MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+  "references": {}
+}

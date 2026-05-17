@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_PokemonCenter_1F_Text_PokemonEvolvedAction",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/mauville_man.inc",
+    "sha1": "5d5e72f125b988a1fbd10a6264af3893ef9cc868"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/mauville_man.inc",
+    "rawScript": ".string \"Evolved POK\u00e9MON$\""
+  },
+  "label": "MauvilleCity_PokemonCenter_1F_Text_PokemonEvolvedAction",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/scripts/mauville_man.inc",
+  "references": {}
+}

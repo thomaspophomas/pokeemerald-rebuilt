@@ -1,0 +1,19 @@
+{
+  "id": "ProfileMan_Text_ImagineYouWouldHaveWonderfulProfile",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/profile_man.inc",
+    "sha1": "d1dbe5fa547c96e450cb8f168f65a783b75cc29c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/profile_man.inc",
+    "rawScript": ".string \"Oh, no, really?\\p\"\n\t.string \"I imagine someone like you would have\\n\"\n\t.string \"a wonderful profile\u2026$\""
+  },
+  "label": "ProfileMan_Text_ImagineYouWouldHaveWonderfulProfile",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/profile_man.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "MtPyre_6F_EventScript_RematchValerie",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_6F/scripts.inc",
+    "sha1": "0d8e5d648a922985ae05d7a5cc3cc0018668a34a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_6F/scripts.inc",
+    "rawScript": "trainerbattle_rematch TRAINER_VALERIE_1, MtPyre_6F_Text_ValerieRematchIntro, MtPyre_6F_Text_ValerieRematchDefeat\n\tmsgbox MtPyre_6F_Text_ValeriePostRematch, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "MtPyre_6F_EventScript_RematchValerie",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtPyre_6F/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_VALERIE_1"
+    ]
+  }
+}

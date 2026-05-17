@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby_Text_HintPPWaste",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "sha1": "b93395a7ee7156a94cfa3817fd6222cfa69e94fd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "rawScript": ".string \"I sense the tremendous pressure of\\n\"\n\t.string \"unrequited anger\u2026\\p\"\n\t.string \"It is a curse\u2026\\p\"\n\t.string \"\u2026And, I see your POK\u00e9MON drained of\\n\"\n\t.string \"Power Points and having no recourse\\l\"\n\t.string \"but to use STRUGGLE\u2026$\""
+  },
+  "label": "BattleFrontier_BattlePyramidLobby_Text_HintPPWaste",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Route107_EventScript_Denise",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route107/scripts.inc",
+    "sha1": "8d743da872d9be8742fa574ea07deaea71d39b1c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route107/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_DENISE, Route107_Text_DeniseIntro, Route107_Text_DeniseDefeated\n\tmsgbox Route107_Text_DenisePostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route107_EventScript_Denise",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route107/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_DENISE"
+    ]
+  }
+}

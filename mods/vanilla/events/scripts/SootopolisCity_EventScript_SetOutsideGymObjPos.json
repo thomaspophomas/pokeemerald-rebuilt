@@ -1,0 +1,23 @@
+{
+  "id": "SootopolisCity_EventScript_SetOutsideGymObjPos",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": "setobjectxyperm LOCALID_SOOTOPOLIS_EXPERT, 31, 18\n\tsetobjectxyperm LOCALID_SOOTOPOLIS_STEVEN, 29, 33\n\tsetobjectxyperm LOCALID_SOOTOPOLIS_MAXIE, 33, 35\n\tsetobjectxyperm LOCALID_SOOTOPOLIS_ARCHIE, 34, 35\n\tcall_if_eq VAR_SOOTOPOLIS_WALLACE_STATE, 0, SootopolisCity_EventScript_SetWallaceMiddle\n\tcall_if_eq VAR_SOOTOPOLIS_WALLACE_STATE, 1, SootopolisCity_EventScript_SetWallaceRight\n\tcall_if_eq VAR_SOOTOPOLIS_WALLACE_STATE, 2, SootopolisCity_EventScript_SetWallaceLeft\n\treturn"
+  },
+  "label": "SootopolisCity_EventScript_SetOutsideGymObjPos",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_SOOTOPOLIS_WALLACE_STATE"
+    ]
+  }
+}

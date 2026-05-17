@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_2F_EventScript_ShowToughPainting",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "sha1": "c41e25282a159070f0eb7fb3edcf1b61cc1cfa19"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "rawScript": "msgbox LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon, MSGBOX_SIGN\n\tfadescreen FADE_TO_BLACK\n\tshowcontestpainting CONTEST_WINNER_MUSEUM_TOUGH\n\treleaseall\n\tend"
+  },
+  "label": "LilycoveCity_LilycoveMuseum_2F_EventScript_ShowToughPainting",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+  "references": {}
+}

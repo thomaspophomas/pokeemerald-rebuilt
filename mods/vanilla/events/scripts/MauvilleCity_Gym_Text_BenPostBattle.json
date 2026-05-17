@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Gym_Text_BenPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "sha1": "ba2cd4a14af6a43f9221cd58f6a4a0299a51ce6c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "rawScript": ".string \"WATTSON says he likes setting up\\n\"\n\t.string \"little traps with switches.$\""
+  },
+  "label": "MauvilleCity_Gym_Text_BenPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_Gym/scripts.inc",
+  "references": {}
+}

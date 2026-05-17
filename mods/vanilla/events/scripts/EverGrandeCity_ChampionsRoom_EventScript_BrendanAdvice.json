@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_ChampionsRoom_EventScript_BrendanAdvice",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "sha1": "4f73bd77d8715e7ac12ff1ac731985eaf75ecd5e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "rawScript": "msgbox EverGrandeCity_ChampionsRoom_Text_BrendanAdvice, MSGBOX_DEFAULT\n\tdelay 40\n\tplayse SE_PIN\n\tapplymovement LOCALID_CHAMPIONS_ROOM_RIVAL, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_CHAMPIONS_ROOM_RIVAL, Common_Movement_Delay48\n\twaitmovement 0\n\tcall EverGrandeCity_ChampionsRoom_EventScript_RivalLookBackAndForth\n\tmsgbox EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon, MSGBOX_DEFAULT\n\tgoto EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF\n\tend"
+  },
+  "label": "EverGrandeCity_ChampionsRoom_EventScript_BrendanAdvice",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Route117_EventScript_DaycareMan",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/day_care.inc",
+    "sha1": "b807399ab522de3ba938194e85f890a343362752"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/day_care.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tspecial GetDaycareMonNicknames\n\tspecialvar VAR_RESULT, GetDaycareState\n\tgoto_if_eq VAR_RESULT, DAYCARE_EGG_WAITING, Route117_EventScript_DaycareEggWaiting\n\tgoto_if_eq VAR_RESULT, DAYCARE_ONE_MON, Route117_EventScript_CheckOnOneMon\n\tgoto_if_eq VAR_RESULT, DAYCARE_TWO_MONS, Route117_EventScript_CheckOnTwoMons\n\tmsgbox Route117_Text_SeeWifeIfYoudLikeMeToRaiseMon, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route117_EventScript_DaycareMan",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/day_care.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

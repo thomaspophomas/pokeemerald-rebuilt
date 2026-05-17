@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Gym_Text_BlakeIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "sha1": "f1b3ae6c76fdfe44b1431df4ea78da5c11a79c08"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "rawScript": ".string \"Fufufufu\u2026 Watch me levitate a POK\u00e9\\n\"\n\t.string \"BALL telekinetically!\\p\"\n\t.string \"Wrooooooooaaaar!\\n\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"Sometimes, I'm out of sync\u2026$\""
+  },
+  "label": "MossdeepCity_Gym_Text_BlakeIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_Gym/scripts.inc",
+  "references": {}
+}

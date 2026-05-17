@@ -1,0 +1,23 @@
+{
+  "id": "SootopolisCity_Gym_1F_EventScript_GymGuide",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "sha1": "cd5ddf90f8e2b0931828078295732db5c87d2dae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_DEFEATED_SOOTOPOLIS_GYM, SootopolisCity_Gym_1F_EventScript_GymGuidePostVictory\n\tmsgbox SootopolisCity_Gym_1F_Text_GymGuideAdvice, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "SootopolisCity_Gym_1F_EventScript_GymGuide",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_SOOTOPOLIS_GYM"
+    ]
+  }
+}

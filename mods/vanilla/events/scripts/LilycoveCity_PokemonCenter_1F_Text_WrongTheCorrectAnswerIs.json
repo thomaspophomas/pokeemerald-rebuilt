@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonCenter_1F_Text_WrongTheCorrectAnswerIs",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/lilycove_lady.inc",
+    "sha1": "2c2864b913cc532d514481fce3a5e381d5af5f83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/lilycove_lady.inc",
+    "rawScript": ".string \"Hmm\u2026 Wrong!\\n\"\n\t.string \"The correct answer is \u201c{STR_VAR_3}\u201d!$\""
+  },
+  "label": "LilycoveCity_PokemonCenter_1F_Text_WrongTheCorrectAnswerIs",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/lilycove_lady.inc",
+  "references": {}
+}

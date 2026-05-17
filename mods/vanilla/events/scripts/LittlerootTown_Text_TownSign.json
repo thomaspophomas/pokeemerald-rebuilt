@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_Text_TownSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": ".string \"LITTLEROOT TOWN\\n\"\n\t.string \"\u201cA town that can't be shaded any hue.\u201d$\""
+  },
+  "label": "LittlerootTown_Text_TownSign",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {}
+}

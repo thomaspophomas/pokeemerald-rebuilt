@@ -1,0 +1,24 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_ChooseLinkContestType",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": "message LilycoveCity_ContestLobby_Text_EnterWhichContest3\n\twaitmessage\n\tmultichoice 0, 0, MULTI_CONTEST_TYPE, FALSE\n\tswitch VAR_RESULT\n\tcase CONTEST_CATEGORIES_COUNT, LilycoveCity_ContestLobby_EventScript_CancelLinkContest\n\tcase MULTI_B_PRESSED, LilycoveCity_ContestLobby_EventScript_CancelLinkContest\n\tcopyvar VAR_CONTEST_CATEGORY, VAR_RESULT\n\tgoto LilycoveCity_ContestLobby_EventScript_ChooseLinkContestMon\n\tend"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_ChooseLinkContestType",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_CONTEST_CATEGORY",
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestLobby_Text_TakeHomeButIdLikeToTakeToMuseum",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": ".string \"Oh\u2026 Then, I guess I'll just take\\n\"\n\t.string \"this home with me\u2026\\p\"\n\t.string \"But, you know, I would like to take\\n\"\n\t.string \"this to the art museum\u2026 Okay?$\""
+  },
+  "label": "LilycoveCity_ContestLobby_Text_TakeHomeButIdLikeToTakeToMuseum",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {}
+}

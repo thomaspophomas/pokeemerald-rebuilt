@@ -1,0 +1,27 @@
+{
+  "id": "ContestHall_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ContestHall/scripts.inc",
+    "sha1": "1975dda1f6df6ad0ef2b0d81c28afe4508469870"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ContestHall/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, ContestHall_OnWarp\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, ContestHall_OnFrame\n\tmap_script MAP_SCRIPT_ON_TRANSITION, ContestHall_OnTransition\n\tmap_script MAP_SCRIPT_ON_RESUME, ContestHall_OnResume\n\tmap_script MAP_SCRIPT_ON_RETURN_TO_FIELD, ContestHall_OnReturn\n\t.byte 0"
+  },
+  "label": "ContestHall_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/ContestHall/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_RETURN_TO_FIELD",
+      "MAP_SCRIPT_ON_TRANSITION",
+      "MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE"
+    ]
+  }
+}

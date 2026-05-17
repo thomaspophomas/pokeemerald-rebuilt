@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_Hall2_EventScript_TurnPlayerNorth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_Hall2/scripts.inc",
+    "sha1": "c3ca0f6c3cded4738d31ae46f8c9de5088e5e6d4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_Hall2/scripts.inc",
+    "rawScript": "turnobject LOCALID_PLAYER, DIR_NORTH\n\tend"
+  },
+  "label": "EverGrandeCity_Hall2_EventScript_TurnPlayerNorth",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_Hall2/scripts.inc",
+  "references": {}
+}

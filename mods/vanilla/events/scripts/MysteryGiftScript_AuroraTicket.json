@@ -1,0 +1,31 @@
+{
+  "id": "MysteryGiftScript_AuroraTicket",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_aurora_ticket.inc",
+    "sha1": "e2531e773ee18fead1efbfbdc01db2b1f669baf2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_aurora_ticket.inc",
+    "rawScript": "setvaddress MysteryGiftScript_AuroraTicket\n\tlock\n\tfaceplayer\n\tvgoto_if_set FLAG_RECEIVED_AURORA_TICKET, AuroraTicket_Obtained\n\tvgoto_if_set FLAG_BATTLED_DEOXYS, AuroraTicket_Obtained\n\tcheckitem ITEM_AURORA_TICKET\n\tvgoto_if_eq VAR_RESULT, TRUE, AuroraTicket_Obtained\n\tvmessage sText_AuroraTicketForYou\n\twaitmessage\n\twaitbuttonpress\n\tcheckitemspace ITEM_AURORA_TICKET\n\tvgoto_if_eq VAR_RESULT, FALSE, AuroraTicket_NoBagSpace\n\tgiveitem ITEM_AURORA_TICKET\n\tsetflag FLAG_ENABLE_SHIP_BIRTH_ISLAND\n\tsetflag FLAG_RECEIVED_AURORA_TICKET\n\tvmessage sText_AuroraTicketUseAtPort\n\twaitmessage\n\twaitbuttonpress\n\trelease\n\tend"
+  },
+  "label": "MysteryGiftScript_AuroraTicket",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_aurora_ticket.inc",
+  "references": {
+    "flags": [
+      "FLAG_BATTLED_DEOXYS",
+      "FLAG_ENABLE_SHIP_BIRTH_ISLAND",
+      "FLAG_RECEIVED_AURORA_TICKET"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_AURORA_TICKET"
+    ]
+  }
+}

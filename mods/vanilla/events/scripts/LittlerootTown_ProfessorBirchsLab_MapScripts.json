@@ -1,0 +1,29 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_ProfessorBirchsLab_OnTransition\n\tmap_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, LittlerootTown_ProfessorBirchsLab_OnWarp\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, LittlerootTown_ProfessorBirchsLab_OnFrame\n\t.byte 0\n\n\t@ State descriptions for VAR_DEX_UPGRADE_JOHTO_STARTER_STATE\n\t@ 1: Beat Elite Four, Dex upgrade ready\n\t@ 2: Received National Dex\n\t@ 3: Left lab after receiving National Dex\n\t@ 4: Entered lab after catching all Hoenn mons\n\t@ 5: Birch told player to choose Johto starter\n\t@ 6: Chose Johto starter\n\n\t@ State descriptions for VAR_BIRCH_LAB_STATE\n\t@ 1: Never occurs\n\t@ 2: Chose starter\n\t@ 3: Received starter in lab\n\t@ 4: Defeated rival on Route 103\n\t@ 5: Received pokedex"
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_BIRCH_LAB_STATE",
+      "VAR_DEX_UPGRADE_JOHTO_STARTER_STATE"
+    ],
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_TRANSITION",
+      "MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE"
+    ]
+  }
+}

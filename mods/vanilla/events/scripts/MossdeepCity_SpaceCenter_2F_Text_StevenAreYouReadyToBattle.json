@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F_Text_StevenAreYouReadyToBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "rawScript": ".string \"STEVEN: {PLAYER}{KUN}!\\n\"\n\t.string \"You're going to help me?\\p\"\n\t.string \"Let's go into battle together!\\n\"\n\t.string \"Are you ready?$\""
+  },
+  "label": "MossdeepCity_SpaceCenter_2F_Text_StevenAreYouReadyToBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,28 @@
+{
+  "id": "FarawayIsland_Interior_EventScript_Mew",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FarawayIsland_Interior/scripts.inc",
+    "sha1": "748f9f309b0dbfe85cb833f24aeceac469102437"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FarawayIsland_Interior/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tapplymovement LOCALID_FARAWAY_ISLAND_MEW, FarawayIsland_Interior_Movement_MewAppear\n\twaitmovement 0\n\tsetvar VAR_0x8004, 0\n\tspecial SetMewAboveGrass\n\tmessage FarawayIsland_Interior_Text_Mew\n\twaitse\n\tplaymoncry SPECIES_MEW, CRY_MODE_ENCOUNTER\n\tcall_if_eq VAR_FACING, DIR_NORTH, FarawayIsland_Interior_EventScript_FoundMewNorth\n\tcall_if_eq VAR_FACING, DIR_SOUTH, FarawayIsland_Interior_EventScript_FoundMewSouth\n\tcall_if_eq VAR_FACING, DIR_WEST, FarawayIsland_Interior_EventScript_FoundMewWest\n\tcall_if_eq VAR_FACING, DIR_EAST, FarawayIsland_Interior_EventScript_FoundMewEast\n\tspecial DestroyMewEmergingGrassSprite\n\tdelay 40\n\twaitmoncry\n\tseteventmon SPECIES_MEW, 30\n\tsetflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecial BattleSetup_StartLegendaryBattle\n\tclearflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_WON, FarawayIsland_Interior_EventScript_MewDefeated\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_RAN, FarawayIsland_Interior_EventScript_PlayerOrMewRan\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, FarawayIsland_Interior_EventScript_PlayerOrMewRan\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_MON_TELEPORTED, FarawayIsland_Interior_EventScript_PlayerOrMewRan\n\tsetflag FLAG_CAUGHT_MEW\n\trelease\n\tend"
+  },
+  "label": "FarawayIsland_Interior_EventScript_Mew",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FarawayIsland_Interior/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_CAUGHT_MEW",
+      "FLAG_SYS_CTRL_OBJ_DELETE"
+    ],
+    "vars": [
+      "VAR_FACING",
+      "VAR_RESULT"
+    ]
+  }
+}

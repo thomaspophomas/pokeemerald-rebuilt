@@ -1,0 +1,24 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F_EventScript_ReadyForBattlePrompt",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "rawScript": "applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer\n\twaitmovement 0\n\tmsgbox MossdeepCity_SpaceCenter_2F_Text_StevenAreYouReadyToBattle, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, MossdeepCity_SpaceCenter_2F_EventScript_ChoosePartyForMultiBattle\n\tmsgbox MossdeepCity_SpaceCenter_2F_Text_StevenHurryGetReadyQuickly, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\treleaseall\n\tend"
+  },
+  "label": "MossdeepCity_SpaceCenter_2F_EventScript_ReadyForBattlePrompt",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ]
+  }
+}

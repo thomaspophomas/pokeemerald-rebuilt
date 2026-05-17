@@ -1,0 +1,19 @@
+{
+  "id": "SSTidalRooms_Text_ThomasPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalRooms/scripts.inc",
+    "sha1": "1953df649981f24c9b39a0b7b26b1ed8339d7249"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalRooms/scripts.inc",
+    "rawScript": ".string \"To be never ruffled in any situation is\\n\"\n\t.string \"the GENTLEMAN's code of conduct.$\""
+  },
+  "label": "SSTidalRooms_Text_ThomasPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SSTidalRooms/scripts.inc",
+  "references": {}
+}

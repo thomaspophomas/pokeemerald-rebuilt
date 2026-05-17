@@ -1,0 +1,19 @@
+{
+  "id": "Route120_Text_StevenUsedDevonScope",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route120/scripts.inc",
+    "sha1": "c3ab570e7c5b1ea2c74415d703646f5a362564ad"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route120/scripts.inc",
+    "rawScript": ".string \"STEVEN used the DEVON SCOPE.\\p\"\n\t.string \"An invisible POK\u00e9MON became completely\\n\"\n\t.string \"visible!\\p\"\n\t.string \"The startled POK\u00e9MON attacked!$\""
+  },
+  "label": "Route120_Text_StevenUsedDevonScope",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route120/scripts.inc",
+  "references": {}
+}

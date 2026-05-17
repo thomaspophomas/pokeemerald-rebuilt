@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Text_MayOhHaventRaisedPokemonEnough",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": ".string \"MAY: Oh, what's the matter?\\p\"\n\t.string \"Haven't you caught or raised your\\n\"\n\t.string \"POK\u00e9MON very much?\\p\"\n\t.string \"That's not very good for a TRAINER!$\""
+  },
+  "label": "RustboroCity_Text_MayOhHaventRaisedPokemonEnough",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

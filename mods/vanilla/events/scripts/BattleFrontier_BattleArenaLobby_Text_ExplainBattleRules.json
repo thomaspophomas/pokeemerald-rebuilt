@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleArenaLobby_Text_ExplainBattleRules",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "sha1": "9504bb75bdf62b80271e2304b4804044c8db502a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "rawScript": ".string \"The Set KO Tourney has special rules,\\n\"\n\t.string \"unlike standard battles.\\p\"\n\t.string \"First, one battle lasts only\\n\"\n\t.string \"three turns.\\p\"\n\t.string \"If the outcome is not decided after\\n\"\n\t.string \"three turns, it goes to judging.\\p\"\n\t.string \"The REFEREE will choose the winner\\n\"\n\t.string \"based on how the POK\u00e9MON battled.\\p\"\n\t.string \"Also, a POK\u00e9MON cannot be switched out\\n\"\n\t.string \"until its battle's outcome is decided.$\""
+  },
+  "label": "BattleFrontier_BattleArenaLobby_Text_ExplainBattleRules",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+  "references": {}
+}

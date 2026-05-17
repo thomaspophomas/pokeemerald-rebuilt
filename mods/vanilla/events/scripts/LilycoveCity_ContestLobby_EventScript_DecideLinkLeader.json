@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_DecideLinkLeader",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": "message LilycoveCity_ContestLobby_Text_PleaseDecideLinkLeader\n\twaitmessage\n\tmultichoice 16, 6, MULTI_LINK_LEADER, FALSE\n\tswitch VAR_RESULT\n\tcase 0, LilycoveCity_ContestLobby_EventScript_TryJoinGroup\n\tcase 1, LilycoveCity_ContestLobby_EventScript_TryLeadGroup\n\tcase 2, LilycoveCity_ContestLobby_EventScript_CancelLinkContest\n\tcase MULTI_B_PRESSED, LilycoveCity_ContestLobby_EventScript_CancelLinkContest\n\tend"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_DecideLinkLeader",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

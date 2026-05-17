@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_DepartmentStoreRooftop_PokemartDecor_ClearOutSale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc",
+    "sha1": "3ac544c7b01d367272ba9a3a4ac85c927eeb0c61"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc",
+    "rawScript": ".2byte DECOR_MUD_BALL\n\t.2byte DECOR_FENCE_LENGTH\n\t.2byte DECOR_FENCE_WIDTH\n\t.2byte DECOR_TIRE\n\t.2byte DECOR_BREAKABLE_DOOR\n\t.2byte DECOR_SOLID_BOARD\n\t.2byte DECOR_SAND_ORNAMENT\n\t.2byte DECOR_STAND\n\t.2byte DECOR_SLIDE\n\t.2byte DECOR_TV\n\t.2byte DECOR_ROUND_TV\n\t.2byte DECOR_CUTE_TV\n\t.2byte DECOR_WAILMER_DOLL\n\t.2byte DECOR_RHYDON_DOLL\n\t.2byte 0\n\trelease\n\tend"
+  },
+  "label": "LilycoveCity_DepartmentStoreRooftop_PokemartDecor_ClearOutSale",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc",
+  "references": {}
+}

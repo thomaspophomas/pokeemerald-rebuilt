@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby_Text_HintTrapAbility",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "sha1": "b93395a7ee7156a94cfa3817fd6222cfa69e94fd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "rawScript": ".string \"I sense terrific energy rising from\\n\"\n\t.string \"the ground below\u2026\\p\"\n\t.string \"\u2026And, I see your POK\u00e9MON unable to\\n\"\n\t.string \"escape the power's clutches\u2026$\""
+  },
+  "label": "BattleFrontier_BattlePyramidLobby_Text_HintTrapAbility",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+  "references": {}
+}

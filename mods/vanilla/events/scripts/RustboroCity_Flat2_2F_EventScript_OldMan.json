@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Flat2_2F_EventScript_OldMan",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Flat2_2F/scripts.inc",
+    "sha1": "3f278233f807a1de34242578a0c22234655ecef0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Flat2_2F/scripts.inc",
+    "rawScript": "msgbox RustboroCity_Flat2_2F_Text_DevonWasTinyInOldDays, MSGBOX_NPC\n\tend"
+  },
+  "label": "RustboroCity_Flat2_2F_EventScript_OldMan",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_Flat2_2F/scripts.inc",
+  "references": {}
+}

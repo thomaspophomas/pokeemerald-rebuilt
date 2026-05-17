@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_Summit_Text_Grunt4Intro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/scripts.inc",
+    "sha1": "2d98d572d50cebb678d972aa421854c983329822"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Summit/scripts.inc",
+    "rawScript": ".string \"Oh, I know!\\n\"\n\t.string \"You tried to join TEAM MAGMA,\\l\"\n\t.string \"but they wouldn't have you!\\p\"\n\t.string \"Well, don't think that we'll let you\\n\"\n\t.string \"join our TEAM AQUA!$\""
+  },
+  "label": "MtPyre_Summit_Text_Grunt4Intro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_Summit/scripts.inc",
+  "references": {}
+}

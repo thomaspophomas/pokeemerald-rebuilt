@@ -1,0 +1,23 @@
+{
+  "id": "GabbyAndTy_EventScript_TyBattle3",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gabby_and_ty.inc",
+    "sha1": "94bbdc1414879c9d53e3c5a88c9429ac40dbfdeb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gabby_and_ty.inc",
+    "rawScript": "trainerbattle_double TRAINER_GABBY_AND_TY_3, GabbyAndTy_Text_TyIntro, GabbyAndTy_Text_TyDefeat, GabbyAndTy_Text_TyNotEnoughMons, GabbyAndTy_EventScript_RequestInterview\n\tmsgbox GabbyAndTy_Text_TyPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "GabbyAndTy_EventScript_TyBattle3",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/gabby_and_ty.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_GABBY_AND_TY_3"
+    ]
+  }
+}

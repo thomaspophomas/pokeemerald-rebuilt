@@ -1,0 +1,19 @@
+{
+  "id": "Route104_Text_MayHaventRaisedPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104/scripts.inc",
+    "sha1": "10d25047426798be70cda2d9503387bbf8458d85"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104/scripts.inc",
+    "rawScript": ".string \"MAY: Oh, what's the matter?\\p\"\n\t.string \"Haven't you caught or raised your\\n\"\n\t.string \"POK\u00e9MON very much?\\p\"\n\t.string \"That's not very good for a TRAINER!$\""
+  },
+  "label": "Route104_Text_MayHaventRaisedPokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route104/scripts.inc",
+  "references": {}
+}

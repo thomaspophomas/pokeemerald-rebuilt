@@ -1,0 +1,19 @@
+{
+  "id": "MeteorFalls_StevensCave_Text_MyPredictionCameTrue",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_StevensCave/scripts.inc",
+    "sha1": "1c533dd88d1548eeb3f32082e2ab2c1de6a3a5f5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_StevensCave/scripts.inc",
+    "rawScript": ".string \"STEVEN: Come to think of it, ever since\\n\"\n\t.string \"our paths first crossed in GRANITE\\l\"\n\t.string \"CAVE in DEWFORD, I had this feeling.\\p\"\n\t.string \"I thought that you would eventually\\n\"\n\t.string \"become the CHAMPION.\\p\"\n\t.string \"My predictions usually come true.\\p\"\n\t.string \"And where will you go from here?\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\n\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"Fufufu, even I couldn't tell you that.$\""
+  },
+  "label": "MeteorFalls_StevensCave_Text_MyPredictionCameTrue",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MeteorFalls_StevensCave/scripts.inc",
+  "references": {}
+}

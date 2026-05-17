@@ -1,0 +1,19 @@
+{
+  "id": "VictoryRoad_1F_Text_QuincyPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_1F/scripts.inc",
+    "sha1": "dda3a20e79be32fbc7d021ceddf040bbcdbe53c7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VictoryRoad_1F/scripts.inc",
+    "rawScript": ".string \"Getting through here safely--that's\\n\"\n\t.string \"the final test for any TRAINER aiming\\l\"\n\t.string \"to become the POK\u00e9MON CHAMPION.\\p\"\n\t.string \"That's why it's called the VICTORY\\n\"\n\t.string \"ROAD.$\""
+  },
+  "label": "VictoryRoad_1F_Text_QuincyPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VictoryRoad_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Common_EventScript_GetGiftMonPartySlot",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/pc_transfer.inc",
+    "sha1": "89076aa37dfc6e20e6d83501c342a8a7b58101be"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/pc_transfer.inc",
+    "rawScript": "getpartysize\n\tsubvar VAR_RESULT, 1\n\tcopyvar VAR_0x8004, VAR_RESULT\n\treturn"
+  },
+  "label": "Common_EventScript_GetGiftMonPartySlot",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/pc_transfer.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

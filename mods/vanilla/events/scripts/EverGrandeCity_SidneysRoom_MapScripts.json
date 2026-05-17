@@ -1,0 +1,26 @@
+{
+  "id": "EverGrandeCity_SidneysRoom_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+    "sha1": "557570a48b33cd8590cd2a5ef0ed11ae09a3448a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_LOAD, EverGrandeCity_SidneysRoom_OnLoad\n\tmap_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, EverGrandeCity_SidneysRoom_OnWarp\n\tmap_script MAP_SCRIPT_ON_TRANSITION, EverGrandeCity_SidneysRoom_OnTransition\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, EverGrandeCity_SidneysRoom_OnFrame\n\t.byte 0"
+  },
+  "label": "EverGrandeCity_SidneysRoom_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_TRANSITION",
+      "MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE"
+    ]
+  }
+}

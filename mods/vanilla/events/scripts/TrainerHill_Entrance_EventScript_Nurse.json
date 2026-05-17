@@ -1,0 +1,19 @@
+{
+  "id": "TrainerHill_Entrance_EventScript_Nurse",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "sha1": "cbfca2354a8d8ed8d68e2612fb0b6f2525008a5f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "rawScript": "setvar VAR_0x800B, LOCALID_TRAINER_HILL_NURSE\n\tcall Common_EventScript_PkmnCenterNurse\n\twaitmessage\n\twaitbuttonpress\n\trelease\n\tend"
+  },
+  "label": "TrainerHill_Entrance_EventScript_Nurse",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/TrainerHill_Entrance/scripts.inc",
+  "references": {}
+}

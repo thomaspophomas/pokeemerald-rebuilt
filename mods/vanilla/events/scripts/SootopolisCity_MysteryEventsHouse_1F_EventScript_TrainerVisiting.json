@@ -1,0 +1,27 @@
+{
+  "id": "SootopolisCity_MysteryEventsHouse_1F_EventScript_TrainerVisiting",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc",
+    "sha1": "2fdeaa88644de0428efc55499bd5f5d3a0d1831f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc",
+    "rawScript": "special SavePlayerParty\n\tspecial BufferEReaderTrainerName\n\tmsgbox SootopolisCity_MysteryEventsHouse_1F_Text_ChallengeVisitingTrainer, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, SootopolisCity_MysteryEventsHouse_1F_EventScript_DeclineBattle\n\tcall SootopolisCity_MysteryEventsHouse_1F_EventScript_ChooseParty\n\tgoto_if_eq VAR_RESULT, 0, SootopolisCity_MysteryEventsHouse_1F_EventScript_DeclineBattle\n\tmsgbox SootopolisCity_MysteryEventsHouse_1F_Text_SaveProgressBeforeBattle, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, SootopolisCity_MysteryEventsHouse_1F_EventScript_DeclineBattle\n\tspecial LoadPlayerParty\n\tcall Common_EventScript_SaveGame\n\tgoto_if_eq VAR_RESULT, FALSE, SootopolisCity_MysteryEventsHouse_1F_EventScript_DeclineBattle\n\tspecial SavePlayerParty\n\tspecial ReducePlayerPartyToSelectedMons\n\tmsgbox SootopolisCity_MysteryEventsHouse_1F_Text_HopeToSeeGoodMatch, MSGBOX_DEFAULT\n\tclosemessage\n\tcall_if_eq VAR_FACING, DIR_NORTH, SootopolisCity_MysteryEventsHouse_1F_EventScript_EnterBasementNorth\n\tcall_if_eq VAR_FACING, DIR_EAST, SootopolisCity_MysteryEventsHouse_1F_EventScript_EnterBasementEast\n\tcall_if_eq VAR_FACING, DIR_WEST, SootopolisCity_MysteryEventsHouse_1F_EventScript_EnterBasementWest\n\twarp MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_B1F, 3, 1\n\twaitstate\n\trelease\n\tend"
+  },
+  "label": "SootopolisCity_MysteryEventsHouse_1F_EventScript_TrainerVisiting",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FACING",
+      "VAR_RESULT"
+    ],
+    "maps": [
+      "MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_B1F"
+    ]
+  }
+}

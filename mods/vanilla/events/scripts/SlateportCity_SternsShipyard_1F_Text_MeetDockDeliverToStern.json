@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_SternsShipyard_1F_Text_MeetDockDeliverToStern",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+    "sha1": "839a40e95086fb806113f67a7c2dc0dcbbab3217"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+    "rawScript": ".string \"Hm?\\n\"\n\t.string \"Hi, I'm DOCK.\\p\"\n\t.string \"CAPT. STERN commissioned me to\\n\"\n\t.string \"design a ferry.\\p\"\n\t.string \"Oh! That there\u2026\\n\"\n\t.string \"Are they DEVON GOODS?\\p\"\n\t.string \"But, hmm\u2026\\n\"\n\t.string \"This won't do\u2026\\p\"\n\t.string \"CAPT. STERN went off somewhere.\\n\"\n\t.string \"He said he had some work to do.\\p\"\n\t.string \"Could I get you to go find CAPT.\\n\"\n\t.string \"STERN and deliver that to him?$\""
+  },
+  "label": "SlateportCity_SternsShipyard_1F_Text_MeetDockDeliverToStern",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+  "references": {}
+}

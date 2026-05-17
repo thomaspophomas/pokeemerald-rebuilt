@@ -1,0 +1,23 @@
+{
+  "id": "Route114_LanettesHouse_EventScript_Notebook",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_LanettesHouse/scripts.inc",
+    "sha1": "91f2126eb51b441d0e51b50e9d41b4e45bf67494"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114_LanettesHouse/scripts.inc",
+    "rawScript": "lockall\n\tmsgbox Route114_LanettesHouse_Text_ResearchNotesPage1, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, Route114_LanettesHouse_EventScript_NotebookPage2\n\tmsgbox Route114_LanettesHouse_Text_ClosedTheNotebook, MSGBOX_DEFAULT\n\treleaseall\n\tend"
+  },
+  "label": "Route114_LanettesHouse_EventScript_Notebook",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route114_LanettesHouse/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

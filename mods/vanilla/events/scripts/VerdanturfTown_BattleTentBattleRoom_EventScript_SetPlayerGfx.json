@@ -1,0 +1,23 @@
+{
+  "id": "VerdanturfTown_BattleTentBattleRoom_EventScript_SetPlayerGfx",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+    "sha1": "ab3b693d78c01bf41de27c238af8f5c28d91cffd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+    "rawScript": "checkplayergender\n\tgoto_if_eq VAR_RESULT, MALE, VerdanturfTown_BattleTentBattleRoom_EventScript_SetPlayerGfxMale\n\tgoto_if_eq VAR_RESULT, FEMALE, VerdanturfTown_BattleTentBattleRoom_EventScript_SetPlayerGfxFemale\n\treturn"
+  },
+  "label": "VerdanturfTown_BattleTentBattleRoom_EventScript_SetPlayerGfx",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

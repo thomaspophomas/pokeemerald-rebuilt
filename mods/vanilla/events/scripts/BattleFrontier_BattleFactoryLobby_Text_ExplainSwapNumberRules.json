@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleFactoryLobby_Text_ExplainSwapNumberRules",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+    "sha1": "292da35ee750dbef6f890d691b62400b747b2d83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+    "rawScript": ".string \"After every battle you win, you may\\n\"\n\t.string \"swap for one of your defeated\\l\"\n\t.string \"opponent's POK\u00e9MON.\\p\"\n\t.string \"You will not be able to swap POK\u00e9MON\\n\"\n\t.string \"with the seventh TRAINER in the event.$\""
+  },
+  "label": "BattleFrontier_BattleFactoryLobby_Text_ExplainSwapNumberRules",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+  "references": {}
+}

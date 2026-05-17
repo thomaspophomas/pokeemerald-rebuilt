@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Text_YoureNewAroundHere",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": ".string \"Oh? Who might you be?\\n\"\n\t.string \"You're a new face around these parts.\\p\"\n\t.string \"Have you just transferred into the\\n\"\n\t.string \"POK\u00e9MON TRAINER'S SCHOOL?$\""
+  },
+  "label": "RustboroCity_Text_YoureNewAroundHere",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

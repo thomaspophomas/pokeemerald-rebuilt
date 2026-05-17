@@ -1,0 +1,23 @@
+{
+  "id": "Route110_EventScript_Alyssa",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/scripts.inc",
+    "sha1": "ee9846425d6a96c03ac988decb3c48ffbd098f22"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_ALYSSA, Route110_Text_AlyssaIntro, Route110_Text_AlyssaDefeated\n\tmsgbox Route110_Text_AlyssaPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route110_EventScript_Alyssa",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ALYSSA"
+    ]
+  }
+}

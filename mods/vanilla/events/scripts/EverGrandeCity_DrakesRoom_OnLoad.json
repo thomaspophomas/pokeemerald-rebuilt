@@ -1,0 +1,26 @@
+{
+  "id": "EverGrandeCity_DrakesRoom_OnLoad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+    "sha1": "f9ebbd1a5748e35eab8deba2da4622069b1316a9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+    "rawScript": "call_if_set FLAG_DEFEATED_ELITE_4_DRAKE, EverGrandeCity_DrakesRoom_EventScript_ResetAdvanceToNextRoom\n\tcall_if_eq VAR_ELITE_4_STATE, 4, EverGrandeCity_DrakesRoom_EventScript_CloseDoor\n\tend"
+  },
+  "label": "EverGrandeCity_DrakesRoom_OnLoad",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_ELITE_4_DRAKE"
+    ],
+    "vars": [
+      "VAR_ELITE_4_STATE"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "MossdeepCity_GameCorner_1F_EventScript_OldMan2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmessage MossdeepCity_GameCorner_1F_Text_WelcomeCanYouWait\n\twaitmessage\n\tspecialvar VAR_RESULT, IsWirelessAdapterConnected\n\tgoto_if_eq VAR_RESULT, FALSE, MossdeepCity_GameCorner_1F_EventScript_AdapterNotConnected\n\tdelay 60\n\tmessage MossdeepCity_GameCorner_1F_Text_PlayWhichGame\n\twaitmessage\n\tmultichoice 0, 0, MULTI_WIRELESS_MINIGAME, FALSE\n\tswitch VAR_RESULT\n\tcase 0, MossdeepCity_GameCorner_1F_EventScript_PlayPokemonJump\n\tcase 1, MossdeepCity_GameCorner_1F_EventScript_PlayDodrioBerryPicking\n\tcase 2, MossdeepCity_GameCorner_1F_EventScript_AbortMinigame\n\tcase MULTI_B_PRESSED, MossdeepCity_GameCorner_1F_EventScript_AbortMinigame\n\tend"
+  },
+  "label": "MossdeepCity_GameCorner_1F_EventScript_OldMan2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

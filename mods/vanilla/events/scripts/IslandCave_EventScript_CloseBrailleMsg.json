@@ -1,0 +1,19 @@
+{
+  "id": "IslandCave_EventScript_CloseBrailleMsg",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/IslandCave/scripts.inc",
+    "sha1": "36e3ca89a53bdf101cff26d6ef8efcf46552e41d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/IslandCave/scripts.inc",
+    "rawScript": "waitbuttonpress\n\tclosebraillemessage\n\treleaseall\n\tend"
+  },
+  "label": "IslandCave_EventScript_CloseBrailleMsg",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/IslandCave/scripts.inc",
+  "references": {}
+}

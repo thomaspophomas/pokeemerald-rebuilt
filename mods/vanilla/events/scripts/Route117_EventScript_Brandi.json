@@ -1,0 +1,23 @@
+{
+  "id": "Route117_EventScript_Brandi",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route117/scripts.inc",
+    "sha1": "9c87422ff2d4ac9ebaa7fbe97f86e8cb16c2b92b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route117/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_BRANDI, Route117_Text_BrandiIntro, Route117_Text_BrandiDefeat\n\tmsgbox Route117_Text_BrandiPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route117_EventScript_Brandi",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route117/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_BRANDI"
+    ]
+  }
+}

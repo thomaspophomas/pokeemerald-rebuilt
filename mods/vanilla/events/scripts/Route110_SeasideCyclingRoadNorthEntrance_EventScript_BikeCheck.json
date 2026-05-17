@@ -1,0 +1,27 @@
+{
+  "id": "Route110_SeasideCyclingRoadNorthEntrance_EventScript_BikeCheck",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.inc",
+    "sha1": "47c0f318baf7ac84ae014f5bbe6a3bb198670c0e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.inc",
+    "rawScript": "lockall\n\tspecialvar VAR_RESULT, GetPlayerAvatarBike\n\tcall_if_eq VAR_RESULT, 2, Route110_SeasideCyclingRoadNorthEntrance_EventScript_OnMachBike\n\tgoto_if_eq VAR_RESULT, 0, Route110_SeasideCyclingRoadNorthEntrance_EventScript_NoBike\n\tsetflag FLAG_SYS_CYCLING_ROAD\n\tsetvar VAR_TEMP_1, 1\n\treleaseall\n\tend"
+  },
+  "label": "Route110_SeasideCyclingRoadNorthEntrance_EventScript_BikeCheck",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_CYCLING_ROAD"
+    ],
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_1"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+    "sha1": "13553a30435b8213726cfc4734cfaf0043bc447f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+    "rawScript": ".string \"CAPT. STERN: You're\u2026\\n\"\n\t.string \"Ah, okay, you're {PLAYER}{KUN}\u2026\\p\"\n\t.string \"Anyway, that was a tense situation!\\n\"\n\t.string \"Thank you for saving us!\\p\"\n\t.string \"Oh, yes, I almost forgot that you\\n\"\n\t.string \"even brought the parts from DEVON!$\""
+  },
+  "label": "SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+  "references": {}
+}

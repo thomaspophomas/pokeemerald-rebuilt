@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_ContestHall_Text_DidntPayAttentionToAppeal",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_BattleTentCorridor/scripts.inc",
+    "sha1": "6c49213213fbc0031669e8a364dc312cbe989a7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_BattleTentCorridor/scripts.inc",
+    "rawScript": ".string \"They didn't pay much attention to\\n\"\n\t.string \"my POK\u00e9MON's appeal\u2026\\p\"\n\t.string \"Humph, that JUDGE, he doesn't know\\n\"\n\t.string \"a good thing when he sees it.$\"\n\n@ Unused"
+  },
+  "label": "SlateportCity_ContestHall_Text_DidntPayAttentionToAppeal",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_BattleTentCorridor/scripts.inc",
+  "references": {}
+}

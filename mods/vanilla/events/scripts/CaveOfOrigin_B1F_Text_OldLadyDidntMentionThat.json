@@ -1,0 +1,19 @@
+{
+  "id": "CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+    "sha1": "fdccb9d45cf308bd7d76aa97e9b5d7eb16b80004"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+    "rawScript": ".string \"WALLACE: MT. PYRE?\\p\"\n\t.string \"But when I met the old lady there\\n\"\n\t.string \"earlier, she made no mention of it.\\p\"\n\t.string \"I very much doubt that the old lady\\n\"\n\t.string \"would try to hide something from me\u2026\\p\"\n\t.string \"{PLAYER}{KUN}, could you think about this\\n\"\n\t.string \"more carefully for me?$\""
+  },
+  "label": "CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+  "references": {}
+}

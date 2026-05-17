@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby_Text_UsedBattleBagWillBeKept",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "sha1": "b93395a7ee7156a94cfa3817fd6222cfa69e94fd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "rawScript": ".string \"The BATTLE BAG you used will be kept\\n\"\n\t.string \"in readiness for your next challenge.\\p\"\n\t.string \"{PLAYER} turned the BATTLE BAG over\\n\"\n\t.string \"for the BAG's return.$\""
+  },
+  "label": "BattleFrontier_BattlePyramidLobby_Text_UsedBattleBagWillBeKept",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+  "references": {}
+}

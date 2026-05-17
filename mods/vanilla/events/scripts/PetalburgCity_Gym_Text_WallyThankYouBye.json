@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_WallyThankYouBye",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"WALLY: Thank you, yes, it did.\\n\"\n\t.string \"Here's your POK\u00e9MON back.\\p\"\n\t.string \"{PLAYER}, thank you for coming along\\n\"\n\t.string \"with me.\\p\"\n\t.string \"You two are why I was able to catch\\n\"\n\t.string \"my POK\u00e9MON.\\p\"\n\t.string \"I promise I'll take really good\\n\"\n\t.string \"care of it.\\p\"\n\t.string \"Oh! My mom's waiting for me,\\n\"\n\t.string \"so I have to go!\\p\"\n\t.string \"Bye, {PLAYER}!$\""
+  },
+  "label": "PetalburgCity_Gym_Text_WallyThankYouBye",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

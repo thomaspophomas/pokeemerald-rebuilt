@@ -1,0 +1,23 @@
+{
+  "id": "DesertRuins_EventScript_CaveEntranceMiddle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DesertRuins/scripts.inc",
+    "sha1": "7b1ac7de378ca6e87b7881e86adb2bcb9af94a6b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DesertRuins/scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_set FLAG_SYS_REGIROCK_PUZZLE_COMPLETED, DesertRuins_EventScript_BigHoleInWall\n\tbraillemsgbox DesertRuins_Braille_UseRockSmash\n\treleaseall\n\tend"
+  },
+  "label": "DesertRuins_EventScript_CaveEntranceMiddle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DesertRuins/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_REGIROCK_PUZZLE_COMPLETED"
+    ]
+  }
+}

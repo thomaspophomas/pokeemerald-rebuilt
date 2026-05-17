@@ -1,0 +1,35 @@
+{
+  "id": "Route104_MrBrineysHouse_EventScript_SailToDewford",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+    "sha1": "1685496df25ec35fb97de14e44b3ea41b1d1c6db"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+    "rawScript": "msgbox Route104_MrBrineysHouse_Text_SetSailForDewford, MSGBOX_DEFAULT\n\tcall EventScript_BackupMrBrineyLocation\n\tsetvar VAR_BOARD_BRINEY_BOAT_STATE, 1\n\tclearflag FLAG_HIDE_ROUTE_104_MR_BRINEY\n\tsetflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY\n\tsetflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO\n\tsetvar VAR_RUSTBORO_CITY_STATE, 8\n\tsetvar VAR_ROUTE104_STATE, 2\n\tsetflag FLAG_HIDE_RUSTBORO_CITY_RIVAL\n\tsetflag FLAG_HIDE_ROUTE_104_RIVAL\n\twarp MAP_ROUTE104, 13, 51\n\twaitstate\n\treleaseall\n\tend"
+  },
+  "label": "Route104_MrBrineysHouse_EventScript_SailToDewford",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY",
+      "FLAG_HIDE_BRINEYS_HOUSE_PEEKO",
+      "FLAG_HIDE_ROUTE_104_MR_BRINEY",
+      "FLAG_HIDE_ROUTE_104_RIVAL",
+      "FLAG_HIDE_RUSTBORO_CITY_RIVAL"
+    ],
+    "vars": [
+      "VAR_BOARD_BRINEY_BOAT_STATE",
+      "VAR_ROUTE104_STATE",
+      "VAR_RUSTBORO_CITY_STATE"
+    ],
+    "maps": [
+      "MAP_ROUTE104"
+    ]
+  }
+}

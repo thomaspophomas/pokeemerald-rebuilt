@@ -1,0 +1,34 @@
+{
+  "id": "PetalburgCity_Gym_EventScript_BeginWallyTutorial",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": "addobject LOCALID_PETALBURG_GYM_WALLY\n\tplayse SE_DOOR\n\tcall_if_eq VAR_0x8008, 0, PetalburgCity_Gym_EventScript_WallyArriveSouth\n\tcall_if_eq VAR_0x8008, 1, PetalburgCity_Gym_EventScript_WallyArriveNorth\n\tcall_if_eq VAR_0x8008, 2, PetalburgCity_Gym_EventScript_WallyArriveWestEast\n\tcall_if_eq VAR_0x8008, 3, PetalburgCity_Gym_EventScript_WallyArriveWestEast\n\tmsgbox PetalburgCity_Gym_Text_WallyIdLikeAPokemon, MSGBOX_DEFAULT\n\tmsgbox PetalburgCity_Gym_Text_DadOhYoureWallyRight, MSGBOX_DEFAULT\n\tmsgbox PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon, MSGBOX_DEFAULT\n\tmsgbox PetalburgCity_Gym_Text_DadHmISee, MSGBOX_DEFAULT\n\tcall_if_eq VAR_0x8008, 0, PetalburgCity_Gym_EventScript_NormanAddressPlayerSouth\n\tcall_if_eq VAR_0x8008, 1, PetalburgCity_Gym_EventScript_NormanAddressPlayerNorth\n\tcall_if_eq VAR_0x8008, 2, PetalburgCity_Gym_EventScript_NormanAddressPlayerWest\n\tcall_if_eq VAR_0x8008, 3, PetalburgCity_Gym_EventScript_NormanAddressPlayerEast\n\tmsgbox PetalburgCity_Gym_Text_DadPlayerGoWithWally, MSGBOX_DEFAULT\n\tcall_if_eq VAR_0x8008, 0, PetalburgCity_Gym_EventScript_NormanAddressWallySouth\n\tcall_if_eq VAR_0x8008, 1, PetalburgCity_Gym_EventScript_NormanAddressWallyNorth\n\tcall_if_eq VAR_0x8008, 2, PetalburgCity_Gym_EventScript_NormanAddressWallyWest\n\tcall_if_eq VAR_0x8008, 3, PetalburgCity_Gym_EventScript_NormanAddressWallyEast\n\tmsgbox PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon, MSGBOX_DEFAULT\n\tmsgbox PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall, MSGBOX_DEFAULT\n\tmsgbox PetalburgCity_Gym_Text_WallyOhWowThankYou, MSGBOX_DEFAULT\n\tcall_if_eq VAR_0x8008, 0, PetalburgCity_Gym_EventScript_NormanFaceDoorSouth\n\tcall_if_eq VAR_0x8008, 1, PetalburgCity_Gym_EventScript_NormanFaceDoorNorth\n\tcall_if_eq VAR_0x8008, 2, PetalburgCity_Gym_EventScript_NormanFaceDoorWest\n\tcall_if_eq VAR_0x8008, 3, PetalburgCity_Gym_EventScript_NormanFaceDoorEast\n\tcall_if_eq VAR_0x8008, 0, PetalburgCity_Gym_EventScript_WallyFacePlayer\n\tcall_if_eq VAR_0x8008, 1, PetalburgCity_Gym_EventScript_WallyFaceDown\n\tcall_if_eq VAR_0x8008, 2, PetalburgCity_Gym_EventScript_WallyFacePlayer\n\tcall_if_eq VAR_0x8008, 3, PetalburgCity_Gym_EventScript_WallyFacePlayer\n\tmsgbox PetalburgCity_Gym_Text_WouldYouReallyComeWithMe, MSGBOX_DEFAULT\n\tclosemessage\n\tsetflag FLAG_DONT_TRANSITION_MUSIC\n\tplaybgm MUS_FOLLOW_ME, FALSE\n\tcall_if_eq VAR_0x8008, 0, PetalburgCity_Gym_EventScript_ExitGymWithWallySouth\n\tcall_if_eq VAR_0x8008, 1, PetalburgCity_Gym_EventScript_ExitGymWithWallyNorth\n\tcall_if_eq VAR_0x8008, 2, PetalburgCity_Gym_EventScript_ExitGymWithWallyWest\n\tcall_if_eq VAR_0x8008, 3, PetalburgCity_Gym_EventScript_ExitGymWithWallyEast\n\tremoveobject LOCALID_PETALBURG_GYM_WALLY\n\tsetflag FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM\n\tsetvar VAR_PETALBURG_GYM_STATE, 1\n\tsetvar VAR_PETALBURG_CITY_STATE, 2\n\tclearflag FLAG_HIDE_PETALBURG_CITY_WALLY\n\tclearflag FLAG_HIDE_PETALBURG_GYM_WALLY\n\tsetflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL\n\tspecial InitBirchState\n\twarp MAP_PETALBURG_CITY, 15, 8\n\twaitstate\n\trelease\n\tend"
+  },
+  "label": "PetalburgCity_Gym_EventScript_BeginWallyTutorial",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DONT_TRANSITION_MUSIC",
+      "FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL",
+      "FLAG_HIDE_PETALBURG_CITY_WALLY",
+      "FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM",
+      "FLAG_HIDE_PETALBURG_GYM_WALLY"
+    ],
+    "vars": [
+      "VAR_PETALBURG_CITY_STATE",
+      "VAR_PETALBURG_GYM_STATE"
+    ],
+    "maps": [
+      "MAP_PETALBURG_CITY"
+    ]
+  }
+}

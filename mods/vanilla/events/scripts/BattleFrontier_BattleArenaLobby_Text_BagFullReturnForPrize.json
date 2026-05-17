@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "sha1": "9504bb75bdf62b80271e2304b4804044c8db502a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "rawScript": ".string \"Oh?\\n\"\n\t.string \"Your BAG seems to be full.\\p\"\n\t.string \"I urge you to clear space and\\n\"\n\t.string \"return for your prize.$\""
+  },
+  "label": "BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+  "references": {}
+}

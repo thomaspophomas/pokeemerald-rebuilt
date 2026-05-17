@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_DevonCorp_2F_Text_DeviceToVisualizePokemonDreams",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "sha1": "7e0aa6a4df50ead64287578a24ba19b07cafbb02"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "rawScript": ".string \"I'm trying to develop a device that\\n\"\n\t.string \"visually reproduces the dreams of\\l\"\n\t.string \"POK\u00e9MON\u2026\\p\"\n\t.string \"But it's not going well.$\""
+  },
+  "label": "RustboroCity_DevonCorp_2F_Text_DeviceToVisualizePokemonDreams",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+  "references": {}
+}

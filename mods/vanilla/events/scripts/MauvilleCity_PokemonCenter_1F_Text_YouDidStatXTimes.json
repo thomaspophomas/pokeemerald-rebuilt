@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_PokemonCenter_1F_Text_YouDidStatXTimes",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/mauville_man.inc",
+    "sha1": "5d5e72f125b988a1fbd10a6264af3893ef9cc868"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/mauville_man.inc",
+    "rawScript": ".string \"What's that?!\\n\"\n\t.string \"You\u2026 You\u2026\\p\"\n\t.string \"{STR_VAR_2}\\n\"\n\t.string \"{STR_VAR_1} time(s)?!\\p\"\n\t.string \"That is indeed magnificent!\\n\"\n\t.string \"It's the birth of a new legend!$\""
+  },
+  "label": "MauvilleCity_PokemonCenter_1F_Text_YouDidStatXTimes",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/mauville_man.inc",
+  "references": {}
+}

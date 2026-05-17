@@ -1,0 +1,24 @@
+{
+  "id": "Apprentice_EventScript_WhichLvlMode",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/apprentice.inc",
+    "sha1": "353208142bca1df117076064d141b84efe196e7c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/apprentice.inc",
+    "rawScript": "apprentice_menu APPRENTICE_ASK_YES_NO\n\tgoto_if_eq VAR_RESULT, 1, Apprentice_EventScript_RejectTeach\n\tapprentice_msg FALSE, APPRENTICE_MSG_WHICH_LVL_MODE\n\tapprentice_menu APPRENTICE_ASK_WHICH_LEVEL\n\tapprentice_setlvlmode VAR_RESULT\n\tapprentice_shufflespecies\n\tapprentice_buff STR_VAR_1, APPRENTICE_BUFF_LEVEL\n\tapprentice_msg TRUE, APPRENTICE_MSG_THANKS_LVL_MODE\n\tcall Apprentice_EventScript_SetHideFlags\n\trelease\n\treleaseall\n\tswitch VAR_FACING\n\tcase DIR_NORTH, Apprentice_EventScript_LeaveNorth\n\tgoto Apprentice_EventScript_Leave\n\tend\n\n@ Its impossible to fully reject an Apprentice, they just keep asking for you to teach them"
+  },
+  "label": "Apprentice_EventScript_WhichLvlMode",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/apprentice.inc",
+  "references": {
+    "vars": [
+      "VAR_FACING",
+      "VAR_RESULT"
+    ]
+  }
+}

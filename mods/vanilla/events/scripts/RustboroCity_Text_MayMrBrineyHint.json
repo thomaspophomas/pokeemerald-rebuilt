@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Text_MayMrBrineyHint",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": ".string \"MAY: Oh, by the way, MR. BRINEY, who\\n\"\n\t.string \"I just passed\u2026\\p\"\n\t.string \"{PLAYER}{KUN}, you just moved here so you\\n\"\n\t.string \"might not know this, but MR. BRINEY\\l\"\n\t.string \"was once a revered seafarer.$\""
+  },
+  "label": "RustboroCity_Text_MayMrBrineyHint",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

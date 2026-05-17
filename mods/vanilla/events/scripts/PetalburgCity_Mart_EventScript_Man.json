@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Mart_EventScript_Man",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Mart/scripts.inc",
+    "sha1": "24d08ff30f80ab3ca9bbc615acb31bc95359ba3b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Mart/scripts.inc",
+    "rawScript": "msgbox PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou, MSGBOX_NPC\n\tend"
+  },
+  "label": "PetalburgCity_Mart_EventScript_Man",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgCity_Mart/scripts.inc",
+  "references": {}
+}

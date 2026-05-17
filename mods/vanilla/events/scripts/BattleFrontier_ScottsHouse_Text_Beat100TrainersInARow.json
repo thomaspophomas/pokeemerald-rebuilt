@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "sha1": "c30df9e905f6d4b9d9e1eaf4d4fccf30db88e083"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "rawScript": ".string \"SCOTT: Oh, my! I heard about you!\\n\"\n\t.string \"How you overwhelmed the BATTLE TOWER!\\l\"\n\t.string \"You beat over 100 TRAINERS in a row?\\p\"\n\t.string \"That's ridiculously spectacular!\\n\"\n\t.string \"You've got to have this!$\""
+  },
+  "label": "BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+  "references": {}
+}

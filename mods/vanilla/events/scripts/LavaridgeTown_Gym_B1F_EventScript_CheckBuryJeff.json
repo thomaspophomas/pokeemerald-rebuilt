@@ -1,0 +1,23 @@
+{
+  "id": "LavaridgeTown_Gym_B1F_EventScript_CheckBuryJeff",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Gym_B1F/scripts.inc",
+    "sha1": "575a7846fd222d10d87752566c50759a04aab0c8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_Gym_B1F/scripts.inc",
+    "rawScript": "goto_if_defeated TRAINER_JEFF, LavaridgeTown_Gym_B1F_EventScript_CheckBuryEli\n\tsetobjectmovementtype LOCALID_JEFF, MOVEMENT_TYPE_BURIED"
+  },
+  "label": "LavaridgeTown_Gym_B1F_EventScript_CheckBuryJeff",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LavaridgeTown_Gym_B1F/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_JEFF"
+    ]
+  }
+}

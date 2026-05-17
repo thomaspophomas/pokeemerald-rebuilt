@@ -1,0 +1,24 @@
+{
+  "id": "DesertRuins_EventScript_TryRemoveRegirock",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DesertRuins/scripts.inc",
+    "sha1": "7b1ac7de378ca6e87b7881e86adb2bcb9af94a6b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DesertRuins/scripts.inc",
+    "rawScript": "specialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn\n\tremoveobject VAR_LAST_TALKED\n\treturn"
+  },
+  "label": "DesertRuins_EventScript_TryRemoveRegirock",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DesertRuins/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ]
+  }
+}

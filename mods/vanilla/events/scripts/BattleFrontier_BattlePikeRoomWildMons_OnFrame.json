@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomWildMons_OnFrame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomWildMons/scripts.inc",
+    "sha1": "4ce9a1b97a5e7827a052a000b3fe1ab384b493fc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomWildMons/scripts.inc",
+    "rawScript": "map_script_2 VAR_TEMP_0, 0, BattleFrontier_BattlePikeRoomWildMons_EventScript_SetInWildMonRoom\n\tmap_script_2 VAR_TEMP_1, 1, BattleFrontier_BattlePikeRoomWildMons_EventScript_WarpToLobbyLost\n\t.2byte 0"
+  },
+  "label": "BattleFrontier_BattlePikeRoomWildMons_OnFrame",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomWildMons/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0",
+      "VAR_TEMP_1"
+    ]
+  }
+}

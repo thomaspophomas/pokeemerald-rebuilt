@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_DadGoCollectBadges",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"DAD: Now\u2026\\p\"\n\t.string \"{PLAYER}, if you want to become a\\n\"\n\t.string \"strong TRAINER, here's my advice.\\p\"\n\t.string \"Head for RUSTBORO CITY beyond this\\n\"\n\t.string \"town.\\p\"\n\t.string \"There, you should challenge\\n\"\n\t.string \"the GYM LEADER, ROXANNE.\\p\"\n\t.string \"After her, go on to other POK\u00e9MON\\n\"\n\t.string \"GYMS and defeat their LEADERS.\\p\"\n\t.string \"Collect BADGES from them,\\n\"\n\t.string \"understood?\\p\"\n\t.string \"Of course, I'm a GYM LEADER, too.\\n\"\n\t.string \"We'll battle one day, {PLAYER}.\\p\"\n\t.string \"But that's only after you become\\n\"\n\t.string \"stronger.$\""
+  },
+  "label": "PetalburgCity_Gym_Text_DadGoCollectBadges",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

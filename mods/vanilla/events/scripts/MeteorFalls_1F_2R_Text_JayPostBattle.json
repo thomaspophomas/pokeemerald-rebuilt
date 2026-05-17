@@ -1,0 +1,19 @@
+{
+  "id": "MeteorFalls_1F_2R_Text_JayPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+    "sha1": "09c545be014eea4099489af97aeae4f12469cf78"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+    "rawScript": ".string \"JAY: Fifty years of marriage\u2026\\p\"\n\t.string \"If we ever argued, we always settled\\n\"\n\t.string \"it with a POK\u00e9MON battle\u2026$\""
+  },
+  "label": "MeteorFalls_1F_2R_Text_JayPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+  "references": {}
+}

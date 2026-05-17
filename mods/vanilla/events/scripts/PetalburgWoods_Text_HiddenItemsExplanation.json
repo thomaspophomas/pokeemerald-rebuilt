@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgWoods_Text_HiddenItemsExplanation",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/scripts.inc",
+    "sha1": "a7a3b49731f97088b328145805430d4429326ec8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgWoods/scripts.inc",
+    "rawScript": ".string \"Sometimes, there are things on the\\n\"\n\t.string \"ground even if you can't see them.\\p\"\n\t.string \"That's why I always check where I'm\\n\"\n\t.string \"walking.$\""
+  },
+  "label": "PetalburgWoods_Text_HiddenItemsExplanation",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgWoods/scripts.inc",
+  "references": {}
+}

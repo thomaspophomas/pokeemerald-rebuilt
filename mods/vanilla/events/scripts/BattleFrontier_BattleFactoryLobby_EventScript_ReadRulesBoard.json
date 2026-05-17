@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleFactoryLobby_EventScript_ReadRulesBoard",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+    "sha1": "292da35ee750dbef6f890d691b62400b747b2d83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+    "rawScript": "message BattleFrontier_BattleFactoryLobby_Text_ReadWhichHeading\n\twaitmessage\n\tmultichoice 17, 0, MULTI_BATTLE_FACTORY_RULES, FALSE\n\tswitch VAR_RESULT\n\tcase 0, BattleFrontier_BattleFactoryLobby_EventScript_RulesBasics\n\tcase 1, BattleFrontier_BattleFactoryLobby_EventScript_RulesSwapPartner\n\tcase 2, BattleFrontier_BattleFactoryLobby_EventScript_RulesSwapNumber\n\tcase 3, BattleFrontier_BattleFactoryLobby_EventScript_RulesSwapNotes\n\tcase 4, BattleFrontier_BattleFactoryLobby_EventScript_RulesOpenLv\n\tcase 5, BattleFrontier_BattleFactoryLobby_EventScript_ExitRules\n\tcase MULTI_B_PRESSED, BattleFrontier_BattleFactoryLobby_EventScript_ExitRules\n\tend"
+  },
+  "label": "BattleFrontier_BattleFactoryLobby_EventScript_ReadRulesBoard",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

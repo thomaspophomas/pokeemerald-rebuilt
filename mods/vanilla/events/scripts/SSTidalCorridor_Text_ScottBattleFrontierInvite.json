@@ -1,0 +1,19 @@
+{
+  "id": "SSTidalCorridor_Text_ScottBattleFrontierInvite",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalCorridor/scripts.inc",
+    "sha1": "02d0cfdd4cf17b1fcf50d838485aaf7013da6b13"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalCorridor/scripts.inc",
+    "rawScript": ".string \"SCOTT: Well, hi, hi!\\n\"\n\t.string \"{PLAYER}{KUN}, {PLAYER}{KUN}!\\p\"\n\t.string \"Something's come up, so I have to\\n\"\n\t.string \"disembark, but am I glad to see you!\\p\"\n\t.string \"Congratulations, LEAGUE CHAMPION!\\p\"\n\t.string \"There's a place I'd like to invite\\n\"\n\t.string \"someone like you.\\p\"\n\t.string \"It's the\u2026\\n\"\n\t.string \"BATTLE FRONTIER!\\p\"\n\t.string \"What's the place like?\\n\"\n\t.string \"You'll understand when you see it!\\p\"\n\t.string \"I've spoken with the ship's CAPTAIN\\n\"\n\t.string \"about this.\\p\"\n\t.string \"The next time you take a ferry,\\n\"\n\t.string \"you should be able to sail to\\l\"\n\t.string \"the BATTLE FRONTIER.\\p\"\n\t.string \"Okay, {PLAYER}{KUN}, I'll be waiting for you\\n\"\n\t.string \"at the BATTLE FRONTIER!$\""
+  },
+  "label": "SSTidalCorridor_Text_ScottBattleFrontierInvite",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SSTidalCorridor/scripts.inc",
+  "references": {}
+}

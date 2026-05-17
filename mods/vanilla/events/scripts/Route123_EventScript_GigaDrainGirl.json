@@ -1,0 +1,29 @@
+{
+  "id": "Route123_EventScript_GigaDrainGirl",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route123/scripts.inc",
+    "sha1": "6ee451eb8a5f0717aed9ff7e71878f845e9727c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route123/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_TM_GIGA_DRAIN, Route123_EventScript_ReceivedGigaDrain\n\tmsgbox Route123_Text_LoveGrassMonsHaveAny, MSGBOX_DEFAULT\n\tspecial IsGrassTypeInParty\n\tgoto_if_eq VAR_RESULT, FALSE, Route123_EventScript_NoGrassMons\n\tmsgbox Route123_Text_YouLikeGrassMonsTooHaveThis, MSGBOX_DEFAULT\n\tgiveitem ITEM_TM_GIGA_DRAIN\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_RECEIVED_TM_GIGA_DRAIN\n\tmsgbox Route123_Text_CheckTreesWithMyGrassMon, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route123_EventScript_GigaDrainGirl",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route123/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_TM_GIGA_DRAIN"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_TM_GIGA_DRAIN"
+    ]
+  }
+}

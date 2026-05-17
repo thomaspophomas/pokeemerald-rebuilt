@@ -1,0 +1,23 @@
+{
+  "id": "SealedChamber_OuterRoom_EventScript_InnerRoomEntranceWall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SealedChamber_OuterRoom/scripts.inc",
+    "sha1": "dee4c4e070ebe2e7c86a5d05381bc15f82ba626a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SealedChamber_OuterRoom/scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_set FLAG_SYS_BRAILLE_DIG, SealedChamber_OuterRoom_EventScript_HoleInWall\n\tbraillemsgbox SealedChamber_OuterRoom_Braille_DigHere\n\treleaseall\n\tend"
+  },
+  "label": "SealedChamber_OuterRoom_EventScript_InnerRoomEntranceWall",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SealedChamber_OuterRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_BRAILLE_DIG"
+    ]
+  }
+}

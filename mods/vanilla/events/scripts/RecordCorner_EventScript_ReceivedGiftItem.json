@@ -1,0 +1,23 @@
+{
+  "id": "RecordCorner_EventScript_ReceivedGiftItem",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "bufferitemname STR_VAR_2, VAR_TEMP_RECORD_MIX_GIFT_ITEM\n\tmessage RecordCorner_Text_PlayerSentOverOneX\n\twaitmessage\n\twaitbuttonpress\n\treleaseall\n\tend"
+  },
+  "label": "RecordCorner_EventScript_ReceivedGiftItem",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_RECORD_MIX_GIFT_ITEM"
+    ]
+  }
+}

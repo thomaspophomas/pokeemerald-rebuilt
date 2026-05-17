@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeLobby_Text_SaveBeforeChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "sha1": "e2be0fe89296e221d6bdf7bc81fdcf739064bd1b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "rawScript": ".string \"Before starting your Battle Choice\\n\"\n\t.string \"challenge, I must save the game.\\l\"\n\t.string \"Is that acceptable?$\""
+  },
+  "label": "BattleFrontier_BattlePikeLobby_Text_SaveBeforeChallenge",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Route110_TrickHouseEnd_Text_AllNightToPlantTrees",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "sha1": "3b39ac1484a417dc8392e9b8712bc29e12891169"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "rawScript": ".string \"It took me all night to plant all those\\n\"\n\t.string \"trees\u2026\\p\"\n\t.string \"You're almost my equal in greatness by\\n\"\n\t.string \"one, two, three, four, five, six places!$\""
+  },
+  "label": "Route110_TrickHouseEnd_Text_AllNightToPlantTrees",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+  "references": {}
+}

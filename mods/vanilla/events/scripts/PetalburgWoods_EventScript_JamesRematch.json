@@ -1,0 +1,23 @@
+{
+  "id": "PetalburgWoods_EventScript_JamesRematch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/scripts.inc",
+    "sha1": "a7a3b49731f97088b328145805430d4429326ec8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgWoods/scripts.inc",
+    "rawScript": "trainerbattle_rematch TRAINER_JAMES_1, PetalburgWoods_Text_MyPokemonHaveGrown, PetalburgWoods_Text_CantBePopularIfLose\n\tmsgbox PetalburgWoods_Text_IveBeenTrainingHard, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "PetalburgWoods_EventScript_JamesRematch",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgWoods/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_JAMES_1"
+    ]
+  }
+}

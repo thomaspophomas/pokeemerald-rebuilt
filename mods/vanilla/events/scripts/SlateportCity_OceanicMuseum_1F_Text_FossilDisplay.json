@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_OceanicMuseum_1F_Text_FossilDisplay",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "sha1": "7a1e00c78bbfbd0fbd6eb59a84a4d4e7114e4261"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "rawScript": ".string \"It's a fossil with wavy ridges on it.\\p\"\n\t.string \"\u201cSoil on the ocean floor gets scoured\\n\"\n\t.string \"by the tide.\\p\"\n\t.string \"\u201cThe flowing seawater marks the soil\\n\"\n\t.string \"with small ridges and valleys.\\p\"\n\t.string \"\u201cIf this soil becomes fossilized, it is\\n\"\n\t.string \"called a ripple mark.\u201d$\""
+  },
+  "label": "SlateportCity_OceanicMuseum_1F_Text_FossilDisplay",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+  "references": {}
+}

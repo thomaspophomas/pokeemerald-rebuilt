@@ -1,0 +1,25 @@
+{
+  "id": "ContestHall_EventScript_AudienceReactToContestant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": "call ContestHall_EventScript_TryWaitForLink\n\tapplymovement LOCALID_CONTEST_MC, ContestHall_Movement_AudienceMemberLookLeft\n\twaitmovement 0\n\tplayse SE_M_ENCORE2\n\tcall ContestHall_EventScript_VObjectAudienceLookAround\n\tapplymovement LOCALID_CONTEST_AUDIENCE_5, ContestHall_Movement_AudienceMemberLookRight\n\tapplymovement LOCALID_CONTEST_AUDIENCE_2, ContestHall_Movement_AudienceMemberLookDown\n\tapplymovement LOCALID_CONTEST_AUDIENCE_3, ContestHall_Movement_AudienceMemberLookRight\n\twaitmovement 0\n\tapplymovement LOCALID_CONTEST_MC, ContestHall_Movement_AudienceMemberLookRight\n\twaitmovement 0\n\tapplymovement LOCALID_CONTEST_AUDIENCE_6, ContestHall_Movement_AudienceMemberLookLeft\n\tapplymovement LOCALID_CONTEST_AUDIENCE_7, ContestHall_Movement_AudienceMemberLookDown\n\tapplymovement LOCALID_CONTEST_AUDIENCE_1, ContestHall_Movement_AudienceMemberLookUp\n\tapplymovement LOCALID_CONTEST_AUDIENCE_4, ContestHall_Movement_AudienceMemberLookLeft\n\twaitmovement 0\n\tapplymovement LOCALID_CONTEST_MC, ContestHall_Movement_MCLookAtJudge\n\twaitmovement 0\n\tapplymovement LOCALID_CONTEST_MC, ContestHall_Movement_MCWalkInPlaceDown\n\tapplymovement LOCALID_CONTEST_JUDGE, ContestHall_Movement_JudgeLookAtMC\n\twaitmovement 0\n\treleaseall\n\tcall ContestHall_EventScript_TryWaitForLink\n\treturn\n\n@ For below VAR_TEMP_0 is the number of heart emotes to try to display in the audience\n@ The number of hearts to try to display is based on the condition of the presented pokemon and the rank\n@ For each heart to display a random audience member is chosen, and a new one chosen if they already displayed a heart\n@ VAR_TEMP_1 through VAR_TEMP_8 represent each of the 8 audience members that are actual object events\n@    and are set to 9 if they havent displayed a heart yet, and 1 if they have"
+  },
+  "label": "ContestHall_EventScript_AudienceReactToContestant",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0",
+      "VAR_TEMP_1",
+      "VAR_TEMP_8"
+    ]
+  }
+}

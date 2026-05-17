@@ -1,0 +1,19 @@
+{
+  "id": "BerryTree_EventScript_SetAdverbPoor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_tree.inc",
+    "sha1": "749b44e862850f19e689ac4622065bdedf7c8393"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_tree.inc",
+    "rawScript": "bufferstring STR_VAR_2, BerryTree_Text_CareAdverbPoor\n\treturn\n\n@ VAR_0x8006 here is the number of berries"
+  },
+  "label": "BerryTree_EventScript_SetAdverbPoor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_tree.inc",
+  "references": {}
+}

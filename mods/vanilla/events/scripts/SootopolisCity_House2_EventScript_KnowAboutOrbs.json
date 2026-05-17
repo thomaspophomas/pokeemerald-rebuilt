@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_House2_EventScript_KnowAboutOrbs",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_House2/scripts.inc",
+    "sha1": "0fd7caf62f8684f92dd2533a67d3b0712c346c9c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_House2/scripts.inc",
+    "rawScript": "msgbox SootopolisCity_House2_Text_YesTwoOrbsSideBySide, MSGBOX_DEFAULT\n\treturn"
+  },
+  "label": "SootopolisCity_House2_EventScript_KnowAboutOrbs",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity_House2/scripts.inc",
+  "references": {}
+}

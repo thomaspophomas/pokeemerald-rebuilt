@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_PokemonCenter_1F_EventScript_Giddy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/mauville_man.inc",
+    "sha1": "5d5e72f125b988a1fbd10a6264af3893ef9cc868"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/mauville_man.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmsgbox MauvilleCity_PokemonCenter_1F_Text_HearMyStory, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, MauvilleCity_PokemonCenter_1F_EventScript_TryTellTale\n\tgoto_if_eq VAR_RESULT, NO, MauvilleCity_PokemonCenter_1F_EventScript_DeclineGiddy\n\tend"
+  },
+  "label": "MauvilleCity_PokemonCenter_1F_EventScript_Giddy",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/mauville_man.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

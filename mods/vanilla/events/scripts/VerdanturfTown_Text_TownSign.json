@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_Text_TownSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown/scripts.inc",
+    "sha1": "4cf44981cc32f958f4c2d2c20def161a84763311"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown/scripts.inc",
+    "rawScript": ".string \"VERDANTURF TOWN\\p\"\n\t.string \"\u201cThe windswept highlands with the\\n\"\n\t.string \"sweet fragrance of grass.\u201d$\""
+  },
+  "label": "VerdanturfTown_Text_TownSign",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown/scripts.inc",
+  "references": {}
+}

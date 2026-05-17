@@ -1,0 +1,23 @@
+{
+  "id": "CaveOfOrigin_EventScript_Shake2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cave_of_origin.inc",
+    "sha1": "3b25b8696d85672c07bb7fd23a4bb27522009fc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cave_of_origin.inc",
+    "rawScript": "lockall\n\tsetvar VAR_TEMP_2, 1\n\tgoto CaveOfOrigin_EventScript_Shake\n\tend"
+  },
+  "label": "CaveOfOrigin_EventScript_Shake2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cave_of_origin.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_2"
+    ]
+  }
+}

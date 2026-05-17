@@ -1,0 +1,26 @@
+{
+  "id": "Route110_TrickHousePuzzle7_EventScript_TeleportPad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle7/scripts.inc",
+    "sha1": "d0faf89c20b52e4b3f4ef5191cdd1e42d9c73feb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle7/scripts.inc",
+    "rawScript": "lockall\n\tsetvar VAR_TRICK_HOUSE_PUZZLE_7_STATE_2, 1\n\twarpteleport MAP_ROUTE110_TRICK_HOUSE_PUZZLE7, 3, 19\n\twaitstate\n\treleaseall\n\tend\n\n@ All the below switch scripts are unused leftover from R/S"
+  },
+  "label": "Route110_TrickHousePuzzle7_EventScript_TeleportPad",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHousePuzzle7/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TRICK_HOUSE_PUZZLE_7_STATE_2"
+    ],
+    "maps": [
+      "MAP_ROUTE110_TRICK_HOUSE_PUZZLE7"
+    ]
+  }
+}

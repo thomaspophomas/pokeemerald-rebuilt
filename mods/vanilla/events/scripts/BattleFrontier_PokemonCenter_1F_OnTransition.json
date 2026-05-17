@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_PokemonCenter_1F_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc",
+    "sha1": "e4fb392a503e70d6989c6dc6307b6eca9019ac04"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc",
+    "rawScript": "setrespawn HEAL_LOCATION_BATTLE_FRONTIER_OUTSIDE_EAST\n\tend"
+  },
+  "label": "BattleFrontier_PokemonCenter_1F_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,42 @@
+{
+  "id": "multiplayer_options",
+  "domain": "state",
+  "schemaVersion": 1,
+  "source": {
+    "path": "include/multiplayer/types.h",
+    "sha1": "bbcdb739afb23741dd36e60212398cbf14335e0b"
+  },
+  "legacy": {
+    "kind": "multiplayer_state_contract",
+    "sourcePath": "include/multiplayer/types.h"
+  },
+  "resourceLocks": [
+    "MAP_SCRIPT",
+    "OBJECT_EVENT",
+    "TRAINER_BATTLE",
+    "SCRIPT"
+  ],
+  "commitKinds": [
+    "MULTIPLAYER_COMMIT_BATTLE",
+    "MULTIPLAYER_COMMIT_ITEM",
+    "MULTIPLAYER_COMMIT_MONEY",
+    "MULTIPLAYER_COMMIT_NONE",
+    "MULTIPLAYER_COMMIT_OUTFIT",
+    "MULTIPLAYER_COMMIT_POKEMON",
+    "MULTIPLAYER_COMMIT_RESULT_OK",
+    "MULTIPLAYER_COMMIT_RESULT_PENDING",
+    "MULTIPLAYER_COMMIT_RESULT_REJECTED",
+    "MULTIPLAYER_COMMIT_RESULT_ROLLED_BACK",
+    "MULTIPLAYER_COMMIT_STATE_COMMITTED",
+    "MULTIPLAYER_COMMIT_STATE_NONE",
+    "MULTIPLAYER_COMMIT_STATE_PREPARED",
+    "MULTIPLAYER_COMMIT_STATE_ROLLED_BACK",
+    "MULTIPLAYER_COMMIT_STORY_FLAG",
+    "MULTIPLAYER_COMMIT_TRADE",
+    "MULTIPLAYER_COMMIT_WEATHER_REWARD"
+  ],
+  "legacyFiles": [
+    "include/multiplayer/types.h",
+    "src/multiplayer/commit.c"
+  ]
+}

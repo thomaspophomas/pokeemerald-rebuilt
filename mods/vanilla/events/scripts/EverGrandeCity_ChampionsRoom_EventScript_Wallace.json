@@ -1,0 +1,23 @@
+{
+  "id": "EverGrandeCity_ChampionsRoom_EventScript_Wallace",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "sha1": "4f73bd77d8715e7ac12ff1ac731985eaf75ecd5e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "rawScript": "playbgm MUS_ENCOUNTER_CHAMPION, FALSE\n\tmsgbox EverGrandeCity_ChampionsRoom_Text_IntroSpeech, MSGBOX_DEFAULT\n\ttrainerbattle_no_intro TRAINER_WALLACE, EverGrandeCity_ChampionsRoom_Text_Defeat\n\tgoto EverGrandeCity_ChampionsRoom_EventScript_Defeated\n\tend"
+  },
+  "label": "EverGrandeCity_ChampionsRoom_EventScript_Wallace",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_WALLACE"
+    ]
+  }
+}

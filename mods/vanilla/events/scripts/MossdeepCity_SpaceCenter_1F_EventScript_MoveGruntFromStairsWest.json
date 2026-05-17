@@ -1,0 +1,23 @@
+{
+  "id": "MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsWest",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "sha1": "a0cf82d2df089035fb81d02a013736aab95a13d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "rawScript": "applymovement LOCALID_SPACE_CENTER_1F_STAIR_GRUNT, MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairsWest\n\twaitmovement 0\n\tsetvar VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 1\n\trelease\n\tend\n\n@ Functionally unused by mistake. The movement is handled anyway after the switch (see above)\n@ This also means VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE can never be 3"
+  },
+  "label": "MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsWest",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE"
+    ]
+  }
+}

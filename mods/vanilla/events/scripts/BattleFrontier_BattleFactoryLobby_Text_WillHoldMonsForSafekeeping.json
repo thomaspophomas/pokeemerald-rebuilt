@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleFactoryLobby_Text_WillHoldMonsForSafekeeping",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+    "sha1": "292da35ee750dbef6f890d691b62400b747b2d83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+    "rawScript": ".string \"Okay, I will hold your POK\u00e9MON for\\n\"\n\t.string \"safekeeping while you compete.$\""
+  },
+  "label": "BattleFrontier_BattleFactoryLobby_Text_WillHoldMonsForSafekeeping",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+  "references": {}
+}

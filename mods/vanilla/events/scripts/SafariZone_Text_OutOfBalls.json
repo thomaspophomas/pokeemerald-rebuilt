@@ -1,0 +1,19 @@
+{
+  "id": "SafariZone_Text_OutOfBalls",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/safari_zone.inc",
+    "sha1": "435880c660a34d3e51dcedb348a41731d28af7cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/safari_zone.inc",
+    "rawScript": ".string \"You've run out of SAFARI BALLS.\\n\"\n\t.string \"Your SAFARI Game is over.$\""
+  },
+  "label": "SafariZone_Text_OutOfBalls",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/safari_zone.inc",
+  "references": {}
+}

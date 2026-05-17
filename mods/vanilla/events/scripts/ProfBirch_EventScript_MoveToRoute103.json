@@ -1,0 +1,25 @@
+{
+  "id": "ProfBirch_EventScript_MoveToRoute103",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/prof_birch.inc",
+    "sha1": "73235564dd42f1e69875bc9af32cbeb616f5a106"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/prof_birch.inc",
+    "rawScript": "clearflag FLAG_HIDE_ROUTE_103_BIRCH\n\tsetflag FLAG_HIDE_ROUTE_101_BIRCH\n\tsetflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH\n\tsetflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_UNKNOWN_0x380\n\treturn"
+  },
+  "label": "ProfBirch_EventScript_MoveToRoute103",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/prof_birch.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH",
+      "FLAG_HIDE_ROUTE_101_BIRCH",
+      "FLAG_HIDE_ROUTE_103_BIRCH"
+    ]
+  }
+}

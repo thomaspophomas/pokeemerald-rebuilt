@@ -1,0 +1,26 @@
+{
+  "id": "Route114_EventScript_Man",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114/scripts.inc",
+    "sha1": "0c57a7112b8feadf446551150c5dcc13761f8eeb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tdotimebasedevents\n\tgoto_if_set FLAG_DAILY_ROUTE_114_RECEIVED_BERRY, Route114_EventScript_ReceivedBerry\n\tmsgbox Route114_Text_LoveUsingBerryCrushShareBerry, MSGBOX_DEFAULT\n\trandom NUM_ROUTE_114_MAN_BERRIES\n\taddvar VAR_RESULT, NUM_ROUTE_114_MAN_BERRIES_SKIPPED\n\taddvar VAR_RESULT, FIRST_BERRY_INDEX\n\tgiveitem VAR_RESULT\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_DAILY_ROUTE_114_RECEIVED_BERRY\n\tmsgbox Route114_Text_TryBerryCrushWithFriends, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route114_EventScript_Man",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route114/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DAILY_ROUTE_114_RECEIVED_BERRY"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "MauvilleCity_House2_EventScript_AskToTradeForHarborMail",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_House2/scripts.inc",
+    "sha1": "a6d03164752c7787533d05baf97465a81271b528"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_House2/scripts.inc",
+    "rawScript": "playse SE_PIN\n\tapplymovement VAR_LAST_TALKED, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement VAR_LAST_TALKED, Common_Movement_Delay48\n\twaitmovement 0\n\tmsgbox MauvilleCity_House2_Text_TradeHarborMailForCoinCase, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, MauvilleCity_House2_EventScript_AcceptTrade\n\tgoto_if_eq VAR_RESULT, NO, MauvilleCity_House2_EventScript_DeclineTrade\n\tend"
+  },
+  "label": "MauvilleCity_House2_EventScript_AskToTradeForHarborMail",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_House2/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ]
+  }
+}

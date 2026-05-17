@@ -1,0 +1,26 @@
+{
+  "id": "LittlerootTown_EventScript_Mom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tcheckplayergender\n\tcall_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_SetHomeDoorCoordsMale\n\tcall_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_SetHomeDoorCoordsFemale\n\tcall LittlerootTown_EventScript_GiveRunningShoes\n\tapplymovement LOCALID_LITTLEROOT_MOM, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\topendoor VAR_0x8009, VAR_0x800A\n\twaitdooranim\n\tapplymovement LOCALID_LITTLEROOT_MOM, LittlerootTown_Movement_MomExitThroughDoor\n\twaitmovement 0\n\thideobjectat LOCALID_LITTLEROOT_MOM, MAP_LITTLEROOT_TOWN\n\tclosedoor VAR_0x8009, VAR_0x800A\n\twaitdooranim\n\tgoto LittlerootTown_EventScript_SetReceivedRunningShoes\n\tend"
+  },
+  "label": "LittlerootTown_EventScript_Mom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "maps": [
+      "MAP_LITTLEROOT_TOWN"
+    ]
+  }
+}

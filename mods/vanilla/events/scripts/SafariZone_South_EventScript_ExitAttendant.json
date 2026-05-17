@@ -1,0 +1,26 @@
+{
+  "id": "SafariZone_South_EventScript_ExitAttendant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_South/scripts.inc",
+    "sha1": "f646b8fd9a41bcca9341c62dd81202b659f66065"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SafariZone_South/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_unset FLAG_GOOD_LUCK_SAFARI_ZONE, SafariZone_South_EventScript_GoodLuck\n\tmsgbox SafariZone_South_Text_StillHaveTimeExit, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, SafariZone_South_EventScript_ExitEarly\n\tmsgbox SafariZone_South_Text_EnjoyTheRestOfYourAdventure, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "SafariZone_South_EventScript_ExitAttendant",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SafariZone_South/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_GOOD_LUCK_SAFARI_ZONE"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

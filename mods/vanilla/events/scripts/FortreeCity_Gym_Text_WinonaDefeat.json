@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Gym_Text_WinonaDefeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/scripts.inc",
+    "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Gym/scripts.inc",
+    "rawScript": ".string \"Never before have I seen a TRAINER\\n\"\n\t.string \"command POK\u00e9MON with more grace\\l\"\n\t.string \"than I\u2026\\p\"\n\t.string \"In recognition of your prowess,\\n\"\n\t.string \"I present to you this GYM BADGE.$\""
+  },
+  "label": "FortreeCity_Gym_Text_WinonaDefeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_Gym/scripts.inc",
+  "references": {}
+}

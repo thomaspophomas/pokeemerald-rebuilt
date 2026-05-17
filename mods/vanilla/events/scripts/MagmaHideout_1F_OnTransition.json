@@ -1,0 +1,23 @@
+{
+  "id": "MagmaHideout_1F_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_1F/scripts.inc",
+    "sha1": "56855cc0486a1bd6fed1956c54134b994aeb627c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_1F/scripts.inc",
+    "rawScript": "setvar VAR_JAGGED_PASS_ASH_WEATHER, 0\n\tend"
+  },
+  "label": "MagmaHideout_1F_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/MagmaHideout_1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_JAGGED_PASS_ASH_WEATHER"
+    ]
+  }
+}

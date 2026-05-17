@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomWildMons_EventScript_Exit",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/battle_pike.inc",
+    "sha1": "f01ae67ca8ba2e8860c192c38f413ebd89aa5204"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/battle_pike.inc",
+    "rawScript": "pike_exitwildmonroom\n\tpike_ispartyfullhealth\n\tcall_if_eq VAR_RESULT, TRUE, BattleFrontier_BattlePikeRoom_EventScript_DisableHealing\n\tcall_if_ne VAR_RESULT, TRUE, BattleFrontier_BattlePikeRoom_EventScript_EnableHealing\n\tpike_get PIKE_DATA_WIN_STREAK\n\taddvar VAR_RESULT, 1\n\tpike_set PIKE_DATA_WIN_STREAK, VAR_RESULT\n\tfrontier_get FRONTIER_DATA_BATTLE_NUM\n\taddvar VAR_RESULT, 1\n\tfrontier_set FRONTIER_DATA_BATTLE_NUM, VAR_RESULT\n\tpike_isfinalroom\n\tcall_if_eq VAR_RESULT, TRUE, BattleFrontier_BattlePikeRoom_EventScript_WarpToFinalRoom\n\tcall_if_eq VAR_RESULT, FALSE, BattleFrontier_BattlePikeRoom_EventScript_WarpToThreePathRoom\n\twaitstate\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeRoomWildMons_EventScript_Exit",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/battle_pike.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

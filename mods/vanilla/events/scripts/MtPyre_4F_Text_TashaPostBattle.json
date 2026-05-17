@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_4F_Text_TashaPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_5F/scripts.inc",
+    "sha1": "3adad473684ea761e469fef968141f4151fa1e7a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_5F/scripts.inc",
+    "rawScript": ".string \"I want to see dreadful things\u2026\\n\"\n\t.string \"I can't leave\u2026\\p\"\n\t.string \"Stay\u2026\\n\"\n\t.string \"Won't you stay with me?$\""
+  },
+  "label": "MtPyre_4F_Text_TashaPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_5F/scripts.inc",
+  "references": {}
+}

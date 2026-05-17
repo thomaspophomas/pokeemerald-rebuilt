@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_BrendansHouse_2F_EventScript_WallClock",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/players_house.inc",
+    "sha1": "0f3da1347500315ef212a252409f1d410b0d226c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/players_house.inc",
+    "rawScript": "lockall\n\tsetvar VAR_0x8004, MALE\n\tgoto PlayersHouse_2F_EventScript_WallClock\n\tend"
+  },
+  "label": "LittlerootTown_BrendansHouse_2F_EventScript_WallClock",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/players_house.inc",
+  "references": {}
+}

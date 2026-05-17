@@ -1,0 +1,23 @@
+{
+  "id": "VerdanturfTown_BattleTentLobby_EventScript_AskEnterChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "sha1": "be67ab8ba625b73e575c1594a46cbee43b6f03d9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "rawScript": "message VerdanturfTown_BattleTentLobby_Text_TakeChallenge\n\twaitmessage\n\tmultichoice 17, 6, MULTI_CHALLENGEINFO, FALSE\n\tswitch VAR_RESULT\n\tcase 0, VerdanturfTown_BattleTentLobby_EventScript_TryEnterChallenge\n\tcase 1, VerdanturfTown_BattleTentLobby_EventScript_ExplainChallenge\n\tcase 2, VerdanturfTown_BattleTentLobby_EventScript_CancelChallenge\n\tcase MULTI_B_PRESSED, VerdanturfTown_BattleTentLobby_EventScript_CancelChallenge"
+  },
+  "label": "VerdanturfTown_BattleTentLobby_EventScript_AskEnterChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

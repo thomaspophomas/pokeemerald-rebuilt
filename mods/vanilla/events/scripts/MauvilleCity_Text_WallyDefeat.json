@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_WallyDefeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"WALLY: \u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"I lost\u2026$\""
+  },
+  "label": "MauvilleCity_Text_WallyDefeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

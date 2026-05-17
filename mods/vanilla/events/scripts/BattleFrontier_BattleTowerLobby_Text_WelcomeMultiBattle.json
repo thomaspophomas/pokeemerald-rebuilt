@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_Text_WelcomeMultiBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": ".string \"Where the talents of TRAINERS\\n\"\n\t.string \"are put to the test!\\p\"\n\t.string \"Welcome to the BATTLE TOWER!\\p\"\n\t.string \"I am your guide to the MULTI\\n\"\n\t.string \"BATTLE ROOMS.$\""
+  },
+  "label": "BattleFrontier_BattleTowerLobby_Text_WelcomeMultiBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {}
+}

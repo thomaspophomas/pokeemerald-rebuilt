@@ -190,6 +190,8 @@ for domain in maps npcs trainers trainer_parties weather time flags events langu
     fi
 done
 
+python scripts/ci/check_vanilla_semantic_coverage.py
+
 if ! grep -R -n "ModApi_Init" src/engine include/engine >/tmp/architecture_guard_matches.txt 2>/dev/null; then
     echo "The mod API must attach through engine/module_registry." >&2
     exit 1

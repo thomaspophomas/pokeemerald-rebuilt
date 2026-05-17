@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Mart_Text_ItemsToTemporarilyElevateStats",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Mart/scripts.inc",
+    "sha1": "d8b603abe3cbe455d4b20a35653269b7e46b6b14"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Mart/scripts.inc",
+    "rawScript": ".string \"There are items that temporarily\\n\"\n\t.string \"elevate the stats of POK\u00e9MON.\\p\"\n\t.string \"The ones I know you use in battle\\n\"\n\t.string \"are X ATTACK and X DEFEND\u2026\\p\"\n\t.string \"I do believe that there are others\\n\"\n\t.string \"like them.$\""
+  },
+  "label": "MauvilleCity_Mart_Text_ItemsToTemporarilyElevateStats",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_Mart/scripts.inc",
+  "references": {}
+}

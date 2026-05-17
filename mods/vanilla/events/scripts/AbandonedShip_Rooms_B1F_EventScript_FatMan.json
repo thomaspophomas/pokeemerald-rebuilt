@@ -1,0 +1,19 @@
+{
+  "id": "AbandonedShip_Rooms_B1F_EventScript_FatMan",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Rooms_B1F/scripts.inc",
+    "sha1": "0f716cc0922c8a7607eae2e979b7c689b3e75400"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_Rooms_B1F/scripts.inc",
+    "rawScript": "msgbox AbandonedShip_Rooms_B1F_Text_GettingQueasy, MSGBOX_NPC\n\tend"
+  },
+  "label": "AbandonedShip_Rooms_B1F_EventScript_FatMan",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AbandonedShip_Rooms_B1F/scripts.inc",
+  "references": {}
+}

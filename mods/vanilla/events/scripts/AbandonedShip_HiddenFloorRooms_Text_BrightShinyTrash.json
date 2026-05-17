@@ -1,0 +1,19 @@
+{
+  "id": "AbandonedShip_HiddenFloorRooms_Text_BrightShinyTrash",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_HiddenFloorRooms/scripts.inc",
+    "sha1": "e64dd6958de17dd29909a779ee9862cda0de7b51"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_HiddenFloorRooms/scripts.inc",
+    "rawScript": ".string \"It's bright and shiny!\\n\"\n\t.string \"But it's just trash\u2026$\""
+  },
+  "label": "AbandonedShip_HiddenFloorRooms_Text_BrightShinyTrash",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AbandonedShip_HiddenFloorRooms/scripts.inc",
+  "references": {}
+}

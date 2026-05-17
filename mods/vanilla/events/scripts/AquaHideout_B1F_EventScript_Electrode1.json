@@ -1,0 +1,27 @@
+{
+  "id": "AquaHideout_B1F_EventScript_Electrode1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B1F/scripts.inc",
+    "sha1": "2923188c4ae1df18ace73c8a8f87ea7f1d1e7886"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_B1F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tsetwildbattle SPECIES_ELECTRODE, 30\n\twaitse\n\tplaymoncry SPECIES_ELECTRODE, CRY_MODE_ENCOUNTER\n\tdelay 40\n\twaitmoncry\n\tsetflag FLAG_SYS_CTRL_OBJ_DELETE\n\tdowildbattle\n\tclearflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_WON, AquaHideout_B1F_EventScript_DefeatedElectrode1\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_RAN, AquaHideout_B1F_EventScript_DefeatedElectrode1\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, AquaHideout_B1F_EventScript_DefeatedElectrode1\n\tsetflag FLAG_DEFEATED_ELECTRODE_1_AQUA_HIDEOUT\n\trelease\n\tend"
+  },
+  "label": "AquaHideout_B1F_EventScript_Electrode1",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AquaHideout_B1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_ELECTRODE_1_AQUA_HIDEOUT",
+      "FLAG_SYS_CTRL_OBJ_DELETE"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

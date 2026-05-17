@@ -1,0 +1,23 @@
+{
+  "id": "SafariZone_South_EventScript_EnterSafariZone",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_South/scripts.inc",
+    "sha1": "f646b8fd9a41bcca9341c62dd81202b659f66065"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SafariZone_South/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_PLAYER, SafariZone_South_Movement_PlayerEnter\n\twaitmovement 0\n\tapplymovement LOCALID_SAFARI_EXIT_ATTENDANT, SafariZone_South_Movement_ExitAttendantBlockDoor\n\twaitmovement 0\n\tsetobjectxyperm LOCALID_SAFARI_EXIT_ATTENDANT, 32, 34\n\tsetvar VAR_SAFARI_ZONE_STATE, 0\n\treleaseall\n\tend"
+  },
+  "label": "SafariZone_South_EventScript_EnterSafariZone",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SafariZone_South/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_SAFARI_ZONE_STATE"
+    ]
+  }
+}

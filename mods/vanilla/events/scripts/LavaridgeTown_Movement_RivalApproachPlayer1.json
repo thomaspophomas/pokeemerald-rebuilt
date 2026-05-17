@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Movement_RivalApproachPlayer1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": "walk_left\n\twalk_left\n\twalk_up\n\tstep_end"
+  },
+  "label": "LavaridgeTown_Movement_RivalApproachPlayer1",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {}
+}

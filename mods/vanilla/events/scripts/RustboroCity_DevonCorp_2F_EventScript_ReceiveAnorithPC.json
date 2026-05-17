@@ -1,0 +1,23 @@
+{
+  "id": "RustboroCity_DevonCorp_2F_EventScript_ReceiveAnorithPC",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "sha1": "7e0aa6a4df50ead64287578a24ba19b07cafbb02"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "rawScript": "call RustboroCity_DevonCorp_2F_EventScript_ReceivedAnorithFanfare\n\tmsgbox gText_NicknameThisPokemon, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, RustboroCity_DevonCorp_2F_EventScript_TransferAnorithToPC\n\tcall Common_EventScript_NameReceivedBoxMon\n\tgoto RustboroCity_DevonCorp_2F_EventScript_TransferAnorithToPC\n\tend"
+  },
+  "label": "RustboroCity_DevonCorp_2F_EventScript_ReceiveAnorithPC",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

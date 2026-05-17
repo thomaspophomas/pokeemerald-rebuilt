@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomWildMons_EventScript_SetEnteredRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/battle_pike.inc",
+    "sha1": "f01ae67ca8ba2e8860c192c38f413ebd89aa5204"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/battle_pike.inc",
+    "rawScript": "setvar VAR_TEMP_3, 1\n\tsetvar VAR_TEMP_2, 1\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeRoomWildMons_EventScript_SetEnteredRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/battle_pike.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_2",
+      "VAR_TEMP_3"
+    ]
+  }
+}

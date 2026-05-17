@@ -1,0 +1,19 @@
+{
+  "id": "Route119_WeatherInstitute_2F_Text_NoAbnormalWeather",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "sha1": "fb62e5a84003aa6247f1e7fe6ea409ec86ac92cc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "rawScript": ".string \"Abnormal weather conditions are\\n\"\n\t.string \"no longer being reported.\\p\"\n\t.string \"The occasional rainfall is a blessing,\\n\"\n\t.string \"really.$\""
+  },
+  "label": "Route119_WeatherInstitute_2F_Text_NoAbnormalWeather",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+  "references": {}
+}

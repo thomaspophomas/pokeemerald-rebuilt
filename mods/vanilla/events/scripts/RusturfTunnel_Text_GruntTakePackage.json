@@ -1,0 +1,19 @@
+{
+  "id": "RusturfTunnel_Text_GruntTakePackage",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/scripts.inc",
+    "sha1": "76035185b0aabddf11657305417168db4c1bb93d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RusturfTunnel/scripts.inc",
+    "rawScript": ".string \"This is plain not right\u2026\\p\"\n\t.string \"The BOSS told me this would be a\\n\"\n\t.string \"slick-and-easy job to pull.\\p\"\n\t.string \"All I had to do was steal some package\\n\"\n\t.string \"from DEVON.\\p\"\n\t.string \"Tch!\\n\"\n\t.string \"You want it back that badly, take it!$\""
+  },
+  "label": "RusturfTunnel_Text_GruntTakePackage",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RusturfTunnel/scripts.inc",
+  "references": {}
+}

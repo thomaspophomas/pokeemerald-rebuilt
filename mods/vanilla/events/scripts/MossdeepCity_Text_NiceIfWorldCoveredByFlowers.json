@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Text_NiceIfWorldCoveredByFlowers",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/scripts.inc",
+    "sha1": "33f0f7f83a475484aaca395542c6bd65a6f2dd45"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity/scripts.inc",
+    "rawScript": ".string \"Wouldn't it be nice?\\p\"\n\t.string \"If the whole world was covered in\\n\"\n\t.string \"plants and flowers like this island?$\""
+  },
+  "label": "MossdeepCity_Text_NiceIfWorldCoveredByFlowers",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity/scripts.inc",
+  "references": {}
+}

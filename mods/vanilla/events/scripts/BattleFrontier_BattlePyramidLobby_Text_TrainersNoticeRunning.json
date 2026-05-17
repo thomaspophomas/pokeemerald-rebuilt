@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby_Text_TrainersNoticeRunning",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "sha1": "b93395a7ee7156a94cfa3817fd6222cfa69e94fd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "rawScript": ".string \"Did you know?\\p\"\n\t.string \"If you run fast, TRAINERS may notice\\n\"\n\t.string \"and come after you for a battle.\\p\"\n\t.string \"So, if you want to avoid TRAINERS,\\n\"\n\t.string \"don't catch their eyes, but sneak\\l\"\n\t.string \"cautiously and quietly past them.$\""
+  },
+  "label": "BattleFrontier_BattlePyramidLobby_Text_TrainersNoticeRunning",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+  "references": {}
+}

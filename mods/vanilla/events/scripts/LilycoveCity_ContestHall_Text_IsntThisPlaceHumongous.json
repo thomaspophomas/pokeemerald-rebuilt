@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestHall_Text_IsntThisPlaceHumongous",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "sha1": "9d258f56144116075b6ffd125cc9edb7fc292736"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "rawScript": ".string \"Whoa, isn't this place humongous!\\p\"\n\t.string \"The tension in the air\u2026 It's not\\n\"\n\t.string \"like a CONTEST hall in the sticks.$\""
+  },
+  "label": "LilycoveCity_ContestHall_Text_IsntThisPlaceHumongous",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+  "references": {}
+}

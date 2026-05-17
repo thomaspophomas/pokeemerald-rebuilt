@@ -1,0 +1,24 @@
+{
+  "id": "AquaHideout_B1F_EventScript_TryRemoveElectrode",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B1F/scripts.inc",
+    "sha1": "2923188c4ae1df18ace73c8a8f87ea7f1d1e7886"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_B1F/scripts.inc",
+    "rawScript": "specialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn\n\tremoveobject VAR_LAST_TALKED\n\treturn"
+  },
+  "label": "AquaHideout_B1F_EventScript_TryRemoveElectrode",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AquaHideout_B1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ]
+  }
+}

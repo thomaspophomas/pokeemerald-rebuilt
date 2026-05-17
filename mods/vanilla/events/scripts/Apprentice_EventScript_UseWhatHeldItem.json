@@ -1,0 +1,19 @@
+{
+  "id": "Apprentice_EventScript_UseWhatHeldItem",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/apprentice.inc",
+    "sha1": "353208142bca1df117076064d141b84efe196e7c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/apprentice.inc",
+    "rawScript": "apprentice_initquestion APPRENTICE_QUESTION_WHAT_ITEM\n\tapprentice_buff STR_VAR_1, APPRENTICE_BUFF_SPECIES3\n\tapprentice_msg TRUE, APPRENTICE_MSG_WHAT_HELD_ITEM\n\tapprentice_freequestion"
+  },
+  "label": "Apprentice_EventScript_UseWhatHeldItem",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/apprentice.inc",
+  "references": {}
+}

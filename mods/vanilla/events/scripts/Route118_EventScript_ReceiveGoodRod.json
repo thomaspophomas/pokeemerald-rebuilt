@@ -1,0 +1,26 @@
+{
+  "id": "Route118_EventScript_ReceiveGoodRod",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route118/scripts.inc",
+    "sha1": "5a4868d1490a62e62c6e29a255fc938bad9fa2cd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route118/scripts.inc",
+    "rawScript": "msgbox Route118_Text_IdenticalMindsTakeThis, MSGBOX_DEFAULT\n\tgiveitem ITEM_GOOD_ROD\n\tsetflag FLAG_RECEIVED_GOOD_ROD\n\tmsgbox Route118_Text_TryYourLuckFishing, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route118_EventScript_ReceiveGoodRod",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route118/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_GOOD_ROD"
+    ],
+    "items": [
+      "ITEM_GOOD_ROD"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "BattleFrontier_BattleDomePreBattleRoom_EventScript_ContinueChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+    "sha1": "18c4052c546a6c71ff18234f6ef3a8130ec538d0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+    "rawScript": "message BattleFrontier_BattleDomePreBattleRoom_Text_ChooseTwoMons\n\twaitmessage\n\twaitbuttonpress\n\tfadescreen FADE_TO_BLACK\n\tcall BattleFrontier_EventScript_GetLvlMode\n\tcopyvar VAR_0x8004, VAR_RESULT\n\tsetvar VAR_0x8005, DOME_BATTLE_PARTY_SIZE  @ 2 of the 3 party mons are selected for battle\n\tspecial ChoosePartyForBattleFrontier\n\tfrontier_resetsketch\n\tgoto_if_eq VAR_RESULT, 0, BattleFrontier_BattleDomePreBattleRoom_EventScript_AskReadyForNextRound\n\tdome_set DOME_DATA_SELECTED_MONS\n\tdome_reduceparty\n\tdome_setopponent\n\tmsgbox BattleFrontier_BattleDomePreBattleRoom_Text_RightThisWay, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_DOME_PRE_BATTLE_ATTENDANT, BattleFrontier_BattleDomePreBattleRoom_Movement_AttendantMoveAside\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, BattleFrontier_BattleDomePreBattleRoom_Movement_PlayerWalkToDoor\n\twaitmovement 0\n\topendoor 5, 1\n\twaitdooranim\n\tapplymovement LOCALID_PLAYER, BattleFrontier_BattleDomePreBattleRoom_Movement_PlayerEnterDoor\n\twaitmovement 0\n\tclosedoor 5, 1\n\twaitdooranim\n\twarp MAP_BATTLE_FRONTIER_BATTLE_DOME_BATTLE_ROOM, 9, 5\n\tsetvar VAR_TEMP_0, 0\n\twaitstate\n\tend"
+  },
+  "label": "BattleFrontier_BattleDomePreBattleRoom_EventScript_ContinueChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_0"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_DOME_BATTLE_ROOM"
+    ]
+  }
+}

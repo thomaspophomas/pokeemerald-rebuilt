@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_ExchangeServiceCorner_EventScript_TryGivePrize",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
+    "sha1": "3bee0ca682f7b98f6a5f16085e830466d47ef6e9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
+    "rawScript": "goto_if_eq VAR_TEMP_2, EXCHANGE_CORNER_DECOR1_CLERK, BattleFrontier_ExchangeServiceCorner_EventScript_TryGiveDecor\n\tgoto_if_eq VAR_TEMP_2, EXCHANGE_CORNER_DECOR2_CLERK, BattleFrontier_ExchangeServiceCorner_EventScript_TryGiveDecor\n\tgoto BattleFrontier_ExchangeServiceCorner_EventScript_TryGiveItem\n\tend"
+  },
+  "label": "BattleFrontier_ExchangeServiceCorner_EventScript_TryGivePrize",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_2"
+    ]
+  }
+}

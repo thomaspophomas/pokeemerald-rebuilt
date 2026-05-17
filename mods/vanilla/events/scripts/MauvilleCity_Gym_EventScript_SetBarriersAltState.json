@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_Gym_EventScript_SetBarriersAltState",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "sha1": "ba2cd4a14af6a43f9221cd58f6a4a0299a51ce6c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "rawScript": "setflag FLAG_MAUVILLE_GYM_BARRIERS_STATE\n\treleaseall\n\tend"
+  },
+  "label": "MauvilleCity_Gym_EventScript_SetBarriersAltState",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MAUVILLE_GYM_BARRIERS_STATE"
+    ]
+  }
+}

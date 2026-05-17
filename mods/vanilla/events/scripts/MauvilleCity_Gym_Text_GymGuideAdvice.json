@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Gym_Text_GymGuideAdvice",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "sha1": "ba2cd4a14af6a43f9221cd58f6a4a0299a51ce6c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "rawScript": ".string \"Hey, how's it going, CHAMPION-\\n\"\n\t.string \"bound {PLAYER}?\\p\"\n\t.string \"WATTSON, the LEADER of MAUVILLE\\n\"\n\t.string \"GYM, uses ELECTRIC-type POK\u00e9MON.\\p\"\n\t.string \"If you challenge him with WATER-type\\n\"\n\t.string \"POK\u00e9MON, he'll zap them! Bzzt!\\p\"\n\t.string \"And, he's put in switch-controlled\\n\"\n\t.string \"doors all over his GYM! Eccentric!\\p\"\n\t.string \"Hey, go for it!$\""
+  },
+  "label": "MauvilleCity_Gym_Text_GymGuideAdvice",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_Gym/scripts.inc",
+  "references": {}
+}

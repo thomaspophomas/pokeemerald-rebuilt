@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_House5_EventScript_Girl",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_House5/scripts.inc",
+    "sha1": "af8536db2b730ab9c6e789a079899b905f623b5a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_House5/scripts.inc",
+    "rawScript": "msgbox SootopolisCity_House5_Text_BrotherUsedToStudySea, MSGBOX_NPC\n\tend"
+  },
+  "label": "SootopolisCity_House5_EventScript_Girl",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity_House5/scripts.inc",
+  "references": {}
+}

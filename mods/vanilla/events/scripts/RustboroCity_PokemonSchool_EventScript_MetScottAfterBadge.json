@@ -1,0 +1,26 @@
+{
+  "id": "RustboroCity_PokemonSchool_EventScript_MetScottAfterBadge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "sha1": "155fc7f1cee833cb06df85a407e5f98f216a928e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "rawScript": "addvar VAR_SCOTT_STATE, 1\n\tsetflag FLAG_MET_SCOTT_AFTER_OBTAINING_STONE_BADGE\n\trelease\n\tend"
+  },
+  "label": "RustboroCity_PokemonSchool_EventScript_MetScottAfterBadge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_SCOTT_AFTER_OBTAINING_STONE_BADGE"
+    ],
+    "vars": [
+      "VAR_SCOTT_STATE"
+    ]
+  }
+}

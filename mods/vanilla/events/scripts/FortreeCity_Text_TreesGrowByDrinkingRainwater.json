@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Text_TreesGrowByDrinkingRainwater",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity/scripts.inc",
+    "sha1": "a1f53b6d8b894e2f69fc9a5c4e1509ef9ab3ce09"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity/scripts.inc",
+    "rawScript": ".string \"The ground absorbs rainwater, and\\n\"\n\t.string \"trees grow by drinking that water\u2026\\p\"\n\t.string \"Our FORTREE CITY exists because\\n\"\n\t.string \"there's both water and soil.$\""
+  },
+  "label": "FortreeCity_Text_TreesGrowByDrinkingRainwater",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity/scripts.inc",
+  "references": {}
+}

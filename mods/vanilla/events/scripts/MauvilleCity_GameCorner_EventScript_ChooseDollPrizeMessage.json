@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_GameCorner_EventScript_ChooseDollPrizeMessage",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "sha1": "3db7cd216c9a2c35e8176ef8b4a1d9ec68649c7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "rawScript": "message MauvilleCity_GameCorner_Text_WhichPrize\n\twaitmessage\n\tsetvar VAR_TEMP_1, 0\n\tshowcoinsbox 1, 1\n\tgoto MauvilleCity_GameCorner_EventScript_ChooseDollPrize"
+  },
+  "label": "MauvilleCity_GameCorner_EventScript_ChooseDollPrizeMessage",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1"
+    ]
+  }
+}

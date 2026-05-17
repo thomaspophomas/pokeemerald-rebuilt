@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleArenaBattleRoom_Text_IfWeBattleAgainWontLose",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "sha1": "d0a70f09e21302da78823f02966e03f9b41a3a1a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "rawScript": ".string \"Arrrgh!\\n\"\n\t.string \"This is so infuriating!\\p\"\n\t.string \"If we ever battle again, I won't lose!\\n\"\n\t.string \"Don't you forget it! Bye-bye!$\""
+  },
+  "label": "BattleFrontier_BattleArenaBattleRoom_Text_IfWeBattleAgainWontLose",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+  "references": {}
+}

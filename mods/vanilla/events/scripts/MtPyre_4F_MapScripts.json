@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_4F_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_4F/scripts.inc",
+    "sha1": "c48fa2172060d225d434fa0b8e6de09d1dd9b497"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_4F/scripts.inc",
+    "rawScript": ".byte 0\n\n@ Seems like the scripts for the 4F and 5F were swapped"
+  },
+  "label": "MtPyre_4F_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/MtPyre_4F/scripts.inc",
+  "references": {}
+}

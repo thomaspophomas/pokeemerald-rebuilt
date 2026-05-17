@@ -1,0 +1,20 @@
+{
+  "id": "en:surf",
+  "domain": "language",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/text/surf.inc",
+    "sha1": "e1154db5e8905c255abfabb590722cf5adf7689c"
+  },
+  "legacy": {
+    "kind": "asm_text_labels",
+    "sourcePath": "data/text/surf.inc"
+  },
+  "language": "en",
+  "group": "surf",
+  "runtime": false,
+  "strings": {
+    "gText_WantToUseSurf": ".string \"The water is dyed a deep blue\u2026\\n\"\n\t.string \"Would you like to SURF?$\"",
+    "gText_PlayerUsedSurf": ".string \"{STR_VAR_1} used SURF!$\""
+  }
+}

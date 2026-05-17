@@ -1,0 +1,19 @@
+{
+  "id": "SafariZone_South_Text_ExitEarlyThankYouForPlaying",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/safari_zone.inc",
+    "sha1": "435880c660a34d3e51dcedb348a41731d28af7cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/safari_zone.inc",
+    "rawScript": ".string \"Okay.\\p\"\n\t.string \"I'll take back your remaining SAFARI\\n\"\n\t.string \"BALLS.\\p\"\n\t.string \"Thank you for playing.\\n\"\n\t.string \"We hope to see you again.$\""
+  },
+  "label": "SafariZone_South_Text_ExitEarlyThankYouForPlaying",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/safari_zone.inc",
+  "references": {}
+}

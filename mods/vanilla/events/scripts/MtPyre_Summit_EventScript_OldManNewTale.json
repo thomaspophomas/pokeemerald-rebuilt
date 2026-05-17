@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_Summit_EventScript_OldManNewTale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/scripts.inc",
+    "sha1": "2d98d572d50cebb678d972aa421854c983329822"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Summit/scripts.inc",
+    "rawScript": "msgbox MtPyre_Summit_Text_HoennTrioTale, MSGBOX_DEFAULT\n\treturn"
+  },
+  "label": "MtPyre_Summit_EventScript_OldManNewTale",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtPyre_Summit/scripts.inc",
+  "references": {}
+}

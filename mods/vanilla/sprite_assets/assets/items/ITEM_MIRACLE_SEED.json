@@ -1,0 +1,20 @@
+{
+  "id": "ITEM_MIRACLE_SEED:icon",
+  "domain": "sprite_assets",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/item_icon_table.h",
+    "sha1": "ce57365d2f9ca3a6848ca0258568c83717a68707"
+  },
+  "legacy": {
+    "kind": "item_icon_asset",
+    "sourcePath": "src/data/item_icon_table.h"
+  },
+  "key": "ITEM_MIRACLE_SEED:icon",
+  "assetKind": "item_icon",
+  "itemId": "ITEM_MIRACLE_SEED",
+  "iconDataSymbol": "gItemIcon_MiracleSeed",
+  "paletteDataSymbol": "gItemIconPalette_MiracleSeed",
+  "tileTag": "TAG_NONE",
+  "paletteTag": "TAG_NONE"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "AbnormalWeather_EventScript_ShowRainEndedMessage",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/abnormal_weather.inc",
+    "sha1": "8bf77729e5d8e5ebd0812ce736eaf3712ec673f3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/abnormal_weather.inc",
+    "rawScript": "msgbox gText_AbnormalWeatherEnded_Rain, MSGBOX_DEFAULT\n\tgoto AbnormalWeather_EventScript_EndEventAndCleanup_2\n\tend"
+  },
+  "label": "AbnormalWeather_EventScript_ShowRainEndedMessage",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/abnormal_weather.inc",
+  "references": {}
+}

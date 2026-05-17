@@ -1,0 +1,23 @@
+{
+  "id": "EverGrandeCity_DrakesRoom_EventScript_WalkInCloseDoor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+    "sha1": "f9ebbd1a5748e35eab8deba2da4622069b1316a9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+    "rawScript": "lockall\n\tcall PokemonLeague_EliteFour_EventScript_WalkInCloseDoor\n\tsetvar VAR_ELITE_4_STATE, 4\n\treleaseall\n\tend"
+  },
+  "label": "EverGrandeCity_DrakesRoom_EventScript_WalkInCloseDoor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_ELITE_4_STATE"
+    ]
+  }
+}

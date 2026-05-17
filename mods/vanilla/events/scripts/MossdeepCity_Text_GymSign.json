@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Text_GymSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/scripts.inc",
+    "sha1": "33f0f7f83a475484aaca395542c6bd65a6f2dd45"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity/scripts.inc",
+    "rawScript": ".string \"MOSSDEEP CITY POK\u00e9MON GYM\\n\"\n\t.string \"LEADERS: LIZA & TATE\\p\"\n\t.string \"\u201cThe mystic combination!\u201d$\""
+  },
+  "label": "MossdeepCity_Text_GymSign",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity/scripts.inc",
+  "references": {}
+}

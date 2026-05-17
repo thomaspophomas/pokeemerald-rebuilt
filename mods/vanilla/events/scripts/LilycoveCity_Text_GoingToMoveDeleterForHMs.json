@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_GoingToMoveDeleterForHMs",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"I'm going to teach my POK\u00e9MON some new\\n\"\n\t.string \"moves for entering a CONTEST.\\p\"\n\t.string \"So, I'm going to see the MOVE DELETER\\n\"\n\t.string \"and make it forget HM moves.$\""
+  },
+  "label": "LilycoveCity_Text_GoingToMoveDeleterForHMs",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Hall_Text_MyHunchWasRight",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Hall/scripts.inc",
+    "sha1": "78185d3058996bff2579b5133faf680c4df6865f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Hall/scripts.inc",
+    "rawScript": ".string \"Oh!\\n\"\n\t.string \"So, my hunch was right!\\p\"\n\t.string \"I'm one step closer to being hip and\\n\"\n\t.string \"happening, yowza!$\""
+  },
+  "label": "DewfordTown_Hall_Text_MyHunchWasRight",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown_Hall/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "EverGrandeCity_HallOfFame_EventScript_ShowStevensHouseBeldum",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/hall_of_fame.inc",
+    "sha1": "ad8d59f5f126d3c072b77148cefce9521a239ae5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/hall_of_fame.inc",
+    "rawScript": "clearflag FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_BELDUM_POKEBALL\n\treturn"
+  },
+  "label": "EverGrandeCity_HallOfFame_EventScript_ShowStevensHouseBeldum",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/hall_of_fame.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_BELDUM_POKEBALL"
+    ]
+  }
+}

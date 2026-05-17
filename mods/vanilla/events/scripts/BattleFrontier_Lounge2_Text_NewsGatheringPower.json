@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge2_Text_NewsGatheringPower",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "sha1": "d4d4f7c0802f8118a63eaf9b68eb6bcff146ff4d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "rawScript": ".string \"What amazing news-gathering power!\\n\"\n\t.string \"My mentor's like none other!$\""
+  },
+  "label": "BattleFrontier_Lounge2_Text_NewsGatheringPower",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,24 @@
+{
+  "id": "SootopolisCity_EventScript_MaxieRayquaza",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": "msgbox SootopolisCity_Text_AfterAllOurScheming, MSGBOX_DEFAULT\n\tsetflag FLAG_MET_MAXIE_SOOTOPOLIS\n\tgoto_if_set FLAG_MET_ARCHIE_SOOTOPOLIS, SootopolisCity_EventScript_MaxieArchieLeave\n\treleaseall\n\tend"
+  },
+  "label": "SootopolisCity_EventScript_MaxieRayquaza",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_ARCHIE_SOOTOPOLIS",
+      "FLAG_MET_MAXIE_SOOTOPOLIS"
+    ]
+  }
+}

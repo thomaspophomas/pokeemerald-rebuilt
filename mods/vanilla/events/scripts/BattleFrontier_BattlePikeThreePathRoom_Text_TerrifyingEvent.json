@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeThreePathRoom_Text_TerrifyingEvent",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "sha1": "927f7bda20dae778159d88132a53038bcfb76615"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "rawScript": ".string \"I am sorry to say\u2026\\p\"\n\t.string \"A terrifying event, yes, a horrible one,\\n\"\n\t.string \"is about to befall you\u2026\\p\"\n\t.string \"I urge you to pay the utmost care\\n\"\n\t.string \"and prepare for the worst\u2026$\""
+  },
+  "label": "BattleFrontier_BattlePikeThreePathRoom_Text_TerrifyingEvent",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+  "references": {}
+}

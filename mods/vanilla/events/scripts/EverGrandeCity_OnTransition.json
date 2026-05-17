@@ -1,0 +1,23 @@
+{
+  "id": "EverGrandeCity_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity/scripts.inc",
+    "sha1": "03ae6b2d9d17df6e3a50137366ce7f8d136ed5d2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity/scripts.inc",
+    "rawScript": "call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather\n\tend"
+  },
+  "label": "EverGrandeCity_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/EverGrandeCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_WEATHER_CTRL"
+    ]
+  }
+}

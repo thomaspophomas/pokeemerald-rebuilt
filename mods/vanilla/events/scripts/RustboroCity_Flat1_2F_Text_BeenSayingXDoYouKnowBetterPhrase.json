@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Flat1_2F_Text_BeenSayingXDoYouKnowBetterPhrase",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+    "sha1": "bce61defe394f3175dd583157b086f1687d0ac6f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+    "rawScript": ".string \"I've been saying \u201c{STR_VAR_1}\u201d\\n\"\n\t.string \"to amuse her lately.\\p\"\n\t.string \"Do you know of a better word or\\n\"\n\t.string \"a phrase that might work?$\""
+  },
+  "label": "RustboroCity_Flat1_2F_Text_BeenSayingXDoYouKnowBetterPhrase",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,27 @@
+{
+  "id": "EverGrandeCity_PokemonCenter_1F_EventScript_Scott",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "012038458957d746c6cb9c71ce265a9faf173fe8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmsgbox EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou, MSGBOX_DEFAULT\n\tclosemessage\n\tcall_if_eq VAR_FACING, DIR_NORTH, EverGrandeCity_PokemonCenter_1F_EventScript_ScottExitNorth\n\tcall_if_eq VAR_FACING, DIR_EAST, EverGrandeCity_PokemonCenter_1F_EventScript_ScottExit\n\tcall_if_eq VAR_FACING, DIR_WEST, EverGrandeCity_PokemonCenter_1F_EventScript_ScottExit\n\taddvar VAR_SCOTT_STATE, 1\n\tsetflag FLAG_MET_SCOTT_IN_EVERGRANDE\n\tplayse SE_EXIT\n\twaitse\n\tremoveobject LOCALID_EVER_GRANDE_SCOTT\n\trelease\n\tend"
+  },
+  "label": "EverGrandeCity_PokemonCenter_1F_EventScript_Scott",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_SCOTT_IN_EVERGRANDE"
+    ],
+    "vars": [
+      "VAR_FACING",
+      "VAR_SCOTT_STATE"
+    ]
+  }
+}

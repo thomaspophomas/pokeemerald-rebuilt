@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "sha1": "cd5ddf90f8e2b0931828078295732db5c87d2dae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "rawScript": ".string \"Having the RAIN BADGE shall assure you\\n\"\n\t.string \"the full obedience of all your POK\u00e9MON\\l\"\n\t.string \"to your every command.\\p\"\n\t.string \"The RAIN BADGE also allows the use\\n\"\n\t.string \"of the HM move WATERFALL to scale\\l\"\n\t.string \"walls of cascading water.\\p\"\n\t.string \"And, so that you never forget the\\n\"\n\t.string \"battle we shared, take this\u2026$\""
+  },
+  "label": "SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+  "references": {}
+}

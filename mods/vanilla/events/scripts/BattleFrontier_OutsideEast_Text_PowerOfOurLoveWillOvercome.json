@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideEast_Text_PowerOfOurLoveWillOvercome",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "sha1": "daab3e530c74c286237faa58f280f11ef97e663a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "rawScript": ".string \"Ooh, darling, you are so wonderful!\\p\"\n\t.string \"Ooh, I just can't wait anymore!\\p\"\n\t.string \"Let's go to a MULTI BATTLE ROOM\\n\"\n\t.string \"right this instant!\\p\"\n\t.string \"If we get together in the BATTLE SALON,\\n\"\n\t.string \"the power of our love will overcome\\l\"\n\t.string \"everyone we meet.\\p\"\n\t.string \"Why, before us, darling, everything\\n\"\n\t.string \"will topple like dominoes!$\""
+  },
+  "label": "BattleFrontier_OutsideEast_Text_PowerOfOurLoveWillOvercome",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+  "references": {}
+}

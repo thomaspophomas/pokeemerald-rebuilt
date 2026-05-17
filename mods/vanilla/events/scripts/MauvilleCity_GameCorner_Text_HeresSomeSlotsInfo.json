@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "sha1": "3db7cd216c9a2c35e8176ef8b4a1d9ec68649c7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "rawScript": ".string \"Here's some information for you\\n\"\n\t.string \"about the SLOTS.\\p\"\n\t.string \"The more lightning bolts you stock,\\n\"\n\t.string \"the more REEL TIME chances you get.\\p\"\n\t.string \"In a game with the maximum five\\n\"\n\t.string \"REEL TIME chances\u2026\\p\"\n\t.string \"It is possible to receive four regular\\n\"\n\t.string \"bonuses, then a big bonus.\\p\"\n\t.string \"That would total 660 COINS, but it's\\n\"\n\t.string \"very difficult to get.$\""
+  },
+  "label": "MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+  "references": {}
+}

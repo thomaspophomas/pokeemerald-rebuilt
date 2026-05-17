@@ -1,0 +1,19 @@
+{
+  "id": "ShoalCave_LowTideLowerRoom_Text_CanOvercomeColdWithFocus",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ShoalCave_LowTideLowerRoom/scripts.inc",
+    "sha1": "ecff8c79aa9294e9c1a40270189212e7063f8d19"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ShoalCave_LowTideLowerRoom/scripts.inc",
+    "rawScript": ".string \"The penetrating cold around these\\n\"\n\t.string \"parts is an impediment to training.\\p\"\n\t.string \"But with focus, one can overcome!\\p\"\n\t.string \"With this FOCUS BAND, buckle down and\\n\"\n\t.string \"withstand the cold!$\""
+  },
+  "label": "ShoalCave_LowTideLowerRoom_Text_CanOvercomeColdWithFocus",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/ShoalCave_LowTideLowerRoom/scripts.inc",
+  "references": {}
+}

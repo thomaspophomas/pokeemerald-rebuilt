@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby_EventScript_GiveHintGetLvOpenStreak",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "sha1": "b93395a7ee7156a94cfa3817fd6222cfa69e94fd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "rawScript": "pyramid_get PYRAMID_DATA_WIN_STREAK_OPEN\n\tgoto BattleFrontier_BattlePyramidLobby_EventScript_DoHintComment\n\treturn"
+  },
+  "label": "BattleFrontier_BattlePyramidLobby_EventScript_GiveHintGetLvOpenStreak",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+  "references": {}
+}

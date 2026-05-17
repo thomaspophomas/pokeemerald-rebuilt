@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_GameCorner_EventScript_ChooseTMPrize",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "sha1": "3db7cd216c9a2c35e8176ef8b4a1d9ec68649c7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "rawScript": "multichoice 12, 0, MULTI_GAME_CORNER_TMS, FALSE\n\tswitch VAR_RESULT\n\tcase 0, MauvilleCity_GameCorner_EventScript_TMDoubleTeam\n\tcase 1, MauvilleCity_GameCorner_EventScript_TMPsychic\n\tcase 2, MauvilleCity_GameCorner_EventScript_TMFlamethrower\n\tcase 3, MauvilleCity_GameCorner_EventScript_TMThunderbolt\n\tcase 4, MauvilleCity_GameCorner_EventScript_TMIceBeam\n\tcase 5, MauvilleCity_GameCorner_EventScript_CancelTMSelect\n\tgoto MauvilleCity_GameCorner_EventScript_CancelTMSelect\n\tend"
+  },
+  "label": "MauvilleCity_GameCorner_EventScript_ChooseTMPrize",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

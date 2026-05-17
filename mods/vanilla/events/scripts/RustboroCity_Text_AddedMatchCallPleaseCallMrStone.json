@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Text_AddedMatchCallPleaseCallMrStone",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": ".string \"There you go, {PLAYER}!\\p\"\n\t.string \"I added a new feature named\\n\"\n\t.string \"MATCH CALL to your POK\u00e9NAV.\\p\"\n\t.string \"Using the MATCH CALL feature,\\n\"\n\t.string \"you can chat with people who have\\l\"\n\t.string \"been registered in your POK\u00e9NAV.\\p\"\n\t.string \"{PLAYER}, our PRESIDENT STONE should\\n\"\n\t.string \"be registered in your POK\u00e9NAV.\\p\"\n\t.string \"Test it out.\\n\"\n\t.string \"Please give our PRESIDENT a call.$\""
+  },
+  "label": "RustboroCity_Text_AddedMatchCallPleaseCallMrStone",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc",
+    "sha1": "7e44e655dce3fffd840dec23146b0ba8b429b3b5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc",
+    "rawScript": ".string \"I want my POK\u00e9MON to have more\\n\"\n\t.string \"endurance.\\p\"\n\t.string \"I'm trying to decide whether to raise\\n\"\n\t.string \"DEFENSE with IRON, or SP. DEF with ZINC.$\""
+  },
+  "label": "LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc",
+  "references": {}
+}

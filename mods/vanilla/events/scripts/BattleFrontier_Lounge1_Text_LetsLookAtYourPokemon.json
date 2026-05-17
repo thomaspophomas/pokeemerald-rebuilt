@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge1_Text_LetsLookAtYourPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+    "sha1": "2478a4558563ac9694ec1f8471095e49ece1c602"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+    "rawScript": ".string \"Ah, youngster! Do your POK\u00e9MON's\\n\"\n\t.string \"abilities intrigue you?\\p\"\n\t.string \"Here, here!\\n\"\n\t.string \"Let's have a look at your POK\u00e9MON!$\""
+  },
+  "label": "BattleFrontier_Lounge1_Text_LetsLookAtYourPokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+  "references": {}
+}

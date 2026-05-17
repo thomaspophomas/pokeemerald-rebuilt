@@ -1,0 +1,26 @@
+{
+  "id": "OBJ_EVENT_GFX_LATIOS",
+  "domain": "overworld_sprites",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/object_events/object_event_graphics_info_pointers.h",
+    "sha1": "77fa348a5d882f94e478f2c7b9ed44de4de80ba1"
+  },
+  "legacy": {
+    "kind": "object_event_graphics",
+    "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+    "rawC": "const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Latios = {\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 512,\n    .width = 32,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_NONE,\n    .oam = &gObjectEventBaseOam_32x32,\n    .subspriteTables = sOamTables_32x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_LatiasLatios,\n    .affineAnims = gDummySpriteAffineAnimTable,\n};"
+  },
+  "key": "OBJ_EVENT_GFX_LATIOS",
+  "graphicsId": "OBJ_EVENT_GFX_LATIOS",
+  "numericId": 188,
+  "graphicsRevision": 1,
+  "assetKey": "gObjectEventGraphicsInfo_Latios",
+  "graphicsInfoSymbol": "gObjectEventGraphicsInfo_Latios",
+  "width": "32",
+  "height": "32",
+  "paletteTag": "OBJ_EVENT_PAL_TAG_NPC_1",
+  "reflectionPaletteTag": "OBJ_EVENT_PAL_TAG_NONE",
+  "shadowSize": "SHADOW_SIZE_M",
+  "tracks": "TRACKS_NONE"
+}

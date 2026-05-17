@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotLotad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+    "sha1": "fc092cb2d8bfc7874143add20c2a81120dbbacc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+    "rawScript": ".string \"Well, isn't this something!\\n\"\n\t.string \"But it's no LOTAD!$\""
+  },
+  "label": "SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotLotad",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MeteorFalls_1F_2R_Text_JohnIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+    "sha1": "09c545be014eea4099489af97aeae4f12469cf78"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+    "rawScript": ".string \"JOHN: We've always battled POK\u00e9MON\\n\"\n\t.string \"together as a twosome.\\l\"\n\t.string \"We've confidence in ourselves.$\""
+  },
+  "label": "MeteorFalls_1F_2R_Text_JohnIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "GraniteCave_1F_EventScript_ReceivedFlash",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/GraniteCave_1F/scripts.inc",
+    "sha1": "009a50304c40851653dda9dbfa159a4e7288520e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/GraniteCave_1F/scripts.inc",
+    "rawScript": "msgbox GraniteCave_1F_Text_ExplainFlash, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "GraniteCave_1F_EventScript_ReceivedFlash",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/GraniteCave_1F/scripts.inc",
+  "references": {}
+}

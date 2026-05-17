@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Gym_Text_RoxanneDefeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Gym/scripts.inc",
+    "sha1": "e0aa9de4fed612674104e48c7646854400dcecde"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Gym/scripts.inc",
+    "rawScript": ".string \"So\u2026\\n\"\n\t.string \"I lost\u2026\\p\"\n\t.string \"It seems that I still have much more\\n\"\n\t.string \"to learn\u2026\\p\"\n\t.string \"I understand.\\p\"\n\t.string \"The POK\u00e9MON LEAGUE's rules state\\n\"\n\t.string \"that TRAINERS are to be given this\\l\"\n\t.string \"if they defeat a GYM LEADER.\\p\"\n\t.string \"Please accept the official POK\u00e9MON\\n\"\n\t.string \"LEAGUE STONE BADGE.$\""
+  },
+  "label": "RustboroCity_Gym_Text_RoxanneDefeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Gym/scripts.inc",
+  "references": {}
+}

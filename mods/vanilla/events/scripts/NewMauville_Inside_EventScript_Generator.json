@@ -1,0 +1,23 @@
+{
+  "id": "NewMauville_Inside_EventScript_Generator",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NewMauville_Inside/scripts.inc",
+    "sha1": "e55cd05ab8dbd71a8b15a7cf2c2dc966549467fe"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NewMauville_Inside/scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_eq VAR_NEW_MAUVILLE_STATE, 2, NewMauville_Inside_EventScript_GeneratorOff\n\tmsgbox NewMauville_Inside_Text_GeneratorRadiatingHeat, MSGBOX_DEFAULT\n\treleaseall\n\tend"
+  },
+  "label": "NewMauville_Inside_EventScript_Generator",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/NewMauville_Inside/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_NEW_MAUVILLE_STATE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_ReceivedArtistRibbon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": "incrementgamestat GAME_STAT_RECEIVED_RIBBONS\n\tspecial BufferContestWinnerMonName\n\tapplymovement LOCALID_CONTEST_LOBBY_ARTIST, LilycoveCity_ContestLobby_Movement_ArtistBeginToExit\n\twaitmovement 0\n\tplayse SE_PIN\n\tapplymovement LOCALID_CONTEST_LOBBY_ARTIST, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_CONTEST_LOBBY_ARTIST, LilycoveCity_ContestLobby_Movement_ArtistReturnToPlayer\n\twaitmovement 0\n\tmsgbox LilycoveCity_ContestLobby_Text_TakeMementoOfPainting, MSGBOX_DEFAULT\n\tplayfanfare MUS_OBTAIN_ITEM\n\tmsgbox LilycoveCity_ContestLobby_Text_ReceivedARibbon, MSGBOX_DEFAULT\n\twaitfanfare\n\tmsgbox LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon, MSGBOX_DEFAULT\n\tmsgbox LilycoveCity_ContestLobby_Text_OkaySeeYou, MSGBOX_DEFAULT\n\tclosemessage\n\treturn"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_ReceivedArtistRibbon",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {}
+}

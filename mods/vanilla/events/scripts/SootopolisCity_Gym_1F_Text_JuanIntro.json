@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Gym_1F_Text_JuanIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "sha1": "cd5ddf90f8e2b0931828078295732db5c87d2dae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "rawScript": ".string \"Let me ask you.\\n\"\n\t.string \"Did you know?\\l\"\n\t.string \"Ah, I should not be so coy.\\p\"\n\t.string \"It was I who taught WALLACE everything\\n\"\n\t.string \"there is to know about POK\u00e9MON.\\p\"\n\t.string \"Once, I had given up my position as\\n\"\n\t.string \"the GYM LEADER.\\p\"\n\t.string \"In my place, I had entrusted WALLACE\\n\"\n\t.string \"with the GYM.\\p\"\n\t.string \"However, a compelling reason arose for\\n\"\n\t.string \"me to make a comeback.\\p\"\n\t.string \"Ah, but enough chatter.\\n\"\n\t.string \"Let us begin our match, shall we?\\p\"\n\t.string \"Please, you shall bear witness to\\n\"\n\t.string \"our artistry.\\p\"\n\t.string \"A grand illusion of water sculpted\\n\"\n\t.string \"by POK\u00e9MON and myself!$\"\n\n@ NOTE: This defeat text actually causes a buffer overflow. It's about 50 bytes too long for\n@ the gDisplayedStringBattle buffer that it's put into, and it stomps all over the gBattleTextBuffs\n@ after, as well as the otherwise unused array after that. One wonders if that's the reason for\n@ the existence of that unused array of ints."
+  },
+  "label": "SootopolisCity_Gym_1F_Text_JuanIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+  "references": {}
+}

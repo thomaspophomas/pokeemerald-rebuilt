@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleArenaLobby_Text_ExplainSkillRules",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "sha1": "9504bb75bdf62b80271e2304b4804044c8db502a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "rawScript": ".string \"The second judging factor is \u201cSkill.\u201d\\n\"\n\t.string \"This factor evaluates how effectively\\l\"\n\t.string \"POK\u00e9MON moves were used.\\p\"\n\t.string \"If a move worked successfully,\\n\"\n\t.string \"the Skill rating goes up.\\p\"\n\t.string \"If a move failed, the Skill rating\\n\"\n\t.string \"is lowered.\\p\"\n\t.string \"If it was an offensive move, the Skill\\n\"\n\t.string \"rating goes up if the move was \u201csuper\\l\"\n\t.string \"effective\u201d and goes down if it was\\l\"\n\t.string \"\u201cnot very effective.\u201d\\p\"\n\t.string \"The Skill rating will not go up for\\n\"\n\t.string \"moves such as PROTECT and DETECT.\\p\"\n\t.string \"If the opponent used PROTECT or\\n\"\n\t.string \"DETECT, and your POK\u00e9MON failed to\\l\"\n\t.string \"hit with a move, its Skill rating will not\\l\"\n\t.string \"go down.$\""
+  },
+  "label": "BattleFrontier_BattleArenaLobby_Text_ExplainSkillRules",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+  "references": {}
+}

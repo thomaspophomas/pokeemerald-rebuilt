@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Hall_Text_LoveSludgeBombButTrendInToo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Hall/scripts.inc",
+    "sha1": "78185d3058996bff2579b5133faf680c4df6865f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Hall/scripts.inc",
+    "rawScript": ".string \"I love SLUDGE BOMB.\\p\"\n\t.string \"But POK\u00e9MON with the move\\n\"\n\t.string \"\u201c{STR_VAR_1}\u201d\\l\"\n\t.string \"are in, too.$\""
+  },
+  "label": "DewfordTown_Hall_Text_LoveSludgeBombButTrendInToo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown_Hall/scripts.inc",
+  "references": {}
+}

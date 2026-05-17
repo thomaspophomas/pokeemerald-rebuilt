@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby_EventScript_GiveHintLvOpen",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "sha1": "b93395a7ee7156a94cfa3817fd6222cfa69e94fd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattlePyramidLobby_Text_Aah, MSGBOX_DEFAULT\n\tpyramid_get PYRAMID_DATA_WIN_STREAK_ACTIVE_OPEN\n\tgoto_if_ne VAR_RESULT, FALSE, BattleFrontier_BattlePyramidLobby_EventScript_GiveHintGetLvOpenStreak\n\tsetvar VAR_RESULT, 0\n\tgoto BattleFrontier_BattlePyramidLobby_EventScript_DoHintComment\n\treturn"
+  },
+  "label": "BattleFrontier_BattlePyramidLobby_EventScript_GiveHintLvOpen",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

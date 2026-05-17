@@ -1,0 +1,32 @@
+{
+  "id": "ShoalCave_LowTideEntranceRoom_EventScript_ShellBellExpert",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ShoalCave_LowTideEntranceRoom/scripts.inc",
+    "sha1": "1413cd55fcba731c9d6b5315421f4e6fc8f26289"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ShoalCave_LowTideEntranceRoom/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tdotimebasedevents\n\tcall_if_set FLAG_SYS_SHOAL_ITEM, ShoalCave_LowTideEntranceRoom_EventScript_ResetShoalItems\n\tcheckitem ITEM_SHOAL_SALT, 4\n\tgoto_if_eq VAR_RESULT, FALSE, ShoalCave_LowTideEntranceRoom_EventScript_NotEnoughShoalSaltOrShells\n\tcheckitem ITEM_SHOAL_SHELL, 4\n\tgoto_if_eq VAR_RESULT, FALSE, ShoalCave_LowTideEntranceRoom_EventScript_NotEnoughShoalSaltOrShells\n\tmsgbox ShoalCave_LowTideEntranceRoom_Text_WouldYouLikeShellBell, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, ShoalCave_LowTideEntranceRoom_EventScript_DeclineShellBell\n\tcheckitemspace ITEM_SHELL_BELL\n\tcall_if_eq VAR_RESULT, FALSE, ShoalCave_LowTideEntranceRoom_EventScript_CheckSpaceWillBeFreed\n\tgoto_if_eq VAR_RESULT, 2, ShoalCave_LowTideEntranceRoom_EventScript_NoRoomForShellBell\n\tmsgbox ShoalCave_LowTideEntranceRoom_Text_MakeShellBellRightAway, MSGBOX_DEFAULT\n\tremoveitem ITEM_SHOAL_SALT, 4\n\tremoveitem ITEM_SHOAL_SHELL, 4\n\tgiveitem ITEM_SHELL_BELL\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull  @ Never FALSE, we already made sure there will be room in the bag.\n\tmsgbox ShoalCave_LowTideEntranceRoom_Text_ExplainShellBell, MSGBOX_DEFAULT\n\tsetflag FLAG_TEMP_2  @ Not read. Perhaps meant to stop him from re-explaining the Shell Bell if multiple are received in one sitting.\n\trelease\n\tend\n\n@ If the bag is full, check if a slot will be freed when 4 Shoal Salt or Shells are given"
+  },
+  "label": "ShoalCave_LowTideEntranceRoom_EventScript_ShellBellExpert",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/ShoalCave_LowTideEntranceRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_SHOAL_ITEM",
+      "FLAG_TEMP_2"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_SHELL_BELL",
+      "ITEM_SHOAL_SALT",
+      "ITEM_SHOAL_SHELL"
+    ]
+  }
+}

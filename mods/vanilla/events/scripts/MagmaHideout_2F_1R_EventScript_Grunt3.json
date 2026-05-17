@@ -1,0 +1,23 @@
+{
+  "id": "MagmaHideout_2F_1R_EventScript_Grunt3",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_2F_1R/scripts.inc",
+    "sha1": "015ca35ad24a95edcf15463fdb5c0bcafde94383"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_2F_1R/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_GRUNT_MAGMA_HIDEOUT_3, MagmaHideout_2F_1R_Text_Grunt3Intro, MagmaHideout_2F_1R_Text_Grunt3Defeat\n\tmsgbox MagmaHideout_2F_1R_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "MagmaHideout_2F_1R_EventScript_Grunt3",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MagmaHideout_2F_1R/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_GRUNT_MAGMA_HIDEOUT_3"
+    ]
+  }
+}

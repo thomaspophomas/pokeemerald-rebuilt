@@ -35,6 +35,19 @@ Supported folders:
 - `maps/<MapName>/scripts.inc`
 - `src/*.c`
 
+Vanilla-style entity folders are also supported and are the recommended shape
+for replacement mods:
+
+- `pokeballs/balls/ITEM_POKE_BALL.json`
+- `sprite_assets/assets/gObjectEventGraphicsInfo_Boy1.json`
+- `overworld_sprites/sprites/OBJ_EVENT_GFX_BOY_1.json`
+- `battle_sprites/pokemon/SPECIES_TREECKO_front.json`
+- `followers/followers/SPECIES_TREECKO.json`
+- `outfits/outfits/male_normal.json`
+- `language/en/core_strings.json`
+- `events/scripts/EventScript_Name.json`
+- `state/save_blocks.json`
+
 Vanilla extraction domains also reserve these top-level folders under
 `mods/vanilla`: `maps`, `npcs`, `trainers`, `trainer_parties`, `weather`,
 `time`, `flags`, `events`, `language`, `sprite_assets`, `overworld_sprites`,
@@ -55,7 +68,15 @@ mods/example/maps/AlfonsHouse/map.json
 mods/example/maps/AlfonsHouse/scripts.inc
 mods/example/npcs/AlfonsHouse/LOCALID_ALFONS.json
 mods/example/items/items/ITEM_ALFONS_STONE.json
+mods/example/pokeballs/balls/ITEM_ALFONS_BALL.json
+mods/example/overworld_sprites/sprites/OBJ_EVENT_GFX_ALFONS.json
+mods/example/language/en/core_strings.json
+mods/example/events/scripts/AlfonsHouse_EventScript_GiveStone.json
 ```
+
+Pokeball behavior is split from item behavior. The item JSON says how the ball
+appears in the bag; the pokeball JSON says how capture modifiers, battle
+scripts, throw sprites, and catch hooks behave.
 
 Run `python3 scripts/modgen.py --root .` or let `make generated` run it during
 the normal build. Generated files live under `include/generated`,

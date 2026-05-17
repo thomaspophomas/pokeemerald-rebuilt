@@ -1,0 +1,23 @@
+{
+  "id": "Route119_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119/scripts.inc",
+    "sha1": "576fe3fab09726df20b1bbf3016bc5306f0e0f3d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119/scripts.inc",
+    "rawScript": "call Common_EventScript_SetupRivalGfxId\n\tcall Common_EventScript_SetupRivalOnBikeGfxId\n\tcall_if_eq VAR_WEATHER_INSTITUTE_STATE, 1, Route119_EventScript_MoveInstituteWorkersDownstairs\n\tspecial SetRoute119Weather\n\tend"
+  },
+  "label": "Route119_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Route119/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_WEATHER_INSTITUTE_STATE"
+    ]
+  }
+}

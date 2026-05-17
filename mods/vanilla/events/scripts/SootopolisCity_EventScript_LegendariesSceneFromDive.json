@@ -1,0 +1,26 @@
+{
+  "id": "SootopolisCity_EventScript_LegendariesSceneFromDive",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": "delay 60\n\tspecial SpawnCameraObject\n\tapplymovement LOCALID_CAMERA, SootopolisCity_Movement_PanToActionFromDive\n\twaitmovement 0\n\tspecial RemoveCameraObject\n\tdelay 60\n\tfadescreenspeed FADE_TO_BLACK, 8\n\tsetweather WEATHER_ABNORMAL\n\tdoweather\n\tsetvar VAR_0x8004, FALSE @ Just do Groudon/Kyogre fight scene\n\tspecial Script_DoRayquazaScene\n\tapplymovement LOCALID_SOOTOPOLIS_KYOGRE, Common_Movement_WalkInPlaceFasterLeft\n\tapplymovement LOCALID_SOOTOPOLIS_GROUDON, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\tdelay 60\n\twaitse\n\tplaymoncry SPECIES_KYOGRE, CRY_MODE_ENCOUNTER\n\tapplymovement LOCALID_SOOTOPOLIS_KYOGRE, SootopolisCity_Movement_KyogreAttack\n\tapplymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonDefend\n\twaitmovement 0\n\tsetvar VAR_0x8004, 1  @ vertical pan\n\tsetvar VAR_0x8005, 1  @ horizontal pan\n\tsetvar VAR_0x8006, 8  @ num shakes\n\tsetvar VAR_0x8007, 5  @ shake delay\n\tspecial ShakeCamera\n\twaitstate\n\tapplymovement LOCALID_SOOTOPOLIS_KYOGRE, SootopolisCity_Movement_KyogreMoveBack\n\tapplymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonMoveBack\n\twaitmovement 0\n\twaitse\n\tplaymoncry SPECIES_GROUDON, CRY_MODE_ENCOUNTER\n\tapplymovement LOCALID_SOOTOPOLIS_KYOGRE, SootopolisCity_Movement_KyogreDefend\n\tapplymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonAttack\n\twaitmovement 0\n\tsetvar VAR_0x8004, 1  @ vertical pan\n\tsetvar VAR_0x8005, 1  @ horizontal pan\n\tsetvar VAR_0x8006, 8  @ num shakes\n\tsetvar VAR_0x8007, 5  @ shake delay\n\tspecial ShakeCamera\n\twaitstate\n\tapplymovement LOCALID_SOOTOPOLIS_KYOGRE, SootopolisCity_Movement_KyogreMoveBack\n\tapplymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonMoveBack\n\twaitmovement 0\n\twaitse\n\tplaymoncry SPECIES_KYOGRE, CRY_MODE_ENCOUNTER\n\tapplymovement LOCALID_SOOTOPOLIS_KYOGRE, SootopolisCity_Movement_KyogreAttack\n\tapplymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonDefend\n\twaitmovement 0\n\tsetvar VAR_0x8004, 1  @ vertical pan\n\tsetvar VAR_0x8005, 1  @ horizontal pan\n\tsetvar VAR_0x8006, 8  @ num shakes\n\tsetvar VAR_0x8007, 5  @ shake delay\n\tspecial ShakeCamera\n\twaitstate\n\tapplymovement LOCALID_SOOTOPOLIS_KYOGRE, SootopolisCity_Movement_KyogreMoveBack\n\tapplymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonMoveBack\n\twaitmovement 0\n\tspecial SpawnCameraObject\n\tapplymovement LOCALID_SOOTOPOLIS_KYOGRE, SootopolisCity_Movement_KyogreIdle\n\tapplymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonIdle\n\tapplymovement LOCALID_CAMERA, SootopolisCity_Movement_PanBackToDive\n\twaitmovement 0\n\tspecial RemoveCameraObject\n\tsetvar VAR_SOOTOPOLIS_CITY_STATE, 2\n\tclearflag FLAG_HIDE_MAP_NAME_POPUP\n\treleaseall\n\tend"
+  },
+  "label": "SootopolisCity_EventScript_LegendariesSceneFromDive",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_MAP_NAME_POPUP"
+    ],
+    "vars": [
+      "VAR_SOOTOPOLIS_CITY_STATE"
+    ]
+  }
+}

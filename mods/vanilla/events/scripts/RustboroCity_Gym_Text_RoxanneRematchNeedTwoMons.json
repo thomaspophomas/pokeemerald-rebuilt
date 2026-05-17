@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Gym/scripts.inc",
+    "sha1": "e0aa9de4fed612674104e48c7646854400dcecde"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Gym/scripts.inc",
+    "rawScript": ".string \"ROXANNE: I'm so glad to see you again.\\n\"\n\t.string \"I'm ROXANNE, the GYM LEADER here.\\p\"\n\t.string \"I'm sure we've both experienced many\\n\"\n\t.string \"battles since we last met.\\p\"\n\t.string \"I would like to see how much better\\n\"\n\t.string \"we've become\u2026\\p\"\n\t.string \"Oh, no\u2026\\n\"\n\t.string \"You only have one POK\u00e9MON with you?\\p\"\n\t.string \"Please return with at least one more\\n\"\n\t.string \"POK\u00e9MON.$\""
+  },
+  "label": "RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Gym/scripts.inc",
+  "references": {}
+}

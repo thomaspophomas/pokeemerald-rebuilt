@@ -1,0 +1,19 @@
+{
+  "id": "Route128_Text_ArchieWhatHappened",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route128/scripts.inc",
+    "sha1": "8c3eb5fe541a802a44ec8805e051fe2de0e552f6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route128/scripts.inc",
+    "rawScript": ".string \"ARCHIE: What happened\u2026\\n\"\n\t.string \"What is this wretched scene\u2026\\p\"\n\t.string \"Did I\u2026make a horrible mistake?$\""
+  },
+  "label": "Route128_Text_ArchieWhatHappened",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route128/scripts.inc",
+  "references": {}
+}

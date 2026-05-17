@@ -1,0 +1,23 @@
+{
+  "id": "CaveHole_FixCrackedGround",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cave_hole.inc",
+    "sha1": "3a92c9558225c892deda0ac0d091d38dbda0befa"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cave_hole.inc",
+    "rawScript": "#ifdef UBFIX\n\tsetvar VAR_ICE_STEP_COUNT, 1\n#else\n\tcopyvar VAR_ICE_STEP_COUNT, 1, warn=FALSE\n#endif\n\tend"
+  },
+  "label": "CaveHole_FixCrackedGround",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/cave_hole.inc",
+  "references": {
+    "vars": [
+      "VAR_ICE_STEP_COUNT"
+    ]
+  }
+}

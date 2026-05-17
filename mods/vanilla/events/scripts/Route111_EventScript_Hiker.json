@@ -1,0 +1,26 @@
+{
+  "id": "Route111_EventScript_Hiker",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_eq VAR_MIRAGE_TOWER_STATE, 3, Route111_EventScript_HikerMirageTowerGone\n\tgoto_if_eq VAR_MIRAGE_TOWER_STATE, 2, Route111_EventScript_HikerMirageTowerDisintegrated\n\tgoto_if_set FLAG_MIRAGE_TOWER_VISIBLE, Route111_EventScript_HikerMirageTowerVisible\n\tmsgbox Route111_Text_ShouldBeMirageTowerAroundHere, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route111_EventScript_Hiker",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MIRAGE_TOWER_VISIBLE"
+    ],
+    "vars": [
+      "VAR_MIRAGE_TOWER_STATE"
+    ]
+  }
+}

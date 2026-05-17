@@ -1,0 +1,23 @@
+{
+  "id": "Route112_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route112/scripts.inc",
+    "sha1": "2e1afc791f1e05fe9c3dcec0234b3a587c6a64fc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route112/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, Route112_OnTransition\n\t.byte 0"
+  },
+  "label": "Route112_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Route112/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

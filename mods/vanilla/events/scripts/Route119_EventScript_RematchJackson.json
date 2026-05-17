@@ -1,0 +1,23 @@
+{
+  "id": "Route119_EventScript_RematchJackson",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119/scripts.inc",
+    "sha1": "576fe3fab09726df20b1bbf3016bc5306f0e0f3d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119/scripts.inc",
+    "rawScript": "trainerbattle_rematch TRAINER_JACKSON_1, Route119_Text_JacksonRematchIntro, Route119_Text_JacksonRematchDefeat\n\tmsgbox Route119_Text_JacksonPostRematch, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route119_EventScript_RematchJackson",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route119/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_JACKSON_1"
+    ]
+  }
+}

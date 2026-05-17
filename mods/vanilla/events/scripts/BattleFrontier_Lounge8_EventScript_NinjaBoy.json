@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge8_EventScript_NinjaBoy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge8/scripts.inc",
+    "sha1": "645530e958a54b4ac429c03f81abce888272e486"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge8/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_Lounge8_Text_ToldMeIHaveTalentForBattling, MSGBOX_NPC\n\tend"
+  },
+  "label": "BattleFrontier_Lounge8_EventScript_NinjaBoy",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_Lounge8/scripts.inc",
+  "references": {}
+}

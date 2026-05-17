@@ -1,0 +1,19 @@
+{
+  "id": "AquaHideout_1F_Text_WhereMightMagmaHideoutBe",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_1F/scripts.inc",
+    "sha1": "fb0f9c771050564c49799918dc1d87097cc9380f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_1F/scripts.inc",
+    "rawScript": ".string \"What? What?\\n\"\n\t.string \"Are you a TEAM MAGMA grunt?\\p\"\n\t.string \"I hear that TEAM MAGMA is trying to\\n\"\n\t.string \"awaken an awesome POK\u00e9MON at their\\l\"\n\t.string \"HIDEOUT.\\p\"\n\t.string \"But where might their HIDEOUT be?$\""
+  },
+  "label": "AquaHideout_1F_Text_WhereMightMagmaHideoutBe",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AquaHideout_1F/scripts.inc",
+  "references": {}
+}

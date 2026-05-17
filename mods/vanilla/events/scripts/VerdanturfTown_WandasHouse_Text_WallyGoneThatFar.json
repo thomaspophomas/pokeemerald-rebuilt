@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_WandasHouse_Text_WallyGoneThatFar",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+    "sha1": "31973fbe72c23018cb6768d20d4d7addb52bae60"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+    "rawScript": ".string \"UNCLE: Is that right?\\n\"\n\t.string \"WALLY's gone away that far all by\\l\"\n\t.string \"himself\u2026\\p\"\n\t.string \"Well, I have to give him credit--he is\\n\"\n\t.string \"my little brother's son.$\""
+  },
+  "label": "VerdanturfTown_WandasHouse_Text_WallyGoneThatFar",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+  "references": {}
+}

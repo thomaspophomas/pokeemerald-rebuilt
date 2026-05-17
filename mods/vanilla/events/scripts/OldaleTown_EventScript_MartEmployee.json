@@ -1,0 +1,27 @@
+{
+  "id": "OldaleTown_EventScript_MartEmployee",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown/scripts.inc",
+    "sha1": "b8b6ade6d90e9d5b08d5d2374caa3d404506aa31"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/OldaleTown/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_POTION_OLDALE, OldaleTown_EventScript_ExplainPotion\n\tgoto_if_set FLAG_TEMP_1, OldaleTown_EventScript_ExplainPotion\n\tsetflag FLAG_TEMP_1\n\tplaybgm MUS_FOLLOW_ME, FALSE\n\tmsgbox OldaleTown_Text_IWorkAtPokemonMart, MSGBOX_DEFAULT\n\tclosemessage\n\tswitch VAR_FACING\n\tcase DIR_SOUTH, OldaleTown_EventScript_GoToMartSouth\n\tcase DIR_NORTH, OldaleTown_EventScript_GoToMartNorth\n\tcase DIR_EAST, OldaleTown_EventScript_GoToMartEast\n\tend"
+  },
+  "label": "OldaleTown_EventScript_MartEmployee",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/OldaleTown/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_POTION_OLDALE",
+      "FLAG_TEMP_1"
+    ],
+    "vars": [
+      "VAR_FACING"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeCorridor_EventScript_EnterCorridor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeCorridor/scripts.inc",
+    "sha1": "b1eb4439a004760272901a523e8508e96689e96b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeCorridor/scripts.inc",
+    "rawScript": "delay 16\n\tfrontier_set FRONTIER_DATA_BATTLE_NUM, 1\n\tpike_cleartrainerids\n\tpike_nohealing TRUE\n\tapplymovement LOCALID_PLAYER, BattleFrontier_BattlePikeCorridor_Movement_PlayerEnterCorridor\n\tapplymovement LOCALID_PIKE_CORRIDOR_ATTENDANT, BattleFrontier_BattlePikeCorridor_Movement_AttendantEnterCorridor\n\twaitmovement 0\n\tlockall\n\tmsgbox BattleFrontier_BattlePikeCorridor_Text_YourChallengeHasBegun, MSGBOX_DEFAULT\n\tclosemessage\n\treleaseall\n\tapplymovement LOCALID_PLAYER, BattleFrontier_BattlePikeCorridor_Movement_PlayerExitCorridor\n\twaitmovement 0\n\tfrontier_set FRONTIER_DATA_CHALLENGE_STATUS, 99\n\tcall BattleFrontier_BattlePike_EventScript_CloseCurtain\n\twarpsilent MAP_BATTLE_FRONTIER_BATTLE_PIKE_THREE_PATH_ROOM, 6, 10\n\twaitstate\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeCorridor_EventScript_EnterCorridor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeCorridor/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_PIKE_THREE_PATH_ROOM"
+    ]
+  }
+}

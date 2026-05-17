@@ -1,0 +1,26 @@
+{
+  "id": "Route123_EventScript_Cameron",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route123/scripts.inc",
+    "sha1": "6ee451eb8a5f0717aed9ff7e71878f845e9727c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route123/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_CAMERON_1, Route123_Text_CameronIntro, Route123_Text_CameronDefeat, Route123_EventScript_RegisterCameron\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, Route123_EventScript_RematchCameron\n\tmsgbox Route123_Text_CameronPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route123_EventScript_Cameron",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route123/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_CAMERON_1"
+    ]
+  }
+}

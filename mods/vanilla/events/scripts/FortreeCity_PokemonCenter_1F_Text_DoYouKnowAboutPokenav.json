@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "695df0ed7ad6600850be2816ae2060c7c1c6c535"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"Oh, wow, you have a POK\u00e9NAV!\\n\"\n\t.string \"And it's just like mine!\\p\"\n\t.string \"Do you know about POK\u00e9NAV's\\n\"\n\t.string \"MATCH CALL system?\\p\"\n\t.string \"Access it, and you can chat with\\n\"\n\t.string \"registered TRAINERS anytime.\\p\"\n\t.string \"It also shows you which TRAINERS\\n\"\n\t.string \"want a rematch with you.\\p\"\n\t.string \"It's really nifty! Those DEVON guys\\n\"\n\t.string \"sure know what they're doing!$\""
+  },
+  "label": "FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

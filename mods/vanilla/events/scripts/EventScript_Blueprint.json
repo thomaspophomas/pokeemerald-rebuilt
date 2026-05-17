@@ -1,0 +1,19 @@
+{
+  "id": "EventScript_Blueprint",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/check_furniture.inc",
+    "sha1": "96b8ac1166a120a10d20de1fb686e262d33e1d17"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/check_furniture.inc",
+    "rawScript": "msgbox Text_Blueprint, MSGBOX_SIGN\n\tend"
+  },
+  "label": "EventScript_Blueprint",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/check_furniture.inc",
+  "references": {}
+}

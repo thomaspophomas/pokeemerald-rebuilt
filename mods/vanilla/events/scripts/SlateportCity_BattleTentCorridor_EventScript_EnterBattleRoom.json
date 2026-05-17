@@ -1,0 +1,23 @@
+{
+  "id": "SlateportCity_BattleTentCorridor_EventScript_EnterBattleRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_BattleTentCorridor/scripts.inc",
+    "sha1": "6c49213213fbc0031669e8a364dc312cbe989a7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_BattleTentCorridor/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_RightThisWay, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_SLATEPORT_TENT_CORRIDOR_ATTENDANT, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\topendoor 2, 1\n\twaitdooranim\n\tapplymovement LOCALID_SLATEPORT_TENT_CORRIDOR_ATTENDANT, SlateportCity_BattleTentCorridor_Movement_AttendantExit\n\tapplymovement LOCALID_PLAYER, SlateportCity_BattleTentCorridor_Movement_PlayerExit\n\twaitmovement 0\n\tclosedoor 2, 1\n\twaitdooranim\n\twarp MAP_SLATEPORT_CITY_BATTLE_TENT_BATTLE_ROOM, 4, 4\n\twaitstate\n\tend"
+  },
+  "label": "SlateportCity_BattleTentCorridor_EventScript_EnterBattleRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity_BattleTentCorridor/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SLATEPORT_CITY_BATTLE_TENT_BATTLE_ROOM"
+    ]
+  }
+}

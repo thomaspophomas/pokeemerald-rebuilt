@@ -1,0 +1,19 @@
+{
+  "id": "AbnormalWeather_EventScript_CleanupRoute114North",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/abnormal_weather.inc",
+    "sha1": "8bf77729e5d8e5ebd0812ce736eaf3712ec673f3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/abnormal_weather.inc",
+    "rawScript": "setmetatile 7, 3, METATILE_Fallarbor_RedRockWall, TRUE\n\tsetmetatile 7, 4, METATILE_Fallarbor_RedRockWall, TRUE\n\treturn"
+  },
+  "label": "AbnormalWeather_EventScript_CleanupRoute114North",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/abnormal_weather.inc",
+  "references": {}
+}

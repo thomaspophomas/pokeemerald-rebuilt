@@ -1,0 +1,23 @@
+{
+  "id": "MtPyre_2F_EventScript_Zander",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_2F/scripts.inc",
+    "sha1": "bc76e62a0ca08b33eb2220b94b2aff96bd7a1311"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_2F/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_ZANDER, MtPyre_2F_Text_ZanderIntro, MtPyre_2F_Text_ZanderDefeat\n\tmsgbox MtPyre_2F_Text_ZanderPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "MtPyre_2F_EventScript_Zander",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtPyre_2F/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ZANDER"
+    ]
+  }
+}

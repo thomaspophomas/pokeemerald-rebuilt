@@ -1,0 +1,19 @@
+{
+  "id": "MeteorFalls_1F_1R_EventScript_OpenStevensCave",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "sha1": "9f4ded44922a9eecca2a712d1673b053babe0bae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "rawScript": "setmetatile 4, 1, METATILE_MeteorFalls_CaveEntrance_Top, TRUE\n\tsetmetatile 3, 2, METATILE_MeteorFalls_CaveEntrance_Left, TRUE\n\tsetmetatile 4, 2, METATILE_MeteorFalls_CaveEntrance_Bottom, FALSE\n\tsetmetatile 5, 2, METATILE_MeteorFalls_CaveEntrance_Right, TRUE\n\treturn"
+  },
+  "label": "MeteorFalls_1F_1R_EventScript_OpenStevensCave",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+  "references": {}
+}

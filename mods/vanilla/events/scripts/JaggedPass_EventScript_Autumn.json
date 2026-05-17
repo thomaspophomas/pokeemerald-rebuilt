@@ -1,0 +1,23 @@
+{
+  "id": "JaggedPass_EventScript_Autumn",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/JaggedPass/scripts.inc",
+    "sha1": "3539aca2d309baaf0b57344f9c2014b5d896c94b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/JaggedPass/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_AUTUMN, JaggedPass_Text_AutumnIntro, JaggedPass_Text_AutumnDefeat\n\tmsgbox JaggedPass_Text_AutumnPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "JaggedPass_EventScript_Autumn",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/JaggedPass/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_AUTUMN"
+    ]
+  }
+}

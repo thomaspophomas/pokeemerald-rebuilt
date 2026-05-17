@@ -1,0 +1,27 @@
+{
+  "id": "en:obtain_item",
+  "domain": "language",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/text/obtain_item.inc",
+    "sha1": "d1b3a03f81d11007a68253780c0961b2de623dfb"
+  },
+  "legacy": {
+    "kind": "asm_text_labels",
+    "sourcePath": "data/text/obtain_item.inc"
+  },
+  "language": "en",
+  "group": "obtain_item",
+  "runtime": false,
+  "strings": {
+    "gText_ObtainedTheItem": ".string \"Obtained the {STR_VAR_2}!$\"",
+    "gText_TheBagIsFull": ".string \"The BAG is full\u2026$\"",
+    "gText_PutItemInPocket": ".string \"{PLAYER} put away the {STR_VAR_2}\\n\"\n\t.string \"in the {STR_VAR_3} POCKET.$\"",
+    "gText_PlayerFoundOneItem": ".string \"{PLAYER} found one {STR_VAR_2}!$\"",
+    "gText_TooBadBagIsFull": ".string \"Too bad!\\n\"\n\t.string \"The BAG is full\u2026$\"",
+    "gText_PlayerPutItemInBag": ".string \"{PLAYER} put away the {STR_VAR_2}\\n\"\n\t.string \"in the BAG.$\"",
+    "gText_ObtainedTheDecor": ".string \"Obtained the {STR_VAR_2}!$\"",
+    "gText_NoRoomLeftForAnother": ".string \"Too bad! There's no room left for\\n\"\n\t.string \"another {STR_VAR_2}\u2026$\"",
+    "gText_TheDecorWasTransferredToThePC": ".string \"The {STR_VAR_2} was transferred\\n\"\n\t.string \"to the PC.$\""
+  }
+}

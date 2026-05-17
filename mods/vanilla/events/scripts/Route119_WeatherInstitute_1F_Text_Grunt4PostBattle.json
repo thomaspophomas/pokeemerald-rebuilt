@@ -1,0 +1,19 @@
+{
+  "id": "Route119_WeatherInstitute_1F_Text_Grunt4PostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_1F/scripts.inc",
+    "sha1": "c66e07de5643dfd9d0b7ced5e87ea02257875e77"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_1F/scripts.inc",
+    "rawScript": ".string \"Oh, no\u2026\\n\"\n\t.string \"I'll catch an earful for losing to a kid\u2026\\p\"\n\t.string \"I should just take a nap in the bed\u2026$\""
+  },
+  "label": "Route119_WeatherInstitute_1F_Text_Grunt4PostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route119_WeatherInstitute_1F/scripts.inc",
+  "references": {}
+}

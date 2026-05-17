@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_BrendanGoingBackToLittleroot",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"BRENDAN: I\u2026\\n\"\n\t.string \"I plan on going home to LITTLEROOT.\\p\"\n\t.string \"You know I'm helping out my dad on his\\n\"\n\t.string \"POK\u00e9DEX. It's coming together pretty\\l\"\n\t.string \"decently, so I should go show him.$\""
+  },
+  "label": "LilycoveCity_Text_BrendanGoingBackToLittleroot",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

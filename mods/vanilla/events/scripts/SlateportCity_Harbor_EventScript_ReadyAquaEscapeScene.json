@@ -1,0 +1,23 @@
+{
+  "id": "SlateportCity_Harbor_EventScript_ReadyAquaEscapeScene",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "sha1": "304e0889603d7850b02e01765d969cf3c903eb9e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "rawScript": "savebgm MUS_ENCOUNTER_AQUA\n\tsetobjectxyperm LOCALID_SLATEPORT_HARBOR_CAPT_STERN, 12, 13\n\tsetobjectmovementtype LOCALID_SLATEPORT_HARBOR_CAPT_STERN, MOVEMENT_TYPE_FACE_LEFT\n\tsetflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_PATRONS\n\treturn"
+  },
+  "label": "SlateportCity_Harbor_EventScript_ReadyAquaEscapeScene",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity_Harbor/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_SLATEPORT_CITY_HARBOR_PATRONS"
+    ]
+  }
+}

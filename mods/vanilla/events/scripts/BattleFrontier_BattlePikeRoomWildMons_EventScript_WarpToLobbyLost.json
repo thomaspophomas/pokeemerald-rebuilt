@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomWildMons_EventScript_WarpToLobbyLost",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomWildMons/scripts.inc",
+    "sha1": "4ce9a1b97a5e7827a052a000b3fe1ab384b493fc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomWildMons/scripts.inc",
+    "rawScript": "frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_LOST\n\twarp MAP_BATTLE_FRONTIER_BATTLE_PIKE_LOBBY, 5, 6\n\twaitstate\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeRoomWildMons_EventScript_WarpToLobbyLost",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomWildMons/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_PIKE_LOBBY"
+    ]
+  }
+}

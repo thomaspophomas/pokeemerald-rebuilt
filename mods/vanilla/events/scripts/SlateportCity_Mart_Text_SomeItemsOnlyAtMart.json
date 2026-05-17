@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Mart_Text_SomeItemsOnlyAtMart",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Mart/scripts.inc",
+    "sha1": "f2031f776ed5352702005bf7d55b8cd577030684"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_Mart/scripts.inc",
+    "rawScript": ".string \"The MARKET does have some interesting\\n\"\n\t.string \"merchandise.\\p\"\n\t.string \"But there are some items you can only\\n\"\n\t.string \"get at a POK\u00e9MON MART.$\""
+  },
+  "label": "SlateportCity_Mart_Text_SomeItemsOnlyAtMart",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_Mart/scripts.inc",
+  "references": {}
+}

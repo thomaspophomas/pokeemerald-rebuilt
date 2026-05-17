@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestLobby_Text_YourMonIsEntryNum4",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": ".string \"Okay, your POK\u00e9MON will be entered\\n\"\n\t.string \"in this CONTEST.\\p\"\n\t.string \"Your POK\u00e9MON is Entry No. 4.\\n\"\n\t.string \"The CONTEST will begin shortly.$\""
+  },
+  "label": "LilycoveCity_ContestLobby_Text_YourMonIsEntryNum4",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {}
+}

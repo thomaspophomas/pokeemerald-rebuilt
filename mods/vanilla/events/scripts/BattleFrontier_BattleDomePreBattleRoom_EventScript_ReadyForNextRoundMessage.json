@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForNextRoundMessage",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+    "sha1": "18c4052c546a6c71ff18234f6ef3a8130ec538d0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+    "rawScript": "frontier_get FRONTIER_DATA_BATTLE_NUM\n\tswitch VAR_RESULT\n\tcase DOME_ROUND1, BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForRound1\n\tcase DOME_ROUND2, BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForRound2\n\tcase DOME_SEMIFINAL, BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForSemifinals\n\tcase DOME_FINAL, BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForFinals\n\treturn"
+  },
+  "label": "BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForNextRoundMessage",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

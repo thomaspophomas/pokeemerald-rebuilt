@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge1_Text_BestAspectSpeed",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+    "sha1": "2478a4558563ac9694ec1f8471095e49ece1c602"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+    "rawScript": ".string \"Incidentally, the best aspect of it,\\n\"\n\t.string \"I would say, is its SPEED\u2026$\""
+  },
+  "label": "BattleFrontier_Lounge1_Text_BestAspectSpeed",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+  "references": {}
+}

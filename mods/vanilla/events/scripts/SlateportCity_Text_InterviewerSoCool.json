@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Text_InterviewerSoCool",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": ".string \"That lady interviewer is so cool\\n\"\n\t.string \"and pretty.\\p\"\n\t.string \"When I grow up, I'm going to be\\n\"\n\t.string \"an international journalist!$\""
+  },
+  "label": "SlateportCity_Text_InterviewerSoCool",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {}
+}

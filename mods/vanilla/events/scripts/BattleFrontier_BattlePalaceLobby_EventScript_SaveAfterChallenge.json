@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_EventScript_SaveAfterChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": "frontier_checkairshow\n\tspecial LoadPlayerParty\n\tspecial HealPlayerParty\n\tpalace_save 0\n\tplayse SE_SAVE\n\twaitse\n\tcall BattleFrontier_EventScript_GetCantRecordBattle\n\tgoto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattlePalaceLobby_EventScript_EndSaveAfterChallenge\n\tmessage BattleFrontier_BattlePalaceLobby_Text_LikeToRecordMatch\n\twaitmessage\n\tmultichoicedefault 20, 8, MULTI_YESNO, 1, FALSE\n\tswitch VAR_RESULT\n\tcase 1, BattleFrontier_BattlePalaceLobby_EventScript_EndSaveAfterChallenge\n\tcase 0, BattleFrontier_BattlePalaceLobby_EventScript_RecordMatch\n\tcase MULTI_B_PRESSED, BattleFrontier_BattlePalaceLobby_EventScript_EndSaveAfterChallenge"
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_EventScript_SaveAfterChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

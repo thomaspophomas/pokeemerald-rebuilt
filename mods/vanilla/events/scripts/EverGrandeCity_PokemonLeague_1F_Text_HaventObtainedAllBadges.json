@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+    "sha1": "a55305762ef4a1d7b0cbf882528ff161154a969b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+    "rawScript": ".string \"You haven't obtained all the BADGES.\\p\"\n\t.string \"If you're bound for the POK\u00e9MON\\n\"\n\t.string \"LEAGUE, you must return with them.$\""
+  },
+  "label": "EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+  "references": {}
+}

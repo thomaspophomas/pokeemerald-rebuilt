@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_OceanicMuseum_1F_Text_OceanSoilDisplay",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "sha1": "7a1e00c78bbfbd0fbd6eb59a84a4d4e7114e4261"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "rawScript": ".string \"It's a sample of soil from the ocean\\n\"\n\t.string \"floor.\\p\"\n\t.string \"\u201cOver many years, the remains of\\n\"\n\t.string \"life-forms settle at the bottom of\\l\"\n\t.string \"the sea, making sedimentary layers.\\p\"\n\t.string \"\u201cBy analyzing these layers, the\\n\"\n\t.string \"ancient past is revealed.\u201d$\""
+  },
+  "label": "SlateportCity_OceanicMuseum_1F_Text_OceanSoilDisplay",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+  "references": {}
+}

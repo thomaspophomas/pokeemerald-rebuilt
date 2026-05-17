@@ -1,0 +1,19 @@
+{
+  "id": "EventScript_EggHatch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/day_care.inc",
+    "sha1": "b807399ab522de3ba938194e85f890a343362752"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/day_care.inc",
+    "rawScript": "lockall\n\tmsgbox Text_EggHatchHuh, MSGBOX_DEFAULT\n\tspecial EggHatch\n\treleaseall\n\tend"
+  },
+  "label": "EventScript_EggHatch",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/day_care.inc",
+  "references": {}
+}

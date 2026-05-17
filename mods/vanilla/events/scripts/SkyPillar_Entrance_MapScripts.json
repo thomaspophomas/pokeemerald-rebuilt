@@ -1,0 +1,23 @@
+{
+  "id": "SkyPillar_Entrance_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Entrance/scripts.inc",
+    "sha1": "04b6bb8eab1122affe66efc3efc347d37bc3d57d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_Entrance/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, SkyPillar_Entrance_OnTransition\n\t.byte 0"
+  },
+  "label": "SkyPillar_Entrance_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/SkyPillar_Entrance/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

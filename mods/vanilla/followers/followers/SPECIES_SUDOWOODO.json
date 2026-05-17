@@ -1,0 +1,18 @@
+{
+  "id": "SPECIES_SUDOWOODO",
+  "domain": "followers",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/object_events/object_event_graphics_info_pointers.h",
+    "sha1": "77fa348a5d882f94e478f2c7b9ed44de4de80ba1"
+  },
+  "legacy": {
+    "kind": "species_overworld_follower",
+    "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h"
+  },
+  "species": "SPECIES_SUDOWOODO",
+  "form": 0,
+  "shiny": false,
+  "graphicsId": "OBJ_EVENT_GFX_SUDOWOODO",
+  "assetKey": "gObjectEventGraphicsInfo_Sudowoodo"
+}

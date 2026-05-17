@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge2_Text_DomeAceSilverMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "sha1": "d4d4f7c0802f8118a63eaf9b68eb6bcff146ff4d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "rawScript": ".string \"Have you battled the DOME ACE?\\p\"\n\t.string \"When he's treating the opponent\\n\"\n\t.string \"lightly, he uses these three POK\u00e9MON:\\p\"\n\t.string \"A DRAGON & FLYING DRAGON POK\u00e9MON,\\n\"\n\t.string \"a WATER & GROUND MUD FISH POK\u00e9MON,\\l\"\n\t.string \"and a FIRE & FLYING FLAME POK\u00e9MON.$\""
+  },
+  "label": "BattleFrontier_Lounge2_Text_DomeAceSilverMons",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+  "references": {}
+}

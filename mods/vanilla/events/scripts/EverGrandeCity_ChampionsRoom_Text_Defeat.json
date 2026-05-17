@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_ChampionsRoom_Text_Defeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "sha1": "4f73bd77d8715e7ac12ff1ac731985eaf75ecd5e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "rawScript": ".string \"I, the CHAMPION, fall in defeat\u2026\\p\"\n\t.string \"That was wonderful work.\\n\"\n\t.string \"You were elegant, infuriatingly so.\\l\"\n\t.string \"And yet it was utterly glorious!\\p\"\n\t.string \"Kudos to you, {PLAYER}{KUN}!\\p\"\n\t.string \"You are a truly noble POK\u00e9MON\\n\"\n\t.string \"TRAINER!$\""
+  },
+  "label": "EverGrandeCity_ChampionsRoom_Text_Defeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+  "references": {}
+}

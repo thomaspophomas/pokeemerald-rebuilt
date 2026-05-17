@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ReceptionGate_Text_ScottGreatToSeeYouHere",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "sha1": "5b6e89c53f6e32c0fa6883bd750252f1d739a97b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "rawScript": ".string \"SCOTT: It's great to see you here,\\n\"\n\t.string \"it really is!\\p\"\n\t.string \"I hope you'll take your time and\\n\"\n\t.string \"explore everywhere.\\p\"\n\t.string \"Naturally, I hope you'll also experience\\n\"\n\t.string \"the pure essence of battling.\\p\"\n\t.string \"I also have my quarters here, so feel\\n\"\n\t.string \"free to visit if you have time.$\""
+  },
+  "label": "BattleFrontier_ReceptionGate_Text_ScottGreatToSeeYouHere",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+  "references": {}
+}

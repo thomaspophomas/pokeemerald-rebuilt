@@ -1,0 +1,23 @@
+{
+  "id": "Route114_EventScript_Claude",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114/scripts.inc",
+    "sha1": "0c57a7112b8feadf446551150c5dcc13761f8eeb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_CLAUDE, Route114_Text_ClaudeIntro, Route114_Text_ClaudeDefeat\n\tmsgbox Route114_Text_ClaudePostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route114_EventScript_Claude",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route114/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_CLAUDE"
+    ]
+  }
+}

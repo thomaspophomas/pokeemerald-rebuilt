@@ -1,0 +1,19 @@
+{
+  "id": "Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "sha1": "fb62e5a84003aa6247f1e7fe6ea409ec86ac92cc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "rawScript": ".string \"We have a situation here!\\p\"\n\t.string \"A TEAM MAGMA mob just passed\\n\"\n\t.string \"the WEATHER INSTITUTE.\\p\"\n\t.string \"They appear to be headed for\\n\"\n\t.string \"MT. PYRE!$\""
+  },
+  "label": "Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+  "references": {}
+}

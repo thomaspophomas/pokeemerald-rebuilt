@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_EventScript_TalkedToDoublesAttendant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": "setvar VAR_LAST_TALKED, LOCALID_PALACE_ATTENDANT_DOUBLES\n\treturn"
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_EventScript_TalkedToDoublesAttendant",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED"
+    ]
+  }
+}

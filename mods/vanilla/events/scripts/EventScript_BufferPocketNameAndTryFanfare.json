@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_BufferPocketNameAndTryFanfare",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/obtain_item.inc",
+    "sha1": "53094705147ea153e40933cbc7f9cbe653e2a59b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/obtain_item.inc",
+    "rawScript": "switch VAR_RESULT\n\tcase POCKET_ITEMS,      EventScript_BufferItemsPocket\n\tcase POCKET_KEY_ITEMS,  EventScript_BufferKeyItemsPocket\n\tcase POCKET_POKE_BALLS, EventScript_BufferPokeballsPocket\n\tcase POCKET_TM_HM,      EventScript_BufferTMHMsPocket\n\tcase POCKET_BERRIES,    EventScript_BufferBerriesPocket\n\tend"
+  },
+  "label": "EventScript_BufferPocketNameAndTryFanfare",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/obtain_item.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

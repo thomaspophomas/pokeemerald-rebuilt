@@ -1,0 +1,19 @@
+{
+  "id": "MtChimney_CableCarStation_Text_CableCarReadyGetOn",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney_CableCarStation/scripts.inc",
+    "sha1": "9e305574fdedd25f70ad58e6499cdd46ba5e26c4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtChimney_CableCarStation/scripts.inc",
+    "rawScript": ".string \"The CABLE CAR is ready to go down.\\n\"\n\t.string \"Would you like to be on it?$\""
+  },
+  "label": "MtChimney_CableCarStation_Text_CableCarReadyGetOn",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtChimney_CableCarStation/scripts.inc",
+  "references": {}
+}

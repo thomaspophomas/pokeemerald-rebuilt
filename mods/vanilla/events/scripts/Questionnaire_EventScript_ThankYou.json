@@ -1,0 +1,19 @@
+{
+  "id": "Questionnaire_EventScript_ThankYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/questionnaire.inc",
+    "sha1": "9196a755bc6ff98abbdb77c2f4ebe5f31a031fd2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/questionnaire.inc",
+    "rawScript": "applymovement VAR_0x8008, Common_Movement_FaceDown\n\twaitmovement 0\n\tmsgbox Questionnaire_Text_ThankYou, MSGBOX_DEFAULT\n\treleaseall\n\tend"
+  },
+  "label": "Questionnaire_EventScript_ThankYou",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/questionnaire.inc",
+  "references": {}
+}

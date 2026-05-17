@@ -1,0 +1,19 @@
+{
+  "id": "Route128_Text_StevenWholeWorldWillDrown",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route128/scripts.inc",
+    "sha1": "8c3eb5fe541a802a44ec8805e051fe2de0e552f6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route128/scripts.inc",
+    "rawScript": ".string \"This is terrible\u2026\\p\"\n\t.string \"After the scorching heat wave ended,\\n\"\n\t.string \"this deluge began.\\p\"\n\t.string \"If this doesn't stop, all of HOENN\u2026\\n\"\n\t.string \"No, the whole world will drown.\\p\"\n\t.string \"This huge rain cloud is spreading\\n\"\n\t.string \"from above SOOTOPOLIS\u2026\\p\"\n\t.string \"What in the world is taking place there?\\p\"\n\t.string \"There's no point arguing here\u2026\\n\"\n\t.string \"SOOTOPOLIS might provide answers\u2026$\""
+  },
+  "label": "Route128_Text_StevenWholeWorldWillDrown",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route128/scripts.inc",
+  "references": {}
+}

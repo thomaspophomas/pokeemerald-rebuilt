@@ -1,0 +1,19 @@
+{
+  "id": "OldSeaMap_NoBagSpace",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_old_sea_map.inc",
+    "sha1": "a286d32b8bc8623f436bc69e8fe4956f5bfc5228"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_old_sea_map.inc",
+    "rawScript": "vmessage sText_MysteryGiftOldSeaMapBagFull\n\twaitmessage\n\twaitbuttonpress\n\trelease\n\tend"
+  },
+  "label": "OldSeaMap_NoBagSpace",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_old_sea_map.inc",
+  "references": {}
+}

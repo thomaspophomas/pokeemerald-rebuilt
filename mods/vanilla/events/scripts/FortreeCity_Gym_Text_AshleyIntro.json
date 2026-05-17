@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Gym_Text_AshleyIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/scripts.inc",
+    "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Gym/scripts.inc",
+    "rawScript": ".string \"WINONA taught me personally!\\n\"\n\t.string \"You can't beat me easily!$\""
+  },
+  "label": "FortreeCity_Gym_Text_AshleyIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_Gym/scripts.inc",
+  "references": {}
+}

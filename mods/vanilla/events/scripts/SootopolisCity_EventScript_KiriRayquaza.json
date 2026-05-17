@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_EventScript_KiriRayquaza",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": "msgbox SootopolisCity_Text_PrettyMonCameFromSky, MSGBOX_DEFAULT\n\tclosemessage\n\trelease\n\tend\n\n@ Gives 2 berries daily. First ranges from FIRST_KIRI_BERRY to LAST_KIRI_BERRY, second is always Figy or Iapapa"
+  },
+  "label": "SootopolisCity_EventScript_KiriRayquaza",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

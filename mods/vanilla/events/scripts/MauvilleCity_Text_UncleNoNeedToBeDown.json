@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_UncleNoNeedToBeDown",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"UNCLE: WALLY, there's no need to be so\\n\"\n\t.string \"down on yourself.\\p\"\n\t.string \"Why, what's keeping you from becoming\\n\"\n\t.string \"stronger and stronger?\\p\"\n\t.string \"Come on, let's go home.\\n\"\n\t.string \"Everyone's waiting for you.$\""
+  },
+  "label": "MauvilleCity_Text_UncleNoNeedToBeDown",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Mart_EventScript_PokemartBasic",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Mart/scripts.inc",
+    "sha1": "064cba37df0c93452bb5e6cc75752460d861c58d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Mart/scripts.inc",
+    "rawScript": "pokemart RustboroCity_Mart_Pokemart_Basic\n\tmsgbox gText_PleaseComeAgain, MSGBOX_DEFAULT\n\trelease\n\tend\n\n\t.align 2"
+  },
+  "label": "RustboroCity_Mart_EventScript_PokemartBasic",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_Mart/scripts.inc",
+  "references": {}
+}

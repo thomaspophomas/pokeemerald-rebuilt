@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_CozmosHouse_Text_CozmoIsSoHappy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+    "sha1": "8f6cba0c7d4561645e0110baf848672ddd10d44d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+    "rawScript": ".string \"Look at PROF. COZMO\u2026\\n\"\n\t.string \"He's so happy! I think it's cute.$\""
+  },
+  "label": "FallarborTown_CozmosHouse_Text_CozmoIsSoHappy",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+  "references": {}
+}

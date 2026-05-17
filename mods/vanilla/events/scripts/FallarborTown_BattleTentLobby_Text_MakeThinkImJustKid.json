@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_BattleTentLobby_Text_MakeThinkImJustKid",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "sha1": "007b5945200863133fd43941054ec8db085a0356"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "rawScript": ".string \"Fufufufufu.\\p\"\n\t.string \"I'm going to make everyone think\\n\"\n\t.string \"I'm just a kid and let them play down.\\p\"\n\t.string \"Then, I'll shock them and grab\\n\"\n\t.string \"the title!$\""
+  },
+  "label": "FallarborTown_BattleTentLobby_Text_MakeThinkImJustKid",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+  "references": {}
+}

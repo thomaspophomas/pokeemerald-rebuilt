@@ -1,0 +1,25 @@
+{
+  "id": "SlateportCity_Harbor_EventScript_Sailor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "sha1": "304e0889603d7850b02e01765d969cf3c903eb9e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_unset FLAG_SYS_GAME_CLEAR, SlateportCity_Harbor_EventScript_SailorNoAbnormalWeather\n\tsetvar VAR_0x8004, 0\n\tcall_if_set FLAG_DEFEATED_KYOGRE, SlateportCity_Harbor_EventScript_CountDefeatedLegendary\n\tcall_if_set FLAG_DEFEATED_GROUDON, SlateportCity_Harbor_EventScript_CountDefeatedLegendary\n\tgoto_if_eq VAR_0x8004, 2, SlateportCity_Harbor_EventScript_SailorNoAbnormalWeather  @ Defeated both\n\tmsgbox SlateportCity_Harbor_Text_AbnormalWeather, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "SlateportCity_Harbor_EventScript_Sailor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity_Harbor/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_GROUDON",
+      "FLAG_DEFEATED_KYOGRE",
+      "FLAG_SYS_GAME_CLEAR"
+    ]
+  }
+}

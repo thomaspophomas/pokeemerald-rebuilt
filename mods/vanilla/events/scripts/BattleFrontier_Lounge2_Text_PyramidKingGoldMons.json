@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge2_Text_PyramidKingGoldMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "sha1": "d4d4f7c0802f8118a63eaf9b68eb6bcff146ff4d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "rawScript": ".string \"Have you battled the PYRAMID KING\\n\"\n\t.string \"when he's serious?\\p\"\n\t.string \"When he's pumped with hot power,\\n\"\n\t.string \"he apparently uses these POK\u00e9MON:\\p\"\n\t.string \"An ICE & FLYING FREEZE POK\u00e9MON, an\\n\"\n\t.string \"ELECTRIC & FLYING ELECTRIC POK\u00e9MON,\\l\"\n\t.string \"and a FIRE- & FLYING-type FLAME\\l\"\n\t.string \"POK\u00e9MON.$\""
+  },
+  "label": "BattleFrontier_Lounge2_Text_PyramidKingGoldMons",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+  "references": {}
+}

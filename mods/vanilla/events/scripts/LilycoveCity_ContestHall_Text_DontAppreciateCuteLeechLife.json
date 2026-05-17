@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestHall_Text_DontAppreciateCuteLeechLife",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "sha1": "9d258f56144116075b6ffd125cc9edb7fc292736"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "rawScript": ".string \"Oh, dear, no!\\p\"\n\t.string \"My darling ZUBAT's LEECH LIFE is so\\n\"\n\t.string \"cute I kept using it over and over!\\p\"\n\t.string \"But these mean people don't appreciate\\n\"\n\t.string \"it at all!$\""
+  },
+  "label": "LilycoveCity_ContestHall_Text_DontAppreciateCuteLeechLife",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+  "references": {}
+}

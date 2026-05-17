@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgWoods_EventScript_Sign2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/scripts.inc",
+    "sha1": "a7a3b49731f97088b328145805430d4429326ec8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgWoods/scripts.inc",
+    "rawScript": "msgbox PetalburgWoods_Text_TrainerTipsPP, MSGBOX_SIGN\n\tend"
+  },
+  "label": "PetalburgWoods_EventScript_Sign2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgWoods/scripts.inc",
+  "references": {}
+}

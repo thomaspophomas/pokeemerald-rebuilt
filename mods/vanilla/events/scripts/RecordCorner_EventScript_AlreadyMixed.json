@@ -1,0 +1,19 @@
+{
+  "id": "RecordCorner_EventScript_AlreadyMixed",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "special Script_FacePlayer\n\tmessage RecordCorner_Text_ThanksForComing\n\twaitmessage\n\twaitbuttonpress\n\tspecial Script_ClearHeldMovement\n\tclosemessage\n\tend"
+  },
+  "label": "RecordCorner_EventScript_AlreadyMixed",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {}
+}

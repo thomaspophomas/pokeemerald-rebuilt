@@ -1,0 +1,23 @@
+{
+  "id": "RustboroCity_Gym_EventScript_RoxanneRematch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Gym/scripts.inc",
+    "sha1": "e0aa9de4fed612674104e48c7646854400dcecde"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Gym/scripts.inc",
+    "rawScript": "trainerbattle_rematch_double TRAINER_ROXANNE_1, RustboroCity_Gym_Text_RoxannePreRematch, RustboroCity_Gym_Text_RoxanneRematchDefeat, RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons\n\tmsgbox RustboroCity_Gym_Text_RoxannePostRematch, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "RustboroCity_Gym_EventScript_RoxanneRematch",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_Gym/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ROXANNE_1"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Route113_GlassWorkshop_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "sha1": "6a7101e66439e9abedcc55c8fc60b573807258b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, Route113_GlassWorkshop_OnTransition\n\t.byte 0\n\n\t.set BLUE_FLUTE_PRICE,   250\n\t.set YELLOW_FLUTE_PRICE, 500\n\t.set RED_FLUTE_PRICE,    500\n\t.set WHITE_FLUTE_PRICE,  1000\n\t.set BLACK_FLUTE_PRICE,  1000\n\t.set PRETTY_CHAIR_PRICE, 6000\n\t.set PRETTY_DESK_PRICE,  8000\n\t.set LOWEST_ASH_PRICE,   BLUE_FLUTE_PRICE"
+  },
+  "label": "Route113_GlassWorkshop_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Route113_GlassWorkshop/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

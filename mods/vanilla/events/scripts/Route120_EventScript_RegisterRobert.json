@@ -1,0 +1,23 @@
+{
+  "id": "Route120_EventScript_RegisterRobert",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route120/scripts.inc",
+    "sha1": "c3ab570e7c5b1ea2c74415d703646f5a362564ad"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route120/scripts.inc",
+    "rawScript": "special PlayerFaceTrainerAfterBattle\n\twaitmovement 0\n\tmsgbox Route120_Text_RobertRegister, MSGBOX_DEFAULT\n\tregister_matchcall TRAINER_ROBERT_1\n\trelease\n\tend"
+  },
+  "label": "Route120_EventScript_RegisterRobert",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route120/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ROBERT_1"
+    ]
+  }
+}

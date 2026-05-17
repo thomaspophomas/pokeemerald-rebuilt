@@ -1,0 +1,23 @@
+{
+  "id": "Route129_EventScript_Reed",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route129/scripts.inc",
+    "sha1": "dafae748e3f67cdad094b16d6d5b95c90cbfcb13"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route129/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_REED, Route129_Text_ReedIntro, Route129_Text_ReedDefeat\n\tmsgbox Route129_Text_ReedPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route129_EventScript_Reed",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route129/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_REED"
+    ]
+  }
+}

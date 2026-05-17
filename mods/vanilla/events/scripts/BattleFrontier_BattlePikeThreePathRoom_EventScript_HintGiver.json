@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeThreePathRoom_EventScript_HintGiver",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "sha1": "927f7bda20dae778159d88132a53038bcfb76615"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "rawScript": "pike_gethint\n\tgoto_if_eq VAR_RESULT, PIKE_HINT_BRAIN, BattleFrontier_BattlePikeThreePathRoom_EventScript_GiveBrainHint\n\tlock\n\tfaceplayer\n\tmsgbox BattleFrontier_BattlePikeThreePathRoom_Text_FindingItDifficultToChoose, MSGBOX_YESNO\n\tswitch VAR_RESULT\n\tcase YES, BattleFrontier_BattlePikeThreePathRoom_EventScript_AcceptHint\n\tcase NO, BattleFrontier_BattlePikeThreePathRoom_EventScript_DeclineHint\n\tcase MULTI_B_PRESSED, BattleFrontier_BattlePikeThreePathRoom_EventScript_DeclineHint\n\trelease\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeThreePathRoom_EventScript_HintGiver",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

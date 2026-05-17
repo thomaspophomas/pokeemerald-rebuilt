@@ -1,0 +1,19 @@
+{
+  "id": "Roulette_EventScript_Play",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/roulette.inc",
+    "sha1": "8e0813f5173876bc584c25d8985abcf8d73c7f01"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/roulette.inc",
+    "rawScript": "special PlayRoulette\n\tend"
+  },
+  "label": "Roulette_EventScript_Play",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/roulette.inc",
+  "references": {}
+}

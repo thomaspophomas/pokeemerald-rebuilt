@@ -1,0 +1,19 @@
+{
+  "id": "sText_MysteryGiftOldSeaMapForYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_old_sea_map.inc",
+    "sha1": "a286d32b8bc8623f436bc69e8fe4956f5bfc5228"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_old_sea_map.inc",
+    "rawScript": ".string \"Thank you for using the MYSTERY\\n\"\n\t.string \"GIFT System.\\p\"\n\t.string \"Let me confirm--you are {PLAYER}?\\p\"\n\t.string \"We received this OLD SEA MAP\\n\"\n\t.string \"addressed to you.$\""
+  },
+  "label": "sText_MysteryGiftOldSeaMapForYou",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_old_sea_map.inc",
+  "references": {}
+}

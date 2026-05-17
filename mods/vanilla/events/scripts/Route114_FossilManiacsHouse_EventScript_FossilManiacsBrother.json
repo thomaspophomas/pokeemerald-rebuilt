@@ -1,0 +1,29 @@
+{
+  "id": "Route114_FossilManiacsHouse_EventScript_FossilManiacsBrother",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_FossilManiacsHouse/scripts.inc",
+    "sha1": "95730e17fb1dc32e597d4ae621cec76ec0f7d421"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114_FossilManiacsHouse/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_TM_DIG, Route114_FossilManiacsHouse_EventScript_ReceivedDig\n\tmsgbox Route114_FossilManiacsHouse_Text_HaveThisToDigLikeMyBrother, MSGBOX_DEFAULT\n\tgiveitem ITEM_TM_DIG\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_RECEIVED_TM_DIG\n\trelease\n\tend"
+  },
+  "label": "Route114_FossilManiacsHouse_EventScript_FossilManiacsBrother",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route114_FossilManiacsHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_TM_DIG"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_TM_DIG"
+    ]
+  }
+}

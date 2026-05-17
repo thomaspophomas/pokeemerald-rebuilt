@@ -1,0 +1,24 @@
+{
+  "id": "EventScript_SmashRock",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/field_move_scripts.inc",
+    "sha1": "83a0d3bb9ff1263278592b6a78563154bb422956"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/field_move_scripts.inc",
+    "rawScript": "applymovement VAR_LAST_TALKED, Movement_SmashRock\n\twaitmovement 0\n\tremoveobject VAR_LAST_TALKED\n\tspecialvar VAR_RESULT, TryUpdateRusturfTunnelState\n\tgoto_if_eq VAR_RESULT, TRUE, EventScript_EndSmash\n\tspecial RockSmashWildEncounter\n\tgoto_if_eq VAR_RESULT, FALSE, EventScript_EndSmash\n\twaitstate\n\treleaseall\n\tend"
+  },
+  "label": "EventScript_SmashRock",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/field_move_scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ]
+  }
+}

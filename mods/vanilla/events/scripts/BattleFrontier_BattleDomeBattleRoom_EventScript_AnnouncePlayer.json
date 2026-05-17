@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleDomeBattleRoom_EventScript_AnnouncePlayer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "sha1": "2cf5ea83e82fbd2189ced7e0cd4d5f894bf74650"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "rawScript": "dome_get DOME_DATA_ATTEMPTED_CHALLENGE\n\tgoto_if_eq VAR_RESULT, FALSE, BattleFrontier_BattleDomeBattleRoom_EventScript_AnnouncePlayerFirstAttempt\n\tdome_get DOME_DATA_HAS_WON_CHALLENGE\n\tgoto_if_eq VAR_RESULT, FALSE, BattleFrontier_BattleDomeBattleRoom_EventScript_AnnouncePlayerNeverWon\n\tdome_get DOME_DATA_WIN_STREAK_ACTIVE\n\tgoto_if_eq VAR_RESULT, FALSE, BattleFrontier_BattleDomeBattleRoom_EventScript_AnnouncePlayerBrokenStreak\n\tgoto BattleFrontier_BattleDomeBattleRoom_EventScript_AnnouncePlayerChampion\n\treturn"
+  },
+  "label": "BattleFrontier_BattleDomeBattleRoom_EventScript_AnnouncePlayer",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

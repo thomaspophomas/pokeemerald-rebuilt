@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Text_PokemonNippedBackside",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": ".string \"Being buried in this hot sand is\u2026\\n\"\n\t.string \"Sigh\u2026\\p\"\n\t.string \"So warm and heavenly\u2026\\p\"\n\t.string \"Eh? Gyaah! Ouch!\\p\"\n\t.string \"A POK\u00e9MON nipped my backside!$\""
+  },
+  "label": "LavaridgeTown_Text_PokemonNippedBackside",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {}
+}

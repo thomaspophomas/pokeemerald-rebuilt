@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_OutsideEast_EventScript_DefeatedSudowoodo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "sha1": "daab3e530c74c286237faa58f280f11ef97e663a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "rawScript": "setflag FLAG_DEFEATED_SUDOWOODO\n\tgoto Common_EventScript_RemoveStaticPokemon\n\tend"
+  },
+  "label": "BattleFrontier_OutsideEast_EventScript_DefeatedSudowoodo",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_SUDOWOODO"
+    ]
+  }
+}

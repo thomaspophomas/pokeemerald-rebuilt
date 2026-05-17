@@ -1,0 +1,24 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F_EventScript_TabithaTrainer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "rawScript": "trainerbattle TRAINER_BATTLE_SET_TRAINER_B, TRAINER_TABITHA_MOSSDEEP, LOCALID_NONE, MossdeepCity_SpaceCenter_Text_TabithaDefeat, MossdeepCity_SpaceCenter_Text_TabithaDefeat\n\tend"
+  },
+  "label": "MossdeepCity_SpaceCenter_2F_EventScript_TabithaTrainer",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_BATTLE_SET_TRAINER_B",
+      "TRAINER_TABITHA_MOSSDEEP"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleArenaBattleRoom_EventScript_AskReadyForTycoon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "sha1": "d0a70f09e21302da78823f02966e03f9b41a3a1a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "rawScript": "message BattleFrontier_BattleArenaBattleRoom_Text_PreparedForTycoon\n\twaitmessage\n\tcall BattleFrontier_EventScript_GetCantRecordBattle\n\tgoto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattleArenaBattleRoom_EventScript_AskReadyForTycoonNoRecord\n\tmultichoice 19, 4, MULTI_GO_ON_RECORD_REST_RETIRE, TRUE\n\tswitch VAR_RESULT\n\tcase 0, BattleFrontier_BattleArenaBattleRoom_EventScript_BattleGreta\n\tcase 1, BattleFrontier_BattleArenaBattleRoom_EventScript_AskRecordBattle\n\tcase 2, BattleFrontier_BattleArenaBattleRoom_EventScript_AskPauseChallenge\n\tcase 3, BattleFrontier_BattleArenaBattleRoom_EventScript_AskRetireChallenge\n\tcase MULTI_B_PRESSED, BattleFrontier_BattleArenaBattleRoom_EventScript_AskReadyForTycoon"
+  },
+  "label": "BattleFrontier_BattleArenaBattleRoom_EventScript_AskReadyForTycoon",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_1F_EventScript_MomApproachDadFemale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/players_house.inc",
+    "sha1": "0f3da1347500315ef212a252409f1d410b0d226c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/players_house.inc",
+    "rawScript": "applymovement VAR_0x800A, PlayersHouse_1F_Movement_MomApproachDadFemale\n\twaitmovement 0\n\tapplymovement VAR_0x8009, PlayersHouse_1F_Movement_DadFaceMomFemale\n\twaitmovement 0\n\treturn"
+  },
+  "label": "PlayersHouse_1F_EventScript_MomApproachDadFemale",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/players_house.inc",
+  "references": {}
+}

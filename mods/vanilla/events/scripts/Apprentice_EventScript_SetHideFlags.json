@@ -1,0 +1,24 @@
+{
+  "id": "Apprentice_EventScript_SetHideFlags",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/apprentice.inc",
+    "sha1": "353208142bca1df117076064d141b84efe196e7c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/apprentice.inc",
+    "rawScript": "setflag FLAG_HIDE_APPRENTICE\n\tsetflag FLAG_DAILY_APPRENTICE_LEAVES\n\treturn"
+  },
+  "label": "Apprentice_EventScript_SetHideFlags",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/apprentice.inc",
+  "references": {
+    "flags": [
+      "FLAG_DAILY_APPRENTICE_LEAVES",
+      "FLAG_HIDE_APPRENTICE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomeBattleRoom_EventScript_AudienceLookAround",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "sha1": "2cf5ea83e82fbd2189ced7e0cd4d5f894bf74650"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "rawScript": "turnvobject 0, DIR_EAST\n\tturnvobject 2, DIR_EAST\n\tturnvobject 4, DIR_EAST\n\tturnvobject 6, DIR_EAST\n\tturnvobject 8, DIR_EAST\n\tturnvobject 10, DIR_WEST\n\tturnvobject 12, DIR_WEST\n\tturnvobject 14, DIR_WEST\n\tturnvobject 16, DIR_WEST\n\tturnvobject 18, DIR_WEST\n\tturnvobject 20, DIR_EAST\n\tturnvobject 22, DIR_EAST\n\tturnvobject 24, DIR_EAST\n\tturnvobject 26, DIR_EAST\n\tturnvobject 28, DIR_EAST\n\tturnvobject 30, DIR_EAST\n\tdelay 20\n\tturnvobject 0, DIR_SOUTH\n\tturnvobject 2, DIR_SOUTH\n\tturnvobject 4, DIR_SOUTH\n\tturnvobject 6, DIR_SOUTH\n\tturnvobject 8, DIR_SOUTH\n\tturnvobject 10, DIR_SOUTH\n\tturnvobject 12, DIR_SOUTH\n\tturnvobject 14, DIR_SOUTH\n\tturnvobject 16, DIR_SOUTH\n\tturnvobject 18, DIR_SOUTH\n\tturnvobject 20, DIR_SOUTH\n\tturnvobject 22, DIR_SOUTH\n\tturnvobject 24, DIR_SOUTH\n\tturnvobject 26, DIR_SOUTH\n\tturnvobject 28, DIR_SOUTH\n\tturnvobject 30, DIR_SOUTH\n\tdelay 20\n\tturnvobject 1, DIR_EAST\n\tturnvobject 3, DIR_EAST\n\tturnvobject 5, DIR_EAST\n\tturnvobject 7, DIR_EAST\n\tturnvobject 9, DIR_EAST\n\tturnvobject 11, DIR_WEST\n\tturnvobject 13, DIR_WEST\n\tturnvobject 15, DIR_WEST\n\tturnvobject 17, DIR_WEST\n\tturnvobject 19, DIR_WEST\n\tturnvobject 21, DIR_EAST\n\tturnvobject 23, DIR_EAST\n\tturnvobject 25, DIR_EAST\n\tturnvobject 27, DIR_WEST\n\tturnvobject 31, DIR_WEST\n\tdelay 20\n\tturnvobject 1, DIR_SOUTH\n\tturnvobject 3, DIR_SOUTH\n\tturnvobject 5, DIR_SOUTH\n\tturnvobject 7, DIR_SOUTH\n\tturnvobject 9, DIR_SOUTH\n\tturnvobject 11, DIR_SOUTH\n\tturnvobject 13, DIR_SOUTH\n\tturnvobject 15, DIR_SOUTH\n\tturnvobject 17, DIR_SOUTH\n\tturnvobject 19, DIR_SOUTH\n\tturnvobject 21, DIR_SOUTH\n\tturnvobject 23, DIR_SOUTH\n\tturnvobject 25, DIR_SOUTH\n\tturnvobject 27, DIR_SOUTH\n\tturnvobject 31, DIR_SOUTH\n\tdelay 20\n\treturn"
+  },
+  "label": "BattleFrontier_BattleDomeBattleRoom_EventScript_AudienceLookAround",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+  "references": {}
+}

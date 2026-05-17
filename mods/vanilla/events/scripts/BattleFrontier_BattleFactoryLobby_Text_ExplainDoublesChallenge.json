@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleFactoryLobby_Text_ExplainDoublesChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+    "sha1": "292da35ee750dbef6f890d691b62400b747b2d83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+    "rawScript": ".string \"The Battle Swap Double Tournament\\n\"\n\t.string \"is a DOUBLE BATTLE competition using\\l\"\n\t.string \"only rental POK\u00e9MON.\\p\"\n\t.string \"First, you will be loaned three\\n\"\n\t.string \"POK\u00e9MON specifically for this event.\\p\"\n\t.string \"Using the supplied rental POK\u00e9MON,\\n\"\n\t.string \"you must conduct a DOUBLE BATTLE.\\p\"\n\t.string \"If you win, you are permitted to trade\\n\"\n\t.string \"one of your rental POK\u00e9MON.\\p\"\n\t.string \"Repeat this cycle of battling and\\n\"\n\t.string \"trading--if you win seven times in\\l\"\n\t.string \"a row, you will earn Battle Points.\\p\"\n\t.string \"If you want to interrupt your\\n\"\n\t.string \"challenge, please save the game.\\p\"\n\t.string \"If you don't save before interrupting,\\n\"\n\t.string \"you will be disqualified.$\""
+  },
+  "label": "BattleFrontier_BattleFactoryLobby_Text_ExplainDoublesChallenge",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+  "references": {}
+}

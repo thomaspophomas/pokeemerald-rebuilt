@@ -1,0 +1,19 @@
+{
+  "id": "RusturfTunnel_Text_ThankYouLetsGoHomePeeko",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/scripts.inc",
+    "sha1": "76035185b0aabddf11657305417168db4c1bb93d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RusturfTunnel/scripts.inc",
+    "rawScript": ".string \"PEEKO owes her life to you!\\p\"\n\t.string \"They call me MR. BRINEY.\\n\"\n\t.string \"And, you are?\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\n\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"Ah, so you are {PLAYER}{KUN}!\\n\"\n\t.string \"I sincerely thank you!\\p\"\n\t.string \"Now, if there's anything that troubles\\n\"\n\t.string \"you, don't hesitate to tell me!\\p\"\n\t.string \"You can usually find me in my cottage\\n\"\n\t.string \"by the sea near PETALBURG WOODS.\\p\"\n\t.string \"Come, PEEKO, we should make our way\\n\"\n\t.string \"home.\\p\"\n\t.string \"PEEKO: Pihyoh!$\""
+  },
+  "label": "RusturfTunnel_Text_ThankYouLetsGoHomePeeko",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RusturfTunnel/scripts.inc",
+  "references": {}
+}

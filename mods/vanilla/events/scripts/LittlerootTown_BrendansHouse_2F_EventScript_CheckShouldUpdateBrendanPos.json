@@ -1,0 +1,26 @@
+{
+  "id": "LittlerootTown_BrendansHouse_2F_EventScript_CheckShouldUpdateBrendanPos",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+    "sha1": "e2d021d5a56c7a155294e7f5fcba3be133f71b33"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+    "rawScript": "goto_if_set FLAG_MET_RIVAL_LILYCOVE, LittlerootTown_BrendansHouse_2F_EventScript_TryUpdateBrendanPos\n\tgoto_if_ge VAR_BIRCH_LAB_STATE, 2, LittlerootTown_BrendansHouse_2F_EventScript_Ret\n\tgoto LittlerootTown_BrendansHouse_2F_EventScript_TryUpdateBrendanPos"
+  },
+  "label": "LittlerootTown_BrendansHouse_2F_EventScript_CheckShouldUpdateBrendanPos",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_RIVAL_LILYCOVE"
+    ],
+    "vars": [
+      "VAR_BIRCH_LAB_STATE"
+    ]
+  }
+}

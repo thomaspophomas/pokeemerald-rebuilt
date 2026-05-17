@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_PokemonCenter_2F_EventScript_RecordCorner",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_PokemonCenter_2F/scripts.inc",
+    "sha1": "bbef33f3994f212922bb3c855315d32e6328e5b9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_PokemonCenter_2F/scripts.inc",
+    "rawScript": "call CableClub_EventScript_RecordCorner\n\tend"
+  },
+  "label": "SlateportCity_PokemonCenter_2F_EventScript_RecordCorner",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity_PokemonCenter_2F/scripts.inc",
+  "references": {}
+}

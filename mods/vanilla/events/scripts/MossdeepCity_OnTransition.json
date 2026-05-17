@@ -1,0 +1,27 @@
+{
+  "id": "MossdeepCity_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/scripts.inc",
+    "sha1": "33f0f7f83a475484aaca395542c6bd65a6f2dd45"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity/scripts.inc",
+    "rawScript": "clearflag FLAG_MOSSDEEP_GYM_SWITCH_1\n\tclearflag FLAG_MOSSDEEP_GYM_SWITCH_2\n\tclearflag FLAG_MOSSDEEP_GYM_SWITCH_3\n\tclearflag FLAG_MOSSDEEP_GYM_SWITCH_4\n\tcall_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather\n\tend"
+  },
+  "label": "MossdeepCity_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/MossdeepCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MOSSDEEP_GYM_SWITCH_1",
+      "FLAG_MOSSDEEP_GYM_SWITCH_2",
+      "FLAG_MOSSDEEP_GYM_SWITCH_3",
+      "FLAG_MOSSDEEP_GYM_SWITCH_4",
+      "FLAG_SYS_WEATHER_CTRL"
+    ]
+  }
+}

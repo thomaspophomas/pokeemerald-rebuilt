@@ -1,0 +1,19 @@
+{
+  "id": "SafariZone_Southwest_EventScript_Woman",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_Southwest/scripts.inc",
+    "sha1": "a5be000aa976a457a9b5a14a769497bbed5480ad"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SafariZone_Southwest/scripts.inc",
+    "rawScript": "msgbox SafariZone_Southwest_Text_Woman, MSGBOX_NPC\n\tend"
+  },
+  "label": "SafariZone_Southwest_EventScript_Woman",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SafariZone_Southwest/scripts.inc",
+  "references": {}
+}

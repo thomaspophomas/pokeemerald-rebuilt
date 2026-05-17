@@ -1,0 +1,29 @@
+{
+  "id": "SootopolisCity_EventScript_StevenLeadPlayerCaveOfOrigin",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": "msgbox SootopolisCity_Text_InvolvedWithCrisisComeWithMe, MSGBOX_DEFAULT\n\tclosemessage\n\tcall_if_eq VAR_FACING, DIR_WEST, SootopolisCity_EventScript_StartWalkToCaveOfOriginWest\n\tcall_if_eq VAR_FACING, DIR_NORTH, SootopolisCity_EventScript_StartWalkToCaveOfOriginNorth\n\tmsgbox SootopolisCity_Text_DoesThisMakeYourFearPokemon, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_SOOTOPOLIS_STEVEN, SootopolisCity_Movement_StevenWalkToCaveOfOrigin\n\tapplymovement LOCALID_PLAYER, SootopolisCity_Movement_PlayerWalkToCaveOfOrigin\n\twaitmovement 0\n\tdelay 120\n\tapplymovement LOCALID_SOOTOPOLIS_EXPERT, SootopolisCity_Movement_ExpertMoveAside\n\twaitmovement 0\n\tapplymovement LOCALID_SOOTOPOLIS_STEVEN, SootopolisCity_Movement_StevenArriveCaveEntrance\n\tapplymovement LOCALID_PLAYER, SootopolisCity_Movement_PlayerArriveCaveEntrance\n\twaitmovement 0\n\tmsgbox SootopolisCity_Text_HereWereAreHelpWallace, MSGBOX_DEFAULT\n\tclosemessage\n\tsetflag FLAG_STEVEN_GUIDES_TO_CAVE_OF_ORIGIN\n\tapplymovement LOCALID_PLAYER, SootopolisCity_Movement_PlayerEnterCaveOfOrigin\n\twaitmovement 0\n\twarp MAP_CAVE_OF_ORIGIN_ENTRANCE, 9, 20\n\twaitstate\n\tend"
+  },
+  "label": "SootopolisCity_EventScript_StevenLeadPlayerCaveOfOrigin",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_STEVEN_GUIDES_TO_CAVE_OF_ORIGIN"
+    ],
+    "vars": [
+      "VAR_FACING"
+    ],
+    "maps": [
+      "MAP_CAVE_OF_ORIGIN_ENTRANCE"
+    ]
+  }
+}

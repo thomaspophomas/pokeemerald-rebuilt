@@ -1,0 +1,19 @@
+{
+  "id": "Route114_FossilManiacsTunnel_Text_NotSafeThatWay",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_FossilManiacsTunnel/scripts.inc",
+    "sha1": "ecd010d2086a8019284fa4a41a8a3e7e67275e83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114_FossilManiacsTunnel/scripts.inc",
+    "rawScript": ".string \"Oh\u2026\\n\"\n\t.string \"It's not safe that way\u2026\\p\"\n\t.string \"I was digging away, you see\u2026\\n\"\n\t.string \"When the whole wall collapsed\u2026\\p\"\n\t.string \"I think there's a giant cavern\\n\"\n\t.string \"underneath now\u2026\\p\"\n\t.string \"But I've left it alone because I don't\\n\"\n\t.string \"think there are any FOSSILS there\u2026$\""
+  },
+  "label": "Route114_FossilManiacsTunnel_Text_NotSafeThatWay",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route114_FossilManiacsTunnel/scripts.inc",
+  "references": {}
+}

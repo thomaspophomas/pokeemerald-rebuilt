@@ -1,0 +1,19 @@
+{
+  "id": "MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "sha1": "9f4ded44922a9eecca2a712d1673b053babe0bae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "rawScript": ".string \"PROF. COZMO: But that TEAM MAGMA\u2026\\p\"\n\t.string \"What are they going to do with that\\n\"\n\t.string \"METEORITE at MT. CHIMNEY?$\""
+  },
+  "label": "MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+  "references": {}
+}

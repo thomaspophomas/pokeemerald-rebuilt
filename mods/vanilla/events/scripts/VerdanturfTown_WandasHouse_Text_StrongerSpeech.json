@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_WandasHouse_Text_StrongerSpeech",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+    "sha1": "31973fbe72c23018cb6768d20d4d7addb52bae60"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+    "rawScript": ".string \"WALLY: I lost to you, {PLAYER}, but I'm\\n\"\n\t.string \"not feeling down anymore.\\p\"\n\t.string \"Because I have a new purpose in life.\\n\"\n\t.string \"Together with my RALTS, I'm going\\l\"\n\t.string \"to challenge POK\u00e9MON GYMS and become\\l\"\n\t.string \"a great TRAINER.\\p\"\n\t.string \"Please watch me, {PLAYER}.\\n\"\n\t.string \"I'm going to be stronger than you.\\p\"\n\t.string \"When I do, I'm going to challenge you\\n\"\n\t.string \"to another battle.$\""
+  },
+  "label": "VerdanturfTown_WandasHouse_Text_StrongerSpeech",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+  "references": {}
+}

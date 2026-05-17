@@ -1,0 +1,23 @@
+{
+  "id": "SlateportCity_EventScript_DecorClerk",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_unset FLAG_RECEIVED_SECRET_POWER, SlateportCity_EventScript_ComeBackWithSecretPower\n\tmessage gText_HowMayIServeYou\n\twaitmessage\n\tpokemartdecoration SlateportCity_PokemartDecor\n\tmsgbox gText_PleaseComeAgain, MSGBOX_DEFAULT\n\trelease\n\tend\n\n\t.align 2"
+  },
+  "label": "SlateportCity_EventScript_DecorClerk",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_SECRET_POWER"
+    ]
+  }
+}

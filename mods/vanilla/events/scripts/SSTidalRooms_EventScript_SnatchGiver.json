@@ -1,0 +1,29 @@
+{
+  "id": "SSTidalRooms_EventScript_SnatchGiver",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalRooms/scripts.inc",
+    "sha1": "1953df649981f24c9b39a0b7b26b1ed8339d7249"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalRooms/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_TM_SNATCH, SSTidalRooms_EventScript_ExplainSnatch\n\tmsgbox SSTidalRooms_Text_NotSuspiciousTakeThis, MSGBOX_DEFAULT\n\tgiveitem ITEM_TM_SNATCH\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_RECEIVED_TM_SNATCH\n\tmsgbox SSTidalRooms_Text_ExplainSnatch, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "SSTidalRooms_EventScript_SnatchGiver",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SSTidalRooms/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_TM_SNATCH"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_TM_SNATCH"
+    ]
+  }
+}

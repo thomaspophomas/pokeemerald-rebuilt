@@ -1,0 +1,19 @@
+{
+  "id": "BattlePyramid_Retire",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "sha1": "a6f6792ac2bc39a05028dabd4e88f5984d84d4a5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "rawScript": "goto BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost\n\n@ Also used by Trainer Hill"
+  },
+  "label": "BattlePyramid_Retire",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "FallarborTown_BattleTentBattleRoom_EventScript_AskContinueChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+    "sha1": "8bbb2b24c65698ff0f5d4dcb7592d7ae122741de"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+    "rawScript": "frontier_get FRONTIER_DATA_BATTLE_NUM\n\tcall_if_eq VAR_RESULT, 1, FallarborTown_BattleTentBattleRoom_EventScript_ReadyFor2ndOpponent\n\tcall_if_eq VAR_RESULT, 2, FallarborTown_BattleTentBattleRoom_EventScript_ReadyFor3rdOpponent\n\tmultichoice 20, 6, MULTI_GO_ON_REST_RETIRE, TRUE\n\tswitch VAR_RESULT\n\tcase 0, FallarborTown_BattleTentBattleRoom_EventScript_ContinueChallenge\n\tcase 1, FallarborTown_BattleTentBattleRoom_EventScript_AskPauseChallenge\n\tcase 2, FallarborTown_BattleTentBattleRoom_EventScript_AskRetireChallenge"
+  },
+  "label": "FallarborTown_BattleTentBattleRoom_EventScript_AskContinueChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "RustboroCity_Gym_EventScript_RegisterRoxanne",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Gym/scripts.inc",
+    "sha1": "e0aa9de4fed612674104e48c7646854400dcecde"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Gym/scripts.inc",
+    "rawScript": "lockall\n\tpokenavcall RustboroCity_Gym_Text_RoxanneRegisterCall\n\twaitmessage\n\tdelay 30\n\tplayfanfare MUS_REGISTER_MATCH_CALL\n\tmsgbox RustboroCity_Gym_Text_RegisteredRoxanne, MSGBOX_DEFAULT\n\twaitfanfare\n\tclosemessage\n\tdelay 30\n\tsetflag FLAG_ENABLE_ROXANNE_MATCH_CALL\n\tclearflag FLAG_ENABLE_ROXANNE_FIRST_CALL\n\treleaseall\n\tend"
+  },
+  "label": "RustboroCity_Gym_EventScript_RegisterRoxanne",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_ENABLE_ROXANNE_FIRST_CALL",
+      "FLAG_ENABLE_ROXANNE_MATCH_CALL"
+    ]
+  }
+}

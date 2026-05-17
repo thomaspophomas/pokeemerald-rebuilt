@@ -1,0 +1,19 @@
+{
+  "id": "SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Entrance/scripts.inc",
+    "sha1": "8c330241299cc7a79f577ced9c7a80a8f74605ab"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SeafloorCavern_Entrance/scripts.inc",
+    "rawScript": ".string \"A punk like you, do you really think\\n\"\n\t.string \"you can take on TEAM AQUA?\\p\"\n\t.string \"I'd say you're too early by about\\n\"\n\t.string \"a trillion years!\\p\"\n\t.string \"You're a perfect fit for the likes of\\n\"\n\t.string \"TEAM MAGMA!\\p\"\n\t.string \"Speaking of TEAM MAGMA, I hear they\\n\"\n\t.string \"were spotted near MOSSDEEP.\\p\"\n\t.string \"That bunch of goons, they sure don't\\n\"\n\t.string \"look good near the sea!$\""
+  },
+  "label": "SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SeafloorCavern_Entrance/scripts.inc",
+  "references": {}
+}

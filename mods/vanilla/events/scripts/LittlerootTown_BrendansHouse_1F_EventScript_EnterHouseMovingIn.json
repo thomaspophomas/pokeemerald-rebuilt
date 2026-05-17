@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_BrendansHouse_1F_EventScript_EnterHouseMovingIn",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "sha1": "b92e18aeb34c3856db794aa81beeec7f0f0de717"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "rawScript": "lockall\n\tsetvar VAR_0x8004, LOCALID_PLAYERS_HOUSE_1F_MOM\n\tsetvar VAR_0x8005, MALE\n\tgoto PlayersHouse_1F_EventScript_EnterHouseMovingIn\n\tend"
+  },
+  "label": "LittlerootTown_BrendansHouse_1F_EventScript_EnterHouseMovingIn",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+  "references": {}
+}

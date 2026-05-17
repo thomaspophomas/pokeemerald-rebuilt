@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_2F_EventScript_SetToughPainting",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "sha1": "c41e25282a159070f0eb7fb3edcf1b61cc1cfa19"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "rawScript": "setmetatile 2, 6, METATILE_LilycoveMuseum_Painting4_Left, TRUE\n\tsetmetatile 3, 6, METATILE_LilycoveMuseum_Painting4_Right, TRUE\n\tend"
+  },
+  "label": "LilycoveCity_LilycoveMuseum_2F_EventScript_SetToughPainting",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+  "references": {}
+}

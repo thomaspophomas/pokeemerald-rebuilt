@@ -1,0 +1,19 @@
+{
+  "id": "AuroraTicket_Obtained",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_aurora_ticket.inc",
+    "sha1": "e2531e773ee18fead1efbfbdc01db2b1f669baf2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_aurora_ticket.inc",
+    "rawScript": "vmessage sText_AuroraTicketThankYou\n\twaitmessage\n\twaitbuttonpress\n\trelease\n\tend"
+  },
+  "label": "AuroraTicket_Obtained",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_aurora_ticket.inc",
+  "references": {}
+}

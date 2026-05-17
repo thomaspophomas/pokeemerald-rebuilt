@@ -1,0 +1,23 @@
+{
+  "id": "ArtisanCave_B1F_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ArtisanCave_B1F/scripts.inc",
+    "sha1": "2bc4cbb2dcb1ede45e91097755d8a12f59587fbe"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ArtisanCave_B1F/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, ArtisanCave_B1F_OnTransition\n\t.byte 0"
+  },
+  "label": "ArtisanCave_B1F_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/ArtisanCave_B1F/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

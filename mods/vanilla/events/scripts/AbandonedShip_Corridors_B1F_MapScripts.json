@@ -1,0 +1,24 @@
+{
+  "id": "AbandonedShip_Corridors_B1F_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+    "sha1": "20ae990b6a96e346c899f484fa3bf65e231e4792"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, AbandonedShip_Corridors_B1F_OnResume\n\tmap_script MAP_SCRIPT_ON_LOAD, AbandonedShip_Corridors_B1F_OnLoad\n\t.byte 0"
+  },
+  "label": "AbandonedShip_Corridors_B1F_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_RESUME"
+    ]
+  }
+}

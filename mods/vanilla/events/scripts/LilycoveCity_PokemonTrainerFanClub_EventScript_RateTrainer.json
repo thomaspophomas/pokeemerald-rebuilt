@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_EventScript_RateTrainer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": "setvar VAR_0x8004, FANCLUB_MEMBER1\n\tspecial BufferFanClubTrainerName\n\tmessage LilycoveCity_PokemonTrainerFanClub_Text_HowStrongRateTrainer\n\twaitmessage\n\tsetvar VAR_0x8004, SCROLL_MULTI_POKEMON_FAN_CLUB_RATER\n\tspecial ShowScrollableMultichoice\n\tsetvar VAR_0x8004, FANCLUB_MEMBER1\n\tswitch VAR_RESULT\n\tcase 11, LilycoveCity_PokemonTrainerFanClub_EventScript_CancelRateTrainer\n\tcase MULTI_B_PRESSED, LilycoveCity_PokemonTrainerFanClub_EventScript_CancelRateTrainer\n\tsetvar VAR_0x8004, FANCLUB_MEMBER1\n\tspecial BufferFanClubTrainerName\n\tcopyvar VAR_0x8006, VAR_0x800A\n\tcopyvar VAR_0x8005, VAR_RESULT\n\tspecial PutFanClubSpecialOnTheAir\n\tgoto LilycoveCity_PokemonTrainerFanClub_EventScript_CompleteInterview\n\tend"
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_EventScript_RateTrainer",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

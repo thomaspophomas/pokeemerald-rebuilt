@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "sha1": "c30df9e905f6d4b9d9e1eaf4d4fccf30db88e083"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "rawScript": ".string \"SCOTT: Well, hello and welcome!\\n\"\n\t.string \"Heheh\u2026 Sorry about the cramped space.\\p\"\n\t.string \"Anyway, {PLAYER}{KUN}, let me formally\\n\"\n\t.string \"welcome you to the BATTLE FRONTIER.\\p\"\n\t.string \"This is my dream come true.\\n\"\n\t.string \"It took me years and years, but I've\\l\"\n\t.string \"finally given shape to my dream.$\""
+  },
+  "label": "BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+  "references": {}
+}

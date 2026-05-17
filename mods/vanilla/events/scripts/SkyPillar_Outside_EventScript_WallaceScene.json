@@ -1,0 +1,28 @@
+{
+  "id": "SkyPillar_Outside_EventScript_WallaceScene",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Outside/scripts.inc",
+    "sha1": "9bf749dde7f98e08aa43ccd220b7469c53ade7f3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_Outside/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_SKY_PILLAR_WALLACE, SkyPillar_Outside_Movement_WallaceApproachPlayer\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tmsgbox SkyPillar_Outside_Text_OpenedDoorToSkyPillar, MSGBOX_DEFAULT\n\tclosemessage\n\tdelay 30\n\tsetvar VAR_0x8004, 1  @ vertical pan\n\tsetvar VAR_0x8005, 1  @ horizontal pan\n\tsetvar VAR_0x8006, 8  @ num shakes\n\tsetvar VAR_0x8007, 3  @ shake delay\n\tspecial ShakeCamera\n\twaitstate\n\tdelay 40\n\tmsgbox SkyPillar_Outside_Text_EarthquakeNotMomentToWaste, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_PLAYER, SkyPillar_Outside_Movement_PlayerClimbSkyPillar\n\tapplymovement LOCALID_SKY_PILLAR_WALLACE, SkyPillar_Outside_Movement_WallaceClimbSkyPillar\n\twaitmovement 0\n\tsetvar VAR_0x8004, 1   @ vertical pan\n\tsetvar VAR_0x8005, 3   @ horizontal pan\n\tsetvar VAR_0x8006, 20  @ num shakes\n\tsetvar VAR_0x8007, 5   @ shake delay\n\tspecial ShakeCamera\n\twaitstate\n\tdelay 20\n\tapplymovement LOCALID_SKY_PILLAR_WALLACE, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tdelay 10\n\tapplymovement LOCALID_SKY_PILLAR_WALLACE, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\tdelay 20\n\tapplymovement LOCALID_SKY_PILLAR_WALLACE, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tdelay 30\n\tmsgbox SkyPillar_Outside_Text_SituationGettingWorse, MSGBOX_DEFAULT\n\tclosemessage\n\tsetflag FLAG_SYS_WEATHER_CTRL\n\tsetweather WEATHER_ABNORMAL\n\tdoweather\n\tspecial WaitWeather\n\tdelay 30\n\tmsgbox SkyPillar_Outside_Text_GotToGoBackForSootopolis, MSGBOX_DEFAULT\n\tclosemessage\n\tplayse SE_EXIT\n\tfadescreenswapbuffers FADE_TO_BLACK\n\tclearflag FLAG_HIDE_MAP_NAME_POPUP\n\tsetvar VAR_SOOTOPOLIS_CITY_STATE, 4\n\tremoveobject LOCALID_SKY_PILLAR_WALLACE\n\tclearflag FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE\n\tfadescreenswapbuffers FADE_FROM_BLACK\n\treleaseall\n\tend"
+  },
+  "label": "SkyPillar_Outside_EventScript_WallaceScene",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SkyPillar_Outside/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_MAP_NAME_POPUP",
+      "FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE",
+      "FLAG_SYS_WEATHER_CTRL"
+    ],
+    "vars": [
+      "VAR_SOOTOPOLIS_CITY_STATE"
+    ]
+  }
+}

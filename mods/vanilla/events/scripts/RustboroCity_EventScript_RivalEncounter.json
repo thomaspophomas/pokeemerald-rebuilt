@@ -1,0 +1,23 @@
+{
+  "id": "RustboroCity_EventScript_RivalEncounter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": "checkplayergender\n\tgoto_if_eq VAR_RESULT, MALE, RustboroCity_EventScript_MayEncounter\n\tgoto_if_eq VAR_RESULT, FEMALE, RustboroCity_EventScript_BrendanEncounter\n\tend"
+  },
+  "label": "RustboroCity_EventScript_RivalEncounter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

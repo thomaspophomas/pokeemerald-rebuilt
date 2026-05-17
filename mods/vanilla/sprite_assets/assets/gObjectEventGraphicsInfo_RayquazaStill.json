@@ -1,0 +1,35 @@
+{
+  "id": "gObjectEventGraphicsInfo_RayquazaStill",
+  "domain": "sprite_assets",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/object_events/object_event_graphics_info.h",
+    "sha1": "6e39355ad5f42a055e0a4aba39fadac078dcb7cf"
+  },
+  "legacy": {
+    "kind": "object_event_sprite_asset",
+    "sourcePath": "src/data/object_events/object_event_graphics_info.h",
+    "rawC": "const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RayquazaStill = {\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 2048,\n    .width = 64,\n    .height = 64,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = TRUE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_64x64,\n    .subspriteTables = sOamTables_64x64,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_RayquazaStill,\n    .affineAnims = gDummySpriteAffineAnimTable,\n};"
+  },
+  "key": "gObjectEventGraphicsInfo_RayquazaStill",
+  "assetKind": "object_event",
+  "graphicsId": "OBJ_EVENT_GFX_RAYQUAZA_STILL",
+  "graphicsInfoSymbol": "gObjectEventGraphicsInfo_RayquazaStill",
+  "sheetSymbol": null,
+  "compressedSheetSymbol": null,
+  "paletteSymbol": null,
+  "compressedPaletteSymbol": null,
+  "templateSymbol": null,
+  "tileTag": "TAG_NONE",
+  "paletteTag": "OBJ_EVENT_PAL_TAG_NPC_3",
+  "dimensions": {
+    "width": "64",
+    "height": "64",
+    "size": "2048"
+  },
+  "oam": "&gObjectEventBaseOam_64x64",
+  "images": "sPicTable_RayquazaStill",
+  "anims": "sAnimTable_Standard",
+  "subspriteTables": "sOamTables_64x64",
+  "affineAnims": "gDummySpriteAffineAnimTable"
+}

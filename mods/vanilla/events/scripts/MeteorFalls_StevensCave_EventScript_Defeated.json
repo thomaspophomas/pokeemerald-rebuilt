@@ -1,0 +1,19 @@
+{
+  "id": "MeteorFalls_StevensCave_EventScript_Defeated",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_StevensCave/scripts.inc",
+    "sha1": "1c533dd88d1548eeb3f32082e2ab2c1de6a3a5f5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_StevensCave/scripts.inc",
+    "rawScript": "applymovement LOCALID_METEOR_FALLS_STEVEN, Common_Movement_FacePlayer\n\twaitmovement 0\n\tmsgbox MeteorFalls_StevensCave_Text_MyPredictionCameTrue, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "MeteorFalls_StevensCave_EventScript_Defeated",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MeteorFalls_StevensCave/scripts.inc",
+  "references": {}
+}

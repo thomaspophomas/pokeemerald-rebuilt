@@ -1,0 +1,29 @@
+{
+  "id": "BerryBlender_EventScript_ExpertMNoBerries",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": "checkitem ITEM_POKEBLOCK_CASE\n\tgoto_if_eq VAR_RESULT, FALSE, BerryBlender_EventScript_ExpertMNoSpareBerries\n\tspecialvar VAR_RESULT, GetFirstFreePokeblockSlot\n\tgoto_if_eq VAR_RESULT, 65535, BerryBlender_EventScript_ExpertMNoSpareBerries\n\tdotimebasedevents\n\tgoto_if_set FLAG_DAILY_CONTEST_LOBBY_RECEIVED_BERRY, BerryBlender_EventScript_ExpertMNoSpareBerries\n\tgoto BerryBlender_EventScript_ExpertMGiveBerry\n\tend"
+  },
+  "label": "BerryBlender_EventScript_ExpertMNoBerries",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {
+    "flags": [
+      "FLAG_DAILY_CONTEST_LOBBY_RECEIVED_BERRY"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_POKEBLOCK_CASE"
+    ]
+  }
+}

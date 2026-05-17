@@ -1,0 +1,19 @@
+{
+  "id": "BerryBlender_Text_DontHavePokeblockCase",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": ".string \"But you don't have a {POKEBLOCK} CASE.\\p\"\n\t.string \"You should get a {POKEBLOCK} CASE and then\\n\"\n\t.string \"come see me.$\""
+  },
+  "label": "BerryBlender_Text_DontHavePokeblockCase",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {}
+}

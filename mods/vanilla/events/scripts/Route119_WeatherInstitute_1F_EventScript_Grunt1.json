@@ -1,0 +1,23 @@
+{
+  "id": "Route119_WeatherInstitute_1F_EventScript_Grunt1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_1F/scripts.inc",
+    "sha1": "c66e07de5643dfd9d0b7ced5e87ea02257875e77"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_1F/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_GRUNT_WEATHER_INST_1, Route119_WeatherInstitute_1F_Text_Grunt1Intro, Route119_WeatherInstitute_1F_Text_Grunt1Defeat\n\tmsgbox Route119_WeatherInstitute_1F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route119_WeatherInstitute_1F_EventScript_Grunt1",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route119_WeatherInstitute_1F/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_GRUNT_WEATHER_INST_1"
+    ]
+  }
+}

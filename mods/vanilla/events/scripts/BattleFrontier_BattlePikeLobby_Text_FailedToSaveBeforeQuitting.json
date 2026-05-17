@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeLobby_Text_FailedToSaveBeforeQuitting",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "sha1": "e2be0fe89296e221d6bdf7bc81fdcf739064bd1b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "rawScript": ".string \"I beg your pardon, but\u2026\\p\"\n\t.string \"You failed to save before you quit\\n\"\n\t.string \"your challenge the last time.\\p\"\n\t.string \"Because of that, your challenge so far\\n\"\n\t.string \"has been disqualified. I am sorry\u2026$\""
+  },
+  "label": "BattleFrontier_BattlePikeLobby_Text_FailedToSaveBeforeQuitting",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+  "references": {}
+}

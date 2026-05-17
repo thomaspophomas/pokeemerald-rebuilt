@@ -1,0 +1,19 @@
+{
+  "id": "AquaHideout_B1F_Text_Grunt7Intro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B1F/scripts.inc",
+    "sha1": "2923188c4ae1df18ace73c8a8f87ea7f1d1e7886"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_B1F/scripts.inc",
+    "rawScript": ".string \"Hey!\\n\"\n\t.string \"You there!\\p\"\n\t.string \"Which do you think is cooler?\\n\"\n\t.string \"TEAM AQUA's uniform or TEAM MAGMA's?$\""
+  },
+  "label": "AquaHideout_B1F_Text_Grunt7Intro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AquaHideout_B1F/scripts.inc",
+  "references": {}
+}

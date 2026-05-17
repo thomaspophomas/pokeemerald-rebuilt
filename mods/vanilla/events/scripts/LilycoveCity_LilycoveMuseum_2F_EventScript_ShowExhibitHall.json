@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_2F_EventScript_ShowExhibitHall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "sha1": "c41e25282a159070f0eb7fb3edcf1b61cc1cfa19"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_MUSEUM_2F_CURATOR, Common_Movement_FacePlayer\n\tapplymovement LOCALID_PLAYER, LilycoveCity_LilycoveMuseum_2F_Movement_PlayerWalkInPlaceLeft\n\twaitmovement 0\n\tmsgbox LilycoveCity_LilycoveMuseum_2F_Text_ThisIsExhibitHall, MSGBOX_SIGN\n\tapplymovement LOCALID_MUSEUM_2F_CURATOR, LilycoveCity_LilycoveMuseum_2F_Movement_FaceExhibitHall\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, LilycoveCity_LilycoveMuseum_2F_Movement_FaceExhibitHall\n\twaitmovement 0\n\tmsgbox LilycoveCity_LilycoveMuseum_2F_Text_ExplainExhibitHall, MSGBOX_SIGN\n\tapplymovement LOCALID_MUSEUM_2F_CURATOR, Common_Movement_FacePlayer\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, LilycoveCity_LilycoveMuseum_2F_Movement_PlayerWalkInPlaceLeft\n\twaitmovement 0\n\tmsgbox LilycoveCity_LilycoveMuseum_2F_Text_PleaseObtainPaintingsForExhibit, MSGBOX_SIGN\n#ifdef UBFIX\n\tsetvar VAR_LILYCOVE_MUSEUM_2F_STATE, 1\n#else\n\tcopyvar VAR_LILYCOVE_MUSEUM_2F_STATE, 1, warn=FALSE\n#endif\n\treleaseall\n\tend"
+  },
+  "label": "LilycoveCity_LilycoveMuseum_2F_EventScript_ShowExhibitHall",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LILYCOVE_MUSEUM_2F_STATE"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Route110_TrickHouseEntrance_EventScript_ChooseTent",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "sha1": "9367efc136143832c1697fbcc61fbb296269d396"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "rawScript": "multichoice 0, 0, MULTI_TENT, TRUE\n\tswitch VAR_RESULT\n\tcase 0, Route110_TrickHouseEntrance_EventScript_GiveRedTent\n\tgoto Route110_TrickHouseEntrance_EventScript_GiveBlueTent"
+  },
+  "label": "Route110_TrickHouseEntrance_EventScript_ChooseTent",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

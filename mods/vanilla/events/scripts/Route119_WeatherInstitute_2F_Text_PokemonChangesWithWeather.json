@@ -1,0 +1,19 @@
+{
+  "id": "Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "sha1": "fb62e5a84003aa6247f1e7fe6ea409ec86ac92cc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "rawScript": ".string \"That POK\u00e9MON changes shape according\\n\"\n\t.string \"to the weather conditions.\\p\"\n\t.string \"There're plenty of them in the\\n\"\n\t.string \"INSTITUTE--go ahead and take it.$\""
+  },
+  "label": "Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+  "references": {}
+}

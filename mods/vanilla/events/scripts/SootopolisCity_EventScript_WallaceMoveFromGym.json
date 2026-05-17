@@ -1,0 +1,23 @@
+{
+  "id": "SootopolisCity_EventScript_WallaceMoveFromGym",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": "applymovement LOCALID_SOOTOPOLIS_WALLACE, SootopolisCity_Movement_WallaceMoveFromGym\n\twaitmovement 0\n\tcopyobjectxytoperm LOCALID_SOOTOPOLIS_WALLACE\n\tsetvar VAR_SOOTOPOLIS_WALLACE_STATE, 1\n\treturn"
+  },
+  "label": "SootopolisCity_EventScript_WallaceMoveFromGym",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_SOOTOPOLIS_WALLACE_STATE"
+    ]
+  }
+}

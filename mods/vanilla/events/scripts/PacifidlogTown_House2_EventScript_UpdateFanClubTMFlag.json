@@ -1,0 +1,26 @@
+{
+  "id": "PacifidlogTown_House2_EventScript_UpdateFanClubTMFlag",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_House2/scripts.inc",
+    "sha1": "18b89c836e0ca6b80f69fe44839d4dd2d94ef1b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown_House2/scripts.inc",
+    "rawScript": "goto_if_unset FLAG_RECEIVED_FANCLUB_TM_THIS_WEEK, Common_EventScript_NopReturn\n\tspecialvar VAR_RESULT, GetDaysUntilPacifidlogTMAvailable\n\tcall_if_eq VAR_RESULT, 0, PacifidlogTown_House2_EventScript_ClearReceivedFanClubTM\n\treturn"
+  },
+  "label": "PacifidlogTown_House2_EventScript_UpdateFanClubTMFlag",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PacifidlogTown_House2/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_FANCLUB_TM_THIS_WEEK"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

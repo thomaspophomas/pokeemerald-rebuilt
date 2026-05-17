@@ -1,0 +1,23 @@
+{
+  "id": "Route118_EventScript_RematchRose",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route118/scripts.inc",
+    "sha1": "5a4868d1490a62e62c6e29a255fc938bad9fa2cd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route118/scripts.inc",
+    "rawScript": "trainerbattle_rematch TRAINER_ROSE_1, Route118_Text_RoseRematchIntro, Route118_Text_RoseRematchDefeat\n\tmsgbox Route118_Text_RosePostRematch, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route118_EventScript_RematchRose",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route118/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ROSE_1"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "RustboroCity_Mart_EventScript_Clerk",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Mart/scripts.inc",
+    "sha1": "064cba37df0c93452bb5e6cc75752460d861c58d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Mart/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmessage gText_HowMayIServeYou\n\twaitmessage\n\tgoto_if_unset FLAG_MET_DEVON_EMPLOYEE, RustboroCity_Mart_EventScript_PokemartBasic\n\tgoto_if_set FLAG_MET_DEVON_EMPLOYEE, RustboroCity_Mart_EventScript_PokemartExpanded\n\tend"
+  },
+  "label": "RustboroCity_Mart_EventScript_Clerk",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_Mart/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_DEVON_EMPLOYEE"
+    ]
+  }
+}

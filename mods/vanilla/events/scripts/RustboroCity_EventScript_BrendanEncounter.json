@@ -1,0 +1,30 @@
+{
+  "id": "RustboroCity_EventScript_BrendanEncounter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": "goto_if_set FLAG_DEFEATED_RIVAL_RUSTBORO, RustboroCity_EventScript_BrendanBrineyHint\n\tgoto_if_set FLAG_MET_RIVAL_RUSTBORO, RustboroCity_EventScript_BrendanAskToBattle\n\tsetflag FLAG_MET_RIVAL_RUSTBORO\n\tmsgbox RustboroCity_Text_BrendanHiLetsRegister, MSGBOX_DEFAULT\n\tclosemessage\n\tdelay 30\n\tplayfanfare MUS_REGISTER_MATCH_CALL\n\tmsgbox RustboroCity_Text_RegisteredBrendan, MSGBOX_DEFAULT\n\twaitfanfare\n\tclosemessage\n\tdelay 30\n\tsetflag FLAG_ENABLE_RIVAL_MATCH_CALL\n\tsetvar VAR_RUSTBORO_CITY_STATE, 8\n\tsetvar VAR_ROUTE104_STATE, 2\n\tmsgbox RustboroCity_Text_BrendanPassedBrineyWantToBattle, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_BattleBrendan\n\tmsgbox RustboroCity_Text_BrendanNoConfidenceInPokemon, MSGBOX_DEFAULT\n\tcall RustboroCity_EventScript_RestoreBgm\n\treleaseall\n\tend"
+  },
+  "label": "RustboroCity_EventScript_BrendanEncounter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_RIVAL_RUSTBORO",
+      "FLAG_ENABLE_RIVAL_MATCH_CALL",
+      "FLAG_MET_RIVAL_RUSTBORO"
+    ],
+    "vars": [
+      "VAR_RESULT",
+      "VAR_ROUTE104_STATE",
+      "VAR_RUSTBORO_CITY_STATE"
+    ]
+  }
+}

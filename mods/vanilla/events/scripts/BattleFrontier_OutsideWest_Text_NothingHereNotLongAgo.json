@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideWest_Text_NothingHereNotLongAgo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": ".string \"There used to be nothing here not all\\n\"\n\t.string \"that long ago.\\p\"\n\t.string \"But, now look at this place! Amazing!\\n\"\n\t.string \"I'll bring my mother out to see this.$\""
+  },
+  "label": "BattleFrontier_OutsideWest_Text_NothingHereNotLongAgo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_EventScript_Interviewer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_FAN_CLUB_STRENGTH_SHARED, LilycoveCity_PokemonTrainerFanClub_EventScript_AlreadyInterviewed\n\tgoto_if_unset FLAG_FAN_CLUB_STRENGTH_SHARED, LilycoveCity_PokemonTrainerFanClub_EventScript_Interview\n\tend\n\n@ The interviewer doesnt count as an individual fan club member\n@ Instead they always ask about whoever the Lass would be interested in, if not the player"
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_EventScript_Interviewer",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_FAN_CLUB_STRENGTH_SHARED"
+    ]
+  }
+}

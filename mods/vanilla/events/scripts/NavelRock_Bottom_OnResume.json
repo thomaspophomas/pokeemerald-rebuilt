@@ -1,0 +1,23 @@
+{
+  "id": "NavelRock_Bottom_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NavelRock_Bottom/scripts.inc",
+    "sha1": "7102a99e7846229610a261d704347488358f9702"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NavelRock_Bottom/scripts.inc",
+    "rawScript": "call_if_set FLAG_SYS_CTRL_OBJ_DELETE, NavelRock_Bottom_EventScript_TryRemoveLugia\n\tend"
+  },
+  "label": "NavelRock_Bottom_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/NavelRock_Bottom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_CTRL_OBJ_DELETE"
+    ]
+  }
+}

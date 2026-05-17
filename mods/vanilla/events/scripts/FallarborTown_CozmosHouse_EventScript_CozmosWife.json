@@ -1,0 +1,24 @@
+{
+  "id": "FallarborTown_CozmosHouse_EventScript_CozmosWife",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+    "sha1": "8f6cba0c7d4561645e0110baf848672ddd10d44d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_TM_RETURN, FallarborTown_CozmosHouse_EventScript_CozmoIsHappy\n\tgoto_if_set FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY, FallarborTown_CozmosHouse_EventScript_CozmoIsSad\n\tmsgbox FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "FallarborTown_CozmosHouse_EventScript_CozmosWife",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY",
+      "FLAG_RECEIVED_TM_RETURN"
+    ]
+  }
+}

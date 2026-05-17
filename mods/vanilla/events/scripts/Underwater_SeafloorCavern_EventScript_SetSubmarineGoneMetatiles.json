@@ -1,0 +1,19 @@
+{
+  "id": "Underwater_SeafloorCavern_EventScript_SetSubmarineGoneMetatiles",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_SeafloorCavern/scripts.inc",
+    "sha1": "0161920db8325168fff9945e78faf08193f0bc50"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Underwater_SeafloorCavern/scripts.inc",
+    "rawScript": "setmetatile 5, 3, METATILE_Underwater_RockWall, TRUE\n\tsetmetatile 6, 3, METATILE_Underwater_RockWall, TRUE\n\tsetmetatile 7, 3, METATILE_Underwater_RockWall, TRUE\n\tsetmetatile 8, 3, METATILE_Underwater_RockWall, TRUE\n\tsetmetatile 5, 4, METATILE_Underwater_FloorShadow, FALSE\n\tsetmetatile 6, 4, METATILE_Underwater_FloorShadow, FALSE\n\tsetmetatile 7, 4, METATILE_Underwater_FloorShadow, FALSE\n\tsetmetatile 8, 4, METATILE_Underwater_FloorShadow, FALSE\n\tsetmetatile 5, 5, METATILE_Underwater_FloorShadow, FALSE\n\tsetmetatile 6, 5, METATILE_Underwater_FloorShadow, FALSE\n\tsetmetatile 7, 5, METATILE_Underwater_FloorShadow, FALSE\n\tsetmetatile 8, 5, METATILE_Underwater_FloorShadow, FALSE\n\treturn"
+  },
+  "label": "Underwater_SeafloorCavern_EventScript_SetSubmarineGoneMetatiles",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Underwater_SeafloorCavern/scripts.inc",
+  "references": {}
+}

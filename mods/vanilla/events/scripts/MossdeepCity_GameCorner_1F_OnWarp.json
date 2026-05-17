@@ -1,0 +1,23 @@
+{
+  "id": "MossdeepCity_GameCorner_1F_OnWarp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_GameCorner_1F/scripts.inc",
+    "sha1": "9705268b8b1f1689ba5ce2a1488d37f1b3e28fee"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_GameCorner_1F/scripts.inc",
+    "rawScript": "map_script_2 VAR_CABLE_CLUB_STATE, USING_MINIGAME, CableClub_EventScript_CheckTurnAttendant\n\t.2byte 0"
+  },
+  "label": "MossdeepCity_GameCorner_1F_OnWarp",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/MossdeepCity_GameCorner_1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_CABLE_CLUB_STATE"
+    ]
+  }
+}

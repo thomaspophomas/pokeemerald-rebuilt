@@ -1,0 +1,26 @@
+{
+  "id": "Route109_SeashoreHouse_EventScript_BuySodaPop",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route109_SeashoreHouse/scripts.inc",
+    "sha1": "e25b82298342bb772f517727cec07c201daa316e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route109_SeashoreHouse/scripts.inc",
+    "rawScript": "checkmoney 300\n\tgoto_if_eq VAR_RESULT, FALSE, Route109_SeashoreHouse_EventScript_NotEnoughMoney\n\tcheckitemspace ITEM_SODA_POP\n\tgoto_if_eq VAR_RESULT, FALSE, Route109_SeashoreHouse_EventScript_NotEnoughSpace\n\tmsgbox Route109_SeashoreHouse_Text_HereYouGo, MSGBOX_DEFAULT\n\tremovemoney 300\n\tupdatemoneybox\n\tgiveitem ITEM_SODA_POP\n\thidemoneybox\n\trelease\n\tend"
+  },
+  "label": "Route109_SeashoreHouse_EventScript_BuySodaPop",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route109_SeashoreHouse/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_SODA_POP"
+    ]
+  }
+}

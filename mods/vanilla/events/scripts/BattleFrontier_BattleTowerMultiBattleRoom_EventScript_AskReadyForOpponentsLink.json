@@ -1,0 +1,26 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskReadyForOpponentsLink",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+    "sha1": "71e71dc7e048f3a27e89d0ae41c736d25233e068"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+    "rawScript": "goto_if_set FLAG_TEMP_2, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskReadyForOpponentsLinkNoRecord\n\tmultichoice 19, 6, MULTI_GO_ON_RECORD_RETIRE, TRUE\n\tswitch VAR_RESULT\n\tcase 0, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ContinueChallengeLink\n\tcase 1, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskRecordBattleLink\n\tcase 2, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskRetireChallengeLink\n\tcase MULTI_B_PRESSED, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskRetireChallengeLink\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskReadyForOpponentsLink",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_TEMP_2"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

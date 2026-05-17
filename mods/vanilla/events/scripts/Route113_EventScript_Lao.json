@@ -1,0 +1,26 @@
+{
+  "id": "Route113_EventScript_Lao",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113/scripts.inc",
+    "sha1": "238e4819cabf545bec77dae988b46382266ced10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route113/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_LAO_1, Route113_Text_LaoIntro, Route113_Text_LaoDefeat, Route113_EventScript_RegisterLao\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, Route113_EventScript_RematchLao\n\tmsgbox Route113_Text_LaoPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route113_EventScript_Lao",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route113/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_LAO_1"
+    ]
+  }
+}

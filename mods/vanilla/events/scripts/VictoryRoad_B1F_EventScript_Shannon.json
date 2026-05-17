@@ -1,0 +1,23 @@
+{
+  "id": "VictoryRoad_B1F_EventScript_Shannon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_B1F/scripts.inc",
+    "sha1": "cbf73ba8b0ffae50fb8f8b966d51479555277bbd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VictoryRoad_B1F/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_SHANNON, VictoryRoad_B1F_Text_ShannonIntro, VictoryRoad_B1F_Text_ShannonDefeat\n\tmsgbox VictoryRoad_B1F_Text_ShannonPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "VictoryRoad_B1F_EventScript_Shannon",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/VictoryRoad_B1F/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_SHANNON"
+    ]
+  }
+}

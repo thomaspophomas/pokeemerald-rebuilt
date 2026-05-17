@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_BrendanYouGoingToBattleFrontier",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"{PLAYER}, what are you going to do?\\p\"\n\t.string \"Are you taking the BATTLE FRONTIER\\n\"\n\t.string \"challenge?\\p\"\n\t.string \"Or, are you going to complete your\\n\"\n\t.string \"POK\u00e9DEX?\\p\"\n\t.string \"Since you're that strong, you should\\n\"\n\t.string \"consider the BATTLE FRONTIER.\\p\"\n\t.string \"Heh, if I train my POK\u00e9MON a bit more,\\n\"\n\t.string \"I'll get stronger than you, {PLAYER}.\\p\"\n\t.string \"Maybe I should go to the BATTLE\\n\"\n\t.string \"FRONTIER.\\p\"\n\t.string \"Well, anyway, hang in there!$\""
+  },
+  "label": "LilycoveCity_Text_BrendanYouGoingToBattleFrontier",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

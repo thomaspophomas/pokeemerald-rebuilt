@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Text_TryingMeaninglessToPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": ".string \"ARCHIE: KYOGRE and GROUDON both\\n\"\n\t.string \"flew off to who knows where.\\p\"\n\t.string \"The weather in HOENN has returned\\n\"\n\t.string \"to its normal state\u2026\\p\"\n\t.string \"Haha\u2026\\n\"\n\t.string \"Hahaha\u2026\\p\"\n\t.string \"Maybe what we were trying to do was\\n\"\n\t.string \"something small, even meaningless,\\l\"\n\t.string \"to POK\u00e9MON\u2026$\""
+  },
+  "label": "SootopolisCity_Text_TryingMeaninglessToPokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

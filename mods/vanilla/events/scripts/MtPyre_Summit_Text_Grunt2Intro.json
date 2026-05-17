@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_Summit_Text_Grunt2Intro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/scripts.inc",
+    "sha1": "2d98d572d50cebb678d972aa421854c983329822"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Summit/scripts.inc",
+    "rawScript": ".string \"Hah!\\n\"\n\t.string \"Too bad for you!\\p\"\n\t.string \"If you came earlier, you only would've\\n\"\n\t.string \"had to battle the wimpy TEAM MAGMA.\\p\"\n\t.string \"But since you arrived now, you have\\n\"\n\t.string \"to take on us toughies!$\""
+  },
+  "label": "MtPyre_Summit_Text_Grunt2Intro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_Summit/scripts.inc",
+  "references": {}
+}

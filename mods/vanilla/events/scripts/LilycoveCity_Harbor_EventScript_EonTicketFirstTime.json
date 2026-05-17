@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_Harbor_EventScript_EonTicketFirstTime",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "sha1": "ffd83f00915b03bfdd96f51950251d00dd19dbcb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "rawScript": "setflag FLAG_SHOWN_EON_TICKET\n\tmsgbox EventTicket_Text_ThatPass, MSGBOX_DEFAULT\n\tclosemessage\n\tcall LilycoveCity_Harbor_EventScript_GetEventTicketSailor\n\tmsgbox EventTicket_Text_ShowEonTicket, MSGBOX_DEFAULT\n\tgoto LilycoveCity_Harbor_EventScript_GoToSouthernIslandFirstTime\n\tend"
+  },
+  "label": "LilycoveCity_Harbor_EventScript_EonTicketFirstTime",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_Harbor/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SHOWN_EON_TICKET"
+    ]
+  }
+}

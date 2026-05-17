@@ -1,0 +1,23 @@
+{
+  "id": "RustboroCity_DevonCorp_2F_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "sha1": "7e0aa6a4df50ead64287578a24ba19b07cafbb02"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "rawScript": "call_if_eq VAR_FOSSIL_RESURRECTION_STATE, 1, RustboroCity_DevonCorp_2F_EventScript_SetFossilReady\n\tend"
+  },
+  "label": "RustboroCity_DevonCorp_2F_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FOSSIL_RESURRECTION_STATE"
+    ]
+  }
+}

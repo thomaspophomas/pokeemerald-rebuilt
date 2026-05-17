@@ -1,0 +1,23 @@
+{
+  "id": "PlayersHouse_1F_EventScript_CheckGiveAmuletCoin",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/players_house.inc",
+    "sha1": "0f3da1347500315ef212a252409f1d410b0d226c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/players_house.inc",
+    "rawScript": "goto_if_set FLAG_BADGE05_GET, PlayersHouse_1F_EventScript_TryGiveAmuletCoin\n\tgoto PlayersHouse_1F_EventScript_MomHealsParty"
+  },
+  "label": "PlayersHouse_1F_EventScript_CheckGiveAmuletCoin",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/players_house.inc",
+  "references": {
+    "flags": [
+      "FLAG_BADGE05_GET"
+    ]
+  }
+}

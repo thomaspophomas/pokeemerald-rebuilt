@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_Text_WearTheseRunningShoes",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": ".string \"MOM: {PLAYER}! {PLAYER}! Did you\\n\"\n\t.string \"introduce yourself to PROF. BIRCH?\\p\"\n\t.string \"Oh! What an adorable POK\u00e9MON!\\n\"\n\t.string \"You got it from PROF. BIRCH. How nice!\\p\"\n\t.string \"You're your father's child, all right.\\n\"\n\t.string \"You look good together with POK\u00e9MON!\\p\"\n\t.string \"Here, honey! If you're going out on an\\n\"\n\t.string \"adventure, wear these RUNNING SHOES.\\p\"\n\t.string \"They'll put a zip in your step!$\""
+  },
+  "label": "LittlerootTown_Text_WearTheseRunningShoes",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {}
+}

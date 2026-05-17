@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "sha1": "4f73bd77d8715e7ac12ff1ac731985eaf75ecd5e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "rawScript": ".string \"WALLACE: {PLAYER}{KUN}\u2026\\p\"\n\t.string \"No, let me rephrase that properly.\\p\"\n\t.string \"The new CHAMPION!\\p\"\n\t.string \"Come with me.$\""
+  },
+  "label": "EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+  "references": {}
+}

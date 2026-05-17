@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Gym_B1F_Text_JacePostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "sha1": "b82ae91ab89ff7156e8125891eff9b7e6a2a260f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "rawScript": ".string \"The way the battling spirit burns\\n\"\n\t.string \"within you, you may stand a chance\\l\"\n\t.string \"against our LEADER.$\""
+  },
+  "label": "LavaridgeTown_Gym_B1F_Text_JacePostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+  "references": {}
+}

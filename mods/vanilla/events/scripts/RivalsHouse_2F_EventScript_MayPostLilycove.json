@@ -1,0 +1,23 @@
+{
+  "id": "RivalsHouse_2F_EventScript_MayPostLilycove",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "sha1": "e014a444dcf389c78773768633900402b1862edb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "rawScript": "goto_if_set FLAG_MET_RIVAL_IN_HOUSE_AFTER_LILYCOVE, RivalsHouse_2F_EventScript_MayWhereShouldIGoNext\n\tmsgbox RivalsHouse_2F_Text_MayJustCheckingMyPokedex, MSGBOX_DEFAULT\n\treturn"
+  },
+  "label": "RivalsHouse_2F_EventScript_MayPostLilycove",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_RIVAL_IN_HOUSE_AFTER_LILYCOVE"
+    ]
+  }
+}

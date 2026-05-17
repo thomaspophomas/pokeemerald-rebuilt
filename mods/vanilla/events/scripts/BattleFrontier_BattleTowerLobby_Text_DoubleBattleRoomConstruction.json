@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_Text_DoubleBattleRoomConstruction",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": ".string \"Welcome to the BATTLE TOWER\\n\"\n\t.string \"DOUBLE BATTLE CORNER!\\p\"\n\t.string \"Unfortunately, the BATTLE ROOMS\\n\"\n\t.string \"are still under construction.\\p\"\n\t.string \"Please come back when the work\\n\"\n\t.string \"is completed.$\"\n\n@ Unused"
+  },
+  "label": "BattleFrontier_BattleTowerLobby_Text_DoubleBattleRoomConstruction",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {}
+}

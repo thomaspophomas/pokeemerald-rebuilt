@@ -34,8 +34,24 @@ Important entity layouts:
 - `flags/flags/<FLAG>.json` and `flags/vars/<VAR>.json`.
 - `items/items/<ITEM>.json`, `pokemon/species/<SPECIES>.json`,
   `moves/moves/<MOVE>.json`, and `shops/<ShopSymbol>.json`.
-- Domains that are not yet semantically parsed use one JSON per source asset
-  under `source_files/`, so they still have a modder-visible entity structure.
+- `pokeballs/balls/<ITEM>.json` describes capture behavior, battle script,
+  item icon references, throw sprite references, and opening particle metadata.
+- `sprite_assets/assets/<asset>.json`,
+  `overworld_sprites/sprites/<OBJ_EVENT_GFX>.json`,
+  `battle_sprites/pokemon/<SPECIES>_<side>.json`,
+  `battle_sprites/trainers/<TRAINER_PIC>_<side>.json`,
+  `followers/followers/<SPECIES>.json`, and `outfits/outfits/<state>.json`
+  describe sprite-facing mod concepts rather than raw source files.
+- `language/en/<group>.json` groups text keys by natural source group. Runtime
+  C strings are marked `runtime: true`; assembly text labels remain editable
+  mod data but are not registered as runtime `LanguageApi` strings yet.
+- `events/scripts/<ScriptLabel>.json` stores script labels with
+  `legacy.rawScript` and detected references to flags, vars, items, trainers,
+  and maps.
+- `state/*.json` describes save, runtime, and multiplayer state contracts.
+- Domains should only fall back to source-file entities when no semantic
+  gameplay concept exists yet. For modder-facing domains, `_source_manifest.json`
+  carries source-file audit data instead.
 
 ## Tooling
 
@@ -60,6 +76,7 @@ Per-domain wrappers exist as `scripts/vanilla/extract_<domain>.py`,
 - `python scripts/ci/check_mod_json.py`
 - `python scripts/ci/check_no_game_yaml.py`
 - `python scripts/ci/check_vanilla_expectations.py`
+- `python scripts/ci/check_vanilla_semantic_coverage.py`
 - `python scripts/ci/check_vanilla_materialized.py`
 
 `make generated` runs vanilla extraction before `scripts/modgen.py`, so the

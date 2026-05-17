@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_1F_Text_RestingPlaceOfZigzagoon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_1F/scripts.inc",
+    "sha1": "fb767551d4d8fa906d9226adf1aabd795c630e6b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_1F/scripts.inc",
+    "rawScript": ".string \"This is the final resting place of my\\n\"\n\t.string \"ZIGZAGOON. I cherished it\u2026$\""
+  },
+  "label": "MtPyre_1F_Text_RestingPlaceOfZigzagoon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_1F/scripts.inc",
+  "references": {}
+}

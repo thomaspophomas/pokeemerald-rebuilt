@@ -1,0 +1,39 @@
+{
+  "id": "ITEM_SAFARI_BALL",
+  "domain": "pokeballs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/mod/pokeball.c",
+    "sha1": "33d25b17be0efe4ad368348c596e2ba324574b45"
+  },
+  "legacy": {
+    "kind": "pokeball_definition",
+    "sourcePath": "src/mod/pokeball.c",
+    "rawC": "{ \"vanilla:safari_ball\",  ITEM_SAFARI_BALL,  BALL_SAFARI,  15,                             0, NULL, BattleScript_SafariBallThrow, NULL }",
+    "generatedKey": "vanilla:safari_ball"
+  },
+  "key": "vanilla:safari_ball",
+  "itemId": "ITEM_SAFARI_BALL",
+  "ballId": "BALL_SAFARI",
+  "catchModifier": "15",
+  "catchModifierHook": null,
+  "battleScript": "BattleScript_SafariBallThrow",
+  "commitHook": null,
+  "flags": "0",
+  "itemIcon": "gItemIcon_SafariBall",
+  "itemPalette": "gItemIconPalette_SafariBall",
+  "throwSprite": {
+    "sheet": "gBallGfx_Safari",
+    "palette": "gBallPal_Safari",
+    "tileTag": "GFX_TAG_SAFARI_BALL",
+    "paletteTag": "GFX_TAG_SAFARI_BALL",
+    "templateTable": "gBallSpriteTemplates"
+  },
+  "openAnimation": {
+    "particleSheet": "gBattleAnimSpriteGfx_Particles",
+    "particlePalette": "gBattleAnimSpritePal_CircleImpact",
+    "particleTag": "TAG_PARTICLES_SAFARIBALL",
+    "animNum": "0",
+    "taskFunc": "SafariBallOpenParticleAnimation"
+  }
+}

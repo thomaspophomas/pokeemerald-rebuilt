@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_PokeBlockFeeder",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/safari_zone.inc",
+    "sha1": "435880c660a34d3e51dcedb348a41731d28af7cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/safari_zone.inc",
+    "rawScript": "lockall\n\tspecial GetPokeblockFeederInFront\n\tgoto_if_ne VAR_RESULT, 0xFFFF, SafariZone_EventScript_PokeblockPresent\n\tmsgbox SafariZone_Text_PlacePokeblockOnFeeder, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, SafariZone_EventScript_ChoosePokeblock\n\treleaseall\n\tend"
+  },
+  "label": "EventScript_PokeBlockFeeder",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/safari_zone.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

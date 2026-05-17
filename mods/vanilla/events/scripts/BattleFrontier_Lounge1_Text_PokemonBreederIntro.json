@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge1_Text_PokemonBreederIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+    "sha1": "2478a4558563ac9694ec1f8471095e49ece1c602"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+    "rawScript": ".string \"For 70 years I have raised POK\u00e9MON!\\n\"\n\t.string \"I am the man they revere as\\l\"\n\t.string \"the legendary top POK\u00e9MON BREEDER!\\p\"\n\t.string \"If you ever become as seasoned as me,\\n\"\n\t.string \"you'll see the abilities of POK\u00e9MON\\l\"\n\t.string \"at a glance.\\p\"\n\t.string \"You're a TRAINER. Doesn't it interest\\n\"\n\t.string \"you to know your own POK\u00e9MON's\\l\"\n\t.string \"abilities?\\p\"\n\t.string \"Here!\\n\"\n\t.string \"Let's have a look at your POK\u00e9MON!$\""
+  },
+  "label": "BattleFrontier_Lounge1_Text_PokemonBreederIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+  "references": {}
+}

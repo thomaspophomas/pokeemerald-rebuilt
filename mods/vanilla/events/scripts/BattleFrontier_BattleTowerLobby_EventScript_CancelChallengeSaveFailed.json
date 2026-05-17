@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_EventScript_CancelChallengeSaveFailed",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": "frontier_set FRONTIER_DATA_CHALLENGE_STATUS  @ No status provided, so it relies on VAR_0x8006 being 0 already\n\tgoto BattleFrontier_BattleTowerLobby_EventScript_CancelChallenge\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerLobby_EventScript_CancelChallengeSaveFailed",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {}
+}

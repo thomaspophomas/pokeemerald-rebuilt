@@ -1,0 +1,26 @@
+{
+  "id": "LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc",
+    "sha1": "1c31f94c3331fa62c92524841334a9b9b0a050ac"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc",
+    "rawScript": ".2byte ITEM_TM_PROTECT\n\t.2byte ITEM_TM_SAFEGUARD\n\t.2byte ITEM_TM_REFLECT\n\t.2byte ITEM_TM_LIGHT_SCREEN\n\tpokemartlistend"
+  },
+  "label": "LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc",
+  "references": {
+    "items": [
+      "ITEM_TM_LIGHT_SCREEN",
+      "ITEM_TM_PROTECT",
+      "ITEM_TM_REFLECT",
+      "ITEM_TM_SAFEGUARD"
+    ]
+  }
+}

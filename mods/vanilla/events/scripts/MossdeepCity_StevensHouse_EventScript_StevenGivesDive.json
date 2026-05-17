@@ -1,0 +1,32 @@
+{
+  "id": "MossdeepCity_StevensHouse_EventScript_StevenGivesDive",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "sha1": "13a709347ca2c2863ef04de01b7d51d28b9d736e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_STEVENS_HOUSE_STEVEN, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tplayse SE_PIN\n\tapplymovement LOCALID_STEVENS_HOUSE_STEVEN, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_STEVENS_HOUSE_STEVEN, Common_Movement_Delay48\n\twaitmovement 0\n\tapplymovement LOCALID_STEVENS_HOUSE_STEVEN, MossdeepCity_StevensHouse_Movement_StevenApproachPlayer\n\twaitmovement 0\n\tmsgbox MossdeepCity_StevensHouse_Text_YouveEarnedHMDive, MSGBOX_DEFAULT\n\tgiveitem ITEM_HM_DIVE\n\tsetflag FLAG_RECEIVED_HM_DIVE\n\tsetflag FLAG_OMIT_DIVE_FROM_STEVEN_LETTER\n\tmsgbox MossdeepCity_StevensHouse_Text_ExplainDive, MSGBOX_DEFAULT\n\tclosemessage\n\tdelay 20\n\tapplymovement LOCALID_STEVENS_HOUSE_STEVEN, MossdeepCity_StevensHouse_Movement_StevenReturn\n\twaitmovement 0\n\tsetflag FLAG_HIDE_MOSSDEEP_CITY_SCOTT\n\tsetflag FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT\n\tsetvar VAR_STEVENS_HOUSE_STATE, 2\n\treleaseall\n\tend"
+  },
+  "label": "MossdeepCity_StevensHouse_EventScript_StevenGivesDive",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_MOSSDEEP_CITY_SCOTT",
+      "FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT",
+      "FLAG_OMIT_DIVE_FROM_STEVEN_LETTER",
+      "FLAG_RECEIVED_HM_DIVE"
+    ],
+    "vars": [
+      "VAR_STEVENS_HOUSE_STATE"
+    ],
+    "items": [
+      "ITEM_HM_DIVE"
+    ]
+  }
+}

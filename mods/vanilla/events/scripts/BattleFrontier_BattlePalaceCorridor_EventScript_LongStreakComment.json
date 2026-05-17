@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceCorridor_EventScript_LongStreakComment",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc",
+    "sha1": "64a2ef91c8d0c246c8214b48e91e15abe9171a8e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons, MSGBOX_DEFAULT\n\treturn"
+  },
+  "label": "BattleFrontier_BattlePalaceCorridor_EventScript_LongStreakComment",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc",
+  "references": {}
+}

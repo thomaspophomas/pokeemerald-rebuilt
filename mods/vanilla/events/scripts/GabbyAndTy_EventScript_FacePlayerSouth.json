@@ -1,0 +1,19 @@
+{
+  "id": "GabbyAndTy_EventScript_FacePlayerSouth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gabby_and_ty.inc",
+    "sha1": "94bbdc1414879c9d53e3c5a88c9429ac40dbfdeb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gabby_and_ty.inc",
+    "rawScript": "applymovement VAR_0x8004, GabbyAndTy_Movement_WalkInPlaceUp\n\tapplymovement VAR_0x8005, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\treturn"
+  },
+  "label": "GabbyAndTy_EventScript_FacePlayerSouth",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/gabby_and_ty.inc",
+  "references": {}
+}

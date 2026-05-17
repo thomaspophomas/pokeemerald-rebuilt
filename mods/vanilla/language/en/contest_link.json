@@ -1,0 +1,29 @@
+{
+  "id": "en:contest_link",
+  "domain": "language",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/text/contest_link.inc",
+    "sha1": "d7f1a115cb8f2da148ec79eb13dc8ff0e9dbed16"
+  },
+  "legacy": {
+    "kind": "asm_text_labels",
+    "sourcePath": "data/text/contest_link.inc"
+  },
+  "language": "en",
+  "group": "contest_link",
+  "runtime": false,
+  "strings": {
+    "gTest_MissedTurn": ".string \"Missed turn$\"",
+    "gText_LinkStandby4": ".string \"Link standby!$\"",
+    "gText_WinnerIsPlayersMonCongrats": ".string \"The winner is {STR_VAR_1}'s {STR_VAR_2}!\\n\"\n\t.string \"Congratulations!$\"",
+    "gText_WinnerIsPlayersMon": ".string \"The winner is {STR_VAR_1}'s {STR_VAR_2}!{PAUSE_UNTIL_PRESS}$\"",
+    "gText_PrimaryJudgingNumX": ".string \"Primary judging: No. {STR_VAR_1}{PAUSE_UNTIL_PRESS}$\"",
+    "gText_SecondaryJudgingNumX": ".string \"Secondary judging: No. {STR_VAR_1}{PAUSE_UNTIL_PRESS}$\"",
+    "gText_SetEventNumX": ".string \"Set event: No. {STR_VAR_1}{PAUSE_UNTIL_PRESS}$\"",
+    "gText_MoveUsedMostOften": ".string \"The move used most often:\\n\"\n\t.string \"{STR_VAR_1}{PAUSE_UNTIL_PRESS}$\"",
+    "gText_MostImpressiveMon": ".string \"The most impressive POK\u00e9MON:\\n\"\n\t.string \"{STR_VAR_1}'s {STR_VAR_2}{PAUSE_UNTIL_PRESS}$\"",
+    "gText_SetEventNumX2": ".string \"Set event: No. {STR_VAR_1}{PAUSE_UNTIL_PRESS}$\"",
+    "gText_LinkTVProgramWillNotBeMadeTrainerLost": ".string \"A link TV program will not be made\\n\"\n\t.string \"because the TRAINER lost.{PAUSE_UNTIL_PRESS}$\""
+  }
+}

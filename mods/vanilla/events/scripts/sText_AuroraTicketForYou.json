@@ -1,0 +1,19 @@
+{
+  "id": "sText_AuroraTicketForYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_aurora_ticket.inc",
+    "sha1": "e2531e773ee18fead1efbfbdc01db2b1f669baf2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_aurora_ticket.inc",
+    "rawScript": ".string \"Thank you for using the MYSTERY\\n\"\n\t.string \"GIFT System.\\p\"\n\t.string \"You must be {PLAYER}.\\n\"\n\t.string \"There is a ticket here for you.$\""
+  },
+  "label": "sText_AuroraTicketForYou",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_aurora_ticket.inc",
+  "references": {}
+}

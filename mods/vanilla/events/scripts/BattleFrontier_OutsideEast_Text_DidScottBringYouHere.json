@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideEast_Text_DidScottBringYouHere",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "sha1": "daab3e530c74c286237faa58f280f11ef97e663a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "rawScript": ".string \"Did SCOTT bring you here, too?\\n\"\n\t.string \"What is it with that guy?\\p\"\n\t.string \"It sounds like he really does know\\n\"\n\t.string \"how to spot talented TRAINERS, but\u2026\\p\"\n\t.string \"I've never seen him battling in person\\n\"\n\t.string \"ever.$\""
+  },
+  "label": "BattleFrontier_OutsideEast_Text_DidScottBringYouHere",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+  "references": {}
+}

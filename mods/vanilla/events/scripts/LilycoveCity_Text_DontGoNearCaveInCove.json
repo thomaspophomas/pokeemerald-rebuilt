@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_DontGoNearCaveInCove",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"Hey, you!\\p\"\n\t.string \"Don't go near the cave in the cove!\\p\"\n\t.string \"Why? You don't need a reason why!\\n\"\n\t.string \"I'm an adult, so you just listen to me!$\""
+  },
+  "label": "LilycoveCity_Text_DontGoNearCaveInCove",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

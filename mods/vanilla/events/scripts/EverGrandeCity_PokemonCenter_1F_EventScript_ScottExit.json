@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_PokemonCenter_1F_EventScript_ScottExit",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "012038458957d746c6cb9c71ce265a9faf173fe8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": "applymovement LOCALID_EVER_GRANDE_SCOTT, EverGrandeCity_PokemonCenter_1F_Movement_ScottExit\n\twaitmovement 0\n\treturn"
+  },
+  "label": "EverGrandeCity_PokemonCenter_1F_EventScript_ScottExit",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "RS_MysteryEventsHouse_Text_KeepItToA3On3",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_GameCorner_1F/scripts.inc",
+    "sha1": "9705268b8b1f1689ba5ce2a1488d37f1b3e28fee"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_GameCorner_1F/scripts.inc",
+    "rawScript": ".string \"Oh, good, good!\\p\"\n\t.string \"But my house isn't all that sturdy.\\p\"\n\t.string \"Could I ask you to keep it down to\\n\"\n\t.string \"a 3-on-3 match?$\""
+  },
+  "label": "RS_MysteryEventsHouse_Text_KeepItToA3On3",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_GameCorner_1F/scripts.inc",
+  "references": {}
+}

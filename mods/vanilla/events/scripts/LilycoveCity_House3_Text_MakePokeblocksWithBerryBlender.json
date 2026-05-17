@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_House3_Text_MakePokeblocksWithBerryBlender",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_House3/scripts.inc",
+    "sha1": "d8cf01aabc47c4a1255f8f58616f8cbdcb863fd4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_House3/scripts.inc",
+    "rawScript": ".string \"We're going to make super {POKEBLOCK}S\\n\"\n\t.string \"with a BERRY BLENDER!$\""
+  },
+  "label": "LilycoveCity_House3_Text_MakePokeblocksWithBerryBlender",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_House3/scripts.inc",
+  "references": {}
+}

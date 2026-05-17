@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Movement_GruntFaceSpaceCenter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/scripts.inc",
+    "sha1": "33f0f7f83a475484aaca395542c6bd65a6f2dd45"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity/scripts.inc",
+    "rawScript": "face_right\n\tdelay_16\n\tdelay_16\n\tdelay_16\n\tstep_end"
+  },
+  "label": "MossdeepCity_Movement_GruntFaceSpaceCenter",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/MossdeepCity/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": "Route110_SeasideCyclingRoadSouthEntrance_EventScript_ClearCyclingRoad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.inc",
+    "sha1": "76a2b9429a0b6a610f3225434b5a09de5ae8146a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.inc",
+    "rawScript": "lockall\n\tclearflag FLAG_SYS_CYCLING_ROAD\n\tsetvar VAR_TEMP_1, 0\n\treleaseall\n\tend"
+  },
+  "label": "Route110_SeasideCyclingRoadSouthEntrance_EventScript_ClearCyclingRoad",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_CYCLING_ROAD"
+    ],
+    "vars": [
+      "VAR_TEMP_1"
+    ]
+  }
+}

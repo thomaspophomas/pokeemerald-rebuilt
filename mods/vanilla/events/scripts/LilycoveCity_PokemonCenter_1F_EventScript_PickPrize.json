@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_PokemonCenter_1F_EventScript_PickPrize",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/lilycove_lady.inc",
+    "sha1": "2c2864b913cc532d514481fce3a5e381d5af5f83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/lilycove_lady.inc",
+    "rawScript": "fadescreen FADE_TO_BLACK\n\tsetvar VAR_RESULT, 0\n\tspecial Script_QuizLadyOpenBagMenu\n\tgoto_if_eq VAR_RESULT, 0, LilycoveCity_PokemonCenter_1F_EventScript_AskQuitChoosingPrize\n\tgoto_if_eq VAR_RESULT, 1, LilycoveCity_PokemonCenter_1F_EventScript_WriteQuiz\n\tend"
+  },
+  "label": "LilycoveCity_PokemonCenter_1F_EventScript_PickPrize",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/lilycove_lady.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

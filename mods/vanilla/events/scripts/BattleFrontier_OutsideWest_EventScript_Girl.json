@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_OutsideWest_EventScript_Girl",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmessage BattleFrontier_OutsideWest_Text_ScaredOfPikeBecauseSeviper\n\twaitmessage\n\tcall_if_eq VAR_FACING, DIR_NORTH, BattleFrontier_OutsideWest_EventScript_GirlShudderNorth\n\tcall_if_eq VAR_FACING, DIR_SOUTH, BattleFrontier_OutsideWest_EventScript_GirlShudderSouth\n\tcall_if_eq VAR_FACING, DIR_WEST, BattleFrontier_OutsideWest_EventScript_GirlShudderWest\n\tcall_if_eq VAR_FACING, DIR_EAST, BattleFrontier_OutsideWest_EventScript_GirlShudderEast\n\twaitbuttonpress\n\trelease\n\tend"
+  },
+  "label": "BattleFrontier_OutsideWest_EventScript_Girl",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FACING"
+    ]
+  }
+}

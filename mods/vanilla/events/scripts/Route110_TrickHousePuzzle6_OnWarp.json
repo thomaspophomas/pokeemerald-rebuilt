@@ -1,0 +1,24 @@
+{
+  "id": "Route110_TrickHousePuzzle6_OnWarp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle6/scripts.inc",
+    "sha1": "21a5992162ee4d9033d914af568ef8472d84c843"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle6/scripts.inc",
+    "rawScript": "map_script_2 VAR_TEMP_0, VAR_TEMP_0, Route110_TrickHousePuzzle6_EventScript_InitPuzzle\n\t.2byte 0\n\n@ NOTE: This rotating gate puzzle makes use of VAR_TEMP_0 - VAR_TEMP_5"
+  },
+  "label": "Route110_TrickHousePuzzle6_OnWarp",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Route110_TrickHousePuzzle6/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0",
+      "VAR_TEMP_5"
+    ]
+  }
+}

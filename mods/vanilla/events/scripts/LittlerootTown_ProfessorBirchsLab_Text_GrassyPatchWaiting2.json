@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": ".string \"PROF. BIRCH: But listen.\\n\"\n\t.string \"You've become the CHAMPION,\\l\"\n\t.string \"but your POK\u00e9MON journey isn't over.\\p\"\n\t.string \"There is no end to the road\\n\"\n\t.string \"that is POK\u00e9MON.\\p\"\n\t.string \"Somewhere, there is a grassy patch\\n\"\n\t.string \"that's waiting for you!$\""
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

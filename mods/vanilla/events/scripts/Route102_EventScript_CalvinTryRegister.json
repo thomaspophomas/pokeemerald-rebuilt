@@ -1,0 +1,23 @@
+{
+  "id": "Route102_EventScript_CalvinTryRegister",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route102/scripts.inc",
+    "sha1": "17c4403137bc871caf964a4fed8e5efc79316b34"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route102/scripts.inc",
+    "rawScript": "goto_if_set FLAG_HAS_MATCH_CALL, Route102_EventScript_CalvinRegister\n\tmsgbox Route102_Text_CalvinPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route102_EventScript_CalvinTryRegister",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route102/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HAS_MATCH_CALL"
+    ]
+  }
+}

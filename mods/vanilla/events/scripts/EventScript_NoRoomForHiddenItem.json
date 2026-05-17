@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_NoRoomForHiddenItem",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/obtain_item.inc",
+    "sha1": "53094705147ea153e40933cbc7f9cbe653e2a59b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/obtain_item.inc",
+    "rawScript": "msgbox gText_PlayerFoundOneItem, MSGBOX_DEFAULT\n\tmsgbox gText_TooBadBagIsFull, MSGBOX_DEFAULT\n\tsetvar VAR_RESULT, 0\n\treleaseall\n\tend"
+  },
+  "label": "EventScript_NoRoomForHiddenItem",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/obtain_item.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

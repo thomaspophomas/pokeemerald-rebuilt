@@ -1,0 +1,24 @@
+{
+  "id": "save_blocks",
+  "domain": "state",
+  "schemaVersion": 1,
+  "source": {
+    "path": "include/global.h",
+    "sha1": "7bbfadf9f5dca8adf20dfe941e39a3fbd53ed6d7"
+  },
+  "legacy": {
+    "kind": "save_block_contract",
+    "sourcePath": "include/global.h"
+  },
+  "containers": [
+    "SaveBlock1",
+    "SaveBlock2",
+    "PokemonStorage",
+    "MapHeader"
+  ],
+  "legacyFiles": [
+    "include/global.h",
+    "include/save.h",
+    "src/save.c"
+  ]
+}

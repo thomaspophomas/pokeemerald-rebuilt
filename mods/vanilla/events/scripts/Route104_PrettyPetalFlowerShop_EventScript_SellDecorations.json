@@ -1,0 +1,19 @@
+{
+  "id": "Route104_PrettyPetalFlowerShop_EventScript_SellDecorations",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc",
+    "sha1": "85421f76af3e2f834a13d611b9a986423e5c93b8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc",
+    "rawScript": "message gText_PlayerWhatCanIDoForYou\n\twaitmessage\n\tpokemartdecoration2 Route104_PrettyPetalFlowerShop_Pokemart_Plants\n\tmsgbox gText_PleaseComeAgain, MSGBOX_DEFAULT\n\trelease\n\tend\n\n\t.align 2"
+  },
+  "label": "Route104_PrettyPetalFlowerShop_EventScript_SellDecorations",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": "Route111_EventScript_Dusty",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_DUSTY_1, Route111_Text_DustyIntro, Route111_Text_DustyDefeat, Route111_EventScript_RegisterDusty\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchDusty\n\tmsgbox Route111_Text_DustyPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route111_EventScript_Dusty",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_DUSTY_1"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_Movement_TwinApproachPlayerRight",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": "face_right\n\tdelay_8\n\tdisable_jump_landing_ground_effect\n\tjump_in_place_right\n\tdelay_8\n\twalk_fast_right\n\twalk_fast_right\n\twalk_fast_right\n\twalk_fast_up\n\twalk_fast_up\n\twalk_fast_right\n\tface_down\n\tstep_end"
+  },
+  "label": "LittlerootTown_Movement_TwinApproachPlayerRight",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {}
+}

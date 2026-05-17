@@ -1,0 +1,26 @@
+{
+  "id": "OldaleTown_Mart_Pokemart_Basic",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown_Mart/scripts.inc",
+    "sha1": "8a968880e5a4d7792fef6fe981f5856832d88170"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/OldaleTown_Mart/scripts.inc",
+    "rawScript": ".2byte ITEM_POTION\n\t.2byte ITEM_ANTIDOTE\n\t.2byte ITEM_PARALYZE_HEAL\n\t.2byte ITEM_AWAKENING\n\tpokemartlistend"
+  },
+  "label": "OldaleTown_Mart_Pokemart_Basic",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/OldaleTown_Mart/scripts.inc",
+  "references": {
+    "items": [
+      "ITEM_ANTIDOTE",
+      "ITEM_AWAKENING",
+      "ITEM_PARALYZE_HEAL",
+      "ITEM_POTION"
+    ]
+  }
+}

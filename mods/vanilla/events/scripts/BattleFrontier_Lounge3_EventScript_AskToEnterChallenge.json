@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_Lounge3_EventScript_AskToEnterChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "sha1": "52169856e2442e0e7ad660050a45dce1a1b2405a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "rawScript": "special ShowFrontierGamblerLookingMessage\n\twaitmessage\n\twaitbuttonpress\n\tmsgbox BattleFrontier_Lounge3_Text_HowAboutEnteringEventForMe, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, BattleFrontier_Lounge3_EventScript_DeclineChallenge\n\tmsgbox BattleFrontier_Lounge3_Text_SpotMeSomeBattlePoints, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, BattleFrontier_Lounge3_EventScript_DeclineChallenge\n\tmessage BattleFrontier_Lounge3_Text_HowMuchCanYouSpot\n\twaitmessage\n\tspecial ShowBattlePointsWindow\n\tgoto BattleFrontier_Lounge3_EventScript_ChooseBetAmount\n\tend"
+  },
+  "label": "BattleFrontier_Lounge3_EventScript_AskToEnterChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

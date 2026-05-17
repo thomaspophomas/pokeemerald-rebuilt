@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerBattleRoom_Text_AnabelYouCameBack",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "sha1": "09b678d8717203a622b1d8714d904bcdeb37d08a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "rawScript": ".string \"ANABEL: You really did come back to\\n\"\n\t.string \"see me\u2026\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"You've won straight matches to see me\u2026\\n\"\n\t.string \"I won't have to hold back against you\u2026\\p\"\n\t.string \"It's been too long now\u2026\\p\"\n\t.string \"Too long since I've been able to battle\\n\"\n\t.string \"without thinking about anything\u2026$\""
+  },
+  "label": "BattleFrontier_BattleTowerBattleRoom_Text_AnabelYouCameBack",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+  "references": {}
+}

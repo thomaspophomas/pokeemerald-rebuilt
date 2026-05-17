@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_House2_EventScript_UnhappyAzurill",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_House2/scripts.inc",
+    "sha1": "18b89c836e0ca6b80f69fe44839d4dd2d94ef1b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown_House2/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\twaitse\n\tplaymoncry SPECIES_AZURILL, CRY_MODE_ENCOUNTER\n\tmsgbox PacifidlogTown_House2_Text_Rururi, MSGBOX_DEFAULT\n\twaitmoncry\n\tmsgbox PacifidlogTown_House2_Text_DoesntLikeTrainerVeryMuch, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "PacifidlogTown_House2_EventScript_UnhappyAzurill",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PacifidlogTown_House2/scripts.inc",
+  "references": {}
+}

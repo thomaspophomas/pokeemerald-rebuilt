@@ -1,0 +1,27 @@
+{
+  "id": "GabbyAndTy_EventScript_RequestInterview",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gabby_and_ty.inc",
+    "sha1": "94bbdc1414879c9d53e3c5a88c9429ac40dbfdeb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gabby_and_ty.inc",
+    "rawScript": "special GabbyAndTyBeforeInterview\n\tspecial GetGabbyAndTyLocalIds\n\tcall_if_eq VAR_FACING, DIR_NORTH, GabbyAndTy_EventScript_FacePlayerNorth\n\tcall_if_eq VAR_FACING, DIR_SOUTH, GabbyAndTy_EventScript_FacePlayerSouth\n\tcall_if_eq VAR_FACING, DIR_EAST, GabbyAndTy_EventScript_FacePlayerEast\n\tgoto_if_set FLAG_TEMP_SKIP_GABBY_INTERVIEW, GabbyAndTy_EventScript_KeepingAnEyeOutForYou\n\tspecialvar VAR_RESULT, GabbyAndTyGetLastQuote\n\tgoto_if_eq VAR_RESULT, 0, GabbyAndTy_EventScript_DidntInterviewLastTime\n\tmsgbox GabbyAndTy_Text_QuoteFromLastInterview, MSGBOX_DEFAULT\n\tspecialvar VAR_RESULT, GabbyAndTyGetLastBattleTrivia\n\tswitch VAR_RESULT\n\tcase 0, GabbyAndTy_EventScript_RequestInterviewNoTrivia\n\tcase 1, GabbyAndTy_EventScript_RequestInterviewShortBattle\n\tcase 2, GabbyAndTy_EventScript_RequestInterviewThrewBall\n\tcase 3, GabbyAndTy_EventScript_RequestInterviewUsedItems\n\tcase 4, GabbyAndTy_EventScript_RequestInterviewLostAMon\n\tend"
+  },
+  "label": "GabbyAndTy_EventScript_RequestInterview",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/gabby_and_ty.inc",
+  "references": {
+    "flags": [
+      "FLAG_TEMP_SKIP_GABBY_INTERVIEW"
+    ],
+    "vars": [
+      "VAR_FACING",
+      "VAR_RESULT"
+    ]
+  }
+}

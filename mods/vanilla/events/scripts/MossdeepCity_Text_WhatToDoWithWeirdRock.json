@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Text_WhatToDoWithWeirdRock",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/scripts.inc",
+    "sha1": "33f0f7f83a475484aaca395542c6bd65a6f2dd45"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity/scripts.inc",
+    "rawScript": ".string \"Yeah, you think so, too! What are you\\n\"\n\t.string \"supposed to do with some weird rock?$\""
+  },
+  "label": "MossdeepCity_Text_WhatToDoWithWeirdRock",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity/scripts.inc",
+  "references": {}
+}

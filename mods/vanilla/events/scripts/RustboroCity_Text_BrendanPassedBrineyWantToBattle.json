@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Text_BrendanPassedBrineyWantToBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": ".string \"BRENDAN: By the way, {PLAYER}, I walked\\n\"\n\t.string \"by MR. BRINEY in PETALBURG WOODS.\\p\"\n\t.string \"I bet he was on his way home to his\\n\"\n\t.string \"cottage by the sea.\\p\"\n\t.string \"{PLAYER}, how's your POK\u00e9DEX?\\n\"\n\t.string \"Have you filled in any pages yet?\\p\"\n\t.string \"Mine rules.\\p\"\n\t.string \"Want to have a battle to test how\\n\"\n\t.string \"far you've progressed?$\""
+  },
+  "label": "RustboroCity_Text_BrendanPassedBrineyWantToBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Route113_GlassWorkshop_Text_LetsSeeCollectedAshes",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "sha1": "6a7101e66439e9abedcc55c8fc60b573807258b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "rawScript": ".string \"Have you collected ashes, huff-puff?\\n\"\n\t.string \"Let me see, huff-puff.$\""
+  },
+  "label": "Route113_GlassWorkshop_Text_LetsSeeCollectedAshes",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route113_GlassWorkshop/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_House4_Text_StrollUnderwaterWithPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_House4/scripts.inc",
+    "sha1": "c3109385d86e9bb6e58cd1691d912d37355d9013"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_House4/scripts.inc",
+    "rawScript": ".string \"Ancient treasures\u2026\\p\"\n\t.string \"It would be nice if they existed, but\\n\"\n\t.string \"even if they didn't, it would be so\\l\"\n\t.string \"beautiful to take an underwater\\l\"\n\t.string \"stroll with my POK\u00e9MON.$\""
+  },
+  "label": "SootopolisCity_House4_Text_StrollUnderwaterWithPokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_House4/scripts.inc",
+  "references": {}
+}

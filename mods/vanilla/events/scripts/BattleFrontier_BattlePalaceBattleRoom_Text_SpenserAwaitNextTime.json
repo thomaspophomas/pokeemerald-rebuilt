@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserAwaitNextTime",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "sha1": "c4392c432f84fdbe0613ac4b067366a168a52056"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "rawScript": ".string \"SPENSER: Your POK\u00e9MON's eyes are \\n\"\n\t.string \"truly clear and unclouded.\\p\"\n\t.string \"I will eagerly await the next\\n\"\n\t.string \"opportunity to see you.$\""
+  },
+  "label": "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserAwaitNextTime",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+  "references": {}
+}

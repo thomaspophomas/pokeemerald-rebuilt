@@ -1,0 +1,19 @@
+{
+  "id": "VictoryRoad_1F_Text_WallyDefeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_1F/scripts.inc",
+    "sha1": "dda3a20e79be32fbc7d021ceddf040bbcdbe53c7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VictoryRoad_1F/scripts.inc",
+    "rawScript": ".string \"Wow!\\n\"\n\t.string \"{PLAYER}, you are strong, after all!$\""
+  },
+  "label": "VictoryRoad_1F_Text_WallyDefeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VictoryRoad_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "sha1": "fb62e5a84003aa6247f1e7fe6ea409ec86ac92cc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "rawScript": ".string \"Thanks!\\n\"\n\t.string \"Thanks to you, we're safe!\\p\"\n\t.string \"It might be an odd way of thanking you,\\n\"\n\t.string \"but take this POK\u00e9MON.$\"\n\n@ Unused"
+  },
+  "label": "Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+  "references": {}
+}

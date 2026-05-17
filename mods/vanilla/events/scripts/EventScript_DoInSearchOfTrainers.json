@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_DoInSearchOfTrainers",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/tv.inc",
+    "sha1": "6710fec48cce1bb3d0ce8ab17e9e9756f367ca71"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/tv.inc",
+    "rawScript": "special DoTVShowInSearchOfTrainers\n\twaitmessage\n\twaitbuttonpress\n\tgoto_if_eq VAR_RESULT, 0, EventScript_DoInSearchOfTrainers\n\tgoto EventScript_TurnOffTV\n\tend"
+  },
+  "label": "EventScript_DoInSearchOfTrainers",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/tv.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "BattleFrontier_BattleArenaCorridor_EventScript_WalkToBattleRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaCorridor/scripts.inc",
+    "sha1": "6c50fa8f26f23235a25e4a509732939b19558eaa"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaCorridor/scripts.inc",
+    "rawScript": "delay 16\n\tsetvar VAR_TEMP_0, 1\n\tapplymovement LOCALID_ARENA_CORRIDOR_ATTENDANT, BattleFrontier_BattleArenaCorridor_Movement_AttendantWalkToDoor\n\tapplymovement LOCALID_PLAYER, BattleFrontier_BattleArenaCorridor_Movement_PlayerWalkToDoor\n\twaitmovement 0\n\tapplymovement LOCALID_ARENA_CORRIDOR_ATTENDANT, BattleFrontier_BattleArenaCorridor_Movement_AttendantFacePlayer\n\twaitmovement 0\n\tmsgbox BattleFrontier_BattleArenaCorridor_Text_PleaseStepIn, MSGBOX_SIGN\n\tapplymovement LOCALID_ARENA_CORRIDOR_ATTENDANT, BattleFrontier_BattleArenaCorridor_Movement_AttendantMoveOutOfWay\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, BattleFrontier_BattleArenaCorridor_Movement_PlayerEnterDoor\n\twaitmovement 0\n\tsetvar VAR_0x8006, 0\n\twarp MAP_BATTLE_FRONTIER_BATTLE_ARENA_BATTLE_ROOM, 7, 5\n\twaitstate\n\tend"
+  },
+  "label": "BattleFrontier_BattleArenaCorridor_EventScript_WalkToBattleRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaCorridor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_ARENA_BATTLE_ROOM"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Route118_EventScript_StevenTrigger0",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route118/scripts.inc",
+    "sha1": "5a4868d1490a62e62c6e29a255fc938bad9fa2cd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route118/scripts.inc",
+    "rawScript": "lockall\n\tsetvar VAR_0x8008, 0\n\tapplymovement LOCALID_PLAYER, Common_Movement_FaceUp\n\twaitmovement 0\n\tapplymovement LOCALID_ROUTE118_STEVEN, Route118_Movement_StevenApproachLedge0\n\twaitmovement 0\n\tgoto Route118_EventScript_StevenTrigger\n\tend"
+  },
+  "label": "Route118_EventScript_StevenTrigger0",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route118/scripts.inc",
+  "references": {}
+}

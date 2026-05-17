@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideWest_Text_YoureOffToChallengeDome",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": ".string \"Oh? You're off to challenge\\n\"\n\t.string \"the BATTLE DOME?\\p\"\n\t.string \"I'll wish you the best of luck.\\n\"\n\t.string \"Let us both win our way up and meet\\l\"\n\t.string \"in challenges.$\""
+  },
+  "label": "BattleFrontier_OutsideWest_Text_YoureOffToChallengeDome",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {}
+}

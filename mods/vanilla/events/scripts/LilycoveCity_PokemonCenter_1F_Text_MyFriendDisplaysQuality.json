@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonCenter_1F_Text_MyFriendDisplaysQuality",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/lilycove_lady.inc",
+    "sha1": "2c2864b913cc532d514481fce3a5e381d5af5f83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/lilycove_lady.inc",
+    "rawScript": ".string \"This is my friend {STR_VAR_1}!\\n\"\n\t.string \"It's the epitome of {STR_VAR_2}!\\p\"\n\t.string \"But I think that it will display\\n\"\n\t.string \"even more {STR_VAR_2}!$\""
+  },
+  "label": "LilycoveCity_PokemonCenter_1F_Text_MyFriendDisplaysQuality",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/lilycove_lady.inc",
+  "references": {}
+}

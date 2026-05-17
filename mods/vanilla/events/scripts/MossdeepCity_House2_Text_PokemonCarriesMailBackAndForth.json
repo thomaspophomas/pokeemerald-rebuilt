@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_House2/scripts.inc",
+    "sha1": "dcfbf70d772d40b8358cd2af009c970d7028d279"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_House2/scripts.inc",
+    "rawScript": ".string \"Even though I can't see my friend in\\n\"\n\t.string \"FORTREE, my POK\u00e9MON carries MAIL\\l\"\n\t.string \"back and forth for us.\\p\"\n\t.string \"I'm not lonesome, even though we're\\n\"\n\t.string \"apart.$\""
+  },
+  "label": "MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_House2/scripts.inc",
+  "references": {}
+}

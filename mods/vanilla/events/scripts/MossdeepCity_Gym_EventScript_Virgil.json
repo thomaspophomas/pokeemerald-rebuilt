@@ -1,0 +1,23 @@
+{
+  "id": "MossdeepCity_Gym_EventScript_Virgil",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "sha1": "f1b3ae6c76fdfe44b1431df4ea78da5c11a79c08"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_VIRGIL, MossdeepCity_Gym_Text_VirgilIntro, MossdeepCity_Gym_Text_VirgilDefeat\n\tmsgbox MossdeepCity_Gym_Text_VirgilPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "MossdeepCity_Gym_EventScript_Virgil",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_Gym/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_VIRGIL"
+    ]
+  }
+}

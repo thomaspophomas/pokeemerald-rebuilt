@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_ImFromKanto",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"I came from KANTO.\\p\"\n\t.string \"The HOENN region is beautiful with\\n\"\n\t.string \"all its water and verdant nature.\\p\"\n\t.string \"Hunh? Wait a second\u2026\\p\"\n\t.string \"Could there be rare POK\u00e9MON that live\\n\"\n\t.string \"only in this area?$\""
+  },
+  "label": "LilycoveCity_Text_ImFromKanto",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

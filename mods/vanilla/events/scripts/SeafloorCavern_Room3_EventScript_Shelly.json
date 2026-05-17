@@ -1,0 +1,23 @@
+{
+  "id": "SeafloorCavern_Room3_EventScript_Shelly",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Room3/scripts.inc",
+    "sha1": "114dd5618f9f61a4bdce1766b391fad937adce4c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SeafloorCavern_Room3/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_SHELLY_SEAFLOOR_CAVERN, SeafloorCavern_Room3_Text_ShellyIntro, SeafloorCavern_Room3_Text_ShellyDefeat\n\tmsgbox SeafloorCavern_Room3_Text_ShellyPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "SeafloorCavern_Room3_EventScript_Shelly",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SeafloorCavern_Room3/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_SHELLY_SEAFLOOR_CAVERN"
+    ]
+  }
+}

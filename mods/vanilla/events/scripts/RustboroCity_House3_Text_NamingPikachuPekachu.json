@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_House3_Text_NamingPikachuPekachu",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_House3/scripts.inc",
+    "sha1": "2987b036f5c75ce4fbcdcba97c183d01d873d88b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_House3/scripts.inc",
+    "rawScript": ".string \"But giving the name PEKACHU to\\n\"\n\t.string \"a PIKACHU? It seems pointless.\\p\"\n\t.string \"I suppose it is good to use a name\\n\"\n\t.string \"that's easy to understand, but\u2026$\""
+  },
+  "label": "RustboroCity_House3_Text_NamingPikachuPekachu",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_House3/scripts.inc",
+  "references": {}
+}

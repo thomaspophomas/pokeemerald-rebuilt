@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_PokemonFanClub_Text_PokemonDontLikeFainting",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_PokemonFanClub/scripts.inc",
+    "sha1": "153f02ab68bdca98dac6d2c2cf3e3db7c79f2c91"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_PokemonFanClub/scripts.inc",
+    "rawScript": ".string \"If you keep letting a POK\u00e9MON faint\\n\"\n\t.string \"in battle, it'll come to resent it.\\p\"\n\t.string \"Soon, it will become less trusting\\n\"\n\t.string \"of the TRAINER.\\p\"\n\t.string \"In other words, it certainly won't\\n\"\n\t.string \"like you very much.$\""
+  },
+  "label": "SlateportCity_PokemonFanClub_Text_PokemonDontLikeFainting",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_PokemonFanClub/scripts.inc",
+  "references": {}
+}

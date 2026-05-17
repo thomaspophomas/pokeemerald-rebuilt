@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Harbor_Text_WouldYouTradeScanner",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "sha1": "304e0889603d7850b02e01765d969cf3c903eb9e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "rawScript": ".string \"CAPT. STERN: Oh?\\n\"\n\t.string \"{PLAYER}{KUN}, that item you have\u2026\\p\"\n\t.string \"That's a SCANNER! That would sure\\n\"\n\t.string \"help us on our explorations.\\p\"\n\t.string \"{PLAYER}{KUN}, would you trade your\\n\"\n\t.string \"SCANNER for something?\\p\"\n\t.string \"Like, say, a DEEPSEATOOTH or\\n\"\n\t.string \"a DEEPSEASCALE that I have?$\""
+  },
+  "label": "SlateportCity_Harbor_Text_WouldYouTradeScanner",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_Harbor/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,24 @@
+{
+  "id": "AquaHideout_1F_EventScript_HideoutEntranceGrunt2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_1F/scripts.inc",
+    "sha1": "fb0f9c771050564c49799918dc1d87097cc9380f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_1F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT, AquaHideout_1F_EventScript_SlateportHint2\n\tgoto_if_set FLAG_RECEIVED_RED_OR_BLUE_ORB, AquaHideout_1F_EventScript_MagmaHideoutHint2\n\tmsgbox AquaHideout_1F_Text_BossIsOnRoute122, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "AquaHideout_1F_EventScript_HideoutEntranceGrunt2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AquaHideout_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT",
+      "FLAG_RECEIVED_RED_OR_BLUE_ORB"
+    ]
+  }
+}

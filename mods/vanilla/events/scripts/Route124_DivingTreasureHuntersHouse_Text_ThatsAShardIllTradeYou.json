@@ -1,0 +1,19 @@
+{
+  "id": "Route124_DivingTreasureHuntersHouse_Text_ThatsAShardIllTradeYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+    "sha1": "e787b98bef4dd91776e97f180a62a1c98c92003e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+    "rawScript": ".string \"Oh, hey! That\u2026\\n\"\n\t.string \"That's a SHARD! I'm looking for those!\\p\"\n\t.string \"Oh, man, you've got to trade that\\n\"\n\t.string \"with me! I'll give you something good!$\""
+  },
+  "label": "Route124_DivingTreasureHuntersHouse_Text_ThatsAShardIllTradeYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+  "references": {}
+}

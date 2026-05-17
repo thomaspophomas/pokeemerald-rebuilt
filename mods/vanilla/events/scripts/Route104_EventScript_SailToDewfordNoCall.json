@@ -1,0 +1,19 @@
+{
+  "id": "Route104_EventScript_SailToDewfordNoCall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104/scripts.inc",
+    "sha1": "10d25047426798be70cda2d9503387bbf8458d85"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104/scripts.inc",
+    "rawScript": "applymovement LOCALID_ROUTE104_BOAT, Route104_Movement_SailToDewford\n\tapplymovement LOCALID_PLAYER, Route104_Movement_SailToDewford\n\twaitmovement 0\n\tgoto Route104_EventScript_ArriveInDewford"
+  },
+  "label": "Route104_EventScript_SailToDewfordNoCall",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route104/scripts.inc",
+  "references": {}
+}

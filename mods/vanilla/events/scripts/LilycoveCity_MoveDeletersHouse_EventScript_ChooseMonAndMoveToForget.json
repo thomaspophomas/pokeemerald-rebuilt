@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_MoveDeletersHouse_EventScript_ChooseMonAndMoveToForget",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_MoveDeletersHouse/scripts.inc",
+    "sha1": "607d0f5a35fe588b33f31bdc4804af7a61c537bb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_MoveDeletersHouse/scripts.inc",
+    "rawScript": "msgbox LilycoveCity_MoveDeletersHouse_Text_WhichMonShouldForget, MSGBOX_DEFAULT\n\tspecial ChoosePartyMon\n\tgoto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LilycoveCity_MoveDeletersHouse_EventScript_ComeAgain\n\tspecial IsSelectedMonEgg\n\tgoto_if_eq VAR_RESULT, TRUE, LilycoveCity_MoveDeletersHouse_EventScript_EggCantForgetMoves\n\tspecial GetNumMovesSelectedMonHas\n\tgoto_if_eq VAR_RESULT, 1, LilycoveCity_MoveDeletersHouse_EventScript_MonOnlyKnowsOneMove\n\tmsgbox LilycoveCity_MoveDeletersHouse_Text_WhichMoveShouldBeForgotten, MSGBOX_DEFAULT\n\tfadescreen FADE_TO_BLACK\n\tspecial MoveDeleterChooseMoveToForget\n\tfadescreen FADE_FROM_BLACK\n\tgoto_if_eq VAR_0x8005, MAX_MON_MOVES, LilycoveCity_MoveDeletersHouse_EventScript_ChooseMonAndMoveToForget\n\tspecial BufferMoveDeleterNicknameAndMove\n\tmsgbox LilycoveCity_MoveDeletersHouse_Text_MonsMoveShouldBeForgotten, MSGBOX_YESNO\n\tswitch VAR_RESULT\n\tcase YES, LilycoveCity_MoveDeletersHouse_EventScript_TryForgetMove\n\tcase NO, LilycoveCity_MoveDeletersHouse_EventScript_ComeAgain\n\treleaseall\n\tend"
+  },
+  "label": "LilycoveCity_MoveDeletersHouse_EventScript_ChooseMonAndMoveToForget",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_MoveDeletersHouse/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

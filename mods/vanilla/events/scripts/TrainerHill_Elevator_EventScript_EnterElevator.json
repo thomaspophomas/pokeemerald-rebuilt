@@ -1,0 +1,26 @@
+{
+  "id": "TrainerHill_Elevator_EventScript_EnterElevator",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Elevator/scripts.inc",
+    "sha1": "06b14119162a2b7bf99d17883435f80e4648fabb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Elevator/scripts.inc",
+    "rawScript": "applymovement LOCALID_PLAYER, TrainerHill_Elevator_Movement_PlayerApproachAttendant\n\twaitmovement 0\n\tapplymovement LOCALID_TRAINER_HILL_ELEVATOR_ATTENDANT, TrainerHill_Elevator_Movement_AttendantFacePlayer\n\twaitmovement 0\n\tlockall\n\tmsgbox TrainerHill_Elevator_Text_ReturnToReception, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, TrainerHill_Elevator_EventScript_ExitToRoof\n\treleaseall\n\tapplymovement LOCALID_TRAINER_HILL_ELEVATOR_ATTENDANT, TrainerHill_Elevator_Movement_AttendantFaceDown\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, TrainerHill_Elevator_Movement_PlayerMoveToCenterOfElevator\n\twaitmovement 0\n\tcall TrainerHill_Elevator_EventScript_MoveElevator\n\tdelay 25\n\tapplymovement LOCALID_PLAYER, TrainerHill_Elevator_Movement_PlayerExitElevator\n\twaitmovement 0\n\twarp MAP_TRAINER_HILL_ENTRANCE, 17, 8\n\twaitstate\n\tend\n\n@ Unused"
+  },
+  "label": "TrainerHill_Elevator_EventScript_EnterElevator",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/TrainerHill_Elevator/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "maps": [
+      "MAP_TRAINER_HILL_ENTRANCE"
+    ]
+  }
+}

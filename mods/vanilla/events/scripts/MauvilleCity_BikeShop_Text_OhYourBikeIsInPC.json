@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_BikeShop_Text_OhYourBikeIsInPC",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "sha1": "31396febb84a2b48608ca32d5a0dd0de865faf26"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "rawScript": ".string \"Oh? What happened to that BIKE\\n\"\n\t.string \"I gave you?\\p\"\n\t.string \"Oh, I get it, you stored it using your PC.\\p\"\n\t.string \"Well, take it out of PC storage,\\n\"\n\t.string \"and I'll be happy to exchange it!\\p\"\n\t.string \"May the wind always be at your back\\n\"\n\t.string \"on your adventure!$\""
+  },
+  "label": "MauvilleCity_BikeShop_Text_OhYourBikeIsInPC",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+  "references": {}
+}

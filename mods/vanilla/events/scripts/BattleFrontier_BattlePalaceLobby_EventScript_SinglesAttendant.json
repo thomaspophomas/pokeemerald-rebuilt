@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_EventScript_SinglesAttendant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tsetvar VAR_FRONTIER_FACILITY, FRONTIER_FACILITY_PALACE\n\tsetvar VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_SINGLES\n\tgoto BattleFrontier_BattlePalaceLobby_EventScript_Attendant\n\tend"
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_EventScript_SinglesAttendant",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FRONTIER_BATTLE_MODE",
+      "VAR_FRONTIER_FACILITY"
+    ]
+  }
+}

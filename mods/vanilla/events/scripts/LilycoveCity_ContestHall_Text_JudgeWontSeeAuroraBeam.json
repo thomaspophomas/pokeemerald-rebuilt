@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestHall_Text_JudgeWontSeeAuroraBeam",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "sha1": "9d258f56144116075b6ffd125cc9edb7fc292736"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "rawScript": ".string \"This AURORA BEAM is so dazzling,\\n\"\n\t.string \"the JUDGE won't be able to see it.\\p\"\n\t.string \"Uh, wait a second\u2026\\n\"\n\t.string \"That'll be meaningless, then!$\""
+  },
+  "label": "LilycoveCity_ContestHall_Text_JudgeWontSeeAuroraBeam",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+  "references": {}
+}

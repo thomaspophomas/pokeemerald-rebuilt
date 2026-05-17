@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_EventScript_GiveBattlePoints",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattlePalaceLobby_Text_PresentYouWithBattlePoints, MSGBOX_DEFAULT\n\tfrontier_givepoints\n\tmsgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS\n\tmessage BattleFrontier_BattlePalaceLobby_Text_FeatWillBeRecorded\n\twaitmessage\n\tcall BattleFrontier_BattlePalaceLobby_EventScript_SaveAfterChallenge\n\tmsgbox BattleFrontier_BattlePalaceLobby_Text_ReturnWhenFortified, MSGBOX_DEFAULT\n\tclosemessage\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 255\n\treleaseall\n\tend"
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_EventScript_GiveBattlePoints",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ]
+  }
+}

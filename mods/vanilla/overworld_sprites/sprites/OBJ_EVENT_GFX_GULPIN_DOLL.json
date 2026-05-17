@@ -1,0 +1,26 @@
+{
+  "id": "OBJ_EVENT_GFX_GULPIN_DOLL",
+  "domain": "overworld_sprites",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/object_events/object_event_graphics_info_pointers.h",
+    "sha1": "77fa348a5d882f94e478f2c7b9ed44de4de80ba1"
+  },
+  "legacy": {
+    "kind": "object_event_graphics",
+    "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+    "rawC": "const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GulpinDoll = {\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 128,\n    .width = 16,\n    .height = 16,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_S,\n    .inanimate = TRUE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_NONE,\n    .oam = &gObjectEventBaseOam_16x16,\n    .subspriteTables = sOamTables_16x16,\n    .anims = sAnimTable_Inanimate,\n    .images = sPicTable_GulpinDoll,\n    .affineAnims = gDummySpriteAffineAnimTable,\n};"
+  },
+  "key": "OBJ_EVENT_GFX_GULPIN_DOLL",
+  "graphicsId": "OBJ_EVENT_GFX_GULPIN_DOLL",
+  "numericId": 164,
+  "graphicsRevision": 1,
+  "assetKey": "gObjectEventGraphicsInfo_GulpinDoll",
+  "graphicsInfoSymbol": "gObjectEventGraphicsInfo_GulpinDoll",
+  "width": "16",
+  "height": "16",
+  "paletteTag": "OBJ_EVENT_PAL_TAG_NPC_3",
+  "reflectionPaletteTag": "OBJ_EVENT_PAL_TAG_NONE",
+  "shadowSize": "SHADOW_SIZE_S",
+  "tracks": "TRACKS_NONE"
+}

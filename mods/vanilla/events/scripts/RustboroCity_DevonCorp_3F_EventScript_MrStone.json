@@ -1,0 +1,27 @@
+{
+  "id": "RustboroCity_DevonCorp_3F_EventScript_MrStone",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+    "sha1": "c9490be6666cd7ea155cae31641c765560806127"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_EXP_SHARE, RustboroCity_DevonCorp_3F_EventScript_MrStoneAfterFavor\n\tgoto_if_set FLAG_DELIVERED_STEVEN_LETTER, RustboroCity_DevonCorp_3F_EventScript_GiveExpShare\n\tmsgbox RustboroCity_DevonCorp_3F_Text_CountingOnYou, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection\n\twaitmovement 0\n\trelease\n\tend"
+  },
+  "label": "RustboroCity_DevonCorp_3F_EventScript_MrStone",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DELIVERED_STEVEN_LETTER",
+      "FLAG_RECEIVED_EXP_SHARE"
+    ],
+    "vars": [
+      "VAR_LAST_TALKED"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_Harbor_EventScript_AuroraTicketFirstTime",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "sha1": "ffd83f00915b03bfdd96f51950251d00dd19dbcb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "rawScript": "setflag FLAG_SHOWN_AURORA_TICKET\n\tmsgbox EventTicket_Text_ThatPass, MSGBOX_DEFAULT\n\tclosemessage\n\tcall LilycoveCity_Harbor_EventScript_GetEventTicketSailor\n\tmsgbox EventTicket_Text_OddTicketGetOnBoard, MSGBOX_DEFAULT\n\tgoto LilycoveCity_Harbor_EventScript_GoToBirthIslandFirstTime\n\tend"
+  },
+  "label": "LilycoveCity_Harbor_EventScript_AuroraTicketFirstTime",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_Harbor/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SHOWN_AURORA_TICKET"
+    ]
+  }
+}

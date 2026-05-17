@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_EventScript_NinjaBoy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown/scripts.inc",
+    "sha1": "a2afe22497d0ac4c974698e76e0cda7094b4e79a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown/scripts.inc",
+    "rawScript": "msgbox PacifidlogTown_Text_NeatHousesOnWater, MSGBOX_NPC\n\tend"
+  },
+  "label": "PacifidlogTown_EventScript_NinjaBoy",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PacifidlogTown/scripts.inc",
+  "references": {}
+}

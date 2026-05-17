@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_SternsShipyard_2F_EventScript_Scientist2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc",
+    "sha1": "82b7acc291304eea56ffb841fc81b0f02f4cab3a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc",
+    "rawScript": "msgbox SlateportCity_SternsShipyard_2F_Text_FloatsBecauseBuoyancy, MSGBOX_NPC\n\tend"
+  },
+  "label": "SlateportCity_SternsShipyard_2F_EventScript_Scientist2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc",
+  "references": {}
+}

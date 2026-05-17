@@ -1,0 +1,26 @@
+{
+  "id": "LilycoveCity_CoveLilyMotel_2F_EventScript_Scott",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+    "sha1": "f1b25840a73dbfc8affb6142a8450fed0204496f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_MET_SCOTT_IN_LILYCOVE, LilycoveCity_CoveLilyMotel_2F_EventScript_MetScott\n\tmsgbox LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles, MSGBOX_DEFAULT\n\taddvar VAR_SCOTT_STATE, 1\n\tsetflag FLAG_MET_SCOTT_IN_LILYCOVE\n\trelease\n\tend"
+  },
+  "label": "LilycoveCity_CoveLilyMotel_2F_EventScript_Scott",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_SCOTT_IN_LILYCOVE"
+    ],
+    "vars": [
+      "VAR_SCOTT_STATE"
+    ]
+  }
+}

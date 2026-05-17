@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "012038458957d746c6cb9c71ce265a9faf173fe8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"The long and harrowing VICTORY ROAD\u2026\\p\"\n\t.string \"It's like reliving the path one has\\n\"\n\t.string \"traveled in life\u2026\\p\"\n\t.string \"Believe in your POK\u00e9MON and give it\\n\"\n\t.string \"your very best!$\""
+  },
+  "label": "EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

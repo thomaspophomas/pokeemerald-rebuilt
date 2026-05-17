@@ -1,0 +1,19 @@
+{
+  "id": "Std_MsgboxNPC",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/std_msgbox.inc",
+    "sha1": "f703ed4b95c88fdbbad4b12d4f4204426568b7d0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/std_msgbox.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmessage NULL\n\twaitmessage\n\twaitbuttonpress\n\trelease\n\treturn"
+  },
+  "label": "Std_MsgboxNPC",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/std_msgbox.inc",
+  "references": {}
+}

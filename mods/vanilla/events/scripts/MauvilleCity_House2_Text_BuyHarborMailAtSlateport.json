@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_House2_Text_BuyHarborMailAtSlateport",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_House2/scripts.inc",
+    "sha1": "a6d03164752c7787533d05baf97465a81271b528"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_House2/scripts.inc",
+    "rawScript": ".string \"If I had a BIKE, it'd be easy to cycle to\\n\"\n\t.string \"SLATEPORT for some shopping.\\p\"\n\t.string \"I'd be able to buy HARBOR MAIL at the\\n\"\n\t.string \"POK\u00e9MON MART in SLATEPORT\u2026$\""
+  },
+  "label": "MauvilleCity_House2_Text_BuyHarborMailAtSlateport",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_House2/scripts.inc",
+  "references": {}
+}

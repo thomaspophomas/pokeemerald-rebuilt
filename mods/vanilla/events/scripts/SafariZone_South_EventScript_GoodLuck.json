@@ -1,0 +1,23 @@
+{
+  "id": "SafariZone_South_EventScript_GoodLuck",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_South/scripts.inc",
+    "sha1": "f646b8fd9a41bcca9341c62dd81202b659f66065"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SafariZone_South/scripts.inc",
+    "rawScript": "setflag FLAG_GOOD_LUCK_SAFARI_ZONE\n\tmsgbox SafariZone_South_Text_GoodLuck, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "SafariZone_South_EventScript_GoodLuck",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SafariZone_South/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_GOOD_LUCK_SAFARI_ZONE"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "rawScript": "call_if_eq VAR_MOSSDEEP_CITY_STATE, 2, MossdeepCity_SpaceCenter_2F_EventScript_MoveCivilians\n\tcall_if_eq VAR_MOSSDEEP_SPACE_CENTER_STATE, 2, MossdeepCity_SpaceCenter_2F_EventScript_MoveDefeatedGrunts\n\tend"
+  },
+  "label": "MossdeepCity_SpaceCenter_2F_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_MOSSDEEP_CITY_STATE",
+      "VAR_MOSSDEEP_SPACE_CENTER_STATE"
+    ]
+  }
+}

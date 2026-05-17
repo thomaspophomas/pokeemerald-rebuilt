@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge2_Text_LinkMultiBattleAdvice",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "sha1": "d4d4f7c0802f8118a63eaf9b68eb6bcff146ff4d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "rawScript": ".string \"If you're with a friend, head for the\\n\"\n\t.string \"LINK MULTI BATTLE ROOM.\\p\"\n\t.string \"If you play with a strong friend,\\n\"\n\t.string \"you can expect to see tough foes!$\""
+  },
+  "label": "BattleFrontier_Lounge2_Text_LinkMultiBattleAdvice",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+  "references": {}
+}

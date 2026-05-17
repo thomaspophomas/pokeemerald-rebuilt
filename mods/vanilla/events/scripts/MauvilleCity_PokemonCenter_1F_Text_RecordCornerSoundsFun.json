@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_PokemonCenter_1F_Text_RecordCornerSoundsFun",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "4f26b55b9e0eea95f2364faf35b676a0a26a3ce0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"A RECORD CORNER opened upstairs in\\n\"\n\t.string \"the POK\u00e9MON CENTER.\\p\"\n\t.string \"I don't know what it's about, but it\\n\"\n\t.string \"sounds fun. I'll go check it out!$\""
+  },
+  "label": "MauvilleCity_PokemonCenter_1F_Text_RecordCornerSoundsFun",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

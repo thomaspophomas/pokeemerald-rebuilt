@@ -1,0 +1,19 @@
+{
+  "id": "Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "sha1": "3b39ac1484a417dc8392e9b8712bc29e12891169"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "rawScript": ".string \"Scrub that smug smirk from your face!\\n\"\n\t.string \"It's much too early to think you've won!\\p\"\n\t.string \"I'll make new tricks to stump you, I will.\\n\"\n\t.string \"You may mock me only when you're done.\\p\"\n\t.string \"Come back for the next exciting\\n\"\n\t.string \"installment!$\""
+  },
+  "label": "Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+  "references": {}
+}

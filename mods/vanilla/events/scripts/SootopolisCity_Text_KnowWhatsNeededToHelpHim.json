@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Text_KnowWhatsNeededToHelpHim",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": ".string \"STEVEN: I think you have what's\\n\"\n\t.string \"needed to help him\u2026$\""
+  },
+  "label": "SootopolisCity_Text_KnowWhatsNeededToHelpHim",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

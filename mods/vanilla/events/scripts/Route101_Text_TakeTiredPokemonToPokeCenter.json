@@ -1,0 +1,19 @@
+{
+  "id": "Route101_Text_TakeTiredPokemonToPokeCenter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route101/scripts.inc",
+    "sha1": "8bf41eea03b11363dfc29d02f70e66a0a3532478"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route101/scripts.inc",
+    "rawScript": ".string \"If POK\u00e9MON get tired, take them to\\n\"\n\t.string \"a POK\u00e9MON CENTER.\\p\"\n\t.string \"There's a POK\u00e9MON CENTER in OLDALE\\n\"\n\t.string \"TOWN right close by.$\""
+  },
+  "label": "Route101_Text_TakeTiredPokemonToPokeCenter",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route101/scripts.inc",
+  "references": {}
+}

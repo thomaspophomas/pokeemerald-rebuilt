@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_StevensHouse_EventScript_ReceivedBeldumFanfare",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "sha1": "13a709347ca2c2863ef04de01b7d51d28b9d736e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "rawScript": "bufferspeciesname STR_VAR_2, SPECIES_BELDUM\n\tremoveobject LOCALID_STEVENS_HOUSE_BALL\n\tplayfanfare MUS_OBTAIN_ITEM\n\tmessage MossdeepCity_StevensHouse_Text_ObtainedBeldum\n\twaitmessage\n\twaitfanfare\n\tbufferspeciesname STR_VAR_1, SPECIES_BELDUM\n\treturn"
+  },
+  "label": "MossdeepCity_StevensHouse_EventScript_ReceivedBeldumFanfare",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+  "references": {}
+}

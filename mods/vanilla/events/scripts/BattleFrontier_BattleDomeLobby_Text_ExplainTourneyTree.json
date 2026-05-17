@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomeLobby_Text_ExplainTourneyTree",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "sha1": "c5673b719ade6a47e6fe1e3055270ca454748cfd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "rawScript": ".string \"The tournament chart, or as we call it,\\n\"\n\t.string \"the \u201cTree,\u201d is available for viewing\\l\"\n\t.string \"in the Waiting Room from any guide.\\p\"\n\t.string \"The Tournament Tree will provide\\n\"\n\t.string \"several kinds of data.\\p\"\n\t.string \"The data on view includes the previous\\n\"\n\t.string \"tournament's results, the POK\u00e9MON held\\l\"\n\t.string \"by TRAINERS, and the battle styles of\\l\"\n\t.string \"TRAINERS.$\""
+  },
+  "label": "BattleFrontier_BattleDomeLobby_Text_ExplainTourneyTree",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+  "references": {}
+}

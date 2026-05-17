@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Gym_B1F_Text_KeeganIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "sha1": "b82ae91ab89ff7156e8125891eff9b7e6a2a260f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "rawScript": ".string \"You must be getting tired by now.\\n\"\n\t.string \"You'd like to rest in the hot sand,\\l\"\n\t.string \"wouldn't you?\\p\"\n\t.string \"But you should know that maintaining\\n\"\n\t.string \"your willpower is an important ability\\l\"\n\t.string \"for all TRAINERS.$\""
+  },
+  "label": "LavaridgeTown_Gym_B1F_Text_KeeganIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+  "references": {}
+}

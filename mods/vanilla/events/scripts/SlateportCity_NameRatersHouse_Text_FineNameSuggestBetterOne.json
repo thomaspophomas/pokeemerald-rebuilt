@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_NameRatersHouse_Text_FineNameSuggestBetterOne",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_NameRatersHouse/scripts.inc",
+    "sha1": "ecd2294ed4e3a6a8e122867d365034a6568bcf9c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_NameRatersHouse/scripts.inc",
+    "rawScript": ".string \"Hmmm\u2026 {STR_VAR_1}, is it? That is\\n\"\n\t.string \"quite a fine name you bestowed.\\p\"\n\t.string \"But! What say you, if I were to\\n\"\n\t.string \"suggest a slightly better name?$\""
+  },
+  "label": "SlateportCity_NameRatersHouse_Text_FineNameSuggestBetterOne",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_NameRatersHouse/scripts.inc",
+  "references": {}
+}

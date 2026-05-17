@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_PokemonCenter_2F_EventScript_RecordCorner",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_PokemonCenter_2F/scripts.inc",
+    "sha1": "a5e9e9decb144c0f988c2ac63983c4bc911f429b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown_PokemonCenter_2F/scripts.inc",
+    "rawScript": "call CableClub_EventScript_RecordCorner\n\tend"
+  },
+  "label": "PacifidlogTown_PokemonCenter_2F_EventScript_RecordCorner",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PacifidlogTown_PokemonCenter_2F/scripts.inc",
+  "references": {}
+}

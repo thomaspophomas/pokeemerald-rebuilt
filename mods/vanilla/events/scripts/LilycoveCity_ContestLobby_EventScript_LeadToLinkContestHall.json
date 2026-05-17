@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_LeadToLinkContestHall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": "messageautoscroll LilycoveCity_ContestLobby_Text_ContestBeginShortly\n\twaitmessage\n\tdelay 20\n\tclosemessage\n\tapplymovement LOCALID_CONTEST_LOBBY_LINK_RECEPTIONIST, LilycoveCity_ContestLobby_Movement_LinkReceptionistApproachCounter\n\twaitmovement 0\n\tplayse SE_BRIDGE_WALK\n\tsetmetatile 17, 2, METATILE_Contest_WallShadow, TRUE\n\tsetmetatile 17, 3, METATILE_Contest_FloorShadow, TRUE\n\tspecial DrawWholeMapView\n\tapplymovement LOCALID_CONTEST_LOBBY_LINK_RECEPTIONIST, LilycoveCity_ContestLobby_Movement_LinkReceptionistExitCounter\n\twaitmovement 0\n\tplayse SE_BRIDGE_WALK\n\tsetmetatile 17, 2, METATILE_Contest_CounterFlap_Top, TRUE\n\tsetmetatile 17, 3, METATILE_Contest_CounterFlap_Bottom, TRUE\n\tspecial DrawWholeMapView\n\tdelay 20\n\tapplymovement LOCALID_CONTEST_LOBBY_LINK_RECEPTIONIST, LilycoveCity_ContestLobby_Movement_LinkReceptionistFacePlayer\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, LilycoveCity_ContestLobby_Movement_PlayerApproachLinkReceptionist\n\twaitmovement 0\n\tmessageautoscroll LilycoveCity_ContestLobby_Text_ComeThroughHere\n\twaitmessage\n\tdelay 20\n\tclosemessage\n\tcall LilycoveCity_ContestLobby_EventScript_DelayIfContestWithRSPlayer\n\tapplymovement LOCALID_CONTEST_LOBBY_LINK_RECEPTIONIST, LilycoveCity_ContestLobby_Movement_LinkReceptionistWalkToContestHall\n\tapplymovement LOCALID_PLAYER, LilycoveCity_ContestLobby_Movement_PlayerWalkToLinkContestHall\n\twaitmovement 0\n\trelease\n\treturn"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_LeadToLinkContestHall",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {}
+}

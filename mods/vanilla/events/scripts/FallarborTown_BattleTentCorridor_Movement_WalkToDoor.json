@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_BattleTentCorridor_Movement_WalkToDoor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+    "sha1": "163b9c21282cae11ce5f396c305aff448fc9ab48"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+    "rawScript": "walk_up\n\twalk_up\n\twalk_up\n\twalk_up\n\tstep_end"
+  },
+  "label": "FallarborTown_BattleTentCorridor_Movement_WalkToDoor",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+  "references": {}
+}

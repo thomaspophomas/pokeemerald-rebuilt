@@ -1,0 +1,23 @@
+{
+  "id": "AbandonedShip_CaptainsOffice_EventScript_ItemStorageKey",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/item_ball_scripts.inc",
+    "sha1": "fb0889a473104b0cbc645aec0925e626c732615f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/item_ball_scripts.inc",
+    "rawScript": "finditem ITEM_STORAGE_KEY\n\tend"
+  },
+  "label": "AbandonedShip_CaptainsOffice_EventScript_ItemStorageKey",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/item_ball_scripts.inc",
+  "references": {
+    "items": [
+      "ITEM_STORAGE_KEY"
+    ]
+  }
+}

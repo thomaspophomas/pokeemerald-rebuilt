@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_PokemonCenter_1F_Text_TradedMonWithFriend",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "c0dd8403baae500cd386226bc6b94ee6359cdc91"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"I trade POK\u00e9MON with my friends.\\p\"\n\t.string \"If a traded POK\u00e9MON is holding an\\n\"\n\t.string \"item, it makes me twice as happy!$\""
+  },
+  "label": "SlateportCity_PokemonCenter_1F_Text_TradedMonWithFriend",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_PokemonCenter_1F_EventScript_Nurse",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.inc",
+    "sha1": "2d6c7030e320b3702ad7ff18d6f2577a69d1e76a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.inc",
+    "rawScript": "setvar VAR_0x800B, LOCALID_PACIFIDLOG_NURSE\n\tcall Common_EventScript_PkmnCenterNurse\n\twaitmessage\n\twaitbuttonpress\n\trelease\n\tend"
+  },
+  "label": "PacifidlogTown_PokemonCenter_1F_EventScript_Nurse",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

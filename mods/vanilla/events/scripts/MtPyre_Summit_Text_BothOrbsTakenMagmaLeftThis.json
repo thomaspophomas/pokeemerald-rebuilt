@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/scripts.inc",
+    "sha1": "2d98d572d50cebb678d972aa421854c983329822"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Summit/scripts.inc",
+    "rawScript": ".string \"Oh, no\u2026\\n\"\n\t.string \"This cannot happen\u2026\\p\"\n\t.string \"Not only the BLUE ORB, but even\\n\"\n\t.string \"the RED ORB has been taken\u2026\\p\"\n\t.string \"The BLUE ORB and RED ORB must never\\n\"\n\t.string \"be separated. They belong together.\\p\"\n\t.string \"What are those men trying to do with\\n\"\n\t.string \"the two ORBS?\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\n\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"Oh, yes. Was it TEAM MAGMA who came\\n\"\n\t.string \"and took the BLUE ORB first?\\p\"\n\t.string \"Well, in their haste, they left this\\n\"\n\t.string \"behind.\\p\"\n\t.string \"I couldn't imagine what exactly it\\n\"\n\t.string \"could be.\\p\"\n\t.string \"I would like you to have it.\\n\"\n\t.string \"Perhaps it will be useful in some way.$\""
+  },
+  "label": "MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_Summit/scripts.inc",
+  "references": {}
+}

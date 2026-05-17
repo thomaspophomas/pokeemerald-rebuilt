@@ -1,0 +1,19 @@
+{
+  "id": "SSTidalLowerDeck_Text_LeonardIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalLowerDeck/scripts.inc",
+    "sha1": "da5c83687e72d620633c70321ab42f96f4e4f877"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalLowerDeck/scripts.inc",
+    "rawScript": ".string \"This is the bottom of the ship's hull.\\n\"\n\t.string \"There's plenty of room.\\l\"\n\t.string \"It'll be alright for a POK\u00e9MON battle.$\""
+  },
+  "label": "SSTidalLowerDeck_Text_LeonardIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SSTidalLowerDeck/scripts.inc",
+  "references": {}
+}

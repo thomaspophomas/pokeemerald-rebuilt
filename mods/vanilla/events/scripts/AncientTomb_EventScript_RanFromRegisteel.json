@@ -1,0 +1,19 @@
+{
+  "id": "AncientTomb_EventScript_RanFromRegisteel",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AncientTomb/scripts.inc",
+    "sha1": "57ee4b1313324882be319adf4cbdef89f090204c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AncientTomb/scripts.inc",
+    "rawScript": "setvar VAR_0x8004, SPECIES_REGISTEEL\n\tgoto Common_EventScript_LegendaryFlewAway\n\tend"
+  },
+  "label": "AncientTomb_EventScript_RanFromRegisteel",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AncientTomb/scripts.inc",
+  "references": {}
+}

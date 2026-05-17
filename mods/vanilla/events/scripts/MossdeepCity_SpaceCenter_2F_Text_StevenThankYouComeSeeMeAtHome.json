@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "rawScript": ".string \"STEVEN: Whew, that was too tense.\\n\"\n\t.string \"{PLAYER}{KUN}, thank you.\\p\"\n\t.string \"I have something to give you as\\n\"\n\t.string \"thanks for your support.\\p\"\n\t.string \"Please come see me at home\\n\"\n\t.string \"after this.\\p\"\n\t.string \"Oh, yes, I don't live in RUSTBORO CITY.\\n\"\n\t.string \"I live right here on this island.$\""
+  },
+  "label": "MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+  "references": {}
+}

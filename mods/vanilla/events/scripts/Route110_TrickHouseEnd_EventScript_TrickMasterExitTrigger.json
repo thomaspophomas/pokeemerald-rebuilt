@@ -1,0 +1,19 @@
+{
+  "id": "Route110_TrickHouseEnd_EventScript_TrickMasterExitTrigger",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "sha1": "3b39ac1484a417dc8392e9b8712bc29e12891169"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "rawScript": "lockall\n\tturnobject LOCALID_TRICK_MASTER_END, DIR_WEST\n\tplayse SE_PIN\n\tapplymovement LOCALID_TRICK_MASTER_END, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tdelay 20\n\tapplymovement LOCALID_TRICK_MASTER_END, Route110_TrickHouseEnd_Movement_TrickMasterSurprise\n\twaitmovement 0\n\tplayse SE_M_EXPLOSION\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tmsgbox Route110_TrickHouseEnd_Text_YoureIgnoringMe, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_PLAYER, Route110_TrickHouseEnd_Movement_KeepPlayerInRoom\n\twaitmovement 0\n\tdelay 4\n\tturnobject LOCALID_TRICK_MASTER_END, DIR_EAST\n\treleaseall\n\tend"
+  },
+  "label": "Route110_TrickHouseEnd_EventScript_TrickMasterExitTrigger",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+  "references": {}
+}

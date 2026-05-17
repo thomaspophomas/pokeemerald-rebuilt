@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_House3_Text_WillingToTradeIt",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_House3/scripts.inc",
+    "sha1": "ba89fc962199aede788baf3e29a8d5d208c669cb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown_House3/scripts.inc",
+    "rawScript": ".string \"Check out this {STR_VAR_2}!\\p\"\n\t.string \"It's the {STR_VAR_2} that I caught\\n\"\n\t.string \"yesterday to celebrate my birthday!\\p\"\n\t.string \"Oh, I can see that you want it!\\n\"\n\t.string \"After all, it's priceless!\\p\"\n\t.string \"I'll tell you what. I might be willing\\n\"\n\t.string \"to trade it for a {STR_VAR_1}.$\""
+  },
+  "label": "PacifidlogTown_House3_Text_WillingToTradeIt",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PacifidlogTown_House3/scripts.inc",
+  "references": {}
+}

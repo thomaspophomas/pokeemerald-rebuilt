@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "3355898078ce7d23572c68766ca5af49d35de75d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"For example, your TORCHIC\\n\"\n\t.string \"is a FIRE type.\\p\"\n\t.string \"It's strong against the GRASS and\\n\"\n\t.string \"BUG types.\\p\"\n\t.string \"But, it's weak against WATER-type\\n\"\n\t.string \"POK\u00e9MON.$\""
+  },
+  "label": "PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

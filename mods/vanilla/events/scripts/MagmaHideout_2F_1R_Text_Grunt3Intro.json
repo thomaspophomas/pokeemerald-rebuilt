@@ -1,0 +1,19 @@
+{
+  "id": "MagmaHideout_2F_1R_Text_Grunt3Intro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_2F_1R/scripts.inc",
+    "sha1": "015ca35ad24a95edcf15463fdb5c0bcafde94383"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_2F_1R/scripts.inc",
+    "rawScript": ".string \"Hold it right there!\\p\"\n\t.string \"You don't really expect me to keep\\n\"\n\t.string \"my trap shut and let you waltz by me?$\""
+  },
+  "label": "MagmaHideout_2F_1R_Text_Grunt3Intro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MagmaHideout_2F_1R/scripts.inc",
+  "references": {}
+}

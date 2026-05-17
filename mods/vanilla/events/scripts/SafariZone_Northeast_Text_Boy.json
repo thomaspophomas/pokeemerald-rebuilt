@@ -1,0 +1,19 @@
+{
+  "id": "SafariZone_Northeast_Text_Boy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/safari_zone.inc",
+    "sha1": "435880c660a34d3e51dcedb348a41731d28af7cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/safari_zone.inc",
+    "rawScript": ".string \"I only have a couple SAFARI BALLS left.\\p\"\n\t.string \"I'm having a hard time trying to\\n\"\n\t.string \"decide what I should catch.$\""
+  },
+  "label": "SafariZone_Northeast_Text_Boy",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/safari_zone.inc",
+  "references": {}
+}

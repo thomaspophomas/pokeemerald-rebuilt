@@ -1,0 +1,24 @@
+{
+  "id": "PacifidlogTown_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown/scripts.inc",
+    "sha1": "a2afe22497d0ac4c974698e76e0cda7094b4e79a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, PacifidlogTown_OnTransition\n\tmap_script MAP_SCRIPT_ON_RESUME, PacifidlogTown_OnResume\n\t.byte 0"
+  },
+  "label": "PacifidlogTown_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/PacifidlogTown/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

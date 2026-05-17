@@ -1,0 +1,26 @@
+{
+  "id": "Route124_EventScript_Jenny",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route124/scripts.inc",
+    "sha1": "605960b79a928e3220855307b2a2ffe4c134fa65"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route124/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_JENNY_1, Route124_Text_JennyIntro, Route124_Text_JennyDefeat, Route124_EventScript_RegisterJenny\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, Route124_EventScript_RematchJenny\n\tmsgbox Route124_Text_JennyPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route124_EventScript_Jenny",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route124/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_JENNY_1"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "en:pokedex_rating",
+  "domain": "language",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/text/pokedex_rating.inc",
+    "sha1": "520b77a669e5294253640fabba5037ffc01e74fd"
+  },
+  "legacy": {
+    "kind": "asm_text_labels",
+    "sourcePath": "data/text/pokedex_rating.inc"
+  },
+  "language": "en",
+  "group": "pokedex_rating",
+  "runtime": false,
+  "strings": {
+    "gBirchDexRatingText_AreYouCurious": ".string \"PROF. BIRCH: Ah, {PLAYER}{KUN}!\\p\"\n\t.string \"Are you curious about how your\\n\"\n\t.string \"POK\u00e9DEX is coming along?$\"",
+    "gBirchDexRatingText_Cancel": ".string \"Hm? Oh, you haven't caught enough\\n\"\n\t.string \"POK\u00e9MON to make it worthwhile.$\"",
+    "gBirchDexRatingText_SoYouveSeenAndCaught": ".string \"Hmhm\u2026\\p\"\n\t.string \"So, you've seen {STR_VAR_1} POK\u00e9MON,\\n\"\n\t.string \"and you've caught {STR_VAR_2} POK\u00e9MON\u2026$\"",
+    "gBirchDexRatingText_LessThan10": ".string \"Go into grassy areas more and look\\n\"\n\t.string \"for POK\u00e9MON more carefully.$\"",
+    "gBirchDexRatingText_LessThan20": ".string \"I guess you're getting the hang\\n\"\n\t.string \"of it. But, it gets harder from here.$\"",
+    "gBirchDexRatingText_LessThan30": ".string \"Some POK\u00e9MON only appear in\\n\"\n\t.string \"certain areas.\\l\"\n\t.string \"You must be persistent.$\"",
+    "gBirchDexRatingText_LessThan40": ".string \"Well, it could use more quantity,\\n\"\n\t.string \"but this is looking more like\\l\"\n\t.string \"a POK\u00e9DEX now.$\"",
+    "gBirchDexRatingText_LessThan50": ".string \"This is coming along pretty good.\\n\"\n\t.string \"Keep up the effort.$\"",
+    "gBirchDexRatingText_LessThan60": ".string \"Are you using any RODS?\\n\"\n\t.string \"There are many POK\u00e9MON in the sea.$\"",
+    "gBirchDexRatingText_LessThan70": ".string \"Instead of just catching POK\u00e9MON,\\n\"\n\t.string \"how about making them evolve, too?$\"",
+    "gBirchDexRatingText_LessThan80": ".string \"This is going to be a fantastic\\n\"\n\t.string \"POK\u00e9DEX.\\l\"\n\t.string \"That's the feeling I'm getting.$\"",
+    "gBirchDexRatingText_LessThan90": ".string \"You've collected this many\u2026\\n\"\n\t.string \"Your talent is remarkable!$\"",
+    "gBirchDexRatingText_LessThan100": ".string \"Have you visited the SAFARI ZONE?\\p\"\n\t.string \"I hear there are some POK\u00e9MON that\\n\"\n\t.string \"can only be caught there.$\"",
+    "gBirchDexRatingText_LessThan110": ".string \"You've finally reached\\n\"\n\t.string \"the 100-kind mark.\\p\"\n\t.string \"This is an impressive POK\u00e9DEX!$\"",
+    "gBirchDexRatingText_LessThan120": ".string \"There might be POK\u00e9MON that can be\\n\"\n\t.string \"found using ROCK SMASH.$\"",
+    "gBirchDexRatingText_LessThan130": ".string \"You should get some more POK\u00e9MON\\n\"\n\t.string \"by trading with others.$\"",
+    "gBirchDexRatingText_LessThan140": ".string \"I've heard of POK\u00e9MON that evolve\\n\"\n\t.string \"when they come to fully love their\\l\"\n\t.string \"TRAINERS.$\"",
+    "gBirchDexRatingText_LessThan150": ".string \"I had no idea that there were so\\n\"\n\t.string \"many POK\u00e9MON species in the HOENN\\l\"\n\t.string \"region.$\"",
+    "gBirchDexRatingText_LessThan160": ".string \"On occasion, some POK\u00e9MON appear\\n\"\n\t.string \"in large numbers like outbreaks.\\p\"\n\t.string \"Don't miss opportunities like\\n\"\n\t.string \"those.$\"",
+    "gBirchDexRatingText_LessThan170": ".string \"One can get a very good idea about\\n\"\n\t.string \"the POK\u00e9MON of the HOENN region\\l\"\n\t.string \"by looking through your POK\u00e9DEX.$\"",
+    "gBirchDexRatingText_LessThan180": ".string \"I would say you already qualify as\\n\"\n\t.string \"a POK\u00e9MON PROFESSOR, and a good\\l\"\n\t.string \"one, too!$\"",
+    "gBirchDexRatingText_LessThan190": ".string \"With a POK\u00e9DEX this complete,\\n\"\n\t.string \"you're a real professional at this!$\"",
+    "gBirchDexRatingText_LessThan200": ".string \"You're very close to completing\\n\"\n\t.string \"this POK\u00e9DEX.\\l\"\n\t.string \"I can feel it in my bones!$\"",
+    "gBirchDexRatingText_DexCompleted": ".string \"Congratulations!\\n\"\n\t.string \"Your POK\u00e9DEX is complete!$\"",
+    "gBirchDexRatingText_OnANationwideBasis": ".string \"Hmhm\u2026\\n\"\n\t.string \"On a nationwide basis\u2026\\p\"\n\t.string \"You've seen {STR_VAR_1} POK\u00e9MON,\\n\"\n\t.string \"and you've caught {STR_VAR_2} POK\u00e9MON\u2026$\""
+  }
+}

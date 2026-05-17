@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_Text_CitySign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity/scripts.inc",
+    "sha1": "03ae6b2d9d17df6e3a50137366ce7f8d136ed5d2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity/scripts.inc",
+    "rawScript": ".string \"EVER GRANDE CITY\\p\"\n\t.string \"\u201cThe paradise of flowers, the sea,\\n\"\n\t.string \"and POK\u00e9MON.\u201d$\""
+  },
+  "label": "EverGrandeCity_Text_CitySign",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity/scripts.inc",
+  "references": {}
+}

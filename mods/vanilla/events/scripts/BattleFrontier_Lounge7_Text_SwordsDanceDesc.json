@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge7_Text_SwordsDanceDesc",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+    "sha1": "384442d4fcbb4c5edeb287c69a9c0ca256ec49b1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+    "rawScript": ".string \"A fighting dance\\n\"\n\t.string \"that sharply\\n\"\n\t.string \"raises ATTACK.$\""
+  },
+  "label": "BattleFrontier_Lounge7_Text_SwordsDanceDesc",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+  "references": {}
+}

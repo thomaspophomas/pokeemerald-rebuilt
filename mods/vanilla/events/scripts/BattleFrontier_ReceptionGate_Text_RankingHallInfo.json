@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ReceptionGate_Text_RankingHallInfo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "sha1": "5b6e89c53f6e32c0fa6883bd750252f1d739a97b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "rawScript": ".string \"The RANKING HALL is located near\\n\"\n\t.string \"the BATTLE TOWER.\\p\"\n\t.string \"There, you may see the most fantastic\\n\"\n\t.string \"records left by the TRAINERS that\\l\"\n\t.string \"took on the many challenges of\\l\"\n\t.string \"the BATTLE FRONTIER.$\""
+  },
+  "label": "BattleFrontier_ReceptionGate_Text_RankingHallInfo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+  "references": {}
+}

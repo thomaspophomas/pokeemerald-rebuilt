@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_Text_HearingAboutToughNewTrainer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": ".string \"I've been hearing things about\\n\"\n\t.string \"a tough new TRAINER.\\p\"\n\t.string \"This TRAINER's supposed to be beating\\n\"\n\t.string \"GYM LEADERS, even.\\p\"\n\t.string \"Do you know anything about this\\n\"\n\t.string \"new TRAINER?$\""
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_Text_HearingAboutToughNewTrainer",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {}
+}

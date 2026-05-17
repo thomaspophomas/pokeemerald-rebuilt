@@ -1,0 +1,19 @@
+{
+  "id": "BerryBlender_Text_SetNewBlenderRecord",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": ".string \"Okay! Today's going to be the day that\\n\"\n\t.string \"I set a new BLENDER speed record!$\""
+  },
+  "label": "BerryBlender_Text_SetNewBlenderRecord",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {}
+}

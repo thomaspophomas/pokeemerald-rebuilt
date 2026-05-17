@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgWoods_Text_TrainerTipsExperience",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/scripts.inc",
+    "sha1": "a7a3b49731f97088b328145805430d4429326ec8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgWoods/scripts.inc",
+    "rawScript": ".string \"TRAINER TIPS\\p\"\n\t.string \"Any POK\u00e9MON that appears even once\\n\"\n\t.string \"in a battle is awarded EXP Points.\\p\"\n\t.string \"To raise a weak POK\u00e9MON, put it at the\\n\"\n\t.string \"left of the team list.\\p\"\n\t.string \"As soon as a battle starts, switch it\\n\"\n\t.string \"out. It will earn EXP Points without\\l\"\n\t.string \"being exposed to any harm.$\""
+  },
+  "label": "PetalburgWoods_Text_TrainerTipsExperience",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgWoods/scripts.inc",
+  "references": {}
+}

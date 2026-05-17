@@ -1,0 +1,26 @@
+{
+  "id": "EventScript_RockSmash",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/field_move_scripts.inc",
+    "sha1": "83a0d3bb9ff1263278592b6a78563154bb422956"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/field_move_scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_unset FLAG_BADGE03_GET, EventScript_CantSmashRock\n\tcheckpartymove MOVE_ROCK_SMASH\n\tgoto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantSmashRock\n\tsetfieldeffectargument 0, VAR_RESULT\n\tbufferpartymonnick STR_VAR_1, VAR_RESULT\n\tbuffermovename STR_VAR_2, MOVE_ROCK_SMASH\n\tmsgbox Text_WantToSmash, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, EventScript_CancelSmash\n\tmsgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT\n\tclosemessage\n\tdofieldeffect FLDEFF_USE_ROCK_SMASH\n\twaitstate\n\tgoto EventScript_SmashRock\n\tend\n\n@ Use rock smash from party menu"
+  },
+  "label": "EventScript_RockSmash",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/field_move_scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_BADGE03_GET"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

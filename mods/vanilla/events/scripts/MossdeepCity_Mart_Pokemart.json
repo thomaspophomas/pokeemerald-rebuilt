@@ -1,0 +1,31 @@
+{
+  "id": "MossdeepCity_Mart_Pokemart",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Mart/scripts.inc",
+    "sha1": "c808a00eab98e6463dd7a37f123ff7123046ccad"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_Mart/scripts.inc",
+    "rawScript": ".2byte ITEM_ULTRA_BALL\n\t.2byte ITEM_NET_BALL\n\t.2byte ITEM_DIVE_BALL\n\t.2byte ITEM_HYPER_POTION\n\t.2byte ITEM_FULL_HEAL\n\t.2byte ITEM_REVIVE\n\t.2byte ITEM_MAX_REPEL\n\t.2byte ITEM_X_ATTACK\n\t.2byte ITEM_X_DEFEND\n\tpokemartlistend"
+  },
+  "label": "MossdeepCity_Mart_Pokemart",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/MossdeepCity_Mart/scripts.inc",
+  "references": {
+    "items": [
+      "ITEM_DIVE_BALL",
+      "ITEM_FULL_HEAL",
+      "ITEM_HYPER_POTION",
+      "ITEM_MAX_REPEL",
+      "ITEM_NET_BALL",
+      "ITEM_REVIVE",
+      "ITEM_ULTRA_BALL",
+      "ITEM_X_ATTACK",
+      "ITEM_X_DEFEND"
+    ]
+  }
+}

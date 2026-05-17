@@ -1,0 +1,28 @@
+{
+  "id": "RustboroCity_DevonCorp_2F_EventScript_FossilScientist",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "sha1": "7e0aa6a4df50ead64287578a24ba19b07cafbb02"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_eq VAR_FOSSIL_RESURRECTION_STATE, 2, RustboroCity_DevonCorp_2F_EventScript_FossilMonReady\n\tgoto_if_eq VAR_FOSSIL_RESURRECTION_STATE, 1, RustboroCity_DevonCorp_2F_EventScript_StillRegenerating\n\tmsgbox RustboroCity_DevonCorp_2F_Text_DevelopDeviceToResurrectFossils, MSGBOX_DEFAULT\n\tcheckitem ITEM_ROOT_FOSSIL\n\tgoto_if_eq VAR_RESULT, TRUE, RustboroCity_DevonCorp_2F_EventScript_NoticeRootFossil\n\tcheckitem ITEM_CLAW_FOSSIL\n\tgoto_if_eq VAR_RESULT, TRUE, RustboroCity_DevonCorp_2F_EventScript_NoticeClawFossil\n\trelease\n\tend\n\n@ This whole section has needless duplication and could be condensed considerably"
+  },
+  "label": "RustboroCity_DevonCorp_2F_EventScript_FossilScientist",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FOSSIL_RESURRECTION_STATE",
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_CLAW_FOSSIL",
+      "ITEM_ROOT_FOSSIL"
+    ]
+  }
+}

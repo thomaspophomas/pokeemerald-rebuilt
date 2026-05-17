@@ -1,0 +1,19 @@
+{
+  "id": "BerryBlender_EventScript_TryJoinLinkGroup",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": "special TryJoinLinkGroup\n\treturn"
+  },
+  "label": "BerryBlender_EventScript_TryJoinLinkGroup",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {}
+}

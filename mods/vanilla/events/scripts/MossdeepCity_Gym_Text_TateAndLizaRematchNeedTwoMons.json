@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "sha1": "f1b3ae6c76fdfe44b1431df4ea78da5c11a79c08"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "rawScript": ".string \"TATE: You're back again\u2026\\n\"\n\t.string \"LIZA: You're back again\u2026\\p\"\n\t.string \"TATE: To give us a rematch.\\n\"\n\t.string \"LIZA: To give us a rematch.\\p\"\n\t.string \"TATE: But\u2026\\n\"\n\t.string \"LIZA: For our match\u2026\\p\"\n\t.string \"TATE: You brought just one POK\u00e9MON!\\n\"\n\t.string \"LIZA: You brought just one POK\u00e9MON!\\p\"\n\t.string \"TATE: We need you to bring at least\u2026\\n\"\n\t.string \"LIZA: Two POK\u00e9MON when you come back.$\""
+  },
+  "label": "MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_Gym/scripts.inc",
+  "references": {}
+}

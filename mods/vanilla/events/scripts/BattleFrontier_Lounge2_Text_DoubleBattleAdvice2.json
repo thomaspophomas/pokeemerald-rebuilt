@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge2_Text_DoubleBattleAdvice2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "sha1": "d4d4f7c0802f8118a63eaf9b68eb6bcff146ff4d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "rawScript": ".string \"Watch yourself in the battles here.\\p\"\n\t.string \"I hear there are TRAINERS that have\\n\"\n\t.string \"strategies they developed just for\\l\"\n\t.string \"DOUBLE BATTLES.$\""
+  },
+  "label": "BattleFrontier_Lounge2_Text_DoubleBattleAdvice2",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+  "references": {}
+}

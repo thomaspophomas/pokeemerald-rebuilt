@@ -1,0 +1,19 @@
+{
+  "id": "MagmaHideout_2F_2R_Text_Grunt7Intro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_2F_2R/scripts.inc",
+    "sha1": "01615ee55415554a4833c7cd9790ada769e12792"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_2F_2R/scripts.inc",
+    "rawScript": ".string \"You can hear tremors here sometimes.\\p\"\n\t.string \"Could it be the volcano rattling?\\n\"\n\t.string \"Or is it GROU\u2026\\p\"\n\t.string \"Whoops!\\n\"\n\t.string \"No, no, never mind!$\""
+  },
+  "label": "MagmaHideout_2F_2R_Text_Grunt7Intro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MagmaHideout_2F_2R/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Route111_OldLadysRestStop_Text_TakeYourTimeRestUp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111_OldLadysRestStop/scripts.inc",
+    "sha1": "8f697cdc3624ba6bc26589cc0a0d5649ae645122"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111_OldLadysRestStop/scripts.inc",
+    "rawScript": ".string \"That's right.\\n\"\n\t.string \"Take your time and rest up!$\""
+  },
+  "label": "Route111_OldLadysRestStop_Text_TakeYourTimeRestUp",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route111_OldLadysRestStop/scripts.inc",
+  "references": {}
+}

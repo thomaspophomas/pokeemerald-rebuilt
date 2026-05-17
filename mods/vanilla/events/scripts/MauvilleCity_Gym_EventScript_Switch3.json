@@ -1,0 +1,26 @@
+{
+  "id": "MauvilleCity_Gym_EventScript_Switch3",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "sha1": "ba2cd4a14af6a43f9221cd58f6a4a0299a51ce6c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_set FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_SwitchDoNothing\n\tgoto_if_eq VAR_MAUVILLE_GYM_STATE, 3, MauvilleCity_Gym_EventScript_SwitchDoNothing\n\tsetvar VAR_MAUVILLE_GYM_STATE, 3\n\tsetvar VAR_0x8004, 2\n\tgoto MauvilleCity_Gym_EventScript_PressFloorSwitch\n\tend"
+  },
+  "label": "MauvilleCity_Gym_EventScript_Switch3",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_MAUVILLE_GYM"
+    ],
+    "vars": [
+      "VAR_MAUVILLE_GYM_STATE"
+    ]
+  }
+}

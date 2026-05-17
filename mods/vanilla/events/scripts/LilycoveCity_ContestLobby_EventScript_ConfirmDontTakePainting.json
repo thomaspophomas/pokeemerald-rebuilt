@@ -1,0 +1,24 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_ConfirmDontTakePainting",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": "msgbox LilycoveCity_ContestLobby_Text_TakeHomeButIdLikeToTakeToMuseum, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, LilycoveCity_ContestLobby_EventScript_TakePaintingToMuseum\n\tmsgbox LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_CONTEST_LOBBY_ARTIST, LilycoveCity_ContestLobby_Movement_ArtistExit\n\twaitmovement 0\n\tsetvar VAR_LILYCOVE_CONTEST_LOBBY_STATE, 0\n\tremoveobject LOCALID_CONTEST_LOBBY_ARTIST\n\treleaseall\n\tend"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_ConfirmDontTakePainting",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LILYCOVE_CONTEST_LOBBY_STATE",
+      "VAR_RESULT"
+    ]
+  }
+}

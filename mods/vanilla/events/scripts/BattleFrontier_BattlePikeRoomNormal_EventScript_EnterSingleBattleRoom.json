@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomNormal_EventScript_EnterSingleBattleRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "sha1": "54c1e0ee021a3a91375f3b05c8682c17ed095aa9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "rawScript": "lockall\n\tdelay 16\n\tapplymovement LOCALID_PIKE_ROOM_NPC_1, BattleFrontier_BattlePikeRoomNormal_Movement_ApproachPlayer\n\twaitmovement 0\n\tpike_gettrainerintro 0\n\tmsgbox gStringVar4, MSGBOX_DEFAULT\n\twaitmessage\n\tclosemessage\n\treleaseall\n\tsetvar VAR_0x8004, SPECIAL_BATTLE_PIKE_SINGLE\n\tsetvar VAR_0x8005, 0\n\tspecial DoSpecialTrainerBattle\n\tswitch VAR_RESULT\n\tcase 1, BattleFrontier_BattlePikeRoomNormal_EventScript_WonSingleBattle"
+  },
+  "label": "BattleFrontier_BattlePikeRoomNormal_EventScript_EnterSingleBattleRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

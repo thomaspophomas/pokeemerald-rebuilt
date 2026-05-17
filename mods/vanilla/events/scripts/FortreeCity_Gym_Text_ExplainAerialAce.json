@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Gym_Text_ExplainAerialAce",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/scripts.inc",
+    "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Gym/scripts.inc",
+    "rawScript": ".string \"TM40 contains AERIAL ACE.\\p\"\n\t.string \"Its speed\u2026\\n\"\n\t.string \"No POK\u00e9MON should be able to avoid it.\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026$\""
+  },
+  "label": "FortreeCity_Gym_Text_ExplainAerialAce",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_Gym/scripts.inc",
+  "references": {}
+}

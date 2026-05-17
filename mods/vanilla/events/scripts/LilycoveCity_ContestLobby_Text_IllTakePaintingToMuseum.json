@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestLobby_Text_IllTakePaintingToMuseum",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": ".string \"What, really? Then, sure, I will take\\n\"\n\t.string \"this painting there right now.\\p\"\n\t.string \"I'll give it a proper title, too.\\p\"\n\t.string \"I hope they'll like it and consider\\n\"\n\t.string \"exhibiting this.\\p\"\n\t.string \"Please check if they did accept this.\\n\"\n\t.string \"Thank you!$\""
+  },
+  "label": "LilycoveCity_ContestLobby_Text_IllTakePaintingToMuseum",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {}
+}

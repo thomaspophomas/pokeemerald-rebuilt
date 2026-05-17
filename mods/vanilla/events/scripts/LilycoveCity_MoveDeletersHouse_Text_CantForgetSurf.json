@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_MoveDeletersHouse_Text_CantForgetSurf",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_MoveDeletersHouse/scripts.inc",
+    "sha1": "607d0f5a35fe588b33f31bdc4804af7a61c537bb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_MoveDeletersHouse/scripts.inc",
+    "rawScript": ".string \"Hm!\\p\"\n\t.string \"Your {STR_VAR_1} doesn't seem willing\\n\"\n\t.string \"to forget SURF.$\""
+  },
+  "label": "LilycoveCity_MoveDeletersHouse_Text_CantForgetSurf",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_MoveDeletersHouse/scripts.inc",
+  "references": {}
+}

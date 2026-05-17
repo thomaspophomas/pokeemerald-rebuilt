@@ -1,0 +1,19 @@
+{
+  "id": "ContestHall_EventScript_ShowContestMonPic",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": "special BufferContestTrainerAndMonNames\n\taddvar VAR_0x8006, 1\n\tbuffernumberstring STR_VAR_2, VAR_0x8006\n\tlockall\n\tapplymovement VAR_0x800B, ContestHall_Movement_ContestantDelay32\n\twaitmovement 0\n\treleaseall\n\tcall ContestHall_EventScript_TryWaitForLink\n\tcall ContestHall_EventScript_CheckIfContestWithRSPlayer\n\taddobject LOCALID_CONTEST_POKEBALL\n\tplayse SE_LEDGE\n\tlockall\n\tapplymovement VAR_0x800B, ContestHall_Movement_ContestantDelay32\n\twaitmovement 0\n\treleaseall\n\taddvar VAR_0x8006, -1\n\tplayse SE_BALL_OPEN\n\tspecial ShowContestEntryMonPic\n\tcall ContestHall_EventScript_EntryXTrainersMon\n\treturn"
+  },
+  "label": "ContestHall_EventScript_ShowContestMonPic",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {}
+}

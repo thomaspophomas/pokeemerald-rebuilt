@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomNormal_EventScript_SetCurtainTilesLittleClosed",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "sha1": "54c1e0ee021a3a91375f3b05c8682c17ed095aa9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "rawScript": "setmetatile 4, 1, METATILE_BattlePike_Curtain_Stage2_Tile0, TRUE\n\tsetmetatile 3, 2, METATILE_BattlePike_Curtain_Stage2_Tile1, TRUE\n\tsetmetatile 4, 2, METATILE_BattlePike_Curtain_Stage2_Tile2, TRUE\n\tsetmetatile 5, 2, METATILE_BattlePike_Curtain_Stage2_Tile3, TRUE\n\tsetmetatile 3, 3, METATILE_BattlePike_Curtain_Stage2_Tile4, TRUE\n\tsetmetatile 4, 3, METATILE_BattlePike_Curtain_Stage2_Tile5, FALSE\n\tsetmetatile 5, 3, METATILE_BattlePike_Curtain_Stage2_Tile6, TRUE\n\tspecial DrawWholeMapView\n\treturn"
+  },
+  "label": "BattleFrontier_BattlePikeRoomNormal_EventScript_SetCurtainTilesLittleClosed",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+  "references": {}
+}

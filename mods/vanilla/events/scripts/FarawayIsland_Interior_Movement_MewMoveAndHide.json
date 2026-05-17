@@ -1,0 +1,19 @@
+{
+  "id": "FarawayIsland_Interior_Movement_MewMoveAndHide",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FarawayIsland_Interior/scripts.inc",
+    "sha1": "748f9f309b0dbfe85cb833f24aeceac469102437"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FarawayIsland_Interior/scripts.inc",
+    "rawScript": "walk_up\n\twalk_up\n\twalk_up\n\twalk_in_place_faster_down\n\tset_invisible\n\tstep_end"
+  },
+  "label": "FarawayIsland_Interior_Movement_MewMoveAndHide",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/FarawayIsland_Interior/scripts.inc",
+  "references": {}
+}

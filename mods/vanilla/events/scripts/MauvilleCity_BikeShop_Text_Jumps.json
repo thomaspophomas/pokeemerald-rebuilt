@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_BikeShop_Text_Jumps",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "sha1": "31396febb84a2b48608ca32d5a0dd0de865faf26"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "rawScript": ".string \"Press the B Button and the + Control\\n\"\n\t.string \"Pad at the same time to jump.\\p\"\n\t.string \"Press the + Control Pad to the side\\n\"\n\t.string \"to jump sideways.\\p\"\n\t.string \"Press it backwards to make the BIKE\\n\"\n\t.string \"change directions while jumping.\\p\"\n\t.string \"Want to read a different page?$\""
+  },
+  "label": "MauvilleCity_BikeShop_Text_Jumps",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+  "references": {}
+}

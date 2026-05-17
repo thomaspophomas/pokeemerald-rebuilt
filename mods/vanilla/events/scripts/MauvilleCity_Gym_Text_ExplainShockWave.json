@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Gym_Text_ExplainShockWave",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "sha1": "ba2cd4a14af6a43f9221cd58f6a4a0299a51ce6c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "rawScript": ".string \"That TM34 there contains SHOCK WAVE.\\p\"\n\t.string \"It's a trustworthy move that never\\n\"\n\t.string \"misses! You can count on it!\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026$\""
+  },
+  "label": "MauvilleCity_Gym_Text_ExplainShockWave",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_Gym/scripts.inc",
+  "references": {}
+}

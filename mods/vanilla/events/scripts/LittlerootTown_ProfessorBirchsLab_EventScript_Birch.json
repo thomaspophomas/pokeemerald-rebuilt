@@ -1,0 +1,27 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_EventScript_Birch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 5, LittlerootTown_ProfessorBirchsLab_EventScript_CanHaveAnyOneOfRarePokemon\n\tgoto_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_ProfessorBirchsLab_EventScript_GrassyPatchWaiting\n\tgoto_if_unset FLAG_HAS_MATCH_CALL, LittlerootTown_ProfessorBirchsLab_EventScript_TryRatePokedexOrRegister\n\tgoto_if_unset FLAG_ENABLE_PROF_BIRCH_MATCH_CALL, EventScript_RegisterProfBirch\n\tgoto LittlerootTown_ProfessorBirchsLab_EventScript_TryRatePokedexOrRegister\n\tend"
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_EventScript_Birch",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_ENABLE_PROF_BIRCH_MATCH_CALL",
+      "FLAG_HAS_MATCH_CALL"
+    ],
+    "vars": [
+      "VAR_DEX_UPGRADE_JOHTO_STARTER_STATE"
+    ]
+  }
+}

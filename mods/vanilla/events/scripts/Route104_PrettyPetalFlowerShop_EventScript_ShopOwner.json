@@ -1,0 +1,27 @@
+{
+  "id": "Route104_PrettyPetalFlowerShop_EventScript_ShopOwner",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc",
+    "sha1": "85421f76af3e2f834a13d611b9a986423e5c93b8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_TEMP_1, Route104_PrettyPetalFlowerShop_EventScript_SellDecorations\n\tmsgbox Route104_PrettyPetalFlowerShop_Text_ThisIsPrettyPetalFlowerShop, MSGBOX_DEFAULT\n\tgoto_if_set FLAG_MET_PRETTY_PETAL_SHOP_OWNER, Route104_PrettyPetalFlowerShop_EventScript_AlreadyMet\n\tsetflag FLAG_MET_PRETTY_PETAL_SHOP_OWNER\n\tmsgbox Route104_PrettyPetalFlowerShop_Text_IntroLearnAboutBerries, MSGBOX_YESNO\n\tcall_if_eq VAR_RESULT, YES, Route104_PrettyPetalFlowerShop_EventScript_ExplainBerries\n\tcall_if_eq VAR_RESULT, NO, Route104_PrettyPetalFlowerShop_EventScript_DontExplainBerries\n\trelease\n\tend"
+  },
+  "label": "Route104_PrettyPetalFlowerShop_EventScript_ShopOwner",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_PRETTY_PETAL_SHOP_OWNER",
+      "FLAG_TEMP_1"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

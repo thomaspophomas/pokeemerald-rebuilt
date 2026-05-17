@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleFactoryBattleRoom_Text_HarderLookThanLastTime",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+    "sha1": "d6c9d92d97f61a06b3670b7d509844f3bc902eb3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+    "rawScript": ".string \"NOLAND: Hey, hey! How's it going?\\n\"\n\t.string \"You keeping up with your studies?\\p\"\n\t.string \"\u2026Oh?\\p\"\n\t.string \"You've taken on a harder look than\\n\"\n\t.string \"the last time I saw you.\\p\"\n\t.string \"Now, this should be fun!\\n\"\n\t.string \"I'm getting excited, hey!$\""
+  },
+  "label": "BattleFrontier_BattleFactoryBattleRoom_Text_HarderLookThanLastTime",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+  "references": {}
+}

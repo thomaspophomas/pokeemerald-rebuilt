@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleArenaCorridor_Text_PleaseStepIn",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaCorridor/scripts.inc",
+    "sha1": "6c50fa8f26f23235a25e4a509732939b19558eaa"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaCorridor/scripts.inc",
+    "rawScript": ".string \"Your battles shall be waged in\\n\"\n\t.string \"the next room. Please step in!$\""
+  },
+  "label": "BattleFrontier_BattleArenaCorridor_Text_PleaseStepIn",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaCorridor/scripts.inc",
+  "references": {}
+}

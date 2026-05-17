@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_BrendansHouse_1F_Movement_BrendanApproachPlayer1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "sha1": "b92e18aeb34c3856db794aa81beeec7f0f0de717"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "rawScript": "walk_up\n\twalk_up\n\twalk_up\n\tstep_end"
+  },
+  "label": "LittlerootTown_BrendansHouse_1F_Movement_BrendanApproachPlayer1",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+  "references": {}
+}

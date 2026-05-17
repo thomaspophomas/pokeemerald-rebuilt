@@ -1,0 +1,34 @@
+{
+  "id": "MossdeepCity_Gym_SetGymTrainers",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/set_gym_trainers.inc",
+    "sha1": "90019f7a2097712cc57c824c9118423a5a8171bd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/set_gym_trainers.inc",
+    "rawScript": "settrainerflag TRAINER_PRESTON\n\tsettrainerflag TRAINER_VIRGIL\n\tsettrainerflag TRAINER_BLAKE\n\tsettrainerflag TRAINER_HANNAH\n\tsettrainerflag TRAINER_SAMANTHA\n\tsettrainerflag TRAINER_MAURA\n\tsettrainerflag TRAINER_SYLVIA\n\tsettrainerflag TRAINER_NATE\n\tsettrainerflag TRAINER_KATHLEEN\n\tsettrainerflag TRAINER_CLIFFORD\n\tsettrainerflag TRAINER_MACEY\n\tsettrainerflag TRAINER_NICHOLAS\n\treturn"
+  },
+  "label": "MossdeepCity_Gym_SetGymTrainers",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/scripts/set_gym_trainers.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_BLAKE",
+      "TRAINER_CLIFFORD",
+      "TRAINER_HANNAH",
+      "TRAINER_KATHLEEN",
+      "TRAINER_MACEY",
+      "TRAINER_MAURA",
+      "TRAINER_NATE",
+      "TRAINER_NICHOLAS",
+      "TRAINER_PRESTON",
+      "TRAINER_SAMANTHA",
+      "TRAINER_SYLVIA",
+      "TRAINER_VIRGIL"
+    ]
+  }
+}

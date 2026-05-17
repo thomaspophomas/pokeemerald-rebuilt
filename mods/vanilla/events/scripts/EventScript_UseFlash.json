@@ -1,0 +1,19 @@
+{
+  "id": "EventScript_UseFlash",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/flash.inc",
+    "sha1": "d373ddbcc95d6717339b0fa89f176b9f7ee32a4e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/flash.inc",
+    "rawScript": "animateflash 1\n\tsetflashlevel 1\n\tend"
+  },
+  "label": "EventScript_UseFlash",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/flash.inc",
+  "references": {}
+}

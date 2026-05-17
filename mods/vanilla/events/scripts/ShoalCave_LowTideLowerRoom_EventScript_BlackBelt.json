@@ -1,0 +1,29 @@
+{
+  "id": "ShoalCave_LowTideLowerRoom_EventScript_BlackBelt",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ShoalCave_LowTideLowerRoom/scripts.inc",
+    "sha1": "ecff8c79aa9294e9c1a40270189212e7063f8d19"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ShoalCave_LowTideLowerRoom/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_FOCUS_BAND, ShoalCave_LowTideLowerRoom_EventScript_ReceivedFocusBand\n\tmsgbox ShoalCave_LowTideLowerRoom_Text_CanOvercomeColdWithFocus, MSGBOX_DEFAULT\n\tgiveitem ITEM_FOCUS_BAND\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_RECEIVED_FOCUS_BAND\n\trelease\n\tend"
+  },
+  "label": "ShoalCave_LowTideLowerRoom_EventScript_BlackBelt",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/ShoalCave_LowTideLowerRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_FOCUS_BAND"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_FOCUS_BAND"
+    ]
+  }
+}

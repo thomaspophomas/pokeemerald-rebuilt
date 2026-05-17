@@ -1,0 +1,19 @@
+{
+  "id": "Route110_SeasideCyclingRoadSouthEntrance_Text_GoAllOutOnCyclingRoad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.inc",
+    "sha1": "76a2b9429a0b6a610f3225434b5a09de5ae8146a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.inc",
+    "rawScript": ".string \"On CYCLING ROAD, you can go all out\\n\"\n\t.string \"and cycle as fast as you'd like.\\p\"\n\t.string \"It feels great to go that fast, but try\\n\"\n\t.string \"not to crash into anyone!$\""
+  },
+  "label": "Route110_SeasideCyclingRoadSouthEntrance_Text_GoAllOutOnCyclingRoad",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Text_WailmerWatching",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/scripts.inc",
+    "sha1": "33f0f7f83a475484aaca395542c6bd65a6f2dd45"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity/scripts.inc",
+    "rawScript": ".string \"Around MOSSDEEP, you can see wild\\n\"\n\t.string \"WAILMER.\\p\"\n\t.string \"It's called, uh\u2026\\n\"\n\t.string \"What was it now\u2026\\p\"\n\t.string \"WAI, WAI, WAI\u2026\\p\"\n\t.string \"WAILMER watching!$\""
+  },
+  "label": "MossdeepCity_Text_WailmerWatching",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity/scripts.inc",
+  "references": {}
+}

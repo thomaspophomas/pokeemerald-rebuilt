@@ -1,0 +1,19 @@
+{
+  "id": "AquaHideout_B2F_Text_Grunt6PostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B2F/scripts.inc",
+    "sha1": "2422b13cc4d746236ea4f5c8dbbc6ea26d3d8e36"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_B2F/scripts.inc",
+    "rawScript": ".string \"That reminds me\u2026 I can't remember\\n\"\n\t.string \"where I put the MASTER BALL.\\p\"\n\t.string \"If I fail to guard it, our BOSS will\\n\"\n\t.string \"chew me out\u2026$\""
+  },
+  "label": "AquaHideout_B2F_Text_Grunt6PostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AquaHideout_B2F/scripts.inc",
+  "references": {}
+}

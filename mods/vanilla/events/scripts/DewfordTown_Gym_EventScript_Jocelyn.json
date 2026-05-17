@@ -1,0 +1,23 @@
+{
+  "id": "DewfordTown_Gym_EventScript_Jocelyn",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Gym/scripts.inc",
+    "sha1": "595ba5581d9eb698f4762f9b34da6e4f6c2a7a55"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Gym/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_JOCELYN, DewfordTown_Gym_Text_JocelynIntro, DewfordTown_Gym_Text_JocelynDefeat, DewfordTown_Gym_EventScript_JocelynBrightenRoom\n\tmsgbox DewfordTown_Gym_Text_JocelynPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "DewfordTown_Gym_EventScript_Jocelyn",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DewfordTown_Gym/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_JOCELYN"
+    ]
+  }
+}

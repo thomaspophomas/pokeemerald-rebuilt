@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleFactoryLobby_Text_AwardBattlePoints",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+    "sha1": "292da35ee750dbef6f890d691b62400b747b2d83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+    "rawScript": ".string \"In recognition of your wealth of\\n\"\n\t.string \"knowledge and keen intelligence,\\l\"\n\t.string \"we award you these Battle Point(s).$\""
+  },
+  "label": "BattleFrontier_BattleFactoryLobby_Text_AwardBattlePoints",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+  "references": {}
+}

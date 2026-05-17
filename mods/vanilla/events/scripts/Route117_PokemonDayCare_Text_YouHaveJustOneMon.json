@@ -1,0 +1,19 @@
+{
+  "id": "Route117_PokemonDayCare_Text_YouHaveJustOneMon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/day_care.inc",
+    "sha1": "b807399ab522de3ba938194e85f890a343362752"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/day_care.inc",
+    "rawScript": ".string \"Oh? But you have just one\\n\"\n\t.string \"POK\u00e9MON.\\p\"\n\t.string \"Come back another time.$\""
+  },
+  "label": "Route117_PokemonDayCare_Text_YouHaveJustOneMon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/day_care.inc",
+  "references": {}
+}

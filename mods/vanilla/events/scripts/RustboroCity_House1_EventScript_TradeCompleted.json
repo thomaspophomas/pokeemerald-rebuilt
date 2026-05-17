@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_House1_EventScript_TradeCompleted",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_House1/scripts.inc",
+    "sha1": "40e0730e3208fa5cccc515a948ef43358100668f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_House1/scripts.inc",
+    "rawScript": "msgbox RustboroCity_House1_Text_AnyPokemonCanBeCute, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "RustboroCity_House1_EventScript_TradeCompleted",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_House1/scripts.inc",
+  "references": {}
+}

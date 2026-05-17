@@ -1,0 +1,23 @@
+{
+  "id": "LavaridgeTown_EventScript_SetRivalPos",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": "setobjectxyperm LOCALID_LAVARIDGE_RIVAL, 11, 9\n\tsetobjectxyperm LOCALID_LAVARIDGE_RIVAL_ON_BIKE, 9, 8\n\tsetobjectmovementtype LOCALID_LAVARIDGE_RIVAL_ON_BIKE, MOVEMENT_TYPE_FACE_UP\n\tclearflag FLAG_HIDE_LAVARIDGE_TOWN_RIVAL\n\treturn"
+  },
+  "label": "LavaridgeTown_EventScript_SetRivalPos",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_LAVARIDGE_TOWN_RIVAL"
+    ]
+  }
+}

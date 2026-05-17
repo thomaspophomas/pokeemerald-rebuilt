@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "sha1": "4f73bd77d8715e7ac12ff1ac731985eaf75ecd5e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "rawScript": ".string \"WALLACE: I'm sorry, but\u2026\\p\"\n\t.string \"From here on, only those TRAINERS who\\n\"\n\t.string \"have become CHAMPIONS may enter.\\p\"\n\t.string \"You'll have to wait outside with\\n\"\n\t.string \"PROF. BIRCH.$\""
+  },
+  "label": "EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+  "references": {}
+}

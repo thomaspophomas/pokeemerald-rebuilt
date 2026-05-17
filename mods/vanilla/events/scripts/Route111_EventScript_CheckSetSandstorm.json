@@ -1,0 +1,24 @@
+{
+  "id": "Route111_EventScript_CheckSetSandstorm",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": "getplayerxy VAR_TEMP_0, VAR_TEMP_1\n\tgoto_if_lt VAR_TEMP_1, 34, Route111_EventScript_EndCheckSetSandstorm\n\tgoto_if_gt VAR_TEMP_1, 107, Route111_EventScript_EndCheckSetSandstorm\n\tgoto_if_gt VAR_TEMP_1, 72, Route111_EventScript_SetSandstorm\n\tgoto_if_gt VAR_TEMP_0, 2000, Route111_EventScript_EndCheckSetSandstorm\n\tgoto_if_lt VAR_TEMP_0, 8, Route111_EventScript_EndCheckSetSandstorm"
+  },
+  "label": "Route111_EventScript_CheckSetSandstorm",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0",
+      "VAR_TEMP_1"
+    ]
+  }
+}

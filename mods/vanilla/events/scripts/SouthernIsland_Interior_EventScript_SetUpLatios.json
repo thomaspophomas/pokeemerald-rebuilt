@@ -1,0 +1,24 @@
+{
+  "id": "SouthernIsland_Interior_EventScript_SetUpLatios",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SouthernIsland_Interior/scripts.inc",
+    "sha1": "6ed339e41064219d030f00f9c7e62ccbfde31212"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SouthernIsland_Interior/scripts.inc",
+    "rawScript": "setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_LATIOS\n\tsetvar VAR_TEMP_4, SPECIES_LATIOS\n\treturn"
+  },
+  "label": "SouthernIsland_Interior_EventScript_SetUpLatios",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SouthernIsland_Interior/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_OBJ_GFX_ID_1",
+      "VAR_TEMP_4"
+    ]
+  }
+}

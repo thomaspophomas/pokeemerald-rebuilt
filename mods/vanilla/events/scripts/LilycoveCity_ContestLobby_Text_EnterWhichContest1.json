@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestLobby_Text_EnterWhichContest1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": ".string \"Which CONTEST would you like to enter?$\""
+  },
+  "label": "LilycoveCity_ContestLobby_Text_EnterWhichContest1",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {}
+}

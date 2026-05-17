@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideWest_Text_ScaredOfPikeBecauseSeviper",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": ".string \"I'm scared of going into the BATTLE\\n\"\n\t.string \"PIKE because of SEVIPER\u2026\\p\"\n\t.string \"B-but I came all the way here, so I will\\n\"\n\t.string \"try to conquer everything!\\l\"\n\t.string \"\u2026Shudder\u2026$\""
+  },
+  "label": "BattleFrontier_OutsideWest_Text_ScaredOfPikeBecauseSeviper",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Route116_EventScript_RematchKaren",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116/scripts.inc",
+    "sha1": "414d7bb5c4246d6317dd973dc816983566be8cc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route116/scripts.inc",
+    "rawScript": "trainerbattle_rematch TRAINER_KAREN_1, Route116_Text_KarenRematchIntro, Route116_Text_KarenRematchDefeat\n\tmsgbox Route116_Text_KarenPostRematch, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route116_EventScript_RematchKaren",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route116/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_KAREN_1"
+    ]
+  }
+}

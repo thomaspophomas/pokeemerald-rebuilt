@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_1F_Text_WhatColorDidTheySay",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "sha1": "b92e18aeb34c3856db794aa81beeec7f0f0de717"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "rawScript": ".string \"MOM: {PLAYER}, did you catch that?\\p\"\n\t.string \"What color did the announcer say\\n\"\n\t.string \"that POK\u00e9MON was?$\""
+  },
+  "label": "PlayersHouse_1F_Text_WhatColorDidTheySay",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+  "references": {}
+}

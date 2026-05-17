@@ -1,0 +1,23 @@
+{
+  "id": "Route109_EventScript_DeliveredDevonGoods",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route109/scripts.inc",
+    "sha1": "7b7ddbfc58bd8a1cc6ebeaa13e2d754df362f425"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route109/scripts.inc",
+    "rawScript": "message Route109_Text_BrineyWhereAreWeBound\n\twaitmessage\n\tmultichoicedefault 21, 8, MULTI_BRINEY_OFF_DEWFORD, 1, FALSE\n\tswitch VAR_RESULT\n\tcase 0, Route109_EventScript_SailToDewford\n\tcase 1, Route109_EventScript_ChoseNotToSail\n\tcase MULTI_B_PRESSED, Route109_EventScript_ChoseNotToSail\n\tend"
+  },
+  "label": "Route109_EventScript_DeliveredDevonGoods",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route109/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

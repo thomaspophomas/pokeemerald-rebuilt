@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Text_MayHaveYouGoneToBattleFrontier",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": ".string \"MAY: Oh, hi, {PLAYER}{KUN}!\\n\"\n\t.string \"Have you gone to that place,\\l\"\n\t.string \"the BATTLE FRONTIER?$\""
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Text_MayHaveYouGoneToBattleFrontier",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

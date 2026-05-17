@@ -1,0 +1,19 @@
+{
+  "id": "ArtisanCave_1F_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ArtisanCave_1F/scripts.inc",
+    "sha1": "f73052173a4d6bfc5063a4677a7e2492460d0956"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ArtisanCave_1F/scripts.inc",
+    "rawScript": ".byte 0"
+  },
+  "label": "ArtisanCave_1F_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/ArtisanCave_1F/scripts.inc",
+  "references": {}
+}

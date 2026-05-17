@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_Text_ExplainLinkMultisChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": ".string \"The BATTLE TOWER's MULTI BATTLE\\n\"\n\t.string \"ROOMS are facilities for conducting\\l\"\n\t.string \"MULTI BATTLES with a friend.\\p\"\n\t.string \"You must link with your friend using\\n\"\n\t.string \"Wireless Adapters or a Game Boy\\l\"\n\t.string \"Advance Game Link cable.\\p\"\n\t.string \"You must partner with your friend and\\n\"\n\t.string \"enter two different kinds of POK\u00e9MON.\\p\"\n\t.string \"There are many MULTI BATTLE ROOMS\\n\"\n\t.string \"in the BATTLE TOWER for team battles.\\p\"\n\t.string \"In a MULTI BATTLE ROOM, seven\\n\"\n\t.string \"tag teams await you and your friend\\l\"\n\t.string \"to make a tag-team challenge.\\p\"\n\t.string \"If you manage to defeat all seven\\n\"\n\t.string \"teams, you will earn Battle Points.\\p\"\n\t.string \"Please beware that unlike other ROOMS,\\n\"\n\t.string \"you may not interrupt your challenge.\\p\"\n\t.string \"Once you start, you must battle seven\\n\"\n\t.string \"MULTI BATTLES in a row nonstop.$\""
+  },
+  "label": "BattleFrontier_BattleTowerLobby_Text_ExplainLinkMultisChallenge",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {}
+}

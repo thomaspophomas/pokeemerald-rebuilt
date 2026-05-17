@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_GymSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"MAUVILLE CITY POK\u00e9MON GYM\\n\"\n\t.string \"LEADER: WATTSON\\l\"\n\t.string \"\u201cThe cheerfully electrifying man!\u201d$\""
+  },
+  "label": "MauvilleCity_Text_GymSign",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

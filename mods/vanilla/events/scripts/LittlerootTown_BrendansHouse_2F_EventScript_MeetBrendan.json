@@ -1,0 +1,29 @@
+{
+  "id": "LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendan",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+    "sha1": "e2d021d5a56c7a155294e7f5fcba3be133f71b33"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+    "rawScript": "delay 10\n\taddobject LOCALID_RIVALS_HOUSE_2F_RIVAL\n\tapplymovement LOCALID_RIVALS_HOUSE_2F_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanEnters\n\twaitmovement 0\n\tplayse SE_PIN\n\tapplymovement LOCALID_RIVALS_HOUSE_2F_RIVAL, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_RIVALS_HOUSE_2F_RIVAL, Common_Movement_Delay48\n\twaitmovement 0\n\tdelay 10\n\tplaybgm MUS_ENCOUNTER_BRENDAN, TRUE\n\tcall_if_eq VAR_FACING, DIR_NORTH, LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanNorth\n\tcall_if_eq VAR_FACING, DIR_SOUTH, LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanSouth\n\tcall_if_eq VAR_FACING, DIR_WEST, LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanWest\n\tcall_if_eq VAR_FACING, DIR_EAST, LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanEast\n\tsetvar VAR_LITTLEROOT_RIVAL_STATE, 3\n\tsetflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL\n\tclearflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_BEDROOM\n\tsetvar VAR_LITTLEROOT_TOWN_STATE, 1\n\tsavebgm MUS_DUMMY\n\tfadedefaultbgm\n\treleaseall\n\tend"
+  },
+  "label": "LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendan",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL",
+      "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_BEDROOM"
+    ],
+    "vars": [
+      "VAR_FACING",
+      "VAR_LITTLEROOT_RIVAL_STATE",
+      "VAR_LITTLEROOT_TOWN_STATE"
+    ]
+  }
+}

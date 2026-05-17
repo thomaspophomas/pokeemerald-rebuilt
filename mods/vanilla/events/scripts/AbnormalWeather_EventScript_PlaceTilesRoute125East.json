@@ -1,0 +1,19 @@
+{
+  "id": "AbnormalWeather_EventScript_PlaceTilesRoute125East",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/abnormal_weather.inc",
+    "sha1": "8bf77729e5d8e5ebd0812ce736eaf3712ec673f3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/abnormal_weather.inc",
+    "rawScript": "setmetatile 53, 18, METATILE_General_RoughWater, FALSE\n\tsetmetatile 54, 18, METATILE_General_RoughWater, FALSE\n\tsetmetatile 52, 19, METATILE_General_RoughWater, FALSE\n\tsetmetatile 53, 19, METATILE_General_RoughDeepWater, FALSE\n\tsetmetatile 54, 19, METATILE_General_RoughDeepWater, FALSE\n\tsetmetatile 55, 19, METATILE_General_RoughWater, FALSE\n\tsetmetatile 52, 20, METATILE_General_RoughWater, FALSE\n\tsetmetatile 53, 20, METATILE_General_RoughDeepWater, FALSE\n\tsetmetatile 54, 20, METATILE_General_RoughDeepWater, FALSE\n\tsetmetatile 55, 20, METATILE_General_RoughWater, FALSE\n\tsetmetatile 53, 21, METATILE_General_RoughWater, FALSE\n\tsetmetatile 54, 21, METATILE_General_RoughWater, FALSE\n\treturn"
+  },
+  "label": "AbnormalWeather_EventScript_PlaceTilesRoute125East",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/abnormal_weather.inc",
+  "references": {}
+}

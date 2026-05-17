@@ -1,0 +1,19 @@
+{
+  "id": "Route111_WinstrateFamilysHouse_Text_LikeYouToHaveMachoBrace",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111_WinstrateFamilysHouse/scripts.inc",
+    "sha1": "263fea63e58597b7384c5c9ba935a901a00611b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111_WinstrateFamilysHouse/scripts.inc",
+    "rawScript": ".string \"We use this MACHO BRACE to more\\n\"\n\t.string \"effectively strengthen our POK\u00e9MON\\l\"\n\t.string \"in training.\\p\"\n\t.string \"Since you've beaten all of us here,\\n\"\n\t.string \"I don't know if you need it, but we\\l\"\n\t.string \"would like you to have our MACHO BRACE.$\""
+  },
+  "label": "Route111_WinstrateFamilysHouse_Text_LikeYouToHaveMachoBrace",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route111_WinstrateFamilysHouse/scripts.inc",
+  "references": {}
+}

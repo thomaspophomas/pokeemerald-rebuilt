@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestHall_Text_RaisedMonToBeSmart",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "sha1": "9d258f56144116075b6ffd125cc9edb7fc292736"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "rawScript": ".string \"I've spent many a year, and all my\\n\"\n\t.string \"wisdom besides, raising this POK\u00e9MON\\l\"\n\t.string \"to be smart.\\p\"\n\t.string \"It won't be easily bested by some\\n\"\n\t.string \"young pup's POK\u00e9MON.\\p\"\n\t.string \"My dear wife, are you seeing this?$\""
+  },
+  "label": "LilycoveCity_ContestHall_Text_RaisedMonToBeSmart",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+  "references": {}
+}

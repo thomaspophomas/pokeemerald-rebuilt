@@ -1,0 +1,26 @@
+{
+  "id": "MauvilleCity_GameCorner_EventScript_SlotMachine9",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "sha1": "3db7cd216c9a2c35e8176ef8b4a1d9ec68649c7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "rawScript": "lockall\n\tcheckitem ITEM_COIN_CASE\n\tgoto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoCoinCase\n\tsetvar VAR_0x8004, 9\n\tspecialvar VAR_RESULT, GetSlotMachineId\n\tplayslotmachine VAR_RESULT\n\treleaseall\n\tend"
+  },
+  "label": "MauvilleCity_GameCorner_EventScript_SlotMachine9",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_COIN_CASE"
+    ]
+  }
+}

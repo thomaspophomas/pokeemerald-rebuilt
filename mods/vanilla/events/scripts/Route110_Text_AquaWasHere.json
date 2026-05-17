@@ -1,0 +1,19 @@
+{
+  "id": "Route110_Text_AquaWasHere",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/scripts.inc",
+    "sha1": "ee9846425d6a96c03ac988decb3c48ffbd098f22"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110/scripts.inc",
+    "rawScript": ".string \"\u201cTEAM AQUA was here!\u201d\\p\"\n\t.string \"Someone painted that onto this sign,\\n\"\n\t.string \"but then someone else painted over it.\\p\"\n\t.string \"\u201cTEAM MAGMA rules!\u201d is what it\\n\"\n\t.string \"says now.$\""
+  },
+  "label": "Route110_Text_AquaWasHere",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110/scripts.inc",
+  "references": {}
+}

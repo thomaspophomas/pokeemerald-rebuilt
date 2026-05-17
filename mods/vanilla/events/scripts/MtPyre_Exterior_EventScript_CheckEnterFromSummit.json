@@ -1,0 +1,24 @@
+{
+  "id": "MtPyre_Exterior_EventScript_CheckEnterFromSummit",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Exterior/scripts.inc",
+    "sha1": "9d8222c8fa9a5f582c6d5ecafe1ba433be250e54"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Exterior/scripts.inc",
+    "rawScript": "getplayerxy VAR_TEMP_0, VAR_TEMP_1\n\tgoto_if_lt VAR_TEMP_1, 12, MtPyre_Exterior_EventScript_EnterFromSummit\n\treturn"
+  },
+  "label": "MtPyre_Exterior_EventScript_CheckEnterFromSummit",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtPyre_Exterior/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0",
+      "VAR_TEMP_1"
+    ]
+  }
+}

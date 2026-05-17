@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_RandallPostBadge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"Whomever you beat, and whomever you\\n\"\n\t.string \"may lose to, you never shirk from\\l\"\n\t.string \"training yourself and your POK\u00e9MON.\\p\"\n\t.string \"That's what I think being a\\n\"\n\t.string \"GYM LEADER is all about.$\""
+  },
+  "label": "PetalburgCity_Gym_Text_RandallPostBadge",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": "BattleFrontier_OutsideWest_EventScript_BoardFerry",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": "closemessage\n\tapplymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tdelay 30\n\thideobjectat LOCALID_FRONTIER_FERRY_ATTENDANT, MAP_BATTLE_FRONTIER_OUTSIDE_WEST\n\tsetvar VAR_0x8004, LOCALID_FRONTIER_SS_TIDAL\n\tcall Common_EventScript_FerryDepartIsland\n\treturn"
+  },
+  "label": "BattleFrontier_OutsideWest_EventScript_BoardFerry",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_OUTSIDE_WEST"
+    ]
+  }
+}

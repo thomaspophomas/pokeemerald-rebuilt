@@ -1,0 +1,30 @@
+{
+  "id": "MossdeepCity_SpaceCenter_1F_EventScript_Grunt2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "sha1": "a0cf82d2df089035fb81d02a013736aab95a13d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F, MossdeepCity_SpaceCenter_1F_EventScript_Grunt2Defeated\n\tmsgbox MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro, MSGBOX_DEFAULT\n\ttrainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_2, MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat\n\tsetflag FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F\n\tcopyobjectxytoperm LOCALID_SPACE_CENTER_1F_STAIR_GRUNT\n\tswitch VAR_FACING\n\tcase DIR_WEST, MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsWest\n#ifdef BUGFIX\n\tcase DIR_EAST, MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsEast\n#else\n\tcase DIR_WEST, MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsEast\n#endif\n\tapplymovement LOCALID_SPACE_CENTER_1F_STAIR_GRUNT, MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairs\n\twaitmovement 0\n\tsetvar VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 2\n\trelease\n\tend"
+  },
+  "label": "MossdeepCity_SpaceCenter_1F_EventScript_Grunt2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F"
+    ],
+    "vars": [
+      "VAR_FACING",
+      "VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE"
+    ],
+    "trainers": [
+      "TRAINER_GRUNT_SPACE_CENTER_2"
+    ]
+  }
+}

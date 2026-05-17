@@ -1,0 +1,23 @@
+{
+  "id": "Route110_TrickHousePuzzle2_EventScript_Ted",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle2/scripts.inc",
+    "sha1": "41c38a9d944fbd502fad75a909365962a336ea0f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle2/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_TED, Route110_TrickHousePuzzle2_Text_TedIntro, Route110_TrickHousePuzzle2_Text_TedDefeat\n\tmsgbox Route110_TrickHousePuzzle2_Text_TedPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route110_TrickHousePuzzle2_EventScript_Ted",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHousePuzzle2/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_TED"
+    ]
+  }
+}

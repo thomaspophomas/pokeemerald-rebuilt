@@ -1,0 +1,19 @@
+{
+  "id": "BerryBlender_EventScript_Blender1CaseFull",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": "msgbox BerryBlender_Text_PokeblockCaseIsFull, MSGBOX_DEFAULT\n\treleaseall\n\tend"
+  },
+  "label": "BerryBlender_EventScript_Blender1CaseFull",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MagmaHideout_3F_1R_Text_Grunt16Intro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_3F_1R/scripts.inc",
+    "sha1": "474fc38ac5a7f662f15777828471aa95dd813607"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_3F_1R/scripts.inc",
+    "rawScript": ".string \"We joined so we can help our leader\\n\"\n\t.string \"achieve his fantastic vision.\\p\"\n\t.string \"I don't care if you're with TEAM AQUA\\n\"\n\t.string \"or if you're just some kid passing by.\\p\"\n\t.string \"No one interferes with us and gets\\n\"\n\t.string \"away with it!$\""
+  },
+  "label": "MagmaHideout_3F_1R_Text_Grunt16Intro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MagmaHideout_3F_1R/scripts.inc",
+  "references": {}
+}

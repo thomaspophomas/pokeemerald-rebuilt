@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Gym_1F_Text_GymStatueCertified",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "sha1": "cd5ddf90f8e2b0931828078295732db5c87d2dae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "rawScript": ".string \"SOOTOPOLIS CITY POK\u00e9MON GYM\\p\"\n\t.string \"JUAN'S CERTIFIED TRAINERS:\\n\"\n\t.string \"{PLAYER}$\""
+  },
+  "label": "SootopolisCity_Gym_1F_Text_GymStatueCertified",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+  "references": {}
+}

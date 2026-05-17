@@ -1,0 +1,24 @@
+{
+  "id": "Route110_TrickHousePuzzle3_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle3/scripts.inc",
+    "sha1": "794d221faf5610fdf7f5ce68289b1fbabe859a9b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle3/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, Route110_TrickHousePuzzle3_OnResume\n\tmap_script MAP_SCRIPT_ON_TRANSITION, Route110_TrickHousePuzzle3_OnTransition\n\t.byte 0"
+  },
+  "label": "Route110_TrickHousePuzzle3_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Route110_TrickHousePuzzle3/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

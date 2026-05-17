@@ -1,0 +1,19 @@
+{
+  "id": "RivalsHouse_1F_Text_TooBusyToNoticeVisit",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+    "sha1": "4acc9bd3dce8266e27759616e41b13205491adc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+    "rawScript": ".string \"That {RIVAL}!\\p\"\n\t.string \"I guess our child is too busy with\\n\"\n\t.string \"POK\u00e9MON to notice that you came\\l\"\n\t.string \"to visit, {PLAYER}{KUN}.$\""
+  },
+  "label": "RivalsHouse_1F_Text_TooBusyToNoticeVisit",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+  "references": {}
+}

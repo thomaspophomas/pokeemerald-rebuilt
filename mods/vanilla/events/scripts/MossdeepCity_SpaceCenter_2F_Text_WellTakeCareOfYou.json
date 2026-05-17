@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "rawScript": ".string \"Hehehe!\\p\"\n\t.string \"We come all the way here to get some\\n\"\n\t.string \"fuel, and we're interfered with again!\\p\"\n\t.string \"If you're going to mess with us too,\\n\"\n\t.string \"we'll take care of you at the same time!$\""
+  },
+  "label": "MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MagmaHideout_1F_Text_Grunt2PostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_1F/scripts.inc",
+    "sha1": "56855cc0486a1bd6fed1956c54134b994aeb627c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_1F/scripts.inc",
+    "rawScript": ".string \"I won't tell you after all.\\n\"\n\t.string \"You'll find out when you get there!\\p\"\n\t.string \"It'd be better if you saved surprises\\n\"\n\t.string \"to the end, don't you think?$\""
+  },
+  "label": "MagmaHideout_1F_Text_Grunt2PostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MagmaHideout_1F/scripts.inc",
+  "references": {}
+}

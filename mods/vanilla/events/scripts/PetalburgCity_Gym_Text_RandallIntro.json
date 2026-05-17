@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_RandallIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"The ability to attack before the\\n\"\n\t.string \"opponent\u2026\\p\"\n\t.string \"Just that alone puts me at a great\\n\"\n\t.string \"advantage, don't you agree?$\""
+  },
+  "label": "PetalburgCity_Gym_Text_RandallIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

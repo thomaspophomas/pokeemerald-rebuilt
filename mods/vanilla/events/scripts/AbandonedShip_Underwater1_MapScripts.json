@@ -1,0 +1,23 @@
+{
+  "id": "AbandonedShip_Underwater1_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Underwater1/scripts.inc",
+    "sha1": "2a248b82bb80b7f75ae7d0c35490fb269a8e4b62"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_Underwater1/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, AbandonedShip_Underwater1_OnResume\n\t.byte 0"
+  },
+  "label": "AbandonedShip_Underwater1_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/AbandonedShip_Underwater1/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_RESUME"
+    ]
+  }
+}

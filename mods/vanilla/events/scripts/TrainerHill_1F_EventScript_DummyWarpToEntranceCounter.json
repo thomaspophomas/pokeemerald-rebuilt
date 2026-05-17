@@ -1,0 +1,24 @@
+{
+  "id": "TrainerHill_1F_EventScript_DummyWarpToEntranceCounter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/trainer_hill.inc",
+    "sha1": "47f18ba4af2e68695280d853b9b0ada8ee6cad46"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/trainer_hill.inc",
+    "rawScript": "setvar VAR_TEMP_2, 1\n\ttrainerhill_getusingereader\n\tgoto_if_eq VAR_RESULT, TRUE, TrainerHill_1F_EventScript_WarpSilentToEntranceCounter  @ VAR_RESULT always FALSE here\n\tend\n\n@ Never reached"
+  },
+  "label": "TrainerHill_1F_EventScript_DummyWarpToEntranceCounter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/trainer_hill.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_2"
+    ]
+  }
+}

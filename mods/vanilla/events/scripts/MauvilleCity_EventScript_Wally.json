@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_EventScript_Wally",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_set FLAG_DECLINED_WALLY_BATTLE_MAUVILLE, MauvilleCity_EventScript_WallyRequestBattleAgain\n\tapplymovement LOCALID_MAUVILLE_WALLY, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\tmsgbox MauvilleCity_Text_WallyWantToChallengeGym, MSGBOX_DEFAULT\n\tmsgbox MauvilleCity_Text_UncleYourePushingIt, MSGBOX_DEFAULT\n\tmsgbox MauvilleCity_Text_WallyWeCanBeatAnyone, MSGBOX_DEFAULT\n\tapplymovement LOCALID_MAUVILLE_WALLY, Common_Movement_FacePlayer\n\twaitmovement 0\n\tplayse SE_PIN\n\tapplymovement LOCALID_MAUVILLE_WALLY, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_MAUVILLE_WALLY, Common_Movement_Delay48\n\twaitmovement 0\n\tmsgbox MauvilleCity_Text_WallyWillYouBattleMe, MSGBOX_YESNO\n\tgoto MauvilleCity_EventScript_BattleWallyPrompt\n\tend"
+  },
+  "label": "MauvilleCity_EventScript_Wally",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DECLINED_WALLY_BATTLE_MAUVILLE"
+    ]
+  }
+}

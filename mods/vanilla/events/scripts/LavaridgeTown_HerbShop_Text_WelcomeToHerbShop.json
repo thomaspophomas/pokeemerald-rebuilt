@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_HerbShop_Text_WelcomeToHerbShop",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+    "sha1": "ed83c75f66b27defc898c3be46549255ef12185c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+    "rawScript": ".string \"Welcome to the HERB SHOP, home of\\n\"\n\t.string \"effective and inexpensive medicine!$\""
+  },
+  "label": "LavaridgeTown_HerbShop_Text_WelcomeToHerbShop",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+  "references": {}
+}

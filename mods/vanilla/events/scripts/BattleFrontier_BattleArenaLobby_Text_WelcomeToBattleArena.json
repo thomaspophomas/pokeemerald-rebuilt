@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleArenaLobby_Text_WelcomeToBattleArena",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "sha1": "9504bb75bdf62b80271e2304b4804044c8db502a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "rawScript": ".string \"Where the battling spirit of TRAINERS\\n\"\n\t.string \"is put to the test!\\p\"\n\t.string \"I welcome you to the BATTLE ARENA!\\p\"\n\t.string \"I am your guide to the Set KO Tourney!$\""
+  },
+  "label": "BattleFrontier_BattleArenaLobby_Text_WelcomeToBattleArena",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+  "references": {}
+}

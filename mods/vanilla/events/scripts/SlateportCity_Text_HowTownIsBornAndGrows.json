@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Text_HowTownIsBornAndGrows",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": ".string \"Where the water is clean, the fruits\\n\"\n\t.string \"of bountiful harvest gather.\\p\"\n\t.string \"And where people gather, a market\\n\"\n\t.string \"soon starts.\\p\"\n\t.string \"That is how a town is born and grows.$\""
+  },
+  "label": "SlateportCity_Text_HowTownIsBornAndGrows",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {}
+}

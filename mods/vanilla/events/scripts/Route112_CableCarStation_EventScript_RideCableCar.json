@@ -1,0 +1,23 @@
+{
+  "id": "Route112_CableCarStation_EventScript_RideCableCar",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route112_CableCarStation/scripts.inc",
+    "sha1": "52163a924cedb2545f8ddfd323e7075d7bcc20d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route112_CableCarStation/scripts.inc",
+    "rawScript": "msgbox Route112_CableCarStation_Text_StepThisWay, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_ROUTE112_CABLE_CAR_ATTENDANT, Route112_CableCarStation_Movement_LeadPlayerToCableCar\n\tapplymovement LOCALID_PLAYER, Route112_CableCarStation_Movement_BoardCableCar\n\twaitmovement 0\n\tsetvar VAR_0x8004, FALSE  @ Going up\n\tsetvar VAR_CABLE_CAR_STATION_STATE, 1\n\tincrementgamestat GAME_STAT_RODE_CABLE_CAR\n\tspecial CableCarWarp\n\tspecial CableCar\n\trelease\n\tend"
+  },
+  "label": "Route112_CableCarStation_EventScript_RideCableCar",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route112_CableCarStation/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_CABLE_CAR_STATION_STATE"
+    ]
+  }
+}

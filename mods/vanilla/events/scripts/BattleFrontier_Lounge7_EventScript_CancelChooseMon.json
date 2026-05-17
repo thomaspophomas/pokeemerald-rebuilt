@@ -1,0 +1,25 @@
+{
+  "id": "BattleFrontier_Lounge7_EventScript_CancelChooseMon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+    "sha1": "384442d4fcbb4c5edeb287c69a9c0ca256ec49b1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_Lounge7_Text_YouDontWantTo, MSGBOX_DEFAULT\n\trelease\n\tend\n\n@ VAR_0x8008 is the price\n@ VAR_TEMP_C is the scroll multichoice ID\n@ VAR_TEMP_FRONTIER_TUTOR_SELECTION is the move selection\n@ VAR_TEMP_FRONTIER_TUTOR_ID is which move tutor was spoken to"
+  },
+  "label": "BattleFrontier_Lounge7_EventScript_CancelChooseMon",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_C",
+      "VAR_TEMP_FRONTIER_TUTOR_ID",
+      "VAR_TEMP_FRONTIER_TUTOR_SELECTION"
+    ]
+  }
+}

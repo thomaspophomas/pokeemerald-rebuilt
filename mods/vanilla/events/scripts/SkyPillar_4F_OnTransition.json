@@ -1,0 +1,24 @@
+{
+  "id": "SkyPillar_4F_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_4F/scripts.inc",
+    "sha1": "d5be54eb937250f87a89f0988d8f16e796af14f2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_4F/scripts.inc",
+    "rawScript": "call_if_lt VAR_SKY_PILLAR_STATE, 2, SkyPillar_4F_EventScript_CleanFloor\n#ifdef UBFIX\n\tsetvar VAR_ICE_STEP_COUNT, 1\n#else\n\tcopyvar VAR_ICE_STEP_COUNT, 1, warn=FALSE\n#endif\n\tend"
+  },
+  "label": "SkyPillar_4F_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/SkyPillar_4F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_ICE_STEP_COUNT",
+      "VAR_SKY_PILLAR_STATE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_WattsonNeedFavorTakeKey",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"WATTSON: Oh, {PLAYER}{KUN}!\\n\"\n\t.string \"You look like you have a lot of zip!\\l\"\n\t.string \"That's a good thing, wahahahaha!\\p\"\n\t.string \"Fine! I've decided!\\n\"\n\t.string \"I need a favor, {PLAYER}{KUN}!\\p\"\n\t.string \"MAUVILLE CITY has an underground\\n\"\n\t.string \"sector called NEW MAUVILLE.\\p\"\n\t.string \"{PLAYER}{KUN}, I'd like you to go there and\\n\"\n\t.string \"switch off the GENERATOR.\\p\"\n\t.string \"The GENERATOR has been running a bit\\n\"\n\t.string \"haywire. It's getting unsafe.\\p\"\n\t.string \"Here, this is the KEY to get into\\n\"\n\t.string \"NEW MAUVILLE.$\""
+  },
+  "label": "MauvilleCity_Text_WattsonNeedFavorTakeKey",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

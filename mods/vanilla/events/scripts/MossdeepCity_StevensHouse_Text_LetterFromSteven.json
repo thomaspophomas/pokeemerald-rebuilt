@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_StevensHouse_Text_LetterFromSteven",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "sha1": "13a709347ca2c2863ef04de01b7d51d28b9d736e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "rawScript": ".string \"It's a letter.\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"To {PLAYER}{KUN}\u2026\\p\"\n\t.string \"I've decided to do a little soul-\\n\"\n\t.string \"searching and train on the road.\\p\"\n\t.string \"I don't plan to return home for some\\n\"\n\t.string \"time.\\p\"\n\t.string \"I have a favor to ask of you.\\p\"\n\t.string \"I want you to take the POK\u00e9 BALL on\\n\"\n\t.string \"the desk.\\p\"\n\t.string \"Inside it is a BELDUM, my favorite\\n\"\n\t.string \"POK\u00e9MON.\\p\"\n\t.string \"I'm counting on you.\\p\"\n\t.string \"May our paths cross someday.\\p\"\n\t.string \"STEVEN STONE$\""
+  },
+  "label": "MossdeepCity_StevensHouse_Text_LetterFromSteven",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+  "references": {}
+}

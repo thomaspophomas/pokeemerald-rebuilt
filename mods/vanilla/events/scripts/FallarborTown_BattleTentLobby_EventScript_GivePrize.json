@@ -1,0 +1,24 @@
+{
+  "id": "FallarborTown_BattleTentLobby_EventScript_GivePrize",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "sha1": "007b5945200863133fd43941054ec8db085a0356"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "rawScript": "msgbox FallarborTown_BattleTentLobby_Text_PresentYouWithPrize, MSGBOX_DEFAULT\n\tfallarbortent_giveprize\n\tswitch VAR_RESULT\n\tcase FALSE, FallarborTown_BattleTentLobby_EventScript_NoRoomForPrize\n\tfrontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0\n\tmessage FallarborTown_BattleTentLobby_Text_ReceivedPrize\n\twaitmessage\n\tplayfanfare MUS_OBTAIN_ITEM\n\twaitfanfare\n\tmsgbox FallarborTown_BattleTentLobby_Text_AwaitAnotherChallenge2, MSGBOX_DEFAULT\n\tclosemessage\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 255\n\treleaseall\n\tend"
+  },
+  "label": "FallarborTown_BattleTentLobby_EventScript_GivePrize",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ]
+  }
+}

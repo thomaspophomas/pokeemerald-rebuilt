@@ -1,0 +1,19 @@
+{
+  "id": "MagmaHideout_2F_2R_Text_Grunt6PostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_2F_2R/scripts.inc",
+    "sha1": "01615ee55415554a4833c7cd9790ada769e12792"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_2F_2R/scripts.inc",
+    "rawScript": ".string \"Don't you get lonely for the sea\\n\"\n\t.string \"being in a place like this?$\""
+  },
+  "label": "MagmaHideout_2F_2R_Text_Grunt6PostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MagmaHideout_2F_2R/scripts.inc",
+  "references": {}
+}

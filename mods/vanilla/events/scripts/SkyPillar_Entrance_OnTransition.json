@@ -1,0 +1,23 @@
+{
+  "id": "SkyPillar_Entrance_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Entrance/scripts.inc",
+    "sha1": "04b6bb8eab1122affe66efc3efc347d37bc3d57d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_Entrance/scripts.inc",
+    "rawScript": "setflag FLAG_LANDMARK_SKY_PILLAR\n\tend"
+  },
+  "label": "SkyPillar_Entrance_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/SkyPillar_Entrance/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_LANDMARK_SKY_PILLAR"
+    ]
+  }
+}

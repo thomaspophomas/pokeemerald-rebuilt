@@ -1,0 +1,19 @@
+{
+  "id": "SafariZone_RestHouse_EventScript_FatMan",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_RestHouse/scripts.inc",
+    "sha1": "2a98d30e8a7fd2284d3fec505f8b8245ade69d7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SafariZone_RestHouse/scripts.inc",
+    "rawScript": "msgbox SafariZone_RestHouse_Text_FatMan, MSGBOX_NPC\n\tend"
+  },
+  "label": "SafariZone_RestHouse_EventScript_FatMan",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SafariZone_RestHouse/scripts.inc",
+  "references": {}
+}

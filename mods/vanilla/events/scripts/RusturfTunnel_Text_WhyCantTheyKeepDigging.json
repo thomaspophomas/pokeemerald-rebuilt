@@ -1,0 +1,19 @@
+{
+  "id": "RusturfTunnel_Text_WhyCantTheyKeepDigging",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/scripts.inc",
+    "sha1": "76035185b0aabddf11657305417168db4c1bb93d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RusturfTunnel/scripts.inc",
+    "rawScript": ".string \"\u2026 \u2026\\p\"\n\t.string \"Why can't they keep digging?\\n\"\n\t.string \"Is the bedrock too hard?\\p\"\n\t.string \"My beloved awaits me in VERDANTURF\\n\"\n\t.string \"TOWN just beyond here\u2026\\p\"\n\t.string \"If RUSTBORO and VERDANTURF were\\n\"\n\t.string \"joined by this tunnel, I could visit\\l\"\n\t.string \"her every day\u2026\\p\"\n\t.string \"But this\u2026\\n\"\n\t.string \"What am I to do?$\""
+  },
+  "label": "RusturfTunnel_Text_WhyCantTheyKeepDigging",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RusturfTunnel/scripts.inc",
+  "references": {}
+}

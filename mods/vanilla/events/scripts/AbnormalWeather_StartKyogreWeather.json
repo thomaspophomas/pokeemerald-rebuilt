@@ -1,0 +1,19 @@
+{
+  "id": "AbnormalWeather_StartKyogreWeather",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/abnormal_weather.inc",
+    "sha1": "8bf77729e5d8e5ebd0812ce736eaf3712ec673f3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/abnormal_weather.inc",
+    "rawScript": "setweather WEATHER_DOWNPOUR\n\treturn"
+  },
+  "label": "AbnormalWeather_StartKyogreWeather",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/scripts/abnormal_weather.inc",
+  "references": {}
+}

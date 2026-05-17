@@ -1,0 +1,24 @@
+{
+  "id": "AquaHideout_B2F_EventScript_SubmarineEscape",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B2F/scripts.inc",
+    "sha1": "2422b13cc4d746236ea4f5c8dbbc6ea26d3d8e36"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_B2F/scripts.inc",
+    "rawScript": "setvar VAR_0x8008, LOCALID_AQUA_HIDEOUT_MATT\n\tsetvar VAR_0x8009, LOCALID_AQUA_HIDEOUT_SUBMARINE\n\tapplymovement VAR_0x8008, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tdelay 20\n\tapplymovement VAR_0x8008, Common_Movement_FacePlayer\n\twaitmovement 0\n\tmsgbox AquaHideout_B2F_Text_OurBossGotThroughHisPreparations, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement VAR_0x8008, Common_Movement_WalkInPlaceFasterLeft\n\tapplymovement VAR_0x8009, AquaHideout_B2F_Movement_SumbarineDepartLeft\n\twaitmovement 0\n\tremoveobject VAR_0x8009\n\tdelay 20\n\tapplymovement VAR_0x8008, Common_Movement_FacePlayer\n\twaitmovement 0\n\tmsgbox AquaHideout_B2F_Text_MattPostBattle, MSGBOX_DEFAULT\n\tsetflag FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE\n\tsetflag FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS\n\trelease\n\tend"
+  },
+  "label": "AquaHideout_B2F_EventScript_SubmarineEscape",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AquaHideout_B2F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS",
+      "FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE"
+    ]
+  }
+}

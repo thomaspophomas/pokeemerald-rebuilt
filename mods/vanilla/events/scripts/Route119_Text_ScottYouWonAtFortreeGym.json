@@ -1,0 +1,19 @@
+{
+  "id": "Route119_Text_ScottYouWonAtFortreeGym",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119/scripts.inc",
+    "sha1": "576fe3fab09726df20b1bbf3016bc5306f0e0f3d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119/scripts.inc",
+    "rawScript": ".string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\n\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 Beep!\\p\"\n\t.string \"SCOTT: Hiya, {PLAYER}{KUN}, it's me!\\p\"\n\t.string \"Just as I thought, you won at\\n\"\n\t.string \"the FORTREE GYM.\\p\"\n\t.string \"Your strength\u2026\\n\"\n\t.string \"Perhaps you really are the TRAINER\\l\"\n\t.string \"that I've been searching for.\\p\"\n\t.string \"Remember, you have a fan in me.\\n\"\n\t.string \"I'll be cheering from the sidelines.\\l\"\n\t.string \"Keep up the great work!\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\n\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 Click!$\""
+  },
+  "label": "Route119_Text_ScottYouWonAtFortreeGym",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route119/scripts.inc",
+  "references": {}
+}

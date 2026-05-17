@@ -1,0 +1,19 @@
+{
+  "id": "Route110_Text_YouGotBikeFromRydel",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/scripts.inc",
+    "sha1": "ee9846425d6a96c03ac988decb3c48ffbd098f22"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110/scripts.inc",
+    "rawScript": ".string \"Oh, hey, you got that BIKE from RYDEL!\\p\"\n\t.string \"Oh, it's glaringly obvious.\\n\"\n\t.string \"It says right on your bike\u2026\\p\"\n\t.string \"RYDEL, RYDEL, RYDEL, RYDEL, RYDEL,\\n\"\n\t.string \"RYDEL, RYDEL, RYDEL, RYDEL, RYDEL,\\p\"\n\t.string \"RYDEL, RYDEL, RYDEL, RYDEL, RYDEL,\\n\"\n\t.string \"RYDEL, RYDEL, RYDEL, RYDEL, RYDEL,\\p\"\n\t.string \"RYDEL, RYDEL, RYDEL, RYDEL, RYDEL,\\n\"\n\t.string \"RYDEL, RYDEL, RYDEL, RYDEL, RYDEL,\\p\"\n\t.string \"RYDEL, RYDEL, RYDEL, RYDEL, RYDEL,\\n\"\n\t.string \"RYDEL, RYDEL, RYDEL, RYDEL, RYDEL,\\p\"\n\t.string \"RYDEL, RYDEL, RYDEL, RYDEL, RYDEL\u2026\\n\"\n\t.string \"That name's everywhere.\\p\"\n\t.string \"You should ride it around all over\\n\"\n\t.string \"the place--it's good advertising!$\""
+  },
+  "label": "Route110_Text_YouGotBikeFromRydel",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110/scripts.inc",
+  "references": {}
+}

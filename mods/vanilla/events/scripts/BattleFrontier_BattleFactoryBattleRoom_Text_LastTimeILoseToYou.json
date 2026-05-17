@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleFactoryBattleRoom_Text_LastTimeILoseToYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+    "sha1": "d6c9d92d97f61a06b3670b7d509844f3bc902eb3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+    "rawScript": ".string \"Pfft, man!\\p\"\n\t.string \"That's absolutely the last time\\n\"\n\t.string \"I lose to you!\\p\"\n\t.string \"We have to do this again, hey?$\""
+  },
+  "label": "BattleFrontier_BattleFactoryBattleRoom_Text_LastTimeILoseToYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc",
+  "references": {}
+}

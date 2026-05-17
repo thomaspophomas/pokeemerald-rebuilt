@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "rawScript": ".string \"MAXIE: We failed to make the volcano\\n\"\n\t.string \"erupt\u2026\\p\"\n\t.string \"We failed to control GROUDON after\\n\"\n\t.string \"we had awoken it\u2026\\p\"\n\t.string \"Is our goal to expand the land\\n\"\n\t.string \"misguided?\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\n\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"If\u2026\\n\"\n\t.string \"If we, TEAM MAGMA, are wrong\u2026\\l\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"Then might TEAM AQUA's goal to expand\\n\"\n\t.string \"the sea also be equally misguided?$\""
+  },
+  "label": "MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+  "references": {}
+}

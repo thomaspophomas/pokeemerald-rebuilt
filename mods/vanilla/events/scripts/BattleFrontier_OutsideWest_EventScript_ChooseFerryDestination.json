@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_OutsideWest_EventScript_ChooseFerryDestination",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": "multichoicedefault 18, 6, MULTI_SSTIDAL_BATTLE_FRONTIER, 2, FALSE\n\tswitch VAR_RESULT\n\tcase 0, BattleFrontier_OutsideWest_EventScript_FerryToSlateport\n\tcase 1, BattleFrontier_OutsideWest_EventScript_FerryToLilycove\n\tcase 2, BattleFrontier_OutsideWest_EventScript_CancelFerrySelect\n\tcase MULTI_B_PRESSED, BattleFrontier_OutsideWest_EventScript_CancelFerrySelect\n\tend"
+  },
+  "label": "BattleFrontier_OutsideWest_EventScript_ChooseFerryDestination",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

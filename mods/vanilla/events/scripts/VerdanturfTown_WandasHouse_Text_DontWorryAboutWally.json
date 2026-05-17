@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_WandasHouse_Text_DontWorryAboutWally",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+    "sha1": "31973fbe72c23018cb6768d20d4d7addb52bae60"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+    "rawScript": ".string \"WANDA: Don't worry about WALLY.\\n\"\n\t.string \"He'll be just fine.\\p\"\n\t.string \"I know my little cousin, and he has\\n\"\n\t.string \"POK\u00e9MON with him, too.$\""
+  },
+  "label": "VerdanturfTown_WandasHouse_Text_DontWorryAboutWally",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "FallarborTown_PokemonCenter_1F_EventScript_LanetteExited",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_PokemonCenter_1F/scripts.inc",
+    "sha1": "1f48e8d40f8ba3b6123d3e45ff7292df588ad7dd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_PokemonCenter_1F/scripts.inc",
+    "rawScript": "playse SE_SLIDING_DOOR\n\tremoveobject LOCALID_FALLARBOR_LANETTE\n\tclearflag FLAG_HIDE_LANETTES_HOUSE_LANETTE\n\trelease\n\tend"
+  },
+  "label": "FallarborTown_PokemonCenter_1F_EventScript_LanetteExited",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_PokemonCenter_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_LANETTES_HOUSE_LANETTE"
+    ]
+  }
+}

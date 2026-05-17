@@ -1,0 +1,26 @@
+{
+  "id": "OBJ_EVENT_GFX_SUBMARINE_SHADOW",
+  "domain": "overworld_sprites",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/object_events/object_event_graphics_info_pointers.h",
+    "sha1": "77fa348a5d882f94e478f2c7b9ed44de4de80ba1"
+  },
+  "legacy": {
+    "kind": "object_event_graphics",
+    "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+    "rawC": "const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SubmarineShadow = {\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_SUBMARINE_SHADOW,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 1408,\n    .width = 88,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_SPECIAL,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_NONE,\n    .oam = &gObjectEventBaseOam_8x8,\n    .subspriteTables = sOamTables_88x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_SubmarineShadow,\n    .affineAnims = gDummySpriteAffineAnimTable,\n};"
+  },
+  "key": "OBJ_EVENT_GFX_SUBMARINE_SHADOW",
+  "graphicsId": "OBJ_EVENT_GFX_SUBMARINE_SHADOW",
+  "numericId": 141,
+  "graphicsRevision": 1,
+  "assetKey": "gObjectEventGraphicsInfo_SubmarineShadow",
+  "graphicsInfoSymbol": "gObjectEventGraphicsInfo_SubmarineShadow",
+  "width": "88",
+  "height": "32",
+  "paletteTag": "OBJ_EVENT_PAL_TAG_SUBMARINE_SHADOW",
+  "reflectionPaletteTag": "OBJ_EVENT_PAL_TAG_NONE",
+  "shadowSize": "SHADOW_SIZE_M",
+  "tracks": "TRACKS_NONE"
+}

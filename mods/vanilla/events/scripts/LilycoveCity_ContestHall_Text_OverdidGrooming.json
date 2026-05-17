@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestHall_Text_OverdidGrooming",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "sha1": "9d258f56144116075b6ffd125cc9edb7fc292736"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "rawScript": ".string \"Waaaah!\\p\"\n\t.string \"I brushed and groomed my POK\u00e9MON\\n\"\n\t.string \"carefully for this CONTEST\u2026\\p\"\n\t.string \"But I overdid it\u2026\\n\"\n\t.string \"My POK\u00e9MON's coat turned all scraggly\u2026\\p\"\n\t.string \"What should I do?$\""
+  },
+  "label": "LilycoveCity_ContestHall_Text_OverdidGrooming",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+  "references": {}
+}

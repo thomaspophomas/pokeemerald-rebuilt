@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Mart_Text_DecisionsDetermineBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Mart/scripts.inc",
+    "sha1": "d8b603abe3cbe455d4b20a35653269b7e46b6b14"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Mart/scripts.inc",
+    "rawScript": ".string \"Use a certain move, or use an item\\n\"\n\t.string \"instead\u2026\\p\"\n\t.string \"The TRAINER's decisions determine how\\n\"\n\t.string \"battles turn out, I think.$\""
+  },
+  "label": "MauvilleCity_Mart_Text_DecisionsDetermineBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_Mart/scripts.inc",
+  "references": {}
+}

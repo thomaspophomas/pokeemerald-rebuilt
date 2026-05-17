@@ -1,0 +1,26 @@
+{
+  "id": "EventScript_RegisterProfBirch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": "msgbox MatchCall_Text_BirchRegisterCall, MSGBOX_DEFAULT\n\tclosemessage\n\tdelay 30\n\tplayfanfare MUS_REGISTER_MATCH_CALL\n\tmsgbox MatchCall_Text_RegisteredBirch, MSGBOX_DEFAULT\n\twaitfanfare\n\tclosemessage\n\tdelay 30\n\tsetflag FLAG_ENABLE_PROF_BIRCH_MATCH_CALL\n\tsetvar VAR_REGISTER_BIRCH_STATE, 2\n\trelease\n\tend"
+  },
+  "label": "EventScript_RegisterProfBirch",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_ENABLE_PROF_BIRCH_MATCH_CALL"
+    ],
+    "vars": [
+      "VAR_REGISTER_BIRCH_STATE"
+    ]
+  }
+}

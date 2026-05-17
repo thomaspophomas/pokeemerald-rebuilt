@@ -1,0 +1,23 @@
+{
+  "id": "JaggedPass_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/JaggedPass/scripts.inc",
+    "sha1": "3539aca2d309baaf0b57344f9c2014b5d896c94b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/JaggedPass/scripts.inc",
+    "rawScript": "call_if_eq VAR_JAGGED_PASS_ASH_WEATHER, 1, JaggedPass_EventScript_SetWeatherAsh\n\tend"
+  },
+  "label": "JaggedPass_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/JaggedPass/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_JAGGED_PASS_ASH_WEATHER"
+    ]
+  }
+}

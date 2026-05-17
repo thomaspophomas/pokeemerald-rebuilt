@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_BrendanYouGoingToPokemonLeague",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"{PLAYER}, what are you going to do?\\p\"\n\t.string \"Since you're that strong, are you\\n\"\n\t.string \"taking the POK\u00e9MON LEAGUE challenge?\\p\"\n\t.string \"Heh, even me--if I trained my POK\u00e9MON\\n\"\n\t.string \"a bit more, I should be stronger than\\l\"\n\t.string \"you, {PLAYER}.\\p\"\n\t.string \"Well, anyway, hang in there!$\""
+  },
+  "label": "LilycoveCity_Text_BrendanYouGoingToPokemonLeague",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

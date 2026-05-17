@@ -1,0 +1,23 @@
+{
+  "id": "LittlerootTown_EventScript_SetRivalBirchPosForDexUpgrade",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": "addobject LOCALID_LITTLEROOT_BIRCH\n\taddobject LOCALID_LITTLEROOT_RIVAL\n\tcheckplayergender\n\tgoto_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_SetRivalBirchPosForDexUpgradeMale\n\tgoto LittlerootTown_EventScript_SetRivalBirchPosForDexUpgradeFemale\n\tend"
+  },
+  "label": "LittlerootTown_EventScript_SetRivalBirchPosForDexUpgrade",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

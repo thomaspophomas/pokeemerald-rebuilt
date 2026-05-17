@@ -1,0 +1,19 @@
+{
+  "id": "MeteorFalls_1F_2R_Text_JayIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+    "sha1": "09c545be014eea4099489af97aeae4f12469cf78"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+    "rawScript": ".string \"JAY: We've been married for\\n\"\n\t.string \"fifty years.\\p\"\n\t.string \"The bond we share as a couple could\\n\"\n\t.string \"never be broken.$\""
+  },
+  "label": "MeteorFalls_1F_2R_Text_JayIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+  "references": {}
+}

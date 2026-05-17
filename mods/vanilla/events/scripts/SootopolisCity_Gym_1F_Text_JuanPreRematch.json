@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Gym_1F_Text_JuanPreRematch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "sha1": "cd5ddf90f8e2b0931828078295732db5c87d2dae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "rawScript": ".string \"JUAN: Ah, this GYM had returned to its\\n\"\n\t.string \"usual state of serenity\u2026\\p\"\n\t.string \"But our young typhoon has returned\\n\"\n\t.string \"to put us to the test again!\\p\"\n\t.string \"Well, my friend, most certainly!\\p\"\n\t.string \"I shall be delighted to dance with you\\n\"\n\t.string \"as often as you wish!$\""
+  },
+  "label": "SootopolisCity_Gym_1F_Text_JuanPreRematch",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+  "references": {}
+}

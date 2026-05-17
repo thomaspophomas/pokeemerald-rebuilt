@@ -1,0 +1,19 @@
+{
+  "id": "RivalsHouse_1F_Text_BrendanWhoAreYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+    "sha1": "4acc9bd3dce8266e27759616e41b13205491adc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+    "rawScript": ".string \"Hey!\\n\"\n\t.string \"You\u2026\\p\"\n\t.string \"Who are you?\\p\"\n\t.string \"Oh, you're {PLAYER}, aren't you?\\n\"\n\t.string \"Moved in next door, right?\\p\"\n\t.string \"I didn't know that you're a girl.\\p\"\n\t.string \"Dad, PROF. BIRCH, said that our new\\n\"\n\t.string \"next-door neighbor is a GYM LEADER's\\l\"\n\t.string \"kid, so I assumed you'd be a guy.\\p\"\n\t.string \"My name's BRENDAN.\\n\"\n\t.string \"So, hi, neighbor!\\p\"\n\t.string \"Huh? Hey, {PLAYER}, don't you have\\n\"\n\t.string \"a POK\u00e9MON?\\p\"\n\t.string \"Do you want me to go catch you one?\\p\"\n\t.string \"Aw, darn, I forgot\u2026\\p\"\n\t.string \"I'm supposed to go help my dad catch\\n\"\n\t.string \"some wild POK\u00e9MON.\\p\"\n\t.string \"Some other time, okay?$\""
+  },
+  "label": "RivalsHouse_1F_Text_BrendanWhoAreYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+  "references": {}
+}

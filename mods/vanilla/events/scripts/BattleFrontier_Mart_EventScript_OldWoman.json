@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Mart_EventScript_OldWoman",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Mart/scripts.inc",
+    "sha1": "e8269950fe6ceeeec601d93208e6255555526b6b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Mart/scripts.inc",
+    "rawScript": "lock\n\tapplymovement LOCALID_FRONTIER_MART_OLD_WOMAN, Common_Movement_FaceDown\n\twaitmovement 0\n\tmsgbox BattleFrontier_Mart_Text_ProteinMakeNiceGift, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "BattleFrontier_Mart_EventScript_OldWoman",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_Mart/scripts.inc",
+  "references": {}
+}

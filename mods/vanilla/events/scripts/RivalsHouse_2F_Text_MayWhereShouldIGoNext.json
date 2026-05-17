@@ -1,0 +1,19 @@
+{
+  "id": "RivalsHouse_2F_Text_MayWhereShouldIGoNext",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "sha1": "e014a444dcf389c78773768633900402b1862edb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "rawScript": ".string \"MAY: I wonder where I should go catch\\n\"\n\t.string \"some POK\u00e9MON next?\\p\"\n\t.string \"Wouldn't it be funny if we ran into each\\n\"\n\t.string \"other, {PLAYER}{KUN}?$\""
+  },
+  "label": "RivalsHouse_2F_Text_MayWhereShouldIGoNext",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+  "references": {}
+}

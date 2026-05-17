@@ -1,0 +1,19 @@
+{
+  "id": "TradeCenter_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TradeCenter/scripts.inc",
+    "sha1": "d57a7ecf63145881fb8c324b18a2ca42c96e1bc8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TradeCenter/scripts.inc",
+    "rawScript": ".byte 0"
+  },
+  "label": "TradeCenter_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/TradeCenter/scripts.inc",
+  "references": {}
+}

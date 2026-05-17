@@ -1,0 +1,19 @@
+{
+  "id": "Route128_Text_MaxieResposibilityFallsToArchieAndMe",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route128/scripts.inc",
+    "sha1": "8c3eb5fe541a802a44ec8805e051fe2de0e552f6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route128/scripts.inc",
+    "rawScript": ".string \"MAXIE: {PLAYER}, don't say anything.\\p\"\n\t.string \"I know that I have no right to be\\n\"\n\t.string \"critical of ARCHIE\u2026\\p\"\n\t.string \"But the way things are now, I doubt\\n\"\n\t.string \"that we humans will be capable of\\l\"\n\t.string \"doing anything about it.\\p\"\n\t.string \"But neither can we stand by and\\n\"\n\t.string \"just watch helplessly.\\p\"\n\t.string \"The responsibility for putting an end\\n\"\n\t.string \"to this falls to ARCHIE and me\u2026$\""
+  },
+  "label": "Route128_Text_MaxieResposibilityFallsToArchieAndMe",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route128/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Route110_Text_ChallengeReactionWorst",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/scripts.inc",
+    "sha1": "ee9846425d6a96c03ac988decb3c48ffbd098f22"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110/scripts.inc",
+    "rawScript": ".string \"\u2026I am aghast\u2026\\p\"\n\t.string \"You're perhaps not cut out for this\\n\"\n\t.string \"unfortunate cycling business.\\p\"\n\t.string \"You ought to give serious thought to\\n\"\n\t.string \"returning that BIKE to RYDEL.$\""
+  },
+  "label": "Route110_Text_ChallengeReactionWorst",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110/scripts.inc",
+  "references": {}
+}

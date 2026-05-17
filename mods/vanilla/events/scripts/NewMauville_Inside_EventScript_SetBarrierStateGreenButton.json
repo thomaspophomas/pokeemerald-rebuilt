@@ -1,0 +1,19 @@
+{
+  "id": "NewMauville_Inside_EventScript_SetBarrierStateGreenButton",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NewMauville_Inside/scripts.inc",
+    "sha1": "e55cd05ab8dbd71a8b15a7cf2c2dc966549467fe"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NewMauville_Inside/scripts.inc",
+    "rawScript": "setmetatile 23, 34, METATILE_BikeShop_Barrier_Blue_Top, TRUE\n\tsetmetatile 23, 35, METATILE_BikeShop_Barrier_Blue_TopMid, TRUE\n\tsetmetatile 23, 36, METATILE_BikeShop_Barrier_Blue_BottomMid, TRUE\n\tsetmetatile 23, 37, METATILE_BikeShop_Barrier_Blue_Bottom, TRUE\n\tsetmetatile 10, 16, METATILE_BikeShop_Barrier_Blue_Top, TRUE\n\tsetmetatile 10, 17, METATILE_BikeShop_Barrier_Blue_TopMid, TRUE\n\tsetmetatile 10, 18, METATILE_BikeShop_Barrier_Blue_BottomMid, TRUE\n\tsetmetatile 10, 19, METATILE_BikeShop_Barrier_Blue_Bottom, TRUE\n\tsetmetatile 10, 0, METATILE_BikeShop_Barrier_Blue_Top, TRUE\n\tsetmetatile 10, 1, METATILE_BikeShop_Barrier_Blue_TopMid, TRUE\n\tsetmetatile 10, 2, METATILE_BikeShop_Barrier_Blue_BottomMid, TRUE\n\tsetmetatile 10, 3, METATILE_BikeShop_Barrier_Blue_Bottom, TRUE\n\tsetmetatile 37, 33, METATILE_BikeShop_Barrier_Hidden_Top, TRUE\n\tsetmetatile 37, 34, METATILE_BikeShop_Barrier_Hidden_Bottom, TRUE\n\tsetmetatile 37, 35, METATILE_BikeShop_Floor_Shadow_Top, FALSE\n\tsetmetatile 37, 36, METATILE_BikeShop_Wall_Edge_Top, FALSE\n\tsetmetatile 28, 22, METATILE_BikeShop_Barrier_Hidden_Top, TRUE\n\tsetmetatile 28, 23, METATILE_BikeShop_Barrier_Hidden_Bottom, TRUE\n\tsetmetatile 28, 24, METATILE_BikeShop_Floor_Shadow_Top, FALSE\n\tsetmetatile 28, 25, METATILE_BikeShop_Wall_Edge_Top, FALSE\n\tsetmetatile 10, 24, METATILE_BikeShop_Barrier_Hidden_Top, TRUE\n\tsetmetatile 10, 25, METATILE_BikeShop_Barrier_Hidden_Bottom, TRUE\n\tsetmetatile 10, 26, METATILE_BikeShop_Floor_Shadow_Top, FALSE\n\tsetmetatile 10, 27, METATILE_BikeShop_Wall_Edge_Top, FALSE\n\tsetmetatile 21, 2, METATILE_BikeShop_Barrier_Hidden_Top, TRUE\n\tsetmetatile 21, 3, METATILE_BikeShop_Barrier_Hidden_Bottom, TRUE\n\tsetmetatile 21, 4, METATILE_BikeShop_Floor_Shadow_Top, FALSE\n\tsetmetatile 21, 5, METATILE_BikeShop_Wall_Edge_Top, FALSE\n\tsetmetatile 2, 11, METATILE_BikeShop_Button_Pressed, FALSE\n\tsetmetatile 17, 10, METATILE_BikeShop_Button_Pressed, FALSE\n\tsetmetatile 25, 18, METATILE_BikeShop_Button_Pressed, FALSE\n\tsetmetatile 18, 36, METATILE_BikeShop_Button_Pressed, FALSE\n\tsetmetatile 6, 11, METATILE_BikeShop_Button_Blue, FALSE\n\tsetmetatile 13, 10, METATILE_BikeShop_Button_Blue, FALSE\n\tsetmetatile 16, 22, METATILE_BikeShop_Button_Blue, FALSE\n\tsetmetatile 4, 26, METATILE_BikeShop_Button_Blue, FALSE\n\tsetmetatile 30, 38, METATILE_BikeShop_Button_Blue, FALSE\n\treturn"
+  },
+  "label": "NewMauville_Inside_EventScript_SetBarrierStateGreenButton",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/NewMauville_Inside/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_1F_Text_TicketFromBrineyCameForYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "sha1": "b92e18aeb34c3856db794aa81beeec7f0f0de717"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "rawScript": ".string \"DAD: Hm?\\p\"\n\t.string \"Hey, it's {PLAYER}!\\p\"\n\t.string \"It's been a while since I saw you,\\n\"\n\t.string \"but you look\u2026stronger, somehow.\\p\"\n\t.string \"That's the impression I get.\\n\"\n\t.string \"But your old man hasn't given up yet!\\p\"\n\t.string \"Oh, yes, I have something for you.\\n\"\n\t.string \"This came to you from someone named\\l\"\n\t.string \"MR. BRINEY.$\""
+  },
+  "label": "PlayersHouse_1F_Text_TicketFromBrineyCameForYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+  "references": {}
+}

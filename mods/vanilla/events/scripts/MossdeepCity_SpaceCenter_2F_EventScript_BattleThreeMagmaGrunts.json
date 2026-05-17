@@ -1,0 +1,28 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F_EventScript_BattleThreeMagmaGrunts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "rawScript": "msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt5Intro, MSGBOX_DEFAULT\n\ttrainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_5, MossdeepCity_SpaceCenter_2F_Text_Grunt5Defeat\n\tapplymovement LOCALID_SPACE_CENTER_GRUNT_5, MossdeepCity_SpaceCenter_2F_Movement_Grunt5Defeated\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tmsgbox MossdeepCity_SpaceCenter_2F_Text_Grunt6Intro, MSGBOX_DEFAULT\n\ttrainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_6, MossdeepCity_SpaceCenter_2F_Text_Grunt6Defeat\n\tapplymovement LOCALID_SPACE_CENTER_GRUNT_6, MossdeepCity_SpaceCenter_2F_Movement_Grunt6Defeated\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\tmsgbox MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro, MSGBOX_DEFAULT\n\ttrainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_7, MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat\n\tapplymovement LOCALID_SPACE_CENTER_GRUNT_7, MossdeepCity_SpaceCenter_2F_Movement_Grunt7Defeated\n\twaitmovement 0\n\tsetvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 2\n\tcopyobjectxytoperm LOCALID_SPACE_CENTER_GRUNT_6\n\tcopyobjectxytoperm LOCALID_SPACE_CENTER_GRUNT_7\n\tcopyobjectxytoperm LOCALID_SPACE_CENTER_GRUNT_5\n\treleaseall\n\tend"
+  },
+  "label": "MossdeepCity_SpaceCenter_2F_EventScript_BattleThreeMagmaGrunts",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_MOSSDEEP_SPACE_CENTER_STATE"
+    ],
+    "trainers": [
+      "TRAINER_GRUNT_SPACE_CENTER_5",
+      "TRAINER_GRUNT_SPACE_CENTER_6",
+      "TRAINER_GRUNT_SPACE_CENTER_7"
+    ]
+  }
+}

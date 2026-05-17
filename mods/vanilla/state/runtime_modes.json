@@ -1,0 +1,28 @@
+{
+  "id": "runtime_modes",
+  "domain": "state",
+  "schemaVersion": 1,
+  "source": {
+    "path": "include/global.fieldmap.h",
+    "sha1": "44e13eaff9a45e10d3c05aeb691b62b5e5ead49a"
+  },
+  "legacy": {
+    "kind": "runtime_state_contract",
+    "sourcePath": "include/global.fieldmap.h"
+  },
+  "avatarStates": [
+    "PLAYER_AVATAR_FLAG_ON_FOOT",
+    "PLAYER_AVATAR_FLAG_MACH_BIKE",
+    "PLAYER_AVATAR_FLAG_ACRO_BIKE",
+    "PLAYER_AVATAR_FLAG_SURFING",
+    "PLAYER_AVATAR_FLAG_UNDERWATER",
+    "PLAYER_AVATAR_FLAG_CONTROLLABLE",
+    "PLAYER_AVATAR_FLAG_FORCED_MOVE",
+    "PLAYER_AVATAR_FLAG_DASH"
+  ],
+  "legacyFiles": [
+    "include/global.fieldmap.h",
+    "src/field_player_avatar.c",
+    "src/overworld.c"
+  ]
+}

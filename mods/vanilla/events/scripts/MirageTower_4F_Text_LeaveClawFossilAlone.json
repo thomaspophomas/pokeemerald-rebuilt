@@ -1,0 +1,19 @@
+{
+  "id": "MirageTower_4F_Text_LeaveClawFossilAlone",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MirageTower_4F/scripts.inc",
+    "sha1": "0e490ee2e9400861a54b910d5d29825dad66deb9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MirageTower_4F/scripts.inc",
+    "rawScript": ".string \"{PLAYER} left the CLAW FOSSIL alone.$\""
+  },
+  "label": "MirageTower_4F_Text_LeaveClawFossilAlone",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MirageTower_4F/scripts.inc",
+  "references": {}
+}

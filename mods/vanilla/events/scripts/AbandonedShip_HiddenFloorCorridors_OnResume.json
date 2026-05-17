@@ -1,0 +1,23 @@
+{
+  "id": "AbandonedShip_HiddenFloorCorridors_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+    "sha1": "93793c09cf0421032fc19eaa4c310ad93c2d25a2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+    "rawScript": "setdivewarp MAP_ABANDONED_SHIP_UNDERWATER1, 5, 4\n\tend"
+  },
+  "label": "AbandonedShip_HiddenFloorCorridors_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_ABANDONED_SHIP_UNDERWATER1"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Text_TellMeWhatsNewAndIn",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown/scripts.inc",
+    "sha1": "e9e724e6d3bba641bcb2d4263fe226ee6c1b4840"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown/scripts.inc",
+    "rawScript": ".string \"Hunh?\\n\"\n\t.string \"It's not the hip and happening thing?\\p\"\n\t.string \"Well, hey, you have to tell me,\\n\"\n\t.string \"what's new and what's \u201cin\u201d?$\""
+  },
+  "label": "DewfordTown_Text_TellMeWhatsNewAndIn",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown/scripts.inc",
+  "references": {}
+}

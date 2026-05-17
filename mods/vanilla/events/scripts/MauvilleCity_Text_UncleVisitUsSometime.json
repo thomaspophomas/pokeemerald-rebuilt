@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_UncleVisitUsSometime",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"UNCLE: {PLAYER}{KUN}, it just dawned on me\\n\"\n\t.string \"that you must be the TRAINER who kept\\l\"\n\t.string \"an eye out for WALLY when he caught\\l\"\n\t.string \"his POK\u00e9MON.\\p\"\n\t.string \"Why don't you visit us in VERDANTURF\\n\"\n\t.string \"sometime?\\l\"\n\t.string \"I'm sure WALLY would enjoy it.$\""
+  },
+  "label": "MauvilleCity_Text_UncleVisitUsSometime",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

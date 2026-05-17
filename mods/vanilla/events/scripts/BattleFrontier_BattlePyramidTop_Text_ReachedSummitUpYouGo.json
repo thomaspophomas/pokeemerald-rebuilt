@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePyramidTop_Text_ReachedSummitUpYouGo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "sha1": "6256c29eca306dafcaec0dabbacc64547c474e58"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "rawScript": ".string \"It is a delight to see you here!\\n\"\n\t.string \"You have reached the summit of\\l\"\n\t.string \"the BATTLE PYRAMID!\\p\"\n\t.string \"Above here is the PYRAMID's\\n\"\n\t.string \"lookout point.\\p\"\n\t.string \"It is a place open only to those\\n\"\n\t.string \"who have conquered the PYRAMID.\\p\"\n\t.string \"Now, please!\\n\"\n\t.string \"Up you go!$\""
+  },
+  "label": "BattleFrontier_BattlePyramidTop_Text_ReachedSummitUpYouGo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+  "references": {}
+}

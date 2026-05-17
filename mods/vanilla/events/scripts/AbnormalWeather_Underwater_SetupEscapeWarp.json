@@ -1,0 +1,23 @@
+{
+  "id": "AbnormalWeather_Underwater_SetupEscapeWarp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/abnormal_weather.inc",
+    "sha1": "8bf77729e5d8e5ebd0812ce736eaf3712ec673f3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/abnormal_weather.inc",
+    "rawScript": "switch VAR_ABNORMAL_WEATHER_LOCATION\n\tcase ABNORMAL_WEATHER_ROUTE_105_NORTH, AbnormalWeather_Underwater_SetupEscapeWarpRoute105North\n\tcase ABNORMAL_WEATHER_ROUTE_105_SOUTH, AbnormalWeather_Underwater_SetupEscapeWarpRoute105South\n\tcase ABNORMAL_WEATHER_ROUTE_125_WEST, AbnormalWeather_Underwater_SetupEscapeWarpRoute125West\n\tcase ABNORMAL_WEATHER_ROUTE_125_EAST, AbnormalWeather_Underwater_SetupEscapeWarpRoute125East\n\tcase ABNORMAL_WEATHER_ROUTE_127_NORTH, AbnormalWeather_Underwater_SetupEscapeWarpRoute127North\n\tcase ABNORMAL_WEATHER_ROUTE_127_SOUTH, AbnormalWeather_Underwater_SetupEscapeWarpRoute127South\n\tcase ABNORMAL_WEATHER_ROUTE_129_WEST, AbnormalWeather_Underwater_SetupEscapeWarpRoute129West\n\tcase ABNORMAL_WEATHER_ROUTE_129_EAST, AbnormalWeather_Underwater_SetupEscapeWarpRoute129East\n\treturn"
+  },
+  "label": "AbnormalWeather_Underwater_SetupEscapeWarp",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/scripts/abnormal_weather.inc",
+  "references": {
+    "vars": [
+      "VAR_ABNORMAL_WEATHER_LOCATION"
+    ]
+  }
+}

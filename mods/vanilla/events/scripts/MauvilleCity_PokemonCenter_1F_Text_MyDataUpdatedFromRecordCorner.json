@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_PokemonCenter_1F_Text_MyDataUpdatedFromRecordCorner",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "4f26b55b9e0eea95f2364faf35b676a0a26a3ce0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"When I accessed the RECORD CORNER,\\n\"\n\t.string \"the data for what's hot in DEWFORD\\l\"\n\t.string \"got updated.\\p\"\n\t.string \"Now that bit of data is the same\\n\"\n\t.string \"as my friend's!$\""
+  },
+  "label": "MauvilleCity_PokemonCenter_1F_Text_MyDataUpdatedFromRecordCorner",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

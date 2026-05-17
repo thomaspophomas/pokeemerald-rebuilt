@@ -1,0 +1,23 @@
+{
+  "id": "SlateportCity_PokemonFanClub_EventScript_AcceptInterview",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/interview.inc",
+    "sha1": "bd1d5135ce2e319a18291aebafac5c4760b90500"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/interview.inc",
+    "rawScript": "msgbox SlateportCity_PokemonFanClub_Text_HereGoesQuickAnswers, MSGBOX_DEFAULT\n\trandom 3\n\tcopyvar VAR_0x800A, VAR_RESULT\n\tswitch VAR_RESULT\n\tcase 0, SlateportCity_PokemonFanClub_EventScript_RandomQuestion1\n\tcase 1, SlateportCity_PokemonFanClub_EventScript_RandomQuestion2\n\tcase 2, SlateportCity_PokemonFanClub_EventScript_RandomQuestion3\n\tend"
+  },
+  "label": "SlateportCity_PokemonFanClub_EventScript_AcceptInterview",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/interview.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

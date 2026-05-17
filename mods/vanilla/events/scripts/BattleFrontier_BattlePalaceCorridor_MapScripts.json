@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePalaceCorridor_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc",
+    "sha1": "64a2ef91c8d0c246c8214b48e91e15abe9171a8e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleFrontier_BattlePalaceCorridor_OnFrame\n\t.byte 0"
+  },
+  "label": "BattleFrontier_BattlePalaceCorridor_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE"
+    ]
+  }
+}

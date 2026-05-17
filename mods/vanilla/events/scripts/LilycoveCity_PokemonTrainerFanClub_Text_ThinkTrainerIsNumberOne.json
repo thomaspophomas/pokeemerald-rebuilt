@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_Text_ThinkTrainerIsNumberOne",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": ".string \"You're a pretty decent TRAINER,\\n\"\n\t.string \"I think.\\p\"\n\t.string \"But I also think that {STR_VAR_1}\\n\"\n\t.string \"is number one right now.\\p\"\n\t.string \"That's just my opinion.\\n\"\n\t.string \"Don't worry about it too much.$\""
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_Text_ThinkTrainerIsNumberOne",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Gym_Text_TommyPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Gym/scripts.inc",
+    "sha1": "e0aa9de4fed612674104e48c7646854400dcecde"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Gym/scripts.inc",
+    "rawScript": ".string \"ROXANNE is stronger than me by\\n\"\n\t.string \"several times.\\p\"\n\t.string \"You'd better be on your guard!$\""
+  },
+  "label": "RustboroCity_Gym_Text_TommyPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Gym/scripts.inc",
+  "references": {}
+}

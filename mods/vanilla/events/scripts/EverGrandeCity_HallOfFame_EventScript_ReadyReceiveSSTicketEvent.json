@@ -1,0 +1,27 @@
+{
+  "id": "EverGrandeCity_HallOfFame_EventScript_ReadyReceiveSSTicketEvent",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/hall_of_fame.inc",
+    "sha1": "ad8d59f5f126d3c072b77148cefce9521a239ae5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/hall_of_fame.inc",
+    "rawScript": "setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 3\n\tsetvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 3\n\tclearflag FLAG_HIDE_PLAYERS_HOUSE_DAD\n\treturn"
+  },
+  "label": "EverGrandeCity_HallOfFame_EventScript_ReadyReceiveSSTicketEvent",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/hall_of_fame.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_PLAYERS_HOUSE_DAD"
+    ],
+    "vars": [
+      "VAR_LITTLEROOT_HOUSES_STATE_BRENDAN",
+      "VAR_LITTLEROOT_HOUSES_STATE_MAY"
+    ]
+  }
+}

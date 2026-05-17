@@ -1,0 +1,39 @@
+{
+  "id": "ITEM_NET_BALL",
+  "domain": "pokeballs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/mod/pokeball.c",
+    "sha1": "33d25b17be0efe4ad368348c596e2ba324574b45"
+  },
+  "legacy": {
+    "kind": "pokeball_definition",
+    "sourcePath": "src/mod/pokeball.c",
+    "rawC": "{ \"vanilla:net_ball\",     ITEM_NET_BALL,     BALL_NET,     10,                             0, NULL, BattleScript_BallThrow,       NULL }",
+    "generatedKey": "vanilla:net_ball"
+  },
+  "key": "vanilla:net_ball",
+  "itemId": "ITEM_NET_BALL",
+  "ballId": "BALL_NET",
+  "catchModifier": "10",
+  "catchModifierHook": "PokeBallApi_NetBallCatchModifier",
+  "battleScript": "BattleScript_BallThrow",
+  "commitHook": null,
+  "flags": "0",
+  "itemIcon": "gItemIcon_NetBall",
+  "itemPalette": "gItemIconPalette_NetBall",
+  "throwSprite": {
+    "sheet": "gBallGfx_Net",
+    "palette": "gBallPal_Net",
+    "tileTag": "GFX_TAG_NET_BALL",
+    "paletteTag": "GFX_TAG_NET_BALL",
+    "templateTable": "gBallSpriteTemplates"
+  },
+  "openAnimation": {
+    "particleSheet": "gBattleAnimSpriteGfx_Particles",
+    "particlePalette": "gBattleAnimSpritePal_CircleImpact",
+    "particleTag": "TAG_PARTICLES_NETBALL",
+    "animNum": "2",
+    "taskFunc": "SafariBallOpenParticleAnimation"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_2F/scripts.inc",
+    "sha1": "5b4ee799e1c265da48c7feabc7e0a7e45485708e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_2F/scripts.inc",
+    "rawScript": ".string \"My husband is waiting at home.\\n\"\n\t.string \"What would make a good gift for him?$\""
+  },
+  "label": "LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_2F/scripts.inc",
+  "references": {}
+}

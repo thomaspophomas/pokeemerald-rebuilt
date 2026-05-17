@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomNormal_EventScript_DefeatedLucy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "sha1": "54c1e0ee021a3a91375f3b05c8682c17ed095aa9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "rawScript": "applymovement LOCALID_PIKE_ROOM_NPC_1, BattleFrontier_BattlePikeRoomNormal_Movement_LucyMoveAside\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, BattleFrontier_BattlePikeRoomNormal_Movement_PlayerWalkUp2\n\twaitmovement 0\n\tpike_get PIKE_DATA_WIN_STREAK\n\taddvar VAR_RESULT, 1\n\tpike_set PIKE_DATA_WIN_STREAK, VAR_RESULT\n\tcall BattleFrontier_BattlePikeRoom_EventScript_WarpToFinalRoom\n\twaitstate\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeRoomNormal_EventScript_DefeatedLucy",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

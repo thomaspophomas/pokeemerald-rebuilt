@@ -1,0 +1,19 @@
+{
+  "id": "TrainerHill_Roof_Text_HaveTheMostMarvelousGift",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "sha1": "cbfca2354a8d8ed8d68e2612fb0b6f2525008a5f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "rawScript": ".string \"For a marvelous someone like you,\\n\"\n\t.string \"I have the most marvelous gift!$\""
+  },
+  "label": "TrainerHill_Roof_Text_HaveTheMostMarvelousGift",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/TrainerHill_Entrance/scripts.inc",
+  "references": {}
+}

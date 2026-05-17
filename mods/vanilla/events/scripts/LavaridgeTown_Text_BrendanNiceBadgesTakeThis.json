@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Text_BrendanNiceBadgesTakeThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": ".string \"BRENDAN: {PLAYER}, hey, it's been a while.\\n\"\n\t.string \"How's it going?\\p\"\n\t.string \"Hmm\u2026\\n\"\n\t.string \"That's a decent collection of BADGES.\\p\"\n\t.string \"All right, then.\\n\"\n\t.string \"You may as well have this.$\""
+  },
+  "label": "LavaridgeTown_Text_BrendanNiceBadgesTakeThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {}
+}

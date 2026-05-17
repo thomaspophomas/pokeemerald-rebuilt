@@ -1,0 +1,23 @@
+{
+  "id": "LittlerootTown_EventScript_MomReturnHomeFemale5",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": "applymovement LOCALID_LITTLEROOT_MOM, LittlerootTown_Movement_MomReturnHomeFemale5\n\twaitmovement 0\n\topendoor VAR_0x8009, VAR_0x800A\n\twaitdooranim\n\tapplymovement LOCALID_LITTLEROOT_MOM, LittlerootTown_Movement_MomExitThroughDoor\n\twaitmovement 0\n\thideobjectat LOCALID_LITTLEROOT_MOM, MAP_LITTLEROOT_TOWN\n\tclosedoor VAR_0x8009, VAR_0x800A\n\twaitdooranim\n\treturn"
+  },
+  "label": "LittlerootTown_EventScript_MomReturnHomeFemale5",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_LITTLEROOT_TOWN"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "PetalburgCity_Mart_Pokemart_Expanded",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Mart/scripts.inc",
+    "sha1": "24d08ff30f80ab3ca9bbc615acb31bc95359ba3b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Mart/scripts.inc",
+    "rawScript": ".2byte ITEM_POKE_BALL\n\t.2byte ITEM_GREAT_BALL\n\t.2byte ITEM_POTION\n\t.2byte ITEM_SUPER_POTION\n\t.2byte ITEM_ANTIDOTE\n\t.2byte ITEM_PARALYZE_HEAL\n\t.2byte ITEM_AWAKENING\n\t.2byte ITEM_ESCAPE_ROPE\n\t.2byte ITEM_REPEL\n\t.2byte ITEM_X_SPEED\n\t.2byte ITEM_X_ATTACK\n\t.2byte ITEM_X_DEFEND\n\t.2byte ITEM_ORANGE_MAIL\n\tpokemartlistend"
+  },
+  "label": "PetalburgCity_Mart_Pokemart_Expanded",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/PetalburgCity_Mart/scripts.inc",
+  "references": {
+    "items": [
+      "ITEM_ANTIDOTE",
+      "ITEM_AWAKENING",
+      "ITEM_ESCAPE_ROPE",
+      "ITEM_GREAT_BALL",
+      "ITEM_ORANGE_MAIL",
+      "ITEM_PARALYZE_HEAL",
+      "ITEM_POKE_BALL",
+      "ITEM_POTION",
+      "ITEM_REPEL",
+      "ITEM_SUPER_POTION",
+      "ITEM_X_ATTACK",
+      "ITEM_X_DEFEND",
+      "ITEM_X_SPEED"
+    ]
+  }
+}

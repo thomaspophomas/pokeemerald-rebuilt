@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_UncleCanYouBattleWally",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"UNCLE: {PLAYER}{KUN}, was it?\\n\"\n\t.string \"On WALLY's behalf, can I ask you to\\l\"\n\t.string \"battle with him just this once?\\p\"\n\t.string \"I don't think he's going to listen to\\n\"\n\t.string \"any reason the way he is now.$\""
+  },
+  "label": "MauvilleCity_Text_UncleCanYouBattleWally",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

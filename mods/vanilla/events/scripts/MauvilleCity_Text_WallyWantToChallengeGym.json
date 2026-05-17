@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_WallyWantToChallengeGym",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"WALLY: Aww, UNCLE, please?\\p\"\n\t.string \"I want to challenge this GYM and see\\n\"\n\t.string \"how much better I've become.\\p\"\n\t.string \"Please? May I, please?$\""
+  },
+  "label": "MauvilleCity_Text_WallyWantToChallengeGym",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

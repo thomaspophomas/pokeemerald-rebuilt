@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_PokemonCenter_2F_Text_Woman5",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_PokemonCenter_2F/scripts.inc",
+    "sha1": "b872c404a8cf9392e2924ec4cd02bf75f3cc4c02"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_PokemonCenter_2F/scripts.inc",
+    "rawScript": ".string \"If I win a whole lot of link battles\\n\"\n\t.string \"and show everyone how good I am,\\l\"\n\t.string \"I might get a fan following!$\""
+  },
+  "label": "MossdeepCity_PokemonCenter_2F_Text_Woman5",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_PokemonCenter_2F/scripts.inc",
+  "references": {}
+}

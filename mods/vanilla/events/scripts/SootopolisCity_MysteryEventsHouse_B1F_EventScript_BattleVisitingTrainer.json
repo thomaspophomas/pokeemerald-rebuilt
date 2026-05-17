@@ -1,0 +1,27 @@
+{
+  "id": "SootopolisCity_MysteryEventsHouse_B1F_EventScript_BattleVisitingTrainer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_MysteryEventsHouse_B1F/scripts.inc",
+    "sha1": "9a58ab5d1fb1306581fc7e54c8b85f2f69a8ee94"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_MysteryEventsHouse_B1F/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_PLAYER, SootopolisCity_MysteryEventsHouse_B1F_Movement_PlayerEnterBasement\n\twaitmovement 0\n\tspecial CopyEReaderTrainerGreeting\n\tmsgbox gStringVar4, MSGBOX_DEFAULT\n\tclosemessage\n\tsetvar VAR_0x8004, SPECIAL_BATTLE_EREADER\n\tsetvar VAR_0x8005, 0\n\tspecial DoSpecialTrainerBattle\n\tcall_if_eq VAR_RESULT, B_OUTCOME_DREW, SootopolisCity_MysteryEventsHouse_B1F_EventScript_BattleTie\n\tcall_if_eq VAR_RESULT, B_OUTCOME_WON, SootopolisCity_MysteryEventsHouse_B1F_EventScript_BattleWon\n\tcall_if_eq VAR_RESULT, B_OUTCOME_LOST, SootopolisCity_MysteryEventsHouse_B1F_EventScript_BattleLost\n\tclosemessage\n\tspecial HealPlayerParty\n\tapplymovement LOCALID_PLAYER, SootopolisCity_MysteryEventsHouse_B1F_Movement_PlayerExitBasement\n\twaitmovement 0\n\tspecial LoadPlayerParty\n\tsetvar VAR_TEMP_1, 1\n\twarp MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_1F, 3, 1\n\twaitstate\n\treleaseall\n\tend"
+  },
+  "label": "SootopolisCity_MysteryEventsHouse_B1F_EventScript_BattleVisitingTrainer",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity_MysteryEventsHouse_B1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_1"
+    ],
+    "maps": [
+      "MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_1F"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_CoveLilyMotel_2F_Text_FilledPokedexGiveYouThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+    "sha1": "f1b25840a73dbfc8affb6142a8450fed0204496f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+    "rawScript": ".string \"Wow! That's awesome!\\n\"\n\t.string \"Yep, it's totally awesome!\\p\"\n\t.string \"This POK\u00e9DEX is completely filled!\\n\"\n\t.string \"You really must love POK\u00e9MON!\\p\"\n\t.string \"I'm so impressed!\\p\"\n\t.string \"Let me give you something in\\n\"\n\t.string \"recognition of your feat!$\""
+  },
+  "label": "LilycoveCity_CoveLilyMotel_2F_Text_FilledPokedexGiveYouThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Route110_SeasideCyclingRoadSouthEntrance_Movement_PushPlayerBackFromCounter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.inc",
+    "sha1": "76a2b9429a0b6a610f3225434b5a09de5ae8146a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.inc",
+    "rawScript": "walk_left\n\tstep_end"
+  },
+  "label": "Route110_SeasideCyclingRoadSouthEntrance_Movement_PushPlayerBackFromCounter",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.inc",
+  "references": {}
+}

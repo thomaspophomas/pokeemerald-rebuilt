@@ -1,0 +1,24 @@
+{
+  "id": "FallarborTown_BattleTentBattleRoom_EventScript_SetPlayerGfxFemale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+    "sha1": "8bbb2b24c65698ff0f5d4dcb7592d7ae122741de"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+    "rawScript": "setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_RIVAL_MAY_NORMAL\n\tsetvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_MAY_NORMAL\n\treturn"
+  },
+  "label": "FallarborTown_BattleTentBattleRoom_EventScript_SetPlayerGfxFemale",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_OBJ_GFX_ID_0",
+      "VAR_OBJ_GFX_ID_1"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Route113_GlassWorkshop_EventScript_NotEnoughAshForItem",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "sha1": "6a7101e66439e9abedcc55c8fc60b573807258b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "rawScript": "subvar VAR_0x800A, VAR_ASH_GATHER_COUNT\n\tbuffernumberstring STR_VAR_2, VAR_0x800A\n\tmessage Route113_GlassWorkshop_Text_NotEnoughAshToMakeItem\n\twaitmessage\n\tgoto Route113_GlassWorkshop_EventScript_ChooseGlassItem\n\tend"
+  },
+  "label": "Route113_GlassWorkshop_EventScript_NotEnoughAshForItem",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route113_GlassWorkshop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_ASH_GATHER_COUNT"
+    ]
+  }
+}

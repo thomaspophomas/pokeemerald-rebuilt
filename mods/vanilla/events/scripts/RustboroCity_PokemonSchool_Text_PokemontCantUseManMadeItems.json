@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_PokemonSchool_Text_PokemontCantUseManMadeItems",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "sha1": "155fc7f1cee833cb06df85a407e5f98f216a928e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "rawScript": ".string \"POK\u00e9MON can hold items, but they\\n\"\n\t.string \"don't know what to do with man-made\\l\"\n\t.string \"items like POTION and ANTIDOTE.$\""
+  },
+  "label": "RustboroCity_PokemonSchool_Text_PokemontCantUseManMadeItems",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+  "references": {}
+}

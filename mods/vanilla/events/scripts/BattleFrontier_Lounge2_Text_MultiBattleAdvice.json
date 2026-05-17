@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge2_Text_MultiBattleAdvice",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "sha1": "d4d4f7c0802f8118a63eaf9b68eb6bcff146ff4d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "rawScript": ".string \"All sorts of TRAINERS gather in\\n\"\n\t.string \"the BATTLE SALON.\\p\"\n\t.string \"Just think--you may run into your\\n\"\n\t.string \"friends or followers!\\l\"\n\t.string \"You should look carefully!$\""
+  },
+  "label": "BattleFrontier_Lounge2_Text_MultiBattleAdvice",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,27 @@
+{
+  "id": "CaveOfOrigin_EventScript_DisableTriggers",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cave_of_origin.inc",
+    "sha1": "3b25b8696d85672c07bb7fd23a4bb27522009fc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cave_of_origin.inc",
+    "rawScript": "setvar VAR_TEMP_1, 1\n\tsetvar VAR_TEMP_2, 1\n\tsetvar VAR_TEMP_3, 1\n\tsetvar VAR_TEMP_4, 1\n\tsetvar VAR_TEMP_5, 1\n\treturn"
+  },
+  "label": "CaveOfOrigin_EventScript_DisableTriggers",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cave_of_origin.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1",
+      "VAR_TEMP_2",
+      "VAR_TEMP_3",
+      "VAR_TEMP_4",
+      "VAR_TEMP_5"
+    ]
+  }
+}

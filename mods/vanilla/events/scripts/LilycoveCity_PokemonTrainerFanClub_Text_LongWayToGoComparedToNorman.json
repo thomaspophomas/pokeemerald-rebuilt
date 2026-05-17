@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_Text_LongWayToGoComparedToNorman",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": ".string \"NORMAN battled with more power,\\n\"\n\t.string \"charisma, and showmanship than you.\\p\"\n\t.string \"Even though people may say that\\n\"\n\t.string \"you're strong\u2026\\p\"\n\t.string \"You've still got a long way to go\\n\"\n\t.string \"compared to your father.$\""
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_Text_LongWayToGoComparedToNorman",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {}
+}

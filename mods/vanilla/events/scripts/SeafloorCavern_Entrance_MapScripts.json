@@ -1,0 +1,23 @@
+{
+  "id": "SeafloorCavern_Entrance_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Entrance/scripts.inc",
+    "sha1": "8c330241299cc7a79f577ced9c7a80a8f74605ab"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SeafloorCavern_Entrance/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, SeafloorCavern_Entrance_OnResume\n\t.byte 0"
+  },
+  "label": "SeafloorCavern_Entrance_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/SeafloorCavern_Entrance/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_RESUME"
+    ]
+  }
+}

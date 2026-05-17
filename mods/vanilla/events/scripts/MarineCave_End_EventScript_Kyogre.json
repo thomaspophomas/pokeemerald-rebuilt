@@ -1,0 +1,30 @@
+{
+  "id": "MarineCave_End_EventScript_Kyogre",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MarineCave_End/scripts.inc",
+    "sha1": "9fc74c6c75db5dcc1953c7f9fbd123e07dd022d5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MarineCave_End/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_PLAYER, Common_Movement_FaceUp\n\twaitmovement 0\n\tapplymovement LOCALID_MARINE_CAVE_KYOGRE, MarineCave_End_Movement_KyogreApproach\n\twaitmovement 0\n\twaitse\n\tplaymoncry SPECIES_KYOGRE, CRY_MODE_ENCOUNTER\n\tdelay 40\n\twaitmoncry\n\tsetvar VAR_LAST_TALKED, LOCALID_MARINE_CAVE_KYOGRE\n\tsetwildbattle SPECIES_KYOGRE, 70\n\tsetflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecial BattleSetup_StartLegendaryBattle\n\tclearflag FLAG_SYS_CTRL_OBJ_DELETE\n\tsetvar VAR_TEMP_1, 0\n\tspecialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_WON, MarineCave_End_EventScript_DefeatedKyogre\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_RAN, MarineCave_End_EventScript_RanFromKyogre\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, MarineCave_End_EventScript_RanFromKyogre\n\tsetvar VAR_SHOULD_END_ABNORMAL_WEATHER, 1\n\tsetflag FLAG_DEFEATED_KYOGRE\n\treleaseall\n\tend"
+  },
+  "label": "MarineCave_End_EventScript_Kyogre",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MarineCave_End/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_KYOGRE",
+      "FLAG_SYS_CTRL_OBJ_DELETE"
+    ],
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT",
+      "VAR_SHOULD_END_ABNORMAL_WEATHER",
+      "VAR_TEMP_1"
+    ]
+  }
+}

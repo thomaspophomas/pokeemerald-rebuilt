@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Text_InvolvedWithCrisisComeWithMe",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": ".string \"STEVEN: Those POK\u00e9MON fighting\u2026\\n\"\n\t.string \"GROUDON\u2026 And KYOGRE\u2026\\p\"\n\t.string \"The two super-ancient POK\u00e9MON\\n\"\n\t.string \"were awakened from a long sleep\u2026\\p\"\n\t.string \"And now they are smashing each other\\n\"\n\t.string \"with their uncontrollable energy\u2026\\p\"\n\t.string \"\u2026{PLAYER}{KUN}.\\p\"\n\t.string \"You being here now I'll take to mean\\n\"\n\t.string \"that you're prepared to become\\l\"\n\t.string \"involved in this crisis.\\p\"\n\t.string \"Well, then, there's someone that\\n\"\n\t.string \"I'd like you to meet.\\p\"\n\t.string \"Come with me, please.$\""
+  },
+  "label": "SootopolisCity_Text_InvolvedWithCrisisComeWithMe",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

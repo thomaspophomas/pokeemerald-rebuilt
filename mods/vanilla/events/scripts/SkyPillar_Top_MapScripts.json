@@ -1,0 +1,25 @@
+{
+  "id": "SkyPillar_Top_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Top/scripts.inc",
+    "sha1": "db486fa7ae1229bdf3cba19c1d86940ca9a59221"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_Top/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, SkyPillar_Top_OnResume\n\tmap_script MAP_SCRIPT_ON_TRANSITION, SkyPillar_Top_OnTransition\n\tmap_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, SkyPillar_Top_OnWarp\n\t.byte 0"
+  },
+  "label": "SkyPillar_Top_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/SkyPillar_Top/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION",
+      "MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE"
+    ]
+  }
+}

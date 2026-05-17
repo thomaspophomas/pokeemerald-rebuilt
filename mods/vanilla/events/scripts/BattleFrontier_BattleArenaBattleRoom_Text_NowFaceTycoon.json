@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleArenaBattleRoom_Text_NowFaceTycoon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "sha1": "d0a70f09e21302da78823f02966e03f9b41a3a1a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "rawScript": ".string \"My dear challenger!\\p\"\n\t.string \"Your skill level is truly astounding!\\p\"\n\t.string \"We now would like you to face our\\n\"\n\t.string \"leader, the ARENA TYCOON!$\""
+  },
+  "label": "BattleFrontier_BattleArenaBattleRoom_Text_NowFaceTycoon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+  "references": {}
+}

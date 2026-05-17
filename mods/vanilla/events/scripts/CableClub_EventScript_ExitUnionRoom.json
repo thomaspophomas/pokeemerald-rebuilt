@@ -1,0 +1,19 @@
+{
+  "id": "CableClub_EventScript_ExitUnionRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "lockall\n\tcall CableClub_EventScript_PlayerExitUnionRoom\n\tcall CableClub_EventScript_CloseUnionRoomBarrier\n\tspecial DrawWholeMapView\n\tplayse SE_CLICK\n\terasebox 0, 0, 29, 19\n\treleaseall\n\tend"
+  },
+  "label": "CableClub_EventScript_ExitUnionRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {}
+}

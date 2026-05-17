@@ -1,0 +1,25 @@
+{
+  "id": "RustboroCity_Gym_SetGymTrainers",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/set_gym_trainers.inc",
+    "sha1": "90019f7a2097712cc57c824c9118423a5a8171bd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/set_gym_trainers.inc",
+    "rawScript": "settrainerflag TRAINER_JOSH\n\tsettrainerflag TRAINER_TOMMY\n\tsettrainerflag TRAINER_MARC\n\treturn"
+  },
+  "label": "RustboroCity_Gym_SetGymTrainers",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/scripts/set_gym_trainers.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_JOSH",
+      "TRAINER_MARC",
+      "TRAINER_TOMMY"
+    ]
+  }
+}

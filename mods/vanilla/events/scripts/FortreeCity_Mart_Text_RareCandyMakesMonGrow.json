@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Mart_Text_RareCandyMakesMonGrow",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Mart/scripts.inc",
+    "sha1": "39e9591afc4b01702cd84304453dd4d1ee0ffe23"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Mart/scripts.inc",
+    "rawScript": ".string \"A RARE CANDY makes a POK\u00e9MON grow\\n\"\n\t.string \"immediately by one level.$\""
+  },
+  "label": "FortreeCity_Mart_Text_RareCandyMakesMonGrow",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_Mart/scripts.inc",
+  "references": {}
+}

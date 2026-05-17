@@ -1,0 +1,20 @@
+{
+  "id": "ITEM_BIG_MUSHROOM:icon",
+  "domain": "sprite_assets",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/item_icon_table.h",
+    "sha1": "ce57365d2f9ca3a6848ca0258568c83717a68707"
+  },
+  "legacy": {
+    "kind": "item_icon_asset",
+    "sourcePath": "src/data/item_icon_table.h"
+  },
+  "key": "ITEM_BIG_MUSHROOM:icon",
+  "assetKind": "item_icon",
+  "itemId": "ITEM_BIG_MUSHROOM",
+  "iconDataSymbol": "gItemIcon_BigMushroom",
+  "paletteDataSymbol": "gItemIconPalette_Mushroom",
+  "tileTag": "TAG_NONE",
+  "paletteTag": "TAG_NONE"
+}

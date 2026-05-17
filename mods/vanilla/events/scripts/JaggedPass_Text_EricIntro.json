@@ -1,0 +1,19 @@
+{
+  "id": "JaggedPass_Text_EricIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/JaggedPass/scripts.inc",
+    "sha1": "3539aca2d309baaf0b57344f9c2014b5d896c94b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/JaggedPass/scripts.inc",
+    "rawScript": ".string \"MT. CHIMNEY's JAGGED PASS\u2026\\p\"\n\t.string \"Now this is what I've always wanted\\n\"\n\t.string \"in a mountain.\\p\"\n\t.string \"This jagged bumpiness\u2026\\n\"\n\t.string \"It rocks my soul!$\""
+  },
+  "label": "JaggedPass_Text_EricIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/JaggedPass/scripts.inc",
+  "references": {}
+}

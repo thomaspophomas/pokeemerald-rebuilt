@@ -1,0 +1,19 @@
+{
+  "id": "BerryBlender_Text_DontHaveAnyBerriesNoneToSpare",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": ".string \"Oh?\\n\"\n\t.string \"You don't have any BERRIES?\\p\"\n\t.string \"If I had some left over, I'd gladly\\n\"\n\t.string \"give you one\u2026\\p\"\n\t.string \"But, I don't have any to spare today.\\n\"\n\t.string \"Sorry about that.$\""
+  },
+  "label": "BerryBlender_Text_DontHaveAnyBerriesNoneToSpare",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {}
+}

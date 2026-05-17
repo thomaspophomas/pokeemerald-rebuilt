@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_2F_Text_ThanksAddedNewPainting",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "sha1": "c41e25282a159070f0eb7fb3edcf1b61cc1cfa19"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "rawScript": ".string \"Thanks to you, we've added a new\\n\"\n\t.string \"painting to our collection!\\p\"\n\t.string \"I've heard it depicts your POK\u00e9MON.\\n\"\n\t.string \"Truly magnificent!\\p\"\n\t.string \"Thank you so very, very much!$\""
+  },
+  "label": "LilycoveCity_LilycoveMuseum_2F_Text_ThanksAddedNewPainting",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,29 @@
+{
+  "id": "SlateportCity_BattleTentLobby_EventScript_TormentGiver",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+    "sha1": "d8233cb564c951151609565c69259c5bc6039b75"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_TM_TORMENT, SlateportCity_BattleTentLobby_EventScript_ReceivedTorment\n\tmsgbox SlateportCity_BattleTentLobby_Text_CouldntFindMonForMe, MSGBOX_DEFAULT\n\tgiveitem ITEM_TM_TORMENT\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_RECEIVED_TM_TORMENT\n\tmsgbox SlateportCity_BattleTentLobby_Text_ExplainTorment, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "SlateportCity_BattleTentLobby_EventScript_TormentGiver",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_TM_TORMENT"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_TM_TORMENT"
+    ]
+  }
+}

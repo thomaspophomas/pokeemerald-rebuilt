@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Hall_Text_TrendHasBecomePartOfLife",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Hall/scripts.inc",
+    "sha1": "78185d3058996bff2579b5133faf680c4df6865f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Hall/scripts.inc",
+    "rawScript": ".string \"I was thinking, though\u2026\\p\"\n\t.string \"Wouldn't you agree that\\n\"\n\t.string \"\u201c{STR_VAR_1}\u201d has\\l\"\n\t.string \"grown from being something trendy to\\l\"\n\t.string \"being a part of our daily lives?$\""
+  },
+  "label": "DewfordTown_Hall_Text_TrendHasBecomePartOfLife",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown_Hall/scripts.inc",
+  "references": {}
+}

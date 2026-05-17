@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_PokemonCenter_2F_EventScript_RecordCorner",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_PokemonCenter_2F/scripts.inc",
+    "sha1": "4cbcac17ffd511dfb9e9ca856c10d4adad369f22"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_PokemonCenter_2F/scripts.inc",
+    "rawScript": "call CableClub_EventScript_RecordCorner\n\tend"
+  },
+  "label": "FortreeCity_PokemonCenter_2F_EventScript_RecordCorner",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FortreeCity_PokemonCenter_2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Gym_Text_ExplainBulkUp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Gym/scripts.inc",
+    "sha1": "595ba5581d9eb698f4762f9b34da6e4f6c2a7a55"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Gym/scripts.inc",
+    "rawScript": ".string \"That TM08 contains BULK UP.\\p\"\n\t.string \"It's a move that raises both ATTACK\\n\"\n\t.string \"and DEFENSE stats.\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026$\""
+  },
+  "label": "DewfordTown_Gym_Text_ExplainBulkUp",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown_Gym/scripts.inc",
+  "references": {}
+}

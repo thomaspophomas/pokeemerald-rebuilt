@@ -1,0 +1,23 @@
+{
+  "id": "EverGrandeCity_PhoebesRoom_OnFrame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc",
+    "sha1": "19093003402affcdd9afdda6a47a9abe8524d0e2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc",
+    "rawScript": "map_script_2 VAR_ELITE_4_STATE, 1, EverGrandeCity_PhoebesRoom_EventScript_WalkInCloseDoor\n\t.2byte 0"
+  },
+  "label": "EverGrandeCity_PhoebesRoom_OnFrame",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_ELITE_4_STATE"
+    ]
+  }
+}

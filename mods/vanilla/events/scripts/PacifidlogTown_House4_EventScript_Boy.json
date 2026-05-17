@@ -1,0 +1,23 @@
+{
+  "id": "PacifidlogTown_House4_EventScript_Boy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_House4/scripts.inc",
+    "sha1": "f73026c10489d0f955542625b58858b3adf6b0f1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown_House4/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmsgbox PacifidlogTown_House4_Text_WhereDidYouComeFrom, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, PacifidlogTown_House4_EventScript_Yes\n\tgoto_if_eq VAR_RESULT, NO, PacifidlogTown_House4_EventScript_No\n\tend"
+  },
+  "label": "PacifidlogTown_House4_EventScript_Boy",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PacifidlogTown_House4/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

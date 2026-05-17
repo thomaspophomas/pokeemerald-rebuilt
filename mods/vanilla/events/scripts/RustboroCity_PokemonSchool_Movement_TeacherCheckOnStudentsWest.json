@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_PokemonSchool_Movement_TeacherCheckOnStudentsWest",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "sha1": "155fc7f1cee833cb06df85a407e5f98f216a928e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "rawScript": "walk_left\n\twalk_down\n\twalk_down\n\twalk_right\n\twalk_in_place_faster_down\n\tdelay_16\n\tdelay_16\n\tdelay_16\n\twalk_down\n\twalk_in_place_faster_left\n\tdelay_16\n\tdelay_16\n\twalk_right\n\tdelay_16\n\tdelay_16\n\tdelay_8\n\twalk_up\n\twalk_left\n\twalk_left\n\twalk_up\n\twalk_up\n\twalk_right\n\tstep_end"
+  },
+  "label": "RustboroCity_PokemonSchool_Movement_TeacherCheckOnStudentsWest",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+  "references": {}
+}

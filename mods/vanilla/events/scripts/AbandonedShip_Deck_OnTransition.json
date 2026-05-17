@@ -1,0 +1,23 @@
+{
+  "id": "AbandonedShip_Deck_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Deck/scripts.inc",
+    "sha1": "2181c1a84cd0f94e81fa1c1ebc724012c77e0119"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_Deck/scripts.inc",
+    "rawScript": "setflag FLAG_LANDMARK_ABANDONED_SHIP\n\tend"
+  },
+  "label": "AbandonedShip_Deck_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/AbandonedShip_Deck/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_LANDMARK_ABANDONED_SHIP"
+    ]
+  }
+}

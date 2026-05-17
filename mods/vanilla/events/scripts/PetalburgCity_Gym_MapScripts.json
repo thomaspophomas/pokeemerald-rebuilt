@@ -1,0 +1,26 @@
+{
+  "id": "PetalburgCity_Gym_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_LOAD, PetalburgCity_Gym_OnLoad\n\tmap_script MAP_SCRIPT_ON_TRANSITION, PetalburgCity_Gym_OnTransition\n\tmap_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, PetalburgCity_Gym_OnWarp\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, PetalburgCity_Gym_OnFrame\n\t.byte 0"
+  },
+  "label": "PetalburgCity_Gym_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_TRANSITION",
+      "MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MagmaHideout_3F_1R_Text_Grunt9Intro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_3F_1R/scripts.inc",
+    "sha1": "474fc38ac5a7f662f15777828471aa95dd813607"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_3F_1R/scripts.inc",
+    "rawScript": ".string \"What did I do to deserve this guard\\n\"\n\t.string \"posting?\\p\"\n\t.string \"My left ear is burning up!$\""
+  },
+  "label": "MagmaHideout_3F_1R_Text_Grunt9Intro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MagmaHideout_3F_1R/scripts.inc",
+  "references": {}
+}

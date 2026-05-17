@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Text_LikeYouToHavePokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": ".string \"PROF. BIRCH: So, {PLAYER}{KUN}.\\p\"\n\t.string \"I've heard so much about you from\\n\"\n\t.string \"your father.\\p\"\n\t.string \"I've heard that you don't have your\\n\"\n\t.string \"own POK\u00e9MON yet.\\p\"\n\t.string \"But the way you battled earlier,\\n\"\n\t.string \"you pulled it off with aplomb!\\p\"\n\t.string \"I guess you have your father's blood\\n\"\n\t.string \"in your veins after all!\\p\"\n\t.string \"Oh, yes. As thanks for rescuing me,\\n\"\n\t.string \"I'd like you to have the POK\u00e9MON you\\l\"\n\t.string \"used earlier.\\p\"\n\t.string \"{PLAYER} received the {STR_VAR_1}!$\""
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Text_LikeYouToHavePokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

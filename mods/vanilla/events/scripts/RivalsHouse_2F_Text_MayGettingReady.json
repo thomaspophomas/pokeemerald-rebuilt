@@ -1,0 +1,19 @@
+{
+  "id": "RivalsHouse_2F_Text_MayGettingReady",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "sha1": "e014a444dcf389c78773768633900402b1862edb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "rawScript": ".string \"POK\u00e9MON fully restored!\\n\"\n\t.string \"Items ready, and\u2026$\""
+  },
+  "label": "RivalsHouse_2F_Text_MayGettingReady",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+  "references": {}
+}

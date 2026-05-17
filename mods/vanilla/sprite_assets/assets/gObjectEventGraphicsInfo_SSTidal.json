@@ -1,0 +1,35 @@
+{
+  "id": "gObjectEventGraphicsInfo_SSTidal",
+  "domain": "sprite_assets",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/object_events/object_event_graphics_info.h",
+    "sha1": "6e39355ad5f42a055e0a4aba39fadac078dcb7cf"
+  },
+  "legacy": {
+    "kind": "object_event_sprite_asset",
+    "sourcePath": "src/data/object_events/object_event_graphics_info.h",
+    "rawC": "const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SSTidal = {\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_SSTIDAL,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 1920,\n    .width = 96,\n    .height = 40,\n    .paletteSlot = PALSLOT_NPC_SPECIAL,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_NONE,\n    .oam = &gObjectEventBaseOam_8x8,\n    .subspriteTables = sOamTables_96x40,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_SSTidal,\n    .affineAnims = gDummySpriteAffineAnimTable,\n};"
+  },
+  "key": "gObjectEventGraphicsInfo_SSTidal",
+  "assetKind": "object_event",
+  "graphicsId": "OBJ_EVENT_GFX_SS_TIDAL",
+  "graphicsInfoSymbol": "gObjectEventGraphicsInfo_SSTidal",
+  "sheetSymbol": null,
+  "compressedSheetSymbol": null,
+  "paletteSymbol": null,
+  "compressedPaletteSymbol": null,
+  "templateSymbol": null,
+  "tileTag": "TAG_NONE",
+  "paletteTag": "OBJ_EVENT_PAL_TAG_SSTIDAL",
+  "dimensions": {
+    "width": "96",
+    "height": "40",
+    "size": "1920"
+  },
+  "oam": "&gObjectEventBaseOam_8x8",
+  "images": "sPicTable_SSTidal",
+  "anims": "sAnimTable_Standard",
+  "subspriteTables": "sOamTables_96x40",
+  "affineAnims": "gDummySpriteAffineAnimTable"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SeafloorCavern_Entrance_EventScript_GruntFacePlayerEast",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Entrance/scripts.inc",
+    "sha1": "8c330241299cc7a79f577ced9c7a80a8f74605ab"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SeafloorCavern_Entrance/scripts.inc",
+    "rawScript": "applymovement LOCALID_SEAFLOOR_CAVERN_ENTRANCE_GRUNT, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\treturn"
+  },
+  "label": "SeafloorCavern_Entrance_EventScript_GruntFacePlayerEast",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SeafloorCavern_Entrance/scripts.inc",
+  "references": {}
+}

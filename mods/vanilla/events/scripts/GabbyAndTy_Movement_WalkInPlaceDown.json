@@ -1,0 +1,19 @@
+{
+  "id": "GabbyAndTy_Movement_WalkInPlaceDown",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gabby_and_ty.inc",
+    "sha1": "94bbdc1414879c9d53e3c5a88c9429ac40dbfdeb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gabby_and_ty.inc",
+    "rawScript": "walk_in_place_down\n\tstep_end"
+  },
+  "label": "GabbyAndTy_Movement_WalkInPlaceDown",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/scripts/gabby_and_ty.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_BikeShop_Text_BunnyHops",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "sha1": "31396febb84a2b48608ca32d5a0dd0de865faf26"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "rawScript": ".string \"Keeping the B Button pressed,\\n\"\n\t.string \"your BIKE can hop on the spot.\\p\"\n\t.string \"This technique is called a bunny hop.\\p\"\n\t.string \"You can ride while hopping, too.\\p\"\n\t.string \"Want to read a different page?$\""
+  },
+  "label": "MauvilleCity_BikeShop_Text_BunnyHops",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+  "references": {}
+}

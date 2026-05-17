@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Text_ExplainBerryPowder",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": ".string \"I recently had machines installed at\\n\"\n\t.string \"POK\u00e9MON CENTERS for crushing BERRIES.\\p\"\n\t.string \"The BERRY CRUSH machines are at\\n\"\n\t.string \"the DIRECT CORNER upstairs.\\p\"\n\t.string \"Did you know?\\p\"\n\t.string \"Could you make BERRY POWDER for\\n\"\n\t.string \"me using those machines?\\p\"\n\t.string \"I can make you all sorts of medicine\\n\"\n\t.string \"if you bring me lots of BERRY POWDER.$\""
+  },
+  "label": "SlateportCity_Text_ExplainBerryPowder",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {}
+}

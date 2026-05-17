@@ -1,0 +1,23 @@
+{
+  "id": "SealedChamber_OuterRoom_OnLoad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SealedChamber_OuterRoom/scripts.inc",
+    "sha1": "dee4c4e070ebe2e7c86a5d05381bc15f82ba626a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SealedChamber_OuterRoom/scripts.inc",
+    "rawScript": "call_if_unset FLAG_SYS_BRAILLE_DIG, SealedChamber_OuterRoom_EventScript_CloseInnerRoomEntrance\n\tend"
+  },
+  "label": "SealedChamber_OuterRoom_OnLoad",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/SealedChamber_OuterRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_BRAILLE_DIG"
+    ]
+  }
+}

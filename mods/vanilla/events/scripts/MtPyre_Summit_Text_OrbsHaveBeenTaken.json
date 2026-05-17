@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_Summit_Text_OrbsHaveBeenTaken",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/scripts.inc",
+    "sha1": "2d98d572d50cebb678d972aa421854c983329822"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Summit/scripts.inc",
+    "rawScript": ".string \"The BLUE ORB and RED ORB taken by\\n\"\n\t.string \"those sinister men\u2026\\p\"\n\t.string \"They must never be apart\u2026\\n\"\n\t.string \"I fear something terrible will happen\u2026$\""
+  },
+  "label": "MtPyre_Summit_Text_OrbsHaveBeenTaken",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_Summit/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Text_SinkOldBoats",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": ".string \"Do you know what they do with old\\n\"\n\t.string \"ships that become too creaky to sail?\\p\"\n\t.string \"They sink them in the sea so they\\n\"\n\t.string \"become habitats for POK\u00e9MON.$\""
+  },
+  "label": "SlateportCity_Text_SinkOldBoats",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,25 @@
+{
+  "id": "Route119_WeatherInstitute_1F_EventScript_InstituteWorker1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_1F/scripts.inc",
+    "sha1": "c66e07de5643dfd9d0b7ced5e87ea02257875e77"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_1F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_unset FLAG_SYS_GAME_CLEAR, Route119_WeatherInstitute_1F_EventScript_StudyingRain\n\tsetvar VAR_0x8004, 0\n\tcall_if_set FLAG_DEFEATED_KYOGRE, Route119_WeatherInstitute_1F_EventScript_LegendaryDefeated\n\tcall_if_set FLAG_DEFEATED_GROUDON, Route119_WeatherInstitute_1F_EventScript_LegendaryDefeated\n\tgoto_if_eq VAR_0x8004, 2, Route119_WeatherInstitute_1F_EventScript_StudyingRain  @ Both defeated\n\tmsgbox Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route119_WeatherInstitute_1F_EventScript_InstituteWorker1",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route119_WeatherInstitute_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_GROUDON",
+      "FLAG_DEFEATED_KYOGRE",
+      "FLAG_SYS_GAME_CLEAR"
+    ]
+  }
+}

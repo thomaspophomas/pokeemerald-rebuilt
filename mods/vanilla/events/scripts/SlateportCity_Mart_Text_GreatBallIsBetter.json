@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Mart_Text_GreatBallIsBetter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Mart/scripts.inc",
+    "sha1": "f2031f776ed5352702005bf7d55b8cd577030684"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_Mart/scripts.inc",
+    "rawScript": ".string \"A GREAT BALL is better than a POK\u00e9 BALL\\n\"\n\t.string \"at catching POK\u00e9MON.\\p\"\n\t.string \"With this, I should be able to get that\\n\"\n\t.string \"elusive POK\u00e9MON\u2026$\""
+  },
+  "label": "SlateportCity_Mart_Text_GreatBallIsBetter",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_Mart/scripts.inc",
+  "references": {}
+}

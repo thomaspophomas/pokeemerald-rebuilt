@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_DadGoingToKeepTraining",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"DAD: {PLAYER}, you should go visit\\n\"\n\t.string \"your mother every so often.\\p\"\n\t.string \"I'm going to stay here and redouble\\n\"\n\t.string \"my training.\\p\"\n\t.string \"It would bother me as a TRAINER to\\n\"\n\t.string \"not avenge my loss to you, {PLAYER}!$\""
+  },
+  "label": "PetalburgCity_Gym_Text_DadGoingToKeepTraining",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

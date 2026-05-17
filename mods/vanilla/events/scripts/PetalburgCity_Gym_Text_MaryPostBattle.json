@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_MaryPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"There are some even stronger\\n\"\n\t.string \"TRAINERS waiting for you.\\p\"\n\t.string \"The left is the DEFENSE ROOM, and\\n\"\n\t.string \"the right is the RECOVERY ROOM.\\p\"\n\t.string \"Your POK\u00e9MON's ATTACK power will be\\n\"\n\t.string \"on trial either way.$\""
+  },
+  "label": "PetalburgCity_Gym_Text_MaryPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

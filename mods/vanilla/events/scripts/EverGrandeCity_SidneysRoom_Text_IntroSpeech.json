@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_SidneysRoom_Text_IntroSpeech",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+    "sha1": "557570a48b33cd8590cd2a5ef0ed11ae09a3448a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+    "rawScript": ".string \"Welcome, challenger!\\n\"\n\t.string \"I'm SIDNEY of the ELITE FOUR.\\p\"\n\t.string \"I like that look you're giving me.\\n\"\n\t.string \"I guess you'll give me a good match.\\l\"\n\t.string \"That's good! Looking real good!\\p\"\n\t.string \"All right! You and me, let's enjoy\\n\"\n\t.string \"a battle that can only be staged\\l\"\n\t.string \"here in the POK\u00e9MON LEAGUE!$\""
+  },
+  "label": "EverGrandeCity_SidneysRoom_Text_IntroSpeech",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+  "references": {}
+}

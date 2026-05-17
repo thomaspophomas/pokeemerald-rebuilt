@@ -1,0 +1,19 @@
+{
+  "id": "JaggedPass_Text_GoWhereverYouWant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/JaggedPass/scripts.inc",
+    "sha1": "3539aca2d309baaf0b57344f9c2014b5d896c94b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/JaggedPass/scripts.inc",
+    "rawScript": ".string \"Okay, oh-kay!\\n\"\n\t.string \"I admit it--you're strong!\\p\"\n\t.string \"Don't worry about me.\\n\"\n\t.string \"Go wherever you want!$\""
+  },
+  "label": "JaggedPass_Text_GoWhereverYouWant",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/JaggedPass/scripts.inc",
+  "references": {}
+}

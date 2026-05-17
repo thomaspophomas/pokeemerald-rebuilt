@@ -1,0 +1,23 @@
+{
+  "id": "MossdeepCity_Gym_EventScript_Switch3",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "sha1": "f1b3ae6c76fdfe44b1431df4ea78da5c11a79c08"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_set FLAG_MOSSDEEP_GYM_SWITCH_3, MossdeepCity_Gym_EventScript_ClearSwitch3\n\tsetflag FLAG_MOSSDEEP_GYM_SWITCH_3\n\tapplymovement LOCALID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse\n\twaitmovement 0\n\tsetmetatile 15, 17, METATILE_RSMossdeepGym_RedArrow_Left, FALSE\n\tsetmetatile 17, 15, METATILE_RSMossdeepGym_Switch_Down, TRUE\n\tgoto MossdeepCity_Gym_EventScript_DrawMapAfterSwitchUsed\n\tend"
+  },
+  "label": "MossdeepCity_Gym_EventScript_Switch3",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MOSSDEEP_GYM_SWITCH_3"
+    ]
+  }
+}

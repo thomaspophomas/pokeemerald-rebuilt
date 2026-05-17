@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_GlaciasRoom_Text_IntroSpeech",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_GlaciasRoom/scripts.inc",
+    "sha1": "283be726375bae9790aba23661a75e157e304cdc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_GlaciasRoom/scripts.inc",
+    "rawScript": ".string \"Welcome, my name is GLACIA\\n\"\n\t.string \"of the ELITE FOUR.\\p\"\n\t.string \"I've traveled from afar to HOENN\\n\"\n\t.string \"so that I may hone my ice skills.\\p\"\n\t.string \"But all I have seen are challenges by\\n\"\n\t.string \"weak TRAINERS and their POK\u00e9MON.\\p\"\n\t.string \"What about you?\\p\"\n\t.string \"It would please me to no end if I could\\n\"\n\t.string \"go all out against you!$\""
+  },
+  "label": "EverGrandeCity_GlaciasRoom_Text_IntroSpeech",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_GlaciasRoom/scripts.inc",
+  "references": {}
+}

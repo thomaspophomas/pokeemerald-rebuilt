@@ -1,0 +1,23 @@
+{
+  "id": "Route110_TrickHousePuzzle7_EventScript_Switch5",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle7/scripts.inc",
+    "sha1": "d0faf89c20b52e4b3f4ef5191cdd1e42d9c73feb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle7/scripts.inc",
+    "rawScript": "lockall\n\tdelay 32\n\tcall_if_unset FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_5, Route110_TrickHousePuzzle7_EventScript_SetSwitch5MetatilesOn\n\tcall_if_set FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_5, Route110_TrickHousePuzzle7_EventScript_SetSwitch5MetatilesOff\n\tspecial DrawWholeMapView\n\tplayse SE_CLICK\n\tgoto_if_unset FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_5, Route110_TrickHousePuzzle7_EventScript_SetSwitch5On\n\tgoto_if_set FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_5, Route110_TrickHousePuzzle7_EventScript_SetSwitch5Off\n\tend\n\n@ All the below switch scripts are unused leftover from R/S"
+  },
+  "label": "Route110_TrickHousePuzzle7_EventScript_Switch5",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHousePuzzle7/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_5"
+    ]
+  }
+}

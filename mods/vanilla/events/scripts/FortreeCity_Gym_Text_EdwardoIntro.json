@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Gym_Text_EdwardoIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/scripts.inc",
+    "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Gym/scripts.inc",
+    "rawScript": ".string \"The lovers of BIRD POK\u00e9MON aspire\\n\"\n\t.string \"to join this GYM.\\p\"\n\t.string \"As a member of the FORTREE GYM,\\n\"\n\t.string \"I'm not allowed to lose!$\""
+  },
+  "label": "FortreeCity_Gym_Text_EdwardoIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_Gym/scripts.inc",
+  "references": {}
+}

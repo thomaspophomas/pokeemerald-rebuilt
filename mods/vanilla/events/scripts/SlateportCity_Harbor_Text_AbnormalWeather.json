@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Harbor_Text_AbnormalWeather",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "sha1": "304e0889603d7850b02e01765d969cf3c903eb9e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "rawScript": ".string \"For a ship to sail safely, we need to\\n\"\n\t.string \"know about the weather!\\p\"\n\t.string \"Speaking of weather, I heard something\\n\"\n\t.string \"from a guy at the WEATHER INSTITUTE.\\p\"\n\t.string \"He was saying abnormal weather has\\n\"\n\t.string \"been reported all over the place!\\p\"\n\t.string \"You should visit the WEATHER INSTITUTE\\n\"\n\t.string \"and ask around!$\""
+  },
+  "label": "SlateportCity_Harbor_Text_AbnormalWeather",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_Harbor/scripts.inc",
+  "references": {}
+}

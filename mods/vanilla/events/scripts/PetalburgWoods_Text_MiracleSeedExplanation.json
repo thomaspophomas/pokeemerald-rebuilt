@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgWoods_Text_MiracleSeedExplanation",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/scripts.inc",
+    "sha1": "a7a3b49731f97088b328145805430d4429326ec8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgWoods/scripts.inc",
+    "rawScript": ".string \"It's a MIRACLE SEED.\\n\"\n\t.string \"If a POK\u00e9MON holds that item, its\\l\"\n\t.string \"GRASS-type moves become stronger.\\p\"\n\t.string \"Besides MIRACLE SEED, I think there are\\n\"\n\t.string \"other convenient items for POK\u00e9MON\\l\"\n\t.string \"to hold.$\""
+  },
+  "label": "PetalburgWoods_Text_MiracleSeedExplanation",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgWoods/scripts.inc",
+  "references": {}
+}

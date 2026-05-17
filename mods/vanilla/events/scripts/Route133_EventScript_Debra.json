@@ -1,0 +1,23 @@
+{
+  "id": "Route133_EventScript_Debra",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route133/scripts.inc",
+    "sha1": "f4bb8f5ba693dd21f2f9e9030fe5eb4e301288ee"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route133/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_DEBRA, Route133_Text_DebraIntro, Route133_Text_DebraDefeat\n\tmsgbox Route133_Text_DebraPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route133_EventScript_Debra",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route133/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_DEBRA"
+    ]
+  }
+}

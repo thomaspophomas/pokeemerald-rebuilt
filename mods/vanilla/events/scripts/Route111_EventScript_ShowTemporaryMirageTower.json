@@ -1,0 +1,19 @@
+{
+  "id": "Route111_EventScript_ShowTemporaryMirageTower",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": "setmetatile 18, 53, METATILE_Mauville_MirageTower_Tile0, FALSE\n\tsetmetatile 19, 53, METATILE_Mauville_MirageTower_Tile1, FALSE\n\tsetmetatile 20, 53, METATILE_Mauville_MirageTower_Tile2, FALSE\n\tsetmetatile 18, 54, METATILE_Mauville_MirageTower_Tile3, FALSE\n\tsetmetatile 19, 54, METATILE_Mauville_MirageTower_Tile4, FALSE\n\tsetmetatile 20, 54, METATILE_Mauville_MirageTower_Tile5, FALSE\n\tsetmetatile 18, 55, METATILE_Mauville_MirageTower_Tile6, FALSE\n\tsetmetatile 19, 55, METATILE_Mauville_MirageTower_Tile7, FALSE\n\tsetmetatile 20, 55, METATILE_Mauville_MirageTower_Tile8, FALSE\n\tsetmetatile 18, 56, METATILE_Mauville_MirageTower_Tile9, FALSE\n\tsetmetatile 19, 56, METATILE_Mauville_MirageTower_TileA, FALSE\n\tsetmetatile 20, 56, METATILE_Mauville_MirageTower_TileB, FALSE\n\tsetmetatile 18, 57, METATILE_Mauville_MirageTower_TileC, FALSE\n\tsetmetatile 19, 57, METATILE_Mauville_MirageTower_TileD, FALSE\n\tsetmetatile 20, 57, METATILE_Mauville_MirageTower_TileE, FALSE\n\tsetmetatile 18, 58, METATILE_Mauville_MirageTower_TileF, FALSE\n\tsetmetatile 19, 58, METATILE_Mauville_MirageTower_Tile10, FALSE\n\tsetmetatile 20, 58, METATILE_Mauville_MirageTower_Tile11, FALSE\n\treturn"
+  },
+  "label": "Route111_EventScript_ShowTemporaryMirageTower",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {}
+}

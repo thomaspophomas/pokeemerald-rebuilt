@@ -1,0 +1,30 @@
+{
+  "id": "MauvilleCity_EventScript_Wattson",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON, MauvilleCity_EventScript_ReceivedThunderbolt\n\tgoto_if_eq VAR_NEW_MAUVILLE_STATE, 2, MauvilleCity_EventScript_CompletedNewMauville\n\tgoto_if_set FLAG_GOT_BASEMENT_KEY_FROM_WATTSON, MauvilleCity_EventScript_BegunNewMauville\n\tmsgbox MauvilleCity_Text_WattsonNeedFavorTakeKey, MSGBOX_DEFAULT\n\tgiveitem ITEM_BASEMENT_KEY\n\tsetflag FLAG_GOT_BASEMENT_KEY_FROM_WATTSON\n\tmsgbox MauvilleCity_Text_WattsonWontBeChallenge, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "MauvilleCity_EventScript_Wattson",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_GOT_BASEMENT_KEY_FROM_WATTSON",
+      "FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON"
+    ],
+    "vars": [
+      "VAR_NEW_MAUVILLE_STATE"
+    ],
+    "items": [
+      "ITEM_BASEMENT_KEY"
+    ]
+  }
+}

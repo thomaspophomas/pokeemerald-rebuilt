@@ -1,0 +1,19 @@
+{
+  "id": "FarawayIsland_Interior_Movement_MewAppear",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FarawayIsland_Interior/scripts.inc",
+    "sha1": "748f9f309b0dbfe85cb833f24aeceac469102437"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FarawayIsland_Interior/scripts.inc",
+    "rawScript": "set_visible\n\tstep_end"
+  },
+  "label": "FarawayIsland_Interior_Movement_MewAppear",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/FarawayIsland_Interior/scripts.inc",
+  "references": {}
+}

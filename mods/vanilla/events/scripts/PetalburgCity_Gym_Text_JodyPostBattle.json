@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_JodyPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"The way you use your POK\u00e9MON\u2026\\n\"\n\t.string \"It's like your father's style.\\p\"\n\t.string \"Go on through! The GYM LEADER, your\\n\"\n\t.string \"father, is waiting!$\""
+  },
+  "label": "PetalburgCity_Gym_Text_JodyPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

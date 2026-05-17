@@ -1,0 +1,26 @@
+{
+  "id": "Route113_GlassWorkshop_EventScript_GlassWorker",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "sha1": "6a7101e66439e9abedcc55c8fc60b573807258b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_ge VAR_GLASS_WORKSHOP_STATE, 10, Route113_GlassWorkshop_EventScript_GiveItemAfterNoRoom\n\tgoto_if_eq VAR_GLASS_WORKSHOP_STATE, 2, Route113_GlassWorkshop_EventScript_CheckCollectedAsh\n\tgoto_if_eq VAR_GLASS_WORKSHOP_STATE, 1, Route113_GlassWorkshop_EventScript_ExplainSootSack\n\tmsgbox Route113_GlassWorkshop_Text_GoCollectAshWithThis, MSGBOX_DEFAULT\n\tgiveitem ITEM_SOOT_SACK\n\tsetvar VAR_GLASS_WORKSHOP_STATE, 1\n\tmsgbox Route113_GlassWorkshop_Text_ExplainSootSack, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route113_GlassWorkshop_EventScript_GlassWorker",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route113_GlassWorkshop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_GLASS_WORKSHOP_STATE"
+    ],
+    "items": [
+      "ITEM_SOOT_SACK"
+    ]
+  }
+}

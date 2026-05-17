@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_Lounge3_EventScript_TryPlaceBet",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "sha1": "52169856e2442e0e7ad660050a45dce1a1b2405a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "rawScript": "specialvar VAR_TEMP_1, GetFrontierBattlePoints\n\tgoto_if_ge VAR_TEMP_1, VAR_0x8008, BattleFrontier_Lounge3_EventScript_PlaceBet\n\tmsgbox BattleFrontier_Lounge3_Text_YouDontHaveEnoughPoints, MSGBOX_DEFAULT\n\tmessage BattleFrontier_Lounge3_Text_HowMuchCanYouSpot\n\twaitmessage\n\tgoto BattleFrontier_Lounge3_EventScript_ChooseBetAmount\n\tend"
+  },
+  "label": "BattleFrontier_Lounge3_EventScript_TryPlaceBet",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1"
+    ]
+  }
+}

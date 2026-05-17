@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleFactoryPreBattleRoom_Text_HoldMonsChooseFromSelection",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+    "sha1": "1a22c52bd73e3edd87503c90dddd414ef0e181f2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+    "rawScript": ".string \"First, we will hold your POK\u00e9MON for\\n\"\n\t.string \"safekeeping.\\p\"\n\t.string \"You may then choose from our\\n\"\n\t.string \"selection of POK\u00e9MON.$\""
+  },
+  "label": "BattleFrontier_BattleFactoryPreBattleRoom_Text_HoldMonsChooseFromSelection",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+  "references": {}
+}

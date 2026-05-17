@@ -1,0 +1,26 @@
+{
+  "id": "AbandonedShip_HiddenFloorCorridors_OnLoad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+    "sha1": "93793c09cf0421032fc19eaa4c310ad93c2d25a2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+    "rawScript": "call_if_unset FLAG_USED_ROOM_1_KEY, AbandonedShip_HiddenFloorCorridors_EventScript_LockRoom1\n\tcall_if_unset FLAG_USED_ROOM_2_KEY, AbandonedShip_HiddenFloorCorridors_EventScript_LockRoom2\n\tcall_if_unset FLAG_USED_ROOM_4_KEY, AbandonedShip_HiddenFloorCorridors_EventScript_LockRoom4\n\tcall_if_unset FLAG_USED_ROOM_6_KEY, AbandonedShip_HiddenFloorCorridors_EventScript_LockRoom6\n\tcall_if_set FLAG_USED_ROOM_1_KEY, AbandonedShip_HiddenFloorCorridors_EventScript_UnlockRoom1\n\tcall_if_set FLAG_USED_ROOM_2_KEY, AbandonedShip_HiddenFloorCorridors_EventScript_UnlockRoom2\n\tcall_if_set FLAG_USED_ROOM_4_KEY, AbandonedShip_HiddenFloorCorridors_EventScript_UnlockRoom4\n\tcall_if_set FLAG_USED_ROOM_6_KEY, AbandonedShip_HiddenFloorCorridors_EventScript_UnlockRoom6\n\tend"
+  },
+  "label": "AbandonedShip_HiddenFloorCorridors_OnLoad",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_USED_ROOM_1_KEY",
+      "FLAG_USED_ROOM_2_KEY",
+      "FLAG_USED_ROOM_4_KEY",
+      "FLAG_USED_ROOM_6_KEY"
+    ]
+  }
+}

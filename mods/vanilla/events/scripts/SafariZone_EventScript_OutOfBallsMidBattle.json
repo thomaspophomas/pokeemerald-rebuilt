@@ -1,0 +1,26 @@
+{
+  "id": "SafariZone_EventScript_OutOfBallsMidBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/safari_zone.inc",
+    "sha1": "435880c660a34d3e51dcedb348a41731d28af7cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/safari_zone.inc",
+    "rawScript": "setvar VAR_SAFARI_ZONE_STATE, 1\n\tspecial ExitSafariMode\n\tsetwarp MAP_ROUTE121_SAFARI_ZONE_ENTRANCE, 2, 5\n\tend"
+  },
+  "label": "SafariZone_EventScript_OutOfBallsMidBattle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/safari_zone.inc",
+  "references": {
+    "vars": [
+      "VAR_SAFARI_ZONE_STATE"
+    ],
+    "maps": [
+      "MAP_ROUTE121_SAFARI_ZONE_ENTRANCE"
+    ]
+  }
+}

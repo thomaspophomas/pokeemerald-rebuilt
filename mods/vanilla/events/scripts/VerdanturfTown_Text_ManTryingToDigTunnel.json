@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_Text_ManTryingToDigTunnel",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown/scripts.inc",
+    "sha1": "4cf44981cc32f958f4c2d2c20def161a84763311"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown/scripts.inc",
+    "rawScript": ".string \"My papa told me.\\p\"\n\t.string \"He says this tunnel is full of\\n\"\n\t.string \"timid POK\u00e9MON.\\p\"\n\t.string \"They get all scared of loud noise and\\n\"\n\t.string \"make a big uproar.\\p\"\n\t.string \"So they had to stop the big tunnel\\n\"\n\t.string \"project.\\p\"\n\t.string \"But there's one man. He's trying to dig\\n\"\n\t.string \"the tunnel by himself!$\""
+  },
+  "label": "VerdanturfTown_Text_ManTryingToDigTunnel",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_StevensHouse_Text_CollectionOfRareRocks",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "sha1": "13a709347ca2c2863ef04de01b7d51d28b9d736e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "rawScript": ".string \"It's a collection of rare rocks and\\n\"\n\t.string \"stones assembled by STEVEN.$\""
+  },
+  "label": "MossdeepCity_StevensHouse_Text_CollectionOfRareRocks",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+  "references": {}
+}

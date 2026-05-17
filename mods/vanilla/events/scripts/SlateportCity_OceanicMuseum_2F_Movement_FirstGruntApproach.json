@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_OceanicMuseum_2F_Movement_FirstGruntApproach",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+    "sha1": "13553a30435b8213726cfc4734cfaf0043bc447f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+    "rawScript": "walk_down\n\twalk_down\n\twalk_down\n\twalk_right\n\twalk_right\n\twalk_right\n\tstep_end"
+  },
+  "label": "SlateportCity_OceanicMuseum_2F_Movement_FirstGruntApproach",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+  "references": {}
+}

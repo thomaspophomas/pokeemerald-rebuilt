@@ -1,0 +1,19 @@
+{
+  "id": "Route106_EventScript_TrainerTipsSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route106/scripts.inc",
+    "sha1": "a209a44ee2510b2fc73442d6137996f599dae676"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route106/scripts.inc",
+    "rawScript": "msgbox Route106_Text_TrainerTips, MSGBOX_SIGN\n\tend"
+  },
+  "label": "Route106_EventScript_TrainerTipsSign",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route106/scripts.inc",
+  "references": {}
+}

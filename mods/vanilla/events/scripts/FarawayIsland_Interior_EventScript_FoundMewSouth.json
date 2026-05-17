@@ -1,0 +1,19 @@
+{
+  "id": "FarawayIsland_Interior_EventScript_FoundMewSouth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FarawayIsland_Interior/scripts.inc",
+    "sha1": "748f9f309b0dbfe85cb833f24aeceac469102437"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FarawayIsland_Interior/scripts.inc",
+    "rawScript": "applymovement LOCALID_FARAWAY_ISLAND_MEW, FarawayIsland_Interior_Movement_MewFloatUpSouth\n\twaitmovement 0\n\treturn"
+  },
+  "label": "FarawayIsland_Interior_EventScript_FoundMewSouth",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FarawayIsland_Interior/scripts.inc",
+  "references": {}
+}

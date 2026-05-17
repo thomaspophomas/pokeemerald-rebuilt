@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_BikeShop_EventScript_ChooseBike",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "sha1": "31396febb84a2b48608ca32d5a0dd0de865faf26"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "rawScript": "message MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne\n\twaitmessage\n\tmultichoice 21, 8, MULTI_BIKE, TRUE\n\tswitch VAR_RESULT\n\tcase 0, MauvilleCity_BikeShop_EventScript_GetMachBike\n\tcase 1, MauvilleCity_BikeShop_EventScript_GetAcroBike\n\tend"
+  },
+  "label": "MauvilleCity_BikeShop_EventScript_ChooseBike",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

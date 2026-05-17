@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Gym/scripts.inc",
+    "sha1": "595ba5581d9eb698f4762f9b34da6e4f6c2a7a55"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Gym/scripts.inc",
+    "rawScript": ".string \"The KNUCKLE BADGE makes all POK\u00e9MON\\n\"\n\t.string \"up to Level 30, even those you get in\\l\"\n\t.string \"trades, obey without question.\\p\"\n\t.string \"And, you'll be able to use the HM move\\n\"\n\t.string \"FLASH outside of battle.\\p\"\n\t.string \"If you'd like, use this TECHNICAL\\n\"\n\t.string \"MACHINE, too.$\""
+  },
+  "label": "DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown_Gym/scripts.inc",
+  "references": {}
+}

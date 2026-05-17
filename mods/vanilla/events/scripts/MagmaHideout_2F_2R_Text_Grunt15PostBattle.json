@@ -1,0 +1,19 @@
+{
+  "id": "MagmaHideout_2F_2R_Text_Grunt15PostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_2F_2R/scripts.inc",
+    "sha1": "01615ee55415554a4833c7cd9790ada769e12792"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_2F_2R/scripts.inc",
+    "rawScript": ".string \"We dug up something beyond belief!\\n\"\n\t.string \"And, we got the BLUE ORB!\\p\"\n\t.string \"All that's left is for our leader to\u2026\\n\"\n\t.string \"Fufufu\u2026 Fwahahaha!$\""
+  },
+  "label": "MagmaHideout_2F_2R_Text_Grunt15PostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MagmaHideout_2F_2R/scripts.inc",
+  "references": {}
+}

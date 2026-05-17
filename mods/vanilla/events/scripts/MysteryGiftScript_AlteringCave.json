@@ -1,0 +1,19 @@
+{
+  "id": "MysteryGiftScript_AlteringCave_",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_altering_cave.inc",
+    "sha1": "10dc3bfeb42e1438ef5252d81c4484de396e90d5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_altering_cave.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tvmessage sText_MysteryGiftAlteringCave\n\twaitmessage\n\twaitbuttonpress\n\trelease\n\tend"
+  },
+  "label": "MysteryGiftScript_AlteringCave_",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_altering_cave.inc",
+  "references": {}
+}

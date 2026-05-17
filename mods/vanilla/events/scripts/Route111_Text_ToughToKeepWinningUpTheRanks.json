@@ -1,0 +1,19 @@
+{
+  "id": "Route111_Text_ToughToKeepWinningUpTheRanks",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": ".string \"If you don't raise your POK\u00e9MON some\\n\"\n\t.string \"more, it could be tough to keep winning\\l\"\n\t.string \"up through the ranks.\\p\"\n\t.string \"I've heard the POK\u00e9MON LEAGUE's\\n\"\n\t.string \"ELITE FOUR are far stronger than\\l\"\n\t.string \"any GYM LEADER.$\""
+  },
+  "label": "Route111_Text_ToughToKeepWinningUpTheRanks",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {}
+}

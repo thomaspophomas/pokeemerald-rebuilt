@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_BattleTentLobby_Text_AttractionRunsDeep",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "sha1": "be67ab8ba625b73e575c1594a46cbee43b6f03d9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "rawScript": ".string \"My feelings toward my POK\u00e9MON\u2026\\n\"\n\t.string \"The attraction runs deep\u2026\\p\"\n\t.string \"Oh, hi, you didn't see that, did you?\\n\"\n\t.string \"Well, it doesn't matter.\\p\"\n\t.string \"How would you like this TM for\\n\"\n\t.string \"your POK\u00e9MON?$\""
+  },
+  "label": "VerdanturfTown_BattleTentLobby_Text_AttractionRunsDeep",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+  "references": {}
+}

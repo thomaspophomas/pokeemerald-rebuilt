@@ -1,0 +1,28 @@
+{
+  "id": "LilycoveCity_DepartmentStore_1F_EventScript_GivePrizeFromEarlier",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc",
+    "sha1": "25a2cc6d86d1739788e578e0911145b04f3d372f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc",
+    "rawScript": "msgbox LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding, MSGBOX_DEFAULT\n\tgiveitem VAR_POKELOT_PRIZE_ITEM\n\tgoto_if_eq VAR_RESULT, FALSE, LilycoveCity_DepartmentStore_1F_EventScript_NoRoomForPrize\n\tcopyvar VAR_0x8004, VAR_POKELOT_PRIZE_PLACE\n\tcopyvar VAR_0x8005, VAR_POKELOT_PRIZE_ITEM\n\tspecial TryPutLotteryWinnerReportOnAir\n\tsetvar VAR_POKELOT_PRIZE_ITEM, ITEM_NONE\n\tsetvar VAR_POKELOT_PRIZE_PLACE, 0\n\trelease\n\tend"
+  },
+  "label": "LilycoveCity_DepartmentStore_1F_EventScript_GivePrizeFromEarlier",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_POKELOT_PRIZE_ITEM",
+      "VAR_POKELOT_PRIZE_PLACE",
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_NONE"
+    ]
+  }
+}

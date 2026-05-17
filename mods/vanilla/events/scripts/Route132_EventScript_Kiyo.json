@@ -1,0 +1,23 @@
+{
+  "id": "Route132_EventScript_Kiyo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route132/scripts.inc",
+    "sha1": "defe5d4476b0de9ea0ee085a154a7e2c20c8ec33"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route132/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_KIYO, Route132_Text_KiyoIntro, Route132_Text_KiyoDefeat\n\tmsgbox Route132_Text_KiyoPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route132_EventScript_Kiyo",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route132/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_KIYO"
+    ]
+  }
+}

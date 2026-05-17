@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Text_PleaseGiveItThisEffortRibbon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": ".string \"Went for it stupendously!\\p\"\n\t.string \"As its reward, please give it this\\n\"\n\t.string \"EFFORT RIBBON.$\""
+  },
+  "label": "SlateportCity_Text_PleaseGiveItThisEffortRibbon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {}
+}

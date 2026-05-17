@@ -1,0 +1,25 @@
+{
+  "id": "Route129_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route129/scripts.inc",
+    "sha1": "dafae748e3f67cdad094b16d6d5b95c90cbfcb13"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route129/scripts.inc",
+    "rawScript": "call_if_eq VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_HideMapNamePopup\n\tcall_if_ge VAR_SOOTOPOLIS_CITY_STATE, 4, Route129_EventScript_CheckSetAbnormalWeather\n\tcall_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_129_WEST, AbnormalWeather_StartKyogreWeather\n\tcall_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_129_EAST, AbnormalWeather_StartKyogreWeather\n\tend"
+  },
+  "label": "Route129_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Route129/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_ABNORMAL_WEATHER_LOCATION",
+      "VAR_SHOULD_END_ABNORMAL_WEATHER",
+      "VAR_SOOTOPOLIS_CITY_STATE"
+    ]
+  }
+}

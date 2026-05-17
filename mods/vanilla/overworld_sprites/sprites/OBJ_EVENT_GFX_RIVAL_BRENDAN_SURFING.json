@@ -1,0 +1,26 @@
+{
+  "id": "OBJ_EVENT_GFX_RIVAL_BRENDAN_SURFING",
+  "domain": "overworld_sprites",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/data/object_events/object_event_graphics_info_pointers.h",
+    "sha1": "77fa348a5d882f94e478f2c7b9ed44de4de80ba1"
+  },
+  "legacy": {
+    "kind": "object_event_graphics",
+    "sourcePath": "src/data/object_events/object_event_graphics_info_pointers.h",
+    "rawC": "const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RivalBrendanSurfing = {\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_BRENDAN,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 512,\n    .width = 32,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_SPECIAL,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = TRUE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_32x32,\n    .subspriteTables = sOamTables_32x32,\n    .anims = sAnimTable_Surfing,\n    .images = sPicTable_BrendanSurfing,\n    .affineAnims = gDummySpriteAffineAnimTable,\n};"
+  },
+  "key": "OBJ_EVENT_GFX_RIVAL_BRENDAN_SURFING",
+  "graphicsId": "OBJ_EVENT_GFX_RIVAL_BRENDAN_SURFING",
+  "numericId": 103,
+  "graphicsRevision": 1,
+  "assetKey": "gObjectEventGraphicsInfo_RivalBrendanSurfing",
+  "graphicsInfoSymbol": "gObjectEventGraphicsInfo_RivalBrendanSurfing",
+  "width": "32",
+  "height": "32",
+  "paletteTag": "OBJ_EVENT_PAL_TAG_BRENDAN",
+  "reflectionPaletteTag": "OBJ_EVENT_PAL_TAG_NONE",
+  "shadowSize": "SHADOW_SIZE_M",
+  "tracks": "TRACKS_FOOT"
+}

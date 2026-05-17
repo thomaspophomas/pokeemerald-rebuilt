@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Text_YouCanHave2On2Battle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": ".string \"Did you know this?\\p\"\n\t.string \"You can have a 2-on-2 battle even\\n\"\n\t.string \"if you're not with another TRAINER.\\p\"\n\t.string \"If you catch the eyes of two TRAINERS\\n\"\n\t.string \"when you have two or more POK\u00e9MON,\\l\"\n\t.string \"they'll both challenge you.\\p\"\n\t.string \"Don't you think it'd be cool if you\\n\"\n\t.string \"could beat two TRAINERS by yourself?$\""
+  },
+  "label": "RustboroCity_Text_YouCanHave2On2Battle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SkyPillar_Top_Movement_CameraPanDown",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Top/scripts.inc",
+    "sha1": "db486fa7ae1229bdf3cba19c1d86940ca9a59221"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_Top/scripts.inc",
+    "rawScript": "walk_slow_down\n\twalk_slow_down\n\twalk_slow_down\n\tstep_end"
+  },
+  "label": "SkyPillar_Top_Movement_CameraPanDown",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/SkyPillar_Top/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Gym_Text_HumbertoIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/scripts.inc",
+    "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Gym/scripts.inc",
+    "rawScript": ".string \"When WINONA takes to battle, her face\\n\"\n\t.string \"shines with beautiful determination\u2026\\p\"\n\t.string \"I'm not letting you witness that\\n\"\n\t.string \"lovely sight!$\""
+  },
+  "label": "FortreeCity_Gym_Text_HumbertoIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_Gym/scripts.inc",
+  "references": {}
+}

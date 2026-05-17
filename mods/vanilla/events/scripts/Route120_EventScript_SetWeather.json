@@ -1,0 +1,24 @@
+{
+  "id": "Route120_EventScript_SetWeather",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route120/scripts.inc",
+    "sha1": "c3ab570e7c5b1ea2c74415d703646f5a362564ad"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route120/scripts.inc",
+    "rawScript": "getplayerxy VAR_TEMP_0, VAR_TEMP_1\n\tgoto_if_le VAR_TEMP_1, 14, Route120_EventScript_SetSunnyWeather\n\tgoto_if_le VAR_TEMP_1, 60, Route120_EventScript_TrySetRainyWeather\n\tgoto_if_ge VAR_TEMP_1, 61, Route120_EventScript_SetCloudyWeather\n\treturn"
+  },
+  "label": "Route120_EventScript_SetWeather",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route120/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0",
+      "VAR_TEMP_1"
+    ]
+  }
+}

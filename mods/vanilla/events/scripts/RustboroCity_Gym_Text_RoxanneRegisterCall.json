@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Gym_Text_RoxanneRegisterCall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Gym/scripts.inc",
+    "sha1": "e0aa9de4fed612674104e48c7646854400dcecde"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Gym/scripts.inc",
+    "rawScript": ".string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\n\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 Beep!\\p\"\n\t.string \"ROXANNE: Oh, hello, {PLAYER}?\\n\"\n\t.string \"This is ROXANNE of RUSTBORO CITY.\\p\"\n\t.string \"I heard from BRAWLY that you're\\n\"\n\t.string \"moving up through the ranks of\\l\"\n\t.string \"TRAINERS at an incredible clip.\\p\"\n\t.string \"Well, I'd rather not think that\\n\"\n\t.string \"I can't beat you.\\p\"\n\t.string \"I promise, I will shape up my GYM\\n\"\n\t.string \"so that you may challenge us again.\\p\"\n\t.string \"I hope you'll be looking forward to\\n\"\n\t.string \"that occasion as much as me!\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\n\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 Click!$\""
+  },
+  "label": "RustboroCity_Gym_Text_RoxanneRegisterCall",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Gym/scripts.inc",
+  "references": {}
+}

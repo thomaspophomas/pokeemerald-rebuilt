@@ -1,0 +1,24 @@
+{
+  "id": "SlateportCity_EventScript_SternsShipyardSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_set FLAG_SYS_GAME_CLEAR, SlateportCity_EventScript_SternsShipyardFerryComplete\n\tgoto_if_set FLAG_BADGE07_GET, SlateportCity_EventScript_SternsShipyardNearsCompletion\n\tmsgbox SlateportCity_Text_SternsShipyardWantedSign, MSGBOX_DEFAULT\n\treleaseall\n\tend"
+  },
+  "label": "SlateportCity_EventScript_SternsShipyardSign",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_BADGE07_GET",
+      "FLAG_SYS_GAME_CLEAR"
+    ]
+  }
+}

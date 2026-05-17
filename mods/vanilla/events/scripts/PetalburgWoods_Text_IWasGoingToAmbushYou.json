@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgWoods_Text_IWasGoingToAmbushYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/scripts.inc",
+    "sha1": "a7a3b49731f97088b328145805430d4429326ec8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgWoods/scripts.inc",
+    "rawScript": ".string \"I was going to ambush you, but you\\n\"\n\t.string \"had to dawdle in PETALBURG WOODS\\l\"\n\t.string \"forever, didn't you?\\p\"\n\t.string \"I got sick of waiting, so here I am!$\""
+  },
+  "label": "PetalburgWoods_Text_IWasGoingToAmbushYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgWoods/scripts.inc",
+  "references": {}
+}

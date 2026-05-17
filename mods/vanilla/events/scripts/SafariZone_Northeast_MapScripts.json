@@ -1,0 +1,19 @@
+{
+  "id": "SafariZone_Northeast_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_Northeast/scripts.inc",
+    "sha1": "04074b4d90bd9301defe227d6665fb371f92648a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SafariZone_Northeast/scripts.inc",
+    "rawScript": ".byte 0\n\n@ Event scripts for SafariZone_Northeast are in SafariZone_South/scripts.inc"
+  },
+  "label": "SafariZone_Northeast_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/SafariZone_Northeast/scripts.inc",
+  "references": {}
+}

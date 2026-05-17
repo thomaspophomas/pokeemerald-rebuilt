@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_CoveLilyMotel_1F_Movement_OwnerReturn",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+    "sha1": "6fbfa2a2632f8e86026cc0a8c8fa9a98046f56ac"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+    "rawScript": "face_down\n\twalk_down\n\tface_up\n\tstep_end"
+  },
+  "label": "LilycoveCity_CoveLilyMotel_1F_Movement_OwnerReturn",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+  "references": {}
+}

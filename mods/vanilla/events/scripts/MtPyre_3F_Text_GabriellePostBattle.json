@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_3F_Text_GabriellePostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_3F/scripts.inc",
+    "sha1": "694f843b2a8c41803b3943fcf555c5a14a36d997"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_3F/scripts.inc",
+    "rawScript": ".string \"POK\u00e9MON no longer of this world.\\n\"\n\t.string \"POK\u00e9MON that are with you now.\\p\"\n\t.string \"And the POK\u00e9MON that you will meet\\n\"\n\t.string \"in the future\u2026\\p\"\n\t.string \"They are all to be equally cherished.\\n\"\n\t.string \"Please remember that.$\""
+  },
+  "label": "MtPyre_3F_Text_GabriellePostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_3F/scripts.inc",
+  "references": {}
+}

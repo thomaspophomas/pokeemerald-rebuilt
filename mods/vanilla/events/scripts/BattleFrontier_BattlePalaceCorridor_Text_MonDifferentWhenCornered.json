@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceCorridor_Text_MonDifferentWhenCornered",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc",
+    "sha1": "64a2ef91c8d0c246c8214b48e91e15abe9171a8e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc",
+    "rawScript": ".string \"A POK\u00e9MON's nature is a remarkable\\n\"\n\t.string \"thing\u2026\\p\"\n\t.string \"Some POK\u00e9MON behave in a completely\\n\"\n\t.string \"different way when they are cornered.$\""
+  },
+  "label": "BattleFrontier_BattlePalaceCorridor_Text_MonDifferentWhenCornered",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc",
+  "references": {}
+}

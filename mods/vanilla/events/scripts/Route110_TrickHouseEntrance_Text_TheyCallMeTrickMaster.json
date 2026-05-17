@@ -1,0 +1,19 @@
+{
+  "id": "Route110_TrickHouseEntrance_Text_TheyCallMeTrickMaster",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "sha1": "9367efc136143832c1697fbcc61fbb296269d396"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "rawScript": ".string \"Behold!\\p\"\n\t.string \"For I am the greatest living mystery\\n\"\n\t.string \"of a man in all of HOENN!\\l\"\n\t.string \"They call me\u2026\\p\"\n\t.string \"The TRICK MASTER!\\n\"\n\t.string \"Wahahaha! Glad to meet you!$\""
+  },
+  "label": "Route110_TrickHouseEntrance_Text_TheyCallMeTrickMaster",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+  "references": {}
+}

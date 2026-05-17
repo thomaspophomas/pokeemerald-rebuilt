@@ -1,0 +1,26 @@
+{
+  "id": "SootopolisCity_Mart_EventScript_Gentleman",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Mart/scripts.inc",
+    "sha1": "09107a068ba7ecb271ba83663a6a1a20f47464ae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_Mart/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_ge VAR_SKY_PILLAR_STATE, 2, SootopolisCity_Mart_EventScript_GentlemanNoLegendaries\n\tgoto_if_unset FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, SootopolisCity_Mart_EventScript_GentlemanNoLegendaries\n\tmsgbox SootopolisCity_Mart_Text_DidSomethingAwaken, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "SootopolisCity_Mart_EventScript_Gentleman",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity_Mart/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN"
+    ],
+    "vars": [
+      "VAR_SKY_PILLAR_STATE"
+    ]
+  }
+}

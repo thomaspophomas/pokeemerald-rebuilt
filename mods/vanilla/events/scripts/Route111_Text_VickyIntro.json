@@ -1,0 +1,19 @@
+{
+  "id": "Route111_Text_VickyIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": ".string \"How dare you make my granddaughter\\n\"\n\t.string \"cry!\\p\"\n\t.string \"For that, I'm going to smack you!\\n\"\n\t.string \"Prepare to lose!$\""
+  },
+  "label": "Route111_Text_VickyIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,29 @@
+{
+  "id": "PetalburgCity_Gym_EventScript_OpenUnlockedDoors",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": "setvar VAR_0x8005, 1\n\tcall PetalburgCity_Gym_EventScript_OpenGymEntranceDoors\n\tcall_if_defeated TRAINER_RANDALL, PetalburgCity_Gym_EventScript_OpenSpeedRoomDoors\n\tcall_if_defeated TRAINER_MARY, PetalburgCity_Gym_EventScript_OpenAccuracyRoomDoors\n\tcall_if_defeated TRAINER_PARKER, PetalburgCity_Gym_EventScript_OpenConfusionRoomDoors\n\tcall_if_defeated TRAINER_ALEXIA, PetalburgCity_Gym_EventScript_OpenDefenseRoomDoors\n\tcall_if_defeated TRAINER_GEORGE, PetalburgCity_Gym_EventScript_OpenRecoveryRoomDoors\n\tcall_if_defeated TRAINER_JODY, PetalburgCity_Gym_EventScript_OpenStrengthRoomDoors\n\tcall_if_defeated TRAINER_BERKE, PetalburgCity_Gym_EventScript_OpenOHKORoomDoors\n\tend"
+  },
+  "label": "PetalburgCity_Gym_EventScript_OpenUnlockedDoors",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ALEXIA",
+      "TRAINER_BERKE",
+      "TRAINER_GEORGE",
+      "TRAINER_JODY",
+      "TRAINER_MARY",
+      "TRAINER_PARKER",
+      "TRAINER_RANDALL"
+    ]
+  }
+}

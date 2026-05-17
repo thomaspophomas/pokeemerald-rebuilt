@@ -1,0 +1,26 @@
+{
+  "id": "InsideOfTruck_EventScript_SetIntroFlags",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/InsideOfTruck/scripts.inc",
+    "sha1": "4a49579e348e8a2c251edbaf7a3418e83b642424"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/InsideOfTruck/scripts.inc",
+    "rawScript": "lockall\n\tsetflag FLAG_HIDE_MAP_NAME_POPUP\n\tcheckplayergender\n\tgoto_if_eq VAR_RESULT, MALE, InsideOfTruck_EventScript_SetIntroFlagsMale\n\tgoto_if_eq VAR_RESULT, FEMALE, InsideOfTruck_EventScript_SetIntroFlagsFemale\n\tend"
+  },
+  "label": "InsideOfTruck_EventScript_SetIntroFlags",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/InsideOfTruck/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_MAP_NAME_POPUP"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

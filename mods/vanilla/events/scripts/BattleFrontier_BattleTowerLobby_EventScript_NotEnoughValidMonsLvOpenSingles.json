@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLvOpenSingles",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenSingles, MSGBOX_DEFAULT\n\tgoto BattleFrontier_BattleTowerLobby_EventScript_EndCancelChallenge\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLvOpenSingles",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {}
+}

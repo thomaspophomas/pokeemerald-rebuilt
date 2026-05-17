@@ -1,0 +1,25 @@
+{
+  "id": "MirageTower_2F_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MirageTower_2F/scripts.inc",
+    "sha1": "9add93faabf8bf9460a38b74b7e6f73ec5dd2933"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MirageTower_2F/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_FRAME_TABLE, CaveHole_CheckFallDownHole\n\tmap_script MAP_SCRIPT_ON_TRANSITION, CaveHole_FixCrackedGround\n\tmap_script MAP_SCRIPT_ON_RESUME, MirageTower_2F_SetHoleWarp\n\t.byte 0"
+  },
+  "label": "MirageTower_2F_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/MirageTower_2F/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

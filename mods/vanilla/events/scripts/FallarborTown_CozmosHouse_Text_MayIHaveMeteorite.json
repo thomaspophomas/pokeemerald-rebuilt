@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_CozmosHouse_Text_MayIHaveMeteorite",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+    "sha1": "8f6cba0c7d4561645e0110baf848672ddd10d44d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+    "rawScript": ".string \"PROF. COZMO: Please, may I have that\\n\"\n\t.string \"METEORITE?\\p\"\n\t.string \"I'm not asking for it for free.\\n\"\n\t.string \"How about in exchange for this TM?$\""
+  },
+  "label": "FallarborTown_CozmosHouse_Text_MayIHaveMeteorite",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "FortreeCity_EventScript_Woman",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity/scripts.inc",
+    "sha1": "a1f53b6d8b894e2f69fc9a5c4e1509ef9ab3ce09"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_KECLEON_FLED_FORTREE, FortreeCity_EventScript_WomanGymAccessible\n\tmsgbox FortreeCity_Text_SomethingBlockingGym, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "FortreeCity_EventScript_Woman",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FortreeCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_KECLEON_FLED_FORTREE"
+    ]
+  }
+}

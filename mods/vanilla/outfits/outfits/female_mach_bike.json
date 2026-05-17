@@ -1,0 +1,18 @@
+{
+  "id": "female:mach_bike",
+  "domain": "outfits",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/field_player_avatar.c",
+    "sha1": "39c025a76d641dc8819b98cf493cddcb94a4d3e5"
+  },
+  "legacy": {
+    "kind": "player_outfit",
+    "sourcePath": "src/field_player_avatar.c"
+  },
+  "gender": "female",
+  "state": "mach_bike",
+  "graphicsId": "OBJ_EVENT_GFX_MAY_MACH_BIKE",
+  "assetKey": "gObjectEventGraphicsInfo_MayMachBike",
+  "paletteTag": "OBJ_EVENT_PAL_TAG_MAY"
+}

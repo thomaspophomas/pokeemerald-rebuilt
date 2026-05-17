@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_Text_FailedToSaveBeforeEndingChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": ".string \"Sigh\u2026\\p\"\n\t.string \"You failed to save before you ended\\n\"\n\t.string \"your challenge the last time.\\p\"\n\t.string \"As a result, your challenge has been\\n\"\n\t.string \"disqualified. It is most unfortunate.$\"\n\n@ Unused"
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_Text_FailedToSaveBeforeEndingChallenge",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {}
+}

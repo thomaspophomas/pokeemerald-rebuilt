@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Doubles",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": ".string \"Excuse me!\\p\"\n\t.string \"You don't have four eligible POK\u00e9MON.\\p\"\n\t.string \"You must have four different POK\u00e9MON\\n\"\n\t.string \"of Level 50 or less to enter.\\p\"\n\t.string \"They also must be holding different\\n\"\n\t.string \"kinds of items.\\p\"\n\t.string \"EGGS{STR_VAR_1} ineligible.\\p\"\n\t.string \"Please come see me when you are ready.$\""
+  },
+  "label": "BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Doubles",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {}
+}

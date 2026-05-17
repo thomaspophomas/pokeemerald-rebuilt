@@ -1,0 +1,23 @@
+{
+  "id": "EverGrandeCity_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity/scripts.inc",
+    "sha1": "03ae6b2d9d17df6e3a50137366ce7f8d136ed5d2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, EverGrandeCity_OnTransition\n\t.byte 0"
+  },
+  "label": "EverGrandeCity_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/EverGrandeCity/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

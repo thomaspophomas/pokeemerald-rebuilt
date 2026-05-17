@@ -1,0 +1,23 @@
+{
+  "id": "MtPyre_5F_EventScript_Atsushi",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_4F/scripts.inc",
+    "sha1": "c48fa2172060d225d434fa0b8e6de09d1dd9b497"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_4F/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_ATSUSHI, MtPyre_5F_Text_AtsushiIntro, MtPyre_5F_Text_AtsushiDefeat\n\tmsgbox MtPyre_5F_Text_AtsushiPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "MtPyre_5F_EventScript_Atsushi",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtPyre_4F/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ATSUSHI"
+    ]
+  }
+}

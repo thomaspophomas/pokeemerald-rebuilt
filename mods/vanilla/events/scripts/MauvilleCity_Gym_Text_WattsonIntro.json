@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Gym_Text_WattsonIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "sha1": "ba2cd4a14af6a43f9221cd58f6a4a0299a51ce6c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "rawScript": ".string \"I've given up on my plans to convert\\n\"\n\t.string \"the city, I have.\\p\"\n\t.string \"And so, I put my time into making\\n\"\n\t.string \"door traps in my GYM.\\p\"\n\t.string \"Oh? Now, what are you doing here?\\p\"\n\t.string \"What's that? You say you've gotten\\n\"\n\t.string \"past all my rigged doors?\\p\"\n\t.string \"Wahahahah!\\n\"\n\t.string \"Now, that is amusing!\\p\"\n\t.string \"Then, I, WATTSON, the LEADER of\\n\"\n\t.string \"MAUVILLE GYM, shall electrify you!$\""
+  },
+  "label": "MauvilleCity_Gym_Text_WattsonIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_Gym/scripts.inc",
+  "references": {}
+}

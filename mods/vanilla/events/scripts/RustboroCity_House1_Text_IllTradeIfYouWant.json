@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_House1_Text_IllTradeIfYouWant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_House1/scripts.inc",
+    "sha1": "40e0730e3208fa5cccc515a948ef43358100668f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_House1/scripts.inc",
+    "rawScript": ".string \"Huh? My POK\u00e9MON is cute?\\n\"\n\t.string \"Sure, I knew that.\\p\"\n\t.string \"But if you really want, I'm willing\\n\"\n\t.string \"to trade it to you.\\p\"\n\t.string \"I'll trade you my {STR_VAR_2} for\\n\"\n\t.string \"a {STR_VAR_1} if you want.$\""
+  },
+  "label": "RustboroCity_House1_Text_IllTradeIfYouWant",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_House1/scripts.inc",
+  "references": {}
+}

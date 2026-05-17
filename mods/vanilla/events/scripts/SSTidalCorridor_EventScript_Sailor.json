@@ -1,0 +1,23 @@
+{
+  "id": "SSTidalCorridor_EventScript_Sailor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalCorridor/scripts.inc",
+    "sha1": "02d0cfdd4cf17b1fcf50d838485aaf7013da6b13"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalCorridor/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_DEFEATED_SS_TIDAL_TRAINERS, SSTidalCorridor_EventScript_EnjoyYourCruise\n\tcall SSTidalCorridor_EventScript_CheckIfTrainersDefeated\n\tmsgbox SSTidalCorridor_Text_VisitOtherCabins, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "SSTidalCorridor_EventScript_Sailor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SSTidalCorridor/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_SS_TIDAL_TRAINERS"
+    ]
+  }
+}

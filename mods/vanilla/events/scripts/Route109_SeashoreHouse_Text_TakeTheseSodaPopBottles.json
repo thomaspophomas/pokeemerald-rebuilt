@@ -1,0 +1,19 @@
+{
+  "id": "Route109_SeashoreHouse_Text_TakeTheseSodaPopBottles",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route109_SeashoreHouse/scripts.inc",
+    "sha1": "e25b82298342bb772f517727cec07c201daa316e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route109_SeashoreHouse/scripts.inc",
+    "rawScript": ".string \"You're scorching hot!\\n\"\n\t.string \"Those battles blazed!\\l\"\n\t.string \"I'm more than just satisfied!\\p\"\n\t.string \"As thanks for showing me your hot\\n\"\n\t.string \"streak, I want you to take these.\\p\"\n\t.string \"It's half a dozen bottles of SODA POP!$\""
+  },
+  "label": "Route109_SeashoreHouse_Text_TakeTheseSodaPopBottles",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route109_SeashoreHouse/scripts.inc",
+  "references": {}
+}

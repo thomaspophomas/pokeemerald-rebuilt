@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_BattleColosseum_4P_PlayerSpot2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "fadescreen FADE_TO_BLACK\n\tspecial ChooseHalfPartyForBattle\n\tgoto_if_eq VAR_RESULT, 0, EventScript_BattleColosseum_4P_CancelSpotTrigger\n\tsetvar VAR_0x8005, 2\n\tspecial ColosseumPlayerSpotTriggered\n\tend"
+  },
+  "label": "EventScript_BattleColosseum_4P_PlayerSpot2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

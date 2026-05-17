@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge2_Text_PyramidKingSilverMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "sha1": "d4d4f7c0802f8118a63eaf9b68eb6bcff146ff4d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "rawScript": ".string \"Have you battled the PYRAMID KING\\n\"\n\t.string \"before?\\p\"\n\t.string \"When he's checking the foe's power,\\n\"\n\t.string \"he apparently uses these POK\u00e9MON:\\p\"\n\t.string \"A ROCK-type ROCK PEAK POK\u00e9MON,\\n\"\n\t.string \"an ICE-type ICEBERG POK\u00e9MON,\\l\"\n\t.string \"and a STEEL-type IRON POK\u00e9MON.$\""
+  },
+  "label": "BattleFrontier_Lounge2_Text_PyramidKingSilverMons",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+  "references": {}
+}

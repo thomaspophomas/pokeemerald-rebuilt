@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePyramidTop_EventScript_BattleBrandonSilver",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "sha1": "6256c29eca306dafcaec0dabbacc64547c474e58"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattlePyramidTop_Text_BringCourageToOurBattle, MSGBOX_DEFAULT\n\tcall BattleFrontier_BattlePyramidTop_EventScript_DoBrandonBattle\n\tplaybgm MUS_B_PYRAMID_TOP, FALSE\n\tgoto_if_eq VAR_RESULT, 1, BattleFrontier_BattlePyramidTop_EventScript_DefeatedBrandonSilver\n\tgoto BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost"
+  },
+  "label": "BattleFrontier_BattlePyramidTop_EventScript_BattleBrandonSilver",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "FortreeCity_Gym_EventScript_WinonaRematch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/scripts.inc",
+    "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Gym/scripts.inc",
+    "rawScript": "trainerbattle_rematch_double TRAINER_WINONA_1, FortreeCity_Gym_Text_WinonaPreRematch, FortreeCity_Gym_Text_WinonaRematchDefeat, FortreeCity_Gym_Text_WinonaRematchNeedTwoMons\n\tmsgbox FortreeCity_Gym_Text_WinonaPostRematch, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "FortreeCity_Gym_EventScript_WinonaRematch",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FortreeCity_Gym/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_WINONA_1"
+    ]
+  }
+}

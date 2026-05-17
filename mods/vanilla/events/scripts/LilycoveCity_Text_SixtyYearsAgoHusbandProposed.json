@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_SixtyYearsAgoHusbandProposed",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"It was sixty years ago that my husband\\n\"\n\t.string \"proposed to me here.\\l\"\n\t.string \"The sea remains as beautiful as ever.\\p\"\n\t.string \"Mufufufu mufufufufufu\u2026$\""
+  },
+  "label": "LilycoveCity_Text_SixtyYearsAgoHusbandProposed",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

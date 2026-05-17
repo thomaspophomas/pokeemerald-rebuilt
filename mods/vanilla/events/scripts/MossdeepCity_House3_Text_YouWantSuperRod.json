@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_House3_Text_YouWantSuperRod",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_House3/scripts.inc",
+    "sha1": "862efeb542007e077f0975da975ed00de73db5d8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_House3/scripts.inc",
+    "rawScript": ".string \"Hey there, TRAINER!\\n\"\n\t.string \"A SUPER ROD really is super!\\p\"\n\t.string \"Say all you want, but this baby can\\n\"\n\t.string \"catch POK\u00e9MON off the seafloor!\\p\"\n\t.string \"What do you think?\\n\"\n\t.string \"You want it, don't you?$\""
+  },
+  "label": "MossdeepCity_House3_Text_YouWantSuperRod",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_House3/scripts.inc",
+  "references": {}
+}

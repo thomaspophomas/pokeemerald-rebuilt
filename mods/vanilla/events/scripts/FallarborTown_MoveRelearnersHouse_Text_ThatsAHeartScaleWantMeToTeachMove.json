@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_MoveRelearnersHouse_Text_ThatsAHeartScaleWantMeToTeachMove",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc",
+    "sha1": "9afb886b81b1177e00257143804f6a28f9488a57"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc",
+    "rawScript": ".string \"Oh! That's it! That's an honest to\\n\"\n\t.string \"goodness HEART SCALE!\\p\"\n\t.string \"Let me guess, you want me to teach\\n\"\n\t.string \"a move?$\""
+  },
+  "label": "FallarborTown_MoveRelearnersHouse_Text_ThatsAHeartScaleWantMeToTeachMove",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc",
+  "references": {}
+}

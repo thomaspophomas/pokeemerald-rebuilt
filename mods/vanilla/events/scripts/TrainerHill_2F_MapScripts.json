@@ -1,0 +1,25 @@
+{
+  "id": "TrainerHill_2F_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_2F/scripts.inc",
+    "sha1": "f8ffcccc0278f7947ee76bb1dd31c073f67d723a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_2F/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, TrainerHill_OnResume\n\tmap_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, TrainerHill_OnWarp\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, TrainerHill_OnFrame\n\t.byte 0"
+  },
+  "label": "TrainerHill_2F_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/TrainerHill_2F/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE"
+    ]
+  }
+}

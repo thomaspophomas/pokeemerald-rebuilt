@@ -18,6 +18,12 @@
     "schemaVersion": {
       "type": "integer"
     },
+    "entityKind": {
+      "type": "string"
+    },
+    "semanticCoverage": {
+      "type": "string"
+    },
     "source": {
       "type": "object"
     },
@@ -28,5 +34,19 @@
       "type": "array"
     }
   },
+  "examples": [
+    {
+      "domain": "language",
+      "schemaVersion": 1,
+      "entityKind": "language_entity",
+      "semanticCoverage": "full",
+      "entries": [
+        {
+          "id": "EXAMPLE",
+          "path": "EXAMPLE.json"
+        }
+      ]
+    }
+  ],
   "additionalProperties": true
 }

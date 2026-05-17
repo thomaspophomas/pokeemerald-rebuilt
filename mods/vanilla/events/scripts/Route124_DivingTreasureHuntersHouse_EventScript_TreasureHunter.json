@@ -1,0 +1,23 @@
+{
+  "id": "Route124_DivingTreasureHuntersHouse_EventScript_TreasureHunter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+    "sha1": "e787b98bef4dd91776e97f180a62a1c98c92003e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_MET_DIVING_TREASURE_HUNTER, Route124_DivingTreasureHuntersHouse_EventScript_SkipGreeting\n\tmsgbox Route124_DivingTreasureHuntersHouse_Text_Greeting, MSGBOX_DEFAULT\n\tsetflag FLAG_MET_DIVING_TREASURE_HUNTER\n\tgoto Route124_DivingTreasureHuntersHouse_EventScript_CheckPlayerHasShard\n\tend"
+  },
+  "label": "Route124_DivingTreasureHuntersHouse_EventScript_TreasureHunter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_DIVING_TREASURE_HUNTER"
+    ]
+  }
+}

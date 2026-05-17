@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge2_Text_DoubleBattleAdvice1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "sha1": "d4d4f7c0802f8118a63eaf9b68eb6bcff146ff4d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "rawScript": ".string \"Sure, there are several places where\\n\"\n\t.string \"you can enter DOUBLE BATTLES.\\p\"\n\t.string \"But the DOUBLE BATTLE ROOMS of\\n\"\n\t.string \"the BATTLE TOWER are, like, basic!\\p\"\n\t.string \"They're where you should learn about\\n\"\n\t.string \"how DOUBLE BATTLES are played here\\l\"\n\t.string \"in the BATTLE FRONTIER.$\""
+  },
+  "label": "BattleFrontier_Lounge2_Text_DoubleBattleAdvice1",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Underwater_SealedChamber_EventScript_SurfaceSealedChamber",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_SealedChamber/scripts.inc",
+    "sha1": "131aad6d8a0be2c293134dd0e2a54a3608a8a64b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Underwater_SealedChamber/scripts.inc",
+    "rawScript": "setdivewarp MAP_SEALED_CHAMBER_OUTER_ROOM, 10, 19\n\tend"
+  },
+  "label": "Underwater_SealedChamber_EventScript_SurfaceSealedChamber",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Underwater_SealedChamber/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SEALED_CHAMBER_OUTER_ROOM"
+    ]
+  }
+}

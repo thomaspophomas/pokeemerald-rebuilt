@@ -1,0 +1,23 @@
+{
+  "id": "Route110_TrickHouseCorridor_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseCorridor/scripts.inc",
+    "sha1": "e2098649f2a3b22c538c3bf8192f0cd3cb57a283"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseCorridor/scripts.inc",
+    "rawScript": "setvar VAR_TRICK_HOUSE_ENTER_FROM_CORRIDOR, 1\n\tend"
+  },
+  "label": "Route110_TrickHouseCorridor_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Route110_TrickHouseCorridor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TRICK_HOUSE_ENTER_FROM_CORRIDOR"
+    ]
+  }
+}

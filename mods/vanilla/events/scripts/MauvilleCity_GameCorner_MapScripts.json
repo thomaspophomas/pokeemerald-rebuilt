@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_GameCorner_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "sha1": "3db7cd216c9a2c35e8176ef8b4a1d9ec68649c7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "rawScript": ".byte 0\n\n    @ Game Corner prices\n\t.set TM_DOUBLE_TEAM_COINS, 1500\n\t.set TM_PSYCHIC_COINS, 3500\n\t.set TM_FLAMETHROWER_COINS, 4000\n\t.set TM_THUNDERBOLT_COINS, 4000\n\t.set TM_ICE_BEAM_COINS, 4000\n\t.set DOLL_COINS, 1000\n\n\t.set COINS_PRICE_50,  1000\n\t.set COINS_PRICE_500, 10000"
+  },
+  "label": "MauvilleCity_GameCorner_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+  "references": {}
+}

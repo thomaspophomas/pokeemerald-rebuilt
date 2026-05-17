@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Gym_Text_GymGuideAdvice",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Gym/scripts.inc",
+    "sha1": "e0aa9de4fed612674104e48c7646854400dcecde"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Gym/scripts.inc",
+    "rawScript": ".string \"Yo, how's it going?\\p\"\n\t.string \"Listen, my friend!\\n\"\n\t.string \"Would you like to become the CHAMPION?\\p\"\n\t.string \"I'm no TRAINER, not me, but I can\\n\"\n\t.string \"sure give you winning advice.\\p\"\n\t.string \"That's settled, then! We'll aim for the\\n\"\n\t.string \"POK\u00e9MON CHAMPIONSHIP together!\\p\"\n\t.string \"It's your job as a TRAINER to collect\\n\"\n\t.string \"GYM BADGES, am I right?\\p\"\n\t.string \"But GYM LEADERS aren't pushovers!\\p\"\n\t.string \"And that's where I come in!\\n\"\n\t.string \"I'm here to provide expert advice!\\p\"\n\t.string \"ROXANNE, the GYM LEADER, is a user\\n\"\n\t.string \"of ROCK-type POK\u00e9MON.\\p\"\n\t.string \"The ROCK type is very durable, but\\n\"\n\t.string \"it can't stand WATER-type and\\l\"\n\t.string \"GRASS-type moves.\\p\"\n\t.string \"Come see me afterwards, if you beat\\n\"\n\t.string \"the GYM LEADER.\\p\"\n\t.string \"Well, go for it!$\""
+  },
+  "label": "RustboroCity_Gym_Text_GymGuideAdvice",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Gym/scripts.inc",
+  "references": {}
+}

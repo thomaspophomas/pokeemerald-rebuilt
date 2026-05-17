@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Text_MossdeepTargetedByMagma",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/scripts.inc",
+    "sha1": "33f0f7f83a475484aaca395542c6bd65a6f2dd45"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity/scripts.inc",
+    "rawScript": ".string \"I heard from a SAILOR buddy that\\n\"\n\t.string \"TEAM AQUA set up shop in LILYCOVE.\\p\"\n\t.string \"I also heard that someone came along\\n\"\n\t.string \"and wiped the floor with them!\\p\"\n\t.string \"But MOSSDEEP here's been targeted\\n\"\n\t.string \"by that TEAM MAGMA.\\p\"\n\t.string \"If you want to know what they're up to,\\n\"\n\t.string \"go visit the SPACE CENTER.$\""
+  },
+  "label": "MossdeepCity_Text_MossdeepTargetedByMagma",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity/scripts.inc",
+  "references": {}
+}

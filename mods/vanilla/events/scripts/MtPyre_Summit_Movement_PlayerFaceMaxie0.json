@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_Summit_Movement_PlayerFaceMaxie0",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/scripts.inc",
+    "sha1": "2d98d572d50cebb678d972aa421854c983329822"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Summit/scripts.inc",
+    "rawScript": "delay_16\n\tdelay_16\n\twalk_in_place_faster_right\n\tstep_end"
+  },
+  "label": "MtPyre_Summit_Movement_PlayerFaceMaxie0",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/MtPyre_Summit/scripts.inc",
+  "references": {}
+}

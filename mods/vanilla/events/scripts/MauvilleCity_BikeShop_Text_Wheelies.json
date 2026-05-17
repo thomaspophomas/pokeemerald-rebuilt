@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_BikeShop_Text_Wheelies",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "sha1": "31396febb84a2b48608ca32d5a0dd0de865faf26"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "rawScript": ".string \"Press the B Button while riding,\\n\"\n\t.string \"and the front wheel lifts up.\\p\"\n\t.string \"You can zip around with the front\\n\"\n\t.string \"wheel up using the + Control Pad.\\p\"\n\t.string \"This technique is called a wheelie.\\p\"\n\t.string \"Want to read a different page?$\""
+  },
+  "label": "MauvilleCity_BikeShop_Text_Wheelies",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+  "references": {}
+}

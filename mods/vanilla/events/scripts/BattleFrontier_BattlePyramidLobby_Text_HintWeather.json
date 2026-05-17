@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby_Text_HintWeather",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "sha1": "b93395a7ee7156a94cfa3817fd6222cfa69e94fd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "rawScript": ".string \"RAIN DANCE\u2026 SUNNY DAY\u2026\\n\"\n\t.string \"SANDSTORM\u2026 HAIL\u2026\\p\"\n\t.string \"I see POK\u00e9MON that become stronger\\n\"\n\t.string \"with the weather\u2026\\p\"\n\t.string \"\u2026And, I see your POK\u00e9MON confounded\\n\"\n\t.string \"by different types of moves\u2026$\""
+  },
+  "label": "BattleFrontier_BattlePyramidLobby_Text_HintWeather",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+  "references": {}
+}

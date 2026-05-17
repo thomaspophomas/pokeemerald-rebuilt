@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_GetLostMessingUpTraining",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"Hunh? What do you want?\\p\"\n\t.string \"You're messing up our training,\\n\"\n\t.string \"so can you, like, get lost?$\""
+  },
+  "label": "LilycoveCity_Text_GetLostMessingUpTraining",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

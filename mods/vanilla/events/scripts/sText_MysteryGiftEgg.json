@@ -1,0 +1,19 @@
+{
+  "id": "sText_MysteryGiftEgg",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_pichu.inc",
+    "sha1": "b8f12719008c830f693c4c1d3228265f92693526"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_pichu.inc",
+    "rawScript": ".string \"Thank you for using the MYSTERY\\n\"\n\t.string \"GIFT System.\\p\"\n\t.string \"From the POK\u00e9MON CENTER we\\n\"\n\t.string \"have a gift--a POK\u00e9MON EGG!\\p\"\n\t.string \"Please raise it with love and\\n\"\n\t.string \"kindness.$\""
+  },
+  "label": "sText_MysteryGiftEgg",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_pichu.inc",
+  "references": {}
+}

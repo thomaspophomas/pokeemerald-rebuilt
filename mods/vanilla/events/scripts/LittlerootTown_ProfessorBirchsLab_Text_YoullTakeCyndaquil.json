@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Text_YoullTakeCyndaquil",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": ".string \"PROF. BIRCH: The FIRE POK\u00e9MON\\n\"\n\t.string \"CYNDAQUIL caught your eye!\\p\"\n\t.string \"You're as sharp as ever!\\p\"\n\t.string \"So the CYNDAQUIL is your choice?$\""
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Text_YoullTakeCyndaquil",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

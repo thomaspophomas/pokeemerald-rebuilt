@@ -1,0 +1,19 @@
+{
+  "id": "AbandonedShip_HiddenFloorRooms_EventScript_Rm2KeySparkle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_HiddenFloorRooms/scripts.inc",
+    "sha1": "e64dd6958de17dd29909a779ee9862cda0de7b51"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_HiddenFloorRooms/scripts.inc",
+    "rawScript": "dofieldeffectsparkle 20, 5, 0\n\treturn"
+  },
+  "label": "AbandonedShip_HiddenFloorRooms_EventScript_Rm2KeySparkle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AbandonedShip_HiddenFloorRooms/scripts.inc",
+  "references": {}
+}

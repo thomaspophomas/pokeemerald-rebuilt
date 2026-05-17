@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_SternsShipyard_1F_Text_SeaIsLikeLivingThing",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+    "sha1": "839a40e95086fb806113f67a7c2dc0dcbbab3217"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+    "rawScript": ".string \"The seasons, the weather, where\\n\"\n\t.string \"the moon sits in the sky\u2026\\p\"\n\t.string \"These and other conditions make\\n\"\n\t.string \"the sea change its expression.\\p\"\n\t.string \"That's right!\\n\"\n\t.string \"The sea is like a living thing!$\""
+  },
+  "label": "SlateportCity_SternsShipyard_1F_Text_SeaIsLikeLivingThing",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+  "references": {}
+}

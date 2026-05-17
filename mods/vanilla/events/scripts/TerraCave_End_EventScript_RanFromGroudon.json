@@ -1,0 +1,19 @@
+{
+  "id": "TerraCave_End_EventScript_RanFromGroudon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TerraCave_End/scripts.inc",
+    "sha1": "f580375762b0ce93146fa1e144b30b9b23c3cb5b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TerraCave_End/scripts.inc",
+    "rawScript": "setvar VAR_0x8004, SPECIES_GROUDON\n\tgoto Common_EventScript_LegendaryFlewAway\n\tend"
+  },
+  "label": "TerraCave_End_EventScript_RanFromGroudon",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/TerraCave_End/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Route118_EventScript_RegisterRose",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route118/scripts.inc",
+    "sha1": "5a4868d1490a62e62c6e29a255fc938bad9fa2cd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route118/scripts.inc",
+    "rawScript": "special PlayerFaceTrainerAfterBattle\n\twaitmovement 0\n\tmsgbox Route118_Text_RoseRegister, MSGBOX_DEFAULT\n\tregister_matchcall TRAINER_ROSE_1\n\trelease\n\tend"
+  },
+  "label": "Route118_EventScript_RegisterRose",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route118/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ROSE_1"
+    ]
+  }
+}

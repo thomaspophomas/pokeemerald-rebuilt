@@ -1,0 +1,26 @@
+{
+  "id": "FortreeCity_PokemonCenter_2F_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_PokemonCenter_2F/scripts.inc",
+    "sha1": "4cbcac17ffd511dfb9e9ca856c10d4adad369f22"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_PokemonCenter_2F/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_FRAME_TABLE, CableClub_OnFrame\n\tmap_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, CableClub_OnWarp\n\tmap_script MAP_SCRIPT_ON_LOAD, CableClub_OnLoad\n\tmap_script MAP_SCRIPT_ON_TRANSITION, CableClub_OnTransition\n\t.byte 0\n\n@ The below 3 are unused and leftover from RS"
+  },
+  "label": "FortreeCity_PokemonCenter_2F_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/FortreeCity_PokemonCenter_2F/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_TRANSITION",
+      "MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE"
+    ]
+  }
+}

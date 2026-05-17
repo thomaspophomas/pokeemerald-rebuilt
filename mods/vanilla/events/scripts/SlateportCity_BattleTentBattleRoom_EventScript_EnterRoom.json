@@ -1,0 +1,23 @@
+{
+  "id": "SlateportCity_BattleTentBattleRoom_EventScript_EnterRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_BattleTentBattleRoom/scripts.inc",
+    "sha1": "009de4f2954851271e5ea3ad79e1dccf5cf815ee"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_BattleTentBattleRoom/scripts.inc",
+    "rawScript": "applymovement LOCALID_SLATEPORT_TENT_BATTLE_PLAYER, SlateportCity_BattleTentBattleRoom_Movement_PlayerEnter\n\twaitmovement 0\n\tfactory_setopponentgfx\n\tsetobjectxyperm LOCALID_SLATEPORT_TENT_BATTLE_OPPONENT, 5, 1\n\tremoveobject LOCALID_SLATEPORT_TENT_BATTLE_OPPONENT\n\taddobject LOCALID_SLATEPORT_TENT_BATTLE_OPPONENT\n\tapplymovement LOCALID_SLATEPORT_TENT_BATTLE_OPPONENT, SlateportCity_BattleTentBattleRoom_Movement_OpponentEnter\n\twaitmovement 0\n\tbattletent_getopponentintro\n\tlockall\n\tmsgbox gStringVar4, MSGBOX_DEFAULT\n\twaitmessage\n\tclosemessage\n\tspecial HealPlayerParty\n\tsetvar VAR_0x8004, SPECIAL_BATTLE_FACTORY\n\tsetvar VAR_0x8005, 0\n\tspecial DoSpecialTrainerBattle\n\tswitch VAR_RESULT\n\tcase 1, SlateportCity_BattleTentBattleRoom_EventScript_DefeatedOpponent"
+  },
+  "label": "SlateportCity_BattleTentBattleRoom_EventScript_EnterRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity_BattleTentBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MeteorFalls_1F_2R_Text_JohnPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+    "sha1": "09c545be014eea4099489af97aeae4f12469cf78"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+    "rawScript": ".string \"JOHN: We've been married for\\n\"\n\t.string \"fifty years.\\p\"\n\t.string \"Come to think of it, I've yet to beat\\n\"\n\t.string \"my dear wife in a battle.$\""
+  },
+  "label": "MeteorFalls_1F_2R_Text_JohnPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_Text_ResultsWillBeRecorded",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": ".string \"I feel privileged for having seen\\n\"\n\t.string \"your POK\u00e9MON's exploits.\\p\"\n\t.string \"The results will be recorded.\\n\"\n\t.string \"I must ask you to briefly wait.$\""
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_Text_ResultsWillBeRecorded",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {}
+}

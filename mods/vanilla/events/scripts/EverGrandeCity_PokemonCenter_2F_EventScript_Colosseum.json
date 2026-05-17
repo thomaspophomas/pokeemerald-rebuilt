@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_PokemonCenter_2F_EventScript_Colosseum",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PokemonCenter_2F/scripts.inc",
+    "sha1": "7cd67697e44f8af794e347dbc76459e27a694c16"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_PokemonCenter_2F/scripts.inc",
+    "rawScript": "call CableClub_EventScript_Colosseum\n\tend"
+  },
+  "label": "EverGrandeCity_PokemonCenter_2F_EventScript_Colosseum",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_PokemonCenter_2F/scripts.inc",
+  "references": {}
+}

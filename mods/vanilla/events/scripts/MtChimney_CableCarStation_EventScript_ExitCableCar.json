@@ -1,0 +1,23 @@
+{
+  "id": "MtChimney_CableCarStation_EventScript_ExitCableCar",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney_CableCarStation/scripts.inc",
+    "sha1": "9e305574fdedd25f70ad58e6499cdd46ba5e26c4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtChimney_CableCarStation/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_PLAYER, MtChimney_CableCarStation_Movement_ExitCableCar\n\tapplymovement LOCALID_MT_CHIMNEY_CABLE_CAR_ATTENDANT, MtChimney_CableCarStation_Movement_FollowPlayerOutFromCableCar\n\twaitmovement 0\n\tsetvar VAR_CABLE_CAR_STATION_STATE, 0\n\tsetobjectxyperm LOCALID_MT_CHIMNEY_CABLE_CAR_ATTENDANT, 6, 7\n\tsetobjectmovementtype LOCALID_MT_CHIMNEY_CABLE_CAR_ATTENDANT, MOVEMENT_TYPE_FACE_DOWN\n\treleaseall\n\tend"
+  },
+  "label": "MtChimney_CableCarStation_EventScript_ExitCableCar",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtChimney_CableCarStation/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_CABLE_CAR_STATION_STATE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_Text_FastRunningCurrent",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown/scripts.inc",
+    "sha1": "a2afe22497d0ac4c974698e76e0cda7094b4e79a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown/scripts.inc",
+    "rawScript": ".string \"The sea between PACIFIDLOG and\\n\"\n\t.string \"SLATEPORT has a fast-running tide.\\p\"\n\t.string \"If you decide to SURF, you could end\\n\"\n\t.string \"up swept away somewhere else.$\""
+  },
+  "label": "PacifidlogTown_Text_FastRunningCurrent",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PacifidlogTown/scripts.inc",
+  "references": {}
+}

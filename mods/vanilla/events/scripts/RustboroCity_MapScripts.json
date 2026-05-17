@@ -1,0 +1,24 @@
+{
+  "id": "RustboroCity_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, RustboroCity_OnTransition\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, RustboroCity_OnFrame\n\t.byte 0"
+  },
+  "label": "RustboroCity_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

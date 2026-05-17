@@ -1,0 +1,23 @@
+{
+  "id": "TrainerHill_Entrance_EventScript_TryFaceAttendant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "sha1": "cbfca2354a8d8ed8d68e2612fb0b6f2525008a5f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "rawScript": "trainerhill_getwon\n\tgoto_if_eq VAR_RESULT, TRUE, TrainerHill_Entrance_EventScript_PlayerDontFaceAttendant\n\tapplymovement LOCALID_PLAYER, TrainerHill_Entrance_Movement_PlayerFaceAttendant\n\tend"
+  },
+  "label": "TrainerHill_Entrance_EventScript_TryFaceAttendant",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/TrainerHill_Entrance/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

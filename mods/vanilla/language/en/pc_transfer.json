@@ -1,0 +1,24 @@
+{
+  "id": "en:pc_transfer",
+  "domain": "language",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/text/pc_transfer.inc",
+    "sha1": "22afdd73af617ce21a31aa2f8444d5e61caf1343"
+  },
+  "legacy": {
+    "kind": "asm_text_labels",
+    "sourcePath": "data/text/pc_transfer.inc"
+  },
+  "language": "en",
+  "group": "pc_transfer",
+  "runtime": false,
+  "strings": {
+    "gText_PkmnTransferredSomeonesPC": ".string \"{STR_VAR_2} was transferred to\\n\"\n\t.string \"SOMEONE'S PC.\\p\"\n\t.string \"It was placed in \\n\"\n\t.string \"BOX \u201c{STR_VAR_1}.\u201d$\"",
+    "gText_PkmnTransferredLanettesPC": ".string \"{STR_VAR_2} was transferred to\\n\"\n\t.string \"LANETTE'S PC.\\p\"\n\t.string \"It was placed in \\n\"\n\t.string \"BOX \u201c{STR_VAR_1}.\u201d$\"",
+    "gText_PkmnTransferredSomeonesPCBoxFull": ".string \"BOX \u201c{STR_VAR_3}\u201d on\\n\"\n\t.string \"SOMEONE'S PC was full.\\p\"\n\t.string \"{STR_VAR_2} was transferred to\\n\"\n\t.string \"BOX \u201c{STR_VAR_1}.\u201d$\"",
+    "gText_PkmnTransferredLanettesPCBoxFull": ".string \"BOX \u201c{STR_VAR_3}\u201d on\\n\"\n\t.string \"LANETTE'S PC was full.\\p\"\n\t.string \"{STR_VAR_2} was transferred to\\n\"\n\t.string \"BOX \u201c{STR_VAR_1}.\u201d$\"",
+    "gText_NoMoreRoomForPokemon": ".string \"There's no more room for POK\u00e9MON!\\p\"\n\t.string \"The POK\u00e9MON BOXES are full and\\n\"\n\t.string \"can't accept any more!$\"",
+    "gText_NicknameThisPokemon": ".string \"Do you want to give a nickname to\\n\"\n\t.string \"this {STR_VAR_1}?$\""
+  }
+}

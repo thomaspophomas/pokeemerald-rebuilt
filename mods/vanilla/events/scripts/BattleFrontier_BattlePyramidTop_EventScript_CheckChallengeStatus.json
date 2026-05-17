@@ -1,0 +1,25 @@
+{
+  "id": "BattleFrontier_BattlePyramidTop_EventScript_CheckChallengeStatus",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "sha1": "6256c29eca306dafcaec0dabbacc64547c474e58"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "rawScript": "copyvar VAR_TEMP_C, VAR_RESULT\n\tfrontier_getstatus\n\tswitch VAR_TEMP_CHALLENGE_STATUS\n\tcase 0, BattleFrontier_BattlePyramidTop_EventScript_ReadyChallenge\n\tcase CHALLENGE_STATUS_SAVING, BattleFrontier_BattlePyramid_EventScript_WarpToLobby\n\tcase CHALLENGE_STATUS_PAUSED, BattleFrontier_BattlePyramidTop_EventScript_ReadyChallenge\n\tfrontier_get FRONTIER_DATA_BATTLE_OUTCOME\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_LOST, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_DREW, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_FORFEITED, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost\n\tend"
+  },
+  "label": "BattleFrontier_BattlePyramidTop_EventScript_CheckChallengeStatus",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_C",
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ]
+  }
+}

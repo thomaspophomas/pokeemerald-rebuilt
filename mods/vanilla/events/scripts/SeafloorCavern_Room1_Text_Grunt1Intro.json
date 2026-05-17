@@ -1,0 +1,19 @@
+{
+  "id": "SeafloorCavern_Room1_Text_Grunt1Intro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Room1/scripts.inc",
+    "sha1": "732904dde087d73cbf8a08ba7de7c07176c2a317"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SeafloorCavern_Room1/scripts.inc",
+    "rawScript": ".string \"We don't need a kid around!\\n\"\n\t.string \"Go on home already!$\""
+  },
+  "label": "SeafloorCavern_Room1_Text_Grunt1Intro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SeafloorCavern_Room1/scripts.inc",
+  "references": {}
+}

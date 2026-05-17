@@ -1,0 +1,19 @@
+{
+  "id": "Route114_LanettesHouse_Text_EmailFromBill",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_LanettesHouse/scripts.inc",
+    "sha1": "91f2126eb51b441d0e51b50e9d41b4e45bf67494"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114_LanettesHouse/scripts.inc",
+    "rawScript": ".string \"There's an e-mail from someone on\\n\"\n\t.string \"the PC.\\p\"\n\t.string \"\u201c\u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"\u201cYour Storage System offers more\\n\"\n\t.string \"convenience than mine.\\p\"\n\t.string \"\u201cIt has a lot of user-friendly features\\n\"\n\t.string \"that make it fun and useful, too.\\p\"\n\t.string \"\u201cIt makes me proud that I played\\n\"\n\t.string \"a part in its development.\\p\"\n\t.string \"\u201cHere's hoping that you'll continue\\n\"\n\t.string \"research in Storage Systems.\\p\"\n\t.string \"\u201cFrom BILL\\n\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026\u201d$\""
+  },
+  "label": "Route114_LanettesHouse_Text_EmailFromBill",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route114_LanettesHouse/scripts.inc",
+  "references": {}
+}

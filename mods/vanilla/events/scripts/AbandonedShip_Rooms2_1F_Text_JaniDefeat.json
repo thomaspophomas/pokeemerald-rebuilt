@@ -1,0 +1,19 @@
+{
+  "id": "AbandonedShip_Rooms2_1F_Text_JaniDefeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+    "sha1": "ba923c54b93786d603c658ba8fad2029d216a91e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+    "rawScript": ".string \"Oops.\\n\"\n\t.string \"That didn't go very well.$\""
+  },
+  "label": "AbandonedShip_Rooms2_1F_Text_JaniDefeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+  "references": {}
+}

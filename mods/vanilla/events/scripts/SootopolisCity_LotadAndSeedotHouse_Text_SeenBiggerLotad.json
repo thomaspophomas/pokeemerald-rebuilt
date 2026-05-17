@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+    "sha1": "fc092cb2d8bfc7874143add20c2a81120dbbacc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+    "rawScript": ".string \"{STR_VAR_2} inches?\\p\"\n\t.string \"Hmm\u2026 I've seen a bigger LOTAD\\n\"\n\t.string \"than this one here.$\""
+  },
+  "label": "SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+  "references": {}
+}

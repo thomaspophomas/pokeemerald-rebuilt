@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_BikeShop_Text_RydelGreeting",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "sha1": "31396febb84a2b48608ca32d5a0dd0de865faf26"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "rawScript": ".string \"Well, well, what have we here?\\n\"\n\t.string \"A most energetic customer!\\p\"\n\t.string \"Me? You may call me RYDEL.\\n\"\n\t.string \"I'm the owner of this cycle shop.$\""
+  },
+  "label": "MauvilleCity_BikeShop_Text_RydelGreeting",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+  "references": {}
+}

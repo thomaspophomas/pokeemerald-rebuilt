@@ -1,0 +1,19 @@
+{
+  "id": "AbandonedShip_Corridors_B1F_Text_InsertedStorageKey",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+    "sha1": "20ae990b6a96e346c899f484fa3bf65e231e4792"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+    "rawScript": ".string \"{PLAYER} inserted and turned the\\n\"\n\t.string \"STORAGE KEY.\\p\"\n\t.string \"The inserted KEY stuck fast,\\n\"\n\t.string \"but the door opened.$\""
+  },
+  "label": "AbandonedShip_Corridors_B1F_Text_InsertedStorageKey",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+  "references": {}
+}

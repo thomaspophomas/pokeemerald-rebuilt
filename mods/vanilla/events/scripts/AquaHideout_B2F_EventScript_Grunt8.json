@@ -1,0 +1,23 @@
+{
+  "id": "AquaHideout_B2F_EventScript_Grunt8",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B2F/scripts.inc",
+    "sha1": "2422b13cc4d746236ea4f5c8dbbc6ea26d3d8e36"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_B2F/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_8, AquaHideout_B2F_Text_Grunt8Intro, AquaHideout_B2F_Text_Grunt8Defeat\n\tmsgbox AquaHideout_B2F_Text_Grunt8PostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "AquaHideout_B2F_EventScript_Grunt8",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AquaHideout_B2F/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_GRUNT_AQUA_HIDEOUT_8"
+    ]
+  }
+}

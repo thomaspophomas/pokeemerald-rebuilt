@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Text_GiantPokemonSuddenlyAppeared",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": ".string \"These giant POK\u00e9MON suddenly appeared\\n\"\n\t.string \"in the middle of the city!\\p\"\n\t.string \"And, I've never seen them before!\\p\"\n\t.string \"Why are they smashing into each\\n\"\n\t.string \"other like that?\\p\"\n\t.string \"Why can't they be friends, those\\n\"\n\t.string \"POK\u00e9MON?$\""
+  },
+  "label": "SootopolisCity_Text_GiantPokemonSuddenlyAppeared",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

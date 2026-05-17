@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_Mart_EventScript_Woman",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_Mart/scripts.inc",
+    "sha1": "0ca66f0e5420cbce8afedeba0991156dec84e531"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_Mart/scripts.inc",
+    "rawScript": "msgbox FallarborTown_Mart_Text_DecidingSkittyEvolve, MSGBOX_NPC\n\tend"
+  },
+  "label": "FallarborTown_Mart_EventScript_Woman",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_Mart/scripts.inc",
+  "references": {}
+}

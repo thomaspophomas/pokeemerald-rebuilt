@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.inc",
+    "sha1": "6899c6d44a5fd56d99bcdae08fe4b431b5281a13"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"Hohoho! Hey, kid, you can reach\\n\"\n\t.string \"the hot springs from here.\\p\"\n\t.string \"If POK\u00e9MON are getting rest, so too\\n\"\n\t.string \"should their TRAINERS.$\""
+  },
+  "label": "LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

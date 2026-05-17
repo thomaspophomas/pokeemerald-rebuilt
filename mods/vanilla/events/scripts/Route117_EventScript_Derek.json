@@ -1,0 +1,23 @@
+{
+  "id": "Route117_EventScript_Derek",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route117/scripts.inc",
+    "sha1": "9c87422ff2d4ac9ebaa7fbe97f86e8cb16c2b92b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route117/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_DEREK, Route117_Text_DerekIntro, Route117_Text_DerekDefeat\n\tmsgbox Route117_Text_DerekPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route117_EventScript_Derek",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route117/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_DEREK"
+    ]
+  }
+}

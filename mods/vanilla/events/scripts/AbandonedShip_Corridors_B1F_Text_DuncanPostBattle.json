@@ -1,0 +1,19 @@
+{
+  "id": "AbandonedShip_Corridors_B1F_Text_DuncanPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+    "sha1": "20ae990b6a96e346c899f484fa3bf65e231e4792"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+    "rawScript": ".string \"The ship's bottom has sunk into the\\n\"\n\t.string \"depths.\\p\"\n\t.string \"If a POK\u00e9MON knew how to go underwater,\\n\"\n\t.string \"we might make some progress\u2026$\""
+  },
+  "label": "AbandonedShip_Corridors_B1F_Text_DuncanPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+  "references": {}
+}

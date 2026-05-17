@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_Text_ComeHomeIfAnythingHappens",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": ".string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\n\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"To think that you have your very own\\n\"\n\t.string \"POK\u00e9MON now\u2026\\l\"\n\t.string \"Your father will be overjoyed.\\p\"\n\t.string \"\u2026But please be careful.\\n\"\n\t.string \"If anything happens, you can come home.\\p\"\n\t.string \"Go on, go get them, honey!$\""
+  },
+  "label": "LittlerootTown_Text_ComeHomeIfAnythingHappens",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {}
+}

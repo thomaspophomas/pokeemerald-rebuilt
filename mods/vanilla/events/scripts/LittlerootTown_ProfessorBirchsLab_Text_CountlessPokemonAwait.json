@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": ".string \"PROF. BIRCH: Countless POK\u00e9MON\\n\"\n\t.string \"await you!\\p\"\n\t.string \"Argh, I'm getting the itch to get out\\n\"\n\t.string \"and do fieldwork again!$\""
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

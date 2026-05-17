@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc",
+    "sha1": "2fdeaa88644de0428efc55499bd5f5d3a0d1831f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc",
+    "rawScript": ".string \"Ah, too bad for you!\\p\"\n\t.string \"But it was a good match.\\n\"\n\t.string \"I hope you can win next time.$\""
+  },
+  "label": "SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc",
+  "references": {}
+}

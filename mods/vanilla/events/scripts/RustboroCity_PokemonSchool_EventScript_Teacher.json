@@ -1,0 +1,31 @@
+{
+  "id": "RustboroCity_PokemonSchool_EventScript_Teacher",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "sha1": "155fc7f1cee833cb06df85a407e5f98f216a928e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_QUICK_CLAW, RustboroCity_PokemonSchool_EventScript_GaveQuickClaw\n\tcall_if_eq VAR_FACING, DIR_EAST, RustboroCity_PokemonSchool_EventScript_TeacherCheckOnStudentsEast\n\tcall_if_eq VAR_FACING, DIR_WEST, RustboroCity_PokemonSchool_EventScript_TeacherCheckOnStudentsWest\n\tmsgbox RustboroCity_PokemonSchool_Text_StudentsWhoDontStudyGetQuickClaw, MSGBOX_DEFAULT\n\tgiveitem ITEM_QUICK_CLAW\n\tgoto_if_eq VAR_RESULT, 0, Common_EventScript_ShowBagIsFull\n\tclosemessage\n\tapplymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tsetflag FLAG_RECEIVED_QUICK_CLAW\n\trelease\n\tend"
+  },
+  "label": "RustboroCity_PokemonSchool_EventScript_Teacher",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_QUICK_CLAW"
+    ],
+    "vars": [
+      "VAR_FACING",
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_QUICK_CLAW"
+    ]
+  }
+}

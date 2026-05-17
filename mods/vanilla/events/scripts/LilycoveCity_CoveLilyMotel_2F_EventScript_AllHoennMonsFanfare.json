@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_CoveLilyMotel_2F_EventScript_AllHoennMonsFanfare",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+    "sha1": "f1b25840a73dbfc8affb6142a8450fed0204496f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+    "rawScript": "setflag FLAG_TEMP_2\n\tplayfanfare MUS_OBTAIN_ITEM\n\twaitfanfare\n\tgoto LilycoveCity_CoveLilyMotel_2F_EventScript_ShowDiploma\n\tend"
+  },
+  "label": "LilycoveCity_CoveLilyMotel_2F_EventScript_AllHoennMonsFanfare",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_TEMP_2"
+    ]
+  }
+}

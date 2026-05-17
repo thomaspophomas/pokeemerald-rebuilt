@@ -1,0 +1,26 @@
+{
+  "id": "LittlerootTown_EventScript_SetMomStandingInFrontOfDoorPos",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": "clearflag FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE\n\tsetobjectmovementtype LOCALID_LITTLEROOT_MOM, MOVEMENT_TYPE_FACE_DOWN\n\tcheckplayergender\n\tcall_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_SetMomInFrontOfDoorMale\n\tcall_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_SetMomInFrontOfDoorFemale\n\treturn"
+  },
+  "label": "LittlerootTown_EventScript_SetMomStandingInFrontOfDoorPos",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

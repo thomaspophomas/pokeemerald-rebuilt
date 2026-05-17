@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattlePikeLobby_EventScript_GiveBattlePoints",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "sha1": "e2be0fe89296e221d6bdf7bc81fdcf739064bd1b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints, MSGBOX_DEFAULT\n\tfrontier_givepoints\n\tmsgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS\n\tfrontier_checkairshow\n\tpike_get PIKE_DATA_TOTAL_STREAKS\n\taddvar VAR_RESULT, 1\n\tpike_set PIKE_DATA_TOTAL_STREAKS, VAR_RESULT\n\tspecial LoadPlayerParty\n\tspecial HealPlayerParty\n\tpike_resethelditems\n\tmessage BattleFrontier_BattlePikeLobby_Text_ShallRecordResults\n\twaitmessage\n\tpike_save 0\n\tplayse SE_SAVE\n\twaitse\n\tmsgbox BattleFrontier_BattlePikeLobby_Text_LookForwardToSeeingYou, MSGBOX_DEFAULT\n\tclosemessage\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 255\n\treleaseall\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeLobby_EventScript_GiveBattlePoints",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_EventScript_AgreeToSeeRival",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": "msgbox LittlerootTown_ProfessorBirchsLab_Text_GetRivalToTeachYou, MSGBOX_DEFAULT\n\tclearflag FLAG_HIDE_ROUTE_101_BOY\n\tsetvar VAR_BIRCH_LAB_STATE, 3\n\treleaseall\n\tend"
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_EventScript_AgreeToSeeRival",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_ROUTE_101_BOY"
+    ],
+    "vars": [
+      "VAR_BIRCH_LAB_STATE"
+    ]
+  }
+}

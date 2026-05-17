@@ -1,0 +1,24 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_EventScript_PokefanM",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tsetvar VAR_0x8004, FANCLUB_MEMBER2\n\tspecial BufferFanClubTrainerName\n\tgoto_if_eq VAR_LILYCOVE_FAN_CLUB_STATE, 0, LilycoveCity_PokemonTrainerFanClub_EventScript_PokefanMPlayerNotChampion\n\tspecialvar VAR_RESULT, IsFanClubMemberFanOfPlayer\n\tgoto_if_eq VAR_RESULT, TRUE, LilycoveCity_PokemonTrainerFanClub_EventScript_PokefanMPlayersFan\n\tspecialvar VAR_RESULT, GetNumFansOfPlayerInTrainerFanClub\n\tgoto_if_eq VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), LilycoveCity_PokemonTrainerFanClub_EventScript_PokefanMOnlyNonFan\n\tmsgbox LilycoveCity_PokemonTrainerFanClub_Text_LongWayToGoComparedToNorman, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_EventScript_PokefanM",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LILYCOVE_FAN_CLUB_STATE",
+      "VAR_RESULT"
+    ]
+  }
+}

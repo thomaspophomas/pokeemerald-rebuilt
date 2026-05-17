@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_House3_Text_MetStevenHadAmazingPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_House3/scripts.inc",
+    "sha1": "fe50a1e51aebeba4e95bf2a1358a8b22a12445d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_House3/scripts.inc",
+    "rawScript": ".string \"While speaking about POK\u00e9DEXES,\\n\"\n\t.string \"I remembered something.\\p\"\n\t.string \"I met this TRAINER, STEVEN, when\\n\"\n\t.string \"I was searching for rare stones.\\p\"\n\t.string \"Hoo, boy, he had some amazing POK\u00e9MON\\n\"\n\t.string \"with him.\\p\"\n\t.string \"They weren't just rare, they were\\n\"\n\t.string \"trained to terrifying extremes!\\p\"\n\t.string \"He might even be stronger than the\\n\"\n\t.string \"GYM LEADER in this town\u2026$\""
+  },
+  "label": "FortreeCity_House3_Text_MetStevenHadAmazingPokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_House3/scripts.inc",
+  "references": {}
+}

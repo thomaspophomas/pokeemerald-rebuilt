@@ -1,0 +1,23 @@
+{
+  "id": "LavaridgeTown_OnFrame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": "map_script_2 VAR_LAVARIDGE_TOWN_STATE, 1, LavaridgeTown_EventScript_RivalGiveGoGoggles\n\t.2byte 0"
+  },
+  "label": "LavaridgeTown_OnFrame",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LAVARIDGE_TOWN_STATE"
+    ]
+  }
+}

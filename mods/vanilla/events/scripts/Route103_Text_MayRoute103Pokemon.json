@@ -1,0 +1,19 @@
+{
+  "id": "Route103_Text_MayRoute103Pokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route103/scripts.inc",
+    "sha1": "cdbe6074bf0bdfa44494ccf1457b18c3de43e0de"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route103/scripts.inc",
+    "rawScript": ".string \"MAY: Let's see\u2026 The POK\u00e9MON found\\n\"\n\t.string \"on ROUTE 103 include\u2026$\""
+  },
+  "label": "Route103_Text_MayRoute103Pokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route103/scripts.inc",
+  "references": {}
+}

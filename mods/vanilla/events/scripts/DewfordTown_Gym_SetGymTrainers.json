@@ -1,0 +1,28 @@
+{
+  "id": "DewfordTown_Gym_SetGymTrainers",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/set_gym_trainers.inc",
+    "sha1": "90019f7a2097712cc57c824c9118423a5a8171bd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/set_gym_trainers.inc",
+    "rawScript": "settrainerflag TRAINER_TAKAO\n\tsettrainerflag TRAINER_JOCELYN\n\tsettrainerflag TRAINER_LAURA\n\tsettrainerflag TRAINER_BRENDEN\n\tsettrainerflag TRAINER_CRISTIAN\n\tsettrainerflag TRAINER_LILITH\n\treturn"
+  },
+  "label": "DewfordTown_Gym_SetGymTrainers",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/scripts/set_gym_trainers.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_BRENDEN",
+      "TRAINER_CRISTIAN",
+      "TRAINER_JOCELYN",
+      "TRAINER_LAURA",
+      "TRAINER_LILITH",
+      "TRAINER_TAKAO"
+    ]
+  }
+}

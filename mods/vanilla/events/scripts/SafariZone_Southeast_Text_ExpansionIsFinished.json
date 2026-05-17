@@ -1,0 +1,19 @@
+{
+  "id": "SafariZone_Southeast_Text_ExpansionIsFinished",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/safari_zone.inc",
+    "sha1": "435880c660a34d3e51dcedb348a41731d28af7cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/safari_zone.inc",
+    "rawScript": ".string \"The SAFARI ZONE's expansion project\\n\"\n\t.string \"is finished now.\\p\"\n\t.string \"We hope you will enjoy the new area.$\""
+  },
+  "label": "SafariZone_Southeast_Text_ExpansionIsFinished",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/safari_zone.inc",
+  "references": {}
+}

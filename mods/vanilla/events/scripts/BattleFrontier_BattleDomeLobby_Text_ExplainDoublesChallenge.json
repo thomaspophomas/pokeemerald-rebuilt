@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomeLobby_Text_ExplainDoublesChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "sha1": "c5673b719ade6a47e6fe1e3055270ca454748cfd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "rawScript": ".string \"The DOUBLE BATTLE Tournament\\n\"\n\t.string \"is exactly as the name suggests--\\l\"\n\t.string \"a tournament of DOUBLE BATTLES.\\p\"\n\t.string \"All participating TRAINERS must\\n\"\n\t.string \"enter three POK\u00e9MON each.\\p\"\n\t.string \"In each battle, one of the three\\n\"\n\t.string \"POK\u00e9MON must be held in reserve.\\p\"\n\t.string \"The remaining two POK\u00e9MON must take\\n\"\n\t.string \"part in a DOUBLE BATTLE.\\p\"\n\t.string \"Choose the two battling POK\u00e9MON after\\n\"\n\t.string \"examining the opponent's trio.\\p\"\n\t.string \"You win the tournament by defeating\\n\"\n\t.string \"four TRAINERS.\\p\"\n\t.string \"Battle Points are awarded to\\n\"\n\t.string \"the tournament winner.\\p\"\n\t.string \"If you want to interrupt your\\n\"\n\t.string \"tournament, please save the game.\\p\"\n\t.string \"If you don't save before interrupting,\\n\"\n\t.string \"you will be disqualified.$\""
+  },
+  "label": "BattleFrontier_BattleDomeLobby_Text_ExplainDoublesChallenge",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+  "references": {}
+}

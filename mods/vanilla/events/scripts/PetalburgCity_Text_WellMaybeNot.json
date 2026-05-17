@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Text_WellMaybeNot",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity/scripts.inc",
+    "sha1": "b4c5cd37e96410a5c2721d216afbe3a8ea620c87"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity/scripts.inc",
+    "rawScript": ".string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"Well, maybe not.\\n\"\n\t.string \"Your clothes aren't all that dirty.\\p\"\n\t.string \"You're either a rookie TRAINER,\\n\"\n\t.string \"or maybe you're just an ordinary kid.$\""
+  },
+  "label": "PetalburgCity_Text_WellMaybeNot",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity/scripts.inc",
+  "references": {}
+}

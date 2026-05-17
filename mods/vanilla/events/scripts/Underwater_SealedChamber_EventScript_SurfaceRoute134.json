@@ -1,0 +1,23 @@
+{
+  "id": "Underwater_SealedChamber_EventScript_SurfaceRoute134",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_SealedChamber/scripts.inc",
+    "sha1": "131aad6d8a0be2c293134dd0e2a54a3608a8a64b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Underwater_SealedChamber/scripts.inc",
+    "rawScript": "setdivewarp MAP_ROUTE134, 60, 31\n\tend"
+  },
+  "label": "Underwater_SealedChamber_EventScript_SurfaceRoute134",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Underwater_SealedChamber/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_ROUTE134"
+    ]
+  }
+}

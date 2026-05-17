@@ -1,0 +1,19 @@
+{
+  "id": "SeafloorCavern_Room3_Text_Grunt5Intro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Room3/scripts.inc",
+    "sha1": "114dd5618f9f61a4bdce1766b391fad937adce4c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SeafloorCavern_Room3/scripts.inc",
+    "rawScript": ".string \"For our dream to become real, we need\\n\"\n\t.string \"the power of POK\u00e9MON.\\p\"\n\t.string \"But meddlers like you use the power of\\n\"\n\t.string \"POK\u00e9MON to mess with us even at\\l\"\n\t.string \"a place like this!\\p\"\n\t.string \"Life just doesn't work the way we\\n\"\n\t.string \"need it to!$\""
+  },
+  "label": "SeafloorCavern_Room3_Text_Grunt5Intro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SeafloorCavern_Room3/scripts.inc",
+  "references": {}
+}

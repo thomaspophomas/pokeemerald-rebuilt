@@ -1,0 +1,29 @@
+{
+  "id": "SootopolisCity_EventScript_GiveWaterfall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": "msgbox SootopolisCity_Text_ThankYouForHelpAcceptThis, MSGBOX_DEFAULT\n\tgiveitem ITEM_HM_WATERFALL\n\tsetflag FLAG_RECEIVED_HM_WATERFALL\n\tmsgbox SootopolisCity_Text_ExplainWaterfallGoToGym, MSGBOX_DEFAULT\n\tclosemessage\n\tcall_if_eq VAR_FACING, DIR_NORTH, SootopolisCity_EventScript_WallaceMoveFromGym\n\tcall_if_eq VAR_FACING, DIR_EAST, SootopolisCity_EventScript_WallaceMoveFromGym\n\tcall_if_eq VAR_FACING, DIR_WEST, SootopolisCity_EventScript_WallaceMoveFromGymWest\n\trelease\n\tend"
+  },
+  "label": "SootopolisCity_EventScript_GiveWaterfall",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_HM_WATERFALL"
+    ],
+    "vars": [
+      "VAR_FACING"
+    ],
+    "items": [
+      "ITEM_HM_WATERFALL"
+    ]
+  }
+}

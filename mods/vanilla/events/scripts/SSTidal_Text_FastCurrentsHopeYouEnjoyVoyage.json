@@ -1,0 +1,19 @@
+{
+  "id": "SSTidal_Text_FastCurrentsHopeYouEnjoyVoyage",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalCorridor/scripts.inc",
+    "sha1": "02d0cfdd4cf17b1fcf50d838485aaf7013da6b13"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalCorridor/scripts.inc",
+    "rawScript": ".string \"This ferry is built to plow through\\n\"\n\t.string \"fast-running currents.\\p\"\n\t.string \"We hope you enjoy your voyage with us.\\n\"\n\t.string \"Feel free to explore the ship.$\""
+  },
+  "label": "SSTidal_Text_FastCurrentsHopeYouEnjoyVoyage",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SSTidalCorridor/scripts.inc",
+  "references": {}
+}

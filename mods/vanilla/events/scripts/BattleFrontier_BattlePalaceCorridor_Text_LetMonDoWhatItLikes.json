@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceCorridor_Text_LetMonDoWhatItLikes",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc",
+    "sha1": "64a2ef91c8d0c246c8214b48e91e15abe9171a8e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc",
+    "rawScript": ".string \"Rather than trying to make a POK\u00e9MON\\n\"\n\t.string \"do what it dislikes, try to let it do\\l\"\n\t.string \"what it likes and is good at doing.\\p\"\n\t.string \"Put yourself in the POK\u00e9MON's position\\n\"\n\t.string \"and consider what moves it would like.$\""
+  },
+  "label": "BattleFrontier_BattlePalaceCorridor_Text_LetMonDoWhatItLikes",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc",
+  "references": {}
+}

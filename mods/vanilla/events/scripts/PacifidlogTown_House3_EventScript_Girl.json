@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_House3_EventScript_Girl",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_House3/scripts.inc",
+    "sha1": "ba89fc962199aede788baf3e29a8d5d208c669cb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown_House3/scripts.inc",
+    "rawScript": "msgbox PacifidlogTown_House3_Text_IsThatAPokedex, MSGBOX_NPC\n\tend"
+  },
+  "label": "PacifidlogTown_House3_EventScript_Girl",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PacifidlogTown_House3/scripts.inc",
+  "references": {}
+}

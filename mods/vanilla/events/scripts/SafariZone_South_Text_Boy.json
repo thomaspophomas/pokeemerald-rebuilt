@@ -1,0 +1,19 @@
+{
+  "id": "SafariZone_South_Text_Boy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/safari_zone.inc",
+    "sha1": "435880c660a34d3e51dcedb348a41731d28af7cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/safari_zone.inc",
+    "rawScript": ".string \"Did you know?\\p\"\n\t.string \"If you put a {POKEBLOCK} in that square box,\\n\"\n\t.string \"POK\u00e9MON gather around.$\""
+  },
+  "label": "SafariZone_South_Text_Boy",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/safari_zone.inc",
+  "references": {}
+}

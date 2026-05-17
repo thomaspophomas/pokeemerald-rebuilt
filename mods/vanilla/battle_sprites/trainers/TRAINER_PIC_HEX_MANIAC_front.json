@@ -1,0 +1,20 @@
+{
+  "id": "TRAINER_PIC_HEX_MANIAC:front",
+  "domain": "battle_sprites",
+  "schemaVersion": 1,
+  "source": {
+    "path": "include/constants/trainers.h",
+    "sha1": "5d2c0f8be7615651dd143799b92297c7ea692aaa"
+  },
+  "legacy": {
+    "kind": "trainer_front_battle_sprite",
+    "sourcePath": "include/constants/trainers.h"
+  },
+  "key": "TRAINER_PIC_HEX_MANIAC:front",
+  "entityKind": "trainer",
+  "trainerId": "TRAINER_PIC_HEX_MANIAC",
+  "side": "BATTLE_SPRITE_SIDE_FRONT",
+  "flags": 0,
+  "assetKey": "TRAINER_PIC_HEX_MANIAC:front",
+  "table": "gTrainerFrontPicTable"
+}

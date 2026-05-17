@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestLobby_Movement_LinkArtistReturnToPlayer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": "delay_16\n\tdelay_16\n\tdelay_16\n\tdelay_16\n\twalk_fast_up\n\twalk_fast_up\n\twalk_fast_up\n\twalk_in_place_faster_left\n\tstep_end\n\n@ EventScript_SpeakToContestReceptionist either ends or returns after a contest entry is submitted"
+  },
+  "label": "LilycoveCity_ContestLobby_Movement_LinkArtistReturnToPlayer",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,35 @@
+{
+  "id": "BattleFrontier_Mart_Pokemart",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Mart/scripts.inc",
+    "sha1": "e8269950fe6ceeeec601d93208e6255555526b6b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Mart/scripts.inc",
+    "rawScript": ".2byte ITEM_ULTRA_BALL\n\t.2byte ITEM_HYPER_POTION\n\t.2byte ITEM_MAX_POTION\n\t.2byte ITEM_FULL_RESTORE\n\t.2byte ITEM_FULL_HEAL\n\t.2byte ITEM_REVIVE\n\t.2byte ITEM_MAX_REPEL\n\t.2byte ITEM_PROTEIN\n\t.2byte ITEM_CALCIUM\n\t.2byte ITEM_IRON\n\t.2byte ITEM_ZINC\n\t.2byte ITEM_CARBOS\n\t.2byte ITEM_HP_UP\n\tpokemartlistend"
+  },
+  "label": "BattleFrontier_Mart_Pokemart",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/BattleFrontier_Mart/scripts.inc",
+  "references": {
+    "items": [
+      "ITEM_CALCIUM",
+      "ITEM_CARBOS",
+      "ITEM_FULL_HEAL",
+      "ITEM_FULL_RESTORE",
+      "ITEM_HP_UP",
+      "ITEM_HYPER_POTION",
+      "ITEM_IRON",
+      "ITEM_MAX_POTION",
+      "ITEM_MAX_REPEL",
+      "ITEM_PROTEIN",
+      "ITEM_REVIVE",
+      "ITEM_ULTRA_BALL",
+      "ITEM_ZINC"
+    ]
+  }
+}

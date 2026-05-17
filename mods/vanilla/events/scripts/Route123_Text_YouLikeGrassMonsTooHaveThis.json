@@ -1,0 +1,19 @@
+{
+  "id": "Route123_Text_YouLikeGrassMonsTooHaveThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route123/scripts.inc",
+    "sha1": "6ee451eb8a5f0717aed9ff7e71878f845e9727c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route123/scripts.inc",
+    "rawScript": ".string \"Oh?\\p\"\n\t.string \"You like GRASS-type POK\u00e9MON, too,\\n\"\n\t.string \"don't you?\\p\"\n\t.string \"I'm so happy, you can have this!\\n\"\n\t.string \"It's a token of our friendship.$\""
+  },
+  "label": "Route123_Text_YouLikeGrassMonsTooHaveThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route123/scripts.inc",
+  "references": {}
+}

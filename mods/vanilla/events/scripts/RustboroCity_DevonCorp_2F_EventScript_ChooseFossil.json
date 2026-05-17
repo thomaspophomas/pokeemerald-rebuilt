@@ -1,0 +1,23 @@
+{
+  "id": "RustboroCity_DevonCorp_2F_EventScript_ChooseFossil",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "sha1": "7e0aa6a4df50ead64287578a24ba19b07cafbb02"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "rawScript": "message RustboroCity_DevonCorp_2F_Text_TwoFossilsPickOne\n\twaitmessage\n\tmultichoice 17, 6, MULTI_FOSSIL, FALSE\n\tswitch VAR_RESULT\n\tcase 0, RustboroCity_DevonCorp_2F_EventScript_ChooseClawFossil\n\tcase 1, RustboroCity_DevonCorp_2F_EventScript_ChooseRootFossil\n\tcase 2, RustboroCity_DevonCorp_2F_EventScript_CancelFossilSelect\n\tcase MULTI_B_PRESSED, RustboroCity_DevonCorp_2F_EventScript_CancelFossilSelect\n\tend"
+  },
+  "label": "RustboroCity_DevonCorp_2F_EventScript_ChooseFossil",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

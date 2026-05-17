@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_EventScript_SetRoughWater",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": "setmetatile 27, 43, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 28, 43, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 29, 43, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 30, 43, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 27, 44, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 28, 44, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 29, 44, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 30, 44, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 27, 45, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 28, 45, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 29, 45, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 30, 45, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 32, 43, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 33, 43, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 34, 43, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 35, 43, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 32, 44, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 33, 44, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 34, 44, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 35, 44, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 32, 45, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 33, 45, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 34, 45, METATILE_Sootopolis_RoughWater, FALSE\n\tsetmetatile 35, 45, METATILE_Sootopolis_RoughWater, FALSE\n\treturn"
+  },
+  "label": "SootopolisCity_EventScript_SetRoughWater",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

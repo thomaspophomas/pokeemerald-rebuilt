@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Text_CatchCoolPokemonWithPokeBalls",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": ".string \"BRENDAN: You know it's more fun to\\n\"\n\t.string \"have a whole bunch of POK\u00e9MON.\\p\"\n\t.string \"I'm going to explore all over the place\\n\"\n\t.string \"to find different POK\u00e9MON.\\p\"\n\t.string \"If I find any cool POK\u00e9MON, you bet\\n\"\n\t.string \"I'll try to get them with POK\u00e9 BALLS.$\""
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Text_CatchCoolPokemonWithPokeBalls",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SafariZone_Northeast_Text_Girl",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/safari_zone.inc",
+    "sha1": "435880c660a34d3e51dcedb348a41731d28af7cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/safari_zone.inc",
+    "rawScript": ".string \"Oh, boo!\\n\"\n\t.string \"I can't seem to catch anything!\\p\"\n\t.string \"I'll end up wasting the admission\\n\"\n\t.string \"price if I don't catch something!$\""
+  },
+  "label": "SafariZone_Northeast_Text_Girl",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/safari_zone.inc",
+  "references": {}
+}

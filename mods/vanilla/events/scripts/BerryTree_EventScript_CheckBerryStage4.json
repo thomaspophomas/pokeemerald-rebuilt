@@ -1,0 +1,19 @@
+{
+  "id": "BerryTree_EventScript_CheckBerryStage4",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_tree.inc",
+    "sha1": "749b44e862850f19e689ac4622065bdedf7c8393"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_tree.inc",
+    "rawScript": "call BerryTree_EventScript_GetCareAdverb\n\tlockall\n\tspecial ObjectEventInteractionGetBerryName\n\tmessage BerryTree_Text_BerryGrowthStage4\n\twaitmessage\n\twaitbuttonpress\n\tgoto BerryTree_EventScript_WantToWater\n\n@ VAR_0x8005 here is the number of times watered\n@ Buffered by ObjectEventInteractionGetBerryTreeData"
+  },
+  "label": "BerryTree_EventScript_CheckBerryStage4",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_tree.inc",
+  "references": {}
+}

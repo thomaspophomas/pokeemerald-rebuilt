@@ -1,0 +1,23 @@
+{
+  "id": "BerryTree_EventScript_WantToPlant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_tree.inc",
+    "sha1": "749b44e862850f19e689ac4622065bdedf7c8393"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_tree.inc",
+    "rawScript": "msgbox BerryTree_Text_WantToPlant, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, BerryTree_EventScript_ChooseBerryToPlant\n\tgoto_if_eq VAR_RESULT, NO, BerryTree_EventScript_CancelPlanting\n\tend"
+  },
+  "label": "BerryTree_EventScript_WantToPlant",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_tree.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

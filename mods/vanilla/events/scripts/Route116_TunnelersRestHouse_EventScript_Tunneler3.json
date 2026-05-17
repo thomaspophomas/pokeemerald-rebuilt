@@ -1,0 +1,23 @@
+{
+  "id": "Route116_TunnelersRestHouse_EventScript_Tunneler3",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116_TunnelersRestHouse/scripts.inc",
+    "sha1": "cf1b26d5655363e9dd7eded558cfb3a4486c3aa4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route116_TunnelersRestHouse/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RUSTURF_TUNNEL_OPENED, Route116_TunnelersRestHouse_EventScript_TunnelOpened\n\tmsgbox Route116_TunnelersRestHouse_Text_GetToVerdanturfWithoutTunnel, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route116_TunnelersRestHouse_EventScript_Tunneler3",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route116_TunnelersRestHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RUSTURF_TUNNEL_OPENED"
+    ]
+  }
+}

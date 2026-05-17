@@ -1,0 +1,19 @@
+{
+  "id": "RivalsHouse_1F_EventScript_RivalSibling",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+    "sha1": "4acc9bd3dce8266e27759616e41b13205491adc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tspecial GetPlayerBigGuyGirlString\n\tmsgbox RivalsHouse_1F_Text_DoYouHavePokemon, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "RivalsHouse_1F_EventScript_RivalSibling",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+  "references": {}
+}

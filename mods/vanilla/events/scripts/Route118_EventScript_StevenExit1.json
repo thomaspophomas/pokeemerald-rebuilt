@@ -1,0 +1,19 @@
+{
+  "id": "Route118_EventScript_StevenExit1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route118/scripts.inc",
+    "sha1": "5a4868d1490a62e62c6e29a255fc938bad9fa2cd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route118/scripts.inc",
+    "rawScript": "applymovement LOCALID_PLAYER, Route118_Movement_PlayerWatchStevenExit\n\tapplymovement LOCALID_ROUTE118_STEVEN, Route118_Movement_StevenExit1\n\twaitmovement 0\n\treturn"
+  },
+  "label": "Route118_EventScript_StevenExit1",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route118/scripts.inc",
+  "references": {}
+}

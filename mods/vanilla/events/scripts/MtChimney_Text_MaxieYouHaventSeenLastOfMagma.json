@@ -1,0 +1,19 @@
+{
+  "id": "MtChimney_Text_MaxieYouHaventSeenLastOfMagma",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney/scripts.inc",
+    "sha1": "4d6a7ac7998e07e6d4f244ef13c499194f5b3668"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtChimney/scripts.inc",
+    "rawScript": ".string \"MAXIE: But, enough.\\n\"\n\t.string \"I will back off this time.\\p\"\n\t.string \"But don't think that this is the last\\n\"\n\t.string \"you've seen of TEAM MAGMA.\\p\"\n\t.string \"Fufufu\u2026\\p\"\n\t.string \"Even without the METEORITE, if we\\n\"\n\t.string \"obtain that ORB\u2026 Fufufu\u2026$\""
+  },
+  "label": "MtChimney_Text_MaxieYouHaventSeenLastOfMagma",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtChimney/scripts.inc",
+  "references": {}
+}

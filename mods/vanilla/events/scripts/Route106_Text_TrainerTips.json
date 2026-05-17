@@ -1,0 +1,19 @@
+{
+  "id": "Route106_Text_TrainerTips",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route106/scripts.inc",
+    "sha1": "a209a44ee2510b2fc73442d6137996f599dae676"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route106/scripts.inc",
+    "rawScript": ".string \"TRAINER TIPS\\p\"\n\t.string \"Advice on catching POK\u00e9MON with a ROD:\\n\"\n\t.string \"Press the A Button if you get a bite.$\""
+  },
+  "label": "Route106_Text_TrainerTips",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route106/scripts.inc",
+  "references": {}
+}

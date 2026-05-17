@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Text_HerbShopSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": ".string \"POK\u00e9MON HERB SHOP\\n\"\n\t.string \"\u201cBitter taste--better cure!\u201d$\""
+  },
+  "label": "LavaridgeTown_Text_HerbShopSign",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {}
+}

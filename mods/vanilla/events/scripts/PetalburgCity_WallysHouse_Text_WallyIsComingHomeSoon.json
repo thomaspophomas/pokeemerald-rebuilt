@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_WallysHouse_Text_WallyIsComingHomeSoon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_WallysHouse/scripts.inc",
+    "sha1": "ec42bb72f0a50cce9db9e173ec63e3e0787b8406"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_WallysHouse/scripts.inc",
+    "rawScript": ".string \"WALLY's coming home soon.\\n\"\n\t.string \"I'm looking forward to that.$\""
+  },
+  "label": "PetalburgCity_WallysHouse_Text_WallyIsComingHomeSoon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_WallysHouse/scripts.inc",
+  "references": {}
+}

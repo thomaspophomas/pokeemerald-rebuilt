@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserThisTimeWontHoldBack",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "sha1": "c4392c432f84fdbe0613ac4b067366a168a52056"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "rawScript": ".string \"SPENSER: Gwahahah!\\n\"\n\t.string \"You've battled your way up again?\\p\"\n\t.string \"You must have developed a truly\\n\"\n\t.string \"formidable bond with your POK\u00e9MON.\\p\"\n\t.string \"So be it!\\p\"\n\t.string \"This time, I won't bluster or hold back.\\n\"\n\t.string \"This time, there's no fooling around.\\p\"\n\t.string \"Ready now?\\n\"\n\t.string \"Prepare to lose!$\""
+  },
+  "label": "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserThisTimeWontHoldBack",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+  "references": {}
+}

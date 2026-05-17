@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": ".string \"Oh, fine, that's the way it is.\\n\"\n\t.string \"I will hang this in my own house.\\p\"\n\t.string \"I'll just have to try harder next time.\\n\"\n\t.string \"Well, be seeing you.$\""
+  },
+  "label": "LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {}
+}

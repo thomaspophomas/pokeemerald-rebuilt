@@ -1,0 +1,30 @@
+{
+  "id": "UnionRoom_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/UnionRoom/scripts.inc",
+    "sha1": "110f08d8f393e99196ccecbb3f971b805cbb71bc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/UnionRoom/scripts.inc",
+    "rawScript": "setflag FLAG_HIDE_UNION_ROOM_PLAYER_1\n\tsetflag FLAG_HIDE_UNION_ROOM_PLAYER_2\n\tsetflag FLAG_HIDE_UNION_ROOM_PLAYER_3\n\tsetflag FLAG_HIDE_UNION_ROOM_PLAYER_4\n\tsetflag FLAG_HIDE_UNION_ROOM_PLAYER_5\n\tsetflag FLAG_HIDE_UNION_ROOM_PLAYER_6\n\tsetflag FLAG_HIDE_UNION_ROOM_PLAYER_7\n\tsetflag FLAG_HIDE_UNION_ROOM_PLAYER_8\n\tremoveobject LOCALID_UNION_ROOM_PLAYER_1\n\tremoveobject LOCALID_UNION_ROOM_PLAYER_2\n\tremoveobject LOCALID_UNION_ROOM_PLAYER_3\n\tremoveobject LOCALID_UNION_ROOM_PLAYER_4\n\tremoveobject LOCALID_UNION_ROOM_PLAYER_5\n\tremoveobject LOCALID_UNION_ROOM_PLAYER_6\n\tremoveobject LOCALID_UNION_ROOM_PLAYER_7\n\tremoveobject LOCALID_UNION_ROOM_PLAYER_8\n\tspecial RunUnionRoom\n\tend"
+  },
+  "label": "UnionRoom_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/UnionRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_UNION_ROOM_PLAYER_1",
+      "FLAG_HIDE_UNION_ROOM_PLAYER_2",
+      "FLAG_HIDE_UNION_ROOM_PLAYER_3",
+      "FLAG_HIDE_UNION_ROOM_PLAYER_4",
+      "FLAG_HIDE_UNION_ROOM_PLAYER_5",
+      "FLAG_HIDE_UNION_ROOM_PLAYER_6",
+      "FLAG_HIDE_UNION_ROOM_PLAYER_7",
+      "FLAG_HIDE_UNION_ROOM_PLAYER_8"
+    ]
+  }
+}

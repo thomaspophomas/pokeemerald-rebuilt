@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_CoveLilyMotel_1F_Text_HouseSittingMonCaughtBurglar",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+    "sha1": "6fbfa2a2632f8e86026cc0a8c8fa9a98046f56ac"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+    "rawScript": ".string \"Amazing! A house-sitting POK\u00e9MON\\n\"\n\t.string \"caught a burglar?\\p\"\n\t.string \"That's something. If we had a tough\\n\"\n\t.string \"POK\u00e9MON as a security guard\u2026\\p\"\n\t.string \"We would be able to provide our guests\\n\"\n\t.string \"with greater safety.$\""
+  },
+  "label": "LilycoveCity_CoveLilyMotel_1F_Text_HouseSittingMonCaughtBurglar",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+  "references": {}
+}

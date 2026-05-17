@@ -1,0 +1,19 @@
+{
+  "id": "Route111_Text_WinstrateFamilyDestroyedMe",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": ".string \"I challenged the WINSTRATE family,\\n\"\n\t.string \"but four matches in a row is tough\\l\"\n\t.string \"going\u2026 They destroyed me.$\""
+  },
+  "label": "Route111_Text_WinstrateFamilyDestroyedMe",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {}
+}

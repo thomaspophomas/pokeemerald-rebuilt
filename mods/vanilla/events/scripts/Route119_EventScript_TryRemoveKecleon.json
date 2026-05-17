@@ -1,0 +1,24 @@
+{
+  "id": "Route119_EventScript_TryRemoveKecleon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119/scripts.inc",
+    "sha1": "576fe3fab09726df20b1bbf3016bc5306f0e0f3d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119/scripts.inc",
+    "rawScript": "specialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn\n\tremoveobject VAR_LAST_TALKED\n\treturn"
+  },
+  "label": "Route119_EventScript_TryRemoveKecleon",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route119/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ]
+  }
+}

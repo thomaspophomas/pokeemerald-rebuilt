@@ -1,0 +1,25 @@
+{
+  "id": "SkyPillar_4F_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_4F/scripts.inc",
+    "sha1": "d5be54eb937250f87a89f0988d8f16e796af14f2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_4F/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_FRAME_TABLE, CaveHole_CheckFallDownHole\n\tmap_script MAP_SCRIPT_ON_TRANSITION, SkyPillar_4F_OnTransition\n\tmap_script MAP_SCRIPT_ON_RESUME, SkyPillar_4F_SetHoleWarp\n\t.byte 0"
+  },
+  "label": "SkyPillar_4F_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/SkyPillar_4F/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": "special TryHideBattleTowerReporter\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerLobby_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {}
+}

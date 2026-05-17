@@ -1,0 +1,19 @@
+{
+  "id": "Route123_BerryMastersHouse_EventScript_ReceivedWifeBerryToday",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route123_BerryMastersHouse/scripts.inc",
+    "sha1": "9a0e063a546e4fa501fad1644e1e6356f5e7917a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route123_BerryMastersHouse/scripts.inc",
+    "rawScript": "msgbox Route123_BerryMastersHouse_Text_JoyNeverGoesOutOfMyLife, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route123_BerryMastersHouse_EventScript_ReceivedWifeBerryToday",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route123_BerryMastersHouse/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_SidneysRoom_Text_PostBattleSpeech",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+    "sha1": "557570a48b33cd8590cd2a5ef0ed11ae09a3448a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+    "rawScript": ".string \"Well, listen to what this loser has\\n\"\n\t.string \"to say.\\p\"\n\t.string \"You've got what it takes to go far.\\n\"\n\t.string \"Now, go on to the next room and enjoy\\l\"\n\t.string \"your next battle!$\""
+  },
+  "label": "EverGrandeCity_SidneysRoom_Text_PostBattleSpeech",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+  "references": {}
+}

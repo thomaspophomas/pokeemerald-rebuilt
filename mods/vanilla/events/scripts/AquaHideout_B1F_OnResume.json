@@ -1,0 +1,23 @@
+{
+  "id": "AquaHideout_B1F_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B1F/scripts.inc",
+    "sha1": "2923188c4ae1df18ace73c8a8f87ea7f1d1e7886"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_B1F/scripts.inc",
+    "rawScript": "call_if_set FLAG_SYS_CTRL_OBJ_DELETE, AquaHideout_B1F_EventScript_TryRemoveElectrode\n\tend"
+  },
+  "label": "AquaHideout_B1F_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/AquaHideout_B1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_CTRL_OBJ_DELETE"
+    ]
+  }
+}

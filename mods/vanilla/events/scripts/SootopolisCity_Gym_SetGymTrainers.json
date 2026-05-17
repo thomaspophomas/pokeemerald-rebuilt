@@ -1,0 +1,32 @@
+{
+  "id": "SootopolisCity_Gym_SetGymTrainers",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/set_gym_trainers.inc",
+    "sha1": "90019f7a2097712cc57c824c9118423a5a8171bd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/set_gym_trainers.inc",
+    "rawScript": "settrainerflag TRAINER_ANDREA\n\tsettrainerflag TRAINER_CRISSY\n\tsettrainerflag TRAINER_BRIANNA\n\tsettrainerflag TRAINER_CONNIE\n\tsettrainerflag TRAINER_BRIDGET\n\tsettrainerflag TRAINER_OLIVIA\n\tsettrainerflag TRAINER_TIFFANY\n\tsettrainerflag TRAINER_BETHANY\n\tsettrainerflag TRAINER_ANNIKA\n\tsettrainerflag TRAINER_DAPHNE\n\treturn"
+  },
+  "label": "SootopolisCity_Gym_SetGymTrainers",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/scripts/set_gym_trainers.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ANDREA",
+      "TRAINER_ANNIKA",
+      "TRAINER_BETHANY",
+      "TRAINER_BRIANNA",
+      "TRAINER_BRIDGET",
+      "TRAINER_CONNIE",
+      "TRAINER_CRISSY",
+      "TRAINER_DAPHNE",
+      "TRAINER_OLIVIA",
+      "TRAINER_TIFFANY"
+    ]
+  }
+}

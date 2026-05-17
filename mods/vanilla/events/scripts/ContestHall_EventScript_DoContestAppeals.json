@@ -1,0 +1,23 @@
+{
+  "id": "ContestHall_EventScript_DoContestAppeals",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_CONTEST_MC, ContestHall_Movement_FaceContestants2\n\twaitmovement 0\n\tcall ContestHall_EventScript_TryWaitForLink\n\tcall ContestHall_EventScript_LetsAppeal\n\twaitmessage\n\tapplymovement LOCALID_CONTEST_MC, ContestHall_Movement_WalkStageLeft\n\tapplymovement LOCALID_CONTEST_JUDGE, ContestHall_Movement_WalkStageRight\n\twaitmovement 0\n\treleaseall\n\tcall ContestHall_EventScript_TryWaitForLink\n\tsetvar VAR_TEMP_9, 1\n\tspecial LinkContestTryHideWirelessIndicator\n\tstartcontest\n\tspecial LinkContestTryShowWirelessIndicator\n\tsetvar VAR_TEMP_9, 0\n\tlockall\n\tapplymovement LOCALID_CONTEST_MC, ContestHall_Movement_WalkStageRight\n\tapplymovement LOCALID_CONTEST_JUDGE, ContestHall_Movement_WalkStageLeft\n\twaitmovement 0\n\treleaseall\n\treturn"
+  },
+  "label": "ContestHall_EventScript_DoContestAppeals",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_9"
+    ]
+  }
+}

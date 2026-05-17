@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Movement_PlayerWatchWallyExitNorth2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": "delay_16\n\tdelay_8\n\twalk_in_place_faster_left\n\tstep_end"
+  },
+  "label": "MauvilleCity_Movement_PlayerWatchWallyExitNorth2",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

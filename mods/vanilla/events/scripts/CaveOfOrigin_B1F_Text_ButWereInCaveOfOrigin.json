@@ -1,0 +1,19 @@
+{
+  "id": "CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+    "sha1": "fdccb9d45cf308bd7d76aa97e9b5d7eb16b80004"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+    "rawScript": ".string \"WALLACE: The CAVE OF ORIGIN?\\p\"\n\t.string \"But that's right here!\\n\"\n\t.string \"I need you to do better than that!\\p\"\n\t.string \"Please, I need you to think about\\n\"\n\t.string \"where RAYQUAZA might be right now.$\""
+  },
+  "label": "CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+  "references": {}
+}

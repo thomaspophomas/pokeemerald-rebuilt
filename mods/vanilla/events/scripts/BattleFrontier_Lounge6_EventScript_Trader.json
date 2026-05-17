@@ -1,0 +1,26 @@
+{
+  "id": "BattleFrontier_Lounge6_EventScript_Trader",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge6/scripts.inc",
+    "sha1": "400f8668c2640f8efd65ecb8754e4761b5653111"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge6/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_BATTLE_FRONTIER_TRADE_DONE, BattleFrontier_Lounge6_EventScript_TradeCompleted\n\tsetvar VAR_0x8008, INGAME_TRADE_MEOWTH\n\tcopyvar VAR_0x8004, VAR_0x8008\n\tspecialvar VAR_RESULT, GetInGameTradeSpeciesInfo\n\tcopyvar VAR_0x8009, VAR_RESULT\n\tmsgbox BattleFrontier_Lounge6_Text_WouldYouLikeToTrade, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, BattleFrontier_Lounge6_EventScript_DeclineTrade\n\tspecial ChoosePartyMon\n\tcopyvar VAR_0x800A, VAR_0x8004\n\tgoto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, BattleFrontier_Lounge6_EventScript_DeclineTrade\n\tcopyvar VAR_0x8005, VAR_0x800A\n\tspecialvar VAR_RESULT, GetTradeSpecies\n\tcopyvar VAR_0x800B, VAR_RESULT\n\tgoto_if_ne VAR_RESULT, VAR_0x8009, BattleFrontier_Lounge6_EventScript_NotRequestedMon\n\tcopyvar VAR_0x8004, VAR_0x8008\n\tcopyvar VAR_0x8005, VAR_0x800A\n\tspecial CreateInGameTradePokemon\n\tspecial DoInGameTradeScene\n\tmsgbox BattleFrontier_Lounge6_Text_PromiseIllBeGoodToIt, MSGBOX_DEFAULT\n\tsetflag FLAG_BATTLE_FRONTIER_TRADE_DONE\n\trelease\n\tend"
+  },
+  "label": "BattleFrontier_Lounge6_EventScript_Trader",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_Lounge6/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_BATTLE_FRONTIER_TRADE_DONE"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

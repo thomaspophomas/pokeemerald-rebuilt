@@ -1,0 +1,30 @@
+{
+  "id": "MauvilleCity_Gym_EventScript_WattsonDefeated",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "sha1": "ba2cd4a14af6a43f9221cd58f6a4a0299a51ce6c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "rawScript": "message MauvilleCity_Gym_Text_ReceivedDynamoBadge\n\twaitmessage\n\tcall Common_EventScript_PlayGymBadgeFanfare\n\tmsgbox MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis, MSGBOX_DEFAULT\n\tsetvar VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 3\n\tclearflag FLAG_HIDE_VERDANTURF_TOWN_SCOTT\n\tsetflag FLAG_DEFEATED_MAUVILLE_GYM\n\tsetflag FLAG_BADGE03_GET\n\taddvar VAR_PETALBURG_GYM_STATE, 1\n\tcall_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle\n\tsetvar VAR_0x8008, 3\n\tcall Common_EventScript_SetGymTrainers\n\tspecial MauvilleGymDeactivatePuzzle\n\tspecial DrawWholeMapView\n\tplayse SE_UNLOCK\n\tcall MauvilleCity_Gym_EventScript_GiveShockWave\n\tclosemessage\n\tdelay 30\n\tplayfanfare MUS_REGISTER_MATCH_CALL\n\tmsgbox MauvilleCity_Gym_Text_RegisteredWattson, MSGBOX_DEFAULT\n\twaitfanfare\n\tclosemessage\n\tdelay 30\n\tsetflag FLAG_ENABLE_WATTSON_MATCH_CALL\n\trelease\n\tend"
+  },
+  "label": "MauvilleCity_Gym_EventScript_WattsonDefeated",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_BADGE03_GET",
+      "FLAG_DEFEATED_MAUVILLE_GYM",
+      "FLAG_ENABLE_WATTSON_MATCH_CALL",
+      "FLAG_HIDE_VERDANTURF_TOWN_SCOTT"
+    ],
+    "vars": [
+      "VAR_PETALBURG_GYM_STATE",
+      "VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE"
+    ]
+  }
+}

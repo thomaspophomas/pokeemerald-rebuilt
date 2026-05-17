@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_Gym_EventScript_PressFloorSwitch",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "sha1": "ba2cd4a14af6a43f9221cd58f6a4a0299a51ce6c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_Gym/scripts.inc",
+    "rawScript": "special MauvilleGymSetDefaultBarriers\n\tspecial MauvilleGymPressSwitch\n\tspecial DrawWholeMapView\n\tplayse SE_UNLOCK\n\tgoto_if_set FLAG_MAUVILLE_GYM_BARRIERS_STATE, MauvilleCity_Gym_EventScript_ClearBarriersAltState\n\tgoto_if_unset FLAG_MAUVILLE_GYM_BARRIERS_STATE, MauvilleCity_Gym_EventScript_SetBarriersAltState\n\treleaseall\n\tend"
+  },
+  "label": "MauvilleCity_Gym_EventScript_PressFloorSwitch",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_Gym/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MAUVILLE_GYM_BARRIERS_STATE"
+    ]
+  }
+}

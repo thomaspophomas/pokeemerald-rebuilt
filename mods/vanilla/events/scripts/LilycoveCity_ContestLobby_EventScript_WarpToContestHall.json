@@ -1,0 +1,26 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_WarpToContestHall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": "setflag FLAG_ENTERED_CONTEST\n\tswitch VAR_CONTEST_CATEGORY\n\tcase CONTEST_CATEGORY_COOL, LilycoveCity_ContestLobby_EventScript_WarpToCoolContestHall\n\tcase CONTEST_CATEGORY_BEAUTY, LilycoveCity_ContestLobby_EventScript_WarpToBeautyContestHall\n\tcase CONTEST_CATEGORY_CUTE, LilycoveCity_ContestLobby_EventScript_WarpToCuteContestHall\n\tcase CONTEST_CATEGORY_SMART, LilycoveCity_ContestLobby_EventScript_WarpToSmartContestHall\n\tcase CONTEST_CATEGORY_TOUGH, LilycoveCity_ContestLobby_EventScript_WarpToToughContestHall\n\treturn"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_WarpToContestHall",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_ENTERED_CONTEST"
+    ],
+    "vars": [
+      "VAR_CONTEST_CATEGORY"
+    ]
+  }
+}

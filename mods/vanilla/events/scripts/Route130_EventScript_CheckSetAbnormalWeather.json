@@ -1,0 +1,23 @@
+{
+  "id": "Route130_EventScript_CheckSetAbnormalWeather",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route130/scripts.inc",
+    "sha1": "a9ba0823534cb148395846a36fd5c18d2207922a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route130/scripts.inc",
+    "rawScript": "call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather\n\treturn"
+  },
+  "label": "Route130_EventScript_CheckSetAbnormalWeather",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route130/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_WEATHER_CTRL"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleArenaBattleRoom_Text_MonsWillBeRestored",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "sha1": "d0a70f09e21302da78823f02966e03f9b41a3a1a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "rawScript": ".string \"Your POK\u00e9MON will be restored to\\n\"\n\t.string \"full health.$\""
+  },
+  "label": "BattleFrontier_BattleArenaBattleRoom_Text_MonsWillBeRestored",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+  "references": {}
+}

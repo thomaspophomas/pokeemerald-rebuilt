@@ -105,9 +105,11 @@ DOMAIN_SOURCE_SPECS: Dict[str, Sequence[str]] = {
     ],
     "pokeballs": [
         "include/constants/items.h",
-        "include/constants/pokeballs.h",
+        "include/pokeball.h",
         "src/pokeball.c",
         "src/mod/pokeball.c",
+        "src/battle_anim_throw.c",
+        "data/battle_scripts_2.s",
         "graphics/items",
     ],
     "items": [
@@ -298,10 +300,21 @@ def write_schema(root: Path, domain: str) -> None:
                 "id": {"type": "string"},
                 "domain": {"type": "string"},
                 "schemaVersion": {"type": "integer"},
+                "entityKind": {"type": "string"},
+                "semanticCoverage": {"type": "string"},
                 "source": {"type": "object"},
                 "legacy": {"type": "object"},
                 "entries": {"type": "array"},
             },
+            "examples": [
+                {
+                    "domain": domain,
+                    "schemaVersion": SCHEMA_VERSION,
+                    "entityKind": f"{domain}_entity",
+                    "semanticCoverage": "full",
+                    "entries": [{"id": "EXAMPLE", "path": "EXAMPLE.json"}],
+                }
+            ],
             "additionalProperties": True,
         },
     )
@@ -975,6 +988,8 @@ def write_domain_index(root: Path, domain: str, entries: List[Dict[str, Any]], e
     data: Dict[str, Any] = {
         "domain": domain,
         "schemaVersion": SCHEMA_VERSION,
+        "entityKind": f"{domain}_entity",
+        "semanticCoverage": "full",
         "entries": sorted(entries, key=lambda entry: (str(entry.get("id")), str(entry.get("path")))),
     }
     if extra:
@@ -1336,9 +1351,534 @@ def extract_source_file_entities(root: Path, domain: str, specs: Sequence[str]) 
         entity = entity_base(root, domain, entity_id, path, "source_file")
         entity.update({"path": rel(root, path), "bytes": path.stat().st_size})
         write_entity(root, domain, f"source_files/{safe_name(entity_id)}.json", entity, entries)
-    write_domain_index(root, domain, entries, {"entityCount": len(entries)})
+    write_domain_index(root, domain, entries, {"entityCount": len(entries), "semanticCoverage": "source_audit_only"})
     write_domain_source_manifest(root, domain, specs)
     return {"sourceEntities": len(entries)}
+
+
+def parse_define_map(root: Path, relative_path: str, prefix: str) -> Dict[str, Any]:
+    return {token["symbol"]: token["value"] for token in parse_define_tokens(root, relative_path, prefix)}
+
+
+def parse_indexed_pointer_table(text: str) -> Dict[str, str]:
+    entries: Dict[str, str] = {}
+    for match in re.finditer(r"\[([A-Z0-9_]+)\]\s*=\s*&?([A-Za-z0-9_]+)", text):
+        entries[match.group(1)] = match.group(2)
+    return entries
+
+
+def parse_c_array_designators(text: str, fields: Sequence[str]) -> Dict[str, Dict[str, str]]:
+    entries: Dict[str, Dict[str, str]] = {}
+    field_pattern = r"\{\s*" + r"\s*,\s*".join([r"([^,{}]+)" for _ in fields]) + r"\s*\}"
+    for match in re.finditer(r"\[([A-Z0-9_]+)\]\s*=\s*" + field_pattern, text):
+        entries[match.group(1)] = {field: match.group(index + 2).strip() for index, field in enumerate(fields)}
+    return entries
+
+
+def parse_c_designated_blocks(root: Path, relative_path: str, symbol_prefix: str, legacy_kind: str) -> List[Dict[str, Any]]:
+    path = root / relative_path
+    text = read_text(path)
+    blocks: List[Dict[str, Any]] = []
+    entry_re = re.compile(rf"(?m)^(?:static\s+)?(?:const\s+)?struct\s+[A-Za-z0-9_]+\s+({re.escape(symbol_prefix)}[A-Za-z0-9_]+)\s*=\s*\{{")
+    for match in entry_re.finditer(text):
+        symbol = match.group(1)
+        brace_start = text.find("{", match.start(), match.end())
+        brace_end = find_matching_brace(text, brace_start)
+        raw_block = text[match.start() : brace_end + 2].rstrip()
+        fields = {field: value for field, value in re.findall(r"\.([A-Za-z0-9_]+)\s*=\s*([^,\n]+)", raw_block)}
+        blocks.append(
+            {
+                "symbol": symbol,
+                "fields": fields,
+                "rawC": raw_block,
+                "source": path,
+                "legacyKind": legacy_kind,
+            }
+        )
+    return blocks
+
+
+def parse_object_event_pointer_rows(root: Path) -> List[Dict[str, Any]]:
+    constants = parse_define_map(root, "include/constants/event_objects.h", "OBJ_EVENT_GFX_")
+    pointer_path = root / "src" / "data" / "object_events" / "object_event_graphics_info_pointers.h"
+    pointer_text = read_text(pointer_path)
+    info_blocks = {
+        block["symbol"]: block
+        for block in parse_c_designated_blocks(
+            root,
+            "src/data/object_events/object_event_graphics_info.h",
+            "gObjectEventGraphicsInfo_",
+            "object_event_graphics_info",
+        )
+    }
+    rows: List[Dict[str, Any]] = []
+    for graphics_id, info_symbol in sorted(parse_indexed_pointer_table(pointer_text).items(), key=lambda item: constants.get(item[0], 99999)):
+        if not graphics_id.startswith("OBJ_EVENT_GFX_"):
+            continue
+        block = info_blocks.get(info_symbol, {})
+        rows.append(
+            {
+                "graphicsId": graphics_id,
+                "numericId": constants.get(graphics_id),
+                "graphicsInfoSymbol": info_symbol,
+                "fields": block.get("fields", {}),
+                "rawC": block.get("rawC"),
+                "source": pointer_path,
+            }
+        )
+    return rows
+
+
+def parse_item_icon_table(root: Path) -> Dict[str, Dict[str, str]]:
+    path = root / "src" / "data" / "item_icon_table.h"
+    icons: Dict[str, Dict[str, str]] = {}
+    for match in re.finditer(r"\[(ITEM_[A-Z0-9_]+)\]\s*=\s*\{\s*([A-Za-z0-9_]+)\s*,\s*([A-Za-z0-9_]+)\s*\}", read_text(path)):
+        icons[match.group(1)] = {"icon": match.group(2), "palette": match.group(3), "sourcePath": rel(root, path)}
+    return icons
+
+
+def extract_entity_pokeballs(root: Path) -> Dict[str, Any]:
+    domain = "pokeballs"
+    clear_domain(root, domain)
+    source_path = root / "src" / "mod" / "pokeball.c"
+    text = read_text(source_path)
+    icon_lookup = parse_item_icon_table(root)
+    ball_sheets = parse_c_array_designators(read_text(root / "src" / "pokeball.c"), ["gfx", "size", "tag"])
+    ball_palettes = parse_c_array_designators(read_text(root / "src" / "pokeball.c"), ["palette", "tag"])
+    particle_sheets = parse_c_array_designators(read_text(root / "src" / "battle_anim_throw.c"), ["gfx", "size", "tag"])
+    particle_palettes = parse_c_array_designators(read_text(root / "src" / "battle_anim_throw.c"), ["palette", "tag"])
+    particle_anims = {match.group(1): match.group(2).strip() for match in re.finditer(r"\[([A-Z0-9_]+)\]\s*=\s*([0-9]+)\s*,", read_text(root / "src" / "battle_anim_throw.c"))}
+    particle_funcs = {match.group(1): match.group(2).strip() for match in re.finditer(r"\[([A-Z0-9_]+)\]\s*=\s*([A-Za-z0-9_]+)\s*,", read_text(root / "src" / "battle_anim_throw.c"))}
+    hook_by_item = {
+        "ITEM_NET_BALL": "PokeBallApi_NetBallCatchModifier",
+        "ITEM_DIVE_BALL": "PokeBallApi_DiveBallCatchModifier",
+        "ITEM_NEST_BALL": "PokeBallApi_NestBallCatchModifier",
+        "ITEM_REPEAT_BALL": "PokeBallApi_RepeatBallCatchModifier",
+        "ITEM_TIMER_BALL": "PokeBallApi_TimerBallCatchModifier",
+    }
+    entries: List[Dict[str, Any]] = []
+    pattern = re.compile(
+        r"\{\s*\"([^\"]+)\"\s*,\s*(ITEM_[A-Z0-9_]+)\s*,\s*(BALL_[A-Z0-9_]+)\s*,\s*([^,]+)\s*,\s*([^,]+)\s*,\s*([^,]+)\s*,\s*([^,]+)\s*,\s*([^}]+)\}",
+        re.MULTILINE,
+    )
+    for match in pattern.finditer(text):
+        key, item_id, ball_id, modifier, flags, modifier_hook, battle_script, commit_hook = [part.strip() for part in match.groups()]
+        modifier_hook = hook_by_item.get(item_id, None if modifier_hook == "NULL" else modifier_hook)
+        commit_hook = None if commit_hook == "NULL" else commit_hook
+        icon = icon_lookup.get(item_id, {})
+        entity = entity_base(
+            root,
+            domain,
+            item_id,
+            source_path,
+            "pokeball_definition",
+            {"rawC": match.group(0).strip(), "generatedKey": key},
+        )
+        entity.update(
+            {
+                "key": key,
+                "itemId": item_id,
+                "ballId": ball_id,
+                "catchModifier": modifier,
+                "catchModifierHook": modifier_hook,
+                "battleScript": None if battle_script == "NULL" else battle_script,
+                "commitHook": commit_hook,
+                "flags": flags,
+                "itemIcon": icon.get("icon"),
+                "itemPalette": icon.get("palette"),
+                "throwSprite": {
+                    "sheet": ball_sheets.get(ball_id, {}).get("gfx"),
+                    "palette": ball_palettes.get(ball_id, {}).get("palette"),
+                    "tileTag": ball_sheets.get(ball_id, {}).get("tag"),
+                    "paletteTag": ball_palettes.get(ball_id, {}).get("tag"),
+                    "templateTable": "gBallSpriteTemplates",
+                },
+                "openAnimation": {
+                    "particleSheet": particle_sheets.get(ball_id, {}).get("gfx"),
+                    "particlePalette": particle_palettes.get(ball_id, {}).get("palette"),
+                    "particleTag": particle_sheets.get(ball_id, {}).get("tag"),
+                    "animNum": particle_anims.get(ball_id),
+                    "taskFunc": particle_funcs.get(ball_id),
+                },
+            }
+        )
+        write_entity(root, domain, f"balls/{item_id}.json", entity, entries, {"symbol": item_id, "legacyKind": "pokeball_definition"})
+    write_domain_index(root, domain, entries, {"entityCount": len(entries), "entityKind": "pokeball"})
+    write_domain_source_manifest(root, domain, DOMAIN_SOURCE_SPECS[domain])
+    return {"pokeballs": len(entries)}
+
+
+def extract_entity_overworld_sprites(root: Path) -> Dict[str, Any]:
+    domain = "overworld_sprites"
+    clear_domain(root, domain)
+    entries: List[Dict[str, Any]] = []
+    source_path = root / "src" / "data" / "object_events" / "object_event_graphics_info_pointers.h"
+    for row in parse_object_event_pointer_rows(root):
+        entity = entity_base(root, domain, row["graphicsId"], source_path, "object_event_graphics")
+        entity.update(
+            {
+                "key": row["graphicsId"],
+                "graphicsId": row["graphicsId"],
+                "numericId": row["numericId"],
+                "graphicsRevision": 1,
+                "assetKey": row["graphicsInfoSymbol"],
+                "graphicsInfoSymbol": row["graphicsInfoSymbol"],
+                "width": row["fields"].get("width"),
+                "height": row["fields"].get("height"),
+                "paletteTag": row["fields"].get("paletteTag"),
+                "reflectionPaletteTag": row["fields"].get("reflectionPaletteTag"),
+                "shadowSize": row["fields"].get("shadowSize"),
+                "tracks": row["fields"].get("tracks"),
+            }
+        )
+        if row.get("rawC"):
+            entity["legacy"]["rawC"] = row["rawC"]
+        write_entity(root, domain, f"sprites/{row['graphicsId']}.json", entity, entries, {"symbol": row["graphicsId"], "numericId": row["numericId"]})
+    write_domain_index(root, domain, entries, {"entityCount": len(entries), "entityKind": "overworld_sprite"})
+    write_domain_source_manifest(root, domain, DOMAIN_SOURCE_SPECS[domain])
+    return {"overworldSprites": len(entries)}
+
+
+def extract_entity_sprite_assets(root: Path) -> Dict[str, Any]:
+    domain = "sprite_assets"
+    clear_domain(root, domain)
+    entries: List[Dict[str, Any]] = []
+    source_path = root / "src" / "data" / "object_events" / "object_event_graphics_info.h"
+    for row in parse_object_event_pointer_rows(root):
+        asset_id = row["graphicsInfoSymbol"]
+        fields = row["fields"]
+        entity = entity_base(root, domain, asset_id, source_path, "object_event_sprite_asset", {"rawC": row.get("rawC")})
+        entity.update(
+            {
+                "key": asset_id,
+                "assetKind": "object_event",
+                "graphicsId": row["graphicsId"],
+                "graphicsInfoSymbol": asset_id,
+                "sheetSymbol": None,
+                "compressedSheetSymbol": None,
+                "paletteSymbol": None,
+                "compressedPaletteSymbol": None,
+                "templateSymbol": None,
+                "tileTag": fields.get("tileTag", "TAG_NONE"),
+                "paletteTag": fields.get("paletteTag", "TAG_NONE"),
+                "dimensions": {"width": fields.get("width"), "height": fields.get("height"), "size": fields.get("size")},
+                "oam": fields.get("oam"),
+                "images": fields.get("images"),
+                "anims": fields.get("anims"),
+                "subspriteTables": fields.get("subspriteTables"),
+                "affineAnims": fields.get("affineAnims"),
+            }
+        )
+        write_entity(root, domain, f"assets/{asset_id}.json", entity, entries, {"symbol": asset_id, "assetKind": "object_event"})
+    for item_id, icon in parse_item_icon_table(root).items():
+        entity = entity_base(root, domain, f"{item_id}:icon", root / icon["sourcePath"], "item_icon_asset")
+        entity.update(
+            {
+                "key": f"{item_id}:icon",
+                "assetKind": "item_icon",
+                "itemId": item_id,
+                "iconDataSymbol": icon["icon"],
+                "paletteDataSymbol": icon["palette"],
+                "tileTag": "TAG_NONE",
+                "paletteTag": "TAG_NONE",
+            }
+        )
+        write_entity(root, domain, f"assets/items/{item_id}.json", entity, entries, {"symbol": item_id, "assetKind": "item_icon"})
+    write_domain_index(root, domain, entries, {"entityCount": len(entries), "entityKind": "sprite_asset"})
+    write_domain_source_manifest(root, domain, DOMAIN_SOURCE_SPECS[domain])
+    return {"spriteAssets": len(entries)}
+
+
+def parse_species_tokens(root: Path) -> List[str]:
+    return [token["symbol"] for token in parse_define_tokens(root, "include/constants/species.h", "SPECIES_")]
+
+
+def extract_entity_battle_sprites(root: Path) -> Dict[str, Any]:
+    domain = "battle_sprites"
+    clear_domain(root, domain)
+    entries: List[Dict[str, Any]] = []
+    source_path = root / "src" / "data" / "pokemon_graphics" / "front_pic_table.h"
+    for species in parse_species_tokens(root):
+        for side, table, asset_prefix, source_rel in [
+            ("BATTLE_SPRITE_SIDE_FRONT", "gMonFrontPicTable", "front", "src/data/pokemon_graphics/front_pic_table.h"),
+            ("BATTLE_SPRITE_SIDE_BACK", "gMonBackPicTable", "back", "src/data/pokemon_graphics/back_pic_table.h"),
+        ]:
+            source = root / source_rel
+            entity_id = f"{species}:{asset_prefix}"
+            entity = entity_base(root, domain, entity_id, source, "pokemon_battle_sprite")
+            entity.update(
+                {
+                    "key": entity_id,
+                    "entityKind": "pokemon",
+                    "species": species,
+                    "form": 0,
+                    "side": side,
+                    "flags": 0,
+                    "assetKey": f"{species}:{asset_prefix}",
+                    "table": table,
+                }
+            )
+            write_entity(root, domain, f"pokemon/{species}_{asset_prefix}.json", entity, entries, {"symbol": species, "legacyKind": "pokemon_battle_sprite"})
+    trainer_path = root / "include" / "constants" / "trainers.h"
+    for token in parse_define_tokens(root, "include/constants/trainers.h", "TRAINER_PIC_"):
+        entity = entity_base(root, domain, f"{token['symbol']}:front", trainer_path, "trainer_front_battle_sprite")
+        entity.update(
+            {
+                "key": f"{token['symbol']}:front",
+                "entityKind": "trainer",
+                "trainerId": token["symbol"],
+                "side": "BATTLE_SPRITE_SIDE_FRONT",
+                "flags": 0,
+                "assetKey": f"{token['symbol']}:front",
+                "table": "gTrainerFrontPicTable",
+            }
+        )
+        write_entity(root, domain, f"trainers/{token['symbol']}_front.json", entity, entries, {"symbol": token["symbol"], "numericId": token["value"]})
+    for token in parse_define_tokens(root, "include/constants/trainers.h", "TRAINER_BACK_PIC_"):
+        entity = entity_base(root, domain, f"{token['symbol']}:back", trainer_path, "trainer_back_battle_sprite")
+        entity.update(
+            {
+                "key": f"{token['symbol']}:back",
+                "entityKind": "trainer",
+                "trainerId": token["symbol"],
+                "side": "BATTLE_SPRITE_SIDE_BACK",
+                "flags": 0,
+                "assetKey": f"{token['symbol']}:back",
+                "table": "gTrainerBackPicTable",
+            }
+        )
+        write_entity(root, domain, f"trainers/{token['symbol']}_back.json", entity, entries, {"symbol": token["symbol"], "numericId": token["value"]})
+    write_domain_index(root, domain, entries, {"entityCount": len(entries), "entityKind": "battle_sprite"})
+    write_domain_source_manifest(root, domain, DOMAIN_SOURCE_SPECS[domain])
+    return {"battleSprites": len(entries)}
+
+
+def extract_entity_followers(root: Path) -> Dict[str, Any]:
+    domain = "followers"
+    clear_domain(root, domain)
+    entries: List[Dict[str, Any]] = []
+    species_values = set(parse_species_tokens(root))
+    source_path = root / "src" / "data" / "object_events" / "object_event_graphics_info_pointers.h"
+    for row in parse_object_event_pointer_rows(root):
+        species = "SPECIES_" + row["graphicsId"].replace("OBJ_EVENT_GFX_", "")
+        if species not in species_values:
+            continue
+        entity = entity_base(root, domain, species, source_path, "species_overworld_follower")
+        entity.update({"species": species, "form": 0, "shiny": False, "graphicsId": row["graphicsId"], "assetKey": row["graphicsInfoSymbol"]})
+        write_entity(root, domain, f"followers/{species}.json", entity, entries, {"symbol": species})
+    write_domain_index(root, domain, entries, {"entityCount": len(entries), "entityKind": "follower_sprite"})
+    write_domain_source_manifest(root, domain, DOMAIN_SOURCE_SPECS[domain])
+    return {"followers": len(entries)}
+
+
+def extract_entity_outfits(root: Path) -> Dict[str, Any]:
+    domain = "outfits"
+    clear_domain(root, domain)
+    entries: List[Dict[str, Any]] = []
+    rows = {row["graphicsId"]: row for row in parse_object_event_pointer_rows(root)}
+    source_path = root / "src" / "field_player_avatar.c"
+    for row in sorted(rows.values(), key=lambda item: str(item["graphicsId"])):
+        graphics_id = row["graphicsId"]
+        if not any(token in graphics_id for token in ("BRENDAN", "MAY")):
+            continue
+        if any(token in graphics_id for token in ("RIVAL_", "LINK_", "RS_")):
+            continue
+        gender = "male" if "BRENDAN" in graphics_id else "female"
+        state = graphics_id.replace("OBJ_EVENT_GFX_BRENDAN_", "").replace("OBJ_EVENT_GFX_MAY_", "").lower()
+        entity_id = f"{gender}:{state}"
+        entity = entity_base(root, domain, entity_id, source_path, "player_outfit")
+        entity.update({"gender": gender, "state": state, "graphicsId": graphics_id, "assetKey": row["graphicsInfoSymbol"], "paletteTag": row["fields"].get("paletteTag")})
+        write_entity(root, domain, f"outfits/{gender}_{state}.json", entity, entries, {"symbol": graphics_id})
+    write_domain_index(root, domain, entries, {"entityCount": len(entries), "entityKind": "player_outfit"})
+    write_domain_source_manifest(root, domain, DOMAIN_SOURCE_SPECS[domain])
+    return {"outfits": len(entries)}
+
+
+def decode_c_string_literal(value: str) -> str:
+    escapes = {"n": "\n", "r": "\r", "t": "\t", "\\": "\\", '"': '"'}
+    decoded = []
+    i = 0
+    while i < len(value):
+        if value[i] == "\\" and i + 1 < len(value):
+            nxt = value[i + 1]
+            if nxt in escapes:
+                decoded.append(escapes[nxt])
+            else:
+                decoded.append("\\" + nxt)
+            i += 2
+            continue
+        decoded.append(value[i])
+        i += 1
+    return "".join(decoded)
+
+
+def extract_c_language_strings(root: Path) -> Dict[str, str]:
+    path = root / "src" / "strings.c"
+    text = read_text(path)
+    strings: Dict[str, str] = {}
+    for match in re.finditer(r"(?:ALIGNED\([0-9]+\)\s*)?const\s+u8\s+([A-Za-z0-9_]+)\[\]\s*=\s*_\(\s*\"((?:\\.|[^\"\\])*)\"\s*\)\s*;", text, re.MULTILINE | re.DOTALL):
+        strings[match.group(1)] = decode_c_string_literal(match.group(2))
+    return strings
+
+
+def extract_text_inc_labels(path: Path) -> Dict[str, str]:
+    labels: Dict[str, str] = {}
+    lines = read_text(path).splitlines()
+    i = 0
+    label_re = re.compile(r"^([A-Za-z_][A-Za-z0-9_]*)::\s*$")
+    while i < len(lines):
+        match = label_re.match(lines[i].strip())
+        if not match:
+            i += 1
+            continue
+        label = match.group(1)
+        start = i + 1
+        i += 1
+        while i < len(lines) and not label_re.match(lines[i].strip()):
+            i += 1
+        labels[label] = "\n".join(lines[start:i]).strip()
+    return labels
+
+
+def extract_entity_language(root: Path) -> Dict[str, Any]:
+    domain = "language"
+    clear_domain(root, domain)
+    entries: List[Dict[str, Any]] = []
+    source_path = root / "src" / "strings.c"
+    core_strings = extract_c_language_strings(root)
+    if core_strings:
+        entity = entity_base(root, domain, "en:core_strings", source_path, "c_string_table")
+        entity.update({"language": "en", "group": "core_strings", "runtime": True, "strings": core_strings})
+        write_entity(root, domain, "en/core_strings.json", entity, entries, {"language": "en", "group": "core_strings"})
+    for text_path in sorted((root / "data" / "text").glob("*.inc")):
+        labels = extract_text_inc_labels(text_path)
+        if not labels:
+            continue
+        group = text_path.stem
+        entity = entity_base(root, domain, f"en:{group}", text_path, "asm_text_labels")
+        entity.update({"language": "en", "group": group, "runtime": False, "strings": labels})
+        write_entity(root, domain, f"en/{safe_name(group)}.json", entity, entries, {"language": "en", "group": group})
+    write_domain_index(root, domain, entries, {"entityCount": len(entries), "entityKind": "language_group"})
+    write_domain_source_manifest(root, domain, DOMAIN_SOURCE_SPECS[domain])
+    return {"languageGroups": len(entries), "strings": sum(len(read_json(root / "mods" / MOD_ID / domain / entry["path"]).get("strings", {})) for entry in entries)}
+
+
+def infer_script_kind(label: str, raw_script: str) -> str:
+    if label.endswith("_MapScripts") or "map_script" in raw_script:
+        return "map_scripts"
+    if "Movement_" in label or re.search(r"(?m)^\s*(walk_|delay_|step_|face_)", raw_script):
+        return "movement"
+    if "_Text_" in label or label.endswith("_Text"):
+        return "text"
+    if "EventScript" in label:
+        return "event_script"
+    return "script"
+
+
+def extract_script_references(raw_script: str) -> Dict[str, List[str]]:
+    references: Dict[str, List[str]] = {}
+    patterns = {
+        "flags": r"\bFLAG_[A-Z0-9_]+\b",
+        "vars": r"\bVAR_[A-Z0-9_]+\b",
+        "items": r"\bITEM_[A-Z0-9_]+\b",
+        "trainers": r"\bTRAINER_[A-Z0-9_]+\b",
+        "maps": r"\bMAP_[A-Z0-9_]+\b",
+    }
+    for key, pattern in patterns.items():
+        values = sorted(set(re.findall(pattern, raw_script)))
+        if values:
+            references[key] = values
+    return references
+
+
+def split_script_labels(path: Path) -> List[Dict[str, Any]]:
+    labels: List[Dict[str, Any]] = []
+    lines = read_text(path).splitlines()
+    label_re = re.compile(r"^([A-Za-z_][A-Za-z0-9_]*)(::|:)\s*$")
+    i = 0
+    while i < len(lines):
+        match = label_re.match(lines[i].strip())
+        if not match:
+            i += 1
+            continue
+        label = match.group(1)
+        exported = match.group(2) == "::"
+        start = i + 1
+        i += 1
+        while i < len(lines) and not label_re.match(lines[i].strip()):
+            i += 1
+        raw = "\n".join(lines[start:i]).strip()
+        labels.append({"label": label, "exported": exported, "rawScript": raw})
+    return labels
+
+
+def extract_entity_events(root: Path) -> Dict[str, Any]:
+    domain = "events"
+    clear_domain(root, domain)
+    entries: List[Dict[str, Any]] = []
+    script_roots = [root / "data" / "scripts", root / "data" / "maps"]
+    for script_root in script_roots:
+        for path in sorted(script_root.rglob("*.inc")):
+            for label in split_script_labels(path):
+                if label["rawScript"] == "":
+                    continue
+                entity = entity_base(root, domain, label["label"], path, "script_label", {"rawScript": label["rawScript"]})
+                entity.update(
+                    {
+                        "label": label["label"],
+                        "exported": label["exported"],
+                        "kind": infer_script_kind(label["label"], label["rawScript"]),
+                        "sourceFile": rel(root, path),
+                        "references": extract_script_references(label["rawScript"]),
+                    }
+                )
+                write_entity(root, domain, f"scripts/{safe_name(label['label'])}.json", entity, entries, {"symbol": label["label"], "kind": entity["kind"]})
+    write_domain_index(root, domain, entries, {"entityCount": len(entries), "entityKind": "script_label"})
+    write_domain_source_manifest(root, domain, DOMAIN_SOURCE_SPECS[domain])
+    return {"scripts": len(entries)}
+
+
+def extract_entity_state(root: Path) -> Dict[str, Any]:
+    domain = "state"
+    clear_domain(root, domain)
+    entries: List[Dict[str, Any]] = []
+    state_files = [
+        (
+            "save_blocks",
+            root / "include" / "global.h",
+            "save_block_contract",
+            {
+                "containers": ["SaveBlock1", "SaveBlock2", "PokemonStorage", "MapHeader"],
+                "legacyFiles": ["include/global.h", "include/save.h", "src/save.c"],
+            },
+        ),
+        (
+            "runtime_modes",
+            root / "include" / "global.fieldmap.h",
+            "runtime_state_contract",
+            {
+                "avatarStates": [token["symbol"] for token in parse_define_tokens(root, "include/global.fieldmap.h", "PLAYER_AVATAR_FLAG_")],
+                "legacyFiles": ["include/global.fieldmap.h", "src/field_player_avatar.c", "src/overworld.c"],
+            },
+        ),
+        (
+            "multiplayer_options",
+            root / "include" / "multiplayer" / "types.h",
+            "multiplayer_state_contract",
+            {
+                "resourceLocks": ["MAP_SCRIPT", "OBJECT_EVENT", "TRAINER_BATTLE", "SCRIPT"],
+                "commitKinds": sorted(set(re.findall(r"\bMULTIPLAYER_COMMIT_[A-Z0-9_]+\b", read_text(root / "include" / "multiplayer" / "types.h")))),
+                "legacyFiles": ["include/multiplayer/types.h", "src/multiplayer/commit.c"],
+            },
+        ),
+    ]
+    for entity_id, source_path, legacy_kind, payload in state_files:
+        entity = entity_base(root, domain, entity_id, source_path, legacy_kind)
+        entity.update(payload)
+        write_entity(root, domain, f"{entity_id}.json", entity, entries, {"symbol": entity_id})
+    write_domain_index(root, domain, entries, {"entityCount": len(entries), "entityKind": "state_contract"})
+    write_domain_source_manifest(root, domain, DOMAIN_SOURCE_SPECS[domain])
+    return {"stateContracts": len(entries)}
 
 
 ENTITY_EXTRACTORS = {
@@ -1356,6 +1896,15 @@ ENTITY_EXTRACTORS = {
     "pokemon": lambda root: extract_token_domain(root, "pokemon", "include/constants/species.h", "SPECIES_", "species", "species_define"),
     "moves": lambda root: extract_token_domain(root, "moves", "include/constants/moves.h", "MOVE_", "moves", "move_define"),
     "shops": extract_entity_shops,
+    "events": extract_entity_events,
+    "language": extract_entity_language,
+    "sprite_assets": extract_entity_sprite_assets,
+    "overworld_sprites": extract_entity_overworld_sprites,
+    "battle_sprites": extract_entity_battle_sprites,
+    "followers": extract_entity_followers,
+    "outfits": extract_entity_outfits,
+    "pokeballs": extract_entity_pokeballs,
+    "state": extract_entity_state,
 }
 
 

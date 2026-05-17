@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePike_Text_PathBlockedNoTurningBack",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "sha1": "927f7bda20dae778159d88132a53038bcfb76615"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "rawScript": ".string \"The path is blocked!\\n\"\n\t.string \"And there is no turning back\u2026$\""
+  },
+  "label": "BattleFrontier_BattlePike_Text_PathBlockedNoTurningBack",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+  "references": {}
+}

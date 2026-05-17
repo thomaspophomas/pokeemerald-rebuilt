@@ -1,0 +1,23 @@
+{
+  "id": "SkyPillar_Top_EventScript_DefeatedRayquaza2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SkyPillar_Top/scripts.inc",
+    "sha1": "db486fa7ae1229bdf3cba19c1d86940ca9a59221"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SkyPillar_Top/scripts.inc",
+    "rawScript": "fadescreenswapbuffers FADE_TO_BLACK\n\tremoveobject VAR_LAST_TALKED\n\tfadescreenswapbuffers FADE_FROM_BLACK\n\treleaseall\n\tend"
+  },
+  "label": "SkyPillar_Top_EventScript_DefeatedRayquaza2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SkyPillar_Top/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED"
+    ]
+  }
+}

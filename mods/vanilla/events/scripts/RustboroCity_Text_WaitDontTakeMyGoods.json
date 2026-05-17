@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Text_WaitDontTakeMyGoods",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": ".string \"Wait! Pleeeaaase!\\p\"\n\t.string \"Don't take my GOODS!$\""
+  },
+  "label": "RustboroCity_Text_WaitDontTakeMyGoods",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

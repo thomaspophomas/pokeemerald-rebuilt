@@ -1,0 +1,26 @@
+{
+  "id": "BattlePyramid_WarpToTop",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "sha1": "a6f6792ac2bc39a05028dabd4e88f5984d84d4a5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "rawScript": "warp MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_TOP, 17, 17\n\twaitstate\n\tend\n\n@ TRAINER_PHILLIP is used as a placeholder"
+  },
+  "label": "BattlePyramid_WarpToTop",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_PHILLIP"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_TOP"
+    ]
+  }
+}

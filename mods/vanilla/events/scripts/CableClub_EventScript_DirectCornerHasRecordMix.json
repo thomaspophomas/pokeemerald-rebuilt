@@ -1,0 +1,23 @@
+{
+  "id": "CableClub_EventScript_DirectCornerHasRecordMix",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "multichoice 0, 0, MULTI_WIRELESS_NO_BERRY, FALSE\n\tswitch VAR_RESULT\n\tcase 0, CableClub_EventScript_WirelessTrade\n\tcase 1, CableClub_EventScript_WirelessBattleSelect\n\tcase 2, CableClub_EventScript_WirelessRecordMix\n\tcase 3, CableClub_EventScript_AbortLink\n\tcase MULTI_B_PRESSED, CableClub_EventScript_AbortLink\n\tend"
+  },
+  "label": "CableClub_EventScript_DirectCornerHasRecordMix",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

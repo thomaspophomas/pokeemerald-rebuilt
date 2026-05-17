@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Text_LifeNeedsSeaToLive",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/scripts.inc",
+    "sha1": "33f0f7f83a475484aaca395542c6bd65a6f2dd45"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity/scripts.inc",
+    "rawScript": ".string \"All life needs the sea to live, even\\n\"\n\t.string \"though it makes its home on the land.\\p\"\n\t.string \"Life, having run its course, becomes\\n\"\n\t.string \"soil and returns to the land.\\p\"\n\t.string \"And the sea is always connected to\\n\"\n\t.string \"the land.\\p\"\n\t.string \"Yes, like the very shoreline here.$\""
+  },
+  "label": "MossdeepCity_Text_LifeNeedsSeaToLive",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity/scripts.inc",
+  "references": {}
+}

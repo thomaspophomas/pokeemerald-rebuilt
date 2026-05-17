@@ -1,0 +1,19 @@
+{
+  "id": "NewMauville_Entrance_Text_UsedBasementKey",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NewMauville_Entrance/scripts.inc",
+    "sha1": "f27dc6b4117073bcedc10e2cc744e7b01086fb95"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NewMauville_Entrance/scripts.inc",
+    "rawScript": ".string \"{PLAYER} used the BASEMENT KEY.\\p\"\n\t.string \"The door opened!$\""
+  },
+  "label": "NewMauville_Entrance_Text_UsedBasementKey",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/NewMauville_Entrance/scripts.inc",
+  "references": {}
+}

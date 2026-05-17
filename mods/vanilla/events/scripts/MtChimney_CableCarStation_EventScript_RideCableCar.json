@@ -1,0 +1,23 @@
+{
+  "id": "MtChimney_CableCarStation_EventScript_RideCableCar",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney_CableCarStation/scripts.inc",
+    "sha1": "9e305574fdedd25f70ad58e6499cdd46ba5e26c4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtChimney_CableCarStation/scripts.inc",
+    "rawScript": "msgbox MtChimney_CableCarStation_Text_StepThisWay, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_MT_CHIMNEY_CABLE_CAR_ATTENDANT, MtChimney_CableCarStation_Movement_LeadPlayerToCableCar\n\tapplymovement LOCALID_PLAYER, MtChimney_CableCarStation_Movement_BoardCableCar\n\twaitmovement 0\n\tsetvar VAR_0x8004, TRUE  @ Going down\n\tsetvar VAR_CABLE_CAR_STATION_STATE, 2\n\tincrementgamestat GAME_STAT_RODE_CABLE_CAR\n\tspecial CableCarWarp\n\tspecial CableCar\n\trelease\n\tend"
+  },
+  "label": "MtChimney_CableCarStation_EventScript_RideCableCar",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtChimney_CableCarStation/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_CABLE_CAR_STATION_STATE"
+    ]
+  }
+}

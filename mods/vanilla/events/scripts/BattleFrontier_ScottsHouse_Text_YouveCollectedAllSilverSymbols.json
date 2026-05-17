@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "sha1": "c30df9e905f6d4b9d9e1eaf4d4fccf30db88e083"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "rawScript": ".string \"SCOTT: Are you enjoying things in\\n\"\n\t.string \"the BATTLE FRONTIER?\\p\"\n\t.string \"\u2026Wait a second\u2026\\n\"\n\t.string \"Oh!\\p\"\n\t.string \"Your FRONTIER PASS!\\n\"\n\t.string \"You've collected the full set\\l\"\n\t.string \"of silver symbols!\\p\"\n\t.string \"That's more than impressive!\\n\"\n\t.string \"You are tough, just as I suspected!\\p\"\n\t.string \"Normally, I wouldn't do something\\n\"\n\t.string \"like this, but this is a special time!\\p\"\n\t.string \"I want you to have this.\\n\"\n\t.string \"I'm sure you can put it to proper use.$\""
+  },
+  "label": "BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+  "references": {}
+}

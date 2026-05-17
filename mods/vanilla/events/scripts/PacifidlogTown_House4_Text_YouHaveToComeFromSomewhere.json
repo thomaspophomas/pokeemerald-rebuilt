@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_House4_Text_YouHaveToComeFromSomewhere",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_House4/scripts.inc",
+    "sha1": "f73026c10489d0f955542625b58858b3adf6b0f1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown_House4/scripts.inc",
+    "rawScript": ".string \"No? That doesn't make any sense.\\n\"\n\t.string \"You have to come from somewhere.\\p\"\n\t.string \"Oh! Wait! You're not going to say you\\n\"\n\t.string \"were born at the bottom of the sea?$\""
+  },
+  "label": "PacifidlogTown_House4_Text_YouHaveToComeFromSomewhere",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PacifidlogTown_House4/scripts.inc",
+  "references": {}
+}

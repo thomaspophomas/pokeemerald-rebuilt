@@ -1,0 +1,23 @@
+{
+  "id": "Apprentice_EventScript_HoldNothing",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/apprentice.inc",
+    "sha1": "353208142bca1df117076064d141b84efe196e7c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/apprentice.inc",
+    "rawScript": "apprentice_msg TRUE, APPRENTICE_MSG_THANKS_NO_HELD_ITEM\n\tapprentice_answeredquestion\n\tcall Apprentice_EventScript_SetHideFlags\n\trelease\n\treleaseall\n\tswitch VAR_FACING\n\tcase DIR_NORTH, Apprentice_EventScript_LeaveNorth\n\tgoto Apprentice_EventScript_Leave\n\tend\n\n@ Because Battle Tower mons may not hold the same item, the player must suggest a\n@ different item if theyve already told the Apprentice to use it for another mon"
+  },
+  "label": "Apprentice_EventScript_HoldNothing",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/apprentice.inc",
+  "references": {
+    "vars": [
+      "VAR_FACING"
+    ]
+  }
+}

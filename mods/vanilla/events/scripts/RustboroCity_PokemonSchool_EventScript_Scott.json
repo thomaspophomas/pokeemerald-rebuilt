@@ -1,0 +1,28 @@
+{
+  "id": "RustboroCity_PokemonSchool_EventScript_Scott",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "sha1": "155fc7f1cee833cb06df85a407e5f98f216a928e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_MET_SCOTT_AFTER_OBTAINING_STONE_BADGE, RustboroCity_PokemonSchool_EventScript_ScottWatchStudents\n\tgoto_if_set FLAG_MET_SCOTT_RUSTBORO, RustboroCity_PokemonSchool_EventScript_ScottSpokeAlready\n\tgoto_if_set FLAG_BADGE01_GET, RustboroCity_PokemonSchool_EventScript_ScottGreetHasBadge\n\tmsgbox RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut, MSGBOX_DEFAULT\n\taddvar VAR_SCOTT_STATE, 1\n\tsetflag FLAG_MET_SCOTT_RUSTBORO\n\trelease\n\tend"
+  },
+  "label": "RustboroCity_PokemonSchool_EventScript_Scott",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_BADGE01_GET",
+      "FLAG_MET_SCOTT_AFTER_OBTAINING_STONE_BADGE",
+      "FLAG_MET_SCOTT_RUSTBORO"
+    ],
+    "vars": [
+      "VAR_SCOTT_STATE"
+    ]
+  }
+}

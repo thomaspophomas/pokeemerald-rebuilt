@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleDomeBattleRoom_EventScript_BattleTuckerGold",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "sha1": "2cf5ea83e82fbd2189ced7e0cd4d5f894bf74650"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattleDomeBattleRoom_Text_UnleashAllPowerIPossess, MSGBOX_DEFAULT\n\tcall BattleFrontier_BattleDomeBattleRoom_EventScript_DoTuckerBattle\n\tswitch VAR_RESULT\n\tcase B_OUTCOME_LOST, BattleFrontier_BattleDomeBattleRoom_EventScript_LostToTucker\n\tcase B_OUTCOME_FORFEITED, BattleFrontier_BattleDomeBattleRoom_EventScript_LostToTucker\n\tcase B_OUTCOME_DREW, BattleFrontier_BattleDomeBattleRoom_EventScript_TuckerDraw\n\tmsgbox BattleFrontier_BattleDomeBattleRoom_Text_IncredibleVictorIsPlayer, MSGBOX_DEFAULT\n\tdome_resolvewinners DOME_PLAYER_WON_MATCH\n\tfrontier_getsymbols\n\tgoto_if_eq VAR_RESULT, 2, BattleFrontier_BattleDomeBattleRoom_EventScript_WonTourney\n\tclosemessage\n\tapplymovement LOCALID_DOME_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_TuckerApproachPlayer\n\twaitmovement 0\n\tmsgbox BattleFrontier_BattleDomeBattleRoom_Text_NeverLostWhenPowerUnleashed, MSGBOX_DEFAULT\n\tplayfanfare MUS_OBTAIN_SYMBOL\n\tmessage BattleFrontier_BattleDomeBattleRoom_Text_TacticsSymbolTookGoldenShine\n\twaitmessage\n\twaitfanfare\n\tfrontier_givesymbol\n\tmsgbox BattleFrontier_BattleDomeBattleRoom_Text_LookForwardToNextEncounter, MSGBOX_DEFAULT\n\tgoto BattleFrontier_BattleDomeBattleRoom_EventScript_WonTourney"
+  },
+  "label": "BattleFrontier_BattleDomeBattleRoom_EventScript_BattleTuckerGold",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

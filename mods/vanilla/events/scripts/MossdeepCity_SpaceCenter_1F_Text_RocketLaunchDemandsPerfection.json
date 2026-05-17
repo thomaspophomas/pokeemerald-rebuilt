@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "sha1": "a0cf82d2df089035fb81d02a013736aab95a13d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "rawScript": ".string \"A rocket launch demands perfection.\\n\"\n\t.string \"Not even a 1% margin of error is allowed.\\p\"\n\t.string \"Even if it's 99% okay, the whole thing\\n\"\n\t.string \"is useless if 1% happens to be no good.\\p\"\n\t.string \"Despite that, we never stop trying.\\n\"\n\t.string \"Why? It's a dream that never ends.$\""
+  },
+  "label": "MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+  "references": {}
+}

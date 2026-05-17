@@ -1,0 +1,30 @@
+{
+  "id": "MtChimney_EventScript_MeteoriteMachine",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney/scripts.inc",
+    "sha1": "4d6a7ac7998e07e6d4f244ef13c499194f5b3668"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtChimney/scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_unset FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY, MtChimney_EventScript_MachineOn\n\tgoto_if_set FLAG_RECEIVED_METEORITE, MtChimney_EventScript_MachineOff\n\tmsgbox MtChimney_Text_RemoveTheMeteorite, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, MtChimney_EventScript_LeaveMeteoriteAlone\n\tmsgbox MtChimney_Text_PlayerRemovedMeteorite, MSGBOX_DEFAULT\n\tgiveitem ITEM_METEORITE\n\tsetflag FLAG_RECEIVED_METEORITE\n\treleaseall\n\tend"
+  },
+  "label": "MtChimney_EventScript_MeteoriteMachine",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtChimney/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY",
+      "FLAG_RECEIVED_METEORITE"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_METEORITE"
+    ]
+  }
+}

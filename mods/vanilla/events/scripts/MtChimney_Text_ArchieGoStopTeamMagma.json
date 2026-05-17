@@ -1,0 +1,19 @@
+{
+  "id": "MtChimney_Text_ArchieGoStopTeamMagma",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney/scripts.inc",
+    "sha1": "4d6a7ac7998e07e6d4f244ef13c499194f5b3668"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtChimney/scripts.inc",
+    "rawScript": ".string \"ARCHIE: Grr, {PLAYER}!\\n\"\n\t.string \"I should've guessed you'd show up!\\p\"\n\t.string \"See for yourself what the fanatics\\n\"\n\t.string \"of TEAM MAGMA are up to!\\p\"\n\t.string \"They're trying to inject the stolen\\n\"\n\t.string \"METEORITE's power into the volcano!\\p\"\n\t.string \"Doing something like that will cause\\n\"\n\t.string \"the volcano's eruption!$\""
+  },
+  "label": "MtChimney_Text_ArchieGoStopTeamMagma",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtChimney/scripts.inc",
+  "references": {}
+}

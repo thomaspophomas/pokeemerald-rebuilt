@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomeBattleRoom_Text_TuckerSilverIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "sha1": "2cf5ea83e82fbd2189ced7e0cd4d5f894bf74650"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "rawScript": ".string \"TUCKER: Ahahah!\\p\"\n\t.string \"Do you hear it? This crowd!\\n\"\n\t.string \"They're all itching to see our match!\\p\"\n\t.string \"Ahahah!\\p\"\n\t.string \"I bet you're twitching all over from\\n\"\n\t.string \"the tension of getting to battle me!\\p\"\n\t.string \"But don't you worry about a thing!\\p\"\n\t.string \"I'm the no. 1 star of the BATTLE DOME!\\n\"\n\t.string \"I, TUCKER the DOME ACE, will bathe you\\l\"\n\t.string \"in my brilliant glow!$\""
+  },
+  "label": "BattleFrontier_BattleDomeBattleRoom_Text_TuckerSilverIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+  "references": {}
+}

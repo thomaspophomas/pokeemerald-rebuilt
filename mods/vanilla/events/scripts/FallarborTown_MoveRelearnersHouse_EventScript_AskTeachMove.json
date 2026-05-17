@@ -1,0 +1,26 @@
+{
+  "id": "FallarborTown_MoveRelearnersHouse_EventScript_AskTeachMove",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc",
+    "sha1": "9afb886b81b1177e00257143804f6a28f9488a57"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc",
+    "rawScript": "checkitem ITEM_HEART_SCALE\n\tgoto_if_eq VAR_RESULT, FALSE, FallarborTown_MoveRelearnersHouse_EventScript_ComeBackWithHeartScale\n\tmsgbox FallarborTown_MoveRelearnersHouse_Text_ThatsAHeartScaleWantMeToTeachMove, MSGBOX_YESNO\n\tswitch VAR_RESULT\n\tcase NO, FallarborTown_MoveRelearnersHouse_EventScript_ComeBackWithHeartScale\n\tgoto FallarborTown_MoveRelearnersHouse_EventScript_ChooseMon\n\tend"
+  },
+  "label": "FallarborTown_MoveRelearnersHouse_EventScript_AskTeachMove",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_HEART_SCALE"
+    ]
+  }
+}

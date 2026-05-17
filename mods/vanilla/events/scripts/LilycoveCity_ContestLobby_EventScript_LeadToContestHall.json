@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_LeadToContestHall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_CONTEST_LOBBY_RECEPTIONIST, LilycoveCity_ContestLobby_Movement_ReceptionistApproachCounter\n\twaitmovement 0\n\tplayse SE_BRIDGE_WALK\n\tsetmetatile 12, 2, METATILE_Contest_WallShadow, TRUE\n\tsetmetatile 12, 3, METATILE_Contest_FloorShadow, TRUE\n\tspecial DrawWholeMapView\n\tapplymovement LOCALID_CONTEST_LOBBY_RECEPTIONIST, LilycoveCity_ContestLobby_Movement_ReceptionistExitCounter\n\twaitmovement 0\n\tplayse SE_BRIDGE_WALK\n\tsetmetatile 12, 2, METATILE_Contest_CounterFlap_Top, TRUE\n\tsetmetatile 12, 3, METATILE_Contest_CounterFlap_Bottom, TRUE\n\tspecial DrawWholeMapView\n\tdelay 20\n\tapplymovement LOCALID_CONTEST_LOBBY_RECEPTIONIST, LilycoveCity_ContestLobby_Movement_ReceptionistFacePlayer\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, LilycoveCity_ContestLobby_Movement_PlayerApproachReceptionist\n\twaitmovement 0\n\tmsgbox LilycoveCity_ContestLobby_Text_ComeThroughHere, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_CONTEST_LOBBY_RECEPTIONIST, LilycoveCity_ContestLobby_Movement_ReceptionistWalkToContestHall\n\tapplymovement LOCALID_PLAYER, LilycoveCity_ContestLobby_Movement_PlayerWalkToContestHall\n\twaitmovement 0\n\treleaseall\n\treturn"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_LeadToContestHall",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {}
+}

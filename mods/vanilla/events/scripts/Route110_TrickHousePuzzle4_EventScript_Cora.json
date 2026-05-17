@@ -1,0 +1,23 @@
+{
+  "id": "Route110_TrickHousePuzzle4_EventScript_Cora",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle4/scripts.inc",
+    "sha1": "eb33f28b7301e502843672a1bcbd3b768312b2e2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle4/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_CORA, Route110_TrickHousePuzzle4_Text_CoraIntro, Route110_TrickHousePuzzle4_Text_CoraDefeat\n\tmsgbox Route110_TrickHousePuzzle4_Text_CoraPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route110_TrickHousePuzzle4_EventScript_Cora",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHousePuzzle4/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_CORA"
+    ]
+  }
+}

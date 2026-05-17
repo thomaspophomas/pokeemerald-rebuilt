@@ -1,0 +1,33 @@
+{
+  "id": "DewfordTown_EventScript_SailToSlateport",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown/scripts.inc",
+    "sha1": "e9e724e6d3bba641bcb2d4263fe226ee6c1b4840"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown/scripts.inc",
+    "rawScript": "call EventScript_BackupMrBrineyLocation\n\tsetobjectsubpriority LOCALID_DEWFORD_BRINEY, MAP_DEWFORD_TOWN, 0\n\tsetobjectsubpriority LOCALID_PLAYER, MAP_DEWFORD_TOWN, 1\n\tapplymovement LOCALID_DEWFORD_BRINEY, DewfordTown_Movement_BrineyBoardBoat\n\twaitmovement 0\n\tremoveobject LOCALID_DEWFORD_BRINEY\n\tapplymovement LOCALID_PLAYER, DewfordTown_Movement_PlayerBoardBoat\n\twaitmovement 0\n\thideobjectat LOCALID_PLAYER, MAP_DEWFORD_TOWN\n\tcall Common_EventScript_PlayBrineysBoatMusic\n\tapplymovement LOCALID_DEWFORD_BOAT, DewfordTown_Movement_SailToSlateport\n\tapplymovement LOCALID_PLAYER, DewfordTown_Movement_SailToSlateport\n\twaitmovement 0\n\tcall Common_EventScript_StopBrineysBoatMusic\n\tshowobjectat LOCALID_PLAYER, MAP_ROUTE109\n\tapplymovement LOCALID_PLAYER, DewfordTown_Movement_ExitBoatSlateport\n\twaitmovement 0\n\tsetobjectxyperm LOCALID_ROUTE109_BRINEY, 21, 26\n\taddobject LOCALID_ROUTE109_BRINEY\n\tsetobjectsubpriority LOCALID_ROUTE109_BRINEY, MAP_ROUTE109, 0\n\tapplymovement LOCALID_ROUTE109_BRINEY, DewfordTown_Movement_BrineyExitBoat\n\twaitmovement 0\n\tclearflag FLAG_HIDE_ROUTE_109_MR_BRINEY\n\taddobject LOCALID_ROUTE109_BOAT\n\tclearflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT\n\tsetflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN\n\thideobjectat LOCALID_DEWFORD_BOAT, MAP_DEWFORD_TOWN\n\tcall_if_unset FLAG_DELIVERED_DEVON_GOODS, DewfordTown_EventScript_LandedSlateportDeliverGoods\n\tcall_if_set FLAG_DELIVERED_DEVON_GOODS, DewfordTown_EventScript_LandedSlateport\n\tclosemessage\n\tcopyvar VAR_BRINEY_LOCATION, VAR_0x8008\n\tresetobjectsubpriority LOCALID_PLAYER, MAP_DEWFORD_TOWN\n\tresetobjectsubpriority LOCALID_ROUTE109_BRINEY, MAP_ROUTE109\n\tcopyobjectxytoperm LOCALID_ROUTE109_BRINEY\n\trelease\n\tend"
+  },
+  "label": "DewfordTown_EventScript_SailToSlateport",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DewfordTown/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DELIVERED_DEVON_GOODS",
+      "FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN",
+      "FLAG_HIDE_ROUTE_109_MR_BRINEY",
+      "FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT"
+    ],
+    "vars": [
+      "VAR_BRINEY_LOCATION"
+    ],
+    "maps": [
+      "MAP_DEWFORD_TOWN",
+      "MAP_ROUTE109"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "TrainerHill_Entrance_EventScript_AskChallengeTrainers",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "sha1": "cbfca2354a8d8ed8d68e2612fb0b6f2525008a5f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "rawScript": "message TrainerHill_Entrance_Text_LikeToChallengeTrainers\n\twaitmessage\n\tmultichoice 15, 6, MULTI_YESNOINFO, FALSE\n\tswitch VAR_RESULT\n\tcase 0, TrainerHill_Entrance_EventScript_ChooseChallenge\n\tcase 1, TrainerHill_Entrance_EventScript_CancelEntry\n\tcase 2, TrainerHill_Entrance_EventScript_Info\n\tcase MULTI_B_PRESSED, TrainerHill_Entrance_EventScript_CancelEntry\n\tend"
+  },
+  "label": "TrainerHill_Entrance_EventScript_AskChallengeTrainers",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/TrainerHill_Entrance/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": ".string \"PROF. BIRCH: The POK\u00e9DEX is a high-tech\\n\"\n\t.string \"tool that automatically makes a record\\l\"\n\t.string \"of any POK\u00e9MON you meet or catch.\\p\"\n\t.string \"My kid, {RIVAL}, goes everywhere\\n\"\n\t.string \"with it.\\p\"\n\t.string \"Whenever my kid catches a rare POK\u00e9MON\\n\"\n\t.string \"and records its data in the POK\u00e9DEX,\\l\"\n\t.string \"why, {RIVAL} looks for me while I'm out\\l\"\n\t.string \"doing fieldwork, and shows me.$\""
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

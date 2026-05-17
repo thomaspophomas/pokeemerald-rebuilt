@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Text_BugPokemonComeThroughWindow",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity/scripts.inc",
+    "sha1": "a1f53b6d8b894e2f69fc9a5c4e1509ef9ab3ce09"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity/scripts.inc",
+    "rawScript": ".string \"Living on top of trees is okay.\\p\"\n\t.string \"But sometimes BUG POK\u00e9MON come in\\n\"\n\t.string \"through windows.\\l\"\n\t.string \"It can be really startling.$\""
+  },
+  "label": "FortreeCity_Text_BugPokemonComeThroughWindow",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity/scripts.inc",
+  "references": {}
+}

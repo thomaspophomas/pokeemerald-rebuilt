@@ -1,0 +1,19 @@
+{
+  "id": "GabbyAndTy_EventScript_RequestInterviewThrewBall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gabby_and_ty.inc",
+    "sha1": "94bbdc1414879c9d53e3c5a88c9429ac40dbfdeb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gabby_and_ty.inc",
+    "rawScript": "msgbox GabbyAndTy_Text_YouThrewABallAtUsInterviewAgain, MSGBOX_YESNO\n\tgoto GabbyAndTy_EventScript_Interview\n\tend"
+  },
+  "label": "GabbyAndTy_EventScript_RequestInterviewThrewBall",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/gabby_and_ty.inc",
+  "references": {}
+}

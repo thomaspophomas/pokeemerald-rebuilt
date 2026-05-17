@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Gym_1F_Text_FlanneryIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "sha1": "b82ae91ab89ff7156e8125891eff9b7e6a2a260f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "rawScript": ".string \"Welcome\u2026 No, wait.\\p\"\n\t.string \"Puny TRAINER, how good to see you've\\n\"\n\t.string \"made it here!\\p\"\n\t.string \"I have been entrusted with the\u2026\\n\"\n\t.string \"No, wait.\\p\"\n\t.string \"I am FLANNERY, and I'm the GYM\\n\"\n\t.string \"LEADER here!\\p\"\n\t.string \"Uh\u2026\\n\"\n\t.string \"Dare not underestimate me, though\\l\"\n\t.string \"I have been LEADER only a short time!\\p\"\n\t.string \"With skills inherited from my grand-\\n\"\n\t.string \"father, I shall, uh\u2026demonstrate the\\l\"\n\t.string \"hot moves we have honed on this land!$\""
+  },
+  "label": "LavaridgeTown_Gym_1F_Text_FlanneryIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+  "references": {}
+}

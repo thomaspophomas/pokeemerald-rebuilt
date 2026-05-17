@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleArenaLobby_EventScript_ResumeChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "sha1": "9504bb75bdf62b80271e2304b4804044c8db502a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "rawScript": "lockall\n\tmessage BattleFrontier_BattleArenaLobby_Text_LookingForwardToArrivalSaveGame\n\twaitmessage\n\tarena_save CHALLENGE_STATUS_SAVING\n\tplayse SE_SAVE\n\twaitse\n\tfrontier_set FRONTIER_DATA_PAUSED, FALSE\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 255\n\tgoto BattleFrontier_BattleArenaLobby_EventScript_EnterChallenge"
+  },
+  "label": "BattleFrontier_BattleArenaLobby_EventScript_ResumeChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ]
+  }
+}

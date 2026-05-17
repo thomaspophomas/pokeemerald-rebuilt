@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_House1_Text_ThisIsntAMon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_House1/scripts.inc",
+    "sha1": "73fe39f834d30cb9e5eb946dc3e0a824ee7e8c6f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_House1/scripts.inc",
+    "rawScript": ".string \"Uh, no, I don't think so.\\n\"\n\t.string \"That isn't a {STR_VAR_1}.$\""
+  },
+  "label": "FortreeCity_House1_Text_ThisIsntAMon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_House1/scripts.inc",
+  "references": {}
+}

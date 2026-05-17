@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Text_MrBrineyWalksInTheTunnel",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": ".string \"The old sailor MR. BRINEY lives in\\n\"\n\t.string \"a cottage by the sea.\\p\"\n\t.string \"He goes for walks in the tunnel every\\n\"\n\t.string \"so often.$\""
+  },
+  "label": "RustboroCity_Text_MrBrineyWalksInTheTunnel",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

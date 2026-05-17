@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePyramidFloor_EventScript_PlayPyramidMusic",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "sha1": "a6f6792ac2bc39a05028dabd4e88f5984d84d4a5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "rawScript": "playbgm MUS_B_PYRAMID, FALSE\n\tsetvar VAR_TEMP_PLAYING_PYRAMID_MUSIC, 1\n\tend"
+  },
+  "label": "BattleFrontier_BattlePyramidFloor_EventScript_PlayPyramidMusic",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_PLAYING_PYRAMID_MUSIC"
+    ]
+  }
+}

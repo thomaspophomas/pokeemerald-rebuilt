@@ -1,0 +1,23 @@
+{
+  "id": "EverGrandeCity_PhoebesRoom_EventScript_Defeated",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc",
+    "sha1": "19093003402affcdd9afdda6a47a9abe8524d0e2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc",
+    "rawScript": "setflag FLAG_DEFEATED_ELITE_4_PHOEBE\n\tcall PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles\n\tmsgbox EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "EverGrandeCity_PhoebesRoom_EventScript_Defeated",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_ELITE_4_PHOEBE"
+    ]
+  }
+}

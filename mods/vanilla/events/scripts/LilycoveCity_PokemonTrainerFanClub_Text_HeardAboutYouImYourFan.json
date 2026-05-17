@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_Text_HeardAboutYouImYourFan",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": ".string \"I've heard the news!\\n\"\n\t.string \"You're really strong, aren't you?\\p\"\n\t.string \"We always argue about who is the\\n\"\n\t.string \"strongest of all TRAINERS here.\\p\"\n\t.string \"So when I heard about you, I decided\\n\"\n\t.string \"to be your fan!\\p\"\n\t.string \"I hope you'll keep on battling other\\n\"\n\t.string \"tough TRAINERS.\\p\"\n\t.string \"That way, we'll be able to see more\\n\"\n\t.string \"of your hot, hot battles.\\p\"\n\t.string \"That will make the others here see\\n\"\n\t.string \"exactly how great you are.\\p\"\n\t.string \"Remember, I'm cheering for you,\\n\"\n\t.string \"{PLAYER}!$\""
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_Text_HeardAboutYouImYourFan",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {}
+}

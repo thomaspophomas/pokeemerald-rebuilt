@@ -1,0 +1,23 @@
+{
+  "id": "Route110_TrickHousePuzzle1_EventScript_Robin",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle1/scripts.inc",
+    "sha1": "04ef2232907c7bc5c7540440a8309dccb4f2dd2e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle1/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_ROBIN, Route110_TrickHousePuzzle1_Text_RobinIntro, Route110_TrickHousePuzzle1_Text_RobinDefeat\n\tmsgbox Route110_TrickHousePuzzle1_Text_RobinPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route110_TrickHousePuzzle1_EventScript_Robin",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHousePuzzle1/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ROBIN"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_Text_NoOneCanKnockYouButTrainerStronger",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": ".string \"You are really popular\u2026\\p\"\n\t.string \"You're strong, and you're caring to\\n\"\n\t.string \"POK\u00e9MON. No one can knock you.\\p\"\n\t.string \"But, you know, I believe in {STR_VAR_1}.\\p\"\n\t.string \"{STR_VAR_1} is definitely stronger!\\n\"\n\t.string \"I'm positive!$\""
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_Text_NoOneCanKnockYouButTrainerStronger",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {}
+}

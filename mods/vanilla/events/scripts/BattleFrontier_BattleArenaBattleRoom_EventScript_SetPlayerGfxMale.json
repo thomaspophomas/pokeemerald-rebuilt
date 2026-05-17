@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleArenaBattleRoom_EventScript_SetPlayerGfxMale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "sha1": "d0a70f09e21302da78823f02966e03f9b41a3a1a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "rawScript": "setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL\n\treturn"
+  },
+  "label": "BattleFrontier_BattleArenaBattleRoom_EventScript_SetPlayerGfxMale",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_OBJ_GFX_ID_1"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "sText_MysticTicketThankYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_mystic_ticket.inc",
+    "sha1": "84698c0b8e6ebaadb3177e0b3abacdbd74a89f9a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_mystic_ticket.inc",
+    "rawScript": ".string \"Thank you for using the MYSTERY\\n\"\n\t.string \"GIFT System.$\""
+  },
+  "label": "sText_MysticTicketThankYou",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_mystic_ticket.inc",
+  "references": {}
+}

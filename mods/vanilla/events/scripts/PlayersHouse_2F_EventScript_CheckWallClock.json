@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_2F_EventScript_CheckWallClock",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/players_house.inc",
+    "sha1": "0f3da1347500315ef212a252409f1d410b0d226c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/players_house.inc",
+    "rawScript": "incrementgamestat GAME_STAT_CHECKED_CLOCK\n\tfadescreen FADE_TO_BLACK\n\tspecial Special_ViewWallClock\n\treleaseall\n\tend"
+  },
+  "label": "PlayersHouse_2F_EventScript_CheckWallClock",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/players_house.inc",
+  "references": {}
+}

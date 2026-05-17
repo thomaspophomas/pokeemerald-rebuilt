@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_Summit_Text_HearTheNewLegendOfHoenn",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/scripts.inc",
+    "sha1": "2d98d572d50cebb678d972aa421854c983329822"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Summit/scripts.inc",
+    "rawScript": ".string \"It is my role to pass on the legends\\n\"\n\t.string \"of HOENN to future generations.\\p\"\n\t.string \"And the crisis that just ended in\\n\"\n\t.string \"SOOTOPOLIS rewrote a legend\u2026\\p\"\n\t.string \"Have you the time to hear the new\\n\"\n\t.string \"legend of HOENN?$\""
+  },
+  "label": "MtPyre_Summit_Text_HearTheNewLegendOfHoenn",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_Summit/scripts.inc",
+  "references": {}
+}

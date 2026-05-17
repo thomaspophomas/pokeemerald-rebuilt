@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Text_SootopolisSkyBeautiful",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": ".string \"SOOTOPOLIS sprang up as a town in\\n\"\n\t.string \"the crater of a volcano.\\p\"\n\t.string \"If you look up at the sky, the lip of\\n\"\n\t.string \"the crater is also visible.\\l\"\n\t.string \"So, all you see is the sky in a circle.\\p\"\n\t.string \"But that's what makes the sky above\\n\"\n\t.string \"SOOTOPOLIS the most beautiful.$\""
+  },
+  "label": "SootopolisCity_Text_SootopolisSkyBeautiful",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

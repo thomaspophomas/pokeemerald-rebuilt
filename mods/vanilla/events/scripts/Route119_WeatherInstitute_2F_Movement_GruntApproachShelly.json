@@ -1,0 +1,19 @@
+{
+  "id": "Route119_WeatherInstitute_2F_Movement_GruntApproachShelly",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "sha1": "fb62e5a84003aa6247f1e7fe6ea409ec86ac92cc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "rawScript": "walk_fast_left\n\twalk_fast_left\n\twalk_fast_left\n\twalk_fast_left\n\twalk_fast_left\n\twalk_fast_left\n\twalk_fast_left\n\twalk_fast_left\n\twalk_fast_left\n\twalk_fast_left\n\twalk_fast_left\n\tstep_end"
+  },
+  "label": "Route119_WeatherInstitute_2F_Movement_GruntApproachShelly",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+  "references": {}
+}

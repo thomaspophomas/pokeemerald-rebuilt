@@ -1,0 +1,34 @@
+{
+  "id": "MagmaHideout_4F_EventScript_Maxie",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_4F/scripts.inc",
+    "sha1": "8f2c61f090f2c324dc4138c5d5ad754b00dfcb48"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_4F/scripts.inc",
+    "rawScript": "lockall\n\tplaybgm MUS_ENCOUNTER_MAGMA, FALSE\n\tmsgbox MagmaHideout_4F_Text_MaxieAwakenGroudon, MSGBOX_DEFAULT\n\tclosemessage\n\tdelay 20\n\tsetvar VAR_RESULT, 1\n\tplayse SE_M_DETECT\n\tdofieldeffectsparkle 18, 42, 0\n\twaitfieldeffect FLDEFF_SPARKLE\n\tsetvar VAR_RESULT, 1\n\tplayfanfare MUS_AWAKEN_LEGEND\n\tplayse SE_ORB\n\tspecial DoOrbEffect\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tdelay 150\n\tremoveobject LOCALID_MAGMA_HIDEOUT_4F_GROUDON_SLEEPING\n\taddobject LOCALID_MAGMA_HIDEOUT_4F_GROUDON\n\twaitstate\n\tdelay 60\n\tapplymovement LOCALID_MAGMA_HIDEOUT_4F_GROUDON, MagmaHideout_4F_Movement_GroudonApproach\n\twaitmovement 0\n\tspecial FadeOutOrbEffect\n\tsetvar VAR_0x8004, 1  @ vertical pan\n\tsetvar VAR_0x8005, 1  @ horizontal pan\n\tsetvar VAR_0x8006, 8  @ num shakes\n\tsetvar VAR_0x8007, 5  @ shake delay\n\tspecial ShakeCamera\n\twaitstate\n\tapplymovement LOCALID_MAGMA_HIDEOUT_4F_GROUDON, MagmaHideout_4F_Movement_GroudonExit\n\twaitmovement 0\n\tremoveobject LOCALID_MAGMA_HIDEOUT_4F_GROUDON\n\tdelay 4\n\tsetvar VAR_0x8004, 2  @ vertical pan\n\tsetvar VAR_0x8005, 2  @ horizontal pan\n\tsetvar VAR_0x8006, 8  @ num shakes\n\tsetvar VAR_0x8007, 5  @ shake delay\n\tspecial ShakeCamera\n\twaitstate\n\tdelay 30\n\tapplymovement LOCALID_MAGMA_HIDEOUT_4F_MAXIE, MagmaHideout_4F_Movement_MaxieLookAround\n\twaitmovement 0\n\tmsgbox MagmaHideout_4F_Text_MaxieGroudonWhatsWrong, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\tdelay 30\n\tapplymovement LOCALID_MAGMA_HIDEOUT_4F_MAXIE, Common_Movement_FacePlayer\n\twaitmovement 0\n\tmsgbox MagmaHideout_4F_Text_MaxieOhItWasYou, MSGBOX_DEFAULT\n\tclosemessage\n\ttrainerbattle_no_intro TRAINER_MAXIE_MAGMA_HIDEOUT, MagmaHideout_4F_Text_MaxieDefeat\n\tmsgbox MagmaHideout_4F_Text_MaxieImGoingAfterGroudon, MSGBOX_DEFAULT\n\tclosemessage\n\tclearflag FLAG_HIDE_SLATEPORT_CITY_CAPTAIN_STERN\n\tclearflag FLAG_HIDE_SLATEPORT_CITY_GABBY_AND_TY\n\tsetvar VAR_SLATEPORT_CITY_STATE, 1\n\tsetflag FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT\n\tsetvar VAR_SLATEPORT_HARBOR_STATE, 1\n\tfadescreen FADE_TO_BLACK\n\tremoveobject LOCALID_MAGMA_HIDEOUT_4F_MAXIE\n\tremoveobject LOCALID_MAGMA_HIDEOUT_4F_GRUNT_1\n\tremoveobject LOCALID_MAGMA_HIDEOUT_4F_GRUNT_2\n\tremoveobject LOCALID_MAGMA_HIDEOUT_4F_GRUNT_3\n\tremoveobject LOCALID_MAGMA_HIDEOUT_4F_TABITHA\n\tsetflag FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS\n\tfadescreen FADE_FROM_BLACK\n\treleaseall\n\tend"
+  },
+  "label": "MagmaHideout_4F_EventScript_Maxie",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MagmaHideout_4F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT",
+      "FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS",
+      "FLAG_HIDE_SLATEPORT_CITY_CAPTAIN_STERN",
+      "FLAG_HIDE_SLATEPORT_CITY_GABBY_AND_TY"
+    ],
+    "vars": [
+      "VAR_RESULT",
+      "VAR_SLATEPORT_CITY_STATE",
+      "VAR_SLATEPORT_HARBOR_STATE"
+    ],
+    "trainers": [
+      "TRAINER_MAXIE_MAGMA_HIDEOUT"
+    ]
+  }
+}

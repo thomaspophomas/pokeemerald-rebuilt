@@ -1,0 +1,26 @@
+{
+  "id": "Route105_OnLoad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route105/scripts.inc",
+    "sha1": "fca1ae319346cb625967baf011ba6f8b0e2fb01a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route105/scripts.inc",
+    "rawScript": "call_if_unset FLAG_REGI_DOORS_OPENED, Route105_CloseRegiEntrance\n\tcall_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_105_NORTH, AbnormalWeather_EventScript_PlaceTilesRoute105North\n\tcall_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_105_SOUTH, AbnormalWeather_EventScript_PlaceTilesRoute105South\n\tend"
+  },
+  "label": "Route105_OnLoad",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Route105/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_REGI_DOORS_OPENED"
+    ],
+    "vars": [
+      "VAR_ABNORMAL_WEATHER_LOCATION"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "sha1": "4f73bd77d8715e7ac12ff1ac731985eaf75ecd5e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "rawScript": "closemessage\n\taddobject LOCALID_CHAMPIONS_ROOM_BIRCH\n\tapplymovement LOCALID_CHAMPIONS_ROOM_BIRCH, EverGrandeCity_ChampionsRoom_Movement_BirchArrives\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\tmsgbox EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex, MSGBOX_DEFAULT\n\tcall ProfBirch_EventScript_RatePokedex\n\tmsgbox EverGrandeCity_ChampionsRoom_Text_BirchCongratulations, MSGBOX_DEFAULT\n\tapplymovement LOCALID_CHAMPIONS_ROOM_WALLACE, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tdelay 20\n\tapplymovement LOCALID_CHAMPIONS_ROOM_WALLACE, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tmsgbox EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe, MSGBOX_DEFAULT\n\tclosemessage\n\tdelay 30\n\tapplymovement LOCALID_CHAMPIONS_ROOM_WALLACE, EverGrandeCity_ChampionsRoom_Movement_WallaceExitStart\n\tapplymovement LOCALID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerExitStart\n\tapplymovement LOCALID_CHAMPIONS_ROOM_BIRCH, Common_Movement_WalkInPlaceFasterUp\n\tapplymovement LOCALID_CHAMPIONS_ROOM_RIVAL, EverGrandeCity_ChampionsRoom_Movement_RivalFollows\n\twaitmovement 0\n\tdelay 20\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tmsgbox EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside, MSGBOX_DEFAULT\n\tcheckplayergender\n\tcall_if_eq VAR_RESULT, MALE, EverGrandeCity_ChampionsRoom_EventScript_MayCongratulations\n\tcall_if_eq VAR_RESULT, FEMALE, EverGrandeCity_ChampionsRoom_EventScript_BrendanCongratulations\n\tclosemessage\n\tapplymovement LOCALID_CHAMPIONS_ROOM_WALLACE, EverGrandeCity_ChampionsRoom_Movement_WallaceExit\n\tapplymovement LOCALID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerExit\n\twaitmovement 0\n\tsetflag FLAG_HIDE_PETALBURG_GYM_GREETER\n\twarp MAP_EVER_GRANDE_CITY_HALL_OF_FAME, 7, 16\n\twaitstate\n\treleaseall\n\tend"
+  },
+  "label": "EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_PETALBURG_GYM_GREETER"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "maps": [
+      "MAP_EVER_GRANDE_CITY_HALL_OF_FAME"
+    ]
+  }
+}

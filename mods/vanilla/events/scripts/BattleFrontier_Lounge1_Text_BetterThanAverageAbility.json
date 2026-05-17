@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge1_Text_BetterThanAverageAbility",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+    "sha1": "2478a4558563ac9694ec1f8471095e49ece1c602"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+    "rawScript": ".string \"\u2026Hmm\u2026\\p\"\n\t.string \"This one, overall, I would describe as\\n\"\n\t.string \"having better-than-average ability.$\""
+  },
+  "label": "BattleFrontier_Lounge1_Text_BetterThanAverageAbility",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+  "references": {}
+}

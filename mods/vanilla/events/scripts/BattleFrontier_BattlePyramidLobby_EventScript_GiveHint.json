@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby_EventScript_GiveHint",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "sha1": "b93395a7ee7156a94cfa3817fd6222cfa69e94fd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "rawScript": "multichoice 17, 6, MULTI_LEVEL_MODE, FALSE\n\tswitch VAR_RESULT\n\tcase FRONTIER_LVL_50, BattleFrontier_BattlePyramidLobby_EventScript_GiveHintLv50\n\tcase FRONTIER_LVL_OPEN, BattleFrontier_BattlePyramidLobby_EventScript_GiveHintLvOpen\n\tcase FRONTIER_LVL_TENT, BattleFrontier_BattlePyramidLobby_EventScript_NoHint\n\tcase MULTI_B_PRESSED, BattleFrontier_BattlePyramidLobby_EventScript_NoHint\n\treturn\n\n@ Shouldnt occur"
+  },
+  "label": "BattleFrontier_BattlePyramidLobby_EventScript_GiveHint",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

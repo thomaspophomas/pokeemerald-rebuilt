@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_OceanicMuseum_2F_Text_SSTidalReplica",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+    "sha1": "13553a30435b8213726cfc4734cfaf0043bc447f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+    "rawScript": ".string \"\u201cTHE FERRY S.S. TIDAL\\p\"\n\t.string \"\u201cA scale replica of the ship under\\n\"\n\t.string \"construction at STERN'S SHIPYARD.\u201d$\""
+  },
+  "label": "SlateportCity_OceanicMuseum_2F_Text_SSTidalReplica",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+  "references": {}
+}

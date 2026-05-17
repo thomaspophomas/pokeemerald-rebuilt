@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattlePikeLobby_EventScript_Attendant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "sha1": "e2be0fe89296e221d6bdf7bc81fdcf739064bd1b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tsetvar VAR_FRONTIER_FACILITY, FRONTIER_FACILITY_PIKE\n\tsetvar VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_SINGLES\n\tspecial SavePlayerParty\n\tmsgbox BattleFrontier_BattlePikeLobby_Text_WelcomeToBattlePike, MSGBOX_DEFAULT"
+  },
+  "label": "BattleFrontier_BattlePikeLobby_EventScript_Attendant",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FRONTIER_BATTLE_MODE",
+      "VAR_FRONTIER_FACILITY"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgWoods_Text_StayOutOfTallGrass",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/scripts.inc",
+    "sha1": "a7a3b49731f97088b328145805430d4429326ec8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgWoods/scripts.inc",
+    "rawScript": ".string \"Yo, there!\\n\"\n\t.string \"Your POK\u00e9MON doing okay?\\p\"\n\t.string \"If your POK\u00e9MON are weak and you want\\n\"\n\t.string \"to avoid battles, you should stay out\\l\"\n\t.string \"of tall grass.$\""
+  },
+  "label": "PetalburgWoods_Text_StayOutOfTallGrass",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgWoods/scripts.inc",
+  "references": {}
+}

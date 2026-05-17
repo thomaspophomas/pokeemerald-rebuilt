@@ -1,0 +1,39 @@
+{
+  "id": "ITEM_TIMER_BALL",
+  "domain": "pokeballs",
+  "schemaVersion": 1,
+  "source": {
+    "path": "src/mod/pokeball.c",
+    "sha1": "33d25b17be0efe4ad368348c596e2ba324574b45"
+  },
+  "legacy": {
+    "kind": "pokeball_definition",
+    "sourcePath": "src/mod/pokeball.c",
+    "rawC": "{ \"vanilla:timer_ball\",   ITEM_TIMER_BALL,   BALL_TIMER,   10,                             0, NULL, BattleScript_BallThrow,       NULL }",
+    "generatedKey": "vanilla:timer_ball"
+  },
+  "key": "vanilla:timer_ball",
+  "itemId": "ITEM_TIMER_BALL",
+  "ballId": "BALL_TIMER",
+  "catchModifier": "10",
+  "catchModifierHook": "PokeBallApi_TimerBallCatchModifier",
+  "battleScript": "BattleScript_BallThrow",
+  "commitHook": null,
+  "flags": "0",
+  "itemIcon": "gItemIcon_TimerBall",
+  "itemPalette": "gItemIconPalette_RepeatBall",
+  "throwSprite": {
+    "sheet": "gBallGfx_Timer",
+    "palette": "gBallPal_Timer",
+    "tileTag": "GFX_TAG_TIMER_BALL",
+    "paletteTag": "GFX_TAG_TIMER_BALL",
+    "templateTable": "gBallSpriteTemplates"
+  },
+  "openAnimation": {
+    "particleSheet": "gBattleAnimSpriteGfx_Particles",
+    "particlePalette": "gBattleAnimSpritePal_CircleImpact",
+    "particleTag": "TAG_PARTICLES_TIMERBALL",
+    "animNum": "5",
+    "taskFunc": "TimerBallOpenParticleAnimation"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleFactoryPreBattleRoom_EventScript_SwapMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+    "sha1": "1a22c52bd73e3edd87503c90dddd414ef0e181f2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+    "rawScript": "fadescreen FADE_TO_BLACK\n\tfactory_swapmons\n\twaitstate\n\tgoto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_EnterBattleRoom  @ Did player keep current pokemon\n\tfactory_setswapped\n\tmsgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_YourSwapIsComplete, MSGBOX_DEFAULT\n\tgoto BattleFrontier_BattleFactoryPreBattleRoom_EventScript_EnterBattleRoom"
+  },
+  "label": "BattleFrontier_BattleFactoryPreBattleRoom_EventScript_SwapMons",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

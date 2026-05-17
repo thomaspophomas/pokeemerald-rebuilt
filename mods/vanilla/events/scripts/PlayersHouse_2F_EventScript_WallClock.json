@@ -1,0 +1,29 @@
+{
+  "id": "PlayersHouse_2F_EventScript_WallClock",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/players_house.inc",
+    "sha1": "0f3da1347500315ef212a252409f1d410b0d226c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/players_house.inc",
+    "rawScript": "goto_if_set FLAG_SET_WALL_CLOCK, PlayersHouse_2F_EventScript_CheckWallClock\n\tmsgbox PlayersHouse_2F_Text_ClockIsStopped, MSGBOX_DEFAULT\n\tcall PlayersHouse_2F_EventScript_SetWallClock\n\tdelay 30\n\tsetvar VAR_LITTLEROOT_INTRO_STATE, 6\n\tsetflag FLAG_SET_WALL_CLOCK\n\tsetflag FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_1\n\tsetflag FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_2\n\tcheckplayergender\n\tcall_if_eq VAR_RESULT, MALE, PlayersHouse_2F_EventScript_MomComesUpstairsMale\n\tcall_if_eq VAR_RESULT, FEMALE, PlayersHouse_2F_EventScript_MomComesUpstairsFemale\n\tplayse SE_EXIT\n\tremoveobject VAR_0x8008\n\treleaseall\n\tend"
+  },
+  "label": "PlayersHouse_2F_EventScript_WallClock",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/players_house.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_1",
+      "FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_2",
+      "FLAG_SET_WALL_CLOCK"
+    ],
+    "vars": [
+      "VAR_LITTLEROOT_INTRO_STATE",
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_3F_Text_GabrielleDefeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_3F/scripts.inc",
+    "sha1": "694f843b2a8c41803b3943fcf555c5a14a36d997"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_3F/scripts.inc",
+    "rawScript": ".string \"That was amazing!\\n\"\n\t.string \"You're a very special TRAINER.$\""
+  },
+  "label": "MtPyre_3F_Text_GabrielleDefeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_3F/scripts.inc",
+  "references": {}
+}

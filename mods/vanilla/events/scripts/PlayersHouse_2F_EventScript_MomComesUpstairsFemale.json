@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_2F_EventScript_MomComesUpstairsFemale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/players_house.inc",
+    "sha1": "0f3da1347500315ef212a252409f1d410b0d226c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/players_house.inc",
+    "rawScript": "setvar VAR_0x8008, LOCALID_PLAYERS_HOUSE_2F_MOM\n\taddobject VAR_0x8008\n\tapplymovement VAR_0x8008, PlayersHouse_2F_Movement_MomEntersFemale\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tmsgbox PlayersHouse_2F_Text_HowDoYouLikeYourRoom, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement VAR_0x8008, PlayersHouse_2F_Movement_MomExitsFemale\n\twaitmovement 0\n\treturn"
+  },
+  "label": "PlayersHouse_2F_EventScript_MomComesUpstairsFemale",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/players_house.inc",
+  "references": {}
+}

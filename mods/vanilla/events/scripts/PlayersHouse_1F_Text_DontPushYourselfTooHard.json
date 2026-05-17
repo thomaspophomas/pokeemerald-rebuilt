@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_1F_Text_DontPushYourselfTooHard",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "sha1": "b92e18aeb34c3856db794aa81beeec7f0f0de717"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+    "rawScript": ".string \"Don't push yourself too hard, dear.\\n\"\n\t.string \"You can always come home.\\p\"\n\t.string \"Go for it, honey!$\""
+  },
+  "label": "PlayersHouse_1F_Text_DontPushYourselfTooHard",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+  "references": {}
+}

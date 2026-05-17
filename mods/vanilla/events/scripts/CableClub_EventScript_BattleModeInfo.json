@@ -1,0 +1,19 @@
+{
+  "id": "CableClub_EventScript_BattleModeInfo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "msgbox CableClub_Text_ExplainBattleModes, MSGBOX_DEFAULT\n\tgoto CableClub_EventScript_SelectBattleMode\n\tend"
+  },
+  "label": "CableClub_EventScript_BattleModeInfo",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {}
+}

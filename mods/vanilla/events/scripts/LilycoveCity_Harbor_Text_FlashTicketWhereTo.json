@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Harbor_Text_FlashTicketWhereTo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "sha1": "ffd83f00915b03bfdd96f51950251d00dd19dbcb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "rawScript": ".string \"{PLAYER} flashed the TICKET.\\p\"\n\t.string \"Perfect! That's all you need!\\p\"\n\t.string \"And where would you like to go?$\""
+  },
+  "label": "LilycoveCity_Harbor_Text_FlashTicketWhereTo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_Harbor/scripts.inc",
+  "references": {}
+}

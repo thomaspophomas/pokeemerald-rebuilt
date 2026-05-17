@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_MayYouGoingToCollectBadges",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"{PLAYER}{KUN}, what are you going to do?\\p\"\n\t.string \"Collect all the GYM BADGES and take\\n\"\n\t.string \"the POK\u00e9MON LEAGUE challenge?\\p\"\n\t.string \"Well, while you're collecting BADGES,\\n\"\n\t.string \"{PLAYER}{KUN}, I'm going to work on my\\l\"\n\t.string \"POK\u00e9DEX. I'll complete it before you!\\p\"\n\t.string \"See you!$\""
+  },
+  "label": "LilycoveCity_Text_MayYouGoingToCollectBadges",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

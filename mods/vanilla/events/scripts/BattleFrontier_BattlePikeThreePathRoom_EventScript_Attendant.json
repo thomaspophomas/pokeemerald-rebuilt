@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeThreePathRoom_EventScript_Attendant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "sha1": "927f7bda20dae778159d88132a53038bcfb76615"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "rawScript": "frontier_get FRONTIER_DATA_BATTLE_NUM  @ Room number\n\tswitch VAR_RESULT\n\tcase 1, BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom1\n\tcase 3, BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom3\n\tcase 5, BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom5\n\tcase 7, BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom7\n\tcase 9, BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom9\n\tcase 11, BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom11\n\tcase 13, BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom13\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeThreePathRoom_EventScript_Attendant",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

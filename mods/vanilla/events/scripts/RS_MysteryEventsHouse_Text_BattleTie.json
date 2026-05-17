@@ -1,0 +1,19 @@
+{
+  "id": "RS_MysteryEventsHouse_Text_BattleTie",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_GameCorner_1F/scripts.inc",
+    "sha1": "9705268b8b1f1689ba5ce2a1488d37f1b3e28fee"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_GameCorner_1F/scripts.inc",
+    "rawScript": ".string \"So, it became a standoff.\\p\"\n\t.string \"It was a brilliant match in which\\n\"\n\t.string \"neither side conceded a step!$\""
+  },
+  "label": "RS_MysteryEventsHouse_Text_BattleTie",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_GameCorner_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePalaceBattleRoom_EventScript_AskReadyForMaven",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "sha1": "c4392c432f84fdbe0613ac4b067366a168a52056"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "rawScript": "message BattleFrontier_BattlePalaceBattleRoom_Text_ReadyForPalaceMaven\n\twaitmessage\n\tcall BattleFrontier_EventScript_GetCantRecordBattle\n\tgoto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattlePalaceBattleRoom_EventScript_AskReadyForMavenNoRecord\n\tmultichoice 19, 4, MULTI_GO_ON_RECORD_REST_RETIRE, TRUE\n\tswitch VAR_RESULT\n\tcase 0, BattleFrontier_BattlePalaceBattleRoom_EventScript_BattleSpenser\n\tcase 1, BattleFrontier_BattlePalaceBattleRoom_EventScript_AskRecordBattle\n\tcase 2, BattleFrontier_BattlePalaceBattleRoom_EventScript_AskPauseChallenge\n\tcase 3, BattleFrontier_BattlePalaceBattleRoom_EventScript_AskRetireChallenge\n\tcase MULTI_B_PRESSED, BattleFrontier_BattlePalaceBattleRoom_EventScript_AskReadyForMaven"
+  },
+  "label": "BattleFrontier_BattlePalaceBattleRoom_EventScript_AskReadyForMaven",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

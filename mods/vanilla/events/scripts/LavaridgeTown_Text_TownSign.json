@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Text_TownSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": ".string \"LAVARIDGE TOWN\\p\"\n\t.string \"\u201cPOK\u00e9MON CENTER HOT SPRINGS\\n\"\n\t.string \"An excellent place for relaxing!\u201d$\""
+  },
+  "label": "LavaridgeTown_Text_TownSign",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {}
+}

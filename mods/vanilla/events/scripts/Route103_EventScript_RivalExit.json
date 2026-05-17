@@ -1,0 +1,23 @@
+{
+  "id": "Route103_EventScript_RivalExit",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route103/scripts.inc",
+    "sha1": "cdbe6074bf0bdfa44494ccf1457b18c3de43e0de"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route103/scripts.inc",
+    "rawScript": "closemessage\n\tswitch VAR_FACING\n\tcase DIR_SOUTH, Route103_EventScript_RivalExitFacingSouth\n\tcase DIR_NORTH, Route103_EventScript_RivalExitFacingNorth\n\tcase DIR_WEST, Route103_EventScript_RivalExitFacingEastOrWest\n\tcase DIR_EAST, Route103_EventScript_RivalExitFacingEastOrWest\n\tend"
+  },
+  "label": "Route103_EventScript_RivalExit",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route103/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FACING"
+    ]
+  }
+}

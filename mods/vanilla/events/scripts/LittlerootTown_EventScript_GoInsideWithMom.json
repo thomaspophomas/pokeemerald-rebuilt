@@ -1,0 +1,28 @@
+{
+  "id": "LittlerootTown_EventScript_GoInsideWithMom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": "delay 15\n\tplayse SE_LEDGE\n\tapplymovement LOCALID_PLAYER, LittlerootTown_Movement_PlayerStepOffTruck\n\twaitmovement 0\n\topendoor VAR_0x8004, VAR_0x8005\n\twaitdooranim\n\taddobject LOCALID_LITTLEROOT_MOM\n\tapplymovement LOCALID_LITTLEROOT_MOM, LittlerootTown_Movement_MomExitHouse\n\twaitmovement 0\n\tclosedoor VAR_0x8004, VAR_0x8005\n\twaitdooranim\n\tdelay 10\n\tapplymovement LOCALID_LITTLEROOT_MOM, LittlerootTown_Movement_MomApproachPlayerAtTruck\n\twaitmovement 0\n\tmsgbox LittlerootTown_Text_OurNewHomeLetsGoInside, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_LITTLEROOT_MOM, LittlerootTown_Movement_MomApproachDoor\n\tapplymovement LOCALID_PLAYER, LittlerootTown_Movement_PlayerApproachDoor\n\twaitmovement 0\n\topendoor VAR_0x8004, VAR_0x8005\n\twaitdooranim\n\tapplymovement LOCALID_LITTLEROOT_MOM, LittlerootTown_Movement_MomEnterHouse\n\tapplymovement LOCALID_PLAYER, LittlerootTown_Movement_PlayerEnterHouse\n\twaitmovement 0\n\tsetflag FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE\n\tsetvar VAR_LITTLEROOT_INTRO_STATE, 3\n\thideplayer\n\tclosedoor VAR_0x8004, VAR_0x8005\n\twaitdooranim\n\tclearflag FLAG_HIDE_LITTLEROOT_TOWN_FAT_MAN\n\tclearflag FLAG_HIDE_MAP_NAME_POPUP\n\treturn"
+  },
+  "label": "LittlerootTown_EventScript_GoInsideWithMom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_LITTLEROOT_TOWN_FAT_MAN",
+      "FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE",
+      "FLAG_HIDE_MAP_NAME_POPUP"
+    ],
+    "vars": [
+      "VAR_LITTLEROOT_INTRO_STATE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "NewMauville_Entrance_EventScript_CloseDoor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NewMauville_Entrance/scripts.inc",
+    "sha1": "f27dc6b4117073bcedc10e2cc744e7b01086fb95"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NewMauville_Entrance/scripts.inc",
+    "rawScript": "setmetatile 3, 0, METATILE_Facility_NewMauvilleDoor_Closed_Tile0, TRUE\n\tsetmetatile 4, 0, METATILE_Facility_NewMauvilleDoor_Closed_Tile1, TRUE\n\tsetmetatile 5, 0, METATILE_Facility_NewMauvilleDoor_Closed_Tile2, TRUE\n\tsetmetatile 3, 1, METATILE_Facility_NewMauvilleDoor_Closed_Tile3, TRUE\n\tsetmetatile 4, 1, METATILE_Facility_NewMauvilleDoor_Closed_Tile4, TRUE\n\tsetmetatile 5, 1, METATILE_Facility_NewMauvilleDoor_Closed_Tile5, TRUE\n\treturn"
+  },
+  "label": "NewMauville_Entrance_EventScript_CloseDoor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/NewMauville_Entrance/scripts.inc",
+  "references": {}
+}

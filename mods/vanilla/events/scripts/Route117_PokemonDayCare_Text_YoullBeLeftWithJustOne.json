@@ -1,0 +1,19 @@
+{
+  "id": "Route117_PokemonDayCare_Text_YoullBeLeftWithJustOne",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/day_care.inc",
+    "sha1": "b807399ab522de3ba938194e85f890a343362752"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/day_care.inc",
+    "rawScript": ".string \"Huh?\\n\"\n\t.string \"Now, now.\\p\"\n\t.string \"If you leave that POK\u00e9MON with\\n\"\n\t.string \"me, you'll be left with just one.\\p\"\n\t.string \"You will be better off if you catch\\n\"\n\t.string \"some more, I dare say.$\""
+  },
+  "label": "Route117_PokemonDayCare_Text_YoullBeLeftWithJustOne",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/day_care.inc",
+  "references": {}
+}

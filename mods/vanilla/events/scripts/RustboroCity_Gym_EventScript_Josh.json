@@ -1,0 +1,23 @@
+{
+  "id": "RustboroCity_Gym_EventScript_Josh",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Gym/scripts.inc",
+    "sha1": "e0aa9de4fed612674104e48c7646854400dcecde"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Gym/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_JOSH, RustboroCity_Gym_Text_JoshIntro, RustboroCity_Gym_Text_JoshDefeat\n\tmsgbox RustboroCity_Gym_Text_JoshPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "RustboroCity_Gym_EventScript_Josh",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_Gym/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_JOSH"
+    ]
+  }
+}

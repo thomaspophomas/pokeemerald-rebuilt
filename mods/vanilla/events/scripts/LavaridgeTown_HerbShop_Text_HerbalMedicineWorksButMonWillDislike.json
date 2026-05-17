@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_HerbShop_Text_HerbalMedicineWorksButMonWillDislike",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+    "sha1": "ed83c75f66b27defc898c3be46549255ef12185c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+    "rawScript": ".string \"Herbal medicine works impressively well.\\n\"\n\t.string \"But your POK\u00e9MON will dislike you for it.\\l\"\n\t.string \"It must be horribly bitter!$\""
+  },
+  "label": "LavaridgeTown_HerbShop_Text_HerbalMedicineWorksButMonWillDislike",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown_HerbShop/scripts.inc",
+  "references": {}
+}

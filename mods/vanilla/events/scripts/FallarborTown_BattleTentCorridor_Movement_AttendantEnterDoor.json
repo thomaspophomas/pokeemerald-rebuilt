@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_BattleTentCorridor_Movement_AttendantEnterDoor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+    "sha1": "163b9c21282cae11ce5f396c305aff448fc9ab48"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+    "rawScript": "walk_up\n\tset_invisible\n\tstep_end\n\n@ Leftover text from when this was a Contest Hall in R/S\n@ Unused"
+  },
+  "label": "FallarborTown_BattleTentCorridor_Movement_AttendantEnterDoor",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+  "references": {}
+}

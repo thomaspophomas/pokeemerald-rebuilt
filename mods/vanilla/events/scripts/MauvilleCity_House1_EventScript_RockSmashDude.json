@@ -1,0 +1,27 @@
+{
+  "id": "MauvilleCity_House1_EventScript_RockSmashDude",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_House1/scripts.inc",
+    "sha1": "2d2b0f74cde450b8e601ae7d75ea888588a68e66"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_House1/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_HM_ROCK_SMASH, MauvilleCity_House1_EventScript_ReceivedRockSmash\n\tmsgbox MauvilleCity_House1_Text_ImRockSmashDudeTakeThis, MSGBOX_DEFAULT\n\tgiveitem ITEM_HM_ROCK_SMASH\n\tsetflag FLAG_RECEIVED_HM_ROCK_SMASH\n\tsetflag FLAG_HIDE_ROUTE_111_ROCK_SMASH_TIP_GUY\n\tmsgbox MauvilleCity_House1_Text_ExplainRockSmash, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "MauvilleCity_House1_EventScript_RockSmashDude",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_House1/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_ROUTE_111_ROCK_SMASH_TIP_GUY",
+      "FLAG_RECEIVED_HM_ROCK_SMASH"
+    ],
+    "items": [
+      "ITEM_HM_ROCK_SMASH"
+    ]
+  }
+}

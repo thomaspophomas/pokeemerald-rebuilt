@@ -1,0 +1,23 @@
+{
+  "id": "FallarborTown_PokemonCenter_1F_EventScript_Lanette",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_PokemonCenter_1F/scripts.inc",
+    "sha1": "1f48e8d40f8ba3b6123d3e45ff7292df588ad7dd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_PokemonCenter_1F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmsgbox FallarborTown_PokemonCenter_1F_Text_LanetteGreeting, MSGBOX_DEFAULT\n\tclosemessage\n\tswitch VAR_FACING\n\tcase DIR_NORTH, FallarborTown_PokemonCenter_1F_EventScript_LanetteExitNorth\n\tcase DIR_WEST, FallarborTown_PokemonCenter_1F_EventScript_LanetteExitWest\n\tend"
+  },
+  "label": "FallarborTown_PokemonCenter_1F_EventScript_Lanette",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_PokemonCenter_1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FACING"
+    ]
+  }
+}

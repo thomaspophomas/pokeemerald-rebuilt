@@ -1,0 +1,24 @@
+{
+  "id": "EventScript_PickUpItem",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/obtain_item.inc",
+    "sha1": "53094705147ea153e40933cbc7f9cbe653e2a59b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/obtain_item.inc",
+    "rawScript": "removeobject VAR_LAST_TALKED\n\tadditem VAR_0x8004, VAR_0x8005\n\tspecialvar VAR_RESULT, BufferTMHMMoveName\n\tcopyvar VAR_0x8008, VAR_RESULT\n\tcall_if_eq VAR_0x8008, TRUE, EventScript_FoundTMHM\n\tcall_if_eq VAR_0x8008, FALSE, EventScript_FoundItem\n\twaitfanfare\n\twaitmessage\n\tbufferitemnameplural STR_VAR_2, VAR_0x8004, VAR_0x8005\n\tpyramid_getlocation\n\tgoto_if_eq VAR_RESULT, PYRAMID_LOCATION_FLOOR, EventScript_PutBattlePyramidItemInBag\n\tmsgbox gText_PutItemInPocket, MSGBOX_DEFAULT\n\treturn"
+  },
+  "label": "EventScript_PickUpItem",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/obtain_item.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ]
+  }
+}

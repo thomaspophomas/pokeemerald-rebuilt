@@ -1,0 +1,23 @@
+{
+  "id": "SSTidalCorridor_EventScript_ReachedStepCount",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalCorridor/scripts.inc",
+    "sha1": "02d0cfdd4cf17b1fcf50d838485aaf7013da6b13"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalCorridor/scripts.inc",
+    "rawScript": "goto_if_eq VAR_SS_TIDAL_STATE, SS_TIDAL_DEPART_SLATEPORT, SSTidalCorridor_EventScript_HalfwayToLilycove\n\tgoto_if_eq VAR_SS_TIDAL_STATE, SS_TIDAL_HALFWAY_SLATEPORT, SSTidalCorridor_EventScript_ArrivedInSlateport\n\tend"
+  },
+  "label": "SSTidalCorridor_EventScript_ReachedStepCount",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SSTidalCorridor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_SS_TIDAL_STATE"
+    ]
+  }
+}

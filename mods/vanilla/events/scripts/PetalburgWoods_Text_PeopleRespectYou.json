@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgWoods_Text_PeopleRespectYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/scripts.inc",
+    "sha1": "a7a3b49731f97088b328145805430d4429326ec8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgWoods/scripts.inc",
+    "rawScript": ".string \"If you have a big BUG POK\u00e9MON,\\n\"\n\t.string \"people respect you for it.$\""
+  },
+  "label": "PetalburgWoods_Text_PeopleRespectYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgWoods/scripts.inc",
+  "references": {}
+}

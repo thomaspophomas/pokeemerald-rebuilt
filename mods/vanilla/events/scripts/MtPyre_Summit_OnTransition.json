@@ -1,0 +1,23 @@
+{
+  "id": "MtPyre_Summit_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/scripts.inc",
+    "sha1": "2d98d572d50cebb678d972aa421854c983329822"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Summit/scripts.inc",
+    "rawScript": "call_if_eq VAR_MT_PYRE_STATE, 2, MtPyre_Summit_EventScript_SetArchieMaxiePositions\n\tend"
+  },
+  "label": "MtPyre_Summit_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/MtPyre_Summit/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_MT_PYRE_STATE"
+    ]
+  }
+}

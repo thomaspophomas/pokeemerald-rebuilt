@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleArenaLobby_EventScript_NotEnoughValidMonsLv50",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "sha1": "9504bb75bdf62b80271e2304b4804044c8db502a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLv50, MSGBOX_DEFAULT\n\tgoto BattleFrontier_BattleArenaLobby_EventScript_EndCancelChallenge"
+  },
+  "label": "BattleFrontier_BattleArenaLobby_EventScript_NotEnoughValidMonsLv50",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+  "references": {}
+}

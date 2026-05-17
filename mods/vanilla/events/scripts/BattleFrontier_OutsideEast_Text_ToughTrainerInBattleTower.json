@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideEast_Text_ToughTrainerInBattleTower",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "sha1": "daab3e530c74c286237faa58f280f11ef97e663a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "rawScript": ".string \"This guy ran into a horribly tough\\n\"\n\t.string \"TRAINER while he was on the BATTLE\\l\"\n\t.string \"TOWER challenge.\\p\"\n\t.string \"Now look at him\u2026\\p\"\n\t.string \"You need to be cautious if you ever\\n\"\n\t.string \"decide to go to the BATTLE TOWER.$\""
+  },
+  "label": "BattleFrontier_OutsideEast_Text_ToughTrainerInBattleTower",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+  "references": {}
+}

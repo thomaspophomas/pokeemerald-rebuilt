@@ -1,0 +1,23 @@
+{
+  "id": "Route126_EventScript_Nikki",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route126/scripts.inc",
+    "sha1": "d5025a30fc24eea63ccab29344d229eadf43769b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route126/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_NIKKI, Route126_Text_NikkiIntro, Route126_Text_NikkiDefeat\n\tmsgbox Route126_Text_NikkiPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route126_EventScript_Nikki",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route126/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_NIKKI"
+    ]
+  }
+}

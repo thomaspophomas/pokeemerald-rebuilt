@@ -1,0 +1,19 @@
+{
+  "id": "Route102_Text_LetsGoBack",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route102/scripts.inc",
+    "sha1": "17c4403137bc871caf964a4fed8e5efc79316b34"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route102/scripts.inc",
+    "rawScript": ".string \"{PLAYER}, thank you!\\n\"\n\t.string \"Let's go back to the GYM!$\""
+  },
+  "label": "Route102_Text_LetsGoBack",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route102/scripts.inc",
+  "references": {}
+}

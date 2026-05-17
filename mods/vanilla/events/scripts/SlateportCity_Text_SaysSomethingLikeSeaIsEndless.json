@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Text_SaysSomethingLikeSeaIsEndless",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": ".string \"Let's see\u2026\\p\"\n\t.string \"Um\u2026 I think it says something like\\n\"\n\t.string \"\u201cthe life in the sea is endless.\u201d\\p\"\n\t.string \"Yup, I'm pretty sure that's what\\n\"\n\t.string \"it says.$\""
+  },
+  "label": "SlateportCity_Text_SaysSomethingLikeSeaIsEndless",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {}
+}

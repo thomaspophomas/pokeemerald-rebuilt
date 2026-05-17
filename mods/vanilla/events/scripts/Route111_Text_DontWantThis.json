@@ -1,0 +1,19 @@
+{
+  "id": "Route111_Text_DontWantThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/secret_power_tm.inc",
+    "sha1": "afb46c8c367fcf33e1c13eac27a989305d7f76f2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/secret_power_tm.inc",
+    "rawScript": ".string \"Oh, you don't want this?\\n\"\n\t.string \"If you change your mind, tell me, okay?$\""
+  },
+  "label": "Route111_Text_DontWantThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/secret_power_tm.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "PetalburgCity_Mart_EventScript_Clerk",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Mart/scripts.inc",
+    "sha1": "24d08ff30f80ab3ca9bbc615acb31bc95359ba3b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Mart/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmessage gText_HowMayIServeYou\n\twaitmessage\n\tgoto_if_set FLAG_PETALBURG_MART_EXPANDED_ITEMS, PetalburgCity_Mart_EventScript_ExpandedItems\n\tpokemart PetalburgCity_Mart_Pokemart_Basic\n\tmsgbox gText_PleaseComeAgain, MSGBOX_DEFAULT\n\trelease\n\tend\n\n\t.align 2"
+  },
+  "label": "PetalburgCity_Mart_EventScript_Clerk",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgCity_Mart/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_PETALBURG_MART_EXPANDED_ITEMS"
+    ]
+  }
+}

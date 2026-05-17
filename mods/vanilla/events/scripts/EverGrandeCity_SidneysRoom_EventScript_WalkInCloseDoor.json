@@ -1,0 +1,23 @@
+{
+  "id": "EverGrandeCity_SidneysRoom_EventScript_WalkInCloseDoor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+    "sha1": "557570a48b33cd8590cd2a5ef0ed11ae09a3448a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+    "rawScript": "lockall\n\tcall PokemonLeague_EliteFour_EventScript_WalkInCloseDoor\n\tsetvar VAR_ELITE_4_STATE, 1\n\treleaseall\n\tend"
+  },
+  "label": "EverGrandeCity_SidneysRoom_EventScript_WalkInCloseDoor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_ELITE_4_STATE"
+    ]
+  }
+}

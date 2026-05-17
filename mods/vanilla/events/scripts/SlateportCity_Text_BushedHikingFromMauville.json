@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Text_BushedHikingFromMauville",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": ".string \"Whew\u2026 I'm just bushed\u2026\\p\"\n\t.string \"I hiked over from MAUVILLE CITY.\\n\"\n\t.string \"But, boy, this city's huge.\\p\"\n\t.string \"If I'd known this, I would've ridden\\n\"\n\t.string \"my BIKE here.$\""
+  },
+  "label": "SlateportCity_Text_BushedHikingFromMauville",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {}
+}

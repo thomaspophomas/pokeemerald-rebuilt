@@ -1,0 +1,26 @@
+{
+  "id": "PetalburgWoods_EventScript_DevonResearcherPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/scripts.inc",
+    "sha1": "a7a3b49731f97088b328145805430d4429326ec8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgWoods/scripts.inc",
+    "rawScript": "msgbox PetalburgWoods_Text_YouveGotSomeNerve, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaRunAway\n\twaitmovement 0\n\tremoveobject LOCALID_PETALBURG_WOODS_GRUNT\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tmsgbox PetalburgWoods_Text_ThatWasAwfullyClose, MSGBOX_DEFAULT\n\tgiveitem ITEM_GREAT_BALL\n\tgoto_if_eq VAR_RESULT, FALSE, PetalburgWoods_EventScript_BagFull\n\tgoto PetalburgWoods_EventScript_DevonResearcherFinish\n\tend"
+  },
+  "label": "PetalburgWoods_EventScript_DevonResearcherPostBattle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgWoods/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_GREAT_BALL"
+    ]
+  }
+}

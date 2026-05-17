@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideEast_Text_PeopleCallMeBusybody",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "sha1": "daab3e530c74c286237faa58f280f11ef97e663a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "rawScript": ".string \"People call me a busybody,\\n\"\n\t.string \"but I can't help it.\\p\"\n\t.string \"Your hat's on crooked!\\n\"\n\t.string \"Oh, no, trash on the ground!\\l\"\n\t.string \"Oops, it's almost dinnertime!\\p\"\n\t.string \"I don't know if I can stand to just\\n\"\n\t.string \"watch at the BATTLE PALACE\u2026$\""
+  },
+  "label": "BattleFrontier_OutsideEast_Text_PeopleCallMeBusybody",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+  "references": {}
+}

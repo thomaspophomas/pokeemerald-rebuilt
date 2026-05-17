@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideEast_Text_ConquerLeagueAndFrontier",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "sha1": "daab3e530c74c286237faa58f280f11ef97e663a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "rawScript": ".string \"My grand ambition is to conquer both\\n\"\n\t.string \"the BATTLE FRONTIER and the POK\u00e9MON\\l\"\n\t.string \"LEAGUE.\\p\"\n\t.string \"And if my dream comes true\u2026\\p\"\n\t.string \"I\u2026 I'm going to ask MIMI next door\\n\"\n\t.string \"if she will be friends with me!$\""
+  },
+  "label": "BattleFrontier_OutsideEast_Text_ConquerLeagueAndFrontier",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Route117_PokemonDayCare_Text_WouldYouLikeUsToRaiseAMon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/day_care.inc",
+    "sha1": "b807399ab522de3ba938194e85f890a343362752"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/day_care.inc",
+    "rawScript": ".string \"I'm the DAY-CARE LADY.\\p\"\n\t.string \"We can raise POK\u00e9MON for you.\\p\"\n\t.string \"Would you like us to raise one?$\""
+  },
+  "label": "Route117_PokemonDayCare_Text_WouldYouLikeUsToRaiseAMon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/day_care.inc",
+  "references": {}
+}

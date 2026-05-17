@@ -1,0 +1,19 @@
+{
+  "id": "RusturfTunnel_Text_PeekoGladToSeeYouSafe",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/scripts.inc",
+    "sha1": "76035185b0aabddf11657305417168db4c1bb93d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RusturfTunnel/scripts.inc",
+    "rawScript": ".string \"PEEKO!\\n\"\n\t.string \"Am I glad to see you're safe!$\""
+  },
+  "label": "RusturfTunnel_Text_PeekoGladToSeeYouSafe",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RusturfTunnel/scripts.inc",
+  "references": {}
+}

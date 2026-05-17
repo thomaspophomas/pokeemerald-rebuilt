@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleDomeLobby_Text_ExplainMatchupRules",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "sha1": "c5673b719ade6a47e6fe1e3055270ca454748cfd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "rawScript": ".string \"The tournament matchups are drawn up\\n\"\n\t.string \"based on the toughness of POK\u00e9MON\\l\"\n\t.string \"held by TRAINERS.\\p\"\n\t.string \"The matchups avoid having tough\\n\"\n\t.string \"TRAINERS face each other right away.$\""
+  },
+  "label": "BattleFrontier_BattleDomeLobby_Text_ExplainMatchupRules",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+  "references": {}
+}

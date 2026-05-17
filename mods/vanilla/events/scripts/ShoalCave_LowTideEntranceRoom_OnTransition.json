@@ -1,0 +1,23 @@
+{
+  "id": "ShoalCave_LowTideEntranceRoom_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ShoalCave_LowTideEntranceRoom/scripts.inc",
+    "sha1": "1413cd55fcba731c9d6b5315421f4e6fc8f26289"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ShoalCave_LowTideEntranceRoom/scripts.inc",
+    "rawScript": "special UpdateShoalTideFlag\n\tgoto_if_set FLAG_SYS_SHOAL_TIDE, ShoalCave_LowTideEntranceRoom_EventScript_SetHighTide\n\tgoto ShoalCave_LowTideEntranceRoom_EventScript_SetLowTide"
+  },
+  "label": "ShoalCave_LowTideEntranceRoom_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/ShoalCave_LowTideEntranceRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_SHOAL_TIDE"
+    ]
+  }
+}

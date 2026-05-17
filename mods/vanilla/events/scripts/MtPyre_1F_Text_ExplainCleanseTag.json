@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_1F_Text_ExplainCleanseTag",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_1F/scripts.inc",
+    "sha1": "fb767551d4d8fa906d9226adf1aabd795c630e6b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_1F/scripts.inc",
+    "rawScript": ".string \"Have a POK\u00e9MON hold that\\n\"\n\t.string \"CLEANSE TAG.\\p\"\n\t.string \"It will help ward off wild POK\u00e9MON.$\""
+  },
+  "label": "MtPyre_1F_Text_ExplainCleanseTag",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_1F/scripts.inc",
+  "references": {}
+}

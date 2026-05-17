@@ -1,0 +1,23 @@
+{
+  "id": "SootopolisCity_Gym_1F_EventScript_FallThroughIce",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "sha1": "cd5ddf90f8e2b0931828078295732db5c87d2dae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "rawScript": "lockall\n\tdelay 20\n\tapplymovement LOCALID_PLAYER, SootopolisCity_Gym_1F_Movement_FallThroughIce\n\twaitmovement 0\n\tplayse SE_FALL\n\tdelay 60\n\twarphole MAP_SOOTOPOLIS_CITY_GYM_B1F\n\twaitstate\n\tend"
+  },
+  "label": "SootopolisCity_Gym_1F_EventScript_FallThroughIce",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SOOTOPOLIS_CITY_GYM_B1F"
+    ]
+  }
+}

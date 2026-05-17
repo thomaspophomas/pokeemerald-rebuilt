@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "sha1": "155fc7f1cee833cb06df85a407e5f98f216a928e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "rawScript": ".string \"SCOTT: Hmm\u2026\\p\"\n\t.string \"The talent levels of the students here\\n\"\n\t.string \"are unknown. The potential's there.$\""
+  },
+  "label": "RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+  "references": {}
+}

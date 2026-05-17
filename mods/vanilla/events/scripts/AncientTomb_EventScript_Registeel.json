@@ -1,0 +1,27 @@
+{
+  "id": "AncientTomb_EventScript_Registeel",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AncientTomb/scripts.inc",
+    "sha1": "57ee4b1313324882be319adf4cbdef89f090204c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AncientTomb/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\twaitse\n\tplaymoncry SPECIES_REGISTEEL, CRY_MODE_ENCOUNTER\n\tdelay 40\n\twaitmoncry\n\tsetwildbattle SPECIES_REGISTEEL, 40\n\tsetflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecial StartRegiBattle\n\tclearflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_WON, AncientTomb_EventScript_DefeatedRegisteel\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_RAN, AncientTomb_EventScript_RanFromRegisteel\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, AncientTomb_EventScript_RanFromRegisteel\n\tsetflag FLAG_DEFEATED_REGISTEEL\n\trelease\n\tend"
+  },
+  "label": "AncientTomb_EventScript_Registeel",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AncientTomb/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_REGISTEEL",
+      "FLAG_SYS_CTRL_OBJ_DELETE"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

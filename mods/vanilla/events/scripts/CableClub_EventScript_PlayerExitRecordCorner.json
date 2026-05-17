@@ -1,0 +1,23 @@
+{
+  "id": "CableClub_EventScript_PlayerExitRecordCorner",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "special CloseLink\n\tsetvar VAR_CABLE_CLUB_STATE, 0\n\tapplymovement LOCALID_PLAYER, Movement_PlayerExitLinkRoom\n\twaitmovement 0\n\tgoto_if_eq VAR_0x8007, 0, CableClub_EventScript_ExitRecordCornerRet\n\tapplymovement VAR_0x8007, Movement_AttendantFaceDown\n\twaitmovement 0"
+  },
+  "label": "CableClub_EventScript_PlayerExitRecordCorner",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {
+    "vars": [
+      "VAR_CABLE_CLUB_STATE"
+    ]
+  }
+}

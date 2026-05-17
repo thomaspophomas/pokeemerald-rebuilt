@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc",
+    "sha1": "1c31f94c3331fa62c92524841334a9b9b0a050ac"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmessage gText_HowMayIServeYou\n\twaitmessage\n\tpokemart LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs\n\tmsgbox gText_PleaseComeAgain, MSGBOX_DEFAULT\n\trelease\n\tend\n\n\t.align 2"
+  },
+  "label": "LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc",
+  "references": {}
+}

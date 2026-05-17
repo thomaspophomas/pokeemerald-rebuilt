@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_BikeShop_EventScript_AskSwitchBikes",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "sha1": "31396febb84a2b48608ca32d5a0dd0de865faf26"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+    "rawScript": "msgbox MauvilleCity_BikeShop_Text_WantToSwitchBikes, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, MauvilleCity_BikeShop_EventScript_SwitchBikes\n\tgoto_if_eq VAR_RESULT, NO, MauvilleCity_BikeShop_EventScript_KeepBike\n\tend\n\n@ If the player does not have a bike on them Rydel assumes its stored in the PC"
+  },
+  "label": "MauvilleCity_BikeShop_EventScript_AskSwitchBikes",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_BikeShop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

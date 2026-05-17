@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge8_Text_ToldMeIHaveTalentForBattling",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge8/scripts.inc",
+    "sha1": "645530e958a54b4ac429c03f81abce888272e486"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge8/scripts.inc",
+    "rawScript": ".string \"At the BATTLE TOWER, an older girl\\n\"\n\t.string \"told me that I have a lot of talent\\l\"\n\t.string \"for battling!\\p\"\n\t.string \"I like POK\u00e9MON CONTESTS more!\\p\"\n\t.string \"But I'm no good at CONTESTS!\\p\"\n\t.string \"I guess having talent and liking\\n\"\n\t.string \"something aren't the same.$\""
+  },
+  "label": "BattleFrontier_Lounge8_Text_ToldMeIHaveTalentForBattling",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge8/scripts.inc",
+  "references": {}
+}

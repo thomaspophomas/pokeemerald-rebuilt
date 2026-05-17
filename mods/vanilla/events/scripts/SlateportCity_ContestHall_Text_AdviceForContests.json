@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_ContestHall_Text_AdviceForContests",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_BattleTentCorridor/scripts.inc",
+    "sha1": "6c49213213fbc0031669e8a364dc312cbe989a7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_BattleTentCorridor/scripts.inc",
+    "rawScript": ".string \"Want a tasty little bit of advice\\n\"\n\t.string \"for CONTESTS?\\p\"\n\t.string \"Using a certain move after another\\n\"\n\t.string \"certain kind of move sometimes gets\\l\"\n\t.string \"you extra attention.\\p\"\n\t.string \"If you know what you're doing,\\n\"\n\t.string \"you can score big in appeal.\\p\"\n\t.string \"Of course, your opponents might try\\n\"\n\t.string \"disrupting your POK\u00e9MON's showing.$\"\n\n@ Unused"
+  },
+  "label": "SlateportCity_ContestHall_Text_AdviceForContests",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_BattleTentCorridor/scripts.inc",
+  "references": {}
+}

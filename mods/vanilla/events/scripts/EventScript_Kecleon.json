@@ -1,0 +1,26 @@
+{
+  "id": "EventScript_Kecleon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/kecleon.inc",
+    "sha1": "853d51ea059b0385e54680a0e8673b749de3efc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/kecleon.inc",
+    "rawScript": "checkitem ITEM_DEVON_SCOPE\n\tgoto_if_eq VAR_RESULT, TRUE, EventScript_AskUseDevonScope\n\tmsgbox Kecleon_Text_SomethingUnseeable, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "EventScript_Kecleon",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/kecleon.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_DEVON_SCOPE"
+    ]
+  }
+}

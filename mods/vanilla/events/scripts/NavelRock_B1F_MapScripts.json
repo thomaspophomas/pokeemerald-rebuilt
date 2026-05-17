@@ -1,0 +1,19 @@
+{
+  "id": "NavelRock_B1F_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NavelRock_B1F/scripts.inc",
+    "sha1": "0d5bf24e5ec3b9280b12d3b7e49aadae1dee0c3d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NavelRock_B1F/scripts.inc",
+    "rawScript": ".byte 0"
+  },
+  "label": "NavelRock_B1F_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/NavelRock_B1F/scripts.inc",
+  "references": {}
+}

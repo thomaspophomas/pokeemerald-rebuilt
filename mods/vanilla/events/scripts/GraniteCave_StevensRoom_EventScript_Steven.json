@@ -1,0 +1,32 @@
+{
+  "id": "GraniteCave_StevensRoom_EventScript_Steven",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/GraniteCave_StevensRoom/scripts.inc",
+    "sha1": "d6ee0122ad78c2332db89dbd8efa2a788f6bd86e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/GraniteCave_StevensRoom/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmsgbox GraniteCave_StevensRoom_Text_ImStevenLetterForMe, MSGBOX_DEFAULT\n\tsetvar VAR_0x8004, ITEM_LETTER\n\tcall Common_EventScript_PlayerHandedOverTheItem\n\tsetflag FLAG_DELIVERED_STEVEN_LETTER\n\tmsgbox GraniteCave_StevensRoom_Text_ThankYouTakeThis, MSGBOX_DEFAULT\n\tgiveitem ITEM_TM_STEEL_WING\n\tcall_if_eq VAR_RESULT, FALSE, GraniteCave_StevensRoom_EventScript_BagFull\n\tmsgbox GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister, MSGBOX_DEFAULT\n\tclosemessage\n\tdelay 30\n\tplayfanfare MUS_REGISTER_MATCH_CALL\n\tmsgbox GraniteCave_StevensRoom_Text_RegisteredSteven, MSGBOX_DEFAULT\n\twaitfanfare\n\tclosemessage\n\tdelay 30\n\tsetflag FLAG_REGISTERED_STEVEN_POKENAV\n\tmsgbox GraniteCave_StevensRoom_Text_IveGotToHurryAlong, MSGBOX_DEFAULT\n\tclosemessage\n\tcall_if_eq VAR_FACING, DIR_NORTH, GraniteCave_StevensRoom_EventScript_StevenExitNorth\n\tcall_if_eq VAR_FACING, DIR_SOUTH, GraniteCave_StevensRoom_EventScript_StevenExitSouth\n\tcall_if_eq VAR_FACING, DIR_WEST, GraniteCave_StevensRoom_EventScript_StevenExitWestEast\n\tcall_if_eq VAR_FACING, DIR_EAST, GraniteCave_StevensRoom_EventScript_StevenExitWestEast\n\tplayse SE_EXIT\n\tremoveobject LOCALID_GRANITE_CAVE_STEVEN\n\trelease\n\tend"
+  },
+  "label": "GraniteCave_StevensRoom_EventScript_Steven",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/GraniteCave_StevensRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DELIVERED_STEVEN_LETTER",
+      "FLAG_REGISTERED_STEVEN_POKENAV"
+    ],
+    "vars": [
+      "VAR_FACING",
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_LETTER",
+      "ITEM_TM_STEEL_WING"
+    ]
+  }
+}

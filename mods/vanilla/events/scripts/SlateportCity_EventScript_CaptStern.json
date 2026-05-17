@@ -1,0 +1,32 @@
+{
+  "id": "SlateportCity_EventScript_CaptStern",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": "lockall\n\tmsgbox SlateportCity_Text_SternMoveAheadWithExploration, MSGBOX_DEFAULT\n\tmsgbox SlateportCity_Text_GabbyWonderfulThanksForInterview, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_SLATEPORT_GABBY, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\tdelay 10\n\tapplymovement LOCALID_SLATEPORT_TY, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tdelay 25\n\tapplymovement LOCALID_SLATEPORT_CAPT_STERN, SlateportCity_Movement_SternWatchGabbyAndTyExit\n\tapplymovement LOCALID_PLAYER, SlateportCity_Movement_PlayerFaceStern\n\tapplymovement LOCALID_SLATEPORT_GABBY, SlateportCity_Movement_GabbyExit\n\tapplymovement LOCALID_SLATEPORT_TY, SlateportCity_Movement_TyExit\n\twaitmovement 0\n\tremoveobject LOCALID_SLATEPORT_GABBY\n\tremoveobject LOCALID_SLATEPORT_TY\n\tmsgbox SlateportCity_Text_SternWhewFirstInterview, MSGBOX_DEFAULT\n\tapplymovement LOCALID_SLATEPORT_CAPT_STERN, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tmsgbox SlateportCity_Text_OhPlayerWeMadeDiscovery, MSGBOX_DEFAULT\n\tplaybgm MUS_ENCOUNTER_AQUA, FALSE\n\tmsgbox SlateportCity_Text_AquaWillAssumeControlOfSubmarine, MSGBOX_DEFAULT\n\tapplymovement LOCALID_SLATEPORT_COOK, Common_Movement_WalkInPlaceFasterLeft\n\tapplymovement LOCALID_SLATEPORT_FAT_MAN, Common_Movement_WalkInPlaceFasterLeft\n\tapplymovement LOCALID_SLATEPORT_OLD_WOMAN, SlateportCity_Movement_OldWomanConcern\n\tapplymovement LOCALID_SLATEPORT_RICH_BOY, Common_Movement_QuestionMark\n\tapplymovement LOCALID_SLATEPORT_MAN_1, SlateportCity_Movement_ManConcern\n\twaitmovement 0\n\tapplymovement LOCALID_SLATEPORT_CAPT_STERN, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tmsgbox SlateportCity_Text_SternWhatWasAllThat, MSGBOX_DEFAULT\n\tplayse SE_PIN\n\tapplymovement LOCALID_SLATEPORT_CAPT_STERN, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_SLATEPORT_CAPT_STERN, Common_Movement_Delay48\n\twaitmovement 0\n\tapplymovement LOCALID_SLATEPORT_CAPT_STERN, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tmsgbox SlateportCity_Text_FromHarborTryingToTakeSub, MSGBOX_DEFAULT\n\tmsgbox SlateportCity_Text_PleaseComeWithMe, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_SLATEPORT_CAPT_STERN, SlateportCity_Movement_SternEnterHarbor\n\tapplymovement LOCALID_PLAYER, SlateportCity_Movement_PlayerEnterHarbor\n\twaitmovement 0\n\tremoveobject LOCALID_SLATEPORT_CAPT_STERN\n\tclearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_CAPTAIN_STERN\n\tclearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_SUBMARINE_SHADOW\n\tclearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_AQUA_GRUNT\n\tclearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_ARCHIE\n\tsetvar VAR_SLATEPORT_CITY_STATE, 2\n\twarp MAP_SLATEPORT_CITY_HARBOR, 11, 14\n\twaitstate\n\treleaseall\n\tend"
+  },
+  "label": "SlateportCity_EventScript_CaptStern",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_SLATEPORT_CITY_HARBOR_AQUA_GRUNT",
+      "FLAG_HIDE_SLATEPORT_CITY_HARBOR_ARCHIE",
+      "FLAG_HIDE_SLATEPORT_CITY_HARBOR_CAPTAIN_STERN",
+      "FLAG_HIDE_SLATEPORT_CITY_HARBOR_SUBMARINE_SHADOW"
+    ],
+    "vars": [
+      "VAR_SLATEPORT_CITY_STATE"
+    ],
+    "maps": [
+      "MAP_SLATEPORT_CITY_HARBOR"
+    ]
+  }
+}

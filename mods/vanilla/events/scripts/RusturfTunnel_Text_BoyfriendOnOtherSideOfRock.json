@@ -1,0 +1,19 @@
+{
+  "id": "RusturfTunnel_Text_BoyfriendOnOtherSideOfRock",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/scripts.inc",
+    "sha1": "76035185b0aabddf11657305417168db4c1bb93d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RusturfTunnel/scripts.inc",
+    "rawScript": ".string \"On the other side of this rock\u2026\\n\"\n\t.string \"My boyfriend is there.\\p\"\n\t.string \"He\u2026 He's not just digging the tunnel\\n\"\n\t.string \"to come see me.\\p\"\n\t.string \"He works his hands raw and rough\\n\"\n\t.string \"for the benefit of everyone.$\""
+  },
+  "label": "RusturfTunnel_Text_BoyfriendOnOtherSideOfRock",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RusturfTunnel/scripts.inc",
+  "references": {}
+}

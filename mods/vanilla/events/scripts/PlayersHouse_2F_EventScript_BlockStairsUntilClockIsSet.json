@@ -1,0 +1,23 @@
+{
+  "id": "PlayersHouse_2F_EventScript_BlockStairsUntilClockIsSet",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/players_house.inc",
+    "sha1": "0f3da1347500315ef212a252409f1d410b0d226c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/players_house.inc",
+    "rawScript": "setvar VAR_LITTLEROOT_INTRO_STATE, 5\n\treturn"
+  },
+  "label": "PlayersHouse_2F_EventScript_BlockStairsUntilClockIsSet",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/players_house.inc",
+  "references": {
+    "vars": [
+      "VAR_LITTLEROOT_INTRO_STATE"
+    ]
+  }
+}

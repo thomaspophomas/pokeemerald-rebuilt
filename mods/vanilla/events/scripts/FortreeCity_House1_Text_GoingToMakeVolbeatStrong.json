@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_House1_Text_GoingToMakeVolbeatStrong",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_House1/scripts.inc",
+    "sha1": "73fe39f834d30cb9e5eb946dc3e0a824ee7e8c6f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_House1/scripts.inc",
+    "rawScript": ".string \"I'm going to make VOLBEAT super\\n\"\n\t.string \"strong from this moment on!\\p\"\n\t.string \"I hope you do the same with PLUSLE!$\""
+  },
+  "label": "FortreeCity_House1_Text_GoingToMakeVolbeatStrong",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_House1/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Ferry_Movement_DepartIslandBoardSouth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SouthernIsland_Exterior/scripts.inc",
+    "sha1": "8637a36ea5ce0ef3626f2af51ae9d5c7c832381b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SouthernIsland_Exterior/scripts.inc",
+    "rawScript": "walk_down\n\tstep_end"
+  },
+  "label": "Ferry_Movement_DepartIslandBoardSouth",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/SouthernIsland_Exterior/scripts.inc",
+  "references": {}
+}

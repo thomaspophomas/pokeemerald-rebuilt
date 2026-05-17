@@ -1,0 +1,23 @@
+{
+  "id": "ContestHall_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ContestHall/scripts.inc",
+    "sha1": "1975dda1f6df6ad0ef2b0d81c28afe4508469870"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ContestHall/scripts.inc",
+    "rawScript": "call ContestHall_EventScript_ReadyContestMusic\n\tsetvar VAR_TEMP_0, 1\n\tcall ContestHall_EventScript_AddRandomAudienceMembers\n\tend"
+  },
+  "label": "ContestHall_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/ContestHall/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0"
+    ]
+  }
+}

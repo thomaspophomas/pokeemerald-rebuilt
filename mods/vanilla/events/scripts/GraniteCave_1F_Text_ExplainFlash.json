@@ -1,0 +1,19 @@
+{
+  "id": "GraniteCave_1F_Text_ExplainFlash",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/GraniteCave_1F/scripts.inc",
+    "sha1": "009a50304c40851653dda9dbfa159a4e7288520e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/GraniteCave_1F/scripts.inc",
+    "rawScript": ".string \"Teach that hidden move FLASH to\\n\"\n\t.string \"a POK\u00e9MON and use it.\\p\"\n\t.string \"It lights up even the inky darkness\\n\"\n\t.string \"of caves.\\p\"\n\t.string \"But, to use it, you need the GYM BADGE\\n\"\n\t.string \"from DEWFORD's POK\u00e9MON GYM.$\""
+  },
+  "label": "GraniteCave_1F_Text_ExplainFlash",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/GraniteCave_1F/scripts.inc",
+  "references": {}
+}

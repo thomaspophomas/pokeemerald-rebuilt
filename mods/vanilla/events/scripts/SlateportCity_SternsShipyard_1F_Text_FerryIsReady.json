@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_SternsShipyard_1F_Text_FerryIsReady",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+    "sha1": "839a40e95086fb806113f67a7c2dc0dcbbab3217"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+    "rawScript": ".string \"DOCK: The ferry is finally ready!\\p\"\n\t.string \"The new S.S. TIDAL is truly a marvel\\n\"\n\t.string \"of technology!\\p\"\n\t.string \"But, I get the feeling that we can\\n\"\n\t.string \"make something even better.\\p\"\n\t.string \"You know, there's never an end to\\n\"\n\t.string \"technology's march.$\""
+  },
+  "label": "SlateportCity_SternsShipyard_1F_Text_FerryIsReady",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+  "references": {}
+}

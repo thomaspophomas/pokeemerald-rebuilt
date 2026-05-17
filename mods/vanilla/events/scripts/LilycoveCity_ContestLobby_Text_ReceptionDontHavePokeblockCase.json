@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestLobby_Text_ReceptionDontHavePokeblockCase",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": ".string \"Hello!\\p\"\n\t.string \"This is the reception counter for\\n\"\n\t.string \"POK\u00e9MON CONTESTS.\\p\"\n\t.string \"Oh? It appears that you don't have\\n\"\n\t.string \"a {POKEBLOCK} CASE yet.\\p\"\n\t.string \"In that case, we need to provide you\\n\"\n\t.string \"with this!$\""
+  },
+  "label": "LilycoveCity_ContestLobby_Text_ReceptionDontHavePokeblockCase",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {}
+}

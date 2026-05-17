@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestHall_Text_CantWinOnBeautyAlone",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "sha1": "9d258f56144116075b6ffd125cc9edb7fc292736"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "rawScript": ".string \"You can't always win on just beauty\\n\"\n\t.string \"alone.\\p\"\n\t.string \"You have to groom your POK\u00e9MON so\\n\"\n\t.string \"it's nice and glossy like mine.$\""
+  },
+  "label": "LilycoveCity_ContestHall_Text_CantWinOnBeautyAlone",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+  "references": {}
+}

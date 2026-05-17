@@ -1,0 +1,23 @@
+{
+  "id": "Route121_EventScript_AquaGruntsMoveOut",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route121/scripts.inc",
+    "sha1": "25fbd3a3d48b51dbfcf569f03ff4f7001d429ac3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route121/scripts.inc",
+    "rawScript": "lockall\n\tplaybgm MUS_ENCOUNTER_AQUA, FALSE\n\tapplymovement LOCALID_ROUTE121_GRUNT_2, Common_Movement_WalkInPlaceRight\n\twaitmovement 0\n\tmsgbox Route121_Text_OkayMoveOutToMtPyre, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_ROUTE121_GRUNT_1, Route121_Movement_Grunt1Exit\n\tapplymovement LOCALID_ROUTE121_GRUNT_2, Route121_Movement_Grunt2Exit\n\tapplymovement LOCALID_ROUTE121_GRUNT_3, Route121_Movement_Grunt3Exit\n\twaitmovement 0\n\tfadedefaultbgm\n\tremoveobject LOCALID_ROUTE121_GRUNT_1\n\tremoveobject LOCALID_ROUTE121_GRUNT_2\n\tremoveobject LOCALID_ROUTE121_GRUNT_3\n\tsetvar VAR_ROUTE121_STATE, 1\n\treleaseall\n\tend"
+  },
+  "label": "Route121_EventScript_AquaGruntsMoveOut",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route121/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_ROUTE121_STATE"
+    ]
+  }
+}

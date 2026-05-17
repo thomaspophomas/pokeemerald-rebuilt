@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_TryDoDoubleRematchBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/trainer_battle.inc",
+    "sha1": "e0a1669e78b64d19492df48e8eba97d776e88df0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/trainer_battle.inc",
+    "rawScript": "specialvar VAR_RESULT, IsTrainerReadyForRematch\n\tgoto_if_eq VAR_RESULT, FALSE, EventScript_NoDoubleRematchTrainerBattle\n\tspecial HasEnoughMonsForDoubleBattle\n\tgoto_if_ne VAR_RESULT, PLAYER_HAS_TWO_USABLE_MONS, EventScript_NotEnoughMonsForDoubleRematchBattle\n\tspecial PlayTrainerEncounterMusic\n\tspecial SetTrainerFacingDirection\n\tspecial ShowTrainerIntroSpeech\n\twaitmessage\n\twaitbuttonpress\n\tspecial BattleSetup_StartRematchBattle\n\treleaseall\n\tend"
+  },
+  "label": "EventScript_TryDoDoubleRematchBattle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/trainer_battle.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

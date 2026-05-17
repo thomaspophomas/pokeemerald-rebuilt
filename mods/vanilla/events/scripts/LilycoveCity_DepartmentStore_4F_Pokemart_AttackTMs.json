@@ -1,0 +1,26 @@
+{
+  "id": "LilycoveCity_DepartmentStore_4F_Pokemart_AttackTMs",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc",
+    "sha1": "1c31f94c3331fa62c92524841334a9b9b0a050ac"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc",
+    "rawScript": ".2byte ITEM_TM_FIRE_BLAST\n\t.2byte ITEM_TM_THUNDER\n\t.2byte ITEM_TM_BLIZZARD\n\t.2byte ITEM_TM_HYPER_BEAM\n\tpokemartlistend"
+  },
+  "label": "LilycoveCity_DepartmentStore_4F_Pokemart_AttackTMs",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc",
+  "references": {
+    "items": [
+      "ITEM_TM_BLIZZARD",
+      "ITEM_TM_FIRE_BLAST",
+      "ITEM_TM_HYPER_BEAM",
+      "ITEM_TM_THUNDER"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "Route111_EventScript_ViciousSandstormTrigger",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": "checkitem ITEM_GO_GOGGLES\n\tgoto_if_eq VAR_RESULT, FALSE, Route111_EventScript_PreventRouteAccess\n\tsetvar VAR_TEMP_3, 1\n\treleaseall\n\tend"
+  },
+  "label": "Route111_EventScript_ViciousSandstormTrigger",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_3"
+    ],
+    "items": [
+      "ITEM_GO_GOGGLES"
+    ]
+  }
+}

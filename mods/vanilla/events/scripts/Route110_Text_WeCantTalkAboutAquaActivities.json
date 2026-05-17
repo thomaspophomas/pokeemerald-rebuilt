@@ -1,0 +1,19 @@
+{
+  "id": "Route110_Text_WeCantTalkAboutAquaActivities",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/scripts.inc",
+    "sha1": "ee9846425d6a96c03ac988decb3c48ffbd098f22"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110/scripts.inc",
+    "rawScript": ".string \"TEAM AQUA's activities\u2026\\n\"\n\t.string \"We can't talk about them yet.$\""
+  },
+  "label": "Route110_Text_WeCantTalkAboutAquaActivities",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110/scripts.inc",
+  "references": {}
+}

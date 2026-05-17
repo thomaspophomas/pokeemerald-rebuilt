@@ -1,0 +1,19 @@
+{
+  "id": "Route101_Movement_BirchRunAway1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route101/scripts.inc",
+    "sha1": "8bf41eea03b11363dfc29d02f70e66a0a3532478"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route101/scripts.inc",
+    "rawScript": "walk_fast_right\n\twalk_fast_right\n\twalk_fast_right\n\twalk_fast_right\n\twalk_fast_up\n\twalk_fast_up\n\tstep_end\n\n@ Leftover data? This command is unused.\n\tstep_end"
+  },
+  "label": "Route101_Movement_BirchRunAway1",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/Route101/scripts.inc",
+  "references": {}
+}

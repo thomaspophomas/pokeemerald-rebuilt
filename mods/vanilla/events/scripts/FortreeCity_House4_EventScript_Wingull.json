@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_House4_EventScript_Wingull",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_House4/scripts.inc",
+    "sha1": "f38bb5dba9859d7e96965e3b161795e659e29db9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_House4/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\twaitse\n\tplaymoncry SPECIES_WINGULL, CRY_MODE_NORMAL\n\tmsgbox FortreeCity_House4_Text_Wingull, MSGBOX_DEFAULT\n\twaitmoncry\n\trelease\n\tend"
+  },
+  "label": "FortreeCity_House4_EventScript_Wingull",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FortreeCity_House4/scripts.inc",
+  "references": {}
+}

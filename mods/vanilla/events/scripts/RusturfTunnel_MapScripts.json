@@ -1,0 +1,24 @@
+{
+  "id": "RusturfTunnel_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/scripts.inc",
+    "sha1": "76035185b0aabddf11657305417168db4c1bb93d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RusturfTunnel/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, RusturfTunnel_OnTransition\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, RusturfTunnel_OnFrame\n\t.byte 0"
+  },
+  "label": "RusturfTunnel_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/RusturfTunnel/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

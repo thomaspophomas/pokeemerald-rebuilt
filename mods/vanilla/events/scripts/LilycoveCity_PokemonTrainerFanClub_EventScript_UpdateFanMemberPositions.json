@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_EventScript_UpdateFanMemberPositions",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": "special TryLoseFansFromPlayTime\n\tcall LilycoveCity_PokemonTrainerFanClub_EventScript_CheckSetUpTVShow\n\tsetvar VAR_0x8004, FANCLUB_MEMBER1\n\tspecialvar VAR_RESULT, IsFanClubMemberFanOfPlayer\n\tcall_if_eq VAR_RESULT, FALSE, LilycoveCity_PokemonTrainerFanClub_EventScript_MoveMember1ToFarTable\n\tsetvar VAR_0x8004, FANCLUB_MEMBER2\n\tspecialvar VAR_RESULT, IsFanClubMemberFanOfPlayer\n\tcall_if_eq VAR_RESULT, FALSE, LilycoveCity_PokemonTrainerFanClub_EventScript_MoveMember2ToFarTable\n\tsetvar VAR_0x8004, FANCLUB_MEMBER3\n\tspecialvar VAR_RESULT, IsFanClubMemberFanOfPlayer\n\tcall_if_eq VAR_RESULT, FALSE, LilycoveCity_PokemonTrainerFanClub_EventScript_MoveMember3ToFarTable\n\tsetvar VAR_0x8004, FANCLUB_MEMBER4\n\tspecialvar VAR_RESULT, IsFanClubMemberFanOfPlayer\n\tcall_if_eq VAR_RESULT, FALSE, LilycoveCity_PokemonTrainerFanClub_EventScript_MoveMember4ToFarTable\n\tsetvar VAR_0x8004, FANCLUB_MEMBER5\n\tspecialvar VAR_RESULT, IsFanClubMemberFanOfPlayer\n\tcall_if_eq VAR_RESULT, FALSE, LilycoveCity_PokemonTrainerFanClub_EventScript_MoveMember5ToFarTable\n\tsetvar VAR_0x8004, FANCLUB_MEMBER6\n\tspecialvar VAR_RESULT, IsFanClubMemberFanOfPlayer\n\tcall_if_eq VAR_RESULT, FALSE, LilycoveCity_PokemonTrainerFanClub_EventScript_MoveMember6ToFarTable\n\tsetvar VAR_0x8004, FANCLUB_MEMBER7\n\tspecialvar VAR_RESULT, IsFanClubMemberFanOfPlayer\n\tcall_if_eq VAR_RESULT, FALSE, LilycoveCity_PokemonTrainerFanClub_EventScript_MoveMember7ToFarTable\n\tsetvar VAR_0x8004, FANCLUB_MEMBER8\n\tspecialvar VAR_RESULT, IsFanClubMemberFanOfPlayer\n\tcall_if_eq VAR_RESULT, FALSE, LilycoveCity_PokemonTrainerFanClub_EventScript_MoveMember8ToFarTable\n\tend"
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_EventScript_UpdateFanMemberPositions",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

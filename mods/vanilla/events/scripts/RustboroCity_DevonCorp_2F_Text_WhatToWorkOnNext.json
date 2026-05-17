@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_DevonCorp_2F_Text_WhatToWorkOnNext",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "sha1": "7e0aa6a4df50ead64287578a24ba19b07cafbb02"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "rawScript": ".string \"Well, now what shall I work on\\n\"\n\t.string \"developing next?\\p\"\n\t.string \"Our company allows us to make our\\n\"\n\t.string \"inspirations into reality.\\p\"\n\t.string \"One couldn't ask for a better\\n\"\n\t.string \"environment as an engineer.$\""
+  },
+  "label": "RustboroCity_DevonCorp_2F_Text_WhatToWorkOnNext",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+  "references": {}
+}

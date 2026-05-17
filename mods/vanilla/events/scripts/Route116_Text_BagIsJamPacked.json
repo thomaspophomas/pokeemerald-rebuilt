@@ -1,0 +1,19 @@
+{
+  "id": "Route116_Text_BagIsJamPacked",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116/scripts.inc",
+    "sha1": "414d7bb5c4246d6317dd973dc816983566be8cc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route116/scripts.inc",
+    "rawScript": ".string \"Your BAG is jam-packed.\\n\"\n\t.string \"I can't give you this REPEAT BALL.$\""
+  },
+  "label": "Route116_Text_BagIsJamPacked",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route116/scripts.inc",
+  "references": {}
+}

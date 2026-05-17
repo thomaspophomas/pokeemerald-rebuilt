@@ -1,0 +1,23 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F_EventScript_MoveCivilians",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "rawScript": "clearflag FLAG_INTERACTED_WITH_STEVEN_SPACE_CENTER\n\tsetobjectxyperm LOCALID_SPACE_CENTER_2F_SCIENTIST, 5, 3\n\tsetobjectmovementtype LOCALID_SPACE_CENTER_2F_SCIENTIST, MOVEMENT_TYPE_FACE_RIGHT\n\tsetobjectxyperm LOCALID_SPACE_CENTER_2F_RICH_BOY, 3, 2\n\tsetobjectmovementtype LOCALID_SPACE_CENTER_2F_RICH_BOY, MOVEMENT_TYPE_FACE_RIGHT\n\tsetobjectxyperm LOCALID_SPACE_CENTER_2F_GENTLEMAN, 1, 3\n\tsetobjectmovementtype LOCALID_SPACE_CENTER_2F_GENTLEMAN, MOVEMENT_TYPE_FACE_RIGHT\n\treturn"
+  },
+  "label": "MossdeepCity_SpaceCenter_2F_EventScript_MoveCivilians",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_INTERACTED_WITH_STEVEN_SPACE_CENTER"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ContestHall_EventScript_ReceiveContestRibbon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": "special GiveMonContestRibbon\n\tincrementgamestat GAME_STAT_RECEIVED_RIBBONS\n\tsetflag FLAG_SYS_RIBBON_GET\n\tlockall\n\tmsgbox ContestHall_Text_ConferRibbonAsPrize, MSGBOX_DEFAULT\n\tplayfanfare MUS_OBTAIN_ITEM\n\tmsgbox ContestHall_Text_ReceivedRibbon, MSGBOX_DEFAULT\n\twaitfanfare\n\tspecial BufferContestWinnerMonName\n\tmsgbox ContestHall_Text_PutRibbonOnMon, MSGBOX_DEFAULT\n\treleaseall\n\treturn"
+  },
+  "label": "ContestHall_EventScript_ReceiveContestRibbon",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_RIBBON_GET"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_WallyPokenavCall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\n\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 Beep!\\p\"\n\t.string \"WALLY: Oh, hello, {PLAYER}!\\p\"\n\t.string \"I just wanted to tell you that\\n\"\n\t.string \"my uncle bought me a POK\u00e9NAV!\\p\"\n\t.string \"Now I can get in touch with you\\n\"\n\t.string \"anytime, {PLAYER}!\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\n\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 Click!$\""
+  },
+  "label": "MauvilleCity_Text_WallyPokenavCall",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

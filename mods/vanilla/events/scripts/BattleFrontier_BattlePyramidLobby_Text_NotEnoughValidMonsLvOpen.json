@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePyramidLobby_Text_NotEnoughValidMonsLvOpen",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "sha1": "b93395a7ee7156a94cfa3817fd6222cfa69e94fd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "rawScript": ".string \"A slight problem, adventurer!\\p\"\n\t.string \"You seem to not have the three\\n\"\n\t.string \"POK\u00e9MON qualified for the challenge.\\p\"\n\t.string \"Please also remember to take all\\n\"\n\t.string \"items from your POK\u00e9MON.\\p\"\n\t.string \"EGGS{STR_VAR_1} ineligible.\\p\"\n\t.string \"When you are ready, please have\\n\"\n\t.string \"a word with me.$\""
+  },
+  "label": "BattleFrontier_BattlePyramidLobby_Text_NotEnoughValidMonsLvOpen",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+  "references": {}
+}

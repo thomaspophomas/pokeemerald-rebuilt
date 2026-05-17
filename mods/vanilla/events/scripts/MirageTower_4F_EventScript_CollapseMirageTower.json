@@ -1,0 +1,29 @@
+{
+  "id": "MirageTower_4F_EventScript_CollapseMirageTower",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MirageTower_4F/scripts.inc",
+    "sha1": "0e490ee2e9400861a54b910d5d29825dad66deb9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MirageTower_4F/scripts.inc",
+    "rawScript": "setvar VAR_0x8004, 1   @ vertical pan\n\tsetvar VAR_0x8005, 1   @ horizontal pan\n\tsetvar VAR_0x8006, 32  @ num shakes\n\tsetvar VAR_0x8007, 2   @ shake delay\n\tspecial ShakeCamera\n\twaitstate\n\tspecial DoMirageTowerCeilingCrumble\n\tsetvar VAR_MIRAGE_TOWER_STATE, 1\n\tclearflag FLAG_LANDMARK_MIRAGE_TOWER\n\twarp MAP_ROUTE111, 19, 59\n\twaitstate\n\trelease\n\tend"
+  },
+  "label": "MirageTower_4F_EventScript_CollapseMirageTower",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MirageTower_4F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_LANDMARK_MIRAGE_TOWER"
+    ],
+    "vars": [
+      "VAR_MIRAGE_TOWER_STATE"
+    ],
+    "maps": [
+      "MAP_ROUTE111"
+    ]
+  }
+}

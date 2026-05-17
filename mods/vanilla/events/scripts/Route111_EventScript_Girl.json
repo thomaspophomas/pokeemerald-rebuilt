@@ -1,0 +1,29 @@
+{
+  "id": "Route111_EventScript_Girl",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tdotimebasedevents\n\tgoto_if_set FLAG_DAILY_ROUTE_111_RECEIVED_BERRY, Route111_EventScript_ReceivedBerry\n\tmsgbox Route111_Text_WateredPlantsEveryDayTakeBerry, MSGBOX_DEFAULT\n\tgiveitem ITEM_RAZZ_BERRY\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_DAILY_ROUTE_111_RECEIVED_BERRY\n\tspecial GetPlayerBigGuyGirlString\n\tmsgbox Route111_Text_GoingToTryToMakeDifferentColorBerries, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route111_EventScript_Girl",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DAILY_ROUTE_111_RECEIVED_BERRY"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_RAZZ_BERRY"
+    ]
+  }
+}

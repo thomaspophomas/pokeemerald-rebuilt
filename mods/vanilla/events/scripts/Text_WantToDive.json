@@ -1,0 +1,19 @@
+{
+  "id": "Text_WantToDive",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/field_move_scripts.inc",
+    "sha1": "83a0d3bb9ff1263278592b6a78563154bb422956"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/field_move_scripts.inc",
+    "rawScript": ".string \"The sea is deep here.\\n\"\n\t.string \"Would you like to use DIVE?$\""
+  },
+  "label": "Text_WantToDive",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/field_move_scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "FarawayIsland_Interior_Movement_MewFloatUpEast",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FarawayIsland_Interior/scripts.inc",
+    "sha1": "748f9f309b0dbfe85cb833f24aeceac469102437"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FarawayIsland_Interior/scripts.inc",
+    "rawScript": "lock_facing_direction\n\twalk_fast_up\n\twalk_fast_up\n\tunlock_facing_direction\n\twalk_in_place_left\n\twalk_in_place_left\n\tstep_end"
+  },
+  "label": "FarawayIsland_Interior_Movement_MewFloatUpEast",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/FarawayIsland_Interior/scripts.inc",
+  "references": {}
+}

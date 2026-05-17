@@ -1,0 +1,19 @@
+{
+  "id": "Route110_TrickHousePuzzle7_EventScript_SetSwitch4MetatilesOff",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle7/scripts.inc",
+    "sha1": "d0faf89c20b52e4b3f4ef5191cdd1e42d9c73feb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle7/scripts.inc",
+    "rawScript": "setmetatile 6, 6, METATILE_TrickHousePuzzle_Arrow_RedOnBlack_Left_Alt, FALSE\n\tsetmetatile 4, 4, METATILE_TrickHousePuzzle_Lever_Off, TRUE\n\treturn"
+  },
+  "label": "Route110_TrickHousePuzzle7_EventScript_SetSwitch4MetatilesOff",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHousePuzzle7/scripts.inc",
+  "references": {}
+}

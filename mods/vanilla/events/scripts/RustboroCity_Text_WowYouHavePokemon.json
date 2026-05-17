@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Text_WowYouHavePokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": ".string \"Wow, you have POK\u00e9MON with you, too.\\p\"\n\t.string \"When I get bigger, I'm going to go\\n\"\n\t.string \"places with POK\u00e9MON, too.$\""
+  },
+  "label": "RustboroCity_Text_WowYouHavePokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

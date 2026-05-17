@@ -1,0 +1,19 @@
+{
+  "id": "Text_RepelWoreOff",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/repel.inc",
+    "sha1": "03d9395e1beda0d20bd1da5edae92898878f2aa7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/repel.inc",
+    "rawScript": ".string \"REPEL's effect wore off\u2026$\""
+  },
+  "label": "Text_RepelWoreOff",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/repel.inc",
+  "references": {}
+}

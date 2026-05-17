@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_SidneysRoom_EventScript_CloseDoor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+    "sha1": "557570a48b33cd8590cd2a5ef0ed11ae09a3448a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+    "rawScript": "call PokemonLeague_EliteFour_EventScript_CloseDoor\n\treturn"
+  },
+  "label": "EverGrandeCity_SidneysRoom_EventScript_CloseDoor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_SidneysRoom/scripts.inc",
+  "references": {}
+}

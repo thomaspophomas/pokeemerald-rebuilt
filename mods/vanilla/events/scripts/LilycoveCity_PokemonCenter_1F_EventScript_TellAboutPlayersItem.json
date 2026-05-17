@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_PokemonCenter_1F_EventScript_TellAboutPlayersItem",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/lilycove_lady.inc",
+    "sha1": "2c2864b913cc532d514481fce3a5e381d5af5f83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/lilycove_lady.inc",
+    "rawScript": "special BufferFavorLadyItemName\n\tspecial BufferFavorLadyPlayerName\n\tspecialvar VAR_RESULT, DidFavorLadyLikeItem\n\tgoto_if_eq VAR_RESULT, FALSE, LilycoveCity_PokemonCenter_1F_EventScript_PlayerGaveBadThing\n\tgoto_if_eq VAR_RESULT, TRUE, LilycoveCity_PokemonCenter_1F_EventScript_PlayerGaveGreatThing\n\tend"
+  },
+  "label": "LilycoveCity_PokemonCenter_1F_EventScript_TellAboutPlayersItem",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/lilycove_lady.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

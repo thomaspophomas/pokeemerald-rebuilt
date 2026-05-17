@@ -1,0 +1,19 @@
+{
+  "id": "RusturfTunnel_Movement_PushPlayerAsideForGrunt",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/scripts.inc",
+    "sha1": "76035185b0aabddf11657305417168db4c1bb93d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RusturfTunnel/scripts.inc",
+    "rawScript": "face_down\n\tlock_facing_direction\n\twalk_up\n\tunlock_facing_direction\n\twalk_in_place_faster_left\n\tstep_end"
+  },
+  "label": "RusturfTunnel_Movement_PushPlayerAsideForGrunt",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/RusturfTunnel/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": "LittlerootTown_EventScript_StepOffTruckFemale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": "lockall\n\tsetvar VAR_0x8004, 14\n\tsetvar VAR_0x8005, 8\n\tcall LittlerootTown_EventScript_GoInsideWithMom\n\tsetflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK\n\twarpsilent MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F, 2, 8\n\twaitstate\n\treleaseall\n\tend"
+  },
+  "label": "LittlerootTown_EventScript_StepOffTruckFemale",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK"
+    ],
+    "maps": [
+      "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F"
+    ]
+  }
+}

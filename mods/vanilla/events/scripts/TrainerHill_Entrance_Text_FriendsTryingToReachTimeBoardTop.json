@@ -1,0 +1,19 @@
+{
+  "id": "TrainerHill_Entrance_Text_FriendsTryingToReachTimeBoardTop",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "sha1": "cbfca2354a8d8ed8d68e2612fb0b6f2525008a5f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "rawScript": ".string \"Do you see the Time Board over there?\\p\"\n\t.string \"My friends and I are trying to see who\\n\"\n\t.string \"can reach the top in the least time.$\""
+  },
+  "label": "TrainerHill_Entrance_Text_FriendsTryingToReachTimeBoardTop",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/TrainerHill_Entrance/scripts.inc",
+  "references": {}
+}

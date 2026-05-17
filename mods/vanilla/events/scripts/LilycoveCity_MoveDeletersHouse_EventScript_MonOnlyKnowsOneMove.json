@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_MoveDeletersHouse_EventScript_MonOnlyKnowsOneMove",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_MoveDeletersHouse/scripts.inc",
+    "sha1": "607d0f5a35fe588b33f31bdc4804af7a61c537bb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_MoveDeletersHouse/scripts.inc",
+    "rawScript": "special BufferMoveDeleterNicknameAndMove\n\tmsgbox LilycoveCity_MoveDeletersHouse_Text_MonOnlyKnowsOneMove, MSGBOX_DEFAULT\n\treleaseall\n\tend"
+  },
+  "label": "LilycoveCity_MoveDeletersHouse_EventScript_MonOnlyKnowsOneMove",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_MoveDeletersHouse/scripts.inc",
+  "references": {}
+}

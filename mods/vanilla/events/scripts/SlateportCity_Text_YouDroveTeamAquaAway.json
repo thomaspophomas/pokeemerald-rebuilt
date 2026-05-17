@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Text_YouDroveTeamAquaAway",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": ".string \"SCOTT: Huh?\\n\"\n\t.string \"I'm sure I met you somewhere before.\\p\"\n\t.string \"Have I introduced myself to you?\\n\"\n\t.string \"If not, my name's SCOTT.\\p\"\n\t.string \"I just saw TEAM AQUA run away from\\n\"\n\t.string \"here like they were stung.\\p\"\n\t.string \"Let me guess--you drove them away?$\""
+  },
+  "label": "SlateportCity_Text_YouDroveTeamAquaAway",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {}
+}

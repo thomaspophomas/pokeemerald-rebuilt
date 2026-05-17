@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeLobby_Text_NotEnoughValidMonsLvOpen",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "sha1": "e2be0fe89296e221d6bdf7bc81fdcf739064bd1b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "rawScript": ".string \"I beg your pardon, but\u2026\\p\"\n\t.string \"You do not have three eligible\\n\"\n\t.string \"POK\u00e9MON for the Battle Choice event.\\p\"\n\t.string \"You must have three different\\n\"\n\t.string \"POK\u00e9MON to enter.\\p\"\n\t.string \"They also must be holding different\\n\"\n\t.string \"kinds of items.\\p\"\n\t.string \"EGGS{STR_VAR_1} ineligible.\\p\"\n\t.string \"Please come see me when\\n\"\n\t.string \"you are ready\u2026$\""
+  },
+  "label": "BattleFrontier_BattlePikeLobby_Text_NotEnoughValidMonsLvOpen",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+  "references": {}
+}

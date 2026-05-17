@@ -1,0 +1,19 @@
+{
+  "id": "Route111_Text_ViviIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": ".string \"You're stronger than Mommy? Wow!\\p\"\n\t.string \"But I'm strong, too!\\n\"\n\t.string \"Really! Honestly!$\""
+  },
+  "label": "Route111_Text_ViviIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {}
+}

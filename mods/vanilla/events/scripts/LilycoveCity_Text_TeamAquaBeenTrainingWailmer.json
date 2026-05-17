@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_TeamAquaBeenTrainingWailmer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"TEAM AQUA's been training their\\n\"\n\t.string \"WAILMER in the cove.\\p\"\n\t.string \"We SAILORS can't get our boats out\\n\"\n\t.string \"to sea with them in the way!$\""
+  },
+  "label": "LilycoveCity_Text_TeamAquaBeenTrainingWailmer",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

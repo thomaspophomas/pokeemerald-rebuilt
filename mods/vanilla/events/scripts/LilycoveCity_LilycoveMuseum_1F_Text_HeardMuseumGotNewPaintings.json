@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_1F_Text_HeardMuseumGotNewPaintings",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+    "sha1": "9b7ed7bb941e379aabaa59bf0da8ffe089df98ba"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+    "rawScript": ".string \"I'd heard that this ART MUSEUM got\\n\"\n\t.string \"in some new paintings.\\p\"\n\t.string \"So, naturally I hurried over.\\p\"\n\t.string \"Are the new paintings up on\\n\"\n\t.string \"the second floor?$\""
+  },
+  "label": "LilycoveCity_LilycoveMuseum_1F_Text_HeardMuseumGotNewPaintings",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+  "references": {}
+}

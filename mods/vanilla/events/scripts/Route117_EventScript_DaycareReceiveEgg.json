@@ -1,0 +1,23 @@
+{
+  "id": "Route117_EventScript_DaycareReceiveEgg",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/day_care.inc",
+    "sha1": "b807399ab522de3ba938194e85f890a343362752"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/day_care.inc",
+    "rawScript": "message Route117_Text_ReceivedEgg\n\tplayfanfare MUS_LEVEL_UP\n\twaitfanfare\n\twaitbuttonpress\n\tmsgbox Route117_Text_TakeGoodCareOfIt, MSGBOX_DEFAULT\n\tspecial GiveEggFromDaycare\n\tclearflag FLAG_PENDING_DAYCARE_EGG\n\trelease\n\tend"
+  },
+  "label": "Route117_EventScript_DaycareReceiveEgg",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/day_care.inc",
+  "references": {
+    "flags": [
+      "FLAG_PENDING_DAYCARE_EGG"
+    ]
+  }
+}

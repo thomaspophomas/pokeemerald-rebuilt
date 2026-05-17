@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ScottsHouse_Text_HowMuchEffortItTookToMakeReal",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "sha1": "c30df9e905f6d4b9d9e1eaf4d4fccf30db88e083"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "rawScript": ".string \"On reflection, it was a terribly long\\n\"\n\t.string \"journey\u2026\\p\"\n\t.string \"I left home alone on a quest to find\\n\"\n\t.string \"strong TRAINERS.\\p\"\n\t.string \"No one can imagine how much effort\\n\"\n\t.string \"or time it took to make this real.$\""
+  },
+  "label": "BattleFrontier_ScottsHouse_Text_HowMuchEffortItTookToMakeReal",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+  "references": {}
+}

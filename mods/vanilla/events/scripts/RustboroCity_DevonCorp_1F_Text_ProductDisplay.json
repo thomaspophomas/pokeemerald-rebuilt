@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_DevonCorp_1F_Text_ProductDisplay",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_1F/scripts.inc",
+    "sha1": "c37d7b38d1160c2692286fc6de96377169c9e8d1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_1F/scripts.inc",
+    "rawScript": ".string \"Prototypes and test products fill\\n\"\n\t.string \"the glass display case.\\p\"\n\t.string \"There's a panel with a description\u2026\\p\"\n\t.string \"\u201cIn addition to industrial products,\\n\"\n\t.string \"DEVON now markets sundries and\\l\"\n\t.string \"pharmaceuticals for better lifestyles.\\p\"\n\t.string \"\u201cRecently, DEVON has begun marketing\\n\"\n\t.string \"tools for POK\u00e9MON TRAINERS, including\\l\"\n\t.string \"POK\u00e9 BALLS and POK\u00e9NAV systems.\u201d$\""
+  },
+  "label": "RustboroCity_DevonCorp_1F_Text_ProductDisplay",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,31 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_EventScript_UpgradeToNationalDex",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": "lockall\n\tdelay 30\n\tmsgbox LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_BIRCHS_LAB_BIRCH, LittlerootTown_ProfessorBirchsLab_Movement_BirchRetrievePokedexes\n\twaitmovement 0\n\tdelay 20\n\tplayse SE_CLICK\n\tdelay 10\n\tplayse SE_CLICK\n\tdelay 10\n\tplayse SE_CLICK\n\tdelay 10\n\tplayse SE_CLICK\n\tdelay 20\n\tapplymovement LOCALID_BIRCHS_LAB_RIVAL, Common_Movement_WalkInPlaceFasterRight\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tcheckplayergender\n\tcall_if_eq VAR_RESULT, MALE, LittlerootTown_ProfessorBirchsLab_EventScript_MayUpgradeComment\n\tcall_if_eq VAR_RESULT, FEMALE, LittlerootTown_ProfessorBirchsLab_EventScript_BrendanUpgradeComment\n\tplayse SE_PC_ON\n\twaitse\n\tdelay 20\n\tapplymovement LOCALID_BIRCHS_LAB_BIRCH, LittlerootTown_ProfessorBirchsLab_Movement_BirchReturnPokedex\n\twaitmovement 0\n\tapplymovement LOCALID_BIRCHS_LAB_RIVAL, Common_Movement_WalkInPlaceFasterUp\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tmsgbox LittlerootTown_ProfessorBirchsLab_Text_OkayAllDone, MSGBOX_DEFAULT\n\tplayfanfare MUS_OBTAIN_ITEM\n\tmessage LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational\n\twaitmessage\n\twaitfanfare\n\tsetflag FLAG_SYS_NATIONAL_DEX\n\tspecial EnableNationalPokedex\n\tmsgbox LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2, MSGBOX_DEFAULT\n\tclosemessage\n\tsetflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCH\n\tsetflag FLAG_HIDE_LITTLEROOT_TOWN_RIVAL\n\tsetvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2\n\tsetvar VAR_SCOTT_BF_CALL_STEP_COUNTER, 0\n\tsetflag FLAG_SCOTT_CALL_BATTLE_FRONTIER\n\treleaseall\n\tend"
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_EventScript_UpgradeToNationalDex",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_LITTLEROOT_TOWN_BIRCH",
+      "FLAG_HIDE_LITTLEROOT_TOWN_RIVAL",
+      "FLAG_SCOTT_CALL_BATTLE_FRONTIER",
+      "FLAG_SYS_NATIONAL_DEX"
+    ],
+    "vars": [
+      "VAR_DEX_UPGRADE_JOHTO_STARTER_STATE",
+      "VAR_RESULT",
+      "VAR_SCOTT_BF_CALL_STEP_COUNTER"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BerryBlender_Text_CanHaveOneOfMyBerries",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": ".string \"Well, that won't do at all now, will it?\\p\"\n\t.string \"If you don't mind leftovers, you can\\n\"\n\t.string \"have one of my BERRIES.\\p\"\n\t.string \"That way, we could make some {POKEBLOCK}S\\n\"\n\t.string \"together using the BERRY BLENDER.$\""
+  },
+  "label": "BerryBlender_Text_CanHaveOneOfMyBerries",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {}
+}

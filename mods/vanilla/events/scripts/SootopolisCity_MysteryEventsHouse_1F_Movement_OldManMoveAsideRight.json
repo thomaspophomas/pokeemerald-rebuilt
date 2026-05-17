@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_MysteryEventsHouse_1F_Movement_OldManMoveAsideRight",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc",
+    "sha1": "2fdeaa88644de0428efc55499bd5f5d3a0d1831f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc",
+    "rawScript": "walk_right\n\twalk_in_place_faster_left\n\tstep_end"
+  },
+  "label": "SootopolisCity_MysteryEventsHouse_1F_Movement_OldManMoveAsideRight",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc",
+  "references": {}
+}

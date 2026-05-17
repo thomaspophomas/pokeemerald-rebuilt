@@ -1,0 +1,23 @@
+{
+  "id": "Route103_EventScript_Isabelle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route103/scripts.inc",
+    "sha1": "cdbe6074bf0bdfa44494ccf1457b18c3de43e0de"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route103/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_ISABELLE, Route103_Text_IsabelleIntro, Route103_Text_IsabelleDefeated\n\tmsgbox Route103_Text_IsabellePostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route103_EventScript_Isabelle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route103/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ISABELLE"
+    ]
+  }
+}

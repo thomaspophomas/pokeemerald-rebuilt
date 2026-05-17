@@ -1,0 +1,19 @@
+{
+  "id": "AquaHideout_B2F_Text_Grunt6Intro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B2F/scripts.inc",
+    "sha1": "2422b13cc4d746236ea4f5c8dbbc6ea26d3d8e36"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_B2F/scripts.inc",
+    "rawScript": ".string \"Warp panels, the HIDEOUT's pride\\n\"\n\t.string \"and joy!\\p\"\n\t.string \"You're clueless about where you are,\\n\"\n\t.string \"aren't you?\\p\"\n\t.string \"Fluster and tire out the enemy, then\\n\"\n\t.string \"lower the boom! That's our plan!$\""
+  },
+  "label": "AquaHideout_B2F_Text_Grunt6Intro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AquaHideout_B2F/scripts.inc",
+  "references": {}
+}

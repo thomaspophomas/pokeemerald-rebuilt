@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgWoods_Text_IWantRematch2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/scripts.inc",
+    "sha1": "a7a3b49731f97088b328145805430d4429326ec8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgWoods/scripts.inc",
+    "rawScript": ".string \"I want a rematch when my BUG \\n\"\n\t.string \"POK\u00e9MON grow up!\\p\"\n\t.string \"I'm registering you in my POK\u00e9NAV!$\""
+  },
+  "label": "PetalburgWoods_Text_IWantRematch2",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgWoods/scripts.inc",
+  "references": {}
+}

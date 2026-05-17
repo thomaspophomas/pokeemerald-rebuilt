@@ -1,0 +1,30 @@
+{
+  "id": "Route109_EventScript_SoftSandGirl",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route109/scripts.inc",
+    "sha1": "7b7ddbfc58bd8a1cc6ebeaa13e2d754df362f425"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route109/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tspecial GetPlayerBigGuyGirlString\n\tgoto_if_set FLAG_RECEIVED_SOFT_SAND, Route109_EventScript_AlreadyReceivedSoftSand\n\tmsgbox Route109_Text_YouCanHaveThis, MSGBOX_DEFAULT\n\tgiveitem ITEM_SOFT_SAND\n\tgoto_if_eq VAR_RESULT, 0, Common_EventScript_ShowBagIsFull\n\tclosemessage\n\tapplymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection\n\twaitmovement 0\n\tsetflag FLAG_RECEIVED_SOFT_SAND\n\trelease\n\tend"
+  },
+  "label": "Route109_EventScript_SoftSandGirl",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route109/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_SOFT_SAND"
+    ],
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_SOFT_SAND"
+    ]
+  }
+}

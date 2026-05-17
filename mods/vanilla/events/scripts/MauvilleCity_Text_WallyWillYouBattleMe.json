@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_WallyWillYouBattleMe",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"WALLY: Oh! Hi, {PLAYER}!\\p\"\n\t.string \"I've gotten a lot stronger since\\n\"\n\t.string \"we met.\\p\"\n\t.string \"{PLAYER}, I want you and my UNCLE to\\n\"\n\t.string \"understand that.\\p\"\n\t.string \"{PLAYER}, please, will you have\\n\"\n\t.string \"a battle with me?$\""
+  },
+  "label": "MauvilleCity_Text_WallyWillYouBattleMe",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

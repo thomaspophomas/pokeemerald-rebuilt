@@ -1,0 +1,23 @@
+{
+  "id": "AbandonedShip_Deck_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Deck/scripts.inc",
+    "sha1": "2181c1a84cd0f94e81fa1c1ebc724012c77e0119"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_Deck/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, AbandonedShip_Deck_OnTransition\n\t.byte 0"
+  },
+  "label": "AbandonedShip_Deck_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/AbandonedShip_Deck/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

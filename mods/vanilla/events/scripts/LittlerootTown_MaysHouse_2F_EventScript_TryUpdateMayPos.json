@@ -1,0 +1,24 @@
+{
+  "id": "LittlerootTown_MaysHouse_2F_EventScript_TryUpdateMayPos",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "sha1": "e014a444dcf389c78773768633900402b1862edb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "rawScript": "checkplayergender\n\tgoto_if_eq VAR_RESULT, FEMALE, LittlerootTown_MaysHouse_2F_EventScript_Ret\n\tgoto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_MaysHouse_2F_EventScript_Ret\n\tsetobjectxyperm LOCALID_RIVALS_HOUSE_2F_RIVAL, 8, 2\n\tsetobjectmovementtype LOCALID_RIVALS_HOUSE_2F_RIVAL, MOVEMENT_TYPE_FACE_UP\n\treturn"
+  },
+  "label": "LittlerootTown_MaysHouse_2F_EventScript_TryUpdateMayPos",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_DEX_UPGRADE_JOHTO_STARTER_STATE",
+      "VAR_RESULT"
+    ]
+  }
+}

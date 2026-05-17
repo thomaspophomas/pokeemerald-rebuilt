@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattleDomeBattleRoom_EventScript_Draw",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "sha1": "2cf5ea83e82fbd2189ced7e0cd4d5f894bf74650"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattleDomeBattleRoom_Text_RefereeDecisionPleaseWait, MSGBOX_DEFAULT\n\tclosemessage\n\tplayse SE_M_ENCORE2\n\tcall BattleFrontier_BattleDomeBattleRoom_EventScript_AudienceLookAround\n\tdelay 60\n\tapplymovement LOCALID_DOME_REFEREE, BattleFrontier_BattleDomeBattleRoom_Movement_RefereeEnter\n\twaitmovement 0\n\tapplymovement LOCALID_DOME_ANNOUNCER, BattleFrontier_BattleDomeBattleRoom_Movement_AnnouncerFaceLeft\n\twaitmovement 0\n\tdelay 180\n\tapplymovement LOCALID_DOME_REFEREE, BattleFrontier_BattleDomeBattleRoom_Movement_RefereeExit\n\twaitmovement 0\n\tgoto_if_eq VAR_TEMP_2, DRAW_TUCKER, BattleFrontier_BattleDomeBattleRoom_EventScript_LostToOpponent @ Tucker always wins on a draw\n\tdome_compareseeds\n\tswitch VAR_RESULT\n\tcase 1, BattleFrontier_BattleDomeBattleRoom_EventScript_DefeatedOpponent"
+  },
+  "label": "BattleFrontier_BattleDomeBattleRoom_EventScript_Draw",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_2"
+    ]
+  }
+}

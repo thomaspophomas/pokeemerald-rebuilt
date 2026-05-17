@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Text_YouGotItThankYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": ".string \"Oh! How did it go?\\n\"\n\t.string \"The DEVON GOODS?\\p\"\n\t.string \"You did!\\n\"\n\t.string \"You got them back!\\p\"\n\t.string \"You really are a great TRAINER!\\p\"\n\t.string \"I know! As my thanks, I'll give you\\n\"\n\t.string \"another GREAT BALL!$\""
+  },
+  "label": "RustboroCity_Text_YouGotItThankYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

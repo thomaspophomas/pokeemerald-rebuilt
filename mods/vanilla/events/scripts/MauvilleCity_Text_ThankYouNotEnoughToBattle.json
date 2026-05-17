@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_ThankYouNotEnoughToBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"{PLAYER}, thank you.\\n\"\n\t.string \"Being a TRAINER is tough, isn't it?\\p\"\n\t.string \"It's not enough just to have POK\u00e9MON\\n\"\n\t.string \"and make them battle. That isn't what\\l\"\n\t.string \"being a real TRAINER is about.$\""
+  },
+  "label": "MauvilleCity_Text_ThankYouNotEnoughToBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

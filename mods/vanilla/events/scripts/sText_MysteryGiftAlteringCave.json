@@ -1,0 +1,19 @@
+{
+  "id": "sText_MysteryGiftAlteringCave",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_altering_cave.inc",
+    "sha1": "10dc3bfeb42e1438ef5252d81c4484de396e90d5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_altering_cave.inc",
+    "rawScript": ".string \"Thank you for using the MYSTERY\\n\"\n\t.string \"GIFT System.\\p\"\n\t.string \"There appears to be a rumor about\\n\"\n\t.string \"rare POK\u00e9MON sightings.\\p\"\n\t.string \"The sightings reportedly came from\\n\"\n\t.string \"the ALTERING CAVE on ROUTE 103.\\p\"\n\t.string \"Perhaps it would be worthwhile for\\n\"\n\t.string \"you to investigate this rumor.$\""
+  },
+  "label": "sText_MysteryGiftAlteringCave",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_altering_cave.inc",
+  "references": {}
+}

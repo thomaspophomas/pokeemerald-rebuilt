@@ -1,0 +1,19 @@
+{
+  "id": "Movement_SetInvisible",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cave_hole.inc",
+    "sha1": "3a92c9558225c892deda0ac0d091d38dbda0befa"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cave_hole.inc",
+    "rawScript": "set_invisible\n\tstep_end"
+  },
+  "label": "Movement_SetInvisible",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/scripts/cave_hole.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_EventScript_HideInterviewer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": "setflag FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER\n\treturn\n\n@ Set up the fan club TV show, if the player has at least 5 fans in the club\n@ Rather than counting up, 1 is subtracted from the total for each member not a fan of the players"
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_EventScript_HideInterviewer",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "EverGrandeCity_PokemonLeague_1F_EventScript_GoForth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+    "sha1": "a55305762ef4a1d7b0cbf882528ff161154a969b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+    "rawScript": "applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer\n\twaitmovement 0\n\tmsgbox EverGrandeCity_PokemonLeague_1F_Text_GoForth, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection\n\twaitmovement 0\n\treleaseall\n\tend"
+  },
+  "label": "EverGrandeCity_PokemonLeague_1F_EventScript_GoForth",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED"
+    ]
+  }
+}

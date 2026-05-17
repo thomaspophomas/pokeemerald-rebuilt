@@ -1,0 +1,23 @@
+{
+  "id": "OldaleTown_Mart_EventScript_Clerk",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown_Mart/scripts.inc",
+    "sha1": "8a968880e5a4d7792fef6fe981f5856832d88170"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/OldaleTown_Mart/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmessage gText_HowMayIServeYou\n\twaitmessage\n\tgoto_if_set FLAG_ADVENTURE_STARTED, OldaleTown_Mart_ExpandedItems\n\tpokemart OldaleTown_Mart_Pokemart_Basic\n\tmsgbox gText_PleaseComeAgain, MSGBOX_DEFAULT\n\trelease\n\tend\n\n\t.align 2"
+  },
+  "label": "OldaleTown_Mart_EventScript_Clerk",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/OldaleTown_Mart/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_ADVENTURE_STARTED"
+    ]
+  }
+}

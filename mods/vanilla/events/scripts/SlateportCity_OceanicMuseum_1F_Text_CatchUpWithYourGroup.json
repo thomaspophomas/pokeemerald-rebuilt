@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_OceanicMuseum_1F_Text_CatchUpWithYourGroup",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "sha1": "7a1e00c78bbfbd0fbd6eb59a84a4d4e7114e4261"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "rawScript": ".string \"Oh? You're with that group that\\n\"\n\t.string \"went in earlier?\\p\"\n\t.string \"You're the only one who's late.\\n\"\n\t.string \"You'd better go catch up to them!$\""
+  },
+  "label": "SlateportCity_OceanicMuseum_1F_Text_CatchUpWithYourGroup",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+  "references": {}
+}

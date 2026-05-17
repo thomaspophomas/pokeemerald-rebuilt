@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_ImArtDealer",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"I'm an ART DEALER.\\p\"\n\t.string \"I am a buyer and seller of fine art,\\n\"\n\t.string \"especially paintings.\\p\"\n\t.string \"I've heard that the MUSEUM here has\\n\"\n\t.string \"magnificent works on exhibit\u2026$\""
+  },
+  "label": "LilycoveCity_Text_ImArtDealer",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

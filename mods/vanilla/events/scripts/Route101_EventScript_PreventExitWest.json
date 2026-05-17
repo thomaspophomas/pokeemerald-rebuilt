@@ -1,0 +1,19 @@
+{
+  "id": "Route101_EventScript_PreventExitWest",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route101/scripts.inc",
+    "sha1": "8bf41eea03b11363dfc29d02f70e66a0a3532478"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route101/scripts.inc",
+    "rawScript": "lockall\n\tmsgbox Route101_Text_DontLeaveMe, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_PLAYER, Route101_Movement_PreventExitWest\n\twaitmovement 0\n\treleaseall\n\tend"
+  },
+  "label": "Route101_EventScript_PreventExitWest",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route101/scripts.inc",
+  "references": {}
+}

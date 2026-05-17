@@ -1,0 +1,24 @@
+{
+  "id": "Apprentice_EventScript_PutWhichMonFirst",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/apprentice.inc",
+    "sha1": "353208142bca1df117076064d141b84efe196e7c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/apprentice.inc",
+    "rawScript": "apprentice_msg FALSE, APPRENTICE_MSG_WHICH_MON_FIRST\n\tapprentice_menu APPRENTICE_ASK_3SPECIES\n\tapprentice_setleadmon VAR_RESULT\n\tapprentice_answeredquestion\n\tapprentice_buff STR_VAR_1, APPRENTICE_BUFF_LEAD_MON_SPECIES\n\tapprentice_msg TRUE, APPRENTICE_MSG_THANKS_MON_FIRST\n\tcall Apprentice_EventScript_SetHideFlags\n\trelease\n\treleaseall\n\tswitch VAR_FACING\n\tcase DIR_NORTH, Apprentice_EventScript_LeaveNorth\n\tgoto Apprentice_EventScript_Leave\n\tend\n\n@ Last question, after which the Apprentice leaves (and is saved) to be replaced by another"
+  },
+  "label": "Apprentice_EventScript_PutWhichMonFirst",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/apprentice.inc",
+  "references": {
+    "vars": [
+      "VAR_FACING",
+      "VAR_RESULT"
+    ]
+  }
+}

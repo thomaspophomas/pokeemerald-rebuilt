@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_WarpToCuteContestHall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": "setwarp MAP_CONTEST_HALL_CUTE, 7, 5\n\tspecial DoContestHallWarp\n\treturn"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_WarpToCuteContestHall",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_CONTEST_HALL_CUTE"
+    ]
+  }
+}

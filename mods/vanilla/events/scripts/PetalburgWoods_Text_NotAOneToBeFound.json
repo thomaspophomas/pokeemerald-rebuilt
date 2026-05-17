@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgWoods_Text_NotAOneToBeFound",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgWoods/scripts.inc",
+    "sha1": "a7a3b49731f97088b328145805430d4429326ec8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgWoods/scripts.inc",
+    "rawScript": ".string \"Hmmm\u2026\\n\"\n\t.string \"Not a one to be found\u2026$\""
+  },
+  "label": "PetalburgWoods_Text_NotAOneToBeFound",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgWoods/scripts.inc",
+  "references": {}
+}

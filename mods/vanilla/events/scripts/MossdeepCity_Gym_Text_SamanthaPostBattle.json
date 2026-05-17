@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Gym_Text_SamanthaPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "sha1": "f1b3ae6c76fdfe44b1431df4ea78da5c11a79c08"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "rawScript": ".string \"You will wage a terrifically intense\\n\"\n\t.string \"battle with our GYM LEADERS\u2026\\p\"\n\t.string \"The result\u2026\\n\"\n\t.string \"You won't hear it from me!$\""
+  },
+  "label": "MossdeepCity_Gym_Text_SamanthaPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_Gym/scripts.inc",
+  "references": {}
+}

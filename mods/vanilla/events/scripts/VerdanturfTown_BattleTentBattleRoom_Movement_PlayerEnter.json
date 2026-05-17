@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_BattleTentBattleRoom_Movement_PlayerEnter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+    "sha1": "ab3b693d78c01bf41de27c238af8f5c28d91cffd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+    "rawScript": "set_visible\n\twalk_up\n\twalk_up\n\twalk_up\n\tface_right\n\tstep_end"
+  },
+  "label": "VerdanturfTown_BattleTentBattleRoom_Movement_PlayerEnter",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+  "references": {}
+}

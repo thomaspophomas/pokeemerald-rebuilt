@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "sha1": "a0cf82d2df089035fb81d02a013736aab95a13d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "rawScript": ".string \"I know that things are a little\\n\"\n\t.string \"haywire right now, but\u2026\\p\"\n\t.string \"The rocket launched safely!\\n\"\n\t.string \"That's successful launch no. {STR_VAR_1}!$\""
+  },
+  "label": "MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+  "references": {}
+}

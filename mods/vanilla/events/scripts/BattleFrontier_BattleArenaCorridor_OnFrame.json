@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleArenaCorridor_OnFrame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaCorridor/scripts.inc",
+    "sha1": "6c50fa8f26f23235a25e4a509732939b19558eaa"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaCorridor/scripts.inc",
+    "rawScript": "map_script_2 VAR_TEMP_0, 0, BattleFrontier_BattleArenaCorridor_EventScript_WalkToBattleRoom\n\t.2byte 0"
+  },
+  "label": "BattleFrontier_BattleArenaCorridor_OnFrame",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaCorridor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0"
+    ]
+  }
+}

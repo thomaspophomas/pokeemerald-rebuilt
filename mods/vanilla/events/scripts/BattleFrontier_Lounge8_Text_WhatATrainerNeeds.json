@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge8_Text_WhatATrainerNeeds",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge8/scripts.inc",
+    "sha1": "645530e958a54b4ac429c03f81abce888272e486"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge8/scripts.inc",
+    "rawScript": ".string \"What a TRAINER needs\u2026\\p\"\n\t.string \"Knowledge\u2026\\n\"\n\t.string \"Strategy\u2026\\l\"\n\t.string \"Luck\u2026\\l\"\n\t.string \"Guts\u2026\\l\"\n\t.string \"Spirit\u2026\\l\"\n\t.string \"Bravery\u2026\\l\"\n\t.string \"And ability\u2026\\p\"\n\t.string \"Well, I'm all set in every way!\\n\"\n\t.string \"I'll be unstoppable at every building!\\p\"\n\t.string \"Huh? POK\u00e9MON?\\n\"\n\t.string \"What's that?$\""
+  },
+  "label": "BattleFrontier_Lounge8_Text_WhatATrainerNeeds",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge8/scripts.inc",
+  "references": {}
+}

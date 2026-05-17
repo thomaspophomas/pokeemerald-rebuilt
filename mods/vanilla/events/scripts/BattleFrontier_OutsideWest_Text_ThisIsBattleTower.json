@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideWest_Text_ThisIsBattleTower",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": ".string \"This is the BATTLE TOWER.\\p\"\n\t.string \"TRAINERS bring their best-raised\\n\"\n\t.string \"POK\u00e9MON for elimination-style matches.$\""
+  },
+  "label": "BattleFrontier_OutsideWest_Text_ThisIsBattleTower",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {}
+}

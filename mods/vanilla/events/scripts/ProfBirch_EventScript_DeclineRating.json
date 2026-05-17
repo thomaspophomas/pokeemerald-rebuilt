@@ -1,0 +1,19 @@
+{
+  "id": "ProfBirch_EventScript_DeclineRating",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/prof_birch.inc",
+    "sha1": "73235564dd42f1e69875bc9af32cbeb616f5a106"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/prof_birch.inc",
+    "rawScript": "msgbox gBirchDexRatingText_Cancel, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "ProfBirch_EventScript_DeclineRating",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/prof_birch.inc",
+  "references": {}
+}

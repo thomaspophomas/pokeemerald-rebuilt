@@ -1,0 +1,26 @@
+{
+  "id": "BattleFrontier_BattleDomeLobby_EventScript_EnterChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "sha1": "c5673b719ade6a47e6fe1e3055270ca454748cfd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "rawScript": "special SavePlayerParty\n\tfrontier_setpartyorder FRONTIER_PARTY_SIZE\n\tdome_settrainers\n\tmsgbox BattleFrontier_BattleDomeLobby_Text_ShowYouToBattleDome, MSGBOX_DEFAULT\n\tclosemessage\n\tcall BattleFrontier_BattleDomeLobby_EventScript_WalkToDoor\n\tspecial HealPlayerParty\n\twarp MAP_BATTLE_FRONTIER_BATTLE_DOME_CORRIDOR, 23, 6\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 0\n\twaitstate\n\tend"
+  },
+  "label": "BattleFrontier_BattleDomeLobby_EventScript_EnterChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_DOME_CORRIDOR"
+    ]
+  }
+}

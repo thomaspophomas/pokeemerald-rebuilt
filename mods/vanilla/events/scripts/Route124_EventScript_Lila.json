@@ -1,0 +1,26 @@
+{
+  "id": "Route124_EventScript_Lila",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route124/scripts.inc",
+    "sha1": "605960b79a928e3220855307b2a2ffe4c134fa65"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route124/scripts.inc",
+    "rawScript": "trainerbattle_double TRAINER_LILA_AND_ROY_1, Route124_Text_LilaIntro, Route124_Text_LilaDefeat, Route124_Text_LilaNotEnoughMons, Route124_EventScript_RegisterLila\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, Route124_EventScript_RematchLila\n\tmsgbox Route124_Text_LilaPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route124_EventScript_Lila",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route124/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_LILA_AND_ROY_1"
+    ]
+  }
+}

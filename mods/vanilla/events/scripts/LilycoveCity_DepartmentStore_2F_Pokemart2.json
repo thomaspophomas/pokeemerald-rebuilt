@@ -1,0 +1,32 @@
+{
+  "id": "LilycoveCity_DepartmentStore_2F_Pokemart2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_2F/scripts.inc",
+    "sha1": "5b4ee799e1c265da48c7feabc7e0a7e45485708e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_2F/scripts.inc",
+    "rawScript": ".2byte ITEM_POTION\n\t.2byte ITEM_SUPER_POTION\n\t.2byte ITEM_HYPER_POTION\n\t.2byte ITEM_MAX_POTION\n\t.2byte ITEM_REVIVE\n\t.2byte ITEM_REPEL\n\t.2byte ITEM_SUPER_REPEL\n\t.2byte ITEM_MAX_REPEL\n\t.2byte ITEM_WAVE_MAIL\n\t.2byte ITEM_MECH_MAIL\n\tpokemartlistend"
+  },
+  "label": "LilycoveCity_DepartmentStore_2F_Pokemart2",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_2F/scripts.inc",
+  "references": {
+    "items": [
+      "ITEM_HYPER_POTION",
+      "ITEM_MAX_POTION",
+      "ITEM_MAX_REPEL",
+      "ITEM_MECH_MAIL",
+      "ITEM_POTION",
+      "ITEM_REPEL",
+      "ITEM_REVIVE",
+      "ITEM_SUPER_POTION",
+      "ITEM_SUPER_REPEL",
+      "ITEM_WAVE_MAIL"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_EventScript_CompleteInterview",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": "setvar VAR_0x8004, FANCLUB_MEMBER1\n\tspecial BufferFanClubTrainerName\n\tmsgbox LilycoveCity_PokemonTrainerFanClub_Text_ThankYouIllShareThisInfo, MSGBOX_DEFAULT\n\tsetflag FLAG_FAN_CLUB_STRENGTH_SHARED\n\trelease\n\tend"
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_EventScript_CompleteInterview",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_FAN_CLUB_STRENGTH_SHARED"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SSTidalCorridor_Text_CanRestInCabin2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalCorridor/scripts.inc",
+    "sha1": "02d0cfdd4cf17b1fcf50d838485aaf7013da6b13"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalCorridor/scripts.inc",
+    "rawScript": ".string \"It'll be some time before we make land,\\n\"\n\t.string \"I reckon.\\p\"\n\t.string \"You can rest up in your cabin if you'd\\n\"\n\t.string \"like. Your cabin's No. 2.\\p\"\n\t.string \"The bed in there is soft and plushy.\\n\"\n\t.string \"I can attest to how comfy it is!$\""
+  },
+  "label": "SSTidalCorridor_Text_CanRestInCabin2",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SSTidalCorridor/scripts.inc",
+  "references": {}
+}

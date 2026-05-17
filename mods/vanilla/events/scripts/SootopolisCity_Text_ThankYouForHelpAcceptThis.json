@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Text_ThankYouForHelpAcceptThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": ".string \"WALLACE: {PLAYER}{KUN}\u2026\\n\"\n\t.string \"My eyes didn't deceive me.\\p\"\n\t.string \"Thanks to your help, SOOTOPOLIS\u2026\\n\"\n\t.string \"No, all of HOENN was saved.\\p\"\n\t.string \"On behalf of the people, I thank you.\\p\"\n\t.string \"This is a gift from me.\\n\"\n\t.string \"Please accept it.$\""
+  },
+  "label": "SootopolisCity_Text_ThankYouForHelpAcceptThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": "RustboroCity_EventScript_BattleBrendanTorchic",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": "trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_TORCHIC, RustboroCity_Text_BrendanDefeat\n\tsetflag FLAG_DEFEATED_RIVAL_RUSTBORO\n\tgoto RustboroCity_EventScript_BrendanBrineyHint\n\tend"
+  },
+  "label": "RustboroCity_EventScript_BattleBrendanTorchic",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_RIVAL_RUSTBORO"
+    ],
+    "trainers": [
+      "TRAINER_BRENDAN_RUSTBORO_TORCHIC"
+    ]
+  }
+}

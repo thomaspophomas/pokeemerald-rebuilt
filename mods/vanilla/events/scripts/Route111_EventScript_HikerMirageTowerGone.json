@@ -1,0 +1,19 @@
+{
+  "id": "Route111_EventScript_HikerMirageTowerGone",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": "msgbox Route111_Text_MirageTowerHasntBeenSeenSince, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route111_EventScript_HikerMirageTowerGone",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {}
+}

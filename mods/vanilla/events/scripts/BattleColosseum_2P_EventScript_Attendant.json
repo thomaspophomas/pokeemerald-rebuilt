@@ -1,0 +1,19 @@
+{
+  "id": "BattleColosseum_2P_EventScript_Attendant",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "special Script_FacePlayer\n\tmsgbox BattleColosseum_2P_Text_TakePlaceStartBattle, MSGBOX_DEFAULT\n\tspecial Script_ClearHeldMovement\n\tclosemessage\n\tend"
+  },
+  "label": "BattleColosseum_2P_EventScript_Attendant",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {}
+}

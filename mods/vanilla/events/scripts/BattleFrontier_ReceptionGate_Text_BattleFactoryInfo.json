@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ReceptionGate_Text_BattleFactoryInfo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "sha1": "5b6e89c53f6e32c0fa6883bd750252f1d739a97b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "rawScript": ".string \"The BATTLE FACTORY is the large\\n\"\n\t.string \"building that is the closest to us.\\p\"\n\t.string \"An event called the Battle Swap\\n\"\n\t.string \"is conducted there.\\p\"\n\t.string \"The Battle Swap event is offered in\\n\"\n\t.string \"two courses for SINGLE and DOUBLE\\l\"\n\t.string \"BATTLES.$\""
+  },
+  "label": "BattleFrontier_ReceptionGate_Text_BattleFactoryInfo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+  "references": {}
+}

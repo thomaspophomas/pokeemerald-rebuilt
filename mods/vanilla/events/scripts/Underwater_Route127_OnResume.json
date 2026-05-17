@@ -1,0 +1,19 @@
+{
+  "id": "Underwater_Route127_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_Route127/scripts.inc",
+    "sha1": "43f8f4109a524d522a7077eeeab1b78d5c0c0af0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Underwater_Route127/scripts.inc",
+    "rawScript": "call AbnormalWeather_Underwater_SetupEscapeWarp\n\tend"
+  },
+  "label": "Underwater_Route127_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Underwater_Route127/scripts.inc",
+  "references": {}
+}

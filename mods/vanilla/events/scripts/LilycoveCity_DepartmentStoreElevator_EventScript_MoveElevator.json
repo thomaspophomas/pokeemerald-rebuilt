@@ -1,0 +1,26 @@
+{
+  "id": "LilycoveCity_DepartmentStoreElevator_EventScript_MoveElevator",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStoreElevator/scripts.inc",
+    "sha1": "6f3c7492d2e00c249c4b430dcd1afe6781156f25"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStoreElevator/scripts.inc",
+    "rawScript": "special CloseDeptStoreElevatorWindow\n\tclosemessage\n\tapplymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\twaitse\n\tspecial MoveElevator\n\tsetflag FLAG_TEMP_2\n\treturn"
+  },
+  "label": "LilycoveCity_DepartmentStoreElevator_EventScript_MoveElevator",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStoreElevator/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_TEMP_2"
+    ],
+    "vars": [
+      "VAR_LAST_TALKED"
+    ]
+  }
+}

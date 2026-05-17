@@ -1,0 +1,24 @@
+{
+  "id": "SafariZone_South_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SafariZone_South/scripts.inc",
+    "sha1": "f646b8fd9a41bcca9341c62dd81202b659f66065"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SafariZone_South/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, SafariZone_South_OnTransition\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, SafariZone_South_OnFrame\n\t.byte 0"
+  },
+  "label": "SafariZone_South_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/SafariZone_South/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

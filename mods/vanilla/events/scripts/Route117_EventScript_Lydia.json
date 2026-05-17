@@ -1,0 +1,26 @@
+{
+  "id": "Route117_EventScript_Lydia",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route117/scripts.inc",
+    "sha1": "9c87422ff2d4ac9ebaa7fbe97f86e8cb16c2b92b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route117/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_LYDIA_1, Route117_Text_LydiaIntro, Route117_Text_LydiaDefeat, Route117_EventScript_RegisterLydia\n\tspecialvar VAR_RESULT, ShouldTryRematchBattle\n\tgoto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchLydia\n\tmsgbox Route117_Text_LydiaPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route117_EventScript_Lydia",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route117/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "trainers": [
+      "TRAINER_LYDIA_1"
+    ]
+  }
+}

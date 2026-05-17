@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsReallyCoolItsJustMe",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": ".string \"{STR_VAR_1} really is cool, don't\\n\"\n\t.string \"you think so?\\p\"\n\t.string \"Even if it's just me, I'm going to keep\\n\"\n\t.string \"cheering my favorite TRAINER.$\""
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsReallyCoolItsJustMe",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {}
+}

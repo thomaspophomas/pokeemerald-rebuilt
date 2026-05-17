@@ -1,0 +1,19 @@
+{
+  "id": "Route110_TrickHouseEnd_Text_LeavingOnJourney",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "sha1": "3b39ac1484a417dc8392e9b8712bc29e12891169"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "rawScript": ".string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"I am leaving on a journey of discovery.\\n\"\n\t.string \"A quest in search of new tricks.\\p\"\n\t.string \"I wish that you will one day visit and\\n\"\n\t.string \"entertain me again.\\p\"\n\t.string \"And now, farewell!$\""
+  },
+  "label": "Route110_TrickHouseEnd_Text_LeavingOnJourney",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+  "references": {}
+}

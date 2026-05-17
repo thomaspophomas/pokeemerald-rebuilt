@@ -1,0 +1,29 @@
+{
+  "id": "LittlerootTown_MaysHouse_1F_EventScript_MeetRival",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+    "sha1": "4acc9bd3dce8266e27759616e41b13205491adc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+    "rawScript": "playse SE_EXIT\n\tdelay 10\n\taddobject LOCALID_RIVALS_HOUSE_1F_RIVAL\n\tdelay 30\n\tplayse SE_PIN\n\tapplymovement LOCALID_RIVALS_HOUSE_1F_RIVAL, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_RIVALS_HOUSE_1F_RIVAL, Common_Movement_Delay48\n\twaitmovement 0\n\tcall_if_ne VAR_0x8008, 1, LittlerootTown_MaysHouse_1F_EventScript_PlayerFaceMay\n\tplaybgm MUS_ENCOUNTER_MAY, TRUE\n\tcall_if_eq VAR_0x8008, 0, LittlerootTown_MaysHouse_1F_EventScript_MayApproachPlayer0\n\tcall_if_eq VAR_0x8008, 1, LittlerootTown_MaysHouse_1F_EventScript_MayApproachPlayer1\n\tcall_if_eq VAR_0x8008, 2, LittlerootTown_MaysHouse_1F_EventScript_MayApproachPlayer2\n\tmsgbox RivalsHouse_1F_Text_MayWhoAreYou, MSGBOX_DEFAULT\n\tclosemessage\n\tcall_if_eq VAR_0x8008, 0, LittlerootTown_MaysHouse_1F_EventScript_MayGoUpstairs0\n\tcall_if_eq VAR_0x8008, 1, LittlerootTown_MaysHouse_1F_EventScript_MayGoUpstairs1\n\tcall_if_eq VAR_0x8008, 2, LittlerootTown_MaysHouse_1F_EventScript_MayGoUpstairs2\n\tplayse SE_EXIT\n\tremoveobject LOCALID_RIVALS_HOUSE_1F_RIVAL\n\tsetflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MAY\n\tsetflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL\n\tclearflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM\n\tdelay 30\n\tsetvar VAR_LITTLEROOT_RIVAL_STATE, 3\n\tsetvar VAR_LITTLEROOT_TOWN_STATE, 1\n\tsavebgm MUS_DUMMY\n\tfadedefaultbgm\n\treleaseall\n\tend"
+  },
+  "label": "LittlerootTown_MaysHouse_1F_EventScript_MeetRival",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL",
+      "FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MAY",
+      "FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM"
+    ],
+    "vars": [
+      "VAR_LITTLEROOT_RIVAL_STATE",
+      "VAR_LITTLEROOT_TOWN_STATE"
+    ]
+  }
+}

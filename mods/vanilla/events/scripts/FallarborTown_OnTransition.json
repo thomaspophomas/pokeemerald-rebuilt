@@ -1,0 +1,27 @@
+{
+  "id": "FallarborTown_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown/scripts.inc",
+    "sha1": "5eb275ca170342d9d6f005ad109dd88d1bf829e1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown/scripts.inc",
+    "rawScript": "setflag FLAG_VISITED_FALLARBOR_TOWN\n\tsetvar VAR_CONTEST_HALL_STATE, 0\n\tclearflag FLAG_CONTEST_SKETCH_CREATED\n\tend"
+  },
+  "label": "FallarborTown_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/FallarborTown/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_CONTEST_SKETCH_CREATED",
+      "FLAG_VISITED_FALLARBOR_TOWN"
+    ],
+    "vars": [
+      "VAR_CONTEST_HALL_STATE"
+    ]
+  }
+}

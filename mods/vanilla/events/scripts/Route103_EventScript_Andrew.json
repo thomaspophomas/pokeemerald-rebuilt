@@ -1,0 +1,23 @@
+{
+  "id": "Route103_EventScript_Andrew",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route103/scripts.inc",
+    "sha1": "cdbe6074bf0bdfa44494ccf1457b18c3de43e0de"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route103/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_ANDREW, Route103_Text_AndrewIntro, Route103_Text_AndrewDefeated\n\tmsgbox Route103_Text_AndrewPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route103_EventScript_Andrew",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route103/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ANDREW"
+    ]
+  }
+}

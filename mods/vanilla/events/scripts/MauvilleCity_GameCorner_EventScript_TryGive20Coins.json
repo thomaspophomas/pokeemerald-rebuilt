@@ -1,0 +1,26 @@
+{
+  "id": "MauvilleCity_GameCorner_EventScript_TryGive20Coins",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "sha1": "3db7cd216c9a2c35e8176ef8b4a1d9ec68649c7b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+    "rawScript": "goto_if_set FLAG_RECEIVED_20_COINS, MauvilleCity_GameCorner_EventScript_PokefanMNormal\n\tcheckcoins VAR_TEMP_1\n\tgoto_if_ge VAR_TEMP_1, 1, MauvilleCity_GameCorner_EventScript_PokefanMNormal @ Only give 20 coins if player has no coins\n\tsetflag FLAG_RECEIVED_20_COINS\n\taddcoins 20\n\tmsgbox MauvilleCity_GameCorner_Text_LuckOnlyLastSoLongTakeCoins, MSGBOX_DEFAULT\n\tplayse SE_SHOP\n\tgoto MauvilleCity_GameCorner_EventScript_PokefanMNormal\n\tend"
+  },
+  "label": "MauvilleCity_GameCorner_EventScript_TryGive20Coins",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_20_COINS"
+    ],
+    "vars": [
+      "VAR_TEMP_1"
+    ]
+  }
+}

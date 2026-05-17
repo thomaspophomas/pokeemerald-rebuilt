@@ -1,0 +1,27 @@
+{
+  "id": "CaveOfOrigin_B1F_EventScript_AtSkyPillar",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+    "sha1": "fdccb9d45cf308bd7d76aa97e9b5d7eb16b80004"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+    "rawScript": "msgbox CaveOfOrigin_B1F_Text_WellHeadToSkyPillar, MSGBOX_DEFAULT\n\tclosemessage\n\tplayse SE_EXIT\n\tfadescreenspeed FADE_TO_BLACK, 4\n\tsetflag FLAG_WALLACE_GOES_TO_SKY_PILLAR\n\tsetvar VAR_SOOTOPOLIS_CITY_STATE, 3\n\tremoveobject LOCALID_CAVE_OF_ORIGIN_WALLACE\n\tclearflag FLAG_HIDE_SKY_PILLAR_WALLACE\n\tfadescreen FADE_FROM_BLACK\n\trelease\n\tend"
+  },
+  "label": "CaveOfOrigin_B1F_EventScript_AtSkyPillar",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_SKY_PILLAR_WALLACE",
+      "FLAG_WALLACE_GOES_TO_SKY_PILLAR"
+    ],
+    "vars": [
+      "VAR_SOOTOPOLIS_CITY_STATE"
+    ]
+  }
+}

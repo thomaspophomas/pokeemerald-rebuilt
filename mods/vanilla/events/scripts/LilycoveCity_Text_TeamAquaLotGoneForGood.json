@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_TeamAquaLotGoneForGood",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"That cave in the cove\u2026\\p\"\n\t.string \"I didn't notice it right away,\\n\"\n\t.string \"but it's completely empty now.\\p\"\n\t.string \"That TEAM AQUA lot, they must\\n\"\n\t.string \"have gone away for good.$\""
+  },
+  "label": "LilycoveCity_Text_TeamAquaLotGoneForGood",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

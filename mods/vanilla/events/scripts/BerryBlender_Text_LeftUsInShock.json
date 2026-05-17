@@ -1,0 +1,19 @@
+{
+  "id": "BerryBlender_Text_LeftUsInShock",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": ".string \"Oh, dear me\u2026\\p\"\n\t.string \"You've left us in shock!$\""
+  },
+  "label": "BerryBlender_Text_LeftUsInShock",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {}
+}

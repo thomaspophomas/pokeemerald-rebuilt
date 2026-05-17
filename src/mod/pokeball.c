@@ -71,6 +71,49 @@ const struct ModPokeBallDefinition *PokeBallApi_GetDefinition(u16 itemId)
     return FindVanillaBall(itemId);
 }
 
+u8 PokeBallApi_NetBallCatchModifier(const struct PokeBallCatchContext *context)
+{
+    if (context->targetType1 == TYPE_WATER || context->targetType2 == TYPE_WATER
+     || context->targetType1 == TYPE_BUG || context->targetType2 == TYPE_BUG)
+        return 30;
+
+    return 10;
+}
+
+u8 PokeBallApi_DiveBallCatchModifier(const struct PokeBallCatchContext *context)
+{
+    if (context->mapType == MAP_TYPE_UNDERWATER)
+        return 35;
+
+    return 10;
+}
+
+u8 PokeBallApi_NestBallCatchModifier(const struct PokeBallCatchContext *context)
+{
+    if (context->targetLevel < 40)
+    {
+        u8 modifier = 40 - context->targetLevel;
+        if (modifier <= 9)
+            modifier = 10;
+        return modifier;
+    }
+
+    return 10;
+}
+
+u8 PokeBallApi_RepeatBallCatchModifier(const struct PokeBallCatchContext *context)
+{
+    return context->alreadyCaught ? 30 : 10;
+}
+
+u8 PokeBallApi_TimerBallCatchModifier(const struct PokeBallCatchContext *context)
+{
+    if (context->battleTurnCounter + 10 > 40)
+        return 40;
+
+    return context->battleTurnCounter + 10;
+}
+
 u8 PokeBallApi_GetCatchModifier(const struct PokeBallCatchContext *context)
 {
     const struct ModPokeBallDefinition *definition;
@@ -87,29 +130,15 @@ u8 PokeBallApi_GetCatchModifier(const struct PokeBallCatchContext *context)
     case ITEM_MASTER_BALL:
         return POKEBALL_CATCH_MODIFIER_MASTER;
     case ITEM_NET_BALL:
-        if (context->targetType1 == TYPE_WATER || context->targetType2 == TYPE_WATER
-         || context->targetType1 == TYPE_BUG || context->targetType2 == TYPE_BUG)
-            return 30;
-        return 10;
+        return PokeBallApi_NetBallCatchModifier(context);
     case ITEM_DIVE_BALL:
-        if (context->mapType == MAP_TYPE_UNDERWATER)
-            return 35;
-        return 10;
+        return PokeBallApi_DiveBallCatchModifier(context);
     case ITEM_NEST_BALL:
-        if (context->targetLevel < 40)
-        {
-            u8 modifier = 40 - context->targetLevel;
-            if (modifier <= 9)
-                modifier = 10;
-            return modifier;
-        }
-        return 10;
+        return PokeBallApi_NestBallCatchModifier(context);
     case ITEM_REPEAT_BALL:
-        return context->alreadyCaught ? 30 : 10;
+        return PokeBallApi_RepeatBallCatchModifier(context);
     case ITEM_TIMER_BALL:
-        if (context->battleTurnCounter + 10 > 40)
-            return 40;
-        return context->battleTurnCounter + 10;
+        return PokeBallApi_TimerBallCatchModifier(context);
     }
 
     if (definition != NULL)

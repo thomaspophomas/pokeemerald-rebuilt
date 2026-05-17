@@ -1,0 +1,19 @@
+{
+  "id": "SurfPichu_Slot1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_pichu.inc",
+    "sha1": "b8f12719008c830f693c4c1d3228265f92693526"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_pichu.inc",
+    "rawScript": "setmonmove 1, 2, MOVE_SURF\n\treturn"
+  },
+  "label": "SurfPichu_Slot1",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_pichu.inc",
+  "references": {}
+}

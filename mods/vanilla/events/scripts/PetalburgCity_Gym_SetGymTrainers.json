@@ -1,0 +1,29 @@
+{
+  "id": "PetalburgCity_Gym_SetGymTrainers",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/set_gym_trainers.inc",
+    "sha1": "90019f7a2097712cc57c824c9118423a5a8171bd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/set_gym_trainers.inc",
+    "rawScript": "settrainerflag TRAINER_RANDALL\n\tsettrainerflag TRAINER_PARKER\n\tsettrainerflag TRAINER_GEORGE\n\tsettrainerflag TRAINER_BERKE\n\tsettrainerflag TRAINER_MARY\n\tsettrainerflag TRAINER_ALEXIA\n\tsettrainerflag TRAINER_JODY\n\treturn"
+  },
+  "label": "PetalburgCity_Gym_SetGymTrainers",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/scripts/set_gym_trainers.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ALEXIA",
+      "TRAINER_BERKE",
+      "TRAINER_GEORGE",
+      "TRAINER_JODY",
+      "TRAINER_MARY",
+      "TRAINER_PARKER",
+      "TRAINER_RANDALL"
+    ]
+  }
+}

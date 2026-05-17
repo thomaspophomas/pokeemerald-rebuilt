@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_BerkePostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"Your father really is strong.\\n\"\n\t.string \"He's a TRAINER worth my respect.\\p\"\n\t.string \"And, I sense the same glow coming\\n\"\n\t.string \"from you as your father.\\p\"\n\t.string \"I hope that you'll stage a terrific\\n\"\n\t.string \"battle with your father!$\""
+  },
+  "label": "PetalburgCity_Gym_Text_BerkePostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

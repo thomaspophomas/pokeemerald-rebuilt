@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Flat1_2F_Text_HelloDoYouKnowFunnyPhrase",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+    "sha1": "bce61defe394f3175dd583157b086f1687d0ac6f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+    "rawScript": ".string \"Oh, hello!\\n\"\n\t.string \"Welcome to the PEPPER household.\\p\"\n\t.string \"I have a question for you.\\n\"\n\t.string \"Have you ever baby-sat?\\p\"\n\t.string \"You see, I'm a new father, so raising\\n\"\n\t.string \"a child is all new to me.\\p\"\n\t.string \"And I have a problem. My daughter\\n\"\n\t.string \"WALDA doesn't laugh enough.\\p\"\n\t.string \"I think she'd laugh for me if I told\\n\"\n\t.string \"her something funny.\\p\"\n\t.string \"Do you know of a funny word or\\n\"\n\t.string \"phrase you can tell me?$\""
+  },
+  "label": "RustboroCity_Flat1_2F_Text_HelloDoYouKnowFunnyPhrase",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+  "references": {}
+}

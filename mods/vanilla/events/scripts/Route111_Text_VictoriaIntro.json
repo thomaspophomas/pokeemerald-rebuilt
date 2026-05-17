@@ -1,0 +1,19 @@
+{
+  "id": "Route111_Text_VictoriaIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": ".string \"Oh, my goodness! Aren't you young?\\p\"\n\t.string \"You must be quite the TRAINER to beat\\n\"\n\t.string \"my husband, though.\\p\"\n\t.string \"It's my turn to battle now!$\""
+  },
+  "label": "Route111_Text_VictoriaIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "MossdeepCity_House4_EventScript_NinjaBoy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_House4/scripts.inc",
+    "sha1": "06b64434090fa892c2b284488f6e34304b59f7aa"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_House4/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tspecial CheckPlayerHasSecretBase\n\tgoto_if_eq VAR_RESULT, FALSE, MossdeepCity_House4_EventScript_NoSecretBase\n\tspecial GetSecretBaseNearbyMapName\n\tmsgbox MossdeepCity_House4_Text_YouMadeSecretBaseNearX, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "MossdeepCity_House4_EventScript_NinjaBoy",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_House4/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

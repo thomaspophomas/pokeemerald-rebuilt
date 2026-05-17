@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerBattleRoom_EventScript_WarpToLobbyLinkMultis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "sha1": "09b678d8717203a622b1d8714d904bcdeb37d08a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "rawScript": "tower_closelink\n\twarp MAP_BATTLE_FRONTIER_BATTLE_TOWER_LOBBY, 18, 6\n\twaitstate\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerBattleRoom_EventScript_WarpToLobbyLinkMultis",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_TOWER_LOBBY"
+    ]
+  }
+}

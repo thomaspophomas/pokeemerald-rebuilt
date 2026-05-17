@@ -1,0 +1,25 @@
+{
+  "id": "BattleFrontier_BattlePyramidFloor_OnResume",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "sha1": "a6f6792ac2bc39a05028dabd4e88f5984d84d4a5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "rawScript": "pyramid_setfloorpal\n\tfrontier_getstatus\n\tswitch VAR_TEMP_CHALLENGE_STATUS\n\tcase 0, BattleFrontier_BattlePyramidFloor_EventScript_ReadyChallenge\n\tcase CHALLENGE_STATUS_SAVING, BattleFrontier_BattlePyramid_EventScript_WarpToLobby\n\tcase CHALLENGE_STATUS_PAUSED, BattleFrontier_BattlePyramidFloor_EventScript_ReadyChallenge\n\tfrontier_get FRONTIER_DATA_BATTLE_OUTCOME\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_RAN, BattleFrontier_BattlePyramidFloor_EventScript_ResetParty\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, BattleFrontier_BattlePyramidFloor_EventScript_ResetParty\n\tgoto_if_eq VAR_RESULT, 0, BattleFrontier_BattlePyramidFloor_EventScript_ResetParty\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_LOST, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_DREW, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_FORFEITED, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost\n\tfrontier_isbattletype BATTLE_TYPE_TRAINER  @ VAR_RESULT seems to be ignored here\n\tsetvar VAR_TEMP_D, 1"
+  },
+  "label": "BattleFrontier_BattlePyramidFloor_OnResume",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_CHALLENGE_STATUS",
+      "VAR_TEMP_D"
+    ]
+  }
+}

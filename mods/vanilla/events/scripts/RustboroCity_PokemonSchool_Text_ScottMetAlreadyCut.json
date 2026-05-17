@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "sha1": "155fc7f1cee833cb06df85a407e5f98f216a928e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "rawScript": ".string \"Hello? Didn't we meet before?\\n\"\n\t.string \"I think back in PETALBURG CITY.\\p\"\n\t.string \"Let me introduce myself.\\n\"\n\t.string \"My name's SCOTT.\\p\"\n\t.string \"I've been traveling everywhere in\\n\"\n\t.string \"search of outstanding TRAINERS.\\p\"\n\t.string \"More specifically, I'm looking for\\n\"\n\t.string \"POK\u00e9MON battle experts.\\p\"\n\t.string \"So, what brings you to this SCHOOL?\\n\"\n\t.string \"Are you a TRAINER, too?\\p\"\n\t.string \"The first thing you should do is to\\n\"\n\t.string \"have a POK\u00e9MON learn the move CUT.\\p\"\n\t.string \"If I remember correctly, someone in\\n\"\n\t.string \"this town has CUT.$\""
+  },
+  "label": "RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+  "references": {}
+}

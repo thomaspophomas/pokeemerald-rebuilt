@@ -1,0 +1,23 @@
+{
+  "id": "Route103_EventScript_RivalMay",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route103/scripts.inc",
+    "sha1": "cdbe6074bf0bdfa44494ccf1457b18c3de43e0de"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route103/scripts.inc",
+    "rawScript": "msgbox Route103_Text_MayRoute103Pokemon, MSGBOX_DEFAULT\n\tclosemessage\n\tplaybgm MUS_ENCOUNTER_MAY, TRUE\n\tapplymovement LOCALID_ROUTE103_RIVAL, Common_Movement_FacePlayer\n\twaitmovement 0\n\tapplymovement LOCALID_ROUTE103_RIVAL, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_ROUTE103_RIVAL, Common_Movement_Delay48\n\twaitmovement 0\n\tmsgbox Route103_Text_MayLetsBattle, MSGBOX_DEFAULT\n\tswitch VAR_STARTER_MON\n\tcase 0, Route103_EventScript_StartMayBattleTreecko\n\tcase 1, Route103_EventScript_StartMayBattleTorchic\n\tcase 2, Route103_EventScript_StartMayBattleMudkip\n\tend"
+  },
+  "label": "Route103_EventScript_RivalMay",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route103/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_STARTER_MON"
+    ]
+  }
+}

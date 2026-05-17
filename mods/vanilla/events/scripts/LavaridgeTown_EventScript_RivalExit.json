@@ -1,0 +1,26 @@
+{
+  "id": "LavaridgeTown_EventScript_RivalExit",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": "closemessage\n\tremoveobject LOCALID_LAVARIDGE_RIVAL\n\taddobject LOCALID_LAVARIDGE_RIVAL_ON_BIKE\n\tdelay 30\n\tcall_if_eq VAR_0x8008, 9, LavaridgeTown_EventScript_RivalExit1\n\tcall_if_ne VAR_0x8008, 9, LavaridgeTown_EventScript_RivalExit2\n\tremoveobject LOCALID_LAVARIDGE_RIVAL_ON_BIKE\n\tsetvar VAR_LAVARIDGE_TOWN_STATE, 2\n\tclearflag FLAG_HIDE_MAP_NAME_POPUP\n\tsavebgm MUS_DUMMY\n\tfadedefaultbgm\n\treleaseall\n\tend"
+  },
+  "label": "LavaridgeTown_EventScript_RivalExit",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_MAP_NAME_POPUP"
+    ],
+    "vars": [
+      "VAR_LAVARIDGE_TOWN_STATE"
+    ]
+  }
+}

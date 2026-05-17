@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_2F_Text_LukeNotEnoughMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_2F/scripts.inc",
+    "sha1": "bc76e62a0ca08b33eb2220b94b2aff96bd7a1311"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_2F/scripts.inc",
+    "rawScript": ".string \"LUKE: If you want to take me on,\\n\"\n\t.string \"bring some more POK\u00e9MON.\\p\"\n\t.string \"If you don't, I won't be able to show\\n\"\n\t.string \"off to my girl how cool I am!$\""
+  },
+  "label": "MtPyre_2F_Text_LukeNotEnoughMons",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_2F/scripts.inc",
+  "references": {}
+}

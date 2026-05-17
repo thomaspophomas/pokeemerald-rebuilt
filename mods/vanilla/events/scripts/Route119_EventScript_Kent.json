@@ -1,0 +1,23 @@
+{
+  "id": "Route119_EventScript_Kent",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119/scripts.inc",
+    "sha1": "576fe3fab09726df20b1bbf3016bc5306f0e0f3d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_KENT, Route119_Text_KentIntro, Route119_Text_KentDefeat\n\tmsgbox Route119_Text_KentPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route119_EventScript_Kent",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route119/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_KENT"
+    ]
+  }
+}

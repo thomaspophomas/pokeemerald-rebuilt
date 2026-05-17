@@ -1,0 +1,26 @@
+{
+  "id": "Route120_EventScript_Steven",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route120/scripts.inc",
+    "sha1": "c3ab570e7c5b1ea2c74415d703646f5a362564ad"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route120/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_NOT_READY_FOR_BATTLE_ROUTE_120, Route120_EventScript_StevenAskReadyForBattle\n\tmsgbox Route120_Text_StevenGreeting, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, Route120_EventScript_StevenNotReady\n\tgoto Route120_EventScript_StevenBattleKecleon\n\tend"
+  },
+  "label": "Route120_EventScript_Steven",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route120/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_NOT_READY_FOR_BATTLE_ROUTE_120"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

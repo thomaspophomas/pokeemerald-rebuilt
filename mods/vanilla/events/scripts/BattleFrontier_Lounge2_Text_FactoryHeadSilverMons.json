@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge2_Text_FactoryHeadSilverMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "sha1": "d4d4f7c0802f8118a63eaf9b68eb6bcff146ff4d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "rawScript": ".string \"Have you battled the FACTORY HEAD\\n\"\n\t.string \"already?\\p\"\n\t.string \"Let me think\u2026 When he goes to battle,\\n\"\n\t.string \"he just gets three rental POK\u00e9MON.\\p\"\n\t.string \"He battles under pretty much the same\\n\"\n\t.string \"conditions as you.$\""
+  },
+  "label": "BattleFrontier_Lounge2_Text_FactoryHeadSilverMons",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+  "references": {}
+}

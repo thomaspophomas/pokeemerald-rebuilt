@@ -1,0 +1,19 @@
+{
+  "id": "Text_WantToCut",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/field_move_scripts.inc",
+    "sha1": "83a0d3bb9ff1263278592b6a78563154bb422956"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/field_move_scripts.inc",
+    "rawScript": ".string \"This tree looks like it can be\\n\"\n\t.string \"CUT down!\\p\"\n\t.string \"Would you like to CUT it?$\""
+  },
+  "label": "Text_WantToCut",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/field_move_scripts.inc",
+  "references": {}
+}

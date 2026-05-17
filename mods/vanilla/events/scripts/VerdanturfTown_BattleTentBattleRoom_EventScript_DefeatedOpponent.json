@@ -1,0 +1,23 @@
+{
+  "id": "VerdanturfTown_BattleTentBattleRoom_EventScript_DefeatedOpponent",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+    "sha1": "ab3b693d78c01bf41de27c238af8f5c28d91cffd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+    "rawScript": "frontier_get FRONTIER_DATA_BATTLE_NUM\n\taddvar VAR_RESULT, 1\n\tfrontier_set FRONTIER_DATA_BATTLE_NUM, VAR_RESULT\n\tswitch VAR_RESULT\n\tcase 3, VerdanturfTown_BattleTentBattleRoom_EventScript_WarpToLobbyWon\n\tapplymovement LOCALID_VERDANTURF_TENT_BATTLE_OPPONENT, VerdanturfTown_BattleTentBattleRoom_Movement_OpponentExit\n\twaitmovement 0\n\tremoveobject LOCALID_VERDANTURF_TENT_BATTLE_OPPONENT\n\tapplymovement LOCALID_VERDANTURF_TENT_BATTLE_ATTENDANT, Common_Movement_WalkInPlaceFasterDown\n\tapplymovement LOCALID_VERDANTURF_TENT_BATTLE_PLAYER, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tmsgbox BattleFrontier_BattlePalaceBattleRoom_Text_LetMeRestoreYourMons, MSGBOX_DEFAULT\n\tspecial LoadPlayerParty\n\tspecial SavePlayerParty\n\tfrontier_setpartyorder FRONTIER_PARTY_SIZE\n\tplayfanfare MUS_HEAL\n\twaitfanfare\n\tspecial HealPlayerParty"
+  },
+  "label": "VerdanturfTown_BattleTentBattleRoom_EventScript_DefeatedOpponent",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

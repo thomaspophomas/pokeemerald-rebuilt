@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Text_MayExplainGoGogglesChallengeDad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": ".string \"MAY: With those GO-GOGGLES, you'll\\n\"\n\t.string \"have no trouble getting through the\\l\"\n\t.string \"desert near ROUTE 111.\\p\"\n\t.string \"But, wow, {PLAYER}{KUN}\u2026\\n\"\n\t.string \"Challenging GYMS\u2026\\p\"\n\t.string \"You're trying hard because you don't\\n\"\n\t.string \"want to lose to me, I bet!\\p\"\n\t.string \"{PLAYER}{KUN}, I think I should challenge\\n\"\n\t.string \"your dad in PETALBURG GYM.\\p\"\n\t.string \"See you again!$\""
+  },
+  "label": "LavaridgeTown_Text_MayExplainGoGogglesChallengeDad",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {}
+}

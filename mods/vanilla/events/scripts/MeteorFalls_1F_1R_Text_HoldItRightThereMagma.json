@@ -1,0 +1,19 @@
+{
+  "id": "MeteorFalls_1F_1R_Text_HoldItRightThereMagma",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "sha1": "9f4ded44922a9eecca2a712d1673b053babe0bae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "rawScript": ".string \"Hold it right there, TEAM MAGMA!\\p\"\n\t.string \"You're badly mistaken if you think you\\n\"\n\t.string \"can have your way with the world!$\""
+  },
+  "label": "MeteorFalls_1F_1R_Text_HoldItRightThereMagma",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+  "references": {}
+}

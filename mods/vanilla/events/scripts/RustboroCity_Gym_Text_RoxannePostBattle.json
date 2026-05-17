@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Gym_Text_RoxannePostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Gym/scripts.inc",
+    "sha1": "e0aa9de4fed612674104e48c7646854400dcecde"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Gym/scripts.inc",
+    "rawScript": ".string \"Since you are so strong, you should\\n\"\n\t.string \"challenge other GYM LEADERS.\\p\"\n\t.string \"By battling many TRAINERS, you should\\n\"\n\t.string \"learn many things.$\""
+  },
+  "label": "RustboroCity_Gym_Text_RoxannePostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Gym/scripts.inc",
+  "references": {}
+}

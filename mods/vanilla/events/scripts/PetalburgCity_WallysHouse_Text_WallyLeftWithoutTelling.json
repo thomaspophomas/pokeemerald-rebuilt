@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_WallysHouse/scripts.inc",
+    "sha1": "ec42bb72f0a50cce9db9e173ec63e3e0787b8406"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_WallysHouse/scripts.inc",
+    "rawScript": ".string \"I want you to keep this a secret\\n\"\n\t.string \"from my husband\u2026\\p\"\n\t.string \"But our WALLY left VERDANTURF TOWN\\n\"\n\t.string \"without telling anyone.\\p\"\n\t.string \"You know, WALLY is frail, but\\n\"\n\t.string \"he's surprisingly strong-willed.\\p\"\n\t.string \"I'm sure that he'll come back safe\\n\"\n\t.string \"and sound one day!$\""
+  },
+  "label": "PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_WallysHouse/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Text_GoingToCompeteInBattleTent",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": ".string \"Wroooar! I'm going to compete in\\n\"\n\t.string \"the BATTLE TENT, too!\\p\"\n\t.string \"But before that, I need to catch\\n\"\n\t.string \"some POK\u00e9MON!$\""
+  },
+  "label": "SlateportCity_Text_GoingToCompeteInBattleTent",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {}
+}

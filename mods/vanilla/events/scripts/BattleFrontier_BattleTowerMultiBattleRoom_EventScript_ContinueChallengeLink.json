@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ContinueChallengeLink",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+    "sha1": "71e71dc7e048f3a27e89d0ae41c736d25233e068"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+    "rawScript": "setvar VAR_0x8004, BATTLE_TOWER_LINK_CONTINUE\n\tsetvar VAR_0x8005, 0\n\tmessage gText_LinkStandby3\n\twaitmessage\n\tspecial LinkRetireStatusWithBattleTowerPartner\n\tgoto_if_ne VAR_RESULT, BATTLE_TOWER_LINKSTAT_CONTINUE, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_WarpToLobbyLost\n\tgoto BattleFrontier_BattleTowerMultiBattleRoom_EventScript_LinkDelayForMsg\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ContinueChallengeLink",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

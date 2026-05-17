@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideWest_Text_DomeAceLookedBecauseOfMyCheering",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": ".string \"Whaaaaaat?!\\n\"\n\t.string \"Pfft!\\p\"\n\t.string \"That only happened because\\n\"\n\t.string \"I happened to be sitting next to you!\\p\"\n\t.string \"The DOME ACE only looked our way\\n\"\n\t.string \"because my cheering was so loud!$\""
+  },
+  "label": "BattleFrontier_OutsideWest_Text_DomeAceLookedBecauseOfMyCheering",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,27 @@
+{
+  "id": "BattleFrontier_ScottsHouse_EventScript_GiveGoldShield",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "sha1": "c30df9e905f6d4b9d9e1eaf4d4fccf30db88e083"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow, MSGBOX_DEFAULT\n\tgivedecoration DECOR_GOLD_SHIELD\n\tgoto_if_eq VAR_RESULT, FALSE, BattleFrontier_ScottsHouse_EventScript_NoRoomForShield\n\tsetflag FLAG_RECEIVED_GOLD_SHIELD\n\tsetflag FLAG_TEMP_3\n\tgoto BattleFrontier_ScottsHouse_EventScript_GivenShield\n\tend"
+  },
+  "label": "BattleFrontier_ScottsHouse_EventScript_GiveGoldShield",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_GOLD_SHIELD",
+      "FLAG_TEMP_3"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_Text_ExplainRulesWhenInDanger",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": ".string \"Depending on its nature, a POK\u00e9MON may\\n\"\n\t.string \"start using moves that don't match its\\l\"\n\t.string \"nature when it is in trouble.\\p\"\n\t.string \"If a POK\u00e9MON begins behaving oddly\\n\"\n\t.string \"in a pinch, watch it carefully.$\""
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_Text_ExplainRulesWhenInDanger",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {}
+}

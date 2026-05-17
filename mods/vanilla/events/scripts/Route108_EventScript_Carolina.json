@@ -1,0 +1,23 @@
+{
+  "id": "Route108_EventScript_Carolina",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route108/scripts.inc",
+    "sha1": "1a6cf722c4ab0951d224d753da9f7fca73caf226"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route108/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_CAROLINA, Route108_Text_CarolinaIntro, Route108_Text_CarolinaDefeated\n\tmsgbox Route108_Text_CarolinaPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route108_EventScript_Carolina",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route108/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_CAROLINA"
+    ]
+  }
+}

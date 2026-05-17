@@ -1,0 +1,19 @@
+{
+  "id": "BerryBlender_Text_SaveGameBeforeBerryBlenderLink",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": ".string \"{POKEBLOCK}S will be made with your friends \\n\"\n\t.string \"from BERRIES in the BERRY BLENDER.\\p\"\n\t.string \"Is it okay to save the game before\\n\"\n\t.string \"linking with your friends?$\""
+  },
+  "label": "BerryBlender_Text_SaveGameBeforeBerryBlenderLink",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {}
+}

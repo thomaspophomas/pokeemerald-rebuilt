@@ -1,0 +1,26 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_EventScript_EnterChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": "special SavePlayerParty\n\tfrontier_setpartyorder FRONTIER_PARTY_SIZE\n\tmsgbox BattleFrontier_BattlePalaceLobby_Text_FollowMe, MSGBOX_DEFAULT\n\tclosemessage\n\tcall BattleFrontier_BattlePalaceLobby_EventScript_WalkToDoor\n\twarp MAP_BATTLE_FRONTIER_BATTLE_PALACE_CORRIDOR, 8, 13\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 0\n\twaitstate\n\tend"
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_EventScript_EnterChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_PALACE_CORRIDOR"
+    ]
+  }
+}

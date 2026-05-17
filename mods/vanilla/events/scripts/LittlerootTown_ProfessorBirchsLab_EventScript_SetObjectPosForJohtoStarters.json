@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_EventScript_SetObjectPosForJohtoStarters",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": "addobject LOCALID_BIRCHS_LAB_CYNDAQUIL_BALL\n\taddobject LOCALID_BIRCHS_LAB_TOTODILE_BALL\n\taddobject LOCALID_BIRCHS_LAB_CHIKORITA_BALL\n\taddobject LOCALID_BIRCHS_LAB_RIVAL\n\tturnobject LOCALID_BIRCHS_LAB_CYNDAQUIL_BALL, DIR_SOUTH\n\tsetobjectxy LOCALID_BIRCHS_LAB_CYNDAQUIL_BALL, 8, 4\n\tturnobject LOCALID_BIRCHS_LAB_TOTODILE_BALL, DIR_SOUTH\n\tsetobjectxy LOCALID_BIRCHS_LAB_TOTODILE_BALL, 9, 4\n\tturnobject LOCALID_BIRCHS_LAB_CHIKORITA_BALL, DIR_SOUTH\n\tsetobjectxy LOCALID_BIRCHS_LAB_CHIKORITA_BALL, 10, 4\n\tturnobject LOCALID_BIRCHS_LAB_BIRCH, DIR_SOUTH\n\tsetobjectxy LOCALID_BIRCHS_LAB_BIRCH, 6, 4\n\tturnobject LOCALID_BIRCHS_LAB_RIVAL, DIR_EAST\n\tsetobjectxy LOCALID_BIRCHS_LAB_RIVAL, 5, 5\n\tend"
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_EventScript_SetObjectPosForJohtoStarters",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

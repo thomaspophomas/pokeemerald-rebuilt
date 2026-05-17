@@ -1,0 +1,23 @@
+{
+  "id": "DewfordTown_EventScript_RejectTrendyPhrase",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown/scripts.inc",
+    "sha1": "e9e724e6d3bba641bcb2d4263fe226ee6c1b4840"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown/scripts.inc",
+    "rawScript": "msgbox DewfordTown_Text_TellMeWhatsNewAndIn, MSGBOX_DEFAULT\n\tsetvar VAR_0x8004, EASY_CHAT_TYPE_TRENDY_PHRASE\n\tcall Common_ShowEasyChatScreen\n\tlock\n\tfaceplayer\n\tgoto_if_eq VAR_RESULT, TRUE, DewfordTown_EventScript_GiveNewTrendyPhrase\n\tgoto_if_eq VAR_RESULT, FALSE, DewfordTown_EventScript_CancelNewTrendyPhrase\n\tend"
+  },
+  "label": "DewfordTown_EventScript_RejectTrendyPhrase",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DewfordTown/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

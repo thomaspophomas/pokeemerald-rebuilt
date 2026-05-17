@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_Text_TownSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown/scripts.inc",
+    "sha1": "a2afe22497d0ac4c974698e76e0cda7094b4e79a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown/scripts.inc",
+    "rawScript": ".string \"PACIFIDLOG TOWN\\p\"\n\t.string \"\u201cWhere the morning sun smiles upon\\n\"\n\t.string \"the waters.\u201d$\""
+  },
+  "label": "PacifidlogTown_Text_TownSign",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PacifidlogTown/scripts.inc",
+  "references": {}
+}

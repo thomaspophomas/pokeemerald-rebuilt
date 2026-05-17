@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_CoveLilyMotel_1F_EventScript_BlockingTV",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+    "sha1": "6fbfa2a2632f8e86026cc0a8c8fa9a98046f56ac"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+    "rawScript": "lockall\n\tplayse SE_PIN\n\tapplymovement LOCALID_MOTEL_OWNER, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_MOTEL_OWNER, Common_Movement_Delay48\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tmsgbox LilycoveCity_CoveLilyMotel_1F_Text_CantSeeTheTV, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_PLAYER, LilycoveCity_CoveLilyMotel_1F_Movement_PlayerPushFromTV\n\tapplymovement LOCALID_MOTEL_OWNER, LilycoveCity_CoveLilyMotel_1F_Movement_OwnerPushPlayer\n\twaitmovement 0\n\tapplymovement LOCALID_MOTEL_OWNER, LilycoveCity_CoveLilyMotel_1F_Movement_OwnerReturn\n\twaitmovement 0\n\trelease\n\tend"
+  },
+  "label": "LilycoveCity_CoveLilyMotel_1F_EventScript_BlockingTV",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+  "references": {}
+}

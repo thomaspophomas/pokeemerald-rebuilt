@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeLobby_Text_TrainersWhicheverPathIChoose",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "sha1": "e2be0fe89296e221d6bdf7bc81fdcf739064bd1b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+    "rawScript": ".string \"What is this weird place?\\n\"\n\t.string \"I can't figure it out at all!\\p\"\n\t.string \"I've taken the challenge a bunch\\n\"\n\t.string \"of times, but all I ever do is run into\\l\"\n\t.string \"TRAINERS whichever path I choose.$\""
+  },
+  "label": "BattleFrontier_BattlePikeLobby_Text_TrainersWhicheverPathIChoose",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc",
+  "references": {}
+}

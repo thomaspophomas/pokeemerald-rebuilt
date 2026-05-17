@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Gym_B1F_Text_DaphnePostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+    "sha1": "e71da18f579da173413d5f8c5027d9e9c4f14d20"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+    "rawScript": ".string \"The grace you bring to battle is\\n\"\n\t.string \"fabulous.\\p\"\n\t.string \"Oh\u2026 I'm so fortunate to have found\\n\"\n\t.string \"POK\u00e9MON.$\""
+  },
+  "label": "SootopolisCity_Gym_B1F_Text_DaphnePostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+  "references": {}
+}

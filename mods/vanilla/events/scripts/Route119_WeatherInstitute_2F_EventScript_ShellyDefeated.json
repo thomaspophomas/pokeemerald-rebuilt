@@ -1,0 +1,28 @@
+{
+  "id": "Route119_WeatherInstitute_2F_EventScript_ShellyDefeated",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "sha1": "fb62e5a84003aa6247f1e7fe6ea409ec86ac92cc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "rawScript": "msgbox Route119_WeatherInstitute_2F_Text_ShellyPostBattle, MSGBOX_DEFAULT\n\tclosemessage\n\taddobject LOCALID_WEATHER_INSTITUTE_2F_GRUNT_3\n\tapplymovement LOCALID_WEATHER_INSTITUTE_2F_GRUNT_3, Route119_WeatherInstitute_2F_Movement_GruntApproachShelly\n\tapplymovement LOCALID_PLAYER, Route119_WeatherInstitute_2F_Movement_ShovePlayerOutOfWay\n\twaitmovement 0\n\tmsgbox Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy, MSGBOX_DEFAULT\n\tclosemessage\n\tplayse SE_PIN\n\tapplymovement LOCALID_WEATHER_INSTITUTE_2F_SHELLY, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_WEATHER_INSTITUTE_2F_SHELLY, Common_Movement_Delay48\n\twaitmovement 0\n\tmsgbox Route119_WeatherInstitute_2F_Text_WeHaveToHurryToMtPyre, MSGBOX_DEFAULT\n\tclosemessage\n\tsetvar VAR_WEATHER_INSTITUTE_STATE, 1\n\tclearflag FLAG_HIDE_WEATHER_INSTITUTE_2F_WORKERS\n\tfadedefaultbgm\n\tfadescreen FADE_TO_BLACK\n\tsetflag FLAG_HIDE_ROUTE_119_TEAM_AQUA\n\tsetflag FLAG_HIDE_WEATHER_INSTITUTE_2F_AQUA_GRUNT_M\n\tremoveobject LOCALID_WEATHER_INSTITUTE_2F_GRUNT_1\n\tremoveobject LOCALID_WEATHER_INSTITUTE_2F_GRUNT_2\n\tremoveobject LOCALID_WEATHER_INSTITUTE_2F_SHELLY\n\tremoveobject LOCALID_WEATHER_INSTITUTE_2F_GRUNT_4\n\tremoveobject LOCALID_WEATHER_INSTITUTE_2F_GRUNT_3\n\tapplymovement LOCALID_PLAYER, Route119_WeatherInstitute_2F_Movement_PlayerReturnToPosition\n\twaitmovement 0\n\tfadescreen FADE_FROM_BLACK\n\tapplymovement LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST, Route119_WeatherInstitute_2F_Movement_ScientistApproachPlayer\n\twaitmovement 0\n\tcopyobjectxytoperm LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST\n\tgoto Route119_WeatherInstitute_2F_EventScript_ReceiveCastform\n\tend"
+  },
+  "label": "Route119_WeatherInstitute_2F_EventScript_ShellyDefeated",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_ROUTE_119_TEAM_AQUA",
+      "FLAG_HIDE_WEATHER_INSTITUTE_2F_AQUA_GRUNT_M",
+      "FLAG_HIDE_WEATHER_INSTITUTE_2F_WORKERS"
+    ],
+    "vars": [
+      "VAR_WEATHER_INSTITUTE_STATE"
+    ]
+  }
+}

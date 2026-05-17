@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_GlaciasRoom_Text_Defeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_GlaciasRoom/scripts.inc",
+    "sha1": "283be726375bae9790aba23661a75e157e304cdc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_GlaciasRoom/scripts.inc",
+    "rawScript": ".string \"You and your POK\u00e9MON\u2026\\n\"\n\t.string \"How hot your spirits burn!\\p\"\n\t.string \"The all-consuming heat overwhelms.\\p\"\n\t.string \"It's no surprise that my icy skills\\n\"\n\t.string \"failed to harm you.$\""
+  },
+  "label": "EverGrandeCity_GlaciasRoom_Text_Defeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_GlaciasRoom/scripts.inc",
+  "references": {}
+}

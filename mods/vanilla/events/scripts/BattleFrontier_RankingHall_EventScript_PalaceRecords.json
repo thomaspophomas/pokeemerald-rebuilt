@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_RankingHall_EventScript_PalaceRecords",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_RankingHall/scripts.inc",
+    "sha1": "aef77d23874073ac30c7332089066ec74669e249"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_RankingHall/scripts.inc",
+    "rawScript": "lockall\n\tsetvar VAR_0x8005, RANKING_HALL_PALACE\n\tgoto BattleFrontier_RankingHall_EventScript_ShowRecords\n\tend"
+  },
+  "label": "BattleFrontier_RankingHall_EventScript_PalaceRecords",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_RankingHall/scripts.inc",
+  "references": {}
+}

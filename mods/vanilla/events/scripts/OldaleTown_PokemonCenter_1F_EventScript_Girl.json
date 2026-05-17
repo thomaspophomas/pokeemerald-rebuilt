@@ -1,0 +1,23 @@
+{
+  "id": "OldaleTown_PokemonCenter_1F_EventScript_Girl",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown_PokemonCenter_1F/scripts.inc",
+    "sha1": "aa6fbbadeecd7b968cca77547695be5b595703f9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/OldaleTown_PokemonCenter_1F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_SYS_POKEDEX_GET, OldaleTown_PokemonCenter_1F_EventScript_WirelessClubAvailable\n\tmsgbox OldaleTown_PokemonCenter_1F_Text_WirelessClubNotAvailable, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "OldaleTown_PokemonCenter_1F_EventScript_Girl",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/OldaleTown_PokemonCenter_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_POKEDEX_GET"
+    ]
+  }
+}

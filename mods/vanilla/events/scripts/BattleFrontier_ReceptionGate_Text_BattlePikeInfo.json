@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ReceptionGate_Text_BattlePikeInfo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "sha1": "5b6e89c53f6e32c0fa6883bd750252f1d739a97b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "rawScript": ".string \"The BATTLE PIKE is the building shaped\\n\"\n\t.string \"like a POK\u00e9MON at the center-left of\\l\"\n\t.string \"the BATTLE FRONTIER.\\p\"\n\t.string \"An event called the Battle Choice\\n\"\n\t.string \"is conducted there.$\""
+  },
+  "label": "BattleFrontier_ReceptionGate_Text_BattlePikeInfo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+  "references": {}
+}

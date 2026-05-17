@@ -1,0 +1,19 @@
+{
+  "id": "Route114_LanettesHouse_Text_EverythingClutteredKeepThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_LanettesHouse/scripts.inc",
+    "sha1": "91f2126eb51b441d0e51b50e9d41b4e45bf67494"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114_LanettesHouse/scripts.inc",
+    "rawScript": ".string \"LANETTE: Oh! {PLAYER}{KUN}!\\p\"\n\t.string \"I'm sorry everything is so cluttered\u2026\\n\"\n\t.string \"When I get engrossed in research,\\l\"\n\t.string \"things end up this way\u2026\\p\"\n\t.string \"This is embarrassing\u2026 Please keep\\n\"\n\t.string \"this a secret in exchange for this.$\""
+  },
+  "label": "Route114_LanettesHouse_Text_EverythingClutteredKeepThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route114_LanettesHouse/scripts.inc",
+  "references": {}
+}

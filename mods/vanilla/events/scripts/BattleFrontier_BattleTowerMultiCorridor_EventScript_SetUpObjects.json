@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiCorridor_EventScript_SetUpObjects",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiCorridor/scripts.inc",
+    "sha1": "cd76ae7932d793ea3d83f2ba21546149e29084cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiCorridor/scripts.inc",
+    "rawScript": "hideobjectat LOCALID_PLAYER, MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_CORRIDOR\n\thideobjectat LOCALID_TOWER_MULTI_CORRIDOR_PLAYER, MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_CORRIDOR\n\thideobjectat LOCALID_TOWER_MULTI_CORRIDOR_PARTNER, MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_CORRIDOR\n\tspecial OffsetCameraForBattle\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerMultiCorridor_EventScript_SetUpObjects",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiCorridor/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_CORRIDOR"
+    ]
+  }
+}

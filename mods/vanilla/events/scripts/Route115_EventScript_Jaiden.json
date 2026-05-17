@@ -1,0 +1,23 @@
+{
+  "id": "Route115_EventScript_Jaiden",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route115/scripts.inc",
+    "sha1": "553919bcf042cd676325f5ea73ef321b081d0718"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route115/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_JAIDEN, Route115_Text_JaidenIntro, Route115_Text_JaidenDefeat\n\tmsgbox Route115_Text_JaidenPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route115_EventScript_Jaiden",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route115/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_JAIDEN"
+    ]
+  }
+}

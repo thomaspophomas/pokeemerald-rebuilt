@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_House2_Movement_WingullExitEast",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_House2/scripts.inc",
+    "sha1": "dcfbf70d772d40b8358cd2af009c970d7028d279"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_House2/scripts.inc",
+    "rawScript": "walk_fast_down\n\twalk_fast_down\n\twalk_fast_down\n\tdelay_8\n\tstep_end"
+  },
+  "label": "MossdeepCity_House2_Movement_WingullExitEast",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/MossdeepCity_House2/scripts.inc",
+  "references": {}
+}

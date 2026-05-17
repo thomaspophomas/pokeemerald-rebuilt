@@ -1,0 +1,23 @@
+{
+  "id": "Route120_EventScript_GiveWikiBerry",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route120/scripts.inc",
+    "sha1": "c3ab570e7c5b1ea2c74415d703646f5a362564ad"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route120/scripts.inc",
+    "rawScript": "setvar VAR_0x8004, ITEM_WIKI_BERRY\n\tgoto Route120_EventScript_GiveBerry\n\tend"
+  },
+  "label": "Route120_EventScript_GiveWikiBerry",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route120/scripts.inc",
+  "references": {
+    "items": [
+      "ITEM_WIKI_BERRY"
+    ]
+  }
+}

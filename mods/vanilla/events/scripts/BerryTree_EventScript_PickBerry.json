@@ -1,0 +1,19 @@
+{
+  "id": "BerryTree_EventScript_PickBerry",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_tree.inc",
+    "sha1": "749b44e862850f19e689ac4622065bdedf7c8393"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_tree.inc",
+    "rawScript": "special ObjectEventInteractionPickBerryTree\n\tgoto_if_eq VAR_0x8004, 0, BerryTree_EventScript_BerryPocketFull\n\tspecial IncrementDailyPickedBerries\n\tspecial ObjectEventInteractionRemoveBerryTree\n\tmessage BerryTree_Text_PickedTheBerry\n\tplayfanfare MUS_OBTAIN_BERRY\n\twaitmessage\n\twaitfanfare\n\twaitbuttonpress\n\tmessage BerryTree_Text_PutAwayBerry\n\twaitmessage\n\twaitbuttonpress\n\trelease\n\tend"
+  },
+  "label": "BerryTree_EventScript_PickBerry",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_tree.inc",
+  "references": {}
+}

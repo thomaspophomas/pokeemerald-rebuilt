@@ -1,0 +1,23 @@
+{
+  "id": "SafariZone_EventScript_ChoosePokeblock",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/safari_zone.inc",
+    "sha1": "435880c660a34d3e51dcedb348a41731d28af7cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/safari_zone.inc",
+    "rawScript": "fadescreen FADE_TO_BLACK\n\tspecial OpenPokeblockCaseOnFeeder\n\tgoto_if_ne VAR_RESULT, 0xFFFF, SafariZone_EventScript_PokeblockPlaced\n#ifdef BUGFIX\n\treleaseall  @ Only gets called from EventScript_PokeBlockFeeder which uses lockall.\n#endif\n\tend"
+  },
+  "label": "SafariZone_EventScript_ChoosePokeblock",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/safari_zone.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

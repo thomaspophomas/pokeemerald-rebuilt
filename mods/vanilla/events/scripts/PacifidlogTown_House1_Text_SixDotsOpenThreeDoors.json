@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_House1_Text_SixDotsOpenThreeDoors",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_House1/scripts.inc",
+    "sha1": "08537309384759d602a54f903ee3f58e552cdcc4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown_House1/scripts.inc",
+    "rawScript": ".string \"\u201cSix dots open three doors.\u201d\\p\"\n\t.string \"Grandpa used to say that, but I don't\\n\"\n\t.string \"know what he meant.$\""
+  },
+  "label": "PacifidlogTown_House1_Text_SixDotsOpenThreeDoors",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PacifidlogTown_House1/scripts.inc",
+  "references": {}
+}

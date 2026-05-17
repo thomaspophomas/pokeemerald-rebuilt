@@ -1,0 +1,23 @@
+{
+  "id": "NavelRock_Exterior_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NavelRock_Exterior/scripts.inc",
+    "sha1": "8276472d137d8f67af694fc72132f489c3c4930f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NavelRock_Exterior/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, NavelRock_Exterior_OnTransition\n\t.byte 0"
+  },
+  "label": "NavelRock_Exterior_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/NavelRock_Exterior/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

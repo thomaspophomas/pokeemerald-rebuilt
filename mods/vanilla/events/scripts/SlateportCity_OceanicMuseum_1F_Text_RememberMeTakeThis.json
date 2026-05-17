@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "sha1": "7a1e00c78bbfbd0fbd6eb59a84a4d4e7114e4261"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "rawScript": ".string \"Aiyeeeh!\\n\"\n\t.string \"What are you doing here?\\p\"\n\t.string \"Me? I'm the TEAM AQUA member\\n\"\n\t.string \"you thumped before, remember?\\l\"\n\t.string \"Back in RUSTURF TUNNEL?\\p\"\n\t.string \"Here, take this!\\n\"\n\t.string \"You have to forgive me!$\""
+  },
+  "label": "SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+  "references": {}
+}

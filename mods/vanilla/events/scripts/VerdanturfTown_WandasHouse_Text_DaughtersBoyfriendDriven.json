@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendDriven",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+    "sha1": "31973fbe72c23018cb6768d20d4d7addb52bae60"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+    "rawScript": ".string \"My daughter's boyfriend is a very\\n\"\n\t.string \"driven and passionate sort of person.\\p\"\n\t.string \"He's been digging a tunnel nonstop\\n\"\n\t.string \"just so he can see my daughter.\\p\"\n\t.string \"My daughter's a little concerned,\\n\"\n\t.string \"so she goes out to the tunnel a lot.$\""
+  },
+  "label": "VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendDriven",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_WandasHouse/scripts.inc",
+  "references": {}
+}

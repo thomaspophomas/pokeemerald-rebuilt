@@ -1,0 +1,19 @@
+{
+  "id": "CableClub_EventScript_TrainerCardDataOverwritten",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "message CableClub_Text_TrainerCardDataOverwritten\n\twaitmessage\n\tplayse SE_PIN\n\tdelay 60\n\tmessage CableClub_Text_HopeToSeeYouAgain\n\twaitmessage\n\tapplymovement LOCALID_PLAYER, Movement_PlayerExitLinkRoom\n\twaitmovement 0\n\tapplymovement VAR_0x8007, Movement_AttendantFaceDown\n\twaitmovement 0\n\treturn"
+  },
+  "label": "CableClub_EventScript_TrainerCardDataOverwritten",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {}
+}

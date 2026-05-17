@@ -1,0 +1,23 @@
+{
+  "id": "ContestHall_EventScript_GetContestCategory",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": "switch VAR_CONTEST_CATEGORY\n\tcase CONTEST_CATEGORY_COOL, ContestHall_EventScript_GetCategoryCool\n\tcase CONTEST_CATEGORY_BEAUTY, ContestHall_EventScript_GetCategoryBeauty\n\tcase CONTEST_CATEGORY_CUTE, ContestHall_EventScript_GetCategoryCute\n\tcase CONTEST_CATEGORY_SMART, ContestHall_EventScript_GetCategorySmart\n\tcase CONTEST_CATEGORY_TOUGH, ContestHall_EventScript_GetCategoryTough\n\treturn"
+  },
+  "label": "ContestHall_EventScript_GetContestCategory",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {
+    "vars": [
+      "VAR_CONTEST_CATEGORY"
+    ]
+  }
+}

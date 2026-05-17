@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Text_MayHiLetsRegister",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": ".string \"MAY: Oh, hi, {PLAYER}{KUN}!\\p\"\n\t.string \"You had a MATCH CALL feature put\\n\"\n\t.string \"on your POK\u00e9NAV!\\p\"\n\t.string \"Let's register each other so we can\\n\"\n\t.string \"contact one another anytime!\\p\"\n\t.string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026$\""
+  },
+  "label": "RustboroCity_Text_MayHiLetsRegister",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

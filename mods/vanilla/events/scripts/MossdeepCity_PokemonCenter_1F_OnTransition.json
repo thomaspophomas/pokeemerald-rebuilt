@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_PokemonCenter_1F_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "bb19ff9a0e952fad700f5ef42fc9fcd6b6aa3a75"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": "setrespawn HEAL_LOCATION_MOSSDEEP_CITY\n\tend"
+  },
+  "label": "MossdeepCity_PokemonCenter_1F_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

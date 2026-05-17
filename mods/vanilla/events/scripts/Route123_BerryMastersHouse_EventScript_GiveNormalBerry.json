@@ -1,0 +1,23 @@
+{
+  "id": "Route123_BerryMastersHouse_EventScript_GiveNormalBerry",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route123_BerryMastersHouse/scripts.inc",
+    "sha1": "9a0e063a546e4fa501fad1644e1e6356f5e7917a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route123_BerryMastersHouse/scripts.inc",
+    "rawScript": "msgbox Route123_BerryMastersHouse_Text_GoodSayingTakeThis, MSGBOX_DEFAULT\n\trandom NUM_BERRY_MASTER_WIFE_BERRIES\n\taddvar VAR_RESULT, FIRST_BERRY_INDEX\n\tgiveitem VAR_RESULT\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tgoto Route123_BerryMastersHouse_EventScript_GaveBerry\n\trelease\n\tend"
+  },
+  "label": "Route123_BerryMastersHouse_EventScript_GiveNormalBerry",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route123_BerryMastersHouse/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

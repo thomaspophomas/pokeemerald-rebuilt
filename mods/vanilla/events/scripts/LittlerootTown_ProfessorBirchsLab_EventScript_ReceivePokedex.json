@@ -1,0 +1,27 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": "playfanfare MUS_OBTAIN_ITEM\n\tmessage LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex\n\twaitfanfare\n\tsetflag FLAG_SYS_POKEDEX_GET\n\tspecial SetUnlockedPokedexFlags\n\tsetflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH\n\tsetvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1\n\treturn"
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_POKEDEX_FROM_BIRCH",
+      "FLAG_SYS_POKEDEX_GET"
+    ],
+    "vars": [
+      "VAR_CABLE_CLUB_TUTORIAL_STATE"
+    ]
+  }
+}

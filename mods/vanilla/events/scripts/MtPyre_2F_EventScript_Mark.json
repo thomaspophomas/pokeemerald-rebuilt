@@ -1,0 +1,23 @@
+{
+  "id": "MtPyre_2F_EventScript_Mark",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_2F/scripts.inc",
+    "sha1": "bc76e62a0ca08b33eb2220b94b2aff96bd7a1311"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_2F/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_MARK, MtPyre_2F_Text_MarkIntro, MtPyre_2F_Text_MarkDefeat\n\tmsgbox MtPyre_2F_Text_MarkPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "MtPyre_2F_EventScript_Mark",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtPyre_2F/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_MARK"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "TrainerHill_Roof_Text_GotHereMarvelouslyQuickly",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "sha1": "cbfca2354a8d8ed8d68e2612fb0b6f2525008a5f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "rawScript": ".string \"Oh, hold on here! Did you possibly get\\n\"\n\t.string \"here marvelously quickly?\\p\"\n\t.string \"How splendid! You needn't have\\n\"\n\t.string \"hurried so to see me!\\p\"\n\t.string \"That is so delightful. I'll have the Time\\n\"\n\t.string \"Board at the reception updated!$\""
+  },
+  "label": "TrainerHill_Roof_Text_GotHereMarvelouslyQuickly",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/TrainerHill_Entrance/scripts.inc",
+  "references": {}
+}

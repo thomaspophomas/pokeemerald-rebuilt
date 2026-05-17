@@ -1,0 +1,19 @@
+{
+  "id": "Route110_Text_BrendanExplainItemfinder",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110/scripts.inc",
+    "sha1": "ee9846425d6a96c03ac988decb3c48ffbd098f22"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110/scripts.inc",
+    "rawScript": ".string \"BRENDAN: That's an ITEMFINDER.\\p\"\n\t.string \"Use it to root around for items that\\n\"\n\t.string \"aren't visible.\\p\"\n\t.string \"If it senses something, it emits\\n\"\n\t.string \"a sound.\\p\"\n\t.string \"Anyway, I'm off to look for new\\n\"\n\t.string \"POK\u00e9MON.$\""
+  },
+  "label": "Route110_Text_BrendanExplainItemfinder",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110/scripts.inc",
+  "references": {}
+}

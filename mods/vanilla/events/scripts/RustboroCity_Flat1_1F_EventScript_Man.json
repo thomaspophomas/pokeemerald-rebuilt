@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Flat1_1F_EventScript_Man",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Flat1_1F/scripts.inc",
+    "sha1": "ba2888194a5804b938a63bae6ae086f7373227c1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Flat1_1F/scripts.inc",
+    "rawScript": "msgbox RustboroCity_Flat1_1F_Text_EveryPokemonHasAbility, MSGBOX_NPC\n\tend"
+  },
+  "label": "RustboroCity_Flat1_1F_EventScript_Man",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_Flat1_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_MayDefeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"I remember the battle I had with you,\\n\"\n\t.string \"{PLAYER}{KUN}, on ROUTE 103.\\p\"\n\t.string \"That battle helped you become this\\n\"\n\t.string \"strong, {PLAYER}{KUN}, didn't it?$\""
+  },
+  "label": "LilycoveCity_Text_MayDefeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

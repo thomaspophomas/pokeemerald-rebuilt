@@ -1,0 +1,25 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_EventScript_SaveBeforeDoublesChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": "frontier_set FRONTIER_DATA_SELECTED_MON_ORDER\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 0\n\ttower_init\n\ttower_set TOWER_DATA_WIN_STREAK_ACTIVE, TRUE\n\tfrontier_set FRONTIER_DATA_PAUSED, FALSE\n\tspecial LoadPlayerParty\n\tclosemessage\n\tdelay 2\n\tcall Common_EventScript_SaveGame\n\tsetvar VAR_TEMP_CHALLENGE_STATUS, 255\n\tgoto_if_eq VAR_RESULT, 0, BattleFrontier_BattleTowerLobby_EventScript_CancelChallengeSaveFailed\n\tincrementgamestat GAME_STAT_ENTERED_BATTLE_TOWER\n\tsetvar VAR_BRAVO_TRAINER_BATTLE_TOWER_ON, FALSE\n\tgoto BattleFrontier_BattleTowerLobby_EventScript_EnterElevator\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerLobby_EventScript_SaveBeforeDoublesChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_BRAVO_TRAINER_BATTLE_TOWER_ON",
+      "VAR_RESULT",
+      "VAR_TEMP_CHALLENGE_STATUS"
+    ]
+  }
+}

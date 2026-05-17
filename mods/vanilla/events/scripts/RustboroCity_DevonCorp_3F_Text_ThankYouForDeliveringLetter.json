@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+    "sha1": "c9490be6666cd7ea155cae31641c765560806127"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+    "rawScript": ".string \"MR. STONE: You delivered my LETTER?\\n\"\n\t.string \"Thank you kindly!\\p\"\n\t.string \"This is my way of thanking you.\\n\"\n\t.string \"It should help you, a TRAINER.$\""
+  },
+  "label": "RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+  "references": {}
+}

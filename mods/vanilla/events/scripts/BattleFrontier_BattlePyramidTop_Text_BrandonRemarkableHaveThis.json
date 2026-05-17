@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePyramidTop_Text_BrandonRemarkableHaveThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "sha1": "6256c29eca306dafcaec0dabbacc64547c474e58"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "rawScript": ".string \"BRANDON: Hahahah!\\n\"\n\t.string \"Remarkable!\\l\"\n\t.string \"Yes, it's grand, indeed!\\p\"\n\t.string \"Young explorer!\\p\"\n\t.string \"You've bested me through and through!\\n\"\n\t.string \"Here! I want you to have this!$\""
+  },
+  "label": "BattleFrontier_BattlePyramidTop_Text_BrandonRemarkableHaveThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+  "references": {}
+}

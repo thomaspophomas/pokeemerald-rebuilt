@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_Text_ExplainRunningShoes",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": ".string \"MOM: {PLAYER}, those shoes came with\\n\"\n\t.string \"instructions.\\p\"\n\t.string \"\u201cPress the B Button while wearing these\\n\"\n\t.string \"RUNNING SHOES to run extra-fast!\\p\"\n\t.string \"\u201cSlip on these RUNNING SHOES and race\\n\"\n\t.string \"in the great outdoors!\u201d$\""
+  },
+  "label": "LittlerootTown_Text_ExplainRunningShoes",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {}
+}

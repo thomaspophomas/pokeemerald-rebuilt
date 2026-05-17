@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleArenaLobby_Text_ExplainBodyRules",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "sha1": "9504bb75bdf62b80271e2304b4804044c8db502a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "rawScript": ".string \"The third judging factor is \u201cBody.\u201d\\n\"\n\t.string \"This factor is based on how much HP\\l\"\n\t.string \"remained at the end of a battle.\\p\"\n\t.string \"The rating takes into account how much\\n\"\n\t.string \"HP a POK\u00e9MON had at the start of\\l\"\n\t.string \"battle, and what remained at the end.$\""
+  },
+  "label": "BattleFrontier_BattleArenaLobby_Text_ExplainBodyRules",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,27 @@
+{
+  "id": "LittlerootTown_EventScript_Twin",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_ADVENTURE_STARTED, LittlerootTown_EventScript_GoodLuck\n\tgoto_if_set FLAG_RESCUED_BIRCH, LittlerootTown_EventScript_YouSavedBirch\n\tgoto_if_ne VAR_LITTLEROOT_TOWN_STATE, 0, LittlerootTown_EventScript_GoSaveBirch\n\tmsgbox LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "LittlerootTown_EventScript_Twin",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_ADVENTURE_STARTED",
+      "FLAG_RESCUED_BIRCH"
+    ],
+    "vars": [
+      "VAR_LITTLEROOT_TOWN_STATE"
+    ]
+  }
+}

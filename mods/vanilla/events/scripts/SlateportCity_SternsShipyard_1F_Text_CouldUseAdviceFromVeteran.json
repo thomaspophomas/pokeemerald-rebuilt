@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_SternsShipyard_1F_Text_CouldUseAdviceFromVeteran",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+    "sha1": "839a40e95086fb806113f67a7c2dc0dcbbab3217"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+    "rawScript": ".string \"DOCK: Shipbuilding is an art.\\p\"\n\t.string \"A lot of things can't be figured out\\n\"\n\t.string \"just by calculating.\\p\"\n\t.string \"I really could use advice from a veteran\\n\"\n\t.string \"who knows the seas\u2026$\""
+  },
+  "label": "SlateportCity_SternsShipyard_1F_Text_CouldUseAdviceFromVeteran",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+  "references": {}
+}

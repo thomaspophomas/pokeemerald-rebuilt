@@ -1,0 +1,19 @@
+{
+  "id": "OldaleTown_Mart_Text_RestoreHPWithPotion",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/OldaleTown_Mart/scripts.inc",
+    "sha1": "8a968880e5a4d7792fef6fe981f5856832d88170"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/OldaleTown_Mart/scripts.inc",
+    "rawScript": ".string \"If a POK\u00e9MON gets hurt and loses its HP\\n\"\n\t.string \"and faints, it won't be able to battle.\\p\"\n\t.string \"To prevent your POK\u00e9MON from fainting,\\n\"\n\t.string \"restore its HP with a POTION.$\""
+  },
+  "label": "OldaleTown_Mart_Text_RestoreHPWithPotion",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/OldaleTown_Mart/scripts.inc",
+  "references": {}
+}

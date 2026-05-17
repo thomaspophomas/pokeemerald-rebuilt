@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerBattleRoom_Text_UntilNextTime",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "sha1": "09b678d8717203a622b1d8714d904bcdeb37d08a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "rawScript": ".string \"\u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\p\"\n\t.string \"You have confidence in your POK\u00e9MON\\n\"\n\t.string \"battling talent, don't you?\\p\"\n\t.string \"I urge you to keep battling and\\n\"\n\t.string \"keep on winning.\\p\"\n\t.string \"I will be waiting for you.\\n\"\n\t.string \"Until the next time we meet\u2026$\""
+  },
+  "label": "BattleFrontier_BattleTowerBattleRoom_Text_UntilNextTime",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+  "references": {}
+}

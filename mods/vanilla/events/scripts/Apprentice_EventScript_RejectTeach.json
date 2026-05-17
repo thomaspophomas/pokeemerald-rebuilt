@@ -1,0 +1,19 @@
+{
+  "id": "Apprentice_EventScript_RejectTeach",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/apprentice.inc",
+    "sha1": "353208142bca1df117076064d141b84efe196e7c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/apprentice.inc",
+    "rawScript": "apprentice_msg FALSE, APPRENTICE_MSG_REJECT\n\tgoto Apprentice_EventScript_WhichLvlMode"
+  },
+  "label": "Apprentice_EventScript_RejectTeach",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/apprentice.inc",
+  "references": {}
+}

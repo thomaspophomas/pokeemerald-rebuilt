@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Flat2_2F/scripts.inc",
+    "sha1": "3f278233f807a1de34242578a0c22234655ecef0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Flat2_2F/scripts.inc",
+    "rawScript": ".string \"My daddy's working at the CORPORATION.\\p\"\n\t.string \"My daddy made this!\\n\"\n\t.string \"But I can't use it, so you can have it.$\""
+  },
+  "label": "RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Flat2_2F/scripts.inc",
+  "references": {}
+}

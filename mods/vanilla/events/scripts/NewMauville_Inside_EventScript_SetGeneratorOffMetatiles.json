@@ -1,0 +1,19 @@
+{
+  "id": "NewMauville_Inside_EventScript_SetGeneratorOffMetatiles",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NewMauville_Inside/scripts.inc",
+    "sha1": "e55cd05ab8dbd71a8b15a7cf2c2dc966549467fe"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NewMauville_Inside/scripts.inc",
+    "rawScript": "setmetatile 33, 6, METATILE_BikeShop_Button_Pressed, FALSE\n\tsetmetatile 32, 2, METATILE_BikeShop_Generator_Off_Tile0, TRUE\n\tsetmetatile 33, 2, METATILE_BikeShop_Generator_Off_Tile1, TRUE\n\tsetmetatile 34, 2, METATILE_BikeShop_Generator_Off_Tile2, TRUE\n\tsetmetatile 35, 2, METATILE_BikeShop_Generator_Off_Tile3, TRUE\n\tsetmetatile 32, 3, METATILE_BikeShop_Generator_Off_Tile4, TRUE\n\tsetmetatile 33, 3, METATILE_BikeShop_Generator_Off_Tile5, TRUE\n\tsetmetatile 34, 3, METATILE_BikeShop_Generator_Off_Tile6, TRUE\n\tsetmetatile 35, 3, METATILE_BikeShop_Generator_Off_Tile7, TRUE\n\tspecial DrawWholeMapView\n\treturn"
+  },
+  "label": "NewMauville_Inside_EventScript_SetGeneratorOffMetatiles",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/NewMauville_Inside/scripts.inc",
+  "references": {}
+}

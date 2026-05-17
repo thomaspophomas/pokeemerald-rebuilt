@@ -1,0 +1,23 @@
+{
+  "id": "PetalburgCity_Gym_OnLoad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": "goto_if_eq VAR_PETALBURG_GYM_STATE, 6, PetalburgCity_Gym_EventScript_OpenUnlockedDoors\n\tcall_if_ge VAR_PETALBURG_GYM_STATE, 7, PetalburgCity_Gym_EventScript_UnlockAllDoors\n\tend\n\n@ NOTE: Strength and OHKO rooms are misleading. Both are more accurately Critical-Hit"
+  },
+  "label": "PetalburgCity_Gym_OnLoad",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_PETALBURG_GYM_STATE"
+    ]
+  }
+}

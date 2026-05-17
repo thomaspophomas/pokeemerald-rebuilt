@@ -1,0 +1,19 @@
+{
+  "id": "VictoryRoad_B2F_Text_VitoIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VictoryRoad_B2F/scripts.inc",
+    "sha1": "8dfe15551952990f7ac9879a81f4a41a46da4e05"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VictoryRoad_B2F/scripts.inc",
+    "rawScript": ".string \"I trained together with my whole family,\\n\"\n\t.string \"every one of us!\\l\"\n\t.string \"I'm not losing to anyone!$\""
+  },
+  "label": "VictoryRoad_B2F_Text_VitoIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VictoryRoad_B2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,30 @@
+{
+  "id": "FortreeCity_House4_EventScript_WingullReturned",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_House4/scripts.inc",
+    "sha1": "f38bb5dba9859d7e96965e3b161795e659e29db9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_House4/scripts.inc",
+    "rawScript": "applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer\n\twaitmovement 0\n\tmsgbox FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb, MSGBOX_DEFAULT\n\tgiveitem ITEM_MENTAL_HERB\n\tgoto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull\n\tsetflag FLAG_RECEIVED_MENTAL_HERB\n\treleaseall\n\tend"
+  },
+  "label": "FortreeCity_House4_EventScript_WingullReturned",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FortreeCity_House4/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_MENTAL_HERB"
+    ],
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_MENTAL_HERB"
+    ]
+  }
+}

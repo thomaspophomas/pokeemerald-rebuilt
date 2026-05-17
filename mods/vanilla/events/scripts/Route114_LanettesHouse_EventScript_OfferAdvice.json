@@ -1,0 +1,19 @@
+{
+  "id": "Route114_LanettesHouse_EventScript_OfferAdvice",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_LanettesHouse/scripts.inc",
+    "sha1": "91f2126eb51b441d0e51b50e9d41b4e45bf67494"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114_LanettesHouse/scripts.inc",
+    "rawScript": "msgbox Route114_LanettesHouse_Text_OrganizeYourBoxes, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route114_LanettesHouse_EventScript_OfferAdvice",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route114_LanettesHouse/scripts.inc",
+  "references": {}
+}

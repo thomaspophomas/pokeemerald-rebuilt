@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_BattleTentLobby_EventScript_RulesBoard",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "sha1": "007b5945200863133fd43941054ec8db085a0356"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "rawScript": "lockall\n\tmsgbox BattleFrontier_BattleArenaLobby_Text_RulesAreListed, MSGBOX_DEFAULT\n\tgoto FallarborTown_BattleTentLobby_EventScript_ReadRulesBoard\n\tend"
+  },
+  "label": "FallarborTown_BattleTentLobby_EventScript_RulesBoard",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+  "references": {}
+}

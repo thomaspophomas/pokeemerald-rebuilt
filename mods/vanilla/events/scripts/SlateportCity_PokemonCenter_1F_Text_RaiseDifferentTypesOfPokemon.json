@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_PokemonCenter_1F_Text_RaiseDifferentTypesOfPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "c0dd8403baae500cd386226bc6b94ee6359cdc91"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"Want a tip for battling?\\p\"\n\t.string \"I'd say it's raising different kinds\\n\"\n\t.string \"of POK\u00e9MON in a balanced manner.\\p\"\n\t.string \"It's no good to make just one\\n\"\n\t.string \"POK\u00e9MON strong.\\p\"\n\t.string \"If it has a type disadvantage,\\n\"\n\t.string \"it might not stand a chance.$\""
+  },
+  "label": "SlateportCity_PokemonCenter_1F_Text_RaiseDifferentTypesOfPokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,24 @@
+{
+  "id": "DesertUnderpass_EventScript_Fossil",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DesertUnderpass/scripts.inc",
+    "sha1": "a78b9455c7ce2f8ca51b1e554b3ed0843fd46ee1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DesertUnderpass/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_CHOSE_ROOT_FOSSIL, DesertUnderpass_EventScript_GiveClawFossil\n\tgoto_if_set FLAG_CHOSE_CLAW_FOSSIL, DesertUnderpass_EventScript_GiveRootFossil\n\trelease\n\tend"
+  },
+  "label": "DesertUnderpass_EventScript_Fossil",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DesertUnderpass/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_CHOSE_CLAW_FOSSIL",
+      "FLAG_CHOSE_ROOT_FOSSIL"
+    ]
+  }
+}

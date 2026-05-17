@@ -1,0 +1,19 @@
+{
+  "id": "Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111_WinstrateFamilysHouse/scripts.inc",
+    "sha1": "263fea63e58597b7384c5c9ba935a901a00611b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111_WinstrateFamilysHouse/scripts.inc",
+    "rawScript": "closemessage\n\tapplymovement VAR_0x8008, Common_Movement_FaceOriginalDirection\n\twaitmovement 0\n\trelease\n\tend"
+  },
+  "label": "Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route111_WinstrateFamilysHouse/scripts.inc",
+  "references": {}
+}

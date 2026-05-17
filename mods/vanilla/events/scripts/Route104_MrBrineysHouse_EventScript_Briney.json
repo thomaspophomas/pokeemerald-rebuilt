@@ -1,0 +1,25 @@
+{
+  "id": "Route104_MrBrineysHouse_EventScript_Briney",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+    "sha1": "1685496df25ec35fb97de14e44b3ea41b1d1c6db"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tcall_if_unset FLAG_MR_BRINEY_SAILING_INTRO, Route104_MrBrineysHouse_EventScript_SailingIntro\n\tgoto_if_unset FLAG_DELIVERED_STEVEN_LETTER, Route104_MrBrineysHouse_EventScript_SailBothDeliveries\n\tgoto_if_unset FLAG_DELIVERED_DEVON_GOODS, Route104_MrBrineysHouse_EventScript_SailDeliverPackage\n\tgoto Route104_MrBrineysHouse_EventScript_WhereAreWeBound\n\tend"
+  },
+  "label": "Route104_MrBrineysHouse_EventScript_Briney",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DELIVERED_DEVON_GOODS",
+      "FLAG_DELIVERED_STEVEN_LETTER",
+      "FLAG_MR_BRINEY_SAILING_INTRO"
+    ]
+  }
+}

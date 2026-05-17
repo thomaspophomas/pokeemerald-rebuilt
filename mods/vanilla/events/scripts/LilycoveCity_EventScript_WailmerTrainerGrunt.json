@@ -1,0 +1,26 @@
+{
+  "id": "LilycoveCity_EventScript_WailmerTrainerGrunt",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_set FLAG_MET_WAILMER_TRAINER, LilycoveCity_EventScript_MetWailmerTrainer\n\tmsgbox LilycoveCity_Text_WailmerLeapOutOfWater, MSGBOX_DEFAULT\n\tapplymovement VAR_LAST_TALKED, Common_Movement_FacePlayer\n\twaitmovement 0\n\tmsgbox LilycoveCity_Text_GetLostMessingUpTraining, MSGBOX_DEFAULT\n\tapplymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection\n\twaitmovement 0\n\tsetflag FLAG_MET_WAILMER_TRAINER\n\treleaseall\n\tend"
+  },
+  "label": "LilycoveCity_EventScript_WailmerTrainerGrunt",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_WAILMER_TRAINER"
+    ],
+    "vars": [
+      "VAR_LAST_TALKED"
+    ]
+  }
+}

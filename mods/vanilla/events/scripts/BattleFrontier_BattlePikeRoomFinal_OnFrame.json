@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomFinal_OnFrame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomFinal/scripts.inc",
+    "sha1": "a203f6afe61e2b8ea4bff53c9f1e02c5ff3952b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomFinal/scripts.inc",
+    "rawScript": "map_script_2 VAR_TEMP_0, 0, BattleFrontier_BattlePikeRoomFinal_EventScript_EnterRoom\n\t.2byte 0"
+  },
+  "label": "BattleFrontier_BattlePikeRoomFinal_OnFrame",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomFinal/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0"
+    ]
+  }
+}

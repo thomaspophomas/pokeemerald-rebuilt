@@ -1,0 +1,23 @@
+{
+  "id": "VerdanturfTown_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown/scripts.inc",
+    "sha1": "4cf44981cc32f958f4c2d2c20def161a84763311"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, VerdanturfTown_OnTransition\n\t.byte 0"
+  },
+  "label": "VerdanturfTown_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/VerdanturfTown/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

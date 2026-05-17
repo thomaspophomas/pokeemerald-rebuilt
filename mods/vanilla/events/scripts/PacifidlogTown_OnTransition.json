@@ -1,0 +1,23 @@
+{
+  "id": "PacifidlogTown_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown/scripts.inc",
+    "sha1": "a2afe22497d0ac4c974698e76e0cda7094b4e79a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown/scripts.inc",
+    "rawScript": "setflag FLAG_VISITED_PACIFIDLOG_TOWN\n\tend"
+  },
+  "label": "PacifidlogTown_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/PacifidlogTown/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_VISITED_PACIFIDLOG_TOWN"
+    ]
+  }
+}

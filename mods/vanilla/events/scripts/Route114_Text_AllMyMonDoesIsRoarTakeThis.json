@@ -1,0 +1,19 @@
+{
+  "id": "Route114_Text_AllMyMonDoesIsRoarTakeThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114/scripts.inc",
+    "sha1": "0c57a7112b8feadf446551150c5dcc13761f8eeb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114/scripts.inc",
+    "rawScript": ".string \"All my POK\u00e9MON does is ROAR\u2026\\n\"\n\t.string \"No one dares to come near me\u2026\\p\"\n\t.string \"Sigh\u2026 If you would, please take\\n\"\n\t.string \"this TM away\u2026$\""
+  },
+  "label": "Route114_Text_AllMyMonDoesIsRoarTakeThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route114/scripts.inc",
+  "references": {}
+}

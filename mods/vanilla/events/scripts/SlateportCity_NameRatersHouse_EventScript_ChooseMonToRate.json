@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_NameRatersHouse_EventScript_ChooseMonToRate",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_NameRatersHouse/scripts.inc",
+    "sha1": "ecd2294ed4e3a6a8e122867d365034a6568bcf9c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_NameRatersHouse/scripts.inc",
+    "rawScript": "msgbox SlateportCity_NameRatersHouse_Text_CritiqueWhichMonNickname, MSGBOX_DEFAULT\n\tspecial ChoosePartyMon\n\tgoto_if_ne VAR_0x8004, PARTY_NOTHING_CHOSEN, SlateportCity_NameRatersHouse_EventScript_RateMonNickname\n\tgoto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, SlateportCity_NameRatersHouse_EventScript_DeclineNameRate\n\tend"
+  },
+  "label": "SlateportCity_NameRatersHouse_EventScript_ChooseMonToRate",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity_NameRatersHouse/scripts.inc",
+  "references": {}
+}

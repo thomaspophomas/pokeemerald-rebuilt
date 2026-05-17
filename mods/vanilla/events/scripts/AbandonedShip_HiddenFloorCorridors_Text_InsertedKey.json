@@ -1,0 +1,19 @@
+{
+  "id": "AbandonedShip_HiddenFloorCorridors_Text_InsertedKey",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+    "sha1": "93793c09cf0421032fc19eaa4c310ad93c2d25a2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+    "rawScript": ".string \"{PLAYER} inserted and turned the\\n\"\n\t.string \"KEY.\\p\"\n\t.string \"The inserted KEY stuck fast,\\n\"\n\t.string \"but the door opened.$\""
+  },
+  "label": "AbandonedShip_HiddenFloorCorridors_Text_InsertedKey",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+  "references": {}
+}

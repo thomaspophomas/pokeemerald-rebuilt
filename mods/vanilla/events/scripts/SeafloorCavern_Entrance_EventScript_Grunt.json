@@ -1,0 +1,24 @@
+{
+  "id": "SeafloorCavern_Entrance_EventScript_Grunt",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Entrance/scripts.inc",
+    "sha1": "8c330241299cc7a79f577ced9c7a80a8f74605ab"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SeafloorCavern_Entrance/scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_eq VAR_HAS_TALKED_TO_SEAFLOOR_CAVERN_ENTRANCE_GRUNT, 1, SeafloorCavern_Entrance_EventScript_GruntSpeechShort\n\twaitse\n\tplayse SE_PIN\n\tapplymovement LOCALID_SEAFLOOR_CAVERN_ENTRANCE_GRUNT, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_SEAFLOOR_CAVERN_ENTRANCE_GRUNT, Common_Movement_Delay48\n\twaitmovement 0\n\tdelay 20\n\tcall_if_eq VAR_FACING, DIR_WEST, SeafloorCavern_Entrance_EventScript_GruntFacePlayerWest\n\tcall_if_eq VAR_FACING, DIR_EAST, SeafloorCavern_Entrance_EventScript_GruntFacePlayerEast\n\tcall_if_eq VAR_FACING, DIR_NORTH, SeafloorCavern_Entrance_EventScript_GruntFacePlayerNorth\n\tdelay 30\n\tsetvar VAR_HAS_TALKED_TO_SEAFLOOR_CAVERN_ENTRANCE_GRUNT, 1\n\tcopyobjectxytoperm LOCALID_SEAFLOOR_CAVERN_ENTRANCE_GRUNT\n\tmsgbox SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_SEAFLOOR_CAVERN_ENTRANCE_GRUNT, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\treleaseall\n\tend"
+  },
+  "label": "SeafloorCavern_Entrance_EventScript_Grunt",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SeafloorCavern_Entrance/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FACING",
+      "VAR_HAS_TALKED_TO_SEAFLOOR_CAVERN_ENTRANCE_GRUNT"
+    ]
+  }
+}

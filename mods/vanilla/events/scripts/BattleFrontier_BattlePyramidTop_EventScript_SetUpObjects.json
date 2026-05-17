@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattlePyramidTop_EventScript_SetUpObjects",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "sha1": "6256c29eca306dafcaec0dabbacc64547c474e58"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "rawScript": "setvar VAR_TEMP_1, 1\n\tturnobject LOCALID_PLAYER, DIR_NORTH\n\tgoto_if_ne VAR_TEMP_C, 0, BattleFrontier_BattlePyramidTop_EventScript_EndSetUpObjects\n\tsetobjectxyperm LOCALID_BRANDON, 0, 0"
+  },
+  "label": "BattleFrontier_BattlePyramidTop_EventScript_SetUpObjects",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1",
+      "VAR_TEMP_C"
+    ]
+  }
+}

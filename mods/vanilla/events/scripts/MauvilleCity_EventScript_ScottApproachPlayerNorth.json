@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_EventScript_ScottApproachPlayerNorth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": "addobject LOCALID_MAUVILLE_SCOTT\n\tapplymovement LOCALID_MAUVILLE_SCOTT, MauvilleCity_Movement_ScottApproachPlayerNorth\n\twaitmovement 0\n\treturn"
+  },
+  "label": "MauvilleCity_EventScript_ScottApproachPlayerNorth",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

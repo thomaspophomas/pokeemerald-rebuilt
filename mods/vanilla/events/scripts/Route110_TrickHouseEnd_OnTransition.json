@@ -1,0 +1,24 @@
+{
+  "id": "Route110_TrickHouseEnd_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "sha1": "3b39ac1484a417dc8392e9b8712bc29e12891169"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "rawScript": "setvar VAR_TEMP_1, 0\n\tsetvar VAR_TEMP_2, 0\n\tspecial SetTrickHouseNuggetFlag\n\tend"
+  },
+  "label": "Route110_TrickHouseEnd_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1",
+      "VAR_TEMP_2"
+    ]
+  }
+}

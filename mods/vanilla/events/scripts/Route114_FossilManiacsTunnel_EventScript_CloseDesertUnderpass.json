@@ -1,0 +1,19 @@
+{
+  "id": "Route114_FossilManiacsTunnel_EventScript_CloseDesertUnderpass",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route114_FossilManiacsTunnel/scripts.inc",
+    "sha1": "ecd010d2086a8019284fa4a41a8a3e7e67275e83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route114_FossilManiacsTunnel/scripts.inc",
+    "rawScript": "setmetatile 6, 1, METATILE_Fallarbor_RedRockWall, TRUE\n\tsetmetatile 6, 2, METATILE_Fallarbor_RedRockWall, TRUE\n\treturn"
+  },
+  "label": "Route114_FossilManiacsTunnel_EventScript_CloseDesertUnderpass",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route114_FossilManiacsTunnel/scripts.inc",
+  "references": {}
+}

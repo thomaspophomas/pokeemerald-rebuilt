@@ -1,0 +1,23 @@
+{
+  "id": "CableClub_EventScript_HideOrShowMysteryGiftMan",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "specialvar VAR_RESULT, ShouldDistributeEonTicket\n\tgoto_if_eq VAR_RESULT, TRUE, CableClub_EventScript_ShowMysteryGiftMan\n\tspecialvar VAR_RESULT, ValidateSavedWonderCard\n\tgoto_if_eq VAR_RESULT, FALSE, CableClub_EventScript_HideMysteryGiftMan\n\tgoto CableClub_EventScript_ShowMysteryGiftMan\n\tend"
+  },
+  "label": "CableClub_EventScript_HideOrShowMysteryGiftMan",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

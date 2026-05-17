@@ -1,0 +1,19 @@
+{
+  "id": "BerryBlender_Text_MakeDeliciousPokeblocks",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": ".string \"I'm going to make delicious {POKEBLOCK}S\\n\"\n\t.string \"and make my POK\u00e9MON cuter.$\""
+  },
+  "label": "BerryBlender_Text_MakeDeliciousPokeblocks",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {}
+}

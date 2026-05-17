@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_CozmosHouse_Text_CrushedWithDisappointment",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+    "sha1": "8f6cba0c7d4561645e0110baf848672ddd10d44d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+    "rawScript": ".string \"PROF. COZMO: Oh, but\u2026\\n\"\n\t.string \"I'm crushed with disappointment\u2026$\""
+  },
+  "label": "FallarborTown_CozmosHouse_Text_CrushedWithDisappointment",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+  "references": {}
+}

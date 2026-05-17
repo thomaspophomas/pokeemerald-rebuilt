@@ -1,0 +1,30 @@
+{
+  "id": "LavaridgeTown_Gym_1F_EventScript_SetTrainerTempVars",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "sha1": "b82ae91ab89ff7156e8125891eff9b7e6a2a260f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "rawScript": "setvar VAR_TEMP_B, 0\n\tsetvar VAR_TEMP_C, 0\n\tsetvar VAR_TEMP_D, 0\n\tsetvar VAR_TEMP_E, 0\n\tsetvar VAR_TEMP_F, 0\n\tgoto_if_defeated TRAINER_COLE, LavaridgeTown_Gym_1F_EventScript_SetGeraldTempVar\n\tsetvar VAR_TEMP_B, 1"
+  },
+  "label": "LavaridgeTown_Gym_1F_EventScript_SetTrainerTempVars",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_B",
+      "VAR_TEMP_C",
+      "VAR_TEMP_D",
+      "VAR_TEMP_E",
+      "VAR_TEMP_F"
+    ],
+    "trainers": [
+      "TRAINER_COLE"
+    ]
+  }
+}

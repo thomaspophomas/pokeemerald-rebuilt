@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_MayGoingBackToLittleroot",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"MAY: I'm thinking of going back to\\n\"\n\t.string \"LITTLEROOT soon.\\p\"\n\t.string \"I've caught a decent group of POK\u00e9MON,\\n\"\n\t.string \"and my POK\u00e9DEX is coming along, so\\l\"\n\t.string \"I'm going home to show my dad.$\""
+  },
+  "label": "LilycoveCity_Text_MayGoingBackToLittleroot",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

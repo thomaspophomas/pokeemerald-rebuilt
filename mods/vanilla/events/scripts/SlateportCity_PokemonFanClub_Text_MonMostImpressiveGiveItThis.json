@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_PokemonFanClub_Text_MonMostImpressiveGiveItThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_PokemonFanClub/scripts.inc",
+    "sha1": "153f02ab68bdca98dac6d2c2cf3e3db7c79f2c91"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_PokemonFanClub/scripts.inc",
+    "rawScript": ".string \"Your {STR_VAR_1}, it is growing in\\n\"\n\t.string \"a most impressive manner!\\l\"\n\t.string \"It is one fine specimen!\\p\"\n\t.string \"But! If you were to give it this,\\n\"\n\t.string \"it would grow even better! Indeed!$\""
+  },
+  "label": "SlateportCity_PokemonFanClub_Text_MonMostImpressiveGiveItThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_PokemonFanClub/scripts.inc",
+  "references": {}
+}

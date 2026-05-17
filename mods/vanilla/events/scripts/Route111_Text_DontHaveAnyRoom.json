@@ -1,0 +1,19 @@
+{
+  "id": "Route111_Text_DontHaveAnyRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/secret_power_tm.inc",
+    "sha1": "afb46c8c367fcf33e1c13eac27a989305d7f76f2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/secret_power_tm.inc",
+    "rawScript": ".string \"Oh, you don't have any room for this.\\p\"\n\t.string \"I'll hold on to it, so come back for it\\n\"\n\t.string \"another time, okay?$\""
+  },
+  "label": "Route111_Text_DontHaveAnyRoom",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/secret_power_tm.inc",
+  "references": {}
+}

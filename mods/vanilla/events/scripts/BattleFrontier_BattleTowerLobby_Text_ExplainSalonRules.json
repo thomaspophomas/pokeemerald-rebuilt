@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_Text_ExplainSalonRules",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": ".string \"The BATTLE SALON is where you must\\n\"\n\t.string \"find a partner to form a tag team for\\l\"\n\t.string \"the MULTI BATTLE ROOM challenge.\\p\"\n\t.string \"Choose the best partner for you by\\n\"\n\t.string \"examining other TRAINERS'\\l\"\n\t.string \"POK\u00e9MON and their moves.\\p\"\n\t.string \"You may choose a new tag partner\\n\"\n\t.string \"after winning seven straight matches.$\""
+  },
+  "label": "BattleFrontier_BattleTowerLobby_Text_ExplainSalonRules",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {}
+}

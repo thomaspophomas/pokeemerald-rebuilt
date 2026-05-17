@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_Text_ExplainMultisChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": ".string \"The BATTLE TOWER's MULTI BATTLE\\n\"\n\t.string \"ROOMS are facilities for conducting\\l\"\n\t.string \"MULTI BATTLES.\\p\"\n\t.string \"For MULTI BATTLES, you must partner\\n\"\n\t.string \"with a TRAINER in the TOWER and enter\\l\"\n\t.string \"with two POK\u00e9MON each.\\p\"\n\t.string \"Inside the TOWER is a room named\\n\"\n\t.string \"the BATTLE SALON where you may meet\\l\"\n\t.string \"other TRAINERS.\\p\"\n\t.string \"There, you must find a TRAINER to act\\n\"\n\t.string \"as your partner in MULTI BATTLES.\\p\"\n\t.string \"Once you have partnered up, you will\\n\"\n\t.string \"be shown to a MULTI BATTLE ROOM.\\p\"\n\t.string \"In the MULTI BATTLE ROOM, seven\\n\"\n\t.string \"tag teams await your challenge.\\p\"\n\t.string \"If you manage to defeat all seven\\n\"\n\t.string \"teams, you will earn Battle Points.\\p\"\n\t.string \"If you want to interrupt your\\n\"\n\t.string \"challenge, please save the game.\\p\"\n\t.string \"If you don't save before interrupting,\\n\"\n\t.string \"you will be disqualified.$\""
+  },
+  "label": "BattleFrontier_BattleTowerLobby_Text_ExplainMultisChallenge",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_Summit_Text_Grunt2PostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/scripts.inc",
+    "sha1": "2d98d572d50cebb678d972aa421854c983329822"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Summit/scripts.inc",
+    "rawScript": ".string \"You don't know anything!\\n\"\n\t.string \"So why are you messing with us?$\""
+  },
+  "label": "MtPyre_Summit_Text_Grunt2PostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_Summit/scripts.inc",
+  "references": {}
+}

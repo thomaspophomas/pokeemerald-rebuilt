@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiCorridor_EventScript_SetObjGfx",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiCorridor/scripts.inc",
+    "sha1": "cd76ae7932d793ea3d83f2ba21546149e29084cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiCorridor/scripts.inc",
+    "rawScript": "tower_setpartnergfx\n\tcheckplayergender\n\tgoto_if_eq VAR_RESULT, FEMALE, BattleFrontier_BattleTowerMultiCorridor_EventScript_SetPlayerGfxFemale\n\tsetvar VAR_OBJ_GFX_ID_F, OBJ_EVENT_GFX_BRENDAN_NORMAL\n\treturn"
+  },
+  "label": "BattleFrontier_BattleTowerMultiCorridor_EventScript_SetObjGfx",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiCorridor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_OBJ_GFX_ID_F",
+      "VAR_RESULT"
+    ]
+  }
+}

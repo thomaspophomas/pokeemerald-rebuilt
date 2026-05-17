@@ -1,0 +1,19 @@
+{
+  "id": "MirageTower_4F_Text_TakeClawFossil",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MirageTower_4F/scripts.inc",
+    "sha1": "0e490ee2e9400861a54b910d5d29825dad66deb9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MirageTower_4F/scripts.inc",
+    "rawScript": ".string \"You found the CLAW FOSSIL.\\p\"\n\t.string \"If this FOSSIL is taken, the ground\\n\"\n\t.string \"around it will likely crumble away\u2026\\p\"\n\t.string \"Take the CLAW FOSSIL anyway?$\""
+  },
+  "label": "MirageTower_4F_Text_TakeClawFossil",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MirageTower_4F/scripts.inc",
+  "references": {}
+}

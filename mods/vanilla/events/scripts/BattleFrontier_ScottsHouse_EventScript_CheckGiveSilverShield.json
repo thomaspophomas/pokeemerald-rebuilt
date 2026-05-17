@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_ScottsHouse_EventScript_CheckGiveSilverShield",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "sha1": "c30df9e905f6d4b9d9e1eaf4d4fccf30db88e083"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+    "rawScript": "setvar VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_SINGLES\n\tfrontier_set FRONTIER_DATA_LVL_MODE, FRONTIER_LVL_50\n\ttower_get TOWER_DATA_WIN_STREAK\n\tgoto_if_ge VAR_RESULT, 50, BattleFrontier_ScottsHouse_EventScript_GiveSilverShield\n\tfrontier_set FRONTIER_DATA_LVL_MODE, FRONTIER_LVL_OPEN\n\ttower_get TOWER_DATA_WIN_STREAK\n\tgoto_if_ge VAR_RESULT, 50, BattleFrontier_ScottsHouse_EventScript_GiveSilverShield\n\tgoto BattleFrontier_ScottsHouse_EventScript_RandomComment\n\tend"
+  },
+  "label": "BattleFrontier_ScottsHouse_EventScript_CheckGiveSilverShield",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FRONTIER_BATTLE_MODE",
+      "VAR_RESULT"
+    ]
+  }
+}

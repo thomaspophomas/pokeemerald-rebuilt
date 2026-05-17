@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_Text_BirchSpendsDaysInLab",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": ".string \"PROF. BIRCH spends days in his LAB\\n\"\n\t.string \"studying, then he'll suddenly go out in\\l\"\n\t.string \"the wild to do more research\u2026\\p\"\n\t.string \"When does PROF. BIRCH spend time\\n\"\n\t.string \"at home?$\""
+  },
+  "label": "LittlerootTown_Text_BirchSpendsDaysInLab",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {}
+}

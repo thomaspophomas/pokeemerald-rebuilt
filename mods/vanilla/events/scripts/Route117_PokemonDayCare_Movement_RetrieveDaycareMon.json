@@ -1,0 +1,19 @@
+{
+  "id": "Route117_PokemonDayCare_Movement_RetrieveDaycareMon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/day_care.inc",
+    "sha1": "b807399ab522de3ba938194e85f890a343362752"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/day_care.inc",
+    "rawScript": "delay_16\n\tdelay_16\n\tface_left\n\tdelay_16\n\tdelay_16\n\tface_right\n\tdelay_16\n\tdelay_16\n\tface_up\n\twalk_slow_up\n\tset_invisible\n\tdelay_16\n\tdelay_16\n\tdelay_16\n\tdelay_16\n\tdelay_16\n\tface_down\n\tset_visible\n\twalk_slow_down\n\tstep_end\n\n@ Unused. Possibly a commented script, or a typo end added to the above Movement script"
+  },
+  "label": "Route117_PokemonDayCare_Movement_RetrieveDaycareMon",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/scripts/day_care.inc",
+  "references": {}
+}

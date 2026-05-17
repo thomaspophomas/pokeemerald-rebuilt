@@ -1,0 +1,19 @@
+{
+  "id": "Route113_GlassWorkshop_Text_IsThatTheItemForYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "sha1": "6a7101e66439e9abedcc55c8fc60b573807258b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "rawScript": ".string \"A {STR_VAR_1}, huff-puff?\\n\"\n\t.string \"Is that the one for you, huff-puff?$\""
+  },
+  "label": "Route113_GlassWorkshop_Text_IsThatTheItemForYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route113_GlassWorkshop/scripts.inc",
+  "references": {}
+}

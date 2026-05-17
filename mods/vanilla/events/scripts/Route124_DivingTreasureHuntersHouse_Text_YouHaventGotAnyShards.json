@@ -1,0 +1,19 @@
+{
+  "id": "Route124_DivingTreasureHuntersHouse_Text_YouHaventGotAnyShards",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+    "sha1": "e787b98bef4dd91776e97f180a62a1c98c92003e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+    "rawScript": ".string \"You haven't got any treasures\\n\"\n\t.string \"for me\u2026\\p\"\n\t.string \"If you see any SHARDS, like the RED\\n\"\n\t.string \"SHARD, you've got to trade it with me!$\""
+  },
+  "label": "Route124_DivingTreasureHuntersHouse_Text_YouHaventGotAnyShards",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Apprentice_EventScript_AskQuestion",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/apprentice.inc",
+    "sha1": "353208142bca1df117076064d141b84efe196e7c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/apprentice.inc",
+    "rawScript": "apprentice_getquestion\n\tgoto_if_eq VAR_RESULT, APPRENTICE_QUESTION_WHICH_MON, Apprentice_EventScript_UseWhichMon\n\tgoto_if_eq VAR_RESULT, APPRENTICE_QUESTION_WHAT_ITEM, Apprentice_EventScript_UseWhatHeldItem\n\tgoto_if_eq VAR_RESULT, APPRENTICE_QUESTION_WHICH_MOVE, Apprentice_EventScript_UseWhichMove\n\tgoto_if_eq VAR_RESULT, APPRENTICE_QUESTION_WHICH_FIRST, Apprentice_EventScript_PutWhichMonFirst\n\tgoto_if_eq VAR_RESULT, APPRENTICE_QUESTION_WIN_SPEECH, Apprentice_EventScript_PickWinSpeech\n\trelease\n\treleaseall\n\tend"
+  },
+  "label": "Apprentice_EventScript_AskQuestion",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/apprentice.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

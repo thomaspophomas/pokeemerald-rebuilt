@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Mart_Text_WeakWillGrowStronger",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Mart/scripts.inc",
+    "sha1": "24d08ff30f80ab3ca9bbc615acb31bc95359ba3b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Mart/scripts.inc",
+    "rawScript": ".string \"Even if a POK\u00e9MON is weak now,\\n\"\n\t.string \"it will grow stronger.\\p\"\n\t.string \"The most important thing is love!\\n\"\n\t.string \"Love for your POK\u00e9MON!$\""
+  },
+  "label": "PetalburgCity_Mart_Text_WeakWillGrowStronger",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Mart/scripts.inc",
+  "references": {}
+}

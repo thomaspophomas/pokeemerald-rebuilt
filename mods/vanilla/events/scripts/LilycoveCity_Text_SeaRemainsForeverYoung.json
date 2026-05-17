@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_SeaRemainsForeverYoung",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"Even as we grow old and wrinkled,\\n\"\n\t.string \"the sea remains forever young with\\l\"\n\t.string \"the vivid brilliance of life\u2026\\p\"\n\t.string \"Fwohoho fwohohohoho\u2026$\""
+  },
+  "label": "LilycoveCity_Text_SeaRemainsForeverYoung",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

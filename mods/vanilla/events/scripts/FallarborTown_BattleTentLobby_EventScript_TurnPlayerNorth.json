@@ -1,0 +1,23 @@
+{
+  "id": "FallarborTown_BattleTentLobby_EventScript_TurnPlayerNorth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "sha1": "007b5945200863133fd43941054ec8db085a0356"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "rawScript": "setvar VAR_TEMP_1, 1\n\tturnobject LOCALID_PLAYER, DIR_NORTH\n\tend"
+  },
+  "label": "FallarborTown_BattleTentLobby_EventScript_TurnPlayerNorth",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1"
+    ]
+  }
+}

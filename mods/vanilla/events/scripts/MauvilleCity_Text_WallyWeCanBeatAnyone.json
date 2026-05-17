@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_WallyWeCanBeatAnyone",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"WALLY: I'm not pushing it.\\p\"\n\t.string \"If I combine forces with RALTS,\\n\"\n\t.string \"we can beat anyone!$\""
+  },
+  "label": "MauvilleCity_Text_WallyWeCanBeatAnyone",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

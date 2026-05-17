@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_ContestHall_Text_MonAllTheseRibbons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+    "sha1": "163b9c21282cae11ce5f396c305aff448fc9ab48"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+    "rawScript": ".string \"See!\\n\"\n\t.string \"My POK\u00e9MON won all these RIBBONS!\\p\"\n\t.string \"Have your POK\u00e9MON earned any RIBBONS?\\n\"\n\t.string \"You can check them on your POK\u00e9NAV.$\"\n\n@ Unused"
+  },
+  "label": "FallarborTown_ContestHall_Text_MonAllTheseRibbons",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+  "references": {}
+}

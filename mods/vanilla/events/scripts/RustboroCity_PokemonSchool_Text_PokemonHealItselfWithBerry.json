@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_PokemonSchool_Text_PokemonHealItselfWithBerry",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "sha1": "155fc7f1cee833cb06df85a407e5f98f216a928e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "rawScript": ".string \"A POK\u00e9MON holding a BERRY will heal\\n\"\n\t.string \"itself\u2026\\p\"\n\t.string \"There are many kinds of items that\\n\"\n\t.string \"POK\u00e9MON can hold\u2026\\p\"\n\t.string \"Boy, it sure is hard taking notes\\n\"\n\t.string \"down\u2026$\""
+  },
+  "label": "RustboroCity_PokemonSchool_Text_PokemonHealItselfWithBerry",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+  "references": {}
+}

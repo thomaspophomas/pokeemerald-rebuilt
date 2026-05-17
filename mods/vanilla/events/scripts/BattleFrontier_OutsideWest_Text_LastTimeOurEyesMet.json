@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideWest_Text_LastTimeOurEyesMet",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "sha1": "2ec4ad9a89812a5dd59677c2b6b3c424e5f6bfe9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+    "rawScript": ".string \"Huh? Will you listen to yourself?\\n\"\n\t.string \"That's nothing!\\p\"\n\t.string \"Why, the last time I cheered for him,\\n\"\n\t.string \"our eyes met and sparks flew!$\""
+  },
+  "label": "BattleFrontier_OutsideWest_Text_LastTimeOurEyesMet",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+  "references": {}
+}

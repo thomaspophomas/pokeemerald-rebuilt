@@ -1,0 +1,31 @@
+{
+  "id": "MirageTower_4F_EventScript_RootFossil",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MirageTower_4F/scripts.inc",
+    "sha1": "0e490ee2e9400861a54b910d5d29825dad66deb9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MirageTower_4F/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmsgbox MirageTower_4F_Text_TakeRootFossil, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, MirageTower_4F_EventScript_LeaveRootFossil\n\tgiveitem ITEM_ROOT_FOSSIL\n\tclosemessage\n\tsetflag FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL\n\tsetflag FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL\n\tremoveobject LOCALID_MIRAGE_ROOT_FOSSIL\n\tdelay 30\n\tsetflag FLAG_CHOSE_ROOT_FOSSIL\n\tgoto MirageTower_4F_EventScript_CollapseMirageTower\n\tend"
+  },
+  "label": "MirageTower_4F_EventScript_RootFossil",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MirageTower_4F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_CHOSE_ROOT_FOSSIL",
+      "FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL",
+      "FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_ROOT_FOSSIL"
+    ]
+  }
+}

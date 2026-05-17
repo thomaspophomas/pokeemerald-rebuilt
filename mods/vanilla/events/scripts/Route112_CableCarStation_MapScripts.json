@@ -1,0 +1,24 @@
+{
+  "id": "Route112_CableCarStation_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route112_CableCarStation/scripts.inc",
+    "sha1": "52163a924cedb2545f8ddfd323e7075d7bcc20d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route112_CableCarStation/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, Route112_CableCarStation_OnTransition\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, Route112_CableCarStation_OnFrame\n\t.byte 0"
+  },
+  "label": "Route112_CableCarStation_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Route112_CableCarStation/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideEast_Text_StickyMonWithLongTail",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "sha1": "daab3e530c74c286237faa58f280f11ef97e663a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "rawScript": ".string \"I\u2026\\n\"\n\t.string \"I saw it!\\p\"\n\t.string \"There was a sticky sort of a POK\u00e9MON\\n\"\n\t.string \"with a long tail up ahead!\\p\"\n\t.string \"It was hiding under a boulder, and\\n\"\n\t.string \"it kept staring at me!$\""
+  },
+  "label": "BattleFrontier_OutsideEast_Text_StickyMonWithLongTail",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+  "references": {}
+}

@@ -97,7 +97,7 @@ def as_list(data: Any, key: str) -> List[Any]:
 def c_string(value: Optional[str]) -> str:
     if value is None:
         return "NULL"
-    return '"' + value.replace("\\", "\\\\").replace('"', '\\"') + '"'
+    return '"' + str(value).replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n").replace("\r", "\\r").replace("\t", "\\t") + '"'
 
 
 def c_bool(value: Any) -> str:
@@ -218,6 +218,10 @@ def read_domain_entity(mod: Dict[str, Any], domain: str, entry: Dict[str, Any]) 
     if not isinstance(data, dict):
         raise ModgenError(f"{path}: indexed domain entity must be a JSON object")
     return data
+
+
+def indexed_domain_entities(mod: Dict[str, Any], domain: str) -> List[Dict[str, Any]]:
+    return [read_domain_entity(mod, domain, entry) for entry in load_domain_index(mod, domain)]
 
 
 def load_mods(root: Path) -> List[Dict[str, Any]]:
@@ -383,24 +387,30 @@ def collect_sprite_assets(mods: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     assets = []
     seen = set()
     for mod in mods:
-        for path in iter_json_files(mod["root"] / "sprites" / "assets"):
-            for item in as_list(read_json(path), "assets"):
-                key = key_for(mod["id"], item, path.stem)
-                if key in seen:
-                    raise ModgenError(f"Duplicate sprite asset key {key!r}")
-                seen.add(key)
-                assets.append(
-                    {
-                        "key": key,
-                        "sheet": c_symbol(item.get("sheetSymbol", item.get("sheet"))),
-                        "compressed_sheet": c_symbol(item.get("compressedSheetSymbol", item.get("compressed_sheet"))),
-                        "palette": c_symbol(item.get("paletteSymbol", item.get("palette"))),
-                        "compressed_palette": c_symbol(item.get("compressedPaletteSymbol", item.get("compressed_palette"))),
-                        "template": c_symbol(item.get("templateSymbol", item.get("template"))),
-                        "tile_tag": c_int_or_token(item.get("tileTag", item.get("tile_tag")), "TAG_NONE"),
-                        "palette_tag": c_int_or_token(item.get("paletteTag", item.get("palette_tag")), "TAG_NONE"),
-                    }
-                )
+        indexed = indexed_domain_entities(mod, "sprite_assets")
+        if indexed:
+            iterable = indexed
+        else:
+            iterable = []
+            for path in iter_json_files(mod["root"] / "sprites" / "assets"):
+                iterable.extend(as_list(read_json(path), "assets"))
+        for item in iterable:
+            key = key_for(mod["id"], item, str(item.get("key", item.get("id", "asset"))))
+            if key in seen:
+                raise ModgenError(f"Duplicate sprite asset key {key!r}")
+            seen.add(key)
+            assets.append(
+                {
+                    "key": key,
+                    "sheet": c_symbol(item.get("sheetSymbol", item.get("sheet"))),
+                    "compressed_sheet": c_symbol(item.get("compressedSheetSymbol", item.get("compressed_sheet"))),
+                    "palette": c_symbol(item.get("paletteSymbol", item.get("palette"))),
+                    "compressed_palette": c_symbol(item.get("compressedPaletteSymbol", item.get("compressed_palette"))),
+                    "template": c_symbol(item.get("templateSymbol", item.get("template"))),
+                    "tile_tag": c_int_or_token(item.get("tileTag", item.get("tile_tag")), "TAG_NONE"),
+                    "palette_tag": c_int_or_token(item.get("paletteTag", item.get("palette_tag")), "TAG_NONE"),
+                }
+            )
     return assets
 
 
@@ -408,10 +418,27 @@ def collect_overworld_sprites(mods: List[Dict[str, Any]]) -> List[Dict[str, Any]
     sprites = []
     seen = set()
     for mod in mods:
-        roots = [
-            (mod["root"] / "sprites" / "overworld", "sprites"),
-            (mod["root"] / "outfits", "outfits"),
-        ]
+        indexed = indexed_domain_entities(mod, "overworld_sprites") + indexed_domain_entities(mod, "outfits")
+        if indexed:
+            iterable = indexed
+            for item in iterable:
+                key = key_for(mod["id"], item, str(item.get("key", item.get("id", "sprite"))))
+                if key in seen:
+                    raise ModgenError(f"Duplicate overworld sprite key {key!r}")
+                seen.add(key)
+                asset_key = item.get("assetKey", item.get("asset"))
+                if asset_key is not None and ":" not in str(asset_key):
+                    asset_key = f"{mod['id']}:{asset_key}"
+                sprites.append(
+                    {
+                        "key": key,
+                        "asset_key": asset_key,
+                        "graphics": c_int_or_token(item.get("graphicsId", item.get("graphics_id")), "0"),
+                        "revision": c_int_or_token(item.get("graphicsRevision", item.get("graphics_revision")), "1"),
+                    }
+                )
+            continue
+        roots = [(mod["root"] / "sprites" / "overworld", "sprites"), (mod["root"] / "outfits", "outfits")]
         for root, list_key in roots:
             for path in iter_json_files(root):
                 for item in as_list(read_json(path), list_key):
@@ -437,6 +464,28 @@ def collect_battle_sprites(mods: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     sprites = []
     seen = set()
     for mod in mods:
+        indexed = indexed_domain_entities(mod, "battle_sprites")
+        if indexed:
+            iterable = indexed
+            for item in iterable:
+                key = key_for(mod["id"], item, str(item.get("key", item.get("id", "battle_sprite"))))
+                if key in seen:
+                    raise ModgenError(f"Duplicate battle sprite key {key!r}")
+                seen.add(key)
+                asset_key = item.get("assetKey", item.get("asset"))
+                if asset_key is not None and ":" not in str(asset_key):
+                    asset_key = f"{mod['id']}:{asset_key}"
+                sprites.append(
+                    {
+                        "key": key,
+                        "asset_key": asset_key,
+                        "species": c_int_or_token(item.get("species", item.get("trainerId", item.get("trainer_id"))), "0"),
+                        "form": c_int_or_token(item.get("form"), "0"),
+                        "side": c_int_or_token(item.get("side"), "0"),
+                        "flags": c_int_or_token(item.get("flags"), "0"),
+                    }
+                )
+            continue
         for path in iter_json_files(mod["root"] / "sprites" / "battle"):
             for item in as_list(read_json(path), "sprites"):
                 key = key_for(mod["id"], item, path.stem)
@@ -463,6 +512,24 @@ def collect_followers(mods: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     followers = []
     seen = set()
     for mod in mods:
+        indexed = indexed_domain_entities(mod, "followers")
+        if indexed:
+            iterable = indexed
+            for item in iterable:
+                key = key_for(mod["id"], item, str(item.get("key", item.get("id", "follower"))))
+                if key in seen:
+                    raise ModgenError(f"Duplicate follower sprite key {key!r}")
+                seen.add(key)
+                followers.append(
+                    {
+                        "key": key,
+                        "species": c_int_or_token(item.get("species"), "0"),
+                        "form": c_int_or_token(item.get("form"), "0"),
+                        "shiny": c_bool(item.get("shiny", False)),
+                        "graphics": c_int_or_token(item.get("graphicsId", item.get("graphics_id")), "0"),
+                    }
+                )
+            continue
         for path in iter_json_files(mod["root"] / "followers"):
             for item in as_list(read_json(path), "followers"):
                 key = key_for(mod["id"], item, path.stem)
@@ -485,13 +552,24 @@ def collect_language_texts(mods: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     texts = []
     seen = set()
     for mod in mods:
+        indexed = indexed_domain_entities(mod, "language")
+        if indexed:
+            files = indexed
+        else:
+            files = []
         lang_root = mod["root"] / "lang"
-        for path in iter_json_files(lang_root):
-            data = read_json(path)
-            language = str(data.get("language", path.stem)) if isinstance(data, dict) else path.stem
+        paths = []
+        if not indexed:
+            paths = list(iter_json_files(lang_root))
+        for data_or_path in files + paths:
+            path_stem = data_or_path.stem if isinstance(data_or_path, Path) else "language"
+            data = data_or_path if isinstance(data_or_path, dict) else read_json(data_or_path)
+            language = str(data.get("language", path_stem)) if isinstance(data, dict) else path_stem
+            if isinstance(data, dict) and data.get("runtime") is False:
+                continue
             entries = data.get("strings", data) if isinstance(data, dict) else data
             if not isinstance(entries, dict):
-                raise ModgenError(f"{path}: language file must be an object or contain a 'strings' object")
+                raise ModgenError("language file must be an object or contain a 'strings' object")
             for raw_key, value in sorted(entries.items()):
                 key = raw_key if ":" in raw_key else f"{mod['id']}:{raw_key}"
                 seen_key = (language, key)
@@ -508,6 +586,31 @@ def collect_pokeballs(mods: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     seen_items = set()
     seen_keys = set()
     for mod in mods:
+        indexed = indexed_domain_entities(mod, "pokeballs")
+        if indexed:
+            iterable = indexed
+            for item in iterable:
+                key = key_for(mod["id"], item, str(item.get("key", item.get("id", "pokeball"))))
+                if key in seen_keys:
+                    raise ModgenError(f"Duplicate pokeball key {key!r}")
+                seen_keys.add(key)
+                item_id = c_int_or_token(item.get("itemId", item.get("item_id")), "ITEM_POKE_BALL")
+                if item_id in seen_items:
+                    raise ModgenError(f"Duplicate pokeball item id {item_id!r}")
+                seen_items.add(item_id)
+                balls.append(
+                    {
+                        "key": key,
+                        "item": item_id,
+                        "ball": c_int_or_token(item.get("ballId", item.get("ball_id")), "BALL_POKE"),
+                        "modifier": c_int_or_token(item.get("catchModifier", item.get("catch_modifier")), "10"),
+                        "flags": c_int_or_token(item.get("flags"), "0"),
+                        "modifier_hook": c_func(item.get("catchModifierHook", item.get("catch_modifier_hook"))),
+                        "battle_script": c_symbol(item.get("battleScript", item.get("battle_script"))),
+                        "commit_hook": c_func(item.get("commitHook", item.get("commit_hook"))),
+                    }
+                )
+            continue
         for path in iter_json_files(mod["root"] / "pokeballs"):
             for item in as_list(read_json(path), "pokeballs"):
                 key = key_for(mod["id"], item, path.stem)
@@ -790,6 +893,8 @@ def write_source(path: Path, mods: List[Dict[str, Any]], domain_files: List[Dict
         '#include "constants/items.h"',
         '#include "constants/event_object_movement.h"',
         '#include "constants/event_objects.h"',
+        '#include "constants/species.h"',
+        '#include "constants/trainers.h"',
         '#include "generated/mod_registry.h"',
         '#include "pokeball.h"',
         "",

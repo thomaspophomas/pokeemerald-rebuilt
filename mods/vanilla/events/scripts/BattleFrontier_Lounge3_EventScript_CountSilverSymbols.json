@@ -1,0 +1,29 @@
+{
+  "id": "BattleFrontier_Lounge3_EventScript_CountSilverSymbols",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "sha1": "52169856e2442e0e7ad660050a45dce1a1b2405a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "rawScript": "setvar VAR_0x8004, 0\n\tcall_if_set FLAG_SYS_TOWER_SILVER, BattleFrontier_Lounge3_EventScript_AddSilverSymbolCount\n\tcall_if_set FLAG_SYS_DOME_SILVER, BattleFrontier_Lounge3_EventScript_AddSilverSymbolCount\n\tcall_if_set FLAG_SYS_PALACE_SILVER, BattleFrontier_Lounge3_EventScript_AddSilverSymbolCount\n\tcall_if_set FLAG_SYS_ARENA_SILVER, BattleFrontier_Lounge3_EventScript_AddSilverSymbolCount\n\tcall_if_set FLAG_SYS_FACTORY_SILVER, BattleFrontier_Lounge3_EventScript_AddSilverSymbolCount\n\tcall_if_set FLAG_SYS_PIKE_SILVER, BattleFrontier_Lounge3_EventScript_AddSilverSymbolCount\n\tcall_if_set FLAG_SYS_PYRAMID_SILVER, BattleFrontier_Lounge3_EventScript_AddSilverSymbolCount\n\treturn"
+  },
+  "label": "BattleFrontier_Lounge3_EventScript_CountSilverSymbols",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_ARENA_SILVER",
+      "FLAG_SYS_DOME_SILVER",
+      "FLAG_SYS_FACTORY_SILVER",
+      "FLAG_SYS_PALACE_SILVER",
+      "FLAG_SYS_PIKE_SILVER",
+      "FLAG_SYS_PYRAMID_SILVER",
+      "FLAG_SYS_TOWER_SILVER"
+    ]
+  }
+}

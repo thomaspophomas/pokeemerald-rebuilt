@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerBattleRoom_EventScript_DefeatedAnabelGold",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "sha1": "09b678d8717203a622b1d8714d904bcdeb37d08a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "rawScript": "call BattleFrontier_EventScript_IncrementWinStreak\n\tfrontier_getsymbols\n\tgoto_if_eq VAR_RESULT, 2, BattleFrontier_BattleTowerBattleRoom_EventScript_WarpToLobbyWon\n\tmsgbox BattleFrontier_BattleTowerBattleRoom_Text_AnabelCongratsYourPassPlease, MSGBOX_DEFAULT\n\tplayfanfare MUS_OBTAIN_SYMBOL\n\tmessage BattleFrontier_BattleTowerBattleRoom_Text_AbilitySymbolTookGoldenShine\n\twaitmessage\n\twaitfanfare\n\tfrontier_givesymbol\n\tmsgbox BattleFrontier_BattleTowerBattleRoom_Text_WishICouldBattleYouAgain, MSGBOX_DEFAULT\n\tgoto BattleFrontier_BattleTowerBattleRoom_EventScript_WarpToLobbyWon"
+  },
+  "label": "BattleFrontier_BattleTowerBattleRoom_EventScript_DefeatedAnabelGold",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

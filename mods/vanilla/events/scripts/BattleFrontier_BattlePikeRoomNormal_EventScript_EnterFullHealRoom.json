@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomNormal_EventScript_EnterFullHealRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "sha1": "54c1e0ee021a3a91375f3b05c8682c17ed095aa9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "rawScript": "lockall\n\tdelay 16\n\tapplymovement LOCALID_PIKE_ROOM_NPC_1, BattleFrontier_BattlePikeRoomNormal_Movement_ApproachPlayer\n\twaitmovement 0\n\tmessage BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreToFullHealth\n\twaitmessage\n\tplayfanfare MUS_HEAL\n\twaitfanfare\n\tspecial HealPlayerParty\n\tmsgbox BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_PIKE_ROOM_NPC_1, BattleFrontier_BattlePikeRoomNormal_Movement_NPCExit\n\twaitmovement 0\n\treleaseall\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeRoomNormal_EventScript_EnterFullHealRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+  "references": {}
+}

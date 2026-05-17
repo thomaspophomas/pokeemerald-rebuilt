@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_5F_Text_AtsushiPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_4F/scripts.inc",
+    "sha1": "c48fa2172060d225d434fa0b8e6de09d1dd9b497"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_4F/scripts.inc",
+    "rawScript": ".string \"Until I improve, my teacher, who rests\\n\"\n\t.string \"here, will never find true peace\u2026$\""
+  },
+  "label": "MtPyre_5F_Text_AtsushiPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_4F/scripts.inc",
+  "references": {}
+}

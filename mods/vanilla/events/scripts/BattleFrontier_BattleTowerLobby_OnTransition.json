@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": "call BattleFrontier_BattleTowerLobby_EventScript_ShowOrHideReporter\n\tapprentice_shouldcheckgone\n\tgoto_if_eq VAR_0x8004, FALSE, BattleFrontier_BattleTowerLobby_EventScript_ShowApprentice  @ VAR_0x8004 always TRUE here\n\tgoto_if_set FLAG_DAILY_APPRENTICE_LEAVES, BattleFrontier_BattleTowerLobby_EventScript_HideApprentice"
+  },
+  "label": "BattleFrontier_BattleTowerLobby_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DAILY_APPRENTICE_LEAVES"
+    ]
+  }
+}

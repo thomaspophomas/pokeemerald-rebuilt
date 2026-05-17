@@ -1,0 +1,27 @@
+{
+  "id": "SlateportCity_Harbor_EventScript_Lilycove",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "sha1": "304e0889603d7850b02e01765d969cf3c903eb9e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "rawScript": "msgbox SlateportCity_Harbor_Text_LilycoveItIs, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_ChooseNewDestination\n\tsetvar VAR_SS_TIDAL_STATE, SS_TIDAL_BOARD_SLATEPORT\n\tcall SlateportCity_Harbor_EventScript_BoardFerry\n\twarp MAP_SS_TIDAL_CORRIDOR, 1, 10\n\twaitstate\n\trelease\n\tend"
+  },
+  "label": "SlateportCity_Harbor_EventScript_Lilycove",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity_Harbor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_SS_TIDAL_STATE"
+    ],
+    "maps": [
+      "MAP_SS_TIDAL_CORRIDOR"
+    ]
+  }
+}

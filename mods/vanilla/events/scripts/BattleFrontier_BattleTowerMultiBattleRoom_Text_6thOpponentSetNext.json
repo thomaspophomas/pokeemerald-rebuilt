@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiBattleRoom_Text_6thOpponentSetNext",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+    "sha1": "71e71dc7e048f3a27e89d0ae41c736d25233e068"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+    "rawScript": ".string \"The 6th set of opponents is next.\\n\"\n\t.string \"Do your best!$\"\n\n@ Unused"
+  },
+  "label": "BattleFrontier_BattleTowerMultiBattleRoom_Text_6thOpponentSetNext",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc",
+  "references": {}
+}

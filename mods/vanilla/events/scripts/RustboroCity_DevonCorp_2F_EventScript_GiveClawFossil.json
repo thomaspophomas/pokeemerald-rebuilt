@@ -1,0 +1,27 @@
+{
+  "id": "RustboroCity_DevonCorp_2F_EventScript_GiveClawFossil",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "sha1": "7e0aa6a4df50ead64287578a24ba19b07cafbb02"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "rawScript": "bufferitemname STR_VAR_1, ITEM_CLAW_FOSSIL\n\tmsgbox RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher, MSGBOX_DEFAULT\n\tremoveitem ITEM_CLAW_FOSSIL\n\tsetvar VAR_FOSSIL_RESURRECTION_STATE, 1\n\tsetvar VAR_WHICH_FOSSIL_REVIVED, 2\n\trelease\n\tend"
+  },
+  "label": "RustboroCity_DevonCorp_2F_EventScript_GiveClawFossil",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FOSSIL_RESURRECTION_STATE",
+      "VAR_WHICH_FOSSIL_REVIVED"
+    ],
+    "items": [
+      "ITEM_CLAW_FOSSIL"
+    ]
+  }
+}

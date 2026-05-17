@@ -1,0 +1,19 @@
+{
+  "id": "Route111_WinstrateFamilysHouse_Text_MySonIsStrongerThanYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111_WinstrateFamilysHouse/scripts.inc",
+    "sha1": "263fea63e58597b7384c5c9ba935a901a00611b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111_WinstrateFamilysHouse/scripts.inc",
+    "rawScript": ".string \"You're the first TRAINER I've seen who\\n\"\n\t.string \"deploys POK\u00e9MON so masterfully.\\p\"\n\t.string \"But, I should tell you--my son is\\n\"\n\t.string \"stronger than you.\\p\"\n\t.string \"He even took the POK\u00e9MON LEAGUE\\n\"\n\t.string \"challenge, I'll have you know.$\""
+  },
+  "label": "Route111_WinstrateFamilysHouse_Text_MySonIsStrongerThanYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route111_WinstrateFamilysHouse/scripts.inc",
+  "references": {}
+}

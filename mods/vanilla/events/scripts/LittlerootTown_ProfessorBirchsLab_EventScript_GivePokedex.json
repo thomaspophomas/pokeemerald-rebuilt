@@ -1,0 +1,30 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_EventScript_GivePokedex",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": "msgbox LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex, MSGBOX_DEFAULT\n\tcall LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex\n\tmsgbox LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_BIRCHS_LAB_RIVAL, LittlerootTown_ProfessorBirchsLab_Movement_RivalApproachPlayer\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\tcheckplayergender\n\tcall_if_eq VAR_RESULT, MALE, LittlerootTown_ProfessorBirchsLab_EventScript_MayGivePokeBalls\n\tcall_if_eq VAR_RESULT, FEMALE, LittlerootTown_ProfessorBirchsLab_EventScript_BrendanGivePokeBalls\n\tsetvar VAR_BIRCH_LAB_STATE, 5\n\tsetflag FLAG_ADVENTURE_STARTED\n\tsetvar VAR_OLDALE_TOWN_STATE, 1\n\tsetvar VAR_LITTLEROOT_RIVAL_STATE, 4\n\tsetvar VAR_LITTLEROOT_TOWN_STATE, 3\n\treleaseall\n\tend"
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_EventScript_GivePokedex",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_ADVENTURE_STARTED"
+    ],
+    "vars": [
+      "VAR_BIRCH_LAB_STATE",
+      "VAR_LITTLEROOT_RIVAL_STATE",
+      "VAR_LITTLEROOT_TOWN_STATE",
+      "VAR_OLDALE_TOWN_STATE",
+      "VAR_RESULT"
+    ]
+  }
+}

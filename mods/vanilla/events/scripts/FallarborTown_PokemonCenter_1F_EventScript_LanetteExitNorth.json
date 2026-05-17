@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_PokemonCenter_1F_EventScript_LanetteExitNorth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_PokemonCenter_1F/scripts.inc",
+    "sha1": "1f48e8d40f8ba3b6123d3e45ff7292df588ad7dd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_PokemonCenter_1F/scripts.inc",
+    "rawScript": "applymovement LOCALID_FALLARBOR_LANETTE, FallarborTown_PokemonCenter_1F_Movement_LanetteExitNorth\n\twaitmovement 0\n\tgoto FallarborTown_PokemonCenter_1F_EventScript_LanetteExited\n\tend"
+  },
+  "label": "FallarborTown_PokemonCenter_1F_EventScript_LanetteExitNorth",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

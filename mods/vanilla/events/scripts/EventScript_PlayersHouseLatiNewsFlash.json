@@ -1,0 +1,27 @@
+{
+  "id": "EventScript_PlayersHouseLatiNewsFlash",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/tv.inc",
+    "sha1": "6710fec48cce1bb3d0ce8ab17e9e9756f367ca71"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/tv.inc",
+    "rawScript": "msgbox PlayersHouse_1F_Text_LatiEmergencyNewsFlash, MSGBOX_DEFAULT\n\tspecial InitRoamer\n\tclearflag FLAG_SYS_TV_LATIAS_LATIOS\n\tsetflag FLAG_LATIOS_OR_LATIAS_ROAMING\n\tspecial TurnOffTVScreen\n\treleaseall\n\tend\n\n@ The following is a loop for the TV show messages\n@ VAR_RESULT is set to TRUE when the show has printed its final message"
+  },
+  "label": "EventScript_PlayersHouseLatiNewsFlash",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/tv.inc",
+  "references": {
+    "flags": [
+      "FLAG_LATIOS_OR_LATIAS_ROAMING",
+      "FLAG_SYS_TV_LATIAS_LATIOS"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

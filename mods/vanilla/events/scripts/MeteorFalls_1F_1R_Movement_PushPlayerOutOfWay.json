@@ -1,0 +1,19 @@
+{
+  "id": "MeteorFalls_1F_1R_Movement_PushPlayerOutOfWay",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "sha1": "9f4ded44922a9eecca2a712d1673b053babe0bae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "rawScript": "walk_in_place_faster_down\n\tdelay_4\n\twalk_in_place_faster_right\n\tlock_facing_direction\n\twalk_left\n\tunlock_facing_direction\n\tface_right\n\tstep_end"
+  },
+  "label": "MeteorFalls_1F_1R_Movement_PushPlayerOutOfWay",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+  "references": {}
+}

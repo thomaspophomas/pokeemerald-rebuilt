@@ -1,0 +1,23 @@
+{
+  "id": "SlateportCity_BattleTentLobby_EventScript_ReadRulesBoard",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+    "sha1": "d8233cb564c951151609565c69259c5bc6039b75"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+    "rawScript": "message BattleFrontier_BattleFactoryLobby_Text_ReadWhichHeading\n\twaitmessage\n\tmultichoice 17, 0, MULTI_SLATEPORT_TENT_RULES, FALSE\n\tswitch VAR_RESULT\n\tcase 0, SlateportCity_BattleTentLobby_EventScript_RulesBasics\n\tcase 1, SlateportCity_BattleTentLobby_EventScript_RulesSwapPartner\n\tcase 2, SlateportCity_BattleTentLobby_EventScript_RulesSwapNumber\n\tcase 3, SlateportCity_BattleTentLobby_EventScript_RulesSwapNotes\n\tcase 4, SlateportCity_BattleTentLobby_EventScript_RulesMons\n\tcase 5, SlateportCity_BattleTentLobby_EventScript_ExitRules\n\tcase MULTI_B_PRESSED, SlateportCity_BattleTentLobby_EventScript_ExitRules\n\tend"
+  },
+  "label": "SlateportCity_BattleTentLobby_EventScript_ReadRulesBoard",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

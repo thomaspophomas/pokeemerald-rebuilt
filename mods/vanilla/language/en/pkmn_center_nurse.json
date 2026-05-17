@@ -1,0 +1,28 @@
+{
+  "id": "en:pkmn_center_nurse",
+  "domain": "language",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/text/pkmn_center_nurse.inc",
+    "sha1": "e710ae4d60bd9a040cb91acdbc4315e34e44a5e0"
+  },
+  "legacy": {
+    "kind": "asm_text_labels",
+    "sourcePath": "data/text/pkmn_center_nurse.inc"
+  },
+  "language": "en",
+  "group": "pkmn_center_nurse",
+  "runtime": false,
+  "strings": {
+    "gText_WouldYouLikeToRestYourPkmn": ".string \"Hello, and welcome to\\n\"\n\t.string \"the POK\u00e9MON CENTER.\\p\"\n\t.string \"We restore your tired POK\u00e9MON\\n\"\n\t.string \"to full health.\\p\"\n\t.string \"Would you like to rest your POK\u00e9MON?$\"",
+    "gText_IllTakeYourPkmn": ".string \"Okay, I'll take your POK\u00e9MON\\n\"\n\t.string \"for a few seconds.$\"",
+    "gText_RestoredPkmnToFullHealth": ".string \"Thank you for waiting.\\p\"\n\t.string \"We've restored your POK\u00e9MON\\n\"\n\t.string \"to full health.$\"",
+    "gText_WeHopeToSeeYouAgain": ".string \"We hope to see you again!$\"",
+    "gText_WelcomeCutShort": ".string \"Hello, and welcome to\\n\"\n\t.string \"the POK\u00e9MON CENTER.\\p\"\n\t.string \"We restore your tired POK\u00e9MON\\n\"\n\t.string \"to full health.\\p\"\n\t.string \"Would you like to\u2026$\"",
+    "gText_NoticesGoldCard": ".string \"Th-that card\u2026\\n\"\n\t.string \"Could it be\u2026 The GOLD CARD?!\\p\"\n\t.string \"Oh, the gold color is brilliant!\\n\"\n\t.string \"The four stars seem to sparkle!\\p\"\n\t.string \"I've seen several TRAINERS with\\n\"\n\t.string \"a SILVER CARD before, but, {PLAYER},\\l\"\n\t.string \"you're the first TRAINER I've ever\\l\"\n\t.string \"seen with a GOLD CARD!\\p\"\n\t.string \"Okay, {PLAYER}, please allow me\\n\"\n\t.string \"the honor of resting your POK\u00e9MON!$\"",
+    "gText_YouWantTheUsual": ".string \"I'm delighted to see you, {PLAYER}!\\n\"\n\t.string \"You want the usual, am I right?$\"",
+    "gText_IllTakeYourPkmn2": ".string \"Okay, I'll take your POK\u00e9MON\\n\"\n\t.string \"for a few seconds.$\"",
+    "gText_ThankYouForWaiting": ".string \"Thank you for waiting.$\"",
+    "gText_WeHopeToSeeYouAgain2": ".string \"We hope to see you again!$\""
+  }
+}

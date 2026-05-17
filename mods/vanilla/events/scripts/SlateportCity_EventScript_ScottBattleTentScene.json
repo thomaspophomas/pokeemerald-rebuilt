@@ -1,0 +1,24 @@
+{
+  "id": "SlateportCity_EventScript_ScottBattleTentScene",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_PLAYER, Common_Movement_FaceUp\n\twaitmovement 0\n\topendoor 10, 12\n\twaitdooranim\n\taddobject LOCALID_SLATEPORT_SCOTT\n\tapplymovement LOCALID_PLAYER, SlateportCity_Movement_PushPlayerDown\n\tapplymovement LOCALID_SLATEPORT_SCOTT, SlateportCity_Movement_ScottExitBattleTent\n\twaitmovement 0\n\tclosedoor 10, 12\n\twaitdooranim\n\tmsgbox SlateportCity_Text_TakingBattleTentChallenge, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_PLAYER, SlateportCity_Movement_PlayerWatchScottExit\n\tapplymovement LOCALID_SLATEPORT_SCOTT, SlateportCity_Movement_ScottExitAfterBattleTent\n\twaitmovement 0\n\tremoveobject LOCALID_SLATEPORT_SCOTT\n\taddvar VAR_SCOTT_STATE, 1\n\tsetvar VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 3\n\treleaseall\n\tend"
+  },
+  "label": "SlateportCity_EventScript_ScottBattleTentScene",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_SCOTT_STATE",
+      "VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "LittlerootTown_MaysHouse_1F_EventScript_YoureNewNeighbor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+    "sha1": "4acc9bd3dce8266e27759616e41b13205491adc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+    "rawScript": "lockall\n\tplayse SE_PIN\n\tapplymovement LOCALID_RIVALS_HOUSE_1F_MOM, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_RIVALS_HOUSE_1F_MOM, Common_Movement_Delay48\n\twaitmovement 0\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight\n\tapplymovement LOCALID_RIVALS_HOUSE_1F_MOM, LittlerootTown_MaysHouse_1F_Movement_RivalMomApproach\n\twaitmovement 0\n\tspecial GetRivalSonDaughterString\n\tmsgbox RivalsHouse_1F_Text_OhYoureTheNewNeighbor, MSGBOX_DEFAULT\n\tsetflag FLAG_MET_RIVAL_MOM\n\tsetvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 2\n\treleaseall\n\tend"
+  },
+  "label": "LittlerootTown_MaysHouse_1F_EventScript_YoureNewNeighbor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_RIVAL_MOM"
+    ],
+    "vars": [
+      "VAR_LITTLEROOT_HOUSES_STATE_BRENDAN"
+    ]
+  }
+}

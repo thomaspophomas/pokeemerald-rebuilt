@@ -1,0 +1,19 @@
+{
+  "id": "Route116_TunnelersRestHouse_Text_ManDiggingHisWayToVerdanturf",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116_TunnelersRestHouse/scripts.inc",
+    "sha1": "cf1b26d5655363e9dd7eded558cfb3a4486c3aa4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route116_TunnelersRestHouse/scripts.inc",
+    "rawScript": ".string \"There's a man digging his way to\\n\"\n\t.string \"VERDANTURF all by his lonesome.\\l\"\n\t.string \"He's desperate to get through.\\p\"\n\t.string \"He says that if he digs little by little\\n\"\n\t.string \"without using machines, he won't\\l\"\n\t.string \"disturb POK\u00e9MON, and he'll avoid\\l\"\n\t.string \"harming the natural environment.\\p\"\n\t.string \"I wonder if he made it through yet.$\""
+  },
+  "label": "Route116_TunnelersRestHouse_Text_ManDiggingHisWayToVerdanturf",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route116_TunnelersRestHouse/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_Text_DidntSaveBeforeQuitting",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": ".string \"Excuse me!\\p\"\n\t.string \"You didn't save before you quit your\\n\"\n\t.string \"challenge last time.\\p\"\n\t.string \"Because of that, your challenge so far\\n\"\n\t.string \"has been disqualified. Sorry!$\""
+  },
+  "label": "BattleFrontier_BattleTowerLobby_Text_DidntSaveBeforeQuitting",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {}
+}

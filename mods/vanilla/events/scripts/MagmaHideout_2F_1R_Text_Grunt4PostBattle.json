@@ -1,0 +1,19 @@
+{
+  "id": "MagmaHideout_2F_1R_Text_Grunt4PostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_2F_1R/scripts.inc",
+    "sha1": "015ca35ad24a95edcf15463fdb5c0bcafde94383"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_2F_1R/scripts.inc",
+    "rawScript": ".string \"I've already lost.\\p\"\n\t.string \"Do I really need to keep running\\n\"\n\t.string \"around in a circle?$\""
+  },
+  "label": "MagmaHideout_2F_1R_Text_Grunt4PostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MagmaHideout_2F_1R/scripts.inc",
+  "references": {}
+}

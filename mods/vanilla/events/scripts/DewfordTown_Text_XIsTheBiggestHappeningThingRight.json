@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Text_XIsTheBiggestHappeningThingRight",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown/scripts.inc",
+    "sha1": "e9e724e6d3bba641bcb2d4263fe226ee6c1b4840"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown/scripts.inc",
+    "rawScript": ".string \"I like what's hip, happening, and trendy.\\n\"\n\t.string \"I'm always checking it out.\\p\"\n\t.string \"Listen, have you heard about this new\\n\"\n\t.string \"\u201c{STR_VAR_1}\u201d?\\p\"\n\t.string \"That's right!\\n\"\n\t.string \"Of course you know!\\p\"\n\t.string \"I mean, sheesh,\\n\"\n\t.string \"\u201c{STR_VAR_1}\u201d\u2026\\l\"\n\t.string \"It's the hottest thing in cool!\\p\"\n\t.string \"Wherever you're from,\\n\"\n\t.string \"\u201c{STR_VAR_1}\u201d\\l\"\n\t.string \"is the biggest happening thing, right?$\""
+  },
+  "label": "DewfordTown_Text_XIsTheBiggestHappeningThingRight",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown/scripts.inc",
+  "references": {}
+}

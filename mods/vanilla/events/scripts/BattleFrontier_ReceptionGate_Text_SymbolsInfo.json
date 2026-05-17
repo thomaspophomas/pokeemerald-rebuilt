@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ReceptionGate_Text_SymbolsInfo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "sha1": "5b6e89c53f6e32c0fa6883bd750252f1d739a97b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "rawScript": ".string \"There are seven facilities at\\n\"\n\t.string \"the BATTLE FRONTIER.\\p\"\n\t.string \"TRAINERS who gain recognition for\\n\"\n\t.string \"their abilities may be rewarded with\\l\"\n\t.string \"symbols from each of the facilities.\\p\"\n\t.string \"To earn a symbol, TRAINERS may need\\n\"\n\t.string \"to defeat other TRAINERS in a row,\\l\"\n\t.string \"and may need to win events repeatedly.\\p\"\n\t.string \"It's certainly not easy to win symbols.\\n\"\n\t.string \"I wish you the best of luck!$\""
+  },
+  "label": "BattleFrontier_ReceptionGate_Text_SymbolsInfo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": "SurfPichu_GiveIfPossible",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_pichu.inc",
+    "sha1": "b8f12719008c830f693c4c1d3228265f92693526"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_pichu.inc",
+    "rawScript": "specialvar VAR_GIFT_PICHU_SLOT, CalculatePlayerPartyCount\n\tvgoto_if_eq VAR_GIFT_PICHU_SLOT, PARTY_SIZE, SurfPichu_FullParty\n\tsetflag FLAG_MYSTERY_GIFT_DONE\n\tvcall SurfPichu_GiveEgg\n\tlock\n\tfaceplayer\n\tvmessage sText_MysteryGiftEgg\n\twaitmessage\n\twaitbuttonpress\n\tplayfanfare MUS_OBTAIN_ITEM\n\twaitfanfare\n\trelease\n\tend"
+  },
+  "label": "SurfPichu_GiveIfPossible",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_pichu.inc",
+  "references": {
+    "flags": [
+      "FLAG_MYSTERY_GIFT_DONE"
+    ],
+    "vars": [
+      "VAR_GIFT_PICHU_SLOT"
+    ]
+  }
+}

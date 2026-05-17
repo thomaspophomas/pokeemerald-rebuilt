@@ -1,0 +1,26 @@
+{
+  "id": "FallarborTown_Mart_EventScript_MetronomeTutor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/move_tutors.inc",
+    "sha1": "9c188f9a9477e783c3dda838ce8c2873c44b9398"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/move_tutors.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_MOVE_TUTOR_TAUGHT_METRONOME, MoveTutor_EventScript_MetronomeTaught\n\tmsgbox MoveTutor_Text_MetronomeTeach, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_MetronomeDeclined\n\tcall MoveTutor_EventScript_CanOnlyBeLearnedOnce\n\tgoto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_MetronomeDeclined\n\tmsgbox MoveTutor_Text_MetronomeWhichMon, MSGBOX_DEFAULT\n\tsetvar VAR_0x8005, TUTOR_MOVE_METRONOME\n\tcall MoveTutor_EventScript_OpenPartyMenu\n\tgoto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_MetronomeDeclined\n\tsetflag FLAG_MOVE_TUTOR_TAUGHT_METRONOME\n\tgoto MoveTutor_EventScript_MetronomeTaught\n\tend"
+  },
+  "label": "FallarborTown_Mart_EventScript_MetronomeTutor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/move_tutors.inc",
+  "references": {
+    "flags": [
+      "FLAG_MOVE_TUTOR_TAUGHT_METRONOME"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

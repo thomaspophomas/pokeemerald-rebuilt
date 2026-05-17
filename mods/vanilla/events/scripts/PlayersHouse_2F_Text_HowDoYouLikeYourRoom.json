@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_2F_Text_HowDoYouLikeYourRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+    "sha1": "e2d021d5a56c7a155294e7f5fcba3be133f71b33"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+    "rawScript": ".string \"MOM: {PLAYER}, how do you like your\\n\"\n\t.string \"new room?\\p\"\n\t.string \"Good! Everything's put away neatly!\\p\"\n\t.string \"They finished moving everything in\\n\"\n\t.string \"downstairs, too.\\p\"\n\t.string \"POK\u00e9MON movers are so convenient!\\p\"\n\t.string \"Oh, you should make sure that\\n\"\n\t.string \"everything's all there on your desk.$\""
+  },
+  "label": "PlayersHouse_2F_Text_HowDoYouLikeYourRoom",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+  "references": {}
+}

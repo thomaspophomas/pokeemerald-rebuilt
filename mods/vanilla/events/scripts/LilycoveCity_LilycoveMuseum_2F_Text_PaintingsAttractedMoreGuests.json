@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_2F_Text_PaintingsAttractedMoreGuests",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "sha1": "c41e25282a159070f0eb7fb3edcf1b61cc1cfa19"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "rawScript": ".string \"Isn't this marvelous?\\n\"\n\t.string \"This collection of paintings!\\p\"\n\t.string \"Each one of them flawless!\\n\"\n\t.string \"None better than another!\\p\"\n\t.string \"These paintings have attracted\\n\"\n\t.string \"more guests to our ART MUSEUM.\\p\"\n\t.string \"Sincerely, I thank you, {PLAYER}.\\n\"\n\t.string \"This is my dream come true!$\""
+  },
+  "label": "LilycoveCity_LilycoveMuseum_2F_Text_PaintingsAttractedMoreGuests",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+  "references": {}
+}

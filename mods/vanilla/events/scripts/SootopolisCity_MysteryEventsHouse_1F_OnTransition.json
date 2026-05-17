@@ -1,0 +1,24 @@
+{
+  "id": "SootopolisCity_MysteryEventsHouse_1F_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc",
+    "sha1": "2fdeaa88644de0428efc55499bd5f5d3a0d1831f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc",
+    "rawScript": "frontier_checkvisittrainer\n\tcall_if_eq VAR_RESULT, 0, SootopolisCity_MysteryEventsHouse_1F_EventScript_SetTrainerVisitingLayout\n\tcall_if_ne VAR_SOOTOPOLIS_MYSTERY_EVENTS_STATE, 0, SootopolisCity_MysteryEventsHouse_1F_EventScript_MoveOldManToDoor\n\tend"
+  },
+  "label": "SootopolisCity_MysteryEventsHouse_1F_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_SOOTOPOLIS_MYSTERY_EVENTS_STATE"
+    ]
+  }
+}

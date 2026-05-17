@@ -1,0 +1,23 @@
+{
+  "id": "Route110_SeasideCyclingRoadNorthEntrance_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.inc",
+    "sha1": "47c0f318baf7ac84ae014f5bbe6a3bb198670c0e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, Route110_SeasideCyclingRoadNorthEntrance_OnTransition\n\t.byte 0"
+  },
+  "label": "Route110_SeasideCyclingRoadNorthEntrance_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

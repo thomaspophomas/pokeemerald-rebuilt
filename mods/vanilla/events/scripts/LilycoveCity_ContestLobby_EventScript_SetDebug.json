@@ -1,0 +1,32 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_SetDebug",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": "setflag FLAG_HIDE_LILYCOVE_MUSEUM_CURATOR\n#ifdef UBFIX\n\tsetvar VAR_LILYCOVE_MUSEUM_2F_STATE, 1\n#else\n\tcopyvar VAR_LILYCOVE_MUSEUM_2F_STATE, 1, warn=FALSE\n#endif\n\tadditem ITEM_CONTEST_PASS\n\tsetvar VAR_0x800B, 8\n\tsetvar VAR_CONTEST_RANK, CONTEST_RANK_MASTER\n\tsetvar VAR_LILYCOVE_CONTEST_LOBBY_STATE, 1\n\tsetflag FLAG_SYS_RIBBON_GET\n\tend"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_SetDebug",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_LILYCOVE_MUSEUM_CURATOR",
+      "FLAG_SYS_RIBBON_GET"
+    ],
+    "vars": [
+      "VAR_CONTEST_RANK",
+      "VAR_LILYCOVE_CONTEST_LOBBY_STATE",
+      "VAR_LILYCOVE_MUSEUM_2F_STATE"
+    ],
+    "items": [
+      "ITEM_CONTEST_PASS"
+    ]
+  }
+}

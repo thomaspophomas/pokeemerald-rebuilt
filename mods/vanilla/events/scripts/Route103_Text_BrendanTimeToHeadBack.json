@@ -1,0 +1,19 @@
+{
+  "id": "Route103_Text_BrendanTimeToHeadBack",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route103/scripts.inc",
+    "sha1": "cdbe6074bf0bdfa44494ccf1457b18c3de43e0de"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route103/scripts.inc",
+    "rawScript": ".string \"BRENDAN: I think I get it.\\n\"\n\t.string \"I think I know why my dad has his eye\\l\"\n\t.string \"out for you now.\\p\"\n\t.string \"Look, your POK\u00e9MON already likes you,\\n\"\n\t.string \"even though you just got it.\\p\"\n\t.string \"{PLAYER}, I get the feeling that you\\n\"\n\t.string \"could befriend any POK\u00e9MON with ease.\\p\"\n\t.string \"We should head back to the LAB.$\""
+  },
+  "label": "Route103_Text_BrendanTimeToHeadBack",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route103/scripts.inc",
+  "references": {}
+}

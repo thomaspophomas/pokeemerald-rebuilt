@@ -1,0 +1,19 @@
+{
+  "id": "AbandonedShip_Rooms_B1F_Text_GettingQueasy",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Rooms_B1F/scripts.inc",
+    "sha1": "0f716cc0922c8a7607eae2e979b7c689b3e75400"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_Rooms_B1F/scripts.inc",
+    "rawScript": ".string \"Urrrrppp\u2026\\p\"\n\t.string \"I'm getting queasy just being aboard\\n\"\n\t.string \"this ship\u2026\\p\"\n\t.string \"It's not even moving, but\u2026$\""
+  },
+  "label": "AbandonedShip_Rooms_B1F_Text_GettingQueasy",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AbandonedShip_Rooms_B1F/scripts.inc",
+  "references": {}
+}

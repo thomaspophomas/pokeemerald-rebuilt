@@ -1,0 +1,19 @@
+{
+  "id": "NewMauville_Inside_Text_GeneratorQuietedDown",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NewMauville_Inside/scripts.inc",
+    "sha1": "e55cd05ab8dbd71a8b15a7cf2c2dc966549467fe"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NewMauville_Inside/scripts.inc",
+    "rawScript": ".string \"The generator quieted down.$\""
+  },
+  "label": "NewMauville_Inside_Text_GeneratorQuietedDown",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/NewMauville_Inside/scripts.inc",
+  "references": {}
+}

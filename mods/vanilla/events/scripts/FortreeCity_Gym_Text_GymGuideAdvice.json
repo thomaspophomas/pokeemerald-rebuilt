@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Gym_Text_GymGuideAdvice",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/scripts.inc",
+    "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Gym/scripts.inc",
+    "rawScript": ".string \"Yo, how's it going, CHAMPION-\\n\"\n\t.string \"bound {PLAYER}?\\p\"\n\t.string \"FORTREE GYM LEADER WINONA is\\n\"\n\t.string \"a master of FLYING-type POK\u00e9MON.\\p\"\n\t.string \"She's waiting at the back of this GYM,\\n\"\n\t.string \"behind the rotating doors.\\p\"\n\t.string \"She's waiting for new challengers\\n\"\n\t.string \"who are trying to take wing!\\p\"\n\t.string \"Okay, go for it!$\""
+  },
+  "label": "FortreeCity_Gym_Text_GymGuideAdvice",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_Gym/scripts.inc",
+  "references": {}
+}

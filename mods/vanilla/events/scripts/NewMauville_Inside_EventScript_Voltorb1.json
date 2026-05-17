@@ -1,0 +1,27 @@
+{
+  "id": "NewMauville_Inside_EventScript_Voltorb1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NewMauville_Inside/scripts.inc",
+    "sha1": "e55cd05ab8dbd71a8b15a7cf2c2dc966549467fe"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NewMauville_Inside/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tsetwildbattle SPECIES_VOLTORB, 25\n\twaitse\n\tplaymoncry SPECIES_VOLTORB, CRY_MODE_ENCOUNTER\n\tdelay 40\n\twaitmoncry\n\tsetflag FLAG_SYS_CTRL_OBJ_DELETE\n\tdowildbattle\n\tclearflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_WON, NewMauville_Inside_EventScript_DefeatedVoltorb1\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_RAN, NewMauville_Inside_EventScript_DefeatedVoltorb1\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, NewMauville_Inside_EventScript_DefeatedVoltorb1\n\tsetflag FLAG_DEFEATED_VOLTORB_1_NEW_MAUVILLE\n\trelease\n\tend"
+  },
+  "label": "NewMauville_Inside_EventScript_Voltorb1",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/NewMauville_Inside/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_VOLTORB_1_NEW_MAUVILLE",
+      "FLAG_SYS_CTRL_OBJ_DELETE"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

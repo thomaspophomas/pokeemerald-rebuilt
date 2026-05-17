@@ -1,0 +1,19 @@
+{
+  "id": "SSTidalRooms_Text_NaomiIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalRooms/scripts.inc",
+    "sha1": "1953df649981f24c9b39a0b7b26b1ed8339d7249"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalRooms/scripts.inc",
+    "rawScript": ".string \"Oh, you're such an adorable TRAINER.\\n\"\n\t.string \"Would you like to have tea?\\l\"\n\t.string \"Or would you rather battle?$\""
+  },
+  "label": "SSTidalRooms_Text_NaomiIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SSTidalRooms/scripts.inc",
+  "references": {}
+}

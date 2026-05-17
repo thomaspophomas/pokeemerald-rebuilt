@@ -1,0 +1,23 @@
+{
+  "id": "Route121_EventScript_RegisterWalter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route121/scripts.inc",
+    "sha1": "25fbd3a3d48b51dbfcf569f03ff4f7001d429ac3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route121/scripts.inc",
+    "rawScript": "special PlayerFaceTrainerAfterBattle\n\twaitmovement 0\n\tmsgbox Route121_Text_WalterRegister, MSGBOX_DEFAULT\n\tregister_matchcall TRAINER_WALTER_1\n\trelease\n\tend"
+  },
+  "label": "Route121_EventScript_RegisterWalter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route121/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_WALTER_1"
+    ]
+  }
+}

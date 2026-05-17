@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F_Text_WouldveLikedToBeAstronaut",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "rawScript": ".string \"If only I was a little younger, I would\\n\"\n\t.string \"have liked being an astronaut\u2026\\p\"\n\t.string \"No\u2026 It's not too late!\\n\"\n\t.string \"I can and will try!$\""
+  },
+  "label": "MossdeepCity_SpaceCenter_2F_Text_WouldveLikedToBeAstronaut",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+  "references": {}
+}

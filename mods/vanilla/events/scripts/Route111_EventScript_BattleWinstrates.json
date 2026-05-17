@@ -1,0 +1,26 @@
+{
+  "id": "Route111_EventScript_BattleWinstrates",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": "msgbox Route111_Text_VictorIntro, MSGBOX_DEFAULT\n\ttrainerbattle_no_intro TRAINER_VICTOR, Route111_Text_VictorDefeat\n\tapplymovement LOCALID_ROUTE111_VICTOR, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tcall Route111_EventScript_OpenWinstrateDoor\n\tmsgbox Route111_Text_VictorPostBattle, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_ROUTE111_VICTOR, Route111_Movement_WinstrateEnterHouse\n\twaitmovement 0\n\tremoveobject LOCALID_ROUTE111_VICTOR\n\tcall Route111_EventScript_CloseWinstrateDoor\n\tapplymovement LOCALID_PLAYER, Route111_Movement_WaitForNextWinstrate\n\twaitmovement 0\n\tcall Route111_EventScript_OpenWinstrateDoor\n\taddobject LOCALID_ROUTE111_VICTORIA\n\tapplymovement LOCALID_ROUTE111_VICTORIA, Route111_Movement_WinstrateExitHouse\n\twaitmovement 0\n\tcall Route111_EventScript_CloseWinstrateDoor\n\tmsgbox Route111_Text_VictoriaIntro, MSGBOX_DEFAULT\n\ttrainerbattle_no_intro TRAINER_VICTORIA, Route111_Text_VictoriaDefeat\n\tapplymovement LOCALID_ROUTE111_VICTORIA, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tcall Route111_EventScript_OpenWinstrateDoor\n\tmsgbox Route111_Text_VictoriaPostBattle, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_ROUTE111_VICTORIA, Route111_Movement_WinstrateEnterHouse\n\twaitmovement 0\n\tremoveobject LOCALID_ROUTE111_VICTORIA\n\tcall Route111_EventScript_CloseWinstrateDoor\n\tapplymovement LOCALID_PLAYER, Route111_Movement_WaitForNextWinstrate\n\twaitmovement 0\n\tcall Route111_EventScript_OpenWinstrateDoor\n\taddobject LOCALID_ROUTE111_VIVI\n\tapplymovement LOCALID_ROUTE111_VIVI, Route111_Movement_WinstrateExitHouse\n\twaitmovement 0\n\tcall Route111_EventScript_CloseWinstrateDoor\n\tmsgbox Route111_Text_ViviIntro, MSGBOX_DEFAULT\n\ttrainerbattle_no_intro TRAINER_VIVI, Route111_Text_ViviDefeat\n\tapplymovement LOCALID_ROUTE111_VIVI, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tcall Route111_EventScript_OpenWinstrateDoor\n\tmsgbox Route111_Text_ViviPostBattle, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_ROUTE111_VIVI, Route111_Movement_WinstrateEnterHouse\n\twaitmovement 0\n\tremoveobject LOCALID_ROUTE111_VIVI\n\tcall Route111_EventScript_CloseWinstrateDoor\n\tapplymovement LOCALID_PLAYER, Route111_Movement_WaitForNextWinstrate\n\twaitmovement 0\n\tcall Route111_EventScript_OpenWinstrateDoor\n\taddobject LOCALID_ROUTE111_VICKY\n\tapplymovement LOCALID_ROUTE111_VICKY, Route111_Movement_WinstrateExitHouse\n\twaitmovement 0\n\tcall Route111_EventScript_CloseWinstrateDoor\n\tmsgbox Route111_Text_VickyIntro, MSGBOX_DEFAULT\n\ttrainerbattle_no_intro TRAINER_VICKY, Route111_Text_VickyDefeat\n\tmsgbox Route111_Text_VickyPostBattle, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_ROUTE111_VICKY, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\tcall Route111_EventScript_OpenWinstrateDoor\n\tapplymovement LOCALID_ROUTE111_VICKY, Route111_Movement_WinstrateEnterHouse\n\twaitmovement 0\n\tremoveobject LOCALID_ROUTE111_VICKY\n\tcall Route111_EventScript_CloseWinstrateDoor\n\trelease\n\tend"
+  },
+  "label": "Route111_EventScript_BattleWinstrates",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_VICKY",
+      "TRAINER_VICTOR",
+      "TRAINER_VICTORIA",
+      "TRAINER_VIVI"
+    ]
+  }
+}

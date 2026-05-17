@@ -1,0 +1,26 @@
+{
+  "id": "LittlerootTown_EventScript_SetReceivedRunningShoes",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": "removeobject LOCALID_LITTLEROOT_MOM\n\tsetflag FLAG_SYS_B_DASH\n\tsetvar VAR_LITTLEROOT_TOWN_STATE, 4\n\trelease\n\tend"
+  },
+  "label": "LittlerootTown_EventScript_SetReceivedRunningShoes",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_B_DASH"
+    ],
+    "vars": [
+      "VAR_LITTLEROOT_TOWN_STATE"
+    ]
+  }
+}

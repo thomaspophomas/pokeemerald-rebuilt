@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge6_EventScript_DeclineTrade",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge6/scripts.inc",
+    "sha1": "400f8668c2640f8efd65ecb8754e4761b5653111"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge6/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_Lounge6_Text_WellThatsFineToo, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "BattleFrontier_Lounge6_EventScript_DeclineTrade",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_Lounge6/scripts.inc",
+  "references": {}
+}

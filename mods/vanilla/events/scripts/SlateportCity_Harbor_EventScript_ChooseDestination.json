@@ -1,0 +1,26 @@
+{
+  "id": "SlateportCity_Harbor_EventScript_ChooseDestination",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "sha1": "304e0889603d7850b02e01765d969cf3c903eb9e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "rawScript": "goto_if_set FLAG_MET_SCOTT_ON_SS_TIDAL, SlateportCity_Harbor_EventScript_ChooseDestinationWithBattleFrontier\n\tmultichoicedefault 18, 8, MULTI_SSTIDAL_SLATEPORT_NO_BF, 2, FALSE\n\tswitch VAR_RESULT\n\tcase 0, SlateportCity_Harbor_EventScript_Lilycove\n\tcase 1, SlateportCity_Harbor_EventScript_CancelDestinationSelect\n\tcase MULTI_B_PRESSED, SlateportCity_Harbor_EventScript_CancelDestinationSelect\n\tend"
+  },
+  "label": "SlateportCity_Harbor_EventScript_ChooseDestination",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity_Harbor/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_SCOTT_ON_SS_TIDAL"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

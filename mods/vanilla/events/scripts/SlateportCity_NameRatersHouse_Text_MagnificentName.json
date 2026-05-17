@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_NameRatersHouse_Text_MagnificentName",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_NameRatersHouse/scripts.inc",
+    "sha1": "ecd2294ed4e3a6a8e122867d365034a6568bcf9c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_NameRatersHouse/scripts.inc",
+    "rawScript": ".string \"Hmmm\u2026 {STR_VAR_1} it is!\\p\"\n\t.string \"This is a magnificent nickname!\\n\"\n\t.string \"It is impeccably beyond reproach!\\p\"\n\t.string \"You'll do well to cherish your\\n\"\n\t.string \"{STR_VAR_1} now and beyond.$\""
+  },
+  "label": "SlateportCity_NameRatersHouse_Text_MagnificentName",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_NameRatersHouse/scripts.inc",
+  "references": {}
+}

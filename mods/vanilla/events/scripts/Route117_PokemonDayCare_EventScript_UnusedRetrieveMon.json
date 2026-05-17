@@ -1,0 +1,23 @@
+{
+  "id": "Route117_PokemonDayCare_EventScript_UnusedRetrieveMon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/day_care.inc",
+    "sha1": "b807399ab522de3ba938194e85f890a343362752"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/day_care.inc",
+    "rawScript": "special ShowDaycareLevelMenu\n\tgoto_if_eq VAR_RESULT, 2, Route117_PokemonDayCare_EventScript_ComeAgain\n\tcopyvar VAR_0x8004, VAR_RESULT\n\tspecialvar VAR_RESULT, TakePokemonFromDaycare\n\tmsgbox Route117_PokemonDayCare_Text_HeresYourMon, MSGBOX_DEFAULT\n\tmsgbox Route117_PokemonDayCare_Text_ComeAgain, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "Route117_PokemonDayCare_EventScript_UnusedRetrieveMon",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/day_care.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "MauvilleCity_House2_EventScript_Woman",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity_House2/scripts.inc",
+    "sha1": "a6d03164752c7787533d05baf97465a81271b528"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity_House2/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_COIN_CASE, MauvilleCity_House2_EventScript_ReceivedCoinCase\n\tmsgbox MauvilleCity_House2_Text_BuyHarborMailAtSlateport, MSGBOX_DEFAULT\n\tcheckitem ITEM_HARBOR_MAIL\n\tgoto_if_eq VAR_RESULT, TRUE, MauvilleCity_House2_EventScript_AskToTradeForHarborMail\n\trelease\n\tend"
+  },
+  "label": "MauvilleCity_House2_EventScript_Woman",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity_House2/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_COIN_CASE"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_HARBOR_MAIL"
+    ]
+  }
+}

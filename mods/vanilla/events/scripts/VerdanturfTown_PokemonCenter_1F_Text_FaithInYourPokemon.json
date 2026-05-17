@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_PokemonCenter_1F_Text_FaithInYourPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc",
+    "sha1": "732bae5c84091e111c778e1203e61171dca9d52e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"You can't consider yourself a real\\n\"\n\t.string \"TRAINER if you don't have faith\\l\"\n\t.string \"in your POK\u00e9MON.\\p\"\n\t.string \"Only those people who can believe\\n\"\n\t.string \"in their battling POK\u00e9MON can win\\l\"\n\t.string \"through to the very end.$\""
+  },
+  "label": "VerdanturfTown_PokemonCenter_1F_Text_FaithInYourPokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

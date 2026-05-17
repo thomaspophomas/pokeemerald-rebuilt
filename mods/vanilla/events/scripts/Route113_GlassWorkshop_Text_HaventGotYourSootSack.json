@@ -1,0 +1,19 @@
+{
+  "id": "Route113_GlassWorkshop_Text_HaventGotYourSootSack",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "sha1": "6a7101e66439e9abedcc55c8fc60b573807258b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "rawScript": ".string \"Hah? You haven't got your SOOT SACK\\n\"\n\t.string \"with you, huff-puff.\\p\"\n\t.string \"You have to keep it with you to collect\\n\"\n\t.string \"volcanic ash, huff-puff.$\""
+  },
+  "label": "Route113_GlassWorkshop_Text_HaventGotYourSootSack",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route113_GlassWorkshop/scripts.inc",
+  "references": {}
+}

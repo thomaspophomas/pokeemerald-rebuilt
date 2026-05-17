@@ -1,0 +1,24 @@
+{
+  "id": "MossdeepCity_SpaceCenter_2F_EventScript_ChoosePartyForMultiBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "sha1": "666cfeb03258e45aa13396dad80cddde9ef36a98"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+    "rawScript": "applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterDown\n\twaitmovement 0\n\tspecial SavePlayerParty\n\tfadescreen FADE_TO_BLACK\n\tspecial ChooseHalfPartyForBattle\n\tgoto_if_ne VAR_RESULT, 0, MossdeepCity_SpaceCenter_2F_EventScript_DoStevenMultiBattle\n\tspecial LoadPlayerParty\n\tgoto MossdeepCity_SpaceCenter_2F_EventScript_ReadyForBattlePrompt"
+  },
+  "label": "MossdeepCity_SpaceCenter_2F_EventScript_ChoosePartyForMultiBattle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_CuttersHouse_Text_ExplainCut",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_CuttersHouse/scripts.inc",
+    "sha1": "0cff426e47a716cd6d3863a87b4d99ec7a72a0b9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_CuttersHouse/scripts.inc",
+    "rawScript": ".string \"That HIDDEN MACHINE, or HM for\\n\"\n\t.string \"short, is CUT.\\p\"\n\t.string \"An HM move is one that can be used\\n\"\n\t.string \"by POK\u00e9MON outside of battle.\\p\"\n\t.string \"Any POK\u00e9MON that's learned CUT can\\n\"\n\t.string \"chop down thin trees if the TRAINER\\l\"\n\t.string \"has earned the STONE BADGE.\\p\"\n\t.string \"And, unlike a TM, an HM can be used\\n\"\n\t.string \"more than once.$\""
+  },
+  "label": "RustboroCity_CuttersHouse_Text_ExplainCut",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_CuttersHouse/scripts.inc",
+  "references": {}
+}

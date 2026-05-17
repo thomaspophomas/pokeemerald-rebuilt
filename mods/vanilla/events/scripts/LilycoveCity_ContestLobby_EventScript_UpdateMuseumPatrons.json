@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_UpdateMuseumPatrons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": "specialvar VAR_0x8004, CountPlayerMuseumPaintings\n\tswitch VAR_0x8004\n\tcase 1, LilycoveCity_ContestLobby_EventScript_ShowPatron1\n\tcase 2, LilycoveCity_ContestLobby_EventScript_ShowPatron2\n\tcase 3, LilycoveCity_ContestLobby_EventScript_ShowPatron3\n\tcase 4, LilycoveCity_ContestLobby_EventScript_ShowPatron4\n\tcase 5, LilycoveCity_ContestLobby_EventScript_ShowTourists\n\treturn"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_UpdateMuseumPatrons",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {}
+}

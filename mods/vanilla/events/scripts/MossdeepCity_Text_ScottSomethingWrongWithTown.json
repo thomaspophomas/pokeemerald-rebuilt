@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Text_ScottSomethingWrongWithTown",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/scripts.inc",
+    "sha1": "33f0f7f83a475484aaca395542c6bd65a6f2dd45"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity/scripts.inc",
+    "rawScript": ".string \"SCOTT: {PLAYER}{KUN}, feeling good?\\n\"\n\t.string \"I'm doing great!\\p\"\n\t.string \"I'd heard MOSSDEEP's GYM LEADER is\\n\"\n\t.string \"pretty strong, so I decided to come\\l\"\n\t.string \"take a look-see for myself.\\p\"\n\t.string \"But there's something wrong about\\n\"\n\t.string \"this town.\\p\"\n\t.string \"People are going on about a warning\\n\"\n\t.string \"letter and the SPACE CENTER\u2026\\p\"\n\t.string \"I don't think it concerns me in any\\n\"\n\t.string \"way, though.$\""
+  },
+  "label": "MossdeepCity_Text_ScottSomethingWrongWithTown",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity/scripts.inc",
+  "references": {}
+}

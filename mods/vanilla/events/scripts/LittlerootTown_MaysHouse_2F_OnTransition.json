@@ -1,0 +1,25 @@
+{
+  "id": "LittlerootTown_MaysHouse_2F_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "sha1": "e014a444dcf389c78773768633900402b1862edb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "rawScript": "call_if_lt VAR_LITTLEROOT_RIVAL_STATE, 2, LittlerootTown_MaysHouse_2F_EventScript_CheckSetReadyToMeetMay\n\tcall_if_ge VAR_LITTLEROOT_RIVAL_STATE, 3, LittlerootTown_MaysHouse_2F_EventScript_CheckShouldUpdateMayPos\n\tcall_if_eq VAR_LITTLEROOT_INTRO_STATE, 4, PlayersHouse_2F_EventScript_BlockStairsUntilClockIsSet\n\tcall SecretBase_EventScript_SetDecorationFlags\n\tsetvar VAR_SECRET_BASE_INITIALIZED, 0\n\tend"
+  },
+  "label": "LittlerootTown_MaysHouse_2F_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_LITTLEROOT_INTRO_STATE",
+      "VAR_LITTLEROOT_RIVAL_STATE",
+      "VAR_SECRET_BASE_INITIALIZED"
+    ]
+  }
+}

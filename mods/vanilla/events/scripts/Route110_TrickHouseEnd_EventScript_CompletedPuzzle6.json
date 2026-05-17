@@ -1,0 +1,27 @@
+{
+  "id": "Route110_TrickHouseEnd_EventScript_CompletedPuzzle6",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "sha1": "3b39ac1484a417dc8392e9b8712bc29e12891169"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+    "rawScript": "msgbox Route110_TrickHouseEnd_Text_AllNightToInstallDoors, MSGBOX_DEFAULT\n\tmsgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward, MSGBOX_DEFAULT\n\tsetvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0\n\tgiveitem ITEM_MAGNET\n\tcall_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull\n\tmsgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT\n\tclosemessage\n\tcall Route110_TrickHouseEnd_EventScript_TrickMasterExit\n\trelease\n\tend"
+  },
+  "label": "Route110_TrickHouseEnd_EventScript_CompletedPuzzle6",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHouseEnd/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TRICK_HOUSE_PRIZE_PICKUP"
+    ],
+    "items": [
+      "ITEM_MAGNET"
+    ]
+  }
+}

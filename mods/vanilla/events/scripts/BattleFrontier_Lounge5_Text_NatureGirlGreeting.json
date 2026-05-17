@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge5_Text_NatureGirlGreeting",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge5/scripts.inc",
+    "sha1": "c4370b0c94045e8ea73987aa7039851c5e316481"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge5/scripts.inc",
+    "rawScript": ".string \"Ehehe!\\n\"\n\t.string \"I can tell what POK\u00e9MON are thinking!\\p\"\n\t.string \"Please!\\n\"\n\t.string \"Can I see your POK\u00e9MON?$\""
+  },
+  "label": "BattleFrontier_Lounge5_Text_NatureGirlGreeting",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge5/scripts.inc",
+  "references": {}
+}

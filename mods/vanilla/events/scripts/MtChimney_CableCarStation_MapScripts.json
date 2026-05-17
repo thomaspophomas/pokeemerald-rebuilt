@@ -1,0 +1,24 @@
+{
+  "id": "MtChimney_CableCarStation_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney_CableCarStation/scripts.inc",
+    "sha1": "9e305574fdedd25f70ad58e6499cdd46ba5e26c4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtChimney_CableCarStation/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, MtChimney_CableCarStation_OnTransition\n\tmap_script MAP_SCRIPT_ON_FRAME_TABLE, MtChimney_CableCarStation_OnFrame\n\t.byte 0"
+  },
+  "label": "MtChimney_CableCarStation_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/MtChimney_CableCarStation/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

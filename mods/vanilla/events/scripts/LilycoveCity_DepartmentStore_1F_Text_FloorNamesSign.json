@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc",
+    "sha1": "25a2cc6d86d1739788e578e0911145b04f3d372f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc",
+    "rawScript": ".string \"1F: SERVICE COUNTER\\n\"\n\t.string \"    LOTTERY CORNER\\p\"\n\t.string \"2F: TRAINER'S ZONE\\p\"\n\t.string \"3F: BATTLE COLLECTION\\p\"\n\t.string \"4F: TM CORNER\\p\"\n\t.string \"5F: POK\u00e9 DOLL FLOOR\\p\"\n\t.string \"ROOFTOP: ROOFTOP PLAZA$\"\n\n@ Unused"
+  },
+  "label": "LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "EventScript_EndUseSurf",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/surf.inc",
+    "sha1": "0f49eb0631291f1bf8ac05402e5090382827057d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/surf.inc",
+    "rawScript": "end"
+  },
+  "label": "EventScript_EndUseSurf",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/surf.inc",
+  "references": {}
+}

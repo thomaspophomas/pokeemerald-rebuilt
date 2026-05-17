@@ -1,0 +1,19 @@
+{
+  "id": "PetalburgCity_Gym_Text_AlexiaPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": ".string \"I think you've taught me a valuable\\n\"\n\t.string \"lesson here.\\p\"\n\t.string \"Now, go on! The left door goes to\\n\"\n\t.string \"the STRENGTH ROOM.\\p\"\n\t.string \"The right door opens to\\n\"\n\t.string \"the ONE-HIT KO ROOM.\\p\"\n\t.string \"Both of them have TRAINERS who are\\n\"\n\t.string \"skilled at offense.$\""
+  },
+  "label": "PetalburgCity_Gym_Text_AlexiaPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {}
+}

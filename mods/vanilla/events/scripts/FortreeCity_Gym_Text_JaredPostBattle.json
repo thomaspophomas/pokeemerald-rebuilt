@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Gym_Text_JaredPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/scripts.inc",
+    "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Gym/scripts.inc",
+    "rawScript": ".string \"A TRAINER has to be smart to keep\\n\"\n\t.string \"up with unexpected turns of events.\\p\"\n\t.string \"Do you have the smarts to get to\\n\"\n\t.string \"our LEADER?$\""
+  },
+  "label": "FortreeCity_Gym_Text_JaredPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_Gym/scripts.inc",
+  "references": {}
+}

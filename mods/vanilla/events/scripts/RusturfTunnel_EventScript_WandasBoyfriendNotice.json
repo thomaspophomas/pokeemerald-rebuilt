@@ -1,0 +1,19 @@
+{
+  "id": "RusturfTunnel_EventScript_WandasBoyfriendNotice",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/scripts.inc",
+    "sha1": "76035185b0aabddf11657305417168db4c1bb93d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RusturfTunnel/scripts.inc",
+    "rawScript": "playse SE_PIN\n\tapplymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, Common_Movement_Delay48\n\twaitmovement 0\n\treturn"
+  },
+  "label": "RusturfTunnel_EventScript_WandasBoyfriendNotice",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RusturfTunnel/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattleTowerBattleRoom_EventScript_DoTowerBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "sha1": "09b678d8717203a622b1d8714d904bcdeb37d08a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+    "rawScript": "closemessage\n\tsetvar VAR_TEMP_2, 0\n\tfrontier_set FRONTIER_DATA_RECORD_DISABLED, FALSE\n\tspecial HealPlayerParty\n\tsetvar VAR_0x8004, SPECIAL_BATTLE_TOWER\n\tsetvar VAR_0x8005, 0\n\tspecial DoSpecialTrainerBattle\n\tcopyvar VAR_0x8004, VAR_FRONTIER_BATTLE_MODE\n\tgoto_if_eq VAR_0x8004, FRONTIER_MODE_LINK_MULTIS, BattleFrontier_BattleTowerBattleRoom_EventScript_EndTowerBattle\n\tfrontier_restorehelditems\n\tspecial HealPlayerParty\n\tfrontier_resetsketch"
+  },
+  "label": "BattleFrontier_BattleTowerBattleRoom_EventScript_DoTowerBattle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FRONTIER_BATTLE_MODE",
+      "VAR_TEMP_2"
+    ]
+  }
+}

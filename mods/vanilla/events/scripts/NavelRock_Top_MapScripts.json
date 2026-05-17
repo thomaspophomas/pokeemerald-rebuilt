@@ -1,0 +1,24 @@
+{
+  "id": "NavelRock_Top_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/NavelRock_Top/scripts.inc",
+    "sha1": "9e9f84f593bf205dd39f29584bf0811e5a1438d4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/NavelRock_Top/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, NavelRock_Top_OnTransition\n\tmap_script MAP_SCRIPT_ON_RESUME, NavelRock_Top_OnResume\n\t.byte 0"
+  },
+  "label": "NavelRock_Top_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/NavelRock_Top/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

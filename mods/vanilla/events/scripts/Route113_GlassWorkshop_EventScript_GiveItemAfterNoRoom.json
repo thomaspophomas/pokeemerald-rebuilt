@@ -1,0 +1,23 @@
+{
+  "id": "Route113_GlassWorkshop_EventScript_GiveItemAfterNoRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "sha1": "6a7101e66439e9abedcc55c8fc60b573807258b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "rawScript": "switch VAR_GLASS_WORKSHOP_STATE\n\tcase 10, Route113_GlassWorkshop_EventScript_GiveBlueFlute\n\tcase 11, Route113_GlassWorkshop_EventScript_GiveYellowFlute\n\tcase 12, Route113_GlassWorkshop_EventScript_GiveRedFlute\n\tcase 13, Route113_GlassWorkshop_EventScript_GiveWhiteFlute\n\tcase 14, Route113_GlassWorkshop_EventScript_GiveBlackFlute\n\tcase 15, Route113_GlassWorkshop_EventScript_GivePrettyChair\n\tcase 16, Route113_GlassWorkshop_EventScript_GivePrettyDesk\n\tend"
+  },
+  "label": "Route113_GlassWorkshop_EventScript_GiveItemAfterNoRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route113_GlassWorkshop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_GLASS_WORKSHOP_STATE"
+    ]
+  }
+}

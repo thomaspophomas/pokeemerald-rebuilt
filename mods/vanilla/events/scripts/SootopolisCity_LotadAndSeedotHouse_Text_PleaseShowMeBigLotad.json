@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+    "sha1": "fc092cb2d8bfc7874143add20c2a81120dbbacc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+    "rawScript": ".string \"Do you know the POK\u00e9MON LOTAD?\\n\"\n\t.string \"It's rarely seen in SOOTOPOLIS.\\p\"\n\t.string \"I love, I mean love, big LOTAD!\\p\"\n\t.string \"My big brother says that SEEDOT is\\n\"\n\t.string \"bigger.\\p\"\n\t.string \"But that's wrong! Everyone knows that\\n\"\n\t.string \"LOTAD is a lot bigger.\\p\"\n\t.string \"Hunh? Do you have a LOTAD?\\n\"\n\t.string \"P-p-please show me!$\""
+  },
+  "label": "SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+  "references": {}
+}

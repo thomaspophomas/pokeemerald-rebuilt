@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestHall_EventScript_CuteContestAudience1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "sha1": "9d258f56144116075b6ffd125cc9edb7fc292736"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "rawScript": "lockall\n\tapplymovement LOCALID_CUTE_AUDIENCE_1, Common_Movement_FacePlayer\n\twaitmovement 0\n\tmsgbox LilycoveCity_ContestHall_Text_MyChildIsInContest, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_CUTE_AUDIENCE_1, Common_Movement_FaceOriginalDirection\n\twaitmovement 0\n\tdelay 25\n\tmsgbox LilycoveCity_ContestHall_Text_ComeOnDear, MSGBOX_DEFAULT\n\treleaseall\n\tend"
+  },
+  "label": "LilycoveCity_ContestHall_EventScript_CuteContestAudience1",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+  "references": {}
+}

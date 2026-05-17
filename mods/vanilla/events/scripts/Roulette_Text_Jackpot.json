@@ -1,0 +1,19 @@
+{
+  "id": "Roulette_Text_Jackpot",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/roulette.inc",
+    "sha1": "8e0813f5173876bc584c25d8985abcf8d73c7f01"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/roulette.inc",
+    "rawScript": ".string \"Jackpot!$\""
+  },
+  "label": "Roulette_Text_Jackpot",
+  "exported": true,
+  "kind": "text",
+  "sourceFile": "data/scripts/roulette.inc",
+  "references": {}
+}

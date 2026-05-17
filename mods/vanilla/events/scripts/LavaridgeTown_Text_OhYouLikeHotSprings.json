@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Text_OhYouLikeHotSprings",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": ".string \"Oh, you like hot springs, do you?\\p\"\n\t.string \"That's surprising for one as young\\n\"\n\t.string \"as you.$\""
+  },
+  "label": "LavaridgeTown_Text_OhYouLikeHotSprings",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {}
+}

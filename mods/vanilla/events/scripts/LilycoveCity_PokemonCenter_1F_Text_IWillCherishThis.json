@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonCenter_1F_Text_IWillCherishThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/lilycove_lady.inc",
+    "sha1": "2c2864b913cc532d514481fce3a5e381d5af5f83"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/lilycove_lady.inc",
+    "rawScript": ".string \"Oh\u2026\\p\"\n\t.string \"That's a quite {STR_VAR_1}\\n\"\n\t.string \"{STR_VAR_2}\u2026\\p\"\n\t.string \"Isn't it nice?\\n\"\n\t.string \"It's so dreamy\u2026\\p\"\n\t.string \"Thank you\u2026\\n\"\n\t.string \"I will cherish this\u2026$\""
+  },
+  "label": "LilycoveCity_PokemonCenter_1F_Text_IWillCherishThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/lilycove_lady.inc",
+  "references": {}
+}

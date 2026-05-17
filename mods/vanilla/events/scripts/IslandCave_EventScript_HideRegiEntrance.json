@@ -1,0 +1,19 @@
+{
+  "id": "IslandCave_EventScript_HideRegiEntrance",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/IslandCave/scripts.inc",
+    "sha1": "36e3ca89a53bdf101cff26d6ef8efcf46552e41d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/IslandCave/scripts.inc",
+    "rawScript": "setmetatile 7, 19, METATILE_Cave_EntranceCover, TRUE\n\tsetmetatile 8, 19, METATILE_Cave_EntranceCover, TRUE\n\tsetmetatile 9, 19, METATILE_Cave_EntranceCover, TRUE\n\tsetmetatile 7, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE\n\tsetmetatile 8, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE\n\tsetmetatile 9, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE\n\treturn"
+  },
+  "label": "IslandCave_EventScript_HideRegiEntrance",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/IslandCave/scripts.inc",
+  "references": {}
+}

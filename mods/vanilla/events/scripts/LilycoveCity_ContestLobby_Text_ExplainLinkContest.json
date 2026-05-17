@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestLobby_Text_ExplainLinkContest",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": ".string \"This is a CONTEST for two to four\\n\"\n\t.string \"players linked using a Wireless\\l\"\n\t.string \"Adapter or a GBA Game Link cable.\\p\"\n\t.string \"Participants are first asked to choose\\n\"\n\t.string \"the mode they wish to enter.\\p\"\n\t.string \"There are two different modes.\\p\"\n\t.string \"E-MODE (EMERALD MODE) is for\\n\"\n\t.string \"two to four players, each with a\\l\"\n\t.string \"POK\u00e9MON Emerald Game Pak.\\p\"\n\t.string \"G-MODE (GLOBAL MODE) is only for\\n\"\n\t.string \"four players, each with a POK\u00e9MON\\l\"\n\t.string \"Emerald, Ruby, or Sapphire Game Pak.\\p\"\n\t.string \"The players should discuss which mode\\n\"\n\t.string \"they want, then choose the same mode.\\p\"\n\t.string \"Once all the players have chosen\\n\"\n\t.string \"the same CONTEST in the same mode,\\l\"\n\t.string \"the entry registration is complete.\\p\"\n\t.string \"After that, a CONTEST will start in\\n\"\n\t.string \"the usual manner.$\""
+  },
+  "label": "LilycoveCity_ContestLobby_Text_ExplainLinkContest",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {}
+}

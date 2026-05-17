@@ -1,0 +1,19 @@
+{
+  "id": "Route119_Text_BrendanExplainFly",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119/scripts.inc",
+    "sha1": "576fe3fab09726df20b1bbf3016bc5306f0e0f3d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119/scripts.inc",
+    "rawScript": ".string \"BRENDAN: Use FLY, and your POK\u00e9MON\\n\"\n\t.string \"instantly carries you to any town\\l\"\n\t.string \"you've already visited.\\p\"\n\t.string \"But you need the FORTREE GYM BADGE \\n\"\n\t.string \"to do that.\\p\"\n\t.string \"Anyway, I have to move along.$\""
+  },
+  "label": "Route119_Text_BrendanExplainFly",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route119/scripts.inc",
+  "references": {}
+}

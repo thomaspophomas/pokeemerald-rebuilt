@@ -1,0 +1,27 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_TryShowBlendMaster",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": "getpokenewsactive POKENEWS_BLENDMASTER\n\tgoto_if_eq VAR_RESULT, TRUE, LilycoveCity_ContestLobby_EventScript_ShowBlendMaster\n\tclearflag FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER_REPLACEMENT\n\tsetflag FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER\n\treturn"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_TryShowBlendMaster",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER",
+      "FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER_REPLACEMENT"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

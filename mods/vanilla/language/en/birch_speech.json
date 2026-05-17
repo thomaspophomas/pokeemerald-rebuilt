@@ -1,0 +1,27 @@
+{
+  "id": "en:birch_speech",
+  "domain": "language",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/text/birch_speech.inc",
+    "sha1": "1cc5cae627a1780f69ff83751837d9369d35e9f7"
+  },
+  "legacy": {
+    "kind": "asm_text_labels",
+    "sourcePath": "data/text/birch_speech.inc"
+  },
+  "language": "en",
+  "group": "birch_speech",
+  "runtime": false,
+  "strings": {
+    "gText_Birch_Welcome": ".string \"Hi! Sorry to keep you waiting!\\p\"\n\t.string \"Welcome to the world of POK\u00e9MON!\\p\"\n\t.string \"My name is BIRCH.\\p\"\n\t.string \"But everyone calls me the POK\u00e9MON\\n\"\n\t.string \"PROFESSOR.\\p\"\n\t.string \"$\"",
+    "gText_Birch_Pokemon": ".string \"This is what we call a \u201cPOK\u00e9MON.\u201d\\p\"\n\t.string \"\\n\"\n\t.string \"$\"",
+    "gText_Birch_MainSpeech": ".string \"This world is widely inhabited by\\n\"\n\t.string \"creatures known as POK\u00e9MON.\\p\"\n\t.string \"We humans live alongside POK\u00e9MON,\\n\"\n\t.string \"at times as friendly playmates, and\\l\"\n\t.string \"at times as cooperative workmates.\\p\"\n\t.string \"And sometimes, we band together\\n\"\n\t.string \"and battle others like us.\\p\"\n\t.string \"But despite our closeness, we don't\\n\"\n\t.string \"know everything about POK\u00e9MON.\\p\"\n\t.string \"In fact, there are many, many\\n\"\n\t.string \"secrets surrounding POK\u00e9MON.\\p\"\n\t.string \"To unravel POK\u00e9MON mysteries,\\n\"\n\t.string \"I've been undertaking research.\\l\"\n\t.string \"That's what I do.\\p\"\n\t.string \"$\"",
+    "gText_Birch_AndYouAre": ".string \"And you are?$\"",
+    "gText_Birch_BoyOrGirl": ".string \"Are you a boy?\\n\"\n\t.string \"Or are you a girl?$\"",
+    "gText_Birch_WhatsYourName": ".string \"All right.\\n\"\n\t.string \"What's your name?$\"",
+    "gText_Birch_SoItsPlayer": ".string \"So it's {PLAYER}{KUN}?$\"",
+    "gText_Birch_YourePlayer": ".string \"Ah, okay!\\p\"\n\t.string \"You're {PLAYER}{KUN} who's moving to my\\n\"\n\t.string \"hometown of LITTLEROOT.\\l\"\n\t.string \"I get it now!\\p\"\n\t.string \"$\"",
+    "gText_Birch_AreYouReady": ".string \"All right, are you ready?\\p\"\n\t.string \"Your very own adventure is about\\n\"\n\t.string \"to unfold.\\p\"\n\t.string \"Take courage, and leap into the\\n\"\n\t.string \"world of POK\u00e9MON where dreams,\\l\"\n\t.string \"adventure, and friendships await!\\p\"\n\t.string \"Well, I'll be expecting you later.\\n\"\n\t.string \"Come see me in my POK\u00e9MON LAB.\\p\"\n\t.string \"$\""
+  }
+}

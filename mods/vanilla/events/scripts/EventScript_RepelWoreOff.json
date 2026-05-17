@@ -1,0 +1,19 @@
+{
+  "id": "EventScript_RepelWoreOff",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/repel.inc",
+    "sha1": "03d9395e1beda0d20bd1da5edae92898878f2aa7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/repel.inc",
+    "rawScript": "msgbox Text_RepelWoreOff, MSGBOX_SIGN\n\tend"
+  },
+  "label": "EventScript_RepelWoreOff",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/repel.inc",
+  "references": {}
+}

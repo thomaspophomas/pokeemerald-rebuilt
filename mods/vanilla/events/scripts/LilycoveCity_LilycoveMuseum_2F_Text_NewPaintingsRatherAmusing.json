@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsRatherAmusing",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "sha1": "c41e25282a159070f0eb7fb3edcf1b61cc1cfa19"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "rawScript": ".string \"Well\u2026 So this is where they show\\n\"\n\t.string \"the topical POK\u00e9MON paintings.\\p\"\n\t.string \"I see, these new paintings are indeed\\n\"\n\t.string \"rather amusing.$\""
+  },
+  "label": "LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsRatherAmusing",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Route126_EventScript_RematchPablo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route126/scripts.inc",
+    "sha1": "d5025a30fc24eea63ccab29344d229eadf43769b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route126/scripts.inc",
+    "rawScript": "trainerbattle_rematch TRAINER_PABLO_1, Route126_Text_PabloRematchIntro, Route126_Text_PabloRematchDefeat\n\tmsgbox Route126_Text_PabloPostRematch, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route126_EventScript_RematchPablo",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route126/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_PABLO_1"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Mart_Text_TooScaryOutside",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Mart/scripts.inc",
+    "sha1": "09107a068ba7ecb271ba83663a6a1a20f47464ae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_Mart/scripts.inc",
+    "rawScript": ".string \"What\u2026\\n\"\n\t.string \"What is happening?\\p\"\n\t.string \"I really want to know, but it's too\\n\"\n\t.string \"scary to go outside.$\""
+  },
+  "label": "SootopolisCity_Mart_Text_TooScaryOutside",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_Mart/scripts.inc",
+  "references": {}
+}

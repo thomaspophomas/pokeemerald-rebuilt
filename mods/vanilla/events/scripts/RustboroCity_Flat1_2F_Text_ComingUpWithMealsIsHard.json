@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Flat1_2F_Text_ComingUpWithMealsIsHard",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+    "sha1": "bce61defe394f3175dd583157b086f1687d0ac6f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+    "rawScript": ".string \"Oh, it's so hard every day\u2026\\p\"\n\t.string \"What's hard?\\n\"\n\t.string \"You need to ask?\\p\"\n\t.string \"It's trying to figure out what to\\n\"\n\t.string \"make for meals every day.\\p\"\n\t.string \"It really isn't easy coming up with\\n\"\n\t.string \"meals every day.$\""
+  },
+  "label": "RustboroCity_Flat1_2F_Text_ComingUpWithMealsIsHard",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Flat1_2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "PlayersHouse_1F_EventScript_EnterHouseMovingIn",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/players_house.inc",
+    "sha1": "0f3da1347500315ef212a252409f1d410b0d226c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/players_house.inc",
+    "rawScript": "msgbox PlayersHouse_1F_Text_IsntItNiceInHere, MSGBOX_DEFAULT\n\tapplymovement VAR_0x8004, Common_Movement_FacePlayer\n\twaitmovement 0\n\tcall_if_eq VAR_0x8005, MALE, PlayersHouse_1F_EventScript_MomFacePlayerMovingInMale\n\tcall_if_eq VAR_0x8005, FEMALE, PlayersHouse_1F_EventScript_MomFacePlayerMovingInFemale\n\tmsgbox PlayersHouse_1F_Text_MoversPokemonGoSetClock, MSGBOX_DEFAULT\n\tclosemessage\n\tsetvar VAR_LITTLEROOT_INTRO_STATE, 4\n\tapplymovement LOCALID_PLAYER, PlayersHouse_1F_Movement_PlayerWalkIn\n\tapplymovement VAR_0x8004, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\treleaseall\n\tend"
+  },
+  "label": "PlayersHouse_1F_EventScript_EnterHouseMovingIn",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/players_house.inc",
+  "references": {
+    "vars": [
+      "VAR_LITTLEROOT_INTRO_STATE"
+    ]
+  }
+}

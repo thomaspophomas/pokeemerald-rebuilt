@@ -1,0 +1,19 @@
+{
+  "id": "RS_MysteryEventsHouse_EventScript_Door",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_GameCorner_1F/scripts.inc",
+    "sha1": "9705268b8b1f1689ba5ce2a1488d37f1b3e28fee"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_GameCorner_1F/scripts.inc",
+    "rawScript": "msgbox RS_MysteryEventsHouse_Text_DoorIsLocked, MSGBOX_SIGN\n\tend"
+  },
+  "label": "RS_MysteryEventsHouse_EventScript_Door",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_GameCorner_1F/scripts.inc",
+  "references": {}
+}

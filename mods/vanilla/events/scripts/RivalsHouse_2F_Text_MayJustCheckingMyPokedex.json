@@ -1,0 +1,19 @@
+{
+  "id": "RivalsHouse_2F_Text_MayJustCheckingMyPokedex",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "sha1": "e014a444dcf389c78773768633900402b1862edb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "rawScript": ".string \"MAY: {PLAYER}{KUN}!\\p\"\n\t.string \"I was just checking my POK\u00e9DEX.\\p\"\n\t.string \"There's still a lot of POK\u00e9MON that\\n\"\n\t.string \"I've seen but haven't caught.\\p\"\n\t.string \"And there are many others that\\n\"\n\t.string \"I think will evolve.\\p\"\n\t.string \"I wonder where I should go catch\\n\"\n\t.string \"some POK\u00e9MON next?$\""
+  },
+  "label": "RivalsHouse_2F_Text_MayJustCheckingMyPokedex",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+  "references": {}
+}

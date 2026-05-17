@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestHall_Text_MyMonAppealSoMuchCuter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "sha1": "9d258f56144116075b6ffd125cc9edb7fc292736"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+    "rawScript": ".string \"Everyone's POK\u00e9MON are very cute.\\p\"\n\t.string \"However, if my POK\u00e9MON were to make\\n\"\n\t.string \"a cute appeal\u2026\\p\"\n\t.string \"I'm sure that it would be so much \\n\"\n\t.string \"cuter than the others.$\""
+  },
+  "label": "LilycoveCity_ContestHall_Text_MyMonAppealSoMuchCuter",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+  "references": {}
+}

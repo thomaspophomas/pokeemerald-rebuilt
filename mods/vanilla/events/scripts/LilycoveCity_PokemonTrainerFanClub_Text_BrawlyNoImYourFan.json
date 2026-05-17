@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_Text_BrawlyNoImYourFan",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": ".string \"Sigh\u2026\\n\"\n\t.string \"BRAWLY\u2026\\p\"\n\t.string \"Oh, no! Wait!\\n\"\n\t.string \"That's not right! No, no, no!\\p\"\n\t.string \"I'm your fan through and through!\\p\"\n\t.string \"So make me proud!\\n\"\n\t.string \"Go for it!$\""
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_Text_BrawlyNoImYourFan",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {}
+}

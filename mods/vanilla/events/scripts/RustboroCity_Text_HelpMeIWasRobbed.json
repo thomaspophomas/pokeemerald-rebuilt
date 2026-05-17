@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Text_HelpMeIWasRobbed",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity/scripts.inc",
+    "sha1": "f172d1f35c4d0ffa043d2582368697ad7a6a1a10"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity/scripts.inc",
+    "rawScript": ".string \"Oh, it's you!\\p\"\n\t.string \"You're that fantastic TRAINER who\\n\"\n\t.string \"helped me in PETALBURG WOODS!\\p\"\n\t.string \"Help me! I was robbed by TEAM AQUA!\\n\"\n\t.string \"I have to get the DEVON GOODS back!\\p\"\n\t.string \"If I don't\u2026\\n\"\n\t.string \"I'm going to be in serious trouble.$\""
+  },
+  "label": "RustboroCity_Text_HelpMeIWasRobbed",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity/scripts.inc",
+  "references": {}
+}

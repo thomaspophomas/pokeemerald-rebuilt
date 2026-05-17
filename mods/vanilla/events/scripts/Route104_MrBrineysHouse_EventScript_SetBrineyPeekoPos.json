@@ -1,0 +1,19 @@
+{
+  "id": "Route104_MrBrineysHouse_EventScript_SetBrineyPeekoPos",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+    "sha1": "1685496df25ec35fb97de14e44b3ea41b1d1c6db"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+    "rawScript": "setobjectxyperm LOCALID_BRINEYS_HOUSE_BRINEY, 9, 3\n\tsetobjectmovementtype LOCALID_BRINEYS_HOUSE_BRINEY, MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_LEFT_UP_RIGHT\n\tsetobjectxyperm LOCALID_BRINEYS_HOUSE_PEEKO, 9, 6\n\tsetobjectmovementtype LOCALID_BRINEYS_HOUSE_PEEKO, MOVEMENT_TYPE_WALK_SEQUENCE_LEFT_UP_RIGHT_DOWN\n\treturn"
+  },
+  "label": "Route104_MrBrineysHouse_EventScript_SetBrineyPeekoPos",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+  "references": {}
+}

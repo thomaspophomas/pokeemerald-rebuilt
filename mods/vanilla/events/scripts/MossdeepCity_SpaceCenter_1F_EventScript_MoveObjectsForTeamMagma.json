@@ -1,0 +1,23 @@
+{
+  "id": "MossdeepCity_SpaceCenter_1F_EventScript_MoveObjectsForTeamMagma",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "sha1": "a0cf82d2df089035fb81d02a013736aab95a13d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+    "rawScript": "setobjectxyperm LOCALID_SPACE_CENTER_1F_SAILOR, 1, 9\n\tsetobjectmovementtype LOCALID_SPACE_CENTER_1F_SAILOR, MOVEMENT_TYPE_FACE_RIGHT\n\tsetobjectxyperm LOCALID_SPACE_CENTER_1F_WOMAN, 0, 8\n\tsetobjectmovementtype LOCALID_SPACE_CENTER_1F_WOMAN, MOVEMENT_TYPE_FACE_RIGHT\n\tsetobjectxyperm LOCALID_SPACE_CENTER_1F_OLD_MAN, 1, 6\n\tsetobjectmovementtype LOCALID_SPACE_CENTER_1F_OLD_MAN, MOVEMENT_TYPE_FACE_RIGHT\n\tsetobjectxyperm LOCALID_SPACE_CENTER_1F_SCIENTIST_1, 3, 4\n\tsetobjectmovementtype LOCALID_SPACE_CENTER_1F_SCIENTIST_1, MOVEMENT_TYPE_FACE_RIGHT\n\tsetobjectmovementtype LOCALID_SPACE_CENTER_1F_SCIENTIST_2, MOVEMENT_TYPE_FACE_RIGHT\n\tgoto_if_eq VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 1, MossdeepCity_SpaceCenter_1F_EventScript_MoveStairGuardLeft\n\tgoto_if_eq VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 2, MossdeepCity_SpaceCenter_1F_EventScript_MoveStairGuardDown\n\tgoto_if_eq VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 3, MossdeepCity_SpaceCenter_1F_EventScript_MoveStairGuardRight\n\tend"
+  },
+  "label": "MossdeepCity_SpaceCenter_1F_EventScript_MoveObjectsForTeamMagma",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Mart_Text_FacilitiesDontAllowItems",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Mart/scripts.inc",
+    "sha1": "e8269950fe6ceeeec601d93208e6255555526b6b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Mart/scripts.inc",
+    "rawScript": ".string \"A lot of the BATTLE FRONTIER's\\n\"\n\t.string \"facilities don't allow the use of items\\l\"\n\t.string \"during battles.\\p\"\n\t.string \"That rule makes things tougher than\\n\"\n\t.string \"they already are!$\""
+  },
+  "label": "BattleFrontier_Mart_Text_FacilitiesDontAllowItems",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Mart/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge3_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "sha1": "52169856e2442e0e7ad660050a45dce1a1b2405a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "rawScript": ".byte 0\n\n\t.set BET_AMOUNT_5,  5\n\t.set BET_AMOUNT_10, 10\n\t.set BET_AMOUNT_15, 15"
+  },
+  "label": "BattleFrontier_Lounge3_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+  "references": {}
+}

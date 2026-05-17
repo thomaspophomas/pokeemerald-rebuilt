@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Gym_Text_TateAndLizaPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "sha1": "f1b3ae6c76fdfe44b1431df4ea78da5c11a79c08"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "rawScript": ".string \"TATE: Looks like the bond between you\\n\"\n\t.string \"and your POK\u00e9MON is far stronger than\\l\"\n\t.string \"the bond that we share as twins.\\p\"\n\t.string \"LIZA: You will become even stronger!\\n\"\n\t.string \"We've battled you, so we know.$\""
+  },
+  "label": "MossdeepCity_Gym_Text_TateAndLizaPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_Gym/scripts.inc",
+  "references": {}
+}

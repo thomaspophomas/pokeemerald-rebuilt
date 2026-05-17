@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_MissingPokemonCameBack",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"My missing POK\u00e9MON\u2026\\n\"\n\t.string \"It came back without me noticing!$\""
+  },
+  "label": "LilycoveCity_Text_MissingPokemonCameBack",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

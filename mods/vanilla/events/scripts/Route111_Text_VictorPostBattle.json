@@ -1,0 +1,19 @@
+{
+  "id": "Route111_Text_VictorPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": ".string \"Hey, all!\\n\"\n\t.string \"I've found a pretty strong TRAINER!$\""
+  },
+  "label": "Route111_Text_VictorPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_EnterElevator",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "sha1": "4e7b748d8d3e33414d869ae43d136c857e9955fc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "rawScript": "msgbox BattleFrontier_BattleTowerMultiPartnerRoom_Text_ThankYouForChoosingPartner, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_TOWER_PARTNER_ROOM_ATTENDANT, Common_Movement_WalkInPlaceFasterUp\n\twaitmovement 0\n\topendoor 10, 1\n\twaitdooranim\n\tcall BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_MoveToElevator\n\tclosedoor 10, 1\n\twaitdooranim\n\twarp MAP_BATTLE_FRONTIER_BATTLE_TOWER_ELEVATOR, 1, 6\n\twaitstate\n\treleaseall\n\tend"
+  },
+  "label": "BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_EnterElevator",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_TOWER_ELEVATOR"
+    ]
+  }
+}

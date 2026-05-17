@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_EventScript_MovePeopleForSternInterview",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity/scripts.inc",
+    "sha1": "8312aecafe47da26d5ce55cc752c54fbdf7669ed"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity/scripts.inc",
+    "rawScript": "setobjectxyperm LOCALID_SLATEPORT_CAPT_STERN, 28, 13\n\tsetobjectxyperm LOCALID_SLATEPORT_OLD_WOMAN, 25, 13\n\tsetobjectxyperm LOCALID_SLATEPORT_RICH_BOY, 25, 14\n\tsetobjectxyperm LOCALID_SLATEPORT_COOK, 27, 16\n\tsetobjectxyperm LOCALID_SLATEPORT_GIRL, 28, 16\n\tsetobjectxyperm LOCALID_SLATEPORT_FAT_MAN, 29, 16\n\tsetobjectxyperm LOCALID_SLATEPORT_MAN_1, 31, 14\n\tsetobjectmovementtype LOCALID_SLATEPORT_CAPT_STERN, MOVEMENT_TYPE_FACE_DOWN\n\tsetobjectmovementtype LOCALID_SLATEPORT_OLD_WOMAN, MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT\n\tsetobjectmovementtype LOCALID_SLATEPORT_RICH_BOY, MOVEMENT_TYPE_FACE_UP_AND_RIGHT\n\tsetobjectmovementtype LOCALID_SLATEPORT_COOK, MOVEMENT_TYPE_FACE_UP\n\tsetobjectmovementtype LOCALID_SLATEPORT_GIRL, MOVEMENT_TYPE_FACE_UP\n\tsetobjectmovementtype LOCALID_SLATEPORT_FAT_MAN, MOVEMENT_TYPE_FACE_UP\n\tsetobjectmovementtype LOCALID_SLATEPORT_MAN_1, MOVEMENT_TYPE_FACE_LEFT\n\treturn"
+  },
+  "label": "SlateportCity_EventScript_MovePeopleForSternInterview",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SlateportCity/scripts.inc",
+  "references": {}
+}

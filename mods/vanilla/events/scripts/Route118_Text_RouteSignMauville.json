@@ -1,0 +1,19 @@
+{
+  "id": "Route118_Text_RouteSignMauville",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route118/scripts.inc",
+    "sha1": "5a4868d1490a62e62c6e29a255fc938bad9fa2cd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route118/scripts.inc",
+    "rawScript": ".string \"ROUTE 118\\n\"\n\t.string \"{LEFT_ARROW} MAUVILLE CITY$\""
+  },
+  "label": "Route118_Text_RouteSignMauville",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route118/scripts.inc",
+  "references": {}
+}

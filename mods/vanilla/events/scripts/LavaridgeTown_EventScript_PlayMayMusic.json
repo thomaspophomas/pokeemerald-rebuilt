@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_EventScript_PlayMayMusic",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown/scripts.inc",
+    "sha1": "22a1369e29827ea9f7ff2633871af72d877a08c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown/scripts.inc",
+    "rawScript": "playbgm MUS_ENCOUNTER_MAY, TRUE\n\treturn"
+  },
+  "label": "LavaridgeTown_EventScript_PlayMayMusic",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LavaridgeTown/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_Harbor_Text_NeedDiveToCatchSub",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "sha1": "304e0889603d7850b02e01765d969cf3c903eb9e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_Harbor/scripts.inc",
+    "rawScript": ".string \"CAPT. STERN: Trying to catch a\\n\"\n\t.string \"submarine\u2026 It's impossible.\\p\"\n\t.string \"You would need a POK\u00e9MON that knows\\n\"\n\t.string \"how to DIVE\u2026\\p\"\n\t.string \"Perhaps if you went out to\\n\"\n\t.string \"MOSSDEEP CITY\u2026\\p\"\n\t.string \"A lot of divers live out there, so\\n\"\n\t.string \"someone might teach you\u2026$\""
+  },
+  "label": "SlateportCity_Harbor_Text_NeedDiveToCatchSub",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_Harbor/scripts.inc",
+  "references": {}
+}

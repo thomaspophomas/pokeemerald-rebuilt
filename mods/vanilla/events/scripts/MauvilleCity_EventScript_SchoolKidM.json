@@ -1,0 +1,23 @@
+{
+  "id": "MauvilleCity_EventScript_SchoolKidM",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_TV_EXPLAINED, MauvilleCity_EventScript_TVExplained\n\tmsgbox MauvilleCity_Text_ExplainTV, MSGBOX_DEFAULT\n\tsetflag FLAG_TV_EXPLAINED\n\trelease\n\tend"
+  },
+  "label": "MauvilleCity_EventScript_SchoolKidM",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_TV_EXPLAINED"
+    ]
+  }
+}

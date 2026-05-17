@@ -1,0 +1,23 @@
+{
+  "id": "Route101_OnFrame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route101/scripts.inc",
+    "sha1": "8bf41eea03b11363dfc29d02f70e66a0a3532478"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route101/scripts.inc",
+    "rawScript": "map_script_2 VAR_ROUTE101_STATE, 0, Route101_EventScript_HideMapNamePopup\n\t.2byte 0"
+  },
+  "label": "Route101_OnFrame",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Route101/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_ROUTE101_STATE"
+    ]
+  }
+}

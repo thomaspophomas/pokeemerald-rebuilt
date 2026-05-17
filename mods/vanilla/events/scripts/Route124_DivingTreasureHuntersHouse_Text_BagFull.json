@@ -1,0 +1,19 @@
+{
+  "id": "Route124_DivingTreasureHuntersHouse_Text_BagFull",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+    "sha1": "e787b98bef4dd91776e97f180a62a1c98c92003e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+    "rawScript": ".string \"Whoops, your BAG's full.\\n\"\n\t.string \"Get rid of some items, friend!$\""
+  },
+  "label": "Route124_DivingTreasureHuntersHouse_Text_BagFull",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+  "references": {}
+}

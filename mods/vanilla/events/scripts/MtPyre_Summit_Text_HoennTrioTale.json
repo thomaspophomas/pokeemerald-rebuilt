@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_Summit_Text_HoennTrioTale",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/scripts.inc",
+    "sha1": "2d98d572d50cebb678d972aa421854c983329822"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Summit/scripts.inc",
+    "rawScript": ".string \"It happened long, long ago\u2026\\p\"\n\t.string \"The world was wracked by a ferocious\\n\"\n\t.string \"clash between the POK\u00e9MON of the land\\l\"\n\t.string \"and the POK\u00e9MON of the sea\u2026\\p\"\n\t.string \"The POK\u00e9MON of the land raised\\n\"\n\t.string \"mountains and created continents\u2026\\p\"\n\t.string \"The POK\u00e9MON of the sea raised huge\\n\"\n\t.string \"waves and carved out oceans\u2026\\p\"\n\t.string \"Their fierce duel raged without end.\\p\"\n\t.string \"The world was engulfed in massive\\n\"\n\t.string \"fires and vicious storms.\\p\"\n\t.string \"It was then that the POK\u00e9MON of\\n\"\n\t.string \"the sky descended from a storm.\\p\"\n\t.string \"The POK\u00e9MON, shining a vivid green,\\n\"\n\t.string \"becalmed the two enraged POK\u00e9MON.\\p\"\n\t.string \"Then, its duty done, the green POK\u00e9MON\\n\"\n\t.string \"flew off into the wild blue yonder\u2026$\""
+  },
+  "label": "MtPyre_Summit_Text_HoennTrioTale",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_Summit/scripts.inc",
+  "references": {}
+}

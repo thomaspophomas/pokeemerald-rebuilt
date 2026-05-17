@@ -1,0 +1,19 @@
+{
+  "id": "Route116_Text_TrainerTipsBagHasPockets",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116/scripts.inc",
+    "sha1": "414d7bb5c4246d6317dd973dc816983566be8cc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route116/scripts.inc",
+    "rawScript": ".string \"TRAINER TIPS\\p\"\n\t.string \"Your BAG has several POCKETS.\\p\"\n\t.string \"Items you obtain are automatically\\n\"\n\t.string \"placed in the appropriate POCKETS.\\p\"\n\t.string \"No TRAINER can afford to be without\\n\"\n\t.string \"a BAG of their own.$\""
+  },
+  "label": "Route116_Text_TrainerTipsBagHasPockets",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route116/scripts.inc",
+  "references": {}
+}

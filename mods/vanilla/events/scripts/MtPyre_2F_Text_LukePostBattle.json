@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_2F_Text_LukePostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_2F/scripts.inc",
+    "sha1": "bc76e62a0ca08b33eb2220b94b2aff96bd7a1311"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_2F/scripts.inc",
+    "rawScript": ".string \"LUKE: Well, we lost but that's okay!\\n\"\n\t.string \"I'm right here by your side.\\l\"\n\t.string \"We'll make it through this dare!$\""
+  },
+  "label": "MtPyre_2F_Text_LukePostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_2F/scripts.inc",
+  "references": {}
+}

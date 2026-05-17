@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Gym_Text_SamanthaIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "sha1": "f1b3ae6c76fdfe44b1431df4ea78da5c11a79c08"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "rawScript": ".string \"I see it\u2026\\n\"\n\t.string \"I see your future\u2026\\p\"\n\t.string \"If you can beat me, I will tell you\\n\"\n\t.string \"your future!$\""
+  },
+  "label": "MossdeepCity_Gym_Text_SamanthaIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity_Gym/scripts.inc",
+  "references": {}
+}

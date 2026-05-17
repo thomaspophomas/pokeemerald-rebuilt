@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_BattleDomeBattleRoom_EventScript_TuckerEnter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "sha1": "2cf5ea83e82fbd2189ced7e0cd4d5f894bf74650"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "rawScript": "closemessage\n\tapplymovement LOCALID_DOME_AUDIENCE_TWIN, BattleFrontier_BattleDomeBattleRoom_Movement_AudienceTwinJump\n\tapplymovement LOCALID_DOME_ANNOUNCER, BattleFrontier_BattleDomeBattleRoom_Movement_AnnouncerMoveForTuckerEntrance\n\tapplymovement LOCALID_DOME_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_TuckerEnterAndDance\n\tplayse SE_M_ENCORE2\n\tcall BattleFrontier_BattleDomeBattleRoom_EventScript_AudienceLookAround\n\twaitse\n\tplayse SE_M_ENCORE2\n\tcall BattleFrontier_BattleDomeBattleRoom_EventScript_AudienceLookAround\n\twaitse\n\tplayse SE_M_ENCORE2\n\tcall BattleFrontier_BattleDomeBattleRoom_EventScript_AudienceLookAround\n\twaitse\n\tplayse SE_M_ENCORE2\n\tcall BattleFrontier_BattleDomeBattleRoom_EventScript_AudienceLookAround\n\twaitse\n\tplayse SE_M_ENCORE2\n\tcall BattleFrontier_BattleDomeBattleRoom_EventScript_AudienceLookAround\n\twaitse\n\twaitmovement 0\n\tmessage BattleFrontier_BattleDomeBattleRoom_Text_SpectatorTuckerChant\n\twaitmessage\n\tplayse SE_M_ENCORE2\n\tcall BattleFrontier_BattleDomeBattleRoom_EventScript_AudienceLookAround\n\twaitse\n\tswitch VAR_TEMP_E\n\tcase FRONTIER_BRAIN_GOLD, BattleFrontier_BattleDomeBattleRoom_EventScript_TuckerGoldIntro\n\tcase FRONTIER_BRAIN_STREAK, BattleFrontier_BattleDomeBattleRoom_EventScript_BattleTuckerSilver\n\tcase FRONTIER_BRAIN_STREAK_LONG, BattleFrontier_BattleDomeBattleRoom_EventScript_BattleTuckerGold\n\tfrontier_get FRONTIER_DATA_HEARD_BRAIN_SPEECH\n\tgoto_if_ne VAR_RESULT, FALSE, BattleFrontier_BattleDomeBattleRoom_EventScript_BattleTuckerSilver\n\tmsgbox BattleFrontier_BattleDomeBattleRoom_Text_TuckerSilverIntro, MSGBOX_DEFAULT\n\tfrontier_set FRONTIER_DATA_HEARD_BRAIN_SPEECH"
+  },
+  "label": "BattleFrontier_BattleDomeBattleRoom_EventScript_TuckerEnter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_E"
+    ]
+  }
+}

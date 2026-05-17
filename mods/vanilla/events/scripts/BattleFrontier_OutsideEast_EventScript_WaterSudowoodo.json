@@ -1,0 +1,28 @@
+{
+  "id": "BattleFrontier_OutsideEast_EventScript_WaterSudowoodo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "sha1": "daab3e530c74c286237faa58f280f11ef97e663a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tspecial DoWateringBerryTreeAnim\n\twaitse\n\tplayse SE_SUDOWOODO_SHAKE\n\tapplymovement LOCALID_FRONTIER_SUDOWOODO, BattleFrontier_OutsideEast_Movement_SudowoodoShake\n\twaitmovement 0\n\tmsgbox gText_Sudowoodo_Attacked, MSGBOX_DEFAULT\n\tclosemessage\n\twaitse\n\tplaymoncry SPECIES_SUDOWOODO, CRY_MODE_ENCOUNTER\n\tdelay 40\n\twaitmoncry\n\tsetvar VAR_LAST_TALKED, LOCALID_FRONTIER_SUDOWOODO\n\tsetwildbattle SPECIES_SUDOWOODO, 40\n\tsetflag FLAG_SYS_CTRL_OBJ_DELETE\n\tdowildbattle\n\tclearflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_WON, BattleFrontier_OutsideEast_EventScript_DefeatedSudowoodo\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_RAN, BattleFrontier_OutsideEast_EventScript_DefeatedSudowoodo\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, BattleFrontier_OutsideEast_EventScript_DefeatedSudowoodo\n\tsetflag FLAG_DEFEATED_SUDOWOODO\n\trelease\n\tend"
+  },
+  "label": "BattleFrontier_OutsideEast_EventScript_WaterSudowoodo",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_SUDOWOODO",
+      "FLAG_SYS_CTRL_OBJ_DELETE"
+    ],
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT"
+    ]
+  }
+}

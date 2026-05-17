@@ -1,0 +1,23 @@
+{
+  "id": "AbandonedShip_Rooms_B1F_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Rooms_B1F/scripts.inc",
+    "sha1": "0f716cc0922c8a7607eae2e979b7c689b3e75400"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_Rooms_B1F/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, AbandonedShip_Rooms_B1F_OnResume\n\t.byte 0"
+  },
+  "label": "AbandonedShip_Rooms_B1F_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/AbandonedShip_Rooms_B1F/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_RESUME"
+    ]
+  }
+}

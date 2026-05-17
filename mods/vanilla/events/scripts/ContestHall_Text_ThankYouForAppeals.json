@@ -1,0 +1,19 @@
+{
+  "id": "ContestHall_Text_ThankYouForAppeals",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": ".string \"Thank you all for a most wonderful\\n\"\n\t.string \"display of quality appeals!\\p\"\n\t.string \"This concludes all judging!\\n\"\n\t.string \"Thank you for your fine efforts!$\""
+  },
+  "label": "ContestHall_Text_ThankYouForAppeals",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {}
+}

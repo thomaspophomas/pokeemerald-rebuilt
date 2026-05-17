@@ -1,0 +1,19 @@
+{
+  "id": "Route116_TunnelersRestHouse_Text_GetToVerdanturfWithoutTunnel",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116_TunnelersRestHouse/scripts.inc",
+    "sha1": "cf1b26d5655363e9dd7eded558cfb3a4486c3aa4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route116_TunnelersRestHouse/scripts.inc",
+    "rawScript": ".string \"To get to VERDANTURF without using\\n\"\n\t.string \"this TUNNEL, you'd have to cross the\\l\"\n\t.string \"sea to DEWFORD, sail on to SLATEPORT,\\l\"\n\t.string \"then travel through MAUVILLE.$\""
+  },
+  "label": "Route116_TunnelersRestHouse_Text_GetToVerdanturfWithoutTunnel",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route116_TunnelersRestHouse/scripts.inc",
+  "references": {}
+}

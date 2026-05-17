@@ -1,0 +1,19 @@
+{
+  "id": "Route128_Text_MaxieThisDefiesBelief",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route128/scripts.inc",
+    "sha1": "8c3eb5fe541a802a44ec8805e051fe2de0e552f6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route128/scripts.inc",
+    "rawScript": ".string \"MAXIE: This defies belief\u2026\\p\"\n\t.string \"Those super-ancient POK\u00e9MON\u2026\\p\"\n\t.string \"Their power is unbelievable.\\n\"\n\t.string \"They've upset the balance of nature\u2026$\""
+  },
+  "label": "Route128_Text_MaxieThisDefiesBelief",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route128/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Text_CantWaterfall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/field_move_scripts.inc",
+    "sha1": "83a0d3bb9ff1263278592b6a78563154bb422956"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/field_move_scripts.inc",
+    "rawScript": ".string \"A wall of water is crashing down with\\n\"\n\t.string \"a mighty roar.$\""
+  },
+  "label": "Text_CantWaterfall",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/field_move_scripts.inc",
+  "references": {}
+}

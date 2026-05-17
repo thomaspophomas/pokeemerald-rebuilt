@@ -1,0 +1,23 @@
+{
+  "id": "Apprentice_EventScript_PickWinSpeech",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/apprentice.inc",
+    "sha1": "353208142bca1df117076064d141b84efe196e7c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/apprentice.inc",
+    "rawScript": "apprentice_msg TRUE, APPRENTICE_MSG_PICK_WIN_SPEECH\n\tapprentice_shiftsaved\n\tsetvar VAR_0x8004, EASY_CHAT_TYPE_APPRENTICE\n\tcall Common_ShowEasyChatScreen\n\tlock\n\tfaceplayer\n\tapprentice_save\n\tapprentice_buff STR_VAR_1, APPRENTICE_BUFF_WIN_SPEECH\n\tapprentice_msg TRUE, APPRENTICE_MSG_THANKS_WIN_SPEECH\n\tapprentice_reset\n\tcall Apprentice_EventScript_SetHideFlags\n\trelease\n\treleaseall\n\tswitch VAR_FACING\n\tcase DIR_NORTH, Apprentice_EventScript_LeaveNorth\n\tgoto Apprentice_EventScript_Leave\n\tend"
+  },
+  "label": "Apprentice_EventScript_PickWinSpeech",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/apprentice.inc",
+  "references": {
+    "vars": [
+      "VAR_FACING"
+    ]
+  }
+}

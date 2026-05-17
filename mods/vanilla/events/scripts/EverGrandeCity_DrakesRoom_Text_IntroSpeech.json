@@ -1,0 +1,19 @@
+{
+  "id": "EverGrandeCity_DrakesRoom_Text_IntroSpeech",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+    "sha1": "f9ebbd1a5748e35eab8deba2da4622069b1316a9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+    "rawScript": ".string \"I am the last of the POK\u00e9MON LEAGUE\\n\"\n\t.string \"ELITE FOUR, DRAKE the DRAGON master!\\p\"\n\t.string \"In their natural state, POK\u00e9MON are\\n\"\n\t.string \"wild living things. They are free.\\p\"\n\t.string \"At times, they hinder us.\\n\"\n\t.string \"At times, they help us.\\p\"\n\t.string \"For us to battle with POK\u00e9MON as\\n\"\n\t.string \"partners, do you know what it takes?\\p\"\n\t.string \"Do you know what is needed?\\p\"\n\t.string \"If you don't, then you will never\\n\"\n\t.string \"prevail over me!$\""
+  },
+  "label": "EverGrandeCity_DrakesRoom_Text_IntroSpeech",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
+  "references": {}
+}

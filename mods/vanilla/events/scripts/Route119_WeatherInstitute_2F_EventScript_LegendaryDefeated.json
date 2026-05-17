@@ -1,0 +1,19 @@
+{
+  "id": "Route119_WeatherInstitute_2F_EventScript_LegendaryDefeated",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "sha1": "fb62e5a84003aa6247f1e7fe6ea409ec86ac92cc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+    "rawScript": "addvar VAR_0x8004, 1\n\treturn"
+  },
+  "label": "Route119_WeatherInstitute_2F_EventScript_LegendaryDefeated",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+  "references": {}
+}

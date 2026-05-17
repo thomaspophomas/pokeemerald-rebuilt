@@ -1,0 +1,28 @@
+{
+  "id": "LilycoveCity_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": "setflag FLAG_VISITED_LILYCOVE_CITY\n\tsetvar VAR_CONTEST_HALL_STATE, 0\n\tsetflag FLAG_HIDE_LILYCOVE_CONTEST_HALL_REPORTER\n\tcall_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather\n\tcall Common_EventScript_SetupRivalGfxId\n\tend"
+  },
+  "label": "LilycoveCity_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_HIDE_LILYCOVE_CONTEST_HALL_REPORTER",
+      "FLAG_SYS_WEATHER_CTRL",
+      "FLAG_VISITED_LILYCOVE_CITY"
+    ],
+    "vars": [
+      "VAR_CONTEST_HALL_STATE"
+    ]
+  }
+}

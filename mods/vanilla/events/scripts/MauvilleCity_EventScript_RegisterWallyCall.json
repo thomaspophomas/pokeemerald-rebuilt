@@ -1,0 +1,24 @@
+{
+  "id": "MauvilleCity_EventScript_RegisterWallyCall",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": "lockall\n\tpokenavcall MauvilleCity_Text_WallyPokenavCall\n\twaitmessage\n\tdelay 30\n\tplayfanfare MUS_REGISTER_MATCH_CALL\n\tmsgbox MauvilleCity_Text_RegisteredWally, MSGBOX_DEFAULT\n\twaitfanfare\n\tclosemessage\n\tdelay 30\n\tsetflag FLAG_ENABLE_WALLY_MATCH_CALL\n\tclearflag FLAG_ENABLE_FIRST_WALLY_POKENAV_CALL\n\treleaseall\n\tend"
+  },
+  "label": "MauvilleCity_EventScript_RegisterWallyCall",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_ENABLE_FIRST_WALLY_POKENAV_CALL",
+      "FLAG_ENABLE_WALLY_MATCH_CALL"
+    ]
+  }
+}

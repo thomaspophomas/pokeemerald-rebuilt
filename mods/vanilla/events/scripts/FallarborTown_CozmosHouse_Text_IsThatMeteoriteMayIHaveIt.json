@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+    "sha1": "8f6cba0c7d4561645e0110baf848672ddd10d44d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+    "rawScript": ".string \"Oh!\\n\"\n\t.string \"Hah?\\p\"\n\t.string \"That item\u2026\\p\"\n\t.string \"Could it be?\\p\"\n\t.string \"Is it the METEORITE that TEAM MAGMA\\n\"\n\t.string \"took from METEOR FALLS?\\p\"\n\t.string \"Please, may I have it?\\p\"\n\t.string \"I'm not asking for it for free.\\n\"\n\t.string \"How about in exchange for this TM?$\""
+  },
+  "label": "FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+  "references": {}
+}

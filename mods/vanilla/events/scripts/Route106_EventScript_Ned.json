@@ -1,0 +1,23 @@
+{
+  "id": "Route106_EventScript_Ned",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route106/scripts.inc",
+    "sha1": "a209a44ee2510b2fc73442d6137996f599dae676"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route106/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_NED, Route106_Text_NedIntro, Route106_Text_NedDefeated\n\tmsgbox Route106_Text_NedPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route106_EventScript_Ned",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route106/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_NED"
+    ]
+  }
+}

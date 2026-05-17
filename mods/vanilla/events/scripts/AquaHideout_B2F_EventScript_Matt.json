@@ -1,0 +1,23 @@
+{
+  "id": "AquaHideout_B2F_EventScript_Matt",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B2F/scripts.inc",
+    "sha1": "2422b13cc4d746236ea4f5c8dbbc6ea26d3d8e36"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_B2F/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_MATT, AquaHideout_B2F_Text_MattIntro, AquaHideout_B2F_Text_MattDefeat, AquaHideout_B2F_EventScript_SubmarineEscape\n\tmsgbox AquaHideout_B2F_Text_MattPostBattle, MSGBOX_DEFAULT\n\trelease\n\tend"
+  },
+  "label": "AquaHideout_B2F_EventScript_Matt",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/AquaHideout_B2F/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_MATT"
+    ]
+  }
+}

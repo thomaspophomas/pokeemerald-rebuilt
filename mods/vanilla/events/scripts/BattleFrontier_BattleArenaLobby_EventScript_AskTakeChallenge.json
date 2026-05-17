@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattleArenaLobby_EventScript_AskTakeChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "sha1": "9504bb75bdf62b80271e2304b4804044c8db502a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "rawScript": "message BattleFrontier_BattleArenaLobby_Text_WishToTakeChallenge\n\twaitmessage\n\tmultichoice 17, 6, MULTI_CHALLENGEINFO, FALSE\n\tswitch VAR_RESULT\n\tcase 0, BattleFrontier_BattleArenaLobby_EventScript_TryEnterChallenge\n\tcase 1, BattleFrontier_BattleArenaLobby_EventScript_ExplainChallenge\n\tcase 2, BattleFrontier_BattleArenaLobby_EventScript_CancelChallenge\n\tcase MULTI_B_PRESSED, BattleFrontier_BattleArenaLobby_EventScript_CancelChallenge"
+  },
+  "label": "BattleFrontier_BattleArenaLobby_EventScript_AskTakeChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

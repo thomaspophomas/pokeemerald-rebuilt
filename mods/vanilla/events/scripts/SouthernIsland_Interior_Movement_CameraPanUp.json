@@ -1,0 +1,19 @@
+{
+  "id": "SouthernIsland_Interior_Movement_CameraPanUp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SouthernIsland_Interior/scripts.inc",
+    "sha1": "6ed339e41064219d030f00f9c7e62ccbfde31212"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SouthernIsland_Interior/scripts.inc",
+    "rawScript": "walk_up\n\twalk_up\n\twalk_up\n\tstep_end"
+  },
+  "label": "SouthernIsland_Interior_Movement_CameraPanUp",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/SouthernIsland_Interior/scripts.inc",
+  "references": {}
+}

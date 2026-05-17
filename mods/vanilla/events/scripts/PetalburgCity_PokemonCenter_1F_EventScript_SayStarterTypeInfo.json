@@ -1,0 +1,23 @@
+{
+  "id": "PetalburgCity_PokemonCenter_1F_EventScript_SayStarterTypeInfo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "3355898078ce7d23572c68766ca5af49d35de75d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": "call_if_eq VAR_STARTER_MON, 0, PetalburgCity_PokemonCenter_1F_EventScript_SayTreeckoType\n\tcall_if_eq VAR_STARTER_MON, 1, PetalburgCity_PokemonCenter_1F_EventScript_SayTorchicType\n\tcall_if_eq VAR_STARTER_MON, 2, PetalburgCity_PokemonCenter_1F_EventScript_SayMudkipType\n\trelease\n\tend"
+  },
+  "label": "PetalburgCity_PokemonCenter_1F_EventScript_SayStarterTypeInfo",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgCity_PokemonCenter_1F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_STARTER_MON"
+    ]
+  }
+}

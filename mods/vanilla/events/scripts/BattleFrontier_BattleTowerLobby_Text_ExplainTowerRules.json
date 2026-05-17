@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerLobby_Text_ExplainTowerRules",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "sha1": "d1a9c8cb4c94862358f5bbb80c558794ce116592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "rawScript": ".string \"The BATTLE TOWER is a facility where\\n\"\n\t.string \"four types of battles are waged--\\l\"\n\t.string \"SINGLE BATTLE, DOUBLE BATTLE, MULTI\\l\"\n\t.string \"BATTLE, and LINK MULTI BATTLE.\\p\"\n\t.string \"For each of these types, there are\\n\"\n\t.string \"separate BATTLE ROOMS.\\p\"\n\t.string \"Please speak with a guide offering\\n\"\n\t.string \"the type of battle you wish to enter.$\""
+  },
+  "label": "BattleFrontier_BattleTowerLobby_Text_ExplainTowerRules",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Text_TwoPokemonArentAngry",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": ".string \"I just get this sense somehow that\\n\"\n\t.string \"the two POK\u00e9MON aren't angry.\\p\"\n\t.string \"I think\u2026 They probably can't control\\n\"\n\t.string \"their own power\u2026$\""
+  },
+  "label": "SootopolisCity_Text_TwoPokemonArentAngry",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

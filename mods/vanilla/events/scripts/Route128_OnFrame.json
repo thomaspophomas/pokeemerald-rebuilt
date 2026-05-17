@@ -1,0 +1,23 @@
+{
+  "id": "Route128_OnFrame",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route128/scripts.inc",
+    "sha1": "8c3eb5fe541a802a44ec8805e051fe2de0e552f6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route128/scripts.inc",
+    "rawScript": "map_script_2 VAR_ROUTE128_STATE, 1, Route128_EventScript_KyogreAwakenedScene\n\t.2byte 0"
+  },
+  "label": "Route128_OnFrame",
+  "exported": false,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/Route128/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_ROUTE128_STATE"
+    ]
+  }
+}

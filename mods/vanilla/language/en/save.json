@@ -1,0 +1,25 @@
+{
+  "id": "en:save",
+  "domain": "language",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/text/save.inc",
+    "sha1": "01849403916a350b0c0ca0f517e9a84036cd86a2"
+  },
+  "legacy": {
+    "kind": "asm_text_labels",
+    "sourcePath": "data/text/save.inc"
+  },
+  "language": "en",
+  "group": "save",
+  "runtime": false,
+  "strings": {
+    "gText_ConfirmSave": ".string \"Would you like to save the game?$\"",
+    "gText_AlreadySavedFile": ".string \"There is already a saved file.\\n\"\n\t.string \"Is it okay to overwrite it?$\"",
+    "gText_SavingDontTurnOff": ".string \"SAVING\u2026\\n\"\n\t.string \"DON'T TURN OFF THE POWER.$\"",
+    "gText_PlayerSavedGame": ".string \"{PLAYER} saved the game.$\"",
+    "gText_DifferentSaveFile": ".string \"WARNING!\\p\"\n\t.string \"There is a different game file that\\n\"\n\t.string \"is already saved.\\p\"\n\t.string \"If you save now, the other file's\\n\"\n\t.string \"adventure, including items and\\l\"\n\t.string \"POK\u00e9MON, will be entirely lost.\\p\"\n\t.string \"Are you sure you want to save now\\n\"\n\t.string \"and overwrite the other save file?$\"",
+    "gText_SaveError": ".string \"Save error.\\p\"\n\t.string \"Please exchange the\\n\"\n\t.string \"backup memory.$\"",
+    "gText_SavingDontTurnOffPower": ".string \"SAVING\u2026\\n\"\n\t.string \"DON'T TURN OFF THE POWER.$\""
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Gym_Text_GymGuideAdvice",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Gym/scripts.inc",
+    "sha1": "595ba5581d9eb698f4762f9b34da6e4f6c2a7a55"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Gym/scripts.inc",
+    "rawScript": ".string \"Hey, how's it going, CHAMPION-\\n\"\n\t.string \"bound {PLAYER}?\\p\"\n\t.string \"DEWFORD's GYM LEADER BRAWLY commands\\n\"\n\t.string \"FIGHTING-type POK\u00e9MON.\\p\"\n\t.string \"Going against him with NORMAL-type\\n\"\n\t.string \"POK\u00e9MON is asking for trouble.\\p\"\n\t.string \"FIGHTING POK\u00e9MON will lay a serious\\n\"\n\t.string \"smack down on NORMAL POK\u00e9MON,\\l\"\n\t.string \"so be careful!\\p\"\n\t.string \"What's worse, the GYM is as dark as\\n\"\n\t.string \"the ocean floor.\\p\"\n\t.string \"But it will get brighter after defeating\\n\"\n\t.string \"the TRAINERS in your way.\\p\"\n\t.string \"Hey, okay, go for it!$\""
+  },
+  "label": "DewfordTown_Gym_Text_GymGuideAdvice",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown_Gym/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SeafloorCavern_Room9/scripts.inc",
+    "sha1": "fb74c5efd7ca988ee5566425c585ce3e165249e8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SeafloorCavern_Room9/scripts.inc",
+    "rawScript": ".string \"ARCHIE: Yes, what is it?\\p\"\n\t.string \"Hm\u2026\\n\"\n\t.string \"It's raining heavily?\\p\"\n\t.string \"Good\u2026 That should have happened.\\n\"\n\t.string \"That is why we awakened KYOGRE,\\l\"\n\t.string \"to realize TEAM AQUA's vision of\\l\"\n\t.string \"expanding the sea.\\p\"\n\t.string \"What?!\\p\"\n\t.string \"It's raining far harder than we\\n\"\n\t.string \"envisioned? You're in danger?\\p\"\n\t.string \"That can't be\u2026\\n\"\n\t.string \"That's just not possible\u2026\\p\"\n\t.string \"Hold your position and monitor\\n\"\n\t.string \"the situation!$\""
+  },
+  "label": "SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SeafloorCavern_Room9/scripts.inc",
+  "references": {}
+}

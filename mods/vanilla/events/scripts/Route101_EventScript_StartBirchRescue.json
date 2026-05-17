@@ -1,0 +1,23 @@
+{
+  "id": "Route101_EventScript_StartBirchRescue",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route101/scripts.inc",
+    "sha1": "8bf41eea03b11363dfc29d02f70e66a0a3532478"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route101/scripts.inc",
+    "rawScript": "lockall\n\tplaybgm MUS_HELP, TRUE\n\tmsgbox Route101_Text_HelpMe, MSGBOX_DEFAULT\n\tclosemessage\n\tsetobjectxy LOCALID_ROUTE101_BIRCH, 0, 15\n\tsetobjectxy LOCALID_ROUTE101_ZIGZAGOON, 0, 16\n\tapplymovement LOCALID_PLAYER, Route101_Movement_EnterScene\n\tapplymovement LOCALID_ROUTE101_BIRCH, Route101_Movement_BirchRunAway1\n\tapplymovement LOCALID_ROUTE101_ZIGZAGOON, Route101_Movement_ZigzagoonChase1\n\twaitmovement 0\n\tapplymovement LOCALID_ROUTE101_ZIGZAGOON, Route101_Movement_ZigzagoonChaseInCircles\n\tapplymovement LOCALID_ROUTE101_BIRCH, Route101_Movement_BirchRunInCircles\n\twaitmovement 0\n\tapplymovement LOCALID_ROUTE101_BIRCH, Common_Movement_WalkInPlaceFasterRight\n\twaitmovement 0\n\tapplymovement LOCALID_ROUTE101_ZIGZAGOON, Route101_Movement_ZigzagoonFaceBirch\n\tapplymovement LOCALID_ROUTE101_BIRCH, Route101_Movement_BirchFaceZigzagoon\n\twaitmovement 0\n\tmsgbox Route101_Text_PleaseHelp, MSGBOX_DEFAULT\n\tclosemessage\n\tsetvar VAR_ROUTE101_STATE, 2\n\treleaseall\n\tend"
+  },
+  "label": "Route101_EventScript_StartBirchRescue",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route101/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_ROUTE101_STATE"
+    ]
+  }
+}

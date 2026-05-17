@@ -1,0 +1,23 @@
+{
+  "id": "Route108_EventScript_Jerome",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route108/scripts.inc",
+    "sha1": "1a6cf722c4ab0951d224d753da9f7fca73caf226"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route108/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_JEROME, Route108_Text_JeromeIntro, Route108_Text_JeromeDefeated\n\tmsgbox Route108_Text_JeromePostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route108_EventScript_Jerome",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route108/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_JEROME"
+    ]
+  }
+}

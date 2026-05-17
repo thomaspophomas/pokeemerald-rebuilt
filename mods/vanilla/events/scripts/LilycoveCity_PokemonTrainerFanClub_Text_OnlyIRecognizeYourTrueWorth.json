@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_PokemonTrainerFanClub_Text_OnlyIRecognizeYourTrueWorth",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "sha1": "b1c22b8f5ee1bbbe0858579c8c261b961f2c3826"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+    "rawScript": ".string \"Your true worth, it is fine if only\\n\"\n\t.string \"I recognized it.\\p\"\n\t.string \"The others I doubt will understand\\n\"\n\t.string \"the hidden power that beats within.$\""
+  },
+  "label": "LilycoveCity_PokemonTrainerFanClub_Text_OnlyIRecognizeYourTrueWorth",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+  "references": {}
+}

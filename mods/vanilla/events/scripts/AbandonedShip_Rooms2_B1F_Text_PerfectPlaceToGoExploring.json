@@ -1,0 +1,19 @@
+{
+  "id": "AbandonedShip_Rooms2_B1F_Text_PerfectPlaceToGoExploring",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AbandonedShip_Rooms2_B1F/scripts.inc",
+    "sha1": "5c00108c39aa22dc9e5bdedd358936adcac92043"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AbandonedShip_Rooms2_B1F/scripts.inc",
+    "rawScript": ".string \"This is a perfect place to go exploring!\\n\"\n\t.string \"It's exciting here!\\p\"\n\t.string \"I bet there're amazing treasures on\\n\"\n\t.string \"board.$\""
+  },
+  "label": "AbandonedShip_Rooms2_B1F_Text_PerfectPlaceToGoExploring",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AbandonedShip_Rooms2_B1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_Mart_Text_DecidingSkittyEvolve",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_Mart/scripts.inc",
+    "sha1": "0ca66f0e5420cbce8afedeba0991156dec84e531"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_Mart/scripts.inc",
+    "rawScript": ".string \"I'm having a hard time deciding if I\\n\"\n\t.string \"should make my SKITTY evolve or not.\\p\"\n\t.string \"I only have to use this MOON STONE,\\n\"\n\t.string \"but it's so hard to decide\u2026\\p\"\n\t.string \"If I make it evolve, it will become\\n\"\n\t.string \"much stronger.\\p\"\n\t.string \"But it will look so different, too.$\""
+  },
+  "label": "FallarborTown_Mart_Text_DecidingSkittyEvolve",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FallarborTown_Mart/scripts.inc",
+  "references": {}
+}

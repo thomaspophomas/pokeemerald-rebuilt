@@ -1,0 +1,23 @@
+{
+  "id": "TrainerHill_1F_Movement_SetInvisible",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/trainer_hill.inc",
+    "sha1": "47f18ba4af2e68695280d853b9b0ada8ee6cad46"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/trainer_hill.inc",
+    "rawScript": "set_invisible\n\tstep_end\n\n@ TRAINER_PHILLIP is an actual Trainer on the SS Tidal, but is used as a placeholder here"
+  },
+  "label": "TrainerHill_1F_Movement_SetInvisible",
+  "exported": true,
+  "kind": "movement",
+  "sourceFile": "data/scripts/trainer_hill.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_PHILLIP"
+    ]
+  }
+}

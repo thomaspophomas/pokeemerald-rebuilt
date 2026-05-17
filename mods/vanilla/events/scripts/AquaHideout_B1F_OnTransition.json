@@ -1,0 +1,24 @@
+{
+  "id": "AquaHideout_B1F_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_B1F/scripts.inc",
+    "sha1": "2923188c4ae1df18ace73c8a8f87ea7f1d1e7886"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_B1F/scripts.inc",
+    "rawScript": "call_if_unset FLAG_DEFEATED_ELECTRODE_1_AQUA_HIDEOUT, AquaHideout_B1F_EventScript_ShowElectrode1\n\tcall_if_unset FLAG_DEFEATED_ELECTRODE_2_AQUA_HIDEOUT, AquaHideout_B1F_EventScript_ShowElectrode2\n\tend"
+  },
+  "label": "AquaHideout_B1F_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/AquaHideout_B1F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_ELECTRODE_1_AQUA_HIDEOUT",
+      "FLAG_DEFEATED_ELECTRODE_2_AQUA_HIDEOUT"
+    ]
+  }
+}

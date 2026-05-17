@@ -1,0 +1,23 @@
+{
+  "id": "SlateportCity_PokemonFanClub_EventScript_Reporter",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/interview.inc",
+    "sha1": "bd1d5135ce2e319a18291aebafac5c4760b90500"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/interview.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tspecialvar VAR_RESULT, IsLeadMonNicknamedOrNotEnglish\n\tgoto_if_eq VAR_RESULT, FALSE, SlateportCity_PokemonFanClub_EventScript_ReporterNoNickname\n\tsetvar VAR_0x8005, TVSHOW_PKMN_FAN_CLUB_OPINIONS\n\tspecial InterviewBefore\n\tgoto_if_eq VAR_RESULT, TRUE, SlateportCity_PokemonFanClub_EventScript_AlreadyInterviewed\n\tcopyvar VAR_0x8009, VAR_0x8006\n\tmsgbox SlateportCity_PokemonFanClub_Text_InterviewRequestHasName, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, SlateportCity_PokemonFanClub_EventScript_AcceptInterview\n\tgoto_if_eq VAR_RESULT, NO, SlateportCity_PokemonFanClub_EventScript_DeclineInterview\n\tend"
+  },
+  "label": "SlateportCity_PokemonFanClub_EventScript_Reporter",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/interview.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

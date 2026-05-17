@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Hall_EventScript_TrendDebate2",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Hall/scripts.inc",
+    "sha1": "78185d3058996bff2579b5133faf680c4df6865f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Hall/scripts.inc",
+    "rawScript": "call DewfordTown_Hall_EventScript_DebateReact1\n\tmsgbox DewfordTown_Hall_Text_ComposedTrendThemeSong, MSGBOX_DEFAULT\n\tcall DewfordTown_Hall_EventScript_DebateReact2\n\tmsgbox DewfordTown_Hall_Text_WorkOnYourSinging, MSGBOX_DEFAULT\n\treleaseall\n\tend"
+  },
+  "label": "DewfordTown_Hall_EventScript_TrendDebate2",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DewfordTown_Hall/scripts.inc",
+  "references": {}
+}

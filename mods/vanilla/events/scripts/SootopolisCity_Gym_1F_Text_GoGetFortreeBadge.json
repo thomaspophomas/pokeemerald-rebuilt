@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Gym_1F_Text_GoGetFortreeBadge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "sha1": "cd5ddf90f8e2b0931828078295732db5c87d2dae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+    "rawScript": ".string \"There remains but one BADGE to\\n\"\n\t.string \"obtain in HOENN.\\p\"\n\t.string \"If you wish to challenge the POK\u00e9MON\\n\"\n\t.string \"LEAGUE, you must obtain the last\\l\"\n\t.string \"BADGE from the GYM in FORTREE.$\""
+  },
+  "label": "SootopolisCity_Gym_1F_Text_GoGetFortreeBadge",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+  "references": {}
+}

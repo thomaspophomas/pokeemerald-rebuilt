@@ -1,0 +1,24 @@
+{
+  "id": "ShoalCave_LowTideInnerRoom_EventScript_SetShoalItemMetatiles",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ShoalCave_LowTideInnerRoom/scripts.inc",
+    "sha1": "869469d7126b490420d342e0851e1e9e44b0de36"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ShoalCave_LowTideInnerRoom/scripts.inc",
+    "rawScript": "goto_if_set FLAG_RECEIVED_SHOAL_SALT_1, ShoalCave_LowTideInnerRoom_EventScript_SetShoalItemMetatiles2\n\tgoto_if_set FLAG_SYS_SHOAL_TIDE, ShoalCave_LowTideInnerRoom_EventScript_SetShoalItemMetatiles2\n\tsetmetatile 31, 8, METATILE_Cave_ShoalCave_DirtPile_Large, TRUE\n\tgoto ShoalCave_LowTideInnerRoom_EventScript_SetShoalItemMetatiles2\n\tend"
+  },
+  "label": "ShoalCave_LowTideInnerRoom_EventScript_SetShoalItemMetatiles",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/ShoalCave_LowTideInnerRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_SHOAL_SALT_1",
+      "FLAG_SYS_SHOAL_TIDE"
+    ]
+  }
+}

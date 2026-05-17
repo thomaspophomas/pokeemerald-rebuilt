@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Mart_Text_XSpeedFirstStrike",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Mart/scripts.inc",
+    "sha1": "9ccd266cfc46c11e6006af62bd5e1b2c6ea3ae0e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_Mart/scripts.inc",
+    "rawScript": ".string \"Use X SPEED to add to a POK\u00e9MON's\\n\"\n\t.string \"SPEED in battle.\\p\"\n\t.string \"That will help it get in the first\\n\"\n\t.string \"strike--a decided advantage!$\""
+  },
+  "label": "LavaridgeTown_Mart_Text_XSpeedFirstStrike",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown_Mart/scripts.inc",
+  "references": {}
+}

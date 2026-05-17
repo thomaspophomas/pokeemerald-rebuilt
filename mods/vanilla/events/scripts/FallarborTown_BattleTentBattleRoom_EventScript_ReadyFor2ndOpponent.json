@@ -1,0 +1,19 @@
+{
+  "id": "FallarborTown_BattleTentBattleRoom_EventScript_ReadyFor2ndOpponent",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+    "sha1": "8bbb2b24c65698ff0f5d4dcb7592d7ae122741de"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+    "rawScript": "message BattleFrontier_BattleArenaBattleRoom_Text_ReadyFor2ndOpponent\n\twaitmessage\n\treturn"
+  },
+  "label": "FallarborTown_BattleTentBattleRoom_EventScript_ReadyFor2ndOpponent",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc",
+  "references": {}
+}

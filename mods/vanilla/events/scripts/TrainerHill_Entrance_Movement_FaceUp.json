@@ -1,0 +1,19 @@
+{
+  "id": "TrainerHill_Entrance_Movement_FaceUp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "sha1": "cbfca2354a8d8ed8d68e2612fb0b6f2525008a5f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "rawScript": "face_up\n\tstep_end"
+  },
+  "label": "TrainerHill_Entrance_Movement_FaceUp",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/TrainerHill_Entrance/scripts.inc",
+  "references": {}
+}

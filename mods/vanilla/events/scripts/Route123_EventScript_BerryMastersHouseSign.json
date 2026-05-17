@@ -1,0 +1,19 @@
+{
+  "id": "Route123_EventScript_BerryMastersHouseSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route123/scripts.inc",
+    "sha1": "6ee451eb8a5f0717aed9ff7e71878f845e9727c9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route123/scripts.inc",
+    "rawScript": "msgbox Route123_Text_BerryMastersHouse, MSGBOX_SIGN\n\tend"
+  },
+  "label": "Route123_EventScript_BerryMastersHouseSign",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route123/scripts.inc",
+  "references": {}
+}

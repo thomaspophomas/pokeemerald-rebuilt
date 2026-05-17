@@ -1,0 +1,19 @@
+{
+  "id": "MtPyre_Summit_Text_Grunt4Defeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtPyre_Summit/scripts.inc",
+    "sha1": "2d98d572d50cebb678d972aa421854c983329822"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtPyre_Summit/scripts.inc",
+    "rawScript": ".string \"If you want to join TEAM AQUA that\\n\"\n\t.string \"badly, we can consider it\u2026$\""
+  },
+  "label": "MtPyre_Summit_Text_Grunt4Defeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MtPyre_Summit/scripts.inc",
+  "references": {}
+}

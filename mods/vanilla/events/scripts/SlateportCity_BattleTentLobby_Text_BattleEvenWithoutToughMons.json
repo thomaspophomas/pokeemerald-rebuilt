@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_BattleTentLobby_Text_BattleEvenWithoutToughMons",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+    "sha1": "d8233cb564c951151609565c69259c5bc6039b75"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+    "rawScript": ".string \"You can battle all you want here even\\n\"\n\t.string \"if you don't have any tough POK\u00e9MON.$\""
+  },
+  "label": "SlateportCity_BattleTentLobby_Text_BattleEvenWithoutToughMons",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+  "references": {}
+}

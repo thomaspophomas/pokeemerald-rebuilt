@@ -1,0 +1,24 @@
+{
+  "id": "PetalburgCity_Gym_EventScript_Norman",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "sha1": "6561d8d48957aaba4218ddd404b503098c334ed7"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PetalburgCity_Gym/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tswitch VAR_PETALBURG_GYM_STATE\n\tcase 2, PetalburgCity_Gym_EventScript_NormanNoBadges\n\tcase 3, PetalburgCity_Gym_EventScript_NormanOneBadge\n\tcase 4, PetalburgCity_Gym_EventScript_NormanTwoBadges\n\tcase 5, PetalburgCity_Gym_EventScript_NormanThreeBadges\n\tcase 6, PetalburgCity_Gym_EventScript_NormanBattle\n\tcase 7, PetalburgCity_Gym_EventScript_NormanPostBattle\n\tcase 8, PetalburgCity_Gym_EventScript_NormanRematch\n\tmsgbox PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon, MSGBOX_DEFAULT\n\tclosemessage\n\tswitch VAR_FACING\n\tcase DIR_SOUTH, PetalburgCity_Gym_EventScript_BeginWallyTutorialSouth\n\tcase DIR_NORTH, PetalburgCity_Gym_EventScript_BeginWallyTutorialNorth\n\tcase DIR_WEST, PetalburgCity_Gym_EventScript_BeginWallyTutorialWest\n\tcase DIR_EAST, PetalburgCity_Gym_EventScript_BeginWallyTutorialEast\n\tend"
+  },
+  "label": "PetalburgCity_Gym_EventScript_Norman",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/PetalburgCity_Gym/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FACING",
+      "VAR_PETALBURG_GYM_STATE"
+    ]
+  }
+}

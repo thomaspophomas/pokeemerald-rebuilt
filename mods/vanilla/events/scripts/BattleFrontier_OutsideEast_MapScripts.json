@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_OutsideEast_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "sha1": "daab3e530c74c286237faa58f280f11ef97e663a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, BattleFrontier_OutsideEast_OnResume\n\tmap_script MAP_SCRIPT_ON_TRANSITION, BattleFrontier_OutsideEast_OnTransition\n\t.byte 0"
+  },
+  "label": "BattleFrontier_OutsideEast_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

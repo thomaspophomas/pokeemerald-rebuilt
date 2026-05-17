@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_ProfessorBirchsLab_Text_MayUpgradeSoCool",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "sha1": "46740b86b52b067832880c8dcc7166e917416592"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+    "rawScript": ".string \"MAY: Eheheh!\\p\"\n\t.string \"It's so cool that even my POK\u00e9DEX\\n\"\n\t.string \"is getting updated!\\p\"\n\t.string \"It's because you went out and caught\\n\"\n\t.string \"so many POK\u00e9MON, {PLAYER}{KUN}!$\""
+  },
+  "label": "LittlerootTown_ProfessorBirchsLab_Text_MayUpgradeSoCool",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "RustboroCity_PokemonSchool_EventScript_ChooseBlackboardTopic",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "sha1": "155fc7f1cee833cb06df85a407e5f98f216a928e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+    "rawScript": "message RustboroCity_PokemonSchool_Text_ReadWhichTopic\n\twaitmessage\n\tmultichoicegrid 8, 1, MULTI_STATUS_INFO, 3, FALSE\n\tswitch VAR_RESULT\n\tcase 0, RustboroCity_PokemonSchool_EventScript_Poison\n\tcase 1, RustboroCity_PokemonSchool_EventScript_Paralysis\n\tcase 2, RustboroCity_PokemonSchool_EventScript_Sleep\n\tcase 3, RustboroCity_PokemonSchool_EventScript_Burn\n\tcase 4, RustboroCity_PokemonSchool_EventScript_Freeze\n\tcase 5, RustboroCity_PokemonSchool_EventScript_ExitTopicSelect\n\tcase MULTI_B_PRESSED, RustboroCity_PokemonSchool_EventScript_ExitTopicSelect\n\tend"
+  },
+  "label": "RustboroCity_PokemonSchool_EventScript_ChooseBlackboardTopic",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

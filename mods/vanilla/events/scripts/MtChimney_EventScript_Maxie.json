@@ -1,0 +1,34 @@
+{
+  "id": "MtChimney_EventScript_Maxie",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney/scripts.inc",
+    "sha1": "4d6a7ac7998e07e6d4f244ef13c499194f5b3668"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtChimney/scripts.inc",
+    "rawScript": "lockall\n\tplaybgm MUS_ENCOUNTER_MAGMA, FALSE\n\tmsgbox MtChimney_Text_MeteoriteWillActivateVolcano, MSGBOX_DEFAULT\n\tapplymovement LOCALID_MT_CHIMNEY_MAXIE, Common_Movement_FacePlayer\n\twaitmovement 0\n\tplayse SE_PIN\n\tapplymovement LOCALID_MT_CHIMNEY_MAXIE, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_MT_CHIMNEY_MAXIE, Common_Movement_Delay48\n\twaitmovement 0\n\tmsgbox MtChimney_Text_MaxieIntro, MSGBOX_DEFAULT\n\ttrainerbattle_no_intro TRAINER_MAXIE_MT_CHIMNEY, MtChimney_Text_MaxieDefeat\n\tmsgbox MtChimney_Text_MaxieYouHaventSeenLastOfMagma, MSGBOX_DEFAULT\n\tclosemessage\n\tdelay 30\n\tfadescreen FADE_TO_BLACK\n\tremoveobject LOCALID_MT_CHIMNEY_MAXIE\n\tremoveobject LOCALID_MT_CHIMNEY_MAGMA_GRUNT_1\n\tremoveobject LOCALID_MT_CHIMNEY_TABITHA\n\tremoveobject LOCALID_MT_CHIMNEY_MAGMA_GRUNT_2\n\tsetflag FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA\n\tfadescreen FADE_FROM_BLACK\n\tsetobjectxyperm LOCALID_MT_CHIMNEY_ARCHIE, 10, 12\n\taddobject LOCALID_MT_CHIMNEY_ARCHIE\n\tcall_if_eq VAR_FACING, DIR_EAST, MtChimney_EventScript_ArchieApproachPlayerEast\n\tcall_if_eq VAR_FACING, DIR_NORTH, MtChimney_EventScript_ArchieApproachPlayerNorth\n\tapplymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft\n\twaitmovement 0\n\tmsgbox MtChimney_Text_ArchieThankYou, MSGBOX_DEFAULT\n\tclosemessage\n\tcall_if_eq VAR_FACING, DIR_EAST, MtChimney_EventScript_ArchieExitEast\n\tcall_if_eq VAR_FACING, DIR_NORTH, MtChimney_EventScript_ArchieExitNorth\n\tremoveobject LOCALID_MT_CHIMNEY_ARCHIE\n\tsetflag FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA\n\tsetflag FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY\n\tclearflag FLAG_HIDE_FALLARBOR_HOUSE_PROF_COZMO\n\tsetflag FLAG_HIDE_METEOR_FALLS_1F_1R_COZMO\n\tclearflag FLAG_HIDE_MT_CHIMNEY_LAVA_COOKIE_LADY\n\treleaseall\n\tend"
+  },
+  "label": "MtChimney_EventScript_Maxie",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/MtChimney/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY",
+      "FLAG_HIDE_FALLARBOR_HOUSE_PROF_COZMO",
+      "FLAG_HIDE_METEOR_FALLS_1F_1R_COZMO",
+      "FLAG_HIDE_MT_CHIMNEY_LAVA_COOKIE_LADY",
+      "FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA",
+      "FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA"
+    ],
+    "vars": [
+      "VAR_FACING"
+    ],
+    "trainers": [
+      "TRAINER_MAXIE_MT_CHIMNEY"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Route110_TrickHouseEntrance_EventScript_DoHidingSpotSparkle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "sha1": "9367efc136143832c1697fbcc61fbb296269d396"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+    "rawScript": "setvar VAR_0x8006, 0\n\tdofieldeffectsparkle VAR_0x8004, VAR_0x8005, VAR_0x8006\n\twaitfieldeffect FLDEFF_SPARKLE\n\tdelay 10\n\treturn"
+  },
+  "label": "Route110_TrickHouseEntrance_EventScript_DoHidingSpotSparkle",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHouseEntrance/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,27 @@
+{
+  "id": "Route110_TrickHousePuzzle7_EventScript_UpdateSwitchMetatiles",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle7/scripts.inc",
+    "sha1": "d0faf89c20b52e4b3f4ef5191cdd1e42d9c73feb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle7/scripts.inc",
+    "rawScript": "call_if_set FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_1, Route110_TrickHousePuzzle7_EventScript_SetSwitch1MetatilesOn\n\tcall_if_set FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_2, Route110_TrickHousePuzzle7_EventScript_SetSwitch2MetatilesOn\n\tcall_if_set FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_3, Route110_TrickHousePuzzle7_EventScript_SetSwitch3MetatilesOn\n\tcall_if_set FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_4, Route110_TrickHousePuzzle7_EventScript_SetSwitch4MetatilesOn\n\tcall_if_set FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_5, Route110_TrickHousePuzzle7_EventScript_SetSwitch5MetatilesOn\n\treturn\n\n@ Leftover from R/S, none of the below metatile scripts are ever called"
+  },
+  "label": "Route110_TrickHousePuzzle7_EventScript_UpdateSwitchMetatiles",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHousePuzzle7/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_1",
+      "FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_2",
+      "FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_3",
+      "FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_4",
+      "FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_5"
+    ]
+  }
+}

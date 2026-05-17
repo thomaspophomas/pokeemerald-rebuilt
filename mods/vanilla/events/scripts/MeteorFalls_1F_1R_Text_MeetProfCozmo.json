@@ -1,0 +1,19 @@
+{
+  "id": "MeteorFalls_1F_1R_Text_MeetProfCozmo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "sha1": "9f4ded44922a9eecca2a712d1673b053babe0bae"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+    "rawScript": ".string \"I\u2026 I'm COZMO\u2026\\n\"\n\t.string \"I'm a PROFESSOR\u2026\\p\"\n\t.string \"TEAM MAGMA asked me to guide them\\n\"\n\t.string \"to METEOR FALLS\u2026\\p\"\n\t.string \"But they tricked me.\\n\"\n\t.string \"They even took my METEORITE away\u2026\\p\"\n\t.string \"And then another similar bunch,\\n\"\n\t.string \"TEAM AQUA showed up.\\p\"\n\t.string \"After that\u2026\\n\"\n\t.string \"I don't understand any of it.\\p\"\n\t.string \"But that TEAM MAGMA\u2026\\p\"\n\t.string \"What are they going to do with that\\n\"\n\t.string \"METEORITE at MT. CHIMNEY?$\""
+  },
+  "label": "MeteorFalls_1F_1R_Text_MeetProfCozmo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MeteorFalls_1F_1R/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Route111_Text_MirageTowerClearlyVisible",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": ".string \"I see it!\\n\"\n\t.string \"The tower of sand!\\p\"\n\t.string \"The sand tower they called a mirage\\n\"\n\t.string \"is clearly visible!\\p\"\n\t.string \"But it looks so fragile\u2026\\n\"\n\t.string \"It could crumble away anytime\u2026\\p\"\n\t.string \"I want to go inside it, but I can't\\n\"\n\t.string \"get my courage up for it\u2026$\""
+  },
+  "label": "Route111_Text_MirageTowerClearlyVisible",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {}
+}

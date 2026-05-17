@@ -1,0 +1,24 @@
+{
+  "id": "BattleFrontier_Lounge3_EventScript_ChooseBetAmount",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "sha1": "52169856e2442e0e7ad660050a45dce1a1b2405a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+    "rawScript": "multichoice 20, 4, MULTI_FRONTIER_GAMBLER_BET, FALSE\n\tcopyvar VAR_FRONTIER_GAMBLER_AMOUNT_BET, VAR_RESULT\n\tswitch VAR_RESULT\n\tcase FRONTIER_GAMBLER_BET_5, BattleFrontier_Lounge3_EventScript_Bet5\n\tcase FRONTIER_GAMBLER_BET_10, BattleFrontier_Lounge3_EventScript_Bet10\n\tcase FRONTIER_GAMBLER_BET_15, BattleFrontier_Lounge3_EventScript_Bet15\n\tcase FRONTIER_GAMBLER_BET_CANCEL, BattleFrontier_Lounge3_EventScript_CancelBet\n\tcase MULTI_B_PRESSED, BattleFrontier_Lounge3_EventScript_CancelBet\n\tend"
+  },
+  "label": "BattleFrontier_Lounge3_EventScript_ChooseBetAmount",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_FRONTIER_GAMBLER_AMOUNT_BET",
+      "VAR_RESULT"
+    ]
+  }
+}

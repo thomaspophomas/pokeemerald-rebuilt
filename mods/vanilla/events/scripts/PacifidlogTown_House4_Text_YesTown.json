@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_House4_Text_YesTown",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_House4/scripts.inc",
+    "sha1": "f73026c10489d0f955542625b58858b3adf6b0f1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown_House4/scripts.inc",
+    "rawScript": ".string \"Yes?\\n\"\n\t.string \"YES TOWN?\\p\"\n\t.string \"I've never heard of a place like that.$\""
+  },
+  "label": "PacifidlogTown_House4_Text_YesTown",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PacifidlogTown_House4/scripts.inc",
+  "references": {}
+}

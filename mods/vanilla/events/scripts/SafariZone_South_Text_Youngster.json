@@ -1,0 +1,19 @@
+{
+  "id": "SafariZone_South_Text_Youngster",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/safari_zone.inc",
+    "sha1": "435880c660a34d3e51dcedb348a41731d28af7cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/safari_zone.inc",
+    "rawScript": ".string \"I put a {POKEBLOCK} on the {POKEBLOCK} FEEDER.\\n\"\n\t.string \"But it seems to have disappeared.\\p\"\n\t.string \"I guess POK\u00e9MON must have eaten it\\n\"\n\t.string \"without me noticing.$\""
+  },
+  "label": "SafariZone_South_Text_Youngster",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/safari_zone.inc",
+  "references": {}
+}

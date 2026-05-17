@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleArenaLobby_Text_MatchWasDeclaredDraw",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "sha1": "9504bb75bdf62b80271e2304b4804044c8db502a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+    "rawScript": ".string \"Our match was declared a draw.\\p\"\n\t.string \"When we ran out of time, both my\\n\"\n\t.string \"POK\u00e9MON and the opponent's had about\\l\"\n\t.string \"the same amount of HP left.$\""
+  },
+  "label": "BattleFrontier_BattleArenaLobby_Text_MatchWasDeclaredDraw",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+  "references": {}
+}

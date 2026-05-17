@@ -1,0 +1,19 @@
+{
+  "id": "MagmaHideout_4F_Text_MaxieOhItWasYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_4F/scripts.inc",
+    "sha1": "8f2c61f090f2c324dc4138c5d5ad754b00dfcb48"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_4F/scripts.inc",
+    "rawScript": ".string \"MAXIE: Oh, so it was you?\\p\"\n\t.string \"I've seen you poking around uninvited\\n\"\n\t.string \"here and there\u2026\\p\"\n\t.string \"I get it now!\\n\"\n\t.string \"You must have pulled a cheap stunt!$\""
+  },
+  "label": "MagmaHideout_4F_Text_MaxieOhItWasYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MagmaHideout_4F/scripts.inc",
+  "references": {}
+}

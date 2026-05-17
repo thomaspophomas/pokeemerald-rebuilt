@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "sha1": "f7d69f9f1016d03be5c8c109e78b47e2f4b0505a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+    "rawScript": ".string \"Congratulations!\\p\"\n\t.string \"I did a painting of your POK\u00e9MON to\\n\"\n\t.string \"commemorate its victory\u2026\\p\"\n\t.string \"Well, your POK\u00e9MON's appeals were\\n\"\n\t.string \"so fantastic, it spurred me into\\l\"\n\t.string \"painting better than I usually do.\\l\"\n\t.string \"Look, see?$\""
+  },
+  "label": "LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+  "references": {}
+}

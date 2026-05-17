@@ -1,0 +1,19 @@
+{
+  "id": "CaveOfOrigin_B1F_EventScript_AtMtPyre",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+    "sha1": "fdccb9d45cf308bd7d76aa97e9b5d7eb16b80004"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+    "rawScript": "message CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat\n\twaitmessage\n\tgoto CaveOfOrigin_B1F_EventScript_WheresRayquaza"
+  },
+  "label": "CaveOfOrigin_B1F_EventScript_AtMtPyre",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+  "references": {}
+}

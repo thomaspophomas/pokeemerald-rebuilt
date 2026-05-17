@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_House_Text_WifeWarmingEggInHotSprings",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_House/scripts.inc",
+    "sha1": "ed212e3f1367a1e79fdbed072e9a08e0920ddeb6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_House/scripts.inc",
+    "rawScript": ".string \"My wife's warming an EGG in the hot\\n\"\n\t.string \"springs. This is what she told me.\\p\"\n\t.string \"She left two POK\u00e9MON with the DAY CARE.\\n\"\n\t.string \"And they discovered that EGG!$\""
+  },
+  "label": "LavaridgeTown_House_Text_WifeWarmingEggInHotSprings",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown_House/scripts.inc",
+  "references": {}
+}

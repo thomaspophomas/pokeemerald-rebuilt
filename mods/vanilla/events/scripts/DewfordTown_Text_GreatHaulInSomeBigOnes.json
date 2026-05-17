@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Text_GreatHaulInSomeBigOnes",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown/scripts.inc",
+    "sha1": "e9e724e6d3bba641bcb2d4263fe226ee6c1b4840"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown/scripts.inc",
+    "rawScript": ".string \"Is that right! That's great!\\n\"\n\t.string \"Haul in some big ones!$\""
+  },
+  "label": "DewfordTown_Text_GreatHaulInSomeBigOnes",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown/scripts.inc",
+  "references": {}
+}

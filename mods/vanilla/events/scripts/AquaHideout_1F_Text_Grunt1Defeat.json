@@ -1,0 +1,19 @@
+{
+  "id": "AquaHideout_1F_Text_Grunt1Defeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/AquaHideout_1F/scripts.inc",
+    "sha1": "fb0f9c771050564c49799918dc1d87097cc9380f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/AquaHideout_1F/scripts.inc",
+    "rawScript": ".string \"Grrrrr\u2026\\n\"\n\t.string \"I lost it!$\""
+  },
+  "label": "AquaHideout_1F_Text_Grunt1Defeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/AquaHideout_1F/scripts.inc",
+  "references": {}
+}

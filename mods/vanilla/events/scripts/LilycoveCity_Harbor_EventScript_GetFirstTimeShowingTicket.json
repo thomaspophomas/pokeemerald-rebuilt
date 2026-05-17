@@ -1,0 +1,27 @@
+{
+  "id": "LilycoveCity_Harbor_EventScript_GetFirstTimeShowingTicket",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "sha1": "ffd83f00915b03bfdd96f51950251d00dd19dbcb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_Harbor/scripts.inc",
+    "rawScript": "setvar VAR_TEMP_B, 0\n\tcall_if_eq VAR_TEMP_E, 2, LilycoveCity_Harbor_EventScript_SetFirstTimeShowingEonTicket\n\tcall_if_eq VAR_TEMP_D, 2, LilycoveCity_Harbor_EventScript_SetFirstTimeShowingAuroraTicket\n\tcall_if_eq VAR_TEMP_C, 2, LilycoveCity_Harbor_EventScript_SetFirstTimeShowingOldSeaMap\n\tcall_if_eq VAR_TEMP_9, 2, LilycoveCity_Harbor_EventScript_SetFirstTimeShowingMysticTicket\n\treturn"
+  },
+  "label": "LilycoveCity_Harbor_EventScript_GetFirstTimeShowingTicket",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_Harbor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_9",
+      "VAR_TEMP_B",
+      "VAR_TEMP_C",
+      "VAR_TEMP_D",
+      "VAR_TEMP_E"
+    ]
+  }
+}

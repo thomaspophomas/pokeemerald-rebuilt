@@ -1,0 +1,25 @@
+{
+  "id": "SealedChamber_OuterRoom_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SealedChamber_OuterRoom/scripts.inc",
+    "sha1": "dee4c4e070ebe2e7c86a5d05381bc15f82ba626a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SealedChamber_OuterRoom/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, SealedChamber_OuterRoom_OnResume\n\tmap_script MAP_SCRIPT_ON_TRANSITION, SealedChamber_OuterRoom_OnTransition\n\tmap_script MAP_SCRIPT_ON_LOAD, SealedChamber_OuterRoom_OnLoad\n\t.byte 0"
+  },
+  "label": "SealedChamber_OuterRoom_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/SealedChamber_OuterRoom/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

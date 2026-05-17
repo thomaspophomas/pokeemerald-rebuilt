@@ -1,0 +1,23 @@
+{
+  "id": "MirageTower_2F_SetHoleWarp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MirageTower_2F/scripts.inc",
+    "sha1": "9add93faabf8bf9460a38b74b7e6f73ec5dd2933"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MirageTower_2F/scripts.inc",
+    "rawScript": "setstepcallback STEP_CB_CRACKED_FLOOR\n\tsetholewarp MAP_MIRAGE_TOWER_1F\n\tend"
+  },
+  "label": "MirageTower_2F_SetHoleWarp",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/MirageTower_2F/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_MIRAGE_TOWER_1F"
+    ]
+  }
+}

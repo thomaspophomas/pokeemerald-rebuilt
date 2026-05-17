@@ -1,0 +1,19 @@
+{
+  "id": "LavaridgeTown_Gym_1F_Text_FlanneryDefeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "sha1": "b82ae91ab89ff7156e8125891eff9b7e6a2a260f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+    "rawScript": ".string \"Oh\u2026\\n\"\n\t.string \"I guess I was trying too hard\u2026\\p\"\n\t.string \"I\u2026 I've only recently become\\n\"\n\t.string \"a GYM LEADER.\\p\"\n\t.string \"I tried too hard to be someone\\n\"\n\t.string \"I'm not.\\p\"\n\t.string \"I have to do things my natural way. If\\n\"\n\t.string \"I don't, my POK\u00e9MON will be confused.\\p\"\n\t.string \"Thanks for teaching me that.\\n\"\n\t.string \"For that, you deserve this.$\""
+  },
+  "label": "LavaridgeTown_Gym_1F_Text_FlanneryDefeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+  "references": {}
+}

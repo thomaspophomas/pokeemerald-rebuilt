@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge7_Text_YouDontWantTo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+    "sha1": "384442d4fcbb4c5edeb287c69a9c0ca256ec49b1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+    "rawScript": ".string \"What's that?\\n\"\n\t.string \"You don't want to\u2026\\p\"\n\t.string \"If you want to see how skilled I am,\\n\"\n\t.string \"you come see me anytime!$\""
+  },
+  "label": "BattleFrontier_Lounge7_Text_YouDontWantTo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+  "references": {}
+}

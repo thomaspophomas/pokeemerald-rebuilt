@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_ContestLobby_Text_ExplainContests",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": ".string \"A POK\u00e9MON CONTEST involves four\\n\"\n\t.string \"TRAINERS entering one POK\u00e9MON each\\l\"\n\t.string \"in competitive judging.\\p\"\n\t.string \"A CONTEST has two stages of judging,\\n\"\n\t.string \"primary and secondary.\\p\"\n\t.string \"Primary judging is a popularity poll\\n\"\n\t.string \"involving the audience.\\p\"\n\t.string \"Secondary judging features appeals\\n\"\n\t.string \"by the POK\u00e9MON using their moves.\\p\"\n\t.string \"Plan appeals carefully to earn the\\n\"\n\t.string \"most attention of the JUDGE and\\l\"\n\t.string \"excite the audience.\\l\"\n\t.string \"Do your best to stand out.\\p\"\n\t.string \"The primary and secondary scores are\\n\"\n\t.string \"added at the end.\\p\"\n\t.string \"The POK\u00e9MON garnering the highest\\n\"\n\t.string \"score is declared the winner.$\""
+  },
+  "label": "LilycoveCity_ContestLobby_Text_ExplainContests",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {}
+}

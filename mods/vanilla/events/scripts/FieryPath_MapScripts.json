@@ -1,0 +1,23 @@
+{
+  "id": "FieryPath_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FieryPath/scripts.inc",
+    "sha1": "11242b6ad4afd2b69b6b55772c09b18cf102c261"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FieryPath/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_TRANSITION, FieryPath_OnTransition\n\t.byte 0"
+  },
+  "label": "FieryPath_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/FieryPath/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

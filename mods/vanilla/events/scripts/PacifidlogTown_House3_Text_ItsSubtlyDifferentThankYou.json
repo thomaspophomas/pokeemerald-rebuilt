@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_House3_Text_ItsSubtlyDifferentThankYou",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_House3/scripts.inc",
+    "sha1": "ba89fc962199aede788baf3e29a8d5d208c669cb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown_House3/scripts.inc",
+    "rawScript": ".string \"Oh, so this is a {STR_VAR_1}?\\p\"\n\t.string \"It's sort of like a {STR_VAR_2},\\n\"\n\t.string \"and yet it's subtly different.\\p\"\n\t.string \"Thank you!$\""
+  },
+  "label": "PacifidlogTown_House3_Text_ItsSubtlyDifferentThankYou",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PacifidlogTown_House3/scripts.inc",
+  "references": {}
+}

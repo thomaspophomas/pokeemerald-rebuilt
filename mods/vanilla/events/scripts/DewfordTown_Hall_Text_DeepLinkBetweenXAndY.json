@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Hall_Text_DeepLinkBetweenXAndY",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Hall/scripts.inc",
+    "sha1": "78185d3058996bff2579b5133faf680c4df6865f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Hall/scripts.inc",
+    "rawScript": ".string \"I'm studying up on the hip and trendy\\n\"\n\t.string \"\u201c{STR_VAR_1}\u201d now.\\p\"\n\t.string \"Is it true that there's a deep link\\n\"\n\t.string \"between \u201c{STR_VAR_1}\u201d\\l\"\n\t.string \"and \u201c{STR_VAR_2}\u201d?$\""
+  },
+  "label": "DewfordTown_Hall_Text_DeepLinkBetweenXAndY",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown_Hall/scripts.inc",
+  "references": {}
+}

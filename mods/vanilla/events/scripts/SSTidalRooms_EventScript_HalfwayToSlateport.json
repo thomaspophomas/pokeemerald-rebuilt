@@ -1,0 +1,23 @@
+{
+  "id": "SSTidalRooms_EventScript_HalfwayToSlateport",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalCorridor/scripts.inc",
+    "sha1": "02d0cfdd4cf17b1fcf50d838485aaf7013da6b13"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalCorridor/scripts.inc",
+    "rawScript": "special SetSSTidalFlag\n\tsetvar VAR_SS_TIDAL_STATE, SS_TIDAL_HALFWAY_SLATEPORT\n\tplayse SE_DING_DONG\n\tmsgbox SSTidal_Text_FastCurrentsHopeYouEnjoyVoyage, MSGBOX_DEFAULT\n\treturn"
+  },
+  "label": "SSTidalRooms_EventScript_HalfwayToSlateport",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SSTidalCorridor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_SS_TIDAL_STATE"
+    ]
+  }
+}

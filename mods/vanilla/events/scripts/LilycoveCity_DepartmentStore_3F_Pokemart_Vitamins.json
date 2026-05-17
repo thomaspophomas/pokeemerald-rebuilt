@@ -1,0 +1,28 @@
+{
+  "id": "LilycoveCity_DepartmentStore_3F_Pokemart_Vitamins",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc",
+    "sha1": "7e44e655dce3fffd840dec23146b0ba8b429b3b5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc",
+    "rawScript": ".2byte ITEM_PROTEIN\n\t.2byte ITEM_CALCIUM\n\t.2byte ITEM_IRON\n\t.2byte ITEM_ZINC\n\t.2byte ITEM_CARBOS\n\t.2byte ITEM_HP_UP\n\tpokemartlistend"
+  },
+  "label": "LilycoveCity_DepartmentStore_3F_Pokemart_Vitamins",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc",
+  "references": {
+    "items": [
+      "ITEM_CALCIUM",
+      "ITEM_CARBOS",
+      "ITEM_HP_UP",
+      "ITEM_IRON",
+      "ITEM_PROTEIN",
+      "ITEM_ZINC"
+    ]
+  }
+}

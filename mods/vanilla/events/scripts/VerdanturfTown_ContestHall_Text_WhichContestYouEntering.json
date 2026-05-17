@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_ContestHall_Text_WhichContestYouEntering",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentCorridor/scripts.inc",
+    "sha1": "8936c4f1be90d719d6d99b0c0c3c739ed9ad97c0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentCorridor/scripts.inc",
+    "rawScript": ".string \"Which CONTEST are you entering?\\n\"\n\t.string \"Want a piece of advice?\\p\"\n\t.string \"In any CONTEST, for example, a CUTE\\n\"\n\t.string \"CONTEST, I don't think they judge you\\l\"\n\t.string \"only on cuteness in the first round.\\p\"\n\t.string \"You need to work out ways for raising\\n\"\n\t.string \"POK\u00e9MON better.$\"\n\n@ Unused"
+  },
+  "label": "VerdanturfTown_ContestHall_Text_WhichContestYouEntering",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentCorridor/scripts.inc",
+  "references": {}
+}

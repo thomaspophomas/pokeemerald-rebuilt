@@ -1,0 +1,19 @@
+{
+  "id": "Underwater_SeafloorCavern_EventScript_CheckStolenSub",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Underwater_SeafloorCavern/scripts.inc",
+    "sha1": "0161920db8325168fff9945e78faf08193f0bc50"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Underwater_SeafloorCavern/scripts.inc",
+    "rawScript": "msgbox Underwater_SeafloorCavern_Text_SubExplorer1, MSGBOX_SIGN\n\tend"
+  },
+  "label": "Underwater_SeafloorCavern_EventScript_CheckStolenSub",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Underwater_SeafloorCavern/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge1_Text_EvenICantTell",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+    "sha1": "2478a4558563ac9694ec1f8471095e49ece1c602"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+    "rawScript": ".string \"An expert I am, but even I can't tell\\n\"\n\t.string \"anything about an unhatched POK\u00e9MON!\\p\"\n\t.string \"Show me a POK\u00e9MON!\\n\"\n\t.string \"A POK\u00e9MON is what I need to see!$\""
+  },
+  "label": "BattleFrontier_Lounge1_Text_EvenICantTell",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+  "references": {}
+}

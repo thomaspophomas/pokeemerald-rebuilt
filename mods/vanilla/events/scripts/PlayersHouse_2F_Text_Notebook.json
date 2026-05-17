@@ -1,0 +1,19 @@
+{
+  "id": "PlayersHouse_2F_Text_Notebook",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+    "sha1": "e2d021d5a56c7a155294e7f5fcba3be133f71b33"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+    "rawScript": ".string \"{PLAYER} flipped open the notebook.\\p\"\n\t.string \"ADVENTURE RULE NO. 1\\n\"\n\t.string \"Open the MENU with START.\\p\"\n\t.string \"ADVENTURE RULE NO. 2\\n\"\n\t.string \"Record your progress with SAVE.\\p\"\n\t.string \"The remaining pages are blank\u2026$\""
+  },
+  "label": "PlayersHouse_2F_Text_Notebook",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc",
+  "references": {}
+}

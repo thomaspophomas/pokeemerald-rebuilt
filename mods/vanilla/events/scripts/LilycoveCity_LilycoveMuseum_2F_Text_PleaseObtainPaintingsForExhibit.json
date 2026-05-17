@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_2F_Text_PleaseObtainPaintingsForExhibit",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "sha1": "c41e25282a159070f0eb7fb3edcf1b61cc1cfa19"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "rawScript": ".string \"I beg your pardon. I didn't intend\\n\"\n\t.string \"to monopolize the conversation.\\p\"\n\t.string \"Now, as you are young, and yet\\n\"\n\t.string \"obviously well traveled\u2026\\p\"\n\t.string \"You must encounter lively POK\u00e9MON\\n\"\n\t.string \"and works of art depicting them.\\p\"\n\t.string \"If you were to come across such\\n\"\n\t.string \"a painting, may we ask you to obtain\\l\"\n\t.string \"the artist's permission to exhibit\\l\"\n\t.string \"it here?$\""
+  },
+  "label": "LilycoveCity_LilycoveMuseum_2F_Text_PleaseObtainPaintingsForExhibit",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+  "references": {}
+}

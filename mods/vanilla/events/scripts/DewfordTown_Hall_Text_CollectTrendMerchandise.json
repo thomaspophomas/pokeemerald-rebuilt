@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Hall_Text_CollectTrendMerchandise",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Hall/scripts.inc",
+    "sha1": "78185d3058996bff2579b5133faf680c4df6865f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Hall/scripts.inc",
+    "rawScript": ".string \"I collect official\\n\"\n\t.string \"\u201c{STR_VAR_1}\u201d\\l\"\n\t.string \"licensed merchandise.\\p\"\n\t.string \"I have official\\n\"\n\t.string \"\u201c{STR_VAR_1}\u201d DOLLS\u2026\\p\"\n\t.string \"Official \u201c{STR_VAR_1}\u201d\\n\"\n\t.string \"brand clothing\u2026\\p\"\n\t.string \"And officially licensed\\n\"\n\t.string \"\u201c{STR_VAR_1}\u201d\\l\"\n\t.string \"picture books.\\p\"\n\t.string \"Heheh, I own!\\n\"\n\t.string \"I'm not sharing anything with you!$\""
+  },
+  "label": "DewfordTown_Hall_Text_CollectTrendMerchandise",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown_Hall/scripts.inc",
+  "references": {}
+}

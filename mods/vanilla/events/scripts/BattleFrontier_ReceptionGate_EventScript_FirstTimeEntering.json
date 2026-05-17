@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_ReceptionGate_EventScript_FirstTimeEntering",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "sha1": "5b6e89c53f6e32c0fa6883bd750252f1d739a97b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "rawScript": "lockall\n\tsetvar VAR_HAS_ENTERED_BATTLE_FRONTIER, 1\n\tplayse SE_PIN\n\tapplymovement LOCALID_FRONTIER_RECEPTION_GREETER, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_FRONTIER_RECEPTION_GREETER, Common_Movement_Delay48\n\twaitmovement 0\n\tmsgbox BattleFrontier_ReceptionGate_Text_FirstTimeHereThisWay, MSGBOX_DEFAULT\n\tclosemessage\n\tapplymovement LOCALID_PLAYER, BattleFrontier_ReceptionGate_Movement_PlayerApproachCounter\n\twaitmovement 0\n\tgoto BattleFrontier_ReceptionGate_EventScript_ScottScene\n\tend"
+  },
+  "label": "BattleFrontier_ReceptionGate_EventScript_FirstTimeEntering",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_HAS_ENTERED_BATTLE_FRONTIER"
+    ]
+  }
+}

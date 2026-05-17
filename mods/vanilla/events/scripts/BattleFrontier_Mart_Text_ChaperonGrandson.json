@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Mart_Text_ChaperonGrandson",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Mart/scripts.inc",
+    "sha1": "e8269950fe6ceeeec601d93208e6255555526b6b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Mart/scripts.inc",
+    "rawScript": ".string \"We came here to chaperon our\\n\"\n\t.string \"grandson.\\p\"\n\t.string \"But since we're here, we thought\\n\"\n\t.string \"we should get some souvenirs.$\""
+  },
+  "label": "BattleFrontier_Mart_Text_ChaperonGrandson",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_Mart/scripts.inc",
+  "references": {}
+}

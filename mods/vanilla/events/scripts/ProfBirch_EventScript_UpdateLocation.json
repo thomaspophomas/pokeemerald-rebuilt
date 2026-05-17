@@ -1,0 +1,27 @@
+{
+  "id": "ProfBirch_EventScript_UpdateLocation",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/prof_birch.inc",
+    "sha1": "73235564dd42f1e69875bc9af32cbeb616f5a106"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/prof_birch.inc",
+    "rawScript": "goto_if_eq VAR_PETALBURG_GYM_STATE, 0, Common_EventScript_NopReturn\n\tgoto_if_set FLAG_SYS_GAME_CLEAR, ProfBirch_EventScript_MoveToLab\n\tcall_if_eq VAR_BIRCH_STATE, 0, ProfBirch_EventScript_MoveToLab\n\tcall_if_eq VAR_BIRCH_STATE, 1, ProfBirch_EventScript_MoveToLab\n\tcall_if_eq VAR_BIRCH_STATE, 2, ProfBirch_EventScript_MoveToRoute101\n\tcall_if_eq VAR_BIRCH_STATE, 3, ProfBirch_EventScript_MoveToRoute101\n\tcall_if_eq VAR_BIRCH_STATE, 4, ProfBirch_EventScript_MoveToRoute103\n\tcall_if_eq VAR_BIRCH_STATE, 5, ProfBirch_EventScript_MoveToRoute103\n\tcall_if_eq VAR_BIRCH_STATE, 6, ProfBirch_EventScript_MoveToLab\n\tcall_if_eq VAR_BIRCH_STATE, 7, ProfBirch_EventScript_MoveToLab\n\treturn"
+  },
+  "label": "ProfBirch_EventScript_UpdateLocation",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/prof_birch.inc",
+  "references": {
+    "flags": [
+      "FLAG_SYS_GAME_CLEAR"
+    ],
+    "vars": [
+      "VAR_BIRCH_STATE",
+      "VAR_PETALBURG_GYM_STATE"
+    ]
+  }
+}

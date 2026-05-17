@@ -1,0 +1,19 @@
+{
+  "id": "VerdanturfTown_BattleTentLobby_Text_MonsReluctantToUseDislikedMoves",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "sha1": "be67ab8ba625b73e575c1594a46cbee43b6f03d9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "rawScript": ".string \"If it doesn't like a certain move,\\n\"\n\t.string \"a POK\u00e9MON will be reluctant to use it.\\p\"\n\t.string \"It doesn't matter how strong it is,\\n\"\n\t.string \"either.\\p\"\n\t.string \"For example, a POK\u00e9MON with a GENTLE\\n\"\n\t.string \"nature probably won't enjoy hurting\\l\"\n\t.string \"its opponents.\\p\"\n\t.string \"If it can't seem to live up to its\\n\"\n\t.string \"potential, it's probably failing at\\l\"\n\t.string \"using a disliked move against its will.$\""
+  },
+  "label": "VerdanturfTown_BattleTentLobby_Text_MonsReluctantToUseDislikedMoves",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+  "references": {}
+}

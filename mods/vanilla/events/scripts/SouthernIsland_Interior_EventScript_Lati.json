@@ -1,0 +1,34 @@
+{
+  "id": "SouthernIsland_Interior_EventScript_Lati",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SouthernIsland_Interior/scripts.inc",
+    "sha1": "6ed339e41064219d030f00f9c7e62ccbfde31212"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SouthernIsland_Interior/scripts.inc",
+    "rawScript": "goto_if_set FLAG_TEMP_2, SouthernIsland_Interior_EventScript_Sign\n\tgoto_if_set FLAG_DEFEATED_LATIAS_OR_LATIOS, SouthernIsland_Interior_EventScript_Sign\n\tgoto_if_set FLAG_CAUGHT_LATIAS_OR_LATIOS, SouthernIsland_Interior_EventScript_Sign\n\tgoto_if_unset FLAG_ENABLE_SHIP_SOUTHERN_ISLAND, SouthernIsland_Interior_EventScript_Sign\n\tsetflag FLAG_ENCOUNTERED_LATIAS_OR_LATIOS\n\tsetflag FLAG_TEMP_2\n\tspecial SpawnCameraObject\n\tapplymovement LOCALID_CAMERA, SouthernIsland_Interior_Movement_CameraPanUp\n\twaitmovement 0\n\tdelay 50\n\twaitse\n\tplaymoncry VAR_TEMP_4, CRY_MODE_NORMAL\n\tdelay 30\n\twaitmoncry\n\taddobject LOCALID_SOUTHERN_ISLAND_LATI\n\tdelay 30\n\tapplymovement LOCALID_CAMERA, SouthernIsland_Interior_Movement_CameraPanDown\n\tapplymovement LOCALID_SOUTHERN_ISLAND_LATI, SouthernIsland_Interior_Movement_LatiApproach\n\twaitmovement 0\n\tdelay 50\n\tspecial RemoveCameraObject\n\tsetvar VAR_LAST_TALKED, LOCALID_SOUTHERN_ISLAND_LATI\n\tcall_if_eq VAR_ROAMER_POKEMON, 0, SouthernIsland_Interior_EventScript_SetLatiosBattleVars\n\tcall_if_ne VAR_ROAMER_POKEMON, 0, SouthernIsland_Interior_EventScript_SetLatiasBattleVars\n\tsetflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecial BattleSetup_StartLatiBattle\n\tclearflag FLAG_SYS_CTRL_OBJ_DELETE\n\tspecialvar VAR_RESULT, GetBattleOutcome\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_WON, SouthernIsland_Interior_EventScript_LatiDefeated\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_RAN, SouthernIsland_Interior_EventScript_RanFromLati\n\tgoto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, SouthernIsland_Interior_EventScript_RanFromLati\n\tsetflag FLAG_CAUGHT_LATIAS_OR_LATIOS\n\treleaseall\n\tend"
+  },
+  "label": "SouthernIsland_Interior_EventScript_Lati",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SouthernIsland_Interior/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_CAUGHT_LATIAS_OR_LATIOS",
+      "FLAG_DEFEATED_LATIAS_OR_LATIOS",
+      "FLAG_ENABLE_SHIP_SOUTHERN_ISLAND",
+      "FLAG_ENCOUNTERED_LATIAS_OR_LATIOS",
+      "FLAG_SYS_CTRL_OBJ_DELETE",
+      "FLAG_TEMP_2"
+    ],
+    "vars": [
+      "VAR_LAST_TALKED",
+      "VAR_RESULT",
+      "VAR_ROAMER_POKEMON",
+      "VAR_TEMP_4"
+    ]
+  }
+}

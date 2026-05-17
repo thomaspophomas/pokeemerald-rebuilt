@@ -1,0 +1,23 @@
+{
+  "id": "Route134_EventScript_Reyna",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route134/scripts.inc",
+    "sha1": "11ceab276decd5668ebaeb1c0249bcd11554123e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route134/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_REYNA, Route134_Text_ReynaIntro, Route134_Text_ReynaDefeat\n\tmsgbox Route134_Text_ReynaPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route134_EventScript_Reyna",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route134/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_REYNA"
+    ]
+  }
+}

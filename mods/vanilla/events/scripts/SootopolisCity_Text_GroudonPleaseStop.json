@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Text_GroudonPleaseStop",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity/scripts.inc",
+    "sha1": "0fd5e56dbeafa6489d341250827bdd34317deea4"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity/scripts.inc",
+    "rawScript": ".string \"MAXIE: G\u2026 GROUDON\u2026\\n\"\n\t.string \"Please! Stop what you're doing!\\p\"\n\t.string \"I know the extent of your power now!\\p\"\n\t.string \"If you keep going, all HOENN, not just\\n\"\n\t.string \"SOOTOPOLIS, will be utterly ruined!$\""
+  },
+  "label": "SootopolisCity_Text_GroudonPleaseStop",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity/scripts.inc",
+  "references": {}
+}

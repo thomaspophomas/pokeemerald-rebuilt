@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Gym_Text_EdwardoDefeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/scripts.inc",
+    "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Gym/scripts.inc",
+    "rawScript": ".string \"It was too much of a load for me\\n\"\n\t.string \"to bear\u2026$\""
+  },
+  "label": "FortreeCity_Gym_Text_EdwardoDefeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_Gym/scripts.inc",
+  "references": {}
+}

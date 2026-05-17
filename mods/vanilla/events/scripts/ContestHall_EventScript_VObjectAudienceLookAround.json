@@ -1,0 +1,19 @@
+{
+  "id": "ContestHall_EventScript_VObjectAudienceLookAround",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": "turnvobject 0, DIR_SOUTH\n\tturnvobject 2, DIR_SOUTH\n\tturnvobject 4, DIR_EAST\n\tturnvobject 6, DIR_SOUTH\n\tturnvobject 8, DIR_SOUTH\n\tturnvobject 10, DIR_SOUTH\n\tturnvobject 12, DIR_SOUTH\n\tturnvobject 14, DIR_SOUTH\n\tturnvobject 16, DIR_SOUTH\n\tturnvobject 18, DIR_SOUTH\n\tturnvobject 20, DIR_EAST\n\tturnvobject 22, DIR_EAST\n\tturnvobject 25, DIR_EAST\n\tturnvobject 27, DIR_WEST\n\tturnvobject 28, DIR_EAST\n\tdelay 10\n\tturnvobject 0, DIR_EAST\n\tturnvobject 2, DIR_EAST\n\tturnvobject 4, DIR_EAST\n\tturnvobject 6, DIR_EAST\n\tturnvobject 8, DIR_EAST\n\tturnvobject 10, DIR_WEST\n\tturnvobject 12, DIR_WEST\n\tturnvobject 14, DIR_WEST\n\tturnvobject 16, DIR_WEST\n\tturnvobject 18, DIR_WEST\n\tturnvobject 20, DIR_SOUTH\n\tturnvobject 22, DIR_SOUTH\n\tturnvobject 25, DIR_NORTH\n\tturnvobject 27, DIR_NORTH\n\tturnvobject 28, DIR_NORTH\n\tdelay 10\n\tturnvobject 1, DIR_NORTH\n\tturnvobject 3, DIR_NORTH\n\tturnvobject 5, DIR_NORTH\n\tturnvobject 7, DIR_NORTH\n\tturnvobject 9, DIR_EAST\n\tturnvobject 11, DIR_NORTH\n\tturnvobject 15, DIR_NORTH\n\tturnvobject 13, DIR_NORTH\n\tturnvobject 17, DIR_NORTH\n\tturnvobject 19, DIR_NORTH\n\tturnvobject 21, DIR_WEST\n\tturnvobject 23, DIR_WEST\n\tturnvobject 24, DIR_WEST\n\tturnvobject 26, DIR_EAST\n\tturnvobject 29, DIR_WEST\n\tturnvobject 30, DIR_WEST\n\tdelay 10\n\tturnvobject 1, DIR_EAST\n\tturnvobject 3, DIR_EAST\n\tturnvobject 5, DIR_EAST\n\tturnvobject 7, DIR_EAST\n\tturnvobject 9, DIR_EAST\n\tturnvobject 11, DIR_WEST\n\tturnvobject 15, DIR_WEST\n\tturnvobject 13, DIR_WEST\n\tturnvobject 17, DIR_WEST\n\tturnvobject 19, DIR_WEST\n\tturnvobject 21, DIR_SOUTH\n\tturnvobject 23, DIR_SOUTH\n\tturnvobject 24, DIR_SOUTH\n\tturnvobject 26, DIR_NORTH\n\tturnvobject 29, DIR_NORTH\n\tturnvobject 30, DIR_NORTH\n\tdelay 10\n\treturn"
+  },
+  "label": "ContestHall_EventScript_VObjectAudienceLookAround",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {}
+}

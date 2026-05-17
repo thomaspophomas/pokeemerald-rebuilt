@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_Text_CanUsePCToStoreItems",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown/scripts.inc",
+    "sha1": "1080f800cf76b9b83f18b7f2985fe56f5fe40ab0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown/scripts.inc",
+    "rawScript": ".string \"If you use a PC, you can store items\\n\"\n\t.string \"and POK\u00e9MON.\\p\"\n\t.string \"The power of science is staggering!$\""
+  },
+  "label": "LittlerootTown_Text_CanUsePCToStoreItems",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LittlerootTown/scripts.inc",
+  "references": {}
+}

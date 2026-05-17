@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceLobby_Text_NatureAndMovesKeyHere",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "sha1": "7c3f05f937eeecedccf6c1fcf6084a8482c41efd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+    "rawScript": ".string \"Hmm\u2026\\p\"\n\t.string \"It appears that the nature of POK\u00e9MON\\n\"\n\t.string \"and the moves that they have been\\l\"\n\t.string \"taught are the keys to battle here.\\p\"\n\t.string \"To be more precise, it's how well\\n\"\n\t.string \"the moves match the nature of\\l\"\n\t.string \"the POK\u00e9MON.\\p\"\n\t.string \"If your POK\u00e9MON is in trouble and\\n\"\n\t.string \"unable to live up to its potential,\\l\"\n\t.string \"you may need to examine how well\\l\"\n\t.string \"its moves match its nature.$\""
+  },
+  "label": "BattleFrontier_BattlePalaceLobby_Text_NatureAndMovesKeyHere",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Route103_EventScript_Rival",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route103/scripts.inc",
+    "sha1": "cdbe6074bf0bdfa44494ccf1457b18c3de43e0de"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route103/scripts.inc",
+    "rawScript": "lockall\n\tcheckplayergender\n\tgoto_if_eq VAR_RESULT, MALE, Route103_EventScript_RivalMay\n\tgoto_if_eq VAR_RESULT, FEMALE, Route103_EventScript_RivalBrendan\n\tend"
+  },
+  "label": "Route103_EventScript_Rival",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route103/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

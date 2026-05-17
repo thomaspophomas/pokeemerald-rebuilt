@@ -1,0 +1,19 @@
+{
+  "id": "Route113_GlassWorkshop_Text_NotEnoughAshToMakeItem",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "sha1": "6a7101e66439e9abedcc55c8fc60b573807258b0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route113_GlassWorkshop/scripts.inc",
+    "rawScript": ".string \"A {STR_VAR_1}, huff-puff?\\p\"\n\t.string \"There's not enough ash here to make\\n\"\n\t.string \"that, though, huff-puff.\\p\"\n\t.string \"Let's see\u2026 {STR_VAR_2} is the number of steps\\n\"\n\t.string \"you'll need to walk through volcanic ash\\l\"\n\t.string \"for me to make that item, huff-puff.\\p\"\n\t.string \"Which item would you rather have me\\n\"\n\t.string \"make instead, huff-puff?$\""
+  },
+  "label": "Route113_GlassWorkshop_Text_NotEnoughAshToMakeItem",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route113_GlassWorkshop/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "83e7f64af75d58f3a58fed2f76931a1ea46151b5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"Just like people, there are male and\\n\"\n\t.string \"female POK\u00e9MON.\\p\"\n\t.string \"But no one seems to have any idea how\\n\"\n\t.string \"they're different.$\""
+  },
+  "label": "RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

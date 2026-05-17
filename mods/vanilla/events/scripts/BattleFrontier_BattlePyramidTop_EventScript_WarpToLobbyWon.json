@@ -1,0 +1,23 @@
+{
+  "id": "BattleFrontier_BattlePyramidTop_EventScript_WarpToLobbyWon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "sha1": "6256c29eca306dafcaec0dabbacc64547c474e58"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+    "rawScript": "frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_WON\n\twarp MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_LOBBY, 7, 13\n\twaitstate\n\tend"
+  },
+  "label": "BattleFrontier_BattlePyramidTop_EventScript_WarpToLobbyWon",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_LOBBY"
+    ]
+  }
+}

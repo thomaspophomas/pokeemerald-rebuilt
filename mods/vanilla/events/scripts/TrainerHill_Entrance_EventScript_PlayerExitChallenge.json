@@ -1,0 +1,23 @@
+{
+  "id": "TrainerHill_Entrance_EventScript_PlayerExitChallenge",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "sha1": "cbfca2354a8d8ed8d68e2612fb0b6f2525008a5f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "rawScript": "closemessage\n\tapplymovement LOCALID_PLAYER, TrainerHill_Entrance_Movement_PushPlayerBackFromCounter\n\twaitmovement 0\n\tsetvar VAR_TRAINER_HILL_IS_ACTIVE, 0\n\tspecial HealPlayerParty\n\treleaseall"
+  },
+  "label": "TrainerHill_Entrance_EventScript_PlayerExitChallenge",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/TrainerHill_Entrance/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TRAINER_HILL_IS_ACTIVE"
+    ]
+  }
+}

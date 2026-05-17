@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserYourTeamIsAdmirable",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "sha1": "c4392c432f84fdbe0613ac4b067366a168a52056"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+    "rawScript": ".string \"SPENSER: Well, that was some display!\\n\"\n\t.string \"Even fully unleashed, my brethren\\l\"\n\t.string \"could not overpower you.\\p\"\n\t.string \"Your team spirit is truly admirable!\\p\"\n\t.string \"Here!\\n\"\n\t.string \"Bring me that thing, will you?$\""
+  },
+  "label": "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserYourTeamIsAdmirable",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc",
+  "references": {}
+}

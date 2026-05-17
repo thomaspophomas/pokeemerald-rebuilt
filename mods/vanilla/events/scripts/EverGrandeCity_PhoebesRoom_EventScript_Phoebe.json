@@ -1,0 +1,26 @@
+{
+  "id": "EverGrandeCity_PhoebesRoom_EventScript_Phoebe",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc",
+    "sha1": "19093003402affcdd9afdda6a47a9abe8524d0e2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_DEFEATED_ELITE_4_PHOEBE, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech\n\tplaybgm MUS_ENCOUNTER_ELITE_FOUR, FALSE\n\tmsgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT\n\ttrainerbattle_no_intro TRAINER_PHOEBE, EverGrandeCity_PhoebesRoom_Text_Defeat\n\tgoto EverGrandeCity_PhoebesRoom_EventScript_Defeated\n\tend"
+  },
+  "label": "EverGrandeCity_PhoebesRoom_EventScript_Phoebe",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_ELITE_4_PHOEBE"
+    ],
+    "trainers": [
+      "TRAINER_PHOEBE"
+    ]
+  }
+}

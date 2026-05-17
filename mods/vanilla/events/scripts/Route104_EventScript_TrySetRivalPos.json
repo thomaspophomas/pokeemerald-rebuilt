@@ -1,0 +1,27 @@
+{
+  "id": "Route104_EventScript_TrySetRivalPos",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104/scripts.inc",
+    "sha1": "10d25047426798be70cda2d9503387bbf8458d85"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104/scripts.inc",
+    "rawScript": "goto_if_ge VAR_BOARD_BRINEY_BOAT_STATE, 1, Route104_EventScript_DontSetRivalPos\n\tgoto_if_set FLAG_MET_RIVAL_RUSTBORO, Route104_EventScript_DontSetRivalPos\n\tgoto_if_unset FLAG_REGISTER_RIVAL_POKENAV, Route104_EventScript_DontSetRivalPos\n\tsetobjectxyperm LOCALID_ROUTE104_RIVAL, 17, 52\n\treturn"
+  },
+  "label": "Route104_EventScript_TrySetRivalPos",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route104/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_MET_RIVAL_RUSTBORO",
+      "FLAG_REGISTER_RIVAL_POKENAV"
+    ],
+    "vars": [
+      "VAR_BOARD_BRINEY_BOAT_STATE"
+    ]
+  }
+}

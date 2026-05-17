@@ -1,0 +1,19 @@
+{
+  "id": "RusturfTunnel_Text_MikeIntro",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/scripts.inc",
+    "sha1": "76035185b0aabddf11657305417168db4c1bb93d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RusturfTunnel/scripts.inc",
+    "rawScript": ".string \"What do you call a wild man up in the\\n\"\n\t.string \"mountains? A mountain man, right?\\p\"\n\t.string \"So why don't they call a POK\u00e9MON in\\n\"\n\t.string \"the mountains a mountain POK\u00e9MON?$\""
+  },
+  "label": "RusturfTunnel_Text_MikeIntro",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RusturfTunnel/scripts.inc",
+  "references": {}
+}

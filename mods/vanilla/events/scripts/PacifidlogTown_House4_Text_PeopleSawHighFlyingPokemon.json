@@ -1,0 +1,19 @@
+{
+  "id": "PacifidlogTown_House4_Text_PeopleSawHighFlyingPokemon",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/PacifidlogTown_House4/scripts.inc",
+    "sha1": "f73026c10489d0f955542625b58858b3adf6b0f1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/PacifidlogTown_House4/scripts.inc",
+    "rawScript": ".string \"People were saying they saw a POK\u00e9MON\\n\"\n\t.string \"flying high above HOENN.\\p\"\n\t.string \"Is it flying around all the time?\\n\"\n\t.string \"Doesn't it need to rest somewhere?$\""
+  },
+  "label": "PacifidlogTown_House4_Text_PeopleSawHighFlyingPokemon",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/PacifidlogTown_House4/scripts.inc",
+  "references": {}
+}

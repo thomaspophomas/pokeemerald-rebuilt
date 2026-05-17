@@ -1,0 +1,19 @@
+{
+  "id": "Route116_Text_CanYouHelpMeFindGlasses",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route116/scripts.inc",
+    "sha1": "414d7bb5c4246d6317dd973dc816983566be8cc6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route116/scripts.inc",
+    "rawScript": ".string \"I dropped my glasses\u2026\\n\"\n\t.string \"Can you help me find them?$\""
+  },
+  "label": "Route116_Text_CanYouHelpMeFindGlasses",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route116/scripts.inc",
+  "references": {}
+}

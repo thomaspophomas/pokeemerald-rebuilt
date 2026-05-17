@@ -1,0 +1,23 @@
+{
+  "id": "BerryBlender_EventScript_ExpertMCheckGiveBerry",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_blender.inc",
+    "sha1": "725a59adf87efef28ea2801442a6d7fe0f2e6791"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_blender.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmsgbox BerryBlender_Text_LoveMakingPokeblocks, MSGBOX_DEFAULT\n\tspecialvar VAR_RESULT, PlayerHasBerries\n\tgoto_if_eq VAR_RESULT, TRUE, BerryBlender_EventScript_ExpertMPlayerHasBerries\n\tgoto_if_eq VAR_RESULT, FALSE, BerryBlender_EventScript_ExpertMNoBerries\n\tend"
+  },
+  "label": "BerryBlender_EventScript_ExpertMCheckGiveBerry",
+  "exported": false,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/berry_blender.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

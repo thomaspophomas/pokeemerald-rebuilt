@@ -1,0 +1,19 @@
+{
+  "id": "MossdeepCity_Text_WantKingsRockStevenGaveMe",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MossdeepCity/scripts.inc",
+    "sha1": "33f0f7f83a475484aaca395542c6bd65a6f2dd45"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MossdeepCity/scripts.inc",
+    "rawScript": ".string \"I got this from STEVEN, but I don't\\n\"\n\t.string \"know what it's good for.\\p\"\n\t.string \"I think it's called KING'S ROCK.\\n\"\n\t.string \"Do you want it?$\""
+  },
+  "label": "MossdeepCity_Text_WantKingsRockStevenGaveMe",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MossdeepCity/scripts.inc",
+  "references": {}
+}

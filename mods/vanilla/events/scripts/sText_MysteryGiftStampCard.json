@@ -1,0 +1,19 @@
+{
+  "id": "sText_MysteryGiftStampCard",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_stamp_card.inc",
+    "sha1": "c14d1b4be68ca1d15cae9db09bc818e49dd2feb8"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_stamp_card.inc",
+    "rawScript": ".string \"Thank you for using the STAMP CARD\\n\"\n\t.string \"System.\\p\"\n\t.string \"You have {STR_VAR_1} more to collect to\\n\"\n\t.string \"fill your STAMP CARD.$\""
+  },
+  "label": "sText_MysteryGiftStampCard",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_stamp_card.inc",
+  "references": {}
+}

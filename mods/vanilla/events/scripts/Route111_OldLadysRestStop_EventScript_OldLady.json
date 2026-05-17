@@ -1,0 +1,23 @@
+{
+  "id": "Route111_OldLadysRestStop_EventScript_OldLady",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111_OldLadysRestStop/scripts.inc",
+    "sha1": "8f697cdc3624ba6bc26589cc0a0d5649ae645122"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111_OldLadysRestStop/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tmsgbox Route111_OldLadysRestStop_Text_RestUpHere, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, Route111_OldLadysRestStop_EventScript_Rest\n\tgoto_if_eq VAR_RESULT, NO, Route111_OldLadysRestStop_EventScript_DeclineRest\n\tend"
+  },
+  "label": "Route111_OldLadysRestStop_EventScript_OldLady",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route111_OldLadysRestStop/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

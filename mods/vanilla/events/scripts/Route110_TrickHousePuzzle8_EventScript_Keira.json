@@ -1,0 +1,23 @@
+{
+  "id": "Route110_TrickHousePuzzle8_EventScript_Keira",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_TrickHousePuzzle8/scripts.inc",
+    "sha1": "f94444749573ed3ddadd71757d68f34093f97ad2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_TrickHousePuzzle8/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_KEIRA, Route110_TrickHousePuzzle8_Text_KeiraIntro, Route110_TrickHousePuzzle8_Text_KeiraDefeat\n\tmsgbox Route110_TrickHousePuzzle8_Text_KeiraPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route110_TrickHousePuzzle8_EventScript_Keira",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route110_TrickHousePuzzle8/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_KEIRA"
+    ]
+  }
+}

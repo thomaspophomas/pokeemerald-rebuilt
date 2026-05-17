@@ -1,0 +1,19 @@
+{
+  "id": "MagmaHideout_3F_1R_Text_Grunt16Defeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MagmaHideout_3F_1R/scripts.inc",
+    "sha1": "474fc38ac5a7f662f15777828471aa95dd813607"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MagmaHideout_3F_1R/scripts.inc",
+    "rawScript": ".string \"Oh, no!\\n\"\n\t.string \"You're not to be trusted at all!$\""
+  },
+  "label": "MagmaHideout_3F_1R_Text_Grunt16Defeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MagmaHideout_3F_1R/scripts.inc",
+  "references": {}
+}

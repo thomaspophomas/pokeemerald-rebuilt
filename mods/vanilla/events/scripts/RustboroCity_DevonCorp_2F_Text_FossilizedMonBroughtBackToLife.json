@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "sha1": "7e0aa6a4df50ead64287578a24ba19b07cafbb02"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "rawScript": ".string \"Thanks for waiting!\\p\"\n\t.string \"Your fossilized POK\u00e9MON has been\\n\"\n\t.string \"brought back to life!\\p\"\n\t.string \"The fossil was an ancient POK\u00e9MON.\\n\"\n\t.string \"{STR_VAR_2}, it was!$\""
+  },
+  "label": "RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": "Route112_CableCarStation_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route112_CableCarStation/scripts.inc",
+    "sha1": "52163a924cedb2545f8ddfd323e7075d7bcc20d6"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route112_CableCarStation/scripts.inc",
+    "rawScript": "setescapewarp MAP_ROUTE112, 28, 28\n\tcall_if_eq VAR_CABLE_CAR_STATION_STATE, 2, Route112_CableCarStation_EventScript_MoveAttendantAside\n\tend"
+  },
+  "label": "Route112_CableCarStation_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Route112_CableCarStation/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_CABLE_CAR_STATION_STATE"
+    ],
+    "maps": [
+      "MAP_ROUTE112"
+    ]
+  }
+}

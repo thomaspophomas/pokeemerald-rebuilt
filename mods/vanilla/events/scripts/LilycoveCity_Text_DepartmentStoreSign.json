@@ -1,0 +1,19 @@
+{
+  "id": "LilycoveCity_Text_DepartmentStoreSign",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity/scripts.inc",
+    "sha1": "88d2d726de381f98070edef9248c27c660f01ab5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity/scripts.inc",
+    "rawScript": ".string \"LILYCOVE DEPARTMENT STORE\\p\"\n\t.string \"\u201cOverflowing with great merchandise\\n\"\n\t.string \"and excitement!\\p\"\n\t.string \"\u201cA great place to find that something\\n\"\n\t.string \"you need!\u201d$\""
+  },
+  "label": "LilycoveCity_Text_DepartmentStoreSign",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/LilycoveCity/scripts.inc",
+  "references": {}
+}

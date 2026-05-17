@@ -1,0 +1,26 @@
+{
+  "id": "Route112_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route112/scripts.inc",
+    "sha1": "2e1afc791f1e05fe9c3dcec0234b3a587c6a64fc"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route112/scripts.inc",
+    "rawScript": "clearflag FLAG_FORCE_MIRAGE_TOWER_VISIBLE\n\tsetvar VAR_JAGGED_PASS_ASH_WEATHER, 0\n\tend"
+  },
+  "label": "Route112_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/Route112/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_FORCE_MIRAGE_TOWER_VISIBLE"
+    ],
+    "vars": [
+      "VAR_JAGGED_PASS_ASH_WEATHER"
+    ]
+  }
+}

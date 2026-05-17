@@ -1,0 +1,23 @@
+{
+  "id": "MarineCave_End_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MarineCave_End/scripts.inc",
+    "sha1": "9fc74c6c75db5dcc1953c7f9fbd123e07dd022d5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MarineCave_End/scripts.inc",
+    "rawScript": "call_if_unset FLAG_DEFEATED_KYOGRE, MarineCave_End_EventScript_ShowKyogre\n\tend"
+  },
+  "label": "MarineCave_End_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/MarineCave_End/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DEFEATED_KYOGRE"
+    ]
+  }
+}

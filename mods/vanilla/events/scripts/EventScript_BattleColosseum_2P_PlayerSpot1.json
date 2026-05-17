@@ -1,0 +1,19 @@
+{
+  "id": "EventScript_BattleColosseum_2P_PlayerSpot1",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "setvar VAR_0x8005, 1\n\tspecial ColosseumPlayerSpotTriggered\n\tend"
+  },
+  "label": "EventScript_BattleColosseum_2P_PlayerSpot1",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {}
+}

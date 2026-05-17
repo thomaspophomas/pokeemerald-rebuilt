@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+    "sha1": "9809ed86adf690116a3ed12f4cbacd0ff01d19b9"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+    "rawScript": ".string \"WALLACE is rumored to be the toughest\\n\"\n\t.string \"TRAINER in the whole HOENN region.\\p\"\n\t.string \"This town's GYM is led by the TRAINER\\n\"\n\t.string \"who taught WALLACE.\\p\"\n\t.string \"But the ELITE FOUR\u2026 They're said to be\\n\"\n\t.string \"even stronger than WALLACE's mentor.\\p\"\n\t.string \"How strong could they be?$\""
+  },
+  "label": "SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+  "references": {}
+}

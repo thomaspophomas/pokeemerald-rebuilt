@@ -1,0 +1,29 @@
+{
+  "id": "DewfordTown_House2_EventScript_Man",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_House2/scripts.inc",
+    "sha1": "93fb692bf27406f6c25707aa58cba84b4217d77c"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_House2/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_RECEIVED_SILK_SCARF, DewfordTown_House2_EventScript_ExplainSilkScarf\n\tmsgbox DewfordTown_House2_Text_WantYouToHaveSilkScarf, MSGBOX_DEFAULT\n\tgiveitem ITEM_SILK_SCARF\n\tgoto_if_eq VAR_RESULT, FALSE, DewfordTown_House2_EventScript_NoRoomForScarf\n\tsetflag FLAG_RECEIVED_SILK_SCARF\n\trelease\n\tend"
+  },
+  "label": "DewfordTown_House2_EventScript_Man",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/DewfordTown_House2/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_SILK_SCARF"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_SILK_SCARF"
+    ]
+  }
+}

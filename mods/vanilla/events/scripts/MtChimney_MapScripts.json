@@ -1,0 +1,24 @@
+{
+  "id": "MtChimney_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney/scripts.inc",
+    "sha1": "4d6a7ac7998e07e6d4f244ef13c499194f5b3668"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtChimney/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_RESUME, MtChimney_OnResume\n\tmap_script MAP_SCRIPT_ON_TRANSITION, MtChimney_OnTransition\n\t.byte 0"
+  },
+  "label": "MtChimney_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/MtChimney/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_RESUME",
+      "MAP_SCRIPT_ON_TRANSITION"
+    ]
+  }
+}

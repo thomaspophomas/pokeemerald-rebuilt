@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_OutsideEast_Text_OddTreeHereSeemsToWiggle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "sha1": "daab3e530c74c286237faa58f280f11ef97e663a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "rawScript": ".string \"Excuse me, young one.\\n\"\n\t.string \"Have you good eyesight?\\p\"\n\t.string \"There is an odd tree past here, and to\\n\"\n\t.string \"my tired eyes it seems to wiggle.$\""
+  },
+  "label": "BattleFrontier_OutsideEast_Text_OddTreeHereSeemsToWiggle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": "DewfordTown_PokemonCenter_2F_MapScripts",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_PokemonCenter_2F/scripts.inc",
+    "sha1": "e8060e6d280e94e01c89154a27083bf4dff73b85"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_PokemonCenter_2F/scripts.inc",
+    "rawScript": "map_script MAP_SCRIPT_ON_FRAME_TABLE, CableClub_OnFrame\n\tmap_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, CableClub_OnWarp\n\tmap_script MAP_SCRIPT_ON_LOAD, CableClub_OnLoad\n\tmap_script MAP_SCRIPT_ON_TRANSITION, CableClub_OnTransition\n\t.byte 0\n\n@ The below 3 are unused and leftover from RS"
+  },
+  "label": "DewfordTown_PokemonCenter_2F_MapScripts",
+  "exported": true,
+  "kind": "map_scripts",
+  "sourceFile": "data/maps/DewfordTown_PokemonCenter_2F/scripts.inc",
+  "references": {
+    "maps": [
+      "MAP_SCRIPT_ON_FRAME_TABLE",
+      "MAP_SCRIPT_ON_LOAD",
+      "MAP_SCRIPT_ON_TRANSITION",
+      "MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE"
+    ]
+  }
+}

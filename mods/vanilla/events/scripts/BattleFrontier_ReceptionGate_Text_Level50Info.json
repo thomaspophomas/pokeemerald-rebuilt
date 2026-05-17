@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ReceptionGate_Text_Level50Info",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "sha1": "5b6e89c53f6e32c0fa6883bd750252f1d739a97b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "rawScript": ".string \"The Level 50 course is open to POK\u00e9MON\\n\"\n\t.string \"up to and including Level 50.\\p\"\n\t.string \"Please keep in mind, however, that\\n\"\n\t.string \"no TRAINER you face will have any\\l\"\n\t.string \"POK\u00e9MON below Level 50.\\p\"\n\t.string \"This course is the entry level for\\n\"\n\t.string \"battles at the BATTLE FRONTIER.\\p\"\n\t.string \"To begin, we hope you will challenge\\n\"\n\t.string \"this course.$\""
+  },
+  "label": "BattleFrontier_ReceptionGate_Text_Level50Info",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+  "references": {}
+}

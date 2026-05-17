@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_ReceptionGate_Text_ExchangeCornerInfo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "sha1": "5b6e89c53f6e32c0fa6883bd750252f1d739a97b"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "rawScript": ".string \"The EXCHANGE SERVICE CORNER is near\\n\"\n\t.string \"the BATTLE TOWER.\\p\"\n\t.string \"The Battle Points you have earned in\\n\"\n\t.string \"the BATTLE FRONTIER may be exchanged\\l\"\n\t.string \"for fabulous prizes there.$\""
+  },
+  "label": "BattleFrontier_ReceptionGate_Text_ExchangeCornerInfo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+  "references": {}
+}

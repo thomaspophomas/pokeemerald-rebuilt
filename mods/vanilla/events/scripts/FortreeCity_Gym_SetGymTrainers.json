@@ -1,0 +1,28 @@
+{
+  "id": "FortreeCity_Gym_SetGymTrainers",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/set_gym_trainers.inc",
+    "sha1": "90019f7a2097712cc57c824c9118423a5a8171bd"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/set_gym_trainers.inc",
+    "rawScript": "settrainerflag TRAINER_JARED\n\tsettrainerflag TRAINER_FLINT\n\tsettrainerflag TRAINER_ASHLEY\n\tsettrainerflag TRAINER_EDWARDO\n\tsettrainerflag TRAINER_HUMBERTO\n\tsettrainerflag TRAINER_DARIUS\n\treturn"
+  },
+  "label": "FortreeCity_Gym_SetGymTrainers",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/scripts/set_gym_trainers.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_ASHLEY",
+      "TRAINER_DARIUS",
+      "TRAINER_EDWARDO",
+      "TRAINER_FLINT",
+      "TRAINER_HUMBERTO",
+      "TRAINER_JARED"
+    ]
+  }
+}

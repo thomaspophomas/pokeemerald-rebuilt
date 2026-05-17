@@ -1,0 +1,25 @@
+{
+  "id": "LilycoveCity_ContestLobby_EventScript_EnterMasterRank",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/contest_hall.inc",
+    "sha1": "5b9b6f90eb577e38c08c026d8692a0a7b7213bc1"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/contest_hall.inc",
+    "rawScript": "setvar VAR_CONTEST_RANK, CONTEST_RANK_MASTER\n\tgoto LilycoveCity_ContestLobby_EventScript_ChooseContestType\n\tend\n\n@ The multichoice selection IDs are equal to the CATEGORY values\n@ So rather than list the cases they just copy VAR_RESULT for a valid selection into VAR_CONTEST_CATEGORY"
+  },
+  "label": "LilycoveCity_ContestLobby_EventScript_EnterMasterRank",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/contest_hall.inc",
+  "references": {
+    "vars": [
+      "VAR_CONTEST_CATEGORY",
+      "VAR_CONTEST_RANK",
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Route111_Text_ThatWasShockingSandRainedDown",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route111/scripts.inc",
+    "sha1": "e978e5dc56093462cb44ab3d315b4583f03de136"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route111/scripts.inc",
+    "rawScript": ".string \"Whoa\u2026\\n\"\n\t.string \"That was shocking.\\p\"\n\t.string \"Sand rained down in chunks all of\\n\"\n\t.string \"a sudden.\\p\"\n\t.string \"What was it like inside?\\n\"\n\t.string \"Were there sandy ghosts and such?$\""
+  },
+  "label": "Route111_Text_ThatWasShockingSandRainedDown",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route111/scripts.inc",
+  "references": {}
+}

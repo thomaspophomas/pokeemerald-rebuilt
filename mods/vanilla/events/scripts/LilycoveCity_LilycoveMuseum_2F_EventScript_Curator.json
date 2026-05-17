@@ -1,0 +1,23 @@
+{
+  "id": "LilycoveCity_LilycoveMuseum_2F_EventScript_Curator",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "sha1": "c41e25282a159070f0eb7fb3edcf1b61cc1cfa19"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+    "rawScript": "lockall\n\tgoto_if_set FLAG_RECEIVED_GLASS_ORNAMENT, LilycoveCity_LilycoveMuseum_2F_EventScript_ReceivedGlassOrnament\n\tspecialvar VAR_0x8004, CountPlayerMuseumPaintings\n\tswitch VAR_0x8004\n\tcase 1, LilycoveCity_LilycoveMuseum_2F_EventScript_AddedPainting\n\tcase 2, LilycoveCity_LilycoveMuseum_2F_EventScript_AddedPainting\n\tcase 3, LilycoveCity_LilycoveMuseum_2F_EventScript_AddedPainting\n\tcase 4, LilycoveCity_LilycoveMuseum_2F_EventScript_AddedPainting\n\tcase 5, LilycoveCity_LilycoveMuseum_2F_EventScript_ThankPlayer\n\tmsgbox LilycoveCity_LilycoveMuseum_2F_Text_WishToFillExhibit, MSGBOX_NPC\n\tend"
+  },
+  "label": "LilycoveCity_LilycoveMuseum_2F_EventScript_Curator",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_GLASS_ORNAMENT"
+    ]
+  }
+}

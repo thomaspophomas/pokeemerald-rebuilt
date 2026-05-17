@@ -1,0 +1,26 @@
+{
+  "id": "BattleFrontier_BattleArenaBattleRoom_EventScript_SetUpRoomObjects",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "sha1": "d0a70f09e21302da78823f02966e03f9b41a3a1a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "rawScript": "hideobjectat LOCALID_ARENA_BATTLE_PLAYER, MAP_BATTLE_FRONTIER_BATTLE_ARENA_BATTLE_ROOM\n\tremoveobject LOCALID_ARENA_BATTLE_OPPONENT\n\tcall BattleFrontier_BattleDomeBattleRoom_EventScript_SetPlayerGfx\n\tapplymovement LOCALID_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_SetInvisible\n\tsetvar VAR_TEMP_1, 1\n\tend"
+  },
+  "label": "BattleFrontier_BattleArenaBattleRoom_EventScript_SetUpRoomObjects",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_1"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_ARENA_BATTLE_ROOM"
+    ]
+  }
+}

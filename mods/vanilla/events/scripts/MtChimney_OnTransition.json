@@ -1,0 +1,23 @@
+{
+  "id": "MtChimney_OnTransition",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MtChimney/scripts.inc",
+    "sha1": "4d6a7ac7998e07e6d4f244ef13c499194f5b3668"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MtChimney/scripts.inc",
+    "rawScript": "setvar VAR_JAGGED_PASS_ASH_WEATHER, 1\n\tend"
+  },
+  "label": "MtChimney_OnTransition",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/MtChimney/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_JAGGED_PASS_ASH_WEATHER"
+    ]
+  }
+}

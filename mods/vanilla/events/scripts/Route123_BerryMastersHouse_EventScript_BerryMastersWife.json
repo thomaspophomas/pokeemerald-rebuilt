@@ -1,0 +1,26 @@
+{
+  "id": "Route123_BerryMastersHouse_EventScript_BerryMastersWife",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route123_BerryMastersHouse/scripts.inc",
+    "sha1": "9a0e063a546e4fa501fad1644e1e6356f5e7917a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route123_BerryMastersHouse/scripts.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tdotimebasedevents\n\tgoto_if_set FLAG_DAILY_BERRY_MASTERS_WIFE, Route123_BerryMastersHouse_EventScript_ReceivedWifeBerryToday\n\tmsgbox Route123_BerryMastersHouse_Text_HeardAGoodSayingLately, MSGBOX_DEFAULT\n\tsetvar VAR_0x8004, EASY_CHAT_TYPE_GOOD_SAYING\n\tcall Common_ShowEasyChatScreen\n\tlock\n\tfaceplayer\n\tgoto_if_eq VAR_RESULT, TRUE, Route123_BerryMastersHouse_EventScript_GavePhrase\n\tgoto_if_eq VAR_RESULT, FALSE, Route123_BerryMastersHouse_EventScript_CancelPhrase\n\tend"
+  },
+  "label": "Route123_BerryMastersHouse_EventScript_BerryMastersWife",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route123_BerryMastersHouse/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_DAILY_BERRY_MASTERS_WIFE"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

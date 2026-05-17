@@ -1,0 +1,24 @@
+{
+  "id": "BattlePyramid_TrainerBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "sha1": "a6f6792ac2bc39a05028dabd4e88f5984d84d4a5"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "rawScript": "trainerbattle TRAINER_BATTLE_PYRAMID, TRAINER_PHILLIP, LOCALID_NONE, BattleFacility_TrainerBattle_PlaceholderText, BattleFacility_TrainerBattle_PlaceholderText\n\tpyramid_showhint\n\twaitmessage\n\twaitbuttonpress\n\tclosemessage\n\treleaseall\n\tend"
+  },
+  "label": "BattlePyramid_TrainerBattle",
+  "exported": true,
+  "kind": "script",
+  "sourceFile": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_BATTLE_PYRAMID",
+      "TRAINER_PHILLIP"
+    ]
+  }
+}

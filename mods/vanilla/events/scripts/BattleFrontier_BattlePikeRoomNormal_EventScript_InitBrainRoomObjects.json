@@ -1,0 +1,26 @@
+{
+  "id": "BattleFrontier_BattlePikeRoomNormal_EventScript_InitBrainRoomObjects",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/battle_pike.inc",
+    "sha1": "f01ae67ca8ba2e8860c192c38f413ebd89aa5204"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/battle_pike.inc",
+    "rawScript": "setvar VAR_TEMP_4, 1\n\tturnobject LOCALID_PLAYER, DIR_NORTH\n\thideobjectat LOCALID_PIKE_ROOM_NPC_1, MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_NORMAL  @ Pike Queen hidden initially\n\tend"
+  },
+  "label": "BattleFrontier_BattlePikeRoomNormal_EventScript_InitBrainRoomObjects",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/battle_pike.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_4"
+    ],
+    "maps": [
+      "MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_NORMAL"
+    ]
+  }
+}

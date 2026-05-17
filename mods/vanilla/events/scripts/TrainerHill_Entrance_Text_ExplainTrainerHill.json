@@ -1,0 +1,19 @@
+{
+  "id": "TrainerHill_Entrance_Text_ExplainTrainerHill",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "sha1": "cbfca2354a8d8ed8d68e2612fb0b6f2525008a5f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "rawScript": ".string \"Here at the TRAINER HILL, we conduct\\n\"\n\t.string \"an event called the Time Attack.\\p\"\n\t.string \"It is a race that measures how long\\n\"\n\t.string \"you take to reach our owner on\\l\"\n\t.string \"the rooftop from this counter.\\p\"\n\t.string \"The fastest times are posted on\\n\"\n\t.string \"the Time Board--try competing with\\l\"\n\t.string \"your friends.\\p\"\n\t.string \"In TRAINER battles along the way,\\n\"\n\t.string \"neither Exp. Points nor money will\\l\"\n\t.string \"be awarded.$\"\n\n@ Unused"
+  },
+  "label": "TrainerHill_Entrance_Text_ExplainTrainerHill",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/TrainerHill_Entrance/scripts.inc",
+  "references": {}
+}

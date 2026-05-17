@@ -1,0 +1,19 @@
+{
+  "id": "MauvilleCity_Text_AllSortsOfPeopleComeThrough",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/MauvilleCity/scripts.inc",
+    "sha1": "4f32a1b8bb0ba3aacb4065aa9478be71f1c27055"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/MauvilleCity/scripts.inc",
+    "rawScript": ".string \"The roads of this town stretch north\\n\"\n\t.string \"and south, and east and west.\\p\"\n\t.string \"Because of that, we get all sorts of\\n\"\n\t.string \"people coming through.$\""
+  },
+  "label": "MauvilleCity_Text_AllSortsOfPeopleComeThrough",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/MauvilleCity/scripts.inc",
+  "references": {}
+}

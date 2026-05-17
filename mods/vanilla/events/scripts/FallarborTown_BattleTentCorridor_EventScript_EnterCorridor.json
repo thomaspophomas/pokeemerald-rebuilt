@@ -1,0 +1,26 @@
+{
+  "id": "FallarborTown_BattleTentCorridor_EventScript_EnterCorridor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+    "sha1": "163b9c21282cae11ce5f396c305aff448fc9ab48"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+    "rawScript": "lockall\n\tsetvar VAR_TEMP_0, 1\n\tapplymovement LOCALID_FALLARBOR_TENT_CORRIDOR_ATTENDANT, FallarborTown_BattleTentCorridor_Movement_WalkToDoor\n\tapplymovement LOCALID_PLAYER, FallarborTown_BattleTentCorridor_Movement_WalkToDoor\n\twaitmovement 0\n\topendoor 2, 1\n\twaitdooranim\n\tapplymovement LOCALID_FALLARBOR_TENT_CORRIDOR_ATTENDANT, FallarborTown_BattleTentCorridor_Movement_AttendantEnterDoor\n\tapplymovement LOCALID_PLAYER, FallarborTown_BattleTentCorridor_Movement_PlayerEnterDoor\n\twaitmovement 0\n\tclosedoor 2, 1\n\twaitdooranim\n\tsetvar VAR_0x8006, 0\n\twarp MAP_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM, 4, 4\n\twaitstate\n\treleaseall\n\tend"
+  },
+  "label": "FallarborTown_BattleTentCorridor_EventScript_EnterCorridor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/FallarborTown_BattleTentCorridor/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_TEMP_0"
+    ],
+    "maps": [
+      "MAP_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM"
+    ]
+  }
+}

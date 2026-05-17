@@ -1,0 +1,19 @@
+{
+  "id": "SootopolisCity_Gym_B1F_Text_ConniePostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+    "sha1": "e71da18f579da173413d5f8c5027d9e9c4f14d20"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+    "rawScript": ".string \"I'll tell you something good.\\p\"\n\t.string \"If you want to reach JUAN, you\\n\"\n\t.string \"need to walk on each floor tile once.$\""
+  },
+  "label": "SootopolisCity_Gym_B1F_Text_ConniePostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "TrainerHill_Roof_Text_YouFinallyCameBravo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "sha1": "cbfca2354a8d8ed8d68e2612fb0b6f2525008a5f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/TrainerHill_Entrance/scripts.inc",
+    "rawScript": ".string \"Hm! Hm!\\p\"\n\t.string \"You finally came!\\n\"\n\t.string \"Yes, you have arrived!\\p\"\n\t.string \"Wait! Don't say it!\\n\"\n\t.string \"I know why you came all the way\\l\"\n\t.string \"here by yourself!\\p\"\n\t.string \"You wanted to see me, the owner\\n\"\n\t.string \"of the TRAINER HILL, because\u2026\\p\"\n\t.string \"You want to form a tag team with me!\\n\"\n\t.string \"Wa-hoo!\\p\"\n\t.string \"\u2026Uh?\\n\"\n\t.string \"That's not it?\\p\"\n\t.string \"Anyway, I watched you on your way up.\\n\"\n\t.string \"Marvelous battling! Bravo, indeed!$\""
+  },
+  "label": "TrainerHill_Roof_Text_YouFinallyCameBravo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/TrainerHill_Entrance/scripts.inc",
+  "references": {}
+}

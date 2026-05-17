@@ -1,0 +1,23 @@
+{
+  "id": "Route104_MrBrineysHouse_EventScript_WhereAreWeBound",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+    "sha1": "1685496df25ec35fb97de14e44b3ea41b1d1c6db"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+    "rawScript": "message Route104_MrBrineysHouse_Text_WhereAreWeBound\n\twaitmessage\n\tmultichoicedefault 20, 8, MULTI_BRINEY_OFF_DEWFORD, 1, FALSE\n\tswitch VAR_RESULT\n\tcase 0, Route104_MrBrineysHouse_EventScript_SailToDewford\n\tcase 1, Route104_MrBrineysHouse_EventScript_DeclineSailing\n\tcase MULTI_B_PRESSED, Route104_MrBrineysHouse_EventScript_DeclineSailing\n\tend"
+  },
+  "label": "Route104_MrBrineysHouse_EventScript_WhereAreWeBound",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route104_MrBrineysHouse/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

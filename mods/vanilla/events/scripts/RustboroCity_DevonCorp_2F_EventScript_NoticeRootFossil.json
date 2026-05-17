@@ -1,0 +1,26 @@
+{
+  "id": "RustboroCity_DevonCorp_2F_EventScript_NoticeRootFossil",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "sha1": "7e0aa6a4df50ead64287578a24ba19b07cafbb02"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+    "rawScript": "closemessage\n\tplayse SE_PIN\n\tapplymovement LOCALID_FOSSIL_SCIENTIST, Common_Movement_ExclamationMark\n\twaitmovement 0\n\tapplymovement LOCALID_FOSSIL_SCIENTIST, Common_Movement_Delay48\n\twaitmovement 0\n\tmsgbox RustboroCity_DevonCorp_2F_Text_WantToBringFossilBackToLife, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, RustboroCity_DevonCorp_2F_EventScript_DeclineGiveFossil\n\tcheckitem ITEM_CLAW_FOSSIL\n\tgoto_if_eq VAR_RESULT, TRUE, RustboroCity_DevonCorp_2F_EventScript_ChooseFossil\n\tgoto RustboroCity_DevonCorp_2F_EventScript_GiveRootFossil\n\tend"
+  },
+  "label": "RustboroCity_DevonCorp_2F_EventScript_NoticeRootFossil",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_2F/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ],
+    "items": [
+      "ITEM_CLAW_FOSSIL"
+    ]
+  }
+}

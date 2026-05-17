@@ -1,0 +1,23 @@
+{
+  "id": "ContestHall_EventScript_GetRandomAudienceGfxId",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/ContestHall/scripts.inc",
+    "sha1": "1975dda1f6df6ad0ef2b0d81c28afe4508469870"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/ContestHall/scripts.inc",
+    "rawScript": "setvar VAR_RESULT, 32\n\tspecial GenerateContestRand\n\taddvar VAR_RESULT, 1\n\tswitch VAR_RESULT\n\tcase 1, ContestHall_EventScript_RandomAudienceNinjaBoy\n\tcase 2, ContestHall_EventScript_RandomAudienceTwin\n\tcase 3, ContestHall_EventScript_RandomAudienceBoy1\n\tcase 4, ContestHall_EventScript_RandomAudienceGirl1\n\tcase 5, ContestHall_EventScript_RandomAudienceGirl2\n\tcase 6, ContestHall_EventScript_RandomAudienceLittleBoy\n\tcase 7, ContestHall_EventScript_RandomAudienceGirl\n\tcase 8, ContestHall_EventScript_RandomAudienceBoy3\n\tcase 9, ContestHall_EventScript_RandomAudienceGirl3\n\tcase 10, ContestHall_EventScript_RandomAudienceRichBoy\n\tcase 11, ContestHall_EventScript_RandomAudienceFatMan\n\tcase 12, ContestHall_EventScript_RandomAudiencePokefanF\n\tcase 13, ContestHall_EventScript_RandomAudienceMan1\n\tcase 14, ContestHall_EventScript_RandomAudienceWoman2\n\tcase 15, ContestHall_EventScript_RandomAudienceExpertM\n\tcase 16, ContestHall_EventScript_RandomAudienceExpertF\n\tcase 17, ContestHall_EventScript_RandomAudiencePokefanM\n\tcase 18, ContestHall_EventScript_RandomAudienceWoman4\n\tcase 19, ContestHall_EventScript_RandomAudienceCook\n\tcase 20, ContestHall_EventScript_RandomAudienceLass\n\tcase 21, ContestHall_EventScript_RandomAudienceOldWoman\n\tcase 22, ContestHall_EventScript_RandomAudienceCamper\n\tcase 23, ContestHall_EventScript_RandomAudiencePicnicker\n\tcase 24, ContestHall_EventScript_RandomAudienceMan3\n\tcase 25, ContestHall_EventScript_RandomAudienceWoman5\n\tcase 26, ContestHall_EventScript_RandomAudienceYoungster\n\tcase 27, ContestHall_EventScript_RandomAudienceBugCatcher\n\tcase 28, ContestHall_EventScript_RandomAudiencePsychicM\n\tcase 29, ContestHall_EventScript_RandomAudienceSchoolKidM\n\tcase 30, ContestHall_EventScript_RandomAudienceBlackBelt\n\tcase 31, ContestHall_EventScript_RandomAudienceBeauty\n\tcase 32, ContestHall_EventScript_RandomAudienceScientist1\n\tend"
+  },
+  "label": "ContestHall_EventScript_GetRandomAudienceGfxId",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/ContestHall/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

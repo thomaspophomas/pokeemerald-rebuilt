@@ -1,0 +1,19 @@
+{
+  "id": "Route110_SeasideCyclingRoadSouthEntrance_Text_TooDangerousToWalk",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.inc",
+    "sha1": "76a2b9429a0b6a610f3225434b5a09de5ae8146a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.inc",
+    "rawScript": ".string \"Sorry, you can't walk on CYCLING\\n\"\n\t.string \"ROAD. It's too dangerous.\\p\"\n\t.string \"Please come back with a BIKE.$\""
+  },
+  "label": "Route110_SeasideCyclingRoadSouthEntrance_Text_TooDangerousToWalk",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.inc",
+  "references": {}
+}

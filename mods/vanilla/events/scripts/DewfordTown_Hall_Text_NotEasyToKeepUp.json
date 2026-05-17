@@ -1,0 +1,19 @@
+{
+  "id": "DewfordTown_Hall_Text_NotEasyToKeepUp",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/DewfordTown_Hall/scripts.inc",
+    "sha1": "78185d3058996bff2579b5133faf680c4df6865f"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/DewfordTown_Hall/scripts.inc",
+    "rawScript": ".string \"What?!\\n\"\n\t.string \"Is that so?!\\p\"\n\t.string \"It's not easy for an older fellow like\\n\"\n\t.string \"me to keep up with trends!$\""
+  },
+  "label": "DewfordTown_Hall_Text_NotEasyToKeepUp",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/DewfordTown_Hall/scripts.inc",
+  "references": {}
+}

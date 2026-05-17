@@ -1,0 +1,23 @@
+{
+  "id": "Route129_EventScript_Clarence",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route129/scripts.inc",
+    "sha1": "dafae748e3f67cdad094b16d6d5b95c90cbfcb13"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route129/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_CLARENCE, Route129_Text_ClarenceIntro, Route129_Text_ClarenceDefeat\n\tmsgbox Route129_Text_ClarencePostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "Route129_EventScript_Clarence",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route129/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_CLARENCE"
+    ]
+  }
+}

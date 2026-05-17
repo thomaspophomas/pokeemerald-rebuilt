@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Gym_Text_JaredDefeat",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity_Gym/scripts.inc",
+    "sha1": "d594b208e9a97dfc753961f267bedf3682e3e8b2"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity_Gym/scripts.inc",
+    "rawScript": ".string \"You\u2026\\n\"\n\t.string \"You're strong\u2026$\""
+  },
+  "label": "FortreeCity_Gym_Text_JaredDefeat",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity_Gym/scripts.inc",
+  "references": {}
+}

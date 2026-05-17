@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_DevonCorp_3F_Text_MrStoneWantYouToHaveThis",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+    "sha1": "c9490be6666cd7ea155cae31641c765560806127"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+    "rawScript": ".string \"MR. STONE: Now, you should know that\\n\"\n\t.string \"I am a great PRESIDENT.\\p\"\n\t.string \"So, I'd never be so cheap as to ask\\n\"\n\t.string \"a favor for nothing in return.\\p\"\n\t.string \"That's why I want you to have this!$\""
+  },
+  "label": "RustboroCity_DevonCorp_3F_Text_MrStoneWantYouToHaveThis",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+  "references": {}
+}

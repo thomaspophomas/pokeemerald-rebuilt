@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_Lounge2_EventScript_BufferBattlePalace",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "sha1": "d4d4f7c0802f8118a63eaf9b68eb6bcff146ff4d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "rawScript": "bufferstdstring STR_VAR_1, STDSTRING_BATTLE_PALACE\n\treturn"
+  },
+  "label": "BattleFrontier_Lounge2_EventScript_BufferBattlePalace",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+  "references": {}
+}

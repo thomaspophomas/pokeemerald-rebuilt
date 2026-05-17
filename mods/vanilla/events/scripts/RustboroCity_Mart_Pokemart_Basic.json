@@ -1,0 +1,32 @@
+{
+  "id": "RustboroCity_Mart_Pokemart_Basic",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Mart/scripts.inc",
+    "sha1": "064cba37df0c93452bb5e6cc75752460d861c58d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Mart/scripts.inc",
+    "rawScript": ".2byte ITEM_POKE_BALL\n\t.2byte ITEM_POTION\n\t.2byte ITEM_SUPER_POTION\n\t.2byte ITEM_ANTIDOTE\n\t.2byte ITEM_PARALYZE_HEAL\n\t.2byte ITEM_ESCAPE_ROPE\n\t.2byte ITEM_REPEL\n\t.2byte ITEM_X_SPEED\n\t.2byte ITEM_X_ATTACK\n\t.2byte ITEM_X_DEFEND\n\tpokemartlistend"
+  },
+  "label": "RustboroCity_Mart_Pokemart_Basic",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/maps/RustboroCity_Mart/scripts.inc",
+  "references": {
+    "items": [
+      "ITEM_ANTIDOTE",
+      "ITEM_ESCAPE_ROPE",
+      "ITEM_PARALYZE_HEAL",
+      "ITEM_POKE_BALL",
+      "ITEM_POTION",
+      "ITEM_REPEL",
+      "ITEM_SUPER_POTION",
+      "ITEM_X_ATTACK",
+      "ITEM_X_DEFEND",
+      "ITEM_X_SPEED"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MysticTicket_Obtained",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/gift_mystic_ticket.inc",
+    "sha1": "84698c0b8e6ebaadb3177e0b3abacdbd74a89f9a"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/gift_mystic_ticket.inc",
+    "rawScript": "vmessage sText_MysticTicketThankYou\n\twaitmessage\n\twaitbuttonpress\n\trelease\n\tend"
+  },
+  "label": "MysticTicket_Obtained",
+  "exported": false,
+  "kind": "script",
+  "sourceFile": "data/scripts/gift_mystic_ticket.inc",
+  "references": {}
+}

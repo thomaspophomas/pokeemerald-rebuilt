@@ -1,0 +1,23 @@
+{
+  "id": "SSTidalRooms_EventScript_Naomi",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SSTidalRooms/scripts.inc",
+    "sha1": "1953df649981f24c9b39a0b7b26b1ed8339d7249"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SSTidalRooms/scripts.inc",
+    "rawScript": "trainerbattle_single TRAINER_NAOMI, SSTidalRooms_Text_NaomiIntro, SSTidalRooms_Text_NaomiDefeat\n\tmsgbox SSTidalRooms_Text_NaomiPostBattle, MSGBOX_AUTOCLOSE\n\tend"
+  },
+  "label": "SSTidalRooms_EventScript_Naomi",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/SSTidalRooms/scripts.inc",
+  "references": {
+    "trainers": [
+      "TRAINER_NAOMI"
+    ]
+  }
+}

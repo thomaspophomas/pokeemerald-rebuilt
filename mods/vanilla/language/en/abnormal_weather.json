@@ -1,0 +1,20 @@
+{
+  "id": "en:abnormal_weather",
+  "domain": "language",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/text/abnormal_weather.inc",
+    "sha1": "a92d7d72b7d246fffd7bf9d8561307e2b840419b"
+  },
+  "legacy": {
+    "kind": "asm_text_labels",
+    "sourcePath": "data/text/abnormal_weather.inc"
+  },
+  "language": "en",
+  "group": "abnormal_weather",
+  "runtime": false,
+  "strings": {
+    "gText_AbnormalWeatherEnded_Rain": ".string \"The massive downpour appears to\\n\"\n\t.string \"have stopped\u2026$\"",
+    "gText_AbnormalWeatherEnded_Sun": ".string \"The intense sunshine appears to\\n\"\n\t.string \"have subsided\u2026$\""
+  }
+}

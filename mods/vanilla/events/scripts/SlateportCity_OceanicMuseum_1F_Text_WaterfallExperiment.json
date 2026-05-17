@@ -1,0 +1,19 @@
+{
+  "id": "SlateportCity_OceanicMuseum_1F_Text_WaterfallExperiment",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "sha1": "7a1e00c78bbfbd0fbd6eb59a84a4d4e7114e4261"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+    "rawScript": ".string \"A red ball is bobbing up and down\\n\"\n\t.string \"inside a glass vessel.\\p\"\n\t.string \"\u201cThis is an experiment simulating a\\n\"\n\t.string \"WATERFALL using the ball's buoyancy.\u201d$\""
+  },
+  "label": "SlateportCity_OceanicMuseum_1F_Text_WaterfallExperiment",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "FortreeCity_Text_PokemonThatEvolveWhenTraded",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/FortreeCity/scripts.inc",
+    "sha1": "a1f53b6d8b894e2f69fc9a5c4e1509ef9ab3ce09"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/FortreeCity/scripts.inc",
+    "rawScript": ".string \"There are POK\u00e9MON that evolve when\\n\"\n\t.string \"you trade them! That's what I heard.$\""
+  },
+  "label": "FortreeCity_Text_PokemonThatEvolveWhenTraded",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/FortreeCity/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BattleFrontier_BattleTowerMultiCorridor_EventScript_SetLinkPlayerGfx",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/BattleFrontier_BattleTowerMultiCorridor/scripts.inc",
+    "sha1": "cd76ae7932d793ea3d83f2ba21546149e29084cf"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/BattleFrontier_BattleTowerMultiCorridor/scripts.inc",
+    "rawScript": "special SetBattleTowerLinkPlayerGfx\n\treturn"
+  },
+  "label": "BattleFrontier_BattleTowerMultiCorridor_EventScript_SetLinkPlayerGfx",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/BattleFrontier_BattleTowerMultiCorridor/scripts.inc",
+  "references": {}
+}

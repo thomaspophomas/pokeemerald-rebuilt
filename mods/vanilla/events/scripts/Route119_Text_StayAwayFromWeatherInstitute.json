@@ -1,0 +1,19 @@
+{
+  "id": "Route119_Text_StayAwayFromWeatherInstitute",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route119/scripts.inc",
+    "sha1": "576fe3fab09726df20b1bbf3016bc5306f0e0f3d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route119/scripts.inc",
+    "rawScript": ".string \"We're standing lookout here.\\p\"\n\t.string \"Hey, you! Stay away from the WEATHER\\n\"\n\t.string \"INSTITUTE. It's not safe.$\""
+  },
+  "label": "Route119_Text_StayAwayFromWeatherInstitute",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route119/scripts.inc",
+  "references": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "RustboroCity_Flat2_2F_Text_GoingToWorkAtDevonToo",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RustboroCity_Flat2_2F/scripts.inc",
+    "sha1": "3f278233f807a1de34242578a0c22234655ecef0"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RustboroCity_Flat2_2F/scripts.inc",
+    "rawScript": ".string \"My daddy's working at the CORPORATION.\\p\"\n\t.string \"When I grow up, I'm going to work for\\n\"\n\t.string \"DEVON, too.$\""
+  },
+  "label": "RustboroCity_Flat2_2F_Text_GoingToWorkAtDevonToo",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/RustboroCity_Flat2_2F/scripts.inc",
+  "references": {}
+}

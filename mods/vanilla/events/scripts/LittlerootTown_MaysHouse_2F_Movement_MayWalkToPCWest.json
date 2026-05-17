@@ -1,0 +1,19 @@
+{
+  "id": "LittlerootTown_MaysHouse_2F_Movement_MayWalkToPCWest",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "sha1": "e014a444dcf389c78773768633900402b1862edb"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+    "rawScript": "walk_up\n\twalk_right\n\twalk_right\n\twalk_in_place_faster_up\n\tstep_end\n\n@ Unused, the player is already facing this direction so its unneeded"
+  },
+  "label": "LittlerootTown_MaysHouse_2F_Movement_MayWalkToPCWest",
+  "exported": false,
+  "kind": "movement",
+  "sourceFile": "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc",
+  "references": {}
+}

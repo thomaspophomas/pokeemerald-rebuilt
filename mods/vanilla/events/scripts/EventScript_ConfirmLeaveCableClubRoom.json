@@ -1,0 +1,23 @@
+{
+  "id": "EventScript_ConfirmLeaveCableClubRoom",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/cable_club.inc",
+    "sha1": "c6e3c968990dfc8de6af21fa08c10758f95236a3"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/cable_club.inc",
+    "rawScript": "msgbox Text_TerminateLinkConfirmation, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, EventScript_TerminateLink\n\terasebox 0, 0, 29, 19\n\treleaseall\n\tend"
+  },
+  "label": "EventScript_ConfirmLeaveCableClubRoom",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/cable_club.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "BerryTree_Text_PutAwayBerry",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/berry_tree.inc",
+    "sha1": "749b44e862850f19e689ac4622065bdedf7c8393"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/berry_tree.inc",
+    "rawScript": ".string \"{PLAYER} put away the {STR_VAR_1}\\n\"\n\t.string \"in the BAG's BERRIES POCKET.\\p\"\n\t.string \"The soil returned to its soft and\\n\"\n\t.string \"loamy state.$\""
+  },
+  "label": "BerryTree_Text_PutAwayBerry",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/scripts/berry_tree.inc",
+  "references": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": "SootopolisCity_PokemonCenter_1F_EventScript_DoubleEdgeTutor",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/scripts/move_tutors.inc",
+    "sha1": "9c188f9a9477e783c3dda838ce8c2873c44b9398"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/scripts/move_tutors.inc",
+    "rawScript": "lock\n\tfaceplayer\n\tgoto_if_set FLAG_MOVE_TUTOR_TAUGHT_DOUBLE_EDGE, MoveTutor_EventScript_DoubleEdgeTaught\n\tmsgbox MoveTutor_Text_DoubleEdgeTeach, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_DoubleEdgeDeclined\n\tcall MoveTutor_EventScript_CanOnlyBeLearnedOnce\n\tgoto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_DoubleEdgeDeclined\n\tmsgbox MoveTutor_Text_DoubleEdgeWhichMon, MSGBOX_DEFAULT\n\tsetvar VAR_0x8005, TUTOR_MOVE_DOUBLE_EDGE\n\tcall MoveTutor_EventScript_OpenPartyMenu\n\tgoto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_DoubleEdgeDeclined\n\tsetflag FLAG_MOVE_TUTOR_TAUGHT_DOUBLE_EDGE\n\tgoto MoveTutor_EventScript_DoubleEdgeTaught\n\tend"
+  },
+  "label": "SootopolisCity_PokemonCenter_1F_EventScript_DoubleEdgeTutor",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/scripts/move_tutors.inc",
+  "references": {
+    "flags": [
+      "FLAG_MOVE_TUTOR_TAUGHT_DOUBLE_EDGE"
+    ],
+    "vars": [
+      "VAR_RESULT"
+    ]
+  }
+}

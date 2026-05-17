@@ -1,0 +1,24 @@
+{
+  "id": "Route124_DivingTreasureHuntersHouse_EventScript_TradeShard",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+    "sha1": "e787b98bef4dd91776e97f180a62a1c98c92003e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+    "rawScript": "removeitem VAR_0x8008\n\tgiveitem VAR_0x8009\n\tmsgbox Route124_DivingTreasureHuntersHouse_Text_ItsADeal, MSGBOX_DEFAULT\n\tcall Route124_DivingTreasureHuntersHouse_EventScript_GetPlayersShards\n\tgoto_if_eq VAR_TEMP_1, 0, Route124_DivingTreasureHuntersHouse_EventScript_EndTrade\n\tmsgbox Route124_DivingTreasureHuntersHouse_Text_TradeSomethingElse, MSGBOX_YESNO\n\tgoto_if_eq VAR_RESULT, YES, Route124_DivingTreasureHuntersHouse_EventScript_ShowTradeOptions\n\tgoto Route124_DivingTreasureHuntersHouse_EventScript_DeclineTrade\n\tend"
+  },
+  "label": "Route124_DivingTreasureHuntersHouse_EventScript_TradeShard",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+  "references": {
+    "vars": [
+      "VAR_RESULT",
+      "VAR_TEMP_1"
+    ]
+  }
+}

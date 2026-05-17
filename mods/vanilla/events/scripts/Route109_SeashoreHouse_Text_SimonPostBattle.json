@@ -1,0 +1,19 @@
+{
+  "id": "Route109_SeashoreHouse_Text_SimonPostBattle",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/Route109_SeashoreHouse/scripts.inc",
+    "sha1": "e25b82298342bb772f517727cec07c201daa316e"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/Route109_SeashoreHouse/scripts.inc",
+    "rawScript": ".string \"If one of my POK\u00e9MON knew the move\\n\"\n\t.string \"for carrying me across water on its\\l\"\n\t.string \"back, I could get rid of this inner tube.$\""
+  },
+  "label": "Route109_SeashoreHouse_Text_SimonPostBattle",
+  "exported": false,
+  "kind": "text",
+  "sourceFile": "data/maps/Route109_SeashoreHouse/scripts.inc",
+  "references": {}
+}

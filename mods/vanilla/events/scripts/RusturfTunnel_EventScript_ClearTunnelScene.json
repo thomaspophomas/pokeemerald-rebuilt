@@ -1,0 +1,29 @@
+{
+  "id": "RusturfTunnel_EventScript_ClearTunnelScene",
+  "domain": "events",
+  "schemaVersion": 1,
+  "source": {
+    "path": "data/maps/RusturfTunnel/scripts.inc",
+    "sha1": "76035185b0aabddf11657305417168db4c1bb93d"
+  },
+  "legacy": {
+    "kind": "script_label",
+    "sourcePath": "data/maps/RusturfTunnel/scripts.inc",
+    "rawScript": "lockall\n\tcall_if_eq VAR_TEMP_1, 1, RusturfTunnel_EventScript_FaceWandasBoyfriend1\n\tcall_if_eq VAR_TEMP_1, 2, RusturfTunnel_EventScript_FaceWandasBoyfriend2\n\tcall_if_eq VAR_TEMP_1, 3, RusturfTunnel_EventScript_FaceWandasBoyfriend3\n\tcall RusturfTunnel_EventScript_WandasBoyfriendNotice\n\tmsgbox RusturfTunnel_Text_YouShatteredBoulderTakeHM, MSGBOX_DEFAULT\n\tcall_if_eq VAR_TEMP_1, 2, RusturfTunnel_EventScript_WandasBoyfriendApproachPlayer\n\tcall_if_eq VAR_TEMP_1, 3, RusturfTunnel_EventScript_WandasBoyfriendApproachPlayer\n\tgiveitem ITEM_HM_STRENGTH\n\tsetflag FLAG_RECEIVED_HM_STRENGTH\n\tmsgbox RusturfTunnel_Text_ExplainStrength, MSGBOX_DEFAULT\n\tclosemessage\n\tcall_if_eq VAR_TEMP_1, 1, RusturfTunnel_EventScript_BoyfriendApproachWanda1\n\tcall_if_eq VAR_TEMP_1, 2, RusturfTunnel_EventScript_BoyfriendApproachWanda2\n\tcall_if_eq VAR_TEMP_1, 3, RusturfTunnel_EventScript_BoyfriendApproachWanda3\n\tmsgbox RusturfTunnel_Text_WandaReunion, MSGBOX_DEFAULT\n\tclosemessage\n\tcall_if_eq VAR_TEMP_1, 1, RusturfTunnel_EventScript_WandaAndBoyfriendExit1\n\tcall_if_eq VAR_TEMP_1, 2, RusturfTunnel_EventScript_WandaAndBoyfriendExit\n\tcall_if_eq VAR_TEMP_1, 3, RusturfTunnel_EventScript_WandaAndBoyfriendExit\n\tcall RusturfTunnel_EventScript_SetRusturfTunnelOpen\n\treleaseall\n\tend"
+  },
+  "label": "RusturfTunnel_EventScript_ClearTunnelScene",
+  "exported": true,
+  "kind": "event_script",
+  "sourceFile": "data/maps/RusturfTunnel/scripts.inc",
+  "references": {
+    "flags": [
+      "FLAG_RECEIVED_HM_STRENGTH"
+    ],
+    "vars": [
+      "VAR_TEMP_1"
+    ],
+    "items": [
+      "ITEM_HM_STRENGTH"
+    ]
+  }
+}
