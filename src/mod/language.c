@@ -1,6 +1,7 @@
 #include "global.h"
 #include "generated/mod_registry.h"
 #include "mod/language.h"
+#include "mod/runtime_profile.h"
 #include "string_util.h"
 #include "text.h"
 
@@ -54,6 +55,14 @@ const u8 *LanguageApi_GetText(const char *key)
 {
     const struct ModLanguageText *text;
     u16 i;
+    const u8 *runtimeText;
+
+    runtimeText = ModRuntimeProfile_GetText(key, LanguageApi_GetActiveLanguage());
+    if (runtimeText != NULL)
+        return runtimeText;
+    runtimeText = ModRuntimeProfile_GetText(key, LANGUAGE_API_DEFAULT_LANGUAGE);
+    if (runtimeText != NULL)
+        return runtimeText;
 
     text = FindTextForLanguage(key, LanguageApi_GetActiveLanguage());
     if (text != NULL)

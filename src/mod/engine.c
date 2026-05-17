@@ -1,6 +1,7 @@
 #include "global.h"
 #include "generated/mod_registry.h"
 #include "mod/engine.h"
+#include "mod/runtime_profile.h"
 
 static EWRAM_DATA u16 sActiveRuleset = 0;
 
@@ -23,6 +24,14 @@ void EngineApi_Init(void)
 
 const struct EngineRuleset *EngineApi_GetActiveRuleset(void)
 {
+    const char *runtimeRulesetId;
+    const struct EngineRuleset *runtimeRuleset;
+
+    runtimeRulesetId = ModRuntimeProfile_GetEngineRulesetId();
+    runtimeRuleset = EngineApi_FindRuleset(runtimeRulesetId);
+    if (runtimeRuleset != NULL)
+        return runtimeRuleset;
+
     if (sActiveRuleset >= gModEngineRulesetCount)
         sActiveRuleset = 0;
 

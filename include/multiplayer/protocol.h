@@ -3,6 +3,7 @@
 
 #include "global.h"
 #include "multiplayer/constants.h"
+#include "mod/catalog.h"
 
 enum NetPacketType
 {
@@ -29,6 +30,13 @@ enum NetPacketType
     NET_PACKET_SUBSESSION_ABORT,
     NET_PACKET_BATTLE_INPUT,
     NET_PACKET_TRADE_INPUT,
+    NET_PACKET_SERVER_PROFILE_BEGIN,
+    NET_PACKET_SERVER_PROFILE_CHUNK,
+    NET_PACKET_SERVER_PROFILE_COMMIT,
+    NET_PACKET_SERVER_PROFILE_ACK,
+    NET_PACKET_SERVER_CATALOG_REQUEST,
+    NET_PACKET_CLIENT_CATALOG_BEGIN,
+    NET_PACKET_CLIENT_CATALOG_CHUNK,
     NET_PACKET_COUNT,
 };
 
@@ -58,8 +66,13 @@ struct NetClientHello
     u32 romHash;
     u32 rulesetHash;
     u32 featureFlags;
+    u16 profileProtocolVersion;
+    u32 profileCapabilityFlags;
+    u32 profileCapabilityHash;
+    u32 modCatalogHash;
+    u16 modCatalogCount;
     u8 transportMode;
-    u8 reserved[3];
+    u8 reserved;
 } __attribute__((packed));
 
 struct NetHeartbeat
@@ -145,6 +158,65 @@ struct NetDisconnectReason
 {
     u16 reason;
     u16 detail;
+} __attribute__((packed));
+
+struct NetServerProfileBegin
+{
+    u32 profileHash;
+    u16 profileSize;
+    u16 chunkCount;
+    u16 profileProtocolVersion;
+    u16 reserved;
+    u32 capabilityFlags;
+    u32 capabilityHash;
+} __attribute__((packed));
+
+struct NetServerProfileChunk
+{
+    u32 profileHash;
+    u16 chunkIndex;
+    u16 offset;
+    u8 dataSize;
+    u8 reserved;
+    u8 data[NET_PROFILE_CHUNK_DATA_SIZE];
+} __attribute__((packed));
+
+struct NetServerProfileCommit
+{
+    u32 profileHash;
+} __attribute__((packed));
+
+struct NetServerProfileAck
+{
+    u32 profileHash;
+    u8 result;
+    u8 reserved;
+    u16 detail;
+} __attribute__((packed));
+
+struct NetServerCatalogRequest
+{
+    u32 catalogHash;
+    u16 knownEntryCount;
+    u16 reserved;
+} __attribute__((packed));
+
+struct NetClientCatalogBegin
+{
+    u32 catalogHash;
+    u16 entryCount;
+    u16 chunkCount;
+    u32 schemaHash;
+} __attribute__((packed));
+
+struct NetClientCatalogChunk
+{
+    u32 catalogHash;
+    u16 chunkIndex;
+    u16 firstEntry;
+    u8 entryCount;
+    u8 reserved[3];
+    struct ModCatalogEntry entries[NET_CATALOG_CHUNK_ENTRY_COUNT];
 } __attribute__((packed));
 
 u16 NetProtocol_CalcChecksum(const void *data, u16 size);

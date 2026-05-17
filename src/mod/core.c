@@ -4,6 +4,7 @@
 #include "mod/event.h"
 #include "mod/flags.h"
 #include "mod/language.h"
+#include "mod/runtime_profile.h"
 #include "mod/state.h"
 #include "mod/time.h"
 #include "mod/weather.h"
@@ -18,6 +19,7 @@ void ModApi_Init(void)
     ModTime_Init();
     ModWeather_Init();
     EngineApi_Init();
+    ModRuntimeProfile_Init();
     ModEvent_Emit(MOD_EVENT_GAME_INIT, NULL, 0);
 }
 
@@ -30,6 +32,7 @@ void ModApi_RunFrame(void)
 
 void ModApi_OnMapLoad(void)
 {
+    ModRuntimeProfile_OnMapLoad();
     ModWeather_OnMapLoad();
     ModEvent_Emit(MOD_EVENT_MAP_LOAD, NULL, 0);
 }

@@ -4,6 +4,7 @@
 #include "generated/mod_registry.h"
 #include "global.fieldmap.h"
 #include "mod/event.h"
+#include "mod/runtime_profile.h"
 #include "mod/weather.h"
 
 static EWRAM_DATA bool8 sOverrideActive = FALSE;
@@ -97,6 +98,7 @@ void ModWeather_OnMapLoad(void)
 void ModWeather_GetDisplayedWeather(struct ModWeatherDisplay *display)
 {
     u16 i;
+    struct ModWeatherDisplay runtimeWeather;
 
     InitDisplayFromMap(display);
 
@@ -108,6 +110,8 @@ void ModWeather_GetDisplayedWeather(struct ModWeatherDisplay *display)
 
     if (sOverrideActive && sOverride.priority >= display->priority)
         *display = sOverride;
+    if (ModRuntimeProfile_GetWeather(&runtimeWeather) && runtimeWeather.priority >= display->priority)
+        *display = runtimeWeather;
 }
 
 u16 ModWeather_GetBattleWeatherMask(void)

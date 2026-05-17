@@ -1,11 +1,13 @@
 #include "global.h"
 #include "engine/runtime_state.h"
+#include "generated/mod_registry.h"
 #include "global.fieldmap.h"
 #include "multiplayer/session.h"
 #include "multiplayer/commit.h"
 #include "multiplayer/transport.h"
 #include "multiplayer/overworld.h"
 #include "multiplayer/battle.h"
+#include "mod/runtime_profile.h"
 
 #if FEATURE_MULTIPLAYER
 
@@ -31,6 +33,7 @@ static void ResetSession(void)
     sClientHelloSent = FALSE;
     sHeartbeatTimer = 0;
     sTransportLossFrames = 0;
+    ModRuntimeProfile_Clear();
 }
 
 static u8 GetMaxPlayersForSubsession(u8 type)
@@ -536,6 +539,7 @@ static void CopyViewIntoSession(const struct NetTransportSessionView *view)
         sSession.localSnapshotSequence = 0;
         sSession.localActionSequence = 0;
         MultiplayerCommit_Init();
+        ModRuntimeProfile_Clear();
     }
     sSession.healthState = MULTIPLAYER_HEALTH_HEALTHY;
     sTransportLossFrames = 0;
@@ -594,6 +598,11 @@ static bool8 PublishClientHello(void)
     hello.buildId = NET_PROTOCOL_BUILD_ID;
     hello.rulesetHash = NET_RULESET_HASH;
     hello.featureFlags = BuildFeatureFlags();
+    hello.profileProtocolVersion = MOD_RUNTIME_PROFILE_PROTOCOL_VERSION;
+    hello.profileCapabilityFlags = MOD_RUNTIME_PROFILE_CAPABILITIES;
+    hello.profileCapabilityHash = MOD_RUNTIME_PROFILE_CAPABILITY_HASH;
+    hello.modCatalogHash = gModCatalogHash;
+    hello.modCatalogCount = gModCatalogEntryCount;
     hello.transportMode = NET_TRANSPORT_MODE_SERVER_BRIDGE;
 
     if (NetTransport_SendPacket(NET_PACKET_CLIENT_HELLO, &hello, sizeof(hello)))
@@ -744,12 +753,67 @@ static void PublishInteractIntent(u8 type, u8 targetPlayerId, u8 mapGroup, u8 ma
     NetTransport_SendPacket(NET_PACKET_INTERACT_INTENT, &intent, sizeof(intent));
 }
 
+static void SendProfileAck(u32 profileHash, u8 result, u16 detail);
+
+static u16 GetCatalogChunkCount(void)
+{
+    if (gModCatalogEntryCount == 0)
+        return 0;
+
+    return (gModCatalogEntryCount + NET_CATALOG_CHUNK_ENTRY_COUNT - 1) / NET_CATALOG_CHUNK_ENTRY_COUNT;
+}
+
+static void SendModCatalog(void)
+{
+    struct NetClientCatalogBegin begin;
+    struct NetClientCatalogChunk chunk;
+    u16 chunkCount;
+    u16 chunkIndex;
+    u16 firstEntry;
+    u16 remaining;
+    u8 entryCount;
+    u8 i;
+
+    chunkCount = GetCatalogChunkCount();
+    memset(&begin, 0, sizeof(begin));
+    begin.catalogHash = gModCatalogHash;
+    begin.entryCount = gModCatalogEntryCount;
+    begin.chunkCount = chunkCount;
+    begin.schemaHash = MOD_CATALOG_SCHEMA_HASH;
+    if (!NetTransport_SendPacket(NET_PACKET_CLIENT_CATALOG_BEGIN, &begin, sizeof(begin)))
+        return;
+
+    for (chunkIndex = 0; chunkIndex < chunkCount; chunkIndex++)
+    {
+        firstEntry = chunkIndex * NET_CATALOG_CHUNK_ENTRY_COUNT;
+        remaining = gModCatalogEntryCount - firstEntry;
+        if (remaining > NET_CATALOG_CHUNK_ENTRY_COUNT)
+            entryCount = NET_CATALOG_CHUNK_ENTRY_COUNT;
+        else
+            entryCount = remaining;
+
+        memset(&chunk, 0, sizeof(chunk));
+        chunk.catalogHash = gModCatalogHash;
+        chunk.chunkIndex = chunkIndex;
+        chunk.firstEntry = firstEntry;
+        chunk.entryCount = entryCount;
+        for (i = 0; i < entryCount; i++)
+            chunk.entries[i] = gModCatalogEntries[firstEntry + i];
+        if (!NetTransport_SendPacket(NET_PACKET_CLIENT_CATALOG_CHUNK, &chunk, sizeof(chunk)))
+            return;
+    }
+}
+
 static void ProcessInboundPackets(void)
 {
     u8 i;
     u8 payload[NET_TRANSPORT_PACKET_PAYLOAD_SIZE];
     u16 payloadSize;
     struct NetPacketEnvelope envelope;
+    const struct NetServerProfileBegin *profileBegin;
+    const struct NetServerProfileChunk *profileChunk;
+    const struct NetServerProfileCommit *profileCommit;
+    u8 profileResult;
 
     for (i = 0; i < NET_RELIABLE_QUEUE_SIZE; i++)
     {
@@ -770,10 +834,56 @@ static void ProcessInboundPackets(void)
             AbortLocalSubsessionsForDisconnect();
             sSession.healthState = MULTIPLAYER_HEALTH_DISCONNECTED;
             break;
+        case NET_PACKET_SERVER_PROFILE_BEGIN:
+            if (payloadSize == sizeof(struct NetServerProfileBegin))
+            {
+                profileBegin = (const struct NetServerProfileBegin *)payload;
+
+                if (profileBegin->profileProtocolVersion != MOD_RUNTIME_PROFILE_PROTOCOL_VERSION)
+                    SendProfileAck(profileBegin->profileHash, MOD_RUNTIME_PROFILE_RESULT_UNSUPPORTED_VERSION, profileBegin->profileProtocolVersion);
+                else if ((profileBegin->capabilityFlags & ~MOD_RUNTIME_PROFILE_CAPABILITIES) != 0 || profileBegin->capabilityHash != MOD_RUNTIME_PROFILE_CAPABILITY_HASH)
+                    SendProfileAck(profileBegin->profileHash, MOD_RUNTIME_PROFILE_RESULT_UNSUPPORTED_CAPABILITY, 0);
+                else if (!ModRuntimeProfile_BeginReceive(profileBegin->profileHash, profileBegin->profileSize, profileBegin->chunkCount))
+                    SendProfileAck(profileBegin->profileHash, MOD_RUNTIME_PROFILE_RESULT_OUT_OF_MEMORY, profileBegin->profileSize);
+            }
+            break;
+        case NET_PACKET_SERVER_PROFILE_CHUNK:
+            if (payloadSize == sizeof(struct NetServerProfileChunk))
+            {
+                profileChunk = (const struct NetServerProfileChunk *)payload;
+
+                if (!ModRuntimeProfile_ReceiveChunk(profileChunk->profileHash, profileChunk->chunkIndex, profileChunk->offset, profileChunk->data, profileChunk->dataSize))
+                    SendProfileAck(profileChunk->profileHash, MOD_RUNTIME_PROFILE_RESULT_BAD_SIZE, profileChunk->chunkIndex);
+            }
+            break;
+        case NET_PACKET_SERVER_PROFILE_COMMIT:
+            if (payloadSize == sizeof(struct NetServerProfileCommit))
+            {
+                profileCommit = (const struct NetServerProfileCommit *)payload;
+                profileResult = ModRuntimeProfile_CommitReceive(profileCommit->profileHash);
+
+                SendProfileAck(profileCommit->profileHash, profileResult, 0);
+            }
+            break;
+        case NET_PACKET_SERVER_CATALOG_REQUEST:
+            if (payloadSize == sizeof(struct NetServerCatalogRequest))
+                SendModCatalog();
+            break;
         default:
             break;
         }
     }
+}
+
+static void SendProfileAck(u32 profileHash, u8 result, u16 detail)
+{
+    struct NetServerProfileAck ack;
+
+    memset(&ack, 0, sizeof(ack));
+    ack.profileHash = profileHash;
+    ack.result = result;
+    ack.detail = detail;
+    NetTransport_SendPacket(NET_PACKET_SERVER_PROFILE_ACK, &ack, sizeof(ack));
 }
 
 static void HandleTransportLoss(void)

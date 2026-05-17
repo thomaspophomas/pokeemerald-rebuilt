@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import importlib.util
 import re
 from pathlib import Path
 
@@ -12,6 +13,8 @@ ROOT = Path(__file__).resolve().parents[2]
 CONSTANTS = ROOT / "include" / "multiplayer" / "constants.h"
 TRANSPORT = ROOT / "include" / "multiplayer" / "transport.h"
 MAILBOX = ROOT / "include" / "multiplayer" / "bridge_mailbox.h"
+PROFILE = ROOT / "include" / "mod" / "runtime_profile.h"
+MODGEN = ROOT / "scripts" / "modgen.py"
 MANIFEST = ROOT / "docs" / "multiplayer_net_manifest.json"
 
 
@@ -39,6 +42,23 @@ def expect(name: str, actual: object, expected: object) -> None:
         raise SystemExit(f"{name} mismatch: manifest={actual!r}, constants={expected!r}")
 
 
+def calc_mod_catalog_hash() -> int:
+    spec = importlib.util.spec_from_file_location("modgen", MODGEN)
+    if spec is None or spec.loader is None:
+        raise SystemExit(f"Cannot load {MODGEN}")
+    modgen = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(modgen)
+
+    mods = modgen.load_mods(ROOT)
+    weather = modgen.collect_weather(mods)
+    sprite_assets = modgen.collect_sprite_assets(mods)
+    language_texts = modgen.collect_language_texts(mods)
+    engines = modgen.collect_engines(mods)
+    npcs = modgen.collect_npcs(mods)
+    catalog_entries = modgen.collect_catalog_entries(weather, sprite_assets, language_texts, engines, npcs)
+    return modgen.calc_catalog_hash(catalog_entries)
+
+
 def main() -> None:
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
 
@@ -46,6 +66,9 @@ def main() -> None:
     expect("emulatorBridgeVersion", manifest["emulatorBridgeVersion"], parse_int(read_define(CONSTANTS, "NET_EMULATOR_BRIDGE_VERSION")))
     expect("buildId", manifest["buildId"], f"0x{parse_int(read_define(CONSTANTS, 'NET_PROTOCOL_BUILD_ID')):08X}")
     expect("rulesetHash", manifest["rulesetHash"], f"0x{parse_int(read_define(CONSTANTS, 'NET_RULESET_HASH')):08X}")
+    expect("profileProtocolVersion", manifest["profileProtocolVersion"], parse_int(read_define(PROFILE, "MOD_RUNTIME_PROFILE_PROTOCOL_VERSION")))
+    expect("profileCapabilityHash", manifest["profileCapabilityHash"], f"0x{parse_int(read_define(PROFILE, 'MOD_RUNTIME_PROFILE_CAPABILITY_HASH')):08X}")
+    expect("modCatalogHash", manifest["modCatalogHash"], f"0x{calc_mod_catalog_hash():08X}")
     expect("transportModeValue", manifest["transportModeValue"], parse_int(read_define(CONSTANTS, "NET_TRANSPORT_MODE_SERVER_BRIDGE")))
     expect("maxNetPlayers", manifest["maxNetPlayers"], parse_int(read_define(CONSTANTS, "MAX_NET_PLAYERS")))
     expect("reliableQueueSize", manifest["reliableQueueSize"], parse_int(read_define(CONSTANTS, "NET_RELIABLE_QUEUE_SIZE")))

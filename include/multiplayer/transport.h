@@ -20,6 +20,13 @@ STATIC_ASSERT(sizeof(struct NetInteractIntent) <= NET_TRANSPORT_PACKET_PAYLOAD_S
 STATIC_ASSERT(sizeof(struct NetBattleAction) <= NET_TRANSPORT_PACKET_PAYLOAD_SIZE, NetBattleActionPayloadTooLarge);
 STATIC_ASSERT(sizeof(struct NetTradeAction) <= NET_TRANSPORT_PACKET_PAYLOAD_SIZE, NetTradeActionPayloadTooLarge);
 STATIC_ASSERT(sizeof(struct NetCommitResult) <= NET_TRANSPORT_PACKET_PAYLOAD_SIZE, NetCommitResultPayloadTooLarge);
+STATIC_ASSERT(sizeof(struct NetServerProfileBegin) <= NET_TRANSPORT_PACKET_PAYLOAD_SIZE, NetServerProfileBeginPayloadTooLarge);
+STATIC_ASSERT(sizeof(struct NetServerProfileChunk) <= NET_TRANSPORT_PACKET_PAYLOAD_SIZE, NetServerProfileChunkPayloadTooLarge);
+STATIC_ASSERT(sizeof(struct NetServerProfileCommit) <= NET_TRANSPORT_PACKET_PAYLOAD_SIZE, NetServerProfileCommitPayloadTooLarge);
+STATIC_ASSERT(sizeof(struct NetServerProfileAck) <= NET_TRANSPORT_PACKET_PAYLOAD_SIZE, NetServerProfileAckPayloadTooLarge);
+STATIC_ASSERT(sizeof(struct NetServerCatalogRequest) <= NET_TRANSPORT_PACKET_PAYLOAD_SIZE, NetServerCatalogRequestPayloadTooLarge);
+STATIC_ASSERT(sizeof(struct NetClientCatalogBegin) <= NET_TRANSPORT_PACKET_PAYLOAD_SIZE, NetClientCatalogBeginPayloadTooLarge);
+STATIC_ASSERT(sizeof(struct NetClientCatalogChunk) <= NET_TRANSPORT_PACKET_PAYLOAD_SIZE, NetClientCatalogChunkPayloadTooLarge);
 STATIC_ASSERT(sizeof(struct MultiplayerSubsession) <= NET_TRANSPORT_PACKET_PAYLOAD_SIZE, MultiplayerSubsessionPayloadTooLarge);
 
 struct NetTransportSessionView

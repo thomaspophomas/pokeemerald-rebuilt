@@ -12,7 +12,7 @@ MAX_NET_BATTLE_PLAYERS = 4
 MAX_NET_SUBSESSIONS = 4
 NET_SUBSESSION_NONE = 0
 NET_PACKET_NONE = 0
-NET_PACKET_COUNT = 23
+NET_PACKET_COUNT = 30
 NET_PLAYER_SNAPSHOT_TTL_FRAMES = 60 * 5
 NET_PLAYER_SNAPSHOT_FUTURE_SKEW_FRAMES = 30
 NET_PLAYER_STALE_FRAMES = 60 * 2
@@ -26,6 +26,24 @@ NET_COMMIT_LOG_SIZE = 32
 NET_RELIABLE_QUEUE_SIZE = 16
 NET_TRANSPORT_PACKET_PAYLOAD_SIZE = 128
 NET_PENDING_TX_COUNT = 16
+MOD_RUNTIME_PROFILE_PROTOCOL_VERSION = 1
+MOD_RUNTIME_PROFILE_CAPABILITY_HASH = 0x00000001
+MOD_RUNTIME_PROFILE_CAP_TEXT = 1 << 0
+MOD_RUNTIME_PROFILE_CAP_WEATHER = 1 << 1
+MOD_RUNTIME_PROFILE_CAP_ENGINE = 1 << 2
+MOD_RUNTIME_PROFILE_CAP_NPC = 1 << 3
+MOD_RUNTIME_PROFILE_CAP_ASSET_REF = 1 << 4
+MOD_RUNTIME_PROFILE_CAP_INLINE_ASSET = 1 << 5
+MOD_RUNTIME_PROFILE_CAPABILITIES = (
+    MOD_RUNTIME_PROFILE_CAP_TEXT
+    | MOD_RUNTIME_PROFILE_CAP_WEATHER
+    | MOD_RUNTIME_PROFILE_CAP_ENGINE
+    | MOD_RUNTIME_PROFILE_CAP_NPC
+    | MOD_RUNTIME_PROFILE_CAP_ASSET_REF
+    | MOD_RUNTIME_PROFILE_CAP_INLINE_ASSET
+)
+MOD_CATALOG_HASH = 0xE64BCD9E
+MOD_CATALOG_COUNT = 1
 OPTIONS_MULTIPLAYER_MODE_SOLO = 0
 OPTIONS_MULTIPLAYER_MODE_ONLINE = 1
 OPTIONS_MULTIPLAYER_MODE_COUNT = 2
@@ -103,8 +121,13 @@ class Packet:
 class ClientHello:
     protocol_version: int = NET_PROTOCOL_VERSION
     bridge_version: int = NET_EMULATOR_BRIDGE_VERSION
-    build_id: int = 0x00010000
+    build_id: int = 0x00010003
     ruleset_hash: int = 0x00000003
+    profile_protocol_version: int = MOD_RUNTIME_PROFILE_PROTOCOL_VERSION
+    profile_capability_flags: int = MOD_RUNTIME_PROFILE_CAPABILITIES
+    profile_capability_hash: int = MOD_RUNTIME_PROFILE_CAPABILITY_HASH
+    mod_catalog_hash: int = MOD_CATALOG_HASH
+    mod_catalog_count: int = MOD_CATALOG_COUNT
     transport_mode: int = NET_TRANSPORT_MODE_SERVER_BRIDGE
 
 
@@ -224,8 +247,13 @@ def client_hello_is_compatible(hello: ClientHello) -> bool:
     return (
         hello.protocol_version == NET_PROTOCOL_VERSION
         and hello.bridge_version == NET_EMULATOR_BRIDGE_VERSION
-        and hello.build_id == 0x00010000
+        and hello.build_id == 0x00010003
         and hello.ruleset_hash == 0x00000003
+        and hello.profile_protocol_version == MOD_RUNTIME_PROFILE_PROTOCOL_VERSION
+        and hello.profile_capability_hash == MOD_RUNTIME_PROFILE_CAPABILITY_HASH
+        and (hello.profile_capability_flags & MOD_RUNTIME_PROFILE_CAPABILITIES) == MOD_RUNTIME_PROFILE_CAPABILITIES
+        and hello.mod_catalog_hash != 0
+        and hello.mod_catalog_count != 0
         and hello.transport_mode == NET_TRANSPORT_MODE_SERVER_BRIDGE
     )
 
@@ -315,6 +343,11 @@ def test_handshake_edges() -> None:
     assert not client_hello_is_compatible(ClientHello(bridge_version=3))
     assert not client_hello_is_compatible(ClientHello(build_id=0xDEADBEEF))
     assert not client_hello_is_compatible(ClientHello(ruleset_hash=0))
+    assert not client_hello_is_compatible(ClientHello(profile_protocol_version=0))
+    assert not client_hello_is_compatible(ClientHello(profile_capability_hash=0))
+    assert not client_hello_is_compatible(ClientHello(profile_capability_flags=MOD_RUNTIME_PROFILE_CAP_TEXT))
+    assert not client_hello_is_compatible(ClientHello(mod_catalog_hash=0))
+    assert not client_hello_is_compatible(ClientHello(mod_catalog_count=0))
     assert not client_hello_is_compatible(ClientHello(transport_mode=0))
 
 

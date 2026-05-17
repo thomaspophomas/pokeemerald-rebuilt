@@ -132,12 +132,25 @@ dropped before they reach session state.
 
 Every online bridge session must expose `transportMode=server_bridge`,
 `sessionEpoch`, `playerToken`, `joinNonce`, `serverClockSeconds`,
-`protocolVersion`, `bridgeVersion`, `buildId`, `rulesetHash`, and
-`featureFlags`. The tracked manifest in `docs/multiplayer_net_manifest.json`
-is the build artifact contract that the future server should allowlist. The
-emulator-side bridge must resolve `gNetEmulatorBridgeMailbox` from symbols and
-write that EWRAM mailbox; fixed pseudo-addresses such as `0x10000000` are not
-part of the ROM contract.
+`protocolVersion`, `bridgeVersion`, `buildId`, `rulesetHash`, `featureFlags`,
+`profileProtocolVersion`, `profileCapabilityFlags`, and
+`profileCapabilityHash`, plus generated mod catalog hash/count. The tracked manifest in
+`docs/multiplayer_net_manifest.json` is the base artifact contract that the
+future server should allowlist. The emulator-side bridge must resolve
+`gNetEmulatorBridgeMailbox` from symbols and write that EWRAM mailbox; fixed
+pseudo-addresses such as `0x10000000` are not part of the ROM contract.
+
+Multiplayer mods are server-authoritative through a bounded runtime profile.
+The ROM uses its compiled generated mod registry when offline. After joining an
+online server, the server can send one room-specific delta profile over
+reliable profile packets; supported mod APIs then prefer server-provided text,
+weather, engine ruleset ID, NPCs, and sprite assets while falling back to the
+compiled registry for missing keys. If the server does not know the ROM catalog
+hash from `ClientHello`, it can request the compact generated catalog and cache
+it by hash, then omit entries the ROM already has. `rulesetHash` stays a base
+engine/protocol compatibility value rather than a modpack selector. Runtime
+profiles do not allow arbitrary code, new maps, audio, scripts, save-schema
+changes, or unbounded asset packs.
 
 Client data is always a request, never authority. The ROM sends
 `ClientHello`, `Heartbeat`, `LocalSnapshot`, `MoveIntent`, `InteractIntent`,
@@ -185,8 +198,10 @@ RTC, and run mismatched ROM/core builds. The hardening rules are:
   impossible to detect in the ROM.
 - Emulator netplay/runahead/rollback must not be mixed with this protocol; the
   bridge advertises `server_bridge`, and frame rollback triggers resync.
-- ROM hash, ruleset hash, feature flags, protocol version, and bridge version
-  are part of the join handshake. Emulator name/version is diagnostic only.
+- Build ID, ruleset hash, feature flags, profile protocol/capabilities,
+  generated mod catalog hash/count, protocol version, and bridge version are
+  part of the join handshake. The server-selected runtime profile has a
+  separate `profileHash`. Emulator name/version is diagnostic only.
 
 ## Multiplayer Safety Nets
 

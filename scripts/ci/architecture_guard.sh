@@ -90,6 +90,68 @@ if ! grep -R -n "NET_PACKET_CLIENT_HELLO\\|NET_PACKET_HEARTBEAT\\|NET_PACKET_SER
     exit 1
 fi
 
+if grep -R -n "NET_PACKET_[A-Z0-9_]*MOD\\|MODPACK_NEGOTIATION\\|MOD_NEGOTIATION" include/multiplayer src/multiplayer 2>/dev/null >/tmp/architecture_guard_matches.txt; then
+    echo "Online mods must use the bounded server runtime-profile lane, not ad-hoc mod negotiation packets." >&2
+    cat /tmp/architecture_guard_matches.txt >&2
+    exit 1
+fi
+
+if ! grep -n "profileCapabilityHash" include/multiplayer/protocol.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer protocol must expose the server runtime-profile capability hash." >&2
+    exit 1
+fi
+
+if ! grep -n "hello.profileCapabilityHash" src/multiplayer/session.c >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer hello must advertise the server runtime-profile capability hash." >&2
+    exit 1
+fi
+
+if ! grep -n "hello.modCatalogHash" src/multiplayer/session.c >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer hello must advertise the generated ROM mod catalog hash." >&2
+    exit 1
+fi
+
+if ! grep -n "NET_PACKET_SERVER_PROFILE_BEGIN" include/multiplayer/protocol.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer protocol must keep the server runtime-profile begin packet." >&2
+    exit 1
+fi
+
+if ! grep -n "case NET_PACKET_SERVER_PROFILE_BEGIN" src/multiplayer/session.c >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer session must handle server runtime-profile begin packets." >&2
+    exit 1
+fi
+
+if ! grep -n "NET_PACKET_SERVER_PROFILE_ACK" include/multiplayer/protocol.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer protocol must ACK server runtime-profile results." >&2
+    exit 1
+fi
+
+if ! grep -n "NetTransport_SendPacket(NET_PACKET_SERVER_PROFILE_ACK" src/multiplayer/session.c >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer session must send server runtime-profile ACK packets." >&2
+    exit 1
+fi
+
+if ! grep -n "NET_PACKET_SERVER_CATALOG_REQUEST" include/multiplayer/protocol.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer protocol must keep the server mod-catalog request packet." >&2
+    exit 1
+fi
+
+if ! grep -n "NET_PACKET_CLIENT_CATALOG_CHUNK" include/multiplayer/protocol.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer protocol must keep the client mod-catalog chunk packet." >&2
+    exit 1
+fi
+
+if ! grep -n "case NET_PACKET_SERVER_CATALOG_REQUEST" src/multiplayer/session.c >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer session must respond to server mod-catalog requests." >&2
+    exit 1
+fi
+
+if grep -R -n "cargo run -p net-server\\|cargo run -p net-bridge\\|cargo test -p net-integration" README.md AGENTS.md CLAUDE.md docs 2>/dev/null >/tmp/architecture_guard_matches.txt; then
+    echo "Rust host scaffold commands must not be documented as the current ROM-repo multiplayer path." >&2
+    cat /tmp/architecture_guard_matches.txt >&2
+    exit 1
+fi
+
 if ! grep -n '#define NET_REMOTE_PLAYER_VIRTUAL_ID_BASE 248' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
     echo "Remote virtual object IDs must stay in the reserved high-ID range." >&2
     exit 1

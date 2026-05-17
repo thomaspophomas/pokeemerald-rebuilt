@@ -1,14 +1,20 @@
 #include "global.h"
 #include "decompress.h"
 #include "generated/mod_registry.h"
+#include "mod/runtime_profile.h"
 #include "mod/sprite_asset.h"
 
 const struct ModSpriteAssetDefinition *SpriteAssetApi_Find(const char *key)
 {
+    const struct ModSpriteAssetDefinition *runtimeAsset;
     u16 i;
 
     if (key == NULL)
         return NULL;
+
+    runtimeAsset = ModRuntimeProfile_FindAsset(key);
+    if (runtimeAsset != NULL)
+        return runtimeAsset;
 
     for (i = 0; i < gModSpriteAssetCount; i++)
     {

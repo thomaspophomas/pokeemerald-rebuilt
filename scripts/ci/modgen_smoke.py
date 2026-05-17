@@ -145,12 +145,18 @@ def main() -> int:
             "demo:guide",
             "demo:demo_town",
             "demo:demo_engine",
+            "gModCatalogEntryCount",
+            "gModCatalogHash",
+            "MOD_CATALOG_ENTRY_TEXT",
+            "MOD_CATALOG_ENTRY_SPRITE_ASSET",
         ]
         for needle in required:
             if needle not in source:
                 raise AssertionError(f"generated source missing {needle}")
         if "extern const struct ModManifest gModManifests[]" not in header:
             raise AssertionError("generated header missing manifest declaration")
+        if "extern const struct ModCatalogEntry gModCatalogEntries[]" not in header:
+            raise AssertionError("generated header missing catalog declaration")
         if "MOD_C_SRCS += mods/demo/src/demo.c" not in make:
             raise AssertionError("generated make fragment missing mod C source")
 

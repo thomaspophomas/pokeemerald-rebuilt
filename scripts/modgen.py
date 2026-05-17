@@ -13,6 +13,8 @@ from typing import Any, Dict, Iterable, List, Optional
 
 IDENT_RE = re.compile(r"^[A-Za-z_][A-Za-z0-9_]*$")
 MOD_ID_RE = re.compile(r"^[a-z0-9][a-z0-9_-]*$")
+FNV_OFFSET = 2166136261
+FNV_PRIME = 16777619
 
 EVENT_TYPES = {
     "GAME_INIT": "MOD_EVENT_GAME_INIT",
@@ -112,6 +114,22 @@ def c_u8_string(value: Optional[str]) -> str:
     if value is None:
         return "NULL"
     return "_(" + c_string(str(value)) + ")"
+
+
+def fnv1a(data: bytes) -> int:
+    value = FNV_OFFSET
+    for byte in data:
+        value ^= byte
+        value = (value * FNV_PRIME) & 0xFFFFFFFF
+    return value
+
+
+def hash_text(value: str) -> int:
+    return fnv1a(value.encode("utf-8"))
+
+
+def hash_parts(*parts: Any) -> int:
+    return hash_text("\x1f".join(str(part) for part in parts))
 
 
 def normalize_event_type(value: Any) -> str:
@@ -545,6 +563,92 @@ def collect_mod_sources(mods: List[Dict[str, Any]]) -> List[str]:
     return sources
 
 
+def add_catalog_entry(entries: List[Dict[str, int]], type_name: str, key: str, *content: Any) -> None:
+    entries.append(
+        {
+            "type": type_name,
+            "key_hash": hash_text(key),
+            "content_hash": hash_parts(key, *content),
+        }
+    )
+
+
+def collect_catalog_entries(
+    weather: List[Dict[str, Any]],
+    sprite_assets: List[Dict[str, Any]],
+    language_texts: List[Dict[str, Any]],
+    engines: List[Dict[str, Any]],
+    npcs: List[Dict[str, Any]],
+) -> List[Dict[str, int]]:
+    entries: List[Dict[str, int]] = []
+
+    for text in language_texts:
+        add_catalog_entry(
+            entries,
+            "MOD_CATALOG_ENTRY_TEXT",
+            f"{text['language']}:{text['key']}",
+            text["language"],
+            text["text"],
+        )
+    for provider in weather:
+        add_catalog_entry(
+            entries,
+            "MOD_CATALOG_ENTRY_WEATHER",
+            provider["id"],
+            provider["priority"],
+            provider["handler"],
+        )
+    for engine in engines:
+        add_catalog_entry(
+            entries,
+            "MOD_CATALOG_ENTRY_ENGINE",
+            engine["id"],
+            engine["name"],
+            engine["version"],
+            engine["flags"],
+            engine["capture"],
+            engine["battle_weather"],
+        )
+    for npc in npcs:
+        add_catalog_entry(
+            entries,
+            "MOD_CATALOG_ENTRY_NPC",
+            npc["key"],
+            npc["graphics"],
+            npc["movement"],
+            npc["local"],
+            npc["elevation"],
+            npc["flag"],
+            npc["script"],
+        )
+    for asset in sprite_assets:
+        add_catalog_entry(
+            entries,
+            "MOD_CATALOG_ENTRY_SPRITE_ASSET",
+            asset["key"],
+            asset["sheet"],
+            asset["compressed_sheet"],
+            asset["palette"],
+            asset["compressed_palette"],
+            asset["template"],
+            asset["tile_tag"],
+            asset["palette_tag"],
+        )
+
+    entries.sort(key=lambda entry: (entry["type"], entry["key_hash"], entry["content_hash"]))
+    return entries
+
+
+def calc_catalog_hash(entries: List[Dict[str, int]]) -> int:
+    data = bytearray()
+    for entry in entries:
+        data.extend(str(entry["type"]).encode("ascii"))
+        data.append(0)
+        data.extend(entry["key_hash"].to_bytes(4, "little"))
+        data.extend(entry["content_hash"].to_bytes(4, "little"))
+    return fnv1a(bytes(data))
+
+
 def write_header(path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
@@ -552,6 +656,7 @@ def write_header(path: Path) -> None:
 #define GUARD_GENERATED_MOD_REGISTRY_H
 
 #include "global.h"
+#include "mod/catalog.h"
 #include "mod/battle_sprite.h"
 #include "mod/engine.h"
 #include "mod/event.h"
@@ -594,6 +699,9 @@ extern const struct ModNpcDefinition gModNpcDefinitions[];
 extern const u16 gModNpcDefinitionCount;
 extern const struct ModMapDefinition gModMapDefinitions[];
 extern const u16 gModMapDefinitionCount;
+extern const struct ModCatalogEntry gModCatalogEntries[];
+extern const u16 gModCatalogEntryCount;
+extern const u32 gModCatalogHash;
 
 #endif // GUARD_GENERATED_MOD_REGISTRY_H
 """,
@@ -601,7 +709,7 @@ extern const u16 gModMapDefinitionCount;
     )
 
 
-def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, Any]], events: List[Dict[str, Any]], weather: List[Dict[str, Any]], time_segments: List[Dict[str, Any]], sprite_assets: List[Dict[str, Any]], overworld_sprites: List[Dict[str, Any]], battle_sprites: List[Dict[str, Any]], followers: List[Dict[str, Any]], language_texts: List[Dict[str, Any]], pokeballs: List[Dict[str, Any]], engines: List[Dict[str, Any]], npcs: List[Dict[str, Any]], maps: List[Dict[str, Any]]) -> None:
+def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, Any]], events: List[Dict[str, Any]], weather: List[Dict[str, Any]], time_segments: List[Dict[str, Any]], sprite_assets: List[Dict[str, Any]], overworld_sprites: List[Dict[str, Any]], battle_sprites: List[Dict[str, Any]], followers: List[Dict[str, Any]], language_texts: List[Dict[str, Any]], pokeballs: List[Dict[str, Any]], engines: List[Dict[str, Any]], npcs: List[Dict[str, Any]], maps: List[Dict[str, Any]], catalog_entries: List[Dict[str, int]], catalog_hash: int) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     event_handlers = sorted({event["handler"] for event in events if event["handler"] != "NULL"})
     weather_handlers = sorted({provider["handler"] for provider in weather if provider["handler"] != "NULL"})
@@ -808,6 +916,18 @@ def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, A
     lines.append(f"const u16 gModMapDefinitionCount = {len(maps)};")
     lines.append("")
 
+    lines.append("const struct ModCatalogEntry gModCatalogEntries[] =")
+    lines.append("{")
+    if catalog_entries:
+        for entry in catalog_entries:
+            lines.append(f"    {{ {entry['type']}, 0, 0, 0x{entry['key_hash']:08X}, 0x{entry['content_hash']:08X} }},")
+    else:
+        lines.append("    { 0, 0, 0, 0, 0 },")
+    lines.append("};")
+    lines.append(f"const u16 gModCatalogEntryCount = {len(catalog_entries)};")
+    lines.append(f"const u32 gModCatalogHash = 0x{catalog_hash:08X};")
+    lines.append("")
+
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
@@ -842,6 +962,8 @@ def main() -> int:
     engines = collect_engines(mods)
     npcs = collect_npcs(mods)
     maps = collect_maps(mods)
+    catalog_entries = collect_catalog_entries(weather, sprite_assets, language_texts, engines, npcs)
+    catalog_hash = calc_catalog_hash(catalog_entries)
     sources = collect_mod_sources(mods)
 
     write_header(root / args.out_header)
@@ -861,6 +983,8 @@ def main() -> int:
         engines,
         npcs,
         maps,
+        catalog_entries,
+        catalog_hash,
     )
     write_make_fragment(root / args.out_make, sources)
     return 0

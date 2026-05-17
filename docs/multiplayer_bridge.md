@@ -27,8 +27,11 @@ server builds. The current `master` values are:
 {
   "protocolVersion": 2,
   "emulatorBridgeVersion": 5,
-  "buildId": "0x00010000",
+  "buildId": "0x00010003",
   "rulesetHash": "0x00000003",
+  "profileProtocolVersion": 1,
+  "profileCapabilityHash": "0x00000001",
+  "modCatalogHash": "0xE64BCD9E",
   "transportMode": "server_bridge",
   "transportModeValue": 1,
   "maxNetPlayers": 8,
@@ -49,6 +52,22 @@ server builds. The current `master` values are:
 
 `scripts/ci/check_net_manifest.py` must pass whenever constants in
 `include/multiplayer/constants.h` or this manifest change.
+
+Offline gameplay uses the mods compiled into the ROM. Online gameplay is
+server-authoritative through a runtime profile: after `ClientHello`, the server
+may send a bounded delta profile that overrides supported mod API surfaces such
+as text, weather, engine ruleset ID, NPC definitions, and sprite assets. The
+server can choose a different profile per room without requiring a new ROM
+build, as long as the ROM advertises the required profile protocol,
+capabilities, and mod catalog metadata.
+
+`buildId`, `rulesetHash`, protocol version, bridge version, feature flags, and
+transport mode remain the base compatibility gate. `rulesetHash` is not the
+server modpack selector; it describes the compiled engine/protocol rules the
+runtime profile depends on. `profileCapabilityHash` identifies the runtime
+profile schema supported by this ROM. `modCatalogHash` identifies the generated
+ROM mod catalog so servers can avoid sending data already present in the ROM,
+and each server profile carries its own `profileHash`.
 
 ## EWRAM Mailbox
 
@@ -143,11 +162,61 @@ queue with:
 - `romHash`
 - `rulesetHash`
 - `featureFlags`
+- `profileProtocolVersion`
+- `profileCapabilityFlags`
+- `profileCapabilityHash`
+- `modCatalogHash`
+- `modCatalogCount`
 - `transportMode`
 
 The server must reject mismatches for protocol version, bridge version, build
-ID, ruleset hash, required feature flags, and transport mode. Emulator
-name/version is diagnostic only and is not a trust boundary.
+ID, ruleset hash, required feature flags, profile protocol/capabilities, and
+transport mode. Emulator name/version is diagnostic only and is not a trust
+boundary. `romHash` is reserved for a future bridge that can hash the actual
+ROM file; it is not the current modpack selection mechanism.
+
+## Server Runtime Profile
+
+The runtime profile lane lets the server dictate supported mods without
+requiring a ROM rebuild. Servers should treat profiles as deltas against the
+ROM mod catalog: if a desired text, weather/ruleset, NPC, or sprite asset entry
+already exists in the ROM with the same key/content hash, the server omits that
+record and lets the ROM fallback path use its generated registry. The profile
+itself is a compact TLV blob carried over the reliable packet lane:
+
+1. Server sends `NET_PACKET_SERVER_PROFILE_BEGIN` with `profileHash`,
+   `profileSize`, `chunkCount`, `profileProtocolVersion`, `capabilityFlags`,
+   and `capabilityHash`.
+2. Server sends `NET_PACKET_SERVER_PROFILE_CHUNK` packets. Each chunk carries
+   an offset and up to `NET_PROFILE_CHUNK_DATA_SIZE` (`112`) profile bytes.
+3. Server sends `NET_PACKET_SERVER_PROFILE_COMMIT`.
+4. ROM validates chunk coverage and hash, parses the profile, then replies with
+   `NET_PACKET_SERVER_PROFILE_ACK`.
+
+The current ROM accepts at most `MOD_RUNTIME_PROFILE_MAX_BLOB_SIZE` (`8192`)
+bytes. It supports text, weather, engine ruleset ID, NPC records, references to
+compiled sprite assets, and small inline sprite sheets/palettes. It does not
+accept arbitrary executable code, new maps, audio, scripts, save-schema
+changes, or unrestricted asset packs. Unsupported capability bits, unsupported
+profile versions, hash mismatches, malformed records, or oversized profiles
+must fail closed and produce a non-OK ACK.
+
+The receive blob is temporary. After hash validation, the ROM pre-scans the
+profile and allocates only the exact text/inline-asset buffers needed by the
+delta records, then frees the receive blob after a successful commit.
+
+When no server profile is active, mod APIs read the ROM's generated registry.
+When a server profile is active, supported API lookups prefer the server
+profile and fall back to the generated registry only for missing keys. Leaving
+or losing the online session clears the runtime profile and restores local ROM
+mods.
+
+If the server does not recognize `modCatalogHash`, it may request the generated
+catalog through `NET_PACKET_SERVER_CATALOG_REQUEST`. The ROM responds with
+`NET_PACKET_CLIENT_CATALOG_BEGIN` and `NET_PACKET_CLIENT_CATALOG_CHUNK` packets.
+Each catalog entry contains a type, key hash, and content hash, not full asset
+or text payloads. The server caches that catalog by hash and uses it to build
+future delta profiles.
 
 After hello, the ROM sends `NET_PACKET_HEARTBEAT` every
 `NET_HEARTBEAT_INTERVAL_FRAMES` with:
@@ -238,6 +307,16 @@ Server-to-client packet types:
 - `NET_PACKET_SUBSESSION_UPDATE`
 - `NET_PACKET_COMMIT_RESULT`
 - `NET_PACKET_DISCONNECT_REASON`
+- `NET_PACKET_SERVER_PROFILE_BEGIN`
+- `NET_PACKET_SERVER_PROFILE_CHUNK`
+- `NET_PACKET_SERVER_PROFILE_COMMIT`
+- `NET_PACKET_SERVER_CATALOG_REQUEST`
+
+Client profile/catalog packets:
+
+- `NET_PACKET_SERVER_PROFILE_ACK`
+- `NET_PACKET_CLIENT_CATALOG_BEGIN`
+- `NET_PACKET_CLIENT_CATALOG_CHUNK`
 
 The future bridge may fan out server views through the mailbox rather than the
 packet queue, but packet envelopes must keep the same validation rules.
@@ -288,11 +367,22 @@ Client data is always a request. The server must be authoritative for:
 - trade prepare, escrow, commit, rollback, timeout, and disconnect handling
 - item, party, money, reward, story flag, outfit, and daily-event state
 - online time, weather cycles, and time-gated rewards
-- ROM hash, ruleset hash, feature flags, protocol version, and bridge version
+- runtime profile selection and profile hash
+- ROM mod catalog hashing and delta-profile generation
+- build ID, ruleset hash, profile capabilities, feature flags, protocol
+  version, bridge version, and future ROM hash checks
 
 The emulator client may fast-forward, pause, frame advance, load save states,
 rewind, run scripts, edit RAM, use cheats, change RTC, or run a mismatched ROM.
 The protocol must remain correct under those assumptions.
+
+## Host Stack Policy
+
+Host-side checks in this ROM repository are Python invariant simulations under
+`scripts/ci/`. A production emulator bridge or authoritative server should live
+outside this repository or be introduced here only after an ADR covers the
+toolchain, lockfile, CI, ownership, deployment, and security model. See
+`docs/adr/0001-host-stack-policy.md`.
 
 ## Open Work
 

@@ -3,6 +3,7 @@
 #include "generated/mod_registry.h"
 #include "global.fieldmap.h"
 #include "mod/npc.h"
+#include "mod/runtime_profile.h"
 
 static const struct ModNpcDefinition *FindDefinitionById(u16 id)
 {
@@ -88,10 +89,15 @@ bool8 NpcApi_FindByLocalId(u8 mapGroup, u8 mapNum, u8 localId, u8 *instanceId)
 
 const struct ModNpcDefinition *NpcApi_FindDefinition(const char *key)
 {
+    const struct ModNpcDefinition *runtimeDefinition;
     u16 i;
 
     if (key == NULL)
         return NULL;
+
+    runtimeDefinition = ModRuntimeProfile_FindNpc(key);
+    if (runtimeDefinition != NULL)
+        return runtimeDefinition;
 
     for (i = 0; i < gModNpcDefinitionCount; i++)
     {
