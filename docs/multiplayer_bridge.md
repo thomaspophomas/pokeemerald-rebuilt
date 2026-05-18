@@ -30,7 +30,8 @@ server builds. The current `master` values are:
   "buildId": "0x00010003",
   "rulesetHash": "0x00000003",
   "profileProtocolVersion": 1,
-  "profileCapabilityHash": "0x00000001",
+  "profileCapabilityHash": "0x00000002",
+  "modCatalogSchemaHash": "0x00000002",
   "modCatalogHash": "0xE64BCD9E",
   "transportMode": "server_bridge",
   "transportModeValue": 1,
@@ -50,24 +51,26 @@ server builds. The current `master` values are:
 }
 ```
 
-`scripts/ci/check_net_manifest.py` must pass whenever constants in
-`include/multiplayer/constants.h` or this manifest change.
+`scripts/ci/check_net_manifest.py` must pass whenever multiplayer/profile/catalog
+contract constants or this manifest change.
 
 Offline gameplay uses the mods compiled into the ROM. Online gameplay is
 server-authoritative through a runtime profile: after `ClientHello`, the server
 may send a bounded delta profile that overrides supported mod API surfaces such
-as text, weather, engine ruleset ID, NPC definitions, and sprite assets. The
-server can choose a different profile per room without requiring a new ROM
-build, as long as the ROM advertises the required profile protocol,
-capabilities, and mod catalog metadata.
+as text, weather, engine ruleset ID, NPC definitions, sprite assets, and badge
+effect definitions. The server can choose a different profile per room without
+requiring a new ROM build, as long as the ROM advertises the required profile
+protocol, capabilities, and mod catalog metadata.
 
 `buildId`, `rulesetHash`, protocol version, bridge version, feature flags, and
 transport mode remain the base compatibility gate. `rulesetHash` is not the
 server modpack selector; it describes the compiled engine/protocol rules the
 runtime profile depends on. `profileCapabilityHash` identifies the runtime
-profile schema supported by this ROM. `modCatalogHash` identifies the generated
-ROM mod catalog so servers can avoid sending data already present in the ROM,
-and each server profile carries its own `profileHash`.
+profile schema supported by this ROM. `MOD_CATALOG_SCHEMA_HASH` identifies the
+catalog entry taxonomy used to interpret generated catalog rows. `modCatalogHash`
+identifies the generated ROM mod catalog contents so servers can avoid sending
+data already present in the ROM, and each server profile carries its own
+`profileHash`.
 
 ## EWRAM Mailbox
 
@@ -174,15 +177,19 @@ ID, ruleset hash, required feature flags, profile protocol/capabilities, and
 transport mode. Emulator name/version is diagnostic only and is not a trust
 boundary. `romHash` is reserved for a future bridge that can hash the actual
 ROM file; it is not the current modpack selection mechanism.
+Catalog responses later carry `MOD_CATALOG_SCHEMA_HASH` in
+`NET_PACKET_CLIENT_CATALOG_BEGIN`; it is separate from the hello/profile
+capability fields.
 
 ## Server Runtime Profile
 
 The runtime profile lane lets the server dictate supported mods without
 requiring a ROM rebuild. Servers should treat profiles as deltas against the
-ROM mod catalog: if a desired text, weather/ruleset, NPC, or sprite asset entry
-already exists in the ROM with the same key/content hash, the server omits that
-record and lets the ROM fallback path use its generated registry. The profile
-itself is a compact TLV blob carried over the reliable packet lane:
+ROM mod catalog: if a desired text, weather/ruleset, NPC, sprite asset, or
+badge effect entry already exists in the ROM with the same key/content hash,
+the server omits that record and lets the ROM fallback path use its generated
+registry. The profile itself is a compact TLV blob carried over the reliable
+packet lane:
 
 1. Server sends `NET_PACKET_SERVER_PROFILE_BEGIN` with `profileHash`,
    `profileSize`, `chunkCount`, `profileProtocolVersion`, `capabilityFlags`,
@@ -195,11 +202,12 @@ itself is a compact TLV blob carried over the reliable packet lane:
 
 The current ROM accepts at most `MOD_RUNTIME_PROFILE_MAX_BLOB_SIZE` (`8192`)
 bytes. It supports text, weather, engine ruleset ID, NPC records, references to
-compiled sprite assets, and small inline sprite sheets/palettes. It does not
-accept arbitrary executable code, new maps, audio, scripts, save-schema
-changes, or unrestricted asset packs. Unsupported capability bits, unsupported
-profile versions, hash mismatches, malformed records, or oversized profiles
-must fail closed and produce a non-OK ACK.
+compiled sprite assets, small inline sprite sheets/palettes, and badge effect
+records for mod APIs that query badge-owned modifiers. It does not accept
+arbitrary executable code, new maps, audio, scripts, save-schema changes,
+unrestricted asset packs, or automatic battle formula changes. Unsupported
+capability bits, unsupported profile versions, hash mismatches, malformed
+records, or oversized profiles must fail closed and produce a non-OK ACK.
 
 The receive blob is temporary. After hash validation, the ROM pre-scans the
 profile and allocates only the exact text/inline-asset buffers needed by the
@@ -214,9 +222,11 @@ mods.
 If the server does not recognize `modCatalogHash`, it may request the generated
 catalog through `NET_PACKET_SERVER_CATALOG_REQUEST`. The ROM responds with
 `NET_PACKET_CLIENT_CATALOG_BEGIN` and `NET_PACKET_CLIENT_CATALOG_CHUNK` packets.
-Each catalog entry contains a type, key hash, and content hash, not full asset
-or text payloads. The server caches that catalog by hash and uses it to build
-future delta profiles.
+The begin packet carries `schemaHash == MOD_CATALOG_SCHEMA_HASH`; a bridge or
+server must reject unknown schema hashes and must not build a delta profile from
+that catalog. Each catalog entry contains a type, key hash, and content hash,
+not full asset or text payloads. The server caches that catalog by hash and uses
+it to build future delta profiles only after the schema hash is accepted.
 
 After hello, the ROM sends `NET_PACKET_HEARTBEAT` every
 `NET_HEARTBEAT_INTERVAL_FRAMES` with:

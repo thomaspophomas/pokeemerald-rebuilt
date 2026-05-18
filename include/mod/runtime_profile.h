@@ -2,12 +2,13 @@
 #define GUARD_MOD_RUNTIME_PROFILE_H
 
 #include "global.h"
+#include "mod/badge.h"
 #include "mod/npc.h"
 #include "mod/sprite_asset.h"
 #include "mod/weather.h"
 
 #define MOD_RUNTIME_PROFILE_PROTOCOL_VERSION 1
-#define MOD_RUNTIME_PROFILE_CAPABILITY_HASH 0x00000001
+#define MOD_RUNTIME_PROFILE_CAPABILITY_HASH 0x00000002
 
 #define MOD_RUNTIME_PROFILE_CAP_TEXT          (1 << 0)
 #define MOD_RUNTIME_PROFILE_CAP_WEATHER       (1 << 1)
@@ -15,7 +16,8 @@
 #define MOD_RUNTIME_PROFILE_CAP_NPC           (1 << 3)
 #define MOD_RUNTIME_PROFILE_CAP_ASSET_REF     (1 << 4)
 #define MOD_RUNTIME_PROFILE_CAP_INLINE_ASSET  (1 << 5)
-#define MOD_RUNTIME_PROFILE_CAPABILITIES (MOD_RUNTIME_PROFILE_CAP_TEXT | MOD_RUNTIME_PROFILE_CAP_WEATHER | MOD_RUNTIME_PROFILE_CAP_ENGINE | MOD_RUNTIME_PROFILE_CAP_NPC | MOD_RUNTIME_PROFILE_CAP_ASSET_REF | MOD_RUNTIME_PROFILE_CAP_INLINE_ASSET)
+#define MOD_RUNTIME_PROFILE_CAP_BADGE_EFFECTS (1 << 6)
+#define MOD_RUNTIME_PROFILE_CAPABILITIES (MOD_RUNTIME_PROFILE_CAP_TEXT | MOD_RUNTIME_PROFILE_CAP_WEATHER | MOD_RUNTIME_PROFILE_CAP_ENGINE | MOD_RUNTIME_PROFILE_CAP_NPC | MOD_RUNTIME_PROFILE_CAP_ASSET_REF | MOD_RUNTIME_PROFILE_CAP_INLINE_ASSET | MOD_RUNTIME_PROFILE_CAP_BADGE_EFFECTS)
 
 #define MOD_RUNTIME_PROFILE_MAX_BLOB_SIZE 8192
 #define MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH 31
@@ -24,6 +26,7 @@
 #define MOD_RUNTIME_PROFILE_MAX_NPCS 16
 #define MOD_RUNTIME_PROFILE_MAX_ASSETS 8
 #define MOD_RUNTIME_PROFILE_MAX_ASSET_BYTES 4096
+#define MOD_RUNTIME_PROFILE_MAX_BADGE_EFFECTS 32
 
 enum ModRuntimeProfileRecordType
 {
@@ -34,6 +37,7 @@ enum ModRuntimeProfileRecordType
     MOD_RUNTIME_PROFILE_RECORD_ASSET_REF,
     MOD_RUNTIME_PROFILE_RECORD_ASSET_INLINE_SHEET,
     MOD_RUNTIME_PROFILE_RECORD_ASSET_INLINE_PALETTE,
+    MOD_RUNTIME_PROFILE_RECORD_BADGE_EFFECT,
 };
 
 enum ModRuntimeProfileResult
@@ -107,6 +111,17 @@ struct ModRuntimeProfileInlinePaletteRecord
     u16 colorCount;
 } __attribute__((packed));
 
+struct ModRuntimeProfileBadgeEffectRecord
+{
+    char key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    u8 badgeId;
+    u8 effectKind;
+    u8 target;
+    s8 percentPerLevel;
+    u8 maxLevel;
+    u16 flags;
+} __attribute__((packed));
+
 void ModRuntimeProfile_Init(void);
 void ModRuntimeProfile_Clear(void);
 bool8 ModRuntimeProfile_IsActive(void);
@@ -119,6 +134,7 @@ bool8 ModRuntimeProfile_GetWeather(struct ModWeatherDisplay *display);
 const char *ModRuntimeProfile_GetEngineRulesetId(void);
 const struct ModNpcDefinition *ModRuntimeProfile_FindNpc(const char *key);
 const struct ModSpriteAssetDefinition *ModRuntimeProfile_FindAsset(const char *key);
+const struct ModBadgeEffectDefinition *ModRuntimeProfile_GetBadgeEffects(u16 *count);
 void ModRuntimeProfile_OnMapLoad(void);
 
 #endif // GUARD_MOD_RUNTIME_PROFILE_H

@@ -12,13 +12,14 @@ NET_FEATURE_FLAG_MULTIPLAYER = 1 << 0
 NET_FEATURE_FLAG_EMULATOR_TRANSPORT = 1 << 1
 NET_REQUIRED_ONLINE_FEATURE_FLAGS = NET_FEATURE_FLAG_MULTIPLAYER | NET_FEATURE_FLAG_EMULATOR_TRANSPORT
 MOD_RUNTIME_PROFILE_PROTOCOL_VERSION = 1
-MOD_RUNTIME_PROFILE_CAPABILITY_HASH = 0x00000001
+MOD_RUNTIME_PROFILE_CAPABILITY_HASH = 0x00000002
 MOD_RUNTIME_PROFILE_CAP_TEXT = 1 << 0
 MOD_RUNTIME_PROFILE_CAP_WEATHER = 1 << 1
 MOD_RUNTIME_PROFILE_CAP_ENGINE = 1 << 2
 MOD_RUNTIME_PROFILE_CAP_NPC = 1 << 3
 MOD_RUNTIME_PROFILE_CAP_ASSET_REF = 1 << 4
 MOD_RUNTIME_PROFILE_CAP_INLINE_ASSET = 1 << 5
+MOD_RUNTIME_PROFILE_CAP_BADGE_EFFECTS = 1 << 6
 MOD_RUNTIME_PROFILE_CAPABILITIES = (
     MOD_RUNTIME_PROFILE_CAP_TEXT
     | MOD_RUNTIME_PROFILE_CAP_WEATHER
@@ -26,9 +27,19 @@ MOD_RUNTIME_PROFILE_CAPABILITIES = (
     | MOD_RUNTIME_PROFILE_CAP_NPC
     | MOD_RUNTIME_PROFILE_CAP_ASSET_REF
     | MOD_RUNTIME_PROFILE_CAP_INLINE_ASSET
+    | MOD_RUNTIME_PROFILE_CAP_BADGE_EFFECTS
 )
 MOD_CATALOG_HASH = 0xE64BCD9E
 MOD_CATALOG_COUNT = 1
+BADGE_LEVEL_MAX = 10
+BADGE_COUNT = 8
+BADGE_EFFECT_TYPE_NONE = 0
+BADGE_EFFECT_TYPE_RESISTANCE_PERCENT = 1
+BADGE_EFFECT_TYPE_DAMAGE_PERCENT = 2
+BADGE_EFFECT_TYPE_STAT_PERCENT = 3
+TYPE_NONE = 255
+NUMBER_OF_MON_TYPES = 18
+NUM_BATTLE_STATS = 8
 MODE_SOLO = "solo"
 MODE_ONLINE = "online"
 
@@ -91,6 +102,46 @@ class CommitEntry:
     server_revision: int = 0
 
 
+@dataclass(frozen=True)
+class BadgeEffect:
+    key: str
+    badge_id: int
+    effect_kind: int
+    target: int
+    percent_per_level: int
+    max_level: int
+    flags: int = 0
+
+    def __post_init__(self) -> None:
+        if not self.key:
+            raise ValueError("badge effect key is required")
+        if self.badge_id < 0 or self.badge_id >= BADGE_COUNT:
+            raise ValueError("badge effect badge_id is out of range")
+        if self.effect_kind == BADGE_EFFECT_TYPE_NONE or self.effect_kind > BADGE_EFFECT_TYPE_STAT_PERCENT:
+            raise ValueError("badge effect kind is invalid")
+        if self.effect_kind in {BADGE_EFFECT_TYPE_RESISTANCE_PERCENT, BADGE_EFFECT_TYPE_DAMAGE_PERCENT}:
+            if self.target == TYPE_NONE or self.target < 0 or self.target >= NUMBER_OF_MON_TYPES:
+                raise ValueError("badge effect type target is invalid")
+        elif self.target < 0 or self.target >= NUM_BATTLE_STATS:
+            raise ValueError("badge effect stat target is invalid")
+        if self.percent_per_level < -100 or self.percent_per_level > 100:
+            raise ValueError("badge effect percent_per_level is out of range")
+        if self.max_level < 1 or self.max_level > BADGE_LEVEL_MAX:
+            raise ValueError("badge effect max_level is out of range")
+
+    def catalog_hash(self) -> int:
+        return catalog_hash(
+            "badge_effect",
+            self.key,
+            self.badge_id,
+            self.effect_kind,
+            self.target,
+            self.percent_per_level,
+            self.max_level,
+            self.flags,
+        )
+
+
 class CommitLog:
     def __init__(self) -> None:
         self.entries: dict[TransactionKey, CommitEntry] = {}
@@ -148,6 +199,14 @@ class ServerRuntimeProfile:
     weather: str | None = "map-default"
     ruleset: str = "engine:gen3"
     asset_keys: tuple[str, ...] = ()
+    badge_effects: tuple[BadgeEffect, ...] = ()
+
+    def __post_init__(self) -> None:
+        seen: set[str] = set()
+        for effect in self.badge_effects:
+            if effect.key in seen:
+                raise ValueError(f"duplicate badge effect key {effect.key}")
+            seen.add(effect.key)
 
     def delta_for(self, client: "SyntheticClient") -> "ServerRuntimeProfile":
         text_delta = {
@@ -162,12 +221,18 @@ class ServerRuntimeProfile:
         asset_delta = tuple(
             key for key in self.asset_keys if client.local_catalog.get(f"asset:{key}") != catalog_hash("asset", key)
         )
+        badge_delta = tuple(
+            effect
+            for effect in self.badge_effects
+            if client.local_catalog.get(f"badge:{effect.key}") != effect.catalog_hash()
+        )
         return ServerRuntimeProfile(
             profile_hash=self.profile_hash,
             text=text_delta,
             weather=weather_delta,
             ruleset=self.ruleset,
             asset_keys=asset_delta,
+            badge_effects=badge_delta,
         )
 
 
@@ -178,6 +243,8 @@ class SyntheticClient:
     local_text: dict[str, str] = field(default_factory=dict)
     local_weather: str = "local"
     local_catalog: dict[str, int] = field(default_factory=dict)
+    local_badge_effects: tuple[BadgeEffect, ...] = ()
+    badge_levels: dict[int, int] = field(default_factory=dict)
     active_profile: ServerRuntimeProfile | None = None
     applied_profile_record_count: int = 0
     player_id: int = -1
@@ -185,7 +252,12 @@ class SyntheticClient:
 
     def apply_profile(self, profile: ServerRuntimeProfile) -> None:
         self.active_profile = profile
-        self.applied_profile_record_count = len(profile.text) + len(profile.asset_keys) + (1 if profile.weather is not None else 0)
+        self.applied_profile_record_count = (
+            len(profile.text)
+            + len(profile.asset_keys)
+            + len(profile.badge_effects)
+            + (1 if profile.weather is not None else 0)
+        )
 
     def clear_profile(self) -> None:
         self.active_profile = None
@@ -200,6 +272,19 @@ class SyntheticClient:
         if self.active_profile is not None and self.active_profile.weather is not None:
             return self.active_profile.weather
         return self.local_weather
+
+    def badge_effect_percent(self, effect_kind: int, target: int) -> int:
+        active_effects = self.active_profile.badge_effects if self.active_profile is not None else ()
+        shadowed = {effect.key for effect in active_effects}
+        local_effects = tuple(effect for effect in self.local_badge_effects if effect.key not in shadowed)
+        total = 0
+        for effect in tuple(active_effects) + local_effects:
+            if effect.effect_kind != effect_kind or effect.target != target:
+                continue
+            level = max(0, min(BADGE_LEVEL_MAX, self.badge_levels.get(effect.badge_id, 0)))
+            level = min(level, effect.max_level)
+            total += level * effect.percent_per_level
+        return total
 
 
 @dataclass(frozen=True)
@@ -598,6 +683,52 @@ def test_server_delta_profile_reuses_rom_catalog() -> None:
     assert client.applied_profile_record_count == 2
 
 
+def test_badge_effect_profile_deltas_and_level_caps() -> None:
+    host = SyntheticHost()
+    stone_ground = BadgeEffect("stone_ground_resist", 0, 1, 4, 1, 10)
+    stone_rock = BadgeEffect("stone_rock_resist", 0, 1, 5, 1, 10)
+    client = SyntheticClient(
+        "player",
+        local_badge_effects=(stone_ground,),
+        badge_levels={0: 12},
+        local_catalog={"badge:stone_ground_resist": stone_ground.catalog_hash()},
+    )
+    profile = ServerRuntimeProfile(0xBAD6E, badge_effects=(stone_ground, stone_rock))
+
+    room = host.create_room(client, profile)
+    assert client.room_id == room.room_id
+    assert client.active_profile is not None
+    assert client.active_profile.badge_effects == (stone_rock,)
+    assert client.badge_effect_percent(1, 4) == 10
+    assert client.badge_effect_percent(1, 5) == 10
+
+    client.badge_levels[0] = 0
+    assert client.badge_effect_percent(1, 4) == 0
+
+
+def test_badge_effect_validation_rejects_bad_records() -> None:
+    def rejects(*args: object) -> None:
+        try:
+            BadgeEffect(*args)  # type: ignore[arg-type]
+        except ValueError:
+            return
+        raise AssertionError(f"accepted invalid badge effect {args!r}")
+
+    rejects("bad_type_target", 0, BADGE_EFFECT_TYPE_RESISTANCE_PERCENT, NUMBER_OF_MON_TYPES, 1, 10)
+    rejects("type_none", 0, BADGE_EFFECT_TYPE_DAMAGE_PERCENT, TYPE_NONE, 1, 10)
+    rejects("bad_stat_target", 0, BADGE_EFFECT_TYPE_STAT_PERCENT, NUM_BATTLE_STATS, 1, 10)
+    rejects("none_effect", 0, BADGE_EFFECT_TYPE_NONE, 0, 1, 10)
+    rejects("zero_max_level", 0, BADGE_EFFECT_TYPE_RESISTANCE_PERCENT, 4, 1, 0)
+    rejects("bad_badge", BADGE_COUNT, BADGE_EFFECT_TYPE_RESISTANCE_PERCENT, 4, 1, 10)
+
+    duplicate = BadgeEffect("dupe", 0, BADGE_EFFECT_TYPE_RESISTANCE_PERCENT, 4, 1, 10)
+    try:
+        ServerRuntimeProfile(0xD00D, badge_effects=(duplicate, duplicate))
+    except ValueError:
+        return
+    raise AssertionError("accepted duplicate badge effect keys")
+
+
 def main() -> None:
     test_duplicate_commit_once()
     test_fail_closed_trade()
@@ -609,6 +740,8 @@ def main() -> None:
     test_server_runtime_profile_capability_gate()
     test_server_profiles_change_without_rom_rebuild()
     test_server_delta_profile_reuses_rom_catalog()
+    test_badge_effect_profile_deltas_and_level_caps()
+    test_badge_effect_validation_rejects_bad_records()
     print("Multiplayer host simulator checks OK")
 
 

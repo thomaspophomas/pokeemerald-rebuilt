@@ -5,6 +5,7 @@
 #include "global.fieldmap.h"
 #include "malloc.h"
 #include "multiplayer/constants.h"
+#include "mod/badge.h"
 #include "mod/runtime_profile.h"
 
 #define MOD_RUNTIME_PROFILE_MAX_CHUNKS ((MOD_RUNTIME_PROFILE_MAX_BLOB_SIZE + NET_PROFILE_CHUNK_DATA_SIZE - 1) / NET_PROFILE_CHUNK_DATA_SIZE)
@@ -54,6 +55,9 @@ struct ModRuntimeProfileState
     struct RuntimeProfileAsset assets[MOD_RUNTIME_PROFILE_MAX_ASSETS];
     u16 assetCount;
     u16 assetByteCount;
+    char badgeEffectKeys[MOD_RUNTIME_PROFILE_MAX_BADGE_EFFECTS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    struct ModBadgeEffectDefinition badgeEffects[MOD_RUNTIME_PROFILE_MAX_BADGE_EFFECTS];
+    u16 badgeEffectCount;
 };
 
 static EWRAM_DATA struct ModRuntimeProfileState *sProfile = NULL;
@@ -322,6 +326,62 @@ static u8 ParseInlinePaletteRecord(const u8 *payload, u16 size)
     return MOD_RUNTIME_PROFILE_RESULT_OK;
 }
 
+static bool8 RuntimeBadgeEffectKeyExists(const char *key)
+{
+    u16 i;
+
+    if (key == NULL)
+        return FALSE;
+
+    for (i = 0; i < sProfile->badgeEffectCount; i++)
+    {
+        if (strcmp(sProfile->badgeEffectKeys[i], key) == 0)
+            return TRUE;
+    }
+
+    return FALSE;
+}
+
+static u8 ParseBadgeEffectRecord(const u8 *payload, u16 size)
+{
+    struct ModRuntimeProfileBadgeEffectRecord record;
+    struct ModBadgeEffectDefinition candidate;
+    struct ModBadgeEffectDefinition *definition;
+    char *key;
+
+    if (size != sizeof(record) || sProfile->badgeEffectCount >= MOD_RUNTIME_PROFILE_MAX_BADGE_EFFECTS)
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    memcpy(&record, payload, sizeof(record));
+    record.key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    if (record.key[0] == '\0')
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    if (RuntimeBadgeEffectKeyExists(record.key))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    candidate.key = record.key;
+    candidate.badgeId = record.badgeId;
+    candidate.effectKind = record.effectKind;
+    candidate.target = record.target;
+    candidate.percentPerLevel = record.percentPerLevel;
+    candidate.maxLevel = record.maxLevel;
+    candidate.flags = record.flags;
+    if (!BadgeApi_IsEffectDefinitionValid(&candidate, FALSE))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    key = sProfile->badgeEffectKeys[sProfile->badgeEffectCount];
+    CopyBoundedString(key, record.key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    definition = &sProfile->badgeEffects[sProfile->badgeEffectCount++];
+    definition->key = key;
+    definition->badgeId = record.badgeId;
+    definition->effectKind = record.effectKind;
+    definition->target = record.target;
+    definition->percentPerLevel = record.percentPerLevel;
+    definition->maxLevel = record.maxLevel;
+    definition->flags = record.flags;
+    return MOD_RUNTIME_PROFILE_RESULT_OK;
+}
+
 static u8 ParseRecord(u8 type, const u8 *payload, u16 size)
 {
     switch (type)
@@ -340,6 +400,8 @@ static u8 ParseRecord(u8 type, const u8 *payload, u16 size)
         return ParseInlineSheetRecord(payload, size);
     case MOD_RUNTIME_PROFILE_RECORD_ASSET_INLINE_PALETTE:
         return ParseInlinePaletteRecord(payload, size);
+    case MOD_RUNTIME_PROFILE_RECORD_BADGE_EFFECT:
+        return ParseBadgeEffectRecord(payload, size);
     default:
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
     }
@@ -400,6 +462,8 @@ static u8 MeasureRecordStorage(u8 type, const u8 *payload, u16 size, u16 *textBy
             return MOD_RUNTIME_PROFILE_RESULT_BAD_SIZE;
         *assetBytes = nextAssetOffset + PLTT_SIZE_4BPP;
         return MOD_RUNTIME_PROFILE_RESULT_OK;
+    case MOD_RUNTIME_PROFILE_RECORD_BADGE_EFFECT:
+        return size == sizeof(struct ModRuntimeProfileBadgeEffectRecord) ? MOD_RUNTIME_PROFILE_RESULT_OK : MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
     default:
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
     }
@@ -461,9 +525,12 @@ static u8 ParseProfile(void)
     sProfile->npcCount = 0;
     sProfile->assetCount = 0;
     sProfile->assetByteCount = 0;
+    sProfile->badgeEffectCount = 0;
     memset(sProfile->texts, 0, sizeof(sProfile->texts));
     memset(sProfile->npcs, 0, sizeof(sProfile->npcs));
     memset(sProfile->assets, 0, sizeof(sProfile->assets));
+    memset(sProfile->badgeEffectKeys, 0, sizeof(sProfile->badgeEffectKeys));
+    memset(sProfile->badgeEffects, 0, sizeof(sProfile->badgeEffects));
     if (sProfile->textBytes != NULL)
         memset(sProfile->textBytes, 0, sProfile->textByteCapacity);
     if (sProfile->assetBytes != NULL)
@@ -687,6 +754,18 @@ const struct ModSpriteAssetDefinition *ModRuntimeProfile_FindAsset(const char *k
     }
 
     return NULL;
+}
+
+const struct ModBadgeEffectDefinition *ModRuntimeProfile_GetBadgeEffects(u16 *count)
+{
+    if (count != NULL)
+        *count = 0;
+    if (!ModRuntimeProfile_IsActive())
+        return NULL;
+
+    if (count != NULL)
+        *count = sProfile->badgeEffectCount;
+    return sProfile->badgeEffects;
 }
 
 void ModRuntimeProfile_OnMapLoad(void)

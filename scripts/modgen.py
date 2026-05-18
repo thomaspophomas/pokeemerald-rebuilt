@@ -39,6 +39,99 @@ TIME_SEGMENTS = {
     "NIGHT": "MOD_TIME_NIGHT",
 }
 
+BADGES = {
+    "STONE": "MOD_BADGE_STONE",
+    "KNUCKLE": "MOD_BADGE_KNUCKLE",
+    "DYNAMO": "MOD_BADGE_DYNAMO",
+    "HEAT": "MOD_BADGE_HEAT",
+    "BALANCE": "MOD_BADGE_BALANCE",
+    "FEATHER": "MOD_BADGE_FEATHER",
+    "MIND": "MOD_BADGE_MIND",
+    "RAIN": "MOD_BADGE_RAIN",
+}
+
+BADGE_EFFECT_TYPES = {
+    "NONE": "MOD_BADGE_EFFECT_TYPE_NONE",
+    "RESISTANCE_PERCENT": "MOD_BADGE_EFFECT_TYPE_RESISTANCE_PERCENT",
+    "DAMAGE_PERCENT": "MOD_BADGE_EFFECT_TYPE_DAMAGE_PERCENT",
+    "STAT_PERCENT": "MOD_BADGE_EFFECT_TYPE_STAT_PERCENT",
+}
+
+BADGE_EFFECT_TYPE_VALUES = {
+    "0": 0,
+    "NONE": 0,
+    "MOD_BADGE_EFFECT_TYPE_NONE": 0,
+    "1": 1,
+    "RESISTANCE_PERCENT": 1,
+    "MOD_BADGE_EFFECT_TYPE_RESISTANCE_PERCENT": 1,
+    "2": 2,
+    "DAMAGE_PERCENT": 2,
+    "MOD_BADGE_EFFECT_TYPE_DAMAGE_PERCENT": 2,
+    "3": 3,
+    "STAT_PERCENT": 3,
+    "MOD_BADGE_EFFECT_TYPE_STAT_PERCENT": 3,
+}
+
+BADGE_VALUES = {
+    "0": 0,
+    "STONE": 0,
+    "MOD_BADGE_STONE": 0,
+    "1": 1,
+    "KNUCKLE": 1,
+    "MOD_BADGE_KNUCKLE": 1,
+    "2": 2,
+    "DYNAMO": 2,
+    "MOD_BADGE_DYNAMO": 2,
+    "3": 3,
+    "HEAT": 3,
+    "MOD_BADGE_HEAT": 3,
+    "4": 4,
+    "BALANCE": 4,
+    "MOD_BADGE_BALANCE": 4,
+    "5": 5,
+    "FEATHER": 5,
+    "MOD_BADGE_FEATHER": 5,
+    "6": 6,
+    "MIND": 6,
+    "MOD_BADGE_MIND": 6,
+    "7": 7,
+    "RAIN": 7,
+    "MOD_BADGE_RAIN": 7,
+}
+
+POKEMON_TYPE_VALUES = {
+    "TYPE_NORMAL": 0,
+    "TYPE_FIGHTING": 1,
+    "TYPE_FLYING": 2,
+    "TYPE_POISON": 3,
+    "TYPE_GROUND": 4,
+    "TYPE_ROCK": 5,
+    "TYPE_BUG": 6,
+    "TYPE_GHOST": 7,
+    "TYPE_STEEL": 8,
+    "TYPE_MYSTERY": 9,
+    "TYPE_FIRE": 10,
+    "TYPE_WATER": 11,
+    "TYPE_GRASS": 12,
+    "TYPE_ELECTRIC": 13,
+    "TYPE_PSYCHIC": 14,
+    "TYPE_ICE": 15,
+    "TYPE_DRAGON": 16,
+    "TYPE_DARK": 17,
+    "TYPE_NONE": 255,
+}
+
+BATTLE_STAT_VALUES = {
+    "STAT_HP": 0,
+    "STAT_ATK": 1,
+    "STAT_DEF": 2,
+    "STAT_SPEED": 3,
+    "STAT_SPATK": 4,
+    "STAT_SPDEF": 5,
+    "STAT_ACC": 6,
+    "STAT_EVASION": 7,
+}
+
 
 class ModgenError(Exception):
     pass
@@ -160,6 +253,91 @@ def normalize_time_segment(value: Any) -> str:
     if upper in TIME_SEGMENTS:
         return TIME_SEGMENTS[upper]
     raise ModgenError(f"Unknown time segment {value!r}")
+
+
+def normalize_badge_id(value: Any) -> str:
+    if isinstance(value, int):
+        return str(value)
+    if not isinstance(value, str):
+        raise ModgenError(f"Badge id {value!r} is invalid")
+    value = value.strip()
+    if value.startswith("MOD_BADGE_"):
+        return value
+    upper = value.upper()
+    if upper in BADGES:
+        return BADGES[upper]
+    raise ModgenError(f"Unknown badge id {value!r}")
+
+
+def normalize_badge_effect_type(value: Any) -> str:
+    if isinstance(value, int):
+        return str(value)
+    if not isinstance(value, str):
+        raise ModgenError(f"Badge effect type {value!r} is invalid")
+    value = value.strip()
+    if value.startswith("MOD_BADGE_EFFECT_TYPE_"):
+        return value
+    upper = value.upper()
+    if upper in BADGE_EFFECT_TYPES:
+        return BADGE_EFFECT_TYPES[upper]
+    raise ModgenError(f"Unknown badge effect type {value!r}")
+
+
+def badge_value(value: str) -> int:
+    key = value.strip().upper()
+    if key in BADGE_VALUES:
+        return BADGE_VALUES[key]
+    if re.fullmatch(r"0x[0-9A-Fa-f]+|-?[0-9]+", value.strip()):
+        return int(value, 0)
+    raise ModgenError(f"Badge id {value!r} is invalid")
+
+
+def badge_effect_type_value(value: str) -> int:
+    key = value.strip().upper()
+    if key in BADGE_EFFECT_TYPE_VALUES:
+        return BADGE_EFFECT_TYPE_VALUES[key]
+    if re.fullmatch(r"0x[0-9A-Fa-f]+|-?[0-9]+", value.strip()):
+        return int(value, 0)
+    raise ModgenError(f"Badge effect type {value!r} is invalid")
+
+
+def badge_effect_target_value(value: Any) -> int:
+    if isinstance(value, int):
+        return value
+    if value is None:
+        return 0
+    if not isinstance(value, str):
+        raise ModgenError(f"Badge effect target {value!r} is invalid")
+    stripped = value.strip()
+    upper = stripped.upper()
+    if upper in POKEMON_TYPE_VALUES:
+        return POKEMON_TYPE_VALUES[upper]
+    if upper in BATTLE_STAT_VALUES:
+        return BATTLE_STAT_VALUES[upper]
+    if re.fullmatch(r"0x[0-9A-Fa-f]+|-?[0-9]+", stripped):
+        return int(stripped, 0)
+    raise ModgenError(f"Badge effect target {value!r} is not a known Pokemon type, battle stat, or integer")
+
+
+def validate_badge_effect(key: str, badge: str, effect: str, target_value: int, percent: int, max_level: int) -> None:
+    badge_id = badge_value(badge)
+    effect_kind = badge_effect_type_value(effect)
+
+    if badge_id < 0 or badge_id >= 8:
+        raise ModgenError(f"{key}: badge must be in [0, 7]")
+    if effect_kind == 0:
+        raise ModgenError(f"{key}: effect NONE is reserved for empty default records")
+    if effect_kind > 3:
+        raise ModgenError(f"{key}: effect must be RESISTANCE_PERCENT, DAMAGE_PERCENT, or STAT_PERCENT")
+    if percent < -100 or percent > 100:
+        raise ModgenError(f"{key}: percentPerLevel must be in [-100, 100]")
+    if max_level < 1 or max_level > 10:
+        raise ModgenError(f"{key}: maxLevel must be in [1, 10]")
+    if effect_kind in (1, 2):
+        if target_value == 255 or target_value < 0 or target_value >= 18:
+            raise ModgenError(f"{key}: target must be a real Pokemon type in [0, 17]")
+    elif target_value < 0 or target_value >= 8:
+        raise ModgenError(f"{key}: target must be a battle stat in [0, 7]")
 
 
 def require_mod_id(value: Any, path: Path) -> str:
@@ -302,6 +480,40 @@ def collect_time_segments(mods: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
                 )
     segments.sort(key=lambda segment: (segment["start"], segment["key"]))
     return segments
+
+
+def collect_badge_effects(mods: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    effects = []
+    seen = set()
+    for mod in mods:
+        for path in iter_json_files(mod["root"] / "badges"):
+            for index, item in enumerate(as_list(read_json(path), "effects")):
+                key = key_for(mod["id"], item, f"effect_{index}")
+                if key in seen:
+                    raise ModgenError(f"Duplicate badge effect key {key!r}")
+                seen.add(key)
+
+                percent = int(item.get("percentPerLevel", item.get("percent_per_level", 0)))
+                max_level = int(item.get("maxLevel", item.get("max_level", 1)))
+                badge = normalize_badge_id(item.get("badge", item.get("badgeId", item.get("badge_id"))))
+                effect = normalize_badge_effect_type(item.get("effect", item.get("effectKind", item.get("effect_kind", "NONE"))))
+                target = item.get("target")
+                target_value = badge_effect_target_value(target)
+                validate_badge_effect(key, badge, effect, target_value, percent, max_level)
+
+                effects.append(
+                    {
+                        "key": key,
+                        "badge": badge,
+                        "effect": effect,
+                        "target": c_int_or_token(target, "0"),
+                        "percent": percent,
+                        "max_level": max_level,
+                        "flags": c_int_or_token(item.get("flags"), "0"),
+                    }
+                )
+    effects.sort(key=lambda effect: effect["key"])
+    return effects
 
 
 def collect_sprite_assets(mods: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
@@ -579,6 +791,7 @@ def collect_catalog_entries(
     language_texts: List[Dict[str, Any]],
     engines: List[Dict[str, Any]],
     npcs: List[Dict[str, Any]],
+    badge_effects: List[Dict[str, Any]],
 ) -> List[Dict[str, int]]:
     entries: List[Dict[str, int]] = []
 
@@ -634,6 +847,18 @@ def collect_catalog_entries(
             asset["tile_tag"],
             asset["palette_tag"],
         )
+    for effect in badge_effects:
+        add_catalog_entry(
+            entries,
+            "MOD_CATALOG_ENTRY_BADGE_EFFECT",
+            effect["key"],
+            effect["badge"],
+            effect["effect"],
+            effect["target"],
+            effect["percent"],
+            effect["max_level"],
+            effect["flags"],
+        )
 
     entries.sort(key=lambda entry: (entry["type"], entry["key_hash"], entry["content_hash"]))
     return entries
@@ -656,6 +881,7 @@ def write_header(path: Path) -> None:
 #define GUARD_GENERATED_MOD_REGISTRY_H
 
 #include "global.h"
+#include "mod/badge.h"
 #include "mod/catalog.h"
 #include "mod/battle_sprite.h"
 #include "mod/engine.h"
@@ -693,6 +919,8 @@ extern const struct ModLanguageText gModLanguageTexts[];
 extern const u16 gModLanguageTextCount;
 extern const struct ModPokeBallDefinition gModPokeBallDefinitions[];
 extern const u16 gModPokeBallDefinitionCount;
+extern const struct ModBadgeEffectDefinition gModBadgeEffects[];
+extern const u16 gModBadgeEffectCount;
 extern const struct EngineRuleset gModEngineRulesets[];
 extern const u16 gModEngineRulesetCount;
 extern const struct ModNpcDefinition gModNpcDefinitions[];
@@ -709,7 +937,7 @@ extern const u32 gModCatalogHash;
     )
 
 
-def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, Any]], events: List[Dict[str, Any]], weather: List[Dict[str, Any]], time_segments: List[Dict[str, Any]], sprite_assets: List[Dict[str, Any]], overworld_sprites: List[Dict[str, Any]], battle_sprites: List[Dict[str, Any]], followers: List[Dict[str, Any]], language_texts: List[Dict[str, Any]], pokeballs: List[Dict[str, Any]], engines: List[Dict[str, Any]], npcs: List[Dict[str, Any]], maps: List[Dict[str, Any]], catalog_entries: List[Dict[str, int]], catalog_hash: int) -> None:
+def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, Any]], events: List[Dict[str, Any]], weather: List[Dict[str, Any]], time_segments: List[Dict[str, Any]], badge_effects: List[Dict[str, Any]], sprite_assets: List[Dict[str, Any]], overworld_sprites: List[Dict[str, Any]], battle_sprites: List[Dict[str, Any]], followers: List[Dict[str, Any]], language_texts: List[Dict[str, Any]], pokeballs: List[Dict[str, Any]], engines: List[Dict[str, Any]], npcs: List[Dict[str, Any]], maps: List[Dict[str, Any]], catalog_entries: List[Dict[str, int]], catalog_hash: int) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     event_handlers = sorted({event["handler"] for event in events if event["handler"] != "NULL"})
     weather_handlers = sorted({provider["handler"] for provider in weather if provider["handler"] != "NULL"})
@@ -886,6 +1114,17 @@ def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, A
     lines.append(f"const u16 gModPokeBallDefinitionCount = {len(pokeballs)};")
     lines.append("")
 
+    lines.append("const struct ModBadgeEffectDefinition gModBadgeEffects[] =")
+    lines.append("{")
+    if badge_effects:
+        for effect in badge_effects:
+            lines.append(f"    {{ {c_string(effect['key'])}, {effect['badge']}, {effect['effect']}, {effect['target']}, {effect['percent']}, {effect['max_level']}, {effect['flags']} }},")
+    else:
+        lines.append("    { NULL, 0, 0, 0, 0, 0, 0 },")
+    lines.append("};")
+    lines.append(f"const u16 gModBadgeEffectCount = {len(badge_effects)};")
+    lines.append("")
+
     lines.append("const struct EngineRuleset gModEngineRulesets[] =")
     lines.append("{")
     for engine in engines:
@@ -953,6 +1192,7 @@ def main() -> int:
     events = collect_events(mods)
     weather = collect_weather(mods)
     time_segments = collect_time_segments(mods)
+    badge_effects = collect_badge_effects(mods)
     sprite_assets = collect_sprite_assets(mods)
     overworld_sprites = collect_overworld_sprites(mods)
     battle_sprites = collect_battle_sprites(mods)
@@ -962,7 +1202,7 @@ def main() -> int:
     engines = collect_engines(mods)
     npcs = collect_npcs(mods)
     maps = collect_maps(mods)
-    catalog_entries = collect_catalog_entries(weather, sprite_assets, language_texts, engines, npcs)
+    catalog_entries = collect_catalog_entries(weather, sprite_assets, language_texts, engines, npcs, badge_effects)
     catalog_hash = calc_catalog_hash(catalog_entries)
     sources = collect_mod_sources(mods)
 
@@ -974,6 +1214,7 @@ def main() -> int:
         events,
         weather,
         time_segments,
+        badge_effects,
         sprite_assets,
         overworld_sprites,
         battle_sprites,

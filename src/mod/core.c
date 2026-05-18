@@ -1,4 +1,5 @@
 #include "global.h"
+#include "mod/badge.h"
 #include "mod/core.h"
 #include "mod/engine.h"
 #include "mod/event.h"
@@ -16,6 +17,7 @@ void ModApi_Init(void)
     LanguageApi_Init();
     ModEvent_Init();
     ModFlag_Init();
+    BadgeApi_Init();
     ModTime_Init();
     ModWeather_Init();
     EngineApi_Init();

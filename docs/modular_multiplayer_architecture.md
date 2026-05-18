@@ -59,6 +59,7 @@ than editing central code.
 - flags
 - events
 - weather providers
+- badge effect definitions
 - engine rulesets
 - NPC definitions
 - map definitions
@@ -89,6 +90,9 @@ Current ports:
   default-language fallback.
 - `PokeBallApi_*` owns catch modifiers, throw results, battle scripts, ball
   graphics, and catch-commit hooks.
+- `BadgeApi_*` owns badge levels and queryable badge effect definitions. It can
+  express effects such as per-level resistance or stat percentages, but battle
+  formulas must opt in explicitly before those definitions affect gameplay.
 - `EngineApi_*` exposes generated rulesets, with Gen3 as the default ruleset.
 - `NpcApi_*` wraps object-event spawning and visibility for mod-owned NPCs.
 - `MapApi_*` wraps map header, connection, warp, and coordinate queries.
@@ -134,9 +138,9 @@ Every online bridge session must expose `transportMode=server_bridge`,
 `sessionEpoch`, `playerToken`, `joinNonce`, `serverClockSeconds`,
 `protocolVersion`, `bridgeVersion`, `buildId`, `rulesetHash`, `featureFlags`,
 `profileProtocolVersion`, `profileCapabilityFlags`, and
-`profileCapabilityHash`, plus generated mod catalog hash/count. The tracked manifest in
-`docs/multiplayer_net_manifest.json` is the base artifact contract that the
-future server should allowlist. The emulator-side bridge must resolve
+`profileCapabilityHash`, plus generated mod catalog schema/hash/count. The
+tracked manifest in `docs/multiplayer_net_manifest.json` is the base artifact
+contract that the future server should allowlist. The emulator-side bridge must resolve
 `gNetEmulatorBridgeMailbox` from symbols and write that EWRAM mailbox; fixed
 pseudo-addresses such as `0x10000000` are not part of the ROM contract.
 
@@ -144,13 +148,13 @@ Multiplayer mods are server-authoritative through a bounded runtime profile.
 The ROM uses its compiled generated mod registry when offline. After joining an
 online server, the server can send one room-specific delta profile over
 reliable profile packets; supported mod APIs then prefer server-provided text,
-weather, engine ruleset ID, NPCs, and sprite assets while falling back to the
-compiled registry for missing keys. If the server does not know the ROM catalog
-hash from `ClientHello`, it can request the compact generated catalog and cache
-it by hash, then omit entries the ROM already has. `rulesetHash` stays a base
-engine/protocol compatibility value rather than a modpack selector. Runtime
-profiles do not allow arbitrary code, new maps, audio, scripts, save-schema
-changes, or unbounded asset packs.
+weather, engine ruleset ID, NPCs, sprite assets, and badge effect definitions
+while falling back to the compiled registry for missing keys. If the server does
+not know the ROM catalog hash from `ClientHello`, it can request the compact
+generated catalog and cache it by hash, then omit entries the ROM already has.
+`rulesetHash` stays a base engine/protocol compatibility value rather than a
+modpack selector. Runtime profiles do not allow arbitrary code, new maps,
+audio, scripts, save-schema changes, or unbounded asset packs.
 
 Client data is always a request, never authority. The ROM sends
 `ClientHello`, `Heartbeat`, `LocalSnapshot`, `MoveIntent`, `InteractIntent`,

@@ -66,6 +66,7 @@ Use fully qualified keys only when intentionally referencing a shared namespace:
 - `events/*.json`
 - `weather/*.json`
 - `time/*.json`
+- `badges/*.json`
 - `sprites/assets/*.json`
 - `sprites/overworld/*.json`
 - `sprites/battle/*.json`
@@ -140,6 +141,33 @@ Lower priority values resolve first. A provider returns `TRUE` after filling a
 
 `startMinute` and `endMinute` are inclusive minute-of-day values in
 `[0, 1439]`. Wrapping ranges such as 22:00 through 04:59 are valid.
+
+`mods/demo/badges/effects.json`:
+
+```json
+{
+  "effects": [
+    {
+      "id": "stone_ground_resist",
+      "badge": "STONE",
+      "effect": "RESISTANCE_PERCENT",
+      "target": "TYPE_GROUND",
+      "percentPerLevel": 1,
+      "maxLevel": 10,
+      "flags": 0
+    }
+  ]
+}
+```
+
+Badge effects are data records for `BadgeApi_GetEffectPercent`. They do not
+change battle math until a battle formula explicitly queries and applies them.
+`RESISTANCE_PERCENT` and `DAMAGE_PERCENT` targets must be real Pokemon types
+`0..NUMBER_OF_MON_TYPES-1`; `TYPE_NONE` is rejected. `STAT_PERCENT` targets
+must be battle stats `0..NUM_BATTLE_STATS-1`. `NONE` is reserved for empty
+generated defaults and is not valid in mod JSON or runtime profiles. A vanilla
+badge flag still counts as badge level `1`, so setting a modded badge level to
+`0` does not suppress an already-earned vanilla badge.
 
 `mods/demo/sprites/assets/assets.json`:
 

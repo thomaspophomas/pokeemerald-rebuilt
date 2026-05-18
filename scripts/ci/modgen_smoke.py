@@ -15,6 +15,26 @@ def write_json(path: Path, data) -> None:
     path.write_text(json.dumps(data, indent=2), encoding="utf-8")
 
 
+def run_modgen(modgen: Path, root: Path) -> subprocess.CompletedProcess:
+    return subprocess.run(
+        [
+            sys.executable,
+            str(modgen),
+            "--root",
+            str(root),
+            "--out-header",
+            "include/generated/mod_registry.h",
+            "--out-source",
+            "src/generated/mod_registry.c",
+            "--out-make",
+            "build/generated/mod_sources.mk",
+        ],
+        check=False,
+        text=True,
+        capture_output=True,
+    )
+
+
 def main() -> int:
     repo = Path(__file__).resolve().parents[2]
     modgen = repo / "scripts" / "modgen.py"
@@ -88,6 +108,21 @@ def main() -> int:
             {"segments": [{"id": "deep_night", "startMinute": 1320, "endMinute": 299, "segment": "NIGHT"}]},
         )
         write_json(
+            mod_root / "badges" / "effects.json",
+            {
+                "effects": [
+                    {
+                        "id": "stone_ground_resist",
+                        "badge": "STONE",
+                        "effect": "RESISTANCE_PERCENT",
+                        "target": "TYPE_GROUND",
+                        "percentPerLevel": 1,
+                        "maxLevel": 10,
+                    }
+                ]
+            },
+        )
+        write_json(
             mod_root / "engines" / "rulesets.json",
             {"engines": [{"id": "demo_engine", "name": "Demo Engine", "version": 1, "saveCompatible": True}]},
         )
@@ -112,20 +147,9 @@ def main() -> int:
         (mod_root / "src").mkdir(parents=True, exist_ok=True)
         (mod_root / "src" / "demo.c").write_text("/* demo */\n", encoding="utf-8")
 
-        subprocess.check_call(
-            [
-                sys.executable,
-                str(modgen),
-                "--root",
-                str(root),
-                "--out-header",
-                "include/generated/mod_registry.h",
-                "--out-source",
-                "src/generated/mod_registry.c",
-                "--out-make",
-                "build/generated/mod_sources.mk",
-            ]
-        )
+        result = run_modgen(modgen, root)
+        if result.returncode != 0:
+            raise AssertionError(result.stderr)
 
         header = (root / "include" / "generated" / "mod_registry.h").read_text(encoding="utf-8")
         source = (root / "src" / "generated" / "mod_registry.c").read_text(encoding="utf-8")
@@ -142,6 +166,8 @@ def main() -> int:
             "demo:npc_intro",
             "demo:story_ball",
             "Demo_BallModifier",
+            "gModBadgeEffects",
+            "demo:stone_ground_resist",
             "demo:guide",
             "demo:demo_town",
             "demo:demo_engine",
@@ -149,6 +175,7 @@ def main() -> int:
             "gModCatalogHash",
             "MOD_CATALOG_ENTRY_TEXT",
             "MOD_CATALOG_ENTRY_SPRITE_ASSET",
+            "MOD_CATALOG_ENTRY_BADGE_EFFECT",
         ]
         for needle in required:
             if needle not in source:
@@ -157,8 +184,33 @@ def main() -> int:
             raise AssertionError("generated header missing manifest declaration")
         if "extern const struct ModCatalogEntry gModCatalogEntries[]" not in header:
             raise AssertionError("generated header missing catalog declaration")
+        if "extern const struct ModBadgeEffectDefinition gModBadgeEffects[]" not in header:
+            raise AssertionError("generated header missing badge effect declaration")
         if "MOD_C_SRCS += mods/demo/src/demo.c" not in make:
             raise AssertionError("generated make fragment missing mod C source")
+
+        valid_effect = {
+            "id": "stone_ground_resist",
+            "badge": "STONE",
+            "effect": "RESISTANCE_PERCENT",
+            "target": "TYPE_GROUND",
+            "percentPerLevel": 1,
+            "maxLevel": 10,
+        }
+        invalid_badge_cases = {
+            "type target outside range": [{**valid_effect, "target": 18}],
+            "TYPE_NONE target": [{**valid_effect, "target": "TYPE_NONE"}],
+            "stat target outside range": [{**valid_effect, "effect": "STAT_PERCENT", "target": 8}],
+            "NONE effect": [{**valid_effect, "effect": "NONE"}],
+            "maxLevel zero": [{**valid_effect, "maxLevel": 0}],
+            "badge outside range": [{**valid_effect, "badge": 8}],
+            "duplicate badge key": [valid_effect, valid_effect],
+        }
+        for label, effects in invalid_badge_cases.items():
+            write_json(mod_root / "badges" / "effects.json", {"effects": effects})
+            result = run_modgen(modgen, root)
+            if result.returncode == 0:
+                raise AssertionError(f"modgen accepted invalid badge effect: {label}")
 
     print("modgen smoke OK")
     return 0

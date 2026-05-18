@@ -9,6 +9,10 @@
 #include "multiplayer/battle.h"
 #include "mod/runtime_profile.h"
 
+#if FEATURE_MULTIPLAYER_SMOKE_STATUS
+#include "multiplayer/smoke_status.h"
+#endif
+
 #if FEATURE_MULTIPLAYER
 
 static EWRAM_DATA struct MultiplayerSession sSession = {0};
@@ -16,6 +20,14 @@ static EWRAM_DATA bool8 sConnectRequested = FALSE;
 static EWRAM_DATA bool8 sClientHelloSent = FALSE;
 static EWRAM_DATA u16 sHeartbeatTimer = 0;
 static EWRAM_DATA u16 sTransportLossFrames = 0;
+
+#if FEATURE_MULTIPLAYER_SMOKE_STATUS
+EWRAM_DATA volatile struct NetMultiplayerSmokeStatus gNetMultiplayerSmokeStatus = {0};
+static EWRAM_DATA u32 sLastSmokeProfileAckHash = 0;
+static EWRAM_DATA u8 sLastSmokeProfileAckResult = 0;
+
+static void UpdateSmokeStatus(void);
+#endif
 
 static bool8 RuntimeAllowsOnline(void)
 {
@@ -34,7 +46,27 @@ static void ResetSession(void)
     sHeartbeatTimer = 0;
     sTransportLossFrames = 0;
     ModRuntimeProfile_Clear();
+#if FEATURE_MULTIPLAYER_SMOKE_STATUS
+    sLastSmokeProfileAckHash = 0;
+    sLastSmokeProfileAckResult = 0;
+    UpdateSmokeStatus();
+#endif
 }
+
+#if FEATURE_MULTIPLAYER_SMOKE_STATUS
+static void UpdateSmokeStatus(void)
+{
+    gNetMultiplayerSmokeStatus.magic = NET_SMOKE_STATUS_MAGIC;
+    gNetMultiplayerSmokeStatus.sessionState = sSession.state;
+    gNetMultiplayerSmokeStatus.healthState = sSession.healthState;
+    gNetMultiplayerSmokeStatus.localPlayerId = sSession.localPlayerId;
+    gNetMultiplayerSmokeStatus.playerCount = sSession.playerCount;
+    gNetMultiplayerSmokeStatus.sessionEpoch = sSession.sessionEpoch;
+    gNetMultiplayerSmokeStatus.activeProfileHash = ModRuntimeProfile_GetActiveHash();
+    gNetMultiplayerSmokeStatus.lastProfileAckHash = sLastSmokeProfileAckHash;
+    gNetMultiplayerSmokeStatus.lastProfileAckResult = sLastSmokeProfileAckResult;
+}
+#endif
 
 static u8 GetMaxPlayersForSubsession(u8 type)
 {
@@ -879,6 +911,12 @@ static void SendProfileAck(u32 profileHash, u8 result, u16 detail)
 {
     struct NetServerProfileAck ack;
 
+#if FEATURE_MULTIPLAYER_SMOKE_STATUS
+    sLastSmokeProfileAckHash = profileHash;
+    sLastSmokeProfileAckResult = result;
+    UpdateSmokeStatus();
+#endif
+
     memset(&ack, 0, sizeof(ack));
     ack.profileHash = profileHash;
     ack.result = result;
@@ -941,14 +979,27 @@ void MultiplayerSession_Tick(void)
 
     MultiplayerSession_RefreshRuntimeMode();
     if (!RuntimeAllowsOnline())
+    {
+#if FEATURE_MULTIPLAYER_SMOKE_STATUS
+        UpdateSmokeStatus();
+#endif
         return;
+    }
     if (!sConnectRequested && sSession.state == MULTIPLAYER_SESSION_OFFLINE)
+    {
+#if FEATURE_MULTIPLAYER_SMOKE_STATUS
+        UpdateSmokeStatus();
+#endif
         return;
+    }
 
     NetTransport_Tick();
     if (!NetTransport_ReadSessionView(&view))
     {
         HandleTransportLoss();
+#if FEATURE_MULTIPLAYER_SMOKE_STATUS
+        UpdateSmokeStatus();
+#endif
         return;
     }
 
@@ -956,6 +1007,9 @@ void MultiplayerSession_Tick(void)
     {
         MultiplayerOverworld_Reset();
         sSession.state = MULTIPLAYER_SESSION_ERROR;
+#if FEATURE_MULTIPLAYER_SMOKE_STATUS
+        UpdateSmokeStatus();
+#endif
         return;
     }
 
@@ -965,6 +1019,9 @@ void MultiplayerSession_Tick(void)
         PublishHeartbeat();
     PublishLocalSnapshot();
     MultiplayerOverworld_Tick(&sSession);
+#if FEATURE_MULTIPLAYER_SMOKE_STATUS
+    UpdateSmokeStatus();
+#endif
 #endif
 }
 

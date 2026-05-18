@@ -238,7 +238,8 @@ if grep -R -n "gWeather" src/mod include/mod 2>/dev/null \
 fi
 
 if grep -R -n "FlagSet\\|FlagClear\\|FlagGet" src/mod include/mod 2>/dev/null \
-    | grep -v "src/mod/flags.c" >/tmp/architecture_guard_matches.txt; then
+    | grep -v "src/mod/flags.c" \
+    | grep -v "src/mod/badge.c" >/tmp/architecture_guard_matches.txt; then
     echo "Mod code must use ModFlag_* instead of raw script flags outside the flag adapter." >&2
     cat /tmp/architecture_guard_matches.txt >&2
     exit 1

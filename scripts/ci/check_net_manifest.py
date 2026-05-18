@@ -14,6 +14,7 @@ CONSTANTS = ROOT / "include" / "multiplayer" / "constants.h"
 TRANSPORT = ROOT / "include" / "multiplayer" / "transport.h"
 MAILBOX = ROOT / "include" / "multiplayer" / "bridge_mailbox.h"
 PROFILE = ROOT / "include" / "mod" / "runtime_profile.h"
+CATALOG = ROOT / "include" / "mod" / "catalog.h"
 MODGEN = ROOT / "scripts" / "modgen.py"
 MANIFEST = ROOT / "docs" / "multiplayer_net_manifest.json"
 
@@ -55,7 +56,8 @@ def calc_mod_catalog_hash() -> int:
     language_texts = modgen.collect_language_texts(mods)
     engines = modgen.collect_engines(mods)
     npcs = modgen.collect_npcs(mods)
-    catalog_entries = modgen.collect_catalog_entries(weather, sprite_assets, language_texts, engines, npcs)
+    badge_effects = modgen.collect_badge_effects(mods)
+    catalog_entries = modgen.collect_catalog_entries(weather, sprite_assets, language_texts, engines, npcs, badge_effects)
     return modgen.calc_catalog_hash(catalog_entries)
 
 
@@ -68,6 +70,7 @@ def main() -> None:
     expect("rulesetHash", manifest["rulesetHash"], f"0x{parse_int(read_define(CONSTANTS, 'NET_RULESET_HASH')):08X}")
     expect("profileProtocolVersion", manifest["profileProtocolVersion"], parse_int(read_define(PROFILE, "MOD_RUNTIME_PROFILE_PROTOCOL_VERSION")))
     expect("profileCapabilityHash", manifest["profileCapabilityHash"], f"0x{parse_int(read_define(PROFILE, 'MOD_RUNTIME_PROFILE_CAPABILITY_HASH')):08X}")
+    expect("modCatalogSchemaHash", manifest["modCatalogSchemaHash"], f"0x{parse_int(read_define(CATALOG, 'MOD_CATALOG_SCHEMA_HASH')):08X}")
     expect("modCatalogHash", manifest["modCatalogHash"], f"0x{calc_mod_catalog_hash():08X}")
     expect("transportModeValue", manifest["transportModeValue"], parse_int(read_define(CONSTANTS, "NET_TRANSPORT_MODE_SERVER_BRIDGE")))
     expect("maxNetPlayers", manifest["maxNetPlayers"], parse_int(read_define(CONSTANTS, "MAX_NET_PLAYERS")))

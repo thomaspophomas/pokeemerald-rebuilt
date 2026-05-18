@@ -6,7 +6,9 @@
 #define MOD_SAVE_STATE_MAGIC 0x4D535456 // "MSTV"
 #define MOD_SAVE_STATE_VERSION 1
 #define MOD_SAVE_FLAG_BYTES 128
-#define MOD_SAVE_RESERVED_BYTES 224
+#define MOD_SAVE_BADGE_LEVEL_COUNT 8
+#define MOD_SAVE_BADGE_LEVEL_BYTES MOD_SAVE_BADGE_LEVEL_COUNT
+#define MOD_SAVE_RESERVED_BYTES (224 - MOD_SAVE_BADGE_LEVEL_BYTES)
 
 struct ModSaveState
 {
@@ -15,6 +17,7 @@ struct ModSaveState
     u16 size;
     u32 revision;
     u8 flags[MOD_SAVE_FLAG_BYTES];
+    u8 badgeLevels[MOD_SAVE_BADGE_LEVEL_BYTES];
     u8 reserved[MOD_SAVE_RESERVED_BYTES];
 };
 

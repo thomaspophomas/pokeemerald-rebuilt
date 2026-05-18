@@ -3,7 +3,7 @@
 
 #include "global.h"
 
-#define MOD_CATALOG_SCHEMA_HASH 0x00000001
+#define MOD_CATALOG_SCHEMA_HASH 0x00000002
 
 enum ModCatalogEntryType
 {
@@ -12,6 +12,7 @@ enum ModCatalogEntryType
     MOD_CATALOG_ENTRY_ENGINE,
     MOD_CATALOG_ENTRY_NPC,
     MOD_CATALOG_ENTRY_SPRITE_ASSET,
+    MOD_CATALOG_ENTRY_BADGE_EFFECT,
 };
 
 struct ModCatalogEntry
