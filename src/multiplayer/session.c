@@ -5,6 +5,7 @@
 #include "multiplayer/session.h"
 #include "multiplayer/companion_save_beacon.h"
 #include "multiplayer/commit.h"
+#include "multiplayer/interaction_menu.h"
 #include "multiplayer/transport.h"
 #include "multiplayer/overworld.h"
 #include "multiplayer/battle.h"
@@ -39,6 +40,7 @@ static bool8 RuntimeAllowsOnline(void)
 
 static void ResetSession(void)
 {
+    MultiplayerInteractionMenu_Reset();
     memset(&sSession, 0, sizeof(sSession));
     sSession.state = MULTIPLAYER_SESSION_OFFLINE;
     sSession.localPlayerId = NET_PLAYER_NONE;
@@ -102,7 +104,7 @@ static bool8 IsValidSubsessionState(u8 state)
 
 static bool8 IsValidInteractionState(u8 state)
 {
-    return state <= MULTIPLAYER_INTERACTION_TRADE;
+    return state <= MULTIPLAYER_INTERACTION_OPTIONS_MENU;
 }
 
 static bool8 DirectionIsValid(u8 direction)
@@ -237,6 +239,9 @@ static bool8 SnapshotIsValid(const struct NetPlayerSnapshot *snapshot, u8 slot, 
         return FALSE;
     if ((snapshot->interactionState == MULTIPLAYER_INTERACTION_SCRIPT
       || snapshot->interactionState == MULTIPLAYER_INTERACTION_WARP)
+     && !(snapshot->flags & NET_PLAYER_FLAG_BUSY))
+        return FALSE;
+    if (snapshot->interactionState == MULTIPLAYER_INTERACTION_OPTIONS_MENU
      && !(snapshot->flags & NET_PLAYER_FLAG_BUSY))
         return FALSE;
     if (snapshot->staleFrames > NET_PLAYER_DISCONNECT_FRAMES)
@@ -471,7 +476,8 @@ static bool8 SnapshotInteractionBlocks(const struct NetPlayerSnapshot *snapshot)
     if (SnapshotIsStale(snapshot))
         return TRUE;
     if (snapshot->interactionState == MULTIPLAYER_INTERACTION_SCRIPT
-     || snapshot->interactionState == MULTIPLAYER_INTERACTION_WARP)
+     || snapshot->interactionState == MULTIPLAYER_INTERACTION_WARP
+     || snapshot->interactionState == MULTIPLAYER_INTERACTION_OPTIONS_MENU)
         return TRUE;
     if ((snapshot->flags & NET_PLAYER_FLAG_IN_SUBSESSION)
      && SubsessionStateBlocksInteraction(snapshot->subsessionState))
@@ -574,6 +580,7 @@ static void CopyViewIntoSession(const struct NetTransportSessionView *view)
         sSession.localSnapshotSequence = 0;
         sSession.localActionSequence = 0;
         MultiplayerCommit_Init();
+        MultiplayerInteractionMenu_Reset();
         ModRuntimeProfile_Clear();
     }
     sSession.healthState = MULTIPLAYER_HEALTH_HEALTHY;
@@ -727,6 +734,10 @@ static void PublishLocalSnapshot(void)
             snapshot.interactionState = MULTIPLAYER_INTERACTION_SCRIPT;
         else if (sSession.interactionBarrier.type == MULTIPLAYER_BARRIER_WARP)
             snapshot.interactionState = MULTIPLAYER_INTERACTION_WARP;
+    }
+    else
+    {
+        MultiplayerInteractionMenu_ApplySnapshotState(&snapshot);
     }
     if (NetTransport_WriteLocalSnapshot(&snapshot))
         sSession.players[sSession.localPlayerId] = snapshot;
@@ -970,6 +981,7 @@ void MultiplayerSession_Init(void)
     ResetSession();
     NetTransport_Init();
     MultiplayerCommit_Init();
+    MultiplayerInteractionMenu_Init();
     MultiplayerOverworld_Init();
     MultiplayerCompanionSaveBeacon_Init();
 #if FEATURE_MULTIPLAYER_AUTOCONNECT
@@ -1026,6 +1038,7 @@ void MultiplayerSession_Tick(void)
 
     CopyViewIntoSession(&sanitizedView);
     ProcessInboundPackets();
+    MultiplayerInteractionMenu_UpdateRemoteRequests(&sSession);
     if (!PublishClientHello())
         PublishHeartbeat();
     PublishLocalSnapshot();

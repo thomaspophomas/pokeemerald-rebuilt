@@ -30,7 +30,7 @@ server builds. The current `master` values are:
 {
   "protocolVersion": 2,
   "emulatorBridgeVersion": 5,
-  "buildId": "0x00010003",
+  "buildId": "0x00010004",
   "rulesetHash": "0x00000003",
   "profileProtocolVersion": 1,
   "profileCapabilityHash": "0x00000006",

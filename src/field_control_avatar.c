@@ -18,6 +18,7 @@
 #include "link.h"
 #include "match_call.h"
 #include "metatile_behavior.h"
+#include "multiplayer/overworld.h"
 #include "overworld.h"
 #include "pokemon.h"
 #include "safari_zone.h"
@@ -169,6 +170,8 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
 
     GetInFrontOfPlayerPosition(&position);
     metatileBehavior = MapGridGetMetatileBehaviorAt(position.x, position.y);
+    if (input->pressedAButton && MultiplayerOverworld_TryInteractWithRemotePlayer(position.x, position.y, position.elevation, playerDirection) == TRUE)
+        return TRUE;
     if (input->pressedAButton && TryStartInteractionScript(&position, metatileBehavior, playerDirection) == TRUE)
         return TRUE;
 

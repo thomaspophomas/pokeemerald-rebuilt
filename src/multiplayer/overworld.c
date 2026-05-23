@@ -4,6 +4,8 @@
 #include "field_player_avatar.h"
 #include "fieldmap.h"
 #include "main.h"
+#include "multiplayer/interaction_menu.h"
+#include "multiplayer/session.h"
 #include "multiplayer/overworld.h"
 #include "overworld.h"
 #include "sprite.h"
@@ -216,6 +218,25 @@ static u32 GetSnapshotDistanceFromLocalPlayer(const struct NetPlayerSnapshot *sn
     return dx + dy;
 }
 
+static bool8 SnapshotIsInteractionTarget(const struct NetPlayerSnapshot *snapshot, s16 targetX, s16 targetY)
+{
+    struct ObjectEvent *playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
+    s32 dx;
+    s32 dy;
+
+    if (snapshot->x == targetX && snapshot->y == targetY)
+        return TRUE;
+
+    dx = (s32)snapshot->x - playerObjEvent->currentCoords.x;
+    dy = (s32)snapshot->y - playerObjEvent->currentCoords.y;
+    if (dx < 0)
+        dx = -dx;
+    if (dy < 0)
+        dy = -dy;
+
+    return dx + dy <= 1;
+}
+
 static u8 GetRemoteSpriteBudget(void)
 {
     u8 budget = CountFreeSpriteSlots() + MultiplayerOverworld_GetActiveRemoteAvatarCount();
@@ -400,6 +421,7 @@ void MultiplayerOverworld_Reset(void)
 
 void MultiplayerOverworld_OnMapLoad(void)
 {
+    MultiplayerInteractionMenu_Reset();
     MultiplayerOverworld_Reset();
 }
 
@@ -408,6 +430,50 @@ void MultiplayerOverworld_OnPlayerStep(u8 direction, u16 newKeys, u16 heldKeys)
     (void)direction;
     (void)newKeys;
     (void)heldKeys;
+}
+
+bool8 MultiplayerOverworld_TryInteractWithRemotePlayer(s16 x, s16 y, u8 elevation, u8 direction)
+{
+#if FEATURE_MULTIPLAYER
+    const struct MultiplayerSession *session = MultiplayerSession_Get();
+    u8 i;
+
+    (void)elevation;
+    (void)direction;
+
+    if (session == NULL || session->localPlayerId >= MAX_NET_PLAYERS)
+        return FALSE;
+    if (!MultiplayerSession_IsOnline())
+        return FALSE;
+    if (MultiplayerInteractionMenu_IsActive())
+        return FALSE;
+
+    for (i = 0; i < MAX_NET_PLAYERS; i++)
+    {
+        const struct NetPlayerSnapshot *snapshot;
+
+        if (i == session->localPlayerId)
+            continue;
+
+        snapshot = &session->players[i];
+        if (!SnapshotIsOnCurrentMap(snapshot, session->tick))
+            continue;
+        if (!SnapshotIsInteractionTarget(snapshot, x, y))
+            continue;
+        if (MultiplayerSession_IsPlayerInteractionBlocked(i)
+         || MultiplayerSession_IsPlayerInteractionBlocked(session->localPlayerId))
+            return FALSE;
+
+        return MultiplayerInteractionMenu_StartLocal(i);
+    }
+#else
+    (void)x;
+    (void)y;
+    (void)elevation;
+    (void)direction;
+#endif
+
+    return FALSE;
 }
 
 void MultiplayerOverworld_BuildLocalSnapshot(struct NetPlayerSnapshot *snapshot, u8 playerId, u32 tick)
