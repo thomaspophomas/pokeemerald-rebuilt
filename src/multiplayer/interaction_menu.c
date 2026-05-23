@@ -1,6 +1,8 @@
 #include "global.h"
+#include "international_string_util.h"
 #include "menu.h"
 #include "multiplayer/interaction_menu.h"
+#include "palette.h"
 #include "script.h"
 #include "script_menu.h"
 #include "sound.h"
@@ -39,6 +41,34 @@ static EWRAM_DATA u8 sTargetPlayerId = NET_PLAYER_NONE;
 static EWRAM_DATA bool8 sRemoteMenuSeen[MAX_NET_PLAYERS] = {0};
 
 #define tWindowId data[0]
+#define tInputDelay data[1]
+
+#define INTERACTION_MENU_LEFT 18
+#define INTERACTION_MENU_TOP 6
+#define INTERACTION_MENU_INPUT_DELAY 8
+
+static u8 CreateInteractionMenuWindow(void)
+{
+    u8 windowId;
+    u8 width = GetMaxWidthInMenuTable(sInteractionMenuActions, ARRAY_COUNT(sInteractionMenuActions));
+    struct WindowTemplate template;
+
+    template = CreateWindowTemplate(
+        0,
+        INTERACTION_MENU_LEFT + 1,
+        INTERACTION_MENU_TOP + 1,
+        width,
+        ARRAY_COUNT(sInteractionMenuActions) * 2,
+        15,
+        100);
+
+    windowId = AddWindow(&template);
+    if (windowId == WINDOW_NONE)
+        return WINDOW_NONE;
+
+    PutWindowTilemap(windowId);
+    return windowId;
+}
 
 static void MoveCoordsOneStep(u8 direction, s16 *x, s16 *y)
 {
@@ -109,10 +139,14 @@ static bool8 StartInteractionMenu(u8 initiatorPlayerId, u8 targetPlayerId)
     if (ArePlayerFieldControlsLocked())
         return FALSE;
 
-    sWindowId = CreateWindowFromRect(18, 6, 11, ARRAY_COUNT(sInteractionMenuActions) * 2);
+    sWindowId = CreateInteractionMenuWindow();
+    if (sWindowId == WINDOW_NONE)
+        return FALSE;
+
     SetStandardWindowBorderStyle(sWindowId, FALSE);
     PrintMenuTable(sWindowId, ARRAY_COUNT(sInteractionMenuActions), sInteractionMenuActions);
     InitMenuInUpperLeftCornerNormal(sWindowId, ARRAY_COUNT(sInteractionMenuActions), 0);
+    CopyWindowToVram(sWindowId, COPYWIN_MAP);
     ScheduleBgCopyTilemapToVram(0);
 
     sMenuActive = TRUE;
@@ -123,12 +157,23 @@ static bool8 StartInteractionMenu(u8 initiatorPlayerId, u8 targetPlayerId)
 
     taskId = CreateTask(Task_HandleInteractionMenu, 80);
     gTasks[taskId].tWindowId = sWindowId;
+    gTasks[taskId].tInputDelay = INTERACTION_MENU_INPUT_DELAY;
     return TRUE;
 }
 
 static void Task_HandleInteractionMenu(u8 taskId)
 {
-    s8 selection = Menu_ProcessInputNoWrap();
+    s8 selection;
+
+    if (gPaletteFade.active)
+        return;
+    if (gTasks[taskId].tInputDelay > 0)
+    {
+        gTasks[taskId].tInputDelay--;
+        return;
+    }
+
+    selection = Menu_ProcessInputNoWrap();
 
     if (selection == MENU_NOTHING_CHOSEN)
         return;
@@ -203,13 +248,19 @@ void MultiplayerInteractionMenu_UpdateRemoteRequests(const struct MultiplayerSes
         if (sRemoteMenuSeen[i])
             continue;
 
-        sRemoteMenuSeen[i] = TRUE;
-        if (SnapshotCanOpenRemoteMenu(snapshot, local))
-            StartInteractionMenu(i, session->localPlayerId);
+        if (SnapshotCanOpenRemoteMenu(snapshot, local) && StartInteractionMenu(i, session->localPlayerId))
+        {
+            sRemoteMenuSeen[i] = TRUE;
+        }
+        else
+        {
+            sRemoteMenuSeen[i] = FALSE;
+        }
     }
 }
 
 #undef tWindowId
+#undef tInputDelay
 
 #else
 
