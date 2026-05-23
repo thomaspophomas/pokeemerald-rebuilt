@@ -443,6 +443,7 @@ u8 CreateOrUpdateVirtualObject(u8 graphicsId, u8 virtualObjId, s16 x, s16 y, u8 
 void DestroyVirtualObject(u8 virtualObjId);
 void SetVirtualObjectMapCoords(u8 virtualObjId, s16 x, s16 y, u8 elevation);
 void TurnVirtualObject(u8 virtualObjId, u8 direction);
+void TurnVirtualObjectWithMovement(u8 virtualObjId, u8 direction, bool8 moving);
 void SetVirtualObjectGraphics(u8 virtualObjId, u8 graphicsId);
 void SetVirtualObjectInvisibility(u8 virtualObjId, bool32 invisible);
 bool32 IsVirtualObjectInvisible(u8 virtualObjId);

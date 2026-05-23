@@ -68,6 +68,24 @@ static bool8 DirectionIsValid(u8 direction)
         || direction == DIR_EAST;
 }
 
+static bool8 MovementActionShowsWalking(u8 movementActionId)
+{
+    return (movementActionId >= MOVEMENT_ACTION_WALK_SLOW_DOWN
+         && movementActionId <= MOVEMENT_ACTION_WALK_NORMAL_RIGHT)
+        || (movementActionId >= MOVEMENT_ACTION_WALK_FAST_DOWN
+         && movementActionId <= MOVEMENT_ACTION_WALK_IN_PLACE_FASTER_RIGHT)
+        || (movementActionId >= MOVEMENT_ACTION_RIDE_WATER_CURRENT_DOWN
+         && movementActionId <= MOVEMENT_ACTION_PLAYER_RUN_RIGHT)
+        || (movementActionId >= MOVEMENT_ACTION_JUMP_SPECIAL_DOWN
+         && movementActionId <= MOVEMENT_ACTION_JUMP_SPECIAL_RIGHT)
+        || (movementActionId >= MOVEMENT_ACTION_JUMP_DOWN
+         && movementActionId <= MOVEMENT_ACTION_JUMP_IN_PLACE_RIGHT)
+        || movementActionId == MOVEMENT_ACTION_WALK_DOWN_START_AFFINE
+        || movementActionId == MOVEMENT_ACTION_WALK_DOWN_AFFINE
+        || (movementActionId >= MOVEMENT_ACTION_ACRO_WHEELIE_HOP_DOWN
+         && movementActionId <= MOVEMENT_ACTION_WALK_SLOW_DIAGONAL_DOWN_RIGHT);
+}
+
 static bool8 SnapshotIsFresh(const struct NetPlayerSnapshot *snapshot, u32 currentTick)
 {
     if (snapshot->tick == 0 || currentTick == 0)
@@ -236,6 +254,10 @@ static void SpawnRemoteActor(u8 actorIndex, const struct NetPlayerSnapshot *snap
         ResetRemoteActor(actorIndex);
         return;
     }
+    TurnVirtualObjectWithMovement(
+        sRemoteActors[actorIndex].virtualObjId,
+        snapshot->facingDirection,
+        MovementActionShowsWalking(snapshot->movementActionId));
 
     sRemoteActors[actorIndex].spriteId = spriteId;
     sRemoteActors[actorIndex].graphicsId = graphicsId;
@@ -270,7 +292,10 @@ static void MoveRemoteActor(u8 actorIndex, const struct NetPlayerSnapshot *snaps
     }
 
     SetVirtualObjectMapCoords(sRemoteActors[actorIndex].virtualObjId, x, y, snapshot->elevation);
-    TurnVirtualObject(sRemoteActors[actorIndex].virtualObjId, snapshot->facingDirection);
+    TurnVirtualObjectWithMovement(
+        sRemoteActors[actorIndex].virtualObjId,
+        snapshot->facingDirection,
+        MovementActionShowsWalking(snapshot->movementActionId));
 }
 
 static void SyncRemoteActor(const struct NetPlayerSnapshot *snapshot, u32 currentTick)

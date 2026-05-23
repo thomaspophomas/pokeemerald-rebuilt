@@ -1594,6 +1594,9 @@ u8 CreateObjectGraphicsSprite(u16 graphicsId, void (*callback)(struct Sprite *),
 #define sVirtualObjElev             data[1]
 #define sVirtualObjGraphicsId       data[2]
 #define sVirtualObjGraphicsRevision data[3]
+#define sVirtualObjInvisible        data[4]
+#define sVirtualObjAnimNum          data[5]
+#define sVirtualObjAnimState        data[6]
 
 // "Virtual Objects" are a class of sprites used instead of a full object event.
 // Used when more objects are needed than the object event limit (for Contest / Battle Dome audiences and group members in Union Room).
@@ -1630,6 +1633,9 @@ u8 CreateVirtualObject(u8 graphicsId, u8 virtualObjId, s16 x, s16 y, u8 elevatio
         sprite->sVirtualObjElev = elevation;
         sprite->sVirtualObjGraphicsId = graphicsId;
         sprite->sVirtualObjGraphicsRevision = 0;
+        sprite->sVirtualObjInvisible = FALSE;
+        sprite->sVirtualObjAnimNum = 0;
+        sprite->sVirtualObjAnimState = 0;
         if (graphicsInfo->paletteSlot == PALSLOT_NPC_SPECIAL)
             LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag, graphicsInfo->paletteSlot);
         else if (graphicsInfo->paletteSlot >= 16)
@@ -8615,9 +8621,9 @@ void UpdateObjectEventSpriteInvisibility(struct Sprite *sprite, bool8 invisible)
         sprite->invisible = TRUE;
 }
 
-#define sInvisible     data[2]
-#define sAnimNum       data[3]
-#define sAnimState     data[4]
+#define sInvisible     sVirtualObjInvisible
+#define sAnimNum       sVirtualObjAnimNum
+#define sAnimState     sVirtualObjAnimState
 
 static void SpriteCB_VirtualObject(struct Sprite *sprite)
 {
@@ -8663,6 +8669,8 @@ void SetVirtualObjectMapCoords(u8 virtualObjId, s16 x, s16 y, u8 elevation)
 {
     u8 spriteId = GetVirtualObjectSpriteId(virtualObjId);
     struct Sprite *sprite;
+    s16 oldX;
+    s16 oldY;
 
     if (spriteId == MAX_SPRITES)
         return;
@@ -8671,8 +8679,29 @@ void SetVirtualObjectMapCoords(u8 virtualObjId, s16 x, s16 y, u8 elevation)
     x += MAP_OFFSET;
     y += MAP_OFFSET;
     SetSpritePosToOffsetMapCoords(&x, &y, 8, 16);
-    sprite->x = x;
-    sprite->y = y + sprite->centerToCornerVecY;
+    y += sprite->centerToCornerVecY;
+    oldX = sprite->x + sprite->x2;
+    oldY = sprite->y + sprite->y2;
+    if (sprite->x != x || sprite->y != y)
+    {
+        sprite->x = x;
+        sprite->y = y;
+        if (sprite->sAnimNum == 0)
+        {
+            sprite->x2 = oldX - x;
+            sprite->y2 = oldY - y;
+            if (sprite->x2 > 16 || sprite->x2 < -16 || sprite->y2 > 16 || sprite->y2 < -16)
+            {
+                sprite->x2 = 0;
+                sprite->y2 = 0;
+            }
+        }
+        else
+        {
+            sprite->x2 = 0;
+            sprite->y2 = 0;
+        }
+    }
     sprite->sVirtualObjElev = elevation;
     InitObjectPriorityByElevation(sprite, elevation);
     SetObjectSubpriorityByElevation(elevation, sprite, 1);
@@ -8680,10 +8709,25 @@ void SetVirtualObjectMapCoords(u8 virtualObjId, s16 x, s16 y, u8 elevation)
 
 void TurnVirtualObject(u8 virtualObjId, u8 direction)
 {
+    TurnVirtualObjectWithMovement(virtualObjId, direction, FALSE);
+}
+
+void TurnVirtualObjectWithMovement(u8 virtualObjId, u8 direction, bool8 moving)
+{
     u8 spriteId = GetVirtualObjectSpriteId(virtualObjId);
 
     if (spriteId != MAX_SPRITES)
-        StartSpriteAnim(&gSprites[spriteId], GetFaceDirectionAnimNum(direction));
+    {
+        struct Sprite *sprite = &gSprites[spriteId];
+        u8 animNum;
+
+        if (moving || sprite->x2 != 0 || sprite->y2 != 0)
+            animNum = GetMoveDirectionAnimNum(direction);
+        else
+            animNum = GetFaceDirectionAnimNum(direction);
+        if (sprite->animNum != animNum)
+            StartSpriteAnim(sprite, animNum);
+    }
 }
 
 void SetVirtualObjectGraphics(u8 virtualObjId, u8 graphicsId)
@@ -8806,6 +8850,18 @@ static void VirtualObject_UpdateAnim(struct Sprite *sprite)
         MoveUnionRoomObjectUp(sprite);
         break;
     case 0:
+        if (sprite->x2 > 2)
+            sprite->x2 -= 2;
+        else if (sprite->x2 < -2)
+            sprite->x2 += 2;
+        else
+            sprite->x2 = 0;
+        if (sprite->y2 > 2)
+            sprite->y2 -= 2;
+        else if (sprite->y2 < -2)
+            sprite->y2 += 2;
+        else
+            sprite->y2 = 0;
         break;
     default:
         sprite->sAnimNum = 0;
