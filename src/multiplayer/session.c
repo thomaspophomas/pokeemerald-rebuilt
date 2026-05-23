@@ -22,6 +22,8 @@ static EWRAM_DATA bool8 sClientHelloSent = FALSE;
 static EWRAM_DATA u16 sHeartbeatTimer = 0;
 static EWRAM_DATA u16 sTransportLossFrames = 0;
 
+#define NET_TRANSPORT_VIEW_LOSS_GRACE_FRAMES 30
+
 #if FEATURE_MULTIPLAYER_SMOKE_STATUS
 EWRAM_DATA volatile struct NetMultiplayerSmokeStatus gNetMultiplayerSmokeStatus = {0};
 static EWRAM_DATA u32 sLastSmokeProfileAckHash = 0;
@@ -941,9 +943,9 @@ static void HandleTransportLoss(void)
     if (sTransportLossFrames < NET_PLAYER_DISCONNECT_FRAMES)
         sTransportLossFrames++;
 
-    MultiplayerOverworld_Reset();
     if (sTransportLossFrames >= NET_PLAYER_DISCONNECT_FRAMES)
     {
+        MultiplayerOverworld_Reset();
         AbortLocalSubsessionsForDisconnect();
         ResetSession();
         if (sConnectRequested)
@@ -951,9 +953,10 @@ static void HandleTransportLoss(void)
     }
     else if (sTransportLossFrames >= NET_PLAYER_STALE_FRAMES)
     {
+        MultiplayerOverworld_Reset();
         sSession.healthState = MULTIPLAYER_HEALTH_STALE;
     }
-    else
+    else if (sTransportLossFrames >= NET_TRANSPORT_VIEW_LOSS_GRACE_FRAMES)
     {
         sSession.healthState = MULTIPLAYER_HEALTH_DEGRADED;
     }

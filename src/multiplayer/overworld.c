@@ -23,9 +23,14 @@ struct RemotePlayerActor
     u8 mapNum;
     u32 sessionEpoch;
     u16 graphicsRevision;
+    u16 missingFrames;
 };
 
 static EWRAM_DATA struct RemotePlayerActor sRemoteActors[MAX_NET_REMOTE_PLAYERS] = {0};
+
+#define REMOTE_ACTOR_MISSING_GRACE_FRAMES 60
+
+static void SpawnRemoteActor(u8 actorIndex, const struct NetPlayerSnapshot *snapshot);
 
 static u8 GetRemoteActorIndexByPlayerId(u8 playerId)
 {
@@ -51,6 +56,7 @@ static void ResetRemoteActor(u8 i)
     sRemoteActors[i].mapNum = 0;
     sRemoteActors[i].sessionEpoch = 0;
     sRemoteActors[i].graphicsRevision = 0;
+    sRemoteActors[i].missingFrames = 0;
 }
 
 static void DespawnRemoteActor(u8 i)
@@ -58,6 +64,31 @@ static void DespawnRemoteActor(u8 i)
     if (sRemoteActors[i].active)
         DestroyVirtualObject(sRemoteActors[i].virtualObjId);
     ResetRemoteActor(i);
+}
+
+static void MarkRemoteActorMissing(u8 i)
+{
+    if (!sRemoteActors[i].active)
+        return;
+
+    if (sRemoteActors[i].missingFrames < REMOTE_ACTOR_MISSING_GRACE_FRAMES)
+    {
+        sRemoteActors[i].missingFrames++;
+        return;
+    }
+
+    DespawnRemoteActor(i);
+}
+
+static void RespawnRemoteActor(u8 actorIndex, const struct NetPlayerSnapshot *snapshot)
+{
+    if (sRemoteActors[actorIndex].active)
+        DestroyVirtualObject(sRemoteActors[actorIndex].virtualObjId);
+
+    ResetRemoteActor(actorIndex);
+    sRemoteActors[actorIndex].active = TRUE;
+    sRemoteActors[actorIndex].playerId = snapshot->playerId;
+    SpawnRemoteActor(actorIndex, snapshot);
 }
 
 static bool8 DirectionIsValid(u8 direction)
@@ -265,6 +296,7 @@ static void SpawnRemoteActor(u8 actorIndex, const struct NetPlayerSnapshot *snap
     sRemoteActors[actorIndex].mapNum = snapshot->mapNum;
     sRemoteActors[actorIndex].sessionEpoch = snapshot->sessionEpoch;
     sRemoteActors[actorIndex].graphicsRevision = snapshot->graphicsRevision;
+    sRemoteActors[actorIndex].missingFrames = 0;
 }
 
 static void MoveRemoteActor(u8 actorIndex, const struct NetPlayerSnapshot *snapshot)
@@ -277,7 +309,7 @@ static void MoveRemoteActor(u8 actorIndex, const struct NetPlayerSnapshot *snaps
      || sRemoteActors[actorIndex].mapNum != snapshot->mapNum
      || sRemoteActors[actorIndex].sessionEpoch != snapshot->sessionEpoch)
     {
-        DespawnRemoteActor(actorIndex);
+        RespawnRemoteActor(actorIndex, snapshot);
         return;
     }
 
@@ -296,6 +328,7 @@ static void MoveRemoteActor(u8 actorIndex, const struct NetPlayerSnapshot *snaps
         sRemoteActors[actorIndex].virtualObjId,
         snapshot->facingDirection,
         MovementActionShowsWalking(snapshot->movementActionId));
+    sRemoteActors[actorIndex].missingFrames = 0;
 }
 
 static void SyncRemoteActor(const struct NetPlayerSnapshot *snapshot, u32 currentTick)
@@ -306,7 +339,7 @@ static void SyncRemoteActor(const struct NetPlayerSnapshot *snapshot, u32 curren
     if (!SnapshotIsOnCurrentMap(snapshot, currentTick))
     {
         if (actorIndex != MAX_NET_REMOTE_PLAYERS)
-            DespawnRemoteActor(actorIndex);
+            MarkRemoteActorMissing(actorIndex);
         return;
     }
 
@@ -432,7 +465,7 @@ void MultiplayerOverworld_Tick(const struct MultiplayerSession *session)
         if (!selected[i])
         {
             if (actorIndex != MAX_NET_REMOTE_PLAYERS)
-                DespawnRemoteActor(actorIndex);
+                MarkRemoteActorMissing(actorIndex);
             continue;
         }
 
