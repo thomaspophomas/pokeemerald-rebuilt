@@ -74,6 +74,12 @@ Use fully qualified keys only when intentionally referencing a shared namespace:
 - `followers/*.json`
 - `lang/*.json`
 - `pokeballs/*.json`
+- `fishing/*.json`
+- `items/*.json`
+- `rewards/*.json`
+- `pokemon/*.json`
+- `battle/moves/*.json`
+- `trainers/*.json`
 - `engines/*.json`
 - `npcs/*.json`
 - `maps/<MapName>/map.json`
@@ -168,6 +174,228 @@ must be battle stats `0..NUM_BATTLE_STATS-1`. `NONE` is reserved for empty
 generated defaults and is not valid in mod JSON or runtime profiles. A vanilla
 badge flag still counts as badge level `1`, so setting a modded badge level to
 `0` does not suppress an already-earned vanilla badge.
+
+`mods/demo/fishing/actions.json`:
+
+```json
+{
+  "actions": [
+    {
+      "id": "extra_reel",
+      "hook": "FishingApi_RequestConfiguredAction",
+      "hookKey": "configured_button",
+      "rods": ["GOOD", "SUPER"],
+      "phases": ["INPUT_WINDOW"],
+      "buttonMask": "B_BUTTON",
+      "timeoutFrames": 24,
+      "successOutcome": "CONTINUE",
+      "failureOutcome": "GOT_AWAY",
+      "promptKey": "press_b_to_reel",
+      "params": [1, 2]
+    }
+  ]
+}
+```
+
+Fishing actions are optional C hooks that run inside the vanilla fishing task.
+With no registered actions, the fishing loop keeps the original bite odds,
+dots, timing, inputs, and encounter flow. Hooks receive a `FishingContext` and a
+`FishingActionRequest`; returning `CONTINUE` falls through to vanilla behavior,
+`OVERRIDE` applies context changes, `REQUEST_ACTION` lets the fishing task wait
+for the configured button/timeout, and `CANCEL` exits through the normal failure
+path. Valid phases are `START`, `ROUND_START`, `DOT_CONFIG`, `BITE_CHECK`,
+`INPUT_WINDOW`, `MORE_DOTS_CHECK`, `BEFORE_ENCOUNTER`, and `END`. Rods are
+`OLD`, `GOOD`, and `SUPER`; `rodMask` may be used instead of `rods`.
+
+Online profiles may only provide fishing-action data for hooks already compiled
+into the ROM. A server record names the compiled source with `sourceKey` and
+`hookKey`; it cannot provide function pointers, scripts, or new executable code.
+
+`mods/demo/encounters/route101.json`:
+
+```json
+{
+  "encounters": [
+    {
+      "id": "route101_land",
+      "map": "MAP_ROUTE101",
+      "area": "LAND",
+      "encounterRate": 20,
+      "priority": 10,
+      "hook": "Demo_EncounterHook",
+      "hookKey": "scale_level",
+      "slots": [
+        { "species": "SPECIES_POOCHYENA", "minLevel": 2, "maxLevel": 4, "weight": 100 },
+        { "species": "SPECIES_ZIGZAGOON", "minLevel": 2, "maxLevel": 3, "weight": 60 }
+      ]
+    }
+  ]
+}
+```
+
+Encounter definitions override the current map/area when their map and area
+match. Areas are `LAND`, `WATER`, `ROCK_SMASH`, and `FISHING`; fishing
+definitions and slots may restrict `rods`/`rodMask` to `OLD`, `GOOD`, or
+`SUPER`. Slots use weighted selection and fixed min/max levels. Optional hooks
+receive `ModEncounterContext` during rate and species selection and can
+continue, override, or cancel the generated result. With no matching
+definition, all vanilla encounter rates, ability effects, repel checks, Feebas,
+roamers, outbreaks, and battle setup remain on the original path.
+
+Online profiles may provide bounded encounter data directly and may reference
+only encounter hooks already advertised in the ROM catalog by `sourceKey` and
+`hookKey`.
+
+`mods/demo/shops/oldale.json`:
+
+```json
+{
+  "shops": [
+    {
+      "id": "oldale_basic",
+      "map": "MAP_OLDALE_TOWN_MART",
+      "type": "NORMAL",
+      "items": ["ITEM_POKE_BALL", "ITEM_POTION", "ITEM_ANTIDOTE"]
+    }
+  ]
+}
+```
+
+Shop definitions replace the item list for the current map and shop type when a
+matching clerk opens a mart. Types are `NORMAL`, `DECOR`, and `DECOR2`; item
+lists are bounded to `MOD_SHOP_MAX_ITEMS` and must contain real item IDs. With
+no matching definition, the script-provided vanilla mart list is used unchanged.
+Online profiles may provide shop data directly because it contains no executable
+hook code.
+
+`mods/demo/items/items.json`:
+
+```json
+{
+  "items": [
+    {
+      "id": "cheap_potion",
+      "itemId": "ITEM_POTION",
+      "nameKey": "item_cheap_potion_name",
+      "descriptionKey": "item_cheap_potion_desc",
+      "price": 100,
+      "pocket": "POCKET_ITEMS",
+      "fieldUseHook": "ItemUseOutOfBattle_Medicine",
+      "fieldUseHookKey": "vanilla_medicine"
+    }
+  ]
+}
+```
+
+Item definitions can override item metadata and field/battle use functions for
+existing item IDs. The generator infers override flags from supplied fields, or
+`flags` may name explicit item override bits. Online item profiles may provide
+metadata directly, but `fieldUseHookKey` and `battleUseHookKey` must reference
+compiled hooks from the ROM catalog.
+
+`mods/demo/rewards/pickup.json`:
+
+```json
+{
+  "rewards": [
+    {
+      "id": "early_pickup_potion",
+      "source": "PICKUP_COMMON",
+      "minLevel": 1,
+      "maxLevel": 20,
+      "itemId": "ITEM_POTION",
+      "quantity": 1
+    }
+  ]
+}
+```
+
+Reward definitions currently cover Pickup, rare Pickup, and Battle Pyramid
+Pickup sources. They can replace the selected item/quantity or delegate to a
+compiled reward hook. Hook references in online profiles use `sourceKey` and
+`hookKey`; server profiles cannot introduce new reward code.
+
+`mods/demo/pokemon/poochyena.json`:
+
+```json
+{
+  "pokemon": [
+    {
+      "id": "fast_poochyena",
+      "species": "SPECIES_POOCHYENA",
+      "info": {
+        "baseStats": [35, 55, 35, 45, 30, 30],
+        "types": ["TYPE_DARK", "TYPE_DARK"],
+        "abilities": ["ABILITY_RUN_AWAY", "ABILITY_QUICK_FEET"],
+        "growthRate": "GROWTH_MEDIUM_FAST",
+        "items": ["ITEM_NONE", "ITEM_NONE"]
+      },
+      "levelUpMoves": [
+        { "level": 1, "move": "MOVE_TACKLE" },
+        { "level": 5, "move": "MOVE_HOWL" }
+      ],
+      "evolutions": [
+        { "method": "EVO_LEVEL", "param": 18, "targetSpecies": "SPECIES_MIGHTYENA" }
+      ]
+    }
+  ]
+}
+```
+
+Pokemon data overrides cover base species info, level-up moves, and evolutions.
+Arrays are bounded to six stats, two types, two abilities/egg groups,
+`MOD_POKEMON_MAX_LEVEL_UP_MOVES`, and `EVOS_PER_MON`. With no matching
+definition, all species reads use vanilla tables.
+
+`mods/demo/battle/moves/moves.json`:
+
+```json
+{
+  "moves": [
+    {
+      "id": "tackle_buff",
+      "move": "MOVE_TACKLE",
+      "power": 45,
+      "pp": 35,
+      "type": "TYPE_NORMAL"
+    }
+  ]
+}
+```
+
+Battle move definitions override selected `struct BattleMove` fields such as
+effect, power, type, accuracy, PP, secondary chance, target, priority, and move
+flags. `overrideFlags` is inferred from present fields unless supplied
+explicitly, and must be non-zero.
+
+`mods/demo/trainers/trainers.json`:
+
+```json
+{
+  "trainers": [
+    {
+      "id": "route101_youngster",
+      "trainerId": "TRAINER_YOUNGSTER_CALVIN",
+      "trainerClass": "TRAINER_CLASS_YOUNGSTER",
+      "doubleBattle": false,
+      "items": ["ITEM_POTION"],
+      "party": [
+        {
+          "species": "SPECIES_POOCHYENA",
+          "level": 5,
+          "heldItem": "ITEM_NONE",
+          "moves": ["MOVE_TACKLE", "MOVE_HOWL"]
+        }
+      ]
+    }
+  ]
+}
+```
+
+Trainer definitions can override trainer class, pic/music metadata, item list,
+AI flags, double-battle status, party size, held items, and moves. Parties are
+bounded to `PARTY_SIZE`, each mon can list at most four moves, and absent
+definitions fall back to the generated vanilla trainer tables.
 
 `mods/demo/sprites/assets/assets.json`:
 
@@ -358,6 +586,8 @@ Expected signatures:
 - Pokeball commit hook: `void Handler(const struct PokeBallCatchContext *context, const struct PokeBallThrowResult *result)`
 - Engine capture hook: `u8 Handler(const struct EngineRuleset *ruleset, u16 ballItemId)`
 - Engine battle-weather hook: `u32 Handler(const struct EngineRuleset *ruleset, u16 weatherLayers)`
+- Reward hook: `u8 Handler(const struct ModRewardDefinition *definition, struct ModRewardContext *context)`
+- Item field/battle use hook: `void Handler(u8 taskId)`
 - NPC and battle script symbols: `extern const u8 Symbol[]`
 
 ## Conflict Rules
@@ -367,7 +597,9 @@ Generation fails on:
 - duplicate mod IDs
 - missing dependencies
 - duplicate keys for flags, weather providers, time segments, sprite assets,
-  overworld sprites, battle sprites, followers, engine rulesets, NPCs, or maps
+  overworld sprites, battle sprites, followers, engine rulesets, NPCs, maps,
+  fishing actions, encounters, shops, items, rewards, Pokemon data, battle
+  moves, or trainers
 - duplicate language keys for the same language
 - duplicate Pokeball keys or duplicate Pokeball `itemId` values
 - invalid C identifiers for function/script/sprite symbols

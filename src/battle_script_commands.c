@@ -24,7 +24,9 @@
 #include "pokemon_icon.h"
 #include "m4a.h"
 #include "mail.h"
+#include "mod/pokemon_data.h"
 #include "mod/pokeball.h"
+#include "mod/reward.h"
 #include "event_data.h"
 #include "pokemon_storage_system.h"
 #include "task.h"
@@ -9661,9 +9663,9 @@ static void Cmd_pickup(void)
             heldItem = GetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM);
 
             if (GetMonData(&gPlayerParty[i], MON_DATA_ABILITY_NUM))
-                ability = gSpeciesInfo[species].abilities[1];
+                ability = PokemonDataApi_GetAbilityBySpecies(species, 1);
             else
-                ability = gSpeciesInfo[species].abilities[0];
+                ability = PokemonDataApi_GetAbilityBySpecies(species, 0);
 
             if (ability == ABILITY_PICKUP
                 && species != SPECIES_NONE
@@ -9671,7 +9673,12 @@ static void Cmd_pickup(void)
                 && heldItem == ITEM_NONE
                 && (Random() % 10) == 0)
             {
-                heldItem = GetBattlePyramidPickupItemId();
+                {
+                    u16 quantity = 1;
+
+                    heldItem = GetBattlePyramidPickupItemId();
+                    RewardApi_AdjustItemReward(MOD_REWARD_SOURCE_PYRAMID_PICKUP, GetMonData(&gPlayerParty[i], MON_DATA_LEVEL), heldItem, &heldItem, &quantity);
+                }
                 SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &heldItem);
             }
         }
@@ -9684,9 +9691,9 @@ static void Cmd_pickup(void)
             heldItem = GetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM);
 
             if (GetMonData(&gPlayerParty[i], MON_DATA_ABILITY_NUM))
-                ability = gSpeciesInfo[species].abilities[1];
+                ability = PokemonDataApi_GetAbilityBySpecies(species, 1);
             else
-                ability = gSpeciesInfo[species].abilities[0];
+                ability = PokemonDataApi_GetAbilityBySpecies(species, 0);
 
             if (ability == ABILITY_PICKUP
                 && species != SPECIES_NONE
@@ -9704,12 +9711,20 @@ static void Cmd_pickup(void)
                 {
                     if (sPickupProbabilities[j] > rand)
                     {
-                        SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &sPickupItems[lvlDivBy10 + j]);
+                        u16 item = sPickupItems[lvlDivBy10 + j];
+                        u16 quantity = 1;
+
+                        RewardApi_AdjustItemReward(MOD_REWARD_SOURCE_PICKUP_COMMON, GetMonData(&gPlayerParty[i], MON_DATA_LEVEL), item, &item, &quantity);
+                        SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &item);
                         break;
                     }
                     else if (rand == 99 || rand == 98)
                     {
-                        SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &sRarePickupItems[lvlDivBy10 + (99 - rand)]);
+                        u16 item = sRarePickupItems[lvlDivBy10 + (99 - rand)];
+                        u16 quantity = 1;
+
+                        RewardApi_AdjustItemReward(MOD_REWARD_SOURCE_PICKUP_RARE, GetMonData(&gPlayerParty[i], MON_DATA_LEVEL), item, &item, &quantity);
+                        SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &item);
                         break;
                     }
                 }

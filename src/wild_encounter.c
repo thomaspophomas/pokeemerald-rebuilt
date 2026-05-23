@@ -7,6 +7,7 @@
 #include "field_player_avatar.h"
 #include "link.h"
 #include "metatile_behavior.h"
+#include "mod/encounter.h"
 #include "overworld.h"
 #include "pokeblock.h"
 #include "pokemon.h"
@@ -423,6 +424,22 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, u8 ar
 {
     u8 wildMonIndex = 0;
     u8 level;
+    struct WildPokemon modWildPokemon;
+
+    if (EncounterApi_TrySelectWildMon(area, 0, flags, &modWildPokemon) == TRUE)
+    {
+        level = modWildPokemon.minLevel;
+        if (flags & WILD_CHECK_REPEL && !IsWildLevelAllowedByRepel(level))
+            return FALSE;
+        if (gMapHeader.mapLayoutId != LAYOUT_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_WILD_MONS && flags & WILD_CHECK_KEEN_EYE && !IsAbilityAllowingEncounter(level))
+            return FALSE;
+
+        CreateWildMon(modWildPokemon.species, level);
+        return TRUE;
+    }
+
+    if (wildMonInfo == NULL)
+        return FALSE;
 
     switch (area)
     {
@@ -457,9 +474,21 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, u8 ar
 
 static u16 GenerateFishingWildMon(const struct WildPokemonInfo *wildMonInfo, u8 rod)
 {
-    u8 wildMonIndex = ChooseWildMonIndex_Fishing(rod);
-    u8 level = ChooseWildMonLevel(&wildMonInfo->wildPokemon[wildMonIndex]);
+    struct WildPokemon modWildPokemon;
+    u8 wildMonIndex;
+    u8 level;
 
+    if (EncounterApi_TrySelectWildMon(WILD_AREA_FISHING, rod, 0, &modWildPokemon) == TRUE)
+    {
+        CreateWildMon(modWildPokemon.species, modWildPokemon.minLevel);
+        return modWildPokemon.species;
+    }
+
+    if (wildMonInfo == NULL)
+        return SPECIES_NONE;
+
+    wildMonIndex = ChooseWildMonIndex_Fishing(rod);
+    level = ChooseWildMonLevel(&wildMonInfo->wildPokemon[wildMonIndex]);
     CreateWildMon(wildMonInfo->wildPokemon[wildMonIndex].species, level);
     return wildMonInfo->wildPokemon[wildMonIndex].species;
 }
@@ -594,11 +623,11 @@ bool8 StandardWildEncounter(u16 curMetatileBehavior, u16 prevMetatileBehavior)
     {
         if (MetatileBehavior_IsLandWildEncounter(curMetatileBehavior) == TRUE)
         {
-            if (gWildMonHeaders[headerId].landMonsInfo == NULL)
+            if (gWildMonHeaders[headerId].landMonsInfo == NULL && !EncounterApi_HasDefinition(WILD_AREA_LAND, 0))
                 return FALSE;
             else if (prevMetatileBehavior != curMetatileBehavior && !AllowWildCheckOnNewMetatile())
                 return FALSE;
-            else if (WildEncounterCheck(gWildMonHeaders[headerId].landMonsInfo->encounterRate, FALSE) != TRUE)
+            else if (WildEncounterCheck(EncounterApi_GetEncounterRate(WILD_AREA_LAND, 0, gWildMonHeaders[headerId].landMonsInfo != NULL ? gWildMonHeaders[headerId].landMonsInfo->encounterRate : 0), FALSE) != TRUE)
                 return FALSE;
 
             if (TryStartRoamerEncounter() == TRUE)
@@ -633,11 +662,11 @@ bool8 StandardWildEncounter(u16 curMetatileBehavior, u16 prevMetatileBehavior)
         {
             if (AreLegendariesInSootopolisPreventingEncounters() == TRUE)
                 return FALSE;
-            else if (gWildMonHeaders[headerId].waterMonsInfo == NULL)
+            else if (gWildMonHeaders[headerId].waterMonsInfo == NULL && !EncounterApi_HasDefinition(WILD_AREA_WATER, 0))
                 return FALSE;
             else if (prevMetatileBehavior != curMetatileBehavior && !AllowWildCheckOnNewMetatile())
                 return FALSE;
-            else if (WildEncounterCheck(gWildMonHeaders[headerId].waterMonsInfo->encounterRate, FALSE) != TRUE)
+            else if (WildEncounterCheck(EncounterApi_GetEncounterRate(WILD_AREA_WATER, 0, gWildMonHeaders[headerId].waterMonsInfo != NULL ? gWildMonHeaders[headerId].waterMonsInfo->encounterRate : 0), FALSE) != TRUE)
                 return FALSE;
 
             if (TryStartRoamerEncounter() == TRUE)
@@ -673,11 +702,11 @@ void RockSmashWildEncounter(void)
     {
         const struct WildPokemonInfo *wildPokemonInfo = gWildMonHeaders[headerId].rockSmashMonsInfo;
 
-        if (wildPokemonInfo == NULL)
+        if (wildPokemonInfo == NULL && !EncounterApi_HasDefinition(WILD_AREA_ROCKS, 0))
         {
             gSpecialVar_Result = FALSE;
         }
-        else if (WildEncounterCheck(wildPokemonInfo->encounterRate, TRUE) == TRUE
+        else if (WildEncounterCheck(EncounterApi_GetEncounterRate(WILD_AREA_ROCKS, 0, wildPokemonInfo != NULL ? wildPokemonInfo->encounterRate : 0), TRUE) == TRUE
          && TryGenerateWildMon(wildPokemonInfo, WILD_AREA_ROCKS, WILD_CHECK_REPEL | WILD_CHECK_KEEN_EYE) == TRUE)
         {
             BattleSetup_StartWildBattle();
@@ -728,7 +757,7 @@ bool8 SweetScentWildEncounter(void)
     {
         if (MetatileBehavior_IsLandWildEncounter(MapGridGetMetatileBehaviorAt(x, y)) == TRUE)
         {
-            if (gWildMonHeaders[headerId].landMonsInfo == NULL)
+            if (gWildMonHeaders[headerId].landMonsInfo == NULL && !EncounterApi_HasDefinition(WILD_AREA_LAND, 0))
                 return FALSE;
 
             if (TryStartRoamerEncounter() == TRUE)
@@ -749,7 +778,7 @@ bool8 SweetScentWildEncounter(void)
         {
             if (AreLegendariesInSootopolisPreventingEncounters() == TRUE)
                 return FALSE;
-            if (gWildMonHeaders[headerId].waterMonsInfo == NULL)
+            if (gWildMonHeaders[headerId].waterMonsInfo == NULL && !EncounterApi_HasDefinition(WILD_AREA_WATER, 0))
                 return FALSE;
 
             if (TryStartRoamerEncounter() == TRUE)
@@ -773,6 +802,10 @@ bool8 DoesCurrentMapHaveFishingMons(void)
 
     if (headerId != HEADER_NONE && gWildMonHeaders[headerId].fishingMonsInfo != NULL)
         return TRUE;
+    if (EncounterApi_HasDefinition(WILD_AREA_FISHING, OLD_ROD)
+     || EncounterApi_HasDefinition(WILD_AREA_FISHING, GOOD_ROD)
+     || EncounterApi_HasDefinition(WILD_AREA_FISHING, SUPER_ROD))
+        return TRUE;
     else
         return FALSE;
 }
@@ -780,6 +813,8 @@ bool8 DoesCurrentMapHaveFishingMons(void)
 void FishingWildEncounter(u8 rod)
 {
     u16 species;
+    u16 headerId;
+    const struct WildPokemonInfo *fishingMonsInfo = NULL;
 
     if (CheckFeebas() == TRUE)
     {
@@ -790,7 +825,12 @@ void FishingWildEncounter(u8 rod)
     }
     else
     {
-        species = GenerateFishingWildMon(gWildMonHeaders[GetCurrentMapWildMonHeaderId()].fishingMonsInfo, rod);
+        headerId = GetCurrentMapWildMonHeaderId();
+        if (headerId != HEADER_NONE)
+            fishingMonsInfo = gWildMonHeaders[headerId].fishingMonsInfo;
+        species = GenerateFishingWildMon(fishingMonsInfo, rod);
+        if (species == SPECIES_NONE)
+            return;
     }
     IncrementGameStat(GAME_STAT_FISHING_ENCOUNTERS);
     SetPokemonAnglerSpecies(species);
@@ -802,6 +842,9 @@ u16 GetLocalWildMon(bool8 *isWaterMon)
     u16 headerId;
     const struct WildPokemonInfo *landMonsInfo;
     const struct WildPokemonInfo *waterMonsInfo;
+    struct WildPokemon modWildPokemon;
+    bool8 hasLandMons;
+    bool8 hasWaterMons;
 
     *isWaterMon = FALSE;
     headerId = GetCurrentMapWildMonHeaderId();
@@ -809,33 +852,49 @@ u16 GetLocalWildMon(bool8 *isWaterMon)
         return SPECIES_NONE;
     landMonsInfo = gWildMonHeaders[headerId].landMonsInfo;
     waterMonsInfo = gWildMonHeaders[headerId].waterMonsInfo;
+    hasLandMons = landMonsInfo != NULL || EncounterApi_HasDefinition(WILD_AREA_LAND, 0);
+    hasWaterMons = waterMonsInfo != NULL || EncounterApi_HasDefinition(WILD_AREA_WATER, 0);
     // Neither
-    if (landMonsInfo == NULL && waterMonsInfo == NULL)
+    if (!hasLandMons && !hasWaterMons)
         return SPECIES_NONE;
     // Land Pokémon
-    else if (landMonsInfo != NULL && waterMonsInfo == NULL)
-        return landMonsInfo->wildPokemon[ChooseWildMonIndex_Land()].species;
+    else if (hasLandMons && !hasWaterMons)
+    {
+        if (EncounterApi_TrySelectWildMon(WILD_AREA_LAND, 0, 0, &modWildPokemon))
+            return modWildPokemon.species;
+        return landMonsInfo != NULL ? landMonsInfo->wildPokemon[ChooseWildMonIndex_Land()].species : SPECIES_NONE;
+    }
     // Water Pokémon
-    else if (landMonsInfo == NULL && waterMonsInfo != NULL)
+    else if (!hasLandMons && hasWaterMons)
     {
         *isWaterMon = TRUE;
-        return waterMonsInfo->wildPokemon[ChooseWildMonIndex_WaterRock()].species;
+        if (EncounterApi_TrySelectWildMon(WILD_AREA_WATER, 0, 0, &modWildPokemon))
+            return modWildPokemon.species;
+        return waterMonsInfo != NULL ? waterMonsInfo->wildPokemon[ChooseWildMonIndex_WaterRock()].species : SPECIES_NONE;
     }
     // Either land or water Pokémon
     if ((Random() % 100) < 80)
     {
-        return landMonsInfo->wildPokemon[ChooseWildMonIndex_Land()].species;
+        if (EncounterApi_TrySelectWildMon(WILD_AREA_LAND, 0, 0, &modWildPokemon))
+            return modWildPokemon.species;
+        return landMonsInfo != NULL ? landMonsInfo->wildPokemon[ChooseWildMonIndex_Land()].species : SPECIES_NONE;
     }
     else
     {
         *isWaterMon = TRUE;
-        return waterMonsInfo->wildPokemon[ChooseWildMonIndex_WaterRock()].species;
+        if (EncounterApi_TrySelectWildMon(WILD_AREA_WATER, 0, 0, &modWildPokemon))
+            return modWildPokemon.species;
+        return waterMonsInfo != NULL ? waterMonsInfo->wildPokemon[ChooseWildMonIndex_WaterRock()].species : SPECIES_NONE;
     }
 }
 
 u16 GetLocalWaterMon(void)
 {
     u16 headerId = GetCurrentMapWildMonHeaderId();
+    struct WildPokemon modWildPokemon;
+
+    if (EncounterApi_TrySelectWildMon(WILD_AREA_WATER, 0, 0, &modWildPokemon))
+        return modWildPokemon.species;
 
     if (headerId != HEADER_NONE)
     {

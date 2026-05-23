@@ -35,6 +35,7 @@
 #include "fldeff_misc.h"
 #include "field_control_avatar.h"
 #include "mirage_tower.h"
+#include "mod/trainer.h"
 #include "field_screen_effect.h"
 #include "data.h"
 #include "constants/battle_frontier.h"
@@ -743,10 +744,16 @@ static u8 GetSumOfEnemyPartyLevel(u16 opponentId, u8 numMons)
     u8 sum;
     u32 count = numMons;
 
-    if (gTrainers[opponentId].partySize < count)
-        count = gTrainers[opponentId].partySize;
+    if (TrainerApi_GetPartySize(opponentId, gTrainers[opponentId].partySize) < count)
+        count = TrainerApi_GetPartySize(opponentId, gTrainers[opponentId].partySize);
 
     sum = 0;
+    if (TrainerApi_GetDefinition(opponentId) != NULL)
+    {
+        for (i = 0; i < count; i++)
+            sum += TrainerApi_GetPartyLevel(opponentId, i, 1);
+        return sum;
+    }
 
     switch (gTrainers[opponentId].partyFlags)
     {
@@ -819,7 +826,7 @@ static u8 GetTrainerBattleTransition(void)
     if (gTrainerBattleOpponent_A == TRAINER_SECRET_BASE)
         return B_TRANSITION_CHAMPION;
 
-    if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_ELITE_FOUR)
+    if (TrainerApi_GetTrainerClass(gTrainerBattleOpponent_A, gTrainers[gTrainerBattleOpponent_A].trainerClass) == TRAINER_CLASS_ELITE_FOUR)
     {
         if (gTrainerBattleOpponent_A == TRAINER_SIDNEY)
             return B_TRANSITION_SIDNEY;
@@ -832,20 +839,20 @@ static u8 GetTrainerBattleTransition(void)
         return B_TRANSITION_CHAMPION;
     }
 
-    if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_CHAMPION)
+    if (TrainerApi_GetTrainerClass(gTrainerBattleOpponent_A, gTrainers[gTrainerBattleOpponent_A].trainerClass) == TRAINER_CLASS_CHAMPION)
         return B_TRANSITION_CHAMPION;
 
-    if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_TEAM_MAGMA
-        || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_MAGMA_LEADER
-        || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_MAGMA_ADMIN)
+    if (TrainerApi_GetTrainerClass(gTrainerBattleOpponent_A, gTrainers[gTrainerBattleOpponent_A].trainerClass) == TRAINER_CLASS_TEAM_MAGMA
+        || TrainerApi_GetTrainerClass(gTrainerBattleOpponent_A, gTrainers[gTrainerBattleOpponent_A].trainerClass) == TRAINER_CLASS_MAGMA_LEADER
+        || TrainerApi_GetTrainerClass(gTrainerBattleOpponent_A, gTrainers[gTrainerBattleOpponent_A].trainerClass) == TRAINER_CLASS_MAGMA_ADMIN)
         return B_TRANSITION_MAGMA;
 
-    if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_TEAM_AQUA
-        || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_AQUA_LEADER
-        || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_AQUA_ADMIN)
+    if (TrainerApi_GetTrainerClass(gTrainerBattleOpponent_A, gTrainers[gTrainerBattleOpponent_A].trainerClass) == TRAINER_CLASS_TEAM_AQUA
+        || TrainerApi_GetTrainerClass(gTrainerBattleOpponent_A, gTrainers[gTrainerBattleOpponent_A].trainerClass) == TRAINER_CLASS_AQUA_LEADER
+        || TrainerApi_GetTrainerClass(gTrainerBattleOpponent_A, gTrainers[gTrainerBattleOpponent_A].trainerClass) == TRAINER_CLASS_AQUA_ADMIN)
         return B_TRANSITION_AQUA;
 
-    if (gTrainers[gTrainerBattleOpponent_A].doubleBattle == TRUE)
+    if (TrainerApi_IsDoubleBattle(gTrainerBattleOpponent_A, gTrainers[gTrainerBattleOpponent_A].doubleBattle) == TRUE)
         minPartyCount = 2; // double battles always at least have 2 Pokémon.
     else
         minPartyCount = 1;

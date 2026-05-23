@@ -58,6 +58,38 @@ struct ModRuntimeProfileState
     char badgeEffectKeys[MOD_RUNTIME_PROFILE_MAX_BADGE_EFFECTS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
     struct ModBadgeEffectDefinition badgeEffects[MOD_RUNTIME_PROFILE_MAX_BADGE_EFFECTS];
     u16 badgeEffectCount;
+    char fishingActionKeys[MOD_RUNTIME_PROFILE_MAX_FISHING_ACTIONS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char fishingActionHookKeys[MOD_RUNTIME_PROFILE_MAX_FISHING_ACTIONS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char fishingActionPromptKeys[MOD_RUNTIME_PROFILE_MAX_FISHING_ACTIONS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    struct FishingActionDefinition fishingActions[MOD_RUNTIME_PROFILE_MAX_FISHING_ACTIONS];
+    u16 fishingActionCount;
+    char encounterKeys[MOD_RUNTIME_PROFILE_MAX_ENCOUNTERS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char encounterHookKeys[MOD_RUNTIME_PROFILE_MAX_ENCOUNTERS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    struct ModEncounterDefinition encounters[MOD_RUNTIME_PROFILE_MAX_ENCOUNTERS];
+    u16 encounterCount;
+    char shopKeys[MOD_RUNTIME_PROFILE_MAX_SHOPS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    struct ModShopDefinition shops[MOD_RUNTIME_PROFILE_MAX_SHOPS];
+    u16 shopCount;
+    char itemKeys[MOD_RUNTIME_PROFILE_MAX_ITEMS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char itemNameKeys[MOD_RUNTIME_PROFILE_MAX_ITEMS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char itemDescriptionKeys[MOD_RUNTIME_PROFILE_MAX_ITEMS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char itemFieldHookKeys[MOD_RUNTIME_PROFILE_MAX_ITEMS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char itemBattleHookKeys[MOD_RUNTIME_PROFILE_MAX_ITEMS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    struct ModItemDefinition items[MOD_RUNTIME_PROFILE_MAX_ITEMS];
+    u16 itemCount;
+    char rewardKeys[MOD_RUNTIME_PROFILE_MAX_REWARDS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char rewardHookKeys[MOD_RUNTIME_PROFILE_MAX_REWARDS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    struct ModRewardDefinition rewards[MOD_RUNTIME_PROFILE_MAX_REWARDS];
+    u16 rewardCount;
+    char pokemonDataKeys[MOD_RUNTIME_PROFILE_MAX_POKEMON_DATA][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    struct ModPokemonDataDefinition pokemonData[MOD_RUNTIME_PROFILE_MAX_POKEMON_DATA];
+    u16 pokemonDataCount;
+    char battleMoveKeys[MOD_RUNTIME_PROFILE_MAX_BATTLE_MOVES][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    struct ModBattleMoveDefinition battleMoves[MOD_RUNTIME_PROFILE_MAX_BATTLE_MOVES];
+    u16 battleMoveCount;
+    char trainerKeys[MOD_RUNTIME_PROFILE_MAX_TRAINERS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    struct ModTrainerDefinition trainers[MOD_RUNTIME_PROFILE_MAX_TRAINERS];
+    u16 trainerCount;
 };
 
 static EWRAM_DATA struct ModRuntimeProfileState *sProfile = NULL;
@@ -382,6 +414,553 @@ static u8 ParseBadgeEffectRecord(const u8 *payload, u16 size)
     return MOD_RUNTIME_PROFILE_RESULT_OK;
 }
 
+static bool8 RuntimeFishingActionKeyExists(const char *key)
+{
+    u16 i;
+
+    if (key == NULL)
+        return FALSE;
+
+    for (i = 0; i < sProfile->fishingActionCount; i++)
+    {
+        if (strcmp(sProfile->fishingActionKeys[i], key) == 0)
+            return TRUE;
+    }
+
+    return FALSE;
+}
+
+static u8 ParseFishingActionRecord(const u8 *payload, u16 size)
+{
+    struct ModRuntimeProfileFishingActionRecord record;
+    struct FishingActionDefinition candidate;
+    struct FishingActionDefinition *definition;
+    FishingActionHook hook;
+    u16 i;
+    char *key;
+    char *hookKey;
+    char *promptKey;
+
+    if (size != sizeof(record) || sProfile->fishingActionCount >= MOD_RUNTIME_PROFILE_MAX_FISHING_ACTIONS)
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    memcpy(&record, payload, sizeof(record));
+    record.key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.sourceKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.hookKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.promptKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    if (record.key[0] == '\0' || record.sourceKey[0] == '\0' || record.hookKey[0] == '\0')
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    if (RuntimeFishingActionKeyExists(record.key))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    hook = FishingApi_FindCompiledHook(record.sourceKey, record.hookKey);
+    if (hook == NULL)
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    memset(&candidate, 0, sizeof(candidate));
+    candidate.key = record.key;
+    candidate.hookKey = record.hookKey;
+    candidate.rodMask = record.rodMask;
+    candidate.phaseMask = record.phaseMask;
+    candidate.priority = record.priority;
+    candidate.flags = record.flags;
+    candidate.hook = hook;
+    candidate.promptKey = record.promptKey[0] == '\0' ? NULL : record.promptKey;
+    candidate.buttonMask = record.buttonMask;
+    candidate.timeoutFrames = record.timeoutFrames;
+    candidate.successOutcome = record.successOutcome;
+    candidate.failureOutcome = record.failureOutcome;
+    for (i = 0; i < FISHING_ACTION_PARAM_COUNT; i++)
+        candidate.params[i] = record.params[i];
+
+    if (!FishingApi_IsDefinitionValid(&candidate, FALSE))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    key = sProfile->fishingActionKeys[sProfile->fishingActionCount];
+    hookKey = sProfile->fishingActionHookKeys[sProfile->fishingActionCount];
+    promptKey = sProfile->fishingActionPromptKeys[sProfile->fishingActionCount];
+    CopyBoundedString(key, record.key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    CopyBoundedString(hookKey, record.hookKey, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    CopyBoundedString(promptKey, record.promptKey, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+
+    definition = &sProfile->fishingActions[sProfile->fishingActionCount++];
+    *definition = candidate;
+    definition->key = key;
+    definition->hookKey = hookKey;
+    definition->promptKey = promptKey[0] == '\0' ? NULL : promptKey;
+    return MOD_RUNTIME_PROFILE_RESULT_OK;
+}
+
+static bool8 RuntimeEncounterKeyExists(const char *key)
+{
+    u16 i;
+
+    if (key == NULL)
+        return FALSE;
+
+    for (i = 0; i < sProfile->encounterCount; i++)
+    {
+        if (strcmp(sProfile->encounterKeys[i], key) == 0)
+            return TRUE;
+    }
+
+    return FALSE;
+}
+
+static u8 ParseEncounterRecord(const u8 *payload, u16 size)
+{
+    struct ModRuntimeProfileEncounterRecord record;
+    struct ModEncounterDefinition candidate;
+    struct ModEncounterDefinition *definition;
+    ModEncounterHook hook = NULL;
+    char *key;
+    char *hookKey;
+    u8 i;
+
+    if (size != sizeof(record) || sProfile->encounterCount >= MOD_RUNTIME_PROFILE_MAX_ENCOUNTERS)
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    memcpy(&record, payload, sizeof(record));
+    record.key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.sourceKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.hookKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    if (record.key[0] == '\0')
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    if (RuntimeEncounterKeyExists(record.key))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    if ((record.sourceKey[0] == '\0') != (record.hookKey[0] == '\0'))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    if (record.sourceKey[0] != '\0')
+    {
+        hook = EncounterApi_FindCompiledHook(record.sourceKey, record.hookKey);
+        if (hook == NULL)
+            return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    }
+
+    memset(&candidate, 0, sizeof(candidate));
+    candidate.key = record.key;
+    candidate.hookKey = record.hookKey[0] == '\0' ? NULL : record.hookKey;
+    candidate.mapGroup = record.mapGroup;
+    candidate.mapNum = record.mapNum;
+    candidate.area = record.area;
+    candidate.rodMask = record.rodMask;
+    candidate.encounterRate = record.encounterRate;
+    candidate.slotCount = record.slotCount;
+    candidate.priority = record.priority;
+    candidate.flags = record.flags;
+    candidate.hook = hook;
+    for (i = 0; i < MOD_ENCOUNTER_MAX_SLOTS; i++)
+        candidate.slots[i] = record.slots[i];
+
+    if (!EncounterApi_IsDefinitionValid(&candidate, FALSE))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    key = sProfile->encounterKeys[sProfile->encounterCount];
+    hookKey = sProfile->encounterHookKeys[sProfile->encounterCount];
+    CopyBoundedString(key, record.key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    CopyBoundedString(hookKey, record.hookKey, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+
+    definition = &sProfile->encounters[sProfile->encounterCount++];
+    *definition = candidate;
+    definition->key = key;
+    definition->hookKey = hookKey[0] == '\0' ? NULL : hookKey;
+    return MOD_RUNTIME_PROFILE_RESULT_OK;
+}
+
+static bool8 RuntimeShopKeyExists(const char *key)
+{
+    u16 i;
+
+    if (key == NULL)
+        return FALSE;
+
+    for (i = 0; i < sProfile->shopCount; i++)
+    {
+        if (strcmp(sProfile->shopKeys[i], key) == 0)
+            return TRUE;
+    }
+
+    return FALSE;
+}
+
+static u8 ParseShopRecord(const u8 *payload, u16 size)
+{
+    struct ModRuntimeProfileShopRecord record;
+    struct ModShopDefinition candidate;
+    struct ModShopDefinition *definition;
+    char *key;
+    u8 i;
+
+    if (size != sizeof(record) || sProfile->shopCount >= MOD_RUNTIME_PROFILE_MAX_SHOPS)
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    memcpy(&record, payload, sizeof(record));
+    record.key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    if (record.key[0] == '\0')
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    if (RuntimeShopKeyExists(record.key))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    memset(&candidate, 0, sizeof(candidate));
+    candidate.key = record.key;
+    candidate.mapGroup = record.mapGroup;
+    candidate.mapNum = record.mapNum;
+    candidate.martType = record.martType;
+    candidate.itemCount = record.itemCount;
+    candidate.priority = record.priority;
+    candidate.flags = record.flags;
+    for (i = 0; i < MOD_SHOP_MAX_ITEMS; i++)
+        candidate.items[i] = record.items[i];
+
+    if (!ShopApi_IsDefinitionValid(&candidate, FALSE))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    key = sProfile->shopKeys[sProfile->shopCount];
+    CopyBoundedString(key, record.key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    definition = &sProfile->shops[sProfile->shopCount++];
+    *definition = candidate;
+    definition->key = key;
+    return MOD_RUNTIME_PROFILE_RESULT_OK;
+}
+
+static bool8 RuntimeItemKeyExists(const char *key)
+{
+    u16 i;
+
+    if (key == NULL)
+        return FALSE;
+
+    for (i = 0; i < sProfile->itemCount; i++)
+    {
+        if (strcmp(sProfile->itemKeys[i], key) == 0)
+            return TRUE;
+    }
+
+    return FALSE;
+}
+
+static u8 ParseItemRecord(const u8 *payload, u16 size)
+{
+    struct ModRuntimeProfileItemRecord record;
+    struct ModItemDefinition candidate;
+    struct ModItemDefinition *definition;
+    char *key;
+    char *nameKey;
+    char *descriptionKey;
+    char *fieldHookKey;
+    char *battleHookKey;
+    ItemUseFunc fieldUseFunc = NULL;
+    ItemUseFunc battleUseFunc = NULL;
+
+    if (size != sizeof(record) || sProfile->itemCount >= MOD_RUNTIME_PROFILE_MAX_ITEMS)
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    memcpy(&record, payload, sizeof(record));
+    record.key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.nameKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.descriptionKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.fieldUseSourceKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.fieldUseHookKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.battleUseSourceKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.battleUseHookKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    if (record.key[0] == '\0')
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    if (RuntimeItemKeyExists(record.key))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    if ((record.fieldUseSourceKey[0] == '\0') != (record.fieldUseHookKey[0] == '\0'))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    if ((record.battleUseSourceKey[0] == '\0') != (record.battleUseHookKey[0] == '\0'))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    if (record.fieldUseSourceKey[0] != '\0')
+    {
+        fieldUseFunc = ItemApi_FindCompiledFieldUseHook(record.fieldUseSourceKey, record.fieldUseHookKey);
+        if (fieldUseFunc == NULL)
+            return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    }
+    if (record.battleUseSourceKey[0] != '\0')
+    {
+        battleUseFunc = ItemApi_FindCompiledBattleUseHook(record.battleUseSourceKey, record.battleUseHookKey);
+        if (battleUseFunc == NULL)
+            return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    }
+
+    memset(&candidate, 0, sizeof(candidate));
+    candidate.key = record.key;
+    candidate.nameKey = record.nameKey[0] == '\0' ? NULL : record.nameKey;
+    candidate.descriptionKey = record.descriptionKey[0] == '\0' ? NULL : record.descriptionKey;
+    candidate.fieldUseHookKey = record.fieldUseHookKey[0] == '\0' ? NULL : record.fieldUseHookKey;
+    candidate.battleUseHookKey = record.battleUseHookKey[0] == '\0' ? NULL : record.battleUseHookKey;
+    candidate.itemId = record.itemId;
+    candidate.price = record.price;
+    candidate.flags = record.flags;
+    candidate.holdEffect = record.holdEffect;
+    candidate.holdEffectParam = record.holdEffectParam;
+    candidate.importance = record.importance;
+    candidate.pocket = record.pocket;
+    candidate.type = record.type;
+    candidate.battleUsage = record.battleUsage;
+    candidate.secondaryId = record.secondaryId;
+    candidate.priority = record.priority;
+    candidate.fieldUseFunc = fieldUseFunc;
+    candidate.battleUseFunc = battleUseFunc;
+    if (!ItemApi_IsDefinitionValid(&candidate, FALSE))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    key = sProfile->itemKeys[sProfile->itemCount];
+    nameKey = sProfile->itemNameKeys[sProfile->itemCount];
+    descriptionKey = sProfile->itemDescriptionKeys[sProfile->itemCount];
+    fieldHookKey = sProfile->itemFieldHookKeys[sProfile->itemCount];
+    battleHookKey = sProfile->itemBattleHookKeys[sProfile->itemCount];
+    CopyBoundedString(key, record.key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    CopyBoundedString(nameKey, record.nameKey, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    CopyBoundedString(descriptionKey, record.descriptionKey, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    CopyBoundedString(fieldHookKey, record.fieldUseHookKey, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    CopyBoundedString(battleHookKey, record.battleUseHookKey, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+
+    definition = &sProfile->items[sProfile->itemCount++];
+    *definition = candidate;
+    definition->key = key;
+    definition->nameKey = nameKey[0] == '\0' ? NULL : nameKey;
+    definition->descriptionKey = descriptionKey[0] == '\0' ? NULL : descriptionKey;
+    definition->fieldUseHookKey = fieldHookKey[0] == '\0' ? NULL : fieldHookKey;
+    definition->battleUseHookKey = battleHookKey[0] == '\0' ? NULL : battleHookKey;
+    return MOD_RUNTIME_PROFILE_RESULT_OK;
+}
+
+static bool8 RuntimeRewardKeyExists(const char *key)
+{
+    u16 i;
+
+    if (key == NULL)
+        return FALSE;
+
+    for (i = 0; i < sProfile->rewardCount; i++)
+    {
+        if (strcmp(sProfile->rewardKeys[i], key) == 0)
+            return TRUE;
+    }
+
+    return FALSE;
+}
+
+static u8 ParseRewardRecord(const u8 *payload, u16 size)
+{
+    struct ModRuntimeProfileRewardRecord record;
+    struct ModRewardDefinition candidate;
+    struct ModRewardDefinition *definition;
+    ModRewardHook hook = NULL;
+    char *key;
+    char *hookKey;
+
+    if (size != sizeof(record) || sProfile->rewardCount >= MOD_RUNTIME_PROFILE_MAX_REWARDS)
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    memcpy(&record, payload, sizeof(record));
+    record.key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.sourceKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.hookKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    if (record.key[0] == '\0')
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    if (RuntimeRewardKeyExists(record.key))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    if ((record.sourceKey[0] == '\0') != (record.hookKey[0] == '\0'))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    if (record.sourceKey[0] != '\0')
+    {
+        hook = RewardApi_FindCompiledHook(record.sourceKey, record.hookKey);
+        if (hook == NULL)
+            return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    }
+
+    memset(&candidate, 0, sizeof(candidate));
+    candidate.key = record.key;
+    candidate.hookKey = record.hookKey[0] == '\0' ? NULL : record.hookKey;
+    candidate.source = record.source;
+    candidate.minLevel = record.minLevel;
+    candidate.maxLevel = record.maxLevel;
+    candidate.priority = record.priority;
+    candidate.flags = record.flags;
+    candidate.itemId = record.itemId;
+    candidate.quantity = record.quantity;
+    candidate.hook = hook;
+    if (!RewardApi_IsDefinitionValid(&candidate, FALSE))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    key = sProfile->rewardKeys[sProfile->rewardCount];
+    hookKey = sProfile->rewardHookKeys[sProfile->rewardCount];
+    CopyBoundedString(key, record.key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    CopyBoundedString(hookKey, record.hookKey, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    definition = &sProfile->rewards[sProfile->rewardCount++];
+    *definition = candidate;
+    definition->key = key;
+    definition->hookKey = hookKey[0] == '\0' ? NULL : hookKey;
+    return MOD_RUNTIME_PROFILE_RESULT_OK;
+}
+
+static bool8 RuntimePokemonDataKeyExists(const char *key)
+{
+    u16 i;
+
+    if (key == NULL)
+        return FALSE;
+
+    for (i = 0; i < sProfile->pokemonDataCount; i++)
+    {
+        if (strcmp(sProfile->pokemonDataKeys[i], key) == 0)
+            return TRUE;
+    }
+
+    return FALSE;
+}
+
+static u8 ParsePokemonDataRecord(const u8 *payload, u16 size)
+{
+    struct ModRuntimeProfilePokemonDataRecord record;
+    struct ModPokemonDataDefinition candidate;
+    struct ModPokemonDataDefinition *definition;
+    char *key;
+
+    if (size != sizeof(record) || sProfile->pokemonDataCount >= MOD_RUNTIME_PROFILE_MAX_POKEMON_DATA)
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    memcpy(&record, payload, sizeof(record));
+    record.key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    if (record.key[0] == '\0')
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    if (RuntimePokemonDataKeyExists(record.key))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    memset(&candidate, 0, sizeof(candidate));
+    candidate.key = record.key;
+    candidate.species = record.species;
+    candidate.priority = record.priority;
+    candidate.flags = record.flags;
+    candidate.info = record.info;
+    candidate.levelUpMoveCount = record.levelUpMoveCount;
+    memcpy(candidate.levelUpMoves, record.levelUpMoves, sizeof(candidate.levelUpMoves));
+    candidate.evolutionCount = record.evolutionCount;
+    memcpy(candidate.evolutions, record.evolutions, sizeof(candidate.evolutions));
+    if (!PokemonDataApi_IsDefinitionValid(&candidate, FALSE))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    key = sProfile->pokemonDataKeys[sProfile->pokemonDataCount];
+    CopyBoundedString(key, record.key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    definition = &sProfile->pokemonData[sProfile->pokemonDataCount++];
+    *definition = candidate;
+    definition->key = key;
+    return MOD_RUNTIME_PROFILE_RESULT_OK;
+}
+
+static bool8 RuntimeBattleMoveKeyExists(const char *key)
+{
+    u16 i;
+
+    if (key == NULL)
+        return FALSE;
+
+    for (i = 0; i < sProfile->battleMoveCount; i++)
+    {
+        if (strcmp(sProfile->battleMoveKeys[i], key) == 0)
+            return TRUE;
+    }
+
+    return FALSE;
+}
+
+static u8 ParseBattleMoveRecord(const u8 *payload, u16 size)
+{
+    struct ModRuntimeProfileBattleMoveRecord record;
+    struct ModBattleMoveDefinition candidate;
+    struct ModBattleMoveDefinition *definition;
+    char *key;
+
+    if (size != sizeof(record) || sProfile->battleMoveCount >= MOD_RUNTIME_PROFILE_MAX_BATTLE_MOVES)
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    memcpy(&record, payload, sizeof(record));
+    record.key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    if (record.key[0] == '\0')
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    if (RuntimeBattleMoveKeyExists(record.key))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    memset(&candidate, 0, sizeof(candidate));
+    candidate.key = record.key;
+    candidate.move = record.move;
+    candidate.priority = record.priority;
+    candidate.overrideFlags = record.overrideFlags;
+    candidate.data = record.data;
+    if (!BattleDataApi_IsMoveDefinitionValid(&candidate, FALSE))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    key = sProfile->battleMoveKeys[sProfile->battleMoveCount];
+    CopyBoundedString(key, record.key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    definition = &sProfile->battleMoves[sProfile->battleMoveCount++];
+    *definition = candidate;
+    definition->key = key;
+    return MOD_RUNTIME_PROFILE_RESULT_OK;
+}
+
+static bool8 RuntimeTrainerKeyExists(const char *key)
+{
+    u16 i;
+
+    if (key == NULL)
+        return FALSE;
+
+    for (i = 0; i < sProfile->trainerCount; i++)
+    {
+        if (strcmp(sProfile->trainerKeys[i], key) == 0)
+            return TRUE;
+    }
+
+    return FALSE;
+}
+
+static u8 ParseTrainerRecord(const u8 *payload, u16 size)
+{
+    struct ModRuntimeProfileTrainerRecord record;
+    struct ModTrainerDefinition candidate;
+    struct ModTrainerDefinition *definition;
+    char *key;
+
+    if (size != sizeof(record) || sProfile->trainerCount >= MOD_RUNTIME_PROFILE_MAX_TRAINERS)
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    memcpy(&record, payload, sizeof(record));
+    record.key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    if (record.key[0] == '\0')
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    if (RuntimeTrainerKeyExists(record.key))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    memset(&candidate, 0, sizeof(candidate));
+    candidate.key = record.key;
+    candidate.trainerId = record.trainerId;
+    candidate.priority = record.priority;
+    candidate.flags = record.flags;
+    candidate.trainerClass = record.trainerClass;
+    candidate.encounterMusicGender = record.encounterMusicGender;
+    candidate.trainerPic = record.trainerPic;
+    memcpy(candidate.items, record.items, sizeof(candidate.items));
+    candidate.doubleBattle = record.doubleBattle;
+    candidate.aiFlags = record.aiFlags;
+    candidate.partySize = record.partySize;
+    memcpy(candidate.party, record.party, sizeof(candidate.party));
+    if (!TrainerApi_IsDefinitionValid(&candidate, FALSE))
+        return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+
+    key = sProfile->trainerKeys[sProfile->trainerCount];
+    CopyBoundedString(key, record.key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    definition = &sProfile->trainers[sProfile->trainerCount++];
+    *definition = candidate;
+    definition->key = key;
+    return MOD_RUNTIME_PROFILE_RESULT_OK;
+}
+
 static u8 ParseRecord(u8 type, const u8 *payload, u16 size)
 {
     switch (type)
@@ -402,6 +981,22 @@ static u8 ParseRecord(u8 type, const u8 *payload, u16 size)
         return ParseInlinePaletteRecord(payload, size);
     case MOD_RUNTIME_PROFILE_RECORD_BADGE_EFFECT:
         return ParseBadgeEffectRecord(payload, size);
+    case MOD_RUNTIME_PROFILE_RECORD_FISHING_ACTION:
+        return ParseFishingActionRecord(payload, size);
+    case MOD_RUNTIME_PROFILE_RECORD_ENCOUNTER:
+        return ParseEncounterRecord(payload, size);
+    case MOD_RUNTIME_PROFILE_RECORD_SHOP:
+        return ParseShopRecord(payload, size);
+    case MOD_RUNTIME_PROFILE_RECORD_ITEM:
+        return ParseItemRecord(payload, size);
+    case MOD_RUNTIME_PROFILE_RECORD_REWARD:
+        return ParseRewardRecord(payload, size);
+    case MOD_RUNTIME_PROFILE_RECORD_POKEMON_DATA:
+        return ParsePokemonDataRecord(payload, size);
+    case MOD_RUNTIME_PROFILE_RECORD_BATTLE_MOVE:
+        return ParseBattleMoveRecord(payload, size);
+    case MOD_RUNTIME_PROFILE_RECORD_TRAINER:
+        return ParseTrainerRecord(payload, size);
     default:
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
     }
@@ -464,6 +1059,22 @@ static u8 MeasureRecordStorage(u8 type, const u8 *payload, u16 size, u16 *textBy
         return MOD_RUNTIME_PROFILE_RESULT_OK;
     case MOD_RUNTIME_PROFILE_RECORD_BADGE_EFFECT:
         return size == sizeof(struct ModRuntimeProfileBadgeEffectRecord) ? MOD_RUNTIME_PROFILE_RESULT_OK : MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    case MOD_RUNTIME_PROFILE_RECORD_FISHING_ACTION:
+        return size == sizeof(struct ModRuntimeProfileFishingActionRecord) ? MOD_RUNTIME_PROFILE_RESULT_OK : MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    case MOD_RUNTIME_PROFILE_RECORD_ENCOUNTER:
+        return size == sizeof(struct ModRuntimeProfileEncounterRecord) ? MOD_RUNTIME_PROFILE_RESULT_OK : MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    case MOD_RUNTIME_PROFILE_RECORD_SHOP:
+        return size == sizeof(struct ModRuntimeProfileShopRecord) ? MOD_RUNTIME_PROFILE_RESULT_OK : MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    case MOD_RUNTIME_PROFILE_RECORD_ITEM:
+        return size == sizeof(struct ModRuntimeProfileItemRecord) ? MOD_RUNTIME_PROFILE_RESULT_OK : MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    case MOD_RUNTIME_PROFILE_RECORD_REWARD:
+        return size == sizeof(struct ModRuntimeProfileRewardRecord) ? MOD_RUNTIME_PROFILE_RESULT_OK : MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    case MOD_RUNTIME_PROFILE_RECORD_POKEMON_DATA:
+        return size == sizeof(struct ModRuntimeProfilePokemonDataRecord) ? MOD_RUNTIME_PROFILE_RESULT_OK : MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    case MOD_RUNTIME_PROFILE_RECORD_BATTLE_MOVE:
+        return size == sizeof(struct ModRuntimeProfileBattleMoveRecord) ? MOD_RUNTIME_PROFILE_RESULT_OK : MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
+    case MOD_RUNTIME_PROFILE_RECORD_TRAINER:
+        return size == sizeof(struct ModRuntimeProfileTrainerRecord) ? MOD_RUNTIME_PROFILE_RESULT_OK : MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
     default:
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
     }
@@ -526,11 +1137,43 @@ static u8 ParseProfile(void)
     sProfile->assetCount = 0;
     sProfile->assetByteCount = 0;
     sProfile->badgeEffectCount = 0;
+    sProfile->fishingActionCount = 0;
+    sProfile->encounterCount = 0;
+    sProfile->shopCount = 0;
+    sProfile->itemCount = 0;
+    sProfile->rewardCount = 0;
+    sProfile->pokemonDataCount = 0;
+    sProfile->battleMoveCount = 0;
+    sProfile->trainerCount = 0;
     memset(sProfile->texts, 0, sizeof(sProfile->texts));
     memset(sProfile->npcs, 0, sizeof(sProfile->npcs));
     memset(sProfile->assets, 0, sizeof(sProfile->assets));
     memset(sProfile->badgeEffectKeys, 0, sizeof(sProfile->badgeEffectKeys));
     memset(sProfile->badgeEffects, 0, sizeof(sProfile->badgeEffects));
+    memset(sProfile->fishingActionKeys, 0, sizeof(sProfile->fishingActionKeys));
+    memset(sProfile->fishingActionHookKeys, 0, sizeof(sProfile->fishingActionHookKeys));
+    memset(sProfile->fishingActionPromptKeys, 0, sizeof(sProfile->fishingActionPromptKeys));
+    memset(sProfile->fishingActions, 0, sizeof(sProfile->fishingActions));
+    memset(sProfile->encounterKeys, 0, sizeof(sProfile->encounterKeys));
+    memset(sProfile->encounterHookKeys, 0, sizeof(sProfile->encounterHookKeys));
+    memset(sProfile->encounters, 0, sizeof(sProfile->encounters));
+    memset(sProfile->shopKeys, 0, sizeof(sProfile->shopKeys));
+    memset(sProfile->shops, 0, sizeof(sProfile->shops));
+    memset(sProfile->itemKeys, 0, sizeof(sProfile->itemKeys));
+    memset(sProfile->itemNameKeys, 0, sizeof(sProfile->itemNameKeys));
+    memset(sProfile->itemDescriptionKeys, 0, sizeof(sProfile->itemDescriptionKeys));
+    memset(sProfile->itemFieldHookKeys, 0, sizeof(sProfile->itemFieldHookKeys));
+    memset(sProfile->itemBattleHookKeys, 0, sizeof(sProfile->itemBattleHookKeys));
+    memset(sProfile->items, 0, sizeof(sProfile->items));
+    memset(sProfile->rewardKeys, 0, sizeof(sProfile->rewardKeys));
+    memset(sProfile->rewardHookKeys, 0, sizeof(sProfile->rewardHookKeys));
+    memset(sProfile->rewards, 0, sizeof(sProfile->rewards));
+    memset(sProfile->pokemonDataKeys, 0, sizeof(sProfile->pokemonDataKeys));
+    memset(sProfile->pokemonData, 0, sizeof(sProfile->pokemonData));
+    memset(sProfile->battleMoveKeys, 0, sizeof(sProfile->battleMoveKeys));
+    memset(sProfile->battleMoves, 0, sizeof(sProfile->battleMoves));
+    memset(sProfile->trainerKeys, 0, sizeof(sProfile->trainerKeys));
+    memset(sProfile->trainers, 0, sizeof(sProfile->trainers));
     if (sProfile->textBytes != NULL)
         memset(sProfile->textBytes, 0, sProfile->textByteCapacity);
     if (sProfile->assetBytes != NULL)
@@ -766,6 +1409,102 @@ const struct ModBadgeEffectDefinition *ModRuntimeProfile_GetBadgeEffects(u16 *co
     if (count != NULL)
         *count = sProfile->badgeEffectCount;
     return sProfile->badgeEffects;
+}
+
+const struct FishingActionDefinition *ModRuntimeProfile_GetFishingActions(u16 *count)
+{
+    if (count != NULL)
+        *count = 0;
+    if (!ModRuntimeProfile_IsActive())
+        return NULL;
+
+    if (count != NULL)
+        *count = sProfile->fishingActionCount;
+    return sProfile->fishingActions;
+}
+
+const struct ModEncounterDefinition *ModRuntimeProfile_GetEncounters(u16 *count)
+{
+    if (count != NULL)
+        *count = 0;
+    if (!ModRuntimeProfile_IsActive())
+        return NULL;
+
+    if (count != NULL)
+        *count = sProfile->encounterCount;
+    return sProfile->encounters;
+}
+
+const struct ModShopDefinition *ModRuntimeProfile_GetShops(u16 *count)
+{
+    if (count != NULL)
+        *count = 0;
+    if (!ModRuntimeProfile_IsActive())
+        return NULL;
+
+    if (count != NULL)
+        *count = sProfile->shopCount;
+    return sProfile->shops;
+}
+
+const struct ModItemDefinition *ModRuntimeProfile_GetItems(u16 *count)
+{
+    if (count != NULL)
+        *count = 0;
+    if (!ModRuntimeProfile_IsActive())
+        return NULL;
+
+    if (count != NULL)
+        *count = sProfile->itemCount;
+    return sProfile->items;
+}
+
+const struct ModRewardDefinition *ModRuntimeProfile_GetRewards(u16 *count)
+{
+    if (count != NULL)
+        *count = 0;
+    if (!ModRuntimeProfile_IsActive())
+        return NULL;
+
+    if (count != NULL)
+        *count = sProfile->rewardCount;
+    return sProfile->rewards;
+}
+
+const struct ModPokemonDataDefinition *ModRuntimeProfile_GetPokemonData(u16 *count)
+{
+    if (count != NULL)
+        *count = 0;
+    if (!ModRuntimeProfile_IsActive())
+        return NULL;
+
+    if (count != NULL)
+        *count = sProfile->pokemonDataCount;
+    return sProfile->pokemonData;
+}
+
+const struct ModBattleMoveDefinition *ModRuntimeProfile_GetBattleMoves(u16 *count)
+{
+    if (count != NULL)
+        *count = 0;
+    if (!ModRuntimeProfile_IsActive())
+        return NULL;
+
+    if (count != NULL)
+        *count = sProfile->battleMoveCount;
+    return sProfile->battleMoves;
+}
+
+const struct ModTrainerDefinition *ModRuntimeProfile_GetTrainers(u16 *count)
+{
+    if (count != NULL)
+        *count = 0;
+    if (!ModRuntimeProfile_IsActive())
+        return NULL;
+
+    if (count != NULL)
+        *count = sProfile->trainerCount;
+    return sProfile->trainers;
 }
 
 void ModRuntimeProfile_OnMapLoad(void)

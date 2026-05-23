@@ -12,7 +12,7 @@ NET_FEATURE_FLAG_MULTIPLAYER = 1 << 0
 NET_FEATURE_FLAG_EMULATOR_TRANSPORT = 1 << 1
 NET_REQUIRED_ONLINE_FEATURE_FLAGS = NET_FEATURE_FLAG_MULTIPLAYER | NET_FEATURE_FLAG_EMULATOR_TRANSPORT
 MOD_RUNTIME_PROFILE_PROTOCOL_VERSION = 1
-MOD_RUNTIME_PROFILE_CAPABILITY_HASH = 0x00000002
+MOD_RUNTIME_PROFILE_CAPABILITY_HASH = 0x00000006
 MOD_RUNTIME_PROFILE_CAP_TEXT = 1 << 0
 MOD_RUNTIME_PROFILE_CAP_WEATHER = 1 << 1
 MOD_RUNTIME_PROFILE_CAP_ENGINE = 1 << 2
@@ -20,6 +20,14 @@ MOD_RUNTIME_PROFILE_CAP_NPC = 1 << 3
 MOD_RUNTIME_PROFILE_CAP_ASSET_REF = 1 << 4
 MOD_RUNTIME_PROFILE_CAP_INLINE_ASSET = 1 << 5
 MOD_RUNTIME_PROFILE_CAP_BADGE_EFFECTS = 1 << 6
+MOD_RUNTIME_PROFILE_CAP_FISHING_ACTIONS = 1 << 7
+MOD_RUNTIME_PROFILE_CAP_ENCOUNTERS = 1 << 8
+MOD_RUNTIME_PROFILE_CAP_SHOPS = 1 << 9
+MOD_RUNTIME_PROFILE_CAP_ITEMS = 1 << 10
+MOD_RUNTIME_PROFILE_CAP_REWARDS = 1 << 11
+MOD_RUNTIME_PROFILE_CAP_POKEMON_DATA = 1 << 12
+MOD_RUNTIME_PROFILE_CAP_BATTLE_DATA = 1 << 13
+MOD_RUNTIME_PROFILE_CAP_TRAINERS = 1 << 14
 MOD_RUNTIME_PROFILE_CAPABILITIES = (
     MOD_RUNTIME_PROFILE_CAP_TEXT
     | MOD_RUNTIME_PROFILE_CAP_WEATHER
@@ -28,8 +36,16 @@ MOD_RUNTIME_PROFILE_CAPABILITIES = (
     | MOD_RUNTIME_PROFILE_CAP_ASSET_REF
     | MOD_RUNTIME_PROFILE_CAP_INLINE_ASSET
     | MOD_RUNTIME_PROFILE_CAP_BADGE_EFFECTS
+    | MOD_RUNTIME_PROFILE_CAP_FISHING_ACTIONS
+    | MOD_RUNTIME_PROFILE_CAP_ENCOUNTERS
+    | MOD_RUNTIME_PROFILE_CAP_SHOPS
+    | MOD_RUNTIME_PROFILE_CAP_ITEMS
+    | MOD_RUNTIME_PROFILE_CAP_REWARDS
+    | MOD_RUNTIME_PROFILE_CAP_POKEMON_DATA
+    | MOD_RUNTIME_PROFILE_CAP_BATTLE_DATA
+    | MOD_RUNTIME_PROFILE_CAP_TRAINERS
 )
-MOD_CATALOG_HASH = 0xE64BCD9E
+MOD_CATALOG_HASH = 0x2EB46D50
 MOD_CATALOG_COUNT = 1
 BADGE_LEVEL_MAX = 10
 BADGE_COUNT = 8
@@ -40,6 +56,12 @@ BADGE_EFFECT_TYPE_STAT_PERCENT = 3
 TYPE_NONE = 255
 NUMBER_OF_MON_TYPES = 18
 NUM_BATTLE_STATS = 8
+FISHING_ACTION_ROD_MASK_ALL = 0x07
+FISHING_PHASE_MASK_ALL = 0x00FF
+FISHING_PHASE_INPUT_WINDOW_MASK = 1 << 4
+FISHING_OUTCOME_CONTINUE = 0
+FISHING_OUTCOME_GOT_AWAY = 2
+KEYS_MASK = 0x03FF
 MODE_SOLO = "solo"
 MODE_ONLINE = "online"
 
@@ -142,6 +164,61 @@ class BadgeEffect:
         )
 
 
+@dataclass(frozen=True)
+class FishingAction:
+    key: str
+    source_key: str
+    hook_key: str
+    rod_mask: int
+    phase_mask: int = FISHING_PHASE_INPUT_WINDOW_MASK
+    button_mask: int = 0x0002
+    timeout_frames: int = 24
+    success_outcome: int = FISHING_OUTCOME_CONTINUE
+    failure_outcome: int = FISHING_OUTCOME_GOT_AWAY
+    prompt_key: str = ""
+    priority: int = 1000
+    flags: int = 0
+    params: tuple[int, int, int, int] = (0, 0, 0, 0)
+
+    def __post_init__(self) -> None:
+        if not self.key:
+            raise ValueError("fishing action key is required")
+        if not self.source_key or not self.hook_key:
+            raise ValueError("fishing action hook reference is required")
+        if self.rod_mask == 0 or self.rod_mask & ~FISHING_ACTION_ROD_MASK_ALL:
+            raise ValueError("fishing action rod_mask is invalid")
+        if self.phase_mask == 0 or self.phase_mask & ~FISHING_PHASE_MASK_ALL:
+            raise ValueError("fishing action phase_mask is invalid")
+        if self.button_mask & ~KEYS_MASK:
+            raise ValueError("fishing action button_mask is invalid")
+        if self.timeout_frames < 0 or self.timeout_frames > 32767:
+            raise ValueError("fishing action timeout is invalid")
+        if self.success_outcome < 0 or self.success_outcome > 6 or self.failure_outcome < 0 or self.failure_outcome > 6:
+            raise ValueError("fishing action outcome is invalid")
+        if len(self.params) != 4 or any(param < -32768 or param > 32767 for param in self.params):
+            raise ValueError("fishing action params are invalid")
+
+    def catalog_hash(self) -> int:
+        return catalog_hash(
+            self.key,
+            self.hook_key,
+            self.rod_mask,
+            self.phase_mask,
+            self.priority,
+            self.flags,
+            self.prompt_key,
+            self.button_mask,
+            self.timeout_frames,
+            self.success_outcome,
+            self.failure_outcome,
+            *self.params,
+        )
+
+    def hook_ref_hash(self) -> int:
+        key = f"{self.source_key}:{self.hook_key}"
+        return catalog_hash(key, "hook_ref", self.source_key, self.hook_key)
+
+
 class CommitLog:
     def __init__(self) -> None:
         self.entries: dict[TransactionKey, CommitEntry] = {}
@@ -200,6 +277,7 @@ class ServerRuntimeProfile:
     ruleset: str = "engine:gen3"
     asset_keys: tuple[str, ...] = ()
     badge_effects: tuple[BadgeEffect, ...] = ()
+    fishing_actions: tuple[FishingAction, ...] = ()
 
     def __post_init__(self) -> None:
         seen: set[str] = set()
@@ -207,6 +285,11 @@ class ServerRuntimeProfile:
             if effect.key in seen:
                 raise ValueError(f"duplicate badge effect key {effect.key}")
             seen.add(effect.key)
+        seen.clear()
+        for action in self.fishing_actions:
+            if action.key in seen:
+                raise ValueError(f"duplicate fishing action key {action.key}")
+            seen.add(action.key)
 
     def delta_for(self, client: "SyntheticClient") -> "ServerRuntimeProfile":
         text_delta = {
@@ -226,6 +309,14 @@ class ServerRuntimeProfile:
             for effect in self.badge_effects
             if client.local_catalog.get(f"badge:{effect.key}") != effect.catalog_hash()
         )
+        for action in self.fishing_actions:
+            if not client.has_fishing_hook(action.source_key, action.hook_key):
+                raise ValueError(f"unknown fishing hook {action.source_key}:{action.hook_key}")
+        fishing_delta = tuple(
+            action
+            for action in self.fishing_actions
+            if client.local_catalog.get(f"fishing:{action.key}") != action.catalog_hash()
+        )
         return ServerRuntimeProfile(
             profile_hash=self.profile_hash,
             text=text_delta,
@@ -233,6 +324,7 @@ class ServerRuntimeProfile:
             ruleset=self.ruleset,
             asset_keys=asset_delta,
             badge_effects=badge_delta,
+            fishing_actions=fishing_delta,
         )
 
 
@@ -244,6 +336,7 @@ class SyntheticClient:
     local_weather: str = "local"
     local_catalog: dict[str, int] = field(default_factory=dict)
     local_badge_effects: tuple[BadgeEffect, ...] = ()
+    compiled_fishing_hooks: tuple[tuple[str, str], ...] = ()
     badge_levels: dict[int, int] = field(default_factory=dict)
     active_profile: ServerRuntimeProfile | None = None
     applied_profile_record_count: int = 0
@@ -256,6 +349,7 @@ class SyntheticClient:
             len(profile.text)
             + len(profile.asset_keys)
             + len(profile.badge_effects)
+            + len(profile.fishing_actions)
             + (1 if profile.weather is not None else 0)
         )
 
@@ -285,6 +379,14 @@ class SyntheticClient:
             level = min(level, effect.max_level)
             total += level * effect.percent_per_level
         return total
+
+    def has_fishing_hook(self, source_key: str, hook_key: str) -> bool:
+        if (source_key, hook_key) in self.compiled_fishing_hooks:
+            return True
+        catalog_key = f"fishing_hook:{source_key}:{hook_key}"
+        return self.local_catalog.get(catalog_key) == catalog_hash(
+            f"{source_key}:{hook_key}", "hook_ref", source_key, hook_key
+        )
 
 
 @dataclass(frozen=True)
@@ -373,7 +475,13 @@ class SyntheticRoom:
         client.room_id = self.room_id
         client.player_id = self.next_player_id
         self.next_player_id += 1
-        client.apply_profile(self.profile.delta_for(client))
+        try:
+            client.apply_profile(self.profile.delta_for(client))
+        except ValueError:
+            client.room_id = None
+            client.player_id = -1
+            self.next_player_id -= 1
+            return None
         self.clients[client.client_id] = client
         return client
 
@@ -729,6 +837,70 @@ def test_badge_effect_validation_rejects_bad_records() -> None:
     raise AssertionError("accepted duplicate badge effect keys")
 
 
+def test_fishing_action_profile_delta_and_hook_gate() -> None:
+    host = SyntheticHost()
+    action = FishingAction(
+        key="server_extra_reel",
+        source_key="demo:extra_reel",
+        hook_key="configured_button",
+        rod_mask=0x06,
+        prompt_key="demo:fishing_prompt",
+        params=(1, 2, 0, 0),
+    )
+    profile = ServerRuntimeProfile(0xF15A, fishing_actions=(action,))
+    alice = SyntheticClient("alice", compiled_fishing_hooks=(("demo:extra_reel", "configured_button"),))
+
+    room = host.create_room(alice, profile)
+    assert alice.active_profile is not None
+    assert alice.active_profile.fishing_actions == (action,)
+    assert alice.applied_profile_record_count == 2  # weather default plus fishing action
+
+    bob = SyntheticClient(
+        "bob",
+        local_catalog={
+            "fishing_hook:demo:extra_reel:configured_button": action.hook_ref_hash(),
+            "fishing:server_extra_reel": action.catalog_hash(),
+        },
+    )
+    assert host.join_room(room.room_id, bob) is bob
+    assert bob.active_profile is not None
+    assert bob.active_profile.fishing_actions == ()
+
+    unknown = SyntheticClient("unknown")
+    assert host.join_room(room.room_id, unknown) is None
+    assert unknown.player_id == -1
+
+
+def test_fishing_action_validation_rejects_bad_records() -> None:
+    def rejects(**kwargs: object) -> None:
+        valid = {
+            "key": "server_extra_reel",
+            "source_key": "demo:extra_reel",
+            "hook_key": "configured_button",
+            "rod_mask": 0x02,
+        }
+        valid.update(kwargs)
+        try:
+            FishingAction(**valid)  # type: ignore[arg-type]
+        except ValueError:
+            return
+        raise AssertionError(f"accepted invalid fishing action {kwargs!r}")
+
+    rejects(rod_mask=0)
+    rejects(rod_mask=0x08)
+    rejects(phase_mask=0)
+    rejects(button_mask=0x0400)
+    rejects(success_outcome=9)
+    rejects(params=(0, 0, 0, 40000))
+
+    duplicate = FishingAction("dupe", "demo:extra_reel", "configured_button", 0x02)
+    try:
+        ServerRuntimeProfile(0xF15A, fishing_actions=(duplicate, duplicate))
+    except ValueError:
+        return
+    raise AssertionError("accepted duplicate fishing action keys")
+
+
 def main() -> None:
     test_duplicate_commit_once()
     test_fail_closed_trade()
@@ -742,6 +914,8 @@ def main() -> None:
     test_server_delta_profile_reuses_rom_catalog()
     test_badge_effect_profile_deltas_and_level_caps()
     test_badge_effect_validation_rejects_bad_records()
+    test_fishing_action_profile_delta_and_hook_gate()
+    test_fishing_action_validation_rejects_bad_records()
     print("Multiplayer host simulator checks OK")
 
 

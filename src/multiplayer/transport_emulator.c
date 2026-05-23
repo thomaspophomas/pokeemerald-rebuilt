@@ -2,6 +2,8 @@
 #include "multiplayer/bridge_mailbox.h"
 #include "multiplayer/transport.h"
 
+#if !FEATURE_MULTIPLAYER_LINK_TRANSPORT
+
 #if FEATURE_MULTIPLAYER && FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT
 
 EWRAM_DATA volatile struct NetEmulatorBridgeBuffer gNetEmulatorBridgeMailbox = {0};
@@ -298,3 +300,5 @@ bool8 NetTransport_ReceivePacket(struct NetPacketEnvelope *envelope, void *paylo
     return FALSE;
 #endif
 }
+
+#endif // !FEATURE_MULTIPLAYER_LINK_TRANSPORT

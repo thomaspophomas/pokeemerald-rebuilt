@@ -14,6 +14,7 @@
 #include "battle_pyramid_bag.h"
 #include "constants/items.h"
 #include "constants/hold_effects.h"
+#include "mod/item.h"
 
 static bool8 CheckPyramidBagHasItem(u16 itemId, u16 count);
 static bool8 CheckPyramidBagHasSpace(u16 itemId, u16 count);
@@ -873,7 +874,8 @@ static u16 SanitizeItemId(u16 itemId)
 
 const u8 *GetItemName(u16 itemId)
 {
-    return gItems[SanitizeItemId(itemId)].name;
+    itemId = SanitizeItemId(itemId);
+    return ItemApi_GetName(itemId, gItems[itemId].name);
 }
 
 // Unused
@@ -884,27 +886,32 @@ u16 GetItemId(u16 itemId)
 
 u16 GetItemPrice(u16 itemId)
 {
-    return gItems[SanitizeItemId(itemId)].price;
+    itemId = SanitizeItemId(itemId);
+    return ItemApi_GetPrice(itemId, gItems[itemId].price);
 }
 
 u8 GetItemHoldEffect(u16 itemId)
 {
-    return gItems[SanitizeItemId(itemId)].holdEffect;
+    itemId = SanitizeItemId(itemId);
+    return ItemApi_GetHoldEffect(itemId, gItems[itemId].holdEffect);
 }
 
 u8 GetItemHoldEffectParam(u16 itemId)
 {
-    return gItems[SanitizeItemId(itemId)].holdEffectParam;
+    itemId = SanitizeItemId(itemId);
+    return ItemApi_GetHoldEffectParam(itemId, gItems[itemId].holdEffectParam);
 }
 
 const u8 *GetItemDescription(u16 itemId)
 {
-    return gItems[SanitizeItemId(itemId)].description;
+    itemId = SanitizeItemId(itemId);
+    return ItemApi_GetDescription(itemId, gItems[itemId].description);
 }
 
 u8 GetItemImportance(u16 itemId)
 {
-    return gItems[SanitizeItemId(itemId)].importance;
+    itemId = SanitizeItemId(itemId);
+    return ItemApi_GetImportance(itemId, gItems[itemId].importance);
 }
 
 // Unused
@@ -915,30 +922,36 @@ u8 GetItemRegistrability(u16 itemId)
 
 u8 GetItemPocket(u16 itemId)
 {
-    return gItems[SanitizeItemId(itemId)].pocket;
+    itemId = SanitizeItemId(itemId);
+    return ItemApi_GetPocket(itemId, gItems[itemId].pocket);
 }
 
 u8 GetItemType(u16 itemId)
 {
-    return gItems[SanitizeItemId(itemId)].type;
+    itemId = SanitizeItemId(itemId);
+    return ItemApi_GetType(itemId, gItems[itemId].type);
 }
 
 ItemUseFunc GetItemFieldFunc(u16 itemId)
 {
-    return gItems[SanitizeItemId(itemId)].fieldUseFunc;
+    itemId = SanitizeItemId(itemId);
+    return ItemApi_GetFieldFunc(itemId, gItems[itemId].fieldUseFunc);
 }
 
 u8 GetItemBattleUsage(u16 itemId)
 {
-    return gItems[SanitizeItemId(itemId)].battleUsage;
+    itemId = SanitizeItemId(itemId);
+    return ItemApi_GetBattleUsage(itemId, gItems[itemId].battleUsage);
 }
 
 ItemUseFunc GetItemBattleFunc(u16 itemId)
 {
-    return gItems[SanitizeItemId(itemId)].battleUseFunc;
+    itemId = SanitizeItemId(itemId);
+    return ItemApi_GetBattleFunc(itemId, gItems[itemId].battleUseFunc);
 }
 
 u8 GetItemSecondaryId(u16 itemId)
 {
-    return gItems[SanitizeItemId(itemId)].secondaryId;
+    itemId = SanitizeItemId(itemId);
+    return ItemApi_GetSecondaryId(itemId, gItems[itemId].secondaryId);
 }

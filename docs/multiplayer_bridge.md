@@ -13,6 +13,9 @@ bridge process, server, matchmaking layer, or persistence mirror.
   clock, and commit foundation.
 - `FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT=1` enables the EWRAM mailbox
   transport adapter in `src/multiplayer/transport_emulator.c`.
+- `FEATURE_MULTIPLAYER_LINK_TRANSPORT=1` enables the native link-gateway frame
+  adapter in `src/multiplayer/transport_link.c`.
+- The emulator mailbox and link-gateway transports are mutually exclusive.
 - Without both flags, `NetTransport_*` is a closed/no-op transport.
 - Online gameplay state is not authoritative in the ROM. The future server must
   validate movement, interaction, battle, trade, party, inventory, time, story,
@@ -30,9 +33,9 @@ server builds. The current `master` values are:
   "buildId": "0x00010003",
   "rulesetHash": "0x00000003",
   "profileProtocolVersion": 1,
-  "profileCapabilityHash": "0x00000002",
-  "modCatalogSchemaHash": "0x00000002",
-  "modCatalogHash": "0xE64BCD9E",
+  "profileCapabilityHash": "0x00000006",
+  "modCatalogSchemaHash": "0x00000006",
+  "modCatalogHash": "0x2EB46D50",
   "transportMode": "server_bridge",
   "transportModeValue": 1,
   "maxNetPlayers": 8,
@@ -57,8 +60,10 @@ contract constants or this manifest change.
 Offline gameplay uses the mods compiled into the ROM. Online gameplay is
 server-authoritative through a runtime profile: after `ClientHello`, the server
 may send a bounded delta profile that overrides supported mod API surfaces such
-as text, weather, engine ruleset ID, NPC definitions, sprite assets, and badge
-effect definitions. The server can choose a different profile per room without
+as text, weather, engine ruleset ID, NPC definitions, sprite assets, badge
+effects, fishing actions, encounter definitions, shop inventories, item
+metadata, reward tables, Pokemon species data, battle move data, and trainer
+definitions. The server can choose a different profile per room without
 requiring a new ROM build, as long as the ROM advertises the required profile
 protocol, capabilities, and mod catalog metadata.
 
@@ -131,6 +136,31 @@ the transport adapter. Gameplay code must use `NetTransport_*`,
 `MultiplayerSession_*`, and `MultiplayerCommit_*` rather than reading the
 mailbox directly.
 
+## Link Gateway Frames
+
+The native link-gateway transport is for emulators that expose a link-cable or
+Wi-Fi-link path instead of mGBA's Lua memory API. The ROM uses the normal Emerald
+link block layer and exchanges fixed `256` byte frames declared in
+`include/multiplayer/link_transport.h`.
+
+Every frame carries:
+
+- `magic == NET_LINK_GATEWAY_FRAME_MAGIC` (`0x31474C4E`)
+- `version == NET_LINK_GATEWAY_FRAME_VERSION` (`1`)
+- `frameType`
+- `sequence`
+- bounded payload bytes
+
+The server side must translate these frames through `pokeonline-link-gateway`.
+Current frame types cover session headers, server player snapshots, server
+subsessions, server packet slots, client player snapshots, and client packet
+slots. This keeps the ROM gameplay layer on the same `NetTransport_*` contract
+used by the EWRAM mailbox transport.
+
+The checked-in host gateway currently validates the fixed-frame contract with a
+raw test client. MyBoy, Linkboy, and Pizza Boy support still requires a real
+adapter that maps each emulator's external link protocol to these frames.
+
 ## Stable Server View
 
 The bridge owns `serverPlayers`, `serverSubsessions`, `bridgeTick`,
@@ -185,11 +215,12 @@ capability fields.
 
 The runtime profile lane lets the server dictate supported mods without
 requiring a ROM rebuild. Servers should treat profiles as deltas against the
-ROM mod catalog: if a desired text, weather/ruleset, NPC, sprite asset, or
-badge effect entry already exists in the ROM with the same key/content hash,
-the server omits that record and lets the ROM fallback path use its generated
-registry. The profile itself is a compact TLV blob carried over the reliable
-packet lane:
+ROM mod catalog: if a desired text, weather/ruleset, NPC, sprite asset, badge
+effect, fishing-action, encounter, shop, item, reward, Pokemon data, battle
+move, or trainer entry already exists in the ROM with the same key/content
+hash, the server omits that record and lets the ROM fallback path use its
+generated registry. The profile itself is a compact TLV blob carried over the
+reliable packet lane:
 
 1. Server sends `NET_PACKET_SERVER_PROFILE_BEGIN` with `profileHash`,
    `profileSize`, `chunkCount`, `profileProtocolVersion`, `capabilityFlags`,
@@ -203,11 +234,17 @@ packet lane:
 The current ROM accepts at most `MOD_RUNTIME_PROFILE_MAX_BLOB_SIZE` (`8192`)
 bytes. It supports text, weather, engine ruleset ID, NPC records, references to
 compiled sprite assets, small inline sprite sheets/palettes, and badge effect
-records for mod APIs that query badge-owned modifiers. It does not accept
-arbitrary executable code, new maps, audio, scripts, save-schema changes,
-unrestricted asset packs, or automatic battle formula changes. Unsupported
-capability bits, unsupported profile versions, hash mismatches, malformed
-records, or oversized profiles must fail closed and produce a non-OK ACK.
+records for mod APIs that query badge-owned modifiers, encounter definitions,
+shop inventories, item metadata/use hooks, reward tables, Pokemon species data,
+battle move data, and trainer definitions. Fishing-action, encounter, item, and
+reward profile records may only reference compiled ROM hooks by `sourceKey` and
+`hookKey`; the server never sends function pointers, scripts, or hook bytecode.
+Shop, Pokemon-data, battle-move, and trainer records are bounded data-only
+records. It does not accept arbitrary executable code, new maps, audio, scripts,
+save-schema changes, unrestricted asset packs, or unbounded battle formula
+changes. Unsupported capability bits, unsupported profile versions, hash
+mismatches, malformed records, unknown hook references, or oversized profiles
+must fail closed and produce a non-OK ACK.
 
 The receive blob is temporary. After hash validation, the ROM pre-scans the
 profile and allocates only the exact text/inline-asset buffers needed by the

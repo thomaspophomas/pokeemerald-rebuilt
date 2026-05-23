@@ -21,6 +21,7 @@
 #include "menu.h"
 #include "menu_helpers.h"
 #include "money.h"
+#include "mod/shop.h"
 #include "overworld.h"
 #include "palette.h"
 #include "party_menu.h"
@@ -1249,7 +1250,7 @@ static void RecordItemPurchase(u8 taskId)
 void CreatePokemartMenu(const u16 *itemsForSale)
 {
     CreateShopMenu(MART_TYPE_NORMAL);
-    SetShopItemsForSale(itemsForSale);
+    SetShopItemsForSale(ShopApi_GetItemsForSale(MOD_SHOP_TYPE_NORMAL, itemsForSale));
     ClearItemPurchases();
     SetShopMenuCallback(ScriptContext_Enable);
 }
@@ -1257,13 +1258,13 @@ void CreatePokemartMenu(const u16 *itemsForSale)
 void CreateDecorationShop1Menu(const u16 *itemsForSale)
 {
     CreateShopMenu(MART_TYPE_DECOR);
-    SetShopItemsForSale(itemsForSale);
+    SetShopItemsForSale(ShopApi_GetItemsForSale(MOD_SHOP_TYPE_DECOR, itemsForSale));
     SetShopMenuCallback(ScriptContext_Enable);
 }
 
 void CreateDecorationShop2Menu(const u16 *itemsForSale)
 {
     CreateShopMenu(MART_TYPE_DECOR2);
-    SetShopItemsForSale(itemsForSale);
+    SetShopItemsForSale(ShopApi_GetItemsForSale(MOD_SHOP_TYPE_DECOR2, itemsForSale));
     SetShopMenuCallback(ScriptContext_Enable);
 }

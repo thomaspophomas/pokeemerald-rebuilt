@@ -29,6 +29,8 @@
 #include "load_save.h"
 #include "main.h"
 #include "malloc.h"
+#include "mod/battle_data.h"
+#include "mod/trainer.h"
 #include "m4a.h"
 #include "palette.h"
 #include "party_menu.h"
@@ -1974,6 +1976,8 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                                                                         | BATTLE_TYPE_EREADER_TRAINER
                                                                         | BATTLE_TYPE_TRAINER_HILL)))
     {
+        u8 modPartySize;
+
         if (firstTrainer == TRUE)
             ZeroEnemyPartyMons();
 
@@ -1987,6 +1991,13 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
         else
         {
             monsCount = gTrainers[trainerNum].partySize;
+        }
+
+        if (TrainerApi_CreateParty(trainerNum, party, monsCount, &modPartySize))
+        {
+            if (TrainerApi_IsDoubleBattle(trainerNum, gTrainers[trainerNum].doubleBattle))
+                gBattleTypeFlags |= BATTLE_TYPE_DOUBLE;
+            return modPartySize;
         }
 
         for (i = 0; i < monsCount; i++)
@@ -2029,8 +2040,10 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 
                 for (j = 0; j < MAX_MON_MOVES; j++)
                 {
+                    u8 pp = BattleDataApi_GetMovePP(partyData[i].moves[j]);
+
                     SetMonData(&party[i], MON_DATA_MOVE1 + j, &partyData[i].moves[j]);
-                    SetMonData(&party[i], MON_DATA_PP1 + j, &gBattleMoves[partyData[i].moves[j]].pp);
+                    SetMonData(&party[i], MON_DATA_PP1 + j, &pp);
                 }
                 break;
             }
@@ -2063,18 +2076,20 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 
                 for (j = 0; j < MAX_MON_MOVES; j++)
                 {
+                    u8 pp = BattleDataApi_GetMovePP(partyData[i].moves[j]);
+
                     SetMonData(&party[i], MON_DATA_MOVE1 + j, &partyData[i].moves[j]);
-                    SetMonData(&party[i], MON_DATA_PP1 + j, &gBattleMoves[partyData[i].moves[j]].pp);
+                    SetMonData(&party[i], MON_DATA_PP1 + j, &pp);
                 }
                 break;
             }
             }
         }
 
-        gBattleTypeFlags |= gTrainers[trainerNum].doubleBattle;
+        gBattleTypeFlags |= TrainerApi_IsDoubleBattle(trainerNum, gTrainers[trainerNum].doubleBattle);
     }
 
-    return gTrainers[trainerNum].partySize;
+    return TrainerApi_GetPartySize(trainerNum, gTrainers[trainerNum].partySize);
 }
 
 static void UNUSED HBlankCB_Battle(void)

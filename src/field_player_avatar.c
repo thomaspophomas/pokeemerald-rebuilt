@@ -10,6 +10,8 @@
 #include "fieldmap.h"
 #include "menu.h"
 #include "metatile_behavior.h"
+#include "mod/fishing.h"
+#include "mod/language.h"
 #include "overworld.h"
 #include "party_menu.h"
 #include "random.h"
@@ -132,6 +134,7 @@ static u8 Fishing_WaitForA(struct Task *);
 static u8 Fishing_CheckMoreDots(struct Task *);
 static u8 Fishing_MonOnHook(struct Task *);
 static u8 Fishing_StartEncounter(struct Task *);
+static u8 Fishing_CustomAction(struct Task *);
 static u8 Fishing_NotEvenNibble(struct Task *);
 static u8 Fishing_GotAway(struct Task *);
 static u8 Fishing_NoMon(struct Task *);
@@ -1696,6 +1699,13 @@ static void Task_WaitStopSurfing(u8 taskId)
 #define tFrameCounter      data[1]
 #define tNumDots           data[2]
 #define tDotsRequired      data[3]
+#define tFishingApiButtons data[4]
+#define tFishingApiTimeout data[5]
+#define tFishingApiSuccess data[6]
+#define tFishingApiFailure data[7]
+#define tFishingApiReturn  data[8]
+#define tFishingApiBeforeEncounter data[9]
+#define tFishingApiEndOutcome data[10]
 #define tRoundsPlayed      data[12]
 #define tMinRoundsRequired data[13]
 #define tPlayerGfxId       data[14]
@@ -1705,9 +1715,11 @@ static void Task_WaitStopSurfing(u8 taskId)
 #define FISHING_START_ROUND 3
 #define FISHING_GOT_BITE 6
 #define FISHING_ON_HOOK 9
+#define FISHING_START_ENCOUNTER 10
 #define FISHING_NO_BITE 11
 #define FISHING_GOT_AWAY 12
 #define FISHING_SHOW_RESULT 13
+#define FISHING_CUSTOM_ACTION 16
 
 static bool8 (*const sFishingStateFuncs[])(struct Task *) =
 {
@@ -1727,13 +1739,139 @@ static bool8 (*const sFishingStateFuncs[])(struct Task *) =
     Fishing_NoMon,          // FISHING_SHOW_RESULT
     Fishing_PutRodAway,
     Fishing_EndNoMon,
+    Fishing_CustomAction,
 };
+
+static void FishingApi_BuildContext(struct Task *task, u8 phase, u8 outcome, struct FishingContext *context)
+{
+    struct ObjectEvent *playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
+
+    memset(context, 0, sizeof(*context));
+    context->rod = task->tFishingRod;
+    context->phase = phase;
+    context->round = task->tRoundsPlayed;
+    context->dotsRequired = task->tDotsRequired;
+    context->dotsShown = task->tNumDots;
+    context->minRoundsRequired = task->tMinRoundsRequired;
+    context->frame = task->tFrameCounter;
+    context->currentOutcome = outcome;
+    if (gSaveBlock1Ptr != NULL)
+    {
+        context->mapGroup = gSaveBlock1Ptr->location.mapGroup;
+        context->mapNum = gSaveBlock1Ptr->location.mapNum;
+    }
+    context->playerX = playerObjEvent->currentCoords.x;
+    context->playerY = playerObjEvent->currentCoords.y;
+}
+
+static void FishingApi_ApplyContext(struct Task *task, const struct FishingContext *context)
+{
+    task->tDotsRequired = context->dotsRequired;
+    task->tNumDots = context->dotsShown;
+    task->tMinRoundsRequired = context->minRoundsRequired;
+}
+
+static void FishingApi_ApplyOutcome(struct Task *task, u8 outcome, u8 continueStep)
+{
+    switch (outcome)
+    {
+    case FISHING_OUTCOME_CONTINUE:
+        task->tStep = continueStep;
+        break;
+    case FISHING_OUTCOME_NO_BITE:
+        task->tStep = FISHING_NO_BITE;
+        break;
+    case FISHING_OUTCOME_GOT_AWAY:
+    case FISHING_OUTCOME_CANCEL:
+        task->tStep = FISHING_GOT_AWAY;
+        break;
+    case FISHING_OUTCOME_START_ROUND:
+        task->tStep = FISHING_START_ROUND;
+        break;
+    case FISHING_OUTCOME_ON_HOOK:
+        task->tStep = FISHING_ON_HOOK;
+        break;
+    case FISHING_OUTCOME_START_ENCOUNTER:
+        task->tStep = FISHING_START_ENCOUNTER;
+        break;
+    default:
+        break;
+    }
+}
+
+static void FishingApi_StartCustomAction(struct Task *task, const struct FishingActionRequest *request, u8 returnStep)
+{
+    const u8 *prompt;
+
+    task->tFishingApiButtons = request->requiredButtons;
+    task->tFishingApiTimeout = request->timeoutFrames;
+    task->tFishingApiSuccess = request->successOutcome;
+    task->tFishingApiFailure = request->failureOutcome;
+    task->tFishingApiReturn = returnStep;
+    task->tFrameCounter = 0;
+    task->tStep = FISHING_CUSTOM_ACTION;
+
+    if (request->promptKey != NULL)
+    {
+        prompt = LanguageApi_GetText(request->promptKey);
+        if (prompt[0] != EOS)
+        {
+            FillWindowPixelBuffer(0, PIXEL_FILL(1));
+            AddTextPrinterParameterized2(0, FONT_NORMAL, prompt, 1, 0, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_GRAY);
+        }
+    }
+}
+
+static bool8 FishingApi_RunTaskPhase(struct Task *task, u8 phase, u8 outcome, u8 continueStep)
+{
+    struct FishingContext context;
+    struct FishingActionRequest request;
+    u8 result;
+
+    if (!FishingApi_HasActions())
+        return FALSE;
+
+    FishingApi_BuildContext(task, phase, outcome, &context);
+    result = FishingApi_RunPhase(&context, &request);
+    FishingApi_ApplyContext(task, &context);
+
+    if (result == FISHING_ACTION_REQUEST_ACTION)
+    {
+        FishingApi_StartCustomAction(task, &request, continueStep);
+        return TRUE;
+    }
+    if (result == FISHING_ACTION_CANCEL)
+    {
+        FishingApi_ApplyOutcome(task, FISHING_OUTCOME_CANCEL, continueStep);
+        return TRUE;
+    }
+    if (result == FISHING_ACTION_OVERRIDE)
+    {
+        FishingApi_ApplyOutcome(task, context.currentOutcome, continueStep);
+        return context.currentOutcome != FISHING_OUTCOME_CONTINUE;
+    }
+
+    return FALSE;
+}
+
+static void FishingApi_RunEndPhase(struct Task *task, u8 outcome)
+{
+    struct FishingContext context;
+    struct FishingActionRequest request;
+
+    if (!FishingApi_HasActions())
+        return;
+
+    FishingApi_BuildContext(task, FISHING_PHASE_END, outcome, &context);
+    FishingApi_RunPhase(&context, &request);
+}
 
 void StartFishing(u8 rod)
 {
     u8 taskId = CreateTask(Task_Fishing, 0xFF);
 
     gTasks[taskId].tFishingRod = rod;
+    FishingApi_BeginAttempt(rod);
     Task_Fishing(taskId);
 }
 
@@ -1773,6 +1911,7 @@ static bool8 Fishing_GetRodOut(struct Task *task)
     playerObjEvent->enableAnim = TRUE;
     SetPlayerAvatarFishing(playerObjEvent->facingDirection);
     task->tStep++;
+    FishingApi_RunTaskPhase(task, FISHING_PHASE_START, FISHING_OUTCOME_CONTINUE, task->tStep);
     return FALSE;
 }
 
@@ -1791,6 +1930,9 @@ static bool8 Fishing_InitDots(struct Task *task)
 {
     u32 randVal;
 
+    if (FishingApi_RunTaskPhase(task, FISHING_PHASE_ROUND_START, FISHING_OUTCOME_CONTINUE, task->tStep))
+        return TRUE;
+
     LoadMessageBoxAndFrameGfx(0, TRUE);
     task->tStep++;
     task->tFrameCounter = 0;
@@ -1802,6 +1944,7 @@ static bool8 Fishing_InitDots(struct Task *task)
         task->tDotsRequired = randVal + 4;
     if (task->tDotsRequired >= 10)
         task->tDotsRequired = 10;
+    FishingApi_RunTaskPhase(task, FISHING_PHASE_DOT_CONFIG, FISHING_OUTCOME_CONTINUE, task->tStep);
     return TRUE;
 }
 
@@ -1843,6 +1986,9 @@ static bool8 Fishing_ShowDots(struct Task *task)
 static bool8 Fishing_CheckForBite(struct Task *task)
 {
     bool8 bite;
+    struct FishingContext context;
+    struct FishingActionRequest request;
+    u8 result;
 
     AlignFishingAnimationFrames();
     task->tStep++;
@@ -1872,9 +2018,42 @@ static bool8 Fishing_CheckForBite(struct Task *task)
                 bite = TRUE;
         }
 
-        if (bite == TRUE)
-            StartSpriteAnim(&gSprites[gPlayerAvatar.spriteId], GetFishingBiteDirectionAnimNum(GetPlayerFacingDirection()));
     }
+    if (FishingApi_HasActions())
+    {
+        FishingApi_BuildContext(task, FISHING_PHASE_BITE_CHECK, bite ? FISHING_OUTCOME_CONTINUE : FISHING_OUTCOME_NO_BITE, &context);
+        context.bite = bite;
+        result = FishingApi_RunPhase(&context, &request);
+        FishingApi_ApplyContext(task, &context);
+        if (result == FISHING_ACTION_REQUEST_ACTION)
+        {
+            FishingApi_StartCustomAction(task, &request, task->tStep);
+            return TRUE;
+        }
+        if (result == FISHING_ACTION_CANCEL)
+        {
+            task->tStep = FISHING_GOT_AWAY;
+            return TRUE;
+        }
+        if (result == FISHING_ACTION_OVERRIDE)
+        {
+            bite = context.bite;
+            if (context.currentOutcome != FISHING_OUTCOME_CONTINUE)
+            {
+                FishingApi_ApplyOutcome(task, context.currentOutcome, task->tStep);
+                if (context.currentOutcome != FISHING_OUTCOME_START_ENCOUNTER
+                 && context.currentOutcome != FISHING_OUTCOME_ON_HOOK)
+                    bite = FALSE;
+            }
+            else if (!bite)
+                task->tStep = FISHING_NO_BITE;
+            else
+                task->tStep = FISHING_GOT_BITE;
+        }
+    }
+
+    if (bite == TRUE)
+        StartSpriteAnim(&gSprites[gPlayerAvatar.spriteId], GetFishingBiteDirectionAnimNum(GetPlayerFacingDirection()));
     return TRUE;
 }
 
@@ -1897,6 +2076,10 @@ static bool8 Fishing_WaitForA(struct Task *task)
     };
 
     AlignFishingAnimationFrames();
+    if (task->tFrameCounter == 0
+     && FishingApi_RunTaskPhase(task, FISHING_PHASE_INPUT_WINDOW, FISHING_OUTCOME_CONTINUE, task->tStep + 1))
+        return TRUE;
+
     task->tFrameCounter++;
     if (task->tFrameCounter >= reelTimeouts[task->tFishingRod])
         task->tStep = FISHING_GOT_AWAY;
@@ -1929,6 +2112,11 @@ static bool8 Fishing_CheckMoreDots(struct Task *task)
         if (moreDotsChance[task->tFishingRod][task->tRoundsPlayed] > probability)
             task->tStep = FISHING_START_ROUND;
     }
+    FishingApi_RunTaskPhase(
+        task,
+        FISHING_PHASE_MORE_DOTS_CHECK,
+        task->tStep == FISHING_START_ROUND ? FISHING_OUTCOME_START_ROUND : FISHING_OUTCOME_ON_HOOK,
+        task->tStep);
     return FALSE;
 }
 
@@ -1969,11 +2157,38 @@ static bool8 Fishing_StartEncounter(struct Task *task)
 
     if (task->tFrameCounter != 0)
     {
+        if (!task->tFishingApiBeforeEncounter)
+        {
+            task->tFishingApiBeforeEncounter = TRUE;
+            if (FishingApi_RunTaskPhase(task, FISHING_PHASE_BEFORE_ENCOUNTER, FISHING_OUTCOME_START_ENCOUNTER, FISHING_START_ENCOUNTER))
+                return TRUE;
+        }
         gPlayerAvatar.preventStep = FALSE;
         UnlockPlayerFieldControls();
         FishingWildEncounter(task->tFishingRod);
         RecordFishingAttemptForTV(TRUE);
+        FishingApi_RunEndPhase(task, FISHING_OUTCOME_START_ENCOUNTER);
+        FishingApi_EndAttempt(FISHING_OUTCOME_START_ENCOUNTER);
         DestroyTask(FindTaskIdByFunc(Task_Fishing));
+    }
+    return FALSE;
+}
+
+static bool8 Fishing_CustomAction(struct Task *task)
+{
+    AlignFishingAnimationFrames();
+    RunTextPrinters();
+
+    task->tFrameCounter++;
+    if (task->tFishingApiButtons != 0 && (gMain.newKeys & task->tFishingApiButtons) == task->tFishingApiButtons)
+    {
+        FishingApi_ApplyOutcome(task, task->tFishingApiSuccess, task->tFishingApiReturn);
+        return TRUE;
+    }
+    if (task->tFishingApiTimeout != 0 && task->tFrameCounter >= task->tFishingApiTimeout)
+    {
+        FishingApi_ApplyOutcome(task, task->tFishingApiFailure, task->tFishingApiReturn);
+        return TRUE;
     }
     return FALSE;
 }
@@ -1984,6 +2199,7 @@ static bool8 Fishing_NotEvenNibble(struct Task *task)
     StartSpriteAnim(&gSprites[gPlayerAvatar.spriteId], GetFishingNoCatchDirectionAnimNum(GetPlayerFacingDirection()));
     FillWindowPixelBuffer(0, PIXEL_FILL(1));
     AddTextPrinterParameterized2(0, FONT_NORMAL, gText_NotEvenANibble, 1, 0, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_GRAY);
+    task->tFishingApiEndOutcome = FISHING_OUTCOME_NO_BITE;
     task->tStep = FISHING_SHOW_RESULT;
     return TRUE;
 }
@@ -1994,6 +2210,7 @@ static bool8 Fishing_GotAway(struct Task *task)
     StartSpriteAnim(&gSprites[gPlayerAvatar.spriteId], GetFishingNoCatchDirectionAnimNum(GetPlayerFacingDirection()));
     FillWindowPixelBuffer(0, PIXEL_FILL(1));
     AddTextPrinterParameterized2(0, FONT_NORMAL, gText_ItGotAway, 1, 0, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_GRAY);
+    task->tFishingApiEndOutcome = FISHING_OUTCOME_GOT_AWAY;
     task->tStep++;
     return TRUE;
 }
@@ -2033,6 +2250,10 @@ static bool8 Fishing_EndNoMon(struct Task *task)
         UnfreezeObjectEvents();
         ClearDialogWindowAndFrame(0, TRUE);
         RecordFishingAttemptForTV(FALSE);
+        if (task->tFishingApiEndOutcome == FISHING_OUTCOME_CONTINUE)
+            task->tFishingApiEndOutcome = FISHING_OUTCOME_NO_BITE;
+        FishingApi_RunEndPhase(task, task->tFishingApiEndOutcome);
+        FishingApi_EndAttempt(task->tFishingApiEndOutcome);
         DestroyTask(FindTaskIdByFunc(Task_Fishing));
     }
     return FALSE;
@@ -2040,6 +2261,18 @@ static bool8 Fishing_EndNoMon(struct Task *task)
 
 #undef tStep
 #undef tFrameCounter
+#undef tNumDots
+#undef tDotsRequired
+#undef tFishingApiButtons
+#undef tFishingApiTimeout
+#undef tFishingApiSuccess
+#undef tFishingApiFailure
+#undef tFishingApiReturn
+#undef tFishingApiBeforeEncounter
+#undef tFishingApiEndOutcome
+#undef tRoundsPlayed
+#undef tMinRoundsRequired
+#undef tPlayerGfxId
 #undef tFishingRod
 
 static void AlignFishingAnimationFrames(void)

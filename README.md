@@ -1,6 +1,6 @@
 # pokeemerald-rebuilt
 
-<!-- last_updated: 2026-05-17 -->
+<!-- last_updated: 2026-05-22 -->
 
 [![CI/CD](https://github.com/thomaspophomas/pokeemerald-rebuilt/actions/workflows/build.yml/badge.svg)](https://github.com/thomaspophomas/pokeemerald-rebuilt/actions/workflows/build.yml)
 
@@ -14,40 +14,65 @@ It does not distribute a built ROM in releases or CI artifacts.
 
 ## Current Status
 
-As of the 2026-05-17 documentation/build audit, `origin/master` pointed at
-`8b3f7f7036dfac2defb7c590f9aa49c34419b15a` ("Merge multiplayer modular
-refactor foundation"). The checked `master` CI/CD run for that commit started
-on 2026-05-16 at 16:15 UTC and concluded `failure`.
+As of the 2026-05-22 local audit, this repository's `master` branch is aligned
+with `origin/master` at `2776fe04a` ("Harden badge effect API and catalog
+schema"). The current working tree also carries an uncommitted multiplayer/mod
+API expansion that updates the runtime-profile and mod-catalog schema to
+`0x00000006`.
 
-- Green on `master`: documentation structure, architecture guard, multiplayer
-  fuzz checks, multiplayer host simulator, net-manifest check, modgen smoke,
-  and whitespace check.
-- Red on `master`: `build-compare`, all `build-modern` matrix entries, and
-  `build-feature-agbcc`. `build-compare` failed before compare at the symbol
-  branch checkout step; the modern and feature build lanes failed in their
-  build steps. This working tree carries fixes for the known checkout and
-  compile failures; the badge remains authoritative after the next pushed CI
-  run.
-- Do not describe the online multiplayer work as ready to use. It remains a
-  foundation/skeleton until the bridge, server authority, matchmaking, and
-  persistence pieces exist.
+Locally verified in this working tree:
+
+- `python3 scripts/ci/check_net_manifest.py`
+- `python3 scripts/ci/modgen_smoke.py`
+- `python3 scripts/ci/multiplayer_host_sim.py`
+- `python3 scripts/ci/multiplayer_fuzz.py`
+- `make -j2 modern FEATURE_MULTIPLAYER=1 FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT=1`
+- `make -j2 modern FEATURE_MULTIPLAYER=1 FEATURE_MULTIPLAYER_LINK_TRANSPORT=1`
+
+The matching host stack lives in the sibling `pokeemerald-online-host`
+repository. After fixing the Encounter TLV test expectation and rebuilding its
+Rust binaries in Docker, `cargo test --workspace --locked`, the headless
+two-client smoke test, and the experimental link-gateway smoke test passed.
+The two-client smoke path confirmed both clients joined one room, received
+server-profile packets, saw a two-player room view, and received battle-demo
+commit results. The link-gateway smoke path confirmed the host can exchange the
+new fixed-size link frames with a raw test client.
+
+Do not describe the online multiplayer work as ready to use. The architecture,
+ROM transport contract, profile delivery, room-view fanout, and smoke-level host
+path exist, but real playable online multiplayer still needs end-to-end mGBA
+validation, authoritative state mirrors, recovery UX, matchmaking/deployment,
+and production persistence.
 
 Implemented foundation:
 
 - Module registry hooks and runtime state storage for the Solo/Online setting.
 - Generated mod registries and mod-facing APIs for flags, events, weather,
-  time, sprites, language text, Pokeballs, engine rulesets, NPCs, and maps.
+  time, sprites, language text, Pokeballs, engine rulesets, NPCs, maps, badge
+  effects, fishing actions, encounters, shops, items, rewards, Pokemon data,
+  battle moves, and trainers.
 - Multiplayer session, transport, overworld snapshot, battle subsession, trade
   subsession, clock, and fail-closed commit scaffolding.
-- Host-side CI checks for the documented protocol and invariants.
+- Runtime profile and catalog packets that let a server send bounded room
+  profiles without rebuilding the ROM.
+- Host-side CI checks and a sibling Rust host smoke path for the documented
+  protocol and invariants.
 
 Known limits:
 
-- Online multiplayer is not finished. There is no production bridge process,
-  server, matchmaking, persistence mirror, or public play path in this repo.
+- Online multiplayer is not finished. The production bridge/server stack is
+  separate from this ROM repository and is not yet a public play service.
 - `FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT=1` enables only the ROM-side EWRAM
-  mailbox adapter. The emulator/bridge/server side of that contract is a
-  specification target, not an implemented component.
+  mailbox adapter. The host stack can exercise the contract headlessly, but
+  real mGBA/Lua sessions still need full end-to-end validation.
+- `FEATURE_MULTIPLAYER_LINK_TRANSPORT=1` enables the ROM-side native
+  link-gateway frame adapter. It builds and passes the host smoke path, but it
+  is not yet proven against MyBoy/Linkboy/Pizza Boy's real Wi-Fi link protocol.
+- `FEATURE_MULTIPLAYER_COMPANION_SAVE_BEACON=1` enables an experimental
+  Android companion proof path. The ROM writes a compact overworld beacon to
+  the Recorded Battle special save sector roughly once per second so a
+  companion can test whether an emulator updates `.sav` data live. It can
+  overwrite recorded battle data and is not a production transport.
 - Battle, trade, item, party, story, reward, and daily-event authority is still
   server-side future work. Client-side online commits intentionally fail closed
   where authoritative validation is missing.
@@ -63,8 +88,17 @@ Known limits:
   overworld.
 - Build-time feature gate: `FEATURE_MULTIPLAYER=1`.
 - Emulator bridge transport is opt-in with
-  `FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT=1`.
-- The bridge/server side is not implemented in this repository yet.
+  `FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT=1`; mGBA plus the sibling
+  `pokeonline-bridge` is the current supported reference route for real
+  emulator testing.
+- Native link-gateway transport is opt-in with
+  `FEATURE_MULTIPLAYER_LINK_TRANSPORT=1` and is mutually exclusive with the
+  emulator bridge transport.
+- Android companion save-beacon experiments are opt-in with
+  `FEATURE_MULTIPLAYER_COMPANION_SAVE_BEACON=1`.
+- The bridge/server side lives in the sibling `pokeemerald-online-host`
+  repository and currently supports a headless two-client smoke path plus an
+  experimental raw link-gateway smoke path.
 - Multiplayer defaults to Solo and can be switched to Online in-game through
   Options or the Start menu when `FEATURE_MULTIPLAYER=1`.
 - Runtime-safe feature state starts in `engine/runtime_state`; the
@@ -72,7 +106,9 @@ Known limits:
   guarded by a fixed-size assertion.
 - Mod APIs are generated from `mods/<modId>/...` by `scripts/modgen.py`.
   Weather, time, events, flags, sprites, language text, Pokeballs, engine
-  rulesets, NPCs, and maps now have dedicated adapter APIs.
+  rulesets, NPCs, maps, badge effects, fishing actions, encounters, shops,
+  items, rewards, Pokemon data, battle moves, and trainers now have dedicated
+  adapter APIs.
 
 ## Architecture
 
@@ -133,13 +169,31 @@ make -j"$(nproc)" modern FEATURE_MULTIPLAYER=1
 Enable emulator-bridge experiments explicitly:
 
 ```bash
-make -j"$(nproc)" modern FEATURE_MULTIPLAYER=1 FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT=1
+make -j"$(nproc)" modern FEATURE_MULTIPLAYER=1 FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT=1 FEATURE_MULTIPLAYER_AUTOCONNECT=1
+```
+
+Enable native link-gateway experiments explicitly:
+
+```bash
+make -j"$(nproc)" modern FEATURE_MULTIPLAYER=1 FEATURE_MULTIPLAYER_LINK_TRANSPORT=1
 ```
 
 Enable autoconnect only when the emulator bridge is present:
 
 ```bash
 make -j"$(nproc)" modern FEATURE_MULTIPLAYER=1 FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT=1 FEATURE_MULTIPLAYER_AUTOCONNECT=1
+```
+
+Enable the experimental Android companion save-beacon build:
+
+```bash
+make -j"$(nproc)" modern FEATURE_MULTIPLAYER=1 FEATURE_MULTIPLAYER_LINK_TRANSPORT=1 FEATURE_MULTIPLAYER_AUTOCONNECT=1 FEATURE_MULTIPLAYER_COMPANION_SAVE_BEACON=1
+```
+
+Inspect a save file for the beacon:
+
+```bash
+python3 scripts/companion_save_beacon_watch.py /path/to/pokeemerald.sav
 ```
 
 Generate mod registries explicitly when working on manifests:
@@ -194,6 +248,9 @@ CI intentionally does not upload built ROM artifacts.
 - Use `PokeBallApi_*` for catch modifiers, throw results, catch commits, and
   battle ball graphics.
 - Use `NpcApi_*` and `MapApi_*` for new NPC/map-facing code.
+- Use `BadgeApi_*`, `FishingApi_*`, `EncounterApi_*`, `ShopApi_*`,
+  `ItemApi_*`, `RewardApi_*`, `PokemonDataApi_*`, `BattleDataApi_*`, and
+  `TrainerApi_*` for the newer server-profile-aware mod surfaces.
 - Engine generation or custom rules belong behind `EngineApi_*` rulesets.
 - Runtime-safe settings live behind a versioned state API.
 - UI code may switch Solo/Online only through `engine/runtime_state` and

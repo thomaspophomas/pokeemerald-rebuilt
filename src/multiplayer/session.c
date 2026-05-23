@@ -3,6 +3,7 @@
 #include "generated/mod_registry.h"
 #include "global.fieldmap.h"
 #include "multiplayer/session.h"
+#include "multiplayer/companion_save_beacon.h"
 #include "multiplayer/commit.h"
 #include "multiplayer/transport.h"
 #include "multiplayer/overworld.h"
@@ -40,7 +41,7 @@ static void ResetSession(void)
     sSession.state = MULTIPLAYER_SESSION_OFFLINE;
     sSession.localPlayerId = NET_PLAYER_NONE;
     sSession.hostPlayerId = NET_PLAYER_NONE;
-    sSession.transportMode = NET_TRANSPORT_MODE_SERVER_BRIDGE;
+    sSession.transportMode = NET_ACTIVE_TRANSPORT_MODE;
     sSession.healthState = MULTIPLAYER_HEALTH_DISCONNECTED;
     sClientHelloSent = FALSE;
     sHeartbeatTimer = 0;
@@ -125,7 +126,7 @@ static bool8 MapLocationIsValid(u8 mapGroup, u8 mapNum)
 
 static bool8 SessionIdentityIsValid(const struct NetTransportSessionView *view)
 {
-    return view->transportMode == NET_TRANSPORT_MODE_SERVER_BRIDGE
+    return view->transportMode == NET_ACTIVE_TRANSPORT_MODE
         && view->sessionId != 0
         && view->sessionEpoch != 0
         && view->playerToken != 0
@@ -602,6 +603,9 @@ static u32 BuildFeatureFlags(void)
 #if FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT
     flags |= NET_FEATURE_FLAG_EMULATOR_TRANSPORT;
 #endif
+#if FEATURE_MULTIPLAYER_LINK_TRANSPORT
+    flags |= NET_FEATURE_FLAG_LINK_TRANSPORT;
+#endif
 #if FEATURE_ENGINE_GEN1
     flags |= NET_FEATURE_FLAG_ENGINE_GEN1;
 #endif
@@ -635,7 +639,7 @@ static bool8 PublishClientHello(void)
     hello.profileCapabilityHash = MOD_RUNTIME_PROFILE_CAPABILITY_HASH;
     hello.modCatalogHash = gModCatalogHash;
     hello.modCatalogCount = gModCatalogEntryCount;
-    hello.transportMode = NET_TRANSPORT_MODE_SERVER_BRIDGE;
+    hello.transportMode = NET_ACTIVE_TRANSPORT_MODE;
 
     if (NetTransport_SendPacket(NET_PACKET_CLIENT_HELLO, &hello, sizeof(hello)))
     {
@@ -964,6 +968,7 @@ void MultiplayerSession_Init(void)
     NetTransport_Init();
     MultiplayerCommit_Init();
     MultiplayerOverworld_Init();
+    MultiplayerCompanionSaveBeacon_Init();
 #if FEATURE_MULTIPLAYER_AUTOCONNECT
     EngineRuntimeState_SetMultiplayerMode(OPTIONS_MULTIPLAYER_MODE_ONLINE);
     MultiplayerSession_RequestConnect();
@@ -985,6 +990,9 @@ void MultiplayerSession_Tick(void)
 #endif
         return;
     }
+
+    MultiplayerCompanionSaveBeacon_Tick(sSession.tick, sSession.state, sSession.healthState, sSession.localPlayerId, sSession.playerCount);
+
     if (!sConnectRequested && sSession.state == MULTIPLAYER_SESSION_OFFLINE)
     {
 #if FEATURE_MULTIPLAYER_SMOKE_STATUS

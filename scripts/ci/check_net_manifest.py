@@ -57,7 +57,30 @@ def calc_mod_catalog_hash() -> int:
     engines = modgen.collect_engines(mods)
     npcs = modgen.collect_npcs(mods)
     badge_effects = modgen.collect_badge_effects(mods)
-    catalog_entries = modgen.collect_catalog_entries(weather, sprite_assets, language_texts, engines, npcs, badge_effects)
+    fishing_actions = modgen.collect_fishing_actions(mods)
+    encounters = modgen.collect_encounters(mods)
+    shops = modgen.collect_shops(mods)
+    items = modgen.collect_items(mods)
+    rewards = modgen.collect_rewards(mods)
+    pokemon_data = modgen.collect_pokemon_data(mods)
+    battle_moves = modgen.collect_battle_moves(mods)
+    trainers = modgen.collect_trainers(mods)
+    catalog_entries = modgen.collect_catalog_entries(
+        weather,
+        sprite_assets,
+        language_texts,
+        engines,
+        npcs,
+        badge_effects,
+        fishing_actions,
+        encounters,
+        shops,
+        items,
+        rewards,
+        pokemon_data,
+        battle_moves,
+        trainers,
+    )
     return modgen.calc_catalog_hash(catalog_entries)
 
 
