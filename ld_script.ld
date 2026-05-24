@@ -23,6 +23,7 @@ SECTIONS {
     {
         INCLUDE "sym_ewram.ld"
         src/*.o(ewram_data);
+        mods/*.o(ewram_data);
 
         *libc.a:impure.o(.data);
         *libc.a:locale.o(.data);
@@ -35,6 +36,7 @@ SECTIONS {
         /* .bss starts at 0x3000000 */
         INCLUDE "sym_bss.ld"
         src/*.o(.bss);
+        mods/*.o(.bss);
         data/*.o(.bss);
 
         /* .bss.code starts at 0x3001AA8 */
@@ -43,6 +45,7 @@ SECTIONS {
         /* COMMON starts at 0x30022A8 */
         INCLUDE "sym_common.ld"
         src/*.o(COMMON);
+        mods/*.o(COMMON);
         *libc.a:sbrkr.o(COMMON);
     } > IWRAM
 
@@ -1318,7 +1321,9 @@ SECTIONS {
     ALIGN(4)
     {
         src/*.o(.text);
+        mods/*.o(.text);
         src/*.o(.rodata);
+        mods/*.o(.rodata);
         data/*.o(.rodata);
     } > ROM = 0
 

@@ -511,6 +511,51 @@ static void TryStartLocalBattleForSubsession(const struct MultiplayerSubsession 
 }
 #endif
 
+#if !FEATURE_MULTIPLAYER
+bool8 MultiplayerBattle_LocalPlayerCanFight(void)
+{
+    return FALSE;
+}
+
+bool8 MultiplayerBattle_RemotePlayerCanPartner(u8 partnerPlayerId)
+{
+    (void)partnerPlayerId;
+    return FALSE;
+}
+
+bool8 MultiplayerBattle_PrepareTrainerPvePartnerParty(u8 partnerPlayerId)
+{
+    (void)partnerPlayerId;
+    return FALSE;
+}
+
+bool8 MultiplayerBattle_StartTrainerPveBattle(u8 partnerPlayerId, u16 trainerId)
+{
+    (void)partnerPlayerId;
+    (void)trainerId;
+    return FALSE;
+}
+
+void MultiplayerBattle_CancelPendingTrainerPveBattle(void)
+{
+}
+
+bool8 MultiplayerBattle_IsTrainerPvePartnerBattle(void)
+{
+    return FALSE;
+}
+
+u8 MultiplayerBattle_GetPartnerTrainerBackPicId(void)
+{
+    return TRAINER_BACK_PIC_BRENDAN;
+}
+
+const u8 *MultiplayerBattle_GetPartnerName(void)
+{
+    return sFallbackPartnerName;
+}
+#endif
+
 void MultiplayerBattle_Tick(const struct MultiplayerSession *session)
 {
 #if FEATURE_MULTIPLAYER
