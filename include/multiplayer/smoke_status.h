@@ -4,6 +4,7 @@
 #include "global.h"
 
 #define NET_SMOKE_STATUS_MAGIC 0x454B4D53 // "SMKE"
+#define NET_SMOKE_STATUS_FLAG_RUNTIME_READY (1 << 0)
 
 struct NetMultiplayerSmokeStatus
 {
@@ -16,7 +17,8 @@ struct NetMultiplayerSmokeStatus
     u32 activeProfileHash;
     u32 lastProfileAckHash;
     u8 lastProfileAckResult;
-    u8 reserved[3];
+    u8 flags;
+    u8 reserved[2];
 } __attribute__((packed));
 
 extern volatile struct NetMultiplayerSmokeStatus gNetMultiplayerSmokeStatus;

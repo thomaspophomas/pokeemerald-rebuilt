@@ -138,6 +138,15 @@ struct NetPlayerSnapshot
     u16 staleFrames;
     u8 anomalyScore;
     u8 trustFlags;
+    u8 trainerGender;
+    u8 partyCount;
+    u8 partyLevels[NET_PLAYER_PARTY_SNAPSHOT_SIZE];
+    u8 reserved;
+    u16 partySpecies[NET_PLAYER_PARTY_SNAPSHOT_SIZE];
+    u16 partyHeldItems[NET_PLAYER_PARTY_SNAPSHOT_SIZE];
+    u16 partyHp[NET_PLAYER_PARTY_SNAPSHOT_SIZE];
+    u16 partyMoves[NET_PLAYER_PARTY_SNAPSHOT_SIZE][MAX_MON_MOVES];
+    u8 playerName[PLAYER_NAME_LENGTH + 1];
 };
 
 struct MultiplayerSubsession

@@ -36,6 +36,9 @@
 #include "field_control_avatar.h"
 #include "mirage_tower.h"
 #include "mod/trainer.h"
+#include "multiplayer/battle.h"
+#include "multiplayer/overworld.h"
+#include "multiplayer/session.h"
 #include "field_screen_effect.h"
 #include "data.h"
 #include "constants/battle_frontier.h"
@@ -45,6 +48,7 @@
 #include "constants/items.h"
 #include "constants/songs.h"
 #include "constants/map_types.h"
+#include "constants/pokemon.h"
 #include "constants/trainers.h"
 #include "constants/trainer_hill.h"
 #include "constants/weather.h"
@@ -97,6 +101,8 @@ EWRAM_DATA static u16 sTrainerBattleMode = 0;
 EWRAM_DATA u16 gTrainerBattleOpponent_A = 0;
 EWRAM_DATA u16 gTrainerBattleOpponent_B = 0;
 EWRAM_DATA u16 gPartnerTrainerId = 0;
+EWRAM_DATA static bool8 sMultiplayerTrainerDoubleBattleRequested = FALSE;
+EWRAM_DATA static u8 sMultiplayerTrainerDoubleBattleRemotePlayerId = NET_PLAYER_NONE;
 EWRAM_DATA static u16 sTrainerObjectEventLocalId = 0;
 EWRAM_DATA static u8 *sTrainerAIntroSpeech = NULL;
 EWRAM_DATA static u8 *sTrainerBIntroSpeech = NULL;
@@ -1025,6 +1031,8 @@ void ResetTrainerOpponentIds(void)
 static void InitTrainerBattleVariables(void)
 {
     sTrainerBattleMode = 0;
+    sMultiplayerTrainerDoubleBattleRequested = FALSE;
+    sMultiplayerTrainerDoubleBattleRemotePlayerId = NET_PLAYER_NONE;
     if (gApproachingTrainerId == 0)
     {
         sTrainerAIntroSpeech = NULL;
@@ -1239,6 +1247,60 @@ u8 GetTrainerBattleMode(void)
     return sTrainerBattleMode;
 }
 
+bool8 MultiplayerTrainerDoubleBattle_ShouldPrompt(void)
+{
+#if FEATURE_MULTIPLAYER
+    u8 remotePlayerId;
+
+    sMultiplayerTrainerDoubleBattleRemotePlayerId = NET_PLAYER_NONE;
+    if (!MultiplayerSession_IsOnline())
+        return FALSE;
+    if (gNoOfApproachingTrainers != 1)
+        return FALSE;
+    if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE || InTrainerHillChallenge())
+        return FALSE;
+    if (!MultiplayerBattle_LocalPlayerCanFight())
+        return FALSE;
+    if (gTrainers[gTrainerBattleOpponent_A].partySize < 2)
+        return FALSE;
+    if (sTrainerBattleMode != TRAINER_BATTLE_SINGLE
+     && sTrainerBattleMode != TRAINER_BATTLE_CONTINUE_SCRIPT
+     && sTrainerBattleMode != TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC)
+        return FALSE;
+
+    if (!MultiplayerOverworld_TryGetVisibleRemotePlayer(&remotePlayerId))
+        return FALSE;
+    if (!MultiplayerBattle_RemotePlayerCanPartner(remotePlayerId))
+        return FALSE;
+
+    sMultiplayerTrainerDoubleBattleRemotePlayerId = remotePlayerId;
+    return TRUE;
+#else
+    return FALSE;
+#endif
+}
+
+static bool8 TryStartMultiplayerTrainerDoubleBattleSubsession(void)
+{
+#if FEATURE_MULTIPLAYER
+    u8 remotePlayerId = sMultiplayerTrainerDoubleBattleRemotePlayerId;
+
+    if (remotePlayerId >= MAX_NET_PLAYERS && !MultiplayerOverworld_TryGetVisibleRemotePlayer(&remotePlayerId))
+        return FALSE;
+
+    return MultiplayerBattle_StartTrainerPveBattle(remotePlayerId, gTrainerBattleOpponent_A);
+#else
+    return FALSE;
+#endif
+}
+
+void MultiplayerTrainerDoubleBattle_Enable(void)
+{
+#if FEATURE_MULTIPLAYER
+    sMultiplayerTrainerDoubleBattleRequested = TryStartMultiplayerTrainerDoubleBattleSubsession();
+#endif
+}
+
 bool8 GetTrainerFlag(void)
 {
     if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
@@ -1278,8 +1340,23 @@ void ClearTrainerFlag(u16 trainerId)
 
 void BattleSetup_StartTrainerBattle(void)
 {
+    bool8 multiplayerDoubleBattle = sMultiplayerTrainerDoubleBattleRequested && gNoOfApproachingTrainers == 1;
+    u8 multiplayerDoubleBattleRemotePlayerId = sMultiplayerTrainerDoubleBattleRemotePlayerId;
+
+    sMultiplayerTrainerDoubleBattleRequested = FALSE;
+    sMultiplayerTrainerDoubleBattleRemotePlayerId = NET_PLAYER_NONE;
+
+    if (multiplayerDoubleBattle
+     && !MultiplayerBattle_PrepareTrainerPvePartnerParty(multiplayerDoubleBattleRemotePlayerId))
+    {
+        MultiplayerBattle_CancelPendingTrainerPveBattle();
+        multiplayerDoubleBattle = FALSE;
+    }
+
     if (gNoOfApproachingTrainers == 2)
         gBattleTypeFlags = (BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_TRAINER);
+    else if (multiplayerDoubleBattle)
+        gBattleTypeFlags = (BATTLE_TYPE_DOUBLE | BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER | BATTLE_TYPE_TRAINER);
     else
         gBattleTypeFlags = (BATTLE_TYPE_TRAINER);
 
@@ -1328,6 +1405,26 @@ void BattleSetup_StartTrainerBattle(void)
     else
         DoTrainerBattle();
 
+    ScriptContext_Stop();
+}
+
+void BattleSetup_StartMultiplayerPvpBattle(void)
+{
+    LockPlayerFieldControls();
+    FreezeObjectEvents();
+    StopPlayerAvatar();
+
+    gTrainerBattleOpponent_A = TRAINER_SECRET_BASE;
+    gTrainerBattleOpponent_B = 0;
+    gPartnerTrainerId = 0;
+    gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_SECRET_BASE;
+    sNoOfPossibleTrainerRetScripts = 0;
+    gNoOfApproachingTrainers = 0;
+    sShouldCheckTrainerBScript = FALSE;
+    gWhichTrainerToFaceAfterBattle = 0;
+    gMain.savedCallback = CB2_EndTrainerBattle;
+
+    DoTrainerBattle();
     ScriptContext_Stop();
 }
 

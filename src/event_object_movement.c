@@ -22,6 +22,7 @@
 #include "trainer_see.h"
 #include "trainer_hill.h"
 #include "util.h"
+#include "multiplayer/constants.h"
 #include "constants/event_object_movement.h"
 #include "constants/event_objects.h"
 #include "constants/field_effects.h"
@@ -8850,19 +8851,29 @@ static void VirtualObject_UpdateAnim(struct Sprite *sprite)
         MoveUnionRoomObjectUp(sprite);
         break;
     case 0:
-        if (sprite->x2 > 2)
-            sprite->x2 -= 2;
-        else if (sprite->x2 < -2)
-            sprite->x2 += 2;
+    {
+        s16 step = 2;
+
+#if FEATURE_MULTIPLAYER
+        if ((u8)sprite->sVirtualObjId >= NET_REMOTE_PLAYER_VIRTUAL_ID_BASE
+         && (u8)sprite->sVirtualObjId <= NET_REMOTE_PLAYER_VIRTUAL_ID_END)
+            step = 1;
+#endif
+
+        if (sprite->x2 > step)
+            sprite->x2 -= step;
+        else if (sprite->x2 < -step)
+            sprite->x2 += step;
         else
             sprite->x2 = 0;
-        if (sprite->y2 > 2)
-            sprite->y2 -= 2;
-        else if (sprite->y2 < -2)
-            sprite->y2 += 2;
+        if (sprite->y2 > step)
+            sprite->y2 -= step;
+        else if (sprite->y2 < -step)
+            sprite->y2 += step;
         else
             sprite->y2 = 0;
         break;
+    }
     default:
         sprite->sAnimNum = 0;
         break;

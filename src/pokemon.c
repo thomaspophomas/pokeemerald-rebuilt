@@ -18,6 +18,7 @@
 #include "main.h"
 #include "mod/battle_data.h"
 #include "mod/pokemon_data.h"
+#include "multiplayer/battle.h"
 #include "overworld.h"
 #include "m4a.h"
 #include "party_menu.h"
@@ -6753,7 +6754,11 @@ const u8 *GetTrainerPartnerName(void)
 {
     if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER)
     {
-        if (gPartnerTrainerId == TRAINER_STEVEN_PARTNER)
+        if (MultiplayerBattle_IsTrainerPvePartnerBattle())
+        {
+            return MultiplayerBattle_GetPartnerName();
+        }
+        else if (gPartnerTrainerId == TRAINER_STEVEN_PARTNER)
         {
             return gTrainers[TRAINER_STEVEN].trainerName;
         }

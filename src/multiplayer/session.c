@@ -2,6 +2,7 @@
 #include "engine/runtime_state.h"
 #include "generated/mod_registry.h"
 #include "global.fieldmap.h"
+#include "main.h"
 #include "multiplayer/session.h"
 #include "multiplayer/companion_save_beacon.h"
 #include "multiplayer/commit.h"
@@ -9,7 +10,10 @@
 #include "multiplayer/transport.h"
 #include "multiplayer/overworld.h"
 #include "multiplayer/battle.h"
+#include "multiplayer/trade.h"
 #include "mod/runtime_profile.h"
+#include "constants/moves.h"
+#include "constants/species.h"
 
 #if FEATURE_MULTIPLAYER_SMOKE_STATUS
 #include "multiplayer/smoke_status.h"
@@ -38,6 +42,11 @@ static bool8 RuntimeAllowsOnline(void)
     return EngineRuntimeState_IsMultiplayerOnlineEnabled();
 }
 
+static bool8 RuntimeCanPollTransport(void)
+{
+    return gMain.inBattle || MultiplayerOverworld_CanTick();
+}
+
 static void ResetSession(void)
 {
     MultiplayerInteractionMenu_Reset();
@@ -51,6 +60,7 @@ static void ResetSession(void)
     sHeartbeatTimer = 0;
     sTransportLossFrames = 0;
     ModRuntimeProfile_Clear();
+    MultiplayerTrade_Reset();
 #if FEATURE_MULTIPLAYER_SMOKE_STATUS
     sLastSmokeProfileAckHash = 0;
     sLastSmokeProfileAckResult = 0;
@@ -70,6 +80,7 @@ static void UpdateSmokeStatus(void)
     gNetMultiplayerSmokeStatus.activeProfileHash = ModRuntimeProfile_GetActiveHash();
     gNetMultiplayerSmokeStatus.lastProfileAckHash = sLastSmokeProfileAckHash;
     gNetMultiplayerSmokeStatus.lastProfileAckResult = sLastSmokeProfileAckResult;
+    gNetMultiplayerSmokeStatus.flags = RuntimeCanPollTransport() ? NET_SMOKE_STATUS_FLAG_RUNTIME_READY : 0;
 }
 #endif
 
@@ -80,7 +91,7 @@ static u8 GetMaxPlayersForSubsession(u8 type)
     case MULTIPLAYER_SUBSESSION_PVE_BATTLE:
         return MAX_NET_PVE_PLAYERS;
     case MULTIPLAYER_SUBSESSION_PVP_BATTLE:
-        return MAX_NET_BATTLE_PLAYERS;
+        return MAX_NET_PVP_PLAYERS;
     case MULTIPLAYER_SUBSESSION_TRADE:
         return MAX_NET_TRADE_PLAYERS;
     default:
@@ -198,6 +209,30 @@ static bool8 SnapshotServerTickIsFresh(const struct NetPlayerSnapshot *snapshot,
     return currentTick - snapshot->serverTickSeen <= NET_PLAYER_DISCONNECT_FRAMES;
 }
 
+static bool8 SnapshotPartyIsValid(const struct NetPlayerSnapshot *snapshot)
+{
+    u8 i;
+    u8 moveSlot;
+
+    if (snapshot->partyCount > NET_PLAYER_PARTY_SNAPSHOT_SIZE)
+        return FALSE;
+
+    for (i = 0; i < snapshot->partyCount; i++)
+    {
+        if (snapshot->partySpecies[i] >= NUM_SPECIES)
+            return FALSE;
+        if (snapshot->partySpecies[i] != SPECIES_NONE && snapshot->partyLevels[i] > MAX_LEVEL)
+            return FALSE;
+        for (moveSlot = 0; moveSlot < MAX_MON_MOVES; moveSlot++)
+        {
+            if (snapshot->partyMoves[i][moveSlot] >= MOVES_COUNT)
+                return FALSE;
+        }
+    }
+
+    return TRUE;
+}
+
 static bool8 SnapshotIsValid(const struct NetPlayerSnapshot *snapshot, u8 slot, const struct NetTransportSessionView *view)
 {
     if (!snapshot->active)
@@ -247,6 +282,8 @@ static bool8 SnapshotIsValid(const struct NetPlayerSnapshot *snapshot, u8 slot, 
     if (snapshot->staleFrames > NET_PLAYER_DISCONNECT_FRAMES)
         return FALSE;
     if (snapshot->anomalyScore >= NET_ANOMALY_THRESHOLD_KICK)
+        return FALSE;
+    if (!SnapshotPartyIsValid(snapshot))
         return FALSE;
     if (!SnapshotTickIsFresh(snapshot, view->bridgeTick))
         return FALSE;
@@ -486,6 +523,43 @@ static bool8 SnapshotInteractionBlocks(const struct NetPlayerSnapshot *snapshot)
     return FALSE;
 }
 
+static bool8 SnapshotBlocksSubsessionStart(const struct NetPlayerSnapshot *snapshot)
+{
+    if (!snapshot->active)
+        return FALSE;
+    if (SnapshotIsStale(snapshot))
+        return TRUE;
+    if (snapshot->interactionState == MULTIPLAYER_INTERACTION_SCRIPT
+     || snapshot->interactionState == MULTIPLAYER_INTERACTION_WARP)
+        return TRUE;
+    if ((snapshot->flags & NET_PLAYER_FLAG_IN_SUBSESSION)
+     && SubsessionStateBlocksInteraction(snapshot->subsessionState))
+        return TRUE;
+
+    return FALSE;
+}
+
+static bool8 PlayerBlocksSubsessionStart(u8 playerId)
+{
+    if (!IsValidPlayerId(playerId))
+        return TRUE;
+    if (!MultiplayerSession_IsPlayerActive(playerId))
+        return TRUE;
+
+    return SnapshotBlocksSubsessionStart(&sSession.players[playerId])
+        || MultiplayerSession_IsPlayerInSubsession(playerId)
+        || BarrierIncludesPlayer(&sSession.interactionBarrier, playerId);
+}
+
+static bool8 PlayerBlocksBarrierStart(u8 barrierType, u8 playerId)
+{
+    if (barrierType == MULTIPLAYER_BARRIER_BATTLE_INVITE
+     || barrierType == MULTIPLAYER_BARRIER_TRADE_INVITE)
+        return PlayerBlocksSubsessionStart(playerId);
+
+    return MultiplayerSession_IsPlayerInteractionBlocked(playerId);
+}
+
 static bool8 SessionHasActiveLocalSubsession(void)
 {
     u8 i;
@@ -581,6 +655,7 @@ static void CopyViewIntoSession(const struct NetTransportSessionView *view)
         sSession.localActionSequence = 0;
         MultiplayerCommit_Init();
         MultiplayerInteractionMenu_Reset();
+        MultiplayerTrade_Reset();
         ModRuntimeProfile_Clear();
     }
     sSession.healthState = MULTIPLAYER_HEALTH_HEALTHY;
@@ -862,6 +937,7 @@ static void ProcessInboundPackets(void)
     const struct NetServerProfileBegin *profileBegin;
     const struct NetServerProfileChunk *profileChunk;
     const struct NetServerProfileCommit *profileCommit;
+    const struct NetTradeAction *tradeAction;
     u8 profileResult;
 
     for (i = 0; i < NET_RELIABLE_QUEUE_SIZE; i++)
@@ -875,6 +951,13 @@ static void ProcessInboundPackets(void)
         case NET_PACKET_COMMIT_RESULT:
             if (payloadSize == sizeof(struct NetCommitResult))
                 MultiplayerCommit_ApplyServerResult((const struct NetCommitResult *)payload);
+            break;
+        case NET_PACKET_TRADE_INPUT:
+            if (payloadSize == sizeof(struct NetTradeAction))
+            {
+                tradeAction = (const struct NetTradeAction *)payload;
+                MultiplayerTrade_ApplyRemoteAction(envelope.playerId, tradeAction);
+            }
             break;
         case NET_PACKET_RESYNC_REQUEST:
             sSession.healthState = MULTIPLAYER_HEALTH_RESYNCING;
@@ -1008,6 +1091,14 @@ void MultiplayerSession_Tick(void)
 
     MultiplayerCompanionSaveBeacon_Tick(sSession.tick, sSession.state, sSession.healthState, sSession.localPlayerId, sSession.playerCount);
 
+    if (!RuntimeCanPollTransport())
+    {
+#if FEATURE_MULTIPLAYER_SMOKE_STATUS
+        UpdateSmokeStatus();
+#endif
+        return;
+    }
+
     if (!sConnectRequested && sSession.state == MULTIPLAYER_SESSION_OFFLINE)
     {
 #if FEATURE_MULTIPLAYER_SMOKE_STATUS
@@ -1038,6 +1129,8 @@ void MultiplayerSession_Tick(void)
 
     CopyViewIntoSession(&sanitizedView);
     ProcessInboundPackets();
+    MultiplayerBattle_Tick(&sSession);
+    MultiplayerTrade_Tick(&sSession);
     MultiplayerInteractionMenu_UpdateRemoteRequests(&sSession);
     if (!PublishClientHello())
         PublishHeartbeat();
@@ -1372,7 +1465,7 @@ bool8 MultiplayerSession_StartInteractionBarrier(u8 type, u8 playerCount, const 
     mapNum = sSession.players[players[0]].mapNum;
     for (i = 0; i < playerCount; i++)
     {
-        if (MultiplayerSession_IsPlayerInteractionBlocked(players[i]))
+        if (PlayerBlocksBarrierStart(type, players[i]))
             return FALSE;
         if (players[i] != sSession.localPlayerId && targetPlayerId == NET_PLAYER_NONE)
             targetPlayerId = players[i];
@@ -1424,14 +1517,12 @@ bool8 MultiplayerSession_StartSubsession(u8 type, u8 playerCount, const u8 *play
     maxPlayers = GetMaxPlayersForSubsession(type);
     if (maxPlayers == 0 || playerCount == 0 || playerCount > maxPlayers || players == NULL)
         return FALSE;
-    if (!MultiplayerSession_IsHost())
-        return FALSE;
     if (!MultiplayerSession_ArePlayersOnSameMap(playerCount, players))
         return FALSE;
 
     for (i = 0; i < playerCount; i++)
     {
-        if (MultiplayerSession_IsPlayerInteractionBlocked(players[i]))
+        if (PlayerBlocksSubsessionStart(players[i]))
             return FALSE;
 
         for (j = i + 1; j < playerCount; j++)

@@ -3,6 +3,7 @@
 #include "battle_anim.h"
 #include "battle_controllers.h"
 #include "malloc.h"
+#include "multiplayer/battle.h"
 #include "pokemon.h"
 #include "trainer_hill.h"
 #include "party_menu.h"
@@ -42,8 +43,11 @@ void AllocateBattleResources(void)
 
     if (gBattleTypeFlags & BATTLE_TYPE_SECRET_BASE)
     {
-        u16 currSecretBaseId = VarGet(VAR_CURRENT_SECRET_BASE);
-        CreateSecretBaseEnemyParty(&gSaveBlock1Ptr->secretBases[currSecretBaseId]);
+        if (!MultiplayerBattle_TryCreateSecretBaseEnemyParty())
+        {
+            u16 currSecretBaseId = VarGet(VAR_CURRENT_SECRET_BASE);
+            CreateSecretBaseEnemyParty(&gSaveBlock1Ptr->secretBases[currSecretBaseId]);
+        }
     }
 }
 

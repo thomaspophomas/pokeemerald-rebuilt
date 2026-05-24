@@ -139,7 +139,7 @@ class Packet:
 class ClientHello:
     protocol_version: int = NET_PROTOCOL_VERSION
     bridge_version: int = NET_EMULATOR_BRIDGE_VERSION
-    build_id: int = 0x00010004
+    build_id: int = 0x00010007
     ruleset_hash: int = 0x00000003
     profile_protocol_version: int = MOD_RUNTIME_PROFILE_PROTOCOL_VERSION
     profile_capability_flags: int = MOD_RUNTIME_PROFILE_CAPABILITIES
@@ -265,7 +265,7 @@ def client_hello_is_compatible(hello: ClientHello) -> bool:
     return (
         hello.protocol_version == NET_PROTOCOL_VERSION
         and hello.bridge_version == NET_EMULATOR_BRIDGE_VERSION
-        and hello.build_id == 0x00010004
+        and hello.build_id == 0x00010007
         and hello.ruleset_hash == 0x00000003
         and hello.profile_protocol_version == MOD_RUNTIME_PROFILE_PROTOCOL_VERSION
         and hello.profile_capability_hash == MOD_RUNTIME_PROFILE_CAPABILITY_HASH

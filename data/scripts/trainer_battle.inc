@@ -102,6 +102,12 @@ EventScript_ShowTrainerIntroMsg::
 	special ShowTrainerIntroSpeech
 	waitmessage
 	waitbuttonpress
+	specialvar VAR_RESULT, MultiplayerTrainerDoubleBattle_ShouldPrompt
+	goto_if_eq VAR_RESULT, FALSE, EventScript_CheckSecondApproachingTrainer
+	msgbox TrainerBattle_Text_AskMultiplayerDoubleBattle, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_CheckSecondApproachingTrainer
+	special MultiplayerTrainerDoubleBattle_Enable
+EventScript_CheckSecondApproachingTrainer::
 	special TryPrepareSecondApproachingTrainer
 	goto_if_eq VAR_RESULT, TRUE, EventScript_TrainerApproach
 	goto EventScript_DoTrainerBattle
@@ -126,3 +132,6 @@ Std_MsgboxAutoclose::
 	waitbuttonpress
 	release
 	return
+
+TrainerBattle_Text_AskMultiplayerDoubleBattle:
+	.string "Make this a double battle?$"

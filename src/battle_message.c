@@ -13,6 +13,7 @@
 #include "item.h"
 #include "link.h"
 #include "menu.h"
+#include "multiplayer/battle.h"
 #include "palette.h"
 #include "recorded_battle.h"
 #include "string_util.h"
@@ -2723,11 +2724,21 @@ u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst)
                 }
                 break;
             case B_TXT_PARTNER_CLASS:
-                toCpy = gTrainerClassNames[GetFrontierOpponentClass(gPartnerTrainerId)];
+                if (MultiplayerBattle_IsTrainerPvePartnerBattle())
+                    toCpy = gTrainerClassNames[TRAINER_CLASS_PKMN_TRAINER_1];
+                else
+                    toCpy = gTrainerClassNames[GetFrontierOpponentClass(gPartnerTrainerId)];
                 break;
             case B_TXT_PARTNER_NAME:
-                GetFrontierTrainerName(text, gPartnerTrainerId);
-                toCpy = text;
+                if (MultiplayerBattle_IsTrainerPvePartnerBattle())
+                {
+                    toCpy = MultiplayerBattle_GetPartnerName();
+                }
+                else
+                {
+                    GetFrontierTrainerName(text, gPartnerTrainerId);
+                    toCpy = text;
+                }
                 break;
             }
 

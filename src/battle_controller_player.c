@@ -15,6 +15,7 @@
 #include "link.h"
 #include "main.h"
 #include "m4a.h"
+#include "multiplayer/battle.h"
 #include "palette.h"
 #include "party_menu.h"
 #include "pokeball.h"
@@ -2301,7 +2302,9 @@ static void PlayerHandleDrawTrainerPic(void)
         else // First mon, on the left.
             xPos = 32;
 
-        if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER && gPartnerTrainerId != TRAINER_STEVEN_PARTNER)
+        if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER
+         && gPartnerTrainerId != TRAINER_STEVEN_PARTNER
+         && !MultiplayerBattle_IsTrainerPvePartnerBattle())
         {
             xPos = 90;
             yPos = (8 - gTrainerFrontPicCoords[trainerPicId].size) * 4 + 80;
@@ -2319,7 +2322,9 @@ static void PlayerHandleDrawTrainerPic(void)
     }
 
     // Use front pic table for any tag battles unless your partner is Steven.
-    if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER && gPartnerTrainerId != TRAINER_STEVEN_PARTNER)
+    if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER
+     && gPartnerTrainerId != TRAINER_STEVEN_PARTNER
+     && !MultiplayerBattle_IsTrainerPvePartnerBattle())
     {
         trainerPicId = PlayerGenderToFrontTrainerPicId(gSaveBlock2Ptr->playerGender);
         DecompressTrainerFrontPic(trainerPicId, gActiveBattler);

@@ -134,6 +134,7 @@ struct NetTradeAction
     u8 action;
     u16 partySlot;
     u32 tradeChecksum;
+    u32 moneyAmount;
 } __attribute__((packed));
 
 struct NetServerClock

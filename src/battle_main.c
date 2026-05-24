@@ -31,6 +31,7 @@
 #include "malloc.h"
 #include "mod/battle_data.h"
 #include "mod/trainer.h"
+#include "multiplayer/battle.h"
 #include "m4a.h"
 #include "palette.h"
 #include "party_menu.h"
@@ -637,7 +638,9 @@ static void CB2_InitBattleInternal(void)
 
     gBattle_WIN0H = DISPLAY_WIDTH;
 
-    if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER && gPartnerTrainerId != TRAINER_STEVEN_PARTNER)
+    if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER
+     && gPartnerTrainerId != TRAINER_STEVEN_PARTNER
+     && !MultiplayerBattle_IsTrainerPvePartnerBattle())
     {
         gBattle_WIN0V = DISPLAY_HEIGHT - 1;
         gBattle_WIN1H = DISPLAY_WIDTH;
@@ -3091,6 +3094,7 @@ static void BattleStartClearSetData(void)
     gBattlerAttacker = 0;
     gBattlerTarget = 0;
     gBattleWeather = 0;
+    MultiplayerBattle_ApplyCurrentWeather();
 
     dataPtr = (u8 *)&gWishFutureKnock;
     for (i = 0; i < sizeof(struct WishFutureKnock); i++)

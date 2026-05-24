@@ -8,9 +8,12 @@
 #include "multiplayer/session.h"
 #include "multiplayer/overworld.h"
 #include "overworld.h"
+#include "pokemon.h"
 #include "sprite.h"
+#include "constants/characters.h"
 #include "constants/event_object_movement.h"
 #include "constants/event_objects.h"
+#include "constants/species.h"
 
 #if FEATURE_MULTIPLAYER
 
@@ -26,6 +29,13 @@ struct RemotePlayerActor
     u32 sessionEpoch;
     u16 graphicsRevision;
     u16 missingFrames;
+    s16 currentX;
+    s16 currentY;
+    s16 targetX;
+    s16 targetY;
+    u8 targetElevation;
+    u8 targetFacingDirection;
+    bool8 targetWalking;
 };
 
 static EWRAM_DATA struct RemotePlayerActor sRemoteActors[MAX_NET_REMOTE_PLAYERS] = {0};
@@ -33,6 +43,46 @@ static EWRAM_DATA struct RemotePlayerActor sRemoteActors[MAX_NET_REMOTE_PLAYERS]
 #define REMOTE_ACTOR_MISSING_GRACE_FRAMES 60
 
 static void SpawnRemoteActor(u8 actorIndex, const struct NetPlayerSnapshot *snapshot);
+static bool8 RemoteActorIsVisible(const struct RemotePlayerActor *actor);
+
+static void BuildLocalPartySnapshot(struct NetPlayerSnapshot *snapshot)
+{
+    u8 src;
+    u8 dst = 0;
+
+    if (gSaveBlock2Ptr != NULL)
+    {
+        snapshot->trainerGender = gSaveBlock2Ptr->playerGender;
+        memcpy(snapshot->playerName, gSaveBlock2Ptr->playerName, PLAYER_NAME_LENGTH + 1);
+        snapshot->playerName[PLAYER_NAME_LENGTH] = EOS;
+    }
+
+    for (src = 0; src < PARTY_SIZE && dst < NET_PLAYER_PARTY_SNAPSHOT_SIZE; src++)
+    {
+        u8 moveSlot;
+        u32 hp;
+        u32 species = GetMonData(&gPlayerParty[src], MON_DATA_SPECIES_OR_EGG, NULL);
+
+        if (species == SPECIES_NONE || species == SPECIES_EGG)
+            continue;
+
+        hp = GetMonData(&gPlayerParty[src], MON_DATA_HP, NULL);
+        if (hp == 0)
+            continue;
+
+        snapshot->partySpecies[dst] = species;
+        snapshot->partyHeldItems[dst] = GetMonData(&gPlayerParty[src], MON_DATA_HELD_ITEM, NULL);
+        snapshot->partyLevels[dst] = GetMonData(&gPlayerParty[src], MON_DATA_LEVEL, NULL);
+        snapshot->partyHp[dst] = min(hp, 0xFFFF);
+
+        for (moveSlot = 0; moveSlot < MAX_MON_MOVES; moveSlot++)
+            snapshot->partyMoves[dst][moveSlot] = GetMonData(&gPlayerParty[src], MON_DATA_MOVE1 + moveSlot, NULL);
+
+        dst++;
+    }
+
+    snapshot->partyCount = dst;
+}
 
 static u8 GetRemoteActorIndexByPlayerId(u8 playerId)
 {
@@ -59,6 +109,13 @@ static void ResetRemoteActor(u8 i)
     sRemoteActors[i].sessionEpoch = 0;
     sRemoteActors[i].graphicsRevision = 0;
     sRemoteActors[i].missingFrames = 0;
+    sRemoteActors[i].currentX = 0;
+    sRemoteActors[i].currentY = 0;
+    sRemoteActors[i].targetX = 0;
+    sRemoteActors[i].targetY = 0;
+    sRemoteActors[i].targetElevation = 0;
+    sRemoteActors[i].targetFacingDirection = DIR_SOUTH;
+    sRemoteActors[i].targetWalking = FALSE;
 }
 
 static void DespawnRemoteActor(u8 i)
@@ -288,6 +345,8 @@ static void SpawnRemoteActor(u8 actorIndex, const struct NetPlayerSnapshot *snap
 {
     u8 graphicsId = snapshot->avatarGraphicsId;
     u8 spriteId;
+    s16 x = snapshot->x - MAP_OFFSET;
+    s16 y = snapshot->y - MAP_OFFSET;
 
     if (graphicsId == 0)
         graphicsId = GetPlayerAvatarGraphicsIdByCurrentState();
@@ -295,8 +354,8 @@ static void SpawnRemoteActor(u8 actorIndex, const struct NetPlayerSnapshot *snap
     spriteId = CreateOrUpdateVirtualObject(
         graphicsId,
         sRemoteActors[actorIndex].virtualObjId,
-        snapshot->x - MAP_OFFSET,
-        snapshot->y - MAP_OFFSET,
+        x,
+        y,
         snapshot->elevation,
         snapshot->facingDirection,
         snapshot->graphicsRevision);
@@ -318,6 +377,82 @@ static void SpawnRemoteActor(u8 actorIndex, const struct NetPlayerSnapshot *snap
     sRemoteActors[actorIndex].sessionEpoch = snapshot->sessionEpoch;
     sRemoteActors[actorIndex].graphicsRevision = snapshot->graphicsRevision;
     sRemoteActors[actorIndex].missingFrames = 0;
+    sRemoteActors[actorIndex].currentX = x;
+    sRemoteActors[actorIndex].currentY = y;
+    sRemoteActors[actorIndex].targetX = x;
+    sRemoteActors[actorIndex].targetY = y;
+    sRemoteActors[actorIndex].targetElevation = snapshot->elevation;
+    sRemoteActors[actorIndex].targetFacingDirection = snapshot->facingDirection;
+    sRemoteActors[actorIndex].targetWalking = MovementActionShowsWalking(snapshot->movementActionId);
+}
+
+static s16 AbsS16(s16 value)
+{
+    return value < 0 ? -value : value;
+}
+
+static bool8 RemoteActorSpriteIsIdle(const struct RemotePlayerActor *actor)
+{
+    if (actor->spriteId >= MAX_SPRITES || !gSprites[actor->spriteId].inUse)
+        return TRUE;
+
+    return gSprites[actor->spriteId].x2 == 0 && gSprites[actor->spriteId].y2 == 0;
+}
+
+static u8 GetStepDirection(s16 dx, s16 dy)
+{
+    if (AbsS16(dx) >= AbsS16(dy) && dx != 0)
+        return dx < 0 ? DIR_WEST : DIR_EAST;
+    if (dy != 0)
+        return dy < 0 ? DIR_NORTH : DIR_SOUTH;
+
+    return DIR_SOUTH;
+}
+
+static void StepRemoteActorTowardTarget(u8 actorIndex)
+{
+    struct RemotePlayerActor *actor = &sRemoteActors[actorIndex];
+    s16 dx = actor->targetX - actor->currentX;
+    s16 dy = actor->targetY - actor->currentY;
+    u8 direction;
+
+    if (AbsS16(dx) + AbsS16(dy) > 4)
+    {
+        actor->currentX = actor->targetX;
+        actor->currentY = actor->targetY;
+        SetVirtualObjectMapCoords(actor->virtualObjId, actor->currentX, actor->currentY, actor->targetElevation);
+        TurnVirtualObjectWithMovement(actor->virtualObjId, actor->targetFacingDirection, actor->targetWalking);
+        return;
+    }
+
+    if (!RemoteActorSpriteIsIdle(actor))
+        return;
+
+    if (dx == 0 && dy == 0)
+    {
+        TurnVirtualObjectWithMovement(actor->virtualObjId, actor->targetFacingDirection, actor->targetWalking);
+        return;
+    }
+
+    direction = GetStepDirection(dx, dy);
+    switch (direction)
+    {
+    case DIR_NORTH:
+        actor->currentY--;
+        break;
+    case DIR_SOUTH:
+        actor->currentY++;
+        break;
+    case DIR_WEST:
+        actor->currentX--;
+        break;
+    case DIR_EAST:
+        actor->currentX++;
+        break;
+    }
+
+    SetVirtualObjectMapCoords(actor->virtualObjId, actor->currentX, actor->currentY, actor->targetElevation);
+    TurnVirtualObjectWithMovement(actor->virtualObjId, direction, TRUE);
 }
 
 static void MoveRemoteActor(u8 actorIndex, const struct NetPlayerSnapshot *snapshot)
@@ -344,11 +479,12 @@ static void MoveRemoteActor(u8 actorIndex, const struct NetPlayerSnapshot *snaps
         sRemoteActors[actorIndex].graphicsRevision = snapshot->graphicsRevision;
     }
 
-    SetVirtualObjectMapCoords(sRemoteActors[actorIndex].virtualObjId, x, y, snapshot->elevation);
-    TurnVirtualObjectWithMovement(
-        sRemoteActors[actorIndex].virtualObjId,
-        snapshot->facingDirection,
-        MovementActionShowsWalking(snapshot->movementActionId));
+    sRemoteActors[actorIndex].targetX = x;
+    sRemoteActors[actorIndex].targetY = y;
+    sRemoteActors[actorIndex].targetElevation = snapshot->elevation;
+    sRemoteActors[actorIndex].targetFacingDirection = snapshot->facingDirection;
+    sRemoteActors[actorIndex].targetWalking = MovementActionShowsWalking(snapshot->movementActionId);
+    StepRemoteActorTowardTarget(actorIndex);
     sRemoteActors[actorIndex].missingFrames = 0;
 }
 
@@ -476,6 +612,84 @@ bool8 MultiplayerOverworld_TryInteractWithRemotePlayer(s16 x, s16 y, u8 elevatio
     return FALSE;
 }
 
+bool8 MultiplayerOverworld_HasVisibleRemotePlayer(void)
+{
+#if FEATURE_MULTIPLAYER
+    return MultiplayerOverworld_TryGetVisibleRemotePlayer(NULL);
+#else
+    return FALSE;
+#endif
+}
+
+#if FEATURE_MULTIPLAYER
+static bool8 RemoteActorIsVisible(const struct RemotePlayerActor *actor)
+{
+    const struct Sprite *sprite;
+    s16 x;
+    s16 y;
+
+    if (actor == NULL || !actor->active || actor->spriteId >= MAX_SPRITES)
+        return FALSE;
+
+    sprite = &gSprites[actor->spriteId];
+    if (!sprite->inUse)
+        return FALSE;
+
+    x = sprite->x + sprite->x2;
+    y = sprite->y + sprite->y2;
+    return x >= -16 && x <= DISPLAY_WIDTH + 16 && y >= -16 && y <= DISPLAY_HEIGHT + 16;
+}
+#endif
+
+bool8 MultiplayerOverworld_TryGetVisibleRemotePlayer(u8 *playerId)
+{
+#if FEATURE_MULTIPLAYER
+    u8 i;
+    u8 bestPlayerId = NET_PLAYER_NONE;
+    u32 bestDistance = 0xFFFFFFFF;
+    struct ObjectEvent *playerObjEvent = NULL;
+
+    if (playerId != NULL)
+        *playerId = NET_PLAYER_NONE;
+    if (gPlayerAvatar.objectEventId < OBJECT_EVENTS_COUNT)
+        playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
+
+    for (i = 0; i < MAX_NET_REMOTE_PLAYERS; i++)
+    {
+        u32 distance = 0;
+
+        if (!RemoteActorIsVisible(&sRemoteActors[i]))
+            continue;
+        if (playerObjEvent != NULL)
+        {
+            s32 dx = (s32)sRemoteActors[i].currentX + MAP_OFFSET - playerObjEvent->currentCoords.x;
+            s32 dy = (s32)sRemoteActors[i].currentY + MAP_OFFSET - playerObjEvent->currentCoords.y;
+
+            if (dx < 0)
+                dx = -dx;
+            if (dy < 0)
+                dy = -dy;
+            distance = dx + dy;
+        }
+        if (bestPlayerId == NET_PLAYER_NONE || distance < bestDistance || (distance == bestDistance && sRemoteActors[i].playerId < bestPlayerId))
+        {
+            bestPlayerId = sRemoteActors[i].playerId;
+            bestDistance = distance;
+        }
+    }
+
+    if (bestPlayerId == NET_PLAYER_NONE)
+        return FALSE;
+    if (playerId != NULL)
+        *playerId = bestPlayerId;
+    return TRUE;
+#else
+    if (playerId != NULL)
+        *playerId = NET_PLAYER_NONE;
+    return FALSE;
+#endif
+}
+
 void MultiplayerOverworld_BuildLocalSnapshot(struct NetPlayerSnapshot *snapshot, u8 playerId, u32 tick)
 {
 #if FEATURE_MULTIPLAYER
@@ -499,6 +713,7 @@ void MultiplayerOverworld_BuildLocalSnapshot(struct NetPlayerSnapshot *snapshot,
     snapshot->movementActionId = playerObjEvent->movementActionId;
     snapshot->avatarGraphicsId = GetPlayerAvatarGraphicsIdByCurrentState();
     snapshot->graphicsRevision = ((u16)snapshot->avatarGraphicsId << 8) | snapshot->outfitId;
+    BuildLocalPartySnapshot(snapshot);
 #else
     memset(snapshot, 0, sizeof(*snapshot));
 #endif

@@ -13,6 +13,7 @@
 #include "link.h"
 #include "main.h"
 #include "m4a.h"
+#include "multiplayer/battle.h"
 #include "palette.h"
 #include "pokeball.h"
 #include "pokemon.h"
@@ -1298,7 +1299,13 @@ static void PlayerPartnerHandleDrawTrainerPic(void)
     s16 xPos, yPos;
     u32 trainerPicId;
 
-    if (gPartnerTrainerId == TRAINER_STEVEN_PARTNER)
+    if (MultiplayerBattle_IsTrainerPvePartnerBattle())
+    {
+        trainerPicId = MultiplayerBattle_GetPartnerTrainerBackPicId();
+        xPos = 90;
+        yPos = (8 - gTrainerBackPicCoords[trainerPicId].size) * 4 + 80;
+    }
+    else if (gPartnerTrainerId == TRAINER_STEVEN_PARTNER)
     {
         trainerPicId = TRAINER_BACK_PIC_STEVEN;
         xPos = 90;
@@ -1311,8 +1318,8 @@ static void PlayerPartnerHandleDrawTrainerPic(void)
         yPos = (8 - gTrainerFrontPicCoords[trainerPicId].size) * 4 + 80;
     }
 
-    // Use back pic only if the partner is Steven
-    if (gPartnerTrainerId == TRAINER_STEVEN_PARTNER)
+    // Use back pic only if the partner is a player avatar or Steven.
+    if (MultiplayerBattle_IsTrainerPvePartnerBattle() || gPartnerTrainerId == TRAINER_STEVEN_PARTNER)
     {
         DecompressTrainerBackPic(trainerPicId, gActiveBattler);
         SetMultiuseSpriteTemplateToTrainerBack(trainerPicId, GetBattlerPosition(gActiveBattler));
@@ -1791,7 +1798,12 @@ static void PlayerPartnerHandleIntroTrainerBallThrow(void)
     StartSpriteAnim(&gSprites[gBattlerSpriteIds[gActiveBattler]], 1);
 
     paletteNum = AllocSpritePalette(0xD6F9);
-    if (gPartnerTrainerId == TRAINER_STEVEN_PARTNER)
+    if (MultiplayerBattle_IsTrainerPvePartnerBattle())
+    {
+        u8 spriteId = MultiplayerBattle_GetPartnerTrainerBackPicId();
+        LoadCompressedPalette(gTrainerBackPicPaletteTable[spriteId].data, OBJ_PLTT_ID(paletteNum), PLTT_SIZE_4BPP);
+    }
+    else if (gPartnerTrainerId == TRAINER_STEVEN_PARTNER)
     {
         u8 spriteId = TRAINER_BACK_PIC_STEVEN;
         LoadCompressedPalette(gTrainerBackPicPaletteTable[spriteId].data, OBJ_PLTT_ID(paletteNum), PLTT_SIZE_4BPP);

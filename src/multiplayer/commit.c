@@ -1,5 +1,6 @@
 #include "global.h"
 #include "multiplayer/commit.h"
+#include "multiplayer/trade.h"
 
 #if FEATURE_MULTIPLAYER
 
@@ -268,6 +269,9 @@ void MultiplayerCommit_ApplyServerResult(const struct NetCommitResult *result)
     else if (result->result == MULTIPLAYER_COMMIT_RESULT_ROLLED_BACK
           || result->result == MULTIPLAYER_COMMIT_RESULT_REJECTED)
         entry->state = MULTIPLAYER_COMMIT_STATE_ROLLED_BACK;
+
+    if (result->commitType == MULTIPLAYER_COMMIT_TRADE)
+        MultiplayerTrade_OnCommitResult(result);
 #else
     (void)result;
 #endif

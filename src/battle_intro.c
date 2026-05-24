@@ -6,6 +6,7 @@
 #include "bg.h"
 #include "gpu_regs.h"
 #include "main.h"
+#include "multiplayer/battle.h"
 #include "scanline_effect.h"
 #include "task.h"
 #include "trig.h"
@@ -106,7 +107,9 @@ void HandleIntroSlide(u8 environment)
 {
     u8 taskId;
 
-    if ((gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER) && gPartnerTrainerId != TRAINER_STEVEN_PARTNER)
+    if ((gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER)
+     && gPartnerTrainerId != TRAINER_STEVEN_PARTNER
+     && !MultiplayerBattle_IsTrainerPvePartnerBattle())
     {
         taskId = CreateTask(BattleIntroSlidePartner, 0);
     }
