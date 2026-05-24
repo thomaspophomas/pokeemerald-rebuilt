@@ -5,6 +5,8 @@
 #include "multiplayer/protocol.h"
 #include "multiplayer/types.h"
 
+struct Pokemon;
+
 void MultiplayerCommit_Init(void);
 void MultiplayerCommit_BuildKey(struct MultiplayerTransactionKey *key, u32 sessionEpoch, u8 playerId, u8 packetType, u8 subsessionId, u32 actionSequence);
 u32 MultiplayerCommit_GetTransactionId(const struct MultiplayerTransactionKey *key);
@@ -13,5 +15,8 @@ u8 MultiplayerCommit_Commit(const struct MultiplayerTransactionKey *key, u8 comm
 u8 MultiplayerCommit_Rollback(const struct MultiplayerTransactionKey *key, u8 commitType, const void *payload, u16 payloadSize, struct NetCommitResult *result);
 void MultiplayerCommit_ApplyServerResult(const struct NetCommitResult *result);
 bool8 MultiplayerCommit_IsFailClosedType(u8 commitType);
+void MultiplayerCommit_PayMoney(u32 amount);
+void MultiplayerCommit_ReceiveMoney(u32 amount);
+void MultiplayerCommit_WriteMonData(struct Pokemon *mon, s32 field, const void *data);
 
 #endif // GUARD_MULTIPLAYER_COMMIT_H

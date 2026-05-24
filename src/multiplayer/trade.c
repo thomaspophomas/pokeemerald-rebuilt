@@ -255,7 +255,7 @@ void MultiplayerTrade_OnCommitResult(const struct NetCommitResult *result)
         return;
 
     if (result->result == MULTIPLAYER_COMMIT_RESULT_OK && sPendingTradeMoneyAmount != 0)
-        RemoveMoney(&gSaveBlock1Ptr->money, sPendingTradeMoneyAmount);
+        MultiplayerCommit_PayMoney(sPendingTradeMoneyAmount);
 
     ClearPendingItemTrade();
 #else
@@ -278,7 +278,7 @@ void MultiplayerTrade_ApplyRemoteAction(u8 senderPlayerId, const struct NetTrade
         return;
 
     sLastRemoteTradeTransactionIds[senderPlayerId] = action->header.transactionId;
-    AddMoney(&gSaveBlock1Ptr->money, action->moneyAmount);
+    MultiplayerCommit_ReceiveMoney(action->moneyAmount);
 #else
     (void)senderPlayerId;
     (void)action;

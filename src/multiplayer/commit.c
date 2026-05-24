@@ -1,6 +1,8 @@
 #include "global.h"
+#include "money.h"
 #include "multiplayer/commit.h"
 #include "multiplayer/trade.h"
+#include "pokemon.h"
 
 #if FEATURE_MULTIPLAYER
 
@@ -129,6 +131,35 @@ bool8 MultiplayerCommit_IsFailClosedType(u8 commitType)
         || commitType == MULTIPLAYER_COMMIT_STORY_FLAG
         || commitType == MULTIPLAYER_COMMIT_OUTFIT
         || commitType == MULTIPLAYER_COMMIT_WEATHER_REWARD;
+}
+
+void MultiplayerCommit_PayMoney(u32 amount)
+{
+#if FEATURE_MULTIPLAYER
+    RemoveMoney(&gSaveBlock1Ptr->money, amount);
+#else
+    (void)amount;
+#endif
+}
+
+void MultiplayerCommit_ReceiveMoney(u32 amount)
+{
+#if FEATURE_MULTIPLAYER
+    AddMoney(&gSaveBlock1Ptr->money, amount);
+#else
+    (void)amount;
+#endif
+}
+
+void MultiplayerCommit_WriteMonData(struct Pokemon *mon, s32 field, const void *data)
+{
+#if FEATURE_MULTIPLAYER
+    SetMonData(mon, field, data);
+#else
+    (void)mon;
+    (void)field;
+    (void)data;
+#endif
 }
 
 u8 MultiplayerCommit_Prepare(const struct MultiplayerTransactionKey *key, u8 commitType, const void *payload, u16 payloadSize, struct NetCommitResult *result)

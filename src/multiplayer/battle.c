@@ -1,9 +1,7 @@
 #include "global.h"
-#include "battle.h"
+#include "battle_session.h"
 #include "battle_setup.h"
-#include "field_weather.h"
 #include "main.h"
-#include "mod/weather.h"
 #include "multiplayer/battle.h"
 #include "multiplayer/commit.h"
 #include "multiplayer/interaction_menu.h"
@@ -322,7 +320,7 @@ bool8 MultiplayerBattle_PrepareTrainerPvePartnerParty(u8 partnerPlayerId)
                   OT_ID_RANDOM_NO_SHINY,
                   0);
 
-        SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + dst], MON_DATA_HELD_ITEM, &snapshot->partyHeldItems[i]);
+        MultiplayerCommit_WriteMonData(&gPlayerParty[MULTI_PARTY_SIZE + dst], MON_DATA_HELD_ITEM, &snapshot->partyHeldItems[i]);
         for (moveSlot = 0; moveSlot < MAX_MON_MOVES; moveSlot++)
         {
             u16 move = snapshot->partyMoves[i][moveSlot];
@@ -333,10 +331,10 @@ bool8 MultiplayerBattle_PrepareTrainerPvePartnerParty(u8 partnerPlayerId)
 
         maxHp = GetMonData(&gPlayerParty[MULTI_PARTY_SIZE + dst], MON_DATA_MAX_HP, NULL);
         hp = min((u32)snapshot->partyHp[i], maxHp);
-        SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + dst], MON_DATA_HP, &hp);
-        SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + dst], MON_DATA_OT_NAME, snapshot->playerName);
+        MultiplayerCommit_WriteMonData(&gPlayerParty[MULTI_PARTY_SIZE + dst], MON_DATA_HP, &hp);
+        MultiplayerCommit_WriteMonData(&gPlayerParty[MULTI_PARTY_SIZE + dst], MON_DATA_OT_NAME, snapshot->playerName);
         otGender = snapshot->trainerGender;
-        SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + dst], MON_DATA_OT_GENDER, &otGender);
+        MultiplayerCommit_WriteMonData(&gPlayerParty[MULTI_PARTY_SIZE + dst], MON_DATA_OT_GENDER, &otGender);
         CalculateMonStats(&gPlayerParty[MULTI_PARTY_SIZE + dst]);
         dst++;
     }
@@ -413,7 +411,7 @@ bool8 MultiplayerBattle_IsTrainerPvePartnerBattle(void)
 #if FEATURE_MULTIPLAYER
     return sPvePartnerPlayerId != NET_PLAYER_NONE
         && (sPendingPveBattle || sMultiplayerBattleActive)
-        && !(gBattleTypeFlags & BATTLE_TYPE_SECRET_BASE);
+        && !BattleSession_IsSecretBaseBattle();
 #else
     return FALSE;
 #endif
@@ -437,43 +435,6 @@ const u8 *MultiplayerBattle_GetPartnerName(void)
         return sPvePartnerName;
 #endif
     return sFallbackPartnerName;
-}
-
-static u16 GetVanillaFieldBattleWeather(u8 weather)
-{
-    switch (weather)
-    {
-    case WEATHER_RAIN:
-    case WEATHER_RAIN_THUNDERSTORM:
-    case WEATHER_DOWNPOUR:
-        return B_WEATHER_RAIN_PERMANENT;
-    case WEATHER_SANDSTORM:
-    case WEATHER_VOLCANIC_ASH:
-        return B_WEATHER_SANDSTORM_PERMANENT;
-    case WEATHER_SUNNY:
-    case WEATHER_DROUGHT:
-        return B_WEATHER_SUN_PERMANENT;
-    case WEATHER_SNOW:
-        return B_WEATHER_HAIL_TEMPORARY;
-    default:
-        return 0;
-    }
-}
-
-static u16 GetCurrentFieldBattleWeather(void)
-{
-    struct ModWeatherDisplay display;
-    u16 battleWeather = ModWeather_GetBattleWeatherMask();
-
-    if (battleWeather != 0)
-        return battleWeather;
-
-    ModWeather_GetDisplayedWeather(&display);
-    battleWeather = GetVanillaFieldBattleWeather(display.vanillaWeather);
-    if (battleWeather != 0)
-        return battleWeather;
-
-    return GetVanillaFieldBattleWeather(GetCurrentWeather());
 }
 
 static u8 GetAveragePartyMonEvs(struct Pokemon *mon)
@@ -591,10 +552,10 @@ void MultiplayerBattle_ApplyCurrentWeather(void)
 #if FEATURE_MULTIPLAYER
     if (!sMultiplayerBattleActive)
         return;
-    if (!(gBattleTypeFlags & BATTLE_TYPE_SECRET_BASE))
+    if (!BattleSession_IsSecretBaseBattle())
         return;
 
-    gBattleWeather = GetCurrentFieldBattleWeather();
+    BattleSession_SetWeather(BattleSession_GetCurrentFieldBattleWeather());
 #endif
 }
 
