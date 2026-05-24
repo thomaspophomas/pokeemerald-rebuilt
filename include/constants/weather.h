@@ -17,8 +17,13 @@
 #define WEATHER_DOWNPOUR                13
 #define WEATHER_UNDERWATER_BUBBLES      14
 #define WEATHER_ABNORMAL                15  // The alternating weather during Groudon/Kyogre conflict
+#define WEATHER_DARKNESS                16
+#define WEATHER_WIND                    17
+#define WEATHER_EXTREME_SILENCE         18
 #define WEATHER_ROUTE119_CYCLE          20
 #define WEATHER_ROUTE123_CYCLE          21
+
+#define WEATHER_HAIL                    WEATHER_SNOW
 
 // These are used in maps' coord_weather_event entries.
 // They are not a one-to-one mapping with the engine's
@@ -36,6 +41,11 @@
 #define COORD_EVENT_WEATHER_DROUGHT             11
 #define COORD_EVENT_WEATHER_ROUTE119_CYCLE      20
 #define COORD_EVENT_WEATHER_ROUTE123_CYCLE      21
+#define COORD_EVENT_WEATHER_DARKNESS            22
+#define COORD_EVENT_WEATHER_WIND                23
+#define COORD_EVENT_WEATHER_EXTREME_SILENCE     24
+
+#define COORD_EVENT_WEATHER_HAIL                COORD_EVENT_WEATHER_SNOW
 
 // These are the "abnormal weather events" that are used
 // to find Kyogre and Groudon.

@@ -99,6 +99,9 @@ static const struct WeatherCallbacks sWeatherFuncs[] =
     [WEATHER_DROUGHT]            = {Drought_InitVars,       Drought_Main,       Drought_InitAll,       Drought_Finish},
     [WEATHER_DOWNPOUR]           = {Downpour_InitVars,      Thunderstorm_Main,  Downpour_InitAll,      Thunderstorm_Finish},
     [WEATHER_UNDERWATER_BUBBLES] = {Bubbles_InitVars,       Bubbles_Main,       Bubbles_InitAll,       Bubbles_Finish},
+    [WEATHER_DARKNESS]           = {Shade_InitVars,         Shade_Main,         Shade_InitAll,         Shade_Finish},
+    [WEATHER_WIND]               = {Clouds_InitVars,        Clouds_Main,        Clouds_InitAll,        Clouds_Finish},
+    [WEATHER_EXTREME_SILENCE]    = {None_Init,              None_Main,          None_Init,             None_Finish},
 };
 
 void (*const gWeatherPalStateFuncs[])(void) =
@@ -770,6 +773,7 @@ void FadeScreen(u8 mode, s8 delay)
     case WEATHER_SNOW:
     case WEATHER_FOG_HORIZONTAL:
     case WEATHER_SHADE:
+    case WEATHER_DARKNESS:
     case WEATHER_DROUGHT:
         useWeatherPal = TRUE;
         break;

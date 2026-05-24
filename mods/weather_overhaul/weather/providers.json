@@ -1,0 +1,9 @@
+{
+  "providers": [
+    {
+      "id": "layer_normalizer",
+      "handler": "WeatherOverhaul_ResolveWeather",
+      "priority": 100
+    }
+  ]
+}

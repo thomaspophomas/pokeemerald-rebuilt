@@ -16,12 +16,14 @@ SECTIONS {
     ALIGN(4)
     {
         src/*.o(ewram_data);
+        mods/*.o(ewram_data);
     } > EWRAM
 
     iwram 0x3000000 (NOLOAD) :
     ALIGN(4)
     {
         src/*.o(.bss);
+        mods/*.o(.bss);
         data/*.o(.bss);
         *libc.a:*.o(.bss*);
         *libnosys.a:*.o(.bss*);
@@ -29,7 +31,9 @@ SECTIONS {
         src/m4a.o(.bss.code);
 
         src/*.o(common_data);
+        mods/*.o(common_data);
         src/*.o(COMMON);
+        mods/*.o(COMMON);
         *libc.a:*.o(COMMON);
         *libnosys.a:*.o(COMMON);
     } > IWRAM
@@ -45,6 +49,7 @@ SECTIONS {
         src/crt0.o(.text);
         src/main.o(.text);
         src/*.o(.text*);
+        mods/*.o(.text*);
         asm/*.o(.text*);
     } > ROM =0
 
@@ -79,6 +84,7 @@ SECTIONS {
     ALIGN(4)
     {
         src/*.o(.rodata*);
+        mods/*.o(.rodata*);
         data/*.o(.rodata*);
     } > ROM =0
 
