@@ -27,6 +27,7 @@ struct RemotePlayerActor
     u8 mapGroup;
     u8 mapNum;
     u32 sessionEpoch;
+    u32 lastSequence;
     u16 graphicsRevision;
     u16 missingFrames;
     s16 currentX;
@@ -107,6 +108,7 @@ static void ResetRemoteActor(u8 i)
     sRemoteActors[i].mapGroup = 0;
     sRemoteActors[i].mapNum = 0;
     sRemoteActors[i].sessionEpoch = 0;
+    sRemoteActors[i].lastSequence = 0;
     sRemoteActors[i].graphicsRevision = 0;
     sRemoteActors[i].missingFrames = 0;
     sRemoteActors[i].currentX = 0;
@@ -375,6 +377,7 @@ static void SpawnRemoteActor(u8 actorIndex, const struct NetPlayerSnapshot *snap
     sRemoteActors[actorIndex].mapGroup = snapshot->mapGroup;
     sRemoteActors[actorIndex].mapNum = snapshot->mapNum;
     sRemoteActors[actorIndex].sessionEpoch = snapshot->sessionEpoch;
+    sRemoteActors[actorIndex].lastSequence = snapshot->sequence;
     sRemoteActors[actorIndex].graphicsRevision = snapshot->graphicsRevision;
     sRemoteActors[actorIndex].missingFrames = 0;
     sRemoteActors[actorIndex].currentX = x;
@@ -479,11 +482,15 @@ static void MoveRemoteActor(u8 actorIndex, const struct NetPlayerSnapshot *snaps
         sRemoteActors[actorIndex].graphicsRevision = snapshot->graphicsRevision;
     }
 
-    sRemoteActors[actorIndex].targetX = x;
-    sRemoteActors[actorIndex].targetY = y;
-    sRemoteActors[actorIndex].targetElevation = snapshot->elevation;
-    sRemoteActors[actorIndex].targetFacingDirection = snapshot->facingDirection;
-    sRemoteActors[actorIndex].targetWalking = MovementActionShowsWalking(snapshot->movementActionId);
+    if (snapshot->sequence > sRemoteActors[actorIndex].lastSequence)
+    {
+        sRemoteActors[actorIndex].targetX = x;
+        sRemoteActors[actorIndex].targetY = y;
+        sRemoteActors[actorIndex].targetElevation = snapshot->elevation;
+        sRemoteActors[actorIndex].targetFacingDirection = snapshot->facingDirection;
+        sRemoteActors[actorIndex].targetWalking = MovementActionShowsWalking(snapshot->movementActionId);
+        sRemoteActors[actorIndex].lastSequence = snapshot->sequence;
+    }
     StepRemoteActorTowardTarget(actorIndex);
     sRemoteActors[actorIndex].missingFrames = 0;
 }

@@ -3,6 +3,7 @@
 #include "battle_setup.h"
 #include "field_weather.h"
 #include "main.h"
+#include "mod/weather.h"
 #include "multiplayer/battle.h"
 #include "multiplayer/commit.h"
 #include "multiplayer/interaction_menu.h"
@@ -438,9 +439,9 @@ const u8 *MultiplayerBattle_GetPartnerName(void)
     return sFallbackPartnerName;
 }
 
-static u16 GetCurrentFieldBattleWeather(void)
+static u16 GetVanillaFieldBattleWeather(u8 weather)
 {
-    switch (GetCurrentWeather())
+    switch (weather)
     {
     case WEATHER_RAIN:
     case WEATHER_RAIN_THUNDERSTORM:
@@ -457,6 +458,22 @@ static u16 GetCurrentFieldBattleWeather(void)
     default:
         return 0;
     }
+}
+
+static u16 GetCurrentFieldBattleWeather(void)
+{
+    struct ModWeatherDisplay display;
+    u16 battleWeather = ModWeather_GetBattleWeatherMask();
+
+    if (battleWeather != 0)
+        return battleWeather;
+
+    ModWeather_GetDisplayedWeather(&display);
+    battleWeather = GetVanillaFieldBattleWeather(display.vanillaWeather);
+    if (battleWeather != 0)
+        return battleWeather;
+
+    return GetVanillaFieldBattleWeather(GetCurrentWeather());
 }
 
 static u8 GetAveragePartyMonEvs(struct Pokemon *mon)
