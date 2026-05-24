@@ -3,7 +3,9 @@
 #include "constants/global.h"
 #include "constants/species.h"
 #include "event_object_movement.h"
+#include "fieldmap.h"
 #include "global.fieldmap.h"
+#include "metatile_behavior.h"
 #include "mod/follower.h"
 #include "mod/overworld_sprite.h"
 #include "mod/sprite_asset.h"
@@ -12,6 +14,7 @@
 
 #define MOD_FOLLOWER_FORM_DEFAULT 0
 #define MOD_FOLLOWER_MAX_SYNC_DISTANCE 3
+#define MOD_FOLLOWER_INVALID_PALETTE 0xFF
 
 struct ModFollowerState
 {
@@ -40,15 +43,22 @@ static EWRAM_DATA struct ModFollowerState sFollower = {};
 
 static void ResetFollowerState(void);
 static void DestroyFollowerSprite(void);
+static void ReleaseFollowerAssets(void);
+static void HideFollower(void);
 static bool8 TryGetPlayerObjectEvent(struct ObjectEvent **objectEvent);
 static bool8 TryGetLeadPokemonFollower(const struct ModFollowerSpriteDefinition **definition, u16 *species, bool8 *shiny);
+static bool8 TryGetPokemonFollower(u8 partyIndex, const struct ModFollowerSpriteDefinition **definition, u16 *species, bool8 *shiny);
 static bool8 IsDirectionCardinal(u8 direction);
 static u8 GetDirectionFromDelta(s16 dx, s16 dy, u8 fallbackDirection);
 static s16 AbsS16(s16 value);
 static bool8 HasFollowerChangedMap(void);
 static bool8 IsFollowerTooFarFrom(s16 x, s16 y);
+static bool8 IsPlayerInUnsupportedFollowerState(struct ObjectEvent *player);
+static bool8 IsFollowerTileBehaviorBlocked(u8 metatileBehavior);
+static bool8 IsFollowerTileValid(s16 x, s16 y, u8 elevation);
 static void SetCoordsBehindPlayer(struct ObjectEvent *player);
-static void SyncFollowerGraphics(const struct ModFollowerSpriteDefinition *definition, u16 species, bool8 shiny);
+static bool8 TryLoadFollowerAssets(const struct ModFollowerSpriteDefinition *definition, u8 *paletteNum);
+static bool8 SyncFollowerGraphics(const struct ModFollowerSpriteDefinition *definition, u16 species, bool8 shiny);
 static void SpawnOrUpdateFollowerSprite(s16 x, s16 y, u8 elevation, u8 direction, bool8 moving);
 static void RefreshPlayerTrail(struct ObjectEvent *player, bool8 forceSnap);
 
@@ -59,7 +69,7 @@ static void ResetFollowerState(void)
     sFollower.hasPlayerCoords = FALSE;
     sFollower.spriteId = MAX_SPRITES;
     sFollower.graphicsId = OVERWORLD_SPRITE_API_INVALID_GFX;
-    sFollower.paletteNum = 0xFF;
+    sFollower.paletteNum = MOD_FOLLOWER_INVALID_PALETTE;
     sFollower.assetKey = NULL;
     sFollower.graphicsInfo = NULL;
     sFollower.graphicsRevision = 0;
@@ -82,6 +92,27 @@ static void DestroyFollowerSprite(void)
     sFollower.spriteId = MAX_SPRITES;
 }
 
+static void ReleaseFollowerAssets(void)
+{
+    if (sFollower.assetKey != NULL)
+        SpriteAssetApi_Release(sFollower.assetKey);
+
+    sFollower.graphicsId = OVERWORLD_SPRITE_API_INVALID_GFX;
+    sFollower.paletteNum = MOD_FOLLOWER_INVALID_PALETTE;
+    sFollower.assetKey = NULL;
+    sFollower.graphicsInfo = NULL;
+    sFollower.graphicsRevision = 0;
+    sFollower.species = SPECIES_NONE;
+    sFollower.shiny = FALSE;
+}
+
+static void HideFollower(void)
+{
+    DestroyFollowerSprite();
+    ReleaseFollowerAssets();
+    sFollower.hasPlayerCoords = FALSE;
+}
+
 static bool8 TryGetPlayerObjectEvent(struct ObjectEvent **objectEvent)
 {
     if (gPlayerAvatar.objectEventId >= OBJECT_EVENTS_COUNT)
@@ -95,24 +126,39 @@ static bool8 TryGetPlayerObjectEvent(struct ObjectEvent **objectEvent)
 
 static bool8 TryGetLeadPokemonFollower(const struct ModFollowerSpriteDefinition **definition, u16 *species, bool8 *shiny)
 {
-    u16 leadSpecies;
-    bool8 leadShiny;
+    u8 i;
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        if (TryGetPokemonFollower(i, definition, species, shiny))
+            return TRUE;
+    }
+
+    return FALSE;
+}
+
+static bool8 TryGetPokemonFollower(u8 partyIndex, const struct ModFollowerSpriteDefinition **definition, u16 *species, bool8 *shiny)
+{
+    u16 monSpecies;
+    bool8 monShiny;
     const struct ModFollowerSpriteDefinition *follower;
 
-    leadSpecies = GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, NULL);
-    if (leadSpecies == SPECIES_NONE || leadSpecies == SPECIES_EGG)
+    monSpecies = GetMonData(&gPlayerParty[partyIndex], MON_DATA_SPECIES_OR_EGG, NULL);
+    if (monSpecies == SPECIES_NONE || monSpecies == SPECIES_EGG)
+        return FALSE;
+    if (GetMonData(&gPlayerParty[partyIndex], MON_DATA_HP, NULL) == 0)
         return FALSE;
 
-    leadShiny = IsMonShiny(&gPlayerParty[0]);
-    follower = OverworldSpriteApi_FindFollowerSprite(leadSpecies, MOD_FOLLOWER_FORM_DEFAULT, leadShiny);
-    if (follower == NULL && leadShiny)
-        follower = OverworldSpriteApi_FindFollowerSprite(leadSpecies, MOD_FOLLOWER_FORM_DEFAULT, FALSE);
+    monShiny = IsMonShiny(&gPlayerParty[partyIndex]);
+    follower = OverworldSpriteApi_FindFollowerSprite(monSpecies, MOD_FOLLOWER_FORM_DEFAULT, monShiny);
+    if (follower == NULL && monShiny)
+        follower = OverworldSpriteApi_FindFollowerSprite(monSpecies, MOD_FOLLOWER_FORM_DEFAULT, FALSE);
     if (follower == NULL)
         return FALSE;
 
     *definition = follower;
-    *species = leadSpecies;
-    *shiny = leadShiny;
+    *species = monSpecies;
+    *shiny = monShiny;
     return TRUE;
 }
 
@@ -152,6 +198,77 @@ static bool8 IsFollowerTooFarFrom(s16 x, s16 y)
         || AbsS16(sFollower.y - y) > MOD_FOLLOWER_MAX_SYNC_DISTANCE;
 }
 
+static bool8 IsPlayerInUnsupportedFollowerState(struct ObjectEvent *player)
+{
+    if (player->invisible)
+        return TRUE;
+    if (gPlayerAvatar.flags & (PLAYER_AVATAR_FLAG_SURFING | PLAYER_AVATAR_FLAG_UNDERWATER))
+        return TRUE;
+
+    switch (player->graphicsId)
+    {
+    case OBJ_EVENT_GFX_BRENDAN_SURFING:
+    case OBJ_EVENT_GFX_MAY_SURFING:
+    case OBJ_EVENT_GFX_BRENDAN_UNDERWATER:
+    case OBJ_EVENT_GFX_MAY_UNDERWATER:
+    case OBJ_EVENT_GFX_RIVAL_BRENDAN_FIELD_MOVE:
+    case OBJ_EVENT_GFX_RIVAL_MAY_FIELD_MOVE:
+    case OBJ_EVENT_GFX_BRENDAN_FISHING:
+    case OBJ_EVENT_GFX_MAY_FISHING:
+    case OBJ_EVENT_GFX_BRENDAN_WATERING:
+    case OBJ_EVENT_GFX_MAY_WATERING:
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
+static bool8 IsFollowerTileBehaviorBlocked(u8 metatileBehavior)
+{
+    return MetatileBehavior_IsSurfableWaterOrUnderwater(metatileBehavior)
+        || MetatileBehavior_IsWarpDoor(metatileBehavior)
+        || MetatileBehavior_IsDoor(metatileBehavior)
+        || MetatileBehavior_IsNonAnimDoor(metatileBehavior)
+        || MetatileBehavior_IsDeepSouthWarp(metatileBehavior)
+        || MetatileBehavior_IsEastArrowWarp(metatileBehavior)
+        || MetatileBehavior_IsWestArrowWarp(metatileBehavior)
+        || MetatileBehavior_IsNorthArrowWarp(metatileBehavior)
+        || MetatileBehavior_IsSouthArrowWarp(metatileBehavior)
+        || MetatileBehavior_IsLavaridgeB1FWarp(metatileBehavior)
+        || MetatileBehavior_IsLavaridge1FWarp(metatileBehavior)
+        || MetatileBehavior_IsAquaHideoutWarp(metatileBehavior)
+        || MetatileBehavior_IsUnionRoomWarp(metatileBehavior)
+        || MetatileBehavior_IsMossdeepGymWarp(metatileBehavior)
+        || MetatileBehavior_IsBattlePyramidWarp(metatileBehavior)
+        || MetatileBehavior_IsMtPyreHole(metatileBehavior)
+        || MetatileBehavior_IsCrackedFloorHole(metatileBehavior)
+        || MetatileBehavior_IsEscalator(metatileBehavior)
+        || MetatileBehavior_IsLadder(metatileBehavior)
+        || MetatileBehavior_IsForcedMovementTile(metatileBehavior)
+        || MetatileBehavior_IsJumpSouth(metatileBehavior)
+        || MetatileBehavior_IsJumpNorth(metatileBehavior)
+        || MetatileBehavior_IsJumpWest(metatileBehavior)
+        || MetatileBehavior_IsJumpEast(metatileBehavior);
+}
+
+static bool8 IsFollowerTileValid(s16 x, s16 y, u8 elevation)
+{
+    u8 metatileBehavior;
+
+    if (MapGridGetCollisionAt(x, y) != COLLISION_NONE)
+        return FALSE;
+    if (GetMapBorderIdAt(x, y) == CONNECTION_INVALID)
+        return FALSE;
+    if (GetObjectEventIdByPosition(x, y, elevation) != OBJECT_EVENTS_COUNT)
+        return FALSE;
+
+    metatileBehavior = MapGridGetMetatileBehaviorAt(x, y);
+    if (IsFollowerTileBehaviorBlocked(metatileBehavior))
+        return FALSE;
+
+    return TRUE;
+}
+
 static void SetCoordsBehindPlayer(struct ObjectEvent *player)
 {
     u8 direction;
@@ -169,27 +286,44 @@ static void SetCoordsBehindPlayer(struct ObjectEvent *player)
     sFollower.facingDirection = direction;
 }
 
-static void SyncFollowerGraphics(const struct ModFollowerSpriteDefinition *definition, u16 species, bool8 shiny)
+static bool8 TryLoadFollowerAssets(const struct ModFollowerSpriteDefinition *definition, u8 *paletteNum)
 {
-    if (sFollower.active
-     && sFollower.species == species
+    *paletteNum = MOD_FOLLOWER_INVALID_PALETTE;
+    if (definition->assetKey == NULL)
+        return TRUE;
+
+    if (definition->graphicsInfo == NULL && !SpriteAssetApi_LoadSheet(definition->assetKey))
+        return FALSE;
+    if (definition->graphicsInfo != NULL)
+        SpriteAssetApi_LoadSheet(definition->assetKey);
+
+    *paletteNum = SpriteAssetApi_LoadPaletteNum(definition->assetKey);
+    return *paletteNum != MOD_FOLLOWER_INVALID_PALETTE;
+}
+
+static bool8 SyncFollowerGraphics(const struct ModFollowerSpriteDefinition *definition, u16 species, bool8 shiny)
+{
+    u8 paletteNum;
+
+    if (sFollower.species == species
      && sFollower.shiny == shiny
      && sFollower.graphicsId == definition->graphicsId
      && sFollower.assetKey == definition->assetKey
      && sFollower.graphicsInfo == definition->graphicsInfo
      && sFollower.graphicsRevision == definition->graphicsRevision)
-        return;
+        return TRUE;
 
     if (sFollower.active)
         DestroyFollowerSprite();
     if (sFollower.assetKey != NULL && sFollower.assetKey != definition->assetKey)
-        SpriteAssetApi_Release(sFollower.assetKey);
+        ReleaseFollowerAssets();
 
-    sFollower.paletteNum = 0xFF;
-    if (definition->assetKey != NULL)
+    if (!TryLoadFollowerAssets(definition, &paletteNum))
     {
-        SpriteAssetApi_LoadSheet(definition->assetKey);
-        sFollower.paletteNum = SpriteAssetApi_LoadPaletteNum(definition->assetKey);
+        if (definition->assetKey != NULL)
+            SpriteAssetApi_Release(definition->assetKey);
+        ReleaseFollowerAssets();
+        return FALSE;
     }
 
     sFollower.species = species;
@@ -198,6 +332,8 @@ static void SyncFollowerGraphics(const struct ModFollowerSpriteDefinition *defin
     sFollower.assetKey = definition->assetKey;
     sFollower.graphicsInfo = definition->graphicsInfo;
     sFollower.graphicsRevision = definition->graphicsRevision;
+    sFollower.paletteNum = paletteNum;
+    return TRUE;
 }
 
 static void SpawnOrUpdateFollowerSprite(s16 x, s16 y, u8 elevation, u8 direction, bool8 moving)
@@ -206,6 +342,12 @@ static void SpawnOrUpdateFollowerSprite(s16 x, s16 y, u8 elevation, u8 direction
         direction = sFollower.facingDirection;
     if (!IsDirectionCardinal(direction))
         direction = DIR_SOUTH;
+
+    if (!IsFollowerTileValid(x, y, elevation))
+    {
+        DestroyFollowerSprite();
+        return;
+    }
 
     if (sFollower.graphicsInfo != NULL)
     {
@@ -315,20 +457,28 @@ void ModFollower_RunFrame(void)
         return;
     if (!TryGetPlayerObjectEvent(&player))
         return;
+    if (IsPlayerInUnsupportedFollowerState(player))
+    {
+        HideFollower();
+        return;
+    }
     if (!TryGetLeadPokemonFollower(&definition, &species, &shiny))
     {
-        DestroyFollowerSprite();
+        HideFollower();
         return;
     }
 
-    SyncFollowerGraphics(definition, species, shiny);
+    if (!SyncFollowerGraphics(definition, species, shiny))
+    {
+        HideFollower();
+        return;
+    }
     RefreshPlayerTrail(player, FALSE);
 }
 
 void ModFollower_OnMapLoad(void)
 {
-    DestroyFollowerSprite();
-    sFollower.hasPlayerCoords = FALSE;
+    HideFollower();
 }
 
 void ModFollower_OnPlayerStep(u8 direction, u16 newKeys, u16 heldKeys)
@@ -342,6 +492,11 @@ void ModFollower_OnPlayerStep(u8 direction, u16 newKeys, u16 heldKeys)
         return;
     if (!TryGetPlayerObjectEvent(&player))
         return;
+    if (IsPlayerInUnsupportedFollowerState(player))
+    {
+        HideFollower();
+        return;
+    }
     if (IsDirectionCardinal(direction))
         sFollower.facingDirection = direction;
 
@@ -351,7 +506,7 @@ void ModFollower_OnPlayerStep(u8 direction, u16 newKeys, u16 heldKeys)
 void ModFollower_OnBattleStart(void)
 {
     sFollower.suspended = TRUE;
-    DestroyFollowerSprite();
+    HideFollower();
 }
 
 void ModFollower_OnBattleEnd(void)
