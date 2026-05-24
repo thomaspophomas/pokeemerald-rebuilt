@@ -147,6 +147,7 @@ static void MakeSpriteTemplateFromObjectEventTemplate(const struct ObjectEventTe
 static void GetObjectEventMovingCameraOffset(s16 *, s16 *);
 static const struct ObjectEventTemplate *GetObjectEventTemplateByLocalIdAndMap(u8, u8, u8);
 static void LoadObjectEventPalette(u16);
+static void CopyObjectGraphicsInfoToSpriteTemplateFromInfo(const struct ObjectEventGraphicsInfo *, void (*)(struct Sprite *), struct SpriteTemplate *, const struct SubspriteTable **);
 static void RemoveObjectEventIfOutsideView(struct ObjectEvent *);
 static void SpawnObjectEventOnReturnToField(u8, s16, s16);
 static void SetPlayerAvatarObjectEventIdAndObjectId(u8, u8);
@@ -167,6 +168,7 @@ static void InitSpriteForFigure8Anim(struct Sprite *);
 static bool8 AnimateSpriteInFigure8(struct Sprite *);
 static void SpriteCB_VirtualObject(struct Sprite *);
 static int GetVirtualObjectSpriteId(u8);
+static void SetVirtualObjectGraphicsInfo(u8, const struct ObjectEventGraphicsInfo *, u8, u8);
 static void DoShadowFieldEffect(struct ObjectEvent *);
 static void SetJumpSpriteData(struct Sprite *, u8, u8, u8);
 static void SetWalkSlowSpriteData(struct Sprite *, u8);
@@ -1546,6 +1548,11 @@ static void CopyObjectGraphicsInfoToSpriteTemplate(u16 graphicsId, void (*callba
 {
     const struct ObjectEventGraphicsInfo *graphicsInfo = GetObjectEventGraphicsInfo(graphicsId);
 
+    CopyObjectGraphicsInfoToSpriteTemplateFromInfo(graphicsInfo, callback, spriteTemplate, subspriteTables);
+}
+
+static void CopyObjectGraphicsInfoToSpriteTemplateFromInfo(const struct ObjectEventGraphicsInfo *graphicsInfo, void (*callback)(struct Sprite *), struct SpriteTemplate *spriteTemplate, const struct SubspriteTable **subspriteTables)
+{
     spriteTemplate->tileTag = graphicsInfo->tileTag;
     spriteTemplate->paletteTag = graphicsInfo->paletteTag;
     spriteTemplate->oam = graphicsInfo->oam;
@@ -1599,21 +1606,36 @@ u8 CreateObjectGraphicsSprite(u16 graphicsId, void (*callback)(struct Sprite *),
 #define sVirtualObjAnimNum          data[5]
 #define sVirtualObjAnimState        data[6]
 
-// "Virtual Objects" are a class of sprites used instead of a full object event.
-// Used when more objects are needed than the object event limit (for Contest / Battle Dome audiences and group members in Union Room).
-// A unique id is given as an argument and stored in the sprite data to allow referring back to the same virtual object.
-// They can be turned (and, in the case of the Union Room, animated teleporting in and out) but do not have movement types
-// or any of the other data normally associated with object events.
-u8 CreateVirtualObject(u8 graphicsId, u8 virtualObjId, s16 x, s16 y, u8 elevation, u8 direction)
+#define VIRTUAL_OBJECT_PALETTE_FROM_GRAPHICS_INFO 0xFF
+
+static u8 ResolveVirtualObjectPaletteNum(const struct ObjectEventGraphicsInfo *graphicsInfo, u8 paletteNum)
+{
+    if (paletteNum == VIRTUAL_OBJECT_PALETTE_FROM_GRAPHICS_INFO)
+        paletteNum = graphicsInfo->paletteSlot;
+    if (paletteNum >= 16)
+        paletteNum -= 16;
+    return paletteNum;
+}
+
+static void LoadVirtualObjectFixedPalette(const struct ObjectEventGraphicsInfo *graphicsInfo, u8 paletteNum)
+{
+    if (paletteNum != VIRTUAL_OBJECT_PALETTE_FROM_GRAPHICS_INFO)
+        return;
+
+    if (graphicsInfo->paletteSlot == PALSLOT_NPC_SPECIAL)
+        LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag, graphicsInfo->paletteSlot);
+    else if (graphicsInfo->paletteSlot >= 16)
+        _PatchObjectPalette(graphicsInfo->paletteTag, graphicsInfo->paletteSlot | 0xf0);
+}
+
+static u8 CreateVirtualObjectFromGraphicsInfo(const struct ObjectEventGraphicsInfo *graphicsInfo, u8 graphicsId, u8 virtualObjId, s16 x, s16 y, u8 elevation, u8 direction, u8 paletteNum)
 {
     u8 spriteId;
     struct Sprite *sprite;
     struct SpriteTemplate spriteTemplate;
     const struct SubspriteTable *subspriteTables;
-    const struct ObjectEventGraphicsInfo *graphicsInfo;
 
-    graphicsInfo = GetObjectEventGraphicsInfo(graphicsId);
-    CopyObjectGraphicsInfoToSpriteTemplate(graphicsId, SpriteCB_VirtualObject, &spriteTemplate, &subspriteTables);
+    CopyObjectGraphicsInfoToSpriteTemplateFromInfo(graphicsInfo, SpriteCB_VirtualObject, &spriteTemplate, &subspriteTables);
     *(u16 *)&spriteTemplate.paletteTag = TAG_NONE;
     x += MAP_OFFSET;
     y += MAP_OFFSET;
@@ -1625,9 +1647,7 @@ u8 CreateVirtualObject(u8 graphicsId, u8 virtualObjId, s16 x, s16 y, u8 elevatio
         sprite->centerToCornerVecX = -(graphicsInfo->width >> 1);
         sprite->centerToCornerVecY = -(graphicsInfo->height >> 1);
         sprite->y += sprite->centerToCornerVecY;
-        sprite->oam.paletteNum = graphicsInfo->paletteSlot;
-        if (sprite->oam.paletteNum >= 16)
-            sprite->oam.paletteNum -= 16;
+        sprite->oam.paletteNum = ResolveVirtualObjectPaletteNum(graphicsInfo, paletteNum);
 
         sprite->coordOffsetEnabled = TRUE;
         sprite->sVirtualObjId = virtualObjId;
@@ -1637,10 +1657,7 @@ u8 CreateVirtualObject(u8 graphicsId, u8 virtualObjId, s16 x, s16 y, u8 elevatio
         sprite->sVirtualObjInvisible = FALSE;
         sprite->sVirtualObjAnimNum = 0;
         sprite->sVirtualObjAnimState = 0;
-        if (graphicsInfo->paletteSlot == PALSLOT_NPC_SPECIAL)
-            LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag, graphicsInfo->paletteSlot);
-        else if (graphicsInfo->paletteSlot >= 16)
-            _PatchObjectPalette(graphicsInfo->paletteTag, graphicsInfo->paletteSlot | 0xf0);
+        LoadVirtualObjectFixedPalette(graphicsInfo, paletteNum);
 
         if (subspriteTables != NULL)
         {
@@ -1652,6 +1669,16 @@ u8 CreateVirtualObject(u8 graphicsId, u8 virtualObjId, s16 x, s16 y, u8 elevatio
         StartSpriteAnim(sprite, GetFaceDirectionAnimNum(direction));
     }
     return spriteId;
+}
+
+// "Virtual Objects" are a class of sprites used instead of a full object event.
+// Used when more objects are needed than the object event limit (for Contest / Battle Dome audiences and group members in Union Room).
+// A unique id is given as an argument and stored in the sprite data to allow referring back to the same virtual object.
+// They can be turned (and, in the case of the Union Room, animated teleporting in and out) but do not have movement types
+// or any of the other data normally associated with object events.
+u8 CreateVirtualObject(u8 graphicsId, u8 virtualObjId, s16 x, s16 y, u8 elevation, u8 direction)
+{
+    return CreateVirtualObjectFromGraphicsInfo(GetObjectEventGraphicsInfo(graphicsId), graphicsId, virtualObjId, x, y, elevation, direction, VIRTUAL_OBJECT_PALETTE_FROM_GRAPHICS_INFO);
 }
 
 u8 CreateOrUpdateVirtualObject(u8 graphicsId, u8 virtualObjId, s16 x, s16 y, u8 elevation, u8 direction, u16 graphicsRevision)
@@ -1670,6 +1697,30 @@ u8 CreateOrUpdateVirtualObject(u8 graphicsId, u8 virtualObjId, s16 x, s16 y, u8 
      || gSprites[spriteId].sVirtualObjGraphicsRevision != graphicsRevision)
     {
         SetVirtualObjectGraphics(virtualObjId, graphicsId);
+        gSprites[spriteId].sVirtualObjGraphicsRevision = graphicsRevision;
+    }
+
+    SetVirtualObjectMapCoords(virtualObjId, x, y, elevation);
+    TurnVirtualObject(virtualObjId, direction);
+    return spriteId;
+}
+
+u8 CreateOrUpdateVirtualObjectFromGraphicsInfo(const struct ObjectEventGraphicsInfo *graphicsInfo, u8 graphicsId, u8 virtualObjId, s16 x, s16 y, u8 elevation, u8 direction, u16 graphicsRevision, u8 paletteNum)
+{
+    u8 spriteId = GetVirtualObjectSpriteId(virtualObjId);
+
+    if (spriteId == MAX_SPRITES)
+    {
+        spriteId = CreateVirtualObjectFromGraphicsInfo(graphicsInfo, graphicsId, virtualObjId, x, y, elevation, direction, paletteNum);
+        if (spriteId != MAX_SPRITES)
+            gSprites[spriteId].sVirtualObjGraphicsRevision = graphicsRevision;
+        return spriteId;
+    }
+
+    if (gSprites[spriteId].sVirtualObjGraphicsId != graphicsId
+     || gSprites[spriteId].sVirtualObjGraphicsRevision != graphicsRevision)
+    {
+        SetVirtualObjectGraphicsInfo(virtualObjId, graphicsInfo, graphicsId, paletteNum);
         gSprites[spriteId].sVirtualObjGraphicsRevision = graphicsRevision;
     }
 
@@ -8731,29 +8782,25 @@ void TurnVirtualObjectWithMovement(u8 virtualObjId, u8 direction, bool8 moving)
     }
 }
 
-void SetVirtualObjectGraphics(u8 virtualObjId, u8 graphicsId)
+static void SetVirtualObjectGraphicsInfo(u8 virtualObjId, const struct ObjectEventGraphicsInfo *graphicsInfo, u8 graphicsId, u8 paletteNum)
 {
     int spriteId = GetVirtualObjectSpriteId(virtualObjId);
 
     if (spriteId != MAX_SPRITES)
     {
         struct Sprite *sprite = &gSprites[spriteId];
-        const struct ObjectEventGraphicsInfo *graphicsInfo = GetObjectEventGraphicsInfo(graphicsId);
         u16 tileNum = sprite->oam.tileNum;
 
         sprite->oam = *graphicsInfo->oam;
         sprite->oam.tileNum = tileNum;
-        sprite->oam.paletteNum = graphicsInfo->paletteSlot;
-        if (sprite->oam.paletteNum >= 16)
-            sprite->oam.paletteNum -= 16;
+        sprite->oam.paletteNum = ResolveVirtualObjectPaletteNum(graphicsInfo, paletteNum);
+        sprite->anims = graphicsInfo->anims;
         sprite->images = graphicsInfo->images;
+        sprite->affineAnims = graphicsInfo->affineAnims;
         sprite->sVirtualObjGraphicsId = graphicsId;
         sprite->centerToCornerVecX = -(graphicsInfo->width >> 1);
         sprite->centerToCornerVecY = -(graphicsInfo->height >> 1);
-        if (graphicsInfo->paletteSlot == PALSLOT_NPC_SPECIAL)
-            LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag, graphicsInfo->paletteSlot);
-        else if (graphicsInfo->paletteSlot >= 16)
-            _PatchObjectPalette(graphicsInfo->paletteTag, graphicsInfo->paletteSlot | 0xf0);
+        LoadVirtualObjectFixedPalette(graphicsInfo, paletteNum);
 
         if (graphicsInfo->subspriteTables == NULL)
         {
@@ -8768,6 +8815,11 @@ void SetVirtualObjectGraphics(u8 virtualObjId, u8 graphicsId)
         }
         StartSpriteAnim(sprite, 0);
     }
+}
+
+void SetVirtualObjectGraphics(u8 virtualObjId, u8 graphicsId)
+{
+    SetVirtualObjectGraphicsInfo(virtualObjId, GetObjectEventGraphicsInfo(graphicsId), graphicsId, VIRTUAL_OBJECT_PALETTE_FROM_GRAPHICS_INFO);
 }
 
 void SetVirtualObjectInvisibility(u8 virtualObjId, bool32 invisible)

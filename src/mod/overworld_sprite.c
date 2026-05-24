@@ -98,7 +98,7 @@ bool8 OverworldSpriteApi_SetPlayerOutfit(const char *key)
     return OverworldSpriteApi_SetObjectGraphics(gPlayerAvatar.objectEventId, key);
 }
 
-u8 OverworldSpriteApi_GetFollowerSprite(u16 species, u8 form, bool8 shiny)
+const struct ModFollowerSpriteDefinition *OverworldSpriteApi_FindFollowerSprite(u16 species, u8 form, bool8 shiny)
 {
     u16 i;
 
@@ -107,10 +107,20 @@ u8 OverworldSpriteApi_GetFollowerSprite(u16 species, u8 form, bool8 shiny)
         if (gModFollowerSprites[i].species == species
          && gModFollowerSprites[i].form == form
          && gModFollowerSprites[i].shiny == shiny)
-            return gModFollowerSprites[i].graphicsId;
+            return &gModFollowerSprites[i];
     }
 
-    return OVERWORLD_SPRITE_API_INVALID_GFX;
+    return NULL;
+}
+
+u8 OverworldSpriteApi_GetFollowerSprite(u16 species, u8 form, bool8 shiny)
+{
+    const struct ModFollowerSpriteDefinition *sprite = OverworldSpriteApi_FindFollowerSprite(species, form, shiny);
+
+    if (sprite == NULL)
+        return OVERWORLD_SPRITE_API_INVALID_GFX;
+
+    return sprite->graphicsId;
 }
 
 u8 OverworldSpriteApi_CreateOrUpdateVirtualAvatar(const char *ownerKey, const char *spriteKey, s16 x, s16 y)

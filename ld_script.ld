@@ -1320,6 +1320,14 @@ SECTIONS {
         src/*.o(.text);
         src/*.o(.rodata);
         data/*.o(.rodata);
+        mods/*.o(.text);
+        mods/*/*.o(.text);
+        mods/*/*/*.o(.text);
+        mods/*.o(.rodata*);
+        mods/*/*.o(.rodata*);
+        mods/*/*/*.o(.rodata*);
+        *(.text*);
+        *(.rodata*);
     } > ROM = 0
 
     /* DWARF debug sections.

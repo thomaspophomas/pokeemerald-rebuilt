@@ -19,6 +19,7 @@ struct ModSpriteAssetDefinition
 const struct ModSpriteAssetDefinition *SpriteAssetApi_Find(const char *key);
 bool8 SpriteAssetApi_LoadSheet(const char *key);
 bool8 SpriteAssetApi_LoadPalette(const char *key);
+u8 SpriteAssetApi_LoadPaletteNum(const char *key);
 void SpriteAssetApi_Release(const char *key);
 
 #endif // GUARD_MOD_SPRITE_ASSET_H

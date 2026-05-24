@@ -65,6 +65,26 @@ bool8 SpriteAssetApi_LoadPalette(const char *key)
     return FALSE;
 }
 
+u8 SpriteAssetApi_LoadPaletteNum(const char *key)
+{
+    const struct ModSpriteAssetDefinition *asset = SpriteAssetApi_Find(key);
+    struct SpritePalette palette;
+
+    if (asset == NULL)
+        return 0xFF;
+    if (asset->compressedPalette != NULL)
+    {
+        LZ77UnCompWram(asset->compressedPalette->data, gDecompressionBuffer);
+        palette.data = (void *)gDecompressionBuffer;
+        palette.tag = asset->compressedPalette->tag;
+        return LoadSpritePalette(&palette);
+    }
+    if (asset->palette != NULL)
+        return LoadSpritePalette(asset->palette);
+
+    return 0xFF;
+}
+
 void SpriteAssetApi_Release(const char *key)
 {
     const struct ModSpriteAssetDefinition *asset = SpriteAssetApi_Find(key);

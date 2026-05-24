@@ -3,6 +3,8 @@
 
 #include "constants/event_object_movement.h"
 
+struct ObjectEventGraphicsInfo;
+
 // Palette slots for overworld NPCs.
 // The same standard set of palettes for overworld objects are normally always loaded at the same
 // time while walking around the overworld. The only exceptions are the palettes for the player and
@@ -440,6 +442,7 @@ bool8 MovementType_Invisible_Step2(struct ObjectEvent *objectEvent, struct Sprit
 
 u8 CreateVirtualObject(u8 graphicsId, u8 virtualObjId, s16 x, s16 y, u8 elevation, u8 direction);
 u8 CreateOrUpdateVirtualObject(u8 graphicsId, u8 virtualObjId, s16 x, s16 y, u8 elevation, u8 direction, u16 graphicsRevision);
+u8 CreateOrUpdateVirtualObjectFromGraphicsInfo(const struct ObjectEventGraphicsInfo *graphicsInfo, u8 graphicsId, u8 virtualObjId, s16 x, s16 y, u8 elevation, u8 direction, u16 graphicsRevision, u8 paletteNum);
 void DestroyVirtualObject(u8 virtualObjId);
 void SetVirtualObjectMapCoords(u8 virtualObjId, s16 x, s16 y, u8 elevation);
 void TurnVirtualObject(u8 virtualObjId, u8 direction);

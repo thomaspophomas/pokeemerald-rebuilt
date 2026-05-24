@@ -16,6 +16,9 @@ SECTIONS {
     ALIGN(4)
     {
         src/*.o(ewram_data);
+        mods/*.o(ewram_data);
+        mods/*/*.o(ewram_data);
+        mods/*/*/*.o(ewram_data);
     } > EWRAM
 
     iwram 0x3000000 (NOLOAD) :
@@ -23,6 +26,9 @@ SECTIONS {
     {
         src/*.o(.bss);
         data/*.o(.bss);
+        mods/*.o(.bss);
+        mods/*/*.o(.bss);
+        mods/*/*/*.o(.bss);
         *libc.a:*.o(.bss*);
         *libnosys.a:*.o(.bss*);
 
@@ -30,6 +36,12 @@ SECTIONS {
 
         src/*.o(common_data);
         src/*.o(COMMON);
+        mods/*.o(common_data);
+        mods/*/*.o(common_data);
+        mods/*/*/*.o(common_data);
+        mods/*.o(COMMON);
+        mods/*/*.o(COMMON);
+        mods/*/*/*.o(COMMON);
         *libc.a:*.o(COMMON);
         *libnosys.a:*.o(COMMON);
     } > IWRAM
@@ -46,6 +58,9 @@ SECTIONS {
         src/main.o(.text);
         src/*.o(.text*);
         asm/*.o(.text*);
+        mods/*.o(.text*);
+        mods/*/*.o(.text*);
+        mods/*/*/*.o(.text*);
     } > ROM =0
 
     script_data :
@@ -80,6 +95,9 @@ SECTIONS {
     {
         src/*.o(.rodata*);
         data/*.o(.rodata*);
+        mods/*.o(.rodata*);
+        mods/*/*.o(.rodata*);
+        mods/*/*/*.o(.rodata*);
     } > ROM =0
 
     song_data :
@@ -123,6 +141,13 @@ SECTIONS {
     ALIGN(4)
     {
         src/graphics.o(.rodata);
+    } > ROM =0
+
+    extra :
+    ALIGN(4)
+    {
+        *(.text*);
+        *(.rodata*);
     } > ROM =0
 
     /* DWARF debug sections.
