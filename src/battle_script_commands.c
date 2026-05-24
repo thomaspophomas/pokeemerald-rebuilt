@@ -37,6 +37,7 @@
 #include "battle_arena.h"
 #include "battle_pike.h"
 #include "battle_pyramid.h"
+#include "safari_zone.h"
 #include "field_specials.h"
 #include "pokemon_summary_screen.h"
 #include "pokenav.h"
@@ -78,6 +79,9 @@ static void DrawLevelUpWindow2(void);
 static void PutMonIconOnLvlUpBanner(void);
 static void DrawLevelUpBannerText(void);
 static void SpriteCB_MonIconOnLvlUpBanner(struct Sprite *sprite);
+static void ReturnFailedPokeBall(u16 itemId);
+static void ReturnFailedPokeBallAndApplyRage(u8 battler);
+static void BufferPokeBallRageStatText(u8 stages);
 
 static void Cmd_attackcanceler(void);
 static void Cmd_accuracycheck(void);
@@ -6488,6 +6492,9 @@ static void Cmd_various(void)
         BtlController_EmitPlayFanfareOrBGM(B_COMM_TO_CONTROLLER, MUS_VICTORY_TRAINER, TRUE);
         MarkBattlerForControllerExec(gActiveBattler);
         break;
+    case VARIOUS_RETURN_FAILED_BALL_AND_RAGE:
+        ReturnFailedPokeBallAndApplyRage(gActiveBattler);
+        break;
     }
 
     gBattlescriptCurrInstr += 3;
@@ -9909,6 +9916,66 @@ static void Cmd_removelightscreenreflect(void)
     gBattlescriptCurrInstr++;
 }
 
+static void ReturnFailedPokeBall(u16 itemId)
+{
+    if (!PokeBallApi_IsBall(itemId))
+        return;
+
+    if (itemId == ITEM_SAFARI_BALL && (gBattleTypeFlags & BATTLE_TYPE_SAFARI))
+        gNumSafariBalls++;
+    else
+        AddBagItem(itemId, 1);
+}
+
+static void BufferPokeBallRageStatText(u8 stages)
+{
+    u8 index = 1;
+
+    PREPARE_STAT_BUFFER(gBattleTextBuff1, STAT_ATK)
+
+    gBattleTextBuff2[0] = B_BUFF_PLACEHOLDER_BEGIN;
+    if (stages >= 2)
+    {
+        gBattleTextBuff2[1] = B_BUFF_STRING;
+        gBattleTextBuff2[2] = STRINGID_STATSHARPLY;
+        gBattleTextBuff2[3] = STRINGID_STATSHARPLY >> 8;
+        index = 4;
+    }
+    gBattleTextBuff2[index++] = B_BUFF_STRING;
+    gBattleTextBuff2[index++] = STRINGID_STATROSE;
+    gBattleTextBuff2[index++] = STRINGID_STATROSE >> 8;
+    gBattleTextBuff2[index] = B_BUFF_EOS;
+}
+
+static void ReturnFailedPokeBallAndApplyRage(u8 battler)
+{
+    struct PokeBallCatchContext context;
+    u8 stages;
+
+    ReturnFailedPokeBall(gLastUsedItem);
+
+    PokeBallApi_BuildContextFromBattle(&context, gLastUsedItem, battler);
+    stages = PokeBallApi_GetFailedCatchAttackStages(&context);
+
+    gBattleScripting.battler = battler;
+    SET_STATCHANGER(STAT_ATK, 1, FALSE);
+    PREPARE_STAT_BUFFER(gBattleTextBuff1, STAT_ATK)
+
+    if (stages == 0 || gBattleMons[battler].statStages[STAT_ATK] >= MAX_STAT_STAGE)
+    {
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STAT_WONT_INCREASE;
+        return;
+    }
+
+    if (gBattleMons[battler].statStages[STAT_ATK] + stages > MAX_STAT_STAGE)
+        stages = MAX_STAT_STAGE - gBattleMons[battler].statStages[STAT_ATK];
+
+    gBattleMons[battler].statStages[STAT_ATK] += stages;
+    SET_STATCHANGER(STAT_ATK, stages, FALSE);
+    BufferPokeBallRageStatText(stages);
+    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_DEFENDER_STAT_ROSE;
+}
+
 static void Cmd_handleballthrow(void)
 {
     if (gBattleControllerExecFlags)
@@ -9919,6 +9986,7 @@ static void Cmd_handleballthrow(void)
 
     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
+        ReturnFailedPokeBall(gLastUsedItem);
         BtlController_EmitBallThrowAnim(B_COMM_TO_CONTROLLER, BALL_TRAINER_BLOCK);
         MarkBattlerForControllerExec(gActiveBattler);
         gBattlescriptCurrInstr = BattleScript_TrainerBallBlock;

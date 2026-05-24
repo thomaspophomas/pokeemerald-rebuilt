@@ -1362,6 +1362,10 @@
 	various \battler, VARIOUS_PLAY_TRAINER_DEFEATED_MUSIC
 	.endm
 
+	.macro returnfailedballandrage battler:req
+	various \battler, VARIOUS_RETURN_FAILED_BALL_AND_RAGE
+	.endm
+
 @ helpful macros
 	.macro setstatchanger stat:req, stages:req, down:req
 	setbyte sSTATCHANGER, \stat | \stages << 4 | \down << 7

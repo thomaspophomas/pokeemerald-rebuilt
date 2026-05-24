@@ -204,6 +204,17 @@ u8 PokeBallApi_GetBallSprite(u16 itemId)
     return BALL_POKE;
 }
 
+u8 PokeBallApi_GetFailedCatchAttackStages(const struct PokeBallCatchContext *context)
+{
+    u8 modifier;
+
+    if (context == NULL || context->itemId == ITEM_MASTER_BALL || !PokeBallApi_IsBall(context->itemId))
+        return 0;
+
+    modifier = PokeBallApi_GetCatchModifier(context);
+    return modifier >= 20 ? 2 : 1;
+}
+
 void PokeBallApi_OnCatchCommit(const struct PokeBallCatchContext *context, const struct PokeBallThrowResult *result)
 {
     const struct ModPokeBallDefinition *definition;

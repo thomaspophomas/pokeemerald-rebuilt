@@ -56,6 +56,7 @@ u8 PokeBallApi_GetCatchModifier(const struct PokeBallCatchContext *context);
 bool8 PokeBallApi_CalculateThrowResult(const struct PokeBallCatchContext *context, struct PokeBallThrowResult *result);
 const u8 *PokeBallApi_GetBattleScript(u16 itemId);
 u8 PokeBallApi_GetBallSprite(u16 itemId);
+u8 PokeBallApi_GetFailedCatchAttackStages(const struct PokeBallCatchContext *context);
 void PokeBallApi_OnCatchCommit(const struct PokeBallCatchContext *context, const struct PokeBallThrowResult *result);
 void PokeBallApi_BuildContextFromBattle(struct PokeBallCatchContext *context, u16 itemId, u8 targetBattler);
 
