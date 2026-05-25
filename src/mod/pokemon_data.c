@@ -24,14 +24,14 @@ static bool8 DefinitionIsEmptyDefault(const struct ModPokemonDataDefinition *def
 
 static bool8 RuntimePokemonKeyExists(const char *key, const struct ModPokemonDataDefinition *pokemon, u16 count)
 {
-    u16 i;
+    u16 pokemon_definition_index;
 
     if (key == NULL || pokemon == NULL)
         return FALSE;
 
-    for (i = 0; i < count; i++)
+    for (pokemon_definition_index = 0; pokemon_definition_index < count; pokemon_definition_index++)
     {
-        if (pokemon[i].key != NULL && strcmp(pokemon[i].key, key) == 0)
+        if (pokemon[pokemon_definition_index].key != NULL && strcmp(pokemon[pokemon_definition_index].key, key) == 0)
             return TRUE;
     }
 
@@ -45,15 +45,15 @@ static const struct ModPokemonDataDefinition *FindBestDefinition(
     const struct ModPokemonDataDefinition *shadowingPokemon,
     u16 shadowingCount)
 {
-    const struct ModPokemonDataDefinition *best = NULL;
-    u16 i;
+    const struct ModPokemonDataDefinition *best_definition = NULL;
+    u16 pokemon_definition_index;
 
     if (pokemon == NULL)
         return NULL;
 
-    for (i = 0; i < count; i++)
+    for (pokemon_definition_index = 0; pokemon_definition_index < count; pokemon_definition_index++)
     {
-        const struct ModPokemonDataDefinition *definition = &pokemon[i];
+        const struct ModPokemonDataDefinition *definition = &pokemon[pokemon_definition_index];
 
         if (shadowingPokemon != NULL && RuntimePokemonKeyExists(definition->key, shadowingPokemon, shadowingCount))
             continue;
@@ -61,11 +61,11 @@ static const struct ModPokemonDataDefinition *FindBestDefinition(
             continue;
         if (definition->species != species)
             continue;
-        if (best == NULL || definition->priority < best->priority)
-            best = definition;
+        if (best_definition == NULL || definition->priority < best_definition->priority)
+            best_definition = definition;
     }
 
-    return best;
+    return best_definition;
 }
 
 static const struct ModPokemonDataDefinition *FindDefinition(u16 species)
@@ -85,74 +85,75 @@ static const struct ModPokemonDataDefinition *FindDefinition(u16 species)
     return FindBestDefinition(gModPokemonDataDefinitions, gModPokemonDataDefinitionCount, species, runtimePokemon, runtimeCount);
 }
 
-static void ApplyInfoOverride(struct SpeciesInfo *dest, const struct ModSpeciesInfoOverride *src, u16 flags)
+static void ApplyInfoOverride(struct SpeciesInfo *species_info_to_update, const struct ModSpeciesInfoOverride *species_info_override, u16 override_flags)
 {
-    if (flags & MOD_POKEMON_OVERRIDE_BASE_STATS)
+    if (override_flags & MOD_POKEMON_OVERRIDE_BASE_STATS)
     {
-        dest->baseHP = src->baseHP;
-        dest->baseAttack = src->baseAttack;
-        dest->baseDefense = src->baseDefense;
-        dest->baseSpeed = src->baseSpeed;
-        dest->baseSpAttack = src->baseSpAttack;
-        dest->baseSpDefense = src->baseSpDefense;
+        species_info_to_update->baseHP = species_info_override->baseHP;
+        species_info_to_update->baseAttack = species_info_override->baseAttack;
+        species_info_to_update->baseDefense = species_info_override->baseDefense;
+        species_info_to_update->baseSpeed = species_info_override->baseSpeed;
+        species_info_to_update->baseSpAttack = species_info_override->baseSpAttack;
+        species_info_to_update->baseSpDefense = species_info_override->baseSpDefense;
     }
-    if (flags & MOD_POKEMON_OVERRIDE_TYPES)
+    if (override_flags & MOD_POKEMON_OVERRIDE_TYPES)
     {
-        dest->types[0] = src->types[0];
-        dest->types[1] = src->types[1];
+        species_info_to_update->types[0] = species_info_override->types[0];
+        species_info_to_update->types[1] = species_info_override->types[1];
     }
-    if (flags & MOD_POKEMON_OVERRIDE_CATCH_RATE)
-        dest->catchRate = src->catchRate;
-    if (flags & MOD_POKEMON_OVERRIDE_EXP_YIELD)
-        dest->expYield = src->expYield;
-    if (flags & MOD_POKEMON_OVERRIDE_EV_YIELD)
+    if (override_flags & MOD_POKEMON_OVERRIDE_CATCH_RATE)
+        species_info_to_update->catchRate = species_info_override->catchRate;
+    if (override_flags & MOD_POKEMON_OVERRIDE_EXP_YIELD)
+        species_info_to_update->expYield = species_info_override->expYield;
+    if (override_flags & MOD_POKEMON_OVERRIDE_EV_YIELD)
     {
-        dest->evYield_HP = src->evYields[0];
-        dest->evYield_Attack = src->evYields[1];
-        dest->evYield_Defense = src->evYields[2];
-        dest->evYield_Speed = src->evYields[3];
-        dest->evYield_SpAttack = src->evYields[4];
-        dest->evYield_SpDefense = src->evYields[5];
+        species_info_to_update->evYield_HP = species_info_override->evYields[0];
+        species_info_to_update->evYield_Attack = species_info_override->evYields[1];
+        species_info_to_update->evYield_Defense = species_info_override->evYields[2];
+        species_info_to_update->evYield_Speed = species_info_override->evYields[3];
+        species_info_to_update->evYield_SpAttack = species_info_override->evYields[4];
+        species_info_to_update->evYield_SpDefense = species_info_override->evYields[5];
     }
-    if (flags & MOD_POKEMON_OVERRIDE_ITEMS)
+    if (override_flags & MOD_POKEMON_OVERRIDE_ITEMS)
     {
-        dest->itemCommon = src->itemCommon;
-        dest->itemRare = src->itemRare;
+        species_info_to_update->itemCommon = species_info_override->itemCommon;
+        species_info_to_update->itemRare = species_info_override->itemRare;
     }
-    if (flags & MOD_POKEMON_OVERRIDE_GENDER)
-        dest->genderRatio = src->genderRatio;
-    if (flags & MOD_POKEMON_OVERRIDE_EGG_CYCLES)
-        dest->eggCycles = src->eggCycles;
-    if (flags & MOD_POKEMON_OVERRIDE_FRIENDSHIP)
-        dest->friendship = src->friendship;
-    if (flags & MOD_POKEMON_OVERRIDE_GROWTH_RATE)
-        dest->growthRate = src->growthRate;
-    if (flags & MOD_POKEMON_OVERRIDE_EGG_GROUPS)
+    if (override_flags & MOD_POKEMON_OVERRIDE_GENDER)
+        species_info_to_update->genderRatio = species_info_override->genderRatio;
+    if (override_flags & MOD_POKEMON_OVERRIDE_EGG_CYCLES)
+        species_info_to_update->eggCycles = species_info_override->eggCycles;
+    if (override_flags & MOD_POKEMON_OVERRIDE_FRIENDSHIP)
+        species_info_to_update->friendship = species_info_override->friendship;
+    if (override_flags & MOD_POKEMON_OVERRIDE_GROWTH_RATE)
+        species_info_to_update->growthRate = species_info_override->growthRate;
+    if (override_flags & MOD_POKEMON_OVERRIDE_EGG_GROUPS)
     {
-        dest->eggGroups[0] = src->eggGroups[0];
-        dest->eggGroups[1] = src->eggGroups[1];
+        species_info_to_update->eggGroups[0] = species_info_override->eggGroups[0];
+        species_info_to_update->eggGroups[1] = species_info_override->eggGroups[1];
     }
-    if (flags & MOD_POKEMON_OVERRIDE_ABILITIES)
+    if (override_flags & MOD_POKEMON_OVERRIDE_ABILITIES)
     {
-        dest->abilities[0] = src->abilities[0];
-        dest->abilities[1] = src->abilities[1];
+        species_info_to_update->abilities[0] = species_info_override->abilities[0];
+        species_info_to_update->abilities[1] = species_info_override->abilities[1];
     }
-    if (flags & MOD_POKEMON_OVERRIDE_SAFARI_FLEE)
-        dest->safariZoneFleeRate = src->safariZoneFleeRate;
-    if (flags & MOD_POKEMON_OVERRIDE_BODY_COLOR)
+    if (override_flags & MOD_POKEMON_OVERRIDE_SAFARI_FLEE)
+        species_info_to_update->safariZoneFleeRate = species_info_override->safariZoneFleeRate;
+    if (override_flags & MOD_POKEMON_OVERRIDE_BODY_COLOR)
     {
-        dest->bodyColor = src->bodyColor;
-        dest->noFlip = src->noFlip;
+        species_info_to_update->bodyColor = species_info_override->bodyColor;
+        species_info_to_update->noFlip = species_info_override->noFlip;
     }
 }
 
-bool8 PokemonDataApi_IsDefinitionValid(const struct ModPokemonDataDefinition *definition, bool8 allowEmptyDefault)
+bool8 PokemonDataApi_IsDefinitionValid(const struct ModPokemonDataDefinition *definition, bool8 allow_empty_default)
 {
-    u8 i;
+    u8 level_up_move_index;
+    u8 evolution_index;
 
     if (definition == NULL)
         return FALSE;
-    if (allowEmptyDefault && DefinitionIsEmptyDefault(definition))
+    if (allow_empty_default && DefinitionIsEmptyDefault(definition))
         return TRUE;
     if (definition->key == NULL || definition->key[0] == '\0')
         return FALSE;
@@ -162,16 +163,16 @@ bool8 PokemonDataApi_IsDefinitionValid(const struct ModPokemonDataDefinition *de
         return FALSE;
     if (definition->evolutionCount > MOD_POKEMON_MAX_EVOLUTIONS)
         return FALSE;
-    for (i = 0; i < definition->levelUpMoveCount; i++)
+    for (level_up_move_index = 0; level_up_move_index < definition->levelUpMoveCount; level_up_move_index++)
     {
-        if (definition->levelUpMoves[i].level == 0 || definition->levelUpMoves[i].level > MAX_LEVEL)
+        if (definition->levelUpMoves[level_up_move_index].level == 0 || definition->levelUpMoves[level_up_move_index].level > MAX_LEVEL)
             return FALSE;
-        if (definition->levelUpMoves[i].move == MOVE_NONE || definition->levelUpMoves[i].move >= MOVES_COUNT)
+        if (definition->levelUpMoves[level_up_move_index].move == MOVE_NONE || definition->levelUpMoves[level_up_move_index].move >= MOVES_COUNT)
             return FALSE;
     }
-    for (i = 0; i < definition->evolutionCount; i++)
+    for (evolution_index = 0; evolution_index < definition->evolutionCount; evolution_index++)
     {
-        if (definition->evolutions[i].targetSpecies == SPECIES_NONE || definition->evolutions[i].targetSpecies >= NUM_SPECIES)
+        if (definition->evolutions[evolution_index].targetSpecies == SPECIES_NONE || definition->evolutions[evolution_index].targetSpecies >= NUM_SPECIES)
             return FALSE;
     }
     return TRUE;
@@ -196,15 +197,15 @@ const struct SpeciesInfo *PokemonDataApi_GetSpeciesInfo(u16 species)
 const u16 *PokemonDataApi_GetLevelUpLearnset(u16 species)
 {
     const struct ModPokemonDataDefinition *definition = FindDefinition(species);
-    u8 i;
+    u8 level_up_move_index;
 
     if (species >= NUM_SPECIES)
         species = SPECIES_NONE;
     if (definition == NULL || !(definition->flags & MOD_POKEMON_OVERRIDE_LEVEL_UP))
         return gLevelUpLearnsets[species];
 
-    for (i = 0; i < definition->levelUpMoveCount; i++)
-        sEffectiveLevelUpLearnset[i] = (definition->levelUpMoves[i].level << 9) | definition->levelUpMoves[i].move;
+    for (level_up_move_index = 0; level_up_move_index < definition->levelUpMoveCount; level_up_move_index++)
+        sEffectiveLevelUpLearnset[level_up_move_index] = (definition->levelUpMoves[level_up_move_index].level << 9) | definition->levelUpMoves[level_up_move_index].move;
     sEffectiveLevelUpLearnset[definition->levelUpMoveCount] = LEVEL_UP_END;
     return sEffectiveLevelUpLearnset;
 }
@@ -212,7 +213,7 @@ const u16 *PokemonDataApi_GetLevelUpLearnset(u16 species)
 const struct Evolution *PokemonDataApi_GetEvolutions(u16 species)
 {
     const struct ModPokemonDataDefinition *definition = FindDefinition(species);
-    u8 i;
+    u8 evolution_index;
 
     if (species >= NUM_SPECIES)
         species = SPECIES_NONE;
@@ -220,16 +221,16 @@ const struct Evolution *PokemonDataApi_GetEvolutions(u16 species)
         return gEvolutionTable[species];
 
     memset(sEffectiveEvolutions, 0, sizeof(sEffectiveEvolutions));
-    for (i = 0; i < definition->evolutionCount; i++)
-        sEffectiveEvolutions[i] = definition->evolutions[i];
+    for (evolution_index = 0; evolution_index < definition->evolutionCount; evolution_index++)
+        sEffectiveEvolutions[evolution_index] = definition->evolutions[evolution_index];
     return sEffectiveEvolutions;
 }
 
-u8 PokemonDataApi_GetAbilityBySpecies(u16 species, u8 abilityNum)
+u8 PokemonDataApi_GetAbilityBySpecies(u16 species, u8 ability_number)
 {
     const struct SpeciesInfo *info = PokemonDataApi_GetSpeciesInfo(species);
 
-    if (abilityNum != 0 && info->abilities[1] != 0)
+    if (ability_number != 0 && info->abilities[1] != 0)
         return info->abilities[1];
     return info->abilities[0];
 }

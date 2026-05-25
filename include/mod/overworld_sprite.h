@@ -27,10 +27,10 @@ struct ModFollowerSpriteDefinition
 };
 
 u8 OverworldSpriteApi_GetGraphicsId(const char *key);
-bool8 OverworldSpriteApi_SetObjectGraphics(u8 objectEventId, const char *key);
+bool8 OverworldSpriteApi_SetObjectGraphics(u8 object_event_id, const char *key);
 bool8 OverworldSpriteApi_SetPlayerOutfit(const char *key);
 u8 OverworldSpriteApi_GetFollowerSprite(u16 species, u8 form, bool8 shiny);
-u8 OverworldSpriteApi_CreateOrUpdateVirtualAvatar(const char *ownerKey, const char *spriteKey, s16 x, s16 y);
-void OverworldSpriteApi_DestroyVirtualAvatar(const char *ownerKey);
+u8 OverworldSpriteApi_CreateOrUpdateVirtualAvatar(const char *owner_key, const char *sprite_key, s16 x, s16 y);
+void OverworldSpriteApi_DestroyVirtualAvatar(const char *owner_key);
 
 #endif // GUARD_MOD_OVERWORLD_SPRITE_H

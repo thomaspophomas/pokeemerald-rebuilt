@@ -43,29 +43,29 @@ static bool8 sEngineModulesInitialized;
 
 static u8 GetEngineModuleCount(void)
 {
-    u8 count = 0;
+    u8 module_count = 0;
 
-    while (sEngineModules[count].id != NULL)
-        count++;
+    while (sEngineModules[module_count].module_id != NULL)
+        module_count++;
 
-    return count;
+    return module_count;
 }
 
 void EngineModules_Init(void)
 {
-    u8 i;
-    u8 count;
+    u8 module_index;
+    u8 module_count;
 
     if (sEngineModulesInitialized)
         return;
 
     EngineRuntimeState_Init();
 
-    count = GetEngineModuleCount();
-    for (i = 0; i < count; i++)
+    module_count = GetEngineModuleCount();
+    for (module_index = 0; module_index < module_count; module_index++)
     {
-        if (sEngineModules[i].init != NULL)
-            sEngineModules[i].init();
+        if (sEngineModules[module_index].init != NULL)
+            sEngineModules[module_index].init();
     }
 
     sEngineModulesInitialized = TRUE;
@@ -73,80 +73,80 @@ void EngineModules_Init(void)
 
 void EngineModules_RunFrame(void)
 {
-    u8 i;
-    u8 count;
+    u8 module_index;
+    u8 module_count;
 
     if (!sEngineModulesInitialized)
         return;
 
-    count = GetEngineModuleCount();
-    for (i = 0; i < count; i++)
+    module_count = GetEngineModuleCount();
+    for (module_index = 0; module_index < module_count; module_index++)
     {
-        if (sEngineModules[i].frame != NULL)
-            sEngineModules[i].frame();
+        if (sEngineModules[module_index].frame != NULL)
+            sEngineModules[module_index].frame();
     }
 }
 
 void EngineModules_OnMapLoad(void)
 {
-    u8 i;
-    u8 count;
+    u8 module_index;
+    u8 module_count;
 
     if (!sEngineModulesInitialized)
         return;
 
-    count = GetEngineModuleCount();
-    for (i = 0; i < count; i++)
+    module_count = GetEngineModuleCount();
+    for (module_index = 0; module_index < module_count; module_index++)
     {
-        if (sEngineModules[i].mapLoad != NULL)
-            sEngineModules[i].mapLoad();
+        if (sEngineModules[module_index].mapLoad != NULL)
+            sEngineModules[module_index].mapLoad();
     }
 }
 
-void EngineModules_OnPlayerStep(u8 direction, u16 newKeys, u16 heldKeys)
+void EngineModules_OnPlayerStep(u8 direction, u16 new_keys, u16 held_keys)
 {
-    u8 i;
-    u8 count;
+    u8 module_index;
+    u8 module_count;
 
     if (!sEngineModulesInitialized)
         return;
 
-    count = GetEngineModuleCount();
-    for (i = 0; i < count; i++)
+    module_count = GetEngineModuleCount();
+    for (module_index = 0; module_index < module_count; module_index++)
     {
-        if (sEngineModules[i].playerStep != NULL)
-            sEngineModules[i].playerStep(direction, newKeys, heldKeys);
+        if (sEngineModules[module_index].playerStep != NULL)
+            sEngineModules[module_index].playerStep(direction, new_keys, held_keys);
     }
 }
 
-void EngineModules_OnBattleStart(u32 battleTypeFlags)
+void EngineModules_OnBattleStart(u32 battle_type_flags)
 {
-    u8 i;
-    u8 count;
+    u8 module_index;
+    u8 module_count;
 
     if (!sEngineModulesInitialized)
         return;
 
-    count = GetEngineModuleCount();
-    for (i = 0; i < count; i++)
+    module_count = GetEngineModuleCount();
+    for (module_index = 0; module_index < module_count; module_index++)
     {
-        if (sEngineModules[i].battleStart != NULL)
-            sEngineModules[i].battleStart(battleTypeFlags);
+        if (sEngineModules[module_index].battleStart != NULL)
+            sEngineModules[module_index].battleStart(battle_type_flags);
     }
 }
 
-void EngineModules_OnBattleEnd(u32 battleOutcome)
+void EngineModules_OnBattleEnd(u32 battle_outcome)
 {
-    u8 i;
-    u8 count;
+    u8 module_index;
+    u8 module_count;
 
     if (!sEngineModulesInitialized)
         return;
 
-    count = GetEngineModuleCount();
-    for (i = 0; i < count; i++)
+    module_count = GetEngineModuleCount();
+    for (module_index = 0; module_index < module_count; module_index++)
     {
-        if (sEngineModules[i].battleEnd != NULL)
-            sEngineModules[i].battleEnd(battleOutcome);
+        if (sEngineModules[module_index].battleEnd != NULL)
+            sEngineModules[module_index].battleEnd(battle_outcome);
     }
 }

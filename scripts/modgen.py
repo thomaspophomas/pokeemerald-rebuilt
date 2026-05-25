@@ -2106,9 +2106,9 @@ def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, A
     for handler in weather_handlers:
         lines.append(f"extern bool8 {handler}(struct ModWeatherDisplay *display);")
     for hook in capture_hooks:
-        lines.append(f"extern u8 {hook}(const struct EngineRuleset *ruleset, u16 ballItemId);")
+        lines.append(f"extern u8 {hook}(const struct EngineRuleset *ruleset, u16 ball_item_id);")
     for hook in battle_weather_hooks:
-        lines.append(f"extern u32 {hook}(const struct EngineRuleset *ruleset, u16 weatherLayers);")
+        lines.append(f"extern u32 {hook}(const struct EngineRuleset *ruleset, u16 weather_layers);")
     for script in npc_scripts:
         lines.append(f"extern const u8 {script}[];")
     for symbol in sheet_symbols:
@@ -2132,7 +2132,7 @@ def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, A
     for hook in encounter_hooks:
         lines.append(f"extern u8 {hook}(const struct ModEncounterDefinition *definition, struct ModEncounterContext *context);")
     for hook in item_hooks:
-        lines.append(f"extern void {hook}(u8 taskId);")
+        lines.append(f"extern void {hook}(u8 task_id);")
     for hook in reward_hooks:
         lines.append(f"extern u8 {hook}(const struct ModRewardDefinition *definition, struct ModRewardContext *context);")
     if event_handlers or weather_handlers or capture_hooks or battle_weather_hooks or npc_scripts or sheet_symbols or compressed_sheet_symbols or palette_symbols or compressed_palette_symbols or template_symbols or pokeball_modifier_hooks or pokeball_commit_hooks or pokeball_scripts or fishing_hooks or encounter_hooks or item_hooks or reward_hooks:
@@ -2142,9 +2142,9 @@ def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, A
     lines.append("{")
     if mods:
         for mod in mods:
-            lines.append(f"    {{ {c_string(mod['id'])}, {c_string(mod['name'])}, {c_string(mod['version'])}, {mod['priority']}, {mod['features']} }},")
+            lines.append(f"    {{ .mod_id = {c_string(mod['id'])}, .name = {c_string(mod['name'])}, .version = {c_string(mod['version'])}, .priority = {mod['priority']}, .featureFlags = {mod['features']} }},")
     else:
-        lines.append("    { NULL, NULL, NULL, 0, 0 },")
+        lines.append("    { .mod_id = NULL, .name = NULL, .version = NULL, .priority = 0, .featureFlags = 0 },")
     lines.append("};")
     lines.append(f"const u16 gModManifestCount = {len(mods)};")
     lines.append("")
@@ -2153,9 +2153,9 @@ def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, A
     lines.append("{")
     if flags:
         for flag in flags:
-            lines.append(f"    {{ {c_string(flag['key'])}, {flag['id']}, {c_bool(flag['initial'])} }},")
+            lines.append(f"    {{ .key = {c_string(flag['key'])}, .mod_flag_id = {flag['id']}, .initialValue = {c_bool(flag['initial'])} }},")
     else:
-        lines.append("    { NULL, 0, FALSE },")
+        lines.append("    { .key = NULL, .mod_flag_id = 0, .initialValue = FALSE },")
     lines.append("};")
     lines.append(f"const u16 gModFlagDefinitionCount = {len(flags)};")
     lines.append("")
@@ -2175,9 +2175,9 @@ def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, A
     lines.append("{")
     if weather:
         for provider in weather:
-            lines.append(f"    {{ {c_string(provider['id'])}, {provider['priority']}, {provider['handler']} }},")
+            lines.append(f"    {{ .weather_provider_id = {c_string(provider['id'])}, .priority = {provider['priority']}, .resolve = {provider['handler']} }},")
     else:
-        lines.append("    { NULL, 0, NULL },")
+        lines.append("    { .weather_provider_id = NULL, .priority = 0, .resolve = NULL },")
     lines.append("};")
     lines.append(f"const u16 gModWeatherProviderCount = {len(weather)};")
     lines.append("")
@@ -2273,7 +2273,7 @@ def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, A
     lines.append("const struct EngineRuleset gModEngineRulesets[] =")
     lines.append("{")
     for engine in engines:
-        lines.append(f"    {{ {c_string(engine['id'])}, {c_string(engine['name'])}, {engine['version']}, {engine['flags']}, {engine['capture']}, {engine['battle_weather']} }},")
+        lines.append(f"    {{ .ruleset_id = {c_string(engine['id'])}, .name = {c_string(engine['name'])}, .version = {engine['version']}, .flags = {engine['flags']}, .getCaptureModifier = {engine['capture']}, .getBattleWeatherMask = {engine['battle_weather']} }},")
     lines.append("};")
     lines.append(f"const u16 gModEngineRulesetCount = {len(engines)};")
     lines.append("")
@@ -2282,9 +2282,9 @@ def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, A
     lines.append("{")
     if npcs:
         for npc in npcs:
-            lines.append(f"    {{ {c_string(npc['key'])}, {npc['id']}, {npc['graphics']}, {npc['movement']}, {npc['local']}, {npc['elevation']}, {npc['flag']}, {npc['script']} }},")
+            lines.append(f"    {{ .key = {c_string(npc['key'])}, .npc_definition_id = {npc['id']}, .graphicsId = {npc['graphics']}, .movementType = {npc['movement']}, .localId = {npc['local']}, .elevation = {npc['elevation']}, .flagId = {npc['flag']}, .script = {npc['script']} }},")
     else:
-        lines.append("    { NULL, 0, 0, 0, 0, 0, 0, NULL },")
+        lines.append("    { .key = NULL, .npc_definition_id = 0, .graphicsId = 0, .movementType = 0, .localId = 0, .elevation = 0, .flagId = 0, .script = NULL },")
     lines.append("};")
     lines.append(f"const u16 gModNpcDefinitionCount = {len(npcs)};")
     lines.append("")
@@ -2293,9 +2293,9 @@ def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, A
     lines.append("{")
     if maps:
         for map_def in maps:
-            lines.append(f"    {{ {c_string(map_def['key'])}, {map_def['id']}, {map_def['group']}, {map_def['num']}, {c_string(map_def['path'])} }},")
+            lines.append(f"    {{ .key = {c_string(map_def['key'])}, .map_id = {map_def['id']}, .mapGroup = {map_def['group']}, .mapNum = {map_def['num']}, .jsonPath = {c_string(map_def['path'])} }},")
     else:
-        lines.append("    { NULL, 0, 0, 0, NULL },")
+        lines.append("    { .key = NULL, .map_id = 0, .mapGroup = 0, .mapNum = 0, .jsonPath = NULL },")
     lines.append("};")
     lines.append(f"const u16 gModMapDefinitionCount = {len(maps)};")
     lines.append("")

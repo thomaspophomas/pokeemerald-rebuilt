@@ -36,7 +36,7 @@ struct PokeBallThrowResult
 };
 
 typedef u8 (*PokeBallCatchModifierFunc)(const struct PokeBallCatchContext *context);
-typedef void (*PokeBallCatchCommitFunc)(const struct PokeBallCatchContext *context, const struct PokeBallThrowResult *result);
+typedef void (*PokeBallCatchCommitFunc)(const struct PokeBallCatchContext *context, const struct PokeBallThrowResult *throw_result);
 
 struct ModPokeBallDefinition
 {
@@ -50,13 +50,13 @@ struct ModPokeBallDefinition
     PokeBallCatchCommitFunc commitHook;
 };
 
-bool8 PokeBallApi_IsBall(u16 itemId);
-const struct ModPokeBallDefinition *PokeBallApi_GetDefinition(u16 itemId);
+bool8 PokeBallApi_IsBall(u16 item_id);
+const struct ModPokeBallDefinition *PokeBallApi_GetDefinition(u16 item_id);
 u8 PokeBallApi_GetCatchModifier(const struct PokeBallCatchContext *context);
-bool8 PokeBallApi_CalculateThrowResult(const struct PokeBallCatchContext *context, struct PokeBallThrowResult *result);
-const u8 *PokeBallApi_GetBattleScript(u16 itemId);
-u8 PokeBallApi_GetBallSprite(u16 itemId);
-void PokeBallApi_OnCatchCommit(const struct PokeBallCatchContext *context, const struct PokeBallThrowResult *result);
-void PokeBallApi_BuildContextFromBattle(struct PokeBallCatchContext *context, u16 itemId, u8 targetBattler);
+bool8 PokeBallApi_CalculateThrowResult(const struct PokeBallCatchContext *context, struct PokeBallThrowResult *throw_result);
+const u8 *PokeBallApi_GetBattleScript(u16 item_id);
+u8 PokeBallApi_GetBallSprite(u16 item_id);
+void PokeBallApi_OnCatchCommit(const struct PokeBallCatchContext *context, const struct PokeBallThrowResult *throw_result);
+void PokeBallApi_BuildContextFromBattle(struct PokeBallCatchContext *context, u16 item_id, u8 target_battler);
 
 #endif // GUARD_MOD_POKEBALL_H

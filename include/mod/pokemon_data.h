@@ -70,10 +70,10 @@ struct ModPokemonDataDefinition
     struct Evolution evolutions[MOD_POKEMON_MAX_EVOLUTIONS];
 };
 
-bool8 PokemonDataApi_IsDefinitionValid(const struct ModPokemonDataDefinition *definition, bool8 allowEmptyDefault);
+bool8 PokemonDataApi_IsDefinitionValid(const struct ModPokemonDataDefinition *definition, bool8 allow_empty_default);
 const struct SpeciesInfo *PokemonDataApi_GetSpeciesInfo(u16 species);
 const u16 *PokemonDataApi_GetLevelUpLearnset(u16 species);
 const struct Evolution *PokemonDataApi_GetEvolutions(u16 species);
-u8 PokemonDataApi_GetAbilityBySpecies(u16 species, u8 abilityNum);
+u8 PokemonDataApi_GetAbilityBySpecies(u16 species, u8 ability_number);
 
 #endif // GUARD_MOD_POKEMON_DATA_H

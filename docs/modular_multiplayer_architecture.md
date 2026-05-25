@@ -1,6 +1,6 @@
 # Modular Multiplayer Architecture
 
-<!-- last_updated: 2026-05-17 -->
+<!-- last_updated: 2026-05-24 -->
 
 This project is moving toward a mod-first architecture. The goal is not to
 preserve vanilla compare behavior at all costs, but to keep new systems
@@ -16,9 +16,12 @@ known limits, start with [README.md](../README.md#current-status).
 
 - Compile-time features live in `include/config/features.h`.
 - Make can override important gates, for example:
+  - `make modern FEATURE_MODS=1`
   - `make FEATURE_MULTIPLAYER=1`
   - `make FEATURE_MULTIPLAYER=1 FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT=1`
   - `make FEATURE_MULTIPLAYER=1 FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT=1 FEATURE_MULTIPLAYER_AUTOCONNECT=1`
+- `FEATURE_MODS=0` is the default. The base game and multiplayer scaffolding
+  must build without scanning or linking drop-in mods.
 - Engine rules that can destabilize a running save, such as generation rule
   sets, should remain compile-time.
 - Save-friendly systems, such as weather layers, following Pokemon, story
@@ -50,9 +53,10 @@ globals through feature code. Prefer a port/adapter layer for:
 
 ## Mod API Layer
 
-The mod-facing API layer lives under `include/mod` and `src/mod`. It is the
-new default boundary for systems that should be extended by adding files rather
-than editing central code.
+The mod-facing API layer lives under `include/mod` and `src/mod`. It is SDK and
+runtime adapter code, not the home for concrete gameplay mods. Drop-in gameplay
+changes belong under `mods/<modId>` so a no-mod build can remain the base game
+plus optional multiplayer.
 
 `scripts/modgen.py` scans `mods/<modId>/mod.json` plus domain folders for:
 
@@ -65,10 +69,14 @@ than editing central code.
 - map definitions
 - mod C sources
 
-The generator emits `include/generated/mod_registry.h`,
+With `FEATURE_MODS=1`, the generator emits `include/generated/mod_registry.h`,
 `src/generated/mod_registry.c`, and `build/generated/mod_sources.mk`. These are
-build outputs. They provide deterministic generated registries while keeping an
-empty-mod build equivalent to vanilla.
+build outputs. With `FEATURE_MODS=0`, generation is skipped and vanilla-safe
+stubs satisfy the `ModApi_*` and domain entrypoints that legacy code can call.
+Generated C uses designated initializers for beginner-facing IDs, for example
+`.mod_id`, `.mod_flag_id`, `.weather_provider_id`, `.ruleset_id`,
+`.npc_definition_id`, and `.map_id`; JSON remains the authoring format and keeps
+the short `"id"` key.
 
 Current ports:
 
@@ -134,27 +142,39 @@ ringbuffer. Packet sequence `0`, stale sequences, unknown packet types,
 oversized payloads, mismatched session IDs, and mismatched session epochs are
 dropped before they reach session state.
 
+Overworld snapshots are intentionally kept small: remote-avatar state remains in
+the latest-wins mailbox lane, while party/battle profile data is published as
+`NET_PACKET_PLAYER_BATTLE_PROFILE` on the bounded reliable lane. That keeps the
+EWRAM mailbox compact without changing the drop-in mod insertion structure.
+
 Every online bridge session must expose `transportMode=server_bridge`,
 `sessionEpoch`, `playerToken`, `joinNonce`, `serverClockSeconds`,
 `protocolVersion`, `bridgeVersion`, `buildId`, `rulesetHash`, `featureFlags`,
 `profileProtocolVersion`, `profileCapabilityFlags`, and
-`profileCapabilityHash`, plus generated mod catalog schema/hash/count. The
+`profileCapabilityHash`, plus generated mod catalog schema/hash/count when mods
+are enabled. The
 tracked manifest in `docs/multiplayer_net_manifest.json` is the base artifact
 contract that the future server should allowlist. The emulator-side bridge must resolve
 `gNetEmulatorBridgeMailbox` from symbols and write that EWRAM mailbox; fixed
 pseudo-addresses such as `0x10000000` are not part of the ROM contract.
 
-Multiplayer mods are server-authoritative through a bounded runtime profile.
-The ROM uses its compiled generated mod registry when offline. After joining an
-online server, the server can send one room-specific delta profile over
-reliable profile packets; supported mod APIs then prefer server-provided text,
-weather, engine ruleset ID, NPCs, sprite assets, and badge effect definitions
-while falling back to the compiled registry for missing keys. If the server does
-not know the ROM catalog hash from `ClientHello`, it can request the compact
-generated catalog and cache it by hash, then omit entries the ROM already has.
-`rulesetHash` stays a base engine/protocol compatibility value rather than a
-modpack selector. Runtime profiles do not allow arbitrary code, new maps,
-audio, scripts, save-schema changes, or unbounded asset packs.
+When `FEATURE_MODS=1`, multiplayer mods are server-authoritative through a
+bounded runtime profile. The ROM uses its compiled generated mod registry when
+offline. After joining an online server, the server can send one room-specific
+delta profile over reliable profile packets; supported mod APIs then prefer
+server-provided text, weather, engine ruleset ID, NPCs, sprite assets, and badge
+effect definitions while falling back to the compiled registry for missing keys.
+If the server does not know the ROM catalog hash from `ClientHello`, it can
+request the compact generated catalog and cache it by hash, then omit entries
+the ROM already has. With `FEATURE_MODS=0`, the profile/catalog facade reports
+zero capabilities and zero catalog entries. `rulesetHash` stays a base
+engine/protocol compatibility value rather than a modpack selector. Runtime
+profiles do not allow arbitrary code, new maps, audio, scripts, save-schema
+changes, or unbounded asset packs.
+
+`src/multiplayer` must not include `generated/mod_registry.h` or
+`mod/runtime_profile.h` directly. It uses `engine/extension_profile` so the
+base multiplayer build does not depend on generated mod artifacts.
 
 Client data is always a request, never authority. The ROM sends
 `ClientHello`, `Heartbeat`, `LocalSnapshot`, `MoveIntent`, `InteractIntent`,
@@ -184,9 +204,11 @@ RTC, and run mismatched ROM/core builds. The hardening rules are:
   actions use `NET_RELIABLE_QUEUE_SIZE` ringbuffer slots instead of overwriting
   a prior action packet.
 - Reliable packet payloads are capped at `NET_TRANSPORT_PACKET_PAYLOAD_SIZE`
-  (`128`) so the mailbox fits inside the current EWRAM budget.
-- Snapshots carry `clientFrame`, `serverTickSeen`, `sequence`, and
-  `sessionEpoch`; future frames, frame regressions, and stale sequences cause
+  (`96`) and stored behind a compact `NET_TRANSPORT_PACKET_HEADER_SIZE` (`22`)
+  mailbox header so the mailbox fits inside the current EWRAM budget.
+- Hot overworld snapshots carry `serverTickSeen`, `sequence`, and
+  `sessionEpoch`; client identity and frame counters stay in hello/heartbeat
+  and intent packets. Future ticks, stale sequences, and old epochs cause
   drop/resync paths.
 - Heartbeat cadence is 500 ms. Players become stale after 2 seconds and
   disconnected after 10 seconds; stale players are hidden/non-interactive.

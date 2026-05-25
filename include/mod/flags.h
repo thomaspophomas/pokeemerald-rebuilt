@@ -11,16 +11,16 @@
 struct ModFlagDefinition
 {
     const char *key;
-    u16 id;
+    u16 mod_flag_id;
     bool8 initialValue;
 };
 
 void ModFlag_Init(void);
 u16 ModFlag_GetByName(const char *key);
-bool8 ModFlag_Get(u16 id);
-bool8 ModFlag_Set(u16 id);
-bool8 ModFlag_Clear(u16 id);
-bool8 ModFlag_SetLogged(u16 id, const char *reason);
-bool8 ModFlag_ClearLogged(u16 id, const char *reason);
+bool8 ModFlag_Get(u16 mod_flag_id);
+bool8 ModFlag_Set(u16 mod_flag_id);
+bool8 ModFlag_Clear(u16 mod_flag_id);
+bool8 ModFlag_SetLogged(u16 mod_flag_id, const char *reason);
+bool8 ModFlag_ClearLogged(u16 mod_flag_id, const char *reason);
 
 #endif // GUARD_MOD_FLAGS_H

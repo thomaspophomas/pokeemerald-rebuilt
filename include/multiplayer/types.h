@@ -102,7 +102,7 @@ struct MultiplayerCommitLogEntry
 {
     bool8 active;
     u8 state;
-    u8 result;
+    u8 result_code;
     u8 commitType;
     struct MultiplayerTransactionKey key;
     u32 serverRevision;
@@ -129,15 +129,17 @@ struct NetPlayerSnapshot
     u16 graphicsRevision;
     u16 flags;
     u32 tick;
-    u32 clientFrame;
     u32 serverTickSeen;
     u32 sequence;
     u32 sessionEpoch;
-    u32 playerToken;
-    u32 joinNonce;
     u16 staleFrames;
     u8 anomalyScore;
-    u8 trustFlags;
+};
+
+STATIC_ASSERT(sizeof(struct NetPlayerSnapshot) <= 40, NetPlayerSnapshotHotPathSize);
+
+struct NetPlayerBattleProfile
+{
     u8 trainerGender;
     u8 partyCount;
     u8 partyLevels[NET_PLAYER_PARTY_SNAPSHOT_SIZE];
@@ -152,7 +154,7 @@ struct NetPlayerSnapshot
 struct MultiplayerSubsession
 {
     bool8 active;
-    u8 id;
+    u8 subsession_id;
     u8 type;
     u8 state;
     u8 hostPlayerId;
@@ -189,12 +191,15 @@ struct MultiplayerSession
     u32 serverClockSeconds;
     u32 localClientFrame;
     u32 localSnapshotSequence;
+    u32 localSnapshotHotHash;
     u32 localActionSequence;
+    u16 localProfilePublishTimer;
     u8 transportMode;
     u8 anomalyScore;
     u8 healthState;
     u8 reserved;
     struct NetPlayerSnapshot players[MAX_NET_PLAYERS];
+    struct NetPlayerBattleProfile playerProfiles[MAX_NET_PLAYERS];
     struct MultiplayerSubsession subsessions[MAX_NET_SUBSESSIONS];
     struct MultiplayerInteractionBarrier interactionBarrier;
 };

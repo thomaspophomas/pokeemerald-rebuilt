@@ -30,13 +30,13 @@ static bool8 QueueIsFull(u8 head, u8 tail)
     return NextQueueIndex(head) == tail;
 }
 
-static bool8 QueueFrame(u8 frameType, const void *payload, u16 payloadSize)
+static bool8 QueueFrame(u8 frame_type, const void *frame_payload, u16 frame_payload_size)
 {
     struct NetLinkGatewayFrame *frame;
 
-    if (payloadSize > NET_LINK_GATEWAY_FRAME_PAYLOAD_SIZE)
+    if (frame_payload_size > NET_LINK_GATEWAY_FRAME_PAYLOAD_SIZE)
         return FALSE;
-    if (payloadSize != 0 && payload == NULL)
+    if (frame_payload_size != 0 && frame_payload == NULL)
         return FALSE;
     if (QueueIsFull(sTxHead, sTxTail))
         return FALSE;
@@ -45,24 +45,24 @@ static bool8 QueueFrame(u8 frameType, const void *payload, u16 payloadSize)
     memset(frame, 0, sizeof(*frame));
     frame->magic = NET_LINK_GATEWAY_FRAME_MAGIC;
     frame->version = NET_LINK_GATEWAY_FRAME_VERSION;
-    frame->frameType = frameType;
-    frame->payloadSize = payloadSize;
+    frame->frameType = frame_type;
+    frame->payloadSize = frame_payload_size;
     sNextFrameSequence++;
     if (sNextFrameSequence == 0)
         sNextFrameSequence++;
     frame->sequence = sNextFrameSequence;
-    if (payloadSize != 0)
-        memcpy(frame->payload, payload, payloadSize);
+    if (frame_payload_size != 0)
+        memcpy(frame->payload, frame_payload, frame_payload_size);
     sTxHead = NextQueueIndex(sTxHead);
     return TRUE;
 }
 
-static bool8 QueueInboundSlot(const struct NetTransportPacketSlot *slot)
+static bool8 QueueInboundPacketSlot(const struct NetTransportPacketSlot *packet_slot_from_gateway)
 {
     if (QueueIsFull(sInboundHead, sInboundTail))
         return FALSE;
 
-    sInboundSlots[sInboundHead] = *slot;
+    sInboundSlots[sInboundHead] = *packet_slot_from_gateway;
     sInboundHead = NextQueueIndex(sInboundHead);
     return TRUE;
 }
@@ -96,7 +96,7 @@ static bool8 SessionHeaderIsValid(const struct NetLinkGatewaySessionHeader *head
     return TRUE;
 }
 
-static bool8 PacketEnvelopeIsValid(const struct NetPacketEnvelope *envelope, u16 capacity)
+static bool8 PacketEnvelopeIsValid(const struct NetPacketEnvelope *envelope, u16 payload_capacity)
 {
     if (envelope == NULL)
         return FALSE;
@@ -116,10 +116,52 @@ static bool8 PacketEnvelopeIsValid(const struct NetPacketEnvelope *envelope, u16
         return FALSE;
     if (envelope->sequence == 0)
         return FALSE;
-    if (envelope->payloadSize > capacity || envelope->payloadSize > NET_TRANSPORT_PACKET_PAYLOAD_SIZE)
+    if (envelope->payloadSize > payload_capacity || envelope->payloadSize > NET_TRANSPORT_PACKET_PAYLOAD_SIZE)
         return FALSE;
 
     return TRUE;
+}
+
+static bool8 OutboundPacketCanBeSent(u8 packet_type, const void *packet_payload, u16 packet_payload_size)
+{
+    if (!NetTransport_IsConnected())
+        return FALSE;
+    if (packet_type == NET_PACKET_NONE || packet_type >= NET_PACKET_COUNT)
+        return FALSE;
+    if (packet_payload_size > NET_TRANSPORT_PACKET_PAYLOAD_SIZE)
+        return FALSE;
+    if (packet_payload_size != 0 && packet_payload == NULL)
+        return FALSE;
+
+    return TRUE;
+}
+
+static u32 NextOutboundSequence(void)
+{
+    sOutboundSequence++;
+    if (sOutboundSequence == 0)
+        sOutboundSequence++;
+
+    return sOutboundSequence;
+}
+
+static void InitOutboundEnvelope(struct NetPacketEnvelope *envelope, u8 packet_type, u16 packet_payload_size)
+{
+    NetProtocol_InitEnvelopeWithEpoch(envelope, packet_type, sView.localPlayerId, sView.sessionId, sView.sessionEpoch, sView.bridgeTick, packet_payload_size);
+    envelope->sequence = NextOutboundSequence();
+}
+
+static void FinishOutboundEnvelope(struct NetPacketEnvelope *envelope, const void *packet_payload)
+{
+    envelope->checksum = NetProtocol_CalcChecksum(packet_payload, envelope->payloadSize);
+}
+
+static void BuildOutboundPacketSlot(struct NetTransportPacketSlot *packet_slot_for_client, const struct NetPacketEnvelope *envelope, const void *packet_payload)
+{
+    memset(packet_slot_for_client, 0, sizeof(*packet_slot_for_client));
+    if (envelope->payloadSize != 0)
+        memcpy(packet_slot_for_client->payload, packet_payload, envelope->payloadSize);
+    NetTransport_CopyEnvelopeToPacketHeader(&packet_slot_for_client->header, envelope);
 }
 
 static void EnsureLinkOpen(void)
@@ -219,12 +261,12 @@ static void ApplySubsession(const struct NetLinkGatewayFrame *frame)
 
 static void ApplyPacketSlot(const struct NetLinkGatewayFrame *frame)
 {
-    struct NetTransportPacketSlot slot;
+    struct NetTransportPacketSlot packet_slot_from_gateway;
 
-    if (frame->payloadSize != sizeof(slot))
+    if (frame->payloadSize != sizeof(packet_slot_from_gateway))
         return;
-    memcpy(&slot, frame->payload, sizeof(slot));
-    QueueInboundSlot(&slot);
+    memcpy(&packet_slot_from_gateway, frame->payload, sizeof(packet_slot_from_gateway));
+    QueueInboundPacketSlot(&packet_slot_from_gateway);
 }
 
 static void ProcessFrame(const struct NetLinkGatewayFrame *frame)
@@ -254,7 +296,7 @@ static void ProcessFrame(const struct NetLinkGatewayFrame *frame)
 
 static void ProcessReceivedFrames(void)
 {
-    u8 i;
+    u8 remote_link_player_id;
     u8 status;
     u8 localId;
 
@@ -263,15 +305,15 @@ static void ProcessReceivedFrames(void)
 
     localId = GetMultiplayerId();
     status = GetBlockReceivedStatus();
-    for (i = 0; i < MAX_LINK_PLAYERS; i++)
+    for (remote_link_player_id = 0; remote_link_player_id < MAX_LINK_PLAYERS; remote_link_player_id++)
     {
-        if (i == localId)
+        if (remote_link_player_id == localId)
             continue;
-        if (((status >> i) & 1) == 0)
+        if (((status >> remote_link_player_id) & 1) == 0)
             continue;
 
-        ProcessFrame((const struct NetLinkGatewayFrame *)gBlockRecvBuffer[i]);
-        ResetBlockReceivedFlag(i);
+        ProcessFrame((const struct NetLinkGatewayFrame *)gBlockRecvBuffer[remote_link_player_id]);
+        ResetBlockReceivedFlag(remote_link_player_id);
     }
 }
 
@@ -341,9 +383,7 @@ bool8 NetTransport_WriteLocalSnapshot(const struct NetPlayerSnapshot *snapshot)
         return FALSE;
     if (snapshot->playerId != sView.localPlayerId)
         return FALSE;
-    if (snapshot->sessionEpoch != sView.sessionEpoch
-        || snapshot->playerToken != sView.playerToken
-        || snapshot->joinNonce != sView.joinNonce)
+    if (snapshot->sessionEpoch != sView.sessionEpoch)
         return FALSE;
 
     if (QueueFrame(NET_LINK_FRAME_CLIENT_PLAYER_SNAPSHOT, snapshot, sizeof(*snapshot)))
@@ -355,65 +395,54 @@ bool8 NetTransport_WriteLocalSnapshot(const struct NetPlayerSnapshot *snapshot)
     return FALSE;
 }
 
-bool8 NetTransport_SendPacket(u8 packetType, const void *payload, u16 payloadSize)
+bool8 NetTransport_SendPacket(u8 packet_type, const void *packet_payload, u16 packet_payload_size)
 {
-    struct NetTransportPacketSlot slot;
+    struct NetPacketEnvelope envelope;
+    struct NetTransportPacketSlot packet_slot_for_client;
 
-    if (!NetTransport_IsConnected())
+    if (!OutboundPacketCanBeSent(packet_type, packet_payload, packet_payload_size))
         return FALSE;
+
     SyncTransportSessionIdentity(sView.sessionId, sView.sessionEpoch);
-    if (packetType == NET_PACKET_NONE || packetType >= NET_PACKET_COUNT)
-        return FALSE;
-    if (payloadSize > NET_TRANSPORT_PACKET_PAYLOAD_SIZE)
-        return FALSE;
-    if (payloadSize != 0 && payload == NULL)
-        return FALSE;
+    InitOutboundEnvelope(&envelope, packet_type, packet_payload_size);
+    FinishOutboundEnvelope(&envelope, packet_payload);
+    BuildOutboundPacketSlot(&packet_slot_for_client, &envelope, packet_payload);
 
-    memset(&slot, 0, sizeof(slot));
-    sOutboundSequence++;
-    if (sOutboundSequence == 0)
-        sOutboundSequence++;
-    NetProtocol_InitEnvelopeWithEpoch(&slot.envelope, packetType, sView.localPlayerId, sView.sessionId, sView.sessionEpoch, sView.bridgeTick, payloadSize);
-    slot.envelope.sequence = sOutboundSequence;
-    slot.envelope.checksum = NetProtocol_CalcChecksum(payload, payloadSize);
-    if (payloadSize != 0)
-        memcpy(slot.payload, payload, payloadSize);
-
-    return QueueFrame(NET_LINK_FRAME_CLIENT_PACKET_SLOT, &slot, sizeof(slot));
+    return QueueFrame(NET_LINK_FRAME_CLIENT_PACKET_SLOT, &packet_slot_for_client, sizeof(packet_slot_for_client));
 }
 
-bool8 NetTransport_SendUnreliablePacket(u8 packetType, const void *payload, u16 payloadSize)
+bool8 NetTransport_SendUnreliablePacket(u8 packet_type, const void *packet_payload, u16 packet_payload_size)
 {
-    return NetTransport_SendPacket(packetType, payload, payloadSize);
+    return NetTransport_SendPacket(packet_type, packet_payload, packet_payload_size);
 }
 
-bool8 NetTransport_ReceivePacket(struct NetPacketEnvelope *envelope, void *payload, u16 capacity, u16 *payloadSize)
+bool8 NetTransport_ReceivePacket(struct NetPacketEnvelope *envelope, void *packet_payload, u16 payload_capacity, u16 *received_payload_size)
 {
-    struct NetTransportPacketSlot slot;
+    struct NetTransportPacketSlot packet_slot_from_gateway;
 
-    if (envelope == NULL || payloadSize == NULL)
+    if (envelope == NULL || received_payload_size == NULL)
         return FALSE;
     if (!NetTransport_IsConnected())
         return FALSE;
     if (sInboundTail == sInboundHead)
         return FALSE;
 
-    slot = sInboundSlots[sInboundTail];
+    packet_slot_from_gateway = sInboundSlots[sInboundTail];
     sInboundTail = NextQueueIndex(sInboundTail);
-    *envelope = slot.envelope;
-    if (!PacketEnvelopeIsValid(envelope, capacity))
+    NetTransport_CopyPacketHeaderToEnvelope(envelope, &packet_slot_from_gateway.header);
+    if (!PacketEnvelopeIsValid(envelope, payload_capacity))
         return FALSE;
-    if (envelope->payloadSize != 0 && payload == NULL)
+    if (envelope->payloadSize != 0 && packet_payload == NULL)
         return FALSE;
     if (envelope->sequence <= sLastInboundSequence)
         return FALSE;
     if (envelope->payloadSize != 0)
-        memcpy(payload, slot.payload, envelope->payloadSize);
-    if (envelope->checksum != NetProtocol_CalcChecksum(payload, envelope->payloadSize))
+        memcpy(packet_payload, packet_slot_from_gateway.payload, envelope->payloadSize);
+    if (envelope->checksum != NetProtocol_CalcChecksum(packet_payload, envelope->payloadSize))
         return FALSE;
 
     sLastInboundSequence = envelope->sequence;
-    *payloadSize = envelope->payloadSize;
+    *received_payload_size = envelope->payloadSize;
     return TRUE;
 }
 

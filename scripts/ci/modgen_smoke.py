@@ -230,7 +230,18 @@ def main() -> int:
         )
         write_json(
             mod_root / "engines" / "rulesets.json",
-            {"engines": [{"id": "demo_engine", "name": "Demo Engine", "version": 1, "saveCompatible": True}]},
+            {
+                "engines": [
+                    {
+                        "id": "demo_engine",
+                        "name": "Demo Engine",
+                        "version": 1,
+                        "saveCompatible": True,
+                        "captureHook": "Demo_EngineCapture",
+                        "battleWeatherHook": "Demo_BattleWeather",
+                    }
+                ]
+            },
         )
         write_json(
             mod_root / "npcs" / "npcs.json",
@@ -263,6 +274,14 @@ def main() -> int:
 
         required = [
             "gModFlagDefinitionCount = 1",
+            ".mod_id = \"demo\"",
+            ".mod_flag_id =",
+            ".weather_provider_id = \"demo:dark_rain\"",
+            ".ruleset_id = \"demo:demo_engine\"",
+            ".npc_definition_id =",
+            ".map_id =",
+            "Demo_EngineCapture(const struct EngineRuleset *ruleset, u16 ball_item_id)",
+            "Demo_BattleWeather(const struct EngineRuleset *ruleset, u16 weather_layers)",
             "Demo_OnFlagChanged",
             "Demo_Weather",
             "demo:deep_night",

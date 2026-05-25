@@ -13,6 +13,24 @@ fail_if_found() {
     fi
 }
 
+if grep -R -n "\\<slot\\>" src/mod src/engine src/multiplayer include/mod include/engine include/multiplayer 2>/dev/null >/tmp/architecture_guard_matches.txt; then
+    echo "Beginner-facing mod/multiplayer code must use context-specific names instead of bare 'slot'." >&2
+    cat /tmp/architecture_guard_matches.txt >&2
+    exit 1
+fi
+
+if grep -R -n -E "^[[:space:]]*(u8|u16|u32|s32)[[:space:]]+[ij];|for[[:space:]]*\\((i|j)[[:space:]]*=" src/mod src/engine src/multiplayer 2>/dev/null >/tmp/architecture_guard_matches.txt; then
+    echo "Beginner-facing mod/multiplayer code must use descriptive iterator names instead of bare i/j." >&2
+    cat /tmp/architecture_guard_matches.txt >&2
+    exit 1
+fi
+
+if grep -R -n -E "\\<(src|dst|dest|temp|partyId|packet|result|id)\\>" src/mod src/engine src/multiplayer include/mod include/engine include/multiplayer 2>/dev/null >/tmp/architecture_guard_matches.txt; then
+    echo "Beginner-facing mod/multiplayer code must use domain-specific names instead of bare src/dst/dest/temp/packet/result/id." >&2
+    cat /tmp/architecture_guard_matches.txt >&2
+    exit 1
+fi
+
 fail_if_found "ReadConnectedByte" \
     "Do not couple multiplayer modules to legacy link byte checks." \
     src/multiplayer include/multiplayer
@@ -55,8 +73,8 @@ if ! grep -n '#define NET_PROTOCOL_VERSION 2' include/multiplayer/constants.h >/
     exit 1
 fi
 
-if ! grep -n '#define NET_EMULATOR_BRIDGE_VERSION 5' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
-    echo "Multiplayer bridge must retain reliable-queue version 5 semantics." >&2
+if ! grep -n '#define NET_EMULATOR_BRIDGE_VERSION 10' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer bridge must retain compact hot-snapshot version 10 semantics." >&2
     exit 1
 fi
 
@@ -65,18 +83,78 @@ if ! grep -n '#define NET_TRANSPORT_MODE_SERVER_BRIDGE 1' include/multiplayer/co
     exit 1
 fi
 
-if ! grep -n '#define NET_COMMIT_LOG_SIZE 32' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
-    echo "Multiplayer commit log must retain enough slots for idempotent retries." >&2
+if ! grep -n '#define NET_COMMIT_LOG_SIZE 16' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer commit log must retain a bounded retry cache within the EWRAM budget." >&2
     exit 1
 fi
 
-if ! grep -n '#define NET_RELIABLE_QUEUE_SIZE 16' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+if ! grep -n '#define NET_RELIABLE_QUEUE_SIZE 8' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
     echo "Multiplayer reliable action lane must retain a bounded ring buffer." >&2
     exit 1
 fi
 
-if ! grep -n '#define NET_TRANSPORT_PACKET_PAYLOAD_SIZE 128' include/multiplayer/transport.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+if ! grep -n '#define NET_EMULATOR_MAILBOX_MAX_SIZE 4096' include/multiplayer/bridge_mailbox.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Emulator bridge mailbox must stay within the compact 4 KiB EWRAM budget." >&2
+    exit 1
+fi
+
+if ! grep -n '#define NET_TRANSPORT_PACKET_PAYLOAD_SIZE 96' include/multiplayer/transport.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
     echo "Multiplayer packet payload size must stay within the EWRAM mailbox budget." >&2
+    exit 1
+fi
+
+if ! grep -n '#define NET_TRANSPORT_PACKET_HEADER_SIZE 22' include/multiplayer/transport.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer packet slots must retain the compact mailbox header." >&2
+    exit 1
+fi
+
+if awk '
+    /^struct NetTransportPacketSlot$/ { inside = 1 }
+    inside && /NetPacketEnvelope/ { found = 1 }
+    inside && /^}.*;/ { inside = 0 }
+    END { exit found ? 0 : 1 }
+' include/multiplayer/transport.h; then
+    echo "Mailbox packet slots must not store full NetPacketEnvelope headers." >&2
+    exit 1
+fi
+
+if ! grep -n '#define NET_PROFILE_CHUNK_DATA_SIZE 80' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Server runtime-profile chunks must remain small enough for the compact packet payload." >&2
+    exit 1
+fi
+
+if ! grep -n '#define NET_CATALOG_CHUNK_ENTRY_COUNT 7' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Client mod-catalog chunks must remain small enough for the compact packet payload." >&2
+    exit 1
+fi
+
+if ! grep -n '#define NET_PLAYER_SNAPSHOT_IDLE_REPUBLISH_FRAMES 15' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Idle overworld snapshots must stay paced so unchanged avatars do not write the mailbox every frame." >&2
+    exit 1
+fi
+
+if ! grep -n "NET_PACKET_PLAYER_BATTLE_PROFILE" include/multiplayer/protocol.h src/multiplayer/session.c >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer party/battle profiles must use the reliable packet lane, not the overworld snapshot lane." >&2
+    exit 1
+fi
+
+if awk '
+    /^[[:space:]]*struct NetPlayerSnapshot[[:space:]]*$/ { inside = 1 }
+    inside && /trainerGender|partyCount|partySpecies|partyMoves|playerName/ { found = 1 }
+    inside && /^[[:space:]]*};/ { inside = 0 }
+    END { exit found ? 0 : 1 }
+' include/multiplayer/types.h; then
+    echo "NetPlayerSnapshot must remain overworld-only; party/battle profile fields belong in NetPlayerBattleProfile." >&2
+    exit 1
+fi
+
+if awk '
+    /^[[:space:]]*struct NetPlayerSnapshot[[:space:]]*$/ { inside = 1 }
+    inside && /clientFrame|playerToken|joinNonce|trustFlags/ { found = 1 }
+    inside && /^[[:space:]]*};/ { inside = 0 }
+    END { exit found ? 0 : 1 }
+' include/multiplayer/types.h; then
+    echo "NetPlayerSnapshot must stay hot-path only; client identity belongs in hello/heartbeat/session state." >&2
     exit 1
 fi
 
@@ -93,6 +171,40 @@ fi
 if grep -R -n "NET_PACKET_[A-Z0-9_]*MOD\\|MODPACK_NEGOTIATION\\|MOD_NEGOTIATION" include/multiplayer src/multiplayer 2>/dev/null >/tmp/architecture_guard_matches.txt; then
     echo "Online mods must use the bounded server runtime-profile lane, not ad-hoc mod negotiation packets." >&2
     cat /tmp/architecture_guard_matches.txt >&2
+    exit 1
+fi
+
+fail_if_found "generated/mod_registry.h\\|mod/runtime_profile.h" \
+    "Multiplayer modules must use engine/extension_profile instead of depending on generated mod registries or mod runtime internals." \
+    src/multiplayer include/multiplayer
+
+if ! grep -n "engine/extension_profile.h" src/multiplayer/session.c >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer session must consume runtime-profile/catalog state through engine/extension_profile." >&2
+    exit 1
+fi
+
+if ! grep -n "EngineExtensionProfile_GetCapabilityHash" include/engine/extension_profile.h src/engine/extension_profile.c >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Engine extension-profile facade must expose multiplayer-safe catalog/profile metadata." >&2
+    exit 1
+fi
+
+if ! grep -n 'FEATURE_MODS ?= 0' Makefile >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "FEATURE_MODS must default off so the base game plus multiplayer builds without drop-in mods." >&2
+    exit 1
+fi
+
+if ! awk '
+    /^ifeq \(\$\(FEATURE_MODS\),1\)$/ { in_mods = 1 }
+    in_mods && /-include build\/generated\/mod_sources\.mk/ { found = 1 }
+    in_mods && /^endif$/ { in_mods = 0 }
+    END { exit found ? 0 : 1 }
+' Makefile; then
+    echo "Generated mod source lists must only be included for FEATURE_MODS=1 builds." >&2
+    exit 1
+fi
+
+if ! grep -n 'FEATURE_MODS 0' include/config/features.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "include/config/features.h must keep FEATURE_MODS off by default." >&2
     exit 1
 fi
 

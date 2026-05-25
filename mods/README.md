@@ -1,20 +1,41 @@
 # Mods Directory
 
-<!-- last_updated: 2026-05-17 -->
+<!-- last_updated: 2026-05-25 -->
 
 Build-time mods live under `mods/<modId>`. The generator reads
 `mods/<modId>/mod.json`, scans known domain folders, and writes deterministic C
 registries for the mod-facing APIs.
 
+## Build Modes
+
+`FEATURE_MODS=0` is the default. In that mode the build ignores `mods/`, skips
+generated mod registries, links vanilla-compatible stubs for `ModApi_*` and the
+domain APIs, and can still build the base game plus `FEATURE_MULTIPLAYER=1`.
+
+Use `FEATURE_MODS=1` when you want drop-in mod folders compiled into the ROM:
+
+```bash
+make -j"$(nproc)" modern FEATURE_MODS=1
+```
+
+`src/mod` and `include/mod` are SDK/runtime adapter code. Concrete gameplay
+changes belong under `mods/<modId>`, including optional C entrypoints in
+`mods/<modId>/src/*.c`.
+
 Run either command after changing manifests:
 
 ```bash
-make generated
+make generated FEATURE_MODS=1
 python3 scripts/modgen.py --root .
 ```
 
 Generated files live under `include/generated`, `src/generated`, and
 `build/generated`; do not edit those outputs by hand.
+
+The JSON side still uses short keys such as `"id"`. Generated C registries use
+explicit field names such as `.mod_id`, `.mod_flag_id`, `.weather_provider_id`,
+`.ruleset_id`, `.npc_definition_id`, and `.map_id` so compiler errors point at
+the mod-facing concept that changed.
 
 ## Manifest
 
@@ -572,8 +593,8 @@ s8 Demo_OnFlagChanged(const struct ModEvent *event);
 bool8 Demo_ResolveWeather(struct ModWeatherDisplay *display);
 u8 Demo_BallModifier(const struct PokeBallCatchContext *context);
 void Demo_OnBallCommit(const struct PokeBallCatchContext *context, const struct PokeBallThrowResult *result);
-u8 Demo_EngineCapture(const struct EngineRuleset *ruleset, u16 ballItemId);
-u32 Demo_BattleWeather(const struct EngineRuleset *ruleset, u16 weatherLayers);
+u8 Demo_EngineCapture(const struct EngineRuleset *ruleset, u16 ball_item_id);
+u32 Demo_BattleWeather(const struct EngineRuleset *ruleset, u16 weather_layers);
 extern const u8 Demo_GuideScript[];
 extern const u8 BattleScript_DemoBall[];
 ```
@@ -584,10 +605,10 @@ Expected signatures:
 - Weather provider: `bool8 Handler(struct ModWeatherDisplay *display)`
 - Pokeball catch modifier: `u8 Handler(const struct PokeBallCatchContext *context)`
 - Pokeball commit hook: `void Handler(const struct PokeBallCatchContext *context, const struct PokeBallThrowResult *result)`
-- Engine capture hook: `u8 Handler(const struct EngineRuleset *ruleset, u16 ballItemId)`
-- Engine battle-weather hook: `u32 Handler(const struct EngineRuleset *ruleset, u16 weatherLayers)`
+- Engine capture hook: `u8 Handler(const struct EngineRuleset *ruleset, u16 ball_item_id)`
+- Engine battle-weather hook: `u32 Handler(const struct EngineRuleset *ruleset, u16 weather_layers)`
 - Reward hook: `u8 Handler(const struct ModRewardDefinition *definition, struct ModRewardContext *context)`
-- Item field/battle use hook: `void Handler(u8 taskId)`
+- Item field/battle use hook: `void Handler(u8 task_id)`
 - NPC and battle script symbols: `extern const u8 Symbol[]`
 
 ## Conflict Rules

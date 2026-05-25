@@ -10,12 +10,12 @@
 typedef void (*EngineModuleInitFunc)(void);
 typedef void (*EngineModuleFrameFunc)(void);
 typedef void (*EngineModuleMapLoadFunc)(void);
-typedef void (*EngineModulePlayerStepFunc)(u8 direction, u16 newKeys, u16 heldKeys);
-typedef void (*EngineModuleBattleFunc)(u32 value);
+typedef void (*EngineModulePlayerStepFunc)(u8 direction, u16 new_keys, u16 held_keys);
+typedef void (*EngineModuleBattleFunc)(u32 battle_value);
 
 struct EngineModule
 {
-    const char *id;
+    const char *module_id;
     u32 flags;
     EngineModuleInitFunc init;
     EngineModuleFrameFunc frame;
@@ -28,8 +28,8 @@ struct EngineModule
 void EngineModules_Init(void);
 void EngineModules_RunFrame(void);
 void EngineModules_OnMapLoad(void);
-void EngineModules_OnPlayerStep(u8 direction, u16 newKeys, u16 heldKeys);
-void EngineModules_OnBattleStart(u32 battleTypeFlags);
-void EngineModules_OnBattleEnd(u32 battleOutcome);
+void EngineModules_OnPlayerStep(u8 direction, u16 new_keys, u16 held_keys);
+void EngineModules_OnBattleStart(u32 battle_type_flags);
+void EngineModules_OnBattleEnd(u32 battle_outcome);
 
 #endif // GUARD_ENGINE_MODULE_REGISTRY_H

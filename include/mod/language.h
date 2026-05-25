@@ -22,7 +22,7 @@ struct LanguageFormatArgs
 
 void LanguageApi_Init(void);
 const char *LanguageApi_GetActiveLanguage(void);
-bool8 LanguageApi_SetActiveLanguage(const char *languageId);
+bool8 LanguageApi_SetActiveLanguage(const char *language_id);
 const u8 *LanguageApi_GetText(const char *key);
 const u8 *LanguageApi_Format(const char *key, const struct LanguageFormatArgs *args);
 

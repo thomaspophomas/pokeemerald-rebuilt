@@ -1,6 +1,6 @@
 # Multiplayer Bridge Contract
 
-<!-- last_updated: 2026-05-17 -->
+<!-- last_updated: 2026-05-24 -->
 
 This document is the normative ROM-side contract for the future emulator bridge
 and authoritative server. The repository currently implements the ROM-side
@@ -15,6 +15,9 @@ bridge process, server, matchmaking layer, or persistence mirror.
   transport adapter in `src/multiplayer/transport_emulator.c`.
 - `FEATURE_MULTIPLAYER_LINK_TRANSPORT=1` enables the native link-gateway frame
   adapter in `src/multiplayer/transport_link.c`.
+- `FEATURE_MODS=0` is the default; in that mode profile/catalog metadata is
+  advertised as zero-capability and the base multiplayer build does not depend
+  on generated mod registries.
 - The emulator mailbox and link-gateway transports are mutually exclusive.
 - Without both flags, `NetTransport_*` is a closed/no-op transport.
 - Online gameplay state is not authoritative in the ROM. The future server must
@@ -29,8 +32,8 @@ server builds. The current `master` values are:
 ```json
 {
   "protocolVersion": 2,
-  "emulatorBridgeVersion": 5,
-  "buildId": "0x00010004",
+  "emulatorBridgeVersion": 10,
+  "buildId": "0x0001000C",
   "rulesetHash": "0x00000003",
   "profileProtocolVersion": 1,
   "profileCapabilityHash": "0x00000006",
@@ -39,9 +42,15 @@ server builds. The current `master` values are:
   "transportMode": "server_bridge",
   "transportModeValue": 1,
   "maxNetPlayers": 8,
-  "reliableQueueSize": 16,
-  "packetPayloadSize": 128,
-  "commitLogSize": 32,
+  "reliableQueueSize": 8,
+  "packetHeaderSize": 22,
+  "packetPayloadSize": 96,
+  "profileChunkDataSize": 80,
+  "catalogChunkEntryCount": 7,
+  "battleProfilePacket": "NET_PACKET_PLAYER_BATTLE_PROFILE",
+  "battleProfilePublishIntervalFrames": 60,
+  "battleProfilePublishRetryFrames": 10,
+  "commitLogSize": 16,
   "authoritativeServer": true,
   "mailbox": {
     "symbol": "gNetEmulatorBridgeMailbox",
@@ -49,7 +58,7 @@ server builds. The current `master` values are:
     "memoryDomain": "EWRAM",
     "minAddress": "0x02000000",
     "maxAddress": "0x0203FFFF",
-    "maxSize": 8192
+    "maxSize": 4096
   }
 }
 ```
@@ -57,15 +66,17 @@ server builds. The current `master` values are:
 `scripts/ci/check_net_manifest.py` must pass whenever multiplayer/profile/catalog
 contract constants or this manifest change.
 
-Offline gameplay uses the mods compiled into the ROM. Online gameplay is
-server-authoritative through a runtime profile: after `ClientHello`, the server
-may send a bounded delta profile that overrides supported mod API surfaces such
-as text, weather, engine ruleset ID, NPC definitions, sprite assets, badge
-effects, fishing actions, encounter definitions, shop inventories, item
-metadata, reward tables, Pokemon species data, battle move data, and trainer
-definitions. The server can choose a different profile per room without
-requiring a new ROM build, as long as the ROM advertises the required profile
-protocol, capabilities, and mod catalog metadata.
+With `FEATURE_MODS=1`, offline gameplay uses the mods compiled into the ROM.
+Online gameplay is server-authoritative through a runtime profile: after
+`ClientHello`, the server may send a bounded delta profile that overrides
+supported mod API surfaces such as text, weather, engine ruleset ID, NPC
+definitions, sprite assets, badge effects, fishing actions, encounter
+definitions, shop inventories, item metadata, reward tables, Pokemon species
+data, battle move data, and trainer definitions. The server can choose a
+different profile per room without requiring a new ROM build, as long as the ROM
+advertises the required profile protocol, capabilities, and mod catalog
+metadata. With `FEATURE_MODS=0`, those capability/catalog fields are zero and
+the server must treat the client as a base-game build.
 
 `buildId`, `rulesetHash`, protocol version, bridge version, feature flags, and
 transport mode remain the base compatibility gate. `rulesetHash` is not the
@@ -83,13 +94,13 @@ The emulator bridge must resolve the exported ROM symbol
 `gNetEmulatorBridgeMailbox` from the generated `.sym` file or an equivalent
 emulator symbol API, then read/write that EWRAM address. The bridge must not
 use a fixed host-side pseudo-address. The mailbox is owned by the ROM image and
-is constrained by `NET_EMULATOR_MAILBOX_MAX_SIZE` (`8192` bytes) so feature
+is constrained by `NET_EMULATOR_MAILBOX_MAX_SIZE` (`4096` bytes) so feature
 builds keep enough EWRAM headroom.
 
 The ROM accepts the mailbox only when all header checks pass:
 
 - `magic == NET_EMULATOR_BRIDGE_MAGIC` (`"NED8"`)
-- `version == NET_EMULATOR_BRIDGE_VERSION` (`5`)
+- `version == NET_EMULATOR_BRIDGE_VERSION` (`10`)
 - `transportMode == NET_TRANSPORT_MODE_SERVER_BRIDGE` (`1`)
 - `localPlayerId < MAX_NET_PLAYERS`
 - `hostPlayerId < MAX_NET_PLAYERS`
@@ -226,7 +237,7 @@ reliable packet lane:
    `profileSize`, `chunkCount`, `profileProtocolVersion`, `capabilityFlags`,
    and `capabilityHash`.
 2. Server sends `NET_PACKET_SERVER_PROFILE_CHUNK` packets. Each chunk carries
-   an offset and up to `NET_PROFILE_CHUNK_DATA_SIZE` (`112`) profile bytes.
+   an offset and up to `NET_PROFILE_CHUNK_DATA_SIZE` (`80`) profile bytes.
 3. Server sends `NET_PACKET_SERVER_PROFILE_COMMIT`.
 4. ROM validates chunk coverage and hash, parses the profile, then replies with
    `NET_PACKET_SERVER_PROFILE_ACK`.
@@ -250,20 +261,23 @@ The receive blob is temporary. After hash validation, the ROM pre-scans the
 profile and allocates only the exact text/inline-asset buffers needed by the
 delta records, then frees the receive blob after a successful commit.
 
-When no server profile is active, mod APIs read the ROM's generated registry.
-When a server profile is active, supported API lookups prefer the server
-profile and fall back to the generated registry only for missing keys. Leaving
-or losing the online session clears the runtime profile and restores local ROM
-mods.
+With `FEATURE_MODS=1` and no server profile active, mod APIs read the ROM's
+generated registry. When a server profile is active, supported API lookups
+prefer the server profile and fall back to the generated registry only for
+missing keys. Leaving or losing the online session clears the runtime profile
+and restores local ROM mods. With `FEATURE_MODS=0`, the extension-profile facade
+has no generated registry and all mod-domain calls resolve to vanilla-compatible
+stubs.
 
-If the server does not recognize `modCatalogHash`, it may request the generated
-catalog through `NET_PACKET_SERVER_CATALOG_REQUEST`. The ROM responds with
-`NET_PACKET_CLIENT_CATALOG_BEGIN` and `NET_PACKET_CLIENT_CATALOG_CHUNK` packets.
-The begin packet carries `schemaHash == MOD_CATALOG_SCHEMA_HASH`; a bridge or
-server must reject unknown schema hashes and must not build a delta profile from
-that catalog. Each catalog entry contains a type, key hash, and content hash,
-not full asset or text payloads. The server caches that catalog by hash and uses
-it to build future delta profiles only after the schema hash is accepted.
+If the server does not recognize a nonzero `modCatalogHash`, it may request the
+generated catalog through `NET_PACKET_SERVER_CATALOG_REQUEST`. The ROM responds
+with `NET_PACKET_CLIENT_CATALOG_BEGIN` and `NET_PACKET_CLIENT_CATALOG_CHUNK`
+packets. The begin packet carries `schemaHash == MOD_CATALOG_SCHEMA_HASH`; a
+bridge or server must reject unknown schema hashes and must not build a delta
+profile from that catalog. Each catalog entry contains a type, key hash, and
+content hash, not full asset or text payloads. The server caches that catalog by
+hash and uses it to build future delta profiles only after the schema hash is
+accepted.
 
 After hello, the ROM sends `NET_PACKET_HEARTBEAT` every
 `NET_HEARTBEAT_INTERVAL_FRAMES` with:
@@ -283,19 +297,38 @@ idempotent results.
 `NetTransport_WriteLocalSnapshot` writes one latest-wins local snapshot:
 
 - The snapshot must have the local `playerId`.
-- `sessionEpoch`, `playerToken`, and `joinNonce` must match the current bridge
-  header.
+- `sessionEpoch` must match the current bridge header. `playerToken` and
+  `joinNonce` stay in hello/heartbeat/session state instead of the hot snapshot.
 - The ROM increments `localSnapshotSequence`, writes `localSnapshot`, then
   increments `localSnapshotSequence` again.
+- The ROM writes only when hot overworld state changes or every
+  `NET_PLAYER_SNAPSHOT_IDLE_REPUBLISH_FRAMES` (`15`) frames as an idle refresh.
 
 Snapshots are for remote-avatar composition and low-value overworld state. They
-are not authoritative movement, inventory, party, story, battle, trade, reward,
-or time commits.
+are not authoritative movement, inventory, story, battle, trade, reward, or time
+commits. They also do not carry party/battle profile data; that profile uses the
+bounded reliable packet lane so the EWRAM mailbox does not retain full party
+snapshots in every latest-wins player slot.
 
 The server view publishes player snapshots back in `serverPlayers`. Session
 validation drops snapshots with invalid player IDs, stale/future ticks, wrong
 epochs, invalid map/coordinate ranges, invalid flags, stale disconnect state,
 or unsafe subsession state.
+
+## Battle Profile Lane
+
+The ROM publishes `struct NetPlayerBattleProfile` with
+`NET_PACKET_PLAYER_BATTLE_PROFILE`. The bridge/server must treat it as cached
+client-provided data for partner previews and must still validate any battle or
+party side effect authoritatively. The ROM rebuilds and sends the profile at
+most every `NET_PLAYER_PROFILE_PUBLISH_INTERVAL_FRAMES` (`60`) frames, retrying
+after `NET_PLAYER_PROFILE_PUBLISH_RETRY_FRAMES` (`10`) frames if the reliable
+queue is full.
+
+The profile contains only the compact partner material needed by the current ROM
+battle adapter: trainer gender, player name, up to
+`NET_PLAYER_PARTY_SNAPSHOT_SIZE` (`3`) usable party members, held items, HP, and
+move IDs. It is fan-out packet state, not mailbox view state.
 
 ## Packet Lanes
 
@@ -305,18 +338,35 @@ and suitable only for replaceable state.
 `NetTransport_SendPacket` writes to `reliableOutbound`. This bounded ring buffer
 is used for gameplay actions and session control:
 
-- Queue size: `NET_RELIABLE_QUEUE_SIZE` (`16`)
-- Payload capacity: `NET_TRANSPORT_PACKET_PAYLOAD_SIZE` (`128`)
+- Queue size: `NET_RELIABLE_QUEUE_SIZE` (`8`)
+- Slot header size: `NET_TRANSPORT_PACKET_HEADER_SIZE` (`22`)
+- Payload capacity: `NET_TRANSPORT_PACKET_PAYLOAD_SIZE` (`96`)
 - Sequence numbers are nonzero and monotonic per session identity.
 - Full queues return `FALSE`; callers must keep behavior fail-closed.
-- Each envelope carries protocol version, header size, session ID, session
-  epoch, tick, packet type, player ID, sequence, payload size, and checksum.
+- Each mailbox slot stores only session ID, session epoch, tick, packet type,
+  player ID, sequence, payload size, and checksum. The ROM reconstructs the
+  full `NetPacketEnvelope` with protocol magic/version/header-size fields when
+  gameplay code receives the packet.
+
+Mailbox packet slots use this packed header:
+
+```c
+struct NetTransportPacketHeader
+{
+    u32 sessionId;
+    u32 sessionEpoch;
+    u32 tick;
+    u32 sequence;
+    u16 payloadSize;
+    u16 checksum;
+    u8 packetType;
+    u8 playerId;
+};
+```
 
 `NetTransport_ReceivePacket` reads `reliableInbound`. The ROM drops inbound
 packets with:
 
-- wrong protocol magic or version
-- wrong header size
 - wrong session ID or epoch
 - invalid packet type
 - invalid player ID
@@ -332,6 +382,7 @@ Client-to-server packet types:
 - `NET_PACKET_CLIENT_HELLO`
 - `NET_PACKET_HEARTBEAT`
 - `NET_PACKET_PLAYER_SNAPSHOT`
+- `NET_PACKET_PLAYER_BATTLE_PROFILE`
 - `NET_PACKET_MOVE_INTENT`
 - `NET_PACKET_INTERACT_INTENT`
 - `NET_PACKET_BATTLE_ACTION`
@@ -354,6 +405,7 @@ Server-to-client packet types:
 - `NET_PACKET_SUBSESSION_UPDATE`
 - `NET_PACKET_COMMIT_RESULT`
 - `NET_PACKET_DISCONNECT_REASON`
+- `NET_PACKET_PLAYER_BATTLE_PROFILE`
 - `NET_PACKET_SERVER_PROFILE_BEGIN`
 - `NET_PACKET_SERVER_PROFILE_CHUNK`
 - `NET_PACKET_SERVER_PROFILE_COMMIT`
@@ -398,10 +450,11 @@ struct NetCommitResult
 };
 ```
 
-The ROM commit log holds `NET_COMMIT_LOG_SIZE` (`32`) entries and caches
-duplicate/retry results. Trade, item, battle, story-flag, outfit, and
-weather-reward commits are fail-closed locally until a server mirror owns the
-affected state.
+The ROM commit log holds `NET_COMMIT_LOG_SIZE` (`16`) entries and caches
+duplicate/retry results. Pending entries are never evicted; once all slots are
+occupied, old committed or rolled-back entries may be reused for newer
+transactions. Trade, item, battle, story-flag, outfit, and weather-reward
+commits are fail-closed locally until a server mirror owns the affected state.
 
 ## Server Authority
 

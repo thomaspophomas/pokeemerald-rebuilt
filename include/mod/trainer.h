@@ -39,12 +39,12 @@ struct ModTrainerDefinition
     struct ModTrainerMon party[MOD_TRAINER_MAX_PARTY_SIZE];
 };
 
-bool8 TrainerApi_IsDefinitionValid(const struct ModTrainerDefinition *definition, bool8 allowEmptyDefault);
-const struct ModTrainerDefinition *TrainerApi_GetDefinition(u16 trainerId);
-u8 TrainerApi_GetPartySize(u16 trainerId, u8 vanilla);
-u8 TrainerApi_GetPartyLevel(u16 trainerId, u8 partyIndex, u8 vanilla);
-bool8 TrainerApi_CreateParty(u16 trainerId, struct Pokemon *party, u8 maxCount, u8 *partySize);
-bool8 TrainerApi_IsDoubleBattle(u16 trainerId, bool8 vanilla);
-u8 TrainerApi_GetTrainerClass(u16 trainerId, u8 vanilla);
+bool8 TrainerApi_IsDefinitionValid(const struct ModTrainerDefinition *definition, bool8 allow_empty_default);
+const struct ModTrainerDefinition *TrainerApi_GetDefinition(u16 trainer_id);
+u8 TrainerApi_GetPartySize(u16 trainer_id, u8 vanilla);
+u8 TrainerApi_GetPartyLevel(u16 trainer_id, u8 party_index, u8 vanilla);
+bool8 TrainerApi_CreateParty(u16 trainer_id, struct Pokemon *party, u8 max_count, u8 *party_size);
+bool8 TrainerApi_IsDoubleBattle(u16 trainer_id, bool8 vanilla);
+u8 TrainerApi_GetTrainerClass(u16 trainer_id, u8 vanilla);
 
 #endif // GUARD_MOD_TRAINER_H

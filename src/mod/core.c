@@ -39,22 +39,22 @@ void ModApi_OnMapLoad(void)
     ModEvent_Emit(MOD_EVENT_MAP_LOAD, NULL, 0);
 }
 
-void ModApi_OnPlayerStep(u8 direction, u16 newKeys, u16 heldKeys)
+void ModApi_OnPlayerStep(u8 direction, u16 new_keys, u16 held_keys)
 {
     struct ModEventPlayerStep payload;
 
     payload.direction = direction;
-    payload.newKeys = newKeys;
-    payload.heldKeys = heldKeys;
+    payload.newKeys = new_keys;
+    payload.heldKeys = held_keys;
     ModEvent_Emit(MOD_EVENT_PLAYER_STEP, &payload, sizeof(payload));
 }
 
-void ModApi_OnBattleStart(u32 battleTypeFlags)
+void ModApi_OnBattleStart(u32 battle_type_flags)
 {
-    ModEvent_Emit(MOD_EVENT_BATTLE_STARTED, &battleTypeFlags, sizeof(battleTypeFlags));
+    ModEvent_Emit(MOD_EVENT_BATTLE_STARTED, &battle_type_flags, sizeof(battle_type_flags));
 }
 
-void ModApi_OnBattleEnd(u32 battleOutcome)
+void ModApi_OnBattleEnd(u32 battle_outcome)
 {
-    ModEvent_Emit(MOD_EVENT_BATTLE_ENDED, &battleOutcome, sizeof(battleOutcome));
+    ModEvent_Emit(MOD_EVENT_BATTLE_ENDED, &battle_outcome, sizeof(battle_outcome));
 }

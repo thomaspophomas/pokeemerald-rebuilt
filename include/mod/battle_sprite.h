@@ -17,9 +17,9 @@ struct ModBattleSpriteDefinition
 };
 
 const struct ModBattleSpriteDefinition *BattleSpriteApi_GetMonSprite(u16 species, u8 form, u8 side, u16 flags);
-const struct ModBattleSpriteDefinition *BattleSpriteApi_GetTrainerSprite(u16 trainerId, u8 side);
-u8 BattleSpriteApi_GetBallSprite(u16 ballItemId);
+const struct ModBattleSpriteDefinition *BattleSpriteApi_GetTrainerSprite(u16 trainer_id, u8 side);
+u8 BattleSpriteApi_GetBallSprite(u16 ball_item_id);
 const struct ModBattleSpriteDefinition *BattleSpriteApi_GetMoveAnimSprite(const char *key);
-bool8 BattleSpriteApi_RefreshBattlerPalette(u8 battlerId);
+bool8 BattleSpriteApi_RefreshBattlerPalette(u8 battler_id);
 
 #endif // GUARD_MOD_BATTLE_SPRITE_H

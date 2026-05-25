@@ -41,7 +41,7 @@ typedef bool8 (*ModWeatherProviderFunc)(struct ModWeatherDisplay *display);
 
 struct ModWeatherProvider
 {
-    const char *id;
+    const char *weather_provider_id;
     s16 priority;
     ModWeatherProviderFunc resolve;
 };
@@ -51,7 +51,7 @@ void ModWeather_RunFrame(void);
 void ModWeather_OnMapLoad(void);
 void ModWeather_GetDisplayedWeather(struct ModWeatherDisplay *display);
 u16 ModWeather_GetBattleWeatherMask(void);
-void ModWeather_SetOverride(u8 source, u8 vanillaWeather, u16 layers, u16 durationFrames);
+void ModWeather_SetOverride(u8 source, u8 vanilla_weather, u16 layers, u16 duration_frames);
 void ModWeather_ClearOverride(u8 source);
 
 #endif // GUARD_MOD_WEATHER_H

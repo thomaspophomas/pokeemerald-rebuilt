@@ -45,48 +45,48 @@ static void ResetPvePartner(void)
     sPvePartnerName[0] = EOS;
 }
 
-static bool8 SnapshotPartyMonIsUsable(const struct NetPlayerSnapshot *snapshot, u8 partyId)
+static bool8 BattleProfileMonIsUsable(const struct NetPlayerBattleProfile *profile, u8 battle_profile_party_index)
 {
     u16 species;
 
-    if (snapshot == NULL || partyId >= NET_PLAYER_PARTY_SNAPSHOT_SIZE)
+    if (profile == NULL || battle_profile_party_index >= NET_PLAYER_PARTY_SNAPSHOT_SIZE)
         return FALSE;
-    if (partyId >= snapshot->partyCount)
+    if (battle_profile_party_index >= profile->partyCount)
         return FALSE;
 
-    species = snapshot->partySpecies[partyId];
+    species = profile->partySpecies[battle_profile_party_index];
     return species != SPECIES_NONE
         && species != SPECIES_EGG
         && species < NUM_SPECIES
-        && snapshot->partyLevels[partyId] != 0
-        && snapshot->partyLevels[partyId] <= MAX_LEVEL
-        && snapshot->partyHp[partyId] != 0;
+        && profile->partyLevels[battle_profile_party_index] != 0
+        && profile->partyLevels[battle_profile_party_index] <= MAX_LEVEL
+        && profile->partyHp[battle_profile_party_index] != 0;
 }
 
-static bool8 SnapshotHasUsablePartnerParty(const struct NetPlayerSnapshot *snapshot)
+static bool8 BattleProfileHasUsablePartnerParty(const struct NetPlayerBattleProfile *profile)
 {
-    u8 i;
+    u8 party_mon_index;
 
-    if (snapshot == NULL || snapshot->partyCount == 0)
+    if (profile == NULL || profile->partyCount == 0)
         return FALSE;
 
-    for (i = 0; i < NET_PLAYER_PARTY_SNAPSHOT_SIZE; i++)
+    for (party_mon_index = 0; party_mon_index < NET_PLAYER_PARTY_SNAPSHOT_SIZE; party_mon_index++)
     {
-        if (SnapshotPartyMonIsUsable(snapshot, i))
+        if (BattleProfileMonIsUsable(profile, party_mon_index))
             return TRUE;
     }
 
     return FALSE;
 }
 
-static void CopySnapshotPartnerName(const struct NetPlayerSnapshot *snapshot)
+static void CopyBattleProfilePartnerName(const struct NetPlayerBattleProfile *profile)
 {
-    u8 i;
+    u8 name_char_index;
 
-    for (i = 0; i < PLAYER_NAME_LENGTH && snapshot->playerName[i] != EOS && snapshot->playerName[i] != 0; i++)
-        sPvePartnerName[i] = snapshot->playerName[i];
+    for (name_char_index = 0; name_char_index < PLAYER_NAME_LENGTH && profile->playerName[name_char_index] != EOS && profile->playerName[name_char_index] != 0; name_char_index++)
+        sPvePartnerName[name_char_index] = profile->playerName[name_char_index];
 
-    if (i == 0)
+    if (name_char_index == 0)
     {
         sPvePartnerName[0] = CHAR_P;
         sPvePartnerName[1] = CHAR_A;
@@ -95,27 +95,27 @@ static void CopySnapshotPartnerName(const struct NetPlayerSnapshot *snapshot)
         sPvePartnerName[4] = CHAR_N;
         sPvePartnerName[5] = CHAR_E;
         sPvePartnerName[6] = CHAR_R;
-        i = PLAYER_NAME_LENGTH;
+        name_char_index = PLAYER_NAME_LENGTH;
     }
 
-    sPvePartnerName[i] = EOS;
+    sPvePartnerName[name_char_index] = EOS;
 }
 #endif
 
 #if FEATURE_MULTIPLAYER
 static bool8 RequestHasUniquePlayers(const struct MultiplayerBattleRequest *request)
 {
-    u8 i;
-    u8 j;
+    u8 player_index_in_request;
+    u8 duplicate_check_index;
 
-    for (i = 0; i < request->playerCount; i++)
+    for (player_index_in_request = 0; player_index_in_request < request->playerCount; player_index_in_request++)
     {
-        if (request->players[i] >= MAX_NET_PLAYERS)
+        if (request->players[player_index_in_request] >= MAX_NET_PLAYERS)
             return FALSE;
 
-        for (j = i + 1; j < request->playerCount; j++)
+        for (duplicate_check_index = player_index_in_request + 1; duplicate_check_index < request->playerCount; duplicate_check_index++)
         {
-            if (request->players[i] == request->players[j])
+            if (request->players[player_index_in_request] == request->players[duplicate_check_index])
                 return FALSE;
         }
     }
@@ -123,29 +123,29 @@ static bool8 RequestHasUniquePlayers(const struct MultiplayerBattleRequest *requ
     return TRUE;
 }
 
-static bool8 PlayerBlocksBattleRequest(u8 playerId)
+static bool8 PlayerBlocksBattleRequest(u8 player_id)
 {
     const struct MultiplayerSession *session;
 
-    if (playerId >= MAX_NET_PLAYERS)
+    if (player_id >= MAX_NET_PLAYERS)
         return TRUE;
-    if (MultiplayerSession_IsPlayerInSubsession(playerId))
+    if (MultiplayerSession_IsPlayerInSubsession(player_id))
         return TRUE;
-    if (!MultiplayerSession_IsPlayerBusy(playerId))
+    if (!MultiplayerSession_IsPlayerBusy(player_id))
         return FALSE;
 
     session = MultiplayerSession_Get();
-    if (session == NULL || !session->players[playerId].active)
+    if (session == NULL || !session->players[player_id].active)
         return TRUE;
 
-    return session->players[playerId].interactionState != MULTIPLAYER_INTERACTION_OPTIONS_MENU;
+    return session->players[player_id].interactionState != MULTIPLAYER_INTERACTION_OPTIONS_MENU;
 }
 #endif
 
 bool8 MultiplayerBattle_CanStart(const struct MultiplayerBattleRequest *request)
 {
 #if FEATURE_MULTIPLAYER
-    u8 i;
+    u8 player_index_in_request;
 
     if (request == NULL)
         return FALSE;
@@ -155,9 +155,9 @@ bool8 MultiplayerBattle_CanStart(const struct MultiplayerBattleRequest *request)
         return FALSE;
     if (!RequestHasUniquePlayers(request))
         return FALSE;
-    for (i = 0; i < request->playerCount; i++)
+    for (player_index_in_request = 0; player_index_in_request < request->playerCount; player_index_in_request++)
     {
-        if (PlayerBlocksBattleRequest(request->players[i]))
+        if (PlayerBlocksBattleRequest(request->players[player_index_in_request]))
             return FALSE;
     }
 
@@ -192,18 +192,18 @@ bool8 MultiplayerBattle_Start(const struct MultiplayerBattleRequest *request)
 }
 
 #if FEATURE_MULTIPLAYER
-static bool8 SubsessionIncludesPlayer(const struct MultiplayerSubsession *subsession, u8 playerId)
+static bool8 SubsessionIncludesPlayer(const struct MultiplayerSubsession *subsession, u8 player_id)
 {
-    u8 i;
+    u8 player_index_in_subsession;
 
     if (subsession == NULL || !subsession->active)
         return FALSE;
-    if (playerId >= MAX_NET_PLAYERS)
+    if (player_id >= MAX_NET_PLAYERS)
         return FALSE;
 
-    for (i = 0; i < subsession->playerCount; i++)
+    for (player_index_in_subsession = 0; player_index_in_subsession < subsession->playerCount; player_index_in_subsession++)
     {
-        if (subsession->players[i] == playerId)
+        if (subsession->players[player_index_in_subsession] == player_id)
             return TRUE;
     }
 
@@ -212,14 +212,14 @@ static bool8 SubsessionIncludesPlayer(const struct MultiplayerSubsession *subses
 
 static const struct MultiplayerSubsession *FindLocalBattleSubsessionByType(const struct MultiplayerSession *session, u8 type)
 {
-    u8 i;
+    u8 subsession_index;
 
     if (session == NULL || session->localPlayerId >= MAX_NET_PLAYERS)
         return NULL;
 
-    for (i = 0; i < MAX_NET_SUBSESSIONS; i++)
+    for (subsession_index = 0; subsession_index < MAX_NET_SUBSESSIONS; subsession_index++)
     {
-        const struct MultiplayerSubsession *subsession = &session->subsessions[i];
+        const struct MultiplayerSubsession *subsession = &session->subsessions[subsession_index];
 
         if (!subsession->active)
             continue;
@@ -243,15 +243,15 @@ static const struct MultiplayerSubsession *FindLocalPvpSubsession(const struct M
 
 static bool8 PlayerHasUsableParty(void)
 {
-    u8 i;
+    u8 party_mon_index;
 
-    for (i = 0; i < PARTY_SIZE; i++)
+    for (party_mon_index = 0; party_mon_index < PARTY_SIZE; party_mon_index++)
     {
-        u32 species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG, NULL);
+        u32 species = GetMonData(&gPlayerParty[party_mon_index], MON_DATA_SPECIES_OR_EGG, NULL);
 
         if (species != SPECIES_NONE
          && species != SPECIES_EGG
-         && GetMonData(&gPlayerParty[i], MON_DATA_HP, NULL) != 0)
+         && GetMonData(&gPlayerParty[party_mon_index], MON_DATA_HP, NULL) != 0)
             return TRUE;
     }
 
@@ -263,96 +263,92 @@ bool8 MultiplayerBattle_LocalPlayerCanFight(void)
     return PlayerHasUsableParty();
 }
 
-bool8 MultiplayerBattle_RemotePlayerCanPartner(u8 partnerPlayerId)
+bool8 MultiplayerBattle_RemotePlayerCanPartner(u8 partner_player_id)
 {
 #if FEATURE_MULTIPLAYER
-    const struct MultiplayerSession *session;
+    const struct NetPlayerBattleProfile *profile;
 
-    if (!MultiplayerSession_IsPlayerActive(partnerPlayerId))
+    if (!MultiplayerSession_IsPlayerActive(partner_player_id))
         return FALSE;
 
-    session = MultiplayerSession_Get();
-    if (session == NULL)
-        return FALSE;
+    profile = MultiplayerSession_GetPlayerBattleProfile(partner_player_id);
 
-    return SnapshotHasUsablePartnerParty(&session->players[partnerPlayerId]);
+    return BattleProfileHasUsablePartnerParty(profile);
 #else
-    (void)partnerPlayerId;
+    (void)partner_player_id;
     return FALSE;
 #endif
 }
 
-bool8 MultiplayerBattle_PrepareTrainerPvePartnerParty(u8 partnerPlayerId)
+bool8 MultiplayerBattle_PrepareTrainerPvePartnerParty(u8 partner_player_id)
 {
 #if FEATURE_MULTIPLAYER
-    const struct MultiplayerSession *session;
-    const struct NetPlayerSnapshot *snapshot;
-    u8 i;
-    u8 moveSlot;
-    u8 dst = 0;
+    const struct NetPlayerBattleProfile *profile;
+    u8 party_mon_index;
+    u8 move_index;
+    u8 destination_party_index = 0;
 
-    if (!MultiplayerBattle_RemotePlayerCanPartner(partnerPlayerId))
+    if (!MultiplayerBattle_RemotePlayerCanPartner(partner_player_id))
         return FALSE;
 
-    session = MultiplayerSession_Get();
-    if (session == NULL)
+    profile = MultiplayerSession_GetPlayerBattleProfile(partner_player_id);
+    if (profile == NULL)
         return FALSE;
-    snapshot = &session->players[partnerPlayerId];
 
-    for (i = 0; i < NET_PLAYER_PARTY_SNAPSHOT_SIZE; i++)
-        ZeroMonData(&gPlayerParty[MULTI_PARTY_SIZE + i]);
+    for (party_mon_index = 0; party_mon_index < NET_PLAYER_PARTY_SNAPSHOT_SIZE; party_mon_index++)
+        ZeroMonData(&gPlayerParty[MULTI_PARTY_SIZE + party_mon_index]);
 
-    for (i = 0; i < NET_PLAYER_PARTY_SNAPSHOT_SIZE && dst < NET_PLAYER_PARTY_SNAPSHOT_SIZE; i++)
+    for (party_mon_index = 0; party_mon_index < NET_PLAYER_PARTY_SNAPSHOT_SIZE && destination_party_index < NET_PLAYER_PARTY_SNAPSHOT_SIZE; party_mon_index++)
     {
         u32 maxHp;
         u32 hp;
         u32 otGender;
 
-        if (!SnapshotPartyMonIsUsable(snapshot, i))
+        if (!BattleProfileMonIsUsable(profile, party_mon_index))
             continue;
 
-        CreateMon(&gPlayerParty[MULTI_PARTY_SIZE + dst],
-                  snapshot->partySpecies[i],
-                  snapshot->partyLevels[i],
+        CreateMon(&gPlayerParty[MULTI_PARTY_SIZE + destination_party_index],
+                  profile->partySpecies[party_mon_index],
+                  profile->partyLevels[party_mon_index],
                   USE_RANDOM_IVS,
                   FALSE,
                   0,
                   OT_ID_RANDOM_NO_SHINY,
                   0);
 
-        MultiplayerCommit_WriteMonData(&gPlayerParty[MULTI_PARTY_SIZE + dst], MON_DATA_HELD_ITEM, &snapshot->partyHeldItems[i]);
-        for (moveSlot = 0; moveSlot < MAX_MON_MOVES; moveSlot++)
+        MultiplayerCommit_WriteMonData(&gPlayerParty[MULTI_PARTY_SIZE + destination_party_index], MON_DATA_HELD_ITEM, &profile->partyHeldItems[party_mon_index]);
+        for (move_index = 0; move_index < MAX_MON_MOVES; move_index++)
         {
-            u16 move = snapshot->partyMoves[i][moveSlot];
+            u16 move = profile->partyMoves[party_mon_index][move_index];
 
             if (move != MOVE_NONE && move < MOVES_COUNT)
-                SetMonMoveSlot(&gPlayerParty[MULTI_PARTY_SIZE + dst], move, moveSlot);
+                SetMonMoveSlot(&gPlayerParty[MULTI_PARTY_SIZE + destination_party_index], move, move_index);
         }
 
-        maxHp = GetMonData(&gPlayerParty[MULTI_PARTY_SIZE + dst], MON_DATA_MAX_HP, NULL);
-        hp = min((u32)snapshot->partyHp[i], maxHp);
-        MultiplayerCommit_WriteMonData(&gPlayerParty[MULTI_PARTY_SIZE + dst], MON_DATA_HP, &hp);
-        MultiplayerCommit_WriteMonData(&gPlayerParty[MULTI_PARTY_SIZE + dst], MON_DATA_OT_NAME, snapshot->playerName);
-        otGender = snapshot->trainerGender;
-        MultiplayerCommit_WriteMonData(&gPlayerParty[MULTI_PARTY_SIZE + dst], MON_DATA_OT_GENDER, &otGender);
-        CalculateMonStats(&gPlayerParty[MULTI_PARTY_SIZE + dst]);
-        dst++;
+        maxHp = GetMonData(&gPlayerParty[MULTI_PARTY_SIZE + destination_party_index], MON_DATA_MAX_HP, NULL);
+        hp = min((u32)profile->partyHp[party_mon_index], maxHp);
+        MultiplayerCommit_WriteMonData(&gPlayerParty[MULTI_PARTY_SIZE + destination_party_index], MON_DATA_HP, &hp);
+        MultiplayerCommit_WriteMonData(&gPlayerParty[MULTI_PARTY_SIZE + destination_party_index], MON_DATA_OT_NAME, profile->playerName);
+        otGender = profile->trainerGender;
+        MultiplayerCommit_WriteMonData(&gPlayerParty[MULTI_PARTY_SIZE + destination_party_index], MON_DATA_OT_GENDER, &otGender);
+        CalculateMonStats(&gPlayerParty[MULTI_PARTY_SIZE + destination_party_index]);
+        destination_party_index++;
     }
 
-    if (dst == 0)
+    if (destination_party_index == 0)
         return FALSE;
 
-    sPvePartnerPlayerId = partnerPlayerId;
-    sPvePartnerGender = snapshot->trainerGender;
-    CopySnapshotPartnerName(snapshot);
+    sPvePartnerPlayerId = partner_player_id;
+    sPvePartnerGender = profile->trainerGender;
+    CopyBattleProfilePartnerName(profile);
     return TRUE;
 #else
-    (void)partnerPlayerId;
+    (void)partner_player_id;
     return FALSE;
 #endif
 }
 
-bool8 MultiplayerBattle_StartTrainerPveBattle(u8 partnerPlayerId, u16 trainerId)
+bool8 MultiplayerBattle_StartTrainerPveBattle(u8 partner_player_id, u16 trainer_id)
 {
 #if FEATURE_MULTIPLAYER
     struct MultiplayerBattleRequest request;
@@ -363,18 +359,18 @@ bool8 MultiplayerBattle_StartTrainerPveBattle(u8 partnerPlayerId, u16 trainerId)
         return FALSE;
 
     session = MultiplayerSession_Get();
-    if (session == NULL || session->localPlayerId >= MAX_NET_PLAYERS || partnerPlayerId >= MAX_NET_PLAYERS)
+    if (session == NULL || session->localPlayerId >= MAX_NET_PLAYERS || partner_player_id >= MAX_NET_PLAYERS)
         return FALSE;
-    if (!MultiplayerBattle_RemotePlayerCanPartner(partnerPlayerId))
+    if (!MultiplayerBattle_RemotePlayerCanPartner(partner_player_id))
         return FALSE;
 
     memset(&request, 0, sizeof(request));
     request.type = MULTIPLAYER_SUBSESSION_PVE_BATTLE;
     request.playerCount = MAX_NET_PVE_PLAYERS;
     request.players[0] = session->localPlayerId;
-    request.players[1] = partnerPlayerId;
+    request.players[1] = partner_player_id;
     request.battleTypeFlags = BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TRAINER;
-    request.trainerA = trainerId;
+    request.trainerA = trainer_id;
     if (!MultiplayerBattle_Start(&request))
         return FALSE;
 
@@ -383,13 +379,13 @@ bool8 MultiplayerBattle_StartTrainerPveBattle(u8 partnerPlayerId, u16 trainerId)
         return FALSE;
 
     sPendingPveBattle = TRUE;
-    sPendingSubsessionId = subsession->id;
-    sStartedSubsessionId = subsession->id;
-    sPvePartnerPlayerId = partnerPlayerId;
+    sPendingSubsessionId = subsession->subsession_id;
+    sStartedSubsessionId = subsession->subsession_id;
+    sPvePartnerPlayerId = partner_player_id;
     return TRUE;
 #else
-    (void)partnerPlayerId;
-    (void)trainerId;
+    (void)partner_player_id;
+    (void)trainer_id;
     return FALSE;
 #endif
 }
@@ -437,22 +433,22 @@ const u8 *MultiplayerBattle_GetPartnerName(void)
     return sFallbackPartnerName;
 }
 
-static u8 GetAveragePartyMonEvs(struct Pokemon *mon)
+static u8 GetAveragePartyMonEvs(struct Pokemon *party_mon)
 {
     u8 statId;
     u16 sum = 0;
 
     for (statId = 0; statId < NUM_STATS; statId++)
-        sum += GetMonData(mon, MON_DATA_HP_EV + statId, NULL);
+        sum += GetMonData(party_mon, MON_DATA_HP_EV + statId, NULL);
 
     return sum / NUM_STATS;
 }
 
 static bool8 BuildMirrorSecretBaseBattle(void)
 {
-    u8 i;
-    u8 j;
-    u8 partyId = 0;
+    u8 source_party_index;
+    u8 move_index;
+    u8 secret_base_party_index = 0;
 
     if (gSaveBlock2Ptr == NULL)
         return FALSE;
@@ -464,26 +460,26 @@ static bool8 BuildMirrorSecretBaseBattle(void)
     memcpy(sPendingSecretBase.trainerName, gSaveBlock2Ptr->playerName, PLAYER_NAME_LENGTH);
     memcpy(sPendingSecretBase.trainerId, gSaveBlock2Ptr->playerTrainerId, TRAINER_ID_LENGTH);
 
-    for (i = 0; i < PARTY_SIZE && partyId < PARTY_SIZE; i++)
+    for (source_party_index = 0; source_party_index < PARTY_SIZE && secret_base_party_index < PARTY_SIZE; source_party_index++)
     {
-        u32 species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG, NULL);
+        u32 species = GetMonData(&gPlayerParty[source_party_index], MON_DATA_SPECIES_OR_EGG, NULL);
 
         if (species == SPECIES_NONE || species == SPECIES_EGG)
             continue;
 
-        sPendingSecretBase.party.species[partyId] = species;
-        sPendingSecretBase.party.heldItems[partyId] = GetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, NULL);
-        sPendingSecretBase.party.levels[partyId] = GetMonData(&gPlayerParty[i], MON_DATA_LEVEL, NULL);
-        sPendingSecretBase.party.personality[partyId] = GetMonData(&gPlayerParty[i], MON_DATA_PERSONALITY, NULL);
-        sPendingSecretBase.party.EVs[partyId] = GetAveragePartyMonEvs(&gPlayerParty[i]);
+        sPendingSecretBase.party.species[secret_base_party_index] = species;
+        sPendingSecretBase.party.heldItems[secret_base_party_index] = GetMonData(&gPlayerParty[source_party_index], MON_DATA_HELD_ITEM, NULL);
+        sPendingSecretBase.party.levels[secret_base_party_index] = GetMonData(&gPlayerParty[source_party_index], MON_DATA_LEVEL, NULL);
+        sPendingSecretBase.party.personality[secret_base_party_index] = GetMonData(&gPlayerParty[source_party_index], MON_DATA_PERSONALITY, NULL);
+        sPendingSecretBase.party.EVs[secret_base_party_index] = GetAveragePartyMonEvs(&gPlayerParty[source_party_index]);
 
-        for (j = 0; j < MAX_MON_MOVES; j++)
-            sPendingSecretBase.party.moves[partyId * MAX_MON_MOVES + j] = GetMonData(&gPlayerParty[i], MON_DATA_MOVE1 + j, NULL);
+        for (move_index = 0; move_index < MAX_MON_MOVES; move_index++)
+            sPendingSecretBase.party.moves[secret_base_party_index * MAX_MON_MOVES + move_index] = GetMonData(&gPlayerParty[source_party_index], MON_DATA_MOVE1 + move_index, NULL);
 
-        partyId++;
+        secret_base_party_index++;
     }
 
-    return partyId != 0;
+    return secret_base_party_index != 0;
 }
 
 static void TryStartLocalBattleForSubsession(const struct MultiplayerSubsession *subsession)
@@ -492,20 +488,20 @@ static void TryStartLocalBattleForSubsession(const struct MultiplayerSubsession 
         return;
     if (sMultiplayerBattleActive || sPendingPvpBattle || sPendingPveBattle)
         return;
-    if (sStartedSubsessionId == subsession->id)
+    if (sStartedSubsessionId == subsession->subsession_id)
         return;
     if (!MultiplayerOverworld_CanTick())
         return;
     if (!PlayerHasUsableParty() || !BuildMirrorSecretBaseBattle())
     {
-        sStartedSubsessionId = subsession->id;
-        MultiplayerSession_EndSubsession(subsession->id, MULTIPLAYER_SUBSESSION_STATE_ERROR);
+        sStartedSubsessionId = subsession->subsession_id;
+        MultiplayerSession_EndSubsession(subsession->subsession_id, MULTIPLAYER_SUBSESSION_STATE_ERROR);
         return;
     }
 
     sPendingPvpBattle = TRUE;
-    sPendingSubsessionId = subsession->id;
-    sStartedSubsessionId = subsession->id;
+    sPendingSubsessionId = subsession->subsession_id;
+    sStartedSubsessionId = subsession->subsession_id;
     MultiplayerInteractionMenu_Reset();
     BattleSetup_StartMultiplayerPvpBattle();
 }
@@ -517,22 +513,22 @@ bool8 MultiplayerBattle_LocalPlayerCanFight(void)
     return FALSE;
 }
 
-bool8 MultiplayerBattle_RemotePlayerCanPartner(u8 partnerPlayerId)
+bool8 MultiplayerBattle_RemotePlayerCanPartner(u8 partner_player_id)
 {
-    (void)partnerPlayerId;
+    (void)partner_player_id;
     return FALSE;
 }
 
-bool8 MultiplayerBattle_PrepareTrainerPvePartnerParty(u8 partnerPlayerId)
+bool8 MultiplayerBattle_PrepareTrainerPvePartnerParty(u8 partner_player_id)
 {
-    (void)partnerPlayerId;
+    (void)partner_player_id;
     return FALSE;
 }
 
-bool8 MultiplayerBattle_StartTrainerPveBattle(u8 partnerPlayerId, u16 trainerId)
+bool8 MultiplayerBattle_StartTrainerPveBattle(u8 partner_player_id, u16 trainer_id)
 {
-    (void)partnerPlayerId;
-    (void)trainerId;
+    (void)partner_player_id;
+    (void)trainer_id;
     return FALSE;
 }
 
@@ -604,40 +600,40 @@ void MultiplayerBattle_ApplyCurrentWeather(void)
 #endif
 }
 
-bool8 MultiplayerBattle_SendAction(u8 subsessionId, u8 battlerSlot, u8 action, u8 target, u16 parameter)
+bool8 MultiplayerBattle_SendAction(u8 subsession_id, u8 battler_slot, u8 action, u8 target, u16 parameter)
 {
 #if FEATURE_MULTIPLAYER
-    struct NetBattleAction packet;
-    struct MultiplayerTransactionKey key;
+    struct NetBattleAction battle_action_packet;
+    struct MultiplayerTransactionKey transaction_key;
     const struct MultiplayerSession *session;
-    u32 actionSequence;
+    u32 action_sequence;
 
     if (!MultiplayerSession_IsOnline())
         return FALSE;
-    if (subsessionId == NET_SUBSESSION_NONE || subsessionId > MAX_NET_SUBSESSIONS)
+    if (subsession_id == NET_SUBSESSION_NONE || subsession_id > MAX_NET_SUBSESSIONS)
         return FALSE;
 
     session = MultiplayerSession_Get();
     if (session == NULL)
         return FALSE;
 
-    memset(&packet, 0, sizeof(packet));
-    actionSequence = MultiplayerSession_NextActionSequence();
-    if (!MultiplayerSession_BuildTransactionKey(&key, NET_PACKET_BATTLE_ACTION, subsessionId, actionSequence))
+    memset(&battle_action_packet, 0, sizeof(battle_action_packet));
+    action_sequence = MultiplayerSession_NextActionSequence();
+    if (!MultiplayerSession_BuildTransactionKey(&transaction_key, NET_PACKET_BATTLE_ACTION, subsession_id, action_sequence))
         return FALSE;
-    packet.header.clientFrame = session->localClientFrame;
-    packet.header.serverTickSeen = session->bridgeTick;
-    packet.header.actionSequence = actionSequence;
-    packet.header.transactionId = MultiplayerCommit_GetTransactionId(&key);
-    packet.subsessionId = subsessionId;
-    packet.battlerSlot = battlerSlot;
-    packet.action = action;
-    packet.target = target;
-    packet.parameter = parameter;
-    MultiplayerCommit_Prepare(&key, MULTIPLAYER_COMMIT_BATTLE, &packet, sizeof(packet), NULL);
-    if (!NetTransport_SendPacket(NET_PACKET_BATTLE_ACTION, &packet, sizeof(packet)))
+    battle_action_packet.header.clientFrame = session->localClientFrame;
+    battle_action_packet.header.serverTickSeen = session->bridgeTick;
+    battle_action_packet.header.actionSequence = action_sequence;
+    battle_action_packet.header.transactionId = MultiplayerCommit_GetTransactionId(&transaction_key);
+    battle_action_packet.subsessionId = subsession_id;
+    battle_action_packet.battlerSlot = battler_slot;
+    battle_action_packet.action = action;
+    battle_action_packet.target = target;
+    battle_action_packet.parameter = parameter;
+    MultiplayerCommit_Prepare(&transaction_key, MULTIPLAYER_COMMIT_BATTLE, &battle_action_packet, sizeof(battle_action_packet), NULL);
+    if (!NetTransport_SendPacket(NET_PACKET_BATTLE_ACTION, &battle_action_packet, sizeof(battle_action_packet)))
     {
-        MultiplayerCommit_Rollback(&key, MULTIPLAYER_COMMIT_BATTLE, &packet, sizeof(packet), NULL);
+        MultiplayerCommit_Rollback(&transaction_key, MULTIPLAYER_COMMIT_BATTLE, &battle_action_packet, sizeof(battle_action_packet), NULL);
         return FALSE;
     }
 
@@ -647,7 +643,7 @@ bool8 MultiplayerBattle_SendAction(u8 subsessionId, u8 battlerSlot, u8 action, u
 #endif
 }
 
-void MultiplayerBattle_OnBattleStart(u32 battleTypeFlags)
+void MultiplayerBattle_OnBattleStart(u32 battle_type_flags)
 {
 #if FEATURE_MULTIPLAYER
     if (!MultiplayerSession_IsOnline())
@@ -665,7 +661,7 @@ void MultiplayerBattle_OnBattleStart(u32 battleTypeFlags)
     }
     if (!sPendingPveBattle)
         return;
-    if (!(battleTypeFlags & BATTLE_TYPE_TRAINER))
+    if (!(battle_type_flags & BATTLE_TYPE_TRAINER))
     {
         if (sPendingSubsessionId != NET_SUBSESSION_NONE)
             MultiplayerSession_EndSubsession(sPendingSubsessionId, MULTIPLAYER_SUBSESSION_STATE_ERROR);
@@ -680,14 +676,14 @@ void MultiplayerBattle_OnBattleStart(u32 battleTypeFlags)
     sPendingSubsessionId = NET_SUBSESSION_NONE;
     sPendingPveBattle = FALSE;
 #else
-    (void)battleTypeFlags;
+    (void)battle_type_flags;
 #endif
 }
 
-void MultiplayerBattle_OnBattleEnd(u32 battleOutcome)
+void MultiplayerBattle_OnBattleEnd(u32 battle_outcome)
 {
 #if FEATURE_MULTIPLAYER
-    (void)battleOutcome;
+    (void)battle_outcome;
 
     if (!sMultiplayerBattleActive)
         return;
@@ -702,6 +698,6 @@ void MultiplayerBattle_OnBattleEnd(u32 battleOutcome)
     sStartedSubsessionId = NET_SUBSESSION_NONE;
     ResetPvePartner();
 #else
-    (void)battleOutcome;
+    (void)battle_outcome;
 #endif
 }

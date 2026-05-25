@@ -38,12 +38,12 @@ struct ModBadgeEffectDefinition
 };
 
 void BadgeApi_Init(void);
-u8 BadgeApi_GetLevel(u8 badgeId);
+u8 BadgeApi_GetLevel(u8 badge_id);
 // Setting a level to 0 clears only the modded stored level. A vanilla badge
 // flag still counts as minimum level 1.
-bool8 BadgeApi_SetLevel(u8 badgeId, u8 level);
-bool8 BadgeApi_IncrementLevel(u8 badgeId, u8 amount);
-s16 BadgeApi_GetEffectPercent(u8 effectKind, u8 target, u8 battlerId);
-bool8 BadgeApi_IsEffectDefinitionValid(const struct ModBadgeEffectDefinition *definition, bool8 allowEmptyNone);
+bool8 BadgeApi_SetLevel(u8 badge_id, u8 level);
+bool8 BadgeApi_IncrementLevel(u8 badge_id, u8 amount);
+s16 BadgeApi_GetEffectPercent(u8 effect_kind, u8 target, u8 battler_id);
+bool8 BadgeApi_IsEffectDefinitionValid(const struct ModBadgeEffectDefinition *definition, bool8 allow_empty_none);
 
 #endif // GUARD_MOD_BADGE_H

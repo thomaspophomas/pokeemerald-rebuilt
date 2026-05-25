@@ -10,7 +10,7 @@
 #endif
 
 #ifndef FEATURE_MODS
-#define FEATURE_MODS 1
+#define FEATURE_MODS 0
 #endif
 
 #ifndef FEATURE_MULTIPLAYER

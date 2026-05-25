@@ -23,7 +23,7 @@ struct ModBattleMoveDefinition
     struct BattleMove data;
 };
 
-bool8 BattleDataApi_IsMoveDefinitionValid(const struct ModBattleMoveDefinition *definition, bool8 allowEmptyDefault);
+bool8 BattleDataApi_IsMoveDefinitionValid(const struct ModBattleMoveDefinition *definition, bool8 allow_empty_default);
 const struct BattleMove *BattleDataApi_GetMove(u16 move);
 u8 BattleDataApi_GetMovePP(u16 move);
 

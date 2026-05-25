@@ -21,7 +21,7 @@ struct ModShopDefinition
     u16 items[MOD_SHOP_MAX_ITEMS];
 };
 
-bool8 ShopApi_IsDefinitionValid(const struct ModShopDefinition *definition, bool8 allowEmptyDefault);
-const u16 *ShopApi_GetItemsForSale(u8 martType, const u16 *vanillaItems);
+bool8 ShopApi_IsDefinitionValid(const struct ModShopDefinition *definition, bool8 allow_empty_default);
+const u16 *ShopApi_GetItemsForSale(u8 mart_type, const u16 *vanilla_items);
 
 #endif // GUARD_MOD_SHOP_H

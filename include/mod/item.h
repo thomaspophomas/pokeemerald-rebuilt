@@ -39,20 +39,20 @@ struct ModItemDefinition
     ItemUseFunc battleUseFunc;
 };
 
-bool8 ItemApi_IsDefinitionValid(const struct ModItemDefinition *definition, bool8 allowEmptyDefault);
-const u8 *ItemApi_GetName(u16 itemId, const u8 *vanilla);
-u16 ItemApi_GetPrice(u16 itemId, u16 vanilla);
-u8 ItemApi_GetHoldEffect(u16 itemId, u8 vanilla);
-u8 ItemApi_GetHoldEffectParam(u16 itemId, u8 vanilla);
-const u8 *ItemApi_GetDescription(u16 itemId, const u8 *vanilla);
-u8 ItemApi_GetImportance(u16 itemId, u8 vanilla);
-u8 ItemApi_GetPocket(u16 itemId, u8 vanilla);
-u8 ItemApi_GetType(u16 itemId, u8 vanilla);
-ItemUseFunc ItemApi_GetFieldFunc(u16 itemId, ItemUseFunc vanilla);
-u8 ItemApi_GetBattleUsage(u16 itemId, u8 vanilla);
-ItemUseFunc ItemApi_GetBattleFunc(u16 itemId, ItemUseFunc vanilla);
-u8 ItemApi_GetSecondaryId(u16 itemId, u8 vanilla);
-ItemUseFunc ItemApi_FindCompiledFieldUseHook(const char *sourceKey, const char *hookKey);
-ItemUseFunc ItemApi_FindCompiledBattleUseHook(const char *sourceKey, const char *hookKey);
+bool8 ItemApi_IsDefinitionValid(const struct ModItemDefinition *definition, bool8 allow_empty_default);
+const u8 *ItemApi_GetName(u16 item_id, const u8 *vanilla_name);
+u16 ItemApi_GetPrice(u16 item_id, u16 vanilla_price);
+u8 ItemApi_GetHoldEffect(u16 item_id, u8 vanilla_hold_effect);
+u8 ItemApi_GetHoldEffectParam(u16 item_id, u8 vanilla_hold_effect_param);
+const u8 *ItemApi_GetDescription(u16 item_id, const u8 *vanilla_description);
+u8 ItemApi_GetImportance(u16 item_id, u8 vanilla_importance);
+u8 ItemApi_GetPocket(u16 item_id, u8 vanilla_pocket);
+u8 ItemApi_GetType(u16 item_id, u8 vanilla_type);
+ItemUseFunc ItemApi_GetFieldFunc(u16 item_id, ItemUseFunc vanilla_field_func);
+u8 ItemApi_GetBattleUsage(u16 item_id, u8 vanilla_battle_usage);
+ItemUseFunc ItemApi_GetBattleFunc(u16 item_id, ItemUseFunc vanilla_battle_func);
+u8 ItemApi_GetSecondaryId(u16 item_id, u8 vanilla_secondary_id);
+ItemUseFunc ItemApi_FindCompiledFieldUseHook(const char *source_key, const char *hook_key);
+ItemUseFunc ItemApi_FindCompiledBattleUseHook(const char *source_key, const char *hook_key);
 
 #endif // GUARD_MOD_ITEM_H

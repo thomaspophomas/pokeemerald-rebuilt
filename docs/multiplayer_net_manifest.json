@@ -1,8 +1,8 @@
 {
   "name": "pokeemerald-rebuilt multiplayer net manifest",
   "protocolVersion": 2,
-  "emulatorBridgeVersion": 5,
-  "buildId": "0x00010007",
+  "emulatorBridgeVersion": 10,
+  "buildId": "0x0001000C",
   "rulesetHash": "0x00000003",
   "profileProtocolVersion": 1,
   "profileCapabilityHash": "0x00000006",
@@ -11,9 +11,15 @@
   "transportMode": "server_bridge",
   "transportModeValue": 1,
   "maxNetPlayers": 8,
-  "reliableQueueSize": 16,
-  "packetPayloadSize": 128,
-  "commitLogSize": 32,
+  "reliableQueueSize": 8,
+  "packetHeaderSize": 22,
+  "packetPayloadSize": 96,
+  "profileChunkDataSize": 80,
+  "catalogChunkEntryCount": 7,
+  "battleProfilePacket": "NET_PACKET_PLAYER_BATTLE_PROFILE",
+  "battleProfilePublishIntervalFrames": 60,
+  "battleProfilePublishRetryFrames": 10,
+  "commitLogSize": 16,
   "authoritativeServer": true,
   "mailbox": {
     "symbol": "gNetEmulatorBridgeMailbox",
@@ -21,6 +27,6 @@
     "memoryDomain": "EWRAM",
     "minAddress": "0x02000000",
     "maxAddress": "0x0203FFFF",
-    "maxSize": 8192
+    "maxSize": 4096
   }
 }

@@ -20,14 +20,14 @@ static bool8 DefinitionIsEmptyDefault(const struct ModTrainerDefinition *definit
 
 static bool8 RuntimeTrainerKeyExists(const char *key, const struct ModTrainerDefinition *trainers, u16 count)
 {
-    u16 i;
+    u16 trainer_index;
 
     if (key == NULL || trainers == NULL)
         return FALSE;
 
-    for (i = 0; i < count; i++)
+    for (trainer_index = 0; trainer_index < count; trainer_index++)
     {
-        if (trainers[i].key != NULL && strcmp(trainers[i].key, key) == 0)
+        if (trainers[trainer_index].key != NULL && strcmp(trainers[trainer_index].key, key) == 0)
             return TRUE;
     }
 
@@ -37,144 +37,144 @@ static bool8 RuntimeTrainerKeyExists(const char *key, const struct ModTrainerDef
 static const struct ModTrainerDefinition *FindBestTrainer(
     const struct ModTrainerDefinition *trainers,
     u16 count,
-    u16 trainerId,
-    const struct ModTrainerDefinition *shadowingTrainers,
-    u16 shadowingCount)
+    u16 trainer_id,
+    const struct ModTrainerDefinition *shadowing_trainers,
+    u16 shadowing_count)
 {
-    const struct ModTrainerDefinition *best = NULL;
-    u16 i;
+    const struct ModTrainerDefinition *best_definition = NULL;
+    u16 trainer_index;
 
     if (trainers == NULL)
         return NULL;
 
-    for (i = 0; i < count; i++)
+    for (trainer_index = 0; trainer_index < count; trainer_index++)
     {
-        const struct ModTrainerDefinition *definition = &trainers[i];
+        const struct ModTrainerDefinition *definition = &trainers[trainer_index];
 
-        if (shadowingTrainers != NULL && RuntimeTrainerKeyExists(definition->key, shadowingTrainers, shadowingCount))
+        if (shadowing_trainers != NULL && RuntimeTrainerKeyExists(definition->key, shadowing_trainers, shadowing_count))
             continue;
         if (!TrainerApi_IsDefinitionValid(definition, TRUE) || DefinitionIsEmptyDefault(definition))
             continue;
-        if (definition->trainerId != trainerId)
+        if (definition->trainerId != trainer_id)
             continue;
-        if (best == NULL || definition->priority < best->priority)
-            best = definition;
+        if (best_definition == NULL || definition->priority < best_definition->priority)
+            best_definition = definition;
     }
 
-    return best;
+    return best_definition;
 }
 
-const struct ModTrainerDefinition *TrainerApi_GetDefinition(u16 trainerId)
+const struct ModTrainerDefinition *TrainerApi_GetDefinition(u16 trainer_id)
 {
-    const struct ModTrainerDefinition *runtimeTrainers;
+    const struct ModTrainerDefinition *runtime_trainers;
     const struct ModTrainerDefinition *best;
-    u16 runtimeCount;
+    u16 runtime_count;
 
-    runtimeTrainers = ModRuntimeProfile_GetTrainers(&runtimeCount);
-    best = FindBestTrainer(runtimeTrainers, runtimeCount, trainerId, NULL, 0);
+    runtime_trainers = ModRuntimeProfile_GetTrainers(&runtime_count);
+    best = FindBestTrainer(runtime_trainers, runtime_count, trainer_id, NULL, 0);
     if (best != NULL)
         return best;
 
-    return FindBestTrainer(gModTrainerDefinitions, gModTrainerDefinitionCount, trainerId, runtimeTrainers, runtimeCount);
+    return FindBestTrainer(gModTrainerDefinitions, gModTrainerDefinitionCount, trainer_id, runtime_trainers, runtime_count);
 }
 
-bool8 TrainerApi_IsDefinitionValid(const struct ModTrainerDefinition *definition, bool8 allowEmptyDefault)
+bool8 TrainerApi_IsDefinitionValid(const struct ModTrainerDefinition *definition, bool8 allow_empty_default)
 {
-    u8 i;
-    u8 j;
+    u8 party_mon_index;
+    u8 move_index;
 
     if (definition == NULL)
         return FALSE;
-    if (allowEmptyDefault && DefinitionIsEmptyDefault(definition))
+    if (allow_empty_default && DefinitionIsEmptyDefault(definition))
         return TRUE;
     if (definition->key == NULL || definition->key[0] == '\0')
         return FALSE;
     if ((definition->flags & MOD_TRAINER_OVERRIDE_PARTY) && (definition->partySize == 0 || definition->partySize > MOD_TRAINER_MAX_PARTY_SIZE))
         return FALSE;
-    for (i = 0; i < definition->partySize; i++)
+    for (party_mon_index = 0; party_mon_index < definition->partySize; party_mon_index++)
     {
-        if (definition->party[i].lvl == 0 || definition->party[i].lvl > MAX_LEVEL)
+        if (definition->party[party_mon_index].lvl == 0 || definition->party[party_mon_index].lvl > MAX_LEVEL)
             return FALSE;
-        if (definition->party[i].species == SPECIES_NONE || definition->party[i].species >= NUM_SPECIES)
+        if (definition->party[party_mon_index].species == SPECIES_NONE || definition->party[party_mon_index].species >= NUM_SPECIES)
             return FALSE;
-        for (j = 0; j < MAX_MON_MOVES; j++)
+        for (move_index = 0; move_index < MAX_MON_MOVES; move_index++)
         {
-            if (definition->party[i].moves[j] >= MOVES_COUNT)
+            if (definition->party[party_mon_index].moves[move_index] >= MOVES_COUNT)
                 return FALSE;
         }
     }
     return TRUE;
 }
 
-u8 TrainerApi_GetPartySize(u16 trainerId, u8 vanilla)
+u8 TrainerApi_GetPartySize(u16 trainer_id, u8 vanilla)
 {
-    const struct ModTrainerDefinition *definition = TrainerApi_GetDefinition(trainerId);
+    const struct ModTrainerDefinition *definition = TrainerApi_GetDefinition(trainer_id);
 
     if (definition != NULL && (definition->flags & MOD_TRAINER_OVERRIDE_PARTY))
         return definition->partySize;
     return vanilla;
 }
 
-u8 TrainerApi_GetPartyLevel(u16 trainerId, u8 partyIndex, u8 vanilla)
+u8 TrainerApi_GetPartyLevel(u16 trainer_id, u8 party_index, u8 vanilla)
 {
-    const struct ModTrainerDefinition *definition = TrainerApi_GetDefinition(trainerId);
+    const struct ModTrainerDefinition *definition = TrainerApi_GetDefinition(trainer_id);
 
-    if (definition != NULL && (definition->flags & MOD_TRAINER_OVERRIDE_PARTY) && partyIndex < definition->partySize)
-        return definition->party[partyIndex].lvl;
+    if (definition != NULL && (definition->flags & MOD_TRAINER_OVERRIDE_PARTY) && party_index < definition->partySize)
+        return definition->party[party_index].lvl;
     return vanilla;
 }
 
-bool8 TrainerApi_CreateParty(u16 trainerId, struct Pokemon *party, u8 maxCount, u8 *partySize)
+bool8 TrainerApi_CreateParty(u16 trainer_id, struct Pokemon *party, u8 max_count, u8 *party_size)
 {
-    const struct ModTrainerDefinition *definition = TrainerApi_GetDefinition(trainerId);
-    u8 count;
-    u8 i;
-    u8 j;
+    const struct ModTrainerDefinition *definition = TrainerApi_GetDefinition(trainer_id);
+    u8 party_count_to_create;
+    u8 party_mon_index;
+    u8 move_index;
 
     if (definition == NULL || !(definition->flags & MOD_TRAINER_OVERRIDE_PARTY) || party == NULL)
         return FALSE;
 
-    count = definition->partySize;
-    if (count > maxCount)
-        count = maxCount;
+    party_count_to_create = definition->partySize;
+    if (party_count_to_create > max_count)
+        party_count_to_create = max_count;
 
-    for (i = 0; i < count; i++)
+    for (party_mon_index = 0; party_mon_index < party_count_to_create; party_mon_index++)
     {
-        const struct ModTrainerMon *mon = &definition->party[i];
-        u8 fixedIV = mon->iv * MAX_PER_STAT_IVS / 255;
+        const struct ModTrainerMon *trainer_party_mon_definition = &definition->party[party_mon_index];
+        u8 fixed_iv = trainer_party_mon_definition->iv * MAX_PER_STAT_IVS / 255;
 
-        CreateMon(&party[i], mon->species, mon->lvl, fixedIV, TRUE, 0x88 + (i << 8), OT_ID_RANDOM_NO_SHINY, 0);
-        if (mon->heldItem != ITEM_NONE)
-            SetMonData(&party[i], MON_DATA_HELD_ITEM, &mon->heldItem);
-        for (j = 0; j < MAX_MON_MOVES; j++)
+        CreateMon(&party[party_mon_index], trainer_party_mon_definition->species, trainer_party_mon_definition->lvl, fixed_iv, TRUE, 0x88 + (party_mon_index << 8), OT_ID_RANDOM_NO_SHINY, 0);
+        if (trainer_party_mon_definition->heldItem != ITEM_NONE)
+            SetMonData(&party[party_mon_index], MON_DATA_HELD_ITEM, &trainer_party_mon_definition->heldItem);
+        for (move_index = 0; move_index < MAX_MON_MOVES; move_index++)
         {
             u8 pp;
 
-            if (mon->moves[j] == MOVE_NONE)
+            if (trainer_party_mon_definition->moves[move_index] == MOVE_NONE)
                 continue;
-            SetMonData(&party[i], MON_DATA_MOVE1 + j, &mon->moves[j]);
-            pp = BattleDataApi_GetMovePP(mon->moves[j]);
-            SetMonData(&party[i], MON_DATA_PP1 + j, &pp);
+            SetMonData(&party[party_mon_index], MON_DATA_MOVE1 + move_index, &trainer_party_mon_definition->moves[move_index]);
+            pp = BattleDataApi_GetMovePP(trainer_party_mon_definition->moves[move_index]);
+            SetMonData(&party[party_mon_index], MON_DATA_PP1 + move_index, &pp);
         }
     }
 
-    if (partySize != NULL)
-        *partySize = definition->partySize;
+    if (party_size != NULL)
+        *party_size = definition->partySize;
     return TRUE;
 }
 
-bool8 TrainerApi_IsDoubleBattle(u16 trainerId, bool8 vanilla)
+bool8 TrainerApi_IsDoubleBattle(u16 trainer_id, bool8 vanilla)
 {
-    const struct ModTrainerDefinition *definition = TrainerApi_GetDefinition(trainerId);
+    const struct ModTrainerDefinition *definition = TrainerApi_GetDefinition(trainer_id);
 
     if (definition != NULL && (definition->flags & MOD_TRAINER_OVERRIDE_DOUBLE))
         return definition->doubleBattle;
     return vanilla;
 }
 
-u8 TrainerApi_GetTrainerClass(u16 trainerId, u8 vanilla)
+u8 TrainerApi_GetTrainerClass(u16 trainer_id, u8 vanilla)
 {
-    const struct ModTrainerDefinition *definition = TrainerApi_GetDefinition(trainerId);
+    const struct ModTrainerDefinition *definition = TrainerApi_GetDefinition(trainer_id);
 
     if (definition != NULL && (definition->flags & MOD_TRAINER_OVERRIDE_CLASS))
         return definition->trainerClass;

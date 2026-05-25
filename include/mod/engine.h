@@ -8,12 +8,12 @@
 
 struct EngineRuleset;
 
-typedef u8 (*EngineRulesetCaptureFunc)(const struct EngineRuleset *ruleset, u16 ballItemId);
-typedef u32 (*EngineRulesetBattleWeatherFunc)(const struct EngineRuleset *ruleset, u16 weatherLayers);
+typedef u8 (*EngineRulesetCaptureFunc)(const struct EngineRuleset *ruleset, u16 ball_item_id);
+typedef u32 (*EngineRulesetBattleWeatherFunc)(const struct EngineRuleset *ruleset, u16 weather_layers);
 
 struct EngineRuleset
 {
-    const char *id;
+    const char *ruleset_id;
     const char *name;
     u16 version;
     u32 flags;
@@ -23,8 +23,8 @@ struct EngineRuleset
 
 void EngineApi_Init(void);
 const struct EngineRuleset *EngineApi_GetActiveRuleset(void);
-bool8 EngineApi_SetActiveRuleset(const char *id);
-const struct EngineRuleset *EngineApi_FindRuleset(const char *id);
+bool8 EngineApi_SetActiveRuleset(const char *ruleset_id);
+const struct EngineRuleset *EngineApi_FindRuleset(const char *ruleset_id);
 u16 EngineApi_GetRulesetCount(void);
 
 #endif // GUARD_MOD_ENGINE_H

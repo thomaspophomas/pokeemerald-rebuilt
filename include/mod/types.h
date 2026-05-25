@@ -8,7 +8,7 @@
 
 struct ModManifest
 {
-    const char *id;
+    const char *mod_id;
     const char *name;
     const char *version;
     u16 priority;
@@ -18,7 +18,7 @@ struct ModManifest
 struct ModNamedResource
 {
     const char *key;
-    u16 id;
+    u16 resource_id;
 };
 
 #endif // GUARD_MOD_TYPES_H

@@ -30,45 +30,45 @@ static const struct ModPokeBallDefinition sVanillaPokeBallDefinitions[] =
     { "vanilla:premier_ball", ITEM_PREMIER_BALL, BALL_PREMIER, 10,                             0, NULL, BattleScript_BallThrow,       NULL },
 };
 
-static const struct ModPokeBallDefinition *FindGeneratedBall(u16 itemId)
+static const struct ModPokeBallDefinition *FindGeneratedBall(u16 item_id)
 {
-    u16 i;
+    u16 generated_ball_index;
 
-    for (i = 0; i < gModPokeBallDefinitionCount; i++)
+    for (generated_ball_index = 0; generated_ball_index < gModPokeBallDefinitionCount; generated_ball_index++)
     {
-        if (gModPokeBallDefinitions[i].itemId == itemId)
-            return &gModPokeBallDefinitions[i];
+        if (gModPokeBallDefinitions[generated_ball_index].itemId == item_id)
+            return &gModPokeBallDefinitions[generated_ball_index];
     }
 
     return NULL;
 }
 
-static const struct ModPokeBallDefinition *FindVanillaBall(u16 itemId)
+static const struct ModPokeBallDefinition *FindVanillaBall(u16 item_id)
 {
-    u8 i;
+    u8 vanilla_ball_index;
 
-    for (i = 0; i < ARRAY_COUNT(sVanillaPokeBallDefinitions); i++)
+    for (vanilla_ball_index = 0; vanilla_ball_index < ARRAY_COUNT(sVanillaPokeBallDefinitions); vanilla_ball_index++)
     {
-        if (sVanillaPokeBallDefinitions[i].itemId == itemId)
-            return &sVanillaPokeBallDefinitions[i];
+        if (sVanillaPokeBallDefinitions[vanilla_ball_index].itemId == item_id)
+            return &sVanillaPokeBallDefinitions[vanilla_ball_index];
     }
 
     return NULL;
 }
 
-bool8 PokeBallApi_IsBall(u16 itemId)
+bool8 PokeBallApi_IsBall(u16 item_id)
 {
-    return PokeBallApi_GetDefinition(itemId) != NULL;
+    return PokeBallApi_GetDefinition(item_id) != NULL;
 }
 
-const struct ModPokeBallDefinition *PokeBallApi_GetDefinition(u16 itemId)
+const struct ModPokeBallDefinition *PokeBallApi_GetDefinition(u16 item_id)
 {
-    const struct ModPokeBallDefinition *definition = FindGeneratedBall(itemId);
+    const struct ModPokeBallDefinition *definition = FindGeneratedBall(item_id);
 
     if (definition != NULL)
         return definition;
 
-    return FindVanillaBall(itemId);
+    return FindVanillaBall(item_id);
 }
 
 u8 PokeBallApi_GetCatchModifier(const struct PokeBallCatchContext *context)
@@ -118,37 +118,37 @@ u8 PokeBallApi_GetCatchModifier(const struct PokeBallCatchContext *context)
     return POKEBALL_CATCH_MODIFIER_DEFAULT;
 }
 
-bool8 PokeBallApi_CalculateThrowResult(const struct PokeBallCatchContext *context, struct PokeBallThrowResult *result)
+bool8 PokeBallApi_CalculateThrowResult(const struct PokeBallCatchContext *context, struct PokeBallThrowResult *throw_result)
 {
     u32 odds;
     u8 shakes;
 
-    if (context == NULL || result == NULL)
+    if (context == NULL || throw_result == NULL)
         return FALSE;
 
-    memset(result, 0, sizeof(*result));
-    result->catchRate = context->catchRate;
-    result->ballMultiplier = PokeBallApi_GetCatchModifier(context);
-    result->usedMasterBall = context->itemId == ITEM_MASTER_BALL;
-    result->recordCatchAttempt = context->itemId != ITEM_MASTER_BALL && context->itemId != ITEM_SAFARI_BALL;
+    memset(throw_result, 0, sizeof(*throw_result));
+    throw_result->catchRate = context->catchRate;
+    throw_result->ballMultiplier = PokeBallApi_GetCatchModifier(context);
+    throw_result->usedMasterBall = context->itemId == ITEM_MASTER_BALL;
+    throw_result->recordCatchAttempt = context->itemId != ITEM_MASTER_BALL && context->itemId != ITEM_SAFARI_BALL;
 
-    if (result->usedMasterBall)
+    if (throw_result->usedMasterBall)
     {
-        result->caught = TRUE;
-        result->shakes = BALL_3_SHAKES_SUCCESS;
-        result->odds = 255;
+        throw_result->caught = TRUE;
+        throw_result->shakes = BALL_3_SHAKES_SUCCESS;
+        throw_result->odds = 255;
         return TRUE;
     }
 
-    if (context->targetMaxHp == 0 || result->catchRate == 0 || result->ballMultiplier == 0)
+    if (context->targetMaxHp == 0 || throw_result->catchRate == 0 || throw_result->ballMultiplier == 0)
     {
-        result->caught = FALSE;
-        result->shakes = BALL_NO_SHAKES;
-        result->odds = 0;
+        throw_result->caught = FALSE;
+        throw_result->shakes = BALL_NO_SHAKES;
+        throw_result->odds = 0;
         return TRUE;
     }
 
-    odds = (result->catchRate * result->ballMultiplier / 10)
+    odds = (throw_result->catchRate * throw_result->ballMultiplier / 10)
         * (context->targetMaxHp * 3 - context->targetHp * 2)
         / (3 * context->targetMaxHp);
 
@@ -157,18 +157,18 @@ bool8 PokeBallApi_CalculateThrowResult(const struct PokeBallCatchContext *contex
     if (context->targetStatus1 & (STATUS1_POISON | STATUS1_BURN | STATUS1_PARALYSIS | STATUS1_TOXIC_POISON))
         odds = (odds * 15) / 10;
 
-    result->odds = odds;
+    throw_result->odds = odds;
     if (odds > 254)
     {
-        result->caught = TRUE;
-        result->shakes = BALL_3_SHAKES_SUCCESS;
+        throw_result->caught = TRUE;
+        throw_result->shakes = BALL_3_SHAKES_SUCCESS;
         return TRUE;
     }
 
     if (odds == 0)
     {
-        result->caught = FALSE;
-        result->shakes = BALL_NO_SHAKES;
+        throw_result->caught = FALSE;
+        throw_result->shakes = BALL_NO_SHAKES;
         return TRUE;
     }
 
@@ -177,26 +177,26 @@ bool8 PokeBallApi_CalculateThrowResult(const struct PokeBallCatchContext *contex
 
     for (shakes = 0; shakes < BALL_3_SHAKES_SUCCESS && Random() < odds; shakes++);
 
-    result->caught = shakes == BALL_3_SHAKES_SUCCESS;
-    result->shakes = shakes;
+    throw_result->caught = shakes == BALL_3_SHAKES_SUCCESS;
+    throw_result->shakes = shakes;
     return TRUE;
 }
 
-const u8 *PokeBallApi_GetBattleScript(u16 itemId)
+const u8 *PokeBallApi_GetBattleScript(u16 item_id)
 {
-    const struct ModPokeBallDefinition *definition = PokeBallApi_GetDefinition(itemId);
+    const struct ModPokeBallDefinition *definition = PokeBallApi_GetDefinition(item_id);
 
     if (definition != NULL && definition->battleScript != NULL)
         return definition->battleScript;
-    if (itemId == ITEM_SAFARI_BALL)
+    if (item_id == ITEM_SAFARI_BALL)
         return BattleScript_SafariBallThrow;
 
     return BattleScript_BallThrow;
 }
 
-u8 PokeBallApi_GetBallSprite(u16 itemId)
+u8 PokeBallApi_GetBallSprite(u16 item_id)
 {
-    const struct ModPokeBallDefinition *definition = PokeBallApi_GetDefinition(itemId);
+    const struct ModPokeBallDefinition *definition = PokeBallApi_GetDefinition(item_id);
 
     if (definition != NULL && definition->ballId < POKEBALL_COUNT)
         return definition->ballId;
@@ -204,37 +204,37 @@ u8 PokeBallApi_GetBallSprite(u16 itemId)
     return BALL_POKE;
 }
 
-void PokeBallApi_OnCatchCommit(const struct PokeBallCatchContext *context, const struct PokeBallThrowResult *result)
+void PokeBallApi_OnCatchCommit(const struct PokeBallCatchContext *context, const struct PokeBallThrowResult *throw_result)
 {
     const struct ModPokeBallDefinition *definition;
 
-    if (context == NULL || result == NULL || !result->caught)
+    if (context == NULL || throw_result == NULL || !throw_result->caught)
         return;
 
     definition = PokeBallApi_GetDefinition(context->itemId);
     if (definition != NULL && definition->commitHook != NULL)
-        definition->commitHook(context, result);
+        definition->commitHook(context, throw_result);
 }
 
-void PokeBallApi_BuildContextFromBattle(struct PokeBallCatchContext *context, u16 itemId, u8 targetBattler)
+void PokeBallApi_BuildContextFromBattle(struct PokeBallCatchContext *context, u16 item_id, u8 target_battler)
 {
     u16 species;
 
     memset(context, 0, sizeof(*context));
-    context->itemId = itemId;
-    context->targetSpecies = gBattleMons[targetBattler].species;
-    context->targetLevel = gBattleMons[targetBattler].level;
-    context->targetType1 = gBattleMons[targetBattler].types[0];
-    context->targetType2 = gBattleMons[targetBattler].types[1];
-    context->targetMaxHp = gBattleMons[targetBattler].maxHP;
-    context->targetHp = gBattleMons[targetBattler].hp;
-    context->targetStatus1 = gBattleMons[targetBattler].status1;
+    context->itemId = item_id;
+    context->targetSpecies = gBattleMons[target_battler].species;
+    context->targetLevel = gBattleMons[target_battler].level;
+    context->targetType1 = gBattleMons[target_battler].types[0];
+    context->targetType2 = gBattleMons[target_battler].types[1];
+    context->targetMaxHp = gBattleMons[target_battler].maxHP;
+    context->targetHp = gBattleMons[target_battler].hp;
+    context->targetStatus1 = gBattleMons[target_battler].status1;
     context->battleTurnCounter = gBattleResults.battleTurnCounter;
     context->safariCatchFactor = gBattleStruct->safariCatchFactor;
     context->mapType = GetCurrentMapType();
     context->battleTypeFlags = gBattleTypeFlags;
 
-    if (itemId == ITEM_SAFARI_BALL)
+    if (item_id == ITEM_SAFARI_BALL)
         context->catchRate = gBattleStruct->safariCatchFactor * 1275 / 100;
     else
         context->catchRate = gSpeciesInfo[context->targetSpecies].catchRate;

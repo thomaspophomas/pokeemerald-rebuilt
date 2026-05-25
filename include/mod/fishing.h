@@ -97,10 +97,10 @@ struct FishingActionDefinition
 void FishingApi_BeginAttempt(u8 rod);
 void FishingApi_EndAttempt(u8 outcome);
 bool8 FishingApi_HasActions(void);
-bool8 FishingApi_IsDefinitionValid(const struct FishingActionDefinition *definition, bool8 allowEmptyDefault);
+bool8 FishingApi_IsDefinitionValid(const struct FishingActionDefinition *definition, bool8 allow_empty_default);
 void FishingApi_InitRequestFromDefinition(const struct FishingActionDefinition *definition, struct FishingActionRequest *request);
 u8 FishingApi_RunPhase(struct FishingContext *context, struct FishingActionRequest *request);
-FishingActionHook FishingApi_FindCompiledHook(const char *sourceKey, const char *hookKey);
+FishingActionHook FishingApi_FindCompiledHook(const char *source_key, const char *hook_key);
 u8 FishingApi_RequestConfiguredAction(const struct FishingActionDefinition *definition, struct FishingContext *context, struct FishingActionRequest *request);
 
 #endif // GUARD_MOD_FISHING_H

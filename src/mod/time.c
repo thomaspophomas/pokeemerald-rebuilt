@@ -14,19 +14,19 @@ static EWRAM_DATA u16 sLastDayCount = 0;
 
 static u8 GetSegmentFromMinute(u16 minuteOfDay)
 {
-    u16 i;
+    u16 time_segment_index;
 
-    for (i = 0; i < gModTimeSegmentCount; i++)
+    for (time_segment_index = 0; time_segment_index < gModTimeSegmentCount; time_segment_index++)
     {
-        if (gModTimeSegments[i].startMinute <= gModTimeSegments[i].endMinute)
+        if (gModTimeSegments[time_segment_index].startMinute <= gModTimeSegments[time_segment_index].endMinute)
         {
-            if (minuteOfDay >= gModTimeSegments[i].startMinute && minuteOfDay <= gModTimeSegments[i].endMinute)
-                return gModTimeSegments[i].segment;
+            if (minuteOfDay >= gModTimeSegments[time_segment_index].startMinute && minuteOfDay <= gModTimeSegments[time_segment_index].endMinute)
+                return gModTimeSegments[time_segment_index].segment;
         }
         else
         {
-            if (minuteOfDay >= gModTimeSegments[i].startMinute || minuteOfDay <= gModTimeSegments[i].endMinute)
-                return gModTimeSegments[i].segment;
+            if (minuteOfDay >= gModTimeSegments[time_segment_index].startMinute || minuteOfDay <= gModTimeSegments[time_segment_index].endMinute)
+                return gModTimeSegments[time_segment_index].segment;
         }
     }
 

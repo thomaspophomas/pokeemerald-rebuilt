@@ -52,14 +52,14 @@ static bool8 DefinitionMatchesContext(const struct FishingActionDefinition *defi
 
 static bool8 RuntimeActionKeyExists(const char *key, const struct FishingActionDefinition *actions, u16 count)
 {
-    u16 i;
+    u16 action_index;
 
     if (key == NULL || actions == NULL)
         return FALSE;
 
-    for (i = 0; i < count; i++)
+    for (action_index = 0; action_index < count; action_index++)
     {
-        if (actions[i].key != NULL && strcmp(actions[i].key, key) == 0)
+        if (actions[action_index].key != NULL && strcmp(actions[action_index].key, key) == 0)
             return TRUE;
     }
 
@@ -74,30 +74,30 @@ static u8 RunActions(
     const struct FishingActionDefinition *shadowingActions,
     u16 shadowingActionCount)
 {
-    u16 i;
-    u8 result;
+    u16 action_index;
+    u8 action_result;
 
     if (actions == NULL)
         return FISHING_ACTION_CONTINUE;
 
-    for (i = 0; i < count; i++)
+    for (action_index = 0; action_index < count; action_index++)
     {
-        if (!DefinitionMatchesContext(&actions[i], context))
+        if (!DefinitionMatchesContext(&actions[action_index], context))
             continue;
-        if (actions[i].hook == NULL)
+        if (actions[action_index].hook == NULL)
             continue;
-        if (RuntimeActionKeyExists(actions[i].key, shadowingActions, shadowingActionCount))
+        if (RuntimeActionKeyExists(actions[action_index].key, shadowingActions, shadowingActionCount))
             continue;
 
-        result = actions[i].hook(&actions[i], context, request);
-        switch (result)
+        action_result = actions[action_index].hook(&actions[action_index], context, request);
+        switch (action_result)
         {
         case FISHING_ACTION_CONTINUE:
             break;
         case FISHING_ACTION_OVERRIDE:
         case FISHING_ACTION_REQUEST_ACTION:
         case FISHING_ACTION_CANCEL:
-            return result;
+            return action_result;
         default:
             return FISHING_ACTION_CONTINUE;
         }
@@ -127,11 +127,11 @@ bool8 FishingApi_HasActions(void)
     return ModRuntimeProfile_GetFishingActions(&runtimeCount) != NULL && runtimeCount != 0;
 }
 
-bool8 FishingApi_IsDefinitionValid(const struct FishingActionDefinition *definition, bool8 allowEmptyDefault)
+bool8 FishingApi_IsDefinitionValid(const struct FishingActionDefinition *definition, bool8 allow_empty_default)
 {
     if (definition == NULL)
         return FALSE;
-    if (allowEmptyDefault && DefinitionIsEmptyDefault(definition))
+    if (allow_empty_default && DefinitionIsEmptyDefault(definition))
         return TRUE;
     if (definition->key == NULL || definition->key[0] == '\0')
         return FALSE;
@@ -171,7 +171,7 @@ u8 FishingApi_RunPhase(struct FishingContext *context, struct FishingActionReque
 {
     const struct FishingActionDefinition *runtimeActions;
     u16 runtimeCount = 0;
-    u8 result;
+    u8 compiled_action_result;
 
     if (context == NULL || request == NULL)
         return FISHING_ACTION_CONTINUE;
@@ -183,27 +183,27 @@ u8 FishingApi_RunPhase(struct FishingContext *context, struct FishingActionReque
     FishingApi_InitRequestFromDefinition(NULL, request);
     runtimeActions = ModRuntimeProfile_GetFishingActions(&runtimeCount);
 
-    result = RunActions(gModFishingActions, gModFishingActionCount, context, request, runtimeActions, runtimeCount);
-    if (result != FISHING_ACTION_CONTINUE)
-        return result;
+    compiled_action_result = RunActions(gModFishingActions, gModFishingActionCount, context, request, runtimeActions, runtimeCount);
+    if (compiled_action_result != FISHING_ACTION_CONTINUE)
+        return compiled_action_result;
 
     return RunActions(runtimeActions, runtimeCount, context, request, NULL, 0);
 }
 
-FishingActionHook FishingApi_FindCompiledHook(const char *sourceKey, const char *hookKey)
+FishingActionHook FishingApi_FindCompiledHook(const char *source_key, const char *hook_key)
 {
-    u16 i;
+    u16 action_index;
 
-    if (sourceKey == NULL || hookKey == NULL || sourceKey[0] == '\0' || hookKey[0] == '\0')
+    if (source_key == NULL || hook_key == NULL || source_key[0] == '\0' || hook_key[0] == '\0')
         return NULL;
 
-    for (i = 0; i < gModFishingActionCount; i++)
+    for (action_index = 0; action_index < gModFishingActionCount; action_index++)
     {
-        if (gModFishingActions[i].key == NULL || gModFishingActions[i].hookKey == NULL)
+        if (gModFishingActions[action_index].key == NULL || gModFishingActions[action_index].hookKey == NULL)
             continue;
-        if (strcmp(gModFishingActions[i].key, sourceKey) == 0
-         && strcmp(gModFishingActions[i].hookKey, hookKey) == 0)
-            return gModFishingActions[i].hook;
+        if (strcmp(gModFishingActions[action_index].key, source_key) == 0
+         && strcmp(gModFishingActions[action_index].hookKey, hook_key) == 0)
+            return gModFishingActions[action_index].hook;
     }
 
     return NULL;

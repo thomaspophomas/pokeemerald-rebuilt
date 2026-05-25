@@ -17,11 +17,11 @@ struct MultiplayerTradeRequest
 bool8 MultiplayerTrade_CanStart(const struct MultiplayerTradeRequest *request);
 bool8 MultiplayerTrade_Start(const struct MultiplayerTradeRequest *request);
 void MultiplayerTrade_Reset(void);
-bool8 MultiplayerTrade_StartItemTrade(u8 otherPlayerId, u32 moneyAmount);
-bool8 MultiplayerTrade_SendAction(u8 subsessionId, u8 action, u16 partySlot, u32 tradeChecksum, u32 moneyAmount);
+bool8 MultiplayerTrade_StartItemTrade(u8 other_player_id, u32 money_amount);
+bool8 MultiplayerTrade_SendAction(u8 subsession_id, u8 action, u16 party_slot, u32 trade_checksum, u32 money_amount);
 void MultiplayerTrade_Tick(const struct MultiplayerSession *session);
-void MultiplayerTrade_OnCommitResult(const struct NetCommitResult *result);
-void MultiplayerTrade_ApplyRemoteAction(u8 senderPlayerId, const struct NetTradeAction *action);
-void MultiplayerTrade_End(u8 subsessionId, bool8 committed);
+void MultiplayerTrade_OnCommitResult(const struct NetCommitResult *commit_result);
+void MultiplayerTrade_ApplyRemoteAction(u8 sender_player_id, const struct NetTradeAction *trade_action);
+void MultiplayerTrade_End(u8 subsession_id, bool8 committed);
 
 #endif // GUARD_MULTIPLAYER_TRADE_H

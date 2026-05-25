@@ -98,7 +98,13 @@ def main() -> None:
     expect("transportModeValue", manifest["transportModeValue"], parse_int(read_define(CONSTANTS, "NET_TRANSPORT_MODE_SERVER_BRIDGE")))
     expect("maxNetPlayers", manifest["maxNetPlayers"], parse_int(read_define(CONSTANTS, "MAX_NET_PLAYERS")))
     expect("reliableQueueSize", manifest["reliableQueueSize"], parse_int(read_define(CONSTANTS, "NET_RELIABLE_QUEUE_SIZE")))
+    expect("packetHeaderSize", manifest["packetHeaderSize"], parse_int(read_define(TRANSPORT, "NET_TRANSPORT_PACKET_HEADER_SIZE")))
     expect("packetPayloadSize", manifest["packetPayloadSize"], parse_int(read_define(TRANSPORT, "NET_TRANSPORT_PACKET_PAYLOAD_SIZE")))
+    expect("profileChunkDataSize", manifest["profileChunkDataSize"], parse_int(read_define(CONSTANTS, "NET_PROFILE_CHUNK_DATA_SIZE")))
+    expect("catalogChunkEntryCount", manifest["catalogChunkEntryCount"], parse_int(read_define(CONSTANTS, "NET_CATALOG_CHUNK_ENTRY_COUNT")))
+    expect("battleProfilePacket", manifest["battleProfilePacket"], "NET_PACKET_PLAYER_BATTLE_PROFILE")
+    expect("battleProfilePublishIntervalFrames", manifest["battleProfilePublishIntervalFrames"], parse_int(read_define(CONSTANTS, "NET_PLAYER_PROFILE_PUBLISH_INTERVAL_FRAMES")))
+    expect("battleProfilePublishRetryFrames", manifest["battleProfilePublishRetryFrames"], parse_int(read_define(CONSTANTS, "NET_PLAYER_PROFILE_PUBLISH_RETRY_FRAMES")))
     expect("commitLogSize", manifest["commitLogSize"], parse_int(read_define(CONSTANTS, "NET_COMMIT_LOG_SIZE")))
     if manifest.get("transportMode") != "server_bridge":
         raise SystemExit("transportMode must be server_bridge")

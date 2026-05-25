@@ -18,9 +18,9 @@ void ModEvent_BeginFrame(void)
 
 s8 ModEvent_Emit(u16 type, const void *payload, u16 size)
 {
-    u16 i;
+    u16 subscription_index;
     struct ModEvent event;
-    s8 result;
+    s8 handler_result;
 
     if (type >= MOD_EVENT_COUNT)
         return MOD_EVENT_RESULT_ERROR;
@@ -34,11 +34,11 @@ s8 ModEvent_Emit(u16 type, const void *payload, u16 size)
     event.payload = payload;
 
     sEventDepth++;
-    for (i = 0; i < gModEventSubscriptionCount; i++)
+    for (subscription_index = 0; subscription_index < gModEventSubscriptionCount; subscription_index++)
     {
-        if (gModEventSubscriptions[i].type != type)
+        if (gModEventSubscriptions[subscription_index].type != type)
             continue;
-        if (gModEventSubscriptions[i].handler == NULL)
+        if (gModEventSubscriptions[subscription_index].handler == NULL)
             continue;
         if (sFrameBudget == 0)
         {
@@ -47,11 +47,11 @@ s8 ModEvent_Emit(u16 type, const void *payload, u16 size)
         }
 
         sFrameBudget--;
-        result = gModEventSubscriptions[i].handler(&event);
-        if (result == MOD_EVENT_RESULT_STOP || result == MOD_EVENT_RESULT_ERROR)
+        handler_result = gModEventSubscriptions[subscription_index].handler(&event);
+        if (handler_result == MOD_EVENT_RESULT_STOP || handler_result == MOD_EVENT_RESULT_ERROR)
         {
             sEventDepth--;
-            return result;
+            return handler_result;
         }
     }
 

@@ -1,6 +1,6 @@
 # pokeemerald-rebuilt
 
-<!-- last_updated: 2026-05-22 -->
+<!-- last_updated: 2026-05-24 -->
 
 [![CI/CD](https://github.com/thomaspophomas/pokeemerald-rebuilt/actions/workflows/build.yml/badge.svg)](https://github.com/thomaspophomas/pokeemerald-rebuilt/actions/workflows/build.yml)
 
@@ -87,6 +87,8 @@ Known limits:
 - Battles and trades are subsessions, so uninvolved players stay in the
   overworld.
 - Build-time feature gate: `FEATURE_MULTIPLAYER=1`.
+- Drop-in mods are opt-in with `FEATURE_MODS=1`; the default build ignores
+  `mods/` and still builds the base game plus optional multiplayer.
 - Emulator bridge transport is opt-in with
   `FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT=1`; mGBA plus the sibling
   `pokeonline-bridge` is the current supported reference route for real
@@ -160,6 +162,12 @@ make -j"$(nproc)"
 make -j"$(nproc)" modern
 ```
 
+Enable drop-in mods explicitly:
+
+```bash
+make -j"$(nproc)" modern FEATURE_MODS=1
+```
+
 Enable the multiplayer architecture layer:
 
 ```bash
@@ -199,6 +207,7 @@ python3 scripts/companion_save_beacon_watch.py /path/to/pokeemerald.sav
 Generate mod registries explicitly when working on manifests:
 
 ```bash
+make generated FEATURE_MODS=1
 python3 scripts/modgen.py --root .
 ```
 
@@ -218,8 +227,9 @@ Jobs:
 - Non-modern `COMPARE=0` build plus `.sym` generation. This fork is no longer
   byte-identical to upstream vanilla Emerald, so the legacy `make compare`
   checksum is not a required CI gate.
-- Modern builds with `FEATURE_MULTIPLAYER=0`, `FEATURE_MULTIPLAYER=1`, and
-  an explicit emulator-transport variant.
+- Modern builds with `FEATURE_MODS=0`, `FEATURE_MULTIPLAYER=0`,
+  `FEATURE_MULTIPLAYER=1`, an explicit emulator-transport variant, and a
+  separate `FEATURE_MODS=1` SDK build.
 - Non-modern feature build with `FEATURE_MULTIPLAYER=1`, explicit
   emulator-transport coverage, and `COMPARE=0`.
 - Symbol branch update on pushes to `master`.
@@ -232,6 +242,11 @@ CI intentionally does not upload built ROM artifacts.
 - Compile-time feature gates live in `include/config/features.h`.
 - Mod manifests live under `mods/<modId>/...`; generated registries are build
   outputs and should not be edited by hand.
+- `src/mod` and `include/mod` are the SDK/runtime adapter layer, not a place for
+  concrete gameplay mods. Drop gameplay changes into `mods/<modId>`.
+- Multiplayer code must not include generated mod registries or mod runtime
+  internals directly; it consumes profile/catalog metadata through
+  `engine/extension_profile`.
 - New mod-facing systems should expose ports in `include/mod/` and keep raw
   Emerald globals inside one adapter file per domain.
 - Use `ModFlag_*` for mod/story flags. Raw `FlagSet`, `FlagClear`, and
@@ -271,7 +286,11 @@ CI intentionally does not upload built ROM artifacts.
   outfit, reward, and battle-result changes go through `MultiplayerCommit_*`
   and currently fail closed until a server mirror owns those domains.
 - Reliable action packets use a bounded bridge ring buffer; snapshots remain
-  latest-wins.
+  latest-wins. Party/battle partner profiles use a separate reliable profile
+  packet so the EWRAM mailbox does not carry full party data in every player
+  snapshot. Reliable packet payloads are capped at 96 bytes and stored with a
+  compact 22-byte mailbox header; larger runtime profiles and catalogs are
+  chunked.
 - Online time-sensitive systems must use `MultiplayerClock_*` and
   server-provided time; local RTC stays an offline compatibility fallback.
 - Multiplayer overworld ticks are gated to real overworld callbacks so menus,

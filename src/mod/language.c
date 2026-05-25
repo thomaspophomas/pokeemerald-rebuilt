@@ -10,16 +10,16 @@ static const u8 sMissingText[] = _("");
 
 static const struct ModLanguageText *FindTextForLanguage(const char *key, const char *language)
 {
-    u16 i;
+    u16 text_index;
 
     if (key == NULL || language == NULL)
         return NULL;
 
-    for (i = 0; i < gModLanguageTextCount; i++)
+    for (text_index = 0; text_index < gModLanguageTextCount; text_index++)
     {
-        if (strcmp(gModLanguageTexts[i].key, key) == 0
-         && strcmp(gModLanguageTexts[i].language, language) == 0)
-            return &gModLanguageTexts[i];
+        if (strcmp(gModLanguageTexts[text_index].key, key) == 0
+         && strcmp(gModLanguageTexts[text_index].language, language) == 0)
+            return &gModLanguageTexts[text_index];
     }
 
     return NULL;
@@ -38,23 +38,23 @@ const char *LanguageApi_GetActiveLanguage(void)
     return sActiveLanguage;
 }
 
-bool8 LanguageApi_SetActiveLanguage(const char *languageId)
+bool8 LanguageApi_SetActiveLanguage(const char *language_id)
 {
-    u8 i;
+    u8 language_id_char_index;
 
-    if (languageId == NULL || languageId[0] == '\0')
+    if (language_id == NULL || language_id[0] == '\0')
         return FALSE;
 
-    for (i = 0; i < LANGUAGE_API_MAX_ID_LENGTH && languageId[i] != '\0'; i++)
-        sActiveLanguage[i] = languageId[i];
-    sActiveLanguage[i] = '\0';
+    for (language_id_char_index = 0; language_id_char_index < LANGUAGE_API_MAX_ID_LENGTH && language_id[language_id_char_index] != '\0'; language_id_char_index++)
+        sActiveLanguage[language_id_char_index] = language_id[language_id_char_index];
+    sActiveLanguage[language_id_char_index] = '\0';
     return TRUE;
 }
 
 const u8 *LanguageApi_GetText(const char *key)
 {
     const struct ModLanguageText *text;
-    u16 i;
+    u16 text_index;
     const u8 *runtimeText;
 
     runtimeText = ModRuntimeProfile_GetText(key, LanguageApi_GetActiveLanguage());
@@ -72,10 +72,10 @@ const u8 *LanguageApi_GetText(const char *key)
     if (text != NULL)
         return text->text;
 
-    for (i = 0; i < gModLanguageTextCount; i++)
+    for (text_index = 0; text_index < gModLanguageTextCount; text_index++)
     {
-        if (key != NULL && strcmp(gModLanguageTexts[i].key, key) == 0)
-            return gModLanguageTexts[i].text;
+        if (key != NULL && strcmp(gModLanguageTexts[text_index].key, key) == 0)
+            return gModLanguageTexts[text_index].text;
     }
 
     return sMissingText;

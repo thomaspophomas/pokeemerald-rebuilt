@@ -97,15 +97,15 @@ void ModWeather_OnMapLoad(void)
 
 void ModWeather_GetDisplayedWeather(struct ModWeatherDisplay *display)
 {
-    u16 i;
+    u16 weather_provider_index;
     struct ModWeatherDisplay runtimeWeather;
 
     InitDisplayFromMap(display);
 
-    for (i = 0; i < gModWeatherProviderCount; i++)
+    for (weather_provider_index = 0; weather_provider_index < gModWeatherProviderCount; weather_provider_index++)
     {
-        if (gModWeatherProviders[i].resolve != NULL)
-            gModWeatherProviders[i].resolve(display);
+        if (gModWeatherProviders[weather_provider_index].resolve != NULL)
+            gModWeatherProviders[weather_provider_index].resolve(display);
     }
 
     if (sOverrideActive && sOverride.priority >= display->priority)
@@ -122,15 +122,15 @@ u16 ModWeather_GetBattleWeatherMask(void)
     return display.battleWeatherMask;
 }
 
-void ModWeather_SetOverride(u8 source, u8 vanillaWeather, u16 layers, u16 durationFrames)
+void ModWeather_SetOverride(u8 source, u8 vanilla_weather, u16 layers, u16 duration_frames)
 {
     sOverrideActive = TRUE;
-    sOverride.vanillaWeather = vanillaWeather;
+    sOverride.vanillaWeather = vanilla_weather;
     sOverride.layers = layers;
     sOverride.source = source;
     sOverride.priority = 0xFF;
     sOverride.battleWeatherMask = 0;
-    sOverrideTimer = durationFrames;
+    sOverrideTimer = duration_frames;
 }
 
 void ModWeather_ClearOverride(u8 source)

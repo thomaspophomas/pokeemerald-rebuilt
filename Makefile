@@ -14,7 +14,7 @@ BUILD_DIR := build
 MODERN      ?= 0
 # Compares the ROM to a checksum of the original - only makes sense using when non-modern
 COMPARE     ?= 0
-FEATURE_MODS ?= 1
+FEATURE_MODS ?= 0
 FEATURE_MULTIPLAYER ?= 0
 FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT ?= 0
 FEATURE_MULTIPLAYER_LINK_TRANSPORT ?= 0
@@ -150,8 +150,11 @@ endif
 # Variable filled out in other make files
 AUTO_GEN_TARGETS :=
 MODGEN_TARGETS := include/generated/mod_registry.h src/generated/mod_registry.c build/generated/mod_sources.mk
-MODGEN_INPUTS := scripts/modgen.py $(shell find mods -type f 2>/dev/null)
-AUTO_GEN_TARGETS += $(MODGEN_TARGETS)
+ifeq ($(FEATURE_MODS),1)
+  MODGEN_INPUTS := scripts/modgen.py $(shell find mods -type f 2>/dev/null)
+  AUTO_GEN_TARGETS += $(MODGEN_TARGETS)
+endif
+FEATURE_CONFIG_STAMP := $(OBJ_DIR)/feature_config.stamp
 include make_tools.mk
 # Tool executables
 GFX       := $(TOOLS_DIR)/gbagfx/gbagfx$(EXE)
@@ -178,7 +181,7 @@ MAKEFLAGS += --no-print-directory
 .DELETE_ON_ERROR:
 
 RULES_NO_SCAN += libagbsyscall clean clean-assets tidy tidymodern tidynonmodern generated clean-generated
-.PHONY: all rom modern compare
+.PHONY: all rom modern compare FORCE
 .PHONY: $(RULES_NO_SCAN)
 
 infoshell = $(foreach line, $(shell $1 | sed "s/ /__SPACE__/g"), $(info $(subst __SPACE__, ,$(line))))
@@ -211,12 +214,18 @@ ifeq ($(SETUP_PREREQS),1)
   endif
 endif
 
+ifeq ($(FEATURE_MODS),1)
 -include build/generated/mod_sources.mk
+endif
 MOD_C_SRCS ?=
 
 # Collect sources
 C_SRCS_IN := $(wildcard $(C_SUBDIR)/*.c $(C_SUBDIR)/*/*.c $(C_SUBDIR)/*/*/*.c)
 C_SRCS := $(foreach src,$(C_SRCS_IN),$(if $(findstring .inc.c,$(src)),,$(src)))
+ifeq ($(FEATURE_MODS),0)
+  C_SRCS := $(filter-out $(C_SUBDIR)/mod/%.c $(C_SUBDIR)/generated/%.c,$(C_SRCS)) $(C_SUBDIR)/mod/stubs.c
+  MOD_C_SRCS :=
+endif
 C_OBJS := $(patsubst $(C_SUBDIR)/%.c,$(C_BUILDDIR)/%.o,$(C_SRCS))
 MOD_C_OBJS := $(patsubst mods/%.c,$(OBJ_DIR)/mods/%.o,$(MOD_C_SRCS))
 
@@ -283,8 +292,10 @@ include audio_rules.mk
 generated: $(AUTO_GEN_TARGETS)
 	@: # Silence the "Nothing to be done for `generated'" message, which some people were confusing for an error.
 
+ifeq ($(FEATURE_MODS),1)
 $(MODGEN_TARGETS) &: $(MODGEN_INPUTS)
 	$(PYTHON) scripts/modgen.py --root . --out-header include/generated/mod_registry.h --out-source src/generated/mod_registry.c --out-make build/generated/mod_sources.mk
+endif
 
 
 %.s:   ;
@@ -301,8 +312,29 @@ $(MODGEN_TARGETS) &: $(MODGEN_INPUTS)
 %.rl:     %      ; $(GFX) $< $@
 
 clean-generated:
-	@rm -f $(AUTO_GEN_TARGETS)
+	@rm -f $(AUTO_GEN_TARGETS) $(MODGEN_TARGETS)
 	@echo "rm -f <AUTO_GEN_TARGETS>"
+
+FORCE:
+
+$(FEATURE_CONFIG_STAMP): FORCE
+	@mkdir -p $(dir $@)
+	@{ \
+		echo "FEATURE_MODS=$(FEATURE_MODS)"; \
+		echo "FEATURE_MULTIPLAYER=$(FEATURE_MULTIPLAYER)"; \
+		echo "FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT=$(FEATURE_MULTIPLAYER_EMULATOR_TRANSPORT)"; \
+		echo "FEATURE_MULTIPLAYER_LINK_TRANSPORT=$(FEATURE_MULTIPLAYER_LINK_TRANSPORT)"; \
+		echo "FEATURE_MULTIPLAYER_AUTOCONNECT=$(FEATURE_MULTIPLAYER_AUTOCONNECT)"; \
+		echo "FEATURE_MULTIPLAYER_SMOKE_STATUS=$(FEATURE_MULTIPLAYER_SMOKE_STATUS)"; \
+		echo "FEATURE_MULTIPLAYER_COMPANION_SAVE_BEACON=$(FEATURE_MULTIPLAYER_COMPANION_SAVE_BEACON)"; \
+		echo "FEATURE_ENGINE_GEN1=$(FEATURE_ENGINE_GEN1)"; \
+		echo "FEATURE_ENGINE_GEN2=$(FEATURE_ENGINE_GEN2)"; \
+		echo "FEATURE_ENGINE_GEN3=$(FEATURE_ENGINE_GEN3)"; \
+		echo "FEATURE_WEATHER_LAYERS=$(FEATURE_WEATHER_LAYERS)"; \
+		echo "FEATURE_FOLLOWERS=$(FEATURE_FOLLOWERS)"; \
+		echo "FEATURE_STORY_PROGRESS_API=$(FEATURE_STORY_PROGRESS_API)"; \
+	} > $@.tmp
+	@if ! cmp -s $@.tmp $@; then mv $@.tmp $@; else rm $@.tmp; fi
 
 ifeq ($(MODERN),0)
 $(C_BUILDDIR)/libc.o: CC1 := $(TOOLS_DIR)/agbcc/bin/old_agbcc$(EXE)
@@ -326,7 +358,7 @@ endif
 # As a side effect, they're evaluated immediately instead of when the rule is invoked.
 # It doesn't look like $(shell) can be deferred so there might not be a better way (Icedude_907: there is soon).
 
-$(C_BUILDDIR)/%.o: $(C_SUBDIR)/%.c
+$(C_BUILDDIR)/%.o: $(C_SUBDIR)/%.c $(FEATURE_CONFIG_STAMP)
 ifneq ($(KEEP_TEMPS),1)
 	@echo "$(CC1) <flags> -o $@ $<"
 	@$(CPP) $(CPPFLAGS) $< | $(PREPROC) -i -g $(ASSETS_DIR_NAME) $< charmap.txt | $(CC1) $(CFLAGS) -o - - | cat - <(echo -e ".text\n\t.align\t2, 0") | $(AS) $(ASFLAGS) -o $@ -
@@ -337,10 +369,10 @@ else
 	$(AS) $(ASFLAGS) -o $@ $(C_BUILDDIR)/$*.s
 endif
 
-$(C_BUILDDIR)/%.d: $(C_SUBDIR)/%.c
+$(C_BUILDDIR)/%.d: $(C_SUBDIR)/%.c $(FEATURE_CONFIG_STAMP)
 	$(SCANINC) -M $@ -g $(ASSETS_DIR_NAME) $(INCLUDE_SCANINC_ARGS) -I tools/agbcc/include $<
 
-$(OBJ_DIR)/mods/%.o: mods/%.c
+$(OBJ_DIR)/mods/%.o: mods/%.c $(FEATURE_CONFIG_STAMP)
 ifneq ($(KEEP_TEMPS),1)
 	@echo "$(CC1) <flags> -o $@ $<"
 	@$(CPP) $(CPPFLAGS) $< | $(PREPROC) -i -g $(ASSETS_DIR_NAME) $< charmap.txt | $(CC1) $(CFLAGS) -o - - | cat - <(echo -e ".text\n\t.align\t2, 0") | $(AS) $(ASFLAGS) -o $@ -
@@ -351,7 +383,7 @@ else
 	$(AS) $(ASFLAGS) -o $@ $(OBJ_DIR)/mods/$*.s
 endif
 
-$(OBJ_DIR)/mods/%.d: mods/%.c
+$(OBJ_DIR)/mods/%.d: mods/%.c $(FEATURE_CONFIG_STAMP)
 	$(SCANINC) -M $@ -g $(ASSETS_DIR_NAME) $(INCLUDE_SCANINC_ARGS) -I tools/agbcc/include $<
 
 ifneq ($(NODEP),1)

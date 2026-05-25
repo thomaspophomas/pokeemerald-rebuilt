@@ -21,14 +21,14 @@ static bool8 DefinitionIsEmptyDefault(const struct ModItemDefinition *definition
 
 static bool8 RuntimeItemKeyExists(const char *key, const struct ModItemDefinition *items, u16 count)
 {
-    u16 i;
+    u16 item_index;
 
     if (key == NULL || items == NULL)
         return FALSE;
 
-    for (i = 0; i < count; i++)
+    for (item_index = 0; item_index < count; item_index++)
     {
-        if (items[i].key != NULL && strcmp(items[i].key, key) == 0)
+        if (items[item_index].key != NULL && strcmp(items[item_index].key, key) == 0)
             return TRUE;
     }
 
@@ -38,55 +38,55 @@ static bool8 RuntimeItemKeyExists(const char *key, const struct ModItemDefinitio
 static const struct ModItemDefinition *FindBestItem(
     const struct ModItemDefinition *items,
     u16 count,
-    u16 itemId,
+    u16 item_id,
     const struct ModItemDefinition *shadowingItems,
     u16 shadowingCount)
 {
-    const struct ModItemDefinition *best = NULL;
-    u16 i;
+    const struct ModItemDefinition *best_definition = NULL;
+    u16 item_index;
 
     if (items == NULL)
         return NULL;
 
-    for (i = 0; i < count; i++)
+    for (item_index = 0; item_index < count; item_index++)
     {
-        const struct ModItemDefinition *definition = &items[i];
+        const struct ModItemDefinition *definition = &items[item_index];
 
         if (shadowingItems != NULL && RuntimeItemKeyExists(definition->key, shadowingItems, shadowingCount))
             continue;
         if (!ItemApi_IsDefinitionValid(definition, TRUE) || DefinitionIsEmptyDefault(definition))
             continue;
-        if (definition->itemId != itemId)
+        if (definition->itemId != item_id)
             continue;
-        if (best == NULL || definition->priority < best->priority)
-            best = definition;
+        if (best_definition == NULL || definition->priority < best_definition->priority)
+            best_definition = definition;
     }
 
-    return best;
+    return best_definition;
 }
 
-static const struct ModItemDefinition *FindItem(u16 itemId)
+static const struct ModItemDefinition *FindItem(u16 item_id)
 {
     const struct ModItemDefinition *runtimeItems;
     const struct ModItemDefinition *best;
     u16 runtimeCount;
 
-    if (itemId == ITEM_NONE || itemId >= ITEMS_COUNT)
+    if (item_id == ITEM_NONE || item_id >= ITEMS_COUNT)
         return NULL;
 
     runtimeItems = ModRuntimeProfile_GetItems(&runtimeCount);
-    best = FindBestItem(runtimeItems, runtimeCount, itemId, NULL, 0);
+    best = FindBestItem(runtimeItems, runtimeCount, item_id, NULL, 0);
     if (best != NULL)
         return best;
 
-    return FindBestItem(gModItemDefinitions, gModItemDefinitionCount, itemId, runtimeItems, runtimeCount);
+    return FindBestItem(gModItemDefinitions, gModItemDefinitionCount, item_id, runtimeItems, runtimeCount);
 }
 
-bool8 ItemApi_IsDefinitionValid(const struct ModItemDefinition *definition, bool8 allowEmptyDefault)
+bool8 ItemApi_IsDefinitionValid(const struct ModItemDefinition *definition, bool8 allow_empty_default)
 {
     if (definition == NULL)
         return FALSE;
-    if (allowEmptyDefault && DefinitionIsEmptyDefault(definition))
+    if (allow_empty_default && DefinitionIsEmptyDefault(definition))
         return TRUE;
     if (definition->key == NULL || definition->key[0] == '\0')
         return FALSE;
@@ -103,147 +103,147 @@ bool8 ItemApi_IsDefinitionValid(const struct ModItemDefinition *definition, bool
     return TRUE;
 }
 
-const u8 *ItemApi_GetName(u16 itemId, const u8 *vanilla)
+const u8 *ItemApi_GetName(u16 item_id, const u8 *vanilla_name)
 {
-    const struct ModItemDefinition *definition = FindItem(itemId);
+    const struct ModItemDefinition *definition = FindItem(item_id);
 
     if (definition != NULL && (definition->flags & MOD_ITEM_OVERRIDE_NAME))
         return LanguageApi_GetText(definition->nameKey);
-    return vanilla;
+    return vanilla_name;
 }
 
-u16 ItemApi_GetPrice(u16 itemId, u16 vanilla)
+u16 ItemApi_GetPrice(u16 item_id, u16 vanilla_price)
 {
-    const struct ModItemDefinition *definition = FindItem(itemId);
+    const struct ModItemDefinition *definition = FindItem(item_id);
 
     if (definition != NULL && (definition->flags & MOD_ITEM_OVERRIDE_PRICE))
         return definition->price;
-    return vanilla;
+    return vanilla_price;
 }
 
-u8 ItemApi_GetHoldEffect(u16 itemId, u8 vanilla)
+u8 ItemApi_GetHoldEffect(u16 item_id, u8 vanilla_hold_effect)
 {
-    const struct ModItemDefinition *definition = FindItem(itemId);
+    const struct ModItemDefinition *definition = FindItem(item_id);
 
     if (definition != NULL && (definition->flags & MOD_ITEM_OVERRIDE_HOLD_EFFECT))
         return definition->holdEffect;
-    return vanilla;
+    return vanilla_hold_effect;
 }
 
-u8 ItemApi_GetHoldEffectParam(u16 itemId, u8 vanilla)
+u8 ItemApi_GetHoldEffectParam(u16 item_id, u8 vanilla_hold_effect_param)
 {
-    const struct ModItemDefinition *definition = FindItem(itemId);
+    const struct ModItemDefinition *definition = FindItem(item_id);
 
     if (definition != NULL && (definition->flags & MOD_ITEM_OVERRIDE_HOLD_EFFECT_PARAM))
         return definition->holdEffectParam;
-    return vanilla;
+    return vanilla_hold_effect_param;
 }
 
-const u8 *ItemApi_GetDescription(u16 itemId, const u8 *vanilla)
+const u8 *ItemApi_GetDescription(u16 item_id, const u8 *vanilla_description)
 {
-    const struct ModItemDefinition *definition = FindItem(itemId);
+    const struct ModItemDefinition *definition = FindItem(item_id);
 
     if (definition != NULL && (definition->flags & MOD_ITEM_OVERRIDE_DESCRIPTION))
         return LanguageApi_GetText(definition->descriptionKey);
-    return vanilla;
+    return vanilla_description;
 }
 
-u8 ItemApi_GetImportance(u16 itemId, u8 vanilla)
+u8 ItemApi_GetImportance(u16 item_id, u8 vanilla_importance)
 {
-    const struct ModItemDefinition *definition = FindItem(itemId);
+    const struct ModItemDefinition *definition = FindItem(item_id);
 
     if (definition != NULL && (definition->flags & MOD_ITEM_OVERRIDE_IMPORTANCE))
         return definition->importance;
-    return vanilla;
+    return vanilla_importance;
 }
 
-u8 ItemApi_GetPocket(u16 itemId, u8 vanilla)
+u8 ItemApi_GetPocket(u16 item_id, u8 vanilla_pocket)
 {
-    const struct ModItemDefinition *definition = FindItem(itemId);
+    const struct ModItemDefinition *definition = FindItem(item_id);
 
     if (definition != NULL && (definition->flags & MOD_ITEM_OVERRIDE_POCKET))
         return definition->pocket;
-    return vanilla;
+    return vanilla_pocket;
 }
 
-u8 ItemApi_GetType(u16 itemId, u8 vanilla)
+u8 ItemApi_GetType(u16 item_id, u8 vanilla_type)
 {
-    const struct ModItemDefinition *definition = FindItem(itemId);
+    const struct ModItemDefinition *definition = FindItem(item_id);
 
     if (definition != NULL && (definition->flags & MOD_ITEM_OVERRIDE_TYPE))
         return definition->type;
-    return vanilla;
+    return vanilla_type;
 }
 
-ItemUseFunc ItemApi_GetFieldFunc(u16 itemId, ItemUseFunc vanilla)
+ItemUseFunc ItemApi_GetFieldFunc(u16 item_id, ItemUseFunc vanilla_field_func)
 {
-    const struct ModItemDefinition *definition = FindItem(itemId);
+    const struct ModItemDefinition *definition = FindItem(item_id);
 
     if (definition != NULL && (definition->flags & MOD_ITEM_OVERRIDE_FIELD_USE))
         return definition->fieldUseFunc;
-    return vanilla;
+    return vanilla_field_func;
 }
 
-u8 ItemApi_GetBattleUsage(u16 itemId, u8 vanilla)
+u8 ItemApi_GetBattleUsage(u16 item_id, u8 vanilla_battle_usage)
 {
-    const struct ModItemDefinition *definition = FindItem(itemId);
+    const struct ModItemDefinition *definition = FindItem(item_id);
 
     if (definition != NULL && (definition->flags & MOD_ITEM_OVERRIDE_BATTLE_USAGE))
         return definition->battleUsage;
-    return vanilla;
+    return vanilla_battle_usage;
 }
 
-ItemUseFunc ItemApi_GetBattleFunc(u16 itemId, ItemUseFunc vanilla)
+ItemUseFunc ItemApi_GetBattleFunc(u16 item_id, ItemUseFunc vanilla_battle_func)
 {
-    const struct ModItemDefinition *definition = FindItem(itemId);
+    const struct ModItemDefinition *definition = FindItem(item_id);
 
     if (definition != NULL && (definition->flags & MOD_ITEM_OVERRIDE_BATTLE_USE))
         return definition->battleUseFunc;
-    return vanilla;
+    return vanilla_battle_func;
 }
 
-u8 ItemApi_GetSecondaryId(u16 itemId, u8 vanilla)
+u8 ItemApi_GetSecondaryId(u16 item_id, u8 vanilla_secondary_id)
 {
-    const struct ModItemDefinition *definition = FindItem(itemId);
+    const struct ModItemDefinition *definition = FindItem(item_id);
 
     if (definition != NULL && (definition->flags & MOD_ITEM_OVERRIDE_SECONDARY_ID))
         return definition->secondaryId;
-    return vanilla;
+    return vanilla_secondary_id;
 }
 
-ItemUseFunc ItemApi_FindCompiledFieldUseHook(const char *sourceKey, const char *hookKey)
+ItemUseFunc ItemApi_FindCompiledFieldUseHook(const char *source_key, const char *hook_key)
 {
-    u16 i;
+    u16 item_index;
 
-    if (sourceKey == NULL || hookKey == NULL || sourceKey[0] == '\0' || hookKey[0] == '\0')
+    if (source_key == NULL || hook_key == NULL || source_key[0] == '\0' || hook_key[0] == '\0')
         return NULL;
 
-    for (i = 0; i < gModItemDefinitionCount; i++)
+    for (item_index = 0; item_index < gModItemDefinitionCount; item_index++)
     {
-        if (gModItemDefinitions[i].key == NULL || gModItemDefinitions[i].fieldUseHookKey == NULL)
+        if (gModItemDefinitions[item_index].key == NULL || gModItemDefinitions[item_index].fieldUseHookKey == NULL)
             continue;
-        if (strcmp(gModItemDefinitions[i].key, sourceKey) == 0
-         && strcmp(gModItemDefinitions[i].fieldUseHookKey, hookKey) == 0)
-            return gModItemDefinitions[i].fieldUseFunc;
+        if (strcmp(gModItemDefinitions[item_index].key, source_key) == 0
+         && strcmp(gModItemDefinitions[item_index].fieldUseHookKey, hook_key) == 0)
+            return gModItemDefinitions[item_index].fieldUseFunc;
     }
 
     return NULL;
 }
 
-ItemUseFunc ItemApi_FindCompiledBattleUseHook(const char *sourceKey, const char *hookKey)
+ItemUseFunc ItemApi_FindCompiledBattleUseHook(const char *source_key, const char *hook_key)
 {
-    u16 i;
+    u16 item_index;
 
-    if (sourceKey == NULL || hookKey == NULL || sourceKey[0] == '\0' || hookKey[0] == '\0')
+    if (source_key == NULL || hook_key == NULL || source_key[0] == '\0' || hook_key[0] == '\0')
         return NULL;
 
-    for (i = 0; i < gModItemDefinitionCount; i++)
+    for (item_index = 0; item_index < gModItemDefinitionCount; item_index++)
     {
-        if (gModItemDefinitions[i].key == NULL || gModItemDefinitions[i].battleUseHookKey == NULL)
+        if (gModItemDefinitions[item_index].key == NULL || gModItemDefinitions[item_index].battleUseHookKey == NULL)
             continue;
-        if (strcmp(gModItemDefinitions[i].key, sourceKey) == 0
-         && strcmp(gModItemDefinitions[i].battleUseHookKey, hookKey) == 0)
-            return gModItemDefinitions[i].battleUseFunc;
+        if (strcmp(gModItemDefinitions[item_index].key, source_key) == 0
+         && strcmp(gModItemDefinitions[item_index].battleUseHookKey, hook_key) == 0)
+            return gModItemDefinitions[item_index].battleUseFunc;
     }
 
     return NULL;

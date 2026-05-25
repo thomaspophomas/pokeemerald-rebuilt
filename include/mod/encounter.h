@@ -73,10 +73,10 @@ struct ModEncounterDefinition
     struct ModEncounterSlot slots[MOD_ENCOUNTER_MAX_SLOTS];
 };
 
-bool8 EncounterApi_IsDefinitionValid(const struct ModEncounterDefinition *definition, bool8 allowEmptyDefault);
+bool8 EncounterApi_IsDefinitionValid(const struct ModEncounterDefinition *definition, bool8 allow_empty_default);
 bool8 EncounterApi_HasDefinition(u8 area, u8 rod);
-u16 EncounterApi_GetEncounterRate(u8 area, u8 rod, u16 vanillaRate);
-bool8 EncounterApi_TrySelectWildMon(u8 area, u8 rod, u8 flags, struct WildPokemon *wildPokemon);
-ModEncounterHook EncounterApi_FindCompiledHook(const char *sourceKey, const char *hookKey);
+u16 EncounterApi_GetEncounterRate(u8 area, u8 rod, u16 vanilla_encounter_rate);
+bool8 EncounterApi_TrySelectWildMon(u8 area, u8 rod, u8 flags, struct WildPokemon *wild_pokemon);
+ModEncounterHook EncounterApi_FindCompiledHook(const char *source_key, const char *hook_key);
 
 #endif // GUARD_MOD_ENCOUNTER_H

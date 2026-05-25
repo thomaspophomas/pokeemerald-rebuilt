@@ -7,7 +7,7 @@
 const struct ModSpriteAssetDefinition *SpriteAssetApi_Find(const char *key)
 {
     const struct ModSpriteAssetDefinition *runtimeAsset;
-    u16 i;
+    u16 sprite_asset_index;
 
     if (key == NULL)
         return NULL;
@@ -16,10 +16,10 @@ const struct ModSpriteAssetDefinition *SpriteAssetApi_Find(const char *key)
     if (runtimeAsset != NULL)
         return runtimeAsset;
 
-    for (i = 0; i < gModSpriteAssetCount; i++)
+    for (sprite_asset_index = 0; sprite_asset_index < gModSpriteAssetCount; sprite_asset_index++)
     {
-        if (strcmp(gModSpriteAssets[i].key, key) == 0)
-            return &gModSpriteAssets[i];
+        if (strcmp(gModSpriteAssets[sprite_asset_index].key, key) == 0)
+            return &gModSpriteAssets[sprite_asset_index];
     }
 
     return NULL;

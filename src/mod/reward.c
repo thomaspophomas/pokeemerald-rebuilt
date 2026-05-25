@@ -20,14 +20,14 @@ static bool8 DefinitionIsEmptyDefault(const struct ModRewardDefinition *definiti
 
 static bool8 RuntimeRewardKeyExists(const char *key, const struct ModRewardDefinition *rewards, u16 count)
 {
-    u16 i;
+    u16 reward_index;
 
     if (key == NULL || rewards == NULL)
         return FALSE;
 
-    for (i = 0; i < count; i++)
+    for (reward_index = 0; reward_index < count; reward_index++)
     {
-        if (rewards[i].key != NULL && strcmp(rewards[i].key, key) == 0)
+        if (rewards[reward_index].key != NULL && strcmp(rewards[reward_index].key, key) == 0)
             return TRUE;
     }
 
@@ -53,25 +53,25 @@ static const struct ModRewardDefinition *FindBestReward(
     const struct ModRewardDefinition *shadowingRewards,
     u16 shadowingCount)
 {
-    const struct ModRewardDefinition *best = NULL;
-    u16 i;
+    const struct ModRewardDefinition *best_definition = NULL;
+    u16 reward_index;
 
     if (rewards == NULL)
         return NULL;
 
-    for (i = 0; i < count; i++)
+    for (reward_index = 0; reward_index < count; reward_index++)
     {
-        const struct ModRewardDefinition *definition = &rewards[i];
+        const struct ModRewardDefinition *definition = &rewards[reward_index];
 
         if (shadowingRewards != NULL && RuntimeRewardKeyExists(definition->key, shadowingRewards, shadowingCount))
             continue;
         if (!DefinitionMatches(definition, source, level))
             continue;
-        if (best == NULL || definition->priority < best->priority)
-            best = definition;
+        if (best_definition == NULL || definition->priority < best_definition->priority)
+            best_definition = definition;
     }
 
-    return best;
+    return best_definition;
 }
 
 static const struct ModRewardDefinition *FindReward(u8 source, u8 level)
@@ -88,11 +88,11 @@ static const struct ModRewardDefinition *FindReward(u8 source, u8 level)
     return FindBestReward(gModRewardDefinitions, gModRewardDefinitionCount, source, level, runtimeRewards, runtimeCount);
 }
 
-bool8 RewardApi_IsDefinitionValid(const struct ModRewardDefinition *definition, bool8 allowEmptyDefault)
+bool8 RewardApi_IsDefinitionValid(const struct ModRewardDefinition *definition, bool8 allow_empty_default)
 {
     if (definition == NULL)
         return FALSE;
-    if (allowEmptyDefault && DefinitionIsEmptyDefault(definition))
+    if (allow_empty_default && DefinitionIsEmptyDefault(definition))
         return TRUE;
     if (definition->key == NULL || definition->key[0] == '\0')
         return FALSE;
@@ -109,13 +109,13 @@ bool8 RewardApi_IsDefinitionValid(const struct ModRewardDefinition *definition, 
     return TRUE;
 }
 
-bool8 RewardApi_AdjustItemReward(u8 source, u8 level, u16 vanillaItemId, u16 *itemId, u16 *quantity)
+bool8 RewardApi_AdjustItemReward(u8 source, u8 level, u16 vanilla_item_id, u16 *item_id, u16 *quantity)
 {
     const struct ModRewardDefinition *definition;
     struct ModRewardContext context;
-    u8 result;
+    u8 reward_hook_result;
 
-    if (itemId == NULL || quantity == NULL)
+    if (item_id == NULL || quantity == NULL)
         return FALSE;
 
     definition = FindReward(source, level);
@@ -125,7 +125,7 @@ bool8 RewardApi_AdjustItemReward(u8 source, u8 level, u16 vanillaItemId, u16 *it
     memset(&context, 0, sizeof(context));
     context.source = source;
     context.level = level;
-    context.vanillaItemId = vanillaItemId;
+    context.vanillaItemId = vanilla_item_id;
     context.itemId = definition->itemId;
     context.quantity = (definition->flags & MOD_REWARD_FLAG_KEEP_VANILLA_QUANTITY) ? *quantity : definition->quantity;
     if (gSaveBlock1Ptr != NULL)
@@ -134,35 +134,35 @@ bool8 RewardApi_AdjustItemReward(u8 source, u8 level, u16 vanillaItemId, u16 *it
         context.mapNum = gSaveBlock1Ptr->location.mapNum;
     }
 
-    result = MOD_REWARD_OVERRIDE;
+    reward_hook_result = MOD_REWARD_OVERRIDE;
     if (definition->hook != NULL)
-        result = definition->hook(definition, &context);
-    if (result == MOD_REWARD_CANCEL)
+        reward_hook_result = definition->hook(definition, &context);
+    if (reward_hook_result == MOD_REWARD_CANCEL)
         return TRUE;
-    if (result != MOD_REWARD_OVERRIDE)
+    if (reward_hook_result != MOD_REWARD_OVERRIDE)
         return FALSE;
     if (context.itemId == ITEM_NONE || context.itemId >= ITEMS_COUNT || context.quantity == 0)
         return TRUE;
 
-    *itemId = context.itemId;
+    *item_id = context.itemId;
     *quantity = context.quantity;
     return TRUE;
 }
 
-ModRewardHook RewardApi_FindCompiledHook(const char *sourceKey, const char *hookKey)
+ModRewardHook RewardApi_FindCompiledHook(const char *source_key, const char *hook_key)
 {
-    u16 i;
+    u16 reward_index;
 
-    if (sourceKey == NULL || hookKey == NULL || sourceKey[0] == '\0' || hookKey[0] == '\0')
+    if (source_key == NULL || hook_key == NULL || source_key[0] == '\0' || hook_key[0] == '\0')
         return NULL;
 
-    for (i = 0; i < gModRewardDefinitionCount; i++)
+    for (reward_index = 0; reward_index < gModRewardDefinitionCount; reward_index++)
     {
-        if (gModRewardDefinitions[i].key == NULL || gModRewardDefinitions[i].hookKey == NULL)
+        if (gModRewardDefinitions[reward_index].key == NULL || gModRewardDefinitions[reward_index].hookKey == NULL)
             continue;
-        if (strcmp(gModRewardDefinitions[i].key, sourceKey) == 0
-         && strcmp(gModRewardDefinitions[i].hookKey, hookKey) == 0)
-            return gModRewardDefinitions[i].hook;
+        if (strcmp(gModRewardDefinitions[reward_index].key, source_key) == 0
+         && strcmp(gModRewardDefinitions[reward_index].hookKey, hook_key) == 0)
+            return gModRewardDefinitions[reward_index].hook;
     }
 
     return NULL;

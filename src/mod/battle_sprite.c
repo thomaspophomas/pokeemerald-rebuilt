@@ -7,57 +7,57 @@
 
 const struct ModBattleSpriteDefinition *BattleSpriteApi_GetMonSprite(u16 species, u8 form, u8 side, u16 flags)
 {
-    u16 i;
+    u16 battle_sprite_index;
 
-    for (i = 0; i < gModBattleSpriteCount; i++)
+    for (battle_sprite_index = 0; battle_sprite_index < gModBattleSpriteCount; battle_sprite_index++)
     {
-        if (gModBattleSprites[i].species == species
-         && gModBattleSprites[i].form == form
-         && gModBattleSprites[i].side == side
-         && (gModBattleSprites[i].flags & flags) == flags)
-            return &gModBattleSprites[i];
+        if (gModBattleSprites[battle_sprite_index].species == species
+         && gModBattleSprites[battle_sprite_index].form == form
+         && gModBattleSprites[battle_sprite_index].side == side
+         && (gModBattleSprites[battle_sprite_index].flags & flags) == flags)
+            return &gModBattleSprites[battle_sprite_index];
     }
 
     return NULL;
 }
 
-const struct ModBattleSpriteDefinition *BattleSpriteApi_GetTrainerSprite(u16 trainerId, u8 side)
+const struct ModBattleSpriteDefinition *BattleSpriteApi_GetTrainerSprite(u16 trainer_id, u8 side)
 {
-    u16 i;
+    u16 battle_sprite_index;
 
-    for (i = 0; i < gModBattleSpriteCount; i++)
+    for (battle_sprite_index = 0; battle_sprite_index < gModBattleSpriteCount; battle_sprite_index++)
     {
-        if (gModBattleSprites[i].species == trainerId && gModBattleSprites[i].side == side)
-            return &gModBattleSprites[i];
+        if (gModBattleSprites[battle_sprite_index].species == trainer_id && gModBattleSprites[battle_sprite_index].side == side)
+            return &gModBattleSprites[battle_sprite_index];
     }
 
     return NULL;
 }
 
-u8 BattleSpriteApi_GetBallSprite(u16 ballItemId)
+u8 BattleSpriteApi_GetBallSprite(u16 ball_item_id)
 {
-    return PokeBallApi_GetBallSprite(ballItemId);
+    return PokeBallApi_GetBallSprite(ball_item_id);
 }
 
 const struct ModBattleSpriteDefinition *BattleSpriteApi_GetMoveAnimSprite(const char *key)
 {
-    u16 i;
+    u16 battle_sprite_index;
 
     if (key == NULL)
         return NULL;
 
-    for (i = 0; i < gModBattleSpriteCount; i++)
+    for (battle_sprite_index = 0; battle_sprite_index < gModBattleSpriteCount; battle_sprite_index++)
     {
-        if (strcmp(gModBattleSprites[i].key, key) == 0)
-            return &gModBattleSprites[i];
+        if (strcmp(gModBattleSprites[battle_sprite_index].key, key) == 0)
+            return &gModBattleSprites[battle_sprite_index];
     }
 
     return NULL;
 }
 
-bool8 BattleSpriteApi_RefreshBattlerPalette(u8 battlerId)
+bool8 BattleSpriteApi_RefreshBattlerPalette(u8 battler_id)
 {
-    if (battlerId >= MAX_BATTLERS_COUNT)
+    if (battler_id >= MAX_BATTLERS_COUNT)
         return FALSE;
 
     return TRUE;

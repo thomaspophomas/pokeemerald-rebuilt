@@ -10,9 +10,13 @@ import random
 MAX_NET_PLAYERS = 8
 MAX_NET_BATTLE_PLAYERS = 4
 MAX_NET_SUBSESSIONS = 4
+NET_PLAYER_PARTY_SNAPSHOT_SIZE = 3
+NUM_SPECIES = 412
+MOVES_COUNT = 355
+MAX_LEVEL = 100
 NET_SUBSESSION_NONE = 0
 NET_PACKET_NONE = 0
-NET_PACKET_COUNT = 30
+NET_PACKET_COUNT = 31
 NET_PLAYER_SNAPSHOT_TTL_FRAMES = 60 * 5
 NET_PLAYER_SNAPSHOT_FUTURE_SKEW_FRAMES = 30
 NET_PLAYER_STALE_FRAMES = 60 * 2
@@ -20,11 +24,12 @@ NET_PLAYER_DISCONNECT_FRAMES = 60 * 10
 NET_PLAYER_COORD_MIN = -512
 NET_PLAYER_COORD_MAX = 8191
 NET_PROTOCOL_VERSION = 2
-NET_EMULATOR_BRIDGE_VERSION = 5
+NET_EMULATOR_BRIDGE_VERSION = 10
 NET_TRANSPORT_MODE_SERVER_BRIDGE = 1
-NET_COMMIT_LOG_SIZE = 32
-NET_RELIABLE_QUEUE_SIZE = 16
-NET_TRANSPORT_PACKET_PAYLOAD_SIZE = 128
+NET_COMMIT_LOG_SIZE = 16
+NET_RELIABLE_QUEUE_SIZE = 8
+NET_TRANSPORT_PACKET_HEADER_SIZE = 22
+NET_TRANSPORT_PACKET_PAYLOAD_SIZE = 96
 NET_PENDING_TX_COUNT = 16
 MOD_RUNTIME_PROFILE_PROTOCOL_VERSION = 1
 MOD_RUNTIME_PROFILE_CAPABILITY_HASH = 0x00000006
@@ -126,6 +131,14 @@ class Snapshot:
 
 
 @dataclass
+class BattleProfile:
+    party_count: int = 1
+    party_species: tuple[int, int, int] = (1, 0, 0)
+    party_levels: tuple[int, int, int] = (5, 0, 0)
+    party_moves: tuple[tuple[int, int, int, int], ...] = ((1, 0, 0, 0), (0, 0, 0, 0), (0, 0, 0, 0))
+
+
+@dataclass
 class Packet:
     packet_type: int
     sequence: int
@@ -139,7 +152,7 @@ class Packet:
 class ClientHello:
     protocol_version: int = NET_PROTOCOL_VERSION
     bridge_version: int = NET_EMULATOR_BRIDGE_VERSION
-    build_id: int = 0x00010007
+    build_id: int = 0x0001000C
     ruleset_hash: int = 0x00000003
     profile_protocol_version: int = MOD_RUNTIME_PROFILE_PROTOCOL_VERSION
     profile_capability_flags: int = MOD_RUNTIME_PROFILE_CAPABILITIES
@@ -245,6 +258,19 @@ def snapshot_is_valid(snapshot: Snapshot, slot: int, current_tick: int, session_
     return True
 
 
+def battle_profile_is_valid(profile: BattleProfile) -> bool:
+    if profile.party_count > NET_PLAYER_PARTY_SNAPSHOT_SIZE:
+        return False
+    for i in range(profile.party_count):
+        if profile.party_species[i] >= NUM_SPECIES:
+            return False
+        if profile.party_species[i] != 0 and profile.party_levels[i] > MAX_LEVEL:
+            return False
+        if any(move >= MOVES_COUNT for move in profile.party_moves[i]):
+            return False
+    return True
+
+
 def packet_is_valid(packet: Packet, session_id: int, last_sequence: int, capacity: int) -> bool:
     if packet.session_id != session_id:
         return False
@@ -265,7 +291,7 @@ def client_hello_is_compatible(hello: ClientHello) -> bool:
     return (
         hello.protocol_version == NET_PROTOCOL_VERSION
         and hello.bridge_version == NET_EMULATOR_BRIDGE_VERSION
-        and hello.build_id == 0x00010007
+        and hello.build_id == 0x0001000C
         and hello.ruleset_hash == 0x00000003
         and hello.profile_protocol_version == MOD_RUNTIME_PROFILE_PROTOCOL_VERSION
         and hello.profile_capability_hash == MOD_RUNTIME_PROFILE_CAPABILITY_HASH
@@ -343,7 +369,17 @@ def test_snapshot_edges() -> None:
     assert not snapshot_is_valid(active_battle, 2, 100)
 
 
+def test_battle_profile_edges() -> None:
+    assert battle_profile_is_valid(BattleProfile())
+    assert battle_profile_is_valid(BattleProfile(party_count=0))
+    assert not battle_profile_is_valid(BattleProfile(party_count=NET_PLAYER_PARTY_SNAPSHOT_SIZE + 1))
+    assert not battle_profile_is_valid(BattleProfile(party_species=(NUM_SPECIES, 0, 0)))
+    assert not battle_profile_is_valid(BattleProfile(party_levels=(MAX_LEVEL + 1, 0, 0)))
+    assert not battle_profile_is_valid(BattleProfile(party_moves=((MOVES_COUNT, 0, 0, 0), (0, 0, 0, 0), (0, 0, 0, 0))))
+
+
 def test_packet_edges() -> None:
+    assert NET_TRANSPORT_PACKET_HEADER_SIZE == 22
     assert packet_is_valid(Packet(packet_type=1, sequence=1), 7, 0, NET_TRANSPORT_PACKET_PAYLOAD_SIZE)
     assert not packet_is_valid(Packet(packet_type=NET_PACKET_NONE, sequence=1), 7, 0, NET_TRANSPORT_PACKET_PAYLOAD_SIZE)
     assert not packet_is_valid(Packet(packet_type=NET_PACKET_COUNT, sequence=1), 7, 0, NET_TRANSPORT_PACKET_PAYLOAD_SIZE)
@@ -374,7 +410,7 @@ def test_transport_rate_limit() -> None:
 
 
 def test_transaction_edges() -> None:
-    assert NET_COMMIT_LOG_SIZE == 32
+    assert NET_COMMIT_LOG_SIZE == 16
     assert NET_PENDING_TX_COUNT == 16
     assert make_transaction_id(1, 0, 7, 1, 1) != 0
     assert make_transaction_id(1, 0, 7, 1, 1) == make_transaction_id(1, 0, 7, 1, 1)
@@ -428,6 +464,7 @@ def fuzz_snapshots() -> None:
 
 def main() -> None:
     test_snapshot_edges()
+    test_battle_profile_edges()
     test_packet_edges()
     test_handshake_edges()
     test_transport_rate_limit()

@@ -25,7 +25,7 @@ enum
     INTERACTION_MENU_EXIT,
 };
 
-static void Task_HandleInteractionMenu(u8 taskId);
+static void Task_HandleInteractionMenu(u8 task_id);
 static bool8 TryStartFight(void);
 static bool8 TryStartItemTrade(void);
 
@@ -140,7 +140,7 @@ static bool8 AdjustItemTradeMoney(s32 delta)
     return TRUE;
 }
 
-static bool8 StartItemTradeMoneyInput(u8 taskId)
+static bool8 StartItemTradeMoneyInput(u8 task_id)
 {
     if (sWindowId != WINDOW_NONE)
     {
@@ -154,7 +154,7 @@ static bool8 StartItemTradeMoneyInput(u8 taskId)
 
     sItemTradeMoneyAmount = 0;
     PrintMoneyInputWindow();
-    gTasks[taskId].tMode = INTERACTION_MENU_MODE_MONEY;
+    gTasks[task_id].tMode = INTERACTION_MENU_MODE_MONEY;
     return TRUE;
 }
 
@@ -203,7 +203,7 @@ static bool8 SnapshotCanOpenRemoteMenu(const struct NetPlayerSnapshot *snapshot,
     return dx + dy <= 1;
 }
 
-static void CloseInteractionMenu(u8 taskId)
+static void CloseInteractionMenu(u8 task_id)
 {
     if (sWindowId != WINDOW_NONE)
     {
@@ -221,12 +221,12 @@ static void CloseInteractionMenu(u8 taskId)
     sTargetPlayerId = NET_PLAYER_NONE;
     sItemTradeMoneyAmount = 0;
     UnlockPlayerFieldControls();
-    DestroyTask(taskId);
+    DestroyTask(task_id);
 }
 
-static bool8 StartInteractionMenu(u8 initiatorPlayerId, u8 targetPlayerId)
+static bool8 StartInteractionMenu(u8 initiator_player_id, u8 target_player_id)
 {
-    u8 taskId;
+    u8 task_id;
 
     if (sMenuActive)
         return FALSE;
@@ -244,30 +244,30 @@ static bool8 StartInteractionMenu(u8 initiatorPlayerId, u8 targetPlayerId)
     ScheduleBgCopyTilemapToVram(0);
 
     sMenuActive = TRUE;
-    sInitiatorPlayerId = initiatorPlayerId;
-    sTargetPlayerId = targetPlayerId;
+    sInitiatorPlayerId = initiator_player_id;
+    sTargetPlayerId = target_player_id;
     LockPlayerFieldControls();
     PlaySE(SE_SELECT);
 
-    taskId = CreateTask(Task_HandleInteractionMenu, 80);
-    gTasks[taskId].tWindowId = sWindowId;
-    gTasks[taskId].tInputDelay = INTERACTION_MENU_INPUT_DELAY;
-    gTasks[taskId].tMode = INTERACTION_MENU_MODE_OPTIONS;
+    task_id = CreateTask(Task_HandleInteractionMenu, 80);
+    gTasks[task_id].tWindowId = sWindowId;
+    gTasks[task_id].tInputDelay = INTERACTION_MENU_INPUT_DELAY;
+    gTasks[task_id].tMode = INTERACTION_MENU_MODE_OPTIONS;
     return TRUE;
 }
 
 static bool8 TryStartFight(void)
 {
     struct MultiplayerBattleRequest request;
-    u8 localPlayerId = MultiplayerSession_GetLocalPlayerId();
-    u8 opponentPlayerId = sTargetPlayerId;
+    u8 local_player_id = MultiplayerSession_GetLocalPlayerId();
+    u8 opponent_player_id = sTargetPlayerId;
 
     if (sInitiatorPlayerId != NET_PLAYER_NONE)
-        opponentPlayerId = sInitiatorPlayerId;
+        opponent_player_id = sInitiatorPlayerId;
 
-    if (localPlayerId >= MAX_NET_PLAYERS || opponentPlayerId >= MAX_NET_PLAYERS)
+    if (local_player_id >= MAX_NET_PLAYERS || opponent_player_id >= MAX_NET_PLAYERS)
         return FALSE;
-    if (localPlayerId == opponentPlayerId)
+    if (local_player_id == opponent_player_id)
         return FALSE;
     if (!MultiplayerBattle_LocalPlayerCanFight())
         return FALSE;
@@ -275,23 +275,23 @@ static bool8 TryStartFight(void)
     memset(&request, 0, sizeof(request));
     request.type = MULTIPLAYER_SUBSESSION_PVP_BATTLE;
     request.playerCount = MAX_NET_PVP_PLAYERS;
-    request.players[0] = localPlayerId;
-    request.players[1] = opponentPlayerId;
+    request.players[0] = local_player_id;
+    request.players[1] = opponent_player_id;
 
     return MultiplayerBattle_Start(&request);
 }
 
 static bool8 TryStartItemTrade(void)
 {
-    u8 otherPlayerId = sTargetPlayerId;
+    u8 other_player_id = sTargetPlayerId;
 
     if (sInitiatorPlayerId != NET_PLAYER_NONE)
-        otherPlayerId = sInitiatorPlayerId;
+        other_player_id = sInitiatorPlayerId;
 
-    return MultiplayerTrade_StartItemTrade(otherPlayerId, sItemTradeMoneyAmount);
+    return MultiplayerTrade_StartItemTrade(other_player_id, sItemTradeMoneyAmount);
 }
 
-static void Task_HandleMoneyInput(u8 taskId)
+static void Task_HandleMoneyInput(u8 task_id)
 {
     if (JOY_REPEAT(DPAD_RIGHT) || JOY_REPEAT(DPAD_UP))
     {
@@ -332,16 +332,16 @@ static void Task_HandleMoneyInput(u8 taskId)
         else
             PlaySE(SE_FAILURE);
 
-        CloseInteractionMenu(taskId);
+        CloseInteractionMenu(task_id);
     }
     else if (JOY_NEW(B_BUTTON))
     {
         PlaySE(SE_SELECT);
-        CloseInteractionMenu(taskId);
+        CloseInteractionMenu(task_id);
     }
 }
 
-static void Task_HandleOptionsInput(u8 taskId)
+static void Task_HandleOptionsInput(u8 task_id)
 {
     s8 selection;
 
@@ -352,7 +352,7 @@ static void Task_HandleOptionsInput(u8 taskId)
     if (selection == MENU_B_PRESSED || selection == INTERACTION_MENU_EXIT)
     {
         PlaySE(SE_SELECT);
-        CloseInteractionMenu(taskId);
+        CloseInteractionMenu(task_id);
         return;
     }
 
@@ -365,12 +365,12 @@ static void Task_HandleOptionsInput(u8 taskId)
             PlaySE(SE_FAILURE);
         break;
     case INTERACTION_MENU_ITEMTRADE:
-        if (StartItemTradeMoneyInput(taskId))
+        if (StartItemTradeMoneyInput(task_id))
             PlaySE(SE_SELECT);
         else
         {
             PlaySE(SE_FAILURE);
-            CloseInteractionMenu(taskId);
+            CloseInteractionMenu(task_id);
         }
         return;
     default:
@@ -378,23 +378,23 @@ static void Task_HandleOptionsInput(u8 taskId)
         break;
     }
 
-    CloseInteractionMenu(taskId);
+    CloseInteractionMenu(task_id);
 }
 
-static void Task_HandleInteractionMenu(u8 taskId)
+static void Task_HandleInteractionMenu(u8 task_id)
 {
     if (gPaletteFade.active)
         return;
-    if (gTasks[taskId].tInputDelay > 0)
+    if (gTasks[task_id].tInputDelay > 0)
     {
-        gTasks[taskId].tInputDelay--;
+        gTasks[task_id].tInputDelay--;
         return;
     }
 
-    if (gTasks[taskId].tMode == INTERACTION_MENU_MODE_MONEY)
-        Task_HandleMoneyInput(taskId);
+    if (gTasks[task_id].tMode == INTERACTION_MENU_MODE_MONEY)
+        Task_HandleMoneyInput(task_id);
     else
-        Task_HandleOptionsInput(taskId);
+        Task_HandleOptionsInput(task_id);
 }
 
 void MultiplayerInteractionMenu_Init(void)
@@ -410,7 +410,7 @@ void MultiplayerInteractionMenu_Init(void)
 
 void MultiplayerInteractionMenu_Reset(void)
 {
-    u8 taskId = FindTaskIdByFunc(Task_HandleInteractionMenu);
+    u8 task_id = FindTaskIdByFunc(Task_HandleInteractionMenu);
 
     if (sMenuActive && sWindowId != WINDOW_NONE)
     {
@@ -424,8 +424,8 @@ void MultiplayerInteractionMenu_Reset(void)
         sMoneyWindowId = WINDOW_NONE;
         UnlockPlayerFieldControls();
     }
-    if (taskId != TASK_NONE)
-        DestroyTask(taskId);
+    if (task_id != TASK_NONE)
+        DestroyTask(task_id);
 
     MultiplayerInteractionMenu_Init();
 }
@@ -435,9 +435,9 @@ bool8 MultiplayerInteractionMenu_IsActive(void)
     return sMenuActive;
 }
 
-bool8 MultiplayerInteractionMenu_StartLocal(u8 targetPlayerId)
+bool8 MultiplayerInteractionMenu_StartLocal(u8 target_player_id)
 {
-    return StartInteractionMenu(NET_PLAYER_NONE, targetPlayerId);
+    return StartInteractionMenu(NET_PLAYER_NONE, target_player_id);
 }
 
 void MultiplayerInteractionMenu_ApplySnapshotState(struct NetPlayerSnapshot *snapshot)
@@ -452,35 +452,35 @@ void MultiplayerInteractionMenu_ApplySnapshotState(struct NetPlayerSnapshot *sna
 void MultiplayerInteractionMenu_UpdateRemoteRequests(const struct MultiplayerSession *session)
 {
     const struct NetPlayerSnapshot *local;
-    u8 i;
+    u8 remote_player_id;
 
-    if (session == NULL || session->localPlayerId >= MAX_NET_PLAYERS)
+    if (session == NULL || session->local_player_id >= MAX_NET_PLAYERS)
         return;
 
-    local = &session->players[session->localPlayerId];
-    for (i = 0; i < MAX_NET_PLAYERS; i++)
+    local = &session->players[session->local_player_id];
+    for (remote_player_id = 0; remote_player_id < MAX_NET_PLAYERS; remote_player_id++)
     {
         const struct NetPlayerSnapshot *snapshot;
 
-        if (i == session->localPlayerId)
+        if (remote_player_id == session->local_player_id)
             continue;
 
-        snapshot = &session->players[i];
+        snapshot = &session->players[remote_player_id];
         if (!snapshot->active || snapshot->interactionState != MULTIPLAYER_INTERACTION_OPTIONS_MENU)
         {
-            sRemoteMenuSeen[i] = FALSE;
+            sRemoteMenuSeen[remote_player_id] = FALSE;
             continue;
         }
-        if (sRemoteMenuSeen[i])
+        if (sRemoteMenuSeen[remote_player_id])
             continue;
 
-        if (SnapshotCanOpenRemoteMenu(snapshot, local) && StartInteractionMenu(i, session->localPlayerId))
+        if (SnapshotCanOpenRemoteMenu(snapshot, local) && StartInteractionMenu(remote_player_id, session->local_player_id))
         {
-            sRemoteMenuSeen[i] = TRUE;
+            sRemoteMenuSeen[remote_player_id] = TRUE;
         }
         else
         {
-            sRemoteMenuSeen[i] = FALSE;
+            sRemoteMenuSeen[remote_player_id] = FALSE;
         }
     }
 }
@@ -503,9 +503,9 @@ bool8 MultiplayerInteractionMenu_IsActive(void)
     return FALSE;
 }
 
-bool8 MultiplayerInteractionMenu_StartLocal(u8 targetPlayerId)
+bool8 MultiplayerInteractionMenu_StartLocal(u8 target_player_id)
 {
-    (void)targetPlayerId;
+    (void)target_player_id;
     return FALSE;
 }
 

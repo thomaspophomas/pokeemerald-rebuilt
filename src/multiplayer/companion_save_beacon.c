@@ -46,28 +46,28 @@ static u16 CalcBeaconChecksum(const struct NetCompanionSaveBeacon *beacon)
 {
     const u8 *bytes = (const u8 *)beacon;
     u16 checksum = 0;
-    u16 i;
+    u16 byte_index;
 
-    for (i = 0; i < sizeof(*beacon); i++)
-        checksum = (checksum << 1) ^ (checksum >> 15) ^ bytes[i];
+    for (byte_index = 0; byte_index < sizeof(*beacon); byte_index++)
+        checksum = (checksum << 1) ^ (checksum >> 15) ^ bytes[byte_index];
 
     return checksum;
 }
 
-static u8 GetSafeLocalPlayerId(u8 localPlayerId)
+static u8 GetSafeLocalPlayerId(u8 local_player_id)
 {
-    if (localPlayerId < MAX_NET_PLAYERS)
-        return localPlayerId;
+    if (local_player_id < MAX_NET_PLAYERS)
+        return local_player_id;
 
     return 0;
 }
 
-static void WriteBeacon(u32 tick, u8 sessionState, u8 healthState, u8 localPlayerId, u8 playerCount)
+static void WriteBeacon(u32 tick, u8 session_state, u8 health_state, u8 local_player_id, u8 player_count)
 {
     struct NetPlayerSnapshot snapshot;
     struct NetCompanionSaveBeacon beacon;
 
-    MultiplayerOverworld_BuildLocalSnapshot(&snapshot, GetSafeLocalPlayerId(localPlayerId), tick);
+    MultiplayerOverworld_BuildLocalSnapshot(&snapshot, GetSafeLocalPlayerId(local_player_id), tick);
     if (!snapshot.active)
         return;
 
@@ -77,10 +77,10 @@ static void WriteBeacon(u32 tick, u8 sessionState, u8 healthState, u8 localPlaye
     beacon.size = sizeof(beacon);
     beacon.sequence = ++sBeaconSequence;
     beacon.tick = tick;
-    beacon.sessionState = sessionState;
-    beacon.healthState = healthState;
+    beacon.sessionState = session_state;
+    beacon.healthState = health_state;
     beacon.localPlayerId = snapshot.playerId;
-    beacon.playerCount = playerCount;
+    beacon.playerCount = player_count;
     beacon.active = snapshot.active;
     beacon.mapGroup = snapshot.mapGroup;
     beacon.mapNum = snapshot.mapNum;
@@ -109,7 +109,7 @@ void MultiplayerCompanionSaveBeacon_Init(void)
 #endif
 }
 
-void MultiplayerCompanionSaveBeacon_Tick(u32 tick, u8 sessionState, u8 healthState, u8 localPlayerId, u8 playerCount)
+void MultiplayerCompanionSaveBeacon_Tick(u32 tick, u8 session_state, u8 health_state, u8 local_player_id, u8 player_count)
 {
 #if FEATURE_MULTIPLAYER && FEATURE_MULTIPLAYER_COMPANION_SAVE_BEACON
     if (sBeaconTimer < NET_COMPANION_SAVE_BEACON_INTERVAL_FRAMES)
@@ -119,12 +119,12 @@ void MultiplayerCompanionSaveBeacon_Tick(u32 tick, u8 sessionState, u8 healthSta
     }
 
     sBeaconTimer = 0;
-    WriteBeacon(tick, sessionState, healthState, localPlayerId, playerCount);
+    WriteBeacon(tick, session_state, health_state, local_player_id, player_count);
 #else
     (void)tick;
-    (void)sessionState;
-    (void)healthState;
-    (void)localPlayerId;
-    (void)playerCount;
+    (void)session_state;
+    (void)health_state;
+    (void)local_player_id;
+    (void)player_count;
 #endif
 }

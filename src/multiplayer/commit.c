@@ -18,14 +18,20 @@ static bool8 TransactionKeysEqual(const struct MultiplayerTransactionKey *left, 
         && left->subsessionId == right->subsessionId;
 }
 
-static struct MultiplayerCommitLogEntry *FindCommitEntry(const struct MultiplayerTransactionKey *key)
+static bool8 CommitEntryIsTerminal(const struct MultiplayerCommitLogEntry *entry)
 {
-    u8 i;
+    return entry->state == MULTIPLAYER_COMMIT_STATE_COMMITTED
+        || entry->state == MULTIPLAYER_COMMIT_STATE_ROLLED_BACK;
+}
 
-    for (i = 0; i < NET_COMMIT_LOG_SIZE; i++)
+static struct MultiplayerCommitLogEntry *FindCommitEntry(const struct MultiplayerTransactionKey *transaction_key)
+{
+    u8 commit_log_index;
+
+    for (commit_log_index = 0; commit_log_index < NET_COMMIT_LOG_SIZE; commit_log_index++)
     {
-        if (sCommitLog[i].active && TransactionKeysEqual(&sCommitLog[i].key, key))
-            return &sCommitLog[i];
+        if (sCommitLog[commit_log_index].active && TransactionKeysEqual(&sCommitLog[commit_log_index].key, transaction_key))
+            return &sCommitLog[commit_log_index];
     }
 
     return NULL;
@@ -33,12 +39,18 @@ static struct MultiplayerCommitLogEntry *FindCommitEntry(const struct Multiplaye
 
 static struct MultiplayerCommitLogEntry *AllocCommitEntry(void)
 {
-    u8 i;
+    u8 commit_log_index;
 
-    for (i = 0; i < NET_COMMIT_LOG_SIZE; i++)
+    for (commit_log_index = 0; commit_log_index < NET_COMMIT_LOG_SIZE; commit_log_index++)
     {
-        if (!sCommitLog[i].active)
-            return &sCommitLog[i];
+        if (!sCommitLog[commit_log_index].active)
+            return &sCommitLog[commit_log_index];
+    }
+
+    for (commit_log_index = 0; commit_log_index < NET_COMMIT_LOG_SIZE; commit_log_index++)
+    {
+        if (CommitEntryIsTerminal(&sCommitLog[commit_log_index]))
+            return &sCommitLog[commit_log_index];
     }
 
     return NULL;
@@ -46,35 +58,35 @@ static struct MultiplayerCommitLogEntry *AllocCommitEntry(void)
 
 static struct MultiplayerCommitLogEntry *FindCommitEntryByTransactionId(u32 transactionId)
 {
-    u8 i;
+    u8 commit_log_index;
 
-    for (i = 0; i < NET_COMMIT_LOG_SIZE; i++)
+    for (commit_log_index = 0; commit_log_index < NET_COMMIT_LOG_SIZE; commit_log_index++)
     {
-        if (sCommitLog[i].active && MultiplayerCommit_GetTransactionId(&sCommitLog[i].key) == transactionId)
-            return &sCommitLog[i];
+        if (sCommitLog[commit_log_index].active && MultiplayerCommit_GetTransactionId(&sCommitLog[commit_log_index].key) == transactionId)
+            return &sCommitLog[commit_log_index];
     }
 
     return NULL;
 }
 
-static void FillCommitResult(const struct MultiplayerCommitLogEntry *entry, struct NetCommitResult *result)
+static void FillCommitResult(const struct MultiplayerCommitLogEntry *entry, struct NetCommitResult *commit_result)
 {
-    if (result == NULL)
+    if (commit_result == NULL)
         return;
 
-    memset(result, 0, sizeof(*result));
-    result->transactionId = MultiplayerCommit_GetTransactionId(&entry->key);
-    result->serverRevision = entry->serverRevision;
-    result->payloadChecksum = entry->payloadChecksum;
-    result->commitType = entry->commitType;
-    result->result = entry->result;
-    result->detail = entry->detail;
+    memset(commit_result, 0, sizeof(*commit_result));
+    commit_result->transactionId = MultiplayerCommit_GetTransactionId(&entry->key);
+    commit_result->serverRevision = entry->serverRevision;
+    commit_result->payloadChecksum = entry->payloadChecksum;
+    commit_result->commitType = entry->commitType;
+    commit_result->result_code = entry->result_code;
+    commit_result->detail = entry->detail;
 }
 
-static u8 StoreTerminalResult(struct MultiplayerCommitLogEntry *entry, u8 state, u8 result, u16 detail)
+static u8 StoreTerminalResult(struct MultiplayerCommitLogEntry *entry, u8 commit_state, u8 commit_result_code, u16 detail)
 {
-    entry->state = state;
-    entry->result = result;
+    entry->state = commit_state;
+    entry->result_code = commit_result_code;
     entry->detail = detail;
     if (entry->serverRevision == 0)
     {
@@ -84,7 +96,7 @@ static u8 StoreTerminalResult(struct MultiplayerCommitLogEntry *entry, u8 state,
         entry->serverRevision = sServerRevision;
     }
 
-    return entry->result;
+    return entry->result_code;
 }
 
 #endif
@@ -97,40 +109,40 @@ void MultiplayerCommit_Init(void)
 #endif
 }
 
-void MultiplayerCommit_BuildKey(struct MultiplayerTransactionKey *key, u32 sessionEpoch, u8 playerId, u8 packetType, u8 subsessionId, u32 actionSequence)
+void MultiplayerCommit_BuildKey(struct MultiplayerTransactionKey *transaction_key, u32 session_epoch, u8 player_id, u8 packet_type, u8 subsession_id, u32 action_sequence)
 {
-    if (key == NULL)
+    if (transaction_key == NULL)
         return;
 
-    memset(key, 0, sizeof(*key));
-    key->sessionEpoch = sessionEpoch;
-    key->playerId = playerId;
-    key->packetType = packetType;
-    key->subsessionId = subsessionId;
-    key->actionSequence = actionSequence;
+    memset(transaction_key, 0, sizeof(*transaction_key));
+    transaction_key->sessionEpoch = session_epoch;
+    transaction_key->playerId = player_id;
+    transaction_key->packetType = packet_type;
+    transaction_key->subsessionId = subsession_id;
+    transaction_key->actionSequence = action_sequence;
 }
 
-u32 MultiplayerCommit_GetTransactionId(const struct MultiplayerTransactionKey *key)
+u32 MultiplayerCommit_GetTransactionId(const struct MultiplayerTransactionKey *transaction_key)
 {
-    if (key == NULL || key->actionSequence == 0)
+    if (transaction_key == NULL || transaction_key->actionSequence == 0)
         return 0;
 
     return NetProtocol_MakeTransactionId(
-        key->sessionEpoch,
-        key->playerId,
-        key->packetType,
-        key->subsessionId,
-        key->actionSequence);
+        transaction_key->sessionEpoch,
+        transaction_key->playerId,
+        transaction_key->packetType,
+        transaction_key->subsessionId,
+        transaction_key->actionSequence);
 }
 
-bool8 MultiplayerCommit_IsFailClosedType(u8 commitType)
+bool8 MultiplayerCommit_IsFailClosedType(u8 commit_type)
 {
-    return commitType == MULTIPLAYER_COMMIT_TRADE
-        || commitType == MULTIPLAYER_COMMIT_ITEM
-        || commitType == MULTIPLAYER_COMMIT_BATTLE
-        || commitType == MULTIPLAYER_COMMIT_STORY_FLAG
-        || commitType == MULTIPLAYER_COMMIT_OUTFIT
-        || commitType == MULTIPLAYER_COMMIT_WEATHER_REWARD;
+    return commit_type == MULTIPLAYER_COMMIT_TRADE
+        || commit_type == MULTIPLAYER_COMMIT_ITEM
+        || commit_type == MULTIPLAYER_COMMIT_BATTLE
+        || commit_type == MULTIPLAYER_COMMIT_STORY_FLAG
+        || commit_type == MULTIPLAYER_COMMIT_OUTFIT
+        || commit_type == MULTIPLAYER_COMMIT_WEATHER_REWARD;
 }
 
 void MultiplayerCommit_PayMoney(u32 amount)
@@ -151,159 +163,158 @@ void MultiplayerCommit_ReceiveMoney(u32 amount)
 #endif
 }
 
-void MultiplayerCommit_WriteMonData(struct Pokemon *mon, s32 field, const void *data)
+void MultiplayerCommit_WriteMonData(struct Pokemon *party_mon, s32 mon_data_field, const void *mon_data_value)
 {
 #if FEATURE_MULTIPLAYER
-    SetMonData(mon, field, data);
+    SetMonData(party_mon, mon_data_field, mon_data_value);
 #else
-    (void)mon;
-    (void)field;
-    (void)data;
+    (void)party_mon;
+    (void)mon_data_field;
+    (void)mon_data_value;
 #endif
 }
 
-u8 MultiplayerCommit_Prepare(const struct MultiplayerTransactionKey *key, u8 commitType, const void *payload, u16 payloadSize, struct NetCommitResult *result)
+u8 MultiplayerCommit_Prepare(const struct MultiplayerTransactionKey *transaction_key, u8 commit_type, const void *commit_payload, u16 commit_payload_size, struct NetCommitResult *commit_result)
 {
 #if FEATURE_MULTIPLAYER
-    struct MultiplayerCommitLogEntry *entry;
+    struct MultiplayerCommitLogEntry *commit_log_entry;
 
-    if (key == NULL || key->sessionEpoch == 0 || key->actionSequence == 0)
+    if (transaction_key == NULL || transaction_key->sessionEpoch == 0 || transaction_key->actionSequence == 0)
         return MULTIPLAYER_COMMIT_RESULT_REJECTED;
 
-    entry = FindCommitEntry(key);
-    if (entry != NULL)
+    commit_log_entry = FindCommitEntry(transaction_key);
+    if (commit_log_entry != NULL)
     {
-        FillCommitResult(entry, result);
-        return entry->result;
+        FillCommitResult(commit_log_entry, commit_result);
+        return commit_log_entry->result_code;
     }
 
-    entry = AllocCommitEntry();
-    if (entry == NULL)
+    commit_log_entry = AllocCommitEntry();
+    if (commit_log_entry == NULL)
         return MULTIPLAYER_COMMIT_RESULT_REJECTED;
 
-    memset(entry, 0, sizeof(*entry));
-    entry->active = TRUE;
-    entry->state = MULTIPLAYER_COMMIT_STATE_PREPARED;
-    entry->result = MULTIPLAYER_COMMIT_RESULT_PENDING;
-    entry->commitType = commitType;
-    entry->key = *key;
-    entry->payloadChecksum = NetProtocol_CalcChecksum(payload, payloadSize);
-    FillCommitResult(entry, result);
-    return entry->result;
+    memset(commit_log_entry, 0, sizeof(*commit_log_entry));
+    commit_log_entry->active = TRUE;
+    commit_log_entry->state = MULTIPLAYER_COMMIT_STATE_PREPARED;
+    commit_log_entry->result_code = MULTIPLAYER_COMMIT_RESULT_PENDING;
+    commit_log_entry->commitType = commit_type;
+    commit_log_entry->key = *transaction_key;
+    commit_log_entry->payloadChecksum = NetProtocol_CalcChecksum(commit_payload, commit_payload_size);
+    FillCommitResult(commit_log_entry, commit_result);
+    return commit_log_entry->result_code;
 #else
-    (void)key;
-    (void)commitType;
-    (void)payload;
-    (void)payloadSize;
-    (void)result;
+    (void)transaction_key;
+    (void)commit_type;
+    (void)commit_payload;
+    (void)commit_payload_size;
+    (void)commit_result;
     return MULTIPLAYER_COMMIT_RESULT_REJECTED;
 #endif
 }
 
-u8 MultiplayerCommit_Commit(const struct MultiplayerTransactionKey *key, u8 commitType, const void *payload, u16 payloadSize, struct NetCommitResult *result)
+u8 MultiplayerCommit_Commit(const struct MultiplayerTransactionKey *transaction_key, u8 commit_type, const void *commit_payload, u16 commit_payload_size, struct NetCommitResult *commit_result)
 {
 #if FEATURE_MULTIPLAYER
-    struct MultiplayerCommitLogEntry *entry;
+    struct MultiplayerCommitLogEntry *commit_log_entry;
     u16 checksum;
 
-    if (key == NULL || key->sessionEpoch == 0 || key->actionSequence == 0)
+    if (transaction_key == NULL || transaction_key->sessionEpoch == 0 || transaction_key->actionSequence == 0)
         return MULTIPLAYER_COMMIT_RESULT_REJECTED;
 
-    entry = FindCommitEntry(key);
-    if (entry == NULL)
+    commit_log_entry = FindCommitEntry(transaction_key);
+    if (commit_log_entry == NULL)
     {
-        MultiplayerCommit_Prepare(key, commitType, payload, payloadSize, result);
-        entry = FindCommitEntry(key);
-        if (entry == NULL)
+        MultiplayerCommit_Prepare(transaction_key, commit_type, commit_payload, commit_payload_size, commit_result);
+        commit_log_entry = FindCommitEntry(transaction_key);
+        if (commit_log_entry == NULL)
             return MULTIPLAYER_COMMIT_RESULT_REJECTED;
     }
 
-    if (entry->state == MULTIPLAYER_COMMIT_STATE_COMMITTED
-     || entry->state == MULTIPLAYER_COMMIT_STATE_ROLLED_BACK)
+    if (CommitEntryIsTerminal(commit_log_entry))
     {
-        FillCommitResult(entry, result);
-        return entry->result;
+        FillCommitResult(commit_log_entry, commit_result);
+        return commit_log_entry->result_code;
     }
 
-    checksum = NetProtocol_CalcChecksum(payload, payloadSize);
-    if (entry->payloadChecksum != checksum)
-        StoreTerminalResult(entry, MULTIPLAYER_COMMIT_STATE_ROLLED_BACK, MULTIPLAYER_COMMIT_RESULT_REJECTED, 1);
-    else if (MultiplayerCommit_IsFailClosedType(commitType))
-        StoreTerminalResult(entry, MULTIPLAYER_COMMIT_STATE_ROLLED_BACK, MULTIPLAYER_COMMIT_RESULT_REJECTED, 2);
+    checksum = NetProtocol_CalcChecksum(commit_payload, commit_payload_size);
+    if (commit_log_entry->payloadChecksum != checksum)
+        StoreTerminalResult(commit_log_entry, MULTIPLAYER_COMMIT_STATE_ROLLED_BACK, MULTIPLAYER_COMMIT_RESULT_REJECTED, 1);
+    else if (MultiplayerCommit_IsFailClosedType(commit_type))
+        StoreTerminalResult(commit_log_entry, MULTIPLAYER_COMMIT_STATE_ROLLED_BACK, MULTIPLAYER_COMMIT_RESULT_REJECTED, 2);
     else
-        StoreTerminalResult(entry, MULTIPLAYER_COMMIT_STATE_COMMITTED, MULTIPLAYER_COMMIT_RESULT_OK, 0);
+        StoreTerminalResult(commit_log_entry, MULTIPLAYER_COMMIT_STATE_COMMITTED, MULTIPLAYER_COMMIT_RESULT_OK, 0);
 
-    FillCommitResult(entry, result);
-    return entry->result;
+    FillCommitResult(commit_log_entry, commit_result);
+    return commit_log_entry->result_code;
 #else
-    (void)key;
-    (void)commitType;
-    (void)payload;
-    (void)payloadSize;
-    (void)result;
+    (void)transaction_key;
+    (void)commit_type;
+    (void)commit_payload;
+    (void)commit_payload_size;
+    (void)commit_result;
     return MULTIPLAYER_COMMIT_RESULT_REJECTED;
 #endif
 }
 
-u8 MultiplayerCommit_Rollback(const struct MultiplayerTransactionKey *key, u8 commitType, const void *payload, u16 payloadSize, struct NetCommitResult *result)
+u8 MultiplayerCommit_Rollback(const struct MultiplayerTransactionKey *transaction_key, u8 commit_type, const void *commit_payload, u16 commit_payload_size, struct NetCommitResult *commit_result)
 {
 #if FEATURE_MULTIPLAYER
-    struct MultiplayerCommitLogEntry *entry;
+    struct MultiplayerCommitLogEntry *commit_log_entry;
 
-    if (key == NULL || key->sessionEpoch == 0 || key->actionSequence == 0)
+    if (transaction_key == NULL || transaction_key->sessionEpoch == 0 || transaction_key->actionSequence == 0)
         return MULTIPLAYER_COMMIT_RESULT_REJECTED;
 
-    entry = FindCommitEntry(key);
-    if (entry == NULL)
+    commit_log_entry = FindCommitEntry(transaction_key);
+    if (commit_log_entry == NULL)
     {
-        MultiplayerCommit_Prepare(key, commitType, payload, payloadSize, result);
-        entry = FindCommitEntry(key);
-        if (entry == NULL)
+        MultiplayerCommit_Prepare(transaction_key, commit_type, commit_payload, commit_payload_size, commit_result);
+        commit_log_entry = FindCommitEntry(transaction_key);
+        if (commit_log_entry == NULL)
             return MULTIPLAYER_COMMIT_RESULT_REJECTED;
     }
 
-    if (entry->state != MULTIPLAYER_COMMIT_STATE_COMMITTED
-     && entry->state != MULTIPLAYER_COMMIT_STATE_ROLLED_BACK)
-        StoreTerminalResult(entry, MULTIPLAYER_COMMIT_STATE_ROLLED_BACK, MULTIPLAYER_COMMIT_RESULT_ROLLED_BACK, 0);
+    if (commit_log_entry->state != MULTIPLAYER_COMMIT_STATE_COMMITTED
+     && commit_log_entry->state != MULTIPLAYER_COMMIT_STATE_ROLLED_BACK)
+        StoreTerminalResult(commit_log_entry, MULTIPLAYER_COMMIT_STATE_ROLLED_BACK, MULTIPLAYER_COMMIT_RESULT_ROLLED_BACK, 0);
 
-    FillCommitResult(entry, result);
-    return entry->result;
+    FillCommitResult(commit_log_entry, commit_result);
+    return commit_log_entry->result_code;
 #else
-    (void)key;
-    (void)commitType;
-    (void)payload;
-    (void)payloadSize;
-    (void)result;
+    (void)transaction_key;
+    (void)commit_type;
+    (void)commit_payload;
+    (void)commit_payload_size;
+    (void)commit_result;
     return MULTIPLAYER_COMMIT_RESULT_REJECTED;
 #endif
 }
 
-void MultiplayerCommit_ApplyServerResult(const struct NetCommitResult *result)
+void MultiplayerCommit_ApplyServerResult(const struct NetCommitResult *commit_result)
 {
 #if FEATURE_MULTIPLAYER
-    struct MultiplayerCommitLogEntry *entry;
+    struct MultiplayerCommitLogEntry *commit_log_entry;
 
-    if (result == NULL || result->transactionId == 0)
+    if (commit_result == NULL || commit_result->transactionId == 0)
         return;
 
-    entry = FindCommitEntryByTransactionId(result->transactionId);
-    if (entry == NULL)
+    commit_log_entry = FindCommitEntryByTransactionId(commit_result->transactionId);
+    if (commit_log_entry == NULL)
         return;
 
-    entry->serverRevision = result->serverRevision;
-    entry->payloadChecksum = result->payloadChecksum;
-    entry->commitType = result->commitType;
-    entry->result = result->result;
-    entry->detail = result->detail;
-    if (result->result == MULTIPLAYER_COMMIT_RESULT_OK)
-        entry->state = MULTIPLAYER_COMMIT_STATE_COMMITTED;
-    else if (result->result == MULTIPLAYER_COMMIT_RESULT_ROLLED_BACK
-          || result->result == MULTIPLAYER_COMMIT_RESULT_REJECTED)
-        entry->state = MULTIPLAYER_COMMIT_STATE_ROLLED_BACK;
+    commit_log_entry->serverRevision = commit_result->serverRevision;
+    commit_log_entry->payloadChecksum = commit_result->payloadChecksum;
+    commit_log_entry->commitType = commit_result->commitType;
+    commit_log_entry->result_code = commit_result->result_code;
+    commit_log_entry->detail = commit_result->detail;
+    if (commit_result->result_code == MULTIPLAYER_COMMIT_RESULT_OK)
+        commit_log_entry->state = MULTIPLAYER_COMMIT_STATE_COMMITTED;
+    else if (commit_result->result_code == MULTIPLAYER_COMMIT_RESULT_ROLLED_BACK
+          || commit_result->result_code == MULTIPLAYER_COMMIT_RESULT_REJECTED)
+        commit_log_entry->state = MULTIPLAYER_COMMIT_STATE_ROLLED_BACK;
 
-    if (result->commitType == MULTIPLAYER_COMMIT_TRADE)
-        MultiplayerTrade_OnCommitResult(result);
+    if (commit_result->commitType == MULTIPLAYER_COMMIT_TRADE)
+        MultiplayerTrade_OnCommitResult(commit_result);
 #else
-    (void)result;
+    (void)commit_result;
 #endif
 }

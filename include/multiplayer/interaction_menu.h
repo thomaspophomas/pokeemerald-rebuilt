@@ -7,7 +7,7 @@
 void MultiplayerInteractionMenu_Init(void);
 void MultiplayerInteractionMenu_Reset(void);
 bool8 MultiplayerInteractionMenu_IsActive(void);
-bool8 MultiplayerInteractionMenu_StartLocal(u8 targetPlayerId);
+bool8 MultiplayerInteractionMenu_StartLocal(u8 target_player_id);
 void MultiplayerInteractionMenu_ApplySnapshotState(struct NetPlayerSnapshot *snapshot);
 void MultiplayerInteractionMenu_UpdateRemoteRequests(const struct MultiplayerSession *session);
 

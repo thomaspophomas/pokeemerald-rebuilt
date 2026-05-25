@@ -16,14 +16,14 @@ static bool8 DefinitionIsEmptyDefault(const struct ModBattleMoveDefinition *defi
 
 static bool8 RuntimeMoveKeyExists(const char *key, const struct ModBattleMoveDefinition *moves, u16 count)
 {
-    u16 i;
+    u16 move_index;
 
     if (key == NULL || moves == NULL)
         return FALSE;
 
-    for (i = 0; i < count; i++)
+    for (move_index = 0; move_index < count; move_index++)
     {
-        if (moves[i].key != NULL && strcmp(moves[i].key, key) == 0)
+        if (moves[move_index].key != NULL && strcmp(moves[move_index].key, key) == 0)
             return TRUE;
     }
 
@@ -37,15 +37,15 @@ static const struct ModBattleMoveDefinition *FindBestMove(
     const struct ModBattleMoveDefinition *shadowingMoves,
     u16 shadowingCount)
 {
-    const struct ModBattleMoveDefinition *best = NULL;
-    u16 i;
+    const struct ModBattleMoveDefinition *best_definition = NULL;
+    u16 move_index;
 
     if (moves == NULL)
         return NULL;
 
-    for (i = 0; i < count; i++)
+    for (move_index = 0; move_index < count; move_index++)
     {
-        const struct ModBattleMoveDefinition *definition = &moves[i];
+        const struct ModBattleMoveDefinition *definition = &moves[move_index];
 
         if (shadowingMoves != NULL && RuntimeMoveKeyExists(definition->key, shadowingMoves, shadowingCount))
             continue;
@@ -53,11 +53,11 @@ static const struct ModBattleMoveDefinition *FindBestMove(
             continue;
         if (definition->move != move)
             continue;
-        if (best == NULL || definition->priority < best->priority)
-            best = definition;
+        if (best_definition == NULL || definition->priority < best_definition->priority)
+            best_definition = definition;
     }
 
-    return best;
+    return best_definition;
 }
 
 static const struct ModBattleMoveDefinition *FindMove(u16 move)
@@ -77,11 +77,11 @@ static const struct ModBattleMoveDefinition *FindMove(u16 move)
     return FindBestMove(gModBattleMoveDefinitions, gModBattleMoveDefinitionCount, move, runtimeMoves, runtimeCount);
 }
 
-bool8 BattleDataApi_IsMoveDefinitionValid(const struct ModBattleMoveDefinition *definition, bool8 allowEmptyDefault)
+bool8 BattleDataApi_IsMoveDefinitionValid(const struct ModBattleMoveDefinition *definition, bool8 allow_empty_default)
 {
     if (definition == NULL)
         return FALSE;
-    if (allowEmptyDefault && DefinitionIsEmptyDefault(definition))
+    if (allow_empty_default && DefinitionIsEmptyDefault(definition))
         return TRUE;
     if (definition->key == NULL || definition->key[0] == '\0')
         return FALSE;

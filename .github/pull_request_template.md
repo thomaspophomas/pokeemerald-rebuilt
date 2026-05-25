@@ -16,7 +16,7 @@
 - [ ] `python3 scripts/ci/multiplayer_host_sim.py`
 - [ ] `python3 scripts/ci/check_net_manifest.py`
 - [ ] `python3 scripts/ci/modgen_smoke.py`
-- [ ] `python3 scripts/modgen.py --root .`
+- [ ] `make generated FEATURE_MODS=1` or `python3 scripts/modgen.py --root .`
 - [ ] Relevant `make` build lane:
 
 ## Feature Gates

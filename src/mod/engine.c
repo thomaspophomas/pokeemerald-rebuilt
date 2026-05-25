@@ -38,11 +38,11 @@ const struct EngineRuleset *EngineApi_GetActiveRuleset(void)
     return &gModEngineRulesets[sActiveRuleset];
 }
 
-bool8 EngineApi_SetActiveRuleset(const char *id)
+bool8 EngineApi_SetActiveRuleset(const char *ruleset_id)
 {
     const struct EngineRuleset *ruleset;
 
-    ruleset = EngineApi_FindRuleset(id);
+    ruleset = EngineApi_FindRuleset(ruleset_id);
     if (ruleset == NULL)
         return FALSE;
     if ((ruleset->flags & ENGINE_RULESET_FLAG_SAVE_COMPATIBLE) == 0)
@@ -52,14 +52,14 @@ bool8 EngineApi_SetActiveRuleset(const char *id)
     return TRUE;
 }
 
-const struct EngineRuleset *EngineApi_FindRuleset(const char *id)
+const struct EngineRuleset *EngineApi_FindRuleset(const char *ruleset_id)
 {
-    u16 i;
+    u16 ruleset_index;
 
-    for (i = 0; i < gModEngineRulesetCount; i++)
+    for (ruleset_index = 0; ruleset_index < gModEngineRulesetCount; ruleset_index++)
     {
-        if (StringEquals(gModEngineRulesets[i].id, id))
-            return &gModEngineRulesets[i];
+        if (StringEquals(gModEngineRulesets[ruleset_index].ruleset_id, ruleset_id))
+            return &gModEngineRulesets[ruleset_index];
     }
 
     return NULL;

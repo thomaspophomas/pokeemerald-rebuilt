@@ -37,6 +37,7 @@ enum NetPacketType
     NET_PACKET_SERVER_CATALOG_REQUEST,
     NET_PACKET_CLIENT_CATALOG_BEGIN,
     NET_PACKET_CLIENT_CATALOG_CHUNK,
+    NET_PACKET_PLAYER_BATTLE_PROFILE,
     NET_PACKET_COUNT,
 };
 
@@ -151,7 +152,7 @@ struct NetCommitResult
     u32 serverRevision;
     u16 payloadChecksum;
     u8 commitType;
-    u8 result;
+    u8 result_code;
     u16 detail;
 } __attribute__((packed));
 
@@ -190,7 +191,7 @@ struct NetServerProfileCommit
 struct NetServerProfileAck
 {
     u32 profileHash;
-    u8 result;
+    u8 result_code;
     u8 reserved;
     u16 detail;
 } __attribute__((packed));
@@ -220,10 +221,10 @@ struct NetClientCatalogChunk
     struct ModCatalogEntry entries[NET_CATALOG_CHUNK_ENTRY_COUNT];
 } __attribute__((packed));
 
-u16 NetProtocol_CalcChecksum(const void *data, u16 size);
-u32 NetProtocol_MakeTransactionId(u32 sessionEpoch, u8 playerId, u8 packetType, u8 subsessionId, u32 actionSequence);
-void NetProtocol_InitEnvelope(struct NetPacketEnvelope *envelope, u8 packetType, u8 playerId, u32 sessionId, u32 tick, u16 payloadSize);
-void NetProtocol_InitEnvelopeWithEpoch(struct NetPacketEnvelope *envelope, u8 packetType, u8 playerId, u32 sessionId, u32 sessionEpoch, u32 tick, u16 payloadSize);
-bool8 NetProtocol_ValidateEnvelope(const struct NetPacketEnvelope *envelope, u8 packetType, u16 payloadSize);
+u16 NetProtocol_CalcChecksum(const void *checksum_data, u16 checksum_data_size);
+u32 NetProtocol_MakeTransactionId(u32 session_epoch, u8 player_id, u8 packet_type, u8 subsession_id, u32 action_sequence);
+void NetProtocol_InitEnvelope(struct NetPacketEnvelope *envelope, u8 packet_type, u8 player_id, u32 session_id, u32 tick, u16 payload_size);
+void NetProtocol_InitEnvelopeWithEpoch(struct NetPacketEnvelope *envelope, u8 packet_type, u8 player_id, u32 session_id, u32 session_epoch, u32 tick, u16 payload_size);
+bool8 NetProtocol_ValidateEnvelope(const struct NetPacketEnvelope *envelope, u8 packet_type, u16 payload_size);
 
 #endif // GUARD_MULTIPLAYER_PROTOCOL_H

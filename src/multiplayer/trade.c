@@ -24,23 +24,23 @@ static void ClearPendingItemTrade(void)
     sPendingTradeTransactionId = 0;
 }
 
-static bool8 SubsessionIncludesPlayer(const struct MultiplayerSubsession *subsession, u8 playerId)
+static bool8 SubsessionIncludesPlayer(const struct MultiplayerSubsession *subsession, u8 player_id)
 {
-    u8 i;
+    u8 player_index_in_subsession;
 
-    if (subsession == NULL || !subsession->active || playerId >= MAX_NET_PLAYERS)
+    if (subsession == NULL || !subsession->active || player_id >= MAX_NET_PLAYERS)
         return FALSE;
 
-    for (i = 0; i < subsession->playerCount; i++)
+    for (player_index_in_subsession = 0; player_index_in_subsession < subsession->playerCount; player_index_in_subsession++)
     {
-        if (subsession->players[i] == playerId)
+        if (subsession->players[player_index_in_subsession] == player_id)
             return TRUE;
     }
 
     return FALSE;
 }
 
-static bool8 SubsessionMatchesPendingTrade(const struct MultiplayerSubsession *subsession, u8 localPlayerId)
+static bool8 SubsessionMatchesPendingTrade(const struct MultiplayerSubsession *subsession, u8 local_player_id)
 {
     if (subsession == NULL || !subsession->active)
         return FALSE;
@@ -50,7 +50,7 @@ static bool8 SubsessionMatchesPendingTrade(const struct MultiplayerSubsession *s
      && subsession->state != MULTIPLAYER_SUBSESSION_STATE_READY
      && subsession->state != MULTIPLAYER_SUBSESSION_STATE_ACTIVE)
         return FALSE;
-    if (!SubsessionIncludesPlayer(subsession, localPlayerId))
+    if (!SubsessionIncludesPlayer(subsession, local_player_id))
         return FALSE;
     if (!SubsessionIncludesPlayer(subsession, sPendingTradePlayerA)
      || !SubsessionIncludesPlayer(subsession, sPendingTradePlayerB))
@@ -61,14 +61,14 @@ static bool8 SubsessionMatchesPendingTrade(const struct MultiplayerSubsession *s
 
 static const struct MultiplayerSubsession *FindPendingTradeSubsession(const struct MultiplayerSession *session)
 {
-    u8 i;
+    u8 subsession_index;
 
     if (session == NULL || session->localPlayerId >= MAX_NET_PLAYERS)
         return NULL;
 
-    for (i = 0; i < MAX_NET_SUBSESSIONS; i++)
+    for (subsession_index = 0; subsession_index < MAX_NET_SUBSESSIONS; subsession_index++)
     {
-        const struct MultiplayerSubsession *subsession = &session->subsessions[i];
+        const struct MultiplayerSubsession *subsession = &session->subsessions[subsession_index];
 
         if (SubsessionMatchesPendingTrade(subsession, session->localPlayerId))
             return subsession;
@@ -130,21 +130,21 @@ void MultiplayerTrade_Reset(void)
 #endif
 }
 
-bool8 MultiplayerTrade_StartItemTrade(u8 otherPlayerId, u32 moneyAmount)
+bool8 MultiplayerTrade_StartItemTrade(u8 other_player_id, u32 money_amount)
 {
 #if FEATURE_MULTIPLAYER
     struct MultiplayerTradeRequest request;
-    u8 localPlayerId = MultiplayerSession_GetLocalPlayerId();
+    u8 local_player_id = MultiplayerSession_GetLocalPlayerId();
 
-    if (localPlayerId >= MAX_NET_PLAYERS || otherPlayerId >= MAX_NET_PLAYERS)
+    if (local_player_id >= MAX_NET_PLAYERS || other_player_id >= MAX_NET_PLAYERS)
         return FALSE;
-    if (localPlayerId == otherPlayerId)
+    if (local_player_id == other_player_id)
         return FALSE;
-    if (moneyAmount > GetMoney(&gSaveBlock1Ptr->money))
+    if (money_amount > GetMoney(&gSaveBlock1Ptr->money))
         return FALSE;
 
-    request.playerA = localPlayerId;
-    request.playerB = otherPlayerId;
+    request.playerA = local_player_id;
+    request.playerB = other_player_id;
     if (!MultiplayerTrade_Start(&request))
         return FALSE;
 
@@ -152,65 +152,65 @@ bool8 MultiplayerTrade_StartItemTrade(u8 otherPlayerId, u32 moneyAmount)
     sPendingTradePlayerA = request.playerA;
     sPendingTradePlayerB = request.playerB;
     sPendingTradeSubsessionId = NET_SUBSESSION_NONE;
-    sPendingTradeMoneyAmount = moneyAmount;
+    sPendingTradeMoneyAmount = money_amount;
     sPendingTradeTransactionId = 0;
     return TRUE;
 #else
-    (void)otherPlayerId;
-    (void)moneyAmount;
+    (void)other_player_id;
+    (void)money_amount;
     return FALSE;
 #endif
 }
 
-bool8 MultiplayerTrade_SendAction(u8 subsessionId, u8 action, u16 partySlot, u32 tradeChecksum, u32 moneyAmount)
+bool8 MultiplayerTrade_SendAction(u8 subsession_id, u8 action, u16 party_slot, u32 trade_checksum, u32 money_amount)
 {
 #if FEATURE_MULTIPLAYER
-    struct NetTradeAction packet;
-    struct MultiplayerTransactionKey key;
+    struct NetTradeAction trade_action_packet;
+    struct MultiplayerTransactionKey transaction_key;
     const struct MultiplayerSession *session;
-    u32 actionSequence;
+    u32 action_sequence;
 
     if (!MultiplayerSession_IsOnline())
         return FALSE;
-    if (subsessionId == NET_SUBSESSION_NONE || subsessionId > MAX_NET_SUBSESSIONS)
+    if (subsession_id == NET_SUBSESSION_NONE || subsession_id > MAX_NET_SUBSESSIONS)
         return FALSE;
 
     session = MultiplayerSession_Get();
     if (session == NULL)
         return FALSE;
 
-    memset(&packet, 0, sizeof(packet));
-    actionSequence = MultiplayerSession_NextActionSequence();
-    if (!MultiplayerSession_BuildTransactionKey(&key, NET_PACKET_TRADE_ACTION, subsessionId, actionSequence))
+    memset(&trade_action_packet, 0, sizeof(trade_action_packet));
+    action_sequence = MultiplayerSession_NextActionSequence();
+    if (!MultiplayerSession_BuildTransactionKey(&transaction_key, NET_PACKET_TRADE_ACTION, subsession_id, action_sequence))
         return FALSE;
-    packet.header.clientFrame = session->localClientFrame;
-    packet.header.serverTickSeen = session->bridgeTick;
-    packet.header.actionSequence = actionSequence;
-    packet.header.transactionId = MultiplayerCommit_GetTransactionId(&key);
-    packet.subsessionId = subsessionId;
-    packet.action = action;
-    packet.partySlot = partySlot;
-    packet.tradeChecksum = tradeChecksum;
-    packet.moneyAmount = moneyAmount;
+    trade_action_packet.header.clientFrame = session->localClientFrame;
+    trade_action_packet.header.serverTickSeen = session->bridgeTick;
+    trade_action_packet.header.actionSequence = action_sequence;
+    trade_action_packet.header.transactionId = MultiplayerCommit_GetTransactionId(&transaction_key);
+    trade_action_packet.subsessionId = subsession_id;
+    trade_action_packet.action = action;
+    trade_action_packet.partySlot = party_slot;
+    trade_action_packet.tradeChecksum = trade_checksum;
+    trade_action_packet.moneyAmount = money_amount;
     if (action == MULTIPLAYER_TRADE_ACTION_ITEMTRADE_OFFER)
     {
-        sPendingTradeSubsessionId = subsessionId;
-        sPendingTradeTransactionId = packet.header.transactionId;
+        sPendingTradeSubsessionId = subsession_id;
+        sPendingTradeTransactionId = trade_action_packet.header.transactionId;
     }
-    MultiplayerCommit_Prepare(&key, MULTIPLAYER_COMMIT_TRADE, &packet, sizeof(packet), NULL);
-    if (!NetTransport_SendPacket(NET_PACKET_TRADE_ACTION, &packet, sizeof(packet)))
+    MultiplayerCommit_Prepare(&transaction_key, MULTIPLAYER_COMMIT_TRADE, &trade_action_packet, sizeof(trade_action_packet), NULL);
+    if (!NetTransport_SendPacket(NET_PACKET_TRADE_ACTION, &trade_action_packet, sizeof(trade_action_packet)))
     {
-        MultiplayerCommit_Rollback(&key, MULTIPLAYER_COMMIT_TRADE, &packet, sizeof(packet), NULL);
+        MultiplayerCommit_Rollback(&transaction_key, MULTIPLAYER_COMMIT_TRADE, &trade_action_packet, sizeof(trade_action_packet), NULL);
         return FALSE;
     }
 
     return TRUE;
 #else
-    (void)subsessionId;
+    (void)subsession_id;
     (void)action;
-    (void)partySlot;
-    (void)tradeChecksum;
-    (void)moneyAmount;
+    (void)party_slot;
+    (void)trade_checksum;
+    (void)money_amount;
     return FALSE;
 #endif
 }
@@ -233,66 +233,66 @@ void MultiplayerTrade_Tick(const struct MultiplayerSession *session)
         return;
 
     if (MultiplayerTrade_SendAction(
-        subsession->id,
+        subsession->subsession_id,
         MULTIPLAYER_TRADE_ACTION_ITEMTRADE_OFFER,
         0xFFFF,
         0,
         sPendingTradeMoneyAmount))
     {
-        MultiplayerSession_EndSubsession(subsession->id, MULTIPLAYER_SUBSESSION_STATE_ERROR);
+        MultiplayerSession_EndSubsession(subsession->subsession_id, MULTIPLAYER_SUBSESSION_STATE_ERROR);
     }
 #else
     (void)session;
 #endif
 }
 
-void MultiplayerTrade_OnCommitResult(const struct NetCommitResult *result)
+void MultiplayerTrade_OnCommitResult(const struct NetCommitResult *commit_result)
 {
 #if FEATURE_MULTIPLAYER
-    if (result == NULL || result->commitType != MULTIPLAYER_COMMIT_TRADE)
+    if (commit_result == NULL || commit_result->commitType != MULTIPLAYER_COMMIT_TRADE)
         return;
-    if (sPendingTradeTransactionId == 0 || result->transactionId != sPendingTradeTransactionId)
+    if (sPendingTradeTransactionId == 0 || commit_result->transactionId != sPendingTradeTransactionId)
         return;
 
-    if (result->result == MULTIPLAYER_COMMIT_RESULT_OK && sPendingTradeMoneyAmount != 0)
+    if (commit_result->result_code == MULTIPLAYER_COMMIT_RESULT_OK && sPendingTradeMoneyAmount != 0)
         MultiplayerCommit_PayMoney(sPendingTradeMoneyAmount);
 
     ClearPendingItemTrade();
 #else
-    (void)result;
+    (void)commit_result;
 #endif
 }
 
-void MultiplayerTrade_ApplyRemoteAction(u8 senderPlayerId, const struct NetTradeAction *action)
+void MultiplayerTrade_ApplyRemoteAction(u8 sender_player_id, const struct NetTradeAction *trade_action)
 {
 #if FEATURE_MULTIPLAYER
-    if (action == NULL || senderPlayerId >= MAX_NET_PLAYERS)
+    if (trade_action == NULL || sender_player_id >= MAX_NET_PLAYERS)
         return;
-    if (senderPlayerId == MultiplayerSession_GetLocalPlayerId())
+    if (sender_player_id == MultiplayerSession_GetLocalPlayerId())
         return;
-    if (action->action != MULTIPLAYER_TRADE_ACTION_ITEMTRADE_OFFER)
+    if (trade_action->action != MULTIPLAYER_TRADE_ACTION_ITEMTRADE_OFFER)
         return;
-    if (action->header.transactionId == 0 || action->moneyAmount == 0)
+    if (trade_action->header.transactionId == 0 || trade_action->moneyAmount == 0)
         return;
-    if (sLastRemoteTradeTransactionIds[senderPlayerId] == action->header.transactionId)
+    if (sLastRemoteTradeTransactionIds[sender_player_id] == trade_action->header.transactionId)
         return;
 
-    sLastRemoteTradeTransactionIds[senderPlayerId] = action->header.transactionId;
-    MultiplayerCommit_ReceiveMoney(action->moneyAmount);
+    sLastRemoteTradeTransactionIds[sender_player_id] = trade_action->header.transactionId;
+    MultiplayerCommit_ReceiveMoney(trade_action->moneyAmount);
 #else
-    (void)senderPlayerId;
-    (void)action;
+    (void)sender_player_id;
+    (void)trade_action;
 #endif
 }
 
-void MultiplayerTrade_End(u8 subsessionId, bool8 committed)
+void MultiplayerTrade_End(u8 subsession_id, bool8 committed)
 {
 #if FEATURE_MULTIPLAYER
     if (committed)
         committed = FALSE;
 
     MultiplayerSession_EndSubsession(
-        subsessionId,
+        subsession_id,
         committed ? MULTIPLAYER_SUBSESSION_STATE_ENDING : MULTIPLAYER_SUBSESSION_STATE_ERROR);
 #endif
 }

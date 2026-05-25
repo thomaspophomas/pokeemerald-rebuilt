@@ -44,8 +44,8 @@ struct ModRewardDefinition
     ModRewardHook hook;
 };
 
-bool8 RewardApi_IsDefinitionValid(const struct ModRewardDefinition *definition, bool8 allowEmptyDefault);
-bool8 RewardApi_AdjustItemReward(u8 source, u8 level, u16 vanillaItemId, u16 *itemId, u16 *quantity);
-ModRewardHook RewardApi_FindCompiledHook(const char *sourceKey, const char *hookKey);
+bool8 RewardApi_IsDefinitionValid(const struct ModRewardDefinition *definition, bool8 allow_empty_default);
+bool8 RewardApi_AdjustItemReward(u8 source, u8 level, u16 vanilla_item_id, u16 *item_id, u16 *quantity);
+ModRewardHook RewardApi_FindCompiledHook(const char *source_key, const char *hook_key);
 
 #endif // GUARD_MOD_REWARD_H

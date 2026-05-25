@@ -15,7 +15,7 @@ static u8 RodToMask(u8 rod)
 
 static bool8 DefinitionIsEmptyDefault(const struct ModEncounterDefinition *definition)
 {
-    u8 i;
+    u8 encounter_slot_index;
 
     if (definition == NULL)
         return FALSE;
@@ -25,9 +25,9 @@ static bool8 DefinitionIsEmptyDefault(const struct ModEncounterDefinition *defin
         return FALSE;
     if (definition->encounterRate != 0 || definition->slotCount != 0 || definition->priority != 0 || definition->flags != 0)
         return FALSE;
-    for (i = 0; i < MOD_ENCOUNTER_MAX_SLOTS; i++)
+    for (encounter_slot_index = 0; encounter_slot_index < MOD_ENCOUNTER_MAX_SLOTS; encounter_slot_index++)
     {
-        if (definition->slots[i].species != SPECIES_NONE || definition->slots[i].weight != 0)
+        if (definition->slots[encounter_slot_index].species != SPECIES_NONE || definition->slots[encounter_slot_index].weight != 0)
             return FALSE;
     }
     return TRUE;
@@ -46,14 +46,14 @@ static bool8 DefinitionMatchesContext(const struct ModEncounterDefinition *defin
 
 static bool8 RuntimeEncounterKeyExists(const char *key, const struct ModEncounterDefinition *encounters, u16 count)
 {
-    u16 i;
+    u16 encounter_index;
 
     if (key == NULL)
         return FALSE;
 
-    for (i = 0; i < count; i++)
+    for (encounter_index = 0; encounter_index < count; encounter_index++)
     {
-        if (encounters[i].key != NULL && strcmp(encounters[i].key, key) == 0)
+        if (encounters[encounter_index].key != NULL && strcmp(encounters[encounter_index].key, key) == 0)
             return TRUE;
     }
 
@@ -70,25 +70,25 @@ static const struct ModEncounterDefinition *FindBestEncounter(
     const struct ModEncounterDefinition *shadowingEncounters,
     u16 shadowingCount)
 {
-    const struct ModEncounterDefinition *best = NULL;
-    u16 i;
+    const struct ModEncounterDefinition *best_definition = NULL;
+    u16 encounter_index;
 
     if (encounters == NULL)
         return NULL;
 
-    for (i = 0; i < count; i++)
+    for (encounter_index = 0; encounter_index < count; encounter_index++)
     {
-        const struct ModEncounterDefinition *definition = &encounters[i];
+        const struct ModEncounterDefinition *definition = &encounters[encounter_index];
 
         if (shadowingEncounters != NULL && RuntimeEncounterKeyExists(definition->key, shadowingEncounters, shadowingCount))
             continue;
         if (!DefinitionMatchesContext(definition, mapGroup, mapNum, area, rod))
             continue;
-        if (best == NULL || definition->priority < best->priority)
-            best = definition;
+        if (best_definition == NULL || definition->priority < best_definition->priority)
+            best_definition = definition;
     }
 
-    return best;
+    return best_definition;
 }
 
 static const struct ModEncounterDefinition *FindCurrentEncounter(u8 area, u8 rod)
@@ -112,57 +112,57 @@ static const struct ModEncounterDefinition *FindCurrentEncounter(u8 area, u8 rod
     return FindBestEncounter(gModEncounterDefinitions, gModEncounterDefinitionCount, mapGroup, mapNum, area, rod, runtimeEncounters, runtimeCount);
 }
 
-static bool8 SlotMatchesContext(const struct ModEncounterSlot *slot, u8 area, u8 rod)
+static bool8 EncounterSlotMatchesContext(const struct ModEncounterSlot *encounter_slot, u8 area, u8 rod)
 {
-    if (slot->weight == 0 || slot->species == SPECIES_NONE)
+    if (encounter_slot->weight == 0 || encounter_slot->species == SPECIES_NONE)
         return FALSE;
-    if (area == MOD_ENCOUNTER_AREA_FISHING && (slot->rodMask & RodToMask(rod)) == 0)
+    if (area == MOD_ENCOUNTER_AREA_FISHING && (encounter_slot->rodMask & RodToMask(rod)) == 0)
         return FALSE;
     return TRUE;
 }
 
-static bool8 PickWeightedSlot(const struct ModEncounterDefinition *definition, u8 area, u8 rod, u8 *slotIndex)
+static bool8 PickWeightedSlot(const struct ModEncounterDefinition *definition, u8 area, u8 rod, u8 *selected_slot_index)
 {
     u16 totalWeight = 0;
     u16 roll;
-    u8 i;
+    u8 encounter_slot_index;
 
-    for (i = 0; i < definition->slotCount; i++)
+    for (encounter_slot_index = 0; encounter_slot_index < definition->slotCount; encounter_slot_index++)
     {
-        if (SlotMatchesContext(&definition->slots[i], area, rod))
-            totalWeight += definition->slots[i].weight;
+        if (EncounterSlotMatchesContext(&definition->slots[encounter_slot_index], area, rod))
+            totalWeight += definition->slots[encounter_slot_index].weight;
     }
     if (totalWeight == 0)
         return FALSE;
 
     roll = Random() % totalWeight;
-    for (i = 0; i < definition->slotCount; i++)
+    for (encounter_slot_index = 0; encounter_slot_index < definition->slotCount; encounter_slot_index++)
     {
-        if (!SlotMatchesContext(&definition->slots[i], area, rod))
+        if (!EncounterSlotMatchesContext(&definition->slots[encounter_slot_index], area, rod))
             continue;
-        if (roll < definition->slots[i].weight)
+        if (roll < definition->slots[encounter_slot_index].weight)
         {
-            *slotIndex = i;
+            *selected_slot_index = encounter_slot_index;
             return TRUE;
         }
-        roll -= definition->slots[i].weight;
+        roll -= definition->slots[encounter_slot_index].weight;
     }
 
     return FALSE;
 }
 
-static u8 PickLevel(const struct ModEncounterSlot *slot)
+static u8 PickEncounterLevel(const struct ModEncounterSlot *encounter_slot)
 {
-    u8 minLevel = slot->minLevel;
-    u8 maxLevel = slot->maxLevel;
+    u8 lower_level_bound = encounter_slot->minLevel;
+    u8 upper_level_bound = encounter_slot->maxLevel;
 
-    if (maxLevel < minLevel)
+    if (upper_level_bound < lower_level_bound)
     {
-        u8 temp = maxLevel;
-        maxLevel = minLevel;
-        minLevel = temp;
+        u8 original_upper_level_bound = upper_level_bound;
+        upper_level_bound = lower_level_bound;
+        lower_level_bound = original_upper_level_bound;
     }
-    return minLevel + (Random() % (maxLevel - minLevel + 1));
+    return lower_level_bound + (Random() % (upper_level_bound - lower_level_bound + 1));
 }
 
 static u8 RunHook(const struct ModEncounterDefinition *definition, struct ModEncounterContext *context)
@@ -172,13 +172,13 @@ static u8 RunHook(const struct ModEncounterDefinition *definition, struct ModEnc
     return definition->hook(definition, context);
 }
 
-bool8 EncounterApi_IsDefinitionValid(const struct ModEncounterDefinition *definition, bool8 allowEmptyDefault)
+bool8 EncounterApi_IsDefinitionValid(const struct ModEncounterDefinition *definition, bool8 allow_empty_default)
 {
-    u8 i;
+    u8 encounter_slot_index;
 
     if (definition == NULL)
         return FALSE;
-    if (allowEmptyDefault && DefinitionIsEmptyDefault(definition))
+    if (allow_empty_default && DefinitionIsEmptyDefault(definition))
         return TRUE;
     if (definition->key == NULL || definition->key[0] == '\0')
         return FALSE;
@@ -191,17 +191,17 @@ bool8 EncounterApi_IsDefinitionValid(const struct ModEncounterDefinition *defini
     if (definition->slotCount == 0 && definition->hook == NULL)
         return FALSE;
 
-    for (i = 0; i < definition->slotCount; i++)
+    for (encounter_slot_index = 0; encounter_slot_index < definition->slotCount; encounter_slot_index++)
     {
-        const struct ModEncounterSlot *slot = &definition->slots[i];
+        const struct ModEncounterSlot *encounter_slot = &definition->slots[encounter_slot_index];
 
-        if (slot->species == SPECIES_NONE || slot->species >= NUM_SPECIES)
+        if (encounter_slot->species == SPECIES_NONE || encounter_slot->species >= NUM_SPECIES)
             return FALSE;
-        if (slot->minLevel == 0 || slot->minLevel > 100 || slot->maxLevel == 0 || slot->maxLevel > 100)
+        if (encounter_slot->minLevel == 0 || encounter_slot->minLevel > 100 || encounter_slot->maxLevel == 0 || encounter_slot->maxLevel > 100)
             return FALSE;
-        if (slot->weight == 0)
+        if (encounter_slot->weight == 0)
             return FALSE;
-        if (slot->rodMask == 0 || (slot->rodMask & ~MOD_ENCOUNTER_ROD_ALL) != 0)
+        if (encounter_slot->rodMask == 0 || (encounter_slot->rodMask & ~MOD_ENCOUNTER_ROD_ALL) != 0)
             return FALSE;
     }
 
@@ -213,14 +213,14 @@ bool8 EncounterApi_HasDefinition(u8 area, u8 rod)
     return FindCurrentEncounter(area, rod) != NULL;
 }
 
-u16 EncounterApi_GetEncounterRate(u8 area, u8 rod, u16 vanillaRate)
+u16 EncounterApi_GetEncounterRate(u8 area, u8 rod, u16 vanilla_encounter_rate)
 {
     const struct ModEncounterDefinition *definition = FindCurrentEncounter(area, rod);
     struct ModEncounterContext context;
-    u8 result;
+    u8 encounter_hook_result;
 
     if (definition == NULL)
-        return vanillaRate;
+        return vanilla_encounter_rate;
 
     memset(&context, 0, sizeof(context));
     context.mapGroup = gSaveBlock1Ptr->location.mapGroup;
@@ -230,21 +230,21 @@ u16 EncounterApi_GetEncounterRate(u8 area, u8 rod, u16 vanillaRate)
     context.phase = MOD_ENCOUNTER_PHASE_RATE;
     context.encounterRate = definition->encounterRate;
 
-    result = RunHook(definition, &context);
-    if (result == MOD_ENCOUNTER_HOOK_CANCEL)
+    encounter_hook_result = RunHook(definition, &context);
+    if (encounter_hook_result == MOD_ENCOUNTER_HOOK_CANCEL)
         return 0;
     return context.encounterRate;
 }
 
-bool8 EncounterApi_TrySelectWildMon(u8 area, u8 rod, u8 flags, struct WildPokemon *wildPokemon)
+bool8 EncounterApi_TrySelectWildMon(u8 area, u8 rod, u8 flags, struct WildPokemon *wild_pokemon)
 {
     const struct ModEncounterDefinition *definition = FindCurrentEncounter(area, rod);
-    const struct ModEncounterSlot *slot = NULL;
+    const struct ModEncounterSlot *selected_encounter_slot = NULL;
     struct ModEncounterContext context;
-    u8 slotIndex = 0;
-    u8 result;
+    u8 selected_slot_index = 0;
+    u8 encounter_hook_result;
 
-    if (definition == NULL || wildPokemon == NULL)
+    if (definition == NULL || wild_pokemon == NULL)
         return FALSE;
 
     memset(&context, 0, sizeof(context));
@@ -256,40 +256,40 @@ bool8 EncounterApi_TrySelectWildMon(u8 area, u8 rod, u8 flags, struct WildPokemo
     context.flags = flags;
     context.slotIndex = 0xFF;
 
-    if (PickWeightedSlot(definition, area, rod, &slotIndex))
+    if (PickWeightedSlot(definition, area, rod, &selected_slot_index))
     {
-        slot = &definition->slots[slotIndex];
-        context.slotIndex = slotIndex;
-        context.species = slot->species;
-        context.level = PickLevel(slot);
+        selected_encounter_slot = &definition->slots[selected_slot_index];
+        context.slotIndex = selected_slot_index;
+        context.species = selected_encounter_slot->species;
+        context.level = PickEncounterLevel(selected_encounter_slot);
     }
 
-    result = RunHook(definition, &context);
-    if (result == MOD_ENCOUNTER_HOOK_CANCEL)
+    encounter_hook_result = RunHook(definition, &context);
+    if (encounter_hook_result == MOD_ENCOUNTER_HOOK_CANCEL)
         return FALSE;
     if (context.species == SPECIES_NONE || context.species >= NUM_SPECIES || context.level == 0 || context.level > 100)
         return FALSE;
 
-    wildPokemon->species = context.species;
-    wildPokemon->minLevel = context.level;
-    wildPokemon->maxLevel = context.level;
+    wild_pokemon->species = context.species;
+    wild_pokemon->minLevel = context.level;
+    wild_pokemon->maxLevel = context.level;
     return TRUE;
 }
 
-ModEncounterHook EncounterApi_FindCompiledHook(const char *sourceKey, const char *hookKey)
+ModEncounterHook EncounterApi_FindCompiledHook(const char *source_key, const char *hook_key)
 {
-    u16 i;
+    u16 encounter_index;
 
-    if (sourceKey == NULL || hookKey == NULL)
+    if (source_key == NULL || hook_key == NULL)
         return NULL;
 
-    for (i = 0; i < gModEncounterDefinitionCount; i++)
+    for (encounter_index = 0; encounter_index < gModEncounterDefinitionCount; encounter_index++)
     {
-        if (gModEncounterDefinitions[i].key == NULL || gModEncounterDefinitions[i].hookKey == NULL)
+        if (gModEncounterDefinitions[encounter_index].key == NULL || gModEncounterDefinitions[encounter_index].hookKey == NULL)
             continue;
-        if (strcmp(gModEncounterDefinitions[i].key, sourceKey) == 0
-         && strcmp(gModEncounterDefinitions[i].hookKey, hookKey) == 0)
-            return gModEncounterDefinitions[i].hook;
+        if (strcmp(gModEncounterDefinitions[encounter_index].key, source_key) == 0
+         && strcmp(gModEncounterDefinitions[encounter_index].hookKey, hook_key) == 0)
+            return gModEncounterDefinitions[encounter_index].hook;
     }
 
     return NULL;
