@@ -32,7 +32,7 @@ u8 NpcApi_Spawn(u16 npc_definition_id, u8 map_group, u8 map_number, s16 x, s16 y
      || gSaveBlock1Ptr->location.mapNum != map_number)
         return MOD_NPC_INSTANCE_NONE;
 
-    object_event_local_id = definition->localId;
+    object_event_local_id = definition->local_id;
     if (object_event_local_id == 0)
         object_event_local_id = MOD_NPC_DYNAMIC_LOCAL_ID_BASE + (npc_definition_id % (MOD_NPC_DYNAMIC_LOCAL_ID_END - MOD_NPC_DYNAMIC_LOCAL_ID_BASE + 1));
 
@@ -40,8 +40,8 @@ u8 NpcApi_Spawn(u16 npc_definition_id, u8 map_group, u8 map_number, s16 x, s16 y
         return object_event_id;
 
     object_event_id = SpawnSpecialObjectEventParameterized(
-        definition->graphicsId,
-        definition->movementType,
+        definition->graphics_id,
+        definition->movement_type,
         object_event_local_id,
         x,
         y,

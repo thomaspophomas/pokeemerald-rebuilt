@@ -150,7 +150,7 @@ fi
 
 if awk '
     /^[[:space:]]*struct NetPlayerSnapshot[[:space:]]*$/ { inside = 1 }
-    inside && /clientFrame|playerToken|joinNonce|trustFlags/ { found = 1 }
+    inside && /client_frame|player_token|join_nonce|trust_flags/ { found = 1 }
     inside && /^[[:space:]]*};/ { inside = 0 }
     END { exit found ? 0 : 1 }
 ' include/multiplayer/types.h; then
@@ -158,7 +158,7 @@ if awk '
     exit 1
 fi
 
-if ! grep -R -n "sessionEpoch" include/multiplayer src/multiplayer >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+if ! grep -R -n "session_epoch" include/multiplayer src/multiplayer >/tmp/architecture_guard_matches.txt 2>/dev/null; then
     echo "Multiplayer packets and snapshots must carry a session epoch for save-state/rewind rejection." >&2
     exit 1
 fi
@@ -208,17 +208,17 @@ if ! grep -n 'FEATURE_MODS 0' include/config/features.h >/tmp/architecture_guard
     exit 1
 fi
 
-if ! grep -n "profileCapabilityHash" include/multiplayer/protocol.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+if ! grep -n "profile_capability_hash" include/multiplayer/protocol.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
     echo "Multiplayer protocol must expose the server runtime-profile capability hash." >&2
     exit 1
 fi
 
-if ! grep -n "hello.profileCapabilityHash" src/multiplayer/session.c >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+if ! grep -n "hello.profile_capability_hash" src/multiplayer/session.c >/tmp/architecture_guard_matches.txt 2>/dev/null; then
     echo "Multiplayer hello must advertise the server runtime-profile capability hash." >&2
     exit 1
 fi
 
-if ! grep -n "hello.modCatalogHash" src/multiplayer/session.c >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+if ! grep -n "hello.mod_catalog_hash" src/multiplayer/session.c >/tmp/architecture_guard_matches.txt 2>/dev/null; then
     echo "Multiplayer hello must advertise the generated ROM mod catalog hash." >&2
     exit 1
 fi

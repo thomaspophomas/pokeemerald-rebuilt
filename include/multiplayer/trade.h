@@ -10,8 +10,8 @@ struct MultiplayerSession;
 
 struct MultiplayerTradeRequest
 {
-    u8 playerA;
-    u8 playerB;
+    u8 player_a;
+    u8 player_b;
 };
 
 bool8 MultiplayerTrade_CanStart(const struct MultiplayerTradeRequest *request);

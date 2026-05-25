@@ -12,10 +12,10 @@
 static bool8 DefinitionIsEmptyDefault(const struct ModTrainerDefinition *definition)
 {
     return definition->key == NULL
-        && definition->trainerId == 0
+        && definition->trainer_id == 0
         && definition->priority == 0
         && definition->flags == 0
-        && definition->partySize == 0;
+        && definition->party_size == 0;
 }
 
 static bool8 RuntimeTrainerKeyExists(const char *key, const struct ModTrainerDefinition *trainers, u16 count)
@@ -55,7 +55,7 @@ static const struct ModTrainerDefinition *FindBestTrainer(
             continue;
         if (!TrainerApi_IsDefinitionValid(definition, TRUE) || DefinitionIsEmptyDefault(definition))
             continue;
-        if (definition->trainerId != trainer_id)
+        if (definition->trainer_id != trainer_id)
             continue;
         if (best_definition == NULL || definition->priority < best_definition->priority)
             best_definition = definition;
@@ -89,9 +89,9 @@ bool8 TrainerApi_IsDefinitionValid(const struct ModTrainerDefinition *definition
         return TRUE;
     if (definition->key == NULL || definition->key[0] == '\0')
         return FALSE;
-    if ((definition->flags & MOD_TRAINER_OVERRIDE_PARTY) && (definition->partySize == 0 || definition->partySize > MOD_TRAINER_MAX_PARTY_SIZE))
+    if ((definition->flags & MOD_TRAINER_OVERRIDE_PARTY) && (definition->party_size == 0 || definition->party_size > MOD_TRAINER_MAX_PARTY_SIZE))
         return FALSE;
-    for (party_mon_index = 0; party_mon_index < definition->partySize; party_mon_index++)
+    for (party_mon_index = 0; party_mon_index < definition->party_size; party_mon_index++)
     {
         if (definition->party[party_mon_index].lvl == 0 || definition->party[party_mon_index].lvl > MAX_LEVEL)
             return FALSE;
@@ -111,7 +111,7 @@ u8 TrainerApi_GetPartySize(u16 trainer_id, u8 vanilla)
     const struct ModTrainerDefinition *definition = TrainerApi_GetDefinition(trainer_id);
 
     if (definition != NULL && (definition->flags & MOD_TRAINER_OVERRIDE_PARTY))
-        return definition->partySize;
+        return definition->party_size;
     return vanilla;
 }
 
@@ -119,7 +119,7 @@ u8 TrainerApi_GetPartyLevel(u16 trainer_id, u8 party_index, u8 vanilla)
 {
     const struct ModTrainerDefinition *definition = TrainerApi_GetDefinition(trainer_id);
 
-    if (definition != NULL && (definition->flags & MOD_TRAINER_OVERRIDE_PARTY) && party_index < definition->partySize)
+    if (definition != NULL && (definition->flags & MOD_TRAINER_OVERRIDE_PARTY) && party_index < definition->party_size)
         return definition->party[party_index].lvl;
     return vanilla;
 }
@@ -134,7 +134,7 @@ bool8 TrainerApi_CreateParty(u16 trainer_id, struct Pokemon *party, u8 max_count
     if (definition == NULL || !(definition->flags & MOD_TRAINER_OVERRIDE_PARTY) || party == NULL)
         return FALSE;
 
-    party_count_to_create = definition->partySize;
+    party_count_to_create = definition->party_size;
     if (party_count_to_create > max_count)
         party_count_to_create = max_count;
 
@@ -144,8 +144,8 @@ bool8 TrainerApi_CreateParty(u16 trainer_id, struct Pokemon *party, u8 max_count
         u8 fixed_iv = trainer_party_mon_definition->iv * MAX_PER_STAT_IVS / 255;
 
         CreateMon(&party[party_mon_index], trainer_party_mon_definition->species, trainer_party_mon_definition->lvl, fixed_iv, TRUE, 0x88 + (party_mon_index << 8), OT_ID_RANDOM_NO_SHINY, 0);
-        if (trainer_party_mon_definition->heldItem != ITEM_NONE)
-            SetMonData(&party[party_mon_index], MON_DATA_HELD_ITEM, &trainer_party_mon_definition->heldItem);
+        if (trainer_party_mon_definition->held_item != ITEM_NONE)
+            SetMonData(&party[party_mon_index], MON_DATA_HELD_ITEM, &trainer_party_mon_definition->held_item);
         for (move_index = 0; move_index < MAX_MON_MOVES; move_index++)
         {
             u8 pp;
@@ -159,7 +159,7 @@ bool8 TrainerApi_CreateParty(u16 trainer_id, struct Pokemon *party, u8 max_count
     }
 
     if (party_size != NULL)
-        *party_size = definition->partySize;
+        *party_size = definition->party_size;
     return TRUE;
 }
 
@@ -168,7 +168,7 @@ bool8 TrainerApi_IsDoubleBattle(u16 trainer_id, bool8 vanilla)
     const struct ModTrainerDefinition *definition = TrainerApi_GetDefinition(trainer_id);
 
     if (definition != NULL && (definition->flags & MOD_TRAINER_OVERRIDE_DOUBLE))
-        return definition->doubleBattle;
+        return definition->double_battle;
     return vanilla;
 }
 
@@ -177,6 +177,6 @@ u8 TrainerApi_GetTrainerClass(u16 trainer_id, u8 vanilla)
     const struct ModTrainerDefinition *definition = TrainerApi_GetDefinition(trainer_id);
 
     if (definition != NULL && (definition->flags & MOD_TRAINER_OVERRIDE_CLASS))
-        return definition->trainerClass;
+        return definition->trainer_class;
     return vanilla;
 }

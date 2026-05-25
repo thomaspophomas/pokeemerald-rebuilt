@@ -44,10 +44,10 @@ static u16 GetDefaultLayerMask(u8 weather)
 static void InitDisplayFromMap(struct ModWeatherDisplay *display)
 {
     memset(display, 0, sizeof(*display));
-    display->vanillaWeather = gMapHeader.weather;
-    if (display->vanillaWeather == WEATHER_NONE)
-        display->vanillaWeather = GetCurrentWeather();
-    display->layers = GetDefaultLayerMask(display->vanillaWeather);
+    display->vanilla_weather = gMapHeader.weather;
+    if (display->vanilla_weather == WEATHER_NONE)
+        display->vanilla_weather = GetCurrentWeather();
+    display->layers = GetDefaultLayerMask(display->vanilla_weather);
     display->source = MOD_WEATHER_SOURCE_MAP;
 }
 
@@ -55,10 +55,10 @@ static void EmitWeatherChanged(const struct ModWeatherDisplay *oldDisplay, const
 {
     struct ModEventWeatherChanged payload;
 
-    payload.oldWeather = oldDisplay->vanillaWeather;
-    payload.newWeather = newDisplay->vanillaWeather;
-    payload.oldLayers = oldDisplay->layers;
-    payload.newLayers = newDisplay->layers;
+    payload.old_weather = oldDisplay->vanilla_weather;
+    payload.new_weather = newDisplay->vanilla_weather;
+    payload.old_layers = oldDisplay->layers;
+    payload.new_layers = newDisplay->layers;
     ModEvent_Emit(MOD_EVENT_WEATHER_CHANGED, &payload, sizeof(payload));
 }
 
@@ -81,7 +81,7 @@ void ModWeather_RunFrame(void)
     }
 
     ModWeather_GetDisplayedWeather(&display);
-    if (display.vanillaWeather != sLastDisplay.vanillaWeather || display.layers != sLastDisplay.layers)
+    if (display.vanilla_weather != sLastDisplay.vanilla_weather || display.layers != sLastDisplay.layers)
         EmitWeatherChanged(&sLastDisplay, &display);
 
     sLastDisplay = display;
@@ -119,17 +119,17 @@ u16 ModWeather_GetBattleWeatherMask(void)
     struct ModWeatherDisplay display;
 
     ModWeather_GetDisplayedWeather(&display);
-    return display.battleWeatherMask;
+    return display.battle_weather_mask;
 }
 
 void ModWeather_SetOverride(u8 source, u8 vanilla_weather, u16 layers, u16 duration_frames)
 {
     sOverrideActive = TRUE;
-    sOverride.vanillaWeather = vanilla_weather;
+    sOverride.vanilla_weather = vanilla_weather;
     sOverride.layers = layers;
     sOverride.source = source;
     sOverride.priority = 0xFF;
-    sOverride.battleWeatherMask = 0;
+    sOverride.battle_weather_mask = 0;
     sOverrideTimer = duration_frames;
 }
 

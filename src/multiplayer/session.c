@@ -51,10 +51,10 @@ static void ResetSession(void)
     MultiplayerInteractionMenu_Reset();
     memset(&sSession, 0, sizeof(sSession));
     sSession.state = MULTIPLAYER_SESSION_OFFLINE;
-    sSession.localPlayerId = NET_PLAYER_NONE;
-    sSession.hostPlayerId = NET_PLAYER_NONE;
-    sSession.transportMode = NET_ACTIVE_TRANSPORT_MODE;
-    sSession.healthState = MULTIPLAYER_HEALTH_DISCONNECTED;
+    sSession.local_player_id = NET_PLAYER_NONE;
+    sSession.host_player_id = NET_PLAYER_NONE;
+    sSession.transport_mode = NET_ACTIVE_TRANSPORT_MODE;
+    sSession.health_state = MULTIPLAYER_HEALTH_DISCONNECTED;
     sClientHelloSent = FALSE;
     sHeartbeatTimer = 0;
     sTransportLossFrames = 0;
@@ -71,14 +71,14 @@ static void ResetSession(void)
 static void UpdateSmokeStatus(void)
 {
     gNetMultiplayerSmokeStatus.magic = NET_SMOKE_STATUS_MAGIC;
-    gNetMultiplayerSmokeStatus.sessionState = sSession.state;
-    gNetMultiplayerSmokeStatus.healthState = sSession.healthState;
-    gNetMultiplayerSmokeStatus.localPlayerId = sSession.localPlayerId;
-    gNetMultiplayerSmokeStatus.playerCount = sSession.playerCount;
-    gNetMultiplayerSmokeStatus.sessionEpoch = sSession.sessionEpoch;
-    gNetMultiplayerSmokeStatus.activeProfileHash = EngineExtensionProfile_GetActiveHash();
-    gNetMultiplayerSmokeStatus.lastProfileAckHash = sLastSmokeProfileAckHash;
-    gNetMultiplayerSmokeStatus.lastProfileAckResult = sLastSmokeProfileAckResult;
+    gNetMultiplayerSmokeStatus.session_state = sSession.state;
+    gNetMultiplayerSmokeStatus.health_state = sSession.health_state;
+    gNetMultiplayerSmokeStatus.local_player_id = sSession.local_player_id;
+    gNetMultiplayerSmokeStatus.player_count = sSession.player_count;
+    gNetMultiplayerSmokeStatus.session_epoch = sSession.session_epoch;
+    gNetMultiplayerSmokeStatus.active_profile_hash = EngineExtensionProfile_GetActiveHash();
+    gNetMultiplayerSmokeStatus.last_profile_ack_hash = sLastSmokeProfileAckHash;
+    gNetMultiplayerSmokeStatus.last_profile_ack_result = sLastSmokeProfileAckResult;
     gNetMultiplayerSmokeStatus.flags = RuntimeCanPollTransport() ? NET_SMOKE_STATUS_FLAG_RUNTIME_READY : 0;
 }
 #endif
@@ -140,11 +140,11 @@ static bool8 MapLocationIsValid(u8 map_group, u8 map_number)
 
 static bool8 SessionIdentityIsValid(const struct NetTransportSessionView *view)
 {
-    return view->transportMode == NET_ACTIVE_TRANSPORT_MODE
-        && view->sessionId != 0
-        && view->sessionEpoch != 0
-        && view->playerToken != 0
-        && view->joinNonce != 0;
+    return view->transport_mode == NET_ACTIVE_TRANSPORT_MODE
+        && view->session_id != 0
+        && view->session_epoch != 0
+        && view->player_token != 0
+        && view->join_nonce != 0;
 }
 
 static bool8 SnapshotCoordsAreSane(const struct NetPlayerSnapshot *snapshot)
@@ -189,23 +189,23 @@ static bool8 SnapshotTickIsFresh(const struct NetPlayerSnapshot *snapshot, u32 c
 static bool8 SnapshotIsStale(const struct NetPlayerSnapshot *snapshot)
 {
     return (snapshot->flags & (NET_PLAYER_FLAG_STALE | NET_PLAYER_FLAG_RESYNC))
-        || snapshot->staleFrames >= NET_PLAYER_STALE_FRAMES;
+        || snapshot->stale_frames >= NET_PLAYER_STALE_FRAMES;
 }
 
 static bool8 SnapshotHasValidOnlineIdentity(const struct NetPlayerSnapshot *snapshot, const struct NetTransportSessionView *view)
 {
-    return snapshot->sessionEpoch == view->sessionEpoch
+    return snapshot->session_epoch == view->session_epoch
         && snapshot->sequence != 0;
 }
 
 static bool8 SnapshotServerTickIsFresh(const struct NetPlayerSnapshot *snapshot, u32 currentTick)
 {
-    if (snapshot->serverTickSeen == 0 || currentTick == 0)
+    if (snapshot->server_tick_seen == 0 || currentTick == 0)
         return TRUE;
-    if (snapshot->serverTickSeen > currentTick)
-        return snapshot->serverTickSeen - currentTick <= NET_PLAYER_SNAPSHOT_FUTURE_SKEW_FRAMES;
+    if (snapshot->server_tick_seen > currentTick)
+        return snapshot->server_tick_seen - currentTick <= NET_PLAYER_SNAPSHOT_FUTURE_SKEW_FRAMES;
 
-    return currentTick - snapshot->serverTickSeen <= NET_PLAYER_DISCONNECT_FRAMES;
+    return currentTick - snapshot->server_tick_seen <= NET_PLAYER_DISCONNECT_FRAMES;
 }
 
 static bool8 BattleProfileIsValid(const struct NetPlayerBattleProfile *profile)
@@ -215,18 +215,18 @@ static bool8 BattleProfileIsValid(const struct NetPlayerBattleProfile *profile)
 
     if (profile == NULL)
         return FALSE;
-    if (profile->partyCount > NET_PLAYER_PARTY_SNAPSHOT_SIZE)
+    if (profile->party_count > NET_PLAYER_PARTY_SNAPSHOT_SIZE)
         return FALSE;
 
-    for (party_mon_index = 0; party_mon_index < profile->partyCount; party_mon_index++)
+    for (party_mon_index = 0; party_mon_index < profile->party_count; party_mon_index++)
     {
-        if (profile->partySpecies[party_mon_index] >= NUM_SPECIES)
+        if (profile->party_species[party_mon_index] >= NUM_SPECIES)
             return FALSE;
-        if (profile->partySpecies[party_mon_index] != SPECIES_NONE && profile->partyLevels[party_mon_index] > MAX_LEVEL)
+        if (profile->party_species[party_mon_index] != SPECIES_NONE && profile->party_levels[party_mon_index] > MAX_LEVEL)
             return FALSE;
         for (move_index = 0; move_index < MAX_MON_MOVES; move_index++)
         {
-            if (profile->partyMoves[party_mon_index][move_index] >= MOVES_COUNT)
+            if (profile->party_moves[party_mon_index][move_index] >= MOVES_COUNT)
                 return FALSE;
         }
     }
@@ -238,55 +238,55 @@ static bool8 SnapshotIsValid(const struct NetPlayerSnapshot *snapshot, u8 player
 {
     if (!snapshot->active)
         return TRUE;
-    if (snapshot->playerId != player_id_for_snapshot)
+    if (snapshot->player_id != player_id_for_snapshot)
         return FALSE;
     if (!SnapshotHasValidOnlineIdentity(snapshot, view))
         return FALSE;
-    if (!MapLocationIsValid(snapshot->mapGroup, snapshot->mapNum))
+    if (!MapLocationIsValid(snapshot->map_group, snapshot->map_num))
         return FALSE;
     if (!SnapshotCoordsAreSane(snapshot))
         return FALSE;
     if (!ElevationIsValid(snapshot->elevation))
         return FALSE;
-    if (!DirectionIsValid(snapshot->facingDirection))
+    if (!DirectionIsValid(snapshot->facing_direction))
         return FALSE;
     if (snapshot->flags & ~NET_PLAYER_FLAGS_MASK)
         return FALSE;
-    if (!IsValidInteractionState(snapshot->interactionState))
+    if (!IsValidInteractionState(snapshot->interaction_state))
         return FALSE;
-    if (snapshot->subsessionState > MULTIPLAYER_SUBSESSION_STATE_ERROR)
+    if (snapshot->subsession_state > MULTIPLAYER_SUBSESSION_STATE_ERROR)
         return FALSE;
-    if (snapshot->subsessionId > MAX_NET_SUBSESSIONS)
+    if (snapshot->subsession_id > MAX_NET_SUBSESSIONS)
         return FALSE;
-    if ((snapshot->flags & NET_PLAYER_FLAG_IN_SUBSESSION) && snapshot->subsessionId == NET_SUBSESSION_NONE)
+    if ((snapshot->flags & NET_PLAYER_FLAG_IN_SUBSESSION) && snapshot->subsession_id == NET_SUBSESSION_NONE)
         return FALSE;
-    if ((snapshot->flags & NET_PLAYER_FLAG_IN_SUBSESSION) && !IsValidSubsessionState(snapshot->subsessionState))
+    if ((snapshot->flags & NET_PLAYER_FLAG_IN_SUBSESSION) && !IsValidSubsessionState(snapshot->subsession_state))
         return FALSE;
     if (!(snapshot->flags & NET_PLAYER_FLAG_IN_SUBSESSION)
-     && (snapshot->subsessionId != NET_SUBSESSION_NONE || snapshot->subsessionState != MULTIPLAYER_SUBSESSION_STATE_NONE))
+     && (snapshot->subsession_id != NET_SUBSESSION_NONE || snapshot->subsession_state != MULTIPLAYER_SUBSESSION_STATE_NONE))
         return FALSE;
     if ((snapshot->flags & NET_PLAYER_FLAG_IN_SUBSESSION)
-     && snapshot->interactionState != MULTIPLAYER_INTERACTION_BATTLE
-     && snapshot->interactionState != MULTIPLAYER_INTERACTION_TRADE)
+     && snapshot->interaction_state != MULTIPLAYER_INTERACTION_BATTLE
+     && snapshot->interaction_state != MULTIPLAYER_INTERACTION_TRADE)
         return FALSE;
-    if ((snapshot->interactionState == MULTIPLAYER_INTERACTION_BATTLE
-      || snapshot->interactionState == MULTIPLAYER_INTERACTION_TRADE)
+    if ((snapshot->interaction_state == MULTIPLAYER_INTERACTION_BATTLE
+      || snapshot->interaction_state == MULTIPLAYER_INTERACTION_TRADE)
      && !(snapshot->flags & NET_PLAYER_FLAG_IN_SUBSESSION))
         return FALSE;
-    if ((snapshot->interactionState == MULTIPLAYER_INTERACTION_SCRIPT
-      || snapshot->interactionState == MULTIPLAYER_INTERACTION_WARP)
+    if ((snapshot->interaction_state == MULTIPLAYER_INTERACTION_SCRIPT
+      || snapshot->interaction_state == MULTIPLAYER_INTERACTION_WARP)
      && !(snapshot->flags & NET_PLAYER_FLAG_BUSY))
         return FALSE;
-    if (snapshot->interactionState == MULTIPLAYER_INTERACTION_OPTIONS_MENU
+    if (snapshot->interaction_state == MULTIPLAYER_INTERACTION_OPTIONS_MENU
      && !(snapshot->flags & NET_PLAYER_FLAG_BUSY))
         return FALSE;
-    if (snapshot->staleFrames > NET_PLAYER_DISCONNECT_FRAMES)
+    if (snapshot->stale_frames > NET_PLAYER_DISCONNECT_FRAMES)
         return FALSE;
-    if (snapshot->anomalyScore >= NET_ANOMALY_THRESHOLD_KICK)
+    if (snapshot->anomaly_score >= NET_ANOMALY_THRESHOLD_KICK)
         return FALSE;
-    if (!SnapshotTickIsFresh(snapshot, view->bridgeTick))
+    if (!SnapshotTickIsFresh(snapshot, view->bridge_tick))
         return FALSE;
-    if (!SnapshotServerTickIsFresh(snapshot, view->bridgeTick))
+    if (!SnapshotServerTickIsFresh(snapshot, view->bridge_tick))
         return FALSE;
 
     return TRUE;
@@ -301,10 +301,10 @@ static bool8 SubsessionIncludesPlayer(const struct MultiplayerSubsession *subses
         return FALSE;
 
     max_players = GetMaxPlayersForSubsession(subsession->type);
-    if (max_players == 0 || subsession->playerCount > max_players)
+    if (max_players == 0 || subsession->player_count > max_players)
         return FALSE;
 
-    for (player_index_in_subsession = 0; player_index_in_subsession < subsession->playerCount; player_index_in_subsession++)
+    for (player_index_in_subsession = 0; player_index_in_subsession < subsession->player_count; player_index_in_subsession++)
     {
         if (subsession->players[player_index_in_subsession] == player_id)
             return TRUE;
@@ -331,23 +331,23 @@ static bool8 SubsessionIsValid(const struct MultiplayerSubsession *subsession, c
         return FALSE;
     if (!IsValidSubsessionState(subsession->state))
         return FALSE;
-    if (SubsessionStateBlocksInteraction(subsession->state) && subsession->timeoutFrames == 0)
+    if (SubsessionStateBlocksInteraction(subsession->state) && subsession->timeout_frames == 0)
         return FALSE;
-    if (!IsValidPlayerId(subsession->hostPlayerId) || !players[subsession->hostPlayerId].active)
+    if (!IsValidPlayerId(subsession->host_player_id) || !players[subsession->host_player_id].active)
         return FALSE;
 
     max_players = GetMaxPlayersForSubsession(subsession->type);
-    if (max_players == 0 || subsession->playerCount == 0 || subsession->playerCount > max_players)
+    if (max_players == 0 || subsession->player_count == 0 || subsession->player_count > max_players)
         return FALSE;
 
-    for (player_index_in_subsession = 0; player_index_in_subsession < subsession->playerCount; player_index_in_subsession++)
+    for (player_index_in_subsession = 0; player_index_in_subsession < subsession->player_count; player_index_in_subsession++)
     {
         if (!IsValidPlayerId(subsession->players[player_index_in_subsession])
          || !players[subsession->players[player_index_in_subsession]].active
          || SnapshotIsStale(&players[subsession->players[player_index_in_subsession]]))
             return FALSE;
 
-        for (duplicate_check_index = player_index_in_subsession + 1; duplicate_check_index < subsession->playerCount; duplicate_check_index++)
+        for (duplicate_check_index = player_index_in_subsession + 1; duplicate_check_index < subsession->player_count; duplicate_check_index++)
         {
             if (subsession->players[player_index_in_subsession] == subsession->players[duplicate_check_index])
                 return FALSE;
@@ -366,11 +366,11 @@ static bool8 SanitizeSessionView(struct NetTransportSessionView *view)
 
     if (!view->connected)
         return FALSE;
-    if (!IsValidPlayerId(view->localPlayerId))
+    if (!IsValidPlayerId(view->local_player_id))
         return FALSE;
-    if (!IsValidPlayerId(view->hostPlayerId))
+    if (!IsValidPlayerId(view->host_player_id))
         return FALSE;
-    if (view->playerCount == 0 || view->playerCount > MAX_NET_PLAYERS)
+    if (view->player_count == 0 || view->player_count > MAX_NET_PLAYERS)
         return FALSE;
     if (!SessionIdentityIsValid(view))
         return FALSE;
@@ -396,12 +396,12 @@ static bool8 SanitizeSessionView(struct NetTransportSessionView *view)
 
         if (SubsessionStateBlocksInteraction(view->subsessions[subsession_index].state))
         {
-            for (player_index_in_subsession = 0; player_index_in_subsession < view->subsessions[subsession_index].playerCount; player_index_in_subsession++)
+            for (player_index_in_subsession = 0; player_index_in_subsession < view->subsessions[subsession_index].player_count; player_index_in_subsession++)
             {
                 if (claimed_players[view->subsessions[subsession_index].players[player_index_in_subsession]])
                     break;
             }
-            if (player_index_in_subsession != view->subsessions[subsession_index].playerCount)
+            if (player_index_in_subsession != view->subsessions[subsession_index].player_count)
             {
                 memset(&view->subsessions[subsession_index], 0, sizeof(view->subsessions[subsession_index]));
                 continue;
@@ -410,7 +410,7 @@ static bool8 SanitizeSessionView(struct NetTransportSessionView *view)
 
         if (SubsessionStateBlocksInteraction(view->subsessions[subsession_index].state))
         {
-            for (player_index_in_subsession = 0; player_index_in_subsession < view->subsessions[subsession_index].playerCount; player_index_in_subsession++)
+            for (player_index_in_subsession = 0; player_index_in_subsession < view->subsessions[subsession_index].player_count; player_index_in_subsession++)
                 claimed_players[view->subsessions[subsession_index].players[player_index_in_subsession]] = TRUE;
         }
     }
@@ -425,7 +425,7 @@ static void ClearInactiveBattleProfiles(void)
     for (player_index = 0; player_index < MAX_NET_PLAYERS; player_index++)
     {
         if (!sSession.players[player_index].active || SnapshotIsStale(&sSession.players[player_index]))
-            memset(&sSession.playerProfiles[player_index], 0, sizeof(sSession.playerProfiles[player_index]));
+            memset(&sSession.player_profiles[player_index], 0, sizeof(sSession.player_profiles[player_index]));
     }
 }
 
@@ -436,7 +436,7 @@ static bool8 BarrierIncludesPlayer(const struct MultiplayerInteractionBarrier *b
     if (!barrier->active)
         return FALSE;
 
-    for (player_index_in_barrier = 0; player_index_in_barrier < barrier->playerCount; player_index_in_barrier++)
+    for (player_index_in_barrier = 0; player_index_in_barrier < barrier->player_count; player_index_in_barrier++)
     {
         if (barrier->players[player_index_in_barrier] == player_id)
             return TRUE;
@@ -464,10 +464,10 @@ static bool8 SubsessionMatchesBarrier(const struct MultiplayerSubsession *subses
         return FALSE;
     if (GetBarrierTypeForSubsession(subsession->type) != barrier->type)
         return FALSE;
-    if (subsession->playerCount != barrier->playerCount)
+    if (subsession->player_count != barrier->player_count)
         return FALSE;
 
-    for (player_index_in_barrier = 0; player_index_in_barrier < barrier->playerCount; player_index_in_barrier++)
+    for (player_index_in_barrier = 0; player_index_in_barrier < barrier->player_count; player_index_in_barrier++)
     {
         if (!SubsessionIncludesPlayer(subsession, barrier->players[player_index_in_barrier]))
             return FALSE;
@@ -478,20 +478,20 @@ static bool8 SubsessionMatchesBarrier(const struct MultiplayerSubsession *subses
 
 static void ResetInteractionBarrier(void)
 {
-    memset(&sSession.interactionBarrier, 0, sizeof(sSession.interactionBarrier));
+    memset(&sSession.interaction_barrier, 0, sizeof(sSession.interaction_barrier));
 }
 
 static void ClearInviteBarrierWhenSubsessionLeavesInvite(void)
 {
     u8 subsession_index;
 
-    if (sSession.interactionBarrier.type != MULTIPLAYER_BARRIER_BATTLE_INVITE
-     && sSession.interactionBarrier.type != MULTIPLAYER_BARRIER_TRADE_INVITE)
+    if (sSession.interaction_barrier.type != MULTIPLAYER_BARRIER_BATTLE_INVITE
+     && sSession.interaction_barrier.type != MULTIPLAYER_BARRIER_TRADE_INVITE)
         return;
 
     for (subsession_index = 0; subsession_index < MAX_NET_SUBSESSIONS; subsession_index++)
     {
-        if (!SubsessionMatchesBarrier(&sSession.subsessions[subsession_index], &sSession.interactionBarrier))
+        if (!SubsessionMatchesBarrier(&sSession.subsessions[subsession_index], &sSession.interaction_barrier))
             continue;
         if (sSession.subsessions[subsession_index].state == MULTIPLAYER_SUBSESSION_STATE_INVITING
          || sSession.subsessions[subsession_index].state == MULTIPLAYER_SUBSESSION_STATE_READY)
@@ -504,11 +504,11 @@ static void ClearInviteBarrierWhenSubsessionLeavesInvite(void)
 
 static void ExpireInteractionBarrier(void)
 {
-    if (!sSession.interactionBarrier.active)
+    if (!sSession.interaction_barrier.active)
         return;
-    if (sSession.interactionBarrier.timeoutFrames != 0)
-        sSession.interactionBarrier.timeoutFrames--;
-    if (sSession.interactionBarrier.timeoutFrames == 0)
+    if (sSession.interaction_barrier.timeout_frames != 0)
+        sSession.interaction_barrier.timeout_frames--;
+    if (sSession.interaction_barrier.timeout_frames == 0)
         ResetInteractionBarrier();
 }
 
@@ -518,12 +518,12 @@ static bool8 SnapshotInteractionBlocks(const struct NetPlayerSnapshot *snapshot)
         return FALSE;
     if (SnapshotIsStale(snapshot))
         return TRUE;
-    if (snapshot->interactionState == MULTIPLAYER_INTERACTION_SCRIPT
-     || snapshot->interactionState == MULTIPLAYER_INTERACTION_WARP
-     || snapshot->interactionState == MULTIPLAYER_INTERACTION_OPTIONS_MENU)
+    if (snapshot->interaction_state == MULTIPLAYER_INTERACTION_SCRIPT
+     || snapshot->interaction_state == MULTIPLAYER_INTERACTION_WARP
+     || snapshot->interaction_state == MULTIPLAYER_INTERACTION_OPTIONS_MENU)
         return TRUE;
     if ((snapshot->flags & NET_PLAYER_FLAG_IN_SUBSESSION)
-     && SubsessionStateBlocksInteraction(snapshot->subsessionState))
+     && SubsessionStateBlocksInteraction(snapshot->subsession_state))
         return TRUE;
 
     return FALSE;
@@ -535,11 +535,11 @@ static bool8 SnapshotBlocksSubsessionStart(const struct NetPlayerSnapshot *snaps
         return FALSE;
     if (SnapshotIsStale(snapshot))
         return TRUE;
-    if (snapshot->interactionState == MULTIPLAYER_INTERACTION_SCRIPT
-     || snapshot->interactionState == MULTIPLAYER_INTERACTION_WARP)
+    if (snapshot->interaction_state == MULTIPLAYER_INTERACTION_SCRIPT
+     || snapshot->interaction_state == MULTIPLAYER_INTERACTION_WARP)
         return TRUE;
     if ((snapshot->flags & NET_PLAYER_FLAG_IN_SUBSESSION)
-     && SubsessionStateBlocksInteraction(snapshot->subsessionState))
+     && SubsessionStateBlocksInteraction(snapshot->subsession_state))
         return TRUE;
 
     return FALSE;
@@ -554,7 +554,7 @@ static bool8 PlayerBlocksSubsessionStart(u8 player_id)
 
     return SnapshotBlocksSubsessionStart(&sSession.players[player_id])
         || MultiplayerSession_IsPlayerInSubsession(player_id)
-        || BarrierIncludesPlayer(&sSession.interactionBarrier, player_id);
+        || BarrierIncludesPlayer(&sSession.interaction_barrier, player_id);
 }
 
 static bool8 PlayerBlocksBarrierStart(u8 barrier_type, u8 player_id)
@@ -572,7 +572,7 @@ static bool8 SessionHasActiveLocalSubsession(void)
 
     for (subsession_index = 0; subsession_index < MAX_NET_SUBSESSIONS; subsession_index++)
     {
-        if (BlockingSubsessionIncludesPlayer(&sSession.subsessions[subsession_index], sSession.localPlayerId))
+        if (BlockingSubsessionIncludesPlayer(&sSession.subsessions[subsession_index], sSession.local_player_id))
             return TRUE;
     }
 
@@ -585,7 +585,7 @@ static const struct MultiplayerSubsession *GetLocalSubsession(void)
 
     for (subsession_index = 0; subsession_index < MAX_NET_SUBSESSIONS; subsession_index++)
     {
-        if (BlockingSubsessionIncludesPlayer(&sSession.subsessions[subsession_index], sSession.localPlayerId))
+        if (BlockingSubsessionIncludesPlayer(&sSession.subsessions[subsession_index], sSession.local_player_id))
             return &sSession.subsessions[subsession_index];
     }
 
@@ -600,7 +600,7 @@ static void AbortLocalSubsessionsForDisconnect(void)
     {
         if (!sSession.subsessions[subsession_index].active)
             continue;
-        if (!SubsessionIncludesPlayer(&sSession.subsessions[subsession_index], sSession.localPlayerId))
+        if (!SubsessionIncludesPlayer(&sSession.subsessions[subsession_index], sSession.local_player_id))
             continue;
 
         sSession.subsessions[subsession_index].state = MULTIPLAYER_SUBSESSION_STATE_ERROR;
@@ -616,7 +616,7 @@ static void ExpireLocalSubsessions(void)
 
     ExpireInteractionBarrier();
 
-    if (sSession.localPlayerId == NET_PLAYER_NONE || sSession.localPlayerId != sSession.hostPlayerId)
+    if (sSession.local_player_id == NET_PLAYER_NONE || sSession.local_player_id != sSession.host_player_id)
         return;
 
     for (subsession_index = 0; subsession_index < MAX_NET_SUBSESSIONS; subsession_index++)
@@ -626,9 +626,9 @@ static void ExpireLocalSubsessions(void)
         if (!SubsessionStateBlocksInteraction(sSession.subsessions[subsession_index].state))
             continue;
 
-        if (sSession.subsessions[subsession_index].timeoutFrames != 0)
-            sSession.subsessions[subsession_index].timeoutFrames--;
-        if (sSession.subsessions[subsession_index].timeoutFrames == 0)
+        if (sSession.subsessions[subsession_index].timeout_frames != 0)
+            sSession.subsessions[subsession_index].timeout_frames--;
+        if (sSession.subsessions[subsession_index].timeout_frames == 0)
         {
             sSession.subsessions[subsession_index].state = MULTIPLAYER_SUBSESSION_STATE_ERROR;
             NetTransport_SendPacket(NET_PACKET_SUBSESSION_ABORT, &sSession.subsessions[subsession_index], sizeof(sSession.subsessions[subsession_index]));
@@ -640,37 +640,37 @@ static void ExpireLocalSubsessions(void)
 
 static void CopyViewIntoSession(const struct NetTransportSessionView *view)
 {
-    u32 oldSessionEpoch = sSession.sessionEpoch;
+    u32 oldSessionEpoch = sSession.session_epoch;
 
-    sSession.localPlayerId = view->localPlayerId;
-    sSession.hostPlayerId = view->hostPlayerId;
-    sSession.playerCount = view->playerCount;
-    sSession.transportMode = view->transportMode;
-    sSession.sessionId = view->sessionId;
-    sSession.sessionEpoch = view->sessionEpoch;
-    sSession.playerToken = view->playerToken;
-    sSession.joinNonce = view->joinNonce;
-    sSession.bridgeTick = view->bridgeTick;
-    sSession.serverClockSeconds = view->serverClockSeconds;
-    if (oldSessionEpoch != sSession.sessionEpoch)
+    sSession.local_player_id = view->local_player_id;
+    sSession.host_player_id = view->host_player_id;
+    sSession.player_count = view->player_count;
+    sSession.transport_mode = view->transport_mode;
+    sSession.session_id = view->session_id;
+    sSession.session_epoch = view->session_epoch;
+    sSession.player_token = view->player_token;
+    sSession.join_nonce = view->join_nonce;
+    sSession.bridge_tick = view->bridge_tick;
+    sSession.server_clock_seconds = view->server_clock_seconds;
+    if (oldSessionEpoch != sSession.session_epoch)
     {
         sClientHelloSent = FALSE;
         sHeartbeatTimer = 0;
-        sSession.localClientFrame = 0;
-        sSession.localSnapshotSequence = 0;
-        sSession.localSnapshotHotHash = 0;
-        sSession.localActionSequence = 0;
-        sSession.localProfilePublishTimer = 0;
-        memset(sSession.playerProfiles, 0, sizeof(sSession.playerProfiles));
+        sSession.local_client_frame = 0;
+        sSession.local_snapshot_sequence = 0;
+        sSession.local_snapshot_hot_hash = 0;
+        sSession.local_action_sequence = 0;
+        sSession.local_profile_publish_timer = 0;
+        memset(sSession.player_profiles, 0, sizeof(sSession.player_profiles));
         MultiplayerCommit_Init();
         MultiplayerInteractionMenu_Reset();
         MultiplayerTrade_Reset();
         EngineExtensionProfile_Clear();
     }
-    sSession.healthState = MULTIPLAYER_HEALTH_HEALTHY;
+    sSession.health_state = MULTIPLAYER_HEALTH_HEALTHY;
     sTransportLossFrames = 0;
-    if (view->bridgeTick != 0)
-        sSession.tick = view->bridgeTick;
+    if (view->bridge_tick != 0)
+        sSession.tick = view->bridge_tick;
     else
         sSession.tick++;
     memcpy(sSession.players, view->players, sizeof(sSession.players));
@@ -681,7 +681,7 @@ static void CopyViewIntoSession(const struct NetTransportSessionView *view)
 
     if (SessionHasActiveLocalSubsession())
         sSession.state = MULTIPLAYER_SESSION_SUBSESSION;
-    else if (view->playerCount > 1)
+    else if (view->player_count > 1)
         sSession.state = MULTIPLAYER_SESSION_OVERWORLD_SYNC;
     else
         sSession.state = MULTIPLAYER_SESSION_LOBBY;
@@ -719,21 +719,21 @@ static bool8 PublishClientHello(void)
 
     if (sClientHelloSent)
         return FALSE;
-    if (sSession.sessionEpoch == 0 || sSession.playerToken == 0 || sSession.joinNonce == 0)
+    if (sSession.session_epoch == 0 || sSession.player_token == 0 || sSession.join_nonce == 0)
         return FALSE;
 
     memset(&hello, 0, sizeof(hello));
-    hello.protocolVersion = NET_PROTOCOL_VERSION;
-    hello.bridgeVersion = NET_EMULATOR_BRIDGE_VERSION;
-    hello.buildId = NET_PROTOCOL_BUILD_ID;
-    hello.rulesetHash = NET_RULESET_HASH;
-    hello.featureFlags = BuildFeatureFlags();
-    hello.profileProtocolVersion = EngineExtensionProfile_GetProtocolVersion();
-    hello.profileCapabilityFlags = EngineExtensionProfile_GetCapabilityFlags();
-    hello.profileCapabilityHash = EngineExtensionProfile_GetCapabilityHash();
-    hello.modCatalogHash = EngineExtensionProfile_GetCatalogHash();
-    hello.modCatalogCount = EngineExtensionProfile_GetCatalogEntryCount();
-    hello.transportMode = NET_ACTIVE_TRANSPORT_MODE;
+    hello.protocol_version = NET_PROTOCOL_VERSION;
+    hello.bridge_version = NET_EMULATOR_BRIDGE_VERSION;
+    hello.build_id = NET_PROTOCOL_BUILD_ID;
+    hello.ruleset_hash = NET_RULESET_HASH;
+    hello.feature_flags = BuildFeatureFlags();
+    hello.profile_protocol_version = EngineExtensionProfile_GetProtocolVersion();
+    hello.profile_capability_flags = EngineExtensionProfile_GetCapabilityFlags();
+    hello.profile_capability_hash = EngineExtensionProfile_GetCapabilityHash();
+    hello.mod_catalog_hash = EngineExtensionProfile_GetCatalogHash();
+    hello.mod_catalog_count = EngineExtensionProfile_GetCatalogEntryCount();
+    hello.transport_mode = NET_ACTIVE_TRANSPORT_MODE;
 
     if (NetTransport_SendPacket(NET_PACKET_CLIENT_HELLO, &hello, sizeof(hello)))
     {
@@ -747,34 +747,34 @@ static bool8 PublishClientHello(void)
 
 static u32 NextActionSequence(void)
 {
-    sSession.localActionSequence++;
-    if (sSession.localActionSequence == 0)
-        sSession.localActionSequence++;
+    sSession.local_action_sequence++;
+    if (sSession.local_action_sequence == 0)
+        sSession.local_action_sequence++;
 
-    return sSession.localActionSequence;
+    return sSession.local_action_sequence;
 }
 
 static void AdvanceLocalClientFrame(void)
 {
-    sSession.localClientFrame++;
-    if (sSession.localClientFrame == 0)
-        sSession.localClientFrame++;
+    sSession.local_client_frame++;
+    if (sSession.local_client_frame == 0)
+        sSession.local_client_frame++;
 }
 
 static u32 NextLocalSnapshotSequence(void)
 {
-    sSession.localSnapshotSequence++;
-    if (sSession.localSnapshotSequence == 0)
-        sSession.localSnapshotSequence++;
+    sSession.local_snapshot_sequence++;
+    if (sSession.local_snapshot_sequence == 0)
+        sSession.local_snapshot_sequence++;
 
-    return sSession.localSnapshotSequence;
+    return sSession.local_snapshot_sequence;
 }
 
 static void PublishHeartbeat(void)
 {
     struct NetHeartbeat heartbeat;
 
-    if (sSession.sessionEpoch == 0 || sSession.playerToken == 0 || sSession.joinNonce == 0)
+    if (sSession.session_epoch == 0 || sSession.player_token == 0 || sSession.join_nonce == 0)
         return;
     if (sHeartbeatTimer != 0)
     {
@@ -783,11 +783,11 @@ static void PublishHeartbeat(void)
     }
 
     memset(&heartbeat, 0, sizeof(heartbeat));
-    heartbeat.clientFrame = sSession.localClientFrame;
-    heartbeat.serverTickSeen = sSession.bridgeTick;
-    heartbeat.sessionEpoch = sSession.sessionEpoch;
-    heartbeat.playerToken = sSession.playerToken;
-    heartbeat.joinNonce = sSession.joinNonce;
+    heartbeat.client_frame = sSession.local_client_frame;
+    heartbeat.server_tick_seen = sSession.bridge_tick;
+    heartbeat.session_epoch = sSession.session_epoch;
+    heartbeat.player_token = sSession.player_token;
+    heartbeat.join_nonce = sSession.join_nonce;
     if (NetTransport_SendPacket(NET_PACKET_HEARTBEAT, &heartbeat, sizeof(heartbeat)))
         sHeartbeatTimer = NET_HEARTBEAT_INTERVAL_FRAMES;
 }
@@ -802,20 +802,20 @@ static u32 CalcSnapshotHotStateHash(const struct NetPlayerSnapshot *snapshot)
     u32 hash = 0x811C9DC5;
 
     hash = AddSnapshotFieldToHotHash(hash, snapshot->active);
-    hash = AddSnapshotFieldToHotHash(hash, snapshot->playerId);
-    hash = AddSnapshotFieldToHotHash(hash, snapshot->mapGroup);
-    hash = AddSnapshotFieldToHotHash(hash, snapshot->mapNum);
+    hash = AddSnapshotFieldToHotHash(hash, snapshot->player_id);
+    hash = AddSnapshotFieldToHotHash(hash, snapshot->map_group);
+    hash = AddSnapshotFieldToHotHash(hash, snapshot->map_num);
     hash = AddSnapshotFieldToHotHash(hash, (u16)snapshot->x);
     hash = AddSnapshotFieldToHotHash(hash, (u16)snapshot->y);
     hash = AddSnapshotFieldToHotHash(hash, snapshot->elevation);
-    hash = AddSnapshotFieldToHotHash(hash, snapshot->facingDirection);
-    hash = AddSnapshotFieldToHotHash(hash, snapshot->movementActionId);
-    hash = AddSnapshotFieldToHotHash(hash, snapshot->avatarGraphicsId);
-    hash = AddSnapshotFieldToHotHash(hash, snapshot->outfitId);
-    hash = AddSnapshotFieldToHotHash(hash, snapshot->interactionState);
-    hash = AddSnapshotFieldToHotHash(hash, snapshot->subsessionId);
-    hash = AddSnapshotFieldToHotHash(hash, snapshot->subsessionState);
-    hash = AddSnapshotFieldToHotHash(hash, snapshot->graphicsRevision);
+    hash = AddSnapshotFieldToHotHash(hash, snapshot->facing_direction);
+    hash = AddSnapshotFieldToHotHash(hash, snapshot->movement_action_id);
+    hash = AddSnapshotFieldToHotHash(hash, snapshot->avatar_graphics_id);
+    hash = AddSnapshotFieldToHotHash(hash, snapshot->outfit_id);
+    hash = AddSnapshotFieldToHotHash(hash, snapshot->interaction_state);
+    hash = AddSnapshotFieldToHotHash(hash, snapshot->subsession_id);
+    hash = AddSnapshotFieldToHotHash(hash, snapshot->subsession_state);
+    hash = AddSnapshotFieldToHotHash(hash, snapshot->graphics_revision);
     hash = AddSnapshotFieldToHotHash(hash, snapshot->flags);
 
     return hash == 0 ? 1 : hash;
@@ -823,12 +823,12 @@ static u32 CalcSnapshotHotStateHash(const struct NetPlayerSnapshot *snapshot)
 
 static bool8 LocalSnapshotHasNeverBeenPublished(void)
 {
-    return sSession.localSnapshotSequence == 0;
+    return sSession.local_snapshot_sequence == 0;
 }
 
 static bool8 LocalSnapshotHotStateChanged(u32 hotHash)
 {
-    return hotHash != sSession.localSnapshotHotHash;
+    return hotHash != sSession.local_snapshot_hot_hash;
 }
 
 static bool8 LocalSnapshotNeedsIdleRefresh(void)
@@ -849,30 +849,30 @@ static bool8 LocalSnapshotShouldBePublished(u32 hotHash)
 
 static void AddSessionStateToLocalSnapshot(struct NetPlayerSnapshot *snapshot)
 {
-    snapshot->serverTickSeen = sSession.bridgeTick;
-    snapshot->sessionEpoch = sSession.sessionEpoch;
-    snapshot->staleFrames = 0;
-    snapshot->anomalyScore = sSession.anomalyScore;
+    snapshot->server_tick_seen = sSession.bridge_tick;
+    snapshot->session_epoch = sSession.session_epoch;
+    snapshot->stale_frames = 0;
+    snapshot->anomaly_score = sSession.anomaly_score;
 }
 
 static void AddSubsessionStateToLocalSnapshot(struct NetPlayerSnapshot *snapshot, const struct MultiplayerSubsession *subsession)
 {
     snapshot->flags |= NET_PLAYER_FLAG_BUSY | NET_PLAYER_FLAG_IN_SUBSESSION;
-    snapshot->subsessionId = subsession->subsession_id;
-    snapshot->subsessionState = subsession->state;
+    snapshot->subsession_id = subsession->subsession_id;
+    snapshot->subsession_state = subsession->state;
     if (subsession->type == MULTIPLAYER_SUBSESSION_TRADE)
-        snapshot->interactionState = MULTIPLAYER_INTERACTION_TRADE;
+        snapshot->interaction_state = MULTIPLAYER_INTERACTION_TRADE;
     else
-        snapshot->interactionState = MULTIPLAYER_INTERACTION_BATTLE;
+        snapshot->interaction_state = MULTIPLAYER_INTERACTION_BATTLE;
 }
 
 static void AddBarrierStateToLocalSnapshot(struct NetPlayerSnapshot *snapshot)
 {
     snapshot->flags |= NET_PLAYER_FLAG_BUSY;
-    if (sSession.interactionBarrier.type == MULTIPLAYER_BARRIER_SCRIPT)
-        snapshot->interactionState = MULTIPLAYER_INTERACTION_SCRIPT;
-    else if (sSession.interactionBarrier.type == MULTIPLAYER_BARRIER_WARP)
-        snapshot->interactionState = MULTIPLAYER_INTERACTION_WARP;
+    if (sSession.interaction_barrier.type == MULTIPLAYER_BARRIER_SCRIPT)
+        snapshot->interaction_state = MULTIPLAYER_INTERACTION_SCRIPT;
+    else if (sSession.interaction_barrier.type == MULTIPLAYER_BARRIER_WARP)
+        snapshot->interaction_state = MULTIPLAYER_INTERACTION_WARP;
 }
 
 static void AddInteractionStateToLocalSnapshot(struct NetPlayerSnapshot *snapshot)
@@ -881,7 +881,7 @@ static void AddInteractionStateToLocalSnapshot(struct NetPlayerSnapshot *snapsho
 
     if (subsession != NULL)
         AddSubsessionStateToLocalSnapshot(snapshot, subsession);
-    else if (BarrierIncludesPlayer(&sSession.interactionBarrier, sSession.localPlayerId))
+    else if (BarrierIncludesPlayer(&sSession.interaction_barrier, sSession.local_player_id))
         AddBarrierStateToLocalSnapshot(snapshot);
     else
         MultiplayerInteractionMenu_ApplySnapshotState(snapshot);
@@ -896,7 +896,7 @@ static bool8 SendLocalSnapshotIfNeeded(struct NetPlayerSnapshot *snapshot, u32 h
     if (!NetTransport_WriteLocalSnapshot(snapshot))
         return FALSE;
 
-    sSession.localSnapshotHotHash = hotHash;
+    sSession.local_snapshot_hot_hash = hotHash;
     return TRUE;
 }
 
@@ -905,50 +905,50 @@ static void PublishLocalSnapshot(void)
     struct NetPlayerSnapshot snapshot;
     u32 hotHash;
 
-    if (sSession.localPlayerId >= MAX_NET_PLAYERS)
+    if (sSession.local_player_id >= MAX_NET_PLAYERS)
         return;
     if (!MultiplayerOverworld_CanTick())
         return;
 
-    MultiplayerOverworld_BuildLocalSnapshot(&snapshot, sSession.localPlayerId, sSession.tick);
+    MultiplayerOverworld_BuildLocalSnapshot(&snapshot, sSession.local_player_id, sSession.tick);
     AdvanceLocalClientFrame();
     AddSessionStateToLocalSnapshot(&snapshot);
     AddInteractionStateToLocalSnapshot(&snapshot);
     hotHash = CalcSnapshotHotStateHash(&snapshot);
-    snapshot.sequence = sSession.localSnapshotSequence;
+    snapshot.sequence = sSession.local_snapshot_sequence;
     SendLocalSnapshotIfNeeded(&snapshot, hotHash);
 
-    sSession.players[sSession.localPlayerId] = snapshot;
+    sSession.players[sSession.local_player_id] = snapshot;
 }
 
 static void PublishLocalBattleProfile(void)
 {
     struct NetPlayerBattleProfile profile;
 
-    if (sSession.localPlayerId >= MAX_NET_PLAYERS)
+    if (sSession.local_player_id >= MAX_NET_PLAYERS)
         return;
     if (!MultiplayerOverworld_CanTick())
         return;
-    if (sSession.localProfilePublishTimer != 0)
+    if (sSession.local_profile_publish_timer != 0)
     {
-        sSession.localProfilePublishTimer--;
+        sSession.local_profile_publish_timer--;
         return;
     }
 
     MultiplayerOverworld_BuildLocalBattleProfile(&profile);
     if (!BattleProfileIsValid(&profile))
     {
-        sSession.localProfilePublishTimer = NET_PLAYER_PROFILE_PUBLISH_RETRY_FRAMES;
+        sSession.local_profile_publish_timer = NET_PLAYER_PROFILE_PUBLISH_RETRY_FRAMES;
         return;
     }
     if (NetTransport_SendPacket(NET_PACKET_PLAYER_BATTLE_PROFILE, &profile, sizeof(profile)))
     {
-        sSession.playerProfiles[sSession.localPlayerId] = profile;
-        sSession.localProfilePublishTimer = NET_PLAYER_PROFILE_PUBLISH_INTERVAL_FRAMES;
+        sSession.player_profiles[sSession.local_player_id] = profile;
+        sSession.local_profile_publish_timer = NET_PLAYER_PROFILE_PUBLISH_INTERVAL_FRAMES;
     }
     else
     {
-        sSession.localProfilePublishTimer = NET_PLAYER_PROFILE_PUBLISH_RETRY_FRAMES;
+        sSession.local_profile_publish_timer = NET_PLAYER_PROFILE_PUBLISH_RETRY_FRAMES;
     }
 }
 
@@ -959,22 +959,22 @@ static void PublishMoveIntent(u8 direction, u16 new_keys, u16 held_keys)
 
     if (!MultiplayerSession_IsOnline())
         return;
-    if (sSession.localPlayerId >= MAX_NET_PLAYERS)
+    if (sSession.local_player_id >= MAX_NET_PLAYERS)
         return;
-    snapshot = &sSession.players[sSession.localPlayerId];
+    snapshot = &sSession.players[sSession.local_player_id];
     if (!snapshot->active)
         return;
 
     memset(&intent, 0, sizeof(intent));
-    intent.header.clientFrame = sSession.localClientFrame;
-    intent.header.serverTickSeen = sSession.bridgeTick;
-    intent.header.actionSequence = sSession.localSnapshotSequence;
-    intent.heldKeys = held_keys;
-    intent.newKeys = new_keys;
+    intent.header.client_frame = sSession.local_client_frame;
+    intent.header.server_tick_seen = sSession.bridge_tick;
+    intent.header.action_sequence = sSession.local_snapshot_sequence;
+    intent.held_keys = held_keys;
+    intent.new_keys = new_keys;
     intent.direction = direction;
-    intent.movementActionId = snapshot->movementActionId;
-    intent.mapGroup = snapshot->mapGroup;
-    intent.mapNum = snapshot->mapNum;
+    intent.movement_action_id = snapshot->movement_action_id;
+    intent.map_group = snapshot->map_group;
+    intent.map_num = snapshot->map_num;
     intent.x = snapshot->x;
     intent.y = snapshot->y;
     NetTransport_SendUnreliablePacket(NET_PACKET_MOVE_INTENT, &intent, sizeof(intent));
@@ -989,29 +989,29 @@ static void PublishInteractIntent(u8 barrier_type, u8 target_player_id, u8 map_g
 
     if (!MultiplayerSession_IsOnline())
         return;
-    if (sSession.localPlayerId >= MAX_NET_PLAYERS)
+    if (sSession.local_player_id >= MAX_NET_PLAYERS)
         return;
-    snapshot = &sSession.players[sSession.localPlayerId];
+    snapshot = &sSession.players[sSession.local_player_id];
     if (!snapshot->active)
         return;
 
     memset(&intent, 0, sizeof(intent));
     action_sequence = NextActionSequence();
-    MultiplayerCommit_BuildKey(&transaction_key, sSession.sessionEpoch, sSession.localPlayerId, NET_PACKET_INTERACT_INTENT, NET_SUBSESSION_NONE, action_sequence);
-    intent.header.clientFrame = sSession.localClientFrame;
-    intent.header.serverTickSeen = sSession.bridgeTick;
-    intent.header.actionSequence = action_sequence;
-    intent.header.transactionId = MultiplayerCommit_GetTransactionId(&transaction_key);
-    intent.targetPlayerId = target_player_id;
-    intent.interactionType = barrier_type;
-    intent.mapGroup = map_group;
-    intent.mapNum = map_number;
+    MultiplayerCommit_BuildKey(&transaction_key, sSession.session_epoch, sSession.local_player_id, NET_PACKET_INTERACT_INTENT, NET_SUBSESSION_NONE, action_sequence);
+    intent.header.client_frame = sSession.local_client_frame;
+    intent.header.server_tick_seen = sSession.bridge_tick;
+    intent.header.action_sequence = action_sequence;
+    intent.header.transaction_id = MultiplayerCommit_GetTransactionId(&transaction_key);
+    intent.target_player_id = target_player_id;
+    intent.interaction_type = barrier_type;
+    intent.map_group = map_group;
+    intent.map_num = map_number;
     intent.x = snapshot->x;
     intent.y = snapshot->y;
     NetTransport_SendPacket(NET_PACKET_INTERACT_INTENT, &intent, sizeof(intent));
 }
 
-static void SendProfileAck(u32 profileHash, u8 profile_ack_result, u16 detail);
+static void SendProfileAck(u32 profile_hash, u8 profile_ack_result, u16 detail);
 
 static u16 GetCatalogChunkCount(void)
 {
@@ -1021,9 +1021,9 @@ static u16 GetCatalogChunkCount(void)
     return (EngineExtensionProfile_GetCatalogEntryCount() + NET_CATALOG_CHUNK_ENTRY_COUNT - 1) / NET_CATALOG_CHUNK_ENTRY_COUNT;
 }
 
-static u8 GetCatalogChunkEntryCount(u16 firstEntry, u16 entryTotal)
+static u8 GetCatalogChunkEntryCount(u16 first_entry, u16 entryTotal)
 {
-    u16 remaining = entryTotal - firstEntry;
+    u16 remaining = entryTotal - first_entry;
 
     if (remaining > NET_CATALOG_CHUNK_ENTRY_COUNT)
         return NET_CATALOG_CHUNK_ENTRY_COUNT;
@@ -1031,39 +1031,39 @@ static u8 GetCatalogChunkEntryCount(u16 firstEntry, u16 entryTotal)
     return remaining;
 }
 
-static bool8 SendModCatalogBegin(u16 entryTotal, u16 chunkCount)
+static bool8 SendModCatalogBegin(u16 entryTotal, u16 chunk_count)
 {
     struct NetClientCatalogBegin begin;
 
     memset(&begin, 0, sizeof(begin));
-    begin.catalogHash = EngineExtensionProfile_GetCatalogHash();
-    begin.entryCount = entryTotal;
-    begin.chunkCount = chunkCount;
-    begin.schemaHash = EngineExtensionProfile_GetCatalogSchemaHash();
+    begin.catalog_hash = EngineExtensionProfile_GetCatalogHash();
+    begin.entry_count = entryTotal;
+    begin.chunk_count = chunk_count;
+    begin.schema_hash = EngineExtensionProfile_GetCatalogSchemaHash();
 
     return NetTransport_SendPacket(NET_PACKET_CLIENT_CATALOG_BEGIN, &begin, sizeof(begin));
 }
 
-static void BuildModCatalogChunk(struct NetClientCatalogChunk *chunk, const struct ModCatalogEntry *entries, u16 chunkIndex, u16 entryTotal)
+static void BuildModCatalogChunk(struct NetClientCatalogChunk *chunk, const struct ModCatalogEntry *entries, u16 chunk_index, u16 entryTotal)
 {
-    u16 firstEntry = chunkIndex * NET_CATALOG_CHUNK_ENTRY_COUNT;
-    u8 entryCount = GetCatalogChunkEntryCount(firstEntry, entryTotal);
+    u16 first_entry = chunk_index * NET_CATALOG_CHUNK_ENTRY_COUNT;
+    u8 entry_count = GetCatalogChunkEntryCount(first_entry, entryTotal);
     u8 entry_index_in_chunk;
 
     memset(chunk, 0, sizeof(*chunk));
-    chunk->catalogHash = EngineExtensionProfile_GetCatalogHash();
-    chunk->chunkIndex = chunkIndex;
-    chunk->firstEntry = firstEntry;
-    chunk->entryCount = entryCount;
-    for (entry_index_in_chunk = 0; entry_index_in_chunk < entryCount; entry_index_in_chunk++)
-        chunk->entries[entry_index_in_chunk] = entries[firstEntry + entry_index_in_chunk];
+    chunk->catalog_hash = EngineExtensionProfile_GetCatalogHash();
+    chunk->chunk_index = chunk_index;
+    chunk->first_entry = first_entry;
+    chunk->entry_count = entry_count;
+    for (entry_index_in_chunk = 0; entry_index_in_chunk < entry_count; entry_index_in_chunk++)
+        chunk->entries[entry_index_in_chunk] = entries[first_entry + entry_index_in_chunk];
 }
 
-static bool8 SendModCatalogChunk(const struct ModCatalogEntry *entries, u16 chunkIndex, u16 entryTotal)
+static bool8 SendModCatalogChunk(const struct ModCatalogEntry *entries, u16 chunk_index, u16 entryTotal)
 {
     struct NetClientCatalogChunk chunk;
 
-    BuildModCatalogChunk(&chunk, entries, chunkIndex, entryTotal);
+    BuildModCatalogChunk(&chunk, entries, chunk_index, entryTotal);
     return NetTransport_SendPacket(NET_PACKET_CLIENT_CATALOG_CHUNK, &chunk, sizeof(chunk));
 }
 
@@ -1071,43 +1071,43 @@ static void SendModCatalog(void)
 {
     const struct ModCatalogEntry *entries = EngineExtensionProfile_GetCatalogEntries();
     u16 entryTotal = EngineExtensionProfile_GetCatalogEntryCount();
-    u16 chunkCount = GetCatalogChunkCount();
-    u16 chunkIndex;
+    u16 chunk_count = GetCatalogChunkCount();
+    u16 chunk_index;
 
-    if (!SendModCatalogBegin(entryTotal, chunkCount))
+    if (!SendModCatalogBegin(entryTotal, chunk_count))
         return;
     if (entries == NULL)
         return;
 
-    for (chunkIndex = 0; chunkIndex < chunkCount; chunkIndex++)
+    for (chunk_index = 0; chunk_index < chunk_count; chunk_index++)
     {
-        if (!SendModCatalogChunk(entries, chunkIndex, entryTotal))
+        if (!SendModCatalogChunk(entries, chunk_index, entryTotal))
             return;
     }
 }
 
 static void HandleServerProfileBegin(const struct NetServerProfileBegin *profileBegin)
 {
-    if (profileBegin->profileProtocolVersion != EngineExtensionProfile_GetProtocolVersion())
-        SendProfileAck(profileBegin->profileHash, ENGINE_EXTENSION_PROFILE_RESULT_UNSUPPORTED_VERSION, profileBegin->profileProtocolVersion);
-    else if (!EngineExtensionProfile_CanReceive(profileBegin->capabilityFlags, profileBegin->capabilityHash))
-        SendProfileAck(profileBegin->profileHash, ENGINE_EXTENSION_PROFILE_RESULT_UNSUPPORTED_CAPABILITY, 0);
-    else if (!EngineExtensionProfile_BeginReceive(profileBegin->profileHash, profileBegin->profileSize, profileBegin->chunkCount))
-        SendProfileAck(profileBegin->profileHash, ENGINE_EXTENSION_PROFILE_RESULT_OUT_OF_MEMORY, profileBegin->profileSize);
+    if (profileBegin->profile_protocol_version != EngineExtensionProfile_GetProtocolVersion())
+        SendProfileAck(profileBegin->profile_hash, ENGINE_EXTENSION_PROFILE_RESULT_UNSUPPORTED_VERSION, profileBegin->profile_protocol_version);
+    else if (!EngineExtensionProfile_CanReceive(profileBegin->capability_flags, profileBegin->capability_hash))
+        SendProfileAck(profileBegin->profile_hash, ENGINE_EXTENSION_PROFILE_RESULT_UNSUPPORTED_CAPABILITY, 0);
+    else if (!EngineExtensionProfile_BeginReceive(profileBegin->profile_hash, profileBegin->profile_size, profileBegin->chunk_count))
+        SendProfileAck(profileBegin->profile_hash, ENGINE_EXTENSION_PROFILE_RESULT_OUT_OF_MEMORY, profileBegin->profile_size);
 }
 
 static void HandleServerProfileChunk(const struct NetServerProfileChunk *profileChunk)
 {
-    if (!EngineExtensionProfile_ReceiveChunk(profileChunk->profileHash, profileChunk->chunkIndex, profileChunk->offset, profileChunk->data, profileChunk->dataSize))
-        SendProfileAck(profileChunk->profileHash, ENGINE_EXTENSION_PROFILE_RESULT_BAD_SIZE, profileChunk->chunkIndex);
+    if (!EngineExtensionProfile_ReceiveChunk(profileChunk->profile_hash, profileChunk->chunk_index, profileChunk->offset, profileChunk->data, profileChunk->data_size))
+        SendProfileAck(profileChunk->profile_hash, ENGINE_EXTENSION_PROFILE_RESULT_BAD_SIZE, profileChunk->chunk_index);
 }
 
 static void HandleServerProfileCommit(const struct NetServerProfileCommit *profileCommit)
 {
     u8 profileResult;
 
-    profileResult = EngineExtensionProfile_CommitReceive(profileCommit->profileHash);
-    SendProfileAck(profileCommit->profileHash, profileResult, 0);
+    profileResult = EngineExtensionProfile_CommitReceive(profileCommit->profile_hash);
+    SendProfileAck(profileCommit->profile_hash, profileResult, 0);
 }
 
 static void HandleBattleProfilePacket(u8 player_id, const void *packet_payload, u16 packet_payload_size)
@@ -1121,14 +1121,14 @@ static void HandleBattleProfilePacket(u8 player_id, const void *packet_payload, 
 
     memcpy(&battleProfile, packet_payload, sizeof(battleProfile));
     if (sSession.players[player_id].active && BattleProfileIsValid(&battleProfile))
-        sSession.playerProfiles[player_id] = battleProfile;
+        sSession.player_profiles[player_id] = battleProfile;
 }
 
 static void ProcessInboundPacket(const struct NetPacketEnvelope *envelope, const void *packet_payload, u16 packet_payload_size)
 {
     const struct NetTradeAction *tradeAction;
 
-    switch (envelope->packetType)
+    switch (envelope->packet_type)
     {
     case NET_PACKET_COMMIT_RESULT:
         if (packet_payload_size == sizeof(struct NetCommitResult))
@@ -1138,15 +1138,15 @@ static void ProcessInboundPacket(const struct NetPacketEnvelope *envelope, const
         if (packet_payload_size == sizeof(struct NetTradeAction))
         {
             tradeAction = (const struct NetTradeAction *)packet_payload;
-            MultiplayerTrade_ApplyRemoteAction(envelope->playerId, tradeAction);
+            MultiplayerTrade_ApplyRemoteAction(envelope->player_id, tradeAction);
         }
         break;
     case NET_PACKET_RESYNC_REQUEST:
-        sSession.healthState = MULTIPLAYER_HEALTH_RESYNCING;
+        sSession.health_state = MULTIPLAYER_HEALTH_RESYNCING;
         break;
     case NET_PACKET_DISCONNECT_REASON:
         AbortLocalSubsessionsForDisconnect();
-        sSession.healthState = MULTIPLAYER_HEALTH_DISCONNECTED;
+        sSession.health_state = MULTIPLAYER_HEALTH_DISCONNECTED;
         break;
     case NET_PACKET_SERVER_PROFILE_BEGIN:
         if (packet_payload_size == sizeof(struct NetServerProfileBegin))
@@ -1165,7 +1165,7 @@ static void ProcessInboundPacket(const struct NetPacketEnvelope *envelope, const
             SendModCatalog();
         break;
     case NET_PACKET_PLAYER_BATTLE_PROFILE:
-        HandleBattleProfilePacket(envelope->playerId, packet_payload, packet_payload_size);
+        HandleBattleProfilePacket(envelope->player_id, packet_payload, packet_payload_size);
         break;
     default:
         break;
@@ -1189,18 +1189,18 @@ static void ProcessInboundPackets(void)
     }
 }
 
-static void SendProfileAck(u32 profileHash, u8 profile_ack_result, u16 detail)
+static void SendProfileAck(u32 profile_hash, u8 profile_ack_result, u16 detail)
 {
     struct NetServerProfileAck profile_ack_packet;
 
 #if FEATURE_MULTIPLAYER_SMOKE_STATUS
-    sLastSmokeProfileAckHash = profileHash;
+    sLastSmokeProfileAckHash = profile_hash;
     sLastSmokeProfileAckResult = profile_ack_result;
     UpdateSmokeStatus();
 #endif
 
     memset(&profile_ack_packet, 0, sizeof(profile_ack_packet));
-    profile_ack_packet.profileHash = profileHash;
+    profile_ack_packet.profile_hash = profile_hash;
     profile_ack_packet.result_code = profile_ack_result;
     profile_ack_packet.detail = detail;
     NetTransport_SendPacket(NET_PACKET_SERVER_PROFILE_ACK, &profile_ack_packet, sizeof(profile_ack_packet));
@@ -1230,11 +1230,11 @@ static void HandleTransportLoss(void)
     else if (sTransportLossFrames >= NET_PLAYER_STALE_FRAMES)
     {
         MultiplayerOverworld_Reset();
-        sSession.healthState = MULTIPLAYER_HEALTH_STALE;
+        sSession.health_state = MULTIPLAYER_HEALTH_STALE;
     }
     else if (sTransportLossFrames >= NET_TRANSPORT_VIEW_LOSS_GRACE_FRAMES)
     {
-        sSession.healthState = MULTIPLAYER_HEALTH_DEGRADED;
+        sSession.health_state = MULTIPLAYER_HEALTH_DEGRADED;
     }
 }
 
@@ -1270,7 +1270,7 @@ void MultiplayerSession_Tick(void)
         return;
     }
 
-    MultiplayerCompanionSaveBeacon_Tick(sSession.tick, sSession.state, sSession.healthState, sSession.localPlayerId, sSession.playerCount);
+    MultiplayerCompanionSaveBeacon_Tick(sSession.tick, sSession.state, sSession.health_state, sSession.local_player_id, sSession.player_count);
 
     if (!RuntimeCanPollTransport())
     {
@@ -1409,7 +1409,7 @@ u8 MultiplayerSession_GetState(void)
 u8 MultiplayerSession_GetLocalPlayerId(void)
 {
 #if FEATURE_MULTIPLAYER
-    return sSession.localPlayerId;
+    return sSession.local_player_id;
 #else
     return NET_PLAYER_NONE;
 #endif
@@ -1418,7 +1418,7 @@ u8 MultiplayerSession_GetLocalPlayerId(void)
 u8 MultiplayerSession_GetPlayerCount(void)
 {
 #if FEATURE_MULTIPLAYER
-    return sSession.playerCount;
+    return sSession.player_count;
 #else
     return 0;
 #endif
@@ -1440,10 +1440,10 @@ const struct NetPlayerBattleProfile *MultiplayerSession_GetPlayerBattleProfile(u
         return NULL;
     if (!MultiplayerSession_IsPlayerActive(player_id))
         return NULL;
-    if (!BattleProfileIsValid(&sSession.playerProfiles[player_id]))
+    if (!BattleProfileIsValid(&sSession.player_profiles[player_id]))
         return NULL;
 
-    return &sSession.playerProfiles[player_id];
+    return &sSession.player_profiles[player_id];
 #else
     (void)player_id;
     return NULL;
@@ -1455,8 +1455,8 @@ bool8 MultiplayerSession_IsOnline(void)
 #if FEATURE_MULTIPLAYER
     if (!RuntimeAllowsOnline())
         return FALSE;
-    if (sSession.healthState == MULTIPLAYER_HEALTH_DISCONNECTED
-     || sSession.healthState == MULTIPLAYER_HEALTH_RESYNCING)
+    if (sSession.health_state == MULTIPLAYER_HEALTH_DISCONNECTED
+     || sSession.health_state == MULTIPLAYER_HEALTH_RESYNCING)
         return FALSE;
 
     return sSession.state == MULTIPLAYER_SESSION_LOBBY
@@ -1470,7 +1470,7 @@ bool8 MultiplayerSession_IsOnline(void)
 bool8 MultiplayerSession_IsHost(void)
 {
 #if FEATURE_MULTIPLAYER
-    return sSession.localPlayerId != NET_PLAYER_NONE && sSession.localPlayerId == sSession.hostPlayerId;
+    return sSession.local_player_id != NET_PLAYER_NONE && sSession.local_player_id == sSession.host_player_id;
 #else
     return FALSE;
 #endif
@@ -1479,7 +1479,7 @@ bool8 MultiplayerSession_IsHost(void)
 u32 MultiplayerSession_GetSessionEpoch(void)
 {
 #if FEATURE_MULTIPLAYER
-    return sSession.sessionEpoch;
+    return sSession.session_epoch;
 #else
     return 0;
 #endif
@@ -1488,7 +1488,7 @@ u32 MultiplayerSession_GetSessionEpoch(void)
 u32 MultiplayerSession_GetServerClockSeconds(void)
 {
 #if FEATURE_MULTIPLAYER
-    return sSession.serverClockSeconds;
+    return sSession.server_clock_seconds;
 #else
     return 0;
 #endif
@@ -1506,10 +1506,10 @@ u32 MultiplayerSession_NextActionSequence(void)
 bool8 MultiplayerSession_BuildTransactionKey(struct MultiplayerTransactionKey *transaction_key, u8 packet_type, u8 subsession_id, u32 action_sequence)
 {
 #if FEATURE_MULTIPLAYER
-    if (transaction_key == NULL || sSession.localPlayerId >= MAX_NET_PLAYERS || sSession.sessionEpoch == 0 || action_sequence == 0)
+    if (transaction_key == NULL || sSession.local_player_id >= MAX_NET_PLAYERS || sSession.session_epoch == 0 || action_sequence == 0)
         return FALSE;
 
-    MultiplayerCommit_BuildKey(transaction_key, sSession.sessionEpoch, sSession.localPlayerId, packet_type, subsession_id, action_sequence);
+    MultiplayerCommit_BuildKey(transaction_key, sSession.session_epoch, sSession.local_player_id, packet_type, subsession_id, action_sequence);
     return TRUE;
 #else
     (void)transaction_key;
@@ -1527,7 +1527,7 @@ bool8 MultiplayerSession_IsPlayerActive(u8 player_id)
         return FALSE;
 
     return sSession.players[player_id].active
-        && sSession.players[player_id].playerId == player_id
+        && sSession.players[player_id].player_id == player_id
         && !SnapshotIsStale(&sSession.players[player_id])
         && SnapshotTickIsFresh(&sSession.players[player_id], sSession.tick);
 #else
@@ -1559,7 +1559,7 @@ bool8 MultiplayerSession_IsPlayerInteractionBlocked(u8 player_id)
         return FALSE;
 
     return MultiplayerSession_IsPlayerBusy(player_id)
-        || BarrierIncludesPlayer(&sSession.interactionBarrier, player_id);
+        || BarrierIncludesPlayer(&sSession.interaction_barrier, player_id);
 #else
     return FALSE;
 #endif
@@ -1591,13 +1591,13 @@ bool8 MultiplayerSession_ArePlayersOnSameMap(u8 player_count, const u8 *player_i
     if (!MultiplayerSession_IsPlayerActive(player_ids[0]))
         return FALSE;
 
-    reference_map_group = sSession.players[player_ids[0]].mapGroup;
-    reference_map_number = sSession.players[player_ids[0]].mapNum;
+    reference_map_group = sSession.players[player_ids[0]].map_group;
+    reference_map_number = sSession.players[player_ids[0]].map_num;
     for (player_list_index = 1; player_list_index < player_count; player_list_index++)
     {
         if (!MultiplayerSession_IsPlayerActive(player_ids[player_list_index]))
             return FALSE;
-        if (sSession.players[player_ids[player_list_index]].mapGroup != reference_map_group || sSession.players[player_ids[player_list_index]].mapNum != reference_map_number)
+        if (sSession.players[player_ids[player_list_index]].map_group != reference_map_group || sSession.players[player_ids[player_list_index]].map_num != reference_map_number)
             return FALSE;
     }
 
@@ -1651,22 +1651,22 @@ bool8 MultiplayerSession_StartInteractionBarrier(u8 barrier_type, u8 player_coun
         return FALSE;
     if (player_count == 0 || player_count > MAX_NET_BATTLE_PLAYERS || player_ids == NULL)
         return FALSE;
-    if (sSession.localPlayerId == NET_PLAYER_NONE || !MultiplayerSession_IsOnline())
+    if (sSession.local_player_id == NET_PLAYER_NONE || !MultiplayerSession_IsOnline())
         return FALSE;
-    if (sSession.healthState != MULTIPLAYER_HEALTH_HEALTHY)
+    if (sSession.health_state != MULTIPLAYER_HEALTH_HEALTHY)
         return FALSE;
-    if (sSession.interactionBarrier.active)
+    if (sSession.interaction_barrier.active)
         return FALSE;
     if (!MultiplayerSession_ArePlayersOnSameMap(player_count, player_ids))
         return FALSE;
 
-    barrier_map_group = sSession.players[player_ids[0]].mapGroup;
-    barrier_map_number = sSession.players[player_ids[0]].mapNum;
+    barrier_map_group = sSession.players[player_ids[0]].map_group;
+    barrier_map_number = sSession.players[player_ids[0]].map_num;
     for (player_list_index = 0; player_list_index < player_count; player_list_index++)
     {
         if (PlayerBlocksBarrierStart(barrier_type, player_ids[player_list_index]))
             return FALSE;
-        if (player_ids[player_list_index] != sSession.localPlayerId && target_player_id == NET_PLAYER_NONE)
+        if (player_ids[player_list_index] != sSession.local_player_id && target_player_id == NET_PLAYER_NONE)
             target_player_id = player_ids[player_list_index];
 
         for (duplicate_check_index = player_list_index + 1; duplicate_check_index < player_count; duplicate_check_index++)
@@ -1676,15 +1676,15 @@ bool8 MultiplayerSession_StartInteractionBarrier(u8 barrier_type, u8 player_coun
         }
     }
 
-    memset(&sSession.interactionBarrier, 0, sizeof(sSession.interactionBarrier));
-    sSession.interactionBarrier.active = TRUE;
-    sSession.interactionBarrier.type = barrier_type;
-    sSession.interactionBarrier.ownerPlayerId = sSession.localPlayerId;
-    sSession.interactionBarrier.playerCount = player_count;
-    sSession.interactionBarrier.mapGroup = barrier_map_group;
-    sSession.interactionBarrier.mapNum = barrier_map_number;
-    sSession.interactionBarrier.timeoutFrames = NET_INTERACTION_BARRIER_TIMEOUT_FRAMES;
-    memcpy(sSession.interactionBarrier.players, player_ids, player_count);
+    memset(&sSession.interaction_barrier, 0, sizeof(sSession.interaction_barrier));
+    sSession.interaction_barrier.active = TRUE;
+    sSession.interaction_barrier.type = barrier_type;
+    sSession.interaction_barrier.owner_player_id = sSession.local_player_id;
+    sSession.interaction_barrier.player_count = player_count;
+    sSession.interaction_barrier.map_group = barrier_map_group;
+    sSession.interaction_barrier.map_num = barrier_map_number;
+    sSession.interaction_barrier.timeout_frames = NET_INTERACTION_BARRIER_TIMEOUT_FRAMES;
+    memcpy(sSession.interaction_barrier.players, player_ids, player_count);
     if (barrier_type == MULTIPLAYER_BARRIER_SCRIPT || barrier_type == MULTIPLAYER_BARRIER_WARP)
         PublishInteractIntent(barrier_type, target_player_id, barrier_map_group, barrier_map_number);
     return TRUE;
@@ -1696,9 +1696,9 @@ bool8 MultiplayerSession_StartInteractionBarrier(u8 barrier_type, u8 player_coun
 void MultiplayerSession_ClearInteractionBarrier(u8 barrier_type)
 {
 #if FEATURE_MULTIPLAYER
-    if (!sSession.interactionBarrier.active)
+    if (!sSession.interaction_barrier.active)
         return;
-    if (barrier_type != MULTIPLAYER_BARRIER_NONE && sSession.interactionBarrier.type != barrier_type)
+    if (barrier_type != MULTIPLAYER_BARRIER_NONE && sSession.interaction_barrier.type != barrier_type)
         return;
 
     ResetInteractionBarrier();
@@ -1745,9 +1745,9 @@ bool8 MultiplayerSession_StartSubsession(u8 subsession_type, u8 player_count, co
             sSession.subsessions[subsession_index].subsession_id = subsession_index + 1;
             sSession.subsessions[subsession_index].type = subsession_type;
             sSession.subsessions[subsession_index].state = MULTIPLAYER_SUBSESSION_STATE_INVITING;
-            sSession.subsessions[subsession_index].hostPlayerId = sSession.localPlayerId;
-            sSession.subsessions[subsession_index].playerCount = player_count;
-            sSession.subsessions[subsession_index].timeoutFrames = NET_SUBSESSION_TIMEOUT_FRAMES;
+            sSession.subsessions[subsession_index].host_player_id = sSession.local_player_id;
+            sSession.subsessions[subsession_index].player_count = player_count;
+            sSession.subsessions[subsession_index].timeout_frames = NET_SUBSESSION_TIMEOUT_FRAMES;
             memcpy(sSession.subsessions[subsession_index].players, player_ids, player_count);
             if (!NetTransport_SendPacket(NET_PACKET_SUBSESSION_INVITE, &sSession.subsessions[subsession_index], sizeof(sSession.subsessions[subsession_index])))
             {

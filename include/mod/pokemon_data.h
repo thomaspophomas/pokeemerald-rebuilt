@@ -28,27 +28,27 @@
 
 struct ModSpeciesInfoOverride
 {
-    u8 baseHP;
-    u8 baseAttack;
-    u8 baseDefense;
-    u8 baseSpeed;
-    u8 baseSpAttack;
-    u8 baseSpDefense;
+    u8 base_hp;
+    u8 base_attack;
+    u8 base_defense;
+    u8 base_speed;
+    u8 base_sp_attack;
+    u8 base_sp_defense;
     u8 types[2];
-    u8 catchRate;
-    u8 expYield;
-    u8 evYields[6];
-    u16 itemCommon;
-    u16 itemRare;
-    u8 genderRatio;
-    u8 eggCycles;
+    u8 catch_rate;
+    u8 exp_yield;
+    u8 ev_yields[6];
+    u16 item_common;
+    u16 item_rare;
+    u8 gender_ratio;
+    u8 egg_cycles;
     u8 friendship;
-    u8 growthRate;
-    u8 eggGroups[2];
+    u8 growth_rate;
+    u8 egg_groups[2];
     u8 abilities[2];
-    u8 safariZoneFleeRate;
-    u8 bodyColor;
-    bool8 noFlip;
+    u8 safari_zone_flee_rate;
+    u8 body_color;
+    bool8 no_flip;
 };
 
 struct ModLevelUpMoveDefinition
@@ -64,9 +64,9 @@ struct ModPokemonDataDefinition
     s16 priority;
     u16 flags;
     struct ModSpeciesInfoOverride info;
-    u8 levelUpMoveCount;
-    struct ModLevelUpMoveDefinition levelUpMoves[MOD_POKEMON_MAX_LEVEL_UP_MOVES];
-    u8 evolutionCount;
+    u8 level_up_move_count;
+    struct ModLevelUpMoveDefinition level_up_moves[MOD_POKEMON_MAX_LEVEL_UP_MOVES];
+    u8 evolution_count;
     struct Evolution evolutions[MOD_POKEMON_MAX_EVOLUTIONS];
 };
 

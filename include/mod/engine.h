@@ -17,8 +17,8 @@ struct EngineRuleset
     const char *name;
     u16 version;
     u32 flags;
-    EngineRulesetCaptureFunc getCaptureModifier;
-    EngineRulesetBattleWeatherFunc getBattleWeatherMask;
+    EngineRulesetCaptureFunc get_capture_modifier;
+    EngineRulesetBattleWeatherFunc get_battle_weather_mask;
 };
 
 void EngineApi_Init(void);

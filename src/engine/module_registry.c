@@ -98,8 +98,8 @@ void EngineModules_OnMapLoad(void)
     module_count = GetEngineModuleCount();
     for (module_index = 0; module_index < module_count; module_index++)
     {
-        if (sEngineModules[module_index].mapLoad != NULL)
-            sEngineModules[module_index].mapLoad();
+        if (sEngineModules[module_index].map_load != NULL)
+            sEngineModules[module_index].map_load();
     }
 }
 
@@ -114,8 +114,8 @@ void EngineModules_OnPlayerStep(u8 direction, u16 new_keys, u16 held_keys)
     module_count = GetEngineModuleCount();
     for (module_index = 0; module_index < module_count; module_index++)
     {
-        if (sEngineModules[module_index].playerStep != NULL)
-            sEngineModules[module_index].playerStep(direction, new_keys, held_keys);
+        if (sEngineModules[module_index].player_step != NULL)
+            sEngineModules[module_index].player_step(direction, new_keys, held_keys);
     }
 }
 
@@ -130,8 +130,8 @@ void EngineModules_OnBattleStart(u32 battle_type_flags)
     module_count = GetEngineModuleCount();
     for (module_index = 0; module_index < module_count; module_index++)
     {
-        if (sEngineModules[module_index].battleStart != NULL)
-            sEngineModules[module_index].battleStart(battle_type_flags);
+        if (sEngineModules[module_index].battle_start != NULL)
+            sEngineModules[module_index].battle_start(battle_type_flags);
     }
 }
 
@@ -146,7 +146,7 @@ void EngineModules_OnBattleEnd(u32 battle_outcome)
     module_count = GetEngineModuleCount();
     for (module_index = 0; module_index < module_count; module_index++)
     {
-        if (sEngineModules[module_index].battleEnd != NULL)
-            sEngineModules[module_index].battleEnd(battle_outcome);
+        if (sEngineModules[module_index].battle_end != NULL)
+            sEngineModules[module_index].battle_end(battle_outcome);
     }
 }

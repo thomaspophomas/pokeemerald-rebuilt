@@ -9,7 +9,7 @@
 struct ModBattleSpriteDefinition
 {
     const char *key;
-    const char *assetKey;
+    const char *asset_key;
     u16 species;
     u8 form;
     u8 side;

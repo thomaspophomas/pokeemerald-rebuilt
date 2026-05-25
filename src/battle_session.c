@@ -41,7 +41,7 @@ u16 BattleSession_GetCurrentFieldBattleWeather(void)
         return battleWeather;
 
     ModWeather_GetDisplayedWeather(&display);
-    battleWeather = GetVanillaFieldBattleWeather(display.vanillaWeather);
+    battleWeather = GetVanillaFieldBattleWeather(display.vanilla_weather);
     if (battleWeather != 0)
         return battleWeather;
 

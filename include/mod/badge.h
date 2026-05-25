@@ -29,11 +29,11 @@ enum ModBadgeEffectType
 struct ModBadgeEffectDefinition
 {
     const char *key;
-    u8 badgeId;
-    u8 effectKind;
+    u8 badge_id;
+    u8 effect_kind;
     u8 target;
-    s8 percentPerLevel;
-    u8 maxLevel;
+    s8 percent_per_level;
+    u8 max_level;
     u16 flags;
 };
 

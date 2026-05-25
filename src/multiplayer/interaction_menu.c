@@ -186,10 +186,10 @@ static bool8 SnapshotCanOpenRemoteMenu(const struct NetPlayerSnapshot *snapshot,
 
     if (!snapshot->active || !local->active)
         return FALSE;
-    if (snapshot->mapGroup != local->mapGroup || snapshot->mapNum != local->mapNum)
+    if (snapshot->map_group != local->map_group || snapshot->map_num != local->map_num)
         return FALSE;
 
-    MoveCoordsOneStep(snapshot->facingDirection, &x, &y);
+    MoveCoordsOneStep(snapshot->facing_direction, &x, &y);
     if (x == local->x && y == local->y)
         return TRUE;
 
@@ -274,7 +274,7 @@ static bool8 TryStartFight(void)
 
     memset(&request, 0, sizeof(request));
     request.type = MULTIPLAYER_SUBSESSION_PVP_BATTLE;
-    request.playerCount = MAX_NET_PVP_PLAYERS;
+    request.player_count = MAX_NET_PVP_PLAYERS;
     request.players[0] = local_player_id;
     request.players[1] = opponent_player_id;
 
@@ -446,7 +446,7 @@ void MultiplayerInteractionMenu_ApplySnapshotState(struct NetPlayerSnapshot *sna
         return;
 
     snapshot->flags |= NET_PLAYER_FLAG_BUSY;
-    snapshot->interactionState = MULTIPLAYER_INTERACTION_OPTIONS_MENU;
+    snapshot->interaction_state = MULTIPLAYER_INTERACTION_OPTIONS_MENU;
 }
 
 void MultiplayerInteractionMenu_UpdateRemoteRequests(const struct MultiplayerSession *session)
@@ -466,7 +466,7 @@ void MultiplayerInteractionMenu_UpdateRemoteRequests(const struct MultiplayerSes
             continue;
 
         snapshot = &session->players[remote_player_id];
-        if (!snapshot->active || snapshot->interactionState != MULTIPLAYER_INTERACTION_OPTIONS_MENU)
+        if (!snapshot->active || snapshot->interaction_state != MULTIPLAYER_INTERACTION_OPTIONS_MENU)
         {
             sRemoteMenuSeen[remote_player_id] = FALSE;
             continue;

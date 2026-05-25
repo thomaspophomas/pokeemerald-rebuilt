@@ -41,31 +41,31 @@ struct ModEvent
 
 struct ModEventFlagChanged
 {
-    u16 flagId;
+    u16 flag_id;
     bool8 value;
     const char *reason;
 };
 
 struct ModEventTimeChanged
 {
-    u8 oldSegment;
-    u8 newSegment;
-    u16 dayCount;
+    u8 old_segment;
+    u8 new_segment;
+    u16 day_count;
 };
 
 struct ModEventWeatherChanged
 {
-    u8 oldWeather;
-    u8 newWeather;
-    u16 oldLayers;
-    u16 newLayers;
+    u8 old_weather;
+    u8 new_weather;
+    u16 old_layers;
+    u16 new_layers;
 };
 
 struct ModEventPlayerStep
 {
     u8 direction;
-    u16 newKeys;
-    u16 heldKeys;
+    u16 new_keys;
+    u16 held_keys;
 };
 
 typedef s8 (*ModEventHandler)(const struct ModEvent *event);

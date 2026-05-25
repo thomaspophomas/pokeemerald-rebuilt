@@ -5,14 +5,14 @@
 
 #define MOD_FLAG_INVALID 0xFFFF
 #define MOD_FLAG_VANILLA_BASE 0x8000
-#define MOD_FLAG_TO_VANILLA(flagId) ((flagId) | MOD_FLAG_VANILLA_BASE)
-#define MOD_FLAG_FROM_VANILLA(flagId) ((flagId) & ~MOD_FLAG_VANILLA_BASE)
+#define MOD_FLAG_TO_VANILLA(flag_id) ((flag_id) | MOD_FLAG_VANILLA_BASE)
+#define MOD_FLAG_FROM_VANILLA(flag_id) ((flag_id) & ~MOD_FLAG_VANILLA_BASE)
 
 struct ModFlagDefinition
 {
     const char *key;
     u16 mod_flag_id;
-    bool8 initialValue;
+    bool8 initial_value;
 };
 
 void ModFlag_Init(void);

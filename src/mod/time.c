@@ -12,31 +12,31 @@ static EWRAM_DATA bool8 sTimeInitialized = FALSE;
 static EWRAM_DATA u8 sLastSegment = MOD_TIME_DAY;
 static EWRAM_DATA u16 sLastDayCount = 0;
 
-static u8 GetSegmentFromMinute(u16 minuteOfDay)
+static u8 GetSegmentFromMinute(u16 minute_of_day)
 {
     u16 time_segment_index;
 
     for (time_segment_index = 0; time_segment_index < gModTimeSegmentCount; time_segment_index++)
     {
-        if (gModTimeSegments[time_segment_index].startMinute <= gModTimeSegments[time_segment_index].endMinute)
+        if (gModTimeSegments[time_segment_index].start_minute <= gModTimeSegments[time_segment_index].end_minute)
         {
-            if (minuteOfDay >= gModTimeSegments[time_segment_index].startMinute && minuteOfDay <= gModTimeSegments[time_segment_index].endMinute)
+            if (minute_of_day >= gModTimeSegments[time_segment_index].start_minute && minute_of_day <= gModTimeSegments[time_segment_index].end_minute)
                 return gModTimeSegments[time_segment_index].segment;
         }
         else
         {
-            if (minuteOfDay >= gModTimeSegments[time_segment_index].startMinute || minuteOfDay <= gModTimeSegments[time_segment_index].endMinute)
+            if (minute_of_day >= gModTimeSegments[time_segment_index].start_minute || minute_of_day <= gModTimeSegments[time_segment_index].end_minute)
                 return gModTimeSegments[time_segment_index].segment;
         }
     }
 
-    if (minuteOfDay < 6 * 60)
+    if (minute_of_day < 6 * 60)
         return MOD_TIME_NIGHT;
-    if (minuteOfDay < 12 * 60)
+    if (minute_of_day < 12 * 60)
         return MOD_TIME_MORNING;
-    if (minuteOfDay < 18 * 60)
+    if (minute_of_day < 18 * 60)
         return MOD_TIME_DAY;
-    if (minuteOfDay < 21 * 60)
+    if (minute_of_day < 21 * 60)
         return MOD_TIME_EVENING;
     return MOD_TIME_NIGHT;
 }
@@ -51,20 +51,20 @@ void ModTime_Now(struct ModTimeSnapshot *snapshot)
     if (MultiplayerClock_IsServerClockActive())
     {
         epoch = MultiplayerClock_GetServerEpochSeconds();
-        snapshot->epochSeconds = epoch;
-        snapshot->dayCount = epoch / (24 * 60 * 60);
-        snapshot->minuteOfDay = (epoch / 60) % (24 * 60);
-        snapshot->segment = GetSegmentFromMinute(snapshot->minuteOfDay);
-        snapshot->usesServerClock = TRUE;
+        snapshot->epoch_seconds = epoch;
+        snapshot->day_count = epoch / (24 * 60 * 60);
+        snapshot->minute_of_day = (epoch / 60) % (24 * 60);
+        snapshot->segment = GetSegmentFromMinute(snapshot->minute_of_day);
+        snapshot->uses_server_clock = TRUE;
         return;
     }
 #endif
 
     RtcCalcLocalTime();
-    snapshot->dayCount = RtcGetLocalDayCount();
-    snapshot->minuteOfDay = gLocalTime.hours * 60 + gLocalTime.minutes;
-    snapshot->segment = GetSegmentFromMinute(snapshot->minuteOfDay);
-    snapshot->usesServerClock = FALSE;
+    snapshot->day_count = RtcGetLocalDayCount();
+    snapshot->minute_of_day = gLocalTime.hours * 60 + gLocalTime.minutes;
+    snapshot->segment = GetSegmentFromMinute(snapshot->minute_of_day);
+    snapshot->uses_server_clock = FALSE;
 }
 
 void ModTime_Init(void)
@@ -73,7 +73,7 @@ void ModTime_Init(void)
 
     ModTime_Now(&snapshot);
     sLastSegment = snapshot.segment;
-    sLastDayCount = snapshot.dayCount;
+    sLastDayCount = snapshot.day_count;
     sTimeInitialized = TRUE;
 }
 
@@ -85,21 +85,21 @@ void ModTime_RunFrame(void)
         ModTime_Init();
 
     ModTime_Now(&snapshot);
-    if (snapshot.dayCount != sLastDayCount)
+    if (snapshot.day_count != sLastDayCount)
         ModEvent_Emit(MOD_EVENT_DAY_CHANGED, &snapshot, sizeof(snapshot));
 
     if (snapshot.segment != sLastSegment)
     {
         struct ModEventTimeChanged payload;
 
-        payload.oldSegment = sLastSegment;
-        payload.newSegment = snapshot.segment;
-        payload.dayCount = snapshot.dayCount;
+        payload.old_segment = sLastSegment;
+        payload.new_segment = snapshot.segment;
+        payload.day_count = snapshot.day_count;
         ModEvent_Emit(MOD_EVENT_TIME_SEGMENT_CHANGED, &payload, sizeof(payload));
     }
 
     sLastSegment = snapshot.segment;
-    sLastDayCount = snapshot.dayCount;
+    sLastDayCount = snapshot.day_count;
 }
 
 u8 ModTime_GetSegment(void)
@@ -120,7 +120,7 @@ u16 ModTime_GetDayCount(void)
     struct ModTimeSnapshot snapshot;
 
     ModTime_Now(&snapshot);
-    return snapshot.dayCount;
+    return snapshot.day_count;
 }
 
 u16 ModTime_GetMinuteOfDay(void)
@@ -128,5 +128,5 @@ u16 ModTime_GetMinuteOfDay(void)
     struct ModTimeSnapshot snapshot;
 
     ModTime_Now(&snapshot);
-    return snapshot.minuteOfDay;
+    return snapshot.minute_of_day;
 }

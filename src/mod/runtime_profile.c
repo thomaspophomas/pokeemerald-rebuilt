@@ -25,7 +25,7 @@ struct RuntimeProfileNpc
 struct RuntimeProfileAsset
 {
     char key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char sourceKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char source_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
     struct ModSpriteAssetDefinition definition;
     struct SpriteSheet sheet;
     struct SpritePalette palette;
@@ -34,62 +34,62 @@ struct RuntimeProfileAsset
 struct ModRuntimeProfileState
 {
     bool8 active;
-    u32 profileHash;
-    u16 expectedSize;
-    u16 expectedChunks;
-    u16 receivedBytes;
+    u32 profile_hash;
+    u16 expected_size;
+    u16 expected_chunks;
+    u16 received_bytes;
     u8 *blob;
-    u8 *textBytes;
-    u8 *assetBytes;
-    u16 textByteCapacity;
-    u16 assetByteCapacity;
-    u16 textByteCount;
-    u8 chunkReceived[MOD_RUNTIME_PROFILE_MAX_CHUNKS];
+    u8 *text_bytes;
+    u8 *asset_bytes;
+    u16 text_byte_capacity;
+    u16 asset_byte_capacity;
+    u16 text_byte_count;
+    u8 chunk_received[MOD_RUNTIME_PROFILE_MAX_CHUNKS];
     struct RuntimeProfileText texts[MOD_RUNTIME_PROFILE_MAX_TEXTS];
-    u16 textCount;
-    bool8 hasWeather;
+    u16 text_count;
+    bool8 has_weather;
     struct ModWeatherDisplay weather;
-    char engineRulesetId[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char engine_ruleset_id[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
     struct RuntimeProfileNpc npcs[MOD_RUNTIME_PROFILE_MAX_NPCS];
-    u16 npcCount;
+    u16 npc_count;
     struct RuntimeProfileAsset assets[MOD_RUNTIME_PROFILE_MAX_ASSETS];
-    u16 assetCount;
-    u16 assetByteCount;
-    char badgeEffectKeys[MOD_RUNTIME_PROFILE_MAX_BADGE_EFFECTS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    struct ModBadgeEffectDefinition badgeEffects[MOD_RUNTIME_PROFILE_MAX_BADGE_EFFECTS];
-    u16 badgeEffectCount;
-    char fishingActionKeys[MOD_RUNTIME_PROFILE_MAX_FISHING_ACTIONS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char fishingActionHookKeys[MOD_RUNTIME_PROFILE_MAX_FISHING_ACTIONS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char fishingActionPromptKeys[MOD_RUNTIME_PROFILE_MAX_FISHING_ACTIONS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    struct FishingActionDefinition fishingActions[MOD_RUNTIME_PROFILE_MAX_FISHING_ACTIONS];
-    u16 fishingActionCount;
-    char encounterKeys[MOD_RUNTIME_PROFILE_MAX_ENCOUNTERS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char encounterHookKeys[MOD_RUNTIME_PROFILE_MAX_ENCOUNTERS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    u16 asset_count;
+    u16 asset_byte_count;
+    char badge_effect_keys[MOD_RUNTIME_PROFILE_MAX_BADGE_EFFECTS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    struct ModBadgeEffectDefinition badge_effects[MOD_RUNTIME_PROFILE_MAX_BADGE_EFFECTS];
+    u16 badge_effect_count;
+    char fishing_action_keys[MOD_RUNTIME_PROFILE_MAX_FISHING_ACTIONS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char fishing_action_hook_keys[MOD_RUNTIME_PROFILE_MAX_FISHING_ACTIONS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char fishing_action_prompt_keys[MOD_RUNTIME_PROFILE_MAX_FISHING_ACTIONS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    struct FishingActionDefinition fishing_actions[MOD_RUNTIME_PROFILE_MAX_FISHING_ACTIONS];
+    u16 fishing_action_count;
+    char encounter_keys[MOD_RUNTIME_PROFILE_MAX_ENCOUNTERS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char encounter_hook_keys[MOD_RUNTIME_PROFILE_MAX_ENCOUNTERS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
     struct ModEncounterDefinition encounters[MOD_RUNTIME_PROFILE_MAX_ENCOUNTERS];
-    u16 encounterCount;
-    char shopKeys[MOD_RUNTIME_PROFILE_MAX_SHOPS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    u16 encounter_count;
+    char shop_keys[MOD_RUNTIME_PROFILE_MAX_SHOPS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
     struct ModShopDefinition shops[MOD_RUNTIME_PROFILE_MAX_SHOPS];
-    u16 shopCount;
-    char itemKeys[MOD_RUNTIME_PROFILE_MAX_ITEMS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char itemNameKeys[MOD_RUNTIME_PROFILE_MAX_ITEMS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char itemDescriptionKeys[MOD_RUNTIME_PROFILE_MAX_ITEMS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char itemFieldHookKeys[MOD_RUNTIME_PROFILE_MAX_ITEMS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char itemBattleHookKeys[MOD_RUNTIME_PROFILE_MAX_ITEMS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    u16 shop_count;
+    char item_keys[MOD_RUNTIME_PROFILE_MAX_ITEMS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char item_name_keys[MOD_RUNTIME_PROFILE_MAX_ITEMS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char item_description_keys[MOD_RUNTIME_PROFILE_MAX_ITEMS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char item_field_hook_keys[MOD_RUNTIME_PROFILE_MAX_ITEMS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char item_battle_hook_keys[MOD_RUNTIME_PROFILE_MAX_ITEMS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
     struct ModItemDefinition items[MOD_RUNTIME_PROFILE_MAX_ITEMS];
-    u16 itemCount;
-    char rewardKeys[MOD_RUNTIME_PROFILE_MAX_REWARDS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char rewardHookKeys[MOD_RUNTIME_PROFILE_MAX_REWARDS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    u16 item_count;
+    char reward_keys[MOD_RUNTIME_PROFILE_MAX_REWARDS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char reward_hook_keys[MOD_RUNTIME_PROFILE_MAX_REWARDS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
     struct ModRewardDefinition rewards[MOD_RUNTIME_PROFILE_MAX_REWARDS];
-    u16 rewardCount;
-    char pokemonDataKeys[MOD_RUNTIME_PROFILE_MAX_POKEMON_DATA][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    struct ModPokemonDataDefinition pokemonData[MOD_RUNTIME_PROFILE_MAX_POKEMON_DATA];
-    u16 pokemonDataCount;
-    char battleMoveKeys[MOD_RUNTIME_PROFILE_MAX_BATTLE_MOVES][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    struct ModBattleMoveDefinition battleMoves[MOD_RUNTIME_PROFILE_MAX_BATTLE_MOVES];
-    u16 battleMoveCount;
-    char trainerKeys[MOD_RUNTIME_PROFILE_MAX_TRAINERS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    u16 reward_count;
+    char pokemon_data_keys[MOD_RUNTIME_PROFILE_MAX_POKEMON_DATA][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    struct ModPokemonDataDefinition pokemon_data[MOD_RUNTIME_PROFILE_MAX_POKEMON_DATA];
+    u16 pokemon_data_count;
+    char battle_move_keys[MOD_RUNTIME_PROFILE_MAX_BATTLE_MOVES][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    struct ModBattleMoveDefinition battle_moves[MOD_RUNTIME_PROFILE_MAX_BATTLE_MOVES];
+    u16 battle_move_count;
+    char trainer_keys[MOD_RUNTIME_PROFILE_MAX_TRAINERS][MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
     struct ModTrainerDefinition trainers[MOD_RUNTIME_PROFILE_MAX_TRAINERS];
-    u16 trainerCount;
+    u16 trainer_count;
 };
 
 static EWRAM_DATA struct ModRuntimeProfileState *sProfile = NULL;
@@ -133,23 +133,23 @@ static u16 AlignAssetOffset(u16 offset)
 static void RemoveRuntimeNpcs(void)
 {
     u16 npc_index;
-    u8 localId;
-    u8 mapGroup;
-    u8 mapNum;
+    u8 local_id;
+    u8 map_group;
+    u8 map_num;
 
     if (sProfile == NULL || gSaveBlock1Ptr == NULL)
         return;
 
-    mapGroup = gSaveBlock1Ptr->location.mapGroup;
-    mapNum = gSaveBlock1Ptr->location.mapNum;
-    for (npc_index = 0; npc_index < sProfile->npcCount; npc_index++)
+    map_group = gSaveBlock1Ptr->location.mapGroup;
+    map_num = gSaveBlock1Ptr->location.mapNum;
+    for (npc_index = 0; npc_index < sProfile->npc_count; npc_index++)
     {
-        if (sProfile->npcs[npc_index].record.mapGroup != mapGroup || sProfile->npcs[npc_index].record.mapNum != mapNum)
+        if (sProfile->npcs[npc_index].record.map_group != map_group || sProfile->npcs[npc_index].record.map_num != map_num)
             continue;
-        localId = sProfile->npcs[npc_index].record.localId;
-        if (localId == 0)
-            localId = MOD_NPC_DYNAMIC_LOCAL_ID_BASE + (npc_index % (MOD_NPC_DYNAMIC_LOCAL_ID_END - MOD_NPC_DYNAMIC_LOCAL_ID_BASE + 1));
-        RemoveObjectEventByLocalIdAndMap(localId, mapNum, mapGroup);
+        local_id = sProfile->npcs[npc_index].record.local_id;
+        if (local_id == 0)
+            local_id = MOD_NPC_DYNAMIC_LOCAL_ID_BASE + (npc_index % (MOD_NPC_DYNAMIC_LOCAL_ID_END - MOD_NPC_DYNAMIC_LOCAL_ID_BASE + 1));
+        RemoveObjectEventByLocalIdAndMap(local_id, map_num, map_group);
     }
 }
 
@@ -160,21 +160,21 @@ static struct RuntimeProfileAsset *FindRuntimeAssetSlot(const char *key)
     if (sProfile == NULL || key == NULL)
         return NULL;
 
-    for (asset_index = 0; asset_index < sProfile->assetCount; asset_index++)
+    for (asset_index = 0; asset_index < sProfile->asset_count; asset_index++)
     {
         if (strcmp(sProfile->assets[asset_index].key, key) == 0)
             return &sProfile->assets[asset_index];
     }
 
-    if (sProfile->assetCount >= MOD_RUNTIME_PROFILE_MAX_ASSETS)
+    if (sProfile->asset_count >= MOD_RUNTIME_PROFILE_MAX_ASSETS)
         return NULL;
 
-    asset_index = sProfile->assetCount++;
+    asset_index = sProfile->asset_count++;
     memset(&sProfile->assets[asset_index], 0, sizeof(sProfile->assets[asset_index]));
     CopyBoundedString(sProfile->assets[asset_index].key, key, sizeof(sProfile->assets[asset_index].key));
     sProfile->assets[asset_index].definition.key = sProfile->assets[asset_index].key;
-    sProfile->assets[asset_index].definition.tileTag = TAG_NONE;
-    sProfile->assets[asset_index].definition.paletteTag = TAG_NONE;
+    sProfile->assets[asset_index].definition.tile_tag = TAG_NONE;
+    sProfile->assets[asset_index].definition.palette_tag = TAG_NONE;
     return &sProfile->assets[asset_index];
 }
 
@@ -198,25 +198,25 @@ static u8 ParseTextRecord(const u8 *payload, u16 size)
 {
     struct ModRuntimeProfileTextRecord record;
     struct RuntimeProfileText *text;
-    const u8 *textBytes;
+    const u8 *text_bytes;
 
-    if (size < sizeof(record) || sProfile->textCount >= MOD_RUNTIME_PROFILE_MAX_TEXTS)
+    if (size < sizeof(record) || sProfile->text_count >= MOD_RUNTIME_PROFILE_MAX_TEXTS)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
     memcpy(&record, payload, sizeof(record));
-    if ((u16)(sizeof(record) + record.textSize) > size)
+    if ((u16)(sizeof(record) + record.text_size) > size)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
-    if (sProfile->textByteCount + record.textSize + 1 > sProfile->textByteCapacity)
+    if (sProfile->text_byte_count + record.text_size + 1 > sProfile->text_byte_capacity)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_SIZE;
 
-    textBytes = payload + sizeof(record);
-    text = &sProfile->texts[sProfile->textCount++];
+    text_bytes = payload + sizeof(record);
+    text = &sProfile->texts[sProfile->text_count++];
     CopyBoundedString(text->language, record.language, sizeof(text->language));
     CopyBoundedString(text->key, record.key, sizeof(text->key));
-    text->text = &sProfile->textBytes[sProfile->textByteCount];
-    memcpy(text->text, textBytes, record.textSize);
-    text->text[record.textSize] = EOS;
-    sProfile->textByteCount += record.textSize + 1;
+    text->text = &sProfile->text_bytes[sProfile->text_byte_count];
+    memcpy(text->text, text_bytes, record.text_size);
+    text->text[record.text_size] = EOS;
+    sProfile->text_byte_count += record.text_size + 1;
     return MOD_RUNTIME_PROFILE_RESULT_OK;
 }
 
@@ -228,11 +228,11 @@ static u8 ParseWeatherRecord(const u8 *payload, u16 size)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
     memcpy(&record, payload, sizeof(record));
-    sProfile->hasWeather = TRUE;
-    sProfile->weather.vanillaWeather = record.vanillaWeather;
+    sProfile->has_weather = TRUE;
+    sProfile->weather.vanilla_weather = record.vanilla_weather;
     sProfile->weather.priority = record.priority;
     sProfile->weather.layers = record.layers;
-    sProfile->weather.battleWeatherMask = record.battleWeatherMask;
+    sProfile->weather.battle_weather_mask = record.battle_weather_mask;
     sProfile->weather.source = MOD_WEATHER_SOURCE_SERVER;
     return MOD_RUNTIME_PROFILE_RESULT_OK;
 }
@@ -245,18 +245,18 @@ static u8 ParseEngineRecord(const u8 *payload, u16 size)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
     memcpy(&record, payload, sizeof(record));
-    CopyBoundedString(sProfile->engineRulesetId, record.rulesetId, sizeof(sProfile->engineRulesetId));
+    CopyBoundedString(sProfile->engine_ruleset_id, record.ruleset_id, sizeof(sProfile->engine_ruleset_id));
     return MOD_RUNTIME_PROFILE_RESULT_OK;
 }
 
 static u8 ParseNpcRecord(const u8 *payload, u16 size)
 {
-    if (size != sizeof(struct ModRuntimeProfileNpcRecord) || sProfile->npcCount >= MOD_RUNTIME_PROFILE_MAX_NPCS)
+    if (size != sizeof(struct ModRuntimeProfileNpcRecord) || sProfile->npc_count >= MOD_RUNTIME_PROFILE_MAX_NPCS)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
-    memcpy(&sProfile->npcs[sProfile->npcCount].record, payload, sizeof(struct ModRuntimeProfileNpcRecord));
-    sProfile->npcs[sProfile->npcCount].record.key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
-    sProfile->npcCount++;
+    memcpy(&sProfile->npcs[sProfile->npc_count].record, payload, sizeof(struct ModRuntimeProfileNpcRecord));
+    sProfile->npcs[sProfile->npc_count].record.key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    sProfile->npc_count++;
     return MOD_RUNTIME_PROFILE_RESULT_OK;
 }
 
@@ -270,15 +270,15 @@ static u8 ParseAssetRefRecord(const u8 *payload, u16 size)
 
     memcpy(&record, payload, sizeof(record));
     record.key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
-    record.sourceKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
-    if (FindGeneratedAsset(record.sourceKey) == NULL)
+    record.source_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    if (FindGeneratedAsset(record.source_key) == NULL)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
     asset = FindRuntimeAssetSlot(record.key);
     if (asset == NULL)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_SIZE;
 
-    CopyBoundedString(asset->sourceKey, record.sourceKey, sizeof(asset->sourceKey));
+    CopyBoundedString(asset->source_key, record.source_key, sizeof(asset->source_key));
     return MOD_RUNTIME_PROFILE_RESULT_OK;
 }
 
@@ -298,8 +298,8 @@ static u8 ParseInlineSheetRecord(const u8 *payload, u16 size)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
     if ((u16)(sizeof(record) + record.size) > size)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
-    assetOffset = AlignAssetOffset(sProfile->assetByteCount);
-    if (assetOffset + record.size > sProfile->assetByteCapacity)
+    assetOffset = AlignAssetOffset(sProfile->asset_byte_count);
+    if (assetOffset + record.size > sProfile->asset_byte_capacity)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_SIZE;
 
     record.key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
@@ -308,14 +308,14 @@ static u8 ParseInlineSheetRecord(const u8 *payload, u16 size)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_SIZE;
 
     sheet_bytes_from_profile = payload + sizeof(record);
-    sheet_storage_in_profile = &sProfile->assetBytes[assetOffset];
+    sheet_storage_in_profile = &sProfile->asset_bytes[assetOffset];
     memcpy(sheet_storage_in_profile, sheet_bytes_from_profile, record.size);
     asset->sheet.data = sheet_storage_in_profile;
     asset->sheet.size = record.size;
-    asset->sheet.tag = record.tileTag;
+    asset->sheet.tag = record.tile_tag;
     asset->definition.sheet = &asset->sheet;
-    asset->definition.tileTag = record.tileTag;
-    sProfile->assetByteCount = assetOffset + record.size;
+    asset->definition.tile_tag = record.tile_tag;
+    sProfile->asset_byte_count = assetOffset + record.size;
     return MOD_RUNTIME_PROFILE_RESULT_OK;
 }
 
@@ -332,13 +332,13 @@ static u8 ParseInlinePaletteRecord(const u8 *payload, u16 size)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
     memcpy(&record, payload, sizeof(record));
-    palette_byte_count_from_profile = record.colorCount * sizeof(u16);
-    if (record.colorCount == 0 || record.colorCount > 16)
+    palette_byte_count_from_profile = record.color_count * sizeof(u16);
+    if (record.color_count == 0 || record.color_count > 16)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
     if ((u16)(sizeof(record) + palette_byte_count_from_profile) > size)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
-    assetOffset = AlignAssetOffset(sProfile->assetByteCount);
-    if (assetOffset + PLTT_SIZE_4BPP > sProfile->assetByteCapacity)
+    assetOffset = AlignAssetOffset(sProfile->asset_byte_count);
+    if (assetOffset + PLTT_SIZE_4BPP > sProfile->asset_byte_capacity)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_SIZE;
 
     record.key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
@@ -347,14 +347,14 @@ static u8 ParseInlinePaletteRecord(const u8 *payload, u16 size)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_SIZE;
 
     palette_bytes_from_profile = payload + sizeof(record);
-    palette_storage_in_profile = &sProfile->assetBytes[assetOffset];
+    palette_storage_in_profile = &sProfile->asset_bytes[assetOffset];
     memset(palette_storage_in_profile, 0, PLTT_SIZE_4BPP);
     memcpy(palette_storage_in_profile, palette_bytes_from_profile, palette_byte_count_from_profile);
     asset->palette.data = (const u16 *)palette_storage_in_profile;
-    asset->palette.tag = record.paletteTag;
+    asset->palette.tag = record.palette_tag;
     asset->definition.palette = &asset->palette;
-    asset->definition.paletteTag = record.paletteTag;
-    sProfile->assetByteCount = assetOffset + PLTT_SIZE_4BPP;
+    asset->definition.palette_tag = record.palette_tag;
+    sProfile->asset_byte_count = assetOffset + PLTT_SIZE_4BPP;
     return MOD_RUNTIME_PROFILE_RESULT_OK;
 }
 
@@ -365,9 +365,9 @@ static bool8 RuntimeBadgeEffectKeyExists(const char *key)
     if (key == NULL)
         return FALSE;
 
-    for (badge_effect_index = 0; badge_effect_index < sProfile->badgeEffectCount; badge_effect_index++)
+    for (badge_effect_index = 0; badge_effect_index < sProfile->badge_effect_count; badge_effect_index++)
     {
-        if (strcmp(sProfile->badgeEffectKeys[badge_effect_index], key) == 0)
+        if (strcmp(sProfile->badge_effect_keys[badge_effect_index], key) == 0)
             return TRUE;
     }
 
@@ -381,7 +381,7 @@ static u8 ParseBadgeEffectRecord(const u8 *payload, u16 size)
     struct ModBadgeEffectDefinition *definition;
     char *key;
 
-    if (size != sizeof(record) || sProfile->badgeEffectCount >= MOD_RUNTIME_PROFILE_MAX_BADGE_EFFECTS)
+    if (size != sizeof(record) || sProfile->badge_effect_count >= MOD_RUNTIME_PROFILE_MAX_BADGE_EFFECTS)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
     memcpy(&record, payload, sizeof(record));
@@ -392,24 +392,24 @@ static u8 ParseBadgeEffectRecord(const u8 *payload, u16 size)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
     candidate.key = record.key;
-    candidate.badgeId = record.badgeId;
-    candidate.effectKind = record.effectKind;
+    candidate.badge_id = record.badge_id;
+    candidate.effect_kind = record.effect_kind;
     candidate.target = record.target;
-    candidate.percentPerLevel = record.percentPerLevel;
-    candidate.maxLevel = record.maxLevel;
+    candidate.percent_per_level = record.percent_per_level;
+    candidate.max_level = record.max_level;
     candidate.flags = record.flags;
     if (!BadgeApi_IsEffectDefinitionValid(&candidate, FALSE))
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
-    key = sProfile->badgeEffectKeys[sProfile->badgeEffectCount];
+    key = sProfile->badge_effect_keys[sProfile->badge_effect_count];
     CopyBoundedString(key, record.key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
-    definition = &sProfile->badgeEffects[sProfile->badgeEffectCount++];
+    definition = &sProfile->badge_effects[sProfile->badge_effect_count++];
     definition->key = key;
-    definition->badgeId = record.badgeId;
-    definition->effectKind = record.effectKind;
+    definition->badge_id = record.badge_id;
+    definition->effect_kind = record.effect_kind;
     definition->target = record.target;
-    definition->percentPerLevel = record.percentPerLevel;
-    definition->maxLevel = record.maxLevel;
+    definition->percent_per_level = record.percent_per_level;
+    definition->max_level = record.max_level;
     definition->flags = record.flags;
     return MOD_RUNTIME_PROFILE_RESULT_OK;
 }
@@ -421,9 +421,9 @@ static bool8 RuntimeFishingActionKeyExists(const char *key)
     if (key == NULL)
         return FALSE;
 
-    for (fishing_action_index = 0; fishing_action_index < sProfile->fishingActionCount; fishing_action_index++)
+    for (fishing_action_index = 0; fishing_action_index < sProfile->fishing_action_count; fishing_action_index++)
     {
-        if (strcmp(sProfile->fishingActionKeys[fishing_action_index], key) == 0)
+        if (strcmp(sProfile->fishing_action_keys[fishing_action_index], key) == 0)
             return TRUE;
     }
 
@@ -438,57 +438,57 @@ static u8 ParseFishingActionRecord(const u8 *payload, u16 size)
     FishingActionHook hook;
     u16 action_param_index;
     char *key;
-    char *hookKey;
-    char *promptKey;
+    char *hook_key;
+    char *prompt_key;
 
-    if (size != sizeof(record) || sProfile->fishingActionCount >= MOD_RUNTIME_PROFILE_MAX_FISHING_ACTIONS)
+    if (size != sizeof(record) || sProfile->fishing_action_count >= MOD_RUNTIME_PROFILE_MAX_FISHING_ACTIONS)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
     memcpy(&record, payload, sizeof(record));
     record.key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
-    record.sourceKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
-    record.hookKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
-    record.promptKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
-    if (record.key[0] == '\0' || record.sourceKey[0] == '\0' || record.hookKey[0] == '\0')
+    record.source_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.hook_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.prompt_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    if (record.key[0] == '\0' || record.source_key[0] == '\0' || record.hook_key[0] == '\0')
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
     if (RuntimeFishingActionKeyExists(record.key))
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
-    hook = FishingApi_FindCompiledHook(record.sourceKey, record.hookKey);
+    hook = FishingApi_FindCompiledHook(record.source_key, record.hook_key);
     if (hook == NULL)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
     memset(&candidate, 0, sizeof(candidate));
     candidate.key = record.key;
-    candidate.hookKey = record.hookKey;
-    candidate.rodMask = record.rodMask;
-    candidate.phaseMask = record.phaseMask;
+    candidate.hook_key = record.hook_key;
+    candidate.rod_mask = record.rod_mask;
+    candidate.phase_mask = record.phase_mask;
     candidate.priority = record.priority;
     candidate.flags = record.flags;
     candidate.hook = hook;
-    candidate.promptKey = record.promptKey[0] == '\0' ? NULL : record.promptKey;
-    candidate.buttonMask = record.buttonMask;
-    candidate.timeoutFrames = record.timeoutFrames;
-    candidate.successOutcome = record.successOutcome;
-    candidate.failureOutcome = record.failureOutcome;
+    candidate.prompt_key = record.prompt_key[0] == '\0' ? NULL : record.prompt_key;
+    candidate.button_mask = record.button_mask;
+    candidate.timeout_frames = record.timeout_frames;
+    candidate.success_outcome = record.success_outcome;
+    candidate.failure_outcome = record.failure_outcome;
     for (action_param_index = 0; action_param_index < FISHING_ACTION_PARAM_COUNT; action_param_index++)
         candidate.params[action_param_index] = record.params[action_param_index];
 
     if (!FishingApi_IsDefinitionValid(&candidate, FALSE))
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
-    key = sProfile->fishingActionKeys[sProfile->fishingActionCount];
-    hookKey = sProfile->fishingActionHookKeys[sProfile->fishingActionCount];
-    promptKey = sProfile->fishingActionPromptKeys[sProfile->fishingActionCount];
+    key = sProfile->fishing_action_keys[sProfile->fishing_action_count];
+    hook_key = sProfile->fishing_action_hook_keys[sProfile->fishing_action_count];
+    prompt_key = sProfile->fishing_action_prompt_keys[sProfile->fishing_action_count];
     CopyBoundedString(key, record.key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
-    CopyBoundedString(hookKey, record.hookKey, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
-    CopyBoundedString(promptKey, record.promptKey, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    CopyBoundedString(hook_key, record.hook_key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    CopyBoundedString(prompt_key, record.prompt_key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
 
-    definition = &sProfile->fishingActions[sProfile->fishingActionCount++];
+    definition = &sProfile->fishing_actions[sProfile->fishing_action_count++];
     *definition = candidate;
     definition->key = key;
-    definition->hookKey = hookKey;
-    definition->promptKey = promptKey[0] == '\0' ? NULL : promptKey;
+    definition->hook_key = hook_key;
+    definition->prompt_key = prompt_key[0] == '\0' ? NULL : prompt_key;
     return MOD_RUNTIME_PROFILE_RESULT_OK;
 }
 
@@ -499,9 +499,9 @@ static bool8 RuntimeEncounterKeyExists(const char *key)
     if (key == NULL)
         return FALSE;
 
-    for (encounter_index = 0; encounter_index < sProfile->encounterCount; encounter_index++)
+    for (encounter_index = 0; encounter_index < sProfile->encounter_count; encounter_index++)
     {
-        if (strcmp(sProfile->encounterKeys[encounter_index], key) == 0)
+        if (strcmp(sProfile->encounter_keys[encounter_index], key) == 0)
             return TRUE;
     }
 
@@ -515,39 +515,39 @@ static u8 ParseEncounterRecord(const u8 *payload, u16 size)
     struct ModEncounterDefinition *definition;
     ModEncounterHook hook = NULL;
     char *key;
-    char *hookKey;
+    char *hook_key;
     u8 encounter_slot_index;
 
-    if (size != sizeof(record) || sProfile->encounterCount >= MOD_RUNTIME_PROFILE_MAX_ENCOUNTERS)
+    if (size != sizeof(record) || sProfile->encounter_count >= MOD_RUNTIME_PROFILE_MAX_ENCOUNTERS)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
     memcpy(&record, payload, sizeof(record));
     record.key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
-    record.sourceKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
-    record.hookKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.source_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.hook_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
     if (record.key[0] == '\0')
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
     if (RuntimeEncounterKeyExists(record.key))
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
-    if ((record.sourceKey[0] == '\0') != (record.hookKey[0] == '\0'))
+    if ((record.source_key[0] == '\0') != (record.hook_key[0] == '\0'))
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
-    if (record.sourceKey[0] != '\0')
+    if (record.source_key[0] != '\0')
     {
-        hook = EncounterApi_FindCompiledHook(record.sourceKey, record.hookKey);
+        hook = EncounterApi_FindCompiledHook(record.source_key, record.hook_key);
         if (hook == NULL)
             return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
     }
 
     memset(&candidate, 0, sizeof(candidate));
     candidate.key = record.key;
-    candidate.hookKey = record.hookKey[0] == '\0' ? NULL : record.hookKey;
-    candidate.mapGroup = record.mapGroup;
-    candidate.mapNum = record.mapNum;
+    candidate.hook_key = record.hook_key[0] == '\0' ? NULL : record.hook_key;
+    candidate.map_group = record.map_group;
+    candidate.map_num = record.map_num;
     candidate.area = record.area;
-    candidate.rodMask = record.rodMask;
-    candidate.encounterRate = record.encounterRate;
-    candidate.slotCount = record.slotCount;
+    candidate.rod_mask = record.rod_mask;
+    candidate.encounter_rate = record.encounter_rate;
+    candidate.slot_count = record.slot_count;
     candidate.priority = record.priority;
     candidate.flags = record.flags;
     candidate.hook = hook;
@@ -557,15 +557,15 @@ static u8 ParseEncounterRecord(const u8 *payload, u16 size)
     if (!EncounterApi_IsDefinitionValid(&candidate, FALSE))
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
-    key = sProfile->encounterKeys[sProfile->encounterCount];
-    hookKey = sProfile->encounterHookKeys[sProfile->encounterCount];
+    key = sProfile->encounter_keys[sProfile->encounter_count];
+    hook_key = sProfile->encounter_hook_keys[sProfile->encounter_count];
     CopyBoundedString(key, record.key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
-    CopyBoundedString(hookKey, record.hookKey, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    CopyBoundedString(hook_key, record.hook_key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
 
-    definition = &sProfile->encounters[sProfile->encounterCount++];
+    definition = &sProfile->encounters[sProfile->encounter_count++];
     *definition = candidate;
     definition->key = key;
-    definition->hookKey = hookKey[0] == '\0' ? NULL : hookKey;
+    definition->hook_key = hook_key[0] == '\0' ? NULL : hook_key;
     return MOD_RUNTIME_PROFILE_RESULT_OK;
 }
 
@@ -576,9 +576,9 @@ static bool8 RuntimeShopKeyExists(const char *key)
     if (key == NULL)
         return FALSE;
 
-    for (shop_index = 0; shop_index < sProfile->shopCount; shop_index++)
+    for (shop_index = 0; shop_index < sProfile->shop_count; shop_index++)
     {
-        if (strcmp(sProfile->shopKeys[shop_index], key) == 0)
+        if (strcmp(sProfile->shop_keys[shop_index], key) == 0)
             return TRUE;
     }
 
@@ -593,7 +593,7 @@ static u8 ParseShopRecord(const u8 *payload, u16 size)
     char *key;
     u8 shop_item_index;
 
-    if (size != sizeof(record) || sProfile->shopCount >= MOD_RUNTIME_PROFILE_MAX_SHOPS)
+    if (size != sizeof(record) || sProfile->shop_count >= MOD_RUNTIME_PROFILE_MAX_SHOPS)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
     memcpy(&record, payload, sizeof(record));
@@ -605,10 +605,10 @@ static u8 ParseShopRecord(const u8 *payload, u16 size)
 
     memset(&candidate, 0, sizeof(candidate));
     candidate.key = record.key;
-    candidate.mapGroup = record.mapGroup;
-    candidate.mapNum = record.mapNum;
-    candidate.martType = record.martType;
-    candidate.itemCount = record.itemCount;
+    candidate.map_group = record.map_group;
+    candidate.map_num = record.map_num;
+    candidate.mart_type = record.mart_type;
+    candidate.item_count = record.item_count;
     candidate.priority = record.priority;
     candidate.flags = record.flags;
     for (shop_item_index = 0; shop_item_index < MOD_SHOP_MAX_ITEMS; shop_item_index++)
@@ -617,9 +617,9 @@ static u8 ParseShopRecord(const u8 *payload, u16 size)
     if (!ShopApi_IsDefinitionValid(&candidate, FALSE))
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
-    key = sProfile->shopKeys[sProfile->shopCount];
+    key = sProfile->shop_keys[sProfile->shop_count];
     CopyBoundedString(key, record.key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
-    definition = &sProfile->shops[sProfile->shopCount++];
+    definition = &sProfile->shops[sProfile->shop_count++];
     *definition = candidate;
     definition->key = key;
     return MOD_RUNTIME_PROFILE_RESULT_OK;
@@ -632,9 +632,9 @@ static bool8 RuntimeItemKeyExists(const char *key)
     if (key == NULL)
         return FALSE;
 
-    for (item_index = 0; item_index < sProfile->itemCount; item_index++)
+    for (item_index = 0; item_index < sProfile->item_count; item_index++)
     {
-        if (strcmp(sProfile->itemKeys[item_index], key) == 0)
+        if (strcmp(sProfile->item_keys[item_index], key) == 0)
             return TRUE;
     }
 
@@ -647,86 +647,86 @@ static u8 ParseItemRecord(const u8 *payload, u16 size)
     struct ModItemDefinition candidate;
     struct ModItemDefinition *definition;
     char *key;
-    char *nameKey;
-    char *descriptionKey;
-    char *fieldHookKey;
-    char *battleHookKey;
-    ItemUseFunc fieldUseFunc = NULL;
-    ItemUseFunc battleUseFunc = NULL;
+    char *name_key;
+    char *description_key;
+    char *field_hook_key;
+    char *battle_hook_key;
+    ItemUseFunc field_use_func = NULL;
+    ItemUseFunc battle_use_func = NULL;
 
-    if (size != sizeof(record) || sProfile->itemCount >= MOD_RUNTIME_PROFILE_MAX_ITEMS)
+    if (size != sizeof(record) || sProfile->item_count >= MOD_RUNTIME_PROFILE_MAX_ITEMS)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
     memcpy(&record, payload, sizeof(record));
     record.key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
-    record.nameKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
-    record.descriptionKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
-    record.fieldUseSourceKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
-    record.fieldUseHookKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
-    record.battleUseSourceKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
-    record.battleUseHookKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.name_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.description_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.field_use_source_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.field_use_hook_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.battle_use_source_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.battle_use_hook_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
     if (record.key[0] == '\0')
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
     if (RuntimeItemKeyExists(record.key))
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
-    if ((record.fieldUseSourceKey[0] == '\0') != (record.fieldUseHookKey[0] == '\0'))
+    if ((record.field_use_source_key[0] == '\0') != (record.field_use_hook_key[0] == '\0'))
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
-    if ((record.battleUseSourceKey[0] == '\0') != (record.battleUseHookKey[0] == '\0'))
+    if ((record.battle_use_source_key[0] == '\0') != (record.battle_use_hook_key[0] == '\0'))
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
-    if (record.fieldUseSourceKey[0] != '\0')
+    if (record.field_use_source_key[0] != '\0')
     {
-        fieldUseFunc = ItemApi_FindCompiledFieldUseHook(record.fieldUseSourceKey, record.fieldUseHookKey);
-        if (fieldUseFunc == NULL)
+        field_use_func = ItemApi_FindCompiledFieldUseHook(record.field_use_source_key, record.field_use_hook_key);
+        if (field_use_func == NULL)
             return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
     }
-    if (record.battleUseSourceKey[0] != '\0')
+    if (record.battle_use_source_key[0] != '\0')
     {
-        battleUseFunc = ItemApi_FindCompiledBattleUseHook(record.battleUseSourceKey, record.battleUseHookKey);
-        if (battleUseFunc == NULL)
+        battle_use_func = ItemApi_FindCompiledBattleUseHook(record.battle_use_source_key, record.battle_use_hook_key);
+        if (battle_use_func == NULL)
             return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
     }
 
     memset(&candidate, 0, sizeof(candidate));
     candidate.key = record.key;
-    candidate.nameKey = record.nameKey[0] == '\0' ? NULL : record.nameKey;
-    candidate.descriptionKey = record.descriptionKey[0] == '\0' ? NULL : record.descriptionKey;
-    candidate.fieldUseHookKey = record.fieldUseHookKey[0] == '\0' ? NULL : record.fieldUseHookKey;
-    candidate.battleUseHookKey = record.battleUseHookKey[0] == '\0' ? NULL : record.battleUseHookKey;
-    candidate.itemId = record.itemId;
+    candidate.name_key = record.name_key[0] == '\0' ? NULL : record.name_key;
+    candidate.description_key = record.description_key[0] == '\0' ? NULL : record.description_key;
+    candidate.field_use_hook_key = record.field_use_hook_key[0] == '\0' ? NULL : record.field_use_hook_key;
+    candidate.battle_use_hook_key = record.battle_use_hook_key[0] == '\0' ? NULL : record.battle_use_hook_key;
+    candidate.item_id = record.item_id;
     candidate.price = record.price;
     candidate.flags = record.flags;
-    candidate.holdEffect = record.holdEffect;
-    candidate.holdEffectParam = record.holdEffectParam;
+    candidate.hold_effect = record.hold_effect;
+    candidate.hold_effect_param = record.hold_effect_param;
     candidate.importance = record.importance;
     candidate.pocket = record.pocket;
     candidate.type = record.type;
-    candidate.battleUsage = record.battleUsage;
-    candidate.secondaryId = record.secondaryId;
+    candidate.battle_usage = record.battle_usage;
+    candidate.secondary_id = record.secondary_id;
     candidate.priority = record.priority;
-    candidate.fieldUseFunc = fieldUseFunc;
-    candidate.battleUseFunc = battleUseFunc;
+    candidate.field_use_func = field_use_func;
+    candidate.battle_use_func = battle_use_func;
     if (!ItemApi_IsDefinitionValid(&candidate, FALSE))
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
-    key = sProfile->itemKeys[sProfile->itemCount];
-    nameKey = sProfile->itemNameKeys[sProfile->itemCount];
-    descriptionKey = sProfile->itemDescriptionKeys[sProfile->itemCount];
-    fieldHookKey = sProfile->itemFieldHookKeys[sProfile->itemCount];
-    battleHookKey = sProfile->itemBattleHookKeys[sProfile->itemCount];
+    key = sProfile->item_keys[sProfile->item_count];
+    name_key = sProfile->item_name_keys[sProfile->item_count];
+    description_key = sProfile->item_description_keys[sProfile->item_count];
+    field_hook_key = sProfile->item_field_hook_keys[sProfile->item_count];
+    battle_hook_key = sProfile->item_battle_hook_keys[sProfile->item_count];
     CopyBoundedString(key, record.key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
-    CopyBoundedString(nameKey, record.nameKey, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
-    CopyBoundedString(descriptionKey, record.descriptionKey, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
-    CopyBoundedString(fieldHookKey, record.fieldUseHookKey, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
-    CopyBoundedString(battleHookKey, record.battleUseHookKey, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    CopyBoundedString(name_key, record.name_key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    CopyBoundedString(description_key, record.description_key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    CopyBoundedString(field_hook_key, record.field_use_hook_key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    CopyBoundedString(battle_hook_key, record.battle_use_hook_key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
 
-    definition = &sProfile->items[sProfile->itemCount++];
+    definition = &sProfile->items[sProfile->item_count++];
     *definition = candidate;
     definition->key = key;
-    definition->nameKey = nameKey[0] == '\0' ? NULL : nameKey;
-    definition->descriptionKey = descriptionKey[0] == '\0' ? NULL : descriptionKey;
-    definition->fieldUseHookKey = fieldHookKey[0] == '\0' ? NULL : fieldHookKey;
-    definition->battleUseHookKey = battleHookKey[0] == '\0' ? NULL : battleHookKey;
+    definition->name_key = name_key[0] == '\0' ? NULL : name_key;
+    definition->description_key = description_key[0] == '\0' ? NULL : description_key;
+    definition->field_use_hook_key = field_hook_key[0] == '\0' ? NULL : field_hook_key;
+    definition->battle_use_hook_key = battle_hook_key[0] == '\0' ? NULL : battle_hook_key;
     return MOD_RUNTIME_PROFILE_RESULT_OK;
 }
 
@@ -737,9 +737,9 @@ static bool8 RuntimeRewardKeyExists(const char *key)
     if (key == NULL)
         return FALSE;
 
-    for (reward_index = 0; reward_index < sProfile->rewardCount; reward_index++)
+    for (reward_index = 0; reward_index < sProfile->reward_count; reward_index++)
     {
-        if (strcmp(sProfile->rewardKeys[reward_index], key) == 0)
+        if (strcmp(sProfile->reward_keys[reward_index], key) == 0)
             return TRUE;
     }
 
@@ -753,50 +753,50 @@ static u8 ParseRewardRecord(const u8 *payload, u16 size)
     struct ModRewardDefinition *definition;
     ModRewardHook hook = NULL;
     char *key;
-    char *hookKey;
+    char *hook_key;
 
-    if (size != sizeof(record) || sProfile->rewardCount >= MOD_RUNTIME_PROFILE_MAX_REWARDS)
+    if (size != sizeof(record) || sProfile->reward_count >= MOD_RUNTIME_PROFILE_MAX_REWARDS)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
     memcpy(&record, payload, sizeof(record));
     record.key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
-    record.sourceKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
-    record.hookKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.source_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
+    record.hook_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH] = '\0';
     if (record.key[0] == '\0')
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
     if (RuntimeRewardKeyExists(record.key))
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
-    if ((record.sourceKey[0] == '\0') != (record.hookKey[0] == '\0'))
+    if ((record.source_key[0] == '\0') != (record.hook_key[0] == '\0'))
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
-    if (record.sourceKey[0] != '\0')
+    if (record.source_key[0] != '\0')
     {
-        hook = RewardApi_FindCompiledHook(record.sourceKey, record.hookKey);
+        hook = RewardApi_FindCompiledHook(record.source_key, record.hook_key);
         if (hook == NULL)
             return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
     }
 
     memset(&candidate, 0, sizeof(candidate));
     candidate.key = record.key;
-    candidate.hookKey = record.hookKey[0] == '\0' ? NULL : record.hookKey;
+    candidate.hook_key = record.hook_key[0] == '\0' ? NULL : record.hook_key;
     candidate.source = record.source;
-    candidate.minLevel = record.minLevel;
-    candidate.maxLevel = record.maxLevel;
+    candidate.min_level = record.min_level;
+    candidate.max_level = record.max_level;
     candidate.priority = record.priority;
     candidate.flags = record.flags;
-    candidate.itemId = record.itemId;
+    candidate.item_id = record.item_id;
     candidate.quantity = record.quantity;
     candidate.hook = hook;
     if (!RewardApi_IsDefinitionValid(&candidate, FALSE))
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
-    key = sProfile->rewardKeys[sProfile->rewardCount];
-    hookKey = sProfile->rewardHookKeys[sProfile->rewardCount];
+    key = sProfile->reward_keys[sProfile->reward_count];
+    hook_key = sProfile->reward_hook_keys[sProfile->reward_count];
     CopyBoundedString(key, record.key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
-    CopyBoundedString(hookKey, record.hookKey, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
-    definition = &sProfile->rewards[sProfile->rewardCount++];
+    CopyBoundedString(hook_key, record.hook_key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
+    definition = &sProfile->rewards[sProfile->reward_count++];
     *definition = candidate;
     definition->key = key;
-    definition->hookKey = hookKey[0] == '\0' ? NULL : hookKey;
+    definition->hook_key = hook_key[0] == '\0' ? NULL : hook_key;
     return MOD_RUNTIME_PROFILE_RESULT_OK;
 }
 
@@ -807,9 +807,9 @@ static bool8 RuntimePokemonDataKeyExists(const char *key)
     if (key == NULL)
         return FALSE;
 
-    for (pokemon_data_index = 0; pokemon_data_index < sProfile->pokemonDataCount; pokemon_data_index++)
+    for (pokemon_data_index = 0; pokemon_data_index < sProfile->pokemon_data_count; pokemon_data_index++)
     {
-        if (strcmp(sProfile->pokemonDataKeys[pokemon_data_index], key) == 0)
+        if (strcmp(sProfile->pokemon_data_keys[pokemon_data_index], key) == 0)
             return TRUE;
     }
 
@@ -823,7 +823,7 @@ static u8 ParsePokemonDataRecord(const u8 *payload, u16 size)
     struct ModPokemonDataDefinition *definition;
     char *key;
 
-    if (size != sizeof(record) || sProfile->pokemonDataCount >= MOD_RUNTIME_PROFILE_MAX_POKEMON_DATA)
+    if (size != sizeof(record) || sProfile->pokemon_data_count >= MOD_RUNTIME_PROFILE_MAX_POKEMON_DATA)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
     memcpy(&record, payload, sizeof(record));
@@ -839,16 +839,16 @@ static u8 ParsePokemonDataRecord(const u8 *payload, u16 size)
     candidate.priority = record.priority;
     candidate.flags = record.flags;
     candidate.info = record.info;
-    candidate.levelUpMoveCount = record.levelUpMoveCount;
-    memcpy(candidate.levelUpMoves, record.levelUpMoves, sizeof(candidate.levelUpMoves));
-    candidate.evolutionCount = record.evolutionCount;
+    candidate.level_up_move_count = record.level_up_move_count;
+    memcpy(candidate.level_up_moves, record.level_up_moves, sizeof(candidate.level_up_moves));
+    candidate.evolution_count = record.evolution_count;
     memcpy(candidate.evolutions, record.evolutions, sizeof(candidate.evolutions));
     if (!PokemonDataApi_IsDefinitionValid(&candidate, FALSE))
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
-    key = sProfile->pokemonDataKeys[sProfile->pokemonDataCount];
+    key = sProfile->pokemon_data_keys[sProfile->pokemon_data_count];
     CopyBoundedString(key, record.key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
-    definition = &sProfile->pokemonData[sProfile->pokemonDataCount++];
+    definition = &sProfile->pokemon_data[sProfile->pokemon_data_count++];
     *definition = candidate;
     definition->key = key;
     return MOD_RUNTIME_PROFILE_RESULT_OK;
@@ -861,9 +861,9 @@ static bool8 RuntimeBattleMoveKeyExists(const char *key)
     if (key == NULL)
         return FALSE;
 
-    for (battle_move_index = 0; battle_move_index < sProfile->battleMoveCount; battle_move_index++)
+    for (battle_move_index = 0; battle_move_index < sProfile->battle_move_count; battle_move_index++)
     {
-        if (strcmp(sProfile->battleMoveKeys[battle_move_index], key) == 0)
+        if (strcmp(sProfile->battle_move_keys[battle_move_index], key) == 0)
             return TRUE;
     }
 
@@ -877,7 +877,7 @@ static u8 ParseBattleMoveRecord(const u8 *payload, u16 size)
     struct ModBattleMoveDefinition *definition;
     char *key;
 
-    if (size != sizeof(record) || sProfile->battleMoveCount >= MOD_RUNTIME_PROFILE_MAX_BATTLE_MOVES)
+    if (size != sizeof(record) || sProfile->battle_move_count >= MOD_RUNTIME_PROFILE_MAX_BATTLE_MOVES)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
     memcpy(&record, payload, sizeof(record));
@@ -891,14 +891,14 @@ static u8 ParseBattleMoveRecord(const u8 *payload, u16 size)
     candidate.key = record.key;
     candidate.move = record.move;
     candidate.priority = record.priority;
-    candidate.overrideFlags = record.overrideFlags;
+    candidate.override_flags = record.override_flags;
     candidate.data = record.data;
     if (!BattleDataApi_IsMoveDefinitionValid(&candidate, FALSE))
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
-    key = sProfile->battleMoveKeys[sProfile->battleMoveCount];
+    key = sProfile->battle_move_keys[sProfile->battle_move_count];
     CopyBoundedString(key, record.key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
-    definition = &sProfile->battleMoves[sProfile->battleMoveCount++];
+    definition = &sProfile->battle_moves[sProfile->battle_move_count++];
     *definition = candidate;
     definition->key = key;
     return MOD_RUNTIME_PROFILE_RESULT_OK;
@@ -911,9 +911,9 @@ static bool8 RuntimeTrainerKeyExists(const char *key)
     if (key == NULL)
         return FALSE;
 
-    for (trainer_index = 0; trainer_index < sProfile->trainerCount; trainer_index++)
+    for (trainer_index = 0; trainer_index < sProfile->trainer_count; trainer_index++)
     {
-        if (strcmp(sProfile->trainerKeys[trainer_index], key) == 0)
+        if (strcmp(sProfile->trainer_keys[trainer_index], key) == 0)
             return TRUE;
     }
 
@@ -927,7 +927,7 @@ static u8 ParseTrainerRecord(const u8 *payload, u16 size)
     struct ModTrainerDefinition *definition;
     char *key;
 
-    if (size != sizeof(record) || sProfile->trainerCount >= MOD_RUNTIME_PROFILE_MAX_TRAINERS)
+    if (size != sizeof(record) || sProfile->trainer_count >= MOD_RUNTIME_PROFILE_MAX_TRAINERS)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
     memcpy(&record, payload, sizeof(record));
@@ -939,23 +939,23 @@ static u8 ParseTrainerRecord(const u8 *payload, u16 size)
 
     memset(&candidate, 0, sizeof(candidate));
     candidate.key = record.key;
-    candidate.trainerId = record.trainerId;
+    candidate.trainer_id = record.trainer_id;
     candidate.priority = record.priority;
     candidate.flags = record.flags;
-    candidate.trainerClass = record.trainerClass;
-    candidate.encounterMusicGender = record.encounterMusicGender;
-    candidate.trainerPic = record.trainerPic;
+    candidate.trainer_class = record.trainer_class;
+    candidate.encounter_music_gender = record.encounter_music_gender;
+    candidate.trainer_pic = record.trainer_pic;
     memcpy(candidate.items, record.items, sizeof(candidate.items));
-    candidate.doubleBattle = record.doubleBattle;
-    candidate.aiFlags = record.aiFlags;
-    candidate.partySize = record.partySize;
+    candidate.double_battle = record.double_battle;
+    candidate.ai_flags = record.ai_flags;
+    candidate.party_size = record.party_size;
     memcpy(candidate.party, record.party, sizeof(candidate.party));
     if (!TrainerApi_IsDefinitionValid(&candidate, FALSE))
         return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
-    key = sProfile->trainerKeys[sProfile->trainerCount];
+    key = sProfile->trainer_keys[sProfile->trainer_count];
     CopyBoundedString(key, record.key, MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1);
-    definition = &sProfile->trainers[sProfile->trainerCount++];
+    definition = &sProfile->trainers[sProfile->trainer_count++];
     *definition = candidate;
     definition->key = key;
     return MOD_RUNTIME_PROFILE_RESULT_OK;
@@ -1016,11 +1016,11 @@ static u8 MeasureRecordStorage(u8 runtime_record_type, const u8 *record_payload,
         if (record_payload_size < sizeof(text_record))
             return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
         memcpy(&text_record, record_payload, sizeof(text_record));
-        if ((u16)(sizeof(text_record) + text_record.textSize) > record_payload_size)
+        if ((u16)(sizeof(text_record) + text_record.text_size) > record_payload_size)
             return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
-        if (*required_text_bytes + text_record.textSize + 1 > MOD_RUNTIME_PROFILE_MAX_TEXT_BYTES)
+        if (*required_text_bytes + text_record.text_size + 1 > MOD_RUNTIME_PROFILE_MAX_TEXT_BYTES)
             return MOD_RUNTIME_PROFILE_RESULT_BAD_SIZE;
-        *required_text_bytes += text_record.textSize + 1;
+        *required_text_bytes += text_record.text_size + 1;
         return MOD_RUNTIME_PROFILE_RESULT_OK;
     case MOD_RUNTIME_PROFILE_RECORD_WEATHER:
         return record_payload_size == sizeof(struct ModRuntimeProfileWeatherRecord) ? MOD_RUNTIME_PROFILE_RESULT_OK : MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
@@ -1047,8 +1047,8 @@ static u8 MeasureRecordStorage(u8 runtime_record_type, const u8 *record_payload,
         if (record_payload_size < sizeof(palette_record))
             return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
         memcpy(&palette_record, record_payload, sizeof(palette_record));
-        palette_byte_count = palette_record.colorCount * sizeof(u16);
-        if (palette_record.colorCount == 0 || palette_record.colorCount > 16)
+        palette_byte_count = palette_record.color_count * sizeof(u16);
+        if (palette_record.color_count == 0 || palette_record.color_count > 16)
             return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
         if ((u16)(sizeof(palette_record) + palette_byte_count) > record_payload_size)
             return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
@@ -1088,14 +1088,14 @@ static u8 PrepareProfileStorage(void)
     u8 storage_measure_result;
     struct ModRuntimeProfileRecordHeader record_header;
 
-    while (profile_offset < sProfile->expectedSize)
+    while (profile_offset < sProfile->expected_size)
     {
-        if (sProfile->expectedSize - profile_offset < sizeof(record_header))
+        if (sProfile->expected_size - profile_offset < sizeof(record_header))
             return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
         memcpy(&record_header, &sProfile->blob[profile_offset], sizeof(record_header));
         profile_offset += sizeof(record_header);
-        if (record_header.size > sProfile->expectedSize - profile_offset)
+        if (record_header.size > sProfile->expected_size - profile_offset)
             return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
         storage_measure_result = MeasureRecordStorage(
@@ -1110,18 +1110,18 @@ static u8 PrepareProfileStorage(void)
         profile_offset += record_header.size;
     }
 
-    sProfile->textByteCapacity = required_text_bytes;
-    sProfile->assetByteCapacity = required_asset_bytes;
+    sProfile->text_byte_capacity = required_text_bytes;
+    sProfile->asset_byte_capacity = required_asset_bytes;
     if (required_text_bytes != 0)
     {
-        sProfile->textBytes = AllocZeroed(required_text_bytes);
-        if (sProfile->textBytes == NULL)
+        sProfile->text_bytes = AllocZeroed(required_text_bytes);
+        if (sProfile->text_bytes == NULL)
             return MOD_RUNTIME_PROFILE_RESULT_OUT_OF_MEMORY;
     }
     if (required_asset_bytes != 0)
     {
-        sProfile->assetBytes = AllocZeroed(required_asset_bytes);
-        if (sProfile->assetBytes == NULL)
+        sProfile->asset_bytes = AllocZeroed(required_asset_bytes);
+        if (sProfile->asset_bytes == NULL)
             return MOD_RUNTIME_PROFILE_RESULT_OUT_OF_MEMORY;
     }
 
@@ -1134,64 +1134,64 @@ static u8 ParseProfile(void)
     u8 record_parse_result;
     struct ModRuntimeProfileRecordHeader record_header;
 
-    sProfile->textCount = 0;
-    sProfile->textByteCount = 0;
-    sProfile->hasWeather = FALSE;
-    sProfile->engineRulesetId[0] = '\0';
-    sProfile->npcCount = 0;
-    sProfile->assetCount = 0;
-    sProfile->assetByteCount = 0;
-    sProfile->badgeEffectCount = 0;
-    sProfile->fishingActionCount = 0;
-    sProfile->encounterCount = 0;
-    sProfile->shopCount = 0;
-    sProfile->itemCount = 0;
-    sProfile->rewardCount = 0;
-    sProfile->pokemonDataCount = 0;
-    sProfile->battleMoveCount = 0;
-    sProfile->trainerCount = 0;
+    sProfile->text_count = 0;
+    sProfile->text_byte_count = 0;
+    sProfile->has_weather = FALSE;
+    sProfile->engine_ruleset_id[0] = '\0';
+    sProfile->npc_count = 0;
+    sProfile->asset_count = 0;
+    sProfile->asset_byte_count = 0;
+    sProfile->badge_effect_count = 0;
+    sProfile->fishing_action_count = 0;
+    sProfile->encounter_count = 0;
+    sProfile->shop_count = 0;
+    sProfile->item_count = 0;
+    sProfile->reward_count = 0;
+    sProfile->pokemon_data_count = 0;
+    sProfile->battle_move_count = 0;
+    sProfile->trainer_count = 0;
     memset(sProfile->texts, 0, sizeof(sProfile->texts));
     memset(sProfile->npcs, 0, sizeof(sProfile->npcs));
     memset(sProfile->assets, 0, sizeof(sProfile->assets));
-    memset(sProfile->badgeEffectKeys, 0, sizeof(sProfile->badgeEffectKeys));
-    memset(sProfile->badgeEffects, 0, sizeof(sProfile->badgeEffects));
-    memset(sProfile->fishingActionKeys, 0, sizeof(sProfile->fishingActionKeys));
-    memset(sProfile->fishingActionHookKeys, 0, sizeof(sProfile->fishingActionHookKeys));
-    memset(sProfile->fishingActionPromptKeys, 0, sizeof(sProfile->fishingActionPromptKeys));
-    memset(sProfile->fishingActions, 0, sizeof(sProfile->fishingActions));
-    memset(sProfile->encounterKeys, 0, sizeof(sProfile->encounterKeys));
-    memset(sProfile->encounterHookKeys, 0, sizeof(sProfile->encounterHookKeys));
+    memset(sProfile->badge_effect_keys, 0, sizeof(sProfile->badge_effect_keys));
+    memset(sProfile->badge_effects, 0, sizeof(sProfile->badge_effects));
+    memset(sProfile->fishing_action_keys, 0, sizeof(sProfile->fishing_action_keys));
+    memset(sProfile->fishing_action_hook_keys, 0, sizeof(sProfile->fishing_action_hook_keys));
+    memset(sProfile->fishing_action_prompt_keys, 0, sizeof(sProfile->fishing_action_prompt_keys));
+    memset(sProfile->fishing_actions, 0, sizeof(sProfile->fishing_actions));
+    memset(sProfile->encounter_keys, 0, sizeof(sProfile->encounter_keys));
+    memset(sProfile->encounter_hook_keys, 0, sizeof(sProfile->encounter_hook_keys));
     memset(sProfile->encounters, 0, sizeof(sProfile->encounters));
-    memset(sProfile->shopKeys, 0, sizeof(sProfile->shopKeys));
+    memset(sProfile->shop_keys, 0, sizeof(sProfile->shop_keys));
     memset(sProfile->shops, 0, sizeof(sProfile->shops));
-    memset(sProfile->itemKeys, 0, sizeof(sProfile->itemKeys));
-    memset(sProfile->itemNameKeys, 0, sizeof(sProfile->itemNameKeys));
-    memset(sProfile->itemDescriptionKeys, 0, sizeof(sProfile->itemDescriptionKeys));
-    memset(sProfile->itemFieldHookKeys, 0, sizeof(sProfile->itemFieldHookKeys));
-    memset(sProfile->itemBattleHookKeys, 0, sizeof(sProfile->itemBattleHookKeys));
+    memset(sProfile->item_keys, 0, sizeof(sProfile->item_keys));
+    memset(sProfile->item_name_keys, 0, sizeof(sProfile->item_name_keys));
+    memset(sProfile->item_description_keys, 0, sizeof(sProfile->item_description_keys));
+    memset(sProfile->item_field_hook_keys, 0, sizeof(sProfile->item_field_hook_keys));
+    memset(sProfile->item_battle_hook_keys, 0, sizeof(sProfile->item_battle_hook_keys));
     memset(sProfile->items, 0, sizeof(sProfile->items));
-    memset(sProfile->rewardKeys, 0, sizeof(sProfile->rewardKeys));
-    memset(sProfile->rewardHookKeys, 0, sizeof(sProfile->rewardHookKeys));
+    memset(sProfile->reward_keys, 0, sizeof(sProfile->reward_keys));
+    memset(sProfile->reward_hook_keys, 0, sizeof(sProfile->reward_hook_keys));
     memset(sProfile->rewards, 0, sizeof(sProfile->rewards));
-    memset(sProfile->pokemonDataKeys, 0, sizeof(sProfile->pokemonDataKeys));
-    memset(sProfile->pokemonData, 0, sizeof(sProfile->pokemonData));
-    memset(sProfile->battleMoveKeys, 0, sizeof(sProfile->battleMoveKeys));
-    memset(sProfile->battleMoves, 0, sizeof(sProfile->battleMoves));
-    memset(sProfile->trainerKeys, 0, sizeof(sProfile->trainerKeys));
+    memset(sProfile->pokemon_data_keys, 0, sizeof(sProfile->pokemon_data_keys));
+    memset(sProfile->pokemon_data, 0, sizeof(sProfile->pokemon_data));
+    memset(sProfile->battle_move_keys, 0, sizeof(sProfile->battle_move_keys));
+    memset(sProfile->battle_moves, 0, sizeof(sProfile->battle_moves));
+    memset(sProfile->trainer_keys, 0, sizeof(sProfile->trainer_keys));
     memset(sProfile->trainers, 0, sizeof(sProfile->trainers));
-    if (sProfile->textBytes != NULL)
-        memset(sProfile->textBytes, 0, sProfile->textByteCapacity);
-    if (sProfile->assetBytes != NULL)
-        memset(sProfile->assetBytes, 0, sProfile->assetByteCapacity);
+    if (sProfile->text_bytes != NULL)
+        memset(sProfile->text_bytes, 0, sProfile->text_byte_capacity);
+    if (sProfile->asset_bytes != NULL)
+        memset(sProfile->asset_bytes, 0, sProfile->asset_byte_capacity);
 
-    while (profile_offset < sProfile->expectedSize)
+    while (profile_offset < sProfile->expected_size)
     {
-        if (sProfile->expectedSize - profile_offset < sizeof(record_header))
+        if (sProfile->expected_size - profile_offset < sizeof(record_header))
             return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
         memcpy(&record_header, &sProfile->blob[profile_offset], sizeof(record_header));
         profile_offset += sizeof(record_header);
-        if (record_header.size > sProfile->expectedSize - profile_offset)
+        if (record_header.size > sProfile->expected_size - profile_offset)
             return MOD_RUNTIME_PROFILE_RESULT_BAD_RECORD;
 
         record_parse_result = ParseRecord(record_header.type, &sProfile->blob[profile_offset], record_header.size);
@@ -1217,8 +1217,8 @@ void ModRuntimeProfile_Clear(void)
 
     RemoveRuntimeNpcs();
     TRY_FREE_AND_SET_NULL(profile->blob);
-    TRY_FREE_AND_SET_NULL(profile->textBytes);
-    TRY_FREE_AND_SET_NULL(profile->assetBytes);
+    TRY_FREE_AND_SET_NULL(profile->text_bytes);
+    TRY_FREE_AND_SET_NULL(profile->asset_bytes);
     Free(profile);
     sProfile = NULL;
 }
@@ -1233,7 +1233,7 @@ u32 ModRuntimeProfile_GetActiveHash(void)
     if (!ModRuntimeProfile_IsActive())
         return 0;
 
-    return sProfile->profileHash;
+    return sProfile->profile_hash;
 }
 
 bool8 ModRuntimeProfile_BeginReceive(u32 profile_hash, u16 profile_size, u16 chunk_count)
@@ -1256,9 +1256,9 @@ bool8 ModRuntimeProfile_BeginReceive(u32 profile_hash, u16 profile_size, u16 chu
         return FALSE;
     }
 
-    sProfile->profileHash = profile_hash;
-    sProfile->expectedSize = profile_size;
-    sProfile->expectedChunks = chunk_count;
+    sProfile->profile_hash = profile_hash;
+    sProfile->expected_size = profile_size;
+    sProfile->expected_chunks = chunk_count;
     return TRUE;
 }
 
@@ -1266,22 +1266,22 @@ bool8 ModRuntimeProfile_ReceiveChunk(u32 profile_hash, u16 chunk_index, u16 chun
 {
     if (sProfile == NULL || runtime_profile_chunk_data == NULL)
         return FALSE;
-    if (profile_hash != sProfile->profileHash)
+    if (profile_hash != sProfile->profile_hash)
         return FALSE;
     if (sProfile->blob == NULL)
         return FALSE;
-    if (chunk_index >= sProfile->expectedChunks || chunk_index >= MOD_RUNTIME_PROFILE_MAX_CHUNKS)
+    if (chunk_index >= sProfile->expected_chunks || chunk_index >= MOD_RUNTIME_PROFILE_MAX_CHUNKS)
         return FALSE;
     if (chunk_size == 0 || chunk_size > NET_PROFILE_CHUNK_DATA_SIZE)
         return FALSE;
-    if (chunk_offset > sProfile->expectedSize || chunk_size > sProfile->expectedSize - chunk_offset)
+    if (chunk_offset > sProfile->expected_size || chunk_size > sProfile->expected_size - chunk_offset)
         return FALSE;
 
     memcpy(&sProfile->blob[chunk_offset], runtime_profile_chunk_data, chunk_size);
-    if (!sProfile->chunkReceived[chunk_index])
+    if (!sProfile->chunk_received[chunk_index])
     {
-        sProfile->chunkReceived[chunk_index] = TRUE;
-        sProfile->receivedBytes += chunk_size;
+        sProfile->chunk_received[chunk_index] = TRUE;
+        sProfile->received_bytes += chunk_size;
     }
     return TRUE;
 }
@@ -1291,16 +1291,16 @@ u8 ModRuntimeProfile_CommitReceive(u32 profile_hash)
     u16 chunk_index;
     u8 profile_commit_result;
 
-    if (sProfile == NULL || profile_hash != sProfile->profileHash)
+    if (sProfile == NULL || profile_hash != sProfile->profile_hash)
         return MOD_RUNTIME_PROFILE_RESULT_BAD_HASH;
     if (sProfile->active && sProfile->blob == NULL)
         return MOD_RUNTIME_PROFILE_RESULT_OK;
-    for (chunk_index = 0; chunk_index < sProfile->expectedChunks; chunk_index++)
+    for (chunk_index = 0; chunk_index < sProfile->expected_chunks; chunk_index++)
     {
-        if (!sProfile->chunkReceived[chunk_index])
+        if (!sProfile->chunk_received[chunk_index])
             return MOD_RUNTIME_PROFILE_RESULT_BAD_SIZE;
     }
-    if (CalcProfileHash(sProfile->blob, sProfile->expectedSize) != profile_hash)
+    if (CalcProfileHash(sProfile->blob, sProfile->expected_size) != profile_hash)
     {
         ModRuntimeProfile_Clear();
         return MOD_RUNTIME_PROFILE_RESULT_BAD_HASH;
@@ -1332,7 +1332,7 @@ const u8 *ModRuntimeProfile_GetText(const char *key, const char *language)
     if (!ModRuntimeProfile_IsActive() || key == NULL || language == NULL)
         return NULL;
 
-    for (text_index = 0; text_index < sProfile->textCount; text_index++)
+    for (text_index = 0; text_index < sProfile->text_count; text_index++)
     {
         if (strcmp(sProfile->texts[text_index].key, key) == 0
          && strcmp(sProfile->texts[text_index].language, language) == 0)
@@ -1344,7 +1344,7 @@ const u8 *ModRuntimeProfile_GetText(const char *key, const char *language)
 
 bool8 ModRuntimeProfile_GetWeather(struct ModWeatherDisplay *display)
 {
-    if (!ModRuntimeProfile_IsActive() || display == NULL || !sProfile->hasWeather)
+    if (!ModRuntimeProfile_IsActive() || display == NULL || !sProfile->has_weather)
         return FALSE;
 
     *display = sProfile->weather;
@@ -1353,10 +1353,10 @@ bool8 ModRuntimeProfile_GetWeather(struct ModWeatherDisplay *display)
 
 const char *ModRuntimeProfile_GetEngineRulesetId(void)
 {
-    if (!ModRuntimeProfile_IsActive() || sProfile->engineRulesetId[0] == '\0')
+    if (!ModRuntimeProfile_IsActive() || sProfile->engine_ruleset_id[0] == '\0')
         return NULL;
 
-    return sProfile->engineRulesetId;
+    return sProfile->engine_ruleset_id;
 }
 
 const struct ModNpcDefinition *ModRuntimeProfile_FindNpc(const char *key)
@@ -1367,16 +1367,16 @@ const struct ModNpcDefinition *ModRuntimeProfile_FindNpc(const char *key)
     if (!ModRuntimeProfile_IsActive() || key == NULL)
         return NULL;
 
-    for (npc_index = 0; npc_index < sProfile->npcCount; npc_index++)
+    for (npc_index = 0; npc_index < sProfile->npc_count; npc_index++)
     {
         if (strcmp(sProfile->npcs[npc_index].record.key, key) == 0)
         {
             memset(&definition, 0, sizeof(definition));
             definition.key = sProfile->npcs[npc_index].record.key;
             definition.npc_definition_id = npc_index;
-            definition.graphicsId = sProfile->npcs[npc_index].record.graphicsId;
-            definition.movementType = sProfile->npcs[npc_index].record.movementType;
-            definition.localId = sProfile->npcs[npc_index].record.localId;
+            definition.graphics_id = sProfile->npcs[npc_index].record.graphics_id;
+            definition.movement_type = sProfile->npcs[npc_index].record.movement_type;
+            definition.local_id = sProfile->npcs[npc_index].record.local_id;
             definition.elevation = sProfile->npcs[npc_index].record.elevation;
             return &definition;
         }
@@ -1392,12 +1392,12 @@ const struct ModSpriteAssetDefinition *ModRuntimeProfile_FindAsset(const char *k
     if (!ModRuntimeProfile_IsActive() || key == NULL)
         return NULL;
 
-    for (asset_index = 0; asset_index < sProfile->assetCount; asset_index++)
+    for (asset_index = 0; asset_index < sProfile->asset_count; asset_index++)
     {
         if (strcmp(sProfile->assets[asset_index].key, key) != 0)
             continue;
-        if (sProfile->assets[asset_index].sourceKey[0] != '\0')
-            return FindGeneratedAsset(sProfile->assets[asset_index].sourceKey);
+        if (sProfile->assets[asset_index].source_key[0] != '\0')
+            return FindGeneratedAsset(sProfile->assets[asset_index].source_key);
         return &sProfile->assets[asset_index].definition;
     }
 
@@ -1412,8 +1412,8 @@ const struct ModBadgeEffectDefinition *ModRuntimeProfile_GetBadgeEffects(u16 *co
         return NULL;
 
     if (count != NULL)
-        *count = sProfile->badgeEffectCount;
-    return sProfile->badgeEffects;
+        *count = sProfile->badge_effect_count;
+    return sProfile->badge_effects;
 }
 
 const struct FishingActionDefinition *ModRuntimeProfile_GetFishingActions(u16 *count)
@@ -1424,8 +1424,8 @@ const struct FishingActionDefinition *ModRuntimeProfile_GetFishingActions(u16 *c
         return NULL;
 
     if (count != NULL)
-        *count = sProfile->fishingActionCount;
-    return sProfile->fishingActions;
+        *count = sProfile->fishing_action_count;
+    return sProfile->fishing_actions;
 }
 
 const struct ModEncounterDefinition *ModRuntimeProfile_GetEncounters(u16 *count)
@@ -1436,7 +1436,7 @@ const struct ModEncounterDefinition *ModRuntimeProfile_GetEncounters(u16 *count)
         return NULL;
 
     if (count != NULL)
-        *count = sProfile->encounterCount;
+        *count = sProfile->encounter_count;
     return sProfile->encounters;
 }
 
@@ -1448,7 +1448,7 @@ const struct ModShopDefinition *ModRuntimeProfile_GetShops(u16 *count)
         return NULL;
 
     if (count != NULL)
-        *count = sProfile->shopCount;
+        *count = sProfile->shop_count;
     return sProfile->shops;
 }
 
@@ -1460,7 +1460,7 @@ const struct ModItemDefinition *ModRuntimeProfile_GetItems(u16 *count)
         return NULL;
 
     if (count != NULL)
-        *count = sProfile->itemCount;
+        *count = sProfile->item_count;
     return sProfile->items;
 }
 
@@ -1472,7 +1472,7 @@ const struct ModRewardDefinition *ModRuntimeProfile_GetRewards(u16 *count)
         return NULL;
 
     if (count != NULL)
-        *count = sProfile->rewardCount;
+        *count = sProfile->reward_count;
     return sProfile->rewards;
 }
 
@@ -1484,8 +1484,8 @@ const struct ModPokemonDataDefinition *ModRuntimeProfile_GetPokemonData(u16 *cou
         return NULL;
 
     if (count != NULL)
-        *count = sProfile->pokemonDataCount;
-    return sProfile->pokemonData;
+        *count = sProfile->pokemon_data_count;
+    return sProfile->pokemon_data;
 }
 
 const struct ModBattleMoveDefinition *ModRuntimeProfile_GetBattleMoves(u16 *count)
@@ -1496,8 +1496,8 @@ const struct ModBattleMoveDefinition *ModRuntimeProfile_GetBattleMoves(u16 *coun
         return NULL;
 
     if (count != NULL)
-        *count = sProfile->battleMoveCount;
-    return sProfile->battleMoves;
+        *count = sProfile->battle_move_count;
+    return sProfile->battle_moves;
 }
 
 const struct ModTrainerDefinition *ModRuntimeProfile_GetTrainers(u16 *count)
@@ -1508,30 +1508,30 @@ const struct ModTrainerDefinition *ModRuntimeProfile_GetTrainers(u16 *count)
         return NULL;
 
     if (count != NULL)
-        *count = sProfile->trainerCount;
+        *count = sProfile->trainer_count;
     return sProfile->trainers;
 }
 
 void ModRuntimeProfile_OnMapLoad(void)
 {
     u16 npc_index;
-    u8 localId;
+    u8 local_id;
     u8 objectEventId;
     const struct ModRuntimeProfileNpcRecord *record;
 
     if (!ModRuntimeProfile_IsActive() || gSaveBlock1Ptr == NULL)
         return;
 
-    for (npc_index = 0; npc_index < sProfile->npcCount; npc_index++)
+    for (npc_index = 0; npc_index < sProfile->npc_count; npc_index++)
     {
         record = &sProfile->npcs[npc_index].record;
-        if (record->mapGroup != gSaveBlock1Ptr->location.mapGroup || record->mapNum != gSaveBlock1Ptr->location.mapNum)
+        if (record->map_group != gSaveBlock1Ptr->location.mapGroup || record->map_num != gSaveBlock1Ptr->location.mapNum)
             continue;
-        localId = record->localId;
-        if (localId == 0)
-            localId = MOD_NPC_DYNAMIC_LOCAL_ID_BASE + (npc_index % (MOD_NPC_DYNAMIC_LOCAL_ID_END - MOD_NPC_DYNAMIC_LOCAL_ID_BASE + 1));
-        if (TryGetObjectEventIdByLocalIdAndMap(localId, record->mapNum, record->mapGroup, &objectEventId))
+        local_id = record->local_id;
+        if (local_id == 0)
+            local_id = MOD_NPC_DYNAMIC_LOCAL_ID_BASE + (npc_index % (MOD_NPC_DYNAMIC_LOCAL_ID_END - MOD_NPC_DYNAMIC_LOCAL_ID_BASE + 1));
+        if (TryGetObjectEventIdByLocalIdAndMap(local_id, record->map_num, record->map_group, &objectEventId))
             continue;
-        SpawnSpecialObjectEventParameterized(record->graphicsId, record->movementType, localId, record->x, record->y, record->elevation);
+        SpawnSpecialObjectEventParameterized(record->graphics_id, record->movement_type, local_id, record->x, record->y, record->elevation);
     }
 }

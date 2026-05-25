@@ -7,13 +7,13 @@
 static bool8 DefinitionIsEmptyDefault(const struct ModRewardDefinition *definition)
 {
     return definition->key == NULL
-        && definition->hookKey == NULL
+        && definition->hook_key == NULL
         && definition->source == 0
-        && definition->minLevel == 0
-        && definition->maxLevel == 0
+        && definition->min_level == 0
+        && definition->max_level == 0
         && definition->priority == 0
         && definition->flags == 0
-        && definition->itemId == ITEM_NONE
+        && definition->item_id == ITEM_NONE
         && definition->quantity == 0
         && definition->hook == NULL;
 }
@@ -40,7 +40,7 @@ static bool8 DefinitionMatches(const struct ModRewardDefinition *definition, u8 
         return FALSE;
     if (definition->source != source)
         return FALSE;
-    if (level < definition->minLevel || level > definition->maxLevel)
+    if (level < definition->min_level || level > definition->max_level)
         return FALSE;
     return TRUE;
 }
@@ -98,11 +98,11 @@ bool8 RewardApi_IsDefinitionValid(const struct ModRewardDefinition *definition, 
         return FALSE;
     if (definition->source == 0)
         return FALSE;
-    if (definition->minLevel == 0 || definition->maxLevel == 0 || definition->minLevel > 100 || definition->maxLevel > 100)
+    if (definition->min_level == 0 || definition->max_level == 0 || definition->min_level > 100 || definition->max_level > 100)
         return FALSE;
-    if (definition->minLevel > definition->maxLevel)
+    if (definition->min_level > definition->max_level)
         return FALSE;
-    if (definition->hook == NULL && (definition->itemId == ITEM_NONE || definition->itemId >= ITEMS_COUNT))
+    if (definition->hook == NULL && (definition->item_id == ITEM_NONE || definition->item_id >= ITEMS_COUNT))
         return FALSE;
     if (definition->quantity == 0)
         return FALSE;
@@ -125,13 +125,13 @@ bool8 RewardApi_AdjustItemReward(u8 source, u8 level, u16 vanilla_item_id, u16 *
     memset(&context, 0, sizeof(context));
     context.source = source;
     context.level = level;
-    context.vanillaItemId = vanilla_item_id;
-    context.itemId = definition->itemId;
+    context.vanilla_item_id = vanilla_item_id;
+    context.item_id = definition->item_id;
     context.quantity = (definition->flags & MOD_REWARD_FLAG_KEEP_VANILLA_QUANTITY) ? *quantity : definition->quantity;
     if (gSaveBlock1Ptr != NULL)
     {
-        context.mapGroup = gSaveBlock1Ptr->location.mapGroup;
-        context.mapNum = gSaveBlock1Ptr->location.mapNum;
+        context.map_group = gSaveBlock1Ptr->location.mapGroup;
+        context.map_num = gSaveBlock1Ptr->location.mapNum;
     }
 
     reward_hook_result = MOD_REWARD_OVERRIDE;
@@ -141,10 +141,10 @@ bool8 RewardApi_AdjustItemReward(u8 source, u8 level, u16 vanilla_item_id, u16 *
         return TRUE;
     if (reward_hook_result != MOD_REWARD_OVERRIDE)
         return FALSE;
-    if (context.itemId == ITEM_NONE || context.itemId >= ITEMS_COUNT || context.quantity == 0)
+    if (context.item_id == ITEM_NONE || context.item_id >= ITEMS_COUNT || context.quantity == 0)
         return TRUE;
 
-    *item_id = context.itemId;
+    *item_id = context.item_id;
     *quantity = context.quantity;
     return TRUE;
 }
@@ -158,10 +158,10 @@ ModRewardHook RewardApi_FindCompiledHook(const char *source_key, const char *hoo
 
     for (reward_index = 0; reward_index < gModRewardDefinitionCount; reward_index++)
     {
-        if (gModRewardDefinitions[reward_index].key == NULL || gModRewardDefinitions[reward_index].hookKey == NULL)
+        if (gModRewardDefinitions[reward_index].key == NULL || gModRewardDefinitions[reward_index].hook_key == NULL)
             continue;
         if (strcmp(gModRewardDefinitions[reward_index].key, source_key) == 0
-         && strcmp(gModRewardDefinitions[reward_index].hookKey, hook_key) == 0)
+         && strcmp(gModRewardDefinitions[reward_index].hook_key, hook_key) == 0)
             return gModRewardDefinitions[reward_index].hook;
     }
 

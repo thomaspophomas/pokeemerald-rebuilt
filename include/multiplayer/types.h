@@ -90,11 +90,11 @@ enum MultiplayerCommitResult
 
 struct MultiplayerTransactionKey
 {
-    u32 sessionEpoch;
-    u32 actionSequence;
-    u8 playerId;
-    u8 packetType;
-    u8 subsessionId;
+    u32 session_epoch;
+    u32 action_sequence;
+    u8 player_id;
+    u8 packet_type;
+    u8 subsession_id;
     u8 reserved;
 };
 
@@ -103,52 +103,52 @@ struct MultiplayerCommitLogEntry
     bool8 active;
     u8 state;
     u8 result_code;
-    u8 commitType;
+    u8 commit_type;
     struct MultiplayerTransactionKey key;
-    u32 serverRevision;
-    u16 payloadChecksum;
+    u32 server_revision;
+    u16 payload_checksum;
     u16 detail;
 };
 
 struct NetPlayerSnapshot
 {
     bool8 active;
-    u8 playerId;
-    u8 mapGroup;
-    u8 mapNum;
+    u8 player_id;
+    u8 map_group;
+    u8 map_num;
     s16 x;
     s16 y;
     u8 elevation;
-    u8 facingDirection;
-    u8 movementActionId;
-    u8 avatarGraphicsId;
-    u8 outfitId;
-    u8 interactionState;
-    u8 subsessionId;
-    u8 subsessionState;
-    u16 graphicsRevision;
+    u8 facing_direction;
+    u8 movement_action_id;
+    u8 avatar_graphics_id;
+    u8 outfit_id;
+    u8 interaction_state;
+    u8 subsession_id;
+    u8 subsession_state;
+    u16 graphics_revision;
     u16 flags;
     u32 tick;
-    u32 serverTickSeen;
+    u32 server_tick_seen;
     u32 sequence;
-    u32 sessionEpoch;
-    u16 staleFrames;
-    u8 anomalyScore;
+    u32 session_epoch;
+    u16 stale_frames;
+    u8 anomaly_score;
 };
 
 STATIC_ASSERT(sizeof(struct NetPlayerSnapshot) <= 40, NetPlayerSnapshotHotPathSize);
 
 struct NetPlayerBattleProfile
 {
-    u8 trainerGender;
-    u8 partyCount;
-    u8 partyLevels[NET_PLAYER_PARTY_SNAPSHOT_SIZE];
+    u8 trainer_gender;
+    u8 party_count;
+    u8 party_levels[NET_PLAYER_PARTY_SNAPSHOT_SIZE];
     u8 reserved;
-    u16 partySpecies[NET_PLAYER_PARTY_SNAPSHOT_SIZE];
-    u16 partyHeldItems[NET_PLAYER_PARTY_SNAPSHOT_SIZE];
-    u16 partyHp[NET_PLAYER_PARTY_SNAPSHOT_SIZE];
-    u16 partyMoves[NET_PLAYER_PARTY_SNAPSHOT_SIZE][MAX_MON_MOVES];
-    u8 playerName[PLAYER_NAME_LENGTH + 1];
+    u16 party_species[NET_PLAYER_PARTY_SNAPSHOT_SIZE];
+    u16 party_held_items[NET_PLAYER_PARTY_SNAPSHOT_SIZE];
+    u16 party_hp[NET_PLAYER_PARTY_SNAPSHOT_SIZE];
+    u16 party_moves[NET_PLAYER_PARTY_SNAPSHOT_SIZE][MAX_MON_MOVES];
+    u8 player_name[PLAYER_NAME_LENGTH + 1];
 };
 
 struct MultiplayerSubsession
@@ -157,51 +157,51 @@ struct MultiplayerSubsession
     u8 subsession_id;
     u8 type;
     u8 state;
-    u8 hostPlayerId;
-    u8 playerCount;
+    u8 host_player_id;
+    u8 player_count;
     u8 players[MAX_NET_BATTLE_PLAYERS];
-    u16 timeoutFrames;
+    u16 timeout_frames;
 };
 
 struct MultiplayerInteractionBarrier
 {
     bool8 active;
     u8 type;
-    u8 ownerPlayerId;
-    u8 playerCount;
+    u8 owner_player_id;
+    u8 player_count;
     u8 players[MAX_NET_BATTLE_PLAYERS];
-    u8 mapGroup;
-    u8 mapNum;
-    u16 timeoutFrames;
+    u8 map_group;
+    u8 map_num;
+    u16 timeout_frames;
 };
 
 struct MultiplayerSession
 {
     u8 state;
-    u8 localPlayerId;
-    u8 hostPlayerId;
-    u8 playerCount;
-    u16 lastError;
-    u32 sessionId;
-    u32 sessionEpoch;
-    u32 playerToken;
-    u32 joinNonce;
+    u8 local_player_id;
+    u8 host_player_id;
+    u8 player_count;
+    u16 last_error;
+    u32 session_id;
+    u32 session_epoch;
+    u32 player_token;
+    u32 join_nonce;
     u32 tick;
-    u32 bridgeTick;
-    u32 serverClockSeconds;
-    u32 localClientFrame;
-    u32 localSnapshotSequence;
-    u32 localSnapshotHotHash;
-    u32 localActionSequence;
-    u16 localProfilePublishTimer;
-    u8 transportMode;
-    u8 anomalyScore;
-    u8 healthState;
+    u32 bridge_tick;
+    u32 server_clock_seconds;
+    u32 local_client_frame;
+    u32 local_snapshot_sequence;
+    u32 local_snapshot_hot_hash;
+    u32 local_action_sequence;
+    u16 local_profile_publish_timer;
+    u8 transport_mode;
+    u8 anomaly_score;
+    u8 health_state;
     u8 reserved;
     struct NetPlayerSnapshot players[MAX_NET_PLAYERS];
-    struct NetPlayerBattleProfile playerProfiles[MAX_NET_PLAYERS];
+    struct NetPlayerBattleProfile player_profiles[MAX_NET_PLAYERS];
     struct MultiplayerSubsession subsessions[MAX_NET_SUBSESSIONS];
-    struct MultiplayerInteractionBarrier interactionBarrier;
+    struct MultiplayerInteractionBarrier interaction_barrier;
 };
 
 #endif // GUARD_MULTIPLAYER_TYPES_H

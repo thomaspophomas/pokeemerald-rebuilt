@@ -94,31 +94,31 @@ struct ModRuntimeProfileTextRecord
 {
     char language[8];
     char key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    u16 textSize;
+    u16 text_size;
 } __attribute__((packed));
 
 struct ModRuntimeProfileWeatherRecord
 {
-    u8 vanillaWeather;
+    u8 vanilla_weather;
     u8 priority;
     u16 layers;
-    u16 battleWeatherMask;
+    u16 battle_weather_mask;
 } __attribute__((packed));
 
 struct ModRuntimeProfileEngineRecord
 {
-    char rulesetId[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char ruleset_id[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
 } __attribute__((packed));
 
 struct ModRuntimeProfileNpcRecord
 {
     char key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    u8 graphicsId;
-    u8 movementType;
-    u8 localId;
+    u8 graphics_id;
+    u8 movement_type;
+    u8 local_id;
     u8 elevation;
-    u8 mapGroup;
-    u8 mapNum;
+    u8 map_group;
+    u8 map_num;
     s16 x;
     s16 y;
 } __attribute__((packed));
@@ -126,62 +126,62 @@ struct ModRuntimeProfileNpcRecord
 struct ModRuntimeProfileAssetRefRecord
 {
     char key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char sourceKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char source_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
 } __attribute__((packed));
 
 struct ModRuntimeProfileInlineSheetRecord
 {
     char key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    u16 tileTag;
+    u16 tile_tag;
     u16 size;
 } __attribute__((packed));
 
 struct ModRuntimeProfileInlinePaletteRecord
 {
     char key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    u16 paletteTag;
-    u16 colorCount;
+    u16 palette_tag;
+    u16 color_count;
 } __attribute__((packed));
 
 struct ModRuntimeProfileBadgeEffectRecord
 {
     char key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    u8 badgeId;
-    u8 effectKind;
+    u8 badge_id;
+    u8 effect_kind;
     u8 target;
-    s8 percentPerLevel;
-    u8 maxLevel;
+    s8 percent_per_level;
+    u8 max_level;
     u16 flags;
 } __attribute__((packed));
 
 struct ModRuntimeProfileFishingActionRecord
 {
     char key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char sourceKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char hookKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char promptKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    u8 rodMask;
-    u16 phaseMask;
+    char source_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char hook_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char prompt_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    u8 rod_mask;
+    u16 phase_mask;
     s16 priority;
     u16 flags;
-    u16 buttonMask;
-    u16 timeoutFrames;
-    u8 successOutcome;
-    u8 failureOutcome;
+    u16 button_mask;
+    u16 timeout_frames;
+    u8 success_outcome;
+    u8 failure_outcome;
     s16 params[FISHING_ACTION_PARAM_COUNT];
 } __attribute__((packed));
 
 struct ModRuntimeProfileEncounterRecord
 {
     char key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char sourceKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char hookKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    u8 mapGroup;
-    u8 mapNum;
+    char source_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char hook_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    u8 map_group;
+    u8 map_num;
     u8 area;
-    u8 rodMask;
-    u8 encounterRate;
-    u8 slotCount;
+    u8 rod_mask;
+    u8 encounter_rate;
+    u8 slot_count;
     s16 priority;
     u16 flags;
     struct ModEncounterSlot slots[MOD_ENCOUNTER_MAX_SLOTS];
@@ -190,10 +190,10 @@ struct ModRuntimeProfileEncounterRecord
 struct ModRuntimeProfileShopRecord
 {
     char key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    u8 mapGroup;
-    u8 mapNum;
-    u8 martType;
-    u8 itemCount;
+    u8 map_group;
+    u8 map_num;
+    u8 mart_type;
+    u8 item_count;
     s16 priority;
     u16 flags;
     u16 items[MOD_SHOP_MAX_ITEMS];
@@ -202,36 +202,36 @@ struct ModRuntimeProfileShopRecord
 struct ModRuntimeProfileItemRecord
 {
     char key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char nameKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char descriptionKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char fieldUseSourceKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char fieldUseHookKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char battleUseSourceKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char battleUseHookKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    u16 itemId;
+    char name_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char description_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char field_use_source_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char field_use_hook_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char battle_use_source_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char battle_use_hook_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    u16 item_id;
     u16 price;
     u16 flags;
-    u8 holdEffect;
-    u8 holdEffectParam;
+    u8 hold_effect;
+    u8 hold_effect_param;
     u8 importance;
     u8 pocket;
     u8 type;
-    u8 battleUsage;
-    u8 secondaryId;
+    u8 battle_usage;
+    u8 secondary_id;
     s16 priority;
 } __attribute__((packed));
 
 struct ModRuntimeProfileRewardRecord
 {
     char key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char sourceKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    char hookKey[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char source_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
+    char hook_key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
     u8 source;
-    u8 minLevel;
-    u8 maxLevel;
+    u8 min_level;
+    u8 max_level;
     s16 priority;
     u16 flags;
-    u16 itemId;
+    u16 item_id;
     u16 quantity;
 } __attribute__((packed));
 
@@ -242,9 +242,9 @@ struct ModRuntimeProfilePokemonDataRecord
     s16 priority;
     u16 flags;
     struct ModSpeciesInfoOverride info;
-    u8 levelUpMoveCount;
-    struct ModLevelUpMoveDefinition levelUpMoves[MOD_POKEMON_MAX_LEVEL_UP_MOVES];
-    u8 evolutionCount;
+    u8 level_up_move_count;
+    struct ModLevelUpMoveDefinition level_up_moves[MOD_POKEMON_MAX_LEVEL_UP_MOVES];
+    u8 evolution_count;
     struct Evolution evolutions[MOD_POKEMON_MAX_EVOLUTIONS];
 } __attribute__((packed));
 
@@ -253,23 +253,23 @@ struct ModRuntimeProfileBattleMoveRecord
     char key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
     u16 move;
     s16 priority;
-    u16 overrideFlags;
+    u16 override_flags;
     struct BattleMove data;
 } __attribute__((packed));
 
 struct ModRuntimeProfileTrainerRecord
 {
     char key[MOD_RUNTIME_PROFILE_MAX_KEY_LENGTH + 1];
-    u16 trainerId;
+    u16 trainer_id;
     s16 priority;
     u16 flags;
-    u8 trainerClass;
-    u8 encounterMusicGender;
-    u8 trainerPic;
+    u8 trainer_class;
+    u8 encounter_music_gender;
+    u8 trainer_pic;
     u16 items[MAX_TRAINER_ITEMS];
-    bool8 doubleBattle;
-    u32 aiFlags;
-    u8 partySize;
+    bool8 double_battle;
+    u32 ai_flags;
+    u8 party_size;
     struct ModTrainerMon party[MOD_TRAINER_MAX_PARTY_SIZE];
 } __attribute__((packed));
 

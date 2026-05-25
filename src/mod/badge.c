@@ -35,10 +35,10 @@ static u8 ClampBadgeLevel(u8 level)
 static bool8 BadgeEffectDefinitionIsEmptyNone(const struct ModBadgeEffectDefinition *definition)
 {
     return definition->key == NULL
-        && definition->badgeId == 0
+        && definition->badge_id == 0
         && definition->target == 0
-        && definition->percentPerLevel == 0
-        && definition->maxLevel == 0
+        && definition->percent_per_level == 0
+        && definition->max_level == 0
         && definition->flags == 0;
 }
 
@@ -61,20 +61,20 @@ bool8 BadgeApi_IsEffectDefinitionValid(const struct ModBadgeEffectDefinition *de
     if (definition == NULL)
         return FALSE;
 
-    if (definition->effectKind == MOD_BADGE_EFFECT_TYPE_NONE)
+    if (definition->effect_kind == MOD_BADGE_EFFECT_TYPE_NONE)
         return allow_empty_none && BadgeEffectDefinitionIsEmptyNone(definition);
 
     if (definition->key == NULL || definition->key[0] == '\0')
         return FALSE;
-    if (definition->badgeId >= MOD_BADGE_COUNT)
+    if (definition->badge_id >= MOD_BADGE_COUNT)
         return FALSE;
-    if (definition->effectKind > MOD_BADGE_EFFECT_TYPE_STAT_PERCENT)
+    if (definition->effect_kind > MOD_BADGE_EFFECT_TYPE_STAT_PERCENT)
         return FALSE;
-    if (!BadgeEffectTargetIsValid(definition->effectKind, definition->target))
+    if (!BadgeEffectTargetIsValid(definition->effect_kind, definition->target))
         return FALSE;
-    if (definition->percentPerLevel < -100 || definition->percentPerLevel > 100)
+    if (definition->percent_per_level < -100 || definition->percent_per_level > 100)
         return FALSE;
-    if (definition->maxLevel == 0 || definition->maxLevel > MOD_BADGE_LEVEL_MAX)
+    if (definition->max_level == 0 || definition->max_level > MOD_BADGE_LEVEL_MAX)
         return FALSE;
 
     return TRUE;
@@ -88,7 +88,7 @@ static u8 GetStoredBadgeLevel(u8 badge_id)
         return 0;
 
     state = ModState_Get();
-    return ClampBadgeLevel(state->badgeLevels[badge_id]);
+    return ClampBadgeLevel(state->badge_levels[badge_id]);
 }
 
 static bool8 EffectKeyInRuntimeProfile(const char *key, const struct ModBadgeEffectDefinition *effects, u16 count)
@@ -129,16 +129,16 @@ static s32 SumBadgeEffects(const struct ModBadgeEffectDefinition *effects, u16 c
     {
         if (!BadgeApi_IsEffectDefinitionValid(&effects[badge_effect_index], FALSE))
             continue;
-        if (effects[badge_effect_index].effectKind != effect_kind || effects[badge_effect_index].target != target)
+        if (effects[badge_effect_index].effect_kind != effect_kind || effects[badge_effect_index].target != target)
             continue;
 
-        level = BadgeApi_GetLevel(effects[badge_effect_index].badgeId);
+        level = BadgeApi_GetLevel(effects[badge_effect_index].badge_id);
         if (level == 0)
             continue;
-        if (level > effects[badge_effect_index].maxLevel)
-            level = effects[badge_effect_index].maxLevel;
+        if (level > effects[badge_effect_index].max_level)
+            level = effects[badge_effect_index].max_level;
 
-        total += effects[badge_effect_index].percentPerLevel * level;
+        total += effects[badge_effect_index].percent_per_level * level;
     }
 
     return total;
@@ -160,16 +160,16 @@ static s32 SumGeneratedBadgeEffectsExceptRuntimeKeys(
             continue;
         if (EffectKeyInRuntimeProfile(gModBadgeEffects[badge_effect_index].key, runtimeEffects, runtimeCount))
             continue;
-        if (gModBadgeEffects[badge_effect_index].effectKind != effect_kind || gModBadgeEffects[badge_effect_index].target != target)
+        if (gModBadgeEffects[badge_effect_index].effect_kind != effect_kind || gModBadgeEffects[badge_effect_index].target != target)
             continue;
 
-        level = BadgeApi_GetLevel(gModBadgeEffects[badge_effect_index].badgeId);
+        level = BadgeApi_GetLevel(gModBadgeEffects[badge_effect_index].badge_id);
         if (level == 0)
             continue;
-        if (level > gModBadgeEffects[badge_effect_index].maxLevel)
-            level = gModBadgeEffects[badge_effect_index].maxLevel;
+        if (level > gModBadgeEffects[badge_effect_index].max_level)
+            level = gModBadgeEffects[badge_effect_index].max_level;
 
-        total += gModBadgeEffects[badge_effect_index].percentPerLevel * level;
+        total += gModBadgeEffects[badge_effect_index].percent_per_level * level;
     }
 
     return total;
@@ -183,9 +183,9 @@ void BadgeApi_Init(void)
 
     for (badge_level_index = 0; badge_level_index < MOD_SAVE_BADGE_LEVEL_COUNT; badge_level_index++)
     {
-        if (state->badgeLevels[badge_level_index] > MOD_BADGE_LEVEL_MAX)
+        if (state->badge_levels[badge_level_index] > MOD_BADGE_LEVEL_MAX)
         {
-            state->badgeLevels[badge_level_index] = MOD_BADGE_LEVEL_MAX;
+            state->badge_levels[badge_level_index] = MOD_BADGE_LEVEL_MAX;
             changed = TRUE;
         }
     }
@@ -218,10 +218,10 @@ bool8 BadgeApi_SetLevel(u8 badge_id, u8 level)
 
     level = ClampBadgeLevel(level);
     state = ModState_Get();
-    if (state->badgeLevels[badge_id] == level)
+    if (state->badge_levels[badge_id] == level)
         return TRUE;
 
-    state->badgeLevels[badge_id] = level;
+    state->badge_levels[badge_id] = level;
     if (level != 0)
         FlagSet(sBadgeFlags[badge_id]);
     ModState_BumpRevision();

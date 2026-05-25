@@ -12,10 +12,10 @@
 struct ModShopDefinition
 {
     const char *key;
-    u8 mapGroup;
-    u8 mapNum;
-    u8 martType;
-    u8 itemCount;
+    u8 map_group;
+    u8 map_num;
+    u8 mart_type;
+    u8 item_count;
     s16 priority;
     u16 flags;
     u16 items[MOD_SHOP_MAX_ITEMS];

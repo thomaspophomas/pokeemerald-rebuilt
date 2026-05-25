@@ -7,11 +7,11 @@
 struct MultiplayerBattleRequest
 {
     u8 type;
-    u8 playerCount;
+    u8 player_count;
     u8 players[MAX_NET_BATTLE_PLAYERS];
-    u32 battleTypeFlags;
-    u16 trainerA;
-    u16 trainerB;
+    u32 battle_type_flags;
+    u16 trainer_a;
+    u16 trainer_b;
 };
 
 bool8 MultiplayerBattle_CanStart(const struct MultiplayerBattleRequest *request);

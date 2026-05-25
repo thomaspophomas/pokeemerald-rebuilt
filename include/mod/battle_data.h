@@ -19,7 +19,7 @@ struct ModBattleMoveDefinition
     const char *key;
     u16 move;
     s16 priority;
-    u16 overrideFlags;
+    u16 override_flags;
     struct BattleMove data;
 };
 

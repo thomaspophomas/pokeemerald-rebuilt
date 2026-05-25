@@ -27,15 +27,15 @@ static bool8 BridgeHeaderIsValid(void)
         return FALSE;
     if (sBridge->version != NET_EMULATOR_BRIDGE_VERSION)
         return FALSE;
-    if (sBridge->localPlayerId >= MAX_NET_PLAYERS)
+    if (sBridge->local_player_id >= MAX_NET_PLAYERS)
         return FALSE;
-    if (sBridge->hostPlayerId >= MAX_NET_PLAYERS)
+    if (sBridge->host_player_id >= MAX_NET_PLAYERS)
         return FALSE;
-    if (sBridge->playerCount > MAX_NET_PLAYERS)
+    if (sBridge->player_count > MAX_NET_PLAYERS)
         return FALSE;
-    if (sBridge->transportMode != NET_TRANSPORT_MODE_SERVER_BRIDGE)
+    if (sBridge->transport_mode != NET_TRANSPORT_MODE_SERVER_BRIDGE)
         return FALSE;
-    if (sBridge->sessionEpoch == 0 || sBridge->playerToken == 0 || sBridge->joinNonce == 0)
+    if (sBridge->session_epoch == 0 || sBridge->player_token == 0 || sBridge->join_nonce == 0)
         return FALSE;
 
     return TRUE;
@@ -47,33 +47,33 @@ static bool8 PacketEnvelopeIsValid(const struct NetPacketEnvelope *envelope, u16
         return FALSE;
     if (envelope->magic != NET_PROTOCOL_MAGIC)
         return FALSE;
-    if (envelope->protocolVersion != NET_PROTOCOL_VERSION)
+    if (envelope->protocol_version != NET_PROTOCOL_VERSION)
         return FALSE;
-    if (envelope->headerSize != sizeof(*envelope))
+    if (envelope->header_size != sizeof(*envelope))
         return FALSE;
-    if (envelope->sessionId != sBridge->sessionId)
+    if (envelope->session_id != sBridge->session_id)
         return FALSE;
-    if (envelope->sessionEpoch != sBridge->sessionEpoch)
+    if (envelope->session_epoch != sBridge->session_epoch)
         return FALSE;
-    if (envelope->packetType == NET_PACKET_NONE || envelope->packetType >= NET_PACKET_COUNT)
+    if (envelope->packet_type == NET_PACKET_NONE || envelope->packet_type >= NET_PACKET_COUNT)
         return FALSE;
-    if (envelope->playerId >= MAX_NET_PLAYERS)
+    if (envelope->player_id >= MAX_NET_PLAYERS)
         return FALSE;
     if (envelope->sequence == 0)
         return FALSE;
-    if (envelope->payloadSize > payload_capacity || envelope->payloadSize > NET_TRANSPORT_PACKET_PAYLOAD_SIZE)
+    if (envelope->payload_size > payload_capacity || envelope->payload_size > NET_TRANSPORT_PACKET_PAYLOAD_SIZE)
         return FALSE;
 
     return TRUE;
 }
 
-static void SyncTransportSessionIdentity(u32 sessionId, u32 sessionEpoch)
+static void SyncTransportSessionIdentity(u32 session_id, u32 session_epoch)
 {
-    if (sCurrentSessionId == sessionId && sCurrentSessionEpoch == sessionEpoch)
+    if (sCurrentSessionId == session_id && sCurrentSessionEpoch == session_epoch)
         return;
 
-    sCurrentSessionId = sessionId;
-    sCurrentSessionEpoch = sessionEpoch;
+    sCurrentSessionId = session_id;
+    sCurrentSessionEpoch = session_epoch;
     sOutboundSequence = 0;
     sLastInboundSequence = 0;
 }
@@ -103,37 +103,37 @@ static u32 NextOutboundSequence(void)
 
 static void InitOutboundEnvelope(struct NetPacketEnvelope *envelope, u8 packet_type, u16 packet_payload_size)
 {
-    NetProtocol_InitEnvelopeWithEpoch(envelope, packet_type, sBridge->localPlayerId, sBridge->sessionId, sBridge->sessionEpoch, sBridge->bridgeTick, packet_payload_size);
+    NetProtocol_InitEnvelopeWithEpoch(envelope, packet_type, sBridge->local_player_id, sBridge->session_id, sBridge->session_epoch, sBridge->bridge_tick, packet_payload_size);
     envelope->sequence = NextOutboundSequence();
 }
 
 static void FinishOutboundEnvelope(struct NetPacketEnvelope *envelope, const void *packet_payload)
 {
-    envelope->checksum = NetProtocol_CalcChecksum(packet_payload, envelope->payloadSize);
+    envelope->checksum = NetProtocol_CalcChecksum(packet_payload, envelope->payload_size);
 }
 
 static bool8 QueueReliableOutboundPacket(const struct NetPacketEnvelope *envelope, const void *packet_payload)
 {
-    u32 head = sBridge->reliableOutboundHead % NET_RELIABLE_QUEUE_SIZE;
+    u32 head = sBridge->reliable_outbound_head % NET_RELIABLE_QUEUE_SIZE;
     u32 nextHead = NextQueueIndex(head);
-    u32 tail = sBridge->reliableOutboundTail % NET_RELIABLE_QUEUE_SIZE;
+    u32 tail = sBridge->reliable_outbound_tail % NET_RELIABLE_QUEUE_SIZE;
 
     if (nextHead == tail)
         return FALSE;
 
-    if (envelope->payloadSize != 0)
-        memcpy((void *)sBridge->reliableOutbound[head].payload, packet_payload, envelope->payloadSize);
-    NetTransport_CopyEnvelopeToPacketHeader(&sBridge->reliableOutbound[head].header, envelope);
-    sBridge->reliableOutboundHead = nextHead;
+    if (envelope->payload_size != 0)
+        memcpy((void *)sBridge->reliable_outbound[head].payload, packet_payload, envelope->payload_size);
+    NetTransport_CopyEnvelopeToPacketHeader(&sBridge->reliable_outbound[head].header, envelope);
+    sBridge->reliable_outbound_head = nextHead;
     return TRUE;
 }
 
 static void WriteLatestUnreliablePacket(const struct NetPacketEnvelope *envelope, const void *packet_payload)
 {
-    if (envelope->payloadSize != 0)
-        memcpy((void *)sBridge->latestUnreliable.payload, packet_payload, envelope->payloadSize);
-    NetTransport_CopyEnvelopeToPacketHeader(&sBridge->latestUnreliable.header, envelope);
-    sBridge->latestUnreliableSequence = envelope->sequence;
+    if (envelope->payload_size != 0)
+        memcpy((void *)sBridge->latest_unreliable.payload, packet_payload, envelope->payload_size);
+    NetTransport_CopyEnvelopeToPacketHeader(&sBridge->latest_unreliable.header, envelope);
+    sBridge->latest_unreliable_sequence = envelope->sequence;
 }
 
 #endif
@@ -173,28 +173,28 @@ bool8 NetTransport_ReadSessionView(struct NetTransportSessionView *view)
 
     for (attempt = 0; attempt < NET_TRANSPORT_STABLE_READ_TRIES; attempt++)
     {
-        u32 startSequence = sBridge->viewSequence;
+        u32 startSequence = sBridge->view_sequence;
 
         if (startSequence & 1)
             continue;
 
         view->connected = sBridge->connected;
-        view->localPlayerId = sBridge->localPlayerId;
-        view->hostPlayerId = sBridge->hostPlayerId;
-        view->playerCount = sBridge->playerCount;
-        view->transportMode = sBridge->transportMode;
-        view->sessionId = sBridge->sessionId;
-        view->sessionEpoch = sBridge->sessionEpoch;
-        view->playerToken = sBridge->playerToken;
-        view->joinNonce = sBridge->joinNonce;
-        view->bridgeTick = sBridge->bridgeTick;
-        view->serverClockSeconds = sBridge->serverClockSeconds;
-        memcpy(view->players, (const void *)sBridge->serverPlayers, sizeof(view->players));
-        memcpy(view->subsessions, (const void *)sBridge->serverSubsessions, sizeof(view->subsessions));
+        view->local_player_id = sBridge->local_player_id;
+        view->host_player_id = sBridge->host_player_id;
+        view->player_count = sBridge->player_count;
+        view->transport_mode = sBridge->transport_mode;
+        view->session_id = sBridge->session_id;
+        view->session_epoch = sBridge->session_epoch;
+        view->player_token = sBridge->player_token;
+        view->join_nonce = sBridge->join_nonce;
+        view->bridge_tick = sBridge->bridge_tick;
+        view->server_clock_seconds = sBridge->server_clock_seconds;
+        memcpy(view->players, (const void *)sBridge->server_players, sizeof(view->players));
+        memcpy(view->subsessions, (const void *)sBridge->server_subsessions, sizeof(view->subsessions));
 
-        if (startSequence == sBridge->viewSequence && !(startSequence & 1))
+        if (startSequence == sBridge->view_sequence && !(startSequence & 1))
         {
-            SyncTransportSessionIdentity(view->sessionId, view->sessionEpoch);
+            SyncTransportSessionIdentity(view->session_id, view->session_epoch);
             return TRUE;
         }
     }
@@ -214,16 +214,16 @@ bool8 NetTransport_WriteLocalSnapshot(const struct NetPlayerSnapshot *snapshot)
         return FALSE;
     if (!NetTransport_IsConnected())
         return FALSE;
-    if (snapshot->playerId >= MAX_NET_PLAYERS)
+    if (snapshot->player_id >= MAX_NET_PLAYERS)
         return FALSE;
-    if (snapshot->playerId != sBridge->localPlayerId)
+    if (snapshot->player_id != sBridge->local_player_id)
         return FALSE;
-    if (snapshot->sessionEpoch != sBridge->sessionEpoch)
+    if (snapshot->session_epoch != sBridge->session_epoch)
         return FALSE;
 
-    sBridge->localSnapshotSequence++;
-    memcpy((void *)&sBridge->localSnapshot, snapshot, sizeof(*snapshot));
-    sBridge->localSnapshotSequence++;
+    sBridge->local_snapshot_sequence++;
+    memcpy((void *)&sBridge->local_snapshot, snapshot, sizeof(*snapshot));
+    sBridge->local_snapshot_sequence++;
     return TRUE;
 #else
     return FALSE;
@@ -238,7 +238,7 @@ bool8 NetTransport_SendPacket(u8 packet_type, const void *packet_payload, u16 pa
     if (!OutboundPacketCanBeSent(packet_type, packet_payload, packet_payload_size))
         return FALSE;
 
-    SyncTransportSessionIdentity(sBridge->sessionId, sBridge->sessionEpoch);
+    SyncTransportSessionIdentity(sBridge->session_id, sBridge->session_epoch);
     InitOutboundEnvelope(&envelope, packet_type, packet_payload_size);
     FinishOutboundEnvelope(&envelope, packet_payload);
     return QueueReliableOutboundPacket(&envelope, packet_payload);
@@ -255,7 +255,7 @@ bool8 NetTransport_SendUnreliablePacket(u8 packet_type, const void *packet_paylo
     if (!OutboundPacketCanBeSent(packet_type, packet_payload, packet_payload_size))
         return FALSE;
 
-    SyncTransportSessionIdentity(sBridge->sessionId, sBridge->sessionEpoch);
+    SyncTransportSessionIdentity(sBridge->session_id, sBridge->session_epoch);
     InitOutboundEnvelope(&envelope, packet_type, packet_payload_size);
     FinishOutboundEnvelope(&envelope, packet_payload);
     WriteLatestUnreliablePacket(&envelope, packet_payload);
@@ -276,40 +276,40 @@ bool8 NetTransport_ReceivePacket(struct NetPacketEnvelope *envelope, void *packe
         return FALSE;
     if (!NetTransport_IsConnected())
         return FALSE;
-    SyncTransportSessionIdentity(sBridge->sessionId, sBridge->sessionEpoch);
-    head = sBridge->reliableInboundHead % NET_RELIABLE_QUEUE_SIZE;
-    tail = sBridge->reliableInboundTail % NET_RELIABLE_QUEUE_SIZE;
+    SyncTransportSessionIdentity(sBridge->session_id, sBridge->session_epoch);
+    head = sBridge->reliable_inbound_head % NET_RELIABLE_QUEUE_SIZE;
+    tail = sBridge->reliable_inbound_tail % NET_RELIABLE_QUEUE_SIZE;
     if (tail == head)
         return FALSE;
 
-    NetTransport_CopyPacketHeaderToEnvelope(envelope, &sBridge->reliableInbound[tail].header);
+    NetTransport_CopyPacketHeaderToEnvelope(envelope, &sBridge->reliable_inbound[tail].header);
     if (!PacketEnvelopeIsValid(envelope, payload_capacity))
     {
-        sBridge->reliableInboundTail = NextQueueIndex(tail);
+        sBridge->reliable_inbound_tail = NextQueueIndex(tail);
         return FALSE;
     }
-    if (envelope->payloadSize != 0 && packet_payload == NULL)
+    if (envelope->payload_size != 0 && packet_payload == NULL)
     {
-        sBridge->reliableInboundTail = NextQueueIndex(tail);
+        sBridge->reliable_inbound_tail = NextQueueIndex(tail);
         return FALSE;
     }
     if (envelope->sequence <= sLastInboundSequence)
     {
-        sBridge->reliableInboundTail = NextQueueIndex(tail);
+        sBridge->reliable_inbound_tail = NextQueueIndex(tail);
         return FALSE;
     }
 
-    if (envelope->payloadSize != 0)
-        memcpy(packet_payload, (const void *)sBridge->reliableInbound[tail].payload, envelope->payloadSize);
-    if (envelope->checksum != NetProtocol_CalcChecksum(packet_payload, envelope->payloadSize))
+    if (envelope->payload_size != 0)
+        memcpy(packet_payload, (const void *)sBridge->reliable_inbound[tail].payload, envelope->payload_size);
+    if (envelope->checksum != NetProtocol_CalcChecksum(packet_payload, envelope->payload_size))
     {
-        sBridge->reliableInboundTail = NextQueueIndex(tail);
+        sBridge->reliable_inbound_tail = NextQueueIndex(tail);
         return FALSE;
     }
 
     sLastInboundSequence = envelope->sequence;
-    *received_payload_size = envelope->payloadSize;
-    sBridge->reliableInboundTail = NextQueueIndex(tail);
+    *received_payload_size = envelope->payload_size;
+    sBridge->reliable_inbound_tail = NextQueueIndex(tail);
 
     return TRUE;
 #else

@@ -31,7 +31,7 @@ static bool8 SubsessionIncludesPlayer(const struct MultiplayerSubsession *subses
     if (subsession == NULL || !subsession->active || player_id >= MAX_NET_PLAYERS)
         return FALSE;
 
-    for (player_index_in_subsession = 0; player_index_in_subsession < subsession->playerCount; player_index_in_subsession++)
+    for (player_index_in_subsession = 0; player_index_in_subsession < subsession->player_count; player_index_in_subsession++)
     {
         if (subsession->players[player_index_in_subsession] == player_id)
             return TRUE;
@@ -63,14 +63,14 @@ static const struct MultiplayerSubsession *FindPendingTradeSubsession(const stru
 {
     u8 subsession_index;
 
-    if (session == NULL || session->localPlayerId >= MAX_NET_PLAYERS)
+    if (session == NULL || session->local_player_id >= MAX_NET_PLAYERS)
         return NULL;
 
     for (subsession_index = 0; subsession_index < MAX_NET_SUBSESSIONS; subsession_index++)
     {
         const struct MultiplayerSubsession *subsession = &session->subsessions[subsession_index];
 
-        if (SubsessionMatchesPendingTrade(subsession, session->localPlayerId))
+        if (SubsessionMatchesPendingTrade(subsession, session->local_player_id))
             return subsession;
     }
 
@@ -87,15 +87,15 @@ bool8 MultiplayerTrade_CanStart(const struct MultiplayerTradeRequest *request)
         return FALSE;
     if (!MultiplayerSession_IsOnline())
         return FALSE;
-    if (request->playerA >= MAX_NET_PLAYERS || request->playerB >= MAX_NET_PLAYERS)
+    if (request->player_a >= MAX_NET_PLAYERS || request->player_b >= MAX_NET_PLAYERS)
         return FALSE;
-    if (request->playerA == request->playerB)
+    if (request->player_a == request->player_b)
         return FALSE;
-    if (MultiplayerSession_IsPlayerBusy(request->playerA) || MultiplayerSession_IsPlayerBusy(request->playerB))
+    if (MultiplayerSession_IsPlayerBusy(request->player_a) || MultiplayerSession_IsPlayerBusy(request->player_b))
         return FALSE;
 
-    players[0] = request->playerA;
-    players[1] = request->playerB;
+    players[0] = request->player_a;
+    players[1] = request->player_b;
     if (!MultiplayerSession_ArePlayersWithinRange(MAX_NET_TRADE_PLAYERS, players, NET_PLAYER_INTERACTION_RANGE_TILES))
         return FALSE;
 
@@ -114,8 +114,8 @@ bool8 MultiplayerTrade_Start(const struct MultiplayerTradeRequest *request)
     if (!MultiplayerTrade_CanStart(request))
         return FALSE;
 
-    players[0] = request->playerA;
-    players[1] = request->playerB;
+    players[0] = request->player_a;
+    players[1] = request->player_b;
     return MultiplayerSession_StartSubsession(MULTIPLAYER_SUBSESSION_TRADE, MAX_NET_TRADE_PLAYERS, players);
 #else
     return FALSE;
@@ -143,14 +143,14 @@ bool8 MultiplayerTrade_StartItemTrade(u8 other_player_id, u32 money_amount)
     if (money_amount > GetMoney(&gSaveBlock1Ptr->money))
         return FALSE;
 
-    request.playerA = local_player_id;
-    request.playerB = other_player_id;
+    request.player_a = local_player_id;
+    request.player_b = other_player_id;
     if (!MultiplayerTrade_Start(&request))
         return FALSE;
 
     sPendingItemTrade = TRUE;
-    sPendingTradePlayerA = request.playerA;
-    sPendingTradePlayerB = request.playerB;
+    sPendingTradePlayerA = request.player_a;
+    sPendingTradePlayerB = request.player_b;
     sPendingTradeSubsessionId = NET_SUBSESSION_NONE;
     sPendingTradeMoneyAmount = money_amount;
     sPendingTradeTransactionId = 0;
@@ -183,19 +183,19 @@ bool8 MultiplayerTrade_SendAction(u8 subsession_id, u8 action, u16 party_slot, u
     action_sequence = MultiplayerSession_NextActionSequence();
     if (!MultiplayerSession_BuildTransactionKey(&transaction_key, NET_PACKET_TRADE_ACTION, subsession_id, action_sequence))
         return FALSE;
-    trade_action_packet.header.clientFrame = session->localClientFrame;
-    trade_action_packet.header.serverTickSeen = session->bridgeTick;
-    trade_action_packet.header.actionSequence = action_sequence;
-    trade_action_packet.header.transactionId = MultiplayerCommit_GetTransactionId(&transaction_key);
-    trade_action_packet.subsessionId = subsession_id;
+    trade_action_packet.header.client_frame = session->local_client_frame;
+    trade_action_packet.header.server_tick_seen = session->bridge_tick;
+    trade_action_packet.header.action_sequence = action_sequence;
+    trade_action_packet.header.transaction_id = MultiplayerCommit_GetTransactionId(&transaction_key);
+    trade_action_packet.subsession_id = subsession_id;
     trade_action_packet.action = action;
-    trade_action_packet.partySlot = party_slot;
-    trade_action_packet.tradeChecksum = trade_checksum;
-    trade_action_packet.moneyAmount = money_amount;
+    trade_action_packet.party_slot = party_slot;
+    trade_action_packet.trade_checksum = trade_checksum;
+    trade_action_packet.money_amount = money_amount;
     if (action == MULTIPLAYER_TRADE_ACTION_ITEMTRADE_OFFER)
     {
         sPendingTradeSubsessionId = subsession_id;
-        sPendingTradeTransactionId = trade_action_packet.header.transactionId;
+        sPendingTradeTransactionId = trade_action_packet.header.transaction_id;
     }
     MultiplayerCommit_Prepare(&transaction_key, MULTIPLAYER_COMMIT_TRADE, &trade_action_packet, sizeof(trade_action_packet), NULL);
     if (!NetTransport_SendPacket(NET_PACKET_TRADE_ACTION, &trade_action_packet, sizeof(trade_action_packet)))
@@ -249,9 +249,9 @@ void MultiplayerTrade_Tick(const struct MultiplayerSession *session)
 void MultiplayerTrade_OnCommitResult(const struct NetCommitResult *commit_result)
 {
 #if FEATURE_MULTIPLAYER
-    if (commit_result == NULL || commit_result->commitType != MULTIPLAYER_COMMIT_TRADE)
+    if (commit_result == NULL || commit_result->commit_type != MULTIPLAYER_COMMIT_TRADE)
         return;
-    if (sPendingTradeTransactionId == 0 || commit_result->transactionId != sPendingTradeTransactionId)
+    if (sPendingTradeTransactionId == 0 || commit_result->transaction_id != sPendingTradeTransactionId)
         return;
 
     if (commit_result->result_code == MULTIPLAYER_COMMIT_RESULT_OK && sPendingTradeMoneyAmount != 0)
@@ -272,13 +272,13 @@ void MultiplayerTrade_ApplyRemoteAction(u8 sender_player_id, const struct NetTra
         return;
     if (trade_action->action != MULTIPLAYER_TRADE_ACTION_ITEMTRADE_OFFER)
         return;
-    if (trade_action->header.transactionId == 0 || trade_action->moneyAmount == 0)
+    if (trade_action->header.transaction_id == 0 || trade_action->money_amount == 0)
         return;
-    if (sLastRemoteTradeTransactionIds[sender_player_id] == trade_action->header.transactionId)
+    if (sLastRemoteTradeTransactionIds[sender_player_id] == trade_action->header.transaction_id)
         return;
 
-    sLastRemoteTradeTransactionIds[sender_player_id] = trade_action->header.transactionId;
-    MultiplayerCommit_ReceiveMoney(trade_action->moneyAmount);
+    sLastRemoteTradeTransactionIds[sender_player_id] = trade_action->header.transaction_id;
+    MultiplayerCommit_ReceiveMoney(trade_action->money_amount);
 #else
     (void)sender_player_id;
     (void)trade_action;

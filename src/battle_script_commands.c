@@ -9937,11 +9937,11 @@ static void Cmd_handleballthrow(void)
         PokeBallApi_BuildContextFromBattle(&context, gLastUsedItem, gBattlerTarget);
         PokeBallApi_CalculateThrowResult(&context, &result);
 
-        if (result.usedMasterBall)
+        if (result.used_master_ball)
         {
             gBattleResults.usedMasterBall = TRUE;
         }
-        else if (result.recordCatchAttempt && gLastUsedItem >= ITEM_ULTRA_BALL && gLastUsedItem <= ITEM_PREMIER_BALL)
+        else if (result.record_catch_attempt && gLastUsedItem >= ITEM_ULTRA_BALL && gLastUsedItem <= ITEM_PREMIER_BALL)
         {
             if (gBattleResults.catchAttempts[gLastUsedItem - ITEM_ULTRA_BALL] < 255)
                 gBattleResults.catchAttempts[gLastUsedItem - ITEM_ULTRA_BALL]++;

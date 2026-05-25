@@ -10,9 +10,9 @@ struct ModMapDefinition
 {
     const char *key;
     u16 map_id;
-    u8 mapGroup;
-    u8 mapNum;
-    const char *jsonPath;
+    u8 map_group;
+    u8 map_num;
+    const char *json_path;
 };
 
 const struct MapHeader *MapApi_GetHeader(u16 map_id);

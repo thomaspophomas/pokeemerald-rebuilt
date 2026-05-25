@@ -16,17 +16,17 @@ static u8 RodToMask(u8 rod)
 static bool8 DefinitionIsEmptyDefault(const struct FishingActionDefinition *definition)
 {
     return definition->key == NULL
-        && definition->hookKey == NULL
-        && definition->rodMask == 0
-        && definition->phaseMask == 0
+        && definition->hook_key == NULL
+        && definition->rod_mask == 0
+        && definition->phase_mask == 0
         && definition->priority == 0
         && definition->flags == 0
         && definition->hook == NULL
-        && definition->promptKey == NULL
-        && definition->buttonMask == 0
-        && definition->timeoutFrames == 0
-        && definition->successOutcome == 0
-        && definition->failureOutcome == 0;
+        && definition->prompt_key == NULL
+        && definition->button_mask == 0
+        && definition->timeout_frames == 0
+        && definition->success_outcome == 0
+        && definition->failure_outcome == 0;
 }
 
 static bool8 OutcomeIsValid(u8 outcome)
@@ -34,18 +34,18 @@ static bool8 OutcomeIsValid(u8 outcome)
     return outcome <= FISHING_OUTCOME_CANCEL;
 }
 
-static bool8 PhaseMaskIsValid(u16 phaseMask)
+static bool8 PhaseMaskIsValid(u16 phase_mask)
 {
-    return phaseMask != 0 && (phaseMask & ~FISHING_PHASE_MASK_ALL) == 0;
+    return phase_mask != 0 && (phase_mask & ~FISHING_PHASE_MASK_ALL) == 0;
 }
 
 static bool8 DefinitionMatchesContext(const struct FishingActionDefinition *definition, const struct FishingContext *context)
 {
     if (definition == NULL || context == NULL)
         return FALSE;
-    if ((definition->rodMask & RodToMask(context->rod)) == 0)
+    if ((definition->rod_mask & RodToMask(context->rod)) == 0)
         return FALSE;
-    if ((definition->phaseMask & FISHING_PHASE_MASK(context->phase)) == 0)
+    if ((definition->phase_mask & FISHING_PHASE_MASK(context->phase)) == 0)
         return FALSE;
     return TRUE;
 }
@@ -135,15 +135,15 @@ bool8 FishingApi_IsDefinitionValid(const struct FishingActionDefinition *definit
         return TRUE;
     if (definition->key == NULL || definition->key[0] == '\0')
         return FALSE;
-    if (definition->hookKey == NULL || definition->hookKey[0] == '\0')
+    if (definition->hook_key == NULL || definition->hook_key[0] == '\0')
         return FALSE;
     if (definition->hook == NULL)
         return FALSE;
-    if (definition->rodMask == 0 || (definition->rodMask & ~FISHING_ACTION_ROD_ALL) != 0)
+    if (definition->rod_mask == 0 || (definition->rod_mask & ~FISHING_ACTION_ROD_ALL) != 0)
         return FALSE;
-    if (!PhaseMaskIsValid(definition->phaseMask))
+    if (!PhaseMaskIsValid(definition->phase_mask))
         return FALSE;
-    if (!OutcomeIsValid(definition->successOutcome) || !OutcomeIsValid(definition->failureOutcome))
+    if (!OutcomeIsValid(definition->success_outcome) || !OutcomeIsValid(definition->failure_outcome))
         return FALSE;
     return TRUE;
 }
@@ -154,17 +154,17 @@ void FishingApi_InitRequestFromDefinition(const struct FishingActionDefinition *
         return;
 
     memset(request, 0, sizeof(*request));
-    request->successOutcome = FISHING_OUTCOME_CONTINUE;
-    request->failureOutcome = FISHING_OUTCOME_GOT_AWAY;
+    request->success_outcome = FISHING_OUTCOME_CONTINUE;
+    request->failure_outcome = FISHING_OUTCOME_GOT_AWAY;
 
     if (definition == NULL)
         return;
 
-    request->promptKey = definition->promptKey;
-    request->requiredButtons = definition->buttonMask;
-    request->timeoutFrames = definition->timeoutFrames;
-    request->successOutcome = definition->successOutcome;
-    request->failureOutcome = definition->failureOutcome;
+    request->prompt_key = definition->prompt_key;
+    request->required_buttons = definition->button_mask;
+    request->timeout_frames = definition->timeout_frames;
+    request->success_outcome = definition->success_outcome;
+    request->failure_outcome = definition->failure_outcome;
 }
 
 u8 FishingApi_RunPhase(struct FishingContext *context, struct FishingActionRequest *request)
@@ -199,10 +199,10 @@ FishingActionHook FishingApi_FindCompiledHook(const char *source_key, const char
 
     for (action_index = 0; action_index < gModFishingActionCount; action_index++)
     {
-        if (gModFishingActions[action_index].key == NULL || gModFishingActions[action_index].hookKey == NULL)
+        if (gModFishingActions[action_index].key == NULL || gModFishingActions[action_index].hook_key == NULL)
             continue;
         if (strcmp(gModFishingActions[action_index].key, source_key) == 0
-         && strcmp(gModFishingActions[action_index].hookKey, hook_key) == 0)
+         && strcmp(gModFishingActions[action_index].hook_key, hook_key) == 0)
             return gModFishingActions[action_index].hook;
     }
 
@@ -213,7 +213,7 @@ u8 FishingApi_RequestConfiguredAction(const struct FishingActionDefinition *defi
 {
     (void)context;
 
-    if (definition == NULL || request == NULL || definition->buttonMask == 0)
+    if (definition == NULL || request == NULL || definition->button_mask == 0)
         return FISHING_ACTION_CONTINUE;
 
     FishingApi_InitRequestFromDefinition(definition, request);

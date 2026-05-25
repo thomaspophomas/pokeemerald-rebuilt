@@ -30,8 +30,8 @@ struct ModCatalogEntry
     u8 type;
     u8 flags;
     u16 reserved;
-    u32 keyHash;
-    u32 contentHash;
+    u32 key_hash;
+    u32 content_hash;
 } __attribute__((packed));
 
 #endif // GUARD_MOD_CATALOG_H

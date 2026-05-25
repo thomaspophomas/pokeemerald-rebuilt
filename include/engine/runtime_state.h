@@ -16,11 +16,11 @@ struct EngineRuntimeState
     u32 magic;
     u16 version;
     u16 size;
-    u32 runtimeFlags;
-    u8 multiplayerMode;
-    u8 weatherMode;
-    u8 followerMode;
-    u8 storyMode;
+    u32 runtime_flags;
+    u8 multiplayer_mode;
+    u8 weather_mode;
+    u8 follower_mode;
+    u8 story_mode;
     u8 reserved[16];
 };
 

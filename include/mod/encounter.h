@@ -32,25 +32,25 @@ enum ModEncounterHookResult
 
 struct ModEncounterSlot
 {
-    u8 minLevel;
-    u8 maxLevel;
+    u8 min_level;
+    u8 max_level;
     u16 species;
     u8 weight;
-    u8 rodMask;
+    u8 rod_mask;
     u16 flags;
 } __attribute__((packed));
 
 struct ModEncounterContext
 {
-    u8 mapGroup;
-    u8 mapNum;
+    u8 map_group;
+    u8 map_num;
     u8 area;
     u8 rod;
     u8 phase;
     u8 flags;
-    u8 slotIndex;
+    u8 slot_index;
     u8 level;
-    u16 encounterRate;
+    u16 encounter_rate;
     u16 species;
 };
 
@@ -60,13 +60,13 @@ typedef u8 (*ModEncounterHook)(const struct ModEncounterDefinition *definition, 
 struct ModEncounterDefinition
 {
     const char *key;
-    const char *hookKey;
-    u8 mapGroup;
-    u8 mapNum;
+    const char *hook_key;
+    u8 map_group;
+    u8 map_num;
     u8 area;
-    u8 rodMask;
-    u8 encounterRate;
-    u8 slotCount;
+    u8 rod_mask;
+    u8 encounter_rate;
+    u8 slot_count;
     s16 priority;
     u16 flags;
     ModEncounterHook hook;

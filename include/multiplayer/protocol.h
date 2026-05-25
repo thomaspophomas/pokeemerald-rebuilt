@@ -44,64 +44,64 @@ enum NetPacketType
 struct NetPacketEnvelope
 {
     u32 magic;
-    u16 protocolVersion;
-    u16 headerSize;
-    u32 sessionId;
-    u32 sessionEpoch;
+    u16 protocol_version;
+    u16 header_size;
+    u32 session_id;
+    u32 session_epoch;
     u32 tick;
-    u8 packetType;
-    u8 playerId;
+    u8 packet_type;
+    u8 player_id;
     u8 flags;
     u8 reserved;
     u32 sequence;
     u32 ack;
-    u16 payloadSize;
+    u16 payload_size;
     u16 checksum;
 } __attribute__((packed));
 
 struct NetClientHello
 {
-    u16 protocolVersion;
-    u16 bridgeVersion;
-    u32 buildId;
-    u32 romHash;
-    u32 rulesetHash;
-    u32 featureFlags;
-    u16 profileProtocolVersion;
-    u32 profileCapabilityFlags;
-    u32 profileCapabilityHash;
-    u32 modCatalogHash;
-    u16 modCatalogCount;
-    u8 transportMode;
+    u16 protocol_version;
+    u16 bridge_version;
+    u32 build_id;
+    u32 rom_hash;
+    u32 ruleset_hash;
+    u32 feature_flags;
+    u16 profile_protocol_version;
+    u32 profile_capability_flags;
+    u32 profile_capability_hash;
+    u32 mod_catalog_hash;
+    u16 mod_catalog_count;
+    u8 transport_mode;
     u8 reserved;
 } __attribute__((packed));
 
 struct NetHeartbeat
 {
-    u32 clientFrame;
-    u32 serverTickSeen;
-    u32 sessionEpoch;
-    u32 playerToken;
-    u32 joinNonce;
+    u32 client_frame;
+    u32 server_tick_seen;
+    u32 session_epoch;
+    u32 player_token;
+    u32 join_nonce;
 } __attribute__((packed));
 
 struct NetIntentHeader
 {
-    u32 clientFrame;
-    u32 serverTickSeen;
-    u32 actionSequence;
-    u32 transactionId;
+    u32 client_frame;
+    u32 server_tick_seen;
+    u32 action_sequence;
+    u32 transaction_id;
 } __attribute__((packed));
 
 struct NetMoveIntent
 {
     struct NetIntentHeader header;
-    u16 heldKeys;
-    u16 newKeys;
+    u16 held_keys;
+    u16 new_keys;
     u8 direction;
-    u8 movementActionId;
-    u8 mapGroup;
-    u8 mapNum;
+    u8 movement_action_id;
+    u8 map_group;
+    u8 map_num;
     s16 x;
     s16 y;
 } __attribute__((packed));
@@ -109,10 +109,10 @@ struct NetMoveIntent
 struct NetInteractIntent
 {
     struct NetIntentHeader header;
-    u8 targetPlayerId;
-    u8 interactionType;
-    u8 mapGroup;
-    u8 mapNum;
+    u8 target_player_id;
+    u8 interaction_type;
+    u8 map_group;
+    u8 map_num;
     s16 x;
     s16 y;
 } __attribute__((packed));
@@ -120,8 +120,8 @@ struct NetInteractIntent
 struct NetBattleAction
 {
     struct NetIntentHeader header;
-    u8 subsessionId;
-    u8 battlerSlot;
+    u8 subsession_id;
+    u8 battler_slot;
     u8 action;
     u8 target;
     u16 parameter;
@@ -131,27 +131,27 @@ struct NetBattleAction
 struct NetTradeAction
 {
     struct NetIntentHeader header;
-    u8 subsessionId;
+    u8 subsession_id;
     u8 action;
-    u16 partySlot;
-    u32 tradeChecksum;
-    u32 moneyAmount;
+    u16 party_slot;
+    u32 trade_checksum;
+    u32 money_amount;
 } __attribute__((packed));
 
 struct NetServerClock
 {
-    u32 serverEpochSeconds;
-    u32 serverTick;
-    s16 timezoneOffsetMinutes;
+    u32 server_epoch_seconds;
+    u32 server_tick;
+    s16 timezone_offset_minutes;
     u16 flags;
 } __attribute__((packed));
 
 struct NetCommitResult
 {
-    u32 transactionId;
-    u32 serverRevision;
-    u16 payloadChecksum;
-    u8 commitType;
+    u32 transaction_id;
+    u32 server_revision;
+    u16 payload_checksum;
+    u8 commit_type;
     u8 result_code;
     u16 detail;
 } __attribute__((packed));
@@ -164,33 +164,33 @@ struct NetDisconnectReason
 
 struct NetServerProfileBegin
 {
-    u32 profileHash;
-    u16 profileSize;
-    u16 chunkCount;
-    u16 profileProtocolVersion;
+    u32 profile_hash;
+    u16 profile_size;
+    u16 chunk_count;
+    u16 profile_protocol_version;
     u16 reserved;
-    u32 capabilityFlags;
-    u32 capabilityHash;
+    u32 capability_flags;
+    u32 capability_hash;
 } __attribute__((packed));
 
 struct NetServerProfileChunk
 {
-    u32 profileHash;
-    u16 chunkIndex;
+    u32 profile_hash;
+    u16 chunk_index;
     u16 offset;
-    u8 dataSize;
+    u8 data_size;
     u8 reserved;
     u8 data[NET_PROFILE_CHUNK_DATA_SIZE];
 } __attribute__((packed));
 
 struct NetServerProfileCommit
 {
-    u32 profileHash;
+    u32 profile_hash;
 } __attribute__((packed));
 
 struct NetServerProfileAck
 {
-    u32 profileHash;
+    u32 profile_hash;
     u8 result_code;
     u8 reserved;
     u16 detail;
@@ -198,25 +198,25 @@ struct NetServerProfileAck
 
 struct NetServerCatalogRequest
 {
-    u32 catalogHash;
-    u16 knownEntryCount;
+    u32 catalog_hash;
+    u16 known_entry_count;
     u16 reserved;
 } __attribute__((packed));
 
 struct NetClientCatalogBegin
 {
-    u32 catalogHash;
-    u16 entryCount;
-    u16 chunkCount;
-    u32 schemaHash;
+    u32 catalog_hash;
+    u16 entry_count;
+    u16 chunk_count;
+    u32 schema_hash;
 } __attribute__((packed));
 
 struct NetClientCatalogChunk
 {
-    u32 catalogHash;
-    u16 chunkIndex;
-    u16 firstEntry;
-    u8 entryCount;
+    u32 catalog_hash;
+    u16 chunk_index;
+    u16 first_entry;
+    u8 entry_count;
     u8 reserved[3];
     struct ModCatalogEntry entries[NET_CATALOG_CHUNK_ENTRY_COUNT];
 } __attribute__((packed));

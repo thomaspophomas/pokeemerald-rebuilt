@@ -25,7 +25,7 @@ const struct MapHeader *MapApi_GetHeader(u16 map_id)
     if (definition == NULL)
         return NULL;
 
-    return Overworld_GetMapHeaderByGroupAndId(definition->mapGroup, definition->mapNum);
+    return Overworld_GetMapHeaderByGroupAndId(definition->map_group, definition->map_num);
 }
 
 const struct MapHeader *MapApi_FindByName(const char *key)

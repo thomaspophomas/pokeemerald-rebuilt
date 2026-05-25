@@ -11,11 +11,11 @@ struct ModNpcDefinition
 {
     const char *key;
     u16 npc_definition_id;
-    u8 graphicsId;
-    u8 movementType;
-    u8 localId;
+    u8 graphics_id;
+    u8 movement_type;
+    u8 local_id;
     u8 elevation;
-    u16 flagId;
+    u16 flag_id;
     const u8 *script;
 };
 

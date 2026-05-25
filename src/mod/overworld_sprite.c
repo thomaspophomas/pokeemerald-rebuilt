@@ -74,19 +74,19 @@ u8 OverworldSpriteApi_GetGraphicsId(const char *key)
     if (sprite == NULL)
         return OVERWORLD_SPRITE_API_INVALID_GFX;
 
-    return sprite->graphicsId;
+    return sprite->graphics_id;
 }
 
 bool8 OverworldSpriteApi_SetObjectGraphics(u8 object_event_id, const char *key)
 {
-    u8 graphicsId = OverworldSpriteApi_GetGraphicsId(key);
+    u8 graphics_id = OverworldSpriteApi_GetGraphicsId(key);
 
-    if (graphicsId == OVERWORLD_SPRITE_API_INVALID_GFX)
+    if (graphics_id == OVERWORLD_SPRITE_API_INVALID_GFX)
         return FALSE;
     if (object_event_id >= OBJECT_EVENTS_COUNT || !gObjectEvents[object_event_id].active)
         return FALSE;
 
-    ObjectEventSetGraphicsId(&gObjectEvents[object_event_id], graphicsId);
+    ObjectEventSetGraphicsId(&gObjectEvents[object_event_id], graphics_id);
     return TRUE;
 }
 
@@ -107,7 +107,7 @@ u8 OverworldSpriteApi_GetFollowerSprite(u16 species, u8 form, bool8 shiny)
         if (gModFollowerSprites[follower_sprite_index].species == species
          && gModFollowerSprites[follower_sprite_index].form == form
          && gModFollowerSprites[follower_sprite_index].shiny == shiny)
-            return gModFollowerSprites[follower_sprite_index].graphicsId;
+            return gModFollowerSprites[follower_sprite_index].graphics_id;
     }
 
     return OVERWORLD_SPRITE_API_INVALID_GFX;
@@ -120,10 +120,10 @@ u8 OverworldSpriteApi_CreateOrUpdateVirtualAvatar(const char *owner_key, const c
 
     if (sprite == NULL)
         return SPRITE_NONE;
-    if (sprite->assetKey != NULL)
+    if (sprite->asset_key != NULL)
     {
-        SpriteAssetApi_LoadSheet(sprite->assetKey);
-        SpriteAssetApi_LoadPalette(sprite->assetKey);
+        SpriteAssetApi_LoadSheet(sprite->asset_key);
+        SpriteAssetApi_LoadPalette(sprite->asset_key);
     }
 
     virtual_avatar_slot = GetVirtualSlotForOwner(owner_key);
@@ -131,13 +131,13 @@ u8 OverworldSpriteApi_CreateOrUpdateVirtualAvatar(const char *owner_key, const c
         return SPRITE_NONE;
 
     return CreateOrUpdateVirtualObject(
-        sprite->graphicsId,
+        sprite->graphics_id,
         OVERWORLD_SPRITE_API_VIRTUAL_ID_BASE + virtual_avatar_slot,
         x,
         y,
         ELEVATION_DEFAULT,
         DIR_SOUTH,
-        sprite->graphicsRevision);
+        sprite->graphics_revision);
 }
 
 void OverworldSpriteApi_DestroyVirtualAvatar(const char *owner_key)

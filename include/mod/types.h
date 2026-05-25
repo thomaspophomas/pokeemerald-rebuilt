@@ -12,7 +12,7 @@ struct ModManifest
     const char *name;
     const char *version;
     u16 priority;
-    u16 featureFlags;
+    u16 feature_flags;
 };
 
 struct ModNamedResource

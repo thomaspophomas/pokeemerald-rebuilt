@@ -17,7 +17,7 @@ struct ModSaveState
     u16 size;
     u32 revision;
     u8 flags[MOD_SAVE_FLAG_BYTES];
-    u8 badgeLevels[MOD_SAVE_BADGE_LEVEL_BYTES];
+    u8 badge_levels[MOD_SAVE_BADGE_LEVEL_BYTES];
     u8 reserved[MOD_SAVE_RESERVED_BYTES];
 };
 

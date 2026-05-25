@@ -15,7 +15,7 @@ static bool8 DefinitionIsEmptyDefault(const struct ModShopDefinition *definition
         return FALSE;
     if (definition->key != NULL)
         return FALSE;
-    if (definition->mapGroup != 0 || definition->mapNum != 0 || definition->martType != 0 || definition->itemCount != 0)
+    if (definition->map_group != 0 || definition->map_num != 0 || definition->mart_type != 0 || definition->item_count != 0)
         return FALSE;
     if (definition->priority != 0 || definition->flags != 0)
         return FALSE;
@@ -66,7 +66,7 @@ static const struct ModShopDefinition *FindBestShop(
             continue;
         if (!ShopApi_IsDefinitionValid(definition, TRUE) || DefinitionIsEmptyDefault(definition))
             continue;
-        if (definition->mapGroup != map_group || definition->mapNum != map_num || definition->martType != mart_type)
+        if (definition->map_group != map_group || definition->map_num != map_num || definition->mart_type != mart_type)
             continue;
         if (best_definition == NULL || definition->priority < best_definition->priority)
             best_definition = definition;
@@ -85,12 +85,12 @@ bool8 ShopApi_IsDefinitionValid(const struct ModShopDefinition *definition, bool
         return TRUE;
     if (definition->key == NULL || definition->key[0] == '\0')
         return FALSE;
-    if (definition->martType > MOD_SHOP_TYPE_DECOR2)
+    if (definition->mart_type > MOD_SHOP_TYPE_DECOR2)
         return FALSE;
-    if (definition->itemCount == 0 || definition->itemCount > MOD_SHOP_MAX_ITEMS)
+    if (definition->item_count == 0 || definition->item_count > MOD_SHOP_MAX_ITEMS)
         return FALSE;
 
-    for (shop_item_index = 0; shop_item_index < definition->itemCount; shop_item_index++)
+    for (shop_item_index = 0; shop_item_index < definition->item_count; shop_item_index++)
     {
         if (definition->items[shop_item_index] == ITEM_NONE || definition->items[shop_item_index] >= ITEMS_COUNT)
             return FALSE;
@@ -104,24 +104,24 @@ const u16 *ShopApi_GetItemsForSale(u8 mart_type, const u16 *vanilla_items)
     const struct ModShopDefinition *runtimeShops;
     const struct ModShopDefinition *definition;
     u16 runtimeCount;
-    u8 mapGroup;
-    u8 mapNum;
+    u8 map_group;
+    u8 map_num;
     u8 shop_item_index;
 
     if (gSaveBlock1Ptr == NULL)
         return vanilla_items;
 
-    mapGroup = gSaveBlock1Ptr->location.mapGroup;
-    mapNum = gSaveBlock1Ptr->location.mapNum;
+    map_group = gSaveBlock1Ptr->location.mapGroup;
+    map_num = gSaveBlock1Ptr->location.mapNum;
     runtimeShops = ModRuntimeProfile_GetShops(&runtimeCount);
-    definition = FindBestShop(runtimeShops, runtimeCount, mapGroup, mapNum, mart_type, NULL, 0);
+    definition = FindBestShop(runtimeShops, runtimeCount, map_group, map_num, mart_type, NULL, 0);
     if (definition == NULL)
-        definition = FindBestShop(gModShopDefinitions, gModShopDefinitionCount, mapGroup, mapNum, mart_type, runtimeShops, runtimeCount);
+        definition = FindBestShop(gModShopDefinitions, gModShopDefinitionCount, map_group, map_num, mart_type, runtimeShops, runtimeCount);
     if (definition == NULL)
         return vanilla_items;
 
-    for (shop_item_index = 0; shop_item_index < definition->itemCount; shop_item_index++)
+    for (shop_item_index = 0; shop_item_index < definition->item_count; shop_item_index++)
         sRuntimeShopItems[shop_item_index] = definition->items[shop_item_index];
-    sRuntimeShopItems[definition->itemCount] = ITEM_NONE;
+    sRuntimeShopItems[definition->item_count] = ITEM_NONE;
     return sRuntimeShopItems;
 }

@@ -8,12 +8,12 @@ struct ModSpriteAssetDefinition
 {
     const char *key;
     const struct SpriteSheet *sheet;
-    const struct CompressedSpriteSheet *compressedSheet;
+    const struct CompressedSpriteSheet *compressed_sheet;
     const struct SpritePalette *palette;
-    const struct CompressedSpritePalette *compressedPalette;
+    const struct CompressedSpritePalette *compressed_palette;
     const struct SpriteTemplate *template;
-    u16 tileTag;
-    u16 paletteTag;
+    u16 tile_tag;
+    u16 palette_tag;
 };
 
 const struct ModSpriteAssetDefinition *SpriteAssetApi_Find(const char *key);

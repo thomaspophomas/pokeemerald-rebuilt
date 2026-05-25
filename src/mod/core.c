@@ -44,8 +44,8 @@ void ModApi_OnPlayerStep(u8 direction, u16 new_keys, u16 held_keys)
     struct ModEventPlayerStep payload;
 
     payload.direction = direction;
-    payload.newKeys = new_keys;
-    payload.heldKeys = held_keys;
+    payload.new_keys = new_keys;
+    payload.held_keys = held_keys;
     ModEvent_Emit(MOD_EVENT_PLAYER_STEP, &payload, sizeof(payload));
 }
 

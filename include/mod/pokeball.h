@@ -8,31 +8,31 @@
 
 struct PokeBallCatchContext
 {
-    u16 itemId;
-    u16 targetSpecies;
-    u8 targetLevel;
-    u8 targetType1;
-    u8 targetType2;
-    u8 catchRate;
-    u16 targetMaxHp;
-    u16 targetHp;
-    u32 targetStatus1;
-    u16 battleTurnCounter;
-    u8 safariCatchFactor;
-    bool8 alreadyCaught;
-    u8 mapType;
-    u32 battleTypeFlags;
+    u16 item_id;
+    u16 target_species;
+    u8 target_level;
+    u8 target_type_1;
+    u8 target_type_2;
+    u8 catch_rate;
+    u16 target_max_hp;
+    u16 target_hp;
+    u32 target_status_1;
+    u16 battle_turn_counter;
+    u8 safari_catch_factor;
+    bool8 already_caught;
+    u8 map_type;
+    u32 battle_type_flags;
 };
 
 struct PokeBallThrowResult
 {
     bool8 caught;
     u8 shakes;
-    u8 catchRate;
-    u8 ballMultiplier;
+    u8 catch_rate;
+    u8 ball_multiplier;
     u32 odds;
-    bool8 usedMasterBall;
-    bool8 recordCatchAttempt;
+    bool8 used_master_ball;
+    bool8 record_catch_attempt;
 };
 
 typedef u8 (*PokeBallCatchModifierFunc)(const struct PokeBallCatchContext *context);
@@ -41,13 +41,13 @@ typedef void (*PokeBallCatchCommitFunc)(const struct PokeBallCatchContext *conte
 struct ModPokeBallDefinition
 {
     const char *key;
-    u16 itemId;
-    u8 ballId;
-    u8 baseCatchModifier;
+    u16 item_id;
+    u8 ball_id;
+    u8 base_catch_modifier;
     u16 flags;
-    PokeBallCatchModifierFunc catchModifier;
-    const u8 *battleScript;
-    PokeBallCatchCommitFunc commitHook;
+    PokeBallCatchModifierFunc catch_modifier;
+    const u8 *battle_script;
+    PokeBallCatchCommitFunc commit_hook;
 };
 
 bool8 PokeBallApi_IsBall(u16 item_id);

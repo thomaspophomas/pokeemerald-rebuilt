@@ -13,10 +13,10 @@ struct ModRewardContext
 {
     u8 source;
     u8 level;
-    u8 mapGroup;
-    u8 mapNum;
-    u16 vanillaItemId;
-    u16 itemId;
+    u8 map_group;
+    u8 map_num;
+    u16 vanilla_item_id;
+    u16 item_id;
     u16 quantity;
 };
 
@@ -33,13 +33,13 @@ enum ModRewardHookResult
 struct ModRewardDefinition
 {
     const char *key;
-    const char *hookKey;
+    const char *hook_key;
     u8 source;
-    u8 minLevel;
-    u8 maxLevel;
+    u8 min_level;
+    u8 max_level;
     s16 priority;
     u16 flags;
-    u16 itemId;
+    u16 item_id;
     u16 quantity;
     ModRewardHook hook;
 };

@@ -12,9 +12,9 @@
 struct ModOverworldSpriteDefinition
 {
     const char *key;
-    const char *assetKey;
-    u8 graphicsId;
-    u16 graphicsRevision;
+    const char *asset_key;
+    u8 graphics_id;
+    u16 graphics_revision;
 };
 
 struct ModFollowerSpriteDefinition
@@ -23,7 +23,7 @@ struct ModFollowerSpriteDefinition
     u16 species;
     u8 form;
     bool8 shiny;
-    u8 graphicsId;
+    u8 graphics_id;
 };
 
 u8 OverworldSpriteApi_GetGraphicsId(const char *key);

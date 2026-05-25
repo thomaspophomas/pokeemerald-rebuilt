@@ -19,10 +19,10 @@ struct EngineModule
     u32 flags;
     EngineModuleInitFunc init;
     EngineModuleFrameFunc frame;
-    EngineModuleMapLoadFunc mapLoad;
-    EngineModulePlayerStepFunc playerStep;
-    EngineModuleBattleFunc battleStart;
-    EngineModuleBattleFunc battleEnd;
+    EngineModuleMapLoadFunc map_load;
+    EngineModulePlayerStepFunc player_step;
+    EngineModuleBattleFunc battle_start;
+    EngineModuleBattleFunc battle_end;
 };
 
 void EngineModules_Init(void);

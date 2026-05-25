@@ -27,8 +27,8 @@ struct NetLinkGatewayFrame
 {
     u32 magic;
     u8 version;
-    u8 frameType;
-    u16 payloadSize;
+    u8 frame_type;
+    u16 payload_size;
     u32 sequence;
     u8 payload[NET_LINK_GATEWAY_FRAME_PAYLOAD_SIZE];
 } __attribute__((packed));
@@ -36,17 +36,17 @@ struct NetLinkGatewayFrame
 struct NetLinkGatewaySessionHeader
 {
     u8 connected;
-    u8 localPlayerId;
-    u8 hostPlayerId;
-    u8 playerCount;
-    u8 transportMode;
+    u8 local_player_id;
+    u8 host_player_id;
+    u8 player_count;
+    u8 transport_mode;
     u8 reserved[3];
-    u32 sessionId;
-    u32 sessionEpoch;
-    u32 playerToken;
-    u32 joinNonce;
-    u32 bridgeTick;
-    u32 serverClockSeconds;
+    u32 session_id;
+    u32 session_epoch;
+    u32 player_token;
+    u32 join_nonce;
+    u32 bridge_tick;
+    u32 server_clock_seconds;
 } __attribute__((packed));
 
 struct NetLinkGatewaySubsessionFrame

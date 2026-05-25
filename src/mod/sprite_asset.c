@@ -31,9 +31,9 @@ bool8 SpriteAssetApi_LoadSheet(const char *key)
 
     if (asset == NULL)
         return FALSE;
-    if (asset->compressedSheet != NULL)
+    if (asset->compressed_sheet != NULL)
     {
-        LoadCompressedSpriteSheet(asset->compressedSheet);
+        LoadCompressedSpriteSheet(asset->compressed_sheet);
         return TRUE;
     }
     if (asset->sheet != NULL)
@@ -51,9 +51,9 @@ bool8 SpriteAssetApi_LoadPalette(const char *key)
 
     if (asset == NULL)
         return FALSE;
-    if (asset->compressedPalette != NULL)
+    if (asset->compressed_palette != NULL)
     {
-        LoadCompressedSpritePalette(asset->compressedPalette);
+        LoadCompressedSpritePalette(asset->compressed_palette);
         return TRUE;
     }
     if (asset->palette != NULL)
@@ -71,8 +71,8 @@ void SpriteAssetApi_Release(const char *key)
 
     if (asset == NULL)
         return;
-    if (asset->tileTag != TAG_NONE)
-        FreeSpriteTilesByTag(asset->tileTag);
-    if (asset->paletteTag != TAG_NONE)
-        FreeSpritePaletteByTag(asset->paletteTag);
+    if (asset->tile_tag != TAG_NONE)
+        FreeSpriteTilesByTag(asset->tile_tag);
+    if (asset->palette_tag != TAG_NONE)
+        FreeSpritePaletteByTag(asset->palette_tag);
 }

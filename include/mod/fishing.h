@@ -51,27 +51,27 @@ struct FishingContext
     u8 rod;
     u8 phase;
     u8 round;
-    u8 dotsRequired;
-    u8 dotsShown;
-    u8 minRoundsRequired;
+    u8 dots_required;
+    u8 dots_shown;
+    u8 min_rounds_required;
     u16 frame;
     bool8 bite;
-    u8 currentOutcome;
-    u8 mapGroup;
-    u8 mapNum;
-    s16 playerX;
-    s16 playerY;
+    u8 current_outcome;
+    u8 map_group;
+    u8 map_num;
+    s16 player_x;
+    s16 player_y;
     u16 species;
     u8 level;
 };
 
 struct FishingActionRequest
 {
-    const char *promptKey;
-    u16 requiredButtons;
-    u16 timeoutFrames;
-    u8 successOutcome;
-    u8 failureOutcome;
+    const char *prompt_key;
+    u16 required_buttons;
+    u16 timeout_frames;
+    u8 success_outcome;
+    u8 failure_outcome;
 };
 
 struct FishingActionDefinition;
@@ -80,17 +80,17 @@ typedef u8 (*FishingActionHook)(const struct FishingActionDefinition *definition
 struct FishingActionDefinition
 {
     const char *key;
-    const char *hookKey;
-    u8 rodMask;
-    u16 phaseMask;
+    const char *hook_key;
+    u8 rod_mask;
+    u16 phase_mask;
     s16 priority;
     u16 flags;
     FishingActionHook hook;
-    const char *promptKey;
-    u16 buttonMask;
-    u16 timeoutFrames;
-    u8 successOutcome;
-    u8 failureOutcome;
+    const char *prompt_key;
+    u16 button_mask;
+    u16 timeout_frames;
+    u8 success_outcome;
+    u8 failure_outcome;
     s16 params[FISHING_ACTION_PARAM_COUNT];
 };
 

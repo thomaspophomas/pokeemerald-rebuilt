@@ -19,23 +19,23 @@ struct ModTrainerMon
     u16 iv;
     u8 lvl;
     u16 species;
-    u16 heldItem;
+    u16 held_item;
     u16 moves[MAX_MON_MOVES];
 } __attribute__((packed));
 
 struct ModTrainerDefinition
 {
     const char *key;
-    u16 trainerId;
+    u16 trainer_id;
     s16 priority;
     u16 flags;
-    u8 trainerClass;
-    u8 encounterMusicGender;
-    u8 trainerPic;
+    u8 trainer_class;
+    u8 encounter_music_gender;
+    u8 trainer_pic;
     u16 items[MAX_TRAINER_ITEMS];
-    bool8 doubleBattle;
-    u32 aiFlags;
-    u8 partySize;
+    bool8 double_battle;
+    u32 ai_flags;
+    u8 party_size;
     struct ModTrainerMon party[MOD_TRAINER_MAX_PARTY_SIZE];
 };
 

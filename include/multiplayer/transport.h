@@ -11,14 +11,14 @@
 
 struct NetTransportPacketHeader
 {
-    u32 sessionId;
-    u32 sessionEpoch;
+    u32 session_id;
+    u32 session_epoch;
     u32 tick;
     u32 sequence;
-    u16 payloadSize;
+    u16 payload_size;
     u16 checksum;
-    u8 packetType;
-    u8 playerId;
+    u8 packet_type;
+    u8 player_id;
 } __attribute__((packed));
 
 struct NetTransportPacketSlot
@@ -49,47 +49,47 @@ STATIC_ASSERT(sizeof(struct MultiplayerSubsession) <= NET_TRANSPORT_PACKET_PAYLO
 
 static inline void NetTransport_CopyEnvelopeToPacketHeader(volatile struct NetTransportPacketHeader *header, const struct NetPacketEnvelope *envelope)
 {
-    header->sessionId = envelope->sessionId;
-    header->sessionEpoch = envelope->sessionEpoch;
+    header->session_id = envelope->session_id;
+    header->session_epoch = envelope->session_epoch;
     header->tick = envelope->tick;
     header->sequence = envelope->sequence;
-    header->payloadSize = envelope->payloadSize;
+    header->payload_size = envelope->payload_size;
     header->checksum = envelope->checksum;
-    header->packetType = envelope->packetType;
-    header->playerId = envelope->playerId;
+    header->packet_type = envelope->packet_type;
+    header->player_id = envelope->player_id;
 }
 
 static inline void NetTransport_CopyPacketHeaderToEnvelope(struct NetPacketEnvelope *envelope, const volatile struct NetTransportPacketHeader *header)
 {
     envelope->magic = NET_PROTOCOL_MAGIC;
-    envelope->protocolVersion = NET_PROTOCOL_VERSION;
-    envelope->headerSize = sizeof(*envelope);
-    envelope->sessionId = header->sessionId;
-    envelope->sessionEpoch = header->sessionEpoch;
+    envelope->protocol_version = NET_PROTOCOL_VERSION;
+    envelope->header_size = sizeof(*envelope);
+    envelope->session_id = header->session_id;
+    envelope->session_epoch = header->session_epoch;
     envelope->tick = header->tick;
-    envelope->packetType = header->packetType;
-    envelope->playerId = header->playerId;
+    envelope->packet_type = header->packet_type;
+    envelope->player_id = header->player_id;
     envelope->flags = 0;
     envelope->reserved = 0;
     envelope->sequence = header->sequence;
     envelope->ack = 0;
-    envelope->payloadSize = header->payloadSize;
+    envelope->payload_size = header->payload_size;
     envelope->checksum = header->checksum;
 }
 
 struct NetTransportSessionView
 {
     bool8 connected;
-    u8 localPlayerId;
-    u8 hostPlayerId;
-    u8 playerCount;
-    u8 transportMode;
-    u32 sessionId;
-    u32 sessionEpoch;
-    u32 playerToken;
-    u32 joinNonce;
-    u32 bridgeTick;
-    u32 serverClockSeconds;
+    u8 local_player_id;
+    u8 host_player_id;
+    u8 player_count;
+    u8 transport_mode;
+    u32 session_id;
+    u32 session_epoch;
+    u32 player_token;
+    u32 join_nonce;
+    u32 bridge_tick;
+    u32 server_clock_seconds;
     struct NetPlayerSnapshot players[MAX_NET_PLAYERS];
     struct MultiplayerSubsession subsessions[MAX_NET_SUBSESSIONS];
 };

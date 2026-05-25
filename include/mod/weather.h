@@ -30,11 +30,11 @@ enum ModWeatherSource
 
 struct ModWeatherDisplay
 {
-    u8 vanillaWeather;
+    u8 vanilla_weather;
     u16 layers;
     u8 source;
     u8 priority;
-    u16 battleWeatherMask;
+    u16 battle_weather_mask;
 };
 
 typedef bool8 (*ModWeatherProviderFunc)(struct ModWeatherDisplay *display);

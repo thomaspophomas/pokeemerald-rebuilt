@@ -20,23 +20,23 @@
 struct ModItemDefinition
 {
     const char *key;
-    const char *nameKey;
-    const char *descriptionKey;
-    const char *fieldUseHookKey;
-    const char *battleUseHookKey;
-    u16 itemId;
+    const char *name_key;
+    const char *description_key;
+    const char *field_use_hook_key;
+    const char *battle_use_hook_key;
+    u16 item_id;
     u16 price;
     u16 flags;
-    u8 holdEffect;
-    u8 holdEffectParam;
+    u8 hold_effect;
+    u8 hold_effect_param;
     u8 importance;
     u8 pocket;
     u8 type;
-    u8 battleUsage;
-    u8 secondaryId;
+    u8 battle_usage;
+    u8 secondary_id;
     s16 priority;
-    ItemUseFunc fieldUseFunc;
-    ItemUseFunc battleUseFunc;
+    ItemUseFunc field_use_func;
+    ItemUseFunc battle_use_func;
 };
 
 bool8 ItemApi_IsDefinitionValid(const struct ModItemDefinition *definition, bool8 allow_empty_default);

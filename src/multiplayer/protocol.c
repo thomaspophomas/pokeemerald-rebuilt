@@ -37,18 +37,18 @@ void NetProtocol_InitEnvelope(struct NetPacketEnvelope *envelope, u8 packet_type
 void NetProtocol_InitEnvelopeWithEpoch(struct NetPacketEnvelope *envelope, u8 packet_type, u8 player_id, u32 session_id, u32 session_epoch, u32 tick, u16 payload_size)
 {
     envelope->magic = NET_PROTOCOL_MAGIC;
-    envelope->protocolVersion = NET_PROTOCOL_VERSION;
-    envelope->headerSize = sizeof(*envelope);
-    envelope->sessionId = session_id;
-    envelope->sessionEpoch = session_epoch;
+    envelope->protocol_version = NET_PROTOCOL_VERSION;
+    envelope->header_size = sizeof(*envelope);
+    envelope->session_id = session_id;
+    envelope->session_epoch = session_epoch;
     envelope->tick = tick;
-    envelope->packetType = packet_type;
-    envelope->playerId = player_id;
+    envelope->packet_type = packet_type;
+    envelope->player_id = player_id;
     envelope->flags = 0;
     envelope->reserved = 0;
     envelope->sequence = 0;
     envelope->ack = 0;
-    envelope->payloadSize = payload_size;
+    envelope->payload_size = payload_size;
     envelope->checksum = 0;
 }
 
@@ -58,17 +58,17 @@ bool8 NetProtocol_ValidateEnvelope(const struct NetPacketEnvelope *envelope, u8 
         return FALSE;
     if (envelope->magic != NET_PROTOCOL_MAGIC)
         return FALSE;
-    if (envelope->protocolVersion != NET_PROTOCOL_VERSION)
+    if (envelope->protocol_version != NET_PROTOCOL_VERSION)
         return FALSE;
-    if (envelope->headerSize != sizeof(*envelope))
+    if (envelope->header_size != sizeof(*envelope))
         return FALSE;
     if (packet_type == NET_PACKET_NONE || packet_type >= NET_PACKET_COUNT)
         return FALSE;
-    if (envelope->packetType != packet_type)
+    if (envelope->packet_type != packet_type)
         return FALSE;
     if (envelope->sequence == 0)
         return FALSE;
-    if (envelope->payloadSize != payload_size)
+    if (envelope->payload_size != payload_size)
         return FALSE;
 
     return TRUE;

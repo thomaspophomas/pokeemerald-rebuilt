@@ -48,7 +48,7 @@ static void EmitFlagChanged(u16 mod_flag_id, bool8 value, const char *reason)
 {
     struct ModEventFlagChanged payload;
 
-    payload.flagId = mod_flag_id;
+    payload.flag_id = mod_flag_id;
     payload.value = value;
     payload.reason = reason;
     ModEvent_Emit(MOD_EVENT_FLAG_CHANGED, &payload, sizeof(payload));
@@ -62,7 +62,7 @@ void ModFlag_Init(void)
     ModState_Init();
     for (flag_index = 0; flag_index < gModFlagDefinitionCount; flag_index++)
     {
-        if (gModFlagDefinitions[flag_index].initialValue && !GetModFlagBit(gModFlagDefinitions[flag_index].mod_flag_id))
+        if (gModFlagDefinitions[flag_index].initial_value && !GetModFlagBit(gModFlagDefinitions[flag_index].mod_flag_id))
         {
             SetModFlagBit(gModFlagDefinitions[flag_index].mod_flag_id, TRUE);
             changed = TRUE;

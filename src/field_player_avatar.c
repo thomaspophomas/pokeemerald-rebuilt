@@ -792,15 +792,15 @@ bool8 IsPlayerCollidingWithFarawayIslandMew(u8 direction)
 {
     u8 mewObjectId;
     struct ObjectEvent *object;
-    s16 playerX;
-    s16 playerY;
+    s16 player_x;
+    s16 player_y;
     s16 mewPrevX;
 
     object = &gObjectEvents[gPlayerAvatar.objectEventId];
-    playerX = object->currentCoords.x;
-    playerY = object->currentCoords.y;
+    player_x = object->currentCoords.x;
+    player_y = object->currentCoords.y;
 
-    MoveCoords(direction, &playerX, &playerY);
+    MoveCoords(direction, &player_x, &player_y);
     mewObjectId = GetObjectEventIdByLocalIdAndMap(LOCALID_FARAWAY_ISLAND_MEW, MAP_NUM(MAP_FARAWAY_ISLAND_INTERIOR), MAP_GROUP(MAP_FARAWAY_ISLAND_INTERIOR));
     if (mewObjectId == OBJECT_EVENTS_COUNT)
         return FALSE;
@@ -808,14 +808,14 @@ bool8 IsPlayerCollidingWithFarawayIslandMew(u8 direction)
     object = &gObjectEvents[mewObjectId];
     mewPrevX = object->previousCoords.x;
 
-    if (mewPrevX == playerX)
+    if (mewPrevX == player_x)
     {
-        if (object->previousCoords.y != playerY
+        if (object->previousCoords.y != player_y
             || object->currentCoords.x != mewPrevX
             || object->currentCoords.y != object->previousCoords.y)
         {
-            if (object->previousCoords.x == playerX &&
-                object->previousCoords.y == playerY)
+            if (object->previousCoords.x == player_x &&
+                object->previousCoords.y == player_y)
                 return TRUE;
         }
     }
@@ -1750,25 +1750,25 @@ static void FishingApi_BuildContext(struct Task *task, u8 phase, u8 outcome, str
     context->rod = task->tFishingRod;
     context->phase = phase;
     context->round = task->tRoundsPlayed;
-    context->dotsRequired = task->tDotsRequired;
-    context->dotsShown = task->tNumDots;
-    context->minRoundsRequired = task->tMinRoundsRequired;
+    context->dots_required = task->tDotsRequired;
+    context->dots_shown = task->tNumDots;
+    context->min_rounds_required = task->tMinRoundsRequired;
     context->frame = task->tFrameCounter;
-    context->currentOutcome = outcome;
+    context->current_outcome = outcome;
     if (gSaveBlock1Ptr != NULL)
     {
-        context->mapGroup = gSaveBlock1Ptr->location.mapGroup;
-        context->mapNum = gSaveBlock1Ptr->location.mapNum;
+        context->map_group = gSaveBlock1Ptr->location.mapGroup;
+        context->map_num = gSaveBlock1Ptr->location.mapNum;
     }
-    context->playerX = playerObjEvent->currentCoords.x;
-    context->playerY = playerObjEvent->currentCoords.y;
+    context->player_x = playerObjEvent->currentCoords.x;
+    context->player_y = playerObjEvent->currentCoords.y;
 }
 
 static void FishingApi_ApplyContext(struct Task *task, const struct FishingContext *context)
 {
-    task->tDotsRequired = context->dotsRequired;
-    task->tNumDots = context->dotsShown;
-    task->tMinRoundsRequired = context->minRoundsRequired;
+    task->tDotsRequired = context->dots_required;
+    task->tNumDots = context->dots_shown;
+    task->tMinRoundsRequired = context->min_rounds_required;
 }
 
 static void FishingApi_ApplyOutcome(struct Task *task, u8 outcome, u8 continueStep)
@@ -1803,17 +1803,17 @@ static void FishingApi_StartCustomAction(struct Task *task, const struct Fishing
 {
     const u8 *prompt;
 
-    task->tFishingApiButtons = request->requiredButtons;
-    task->tFishingApiTimeout = request->timeoutFrames;
-    task->tFishingApiSuccess = request->successOutcome;
-    task->tFishingApiFailure = request->failureOutcome;
+    task->tFishingApiButtons = request->required_buttons;
+    task->tFishingApiTimeout = request->timeout_frames;
+    task->tFishingApiSuccess = request->success_outcome;
+    task->tFishingApiFailure = request->failure_outcome;
     task->tFishingApiReturn = returnStep;
     task->tFrameCounter = 0;
     task->tStep = FISHING_CUSTOM_ACTION;
 
-    if (request->promptKey != NULL)
+    if (request->prompt_key != NULL)
     {
-        prompt = LanguageApi_GetText(request->promptKey);
+        prompt = LanguageApi_GetText(request->prompt_key);
         if (prompt[0] != EOS)
         {
             FillWindowPixelBuffer(0, PIXEL_FILL(1));
@@ -1847,8 +1847,8 @@ static bool8 FishingApi_RunTaskPhase(struct Task *task, u8 phase, u8 outcome, u8
     }
     if (result == FISHING_ACTION_OVERRIDE)
     {
-        FishingApi_ApplyOutcome(task, context.currentOutcome, continueStep);
-        return context.currentOutcome != FISHING_OUTCOME_CONTINUE;
+        FishingApi_ApplyOutcome(task, context.current_outcome, continueStep);
+        return context.current_outcome != FISHING_OUTCOME_CONTINUE;
     }
 
     return FALSE;
@@ -2038,11 +2038,11 @@ static bool8 Fishing_CheckForBite(struct Task *task)
         if (result == FISHING_ACTION_OVERRIDE)
         {
             bite = context.bite;
-            if (context.currentOutcome != FISHING_OUTCOME_CONTINUE)
+            if (context.current_outcome != FISHING_OUTCOME_CONTINUE)
             {
-                FishingApi_ApplyOutcome(task, context.currentOutcome, task->tStep);
-                if (context.currentOutcome != FISHING_OUTCOME_START_ENCOUNTER
-                 && context.currentOutcome != FISHING_OUTCOME_ON_HOOK)
+                FishingApi_ApplyOutcome(task, context.current_outcome, task->tStep);
+                if (context.current_outcome != FISHING_OUTCOME_START_ENCOUNTER
+                 && context.current_outcome != FISHING_OUTCOME_ON_HOOK)
                     bite = FALSE;
             }
             else if (!bite)

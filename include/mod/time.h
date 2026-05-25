@@ -14,18 +14,18 @@ enum ModTimeSegment
 
 struct ModTimeSnapshot
 {
-    u32 epochSeconds;
-    u16 dayCount;
-    u16 minuteOfDay;
+    u32 epoch_seconds;
+    u16 day_count;
+    u16 minute_of_day;
     u8 segment;
-    bool8 usesServerClock;
+    bool8 uses_server_clock;
 };
 
 struct ModTimeSegmentDefinition
 {
     const char *key;
-    u16 startMinute;
-    u16 endMinute;
+    u16 start_minute;
+    u16 end_minute;
     u8 segment;
 };
 

@@ -11,7 +11,7 @@ static bool8 DefinitionIsEmptyDefault(const struct ModBattleMoveDefinition *defi
     return definition->key == NULL
         && definition->move == MOVE_NONE
         && definition->priority == 0
-        && definition->overrideFlags == 0;
+        && definition->override_flags == 0;
 }
 
 static bool8 RuntimeMoveKeyExists(const char *key, const struct ModBattleMoveDefinition *moves, u16 count)
@@ -87,7 +87,7 @@ bool8 BattleDataApi_IsMoveDefinitionValid(const struct ModBattleMoveDefinition *
         return FALSE;
     if (definition->move == MOVE_NONE || definition->move >= MOVES_COUNT)
         return FALSE;
-    if (definition->overrideFlags == 0)
+    if (definition->override_flags == 0)
         return FALSE;
     return TRUE;
 }
@@ -104,23 +104,23 @@ const struct BattleMove *BattleDataApi_GetMove(u16 move)
         return &gBattleMoves[move];
 
     sEffectiveBattleMove = gBattleMoves[move];
-    if (definition->overrideFlags & MOD_BATTLE_MOVE_OVERRIDE_EFFECT)
+    if (definition->override_flags & MOD_BATTLE_MOVE_OVERRIDE_EFFECT)
         sEffectiveBattleMove.effect = definition->data.effect;
-    if (definition->overrideFlags & MOD_BATTLE_MOVE_OVERRIDE_POWER)
+    if (definition->override_flags & MOD_BATTLE_MOVE_OVERRIDE_POWER)
         sEffectiveBattleMove.power = definition->data.power;
-    if (definition->overrideFlags & MOD_BATTLE_MOVE_OVERRIDE_TYPE)
+    if (definition->override_flags & MOD_BATTLE_MOVE_OVERRIDE_TYPE)
         sEffectiveBattleMove.type = definition->data.type;
-    if (definition->overrideFlags & MOD_BATTLE_MOVE_OVERRIDE_ACCURACY)
+    if (definition->override_flags & MOD_BATTLE_MOVE_OVERRIDE_ACCURACY)
         sEffectiveBattleMove.accuracy = definition->data.accuracy;
-    if (definition->overrideFlags & MOD_BATTLE_MOVE_OVERRIDE_PP)
+    if (definition->override_flags & MOD_BATTLE_MOVE_OVERRIDE_PP)
         sEffectiveBattleMove.pp = definition->data.pp;
-    if (definition->overrideFlags & MOD_BATTLE_MOVE_OVERRIDE_SECONDARY)
+    if (definition->override_flags & MOD_BATTLE_MOVE_OVERRIDE_SECONDARY)
         sEffectiveBattleMove.secondaryEffectChance = definition->data.secondaryEffectChance;
-    if (definition->overrideFlags & MOD_BATTLE_MOVE_OVERRIDE_TARGET)
+    if (definition->override_flags & MOD_BATTLE_MOVE_OVERRIDE_TARGET)
         sEffectiveBattleMove.target = definition->data.target;
-    if (definition->overrideFlags & MOD_BATTLE_MOVE_OVERRIDE_PRIORITY)
+    if (definition->override_flags & MOD_BATTLE_MOVE_OVERRIDE_PRIORITY)
         sEffectiveBattleMove.priority = definition->data.priority;
-    if (definition->overrideFlags & MOD_BATTLE_MOVE_OVERRIDE_FLAGS)
+    if (definition->override_flags & MOD_BATTLE_MOVE_OVERRIDE_FLAGS)
         sEffectiveBattleMove.flags = definition->data.flags;
     return &sEffectiveBattleMove;
 }
