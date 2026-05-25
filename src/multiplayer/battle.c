@@ -457,8 +457,8 @@ static bool8 BuildMirrorSecretBaseBattle(void)
     sPendingSecretBase.secretBaseId = 1;
     sPendingSecretBase.gender = gSaveBlock2Ptr->playerGender;
     sPendingSecretBase.language = gGameLanguage;
-    memcpy(sPendingSecretBase.trainerName, gSaveBlock2Ptr->player_name, PLAYER_NAME_LENGTH);
-    memcpy(sPendingSecretBase.trainer_id, gSaveBlock2Ptr->playerTrainerId, TRAINER_ID_LENGTH);
+    memcpy(sPendingSecretBase.trainerName, gSaveBlock2Ptr->playerName, PLAYER_NAME_LENGTH);
+    memcpy(sPendingSecretBase.trainerId, gSaveBlock2Ptr->playerTrainerId, TRAINER_ID_LENGTH);
 
     for (source_party_index = 0; source_party_index < PARTY_SIZE && secret_base_party_index < PARTY_SIZE; source_party_index++)
     {

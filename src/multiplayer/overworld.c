@@ -54,7 +54,7 @@ static void BuildLocalPartyProfile(struct NetPlayerBattleProfile *profile)
     if (gSaveBlock2Ptr != NULL)
     {
         profile->trainer_gender = gSaveBlock2Ptr->playerGender;
-        memcpy(profile->player_name, gSaveBlock2Ptr->player_name, PLAYER_NAME_LENGTH + 1);
+        memcpy(profile->player_name, gSaveBlock2Ptr->playerName, PLAYER_NAME_LENGTH + 1);
         profile->player_name[PLAYER_NAME_LENGTH] = EOS;
     }
 
@@ -716,8 +716,8 @@ void MultiplayerOverworld_BuildLocalSnapshot(struct NetPlayerSnapshot *snapshot,
     snapshot->x = player_object_event->currentCoords.x;
     snapshot->y = player_object_event->currentCoords.y;
     snapshot->elevation = player_object_event->previousElevation;
-    snapshot->facing_direction = player_object_event->facing_direction;
-    snapshot->movement_action_id = player_object_event->movement_action_id;
+    snapshot->facing_direction = player_object_event->facingDirection;
+    snapshot->movement_action_id = player_object_event->movementActionId;
     snapshot->avatar_graphics_id = GetPlayerAvatarGraphicsIdByCurrentState();
     snapshot->graphics_revision = ((u16)snapshot->avatar_graphics_id << 8) | snapshot->outfit_id;
 #else
