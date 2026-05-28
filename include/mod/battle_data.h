@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_BATTLE_DATA_H
 #define GUARD_MOD_BATTLE_DATA_H
 
-#include "global.h"
+#include "mod/base.h"
 #include "pokemon.h"
 
 #define MOD_BATTLE_MOVE_OVERRIDE_EFFECT      (1 << 0)

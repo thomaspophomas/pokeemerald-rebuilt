@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_REWARD_H
 #define GUARD_MOD_REWARD_H
 
-#include "global.h"
+#include "mod/base.h"
 
 #define MOD_REWARD_SOURCE_PICKUP_COMMON 1
 #define MOD_REWARD_SOURCE_PICKUP_RARE   2

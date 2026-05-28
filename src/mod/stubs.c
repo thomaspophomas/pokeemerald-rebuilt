@@ -95,6 +95,26 @@ void ModState_BumpRevision(void)
 {
 }
 
+void *ModState_GetBlock(const char *mod_id, u16 size, u16 version)
+{
+    return NULL;
+}
+
+bool8 ModState_IsBlockFresh(const char *mod_id)
+{
+    return FALSE;
+}
+
+bool8 ModState_NeedsMigration(const char *mod_id)
+{
+    return FALSE;
+}
+
+bool8 ModState_MarkMigrated(const char *mod_id)
+{
+    return FALSE;
+}
+
 void ModFlag_Init(void)
 {
 }
@@ -332,6 +352,11 @@ bool8 MapApi_IsPositionValid(u16 map_id, s16 x, s16 y)
 }
 
 const struct ModMapDefinition *MapApi_FindDefinition(const char *key)
+{
+    return NULL;
+}
+
+const char *MapApi_GetScriptPath(u16 map_id)
 {
     return NULL;
 }

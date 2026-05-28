@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_NPC_H
 #define GUARD_MOD_NPC_H
 
-#include "global.h"
+#include "mod/base.h"
 
 #define MOD_NPC_INSTANCE_NONE 0xFF
 #define MOD_NPC_DYNAMIC_LOCAL_ID_BASE 0xD0

@@ -1,0 +1,9 @@
+{
+  "providers": [
+    {
+      "id": "route_rain",
+      "handler": "MinimalWeather_ResolveWeather",
+      "priority": 10
+    }
+  ]
+}

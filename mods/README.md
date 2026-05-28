@@ -1,6 +1,6 @@
 # Mods Directory
 
-<!-- last_updated: 2026-05-25 -->
+<!-- last_updated: 2026-05-26 -->
 
 Build-time mods live under `mods/<modId>`. The generator reads
 `mods/<modId>/mod.json`, scans known domain folders, and writes deterministic C
@@ -22,9 +22,19 @@ make -j"$(nproc)" modern FEATURE_MODS=1
 changes belong under `mods/<modId>`, including optional C entrypoints in
 `mods/<modId>/src/*.c`.
 
+Create a starter mod with:
+
+```bash
+make mod-new ID=my_mod TYPE=event
+```
+
+Supported starter types are `basic`, `event`, `weather`, `npc`, and `item`.
+
 Run either command after changing manifests:
 
 ```bash
+make mod-check
+make mod-ci
 make generated FEATURE_MODS=1
 python3 scripts/modgen.py --root .
 ```
@@ -37,6 +47,23 @@ explicit field names such as `.mod_id`, `.mod_flag_id`, `.weather_provider_id`,
 `.ruleset_id`, `.npc_definition_id`, and `.map_id` so compiler errors point at
 the mod-facing concept that changed.
 
+By default every installed mod is active. Add `mods/enabled.json` to pin a
+modpack:
+
+```json
+{
+  "enabled": ["demo", "weather_plus"]
+}
+```
+
+Local helpers keep that file deterministic:
+
+```bash
+make mod-list
+make mod-enable ID=demo
+make mod-disable ID=demo
+```
+
 ## Manifest
 
 Minimum `mods/demo/mod.json`:
@@ -46,6 +73,7 @@ Minimum `mods/demo/mod.json`:
   "id": "demo",
   "name": "Demo Mod",
   "version": "1.0.0",
+  "requiresSdk": ">=1",
   "priority": 1000,
   "dependencies": []
 }
@@ -58,16 +86,39 @@ Optional fields:
   "id": "demo",
   "name": "Demo Mod",
   "version": "1.0.0",
+  "requiresSdk": ">=1",
   "priority": 10,
   "featureFlags": 0,
   "dependencies": ["base_mod"],
+  "loadAfter": ["optional_integration"],
+  "conflictsWith": ["other_weather_stack"],
+  "requiresFeatures": ["FEATURE_MODS"],
+  "stateVersion": 1,
+  "stateBytes": 16,
   "entrypoints": ["src/demo.c"]
 }
 ```
 
-`id` must match `[a-z0-9][a-z0-9_-]*`. Mods are sorted by
-`(priority, id)`. Dependencies are checked for existence, not for version
-ranges.
+`id` must match `[a-z0-9][a-z0-9_-]*`. `requiresSdk` accepts simple
+requirements such as `>=1`. Mods are sorted by `(priority, id)`. Dependencies
+are checked for existence, not for version ranges. `make mod-check` also
+rejects enabled conflicts, invalid optional `loadAfter` ordering, missing
+entrypoint files, unknown top-level manifest fields, domain JSON shape errors,
+and declared `stateBytes` that exceed the current mod save-state budget.
+
+C files in `mods/<modId>/src/*.c` should include the public SDK aggregate:
+
+```c
+#include "mod_sdk.h"
+```
+
+Mod entrypoints may not include `global.h`, generated registries, `src/*`, or
+individual `mod/*.h` headers directly. If the aggregate SDK is missing a type
+or function, extend the adapter API instead of coupling the mod to engine
+internals.
+
+Copyable examples live under `mods/examples`. They are nested there so the
+normal `mods/*/mod.json` build scan does not compile them automatically.
 
 ## Key Rules
 
@@ -80,6 +131,11 @@ Use fully qualified keys only when intentionally referencing a shared namespace:
 ```json
 { "id": "shared:night_music" }
 ```
+
+Hook-like records may declare `"mode": "observe"`, `"modify"`, `"replace"`, or
+`"claim"`. `observe` and `modify` can stack. `replace` and `claim` are
+exclusive for the same resource, so two enabled mods cannot both own the same
+shop, item, encounter table, map, weather key, event type, or reward key.
 
 ## Supported Folders
 
@@ -107,9 +163,9 @@ Use fully qualified keys only when intentionally referencing a shared namespace:
 - `maps/<MapName>/scripts.inc`
 - `src/*.c`
 
-`maps/<MapName>/scripts.inc` is kept with the map folder for source layout, but
-the current generator indexes `map.json`; script inclusion still needs the
-normal map/script build plumbing.
+`maps/<MapName>/scripts.inc` is optional. When `map.json` references it with
+`"script": "scripts.inc"`, the generator validates the path, records it in the
+map registry, and adds it to `MOD_MAP_SCRIPT_INCS`.
 
 ## Domain Examples
 
@@ -570,12 +626,30 @@ The built-in default ruleset is `engine:gen3`.
   "id": "demo_town",
   "name": "DemoTown",
   "map_group": 0,
-  "map_num": 0
+  "map_num": 0,
+  "script": "scripts.inc"
 }
 ```
 
+Runtime code can call `MapApi_GetScriptPath(map_id)` to inspect the registered
+script include path.
+
 `mods/demo/src/demo.c` is picked up automatically. Extra `.c` files listed in
 `entrypoints` are also included when they exist.
+
+## Persistent State
+
+Mods reserve save-backed bytes with `stateVersion` and `stateBytes` in
+`mod.json`. Runtime code should use the SDK state port:
+
+```c
+struct DemoState *state = ModState_GetBlock("demo", sizeof(*state), 1);
+```
+
+Use `ModState_IsBlockFresh` for first-run initialization,
+`ModState_NeedsMigration` when the saved block version is older than the
+manifest version, and `ModState_MarkMigrated` after successful migration. The
+registry stores per-mod block versions for the first 16 enabled stateful mods.
 
 ## Hook Symbols
 
@@ -583,11 +657,7 @@ Generated registries emit `extern` declarations for hook symbols. Implement
 them in `mods/<modId>/src/*.c` or existing source files:
 
 ```c
-#include "global.h"
-#include "mod/event.h"
-#include "mod/engine.h"
-#include "mod/pokeball.h"
-#include "mod/weather.h"
+#include "mod_sdk.h"
 
 s8 Demo_OnFlagChanged(const struct ModEvent *event);
 bool8 Demo_ResolveWeather(struct ModWeatherDisplay *display);
@@ -626,7 +696,12 @@ Generation fails on:
 - invalid C identifiers for function/script/sprite symbols
 - invalid C integer literals/tokens for numeric fields
 - time segment bounds outside `[0, 1439]`
+- forbidden C entrypoint includes such as `global.h`, generated registries, or
+  direct `mod/*.h` headers
+- duplicate `replace`/`claim` ownership for the same hook resource
 
 Mod C sources are de-duplicated by path. If two mods need to share code, put the
 shared behavior behind a normal source file or a shared mod dependency instead
 of relying on duplicate paths.
+
+Cookbook examples live under `docs/modding/cookbook`.

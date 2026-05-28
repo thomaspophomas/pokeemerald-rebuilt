@@ -1,7 +1,8 @@
 #ifndef GUARD_MOD_WEATHER_H
 #define GUARD_MOD_WEATHER_H
 
-#include "global.h"
+#include "mod/base.h"
+#include "constants/weather.h"
 
 enum ModWeatherLayer
 {

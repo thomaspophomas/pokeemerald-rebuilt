@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pokeemerald-rebuilt.local/schemas/engine.schema.json",
+  "title": "Mod engine",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/itemList"
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "engines": {
+          "$ref": "#/$defs/itemList"
+        }
+      },
+      "required": [
+        "engines"
+      ]
+    }
+  ],
+  "$defs": {
+    "itemList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "key": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "observe",
+            "modify",
+            "replace",
+            "claim"
+          ],
+          "default": "observe"
+        },
+        "version": {
+          "$ref": "#/$defs/u16"
+        },
+        "flags": {},
+        "captureHook": {
+          "$ref": "#/$defs/cIdentifier"
+        },
+        "capture_hook": {
+          "$ref": "#/$defs/cIdentifier"
+        },
+        "battleWeatherHook": {
+          "$ref": "#/$defs/cIdentifier"
+        },
+        "battle_weather_hook": {
+          "$ref": "#/$defs/cIdentifier"
+        }
+      }
+    },
+    "token": {
+      "oneOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "string",
+          "minLength": 1
+        }
+      ]
+    },
+    "s16": {
+      "type": "integer",
+      "minimum": -32768,
+      "maximum": 32767
+    },
+    "u16": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 65535
+    },
+    "cIdentifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
+    },
+    "shortString": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 31
+    }
+  }
+}

@@ -43,6 +43,28 @@ def expect(name: str, actual: object, expected: object) -> None:
         raise SystemExit(f"{name} mismatch: manifest={actual!r}, constants={expected!r}")
 
 
+def expect_protocol_migration(manifest: dict[str, object]) -> None:
+    protocol_version = manifest["protocolVersion"]
+    if protocol_version < 3:
+        return
+    migrations = manifest.get("protocolMigrations")
+    if not isinstance(migrations, list):
+        raise SystemExit("protocolMigrations list is required for protocol v3+")
+    expected_from = protocol_version - 1
+    for migration in migrations:
+        if not isinstance(migration, dict):
+            continue
+        if migration.get("from") != expected_from or migration.get("to") != protocol_version:
+            continue
+        if migration.get("compatibility") != "breaking":
+            raise SystemExit("protocol migration to v3 must mark compatibility as breaking")
+        reason = migration.get("reason")
+        if not isinstance(reason, str) or len(reason.strip()) < 20:
+            raise SystemExit("protocol migration to v3 needs a concrete reason")
+        return
+    raise SystemExit(f"Missing protocol migration {expected_from}->{protocol_version}")
+
+
 def calc_mod_catalog_hash() -> int:
     spec = importlib.util.spec_from_file_location("modgen", MODGEN)
     if spec is None or spec.loader is None:
@@ -88,6 +110,7 @@ def main() -> None:
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
 
     expect("protocolVersion", manifest["protocolVersion"], parse_int(read_define(CONSTANTS, "NET_PROTOCOL_VERSION")))
+    expect_protocol_migration(manifest)
     expect("emulatorBridgeVersion", manifest["emulatorBridgeVersion"], parse_int(read_define(CONSTANTS, "NET_EMULATOR_BRIDGE_VERSION")))
     expect("buildId", manifest["buildId"], f"0x{parse_int(read_define(CONSTANTS, 'NET_PROTOCOL_BUILD_ID')):08X}")
     expect("rulesetHash", manifest["rulesetHash"], f"0x{parse_int(read_define(CONSTANTS, 'NET_RULESET_HASH')):08X}")

@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_ENCOUNTER_H
 #define GUARD_MOD_ENCOUNTER_H
 
-#include "global.h"
+#include "mod/base.h"
 #include "constants/items.h"
 #include "wild_encounter.h"
 

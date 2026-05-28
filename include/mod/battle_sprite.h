@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_BATTLE_SPRITE_H
 #define GUARD_MOD_BATTLE_SPRITE_H
 
-#include "global.h"
+#include "mod/base.h"
 
 #define BATTLE_SPRITE_SIDE_FRONT 0
 #define BATTLE_SPRITE_SIDE_BACK  1

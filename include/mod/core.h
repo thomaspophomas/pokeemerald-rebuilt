@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_CORE_H
 #define GUARD_MOD_CORE_H
 
-#include "global.h"
+#include "mod/base.h"
 
 void ModApi_Init(void);
 void ModApi_RunFrame(void);

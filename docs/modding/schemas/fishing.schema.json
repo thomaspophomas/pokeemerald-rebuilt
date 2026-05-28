@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pokeemerald-rebuilt.local/schemas/fishing.schema.json",
+  "title": "Mod fishing",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/itemList"
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "actions": {
+          "$ref": "#/$defs/itemList"
+        }
+      },
+      "required": [
+        "actions"
+      ]
+    }
+  ],
+  "$defs": {
+    "itemList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "key": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "observe",
+            "modify",
+            "replace",
+            "claim"
+          ],
+          "default": "observe"
+        },
+        "hook": {
+          "$ref": "#/$defs/cIdentifier"
+        },
+        "hookSymbol": {
+          "$ref": "#/$defs/cIdentifier"
+        },
+        "hook_symbol": {
+          "$ref": "#/$defs/cIdentifier"
+        },
+        "hookKey": {
+          "$ref": "#/$defs/shortString"
+        },
+        "hook_key": {
+          "$ref": "#/$defs/shortString"
+        },
+        "rods": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/token"
+          }
+        },
+        "rodMask": {
+          "$ref": "#/$defs/token"
+        },
+        "rod_mask": {
+          "$ref": "#/$defs/token"
+        },
+        "phases": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/token"
+          }
+        },
+        "phaseMask": {
+          "$ref": "#/$defs/token"
+        },
+        "phase_mask": {
+          "$ref": "#/$defs/token"
+        },
+        "buttonMask": {
+          "$ref": "#/$defs/token"
+        },
+        "button_mask": {
+          "$ref": "#/$defs/token"
+        },
+        "timeoutFrames": {
+          "$ref": "#/$defs/u16"
+        },
+        "timeout_frames": {
+          "$ref": "#/$defs/u16"
+        },
+        "successOutcome": {
+          "$ref": "#/$defs/token"
+        },
+        "success_outcome": {
+          "$ref": "#/$defs/token"
+        },
+        "failureOutcome": {
+          "$ref": "#/$defs/token"
+        },
+        "failure_outcome": {
+          "$ref": "#/$defs/token"
+        },
+        "promptKey": {
+          "type": "string"
+        },
+        "prompt_key": {
+          "type": "string"
+        },
+        "params": {
+          "type": "array",
+          "maxItems": 4,
+          "items": {
+            "$ref": "#/$defs/s16"
+          }
+        },
+        "priority": {
+          "$ref": "#/$defs/s16"
+        },
+        "flags": {}
+      }
+    },
+    "token": {
+      "oneOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "string",
+          "minLength": 1
+        }
+      ]
+    },
+    "s16": {
+      "type": "integer",
+      "minimum": -32768,
+      "maximum": 32767
+    },
+    "u16": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 65535
+    },
+    "cIdentifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
+    },
+    "shortString": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 31
+    }
+  }
+}

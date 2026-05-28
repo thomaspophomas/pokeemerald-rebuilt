@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_CATALOG_H
 #define GUARD_MOD_CATALOG_H
 
-#include "global.h"
+#include "mod/base.h"
 
 #define MOD_CATALOG_SCHEMA_HASH 0x00000006
 

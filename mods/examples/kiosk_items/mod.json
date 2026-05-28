@@ -1,0 +1,14 @@
+{
+  "id": "kiosk_items",
+  "name": "Kiosk Items Example",
+  "version": "1.0.0",
+  "requiresSdk": ">=1",
+  "priority": 1200,
+  "requiresFeatures": ["FEATURE_MODS"],
+  "stateVersion": 1,
+  "stateBytes": 8,
+  "dependencies": [],
+  "loadAfter": [],
+  "conflictsWith": [],
+  "entrypoints": []
+}

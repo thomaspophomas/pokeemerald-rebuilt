@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_ITEM_H
 #define GUARD_MOD_ITEM_H
 
-#include "global.h"
+#include "mod/base.h"
 #include "../item.h"
 
 #define MOD_ITEM_OVERRIDE_NAME             (1 << 0)

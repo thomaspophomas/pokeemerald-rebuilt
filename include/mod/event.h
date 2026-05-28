@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_EVENT_H
 #define GUARD_MOD_EVENT_H
 
-#include "global.h"
+#include "mod/base.h"
 
 #define MOD_EVENT_MAX_RECURSION 4
 #define MOD_EVENT_FRAME_BUDGET 32

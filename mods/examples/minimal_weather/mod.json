@@ -1,0 +1,14 @@
+{
+  "id": "minimal_weather",
+  "name": "Minimal Weather Example",
+  "version": "1.0.0",
+  "requiresSdk": ">=1",
+  "priority": 1000,
+  "requiresFeatures": ["FEATURE_MODS"],
+  "stateVersion": 0,
+  "stateBytes": 0,
+  "dependencies": [],
+  "loadAfter": [],
+  "conflictsWith": [],
+  "entrypoints": ["src/minimal_weather.c"]
+}

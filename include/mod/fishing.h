@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_FISHING_H
 #define GUARD_MOD_FISHING_H
 
-#include "global.h"
+#include "mod/base.h"
 #include "constants/items.h"
 
 #define FISHING_ACTION_PARAM_COUNT 4

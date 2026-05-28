@@ -1,0 +1,14 @@
+{
+  "id": "guide_npc",
+  "name": "Guide NPC Example",
+  "version": "1.0.0",
+  "requiresSdk": ">=1",
+  "priority": 1100,
+  "requiresFeatures": ["FEATURE_MODS"],
+  "stateVersion": 0,
+  "stateBytes": 0,
+  "dependencies": [],
+  "loadAfter": [],
+  "conflictsWith": [],
+  "entrypoints": []
+}

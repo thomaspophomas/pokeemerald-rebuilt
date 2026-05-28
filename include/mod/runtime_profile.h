@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_RUNTIME_PROFILE_H
 #define GUARD_MOD_RUNTIME_PROFILE_H
 
-#include "global.h"
+#include "mod/base.h"
 #include "mod/badge.h"
 #include "mod/battle_data.h"
 #include "mod/encounter.h"

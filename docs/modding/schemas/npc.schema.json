@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pokeemerald-rebuilt.local/schemas/npc.schema.json",
+  "title": "Mod NPC definitions",
+  "oneOf": [
+    { "$ref": "#/$defs/npcList" },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "npcs": { "$ref": "#/$defs/npcList" }
+      },
+      "required": ["npcs"]
+    }
+  ],
+  "$defs": {
+    "npcList": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/npc" }
+    },
+    "npc": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "key": { "type": "string" },
+        "name": { "type": "string" },
+        "graphicsId": { "$ref": "#/$defs/token" },
+        "graphics_id": { "$ref": "#/$defs/token" },
+        "movementType": { "$ref": "#/$defs/token" },
+        "movement_type": { "$ref": "#/$defs/token" },
+        "localId": { "$ref": "#/$defs/token" },
+        "local_id": { "$ref": "#/$defs/token" },
+        "elevation": { "$ref": "#/$defs/token" },
+        "flagId": { "$ref": "#/$defs/token" },
+        "flag": { "$ref": "#/$defs/token" },
+        "scriptSymbol": { "$ref": "#/$defs/cIdentifier" },
+        "script": { "$ref": "#/$defs/cIdentifier" },
+        "mode": { "$ref": "#/$defs/hookMode" }
+      }
+    },
+    "token": {
+      "oneOf": [{ "type": "integer" }, { "type": "string", "minLength": 1 }]
+    },
+    "cIdentifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
+    },
+    "hookMode": {
+      "type": "string",
+      "enum": ["observe", "modify", "replace", "claim"],
+      "default": "observe"
+    }
+  }
+}

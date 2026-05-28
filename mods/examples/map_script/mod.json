@@ -1,0 +1,14 @@
+{
+  "id": "map_script",
+  "name": "Map Script Example",
+  "version": "1.0.0",
+  "requiresSdk": ">=1",
+  "priority": 1300,
+  "requiresFeatures": ["FEATURE_MODS"],
+  "stateVersion": 0,
+  "stateBytes": 0,
+  "dependencies": [],
+  "loadAfter": [],
+  "conflictsWith": [],
+  "entrypoints": []
+}

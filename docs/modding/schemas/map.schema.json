@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pokeemerald-rebuilt.local/schemas/map.schema.json",
+  "title": "Mod map definition",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "map_group": {
+      "$ref": "#/$defs/token"
+    },
+    "mapGroup": {
+      "$ref": "#/$defs/token"
+    },
+    "map_num": {
+      "$ref": "#/$defs/token"
+    },
+    "mapNum": {
+      "$ref": "#/$defs/token"
+    },
+    "script": {
+      "type": "string"
+    },
+    "scriptPath": {
+      "type": "string"
+    },
+    "script_path": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "observe",
+        "modify",
+        "replace",
+        "claim"
+      ],
+      "default": "observe"
+    }
+  },
+  "$defs": {
+    "token": {
+      "oneOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "string",
+          "minLength": 1
+        }
+      ]
+    }
+  }
+}

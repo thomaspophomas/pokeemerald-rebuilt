@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_TIME_H
 #define GUARD_MOD_TIME_H
 
-#include "global.h"
+#include "mod/base.h"
 
 enum ModTimeSegment
 {

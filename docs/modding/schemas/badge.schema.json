@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pokeemerald-rebuilt.local/schemas/badge.schema.json",
+  "title": "Mod badge",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/itemList"
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "effects": {
+          "$ref": "#/$defs/itemList"
+        }
+      },
+      "required": [
+        "effects"
+      ]
+    }
+  ],
+  "$defs": {
+    "itemList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "key": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "observe",
+            "modify",
+            "replace",
+            "claim"
+          ],
+          "default": "observe"
+        },
+        "badge": {
+          "$ref": "#/$defs/token"
+        },
+        "badgeId": {
+          "$ref": "#/$defs/token"
+        },
+        "badge_id": {
+          "$ref": "#/$defs/token"
+        },
+        "effect": {
+          "$ref": "#/$defs/token"
+        },
+        "effectKind": {
+          "$ref": "#/$defs/token"
+        },
+        "effect_kind": {
+          "$ref": "#/$defs/token"
+        },
+        "target": {
+          "$ref": "#/$defs/token"
+        },
+        "percentPerLevel": {
+          "$ref": "#/$defs/s16"
+        },
+        "percent_per_level": {
+          "$ref": "#/$defs/s16"
+        },
+        "maxLevel": {
+          "$ref": "#/$defs/u16"
+        },
+        "max_level": {
+          "$ref": "#/$defs/u16"
+        },
+        "flags": {}
+      }
+    },
+    "token": {
+      "oneOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "string",
+          "minLength": 1
+        }
+      ]
+    },
+    "s16": {
+      "type": "integer",
+      "minimum": -32768,
+      "maximum": 32767
+    },
+    "u16": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 65535
+    },
+    "cIdentifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
+    },
+    "shortString": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 31
+    }
+  }
+}

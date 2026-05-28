@@ -1,0 +1,9 @@
+{
+  "subscriptions": [
+    {
+      "type": "GAME_INIT",
+      "handler": "MinimalWeather_OnGameInit",
+      "priority": 10
+    }
+  ]
+}

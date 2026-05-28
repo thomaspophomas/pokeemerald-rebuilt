@@ -1,0 +1,164 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pokeemerald-rebuilt.local/schemas/item.schema.json",
+  "title": "Mod item overrides",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/itemList"
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "items": {
+          "$ref": "#/$defs/itemList"
+        }
+      },
+      "required": [
+        "items"
+      ]
+    }
+  ],
+  "$defs": {
+    "itemList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "key": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "itemId": {
+          "$ref": "#/$defs/token"
+        },
+        "item_id": {
+          "$ref": "#/$defs/token"
+        },
+        "nameKey": {
+          "type": "string"
+        },
+        "name_key": {
+          "type": "string"
+        },
+        "descriptionKey": {
+          "type": "string"
+        },
+        "description_key": {
+          "type": "string"
+        },
+        "price": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "holdEffect": {
+          "$ref": "#/$defs/token"
+        },
+        "hold_effect": {
+          "$ref": "#/$defs/token"
+        },
+        "holdEffectParam": {
+          "$ref": "#/$defs/token"
+        },
+        "hold_effect_param": {
+          "$ref": "#/$defs/token"
+        },
+        "importance": {
+          "$ref": "#/$defs/token"
+        },
+        "pocket": {
+          "$ref": "#/$defs/token"
+        },
+        "type": {
+          "$ref": "#/$defs/token"
+        },
+        "battleUsage": {
+          "$ref": "#/$defs/token"
+        },
+        "battle_usage": {
+          "$ref": "#/$defs/token"
+        },
+        "secondaryId": {
+          "$ref": "#/$defs/token"
+        },
+        "secondary_id": {
+          "$ref": "#/$defs/token"
+        },
+        "fieldUseHook": {
+          "$ref": "#/$defs/cIdentifier"
+        },
+        "field_use_hook": {
+          "$ref": "#/$defs/cIdentifier"
+        },
+        "fieldUseHookKey": {
+          "$ref": "#/$defs/shortString"
+        },
+        "field_use_hook_key": {
+          "$ref": "#/$defs/shortString"
+        },
+        "battleUseHook": {
+          "$ref": "#/$defs/cIdentifier"
+        },
+        "battle_use_hook": {
+          "$ref": "#/$defs/cIdentifier"
+        },
+        "battleUseHookKey": {
+          "$ref": "#/$defs/shortString"
+        },
+        "battle_use_hook_key": {
+          "$ref": "#/$defs/shortString"
+        },
+        "flags": {},
+        "priority": {
+          "$ref": "#/$defs/s16",
+          "default": 1000
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "observe",
+            "modify",
+            "replace",
+            "claim"
+          ],
+          "default": "observe"
+        }
+      }
+    },
+    "token": {
+      "oneOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "string",
+          "minLength": 1
+        }
+      ]
+    },
+    "shortString": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 31
+    },
+    "cIdentifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
+    },
+    "s16": {
+      "type": "integer",
+      "minimum": -32768,
+      "maximum": 32767
+    }
+  }
+}

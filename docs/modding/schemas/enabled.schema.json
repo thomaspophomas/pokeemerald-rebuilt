@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pokeemerald-rebuilt.local/schemas/enabled.schema.json",
+  "title": "Enabled mod set",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/enabledList"
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "enabled"
+      ],
+      "properties": {
+        "enabled": {
+          "$ref": "#/$defs/enabledList"
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "enabledList": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9_-]*$"
+      },
+      "uniqueItems": true
+    }
+  }
+}

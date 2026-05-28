@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_POKEBALL_H
 #define GUARD_MOD_POKEBALL_H
 
-#include "global.h"
+#include "mod/base.h"
 
 #define POKEBALL_CATCH_MODIFIER_DEFAULT 10
 #define POKEBALL_CATCH_MODIFIER_MASTER  255

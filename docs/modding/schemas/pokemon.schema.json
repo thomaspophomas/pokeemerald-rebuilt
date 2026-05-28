@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pokeemerald-rebuilt.local/schemas/pokemon.schema.json",
+  "title": "Mod pokemon",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/itemList"
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "pokemon": {
+          "$ref": "#/$defs/itemList"
+        }
+      },
+      "required": [
+        "pokemon"
+      ]
+    }
+  ],
+  "$defs": {
+    "itemList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "key": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "observe",
+            "modify",
+            "replace",
+            "claim"
+          ],
+          "default": "observe"
+        },
+        "species": {
+          "$ref": "#/$defs/token"
+        },
+        "speciesId": {
+          "$ref": "#/$defs/token"
+        },
+        "species_id": {
+          "$ref": "#/$defs/token"
+        },
+        "priority": {
+          "$ref": "#/$defs/s16"
+        },
+        "flags": {},
+        "info": {
+          "type": "object"
+        },
+        "baseStats": {
+          "type": "array"
+        },
+        "base_stats": {
+          "type": "array"
+        },
+        "types": {
+          "type": "array"
+        },
+        "catchRate": {
+          "$ref": "#/$defs/u16"
+        },
+        "catch_rate": {
+          "$ref": "#/$defs/u16"
+        },
+        "expYield": {
+          "$ref": "#/$defs/u16"
+        },
+        "exp_yield": {
+          "$ref": "#/$defs/u16"
+        },
+        "evYields": {
+          "type": "array"
+        },
+        "ev_yields": {
+          "type": "array"
+        },
+        "items": {
+          "type": "array"
+        },
+        "itemCommon": {
+          "$ref": "#/$defs/token"
+        },
+        "item_common": {
+          "$ref": "#/$defs/token"
+        },
+        "itemRare": {
+          "$ref": "#/$defs/token"
+        },
+        "item_rare": {
+          "$ref": "#/$defs/token"
+        },
+        "genderRatio": {
+          "$ref": "#/$defs/token"
+        },
+        "gender_ratio": {
+          "$ref": "#/$defs/token"
+        },
+        "eggCycles": {
+          "$ref": "#/$defs/u16"
+        },
+        "egg_cycles": {
+          "$ref": "#/$defs/u16"
+        },
+        "friendship": {
+          "$ref": "#/$defs/u16"
+        },
+        "growthRate": {
+          "$ref": "#/$defs/token"
+        },
+        "growth_rate": {
+          "$ref": "#/$defs/token"
+        },
+        "eggGroups": {
+          "type": "array"
+        },
+        "egg_groups": {
+          "type": "array"
+        },
+        "abilities": {
+          "type": "array"
+        },
+        "safariZoneFleeRate": {
+          "$ref": "#/$defs/u16"
+        },
+        "safari_zone_flee_rate": {
+          "$ref": "#/$defs/u16"
+        },
+        "bodyColor": {
+          "$ref": "#/$defs/token"
+        },
+        "body_color": {
+          "$ref": "#/$defs/token"
+        },
+        "levelUpMoves": {
+          "type": "array"
+        },
+        "level_up_moves": {
+          "type": "array"
+        },
+        "evolutions": {
+          "type": "array"
+        }
+      }
+    },
+    "token": {
+      "oneOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "string",
+          "minLength": 1
+        }
+      ]
+    },
+    "s16": {
+      "type": "integer",
+      "minimum": -32768,
+      "maximum": 32767
+    },
+    "u16": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 65535
+    },
+    "cIdentifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
+    },
+    "shortString": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 31
+    }
+  }
+}

@@ -31,7 +31,7 @@ server builds. The current `master` values are:
 
 ```json
 {
-  "protocolVersion": 2,
+  "protocolVersion": 3,
   "emulatorBridgeVersion": 10,
   "buildId": "0x0001000C",
   "rulesetHash": "0x00000003",
@@ -52,6 +52,14 @@ server builds. The current `master` values are:
   "battleProfilePublishRetryFrames": 10,
   "commitLogSize": 16,
   "authoritativeServer": true,
+  "protocolMigrations": [
+    {
+      "from": 2,
+      "to": 3,
+      "reason": "Authoritative server handshake becomes the required contract boundary for browser stream, bridge, battle, and trade subsessions.",
+      "compatibility": "breaking"
+    }
+  ],
   "mailbox": {
     "symbol": "gNetEmulatorBridgeMailbox",
     "struct": "NetEmulatorBridgeBuffer",

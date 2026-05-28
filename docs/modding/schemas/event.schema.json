@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pokeemerald-rebuilt.local/schemas/event.schema.json",
+  "title": "Mod event subscriptions",
+  "oneOf": [
+    { "$ref": "#/$defs/subscriptionList" },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "subscriptions": { "$ref": "#/$defs/subscriptionList" }
+      },
+      "required": ["subscriptions"]
+    }
+  ],
+  "$defs": {
+    "subscriptionList": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/subscription" }
+    },
+    "subscription": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["handler"],
+      "properties": {
+        "id": { "type": "string" },
+        "key": { "type": "string" },
+        "name": { "type": "string" },
+        "type": { "type": "string" },
+        "handler": { "$ref": "#/$defs/cIdentifier" },
+        "priority": { "$ref": "#/$defs/s16", "default": 1000 },
+        "mode": { "$ref": "#/$defs/hookMode" }
+      }
+    },
+    "cIdentifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
+    },
+    "s16": {
+      "type": "integer",
+      "minimum": -32768,
+      "maximum": 32767
+    },
+    "hookMode": {
+      "type": "string",
+      "enum": ["observe", "modify", "replace", "claim"],
+      "default": "observe"
+    }
+  }
+}

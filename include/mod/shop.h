@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_SHOP_H
 #define GUARD_MOD_SHOP_H
 
-#include "global.h"
+#include "mod/base.h"
 
 #define MOD_SHOP_MAX_ITEMS 32
 

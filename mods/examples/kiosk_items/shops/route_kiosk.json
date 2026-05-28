@@ -1,0 +1,12 @@
+{
+  "shops": [
+    {
+      "id": "route_kiosk",
+      "mapGroup": 1,
+      "mapNum": 1,
+      "type": "NORMAL",
+      "priority": 10,
+      "items": ["ITEM_POTION", "ITEM_ANTIDOTE", "ITEM_POKE_BALL"]
+    }
+  ]
+}

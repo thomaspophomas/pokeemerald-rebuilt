@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_OVERWORLD_SPRITE_H
 #define GUARD_MOD_OVERWORLD_SPRITE_H
 
-#include "global.h"
+#include "mod/base.h"
 
 #define OVERWORLD_SPRITE_API_INVALID_GFX 0xFF
 #define OVERWORLD_SPRITE_API_VIRTUAL_ID_BASE 224

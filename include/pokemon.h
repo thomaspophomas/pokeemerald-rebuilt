@@ -439,8 +439,8 @@ void SetMultiuseSpriteTemplateToTrainerFront(u16 trainerPicId, u8 battlerPositio
 /* GameFreak called Get(Box)MonData with either 2 or 3 arguments, for
  * type safety we have a Get(Box)MonData macro which dispatches to
  * either Get(Box)MonData2 or Get(Box)MonData3 based on the number of
- * arguments. The two functions are aliases of each other, but they
- * differ for matching purposes in the caller's codegen. */
+ * arguments. Non-modern builds keep the alias form for matching codegen;
+ * modern builds use small wrappers to satisfy newer GCC diagnostics. */
 #define GetMonData(...) CAT(GetMonData, NARG_8(__VA_ARGS__))(__VA_ARGS__)
 #define GetBoxMonData(...) CAT(GetBoxMonData, NARG_8(__VA_ARGS__))(__VA_ARGS__)
 u32 GetMonData3(struct Pokemon *mon, s32 field, u8 *data);

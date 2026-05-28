@@ -68,8 +68,8 @@ if grep -R -n "sBridge->players\\|sBridge->subsessions" src/multiplayer 2>/dev/n
     exit 1
 fi
 
-if ! grep -n '#define NET_PROTOCOL_VERSION 2' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
-    echo "Multiplayer protocol must retain epoch-aware version 2 semantics." >&2
+if ! grep -n '#define NET_PROTOCOL_VERSION 3' include/multiplayer/constants.h >/tmp/architecture_guard_matches.txt 2>/dev/null; then
+    echo "Multiplayer protocol must retain authoritative server contract version 3 semantics." >&2
     exit 1
 fi
 

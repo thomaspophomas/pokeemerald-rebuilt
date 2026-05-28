@@ -151,7 +151,7 @@ endif
 AUTO_GEN_TARGETS :=
 MODGEN_TARGETS := include/generated/mod_registry.h src/generated/mod_registry.c build/generated/mod_sources.mk
 ifeq ($(FEATURE_MODS),1)
-  MODGEN_INPUTS := scripts/modgen.py $(shell find mods -type f 2>/dev/null)
+  MODGEN_INPUTS := scripts/modgen.py $(shell find scripts/modgen_lib -name '*.py' -type f 2>/dev/null) $(shell find mods -type f 2>/dev/null)
   AUTO_GEN_TARGETS += $(MODGEN_TARGETS)
 endif
 FEATURE_CONFIG_STAMP := $(OBJ_DIR)/feature_config.stamp
@@ -180,8 +180,8 @@ MAKEFLAGS += --no-print-directory
 # Delete files that weren't built properly
 .DELETE_ON_ERROR:
 
-RULES_NO_SCAN += libagbsyscall clean clean-assets tidy tidymodern tidynonmodern generated clean-generated
-.PHONY: all rom modern compare FORCE
+RULES_NO_SCAN += libagbsyscall clean clean-assets tidy tidymodern tidynonmodern generated clean-generated mod-check mod-new mod-list mod-enable mod-disable mod-ci
+.PHONY: all rom modern compare FORCE mod-check mod-new mod-list mod-enable mod-disable mod-ci
 .PHONY: $(RULES_NO_SCAN)
 
 infoshell = $(foreach line, $(shell $1 | sed "s/ /__SPACE__/g"), $(info $(subst __SPACE__, ,$(line))))
@@ -292,8 +292,37 @@ include audio_rules.mk
 generated: $(AUTO_GEN_TARGETS)
 	@: # Silence the "Nothing to be done for `generated'" message, which some people were confusing for an error.
 
+mod-check:
+	$(PYTHON) scripts/mod_check.py --root .
+
+mod-new:
+ifndef ID
+	$(error Usage: make mod-new ID=your_mod_id [TYPE=basic|event|weather|npc|item])
+endif
+	$(PYTHON) scripts/mod_new.py --root . --id "$(ID)" --type "$(or $(TYPE),basic)"
+
+mod-list:
+	$(PYTHON) scripts/mod_enabled.py list --root .
+
+mod-enable:
+ifndef ID
+	$(error Usage: make mod-enable ID=your_mod_id)
+endif
+	$(PYTHON) scripts/mod_enabled.py enable --root . --id "$(ID)"
+
+mod-disable:
+ifndef ID
+	$(error Usage: make mod-disable ID=your_mod_id)
+endif
+	$(PYTHON) scripts/mod_enabled.py disable --root . --id "$(ID)"
+
+mod-ci: mod-check
+	$(PYTHON) scripts/ci/modgen_smoke.py
+	$(PYTHON) scripts/ci/modgen_domain_tests.py
+
 ifeq ($(FEATURE_MODS),1)
 $(MODGEN_TARGETS) &: $(MODGEN_INPUTS)
+	$(PYTHON) scripts/mod_check.py --root . --no-examples
 	$(PYTHON) scripts/modgen.py --root . --out-header include/generated/mod_registry.h --out-source src/generated/mod_registry.c --out-make build/generated/mod_sources.mk
 endif
 

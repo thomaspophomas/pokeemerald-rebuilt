@@ -1,0 +1,13 @@
+{
+  "rewards": [
+    {
+      "id": "starter_pickup",
+      "source": "PICKUP_COMMON",
+      "itemId": "ITEM_POTION",
+      "quantity": 1,
+      "minLevel": 1,
+      "maxLevel": 20,
+      "priority": 10
+    }
+  ]
+}

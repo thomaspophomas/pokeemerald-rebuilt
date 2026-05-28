@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pokeemerald-rebuilt.local/schemas/trainer.schema.json",
+  "title": "Mod trainer",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/itemList"
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "trainers": {
+          "$ref": "#/$defs/itemList"
+        }
+      },
+      "required": [
+        "trainers"
+      ]
+    }
+  ],
+  "$defs": {
+    "itemList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "key": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "observe",
+            "modify",
+            "replace",
+            "claim"
+          ],
+          "default": "observe"
+        },
+        "trainerId": {
+          "$ref": "#/$defs/token"
+        },
+        "trainer_id": {
+          "$ref": "#/$defs/token"
+        },
+        "priority": {
+          "$ref": "#/$defs/s16"
+        },
+        "flags": {},
+        "class": {
+          "$ref": "#/$defs/token"
+        },
+        "trainerClass": {
+          "$ref": "#/$defs/token"
+        },
+        "trainer_class": {
+          "$ref": "#/$defs/token"
+        },
+        "musicGender": {
+          "$ref": "#/$defs/token"
+        },
+        "music_gender": {
+          "$ref": "#/$defs/token"
+        },
+        "pic": {
+          "$ref": "#/$defs/token"
+        },
+        "items": {
+          "type": "array"
+        },
+        "double": {
+          "type": "boolean"
+        },
+        "ai": {
+          "$ref": "#/$defs/token"
+        },
+        "party": {
+          "type": "array"
+        }
+      }
+    },
+    "token": {
+      "oneOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "string",
+          "minLength": 1
+        }
+      ]
+    },
+    "s16": {
+      "type": "integer",
+      "minimum": -32768,
+      "maximum": 32767
+    },
+    "u16": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 65535
+    },
+    "cIdentifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
+    },
+    "shortString": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 31
+    }
+  }
+}

@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_ENGINE_H
 #define GUARD_MOD_ENGINE_H
 
-#include "global.h"
+#include "mod/base.h"
 
 #define ENGINE_RULESET_FLAG_SAVE_COMPATIBLE (1 << 0)
 #define ENGINE_RULESET_DEFAULT_ID "engine:gen3"

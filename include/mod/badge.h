@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_BADGE_H
 #define GUARD_MOD_BADGE_H
 
-#include "global.h"
+#include "mod/base.h"
 
 #define MOD_BADGE_LEVEL_MAX 10
 

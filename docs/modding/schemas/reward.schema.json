@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pokeemerald-rebuilt.local/schemas/reward.schema.json",
+  "title": "Mod rewards",
+  "oneOf": [
+    { "$ref": "#/$defs/rewardList" },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "rewards": { "$ref": "#/$defs/rewardList" }
+      },
+      "required": ["rewards"]
+    }
+  ],
+  "$defs": {
+    "rewardList": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/reward" }
+    },
+    "reward": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "key": { "type": "string" },
+        "name": { "type": "string" },
+        "source": { "$ref": "#/$defs/token" },
+        "itemId": { "$ref": "#/$defs/token" },
+        "item_id": { "$ref": "#/$defs/token" },
+        "quantity": { "type": "integer", "minimum": 1, "maximum": 999 },
+        "minLevel": { "type": "integer", "minimum": 1, "maximum": 100 },
+        "min_level": { "type": "integer", "minimum": 1, "maximum": 100 },
+        "maxLevel": { "type": "integer", "minimum": 1, "maximum": 100 },
+        "max_level": { "type": "integer", "minimum": 1, "maximum": 100 },
+        "priority": { "$ref": "#/$defs/s16", "default": 1000 },
+        "flags": {},
+        "hook": { "$ref": "#/$defs/cIdentifier" },
+        "hookSymbol": { "$ref": "#/$defs/cIdentifier" },
+        "hook_symbol": { "$ref": "#/$defs/cIdentifier" },
+        "hookKey": { "$ref": "#/$defs/shortString" },
+        "hook_key": { "$ref": "#/$defs/shortString" },
+        "battleWeatherHook": { "$ref": "#/$defs/cIdentifier" },
+        "mode": { "$ref": "#/$defs/hookMode" }
+      }
+    },
+    "token": {
+      "oneOf": [{ "type": "integer" }, { "type": "string", "minLength": 1 }]
+    },
+    "shortString": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 31
+    },
+    "cIdentifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
+    },
+    "s16": {
+      "type": "integer",
+      "minimum": -32768,
+      "maximum": 32767
+    },
+    "hookMode": {
+      "type": "string",
+      "enum": ["observe", "modify", "replace", "claim"],
+      "default": "observe"
+    }
+  }
+}

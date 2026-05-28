@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_POKEMON_DATA_H
 #define GUARD_MOD_POKEMON_DATA_H
 
-#include "global.h"
+#include "mod/base.h"
 #include "constants/pokemon.h"
 #include "constants/species.h"
 #include "pokemon.h"

@@ -1,0 +1,23 @@
+FROM debian:bookworm-slim
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        binutils-arm-none-eabi \
+        build-essential \
+        ca-certificates \
+        gcc-arm-none-eabi \
+        git \
+        libnewlib-arm-none-eabi \
+        libpng-dev \
+        make \
+        pkg-config \
+        python3 \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /src
+COPY . .
+RUN make clean-tools
+
+CMD ["bash"]

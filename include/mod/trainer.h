@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_TRAINER_H
 #define GUARD_MOD_TRAINER_H
 
-#include "global.h"
+#include "mod/base.h"
 #include "data.h"
 
 #define MOD_TRAINER_MAX_PARTY_SIZE PARTY_SIZE

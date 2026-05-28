@@ -103,3 +103,13 @@ const struct ModMapDefinition *MapApi_FindDefinition(const char *key)
 
     return NULL;
 }
+
+const char *MapApi_GetScriptPath(u16 map_id)
+{
+    const struct ModMapDefinition *definition = FindDefinitionByMapId(map_id);
+
+    if (definition == NULL)
+        return NULL;
+
+    return definition->script_path;
+}

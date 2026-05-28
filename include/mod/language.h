@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_LANGUAGE_H
 #define GUARD_MOD_LANGUAGE_H
 
-#include "global.h"
+#include "mod/base.h"
 
 #define LANGUAGE_API_DEFAULT_LANGUAGE "en"
 #define LANGUAGE_API_MAX_ID_LENGTH 7

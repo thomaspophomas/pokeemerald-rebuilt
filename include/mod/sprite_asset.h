@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_SPRITE_ASSET_H
 #define GUARD_MOD_SPRITE_ASSET_H
 
-#include "global.h"
+#include "mod/base.h"
 #include "sprite.h"
 
 struct ModSpriteAssetDefinition

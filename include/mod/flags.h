@@ -1,7 +1,7 @@
 #ifndef GUARD_MOD_FLAGS_H
 #define GUARD_MOD_FLAGS_H
 
-#include "global.h"
+#include "mod/base.h"
 
 #define MOD_FLAG_INVALID 0xFFFF
 #define MOD_FLAG_VANILLA_BASE 0x8000
