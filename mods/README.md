@@ -285,7 +285,9 @@ phases are `START`, `ROUND_START`, `DOT_CONFIG`, `BITE_CHECK`, `INPUT_WINDOW`,
 `MORE_DOTS_CHECK`, `BEFORE_ENCOUNTER`, and `END`. Rods are `OLD`, `GOOD`, and
 `SUPER`; `rodMask` may be used instead of `rods`. For `MEMORY_GAME`, params are
 max earned level, sequence display frames, per-input timeout frames, and one
-reserved slot.
+reserved slot. The memory-game encounter level is also capped by badge count:
+0 badges allow level 10, each badge adds 10 levels, and all 8 badges allow
+level 100.
 
 Online profiles may only provide fishing-action data for hooks already compiled
 into the ROM. A server record names the compiled source with `sourceKey` and

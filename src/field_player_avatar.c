@@ -1799,6 +1799,22 @@ static void FishingMemory_PrintInputPrompt(void)
     AddTextPrinterParameterized2(0, FONT_NORMAL, sPrompt, 1, 0, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_GRAY);
 }
 
+static u8 FishingMemory_GetBadgeLevelCap(void)
+{
+    u8 i;
+    u8 badgeCount = 0;
+
+    for (i = 0; i < NUM_BADGES; i++)
+    {
+        if (FlagGet(FLAG_BADGE01_GET + i))
+            badgeCount++;
+    }
+
+    if (badgeCount >= NUM_BADGES)
+        return MAX_LEVEL;
+    return 10 + (badgeCount * 10);
+}
+
 static void FishingMemory_StartNextRound(struct Task *task)
 {
     if (task->tFishingMemoryLength < sFishingMemoryMaxLevel)
@@ -1816,6 +1832,7 @@ static void FishingMemory_StartNextRound(struct Task *task)
 static void FishingApi_StartMemoryGame(struct Task *task, const struct FishingActionRequest *request)
 {
     s16 maxLevel;
+    u8 badgeLevelCap;
 
     maxLevel = request->params[0];
     if (maxLevel <= 0 || maxLevel > MAX_LEVEL)
@@ -1824,6 +1841,10 @@ static void FishingApi_StartMemoryGame(struct Task *task, const struct FishingAc
         sFishingMemoryMaxLevel = MIN_LEVEL;
     else
         sFishingMemoryMaxLevel = maxLevel;
+
+    badgeLevelCap = FishingMemory_GetBadgeLevelCap();
+    if (sFishingMemoryMaxLevel > badgeLevelCap)
+        sFishingMemoryMaxLevel = badgeLevelCap;
 
     sFishingMemoryShowFrames = FishingMemory_ClampFrames(request->params[1], FISHING_MEMORY_DEFAULT_SHOW_FRAMES);
     if (request->params[2] > 0)
