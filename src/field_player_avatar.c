@@ -24,6 +24,7 @@
 #include "tv.h"
 #include "wild_encounter.h"
 #include "constants/abilities.h"
+#include "constants/characters.h"
 #include "constants/event_objects.h"
 #include "constants/event_object_movement.h"
 #include "constants/field_effects.h"
@@ -135,6 +136,7 @@ static u8 Fishing_CheckMoreDots(struct Task *);
 static u8 Fishing_MonOnHook(struct Task *);
 static u8 Fishing_StartEncounter(struct Task *);
 static u8 Fishing_CustomAction(struct Task *);
+static u8 Fishing_MemoryGame(struct Task *);
 static u8 Fishing_NotEvenNibble(struct Task *);
 static u8 Fishing_GotAway(struct Task *);
 static u8 Fishing_NoMon(struct Task *);
@@ -1706,6 +1708,11 @@ static void Task_WaitStopSurfing(u8 taskId)
 #define tFishingApiReturn  data[8]
 #define tFishingApiBeforeEncounter data[9]
 #define tFishingApiEndOutcome data[10]
+#define tFishingMemoryScore data[4]
+#define tFishingMemoryLength data[5]
+#define tFishingMemoryInputIndex data[6]
+#define tFishingMemoryMode data[7]
+#define tFishingMemoryTimer data[8]
 #define tRoundsPlayed      data[12]
 #define tMinRoundsRequired data[13]
 #define tPlayerGfxId       data[14]
@@ -1720,6 +1727,21 @@ static void Task_WaitStopSurfing(u8 taskId)
 #define FISHING_GOT_AWAY 12
 #define FISHING_SHOW_RESULT 13
 #define FISHING_CUSTOM_ACTION 16
+#define FISHING_MEMORY_GAME 17
+
+#define FISHING_MEMORY_MODE_SHOW 0
+#define FISHING_MEMORY_MODE_INPUT 1
+#define FISHING_MEMORY_ARROW_UP 0
+#define FISHING_MEMORY_ARROW_DOWN 1
+#define FISHING_MEMORY_DEFAULT_SHOW_FRAMES 30
+#define FISHING_MEMORY_DEFAULT_INPUT_FRAMES 90
+#define FISHING_MEMORY_TEXT_LENGTH ((MAX_LEVEL * 2) + 1)
+
+static EWRAM_DATA u8 sFishingMemorySequence[MAX_LEVEL] = {};
+static EWRAM_DATA u8 sFishingMemoryMaxLevel = 0;
+static EWRAM_DATA u16 sFishingMemoryShowFrames = 0;
+static EWRAM_DATA u16 sFishingMemoryInputFrames = 0;
+static EWRAM_DATA u8 sFishingMemoryText[FISHING_MEMORY_TEXT_LENGTH] = {};
 
 static bool8 (*const sFishingStateFuncs[])(struct Task *) =
 {
@@ -1740,7 +1762,81 @@ static bool8 (*const sFishingStateFuncs[])(struct Task *) =
     Fishing_PutRodAway,
     Fishing_EndNoMon,
     Fishing_CustomAction,
+    Fishing_MemoryGame,
 };
+
+static u16 FishingMemory_ClampFrames(s16 value, u16 defaultValue)
+{
+    if (value <= 0)
+        return defaultValue;
+    if (value > 600)
+        return 600;
+    return value;
+}
+
+static void FishingMemory_PrintSequence(struct Task *task)
+{
+    u8 i;
+    u8 *text = sFishingMemoryText;
+
+    for (i = 0; i < task->tFishingMemoryLength && i < MAX_LEVEL; i++)
+    {
+        if (i != 0)
+            *text++ = CHAR_SPACE;
+        *text++ = sFishingMemorySequence[i] == FISHING_MEMORY_ARROW_DOWN ? CHAR_DOWN_ARROW : CHAR_UP_ARROW;
+    }
+    *text = EOS;
+
+    FillWindowPixelBuffer(0, PIXEL_FILL(1));
+    AddTextPrinterParameterized2(0, FONT_NORMAL, sFishingMemoryText, 1, 0, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_GRAY);
+}
+
+static void FishingMemory_PrintInputPrompt(void)
+{
+    static const u8 sPrompt[] = _("?");
+
+    FillWindowPixelBuffer(0, PIXEL_FILL(1));
+    AddTextPrinterParameterized2(0, FONT_NORMAL, sPrompt, 1, 0, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_GRAY);
+}
+
+static void FishingMemory_StartNextRound(struct Task *task)
+{
+    if (task->tFishingMemoryLength < sFishingMemoryMaxLevel)
+    {
+        sFishingMemorySequence[task->tFishingMemoryLength] = Random() & 1;
+        task->tFishingMemoryLength++;
+    }
+
+    task->tFishingMemoryInputIndex = 0;
+    task->tFishingMemoryTimer = 0;
+    task->tFishingMemoryMode = FISHING_MEMORY_MODE_SHOW;
+    FishingMemory_PrintSequence(task);
+}
+
+static void FishingApi_StartMemoryGame(struct Task *task, const struct FishingActionRequest *request)
+{
+    s16 maxLevel;
+
+    maxLevel = request->params[0];
+    if (maxLevel <= 0 || maxLevel > MAX_LEVEL)
+        sFishingMemoryMaxLevel = MAX_LEVEL;
+    else if (maxLevel < MIN_LEVEL)
+        sFishingMemoryMaxLevel = MIN_LEVEL;
+    else
+        sFishingMemoryMaxLevel = maxLevel;
+
+    sFishingMemoryShowFrames = FishingMemory_ClampFrames(request->params[1], FISHING_MEMORY_DEFAULT_SHOW_FRAMES);
+    if (request->params[2] > 0)
+        sFishingMemoryInputFrames = FishingMemory_ClampFrames(request->params[2], FISHING_MEMORY_DEFAULT_INPUT_FRAMES);
+    else
+        sFishingMemoryInputFrames = FishingMemory_ClampFrames(request->timeout_frames, FISHING_MEMORY_DEFAULT_INPUT_FRAMES);
+
+    task->tFishingMemoryScore = 0;
+    task->tFishingMemoryLength = 0;
+    task->tFrameCounter = 0;
+    task->tStep = FISHING_MEMORY_GAME;
+    FishingMemory_StartNextRound(task);
+}
 
 static void FishingApi_BuildContext(struct Task *task, u8 phase, u8 outcome, struct FishingContext *context)
 {
@@ -1838,6 +1934,11 @@ static bool8 FishingApi_RunTaskPhase(struct Task *task, u8 phase, u8 outcome, u8
     if (result == FISHING_ACTION_REQUEST_ACTION)
     {
         FishingApi_StartCustomAction(task, &request, continueStep);
+        return TRUE;
+    }
+    if (result == FISHING_ACTION_MEMORY_GAME)
+    {
+        FishingApi_StartMemoryGame(task, &request);
         return TRUE;
     }
     if (result == FISHING_ACTION_CANCEL)
@@ -2030,6 +2131,14 @@ static bool8 Fishing_CheckForBite(struct Task *task)
             FishingApi_StartCustomAction(task, &request, task->tStep);
             return TRUE;
         }
+        if (result == FISHING_ACTION_MEMORY_GAME)
+        {
+            if (bite)
+                FishingApi_StartMemoryGame(task, &request);
+            else
+                task->tStep = FISHING_NO_BITE;
+            return TRUE;
+        }
         if (result == FISHING_ACTION_CANCEL)
         {
             task->tStep = FISHING_GOT_AWAY;
@@ -2193,6 +2302,89 @@ static bool8 Fishing_CustomAction(struct Task *task)
     return FALSE;
 }
 
+static bool8 Fishing_MemoryGame(struct Task *task)
+{
+    u16 pressed;
+    u16 expected;
+
+    AlignFishingAnimationFrames();
+    RunTextPrinters();
+
+    if (task->tFishingMemoryMode == FISHING_MEMORY_MODE_SHOW)
+    {
+        task->tFishingMemoryTimer++;
+        if (task->tFishingMemoryTimer >= sFishingMemoryShowFrames)
+        {
+            task->tFishingMemoryTimer = 0;
+            task->tFishingMemoryInputIndex = 0;
+            task->tFishingMemoryMode = FISHING_MEMORY_MODE_INPUT;
+            FishingMemory_PrintInputPrompt();
+        }
+        return FALSE;
+    }
+
+    pressed = gMain.newKeys & (DPAD_UP | DPAD_DOWN);
+    if (pressed != 0)
+    {
+        expected = sFishingMemorySequence[task->tFishingMemoryInputIndex] == FISHING_MEMORY_ARROW_DOWN ? DPAD_DOWN : DPAD_UP;
+        if (pressed == expected)
+        {
+            PlaySE(SE_SELECT);
+            task->tFishingMemoryScore++;
+            if (task->tFishingMemoryScore >= sFishingMemoryMaxLevel)
+            {
+                SetNextFishingWildEncounterLevel(task->tFishingMemoryScore);
+                task->tStep = FISHING_ON_HOOK;
+                task->tFrameCounter = 0;
+                return TRUE;
+            }
+
+            task->tFishingMemoryInputIndex++;
+            task->tFishingMemoryTimer = 0;
+            if (task->tFishingMemoryInputIndex >= task->tFishingMemoryLength)
+            {
+                FishingMemory_StartNextRound(task);
+                return FALSE;
+            }
+            return FALSE;
+        }
+
+        PlaySE(SE_BOO);
+        if (task->tFishingMemoryScore > 0)
+        {
+            SetNextFishingWildEncounterLevel(task->tFishingMemoryScore);
+            task->tStep = FISHING_ON_HOOK;
+        }
+        else
+        {
+            task->tStep = FISHING_GOT_AWAY;
+        }
+        task->tFrameCounter = 0;
+        return TRUE;
+    }
+
+    if (sFishingMemoryInputFrames != 0)
+    {
+        task->tFishingMemoryTimer++;
+        if (task->tFishingMemoryTimer >= sFishingMemoryInputFrames)
+        {
+            if (task->tFishingMemoryScore > 0)
+            {
+                SetNextFishingWildEncounterLevel(task->tFishingMemoryScore);
+                task->tStep = FISHING_ON_HOOK;
+            }
+            else
+            {
+                task->tStep = FISHING_GOT_AWAY;
+            }
+            task->tFrameCounter = 0;
+            return TRUE;
+        }
+    }
+
+    return FALSE;
+}
+
 static bool8 Fishing_NotEvenNibble(struct Task *task)
 {
     AlignFishingAnimationFrames();
@@ -2270,6 +2462,11 @@ static bool8 Fishing_EndNoMon(struct Task *task)
 #undef tFishingApiReturn
 #undef tFishingApiBeforeEncounter
 #undef tFishingApiEndOutcome
+#undef tFishingMemoryScore
+#undef tFishingMemoryLength
+#undef tFishingMemoryInputIndex
+#undef tFishingMemoryMode
+#undef tFishingMemoryTimer
 #undef tRoundsPlayed
 #undef tMinRoundsRequired
 #undef tPlayerGfxId

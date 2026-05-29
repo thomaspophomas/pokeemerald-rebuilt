@@ -96,6 +96,7 @@ static u8 RunActions(
             break;
         case FISHING_ACTION_OVERRIDE:
         case FISHING_ACTION_REQUEST_ACTION:
+        case FISHING_ACTION_MEMORY_GAME:
         case FISHING_ACTION_CANCEL:
             return action_result;
         default:
@@ -165,6 +166,7 @@ void FishingApi_InitRequestFromDefinition(const struct FishingActionDefinition *
     request->timeout_frames = definition->timeout_frames;
     request->success_outcome = definition->success_outcome;
     request->failure_outcome = definition->failure_outcome;
+    memcpy(request->params, definition->params, sizeof(request->params));
 }
 
 u8 FishingApi_RunPhase(struct FishingContext *context, struct FishingActionRequest *request)

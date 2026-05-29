@@ -279,10 +279,13 @@ With no registered actions, the fishing loop keeps the original bite odds,
 dots, timing, inputs, and encounter flow. Hooks receive a `FishingContext` and a
 `FishingActionRequest`; returning `CONTINUE` falls through to vanilla behavior,
 `OVERRIDE` applies context changes, `REQUEST_ACTION` lets the fishing task wait
-for the configured button/timeout, and `CANCEL` exits through the normal failure
-path. Valid phases are `START`, `ROUND_START`, `DOT_CONFIG`, `BITE_CHECK`,
-`INPUT_WINDOW`, `MORE_DOTS_CHECK`, `BEFORE_ENCOUNTER`, and `END`. Rods are
-`OLD`, `GOOD`, and `SUPER`; `rodMask` may be used instead of `rods`.
+for the configured button/timeout, `MEMORY_GAME` starts the built-in up/down
+sequence minigame, and `CANCEL` exits through the normal failure path. Valid
+phases are `START`, `ROUND_START`, `DOT_CONFIG`, `BITE_CHECK`, `INPUT_WINDOW`,
+`MORE_DOTS_CHECK`, `BEFORE_ENCOUNTER`, and `END`. Rods are `OLD`, `GOOD`, and
+`SUPER`; `rodMask` may be used instead of `rods`. For `MEMORY_GAME`, params are
+max earned level, sequence display frames, per-input timeout frames, and one
+reserved slot.
 
 Online profiles may only provide fishing-action data for hooks already compiled
 into the ROM. A server record names the compiled source with `sourceKey` and

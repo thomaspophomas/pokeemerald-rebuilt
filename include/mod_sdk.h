@@ -10,6 +10,7 @@
  * remain under src/mod and src/engine.
  */
 
+#include "global.h"
 #include "mod/base.h"
 
 #include "mod/badge.h"

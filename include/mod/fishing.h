@@ -43,6 +43,7 @@ enum FishingActionHookResult
     FISHING_ACTION_CONTINUE,
     FISHING_ACTION_OVERRIDE,
     FISHING_ACTION_REQUEST_ACTION,
+    FISHING_ACTION_MEMORY_GAME,
     FISHING_ACTION_CANCEL,
 };
 
@@ -72,6 +73,7 @@ struct FishingActionRequest
     u16 timeout_frames;
     u8 success_outcome;
     u8 failure_outcome;
+    s16 params[FISHING_ACTION_PARAM_COUNT];
 };
 
 struct FishingActionDefinition;

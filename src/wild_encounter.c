@@ -48,6 +48,8 @@ enum {
 
 #define HEADER_NONE 0xFFFF
 
+static EWRAM_DATA u8 sNextFishingWildEncounterLevel = 0;
+
 static u16 FeebasRandom(void);
 static void FeebasSeedRng(u16 seed);
 static bool8 IsWildLevelAllowedByRepel(u8 level);
@@ -414,6 +416,26 @@ static void CreateWildMon(u16 species, u8 level)
 
     CreateMonWithNature(&gEnemyParty[0], species, level, USE_RANDOM_IVS, PickWildMonNature());
 }
+
+static u8 ApplyFishingWildEncounterLevelOverride(u8 level)
+{
+    if (sNextFishingWildEncounterLevel == 0)
+        return level;
+    return sNextFishingWildEncounterLevel;
+}
+
+void SetNextFishingWildEncounterLevel(u8 level)
+{
+    if (level == 0)
+        sNextFishingWildEncounterLevel = 0;
+    else if (level > MAX_LEVEL)
+        sNextFishingWildEncounterLevel = MAX_LEVEL;
+    else if (level < MIN_LEVEL)
+        sNextFishingWildEncounterLevel = MIN_LEVEL;
+    else
+        sNextFishingWildEncounterLevel = level;
+}
+
 #ifdef BUGFIX
 #define TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildPokemon, type, ability, ptr, count) TryGetAbilityInfluencedWildMonIndex(wildPokemon, type, ability, ptr, count)
 #else
@@ -480,7 +502,7 @@ static u16 GenerateFishingWildMon(const struct WildPokemonInfo *wildMonInfo, u8 
 
     if (EncounterApi_TrySelectWildMon(WILD_AREA_FISHING, rod, 0, &modWildPokemon) == TRUE)
     {
-        CreateWildMon(modWildPokemon.species, modWildPokemon.minLevel);
+        CreateWildMon(modWildPokemon.species, ApplyFishingWildEncounterLevelOverride(modWildPokemon.minLevel));
         return modWildPokemon.species;
     }
 
@@ -489,6 +511,7 @@ static u16 GenerateFishingWildMon(const struct WildPokemonInfo *wildMonInfo, u8 
 
     wildMonIndex = ChooseWildMonIndex_Fishing(rod);
     level = ChooseWildMonLevel(&wildMonInfo->wildPokemon[wildMonIndex]);
+    level = ApplyFishingWildEncounterLevelOverride(level);
     CreateWildMon(wildMonInfo->wildPokemon[wildMonIndex].species, level);
     return wildMonInfo->wildPokemon[wildMonIndex].species;
 }
@@ -821,6 +844,7 @@ void FishingWildEncounter(u8 rod)
         u8 level = ChooseWildMonLevel(&sWildFeebas);
 
         species = sWildFeebas.species;
+        level = ApplyFishingWildEncounterLevelOverride(level);
         CreateWildMon(species, level);
     }
     else
@@ -830,10 +854,14 @@ void FishingWildEncounter(u8 rod)
             fishingMonsInfo = gWildMonHeaders[headerId].fishingMonsInfo;
         species = GenerateFishingWildMon(fishingMonsInfo, rod);
         if (species == SPECIES_NONE)
+        {
+            SetNextFishingWildEncounterLevel(0);
             return;
+        }
     }
     IncrementGameStat(GAME_STAT_FISHING_ENCOUNTERS);
     SetPokemonAnglerSpecies(species);
+    SetNextFishingWildEncounterLevel(0);
     BattleSetup_StartWildBattle();
 }
 
