@@ -33,6 +33,7 @@ def collect_catalog_entries(
     pokemon_data: List[Dict[str, Any]],
     battle_moves: List[Dict[str, Any]],
     trainers: List[Dict[str, Any]],
+    level_caps: List[Dict[str, Any]],
 ) -> List[Dict[str, int]]:
     entries: List[Dict[str, int]] = []
 
@@ -263,6 +264,18 @@ def collect_catalog_entries(
             trainer["flags"],
             trainer["party_count"],
         )
+    for cap in level_caps:
+        add_catalog_entry(
+            entries,
+            "MOD_CATALOG_ENTRY_LEVEL_CAP",
+            cap["key"],
+            cap["mode"],
+            cap["soft_percent"],
+            cap["rare_candy"],
+            cap["priority"],
+            cap["flags"],
+            *cap["caps"],
+        )
 
     entries.sort(key=lambda entry: (entry["type"], entry["flags"], entry["key_hash"], entry["content_hash"]))
     return entries
@@ -277,4 +290,3 @@ def calc_catalog_hash(entries: List[Dict[str, int]]) -> int:
         data.extend(entry["key_hash"].to_bytes(4, "little"))
         data.extend(entry["content_hash"].to_bytes(4, "little"))
     return fnv1a(bytes(data))
-

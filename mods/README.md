@@ -144,6 +144,7 @@ shop, item, encounter table, map, weather key, event type, or reward key.
 - `weather/*.json`
 - `time/*.json`
 - `badges/*.json`
+- `level_caps/*.json`
 - `sprites/assets/*.json`
 - `sprites/overworld/*.json`
 - `sprites/battle/*.json`
@@ -708,7 +709,7 @@ Generation fails on:
 - duplicate keys for flags, weather providers, time segments, sprite assets,
   overworld sprites, battle sprites, followers, engine rulesets, NPCs, maps,
   fishing actions, encounters, shops, items, rewards, Pokemon data, battle
-  moves, or trainers
+  moves, trainers, or level caps
 - duplicate language keys for the same language
 - duplicate Pokeball keys or duplicate Pokeball `itemId` values
 - invalid C identifiers for function/script/sprite symbols

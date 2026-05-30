@@ -11,6 +11,7 @@ from .flags import collect_flags
 from .items import collect_items
 from .keys import key_for
 from .language import collect_language_texts
+from .level_caps import collect_level_caps
 from .maps import collect_maps
 from .npcs import collect_npcs
 from .pokeballs import collect_pokeballs
@@ -38,6 +39,7 @@ __all__ = [
     "collect_followers",
     "collect_items",
     "collect_language_texts",
+    "collect_level_caps",
     "collect_maps",
     "collect_mod_sources",
     "collect_npcs",

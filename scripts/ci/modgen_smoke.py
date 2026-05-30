@@ -229,6 +229,20 @@ def main() -> int:
             },
         )
         write_json(
+            mod_root / "level_caps" / "caps.json",
+            {
+                "caps": [
+                    {
+                        "id": "badge_soft_cap",
+                        "mode": "SOFT",
+                        "capsByBadge": [15, 19, 24, 29, 31, 33, 42, 46, 58],
+                        "softExpPercent": 25,
+                        "rareCandy": "BLOCK_AT_CAP",
+                    }
+                ]
+            },
+        )
+        write_json(
             mod_root / "engines" / "rulesets.json",
             {
                 "engines": [
@@ -319,6 +333,9 @@ def main() -> int:
             "gModTrainerDefinitions",
             "demo:youngster_party",
             "MOD_CATALOG_ENTRY_TRAINER",
+            "gModLevelCaps",
+            "demo:badge_soft_cap",
+            "MOD_CATALOG_ENTRY_LEVEL_CAP",
             "demo:guide",
             "demo:demo_town",
             "demo:demo_engine",
@@ -353,6 +370,8 @@ def main() -> int:
             raise AssertionError("generated header missing battle move declaration")
         if "extern const struct ModTrainerDefinition gModTrainerDefinitions[]" not in header:
             raise AssertionError("generated header missing trainer declaration")
+        if "extern const struct ModLevelCapDefinition gModLevelCaps[]" not in header:
+            raise AssertionError("generated header missing level cap declaration")
         if "MOD_C_SRCS += mods/demo/src/demo.c" not in make:
             raise AssertionError("generated make fragment missing mod C source")
 

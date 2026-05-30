@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pokeemerald-rebuilt.local/schemas/level_cap.schema.json",
+  "title": "Mod level cap",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/itemList"
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "_meta": {},
+        "caps": {
+          "$ref": "#/$defs/itemList"
+        }
+      },
+      "required": [
+        "caps"
+      ]
+    }
+  ],
+  "$defs": {
+    "itemList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "key": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "mode": {
+          "$ref": "#/$defs/token"
+        },
+        "capType": {
+          "$ref": "#/$defs/token"
+        },
+        "cap_type": {
+          "$ref": "#/$defs/token"
+        },
+        "capsByBadge": {
+          "$ref": "#/$defs/capTable"
+        },
+        "caps_by_badge": {
+          "$ref": "#/$defs/capTable"
+        },
+        "softExpPercent": {
+          "$ref": "#/$defs/percent"
+        },
+        "soft_exp_percent": {
+          "$ref": "#/$defs/percent"
+        },
+        "rareCandy": {
+          "$ref": "#/$defs/token"
+        },
+        "rare_candy": {
+          "$ref": "#/$defs/token"
+        },
+        "priority": {
+          "$ref": "#/$defs/s16"
+        },
+        "flags": {}
+      }
+    },
+    "capTable": {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9,
+      "items": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 100
+      }
+    },
+    "token": {
+      "oneOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "string",
+          "minLength": 1
+        }
+      ]
+    },
+    "percent": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "s16": {
+      "type": "integer",
+      "minimum": -32768,
+      "maximum": 32767
+    }
+  }
+}

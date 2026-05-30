@@ -30,6 +30,7 @@ def write_header(path: Path) -> None:
 #include "mod/flags.h"
 #include "mod/item.h"
 #include "mod/language.h"
+#include "mod/level_cap.h"
 #include "mod/map.h"
 #include "mod/npc.h"
 #include "mod/overworld_sprite.h"
@@ -89,6 +90,8 @@ extern const struct ModBattleMoveDefinition gModBattleMoveDefinitions[];
 extern const u16 gModBattleMoveDefinitionCount;
 extern const struct ModTrainerDefinition gModTrainerDefinitions[];
 extern const u16 gModTrainerDefinitionCount;
+extern const struct ModLevelCapDefinition gModLevelCaps[];
+extern const u16 gModLevelCapCount;
 extern const struct ModCatalogEntry gModCatalogEntries[];
 extern const u16 gModCatalogEntryCount;
 extern const u32 gModCatalogHash;
@@ -99,7 +102,7 @@ extern const u32 gModCatalogHash;
     )
 
 
-def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, Any]], events: List[Dict[str, Any]], weather: List[Dict[str, Any]], time_segments: List[Dict[str, Any]], badge_effects: List[Dict[str, Any]], fishing_actions: List[Dict[str, Any]], encounters: List[Dict[str, Any]], shops: List[Dict[str, Any]], items: List[Dict[str, Any]], rewards: List[Dict[str, Any]], pokemon_data: List[Dict[str, Any]], battle_moves: List[Dict[str, Any]], trainers: List[Dict[str, Any]], sprite_assets: List[Dict[str, Any]], overworld_sprites: List[Dict[str, Any]], battle_sprites: List[Dict[str, Any]], followers: List[Dict[str, Any]], language_texts: List[Dict[str, Any]], pokeballs: List[Dict[str, Any]], engines: List[Dict[str, Any]], npcs: List[Dict[str, Any]], maps: List[Dict[str, Any]], catalog_entries: List[Dict[str, int]], catalog_hash: int) -> None:
+def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, Any]], events: List[Dict[str, Any]], weather: List[Dict[str, Any]], time_segments: List[Dict[str, Any]], badge_effects: List[Dict[str, Any]], fishing_actions: List[Dict[str, Any]], encounters: List[Dict[str, Any]], shops: List[Dict[str, Any]], items: List[Dict[str, Any]], rewards: List[Dict[str, Any]], pokemon_data: List[Dict[str, Any]], battle_moves: List[Dict[str, Any]], trainers: List[Dict[str, Any]], level_caps: List[Dict[str, Any]], sprite_assets: List[Dict[str, Any]], overworld_sprites: List[Dict[str, Any]], battle_sprites: List[Dict[str, Any]], followers: List[Dict[str, Any]], language_texts: List[Dict[str, Any]], pokeballs: List[Dict[str, Any]], engines: List[Dict[str, Any]], npcs: List[Dict[str, Any]], maps: List[Dict[str, Any]], catalog_entries: List[Dict[str, int]], catalog_hash: int) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     event_handlers = sorted({event["handler"] for event in events if event["handler"] != "NULL"})
     weather_handlers = sorted({provider["handler"] for provider in weather if provider["handler"] != "NULL"})
@@ -457,6 +460,18 @@ def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, A
         lines.append("    { NULL, 0, 0, 0, 0, 0, 0, { ITEM_NONE }, FALSE, 0, 0, { { 0, 0, SPECIES_NONE, ITEM_NONE, { MOVE_NONE } } } },")
     lines.append("};")
     lines.append(f"const u16 gModTrainerDefinitionCount = {len(trainers)};")
+    lines.append("")
+
+    lines.append("const struct ModLevelCapDefinition gModLevelCaps[] =")
+    lines.append("{")
+    if level_caps:
+        for cap in level_caps:
+            cap_levels = ", ".join(str(level) for level in cap["caps"])
+            lines.append(f"    {{ {c_string(cap['key'])}, {cap['mode']}, {cap['soft_percent']}, {cap['rare_candy']}, 0, {cap['priority']}, {cap['flags']}, {{ {cap_levels} }} }},")
+    else:
+        lines.append("    { NULL, 0, 0, 0, 0, 0, 0, { 0 } },")
+    lines.append("};")
+    lines.append(f"const u16 gModLevelCapCount = {len(level_caps)};")
     lines.append("")
 
     lines.append("const struct ModCatalogEntry gModCatalogEntries[] =")

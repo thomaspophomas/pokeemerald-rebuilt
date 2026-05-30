@@ -24,6 +24,7 @@
 #include "mod/flags.h"
 #include "mod/item.h"
 #include "mod/language.h"
+#include "mod/level_cap.h"
 #include "mod/map.h"
 #include "mod/npc.h"
 #include "mod/overworld_sprite.h"
@@ -189,6 +190,26 @@ s16 BadgeApi_GetEffectPercent(u8 effect_kind, u8 target, u8 battler_id)
 bool8 BadgeApi_IsEffectDefinitionValid(const struct ModBadgeEffectDefinition *definition, bool8 allow_empty_none)
 {
     return allow_empty_none && definition != NULL && definition->key == NULL;
+}
+
+bool8 LevelCapApi_IsDefinitionValid(const struct ModLevelCapDefinition *definition, bool8 allow_empty_default)
+{
+    return allow_empty_default && definition != NULL && definition->key == NULL;
+}
+
+u8 LevelCapApi_GetActiveCap(void)
+{
+    return MAX_LEVEL;
+}
+
+s16 LevelCapApi_ModifyBattleExp(struct Pokemon *mon, s16 gained_exp)
+{
+    return gained_exp;
+}
+
+bool8 LevelCapApi_CanUseRareCandy(struct Pokemon *mon)
+{
+    return TRUE;
 }
 
 void ModTime_Init(void)

@@ -17,6 +17,7 @@
 #include "link.h"
 #include "main.h"
 #include "mod/battle_data.h"
+#include "mod/level_cap.h"
 #include "mod/pokemon_data.h"
 #include "multiplayer/battle.h"
 #include "overworld.h"
@@ -4936,7 +4937,8 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
 
             // Rare Candy
             if ((itemEffect[i] & ITEM3_LEVEL_UP)
-             && GetMonData(mon, MON_DATA_LEVEL, NULL) != MAX_LEVEL)
+             && GetMonData(mon, MON_DATA_LEVEL, NULL) != MAX_LEVEL
+             && LevelCapApi_CanUseRareCandy(mon))
             {
                 dataUnsigned = gExperienceTables[gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES, NULL)].growthRate][GetMonData(mon, MON_DATA_LEVEL, NULL) + 1];
                 SetMonData(mon, MON_DATA_EXP, &dataUnsigned);

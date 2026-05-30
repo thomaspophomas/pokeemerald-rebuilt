@@ -130,11 +130,11 @@ static bool8 TryGetPokemonFollower(u8 party_index, const struct ModFollowerSprit
 
 static bool8 TryGetLeadPokemonFollower(const struct ModFollowerSpriteDefinition **definition, u16 *species, bool8 *shiny)
 {
-    u8 i;
+    u8 party_index;
 
-    for (i = 0; i < PARTY_SIZE; i++)
+    for (party_index = 0; party_index < PARTY_SIZE; party_index++)
     {
-        if (TryGetPokemonFollower(i, definition, species, shiny))
+        if (TryGetPokemonFollower(party_index, definition, species, shiny))
             return TRUE;
     }
 

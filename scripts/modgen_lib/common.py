@@ -261,6 +261,30 @@ TRAINER_OVERRIDE_FLAGS = {
     "PARTY": 1 << 6,
 }
 
+LEVEL_CAP_MODES = {
+    "NONE": "MOD_LEVEL_CAP_MODE_NONE",
+    "SOFT": "MOD_LEVEL_CAP_MODE_SOFT",
+    "HARD": "MOD_LEVEL_CAP_MODE_HARD",
+}
+
+LEVEL_CAP_MODE_VALUES = {
+    "0": 0,
+    "NONE": 0,
+    "MOD_LEVEL_CAP_MODE_NONE": 0,
+    "1": 1,
+    "SOFT": 1,
+    "MOD_LEVEL_CAP_MODE_SOFT": 1,
+    "2": 2,
+    "HARD": 2,
+    "MOD_LEVEL_CAP_MODE_HARD": 2,
+}
+
+LEVEL_CAP_RARE_CANDY_POLICIES = {
+    "ALLOW": "MOD_LEVEL_CAP_RARE_CANDY_ALLOW",
+    "BLOCK": "MOD_LEVEL_CAP_RARE_CANDY_BLOCK_AT_CAP",
+    "BLOCK_AT_CAP": "MOD_LEVEL_CAP_RARE_CANDY_BLOCK_AT_CAP",
+}
+
 BUTTON_VALUES = {
     "A": 0x0001,
     "A_BUTTON": 0x0001,
@@ -554,6 +578,74 @@ def parse_button_mask(value: Any, default: int = 0) -> int:
     if value is None:
         return default
     return parse_named_mask(value, BUTTON_VALUES, KEYS_MASK, "button", allow_zero=False)
+
+
+def normalize_level_cap_mode(value: Any) -> str:
+    if isinstance(value, int):
+        return str(value)
+    if value is None:
+        return "MOD_LEVEL_CAP_MODE_SOFT"
+    if not isinstance(value, str):
+        raise ModgenError(f"Level cap mode {value!r} is invalid")
+    stripped = value.strip()
+    if stripped.startswith("MOD_LEVEL_CAP_MODE_"):
+        return stripped
+    if re.fullmatch(r"0x[0-9A-Fa-f]+|[0-9]+", stripped):
+        return str(int(stripped, 0))
+    upper = stripped.upper()
+    if upper not in LEVEL_CAP_MODES:
+        raise ModgenError(f"Unknown level cap mode {value!r}")
+    return LEVEL_CAP_MODES[upper]
+
+
+def level_cap_mode_value(value: str) -> int:
+    key = value.strip().upper()
+    if key in LEVEL_CAP_MODE_VALUES:
+        return LEVEL_CAP_MODE_VALUES[key]
+    if re.fullmatch(r"0x[0-9A-Fa-f]+|[0-9]+", value.strip()):
+        return int(value, 0)
+    raise ModgenError(f"Level cap mode {value!r} is invalid")
+
+
+def normalize_rare_candy_policy(value: Any) -> str:
+    if isinstance(value, int):
+        return str(value)
+    if value is None:
+        return "MOD_LEVEL_CAP_RARE_CANDY_ALLOW"
+    if not isinstance(value, str):
+        raise ModgenError(f"Rare Candy policy {value!r} is invalid")
+    stripped = value.strip()
+    if stripped.startswith("MOD_LEVEL_CAP_RARE_CANDY_"):
+        return stripped
+    if re.fullmatch(r"0x[0-9A-Fa-f]+|[0-9]+", stripped):
+        return str(int(stripped, 0))
+    upper = stripped.upper().replace("-", "_")
+    if upper not in LEVEL_CAP_RARE_CANDY_POLICIES:
+        raise ModgenError(f"Unknown Rare Candy policy {value!r}")
+    return LEVEL_CAP_RARE_CANDY_POLICIES[upper]
+
+
+def rare_candy_policy_value(value: str) -> int:
+    key = value.strip().upper()
+    if key in ("0", "ALLOW", "MOD_LEVEL_CAP_RARE_CANDY_ALLOW"):
+        return 0
+    if key in ("1", "BLOCK", "BLOCK_AT_CAP", "MOD_LEVEL_CAP_RARE_CANDY_BLOCK_AT_CAP"):
+        return 1
+    if re.fullmatch(r"0x[0-9A-Fa-f]+|-?[0-9]+", value.strip()):
+        return int(value, 0)
+    raise ModgenError(f"Rare Candy policy {value!r} is invalid")
+
+
+def parse_level_cap_table(value: Any, key: str) -> List[int]:
+    if not isinstance(value, list):
+        raise ModgenError(f"{key}: capsByBadge must be a list of 9 levels")
+    if len(value) != 9:
+        raise ModgenError(f"{key}: capsByBadge must contain exactly 9 levels for 0..8 badges")
+    caps = [int(level) for level in value]
+    for cap in caps:
+        if cap < 1 or cap > 100:
+            raise ModgenError(f"{key}: capsByBadge levels must be in [1, 100]")
+    return caps
 
 
 def parse_fishing_outcome(value: Any, default: str) -> int:

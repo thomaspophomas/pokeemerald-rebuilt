@@ -51,6 +51,7 @@ KNOWN_DOMAIN_DIRS = {
     "followers",
     "items",
     "lang",
+    "level_caps",
     "maps",
     "npcs",
     "outfits",
@@ -76,6 +77,7 @@ DOMAIN_LIST_KEYS = {
     "followers": "followers",
     "items": "items",
     "lang": "strings",
+    "level_caps": "caps",
     "maps": "maps",
     "npcs": "npcs",
     "pokeballs": "pokeballs",
@@ -333,6 +335,7 @@ def validate_domain_files(mod_root: Path) -> None:
         "followers": validate_followers_file,
         "items": validate_items_file,
         "lang": validate_language_file,
+        "level_caps": validate_level_caps_file,
         "maps": validate_maps_root,
         "npcs": validate_npcs_file,
         "pokeballs": validate_simple_list_file("pokeballs", {"id", "key", "name", "itemId", "item_id", "ballId", "ball_id", "catchModifier", "catch_modifier", "modifierHook", "modifier_hook", "commitHook", "commit_hook", "battleScript", "battle_script", "flags", "mode"}),
@@ -377,6 +380,25 @@ def validate_events_file(path: Path) -> None:
             raise ModCheckError(f"{path}: subscriptions[{index}].type must be a string")
         require_ident(item.get("handler"), path, f"subscriptions[{index}].handler", required=True)
         require_optional_int(item, "priority", path, f"subscriptions[{index}].priority", -32768, 32767)
+
+
+def validate_level_caps_file(path: Path) -> None:
+    allowed = {
+        "id", "key", "name", "mode", "capType", "cap_type", "capsByBadge", "caps_by_badge",
+        "softExpPercent", "soft_exp_percent", "rareCandy", "rare_candy", "priority", "flags",
+    }
+    for index, raw_item in enumerate(require_items(read_json(path), DOMAIN_LIST_KEYS["level_caps"], path)):
+        item = require_object(raw_item, path, f"caps[{index}]")
+        reject_unknown_fields(item, allowed, path, f"caps[{index}]")
+        caps = item.get("capsByBadge", item.get("caps_by_badge"))
+        if not isinstance(caps, list) or len(caps) != 9:
+            raise ModCheckError(f"{path}: caps[{index}].capsByBadge must be a list of 9 levels")
+        for cap_index, cap in enumerate(caps):
+            if not isinstance(cap, int) or cap < 1 or cap > 100:
+                raise ModCheckError(f"{path}: caps[{index}].capsByBadge[{cap_index}] must be in [1, 100]")
+        require_optional_int(item, "softExpPercent", path, f"caps[{index}].softExpPercent", 0, 100)
+        require_optional_int(item, "soft_exp_percent", path, f"caps[{index}].soft_exp_percent", 0, 100)
+        require_optional_int(item, "priority", path, f"caps[{index}].priority", -32768, 32767)
 
 
 def validate_followers_file(path: Path) -> None:
@@ -794,6 +816,7 @@ def run_generator_collectors(root: Path) -> dict[str, int]:
         "battleSprites": modgen.collect_battle_sprites,
         "followers": modgen.collect_followers,
         "languageTexts": modgen.collect_language_texts,
+        "levelCaps": modgen.collect_level_caps,
         "pokeballs": modgen.collect_pokeballs,
         "engines": modgen.collect_engines,
         "npcs": modgen.collect_npcs,
@@ -857,7 +880,7 @@ def print_text_report(report: dict[str, Any]) -> None:
             state = f", state={mod['stateBytes']}B/v{mod['stateVersion']}" if mod["stateBytes"] else ""
             print(f"  {mod['priority']:5d} {mod['id']} {mod['version']}{state}")
     counts = report["generatedCounts"]
-    interesting = ["flags", "events", "weather", "items", "npcs", "maps", "modSources"]
+    interesting = ["flags", "events", "weather", "items", "npcs", "maps", "levelCaps", "modSources"]
     print("generated counts: " + ", ".join(f"{key}={counts[key]}" for key in interesting))
     if report["warnings"]:
         print("warnings:")

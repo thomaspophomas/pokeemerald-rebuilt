@@ -108,6 +108,7 @@ The generated folders are valid inputs for `make mod-check`.
 The manifest schema lives at `docs/modding/schemas/mod.schema.json`. Domain
 schemas cover badges, battle moves, battle sprites, encounters, engine
 rulesets, events, fishing actions, flags, followers, items, language strings,
+level caps,
 maps, NPCs, overworld sprites, Pokeballs, Pokemon data, rewards, shops, sprite
 assets, time segments, trainers, and weather. `make mod-check` enforces the
 same core shape with file-specific errors before C registries are generated.

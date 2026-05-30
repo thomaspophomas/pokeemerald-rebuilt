@@ -181,6 +181,54 @@ def test_modgen_state_budget_guard() -> None:
         shutil.rmtree(root)
 
 
+def test_level_cap_domain() -> None:
+    root = linked_root()
+    try:
+        write_json(root / "mods" / "caps" / "mod.json", base_manifest("caps"))
+        write_json(
+            root / "mods" / "caps" / "level_caps" / "caps.json",
+            {
+                "caps": [
+                    {
+                        "id": "badge_soft_cap",
+                        "capType": "SOFT",
+                        "capsByBadge": [15, 19, 24, 29, 31, 33, 42, 46, 58],
+                        "softExpPercent": 25,
+                        "rareCandy": "BLOCK_AT_CAP",
+                        "priority": 50,
+                    }
+                ]
+            },
+        )
+
+        run([sys.executable, str(REPO / "scripts" / "modgen.py"), "--root", str(root), "--out-header", "include/generated/mod_registry.h", "--out-source", "src/generated/mod_registry.c", "--out-make", "build/generated/mod_sources.mk"], root)
+
+        source = (root / "src" / "generated" / "mod_registry.c").read_text(encoding="utf-8")
+        assert "gModLevelCaps" in source
+        assert '"caps:badge_soft_cap"' in source
+        assert "MOD_LEVEL_CAP_MODE_SOFT" in source
+        assert "MOD_LEVEL_CAP_RARE_CANDY_BLOCK_AT_CAP" in source
+        assert "MOD_CATALOG_ENTRY_LEVEL_CAP" in source
+    finally:
+        shutil.rmtree(root)
+
+
+def test_level_cap_requires_nine_badge_slots() -> None:
+    root = linked_root()
+    try:
+        write_json(root / "mods" / "caps" / "mod.json", base_manifest("caps"))
+        write_json(
+            root / "mods" / "caps" / "level_caps" / "caps.json",
+            {"caps": [{"id": "bad", "capsByBadge": [15, 19]}]},
+        )
+
+        result = run([sys.executable, str(REPO / "scripts" / "modgen.py"), "--root", str(root)], root, expect_ok=False)
+        assert "capsByBadge" in result.stdout
+        assert "9 levels" in result.stdout
+    finally:
+        shutil.rmtree(root)
+
+
 def test_followers_support_direct_graphics_info() -> None:
     root = linked_root()
     try:
@@ -239,6 +287,8 @@ def main() -> int:
     test_mod_check_sprite_tag_conflict()
     test_mod_check_follower_mapping_conflict()
     test_modgen_state_budget_guard()
+    test_level_cap_domain()
+    test_level_cap_requires_nine_badge_slots()
     test_followers_support_direct_graphics_info()
     print("modgen domain tests OK")
     return 0

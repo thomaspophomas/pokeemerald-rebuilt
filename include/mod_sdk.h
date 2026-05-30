@@ -25,6 +25,7 @@
 #include "mod/flags.h"
 #include "mod/item.h"
 #include "mod/language.h"
+#include "mod/level_cap.h"
 #include "mod/map.h"
 #include "mod/npc.h"
 #include "mod/overworld_sprite.h"
