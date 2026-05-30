@@ -10,6 +10,9 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
+        "_meta": {
+          "type": "object"
+        },
         "assets": {
           "$ref": "#/$defs/itemList"
         }
@@ -52,7 +55,13 @@
         "sheet": {
           "$ref": "#/$defs/cIdentifier"
         },
+        "sheetSymbol": {
+          "$ref": "#/$defs/cIdentifier"
+        },
         "compressedSheet": {
+          "$ref": "#/$defs/cIdentifier"
+        },
+        "compressedSheetSymbol": {
           "$ref": "#/$defs/cIdentifier"
         },
         "compressed_sheet": {
@@ -61,13 +70,22 @@
         "palette": {
           "$ref": "#/$defs/cIdentifier"
         },
+        "paletteSymbol": {
+          "$ref": "#/$defs/cIdentifier"
+        },
         "compressedPalette": {
+          "$ref": "#/$defs/cIdentifier"
+        },
+        "compressedPaletteSymbol": {
           "$ref": "#/$defs/cIdentifier"
         },
         "compressed_palette": {
           "$ref": "#/$defs/cIdentifier"
         },
         "template": {
+          "$ref": "#/$defs/cIdentifier"
+        },
+        "templateSymbol": {
           "$ref": "#/$defs/cIdentifier"
         },
         "tileTag": {

@@ -530,10 +530,23 @@ Sprite assets may use uncompressed `sheetSymbol`/`paletteSymbol`, compressed
 ```json
 {
   "followers": [
-    { "id": "treecko", "species": "SPECIES_TREECKO", "form": 0, "shiny": false, "graphicsId": "OBJ_EVENT_GFX_BOY_1" }
+    {
+      "id": "treecko",
+      "species": "SPECIES_TREECKO",
+      "form": 0,
+      "shiny": false,
+      "graphicsId": "OBJ_EVENT_GFX_BOY_1",
+      "asset": "guide_asset",
+      "graphicsRevision": 1,
+      "graphicsInfoSymbol": "Demo_TreeckoFollowerGraphicsInfo"
+    }
   ]
 }
 ```
+
+`asset`/`assetKey`, `graphicsRevision`, and `graphicsInfoSymbol` are optional.
+`graphicsInfoSymbol` lets a compiled mod provide a direct
+`ObjectEventGraphicsInfo` while the `graphicsId` remains a stable fallback ID.
 
 `mods/demo/sprites/battle/sprites.json`:
 

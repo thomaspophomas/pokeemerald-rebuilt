@@ -47,6 +47,7 @@ KNOWN_DOMAIN_DIRS = {
     "events",
     "fishing",
     "flags",
+    "graphics",
     "followers",
     "items",
     "lang",
@@ -60,6 +61,7 @@ KNOWN_DOMAIN_DIRS = {
     "sprites",
     "src",
     "time",
+    "tools",
     "trainers",
     "weather",
 }
@@ -71,6 +73,7 @@ DOMAIN_LIST_KEYS = {
     "events": "subscriptions",
     "fishing": "actions",
     "flags": "flags",
+    "followers": "followers",
     "items": "items",
     "lang": "strings",
     "maps": "maps",
@@ -248,7 +251,7 @@ def require_items(data: Any, key: str, path: Path) -> list[Any]:
     if isinstance(data, list):
         return data
     if isinstance(data, dict):
-        unknown = sorted(set(data) - {key})
+        unknown = sorted(set(data) - {key, "_meta"})
         if unknown:
             raise ModCheckError(f"{path}: unknown top-level fields: {', '.join(unknown)}")
         value = data.get(key, [])
@@ -294,6 +297,17 @@ def require_ident(value: Any, path: Path, label: str, required: bool = False) ->
         raise ModCheckError(f"{path}: {label} must be a C identifier")
 
 
+def require_token(value: Any, path: Path, label: str, required: bool = False) -> None:
+    if value is None:
+        if required:
+            raise ModCheckError(f"{path}: {label} is required")
+        return
+    if isinstance(value, bool) or not isinstance(value, (int, str)):
+        raise ModCheckError(f"{path}: {label} must be an integer or token string")
+    if isinstance(value, str) and value == "":
+        raise ModCheckError(f"{path}: {label} must be non-empty")
+
+
 def require_short_key(value: Any, path: Path, label: str) -> None:
     if value is None:
         return
@@ -316,6 +330,7 @@ def validate_domain_files(mod_root: Path) -> None:
         "events": validate_events_file,
         "fishing": validate_simple_list_file("fishing", {"id", "key", "name", "hook", "hookSymbol", "hook_symbol", "hookKey", "hook_key", "rods", "rodMask", "rod_mask", "phases", "phaseMask", "phase_mask", "buttonMask", "button_mask", "timeoutFrames", "timeout_frames", "successOutcome", "success_outcome", "failureOutcome", "failure_outcome", "promptKey", "prompt_key", "params", "priority", "flags", "mode"}),
         "flags": validate_flags_file,
+        "followers": validate_followers_file,
         "items": validate_items_file,
         "lang": validate_language_file,
         "maps": validate_maps_root,
@@ -362,6 +377,29 @@ def validate_events_file(path: Path) -> None:
             raise ModCheckError(f"{path}: subscriptions[{index}].type must be a string")
         require_ident(item.get("handler"), path, f"subscriptions[{index}].handler", required=True)
         require_optional_int(item, "priority", path, f"subscriptions[{index}].priority", -32768, 32767)
+
+
+def validate_followers_file(path: Path) -> None:
+    allowed = {
+        "id", "key", "name", "species", "form", "shiny", "graphicsId", "graphics_id",
+        "asset", "assetKey", "asset_key", "graphicsRevision", "graphics_revision",
+        "graphicsInfoSymbol", "graphics_info_symbol", "mode",
+    }
+    for index, raw_item in enumerate(require_items(read_json(path), DOMAIN_LIST_KEYS["followers"], path)):
+        item = require_object(raw_item, path, f"followers[{index}]")
+        reject_unknown_fields(item, allowed, path, f"followers[{index}]")
+        validate_hook_mode(item, path, f"followers[{index}]")
+        require_token(item.get("species"), path, f"followers[{index}].species", required=True)
+        require_optional_int(item, "form", path, f"followers[{index}].form", 0, 0xFFFF)
+        if "shiny" in item and not isinstance(item["shiny"], bool):
+            raise ModCheckError(f"{path}: followers[{index}].shiny must be boolean")
+        require_token(item.get("graphicsId", item.get("graphics_id")), path, f"followers[{index}].graphicsId")
+        for asset_key in ("asset", "assetKey", "asset_key"):
+            if asset_key in item and (not isinstance(item[asset_key], str) or item[asset_key] == ""):
+                raise ModCheckError(f"{path}: followers[{index}].{asset_key} must be a non-empty string")
+        require_optional_int(item, "graphicsRevision", path, f"followers[{index}].graphicsRevision", 0, 0xFFFF)
+        require_optional_int(item, "graphics_revision", path, f"followers[{index}].graphics_revision", 0, 0xFFFF)
+        require_ident(item.get("graphicsInfoSymbol", item.get("graphics_info_symbol")), path, f"followers[{index}].graphicsInfoSymbol")
 
 
 def validate_flags_file(path: Path) -> None:

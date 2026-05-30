@@ -98,6 +98,9 @@ def collect_followers(mods: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
                 if key in seen:
                     raise ModgenError(f"Duplicate follower sprite key {key!r}")
                 seen.add(key)
+                asset_key = item.get("assetKey", item.get("asset_key", item.get("asset")))
+                if asset_key is not None and ":" not in str(asset_key):
+                    asset_key = f"{mod['id']}:{asset_key}"
                 followers.append(
                     {
                         "key": key,
@@ -105,7 +108,9 @@ def collect_followers(mods: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
                         "form": c_int_or_token(item.get("form"), "0"),
                         "shiny": c_bool(item.get("shiny", False)),
                         "graphics": c_int_or_token(item.get("graphicsId", item.get("graphics_id")), "0"),
+                        "asset_key": asset_key,
+                        "revision": c_int_or_token(item.get("graphicsRevision", item.get("graphics_revision")), "1"),
+                        "graphics_info": c_symbol(item.get("graphicsInfoSymbol", item.get("graphics_info_symbol"))),
                     }
                 )
     return followers
-

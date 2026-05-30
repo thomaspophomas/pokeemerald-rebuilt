@@ -129,11 +129,63 @@ def test_modgen_state_budget_guard() -> None:
         shutil.rmtree(root)
 
 
+def test_followers_support_direct_graphics_info() -> None:
+    root = linked_root()
+    try:
+        write_json(root / "mods" / "followers" / "mod.json", base_manifest("followers"))
+        write_json(
+            root / "mods" / "followers" / "sprites" / "assets" / "followers.json",
+            {
+                "_meta": {"source": "test"},
+                "assets": [
+                    {
+                        "id": "treecko_asset",
+                        "paletteSymbol": "Followers_TreeckoPalette",
+                        "paletteTag": 0xF123,
+                    }
+                ],
+            },
+        )
+        write_json(
+            root / "mods" / "followers" / "followers" / "followers.json",
+            {
+                "_meta": {"source": "test"},
+                "followers": [
+                    {
+                        "id": "treecko",
+                        "species": "SPECIES_TREECKO",
+                        "form": 0,
+                        "shiny": False,
+                        "graphicsId": "OBJ_EVENT_GFX_BRENDAN_MACH_BIKE",
+                        "asset": "treecko_asset",
+                        "graphicsRevision": 7,
+                        "graphicsInfoSymbol": "Followers_TreeckoGraphicsInfo",
+                    }
+                ]
+            },
+        )
+
+        run([sys.executable, str(REPO / "scripts" / "modgen.py"), "--root", str(root), "--out-header", "include/generated/mod_registry.h", "--out-source", "src/generated/mod_registry.c", "--out-make", "build/generated/mod_sources.mk"], root)
+
+        source = (root / "src" / "generated" / "mod_registry.c").read_text(encoding="utf-8")
+        assert "extern const struct SpritePalette Followers_TreeckoPalette;" in source
+        assert '"followers:treecko_asset", NULL, NULL, &Followers_TreeckoPalette' in source
+        assert "extern const struct ObjectEventGraphicsInfo Followers_TreeckoGraphicsInfo;" in source
+        assert '"followers:treecko"' in source
+        assert '"followers:treecko_asset"' in source
+        assert "OBJ_EVENT_GFX_BRENDAN_MACH_BIKE" in source
+        assert "7" in source
+        assert "&Followers_TreeckoGraphicsInfo" in source
+    finally:
+        shutil.rmtree(root)
+
+
 def main() -> int:
     test_enabled_state_and_map_script()
     test_mod_check_include_ban()
     test_mod_check_claim_conflict()
     test_modgen_state_budget_guard()
+    test_followers_support_direct_graphics_info()
     print("modgen domain tests OK")
     return 0
 

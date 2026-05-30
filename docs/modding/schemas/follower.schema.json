@@ -10,6 +10,9 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
+        "_meta": {
+          "type": "object"
+        },
         "followers": {
           "$ref": "#/$defs/itemList"
         }
@@ -63,6 +66,27 @@
         },
         "graphics_id": {
           "$ref": "#/$defs/token"
+        },
+        "asset": {
+          "type": "string"
+        },
+        "assetKey": {
+          "type": "string"
+        },
+        "asset_key": {
+          "type": "string"
+        },
+        "graphicsRevision": {
+          "$ref": "#/$defs/u16"
+        },
+        "graphics_revision": {
+          "$ref": "#/$defs/u16"
+        },
+        "graphicsInfoSymbol": {
+          "$ref": "#/$defs/cIdentifier"
+        },
+        "graphics_info_symbol": {
+          "$ref": "#/$defs/cIdentifier"
         }
       }
     },

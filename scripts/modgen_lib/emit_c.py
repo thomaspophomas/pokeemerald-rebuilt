@@ -7,6 +7,11 @@ from typing import Any, Dict, List
 
 from .common import c_bool, c_string, c_symbol, c_u8_string
 
+def c_symbol_ptr(symbol: str) -> str:
+    if symbol == "NULL":
+        return "NULL"
+    return f"&{symbol}"
+
 def write_header(path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
@@ -106,6 +111,7 @@ def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, A
     palette_symbols = sorted({asset["palette"] for asset in sprite_assets if asset["palette"] != "NULL"})
     compressed_palette_symbols = sorted({asset["compressed_palette"] for asset in sprite_assets if asset["compressed_palette"] != "NULL"})
     template_symbols = sorted({asset["template"] for asset in sprite_assets if asset["template"] != "NULL"})
+    follower_graphics_infos = sorted({follower["graphics_info"] for follower in followers if follower["graphics_info"] != "NULL"})
     pokeball_modifier_hooks = sorted({ball["modifier_hook"] for ball in pokeballs if ball["modifier_hook"] != "NULL"})
     pokeball_commit_hooks = sorted({ball["commit_hook"] for ball in pokeballs if ball["commit_hook"] != "NULL"})
     pokeball_scripts = sorted({ball["battle_script"] for ball in pokeballs if ball["battle_script"] != "NULL"})
@@ -151,6 +157,8 @@ def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, A
         lines.append(f"extern const struct CompressedSpritePalette {symbol};")
     for symbol in template_symbols:
         lines.append(f"extern const struct SpriteTemplate {symbol};")
+    for symbol in follower_graphics_infos:
+        lines.append(f"extern const struct ObjectEventGraphicsInfo {symbol};")
     for hook in pokeball_modifier_hooks:
         lines.append(f"extern u8 {hook}(const struct PokeBallCatchContext *context);")
     for hook in pokeball_commit_hooks:
@@ -165,7 +173,7 @@ def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, A
         lines.append(f"extern void {hook}(u8 task_id);")
     for hook in reward_hooks:
         lines.append(f"extern u8 {hook}(const struct ModRewardDefinition *definition, struct ModRewardContext *context);")
-    if event_handlers or weather_handlers or capture_hooks or battle_weather_hooks or npc_scripts or sheet_symbols or compressed_sheet_symbols or palette_symbols or compressed_palette_symbols or template_symbols or pokeball_modifier_hooks or pokeball_commit_hooks or pokeball_scripts or fishing_hooks or encounter_hooks or item_hooks or reward_hooks:
+    if event_handlers or weather_handlers or capture_hooks or battle_weather_hooks or npc_scripts or sheet_symbols or compressed_sheet_symbols or palette_symbols or compressed_palette_symbols or template_symbols or follower_graphics_infos or pokeball_modifier_hooks or pokeball_commit_hooks or pokeball_scripts or fishing_hooks or encounter_hooks or item_hooks or reward_hooks:
         lines.append("")
 
     lines.append("const struct ModManifest gModManifests[] =")
@@ -227,7 +235,7 @@ def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, A
     lines.append("{")
     if sprite_assets:
         for asset in sprite_assets:
-            lines.append(f"    {{ {c_string(asset['key'])}, {asset['sheet']}, {asset['compressed_sheet']}, {asset['palette']}, {asset['compressed_palette']}, {asset['template']}, {asset['tile_tag']}, {asset['palette_tag']} }},")
+            lines.append(f"    {{ {c_string(asset['key'])}, {c_symbol_ptr(asset['sheet'])}, {c_symbol_ptr(asset['compressed_sheet'])}, {c_symbol_ptr(asset['palette'])}, {c_symbol_ptr(asset['compressed_palette'])}, {c_symbol_ptr(asset['template'])}, {asset['tile_tag']}, {asset['palette_tag']} }},")
     else:
         lines.append("    { NULL, NULL, NULL, NULL, NULL, NULL, TAG_NONE, TAG_NONE },")
     lines.append("};")
@@ -260,9 +268,9 @@ def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, A
     lines.append("{")
     if followers:
         for follower in followers:
-            lines.append(f"    {{ {c_string(follower['key'])}, {follower['species']}, {follower['form']}, {follower['shiny']}, {follower['graphics']} }},")
+            lines.append(f"    {{ {c_string(follower['key'])}, {follower['species']}, {follower['form']}, {follower['shiny']}, {follower['graphics']}, {c_string(follower['asset_key'])}, {follower['revision']}, {c_symbol_ptr(follower['graphics_info'])} }},")
     else:
-        lines.append("    { NULL, 0, 0, FALSE, 0 },")
+        lines.append("    { NULL, 0, 0, FALSE, 0, NULL, 0, NULL },")
     lines.append("};")
     lines.append(f"const u16 gModFollowerSpriteCount = {len(followers)};")
     lines.append("")
