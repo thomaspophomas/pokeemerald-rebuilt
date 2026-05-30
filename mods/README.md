@@ -266,6 +266,16 @@ badge flag still counts as badge level `1`, so setting a modded badge level to
         { "flag": "FLAG_BADGE01_GET", "level": 19 },
         { "flag": "FLAG_BADGE02_GET", "level": 24 }
       ],
+      "softExpCurve": [
+        { "minDelta": -99, "maxDelta": -3, "percent": 0 },
+        { "delta": -2, "percent": 5 },
+        { "delta": -1, "percent": 10 },
+        { "delta": 0, "percent": 15 },
+        { "delta": 1, "percent": 30 },
+        { "delta": 2, "percent": 60 },
+        { "delta": 3, "percent": 90 },
+        { "minDelta": 4, "maxDelta": 99, "percent": 100 }
+      ],
       "rareCandy": "BLOCK_AT_CAP"
     }
   ]
@@ -275,9 +285,13 @@ badge flag still counts as badge level `1`, so setting a modded badge level to
 Level caps are unlocked by flags, not by hard-coded badge count. `flag` names a
 vanilla event flag and is encoded for `ModFlag_Get`; `modFlag` can reference a
 generated mod flag key, and `flagId` can provide a pre-encoded SDK flag id.
-`SOFT` uses a dynamic EXP curve near the active cap: more than 3 levels below
-gets full EXP, then 90%, 60%, 30%, 15% at cap, and 5% less per level above cap
-until reaching 0%. `HARD` gives no battle EXP at or above the active cap.
+`SOFT` uses `softExpCurve` to map the level delta `activeCap - pokemonLevel`
+to an EXP percentage. The supported delta range is `-99..99`; negative values
+mean the Pokemon is above the active cap, positive values mean it is below the
+cap. `softExpCurve` may be a list of ranges, a map of exact deltas, or a
+199-entry percent table ordered from `-99` through `99`. If omitted, the
+default curve is the one shown above. `HARD` gives no battle EXP at or above
+the active cap.
 
 `mods/demo/fishing/actions.json`:
 

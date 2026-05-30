@@ -287,6 +287,9 @@ LEVEL_CAP_RARE_CANDY_POLICIES = {
 
 LEVEL_CAP_MAX_STAGES = 16
 LEVEL_CAP_ALWAYS_FLAG = "MOD_LEVEL_CAP_FLAG_ALWAYS"
+LEVEL_CAP_EXP_DELTA_MIN = -99
+LEVEL_CAP_EXP_DELTA_MAX = 99
+LEVEL_CAP_EXP_DELTA_COUNT = LEVEL_CAP_EXP_DELTA_MAX - LEVEL_CAP_EXP_DELTA_MIN + 1
 LEVEL_CAP_BADGE_FLAGS = [
     "FLAG_BADGE01_GET",
     "FLAG_BADGE02_GET",
@@ -659,6 +662,50 @@ def parse_level_cap_level(value: Any, key: str, label: str) -> int:
     if level < 1 or level > 100:
         raise ModgenError(f"{key}: {label} must be in [1, 100]")
     return level
+
+
+def default_soft_exp_percent(delta: int) -> int:
+    if delta > 3:
+        return 100
+    if delta == 3:
+        return 90
+    if delta == 2:
+        return 60
+    if delta == 1:
+        return 30
+    if delta == 0:
+        return 15
+    if delta <= -3:
+        return 0
+    return 15 + (delta * 5)
+
+
+def default_soft_exp_curve() -> List[int]:
+    return [default_soft_exp_percent(delta) for delta in range(LEVEL_CAP_EXP_DELTA_MIN, LEVEL_CAP_EXP_DELTA_MAX + 1)]
+
+
+def parse_level_cap_delta(value: Any, key: str, label: str) -> int:
+    if isinstance(value, bool):
+        raise ModgenError(f"{key}: {label} must be an integer level delta")
+    try:
+        delta = int(value)
+    except (TypeError, ValueError) as exc:
+        raise ModgenError(f"{key}: {label} must be an integer level delta") from exc
+    if delta < LEVEL_CAP_EXP_DELTA_MIN or delta > LEVEL_CAP_EXP_DELTA_MAX:
+        raise ModgenError(f"{key}: {label} must be in [{LEVEL_CAP_EXP_DELTA_MIN}, {LEVEL_CAP_EXP_DELTA_MAX}]")
+    return delta
+
+
+def parse_soft_exp_percent(value: Any, key: str, label: str) -> int:
+    if isinstance(value, bool):
+        raise ModgenError(f"{key}: {label} must be an integer percent")
+    try:
+        percent = int(value)
+    except (TypeError, ValueError) as exc:
+        raise ModgenError(f"{key}: {label} must be an integer percent") from exc
+    if percent < 0 or percent > 100:
+        raise ModgenError(f"{key}: {label} must be in [0, 100]")
+    return percent
 
 
 def parse_level_cap_table(value: Any, key: str) -> List[int]:

@@ -31,6 +31,19 @@ static bool8 StagesAreValid(const struct ModLevelCapDefinition *definition)
     return TRUE;
 }
 
+static bool8 SoftExpCurveIsValid(const struct ModLevelCapDefinition *definition)
+{
+    u16 curve_index;
+
+    for (curve_index = 0; curve_index < MOD_LEVEL_CAP_EXP_DELTA_COUNT; curve_index++)
+    {
+        if (definition->soft_exp_curve[curve_index] > 100)
+            return FALSE;
+    }
+
+    return TRUE;
+}
+
 bool8 LevelCapApi_IsDefinitionValid(const struct ModLevelCapDefinition *definition, bool8 allow_empty_default)
 {
     if (definition == NULL)
@@ -45,7 +58,9 @@ bool8 LevelCapApi_IsDefinitionValid(const struct ModLevelCapDefinition *definiti
         return TRUE;
     if (definition->rare_candy_policy > MOD_LEVEL_CAP_RARE_CANDY_BLOCK_AT_CAP)
         return FALSE;
-    return StagesAreValid(definition);
+    if (!StagesAreValid(definition))
+        return FALSE;
+    return SoftExpCurveIsValid(definition);
 }
 
 static const struct ModLevelCapDefinition *GetActiveLevelCapDefinition(void)
@@ -121,23 +136,15 @@ static s16 ApplyPercentToExp(s16 gained_exp, u8 percent)
     return scaled_exp;
 }
 
-static u8 GetDynamicSoftExpPercent(u8 level, u8 cap)
+static u8 GetSoftExpPercent(const struct ModLevelCapDefinition *definition, u8 level, u8 cap)
 {
-    s16 distance = (s16)cap - level;
+    s16 delta = (s16)cap - level;
 
-    if (distance > 3)
-        return 100;
-    if (distance == 3)
-        return 90;
-    if (distance == 2)
-        return 60;
-    if (distance == 1)
-        return 30;
-    if (distance == 0)
-        return 15;
-    if (distance <= -3)
-        return 0;
-    return 15 + (distance * 5);
+    if (delta < MOD_LEVEL_CAP_EXP_DELTA_MIN)
+        delta = MOD_LEVEL_CAP_EXP_DELTA_MIN;
+    if (delta > MOD_LEVEL_CAP_EXP_DELTA_MAX)
+        delta = MOD_LEVEL_CAP_EXP_DELTA_MAX;
+    return definition->soft_exp_curve[delta - MOD_LEVEL_CAP_EXP_DELTA_MIN];
 }
 
 s16 LevelCapApi_ModifyBattleExp(struct Pokemon *mon, s16 gained_exp)
@@ -160,7 +167,7 @@ s16 LevelCapApi_ModifyBattleExp(struct Pokemon *mon, s16 gained_exp)
         return gained_exp;
     }
 
-    return ApplyPercentToExp(gained_exp, GetDynamicSoftExpPercent(level, cap));
+    return ApplyPercentToExp(gained_exp, GetSoftExpPercent(definition, level, cap));
 }
 
 bool8 LevelCapApi_CanUseRareCandy(struct Pokemon *mon)

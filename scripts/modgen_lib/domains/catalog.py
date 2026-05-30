@@ -278,6 +278,7 @@ def collect_catalog_entries(
             cap["priority"],
             cap["flags"],
             *stage_parts,
+            *cap["soft_exp_curve"],
         )
 
     entries.sort(key=lambda entry: (entry["type"], entry["flags"], entry["key_hash"], entry["content_hash"]))

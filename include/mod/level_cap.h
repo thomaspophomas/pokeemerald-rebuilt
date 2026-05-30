@@ -5,6 +5,9 @@
 
 #define MOD_LEVEL_CAP_MAX_STAGES 16
 #define MOD_LEVEL_CAP_FLAG_ALWAYS MOD_FLAG_INVALID
+#define MOD_LEVEL_CAP_EXP_DELTA_MIN (-99)
+#define MOD_LEVEL_CAP_EXP_DELTA_MAX 99
+#define MOD_LEVEL_CAP_EXP_DELTA_COUNT (MOD_LEVEL_CAP_EXP_DELTA_MAX - MOD_LEVEL_CAP_EXP_DELTA_MIN + 1)
 
 enum ModLevelCapMode
 {
@@ -38,6 +41,7 @@ struct ModLevelCapDefinition
     s16 priority;
     u16 flags;
     struct ModLevelCapStage stages[MOD_LEVEL_CAP_MAX_STAGES];
+    u8 soft_exp_curve[MOD_LEVEL_CAP_EXP_DELTA_COUNT];
 };
 
 bool8 LevelCapApi_IsDefinitionValid(const struct ModLevelCapDefinition *definition, bool8 allow_empty_default);

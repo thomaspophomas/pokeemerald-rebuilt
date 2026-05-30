@@ -246,6 +246,16 @@ def main() -> int:
                             {"flag": "FLAG_BADGE07_GET", "level": 46},
                             {"flag": "FLAG_BADGE08_GET", "level": 58},
                         ],
+                        "softExpCurve": [
+                            {"minDelta": -99, "maxDelta": -3, "percent": 0},
+                            {"delta": -2, "percent": 5},
+                            {"delta": -1, "percent": 10},
+                            {"delta": 0, "percent": 15},
+                            {"delta": 1, "percent": 30},
+                            {"delta": 2, "percent": 60},
+                            {"delta": 3, "percent": 90},
+                            {"minDelta": 4, "maxDelta": 99, "percent": 100},
+                        ],
                         "rareCandy": "BLOCK_AT_CAP",
                     }
                 ]

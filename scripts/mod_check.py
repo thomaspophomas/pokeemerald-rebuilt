@@ -385,12 +385,85 @@ def validate_events_file(path: Path) -> None:
 def validate_level_caps_file(path: Path) -> None:
     allowed = {
         "id", "key", "name", "mode", "capType", "cap_type", "stages", "capStages", "cap_stages",
-        "capsByBadge", "caps_by_badge", "rareCandy", "rare_candy", "priority", "flags",
+        "capsByBadge", "caps_by_badge", "softExpCurve", "soft_exp_curve", "expCurve", "exp_curve",
+        "rareCandy", "rare_candy", "priority", "flags",
     }
     stage_allowed = {
         "level", "cap", "maxLevel", "max_level", "flag", "vanillaFlag", "vanilla_flag",
         "modFlag", "mod_flag", "flagId", "flag_id",
     }
+    curve_allowed = {
+        "delta", "levelDelta", "level_delta", "minDelta", "min_delta", "maxDelta", "max_delta",
+        "from", "to", "percent",
+    }
+
+    def parse_delta(value: object, label: str) -> int:
+        if isinstance(value, bool):
+            raise ModCheckError(f"{path}: {label} must be an integer in [-99, 99]")
+        try:
+            delta = int(value)  # type: ignore[arg-type]
+        except (TypeError, ValueError) as exc:
+            raise ModCheckError(f"{path}: {label} must be an integer in [-99, 99]") from exc
+        if delta < -99 or delta > 99:
+            raise ModCheckError(f"{path}: {label} must be in [-99, 99]")
+        return delta
+
+    def parse_percent(value: object, label: str) -> int:
+        if isinstance(value, bool):
+            raise ModCheckError(f"{path}: {label} must be an integer in [0, 100]")
+        try:
+            percent = int(value)  # type: ignore[arg-type]
+        except (TypeError, ValueError) as exc:
+            raise ModCheckError(f"{path}: {label} must be an integer in [0, 100]") from exc
+        if percent < 0 or percent > 100:
+            raise ModCheckError(f"{path}: {label} must be in [0, 100]")
+        return percent
+
+    def validate_curve(raw_curve: object, label: str) -> None:
+        if raw_curve is None:
+            return
+        covered = [False] * 199
+        if isinstance(raw_curve, dict):
+            entries = [{"delta": delta, "percent": percent} for delta, percent in raw_curve.items()]
+        elif isinstance(raw_curve, list):
+            if all(isinstance(percent, int) and not isinstance(percent, bool) for percent in raw_curve):
+                if len(raw_curve) != 199:
+                    raise ModCheckError(f"{path}: {label} table must contain exactly 199 entries")
+                for percent_index, percent in enumerate(raw_curve):
+                    parse_percent(percent, f"{label}[{percent_index}]")
+                return
+            entries = raw_curve
+        else:
+            raise ModCheckError(f"{path}: {label} must be a map, a 199-entry percent table, or a list of range objects")
+
+        for curve_index, raw_entry in enumerate(entries):
+            entry_label = f"{label}[{curve_index}]"
+            entry = require_object(raw_entry, path, entry_label)
+            reject_unknown_fields(entry, curve_allowed, path, entry_label)
+            parse_percent(entry.get("percent"), f"{entry_label}.percent")
+            delta = entry.get("delta", entry.get("levelDelta", entry.get("level_delta")))
+            has_range_start = any(field in entry for field in ("minDelta", "min_delta", "from"))
+            has_range_end = any(field in entry for field in ("maxDelta", "max_delta", "to"))
+            if delta is not None:
+                if has_range_start or has_range_end:
+                    raise ModCheckError(f"{path}: {entry_label} must use either delta or minDelta/maxDelta")
+                min_delta = max_delta = parse_delta(delta, f"{entry_label}.delta")
+            else:
+                if not has_range_start or not has_range_end:
+                    raise ModCheckError(f"{path}: {entry_label} needs delta or minDelta/maxDelta")
+                min_delta = parse_delta(entry.get("minDelta", entry.get("min_delta", entry.get("from"))), f"{entry_label}.minDelta")
+                max_delta = parse_delta(entry.get("maxDelta", entry.get("max_delta", entry.get("to"))), f"{entry_label}.maxDelta")
+            if min_delta > max_delta:
+                raise ModCheckError(f"{path}: {entry_label}.minDelta must be <= maxDelta")
+            for curve_delta in range(min_delta, max_delta + 1):
+                covered_index = curve_delta + 99
+                if covered[covered_index]:
+                    raise ModCheckError(f"{path}: {label} overlaps at delta {curve_delta}")
+                covered[covered_index] = True
+        for covered_index, is_covered in enumerate(covered):
+            if not is_covered:
+                raise ModCheckError(f"{path}: {label} must cover every delta from -99 to 99; first missing delta is {covered_index - 99}")
+
     for index, raw_item in enumerate(require_items(read_json(path), DOMAIN_LIST_KEYS["level_caps"], path)):
         item = require_object(raw_item, path, f"caps[{index}]")
         reject_unknown_fields(item, allowed, path, f"caps[{index}]")
@@ -426,6 +499,8 @@ def validate_level_caps_file(path: Path) -> None:
             for cap_index, cap in enumerate(caps):
                 if not isinstance(cap, int) or cap < 1 or cap > 100:
                     raise ModCheckError(f"{path}: caps[{index}].capsByBadge[{cap_index}] must be in [1, 100]")
+        curve = item.get("softExpCurve", item.get("soft_exp_curve", item.get("expCurve", item.get("exp_curve"))))
+        validate_curve(curve, f"caps[{index}].softExpCurve")
         require_optional_int(item, "priority", path, f"caps[{index}].priority", -32768, 32767)
 
 

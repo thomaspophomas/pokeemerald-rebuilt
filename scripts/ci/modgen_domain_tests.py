@@ -203,6 +203,16 @@ def test_level_cap_domain() -> None:
                             {"flag": "FLAG_BADGE07_GET", "level": 46},
                             {"flag": "FLAG_BADGE08_GET", "level": 58},
                         ],
+                        "softExpCurve": [
+                            {"minDelta": -99, "maxDelta": -3, "percent": 0},
+                            {"delta": -2, "percent": 5},
+                            {"delta": -1, "percent": 10},
+                            {"delta": 0, "percent": 15},
+                            {"delta": 1, "percent": 30},
+                            {"delta": 2, "percent": 60},
+                            {"delta": 3, "percent": 90},
+                            {"minDelta": 4, "maxDelta": 99, "percent": 100},
+                        ],
                         "rareCandy": "BLOCK_AT_CAP",
                         "priority": 50,
                     }
@@ -218,6 +228,7 @@ def test_level_cap_domain() -> None:
         assert "MOD_LEVEL_CAP_MODE_SOFT" in source
         assert "MOD_LEVEL_CAP_RARE_CANDY_BLOCK_AT_CAP" in source
         assert "MOD_FLAG_TO_VANILLA(FLAG_BADGE08_GET), 58" in source
+        assert "5, 10, 15, 30, 60, 90, 100" in source
         assert "MOD_CATALOG_ENTRY_LEVEL_CAP" in source
     finally:
         shutil.rmtree(root)
@@ -235,6 +246,22 @@ def test_level_cap_requires_stages() -> None:
         result = run([sys.executable, str(REPO / "scripts" / "modgen.py"), "--root", str(root)], root, expect_ok=False)
         assert "stages" in result.stdout
         assert "1..16" in result.stdout
+    finally:
+        shutil.rmtree(root)
+
+
+def test_level_cap_curve_requires_full_delta_coverage() -> None:
+    root = linked_root()
+    try:
+        write_json(root / "mods" / "caps" / "mod.json", base_manifest("caps"))
+        write_json(
+            root / "mods" / "caps" / "level_caps" / "caps.json",
+            {"caps": [{"id": "bad", "capStages": [{"level": 15}], "softExpCurve": [{"delta": 0, "percent": 15}]}]},
+        )
+
+        result = run([sys.executable, str(REPO / "scripts" / "modgen.py"), "--root", str(root)], root, expect_ok=False)
+        assert "softExpCurve" in result.stdout
+        assert "cover every delta" in result.stdout
     finally:
         shutil.rmtree(root)
 
@@ -299,6 +326,7 @@ def main() -> int:
     test_modgen_state_budget_guard()
     test_level_cap_domain()
     test_level_cap_requires_stages()
+    test_level_cap_curve_requires_full_delta_coverage()
     test_followers_support_direct_graphics_info()
     print("modgen domain tests OK")
     return 0

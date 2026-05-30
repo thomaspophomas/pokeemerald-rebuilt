@@ -469,9 +469,10 @@ def write_source(path: Path, mods: List[Dict[str, Any]], flags: List[Dict[str, A
         for cap in level_caps:
             stages = [f"{{ {stage['flag']}, {stage['level']}, 0 }}" for stage in cap["stages"]]
             stages.extend(["{ MOD_LEVEL_CAP_FLAG_ALWAYS, 0, 0 }"] * (LEVEL_CAP_MAX_STAGES - len(stages)))
-            lines.append(f"    {{ {c_string(cap['key'])}, {cap['mode']}, {cap['stage_count']}, {cap['rare_candy']}, 0, {cap['priority']}, {cap['flags']}, {{ {', '.join(stages)} }} }},")
+            soft_curve = ", ".join(str(percent) for percent in cap["soft_exp_curve"])
+            lines.append(f"    {{ {c_string(cap['key'])}, {cap['mode']}, {cap['stage_count']}, {cap['rare_candy']}, 0, {cap['priority']}, {cap['flags']}, {{ {', '.join(stages)} }}, {{ {soft_curve} }} }},")
     else:
-        lines.append("    { NULL, 0, 0, 0, 0, 0, 0, { { MOD_LEVEL_CAP_FLAG_ALWAYS, 0, 0 } } },")
+        lines.append("    { NULL, 0, 0, 0, 0, 0, 0, { { MOD_LEVEL_CAP_FLAG_ALWAYS, 0, 0 } }, { 0 } },")
     lines.append("};")
     lines.append(f"const u16 gModLevelCapCount = {len(level_caps)};")
     lines.append("")

@@ -89,7 +89,70 @@ def parse_level_cap_stages(item: Dict[str, Any], mod_id: str, key: str, flag_ids
     return stages
 
 
-def validate_level_cap(key: str, mode: str, rare_candy_policy: str, stages: List[Dict[str, Any]]) -> None:
+def get_soft_exp_curve_value(item: Dict[str, Any]) -> Any:
+    for field in ("softExpCurve", "soft_exp_curve", "expCurve", "exp_curve"):
+        if field in item:
+            return item[field]
+    return None
+
+
+def parse_curve_entry(entry: Dict[str, Any], key: str, label: str) -> tuple[int, int, int]:
+    percent = parse_soft_exp_percent(entry.get("percent"), key, f"{label}.percent")
+    delta_value = entry.get("delta", entry.get("levelDelta", entry.get("level_delta")))
+    has_range_start = any(field in entry for field in ("minDelta", "min_delta", "from"))
+    has_range_end = any(field in entry for field in ("maxDelta", "max_delta", "to"))
+
+    if delta_value is not None:
+        if has_range_start or has_range_end:
+            raise ModgenError(f"{key}: {label} must use either delta or minDelta/maxDelta")
+        delta = parse_level_cap_delta(delta_value, key, f"{label}.delta")
+        return delta, delta, percent
+
+    min_delta_value = entry.get("minDelta", entry.get("min_delta", entry.get("from")))
+    max_delta_value = entry.get("maxDelta", entry.get("max_delta", entry.get("to")))
+    if not has_range_start or not has_range_end:
+        raise ModgenError(f"{key}: {label} needs delta or minDelta/maxDelta")
+
+    min_delta = parse_level_cap_delta(min_delta_value, key, f"{label}.minDelta")
+    max_delta = parse_level_cap_delta(max_delta_value, key, f"{label}.maxDelta")
+    if min_delta > max_delta:
+        raise ModgenError(f"{key}: {label}.minDelta must be <= maxDelta")
+    return min_delta, max_delta, percent
+
+
+def parse_soft_exp_curve(raw_curve: Any, key: str) -> List[int]:
+    if raw_curve is None:
+        return default_soft_exp_curve()
+
+    curve: List[Optional[int]] = [None] * LEVEL_CAP_EXP_DELTA_COUNT
+    if isinstance(raw_curve, dict):
+        entries = [{"delta": delta, "percent": percent} for delta, percent in raw_curve.items()]
+    elif isinstance(raw_curve, list):
+        if all(isinstance(percent, int) and not isinstance(percent, bool) for percent in raw_curve):
+            if len(raw_curve) != LEVEL_CAP_EXP_DELTA_COUNT:
+                raise ModgenError(f"{key}: softExpCurve table must contain exactly {LEVEL_CAP_EXP_DELTA_COUNT} entries")
+            return [parse_soft_exp_percent(percent, key, f"softExpCurve[{index}]") for index, percent in enumerate(raw_curve)]
+        entries = raw_curve
+    else:
+        raise ModgenError(f"{key}: softExpCurve must be a map, a {LEVEL_CAP_EXP_DELTA_COUNT}-entry percent table, or a list of range objects")
+
+    for index, raw_entry in enumerate(entries):
+        if not isinstance(raw_entry, dict):
+            raise ModgenError(f"{key}: softExpCurve[{index}] must be an object")
+        min_delta, max_delta, percent = parse_curve_entry(raw_entry, key, f"softExpCurve[{index}]")
+        for delta in range(min_delta, max_delta + 1):
+            curve_index = delta - LEVEL_CAP_EXP_DELTA_MIN
+            if curve[curve_index] is not None:
+                raise ModgenError(f"{key}: softExpCurve overlaps at delta {delta}")
+            curve[curve_index] = percent
+
+    missing = [delta for delta in range(LEVEL_CAP_EXP_DELTA_MIN, LEVEL_CAP_EXP_DELTA_MAX + 1) if curve[delta - LEVEL_CAP_EXP_DELTA_MIN] is None]
+    if missing:
+        raise ModgenError(f"{key}: softExpCurve must cover every delta from {LEVEL_CAP_EXP_DELTA_MIN} to {LEVEL_CAP_EXP_DELTA_MAX}; first missing delta is {missing[0]}")
+    return [int(percent) for percent in curve]
+
+
+def validate_level_cap(key: str, mode: str, rare_candy_policy: str, stages: List[Dict[str, Any]], soft_exp_curve: List[int]) -> None:
     mode_value = level_cap_mode_value(mode)
     rare_candy_value = rare_candy_policy_value(rare_candy_policy)
 
@@ -99,6 +162,12 @@ def validate_level_cap(key: str, mode: str, rare_candy_policy: str, stages: List
         raise ModgenError(f"{key}: rareCandy must be ALLOW or BLOCK_AT_CAP")
     if len(stages) == 0 or len(stages) > LEVEL_CAP_MAX_STAGES:
         raise ModgenError(f"{key}: stages must contain 1..{LEVEL_CAP_MAX_STAGES} entries")
+    if len(soft_exp_curve) != LEVEL_CAP_EXP_DELTA_COUNT:
+        raise ModgenError(f"{key}: softExpCurve must contain {LEVEL_CAP_EXP_DELTA_COUNT} entries")
+    for index, percent in enumerate(soft_exp_curve):
+        if percent < 0 or percent > 100:
+            delta = LEVEL_CAP_EXP_DELTA_MIN + index
+            raise ModgenError(f"{key}: softExpCurve delta {delta} must be in [0, 100]")
 
 
 def collect_level_caps(mods: List[Dict[str, Any]], flags: Optional[List[Dict[str, Any]]] = None) -> List[Dict[str, Any]]:
@@ -116,10 +185,11 @@ def collect_level_caps(mods: List[Dict[str, Any]], flags: Optional[List[Dict[str
                 mode = normalize_level_cap_mode(item.get("mode", item.get("capType", item.get("cap_type", "SOFT"))))
                 rare_candy_policy = normalize_rare_candy_policy(item.get("rareCandy", item.get("rare_candy", "ALLOW")))
                 stages = parse_level_cap_stages(item, mod["id"], key, flag_ids)
+                soft_exp_curve = parse_soft_exp_curve(get_soft_exp_curve_value(item), key)
                 priority = int(item.get("priority", 1000))
                 if priority < -32768 or priority > 32767:
                     raise ModgenError(f"{key}: priority must be in signed 16-bit range")
-                validate_level_cap(key, mode, rare_candy_policy, stages)
+                validate_level_cap(key, mode, rare_candy_policy, stages, soft_exp_curve)
 
                 caps.append(
                     {
@@ -130,6 +200,7 @@ def collect_level_caps(mods: List[Dict[str, Any]], flags: Optional[List[Dict[str
                         "priority": priority,
                         "flags": c_int_or_token(item.get("flags"), "0"),
                         "stages": stages,
+                        "soft_exp_curve": soft_exp_curve,
                     }
                 )
     caps.sort(key=lambda cap: (cap["priority"], cap["key"]))
