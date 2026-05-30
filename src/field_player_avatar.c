@@ -1722,8 +1722,8 @@ static void Task_WaitStopSurfing(u8 taskId)
 #define FISHING_SHOW_RESULT 13
 #define FISHING_CUSTOM_ACTION 16
 
-static FishingActionFrameHook sFishingActionFrameHook = NULL;
-static struct FishingActionRequest sFishingActionRequest = {0};
+static EWRAM_DATA FishingActionFrameHook sFishingActionFrameHook = NULL;
+static EWRAM_DATA struct FishingActionRequest sFishingActionRequest = {0};
 
 static bool8 (*const sFishingStateFuncs[])(struct Task *) =
 {
