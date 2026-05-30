@@ -37,7 +37,7 @@ server builds. The current `master` values are:
   "rulesetHash": "0x00000003",
   "profileProtocolVersion": 1,
   "profileCapabilityHash": "0x00000006",
-  "modCatalogSchemaHash": "0x00000007",
+  "modCatalogSchemaHash": "0x00000008",
   "modCatalogHash": "0xA3A0C2E8",
   "transportMode": "server_bridge",
   "transportModeValue": 1,

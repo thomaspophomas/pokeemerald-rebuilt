@@ -265,16 +265,19 @@ def collect_catalog_entries(
             trainer["party_count"],
         )
     for cap in level_caps:
+        stage_parts = []
+        for stage in cap["stages"]:
+            stage_parts.extend([stage["flag"], stage["level"]])
         add_catalog_entry(
             entries,
             "MOD_CATALOG_ENTRY_LEVEL_CAP",
             cap["key"],
             cap["mode"],
-            cap["soft_percent"],
+            cap["stage_count"],
             cap["rare_candy"],
             cap["priority"],
             cap["flags"],
-            *cap["caps"],
+            *stage_parts,
         )
 
     entries.sort(key=lambda entry: (entry["type"], entry["flags"], entry["key_hash"], entry["content_hash"]))

@@ -384,20 +384,48 @@ def validate_events_file(path: Path) -> None:
 
 def validate_level_caps_file(path: Path) -> None:
     allowed = {
-        "id", "key", "name", "mode", "capType", "cap_type", "capsByBadge", "caps_by_badge",
-        "softExpPercent", "soft_exp_percent", "rareCandy", "rare_candy", "priority", "flags",
+        "id", "key", "name", "mode", "capType", "cap_type", "stages", "capStages", "cap_stages",
+        "capsByBadge", "caps_by_badge", "rareCandy", "rare_candy", "priority", "flags",
+    }
+    stage_allowed = {
+        "level", "cap", "maxLevel", "max_level", "flag", "vanillaFlag", "vanilla_flag",
+        "modFlag", "mod_flag", "flagId", "flag_id",
     }
     for index, raw_item in enumerate(require_items(read_json(path), DOMAIN_LIST_KEYS["level_caps"], path)):
         item = require_object(raw_item, path, f"caps[{index}]")
         reject_unknown_fields(item, allowed, path, f"caps[{index}]")
+        stages = item.get("stages", item.get("capStages", item.get("cap_stages")))
         caps = item.get("capsByBadge", item.get("caps_by_badge"))
-        if not isinstance(caps, list) or len(caps) != 9:
-            raise ModCheckError(f"{path}: caps[{index}].capsByBadge must be a list of 9 levels")
-        for cap_index, cap in enumerate(caps):
-            if not isinstance(cap, int) or cap < 1 or cap > 100:
-                raise ModCheckError(f"{path}: caps[{index}].capsByBadge[{cap_index}] must be in [1, 100]")
-        require_optional_int(item, "softExpPercent", path, f"caps[{index}].softExpPercent", 0, 100)
-        require_optional_int(item, "soft_exp_percent", path, f"caps[{index}].soft_exp_percent", 0, 100)
+        if stages is not None and caps is not None:
+            raise ModCheckError(f"{path}: caps[{index}] must use either stages/capStages or capsByBadge")
+        if stages is None and caps is None:
+            raise ModCheckError(f"{path}: caps[{index}] needs stages/capStages")
+        if stages is not None:
+            if not isinstance(stages, list) or len(stages) == 0 or len(stages) > 16:
+                raise ModCheckError(f"{path}: caps[{index}].stages must be a list of 1..16 entries")
+            for stage_index, raw_stage in enumerate(stages):
+                if isinstance(raw_stage, int):
+                    if raw_stage < 1 or raw_stage > 100:
+                        raise ModCheckError(f"{path}: caps[{index}].stages[{stage_index}] must be in [1, 100]")
+                    continue
+                stage = require_object(raw_stage, path, f"caps[{index}].stages[{stage_index}]")
+                reject_unknown_fields(stage, stage_allowed, path, f"caps[{index}].stages[{stage_index}]")
+                level = stage.get("level", stage.get("cap", stage.get("maxLevel", stage.get("max_level"))))
+                if not isinstance(level, int) or level < 1 or level > 100:
+                    raise ModCheckError(f"{path}: caps[{index}].stages[{stage_index}].level must be in [1, 100]")
+                used_flags = sum(1 for field_group in (
+                    ("flag", "vanillaFlag", "vanilla_flag"),
+                    ("modFlag", "mod_flag"),
+                    ("flagId", "flag_id"),
+                ) if any(field in stage for field in field_group))
+                if used_flags > 1:
+                    raise ModCheckError(f"{path}: caps[{index}].stages[{stage_index}] may use only one flag field")
+        else:
+            if not isinstance(caps, list) or len(caps) != 9:
+                raise ModCheckError(f"{path}: caps[{index}].capsByBadge must be a list of 9 levels")
+            for cap_index, cap in enumerate(caps):
+                if not isinstance(cap, int) or cap < 1 or cap > 100:
+                    raise ModCheckError(f"{path}: caps[{index}].capsByBadge[{cap_index}] must be in [1, 100]")
         require_optional_int(item, "priority", path, f"caps[{index}].priority", -32768, 32767)
 
 
@@ -796,9 +824,9 @@ def load_modgen(root: Path):
 def run_generator_collectors(root: Path) -> dict[str, int]:
     modgen = load_modgen(root)
     mods = modgen.load_mods(root)
-    counts: dict[str, int] = {"mods": len(mods)}
+    flags = modgen.collect_flags(mods)
+    counts: dict[str, int] = {"mods": len(mods), "flags": len(flags)}
     collectors = {
-        "flags": modgen.collect_flags,
         "events": modgen.collect_events,
         "weather": modgen.collect_weather,
         "timeSegments": modgen.collect_time_segments,
@@ -816,7 +844,7 @@ def run_generator_collectors(root: Path) -> dict[str, int]:
         "battleSprites": modgen.collect_battle_sprites,
         "followers": modgen.collect_followers,
         "languageTexts": modgen.collect_language_texts,
-        "levelCaps": modgen.collect_level_caps,
+        "levelCaps": lambda loaded_mods: modgen.collect_level_caps(loaded_mods, flags),
         "pokeballs": modgen.collect_pokeballs,
         "engines": modgen.collect_engines,
         "npcs": modgen.collect_npcs,

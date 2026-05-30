@@ -51,7 +51,7 @@ def generate(root: Path, out_header: str, out_source: str, out_make: str) -> Non
     pokemon_data = collect_pokemon_data(mods)
     battle_moves = collect_battle_moves(mods)
     trainers = collect_trainers(mods)
-    level_caps = collect_level_caps(mods)
+    level_caps = collect_level_caps(mods, flags)
     sprite_assets = collect_sprite_assets(mods)
     overworld_sprites = collect_overworld_sprites(mods)
     battle_sprites = collect_battle_sprites(mods)

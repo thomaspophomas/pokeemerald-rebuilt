@@ -285,6 +285,19 @@ LEVEL_CAP_RARE_CANDY_POLICIES = {
     "BLOCK_AT_CAP": "MOD_LEVEL_CAP_RARE_CANDY_BLOCK_AT_CAP",
 }
 
+LEVEL_CAP_MAX_STAGES = 16
+LEVEL_CAP_ALWAYS_FLAG = "MOD_LEVEL_CAP_FLAG_ALWAYS"
+LEVEL_CAP_BADGE_FLAGS = [
+    "FLAG_BADGE01_GET",
+    "FLAG_BADGE02_GET",
+    "FLAG_BADGE03_GET",
+    "FLAG_BADGE04_GET",
+    "FLAG_BADGE05_GET",
+    "FLAG_BADGE06_GET",
+    "FLAG_BADGE07_GET",
+    "FLAG_BADGE08_GET",
+]
+
 BUTTON_VALUES = {
     "A": 0x0001,
     "A_BUTTON": 0x0001,
@@ -636,16 +649,24 @@ def rare_candy_policy_value(value: str) -> int:
     raise ModgenError(f"Rare Candy policy {value!r} is invalid")
 
 
+def parse_level_cap_level(value: Any, key: str, label: str) -> int:
+    if isinstance(value, bool):
+        raise ModgenError(f"{key}: {label} must be an integer level")
+    try:
+        level = int(value)
+    except (TypeError, ValueError) as exc:
+        raise ModgenError(f"{key}: {label} must be an integer level") from exc
+    if level < 1 or level > 100:
+        raise ModgenError(f"{key}: {label} must be in [1, 100]")
+    return level
+
+
 def parse_level_cap_table(value: Any, key: str) -> List[int]:
     if not isinstance(value, list):
         raise ModgenError(f"{key}: capsByBadge must be a list of 9 levels")
     if len(value) != 9:
         raise ModgenError(f"{key}: capsByBadge must contain exactly 9 levels for 0..8 badges")
-    caps = [int(level) for level in value]
-    for cap in caps:
-        if cap < 1 or cap > 100:
-            raise ModgenError(f"{key}: capsByBadge levels must be in [1, 100]")
-    return caps
+    return [parse_level_cap_level(level, key, f"capsByBadge[{index}]") for index, level in enumerate(value)]
 
 
 def parse_fishing_outcome(value: Any, default: str) -> int:

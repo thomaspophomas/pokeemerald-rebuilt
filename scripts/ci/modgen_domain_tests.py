@@ -192,8 +192,17 @@ def test_level_cap_domain() -> None:
                     {
                         "id": "badge_soft_cap",
                         "capType": "SOFT",
-                        "capsByBadge": [15, 19, 24, 29, 31, 33, 42, 46, 58],
-                        "softExpPercent": 25,
+                        "capStages": [
+                            {"level": 15},
+                            {"flag": "FLAG_BADGE01_GET", "level": 19},
+                            {"flag": "FLAG_BADGE02_GET", "level": 24},
+                            {"flag": "FLAG_BADGE03_GET", "level": 29},
+                            {"flag": "FLAG_BADGE04_GET", "level": 31},
+                            {"flag": "FLAG_BADGE05_GET", "level": 33},
+                            {"flag": "FLAG_BADGE06_GET", "level": 42},
+                            {"flag": "FLAG_BADGE07_GET", "level": 46},
+                            {"flag": "FLAG_BADGE08_GET", "level": 58},
+                        ],
                         "rareCandy": "BLOCK_AT_CAP",
                         "priority": 50,
                     }
@@ -208,23 +217,24 @@ def test_level_cap_domain() -> None:
         assert '"caps:badge_soft_cap"' in source
         assert "MOD_LEVEL_CAP_MODE_SOFT" in source
         assert "MOD_LEVEL_CAP_RARE_CANDY_BLOCK_AT_CAP" in source
+        assert "MOD_FLAG_TO_VANILLA(FLAG_BADGE08_GET), 58" in source
         assert "MOD_CATALOG_ENTRY_LEVEL_CAP" in source
     finally:
         shutil.rmtree(root)
 
 
-def test_level_cap_requires_nine_badge_slots() -> None:
+def test_level_cap_requires_stages() -> None:
     root = linked_root()
     try:
         write_json(root / "mods" / "caps" / "mod.json", base_manifest("caps"))
         write_json(
             root / "mods" / "caps" / "level_caps" / "caps.json",
-            {"caps": [{"id": "bad", "capsByBadge": [15, 19]}]},
+            {"caps": [{"id": "bad", "capStages": []}]},
         )
 
         result = run([sys.executable, str(REPO / "scripts" / "modgen.py"), "--root", str(root)], root, expect_ok=False)
-        assert "capsByBadge" in result.stdout
-        assert "9 levels" in result.stdout
+        assert "stages" in result.stdout
+        assert "1..16" in result.stdout
     finally:
         shutil.rmtree(root)
 
@@ -288,7 +298,7 @@ def main() -> int:
     test_mod_check_follower_mapping_conflict()
     test_modgen_state_budget_guard()
     test_level_cap_domain()
-    test_level_cap_requires_nine_badge_slots()
+    test_level_cap_requires_stages()
     test_followers_support_direct_graphics_info()
     print("modgen domain tests OK")
     return 0

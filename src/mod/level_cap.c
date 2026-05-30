@@ -1,7 +1,7 @@
 #include "global.h"
 #include "constants/pokemon.h"
 #include "generated/mod_registry.h"
-#include "mod/badge.h"
+#include "mod/flags.h"
 #include "mod/level_cap.h"
 #include "pokemon.h"
 
@@ -9,19 +9,22 @@ static bool8 DefinitionIsEmptyDefault(const struct ModLevelCapDefinition *defini
 {
     return definition->key == NULL
         && definition->mode == 0
-        && definition->soft_exp_percent == 0
+        && definition->stage_count == 0
         && definition->rare_candy_policy == 0
         && definition->priority == 0
         && definition->flags == 0;
 }
 
-static bool8 CapTableIsValid(const struct ModLevelCapDefinition *definition)
+static bool8 StagesAreValid(const struct ModLevelCapDefinition *definition)
 {
-    u8 badge_slot;
+    u8 stage_index;
 
-    for (badge_slot = 0; badge_slot < MOD_LEVEL_CAP_BADGE_SLOTS; badge_slot++)
+    if (definition->stage_count == 0 || definition->stage_count > MOD_LEVEL_CAP_MAX_STAGES)
+        return FALSE;
+
+    for (stage_index = 0; stage_index < definition->stage_count; stage_index++)
     {
-        if (definition->caps[badge_slot] == 0 || definition->caps[badge_slot] > MAX_LEVEL)
+        if (definition->stages[stage_index].level == 0 || definition->stages[stage_index].level > MAX_LEVEL)
             return FALSE;
     }
 
@@ -40,11 +43,9 @@ bool8 LevelCapApi_IsDefinitionValid(const struct ModLevelCapDefinition *definiti
         return FALSE;
     if (definition->mode == MOD_LEVEL_CAP_MODE_NONE)
         return TRUE;
-    if (definition->soft_exp_percent > 100)
-        return FALSE;
     if (definition->rare_candy_policy > MOD_LEVEL_CAP_RARE_CANDY_BLOCK_AT_CAP)
         return FALSE;
-    return CapTableIsValid(definition);
+    return StagesAreValid(definition);
 }
 
 static const struct ModLevelCapDefinition *GetActiveLevelCapDefinition(void)
@@ -65,33 +66,42 @@ static const struct ModLevelCapDefinition *GetActiveLevelCapDefinition(void)
     return best_definition;
 }
 
-static u8 CountEarnedBadges(void)
+static bool8 StageIsUnlocked(const struct ModLevelCapStage *stage)
 {
-    u8 badge_index;
-    u8 badge_count = 0;
+    if (stage->unlock_flag == MOD_LEVEL_CAP_FLAG_ALWAYS)
+        return TRUE;
+    return ModFlag_Get(stage->unlock_flag);
+}
 
-    for (badge_index = 0; badge_index < MOD_BADGE_COUNT; badge_index++)
+static bool8 TryGetDefinitionActiveCap(const struct ModLevelCapDefinition *definition, u8 *cap)
+{
+    u8 stage_index;
+    u8 active_cap = 0;
+
+    for (stage_index = 0; stage_index < definition->stage_count; stage_index++)
     {
-        if (BadgeApi_GetLevel(badge_index) > 0)
-            badge_count++;
+        if (!StageIsUnlocked(&definition->stages[stage_index]))
+            continue;
+        if (definition->stages[stage_index].level > active_cap)
+            active_cap = definition->stages[stage_index].level;
     }
 
-    return badge_count;
+    if (active_cap == 0)
+        return FALSE;
+
+    *cap = active_cap;
+    return TRUE;
 }
 
 u8 LevelCapApi_GetActiveCap(void)
 {
     const struct ModLevelCapDefinition *definition = GetActiveLevelCapDefinition();
-    u8 badge_count;
+    u8 cap;
 
     if (definition == NULL)
         return MAX_LEVEL;
 
-    badge_count = CountEarnedBadges();
-    if (badge_count >= MOD_LEVEL_CAP_BADGE_SLOTS)
-        badge_count = MOD_LEVEL_CAP_BADGE_SLOTS - 1;
-
-    return definition->caps[badge_count];
+    return TryGetDefinitionActiveCap(definition, &cap) ? cap : MAX_LEVEL;
 }
 
 static s16 ApplyPercentToExp(s16 gained_exp, u8 percent)
@@ -111,31 +121,58 @@ static s16 ApplyPercentToExp(s16 gained_exp, u8 percent)
     return scaled_exp;
 }
 
+static u8 GetDynamicSoftExpPercent(u8 level, u8 cap)
+{
+    s16 distance = (s16)cap - level;
+
+    if (distance > 3)
+        return 100;
+    if (distance == 3)
+        return 90;
+    if (distance == 2)
+        return 60;
+    if (distance == 1)
+        return 30;
+    if (distance == 0)
+        return 15;
+    if (distance <= -3)
+        return 0;
+    return 15 + (distance * 5);
+}
+
 s16 LevelCapApi_ModifyBattleExp(struct Pokemon *mon, s16 gained_exp)
 {
     const struct ModLevelCapDefinition *definition = GetActiveLevelCapDefinition();
     u8 level;
+    u8 cap;
 
     if (definition == NULL || mon == NULL || gained_exp <= 0)
         return gained_exp;
 
     level = GetMonData(mon, MON_DATA_LEVEL);
-    if (level < LevelCapApi_GetActiveCap())
+    if (!TryGetDefinitionActiveCap(definition, &cap))
         return gained_exp;
 
     if (definition->mode == MOD_LEVEL_CAP_MODE_HARD)
-        return 0;
+    {
+        if (level >= cap)
+            return 0;
+        return gained_exp;
+    }
 
-    return ApplyPercentToExp(gained_exp, definition->soft_exp_percent);
+    return ApplyPercentToExp(gained_exp, GetDynamicSoftExpPercent(level, cap));
 }
 
 bool8 LevelCapApi_CanUseRareCandy(struct Pokemon *mon)
 {
     const struct ModLevelCapDefinition *definition = GetActiveLevelCapDefinition();
+    u8 cap;
 
     if (definition == NULL || mon == NULL)
         return TRUE;
     if (definition->rare_candy_policy != MOD_LEVEL_CAP_RARE_CANDY_BLOCK_AT_CAP)
         return TRUE;
-    return GetMonData(mon, MON_DATA_LEVEL) < LevelCapApi_GetActiveCap();
+    if (!TryGetDefinitionActiveCap(definition, &cap))
+        return TRUE;
+    return GetMonData(mon, MON_DATA_LEVEL) < cap;
 }

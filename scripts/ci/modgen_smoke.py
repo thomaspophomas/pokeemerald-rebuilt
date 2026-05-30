@@ -235,8 +235,17 @@ def main() -> int:
                     {
                         "id": "badge_soft_cap",
                         "mode": "SOFT",
-                        "capsByBadge": [15, 19, 24, 29, 31, 33, 42, 46, 58],
-                        "softExpPercent": 25,
+                        "capStages": [
+                            {"level": 15},
+                            {"flag": "FLAG_BADGE01_GET", "level": 19},
+                            {"flag": "FLAG_BADGE02_GET", "level": 24},
+                            {"flag": "FLAG_BADGE03_GET", "level": 29},
+                            {"flag": "FLAG_BADGE04_GET", "level": 31},
+                            {"flag": "FLAG_BADGE05_GET", "level": 33},
+                            {"flag": "FLAG_BADGE06_GET", "level": 42},
+                            {"flag": "FLAG_BADGE07_GET", "level": 46},
+                            {"flag": "FLAG_BADGE08_GET", "level": 58},
+                        ],
                         "rareCandy": "BLOCK_AT_CAP",
                     }
                 ]

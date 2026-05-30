@@ -3,7 +3,7 @@
 
 #include "mod/base.h"
 
-#define MOD_CATALOG_SCHEMA_HASH 0x00000007
+#define MOD_CATALOG_SCHEMA_HASH 0x00000008
 
 #define MOD_CATALOG_ENTRY_FLAG_HOOK_REF (1 << 0)
 

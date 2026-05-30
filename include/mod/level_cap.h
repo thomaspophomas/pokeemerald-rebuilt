@@ -1,9 +1,10 @@
 #ifndef GUARD_MOD_LEVEL_CAP_H
 #define GUARD_MOD_LEVEL_CAP_H
 
-#include "mod/base.h"
+#include "mod/flags.h"
 
-#define MOD_LEVEL_CAP_BADGE_SLOTS 9
+#define MOD_LEVEL_CAP_MAX_STAGES 16
+#define MOD_LEVEL_CAP_FLAG_ALWAYS MOD_FLAG_INVALID
 
 enum ModLevelCapMode
 {
@@ -18,18 +19,25 @@ enum ModLevelCapRareCandyPolicy
     MOD_LEVEL_CAP_RARE_CANDY_BLOCK_AT_CAP,
 };
 
+struct ModLevelCapStage
+{
+    u16 unlock_flag;
+    u8 level;
+    u8 reserved;
+};
+
 struct Pokemon;
 
 struct ModLevelCapDefinition
 {
     const char *key;
     u8 mode;
-    u8 soft_exp_percent;
+    u8 stage_count;
     u8 rare_candy_policy;
     u8 reserved;
     s16 priority;
     u16 flags;
-    u8 caps[MOD_LEVEL_CAP_BADGE_SLOTS];
+    struct ModLevelCapStage stages[MOD_LEVEL_CAP_MAX_STAGES];
 };
 
 bool8 LevelCapApi_IsDefinitionValid(const struct ModLevelCapDefinition *definition, bool8 allow_empty_default);

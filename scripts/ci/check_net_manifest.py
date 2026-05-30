@@ -73,6 +73,7 @@ def calc_mod_catalog_hash() -> int:
     spec.loader.exec_module(modgen)
 
     mods = modgen.load_mods(ROOT)
+    flags = modgen.collect_flags(mods)
     weather = modgen.collect_weather(mods)
     sprite_assets = modgen.collect_sprite_assets(mods)
     language_texts = modgen.collect_language_texts(mods)
@@ -87,7 +88,7 @@ def calc_mod_catalog_hash() -> int:
     pokemon_data = modgen.collect_pokemon_data(mods)
     battle_moves = modgen.collect_battle_moves(mods)
     trainers = modgen.collect_trainers(mods)
-    level_caps = modgen.collect_level_caps(mods)
+    level_caps = modgen.collect_level_caps(mods, flags)
     catalog_entries = modgen.collect_catalog_entries(
         weather,
         sprite_assets,

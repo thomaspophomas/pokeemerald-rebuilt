@@ -253,6 +253,32 @@ generated defaults and is not valid in mod JSON or runtime profiles. A vanilla
 badge flag still counts as badge level `1`, so setting a modded badge level to
 `0` does not suppress an already-earned vanilla badge.
 
+`mods/demo/level_caps/caps.json`:
+
+```json
+{
+  "caps": [
+    {
+      "id": "story_soft_cap",
+      "capType": "SOFT",
+      "capStages": [
+        { "level": 15 },
+        { "flag": "FLAG_BADGE01_GET", "level": 19 },
+        { "flag": "FLAG_BADGE02_GET", "level": 24 }
+      ],
+      "rareCandy": "BLOCK_AT_CAP"
+    }
+  ]
+}
+```
+
+Level caps are unlocked by flags, not by hard-coded badge count. `flag` names a
+vanilla event flag and is encoded for `ModFlag_Get`; `modFlag` can reference a
+generated mod flag key, and `flagId` can provide a pre-encoded SDK flag id.
+`SOFT` uses a dynamic EXP curve near the active cap: more than 3 levels below
+gets full EXP, then 90%, 60%, 30%, 15% at cap, and 5% less per level above cap
+until reaching 0%. `HARD` gives no battle EXP at or above the active cap.
+
 `mods/demo/fishing/actions.json`:
 
 ```json
