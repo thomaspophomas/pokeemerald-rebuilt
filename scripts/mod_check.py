@@ -687,6 +687,68 @@ def validate_hook_graph(mods: list[dict[str, Any]]) -> None:
             raise ModCheckError(f"hook conflict on {domain}:{resource}: {', '.join(owners)}")
 
 
+def first_present(item: dict[str, Any], keys: tuple[str, ...], default: Any = None) -> Any:
+    for key in keys:
+        if key in item:
+            return item[key]
+    return default
+
+
+def normalize_mod_key(mod_id: str, value: Any) -> str | None:
+    if value is None:
+        return None
+    key = str(value)
+    if ":" in key:
+        return key
+    return f"{mod_id}:{key}"
+
+
+def validate_content_contracts(mods: list[dict[str, Any]]) -> list[str]:
+    warnings: list[str] = []
+    sprite_assets: set[str] = set()
+    sprite_tags: dict[tuple[str, str], list[str]] = {}
+    follower_slots: dict[tuple[str, str, bool], list[str]] = {}
+
+    for mod in mods:
+        for path, item in iter_domain_items(mod, "sprites/assets", "assets"):
+            asset_key = normalize_mod_key(mod["id"], get_item_key(item, path.stem))
+            if asset_key is not None:
+                sprite_assets.add(asset_key)
+            for label, value in (
+                ("tileTag", first_present(item, ("tileTag", "tile_tag"), "TAG_NONE")),
+                ("paletteTag", first_present(item, ("paletteTag", "palette_tag"), "TAG_NONE")),
+            ):
+                tag = str(value)
+                if tag == "TAG_NONE":
+                    continue
+                sprite_tags.setdefault((label, tag), []).append(f"{asset_key}@{path}")
+
+    for mod in mods:
+        for path, item in iter_domain_items(mod, "followers", "followers"):
+            species = str(first_present(item, ("species",), "0"))
+            form = str(first_present(item, ("form",), 0))
+            shiny = bool(first_present(item, ("shiny",), False))
+            owner = f"{mod['id']}:{get_item_key(item, path.stem)}@{path}"
+            follower_slots.setdefault((species, form, shiny), []).append(owner)
+
+            graphics_info = first_present(item, ("graphicsInfoSymbol", "graphics_info_symbol"))
+            asset_key = normalize_mod_key(mod["id"], first_present(item, ("asset", "assetKey", "asset_key")))
+            if graphics_info is not None and asset_key is None:
+                warnings.append(f"{owner}: graphicsInfoSymbol is set without an asset for palette loading")
+            if asset_key is not None and asset_key not in sprite_assets:
+                warnings.append(f"{owner}: follower asset {asset_key!r} is not registered in sprites/assets")
+
+    for (label, tag), owners in sorted(sprite_tags.items()):
+        if len(owners) > 1:
+            raise ModCheckError(f"sprite asset tag conflict on {label}:{tag}: {', '.join(owners)}")
+
+    for (species, form, shiny), owners in sorted(follower_slots.items()):
+        if len(owners) > 1:
+            raise ModCheckError(f"follower mapping conflict on {species}/form={form}/shiny={shiny}: {', '.join(owners)}")
+
+    return warnings
+
+
 def mod_state_reserved_budget(root: Path) -> int:
     header = root / "include" / "mod" / "state.h"
     text = header.read_text(encoding="utf-8")
@@ -751,6 +813,7 @@ def build_report(root: Path, include_examples: bool) -> dict[str, Any]:
     state_budget = mod_state_reserved_budget(root)
     validate_relationships(active_mods, state_budget)
     validate_hook_graph(active_mods)
+    warnings = validate_content_contracts(active_mods)
     counts = run_generator_collectors(root)
 
     example_mods: list[dict[str, Any]] = []
@@ -758,6 +821,7 @@ def build_report(root: Path, include_examples: bool) -> dict[str, Any]:
         example_mods = [validate_manifest(path, sdk_version) for path in example_manifest_paths(root)]
         validate_relationships(example_mods, state_budget)
         validate_hook_graph(example_mods)
+        warnings.extend(validate_content_contracts(example_mods))
 
     return {
         "ok": True,
@@ -775,6 +839,7 @@ def build_report(root: Path, include_examples: bool) -> dict[str, Any]:
             for mod in sorted(example_mods, key=lambda item: (item["priority"], item["id"]))
         ],
         "generatedCounts": counts,
+        "warnings": warnings,
     }
 
 
@@ -794,6 +859,10 @@ def print_text_report(report: dict[str, Any]) -> None:
     counts = report["generatedCounts"]
     interesting = ["flags", "events", "weather", "items", "npcs", "maps", "modSources"]
     print("generated counts: " + ", ".join(f"{key}={counts[key]}" for key in interesting))
+    if report["warnings"]:
+        print("warnings:")
+        for warning in report["warnings"]:
+            print(f"  {warning}")
 
 
 def main() -> int:

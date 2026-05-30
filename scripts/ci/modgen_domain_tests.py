@@ -118,6 +118,58 @@ def test_mod_check_claim_conflict() -> None:
         shutil.rmtree(root)
 
 
+def test_mod_check_sprite_tag_conflict() -> None:
+    root = linked_root()
+    try:
+        for mod_id in ("alpha", "beta"):
+            write_json(root / "mods" / mod_id / "mod.json", base_manifest(mod_id))
+            write_json(
+                root / "mods" / mod_id / "sprites" / "assets" / "assets.json",
+                {
+                    "assets": [
+                        {
+                            "id": "shared_palette",
+                            "paletteSymbol": f"{mod_id.capitalize()}Palette",
+                            "paletteTag": 0xF123,
+                        }
+                    ]
+                },
+            )
+
+        result = run([sys.executable, str(REPO / "scripts" / "mod_check.py"), "--root", str(root), "--no-examples"], root, expect_ok=False)
+        assert "sprite asset tag conflict" in result.stdout
+        assert "paletteTag:61731" in result.stdout
+    finally:
+        shutil.rmtree(root)
+
+
+def test_mod_check_follower_mapping_conflict() -> None:
+    root = linked_root()
+    try:
+        for mod_id in ("alpha", "beta"):
+            write_json(root / "mods" / mod_id / "mod.json", base_manifest(mod_id))
+            write_json(
+                root / "mods" / mod_id / "followers" / "followers.json",
+                {
+                    "followers": [
+                        {
+                            "id": "treecko",
+                            "species": "SPECIES_TREECKO",
+                            "form": 0,
+                            "shiny": False,
+                            "graphicsId": "OBJ_EVENT_GFX_BRENDAN_MACH_BIKE",
+                        }
+                    ]
+                },
+            )
+
+        result = run([sys.executable, str(REPO / "scripts" / "mod_check.py"), "--root", str(root), "--no-examples"], root, expect_ok=False)
+        assert "follower mapping conflict" in result.stdout
+        assert "SPECIES_TREECKO/form=0/shiny=False" in result.stdout
+    finally:
+        shutil.rmtree(root)
+
+
 def test_modgen_state_budget_guard() -> None:
     root = linked_root()
     try:
@@ -184,6 +236,8 @@ def main() -> int:
     test_enabled_state_and_map_script()
     test_mod_check_include_ban()
     test_mod_check_claim_conflict()
+    test_mod_check_sprite_tag_conflict()
+    test_mod_check_follower_mapping_conflict()
     test_modgen_state_budget_guard()
     test_followers_support_direct_graphics_info()
     print("modgen domain tests OK")
