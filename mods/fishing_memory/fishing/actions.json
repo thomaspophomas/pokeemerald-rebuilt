@@ -1,0 +1,64 @@
+{
+  "actions": [
+    {
+      "id": "bite_memory_game_old",
+      "hook": "FishingMemory_Start",
+      "hookKey": "memory_sequence",
+      "rods": [
+        "OLD"
+      ],
+      "phases": [
+        "INPUT_WINDOW"
+      ],
+      "priority": 0,
+      "timeoutFrames": 110,
+      "failureOutcome": "GOT_AWAY",
+      "params": [
+        100,
+        36,
+        110,
+        30
+      ]
+    },
+    {
+      "id": "bite_memory_game_good",
+      "hook": "FishingMemory_Start",
+      "hookKey": "memory_sequence",
+      "rods": [
+        "GOOD"
+      ],
+      "phases": [
+        "INPUT_WINDOW"
+      ],
+      "priority": 1,
+      "timeoutFrames": 90,
+      "failureOutcome": "GOT_AWAY",
+      "params": [
+        100,
+        30,
+        90,
+        24
+      ]
+    },
+    {
+      "id": "bite_memory_game_super",
+      "hook": "FishingMemory_Start",
+      "hookKey": "memory_sequence",
+      "rods": [
+        "SUPER"
+      ],
+      "phases": [
+        "INPUT_WINDOW"
+      ],
+      "priority": 2,
+      "timeoutFrames": 75,
+      "failureOutcome": "GOT_AWAY",
+      "params": [
+        100,
+        24,
+        75,
+        18
+      ]
+    }
+  ]
+}

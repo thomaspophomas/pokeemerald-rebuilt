@@ -1,0 +1,2163 @@
+{
+  "schemaVersion": 1,
+  "chanceScale": 10000,
+  "maxLayers": 3,
+  "layers": [
+    {
+      "id": "light",
+      "constant": "BWS_LAYER_LIGHT",
+      "nameKey": "battle_weather_stack:name.light",
+      "messageKey": "battle_weather_stack:message.light",
+      "battle": {
+        "battleWeatherFlags": [],
+        "weatherBallType": "TYPE_NORMAL",
+        "movePower": [
+          {
+            "moveTypes": [
+              "TYPE_DARK",
+              "TYPE_GHOST"
+            ],
+            "percent": 80
+          }
+        ],
+        "stat": [],
+        "damageTaken": [
+          {
+            "pokemonTypes": [
+              "TYPE_DARK",
+              "TYPE_GHOST"
+            ],
+            "percent": 120
+          }
+        ],
+        "residual": []
+      },
+      "overworld": {
+        "defaultVisual": "WEATHER_DROUGHT",
+        "sprite": "drought_presence",
+        "tint": null
+      }
+    },
+    {
+      "id": "darkness",
+      "constant": "BWS_LAYER_DARKNESS",
+      "nameKey": "battle_weather_stack:name.darkness",
+      "messageKey": "battle_weather_stack:message.darkness",
+      "battle": {
+        "battleWeatherFlags": [],
+        "weatherBallType": "TYPE_DARK",
+        "movePower": [
+          {
+            "moveTypes": [
+              "TYPE_DARK",
+              "TYPE_GHOST"
+            ],
+            "percent": 120
+          }
+        ],
+        "stat": [],
+        "damageTaken": [
+          {
+            "pokemonTypes": [
+              "TYPE_DARK",
+              "TYPE_GHOST"
+            ],
+            "percent": 80
+          }
+        ],
+        "residual": []
+      },
+      "overworld": {
+        "defaultVisual": "WEATHER_SHADE",
+        "sprite": "darkness",
+        "tint": null
+      }
+    },
+    {
+      "id": "heat",
+      "constant": "BWS_LAYER_HEAT",
+      "nameKey": "battle_weather_stack:name.heat",
+      "messageKey": "battle_weather_stack:message.heat",
+      "battle": {
+        "battleWeatherFlags": [
+          "B_WEATHER_SUN_PERMANENT"
+        ],
+        "weatherBallType": "TYPE_FIRE",
+        "movePower": [
+          {
+            "moveTypes": [
+              "TYPE_FIRE"
+            ],
+            "percent": 150
+          },
+          {
+            "moveTypes": [
+              "TYPE_WATER"
+            ],
+            "percent": 50
+          }
+        ],
+        "stat": [
+          {
+            "pokemonTypes": [
+              "TYPE_ELECTRIC"
+            ],
+            "stats": [
+              "STAT_ATK",
+              "STAT_SPATK"
+            ],
+            "percent": 125
+          }
+        ],
+        "damageTaken": [],
+        "residual": []
+      },
+      "overworld": {
+        "defaultVisual": "WEATHER_SUNNY",
+        "sprite": "heat",
+        "tint": null
+      }
+    },
+    {
+      "id": "rain",
+      "constant": "BWS_LAYER_RAIN",
+      "nameKey": "battle_weather_stack:name.rain",
+      "messageKey": "battle_weather_stack:message.rain",
+      "battle": {
+        "battleWeatherFlags": [
+          "B_WEATHER_RAIN_PERMANENT"
+        ],
+        "weatherBallType": "TYPE_WATER",
+        "movePower": [
+          {
+            "moveTypes": [
+              "TYPE_WATER"
+            ],
+            "percent": 150
+          },
+          {
+            "moveTypes": [
+              "TYPE_FIRE"
+            ],
+            "percent": 50
+          }
+        ],
+        "stat": [
+          {
+            "pokemonTypes": [
+              "TYPE_ELECTRIC"
+            ],
+            "stats": [
+              "STAT_ATK",
+              "STAT_SPATK"
+            ],
+            "percent": 125
+          }
+        ],
+        "damageTaken": [],
+        "residual": []
+      },
+      "overworld": {
+        "defaultVisual": "WEATHER_RAIN",
+        "sprite": "rain",
+        "tint": null
+      }
+    },
+    {
+      "id": "snow",
+      "constant": "BWS_LAYER_SNOW",
+      "nameKey": "battle_weather_stack:name.snow",
+      "messageKey": "battle_weather_stack:message.snow",
+      "battle": {
+        "battleWeatherFlags": [],
+        "weatherBallType": "TYPE_ICE",
+        "movePower": [],
+        "stat": [],
+        "damageTaken": [
+          {
+            "pokemonTypes": [
+              "TYPE_ICE"
+            ],
+            "percent": 80
+          }
+        ],
+        "residual": []
+      },
+      "overworld": {
+        "defaultVisual": "WEATHER_SNOW",
+        "sprite": "ash_white",
+        "tint": null
+      }
+    },
+    {
+      "id": "sand",
+      "constant": "BWS_LAYER_SAND",
+      "nameKey": "battle_weather_stack:name.sandstorm",
+      "messageKey": "battle_weather_stack:message.sandstorm",
+      "battle": {
+        "battleWeatherFlags": [
+          "B_WEATHER_SANDSTORM_PERMANENT"
+        ],
+        "weatherBallType": "TYPE_ROCK",
+        "movePower": [],
+        "stat": [
+          {
+            "pokemonTypes": [
+              "TYPE_ROCK"
+            ],
+            "stats": [
+              "STAT_SPDEF"
+            ],
+            "percent": 150
+          }
+        ],
+        "damageTaken": [],
+        "residual": [
+          {
+            "includeTypes": [],
+            "excludeTypes": [
+              "TYPE_ROCK",
+              "TYPE_GROUND",
+              "TYPE_STEEL"
+            ],
+            "flags": [
+              "BWS_RESIDUAL_SAND_CHIP"
+            ]
+          }
+        ]
+      },
+      "overworld": {
+        "defaultVisual": "WEATHER_SANDSTORM",
+        "sprite": "sandstorm",
+        "tint": null
+      }
+    },
+    {
+      "id": "wind",
+      "constant": "BWS_LAYER_WIND",
+      "nameKey": "battle_weather_stack:name.wind",
+      "messageKey": "battle_weather_stack:message.wind",
+      "battle": {
+        "battleWeatherFlags": [],
+        "weatherBallType": "TYPE_FLYING",
+        "movePower": [
+          {
+            "moveTypes": [
+              "TYPE_FLYING"
+            ],
+            "percent": 120
+          }
+        ],
+        "stat": [
+          {
+            "pokemonTypes": [
+              "TYPE_FLYING",
+              "TYPE_BUG"
+            ],
+            "stats": [
+              "STAT_SPEED"
+            ],
+            "percent": 150
+          }
+        ],
+        "damageTaken": [],
+        "residual": []
+      },
+      "overworld": {
+        "defaultVisual": "WEATHER_SUNNY_CLOUDS",
+        "sprite": "wind",
+        "tint": null
+      }
+    },
+    {
+      "id": "silence",
+      "constant": "BWS_LAYER_SILENCE",
+      "nameKey": "battle_weather_stack:name.silence",
+      "messageKey": "battle_weather_stack:message.silence",
+      "battle": {
+        "battleWeatherFlags": [],
+        "weatherBallType": "TYPE_PSYCHIC",
+        "movePower": [
+          {
+            "moveTypes": [
+              "TYPE_PSYCHIC",
+              "TYPE_FIGHTING",
+              "TYPE_NORMAL"
+            ],
+            "percent": 120
+          }
+        ],
+        "stat": [],
+        "damageTaken": [
+          {
+            "pokemonTypes": [
+              "TYPE_PSYCHIC",
+              "TYPE_FIGHTING",
+              "TYPE_NORMAL"
+            ],
+            "percent": 80
+          }
+        ],
+        "residual": []
+      },
+      "overworld": {
+        "defaultVisual": "WEATHER_NONE",
+        "sprite": "none",
+        "tint": null
+      }
+    },
+    {
+      "id": "ash_rain",
+      "constant": "BWS_LAYER_ASH_RAIN",
+      "nameKey": "battle_weather_stack:name.ash_rain",
+      "messageKey": "battle_weather_stack:message.ash_rain",
+      "battle": {
+        "battleWeatherFlags": [],
+        "weatherBallType": "TYPE_POISON",
+        "movePower": [],
+        "stat": [
+          {
+            "pokemonTypes": [
+              "TYPE_BUG"
+            ],
+            "stats": [
+              "STAT_ATK",
+              "STAT_SPATK"
+            ],
+            "percent": 150
+          }
+        ],
+        "damageTaken": [
+          {
+            "pokemonTypes": [
+              "TYPE_POISON"
+            ],
+            "percent": 80
+          }
+        ],
+        "residual": [
+          {
+            "includeTypes": [
+              "TYPE_POISON"
+            ],
+            "excludeTypes": [],
+            "flags": [
+              "BWS_RESIDUAL_HEAL_1_16"
+            ]
+          },
+          {
+            "includeTypes": [
+              "TYPE_GRASS"
+            ],
+            "excludeTypes": [
+              "TYPE_POISON"
+            ],
+            "flags": [
+              "BWS_RESIDUAL_TOXIC_POISON"
+            ]
+          },
+          {
+            "includeTypes": [],
+            "excludeTypes": [
+              "TYPE_POISON",
+              "TYPE_GRASS"
+            ],
+            "flags": [
+              "BWS_RESIDUAL_POISON"
+            ]
+          }
+        ]
+      },
+      "overworld": {
+        "defaultVisual": "WEATHER_VOLCANIC_ASH",
+        "sprite": "ash",
+        "tint": {
+          "r": 200,
+          "g": 200,
+          "b": 200
+        }
+      }
+    },
+    {
+      "id": "pollen",
+      "constant": "BWS_LAYER_POLLEN",
+      "nameKey": "battle_weather_stack:name.pollen",
+      "messageKey": "battle_weather_stack:message.pollen",
+      "battle": {
+        "battleWeatherFlags": [],
+        "weatherBallType": "TYPE_GRASS",
+        "movePower": [],
+        "stat": [
+          {
+            "pokemonTypes": [
+              "TYPE_POISON"
+            ],
+            "stats": [
+              "STAT_SPEED"
+            ],
+            "percent": 50
+          },
+          {
+            "pokemonTypes": [
+              "TYPE_BUG"
+            ],
+            "stats": [
+              "STAT_DEF",
+              "STAT_SPDEF"
+            ],
+            "percent": 150
+          }
+        ],
+        "damageTaken": [
+          {
+            "pokemonTypes": [
+              "TYPE_GRASS"
+            ],
+            "percent": 80
+          }
+        ],
+        "residual": [
+          {
+            "includeTypes": [
+              "TYPE_GRASS"
+            ],
+            "excludeTypes": [],
+            "flags": [
+              "BWS_RESIDUAL_HEAL_1_16"
+            ]
+          },
+          {
+            "includeTypes": [],
+            "excludeTypes": [
+              "TYPE_GRASS"
+            ],
+            "flags": [
+              "BWS_RESIDUAL_LEECH"
+            ]
+          }
+        ]
+      },
+      "overworld": {
+        "defaultVisual": "WEATHER_VOLCANIC_ASH",
+        "sprite": "ash_green",
+        "tint": {
+          "r": 188,
+          "g": 284,
+          "b": 188
+        }
+      }
+    }
+  ],
+  "conflicts": [
+    [
+      "light",
+      "darkness"
+    ],
+    [
+      "light",
+      "rain"
+    ],
+    [
+      "light",
+      "ash_rain"
+    ],
+    [
+      "wind",
+      "silence"
+    ],
+    [
+      "ash_rain",
+      "pollen"
+    ],
+    [
+      "heat",
+      "snow"
+    ]
+  ],
+  "trimOrder": [
+    "rain",
+    "heat",
+    "snow",
+    "sand",
+    "wind",
+    "silence",
+    "darkness",
+    "light",
+    "ash_rain",
+    "pollen"
+  ],
+  "weatherBallOrder": [
+    "ash_rain",
+    "pollen",
+    "sand",
+    "heat",
+    "rain",
+    "snow",
+    "wind",
+    "darkness",
+    "silence",
+    "light"
+  ],
+  "overworldVisualPriority": [
+    "rain",
+    "sand",
+    "ash_rain",
+    "pollen",
+    "snow",
+    "darkness",
+    "light",
+    "heat",
+    "wind",
+    "silence"
+  ],
+  "overworldVisualCombos": [
+    {
+      "layers": [
+        "rain",
+        "wind"
+      ],
+      "vanillaWeather": "WEATHER_RAIN_THUNDERSTORM"
+    }
+  ],
+  "lightingRules": [
+    {
+      "mapSection": "BWS_MAPSEC_ANY",
+      "lightStartMinute": 420,
+      "lightEndMinute": 1080,
+      "darkStartMinute": 1200,
+      "darkEndMinute": 300
+    }
+  ],
+  "combos": [
+    {
+      "layers": [
+        "rain",
+        "wind"
+      ],
+      "nameKey": "battle_weather_stack:name.storm",
+      "messageKey": "battle_weather_stack:message.storm"
+    },
+    {
+      "layers": [
+        "rain",
+        "darkness"
+      ],
+      "nameKey": "battle_weather_stack:name.night_rain",
+      "messageKey": "battle_weather_stack:message.night_rain"
+    },
+    {
+      "layers": [
+        "rain",
+        "heat"
+      ],
+      "nameKey": "battle_weather_stack:name.steam_rain",
+      "messageKey": "battle_weather_stack:message.steam_rain"
+    },
+    {
+      "layers": [
+        "rain",
+        "snow"
+      ],
+      "nameKey": "battle_weather_stack:name.ice_rain",
+      "messageKey": "battle_weather_stack:message.ice_rain"
+    },
+    {
+      "layers": [
+        "rain",
+        "ash_rain"
+      ],
+      "nameKey": "battle_weather_stack:name.acid_rain",
+      "messageKey": "battle_weather_stack:message.acid_rain"
+    },
+    {
+      "layers": [
+        "rain",
+        "pollen"
+      ],
+      "nameKey": "battle_weather_stack:name.bloom_rain",
+      "messageKey": "battle_weather_stack:message.bloom_rain"
+    },
+    {
+      "layers": [
+        "heat",
+        "wind"
+      ],
+      "nameKey": "battle_weather_stack:name.heat_wave",
+      "messageKey": "battle_weather_stack:message.heat_wave"
+    },
+    {
+      "layers": [
+        "heat",
+        "darkness"
+      ],
+      "nameKey": "battle_weather_stack:name.dark_ember",
+      "messageKey": "battle_weather_stack:message.dark_ember"
+    },
+    {
+      "layers": [
+        "heat",
+        "light"
+      ],
+      "nameKey": "battle_weather_stack:name.glare_heat",
+      "messageKey": "battle_weather_stack:message.glare_heat"
+    },
+    {
+      "layers": [
+        "heat",
+        "sand"
+      ],
+      "nameKey": "battle_weather_stack:name.ember_sand",
+      "messageKey": "battle_weather_stack:message.ember_sand"
+    },
+    {
+      "layers": [
+        "heat",
+        "ash_rain"
+      ],
+      "nameKey": "battle_weather_stack:name.heat_smog",
+      "messageKey": "battle_weather_stack:message.heat_smog"
+    },
+    {
+      "layers": [
+        "heat",
+        "pollen"
+      ],
+      "nameKey": "battle_weather_stack:name.greenhouse_bloom",
+      "messageKey": "battle_weather_stack:message.greenhouse_bloom"
+    },
+    {
+      "layers": [
+        "snow",
+        "wind"
+      ],
+      "nameKey": "battle_weather_stack:name.cold_front",
+      "messageKey": "battle_weather_stack:message.cold_front"
+    },
+    {
+      "layers": [
+        "snow",
+        "darkness"
+      ],
+      "nameKey": "battle_weather_stack:name.night_frost",
+      "messageKey": "battle_weather_stack:message.night_frost"
+    },
+    {
+      "layers": [
+        "snow",
+        "light"
+      ],
+      "nameKey": "battle_weather_stack:name.glare_frost",
+      "messageKey": "battle_weather_stack:message.glare_frost"
+    },
+    {
+      "layers": [
+        "snow",
+        "pollen"
+      ],
+      "nameKey": "battle_weather_stack:name.frost_bloom",
+      "messageKey": "battle_weather_stack:message.frost_bloom"
+    },
+    {
+      "layers": [
+        "sand",
+        "wind"
+      ],
+      "nameKey": "battle_weather_stack:name.sand_hurricane",
+      "messageKey": "battle_weather_stack:message.sand_hurricane"
+    },
+    {
+      "layers": [
+        "sand",
+        "darkness"
+      ],
+      "nameKey": "battle_weather_stack:name.dark_sand",
+      "messageKey": "battle_weather_stack:message.dark_sand"
+    },
+    {
+      "layers": [
+        "sand",
+        "light"
+      ],
+      "nameKey": "battle_weather_stack:name.glare_sand",
+      "messageKey": "battle_weather_stack:message.glare_sand"
+    },
+    {
+      "layers": [
+        "sand",
+        "ash_rain"
+      ],
+      "nameKey": "battle_weather_stack:name.dust_smog",
+      "messageKey": "battle_weather_stack:message.dust_smog"
+    },
+    {
+      "layers": [
+        "sand",
+        "pollen"
+      ],
+      "nameKey": "battle_weather_stack:name.spore_dust",
+      "messageKey": "battle_weather_stack:message.spore_dust"
+    },
+    {
+      "layers": [
+        "wind",
+        "darkness"
+      ],
+      "nameKey": "battle_weather_stack:name.night_wind",
+      "messageKey": "battle_weather_stack:message.night_wind"
+    },
+    {
+      "layers": [
+        "wind",
+        "light"
+      ],
+      "nameKey": "battle_weather_stack:name.light_wind",
+      "messageKey": "battle_weather_stack:message.light_wind"
+    },
+    {
+      "layers": [
+        "wind",
+        "ash_rain"
+      ],
+      "nameKey": "battle_weather_stack:name.smog_storm",
+      "messageKey": "battle_weather_stack:message.smog_storm"
+    },
+    {
+      "layers": [
+        "wind",
+        "pollen"
+      ],
+      "nameKey": "battle_weather_stack:name.pollen_storm",
+      "messageKey": "battle_weather_stack:message.pollen_storm"
+    },
+    {
+      "layers": [
+        "silence",
+        "darkness"
+      ],
+      "nameKey": "battle_weather_stack:name.dead_silence",
+      "messageKey": "battle_weather_stack:message.dead_silence"
+    },
+    {
+      "layers": [
+        "silence",
+        "light"
+      ],
+      "nameKey": "battle_weather_stack:name.clear_silence",
+      "messageKey": "battle_weather_stack:message.clear_silence"
+    },
+    {
+      "layers": [
+        "silence",
+        "rain"
+      ],
+      "nameKey": "battle_weather_stack:name.dull_rain",
+      "messageKey": "battle_weather_stack:message.dull_rain"
+    },
+    {
+      "layers": [
+        "silence",
+        "heat"
+      ],
+      "nameKey": "battle_weather_stack:name.oppressive_heat",
+      "messageKey": "battle_weather_stack:message.oppressive_heat"
+    },
+    {
+      "layers": [
+        "silence",
+        "snow"
+      ],
+      "nameKey": "battle_weather_stack:name.frost_silence",
+      "messageKey": "battle_weather_stack:message.frost_silence"
+    },
+    {
+      "layers": [
+        "silence",
+        "ash_rain"
+      ],
+      "nameKey": "battle_weather_stack:name.choking_silence",
+      "messageKey": "battle_weather_stack:message.choking_silence"
+    },
+    {
+      "layers": [
+        "silence",
+        "pollen"
+      ],
+      "nameKey": "battle_weather_stack:name.heavy_bloom",
+      "messageKey": "battle_weather_stack:message.heavy_bloom"
+    },
+    {
+      "layers": [
+        "rain",
+        "wind",
+        "darkness"
+      ],
+      "nameKey": "battle_weather_stack:name.night_storm",
+      "messageKey": "battle_weather_stack:message.night_storm"
+    },
+    {
+      "layers": [
+        "rain",
+        "wind",
+        "heat"
+      ],
+      "nameKey": "battle_weather_stack:name.steam_storm",
+      "messageKey": "battle_weather_stack:message.steam_storm"
+    },
+    {
+      "layers": [
+        "rain",
+        "wind",
+        "snow"
+      ],
+      "nameKey": "battle_weather_stack:name.ice_storm",
+      "messageKey": "battle_weather_stack:message.ice_storm"
+    },
+    {
+      "layers": [
+        "rain",
+        "wind",
+        "ash_rain"
+      ],
+      "nameKey": "battle_weather_stack:name.acid_storm",
+      "messageKey": "battle_weather_stack:message.acid_storm"
+    },
+    {
+      "layers": [
+        "rain",
+        "wind",
+        "pollen"
+      ],
+      "nameKey": "battle_weather_stack:name.bloom_storm",
+      "messageKey": "battle_weather_stack:message.bloom_storm"
+    },
+    {
+      "layers": [
+        "rain",
+        "darkness",
+        "ash_rain"
+      ],
+      "nameKey": "battle_weather_stack:name.night_poison_rain",
+      "messageKey": "battle_weather_stack:message.night_poison_rain"
+    },
+    {
+      "layers": [
+        "rain",
+        "darkness",
+        "pollen"
+      ],
+      "nameKey": "battle_weather_stack:name.night_bloom_rain",
+      "messageKey": "battle_weather_stack:message.night_bloom_rain"
+    },
+    {
+      "layers": [
+        "rain",
+        "heat",
+        "darkness"
+      ],
+      "nameKey": "battle_weather_stack:name.dark_steam",
+      "messageKey": "battle_weather_stack:message.dark_steam"
+    },
+    {
+      "layers": [
+        "rain",
+        "heat",
+        "ash_rain"
+      ],
+      "nameKey": "battle_weather_stack:name.boiling_smog",
+      "messageKey": "battle_weather_stack:message.boiling_smog"
+    },
+    {
+      "layers": [
+        "rain",
+        "heat",
+        "pollen"
+      ],
+      "nameKey": "battle_weather_stack:name.greenhouse_rain",
+      "messageKey": "battle_weather_stack:message.greenhouse_rain"
+    },
+    {
+      "layers": [
+        "heat",
+        "wind",
+        "light"
+      ],
+      "nameKey": "battle_weather_stack:name.glare_heat_wave",
+      "messageKey": "battle_weather_stack:message.glare_heat_wave"
+    },
+    {
+      "layers": [
+        "heat",
+        "wind",
+        "darkness"
+      ],
+      "nameKey": "battle_weather_stack:name.dark_heat_wave",
+      "messageKey": "battle_weather_stack:message.dark_heat_wave"
+    },
+    {
+      "layers": [
+        "heat",
+        "wind",
+        "ash_rain"
+      ],
+      "nameKey": "battle_weather_stack:name.ember_smog_storm",
+      "messageKey": "battle_weather_stack:message.ember_smog_storm"
+    },
+    {
+      "layers": [
+        "heat",
+        "wind",
+        "pollen"
+      ],
+      "nameKey": "battle_weather_stack:name.hot_pollen_storm",
+      "messageKey": "battle_weather_stack:message.hot_pollen_storm"
+    },
+    {
+      "layers": [
+        "heat",
+        "sand",
+        "wind"
+      ],
+      "nameKey": "battle_weather_stack:name.ember_hurricane",
+      "messageKey": "battle_weather_stack:message.ember_hurricane"
+    },
+    {
+      "layers": [
+        "heat",
+        "sand",
+        "ash_rain"
+      ],
+      "nameKey": "battle_weather_stack:name.ash_smog",
+      "messageKey": "battle_weather_stack:message.ash_smog"
+    },
+    {
+      "layers": [
+        "heat",
+        "sand",
+        "pollen"
+      ],
+      "nameKey": "battle_weather_stack:name.thorn_ember",
+      "messageKey": "battle_weather_stack:message.thorn_ember"
+    },
+    {
+      "layers": [
+        "snow",
+        "wind",
+        "darkness"
+      ],
+      "nameKey": "battle_weather_stack:name.dark_ice_storm",
+      "messageKey": "battle_weather_stack:message.dark_ice_storm"
+    },
+    {
+      "layers": [
+        "snow",
+        "wind",
+        "light"
+      ],
+      "nameKey": "battle_weather_stack:name.glare_ice_storm",
+      "messageKey": "battle_weather_stack:message.glare_ice_storm"
+    },
+    {
+      "layers": [
+        "snow",
+        "wind",
+        "pollen"
+      ],
+      "nameKey": "battle_weather_stack:name.frost_pollen_storm",
+      "messageKey": "battle_weather_stack:message.frost_pollen_storm"
+    },
+    {
+      "layers": [
+        "sand",
+        "wind",
+        "darkness"
+      ],
+      "nameKey": "battle_weather_stack:name.night_sand_hurricane",
+      "messageKey": "battle_weather_stack:message.night_sand_hurricane"
+    },
+    {
+      "layers": [
+        "sand",
+        "wind",
+        "light"
+      ],
+      "nameKey": "battle_weather_stack:name.light_sand_hurricane",
+      "messageKey": "battle_weather_stack:message.light_sand_hurricane"
+    },
+    {
+      "layers": [
+        "sand",
+        "wind",
+        "ash_rain"
+      ],
+      "nameKey": "battle_weather_stack:name.dust_smog_hurricane",
+      "messageKey": "battle_weather_stack:message.dust_smog_hurricane"
+    },
+    {
+      "layers": [
+        "sand",
+        "wind",
+        "pollen"
+      ],
+      "nameKey": "battle_weather_stack:name.spore_hurricane",
+      "messageKey": "battle_weather_stack:message.spore_hurricane"
+    },
+    {
+      "layers": [
+        "silence",
+        "darkness",
+        "ash_rain"
+      ],
+      "nameKey": "battle_weather_stack:name.choking_dead_silence",
+      "messageKey": "battle_weather_stack:message.choking_dead_silence"
+    },
+    {
+      "layers": [
+        "silence",
+        "darkness",
+        "pollen"
+      ],
+      "nameKey": "battle_weather_stack:name.night_bloom_silence",
+      "messageKey": "battle_weather_stack:message.night_bloom_silence"
+    },
+    {
+      "layers": [
+        "silence",
+        "light",
+        "pollen"
+      ],
+      "nameKey": "battle_weather_stack:name.clear_bloom_silence",
+      "messageKey": "battle_weather_stack:message.clear_bloom_silence"
+    },
+    {
+      "layers": [
+        "silence",
+        "rain",
+        "darkness"
+      ],
+      "nameKey": "battle_weather_stack:name.dull_night_rain",
+      "messageKey": "battle_weather_stack:message.dull_night_rain"
+    },
+    {
+      "layers": [
+        "silence",
+        "heat",
+        "ash_rain"
+      ],
+      "nameKey": "battle_weather_stack:name.oppressive_heat_smog",
+      "messageKey": "battle_weather_stack:message.oppressive_heat_smog"
+    },
+    {
+      "layers": [
+        "silence",
+        "snow",
+        "darkness"
+      ],
+      "nameKey": "battle_weather_stack:name.dark_frost",
+      "messageKey": "battle_weather_stack:message.dark_frost"
+    }
+  ],
+  "messages": {
+    "battle_weather_stack:message.clear": "The weather cleared.",
+    "battle_weather_stack:message.light": "Helles Licht flutet das Kampffeld!",
+    "battle_weather_stack:message.darkness": "Dunkelheit huellt das Kampffeld ein!",
+    "battle_weather_stack:message.heat": "Die Luft wird gluehend heiss!",
+    "battle_weather_stack:message.rain": "Regen prasselt herab!",
+    "battle_weather_stack:message.snow": "Schnee faellt auf das Kampffeld!",
+    "battle_weather_stack:message.sandstorm": "Ein Sandsturm kommt auf!",
+    "battle_weather_stack:message.wind": "Kraeftiger Wind zieht auf!",
+    "battle_weather_stack:message.silence": "Absolute Stille breitet sich aus!",
+    "battle_weather_stack:message.ash_rain": "Giftiger Ascheregen faellt herab!",
+    "battle_weather_stack:message.pollen": "Pollenflug erfuellt die Luft!",
+    "battle_weather_stack:message.composite": "Das Wetter schichtet sich neu!",
+    "battle_weather_stack:message.storm": "Regen und Wind werden zu einem Sturm!",
+    "battle_weather_stack:message.night_rain": "Dunkler Regen faellt auf das Feld!",
+    "battle_weather_stack:message.steam_rain": "Hitze und Regen steigen als Dampf auf!",
+    "battle_weather_stack:message.ice_rain": "Eisiger Regen peitscht herab!",
+    "battle_weather_stack:message.acid_rain": "Ascheregen und Regen werden zu Saeureregen!",
+    "battle_weather_stack:message.bloom_rain": "Pollen mischt sich in den Regen!",
+    "battle_weather_stack:message.heat_wave": "Eine Hitzewelle rollt ueber das Feld!",
+    "battle_weather_stack:message.dark_ember": "Finsterglut flackert ueber dem Kampf!",
+    "battle_weather_stack:message.glare_heat": "Gleissende Hitze brennt auf das Feld!",
+    "battle_weather_stack:message.ember_sand": "Glutsand wirbelt auf!",
+    "battle_weather_stack:message.heat_smog": "Heisser Ascheregen drueckt auf das Feld!",
+    "battle_weather_stack:message.greenhouse_bloom": "Eine Treibhausbluete bricht aus!",
+    "battle_weather_stack:message.cold_front": "Eine Kaltfront zieht ueber das Feld!",
+    "battle_weather_stack:message.night_frost": "Nachtfrost legt sich ueber den Kampf!",
+    "battle_weather_stack:message.glare_frost": "Gleissfrost funkelt ueber dem Feld!",
+    "battle_weather_stack:message.frost_bloom": "Eine Frostbluete oeffnet sich!",
+    "battle_weather_stack:message.sand_hurricane": "Ein Sandorkan peitscht ueber das Feld!",
+    "battle_weather_stack:message.dark_sand": "Dunkelsand nimmt dem Feld die Sicht!",
+    "battle_weather_stack:message.glare_sand": "Gleisssand blendet die Kaempfenden!",
+    "battle_weather_stack:message.dust_smog": "Aschestaub verdichtet die Luft!",
+    "battle_weather_stack:message.spore_dust": "Sporenstaub liegt in der Luft!",
+    "battle_weather_stack:message.night_wind": "Nachtwind streicht ueber das Feld!",
+    "battle_weather_stack:message.light_wind": "Lichtwind reisst ueber das Feld!",
+    "battle_weather_stack:message.smog_storm": "Ein Aschesturm vergiftet die Luft!",
+    "battle_weather_stack:message.pollen_storm": "Ein Pollensturm tobt ueber das Feld!",
+    "battle_weather_stack:message.dead_silence": "Totenstille erfasst das Feld!",
+    "battle_weather_stack:message.clear_silence": "Klare Stille spannt sich ueber den Kampf!",
+    "battle_weather_stack:message.dull_rain": "Dumpfer Regen schluckt jedes Geraeusch!",
+    "battle_weather_stack:message.oppressive_heat": "Drueckende Hitze macht jede Bewegung schwer!",
+    "battle_weather_stack:message.frost_silence": "Froststille legt sich ueber das Feld!",
+    "battle_weather_stack:message.choking_silence": "Erstickende Stille drueckt auf die Luft!",
+    "battle_weather_stack:message.heavy_bloom": "Eine schwere Bluete liegt in der Luft!",
+    "battle_weather_stack:message.night_storm": "Ein Nachtsturm bricht los!",
+    "battle_weather_stack:message.steam_storm": "Ein Dampfsturm huellt das Feld ein!",
+    "battle_weather_stack:message.ice_storm": "Ein Eissturm fegt ueber das Feld!",
+    "battle_weather_stack:message.acid_storm": "Ein Saeuresturm bricht aus!",
+    "battle_weather_stack:message.bloom_storm": "Ein Bluetensturm wirbelt auf!",
+    "battle_weather_stack:message.night_poison_rain": "Giftregen der Nacht faellt auf das Feld!",
+    "battle_weather_stack:message.night_bloom_rain": "Nachtbluetenregen erfuellt die Luft!",
+    "battle_weather_stack:message.dark_steam": "Finsterdampf steigt ueber dem Feld auf!",
+    "battle_weather_stack:message.boiling_smog": "Siedeasche brodelt ueber dem Kampf!",
+    "battle_weather_stack:message.greenhouse_rain": "Treibhausregen laesst die Luft flimmern!",
+    "battle_weather_stack:message.glare_heat_wave": "Eine gleissende Hitzewelle bricht los!",
+    "battle_weather_stack:message.dark_heat_wave": "Eine finstere Hitzewelle rollt heran!",
+    "battle_weather_stack:message.ember_smog_storm": "Ein Glutaschesturm verschlingt das Feld!",
+    "battle_weather_stack:message.hot_pollen_storm": "Ein heisser Pollensturm tobt!",
+    "battle_weather_stack:message.ember_hurricane": "Ein Glutorkan reisst ueber das Feld!",
+    "battle_weather_stack:message.ash_smog": "Dichter Ascheregen verdunkelt das Feld!",
+    "battle_weather_stack:message.thorn_ember": "Dornenglut flackert im Kampffeld!",
+    "battle_weather_stack:message.dark_ice_storm": "Ein finsterer Eissturm bricht los!",
+    "battle_weather_stack:message.glare_ice_storm": "Ein gleissender Eissturm fegt heran!",
+    "battle_weather_stack:message.frost_pollen_storm": "Ein Frostpollensturm wirbelt auf!",
+    "battle_weather_stack:message.night_sand_hurricane": "Ein Nachtsandorkan verschlingt die Sicht!",
+    "battle_weather_stack:message.light_sand_hurricane": "Ein Lichtsandorkan blendet das Feld!",
+    "battle_weather_stack:message.dust_smog_hurricane": "Ein Aschestauborkan wuetet!",
+    "battle_weather_stack:message.spore_hurricane": "Ein Sporenorkan reisst ueber das Feld!",
+    "battle_weather_stack:message.choking_dead_silence": "Erstickende Totenstille faellt herab!",
+    "battle_weather_stack:message.night_bloom_silence": "Nachtbluetenstille erfasst das Feld!",
+    "battle_weather_stack:message.clear_bloom_silence": "Klare Bluetenstille liegt in der Luft!",
+    "battle_weather_stack:message.dull_night_rain": "Dumpfer Nachtregen verschluckt das Feld!",
+    "battle_weather_stack:message.oppressive_heat_smog": "Drueckender Hitzeascheregen breitet sich aus!",
+    "battle_weather_stack:message.dark_frost": "Finsterer Frost kriecht ueber das Feld!"
+  },
+  "overworldRules": [
+    {
+      "mapSection": "MAPSEC_ROUTE_101",
+      "layer": "rain",
+      "chancePerMinute": 45,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_101",
+      "layer": "wind",
+      "chancePerMinute": 35,
+      "minDurationMinutes": 3,
+      "maxDurationMinutes": 6,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_101",
+      "layer": "pollen",
+      "chancePerMinute": 30,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 7,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_101",
+      "layer": "heat",
+      "chancePerMinute": 25,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_102",
+      "layer": "rain",
+      "chancePerMinute": 55,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_102",
+      "layer": "wind",
+      "chancePerMinute": 40,
+      "minDurationMinutes": 3,
+      "maxDurationMinutes": 7,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_102",
+      "layer": "pollen",
+      "chancePerMinute": 45,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_103",
+      "layer": "rain",
+      "chancePerMinute": 65,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_103",
+      "layer": "wind",
+      "chancePerMinute": 55,
+      "minDurationMinutes": 3,
+      "maxDurationMinutes": 7,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_103",
+      "layer": "pollen",
+      "chancePerMinute": 35,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_104",
+      "layer": "rain",
+      "chancePerMinute": 70,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_104",
+      "layer": "wind",
+      "chancePerMinute": 45,
+      "minDurationMinutes": 3,
+      "maxDurationMinutes": 7,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_104",
+      "layer": "pollen",
+      "chancePerMinute": 55,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_104",
+      "layer": "silence",
+      "chancePerMinute": 15,
+      "minDurationMinutes": 3,
+      "maxDurationMinutes": 5,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_NONE"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_105",
+      "layer": "rain",
+      "chancePerMinute": 95,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 11,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_105",
+      "layer": "wind",
+      "chancePerMinute": 80,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_105",
+      "layer": "snow",
+      "chancePerMinute": 25,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 7,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SNOW"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_106",
+      "layer": "rain",
+      "chancePerMinute": 90,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_106",
+      "layer": "wind",
+      "chancePerMinute": 75,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_106",
+      "layer": "snow",
+      "chancePerMinute": 20,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 7,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SNOW"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_107",
+      "layer": "rain",
+      "chancePerMinute": 85,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_107",
+      "layer": "wind",
+      "chancePerMinute": 85,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_108",
+      "layer": "rain",
+      "chancePerMinute": 80,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_108",
+      "layer": "wind",
+      "chancePerMinute": 90,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_108",
+      "layer": "heat",
+      "chancePerMinute": 25,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_109",
+      "layer": "rain",
+      "chancePerMinute": 70,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_109",
+      "layer": "wind",
+      "chancePerMinute": 75,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_109",
+      "layer": "heat",
+      "chancePerMinute": 45,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_110",
+      "layer": "rain",
+      "chancePerMinute": 65,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_110",
+      "layer": "wind",
+      "chancePerMinute": 45,
+      "minDurationMinutes": 3,
+      "maxDurationMinutes": 7,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_110",
+      "layer": "heat",
+      "chancePerMinute": 40,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_110",
+      "layer": "ash_rain",
+      "chancePerMinute": 35,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_111",
+      "layer": "sand",
+      "chancePerMinute": 130,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 12,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SANDSTORM"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_111",
+      "layer": "heat",
+      "chancePerMinute": 115,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 12,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_111",
+      "layer": "wind",
+      "chancePerMinute": 65,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_111",
+      "layer": "ash_rain",
+      "chancePerMinute": 25,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_112",
+      "layer": "heat",
+      "chancePerMinute": 105,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 11,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_112",
+      "layer": "sand",
+      "chancePerMinute": 45,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SANDSTORM"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_112",
+      "layer": "wind",
+      "chancePerMinute": 45,
+      "minDurationMinutes": 3,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_112",
+      "layer": "ash_rain",
+      "chancePerMinute": 35,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_113",
+      "layer": "ash_rain",
+      "chancePerMinute": 90,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 11,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_113",
+      "layer": "snow",
+      "chancePerMinute": 35,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SNOW"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_113",
+      "layer": "wind",
+      "chancePerMinute": 40,
+      "minDurationMinutes": 3,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_113",
+      "layer": "heat",
+      "chancePerMinute": 30,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_114",
+      "layer": "rain",
+      "chancePerMinute": 75,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_114",
+      "layer": "wind",
+      "chancePerMinute": 55,
+      "minDurationMinutes": 3,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_114",
+      "layer": "snow",
+      "chancePerMinute": 30,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SNOW"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_114",
+      "layer": "pollen",
+      "chancePerMinute": 45,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_115",
+      "layer": "rain",
+      "chancePerMinute": 80,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_115",
+      "layer": "wind",
+      "chancePerMinute": 65,
+      "minDurationMinutes": 3,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_115",
+      "layer": "snow",
+      "chancePerMinute": 40,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SNOW"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_116",
+      "layer": "rain",
+      "chancePerMinute": 60,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_116",
+      "layer": "wind",
+      "chancePerMinute": 45,
+      "minDurationMinutes": 3,
+      "maxDurationMinutes": 7,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_116",
+      "layer": "pollen",
+      "chancePerMinute": 50,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_117",
+      "layer": "rain",
+      "chancePerMinute": 55,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_117",
+      "layer": "wind",
+      "chancePerMinute": 40,
+      "minDurationMinutes": 3,
+      "maxDurationMinutes": 7,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_117",
+      "layer": "pollen",
+      "chancePerMinute": 65,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_118",
+      "layer": "rain",
+      "chancePerMinute": 80,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_118",
+      "layer": "wind",
+      "chancePerMinute": 70,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_118",
+      "layer": "heat",
+      "chancePerMinute": 35,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_119",
+      "layer": "rain",
+      "chancePerMinute": 150,
+      "minDurationMinutes": 6,
+      "maxDurationMinutes": 13,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_119",
+      "layer": "wind",
+      "chancePerMinute": 65,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_119",
+      "layer": "pollen",
+      "chancePerMinute": 75,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_119",
+      "layer": "ash_rain",
+      "chancePerMinute": 35,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_120",
+      "layer": "rain",
+      "chancePerMinute": 115,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 12,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_120",
+      "layer": "wind",
+      "chancePerMinute": 55,
+      "minDurationMinutes": 3,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_120",
+      "layer": "pollen",
+      "chancePerMinute": 80,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_120",
+      "layer": "ash_rain",
+      "chancePerMinute": 25,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_121",
+      "layer": "rain",
+      "chancePerMinute": 70,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_121",
+      "layer": "wind",
+      "chancePerMinute": 45,
+      "minDurationMinutes": 3,
+      "maxDurationMinutes": 7,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_121",
+      "layer": "pollen",
+      "chancePerMinute": 85,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_121",
+      "layer": "ash_rain",
+      "chancePerMinute": 35,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_122",
+      "layer": "rain",
+      "chancePerMinute": 80,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_122",
+      "layer": "wind",
+      "chancePerMinute": 90,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_122",
+      "layer": "silence",
+      "chancePerMinute": 55,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_NONE"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_123",
+      "layer": "rain",
+      "chancePerMinute": 75,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_123",
+      "layer": "wind",
+      "chancePerMinute": 50,
+      "minDurationMinutes": 3,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_123",
+      "layer": "pollen",
+      "chancePerMinute": 95,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 11,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_123",
+      "layer": "ash_rain",
+      "chancePerMinute": 30,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_124",
+      "layer": "rain",
+      "chancePerMinute": 90,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 11,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_124",
+      "layer": "wind",
+      "chancePerMinute": 90,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_124",
+      "layer": "heat",
+      "chancePerMinute": 30,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_125",
+      "layer": "rain",
+      "chancePerMinute": 100,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 11,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_125",
+      "layer": "wind",
+      "chancePerMinute": 95,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_125",
+      "layer": "snow",
+      "chancePerMinute": 65,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SNOW"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_126",
+      "layer": "rain",
+      "chancePerMinute": 85,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_126",
+      "layer": "wind",
+      "chancePerMinute": 80,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_126",
+      "layer": "heat",
+      "chancePerMinute": 35,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_127",
+      "layer": "rain",
+      "chancePerMinute": 95,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 11,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_127",
+      "layer": "wind",
+      "chancePerMinute": 100,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_128",
+      "layer": "rain",
+      "chancePerMinute": 105,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 12,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_128",
+      "layer": "wind",
+      "chancePerMinute": 105,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_128",
+      "layer": "silence",
+      "chancePerMinute": 20,
+      "minDurationMinutes": 3,
+      "maxDurationMinutes": 7,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_NONE"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_129",
+      "layer": "rain",
+      "chancePerMinute": 95,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 11,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_129",
+      "layer": "wind",
+      "chancePerMinute": 100,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_130",
+      "layer": "rain",
+      "chancePerMinute": 90,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 11,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_130",
+      "layer": "wind",
+      "chancePerMinute": 95,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_131",
+      "layer": "rain",
+      "chancePerMinute": 90,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 11,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_131",
+      "layer": "wind",
+      "chancePerMinute": 105,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 11,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_132",
+      "layer": "rain",
+      "chancePerMinute": 105,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 12,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_132",
+      "layer": "wind",
+      "chancePerMinute": 150,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 12,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_133",
+      "layer": "rain",
+      "chancePerMinute": 105,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 12,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_133",
+      "layer": "wind",
+      "chancePerMinute": 155,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 12,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_134",
+      "layer": "rain",
+      "chancePerMinute": 110,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 12,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_134",
+      "layer": "wind",
+      "chancePerMinute": 160,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 12,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_PETALBURG_WOODS",
+      "layer": "pollen",
+      "chancePerMinute": 120,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 12,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_PETALBURG_WOODS",
+      "layer": "rain",
+      "chancePerMinute": 65,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_PETALBURG_WOODS",
+      "layer": "silence",
+      "chancePerMinute": 45,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_NONE"
+    },
+    {
+      "mapSection": "MAPSEC_MT_PYRE",
+      "layer": "silence",
+      "chancePerMinute": 95,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 11,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_NONE"
+    },
+    {
+      "mapSection": "MAPSEC_MT_PYRE",
+      "layer": "wind",
+      "chancePerMinute": 65,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 9,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "mapSection": "MAPSEC_MT_PYRE",
+      "layer": "rain",
+      "chancePerMinute": 40,
+      "minDurationMinutes": 4,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_RAIN"
+    },
+    {
+      "mapSection": "MAPSEC_JAGGED_PASS",
+      "layer": "heat",
+      "chancePerMinute": 100,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 11,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_SUNNY"
+    },
+    {
+      "mapSection": "MAPSEC_JAGGED_PASS",
+      "layer": "ash_rain",
+      "chancePerMinute": 80,
+      "minDurationMinutes": 5,
+      "maxDurationMinutes": 10,
+      "blockNewWeatherMinutes": 3,
+      "vanillaWeather": "WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "mapSection": "MAPSEC_JAGGED_PASS",
+      "layer": "wind",
+      "chancePerMinute": 55,
+      "minDurationMinutes": 3,
+      "maxDurationMinutes": 8,
+      "blockNewWeatherMinutes": 2,
+      "vanillaWeather": "WEATHER_SUNNY_CLOUDS"
+    }
+  ]
+}

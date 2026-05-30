@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "schemaVersion": 1,
+    "description": "Prepared domain config for time-gated evolutions and encounters. Disabled until a gameplay mod consumes it."
+  },
+  "enabled": false,
+  "segments": {
+    "NIGHT": ["night_early", "night_late"],
+    "MORNING": ["morning"],
+    "DAY": ["day"],
+    "EVENING": ["evening"]
+  },
+  "evolutions": [
+    { "id": "eevee_to_espeon", "species": "SPECIES_EEVEE", "targetSpecies": "SPECIES_ESPEON", "segments": ["DAY", "MORNING"] },
+    { "id": "eevee_to_umbreon", "species": "SPECIES_EEVEE", "targetSpecies": "SPECIES_UMBREON", "segments": ["NIGHT"] }
+  ],
+  "encounters": [
+    { "id": "night_hoothoot", "mapSection": "MAPSEC_ROUTE_102", "species": "SPECIES_HOOTHOOT", "segments": ["NIGHT"], "weight": 20 },
+    { "id": "morning_surskit", "mapSection": "MAPSEC_ROUTE_102", "species": "SPECIES_SURSKIT", "segments": ["MORNING"], "weight": 10 }
+  ]
+}

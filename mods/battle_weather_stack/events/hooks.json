@@ -1,0 +1,22 @@
+{
+  "subscriptions": [
+    {
+      "type": "GAME_INIT",
+      "handler": "BattleWeatherStack_OnGameInit",
+      "priority": 50,
+      "key": "activate_ruleset"
+    },
+    {
+      "type": "MAP_LOAD",
+      "handler": "BattleWeatherStack_OnMapLoad",
+      "priority": 50,
+      "key": "overworld_map_load"
+    },
+    {
+      "type": "TIME_SEGMENT_CHANGED",
+      "handler": "BattleWeatherStack_OnTimeSegmentChanged",
+      "priority": 50,
+      "key": "overworld_time_segment_changed"
+    }
+  ]
+}

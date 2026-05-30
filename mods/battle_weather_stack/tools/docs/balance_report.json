@@ -1,0 +1,1565 @@
+{
+  "schemaVersion": 1,
+  "days": 10,
+  "seed": 1,
+  "routeCount": 37,
+  "routes": [
+    {
+      "mapSection": "MAPSEC_JAGGED_PASS",
+      "ruleChanceByLayer": {
+        "ash_rain": 80,
+        "heat": 100,
+        "wind": 55
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 39.7
+        },
+        {
+          "state": "darkness",
+          "percent": 31.17
+        },
+        {
+          "state": "clear",
+          "percent": 13.78
+        },
+        {
+          "state": "ash_rain",
+          "percent": 3.1
+        },
+        {
+          "state": "darkness+heat",
+          "percent": 2.81
+        },
+        {
+          "state": "heat+light",
+          "percent": 2.45
+        },
+        {
+          "state": "ash_rain+darkness",
+          "percent": 2.25
+        },
+        {
+          "state": "heat",
+          "percent": 1.33
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_MT_PYRE",
+      "ruleChanceByLayer": {
+        "rain": 40,
+        "silence": 95,
+        "wind": 65
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 40.08
+        },
+        {
+          "state": "darkness",
+          "percent": 32.76
+        },
+        {
+          "state": "clear",
+          "percent": 14.22
+        },
+        {
+          "state": "light+silence",
+          "percent": 2.86
+        },
+        {
+          "state": "darkness+silence",
+          "percent": 2.33
+        },
+        {
+          "state": "light+wind",
+          "percent": 1.8
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 1.49
+        },
+        {
+          "state": "silence",
+          "percent": 1.43
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_PETALBURG_WOODS",
+      "ruleChanceByLayer": {
+        "pollen": 120,
+        "rain": 65,
+        "silence": 45
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 38.96
+        },
+        {
+          "state": "darkness",
+          "percent": 32.05
+        },
+        {
+          "state": "clear",
+          "percent": 13.76
+        },
+        {
+          "state": "light+pollen",
+          "percent": 3.6
+        },
+        {
+          "state": "darkness+pollen",
+          "percent": 2.88
+        },
+        {
+          "state": "rain",
+          "percent": 2.22
+        },
+        {
+          "state": "pollen",
+          "percent": 1.79
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 1.62
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_101",
+      "ruleChanceByLayer": {
+        "heat": 25,
+        "pollen": 30,
+        "rain": 45,
+        "wind": 35
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 42.31
+        },
+        {
+          "state": "darkness",
+          "percent": 34.88
+        },
+        {
+          "state": "clear",
+          "percent": 15.79
+        },
+        {
+          "state": "rain",
+          "percent": 1.28
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 0.97
+        },
+        {
+          "state": "light+pollen",
+          "percent": 0.88
+        },
+        {
+          "state": "heat+light",
+          "percent": 0.81
+        },
+        {
+          "state": "light+wind",
+          "percent": 0.8
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_102",
+      "ruleChanceByLayer": {
+        "pollen": 45,
+        "rain": 55,
+        "wind": 40
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 41.69
+        },
+        {
+          "state": "darkness",
+          "percent": 34.41
+        },
+        {
+          "state": "clear",
+          "percent": 15.72
+        },
+        {
+          "state": "rain",
+          "percent": 1.88
+        },
+        {
+          "state": "light+pollen",
+          "percent": 1.56
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 1.42
+        },
+        {
+          "state": "darkness+pollen",
+          "percent": 1.21
+        },
+        {
+          "state": "light+wind",
+          "percent": 1.01
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_103",
+      "ruleChanceByLayer": {
+        "pollen": 35,
+        "rain": 65,
+        "wind": 55
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 41.4
+        },
+        {
+          "state": "darkness",
+          "percent": 34.2
+        },
+        {
+          "state": "clear",
+          "percent": 15.56
+        },
+        {
+          "state": "rain",
+          "percent": 2.27
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 1.65
+        },
+        {
+          "state": "light+wind",
+          "percent": 1.44
+        },
+        {
+          "state": "light+pollen",
+          "percent": 1.13
+        },
+        {
+          "state": "darkness+pollen",
+          "percent": 0.87
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_104",
+      "ruleChanceByLayer": {
+        "pollen": 55,
+        "rain": 70,
+        "silence": 15,
+        "wind": 45
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 40.58
+        },
+        {
+          "state": "darkness",
+          "percent": 33.4
+        },
+        {
+          "state": "clear",
+          "percent": 15.06
+        },
+        {
+          "state": "rain",
+          "percent": 2.41
+        },
+        {
+          "state": "light+pollen",
+          "percent": 1.8
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 1.77
+        },
+        {
+          "state": "darkness+pollen",
+          "percent": 1.51
+        },
+        {
+          "state": "light+wind",
+          "percent": 1.05
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_105",
+      "ruleChanceByLayer": {
+        "rain": 95,
+        "snow": 25,
+        "wind": 80
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 40.24
+        },
+        {
+          "state": "darkness",
+          "percent": 32.53
+        },
+        {
+          "state": "clear",
+          "percent": 14.13
+        },
+        {
+          "state": "rain",
+          "percent": 4.24
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 2.36
+        },
+        {
+          "state": "light+wind",
+          "percent": 2.07
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 2.05
+        },
+        {
+          "state": "wind",
+          "percent": 1.01
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_106",
+      "ruleChanceByLayer": {
+        "rain": 90,
+        "snow": 20,
+        "wind": 75
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 40.63
+        },
+        {
+          "state": "darkness",
+          "percent": 33.27
+        },
+        {
+          "state": "clear",
+          "percent": 14.34
+        },
+        {
+          "state": "rain",
+          "percent": 3.69
+        },
+        {
+          "state": "light+wind",
+          "percent": 2.08
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 1.92
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 1.83
+        },
+        {
+          "state": "wind",
+          "percent": 0.95
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_107",
+      "ruleChanceByLayer": {
+        "rain": 85,
+        "wind": 85
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 41.08
+        },
+        {
+          "state": "darkness",
+          "percent": 33.23
+        },
+        {
+          "state": "clear",
+          "percent": 14.58
+        },
+        {
+          "state": "rain",
+          "percent": 3.22
+        },
+        {
+          "state": "light+wind",
+          "percent": 2.38
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 2.11
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 2.1
+        },
+        {
+          "state": "wind",
+          "percent": 1.15
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_108",
+      "ruleChanceByLayer": {
+        "heat": 25,
+        "rain": 80,
+        "wind": 90
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 40.49
+        },
+        {
+          "state": "darkness",
+          "percent": 32.74
+        },
+        {
+          "state": "clear",
+          "percent": 14.18
+        },
+        {
+          "state": "rain",
+          "percent": 3.0
+        },
+        {
+          "state": "light+wind",
+          "percent": 2.74
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 2.21
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 1.9
+        },
+        {
+          "state": "wind",
+          "percent": 1.3
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_109",
+      "ruleChanceByLayer": {
+        "heat": 45,
+        "rain": 70,
+        "wind": 75
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 40.51
+        },
+        {
+          "state": "darkness",
+          "percent": 33.37
+        },
+        {
+          "state": "clear",
+          "percent": 14.6
+        },
+        {
+          "state": "light+wind",
+          "percent": 2.58
+        },
+        {
+          "state": "rain",
+          "percent": 2.17
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 1.65
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 1.49
+        },
+        {
+          "state": "heat+light",
+          "percent": 1.11
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_110",
+      "ruleChanceByLayer": {
+        "ash_rain": 35,
+        "heat": 40,
+        "rain": 65,
+        "wind": 45
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 40.84
+        },
+        {
+          "state": "darkness",
+          "percent": 33.72
+        },
+        {
+          "state": "clear",
+          "percent": 15.03
+        },
+        {
+          "state": "rain",
+          "percent": 2.0
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 1.56
+        },
+        {
+          "state": "ash_rain",
+          "percent": 1.27
+        },
+        {
+          "state": "heat+light",
+          "percent": 1.24
+        },
+        {
+          "state": "light+wind",
+          "percent": 1.1
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_111",
+      "ruleChanceByLayer": {
+        "ash_rain": 25,
+        "heat": 115,
+        "sand": 130,
+        "wind": 65
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 35.4
+        },
+        {
+          "state": "darkness",
+          "percent": 29.0
+        },
+        {
+          "state": "clear",
+          "percent": 13.03
+        },
+        {
+          "state": "heat+light",
+          "percent": 4.22
+        },
+        {
+          "state": "light+sand",
+          "percent": 3.66
+        },
+        {
+          "state": "darkness+sand",
+          "percent": 3.26
+        },
+        {
+          "state": "darkness+heat",
+          "percent": 2.81
+        },
+        {
+          "state": "light+wind",
+          "percent": 1.69
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_112",
+      "ruleChanceByLayer": {
+        "ash_rain": 35,
+        "heat": 105,
+        "sand": 45,
+        "wind": 45
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 39.9
+        },
+        {
+          "state": "darkness",
+          "percent": 31.63
+        },
+        {
+          "state": "clear",
+          "percent": 13.92
+        },
+        {
+          "state": "darkness+heat",
+          "percent": 2.83
+        },
+        {
+          "state": "heat+light",
+          "percent": 2.74
+        },
+        {
+          "state": "ash_rain",
+          "percent": 1.72
+        },
+        {
+          "state": "heat",
+          "percent": 1.34
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 1.12
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_113",
+      "ruleChanceByLayer": {
+        "ash_rain": 90,
+        "heat": 30,
+        "snow": 35,
+        "wind": 40
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 40.19
+        },
+        {
+          "state": "darkness",
+          "percent": 33.05
+        },
+        {
+          "state": "clear",
+          "percent": 14.51
+        },
+        {
+          "state": "ash_rain",
+          "percent": 3.88
+        },
+        {
+          "state": "ash_rain+darkness",
+          "percent": 2.28
+        },
+        {
+          "state": "light+wind",
+          "percent": 1.05
+        },
+        {
+          "state": "light+snow",
+          "percent": 1.01
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 0.89
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_114",
+      "ruleChanceByLayer": {
+        "pollen": 45,
+        "rain": 75,
+        "snow": 30,
+        "wind": 55
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 39.96
+        },
+        {
+          "state": "darkness",
+          "percent": 32.56
+        },
+        {
+          "state": "clear",
+          "percent": 14.76
+        },
+        {
+          "state": "rain",
+          "percent": 2.56
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 2.06
+        },
+        {
+          "state": "light+wind",
+          "percent": 1.58
+        },
+        {
+          "state": "light+pollen",
+          "percent": 1.23
+        },
+        {
+          "state": "darkness+pollen",
+          "percent": 1.02
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_115",
+      "ruleChanceByLayer": {
+        "rain": 80,
+        "snow": 40,
+        "wind": 65
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 40.51
+        },
+        {
+          "state": "darkness",
+          "percent": 33.49
+        },
+        {
+          "state": "clear",
+          "percent": 14.95
+        },
+        {
+          "state": "rain",
+          "percent": 2.9
+        },
+        {
+          "state": "light+wind",
+          "percent": 1.94
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 1.89
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 1.28
+        },
+        {
+          "state": "light+snow",
+          "percent": 1.06
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_116",
+      "ruleChanceByLayer": {
+        "pollen": 50,
+        "rain": 60,
+        "wind": 45
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 41.3
+        },
+        {
+          "state": "darkness",
+          "percent": 34.17
+        },
+        {
+          "state": "clear",
+          "percent": 15.58
+        },
+        {
+          "state": "rain",
+          "percent": 2.18
+        },
+        {
+          "state": "light+pollen",
+          "percent": 1.67
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 1.49
+        },
+        {
+          "state": "darkness+pollen",
+          "percent": 1.26
+        },
+        {
+          "state": "light+wind",
+          "percent": 0.99
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_117",
+      "ruleChanceByLayer": {
+        "pollen": 65,
+        "rain": 55,
+        "wind": 40
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 41.23
+        },
+        {
+          "state": "darkness",
+          "percent": 33.87
+        },
+        {
+          "state": "clear",
+          "percent": 15.46
+        },
+        {
+          "state": "light+pollen",
+          "percent": 2.12
+        },
+        {
+          "state": "rain",
+          "percent": 1.84
+        },
+        {
+          "state": "darkness+pollen",
+          "percent": 1.66
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 1.31
+        },
+        {
+          "state": "light+wind",
+          "percent": 0.92
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_118",
+      "ruleChanceByLayer": {
+        "heat": 35,
+        "rain": 80,
+        "wind": 70
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 40.47
+        },
+        {
+          "state": "darkness",
+          "percent": 33.44
+        },
+        {
+          "state": "clear",
+          "percent": 14.43
+        },
+        {
+          "state": "rain",
+          "percent": 3.0
+        },
+        {
+          "state": "light+wind",
+          "percent": 2.31
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 1.77
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 1.52
+        },
+        {
+          "state": "wind",
+          "percent": 0.94
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_119",
+      "ruleChanceByLayer": {
+        "ash_rain": 35,
+        "pollen": 75,
+        "rain": 150,
+        "wind": 65
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 36.28
+        },
+        {
+          "state": "darkness",
+          "percent": 29.36
+        },
+        {
+          "state": "clear",
+          "percent": 13.08
+        },
+        {
+          "state": "rain",
+          "percent": 6.16
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 3.89
+        },
+        {
+          "state": "darkness+pollen",
+          "percent": 2.1
+        },
+        {
+          "state": "light+pollen",
+          "percent": 2.06
+        },
+        {
+          "state": "light+wind",
+          "percent": 1.75
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_120",
+      "ruleChanceByLayer": {
+        "ash_rain": 25,
+        "pollen": 80,
+        "rain": 115,
+        "wind": 55
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 37.85
+        },
+        {
+          "state": "darkness",
+          "percent": 30.67
+        },
+        {
+          "state": "clear",
+          "percent": 13.99
+        },
+        {
+          "state": "rain",
+          "percent": 4.65
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 3.42
+        },
+        {
+          "state": "light+pollen",
+          "percent": 2.39
+        },
+        {
+          "state": "darkness+pollen",
+          "percent": 1.66
+        },
+        {
+          "state": "light+wind",
+          "percent": 1.07
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_121",
+      "ruleChanceByLayer": {
+        "ash_rain": 35,
+        "pollen": 85,
+        "rain": 70,
+        "wind": 45
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 39.99
+        },
+        {
+          "state": "darkness",
+          "percent": 31.92
+        },
+        {
+          "state": "clear",
+          "percent": 14.26
+        },
+        {
+          "state": "darkness+pollen",
+          "percent": 2.55
+        },
+        {
+          "state": "rain",
+          "percent": 2.2
+        },
+        {
+          "state": "light+pollen",
+          "percent": 2.12
+        },
+        {
+          "state": "ash_rain",
+          "percent": 1.83
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 1.76
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_122",
+      "ruleChanceByLayer": {
+        "rain": 80,
+        "silence": 55,
+        "wind": 90
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 40.16
+        },
+        {
+          "state": "darkness",
+          "percent": 31.84
+        },
+        {
+          "state": "clear",
+          "percent": 13.99
+        },
+        {
+          "state": "rain",
+          "percent": 2.44
+        },
+        {
+          "state": "light+wind",
+          "percent": 2.3
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 2.29
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 1.9
+        },
+        {
+          "state": "light+silence",
+          "percent": 1.59
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_123",
+      "ruleChanceByLayer": {
+        "ash_rain": 30,
+        "pollen": 95,
+        "rain": 75,
+        "wind": 50
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 38.94
+        },
+        {
+          "state": "darkness",
+          "percent": 31.09
+        },
+        {
+          "state": "clear",
+          "percent": 13.89
+        },
+        {
+          "state": "darkness+pollen",
+          "percent": 3.26
+        },
+        {
+          "state": "light+pollen",
+          "percent": 3.07
+        },
+        {
+          "state": "rain",
+          "percent": 2.54
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 1.85
+        },
+        {
+          "state": "pollen",
+          "percent": 1.17
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_124",
+      "ruleChanceByLayer": {
+        "heat": 30,
+        "rain": 90,
+        "wind": 90
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 40.1
+        },
+        {
+          "state": "darkness",
+          "percent": 31.75
+        },
+        {
+          "state": "clear",
+          "percent": 14.04
+        },
+        {
+          "state": "rain",
+          "percent": 3.6
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 2.55
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 2.51
+        },
+        {
+          "state": "light+wind",
+          "percent": 2.17
+        },
+        {
+          "state": "wind",
+          "percent": 1.34
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_125",
+      "ruleChanceByLayer": {
+        "rain": 100,
+        "snow": 65,
+        "wind": 95
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 38.31
+        },
+        {
+          "state": "darkness",
+          "percent": 31.13
+        },
+        {
+          "state": "clear",
+          "percent": 14.03
+        },
+        {
+          "state": "rain",
+          "percent": 3.8
+        },
+        {
+          "state": "light+wind",
+          "percent": 2.59
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 2.47
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 2.38
+        },
+        {
+          "state": "light+snow",
+          "percent": 1.85
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_126",
+      "ruleChanceByLayer": {
+        "heat": 35,
+        "rain": 85,
+        "wind": 80
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 40.33
+        },
+        {
+          "state": "darkness",
+          "percent": 32.86
+        },
+        {
+          "state": "clear",
+          "percent": 14.23
+        },
+        {
+          "state": "rain",
+          "percent": 3.3
+        },
+        {
+          "state": "light+wind",
+          "percent": 2.26
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 1.97
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 1.86
+        },
+        {
+          "state": "wind",
+          "percent": 1.14
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_127",
+      "ruleChanceByLayer": {
+        "rain": 95,
+        "wind": 100
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 40.0
+        },
+        {
+          "state": "darkness",
+          "percent": 32.19
+        },
+        {
+          "state": "clear",
+          "percent": 14.51
+        },
+        {
+          "state": "rain",
+          "percent": 4.04
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 2.8
+        },
+        {
+          "state": "light+wind",
+          "percent": 2.62
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 2.44
+        },
+        {
+          "state": "wind",
+          "percent": 1.23
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_128",
+      "ruleChanceByLayer": {
+        "rain": 105,
+        "silence": 20,
+        "wind": 105
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 39.56
+        },
+        {
+          "state": "darkness",
+          "percent": 31.3
+        },
+        {
+          "state": "clear",
+          "percent": 13.74
+        },
+        {
+          "state": "rain",
+          "percent": 4.4
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 2.97
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 2.77
+        },
+        {
+          "state": "light+wind",
+          "percent": 2.62
+        },
+        {
+          "state": "wind",
+          "percent": 1.23
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_129",
+      "ruleChanceByLayer": {
+        "rain": 95,
+        "wind": 100
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 40.0
+        },
+        {
+          "state": "darkness",
+          "percent": 32.19
+        },
+        {
+          "state": "clear",
+          "percent": 14.51
+        },
+        {
+          "state": "rain",
+          "percent": 4.04
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 2.8
+        },
+        {
+          "state": "light+wind",
+          "percent": 2.62
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 2.44
+        },
+        {
+          "state": "wind",
+          "percent": 1.23
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_130",
+      "ruleChanceByLayer": {
+        "rain": 90,
+        "wind": 95
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 40.47
+        },
+        {
+          "state": "darkness",
+          "percent": 32.5
+        },
+        {
+          "state": "clear",
+          "percent": 14.42
+        },
+        {
+          "state": "rain",
+          "percent": 3.72
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 2.69
+        },
+        {
+          "state": "light+wind",
+          "percent": 2.48
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 2.24
+        },
+        {
+          "state": "wind",
+          "percent": 1.29
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_131",
+      "ruleChanceByLayer": {
+        "rain": 90,
+        "wind": 105
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 39.7
+        },
+        {
+          "state": "darkness",
+          "percent": 32.41
+        },
+        {
+          "state": "clear",
+          "percent": 14.17
+        },
+        {
+          "state": "rain",
+          "percent": 3.92
+        },
+        {
+          "state": "light+wind",
+          "percent": 3.41
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 2.85
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 2.13
+        },
+        {
+          "state": "wind",
+          "percent": 1.19
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_132",
+      "ruleChanceByLayer": {
+        "rain": 105,
+        "wind": 150
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 38.02
+        },
+        {
+          "state": "darkness",
+          "percent": 29.9
+        },
+        {
+          "state": "clear",
+          "percent": 12.85
+        },
+        {
+          "state": "light+wind",
+          "percent": 4.8
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 4.78
+        },
+        {
+          "state": "rain",
+          "percent": 4.4
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 2.6
+        },
+        {
+          "state": "wind",
+          "percent": 2.13
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_133",
+      "ruleChanceByLayer": {
+        "rain": 105,
+        "wind": 155
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 36.99
+        },
+        {
+          "state": "darkness",
+          "percent": 30.38
+        },
+        {
+          "state": "clear",
+          "percent": 13.54
+        },
+        {
+          "state": "light+wind",
+          "percent": 5.28
+        },
+        {
+          "state": "rain",
+          "percent": 4.39
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 4.16
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 2.76
+        },
+        {
+          "state": "wind",
+          "percent": 1.98
+        }
+      ]
+    },
+    {
+      "mapSection": "MAPSEC_ROUTE_134",
+      "ruleChanceByLayer": {
+        "rain": 110,
+        "wind": 160
+      },
+      "topCombinedStates": [
+        {
+          "state": "light",
+          "percent": 36.76
+        },
+        {
+          "state": "darkness",
+          "percent": 30.06
+        },
+        {
+          "state": "clear",
+          "percent": 13.47
+        },
+        {
+          "state": "light+wind",
+          "percent": 5.4
+        },
+        {
+          "state": "rain",
+          "percent": 4.56
+        },
+        {
+          "state": "darkness+wind",
+          "percent": 4.33
+        },
+        {
+          "state": "darkness+rain",
+          "percent": 2.92
+        },
+        {
+          "state": "wind",
+          "percent": 1.99
+        }
+      ]
+    }
+  ]
+}

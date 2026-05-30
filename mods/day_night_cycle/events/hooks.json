@@ -1,0 +1,40 @@
+{
+  "subscriptions": [
+    {
+      "type": "GAME_INIT",
+      "handler": "DayNightCycle_OnGameInit",
+      "priority": 100,
+      "key": "game_init"
+    },
+    {
+      "type": "MAP_LOAD",
+      "handler": "DayNightCycle_OnMapLoad",
+      "priority": 100,
+      "key": "map_load"
+    },
+    {
+      "type": "PLAYER_STEP",
+      "handler": "DayNightCycle_OnPlayerStep",
+      "priority": 100,
+      "key": "player_step"
+    },
+    {
+      "type": "TIME_SEGMENT_CHANGED",
+      "handler": "DayNightCycle_OnTimeSegmentChanged",
+      "priority": 100,
+      "key": "time_segment_changed"
+    },
+    {
+      "type": "BATTLE_STARTED",
+      "handler": "DayNightCycle_OnBattleStarted",
+      "priority": 100,
+      "key": "battle_started"
+    },
+    {
+      "type": "BATTLE_ENDED",
+      "handler": "DayNightCycle_OnBattleEnded",
+      "priority": 100,
+      "key": "battle_ended"
+    }
+  ]
+}

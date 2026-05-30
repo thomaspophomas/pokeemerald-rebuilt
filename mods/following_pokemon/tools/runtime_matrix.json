@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "schemaVersion": 1,
+    "description": "Emulator/device runtime scenarios for follower validation."
+  },
+  "scenarios": [
+    { "id": "no_party_hidden", "map": "MAPSEC_LITTLEROOT_TOWN", "party": [], "expected": "hidden" },
+    { "id": "basic_walk", "map": "MAPSEC_ROUTE_101", "party": ["SPECIES_BULBASAUR"], "expected": "visible" },
+    { "id": "large_sprite_walk", "map": "MAPSEC_ROUTE_110", "party": ["SPECIES_WAILORD"], "expected": "visible" },
+    { "id": "unown_form", "map": "MAPSEC_ROUTE_111", "party": ["SPECIES_UNOWN"], "form": 2, "expected": "visible" },
+    { "id": "castform_weather_form", "map": "MAPSEC_ROUTE_119", "party": ["SPECIES_CASTFORM"], "form": 2, "expected": "visible_alias" },
+    { "id": "deoxys_speed_form", "map": "MAPSEC_BIRTH_ISLAND", "party": ["SPECIES_DEOXYS"], "form": 3, "expected": "visible_alias" },
+    { "id": "shiny_fallback", "map": "MAPSEC_ROUTE_102", "party": ["SPECIES_MAGIKARP"], "shiny": true, "expected": "normal_graphics_visible" },
+    { "id": "missing_palette_fallback", "map": "MAPSEC_ROUTE_102", "party": ["SPECIES_MAGIKARP"], "fault": "palette_missing", "expected": "hidden_without_crash" },
+    { "id": "missing_sheet_fallback", "map": "MAPSEC_ROUTE_102", "party": ["SPECIES_MAGIKARP"], "fault": "sheet_missing", "expected": "hidden_without_crash" },
+    { "id": "door_transition", "map": "MAPSEC_PETALBURG_CITY", "party": ["SPECIES_TREECKO"], "expected": "single_follower_after_transition" },
+    { "id": "menu_roundtrip", "map": "MAPSEC_OLDALE_TOWN", "party": ["SPECIES_TORCHIC"], "expected": "palette_restored" },
+    { "id": "surf_hidden", "map": "MAPSEC_ROUTE_103", "party": ["SPECIES_MUDKIP"], "state": "surfing", "expected": "hidden" },
+    { "id": "weather_route", "map": "MAPSEC_ROUTE_119", "party": ["SPECIES_PIKACHU"], "expected": "visible_without_palette_corruption" },
+    { "id": "save_reload", "map": "MAPSEC_ROUTE_104", "party": ["SPECIES_RALTS"], "expected": "no_duplicate_virtual_object" }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "schemaVersion": 1,
+    "description": "Device/emulator screenshot regression plan. The generator emits deterministic names; actual screenshots require a running emulator."
+  },
+  "outputDir": "tools/screenshots",
+  "viewport": {
+    "desktop": "1280x720",
+    "mobile": "390x844"
+  },
+  "scenarios": [
+    "basic_walk",
+    "large_sprite_walk",
+    "unown_form",
+    "castform_weather_form",
+    "deoxys_speed_form",
+    "shiny_fallback",
+    "missing_palette_fallback",
+    "weather_route",
+    "save_reload"
+  ]
+}

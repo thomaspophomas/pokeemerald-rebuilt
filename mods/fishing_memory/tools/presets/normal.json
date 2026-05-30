@@ -1,0 +1,28 @@
+{
+  "_meta": {
+    "schemaVersion": 1,
+    "description": "Default Fishing Memory timing."
+  },
+  "maxEarnedLevel": 100,
+  "showFrames": 30,
+  "inputFrames": 90,
+  "warningFrames": 24,
+  "zeroScoreOutcome": "GOT_AWAY",
+  "successOutcome": "ON_HOOK",
+  "rodSettings": {
+    "OLD": { "maxEarnedLevel": 100, "showFrames": 36, "inputFrames": 110, "warningFrames": 30 },
+    "GOOD": { "maxEarnedLevel": 100, "showFrames": 30, "inputFrames": 90, "warningFrames": 24 },
+    "SUPER": { "maxEarnedLevel": 100, "showFrames": 24, "inputFrames": 75, "warningFrames": 18 }
+  },
+  "capStages": [
+    { "level": 10 },
+    { "flag": "FLAG_BADGE01_GET", "level": 20 },
+    { "flag": "FLAG_BADGE02_GET", "level": 30 },
+    { "flag": "FLAG_BADGE03_GET", "level": 40 },
+    { "flag": "FLAG_BADGE04_GET", "level": 50 },
+    { "flag": "FLAG_BADGE05_GET", "level": 60 },
+    { "flag": "FLAG_BADGE06_GET", "level": 70 },
+    { "flag": "FLAG_BADGE07_GET", "level": 80 },
+    { "flag": "FLAG_BADGE08_GET", "level": 100 }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "providers": [
+    {
+      "id": "overworld_stack",
+      "handler": "BattleWeatherStack_ResolveOverworldWeather",
+      "priority": 50
+    }
+  ]
+}

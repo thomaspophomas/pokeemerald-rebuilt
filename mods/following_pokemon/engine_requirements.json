@@ -1,0 +1,36 @@
+{
+  "modId": "following_pokemon",
+  "minimumRebuiltSupport": {
+    "followerRegistryGraphicsInfoSymbol": true,
+    "spriteAssetPaletteSlotLoading": true,
+    "virtualObjectGraphicsInfoFactory": true,
+    "runtimeFollowerController": true
+  },
+  "runtimeBehavior": {
+    "partySelection": "first usable non-egg non-fainted Pokemon with a follower mapping",
+    "formLookup": "rebuilt should pass species plus normalized form value into the follower registry",
+    "shinyFallback": "explicit generated shiny fallback mappings reuse normal graphics until shiny sheets exist",
+    "unsupportedStates": [
+      "surfing",
+      "underwater",
+      "field_move",
+      "fishing",
+      "watering",
+      "player_invisible"
+    ],
+    "assetLifecycle": "release follower sheet and palette when hidden or changed"
+  },
+  "expectedCounts": {
+    "importedAssets": 411,
+    "importedFollowerMappings": 436,
+    "formAliasMappings": 31,
+    "shinyFallbackMappings": 467,
+    "totalFollowerMappings": 934,
+    "pngFiles": 411,
+    "palFiles": 411
+  },
+  "source": {
+    "repository": "https://github.com/cedricwaltercastroson/pokeemerald-follow",
+    "commit": "435a4f84e"
+  }
+}

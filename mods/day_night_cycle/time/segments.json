@@ -1,0 +1,34 @@
+{
+  "segments": [
+    {
+      "id": "night_early",
+      "startMinute": 0,
+      "endMinute": 299,
+      "segment": "NIGHT"
+    },
+    {
+      "id": "morning",
+      "startMinute": 300,
+      "endMinute": 659,
+      "segment": "MORNING"
+    },
+    {
+      "id": "day",
+      "startMinute": 660,
+      "endMinute": 1019,
+      "segment": "DAY"
+    },
+    {
+      "id": "evening",
+      "startMinute": 1020,
+      "endMinute": 1259,
+      "segment": "EVENING"
+    },
+    {
+      "id": "night_late",
+      "startMinute": 1260,
+      "endMinute": 1439,
+      "segment": "NIGHT"
+    }
+  ]
+}

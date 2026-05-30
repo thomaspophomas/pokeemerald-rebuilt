@@ -1,0 +1,33 @@
+{
+  "_meta": {
+    "schemaVersion": 1,
+    "description": "Authoring presets for map-section tint overrides. Copy selected entries into tools/config/tints.json when they should affect a ROM."
+  },
+  "categories": {
+    "caves": [
+      { "mapSection": "MAPSEC_GRANITE_CAVE", "r": 210, "g": 215, "b": 250 },
+      { "mapSection": "MAPSEC_RUSTURF_TUNNEL", "r": 218, "g": 220, "b": 246 },
+      { "mapSection": "MAPSEC_SHOAL_CAVE", "r": 205, "g": 220, "b": 270 }
+    ],
+    "cities": [
+      { "mapSection": "MAPSEC_RUSTBORO_CITY", "r": 258, "g": 258, "b": 256 },
+      { "mapSection": "MAPSEC_SLATEPORT_CITY", "r": 260, "g": 256, "b": 248 },
+      { "mapSection": "MAPSEC_FORTREE_CITY", "r": 242, "g": 258, "b": 242 }
+    ],
+    "forests": [
+      { "mapSection": "MAPSEC_PETALBURG_WOODS", "r": 220, "g": 250, "b": 226 },
+      { "mapSection": "MAPSEC_SAFARI_ZONE", "r": 230, "g": 258, "b": 230 },
+      { "mapSection": "MAPSEC_ROUTE_119", "r": 235, "g": 245, "b": 256 }
+    ],
+    "water": [
+      { "mapSection": "MAPSEC_ROUTE_105", "r": 230, "g": 244, "b": 270 },
+      { "mapSection": "MAPSEC_ROUTE_124", "r": 224, "g": 244, "b": 276 },
+      { "mapSection": "MAPSEC_SOOTOPOLIS_CITY", "r": 230, "g": 246, "b": 270 }
+    ],
+    "indoors": [
+      { "mapSection": "MAPSEC_NEW_MAUVILLE", "r": 242, "g": 242, "b": 230 },
+      { "mapSection": "MAPSEC_ABANDONED_SHIP", "r": 226, "g": 230, "b": 246 },
+      { "mapSection": "MAPSEC_SECRET_BASE", "r": 256, "g": 256, "b": 256 }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "source": "Inspired by rh-hideout/pokeemerald-expansion level cap options; adapted as data-only rebuilt mod config."
+  },
+  "caps": [
+    {
+      "id": "emerald_badge_soft_cap",
+      "capType": "SOFT",
+      "capStages": [
+        { "level": 15 },
+        { "flag": "FLAG_BADGE01_GET", "level": 19 },
+        { "flag": "FLAG_BADGE02_GET", "level": 24 },
+        { "flag": "FLAG_BADGE03_GET", "level": 29 },
+        { "flag": "FLAG_BADGE04_GET", "level": 31 },
+        { "flag": "FLAG_BADGE05_GET", "level": 33 },
+        { "flag": "FLAG_BADGE06_GET", "level": 42 },
+        { "flag": "FLAG_BADGE07_GET", "level": 46 },
+        { "flag": "FLAG_BADGE08_GET", "level": 58 }
+      ],
+      "softExpCurve": [
+        { "minDelta": -100, "maxDelta": -4, "percent": 100 },
+        { "delta": -3, "percent": 90 },
+        { "delta": -2, "percent": 60 },
+        { "delta": -1, "percent": 30 },
+        { "delta": 0, "percent": 15 },
+        { "delta": 1, "percent": 10 },
+        { "delta": 2, "percent": 5 },
+        { "minDelta": 3, "maxDelta": 99, "percent": 0 }
+      ],
+      "rareCandy": "BLOCK_AT_CAP",
+      "priority": 100,
+      "flags": 0
+    }
+  ]
+}

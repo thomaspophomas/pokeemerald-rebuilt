@@ -1,0 +1,14 @@
+{
+  "id": "battle_weather_stack",
+  "name": "Battle Weather Stack",
+  "version": "0.1.0",
+  "requiresSdk": ">=1",
+  "priority": 500,
+  "requiresFeatures": ["FEATURE_MODS"],
+  "stateVersion": 1,
+  "stateBytes": 40,
+  "dependencies": ["day_night_cycle"],
+  "loadAfter": ["day_night_cycle"],
+  "conflictsWith": [],
+  "entrypoints": ["src/battle_weather_stack.c"]
+}

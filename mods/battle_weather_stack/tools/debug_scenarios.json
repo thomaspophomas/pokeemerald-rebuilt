@@ -1,0 +1,13 @@
+{
+  "_meta": {
+    "schemaVersion": 1,
+    "description": "Deterministic debug scenarios for emulator screenshots and scripted checks."
+  },
+  "scenarios": [
+    { "id": "clear", "layers": [], "mapSection": "MAPSEC_ROUTE_101", "visual": "BWS_OVERWORLD_VISUAL_AUTO" },
+    { "id": "rain_wind", "layers": ["rain", "wind"], "mapSection": "MAPSEC_ROUTE_119", "visual": "BWS_OVERWORLD_VISUAL_AUTO" },
+    { "id": "ash_rain", "layers": ["ash_rain"], "mapSection": "MAPSEC_ROUTE_113", "visual": "BWS_OVERWORLD_VISUAL_AUTO" },
+    { "id": "pollen", "layers": ["pollen"], "mapSection": "MAPSEC_PETALBURG_WOODS", "visual": "BWS_OVERWORLD_VISUAL_AUTO" },
+    { "id": "sand_heat_conflict_trim", "layers": ["sand", "heat", "wind", "snow"], "mapSection": "MAPSEC_ROUTE_111", "visual": "BWS_OVERWORLD_VISUAL_AUTO" }
+  ]
+}

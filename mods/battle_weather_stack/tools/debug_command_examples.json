@@ -1,0 +1,28 @@
+{
+  "_meta": {
+    "schemaVersion": 1,
+    "description": "Admin/debug hook examples for forcing deterministic overworld weather without a UI."
+  },
+  "commands": [
+    {
+      "id": "clear_weather",
+      "description": "Clear random weather slots and keep scheduled lighting only.",
+      "call": "BattleWeatherStack_DebugClearOverworldWeather()"
+    },
+    {
+      "id": "force_rain",
+      "description": "Force one random rain layer for screenshots or route testing.",
+      "call": "BattleWeatherStack_DebugForceOverworldWeather(BWS_LAYER_RAIN, BWS_OVERWORLD_VISUAL_AUTO, 30, 30)"
+    },
+    {
+      "id": "force_rain_wind",
+      "description": "Force two compatible random layers through the bulk admin hook.",
+      "call": "BattleWeatherStack_DebugForceOverworldLayers(BWS_LAYER_RAIN | BWS_LAYER_WIND, 30, 30)"
+    },
+    {
+      "id": "force_pollen",
+      "description": "Force pollen visuals and tint for palette checks.",
+      "call": "BattleWeatherStack_DebugForceOverworldWeather(BWS_LAYER_POLLEN, BWS_OVERWORLD_VISUAL_AUTO, 30, 30)"
+    }
+  ]
+}

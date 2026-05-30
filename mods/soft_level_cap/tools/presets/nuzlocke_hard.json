@@ -1,0 +1,30 @@
+{
+  "_meta": {
+    "schemaVersion": 1,
+    "description": "Stricter hard-cap preset for challenge runs."
+  },
+  "caps": [
+    {
+      "id": "nuzlocke_badge_hard_cap",
+      "capType": "HARD",
+      "capStages": [
+        { "level": 12 },
+        { "flag": "FLAG_BADGE01_GET", "level": 16 },
+        { "flag": "FLAG_BADGE02_GET", "level": 21 },
+        { "flag": "FLAG_BADGE03_GET", "level": 27 },
+        { "flag": "FLAG_BADGE04_GET", "level": 30 },
+        { "flag": "FLAG_BADGE05_GET", "level": 33 },
+        { "flag": "FLAG_BADGE06_GET", "level": 42 },
+        { "flag": "FLAG_BADGE07_GET", "level": 45 },
+        { "flag": "FLAG_BADGE08_GET", "level": 55 }
+      ],
+      "softExpCurve": [
+        { "minDelta": -100, "maxDelta": -1, "percent": 100 },
+        { "minDelta": 0, "maxDelta": 99, "percent": 0 }
+      ],
+      "rareCandy": "BLOCK_AT_CAP",
+      "priority": 100,
+      "flags": 0
+    }
+  ]
+}

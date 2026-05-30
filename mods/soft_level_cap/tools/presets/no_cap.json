@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "schemaVersion": 1,
+    "description": "Disable level caps without removing the mod folder."
+  },
+  "caps": [
+    {
+      "id": "no_level_cap",
+      "capType": "NONE",
+      "capStages": [
+        { "level": 100 }
+      ],
+      "rareCandy": "ALLOW",
+      "priority": 0,
+      "flags": 0
+    }
+  ]
+}

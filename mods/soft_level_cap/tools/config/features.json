@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "schemaVersion": 1,
+    "description": "Optional Soft Level Cap helpers. All immersion-breaking runtime features are disabled by default."
+  },
+  "inGameHints": {
+    "enabled": false,
+    "showExpReductionHint": false,
+    "showRareCandyBlockHint": false,
+    "messageKey": "soft_level_cap:hint.cap_active"
+  },
+  "separateBattleSourceRules": {
+    "enabled": false,
+    "sources": {
+      "wild": { "expCurve": "default" },
+      "trainer": { "expCurve": "default" },
+      "daycare": { "expCurve": "default" },
+      "rareCandy": { "policy": "default" }
+    }
+  },
+  "previewTool": {
+    "enabled": false,
+    "defaultPokemonLevel": 15,
+    "defaultFlags": []
+  },
+  "graceRange": {
+    "enabled": false,
+    "levels": 1,
+    "minimumPercent": 1
+  }
+}

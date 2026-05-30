@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "schemaVersion": 1,
+    "description": "Plan for replacing generated shiny fallbacks with real shiny assets."
+  },
+  "enabled": false,
+  "status": "pending_assets",
+  "expectedNaming": {
+    "png": "graphics/followers/<asset>_shiny.png",
+    "pal": "graphics/followers/<asset>_shiny.pal",
+    "followerId": "<sourceFollower>_shiny"
+  },
+  "importStrategy": [
+    "add matching shiny PNG/PAL files",
+    "add asset entries with distinct palette tags",
+    "replace fallback mappings for species/form shiny tuples",
+    "run validate_following_pokemon.py and report_mapping_coverage.py"
+  ],
+  "currentFallbackPolicy": "generated shiny mappings intentionally reuse normal graphics until dedicated shiny sheets exist"
+}
