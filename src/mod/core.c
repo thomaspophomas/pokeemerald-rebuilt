@@ -10,6 +10,7 @@
 #include "mod/state.h"
 #include "mod/time.h"
 #include "mod/weather.h"
+#include "random.h"
 
 void ModApi_Init(void)
 {
@@ -64,4 +65,9 @@ void ModApi_OnBattleEnd(u32 battle_outcome)
 {
     ModEvent_Emit(MOD_EVENT_BATTLE_ENDED, &battle_outcome, sizeof(battle_outcome));
     ModFollower_OnBattleEnd();
+}
+
+u16 ModApi_Random(void)
+{
+    return Random();
 }

@@ -70,6 +70,11 @@ void ModApi_OnBattleEnd(u32 battle_outcome)
 {
 }
 
+u16 ModApi_Random(void)
+{
+    return Random();
+}
+
 void ModState_Init(void)
 {
 }
@@ -779,6 +784,14 @@ FishingActionHook FishingApi_FindCompiledHook(const char *source_key, const char
 u8 FishingApi_RequestConfiguredAction(const struct FishingActionDefinition *definition, struct FishingContext *context, struct FishingActionRequest *request)
 {
     return FISHING_ACTION_CONTINUE;
+}
+
+void FishingApi_SetNextEncounterLevel(u8 level)
+{
+}
+
+void FishingApi_PrintText(const u8 *text)
+{
 }
 
 bool8 ShopApi_IsDefinitionValid(const struct ModShopDefinition *definition, bool8 allow_empty_default)

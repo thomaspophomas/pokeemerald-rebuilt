@@ -19,8 +19,9 @@ make -j"$(nproc)" modern FEATURE_MODS=1
 ```
 
 `src/mod` and `include/mod` are SDK/runtime adapter code. Concrete gameplay
-changes belong under `mods/<modId>`, including optional C entrypoints in
-`mods/<modId>/src/*.c`.
+mods should live outside this repo, be copied in locally as `mods/<modId>`, or
+be maintained in the separate mod repository. Do not commit active gameplay
+mods here unless they are intentionally part of rebuilt itself.
 
 Create a starter mod with:
 
@@ -320,15 +321,11 @@ With no registered actions, the fishing loop keeps the original bite odds,
 dots, timing, inputs, and encounter flow. Hooks receive a `FishingContext` and a
 `FishingActionRequest`; returning `CONTINUE` falls through to vanilla behavior,
 `OVERRIDE` applies context changes, `REQUEST_ACTION` lets the fishing task wait
-for the configured button/timeout, `MEMORY_GAME` starts the built-in up/down
-sequence minigame, and `CANCEL` exits through the normal failure path. Valid
-phases are `START`, `ROUND_START`, `DOT_CONFIG`, `BITE_CHECK`, `INPUT_WINDOW`,
-`MORE_DOTS_CHECK`, `BEFORE_ENCOUNTER`, and `END`. Rods are `OLD`, `GOOD`, and
-`SUPER`; `rodMask` may be used instead of `rods`. For `MEMORY_GAME`, params are
-max earned level, sequence display frames, per-input timeout frames, and one
-reserved slot. The memory-game encounter level is also capped by badge count:
-0 badges allow level 10, each badge adds 10 levels, and all 8 badges allow
-level 100.
+for the configured button/timeout or an optional compiled frame callback, and
+`CANCEL` exits through the normal failure path. Valid phases are `START`,
+`ROUND_START`, `DOT_CONFIG`, `BITE_CHECK`, `INPUT_WINDOW`, `MORE_DOTS_CHECK`,
+`BEFORE_ENCOUNTER`, and `END`. Rods are `OLD`, `GOOD`, and `SUPER`; `rodMask`
+may be used instead of `rods`.
 
 Online profiles may only provide fishing-action data for hooks already compiled
 into the ROM. A server record names the compiled source with `sourceKey` and

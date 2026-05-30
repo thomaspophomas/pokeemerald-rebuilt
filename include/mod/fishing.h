@@ -11,6 +11,12 @@
 #define FISHING_ACTION_ROD_SUPER (1 << SUPER_ROD)
 #define FISHING_ACTION_ROD_ALL   (FISHING_ACTION_ROD_OLD | FISHING_ACTION_ROD_GOOD | FISHING_ACTION_ROD_SUPER)
 
+#define FISHING_TEXT_CHAR_SPACE         0x00
+#define FISHING_TEXT_CHAR_UP_ARROW      0x79
+#define FISHING_TEXT_CHAR_DOWN_ARROW    0x7A
+#define FISHING_TEXT_CHAR_QUESTION_MARK 0xAC
+#define FISHING_TEXT_EOS                0xFF
+
 enum FishingPhase
 {
     FISHING_PHASE_START,
@@ -43,7 +49,6 @@ enum FishingActionHookResult
     FISHING_ACTION_CONTINUE,
     FISHING_ACTION_OVERRIDE,
     FISHING_ACTION_REQUEST_ACTION,
-    FISHING_ACTION_MEMORY_GAME,
     FISHING_ACTION_CANCEL,
 };
 
@@ -66,6 +71,9 @@ struct FishingContext
     u8 level;
 };
 
+struct FishingActionFrameContext;
+typedef u8 (*FishingActionFrameHook)(struct FishingActionFrameContext *context);
+
 struct FishingActionRequest
 {
     const char *prompt_key;
@@ -74,6 +82,15 @@ struct FishingActionRequest
     u8 success_outcome;
     u8 failure_outcome;
     s16 params[FISHING_ACTION_PARAM_COUNT];
+    FishingActionFrameHook frame_hook;
+};
+
+struct FishingActionFrameContext
+{
+    const struct FishingActionRequest *request;
+    u16 frame;
+    u16 new_keys;
+    u16 held_keys;
 };
 
 struct FishingActionDefinition;
@@ -104,5 +121,7 @@ void FishingApi_InitRequestFromDefinition(const struct FishingActionDefinition *
 u8 FishingApi_RunPhase(struct FishingContext *context, struct FishingActionRequest *request);
 FishingActionHook FishingApi_FindCompiledHook(const char *source_key, const char *hook_key);
 u8 FishingApi_RequestConfiguredAction(const struct FishingActionDefinition *definition, struct FishingContext *context, struct FishingActionRequest *request);
+void FishingApi_SetNextEncounterLevel(u8 level);
+void FishingApi_PrintText(const u8 *text);
 
 #endif // GUARD_MOD_FISHING_H
