@@ -87,6 +87,7 @@ def calc_mod_catalog_hash() -> int:
     pokemon_data = modgen.collect_pokemon_data(mods)
     battle_moves = modgen.collect_battle_moves(mods)
     trainers = modgen.collect_trainers(mods)
+    level_caps = modgen.collect_level_caps(mods)
     catalog_entries = modgen.collect_catalog_entries(
         weather,
         sprite_assets,
@@ -102,6 +103,7 @@ def calc_mod_catalog_hash() -> int:
         pokemon_data,
         battle_moves,
         trainers,
+        level_caps,
     )
     return modgen.calc_catalog_hash(catalog_entries)
 

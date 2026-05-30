@@ -17,8 +17,8 @@ It does not distribute a built ROM in releases or CI artifacts.
 As of the 2026-05-22 local audit, this repository's `master` branch is aligned
 with `origin/master` at `2776fe04a` ("Harden badge effect API and catalog
 schema"). The current working tree also carries an uncommitted multiplayer/mod
-API expansion that updates the runtime-profile and mod-catalog schema to
-`0x00000006`.
+API expansion that updates the runtime-profile capability schema to
+`0x00000006` and the mod-catalog schema to `0x00000007`.
 
 Locally verified in this working tree:
 
