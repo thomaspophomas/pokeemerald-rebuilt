@@ -38,7 +38,7 @@ server builds. The current `master` values are:
   "profileProtocolVersion": 1,
   "profileCapabilityHash": "0x00000006",
   "modCatalogSchemaHash": "0x0000000A",
-  "modCatalogHash": "0xA3A0C2E8",
+  "modCatalogHash": "0x2EB46D50",
   "transportMode": "server_bridge",
   "transportModeValue": 1,
   "maxNetPlayers": 8,
