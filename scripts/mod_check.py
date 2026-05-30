@@ -399,13 +399,13 @@ def validate_level_caps_file(path: Path) -> None:
 
     def parse_delta(value: object, label: str) -> int:
         if isinstance(value, bool):
-            raise ModCheckError(f"{path}: {label} must be an integer in [-99, 99]")
+            raise ModCheckError(f"{path}: {label} must be an integer in [-100, 99]")
         try:
             delta = int(value)  # type: ignore[arg-type]
         except (TypeError, ValueError) as exc:
-            raise ModCheckError(f"{path}: {label} must be an integer in [-99, 99]") from exc
-        if delta < -99 or delta > 99:
-            raise ModCheckError(f"{path}: {label} must be in [-99, 99]")
+            raise ModCheckError(f"{path}: {label} must be an integer in [-100, 99]") from exc
+        if delta < -100 or delta > 99:
+            raise ModCheckError(f"{path}: {label} must be in [-100, 99]")
         return delta
 
     def parse_percent(value: object, label: str) -> int:
@@ -422,19 +422,19 @@ def validate_level_caps_file(path: Path) -> None:
     def validate_curve(raw_curve: object, label: str) -> None:
         if raw_curve is None:
             return
-        covered = [False] * 199
+        covered = [False] * 200
         if isinstance(raw_curve, dict):
             entries = [{"delta": delta, "percent": percent} for delta, percent in raw_curve.items()]
         elif isinstance(raw_curve, list):
             if all(isinstance(percent, int) and not isinstance(percent, bool) for percent in raw_curve):
-                if len(raw_curve) != 199:
-                    raise ModCheckError(f"{path}: {label} table must contain exactly 199 entries")
+                if len(raw_curve) != 200:
+                    raise ModCheckError(f"{path}: {label} table must contain exactly 200 entries")
                 for percent_index, percent in enumerate(raw_curve):
                     parse_percent(percent, f"{label}[{percent_index}]")
                 return
             entries = raw_curve
         else:
-            raise ModCheckError(f"{path}: {label} must be a map, a 199-entry percent table, or a list of range objects")
+            raise ModCheckError(f"{path}: {label} must be a map, a 200-entry percent table, or a list of range objects")
 
         for curve_index, raw_entry in enumerate(entries):
             entry_label = f"{label}[{curve_index}]"
@@ -456,13 +456,13 @@ def validate_level_caps_file(path: Path) -> None:
             if min_delta > max_delta:
                 raise ModCheckError(f"{path}: {entry_label}.minDelta must be <= maxDelta")
             for curve_delta in range(min_delta, max_delta + 1):
-                covered_index = curve_delta + 99
+                covered_index = curve_delta + 100
                 if covered[covered_index]:
                     raise ModCheckError(f"{path}: {label} overlaps at delta {curve_delta}")
                 covered[covered_index] = True
         for covered_index, is_covered in enumerate(covered):
             if not is_covered:
-                raise ModCheckError(f"{path}: {label} must cover every delta from -99 to 99; first missing delta is {covered_index - 99}")
+                raise ModCheckError(f"{path}: {label} must cover every delta from -100 to 99; first missing delta is {covered_index - 100}")
 
     for index, raw_item in enumerate(require_items(read_json(path), DOMAIN_LIST_KEYS["level_caps"], path)):
         item = require_object(raw_item, path, f"caps[{index}]")

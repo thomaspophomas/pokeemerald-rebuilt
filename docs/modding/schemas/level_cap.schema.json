@@ -161,7 +161,7 @@
     },
     "delta": {
       "type": "integer",
-      "minimum": -99,
+      "minimum": -100,
       "maximum": 99
     },
     "percent": {
@@ -179,8 +179,8 @@
         },
         {
           "type": "array",
-          "minItems": 199,
-          "maxItems": 199,
+          "minItems": 200,
+          "maxItems": 200,
           "items": {
             "$ref": "#/$defs/percent"
           }

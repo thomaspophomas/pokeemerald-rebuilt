@@ -18,7 +18,7 @@ As of the 2026-05-22 local audit, this repository's `master` branch is aligned
 with `origin/master` at `2776fe04a` ("Harden badge effect API and catalog
 schema"). The current working tree also carries an uncommitted multiplayer/mod
 API expansion that updates the runtime-profile capability schema to
-`0x00000006` and the mod-catalog schema to `0x00000009`.
+`0x00000006` and the mod-catalog schema to `0x0000000A`.
 
 Locally verified in this working tree:
 

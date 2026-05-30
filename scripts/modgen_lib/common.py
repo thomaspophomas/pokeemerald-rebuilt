@@ -287,7 +287,7 @@ LEVEL_CAP_RARE_CANDY_POLICIES = {
 
 LEVEL_CAP_MAX_STAGES = 16
 LEVEL_CAP_ALWAYS_FLAG = "MOD_LEVEL_CAP_FLAG_ALWAYS"
-LEVEL_CAP_EXP_DELTA_MIN = -99
+LEVEL_CAP_EXP_DELTA_MIN = -100
 LEVEL_CAP_EXP_DELTA_MAX = 99
 LEVEL_CAP_EXP_DELTA_COUNT = LEVEL_CAP_EXP_DELTA_MAX - LEVEL_CAP_EXP_DELTA_MIN + 1
 LEVEL_CAP_BADGE_FLAGS = [
@@ -665,19 +665,19 @@ def parse_level_cap_level(value: Any, key: str, label: str) -> int:
 
 
 def default_soft_exp_percent(delta: int) -> int:
-    if delta > 3:
+    if delta < -3:
         return 100
-    if delta == 3:
+    if delta == -3:
         return 90
-    if delta == 2:
+    if delta == -2:
         return 60
-    if delta == 1:
+    if delta == -1:
         return 30
     if delta == 0:
         return 15
-    if delta <= -3:
+    if delta >= 3:
         return 0
-    return 15 + (delta * 5)
+    return 15 - (delta * 5)
 
 
 def default_soft_exp_curve() -> List[int]:

@@ -204,14 +204,14 @@ def test_level_cap_domain() -> None:
                             {"flag": "FLAG_BADGE08_GET", "level": 58},
                         ],
                         "softExpCurve": [
-                            {"minDelta": -99, "maxDelta": -3, "percent": 0},
-                            {"delta": -2, "percent": 5},
-                            {"delta": -1, "percent": 10},
+                            {"minDelta": -100, "maxDelta": -4, "percent": 100},
+                            {"delta": -3, "percent": 90},
+                            {"delta": -2, "percent": 60},
+                            {"delta": -1, "percent": 30},
                             {"delta": 0, "percent": 15},
-                            {"delta": 1, "percent": 30},
-                            {"delta": 2, "percent": 60},
-                            {"delta": 3, "percent": 90},
-                            {"minDelta": 4, "maxDelta": 99, "percent": 100},
+                            {"delta": 1, "percent": 10},
+                            {"delta": 2, "percent": 5},
+                            {"minDelta": 3, "maxDelta": 99, "percent": 0},
                         ],
                         "rareCandy": "BLOCK_AT_CAP",
                         "priority": 50,
@@ -228,7 +228,7 @@ def test_level_cap_domain() -> None:
         assert "MOD_LEVEL_CAP_MODE_SOFT" in source
         assert "MOD_LEVEL_CAP_RARE_CANDY_BLOCK_AT_CAP" in source
         assert "MOD_FLAG_TO_VANILLA(FLAG_BADGE08_GET), 58" in source
-        assert "5, 10, 15, 30, 60, 90, 100" in source
+        assert "100, 90, 60, 30, 15, 10, 5, 0" in source
         assert "MOD_CATALOG_ENTRY_LEVEL_CAP" in source
     finally:
         shutil.rmtree(root)

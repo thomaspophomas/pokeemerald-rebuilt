@@ -138,7 +138,7 @@ static s16 ApplyPercentToExp(s16 gained_exp, u8 percent)
 
 static u8 GetSoftExpPercent(const struct ModLevelCapDefinition *definition, u8 level, u8 cap)
 {
-    s16 delta = (s16)cap - level;
+    s16 delta = (s16)level - cap;
 
     if (delta < MOD_LEVEL_CAP_EXP_DELTA_MIN)
         delta = MOD_LEVEL_CAP_EXP_DELTA_MIN;
